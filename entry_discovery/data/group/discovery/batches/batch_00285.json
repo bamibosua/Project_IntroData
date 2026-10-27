@@ -1,0 +1,416 @@
+{
+  "2601.18856": {
+    "arxiv_id": "2601.18856",
+    "title": "Operationally induced preferred basis in unitary quantum mechanics",
+    "authors": [
+      "Vitaly Pronskikh"
+    ],
+    "submission_date": "2026-01-26T17:22:03Z",
+    "latest_updated": "2026-02-16T05:03:54Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.18856v1",
+      "2601.18856v2"
+    ],
+    "abstract": "The preferred-basis problem and the definite-outcome aspect of the measurement problem persist even when the detector is modeled unitarily. Experimental data are represented in a Boolean event algebra of mutually exclusive records, while the theoretical description employs a noncommutative operator algebra with continuous unitary symmetry. This change of mathematical structure constitutes the core of the ``cut'': a necessary interface from group-based kinematics to set-based counting. In the Operationally Induced Preferred Basis (OIPB) framework, the basis relevant for recorded outcomes is not fixed by the system Hamiltonian but induced by the measurement interface -- the detector channel together with its coarse-grained readout. The Born rule follows from Gleason-type uniqueness (Gleason for projections in $d>2$ and Busch's extension for POVMs including $d=2$), as the unique probability measure consistent with additivity over exclusive events and basis-independence of the unitary sector. A compact qubit-pointer model yields an induced unsharp POVM $E_{\\pm}=\\frac12(\\mathbb{1}\\pmησ_z)$ with sharpness $η$ fixed by pointer resolution, explicitly demonstrating detector-induced basis selection. OIPB aligns with decoherence and operational theories while diverging from collapse models (no spontaneous reductions) and the Many-Worlds Interpretation (no ontological branching). Empirical distinctions arise through POVM tomography, Wigner-friend incompatibility tests, and superposition stability bounds. Nested-observer paradoxes are resolved by a non-composability lemma: joint assignment of outcome propositions is possible only if a joint instrument exists. This relocates the origin of randomness to the stochasticity of the interface rules.",
+    "status": "found"
+  },
+  "2601.18857": {
+    "arxiv_id": "2601.18857",
+    "title": "Statistical Inference for Explainable Boosting Machines",
+    "authors": [
+      "Haimo Fang",
+      "Kevin Tan",
+      "Jonathan Pipping-Gamon",
+      "Giles Hooker"
+    ],
+    "submission_date": "2026-01-26T17:51:09Z",
+    "latest_updated": "2026-03-30T06:45:28Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.18857v1",
+      "2601.18857v2"
+    ],
+    "abstract": "Explainable boosting machines (EBMs) are popular \"glass-box\" models that learn a set of univariate functions using boosting trees. These achieve explainability through visualizations of each feature's effect. However, unlike linear model coefficients, uncertainty quantification for the learned univariate functions requires computationally intensive bootstrapping, making it hard to know which features truly matter. We provide an alternative using recent advances in statistical inference for gradient boosting, deriving methods for statistical inference as well as end-to-end theoretical guarantees. Using a moving average instead of a sum of trees (Boulevard regularization) allows the boosting process to converge to a feature-wise kernel ridge regression. This produces asymptotically normal predictions that achieve the minimax-optimal MSE for fitting Lipschitz GAMs with $p$ features of $O(p n^{-2/3})$, successfully avoiding the curse of dimensionality. We then construct prediction intervals for the response and confidence intervals for each learned univariate function with a runtime independent of the number of datapoints, enabling further explainability within EBMs. Code is available at https://github.com/hetankevin/ebm-inference.",
+    "status": "found"
+  },
+  "2601.18858": {
+    "arxiv_id": "2601.18858",
+    "title": "Representational Homomorphism Predicts and Improves Compositional Generalization In Transformer Language Model",
+    "authors": [
+      "Zhiyu An",
+      "Wan Du"
+    ],
+    "submission_date": "2026-01-26T18:46:00Z",
+    "latest_updated": "2026-03-24T15:35:09Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.18858v1",
+      "2601.18858v2"
+    ],
+    "abstract": "Compositional generalization-the ability to interpret novel combinations of familiar components-remains a persistent challenge for neural networks. Behavioral evaluations reveal \\emph{when} models fail but offer limited insight into \\emph{why} failures arise at the representational level. We introduce \\textit{Homomorphism Error} (HE), a structural metric that measures the inconsistency between a set of established rules for which words combine to form new meaning (linguistic syntax) and model's learned rules for which hidden states combine to form new states (semantic syntax). We formulate this inconsistency as deviations from approximate homomorphisms between the linguistic expression algebra and a model's hidden-state space. We designed experiments to test if i) HE predicts compositional generalization performance, and ii) will regularizing for low HE during training improve such performance. To avoid the effect of data spoilage, we train small decoder-only Transformers from scratch using an adapted version of established dataset, SCAN, for testing compositional generalization. Across controlled experiments, HE predicts out-of-distribution (OOD) compositional generalization under noise injection, achieving $R^2=0.73$ correlation between HE and OOD accuracy. Ablations show that model depth has minimal effect on either HE or OOD accuracy, training data coverage exhibits threshold effects, and randomly inserted noise tokens increase HE. Intervention experiment shows that HE-regularized training significantly reduces HE ($p=1.1\\times10^{-4}$) and yields a statistically significant improvement in OOD accuracy ($p=0.023$). Together, these results indicate the potential of HE to be both a diagnostic and an actionable training signal for improving compositional generalization.",
+    "status": "found"
+  },
+  "2601.18859": {
+    "arxiv_id": "2601.18859",
+    "title": "Energetic Ceilings and Benchmarks of Astrophysical Gravitational-Wave Backgrounds",
+    "authors": [
+      "Chiara M. F. Mingarelli"
+    ],
+    "submission_date": "2026-01-26T18:54:50Z",
+    "latest_updated": "2026-08-26T16:04:33Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.18859v1",
+      "2601.18859v2"
+    ],
+    "abstract": "Every astrophysical gravitational-wave background (GWB) is limited by the rest mass its sources can convert into gravitational radiation. We combine available source mass, merger factor, radiative efficiency, and merger epochs for six populations: supermassive black hole binaries (SMBHBs), extreme-mass-ratio inspirals (EMRIs), IMBHs inspiralling into SMBHs, stellar mass binary black holes (sBBHs), binary neutron stars (BNSs), and Pop~III binary black holes. For each, we calculate a GWB benchmark and an upper limit. For SMBHBs, the local mass census of Liepold \\& Ma (2024), together with the repeated-merger boost of Sato-Polito et al. (2024), allows us to compute a ceiling on the nanoHertz GWB. Anchoring the GWB to this census, and assuming one merger per SMBH, gives a benchmark of $A_{\\rm bench} = 2.11^{+0.43}_{-0.32}\\times10^{-15}$ at $f=1\\,{\\rm yr}^{-1}$. For the ceiling, we assume an infinite number of previous mergers, yielding $A_{\\rm ceil}=3.76^{+0.76}_{-0.56}\\times10^{-15}$, consistent with published PTA amplitudes. Under this mass function and merger model, the measured GWB amplitude therefore does not require additional SMBH mass. A measured GWB can instead constrain its source population. Using the revised NANOGrav 15-yr GWB amplitude and this SMBH census gives $f_{\\rm merge}=1.11^{+1.35}_{-0.63}$, where 1 means one merger per present-day remnant. For the other five populations, comparable censuses do not yet exist, so we report upper limits from the best available source constraints, including compact-binary merger rates. Finally, the six adopted upper limit cases yield a present-day gravitational-wave energy budget of $ρ_{\\rm gw}^{(6)}=3.33^{+1.32}_{-0.83}\\times10^{-7}ρ_c$. A larger energy density would require more source mass, mergers, radiative efficiency, or later epochs, or point to additional source populations or new physics.",
+    "status": "found"
+  },
+  "2601.18860": {
+    "arxiv_id": "2601.18860",
+    "title": "Towards a Proof of the Improved Quantum Null Energy Condition",
+    "authors": [
+      "Ido Ben-Dayan",
+      "Ayushi Srivastava"
+    ],
+    "submission_date": "2026-01-26T18:59:58Z",
+    "latest_updated": "2026-09-24T22:32:50Z",
+    "revised_dates": null,
+    "venue": "JHEP 09 (2026) 213",
+    "latest_version": 2,
+    "versions": [
+      "2601.18860v1",
+      "2601.18860v2"
+    ],
+    "abstract": "The Improved Quantum Null Energy Condition (INEC) was recently derived from the (restricted) quantum focusing conjecture (QFC), and is a statement about the energy-momentum tensor (EMT) of field theories in Minkowski space-time. It extends the quantum null energy condition (QNEC), and includes the possibility of expanding or contracting geodesics. Treating the INEC as a field theory inequality, we use the properties of relative entropy and modular Hamiltonian associated with null deformation of the sphere to recast it as an integrated inequality. At leading order in a perturbation of the vacuum, this inequality becomes a weighted positivity condition on the smeared null energy. As the underlying single-segment light-cone operator is unbounded below for $d>2$, we pass to the Lorentzian cylinder $\\mathbb{R}\\times S^{d-1}$, where the operator is well-defined. We verify that the INEC holds explicitly in the thermal state, in both the perturbative and high-temperature regimes. Furthermore, using the QNEC and INEC as a basis, we briefly speculate about a possible modified Quantum Focusing Conjecture.",
+    "status": "found"
+  },
+  "2601.18861": {
+    "arxiv_id": "2601.18861",
+    "title": "Post-selection games",
+    "authors": [
+      "Víctor Calleja Rodríguez",
+      "Ivan A. Bocanegra-Garay",
+      "Mateus Araújo"
+    ],
+    "submission_date": "2026-01-26T19:00:00Z",
+    "latest_updated": "2026-02-09T16:54:00Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.18861v1",
+      "2601.18861v2"
+    ],
+    "abstract": "In this paper, we introduce post-selection games, a generalization of nonlocal games where each round can be not only won or lost by the players, but also discarded by the referee. Such games naturally formalize possibilistic proofs of nonlocality, such as Hardy's paradox. We develop algorithms for computing the local and Tsirelson bounds of post-selection games. Furthermore, we show that they have an unbounded advantage in statistical power over traditional nonlocal games, making them ideally suited for analysing Bell tests with low detection efficiency.",
+    "status": "found"
+  },
+  "2601.18862": {
+    "arxiv_id": "2601.18862",
+    "title": "Redshift-space 21-cm bispectrum multipoles as an SKA-era gravity test in the post-reionization Universe",
+    "authors": [
+      "Sourav Pal",
+      "Debanjan Sarkar"
+    ],
+    "submission_date": "2026-01-26T19:00:00Z",
+    "latest_updated": "2026-01-26T19:00:00Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.18862v1"
+    ],
+    "abstract": "The redshifted 21-cm line from neutral hydrogen ($\\textrm{H}\\textsc{i}$) enables volumetric intensity mapping of large-scale structure in the post-reionization Universe. In anticipation of \\texttt{SKA-MID}'s wide redshift coverage and high signal-to-noise clustering measurements, we study the redshift-space 21-cm bispectrum and its spherical-harmonic multipoles as probes of anisotropic non-linear structure formation and departures from General Relativity. Using a tree-level perturbative description for the 21-cm brightness-temperature field in redshift space, and adopting the Hu--Sawicki $f(R)$ model as a representative modified-gravity scenario, we forecast the detectability of configuration-dependent signatures with an \\texttt{SKA-MID}--like survey. We derive the bispectrum-multipole covariance including sample variance and thermal noise and evaluate the expected signal-to-noise of deviations relative to $Λ$CDM. We find that the observable information is dominated by the lowest multipoles, while higher-order modes are strongly suppressed. This concentration in the lowest multipoles is well matched to \\texttt{SKA-MID} sensitivity and to the quasi-linear modes that are expected to remain accessible in practice. The strongest modified-gravity sensitivity arises from squeezed and stretched triangle configurations on quasi-linear scales, where scale-dependent growth enhances the bispectrum relative to the total variance. Our results position 21-cm bispectrum multipoles as a practical, SKA-ready observable for testing gravity beyond $Λ$CDM in the post-reionization epoch.",
+    "status": "found"
+  },
+  "2601.18863": {
+    "arxiv_id": "2601.18863",
+    "title": "Tame Complexity of Effective Field Theories in the Quantum Gravity Landscape",
+    "authors": [
+      "Thomas W. Grimm",
+      "David Prieto",
+      "Mick van Vliet"
+    ],
+    "submission_date": "2026-01-26T19:00:00Z",
+    "latest_updated": "2026-06-24T11:38:14Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2601.18863v1",
+      "2601.18863v2",
+      "2601.18863v3"
+    ],
+    "abstract": "Effective field theories consistent with quantum gravity obey surprising finiteness constraints, appearing in several distinct but interconnected forms. In this work we develop a framework that unifies these observations by proposing that the defining data of such theories, as well as the landscape of effective field theories that are valid at least up to a fixed cutoff, admit descriptions with a uniform bound on complexity. To make this precise, we use tame geometry and work in sharply o-minimal structures, in which tame sets and functions come with two integer parameters that quantify their information content; we call this pair their tame complexity. Our Finite Complexity Conjectures are supported by controlled examples in which an infinite Wilsonian expansion nevertheless admits an equivalent finite-complexity description, typically through hidden rigidity conditions such as differential or recursion relations. We further assemble evidence from string compactifications, highlighting the constraining role of moduli space geometry and the importance of dualities. This perspective also yields mathematically well-defined notions of counting and volume measures on the space of effective theories, formulated in terms of effective field theory domains and coverings, whose finiteness is naturally enforced by the conjectures.",
+    "status": "found"
+  },
+  "2601.18864": {
+    "arxiv_id": "2601.18864",
+    "title": "Inside the cocoon: a comprehensive explanation of the spectra of Little Red Dots",
+    "authors": [
+      "A. Sneppen",
+      "D. Watson",
+      "J. H. Matthews",
+      "G. Nikopoulos",
+      "N. Allen",
+      "G. Brammer",
+      "R. Damgaard",
+      "K. E. Heintz",
+      "C. Knigge",
+      "K. S. Long",
+      "V. Rusakov",
+      "S. A. Sim",
+      "J. Witstok"
+    ],
+    "submission_date": "2026-01-26T19:00:00Z",
+    "latest_updated": "2026-01-26T19:00:00Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.18864v1"
+    ],
+    "abstract": "JWST has revealed a population of compact galaxies in the early Universe with broad emission lines and strong Balmer breaks; among them the so-called ''little red dots'' (LRDs). Their nature remains uncertain with hypotheses including exotic phenomena. We assemble a sample of LRD-like objects at $z>3$ and use self-consistent radiative-transfer calculations to show that a supermassive black hole accreting from a dense gas cocoon accurately reproduces the detailed spectra. We show that the cocoons must be non-spherical, with comparable amounts of inflowing and outflowing material. And we predict correlations between Balmer break strength, Balmer line-absorption and scattering line width, which we confirm in our observed sample. We reproduce all LRD-like properties without requiring star-like atmospheres and we determine the typical black hole in our sample to be of order a million solar masses, with ionized cocoon masses of tens of solar masses potentially supplied from a much larger cold-gas reservoir.",
+    "status": "found"
+  },
+  "2601.18865": {
+    "arxiv_id": "2601.18865",
+    "title": "Induced Scattering of Fast Radio Bursts in Magnetar Magnetospheres",
+    "authors": [
+      "Rei Nishiura",
+      "Shoma F. Kamijima",
+      "Kunihito Ioka"
+    ],
+    "submission_date": "2026-01-26T19:00:00Z",
+    "latest_updated": "2026-09-14T18:10:59Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.18865v1",
+      "2601.18865v2"
+    ],
+    "abstract": "We investigate induced Compton/Brillouin scattering of electromagnetic waves in magnetized electron and positron pair plasma by verifying kinetic theory with Particle-in-Cell simulations. Applying this to fast radio bursts (FRBs) in magnetar magnetospheres, we find that the scattering--although suppressed by the magnetic field--inevitably enters the linear growth stage before the incident wave amplitude becomes comparable to the background magnetic field during its outward propagation through the magnetosphere. The subsequent evolution bifurcates: full scattering occurs when the density exceeds a critical value, whereas below it the scattering saturates and the FRB can escape without substantial induced-scattering attenuation. This nonlinear saturation eases the tension with observations of compact emission regions and may explain the observed diversity, including the presence or absence of FRBs associated with X-ray bursts.",
+    "status": "found"
+  },
+  "2601.18866": {
+    "arxiv_id": "2601.18866",
+    "title": "Uniform Forward-Modeling Analysis of Ultracool Dwarfs. IV. Benchmarking the Sonora Diamondback and Saumon & Marley (2008) Atmospheric Models Across Late-M, L, and T types with Low-Resolution 0.8-2.5 $μ$m Spectroscopy",
+    "authors": [
+      "Emily Mader",
+      "Zhoujian Zhang",
+      "Jonathan J. Fortney",
+      "Caroline V. Morley",
+      "Malik Bossett",
+      "Mark S. Marley",
+      "Sagnick Mukherjee",
+      "Brendan P. Bowler",
+      "Michael C. Liu"
+    ],
+    "submission_date": "2026-01-26T19:00:00Z",
+    "latest_updated": "2026-01-26T19:00:00Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.18866v1"
+    ],
+    "abstract": "(Abridged) We present a systematic assessment of two major cloudy atmospheric model grids -- SM08 (Saumon & Marley 2008) and Sonora Diamondback -- when applied to low-resolution near-infrared (0.8-2.5 $μ$m) spectroscopy. Our analysis focuses on a uniform sample of 142 age-benchmark brown dwarfs and planetary-mass objects spanning late-M, L, and T spectral types, with independently determined ages from 10 Myr to 10 Gyr. We perform forward-model spectral fitting for all benchmarks' IRTF/SpeX spectra ($R\\sim$80-250) using both SM08 and Sonora Diamondback atmospheric models to infer effective temperatures, surface gravities, metallicities, radii, and cloud sedimentation efficiencies. The two model grids yield broadly consistent results. Among L4-L9 dwarfs, we identify a statistically significant, population-level age dependence of the cloud parameter $f_{\\rm sed}$, with young benchmarks ($<300$ Myr) exhibiting systematically lower $f_{\\rm sed}$ values than older counterparts. This trend is absent across L0-T5 and T0-T5, demonstrating that cloud properties vary with age and surface gravity and offering explanations for the observed gravity-dependent photometric properties at the late-L end of the L/T transition. By comparing spectroscopically inferred parameters with predictions from evolution models, we quantify systematic errors in the fitted atmospheric parameters and establish empirical calibrations to anchor future studies using these atmospheric models. Stacked residuals of the sample reveal wavelength-dependent data-model mismatches associated with key atomic and molecular absorption bands, highlighting the need for improved opacities and rainout chemistry. Finally, we show that including an interstellar-medium-like extinction term significantly improves the spectral fits, confirming and broadening previous findings and suggesting missing opacity sources in current cloudy models.",
+    "status": "found"
+  },
+  "2601.18867": {
+    "arxiv_id": "2601.18867",
+    "title": "Jordan-Wigner mapping between quantum-spin and fermionic Casimir effects",
+    "authors": [
+      "Katsumasa Nakayama",
+      "Kei Suzuki"
+    ],
+    "submission_date": "2026-01-26T19:00:00Z",
+    "latest_updated": "2026-01-26T19:00:00Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.18867v1"
+    ],
+    "abstract": "The Jordan-Wigner transformation connects spin operators in one-dimensional spin systems and fermionic operators. In this work, we elucidate the relationship between the finite-size corrections in the spin representation and the fermionic Casimir effect in the corresponding fermion representation. In particular, we focus on the ground-state energy of one-dimensional transverse-field Ising and XY models, and show that all finite-size corrections can be interpreted as lattice fermionic Casimir effects. We further find several types of Casimir phenomena, such as the conventional Casimir energy from massless fields, damping behavior from massive fields, vanishing behavior from flat or nonrelativistic bands, and oscillating behavior from the finite-density effect. Our findings establish a dictionary between finite-size corrections in spin chains and fermionic Casimir effects, and provide experimentally relevant platforms for the fermionic Casimir phenomena.",
+    "status": "found"
+  },
+  "2601.18868": {
+    "arxiv_id": "2601.18868",
+    "title": "Cooper Condensation and Pair Wave Functions in Strongly Correlated Electrons",
+    "authors": [
+      "Hannes Karlsson",
+      "Johannes S. Hofmann",
+      "Alexander Wietek"
+    ],
+    "submission_date": "2026-01-26T19:00:00Z",
+    "latest_updated": "2026-01-26T19:00:00Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.18868v1"
+    ],
+    "abstract": "Identifying superconducting states of matter without prior assumptions is a central challenge in strongly correlated electron systems. We introduce a canonical framework for diagnosing the formation of Cooper pair condensates based on the Penrose-Onsager criterion, in which superconducting order is encoded in the spectral properties of the two-particle reduced density matrix (2RDM). Within this formulation, the symmetry and structure of the condensate are obtained by projecting the 2RDM onto irreducible representations of the underlying symmetry group, enabling an unbiased identification of both conventional and exotic superconducting states. We demonstrate the power and versatility of the approach through applications to the two-dimensional Hubbard model, using both auxiliary-field quantum Monte Carlo (AFQMC) and the density matrix renormalization group (DMRG). For attractive interactions without a magnetic field, we reveal a clear finite-size scaling of the condensate fraction on square lattices of size up to $20\\times 20$. The framework further provides direct access to the internal structure and extent of Cooper pairs, which we track across the BCS-BEC crossover. Moreover, it enables a clean diagnosis of the finite-momentum Fulde-Ferrell-Larkin-Ovchinnikov (FFLO) phase in a magnetic field. Finally, we apply the approach to a supersolid phase in the repulsive Hubbard model with an additional next-nearest neighbor hopping $t^\\prime$, where a charge-density wave coexists with a superconductor. We confirm the fragmented nature of the condensate and uncover substantial pairing correlations in the triplet channel with $p$-wave spatial symmetry in addition to the dominant singlet $d$-wave pairing. Our results establish the 2RDM-based Penrose-Onsager framework as a broadly applicable and unbiased tool for characterizing superconducting order in correlated quantum matter.",
+    "status": "found"
+  },
+  "2601.18869": {
+    "arxiv_id": "2601.18869",
+    "title": "Eigenstate condensation in quantum systems with finite-dimensional Hilbert spaces",
+    "authors": [
+      "Christopher David White",
+      "Michael Winer",
+      "Noam Bernstein"
+    ],
+    "submission_date": "2026-01-26T19:00:01Z",
+    "latest_updated": "2026-10-23T13:56:40Z",
+    "revised_dates": null,
+    "venue": "Phys. Rev. E 114, 024121 (2026)",
+    "latest_version": 2,
+    "versions": [
+      "2601.18869v1",
+      "2601.18869v2"
+    ],
+    "abstract": "Random quantum states drawn from the Haar ensemble with a constraint on the energy expectation value $E_{\\mathrm{av}} = \\langle ψ| H | ψ\\rangle$ display \\textit{eigenstate condensation}: for $E_{\\mathrm{av}}$ below a critical value $E_c$, they develop macroscopic overlap with the ground state. We study eigenstate condensation in systems with finite-dimensional Hilbert spaces. These systems display three phases: a ground-state phase, in which energy-constrained random states have macroscopic overlap with the ground state; a high-temperature phase, in which they have exponentially small overlap with each energy eigenstate; and an anti-ground-state phase, in which they have macroscopic overlap with the most highly excited state. In local spin systems the ground-state and anti-ground-state phases approach the middle of the spectrum as $1/[\\text{system size}]$, but -- because the condensation phase transitions have exponential, rather than polynomial, finite-size scaling -- the crossover becomes exponentially sharp in system size and the high-temperature phase is best understood as an extended phase.",
+    "status": "found"
+  },
+  "2601.18870": {
+    "arxiv_id": "2601.18870",
+    "title": "Experimental Demonstration of Commutation Relations Using Intensity Correlations",
+    "authors": [
+      "Hans Dang",
+      "Sebastian Luff",
+      "Martin Fischer",
+      "Markus Sondermann",
+      "Mojdeh. S. Najafabadi",
+      "Luis L. Sanchez-Soto",
+      "Gerd Leuchs"
+    ],
+    "submission_date": "2026-01-26T19:00:01Z",
+    "latest_updated": "2026-08-23T15:56:17Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.18870v1",
+      "2601.18870v2"
+    ],
+    "abstract": "The canonical commutation relation is a cornerstone of quantum theory and underlies the Heisenberg uncertainty principle. Although uncertainty relations have been extensively tested, direct verifications of the underlying commutation relation itself have remained elusive. We report an experimental demonstration of the bosonic commutation relation for optical field operators based on measurements of two distinct intensity correlation functions. From these measurements, we extract the expectation value of the field-operator commutator for both a single-photon state and coherent state. In both cases, the measured values are consistent with unity, in quantitative agreement with quantum theory.",
+    "status": "found"
+  },
+  "2601.18871": {
+    "arxiv_id": "2601.18871",
+    "title": "A nuclear disc at Cosmic Noon: evidence of early bar-driven galaxy evolution",
+    "authors": [
+      "Zoe A. Le Conte",
+      "Dimitri A. Gadotti",
+      "Thomas Harvey",
+      "Leonardo Ferreira",
+      "Christopher J. Conselice",
+      "Taehyun Kim",
+      "Camila de Sá-Freitas",
+      "Francesca Fragkoudi",
+      "Justus Neumann",
+      "E. Athanassoula"
+    ],
+    "submission_date": "2026-01-26T19:00:01Z",
+    "latest_updated": "2026-07-27T11:35:10Z",
+    "revised_dates": null,
+    "venue": "Mon Not R Astron Soc (2026)",
+    "latest_version": 2,
+    "versions": [
+      "2601.18871v1",
+      "2601.18871v2"
+    ],
+    "abstract": "Recent studies have revealed that bars can form as early as a few billion years after the Big Bang, already displaying characteristics similar to those of evolved bars in the Local Universe. Bars redistribute angular momentum throughout the galaxy, regulating star formation, AGN activity, and the formation of new stellar structures such as nuclear discs. However, the effects of bar-driven evolution on young galaxies are not yet known, as no evidence of bar-built stellar structures has ever been found beyond $z = 1$, until now. In this work, we present evidence for a bar-built, star-forming nuclear disc already present at redshift $z = 1.5$. This is the first evidence of a bar-built stellar structure at Cosmic Noon. We find that this nuclear disc is actively forming stars and is of similar size to some nuclear discs in nearby galaxies. This evidence solidifies the now emerging picture in which bars are fundamental not only in the late evolution of galaxies, but also in their early evolutionary stages. It changes the current paradigm by urging a revision of our picture of galaxy evolution beyond redshift one to include new considerations of the role of bars as early as a few billion years after the Big Bang.",
+    "status": "found"
+  },
+  "2601.18872": {
+    "arxiv_id": "2601.18872",
+    "title": "Against probability: A quantum state is more than a list of probability distributions",
+    "authors": [
+      "Ladina Hausmann",
+      "Renato Renner"
+    ],
+    "submission_date": "2026-01-26T19:00:01Z",
+    "latest_updated": "2026-06-13T16:49:43Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.18872v1",
+      "2601.18872v2"
+    ],
+    "abstract": "The state of a quantum system can be represented by listing the outcome probabilities for a tomographically complete set of measurements. Such representations appear throughout physics, for example, in quantum field theory via correlation functions and in quantum foundations within generalized probabilistic frameworks. In this paper, we show a no-go result: To enable useful statements, the probability representation must be topologically robust$\\unicode{x2014}$preserving the notion of closeness between states. Yet, a topologically robust probability representation cannot simultaneously retain other essential structure, such as the subsystem structure.",
+    "status": "found"
+  },
+  "2601.18873": {
+    "arxiv_id": "2601.18873",
+    "title": "Thermoskyrmions",
+    "authors": [
+      "Mikael Chala",
+      "Juan Carlos Criado",
+      "Luis Gil"
+    ],
+    "submission_date": "2026-01-26T19:00:01Z",
+    "latest_updated": "2026-01-26T19:00:01Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.18873v1"
+    ],
+    "abstract": "Skyrmions are stable and topologically non-trivial field configurations that behave like localized particles. They appear in the chiral effective theory for pions, where they correspond to the baryon states, and might also exist in the electroweak theory, in the presence of certain effective interactions. In this paper, focusing on toy models that capture different limits of the electroweak sector of the Standard Model (SM), we show that skyrmions not classically stable at zero temperature can be stabilized by thermal effects. This result motivates the study of skyrmions in the quantum effective action of the SM, potentially implying the existence of dark matter without new physics.",
+    "status": "found"
+  },
+  "2601.18874": {
+    "arxiv_id": "2601.18874",
+    "title": "Drell-Yan Production of New Particles at Fixed-Target Experiments: Heavy Neutral Lepton as a Case Study",
+    "authors": [
+      "Francis M. Burk",
+      "P. S. Bhupal Dev",
+      "Bhaskar Dutta",
+      "Tao Han",
+      "Aparajitha Karthikeyan",
+      "Doojin Kim"
+    ],
+    "submission_date": "2026-01-26T19:00:01Z",
+    "latest_updated": "2026-01-26T19:00:01Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.18874v1"
+    ],
+    "abstract": "We demonstrate the sensitivity of Drell-Yan production processes from deep inelastic scattering in searches for beyond-the-Standard Model (BSM) physics at fixed-target or beam-bump experiments. We take heavy neutral leptons (HNLs) as a case study, produced from the decay of a light vector boson mediator with mass in the range of $2-20$ GeV, which itself is generated via the Drell-Yan process. The produced HNLs subsequently decay into Standard Model final states. We consider several current and future experiments, including SBND, DarkQuest, DUNE Near Detector (ND), and SHiP. Utilizing $νπ^0$ and $νe^+e^-$ final states from HNL decays, we find that the Drell-Yan mechanism provides important contributions and significantly enhances the HNL search sensitivity, owing to the production of energetic final-state particles that are more readily detectable over the expected backgrounds. We find that at $90\\%$ C.L. sensitivity, for gauge couplings $g_{X} \\sim 10^{-2}\\ (10^{-3})$ and kinematically accessible mass range, SBND and DarkQuest can probe the HNL flavor mixing $|U_{\\ell}| \\sim 3\\times 10^{-4}\\ (10^{-3})$, whereas DUNE ND and SHiP may extend the sensitivity down to the Type-I Seesaw prediction of $|U_{\\ell}| \\sim 10^{-5}$. Finally, for our chosen benchmark $|U_{\\ell}| = 10^{-3}$ outside of the current experimental constraints, with a fixed mass ratio $m_{Z'}/m_N = 2.1$, and working within the $U(1)_{B-L}$, $U(1)_{B-3L_τ}$, and $U(1)_{B}$ parameter spaces, we find that both SBND and DarkQuest can probe $g_{X} \\sim 10^{-3}$, DUNE ND can reach $g_{X} \\sim 10^{-4}$, and SHiP can probe down to $g_{X}\\sim 5\\times 10^{-6}$. Our approach provides a powerful new technique to study HNL production at future fixed-target experiments and can readily be extended to other light BSM particle production within a broader class of dark sector models.",
+    "status": "found"
+  },
+  "2601.18875": {
+    "arxiv_id": "2601.18875",
+    "title": "Thermal Gauge Theory for a Rotating Plasma",
+    "authors": [
+      "Alberto Salvio"
+    ],
+    "submission_date": "2026-01-26T19:00:01Z",
+    "latest_updated": "2026-07-30T09:11:32Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.18875v1",
+      "2601.18875v2"
+    ],
+    "abstract": "This paper provides a systematic and complete study of thermal gauge theory for generic equilibrium density matrices, which feature arbitrary values not only of temperature and chemical potentials, but also of average angular momentum. This work extends previous studies, which focused on pure scalar-fermion theories, to all gauge theories coupled to an arbitrary matter sector. Path-integral methods are developed to study ensemble averages and thermal Green's functions of general operators, with an arbitrary number of points, in all interacting gauge theories. These methods cover both the real-time and imaginary-time formalisms. Generalized Kubo-Martin-Schwinger (KMS) conditions are obtained both in coordinate and in momentum space for operators in general representations of the Lorentz and internal symmetry group. This allows us to obtain all thermal propagators including those of gauge fields and Faddeev-Popov ghosts. By analyzing all interactions in detail, it is shown that, in perturbation theory, only the propagators are affected by the average angular momentum and the chemical potentials, the vertices remain unmodified. The paper presents fully model-independent results and can, therefore, be applied to any specific thermal field theory.",
+    "status": "found"
+  }
+}

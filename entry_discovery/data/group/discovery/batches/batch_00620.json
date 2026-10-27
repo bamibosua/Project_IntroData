@@ -1,0 +1,403 @@
+{
+  "2608.11407": {
+    "arxiv_id": "2608.11407",
+    "title": "Top-down Traffic Scenario Generation via Joint Initial-Goal Diffusion and Trajectory Infilling",
+    "authors": [
+      "Da Saem Lee",
+      "Yash Vardhan Pant",
+      "Sebastian Fischmeister"
+    ],
+    "submission_date": "2026-08-11T20:13:51Z",
+    "latest_updated": "2026-08-11T20:13:51Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11407v1"
+    ],
+    "abstract": "Robust traffic simulators are crucial for developing and testing autonomous vehicles to reduce the costly, labor-intensive real-world data collection process and the need for physical presence on the road. However, existing simulators require agents' initial states to generate trajectories, which limits scalability and diversity due to restrictions on the given initial states. While data-driven agent initialization has been widely studied, the generated initial states are not interpretable in terms of why the agents are initialized at those specific locations. Given known initial states, trajectory generation is also a challenging problem, as the model must learn the variability of the destination and how agents should reach it over time. In this paper, we propose TrafficDiffuser, a top-down traffic scenario generation framework that generates high-level traffic scenarios, defined by initial and goal state pairs, by jointly modeling them. The high-level scenario generation makes initial states better interpretable and reduces trajectory generation into as simple as an infilling problem. We demonstrate how the generated high-level traffic scenarios can be used, including constraining based on different trajectory modes and integrating them with existing trajectory generation models. We conduct extensive experiments on the Argoverse 2 motion prediction dataset to evaluate how well the generated outputs capture real-world distributions. In addition to generating goal states, TrafficDiffuser outperforms the next-best approach for agent initialization, reducing speed distribution distance by 55.3% and the off-road rate by 2.8%.",
+    "status": "found"
+  },
+  "2608.11408": {
+    "arxiv_id": "2608.11408",
+    "title": "Measure, Don't Optimize: Forecasting Recovery in LLM Unlearning",
+    "authors": [
+      "Zirui Song",
+      "Huaxing Liu",
+      "Xiang Wang",
+      "Shuai Li",
+      "Xinye Li",
+      "Lang Gao",
+      "Jinghui Zhang",
+      "Zheng Lu",
+      "Fengxian Ji",
+      "Xiaojun Chang",
+      "Xiuying Chen"
+    ],
+    "submission_date": "2026-08-11T20:16:20Z",
+    "latest_updated": "2026-08-11T20:16:20Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11408v1"
+    ],
+    "abstract": "Prior white-box studies show that large language models can retain latent traces of target knowledge after unlearning, even when the knowledge is no longer expressed in their outputs. However, existing audits remain limited to one-off diagnostics: it is unclear whether these residual signals can predict future recovery under continued training or serve as reliable optimization targets. Resolving this gap is essential to determine whether internal auditing can move beyond post-hoc evaluation toward proactive risk monitoring and safer unlearning. We propose J-Access, an inference-time audit that uses the Jacobian lens to map intermediate representations into vocabulary space and measures how often target concepts remain accessible along the model's output pathway. We hypothesize that residual accessibility reflects recovery susceptibility: knowledge that remains closer to the output pathway requires less fine-tuning to restore, leading to faster recovery. We audit 398 public unlearned models spanning eight unlearning methods. We find that: (1) most unlearned models retain access above the retain-only gold level; (2) pre-attack accessibility predicts recovery speed and extent at the model level, but cannot identify which specific facts will be recovered; and (3) directly minimizing J-Access does not promote genuine deletion. Instead, the model learns to hide knowledge from the audit, producing lower audit scores but greater post-attack recovery. These findings position J-Access as a model-level diagnostic for assessing residual susceptibility in unlearned models. We argue internal audits should serve as an independent diagnostic dimension in unlearning evaluation, and should not be converted into optimization targets without validation.",
+    "status": "found"
+  },
+  "2608.11409": {
+    "arxiv_id": "2608.11409",
+    "title": "From Self-Normal-Positioning to Omni-Directional Tracking: Real-Time Surface Modeling Enabled Probe Tilt Control for Robotic Ultrasound Imaging",
+    "authors": [
+      "Xihan Ma",
+      "Haichong Zhang"
+    ],
+    "submission_date": "2026-08-11T20:16:39Z",
+    "latest_updated": "2026-08-11T20:16:39Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11409v1"
+    ],
+    "abstract": "Ultrasound (US) provides real-time, radiation-free imaging, but the image quality depends strongly on how the probe is oriented against the patient body. Robotic US can reduce operator workload and improve acquisition consistency; however, most existing systems focus on normal positioning, where the probe is maintained perpendicular to the local surface. This constraint is inadequate for examinations like echocardiography, where obtaining a diagnostic view requires a non-normal probe angle. Consequently, a clinically useful robotic system must sense the local surface in real-time and preserve the desired probe orientation. Here, we propose an omni-directional probe-orientation control framework that integrates RGB-D perception, local-surface modeling, and task-space orientation control. The surface model fuses multi-view point clouds and provides a quadratic estimate of the local surface. A desired imaging direction is then encoded relative to the normal, enabling the probe to track arbitrary angles. The framework was evaluated through flat-surface tracking, phantom target-angle recovery, and in-vivo tracking of an expert selected view. Results show that the mean angular tracking error was 1.06 +- 0.66 deg. The system recovered a non-normal tilt angle of up to 44.39 +- 2.59 deg relative to the surface normal, and acquired the desired heart chamber view in the phantom and in-vivo experiments.",
+    "status": "found"
+  },
+  "2608.11410": {
+    "arxiv_id": "2608.11410",
+    "title": "Unmasking Toxic Mimicry in Medical Offline Reinforcement Learning for ICU Sepsis Management via Counterfactual Clinical Audits",
+    "authors": [
+      "Hangqi Ren",
+      "Junyi Liao"
+    ],
+    "submission_date": "2026-08-11T20:17:14Z",
+    "latest_updated": "2026-08-11T20:17:14Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11410v1"
+    ],
+    "abstract": "Offline reinforcement learning (RL) offers considerable promise for optimizing ICU treatment decisions, yet standard evaluation metrics Mean Squared Error (MSE) and Fitted Q-Evaluation (FQE) assess only behavioral imitation and cannot detect Toxic Mimicry, a failure mode in which agents replicate harmful patterns such as treatment withdrawal during comfort-care transitions. Using the MIMIC-III database, we propose the Counterfactual Clinical Audit (CCA) framework, which stress-tests RL agents through physiological perturbations anchored in Surviving Sepsis Campaign (SSC) guidelines. We audit a Medical Decision Transformer (MedDT) and a Historical Causal Transformer (HCT-RL), the latter employing Causal Action Shielding, propensity-based importance weighting, and Conservative Q-Learning. CCA reveals that MedDT paradoxically reduces vasopressor dosage as lactate escalates, contradicting resuscitation guidelines, while HCT-RL maintains physiologically consistent responses. These findings expose a systemic misalignment between statistical fit and clinical safety, supporting counterfactual audits as a necessary evaluation standard for medical RL.",
+    "status": "found"
+  },
+  "2608.11411": {
+    "arxiv_id": "2608.11411",
+    "title": "Symmetry-Dependent Mechanical and Vibrational Response of Formamidinium Lead Halide Perovskites: A DFT Study",
+    "authors": [
+      "Mahdi Faghihnasiri",
+      "Carmine Autieri",
+      "Sara Memarzadeh"
+    ],
+    "submission_date": "2026-08-11T20:19:47Z",
+    "latest_updated": "2026-08-11T20:19:47Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11411v1"
+    ],
+    "abstract": "Formamidinium-based hybrid halide perovskites (FAPbX3, X = Cl, Br, and I) have attracted considerable attention for optoelectronic applications owing to their outstanding optical and electronic properties. However, the influence of crystal symmetry reduction on their mechanical behavior and stability has not yet been comprehensively understood. In this work, density functional theory (DFT) calculations were performed to investigate the structural, elastic, dynamical, and nonlinear mechanical properties of the cubic and ps-cubic phases of FAPbX3. The elastic constants, bulk, shear, and Young's moduli, Poisson's ratio, sound velocities, and Debye temperature were evaluated and correlated with the second Piola-Kirchhoff stress-strain response under tensile and compressive loading. The results reveal that the effect of symmetry reduction is strongly dependent on the halide composition. For FAPbCl3 and FAPbBr3, the transition from the cubic to the ps-cubic phase reduces the lattice stiffness, decreases the acoustic phonon velocities, and lowers the Debye temperature, whereas the opposite trend is observed for FAPbI3. The stress-strain analysis further reveals pronounced nonlinear, anisotropic, and asymmetric mechanical behavior, demonstrating that symmetry reduction can either activate or suppress strain-accommodation mechanisms depending on the halide species, thereby governing the mechanical stability and the onset of structural softening. These findings provide microscopic insight into the relationship between crystal symmetry, lattice dynamics, and nonlinear mechanical response in formamidinium-based halide perovskites, offering useful guidance for the design of mechanically robust optoelectronic materials.",
+    "status": "found"
+  },
+  "2608.11412": {
+    "arxiv_id": "2608.11412",
+    "title": "Convex-Concave Interpolation and Application of PEP to Bilinear-Coupled Saddle-Point Problem",
+    "authors": [
+      "Valery Krivchenko",
+      "Alexander Gasnikov",
+      "Dmitry Kovalev"
+    ],
+    "submission_date": "2026-08-11T20:23:13Z",
+    "latest_updated": "2026-08-11T20:23:13Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11412v1"
+    ],
+    "abstract": "The Performance estimation problem (PEP) approach reformulates finding the exact worst-case performance of an algorithm as the solution to an optimization problem. Tractable formulation of the problem requires necessary and sufficient interpolation conditions. We present the interpolation conditions for convex--concave functions, bilinear functions, and composite functions with bilinear coupling. We also construct PEP for first-order methods for composite saddle-point problem.",
+    "status": "found"
+  },
+  "2608.11413": {
+    "arxiv_id": "2608.11413",
+    "title": "Graphic Matroid Secretary without the Graph",
+    "authors": [
+      "Paul Dütting",
+      "Renato Paes Leme",
+      "Martin Pál",
+      "Neel Patel"
+    ],
+    "submission_date": "2026-08-11T20:25:54Z",
+    "latest_updated": "2026-08-11T20:25:54Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11413v1"
+    ],
+    "abstract": "The matroid secretary problem (MSP) is one of the cleanest, and most captivating open problems in online algorithms. The famous MSP conjecture stipulates that there exists a constant-competitive algorithm, yet to date the best known algorithms are $O(\\log \\log (\\text{rank}))$ competitive. It is widely believed that all information that an algorithm for the MSP should use is information that is available through an independence oracle on the already arrived elements. Despite this, there are natural classes of matroids where a constant-competitive algorithm is known if we are given additional upfront information about the matroid; while no such algorithm is known if all the algorithm can use is an independence oracle on the arrived elements. In this work, we tackle the perhaps most appealing such class of matroids, graphic matroids. We develop an algorithm for the MSP that has access to the independence oracle only. Our algorithm runs in polynomial time, and if the underlying matroid is graphic, it produces an independent set whose weight is at least $1/36$ of the maximum-weight independent set. Ours is the first constant-competitive algorithm for MSP on unknown graphic matroids.",
+    "status": "found"
+  },
+  "2608.11414": {
+    "arxiv_id": "2608.11414",
+    "title": "Unit Actions on Homometric Five-Point Subsets of Cyclic Groups: Orbit and fixed-point refinement of the seven-family classification",
+    "authors": [
+      "Pakin Methawisal"
+    ],
+    "submission_date": "2026-08-11T20:28:08Z",
+    "latest_updated": "2026-08-11T20:28:08Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11414v1"
+    ],
+    "abstract": "Erickson and Jones classified the nontrivial homometry classes of five-point binary bracelets into seven families, Types A-G, and conjectured that each family is invariant under multiplication by units modulo sign. We prove this conjecture and show that the induced actions are diagonal for Type A, multiplicative for Types B-E, affine for Type F, and regular through $U_{20}/\\{\\pm1\\}\\cong C_4$ for Type G. We derive closed arithmetic formulas for the numbers of unit orbits and classes fixed by every unit, and determine the orbit-size distributions in all seven types, including explicit stabilizer descriptions for Types A and F.",
+    "status": "found"
+  },
+  "2608.11415": {
+    "arxiv_id": "2608.11415",
+    "title": "TRACES: A Benchmark for Epistemic Reliability in Scientific Reasoning by LLMs",
+    "authors": [
+      "Valentin Rodionov",
+      "Shamil Assylbekov"
+    ],
+    "submission_date": "2026-08-11T20:30:32Z",
+    "latest_updated": "2026-08-11T20:30:32Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11415v1"
+    ],
+    "abstract": "Large language models are being proposed as agents in scientific workflows, in domains where no downstream verifier exists. Such deployment assumes the model can distinguish reliable scientific literature from unreliable literature, a capability that has not yet been directly measured. Existing benchmarks evaluate factuality on questions with known answers; the failure mode we target here is different. We introduce a probe corpus of 42 retracted, fraudulent, and pseudoscientific papers, paired with a methodology for eliciting and scoring single-shot model engagement with each paper's framing. Each probe pairs a preamble extracted near-verbatim from the target paper with a scientifically plausible study-design request. The probes span five claim types: fabricated observation, pseudophysical mechanism, magical premise, legitimization bridge, and cargo-cult experiment. Two complementary scores measure whether a model rejects the flawed premise outright (IFR-a) and whether it recognizes the unreliability while still engaging (IFR-i). A depth score, the Engagement Depth Index (EDI), quantifies reproduction of paper- or field-specific withheld details. Across 30 models and 10 repeated runs, aggregate IFR-a is 0.93 $\\pm$ 0.004 and aggregate IFR-i is 0.809 $\\pm$ 0.009. Models engaged with untenable premises in 95% of all non-empty responses. Every evaluated model fails more than 71% of agentic probes, and 22 of 30 models fail more than 90% of the time. Rejections are concentrated on a small number of high-notoriety topics and specific probes, and disappear under matched-structure controls. These results are consistent with topic-keyed safety behavior rather than robust epistemic competence, and indicate an urgent need for guardrail infrastructure for scientific deployment of language models.",
+    "status": "found"
+  },
+  "2608.11416": {
+    "arxiv_id": "2608.11416",
+    "title": "The $L^2$ metric for hyperbolic 2-monopoles",
+    "authors": [
+      "Guido Franchetti",
+      "Derek Harland"
+    ],
+    "submission_date": "2026-08-11T20:31:46Z",
+    "latest_updated": "2026-08-11T20:31:46Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11416v1"
+    ],
+    "abstract": "It has been recently shown that the notoriously divergent $L ^2 $ metric on the moduli space of hyperbolic monopoles can be made finite by the introduction of a modified gauge fixing condition \\cite{franchetti:2024}. In this paper we compute this modified $L ^2 $ metric for the mass $\\tfrac{1}{2}$ 2-monopoles. The resulting metric is actually a complex non-degenerate bilinear form, which restricts to a Riemannian metric on the 4-dimensional subspace of inversion symmetric 2-monopoles. Remarkably, we have been able to compute the $L ^2 $ form explicitly in terms of elementary functions and elliptic integrals. Its asymptotic form matches what was expected on the basis of previous results in the literature.",
+    "status": "found"
+  },
+  "2608.11417": {
+    "arxiv_id": "2608.11417",
+    "title": "Locomotion Variability and User Experience in Smart Wheelchair Human-Robot Interaction",
+    "authors": [
+      "Sean Kille",
+      "Adina M. Panchea",
+      "Balint Varga",
+      "Sören Hohmann"
+    ],
+    "submission_date": "2026-08-11T20:33:26Z",
+    "latest_updated": "2026-08-11T20:33:26Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11417v1"
+    ],
+    "abstract": "Human movement is inherently variable, with variability structured according to task relevance: movements are typically more consistent at task-critical points and more flexible elsewhere. In human-robot interaction (HRI), however, model-based assistance strategies commonly assume deterministic human behavior and suppress such variability, potentially altering how interactions are experienced and lowering sense of agency. While movement variability is increasingly recognized as functionally meaningful, its deliberate preservation in assisted interaction, and its consequences for user experience, remain underexplored. In this paper, we empirically investigate how different assistance strategies shape human movement variability, task performance, and subjective interaction experience in a shared control setting. We introduce an autonomy-supportive shared control strategy that preserves users' natural movement structure. This approach is evaluated in a user study in which participants push an intelligent powered wheelchair under three conditions: no assistance, conventional variability-reducing assistance, and variability-preserving assistance. While task-relevant performance remained comparable across assisted modes, preserving natural movement variability led to more favorable interaction experiences. In particular, participants reported significantly higher perceived agency compared to conventional assistance and highest perceived usefulness. These findings suggest that variability-aware assistance can support both performance and user autonomy in physical human-robot collaboration. More broadly, the results highlight the importance of designing assistive robotic systems that respect the embodied structure of human movement rather than treating variability as noise to be neglected or eliminated.",
+    "status": "found"
+  },
+  "2608.11418": {
+    "arxiv_id": "2608.11418",
+    "title": "A Study of Kernel Telemetry Options for Security-Oriented Provenance",
+    "authors": [
+      "Paul R. B. Houssel",
+      "Olivier Levillain",
+      "Sylvie Laniepce",
+      "Nicolas Dejon",
+      "Hervé Debar"
+    ],
+    "submission_date": "2026-08-11T20:33:44Z",
+    "latest_updated": "2026-09-25T09:42:31Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.11418v1",
+      "2608.11418v2"
+    ],
+    "abstract": "Provenance aims to capture the origins, transformations, and interactions of system objects for security and forensic applications. Existing provenance capture approaches still face major challenges and are not yet ready for production environments. In this paper, we first analyze the main kernel telemetry capture approaches, identifying eBPF as the most promising, and complement this analysis with micro benchmarks to assess its performance overhead and the filtering mechanisms used to achieve capture granularity, such as restricting capture to individual containers. Building on this foundation, we then classify, according to the studied capture approaches and filtering methods, eight provenance systems and five capture agents that could serve as their capture layers, collectively referred to as tools. Our study reveals that these tools are built on highly heterogeneous capture layers, most of which cannot guarantee the integrity and availability of the captured events, completely failing to meet the requirements of security-oriented use cases.",
+    "status": "found"
+  },
+  "2608.11419": {
+    "arxiv_id": "2608.11419",
+    "title": "Diffusion-Based Data-Driven Assortment Optimization",
+    "authors": [
+      "Junyi Liao",
+      "Xiaohui Jiang",
+      "Zhengwei Tong",
+      "Ethan X. Fang",
+      "Vahid Tarokh"
+    ],
+    "submission_date": "2026-08-11T20:37:44Z",
+    "latest_updated": "2026-08-11T20:37:44Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11419v1"
+    ],
+    "abstract": "Assortment optimization is a fundamental problem in revenue management, typically addressed using parametric choice models such as the multinomial logit (MNL) and its variants. While these models enable tractable formulations, their performance is sensitive to model misspecification and often struggles to capture complex customer behavior. In this paper, we propose a model-agnostic framework for assortment optimization based on guided discrete diffusion. We represent assortments as binary vectors and perform stochastic search via a learned reverse diffusion process, avoiding explicit combinatorial enumeration. To incorporate decision objectives, we introduce a reward-guided mechanism that biases local transitions using estimates of expected revenue. This allows the method to effectively balance exploration and exploitation during generation. Empirically, we show that the proposed approach consistently identifies high-quality assortments and remains robust under model misspecification, often recovering near-optimal solutions in high-dimensional settings. Moreover, the generative nature of diffusion enables the production of diverse high-performing assortments, offering flexibility beyond a single deterministic solution. These results highlight the potential of generative modeling as a scalable and robust paradigm for combinatorial optimization in data-driven decision-making.",
+    "status": "found"
+  },
+  "2608.11420": {
+    "arxiv_id": "2608.11420",
+    "title": "Social Chain of Thought: A Multi-Agent Architecture Grounded in Medical Differential Diagnosis Methodology",
+    "authors": [
+      "Del Coburn",
+      "Scott Sanner",
+      "Dan Silver"
+    ],
+    "submission_date": "2026-08-11T20:38:03Z",
+    "latest_updated": "2026-08-11T20:38:03Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11420v1"
+    ],
+    "abstract": "Medical diagnostic reasoning is a high-impact use case for LLMs that carries significant implications for the health and wellbeing of users. When OpenAI (2026) reports that more than 5% of ChatGPT messages globally are healthcare-related, the transparency of these systems becomes a serious design concern. This is especially true for complex cases, where differential diagnosis often requires integrating multiple forms of specialist reasoning. Existing work has proposed multi-agent approaches to medical diagnosis, but it remains unclear when such systems are needed, why they help, and where they outperform monolithic inference. We introduce Social Chain of Thought (SCoT),a multi-round pipeline for medical differential diagnosis that structures multi-agent interaction as a deliberative framework for collabora. tive LLM reasoning. Evaluating SCoT against single-agent baselines, one-agent pipeline ablations, and best-of-n scaling, we show that its recall advantage is not reproduced by monolithic inference alone. SCoT is most successful in the hardest diagnostic cases, where multiple rounds of specialist conversation help recover ground-truth diagnoses and converge on a higher-recall differential.",
+    "status": "found"
+  },
+  "2608.11421": {
+    "arxiv_id": "2608.11421",
+    "title": "Second-Derivative-Corrected FANPT for Robust Continuation of Nonlinear Wavefunction Equations",
+    "authors": [
+      "Rugwed Lokhande",
+      "Krisztina Zsigmond",
+      "Paul W. Ayers",
+      "Ramón Alain Miranda-Quintana"
+    ],
+    "submission_date": "2026-08-11T20:39:14Z",
+    "latest_updated": "2026-08-11T20:39:14Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11421v1"
+    ],
+    "abstract": "We present a second-derivative-corrected extension of the Flexible Ansatz for N-body Perturbation Theory (FANPT) for solving nonlinear Flexible Ansatz for N-body Configuration Interaction (FANCI) wavefunction equations. The original quasilinear FANPT approximation neglects second- and higher-order derivatives of the determinant overlap with respect to wavefunction parameters. In this work, we retain the overlap Hessian and neglect only third- and higher-order parameter derivatives, thereby including the leading nonlinear response of the wavefunction ansatz while preserving the same response-matrix structure used in the original FANPT formulation. The resulting additional terms enter only through the constant vector of the response equations and are implemented for coupled-cluster wavefunctions in the FanPy/FANCI framework. The new approximation is tested on the Lithium Hydride molecule and the insertion of Beryllium into H$_2$ using seniority-restricted coupled-cluster wavefunctions in the STO-6G basis. The main advantage of the second-derivative correction is that it provides a better initial guess for solving the projected FANCI equations at the next point along the adiabatic connection. This improvement is diagnosed by comparing the FANPT-propagated parameters with the independently optimized FANCI parameters at the same value of $λ$. For nonlinear coupled-cluster ansatzes, especially when larger $λ$-steps are used, the corrected approximation reduces the same-$λ$ parameter deviations and suppresses large parameter-space excursions. These results show that the leading nonlinear overlap correction improves the reliability of FANPT as a continuation strategy for nonlinear wavefunction equations.",
+    "status": "found"
+  },
+  "2608.11422": {
+    "arxiv_id": "2608.11422",
+    "title": "COGENT: Counterfactual Gaussian Explanations for Volumetric Medical Images",
+    "authors": [
+      "Dorian Rząsa",
+      "Bartosz Zabdyr",
+      "Krzysztof Piekarz",
+      "Jakub Grzywaczewski",
+      "Bartlomiej Sobieski",
+      "Przemyslaw Biecek",
+      "Żaneta Świderska-Chadaj",
+      "Olga Śliwicka",
+      "Przemysław Spurek",
+      "Joanna Świebocka-Więk"
+    ],
+    "submission_date": "2026-08-11T20:40:45Z",
+    "latest_updated": "2026-08-11T20:40:45Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11422v1"
+    ],
+    "abstract": "Explainability is essential for deploying deep learning models in high-stakes medical applications. Existing explainability methods for volumetric imaging predominantly operate in voxel space, overlooking the structured representations introduced by recent advances in 3D scene modeling. We present COGENT (Counterfactual Gaussian Explanations), a framework that generates counterfactual explanations directly in the parameter space of Gaussian-based volumetric representations. Built upon MedGS and the Sybil lung cancer risk prediction model, COGENT optimizes selected Gaussian primitives through a differentiable rendering pipeline, enabling gradients from the downstream predictor to identify representation components that most influence model decisions. Unlike conventional pixel- or voxel-level attribution methods, our approach formulates explainability as a counterfactual optimization problem over an explicit 3D scene representation, producing sparse and spatially localized explanations while preserving anatomical consistency. We evaluate COGENT on lung CT scans using quantitative comparisons with existing explainability methods together with qualitative analysis by medical experts. The results demonstrate that representation-space counterfactual optimization provides clinically meaningful explanations while offering a new perspective on interpreting volumetric deep learning models.",
+    "status": "found"
+  },
+  "2608.11423": {
+    "arxiv_id": "2608.11423",
+    "title": "Analysis of Federated Aggregation under Model Poisoning and Backdoor Attacks: A Reconstructed Cross-Dataset and Cross-Architecture Benchmark",
+    "authors": [
+      "Soumya Mazumdar",
+      "Vineet Kumar Rakesh",
+      "Tapas Samanta"
+    ],
+    "submission_date": "2026-08-11T20:42:56Z",
+    "latest_updated": "2026-08-11T20:42:56Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11423v1"
+    ],
+    "abstract": "Robust comparisons of federated aggregation methods require joint consideration of predictive performance, threat definitions, metric semantics, and execution provenance. A 500-cell seed-1 evaluation matrix was reconstructed across five aggregation methods, five datasets, five architectures, and four recorded conditions: clean, sign-flipping, Gaussian, and BadNets. Successful execution logs were identified for 454 original runs and 36 repaired or rerun executions, whereas 10 clean SVHN cells were supported by summary-only provenance. Trimmed Mean achieved the highest clean macro-mean accuracy (76.02%) and the lowest mean within-task rank (1.70). Krum attained the highest recorded accuracy under both sign-flipping and Gaussian configurations. These relative rankings remained unchanged when analysis was restricted to 21 task pairs for which original successful logs were available for every method-condition combination. Audit of the supplied BadNets metric implementation established that every test input is triggered prior to target-label counting; consequently, the retained metric represents Triggered Target-Label Rate (TTLR) rather than a conventional target-excluding attack success rate. An audit of the supplied FedPARETO scaffold further identified a pathway in which predictive summaries may characterize an uncorrupted local model while the aggregation weight is applied to a separately corrupted update, introducing a potential discrepancy between reported predictive outcomes and the updates used for aggregation. The canonical matrix contains a single identified seed for each cell, and exact attack and configuration lineage is incomplete. Accordingly, the findings should be interpreted as descriptive comparisons within the recorded configurations and not as statistical estimates or universal claims regarding robustness.",
+    "status": "found"
+  },
+  "2608.11424": {
+    "arxiv_id": "2608.11424",
+    "title": "Click2Poly: A VLM for vector mapping buildings and walls",
+    "authors": [
+      "Nicolas Girard",
+      "Jawher Ben Abdallah",
+      "Arno Gobbin",
+      "Liuyun Duan",
+      "Sacha Lepretre"
+    ],
+    "submission_date": "2026-08-11T20:43:40Z",
+    "latest_updated": "2026-08-11T20:43:40Z",
+    "revised_dates": null,
+    "venue": "IGARSS 2026",
+    "latest_version": 1,
+    "versions": [
+      "2608.11424v1"
+    ],
+    "abstract": "Accurate vector mapping of buildings and walls is critical for geospatial applications but remains a labor-intensive process. While recent deep learning methods have improved automatic extraction, in order to meet cartographic standards they always require a human to perform quality control and fix complex cases in the extraction. We present Click2Poly, a human-in-the-loop AI assistant designed to speed up this manual step. Extending the Florence-2 Vision Language Model (VLM), Click2Poly responds to user clicks by editing the building or wall vector layer directly. Implemented as a QGIS plugin, Click2Poly speeds up the manual editing of building and wall vector layers in a real-world production environment.",
+    "status": "found"
+  },
+  "2608.11425": {
+    "arxiv_id": "2608.11425",
+    "title": "VLMs Win a Systematic Evaluation of Underwater Image Reconstruction",
+    "authors": [
+      "Sara Aghajanzadeh",
+      "Yingxue Wang",
+      "Ieva Bagdonaviciute",
+      "David Forsyth"
+    ],
+    "submission_date": "2026-08-11T20:46:46Z",
+    "latest_updated": "2026-08-11T20:46:46Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11425v1"
+    ],
+    "abstract": "Underwater image restoration consists of recovering an image which looks like there is no water present. To date, evaluation has not been systematic. This paper describes a systematic evaluation pipeline for underwater reconstruction, which can be used to assess a method for accuracy; consistency of reconstruction over camera moves; and the effect of water parameters. We use this pipeline to evaluate a range of current procedures, from models constructed using explicit but approximate physical models of scattering to Vision-Language Models (VLMs which are not currently trained with explicit physical models). Overall, VLMs wholly and significantly outperform physically based models in our evaluation, likely because of the importance of a strong image prior. Results on images of real underwater scenes strongly confirm the evaluation.",
+    "status": "found"
+  },
+  "2608.11426": {
+    "arxiv_id": "2608.11426",
+    "title": "Is Convergence Inevitable? Tracing Output Homogeneity Back to Base Models",
+    "authors": [
+      "Alexandrine Fortier",
+      "Hazel Chen",
+      "Peter West"
+    ],
+    "submission_date": "2026-08-11T20:47:06Z",
+    "latest_updated": "2026-08-13T18:34:52Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.11426v1",
+      "2608.11426v2"
+    ],
+    "abstract": "The lack of diversity in LM content is widely attributed to the alignment process, but how and where exactly in the pipeline this collapse begins is unknown. We argue that output homogeneity is likely learned during the pretraining phase, and only revealed or magnified during the alignment process. Specifically, we find that semantic convergence is observed from the first alignment stage--the instruction-tuning phase (SFT)--suggesting that homogeneity might already exist in the pre-alignment model. To investigate this, we conduct controlled SFT experiments examining how training data influences output convergence on specific input/output pairs. We find that convergence can be revealed and amplified, but not introduced by the SFT data, supporting its role as a catalyst rather than a cause. To further test whether homogeneity originates before alignment, we measure convergence in base models. We find that instruct-like collapse can be induced through prompting alone, even without alignment. Taken together, our results suggest that semantic convergence may arise naturally from the objectives underlying LM training, making it difficult to mitigate through post-alignment interventions alone.",
+    "status": "found"
+  }
+}

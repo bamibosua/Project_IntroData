@@ -1,0 +1,422 @@
+{
+  "2608.12587": {
+    "arxiv_id": "2608.12587",
+    "title": "DYSANOS Generative Dynamic Smooth Arbitrage-free Non-parametric Option Surfaces",
+    "authors": [
+      "Hans Buehler",
+      "Blanka Horvath",
+      "Anastasis Kratsios",
+      "Magnus Wiese"
+    ],
+    "submission_date": "2026-08-12T21:01:33Z",
+    "latest_updated": "2026-10-15T15:38:58Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 4,
+    "versions": [
+      "2608.12587v1",
+      "2608.12587v2",
+      "2608.12587v3",
+      "2608.12587v4"
+    ],
+    "abstract": "This article presents with DYSANOS the first generative market model for smooth SANOS option surfaces for all strikes and expiries which are free of static arbitrage. Our model is designed to generate entire paths of daily spot and option prices for years in the future. We present a robust and useful if somewhat simplistic baseline in the form of an AR(1) model. We discuss model setup, data pipeline, and training and investigate market reconstruction, stability, and tail behavior. We illustrate model performance on 891 Option Metrics IvyDB S&P Index surfaces from 2022-01-03 through to 2025-08-29. We also demonstrate how to construct numerically a risk-neutral density. As part of this we develop a new test for zero conditional means under a given measure. We show that for a set of 100,000 simulated paths a trading universe of 48 options and spot is numerically free of dynamic arbitrage.",
+    "status": "found"
+  },
+  "2608.12588": {
+    "arxiv_id": "2608.12588",
+    "title": "Lommel polynomials and explicitly solvable prediction problems on the unit circle",
+    "authors": [
+      "Steven P. Clark"
+    ],
+    "submission_date": "2026-08-12T21:02:51Z",
+    "latest_updated": "2026-08-12T21:02:51Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12588v1"
+    ],
+    "abstract": "To each finite symmetric measure $σ$ on the real line, with support a compact subset of $(-2,2)$, we associate a measure $μ$ on the unit circle by transporting mass at $\\pm x$ to $e^{\\pm iθ(x)}$, $θ(x)=2\\arcsin(x/2)$. The linear prediction errors, Verblunsky coefficients, and Toeplitz determinants of $μ$ are then expressed through the orthogonal polynomial data of $σ$ at the single edge point $x=2$. In particular $E_m(μ)=\\tfrac12 t_m\\|P_m\\|_σ^2$ with $t_m=P_{m+1}(2)/P_m(2)$. Under a condition on the first coefficients, decay of the recurrence coefficients of $σ$ forces the $t_m$ to increase from $t_1$ onward, a Turán-type monotonicity in the degree placing every prediction margin of $μ$ past the first above the corresponding coefficient of $σ$. Taking $σ$ to be the Lommel-polynomial measures, with atoms at rescaled reciprocals of the zeros of the Bessel function $J_ν$, yields a two-parameter family of purely atomic circle measures with a normalized determinant limit equal to a value of $J_ν$.",
+    "status": "found"
+  },
+  "2608.12589": {
+    "arxiv_id": "2608.12589",
+    "title": "Supervised Mixed-Frequency Learning for Macro-Financial Forecasting When Factors are Weak",
+    "authors": [
+      "Ulrich Hounyo",
+      "Zhendong Li"
+    ],
+    "submission_date": "2026-08-12T21:02:53Z",
+    "latest_updated": "2026-08-12T21:02:53Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12589v1"
+    ],
+    "abstract": "Factor-MIDAS regressions forecast a low-frequency target by extracting common factors from a large panel of high-frequency predictors via principal component analysis (PCA). While PCA mitigates the curse of dimensionality, it relies on factor pervasiveness, an assumption often violated when factors are weak, as is common in macro-financial forecasting. We propose SsPCA-MIDAS, which integrates supervised scaled PCA (SsPCA) into the mixed-data sampling framework. We establish consistency and asymptotic normality under weak factors, permitting inference on the prediction target. Simulations show that SsPCA-MIDAS outperforms competing PCA-based and supervised methods, especially when weak factors are prevalent. Applying machine-learning techniques such as boosting to the cleaner factors it extracts yields further gains. An extensive application to U.S. macro-financial forecasting shows that SsPCA-MIDAS selects economically meaningful predictors and improves forecasts of GDP, inflation, unemployment, asset prices, and volatility.",
+    "status": "found"
+  },
+  "2608.12590": {
+    "arxiv_id": "2608.12590",
+    "title": "Auditable agentic AI for evidence-grounded thyroid ultrasound diagnosis and reporting",
+    "authors": [
+      "Haifan Gong",
+      "Shiyu Chen",
+      "Bodong Wang",
+      "Yuqi Wang",
+      "Shijie Wang",
+      "Guoliang You",
+      "Xinyu Xiong",
+      "Haowei Wang",
+      "Mingzhi Mao",
+      "Dexing Kong",
+      "Qinghua Liu",
+      "Wei Lou",
+      "Fei Chen",
+      "Guanbin Li"
+    ],
+    "submission_date": "2026-08-12T21:02:59Z",
+    "latest_updated": "2026-08-12T21:02:59Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12590v1"
+    ],
+    "abstract": "Thyroid ultrasound diagnosis requires coordinated lesion localization, measurement, risk stratification and reporting, yet most AI systems address these tasks in isolation and provide limited support for clinical review. We present ThyroidXAgent, a clinician-interactive agentic AI system that coordinates specialized diagnostic tools and stores their outputs as an auditable case-level evidence record. The system was developed using OpenThyroidDB, a multicentre, multitask resource integrating approximately 0.3 million ultrasound images and 24,000 paired reports, and was evaluated on 28,458 non-overlapping test cases, including 8,721 cases from 35 centres in the private NHC-MISD-TUS cohort. Across heterogeneous datasets, ThyroidXAgent achieved a mean Dice score of 87.21 percent for nodule segmentation and a mean AUROC of 0.9466 for benign-malignant classification. The same workflow supported lymph-node metastasis prediction and follicular versus papillary thyroid carcinoma classification, with AUROCs of 0.864 and 0.805, respectively. For report generation, evidence-grounded assembly outperformed multimodal language-model baselines across three cohorts. ThyClinScore, a lesion-level clinical semantic metric introduced here, showed the strongest correlation with a location-aware language-model judge. ThyroidXAgent improved physician classification accuracy, increased report diagnostic consistency from 70.3 percent to 86.2 percent, and reduced segmentation and reporting time by 35.9 percent and 27.4 percent, respectively. These findings support auditable, clinician-correctable agentic AI for thyroid ultrasound diagnosis and reporting.",
+    "status": "found"
+  },
+  "2608.12591": {
+    "arxiv_id": "2608.12591",
+    "title": "The $θ$-Symmetric SRG with Applications to Stability of Cactus Dynamic Networks",
+    "authors": [
+      "Xiaokan Yang",
+      "Wei Chen",
+      "Li Qiu"
+    ],
+    "submission_date": "2026-08-12T21:04:28Z",
+    "latest_updated": "2026-08-12T21:04:28Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12591v1"
+    ],
+    "abstract": "In this paper, we systematically study a variant of the scaled relative graph (SRG), referred to as the $θ$-symmetric SRG, and apply it to the stability analysis of cactus networks. Compared with the previous SRG definition, the $θ$-symmetric SRG enables the characterization of phase lead and lag behaviors, and serves as a more natural multivariable extension of the classical Nyquist plot. We first analyze the gain and phase aspects of $θ$-symmetric SRG separately and build a connection between $θ$-segmental phase and a norm minimization problem. This connection makes it possible to compute $θ$-segmental phase via semidefinite programming. We further derive the submultiplicative and subadditive properties of $θ$-symmetric SRG. These algebraic properties are crucial to determine the nonsingularity of product-type and sum-type return difference matrices, which topologically correspond to the cyclic and parallel-feedback extreme cases of cactus networks. By taking the cyclic interconnection as the fundamental starting point, we establish necessary and sufficient conditions for its robust stability. Integrating this with the parallel case, we synthesize a unified stability framework for general multi-loop cactus networks. The $θ$-symmetric SRG framework is less conservative and provides a more intuitive geometric interpretation of system behaviors compared with some existing approaches. Several examples are included to demonstrate the effectiveness of the proposed methods.",
+    "status": "found"
+  },
+  "2608.12592": {
+    "arxiv_id": "2608.12592",
+    "title": "Represent, Then Generate: Multimodal-Conditioned Time-Series Generation under Irregular Missingness",
+    "authors": [
+      "Haochen Zhang",
+      "Jiaheng Guo",
+      "Yu-Chao Huang",
+      "Nicholas Konz",
+      "Tianlong Chen"
+    ],
+    "submission_date": "2026-08-12T21:04:44Z",
+    "latest_updated": "2026-08-17T02:30:16Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.12592v1",
+      "2608.12592v2"
+    ],
+    "abstract": "Continuous physiological time series underpin modern clinical monitoring, yet many of the most informative signals are invasive, expensive, or simply unavailable for a given patient. Conditional generation offers a remedy: an absent signal can be synthesized from co-recorded signals and routine clinical variables. Existing generators, however, are built around a single conditioning modality and degrade when forced to handle the heterogeneous, irregularly missing mix of time-variant signals and static covariates seen in practice. We propose ReCoGen (Represent Conditions, then Generate), a two-stage framework that decouples multimodal condition representation from target generation. Stage I trains one masked autoencoder per modality, distilling each time-variant condition into a compact and missingness-tolerant token sequence. Stage II trains a flow-matching generator that fuses these tokens with static conditions to synthesize the target signal. Across three physiological benchmarks, including continuous glucose monitoring on AI-READI and arterial blood pressure generation on MIMIC-III and MIMIC-IV, ReCoGen attains the best downstream utility on all sixteen (dataset, task, metric) settings, surpassing six representative conditional generators; on thirteen of them its utility also reaches or exceeds the utility measured on the real signal, a reference we read as an approximate anchor rather than a ceiling. Ablations trace the gains to the conditioning path: learnable cross-attention over the frozen per-modality encoders, and a dual token-plus-AdaLN route for the static conditions. ReCoGen thus turns routinely collected signals into informative surrogates for invasive or unavailable ones, a step toward less invasive, lower-cost continuous clinical monitoring.",
+    "status": "found"
+  },
+  "2608.12593": {
+    "arxiv_id": "2608.12593",
+    "title": "DiG-bench: Discovery in Games",
+    "authors": [
+      "Ruairidh M. Battleday",
+      "Kai Sandbrink",
+      "Jimi Cullen-Drohan",
+      "Zihan Yan",
+      "Timothy Muller",
+      "Clare Maguire",
+      "Ales Kubicek",
+      "Fraser Greenlee-Scott",
+      "Sukrit Sumant",
+      "Tri Dao",
+      "Jürgen Schmidhuber",
+      "Michal Valko",
+      "Joshua Tenenbaum",
+      "Thomas L. Griffiths",
+      "Zeb Kurth-Nelson",
+      "James C. R. Whittington"
+    ],
+    "submission_date": "2026-08-12T21:06:06Z",
+    "latest_updated": "2026-08-12T21:06:06Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12593v1"
+    ],
+    "abstract": "Discovery---formulating novel generalizations---is a central part of the scientific process. Despite its importance, there is a gap in the current AI benchmark landscape, with few benchmarks directly probing the capacity for discovering new knowledge with experimentation in controlled environments where the objective is unknown. To address this gap, we release a new benchmark: DiG-bench (Discovery in Games). DiG-bench consists of a set of 70 independent games. Each game is encoded as a short string and has unique transformation rules that must be discovered through interaction and experimentation. The levels of the game present a series of challenges to test whether the rules have been discovered, where the win conditions for each level are also unknown. We provide games at seven tiers of difficulty for AI agents. The lowest tier is routinely solvable by multiple models, while the highest tier challenges the best models in agentic harnesses. All 70 games were solved by at least one human on first attempt. A subset of 21 games is released publicly, and the remainder is held private for secure evaluation.",
+    "status": "found"
+  },
+  "2608.12594": {
+    "arxiv_id": "2608.12594",
+    "title": "What Makes a Peer? Valuation-Anchored Similarity in Private Markets",
+    "authors": [
+      "Sebastian Frank",
+      "Jingrao Lyu",
+      "Max Jarmey",
+      "Preetha Saha",
+      "Mingshu Li",
+      "Sweet Kaur",
+      "Sola Akinola",
+      "Dhagash Mehta"
+    ],
+    "submission_date": "2026-08-12T21:06:51Z",
+    "latest_updated": "2026-08-12T21:06:51Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12594v1"
+    ],
+    "abstract": "As more investors contemplate private markets and contend with limited transparency, sparse disclosures, and infrequent transactions, identifying economically meaningful peer companies for comparison is a fundamental challenge for valuation, due diligence, portfolio construction, and risk management. We propose an ensemble tree-based supervised similarity learning framework that defines company similarity through the lens of market valuation rather than static feature matching or semantic descriptions. Specifically, we train a CatBoost gradient-boosted decision tree model on observed private company valuations and derive a valuation-aware similarity metric from importance-weighted leaf-node co-occurrences across the ensemble. The similarity metric captures shared valuation drivers while accommodating nonlinear relationships, mixed data types, and pervasive missing data common in private markets. Using a global private-market universe of approximately 270,000 companies, including more than 53,000 firms with observed or derivable post-money valuations spanning multiple industries, geographies, and deal stages, we demonstrate that the proposed similarity framework improves upon traditional distance-based and text-embedding-based approaches in downstream k-nearest-neighbor valuation tasks in the evaluated industry groups, while retaining case-based explainability.",
+    "status": "found"
+  },
+  "2608.12595": {
+    "arxiv_id": "2608.12595",
+    "title": "On Nearly-Perfect Covering Codes Beyond Radius One",
+    "authors": [
+      "Gabriel Sac Himelfarb",
+      "Moshe Schwartz"
+    ],
+    "submission_date": "2026-08-12T21:07:06Z",
+    "latest_updated": "2026-08-12T21:07:06Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12595v1"
+    ],
+    "abstract": "We study (binary) nearly-perfect covering codes, which are codes that attain the Van Wee bound with equality. They act as the covering counterparts to nearly-perfect error-correcting codes, which attain the Johnson bound with equality. These codes have been completely classified for covering radius $R=1$. We prove that no code with $R\\geq 2$ can attain the original Van Wee bound with equality, since it omits the dependence on the minimum distance of the code. We refine the bound to account for the minimum distance and show some nearly-perfect covering codes. By proving some structural properties of such codes, we prove all nearly-perfect covering codes with $R=2,3$ must be equivalent to the codes we showed. We also prove that for any $R\\geq 3$, there are at most a finite number of nearly-perfect covering codes.",
+    "status": "found"
+  },
+  "2608.12596": {
+    "arxiv_id": "2608.12596",
+    "title": "Quasitopological Gravity with Matter: Modified Double-Copy Approach",
+    "authors": [
+      "Valeri P. Frolov"
+    ],
+    "submission_date": "2026-08-12T21:08:58Z",
+    "latest_updated": "2026-10-07T23:18:07Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.12596v1",
+      "2608.12596v2"
+    ],
+    "abstract": "We extend the recently proposed modified double-copy formalism to quasitopological gravity (QTG) coupled to matter. For spherically symmetric configurations, the QTG field equations in $D-$dimensional curved spacetime with a broad class of matter sources are mapped to equations for an auxiliary nonlinear gauge field in a flat $(D+1)$-dimensional spacetime. The nonlinear electrodynamics governing this auxiliary field is determined entirely by the generating function $h(p)$ that specifies the QTG model, while the corresponding current is determined by the matter stress-energy tensor. Restricting the auxiliary solution to a $D$-dimensional hyperplane and applying the modified double-copy prescription yields the Kerr--Schild metric solving the QTG equations. We show that Maxwell and nonlinear electrodynamics, as well as a broad class of spherically symmetric Yang--Mills fields, provide physical matter sources compatible with this construction. In the absence of null-matter fluxes, the corresponding solutions possess an additional Killing vector. This means that they satisfy a generalized Birkhoff theorem, whereas null charged currents naturally generate Vaidya-type solutions. In the Einstein limit, $h(p)=p$, the auxiliary nonlinear electrodynamics reduces to Maxwell theory.",
+    "status": "found"
+  },
+  "2608.12597": {
+    "arxiv_id": "2608.12597",
+    "title": "Predicting When Random Low-Dimensional Reparameterizations Train Neural Networks",
+    "authors": [
+      "Andrew Cheng",
+      "Ali Eslamian",
+      "Jie Cheng",
+      "Mehdi Zargham",
+      "Qiang Cheng"
+    ],
+    "submission_date": "2026-08-12T21:09:54Z",
+    "latest_updated": "2026-08-12T21:09:54Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12597v1"
+    ],
+    "abstract": "Neural networks can often be trained or fine-tuned through random low-dimensional reparameterization, where a small latent vector is mapped into a full parameter update by a frozen random map. This raises a practical question: how large must the latent search space be to reach a low-loss region? We first express the known accessibility transition in an equivalent conic form, centered for compact convex targets at the statistical dimension of the polar cone. Our main theoretical contribution is an orientation-resolved quadratic master formula that predicts the random-slice residual from both the curvature spectrum and the reference-to-solution displacement profile. It yields a self-consistent isotropic-orientation predictor and, in a conservative radius-only specialization, recovers the earlier Gaussian-width quadratic bound. Building on this analysis, we introduce Random Mapping Networks (RaMaN), which instantiate the predicted latent dimension using structured Hadamard or seed-regenerated Gaussian maps. These constructions avoid the O(dP) storage of dense random maps and reduce optimizer-state memory from O(P) to O(d). We also develop matrix-free curvature approximations and sweep-free dimension selection. Across controlled quadratic and neural-curvature experiments, the orientation-resolved predictor closely tracks measured transition locations and outperforms orientation-agnostic approximations when displacement direction matters. End-to-end experiments further show sharp, protocol-dependent training transitions across image and language models.",
+    "status": "found"
+  },
+  "2608.12598": {
+    "arxiv_id": "2608.12598",
+    "title": "Intensional Anaphora",
+    "authors": [
+      "Ezra Keshet",
+      "Steven Abney"
+    ],
+    "submission_date": "2026-08-12T21:11:59Z",
+    "latest_updated": "2026-08-12T21:11:59Z",
+    "revised_dates": null,
+    "venue": "Semantics and Pragmatics 17 (2024), Article 9, 1-54",
+    "latest_version": 1,
+    "versions": [
+      "2608.12598v1"
+    ],
+    "abstract": "Intensional operators are often treated as quantifiers over possible worlds, parallel to the treatment of determiners as quantifiers over individuals. Yet individuals introduced in intensional contexts cannot serve as antecedents to later pronouns as easily as those introduced in merely quantificational contexts. For instance, \"Everyone is eating a cheeseburger\" may be followed by \"They are large\", where \"they\" refers to the cheeseburgers being eaten. However, as Stone (1999) points out, the similar \"Andrea might be eating a cheeseburger\" does not support later anaphoric references such as \"It is large\" or \"They are large\". Stone (1999), Stone and Hardt (1999), and Brasoveanu (2010) address this by requiring a pronoun's value (its referents) to exist in the world of evaluation, ruling out anaphora from non-veridical intensional contexts. We show, however, both cases where such anaphora is disallowed even when the pronoun's referents clearly exist and cases where it is allowed even though they might not exist. We argue that intensional anaphora is best captured using a description-based rather than value-based account. A pronoun presupposes that its corresponding antecedent description is instantiated in each world of the context set. Thus, there must be a cheeseburger being eaten by Andrea in every candidate world for \"It is large\" to be felicitous after \"Andrea might be eating a cheeseburger\". We implement our proposal via a new logic, building on Keshet (2018) and Abney and Keshet (2022), called Plural Intensional Presuppositional predicate calculus (PIP). Each PIP formula translates directly into standard first-order predicate calculus with set abstraction, providing a classical foundation for this work.",
+    "status": "found"
+  },
+  "2608.12599": {
+    "arxiv_id": "2608.12599",
+    "title": "Dead text or binding clause? Measuring and restoring constraint influence in black-box LLM dialogues",
+    "authors": [
+      "Haoyuan Zhu"
+    ],
+    "submission_date": "2026-08-12T21:12:32Z",
+    "latest_updated": "2026-08-12T21:12:32Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12599v1"
+    ],
+    "abstract": "Multi-turn dialogues let users revoke constraints as easily as impose them, but revocation does not reliably take effect: models keep enacting withdrawn requirements (occasionally beneath comments asserting their removal), a failure we call \\emph{behavioral relapse}, or revocation inertia. No existing instrument measures this influence per clause, predicts it before delivery, or repairs it under matched budgets. \\sysname{} closes the three gaps through the model API alone: a contract ledger pairs every constraint with an executable checker, records revocations as tombstones, and compiles the net constraint state ahead of time into a single specification; a sequential ablation probe measures per-clause adherence and incremental behavioral effect; a repair ladder operates under token- and attempt-matched budgets. On \\dataname{} (\\NTasks{} HumanEval tasks, \\NClauses{} verified checkers), relapse at an 8B operating point climbs from \\ScaleDelayedMTwo{} to \\ScaleDelayedMEight{} as constraint load grows, while stronger models sit at floor. Under matched checkers, model, and budget, ahead-of-time compilation significantly reduces relapse against a no-ledger verifier-retry baseline (\\RestoreDiff{}, 95\\% CI \\RestoreDiffCI{}, $p$ \\RestoreDiffP{}); adaptive ladder interventions stacked on top add no detectable gain (95\\% confidence excludes gains $\\geq$ \\LadderExcludedGain{}). The probe predicts relapse before delivery (AUROC \\AurocPrimary{}); a one-sentence tombstone note recovers about a third of the compilation effect and survives a placebo control. At \\CostDeliveryFactor{} delivery overhead and \\CostTotalHedged{} of API compute for every result, revocation failure becomes a measurable, predictable, and repairable property of dialogue state rather than an invisible one.",
+    "status": "found"
+  },
+  "2608.12600": {
+    "arxiv_id": "2608.12600",
+    "title": "PseudoMapLabeler: Confidence-Aware Pseudo-Label Generation for Semi-Supervised Online Mapping",
+    "authors": [
+      "Chikao Tsuchiya",
+      "Dhaval Bhanderi",
+      "David Ilstrup",
+      "Hsinmin Cheng",
+      "Christopher Ostafew"
+    ],
+    "submission_date": "2026-08-12T21:18:09Z",
+    "latest_updated": "2026-08-12T21:18:09Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12600v1"
+    ],
+    "abstract": "A critical challenge in deploying online HD map construction systems to real-world scenarios is the scarcity of labeled training data, which limits model generalization in diverse environments. To address this limitation, we propose a teacher-student semi-supervised learning (SSL) framework that generates high-quality pseudo-labels from unlabeled data through confidence-aware map refinement. Our approach first trains a teacher model on limited labeled data, then leverages Beta-distribution-based confidence maps to assess the reliability of predicted map elements across temporal observations. Unlike conventional filtering methods that discard entire elements, we introduce a spatial clipping technique that selectively preserves high-confidence regions while removing unreliable segments. The refined map elements serve as map priors that improve the teacher model's prediction accuracy on unlabeled data in a second pass. These enhanced predictions become pseudo-labels for training a student model from scratch, followed by fine-tuning on the original labeled data. Experimental results on the nuScenes dataset demonstrate that our teacher-student framework with refined pseudo-labels improves performance by +6.1 mAP under a low-label regime compared to training on labeled data alone, offering a practical solution to the labeled data scarcity problem in online HD map construction.",
+    "status": "found"
+  },
+  "2608.12601": {
+    "arxiv_id": "2608.12601",
+    "title": "Tame fundamental groups of rigid spaces",
+    "authors": [
+      "Piotr Achinger",
+      "Katharina Hübner",
+      "Marcin Lara",
+      "Jakob Stix"
+    ],
+    "submission_date": "2026-08-12T21:23:09Z",
+    "latest_updated": "2026-08-12T21:23:09Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12601v1"
+    ],
+    "abstract": "We introduce the tame étale fundamental group $π_1^t(X/K)$ of a rigid space X over a non-archimedean field K. We show that if X is qcqs and K has topologically finitely generated tame Galois group (e.g. algebraically closed or a local field), then $π_1^t(X/K)$ is topologically finitely generated. If X is moreover the rigid generic fibre of a strictly semistable formal scheme such that the smooth locus of its special fibre admits a projective snc compactification, then $π_1^t(X/K)$ is topologically finitely presented. The proofs rely on techniques of logarithmic geometry (extended beyond its usual scope of finitely generated monoids), in particular on an analogous finiteness statement for the tame log étale fundamental group, and on the 'vertical compactification' of a map of adic spaces.",
+    "status": "found"
+  },
+  "2608.12602": {
+    "arxiv_id": "2608.12602",
+    "title": "Feasibility and Convex Design of Probe-Position Matching in a Scanning X-Band Radar Array",
+    "authors": [
+      "William Khalili"
+    ],
+    "submission_date": "2026-08-12T21:25:07Z",
+    "latest_updated": "2026-08-12T21:25:07Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12602v1"
+    ],
+    "abstract": "The probe position of a microstrip element is normally chosen from the isolated-element input resistance. This paper replaces that procedure with a decision available before any array optimisation. A single Floquet unit-cell solution at one arbitrary probe position is decomposed into a feed inductance, a transformer ratio carrying the probe position, and an array-loaded resonator. Three closed-form results follow. The set of input impedances reachable by probe position and resonant length is a disk in the impedance plane. An exact match to a real reference Z0 exists if and only if Rp >= Z0 + Xp^2/Z0. When this fails, the best attainable reflection follows from the image of that disk under the bilinear map. Admitting one series reactance as a second variable, the worst-case reflection over a scan sector is shown to be quasiconvex and globally solvable by bisection. The results are applied to a sixteen-element X-band array and the corresponding 16x24 lattice. For the array considered, the isolated interior element is matched to -16.94 dB while the broadside active reflection is -6.6 dB. For the two-dimensional lattice the criterion is violated at every scan angle, and the minimax design improves the worst-case sector reflection from -2.6 to -11.1 dB. Both matching designs are predictions of the extracted circuit model and have not been re-solved in the full-wave model.",
+    "status": "found"
+  },
+  "2608.12603": {
+    "arxiv_id": "2608.12603",
+    "title": "Hierarchical Bayesian Calibration with Bayesian Committee Machine",
+    "authors": [
+      "Sebastian Heinekamp",
+      "David M. Higdon",
+      "Andreas Adelmann"
+    ],
+    "submission_date": "2026-08-12T21:26:39Z",
+    "latest_updated": "2026-08-12T21:26:39Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12603v1"
+    ],
+    "abstract": "Calibrating computational models to experimental data is a core task in applied statistics, especially in scientific domains, where physical experiments are costly and simulations play a central role in design and inference. Motivated by uncertainty quantification challenges in particle accelerator experiments, we develop and evaluate a Hierarchical Bayesian Calibration framework. In contrast to standard Bayesian calibration, certain inputs - such as beam injection amplitude - must be estimated separately for each experiment. We adopt the Kennedy-O'Hagan formulation and extend it with a hierarchical prior structure to model the distribution of experiment-specific calibration parameters, thus borrowing strength and improving generalisation across repeated experiments. A key methodological challenge arises from the need to evaluate a large number of forward simulations, which renders conventional Markov chain Monte Carlo approaches computationally prohibitive. To address this, we leverage the Bayesian Committee Machine as a scalable modelling strategy for Gaussian Process emulators. The BCM provides a principled divide-and-conquer approach, enabling parallel inference and reducing computational cost without requiring problem-specific tuning of the emulator approximation. Posterior sampling is performed using the No-U-Turn Sampler, supported by automatic differentiation in Julia, which removes the need for analytic gradient derivation and facilitates flexible model specification. We assess the proposed framework using established benchmark problems and simulated data from the Argonne Wakefield Accelerator. The results demonstrate substantial computational savings and robust calibration performance, highlighting the applicability of the method to large-scale scientific modelling problems.",
+    "status": "found"
+  },
+  "2608.12604": {
+    "arxiv_id": "2608.12604",
+    "title": "Density bounds for permutations avoiding monotone arithmetic progressions",
+    "authors": [
+      "Jesse Geneson"
+    ],
+    "submission_date": "2026-08-12T21:27:09Z",
+    "latest_updated": "2026-08-12T21:27:09Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12604v1"
+    ],
+    "abstract": "For $X\\in\\{\\mathbb{N},\\mathbb{Z}\\}$, let $α_X(\\ell)$ and $β_X(\\ell)$ denote the supremal upper and lower densities of subsets of $X$ admitting $ω$-permutations without monotone $\\ell$-term arithmetic progressions. We strengthen the published lower bounds for the three-term upper-density parameters by proving \\[ α_{\\mathbb{N}}(3)\\geq\\frac23,\\qquad α_{\\mathbb{Z}}(3)\\geq\\frac23. \\] We also prove $β_{\\mathbb{Z}}(4)=1$ by constructing four-permutable subsets of the integers whose lower symmetric densities approach one.",
+    "status": "found"
+  },
+  "2608.12605": {
+    "arxiv_id": "2608.12605",
+    "title": "Surprise2Refine: Axis-Centered Exploration-To-Refinement for Agent-Assisted Creative Scaffolding",
+    "authors": [
+      "Yuzhe You",
+      "Gromit Yeuk-Yin Chan",
+      "Shunan Guo",
+      "Anlan Zhang",
+      "Eunyee Koh",
+      "Jian Zhao",
+      "Tongyu Zhou"
+    ],
+    "submission_date": "2026-08-12T21:28:00Z",
+    "latest_updated": "2026-08-12T21:28:00Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12605v1"
+    ],
+    "abstract": "Designers require different design spaces across creative stages: broad during exploration, and targeted during refinement. Yet existing agent-driven tools assume a fixed or continuously expanding space, leaving designers to manage and navigate it themselves. Informed by a formative study with five designers, we propose an axis-centered workflow that adaptively broadens and narrows the design space to support structured exploration and refinement. We implemented this workflow in Surprise2Refine, a prototype that allows users to build and reshape an nxn design space through a set of axis-centered interactions as their creative intent evolves. A within-subjects study with 14 designers shows that Surprise2Refine enhances users' sense of control, supports tracking of scaffolding paths, and improves the perceived creativity of design outcomes. We further distill design insights to guide future agent-assisted tools for creative scaffolding.",
+    "status": "found"
+  },
+  "2608.12606": {
+    "arxiv_id": "2608.12606",
+    "title": "The Wave-Regulated Precursor of a Near-Parallel Interplanetary Shock Observed by Parker Solar Probe",
+    "authors": [
+      "Immanuel Christopher Jebaraj",
+      "Lucas Colomban",
+      "Oleksiy Agapitov",
+      "Michael Gedalin",
+      "Mikhail Malkov",
+      "Athanasios Kouloumvakos",
+      "Edin Husidic",
+      "Shiladittya Mondal",
+      "Sunil Yadav",
+      "Nicolas Wijsen"
+    ],
+    "submission_date": "2026-08-12T21:40:11Z",
+    "latest_updated": "2026-08-12T21:40:11Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12606v1"
+    ],
+    "abstract": "Diffusive shock acceleration, at shocks from coronal mass ejections to supernova-remnant blast waves, presupposes a scattering wave field that the accelerated particles themselves maintain. This self-regulation has not been resolved in situ. We report Parker Solar Probe observations of a fast (~2800 km/s), near-parallel interplanetary shock at 0.24 AU on 2023 March 13 and separate its upstream wave field into four families, a classification not made before at a fast shock near the Sun. Right-hand and left-hand circularly polarized families over a common wavenumber band, with a field-aligned linearly polarized family, are cyclotron-resonant with the suprathermal-to-MeV protons streaming from the shock: the beam drives the field that scatters it, and the measured mean free path, half the precursor scale, leaves the beam anisotropic enough to sustain the drive. Outside this loop lies a weak, oblique, linearly polarized component, a few per cent of the wave power, resolved here for the first time at an in situ foreshock. Its in-phase density and field-magnitude fluctuations identify the compressive part as fast magnetosonic and shift the cyclotron-resonance energies of the resonant families by up to 13 % along the precursor. Acceleration at shocks inside 0.3 AU is governed upstream, in a foreshock the shock builds for itself.",
+    "status": "found"
+  }
+}

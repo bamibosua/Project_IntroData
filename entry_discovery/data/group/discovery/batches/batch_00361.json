@@ -1,0 +1,433 @@
+{
+  "2601.20376": {
+    "arxiv_id": "2601.20376",
+    "title": "Zero-Order Diffraction Suppression in Full Field-of-View Computer Generated Holography: A Camera In the Loop Interferometric Approach",
+    "authors": [
+      "Alessandro Cerioni",
+      "Samuele Trezzi",
+      "Marco Astarita",
+      "Tommaso Ongarello",
+      "Anna Cesaratto",
+      "Giulio Cerullo",
+      "Andrea Bassi",
+      "Gianluca Valentini",
+      "Paolo Pozzi"
+    ],
+    "submission_date": "2026-01-28T08:39:56Z",
+    "latest_updated": "2026-01-28T08:39:56Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.20376v1"
+    ],
+    "abstract": "We introduce a novel interferometric approach for suppressing zero-order diffraction (ZOD) in phase-only computer-generated holography. The technique relies on the destructive interference between the zeroth-order light and a suppression beam in a plane optically conjugated to the spatial light modulator (SLM). A camera-in-the-loop (CITL) calibration procedure retrieves the optimal pixel-wise phase map that cancels out the ZOD component with high precision, while preserving the full modulation depth of the SLM. Experimental demonstrations on point-cloud and 2D/3D holograms achieve up to 99% suppression of the ZOD intensity, without loss of image quality or field of view. Once calibrated, the correction can be applied to any hologram without recomputation, enabling real-time operation and robust performance over time. This method removes a long-standing barrier to the practical deployment of full-field holography, facilitating the development of compact, high-fidelity holographic engines for augmented and mixed reality displays.",
+    "status": "found"
+  },
+  "2601.20377": {
+    "arxiv_id": "2601.20377",
+    "title": "RF-MatID: Dataset and Benchmark for Radio Frequency Material Identification",
+    "authors": [
+      "Xinyan Chen",
+      "Qinchun Li",
+      "Ruiqin Ma",
+      "Jiaqi Bai",
+      "Li Yi",
+      "Jianfei Yang"
+    ],
+    "submission_date": "2026-01-28T08:43:48Z",
+    "latest_updated": "2026-02-02T08:31:09Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.20377v1",
+      "2601.20377v2"
+    ],
+    "abstract": "Accurate material identification plays a crucial role in embodied AI systems, enabling a wide range of applications. However, current vision-based solutions are limited by the inherent constraints of optical sensors, while radio-frequency (RF) approaches, which can reveal intrinsic material properties, have received growing attention. Despite this progress, RF-based material identification remains hindered by the lack of large-scale public datasets and the limited benchmarking of learning-based approaches. In this work, we present RF-MatID, the first open-source, large-scale, wide-band, and geometry-diverse RF dataset for fine-grained material identification. RF-MatID includes 16 fine-grained categories grouped into 5 superclasses, spanning a broad frequency range from 4 to 43.5 GHz, and comprises 142k samples in both frequency- and time-domain representations. The dataset systematically incorporates controlled geometry perturbations, including variations in incidence angle and stand-off distance. We further establish a multi-setting, multi-protocol benchmark by evaluating state-of-the-art deep learning models, assessing both in-distribution performance and out-of-distribution robustness under cross-angle and cross-distance shifts. The 5 frequency-allocation protocols enable systematic frequency- and region-level analysis, thereby facilitating real-world deployment. RF-MatID aims to enable reproducible research, accelerate algorithmic advancement, foster cross-domain robustness, and support the development of real-world application in RF-based material identification.",
+    "status": "found"
+  },
+  "2601.20378": {
+    "arxiv_id": "2601.20378",
+    "title": "Towards Quantum-Safe O-RAN -- Experimental Evaluation of ML-KEM-Based IPsec on the E2 Interface",
+    "authors": [
+      "Mario Perera",
+      "Michael Mackay",
+      "Max Hashem Eiza",
+      "Alessandro Raschellà",
+      "Nathan Shone",
+      "Mukesh Kumar Maheshwari"
+    ],
+    "submission_date": "2026-01-28T08:44:16Z",
+    "latest_updated": "2026-02-12T16:52:58Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.20378v1",
+      "2601.20378v2"
+    ],
+    "abstract": "As Open Radio Access Network (O-RAN) deployments expand and adversaries adopt 'store-now, decrypt-later' strategies, operators need empirical data on the cost of migrating critical control interfaces to post-quantum cryptography (PQC). This paper experimentally evaluates the impact of integrating a NIST-aligned module-lattice KEM (ML-KEM, CRYSTALS-Kyber) into IKEv2/IPsec protecting the E2 interface between the 5G Node B (gNB) and the Near-Real-Time RAN Intelligent Controller (Near-RT RIC). Using an open-source testbed built from srsRAN, Open5GS, FlexRIC and strongSwan (with liboqs), we compare three configurations: no IPsec, classical ECDH-based IPsec, and ML-KEM-based IPsec. The study focuses on IPsec tunnel-setup latency and the runtime behaviour of Near-RT RIC xApps under realistic signalling workloads. Results from repeated, automated runs show that ML-KEM integration adds a small overhead to tunnel establishment, which is approximately 3~5 ms in comparison to classical IPsec, while xApp operation and RIC control loops remain stable in our experiments. These findings indicate that ML-KEM based IPsec on the E2 interface is practically feasible and inform quantum-safe migration strategies for O-RAN deployments.",
+    "status": "found"
+  },
+  "2601.20379": {
+    "arxiv_id": "2601.20379",
+    "title": "Policy of Thoughts: Scaling Test-Time Training for LLM Reasoning via Online Policy Evolution",
+    "authors": [
+      "Zhengbo Jiao",
+      "Hongyu Xian",
+      "Qinglong Wang",
+      "Yunpu Ma",
+      "Zhebo Wang",
+      "Zifan Zhang",
+      "Dezhang Kong",
+      "Meng Han"
+    ],
+    "submission_date": "2026-01-28T08:44:34Z",
+    "latest_updated": "2026-07-15T09:42:57Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.20379v1",
+      "2601.20379v2"
+    ],
+    "abstract": "Large language models (LLMs) struggle with complex, long-horizon reasoning due to instability caused by their frozen policy assumption. Current test-time scaling methods treat execution feedback merely as an external signal for filtering or rewriting trajectories, without internalizing it to improve the underlying reasoning strategy. Inspired by Popper's epistemology of \"conjectures and refutations,\" we argue that intelligence requires real-time evolution of the model's policy through learning from failed attempts. We introduce Policy of Thoughts (PoT), a framework that recasts reasoning as a within-instance online optimization process. PoT first generates diverse candidate solutions via an efficient exploration mechanism, then uses Group Relative Policy Optimization (GRPO) to update a transient LoRA adapter based on execution feedback. This closed-loop design enables dynamic, instance-specific refinement of the model's reasoning priors. Experiments show that PoT dramatically boosts performance: a 4B model achieves 49.71% accuracy on LiveCodeBench, outperforming GPT-4o and DeepSeek-V3 despite being over 50 smaller.",
+    "status": "found"
+  },
+  "2601.20380": {
+    "arxiv_id": "2601.20380",
+    "title": "OmegaUse: Building a General-Purpose GUI Agent for Autonomous Task Execution",
+    "authors": [
+      "Le Zhang",
+      "Yixiong Xiao",
+      "Xinjiang Lu",
+      "Jingjia Cao",
+      "Yusai Zhao",
+      "Jingbo Zhou",
+      "Lang An",
+      "Zikan Feng",
+      "Wanxiang Sha",
+      "Yu Shi",
+      "Congxi Xiao",
+      "Jian Xiong",
+      "Yankai Zhang",
+      "Hua Wu",
+      "Haifeng Wang"
+    ],
+    "submission_date": "2026-01-28T08:45:17Z",
+    "latest_updated": "2026-01-28T08:45:17Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.20380v1"
+    ],
+    "abstract": "Graphical User Interface (GUI) agents show great potential for enabling foundation models to complete real-world tasks, revolutionizing human-computer interaction and improving human productivity. In this report, we present OmegaUse, a general-purpose GUI agent model for autonomous task execution on both mobile and desktop platforms, supporting computer-use and phone-use scenarios. Building an effective GUI agent model relies on two factors: (1) high-quality data and (2) effective training methods. To address these, we introduce a carefully engineered data-construction pipeline and a decoupled training paradigm. For data construction, we leverage rigorously curated open-source datasets and introduce a novel automated synthesis framework that integrates bottom-up autonomous exploration with top-down taxonomy-guided generation to create high-fidelity synthetic data. For training, to better leverage these data, we adopt a two-stage strategy: Supervised Fine-Tuning (SFT) to establish fundamental interaction syntax, followed by Group Relative Policy Optimization (GRPO) to improve spatial grounding and sequential planning. To balance computational efficiency with agentic reasoning capacity, OmegaUse is built on a Mixture-of-Experts (MoE) backbone. To evaluate cross-terminal capabilities in an offline setting, we introduce OS-Nav, a benchmark suite spanning multiple operating systems: ChiM-Nav, targeting Chinese Android mobile environments, and Ubu-Nav, focusing on routine desktop interactions on Ubuntu. Extensive experiments show that OmegaUse is highly competitive across established GUI benchmarks, achieving a state-of-the-art (SOTA) score of 96.3% on ScreenSpot-V2 and a leading 79.1% step success rate on AndroidControl. OmegaUse also performs strongly on OS-Nav, reaching 74.24% step success on ChiM-Nav and 55.9% average success on Ubu-Nav.",
+    "status": "found"
+  },
+  "2601.20381": {
+    "arxiv_id": "2601.20381",
+    "title": "STORM: Slot-based Task-aware Object-centric Representation for robotic Manipulation",
+    "authors": [
+      "Alexandre Chapin",
+      "Emmanuel Dellandréa",
+      "Liming Chen"
+    ],
+    "submission_date": "2026-01-28T08:46:04Z",
+    "latest_updated": "2026-06-25T10:25:16Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2601.20381v1",
+      "2601.20381v2",
+      "2601.20381v3"
+    ],
+    "abstract": "Visual foundation models provide strong perceptual features for robotics, but their dense representations lack explicit object-level structure, limiting robustness and controllability in manipulation tasks. We propose STORM (Slot-based Task-aware Object-centric Representation for robotic Manipulation), a lightweight object-centric adaptation module that augments frozen visual foundation models with a small set of task-aware slots for robotic manipulation. Rather than fully tuning large backbones on the task, STORM employs an efficient two-stage training strategy: few layers of object-centric representation are first trained on top of the frozen backbone through visual--semantic pretraining using language embeddings, then jointly adapted with a downstream manipulation policy for task alignement. This staged learning prevents degenerate slot formation and preserves semantic consistency while aligning perception with task objectives. Experiments on object discovery benchmarks and robotic manipulation tasks show that STORM improves control performance and generalization to visual shifts (distractors, textures, lighting) compared to directly using frozen or fine-tuned foundation model features, or existing object-centric representations. STORM serves not only as an efficient mechanism for refining generic foundation model features, but also as a novel way of injecting beneficial structural and semantic bias into policy learning.",
+    "status": "found"
+  },
+  "2601.20382": {
+    "arxiv_id": "2601.20382",
+    "title": "How Software Engineering Research Overlooks Local Industry: A Smaller Economy Perspective",
+    "authors": [
+      "Klara Borowa",
+      "Andrzej Zalewski",
+      "Lech Madeyski"
+    ],
+    "submission_date": "2026-01-28T08:47:22Z",
+    "latest_updated": "2026-01-28T08:47:22Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.20382v1"
+    ],
+    "abstract": "The software engineering researchers from countries with smaller economies, particularly non-English speaking ones, represent valuable minorities within the software engineering community. As researchers from Poland, we represent such a country. We analyzed the ICSE FOSE (Future of Software Engineering) community survey through reflexive thematic analysis to show our viewpoint on key software community issues. We believe that the main problem is the growing research-industry gap, which particularly impacts smaller communities and small local companies. Based on this analysis and our experiences, we present a set of recommendations for improvements that would enhance software engineering research and industrial collaborations in smaller economies.",
+    "status": "found"
+  },
+  "2601.20383": {
+    "arxiv_id": "2601.20383",
+    "title": "HINT: Hierarchical Interaction Modeling for Autoregressive Multi-Human Motion Generation",
+    "authors": [
+      "Mengge Liu",
+      "Yan Di",
+      "Gu Wang",
+      "Yun Qu",
+      "Dekai Zhu",
+      "Yanyan Li",
+      "Xiangyang Ji"
+    ],
+    "submission_date": "2026-01-28T08:47:23Z",
+    "latest_updated": "2026-01-28T08:47:23Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.20383v1"
+    ],
+    "abstract": "Text-driven multi-human motion generation with complex interactions remains a challenging problem. Despite progress in performance, existing offline methods that generate fixed-length motions with a fixed number of agents, are inherently limited in handling long or variable text, and varying agent counts. These limitations naturally encourage autoregressive formulations, which predict future motions step by step conditioned on all past trajectories and current text guidance. In this work, we introduce HINT, the first autoregressive framework for multi-human motion generation with Hierarchical INTeraction modeling in diffusion. First, HINT leverages a disentangled motion representation within a canonicalized latent space, decoupling local motion semantics from inter-person interactions. This design facilitates direct adaptation to varying numbers of human participants without requiring additional refinement. Second, HINT adopts a sliding-window strategy for efficient online generation, and aggregates local within-window and global cross-window conditions to capture past human history, inter-person dependencies, and align with text guidance. This strategy not only enables fine-grained interaction modeling within each window but also preserves long-horizon coherence across all the long sequence. Extensive experiments on public benchmarks demonstrate that HINT matches the performance of strong offline models and surpasses autoregressive baselines. Notably, on InterHuman, HINT achieves an FID of 3.100, significantly improving over the previous state-of-the-art score of 5.154.",
+    "status": "found"
+  },
+  "2601.20384": {
+    "arxiv_id": "2601.20384",
+    "title": "The Orbit Method and Character Formulas for Tempered representations of a Nonconnected Reductive Real Algebraic Group",
+    "authors": [
+      "Jean-Yves Ducloux"
+    ],
+    "submission_date": "2026-01-28T08:48:52Z",
+    "latest_updated": "2026-01-28T08:48:52Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.20384v1"
+    ],
+    "abstract": "Let G be a possibly disconnected reductive real Lie group. In this paper, I parametrize the set of irreductible tempered characters of G. I then describe these characters using certain ``Kirillov's formulas,'' based on the descent method near each elliptic element in G. If G is linear and connected, the parameters I use are ``final basic'' parameters in the sense of Knapp and Zuckerman.",
+    "status": "found"
+  },
+  "2601.20385": {
+    "arxiv_id": "2601.20385",
+    "title": "SFQA: A Comprehensive Perceptual Quality Assessment Dataset for Singing Face Generation",
+    "authors": [
+      "Zhilin Gao",
+      "Yunhao Li",
+      "Sijing Wu",
+      "Yucheng Zhu",
+      "Huiyu Duan",
+      "Guangtao Zhai"
+    ],
+    "submission_date": "2026-01-28T08:48:55Z",
+    "latest_updated": "2026-01-28T08:48:55Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.20385v1"
+    ],
+    "abstract": "The Talking Face Generation task has enormous potential for various applications in digital humans and agents, etc. Singing, as a common facial movement second only to talking, can be regarded as a universal language across ethnicities and cultures. However, it is often underestimated in the field due to lack of singing face datasets and the domain gap between singing and talking in rhythm and amplitude. More significantly, the quality of Singing Face Generation (SFG) often falls short and is uneven or limited by different applicable scenarios, which prompts us to propose timely and effective quality assessment methods to ensure user experience. To address existing gaps in this domain, this paper introduces a new SFG content quality assessment dataset SFQA, built using 12 representative generation methods. During the construction of the dataset, 100 photographs or portraits, as well as 36 music clips from 7 different styles, are utilized to generate 5,184 singing face videos that constitute the SFQA dataset. To further explore the quality of SFG methods, subjective quality assessment is conducted by evaluators, whose ratings reveal a significant variation in quality among different generation methods. Based on our proposed SFQA dataset, we comprehensively benchmark the current objective quality assessment algorithms.",
+    "status": "found"
+  },
+  "2601.20386": {
+    "arxiv_id": "2601.20386",
+    "title": "SCORE: A Unified Framework for Overshoot Refund in Online FDR Control",
+    "authors": [
+      "Qi Kuang",
+      "Bowen Gang",
+      "Yin Xia"
+    ],
+    "submission_date": "2026-01-28T08:52:02Z",
+    "latest_updated": "2026-05-29T15:32:17Z",
+    "revised_dates": null,
+    "venue": "Proceedings of the 43rd International Conference on Machine Learning, Seoul, South Korea, PMLR 306, 2026",
+    "latest_version": 2,
+    "versions": [
+      "2601.20386v1",
+      "2601.20386v2"
+    ],
+    "abstract": "We propose a unified framework to enhance the power of online multiple hypothesis testing procedures based on $e$-values. While $e$-value-based methods offer robust online False Discovery Rate (FDR) control under minimal assumptions, they often suffer from power loss by discarding evidence that exceeds the rejection threshold. We address this inefficiency via the Sequential Control with Overshoot Refund for E-values (SCORE) framework, which leverages the inequality $\\mathbb{I}(y \\ge 1) \\le y - (y-1)_+$, valid for all $y\\ge 0$, to reclaim this otherwise wasted evidence. This simple yet powerful insight yields a unified principle for improving a broad class of online testing algorithms. Building on this framework, we develop SCORE-enhanced versions of several state-of-the-art procedures, including SCORE-LOND, SCORE-LORD, and SCORE-SAFFRON, all of which strictly dominate their original counterparts while preserving valid finite-sample FDR control. Furthermore, under mild assumptions, SCORE permits retroactive updates of alpha-wealth by using the latest decision twice: first to determine its reward or loss, and then to refresh past wealth. Such a mechanism enables more aggressive testing strategies while maintaining valid FDR control, thereby further improving statistical power. The effectiveness of the proposed methods is validated through extensive simulation and real-data experiments.",
+    "status": "found"
+  },
+  "2601.20387": {
+    "arxiv_id": "2601.20387",
+    "title": "Reinforcement Learning for Dividend Optimization in Partially Observed Regime-Switching Diffusion Model",
+    "authors": [
+      "Zhongqin Gao",
+      "Yan Lv",
+      "Jingmin He"
+    ],
+    "submission_date": "2026-01-28T08:52:08Z",
+    "latest_updated": "2026-01-28T08:52:08Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.20387v1"
+    ],
+    "abstract": "This paper studies the optimal dividend problem with a bounded payout rate in a partially observed regime-switching diffusion model, where, in practice, the market regime is unobserved and key model parameters are unknown. To address this partial-information setting, we propose a continuous-time reinforcement learning (RL) approach within an exploratory (entropy-regularized) stochastic control framework for discounted dividends under regime switching. The associated exploratory Hamilton-Jacobi-Bellman (HJB) system admits semi-analytical characterizations of the value function and the optimal exploratory dividend policy, determined by two unknown functions solving two ordinary differential equations (ODEs) together with positive real roots of the induced quadratic equations. Exploiting this structure, we introduce parametric families for both the value function and the policy, using low-degree polynomial approximations to the ODE solutions. We then develop an actor-critic RL algorithm to learn the optimal exploratory policy through interactions with the market environment: it performs belief-state filtering from observed data and iterates policy evaluation and policy improvement online to refine the policy. Numerical experiments demonstrate strong out-of-sample performance of the learned dividend policies.",
+    "status": "found"
+  },
+  "2601.20388": {
+    "arxiv_id": "2601.20388",
+    "title": "Complex segregation patterns in confined nonuniform granular shearing flows",
+    "authors": [
+      "Santiago Caro",
+      "Riccardo Artoni",
+      "Patrick Richard",
+      "Michele Larcher",
+      "James T. Jenkins"
+    ],
+    "submission_date": "2026-01-28T08:52:37Z",
+    "latest_updated": "2026-01-28T08:52:37Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.20388v1"
+    ],
+    "abstract": "When polydisperse granular systems are sheared, the transverse dynamics is characterized by the interplay of size segregation and diffusion. Segregation in nonuniform and confined shearing flows is studied using annular shear cell experiments complemented with discrete numerical simulations of bidisperse, inelastic, and frictional spheres under gravity. We explored the role of shear localization, granular temperature, boundaries, and mixture properties in the evolution of the segregation rate and the maximum degree of segregation achieved by a bidisperse granular system in the steady state. A faster segregation process and a more developed degree of segregation is observed for bidisperse mixtures with a larger size ratio and a higher proportion of large particles. Normally, in the presence of gravity, size segregation induces large particles to rise and small particles to sink. However, two additional complex segregation patterns were found: inverse segregation and horizontal segregation. The first might be related to the kinematics of the flow, while the second is a geometrical effect. This additional segregation mechanism, in addition to diffusion fluxes and high confining pressure, hampers complete segregation in the steady state, where some degree of mixing always persists.",
+    "status": "found"
+  },
+  "2601.20389": {
+    "arxiv_id": "2601.20389",
+    "title": "Graph-Structured Deep Learning Framework for Multi-task Contention Identification with High-dimensional Metrics",
+    "authors": [
+      "Xiao Yang",
+      "Yinan Ni",
+      "Yuqi Tang",
+      "Zhimin Qiu",
+      "Chen Wang",
+      "Tingzhou Yuan"
+    ],
+    "submission_date": "2026-01-28T08:54:15Z",
+    "latest_updated": "2026-01-28T08:54:15Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.20389v1"
+    ],
+    "abstract": "This study addresses the challenge of accurately identifying multi-task contention types in high-dimensional system environments and proposes a unified contention classification framework that integrates representation transformation, structural modeling, and a task decoupling mechanism. The method first constructs system state representations from high-dimensional metric sequences, applies nonlinear transformations to extract cross-dimensional dynamic features, and integrates multiple source information such as resource utilization, scheduling behavior, and task load variations within a shared representation space. It then introduces a graph-based modeling mechanism to capture latent dependencies among metrics, allowing the model to learn competitive propagation patterns and structural interference across resource links. On this basis, task-specific mapping structures are designed to model the differences among contention types and enhance the classifier's ability to distinguish multiple contention patterns. To achieve stable performance, the method employs an adaptive multi-task loss weighting strategy that balances shared feature learning with task-specific feature extraction and generates final contention predictions through a standardized inference process. Experiments conducted on a public system trace dataset demonstrate advantages in accuracy, recall, precision, and F1, and sensitivity analyses on batch size, training sample scale, and metric dimensionality further confirm the model's stability and applicability. The study shows that structured representations and multi-task classification based on high-dimensional metrics can significantly improve contention pattern recognition and offer a reliable technical approach for performance management in complex computing environments.",
+    "status": "found"
+  },
+  "2601.20390": {
+    "arxiv_id": "2601.20390",
+    "title": "On The Cutoff Phenomenon For Dyson-Jacobi Processes",
+    "authors": [
+      "Samuel Chan-Ashing"
+    ],
+    "submission_date": "2026-01-28T08:56:18Z",
+    "latest_updated": "2026-01-28T08:56:18Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.20390v1"
+    ],
+    "abstract": "We study the convergence to equilibrium of the Dyson-Jacobi process, a system of n interacting particles on the segment [0, 1] arising from Random Matrix Theory. We establish the occurence of a cutoff phenomenon for the intrinsic Wasserstein distance and provide an explicit formula for the associated mixing time. Our approach relies on the interplay between the Riemannian geometry of the process and a flattened Euclidean representation obtained via a diffeomorphic deformation. This transformation allows us to transfer curvature-dimension inequalities from the Euclidean setting to the original space, thereby yielding sharp quantitative estimates.",
+    "status": "found"
+  },
+  "2601.20391": {
+    "arxiv_id": "2601.20391",
+    "title": "Eliminating Hallucination in Diffusion-Augmented Interactive Text-to-Image Retrieval",
+    "authors": [
+      "Zhuocheng Zhang",
+      "Kangheng Liang",
+      "Guanxuan Li",
+      "Paul Henderson",
+      "Richard Mccreadie",
+      "Zijun Long"
+    ],
+    "submission_date": "2026-01-28T08:58:57Z",
+    "latest_updated": "2026-01-28T08:58:57Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.20391v1"
+    ],
+    "abstract": "Diffusion-Augmented Interactive Text-to-Image Retrieval (DAI-TIR) is a promising paradigm that improves retrieval performance by generating query images via diffusion models and using them as additional ``views'' of the user's intent. However, these generative views can be incorrect because diffusion generation may introduce hallucinated visual cues that conflict with the original query text. Indeed, we empirically demonstrate that these hallucinated cues can substantially degrade DAI-TIR performance. To address this, we propose Diffusion-aware Multi-view Contrastive Learning (DMCL), a hallucination-robust training framework that casts DAI-TIR as joint optimization over representations of query intent and the target image. DMCL introduces semantic-consistency and diffusion-aware contrastive objectives to align textual and diffusion-generated query views while suppressing hallucinated query signals. This yields an encoder that acts as a semantic filter, effectively mapping hallucinated cues into a null space, improving robustness to spurious cues and better representing the user's intent. Attention visualization and geometric embedding-space analyses corroborate this filtering behavior. Across five standard benchmarks, DMCL delivers consistent improvements in multi-round Hits@10, reaching as high as 7.37\\% over prior fine-tuned and zero-shot baselines, which indicates it is a general and robust training framework for DAI-TIR.",
+    "status": "found"
+  },
+  "2601.20392": {
+    "arxiv_id": "2601.20392",
+    "title": "Long-time Strichartz estimates on 3D waveguide with applications",
+    "authors": [
+      "Yangkendi Deng",
+      "Boning Di",
+      "Jiao Ma",
+      "Dunyan Yan",
+      "Kailong Yang"
+    ],
+    "submission_date": "2026-01-28T09:00:05Z",
+    "latest_updated": "2026-01-28T09:00:05Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.20392v1"
+    ],
+    "abstract": "We study long-time Strichartz estimates for the Schrödinger equation on waveguide manifolds, and use them to establish upper bounds on the growth of Sobolev norms for the nonlinear Schrödinger equation on three-dimensional waveguides.",
+    "status": "found"
+  },
+  "2601.20393": {
+    "arxiv_id": "2601.20393",
+    "title": "Scalable Multi-QPU Circuit Design for Dicke State Preparation: Optimizing Communication Complexity and Local Circuit Costs",
+    "authors": [
+      "Ziheng Chen",
+      "Junhong Nie",
+      "Xiaoming Sun",
+      "Jialin Zhang",
+      "Jiadong Zhu"
+    ],
+    "submission_date": "2026-01-28T09:00:38Z",
+    "latest_updated": "2026-01-28T09:00:38Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.20393v1"
+    ],
+    "abstract": "Preparing large-qubit Dicke states is of broad interest in quantum computing and quantum metrology. However, the number of qubits available on a single quantum processing unit (QPU) is limited -- motivating the distributed preparation of such states across multiple QPUs as a practical approach to scalability. In this article, we investigate the distributed preparation of $n$-qubit $k$-excitation Dicke states $D(n,k)$ across a general number $p$ of QPUs, presenting a distributed quantum circuit (each QPU hosting approximately $\\lceil n/p \\rceil$ qubits) that prepares the state with communication complexity $O(p \\log k)$, circuit size $O(nk)$, and circuit depth $O\\left(p^2 k + \\log k \\log (n/k)\\right)$. To the best of our knowledge, this is the first construction to simultaneously achieve logarithmic communication complexity and polynomial circuit size and depth. We also establish a lower bound on the communication complexity of $p$-QPU distributed state preparation for a general target state. This lower bound is formulated in terms of the canonical polyadic rank (CP-rank) of a tensor associated with the target state. For the special case $p = 2$, we explicitly compute the CP-rank corresponding to the Dicke state $D(n,k)$ and derive a lower bound of $\\lceil\\log (k + 1)\\rceil$, which shows that the communication complexity of our construction matches this fundamental limit.",
+    "status": "found"
+  },
+  "2601.20394": {
+    "arxiv_id": "2601.20394",
+    "title": "Comprehension vs. Adoption: Evaluating a Language Workbench Through a Family of Experiments",
+    "authors": [
+      "Giovanna Broccia",
+      "Maurice H. ter Beek",
+      "Walter Cazzola",
+      "Luca Favalli",
+      "Francesco Bertolotti",
+      "Alessio Ferrari"
+    ],
+    "submission_date": "2026-01-28T09:00:59Z",
+    "latest_updated": "2026-01-28T09:00:59Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.20394v1"
+    ],
+    "abstract": "Language workbenches are tools that enable the definition, reuse, and composition of programming languages and their ecosystems, aiming to streamline language development. To facilitate their adoption by language designers, the comprehensibility of the language used to define other languages is an important aspect to evaluate. Moreover, considering that language workbenches are relatively new tools, user acceptance emerges as a crucial factor to be accounted for during their assessment. Current literature often neglects user-centred aspects like comprehensibility and acceptance in the assessment of this breed of tools. This paper addresses this gap through a family of experiments assessing Neverlang, a modular language workbench. The study adopts a tailored version of the Method Evaluation Model (MEM) to evaluate the comprehensibility of Neverlang's meta-language and programs, as well as user acceptance in terms of perceived ease of use, perceived usefulness, and intention to use. It also investigates the relationships among these dimensions. The experiments were conducted in three iterations involving participants from academia. The results reveal that users demonstrate sufficient comprehension of Neverlang's meta-language, particularly concerning its syntax, express a favourable perception of its usefulness, and indicate their intention to use it. However, the results also indicate that Neverlang's ease of use remains a challenge. Additionally, variations in the perceived ease of use and perceived usefulness, whether low or high, influence the users' intention to use the tool. Surprisingly, no significant correlation is found between comprehensibility and user acceptance. Notably, higher comprehensibility of the meta-language does not necessarily translate into greater acceptance, underscoring the complex interplay between comprehension and adoption.",
+    "status": "found"
+  },
+  "2601.20395": {
+    "arxiv_id": "2601.20395",
+    "title": "Remarks on the Boston Unramified Fontaine-Mazur Conjecture, II",
+    "authors": [
+      "Yufan Luo"
+    ],
+    "submission_date": "2026-01-28T09:02:11Z",
+    "latest_updated": "2026-01-28T09:02:11Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.20395v1"
+    ],
+    "abstract": "In this paper, we investigate Boston's generalization of the unramified Fontaine-Mazur conjecture for Galois representations. From a group-theoretic perspective, we first show that the conjecture can be reduced to the case of certain distinguished classes of $p$-adic analytic groups and $\\mathbb{F}_{p}[[T]]$-adic analytic groups. Specifically, these are open subgroups of the groups of integral points of absolutely simple algebraic groups defined over non-Archimedean local fields. Furthermore, we provide a group-theoretic interpretation of the conjecture in terms of the virtually Golod-Shafarevich property. Finally, we establish a local-global principle and a prime-to-adjoint principle for the conjecture.",
+    "status": "found"
+  }
+}

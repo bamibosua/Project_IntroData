@@ -1,0 +1,415 @@
+{
+  "2609.17634": {
+    "arxiv_id": "2609.17634",
+    "title": "Xiao's Genus-Two Fibration: Branched Covers and Braid Monodromy",
+    "authors": [
+      "Anar Akhmedov"
+    ],
+    "submission_date": "2026-09-15T11:08:34Z",
+    "latest_updated": "2026-09-15T11:08:34Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17634v1"
+    ],
+    "abstract": "We compute the geometric monodromy factorization of Xiao's genus-two Lefschetz fibration directly from its branched-cover construction, following Moishezon's braid-monodromy method. The complete quadrangle determines the motion of the six branch points and gives four nonseparating and three separating vanishing cycles. At each of the three $3+3$ degenerations, the branch motion determines the spherical mapping class, and Xiao's local holomorphic model determines its genus-two lift. After fixing a distinguished system of paths, we obtain an ordered positive factorization of type $(4,3)$ and give Artin coordinates for the seven factors.",
+    "status": "found"
+  },
+  "2609.17635": {
+    "arxiv_id": "2609.17635",
+    "title": "Physics-Constrained Digital Twins for Sensor Integrity in Urban Pedestrian Flow: Detecting Stealthy False Data Injection with Conformal Guarantees",
+    "authors": [
+      "Oscar Mogollon Gutierrez",
+      "Fatemeh Ghasemi",
+      "Mohammadhossein Homaei",
+      "Andres Caro",
+      "Mar Avila"
+    ],
+    "submission_date": "2026-09-15T11:16:21Z",
+    "latest_updated": "2026-09-15T11:16:21Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17635v1"
+    ],
+    "abstract": "City pedestrian counting systems now feed economic indicators, planning decisions and safety operations, yet the twins built on top of them treat the incoming stream as ground truth. We study what happens when it is not. We formalise stealthy false data injection for city-scale pedestrian sensing, where the map from latent flow to observation is far more rank deficient than in the power and water networks for which stealth has been characterised. Our twin estimates directed flows on the pedestrian street graph, assimilates counts through a learned graph-localised gain, and is trained against a flow conservation residual that couples metered and unmetered segments. Detection combines the innovation with that residual, and the alarm threshold is set by adaptive conformal calibration rather than by hand. To measure what the physics buys, we define the attack margin, the relative reduction in worst-case corruption of the estimated flow field, achieved against a white-box adversary that optimises directly through the twin. On six years of Melbourne data the margin reaches 0.54 against a single compromised device and falls to 0.19 when a third of the fleet is compromised, on a network where only 1.18 per cent of walkable segments are metered. Replacing the street graph by a distance graph collapses it to 0.09, which shows that the gain comes from the conservation law rather than from locality.",
+    "status": "found"
+  },
+  "2609.17636": {
+    "arxiv_id": "2609.17636",
+    "title": "IViS: Interferometric Visibility-domain inversion Software - A GPU-accelerated Python framework for joint deconvolution with ASKAP",
+    "authors": [
+      "A. Marchal",
+      "N. M. McClure-Griffiths",
+      "J. Dempsey",
+      "H. Nguyen",
+      "H. Dénes",
+      "J. Dickey",
+      "C. Lynn",
+      "Y. K. Ma",
+      "D. McConnell",
+      "M. -A. Miville-Deschênes",
+      "N. Pingel",
+      "J. Th. van Loon"
+    ],
+    "submission_date": "2026-09-15T11:46:10Z",
+    "latest_updated": "2026-09-15T11:46:10Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17636v1"
+    ],
+    "abstract": "Wide-field spectral-line imaging with modern radio interferometers remains challenging when the emission is extended, multiscale, and distributed over many overlapping pointings. Accurate reconstruction requires joint treatment of the calibrated visibilities, control of image-domain regularity, and recovery of missing short spacings from single-dish data. We present IViS (Interferometric Visibility-domain Inversion Software), a GPU-accelerated Python framework for visibility-domain joint deconvolution, and assess its performance for wide-field HI imaging with the Australian Square Kilometre Array Pathfinder (ASKAP). The current model, Classic3D, reconstructs a non-parametric sky cube directly from calibrated visibilities by minimizing a regularized least-squares criterion. The forward model relies on a non-uniform fast Fourier transform (NUFFT), supports joint deconvolution across mosaic pointings and positivity constraints, and can incorporate single-dish data through a fusion term. We validate the method using point-source, noise-only, and multiscale diffuse-emission simulations, and apply it to ASKAP observations toward the Large Magellanic Cloud (LMC). The simulations show that IViS recovers point-source flux accurately without regularization and that regularization sets the trade-off between noise suppression and effective resolution. Joint deconvolution can recover more large-scale power than linear mosaicking of independently deconvolved pointings. With single-dish information, the reconstructed power spectra closely reproduce the input sky statistics. Applied to ASKAP data, IViS yields 10h mosaics with an effective resolution of 22'' and reduced residual side-lobe structure. Compared with ASKAPSoft multi-scale CLEAN for a single observing block, Classic3D exhibits fewer residual side-lobes and recovers substantially more power at low spatial frequencies.",
+    "status": "found"
+  },
+  "2609.17637": {
+    "arxiv_id": "2609.17637",
+    "title": "What You Can't See Is Still What You Learn: A Preregistered Sixty-Society Confirmation That Evidence Masking Drives Compositional Generalization",
+    "authors": [
+      "Narcis Marincat"
+    ],
+    "submission_date": "2026-09-15T12:40:45Z",
+    "latest_updated": "2026-09-20T09:47:02Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2609.17637v1",
+      "2609.17637v2"
+    ],
+    "abstract": "Restricting what a module can read may improve what a system learns to compute. We test this in a preregistered confirmation with sixty four-cell systems sharing a frozen language-model backbone and communicating through learned continuous packets. Five conditions vary evidence masking, ownership markers, and replacement of foreign evidence with neutral filler (task-irrelevant text of the same token length), across six initialization clusters, each with two data orders, on one fresh task world. With markers available in both regimes, masking improved accuracy on held-out two- and three-operation compositions by median paired differences of 0.846 and 0.859; all twelve pairs cleared the required margins, and the full preregistered behavioral criterion passed. The unmarked replication also passed. No marked global-visibility (G+) system passed the marker-following check, so the effect of usable role information remains unresolved. The filler condition yielded seven full generalizers, but its decomposition criteria were inconclusive. Packet interventions in all eighteen audited masked systems followed the predicted intermediate-value changes on eligible cases; these finite, success-conditioned audits do not establish mediation. The results confirm a large advantage of the tested masking regime, while leaving its finer attribution and generality open. Protocols, results, and checkpoints are public.",
+    "status": "found"
+  },
+  "2609.17638": {
+    "arxiv_id": "2609.17638",
+    "title": "Lecture notes on Physics Informed Neural Networks, Neural Operators, and their applications",
+    "authors": [
+      "Alessandro Bombini"
+    ],
+    "submission_date": "2026-09-15T12:57:03Z",
+    "latest_updated": "2026-09-15T12:57:03Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17638v1"
+    ],
+    "abstract": "This is the set of lecture notes for the PhD course \\href{https://www.unibz.it/en/faculties/engineering/phd-computer-science/study-course-offering/2025/36967}{\\textit{Physics Informed Neural Network}, held at the University of Bozen/Bolzano} in the academic year 2025/2026. The goal of the course was to introduce the concept of Physics Informed Deep Neural Networks (PINN) and Neural Operators (NOs), discuss their implementation from scratch in PyTorch and using advanced ad-hoc developed open-source libraries such as NVIDia PhysicsNeMo to address real-world problems in various fields (engineering, physics, petroleum reservoir). We discuss recent topics such as Mixture-of-Models, Fourier Neural Operators, Physics-Informed Kolmogorov-Arnold Networks (PIKANs) and Fourier Neural Operators.",
+    "status": "found"
+  },
+  "2609.17639": {
+    "arxiv_id": "2609.17639",
+    "title": "Scaling Articulated Rationales for MLLM-based Recommendation",
+    "authors": [
+      "Haoke Xiao",
+      "Yueyang Liu",
+      "Yuhui Zhang",
+      "Xiang Chen",
+      "Yufei Liu",
+      "Jia Xu",
+      "Yalong Guan",
+      "Xiaolan Zhu",
+      "Xiaoyu Zhang",
+      "Shijun Wang",
+      "Shuang Yang",
+      "Zijie Meng",
+      "Zejian Zhang",
+      "Ruochen Yang",
+      "Xiangyu Wu",
+      "Tingting Gao",
+      "Han Li",
+      "Lantao Hu",
+      "Cheng Luo",
+      "Kun Gai"
+    ],
+    "submission_date": "2026-09-15T13:39:16Z",
+    "latest_updated": "2026-09-21T12:33:01Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2609.17639v1",
+      "2609.17639v2"
+    ],
+    "abstract": "We presented SARA, an industrial framework that transforms sparse articulated user rationales into scalable recommendation signals. Its data engine curates questionnaire responses into SARA-HQ, providing explicit preference supervision for aligning SARA-7B through SFT and Quality-Refining DPO. This alignment extends rationale generation from $86{,}564$ questionnaire-covered authors to the full $10$M-author space. SARA-Ranker translates the generated positive and negative rationales into features for user--author interaction modeling and negative-feedback history modeling, connecting articulated reasons to production ranking. Evaluation on unseen authors demonstrates that SARA-7B generates more specific, relevant, and grounded rationales than the evaluated general-purpose MLLMs. On top of a strong industrial ranking baseline with multimodal features, separate online A/B tests show that positive-rationale integration increases watch time by $0.99\\%$, while negative-rationale integration reduces Hate feedback by $8.16\\%$. Daily refresh and more than $30$ days of production deployment further demonstrate the operational feasibility of the approach. These findings establish articulated rationales as a useful complement to behavioral and content signals, and demonstrate a practical role for MLLMs in scaling sparse human explanations into preference information that improves industrial recommendation.",
+    "status": "found"
+  },
+  "2609.17640": {
+    "arxiv_id": "2609.17640",
+    "title": "Quiescence in Concert: Composing Multi-Channel Time-Outs for IOCO",
+    "authors": [
+      "Laura Brandán Briones",
+      "Petra van den Bos",
+      "Marcus Gerhold"
+    ],
+    "submission_date": "2026-09-15T14:03:22Z",
+    "latest_updated": "2026-09-15T14:03:22Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17640v1"
+    ],
+    "abstract": "In Model-Based Testing (MBT), test suites are generated automatically from a formal specification. The theory of testing real-time systems is rich, but often underused in practice, partly because applying the timed machinery demands expertise practitioners should not need. In prior work we addressed this for timed testing with a canonic lifting operator, which lets a modeller specify behaviour as plain labelled transition systems while implicitly obtaining the timed automata that express their quiescent behaviour (the explicit absence of outputs) with timers. This paper takes the next step: we show that our lifting still works when each component carries its own time-out on its own channel. This way, we introduce a multi-channel lifting. We show that it commutes with parallel composition, i.e. composing and lifting is the same as lifting first and then composing. We show that the MBT apparatus survives: conformance, test generation and verdicts are preserved by the lifting, on the testable traces that a time-out based tester can observe.",
+    "status": "found"
+  },
+  "2609.17641": {
+    "arxiv_id": "2609.17641",
+    "title": "Transcendence measure for the values of the logarithmic derivative of the Bessel function $J_0$ at algebraic arguments",
+    "authors": [
+      "Stéphane Fischler",
+      "Tanguy Rivoal"
+    ],
+    "submission_date": "2026-09-15T14:30:59Z",
+    "latest_updated": "2026-09-15T14:30:59Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17641v1"
+    ],
+    "abstract": "Let $P\\in \\mathbb Z[X]\\setminus\\{0\\}$ be of degree $δ\\ge 1$ and usual height $H\\ge 1$, and let $α\\in \\overline{\\mathbb Q}^*$ be of degree $d\\ge 2$. As a consequence of general result due to Lang and Galochkin, we have the following transcendence measure: for any $\\varepsilon>0$, there exists $c>0$ such that $\\vert P(J_0'(α)/J_0(α))\\vert>c/H^{4d^2δ+\\varepsilon}$ where $J_0$ is the Bessel function. In this paper, we prove that the exponent $4d^2δ$ can be replaced by a smaller (explicit) quantity $μ(d,δ)\\le 4d^2δ-2dδ-1$. A similar improvement holds more generally for the logarithmic derivative of any $E$-function $f$ of differential order 2 and such that $f$ and $f'$ are homogeneously algebraically independent. Our method rests upon the optimization of the size of a determinant that appears naturally in the classical Siegel-Shidlovskii method, following the steps of our previous improvement of the transcendence measure of the value $e^α$ for any $α\\in \\overline{\\mathbb Q}^*$.",
+    "status": "found"
+  },
+  "2609.17642": {
+    "arxiv_id": "2609.17642",
+    "title": "Self-similar swirl between contracting porous walls: the GD1998 exact Navier-Stokes solution revisited in the similarity variables of the OpenAI 2026 forced blow-up construction",
+    "authors": [
+      "Ramani Duraiswami"
+    ],
+    "submission_date": "2026-09-15T14:45:58Z",
+    "latest_updated": "2026-09-15T14:45:58Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17642v1"
+    ],
+    "abstract": "The finite-time blow-up construction for the forced Navier-Stokes equations released by OpenAI in Sep. 2026 (OpenAI 2026) has as its object an axisymmetric swirl core in anisotropic similarity variables. Its geometry is that of an exact steady swirl between rotating porous cylinders found by Gumerov and Duraiswami in 1998 (GD1998). We find that the GD1998 boundary value problem does not recast into the similarity variables and that its generalization is a two-dimensional profile problem between porous walls held at fixed similarity radii, second order in the radial variable X and first order in the time-like axial variable $η$. We solve it by tensor Chebyshev collocation with a pinned pressure gauge, complex-step Newton and arclength continuation, verify it three ways, and sweep the radial Reynolds number, the wall swirl and a symmetry-breaking datum. Below inflow 9 the solution is one smooth branch; above it the symmetric branch folds at a critical swirl $F^*=0.41V_0^2$. The Dirichlet axis problem has no resolution-stable solution; the core must be a Cauchy problem from the axis. Its moment identities cannot be met by a core symmetric about the dividing plane: the core is an axial through-flow, as its authors chose it; a non-symmetric core meets them to 0.2%. The cone condition is Rayleigh's criterion with axial shear and requires radii of order $10^{20}$. Dynamic rescaling shows the profile to be an attractor at weak inflow and toward the fold, a saddle-node; at moderate inflow and strong swirl the spectrum does not converge in the axial resolution and is left open. A real fluid cavitates (water) or shocks (air) first; the GD1998 chamber is proposed as the experiment. Nothing found suggests the mechanism is reachable in a flow one computes or builds; the forced theorem, and this study, leave the unforced equations of practice as they were. Code, tests and log accompany the paper.",
+    "status": "found"
+  },
+  "2609.17643": {
+    "arxiv_id": "2609.17643",
+    "title": "Hu-Sawicki $f(R)$ Gravity in a Non-Flat Universe: Constraints from DESI-DR2, BBN, and Type Ia Supernovae",
+    "authors": [
+      "Saurabh Verma",
+      "Manish Yadav",
+      "Archana Dixit",
+      "Anirudh Pradhan",
+      "M. S. Barak"
+    ],
+    "submission_date": "2026-09-15T14:53:01Z",
+    "latest_updated": "2026-09-15T14:53:01Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17643v1"
+    ],
+    "abstract": "Late-time cosmic acceleration is conventionally ascribed to a cosmological constant, though $Λ$CDM continues to face several theoretical difficulties that keep alternative gravity models under active consideration. This work examines the Hu-Sawicki $f(R)$ model in a spatially non-flat background, with the modified-gravity parameter $b$ and the curvature density $Ω_k$ both treated as free parameters, constrained using DESI-DR2 BAO, BBN, and four Type Ia supernova compilations -- PantheonPlus, PantheonPlus+SH0ES, Union3, and DESY5yr. Across all four combinations, $H_0$ and $Ω_m$ stay close to their $Λ$CDM values, with a noticeable shift in $H_0$ appearing only for the SH0ES-calibrated dataset. The parameter $b$ departs from zero at better than $2σ$ in three of the four fits, most prominently for DESY5yr, whereas the SH0ES-calibrated combination alone prefers $b<0$. A strong positive correlation among $b$, $H_0$, and $Ω_k$ underlies this shift, suggesting that curvature signatures obtained under $Λ$CDM can be reabsorbed into the modified-gravity sector once this additional freedom is allowed. Statistical model comparison via AIC and BIC gives a mixed picture: AIC leans toward the Hu-Sawicki model in three of the four combinations, while BIC's heavier penalty on the extra parameter favors $Λ$CDM in most cases, and only DESY5yr is preferred under both criteria. These findings show that the Hu-Sawicki $f(R)$ scenario with unconstrained curvature is nonetheless a statistically feasible, if not obviously preferred, alternative to $Λ$CDM, and that curvature restrictions generated inside $Λ$CDM cannot be viewed as independent of the underlying gravity model.",
+    "status": "found"
+  },
+  "2609.17644": {
+    "arxiv_id": "2609.17644",
+    "title": "Rethinking Domain Specialization for Open-Ended Scientific Reasoning in Astronomy Language Models",
+    "authors": [
+      "Vanessa Lama",
+      "Sanjay Das",
+      "Emily Herron",
+      "Yuan-Sen Ting",
+      "Tijmen de Haan",
+      "Junqi Yin",
+      "Tirthankar Ghosal",
+      "Feiyi Wang"
+    ],
+    "submission_date": "2026-09-15T15:05:09Z",
+    "latest_updated": "2026-09-15T15:05:09Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17644v1"
+    ],
+    "abstract": "Domain-specialized language models are widely used for scientific question answering, but stronger general-purpose systems raise a sharper question: when does domain-specific fine-tuning remain valuable for open-ended scientific reasoning? We study this in astronomy with a curated QA benchmark from publicly available 2017--2026 Olympiad-style materials. The free-response subset contains 300 questions, including 204 text-only and 96 image-linked examples. We compare open-weight and API-served general-purpose, multimodal, and astronomy-specialized models using judge-based correctness and complementary reference metrics. Strong general-purpose models establish the highest correctness baseline in this testbed, while analyses of metric agreement, judge sensitivity, benchmark composition, and modality reveal variation not captured by a single leaderboard. These results motivate treating domain specialization as a task- and deployment-dependent property and highlight the role of domain-specific evaluation in determining which models, capabilities, and evaluation criteria are appropriate for scientific workflows.",
+    "status": "found"
+  },
+  "2609.17645": {
+    "arxiv_id": "2609.17645",
+    "title": "State Without a Landlord: An Architecture Proposal for Peer-to-Peer Replication of Durable Workflow State",
+    "authors": [
+      "Luca Maraschi",
+      "Matteo Collina"
+    ],
+    "submission_date": "2026-09-15T15:10:25Z",
+    "latest_updated": "2026-09-15T15:10:25Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17645v1"
+    ],
+    "abstract": "Durable-execution frameworks commonly journal execution steps of a long-running function and reconstruct state by deterministic replay; the journal is therefore the workflow's authoritative state, and in current deployments it typically resides with whichever provider hosts the run. This paper examines what changes if the journal is instead an authenticated, append-only log replicated among the parties to the workflow. We propose an architecture in which runs are chains of single-writer epoch cores; executor succession is governed by quorum-finalized closure certificates; durability, timeout, and checkpoint decisions are carried by explicit certificates rather than implicit trust; and large payloads travel a separate content-addressed distribution plane. A threat model separates what signatures establish (authorship and order) from what they do not (truth of recorded effects). We state the design as a set of typed artifacts and invariants, identify which claims are established by existing systems and which are proposals requiring validation, and define the prototype experiments, including specific adversarial cases, that would validate or falsify the proposal's central mechanisms.",
+    "status": "found"
+  },
+  "2609.17646": {
+    "arxiv_id": "2609.17646",
+    "title": "Robust and Efficient AI Frameworks for Scalable Material Design and Property Prediction",
+    "authors": [
+      "Kishalay Das"
+    ],
+    "submission_date": "2026-09-15T15:15:21Z",
+    "latest_updated": "2026-09-15T15:15:21Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17646v1"
+    ],
+    "abstract": "This thesis develops robust and efficient AI frameworks for accelerating crystalline materials discovery by addressing both major stages of the materials-design pipeline: crystal property prediction and crystal structure generation. Motivated by the high computational cost of Density Functional Theory (DFT) and the limited availability of labeled materials data, the thesis explores graph representation learning, pretraining, multimodal learning, and generative modeling for scalable materials design. For property prediction, the thesis first introduces CrysXPP, which learns transferable crystal representations through unsupervised graph autoencoding, reducing dependence on large property-labeled datasets. It then proposes CrysGNN, a large-scale self-supervised graph pretraining framework that captures atomic connectivity, chemical attributes, and global structural information and transfers this knowledge to downstream property predictors through knowledge distillation. CrysMMNet further enriches crystal representations by jointly modeling graph structure and textual descriptions, thereby incorporating both local chemical and global structural knowledge. For crystal generation, the thesis introduces TGDMat, a text-guided joint diffusion framework that jointly models lattice parameters, atomic types, and atomic coordinates while incorporating textual structural knowledge during denoising. This enables the generation of more valid and stable periodic materials while also supporting conditional generation from natural-language descriptions. Overall, the thesis establishes a unified AI-based framework for data-efficient property prediction and controllable crystal generation, demonstrating how graph learning, multimodal representations, and generative models can reduce computational cost and improve the scalability of materials",
+    "status": "found"
+  },
+  "2609.17647": {
+    "arxiv_id": "2609.17647",
+    "title": "CARE: A Responsibility-Oriented Architecture for Domain-Scoped Resolution in Modular and Upgradeable Smart Contracts",
+    "authors": [
+      "Ali Rajabi Nekoo",
+      "Laleh Rasoul",
+      "Azadeh Zamanifar"
+    ],
+    "submission_date": "2026-09-15T15:32:10Z",
+    "latest_updated": "2026-09-15T15:32:10Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17647v1"
+    ],
+    "abstract": "Modular and upgradeable smart-contract systems enable replaceable execution logic, but modular dispatch alone does not define which components own architectural responsibilities such as coordination, resolution, shared state, reusable services, and observation. This paper presents CARE, a responsibility-oriented architecture that makes these ownership boundaries explicit and introduces domain-scoped capability resolution, separating execution coordination from the authority that selects an execution target. CARE is defined through a formal architectural model from which five structural properties are derived. Its behavioral semantics are further encoded in TLA+ and evaluated with TLC against seven architectural invariants. Intermediate TLC results were used to refine the architectural model before the final validation run. A controlled empirical evaluation against EIP-2535 and a routing only baseline shows that CARE introduces an approximately fixed 7.7k-gas runtime routing premium in the evaluated workloads, while localized capability replacement remains close to the routing-only control and substantially less expensive than the evaluated EIP-2535 reconfiguration path. Adversarial tests further characterize authorization controls and residual risks associated with delegated execution and reentrancy. These results position CARE as an architectural model for explicit responsibility ownership and localized evolution rather than as a universal replacement for existing smart-contract upgradeability mechanisms",
+    "status": "found"
+  },
+  "2609.17648": {
+    "arxiv_id": "2609.17648",
+    "title": "Trust propagation and structural containment in Multi-agent LLM pipelines",
+    "authors": [
+      "Tanzim Hossain Safin",
+      "Sharif Noor Zisad",
+      "Swakkhar Shatabda",
+      "Ragib Hasan"
+    ],
+    "submission_date": "2026-09-15T15:46:01Z",
+    "latest_updated": "2026-09-15T15:46:01Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17648v1"
+    ],
+    "abstract": "Multi-agent LLM systems increasingly automate tasks involving agents with different levels of privilege, creating a security risk in which a compromised low-privilege agent can influence a higher-privilege agent and trigger an unauthorized action. We study attack propagation in a four-agent LangGraph pipeline comprising a Supervisor, Researcher, Validator, and Executor. We evaluate shared-memory poisoning and indirect prompt injection through a forged approval embedded in a retrieved document. We compare the Validator's judgment with an independent authorization layer using task-bound signed tokens and a separately verified policy oracle. Our contribution is an empirical study of attack propagation, a component-level ablation of the authorization boundary, and the Judgment Bypass Rate (JBR), which measures compromise at the attacked agent rather than at the final action. Across three seeds and 60 labeled tasks, memory poisoning reaches execution in every undefended trial. With authorization enabled, it achieves 100% JBR but 0% Unsafe Action Rate, showing that the Validator can remain compromised while execution is contained. Against an attacker possessing the signing secret, the policy oracle provides the observed containment, while an independently authored least privilege policy preserves this result. An Observer layer reduces the false-positive rate for agent hijacking from 49% to 7% without weakening execution-level security. These results show that structural authorization can contain compromised agent behavior even when upstream LLM judgment fails.",
+    "status": "found"
+  },
+  "2609.17649": {
+    "arxiv_id": "2609.17649",
+    "title": "Multimodal Three-Class Alzheimer's Disease Classification: The MCI Bottleneck",
+    "authors": [
+      "Lorenzo Tanzi",
+      "Chunfeng Lian",
+      "Lara Cavinato"
+    ],
+    "submission_date": "2026-09-15T15:59:33Z",
+    "latest_updated": "2026-09-15T15:59:33Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17649v1"
+    ],
+    "abstract": "Alzheimer's disease is clinically staged as a three-class progression: cognitively normal (CN), mild cognitive impairment (MCI) and Alzheimer's disease (AD). The intermediate MCI class is biologically heterogeneous and overlaps with both extremes and it is the dominant source of classification error. This work develops a leakage-controlled framework for subject-level CN/MCI/AD classification that fuses four sources of information: a 3D Tau PET model, a 3D structural MRI model, a tabular ROI-and-plasma model and a hierarchical PET--plasma model. All branches are derived from a custom preprocessing and feature-extraction pipeline applied to $881$ aligned subjects from the ADNI cohort. They are aligned at the subject level and evaluated under identical, no-leak cross-validation folds, so that the multimodal fusion, built entirely on synchronized out-of-fold predictions, avoids optimistic bias. The final model is a fixed, parameter-free convex combination of the four branches. A nested superlearner serves as a robustness analysis and reproduces, rather than improves on, the fixed weights. The fusion improves significantly over every individual branch, with the largest gain on the MCI class, while a logistic meta-learner provides a complementary, MCI-oriented operating point on the same accuracy-sensitivity frontier. The work is presented as an honest baseline. It shows that multimodal fusion improves robustness, but that MCI remains the central bottleneck. This reflects a limit of the cross-sectional information rather than of the fusion mechanism and motivates reformulating the task as a continuous progression problem.",
+    "status": "found"
+  },
+  "2609.17650": {
+    "arxiv_id": "2609.17650",
+    "title": "Tight Lower Bounds for Differentially Private Continual Counting",
+    "authors": [
+      "Charlie Harrison",
+      "Ethan Leeman"
+    ],
+    "submission_date": "2026-09-15T16:32:31Z",
+    "latest_updated": "2026-09-17T18:31:35Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2609.17650v1",
+      "2609.17650v2"
+    ],
+    "abstract": "The Binary Tree Mechanism is a standard algorithm for differentially private continual counting, but its asymptotic optimality under pure differential privacy has remained unresolved since its introduction. We resolve this question. For fixed $0 < \\varepsilon \\le 1$, we prove asymptotically tight lower bounds of $Ω(\\log^2 n)$ for worst-case expected $\\ell_\\infty$ error and $Ω(\\log^3 n)$ for mean and maximum per-coordinate expected squared error. These bounds hold for arbitrary mechanisms, even when the entire stream is available in advance. The same lower bounds hold under approximate differential privacy whenever $δ\\le n^{-c}$, for any fixed $c>0$. Our lower bounds match the Binary Tree Mechanism instantiated with Laplace noise, establishing its asymptotic optimality under both pure differential privacy and approximate differential privacy in the standard regime of $δ\\ll1/n$. Our proof uses a single hard distribution with a bounded exponential score on a tree. A simple modification of the score allows the same framework to establish tight lower bounds for all three error measures.",
+    "status": "found"
+  },
+  "2609.17651": {
+    "arxiv_id": "2609.17651",
+    "title": "Homological invariants of Edge Ideals associated to powers of cycles",
+    "authors": [
+      "Shahnawaz Ahmad Rather",
+      "S. Pirzada",
+      "M. Aijaz"
+    ],
+    "submission_date": "2026-09-15T16:48:39Z",
+    "latest_updated": "2026-09-15T16:48:39Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17651v1"
+    ],
+    "abstract": "Let $G_{n,m}=\\overline{\\C_n^{[m]}}$, where $\\C_n^{[m]}$ denotes the closed $m$th power of the $n$-cycle. We study the graded Betti numbers and homological invariants of the edge ring of $G_{n,m}$ in the range $n\\geq 3m+1$. These graphs form a natural family for the study of edge rings whose regularity can be compared explicitly with the induced matching number. In particular, for $n\\geq4m+1$, the graph $G_{n,m}$ has induced matching number one, whereas its edge ring has regularity two. Our approach is based on a characterization of the homology of the induced subcomplexes of the independence complex $Δ(G_{n,m})$. We introduce a family $\\mathcal{S}_V(k,m)$ of vertex subsets characterized by their successive gaps around the cycle and show that, for $W\\in\\mathcal{S}_V(k,m)$, the induced subcomplex $Δ[W]$ has the homotopy type of $\\mathbb{S}^1$, whereas for $W\\notin\\mathcal{S}_V(k,m)$ all its positive-dimensional reduced homology groups vanish. Combining this characterization with Hochster's formula and an explicit enumeration of $\\mathcal{S}_V(k,m)$, we obtain a closed formula for the graded Betti numbers in the second strand. We further determine the extremal Betti number, regularity, and projective dimension of the edge ring of $G_{n,m}$. Finally, we compute the $f$- and $h$-vectors of the independence complex and use the Hilbert series to determine the graded Betti numbers in the linear strand. The case $m=2$ recovers the corresponding results for complements of squares of cycles obtained in~\\cite{RatherSquare}.",
+    "status": "found"
+  },
+  "2609.17652": {
+    "arxiv_id": "2609.17652",
+    "title": "Fathom: Per-Query Read Depth for Sparse Decoding over Offloaded KV Caches",
+    "authors": [
+      "Vivek Kalyanarangan"
+    ],
+    "submission_date": "2026-09-15T16:53:01Z",
+    "latest_updated": "2026-09-18T05:27:21Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2609.17652v1",
+      "2609.17652v2",
+      "2609.17652v3"
+    ],
+    "abstract": "When agentic sessions run to a million tokens with many sessions resident at once, the KV cache and the index that ranks it live in host memory, and the scan that ranks all n keys for a top-k step becomes the traffic that bounds decoding. We present Fathom, a key scan in which each query decides how many bits of each key channel to read. The 4-bit K cache is stored channel-major as bit planes, so a prefix of t planes is exactly the channel's t-bit quantizer, and the query spends its bit budget by reverse water-filling over the variance-weighted importance of its channels. At one million tokens on Qwen3-8B a decode step is 1.67x faster in GPU time than with the 136-bit scans of Double Sparsity, Loki and SparQ r=32, and in the same GPU time as SparQ's 68-bit read (r=16) Fathom reads 18% fewer bytes with lower attention error on six of seven model and context settings. On RULER-style tasks every per-token scan matches exact top-k decoding, and on real coding-agent sessions Fathom reaches the step agreement of the most accurate 136-bit scan at 92 bits. The store is the 4-bit K copy a quantized serving stack already holds, and the method is not faster when the index is resident in GPU memory.",
+    "status": "found"
+  },
+  "2609.17653": {
+    "arxiv_id": "2609.17653",
+    "title": "Reflect, Revise, Reuse: Training-Free Skill Evolution for GUI Agents",
+    "authors": [
+      "Bofan Chen",
+      "Boxuan Zhang",
+      "Fei Tang",
+      "Zhengxi Lu",
+      "Yong Du",
+      "Tongbo Chen",
+      "Weiming Lu",
+      "Jun Xiao",
+      "Yueting Zhuang",
+      "Yongliang Shen"
+    ],
+    "submission_date": "2026-09-15T17:24:06Z",
+    "latest_updated": "2026-09-15T17:24:06Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17653v1"
+    ],
+    "abstract": "GUI agents execute long-horizon tasks on dynamic graphical user interfaces, where pop-ups, delayed loads, and relocated widgets routinely invalidate plans fixed before execution. Recent agent-skill frameworks encapsulate reusable procedural knowledge to mitigate this, yet existing skill designs are largely developed without targeting GUI execution dynamics and treat skills as static artifacts produced before deployment rather than living procedural knowledge that improves through it. We argue that what GUI agents need is not better static skills, but skills that can be revised from execution feedback at deployment time, without additional training. We propose \\textbf{EvoSkill-GUI}, a training-free framework in which each skill is a structured multi-file package containing retrieval metadata, executable plans, backup localization, failure-recovery rules, accessibility utilities, and failure cases. EvoSkill-GUI operates through a \\textbf{\\emph{reflect-revise-reuse}} loop: the executor performs instant in-rollout revisions, an isolated critic diagnoses failed trajectories under strict information isolation, and the executor edits specific skill files through a restricted tool interface. Across MobileWorld, AndroidWorld, and OSWorld, three mainstream GUI benchmarks spanning mobile and desktop platforms, EvoSkill-GUI consistently improves multiple base models without any training, with maximum gains of $+16.2\\%$, $+6.0\\%$, and $+10.5\\%$ respectively, and evolved skill libraries continue to benefit related tasks rather than being rebuilt from scratch. Our code is available at https://github.com/ZJU-REAL/EvoSkill-GUI.",
+    "status": "found"
+  }
+}

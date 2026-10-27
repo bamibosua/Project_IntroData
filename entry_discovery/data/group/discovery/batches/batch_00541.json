@@ -1,0 +1,412 @@
+{
+  "2608.09827": {
+    "arxiv_id": "2608.09827",
+    "title": "A stable and efficient Galerkin spectral method with asymmetrically-weighted Hermite functions for the Vlasov-Poisson system",
+    "authors": [
+      "Ruiyang Dai"
+    ],
+    "submission_date": "2026-08-10T16:44:45Z",
+    "latest_updated": "2026-10-19T14:38:29Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2608.09827v1",
+      "2608.09827v2",
+      "2608.09827v3"
+    ],
+    "abstract": "We analyze a Galerkin spectral method applied to the Vlasov-Poisson (VP) system based on time-independent asymmetrically-weighted (AW) Hermite functions in velocity. The VP system is written as an hyperbolic system using AW Hermite functions in velocity. Unlike the classical Petrov-Galerkin spectral method, which is not stable, the proposed Galerkin spectral method admits a natural stability in the unweighted L2 norm. This stability property enables a rigorous convergence analysis of the method. For sufficiently regular solutions with exponential decay in velocity, we establish error estimates between the exact and numerical solutions and prove convergence of the Galerkin spectral method. In particular, the method achieves spectral convergence in Sobolev spaces, with convergence rates determined by the regularity of the exact solution. Since the Gram matrix arising from the proposed Galerkin method is dense, we derive an equivalent form that retains the same approximation properties while preserving the sparsity structure similar to the classical Petrov-Galerkin method.",
+    "status": "found"
+  },
+  "2608.09828": {
+    "arxiv_id": "2608.09828",
+    "title": "Multi-Agent AI Safety as an Institutional Design Problem",
+    "authors": [
+      "Abdullah X"
+    ],
+    "submission_date": "2026-08-10T16:47:01Z",
+    "latest_updated": "2026-08-10T16:47:01Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09828v1"
+    ],
+    "abstract": "AI agents increasingly work inside systems that govern how they delegate tasks, move information, execute actions, and use shared resources. Recent work already shows that deployment rules can change collective behavior. Here we ask which parts of an AI institution produce safety and how they do it. This is the first paper from POLIS, an ongoing research programme studying algorithmic institutions for multi-agent systems. We report a frozen 5,280-episode study suite. The main pre-specified delegation experiment spans four model families; a targeted high-conflict diagnostic adds three additional model endpoints. In matched structured workflows, the model sees different rule formulations and guards consult different authority states. We also vary the attractiveness of the immediate compliant internal/self fallback and allow blocked workflows to continue. A detailed constitutional prompt produces 0/384 realized violations. A provenance-aware executable guard also produces 0/384, although it blocks prohibited attempts in 51/384 episodes; 44/51 of those episodes later complete safely. The local-state guard's failures concentrate in scenarios where an ordinary transformation changes visible policy while originating authority stays fixed. In matched laundering scenarios, that guard admits violations in 22/96 episodes and provenance enforcement in 0/96 (p = 4.77 x 10^-7). A separate resource-allocation experiment shows that revealing the numerical value of an otherwise identical cap changes agent requests. In these structured workflows, the same final violation rate can hide very different mechanisms. The rule itself is only part of the institution. The authority state the system trusts matters, and so does the path available after a block.",
+    "status": "found"
+  },
+  "2608.09829": {
+    "arxiv_id": "2608.09829",
+    "title": "Blocking codimension-one simplices on the moment curve",
+    "authors": [
+      "Pablo Soberón"
+    ],
+    "submission_date": "2026-08-10T16:47:49Z",
+    "latest_updated": "2026-08-10T16:47:49Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09829v1"
+    ],
+    "abstract": "We study $b_d(n)$, the minimum number of points needed to meet the relative interior of every $(d-1)$-simplex spanned by an $n$-point set in general position in $\\mathbb{R}^d$. In the plane, this is the parameter from the Blocking Conjecture. We improve the best known general planar lower bound to $ b_2(n)\\ge \\frac{41}{13}n-O\\left(\\frac{n}{\\log n}\\right)$. For $n$ points on the moment curve in even dimension $2r$, we prove that at least $\\frac{1}{r!}n^r\\log n-O_r(n^r)$ points are needed to pierce the relative interior of all its codimension-one simplices, which exceeds the number of codimension-one faces in a triangulation by a $\\log n$ factor. For equally spaced points on the moment curve in odd dimensions, we construct an optimal blocking set whose size equals the maximum number of codimension-one faces in a triangulation.",
+    "status": "found"
+  },
+  "2608.09830": {
+    "arxiv_id": "2608.09830",
+    "title": "Deep Multimodal Wearable Sensor Fusion for Detection of Body-Focused Repetitive Behaviors",
+    "authors": [
+      "Samaneh Rezaeimanesh",
+      "Mohsen Behradfar",
+      "Mohammad Fili",
+      "Guiping Hu"
+    ],
+    "submission_date": "2026-08-10T16:48:37Z",
+    "latest_updated": "2026-08-10T16:48:37Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09830v1"
+    ],
+    "abstract": "Body-focused repetitive behaviors, such as hair pulling and skin picking, are compulsive motor actions commonly associated with obsessive-compulsive and anxiety disorders. Their early, objective detection remains difficult because the movements are subtle and overlap with ordinary, non-pathological gestures. We developed and evaluated a multimodal deep learning framework to detect and classify these behaviors from wrist-worn sensor data. The data, collected by the Child Mind Institute using the Helios wrist-worn device, combine inertial measurement units, thermopile sensors, and time-of-flight sensors, capturing kinematic, thermal, and proximity information. The framework combined a convolutional neural network with a gated recurrent unit, alongside modality-specific autoencoders and a late-fusion classifier, to exploit temporal and spatial dynamics. It achieved an F1 score of 0.985 and an area under the receiver operating characteristic curve of 0.997 for binary detection, distinguishing these behaviors from other activities, and a macro-averaged F1 score of 0.700 with an area under the curve of 0.963 across a nine-class scheme that distinguished each individual behavior from a single grouped Non-Target class, improving over single-modality baselines. Post-hoc interpretability based on Shapley additive explanations showed that the time-of-flight and inertial modalities dominated discriminative power by capturing spatial proximity and dynamic movement, while hierarchical clustering indicated that misclassifications were driven primarily by the anatomical region of the gesture. These findings demonstrate that multimodal sensor fusion enables accurate, objective, and continuous behavioral monitoring. This work establishes a foundation for real-time, wearable-assisted mental health diagnostics and personalized interventions in biomedical research and clinical care.",
+    "status": "found"
+  },
+  "2608.09831": {
+    "arxiv_id": "2608.09831",
+    "title": "Alpha Particle Induced Collision Cascade Fusion",
+    "authors": [
+      "Sandeep Puri",
+      "Noah D'Amico",
+      "Andrew Gillespie",
+      "Ian Jones",
+      "Cuikun Lin",
+      "Bo Zhao",
+      "R. V. Duncan"
+    ],
+    "submission_date": "2026-08-10T16:49:57Z",
+    "latest_updated": "2026-08-10T16:49:57Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09831v1"
+    ],
+    "abstract": "We report experimental and computational investigations of a collision-cascade mechanism to induce deuterium-deuterium (D-D) fusion. Evidence of neutron production was observed from a pressurized deuterium target exposed to energetic alpha particles emitted by a $^{210}\\text{Po}$ source. A 5-mCi $^{210}\\text{Po}$ alpha source was placed within a chamber containing pressurized deuterium gas, and neutron emission was monitored for 18 h using two Mirion SN-S $^{3}\\text{He}$ neutron detectors. Alpha particles incident on pressurized deuterium gas produced an average excess of $\\sim$74 neutrons after background subtraction, corresponding to a fusion neutron rate of $\\sim$2.24 n/s. With LiD in the pressurized deuterium, the average excess increased to 268 neutrons, corresponding to 8.1 n/s. Since D-D fusion branches into two equally likely pathways, these correspond to a fusion rate near 4.5 and 16.2 fusions per second, respectively. MCNP simulations incorporating experimental geometry, source activity, and detector configuration predicted neutron yields within 5.4% of the measured values and reproduced the detector response within experimental uncertainty. The tight agreement between measured and simulated neutron counts suggests that energetic alpha-particle interactions within the deuterium may contribute to measurable D-D fusion reactions through the D(d,n)$^{3}\\text{He}$ channel.",
+    "status": "found"
+  },
+  "2608.09832": {
+    "arxiv_id": "2608.09832",
+    "title": "An upper bound for the purity of absolutely positive partial transpose states",
+    "authors": [
+      "Anh T. Tran"
+    ],
+    "submission_date": "2026-08-10T16:50:15Z",
+    "latest_updated": "2026-08-10T16:50:15Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09832v1"
+    ],
+    "abstract": "A quantum state is called absolutely separable (resp. absolutely positive partial transpose (APPT)) if it remains separable (resp. positive partial transpose (PPT)) under any global unitary transformation. It is known that the set of all absolutely separable states is a subset of the set of all APPT states. Moreover, these two sets are identical for qubit-qudit systems. In this note, we give an upper bound for the purity of APPT bipartite states (and therefore for the purity of absolutely separable bipartite states). For qubit-qudit systems, this upper bound becomes the maximum purity of APPT (and absolutely separable) states.",
+    "status": "found"
+  },
+  "2608.09833": {
+    "arxiv_id": "2608.09833",
+    "title": "Identifying potentiating events in evolutionary search using replay experiments",
+    "authors": [
+      "Austin J. Ferguson",
+      "Alexander Lalejini"
+    ],
+    "submission_date": "2026-08-10T16:50:41Z",
+    "latest_updated": "2026-08-10T16:50:41Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09833v1"
+    ],
+    "abstract": "In this work, we introduce analytical replay experiments to the evolutionary computing community. Replay experiments originated in the context of laboratory experimental evolution as an empirical approach to identifying potentiating events that increased the likelihood of an observed evolutionary outcome. By restarting a population's evolution from different historical time points, replay experiments sample the distribution of what could have evolved from different points in time, which allows us to quantify how a population's potential for different evolutionary outcomes changed as a result of that population's history. In this work, we give a step-by-step guide to designing replay experiments for evolutionary computing systems. We then provide a demonstrative example replay experiment that measures how potentiation for problem-solving success changed in an evolved genetic programming population, showing that increases in potential for success do not necessarily correspond with increases in a population's fitness. Broadly, we argue that analytical replay experiments can be a powerful tool for expanding the theoretical foundations of evolutionary computing, and we offer suggestions for promising future research directions enabled by replay experiments.",
+    "status": "found"
+  },
+  "2608.09834": {
+    "arxiv_id": "2608.09834",
+    "title": "RA-FinBERT: Rule-aware LoRA adaptation for low-resource financial sentiment classification",
+    "authors": [
+      "Fan Zhang",
+      "Jiaming Li"
+    ],
+    "submission_date": "2026-08-10T16:52:19Z",
+    "latest_updated": "2026-08-10T16:52:19Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09834v1"
+    ],
+    "abstract": "Financial sentiment analysis converts unstructured financial news into quantitative signals that can support market analysis and decision-making. Existing work on resource-efficient financial NLP has largely focused on compressing or adapting pretrained language models, with less attention to combining contextual representations with lightweight rule-derived features. This study develops Rule-Aware FinBERT (RA-FinBERT), a parameter-efficient framework that integrates low-rank adaptation (LoRA) with three continuous VADER-derived sentiment proportions (positive, negative, and neutral) and a source-level metadata feature. The standardized four-dimensional feature vector is directly concatenated with the 768-dimensional final-layer FinBERT [CLS] representation and passed through a lightweight classification head. This design introduces only 1,024 additional trainable weights relative to a structurally matched text-only FinBERT model. RA-FinBERT was evaluated against text-only FinBERT and a lightweight DistilBERT baseline for three-class sentiment classification of financial-news titles and descriptions. On the held-out test set, RA-FinBERT achieved 69.89% accuracy and a macro F1 score of 0.634, compared with 63.44% and 0.526 for text-only FinBERT. Neutral-class recall increased from 18.18% to 45.45%. The framework supports both CPU and GPU execution, offering a lightweight and practical approach to financial sentiment classification under constrained computational resources. These findings indicate that rule-derived sentiment information and source metadata can provide complementary signals to contextual FinBERT representations and improve performance with minimal additional model complexity.",
+    "status": "found"
+  },
+  "2608.09835": {
+    "arxiv_id": "2608.09835",
+    "title": "NASA ASTRA Initiative White Paper: Space-Based Mission for Ultrahigh Energy Particles",
+    "authors": [
+      "Mauricio Bustamante",
+      "Johannes Eser",
+      "Ke Fang",
+      "Claire Guépin",
+      "John Krizmanic",
+      "Eric Mayotte",
+      "Keith McBride",
+      "Kohta Murase",
+      "Mary Hall Reno",
+      "Frank Schroeder",
+      "Tonia M. Venters",
+      "Stephanie Wissel"
+    ],
+    "submission_date": "2026-08-10T16:52:56Z",
+    "latest_updated": "2026-08-10T16:52:56Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09835v1"
+    ],
+    "abstract": "Ultra-high-energy cosmic rays ($E_{\\rm CR} \\gtrsim 1$ EeV) are the highest-energy particles known, signaling extreme particle processes at work in the universe. However, many aspects of their nature remain largely unknown, even after more than a century of study. Very-high-energy ($E_ν\\gtrsim 1$ PeV neutrinos associated with cosmic-ray interactions, both during the acceleration process and propagation, would provide new insight into these extreme particles, as we have seen at lower energies with the dawn of TeV neutrino astronomy. Nevertheless, only a handful of such neutrinos have been observed thus far. A space-based observatory dedicated to studying cosmic rays, neutrinos, and photons would provide an unprecedented platform for observations of these extreme-energy messengers.",
+    "status": "found"
+  },
+  "2608.09836": {
+    "arxiv_id": "2608.09836",
+    "title": "Mismatch Matters: On-Policy Distillation Beyond Token Agreement",
+    "authors": [
+      "Zichao Yu",
+      "Chengzhi Yu",
+      "Shengze Xu",
+      "Yujin Han",
+      "Bingqing Jiang",
+      "Xu Wang",
+      "Difan Zou"
+    ],
+    "submission_date": "2026-08-10T16:53:14Z",
+    "latest_updated": "2026-08-10T16:53:14Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09836v1"
+    ],
+    "abstract": "On-policy distillation (OPD) has emerged as a core component of modern LLM post-training pipelines, yet we reveal a failure mode: degenerate agreement, where students exploit repetitive loops to achieve near-perfect token agreement with the teacher despite globally flawed responses. We therefore shift our focus from agreement to teacher-student mismatch, and find that mismatch tokens can be mainly categorized into two types: student-excess tokens and student-deficit tokens. Student-excess tokens are generated by the student but assigned near-zero probability by the teacher; their log-ratio corrections grow unbounded and destabilize the update. Student-deficit tokens, in contrast, are preferred by the teacher but rarely sampled by the student; their absence blocks the transfer of the teacher's reasoning patterns. To tackle these mismatch directions, we propose TIDE (Token-level Independent Deficit-Excess correction), which applies bounded Hellinger shaping to suppress the most severe sampled excesses and an analytic teacher top-$K$ injection to restore deficient probability mass without requiring deficit tokens to be sampled. Across mathematical reasoning benchmarks with multiple Qwen3 teacher-student pairs, TIDE consistently outperforms standard OPD and recent token-selection and reward-shaping baselines. Moreover, the gains of TIDE are more pronounced under strong teacher-student mismatch, where it improves Avg@8 from 6.9% to 20.3%, reduces average response length by a factor of 3.6, and substantially reduces formatting failures. Code is available at https://github.com/yzc-666/TIDE",
+    "status": "found"
+  },
+  "2608.09837": {
+    "arxiv_id": "2608.09837",
+    "title": "Bias-robust causal inference for panel data",
+    "authors": [
+      "Angelos Alexopoulos"
+    ],
+    "submission_date": "2026-08-10T16:54:29Z",
+    "latest_updated": "2026-08-10T16:54:29Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09837v1"
+    ],
+    "abstract": "We develop a bias-robust causal inference method for observational panel data settings. Such methods typically impute untreated outcomes, so counterfactual error passes straight into the estimated treatment effect while conventional standard errors ignore it. We adapt bias-aware minimax methods, developed for estimating regression coefficients in factor-model panels, to a causal target: the average effect on the treated, which has to be imputed and may vary across units and periods. The estimator corrects the imputed counterfactual with weighted untreated residuals and reports intervals with an explicit allowance for the error that remains. In simulations the proposed method holds nominal coverage where alternatives such as the generalized synthetic control have almost none, especially when the factor rank is underfitted, at the cost of wider intervals. By applying the developed methodology to real data the estimated effect remains significant for counterfactual errors nearly twice the size that the design's placebos typically exhibit.",
+    "status": "found"
+  },
+  "2608.09838": {
+    "arxiv_id": "2608.09838",
+    "title": "Bijectivity analysis of rational T-spline surfaces via Bernstein representations",
+    "authors": [
+      "Jia-Xuan Li",
+      "Ying-Ying Yu",
+      "Ya-Shu Liu",
+      "Xin Li",
+      "Ye Ji",
+      "Chun-Gang Zhu"
+    ],
+    "submission_date": "2026-08-10T16:54:47Z",
+    "latest_updated": "2026-08-10T16:54:47Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09838v1"
+    ],
+    "abstract": "Ensuring the bijectivity of spline-based parameterizations is fundamental in geometric modeling and isogeometric analysis, as invalid mappings may lead to self-intersections, singular Jacobians, and numerical instability. While T-splines offer enhanced flexibility through local refinement, this flexibility also makes bijectivity verification significantly more challenging. In this work, we propose a rigorous and efficient framework for bijectivity analysis of rational T-spline surfaces based on Bézier extraction. The key idea is to reformulate the T-spline representation into a collection of element-wise rational Bézier patches, on which the Gram determinant of the mapping admits a Bernstein polynomial representation. This enables a coefficient-based analysis of local regularity by exploiting the convex hull and positivity properties of the Bernstein basis. Based on this formulation, we derive a sufficient condition for bijectivity from the nonnegativity of Bernstein coefficients, together with a necessary condition based on the sign consistency of corner coefficients. For cases where these conditions are inconclusive, we introduce a hierarchical subdivision strategy that progressively localizes ambiguous regions and resolves them through refinement. The proposed method provides a certified and adaptive procedure for bijectivity verification that avoids dense numerical sampling and remains computationally efficient. Numerical experiments on complex T-spline geometries demonstrate that the approach accurately detects both valid and near-degenerate configurations, while scaling effectively to large models with thousands of rational Bézier patches. The framework is fully compatible with standard isogeometric analysis workflows.",
+    "status": "found"
+  },
+  "2608.09839": {
+    "arxiv_id": "2608.09839",
+    "title": "Clustering Informed Inverse Probability Weighting Strategies for Causal Effect Estimation in Observational Studies",
+    "authors": [
+      "Ruohui Chen",
+      "Scott Zuo",
+      "Whitney Stevens",
+      "Seth Pollack",
+      "Wenna Xi",
+      "Lucia Petito",
+      "Lihui Zhao",
+      "Hui Zhang"
+    ],
+    "submission_date": "2026-08-10T16:55:09Z",
+    "latest_updated": "2026-08-10T16:55:09Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09839v1"
+    ],
+    "abstract": "Inverse probability weighting (IPW) is widely used to estimate causal effects in observational studies but depends on adequate propensity-score specification. We compare three strategies for addressing treatment assignment heterogeneity: standard IPW, clustering augmented IPW with cluster specific propensity score models, and a global propensity score model including estimated cluster membership as a covariate. Through simulations with and without latent cluster structure and under correctly specified and omitted covariate propensity score models, we evaluate bias, mean squared error (MSE), and confidence interval coverage across sample sizes of 100 to 500. Both cluster informed strategies reduced bias and MSE from omitted covariate misspecification relative to standard IPW, but neither uniformly dominated: clustering augmented IPW achieved lower MSE when latent cluster structure was present, whereas the global model generally provided lower bias and better coverage at smaller sample sizes. We also apply the methods to 966 breast cancer patients treated with carboplatin, using generalized propensity scores to estimate the dose response relationship between treatment cycles and hypersensitivity reaction risk. Standard and clustered analyses produced similar pooled estimates, while clustering additionally provided subgroup specific estimates and diagnostic profiles. Overall, cluster informed strategies may improve robustness to propensity score misspecification, with relative performance depending on subgroup structure, sample size, and inferential priorities.",
+    "status": "found"
+  },
+  "2608.09840": {
+    "arxiv_id": "2608.09840",
+    "title": "Langevin dynamics along the zero set of real-analytic potentials",
+    "authors": [
+      "Martin Larsson"
+    ],
+    "submission_date": "2026-08-10T16:55:51Z",
+    "latest_updated": "2026-08-10T16:55:51Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09840v1"
+    ],
+    "abstract": "We consider the Langevin diffusion $dX_t = - β\\nabla V(X_t) dt + \\sqrt{2} dB_t$ for a general nonnegative real-analytic potential $V$ and a large parameter $β$. In the large-$β$ limit the process is confined to the zero set of $V$, assuming that it starts there. We derive a candidate limiting evolution on the zero set. To do so, the zero set is partitioned into strata according to a measure of local codimension known as the local learning coefficient and its multiplicity. It is then shown that the Dirichlet form associated with $X$ converges in a certain sense to a hierarchy of Dirichlet forms corresponding to a stochastic evolution on the strata. This evolution is strongly biased toward higher-dimensional, or \"more singular\", strata. This result is motivated by a question from Watanabe's singular learning theory regarding the learning dynamics of overparameterized statistical models and the generalization puzzle in deep learning. The result suggests a mechanism for the observation that stochastic gradient methods tend to be biased toward singular solutions that generalize well.",
+    "status": "found"
+  },
+  "2608.09841": {
+    "arxiv_id": "2608.09841",
+    "title": "Spatially resolved elastic strain and lattice rotation at threading dislocations in HgCdTe/CdZnTe epilayers by dark-field X-ray microscopy",
+    "authors": [
+      "C. Yildirim",
+      "A. Benhadjira",
+      "P. Ballet",
+      "T. N. Tran Caliste",
+      "J. Baruchel",
+      "C. Detlefs",
+      "D. Brellier",
+      "M. P. Kabukcuoglu"
+    ],
+    "submission_date": "2026-08-10T16:57:34Z",
+    "latest_updated": "2026-08-10T16:57:34Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09841v1"
+    ],
+    "abstract": "Threading dislocations (TDs) propagating from a Cd$_{1-y}$Zn$_{y}$Te (CZT) substrate into a liquid-phase-epitaxy Hg$_{1-x}$Cd$_{x}$Te (MCT) epilayer set the minority-carrier lifetime and dark-current floor of mid-wave infrared focal-plane arrays, yet at device-grade densities their local strain fields have been accessible only through topography, which conflates lattice tilt and elastic strain. We apply dark-field X-ray microscopy in reflection geometry to a \\SI{7}{\\micro\\metre}-thick (111) MCT/CZT epilayer. Shallow Bragg angle and absorption makes the signal layer dominated while the numerical aperture of the objective keeps the layer and substrate rocking curves convolved, so weak-beam images on either side of the rocking curve and their difference image the correlated defects in a single frame: dot-like substrate TDs and the elongated, in-plane island features they nucleate in the layer. Kernel average misorientation resolves each TD as a \\SI{7}{\\micro\\metre} signature, the layer thickness, alongside axial strain lobes of $\\pm(4$ to $5)\\times10^{-5}$.",
+    "status": "found"
+  },
+  "2608.09842": {
+    "arxiv_id": "2608.09842",
+    "title": "From Diagnosis to Correction: Benchmarking and Improving Real-World Table Parsing",
+    "authors": [
+      "Jutao Xiao",
+      "Yuan Qu",
+      "Dongsheng Ma",
+      "Fan Wu",
+      "Tianyao He",
+      "Weihong Li",
+      "Jie Yang",
+      "Yu Qiao",
+      "Bin Wang",
+      "Conghui He"
+    ],
+    "submission_date": "2026-08-10T16:59:30Z",
+    "latest_updated": "2026-08-10T16:59:30Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09842v1"
+    ],
+    "abstract": "Recent document parsers achieve table TEDS scores above 93 on OmniDocBench v1.6, yet community feedback and our audit reveal persistent failures on complex real-world tables. To quantify this gap, we introduce TableParseMap, a diagnostic benchmark of 916 real-world tables organized into five challenging scenarios and nine failure types. The strongest evaluated parser achieves only 85.03 TEDS, showing that aggregate benchmark scores conceal substantial weaknesses. Our analysis attributes these failures to three complementary limitations: large tables exceed the reliable processing scale of a single pass, weak or ambiguous visual cues hinder structure perception, and the reconstructed table may remain visually inconsistent with the image. We therefore propose DEC (Decompose--Enhance--Correct), a visual-consistency-guided agentic framework that improves frozen table parsers without retraining. DEC uses a general VLM as the controller: Decompose partitions large tables along structure-aware boundaries, Enhance exposes weak visual evidence and reparses transformed views, and Correct diagnoses and repairs residual errors. A Visual Consistency Gate (VC-Gate) selectively triggers intervention, while a Visual Consistency Ranker (VC-Ranker) verifies candidate updates and supports rollback without ground-truth HTML at inference time. We further derive a 1,977-table Consensus-Hard Set from 4,556 candidates through offline metrics and cross-model consensus. Across three frozen parsers, DEC improves TEDS by 1.57 points on average; on TableParseMap, gains reach 1.89 points overall, 2.62 on structural errors, and 5.66 on large tables.",
+    "status": "found"
+  },
+  "2608.09843": {
+    "arxiv_id": "2608.09843",
+    "title": "Inevitable shock formation for 3-D compressible Euler flows",
+    "authors": [
+      "Sergiu Klainerman",
+      "Qian Wang",
+      "Shiwu Yang",
+      "Pin Yu"
+    ],
+    "submission_date": "2026-08-10T17:03:26Z",
+    "latest_updated": "2026-08-10T17:03:26Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09843v1"
+    ],
+    "abstract": "We prove that solutions arising from smooth, sufficiently small, compactly supported perturbations of non-vacuum constant states in three-dimensional irrotational compressible flow must blow up in finite time, without any symmetry assumptions or other restrictions on the initial data. Moreover, we prove that shock inevitably forms at the boundary of the maximal Cauchy development, and that its formation time agrees, in the small-data asymptotic regime, with the lifespan predicted by the radiation-field analysis.",
+    "status": "found"
+  },
+  "2608.09844": {
+    "arxiv_id": "2608.09844",
+    "title": "Grothendieck weights and K-theoretic positivity for matroids",
+    "authors": [
+      "Yiyu Wang"
+    ],
+    "submission_date": "2026-08-10T17:03:35Z",
+    "latest_updated": "2026-08-30T17:54:39Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.09844v1",
+      "2608.09844v2"
+    ],
+    "abstract": "We introduce a method for studying $K$-theoretic positivity on permutohedral toric varieties through the topology of spaces arising in tropical geometry. The key ingredient is the theory of Grothendieck weights developed by the author. We prove two positivity results using this method. The first result is the positivity of the Euler characteristics of tautological bundles associated with an arbitrary matroid and twisted by a nef line bundle. This gives numerical evidence for a conjectural vanishing theorem. The second result generalizes the external activity complex of Berget--Fink, originally defined for a pair of matroids, to the case of any tuple of matroids with no common loop. We deduce a formula for its graded $K$-polynomial in terms of exterior powers of the dual tautological quotient classes of the matroids. After a change of variables, its coefficients alternate in sign. We also prove the Cohen--Macaulayness of each such complex using the vanishing theorems for combinatorial geometries developed by Eur--Fink--Larson. This proof is new even in the case of a pair of matroids. As an application, we interpret certain Chern numbers of tautological quotient classes as counts of facets, partially answering a question of Berget--Eur--Spink--Tseng.",
+    "status": "found"
+  },
+  "2608.09845": {
+    "arxiv_id": "2608.09845",
+    "title": "Topological phase rectification via Aharonov-Bohm interference in a Majorana--quantum-dot interferometer",
+    "authors": [
+      "Jia Liu",
+      "Hao-Yuan Yang",
+      "Yuan Hong",
+      "Li Ma",
+      "Feng Chi",
+      "Zi-Chuan Yi",
+      "Li-Ming Liu",
+      "Zhen-Guo Fu"
+    ],
+    "submission_date": "2026-08-10T17:05:39Z",
+    "latest_updated": "2026-08-11T10:41:02Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.09845v1",
+      "2608.09845v2"
+    ],
+    "abstract": "We propose and theoretically investigate a topological superconducting rectifier based on a quantum-dot--Majorana interferometer. The Aharonov-Bohm phase, controlled by a magnetic flux threading the interferometer loop, tunes the quantum interference between a trivial $2π$-periodic quantum-dot channel and a topological $4π$-periodic Majorana channel. At non-integer flux, this interference generates a persistent current background $I_{\\rm off}$ that shifts the current-phase relation into a unipolar regime, in which the supercurrent flows strictly in one direction. We introduce a signed unipolarity factor $η_u$, with $|η_u|>0.5$ defining the unipolar regime, and establish its quantitative relationship to the conventional diode efficiency $η$. The unipolarity proves robust against variations of the quantum-dot level, spin polarization, and Majorana hybridization, is enhanced by stronger Majorana coupling and Rashba spin-orbit interaction, and persists at realistic temperatures and under quasiparticle poisoning. We further propose a topological diode figure of merit $\\mathcal{Z}_{\\rm TD}$, defined from the Fourier spectrum of $η_u$, whose nonzero value provides a model-independent signature of the $4π$-periodic Majorana channel and distinguishes topological from trivial rectification mechanisms. Our findings establish the quantum-dot--Majorana interferometer as a promising route toward high-performance topological superconducting diodes with clear experimental signatures accessible via standard dc transport measurements.",
+    "status": "found"
+  },
+  "2608.09846": {
+    "arxiv_id": "2608.09846",
+    "title": "Real-Time Climate Risk Assessment for Supply Chain Resilience: A Data-Driven Nowcasting Framework for Colombian Agriculture",
+    "authors": [
+      "Hernan J. Silva-Sosa"
+    ],
+    "submission_date": "2026-08-10T17:05:47Z",
+    "latest_updated": "2026-08-10T17:05:47Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09846v1"
+    ],
+    "abstract": "This paper presents a methodological framework for real-time climate risk assessment using data-driven nowcasting techniques to enhance supply chain resilience in Colombian agricultural contexts. Climate variability in Colombia, characterized by irregular rainfall, temperature fluctuations, and recurrent extreme events, has a direct impact on agricultural production and logistics, particularly for time sensitive crops. The proposed approach integrates short term climate forecasting based on historical meteorological observations with supply chain risk modeling to establish a conceptual early warning system architecture. A prototype implementation developed in a controlled computational environment demonstrates the feasibility of the framework using historical meteorological and agricultural time series derived from official statistics and reanalysis products, without reliance on satellite imagery or computer vision components. The methodology addresses the integration of climate nowcasting with supply chain decision making through explicit risk mapping, threshold-based categorization, and stakeholder-oriented risk signals. Results from synthetic and historical data experiments indicate that short term precipitation nowcasts can be translated into actionable risk indicators for agricultural supply chains, supporting anticipatory decisions related to inventory, sourcing, and transport.",
+    "status": "found"
+  }
+}

@@ -1,0 +1,409 @@
+{
+  "2609.16074": {
+    "arxiv_id": "2609.16074",
+    "title": "World-Action Models for Robot Learning and Control: A Survey",
+    "authors": [
+      "Zuxing Lu",
+      "Hongjia Zhai",
+      "Guanzhi Wang",
+      "Huajian Zeng",
+      "Jiaqi Yang",
+      "Jingyu Liu",
+      "Lei Cheng",
+      "Yuantai Zhang",
+      "Yuheng Qiu",
+      "Zezhou Cheng",
+      "Ivan Laptev",
+      "Danfei Xu",
+      "Benjamin Riviere",
+      "Giuseppe Loianno",
+      "Eric Xing",
+      "Xingxing Zuo"
+    ],
+    "submission_date": "2026-09-13T16:35:56Z",
+    "latest_updated": "2026-09-13T16:35:56Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16074v1"
+    ],
+    "abstract": "Robots operating in open environments act under partial observability, physical constraints, and dynamic task contexts. Beyond mapping observations and language instructions to actions, they must anticipate how candidate actions may affect future states and task-relevant outcomes. Recent advances in world models, video generation, and Vision-Language-Action (VLA) policies have motivated the development of World-Action Models (WAMs), which couple future world prediction with executable action generation. This survey provides a robotics-oriented review of WAMs. We clarify their scope relative to conventional world models, model-based reinforcement learning, action-conditioned video generation, and reactive VLA policies, and organize existing methods through a unified taxonomy covering representations, transition modeling, action interfaces, architectures, training pipelines, data modalities, and scaling strategies. We further review applications of WAMs in manipulation, navigation, and autonomous driving, and we summarize the datasets, benchmarks, metrics, and protocols used to evaluate WAM systems. Finally, we discuss key challenges in action alignment, world-action factorization, spatial and multi-view consistency, long-horizon memory, neural simulation for closed-loop policy learning, and efficient inference. Taken together, this survey aims to provide a concise technical foundation for integrating predictive world modeling with action generation, toward more reliable embodied robot intelligence. Project page: https://rcl-robotics.github.io/Awesome-World-Action-Models.",
+    "status": "found"
+  },
+  "2609.16075": {
+    "arxiv_id": "2609.16075",
+    "title": "AssemblyGrid v1: A Benchmark for Multi-Robot Production with Temporary Coalitions, Local Information, and Geometric Constraints",
+    "authors": [
+      "Fouad Bahrpeyma",
+      "David Heik",
+      "Dirk Reichelt"
+    ],
+    "submission_date": "2026-09-13T16:53:54Z",
+    "latest_updated": "2026-09-13T16:53:54Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16075v1"
+    ],
+    "abstract": "Flexible robotic production requires joint decisions on process progression, material routing, resource assignment, temporary cooperation, and simultaneous execution, since each decision can affect the feasibility of the others. The challenge is greater under decentralized control, where each robot acts from bounded local information while system progress depends on collective decisions, shared resources, material state, and workspace compatibility. These properties closely match cooperative multi-agent decision making under partial observability and resource contention. This paper introduces AssemblyGrid v1, a reproducible benchmark for repeated multi-robot production that combines explicit process progression, decentralized observations, material transfer, temporary multi-robot coalitions, productive concurrency, and geometry-dependent feasibility within one task-level formulation. The benchmark includes Flow, Coalition, and Concurrency workload families, each with three scenario levels. Task success and evaluation measures are defined independently of learning reward and solution method, allowing learning-based and non-learning methods to address the same production problem. AssemblyGrid v1 is evaluated through executable conformance checks, mechanism studies, and algorithmic experiments using a privileged centralized reference, structured decentralized controllers, and MARL methods including IPPO, MAPPO, and QMIX. Results demonstrate productive execution under centralized and decentralized control. The MARL experiments further show that decentralized policies can learn effective production behavior from local observations and actions, supporting AssemblyGrid as a controlled benchmark for studying cooperative decision making in flexible robotic production.",
+    "status": "found"
+  },
+  "2609.16076": {
+    "arxiv_id": "2609.16076",
+    "title": "The Imitation Game: When LLMs Learn to Reason Like Programs via Code-Centric Reasoning Data Synthesis",
+    "authors": [
+      "Jinyang Zhang",
+      "Weibin Liao",
+      "Keqin Bao",
+      "Sihang Li",
+      "Shaobo Wang",
+      "Muyang Ye",
+      "Hongxin Ding",
+      "Yue Fang",
+      "Tianyi Tang",
+      "Fei Huang",
+      "Kexin Yang",
+      "Xingzhang Ren",
+      "Dayiheng Liu"
+    ],
+    "submission_date": "2026-09-13T17:04:16Z",
+    "latest_updated": "2026-09-13T17:04:16Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16076v1"
+    ],
+    "abstract": "Large Language Models (LLMs) excel at programming tasks but frequently fail at deterministic, fine-grained reasoning in natural language, relying heavily on semantic approximations rather than robust symbolic execution. To bridge this gap, we propose MIMIC, a framework that leverages executable code as a rigorous medium for reasoning data synthesis. MIMIC fundamentally transforms algorithms into verifiable reasoning trajectories through narrative fusion, code-guided test synthesis, and dynamic code instrumentation. Crucially, these explicit intermediate execution states naturally form a Code-Instrumented Reward (CIR), providing dense, high-fidelity process supervision for reinforcement learning without external reward models. Extensive evaluations reveal that models trained via SFT and GRPO on our synthesized dataset achieve substantial, consistent gains. Our method significantly elevates accuracy across general reasoning, complex mathematical benchmarks, and fine-grained deterministic tasks, demonstrating that the procedural rigor of executable code can effectively unlock and enhance the generalized reasoning capabilities of LLMs. Our code and data are available at https://github.com/zjy1298/MIMIC.",
+    "status": "found"
+  },
+  "2609.16077": {
+    "arxiv_id": "2609.16077",
+    "title": "Pseudo-Label Augmentation for Affect Sensing in Small Collaborative Groups",
+    "authors": [
+      "Meisam Jamshidi Seikavandi",
+      "Tanya Ignatenko",
+      "Fabricio Batista Narcizo",
+      "Paolo Burelli",
+      "Jesper Bünsow Boldt",
+      "Andrew Burke Dittberner"
+    ],
+    "submission_date": "2026-09-13T17:39:53Z",
+    "latest_updated": "2026-09-13T17:39:53Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16077v1"
+    ],
+    "abstract": "Physiological affect sensing in naturalistic group interaction is often limited by sparse labels rather than sensor data: wearable devices produce many time windows, while self-reports are collected only a few times per session. Using GroupAffect-4, a four-person collaborative dataset with wearable physiology, eye tracking, Big Five personality, and post-task VAD labels, we study pseudo-label augmentation for affect sensing under sparse supervision. We compare no augmentation, Gaussian Process pseudo-labelling, personality-aware trust weighting, and joint personality-plus-confidence weighting within a shared target-construction pipeline. Results show that pseudo-label augmentation improves over the labelled-only baseline in the known-team setting. However, the narrow range of Big Five cosine similarities (0.91-0.99) makes fine-grained personality weighting ineffective; personality similarity functions mainly as a same-team filter rather than a calibrated trust signal. With smoothing, augmented SVM variants are effectively tied on Valence and Arousal, while the joint personality-plus-confidence variant gives the highest Dominance score. Cross-subject LOSO transfer remains encouraging, especially for Arousal, whereas strict session-isolated LOGO removes the augmentation benefit. Given only 10 groups, LOGO should be interpreted as a conservative lower bound on unseen-group transfer. Overall, the results suggest that pseudo-label augmentation can make better use of sparsely labelled collaborative affect data, while personality information is most useful as a within-team selection mechanism.",
+    "status": "found"
+  },
+  "2609.16078": {
+    "arxiv_id": "2609.16078",
+    "title": "Further results on binary linear covering codes and saturating sets in projective spaces",
+    "authors": [
+      "Alexander A. Davydov",
+      "Stefano Marcugini",
+      "Fernanda Pambianco",
+      "Stephen Wu"
+    ],
+    "submission_date": "2026-09-13T18:12:31Z",
+    "latest_updated": "2026-10-11T06:09:08Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2609.16078v1",
+      "2609.16078v2"
+    ],
+    "abstract": "The binary length function $\\ell_2(r,R)$ is the smallest length of a binary linear code with codimension (redundancy) $r$ and covering radius $R$. Let $s_2(N,ρ)$ be the smallest size of a $ρ$-saturating set in the binary projective space $\\mathrm{PG}(N,2)$. It is known that the binary length function satisfies $\\ell_2(r,R)=s_2(r-1,R-1)$. We obtain the following new upper bounds on $\\ell_2(r,R)$, improving the previously known upper bounds by $Δ(r,R)$: $R=2,r=2t\\ge28$, and $r=10,18,20$, $\\ell_2(r,2)=s_2(r-1,1)\\le51\\cdot2^{r/2-5}-1,Δ(r,2)=2^{r/2-5}$; $R=3,r=3t-1\\ge41$ and $r=26$, $\\ell_2(r,3)=s_2(r-1,2)\\le818\\cdot2^{(r-26)/3}-1$, $Δ(41,3)=63,Δ(r,3)=2^{(r-26)/3}$ if $r\\ge44$. To obtain these bounds, we construct new infinite code families, using distinct versions of the $q^m$-concatenating constructions of covering codes, including new versions proposed in this paper. We also obtain new useful partitions of column sets of parity check matrices of some codes. The new code families provide the asymptotic covering-density bounds $\\overlineμ(2)\\le2601/2048<1.27002$, $\\overlineμ(3)\\le1.35935$, improving the previously known bounds and giving rise to the new upper bounds $f(2)\\le2601/2048<1.27002$, $f(3)\\le1.35935$ on the constants $f(2),f(3)$ of the Green's Open Problem 40.",
+    "status": "found"
+  },
+  "2609.16079": {
+    "arxiv_id": "2609.16079",
+    "title": "QuickerChick",
+    "authors": [
+      "Ivan Mladenov",
+      "Alperen Keles",
+      "Leonidas Lampropoulos"
+    ],
+    "submission_date": "2026-09-13T19:23:05Z",
+    "latest_updated": "2026-09-13T19:23:05Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16079v1"
+    ],
+    "abstract": "Property-based testing (PBT) with QuickChick relies on extracting Rocq programs to OCaml. However, this extraction mechanism, while crucial for QuickChick to function, has significant performance implications. In this work, we describe how we optimized QuickChick, exploiting various opportunities offered by program extraction to significantly improve each test's extraction, compilation, and running time. We also evaluate these improvements using the ETNA benchmarking platform for PBT to assess how individual improvements impacted the overall test run time.",
+    "status": "found"
+  },
+  "2609.16080": {
+    "arxiv_id": "2609.16080",
+    "title": "Bayesian Inferences on Analytical Equations of State Approximations of Neutron Stars",
+    "authors": [
+      "Arijit Das",
+      "Sourav Roy Chowdhury"
+    ],
+    "submission_date": "2026-09-13T20:02:03Z",
+    "latest_updated": "2026-09-18T21:08:55Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2609.16080v1",
+      "2609.16080v2"
+    ],
+    "abstract": "Equations of state (EoS) for dense matter are commonly provided in tabulated pressure-energy density relations, complicating numerical implementation and potentially compromising thermodynamic consistency. In this work, we propose a piecewise-continuous analytical form with a common parametrization capable of representing a broad class of dense matter EoSs. We validate this parametrization against tabulated EoSs from the CompOSE and LALSimulation repositories. Following the initial deterministic fitting, we employed two distinct Bayesian approaches: one based on synthetic EoSs generated by adding noise to the fitted EoS and another based on multi-messenger measurements of neutron-star masses and tidal deformabilities. In both approaches, the initial best-fit parameters are used as reference values. For the considered EoSs, spanning from very soft to very stiff, the resulting fits reproduce the tabulated EoSs and the associated macroscopic neutron-star observables in the repositories with sufficient accuracy. The inferred parameters exhibit strong correlations arising from the continuity conditions imposed at the segment boundaries. These correlations persist in the low- and intermediate-density segments under multi-messenger inference but become weak in the core, reflecting the limited constraining power of current observations at high densities. The ability of a single functional form to describe EoSs derived from different microscopic frameworks, together with the recurrence of similar parameter correlations, suggests that diverse dense matter EoSs may share a common underlying structure.",
+    "status": "found"
+  },
+  "2609.16081": {
+    "arxiv_id": "2609.16081",
+    "title": "Largest Circle Enclosing Exactly $n$ Interior Lattice Points. II",
+    "authors": [
+      "Jianqiang Zhao"
+    ],
+    "submission_date": "2026-09-13T23:35:57Z",
+    "latest_updated": "2026-09-13T23:35:57Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16081v1"
+    ],
+    "abstract": "In a previous article doi.org/10.3390/geometry2030012, the author investigated a class of elementary plane geometry problems closely related to the theme of this work. Here, we prove a weaker version of a previous conjecture by demonstrating that there are infinitely many maximally circlable (MAC) numbers -- positive integers $n$ for which there exists a largest circle enclosing exactly $n$ interior lattice points. Furthermore, by extending numerical computations to $n \\le 2700$, we identify two counterexamples to a conjecture in loc cit. regarding the symmetry of the largest circle enclosing a strong MAC number (a MAC number $n$ where $n+1$ is non-MAC). We also propose a potential infinite family of strong MAC numbers derived from Pythagorean triples; the existence of this family would imply the infinity of non-MAC numbers, as conjectured by Zhao. Throughout this paper, we provide extensive data characterizing both MAC and strong MAC numbers alongside their corresponding largest enclosing circles.",
+    "status": "found"
+  },
+  "2609.16082": {
+    "arxiv_id": "2609.16082",
+    "title": "Predicting Social Media Engagement using Machine Learning",
+    "authors": [
+      "Ritwik Singh",
+      "Mayukh Majumdar",
+      "Subodha Kumar"
+    ],
+    "submission_date": "2026-09-14T00:12:26Z",
+    "latest_updated": "2026-10-08T21:00:42Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2609.16082v1",
+      "2609.16082v2"
+    ],
+    "abstract": "Social media platforms are popular channels for disseminating information, owing to their large user bases and ease of access. Companies also use social media as an important aspect of the advertising process. By creating high-quality posts, companies can strengthen their engagement metrics and increase their follower count. While a growing body of research has examined social media engagement, fewer studies have jointly examined the visual, textual, and temporal features of image posts, even though these features collectively determine the performance of content on social media. To understand the important drivers of social media engagement, we collect image posts of furniture firms on Facebook and extract visual, temporal, and textual features from them using text and image analytics methods. We evaluate several machine learning models--including Random Forest, Light Gradient Boosting Machine (LightGBM), and eXtreme Gradient Boosting (XGBoost)--to assess the drivers and the prediction power of social media engagement using the features from our data. Our primary model, LightGBM, explains 81.8% of the variance in the engagement score, 2.3 times that of our baseline model. We observed that brand-relative deviation features, which capture how far a post departs from its brand's norms, are the strongest predictors, accounting for 51.3% of total importance. Our research quantifies the extent to which these features are associated with interactions and provides recommendations that organizations may consider.",
+    "status": "found"
+  },
+  "2609.16083": {
+    "arxiv_id": "2609.16083",
+    "title": "Logarithmic Circumference In Tough Graphs",
+    "authors": [
+      "Levi Segal",
+      "Jacques Verstraete"
+    ],
+    "submission_date": "2026-09-14T03:22:32Z",
+    "latest_updated": "2026-09-16T04:07:50Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2609.16083v1",
+      "2609.16083v2"
+    ],
+    "abstract": "For every real $t>0$, we prove that every $2$-connected $t$-tough graph contains a cycle of length at least $\\ell$ whenever $n \\leq \\ell(1 + 1/t)^{\\lfloor \\ell/2\\rfloor - 1}$. This establishes the logarithmic bound conjectured by Broersma, van den Heuvel, Jung, and Veldman.",
+    "status": "found"
+  },
+  "2609.16084": {
+    "arxiv_id": "2609.16084",
+    "title": "Topological superconductors and Majorana fermions based on $X$-wave magnets with $X=p,d,f,g,i $",
+    "authors": [
+      "Motohiko Ezawa"
+    ],
+    "submission_date": "2026-09-14T04:25:39Z",
+    "latest_updated": "2026-09-14T04:25:39Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16084v1"
+    ],
+    "abstract": "We study superconductors coupled with $X$-wave magnets with $X=p,d,f,g,i$. They are essentially different between altermagnets with $X=d,g,i$ and odd-parity magnets $X=p,f$ due to the compatibility of the spin-singlet formation of the $s$-wave superconductor. The altermagnets and odd-parity magnets show rich superconducting phase diagrams depending on the strength of the magnetic order, the chemical potential and the ratio of the on-site and nearest-neighbor interactions. Especially, we find that the altermagnetic order stabilizes the chiral ($p_{x}+ip_{y}$)-wave superconductor, which is a class D topological superconductor hosting Majorana chiral edge states. It is characterized by the Chern number. Especially, there emerge two chiral edge modes in the $i$-wave altermagnet, which are characterized by the Chern number 2. On the other hand, the $p$ ($f$)-wave odd-parity magnetic order stabilizes the $p$ ($f$)-wave topological superconductor, which is a class DIII topological superconductor hosting Majorana flat bands. It is characterized by the winding number. Majorana flat bands are robust in the presence of the mixing with the $s$-wave superconductivity, which is inevitable for odd-parity magnets although the magnitude of the mixing is tiny.",
+    "status": "found"
+  },
+  "2609.16085": {
+    "arxiv_id": "2609.16085",
+    "title": "Is INT8 Portable? A Cross-Platform Measurement Study of Quantized Inference on Embedded and Automotive Accelerators",
+    "authors": [
+      "Yuyeong Shin"
+    ],
+    "submission_date": "2026-09-14T05:29:21Z",
+    "latest_updated": "2026-09-14T05:29:21Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16085v1"
+    ],
+    "abstract": "Eight-bit integer (INT8) post-training quantization is the default recipe for edge deployment, under a widely held assumption: INT8 makes inference faster at a small, predictable accuracy cost, and a model quantized once can be carried to any target. We test that assumption with a controlled measurement study across seven hardware classes -- ARM and x86 CPUs, a discrete GPU, an NVIDIA Jetson AGX Orin iGPU and its NVDLA cores, and two vendor NPUs (Qualcomm Hexagon HTP, DEEPX DX-M1) -- holding the ONNX artifact and the quantization scales fixed so the integer kernel or ISA is the only free variable. Portability fails on three axes. (1) The sign of the INT8 speedup is set by the CPU's dot-product ISA (ARM dotprod/SDOT, x86 VNNI): cores that have it speed up by up to 2.1x, cores that lack it slow down by 1.7x, for the identical model and runtime. (2) INT8 outputs are not portable, and the rule is an invariance rather than a gradient: FP32 predictions are bit-identical for every pair (1000/1000), while INT8 predictions agree 1000/1000 exactly when two targets share an integer kernel and 958-965/1000 whenever they do not -- independent of whether the boundary is CPU<->CPU or CPU<->accelerator, and invisible to top-1 accuracy, which is preserved. (3) Vendor NPUs own quantization: a bring-your-own QDQ graph fails silently on one NPU (external scales ignored, accuracy 0.75 -> 0.005 while it compiles, profiles and runs without error) and loudly on the other (the compiler refuses the graph), so only the vendor's native path yields a correct engine. We further show that edge-NPU latency regimes are set by output/device-to-host transfer size rather than compute, and locate the transition with a fixed-compute sweep. We release the scripts and 32 reports. \"Quantize once, deploy anywhere\" is unsafe for embedded and automotive deployment, where per-input determinism and redundancy matter.",
+    "status": "found"
+  },
+  "2609.16086": {
+    "arxiv_id": "2609.16086",
+    "title": "Tractable Estimation of the Money Pump Index: A Comment",
+    "authors": [
+      "Gavin Kader"
+    ],
+    "submission_date": "2026-09-14T09:04:55Z",
+    "latest_updated": "2026-09-14T09:04:55Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16086v1"
+    ],
+    "abstract": "The Money Pump Index (MPI) of Echenique et al. (2011) measures the severity of consumer irrationality, but computing the exact mean and median MPI over all revealed preference cycles is NP-hard (Smeulders et al., 2013). Existing solutions rely on heuristic proxies, such as evaluating only shorter cycles or bounding the MPI. By framing revealed preferences as a directed graph, this paper projects choice violations onto fundamental cycle bases, which are minimal sets of linearly independent cycles that span the graph's entire cycle space. This yields computationally tractable estimators for the mean and median MPI that are asymptotically equivalent to the original MPI. Applying this methodology to the scanner dataset analyzed by Echenique et al. (2011) and Smeulders et al., (2013), the proposed estimators compute quickly and with negligible small-sample bias.",
+    "status": "found"
+  },
+  "2609.16087": {
+    "arxiv_id": "2609.16087",
+    "title": "How to build a campfire? Participatory modelling with justice",
+    "authors": [
+      "Nynke van Uffelen",
+      "Sander ten Caat",
+      "Aarthi Sundaram",
+      "Annemiek de Looze",
+      "Marion Collewet",
+      "Eefje Cuppen",
+      "Igor Nikolic"
+    ],
+    "submission_date": "2026-09-14T09:22:07Z",
+    "latest_updated": "2026-09-14T09:22:07Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16087v1"
+    ],
+    "abstract": "Energy transition decision-making is pervaded by deep uncertainties. Computational models are helpful in addressing such uncertainties, as they can give insight into techno-economic complexity. However, models alone are insufficient, as part of the uncertainties involve justice dilemmas.",
+    "status": "found"
+  },
+  "2609.16088": {
+    "arxiv_id": "2609.16088",
+    "title": "netseg: a Python Package for Measuring Structural Polarization and Segregation in Social Networks",
+    "authors": [
+      "Onur Tuncay Bal",
+      "Michał Bojanowski"
+    ],
+    "submission_date": "2026-09-14T10:27:11Z",
+    "latest_updated": "2026-09-28T13:05:44Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2609.16088v1",
+      "2609.16088v2"
+    ],
+    "abstract": "The study of structural polarization and segregation in social networks is an established line of research, and the quantification of both phenomena proceeds through a set of widely cited network indices. The code implementing those indices, however, is seldom released and almost never tested. We present netseg, a comprehensively documented Python package implementing these indices, most of them generalized to more than two groups and to directed as well as undirected input. It ports the R package of the same name and adds measures the R version lacks, among them Random Walk Controversy, Boundary Connectivity, Dipole Moment, and Moran's I. The package operates on igraph objects and performs the underlying graph operations (e.g., neighborhood queries and random-walk simulation) through igraph's Python interface, so that they execute in compiled code rather than in interpreted Python. For several of the indices this yields runtimes orders of magnitude below those of the available open-source implementations, which the documentation reports in benchmarks. Most of these indices are defined as a divergence from a null model, and published implementations fix that null model to a uniform random graph of matching density. netseg accepts an ensemble of graphs as a sample from an arbitrary null model, and distinguishes indices that already incorporate a baseline from those that do not, adjusting the comparison accordingly to avoid double subtraction. The documentation provides, for each index, a worked empirical example, its behaviour at the degenerate cases where it is undefined, a benchmark, and the procedure for substituting a custom null model. We report the behaviour of every index over a parameter sweep of a generative opinion model, and apply them to a county-level railroad network built from nineteenth-century operator records joined to full-count census data.",
+    "status": "found"
+  },
+  "2609.16089": {
+    "arxiv_id": "2609.16089",
+    "title": "Structure-Preserving Quantum Circuit Architectures for Robot Kinematics",
+    "authors": [
+      "Andrea Morghen",
+      "Pierluigi Arpenti",
+      "Roberto Schiattarella",
+      "Giovanni Acampora",
+      "Bruno Siciliano"
+    ],
+    "submission_date": "2026-09-14T11:20:14Z",
+    "latest_updated": "2026-09-14T11:20:14Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16089v1"
+    ],
+    "abstract": "Structured spatial data require quantum encodings that preserve geometric relations, expose measurable observables, and remain implementable on finite-depth hardware. This work introduces a quantum representation and circuit architecture for rigid-body transformations and specializes it to Denavit--Hartenberg kinematics of serial open-chain manipulators. Each translational contribution is factorized into a classical metric magnitude and a signed unit direction encoded by a single-qubit Bloch vector, while parameterized rotations reproduce the ordered propagation of frame directions. A selector register prepares probabilities proportional to the contribution magnitudes, and the reduced state of a designated readout qubit encodes their normalized weighted sum. The retained classical scale then reconstructs the metric end-effector position. Two additional readout qubits encode terminal-frame axes, providing a compact and geometrically interpretable pose interface. At the ideal expectation-value level, measured Pauli observables reproduce the corresponding classical kinematic quantities. Alternative circuit architectures realize the same representation with different tradeoffs in qubit count, circuit depth, controlled operations, and measurement requirements. Validation on a serial manipulator yields numerically negligible position and orientation reconstruction errors under ideal simulation. Finite-shot simulations, noisy executions, transpilation analysis, and a hardware demonstration further characterize statistical error, noise sensitivity, and implementation overhead without asserting computational advantage.",
+    "status": "found"
+  },
+  "2609.16090": {
+    "arxiv_id": "2609.16090",
+    "title": "MUUNRiver-Bench: Diagnosing Relation-Dependent Music Retrieval with Multimodal Instructions",
+    "authors": [
+      "Zhancheng Guo",
+      "Congren Dai",
+      "Shangda Wu",
+      "Jianhuai Hu",
+      "Danni Zhao",
+      "Xiaobing Li",
+      "Maosong Sun"
+    ],
+    "submission_date": "2026-09-14T11:22:53Z",
+    "latest_updated": "2026-09-14T11:22:53Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16090v1"
+    ],
+    "abstract": "Music retrieval is relation-dependent: given a reference track, a listener may seek its style with a new theme, a cover, or a comparable voice, and these intents demand contradictory rankings. We present MUUNRiver-Bench, a diagnostic benchmark whose reference-audio queries use natural-language instructions to define relevance. A pipeline combining expert genre priors, LLM-generated prompts and lyrics, synthesis, and expert review yields 3,440 tracks spanning 13 genres and 116 sub-genres, and seven tasks: similar-music, style-preserving lyric-rewriting, lyric-preserving style-rewriting, cover, vocal-timbre, isolated-vocal, and segment retrieval. Across six models in eight configurations, task-wise rank reversals reveal complementary biases: acoustic encoders favour local identity, whereas text-aligned encoders favour semantic relations. Frozen encoders diagnose default similarity preferences; instruction-aware and audio-text fusion systems provide exploratory tests of textual conditioning, with neither simple fusion scheme consistently improving its backbone",
+    "status": "found"
+  },
+  "2609.16091": {
+    "arxiv_id": "2609.16091",
+    "title": "Distilling Foundation Models for Agentic What-If Reasoning:Cost, Latency, and Governance in a Hybrid LLM+SLM Architecture",
+    "authors": [
+      "Sourish Dey",
+      "Aditya Kumar"
+    ],
+    "submission_date": "2026-09-14T11:26:21Z",
+    "latest_updated": "2026-09-14T11:26:21Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16091v1"
+    ],
+    "abstract": "Tabular foundation models deliver strong zero-training predictive performance via in-context learning, but their high inference latency makes them impractical as hot-path decision backends in interactive agentic loops. We distill a TabPFN teacher into a compact feed-forward student across a business-decision simulation on UCI Adult and five OpenML benchmarks: the classification head compresses 53.2M parameters to 8,546 (6,220x); the deployed two-head loan pipeline compresses 111.4M parameters to 17,059 (6,532x). The student retains 95.4-100.5% accuracy and 96.8-100.0% AUC, with the lowest accuracy retention on credit-g at 95.4%; an alpha = 0 hard-label control shows that the teacher's soft targets provide a 2.1-7.0 AUC point gain.",
+    "status": "found"
+  },
+  "2609.16092": {
+    "arxiv_id": "2609.16092",
+    "title": "From Umbral Hyperbolic Integrals to a Cotangent Coefficient Formula for the Mittag Leffler Polynomials",
+    "authors": [
+      "Luc Ramsès Talla Waffo"
+    ],
+    "submission_date": "2026-09-14T13:02:51Z",
+    "latest_updated": "2026-09-14T13:02:51Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16092v1"
+    ],
+    "abstract": "Let \\(g_n(x)\\) be the Mittag--Leffler polynomials defined by $$ \\sum_{n\\ge0}g_n(x)t^n=\\frac12\\left(\\frac{1+t}{1-t}\\right)^x. $$ We derive the coefficient formula $$ g_n(x)=\\frac1n\\sum_{j=0}^{\\lfloor (n-1)/2\\rfloor} (-1)^j\\frac{2^{n-2j-1}}{(n-2j-1)!} [u^{2j}](u\\cot u)^n\\,x^{n-2j}, $$ equivalently $$ [u^{n-r}](u\\cot u)^n =(-1)^{(n-r)/2}\\frac{n(r-1)!}{2^{r-1}}[x^r]g_n(x). $$ The identity is suggested by comparing an umbral representation of the hyperbolic tangent integral $$ K(a,b)=\\int_0^\\infty \\frac{\\tanh^a x}{x^b}\\,dx $$ with a compact cotangent-coefficient formula, but is proved independently from the generating function by formal Lagrange--Bürmann inversion. Substitution of the proved bridge back into the integral formula then yields a rigorous derivation of the umbral Mittag--Leffler representation. We also develop a Dirichlet--beta analogue for $$ I_{m,n}^β=\\int_0^\\infty\\frac{\\tanh^m x}{x^n\\cosh x}\\,dx. $$ Defining \\(q_m(x)\\) by $$ \\sum_{m\\ge0}q_m(x)t^m=(1-t^2)^{-1/2}\\exp(2x\\operatorname{artanh}t), $$ we prove $$ [u^{m-r}]\\frac{u}{\\sin u}(u\\cot u)^m =(-1)^{(m-r)/2}\\frac{r!}{2^r}[x^r]q_m(x). $$ This gives a parallel umbral representation for the beta integrals. The family \\(q_m\\) is a shifted \\(c=-1,β=1\\) specialization of the classical Meixner family, yielding a beta/Meixner counterpart to the zeta/Mittag--Leffler correspondence.",
+    "status": "found"
+  },
+  "2609.16093": {
+    "arxiv_id": "2609.16093",
+    "title": "Evaluating Open-Weight E-Commerce Agents with Environment-Grounded Verification",
+    "authors": [
+      "Nimit Shah",
+      "Haitz Sáez de Ocáriz Borde"
+    ],
+    "submission_date": "2026-09-14T13:35:32Z",
+    "latest_updated": "2026-09-14T13:35:32Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16093v1"
+    ],
+    "abstract": "A shopping conversation has many routes to the same cart, and a task-success rate reduces all of them to one score. We build a deterministic and reproducible e-commerce environment that precommits each trial's customer and trajectory parameters, including the persona, difficulty, target cart, and an item reveal schedule. A simulated consumer attempts to buy a target cart from the environment with assistance from the evaluated model. The environment guides the simulator's actions and records every assistant action alongside the environment state at that point. After the trial, these records allow the evaluator to assess individual parts of the conversation against the retained evidence. For example, the evaluator penalizes a search for failing to surface a target product only when the customer has already mentioned that product. We further use this evidence to apply different penalties to tool calls depending on how the assistant's actions compare with an expected tool-call set. Our environment also interacts with the simulator bidirectionally, reading its output to stop the trial when the simulator determines that the customer has become too frustrated and injecting directives in real time that specify when to explore, defer buying an item, or recall a previous exchange. This interaction creates an open-ended and verifiable simulation. Across eight open-weight agents from 20B to 35B parameters, with 160 trials per agent and 44 metrics, the resulting capability profiles distinguish under-action, over-purchase, unsupported product attributes, and poor search, all of which terminal success obscures.",
+    "status": "found"
+  }
+}

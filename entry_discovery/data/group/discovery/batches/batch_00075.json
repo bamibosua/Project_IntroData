@@ -1,0 +1,405 @@
+{
+  "2511.13209": {
+    "arxiv_id": "2511.13209",
+    "title": "Largest-Area Convex Quadrilateral in a $1.5$D Terrain",
+    "authors": [
+      "Nandana Ghosh",
+      "Ankush Acharyya"
+    ],
+    "submission_date": "2025-11-17T10:22:53Z",
+    "latest_updated": "2026-09-24T13:43:16Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 4,
+    "versions": [
+      "2511.13209v1",
+      "2511.13209v2",
+      "2511.13209v3",
+      "2511.13209v4"
+    ],
+    "abstract": "A $1.5$D terrain is a simple polygon bounded by a horizontal base and an $x$-monotone upper chain. We study the problem of finding a largest-area convex quadrilateral contained in an $n$-vertex terrain. We maximize area over the closure of the feasible nondegenerate quadrilaterals, allowing a triangular boundary optimum when necessary. Assuming that no three terrain vertices are collinear, we give a deterministic exact algorithm running in $O(n^2\\log n)$ time and using $O(n)$ working space in the algebraic real-RAM. Among all optimum solutions, the algorithm returns a nondegenerate quadrilateral whenever one exists; otherwise, it returns a maximum-area terrain triangle. We also prove that a maximum-area axis-parallel rectangle contained in the terrain yields a tight $\\frac12$-approximation and can be computed in $O(n\\log n)$ time.",
+    "status": "found"
+  },
+  "2511.13210": {
+    "arxiv_id": "2511.13210",
+    "title": "Variationally Consistent Framework for Finite-Strain Microelasticity",
+    "authors": [
+      "Tushar Jogi"
+    ],
+    "submission_date": "2025-11-17T10:23:18Z",
+    "latest_updated": "2025-11-20T10:21:43Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.13210v1",
+      "2511.13210v2"
+    ],
+    "abstract": "Modeling microstructural evolution at large strains requires mechanical formulations that remain thermodynamically consistent while capturing significant lattice rotations and transformation-induced stresses. However, most existing finite-strain microelasticity and phase-field approaches apply macroscopic boundary conditions heuristically, preventing proper stress relaxation and violating the Hill-Mandel work equivalence required for homogenization. These limitations can misrepresent stress states and transformation pathways under finite strains. Here a variationally consistent finite-strain microelasticity framework is presented that couples microscopic and macroscopic mechanical equilibrium through a single energy functional. The resulting Euler-Lagrange conditions, periodic micro-equilibrium and macroscopic stress balance, are solved using a staggered FFT-Newton algorithm that combines a spectral fixed-point update for local fields with a Newton step for the homogenized deformation gradient. The formulation accommodates general hyperelastic constitutive laws and arbitrary transformation gradients. Benchmarks demonstrate accurate recovery of small-strain Eshelby solutions and systematic nonlinear deviations at large dilatations. Applied to deformation twinning in magnesium, the framework reproduces lenticular morphology, stress redistribution, and faster lateral growth consistent with experiments. This approach establishes a rigorous and scalable foundation for finite-strain phase-field simulations of coherent transformations under general stress or mixed boundary conditions.",
+    "status": "found"
+  },
+  "2511.13211": {
+    "arxiv_id": "2511.13211",
+    "title": "3DAlign-DAER: Dynamic Attention Policy and Efficient Retrieval Strategy for Fine-grained 3D-Text Alignment at Scale",
+    "authors": [
+      "Yijia Fan",
+      "Jusheng Zhang",
+      "Kaitong Cai",
+      "Jing Yang",
+      "Jian Wang",
+      "Keze Wang"
+    ],
+    "submission_date": "2025-11-17T10:23:29Z",
+    "latest_updated": "2026-04-24T04:17:32Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.13211v1",
+      "2511.13211v2"
+    ],
+    "abstract": "Despite recent advancements in 3D-text cross-modal alignment, existing state-of-the-art methods still struggle to align fine-grained textual semantics with detailed geometric structures, and their alignment performance degrades significantly when scaling to large-scale 3D databases. To overcome this limitation, we introduce 3DAlign-DAER, a unified framework designed to align text and 3D geometry via the proposed dynamic attention policy and the efficient retrieval strategy, capturing subtle correspondences for diverse cross-modal retrieval and classification tasks. Specifically, during the training, our proposed dynamic attention policy (DAP) employs the Hierarchical Attention Fusion (HAF) module to represent the alignment as learnable fine-grained token-to-point attentions. To optimize these attentions across different tasks and geometric hierarchies, our DAP further exploits the Monte Carlo tree search to dynamically calibrate HAF attention weights via a hybrid reward signal and further enhances the alignment between textual descriptions and local 3D geometry. During the inference, our 3DAlign-DAER introduces an Efficient Retrieval Strategy (ERS) to leverage efficient hierarchical searching in the large-scale embedding spaces, outperforming traditional methods (e.g., KNN) in accuracy and efficiency. Furthermore, to facilitate text-3D alignment research and train our 3DAlign-DAER, we construct Align3D-2M, a large-scale dataset featuring 2M text-3D pairs, to provide sufficient fine-grained cross-modal annotations. Extensive and comprehensive experiments demonstrate the superior performance of our 3DAlign-DAER on diverse benchmarks. We will release our codes, models, and datasets. Our code and updates are available at https://github.com/waltstephen/Cost-Effective-Communication.",
+    "status": "found"
+  },
+  "2511.13212": {
+    "arxiv_id": "2511.13212",
+    "title": "Vortex patterns of a two-dimensional Bose-Einstein condensate at the almost critical rotation speed",
+    "authors": [
+      "Bao-Duy Le",
+      "Dinh-Thi Nguyen"
+    ],
+    "submission_date": "2025-11-17T10:24:47Z",
+    "latest_updated": "2026-08-17T09:28:58Z",
+    "revised_dates": null,
+    "venue": "The European Physical Journal Plus 141, 937 (2026)",
+    "latest_version": 2,
+    "versions": [
+      "2511.13212v1",
+      "2511.13212v2"
+    ],
+    "abstract": "We study vortex patterns of a two-dimensional Bose-Einstein condensate rotating close to the centrifugal limit, treating the two signs of the contact interaction with the method each requires: for repulsion, a GPU-accelerated variational minimization with exact projection onto the Lowest Landau Level (LLL); for attraction, imaginary-time evolution of the full real-space Gross-Pitaevskii (GP) equation. For repulsive interactions, our approach reproduces Abrikosov vortex lattices, achieving quantitative alignment with Thomas-Fermi theory and recovering the Abrikosov constant $e^{\\rm Ab}(1)\\approx1.1596$, in close analogy with the vortex ordering of type-II superconductors. In the attractive regime, the rotating ground state carries no vortex lattice at any rotation frequency: the cloud contracts and collapses as $G\\to -G_*$, where $G_*=\\|Q\\|_{L^2}^2\\simeq11.70$, essentially independently of rotation. The only stationary vortex states we find are giant vortices, trapped vortex (Townes) solitons whose charge-$m$ sector collapses as $G\\to -\\|Q_m\\|_{L^2}^2$ ($\\|Q_m\\|_{L^2}^2\\simeq11.70,\\,48.3,\\,89.8,\\,132.4$ for $m=0,1,2,3$), fixed by an equivariant Gagliardo-Nirenberg inequality and confirmed numerically up to the critical region. These findings provide a numerical benchmark for vortex formation and collapse in rotating two-dimensional quantum gases.",
+    "status": "found"
+  },
+  "2511.13213": {
+    "arxiv_id": "2511.13213",
+    "title": "Spectral component imaging of solar X-ray flares",
+    "authors": [
+      "Muriel Zoë Stiefel",
+      "Paolo Massa",
+      "Alessia Guidetti",
+      "Marina Battaglia",
+      "Säm Krucker"
+    ],
+    "submission_date": "2025-11-17T10:26:40Z",
+    "latest_updated": "2025-11-17T10:26:40Z",
+    "revised_dates": null,
+    "venue": "A&A 704, A316 (2025)",
+    "latest_version": 1,
+    "versions": [
+      "2511.13213v1"
+    ],
+    "abstract": "Solar hard X-ray observations provide diagnostics of the hottest plasmas and of nonthermal electron populations present during solar flares and coronal mass ejections. HXR images of specific energy ranges often contain overlapping contributions of these components, complicating their interpretation. This is even more challenging as HXR imagers generally use an indirect imaging system. Our work aims to separately image individual spectral components, such as thermal loops, superhot sources, and nonthermal footpoint sources, rather than obtaining images of specific energy ranges that show a combination of all components. We introduce a new method called spectral component imaging and apply it to observations provided by the Spectrometer/Telescope for Imaging X-rays (STIX) aboard Solar Orbiter. First, the flare integrated HXR spectrum is fitted with individual spectral components to get the relative contributions of each component in each native STIX energy channel. In a second step, a set of linear equations is created based on these weights and the observed, energy-dependent STIX visibilities. The visibilities of the individual spectral components are derived by means of a linear least-squares approach and are subsequently utilized for image reconstructions. We demonstrate the effectiveness of spectral component imaging on four different flares observed by STIX. This method provides powerful diagnostics, particularly for flares with hot and superhot components, allowing us to spatially separate these two thermal components. We apply our methodology to the nonthermal peak of the X7.1 flare SOL2024-10-01, and we find that the superhot component is located 4.8 Mm away from the hot thermal loops. The thermal energy of the superhot component is approximately 20% of the energy content of the hot component, highlighting the significance of superhot components in the total flare energy budget.",
+    "status": "found"
+  },
+  "2511.13214": {
+    "arxiv_id": "2511.13214",
+    "title": "Learning to Solve Resource-Constrained Project Scheduling Problems with Duration Uncertainty using Graph Neural Networks",
+    "authors": [
+      "Guillaume Infantes",
+      "Stéphanie Roussel",
+      "Antoine Jacquet",
+      "Emmanuel Benazera"
+    ],
+    "submission_date": "2025-11-17T10:27:35Z",
+    "latest_updated": "2025-11-17T10:27:35Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.13214v1"
+    ],
+    "abstract": "The Resource-Constrained Project Scheduling Problem (RCPSP) is a classical scheduling problem that has received significant attention due to of its numerous applications in industry. However, in practice, task durations are subject to uncertainty that must be considered in order to propose resilient scheduling. In this paper, we address the RCPSP variant with uncertain tasks duration (modeled using known probabilities) and aim to minimize the overall expected project duration. Our objective is to produce a baseline schedule that can be reused multiple times in an industrial setting regardless of the actual duration scenario. We leverage Graph Neural Networks in conjunction with Deep Reinforcement Learning (DRL) to develop an effective policy for task scheduling. This policy operates similarly to a priority dispatch rule and is paired with a Serial Schedule Generation Scheme to produce a schedule. Our empirical evaluation on standard benchmarks demonstrates the approach's superiority in terms of performance and its ability to generalize. The developed framework, Wheatley, is made publicly available online to facilitate further research and reproducibility.",
+    "status": "found"
+  },
+  "2511.13215": {
+    "arxiv_id": "2511.13215",
+    "title": "Mass-capacity inequality modeled on conformally flat manifolds",
+    "authors": [
+      "Yuchen Bi",
+      "Jintian Zhu"
+    ],
+    "submission_date": "2025-11-17T10:28:46Z",
+    "latest_updated": "2025-11-17T10:28:46Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.13215v1"
+    ],
+    "abstract": "In the spin case, we can establish a mass-capacity inequality for generalized asymptotically flat manifolds $(M,g,E)$ with nonnegative scalar curvature, where the equality implies that $(M,g)$ is harmonically conformal to $\\mathbb R^n\\setminus S$ for a closed bounded subset $S$ of $\\mathbb R^n$ with Hausdorff dimension no greater than $\\frac{n-2}{2}$.",
+    "status": "found"
+  },
+  "2511.13216": {
+    "arxiv_id": "2511.13216",
+    "title": "GaRLILEO: Gravity-aligned Radar-Leg-Inertial Enhanced Odometry",
+    "authors": [
+      "Chiyun Noh",
+      "Sangwoo Jung",
+      "Hanjun Kim",
+      "Yafei Hu",
+      "Laura Herlant",
+      "Ayoung Kim"
+    ],
+    "submission_date": "2025-11-17T10:29:31Z",
+    "latest_updated": "2026-06-27T04:41:58Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.13216v1",
+      "2511.13216v2"
+    ],
+    "abstract": "Deployment of legged robots for navigating challenging terrains (e.g., stairs, slopes, and unstructured environments) has gained increasing preference over wheel-based platforms. In such scenarios, accurate odometry estimation is a preliminary requirement for stable locomotion, localization, and mapping. Traditional proprioceptive approaches, which rely on leg kinematics sensor modalities and inertial sensing, suffer from irrepressible vertical drift caused by frequent contact impacts, foot slippage, and vibrations, particularly affected by inaccurate roll and pitch estimation. Existing methods incorporate exteroceptive sensors such as LiDAR or cameras. Further enhancement has been introduced by leveraging gravity vector estimation to add additional observations on roll and pitch, thereby increasing the accuracy of vertical pose estimation. However, these approaches tend to degrade in feature-sparse or repetitive scenes and are prone to errors from double-integrated IMU acceleration. To address these challenges, we propose GaRLILEO, a novel gravity-aligned continuous-time radar-leg-inertial odometry framework. GaRLILEO decouples velocity from the IMU by building a continuous-time ego-velocity spline from SoC radar Doppler and leg kinematics information, enabling seamless sensor fusion which mitigates odometry distortion. In addition, GaRLILEO can reliably capture accurate gravity vectors leveraging a novel soft S2-constrained gravity factor, improving vertical pose accuracy without relying on LiDAR or cameras. Evaluated on a self-collected real-world dataset with diverse indoor-outdoor trajectories, GaRLILEO demonstrates state-of-the-art accuracy, particularly in vertical odometry estimation on stairs and slopes. We open-source both our dataset and algorithm to foster further research in legged robot odometry and SLAM. https://garlileo.github.io/GaRLILEO",
+    "status": "found"
+  },
+  "2511.13217": {
+    "arxiv_id": "2511.13217",
+    "title": "Variational Principles for the Helmholtz equation: application to Finite Element and Neural Network approximations",
+    "authors": [
+      "G. Makrakis",
+      "C. Makridakis",
+      "D. Mitsoudis",
+      "M. Plexousakis",
+      "T. Pryer"
+    ],
+    "submission_date": "2025-11-17T10:29:46Z",
+    "latest_updated": "2026-06-30T08:59:12Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.13217v1",
+      "2511.13217v2"
+    ],
+    "abstract": "In this paper, we investigate whether Variational Principles can be associated with the Helmholtz equation subject to impedance (absorbing) boundary conditions. This model has been extensively studied in the literature from both mathematical and computational perspectives. It is classical with wide applications, yet accurate approximation at high wavenumbers remains challenging. We address the question of whether there exist energy functionals with a clear physical interpretation whose stationary points, the zeros of their first variation, correspond to solutions of the Helmholtz problem. Starting from Hamilton's principle for the wave equation, we derive time-harmonic energies. The resulting functionals are generally indefinite. As a next step, we construct strongly coercive augmentations of these indefinite functionals that preserve their physical interpretation. Finally, we show how these variational principles lead to practical numerical methods based on finite element spaces and neural network architectures.",
+    "status": "found"
+  },
+  "2511.13218": {
+    "arxiv_id": "2511.13218",
+    "title": "Numerical renormalization group integrated Hamiltonian truncation: Toward generic deformation of integrable lattice models",
+    "authors": [
+      "Xiaodong He",
+      "Xiao Wang",
+      "Jianda Wu"
+    ],
+    "submission_date": "2025-11-17T10:32:16Z",
+    "latest_updated": "2025-11-17T10:32:16Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.13218v1"
+    ],
+    "abstract": "We present a hybrid lattice Hamiltonian truncation method that integrates the numerical renormalization group (NRG) with a truncated lattice integrable spectrum. The technique is tailored for generic deformations of integrable lattice models, where the NRG enables a controlled incorporation of high-energy states. The method extends the basis set more effectively and efficiently than brute-force truncation, meanwhile significantly reducing errors. We show its capability on two paradigmatic models: an Ising chain in a magnetic field and a quantum Ising ladder. The resulting dynamical structure factors accurately capture the essential low-energy physics, including the $E_8$ and $\\mathcal{D}_8^{(1)}$ excitations of the former and later models, respectively, demonstrating the approach's computational efficiency and high performance.",
+    "status": "found"
+  },
+  "2511.13219": {
+    "arxiv_id": "2511.13219",
+    "title": "FoleyBench: A Benchmark For Video-to-Audio Models",
+    "authors": [
+      "Satvik Dixit",
+      "Koichi Saito",
+      "Zhi Zhong",
+      "Yuki Mitsufuji",
+      "Chris Donahue"
+    ],
+    "submission_date": "2025-11-17T10:34:59Z",
+    "latest_updated": "2025-11-24T04:08:20Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.13219v1",
+      "2511.13219v2"
+    ],
+    "abstract": "Video-to-audio generation (V2A) is of increasing importance in domains such as film post-production, AR/VR, and sound design, particularly for the creation of Foley sound effects synchronized with on-screen actions. Foley requires generating audio that is both semantically aligned with visible events and temporally aligned with their timing. Yet, there is a mismatch between evaluation and downstream applications due to the absence of a benchmark tailored to Foley-style scenarios. We find that 74% of videos from past evaluation datasets have poor audio-visual correspondence. Moreover, they are dominated by speech and music, domains that lie outside the use case for Foley. To address this gap, we introduce FoleyBench, the first large-scale benchmark explicitly designed for Foley-style V2A evaluation. FoleyBench contains 5,000 (video, ground-truth audio, text caption) triplets, each featuring visible sound sources with audio causally tied to on-screen events. The dataset is built using an automated, scalable pipeline applied to in-the-wild internet videos from YouTube-based and Vimeo-based sources. Compared to past datasets, we show that videos from FoleyBench have stronger coverage of sound categories from a taxonomy specifically designed for Foley sound. Each clip is further labeled with metadata capturing source complexity, UCS/AudioSet category, and video length, enabling fine-grained analysis of model performance and failure modes. We benchmark several state-of-the-art V2A models, evaluating them on audio quality, audio-video alignment, temporal synchronization, and audio-text consistency. Samples are available at: https://gclef-cmu.org/foleybench",
+    "status": "found"
+  },
+  "2511.13220": {
+    "arxiv_id": "2511.13220",
+    "title": "Probing the Nature of Dark Matter Self-Interactions Through Observations of Massive Black Hole Mergers",
+    "authors": [
+      "Zachary J. Hoelscher",
+      "Kelly Holley-Bockelmann",
+      "Akaxia Cruz",
+      "N. Nicole Sanchez"
+    ],
+    "submission_date": "2025-11-17T10:38:02Z",
+    "latest_updated": "2026-05-12T05:09:14Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.13220v1",
+      "2511.13220v2"
+    ],
+    "abstract": "Though the nature of dark matter remains elusive, two models have come to prominence with testable predictions: cold dark matter (CDM) and self-interacting dark matter (SIDM). While CDM remains the widely accepted model, SIDM was introduced to potentially help resolve the discrepancies between the predictions of the CDM model and observational data, in particular the predicted central density profiles. Previous work involving simulations of small numbers of Milky Way-mass galaxies shows that SIDM with a constant cross section of 1 $\\rm{cm^2/g}$ delays massive black hole (MBH) mergers as compared to CDM when the host halo has a flattened central density profile. In this work, we use mock gravitational wave observations of MBH mergers to test LISA's capability to indirectly probe dark matter physics. As a proof of concept, we use zoom-in simulations of two galaxy evolutionary histories to show that LISA may be able to distinguish (with a p--value $\\leq$ 0.05) between CDM and SIDM with a short-range interaction and a constant cross section of 1 $\\rm{cm^2/g}$, provided at least $\\sim70$ MBH mergers are observed with signal-to-noise ratios greater than 10. Given our small sample size, this should be regarded as illustrative, rather than definitive. We emphasize that our work does not consider more realistic models with a velocity-dependent cross section, though our exploratory work shows that LISA may provide a pathway to probe dark matter self-interactions, motivating future work with more realistic, currently-favored models and larger simulation suites.",
+    "status": "found"
+  },
+  "2511.13221": {
+    "arxiv_id": "2511.13221",
+    "title": "Likelihood-guided Regularization in Attention Based Models",
+    "authors": [
+      "Mohamed Salem",
+      "Inyoung Kim"
+    ],
+    "submission_date": "2025-11-17T10:38:09Z",
+    "latest_updated": "2025-11-17T10:38:09Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.13221v1"
+    ],
+    "abstract": "The transformer architecture has demonstrated strong performance in classification tasks involving structured and high-dimensional data. However, its success often hinges on large- scale training data and careful regularization to prevent overfitting. In this paper, we intro- duce a novel likelihood-guided variational Ising-based regularization framework for Vision Transformers (ViTs), which simultaneously enhances model generalization and dynamically prunes redundant parameters. The proposed variational Ising-based regularization approach leverages Bayesian sparsification techniques to impose structured sparsity on model weights, allowing for adaptive architecture search during training. Unlike traditional dropout-based methods, which enforce fixed sparsity patterns, the variational Ising-based regularization method learns task-adaptive regularization, improving both efficiency and interpretability. We evaluate our approach on benchmark vision datasets, including MNIST, Fashion-MNIST, CIFAR-10, and CIFAR-100, demonstrating improved generalization under sparse, complex data and allowing for principled uncertainty quantification on both weights and selection parameters. Additionally, we show that the Ising regularizer leads to better-calibrated probability estimates and structured feature selection through uncertainty-aware attention mechanisms. Our results highlight the effectiveness of structured Bayesian sparsification in enhancing transformer-based architectures, offering a principled alternative to standard regularization techniques.",
+    "status": "found"
+  },
+  "2511.13222": {
+    "arxiv_id": "2511.13222",
+    "title": "Hybrid-Domain Adaptative Representation Learning for Gaze Estimation",
+    "authors": [
+      "Qida Tan",
+      "Hongyu Yang",
+      "Wenchao Du"
+    ],
+    "submission_date": "2025-11-17T10:38:50Z",
+    "latest_updated": "2025-11-17T10:38:50Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.13222v1"
+    ],
+    "abstract": "Appearance-based gaze estimation, aiming to predict accurate 3D gaze direction from a single facial image, has made promising progress in recent years. However, most methods suffer significant performance degradation in cross-domain evaluation due to interference from gaze-irrelevant factors, such as expressions, wearables, and image quality. To alleviate this problem, we present a novel Hybrid-domain Adaptative Representation Learning (shorted by HARL) framework that exploits multi-source hybrid datasets to learn robust gaze representation. More specifically, we propose to disentangle gaze-relevant representation from low-quality facial images by aligning features extracted from high-quality near-eye images in an unsupervised domain-adaptation manner, which hardly requires any computational or inference costs. Additionally, we analyze the effect of head-pose and design a simple yet efficient sparse graph fusion module to explore the geometric constraint between gaze direction and head-pose, leading to a dense and robust gaze representation. Extensive experiments on EyeDiap, MPIIFaceGaze, and Gaze360 datasets demonstrate that our approach achieves state-of-the-art accuracy of $\\textbf{5.02}^{\\circ}$ and $\\textbf{3.36}^{\\circ}$, and $\\textbf{9.26}^{\\circ}$ respectively, and present competitive performances through cross-dataset evaluation. The code is available at https://github.com/da60266/HARL.",
+    "status": "found"
+  },
+  "2511.13223": {
+    "arxiv_id": "2511.13223",
+    "title": "TokenSqueeze: Performance-Preserving Compression for Reasoning LLMs",
+    "authors": [
+      "Yuxiang Zhang",
+      "Zhengxu Yu",
+      "Weihang Pan",
+      "Zhongming Jin",
+      "Qiang Fu",
+      "Deng Cai",
+      "Binbin Lin",
+      "Jieping Ye"
+    ],
+    "submission_date": "2025-11-17T10:38:56Z",
+    "latest_updated": "2025-11-17T10:38:56Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.13223v1"
+    ],
+    "abstract": "Emerging reasoning LLMs such as OpenAI-o1 and DeepSeek-R1 have achieved strong performance on complex reasoning tasks by generating long chain-of-thought (CoT) traces. However, these long CoTs result in increased token usage, leading to higher inference latency and memory consumption. As a result, balancing accuracy and reasoning efficiency has become essential for deploying reasoning LLMs in practical applications. Existing long-to-short (Long2Short) methods aim to reduce inference length but often sacrifice accuracy, revealing a need for an approach that maintains performance while lowering token costs. To address this efficiency-accuracy tradeoff, we propose TokenSqueeze, a novel Long2Short method that condenses reasoning paths while preserving performance and relying exclusively on self-generated data. First, to prevent performance degradation caused by excessive compression of reasoning depth, we propose to select self-generated samples whose reasoning depth is adaptively matched to the complexity of the problem. To further optimize the linguistic expression without altering the underlying reasoning paths, we introduce a distribution-aligned linguistic refinement method that enhances the clarity and conciseness of the reasoning path while preserving its logical integrity. Comprehensive experimental results demonstrate the effectiveness of TokenSqueeze in reducing token usage while maintaining accuracy. Notably, DeepSeek-R1-Distill-Qwen-7B fine-tuned using our proposed method achieved a 50\\% average token reduction while preserving accuracy on the MATH500 benchmark. TokenSqueeze exclusively utilizes the model's self-generated data, enabling efficient and high-fidelity reasoning without relying on manually curated short-answer datasets across diverse applications. Our code is available at https://github.com/zhangyx1122/TokenSqueeze.",
+    "status": "found"
+  },
+  "2511.13224": {
+    "arxiv_id": "2511.13224",
+    "title": "Natural gradient descent for improving variational inference based classification of radio galaxies",
+    "authors": [
+      "Devina Mohan",
+      "Anna M. M. Scaife"
+    ],
+    "submission_date": "2025-11-17T10:39:31Z",
+    "latest_updated": "2025-11-17T10:39:31Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.13224v1"
+    ],
+    "abstract": "Bayesian neural networks (BNNs) are most commonly optimised with first-order optimisers such as stochastic gradient descent. However, when optimising for parameters of probabilistic models, incorporating second order information during optimisation can lead to a more direct path in the distribution space and faster convergence. In this work we examine whether using natural gradient descent can improve the performance of variational inference based classification of radio galaxies. We use the Improved Variational Online Newton (iVON) algorithm and compare its performance against a recent benchmark for BNNs for radio galaxy classification. We find that iVON results in better uncertainty calibration out of all the methods previously considered while providing similar predictive performance to the best performing inference methods such as Hamiltonian Monte Carlo and Bayes by Backprop based variational inference. Models trained with iVON can distinguish far out-of-distribution optical galaxy data, but they cannot reliably detect radio galaxy images from a telescope with different resolution and sensitivity. We find that the cold posterior effect persists in the models trained with iVON. Our results suggest that the choice of the optimiser can lead to qualitatively different solutions and future work using probabilistic neural network models should carefully consider the inductive biases being encoded through the optimisation process, in addition to the data, architecture and inference method.",
+    "status": "found"
+  },
+  "2511.13225": {
+    "arxiv_id": "2511.13225",
+    "title": "Seeing isn't Hearing: Benchmarking Vision Language Models at Interpreting Spectrograms",
+    "authors": [
+      "Tyler Loakman",
+      "Joseph James",
+      "Chenghua Lin"
+    ],
+    "submission_date": "2025-11-17T10:41:07Z",
+    "latest_updated": "2025-11-17T10:41:07Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.13225v1"
+    ],
+    "abstract": "With the rise of Large Language Models (LLMs) and their vision-enabled counterparts (VLMs), numerous works have investigated their capabilities in tasks that fuse the modalities of vision and language. In this work, we benchmark the extent to which VLMs are able to act as highly-trained phoneticians, interpreting spectrograms and waveforms of speech. To do this, we synthesise a novel dataset containing 4k+ English words spoken in isolation alongside stylistically consistent spectrogram and waveform figures. We test the ability of VLMs to understand these representations of speech through a multiple-choice task whereby models must predict the correct phonemic or graphemic transcription of a spoken word when presented amongst 3 distractor transcriptions that have been selected based on their phonemic edit distance to the ground truth. We observe that both zero-shot and finetuned models rarely perform above chance, demonstrating the requirement for specific parametric knowledge of how to interpret such figures, rather than paired samples alone.",
+    "status": "found"
+  },
+  "2511.13226": {
+    "arxiv_id": "2511.13226",
+    "title": "Informative Communication of Robot Plans",
+    "authors": [
+      "Michele Persiani",
+      "Thomas Hellstrom"
+    ],
+    "submission_date": "2025-11-17T10:44:25Z",
+    "latest_updated": "2025-11-17T10:44:25Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.13226v1"
+    ],
+    "abstract": "When a robot is asked to verbalize its plan it can do it in many ways. For example, a seemingly natural strategy is incremental, where the robot verbalizes its planned actions in plan order. However, an important aspect of this type of strategy is that it misses considerations on what is effectively informative to communicate, because not considering what the user knows prior to explanations. In this paper we propose a verbalization strategy to communicate robot plans informatively, by measuring the information gain that verbalizations have against a second-order theory of mind of the user capturing his prior knowledge on the robot. As shown in our experiments, this strategy allows to understand the robot's goal much quicker than by using strategies such as increasing or decreasing plan order. In addition, following our formulation we hint to what is informative and why when a robot communicates its plan.",
+    "status": "found"
+  },
+  "2511.13227": {
+    "arxiv_id": "2511.13227",
+    "title": "Anomalous Higgs Couplings as a Window to New Physics",
+    "authors": [
+      "I. Asiáin"
+    ],
+    "submission_date": "2025-11-17T10:46:48Z",
+    "latest_updated": "2025-11-17T10:46:48Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.13227v1"
+    ],
+    "abstract": "Throughout this thesis, we investigate how effective field theories, combined with unitarization techniques, can be used to explore physics beyond the Standard Model, with particular emphasis on the dynamical origin of electroweak symmetry breaking. Since effective theories often produce amplitudes that violate unitarity at high energies, restoring unitarity is essential before comparing predictions with data. The first part of the work focuses on longitudinal $WW$ scattering, a process that, despite being subdominant at the LHC, provides a sensitive probe of Higgs dynamics. We perform a full one-loop computation within the HEFT framework, determine the required counterterms in the on-shell scheme, and analyze for the first time how the inclusion of transverse gauge bosons modifies the masses and widths of the dynamical resonances obtained through unitarization in the vector--isovector and scalar--isoscalar channels. This provides the technical foundation for studying HEFT low-energy couplings subject to unitarity and causality. While vector resonances are relatively well characterized through Weinberg sum rules and unitarization, scalar resonances remain more elusive and depend on HEFT parameters that are experimentally difficult to constrain. We show that unitarization, together with causality, imposes nontrivial bounds on Higgs self-interactions. In the scalar channel, the necessity of treating coupled processes becomes a key ingredient, enabling us to extract information about the Higgs sector from elastic $WW \\to WW$ scattering without requiring double-Higgs production. Finally, we apply the formalism developed throughout the thesis to unitarize the amplitudes of a quantum theory of gravity treated as an effective field theory, illustrating the broader applicability of these methods.",
+    "status": "found"
+  },
+  "2511.13228": {
+    "arxiv_id": "2511.13228",
+    "title": "Breaking the Air-Water Paradigm: Ion Behavior at Hydrophobic Solid-Water Interfaces",
+    "authors": [
+      "Xavier R. Advincula",
+      "Kara D. Fong",
+      "Yongkang Wang",
+      "Christoph Schran",
+      "Mischa Bonn",
+      "Angelos Michaelides",
+      "Yair Litman"
+    ],
+    "submission_date": "2025-11-17T10:46:55Z",
+    "latest_updated": "2025-11-17T10:46:55Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.13228v1"
+    ],
+    "abstract": "Hydrophobic solid-water interfaces underpin processes in nanofluidics, electrochemistry, and energy technologies. Microscopic insights into these systems are often inferred from our understanding of the air-water interface, which is assumed to exhibit similar behavior. Here, we challenge this paradigm by combining heterodyne-detected vibrational sum-frequency generation spectroscopy with machine-learning molecular dynamics simulations at first-principles accuracy to investigate the graphene-NaCl(aq) interface as a prototypical hydrophobic solid-water system. Spectroscopic results suggest that ions have a minimal effect on the structure of the interfacial water, while simulations reveal that Na$^{+}$ and Cl$^{-}$ accumulate densely at the surface. Together, these findings reveal a new adsorption mechanism that departs from the established air-water interface paradigm, where interfacial ion adsorption is typically associated with, and often detected through, pronounced alteration of the interfacial water alignment and orientation. This difference arises because ions cannot penetrate the solid boundary and reside at a similar depth as the interfacial water molecules. As a consequence, large ion populations can be accommodated within the extended two-dimensional hydrogen-bond network at the interface, causing only minor local distortions but significant changes to its longer-range connectivity. These results reveal a distinct mechanism of electrolyte organization at aqueous-carbon interfaces, relevant to energy applications, where performance is highly sensitive to the local organization of interfacial water.",
+    "status": "found"
+  }
+}

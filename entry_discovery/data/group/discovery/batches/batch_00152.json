@@ -1,0 +1,485 @@
+{
+  "2511.14749": {
+    "arxiv_id": "2511.14749",
+    "title": "Vision Large Language Models Are Good Noise Handlers in Engagement Analysis",
+    "authors": [
+      "Alexander Vedernikov",
+      "Puneet Kumar",
+      "Haoyu Chen",
+      "Tapio Seppänen",
+      "Xiaobai Li"
+    ],
+    "submission_date": "2025-11-18T18:50:26Z",
+    "latest_updated": "2025-11-18T18:50:26Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.14749v1"
+    ],
+    "abstract": "Engagement recognition in video datasets, unlike traditional image classification tasks, is particularly challenged by subjective labels and noise limiting model performance. To overcome the challenges of subjective and noisy engagement labels, we propose a framework leveraging Vision Large Language Models (VLMs) to refine annotations and guide the training process. Our framework uses a questionnaire to extract behavioral cues and split data into high- and low-reliability subsets. We also introduce a training strategy combining curriculum learning with soft label refinement, gradually incorporating ambiguous samples while adjusting supervision to reflect uncertainty. We demonstrate that classical computer vision models trained on refined high-reliability subsets and enhanced with our curriculum strategy show improvements, highlighting benefits of addressing label subjectivity with VLMs. This method surpasses prior state of the art across engagement benchmarks such as EngageNet (three of six feature settings, maximum improvement of +1.21%), and DREAMS / PAFE with F1 gains of +0.22 / +0.06.",
+    "status": "found"
+  },
+  "2511.14750": {
+    "arxiv_id": "2511.14750",
+    "title": "Covering Barbasch-Vogan duality and wavefront sets of genuine representations",
+    "authors": [
+      "Fan Gao",
+      "Baiying Liu",
+      "Chi-Heng Lo",
+      "Freydoon Shahidi"
+    ],
+    "submission_date": "2025-11-18T18:51:23Z",
+    "latest_updated": "2026-02-06T03:20:03Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.14750v1",
+      "2511.14750v2"
+    ],
+    "abstract": "In this paper, we start by defining a covering Barbasch-Vogan duality and prove some of its properties. Then, for genuine representations of $p$-adic covering groups we formulate an upper bound conjecture for their wavefront sets using this covering Barbasch-Vogan duality and reduce it to anti-discrete representations. The formulation generalizes that of Ciubotaru-Kim and Hazeltine-Liu-Lo-Shahidi for linear algebraic groups. We prove this upper bound conjecture for Kazhdan-Patterson coverings of general linear groups.",
+    "status": "found"
+  },
+  "2511.14751": {
+    "arxiv_id": "2511.14751",
+    "title": "Co-Me: Confidence-Guided Token Merging for Visual Geometric Transformers",
+    "authors": [
+      "Yutian Chen",
+      "Yuheng Qiu",
+      "Ruogu Li",
+      "Ali Agha",
+      "Shayegan Omidshafiei",
+      "Jay Patrikar",
+      "Sebastian Scherer"
+    ],
+    "submission_date": "2025-11-18T18:52:22Z",
+    "latest_updated": "2026-05-14T15:47:56Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.14751v1",
+      "2511.14751v2"
+    ],
+    "abstract": "We propose Confidence-Guided Token Merging (Co-Me), an acceleration mechanism for visual geometric transformers without retraining or finetuning the base model. Co-Me distilled a light-weight confidence predictor to rank tokens by uncertainty and selectively merge low-confidence ones, effectively reducing computation while maintaining spatial coverage. Compared to similarity-based merging or pruning, the confidence signal in Co-Me reliably indicates regions emphasized by the transformer, enabling substantial acceleration without degrading performance. Co-Me applies seamlessly to various multi-view and streaming visual geometric transformers, achieving speedups that scale with sequence length. When applied to VGGT and Pi3, Co-Me achieves up to 21.5x and 20.4x speedup, making visual geometric transformers practical for real-time 3D perception and reconstruction.",
+    "status": "found"
+  },
+  "2511.14752": {
+    "arxiv_id": "2511.14752",
+    "title": "A Sequential Operator-Splitting Framework for Exploration of Nonconvex Trajectory Optimization Solution Spaces",
+    "authors": [
+      "Justin Ganiban",
+      "Natalia Pavlasek",
+      "Behcet Acikmese"
+    ],
+    "submission_date": "2025-11-18T18:53:17Z",
+    "latest_updated": "2025-11-18T18:53:17Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.14752v1"
+    ],
+    "abstract": "Trajectory optimization methods provide an efficient and reliable means of computing feasible trajectories in nonconvex solution spaces. However, a well-known limitation of these algorithms is that they are inherently local in nature, and typically converge to a solution in the neighborhood of their initial guess. This paper presents a sequential operator-splitting framework, based on the alternating direction method of multipliers (ADMM), aimed at promoting exploration within the sequential convex programming (SCP) framework. In particular, diverse initial solutions are modeled as agents within the consensus ADMM framework. Driving these agents toward consensus facilitates exploration of the nonconvex optimization landscape. Numerical simulations demonstrate that the proposed method consistently yields equivalent or lower-cost solutions compared to the standard SCP approach, with the same number of or fewer agents.",
+    "status": "found"
+  },
+  "2511.14753": {
+    "arxiv_id": "2511.14753",
+    "title": "SparseST: Exploiting Data Sparsity in Spatiotemporal Modeling and Prediction",
+    "authors": [
+      "Junfeng Wu",
+      "Hadjer Benmeziane",
+      "Kaoutar El Maghraoui",
+      "Liu Liu",
+      "Yinan Wang"
+    ],
+    "submission_date": "2025-11-18T18:53:37Z",
+    "latest_updated": "2025-11-18T18:53:37Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.14753v1"
+    ],
+    "abstract": "Spatiotemporal data mining (STDM) has a wide range of applications in various complex physical systems (CPS), i.e., transportation, manufacturing, healthcare, etc. Among all the proposed methods, the Convolutional Long Short-Term Memory (ConvLSTM) has proved to be generalizable and extendable in different applications and has multiple variants achieving state-of-the-art performance in various STDM applications. However, ConvLSTM and its variants are computationally expensive, which makes them inapplicable in edge devices with limited computational resources. With the emerging need for edge computing in CPS, efficient AI is essential to reduce the computational cost while preserving the model performance. Common methods of efficient AI are developed to reduce redundancy in model capacity (i.e., model pruning, compression, etc.). However, spatiotemporal data mining naturally requires extensive model capacity, as the embedded dependencies in spatiotemporal data are complex and hard to capture, which limits the model redundancy. Instead, there is a fairly high level of data and feature redundancy that introduces an unnecessary computational burden, which has been largely overlooked in existing research. Therefore, we developed a novel framework SparseST, that pioneered in exploiting data sparsity to develop an efficient spatiotemporal model. In addition, we explore and approximate the Pareto front between model performance and computational efficiency by designing a multi-objective composite loss function, which provides a practical guide for practitioners to adjust the model according to computational resource constraints and the performance requirements of downstream tasks.",
+    "status": "found"
+  },
+  "2511.14754": {
+    "arxiv_id": "2511.14754",
+    "title": "Observation of critical scaling in the Bose gas universality class",
+    "authors": [
+      "Leon Kleebank",
+      "Frank Vewinger",
+      "Arturo Camacho-Guardian",
+      "Victor Romero-Rochín",
+      "Rosario Paredes",
+      "Martin Weitz",
+      "Julian Schmitt"
+    ],
+    "submission_date": "2025-11-18T18:53:38Z",
+    "latest_updated": "2026-09-17T18:02:40Z",
+    "revised_dates": null,
+    "venue": "Sci. Adv. 12, eaee2942 (2026)",
+    "latest_version": 2,
+    "versions": [
+      "2511.14754v1",
+      "2511.14754v2"
+    ],
+    "abstract": "Critical exponents characterize the divergent scaling of thermodynamic quantities near phase transitions and allow for the classification of physical systems into universality classes. While quantum gases thermalizing by interparticle interactions fall into the XY model universality class, the ideal Bose gas has been predicted to form a distinct universality class whose signatures have not yet been revealed experimentally. Here, we report the observation of critical scaling in a two-dimensional trapped quantum gas of essentially noninteracting photons, which thermalize by radiative contact to a reservoir of molecules inside a microcavity. By measuring the spatial correlations near the condensation transition, we determine the critical exponent for the correlation length to be $ν= 0.52(4)$. Our results constitute a first experimental test of the long-standing scaling predictions for the Bose gas universality class.",
+    "status": "found"
+  },
+  "2511.14755": {
+    "arxiv_id": "2511.14755",
+    "title": "Robust Verification of Controllers under State Uncertainty via Hamilton-Jacobi Reachability Analysis",
+    "authors": [
+      "Albert Lin",
+      "Alessandro Pinto",
+      "Somil Bansal"
+    ],
+    "submission_date": "2025-11-18T18:55:20Z",
+    "latest_updated": "2026-04-15T04:01:20Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.14755v1",
+      "2511.14755v2"
+    ],
+    "abstract": "As perception-based controllers for autonomous systems become increasingly popular in the real world, it is important that we can formally verify their safety and performance despite perceptual uncertainty. Unfortunately, the verification of such systems remains challenging, largely due to the complexity of the controllers, which are often nonlinear, nonconvex, learning-based, and/or black-box. Prior works propose verification algorithms that are based on approximate reachability methods, but they often restrict the class of controllers and systems that can be handled or result in overly conservative analyses. Hamilton-Jacobi (HJ) reachability analysis is a popular formal verification tool for general nonlinear systems that can compute optimal reachable sets under worst-case system uncertainties; however, its application to perception-based systems is currently underexplored. In this work, we propose RoVer-CoRe, a framework for the Robust Verification of Controllers via HJ Reachability. To the best of our knowledge, RoVer-CoRe is the first HJ reachability-based framework for the verification of perception-based systems under perceptual uncertainty. Our key insight is to concatenate the system controller, observation function, and the state estimation modules to obtain an equivalent closed-loop system that is readily compatible with existing reachability frameworks. Within RoVer-CoRe, we propose novel methods for formal safety verification and robust controller design. We demonstrate the efficacy of the framework in case studies involving aircraft taxiing and NN-based rover navigation. Code is available at the link in the footnote.",
+    "status": "found"
+  },
+  "2511.14756": {
+    "arxiv_id": "2511.14756",
+    "title": "HMC: Learning Heterogeneous Meta-Control for Contact-Rich Loco-Manipulation",
+    "authors": [
+      "Lai Wei",
+      "Xuanbin Peng",
+      "Ri-Zhao Qiu",
+      "Tianshu Huang",
+      "Xuxin Cheng",
+      "Xiaolong Wang"
+    ],
+    "submission_date": "2025-11-18T18:56:24Z",
+    "latest_updated": "2025-11-18T18:56:24Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.14756v1"
+    ],
+    "abstract": "Learning from real-world robot demonstrations holds promise for interacting with complex real-world environments. However, the complexity and variability of interaction dynamics often cause purely positional controllers to struggle with contacts or varying payloads. To address this, we propose a Heterogeneous Meta-Control (HMC) framework for Loco-Manipulation that adaptively stitches multiple control modalities: position, impedance, and hybrid force-position. We first introduce an interface, HMC-Controller, for blending actions from different control profiles continuously in the torque space. HMC-Controller facilitates both teleoperation and policy deployment. Then, to learn a robust force-aware policy, we propose HMC-Policy to unify different controllers into a heterogeneous architecture. We adopt a mixture-of-experts style routing to learn from large-scale position-only data and fine-grained force-aware demonstrations. Experiments on a real humanoid robot show over 50% relative improvement vs. baselines on challenging tasks such as compliant table wiping and drawer opening, demonstrating the efficacy of HMC.",
+    "status": "found"
+  },
+  "2511.14757": {
+    "arxiv_id": "2511.14757",
+    "title": "A weak convergence approach to the large deviations of the dynamic Schrödinger problem",
+    "authors": [
+      "Viktor Nilsson",
+      "Pierre Nyquist"
+    ],
+    "submission_date": "2025-11-18T18:58:14Z",
+    "latest_updated": "2025-11-20T13:23:54Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.14757v1",
+      "2511.14757v2"
+    ],
+    "abstract": "In this paper, we consider the large deviations for dynamical Schrödinger problems, using the variational approach developed by Dupuis, Ellis, Budhiraja, and others. Recent results on scaled families of Schrödinger problems, in particular by Bernton, Ghosal, and Nutz, and the authors, have established large deviation principles for the static problem. For the dynamic problem, only the case with a scaled Brownian motion reference process has been explored by Kato. Here, we derive large deviations results using the variational approach, with the aim of going beyond the Brownian reference dynamics considered by Kato. Specifically, we develop a uniform Laplace principle for bridge processes conditioned on their endpoints. When combined with existing results for the static problem, this leads to a large deviation principle for the corresponding (dynamic) Schrödinger bridge. In addition to the specific results of the paper, our work puts such large deviation questions into the weak convergence framework, and we conjecture that the results can be extended to cover also more involved types of reference dynamics. Specifically, we provide an outlook on applying the result to reflected Schrödinger bridges.",
+    "status": "found"
+  },
+  "2511.14758": {
+    "arxiv_id": "2511.14758",
+    "title": "NeuCLIRBench: A Modern Evaluation Collection for Monolingual, Cross-Language, and Multilingual Information Retrieval",
+    "authors": [
+      "Dawn Lawrie",
+      "James Mayfield",
+      "Eugene Yang",
+      "Andrew Yates",
+      "Sean MacAvaney",
+      "Ronak Pradeep",
+      "Scott Miller",
+      "Paul McNamee",
+      "Luca Soldani"
+    ],
+    "submission_date": "2025-11-18T18:58:19Z",
+    "latest_updated": "2025-11-18T18:58:19Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.14758v1"
+    ],
+    "abstract": "To measure advances in retrieval, test collections with relevance judgments that can faithfully distinguish systems are required. This paper presents NeuCLIRBench, an evaluation collection for cross-language and multilingual retrieval. The collection consists of documents written natively in Chinese, Persian, and Russian, as well as those same documents machine translated into English. The collection supports several retrieval scenarios including: monolingual retrieval in English, Chinese, Persian, or Russian; cross-language retrieval with English as the query language and one of the other three languages as the document language; and multilingual retrieval, again with English as the query language and relevant documents in all three languages. NeuCLIRBench combines the TREC NeuCLIR track topics of 2022, 2023, and 2024. The 250,128 judgments across approximately 150 queries for the monolingual and cross-language tasks and 100 queries for multilingual retrieval provide strong statistical discriminatory power to distinguish retrieval approaches. A fusion baseline of strong neural retrieval systems is included with the collection so that developers of reranking algorithms are no longer reliant on BM25 as their first-stage retriever. NeuCLIRBench is publicly available.",
+    "status": "found"
+  },
+  "2511.14759": {
+    "arxiv_id": "2511.14759",
+    "title": "$π^{*}_{0.6}$: a VLA That Learns From Experience",
+    "authors": [
+      "Physical Intelligence",
+      "Ali Amin",
+      "Raichelle Aniceto",
+      "Ashwin Balakrishna",
+      "Kevin Black",
+      "Ken Conley",
+      "Grace Connors",
+      "James Darpinian",
+      "Karan Dhabalia",
+      "Jared DiCarlo",
+      "Danny Driess",
+      "Michael Equi",
+      "Adnan Esmail",
+      "Yunhao Fang",
+      "Chelsea Finn",
+      "Catherine Glossop",
+      "Thomas Godden",
+      "Ivan Goryachev",
+      "Lachy Groom",
+      "Hunter Hancock",
+      "Karol Hausman",
+      "Gashon Hussein",
+      "Brian Ichter",
+      "Szymon Jakubczak",
+      "Rowan Jen",
+      "Tim Jones",
+      "Ben Katz",
+      "Liyiming Ke",
+      "Chandra Kuchi",
+      "Marinda Lamb",
+      "Devin LeBlanc",
+      "Sergey Levine",
+      "Adrian Li-Bell",
+      "Yao Lu",
+      "Vishnu Mano",
+      "Mohith Mothukuri",
+      "Suraj Nair",
+      "Karl Pertsch",
+      "Allen Z. Ren",
+      "Charvi Sharma",
+      "Lucy Xiaoyang Shi",
+      "Laura Smith",
+      "Jost Tobias Springenberg",
+      "Kyle Stachowicz",
+      "Will Stoeckle",
+      "Alex Swerdlow",
+      "James Tanner",
+      "Marcel Torne",
+      "Quan Vuong",
+      "Anna Walling",
+      "Haohuan Wang",
+      "Blake Williams",
+      "Sukwon Yoo",
+      "Lili Yu",
+      "Ury Zhilinsky",
+      "Zhiyuan Zhou"
+    ],
+    "submission_date": "2025-11-18T18:58:55Z",
+    "latest_updated": "2025-11-19T04:34:49Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.14759v1",
+      "2511.14759v2"
+    ],
+    "abstract": "We study how vision-language-action (VLA) models can improve through real-world deployments via reinforcement learning (RL). We present a general-purpose method, RL with Experience and Corrections via Advantage-conditioned Policies (RECAP), that provides for RL training of VLAs via advantage conditioning. Our method incorporates heterogeneous data into the self-improvement process, including demonstrations, data from on-policy collection, and expert teleoperated interventions provided during autonomous execution. RECAP starts by pre-training a generalist VLA with offline RL, which we call $π^{*}_{0.6}$, that can then be specialized to attain high performance on downstream tasks through on-robot data collection. We show that the $π^{*}_{0.6}$ model trained with the full RECAP method can fold laundry in real homes, reliably assemble boxes, and make espresso drinks using a professional espresso machine. On some of the hardest tasks, RECAP more than doubles task throughput and roughly halves the task failure rate.",
+    "status": "found"
+  },
+  "2511.14760": {
+    "arxiv_id": "2511.14760",
+    "title": "UniGen-1.5: Enhancing Image Generation and Editing through Reward Unification in Reinforcement Learning",
+    "authors": [
+      "Rui Tian",
+      "Mingfei Gao",
+      "Haiming Gang",
+      "Jiasen Lu",
+      "Zhe Gan",
+      "Yinfei Yang",
+      "Zuxuan Wu",
+      "Afshin Dehghan"
+    ],
+    "submission_date": "2025-11-18T18:59:30Z",
+    "latest_updated": "2025-11-18T18:59:30Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.14760v1"
+    ],
+    "abstract": "We present UniGen-1.5, a unified multimodal large language model (MLLM) for advanced image understanding, generation and editing. Building upon UniGen, we comprehensively enhance the model architecture and training pipeline to strengthen the image understanding and generation capabilities while unlocking strong image editing ability. Especially, we propose a unified Reinforcement Learning (RL) strategy that improves both image generation and image editing jointly via shared reward models. To further enhance image editing performance, we propose a light Edit Instruction Alignment stage that significantly improves the editing instruction comprehension that is essential for the success of the RL training. Experimental results show that UniGen-1.5 demonstrates competitive understanding and generation performance. Specifically, UniGen-1.5 achieves 0.89 and 4.31 overall scores on GenEval and ImgEdit that surpass the state-of-the-art models such as BAGEL and reaching performance comparable to proprietary models such as GPT-Image-1.",
+    "status": "found"
+  },
+  "2511.14761": {
+    "arxiv_id": "2511.14761",
+    "title": "ARC Is a Vision Problem!",
+    "authors": [
+      "Keya Hu",
+      "Ali Cy",
+      "Linlu Qiu",
+      "Xiaoman Delores Ding",
+      "Runqian Wang",
+      "Yeyin Eva Zhu",
+      "Jacob Andreas",
+      "Kaiming He"
+    ],
+    "submission_date": "2025-11-18T18:59:49Z",
+    "latest_updated": "2025-11-18T18:59:49Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.14761v1"
+    ],
+    "abstract": "The Abstraction and Reasoning Corpus (ARC) is designed to promote research on abstract reasoning, a fundamental aspect of human intelligence. Common approaches to ARC treat it as a language-oriented problem, addressed by large language models (LLMs) or recurrent reasoning models. However, although the puzzle-like tasks in ARC are inherently visual, existing research has rarely approached the problem from a vision-centric perspective. In this work, we formulate ARC within a vision paradigm, framing it as an image-to-image translation problem. To incorporate visual priors, we represent the inputs on a \"canvas\" that can be processed like natural images. It is then natural for us to apply standard vision architectures, such as a vanilla Vision Transformer (ViT), to perform image-to-image mapping. Our model is trained from scratch solely on ARC data and generalizes to unseen tasks through test-time training. Our framework, termed Vision ARC (VARC), achieves 60.4% accuracy on the ARC-1 benchmark, substantially outperforming existing methods that are also trained from scratch. Our results are competitive with those of leading LLMs and close the gap to average human performance.",
+    "status": "found"
+  },
+  "2511.14762": {
+    "arxiv_id": "2511.14762",
+    "title": "Castle: Causal Cascade Updates in Relational Databases with Large Language Models",
+    "authors": [
+      "Yongye Su",
+      "Yucheng Zhang",
+      "Zeru Shi",
+      "Bruno Ribeiro",
+      "Elisa Bertino"
+    ],
+    "submission_date": "2025-08-27T06:45:39Z",
+    "latest_updated": "2025-08-27T06:45:39Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.14762v1"
+    ],
+    "abstract": "This work introduces Castle, the first framework for schema-only cascade update generation using large language models (LLMs). Despite recent advances in LLMs for Text2SQL code generation, existing approaches focus primarily on SELECT queries, neglecting the challenges of SQL update operations and their ripple effects. Traditional CASCADE UPDATE constraints are static and unsuitable for modern, denormalized databases, which demand dynamic, context-aware updates. Castle enables natural language instructions to trigger multi-column, causally consistent SQL UPDATE statements, without revealing table content to the model. By framing UPDATE SQL generation as a divide-and-conquer task with LLMs' reasoning capacity, Castle can determine not only which columns must be directly updated, but also how those updates propagate through the schema, causing cascading updates -- all via nested queries and substructures that ensure data confidentiality. We evaluate it on real-world causal update scenarios, demonstrating its ability to produce accurate SQL updates, and thereby highlighting the reasoning ability of LLMs in automated DBMS.",
+    "status": "found"
+  },
+  "2511.14763": {
+    "arxiv_id": "2511.14763",
+    "title": "Membership Inference Attack against Large Language Model-based Recommendation Systems: A New Distillation-based Paradigm",
+    "authors": [
+      "Li Cuihong",
+      "Huang Xiaowen",
+      "Yin Chuanhuan",
+      "Sang Jitao"
+    ],
+    "submission_date": "2025-09-16T09:36:43Z",
+    "latest_updated": "2026-03-19T05:41:33Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2511.14763v1",
+      "2511.14763v2",
+      "2511.14763v3"
+    ],
+    "abstract": "Membership Inference Attack (MIA) aims to determine whether a specific data sample was included in the training dataset of a target model. Traditional MIA approaches rely on shadow models to mimic target model behavior, but their effectiveness diminishes for Large Language Model (LLM)-based recommendation systems due to the scale and complexity of training data. This paper introduces a novel knowledge distillation-based MIA paradigm tailored for LLM-based recommendation systems. Our method constructs a reference model via distillation, applying distinct strategies for member and non-member data to enhance discriminative capabilities. The paradigm extracts fused features (e.g., confidence, entropy, loss, and hidden layer vectors) from the reference model to train an attack model, overcoming limitations of individual features. Extensive experiments on extended datasets (Last.FM, MovieLens, Book-Crossing, Delicious) and diverse LLMs (T5, GPT-2, LLaMA3) demonstrate that our approach significantly outperforms shadow model-based MIAs and individual-feature baselines. The results show its practicality for privacy attacks in LLM-driven recommender systems.",
+    "status": "found"
+  },
+  "2511.14764": {
+    "arxiv_id": "2511.14764",
+    "title": "Image-Seeking Intent Prediction for Cross-Device Product Search",
+    "authors": [
+      "Mariya Hendriksen",
+      "Svitlana Vakulenko",
+      "Jordan Massiah",
+      "Gabriella Kazai",
+      "Emine Yilmaz"
+    ],
+    "submission_date": "2025-09-16T14:22:39Z",
+    "latest_updated": "2025-09-16T14:22:39Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.14764v1"
+    ],
+    "abstract": "Large Language Models (LLMs) are transforming personalized search, recommendations, and customer interaction in e-commerce. Customers increasingly shop across multiple devices, from voice-only assistants to multimodal displays, each offering different input and output capabilities. A proactive suggestion to switch devices can greatly improve the user experience, but it must be offered with high precision to avoid unnecessary friction. We address the challenge of predicting when a query requires visual augmentation and a cross-device switch to improve product discovery. We introduce Image-Seeking Intent Prediction, a novel task for LLM-driven e-commerce assistants that anticipates when a spoken product query should proactively trigger a visual on a screen-enabled device. Using large-scale production data from a multi-device retail assistant, including 900K voice queries, associated product retrievals, and behavioral signals such as image carousel engagement, we train IRP (Image Request Predictor), a model that leverages user input query and corresponding retrieved product metadata to anticipate visual intent. Our experiments show that combining query semantics with product data, particularly when improved through lightweight summarization, consistently improves prediction accuracy. Incorporating a differentiable precision-oriented loss further reduces false positives. These results highlight the potential of LLMs to power intelligent, cross-device shopping assistants that anticipate and adapt to user needs, enabling more seamless and personalized e-commerce experiences.",
+    "status": "found"
+  },
+  "2511.14765": {
+    "arxiv_id": "2511.14765",
+    "title": "Optimizing Agricultural Research: A RAG-Based Approach to Mycorrhizal Fungi Information",
+    "authors": [
+      "Mohammad Usman Altam",
+      "Md Imtiaz Habib",
+      "Tuan Hoang"
+    ],
+    "submission_date": "2025-09-16T20:21:55Z",
+    "latest_updated": "2025-09-16T20:21:55Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.14765v1"
+    ],
+    "abstract": "Retrieval-Augmented Generation (RAG) represents a transformative approach within natural language processing (NLP), combining neural information retrieval with generative language modeling to enhance both contextual accuracy and factual reliability of responses. Unlike conventional Large Language Models (LLMs), which are constrained by static training corpora, RAG-powered systems dynamically integrate domain-specific external knowledge sources, thereby overcoming temporal and disciplinary limitations. In this study, we present the design and evaluation of a RAG-enabled system tailored for Mycophyto, with a focus on advancing agricultural applications related to arbuscular mycorrhizal fungi (AMF). These fungi play a critical role in sustainable agriculture by enhancing nutrient acquisition, improving plant resilience under abiotic and biotic stresses, and contributing to soil health. Our system operationalizes a dual-layered strategy: (i) semantic retrieval and augmentation of domain-specific content from agronomy and biotechnology corpora using vector embeddings, and (ii) structured data extraction to capture predefined experimental metadata such as inoculation methods, spore densities, soil parameters, and yield outcomes. This hybrid approach ensures that generated responses are not only semantically aligned but also supported by structured experimental evidence. To support scalability, embeddings are stored in a high-performance vector database, allowing near real-time retrieval from an evolving literature base. Empirical evaluation demonstrates that the proposed pipeline retrieves and synthesizes highly relevant information regarding AMF interactions with crop systems, such as tomato (Solanum lycopersicum). The framework underscores the potential of AI-driven knowledge discovery to accelerate agroecological innovation and enhance decision-making in sustainable farming systems.",
+    "status": "found"
+  },
+  "2511.14766": {
+    "arxiv_id": "2511.14766",
+    "title": "OTCR: Optimal Transmission, Compression and Representation for Multimodal Information Extraction",
+    "authors": [
+      "Yang Li",
+      "Yajiao Wang",
+      "Wenhao Hu",
+      "Zhixiong Zhang",
+      "Mengting Zhang"
+    ],
+    "submission_date": "2025-09-17T07:39:46Z",
+    "latest_updated": "2025-09-17T07:39:46Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.14766v1"
+    ],
+    "abstract": "Multimodal Information Extraction (MIE) requires fusing text and visual cues from visually rich documents. While recent methods have advanced multimodal representation learning, most implicitly assume modality equivalence or treat modalities in a largely uniform manner, still relying on generic fusion paradigms. This often results in indiscriminate incorporation of multimodal signals and insufficient control over task-irrelevant redundancy, which may in turn limit generalization. We revisit MIE from a task-centric view: text should dominate, vision should selectively support. We present OTCR, a two-stage framework. First, Cross-modal Optimal Transport (OT) yields sparse, probabilistic alignments between text tokens and visual patches, with a context-aware gate controlling visual injection. Second, a Variational Information Bottleneck (VIB) compresses fused features, filtering task-irrelevant noise to produce compact, task-adaptive representations. On FUNSD, OTCR achieves 91.95% SER and 91.13% RE, while on XFUND (ZH), it reaches 91.09% SER and 94.20% RE, demonstrating competitive performance across datasets. Feature-level analyses further confirm reduced modality redundancy and strengthened task signals. This work offers an interpretable, information-theoretic paradigm for controllable multimodal fusion in document AI.",
+    "status": "found"
+  },
+  "2511.14767": {
+    "arxiv_id": "2511.14767",
+    "title": "An LLM-Powered Agent for Real-Time Analysis of the Vietnamese IT Job Market",
+    "authors": [
+      "Minh-Thuan Nguyen",
+      "Thien Vo-Thanh",
+      "Thai-Duy Dinh",
+      "Xuan-Quang Phan",
+      "Tan-Ha Mai",
+      "Lam-Son Lê"
+    ],
+    "submission_date": "2025-09-26T03:03:12Z",
+    "latest_updated": "2025-09-26T03:03:12Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.14767v1"
+    ],
+    "abstract": "Individuals entering Vietnam's dynamic Information Technology (IT) job market face a critical gap in reliable career guidance. Existing market reports are often outdated, while the manual analysis of thousands of job postings is impractical for most. To address this challenge, we present the AI Job Market Consultant, a novel conversational agent that delivers deep, data-driven insights directly from the labor market in real-time. The foundation of our system is a custom-built dataset created via an automated pipeline that crawls job portals using Playwright and leverages the Large Language Model (LLM) to intelligently structure unstructured posting data. The core of our system is a tool-augmented AI agent, based on the ReAct agentic framework, which enables the ability of autonomously reasoning, planning, and executing actions through a specialized toolbox for SQL queries, semantic search, and data visualization. Our prototype successfully collected and analyzed 3,745 job postings, demonstrating its ability to answer complex, multi-step queries, generate on-demand visualizations, and provide personalized career advice grounded in real-world data. This work introduces a new paradigm for labor market analysis, showcasing how specialized agentic AI systems can democratize access to timely, trustworthy career intelligence for the next generation of professionals.",
+    "status": "found"
+  },
+  "2511.14768": {
+    "arxiv_id": "2511.14768",
+    "title": "Causally-Informed Reinforcement Learning for Adaptive Emotion-Aware Social Media Recommendation",
+    "authors": [
+      "Bhavika Jain",
+      "Robert Pitsko",
+      "Ananya Drishti",
+      "Mahfuza Farooque"
+    ],
+    "submission_date": "2025-10-01T05:31:23Z",
+    "latest_updated": "2025-10-01T05:31:23Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.14768v1"
+    ],
+    "abstract": "Social media recommendation systems play a central role in shaping users' emotional experiences. However, most systems are optimized solely for engagement metrics, such as click rate, viewing time, or scrolling, without accounting for users' emotional states. Repeated exposure to emotionally charged content has been shown to negatively affect users' emotional well-being over time. We propose an Emotion-aware Social Media Recommendation (ESMR) framework that personalizes content based on users' evolving emotional trajectories. ESMR integrates a Transformer-based emotion predictor with a hybrid recommendation policy: a LightGBM model for engagement during stable periods and a reinforcement learning agent with causally informed rewards when negative emotional states persist. Through behaviorally grounded evaluation over 30-day interaction traces, ESMR demonstrates improved emotional recovery, reduced volatility, and strong engagement retention. ESMR offers a path toward emotionally aware recommendations without compromising engagement performance.",
+    "status": "found"
+  }
+}

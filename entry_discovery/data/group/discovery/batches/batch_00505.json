@@ -1,0 +1,442 @@
+{
+  "2608.09107": {
+    "arxiv_id": "2608.09107",
+    "title": "ITO: Real-time Browser Tab Orchestration Through Intent Detection",
+    "authors": [
+      "Elvin Hu",
+      "Jasmine Sumpter",
+      "Takatoshi Yoshida",
+      "Mauricio Sousa",
+      "Kouta Minamizawa"
+    ],
+    "submission_date": "2026-08-10T04:25:18Z",
+    "latest_updated": "2026-08-10T04:25:18Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09107v1"
+    ],
+    "abstract": "People routinely interleave activities while browsing the web, often simultaneously and with overlapping boundaries. Yet organizational primitives in modern browsers treat every tab uniformly, offering no structural awareness of which items serve which purpose. While task-based organization approaches exist, they typically require users to manually organize or invoke reorganization features, and quickly fall out of sync as user intents evolve. To address this, we present Ito, a mixed-initiative approach that infers user intent in real time and organizes browsing activities into dynamic collections called Flows. Ito continuously reads unfolding user context, determines moment-to-moment focus, and creates, restructures, hibernates, and awakens Flows in real time while preserving user control through a mixed-initiative loop of proposals and corrections. In a controlled lab study (N=12) and a two-week field study (N=11), results suggest that Ito's intent-driven Flows aligned more closely with participants' mental models, facilitated task switching and navigation more effectively, and reduced management burden without loss of perceived control.",
+    "status": "found"
+  },
+  "2608.09108": {
+    "arxiv_id": "2608.09108",
+    "title": "CatPAL: Task-Aware Learning for Categorical Palette Recommendation",
+    "authors": [
+      "Chin Tseng",
+      "Arran Zeyu Wang",
+      "Yunqi Li",
+      "Danielle Albers Szafir"
+    ],
+    "submission_date": "2026-08-10T04:26:19Z",
+    "latest_updated": "2026-08-10T04:26:19Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09108v1"
+    ],
+    "abstract": "Designing effective categorical palettes requires balancing a range of factors, including perceptual distinctiveness, category count, and task effectiveness. The effectiveness of categorical encodings can vary substantially depending on the target analytical tasks; however, existing recommendation tools largely ignore task context when evaluating palette quality, resulting in inconsistent performance across tasks. We synthesize findings from a series of multi-stage user studies into a unified model of task-based effectiveness for color encodings, shape encodings, and their redundant combination across category counts and seven common scatterplot tasks. Our results show that task and palette choice jointly influence perceptual accuracy: different color and shape palettes exhibit varying levels of robustness across tasks, indicating that palette effectiveness is task-dependent. We estimate task-specific perceptual strengths for 39 colors and 39 shapes using Bradley-Terry models, refined through adaptive sampling to target uncertain and task-sensitive comparisons. We further quantify cross-channel interactions using a redundant gain Delta G metric to model performance across color and shape pairings. We then train a predictive model that scores candidate palettes based on task, category count, and perceptual features. This model drives effective palette recommendations in CatPAL, a task-aware palette recommendation system grounded in empirical data responsive to user constraints. Our findings highlight the importance of selecting categorical palettes aligned with specific analytical tasks and demonstrate how task-aware modeling enables more reliable palette design. CatPAL translates empirical results into a practical tool that supports user-specified colors or shapes and returns ranked palette recommendations adaptable to a range of tasks.",
+    "status": "found"
+  },
+  "2608.09109": {
+    "arxiv_id": "2608.09109",
+    "title": "Different Feedback, Different Updates: Selective Self-Learning from User Interactions for Large Language Models",
+    "authors": [
+      "Xuancheng Li",
+      "Haitao Li",
+      "Yujia Zhou",
+      "Qingyi Pan",
+      "Heng Wang",
+      "Yiqun Liu",
+      "Min Zhang",
+      "Qingyao Ai"
+    ],
+    "submission_date": "2026-08-10T04:27:58Z",
+    "latest_updated": "2026-10-09T03:20:42Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.09109v1",
+      "2608.09109v2"
+    ],
+    "abstract": "User feedback offers natural supervision for persistent LLM improvement, but a single message may support multiple behavioral changes with different scopes of generalization. We introduce SLIFT, a selective self-learning framework built on a task-relative view of user feedback. SLIFT decomposes each feedback message into atomic components and interprets each component relative to the original task as Fix, Spec, or Null: requirements for task validity, compatible condition-specific refinements, or content with no reliable positive update direction. To incorporate each change at the appropriate scope, SLIFT trains two complementary LoRA adapters on a shared frozen backbone: a Generalist that consolidates Fix requirements into default behavior through feedback-conditioned self-distillation, and a Specialist that observes only the task and Generalist response to supply residual guidance for applicable, unmet Spec refinements. Null components induce no positive update. Across backbones, SLIFT achieves strong performance on both MemoryBench and WildFB, with targeted analyses further examining its underlying mechanisms. We release our code at https://anonymous.4open.science/r/SLIFT.",
+    "status": "found"
+  },
+  "2608.09110": {
+    "arxiv_id": "2608.09110",
+    "title": "View-Adaptive Renderer for View-Consistent 2D-to-3D Generation",
+    "authors": [
+      "U-Chae Jun",
+      "Jaeeun Ko",
+      "Jiwoo Kang"
+    ],
+    "submission_date": "2026-08-10T04:28:08Z",
+    "latest_updated": "2026-08-10T04:28:08Z",
+    "revised_dates": null,
+    "venue": "Multimedia Systems, vol.32, pp. 511, Aug 2026",
+    "latest_version": 1,
+    "versions": [
+      "2608.09110v1"
+    ],
+    "abstract": "Reconstructing 3D shapes from a single image remains a fundamental yet challenging problem in computer vision. Traditional monocular 3D generation pipelines typically synthesize multiple views from a single input image before applying Neural Radiance Field (NeRF)-based reconstruction. However, inherent projective ambiguities often produce visual discontinuities across generated viewpoints, leading to inaccuracies in reconstructed 3D models. Current solutions either incur significant additional computational burdens or fail to adequately resolve practical inconsistencies between synthesized views. To address these limitations, we propose a novel viewpoint-adaptive neural rendering framework that enables robust 3D reconstruction even when given partially inconsistent multi-view inputs. Our approach introduces view-adaptive neural renderers that independently correct viewpoint-dependent errors while simultaneously sharing a global feature backbone to preserve structural coherence. Furthermore, we propose a self-attention fusion module that adaptively integrates multi-view information, ensuring geometric consistency without relying heavily on indirect regularizations or computationally intensive methods. Through extensive experiments, we demonstrate that our method consistently improves 3D reconstruction fidelity. Importantly, our approach achieves near state-of-the-art performance without diffusion-based SDS supervision, relying primarily on photometric rendering loss with lightweight attention regularizers. This balance between accuracy and efficiency makes the proposed framework highly practical for real-world applications.",
+    "status": "found"
+  },
+  "2608.09111": {
+    "arxiv_id": "2608.09111",
+    "title": "RAVEN-Eval: Rubric-Guided Automatic Evaluation for AI Video Generation Models Based on LMM Preference Judgement",
+    "authors": [
+      "Ziheng Jia",
+      "Jiaying Qian",
+      "Zicheng Zhang",
+      "Xiaorong Zhu",
+      "Lancheng Gao",
+      "Xiongkuo Min"
+    ],
+    "submission_date": "2026-08-10T04:38:15Z",
+    "latest_updated": "2026-08-10T04:38:15Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09111v1"
+    ],
+    "abstract": "AI video generation has advanced rapidly and entered widespread commercial use. As a result, quality differences among videos produced by state-of-the-art AI video generation models~(AIVGMs) have become increasingly difficult to discern using conventional evaluation criteria, such as visual fidelity and semantic instruction following. Meanwhile, human evaluation now requires more expertise and sustained attention, substantially increasing annotation costs. This calls for automated evaluation that can reliably distinguish fine-grained differences among advanced AIVGMs with minimal human intervention. To address this challenge, we present RAVEN-Eval, a rubric-guided automated evaluation framework for AIVGMs, built primarily on the LMM-as-a-judge paradigm. Through an automatic task curation and quality-filtering pipeline, RAVEN-Eval curates 150 text-to-video~(T2V) tasks and 100 image-to-video~(I2V) tasks, and systematically collects more than 4,500 AIGVs. At its core, RAVEN-Eval adopts rubric-guided automated LMM preference judgement, in which LMM judges conduct pairwise comparisons according to task-specific rubrics. It further introduces an anchor-based model insertion approach to reduce the evaluation cost of incorporating new models. Finally, we evaluate 20 high-performance AIVGMs, as well as the judging capabilities of 13 LMM judges, and establish the RAVEN-Eval Leaderboards. Overall, RAVEN-Eval paves a scalable path for automatic and trustworthy evaluation of rapidly evolving AIVGMs.",
+    "status": "found"
+  },
+  "2608.09112": {
+    "arxiv_id": "2608.09112",
+    "title": "ROEVO: Robust Organized Edge Feature-based Visual Odometry Using RGB-D Cameras",
+    "authors": [
+      "Mingrui Liu",
+      "Xingxing Zuo",
+      "Renlang Huang",
+      "Minglei Zhao",
+      "Jiming Chen",
+      "Liang Li"
+    ],
+    "submission_date": "2026-08-10T04:38:52Z",
+    "latest_updated": "2026-08-10T04:38:52Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09112v1"
+    ],
+    "abstract": "This work presents a visual odometry (VO) system that leverages image edge features. Edges are spatially expressive cues commonly present across diverse environments, offering rich textural and structural information. However, existing edge-based VO methods often fail to fully exploit this potential. To this end, we introduce a novel feature representation termed \\textit{organized edges}, which transforms disjoint edge pixels into sequentialized clusters, enabling more effective retention and utilization of the underlying textural and structural information. Another nice property of this formulation is that organized edges can perform edge-level association across multiple frames, enabling the establishment of a co-visibility graph. To achieve precise and efficient pose estimation, we propose a range of particularly designed tracking and joint optimization methods based on the characteristics of organized edges. For tracking, we formulate edge-wise rather than pixel-wise residuals to achieve robust and accurate inter-frame registration. For joint optimization, we introduce a novel shape-preserving edge-fitting method and an organized edge-based Bundle Adjustment (BA) approach, which decomposes the traditional BA problem into fitting and registration to preserve the structural integrity. Based on these novel techniques, we develop a complete VO system that exclusively employs organized edge features, achieving efficient tracking and precise local mapping. Extensive experiments demonstrate its accuracy and robustness in indoor environments, outperforming or achieving comparable performance to state-of-the-art methods. The source code is publicly available at https://github.com/liumingrui814/ROEVO",
+    "status": "found"
+  },
+  "2608.09113": {
+    "arxiv_id": "2608.09113",
+    "title": "Critical $p$-Laplace equations with monotone coefficients: Liouville classification and a Schoen-type Harnack inequality",
+    "authors": [
+      "Yi Ru-Ya Zhang"
+    ],
+    "submission_date": "2026-08-10T04:38:55Z",
+    "latest_updated": "2026-08-19T11:13:41Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.09113v1",
+      "2608.09113v2"
+    ],
+    "abstract": "We investigate positive weak solutions of the critical $p$-Laplace equation $$ -Δ_p u = u^{p^*-1} h(u), \\qquad 1 < p < n, $$ where $h$ is a positive, bounded, continuous, and nonincreasing function. Our first main result is a complete classification of normalized, bounded, positive entire solutions for every equation in a compact family determined by $h$: Any such solution must coincide with an Aubin--Talenti profile. Moreover, the existence of an Aubin--Talenti profile as a solution implies that $h$ is constant on the entire interval of values attained by that profile. Subsequently, applying this classification result, we establish the following scale-invariant Schoen-type estimate $$ \\left(\\sup_{B_R} u\\right)\\left(\\inf_{B_{2R}} u\\right)^{p-1} \\le C R^{p-n} $$ for nonnegative weak solutions defined in $B_{3R}$. As a direct corollary, we obtain a fully unrestricted Liouville theorem: Every positive entire solution must coincide with an Aubin--Talenti profile. For the purely critical equation, we also show that the corresponding Liouville classification is equivalent to a Schoen-type Harnack inequality. The arguments in this work give quasilinear versions of the Kelvin transform and the method of moving spheres, which was previously available only in the semilinear setting, and also yield alternative proofs of the classical results. The technique developed here can likely be extended to a wider class of Liouville-type problems for critical equations.",
+    "status": "found"
+  },
+  "2608.09114": {
+    "arxiv_id": "2608.09114",
+    "title": "Nef but Non-Semi-positive Line Bundles on Hopf Manifolds",
+    "authors": [
+      "Xiaojun Wu"
+    ],
+    "submission_date": "2026-08-10T04:43:32Z",
+    "latest_updated": "2026-09-29T01:25:27Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.09114v1",
+      "2608.09114v2"
+    ],
+    "abstract": "We give a complete characterization of the nef, effective, pseudo-effective, and semi-positive cones on Hopf manifolds. In particular, by computing the Ueda classes on non-diagonal Hopf surfaces, we show that the invariant elliptic curve is nef but not semi-positive. Via Bott--Chern cohomology calculations, we construct new examples of nef but non-semi-positive line bundles on Hopf manifolds of arbitrary dimension. We also prove that a minimal compact complex surface \\(X\\) containing an elliptic curve \\(C\\) and a nef line bundle \\(L\\) such that \\((X,C,L)\\) has finite generalized Ueda type is either a Hopf surface or Serre's example.",
+    "status": "found"
+  },
+  "2608.09115": {
+    "arxiv_id": "2608.09115",
+    "title": "Quantum Bicycle LDPC Codes with High $kd^2/n$ from Divisor-Driven Search",
+    "authors": [
+      "Liangdong Lu",
+      "Guanmin Guo",
+      "Yang Liu",
+      "Ruipan Yang"
+    ],
+    "submission_date": "2026-08-10T04:45:08Z",
+    "latest_updated": "2026-09-01T09:42:47Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2608.09115v1",
+      "2608.09115v2",
+      "2608.09115v3"
+    ],
+    "abstract": "Bicycle (two-block circulant) quantum low-density parity-check (LDPC) codes include some of the best known small quantum codes, yet their design has relied on group-algebra formulations in which the dimension and distance are accessible only through matrix computation. We show that in the cyclic case the construction collapses into the polynomial ring $\\F_2[x]/(x^{l}-1)$: self-orthogonality is automatic, the quantum dimension is read off from a polynomial gcd, and the minimum distance is certified exactly through the Calderbank correspondence to additive codes over $\\F_4$, turning code search into an algebraically pre-filtered enumeration that reaches parameter regimes poorly covered by existing tables. A computer search based on this framework recovers the short codes $[[42,12,4]]_2$ and $[[62,12,4]]_2$ and produces a family of codes with competitive figure of merit $kd^2/n$, including $[[66,20,7]]_2$ with $kd^2/n=14.85$, above the bivariate bicycle code $[[144,12,12]]_2$ ($kd^2/n=12$) at less than half the block length, together with $[[46,2,8]]_2$, $[[66,2,9]]_2$, $[[66,4,8]]_2$, $[[66,6,8]]_2$ and, at $n=90$, $[[90,16,6]]_2$, $[[90,18,6]]_2$, $[[90,20,6]]_2$. An exhaustive census at $n=48$ delineates the boundary of this picture: we exhibit a $[[48,10,6]]_2$ code from a minimal $48$-element group (the Aydin--Tamo--Barg realization uses $72$ elements), and prove that distance $5$ forces a stabilizer-rank loss, which excludes $[[48,10,5]]_2$ from the weight-$8$ symmetric coset family. The framework thus opens a systematic route to bicycle-type quantum LDPC codes beyond the reach of group-theoretic searches, and identifies exactly where genuinely coset-theoretic phenomena begin.",
+    "status": "found"
+  },
+  "2608.09116": {
+    "arxiv_id": "2608.09116",
+    "title": "Phonon-assisted transport and hole-phonon coupling in GaAs double quantum dots",
+    "authors": [
+      "Jin Leng",
+      "Wei-Zhu Liao",
+      "Hao-Tian Jiang",
+      "Di Liu",
+      "Bao-Chuan Wang",
+      "Gang Cao",
+      "Hai-Ou Li",
+      "Guo-Ping Guo"
+    ],
+    "submission_date": "2026-08-10T04:46:09Z",
+    "latest_updated": "2026-08-10T04:46:09Z",
+    "revised_dates": null,
+    "venue": "Chin. Phys. Lett. 43, 070602 (2026)",
+    "latest_version": 1,
+    "versions": [
+      "2608.09116v1"
+    ],
+    "abstract": "Hole-phonon interactions play an important role in transport and decoherence processes in semiconductor quantum dots. Here we investigate hole-phonon coupling in a gate-defined GaAs double quantum dot integrated with a quantum point contact charge sensor. Under finite source-drain bias, pronounced oscillatory stripe patterns appear near specific charge transition regions in the charge stability diagram. We attribute these oscillations to phonon emission during inelastic interdot tunneling. A theoretical model including piezoelectric hole-phonon coupling reproduces the observed patterns. Furthermore, our analysis shows that the oscillations emerge only in particular charge configurations. Our results provide direct insight into phonon-assisted transport and coherent hole-phonon interactions in semiconductor quantum dots.",
+    "status": "found"
+  },
+  "2608.09117": {
+    "arxiv_id": "2608.09117",
+    "title": "A Probabilistic Circuit-Induced Pseudo-Metric for Out-of-Distribution Detection",
+    "authors": [
+      "Bhumika K",
+      "Vidhya S",
+      "Narayanan C Krishnan"
+    ],
+    "submission_date": "2026-08-10T04:47:27Z",
+    "latest_updated": "2026-08-17T10:34:33Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.09117v1",
+      "2608.09117v2"
+    ],
+    "abstract": "Probabilistic Circuits (PCs) are tractable generative models whose internal nodes encode a hierarchy of probabilistic summaries over different variable scopes. Existing PC-based out-of-distribution (OOD) detection methods ignore this hierarchy, reducing the entire circuit to the scalar likelihood (or its uncertainty) computed at the root. We introduce Hierarchical Likelihood Vector (HLV), a representation whose entries are the likelihoods associated with selected PC nodes and define the Hierarchical Likelihood Distance (HLD), a PC-induced pseudo-metric that compares the probability distributions through the expectations of their HLVs. We show that HLD is an integral probability metric over a function class naturally induced by the PC and develop a principled goodness-of-fit hypothesis test for unsupervised OOD detection. Unlike existing approaches, the trained PC alone serves as the representation of the in-distribution: no held-out in-distribution data are required at deployment. We further show that the quantities required by the hypothesis test can be computed exactly, directly from the trained circuit, yielding an approximate analytic decision threshold. Experiments on tabular and MNIST datasets demonstrate that exploiting the hierarchical probabilistic summaries encoded through the PC improve OOD detection over root-likelihood, uncertainty-, typicality- and kernel-based baselines, while naturally localizing distribution shifts to the PC nodes responsible for the shift.",
+    "status": "found"
+  },
+  "2608.09118": {
+    "arxiv_id": "2608.09118",
+    "title": "3D Modeling of a Tethered Autogyro with Articulated Rotors and Attitude Control using Differential Rotor Braking",
+    "authors": [
+      "Tasnia Noboni",
+      "Tuhin Das"
+    ],
+    "submission_date": "2026-08-10T04:51:29Z",
+    "latest_updated": "2026-08-10T04:51:29Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09118v1"
+    ],
+    "abstract": "A tethered autogyro with articulated rotors can operate as an unmanned aerial vehicle capable of energy-efficient, long-duration deployment by utilizing ambient wind energy to sustain flight. This article presents a model-based attitude control technique for such a system using a full-fidelity dynamic model. Using Lagrangian approach combined with Blade Element Momentum Theory and catenary mechanics, a previously developed 2D hybrid model is extended to three dimensions. The new model describes the complete rigid-body motion of the frame, including roll and yaw dynamics, and is augmented with rotor speed and flapping degrees of freedom for each blade. Equilibrium characteristics are examined through steady-state responses and compared with the prior model. The resulting trends of equilibria are found to be consistent with those reported in the literature. A feedback control strategy based on regenerative differential rotor braking is developed to modulate all three attitude angles. Simulations demonstrate effective attitude regulation and stable flight.",
+    "status": "found"
+  },
+  "2608.09119": {
+    "arxiv_id": "2608.09119",
+    "title": "Motif 3: Technical Report",
+    "authors": [
+      "Junghwan Lim",
+      "Joon Son Chung",
+      "Sungmin Lee",
+      "Wai Ting Cheung",
+      "Gihun Cho",
+      "Minsu Ha",
+      "Sangho Kang",
+      "Beomgyu Kim",
+      "Dongseok Kim",
+      "Jangwoong Kim",
+      "Taehyun Kim",
+      "Taewhan Kim",
+      "Jeesoo Lee",
+      "Jeongdoo Lee",
+      "Junhyeok Lee",
+      "Dongpin Oh",
+      "Hyeyeon Cho",
+      "Dahye Choi",
+      "Jaeheui Her",
+      "Hanbin Jung",
+      "Changjin Kang",
+      "Minjae Kim",
+      "Youngrok Kim",
+      "Hyukjin Kweon",
+      "Hongjoo Lee",
+      "Yeongjae Park",
+      "Bokki Ryu"
+    ],
+    "submission_date": "2026-08-10T04:53:05Z",
+    "latest_updated": "2026-08-10T04:53:05Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09119v1"
+    ],
+    "abstract": "We introduce Motif 3, a decoder-only Mixture-of-Experts language model with 314 billion total parameters and 13.2 billion activated per token. Each sparse MoE layer contains 384 routed experts, with eight selected per token. This fine-grained sparsity provides substantial expert capacity while limiting computation. Motif 3 is built around Grouped Differential Latent Attention (GDLA), which integrates grouped differential attention with the compressed key-value representation of Multi-head Latent Attention. The architecture further incorporates modified manifold-constrained hyper-connections, Expert Specific PolyNorm activations, and multi-token prediction to improve optimization stability, expert specialization, and inference efficiency. We pretrain Motif 3 on approximately 12.5 trillion tokens spanning web documents, STEM, code, mathematics, multilingual content, and domain-specialized corpora. Expert-balancing and numerical-stabilization techniques support stable training at scale, while selective MXFP8 computation and communication, memory-efficient fused kernels, and window-aware context parallelism enable training with context lengths up to 256K tokens. Our post-training pipeline combines general supervised fine-tuning, six specialist teachers trained with reinforcement learning, a software-engineering teacher trained with supervised fine-tuning, and Multi-teacher On-Policy Distillation. The resulting unified model consolidates complementary capabilities in reasoning, coding, tool use, professional work, long-context understanding, calibrated abstention, and instruction following. Across a broad evaluation suite, Motif 3 demonstrates competitive performance against leading open weight models, including strong results on long-horizon agentic tasks, mathematical reasoning, scientific knowledge, and hallucination-sensitive evaluation.",
+    "status": "found"
+  },
+  "2608.09120": {
+    "arxiv_id": "2608.09120",
+    "title": "Renaming or Tightness: Enforcing Disjunctive Information Flow Policies",
+    "authors": [
+      "Xin Xu",
+      "Siru Tao",
+      "Kaizhen Tan"
+    ],
+    "submission_date": "2026-08-10T04:53:10Z",
+    "latest_updated": "2026-08-10T04:53:10Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09120v1"
+    ],
+    "abstract": "A disjunctive policy allows a value to depend on at most one of two secrets and never on both: an analyst may consult one client's file or the other's, a share of a split secret may be released but not its sibling. Such policies are not lattice-shaped, and Hunt and Sands introduced the quantale of information to give them a semantics, leaving the enforcement layer open. We build the flow-sensitive type system family that the quantale calls for, and show that the object which makes such families useful, the universal type object from which every member specialises, splits in two, with a consequence for enforcement. Over the free commutative quantale on the program variables the whole mechanism survives for every policy: monotone renaming, canonical derivations, principal typings, internal completeness. Over the free object with idempotent generators the certified bound is strictly more precise and still sound, because it records that two reads of one source honour one disjunct. The gap cannot be closed from inside the independent-attribute family: no mechanism of that shape whose labelling maps support monotone renaming certifies a bound more precise than the first, and for principal typings under generator-exact homomorphic specialisation the two coincide. Under the ethical-wall and secret-sharing labels the second read of a disjunctive source therefore drives every such certificate to no guarantee, and programs that satisfy the policy are rejected. The literal transcription of the lattice-era object is no escape either: it is a further quotient that loses branch disjunction. Precision is recovered by deferring specialisation to the judgement level, and the resulting read-out map is the least sound join-preserving one.",
+    "status": "found"
+  },
+  "2608.09121": {
+    "arxiv_id": "2608.09121",
+    "title": "MELLON - Multimodal Enhanced LLM for Online Navigation",
+    "authors": [
+      "Ruiyu Li",
+      "Haoyang Cai",
+      "Zhitong Guo",
+      "Tong Hu"
+    ],
+    "submission_date": "2026-08-10T04:56:22Z",
+    "latest_updated": "2026-08-10T04:56:22Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09121v1"
+    ],
+    "abstract": "Web navigation agents are capable of addressing various types of tasks on different websites. Current baselines on web navigation are either unimodal or lack strong reasoning abilities given multimodal inputs. Focusing on the WebShop benchmark, a real-world website simulation, we explore the alignment of text and images, as well as multimodal reasoning and planning abilities, to enhance the performance of web navigation agents. We propose three innovative multimodal enhancements: Multimodal Enhanced LLM for Online Navigation (MELLON), VQAgent, and Multimodal Ranker. MELLON demonstrates a significant improvement in task completion accuracy, with a 9.26% increase after just one epoch of training. Our findings suggest the necessity of further exploration into multimodal approaches, with a focus on more extensive training and alignment strategies to enhance the effectiveness of web navigation agents.",
+    "status": "found"
+  },
+  "2608.09122": {
+    "arxiv_id": "2608.09122",
+    "title": "Visual Distortion Detection in UGC Images Using Large Multimodal Models",
+    "authors": [
+      "Ziheng Jia",
+      "Yingji Liang",
+      "Jiaying Qian",
+      "Xiongkuo Min"
+    ],
+    "submission_date": "2026-08-10T05:00:12Z",
+    "latest_updated": "2026-08-10T05:00:12Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09122v1"
+    ],
+    "abstract": "The localized depiction of perceptual quality has long been a crucial, yet underexplored, challenge in image quality assessment (IQA). Existing approaches based on large multimodal models (LMMs) predominantly rely on text-driven supervised fine-tuning (SFT). However, this training paradigm exhibits notable limitations in detection accuracy. Moreover, synthetically distorted images, which are often used as the primary training data source, show a significant generalization gap when deployed in real-world scenarios; thus, the \\textbf{synthetic-to-authentic (\\textit{S2A})} problem represents a critical challenge. Motivated by these issues, we propose \\textbf{\\textit{VIGIL}}, which leverages the LMM architecture for precise visual distortion detection. From a candidate pool of over 1000K samples, we construct the \\textbf{\\textit{VIGIL-140K}} training set, which consists of over 140K distorted images. These images are obtained through rigorous quality filtering and carefully crafted distortion injection, covering 8 major synthetic distortion categories. Our model leverages different layers of the large language model (LLM) decoder, treating them as \\textit{multiple detectors} that perform synchronous distortion detection using multi-level features. Additionally, we retain distortion cues from predictions assigned to the non-distortion class, which helps mitigate the ambiguous foreground-background (\\textit{FG-BG}) separation commonly encountered in the \\textit{S2A} problem. After post-processing, our model consistently outperforms strong baselines on both in-domain synthetic distortion detection and \\textit{S2A} tasks.",
+    "status": "found"
+  },
+  "2608.09123": {
+    "arxiv_id": "2608.09123",
+    "title": "RISE-RL: Rubric-Informed Selective Exploration for Open-Ended Reinforcement Learning",
+    "authors": [
+      "Jinkun Hou",
+      "Zhuo Liu",
+      "Huimin Ren",
+      "Hongsheng Xin",
+      "Pan Zhou",
+      "Kun Zhan"
+    ],
+    "submission_date": "2026-08-10T05:02:28Z",
+    "latest_updated": "2026-08-10T05:02:28Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09123v1"
+    ],
+    "abstract": "Aligning Large Language Models (LLMs) for open-ended tasks is challenging because responses must satisfy multidimensional criteria without following a single correct generation trajectory. Existing rubric-based reinforcement learning (RL) methods compress fine-grained criterion-level feedback into scalar rewards, making persistent capability gaps difficult to target under limited on-policy exploration. We propose $\\textbf{RISE-RL}$ (Rubric-Informed Selective Exploration), which uses repeatedly missed rubric criteria to elicit privileged trajectories that are difficult to discover through unguided exploration alone. RISE-RL retains only trajectories whose complete-rubric reward exceeds the mean reward of natural rollouts, and then re-evaluates them under the original prompt to emphasize behaviors that remain weakly supported by the natural policy. The resulting guidance signal is optimized through a separate auxiliary objective and removed once its additional benefit diminishes. Experiments with 4B and 14B models across writing, chat, health, and science show that RISE-RL achieves the highest mean score on every evaluated benchmark under guidance-free evaluation. Compared with standard Rubric-RL, it improves the average score by 1.3 points at the 4B scale and $\\textbf{3.3 points at the 14B scale}$, including a $\\textbf{6.0-point}$ gain on CreativeWriting-V3. It also improves creative-writing diversity and yields gains on objectively scored medical and scientific benchmarks. These results indicate that selective internalization through reward filtering and policy support shaping is effective for open-ended reinforcement learning.",
+    "status": "found"
+  },
+  "2608.09124": {
+    "arxiv_id": "2608.09124",
+    "title": "ChronoState: Hidden Elapsed-Time Conditioning for Temporal-State Action Selection in Frozen-Backbone Language Models",
+    "authors": [
+      "Sam Siavoshian",
+      "Omar Ramadan",
+      "Amir K. Saeed",
+      "Benjamin A. Johnson",
+      "Amin Mohamed El-Amin Diab",
+      "Benjamin M. Rodriguez"
+    ],
+    "submission_date": "2026-08-10T05:03:16Z",
+    "latest_updated": "2026-08-10T05:03:16Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09124v1"
+    ],
+    "abstract": "Temporal decisions in language-model systems often depend on both symbolic task state and elapsed wall-clock time, such as cache expiration, job completion, quota resets, deadlines, or stale sessions. We study whether elapsed time can be supplied as a non-token, system-side scalar and composed with visible symbolic state by a frozen-backbone language model. We introduce ChronoState, a compositional temporal-state benchmark in which symbolic state appears in the prompt, elapsed seconds tau are supplied through a hidden chronometric-injection channel, and the model selects a forced-choice temporal action. Here, \"hidden\" means hidden from the user-visible token sequence, not from model computation. Using Qwen2.5-3B-Instruct as a frozen bf16 backbone with a 31-dimensional sinusoidal-plus-log time encoding, gated FiLM residual modulation, and a rank-8 LoRA action surface, hidden-time CI reaches 0.9305 +/- 0.0134 accuracy and 0.9410 +/- 0.0103 balanced accuracy. No-time and shuffled-time controls fall to 0.5511 +/- 0.0042 and 0.3323 +/- 0.0097, respectively, with high shuffled-time wrong-state consistency supporting causal dependence on the injected scalar within the trained distribution. Generalization remains strong for held-out templates, durations, and multi-constraint compositions, but held-out quota-family transfer is weak at 0.5065 +/- 0.0559, while a fair prompt+LoRA timestamp baseline reaches 0.9893 +/- 0.0052. Thus, ChronoState supports a narrow conclusion: hidden elapsed time can be composed with symbolic task state under direct supervision, but does not establish autonomous time tracking, broad unseen-family abstraction, or superiority over prompt-injected timestamps.",
+    "status": "found"
+  },
+  "2608.09125": {
+    "arxiv_id": "2608.09125",
+    "title": "Trajectory Divergence Horizon Decision for Reliable Dual-Arm Surgical Subtask Manipulation",
+    "authors": [
+      "Mingwu Su",
+      "Guankun Wang",
+      "Jinsong Lin",
+      "Rulin Zhou",
+      "Ziyi Hao",
+      "Zhiwei Fang",
+      "Huxin Gao",
+      "Jiewen Lai",
+      "Jiazheng Wang",
+      "Fan Zhang",
+      "Hongliang Ren"
+    ],
+    "submission_date": "2026-08-10T05:04:02Z",
+    "latest_updated": "2026-08-10T05:04:02Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09125v1"
+    ],
+    "abstract": "Surgical robotic systems are increasingly being adopted as clinical workload rises, motivating autonomous solutions for repetitive manipulation subtasks. Learning-based controllers improve generalization compared with rule-based and analytic approaches, but most are trained for individual tasks and remain difficult to reuse across procedures. Vision-Language-Action (VLA) models provide a unified framework that integrates visual perception, language grounding, and action generation, offering a promising path toward more composable surgical autonomy. However, existing VLA policies rely on fixed-length open-loop action sequences, where changing scene conditions can lead to accumulated errors and potential risks in surgical manipulation. To mitigate this issue, we formulate surgical VLA deployment as an adaptive execution-horizon decision problem and propose Trajectory Divergence Horizon Decision (TDHD), a test-time mechanism that estimates step-wise action reliability by measuring the divergence between two flow-matching-generated trajectories under small noise perturbations and truncates execution using a dual-threshold rule to trigger timely replanning. We further establish a real-world da Vinci-like dual-arm benchmark with synchronized multi-view perception and language instructions, and collect 600 teleoperated demonstrations across needle (reach, pick, regrasp) and tissue (reach, lift, resection) manipulation suites. On real hardware with 20 trials per task setting, TDHD consistently improves performance over the latest VLA baselines: success increases from 55\\% to 60\\% for needle manipulation and from 55\\% to 80\\% for tissue manipulation, with the largest gains observed in the final manipulation stages. These results highlight the importance of adaptive execution control for reliable deployment of VLA models in surgical robotic manipulation.",
+    "status": "found"
+  },
+  "2608.09126": {
+    "arxiv_id": "2608.09126",
+    "title": "Subjective Multi-Bias Detection with Large Language Models",
+    "authors": [
+      "Ruiyu Li",
+      "Zhiying Zhu"
+    ],
+    "submission_date": "2026-08-10T05:05:12Z",
+    "latest_updated": "2026-08-10T05:05:12Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09126v1"
+    ],
+    "abstract": "In this project, we delved into the pervasive challenge of bias detection within the text content. More specifically, our focus lies on the identification of subjective bias, a type of bias that introduces improper attitudes or portrays a statement at odds with the actual truth. The subjective bias can jeopardize the authenticity and reliability of texts, leading to misconceptions and potential social tensions, especially when expressed through offensive language. Following prior work [1], we tackled with three different types of subjective biases in text: (1) framing bias with the use of one-sided words or phrases containing a particular point of view; (2) epistemological bias which includes subtle linguistic features that can affect the believability of the texts; (3) demographic bias with word/phrase usage under presuppositions of a particular demographic factor (i.e., gender or religion). In terms of the data we utilize, the input consists of texts that may harbor subjective biases. The output is a classification or annotation that reveals the presence or absence of such biases within the provided content. More specifically, we detected three different types of multi-span biases in corpus WIKIBIAS [2] with more than 4,000 sentence pairs from Wikipedia edits. The data is labelled by bias type for span pairs with the following categories: (1) framing bias, (2) epistemological bias, (3) demographic bias, and (4) no bias. The project codes are released at https://github.com/HoningJade/LLM-Bias-Type-Classification.",
+    "status": "found"
+  }
+}

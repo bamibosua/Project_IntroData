@@ -1,0 +1,414 @@
+{
+  "2608.09867": {
+    "arxiv_id": "2608.09867",
+    "title": "Stealing Reasoning Traces from Proprietary LLM APIs",
+    "authors": [
+      "Alexander Panfilov",
+      "David Schmotz",
+      "Ilia Shumailov",
+      "Luca Beurer-Kellner",
+      "Joachim Schaeffer",
+      "Ameya Prabhu",
+      "Jonas Geiping",
+      "Maksym Andriushchenko"
+    ],
+    "submission_date": "2026-08-10T17:24:50Z",
+    "latest_updated": "2026-08-10T17:24:50Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09867v1"
+    ],
+    "abstract": "Leading large language model providers now conceal their models' step-by-step reasoning, or chain-of-thought, to protect intellectual property and limit information leakage. Rather than storing these traces server-side, providers return them to the client as blocks of encrypted text, which the client passes back with each subsequent request. Building on prior research, we identify an architectural vulnerability: these encrypted blocks are fully compatible and interchangeable across different sessions, users, and models within a provider's ecosystem. We exploit this compatibility to develop a scalable decryption jailbreak. By injecting an encrypted reasoning trace from a given model into a weaker, and less safeguarded model from the same provider, we force it to decode and output the trace verbatim in plaintext, without ever jailbreaking the more capable model directly. This vulnerability enables four distinct attack vectors. First, it circumvents anti-distillation mechanisms, allowing adversaries to extract a proprietary model's reasoning, as we demonstrate across Anthropic, OpenAI, and Google. Second, it allows for large-scale private data extraction. Developers frequently share session logs publicly, unaware of contents of the encrypted blocks. By decoding 315,320 reasoning blocks scraped from public repositories, we recovered 367 Personally Identifiable Information (PII) artifacts and 182 credentials. Third, it inadvertently reveals hazardous information hidden within the reasoning process, even in cases where the model's final, visible output safely rejects a malicious request. Fourth, attackers can leverage this flaw to execute invisible prompt injections, embedding malicious payloads entirely within encrypted blocks to poison public agentic rollouts. Following responsible disclosure, we propose concrete cryptographic and system-level mitigations to secure client-side reasoning.",
+    "status": "found"
+  },
+  "2608.09868": {
+    "arxiv_id": "2608.09868",
+    "title": "A random Lipschitz function detecting jumps",
+    "authors": [
+      "Dmitriy Stolyarov"
+    ],
+    "submission_date": "2026-08-10T17:24:54Z",
+    "latest_updated": "2026-08-10T17:24:54Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09868v1"
+    ],
+    "abstract": "Recently, A. Tyulenev and the author studied the class of metric spaces $\\mathcal{X}$ such that for every mapping $γ\\colon [0,1]\\to\\mathcal{X}$, there exists a $1$-Lipschitz function $F\\colon \\mathcal{X}\\to \\mathbb{R}$ that catches the total variation of $γ$, i.e. such that $\\operatorname{V}_{F\\circγ} \\gtrsim \\operatorname{V}_γ$. In this short note, we show that a metric space $\\mathcal{X}$ enjoys this property if and only if there exists a random $1$-Lipschitz function $f$ on $\\mathcal{X}$ such that $\\mathbb{E} |f(x) - f(y)| \\gtrsim ρ(x,y)$ for every $x$ and $y$ in $\\mathcal{X}$.",
+    "status": "found"
+  },
+  "2608.09869": {
+    "arxiv_id": "2608.09869",
+    "title": "The Cycle Rank Threshold: Perfect Matchings and Bipartite Parter Graphs",
+    "authors": [
+      "G. Arunkumar",
+      "Puja Samanta"
+    ],
+    "submission_date": "2026-08-10T17:25:18Z",
+    "latest_updated": "2026-09-13T16:51:43Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.09869v1",
+      "2608.09869v2"
+    ],
+    "abstract": "A graph on \\(n\\) vertices is called a Parter graph if there exists a nonsingular symmetric matrix, whose nonzero off-diagonal entries correspond exactly to the edges of the graph, such that all of its principal submatrices of order \\(n-1\\) are singular. Previously, a graph satisfying this condition was said to have property~(P). It was proved that, for bipartite graphs of cycle rank at most \\(3\\), being a Parter graph is equivalent to the existence of a perfect matching. We extend this result to cycle rank \\(4\\), proving that every bipartite graph of cycle rank at most \\(4\\) is a Parter graph if and only if it has a perfect matching. Furthermore, we show that this bound is sharp by constructing, for every integer \\(r\\ge5\\), a connected balanced bipartite Parter graph of cycle rank \\(r\\) that has no perfect matching.",
+    "status": "found"
+  },
+  "2608.09870": {
+    "arxiv_id": "2608.09870",
+    "title": "Logarithmic-Free Moment and Generalization Bounds for Uniformly Stable Algorithms",
+    "authors": [
+      "Thanh Nguyen-Cung",
+      "Binh T. Nguyen"
+    ],
+    "submission_date": "2026-08-10T17:25:27Z",
+    "latest_updated": "2026-09-01T07:07:08Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.09870v1",
+      "2608.09870v2"
+    ],
+    "abstract": "Uniform stability is a classical tool for controlling the generalization error of a learning algorithm. Bousquet, Klochkov, and Zhivotovskiy (2020) showed that the problem can be reduced to a moment inequality for a sum of weakly interacting functions of independent random variables. Their bound contains an additional factor $\\log n$, and they asked whether this factor can be removed. We answer this upper-bound question affirmatively. More specifically, let $Z=(Z_1,\\ldots,Z_n)$ have independent coordinates and let $g_i(Z)$ satisfy $\\mathbb E[g_i(Z)\\mid Z_{-i}]=0, \\ \\left| \\mathbb E[g_i(Z)\\mid Z_i]\\right|\\le M, \\ \\text{for every } i = 1, \\dots, n, $ where $Z_{-i}$ denotes all coordinates except $Z_i$. Assume additionally that changing any coordinate $Z_j$, $j\\neq i$, changes $g_i$ by at most $β$, we prove that, for every $p\\ge2$, for every $p\\ge2$, $$ \\left\\| \\sum_{i=1}^n g_i(Z)\\right\\|_p \\le 16pnβ+M\\sqrt{2pn}. $$ This removes the $\\log n$ factor from the previous bound and matches the lower bound of Bousquet, Klochkov, and Zhivotovskiy up to universal constants in the range covered by their construction. Our proof first establishes the required estimate on the Rademacher cube, then transfers it to arbitrary product distributions by a two-copy randomization argument.",
+    "status": "found"
+  },
+  "2608.09871": {
+    "arxiv_id": "2608.09871",
+    "title": "Fourier restriction to hyperbolic rectangles and an application",
+    "authors": [
+      "Kaiwen Jin"
+    ],
+    "submission_date": "2026-08-10T17:27:06Z",
+    "latest_updated": "2026-08-10T17:27:06Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09871v1"
+    ],
+    "abstract": "In this article, we study the Lebesgue space inequalities for extension operators associated with hyperbolic surfaces over rectangular regions. We characterize the corresponding operator norms in terms of the side-lengths. As an application, we present new restriction estimates for a class of hypersurfaces with additive structure.",
+    "status": "found"
+  },
+  "2608.09872": {
+    "arxiv_id": "2608.09872",
+    "title": "Safe Start: Configuring Optimization Algorithms for Decision-Making under Extreme Risks",
+    "authors": [
+      "Henry Lam",
+      "Wasin Meesena"
+    ],
+    "submission_date": "2026-08-10T17:27:18Z",
+    "latest_updated": "2026-08-10T17:27:18Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09872v1"
+    ],
+    "abstract": "We consider stochastic optimization where the goal is not only to optimize an average-case objective, but also to mitigate the occurrence of rare catastrophic events. This problem is motivated by safety-aware decision-making and AI training. We first argue that, in the presence of a simulation model, natural attempts to integrate variance reduction into optimization, even executed in a reasonable adaptive fashion, encounter fundamental challenges in guaranteeing realistic runtime when using common stochastic gradient descent algorithms. This challenge arises from the extreme sensitivity of tail-based objectives with respect to the decision variables, which renders a dichotomic failure of convergence regardless of what step size we select. We offer remedies based on a new notion of safe start that allows for efficient finite-time error control, and show how the sampling complexity scales favorably under the combination of safe start and variance reduction. We illustrate our methodologies on examples in portfolio optimization and robust classification with neural networks.",
+    "status": "found"
+  },
+  "2608.09873": {
+    "arxiv_id": "2608.09873",
+    "title": "Sci-VBench: Evaluating Knowledge- and Reasoning-Intensive Video Generation in Science Domains",
+    "authors": [
+      "Diandian Zhang",
+      "Tingyu Song",
+      "Lin Fu",
+      "Zheyuan Yang",
+      "Yilun Zhao"
+    ],
+    "submission_date": "2026-08-10T17:27:32Z",
+    "latest_updated": "2026-08-10T17:27:32Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09873v1"
+    ],
+    "abstract": "We introduce Sci-VBench, a comprehensive benchmark for evaluating knowledge- and reasoning-intensive video generation across scientific domains. It contains 1,253 expert-annotated examples spanning 60 subjects across four core disciplines: Natural Science, Healthcare, Humanities & Social Sciences, and Engineering. Each example requires models to generate temporally rich videos that demand scientific reasoning and knowledge-grounded synthesis, going beyond surface-level visual plausibility. We further establish a rubric-based evaluation protocol. Our analysis shows that, under this protocol, both non-expert human evaluators and MLLM-as-Judge systems can achieve relatively high agreement with expert judgments, supporting reproducible evaluation at scale. We benchmark 16 frontier proprietary and open-source models and find that, while automatic perceptual-quality scores cluster tightly across systems, performance on Prompt Grounding and Scientific and Causal Correctness varies substantially, with a pronounced proprietary-open-source gap. These findings show that advances in visual realism have not yet translated into reliable modeling of scientific and causal dynamics.",
+    "status": "found"
+  },
+  "2608.09874": {
+    "arxiv_id": "2608.09874",
+    "title": "ArchAgent v2: A Case Study with the Data Prefetching Championship",
+    "authors": [
+      "Abraham Gonzalez",
+      "Raghav Gupta",
+      "Akanksha Jain",
+      "Hanna Alam",
+      "Alexander Novikov",
+      "Po-Sen Huang",
+      "Matej Balog",
+      "Marvin Eisenberger",
+      "Sergey Shirobokov",
+      "Ngân Vũ",
+      "Hank Levy",
+      "Borivoje Nikolić",
+      "Sagar Karandikar",
+      "Martin Dixon",
+      "Parthasarathy Ranganathan"
+    ],
+    "submission_date": "2026-08-10T17:28:05Z",
+    "latest_updated": "2026-08-10T17:28:05Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09874v1"
+    ],
+    "abstract": "Agentic artificial intelligence has shown great promise in automating algorithm design, but scaling similar techniques to computer microarchitecture discovery remains challenging due to vast search spaces, strict hardware budgets, and long simulation times. In this work, we present ArchAgent v2, a framework which scales automated microarchitecture search to multi-level data prefetching. While the original ArchAgent successfully discovered single-level cache replacement policies in competition settings, it does not scale to multi-level prefetching where the design space and degrees of freedom are larger. To overcome this, we introduce two new additions to ArchAgent: a cascaded evolutionary search that subdivides the design space by sequentially evolving and freezing prefetchers at individual cache levels, and a hardware-realizability feedback loop that embeds real-time size-estimation directly into the evolution process. Evaluated under identical rules of the 4th Data Prefetching Championship (DPC4), ArchAgent v2 automatically designs a three-level prefetcher that outperforms the winning hand-designed solution, further demonstrating automated agentic discovery as a useful tool for computer architects. Our discovered policy achieves a 3.8\\% geometric mean IPC speedup over the baseline overall and a 0.3\\% improvement over the prior champion, BertiGO. On low-bandwidth single-core configurations, our policy yields a 4.6\\% performance speedup compared to only 2.6\\% for BertiGO. However, multi-core evolution still remains a significant challenge due to simulation latency impeding evolution speed. Finally, our profiling of an ArchAgent evolution of over 12,000 candidate designs provides key insights into how automated evolutionary agents explore and synthesize complex microarchitectural logic.",
+    "status": "found"
+  },
+  "2608.09875": {
+    "arxiv_id": "2608.09875",
+    "title": "Comprehending Python Repetition Structures: An Eye-Tracking Study with Novice Developers",
+    "authors": [
+      "José Júnior Silva da Costa",
+      "Rohit Gheyi",
+      "José Aldo Silva da Costa",
+      "Márcio Ribeiro"
+    ],
+    "submission_date": "2026-08-10T17:28:11Z",
+    "latest_updated": "2026-08-10T17:28:11Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09875v1"
+    ],
+    "abstract": "Code comprehension is central to software maintenance and evolution, yet different Python repetition structures may impose distinct cognitive demands. We conducted a controlled eye-tracking experiment with 32 undergraduate students with prior Python experience to compare comprehension of for loops, while loops, recursion, and list comprehensions (LCs). Participants solved six comprehension tasks in a Latin Square design while we measured completion behavior and eye-tracking metrics over full snippets and construct-specific Areas of Interest (AOIs). for loops showed the lowest visual effort. Relative to for, while loops increased AOI fixation duration by up to 97% and regression count by 114%, with regressions concentrated around counter management. Recursion showed a descriptive 50% increase in regressions, mainly between the base case and recursive call. LCs increased AOI time by 62.5% and fixation duration by 80.9%, with horizontal regressions suggesting dense token-by-token parsing. LC comparisons yielded the clearest statistically significant pairwise differences, while the combined comparison of all non-for structures was significant across all eye-tracking metrics. These findings provide process-level evidence that Python repetition structures induce distinct visual-effort patterns, with implications for readability, code review, refactoring, onboarding, and maintainability.",
+    "status": "found"
+  },
+  "2608.09876": {
+    "arxiv_id": "2608.09876",
+    "title": "Energy-Structured Latent World Models with Neural Time Fields for Physically Constistent Open-World Motion Planning",
+    "authors": [
+      "Yapeng Liu",
+      "Yuanzhao Zhai",
+      "Bo Ding",
+      "Huaimin Wang",
+      "Lin Wang"
+    ],
+    "submission_date": "2026-08-10T17:31:18Z",
+    "latest_updated": "2026-08-10T17:31:18Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09876v1"
+    ],
+    "abstract": "Physically consistent motion planning remains a fundamental challenge in embodied AI, as generated trajectories must strictly conform to real-world execution dynamics. While latent world models offer a promising approach by predicting these dynamics, existing methods learn unconstrained future representations where absorbed physics remains implicit. Therefore, they fail to form reusable physical knowledge, which compromises reliability in unpredictable open-world navigation. To address this, we propose a novel Energy-Structured Latent World Model (ELWM). Our key idea is to structure the ELWM latent state to explicitly carry energy and momentum, ensuring strictly causal transitions via dissipation and control ports. Trained on multimodal RGB-D and inertial interaction histories, our model guarantees physically consistent predictions. We further implement this for motion planning by constructing Physics-Conditioned Neural Time Fields (PC-NTF), a key technical cornerstone that integrates ELWM into an arrival time field via the Eikonal equation to yield a physically-informed navigation policy. Across held-out scenes, our evaluation reveals significant improvements. Compared to generic latent models, PC-NTF reduces 0.8-s motion-prediction NRMSE from 0.36 to 0.29. Against Active Neural Time Fields, it improves navigation success from 81.3% to 89.7% and SPL from 0.64 to 0.73, while cutting the physical collision rate from 12.1% to 5.8% and the Eikonal residual from 0.083 to 0.031. Beyond these targeted gains, our results demonstrate that embedding explicit physical structures into latent spaces intrinsically bridges the gap between predictive world models and safe, dynamically feasible motion planning.",
+    "status": "found"
+  },
+  "2608.09877": {
+    "arxiv_id": "2608.09877",
+    "title": "Effective Results for Foliations on Smooth Projective Complete Intersection Surfaces",
+    "authors": [
+      "Jorge Olivares",
+      "Daniel Posada-Buriticá"
+    ],
+    "submission_date": "2026-08-10T17:31:53Z",
+    "latest_updated": "2026-09-05T20:08:28Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.09877v1",
+      "2608.09877v2"
+    ],
+    "abstract": "We study holomorphic foliations on projective spaces that leave smooth projective complete intersection surfaces $M$ invariant. We determine precisely for which degrees such foliations on $M$ exist. As a consequence, we obtain new bounds for the classical Poincaré problem for smooth projective complete intersection surfaces and prove that previously known bounds for smooth hypersurfaces in $\\mathbb{P}^3$ are optimal. Furthermore, for a foliation $[s]$ on $M$ with isolated singularities and for degrees beyond an explicit bound that we provide, we show that a section $s'$ has singular scheme containing that of $s$ if and only if $s'=φ(s)$ for some global endomorphism $φ$ of the tangent bundle of $M$.",
+    "status": "found"
+  },
+  "2608.09878": {
+    "arxiv_id": "2608.09878",
+    "title": "Eigenforms and special holonomy",
+    "authors": [
+      "Bobby Acharya",
+      "Lucía Cabrera",
+      "Simone Corbo",
+      "Jason D. Lotay"
+    ],
+    "submission_date": "2026-08-10T17:32:24Z",
+    "latest_updated": "2026-09-04T15:09:30Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.09878v1",
+      "2608.09878v2"
+    ],
+    "abstract": "We prove existence and non-existence results for $L^2$ eigenforms for the Hodge Laplacian on complete non-compact Ricci flat manifolds with special holonomy, with a particular focus on gravitational instantons. We briefly describe the physical interpretation of these results in superstring and M-theory.",
+    "status": "found"
+  },
+  "2608.09879": {
+    "arxiv_id": "2608.09879",
+    "title": "Maximizing the algebraic connectivity of graphs of given order and size: a proof of a conjecture of Kolokolnikov",
+    "authors": [
+      "Sebastian M. Cioabă",
+      "Abhay Jayarajan",
+      "M. Rajesh Kannan",
+      "Rahul Roy"
+    ],
+    "submission_date": "2026-08-10T17:32:53Z",
+    "latest_updated": "2026-08-13T17:44:34Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.09879v1",
+      "2608.09879v2"
+    ],
+    "abstract": "The algebraic connectivity of a graph $G$ is a well-studied graph invariant that is related to other properties of the graph such as connectivity and expansion. Given $n$ and $m$, $α(n,m)$ is the maximum algebraic connectivity of a graph with $n$ vertices and $m$ edges. In 2015, Kolokolnikov conjectured that $α(n,2n-4)=2$ for $n\\geq 4$, and verified this claim computationally for $n \\le 12$. In this paper, we prove Kolokolnikov's conjecture. We also show that $α(n,3(n-3)) = 3$ is false in general. %Combined with the computational verification for $n \\le 12$, this yields $α(n,2n-4)=2$ for all admissible values of $n$.",
+    "status": "found"
+  },
+  "2608.09880": {
+    "arxiv_id": "2608.09880",
+    "title": "Financial Numerical Prediction and Allocation as Token Generation",
+    "authors": [
+      "Xu Ouyang",
+      "Moontae Lee"
+    ],
+    "submission_date": "2026-08-10T17:33:10Z",
+    "latest_updated": "2026-08-10T17:33:10Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09880v1"
+    ],
+    "abstract": "Financial prediction typically relies on task-specific regression, ranking, or policy heads, separating the language model from the numerical object ultimately evaluated. We investigate whether a causal language model can instead represent forecasts and decisions directly through constrained token generation. FinATOM introduces a unified, head-free interface for three-step stock-return forecasting and dynamic five-ETF allocation. The forecasting model autoregressively emits volatility-standardized return tokens and is trained with ordinal and ranking supervision followed by a one-epoch token-level policy stage. The allocation model generates normalized long-only weights; supervised fine-tuning imitates a causal mean--variance anchor, and DAPO-augmented GRPO optimizes realized 21-day Sharpe subject to anchor consistency. In 2023--2025 ETF tests, the allocation policy improves pooled gross Sharpe from 1.428 to 1.529 and net Sharpe under a 5-bp transaction-cost model from 1.394 to 1.494. The multimodal allocation input attains the highest three-period mean Sharpe of 1.540, with its clearest advantage in 2025. On FinTexTS, the SFT and policy strategies achieve 73.52\\%/2.68 and 73.72\\%/2.69 cumulative-return/Sharpe, respectively. These results support the feasibility of direct language-model token generation for financial numerical prediction and decision-making, while motivating broader tests across assets, regimes, and random seeds.",
+    "status": "found"
+  },
+  "2608.09881": {
+    "arxiv_id": "2608.09881",
+    "title": "Rooted Gibbs-DLR Measures in Planar Directed Polymers",
+    "authors": [
+      "Christopher Janjigian",
+      "Firas Rassoul-Agha",
+      "Timo Seppäläinen"
+    ],
+    "submission_date": "2026-08-10T17:33:42Z",
+    "latest_updated": "2026-08-10T17:33:42Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09881v1"
+    ],
+    "abstract": "We study rooted Gibbs-DLR measures in the directed polymer model on $\\mathbb{Z}^2$ with an ergodic disorder distribution which satisfies an additional mild hypothesis. We prove that the set of extremal rooted Gibbs-DLR measures is closed and totally ordered, characterize extremality in terms of path coalescence, and show that each fully supported extremal rooted Gibbs measure canonically generates a globally consistent and coalescing family of extremal rooted Gibbs measures indexed by all lattice sites. These families are, moreover, totally ordered. Building on this structure, we prove strong existence and strong uniqueness of the associated Busemann process, together with an $L^1$ continuity theorem for the shift-covariant Busemann cocycles which is joint in the inverse temperature, the tilt parameter, and the random environment. This yields, as a corollary, in-probability continuity of the generated extremal Gibbs measures corresponding to directions of differentiability under bounded i.i.d. perturbations of the weights. In positive temperature, it shows in-probability convergence of the generated extremal Gibbs measures. At zero temperature, it also yields quenched subsequential large deviation principles for the corresponding positive-temperature rooted Gibbs-DLR measures on path space. The rate functions are determined by a zero-temperature Busemann cocycle and vanish precisely on the infinite geodesics generated by that cocycle.",
+    "status": "found"
+  },
+  "2608.09882": {
+    "arxiv_id": "2608.09882",
+    "title": "Environmental and Economic Implications of Artificial Intelligence Data Centers in the United States",
+    "authors": [
+      "Johanna Bolaños-Zuñiga",
+      "Alberto J. Lamadrid"
+    ],
+    "submission_date": "2026-08-10T17:34:29Z",
+    "latest_updated": "2026-08-10T17:34:29Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09882v1"
+    ],
+    "abstract": "In this study, we use electricity demand growth, cooling requirements, and backup system operation to evaluate the environmental and economic implications of artificial intelligence data centers in the United States. Our results indicate that impacts are not determined solely by facility design, but by the broader electricity, water, and land-use systems in which these facilities operate. Emissions are primarily driven by electricity consumption and therefore depend on marginal generation mixes, transmission constraints, and the spatial and temporal distribution of demand. Analysis further shows that local effects include pressures on water resources, increased noise exposure, and land-use changes, with outcomes varying across regions and infrastructure conditions. The assessment of technological and operational measures shows that improvements in energy efficiency, cooling configurations, and operational strategies can reduce these impacts, although their effectiveness depends on system-level conditions. Evaluation of regulatory and market structures suggests that existing frameworks may not fully account for location- and time-specific externalities. These findings support the need for integrated policy approaches that align data center deployment and operation with electricity system characteristics, water availability, and land-use planning to improve overall environmental and economic performance.",
+    "status": "found"
+  },
+  "2608.09883": {
+    "arxiv_id": "2608.09883",
+    "title": "Anomalous temperature dependence of polaron mobility in a nonlinear double-well potential: unbiased X-propagator approach",
+    "authors": [
+      "Stefano Ragni",
+      "Osor S. Barišić",
+      "Naoto Nagaosa",
+      "Andrey S. Mishchenko"
+    ],
+    "submission_date": "2026-08-10T17:34:42Z",
+    "latest_updated": "2026-08-10T17:34:42Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09883v1"
+    ],
+    "abstract": "We develop an unbiased X-propagator method for calculating finite-temperature optical conductivity $σ(ω)$ and dc mobility $μ$ for arbitrary nonlinear electron-phonon interaction. We apply it to a polaron coupled to a double-well lattice potential, a minimal model for strongly anharmonic polar materials. At moderate coupling, the mobility exhibits three temperature regimes associated with confinement within one well, thermal competition with the barrier, and barrier-insensitive high-temperature dynamics. This sequence produces a concave temperature dependence of the mobility that is absent in conventional linear-coupling polaron models. At strong coupling, the mobility becomes nonmonotonic, and its temperature evolution is reflected in a characteristic redistribution of optical spectral weight. For parameters relevant to SrTiO$_3$, our results qualitatively reproduce both the anomalous concave mobility and the onset of violation of the Mott-Ioffe-Regel limit, thereby supporting nonlinear coupling to a soft anharmonic lattice mode as a microscopic mechanism for anomalous transport in dilute polar metals.",
+    "status": "found"
+  },
+  "2608.09884": {
+    "arxiv_id": "2608.09884",
+    "title": "Widom factors for Chebyshev and residual polynomials on semi-regular subsets of $\\mathbb{R}$",
+    "authors": [
+      "Robert Dukes",
+      "Maxim Zinchenko"
+    ],
+    "submission_date": "2026-08-10T17:34:43Z",
+    "latest_updated": "2026-08-10T17:34:43Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09884v1"
+    ],
+    "abstract": "We study $L^\\infty$ Widom factors for Chebyshev and residual polynomials on compact non-polar subsets of the real line that need not be regular in the sense of potential theory and, in particular, on sets with isolated points. We first show that boundedness of the Widom factors is independent of the normalization point $x_*\\in\\overline{\\mathbb{R}}\\backslash\\mathsf{E}$. For semi-regular sets, meaning that the set of regular points $\\mathsf{E}^\\mathrm{reg}$ is closed, we introduce the irregularity coefficient $\\mathcal{IR}(\\mathsf{E},x_*)=\\sum_{x\\in\\mathsf{E}\\backslash\\mathsf{E}^\\mathrm{reg}}G_\\mathsf{E}(x,x_*)$, which measures the contribution of irregular boundary points to the extremal polynomial problem. Our upper bound is \\[ \\sup_{n\\ge1}\\mathcal{W}_n(\\mathsf{E},x_*) \\le 2\\exp\\bigl[\\mathcal{PW}(\\mathsf{E}^\\mathrm{reg},x_*)+\\mathcal{IR}(\\mathsf{E},x_*)\\bigr], \\] while the complementary lower bound is \\[ \\liminf_{n\\to\\infty}\\mathcal{W}_n(\\mathsf{E},x_*) \\ge 2\\exp\\bigl[\\mathcal{IR}(\\mathsf{E},x_*)\\bigr]. \\] Consequently, for semi-regular Parreau--Widom sets the Widom factors are bounded if and only if $\\mathcal{IR}(\\mathsf{E},x_*)<\\infty$. When the regular part is a finite union of intervals, this condition is equivalent to a geometric square-root summability condition on the irregular points. In the special case $\\mathsf{E}=[a,b]\\cup\\{x_k\\}_{k\\ge1}$, the Widom factors have the exact, possibly infinite, limit $2\\exp[\\mathcal{IR}(\\mathsf{E},x_*)]$. When this limit is finite, we obtain the corresponding Szegő--Widom asymptotics for the normalized extremal polynomials.",
+    "status": "found"
+  },
+  "2608.09885": {
+    "arxiv_id": "2608.09885",
+    "title": "SHE: Trajectory-driven Safety Harness Evolution for LLM Agents",
+    "authors": [
+      "Wanying Qu",
+      "Qinghua Mao",
+      "Yu Li",
+      "Jiyao Liu",
+      "Xin Zhang",
+      "Dadi Guo",
+      "Yanxu Zhu",
+      "Qingyu Liu",
+      "Leitao Yuan",
+      "Xi Lin",
+      "Shanfeng Zhu",
+      "Yanwei Fu",
+      "Jing Shao",
+      "Xia Hu",
+      "Dongrui Liu"
+    ],
+    "submission_date": "2026-08-10T17:35:08Z",
+    "latest_updated": "2026-08-10T17:35:08Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09885v1"
+    ],
+    "abstract": "The safety of large language model (LLM) agents depends not only on model weights but also on the agent harness that manages context, memory, tools, permissions, and runtime control. Existing safety mechanisms often treat the harness as a fixed deployment artifact, limiting their ability to evolve with emerging risks. Moreover, coupled functions across harness components obscure safety responsibility attribution, making localized evolution difficult. We propose Safety Harness Evolution (SHE), a framework that learns evolving safe boundaries from rollout trajectories. SHE decomposes the harness into four artifacts with explicit safety responsibilities, including the System Prompt, Rule Bank, Safety Memory, and Tool Policy, defining clear functional boundaries for localized evolution. Based on this decomposition, SHE introduces an attribution-guided evolution loop that converts trajectory failures into structured diagnoses, learns artifact-specific boundary refinements, and selects evolved harnesses through safety-utility validation. Experiments on Agent-SafetyBench demonstrate that SHE effectively enhances safety through harness evolution, achieving a 3.1x ASR reduction compared with static SafeHarness, while also improving benign utility. The evolved harness further generalizes to unseen risks on the held-out AgentHarm benchmark and transfers across agent models without additional evolution.",
+    "status": "found"
+  },
+  "2608.09886": {
+    "arxiv_id": "2608.09886",
+    "title": "Entanglement-assisted quantum locally recoverable codes: bounds and constructions with availability",
+    "authors": [
+      "Rutuja Kshirsagar",
+      "Gretchen L. Matthews",
+      "Julia Shapiro"
+    ],
+    "submission_date": "2026-08-10T17:37:21Z",
+    "latest_updated": "2026-08-11T07:07:58Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.09886v1",
+      "2608.09886v2"
+    ],
+    "abstract": "In this work, we define entanglement-assisted quantum locally recoverable codes with availability, in which any set of up to $δ-1$ erased qudits can be recovered from any one of $t$ local recovery sets, each of size at most $r+δ-1$, with the recovery sets intersecting exactly in the erased coordinates, where $r$ is a (small) positive integer. We show that shared entanglement permits $t>1$, meaning that multiple local recovery sets can be available for the same set of up to $δ-1$ erasures. We establish a Singleton-like bound for this family of codes and present random constructions based on classical linear codes with Vandermonde parity-check matrices. We also provide explicit constructions of entanglement-assisted quantum locally recoverable codes with availability from several classical code families and their folded versions, including Tamo-Barg codes, fiber-product codes, and algebraic-geometry codes such as one-point Hermitian and Suzuki codes.",
+    "status": "found"
+  }
+}

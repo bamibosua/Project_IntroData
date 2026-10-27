@@ -1,0 +1,419 @@
+{
+  "2609.13154": {
+    "arxiv_id": "2609.13154",
+    "title": "Lexical Prompt Compression for Large Language Models: A Training-Free, Deterministic Pipeline with Empirical Pareto Analysis Across Eleven Task Categories",
+    "authors": [
+      "Shamin Chokshi"
+    ],
+    "submission_date": "2026-07-08T17:21:42Z",
+    "latest_updated": "2026-07-08T17:21:42Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13154v1"
+    ],
+    "abstract": "Recent advances in large language models (LLMs) have made prompts increasingly large and complex. Techniques such as chain-of-thought reasoning (Wei et al., 2022) and in-context learning (Brown et al., 2020) frequently push real-world prompts past several thousand tokens, increasing inference cost and latency. Learned compression methods such as LLMLingua (Jiang et al., 2023) and Selective Context (Li et al., 2023) achieve high compression ratios but require auxiliary language models and are non-deterministic. We ask a complementary question: how far can a training-free, fully deterministic, CPU-only pipeline based on classical lexical NLP be pushed before output quality degrades significantly? Eleven toggleable lexical transformations - stopword removal, filler-phrase deletion, contraction and abbreviation substitution, part-of-speech-based pruning, lemmatization, WordNet-driven synonym shortening, and named-entity preservation - are assembled into a configurable pipeline. Fifteen configurations are evaluated on 1,242 English-only prompts from six sources (Dolly-15k, LMSYS-Chat-1M, WildChat-1M, MMLU, GSM8K, HellaSwag), spanning eleven automatically derived task categories, yielding 18,630 paired GPT-4o-mini completions. Output preservation is measured using BLEU, ROUGE-1/2/L, BERTScore-F1, and SentenceBERT cosine similarity. The most aggressive configuration achieves a mean token reduction of 40.3% (sigma = 9.2) at a BERTScore-F1 of 0.876 against the original-prompt output; a stopword-only configuration achieves 29.6% reduction at 0.913. The compression-versus-fidelity Pareto frontier is characterized per task category, with commonsense reasoning a systematic failure mode under aggressive compression. All code, prompts, and per-cell results are released for reproducibility.",
+    "status": "found"
+  },
+  "2609.13155": {
+    "arxiv_id": "2609.13155",
+    "title": "PAUSE: A Privacy-Preserving Self-Reflection Tool for AI-Associated Cognitive Offloading",
+    "authors": [
+      "Mahbub Ul Alam"
+    ],
+    "submission_date": "2026-07-13T09:58:52Z",
+    "latest_updated": "2026-07-13T09:58:52Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13155v1"
+    ],
+    "abstract": "Cognitive offloading is the use of external aids, such as notes, calculators, or search engines, to reduce mental effort. Large language models (LLMs) extend this to thinking itself, and by AI-associated cognitive offloading, I mean the pattern where a person routinely substitutes LLM output for their own reasoning, idea generation, learning, or communication. Recent empirical work reports associations between some patterns of LLM use and changes in critical thinking effort, neural engagement during assisted tasks, creative diversity, learning behaviour, and social dependence. Validated instruments for AI reliance, dependence, and literacy have begun to appear. I describe PAUSE (Patterns of AI Use: Self-Examination), a privacy-by-design web tool (link: https://anondo1969.github.io/pause) that occupies a different niche from these. It is a lightweight, non-diagnostic reflection aid for private individual use. PAUSE is organised around how a person's own LLM use may relate to cognitive offloading across four everyday domains ('reasoning & critical thinking', 'creativity & originality', 'research & learning', and 'social & communicative capacity'). It delivers a short, free, no-login self-check, scores it entirely in the browser, and returns descriptive, domain-aware reflections. The self-check pairs reverse-scored behavioural items with a claim-evaluation reasoning probe, an alternative-uses creativity probe, and a small retrospective before-and-after block. PAUSE does not assume that AI use is harmful. It only addresses where AI substitutes for effort a person may want to preserve. The application is privacy-preserving by design: scoring is deterministic and runs client-side, no personal data is required, nothing is transmitted or stored beyond the browser session, and no LLM is involved in production. PAUSE is a self-reflection tool. It is not a validated psychological instrument.",
+    "status": "found"
+  },
+  "2609.13156": {
+    "arxiv_id": "2609.13156",
+    "title": "Modeling Quantum Computing with $π$-calculus",
+    "authors": [
+      "Catalin Toma",
+      "Manuel Oriol"
+    ],
+    "submission_date": "2026-07-13T14:04:11Z",
+    "latest_updated": "2026-10-12T12:52:39Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2609.13156v1",
+      "2609.13156v2"
+    ],
+    "abstract": "Quantum computing is a difficult concept to grasp for computer scientists because it is full of mathematical formulas that have no intuitive meaning related to the problem that the code solves. While these formulae define the way the system behaves, the operational semantics is very far from regular programming languages that reason with variables, assignments, and passing by value the results of computation. This article takes a step back to define a theoretical framework where quantum programs are not treated as sequential programs, but rather as concurrent programs where variables advertise their states through their own channels and code that uses them is reading that state (and possibly collapsing it). The PiQuant framework is a simple extension of the $π$-calculus that contains additional syntax and semantics for the handling of quantum variables.",
+    "status": "found"
+  },
+  "2609.13157": {
+    "arxiv_id": "2609.13157",
+    "title": "Partitioning-free 3D-IC Floorplanning",
+    "authors": [
+      "Shuo Ren",
+      "Rongliang Fu",
+      "Libo Shen",
+      "Zhen Zhuang",
+      "Leilei Jin",
+      "Hao Yu",
+      "Bei Yu",
+      "Tsung-Yi Ho"
+    ],
+    "submission_date": "2026-07-14T13:48:14Z",
+    "latest_updated": "2026-07-14T13:48:14Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13157v1"
+    ],
+    "abstract": "3D integration with fine-pitch hybrid bonding offers a promising path to alleviate interconnect bottlenecks in conventional two-dimensional (2D) ICs, yet efficient 3D floorplanning remains challenging due to the enlarged solution space and non-uniform inter-die communication latency. Existing methods either extend 2D representations into 3D, leading to combinatorial complexity, or adopt partitioning-first pipelines that fix block-to-die assignments early and hinder joint optimization of floorplan, die assignment, and vertical connectivity. In this work, we present \\textsc{Great3D}, a partitioning-free 3D floorplanning framework that directly optimizes a native 3D floorplan. \\textsc{Great3D} formulates a unified objective that couples interconnect cost with a cycles-per-instruction (CPI)-derived latency term to capture the system-level impact of face-to-face (F2F) bonding. Algorithmically, it combines an SDP-based 3D global embedding with a dynamic-programming refinement for die assignment, followed by 2D continuous refinement with practical design constraints. \\textcolor{blue}{Experiments on the GSRC and ATPlace benchmark suites show that \\textsc{Great3D} consistently achieves strong wirelength and CPI quality against state-of-the-art 3D floorplanners. On GSRC, it reduces total wirelength by up to about $70\\%$ (and by $2.40$--$2.74\\times$ on average) over competing 3D-native floorplanners, and its dynamic-programming die-assignment stage further improves CPI by $9.5$--$17.8\\%$, while maintaining competitive runtime on instances of up to a few hundred blocks.}",
+    "status": "found"
+  },
+  "2609.13158": {
+    "arxiv_id": "2609.13158",
+    "title": "TestHallVQA: Exploring LVLMs' Document-Level Reasoning under Redundant Contexts from Scientific Exams",
+    "authors": [
+      "Yongqi Yu",
+      "Yu Zhang"
+    ],
+    "submission_date": "2026-07-15T03:51:15Z",
+    "latest_updated": "2026-07-15T03:51:15Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13158v1"
+    ],
+    "abstract": "Large Vision--Language Models (LVLMs) are increasingly expected to perform visual question answering (VQA) over planar media. However, existing planar VQA benchmarks typically emphasize isolated challenges: some emphasize long-document understanding with limited reasoning depth, while others require complex visual reasoning but remain restricted to single-page, noise-free settings. Moreover, through theoretical analysis, we identify the impact of irrelevant visual tokens, which leads to measurable performance degradation but has received little attention with respect to systematic quantification. To address these limitations, we introduce TestHallVQA, a multi-image VQA benchmark that simultaneously embodies document-level scale and the difficulty of human examinations, while providing comprehensive task coverage. Leveraging TestHallVQA's ability to controllably inject multi-level contextual redundancy, we further propose a novel metric, F1-R\\textsuperscript{2}, which jointly quantifies LVLMs' computational reasoning capability and their evidence retrieval robustness against document-level redundancy. Extensive experiments and analyses on mainstream LVLMs reveal their latent deficiencies across multiple dimensions, offering concrete insights and directions for future research. The associated datasets, code, and complete theoretical derivations are available at https://github.com/yqyu2317/TestHallVQA-benchmark.",
+    "status": "found"
+  },
+  "2609.13159": {
+    "arxiv_id": "2609.13159",
+    "title": "MobiBench: Benchmarking LLMs for On-Device Performance",
+    "authors": [
+      "Arya Hariharan",
+      "Rohit Suresh",
+      "Bolla Sai Naga Yashwanth",
+      "Ashok Senapati",
+      "Thummala Pallavi",
+      "Anala M R",
+      "Soumya A"
+    ],
+    "submission_date": "2026-07-15T05:26:34Z",
+    "latest_updated": "2026-07-15T05:26:34Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13159v1"
+    ],
+    "abstract": "Understanding how large language models (LLMs) perform under real-world resource constraints has become more crucial due to the growing demand for deploying LLMs on mobile and edge devices. While there are a number of execution frameworks for on-device inference, the evaluation of llama.cpp as the runtime is the sole focus of this work. This work, presents a unified benchmarking suite that uses llama.cpp to thoroughly evaluate the performance of edge-optimized LLMs in a variety of hardware settings. The benchmark includes both user-facing metrics (task-specific accuracy, prefill speed, decode speed, time-to-first-token, etc.) and system-level measurements (memory consumption, battery consumption, etc.) and covers a fairly varied set of representative natural language tasks, such as summarization and question-answering. This paper present a comparative analysis that identifies important trade-offs resulting from model architecture and hardware features by methodically assessing several lightweight models on commercial system-onchips (SoCs) and CPU/GPU platforms. In order to guide future developments in model optimization, runtime development, and edge-device hardware design for effective large-scale language intelligence, the benchmark lays the groundwork for repeatable and thorough evaluation of on-device LLMs using a single, widely used runtime.",
+    "status": "found"
+  },
+  "2609.13160": {
+    "arxiv_id": "2609.13160",
+    "title": "picoRing dual: ultralow-power bimanual ring controllers for everyday AR",
+    "authors": [
+      "Hideaki Yamamoto",
+      "Yifan Li",
+      "Yoshihiro Kawahara",
+      "Ryo Takahashi"
+    ],
+    "submission_date": "2026-07-17T05:02:35Z",
+    "latest_updated": "2026-07-17T05:02:35Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13160v1"
+    ],
+    "abstract": "Advances in smart eyewear, such as AR glasses and HMDs, bring digital information into outdoor and public situations. However, traditional handheld controllers for hand interactions remain too bulky and socially awkward for these everyday contexts, failing to match the portability and subtlety required for mobile use. Ring-based input controllers offer a reliable finger-sensing solution; however, continuous operation with a tiny, battery-constrained ring remains challenging. Here, we present picoRing dual, an ultra-low-power bimanual interface with a pair of ring-wristbands based on inductive coupling. Unlike the original picoRing mouse limited to uni-manual tens of bps slow trackball interaction, picoRing dual uses a stable NFC-based ring-to-wristband link to capture fast index-finger motions and thumb-to-index microgestures at approximately 1.4 kbps. By tuning the ring's coil geometry, our system achieves stable NFC against finger bending while complying with NFC's ultra-low power profile. Therefore, picoRing dual with approximately 0.86 mW on the ring side can last approximately 100 continuous hours on a single charge of the ring's 20 mAh battery. picoRing dual has the potential to offer ubiquitous finger input for everyday AR interaction.",
+    "status": "found"
+  },
+  "2609.13161": {
+    "arxiv_id": "2609.13161",
+    "title": "PDD: Unleashing Economical and Flexible Heterogeneous LLM Inference via Cross-Datacenter Prefill-Decode Disaggregation",
+    "authors": [
+      "Yida Wang",
+      "Xiuhong Li",
+      "Jianping Ma",
+      "Gan Sun",
+      "Yunshen Xu",
+      "Buhe Han",
+      "Jingxu Ng",
+      "Yuhao Luo",
+      "Ke Hong",
+      "Guohao Dai",
+      "Boxun Li",
+      "Yu Wang"
+    ],
+    "submission_date": "2026-07-18T08:45:15Z",
+    "latest_updated": "2026-07-18T08:45:15Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13161v1"
+    ],
+    "abstract": "Interconnecting geographically dispersed clusters over wide-area Ethernet provides a scalable and cost-effective alternative to dedicated intra-datacenter heterogeneous clusters for Large Language Model (LLM) inference. However, this cross-datacenter disaggregation imposes heavy KV-cache transfers between clusters, causing substantial Time-to-First-Token (TTFT) latency, which is especially detrimental for agentic workloads characterized by long contexts, high cache hit rates, and short outputs. We propose PDD, a three-tier disaggregation architecture built upon prefill-decode (PD) disaggregation, consisting of Prefill, RelayDecode (RLD), and MainDecode (MD) instances. On Cluster A, Prefill instances perform the prefill computation, while RLD instances immediately receive the KV cache via high-speed RDMA and begin decoding, thereby overlapping the KV transfer to Cluster B over TCP-based Ethernet. MD instances on Cluster B receive the KV cache along with the tokens produced by RLD, and decoding is then seamlessly handed off from RLD to MD for completion. To maximize overall efficiency, PDD employs three core mechanisms: Decode-side RadixCache to alleviate bandwidth bottlenecks, an Extend-Decode Handoff mechanism for smooth control migration between RLD and MD, and multi-stage pipeline orchestration to manage complex inter-tier dependencies under high concurrency and long-term serving. We further design a low-cost, fine-grained heterogeneous deployment scheme that maximizes latency-masking efficiency at marginal cost. Compared to the intra-DC homogeneous PD baseline, PDD's cross-datacenter mapping of compute-intensive H100s and memory-bandwidth-optimized H200s achieves a Benefit-Cost Ratio (BCR) up to 37.5% higher in SLA-compliant goodput.",
+    "status": "found"
+  },
+  "2609.13162": {
+    "arxiv_id": "2609.13162",
+    "title": "The Landscape of Misinformation Literacy Games: A Systematic Mapping Review of Game Designs and Evaluation Practices",
+    "authors": [
+      "Omed Abed",
+      "Smi Hinterreiter",
+      "Sijia Guo",
+      "Isao Echizen",
+      "Timo Spinde",
+      "Matteo Große-Kampmann"
+    ],
+    "submission_date": "2026-07-20T08:22:17Z",
+    "latest_updated": "2026-07-20T08:22:17Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13162v1"
+    ],
+    "abstract": "This systematic mapping review examines 54 gamified interventions aimed at combating misinformation. We analyze the theoretical frameworks, game design, and media contexts of academic and non-academic games. The results indicate a field dominated by web-based simulations and trivia formats. While psychological inoculation is a prominent theoretical framework in the field, most interventions prioritize content-discernment tasks over proactive prebunking strategies. We identify systematic gaps in the identified games. Current interventions remain largely text-centric, focusing on news articles and text-based content, despite the growing use of audiovisual content (e.g., short videos) in the digital landscape. We conclude our study by discussing implications for addressing the evolving, multimodal nature of potentially misleading content using gamified interventions.",
+    "status": "found"
+  },
+  "2609.13163": {
+    "arxiv_id": "2609.13163",
+    "title": "The Fuzzy-Sphere as a Black Hole in the IKKT Matrix Model: An Assessment",
+    "authors": [
+      "Koichiro Matsumoto"
+    ],
+    "submission_date": "2026-07-20T20:55:50Z",
+    "latest_updated": "2026-09-20T02:06:11Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2609.13163v1",
+      "2609.13163v2"
+    ],
+    "abstract": "Black-hole thermodynamics has been reproduced with remarkable success from the BFSS matrix model, but the corresponding test in the closely related IKKT matrix model has awaited its recently proposed finite-temperature formulation, within which we investigate this correspondence. Introducing a cubic Myers term, we compute the complete one-loop thermodynamics -- free energy, internal energy, entropy, and heat capacity -- of a fuzzy $S^2$ background, and compare against the D0 and D2 black holes as the closest available reference points, since no gravitational dual is known for this specific background. At fixed Myers coupling, the leading entropy exhibits an $O(N^3)$ scaling rather than the $O(N^2)$ behavior characteristic of conventional black holes. Holding the physical radius fixed instead yields a genuine $O(N^2)$ scaling, showing that the power of $N$ depends on the large-$N$ prescription and is therefore not by itself an unambiguous test of a black-hole interpretation. We further find no intrinsic Hawking temperature -- only a characteristic scale -- and a heat capacity that is negative at low temperature but positive at high temperature. The absence of an intrinsic Hawking temperature, tied to the missing gravitational dual rather than to the choice of large-$N$ prescription, persists in either scaling limit. Rather than establishing a black-hole interpretation of the finite-temperature IKKT matrix model, these results provide a quantitative benchmark against which future analytical, numerical, and holographic investigations can be tested.",
+    "status": "found"
+  },
+  "2609.13164": {
+    "arxiv_id": "2609.13164",
+    "title": "Yeah, I Can Play That - Aesthetic Education in Kindergarten Using a Social Robot",
+    "authors": [
+      "Sinje Eggers",
+      "Thomas Sievers"
+    ],
+    "submission_date": "2026-07-21T05:20:09Z",
+    "latest_updated": "2026-07-21T05:20:09Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13164v1"
+    ],
+    "abstract": "There have been numerous attempts to investigate the potential of social robots for education in the field of child-robot interaction (cHRI). However, empirically based models for the integration of robot technologies into aesthetic education in early childhood, especially in music education, are rare. Our approach is based on a design-based research methodology (DBR) to investigate how a social robot can help promote the creative potential of young children, act as a supportive element, and enrich musical experiences. We therefore brought the social robot Pepper to a daycare facility for children as a companion for musical activities. Preliminary findings suggest that the robot's physical presence can influence attention, participation, and co-creative interaction. Given the limited data and the exploratory design approach, these results primarily serve to generate design hypotheses for subsequent iterations. In contrast to existing work, which predominantly addresses instructional or language-based learning processes, our approach focuses on co-creative musical interaction in the context of aesthetic education and audiation.",
+    "status": "found"
+  },
+  "2609.13165": {
+    "arxiv_id": "2609.13165",
+    "title": "User-Side Contextual Phenomena in Long-Term Human-AI Interaction",
+    "authors": [
+      "Zon Rzvn"
+    ],
+    "submission_date": "2026-07-21T08:28:48Z",
+    "latest_updated": "2026-07-21T08:28:48Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13165v1"
+    ],
+    "abstract": "Current assessments of conversational AI focus mainly on model outputs, including hallucinations and factual errors. These measures matter, but this paper examines risks that may form on the user side during long and repeated interaction. The study follows one user across nearly four thousand conversations with the same system over twenty months. The user gradually interpreted the system as having memory, care, judgment, and authority, and reorganized part of their thinking around it. A single response may show no clear problem, while long and frequent interaction can still create another layer of risk. This paper calls that layer User-Side Contextual Phenomena (USCP) and examines records from August 2024 to April 2026. The study uses an exploratory single-case longitudinal qualitative design with autoethnographic positioning. A hybrid deductive-reflexive thematic approach organizes the material into three main modes: contextual projection, contextual attachment, and contextual authority transfer. The paper does not estimate prevalence, make diagnoses, or validate an instrument. It offers a non-clinical vocabulary and four evidence roles: inclusion, gray-zone, negative, and protective gray-zone. Its central claim is that an acceptable response on its own does not establish safety across a series of conversations. User-side risk can still form during long-term interaction.",
+    "status": "found"
+  },
+  "2609.13166": {
+    "arxiv_id": "2609.13166",
+    "title": "NPU Hardware Evaluation v1.0",
+    "authors": [
+      "Davide Baltieri",
+      "Tobia Peruzzi"
+    ],
+    "submission_date": "2026-07-22T15:26:17Z",
+    "latest_updated": "2026-07-22T15:26:17Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13166v1"
+    ],
+    "abstract": "AI inference in production settings is becoming the dominant cost line in enterprise AI. The AI inference market is projected to grow from $87B in 2024 to $349B by 2032 (18.9% CAGR). Neural Processing Units (NPUs), chips built specifically for AI inference, are emerging as a compelling alternative to GPU-only architectures, with 35-70% lower power consumption at comparable throughput. This white paper systematically evaluates ten edge AI inference accelerators across three hardware categories: ASIC NPUs (Hailo-8, Hailo-10H, Axelera Metis, Axelera Europa, EdgeCortix Sakura II), SoC DSPs (SiMa MLSoC, Qualcomm QCS6490, QCS8550), and integrated NPUs (Intel Lunar Lake, AMD XDNA2), benchmarked against an NVIDIA RTX A5000 with TensorRT as a production-grade baseline. Twelve reference models spanning convolutional, mobile and transformer architectures are used as a consistent benchmark suite. Results are analysed for throughput, latency, model compatibility, power efficiency, SDK maturity and product lifecycle.",
+    "status": "found"
+  },
+  "2609.13167": {
+    "arxiv_id": "2609.13167",
+    "title": "Code in Space: How Multimodal Human-AI Experience Can Reshape the Future of Tech Creation",
+    "authors": [
+      "Ilya Zakharov",
+      "Ekaterina Koshchenko",
+      "Agnia Sergeyuk"
+    ],
+    "submission_date": "2026-07-22T15:41:49Z",
+    "latest_updated": "2026-07-22T15:41:49Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13167v1"
+    ],
+    "abstract": "Advances in artificial intelligence (AI) continue to reshape digital product development, yet the day-to-day tools for developers and designers remain bound to flat screens and 2D inputs. The intersection of AI and Extended Reality (AI-XR) introduces powerful multimodal interaction channels, such as gaze, motion, or spatial computing, that can enrich the existing Human-AI experience. A critical challenge for utilizing this multimodal opportunities lies in the understanding of how to combine these elements into a cohesive, high-level creative environment. Our study maps this territory through a thematic analysis of semi-structured interviews with 13 AI-XR experts. Categorizing over 150 topics through thematic analysis, we outline five core dimensions of this evolving landscape: professional creation, AI as a contextual layer, new interaction paradigms, adoption frictions, and ethics and human position. Our analysis reveals that besides the critical hardware constraints, the future of AI-XR for tech creation is dependent on addressing human cognitive limits. Ultimately, succeeding in the new multimodal Human-AI experience paradigm requires moving past flat-screen metaphors to design new types of interactions that selectively manage human attention while protecting user agency.",
+    "status": "found"
+  },
+  "2609.13168": {
+    "arxiv_id": "2609.13168",
+    "title": "A Cross Community Agenda for Speech AI",
+    "authors": [
+      "Maria Teleki",
+      "Kimi Wenzel",
+      "Anna Seo Gyeong Choi",
+      "Tobias Weinberg",
+      "Shree Harsha Bokkahalli Satish",
+      "Stephanny Sanchez",
+      "Belu Ticona",
+      "Ariadna Sanchez",
+      "Yash Sonkar",
+      "Aarti Mathur",
+      "Christoph Minixhofer",
+      "Abraham Glasser",
+      "Raja Kushalnagar",
+      "James Caverlee",
+      "Minha Lee",
+      "Shaomei Wu",
+      "Alyssa Hillary Zisk",
+      "Éva Székely",
+      "Dylan Gaines",
+      "Angelika Seeschaaf Veres",
+      "Seray Ibrahim",
+      "Nicholas Cummins",
+      "Allison Koenecke"
+    ],
+    "submission_date": "2026-07-22T22:22:30Z",
+    "latest_updated": "2026-07-22T22:22:30Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13168v1"
+    ],
+    "abstract": "Speech AI, any AI system that recognizes, transforms, or generates speech, is built and evaluated across two communities with only a small overlap: technical natural language processing (NLP) venues (e.g., ACL, ICASSP, Interspeech), and sociotechnical HCI venues (e.g., ASSETS, CHI, FAccT). In this position paper, we work toward a cross-community synthesis, organizing our critique around three problems: speech AI operates with an incomplete model of communication; it operates with an incomplete model of identity; and its metrics measure the wrong constructs. We draw on AAC as a setting where these failures are most visible and their stakes highest, alongside other underserved speakers - people who stutter, multilingual speakers, and non-binary and transgender users. For each problem we offer solution sketches oriented toward designing for human variability, nearly all of which require quantitative and qualitative methods in combination. We close on the venue structures that hold these methods apart, and on what program committees and individual authors can do to bring them together.",
+    "status": "found"
+  },
+  "2609.13169": {
+    "arxiv_id": "2609.13169",
+    "title": "Programming Spintronic Reservoir Computing",
+    "authors": [
+      "Yuichiro Terasaki",
+      "Yusuke Imai",
+      "Jason Z. Kim",
+      "Kohei Nakajima"
+    ],
+    "submission_date": "2026-07-23T01:51:34Z",
+    "latest_updated": "2026-07-23T01:51:34Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13169v1"
+    ],
+    "abstract": "We present a programming framework for a spintronic reservoir computer (RC) that maps prescribed input-output relationships directly onto the readout layer, bypassing conventional data-driven black-box approaches. Our spintronic RC is based on magnetoresistive random-access memory and exploits magnetization dynamics for computation. We introduce a general metric that quantifies the system's programmability and reveals how the governing equations and system parameters constrain the class of realizable functions. We then construct externally controllable readout layers by exploiting the explicit parameter dependence of the prescribed equations. This metric and construction enable programming explicit functions on the spintronic RC, indicating a potential route to in-memory computing. Our demonstrations include neural-network emulation, bifurcation embedding, and a Newton solver for fifth-order algebraic equations. In addition, we prove the universal approximation property of the spintronic RC in the limit of infinite system size and input duration, and show its consistency with programmability.",
+    "status": "found"
+  },
+  "2609.13170": {
+    "arxiv_id": "2609.13170",
+    "title": "A Lifecycle Cost Analysis of Smart-Contract-Coordinated Federated Learning Marketplaces",
+    "authors": [
+      "Luan Mantegazine",
+      "Luiza Leidemer",
+      "Claudio Geyer"
+    ],
+    "submission_date": "2026-07-23T13:19:21Z",
+    "latest_updated": "2026-07-23T13:19:21Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13170v1"
+    ],
+    "abstract": "Blockchain-enabled Federated Learning (FL) marketplaces enable collaborative model training among mutually distrustful participants through smart contracts. Although numerous architectures exist, their economic evaluation is typically limited to isolated blockchain operations rather than the complete marketplace lifecycle. Consequently, it remains unclear whether operational costs depend on operating at scale. This paper presents an experimental study of the operational cost of a DAO-governed marketplace. Our evaluation decomposes the gas consumption of every blockchain operation throughout the contract lifecycle, performs ablation experiments to isolate the impact of on-chain coordination and IPFS storage on federated training, and derives an analytical model describing the amortization of deployment costs. Results show the lifecycle of a single training task consumes approximately 3.8 million gas units per hired trainer. The average cost per training round reaches its amortization knee - defined as twice the asymptotic recurring cost - after approximately 20 communication rounds. Moreover, integrating smart contracts and IPFS preserves model performance, achieving accuracy comparable to conventional FL deployments. These findings demonstrate that smart-contract-coordinated FL marketplaces exhibit an amortizing cost structure not because on-chain operations are inexpensive, but because recurring costs are one to two orders of magnitude smaller than fixed deployment costs, thereby diluting over the federation's lifetime.",
+    "status": "found"
+  },
+  "2609.13171": {
+    "arxiv_id": "2609.13171",
+    "title": "A derivative-fidelity failure mode in physics-informed neural networks: strengthened benchmark evidence from function-value training",
+    "authors": [
+      "Koji Koyamada"
+    ],
+    "submission_date": "2026-07-25T13:52:51Z",
+    "latest_updated": "2026-07-25T13:52:51Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13171v1"
+    ],
+    "abstract": "Physics-informed neural networks (PINNs) use automatic differentiation to impose differential-equation residuals, but good agreement in function values does not necessarily imply accurate derivatives. This paper formulates derivative fidelity as a failure mode of PINNs and tests it with one-dimensional benchmarks. Multilayer perceptrons are trained only on function values for sin(x) and exp(x), while second derivatives obtained by automatic differentiation are evaluated separately. The hypothesis is strengthened by additional tests over training-point density, activation functions, endpoint-dense evaluation, and both L2 and maximum-error diagnostics. The results show that visually accurate function approximation can coexist with substantially larger second-derivative errors, especially near high-curvature boundary regions. The experiment provides a diagnostic protocol for distinguishing value accuracy from physics-residual reliability.",
+    "status": "found"
+  },
+  "2609.13172": {
+    "arxiv_id": "2609.13172",
+    "title": "Still searching for an (un)stable equilibrium: visualising the process of training generative neural networks without data",
+    "authors": [
+      "Terence Broad"
+    ],
+    "submission_date": "2026-07-27T10:18:47Z",
+    "latest_updated": "2026-07-27T10:18:47Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13172v1"
+    ],
+    "abstract": "(un)stable equilibrium is an ongoing series of works that is based on a practice of training generative neural networks without data. This paper introduces the second series of (un)stable equilibrium works, in which the process of training without data is visualised in a series of video pieces. These works show a generative network attempting to converge to a fixed point that is undefined, caught in an endless, unresolvable search for equilibrium. The video pieces described in this paper guide the viewer toward an understanding of AI through aesthetic experience rather than technical exposition, and strive to give a conceptual understanding of what AI could be, rather than a restatement of what it currently is. This project sits within a broader set of artistic practices that serve as an alternative and critical modes of explainability for AI.",
+    "status": "found"
+  },
+  "2609.13173": {
+    "arxiv_id": "2609.13173",
+    "title": "Read Between the Stickers: Sentiment-Prior Reasoning with Learnable Verbalized Rules for Multimodal Chat Analysis",
+    "authors": [
+      "Zixiang Ni",
+      "Yifei Xu",
+      "Haowen Yang",
+      "Yang Liu",
+      "Ziyang Peng",
+      "Wenlong Li",
+      "Tingting Xin",
+      "Yan Liang",
+      "Yancheng Chen",
+      "Bin Chong",
+      "Yuan Rao"
+    ],
+    "submission_date": "2026-07-27T10:32:57Z",
+    "latest_updated": "2026-07-27T10:32:57Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13173v1"
+    ],
+    "abstract": "Multimodal chat analysis of social media stickers (MCAS) benefits from jointly modeling text and sticker semantics, yet it is inherently challenged by the interference between sentiment and intent recognition. Although existing multi-task approaches achieve competitive performance, they largely ignore this inter-task interference and offer little explicit reasoning about how these two predictions are made. To address this issue, we propose \\textbf{ExCoVer}, an \\textbf{Ex}plicit \\textbf{C}hain-\\textbf{o}f-Thought framework with \\textbf{Ver}balized rules learning that integrates sentiment-prior reasoning with learnable discrimination rules to produce explicit reasoning chains for sentiment and intent predictions. Specifically, ExCoVer consists of two components: (1) Sentiment-Prior Chain-of-Thought (SP-CoT), which detects cross-modal sentiment conflicts and uses the dominant sentiment as a prior to mitigate inter-task interference and narrow the candidate intent space; and (2) Verbalized Rules Learning for Confusing Intent Discrimination (VRLCID), which treats discrimination rules as learnable parameters and optimizes them via learner, optimizer, and regularizer agents to suppress spurious correlations and distinguish confusing intents. Extensive experiments on CSMSA and MSAIRS datasets demonstrate that ExCoVer achieves state-of-the-art performance while providing explicit reasoning chains.",
+    "status": "found"
+  }
+}

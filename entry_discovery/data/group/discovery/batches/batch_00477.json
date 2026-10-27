@@ -1,0 +1,441 @@
+{
+  "2601.22696": {
+    "arxiv_id": "2601.22696",
+    "title": "Bi-MCQ: Reformulating Vision-Language Alignment for Negation Understanding",
+    "authors": [
+      "Tae Hun Kim",
+      "Hyun Gyu Lee"
+    ],
+    "submission_date": "2026-01-30T08:14:45Z",
+    "latest_updated": "2026-01-30T08:14:45Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22696v1"
+    ],
+    "abstract": "Recent vision-language models (VLMs) achieve strong zero-shot performance via large-scale image-text pretraining and have been widely adopted in medical image analysis. However, existing VLMs remain notably weak at understanding negated clinical statements, largely due to contrastive alignment objectives that treat negation as a minor linguistic variation rather than a meaning-inverting operator. In multi-label settings, prompt-based InfoNCE fine-tuning further reinforces easy-positive image-prompt alignments, limiting effective learning of disease absence. To overcome these limitations, we reformulate vision-language alignment as a conditional semantic comparison problem, which is instantiated through a bi-directional multiple-choice learning framework(Bi-MCQ). By jointly training Image-to-Text and Text-to-Image MCQ tasks with affirmative, negative, and mixed prompts, our method implements fine-tuning as conditional semantic comparison instead of global similarity maximization. We further introduce direction-specific Cross-Attention fusion modules to address asymmetric cues required by bi-directional reasoning and reduce alignment interference. Experiments on ChestXray14, Open-I, CheXpert, and PadChest show that Bi-MCQ improves negation understanding by up to 0.47 AUC over the zero-shot performance of the state-of-the-art CARZero model, while achieving up to a 0.08 absolute gain on positive-negative combined (PNC) evaluation. Additionally, Bi-MCQ reduces the affirmative-negative AUC gap by an average of 0.12 compared to InfoNCE-based fine-tuning, demonstrating that objective reformulation can substantially enhance negation understanding in medical VLMs.",
+    "status": "found"
+  },
+  "2601.22697": {
+    "arxiv_id": "2601.22697",
+    "title": "A complex-linear reformulation of Hamilton-Jacobi theory and emergent quantum structure",
+    "authors": [
+      "Yong Zhang"
+    ],
+    "submission_date": "2026-01-30T08:14:55Z",
+    "latest_updated": "2026-04-10T14:05:35Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.22697v1",
+      "2601.22697v2"
+    ],
+    "abstract": "Classical mechanics admits multiple equivalent formulations, from Newton's equations to the variational Lagrange-Hamilton framework and the scalar Hamilton-Jacobi (HJ) theory. In the HJ formulation, classical ensembles evolve through the continuity equation for a real density $ρ= R^{2}$ coupled to Hamilton's principal function $S$. Here we develop a complementary formulation, the Hamilton-Jacobi-Schrödinger (HJS) theory, by embedding the pair $(R,S)$ into a single complex field. Starting from a completely general complex ansatz $ψ= f(R,S)\\, e^{i g(R,S)},$ and imposing two minimal structural requirements, we obtain a unique map $ψ= R\\, e^{iS/κ}\\, $ together with a linear HJS equation whose $|κ| \\to 0$ limit reproduces the HJ formulation exactly. Remarkably, when $\\mathrm{Re}(κ)\\neq 0$, essential features of quantum mechanics, superposition, operator algebra, commutators, the Heisenberg uncertainty principle, Born's rule and unitary evolution, follow naturally as structural consistency conditions. HJS thus provides a unified mathematical viewpoint in which classical and quantum dynamics appear as different limits of a single underlying structure.",
+    "status": "found"
+  },
+  "2601.22698": {
+    "arxiv_id": "2601.22698",
+    "title": "Fluid transport by a single active filament in a three-dimensional two-phase flow",
+    "authors": [
+      "Qian Mao",
+      "Umberto d'Ortona",
+      "Julien Favier"
+    ],
+    "submission_date": "2026-01-30T08:15:33Z",
+    "latest_updated": "2026-01-30T08:15:33Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22698v1"
+    ],
+    "abstract": "Micro-scale cilia play a vital role in mucociliary clearance (MCC) in the human respiratory airways. In this numerical study, we examine fluid transport driven by the active beating of a single filament immersed in a three-dimensional two-phase flow. The cilium is modeled as an elastic filament actuated by a time-varying basal angle. The two-phase flow is resolved using the Shan-Chen model in a lattice Boltzmann solver, while the two-way coupling between the filament and the fluid is treated by the immersed boundary method. Pathological conditions such as cystic fibrosis and chronic obstructive pulmonary disease are associated with drastic alterations of MCC properties, including changes in periciliary layer (PCL) thickness and the viscosity ratio between the PCL and the mucus layer (ML). Here, we systematically investigate the effects of these parameters, along with filament bending stiffness, on the beating pattern and fluid transport. Within the parameter ranges investigated, a moderate PCL thickness and viscosity ratio, together with high bending stiffness, tend to yield higher net flow rate and transport efficiency. The underlying hydrodynamic mechanisms are characterized through analyses of the beating pattern, filament dynamics, energy partition, and flow-field evolution. Two competing mechanisms are identified: the drag-elastic force balance and the viscous diffusion of momentum. Furthermore, quantitative relationships are established between flow rate and beating pattern, expressed in terms of tip amplitude and beating asymmetry.",
+    "status": "found"
+  },
+  "2601.22699": {
+    "arxiv_id": "2601.22699",
+    "title": "Models Know Models Best: Evaluation via Model-Preferred Formats",
+    "authors": [
+      "Joonhak Lee",
+      "Sungmok Jung",
+      "Jongyeon Park",
+      "Jaejin Lee"
+    ],
+    "submission_date": "2026-01-30T08:15:41Z",
+    "latest_updated": "2026-01-30T08:15:41Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22699v1"
+    ],
+    "abstract": "Performance of Large Language Models (LLMs) on multiple-choice tasks differs markedly between symbol-based and cloze-style evaluation formats. The observed discrepancies are systematically attributable to task characteristics: natural language continuation benefits from likelihood scoring, whereas explicit comparison is better suited to symbol-based selection. These trends are consistent across various decoder-based LLMs, indicating model-agnostic effects. To address these inconsistencies, a dynamic format-alignment strategy is introduced that employs a lightweight classifier trained on latent model-preference signals. In contrast to human-designed heuristics, which often degrade performance, this approach uses model-generated signals to determine the optimal format for each problem instance. The proposed method achieves substantial and consistent improvements in zero-shot accuracy across reasoning and knowledge benchmarks, better revealing the models' latent capabilities.",
+    "status": "found"
+  },
+  "2601.22700": {
+    "arxiv_id": "2601.22700",
+    "title": "Slow driving induced multistability and remote synchronization in chaotic Chua's circuit",
+    "authors": [
+      "Tuhin Mahanty",
+      "Ayushi Saxena",
+      "Sangeeta Rani Ujjwal"
+    ],
+    "submission_date": "2026-01-30T08:19:43Z",
+    "latest_updated": "2026-01-30T08:19:43Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22700v1"
+    ],
+    "abstract": "We study the response of Chua's circuit driven by a chaotic signal of variable time-scale. We observe that when the frequency of the drive is significantly lower than that of the response and the driving strength is above a threshold, the Chua's circuit exhibits multiple stable attractors. The features of the attractors change as the driving strength ε increases, for instance the attractors are double-scroll at low ε and are single-scroll when ε is high. We also investigate generalized synchronization(GS) between the drive and the response systems by employing the auxiliary system approach. When the drive is much slower than the response, we observe different scenarios of remote synchronization(RS) between response and auxiliary units. In addition to complete synchrony between response and auxiliary systems indicating GS between drive and response, we notice that the response and auxiliary units can be lag synchronized and can also have correlated trajectories indicating novel forms of RS. The slow drive can induce multistability between these RS states which disappears as the frequency of drive increases and become equivalent to the response Chua's ciruit.",
+    "status": "found"
+  },
+  "2601.22701": {
+    "arxiv_id": "2601.22701",
+    "title": "Best-of-Q: Improving VLM agents with Q-function Action Ranking at Inference",
+    "authors": [
+      "Emilien Biré",
+      "María Santos",
+      "Kai Yuan"
+    ],
+    "submission_date": "2026-01-30T08:22:18Z",
+    "latest_updated": "2026-01-30T08:22:18Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22701v1"
+    ],
+    "abstract": "Vision-Language Models (VLMs) have become powerful backbones for agents to autonomously operate in digital environments like the web and operating systems. However, these models suffer from inadaptability to fast-changing environments like the web, which can be alleviated by fine-tuning requiring expansive model training and data collection. In this work, we introduce a novel paradigm for enhancing agentic VLM policies at inference without policy retraining. Fundamentally, our approach decouples the VLM's role as a high-capacity action proposer from the final action selection mechanism. We keep the VLM policy frozen and use it to generate a set of candidate actions for a given state. Then, a lightweight, offline-trained Q-function reranks these candidates, and the agent executes the action with the highest estimated value. The main contribution is to apply the Q-function directly during inference for immediate policy improvement, and not offline to relabel data for policy retraining. We demonstrate on the academic WebVoyager benchmark that our method significantly boosts agent success rates, improving a Qwen2.5-VL-7B agent from 38.8% to 55.7% and a proprietary GPT-4.1 agent from 82.4% to 88.8%.",
+    "status": "found"
+  },
+  "2601.22702": {
+    "arxiv_id": "2601.22702",
+    "title": "Metric Hub: A metric library and practical selection workflow for use-case-driven data quality assessment in medical AI",
+    "authors": [
+      "Katinka Becker",
+      "Maximilian P. Oppelt",
+      "Tobias S. Zech",
+      "Martin Seyferth",
+      "Sandie Cabon",
+      "Vanja Miskovic",
+      "Ivan Cimrak",
+      "Michal Kozubek",
+      "Giuseppe D'Avenio",
+      "Ilaria Campioni",
+      "Jana Fehr",
+      "Kanjar De",
+      "Ismail Mahmoudi",
+      "Emilio Dolgener Cantu",
+      "Laurenz Ottmann",
+      "Andreas Klaß",
+      "Galaad Altares",
+      "Jackie Ma",
+      "Alireza Salehi M.",
+      "Nadine R. Lang-Richter",
+      "Tobias Schaeffter",
+      "Daniel Schwabe"
+    ],
+    "submission_date": "2026-01-30T08:22:29Z",
+    "latest_updated": "2026-01-30T08:22:29Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22702v1"
+    ],
+    "abstract": "Machine learning (ML) in medicine has transitioned from research to concrete applications aimed at supporting several medical purposes like therapy selection, monitoring and treatment. Acceptance and effective adoption by clinicians and patients, as well as regulatory approval, require evidence of trustworthiness. A major factor for the development of trustworthy AI is the quantification of data quality for AI model training and testing. We have recently proposed the METRIC-framework for systematically evaluating the suitability (fit-for-purpose) of data for medical ML for a given task. Here, we operationalize this theoretical framework by introducing a collection of data quality metrics - the metric library - for practically measuring data quality dimensions. For each metric, we provide a metric card with the most important information, including definition, applicability, examples, pitfalls and recommendations, to support the understanding and implementation of these metrics. Furthermore, we discuss strategies and provide decision trees for choosing an appropriate set of data quality metrics from the metric library given specific use cases. We demonstrate the impact of our approach exemplarily on the PTB-XL ECG-dataset. This is a first step to enable fit-for-purpose evaluation of training and test data in practice as the base for establishing trustworthy AI in medicine.",
+    "status": "found"
+  },
+  "2601.22703": {
+    "arxiv_id": "2601.22703",
+    "title": "DAVIS: OOD Detection via Dominant Activations and Variance for Increased Separation",
+    "authors": [
+      "Abid Hassan",
+      "Tuan Ngo",
+      "Saad Shafiq",
+      "Nenad Medvidovic"
+    ],
+    "submission_date": "2026-01-30T08:23:14Z",
+    "latest_updated": "2026-04-22T22:26:03Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.22703v1",
+      "2601.22703v2"
+    ],
+    "abstract": "Detecting out-of-distribution (OOD) inputs is a critical safeguard for deploying machine learning models in the real world. However, most post-hoc detection methods operate on penultimate feature representations derived from global average pooling (GAP) -- a lossy operation that discards valuable distributional statistics from activation maps prior to global average pooling. We contend that these overlooked statistics, particularly channel-wise variance and dominant (maximum) activations, are highly discriminative for OOD detection. We introduce DAVIS, a simple and broadly applicable post-hoc technique that enriches feature vectors by incorporating these crucial statistics, directly addressing the information loss from GAP. Extensive evaluations show DAVIS sets a new benchmark across diverse architectures, including ResNet, DenseNet, and EfficientNet. It achieves significant reductions in the false positive rate (FPR95), with improvements of 48.26\\% on CIFAR-10 using ResNet-18, 38.13\\% on CIFAR-100 using ResNet-34, and 26.83\\% on ImageNet-1k benchmarks using MobileNet-v2. Our analysis reveals the underlying mechanism for this improvement, providing a principled basis for moving beyond the mean in OOD detection.",
+    "status": "found"
+  },
+  "2601.22704": {
+    "arxiv_id": "2601.22704",
+    "title": "Multi-target DoA estimation with a single Rydberg atomic receiver by spectral analysis of spatially-resolved fluorescence",
+    "authors": [
+      "Liangcheng Han",
+      "Haifan Yin",
+      "Mérouane Debbah"
+    ],
+    "submission_date": "2026-01-30T08:27:03Z",
+    "latest_updated": "2026-01-30T08:27:03Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22704v1"
+    ],
+    "abstract": "Rydberg-based Direction-of-Arrival (DoA) estimation has been hampered by the complexity of receiver arrays and the single-target, narrow-band limitations of existing single-receiver methods. This paper introduces a novel approach that addresses these limitations. We demonstrate that by spatially resolving the fluorescence profile along the vapor cell, the multi-target problem can be effectively solved. Our approach hinges on the insight that by superimposing incoming signals with a strong local oscillator (LO), the complex atomic absorption pattern is linearized into a simple superposition of sinusoids. In this new representation, each spatial frequency uniquely and directly maps to the DoA of a target. This reduces the multi-target challenge into a spectral estimation problem, which we address using Prony's method. Our approach, termed Imaging-based Spectral Estimation (ISE), inherently supports multi-target detection and restores the full broadband capability of the sensor by removing the restrictive cell-length dependency. This development also shows potential for realizing multi-channel Rydberg receivers and the continuous-aperture sensing required for holographic multiple-input multiple-output (MIMO). We develop a comprehensive theoretical model, derive the Cramer-Rao Lower Bound (CRLB) as a performance benchmark, and present simulations validating the effectiveness of the approach to resolve multiple targets.",
+    "status": "found"
+  },
+  "2601.22705": {
+    "arxiv_id": "2601.22705",
+    "title": "CONCUR: High-Throughput Agentic Batch Inference of LLM via Congestion-Based Concurrency Control",
+    "authors": [
+      "Qiaoling Chen",
+      "Zhisheng Ye",
+      "Tian Tang",
+      "Peng Sun",
+      "Boyu Tian",
+      "Guoteng Wang",
+      "Shenggui Li",
+      "Yonggang Wen",
+      "Zhenhua Han",
+      "Tianwei Zhang"
+    ],
+    "submission_date": "2026-01-30T08:27:20Z",
+    "latest_updated": "2026-01-30T08:27:20Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22705v1"
+    ],
+    "abstract": "Batch inference for agentic workloads stresses the GPU key-value (KV) cache in a sustained and cumulative manner, often causing severe throughput degradation well before memory capacity is exhausted. We identify this phenomenon as middle-phase thrashing, a previously under-characterized pathology in which cache efficiency collapses as long-lived agents accumulate state over time. We argue that mitigating this pathology requires moving beyond reactive, request-level cache management to proactive, agent-level admission control. Drawing inspiration from congestion control in distributed systems, we view the KV cache as a shared resource whose efficient utilization depends on feedback-driven regulation. Based on this insight, we present CONCUR, a lightweight control layer that regulates agent admission to bound aggregate cache pressure while preserving execution continuity. CONCUR adapts a cache-aware control algorithm to dynamically adjust the number of active agents using runtime cache signals. Across large models and real-world agent workloads, CONCUR prevents middle-phase thrashing and improves batch inference throughput by up to 4.09x on Qwen3-32B and 1.9x on DeepSeek-V3, while remaining compatible with existing LLM serving systems.",
+    "status": "found"
+  },
+  "2601.22706": {
+    "arxiv_id": "2601.22706",
+    "title": "RealSec-bench: A Benchmark for Evaluating Secure Code Generation in Real-World Repositories",
+    "authors": [
+      "Yanlin Wang",
+      "Ziyao Zhang",
+      "Chong Wang",
+      "Xinyi Xu",
+      "Mingwei Liu",
+      "Yong Wang",
+      "Jiachi Chen",
+      "Zibin Zheng"
+    ],
+    "submission_date": "2026-01-30T08:29:01Z",
+    "latest_updated": "2026-01-30T08:29:01Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22706v1"
+    ],
+    "abstract": "Large Language Models (LLMs) have demonstrated remarkable capabilities in code generation, but their proficiency in producing secure code remains a critical, under-explored area. Existing benchmarks often fall short by relying on synthetic vulnerabilities or evaluating functional correctness in isolation, failing to capture the complex interplay between functionality and security found in real-world software. To address this gap, we introduce RealSec-bench, a new benchmark for secure code generation meticulously constructed from real-world, high-risk Java repositories. Our methodology employs a multi-stage pipeline that combines systematic SAST scanning with CodeQL, LLM-based false positive elimination, and rigorous human expert validation. The resulting benchmark contains 105 instances grounded in real-word repository contexts, spanning 19 Common Weakness Enumeration (CWE) types and exhibiting a wide diversity of data flow complexities, including vulnerabilities with up to 34-hop inter-procedural dependencies. Using RealSec-bench, we conduct an extensive empirical study on 5 popular LLMs. We introduce a novel composite metric, SecurePass@K, to assess both functional correctness and security simultaneously. We find that while Retrieval-Augmented Generation (RAG) techniques can improve functional correctness, they provide negligible benefits to security. Furthermore, explicitly prompting models with general security guidelines often leads to compilation failures, harming functional correctness without reliably preventing vulnerabilities. Our work highlights the gap between functional and secure code generation in current LLMs.",
+    "status": "found"
+  },
+  "2601.22707": {
+    "arxiv_id": "2601.22707",
+    "title": "Deep Learning-Based Early-Stage IR-Drop Estimation via CNN Surrogate Modeling",
+    "authors": [
+      "Ritesh Bhadana"
+    ],
+    "submission_date": "2026-01-30T08:29:45Z",
+    "latest_updated": "2026-01-30T08:29:45Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22707v1"
+    ],
+    "abstract": "IR-drop is a critical power integrity challenge in modern VLSI designs that can cause timing degradation, reliability issues, and functional failures if not detected early in the design flow. Conventional IR-drop analysis relies on physics-based signoff tools, which provide high accuracy but incur significant computational cost and require near-final layout information, making them unsuitable for rapid early-stage design exploration. In this work, we propose a deep learning-based surrogate modeling approach for early-stage IR-drop estimation using a CNN. The task is formulated as a dense pixel-wise regression problem, where spatial physical layout features are mapped directly to IR-drop heatmaps. A U-Net-based encoder-decoder architecture with skip connections is employed to effectively capture both local and global spatial dependencies within the layout. The model is trained on a physics-inspired synthetic dataset generated by us, which incorporates key physical factors including power grid structure, cell density distribution, and switching activity. Model performance is evaluated using standard regression metrics such as Mean Squared Error (MSE) and Peak Signal-to-Noise Ratio (PSNR). Experimental results demonstrate that the proposed approach can accurately predict IR-drop distributions with millisecond-level inference time, enabling fast pre-signoff screening and iterative design optimization. The proposed framework is intended as a complementary early-stage analysis tool, providing designers with rapid IR-drop insight prior to expensive signoff analysis. The implementation, dataset generation scripts, and the interactive inference application are publicly available at: https://github.com/riteshbhadana/IR-Drop-Predictor. The live application can be accessed at: https://ir-drop-predictor.streamlit.app/.",
+    "status": "found"
+  },
+  "2601.22708": {
+    "arxiv_id": "2601.22708",
+    "title": "A Unified Study of LoRA Variants: Taxonomy, Review, Codebase, and Empirical Evaluation",
+    "authors": [
+      "Haonan He",
+      "Jingqi Ye",
+      "Minglei Li",
+      "Zhengbo Wang",
+      "Tao Chen",
+      "Lei Bai",
+      "Peng Ye"
+    ],
+    "submission_date": "2026-01-30T08:30:05Z",
+    "latest_updated": "2026-01-30T08:30:05Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22708v1"
+    ],
+    "abstract": "Low-Rank Adaptation (LoRA) is a fundamental parameter-efficient fine-tuning method that balances efficiency and performance in large-scale neural networks. However, the proliferation of LoRA variants has led to fragmentation in methodology, theory, code, and evaluation. To this end, this work presents the first unified study of LoRA variants, offering a systematic taxonomy, unified theoretical review, structured codebase, and standardized empirical assessment. First, we categorize LoRA variants along four principal axes: rank, optimization dynamics, initialization, and integration with Mixture-of-Experts. Then, we review their relationships and evolution within a common theoretical framework focused on low-rank update dynamics. Further, we introduce LoRAFactory, a modular codebase that implements variants through a unified interface, supporting plug-and-play experimentation and fine-grained analysis. Last, using this codebase, we conduct a large-scale evaluation across natural language generation, natural language understanding, and image classification tasks, systematically exploring key hyperparameters. Our results uncover several findings, notably: LoRA and its variants exhibit pronounced sensitivity to the choices of learning rate compared to other hyperparameters; moreover, with proper hyperparameter configurations, LoRA consistently matches or surpasses the performance of most of its variants.",
+    "status": "found"
+  },
+  "2601.22709": {
+    "arxiv_id": "2601.22709",
+    "title": "Gated Relational Alignment via Confidence-based Distillation for Efficient VLMs",
+    "authors": [
+      "Yanlong Chen",
+      "Amirhossein Habibian",
+      "Luca Benini",
+      "Yawei Li"
+    ],
+    "submission_date": "2026-01-30T08:30:52Z",
+    "latest_updated": "2026-06-26T03:01:44Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 5,
+    "versions": [
+      "2601.22709v1",
+      "2601.22709v2",
+      "2601.22709v3",
+      "2601.22709v4",
+      "2601.22709v5"
+    ],
+    "abstract": "Vision-Language Models (VLMs) achieve strong multimodal performance but are costly to deploy, and post-training quantization often causes significant accuracy loss. Despite its potential, quantization-aware training for VLMs remains underexplored. We propose GRACE, a framework unifying knowledge distillation and QAT under the Information Bottleneck principle: quantization constrains information capacity while distillation guides what to preserve within this budget. Treating the teacher as a proxy for task-relevant information, we introduce confidence-gated decoupled distillation to filter unreliable supervision, relational centered kernel alignment to transfer visual token structures, and an adaptive controller via Lagrangian relaxation to balance fidelity against capacity constraints. Across extensive benchmarks on LLaVA and Qwen families, our INT4 models consistently outperform FP16 baselines (e.g., LLaVA-1.5-7B: 70.1 vs. 66.8 on SQA; Qwen2-VL-2B: 76.9 vs. 72.6 on MMBench), nearly matching teacher performance. Using real INT4 kernel, we achieve 3$\\times$ throughput with 54% memory reduction. This principled framework significantly outperforms existing quantization methods, making GRACE a compelling solution for resource-constrained deployment. Code and data are available at: https://github.com/ForeverBlue816/GRACE.",
+    "status": "found"
+  },
+  "2601.22710": {
+    "arxiv_id": "2601.22710",
+    "title": "AlienLM: Alienization of Language for API-Boundary Privacy in Black-Box LLMs",
+    "authors": [
+      "Jaehee Kim",
+      "Pilsung Kang"
+    ],
+    "submission_date": "2026-01-30T08:32:32Z",
+    "latest_updated": "2026-07-02T13:34:49Z",
+    "revised_dates": null,
+    "venue": "ICML 2026",
+    "latest_version": 2,
+    "versions": [
+      "2601.22710v1",
+      "2601.22710v2"
+    ],
+    "abstract": "Modern LLMs are increasingly accessed via black-box APIs, requiring users to transmit sensitive prompts, outputs, and fine-tuning data to external providers, creating a critical privacy risk at the API boundary. We introduce AlienLM, a deployable API-only \\cradd{exposure-reduction layer that reduces plaintext exposure} by translating text into an Alien Language via a vocabulary-scale bijection, enabling lossless recovery on the client side. Using only standard fine-tuning APIs, Alien Adaptation Training (AAT) adapts target models to operate directly on alienized inputs. Across four LLM backbones and seven benchmarks, AlienLM retains over 81\\% of plaintext-oracle performance on average, substantially outperforming random-bijection and character-level baselines. Under adversaries with access to model weights, corpus statistics, and learning-based inverse translation, recovery attacks reconstruct fewer than 0.22\\% of alienized tokens. Our results demonstrate a practical pathway for \\cradd{privacy-aware} LLM deployment under API-only access, substantially reducing plaintext exposure while maintaining task performance. Code and data are available at https://github.com/KimJaehee0725/AlienLM.",
+    "status": "found"
+  },
+  "2601.22711": {
+    "arxiv_id": "2601.22711",
+    "title": "SQUAD: Scalable Quorum Adaptive Decisions via ensemble of early exit neural networks",
+    "authors": [
+      "Matteo Gambella",
+      "Fabrizio Pittorino",
+      "Giuliano Casale",
+      "Manuel Roveri"
+    ],
+    "submission_date": "2026-01-30T08:32:33Z",
+    "latest_updated": "2026-01-30T08:32:33Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22711v1"
+    ],
+    "abstract": "Early-exit neural networks have become popular for reducing inference latency by allowing intermediate predictions when sufficient confidence is achieved. However, standard approaches typically rely on single-model confidence thresholds, which are frequently unreliable due to inherent calibration issues. To address this, we introduce SQUAD (Scalable Quorum Adaptive Decisions), the first inference scheme that integrates early-exit mechanisms with distributed ensemble learning, improving uncertainty estimation while reducing the inference time. Unlike traditional methods that depend on individual confidence scores, SQUAD employs a quorum-based stopping criterion on early-exit learners by collecting intermediate predictions incrementally in order of computational complexity until a consensus is reached and halting the computation at that exit if the consensus is statistically significant. To maximize the efficacy of this voting mechanism, we also introduce QUEST (Quorum Search Technique), a Neural Architecture Search method to select early-exit learners with optimized hierarchical diversity, ensuring learners are complementary at every intermediate layer. This consensus-driven approach yields statistically robust early exits, improving the test accuracy up to 5.95% compared to state-of-the-art dynamic solutions with a comparable computational cost and reducing the inference latency up to 70.60% compared to static ensembles while maintaining a good accuracy.",
+    "status": "found"
+  },
+  "2601.22712": {
+    "arxiv_id": "2601.22712",
+    "title": "Parametric vector flows for registration fields in bounded domains with applications to nonlinear interpolation of shock-dominated flows",
+    "authors": [
+      "Jon Labatut",
+      "Jean-Baptiste Chapelier",
+      "Angelo Iollo",
+      "Tommaso Taddei"
+    ],
+    "submission_date": "2026-01-30T08:35:11Z",
+    "latest_updated": "2026-01-30T08:35:11Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22712v1"
+    ],
+    "abstract": "We present a registration procedure for parametric model order reduction (MOR) in two- and three-dimensional bounded domains. In the MOR framework, registration methods exploit solution snapshots to identify a parametric coordinate transformation that improves the approximation of the solution set through linear subspaces. For each training parameter, optimization-based (or variational) registration methods minimize a target function that measures the alignment of the coherent structures of interest (e.g., shocks, shear layers, cracks) for different parameter values, over a family of bijections of the computational domain $Ω$. We consider diffeomorphisms $Φ$ that are vector flows of given velocity fields $v$ with vanishing normal component on $\\partial Ω$; we rely on a sensor to extract appropriate point clouds from the solution snapshots and we develop an expectation-maximization procedure to simultaneously solve the point cloud matching problem and to determine the velocity $v$ (and thus the bijection $Φ$); finally, we combine our registration method with the nonlinear interpolation technique of [Iollo, Taddei, J. Comput. Phys., 2022] to perform accurate interpolations of fluid dynamic fields in the presence of shocks. Numerical results for a two-dimensional inviscid transonic flow past a NACA airfoil and a three-dimensional viscous transonic flow past an ONERA M6 wing illustrate the many elements of the methodology and demonstrate the effectiveness of nonlinear interpolation for shock-dominated fields.",
+    "status": "found"
+  },
+  "2601.22713": {
+    "arxiv_id": "2601.22713",
+    "title": "Hybrid MCP-PMT characterisation on a testbeam with Cherenkov setup",
+    "authors": [
+      "G. Romolini",
+      "J. Alozy",
+      "R. Ballabriga",
+      "N. V. Biesuz",
+      "R. Bolzonella",
+      "M. Campbell",
+      "G. Cavallero",
+      "V. Cavallini",
+      "A. Cotta Ramusino",
+      "M. Fiorini",
+      "E. Franzoso",
+      "M. Guarise",
+      "X. Llopart Cudie",
+      "A. Saputi",
+      "D. Vincenzi"
+    ],
+    "submission_date": "2026-01-30T08:37:03Z",
+    "latest_updated": "2026-01-30T08:37:03Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22713v1"
+    ],
+    "abstract": "A novel photodetector based on a MCP-PMT vacuum tube with encapsulated CMOS ASIC has been tested at the CERN SPS high energy hadron beam, allowing single photon Cherenkov detection operating at 10$^4$ gain and with timing resolution of about 280~ps.",
+    "status": "found"
+  },
+  "2601.22714": {
+    "arxiv_id": "2601.22714",
+    "title": "Vision-Language Models Unlock Task-Centric Latent Actions",
+    "authors": [
+      "Alexander Nikulin",
+      "Ilya Zisman",
+      "Albina Klepach",
+      "Denis Tarasov",
+      "Alexander Derevyagin",
+      "Andrei Polubarov",
+      "Lyubaykin Nikita",
+      "Vladislav Kurenkov"
+    ],
+    "submission_date": "2026-01-30T08:38:59Z",
+    "latest_updated": "2026-01-30T08:38:59Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22714v1"
+    ],
+    "abstract": "Latent Action Models (LAMs) have rapidly gained traction as an important component in the pre-training pipelines of leading Vision-Language-Action models. However, they fail when observations contain action-correlated distractors, often encoding noise instead of meaningful latent actions. Humans, on the other hand, can effortlessly distinguish task-relevant motions from irrelevant details in any video given only a brief task description. In this work, we propose to utilize the common-sense reasoning abilities of Vision-Language Models (VLMs) to provide promptable representations, effectively separating controllable changes from the noise in unsupervised way. We use these representations as targets during LAM training and benchmark a wide variety of popular VLMs, revealing substantial variation in the quality of promptable representations as well as their robustness to different prompts and hyperparameters. Interestingly, we find that more recent VLMs may perform worse than older ones. Finally, we show that simply asking VLMs to ignore distractors can substantially improve latent action quality, yielding up to a six-fold increase in downstream success rates on Distracting MetaWorld.",
+    "status": "found"
+  },
+  "2601.22715": {
+    "arxiv_id": "2601.22715",
+    "title": "Apsidal motion and TESS light curves of two southern eclipsing binaries with high eccentricity: V1647 Sgr and V2283 Sgr",
+    "authors": [
+      "Marek Wolf",
+      "Petr Zasche",
+      "Miloslav Zejda",
+      "Martin Mašek"
+    ],
+    "submission_date": "2026-01-30T08:44:10Z",
+    "latest_updated": "2026-01-30T08:44:10Z",
+    "revised_dates": null,
+    "venue": "A&A 707, A205 (2026)",
+    "latest_version": 1,
+    "versions": [
+      "2601.22715v1"
+    ],
+    "abstract": "The study of apsidal motion rates in eccentric eclipsing binaries provides an important observational test of theoretical models of stellar structure and evolution. Precise physical parameters of the stellar components together with systematic measurements of the periastron advance are needed. We present new results of our long-term observational project to analyze the apsidal motion in early-type eccentric eclipsing binaries. New ground and space-based photometric data were obtained, and archival spectroscopic measurements were used in this study of two detached southern-hemisphere eclipsing binaries: V1647 Sgr (P=3.28 d, e=0.41), and V2283 Sgr (3.47, 0.49). Their TESS observations in four sectors have also been included and the corresponding light curves were solved using the Phoebe code. The newly completed O-C diagrams were analyzed using all reliable timings found in the literature and calculated using the TESS light curves. New or improved values were obtained for the elements of apsidal motion. Using archival spectroscopy for V1647 Sgr, the precise absolute parameters were improved: M1 = 2.184(0.035) M$_\\odot$, M2 = 1.957(0.035) M$_\\odot$, and R1 = 1.839(0.015) R$_\\odot$, R2 = 1.716(0.015) R$_\\odot$. For V2283 Sgr the absolute dimensions were newly estimated: M1 = 2.178(0.10) M$_\\odot$, M2 = 1.547(0.10) M$_\\odot$, and R1 = 1.796(0.01) R$_\\odot$, R2 = 1.544(0.01) R$_\\odot$. We improved relatively long periods of apsidal motion of about 580 and 530 years, together with the corresponding internal structure constants, log k2, -2.394, and -2.418, for V1647 Sgr and V2283 Sgr, respectively. The relativistic contribution to apsidal motion is not negligible, making about 12 resp. 14% of the total rate of apsidal motion. No signs of the presence of an additional body were revealed in the light curves or in the O-C diagrams of both eccentric systems.",
+    "status": "found"
+  }
+}

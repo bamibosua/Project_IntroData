@@ -1,0 +1,374 @@
+{
+  "2609.14934": {
+    "arxiv_id": "2609.14934",
+    "title": "Cross-Block Conditioning in Deep Boltzmann Machines for Statistical Data Fusion",
+    "authors": [
+      "Junichiro Niimi"
+    ],
+    "submission_date": "2026-09-14T02:26:16Z",
+    "latest_updated": "2026-09-16T11:39:41Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2609.14934v1",
+      "2609.14934v2"
+    ],
+    "abstract": "Statistical data fusion combines two panels that share a block of covariates but observe disjoint outcome blocks, and in its traditional form no row observes both outcomes at once. That rules out the discriminative criterion one would rather train a Deep Boltzmann Machine with, since multi-prediction training needs ground truth for whatever it holds out. We propose observed-block multi-prediction, which restricts the multi-prediction objective to targets drawn from what each row actually observes. It is well defined for any missingness pattern and reduces to the original criterion when rows are complete. Having a discriminative criterion that survives the setting lets us ask whether the joint model is needed at all, by separating what it contributes into a representation part and an inference part. On two datasets of different kinds, a consumer purchase panel and public-domain census microdata, over grids in sample size and covariate width spanning 40 cells and 200 runs per method, almost none of the fine-tuned DBM's advantage comes from generative pre-training, which is confined to the smallest sample size on one dataset and absent on the other. It comes from conditioning on one outcome block when predicting the other. This term amounts to +0.19 and +0.36 percentage points, is positive in all 40 cells, never decays as the panels grow (it is flat on one dataset and grows on the other), and requires neither a second hidden layer nor more inference. Against baselines tuned on validation and given the same conditioning, the fine-tuned DBM is the best method in 37 of the 40 cells. The imputers that can also condition on the other outcome block mostly lose accuracy when they do, whereas the DBM gains in every cell; since fusion data cannot validate that choice, this is the property that matters.",
+    "status": "found"
+  },
+  "2609.14935": {
+    "arxiv_id": "2609.14935",
+    "title": "Exact Feasibility Certification and Optimal Responsibility Allocation for Multi-Robot CBF Safety Filters",
+    "authors": [
+      "Chandan Kumar Sah",
+      "Jishnu Keshavan"
+    ],
+    "submission_date": "2026-09-14T02:29:38Z",
+    "latest_updated": "2026-09-14T02:29:38Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14935v1"
+    ],
+    "abstract": "Multi-robot Control Barrier Function (CBF) safety filters can become infeasible, but a failed quadratic program (QP) does not indicate why the conflict occurred or how to resolve it. To address this, we develop an exact feasibility certificate for multi-agent CBF filters with heterogeneous control-affine dynamics and convex input sets. The certificate quantifies a feasibility reserve by separating the demand imposed by safety constraints from the available actuator supply. This decomposition shows when CBF gain tuning or increased actuation can and cannot resolve infeasibility, and identifies the agents and interactions responsible for the conflict. We further propose an algorithm to optimally allocate shared safety constraints by maximizing the worst local feasibility margin, yielding a linear program for polyhedral input sets. In $320$ paired closed-loop simulations, the proposed allocation reduces infeasible control steps from roughly $50\\%$ to $6.2\\%$, and reduces safety-violating runs from $118/160$ to $24/160$. In addition, across $52$ infeasibility events, the certificate identifies an interaction whose relaxation restores feasibility in $94\\%$ of cases.",
+    "status": "found"
+  },
+  "2609.14936": {
+    "arxiv_id": "2609.14936",
+    "title": "Comparing Trajectories from Positions Alone: Curvature-Based Time Alignment and Drift Error Metric",
+    "authors": [
+      "Effie Daum",
+      "Daniele De Martini",
+      "Claire Dune",
+      "François Pomerleau"
+    ],
+    "submission_date": "2026-09-14T02:30:33Z",
+    "latest_updated": "2026-09-14T02:30:33Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14936v1"
+    ],
+    "abstract": "In field robotics, acquiring independent large-scale reference trajectories more accurate than the evaluated estimates remains an open challenge. The domain is widely reliant on Absolute Trajectory Error (ATE) and Relative Pose Error (RPE), computed with automated tools, that rest on assumptions and evaluation parameters rarely made explicit. When unreported, the errors can be misleading and hinder fair comparisons. This paper introduces a trajectory-evaluation protocol for standardized and reliable accuracy assessment in state estimation, localization, and Simultaneous Localization And Mapping (SLAM). The approach combines a novel temporal alignment method based on curvature signals with an error metric normalized by travelled distance. We explicitly account for temporal synchronization, sampling alignment, and extrinsic calibration, quantifying their influence through a sensitivity analysis. The proposed protocol contributes to more rigorous, reproducible, and standardized trajectory evaluation.",
+    "status": "found"
+  },
+  "2609.14937": {
+    "arxiv_id": "2609.14937",
+    "title": "Entanglement free Metrology Exploiting Multimode Hong Ou Mandel Sensor Advantage",
+    "authors": [
+      "Qian Li",
+      "Jianning Han"
+    ],
+    "submission_date": "2026-09-14T02:31:57Z",
+    "latest_updated": "2026-09-19T00:51:57Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2609.14937v1",
+      "2609.14937v2"
+    ],
+    "abstract": "The Hong-Ou-Mandel (HOM) interference in the multimode frequency domain has been explored for precision metrology, with several experimental demonstrations exploiting its robustness against dispersion and phase noise, as well as its large dynamic range and compatibility with fragile samples. Conventional multimode HOM metrology exploits frequency-entangled states, which naturally satisfy bosonic exchange symmetry under any centered symmetric joint spectral distribution, to provide these advantages. However, these entangled states are typically generated via spontaneous parametric down-conversion (SPDC), requiring strong pump lasers that hinder practical implementation. In this paper, we employ frequency product states, which do not possess entanglement or path-mode exchange symmetry, as the probe state and post-select measurement outcomes exhibiting frequency anti-correlation. Our results demonstrate that these advantages,peak narrowing, dispersion cancellation, phase-noise immunity, a large dynamic range, and compatibility with fragile samples, arise neither from entanglement nor from bosonic exchange symmetry, but rather from spectral anti-correlation. We further show that entanglement is not the source of the measurement precision: the entanglement-free approach attains the same quantum Fisher information as the entangled-state scheme, indicating that the fundamental precision limit does not originate from entanglement.",
+    "status": "found"
+  },
+  "2609.14938": {
+    "arxiv_id": "2609.14938",
+    "title": "Burst-mode timing recovery based on fourth-power phase detector for passive optical networks",
+    "authors": [
+      "Ji Zhou",
+      "Haide Wang",
+      "Xiaofeng Zhang",
+      "Zhiyang Liu",
+      "Miao Yu",
+      "Changyuan Yu",
+      "Liangchuan Li",
+      "Xiangjun Xin"
+    ],
+    "submission_date": "2026-09-14T02:32:15Z",
+    "latest_updated": "2026-09-14T02:32:15Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14938v1"
+    ],
+    "abstract": "Driven by the ever-increasing capacity demands, 50G passive optical network (50G-PON) is ready for practical application. It is highly challenging to realize 50GHz burst-mode analog components; therefore, based on 25GHz burst-mode analog devices, burst-mode digital signal processing (DSP) is introduced to achieve the reception and processing of 50Gb/s on-off keying burst signals. To optimize the power consumption and area of the DSP chip, a one-sample-per-symbol (1-SPS) analog-to-digital converter has been applied in 50G-PON. One of the main challenges is implementing burst-mode timing recovery (BM-TR) for the 1-SPS burst signal in 50G-PON. In this paper, we first propose a BM-TR based on the fourth-power phase detector (4PPD) for 50G-PON. We mathematically verify that 4PPD can directly compute the timing phase offset (TPO) from the 1-SPS signal without using training sequences, allowing for immediate BM-TR initialization within 20 cycles to prevent long convergence times. After the initialization, the feedback loop structure tracks the TPO changes based on the sign of 4PPD, the loop filter, and the numerically controlled oscillator. In conclusion, training-sequence-free 4PPD-based BM-TR achieves low burst overhead via fast convergence and is particularly effective for handling burst signals in 50G-PON.",
+    "status": "found"
+  },
+  "2609.14939": {
+    "arxiv_id": "2609.14939",
+    "title": "Weighted ergodic averages along subpolynomials in Hardy fields and applications",
+    "authors": [
+      "Vitaly Bergelson",
+      "Sovanlal Mondal",
+      "Younghwan Son"
+    ],
+    "submission_date": "2026-09-14T02:33:29Z",
+    "latest_updated": "2026-09-14T02:33:29Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14939v1"
+    ],
+    "abstract": "We establish new pointwise convergence results for weighted ergodic averages along sequences of the form \\( (\\lfloor a(n) \\rfloor)_{n \\in \\mathbb{N}}, \\) where $a(x)$ is a subpolynomial function in a Hardy field. For example, we establish pointwise convergence of logarithmic averages along sequences of the form $(\\lfloor n^k + \\log^{c} n \\rfloor)_{n \\in \\mathbb{N}}$, where $k \\in \\mathbb{N} \\cup \\{0\\}$ and $c > 0$. This result should be juxtaposed with the fact that either for $k=0$ or for $k \\geq 2$ and for sufficiently small $c>0$ (depending on $k$), the standard ergodic averages along these sequences fail to converge pointwise. We also obtain pointwise joint ergodicity results for multiple weighted ergodic averages along slow Hardy field functions. For example, it follows from our results that for $c> 0$ and for any $f, g \\in L^{\\infty} (λ)$, \\begin{equation*} \\lim_{N \\rightarrow \\infty} \\frac{1}{\\log N } \\sum_{n=1}^{N} \\frac{1}{n} f(T_b^{\\lfloor \\log^c n \\rfloor}x) \\, g(T_G^{\\lfloor \\log^c n \\rfloor} x) = \\int f \\, d λ\\cdot \\int g \\, d μ_G \\quad \\text{for almost every } x \\in [0,1], \\end{equation*} where $T_b:[0,1] \\rightarrow [0,1]$ is the times-$b$ map defined by $T_b x = bx \\, \\bmod \\, 1 $ and $T_G:[0,1] \\rightarrow [0,1]$ is the Gauss map defined by $T_G(x) = \\frac{1}{x} \\bmod \\, 1$ for $x \\ne 0$ and $T_G (0) =0$. Here $λ$ is the Lebesgue measure on $[0,1]$ and $μ_G$ is the Gauss measure on $[0,1]$ given by $μ_G (A) = \\frac{1}{ \\log 2} \\int_A \\frac{1}{1+x} dx$ for any measurable set $A \\subset [0,1]$.",
+    "status": "found"
+  },
+  "2609.14940": {
+    "arxiv_id": "2609.14940",
+    "title": "Two-term dilogarithms, mixed-base Nahm sums, and Fricke symmetry",
+    "authors": [
+      "Cetin Hakimoglu-Brown"
+    ],
+    "submission_date": "2026-09-14T02:33:30Z",
+    "latest_updated": "2026-09-14T02:33:30Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14940v1"
+    ],
+    "abstract": "We study the arithmetic constraints that two-term Rogers dilogarithm relations impose on rank-two Nahm systems with mixed denominator steps. Monomial complement equations give a uniform conversion to quadratic data in every algebraic degree. Within a specified ten-record simplest-cubic family, positive coupling, positive definiteness, and integer-valued exponents leave, for m > 2, exactly the steps (1,3), (1,13), and (1,31). At the smallest compatible modulus 31, the required support cannot be a multiplicative subgroup coset. Quadratic examples include known product identities and two systems for which the first radial correction excludes every individual modular sum with rational linear terms. For the index-13 system, we prove a two-term Rogers identity and recover its arguments from the matrix of a previously proved two-dimensional Fricke transformation. Its cusp growth agrees with the resulting saddle action, and an independent calculation reproduces all three leading Fricke amplitudes exactly. The associated two-summand product evaluations remain conjectural; the small rank and dimension contrast with the classical rank-five, six-component Andrews-Gordon construction at the same modulus. A mixed-signature cubic family illustrates the limits of the arithmetic restriction",
+    "status": "found"
+  },
+  "2609.14941": {
+    "arxiv_id": "2609.14941",
+    "title": "Stabilization of a Heterodirectional Bradytachic (1D, 2D) PDE Pair",
+    "authors": [
+      "Miroslav Krstic"
+    ],
+    "submission_date": "2026-09-14T02:35:33Z",
+    "latest_updated": "2026-09-14T02:35:33Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14941v1"
+    ],
+    "abstract": "A scalar hyperbolic PDE, actuated at one boundary, is coupled with a fast PDE in two spatial dimensions: transport in the axial coordinate and in an internal coordinate, and possibly diffusion in the internal coordinate. Backstepping designs exist for coupled hyperbolic systems, for their ensembles, and for their continua, but in all of these the second variable of the fast subsystem carries no transport or diffusion; when it does, no design is available, and from a scalar input no exact control of the two-dimensional state is to be expected. The pair is stabilized here by time-scale separation: in the quasi-steady limit the two-dimensional subsystem collapses into a spatial Volterra operator inside a one-dimensional reduced plant, backstepping applies there, and the two-dimensional subsystem is left to be a stable boundary layer. One theorem establishes exponential stability of the pair for every time-scale ratio below an explicit threshold, uniformly in the internal diffusion coefficient down to the pure-transport case.",
+    "status": "found"
+  },
+  "2609.14942": {
+    "arxiv_id": "2609.14942",
+    "title": "The Dynamic Organization of Sustained Human-AI Cognition: From Construct-Level Change to Relational Structure",
+    "authors": [
+      "Zijian Ru"
+    ],
+    "submission_date": "2026-09-14T02:36:53Z",
+    "latest_updated": "2026-09-14T02:36:53Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14942v1"
+    ],
+    "abstract": "As generative artificial intelligence becomes a routine participant in writing, learning, information retrieval, analysis, decision making, and problem solving, human-AI cognition research must address not only whether AI changes psychological constructs, use intensity, or task performance, but also how human cognitive activity is organized beneath similar aggregate indicators. This article proposes a dynamic cognitive organization framework that shifts analysis from construct-level change to relational organization anchored in the person's current task-cognitive state under sustained AI participation. The framework distinguishes five relational dimensions: execution locus, cognitive governance, representational reorganization, process organization, and reachable cognitive space; it also proposes a path-specific recursive principle whereby interaction outcomes, costs, and experiences may selectively reweight future probabilities of different organizational pathways. Five sets of testable propositions follow: the same overall AI-use intensity can correspond to different cognitive organizations; similar immediate outcomes can arise from different organizations with different predictive value for proximal subsequent outcomes; longitudinal organizational change need not track overall AI-use intensity; expansion of reachable cognitive space and displacement of pre-existing or emerging human-originated pathways may coexist within one episode; and recurrent cognitive organizations may redistribute cognitive practice opportunities, with accumulated differences potentially corresponding to different developmental trajectories in strategies, habits, and abilities. The contribution is an analytic level and five-dimensional relational structure for describing, comparing, measuring, and testing process differences that aggregate indicators or construct-level analyses do not uniquely determine.",
+    "status": "found"
+  },
+  "2609.14943": {
+    "arxiv_id": "2609.14943",
+    "title": "ThreshGuide: Class-Aware Labeled-Guided Thresholding for Semi-Supervised 3D Abdominal Multi-Organ Segmentation",
+    "authors": [
+      "Hongyu Liu",
+      "Yinlong Wang",
+      "Lusha Li",
+      "Hui Meng"
+    ],
+    "submission_date": "2026-09-14T02:38:51Z",
+    "latest_updated": "2026-09-14T02:38:51Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14943v1"
+    ],
+    "abstract": "Pseudo-labeling is a strong paradigm for semi-supervised medical image segmentation, yet its effectiveness is highly sensitive to confidence thresholding. In abdominal multi-organ segmentation, a fixed global threshold is particularly suboptimal because organ classes differ substantially in size, appearance, and learning difficulty. In this work, we propose ThreshGuide, a class-aware threshold adaptation framework that uses labeled data to guide pseudo-label selection on unlabeled data. Built upon a standard teacher-student architecture, the teacher model evaluates labeled samples during training to estimate class-aware threshold targets by maximizing an error-aware F\\b{eta} criterion that balances precision and coverage. These targets are then smoothed with an exponential moving average (EMA) and used to filter unlabeled voxels in a class-dependent manner. Experiments on FLARE2022 and AMOS2022 show that ThreshGuide performs competitively overall, yielding clear improvements specifically on hard-to-learn organs.",
+    "status": "found"
+  },
+  "2609.14944": {
+    "arxiv_id": "2609.14944",
+    "title": "Propagation failure in heterogeneous FitzHugh--Nagumo systems via coupled upper and lower solutions",
+    "authors": [
+      "Matías Courdurier",
+      "Esteban Paduro"
+    ],
+    "submission_date": "2026-09-14T02:39:04Z",
+    "latest_updated": "2026-09-14T02:39:04Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14944v1"
+    ],
+    "abstract": "Traveling waves are fundamental objects in reaction--diffusion systems; however, spatial heterogeneities can distort or inhibit their propagation. Determining whether a given heterogeneity results in propagation failure remains challenging, particularly in systems with coupled components. In this paper, we present explicit constructions of stationary coupled upper and lower solutions tailored to specific heterogeneities for a one-dimensional FitzHugh--Nagumo system. By leveraging the mixed quasimonotone structure of the system, these barriers yield sufficient conditions for the failure of propagation for families of trapped initial conditions. The stationary constructions establish directional signal blocking in FitzHugh--Nagumo neuron models with localized depressed dynamics or abrupt geometric variations, and the resulting stationary barriers persist for sufficiently small recovery diffusion. Additionally, we introduce explicit almost stationary barriers, which provide conditional bounds on the expansion of componentwise threshold regions in homogeneous media.",
+    "status": "found"
+  },
+  "2609.14945": {
+    "arxiv_id": "2609.14945",
+    "title": "Long-range expanders: construction and cutoff",
+    "authors": [
+      "Dylan J. Altschuler"
+    ],
+    "submission_date": "2026-09-14T02:39:05Z",
+    "latest_updated": "2026-10-06T20:22:45Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2609.14945v1",
+      "2609.14945v2"
+    ],
+    "abstract": "Long-range expansion is a combinatorial graph property introduced to construct metric spaces with strong quantitative obstructions to low-distortion embeddings. Such extremal constructions are motivated by fundamental questions in metric geometry and nonlinear functional analysis. However, the only known constructions of long-range expander sequences are random regular graphs; the problem of constructing explicit sequences, especially with logarithmic girth, remains open. We resolve this question in strong form by proving that the Ramanujan condition implies long-range expansion. In particular, classical Ramanujan constructions (such as LPS graphs) give explicit long-range expander sequences with logarithmic girth. We also clarify that long-range expansion implies spectral expansion, and both implications are strict. While long-range expansion, the Ramanujan property, and spectral expansion are strictly separated, it is \\textit{a priori} not clear how robust these gaps are. We next compare them from a dynamics perspective: how do the different notions of expansion affect the mixing rate of random walks? Our second main result is that, from a dynamics perspective, LRE and the Ramanujan property are equivalent. We show that the random walk on any LRE sequence has the same cutoff location and Gaussian limit profile as on a Ramanujan graph. This incidentally offers intermediate progress between cutoff for Ramanujan graphs---proven by Lubetzky and Peres---and the long-standing conjecture of cutoff for transitive spectral expanders.",
+    "status": "found"
+  },
+  "2609.14946": {
+    "arxiv_id": "2609.14946",
+    "title": "Componentwise and Measure-Sensitive Bounds for One-Dimensional Time-Frequency Localization",
+    "authors": [
+      "Ahmadreza Azimifard"
+    ],
+    "submission_date": "2026-09-14T02:40:53Z",
+    "latest_updated": "2026-09-14T02:40:53Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14946v1"
+    ],
+    "abstract": "We prove explicit upper bounds for the number of eigenvalues of a one-dimensional time-frequency localization operator in an open transition window. An abstract residual-energy principle combines a rank-N approximant with the Hilbert-Schmidt energy of its remainder and retains the strict integer correction imposed by the open threshold. For the Fourier kernel, centered least-squares polynomials, optimized moments, and Chebyshev-Bessel truncations improve or match the diameter-Taylor certificate; on interval blocks the moment envelope gains the exact factor 1/(2N+1). Finite measurable partitions yield best-polynomial matrix and residual-energy bounds, together with two-level threshold allocations that exploit spatial or Fourier-side orthogonality and remain stable under large empty gaps. A complementary defect channel gives a componentwise variational Schatten envelope for finite interval unions. For arbitrary finite-measure hard windows, exact cross-boundary and symmetric-difference formulas give strict transition counting and a certified near-one cluster that can be subtracted from direct counts. We also treat integrable soft masks, a root-sum-square core-tail decomposition, and unbounded windows controlled by moments. An explicit unbounded finite-measure set has all polynomial moments and infinite fractional translation perimeter for every order in (0,1], yet admits an O(log(1/epsilon)/log log(1/epsilon)) certificate. Finally, kernels with finitely many bounded separated phase interactions and finite separated amplitude rank admit factorial, least-squares, Chebyshev-Bessel, span-compressed, and anisotropic-degree bounds. For bounded hard Fourier windows, the final hybrid is no larger than the corresponding earlier certificates proved here; no universal comparison with all regular-domain estimates is asserted.",
+    "status": "found"
+  },
+  "2609.14947": {
+    "arxiv_id": "2609.14947",
+    "title": "The Heavy Chain PDE: Rapid Stabilization by Backstepping",
+    "authors": [
+      "Miroslav Krstic"
+    ],
+    "submission_date": "2026-09-14T02:42:20Z",
+    "latest_updated": "2026-09-14T02:42:20Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14947v1"
+    ],
+    "abstract": "We consider boundary stabilization of a heavy chain hanging from a moving trolley with no tip load. Because the tension vanishes at the free end, the wave speed vanishes there; in Riemann coordinates the model becomes a degenerate $2\\times2$ hyperbolic system in which the coupling is singular and the free-end reflection is generated in the domain rather than by a boundary condition. We construct a Volterra backstepping transformation that maps this system to the same chain with uniform damping of an arbitrarily prescribed rate and an elastic restraint at the trolley, yielding exponential convergence of displacement, velocity, and strain to zero. The singular kernel equations are solved by selecting their bounded Frobenius branch at the free end, which replaces the missing boundary datum, and the four kernels are generated by a globally convergent power series. The transformation is boundedly invertible on the energy space, with inverse obtained by reversing the prescribed decay rate. The result extends the radial backstepping structure developed for parabolic equations on disks and balls to a degenerate hyperbolic system.",
+    "status": "found"
+  },
+  "2609.14948": {
+    "arxiv_id": "2609.14948",
+    "title": "Conway Symbols of Frieze Patterns of Dynkin Types",
+    "authors": [
+      "Kengo Miyamoto",
+      "Ryuhei Suzuki"
+    ],
+    "submission_date": "2026-09-14T02:44:50Z",
+    "latest_updated": "2026-09-14T02:44:50Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14948v1"
+    ],
+    "abstract": "In this paper, we classify the Conway symbols of the Euclidean symmetry groups of frieze patterns of Dynkin types $A_n$, $B_n$, $C_n$, $D_n$, $F_4$ and $G_2$. First, we show that the Conway symbol of a Conway--Coxeter frieze is determined by the bilateral and the central symmetry of the underlying triangulation. Secondly, we show that a frieze pattern of non-simply-laced type has the symbol ${*}\\infty\\infty$ or $\\infty\\infty$ according as its first interior row is palindromic or not, with the single exception of type $C_3$, which realises four symbols. Thirdly, we show that the same dichotomy holds for type $D_n$ with $n \\ge 5$, the symbol being read off the tagged triangulation of the once-punctured polygon attached to the frieze together with the value on its puncture edges, and that type $D_4$ realises five symbols.",
+    "status": "found"
+  },
+  "2609.14949": {
+    "arxiv_id": "2609.14949",
+    "title": "Boundary transmission and excursion geometry in the Lorentz mirror model: a numerical study",
+    "authors": [
+      "Jian Gu",
+      "Qin Hao"
+    ],
+    "submission_date": "2026-09-14T02:45:46Z",
+    "latest_updated": "2026-09-14T02:45:46Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14949v1"
+    ],
+    "abstract": "We study boundary transmission and excursion geometry in the planar Lorentz mirror model through finite-volume numerical experiments. Cylinder penetration quantiles grow approximately linearly with circumference over the simulated range, with a systematic upward drift in the normalized quantiles when vacancies are present. Estimated slab-transmission probabilities yield exponential confinement bounds with quantified statistical confidence at the tested widths. Planar excursions conditioned to reach a distant boundary exhibit transverse ranges proportional to the exit radius, while their repeated-visit fractions vary strongly with mirror density. Endpoint-label collision probabilities substantially exceed a general gluing lower bound, although they account for only part of the observed same-column crossing probability. Finally, rerouting at repeated vertices preserves the exit while substantially shortening the sampled paths. These findings characterize finite-volume transport and excursion geometry without determining an asymptotic scaling exponent or resolving infinite-plane localization.",
+    "status": "found"
+  },
+  "2609.14950": {
+    "arxiv_id": "2609.14950",
+    "title": "Credible Bounds for Causal Quantities with Continuous Outcomes",
+    "authors": [
+      "Jason Saporta"
+    ],
+    "submission_date": "2026-09-14T02:49:47Z",
+    "latest_updated": "2026-09-14T02:49:47Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14950v1"
+    ],
+    "abstract": "The problem of partial identification concerns bounding causal quantities that remain unidentifiable given the observed distribution and the causal diagram of the underlying structural causal model (SCM). While bounds have been developed for certain causal quantities with continuous outcomes, they are necessarily univariate and are unable to reflect differing levels of confidence. Building on previous work in partial identification, we propose a simple Bayesian method for deriving probabilistic bounds on a large class of causal quantities with potentially multivariate and/or continuous outcome variables.",
+    "status": "found"
+  },
+  "2609.14951": {
+    "arxiv_id": "2609.14951",
+    "title": "Short-term forecasting of wildfire spread: A network epidemiology approach",
+    "authors": [
+      "Indrila Ganguly",
+      "Muhammad Ali",
+      "Swarnali Sanyal",
+      "Viney Aneja",
+      "Srijan Sengupta"
+    ],
+    "submission_date": "2026-09-14T02:49:58Z",
+    "latest_updated": "2026-09-14T02:49:58Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14951v1"
+    ],
+    "abstract": "Wildfire spread poses substantial environmental and public-health risks, motivating interpretable models for short-term forecasting. We develop a statistical framework that combines cellular automata with ideas from network epidemiology to model wildfire evolution across a spatial lattice. Each grid cell is classified as available, burning, or consumed. State transitions distinguish spread from burning neighbors, intrinsic ignition, and cessation of burning, with transition rates linked to meteorological and environmental covariates. A likelihood-based estimation procedure yields transition-specific covariate effects and probabilistic forecasts of cell states. We assess forecasting performance in a simulation study and in applications to the 2018 California wildfires and the 2019-2020 Australian wildfires. We also compare the method with a published forecasting approach using the 2017 Haypress fire. The results show strong short-term discrimination in many settings, with reduced accuracy at longer forecast horizons and during abrupt fire expansion. The framework provides an interpretable basis for studying wildfire dynamics and identifies opportunities to improve ignition forecasts through richer spatial and observation models.",
+    "status": "found"
+  },
+  "2609.14952": {
+    "arxiv_id": "2609.14952",
+    "title": "Cloud Workflow Scheduling Based on Graph Attention-Driven Hierarchical Reinforcement Learning",
+    "authors": [
+      "Zongjin Li",
+      "Shaohan Feng",
+      "Chunxi Yang",
+      "Wenbo Wang"
+    ],
+    "submission_date": "2026-09-14T02:50:40Z",
+    "latest_updated": "2026-09-14T02:50:40Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14952v1"
+    ],
+    "abstract": "Dynamic cloud workflow scheduling must balance deadline satisfaction, container utilization, and energy consumption while dealing with stochastic task-execution speeds, placement-dependent communication, and coupled task and container decisions. Workflows are naturally modeled as directed acyclic graphs (DAGs), but conventional vector- or matrix-based states do not fully capture their dependency topology. To better represent task urgency and structural relationships, we assign predicted sub-deadlines to tasks and use a multi-head graph attention network (GAT) to extract dependency information from the evolving DAGs. Based on these representations, we develop a Graph Attention-Driven Hierarchical Reinforcement Learning (GA-HRL) framework and model the scheduling process as an event-driven hierarchical semi-Markov decision process (SMDP). Workflow arrivals and task completions trigger scheduling events. At each scheduling event, the Task Scheduling (TS) agent first processes the currently ready tasks by assigning them to admissible existing containers or requesting new ones. The requested containers are then processed by the Container Scheduling (CS) agent for host placement before the environment advances. The two agents are trained alternately using separate Proximal Policy Optimization (PPO). Experiments on the 2018 Alibaba cluster trace show that GA-HRL maintains competitive workflow success rate and, in settings where success is comparable, generally achieves higher container utilization and lower energy consumption. Under the largest speed variation, it trades a small success-rate margin for substantially lower energy. Simulation code is available at: https://github.com/zongjin130/GA-HRL.",
+    "status": "found"
+  },
+  "2609.14953": {
+    "arxiv_id": "2609.14953",
+    "title": "Distributed Fast Fixed-Point Algorithms for Composite Monotone Inclusions over Networks",
+    "authors": [
+      "Nghia Nguyen-Trung",
+      "Ion Necoara",
+      "Quoc Tran-Dinh"
+    ],
+    "submission_date": "2026-09-14T02:56:00Z",
+    "latest_updated": "2026-09-14T02:56:00Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14953v1"
+    ],
+    "abstract": "This paper aims to develop new and efficient distributed algorithms for solving a class of monotone inclusions, $0 \\in \\sum_{i=1}^n (G_ix + T_ix)$, over a connected network of $n$ agents, where the single-valued operator $G_i$ and the possibly multivalued operator $T_i$ remain private to agent $i$. Existing distributed algorithms for this problem class are primarily non-accelerated, and their exact convergence rates in the original primal space are largely unexplored. To bridge this gap, we propose two Decentralized Fast Fixed-Point-based algorithms, \\texttt{ND-DFFP} and \\texttt{NI-DFFP}, which integrate Nesterov-type acceleration with primal-dual techniques under two prominent settings: (i) \\textit{Lipschitz continuity of $G_i$ and maximal monotonicity of $G_i+T_i$}; and (ii) \\textit{co-coercivity of $G_i$ and maximal monotonicity of $T_i$}. While \\texttt{ND-DFFP} utilizes a homogeneous network-dependent stepsize, \\texttt{NI-DFFP} reformulates the problem into a three-operator inclusion to decouple the network topology, enabling heterogeneous network-independent stepsizes. Under appropriate assumptions, we establish an $\\mathcal{O}(1/k)$ convergence rate for the consensus error and an $\\mathcal{O}(1/k)$ rate for both the restricted gap function and the squared forward-backward splitting residual, with the latter two metrics evaluated at the network-average iterate or its projection onto the effective domain. Finally, numerical experiments on distributed bilinear matrix games and a virtual power plant problem demonstrate the competitive performance and computational efficiency of our methods over recent decentralized baselines in the literature.",
+    "status": "found"
+  }
+}

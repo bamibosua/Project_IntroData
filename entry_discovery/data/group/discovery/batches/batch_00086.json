@@ -1,0 +1,405 @@
+{
+  "2511.13429": {
+    "arxiv_id": "2511.13429",
+    "title": "Handover-Aware URLLC UAV Trajectory Planning: A Continuous-Time Trajectory Optimization via Graphs of Convex Sets",
+    "authors": [
+      "Yuqi Ping",
+      "Tingting Zhang",
+      "Tianhao Liang"
+    ],
+    "submission_date": "2025-11-17T14:41:36Z",
+    "latest_updated": "2025-11-17T14:41:36Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.13429v1"
+    ],
+    "abstract": "In this paper, we study a cellular-connected unmanned aerial vehicle (UAV) which aims to fly between two predetermined locations while maintaining ultra-reliable low-latency communications (URLLC) for command-and-control (C2) links with terrestrial base stations (BSs). Long-range flights often trigger frequent inter-cell handovers, which may introduce delays and synchronization overhead. We jointly optimize the continuous trajectory and BS association to minimize handovers, path length, and flying time, subject to communication reliability and kinematic constraints. To address this problem, we reformulate it as an optimization based on the graph of convex sets (GCS). First, the URLLC requirement is translated into spatially feasible regions in the flight plane for each BS. And an intersection graph is constructed including the start and goal points. Each graph node is associated with a smooth and dynamically feasible trajectory segment. The trajectory is parameterized in space by Bézier curves and in time by a monotonic Bézier scaling, together with convex constraints that ensure continuity and enforce speed bounds. Next, we impose unit-flow constraints to enforce a single path, and by coupling the resulting binary edge-selection variables with the convex constraints, we obtain a mixed-integer convex program (MICP). Applying a convex relaxation and rounding to the mixed-integer convex program produces nearly globally optimal routes, and a final refinement yields smooth, dynamically feasible trajectories. Simulations verify that the method preserves URLLC connectivity while achieving a clear trade-off between fewer handovers and flight efficiency.",
+    "status": "found"
+  },
+  "2511.13430": {
+    "arxiv_id": "2511.13430",
+    "title": "Symmetric harmoniousness of odd-order groups",
+    "authors": [
+      "Mohammad Javaheri"
+    ],
+    "submission_date": "2025-11-17T14:41:57Z",
+    "latest_updated": "2025-11-17T14:41:57Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.13430v1"
+    ],
+    "abstract": "We prove that every odd-order group is symmetric harmonious: there exists a permutation $g_0,g_1,\\ldots, g_{\\ell-1}$ of elements of $G$ such that the consecutive products $g_0g_1,g_1g_2,\\ldots, g_{\\ell-1}g_0$ also form a permutation of elements of $G$ and $g_{\\ell-i}=g_i^{-1}$ for all $1\\leq i \\leq \\ell-1$. We apply this result to obtain new examples of R*-sequenceable groups.",
+    "status": "found"
+  },
+  "2511.13431": {
+    "arxiv_id": "2511.13431",
+    "title": "FUSE: A Flow-based Mapping Between Shapes",
+    "authors": [
+      "Lorenzo Olearo",
+      "Giulio Viganò",
+      "Daniele Baieri",
+      "Filippo Maggioli",
+      "Simone Melzi"
+    ],
+    "submission_date": "2025-11-17T14:42:45Z",
+    "latest_updated": "2026-07-07T08:40:33Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.13431v1",
+      "2511.13431v2"
+    ],
+    "abstract": "We introduce a novel neural representation for maps between 3D shapes based on flow-matching models, which is computationally efficient and supports cross-representation shape matching without large-scale training or data-driven procedures. 3D shapes are represented as the probability distribution induced by a continuous and invertible flow mapping from a fixed anchor distribution. Given a source and a target shape, the composition of the inverse flow (source to anchor) with the forward flow (anchor to target), we map points between the two surfaces. By encoding the shapes with a pointwise task-tailored embedding, this construction provides an invertible and modality-agnostic representation of maps between shapes across point clouds, meshes, signed distance fields (SDFs), and volumetric data. The resulting representation consistently achieves high coverage and accuracy across diverse benchmarks and challenging settings in shape matching. Beyond shape matching, our framework shows promising results in other tasks, including UV mapping and registration of raw point cloud scans of human bodies.",
+    "status": "found"
+  },
+  "2511.13432": {
+    "arxiv_id": "2511.13432",
+    "title": "The Last Vote: A Multi-Stakeholder Framework for Language Model Governance",
+    "authors": [
+      "Subramanyam Sahoo",
+      "Aditi Chhawacharia"
+    ],
+    "submission_date": "2025-11-17T14:44:13Z",
+    "latest_updated": "2025-11-17T14:44:13Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.13432v1"
+    ],
+    "abstract": "As artificial intelligence systems become increasingly powerful and pervasive, democratic societies face unprecedented challenges in governing these technologies while preserving core democratic values and institutions. This paper presents a comprehensive framework to address the full spectrum of risks that AI poses to democratic societies. Our approach integrates multi-stakeholder participation, civil society engagement, and existing international governance frameworks while introducing novel mechanisms for risk assessment and institutional adaptation. We propose: (1) a seven-category democratic risk taxonomy extending beyond individual-level harms to capture systemic threats, (2) a stakeholder-adaptive Incident Severity Score (ISS) that incorporates diverse perspectives and context-dependent risk factors, and (3) a phased implementation strategy that acknowledges the complex institutional changes required for effective AI governance.",
+    "status": "found"
+  },
+  "2511.13433": {
+    "arxiv_id": "2511.13433",
+    "title": "Decomposing Inequalities using Machine Learning and Overcoming Common Support Issues",
+    "authors": [
+      "Emmanuel Flachaire",
+      "Bertille Picard"
+    ],
+    "submission_date": "2025-11-17T14:45:13Z",
+    "latest_updated": "2025-11-17T14:45:13Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.13433v1"
+    ],
+    "abstract": "The Kitagawa-Oaxaca-Blinder decomposition splits the difference in means between two groups into an explained part, due to observable factors, and an unexplained part. In this paper, we reformulate this framework using potential outcomes, highlighting the critical role of the reference outcome. To address limitations like common support and model misspecification, we extend Neumark's (1988) weighted reference approach with a doubly robust estimator. Using Neyman orthogonality and double machine learning, our method avoids trimming and extrapolation. This improves flexibility and robustness, as illustrated by two empirical applications. Nevertheless, we also highlight that the decomposition based on the Neumark reference outcome is particularly sensitive to the inclusion of irrelevant explanatory variables.",
+    "status": "found"
+  },
+  "2511.13434": {
+    "arxiv_id": "2511.13434",
+    "title": "Optical investigation of ultra-slow spin relaxation in $^{171}$Yb$^{3+}$:Y$_2$SiO$_5$ single crystals",
+    "authors": [
+      "Federico Chiossi",
+      "Alexey Tiranov",
+      "Luois Nicolas",
+      "Diana Serrano",
+      "Felix Montjovet-Basset",
+      "Eloïse Lafitte-Houssat",
+      "Alban Ferrier",
+      "Sacha Welinski",
+      "Loïc Morvan",
+      "Perrine Berger",
+      "Mikael Afzelius",
+      "Philippe Goldner"
+    ],
+    "submission_date": "2025-11-17T14:45:26Z",
+    "latest_updated": "2025-11-17T14:45:26Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.13434v1"
+    ],
+    "abstract": "We present a comprehensive study of spin relaxation dynamics at cryogenic temperatures in a rare-earth-doped crystal used for quantum memory applications: $^{171}$Yb:Y$_2$SiO$_5$. Spin relaxation is indeed a major limiting factor for both the efficiency and storage time of quantum memory protocols based on atomic frequency combs in rare-earth materials. The relaxation dynamics among the four ground-state hyperfine levels were simultaneously investigated by optically perturbing the spin population distribution and monitoring its return to thermal equilibrium through optical absorption spectroscopy. By applying different types of perturbations, we were also able to distinguish between two types of relaxation processes, induced by spin-phonon and spin-spin interactions. Below 1 K, we observed that the re-thermalization of the Yb$^{3+}$ ion population takes several hours, driven solely by direct phonon absorption or emission. However, the effective lifetime of individual spin states is much shorter - on the order of several seconds in low-doped (2 ppm) samples and of milliseconds in 10 ppm samples - due to spin-spin interactions. These findings provide valuable guidelines for optimizing doping levels and operating temperatures in rare-earth-doped crystals for quantum applications. Notably, they suggest that atomic frequency combs with lifetimes of several hours could be realized using $^{171}$Yb:Y$_2$SiO$_5$ crystals with slightly less than 2 ppm doping and operating near 1 K.",
+    "status": "found"
+  },
+  "2511.13435": {
+    "arxiv_id": "2511.13435",
+    "title": "Subset expansions of monoids",
+    "authors": [
+      "Victoria Gould",
+      "Marianne Johnson"
+    ],
+    "submission_date": "2025-11-17T14:46:32Z",
+    "latest_updated": "2025-12-19T14:24:27Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.13435v1",
+      "2511.13435v2"
+    ],
+    "abstract": "We initiate the study of the expansion $\\mathcal{S}(M)$ of a monoid $M$ obtained via the semidirect product of $M$ acting naturally on the left of its power set (regarded as a semilattice under union). We term this the `subset expansion' of $M$. The monoid $\\mathcal{S}(M)$ contains the images of several expansions of $M$ of wide interest and use in semigroup theory, in particular the prefix and Szendrei expansions (in the case where $M$ is free, these `smaller' expansions produce free algebras in certain varieties). We first focus on algebraic properties, specifically those determined by idempotents. Particularly, we show that the expansion $\\mathcal{S}$ maps groups to proper inverse monoids, unipotent monoids to proper left restriction monoids, right cancellative monoids to left ample monoids, right abundant monoids to right abundant monoids, and left cancellative monoids to right adequate monoids. Subsequently, we focus on finitary conditions. We examine the condition of weak left coherence (every finitely generated left ideal has a finite presentation as a left act); the related conditions of property (L), left ideal Howson, finitely left equated, and each of the corresponding left-right dual notions. Each of these conditions is preserved under retract, from which it is immediate that if $\\mathcal{S}(M)$ satisfies one of our finitary conditions, then so must $M$, but the converse is not true. For a property to `lift' from $M$ to $\\mathcal{S}(M)$ it must undergo a strengthening. Indeed, we show that $\\mathcal{S}(M)$ satisfies property (L) (or its left-right dual) if and only if $M$ is finite. We provide exact characterisations of the monoids $M$ such that $\\mathcal{S}(M)$ is: left (or right) ideal Howson; finitely left equated; and (consequently) weakly left coherent. We give sufficient conditions for $\\mathcal{S}(M)$ to be finitely right equated and hence weakly right coherent.",
+    "status": "found"
+  },
+  "2511.13436": {
+    "arxiv_id": "2511.13436",
+    "title": "Shaping the Mantle: The Role of Superheated Core After Giant Impacts",
+    "authors": [
+      "You Zhou"
+    ],
+    "submission_date": "2025-11-17T14:46:32Z",
+    "latest_updated": "2025-12-09T17:22:42Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 5,
+    "versions": [
+      "2511.13436v1",
+      "2511.13436v2",
+      "2511.13436v3",
+      "2511.13436v4",
+      "2511.13436v5"
+    ],
+    "abstract": "The Moon-forming giant impact significantly influenced the initial thermal state of Earth's mantle by generating a global magma ocean, marking the onset of mantle evolution. Recent Smoothed Particle Hydrodynamics (SPH) simulations indicate that such a collision would produce a superheated core, whose cooling would strongly influence subsequent mantle dynamics. Here, we present systematic SPH simulations of diverse giant-impact scenarios and show that the superheated core formed after the impact can trigger secondary mantle melting, thereby governing the final state of the magma ocean. To further quantify this effect, we employ a parameterized mantle-melting model to evaluate the influence of secondary melting on the lower mantle. Our results suggest three possible outcomes: complete mantle melting, the formation of a basal melt layer, or the initiation of an early superplume. Combined with recent two-phase magma-ocean solidification models, we infer that all three scenarios would result in basal melt layers of varying thickness, partially retaining the thermal energy of the superheated core. In the canonical Moon-forming scenario, the superheated core would rapidly transfer heat to Earth's lower mantle, causing secondary mantle melting within approximately 277-5983 years and generating either a basal melt layer or a fully molten mantle. Both outcomes would effectively erase primordial heterogeneities in the lower mantle and impose distinct pathways for its subsequent thermal evolution.",
+    "status": "found"
+  },
+  "2511.13437": {
+    "arxiv_id": "2511.13437",
+    "title": "On the multiplier spectrum of polynomials",
+    "authors": [
+      "Geng-Rui Zhang"
+    ],
+    "submission_date": "2025-11-17T14:46:37Z",
+    "latest_updated": "2026-02-05T08:30:10Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.13437v1",
+      "2511.13437v2"
+    ],
+    "abstract": "We prove several results on the multiplier spectrum of polynomials. We provide a detailed proof of the theorem stating that the multiplier spectrum morphism is generically injective on the moduli space of polynomials. We obtain a description of the non-injective locus of the multiplier spectrum morphism for polynomials of degree $d\\geq2$. Roughly speaking, we prove that, apart from isolated exceptions, polynomials with the same multiplier spectrum are intertwined. More precisely, we show that, up to iteration and isolated exceptions, the polynomials are either equivalent or related by Ritt moves. We also investigate the relationship between Ritt moves and multiplier spectra over arithmetic progressions.",
+    "status": "found"
+  },
+  "2511.13438": {
+    "arxiv_id": "2511.13438",
+    "title": "The dispersion relation of Tollmien-Schlichting waves",
+    "authors": [
+      "Dongfen Bian",
+      "Shouyi Dai",
+      "Emmanuel Grenier"
+    ],
+    "submission_date": "2025-11-17T14:49:11Z",
+    "latest_updated": "2025-11-17T14:49:11Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.13438v1"
+    ],
+    "abstract": "It is well-known that shear flows in a strip or in the half plane are unstable for the Navier-Stokes equations if the viscosity $ν$ is small enough, provided the horizontal wave number $α$ lies in a small interval, between the so called lower and upper marginal stability curves. The corresponding instabilities are called Tollmien-Schlichting waves. In this letter, we give a simple presentation of the dispersion relation of these waves and study its mathematical properties.",
+    "status": "found"
+  },
+  "2511.13439": {
+    "arxiv_id": "2511.13439",
+    "title": "Characterizing Transfer Systems for Non-Abelian Groups",
+    "authors": [
+      "Sarah Klanderman",
+      "Chloe Lewis",
+      "Harlea Monson",
+      "Koki Shibata",
+      "Danika Van Niel"
+    ],
+    "submission_date": "2025-11-17T14:49:19Z",
+    "latest_updated": "2026-04-23T16:27:10Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.13439v1",
+      "2511.13439v2"
+    ],
+    "abstract": "For a finite group $G$, the notion of a $G$-transfer system provides homotopy theorists with a combinatorial way to study equivariant objects. In this paper, we focus on the properties of transfer systems for non-abelian groups. We explicitly describe the width of all dihedral groups, quaternion groups, and dicyclic groups. For a given $G$, the set of all $G$-transfer systems forms a poset lattice under inclusion; these are a useful resource to homotopical combinatorialists for detecting patterns and checking conjectures. We expand the suite of known transfer system lattices for non-abelian groups including those which are dihedral, dicyclic, Frobenius, and alternating.",
+    "status": "found"
+  },
+  "2511.13440": {
+    "arxiv_id": "2511.13440",
+    "title": "Random sets from the perspective of metric statistics",
+    "authors": [
+      "Daisuke Kurisu",
+      "Yuta Okamoto",
+      "Taisuke Otsu"
+    ],
+    "submission_date": "2025-11-17T14:49:30Z",
+    "latest_updated": "2026-10-14T09:40:17Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.13440v1",
+      "2511.13440v2"
+    ],
+    "abstract": "Since the seminal work by Beresteanu and Molinari(2008), the random set theory and related inference methods have been widely applied in partially identified econometric models. Meanwhile, there is an emerging field in statistics for studying random objects in metric spaces, called metric statistics. This paper clarifies a relationship between two fundamental concepts in these literatures, the Aumann and Fréchet means, and presents some applications of metric statistics to econometric problems involving random sets.",
+    "status": "found"
+  },
+  "2511.13441": {
+    "arxiv_id": "2511.13441",
+    "title": "Cyclic polynomials in Dirichlet-type Spaces of the unit bidisk",
+    "authors": [
+      "Rajkamal Nailwal",
+      "Aljaž Zalar"
+    ],
+    "submission_date": "2025-11-17T14:49:30Z",
+    "latest_updated": "2026-07-05T11:32:27Z",
+    "revised_dates": null,
+    "venue": "Anal.Math.Phys. 16, 87 (2026)",
+    "latest_version": 3,
+    "versions": [
+      "2511.13441v1",
+      "2511.13441v2",
+      "2511.13441v3"
+    ],
+    "abstract": "For $α\\in \\mathbb{R},$ we consider the scale of function spaces, namely the Dirichlet-type space ${D}_α$ consisting of holomorphic functions on the unit bidisk $\\mathbb{D}^2$, $f(z,w)=\\sum_{k,l=0}^{\\infty}a_{kl}z^kw^l$ such that $$\\sum_{k,l=0}^{\\infty}(k+l+1)^α|a_{kl}|^2 < \\infty.$$ In this paper, we solve an open problem posed by Torkinejad Ziarati concerning the cyclicity of the polynomial $2-z_1-z_2$ in $ D_α$ for $ \\frac32 < α\\leq 2$. We provide an affirmative answer and, as a consequence, complete the characterization of cyclic polynomials in $ D_α$.",
+    "status": "found"
+  },
+  "2511.13442": {
+    "arxiv_id": "2511.13442",
+    "title": "Unlocking the Forgery Detection Potential of Vanilla MLLMs: A Novel Training-Free Pipeline",
+    "authors": [
+      "Rui Zuo",
+      "Qinyue Tong",
+      "Zhe-Ming Lu",
+      "Ziqian Lu"
+    ],
+    "submission_date": "2025-11-17T14:49:57Z",
+    "latest_updated": "2025-11-18T06:58:03Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.13442v1",
+      "2511.13442v2"
+    ],
+    "abstract": "With the rapid advancement of artificial intelligence-generated content (AIGC) technologies, including multimodal large language models (MLLMs) and diffusion models, image generation and manipulation have become remarkably effortless. Existing image forgery detection and localization (IFDL) methods often struggle to generalize across diverse datasets and offer limited interpretability. Nowadays, MLLMs demonstrate strong generalization potential across diverse vision-language tasks, and some studies introduce this capability to IFDL via large-scale training. However, such approaches cost considerable computational resources, while failing to reveal the inherent generalization potential of vanilla MLLMs to address this problem. Inspired by this observation, we propose Foresee, a training-free MLLM-based pipeline tailored for image forgery analysis. It eliminates the need for additional training and enables a lightweight inference process, while surpassing existing MLLM-based methods in both tamper localization accuracy and the richness of textual explanations. Foresee employs a type-prior-driven strategy and utilizes a Flexible Feature Detector (FFD) module to specifically handle copy-move manipulations, thereby effectively unleashing the potential of vanilla MLLMs in the forensic domain. Extensive experiments demonstrate that our approach simultaneously achieves superior localization accuracy and provides more comprehensive textual explanations. Moreover, Foresee exhibits stronger generalization capability, outperforming existing IFDL methods across various tampering types, including copy-move, splicing, removal, local enhancement, deepfake, and AIGC-based editing. The code will be released in the final version.",
+    "status": "found"
+  },
+  "2511.13443": {
+    "arxiv_id": "2511.13443",
+    "title": "Cyclotomic integral points for affine dynamics",
+    "authors": [
+      "Zhuchao Ji",
+      "Junyi Xie",
+      "Geng-Rui Zhang"
+    ],
+    "submission_date": "2025-11-17T14:50:10Z",
+    "latest_updated": "2026-01-20T08:22:17Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.13443v1",
+      "2511.13443v2"
+    ],
+    "abstract": "Let $f:\\mathbb{A}^N\\to\\mathbb{A}^N$ be a regular endomorphism of algebraic degree $d\\geq2$ (i.e., $f$ extends to an endomorphism on $\\mathbb{P}^N$ of algebraic degree $d$) defined over a number field. We prove that if the set of cyclotomic $f$-preperiodic points is Zariski-dense in $\\mathbb{A}^N$, then some iterate $f^{\\circ l}$ ($l\\geq1$) is a quotient of a surjective algebraic group endomorphism $g:\\mathbb{G}_m^N\\to\\mathbb{G}_m^N$, over $\\overline{\\mathbb{Q}}$. This result generalizes a theorem of Dvornicich and Zannier on cyclotomic preperiodic points of one-variable polynomials to higher dimensions. In fact, we prove a much more general rigidity result for dominant endomorphisms $f$ on an affine variety $X$ defined over a number field, concerning \"almost $f$-invariant\" Zariski-dense subsets of cyclotomic integral points. We apply our results to backward orbits of regular endomorphisms on $\\mathbb{A}^N$ of algebraic degree $d\\geq2$, and to periodic points of automorphisms of Hénon type on $\\mathbb{A}^N$.",
+    "status": "found"
+  },
+  "2511.13444": {
+    "arxiv_id": "2511.13444",
+    "title": "Discovering Operational Patterns Using Image-Based Convolutional Clustering and Composite Evaluation: A Case Study in Foundry Melting Processes",
+    "authors": [
+      "Zhipeng Ma",
+      "Bo Nørregaard Jørgensen",
+      "Zheng Grace Ma"
+    ],
+    "submission_date": "2025-11-17T14:50:44Z",
+    "latest_updated": "2025-11-17T14:50:44Z",
+    "revised_dates": null,
+    "venue": "Information 2025, 16(9), 816",
+    "latest_version": 1,
+    "versions": [
+      "2511.13444v1"
+    ],
+    "abstract": "Industrial process monitoring increasingly relies on sensor-generated time-series data, yet the lack of labels, high variability, and operational noise make it difficult to extract meaningful patterns using conventional methods. Existing clustering techniques either rely on fixed distance metrics or deep models designed for static data, limiting their ability to handle dynamic, unstructured industrial sequences. Addressing this gap, this paper proposes a novel framework for unsupervised discovery of operational modes in univariate time-series data using image-based convolutional clustering with composite internal evaluation. The proposed framework improves upon existing approaches in three ways: (1) raw time-series sequences are transformed into grayscale matrix representations via overlapping sliding windows, allowing effective feature extraction using a deep convolutional autoencoder; (2) the framework integrates both soft and hard clustering outputs and refines the selection through a two-stage strategy; and (3) clustering performance is objectively evaluated by a newly developed composite score, S_eva, which combines normalized Silhouette, Calinski-Harabasz, and Davies-Bouldin indices. Applied to over 3900 furnace melting operations from a Nordic foundry, the method identifies seven explainable operational patterns, revealing significant differences in energy consumption, thermal dynamics, and production duration. Compared to classical and deep clustering baselines, the proposed approach achieves superior overall performance, greater robustness, and domain-aligned explainability. The framework addresses key challenges in unsupervised time-series analysis, such as sequence irregularity, overlapping modes, and metric inconsistency, and provides a generalizable solution for data-driven diagnostics and energy optimization in industrial systems.",
+    "status": "found"
+  },
+  "2511.13445": {
+    "arxiv_id": "2511.13445",
+    "title": "How Hard is it to Explain Preferences Using Few Boolean Attributes?",
+    "authors": [
+      "Clemens Anzinger",
+      "Jiehua Chen",
+      "Christian Hatschka",
+      "Manuel Sorge",
+      "Alexander Temper"
+    ],
+    "submission_date": "2025-11-17T14:51:32Z",
+    "latest_updated": "2025-11-17T14:51:32Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.13445v1"
+    ],
+    "abstract": "We study the computational complexity of explaining preference data through Boolean attribute models (BAMs), motivated by extensive research involving attribute models and their promise in understanding preference structure and enabling more efficient decision-making processes. In a BAM, each alternative has a subset of Boolean attributes, each voter cares about a subset of attributes, and voters prefer alternatives with more of their desired attributes. In the BAM problem, we are given a preference profile and a number k, and want to know whether there is a Boolean k-attribute model explaining the profile. We establish a complexity dichotomy for the number of attributes k: BAM is linear-time solvable for $k \\le 2$ but NP-complete for $k \\ge 3$. The problem remains hard even when preference orders have length two. On the positive side, BAM becomes fixed-parameter tractable when parameterized by the number of alternatives m. For the special case of two voters, we provide a linear-time algorithm. We also analyze variants where partial information is given: When voter preferences over attributes are known (BAM WITH CARES) or when alternative attributes are specified (BAM WITH HAS), we show that for most parameters BAM WITH CARES is more difficult whereas BAM WITH HAS is more tractable except for being NP-hard even for one voter.",
+    "status": "found"
+  },
+  "2511.13446": {
+    "arxiv_id": "2511.13446",
+    "title": "Enumeration of paths in a hexagonal circle packing",
+    "authors": [
+      "Jean-Luc Baril",
+      "José Luis Ramí rez"
+    ],
+    "submission_date": "2025-11-17T14:51:55Z",
+    "latest_updated": "2025-11-17T14:51:55Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.13446v1"
+    ],
+    "abstract": "We investigate paths in the hexagonal circle packing and enumerate them with respect to width, height, number of steps, area, and kissing number. Functional equations and the kernel method yield closed bivariate generating functions together with coefficient formulas and asymptotics. We establish bijections with skew Dyck paths, constrained Motzkin paths, and peakless Motzkin paths, and show that several of the associated counting arrays are Riordan arrays. Continued-fraction expansions for the area and kissing-number enumerators are also obtained.",
+    "status": "found"
+  },
+  "2511.13447": {
+    "arxiv_id": "2511.13447",
+    "title": "Absorbed Types and Derivations in Exponential o-Minimal Theories",
+    "authors": [
+      "Pietro Freni"
+    ],
+    "submission_date": "2025-11-17T14:52:11Z",
+    "latest_updated": "2025-11-17T14:52:11Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.13447v1"
+    ],
+    "abstract": "I analyze $\\mathcal{O}$-weakly immediate and $\\mathcal{O}$-residual types in an o-minimal expansion of an ordered field $\\mathbb{E}$, where $\\mathcal{O}$ is a convex valuation ring. The main result is a characterization of those exponential theories $T$ such that for all $(\\mathbb{E}, \\mathcal{O})\\models T_{\\mathrm{convex}}$ the image of any $\\mathcal{O}$-weakly immediate type is given by some composition of translations, sign changes and exponential, of some \\emph{possibly different} $\\mathcal{O}$-weakly immediate type. I call these theories \\emph{transserial} and they encompass simply exponential theories such as $T_{\\exp}$ and $T_{an, \\exp}$. A consequence of the analysis is that there are no counterexamples to \\emph{Tressl's signature-alternative} (cf [15]) in models of transserial theories admitting an Archimedean prime model. The characterization has at its core some arguments that use very few but fundamental properties of the valued differential field of germs at a cut in an o-minimal structure. These are abstracted in some conditions of compatibility between the derivation and the order or the derivation and the valuation, both ultimately stemming from the mean-value-theorem in o-minimal structures. I develop some basic theory around these notions and observe that in the case of few constants (i.e.\\ when the valuation ring contains the constants) these notions specialize to notions thoroughly studied in arXiv:1509.02588",
+    "status": "found"
+  },
+  "2511.13448": {
+    "arxiv_id": "2511.13448",
+    "title": "Spontaneous Emergence of Solitary Waves in Active Flow Networks with Elastic Elements",
+    "authors": [
+      "Rodrigo Fernández-Quevedo García",
+      "Gonçalo Cruz Antunes",
+      "Jens Harting",
+      "Holger Stark",
+      "Chantal Valeriani",
+      "Martin Brandenbourger",
+      "Juan José Mazo",
+      "Paolo Malgaretti",
+      "Miguel Ruiz-García"
+    ],
+    "submission_date": "2025-11-17T14:52:17Z",
+    "latest_updated": "2026-04-02T13:03:58Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.13448v1",
+      "2511.13448v2"
+    ],
+    "abstract": "Flow networks are fundamental for understanding systems such as animal and plant vasculature or power distribution grids. These networks can encode, transmit, and transform information embodied in the spatial and temporal distribution of their flows. In this work, we focus on a minimal yet physically grounded system that allows us to isolate the fundamental mechanisms by which active flow networks generate and regulate emergent dynamics capable of supporting information transmission. The system is composed of active units that pump fluid and elastic units that store volume. From first principles, we derive a discrete model -- an active flow network -- that enables the simulation of large systems with many interacting units. Numerically, we show that the pressure field can develop solitary waves, resulting in the spontaneous creation and transmission of localized packets of information stored in the physical properties of the flow. We characterize how these solitary waves emerge from disordered initial conditions in a one-dimensional network, and how their size and propagation speed depend on key system parameters. Finally, when the elastic units are coupled to their neighbors, the solitary waves exhibit even richer dynamics, with diverse shapes and finite lifetimes that display power-law behaviors that we can predict analytically. Together, these results show how simple fluidic elements can collectively create, shape and transport information, laying the foundations for understanding -- and ultimately engineering -- information processing in active flow systems.",
+    "status": "found"
+  }
+}

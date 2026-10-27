@@ -1,0 +1,421 @@
+{
+  "2601.19256": {
+    "arxiv_id": "2601.19256",
+    "title": "E-QRGMM: Efficient Generative Metamodeling for Covariate-Dependent Uncertainty Quantification",
+    "authors": [
+      "Zhiyang Liang",
+      "Qingkai Zhang"
+    ],
+    "submission_date": "2026-01-27T06:39:24Z",
+    "latest_updated": "2026-01-27T06:39:24Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19256v1"
+    ],
+    "abstract": "Covariate-dependent uncertainty quantification in simulation-based inference is crucial for high-stakes decision-making but remains challenging due to the limitations of existing methods such as conformal prediction and classical bootstrap, which struggle with covariate-specific conditioning. We propose Efficient Quantile-Regression-Based Generative Metamodeling (E-QRGMM), a novel framework that accelerates the quantile-regression-based generative metamodeling (QRGMM) approach by integrating cubic Hermite interpolation with gradient estimation. Theoretically, we show that E-QRGMM preserves the convergence rate of the original QRGMM while reducing grid complexity from $O(n^{1/2})$ to $O(n^{1/5})$ for the majority of quantile levels, thereby substantially improving computational efficiency. Empirically, E-QRGMM achieves a superior trade-off between distributional accuracy and training speed compared to both QRGMM and other advanced deep generative models on synthetic and practical datasets. Moreover, by enabling bootstrap-based construction of confidence intervals for arbitrary estimands of interest, E-QRGMM provides a practical solution for covariate-dependent uncertainty quantification.",
+    "status": "found"
+  },
+  "2601.19257": {
+    "arxiv_id": "2601.19257",
+    "title": "PCEvo: Path-Consistent Molecular Representation via Virtual Evolutionary",
+    "authors": [
+      "Kun Li",
+      "Longtao Hu",
+      "Yida Xiong",
+      "Jiajun Yu",
+      "Hongzhi Zhang",
+      "Jiameng Chen",
+      "Xiantao Cai",
+      "Jia Wu",
+      "Wenbin Hu"
+    ],
+    "submission_date": "2026-01-27T06:40:11Z",
+    "latest_updated": "2026-01-27T06:40:11Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19257v1"
+    ],
+    "abstract": "Molecular representation learning aims to learn vector embeddings that capture molecular structure and geometry, thereby enabling property prediction and downstream scientific applications. In many AI for science tasks, labeled data are expensive to obtain and therefore limited in availability. Under the few-shot setting, models trained with scarce supervision often learn brittle structure-property relationships, resulting in substantially higher prediction errors and reduced generalization to unseen molecules. To address this limitation, we propose PCEvo, a path-consistent representation method that learns from virtual paths through dynamic structural evolution. PCEvo enumerates multiple chemically feasible edit paths between retrieved similar molecular pairs under topological dependency constraints. It transforms the labels of the two molecules into stepwise supervision along each virtual evolutionary path. It introduces a path-consistency objective that enforces prediction invariance across alternative paths connecting the same two molecules. Comprehensive experiments on the QM9 and MoleculeNet datasets demonstrate that PCEvo substantially improves the few-shot generalization performance of baseline methods. The code is available at https://anonymous.4open.science/r/PCEvo-4BF2.",
+    "status": "found"
+  },
+  "2601.19258": {
+    "arxiv_id": "2601.19258",
+    "title": "GhostUI: Unveiling Hidden Interactions in Mobile UI",
+    "authors": [
+      "Minkyu Kweon",
+      "Seokhyeon Park",
+      "Soohyun Lee",
+      "You Been Lee",
+      "Jeongmin Rhee",
+      "Jinwook Seo"
+    ],
+    "submission_date": "2026-01-27T06:40:29Z",
+    "latest_updated": "2026-01-27T06:40:29Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19258v1"
+    ],
+    "abstract": "Modern mobile applications rely on hidden interactions--gestures without visual cues like long presses and swipes--to provide functionality without cluttering interfaces. While experienced users may discover these interactions through prior use or onboarding tutorials, their implicit nature makes them difficult for most users to uncover. Similarly, mobile agents--systems designed to automate tasks on mobile user interfaces, powered by vision language models (VLMs)--struggle to detect veiled interactions or determine actions for completing tasks. To address this challenge, we present GhostUI, a new dataset designed to enable the detection of hidden interactions in mobile applications. GhostUI provides before-and-after screenshots, simplified view hierarchies, gesture metadata, and task descriptions, allowing VLMs to better recognize concealed gestures and anticipate post-interaction states. Quantitative evaluations with VLMs show that models fine-tuned on GhostUI outperform baseline VLMs, particularly in predicting hidden interactions and inferring post-interaction screens, underscoring GhostUI's potential as a foundation for advancing mobile task automation.",
+    "status": "found"
+  },
+  "2601.19259": {
+    "arxiv_id": "2601.19259",
+    "title": "Learning Collective Medication Effects via Multi-level Abstraction for Medication Recommendation",
+    "authors": [
+      "Yanda Wang",
+      "Weitong Chen",
+      "Chao Tan",
+      "Ian Nabney",
+      "Lin Yue",
+      "Genlin Ji"
+    ],
+    "submission_date": "2026-01-27T06:40:50Z",
+    "latest_updated": "2026-01-27T06:40:50Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19259v1"
+    ],
+    "abstract": "Historical prescriptions and selected candidate drugs relevant to the current visit serve as important references for medication recommendation. However, in the absence of explicit intrinsic principles for semantic composition, existing methods treat synergistic drugs as independent entities and fail to capture their collective therapeutic effects, resulting in a mismatch between medication-level references and longitudinal patient representations. In this paper, we propose MSAM, a novel medication recommendation model that bridges the gap via multi-level medication abstraction. The model introduces a multi-head graph reasoning mechanism to organize flat daily medication sets into clinically meaningful semantic units, serving as intermediate abstraction results to propagate features from individual drugs to higher-level representations. Building on these units, MSAM performs two-stage abstraction over historical prescriptions and selected candidates via intra- and inter-level feature propagation across heterogeneous clinical structures, capturing collective therapeutic effects aligned with patient conditions. Experiments on two real-world clinical datasets show that MSAM consistently outperforms state-of-the-art methods, validating the effectiveness of structural medication abstraction for recommendation.",
+    "status": "found"
+  },
+  "2601.19260": {
+    "arxiv_id": "2601.19260",
+    "title": "\"ENERGY STAR\" LLM-Enabled Software Engineering Tools",
+    "authors": [
+      "Himon Thakur",
+      "Armin Moin"
+    ],
+    "submission_date": "2026-01-27T06:40:57Z",
+    "latest_updated": "2026-01-27T06:40:57Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19260v1"
+    ],
+    "abstract": "The discussion around AI-Engineering, that is, Software Engineering (SE) for AI-enabled Systems, cannot ignore a crucial class of software systems that are increasingly becoming AI-enhanced: Those used to enable or support the SE process, such as Computer-Aided SE (CASE) tools and Integrated Development Environments (IDEs). In this paper, we study the energy efficiency of these systems. As AI becomes seamlessly available in these tools and, in many cases, is active by default, we are entering a new era with significant implications for energy consumption patterns throughout the Software Development Lifecycle (SDLC). We focus on advanced Machine Learning (ML) capabilities provided by Large Language Models (LLMs). Our proposed approach combines Retrieval-Augmented Generation (RAG) with Prompt Engineering Techniques (PETs) to enhance both the quality and energy efficiency of LLM-based code generation. We present a comprehensive framework that measures real-time energy consumption and inference time across diverse model architectures ranging from 125M to 7B parameters, including GPT-2, CodeLlama, Qwen 2.5, and DeepSeek Coder. These LLMs, chosen for practical reasons, are sufficient to validate the core ideas and provide a proof of concept for more in-depth future analysis.",
+    "status": "found"
+  },
+  "2601.19261": {
+    "arxiv_id": "2601.19261",
+    "title": "Decoupled Split Learning via Auxiliary Loss",
+    "authors": [
+      "Anower Zihad",
+      "Felix Owino",
+      "Ming Tang",
+      "Chao Huang"
+    ],
+    "submission_date": "2026-01-27T06:41:42Z",
+    "latest_updated": "2026-02-08T21:10:34Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.19261v1",
+      "2601.19261v2"
+    ],
+    "abstract": "Split learning is a distributed training paradigm where a neural network is partitioned between clients and a server, which allows data to remain at the client while only intermediate activations are shared. Traditional split learning relies on end-to-end backpropagation across the client-server split point. This incurs a large communication overhead (i.e., forward activations and backward gradients need to be exchanged every iteration) and significant memory use (for storing activations and gradients). In this paper, we develop a beyond-backpropagation training method for split learning. In this approach, the client and server train their model partitions semi-independently, using local loss signals instead of propagated gradients. In particular, the client's network is augmented with a small auxiliary classifier at the split point to provide a local error signal, while the server trains on the client's transmitted activations using the true loss function. This decoupling removes the need to send backward gradients, which cuts communication costs roughly in half and also reduces memory overhead (as each side only stores local activations for its own backward pass). We evaluate our approach on CIFAR-10 and CIFAR-100. Our experiments show two key results. First, the proposed approach achieves performance on par with standard split learning that uses backpropagation. Second, it significantly reduces communication (of transmitting activations/gradient) by 50% and peak memory usage by up to 58%.",
+    "status": "found"
+  },
+  "2601.19262": {
+    "arxiv_id": "2601.19262",
+    "title": "Handcrafted Feature Fusion for Reliable Detection of AI-Generated Images",
+    "authors": [
+      "Syed Mehedi Hasan Nirob",
+      "Moqsadur Rahman",
+      "Shamim Ehsan",
+      "Summit Haque"
+    ],
+    "submission_date": "2026-01-27T06:43:01Z",
+    "latest_updated": "2026-01-27T06:43:01Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19262v1"
+    ],
+    "abstract": "The rapid progress of generative models has enabled the creation of highly realistic synthetic images, raising concerns about authenticity and trust in digital media. Detecting such fake content reliably is an urgent challenge. While deep learning approaches dominate current literature, handcrafted features remain attractive for their interpretability, efficiency, and generalizability. In this paper, we conduct a systematic evaluation of handcrafted descriptors, including raw pixels, color histograms, Discrete Cosine Transform (DCT), Histogram of Oriented Gradients (HOG), Local Binary Patterns (LBP), Gray-Level Co-occurrence Matrix (GLCM), and wavelet features, on the CIFAKE dataset of real versus synthetic images. Using 50,000 training and 10,000 test samples, we benchmark seven classifiers ranging from Logistic Regression to advanced gradient-boosted ensembles (LightGBM, XGBoost, CatBoost). Results demonstrate that LightGBM consistently outperforms alternatives, achieving PR-AUC 0.9879, ROC-AUC 0.9878, F1 0.9447, and a Brier score of 0.0414 with mixed features, representing strong gains in calibration and discrimination over simpler descriptors. Across three configurations (baseline, advanced, mixed), performance improves monotonically, confirming that combining diverse handcrafted features yields substantial benefit. These findings highlight the continued relevance of carefully engineered features and ensemble learning for detecting synthetic images, particularly in contexts where interpretability and computational efficiency are critical.",
+    "status": "found"
+  },
+  "2601.19263": {
+    "arxiv_id": "2601.19263",
+    "title": "A Reconfigurable Framework for AI-FPGA Agent Integration and Acceleration",
+    "authors": [
+      "Aybars Yunusoglu",
+      "Talha Coskun",
+      "Hiruna Vishwamith",
+      "Murat Isik",
+      "I. Can Dikmen"
+    ],
+    "submission_date": "2026-01-27T06:43:18Z",
+    "latest_updated": "2026-01-27T06:43:18Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19263v1"
+    ],
+    "abstract": "Artificial intelligence (AI) is increasingly deployed in real-time and energy-constrained environments, driving demand for hardware platforms that can deliver high performance and power efficiency. While central processing units (CPUs) and graphics processing units (GPUs) have traditionally served as the primary inference engines, their general-purpose nature often leads to inefficiencies under strict latency or power budgets. Field-Programmable Gate Arrays (FPGAs) offer a promising alternative by enabling custom-tailored parallelism and hardware-level optimizations. However, mapping AI workloads to FPGAs remains challenging due to the complexity of hardware-software co-design and data orchestration. This paper presents AI FPGA Agent, an agent-driven framework that simplifies the integration and acceleration of deep neural network inference on FPGAs. The proposed system employs a runtime software agent that dynamically partitions AI models, schedules compute-intensive layers for hardware offload, and manages data transfers with minimal developer intervention. The hardware component includes a parameterizable accelerator core optimized for high-throughput inference using quantized arithmetic. Experimental results demonstrate that the AI FPGA Agent achieves over 10x latency reduction compared to CPU baselines and 2-3x higher energy efficiency than GPU implementations, all while preserving classification accuracy within 0.2% of full-precision references. These findings underscore the potential of AI-FPGA co-design for scalable, energy-efficient AI deployment.",
+    "status": "found"
+  },
+  "2601.19264": {
+    "arxiv_id": "2601.19264",
+    "title": "Whitespaces Don't Lie: Feature-Driven and Embedding-Based Approaches for Detecting Machine-Generated Code",
+    "authors": [
+      "Syed Mehedi Hasan Nirob",
+      "Shamim Ehsan",
+      "Moqsadur Rahman",
+      "Summit Haque"
+    ],
+    "submission_date": "2026-01-27T06:43:51Z",
+    "latest_updated": "2026-01-27T06:43:51Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19264v1"
+    ],
+    "abstract": "Large language models (LLMs) have made it remarkably easy to synthesize plausible source code from natural language prompts. While this accelerates software development and supports learning, it also raises new risks for academic integrity, authorship attribution, and responsible AI use. This paper investigates the problem of distinguishing human-written from machine-generated code by comparing two complementary approaches: feature-based detectors built from lightweight, interpretable stylometric and structural properties of code, and embedding-based detectors leveraging pretrained code encoders. Using a recent large-scale benchmark dataset of 600k human-written and AI-generated code samples, we find that feature-based models achieve strong performance (ROC-AUC 0.995, PR-AUC 0.995, F1 0.971), while embedding-based models with CodeBERT embeddings are also very competitive (ROC-AUC 0.994, PR-AUC 0.994, F1 0.965). Analysis shows that features tied to indentation and whitespace provide particularly discriminative cues, whereas embeddings capture deeper semantic patterns and yield slightly higher precision. These findings underscore the trade-offs between interpretability and generalization, offering practical guidance for deploying robust code-origin detection in academic and industrial contexts.",
+    "status": "found"
+  },
+  "2601.19265": {
+    "arxiv_id": "2601.19265",
+    "title": "Cosmic Rays as an Interdisciplinary Earth Observation Tool: From Particle Physics and Atmospheric Processes to Geosciences and Urban Science",
+    "authors": [
+      "Bugra Bilin",
+      "Nuhcan Akçit"
+    ],
+    "submission_date": "2026-01-27T06:52:15Z",
+    "latest_updated": "2026-10-14T15:52:58Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 4,
+    "versions": [
+      "2601.19265v1",
+      "2601.19265v2",
+      "2601.19265v3",
+      "2601.19265v4"
+    ],
+    "abstract": "The exploration of cosmic rays, which are high-energy particles originating from space and the atmosphere, has historically been associated with particle physics and astrophysics. In the last 20 years, these particles have evolved into valuable tools for observing Earth's systems. This review compiles the use of cosmic rays in three primary areas: (1) particle physics and atmospheric processes, which include cosmic- ray-induced cascades, ionization, and their impact on atmospheric chemistry and radiation; (2) geosciences, where cosmogenic radionuclides assist in the dating of geological materials and cosmic-ray neutrons are used for large-scale monitoring of soil moisture and snow water equivalents; and (3) urban science, where cosmic- ray muons are employed for non-invasive subsurface imaging and, when paired with distributed sensors, serve as the basis for smart city monitoring. This review places particular emphasis on integrating these methods with remote sensing and geographic information systems (GIS), which helps close the persistent scale gap between point measurements and satellite observations, thereby enabling three-dimensional digital representations of subsurfaces. This review concludes by discussing data standards, their integration into operational Earth observation workflows, and future research directions.",
+    "status": "found"
+  },
+  "2601.19266": {
+    "arxiv_id": "2601.19266",
+    "title": "A Multi-View Consistency Framework with Semi-Supervised Domain Adaptation",
+    "authors": [
+      "Yuting Hong",
+      "Li Dong",
+      "Xiaojie Qiu",
+      "Hui Xiao",
+      "Baochen Yao",
+      "Siming Zheng",
+      "Chengbin Peng"
+    ],
+    "submission_date": "2026-01-27T06:54:13Z",
+    "latest_updated": "2026-01-27T06:54:13Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19266v1"
+    ],
+    "abstract": "Semi-Supervised Domain Adaptation (SSDA) leverages knowledge from a fully labeled source domain to classify data in a partially labeled target domain. Due to the limited number of labeled samples in the target domain, there can be intrinsic similarity of classes in the feature space, which may result in biased predictions, even when the model is trained on a balanced dataset. To overcome this limitation, we introduce a multi-view consistency framework, which includes two views for training strongly augmented data. One is a debiasing strategy for correcting class-wise prediction probabilities according to the prediction performance of the model. The other involves leveraging pseudo-negative labels derived from the model predictions. Furthermore, we introduce a cross-domain affinity learning aimed at aligning features of the same class across different domains, thereby enhancing overall performance. Experimental results demonstrate that our method outperforms the competing methods on two standard domain adaptation datasets, DomainNet and Office-Home. Combining unsupervised domain adaptation and semi-supervised learning offers indispensable contributions to the industrial sector by enhancing model adaptability, reducing annotation costs, and improving performance.",
+    "status": "found"
+  },
+  "2601.19267": {
+    "arxiv_id": "2601.19267",
+    "title": "DiaDem: Advancing Dialogue Descriptions in Audiovisual Video Captioning for Multimodal Large Language Models",
+    "authors": [
+      "Xinlong Chen",
+      "Weihong Lin",
+      "Jingyun Hua",
+      "Linli Yao",
+      "Yue Ding",
+      "Bozhou Li",
+      "Bohan Zeng",
+      "Yang Shi",
+      "Qiang Liu",
+      "Yuanxing Zhang",
+      "Pengfei Wan",
+      "Liang Wang",
+      "Tieniu Tan"
+    ],
+    "submission_date": "2026-01-27T06:55:21Z",
+    "latest_updated": "2026-01-27T06:55:21Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19267v1"
+    ],
+    "abstract": "Accurate dialogue description in audiovisual video captioning is crucial for downstream understanding and generation tasks. However, existing models generally struggle to produce faithful dialogue descriptions within audiovisual captions. To mitigate this limitation, we propose DiaDem, a powerful audiovisual video captioning model capable of generating captions with more precise dialogue descriptions while maintaining strong overall performance. We first synthesize a high-quality dataset for SFT, then employ a difficulty-partitioned two-stage GRPO strategy to further enhance dialogue descriptions. To enable systematic evaluation of dialogue description capabilities, we introduce DiaDemBench, a comprehensive benchmark designed to evaluate models across diverse dialogue scenarios, emphasizing both speaker attribution accuracy and utterance transcription fidelity in audiovisual captions. Extensive experiments on DiaDemBench reveal even commercial models still exhibit substantial room for improvement in dialogue-aware captioning. Notably, DiaDem not only outperforms the Gemini series in dialogue description accuracy but also achieves competitive performance on general audiovisual captioning benchmarks, demonstrating its overall effectiveness.",
+    "status": "found"
+  },
+  "2601.19268": {
+    "arxiv_id": "2601.19268",
+    "title": "Local environmental dependence on weak-lensing shear statistics",
+    "authors": [
+      "Sonia Akter Ema",
+      "Md Rasel Hossen",
+      "Krzysztof Bolejko",
+      "Geraint F. Lewis"
+    ],
+    "submission_date": "2026-01-27T07:00:38Z",
+    "latest_updated": "2026-01-27T07:00:38Z",
+    "revised_dates": null,
+    "venue": "Physical Review D 113, 043540 (2026)",
+    "latest_version": 1,
+    "versions": [
+      "2601.19268v1"
+    ],
+    "abstract": "Despite the assumption that an ideal FLRW observer is not dependent on the local environment, observations are biased by the positions of the observers due to the matter correlations in the large-scale structure (LSS) of the universe. The variation of the mass distribution of the LSS of the universe implies that observers residing in different locations may suffer bias in their measurements when they look at the images of distant galaxies. Here, we assess the influence of the local environment on weak gravitational lensing (WL) shear statistics in the context of relativistic $N$-body code, \\texttt{gevolution}. We derive numerical constraints on the cosmological parameters from the WL shear angular power spectrum and comment on the local environment's influence on WL shear. We find tighter constraints on the parameter $Ω_\\mathrm{m}$ above redshift $z$ = 0.2, which implies over this redshift the local environment's impact is minor. We also investigate the bispectrum and conclude that on average the impact of the local environment on $f_{\\rm NL}$ (a measure of non-Gaussianities) is minimal and consistent with zero effect. However, we find that within the assembly of all possible observers/locations, there will also be a few that could infer the parameter $f_{\\rm NL}$ of the order 10. These results could thus be used to estimate the uncertainty in the inference of cosmological parameters such as $f_{\\rm NL}$ based on WL shear bispectrum and thus may have implications for future surveys requiring precision at the percent level.",
+    "status": "found"
+  },
+  "2601.19269": {
+    "arxiv_id": "2601.19269",
+    "title": "A Personalized and Adaptable User Interface for a Speech and Cursor Brain-Computer Interface",
+    "authors": [
+      "Hamza Peracha",
+      "Carrina Iacobacci",
+      "Tyler Singer-Clark",
+      "Leigh R. Hochberg",
+      "Sergey D. Stavisky",
+      "David M. Brandman",
+      "Nicholas S. Card"
+    ],
+    "submission_date": "2026-01-27T07:02:08Z",
+    "latest_updated": "2026-01-27T07:02:08Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19269v1"
+    ],
+    "abstract": "Communication and computer interaction are important for autonomy in modern life. Unfortunately, these capabilities can be limited or inaccessible for the millions of people living with paralysis. While implantable brain-computer interfaces (BCIs) show promise for restoring these capabilities, little has been explored on designing BCI user interfaces (UIs) for sustained daily use. Here, we present a personalized UI for an intracortical BCI system that enables users with severe paralysis to communicate and interact with their computers independently. Through a 22-month longitudinal deployment with one participant, we used iterative co-design to develop a system for everyday at-home use and documented how it evolved to meet changing needs. Our findings highlight how personalization and adaptability enabled independence in daily life and provide design implications for developing future BCI assistive technologies.",
+    "status": "found"
+  },
+  "2601.19270": {
+    "arxiv_id": "2601.19270",
+    "title": "Confinement and Chiral Phase Transitions: The Role of Polyakov Loop Kinetics Terms",
+    "authors": [
+      "Banghui Hua",
+      "Jiang Zhu"
+    ],
+    "submission_date": "2026-01-27T07:02:22Z",
+    "latest_updated": "2026-03-28T19:52:46Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.19270v1",
+      "2601.19270v2"
+    ],
+    "abstract": "We studied a crucial but often oversimplified ingredient in predicting gravitational-wave signals from QCD-type phase transitions: the kinetic term of the Polyakov loop. For the first time, we derive this term from first principles in finite-temperature pure SU(3) Yang-Mills theory, incorporating a field-dependent renormalization factor--a calculation we also extend to theories with more colors. Employing this derived kinetic term alongside three commonly-used effective potentials (the Haar-measure, polynomial, and quasi-particle models), we demonstrate that it substantially modifies the predicted GW energy spectrum from confinement transitions by 1-2 orders of magnitude. Based on this, we provide the first complete analysis of the chiral transition within the Polyakov-Nambu-Jona-Lasinio (PNJL) framework, described by the quark condensate. Our results reveal a clear dichotomy: while the Polyakov-loop kinetic term critically shapes GWs from confinement transitions, it has a negligible impact on the dynamics of the chiral transition, which is dominated by fermion condensation effects.",
+    "status": "found"
+  },
+  "2601.19271": {
+    "arxiv_id": "2601.19271",
+    "title": "Etude des morphismes pr{é}servant les mots primitifs",
+    "authors": [
+      "Francis Wlazinski"
+    ],
+    "submission_date": "2026-01-27T07:02:27Z",
+    "latest_updated": "2026-01-27T07:02:27Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19271v1"
+    ],
+    "abstract": "This article provides a reminder of some properties of primitive words and the morphisms that preserve them. Their proofs, which I have more or less revised, are included. This makes the article almost self-contained. I also contribute by giving some properties of primitive words, but especially by showing that a morphism without powers k($\\ge$ 5) is primitive and that a uniform morphism without powers k($\\ge$ 2) is primitive.",
+    "status": "found"
+  },
+  "2601.19272": {
+    "arxiv_id": "2601.19272",
+    "title": "On an improved restricted reverse weak-type bound for the maximal operator",
+    "authors": [
+      "Andrei K. Lerner"
+    ],
+    "submission_date": "2026-01-27T07:03:25Z",
+    "latest_updated": "2026-01-27T07:03:25Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19272v1"
+    ],
+    "abstract": "We obtain an improved lower bound for the restricted reverse weak-type estimate of the Hardy-Littlewood maximal operator $M$. This result is applied to the $λ$-median maximal operator $m_λ$ acting on a Banach function space $X$. We show that under certain assumptions on $X$, the boundedness properties of $m_λ$ and $M$ are equivalent.",
+    "status": "found"
+  },
+  "2601.19273": {
+    "arxiv_id": "2601.19273",
+    "title": "Riddle Quest : The Enigma of Words",
+    "authors": [
+      "Niharika Sri Parasa",
+      "Chaitali Diwan",
+      "Srinath Srinivasa"
+    ],
+    "submission_date": "2026-01-27T07:03:29Z",
+    "latest_updated": "2026-01-27T07:03:29Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19273v1"
+    ],
+    "abstract": "Riddles are concise linguistic puzzles that describe an object or idea through indirect, figurative, or playful clues. They are a longstanding form of creative expression, requiring the solver to interpret hints, recognize patterns, and draw inferences to identify the answers. In this work, we introduce a simple pipeline for creating and evaluating analogy-based riddles. The system includes a triples creator that builds structured facts about a concept, a semantic mapper that selects attributes useful for analogy, a stylized generator that turns them into riddle clues, and a validator that collects all possible answers the riddle could point to. We use this validator to study whether large language models can recover the full answer set for different riddle types. Our case study shows that while models often guess the main intended answer, they frequently miss other valid interpretations. This highlights the value of riddles as a lightweight tool for examining reasoning coverage and ambiguity handling in language models.",
+    "status": "found"
+  },
+  "2601.19274": {
+    "arxiv_id": "2601.19274",
+    "title": "Variable Elliptic Structures on the Plane: Transport Dynamics, Rigidity, and Function Theory",
+    "authors": [
+      "Daniel Alayón-Solarz"
+    ],
+    "submission_date": "2026-01-27T07:04:00Z",
+    "latest_updated": "2026-03-20T08:23:13Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 5,
+    "versions": [
+      "2601.19274v1",
+      "2601.19274v2",
+      "2601.19274v3",
+      "2601.19274v4",
+      "2601.19274v5"
+    ],
+    "abstract": "We develop a theory of variable elliptic structures on planar domains, in which the imaginary unit $i(x,y)$ is a moving generator of a rank-two real algebra bundle defined by a smoothly varying quadratic relation. Differentiating this relation produces an intrinsic obstruction $G = i_x + i\\, i_y$ that governs all deviations from the constant-coefficient theory, such as the inhomogeneity of the generalized Cauchy-Riemann system and the forcing of a universal complex inviscid Burgers equation satisfied by the spectral parameter. The vanishing of $G$ -- rigidity -- selects the conservative regime of this transport law and simultaneously restores a coherent function theory: Cauchy-Pompeiu representation, covariant holomorphicity with gauge structure, a similarity principle, and a factorization of the variable Laplacian. A rigidity-flatness theorem shows that the only structure that is both rigid and Riemannian-flat is the constant one. Translated into Beltrami coordinates, the rigidity condition becomes $μ_{\\bar{z}} = μ\\, μ_z$: the structure map satisfies its own Beltrami equation, a self-dilatation property in the Poincaré disk. The central result is the Fundamental Independence Theorem: the Beltrami modulus $\\|μ\\|_{C^0}$ (zeroth order) and the transport obstruction $\\|R(μ)\\|_{C^{0,α}}$ (first order) are independently prescribable.",
+    "status": "found"
+  },
+  "2601.19275": {
+    "arxiv_id": "2601.19275",
+    "title": "Tactile Memory with Soft Robot: Robust Object Insertion via Masked Encoding and Soft Wrist",
+    "authors": [
+      "Tatsuya Kamijo",
+      "Mai Nishimura",
+      "Nodoka Shibasaki",
+      "Jeremy Siburian",
+      "Cristian C. Beltran-Hernandez",
+      "Masashi Hamaya"
+    ],
+    "submission_date": "2026-01-27T07:04:01Z",
+    "latest_updated": "2026-09-09T01:21:46Z",
+    "revised_dates": null,
+    "venue": "IEEE Robotics and Automation Letters, vol. 11, no. 7, pp. 7844-7851, July 2026",
+    "latest_version": 2,
+    "versions": [
+      "2601.19275v1",
+      "2601.19275v2"
+    ],
+    "abstract": "Tactile memory, the ability to store and retrieve touch-based experience, is critical for contact-rich tasks such as key insertion under uncertainty. To replicate this capability, we introduce Tactile Memory with Soft Robot (TaMeSo-bot), a system that integrates a soft wrist with tactile retrieval-based control to enable safe and robust manipulation. The soft wrist allows safe contact exploration during data collection, while tactile memory reuses past demonstrations via retrieval for flexible adaptation to unseen scenarios. The core of this system is the Masked Tactile Trajectory Transformer (MAT$^\\text{3}$), which jointly models spatiotemporal interactions between robot actions, distributed tactile cues, force-torque measurements, and proprioceptive signals. Through masked token prediction, MAT$^\\text{3}$ learns rich spatiotemporal representations by inferring missing sensory information from context, autonomously extracting task-relevant features without explicit subtask segmentation. We validate our approach on peg-in-hole tasks with diverse pegs and conditions in real-robot experiments. Our extensive evaluation demonstrates that MAT$^\\text{3}$ achieves higher success rates than the baselines over all conditions and shows remarkable capability to adapt to unseen pegs and conditions.",
+    "status": "found"
+  }
+}

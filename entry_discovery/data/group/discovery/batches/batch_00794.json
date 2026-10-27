@@ -1,0 +1,415 @@
+{
+  "2609.13714": {
+    "arxiv_id": "2609.13714",
+    "title": "Certifying Model Upgrades with Slice-Wise Non-Regression and Incumbent Fallback",
+    "authors": [
+      "Shengwei Zhang",
+      "Tao Wu",
+      "Fei Qian"
+    ],
+    "submission_date": "2026-09-12T05:00:50Z",
+    "latest_updated": "2026-09-12T05:00:50Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13714v1"
+    ],
+    "abstract": "An updated model can improve an aggregate metric while degrading a slice that matters to a downstream user. We study checkpoint selection subject to non-regression tolerances relative to a retained incumbent. The central distinction is between failing to detect harm and certifying non-inferiority: the former can release harmful updates with high probability when evaluation is noisy. We give a reproducible release procedure that separates candidate search from independent, paired evaluation and returns the exact incumbent when certification fails. Applying established intersection-union and Learn-then-Test principles, we state finite-sample guarantees for one frozen candidate, a finite candidate library, and a prespecified testing order. A joint release decision does not require a slice-count Bonferroni penalty, although certification power can still decrease with the number of slices. In bounded-score simulations, a no-detected-harm gate releases a harmful candidate in 99.7% of trials in one 32-slice setting, compared with 2.6% for an exact non-inferiority gate at a 5% target. A constructed two-block family yields larger certified utility than a scalar path under matched candidate counts. Public digits experiments, including a subsequent continuation that improves average aggregate accuracy, return the incumbent in every run because certification is underpowered. These results establish an auditable protocol and its limitations; they do not establish benefits on foundation-model or multilingual translation upgrades.",
+    "status": "found"
+  },
+  "2609.13715": {
+    "arxiv_id": "2609.13715",
+    "title": "Event-Time Order-Flow Memory, Operational-Time Impact, and Subordinated Market Observables",
+    "authors": [
+      "Christopher Angstmann",
+      "Tim Gebbie"
+    ],
+    "submission_date": "2026-09-12T05:00:57Z",
+    "latest_updated": "2026-09-12T05:00:57Z",
+    "revised_dates": null,
+    "venue": "J. Stat. Mech. (2026) 103402",
+    "latest_version": 1,
+    "versions": [
+      "2609.13715v1"
+    ],
+    "abstract": "We consider two canonical market-microstructure regularities: the long-memory of trade signs and the square-root law of meta-order impact. The point is not to propose new empirical laws, but to separate the clocks on which existing laws are defined. The sign-memory law is an event-time statement about the ordering and fragmentation of hidden orders. The square-root impact law is an operational-time statement about front motion in a locally linear latent order book. Starting from a discrete-time random-walk bid/ask reaction--diffusion order book with a separate event clock, we identify an event-time imbalance reduction, derive the operational-time front and impact equations in the locally linear regime, and then subordinate both sign and impact observables to calendar time. Fractional or tempered clock effects enter through this event-to-calendar projection, not through a different operational-time impact mechanism. This gives a compact clock-aware framework in which event-time sign persistence, operational-time square-root impact, and anomalous calendar-time effects appear as distinct but compatible consequences of a common order-book representation.",
+    "status": "found"
+  },
+  "2609.13716": {
+    "arxiv_id": "2609.13716",
+    "title": "JaxAHT: A JAX-Based Library for Ad Hoc Teamwork",
+    "authors": [
+      "Caroline Wang",
+      "Rolando Fernandez",
+      "Zelal Su Mustafaoglu",
+      "Montek Singh Kundan",
+      "Johnny Liu",
+      "Aditya Madhan",
+      "Zhihan Wang",
+      "Lingyun Xiao",
+      "Di Yang Shi",
+      "Jiaxun Cui",
+      "Arrasy Rahman",
+      "Peter Stone"
+    ],
+    "submission_date": "2026-09-12T05:01:27Z",
+    "latest_updated": "2026-10-11T18:20:23Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2609.13716v1",
+      "2609.13716v2"
+    ],
+    "abstract": "As autonomous agents are increasingly deployed, they must be able to coordinate with previously unseen agents, such as humans. This challenge has been formalized as Ad Hoc Teamwork (AHT), and has attracted a substantial body of research. However, progress has been hindered by the prohibitive computational cost of the AHT research lifecycle, lack of standardized benchmark implementations, and the absence of a diverse, validated evaluation teammate suite. This work introduces JaxAHT, the first open-source, JAX-based library designed to accelerate and standardize the AHT research lifecycle. Leveraging JAX's hardware acceleration and massive parallelization capabilities, JaxAHT provides a unified framework for teammate generation, ego agent training, and evaluation against unseen teammates, achieving approximately 95x wall-clock speedup over existing PyTorch counterparts. Along with the library, we contribute a diverse suite of evaluation teammates across Level-Based Foraging, Overcooked, and Hanabi. Using JaxAHT, we conduct a large-scale, compute-controlled benchmark study of AHT algorithms, finding that no algorithm consistently performs best, that agent modeling primarily offers benefits in role-based scenarios, and that best response returns are underestimated by reinforcement learning from scratch.",
+    "status": "found"
+  },
+  "2609.13717": {
+    "arxiv_id": "2609.13717",
+    "title": "MANAS-2: Constrained Reconstruction for EEG Foundation Models",
+    "authors": [
+      "Arvasu Kulkarni",
+      "Aditya Ray Mishra",
+      "Jeet Bandhu Lahiri",
+      "Mahir Jain",
+      "Parshva Runwal",
+      "Lakshya Saini",
+      "Siddharth Panwar",
+      "Sandeep Singh"
+    ],
+    "submission_date": "2026-09-12T05:04:07Z",
+    "latest_updated": "2026-09-15T05:48:30Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2609.13717v1",
+      "2609.13717v2"
+    ],
+    "abstract": "Masked reconstruction is widely used for EEG foundation models, but optimizing reconstruction on low-SNR waveforms does not necessarily produce the most useful latent representation. We introduce MANAS-2, a new EEG foundation model that combines a Raw-Band Hybrid (RBH) masked autoencoder with Constrained Reconstruction (ConRec), a physics-motivated regularizer. RBH jointly reconstructs temporal waveform patches and compact spectral-band targets, while ConRec acts only on the temporal decoder output, penalizing differences in RMS energy between adjacent short windows of the reconstructed waveform. ConRec is intended to shape the encoder by biasing it toward the organization of oscillatory-envelope information. Across seven held-out EEG datasets, adding ConRec to an otherwise identical RBH model increases frozen ridge recovery of six-band spectral power from mean R^2=0.860 to 0.906 and recovery of inter-patch band-energy dynamics from R^2=0.283 to 0.354, while temporal waveform information remains highly recoverable from the frozen latents. Applied to a temporal-only masked autoencoder, ConRec also improves frozen downstream transfer and frequency-dependent latent geometry despite receiving no spectral targets: i.e., the effects of ConRec are architecture-independent. MANAS-2 also outperforms leading EEG Foundation Models on most downstream knowledge-transfer tasks. From the effects of ConRec, we see that a physically motivated constraint imposed through the decoder can make for a more spectrally organized and transferable latent space. MANAS-2 therefore provides a new EEG foundation model built around constrained reconstruction as a mechanism for shaping representation--rather than reconstruction--quality.",
+    "status": "found"
+  },
+  "2609.13718": {
+    "arxiv_id": "2609.13718",
+    "title": "Oops, Not Now: PEARL, a RAG-Based Support Agent for Gameplay and What Players Want from AI Help",
+    "authors": [
+      "Jiahong Li",
+      "Sai Siddartha Maram",
+      "Atieh Kashani",
+      "Ulia Zaman",
+      "Zhiyu Lin",
+      "Cameron Marano",
+      "Roger Azevedo",
+      "Jichen Zhu",
+      "Magy Seif El-Nasr"
+    ],
+    "submission_date": "2026-09-12T05:05:29Z",
+    "latest_updated": "2026-09-12T05:05:29Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13718v1"
+    ],
+    "abstract": "AI-powered gameplay support agents hold promise for game-based learning, yet grounding generative models in structured game data remains an open challenge. We present PEARL (Parallel Education Agent for Reflection and Learning), a dual-component Retrieval-Augmented Generation (RAG) system that combines semantic knowledge retrieval with structural board-state matching to deliver contextualized scaffolding in Parallel, a puzzle game for learning parallel programming. PEARL operates on two input streams (natural language queries and board topology), retrieving both conceptual explanations of gameplay moves and peer-generated board states as evidence: capabilities unavailable to a standard Large Language Model (LLM) with game state access alone. In a qualitative evaluation (N=10) comparing PEARL against an existing community-based Open Player Model (OPM) visualization system, participants preferred the visualization system on perceived usefulness and reported higher frustration with PEARL; five of ten minimized or abandoned the AI tool during play. Proactive delivery, generic responses, and trust deficits drove disengagement, while a subset of four participants found PEARL's grounded explanations complementary to visualization in specific contexts where they initiated the interaction. We position PEARL as a deployed design probe whose failure modes inform a concrete design agenda for AI gameplay support, captured as seven open problems for the community.",
+    "status": "found"
+  },
+  "2609.13719": {
+    "arxiv_id": "2609.13719",
+    "title": "PatchRisk: Forecasting Future Vulnerability Exposure in Open-Source Dependency Networks",
+    "authors": [
+      "Ashfaq Ali Shafin",
+      "Khandaker Mamun Ahmed"
+    ],
+    "submission_date": "2026-09-12T05:09:17Z",
+    "latest_updated": "2026-10-21T16:53:37Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2609.13719v1",
+      "2609.13719v2"
+    ],
+    "abstract": "Open-source software ecosystems are web-scale dependency networks. A downstream package can become exposed to security risk not because its own source code changes, but because one of its transitive dependencies later receives a vulnerability advisory. Existing vulnerability-detection work often focuses on whether code is currently vulnerable or whether a known vulnerable dependency is already present. We study a different problem: future transitive vulnerability exposure. Given a package-version dependency graph observed at release time, the task is to predict whether any non-root dependency will receive a vulnerability advisory within a future horizon. This problem is important for Web intelligence and software supply-chain security because it supports proactive dependency triage before future exposure is visible. It is also easy to evaluate incorrectly: current vulnerable dependencies can leak the label, and different versions of the same root package can create package-level memorization across train and test splits. We therefore construct PatchRisk, a leakage-aware benchmark from Open Source Vulnerability advisories and deps.dev dependency graphs for npm and PyPI. The benchmark uses filtration-aware labels, package-disjoint evaluation, temporal testing, and nested 1K, 3K, 5K, and 10K sampling scales. The largest cleaned setting contains 9,007 root package-version graphs spanning 4,157 root packages. We evaluate three feature families: TimeOnly, GraphStruct, and HistoryGraph. On the 10K temporal-test benchmark, HistoryGraph improves AUPRC over the strongest TimeOnly baseline from 0.351 to 0.640 for 90-day forecasting and from 0.473 to 0.813 for 365-day forecasting. The improvement remains stable across smaller scales and package-group shuffle robustness tests.",
+    "status": "found"
+  },
+  "2609.13720": {
+    "arxiv_id": "2609.13720",
+    "title": "Nonequilibrium Apparent-Horizon Thermodynamics in Effective Loop Quantum Cosmology",
+    "authors": [
+      "Xiao Liu"
+    ],
+    "submission_date": "2026-09-12T05:11:24Z",
+    "latest_updated": "2026-09-12T05:11:24Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13720v1"
+    ],
+    "abstract": "In this work, we investigate the thermodynamic consistency of the apparent horizon in effective loop quantum cosmology (LQC). By retaining the standard definitions of horizon thermodynamic quantities, we find that the modified LQC dynamics leads to a departure from the classical equilibrium thermodynamic description. This deviation can be naturally described by a nonequilibrium formulation characterized by an internal entropy production term. The resulting entropy production consistently recovers the classical and de Sitter limits. These results suggest that the apparent horizon in effective LQC admits a coherent nonequilibrium thermodynamic interpretation.",
+    "status": "found"
+  },
+  "2609.13721": {
+    "arxiv_id": "2609.13721",
+    "title": "Scaling Hindi Quantum Natural Language Processing through Automatic Pregroup Supertagging",
+    "authors": [
+      "Gautami Sanjay Naik",
+      "Krishna Bhatia",
+      "Mithun Paul Saint-Germain",
+      "H Aswath Babu"
+    ],
+    "submission_date": "2026-09-12T05:13:45Z",
+    "latest_updated": "2026-09-12T05:13:45Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13721v1"
+    ],
+    "abstract": "Quantum Natural Language Processing (QNLP) uses pregroup grammars to translate grammatical structure into diagrammatic representations and quantum circuits. Recent Hindi QNLP work has shown that Hindi-specific pregroup grammars can support grammar-sensitive compositional models, but grammatical type assignment is still largely manual, limiting scalability. This paper formulates automatic Hindi pregroup supertagging as a token-level classification task. Using a manually annotated corpus of 380 Hindi sentences, we evaluate lexical, contextual, prompting-based, lexical-repair, and suffix/morphology-aware methods. Results show that simple lexical and contextual models are strong in this low-resource setting: contextual backoff achieves the best completed accuracy of 64.56\\%, while raw Qwen2.5 prompting reaches only 11.65\\%. Lexical repair raises LLM-assisted prediction to 64.08\\%, demonstrating the value of constraining generative outputs with symbolic grammar knowledge. Diagnostic analysis further shows that seen and unambiguous tokens are much easier than unseen tokens, and suffix/morphology features improve karaka-token accuracy but not overall performance. These results show that automatic Hindi pregroup assignment is feasible and can reduce reliance on manual annotation in future multilingual QNLP pipelines.",
+    "status": "found"
+  },
+  "2609.13722": {
+    "arxiv_id": "2609.13722",
+    "title": "Gradient self-improvement for mixed local and nonlocal parabolic equations",
+    "authors": [
+      "Kenta Nakamura"
+    ],
+    "submission_date": "2026-09-12T05:13:57Z",
+    "latest_updated": "2026-09-12T05:13:57Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13722v1"
+    ],
+    "abstract": "We introduce a new method for studying gradient higher integrability for mixed local and nonlocal parabolic equations. More precisely, for $p>2d/(d+2)$ and $s \\in (0,1)$, we prove that if the inhomogeneity $F \\in L^{p(1+σ)}_{\\mathrm{loc}}$ for some $σ>0$, then every weak solution satisfies $\\nabla u \\in L^{p(1+\\eps)}_{\\mathrm{loc}}$ for some $\\eps>0$, together with quantitative local estimates. The proof relies on stopping time arguments and an intrinsic Calderón-Zygmund-type covering decomposition in which the inhomogeneity and nonlocal energy contributions are treated by classical and fractional maximal estimates.",
+    "status": "found"
+  },
+  "2609.13723": {
+    "arxiv_id": "2609.13723",
+    "title": "Layer- and Orbital-Selective Mott Physics Driving Dimensional Crossover in Nickelate Superlattices",
+    "authors": [
+      "Minjae Kim",
+      "Byungmin Sohn",
+      "Sangjae Lee"
+    ],
+    "submission_date": "2026-09-12T05:15:07Z",
+    "latest_updated": "2026-09-12T05:15:07Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13723v1"
+    ],
+    "abstract": "The design of quantum materials to manipulate dimensionality and electronic correlations is a central focus in the exploration of emergent phenomena. We propose a new correlated quantum material platform for realizing a layer- and orbital-selective Mott transition (LOSMT) in a nickelate heterostructure by combining bilayer and monolayer LaNiO$_3$ separated by a monolayer LaAlO$_3$ spacer under compressive strain from the LaAlO$_3$ substrate. The LOSMT emerges from the layer-dependent dimensional confinement of the apical Ni($d$)-$z^2$ orbital and strain-induced lifting of the orbital degeneracy. The monolayer LaNiO$_3$ exhibits an orbital-selective Mott insulating phase with a Mott gap in the Ni($d$)-$z^2$ orbital, whereas the bilayer LaNiO$_3$ exhibits a multi-orbital metallic phase, triggering the orbital-selective Mott transition upon cooling $via$ inter-layer hybridization of the Ni($d$)-$z^2$ orbitals. Calculations within the density functional theory plus dynamical mean-field theory (DFT+DMFT) framework reveal that the LOSMT drives a dimensional crossover by enabling out-of-plane electronic transport through the metallization of the localized apical Ni($d$)-$z^2$ orbital, while the planar Ni($d$)-$x^2-y^2$ orbital remains itinerant across the transition. The emergence of the LOSMT provides a new pathway for engineering correlated quantum materials toward unconventional superconductivity and Mott-transistor functionalities.",
+    "status": "found"
+  },
+  "2609.13724": {
+    "arxiv_id": "2609.13724",
+    "title": "Lagrangian approach to origami vertex analysis: Multistability",
+    "authors": [
+      "Matthew Grasinger",
+      "Andrew Gillman",
+      "Philip Buskohl"
+    ],
+    "submission_date": "2026-09-12T05:18:01Z",
+    "latest_updated": "2026-10-19T20:21:38Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2609.13724v1",
+      "2609.13724v2"
+    ],
+    "abstract": "Studying the multistability of origami structures presents challenges due to the nonlinearity of their kinematics and the high-dimensional configuration spaces that are difficult to visualize and explore exhaustively. To address this, we utilize the Lagrangian framework for origami to exploit symmetries and obtain reduced-dimensional slices of the configuration space. Our analysis of degree-6 vertices with reflection symmetry reveals topological transitions in their kinematic space as sector angles are varied, with implications for the number of symmetry-constrained minima and the emergence of metastable regions. These lower-dimensional slices are amenable to exhaustive search and visualization. A subsequent full-space stability analysis shows that 18 of 41 degree-6 and 14 of 45 degree-8 symmetry-constrained minima remain minima when all locally compatible perturbations, including those that break symmetry, are admitted. The metastable regions, which would likely be overlooked by numerical optimization alone, are influenced by the interplay between the boundaries of admissible kinematic space and crease mechanical properties. We extend our analysis to cone-like vertices with higher symmetry and one-degree-of-freedom kinematics, exploring symmetry-breaking phenomena, combinatorial structure, and their consequences for branchwise stability. The stability landscapes uncovered have potential applications in mechanical metamaterials, mechanical computing, origami-based robotics, and structures designed to self-deploy and retain their shape.",
+    "status": "found"
+  },
+  "2609.13725": {
+    "arxiv_id": "2609.13725",
+    "title": "IBBench-Light: A Paired Evaluation of Task-Conditioned Responses to External Directives",
+    "authors": [
+      "Kainan Zhou",
+      "Zhaoyi Li",
+      "Janet Sung",
+      "Gangzhen Qian",
+      "Hang Xiao"
+    ],
+    "submission_date": "2026-09-12T05:27:20Z",
+    "latest_updated": "2026-10-09T04:54:13Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2609.13725v1",
+      "2609.13725v2",
+      "2609.13725v3"
+    ],
+    "abstract": "An external record may contain a procedure to apply or text to read, depending on the user's request. IBBench-Light tests both uses against the same record. Twelve semantic bases yield 144 matched pairs per model; four quantized instruction models produced 1,152 archived greedy responses. Paired exact-contract accuracy (PECA) requires both members to satisfy their output contracts. Qwen succeeds on 132 execute and 109 process prompts, but only 97 complete pairs, showing what marginal averages omit. We audit literal-target exposure and case normalization, then add 1,722 logged CPU generations to test directive-absent controls, twelve additional semantic bases, within-base wording changes, and generation stopping. In the pinned Phi rerun, changing the end-of-sequence (EOS) set changes exact paired success from 0/144 to 62/144. A bounded IHEval comparison uses the same SmolLM2 checkpoint and output budget while preserving its published instruction roles and scorer. The benchmark measures conditional task and output-contract success. Its task margins and paired count need to be read together with the stopping policy.",
+    "status": "found"
+  },
+  "2609.13726": {
+    "arxiv_id": "2609.13726",
+    "title": "Some entropic inequalities for primitive KMS symmetric quantum Markov semigroups",
+    "authors": [
+      "Zhengwei Liu",
+      "Jincheng Wan",
+      "Jinsong Wu"
+    ],
+    "submission_date": "2026-09-12T05:30:40Z",
+    "latest_updated": "2026-09-12T05:30:40Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13726v1"
+    ],
+    "abstract": "In this note, we prove that every primitive KMS-symmetric quantum Markov semigroup on a finite-dimensional matrix algebra satisfies a modified logarithmic Sobolev inequality (MLSI). We also construct a primitive quantum Markov semigroup without KMS symmetry that fails MLSI, and a primitive KMS-symmetric quantum Markov semigroup that fails complete MLSI (CMLSI). The latter construction also provides a non-primitive KMS-symmetric quantum Markov semigroup without MLSI. For the graph-based KMS-symmetric quantum Markov semigroups studied here, we prove MLSI and CMLSI when the underlying graph is connected and has at least three vertices. Finally, we establish CMLSI for a class of primitive bimodule KMS-symmetric quantum Markov semigroups arising from fermionic systems.",
+    "status": "found"
+  },
+  "2609.13727": {
+    "arxiv_id": "2609.13727",
+    "title": "\"What Can I Do for You'': How Should AI Companions Provide Assistance to Players in Virtual Reality Games",
+    "authors": [
+      "Taiyu Zhang",
+      "Xinnian Zhao",
+      "Adalberto L. Simeone"
+    ],
+    "submission_date": "2026-09-12T05:32:23Z",
+    "latest_updated": "2026-09-12T05:32:23Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13727v1"
+    ],
+    "abstract": "Recent advances in artificial intelligence (AI) have expanded the capabilities of non-player characters (NPCs), enabling them to perceive game states, perform in-game actions. In immersive virtual reality (VR) games, such assistance is not limited to providing hints or interface-level support: an AI companion can appear as a co-present character, share the player's spatial environment, and visibly act on game objects. This raises a design question for VR gameplay: how can AI companions best assist players while preserving their active participation in the virtual world? To explore this question, we developed a VR puzzle game for Apple Vision Pro featuring an AI companion across four gameplay modes: no assistance, command-based assistance, discussion-based assistance, and autonomous agent play. A within-subjects study with 24 participants showed that AI assistance significantly reduced players' workload. However, autonomous agent play, despite producing the lowest workload, substantially diminished player experience by reducing challenge, autonomy, immersion, and enjoyment. Qualitative analysis further showed that players evaluated the companion not only by its usefulness, but also by whether it felt like a tool, a teammate, or an integrated character in the game world. We categorised participants into four player types and summarised their expectations of AI companions. These findings provide design implications for AI companions as embodied participants in VR games.",
+    "status": "found"
+  },
+  "2609.13728": {
+    "arxiv_id": "2609.13728",
+    "title": "TyPatch: Transforming Patches into Typestate Rules for Kernel Bug Detection",
+    "authors": [
+      "Ruoyu Wang",
+      "Tuo Li",
+      "Jia Li"
+    ],
+    "submission_date": "2026-09-12T05:34:12Z",
+    "latest_updated": "2026-09-12T05:34:12Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13728v1"
+    ],
+    "abstract": "Historical Linux kernel patches capture defect knowledge that applies beyond their original repair sites. Recent work has shown that large language models (LLMs) can generate static-analysis checkers from historical patches and use them to uncover new kernel bugs. However, complete-checker generation requires the model both to recover the defect semantics expressed by a patch and to implement sophisticated program-analysis machinery, including object tracking, alias analysis, path-state maintenance, and interprocedural propagation. Coupling these responsibilities in a single end-to-end code-generation task can turn a simple defect rule into an unstable and expensive analyzer-implementation problem. To address this problem, we present TyPatch, which decouples patch-specific defect semantics from analyzer implementation. An LLM translates each patch into a typestate rule specifying its tracked object, actions, guards, transitions, and violations. A shared backend then executes these rules, binding their actions to program events, tracking object identity across aliases, propagating typestate along program paths, and producing reports for all rules. On Linux v6.16, TyPatch finds 559 distinct bugs, 121 of which have been confirmed by kernel developers. In a matched 38-patch comparison with the state-of-the-art complete-checker construction workflow, TyPatch uses 88.3-90.1% fewer generation tokens, while its initial report pools achieve 3.42-14.95$\\times$ the precision of those produced by that workflow.",
+    "status": "found"
+  },
+  "2609.13729": {
+    "arxiv_id": "2609.13729",
+    "title": "A Variational Optimal Transport Operator on Incompressible Flow",
+    "authors": [
+      "Jinjin He",
+      "Shenyifan Lu",
+      "Sinan Wang",
+      "Zhiqi Li",
+      "Duowen Chen",
+      "Bo Zhu"
+    ],
+    "submission_date": "2026-09-12T05:43:44Z",
+    "latest_updated": "2026-09-12T05:43:44Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13729v1"
+    ],
+    "abstract": "We present the Variational Incompressible Optimal Transport (VIOT) operator, a generative neural operator for amortized incompressible density transport. Given a new source-target density pair, VIOT predicts a divergence-free velocity field and generates the full transport trajectory by feed-forward inference, replacing the hour-scale per-pair optimization used by adjoint fluid solvers and differentiable simulation baselines. The system consists of three components: a stream-function or vector-potential representation that enforces incompressibility by construction, a regularized incompressible transport objective that balances endpoint accuracy and flow smoothness, and a Fourier Neural Operator backbone that amortizes the solve across new pairs and grid resolutions. Together, these components make incompressible transport a reusable neural operator that facilitates various transport processes. Further, the generative capability extends beyond the training distribution, with VIOT producing incompressible transports for user-drawn source-target pairs in a real-time interactive system. We demonstrate VIOT on 2D and 3D density-transport benchmarks. Both 2D and 3D rollouts complete in seconds per pair, while per-instance baselines in our 2D comparisons optimize each new pair from scratch and require on the order of an hour, a roughly $10^4\\times$ online speedup.",
+    "status": "found"
+  },
+  "2609.13730": {
+    "arxiv_id": "2609.13730",
+    "title": "JumpStart Your Policy Learning with Lessons from 160,000 Training Runs",
+    "authors": [
+      "Nabil Omi",
+      "Eric Bae",
+      "Chung Yik Edward Yeung",
+      "Siddhartha Sen",
+      "Ali Farhadi"
+    ],
+    "submission_date": "2026-09-12T05:50:26Z",
+    "latest_updated": "2026-09-25T21:39:54Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2609.13730v1",
+      "2609.13730v2"
+    ],
+    "abstract": "Reliable progress in offline policy learning depends on careful reporting, well-tuned baselines, and evaluation across diverse conditions. Prior work has shown that results can be sensitive to reporting choices, hyperparameter tuning, and dataset properties, but these sources of variability have not been systematically investigated together at the scale needed to understand how they shape conclusions. To address this gap, we present a large-scale empirical study of offline reinforcement and imitation learning, training over 160,000 policies across 114 datasets. At this scale, no algorithm dominates: aggregate performance among the strongest methods is often close, but the leaders differ substantially across environments. We find that proper hyperparameter tuning frequently reshuffles perceived algorithm rankings and that benchmark composition can produce conflicting conclusions. We also study hyperparameter sensitivity and transfer across environments, identifying a simple strategy for deriving strong default configurations. We use our findings to develop a dataset-conditioned recommender that provides task-specific algorithm recommendations for practitioners. Finally, we release JumpStart: a resource suite containing every trained policy, per-model scores and hyperparameters, strong baselines across all environments, training and evaluation code, and an extensible website for retrieving, analyzing, and contributing results. Together, these resources aim to make offline policy-learning research more reliable and enable future work beyond the scope of this study.",
+    "status": "found"
+  },
+  "2609.13731": {
+    "arxiv_id": "2609.13731",
+    "title": "Trustworthy Agentic AI: A Comprehensive Cybersecurity and Systems Survey on Threat Landscapes, Defense Architectures, and Open Challenges",
+    "authors": [
+      "Seyedakbar Mostafavi"
+    ],
+    "submission_date": "2026-09-12T05:51:27Z",
+    "latest_updated": "2026-09-12T05:51:27Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13731v1"
+    ],
+    "abstract": "The transition from passive foundation models to autonomous, goal-directed agentic AI systems has introduced unprecedented capabilities by coupling recursive cognitive reasoning loops, persistent memory architectures, live tool execution planes, and multi-agent collaboration topologies. However, granting probabilistic neural cores execution authority across filesystems, networks, and cloud infrastructure dissolves classical security perimeters: natural language simultaneously serves as input data, internal control code, and communication protocols, exposing a Turing-complete blast radius where untrusted data represents executable instructions. This survey delivers a comprehensive systems-security reference framework for trustworthy agentic AI, synthesizing 206 foundational studies and regulatory standards. We formalize the general agent architecture as a stateful 5-tuple and establish a 6-dimensional trustworthiness taxonomy covering security, safety, privacy, explainability, fairness, and accountability. We systematically analyze threat surfaces across intra-execution loops and interaction planes, formulate a multi-layered zero-trust defense-in-depth architecture integrating Dual-LLM isolation, Capability-Based Access Control, kernel eBPF probes, and sandboxed runtimes, review standardized evaluation benchmarks, and map technical controls to international AI governance frameworks.",
+    "status": "found"
+  },
+  "2609.13732": {
+    "arxiv_id": "2609.13732",
+    "title": "Relevant sampling of non-decaying signals in Orlicz and mixed-norm Orlicz spaces defined on a locally compact group",
+    "authors": [
+      "Sarthak Raj",
+      "S. Sivananthan"
+    ],
+    "submission_date": "2026-09-12T05:53:48Z",
+    "latest_updated": "2026-09-12T05:53:48Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13732v1"
+    ],
+    "abstract": "We study the sampling problem for non-decaying signals defined on a locally compact group. The signals are modeled as elements of suitable subspaces of weighted Orlicz and weighted mixed-norm Orlicz spaces, thereby allowing controlled growth at infinity. Our principal focus is on image spaces of idempotent integral operators. Under suitable oscillation estimates on the associated integral kernels, we establish deterministic sampling theorems that guarantee stable reconstruction from pointwise samples. We further prove an average sampling result in the same setting. In addition, we prove random sampling theorems for functions whose norm is essentially concentrated on a compact subset of the group. In particular, we show that, with high probability, sampling is possible from $\\mathcal{O}\\!\\left(μ(K)\\log μ(K)\\right)$ randomly chosen sample points, where $K$ denotes the compact set on which the signal, belonging to Orlicz space, is essentially norm concentrated. In the same spirit, a random sampling result is proved for signals in mixed-norm Orlicz space. As applications of the abstract theory, we obtain sampling theorems for weighted shift-invariant spaces and Orlicz modulation spaces.",
+    "status": "found"
+  },
+  "2609.13733": {
+    "arxiv_id": "2609.13733",
+    "title": "FFVO: A Feedforward Pose Decoder for Long-Horizon Visual Odometry",
+    "authors": [
+      "Meng-Li Shih",
+      "Shih-Yang Su",
+      "Yuliang Zou",
+      "Hao Xiang",
+      "Haidong Zhu",
+      "Vincent Casser",
+      "Brian Curless",
+      "Dmitry Kalenichenko",
+      "Mingxing Tan",
+      "Dragomir Anguelov"
+    ],
+    "submission_date": "2026-09-12T05:56:52Z",
+    "latest_updated": "2026-09-12T05:56:52Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13733v1"
+    ],
+    "abstract": "Stable and reliable 4D spatial understanding is fundamental for autonomous driving systems. While feedforward reconstruction networks can estimate camera motion and 3D structure in one pass, pose estimation over long videos remains challenged by computational cost, long-context ambiguity, and temporal instability. To address these challenges, we propose Feedforward Visual Odometry (FFVO), a pose-specialized adaptation of joint reconstruction architectures for efficient and temporally stable camera-pose estimation. FFVO uses (i) a compact camera-token representation for computationally efficient temporal aggregation, (ii) a hierarchical local-to-global temporal decoder that mitigates geometric ambiguity by separating short-range motion aggregation from sequence-level integration, and (iii) intermediate trajectory supervision that promotes temporal stability. Extensive evaluation on the Waymo Open Dataset (WOD), KITTI, and a large-scale proprietary benchmark demonstrates that our method performs favorably against existing feedforward approaches, and greatly reduces jitter and drift. These results support FFVO as an effective feedforward camera-pose decoder in long-horizon visual odometry settings.",
+    "status": "found"
+  }
+}

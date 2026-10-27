@@ -1,0 +1,402 @@
+{
+  "2608.11927": {
+    "arxiv_id": "2608.11927",
+    "title": "Comparing Call-by-Name and Call-by-Value Reduction and Reduction Strategies in Calculi for Classical Logic",
+    "authors": [
+      "Steffen van Bakel",
+      "David Davies"
+    ],
+    "submission_date": "2026-08-12T11:15:06Z",
+    "latest_updated": "2026-08-12T11:15:06Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11927v1"
+    ],
+    "abstract": "We define call-by-name and call-by-value reduction and reduction strategies for the calculi slmu (symmetric lmu), lmmt, and Xs (X with implicit substitution). We establish a strong relation between these notions through defining a single interpretation from slmu to lmmt that respects normal reduction, as well as the call-by-name and call-by-value reduction in slmu within the their counterpart in lmmt; for the strategies, we will show similar, but weaker results. We also define a single mapping from lmmt to Xs, and show that this also respects all three notions. We then continue with studying the natural encoding of Xs into lmmt, and show that only full reduction is respected, but that reduction steps are needed to model substitution, so the CBN and CBV strategies cannot be respected. We conclude with studying the combination of our efforts and define an interpretation of slmu into Xs, and show that CBN and CBV reduction are respected. This result underlines that Xs and lmmt are similar, but different calculi, and that the nature of slmu makes that any encoding into either can never fully respect the strategies.",
+    "status": "found"
+  },
+  "2608.11928": {
+    "arxiv_id": "2608.11928",
+    "title": "Seed2GS: Camera-Free, Training-Free Object Extraction from 3D Gaussian Scenes via a Single Reference-View Grounding",
+    "authors": [
+      "Zongjian Ding",
+      "Yudong Gao",
+      "Jiale Liu",
+      "Xinglin Yu",
+      "Junxing Ren",
+      "Dong Wei",
+      "Yajing Chen",
+      "Shan Huang",
+      "Mingjun Cheng",
+      "Min Li"
+    ],
+    "submission_date": "2026-08-12T11:16:44Z",
+    "latest_updated": "2026-08-12T11:16:44Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11928v1"
+    ],
+    "abstract": "Extracting a target object from a pre-built 3D Gaussian Splatting (3DGS) scene enables interactive 3D editing. Existing methods either train for tens of minutes per scene, sacrifice accuracy, or require original reconstruction cameras that pre-built assets may not include. We present Seed2GS, which achieves the highest reported LERF-MASK accuracy without original reconstruction cameras or scene-specific representation training. Its key insight is to separate target identity from 3D coverage. QD-SAM3 selects one reliable reference mask from several open-vocabulary candidates, fixing identity once. Seed lift and visibility-adaptive virtual orbits then expose the object from new viewpoints, while tracking propagates the seed without repeated detection. Because the scene remains frozen, these masks supervise only one temporary foreground logit per Gaussian. On LERF-MASK, Seed2GS reaches 92.1% mean intersection over union (mIoU) with a measured compute-only latency of 9.3 seconds, 3.7 points above the strongest scene-trained baseline and 7.6 points above the closest camera-free baseline. With one fixed test reference per scene, the complete pipeline retains 91.1% mIoU; replacing its predicted seed with a ground-truth mask improves mIoU by only 0.72 points. On 3D-OVS, Seed2GS reaches 95.7% mIoU.",
+    "status": "found"
+  },
+  "2608.11929": {
+    "arxiv_id": "2608.11929",
+    "title": "Coordinated Dynamic Operation of Integrated Electrolyzer-Compressor Systems",
+    "authors": [
+      "Amin Salehi",
+      "Janne Seppanen",
+      "Mahdi Pourakbari-Kasmaei"
+    ],
+    "submission_date": "2026-08-12T11:16:53Z",
+    "latest_updated": "2026-08-12T11:16:53Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11929v1"
+    ],
+    "abstract": "The increasing interaction between power and hydrogen sectors highlights the importance of coordinated operation of electrolyzers and electric-driven compressor stations (EDCSs). This becomes particularly of higher importance under transient disturbances. However, coordinated dynamic interactions of these coupled subsystems remain largely unexplored. This article addresses such gap by developing a dynamic model for an integrated electrolyzer-EDCS system and designing appropriate PID control schemes to address the potential disturbances affecting either component. To this end, linearized models of the electrolyzer and EDCS are first derived to enable systematic controller design. Then, two PID controllers, representing conservative and fast-tracking designs, are developed to coordinate the system response. The developed coordinated model is examined and verified under four different cases. The results demonstrate the effectiveness of the proposed model under disturbances from the compressor driver or the electrolyzer. Controlling the electrolyzer flow in response to EDCS disturbances coordinates system dynamics and mitigates undesirable transient fluctuations. Conversely, under electrolyzer disturbances, regulating the EDCS torque eliminates inconsistent responses in pressure, flow, and rotational speed, while preventing hazardous transient undershoots and overshoots. Overall, the proposed framework guarantees transient stability and operational reliability of the integrated electrolyzer-EDCS system.",
+    "status": "found"
+  },
+  "2608.11930": {
+    "arxiv_id": "2608.11930",
+    "title": "Nonisomorphic Graphs Can Share an Arbitrarily Large Fraction of Their Vertex-Deleted Cards",
+    "authors": [
+      "Sergey Ivanov"
+    ],
+    "submission_date": "2026-08-12T11:17:04Z",
+    "latest_updated": "2026-08-12T11:17:04Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11930v1"
+    ],
+    "abstract": "For a graph $G$, its vertex deck is the multiset of graphs obtained by deleting one vertex. Bowler, Brown, and Fenner (BBF) proposed $2\\lfloor(n-1)/3\\rfloor$ as the maximum possible overlap between the decks of two nonisomorphic $n$-vertex graphs, for all sufficiently large $n$. We first give an explicit pair of connected nonisomorphic graphs on $78$ vertices with at least $51$ common cards, exceeding BBF's predicted value of $50$. We then construct, for every even $r\\ge4$, families at arbitrarily large orders whose overlap fraction is asymptotically at least $1-1/r$. Consequently, for every $α<1$, infinitely many pairs have more than $αn$ common cards, so the attainable fraction is arbitrarily close to the full deck. For representative instances, the predicted overlaps were also checked by complete deck generation and isomorphism testing with Brendan McKay's nauty tools.",
+    "status": "found"
+  },
+  "2608.11931": {
+    "arxiv_id": "2608.11931",
+    "title": "Nonlinear parabolic characterizations of stochastic completeness at infinity on weighted graphs",
+    "authors": [
+      "Davide Bianchi",
+      "Bobo Hua",
+      "Alberto G. Setti",
+      "Radosław K. Wojciechowski"
+    ],
+    "submission_date": "2026-08-12T11:17:24Z",
+    "latest_updated": "2026-08-12T11:17:24Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11931v1"
+    ],
+    "abstract": "We prove a nonlinear parabolic characterization of stochastic completeness at infinity for weighted graphs. For the filtration equation \\[ (\\partial_t + ΔΦ)u =0 \\] where $Δ$ is the non-negative formal graph Laplacian and $Φu =φ\\circ u$ with $φ\\colon \\R\\to\\R$ nonconstant, continuous and increasing, stochastic completeness at infinity is equivalent to uniqueness of bounded pointwise solutions for every bounded initial datum. For \\(Φ=\\id\\), this recovers the classical heat equation characterization of stochastic completeness at infinity, and of stochastic completeness when the killing term is trivial, i.e., when \\(κ=0\\). If stochastic completeness at infinity fails, then every bounded initial datum admits infinitely many bounded pointwise solutions of the filtration equation. Admissible nonlinearities include the signed porous medium and fast diffusion powers $φ(s)=s|s|^{m-1}$ for all $m>0$, as well as many others. Stochastic completeness at infinity is further characterized by a generalized mass balance: the total mass of a positive pointwise solution at time $t$, augmented by the mass $\\int_0^t\\sum_{x}κ(x)φ(u(s,x)) \\dd s$ dissipated by the killing term $κ$, equals the initial mass. This balance holds for every bounded positive solution on graphs of finite measure and for bounded finite-mass data on graphs of arbitrary measure under the sharp condition $\\limsup_{r\\to0^+}φ(r)/r<\\infty$. It also extends to positive pointwise solutions in $\\ell^1$ that are bounded on every positive time interval. When the killing term is trivial, stochastic completeness at infinity reduces to stochastic completeness and generalized balance to conservation of mass.",
+    "status": "found"
+  },
+  "2608.11932": {
+    "arxiv_id": "2608.11932",
+    "title": "Structure and Conditioning in Finite-Horizon Continuous-Time Inverse LQR with Unknown Dynamics",
+    "authors": [
+      "Meiling Yu",
+      "Yuan-Hua Ni",
+      "Lei Jiang"
+    ],
+    "submission_date": "2026-08-12T11:18:21Z",
+    "latest_updated": "2026-10-12T11:26:18Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.11932v1",
+      "2608.11932v2"
+    ],
+    "abstract": "Inverse Optimal Control (IOC) aims to infer the underlying cost functional of an agent from observations of its expert behavior. This paper studies the finite-horizon continuous-time inverse LQR problem from closed-loop state--input trajectories, where both the system matrices and the quadratic cost are unknown. The finite horizon induces a time-varying optimal gain, and this endogenous excitation serves as the structural mechanism that makes joint recovery possible. We quantify this mechanism through three computable conditioning indices, which measure state richness, gain-variation richness, and injectivity of a structured cost operator. Using these indices, we establish joint identifiability conditions for the inverse problem considered here. Crucially, these conditions guarantee recovery of the ground-truth system matrices $(A,B)$ and the true cost weighting matrices, rather than merely a behaviorally equivalent surrogate. We also develop a conditioning-aware sampled-data reconstruction method that reconstructs the gain $K(\\cdot)$ and the closed-loop dynamics matrix $A_c(\\cdot)$ from noisy measurements, recovers $(A,B)$ in closed form, and identifies the quadratic weights through a convex semidefinite program. We further establish the non-asymptotic perturbation bounds and the consistency of the full reconstruction method under sub-Gaussian observation noise, with explicit dependence on the same conditioning indices. Numerical experiments support the theory and illustrate the diagnostic value of the conditioning indices.",
+    "status": "found"
+  },
+  "2608.11933": {
+    "arxiv_id": "2608.11933",
+    "title": "Dual Anchors, Do It Better: Hierarchical Group Merging for Zero-Shot Anomaly Detection",
+    "authors": [
+      "Jimin Roh",
+      "DongKyu Kim",
+      "Suk-Ju Kang"
+    ],
+    "submission_date": "2026-08-12T11:21:14Z",
+    "latest_updated": "2026-08-12T11:21:14Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11933v1"
+    ],
+    "abstract": "Zero-shot anomaly detection (ZSAD) aims to identify anomalies in unseen domains, a setting that is particularly critical for industrial and medical applications where domain shifts are prevalent. However, most CLIP-based ZSAD methods anchor semantics solely on the text modality, making performance highly sensitive to prompt design and leading to weak visual grounding. To mitigate these limitations, we propose a Dual-Anchor framework that complements conventional text anchors with hierarchical image anchors constructed via a top-down grouping mechanism. This mechanism progressively aggregates local-to-global image features to form normal and abnormal group tokens, which serve as image anchors and act as gating signals in a Group-Gated Token Refiner to enhance the global representation. The refined image anchors are then fused with text prompts to construct dynamic state prompts. By jointly reinforcing visual and textual semantics, our framework stabilizes image-text alignment, reduces prompt dependency, and achieves strong generalization across 8 industrial and 6 medical benchmarks.",
+    "status": "found"
+  },
+  "2608.11934": {
+    "arxiv_id": "2608.11934",
+    "title": "State-resolved quantum transport of vortex electrons in accelerators",
+    "authors": [
+      "S. S. Baturin"
+    ],
+    "submission_date": "2026-08-12T11:21:28Z",
+    "latest_updated": "2026-09-08T14:16:09Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.11934v1",
+      "2608.11934v2"
+    ],
+    "abstract": "Vortex electrons carry a quantized orbital angular momentum (OAM) degree of freedom, but whether this internal structure can survive repeated transport through an accelerator lattice remains unclear. Here we formulate a density-matrix theory for periodic round lattices and show that the symmetry-protected quantity is a Lewis-Floquet OAM invariant, rather than the instantaneous kinetic OAM. The classical transfer map lifts to unitary state evolution, while stochastic field errors generate a Lindblad channel. This framework exposes a sharp separation between visibility and state survival. Dipole jitter displaces the wavepacket, rapidly smearing a vortex signature measured about a fixed origin without altering its recentered internal OAM distribution. Quadrupole fluctuations instead drive genuine $Δ\\ell=\\pm2$ leakage. For a matched $n=0$, $|\\ell|=1$ mode, white-noise estimates based on representative IOTA and PETRA III parameters give fixed-frame smearing scales of $4.9\\times10^2$ and $3.3$ turns, but intrinsic-leakage scales of $2.1\\times10^5$ and $2.2\\times10^6$ turns, respectively. Thus loss of an unrecentered vortex image need not signal destruction of the vortex state: its internal OAM structure can persist hundreds to hundreds of thousands of times longer. Centroid tracking and quadrupole stability are therefore distinct experimental requirements for observability and state survival, respectively.",
+    "status": "found"
+  },
+  "2608.11935": {
+    "arxiv_id": "2608.11935",
+    "title": "Induction and the rule of succession through a possibilistic inferential model lens",
+    "authors": [
+      "Ryan Martin",
+      "Shih-Ni Prim",
+      "Max Raner",
+      "Jonathan P. Williams"
+    ],
+    "submission_date": "2026-08-12T11:23:13Z",
+    "latest_updated": "2026-08-31T10:53:00Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.11935v1",
+      "2608.11935v2"
+    ],
+    "abstract": "Induction is the process by which empirical evidence is transformed to knowledge. Hume famously argued---and Popper and others agree---that there can be no logical justification for induction. A weaker form of induction, due to Bayes, expresses the aforementioned knowledge in terms of probabilities, and we review some well-known and not-so-well-known criticisms of the Bayesian solution. We then investigate the relatively new possibilistic inferential model (IM) framework, showing that, in addition to the IM's strong, statistical reliability guarantees that it uniquely enjoys, it is safe from those criticisms that damage the Bayesian foundations. For illustration, we reconsider the classical sunrise problem and compare our proposed solution with Laplace's famous rule of succession.",
+    "status": "found"
+  },
+  "2608.11936": {
+    "arxiv_id": "2608.11936",
+    "title": "A Positivity-Preserving Expectation Scheme for Hamilton--Jacobi--Bellman Equations with Oblique Robin Boundary Conditions",
+    "authors": [
+      "Haoran Xu",
+      "Xingye Yue"
+    ],
+    "submission_date": "2026-08-12T11:23:22Z",
+    "latest_updated": "2026-08-12T11:23:22Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11936v1"
+    ],
+    "abstract": "For anisotropic diffusion with mixed derivatives, standard compact coordinate-aligned stencils and some local finite-volume or finite-element constructions can lose nonnegative coefficients unless suitable coefficient or mesh conditions are imposed. Here nonnegative coefficients are generated directly from conditional expectation rather than from an algebraic stencil decomposition. We construct a positivity-preserving scheme for possibly degenerate Hamilton--Jacobi--Bellman equations with controlled oblique Robin boundary conditions. At interior nodes the construction stems from a one-step reflected Feynman--Kac identity: an $m$-dimensional Rademacher vector generates $P=2^m$ equally probable weak-Euler branches, an exterior branch is mirrored about its oblique projection, and twice its overshoot serves as the discrete boundary local time $D$. The Robin coefficient enters only through the attenuation factors $e^{-κD}$ and $De^{-κD/2}g$, leaving the equal branch probabilities unchanged. Boundary nodes use a separate same-level closure over a spatial offset $\\ell_h\\asymp h$, which may be implicit; uniform obliqueness and $\\mathbb P_1$ interpolation give a mesh-independent positive weight on interior nodes, so fixed linear Robin data yield a sparse nonsingular $M$-matrix system and the general control set yields a monotone contraction. Positivity is preserved for nonnegative data without a diagonal-dominance condition and without any CFL-type relation between $Δt$ and $h$.",
+    "status": "found"
+  },
+  "2608.11937": {
+    "arxiv_id": "2608.11937",
+    "title": "Distillation of Foundation Models for Time-dependent PDEs",
+    "authors": [
+      "Daniel Musekamp",
+      "Boshra Ariguib",
+      "Andrei Manolache",
+      "Mathias Niepert"
+    ],
+    "submission_date": "2026-08-12T11:24:08Z",
+    "latest_updated": "2026-08-12T11:24:08Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11937v1"
+    ],
+    "abstract": "Foundation models for time-dependent partial differential equations (PDEs) are trained on large and diverse collections of physical systems and can generalize effectively to new downstream tasks. After fine-tuning on only a few trajectories from a target domain, they can achieve strong accuracy in low-data regimes. However, these models are typically large and computationally intensive, limiting their usefulness as fast surrogates for numerical solvers. We propose Teacher Rollout Extension (TREX), a knowledge distillation framework that transfers the predictive capability of a pretrained foundation model into a compact and efficient student. Starting from a fine-tuned teacher, TREX augments limited downstream data by generating long synthetic trajectories through teacher rollouts, optionally with periodic noise injection. This procedure samples from the teacher-induced rollout distribution without requiring explicit knowledge of the initial-condition distribution, while exposing the student to long-horizon states and local recovery behavior around states encountered during autoregressive prediction. The student can further incorporate task-specific inductive biases, such as equivariance, that the teacher does not necessarily enforce. We evaluate TREX on multiple PDE benchmarks. The resulting students can match or surpass the teacher's accuracy while reducing the number of parameters by several orders of magnitude and achieving more than an order-of-magnitude speedup in inference.",
+    "status": "found"
+  },
+  "2608.11938": {
+    "arxiv_id": "2608.11938",
+    "title": "Surfsvr: 2D Surface Priors as 3D Geometric Regularizers for Sparse Voxel Reconstruction",
+    "authors": [
+      "Yan Di",
+      "Chengxi Li",
+      "Yaoxing Wang",
+      "Mengge Liu",
+      "Zhigang Li",
+      "Ruida Zhang",
+      "Mingyang Li",
+      "Pengyuan Wang",
+      "Shan Gao",
+      "Xiangyang Ji"
+    ],
+    "submission_date": "2026-08-12T11:25:31Z",
+    "latest_updated": "2026-08-12T11:25:31Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11938v1"
+    ],
+    "abstract": "Sparse voxel reconstruction offers an efficient representation for high-fidelity 3D modeling, yet its geometry is commonly optimized from local photometric evidence and discrete visibility statistics. This often leads to fragmented surfaces, excessive subdivision, and floating artifacts, particularly in weakly textured or sparsely observed regions. We introduce SurfSVR, a novel sparse voxel reconstruction paradigm that treats 2D surface priors as explicit 3D geometric regularizers. Instead of directly lifting noisy pixel-wise depth predictions, SurfSVR first organizes each image into coherent surface regions by jointly reasoning over appearance, monocular depth, normals and cross-view geometry. Each region is then represented by an adaptively selected planar or quadratic surface model based on fitting reliability and geometric complexity, while cross-model agreement distinguishes reliable geometry from ambiguous predictions. These structured 2D priors are lifted into 3D and integrated throughout the reconstruction pipeline. They guide surface-adaptive voxel subdivision, provide region-level depth and normal supervision during optimization, enhance geometrically reliable sparse-observed surfaces in voxel pruning, and suppress off-surface floaters during post-refinement training. This unified design converts semantic and geometric coherence in image space into persistent structural constraints in 3D. Extensive experiments on 3 public benchmarks demonstrate that SurfSVR consistently improves sparse voxel reconstruction across scenes with substantially different visibility and geometry characteristics, achieving state-of-the-art reconstruction quality. Codes and models will be released soon.",
+    "status": "found"
+  },
+  "2608.11939": {
+    "arxiv_id": "2608.11939",
+    "title": "CCZ-Equivalence and Enumeration of Triprojective APN Functions",
+    "authors": [
+      "Jingchuan Ma",
+      "Yanhua Liu",
+      "Qiaoyun Huang"
+    ],
+    "submission_date": "2026-08-12T11:27:30Z",
+    "latest_updated": "2026-09-23T03:38:11Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.11939v1",
+      "2608.11939v2"
+    ],
+    "abstract": "We classify all admissible parameters of the G\"ologlu--K\"olsch triprojective construction of almost perfect nonlinear (APN) functions up to Carlet--Charpin--Zinoviev (CCZ) equivalence. The construction has three coefficients in $K=\\mathbb{F}_{2^m}$ and a Frobenius exponent $k$ coprime to $m$. For every $m>1$, we give a necessary-and-sufficient criterion that includes changes of both the coefficients and the exponent. Each parameter choice determines one of the two irreducible cubic polynomials over $\\mathbb{F}_2$. Two functions are equivalent precisely when their exponents and cubics agree, or when the exponents are negatives modulo $m$ and the cubics are reciprocal. When $7\\nmid m$, every admissible member is equivalent to a Li--Kaleyski representative: the larger coefficient space adds no CCZ classes. When $7\\mid m$, those representatives are inadmissible; we construct replacements and classify the full family. There are exactly $\\varphi(m)$ CCZ classes, extending the previously known count for the older subfamilies to all admissible coefficients and all degrees. We also count the parameter triples and compute canonical representatives and explicit equivalence maps in deterministic polynomial time for every degree, including degrees divisible by seven. The proof combines a reduction to classical semilinear conjugacy with an intrinsic recovery of the scalar field from the polar bilinear map. The reduction from arbitrary EL equivalence is algebraic in every degree, including degrees three and six.",
+    "status": "found"
+  },
+  "2608.11940": {
+    "arxiv_id": "2608.11940",
+    "title": "Chemical fingerprints of binary mass transfer in massive stars",
+    "authors": [
+      "Harim Jin",
+      "Norbert Langer"
+    ],
+    "submission_date": "2026-08-12T11:27:36Z",
+    "latest_updated": "2026-08-12T11:27:36Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11940v1"
+    ],
+    "abstract": "The majority of massive stars are born in close binary systems. As stars expand when they age, mass transfer or even a merger with their companion is inevitable. However, most binary interaction products appear as single stars, such that the main evidence of their exciting past is lost. In a comprehensive grid of detailed massive binary evolution models we find systematic trends in chemical surface abundances that allow identifying the past mass gainers. We develop an analytic framework which is independent of specific evolutionary models, to constrain the amount and composition of the accreted material from their observed surface abundances. This yields tight constraints on the uncertain mass transfer physics in massive binary stars and allows us to reconstruct the past evolutionary history of the progenitor binary system. This method, which is shown to also constrain binary mergers (for example, SN 1987A), is applied to some of the best-studied OB stars so far. For γ Columbae, suggested to be an envelope-stripped star, we show that it is a mass gainer instead, whose companion star likely formed a stripped-envelope supernova. Our results highlight surface abundance measurements as a powerful tool to improve our understanding of massive binary systems evolving towards supernovae and compact object binaries.",
+    "status": "found"
+  },
+  "2608.11941": {
+    "arxiv_id": "2608.11941",
+    "title": "OEIS Open: How many conjectures can language models turn into theorems?",
+    "authors": [
+      "Tom Adamczewski"
+    ],
+    "submission_date": "2026-08-12T11:28:36Z",
+    "latest_updated": "2026-08-13T09:23:24Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.11941v1",
+      "2608.11941v2"
+    ],
+    "abstract": "We construct OEIS Open, a benchmark based on 492 open mathematical conjectures from the OEIS, formalized in Lean by Tsoukalas et al. Whereas these conjectures had previously been attempted only with a bespoke agent, our open-source evaluation code runs any generic language model (LM) against them, and is secure against LM cheating attempts. We find that LMs equipped with a minimal set of tools resolve 147 of these conjectures with a budget of \\$50 per attempt, scoring 30% on OEIS Open. OEIS Open Lite is a random subset of 100 conjectures for cheaper evaluation. When evaluated with a budget of \\$200 per attempt, the best current LM scores 44% on OEIS Open Lite. Giving LMs access to the mathematics literature via 476,000 papers from arXiv did not increase performance on OEIS Open Lite, and nor did using more sophisticated agent loops. The conjectures covered in this work are of uncertain mathematical significance, and most have likely received little previous attention. Nevertheless, our results show that LMs can resolve open research conjectures autonomously and at modest cost.",
+    "status": "found"
+  },
+  "2608.11942": {
+    "arxiv_id": "2608.11942",
+    "title": "Evaluating and Calibrating Diffusion Model-derived Uncertainty for Quantitative MRI Mapping",
+    "authors": [
+      "Shishuai Wang",
+      "Stefan Klein",
+      "Juan A. Hernandez-Tamames",
+      "Dirk H. J. Poot"
+    ],
+    "submission_date": "2026-08-12T11:30:31Z",
+    "latest_updated": "2026-08-12T11:30:31Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11942v1"
+    ],
+    "abstract": "Quantitative MRI (qMRI) provides standardised tissue parameter maps, but the reliability of deep learning-based qMRI mapping methods is often not explicitly characterised. In this work we systematically evaluate uncertainty maps for quantitative MRI derived from multiple inferences of a data-consistent diffusion model-based qMRI framework. Evaluation on synthetic test data assessed error-awareness, high-error detection, selective prediction, and Gaussian interval calibration. Diffusion model-derived uncertainty was positively associated with the mapping error, while risk-coverage analysis showed that excluding high-uncertainty voxels reduced the retained error. However, the raw uncertainty was poorly calibrated for quantitative interval interpretation. Calibration was substantially improved using a post-hoc procedure combining prediction-value-dependent bias correction with scalar uncertainty scaling. Qualitative evaluation on a healthy volunteer showed spatially meaningful uncertainty patterns. These results indicate that diffusion model-derived uncertainty is informative for reliability assessment and selective prediction, but requires calibration for quantitative interval interpretation.",
+    "status": "found"
+  },
+  "2608.11943": {
+    "arxiv_id": "2608.11943",
+    "title": "Invariant Functions on $p$-divisible Groups and the $p$-adic Corona Problem II",
+    "authors": [
+      "Behzad Nikzad",
+      "Christopher Deninger"
+    ],
+    "submission_date": "2026-08-12T11:31:01Z",
+    "latest_updated": "2026-08-12T11:31:01Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11943v1"
+    ],
+    "abstract": "This note removes the dimension one restriction of the main results in the paper with the same title by the second author.",
+    "status": "found"
+  },
+  "2608.11944": {
+    "arxiv_id": "2608.11944",
+    "title": "Dimensional crossover and local strain induced deflection of the spin spiral state in multiferroic NiI2",
+    "authors": [
+      "Tianxing Jiang",
+      "Lianchuang Li",
+      "Haiyan Zhu",
+      "Hongyu Wang",
+      "Junchao Tian",
+      "Wenzhao Wang",
+      "Weiyi Pan",
+      "Haitao Wang",
+      "Changlin Zheng",
+      "Hongjun Xiang",
+      "Changsong Xu",
+      "Donglai Feng",
+      "Tong Zhang"
+    ],
+    "submission_date": "2026-08-12T11:32:08Z",
+    "latest_updated": "2026-08-12T11:32:08Z",
+    "revised_dates": null,
+    "venue": "Science Bulletin 2026",
+    "latest_version": 1,
+    "versions": [
+      "2608.11944v1"
+    ],
+    "abstract": "Low-dimensional multiferroics hold great promise for integrated magnetoelectric devices. Spin spiral state has recently been shown to induce ferroelectricity in single-layer van der Waals (vdW) material NiI2. However, how this state evolves and can be tuned towards the two-dimensional limit remain unclear. Here, we combine spin-polarized scanning tunneling microscopy, layer-by-layer film growth, and multi-scale theoretical modeling to investigate the spin spirals in NiI2 thin films. As the film thickness increases from 1 to 7 monolayers, we observed a continuous increase of spin-spiral wavelength and a rotation of wavevector from near [110] to [1-10] direction, which evidences a dimensional crossover primarily driven by enhanced interlayer exchange energy. Moreover, we find that the film wrinkles can cause deflection of the spin spiral wavevector, which is caused by local curvature induced modification of exchange interactions. Our findings establish thickness and local strain as two tuning methods for engineering non-collinear helical magnetism and accompanied electric polarization in vdW multiferroics.",
+    "status": "found"
+  },
+  "2608.11945": {
+    "arxiv_id": "2608.11945",
+    "title": "Carrollian Dictionary for Massive Particles at Null Infinity",
+    "authors": [
+      "Yu-fan Zheng"
+    ],
+    "submission_date": "2026-08-12T11:32:34Z",
+    "latest_updated": "2026-08-12T11:32:34Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11945v1"
+    ],
+    "abstract": "Massive particles reach timelike rather than null infinity, leaving their Carrollian boundary description unresolved. We construct a Carrollian dictionary for massive one-particle states on $\\mathscr I^\\pm$ without requiring their worldlines to reach null infinity. The dictionary encodes the bulk momentum through its projections onto the null frame associated with each celestial point. The Poincaré intertwining equations require the complete Carrollian representation to describe massive states. We apply the dictionary to the Källén--Lehmann representation and to soft photon and graviton theorems. The Källén--Lehmann application fixes the coefficient function of the non-contact two-point function in terms of the bulk spectral density. Soft theorems show that global modes reproduce the ordinary $U(1)$ and Poincaré actions, whereas local actions remain integrals over celestial directions.",
+    "status": "found"
+  },
+  "2608.11946": {
+    "arxiv_id": "2608.11946",
+    "title": "Non-unitary Haagerup-like TQFTs and RCFTs from generalized S-fold SCFTs",
+    "authors": [
+      "Kibok Jeong",
+      "Huijoon Sohn"
+    ],
+    "submission_date": "2026-08-12T11:33:31Z",
+    "latest_updated": "2026-08-12T11:33:31Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11946v1"
+    ],
+    "abstract": "Building on earlier work by Gang, Kim, and Lee, we extend the known class of 3-dimensional non-unitary topological quantum field theories (TQFTs) and 2-dimensional non-unitary rational conformal field theories (RCFTs). The TQFTs are obtained by applying topological twist to generalized S-fold superconformal field theories (SCFTs). They are related to the RCFTs through the bulk-boundary correspondence. For certain families, we propose simple lines in the TQFTs, together with expressions for the characters and modular $S$ matrices of their associated boundary RCFTs. For broader family, we propose modular $S$ and $T$ matrices for the TQFTs. For particular members of this family, the resulting modular matrices are identified with the generalized Haagerup-Izumi modular matrices up to Galois conjugation.",
+    "status": "found"
+  }
+}

@@ -1,0 +1,400 @@
+{
+  "2511.12949": {
+    "arxiv_id": "2511.12949",
+    "title": "Can We Predict the Next Question? A Collaborative Filtering Approach to Modeling User Behavior",
+    "authors": [
+      "Bokang Fu",
+      "Jiahao Wang",
+      "Xiaojing Liu",
+      "Yuli Liu"
+    ],
+    "submission_date": "2025-11-17T04:01:20Z",
+    "latest_updated": "2025-11-17T04:01:20Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.12949v1"
+    ],
+    "abstract": "In recent years, large language models (LLMs) have excelled in language understanding and generation, powering advanced dialogue and recommendation systems. However, a significant limitation persists: these systems often model user preferences statically, failing to capture the dynamic and sequential nature of interactive behaviors. The sequence of a user's historical questions provides a rich, implicit signal of evolving interests and cognitive patterns, yet leveraging this temporal data for predictive tasks remains challenging due to the inherent disconnect between language modeling and behavioral sequence modeling. To bridge this gap, we propose a Collaborative Filtering-enhanced Question Prediction (CFQP) framework. CFQP dynamically models evolving user-question interactions by integrating personalized memory modules with graph-based preference propagation. This dual mechanism allows the system to adaptively learn from user-specific histories while refining predictions through collaborative signals from similar users. Experimental results demonstrate that our approach effectively generates agents that mimic real-user questioning patterns, highlighting its potential for building proactive and adaptive dialogue systems.",
+    "status": "found"
+  },
+  "2511.12950": {
+    "arxiv_id": "2511.12950",
+    "title": "Diffploit: Facilitating Cross-Version Exploit Migration for Open Source Library Vulnerabilities",
+    "authors": [
+      "Zirui Chen",
+      "Zhipeng Xue",
+      "Jiayuan Zhou",
+      "Xing Hu",
+      "Xin Xia",
+      "Xiaohu Yang"
+    ],
+    "submission_date": "2025-11-17T04:06:01Z",
+    "latest_updated": "2026-08-12T07:45:30Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.12950v1",
+      "2511.12950v2"
+    ],
+    "abstract": "Exploits are commonly used to demonstrate the presence of library vulnerabilities and validate their impact across different versions. However, their direct application to alternative versions often fails due to breaking changes introduced during evolution. These failures stem from both changes in triggering conditions (e.g., API refactorings) and broken dynamic environments (e.g., build or runtime errors), which are challenging to interpret and adapt manually. Existing techniques primarily focus on code-level trace alignment through fuzzing, which is both time-consuming and insufficient for handling environment-level failures. Moreover, they often fall short when dealing with complicated triggering condition changes across versions. To overcome this, we propose Diffploit, an iterative, diff-driven exploit migration method structured around two key modules: the Context Module and the Migration Module. The Context Module dynamically constructs contexts derived from analyzing behavioral discrepancies between the target and reference versions, which capture the failure symptom and its related diff hunks. Leveraging these contexts, the Migration Module guides an LLM-based adaptation through an iterative feedback loop, balancing exploration of diff candidates and gradual refinement to resolve reproduction failures effectively. We evaluate Diffploit on a large-scale dataset containing 102 Java CVEs and 689 version-migration tasks across 79 libraries. Diffploit successfully migrates 84.2% exploits, outperforming the change-aware test repair tool TARGET by 52.0% and the rule-based tool in IDEA by 61.6%. Beyond technical effectiveness, Diffploit identifies 5 CVE reports with incorrect affected version ranges, three of which have been confirmed. It also discovers 111 unreported vulnerable versions in the GitHub Advisory Database.",
+    "status": "found"
+  },
+  "2511.12951": {
+    "arxiv_id": "2511.12951",
+    "title": "A FEDformer-Based Hybrid Framework for Anomaly Detection and Risk Forecasting in Financial Time Series",
+    "authors": [
+      "Ziling Fan",
+      "Ruijia Liang",
+      "Yiwen Hu"
+    ],
+    "submission_date": "2025-11-17T04:09:04Z",
+    "latest_updated": "2025-11-17T04:09:04Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.12951v1"
+    ],
+    "abstract": "Financial markets are inherently volatile and prone to sudden disruptions such as market crashes, flash collapses, and liquidity crises. Accurate anomaly detection and early risk forecasting in financial time series are therefore crucial for preventing systemic instability and supporting informed investment decisions. Traditional deep learning models, such as LSTM and GRU, often fail to capture long-term dependencies and complex periodic patterns in highly nonstationary financial data. To address this limitation, this study proposes a FEDformer-Based Hybrid Framework for Anomaly Detection and Risk Forecasting in Financial Time Series, which integrates the Frequency Enhanced Decomposed Transformer (FEDformer) with a residual-based anomaly detector and a risk forecasting head. The FEDformer module models temporal dynamics in both time and frequency domains, decomposing signals into trend and seasonal components for improved interpretability. The residual-based detector identifies abnormal fluctuations by analyzing prediction errors, while the risk head predicts potential financial distress using learned latent embeddings. Experiments conducted on the S&P 500, NASDAQ Composite, and Brent Crude Oil datasets (2000-2024) demonstrate the superiority of the proposed model over benchmark methods, achieving a 15.7 percent reduction in RMSE and an 11.5 percent improvement in F1-score for anomaly detection. These results confirm the effectiveness of the model in capturing financial volatility, enabling reliable early-warning systems for market crash prediction and risk management.",
+    "status": "found"
+  },
+  "2511.12952": {
+    "arxiv_id": "2511.12952",
+    "title": "Design and Evaluation of an AI-DrivenPersonalized Mobile App to Provide MultifacetedHealth Support for Type 2 Diabetes Patients inChina",
+    "authors": [
+      "Yibo Meng",
+      "Zhiming Liu",
+      "Xiaochen Qin"
+    ],
+    "submission_date": "2025-11-17T04:17:56Z",
+    "latest_updated": "2025-11-17T04:17:56Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.12952v1"
+    ],
+    "abstract": "Type 2 diabetes patients in China face many significant challenges in patient-provider communication and self management In light of this, this work designed,implemented,and evaluated an AI-driven, personalized, multi-functional mobile app system named T2MD Health. The appintegrates real-time patient- provider conversation transcription,medical terminology interpretation, daily health tracking, and adata-driven feedback loop. We conducted qualitative interviewswith 40 participants to study key user needs before systemdevelopment and a mixed- method controlled experiment with 60participants after to evaluate the effectiveness and usability ofthe app. Evaluation results showed that the app was effective inimproving patient-provider communication efficiency, patientunderstanding and knowledge retention,and patient selfmanagement, Patient feedback also revealed that the app has thepotential to address the urban-rural gap in the access to medica!consultation services to some extent, Findings ofthis study couldinform future studies that seek to utilize mobile apps andartificial intelligence to support patients with chronic diseases.",
+    "status": "found"
+  },
+  "2511.12953": {
+    "arxiv_id": "2511.12953",
+    "title": "Vanishing viscosity limit of the 2D stationary Navier-Stokes equations outside a rotating disc and its application",
+    "authors": [
+      "Xinghong Pan",
+      "Jianfeng Zhao"
+    ],
+    "submission_date": "2025-11-17T04:18:33Z",
+    "latest_updated": "2026-09-20T00:07:01Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2511.12953v1",
+      "2511.12953v2",
+      "2511.12953v3"
+    ],
+    "abstract": "We justify the vanishing-viscosity limit for 2D stationary Navier-Stokes flows in the exterior of a rotating disc. The boundary data are a small perturbation of a nonzero rigid rotation, and the velocity vanishes at spatial infinity. Guided by Prandtl-Batchelor theory, we select the limiting Euler flow $\\frac{A}{r}e_θ$, where $A$ is fixed by the Batchelor-Wood formula. In the regime of small viscosity, we construct stationary Navier-Stokes solutions through a higher-order matched asymptotic expansion and prove the validity of the corresponding boundary-layer expansion. We also identify the far-field asymptotics of the Navier-Stokes solution. This gives a partial resolution of Problem 11b in Yudovich [Eleven great problems of mathematical hydrodynamics, Mosc. Math. J. 3 (2003), no. 2, 711--737]. As an application, for fixed viscosity we prove the existence of stationary solutions in the same exterior domain under a large perturbation of a fast rigid rotation at the boundary.",
+    "status": "found"
+  },
+  "2511.12954": {
+    "arxiv_id": "2511.12954",
+    "title": "Unconfined flow of a non-Newtonian power-law fluid past counter-rotating circular cylinders",
+    "authors": [
+      "Lekhraj Malviya",
+      "Ram Prakash Bharti",
+      "Abhishek Kumar Lal"
+    ],
+    "submission_date": "2025-11-17T04:20:41Z",
+    "latest_updated": "2025-11-17T04:20:41Z",
+    "revised_dates": null,
+    "venue": "Industrial & Engineering Chemistry Research, Volume 65, Isuue 20, Pages 10406 - 10440 (2026)",
+    "latest_version": 1,
+    "versions": [
+      "2511.12954v1"
+    ],
+    "abstract": "This study numerically examines the steady unconfined laminar flow of incompressible non-Newtonian power-law fluids past a pair of side-by-side counter-rotating circular cylinders using the finite element method. The cylinders simultaneously rotate at equal angular speeds in opposite directions, with the upper cylinder (UC) rotating clockwise and the lower cylinder (LC) counterclockwise. The numerical simulations are performed over wide parameter ranges: power-law index ($0.2 \\le n \\le 1.8$), rotational rate ($0 \\le α\\le 2$), gap ratio ($0.2 \\le G \\le 1$), and Reynolds number ($1 \\le Re \\le 40$). The detailed influence of these flow parameters on key flow characteristics, including streamlines, surface pressure, centerline velocity, and individual as well as total drag and lift coefficients, is systematically analyzed. For stationary cylinders ($α= 0$), a twin-vortex structure forms in the wake, which progressively vanishes with increasing rotation ($α= 2$). The surface pressure coefficient attains its maximum values for shear-thickening fluids ($n > 1$) at higher rotational speeds, irrespective of the gap ratio. The total drag coefficient ($C_D$) decreases with increasing $α$ and $n$, whereas the lift coefficient ($C_L$) exhibits a more intricate dependence on the flow parameters. The results provide fundamental insights into the interplay between rotation, non-Newtonian rheology, and geometric confinement in determining the hydrodynamic behavior of rotating cylinder systems.",
+    "status": "found"
+  },
+  "2511.12955": {
+    "arxiv_id": "2511.12955",
+    "title": "Global Cross-Time Attention Fusion for Enhanced Solar Flare Prediction from Multivariate Time Series",
+    "authors": [
+      "Onur Vural",
+      "Shah Muhammad Hamdi",
+      "Soukaina Filali Boubrahimi"
+    ],
+    "submission_date": "2025-11-17T04:26:56Z",
+    "latest_updated": "2025-11-17T04:26:56Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.12955v1"
+    ],
+    "abstract": "Multivariate time series classification is increasingly investigated in space weather research as a means to predict intense solar flare events, which can cause widespread disruptions across modern technological systems. Magnetic field measurements of solar active regions are converted into structured multivariate time series, enabling predictive modeling across segmented observation windows. However, the inherently imbalanced nature of solar flare occurrences, where intense flares are rare compared to minor flare events, presents a significant barrier to effective learning. To address this challenge, we propose a novel Global Cross-Time Attention Fusion (GCTAF) architecture, a transformer-based model to enhance long-range temporal modeling. Unlike traditional self-attention mechanisms that rely solely on local interactions within time series, GCTAF injects a set of learnable cross-attentive global tokens that summarize salient temporal patterns across the entire sequence. These tokens are refined through cross-attention with the input sequence and fused back into the temporal representation, enabling the model to identify globally significant, non-contiguous time points that are critical for flare prediction. This mechanism functions as a dynamic attention-driven temporal summarizer that augments the model's capacity to capture discriminative flare-related dynamics. We evaluate our approach on the benchmark solar flare dataset and show that GCTAF effectively detects intense flares and improves predictive performance, demonstrating that refining transformer-based architectures presents a high-potential alternative for solar flare prediction tasks.",
+    "status": "found"
+  },
+  "2511.12956": {
+    "arxiv_id": "2511.12956",
+    "title": "T2I-Based Physical-World Appearance Attack against Traffic Sign Recognition Systems in Autonomous Driving",
+    "authors": [
+      "Chen Ma",
+      "Ningfei Wang",
+      "Junhao Zheng",
+      "Qing Guo",
+      "Qian Wang",
+      "Qi Alfred Chen",
+      "Chao Shen"
+    ],
+    "submission_date": "2025-11-17T04:29:55Z",
+    "latest_updated": "2025-11-17T04:29:55Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.12956v1"
+    ],
+    "abstract": "Traffic Sign Recognition (TSR) systems play a critical role in Autonomous Driving (AD) systems, enabling real-time detection of road signs, such as STOP and speed limit signs. While these systems are increasingly integrated into commercial vehicles, recent research has exposed their vulnerability to physical-world adversarial appearance attacks. In such attacks, carefully crafted visual patterns are misinterpreted by TSR models as legitimate traffic signs, while remaining inconspicuous or benign to human observers. However, existing adversarial appearance attacks suffer from notable limitations. Pixel-level perturbation-based methods often lack stealthiness and tend to overfit to specific surrogate models, resulting in poor transferability to real-world TSR systems. On the other hand, text-to-image (T2I) diffusion model-based approaches demonstrate limited effectiveness and poor generalization to out-of-distribution sign types. In this paper, we present DiffSign, a novel T2I-based appearance attack framework designed to generate physically robust, highly effective, transferable, practical, and stealthy appearance attacks against TSR systems. To overcome the limitations of prior approaches, we propose a carefully designed attack pipeline that integrates CLIP-based loss and masked prompts to improve attack focus and controllability. We also propose two novel style customization methods to guide visual appearance and improve out-of-domain traffic sign attack generalization and attack stealthiness. We conduct extensive evaluations of DiffSign under varied real-world conditions, including different distances, angles, light conditions, and sign categories. Our method achieves an average physical-world attack success rate of 83.3%, leveraging DiffSign's high effectiveness in attack transferability.",
+    "status": "found"
+  },
+  "2511.12957": {
+    "arxiv_id": "2511.12957",
+    "title": "Orbit Elements from Kepler Solutions in Projective Coordinates",
+    "authors": [
+      "Joseph T. A. Peterson",
+      "Manoranjan Majji",
+      "John L. Junkins"
+    ],
+    "submission_date": "2025-11-17T04:31:06Z",
+    "latest_updated": "2026-01-15T09:25:19Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2511.12957v1",
+      "2511.12957v2",
+      "2511.12957v3"
+    ],
+    "abstract": "Closed-Form Kepler solutions in projective coordinates are used to define a corresponding set of eight orbit elements and obtain their governing equations for arbitrarily-perturbed two-body dynamics. The elements and their dynamics are singularity-free in all cases besides rectilinear motion (when angular momentum vanishes). The classic J2-perturbed two-body problem is developed and used for numerical verification.",
+    "status": "found"
+  },
+  "2511.12958": {
+    "arxiv_id": "2511.12958",
+    "title": "Quantum decoherence signatures in charmless non-leptonic $B$ decays",
+    "authors": [
+      "Dhiren Panda",
+      "Manas Kumar Mohapatra",
+      "Rukmani Mohanta"
+    ],
+    "submission_date": "2025-11-17T04:31:10Z",
+    "latest_updated": "2025-11-17T04:31:10Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.12958v1"
+    ],
+    "abstract": "Quantum coherence plays a crucial role in the dynamics of neutral meson systems, aiding in the extraction of various Standard Model parameters. However, real physical systems always interact with their surroundings, which causes decoherence. In case of time dependent analysis of non-leptonic neutral $B$ meson decays, this decoherence can be modeled using a single parameter, $λ$. Since decoherence can affect the observed dynamics of flavor oscillations and CP violation, it becomes essential to revisit the key SM parameters such as the CKM angles $(α, β, γ)$ and the mass differences of neutral $B$ mesons ($Δm_{d,s}$). In this work, we study the CKM phase $β$ as well as the penguin contributions in the $B_d^0 \\to J/ψK_S$ decay mode in the presence of decoherence. We employ the pseudo-experiment (Toy Monte-Carlo) technique and perform an $SU(3)_F$ analysis using the $B_d^0 \\to J/ψπ^0$ process. Furthermore, we investigate the $B_d^0 \\to π^+ π^-$ decay mode to understand how the decoherence influences the CP violating observables. Our findings reveal that the presence of decoherence can affect crucially the measured values of the observables.",
+    "status": "found"
+  },
+  "2511.12959": {
+    "arxiv_id": "2511.12959",
+    "title": "Personalized Federated Recommendation With Knowledge Guidance",
+    "authors": [
+      "Jaehyung Lim",
+      "Wonbin Kweon",
+      "Woojoo Kim",
+      "Junyoung Kim",
+      "Dongha Kim",
+      "Hwanjo Yu"
+    ],
+    "submission_date": "2025-11-17T04:35:53Z",
+    "latest_updated": "2025-11-18T13:31:54Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.12959v1",
+      "2511.12959v2"
+    ],
+    "abstract": "Federated Recommendation (FedRec) has emerged as a key paradigm for building privacy-preserving recommender systems. However, existing FedRec models face a critical dilemma: memory-efficient single-knowledge models suffer from a suboptimal knowledge replacement practice that discards valuable personalization, while high-performance dual-knowledge models are often too memory-intensive for practical on-device deployment. We propose Federated Recommendation with Knowledge Guidance (FedRKG), a model-agnostic framework that resolves this dilemma. The core principle, Knowledge Guidance, avoids full replacement and instead fuses global knowledge into preserved local embeddings, attaining the personalization benefits of dual-knowledge within a single-knowledge memory footprint. Furthermore, we introduce Adaptive Guidance, a fine-grained mechanism that dynamically modulates the intensity of this guidance for each user-item interaction, overcoming the limitations of static fusion methods. Extensive experiments on benchmark datasets demonstrate that FedRKG significantly outperforms state-of-the-art methods, validating the effectiveness of our approach. The code is available at https://github.com/Jaehyung-Lim/fedrkg.",
+    "status": "found"
+  },
+  "2511.12960": {
+    "arxiv_id": "2511.12960",
+    "title": "ENGRAM: Effective, Lightweight Memory Orchestration for Conversational Agents",
+    "authors": [
+      "Daivik Patel",
+      "Shrenik Patel"
+    ],
+    "submission_date": "2025-11-17T04:39:16Z",
+    "latest_updated": "2026-02-03T01:07:09Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.12960v1",
+      "2511.12960v2"
+    ],
+    "abstract": "Large language models (LLMs) deployed in user-facing applications require long-horizon consistency: the ability to remember prior interactions, respect user preferences, and ground reasoning in past events. However, contemporary memory systems often adopt complex architectures such as knowledge graphs, multi-stage retrieval pipelines, and OS-style schedulers, which introduce engineering complexity and reproducibility challenges. We present ENGRAM, a lightweight memory system that organizes conversation into three canonical memory types (episodic, semantic, and procedural) through a single router and retriever. Each user turn is converted into typed memory records with normalized schemas and embeddings and stored in a database. At query time, the system retrieves top-k dense neighbors for each type, merges results with simple set operations, and provides the most relevant evidence as context to the model. ENGRAM attains state-of-the-art results on LoCoMo, a multi-session conversational QA benchmark for long-horizon memory, and exceeds the full-context baseline by 15 points on LongMemEval while using only about 1% of the tokens. These results show that careful memory typing and straightforward dense retrieval can enable effective long-term memory management in language models without requiring complex architectures.",
+    "status": "found"
+  },
+  "2511.12961": {
+    "arxiv_id": "2511.12961",
+    "title": "Inertia-Informed Orientation Priors for Event-Based Optical Flow Estimation",
+    "authors": [
+      "Pritam P. Karmokar",
+      "William J. Beksi"
+    ],
+    "submission_date": "2025-11-17T04:39:18Z",
+    "latest_updated": "2025-11-17T04:39:18Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.12961v1"
+    ],
+    "abstract": "Event cameras, by virtue of their working principle, directly encode motion within a scene. Many learning-based and model-based methods exist that estimate event-based optical flow, however the temporally dense yet spatially sparse nature of events poses significant challenges. To address these issues, contrast maximization (CM) is a prominent model-based optimization methodology that estimates the motion trajectories of events within an event volume by optimally warping them. Since its introduction, the CM framework has undergone a series of refinements by the computer vision community. Nonetheless, it remains a highly non-convex optimization problem. In this paper, we introduce a novel biologically-inspired hybrid CM method for event-based optical flow estimation that couples visual and inertial motion cues. Concretely, we propose the use of orientation maps, derived from camera 3D velocities, as priors to guide the CM process. The orientation maps provide directional guidance and constrain the space of estimated motion trajectories. We show that this orientation-guided formulation leads to improved robustness and convergence in event-based optical flow estimation. The evaluation of our approach on the MVSEC, DSEC, and ECD datasets yields superior accuracy scores over the state of the art.",
+    "status": "found"
+  },
+  "2511.12962": {
+    "arxiv_id": "2511.12962",
+    "title": "EndoSight AI: Deep Learning-Driven Real-Time Gastrointestinal Polyp Detection and Segmentation for Enhanced Endoscopic Diagnostics",
+    "authors": [
+      "Daniel Cavadia"
+    ],
+    "submission_date": "2025-11-17T04:40:38Z",
+    "latest_updated": "2025-11-17T04:40:38Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.12962v1"
+    ],
+    "abstract": "Precise and real-time detection of gastrointestinal polyps during endoscopic procedures is crucial for early diagnosis and prevention of colorectal cancer. This work presents EndoSight AI, a deep learning architecture developed and evaluated independently to enable accurate polyp localization and detailed boundary delineation. Leveraging the publicly available Hyper-Kvasir dataset, the system achieves a mean Average Precision (mAP) of 88.3% for polyp detection and a Dice coefficient of up to 69% for segmentation, alongside real-time inference speeds exceeding 35 frames per second on GPU hardware. The training incorporates clinically relevant performance metrics and a novel thermal-aware procedure to ensure model robustness and efficiency. This integrated AI solution is designed for seamless deployment in endoscopy workflows, promising to advance diagnostic accuracy and clinical decision-making in gastrointestinal healthcare.",
+    "status": "found"
+  },
+  "2511.12963": {
+    "arxiv_id": "2511.12963",
+    "title": "MedRule-KG: A Knowledge-Graph--Steered Scaffold for Reliable Mathematical and Biomedical Reasoning",
+    "authors": [
+      "Crystal Su"
+    ],
+    "submission_date": "2025-11-17T04:42:52Z",
+    "latest_updated": "2025-12-12T16:08:56Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.12963v1",
+      "2511.12963v2"
+    ],
+    "abstract": "We study how to impose domain-consistent structure on large language models (LLMs) used for scientific reasoning and early-stage drug discovery. We present MedRule-KG, a compact knowledge-graph scaffold paired with a lightweight verifier that steers generation toward mathematically and biomedically valid outputs. The system injects curated symbolic facts into prompts and then enforces rule satisfaction with a deterministic checker. We formalize generation as constrained inference, introduce a soft guidance surrogate suitable for decoding, and perform a thorough statistical analysis with uncertainty quantification. Across 90 tasks spanning reaction feasibility, metabolic compatibility, and toxicity screening, MedRule-KG reduces violation counts by 83.2\\% relative to a strong chain-of-thought baseline while improving exact match. Results remain stable under stratification and scale with dataset size, and the verifier adds negligible latency, making the approach practical for interactive design.",
+    "status": "found"
+  },
+  "2511.12964": {
+    "arxiv_id": "2511.12964",
+    "title": "CalibrateMix: Guided-Mixup Calibration of Image Semi-Supervised Models",
+    "authors": [
+      "Mehrab Mustafy Rahman",
+      "Jayanth Mohan",
+      "Tiberiu Sosea",
+      "Cornelia Caragea"
+    ],
+    "submission_date": "2025-11-17T04:43:53Z",
+    "latest_updated": "2025-11-17T04:43:53Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.12964v1"
+    ],
+    "abstract": "Semi-supervised learning (SSL) has demonstrated high performance in image classification tasks by effectively utilizing both labeled and unlabeled data. However, existing SSL methods often suffer from poor calibration, with models yielding overconfident predictions that misrepresent actual prediction likelihoods. Recently, neural networks trained with {\\tt mixup} that linearly interpolates random examples from the training set have shown better calibration in supervised settings. However, calibration of neural models remains under-explored in semi-supervised settings. Although effective in supervised model calibration, random mixup of pseudolabels in SSL presents challenges due to the overconfidence and unreliability of pseudolabels. In this work, we introduce CalibrateMix, a targeted mixup-based approach that aims to improve the calibration of SSL models while maintaining or even improving their classification accuracy. Our method leverages training dynamics of labeled and unlabeled samples to identify ``easy-to-learn'' and ``hard-to-learn'' samples, which in turn are utilized in a targeted mixup of easy and hard samples. Experimental results across several benchmark image datasets show that our method achieves lower expected calibration error (ECE) and superior accuracy compared to existing SSL approaches.",
+    "status": "found"
+  },
+  "2511.12965": {
+    "arxiv_id": "2511.12965",
+    "title": "Electric Truck Platooning with Charging Consideration and Leader Swapping",
+    "authors": [
+      "Yilang Hao",
+      "Zhibin Chen"
+    ],
+    "submission_date": "2025-11-17T04:44:37Z",
+    "latest_updated": "2025-11-17T04:44:37Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.12965v1"
+    ],
+    "abstract": "Electric trucks are increasingly deployed to reduce the trucking sector's carbon footprint, but their limited range and charging needs create operational challenges on mid- to long-haul routes. Truck platooning can mitigate range anxiety through energy savings and, in turn, influence routing and charging decisions, yet most existing studies focus on a single highway corridor and do not capture network-wide operations. We study electric truck platooning on a general road network, where trucks must select routes and charging stations with heterogeneous prices and charging speeds, form platoons on shared arcs, and possibly take detours that trade off platoon savings with additional labor hours. We further allow in-platoon position swaps so that leading responsibility rotates, balancing battery usage and avoiding early depletion of any single truck. To jointly optimize routing paths, charging-station choices, labor time, and platoon formation and position swaps, we formulate a mixed-integer linear program (MILP). Because exact methods become intractable on realistic instances, we develop an Adaptive Large Neighborhood Search (ALNS) algorithm enhanced with a savings-based bounding scheme, infeasible-pair elimination, and candidate-station filtering. Computational experiments on test instances with up to 150 trucks show that incorporating platooning can reduce total operational costs by up to 2.77 percent, while the proposed algorithm cuts computation time by up to 99.96 percent compared with CPLEX and solves 150-truck instances in about 120 seconds, indicating strong potential for real-world applications.",
+    "status": "found"
+  },
+  "2511.12966": {
+    "arxiv_id": "2511.12966",
+    "title": "Beyond Citations: A Cross-Domain Metric for Dataset Impact and Shareability",
+    "authors": [
+      "Smitha Muthya Sudheendra",
+      "Zhongxing Zhang",
+      "Wenwen Cao",
+      "Jisu Huh",
+      "Jaideep Srivastava"
+    ],
+    "submission_date": "2025-11-17T04:45:19Z",
+    "latest_updated": "2025-12-06T00:39:59Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.12966v1",
+      "2511.12966v2"
+    ],
+    "abstract": "The scientific community increasingly relies on open data sharing, yet existing metrics inadequately capture the true impact of datasets as research outputs. Traditional measures, such as the h-index, focus on publications and citations but fail to account for dataset accessibility, reuse, and cross-disciplinary influence. We propose the X-index, a novel author-level metric that quantifies the value of data contributions through a two-step process: (i) computing a dataset-level value score (V-score) that integrates breadth of reuse, FAIRness, citation impact, and transitive reuse depth, and (ii) aggregating V-scores into an author-level X-index. Using datasets from computational social science, medicine, and crisis communication, we validate our approach against expert ratings, achieving a strong correlation. Our results demonstrate that the X-index provides a transparent, scalable, and low-cost framework for assessing data-sharing practices and incentivizing open science. The X-index encourages sustainable data-sharing practices and gives institutions, funders, and platforms a tangible way to acknowledge the lasting influence of research datasets.",
+    "status": "found"
+  },
+  "2511.12967": {
+    "arxiv_id": "2511.12967",
+    "title": "Boundedness of Forelli-Rudin Type Operators on Tubular Domains over The Generalized Light Cones",
+    "authors": [
+      "Xin Xia",
+      "GuanTie Deng"
+    ],
+    "submission_date": "2025-11-17T04:45:30Z",
+    "latest_updated": "2025-11-17T04:45:30Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.12967v1"
+    ],
+    "abstract": "This study investigates conditions for the boundedness of Forelli-Rudin type operators on weighted Lebesgue spaces associated with tubular domains over the generalized light cone. We establish a complete characterization of the boundedness for two classes of Forelli-Rudin type operators from $L_{\\boldsymbolα}^{p}$ to $L_{\\boldsymbolβ}^{q}$, in the range $1 < p \\leq q < \\infty$. The findings contribute significantly to the analysis of Bergman projection operators in this setting.",
+    "status": "found"
+  },
+  "2511.12968": {
+    "arxiv_id": "2511.12968",
+    "title": "GrOCE:Graph-Guided Online Concept Erasure for Text-to-Image Diffusion Models",
+    "authors": [
+      "Ning Han",
+      "Zhenyu Ge",
+      "Feng Han",
+      "Yuhua Sun",
+      "Chengqing Li",
+      "Jingjing Chen"
+    ],
+    "submission_date": "2025-11-17T04:47:16Z",
+    "latest_updated": "2026-04-13T06:15:25Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.12968v1",
+      "2511.12968v2"
+    ],
+    "abstract": "Concept erasure aims to remove harmful, inappropriate, or copyrighted content from text-to-image diffusion models while preserving non-target semantics. However, existing methods either rely on costly fine-tuning or apply coarse semantic separation, often degrading unrelated concepts and lacking adaptability to evolving concept sets. In this paper, we propose Graph-Guided Online Concept Erasure (GrOCE), a training-free framework that performs precise and context-aware online removal of target concepts. GrOCE constructs dynamic semantic graphs to identify clusters of target concepts and selectively suppress their influence within text prompts. It consists of three synergistic components: (1) dynamic semantic graph construction (Construct) incrementally builds a weighted graph over vocabulary concepts to capture semantic affinities; (2) adaptive cluster identification (Identify) extracts a target concept cluster through multi-hop traversal and diffusion-based scoring to quantify semantic influence; and (3) selective severing (Sever) removes semantic components associated with the target cluster from the text prompt while retaining non-target semantics and the global sentence structure. Extensive experiments demonstrate that GrOCE achieves state-of-the-art performance on the Concept Similarity (CS) and Fréchet Inception Distance (FID) metrics, offering efficient, accurate, and stable concept erasure.",
+    "status": "found"
+  }
+}

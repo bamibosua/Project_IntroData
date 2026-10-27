@@ -1,0 +1,399 @@
+{
+  "2609.17814": {
+    "arxiv_id": "2609.17814",
+    "title": "GazeDiT: Gaze-Accurate Diffusion Image Generation for Eye Tracking via Spatial Conditioning",
+    "authors": [
+      "Dongze Wu",
+      "David Colmenares",
+      "Fengting Yang",
+      "Jogendra Nath Kundu",
+      "Yao Xie",
+      "Ali Behrooz",
+      "Conny Lu"
+    ],
+    "submission_date": "2026-09-15T20:30:24Z",
+    "latest_updated": "2026-09-15T20:30:24Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17814v1"
+    ],
+    "abstract": "Diffusion models are increasingly used to generate synthetic training data, but precise label control remains difficult when the conditioning signal is low-dimensional and coarse. Text-conditioned images are judged by broad prompt consistency, whereas supervised training requires precise correspondence between each image and its numerical label. This is challenging in eye tracking, where a 4D binocular gaze is expressed through subtle, spatially localized pupil and iris geometry. We introduce GazeDiT, a diffusion model that generates images for a requested 4D gaze through an internally constructed spatial condition that grounds the global gaze label in this local geometry. During training, a frozen SegFormer extracts pupil/iris geometry from diverse real images, allowing the model to learn realistic appearance conditioned on that geometry. At inference, a physical eye renderer samples gaze-consistent geometries by varying anatomy and camera state, enabling diverse synthesis without a source image. GazeDiT achieves substantially lower tail gaze-label error than other diffusion baselines, approaching the error of the same frozen gaze estimator on real images. Its generated data also improves the downstream eye tracker, reducing gaze error on difficult cases from 3.05° to 2.80° in the smallest cohort.",
+    "status": "found"
+  },
+  "2609.17815": {
+    "arxiv_id": "2609.17815",
+    "title": "Principled Koopman Representations with Kalman Inference for Efficient Time-Series Prediction",
+    "authors": [
+      "Ruiquan Li",
+      "Yuheng Bu"
+    ],
+    "submission_date": "2026-09-15T20:32:25Z",
+    "latest_updated": "2026-09-15T20:32:25Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17815v1"
+    ],
+    "abstract": "The Koopman operator has been widely used for time-series prediction in dynamical systems. However, prior work that learns latent ``Koopman spaces'' using neural networks often did not construct a valid Koopman space for forecasting, as these representations may be mathematically inconsistent with the operator-theoretic formulation and fail to capture the intrinsic low-rank structure of system dynamics. To address this issue, we introduce K$^2$SVD, a method that explicitly learns the leading singular functions of the Koopman operator by optimizing a Hilbert-Schmidt objective. This yields a well-defined low-rank approximation of the Koopman operator with an interpretable linear combination, featuring a compact latent space with less than $10\\%$ of the dimensions used in previous work. In the learned Koopman space, K$^2$SVD further captures temporal evolution with a linear Gaussian state-space model and performs inference via Kalman filtering, mitigating noise accumulation during multi-step prediction. Empirical results show that K$^2$SVD outperforms state-of-the-art methods across multiple datasets, with significantly faster prediction speeds and lower computational cost than previous efficiency-focused models. This highlights the benefits of principled low-rank Koopman representations and opens up broader potential for applications.",
+    "status": "found"
+  },
+  "2609.17816": {
+    "arxiv_id": "2609.17816",
+    "title": "The Free Inference Dimension: Complexity Measure for Zero-Collision Navigation under Hypothesis Mixtures",
+    "authors": [
+      "Luiz Carlos Castro Guedes",
+      "Edward Hermann Haeusler"
+    ],
+    "submission_date": "2026-09-15T20:32:28Z",
+    "latest_updated": "2026-09-15T20:32:28Z",
+    "revised_dates": null,
+    "venue": "Proceedings of BRACIS 2026. LNCS/LNAI, Springer (2026)",
+    "latest_version": 1,
+    "versions": [
+      "2609.17816v1"
+    ],
+    "abstract": "Solomonoff induction frames prediction as a mixture over computable hypotheses, typically leading to identification of the true environment. In a finite meta-reinforcement learning setting with nested constraint families, in our previous work, we observe a different regime: a value-mixture (VM) agent achieves near-optimal, zero-collision navigation without identifying the true environment, a phenomenon we call Free Inference. This regime persists up to a sharp density threshold, beyond which performance degrades and posterior-mode selection (PMS) becomes preferable. We formalize this behavior via the Free Inference dimension dFI(S,N), a combinatorial measure of the environmental complexity a VM agent can handle while preserving trajectory coherence. We prove dFI is strictly smaller than the VC-dimension and relates to the Natarajan dimension up to a path-length factor, capturing the cost of non-decomposable loss. A PAC-style relaxation yields generalization bounds driven by dFI^(epsilon,delta). We also define a complementary PMS identification dimension and show that a hybrid strategy---averaging until the first collision, then switching to selection---is optimal, with links to Littlestone-type dimensions supported by grid-world experiments.",
+    "status": "found"
+  },
+  "2609.17817": {
+    "arxiv_id": "2609.17817",
+    "title": "Reflections on Trusting Trust, Revisited: Contaminating Self-Modifying AI Coding Agents with Poisoned Benchmarks",
+    "authors": [
+      "Franziska Roesner",
+      "Tadayoshi Kohno"
+    ],
+    "submission_date": "2026-09-15T20:32:53Z",
+    "latest_updated": "2026-09-15T20:32:53Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17817v1"
+    ],
+    "abstract": "Thompson's \"Reflections on Trusting Trust\" showed that a compiler can be poisoned to reinsert its own backdoor, so that even recompiling clean source reproduces the Trojan. Today, substantial coding work is done by AI coding agents -- and increasingly, those agents generate new versions of themselves. We reconsider Thompson's attack when the \"compiler\" is a self-modifying coding agent. Can an adversary supply poisoned benchmarks to the agent's self-evaluation and self-improvement process to induce future versions of the agent to write vulnerable code on clean, held-out tasks? We instantiate this attack against three recently proposed self-modifying coding agents: the Darwin Gödel Machine (with our experimental modifications), the Self-Improving Coding Agent, and Hyperagents (both substantively unmodified). We demonstrate successful proofs-of-concept: for example, with Hyperagents powered by Sonnet 4.5, our poisoned benchmark leads the agent to self-evolve instructions that disable HTTPS certificate validation on neutral URL-fetching tasks. From our experiments, we distill properties of the vulnerability, benchmark, model, and agent scaffolding that are sufficient to enable a benchmark poisoning attack. Moreover, we show that contamination often persists even when a poisoned agent is subsequently evolved against clean benchmarks. We discuss defensive directions and argue that self-modifying coding agents must be designed to be more resilient to such attacks.",
+    "status": "found"
+  },
+  "2609.17818": {
+    "arxiv_id": "2609.17818",
+    "title": "Entropy spectroscopy of a tunable two-site Hubbard molecule",
+    "authors": [
+      "Uhjin Kim",
+      "Seokyeong Lee",
+      "Gibum Yun",
+      "Dongsung T. Park",
+      "Soobeom Choi",
+      "Sangwoo Jeong",
+      "Donghoon Kim",
+      "V. Umansky",
+      "Yunchul Chung",
+      "Hyoungsoon Choi",
+      "H. -S. Sim",
+      "Hyung Kook Choi"
+    ],
+    "submission_date": "2026-09-15T20:33:01Z",
+    "latest_updated": "2026-09-15T20:33:01Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17818v1"
+    ],
+    "abstract": "Determining which microscopic states remain thermally active when tunneling and interactions compete is a central question in Hubbard physics. Here we develop an entropy measurement protocol for a double quantum dot, extending the charge-based approach established for a single dot, and measure the total entropy of a tunable two-site Hubbard molecule realized in a GaAs double dot. By shifting both dot levels together at fixed detuning, the entropy is correctly probed with only a single charge sensor. As interdot tunneling increases, the system evolves from two atomic-like dots through hybridized molecular states to a merged single dot. Across this evolution, the entropy decreases as tunnel-induced energy splitting exceeds the thermal energy and suppresses the occupation of higher-energy states. The measurements resolve the diminishing contribution of antibonding states and the changing thermal contributions of hybridized singlet and triplet states, in quantitative agreement with a two-site Hubbard model. By distinguishing states with the same charge configuration but different orbital and spin content, entropy reveals how tunneling and interactions determine the thermally active states of the minimal Hubbard system.",
+    "status": "found"
+  },
+  "2609.17819": {
+    "arxiv_id": "2609.17819",
+    "title": "Only finitely many modular Jacobians are supersingular modulo a given prime",
+    "authors": [
+      "Aarya J. Kumar",
+      "Sargam Mondal",
+      "Erick Ross",
+      "Hui Xue"
+    ],
+    "submission_date": "2026-09-15T20:34:14Z",
+    "latest_updated": "2026-09-15T20:34:14Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17819v1"
+    ],
+    "abstract": "In this paper, we study supersingularity of modular Jacobians $J_0(N)$ and abelian varieties $A_f$ of $\\mathrm{GL}_{2}$-type from both the vertical perspective (where the prime $p$ is fixed, and the level $N$ varies) and the horizontal perspective (where the newform $f$ is fixed, and the prime $p$ varies). Vertically, we prove that $J_{0}(N)$ is supersingular modulo a given prime $p$ for only finitely many levels $N$. Horizontally, we show that for sufficiently large $p$, the reduction of $A_f$ modulo $p$ is supersingular if and only if it isogenous to a power of a supersingular elliptic curve.",
+    "status": "found"
+  },
+  "2609.17820": {
+    "arxiv_id": "2609.17820",
+    "title": "CALIPER: Metric-Grounded Model-Free Recognition of Visually Similar Industrial Parts",
+    "authors": [
+      "Alankrit Gupta",
+      "Chenxi Tao",
+      "Seung-Kyum Choi"
+    ],
+    "submission_date": "2026-09-15T20:34:20Z",
+    "latest_updated": "2026-09-15T20:34:20Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17820v1"
+    ],
+    "abstract": "Fine-grained recognition of visually similar industrial parts is challenging when classes differ primarily in physical dimensions. Normalizing detected object crops to a fixed input size suppresses absolute scale, while CAD models and large class-specific datasets may be unavailable in evolving industrial inventories. We present CALIPER, a model-free RGB-D framework that couples support-based appearance matching with metric size evidence. Each training class is onboarded from a single turntable RGB-D video and one to two labeled real images; 3D reconstruction provides novel-view appearance support, while aligned depth yields a class-specific metric size profile. At inference, a coarse YOLOv8n-seg model localizes parts, and a frozen DINOv2 backbone with an episodically trained embedding head performs fine-grained support matching. Margin-conditioned metric fusion activates probabilistic size evidence only for appearance-ambiguous decisions. New classes are enrolled from a small RGB-D support set without updating network parameters. We evaluate CALIPER on 18 visually similar industrial parts: 16 classes are used for training, while two screws are reserved for training-free enrollment. CALIPER achieves 88.2% closed-set accuracy with 99.8% localization recall and 85.7% overall accuracy after 10-shot enrollment of the two unseen screws. Metric fusion improves unseen-class accuracy by up to 37.4 percentage points without statistically significant degradation of the original inventory. Robot-arm deployment identifies 17/18 parts without deployment-specific retraining.",
+    "status": "found"
+  },
+  "2609.17821": {
+    "arxiv_id": "2609.17821",
+    "title": "Silicon avalanche transition edge bolometer: approaching the thermodynamic limit for uncooled long-wave infrared detection",
+    "authors": [
+      "Wenjun Deng",
+      "Renwen Yu",
+      "Guanyu Han",
+      "Ziyao Feng",
+      "Yu Wang",
+      "Shanhui Fan",
+      "Qiushi Guo"
+    ],
+    "submission_date": "2026-09-15T20:35:49Z",
+    "latest_updated": "2026-09-15T20:35:49Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17821v1"
+    ],
+    "abstract": "Bolometers transduce incident electromagnetic radiation into measurable electrical signals via radiation-induced heating in thermo-resistive materials. They are uniquely capable of detecting low-energy photons without cryogenic cooling, and are widely deployed for uncooled long-wave infrared (LWIR) radiation detection and thermal imaging. Although their fundamental detection limit is set by the thermodynamic fluctuations, state-of-the-art uncooled bolometers still operate well above this limit due to the presence of Johnson noise, 1/f noise and noises from the readout circuits. Here, we address this challenge by introducing a new uncooled LWIR bolometer concept---the silicon avalanche transition edge (SATE) bolometer. Operating near the steep current transition edge associated with avalanche breakdown, the device exhibits an ultra-high, positive temperature coefficient of resistance (TCR) of 330 %/K, greatly suppressing the impacts of other noise sources. Even without any thermal insulation structures, the SATE bolometer delivers a high room-temperature responsivity up to 160 mA/W for 9.5 $μ$m radiation, a noise equivalent power of 370 pW/$\\sqrt{\\mathrm{Hz}}$, and a strong electro-thermal feedback enlarged bandwidth of 77 kHz---performance unattainable with conventional bolometer materials with a TCR of $-1\\sim-3\\%$/K. Our work establishes a promising thermo-electric transduction mechanism toward high-sensitivity, high-speed room-temperature thermal imaging and infrared spectroscopy using CMOS technology.",
+    "status": "found"
+  },
+  "2609.17822": {
+    "arxiv_id": "2609.17822",
+    "title": "Improved Methods for k-core Community Search",
+    "authors": [
+      "Ian Chen",
+      "Haotian Yi",
+      "Arun Sharma",
+      "George Chacko",
+      "Tandy Warnow"
+    ],
+    "submission_date": "2026-09-15T20:37:56Z",
+    "latest_updated": "2026-09-15T20:37:56Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17822v1"
+    ],
+    "abstract": "Community search based on user-specified query nodes is complementary to community finding or graph clustering. Prior work in community search is divided into optimizing for external separate- ness or internal cohesiveness, which does not scale well networks of over a billion edges. We present SteinerKCore, a new scalable k-core based community search algorithm for multi-vertex queries. We also present Par-ShellStruct, a parallel algorithm for building the ShellStruct data structure used for k-core community search. We show that our implemen- tations in Icebug, an open-source toolkit for large-scale network analysis, are both more efficient and more scalable than comparative tools, being able to perform on a benchmark network of 273M and 5.1B edges using just 64GB RAM and under 4 hours runtime with 16 CPUs.",
+    "status": "found"
+  },
+  "2609.17823": {
+    "arxiv_id": "2609.17823",
+    "title": "METALICA: METAdynamics and repLICA exchange for enhanced diffusion sampling",
+    "authors": [
+      "Alireza Omidi",
+      "Jiajun He",
+      "Jörg Gsponer",
+      "Saifuddin Syed"
+    ],
+    "submission_date": "2026-09-15T20:38:39Z",
+    "latest_updated": "2026-09-15T20:38:39Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17823v1"
+    ],
+    "abstract": "Many proteins function through transitions between conformational states, yet rare states are rarely sampled by diffusion models trained on an equilibrium ensemble, demanding better sampling methods. We introduce METALICA, which implements Metadynamics on a pretrained diffusion model via Replica Exchange. It accumulates a bias potential along a Collective Variable, repels new samples from previous ones through biased sampling, and reweights samples onto the unbiased distribution. METALICA holds one replica per diffusion level, forming a Markov Chain that evolves through inter-replica communication and is refined in place as the bias grows. METALICA is the dual of sequential control, in which Sequential Monte Carlo parallelizes the sampler over a batch of particles. Parallelism over the levels of the diffusion-time schedule instead allows METALICA to generate samples from long chains, essential for the discovery of rare events, with accuracy set by run length rather than by the memory available. We validate on a bimodal target with known free energies, then apply METALICA to the unfolding of a protein. At a budget for which sequential control yields no unfolded structure, METALICA populates the basin and resolves a second free energy minimum.",
+    "status": "found"
+  },
+  "2609.17824": {
+    "arxiv_id": "2609.17824",
+    "title": "Learning Multi-Humanoid Pickup and Transport via Decentralized Object-Centric Control",
+    "authors": [
+      "Bikram Pandit",
+      "Mohitvishnu S. Gadde",
+      "Aayam Kumar Shrestha",
+      "Alan Fern"
+    ],
+    "submission_date": "2026-09-15T20:40:43Z",
+    "latest_updated": "2026-09-15T20:40:43Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17824v1"
+    ],
+    "abstract": "We study cooperative multi-humanoid pickup and transport of objects with varying size, weight, and geometry, requiring robot teams of different sizes. Our approach uses decentralized object-centric control, where each humanoid is assigned a local attachment region on the shared object and learns to realize pickup and transport through gripperless bimanual pinching. This attachment-based interface provides a common control abstraction spanning single-robot pickup, cooperative multi-robot transport, and robot-to-robot handover, without per-task redesign. We find that policies trained only on single-robot pickup already transfer nontrivially to cooperative settings, suggesting that this abstraction captures much of the structure needed for coordination. At the same time, explicit multi-robot training further improves performance, showing that shared-object coupling introduces coordination dynamics that are beneficial to learn directly. We validate the approach in simulation across varying team sizes and object geometries, and demonstrate sim-to-real transfer on hardware, where the learned controllers enable real humanoids to perform cooperative manipulation tasks.",
+    "status": "found"
+  },
+  "2609.17825": {
+    "arxiv_id": "2609.17825",
+    "title": "NObSP: Functional Decomposition of Neural Networks via Oblique Subspace Projections",
+    "authors": [
+      "Alexander Caicedo",
+      "Víctor De La Hoz",
+      "Santiago Alférez"
+    ],
+    "submission_date": "2026-09-15T20:40:44Z",
+    "latest_updated": "2026-09-15T20:40:44Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17825v1"
+    ],
+    "abstract": "Understanding how deep neural networks make decisions remains a fundamental challenge. We present NObSP (Nonlinear Oblique Subspace Projections), a framework that decomposes predictions into explicit per feature contribution functions and an interaction residual. NObSP exploits the linear final layer of a trained network and uses oblique projections in sample space to reduce double counting when learned feature subspaces overlap, thereby supporting both local explanations and global functional analysis. We establish connections to functional ANOVA and the Kolmogorov-Arnold representation theorem and derive an efficient partial regression algorithm for out of sample evaluation. For convolutional networks, NObSP-CAM produces class activation maps without backward passes after a one time calibration. Experiments on tabular and vision benchmarks show faithfulness comparable to established attribution methods. On a synthetic benchmark with known component functions, NObSP obtains a Function Reproduction Score of 0.989, compared with 0.966 for KernelSHAP and 0.922 for Integrated Gradients. On TinyImageNet, contribution vector embeddings improve mean nearest neighbor class purity from 0.654 for raw activations to 0.713 and reduce mean neighbor distance by more than half. These results indicate that NObSP complements scalar attribution methods by recovering functional contribution profiles with separable positive and negative evidence.",
+    "status": "found"
+  },
+  "2609.17826": {
+    "arxiv_id": "2609.17826",
+    "title": "String equation for conformal loop ensemble on Liouville quantum gravity sphere",
+    "authors": [
+      "Xin Sun",
+      "Baojun Wu",
+      "Shengjing Xu"
+    ],
+    "submission_date": "2026-09-15T20:43:36Z",
+    "latest_updated": "2026-09-15T20:43:36Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17826v1"
+    ],
+    "abstract": "Matrix models express partition functions of random surfaces with prescribed boundary lengths through string equations. We give a probabilistic realization of this structure in Liouville quantum gravity (LQG). For $γ^2\\in(8/3,4)$, we construct the quantum $n$-hole sphere from a quantum disk decorated by an independent conformal loop ensemble (CLE) and compute its area Laplace transform at fixed boundary lengths. The transform depends only on the total boundary length apart from a simple prefactor and is determined by a hypergeometric string equation. We derive this equation from stable Lévy excursions using LQG/CLE coupling. The conformal welding equation yields symmetric polynomials that represent integrated LQG/CLE coupling observables. These polynomials converge to Weil--Petersson volumes of spheres with $n$ geodesic boundaries as $γ\\downarrow0$.",
+    "status": "found"
+  },
+  "2609.17827": {
+    "arxiv_id": "2609.17827",
+    "title": "Robust Tests for Step-Stress Models under Exponential Lifetimes",
+    "authors": [
+      "María Jaenada Malagón",
+      "Juan Manuel Millán Fanconi",
+      "Leandro Pardo Llorente"
+    ],
+    "submission_date": "2026-09-15T20:44:48Z",
+    "latest_updated": "2026-09-15T20:44:48Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17827v1"
+    ],
+    "abstract": "Highly reliable products with extended lifetimes present a challenge in reliability analysis: obtaining enough failure data under normal operating conditions is often incompatible with reasonable time and cost constraints. Step-Stress Accelerated Life Tests (SSALTs) offer a practical solution by progressively increasing stress levels to accelerate product degradation, allowing results to be extrapolated to normal conditions. However, the small sample sizes and Type-I censoring inherent to these experiments render classical maximum likelihood-based inference vulnerable to data contamination. Robust point estimation has been studied in the literature. However, robust test statistics have not yet been developed in this context. In this paper, we propose robust test statistics for SSALTs under exponential lifetime distributions, based on the minimum density power divergence estimator (MDPDE). This paper directly works with the exact failure times recorded before the end of the experiment. Once this limit time is reached, all surviving components are censored. This creates a mixed discrete-continuous distribution, which is a major analytical breakthrough in the context of SSALT. We introduce the restricted version of the MDPDE, establish its asymptotic properties, and construct Z-type and Rao-type test statistics for linear hypotheses on the model parameters. The proposed tests are shown to maintain their nominal significance levels and statistical power under data contamination, where classical MLE-based procedures fail. An extensive simulation study confirms the robustness gains of the proposed methods, and a real data application illustrates their practical value.",
+    "status": "found"
+  },
+  "2609.17828": {
+    "arxiv_id": "2609.17828",
+    "title": "On definable Galois theory and definable Galois cohomology in the totally transcendental setting",
+    "authors": [
+      "David Meretzky"
+    ],
+    "submission_date": "2026-09-15T20:46:54Z",
+    "latest_updated": "2026-09-15T20:46:54Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17828v1"
+    ],
+    "abstract": "This paper gives results which relate the definable Galois theory of [28] to the definable Galois cohomology of [18] in the setting of a totally transcendental first order theory. Firstly, we show that under some common assumptions the definable Galois cohomology of the extrinsic definable Galois group associated to fixed internality data classifies the number of definable Galois extensions inside a copy of the prime model. This generalizes a well-known result for Picard-Vessiot differential Galois theory shown originally via tannakian methods [3]. We then collate some triviality results for differential Galois cohomology [21] and recent results on iterated Picard-Vessiot extensions [10] [15] to give colimit formulas for differential Galois cohomology. Precisely, for an ordinary differential field $K$ of characteristic $0$ and a linear differential algebraic group $G$ over $K$, the differential Galois cohomology $\\text{H}^1_δ(K,G)$, is given by a colimit over the family of normal closures of iterated Picard-Vessiot extensions of $K$ of finite type. We then propose a new notion of boundedness for a differential field. We finally show that the minimal closure of a set of parameters $A$, the intersection of all elementary embeddings of a copy of the prime model over $A$ into itself, contains all of the definable Galois cohomological information for definable groups over $A$ satisfying also some strong but common conditions. Lastly, we give some colimit formulas for definable Galois cohomology and propose a model-theoretic definition of a bounded set of parameters.",
+    "status": "found"
+  },
+  "2609.17829": {
+    "arxiv_id": "2609.17829",
+    "title": "Optimising instrument concepts with Machine Learning: Application to CMB spectral distortion experiments",
+    "authors": [
+      "Xavier Coulon",
+      "Nabila Aghanim",
+      "Bruno Maffei"
+    ],
+    "submission_date": "2026-09-15T20:47:52Z",
+    "latest_updated": "2026-09-15T20:47:52Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17829v1"
+    ],
+    "abstract": "Understanding how instrumental and mission parameters affect the ability to measure faint astrophysical signals is a key challenge in the design of future experiments. This is particularly relevant for CMB spectral distortions, whose weak signals are affected by both instrumental effects and astrophysical foregrounds. We develop a method to explore and optimise the multidimensional parameter space of an astronomical instrument, and apply it to CMB spectral distortion measurements using the FOSSIL mission concept. We combine a dedicated sky model with a realistic instrument model and use Fisher forecasts to assess measurement capabilities of the simulated instrument. Decision-tree-based regression models are then used to learn the non-linear mapping between instrumental parameters and the predicted signal-to-noise ratios of the sky observables. Random Forest and gradient boosting models accurately reproduce the forecasted measurement performance. SHAP values are used to interpret the impact of instrumental parameters on the measurement. The temperature of the warmest instrumental component is found to be the dominant parameter for all three observables, highlighting the importance of limiting internal emission and operating the instrument at cryogenic temperatures. Frequency coverage is also highly influential, revealing a trade-off between spectral coverage and instrumental sensitivity. The proposed optimisation method provides a fast and interpretable approach to explore high-dimensional instrumental parameter spaces and identify parameters that most strongly influence the scientific performance of an experiment. To the best of our knowledge, this work represents the first application of machine-learning methods to the global optimisation of an astronomical instrument and can readily be extended to other astronomical instruments and mission concepts.",
+    "status": "found"
+  },
+  "2609.17830": {
+    "arxiv_id": "2609.17830",
+    "title": "Proto-Planetary Nebulae Are Not the Precursors of Planetary Nebulae With Close Binary Central Stars",
+    "authors": [
+      "Todd C. Hillwig",
+      "Bruce J. Hrivnak",
+      "David Jones"
+    ],
+    "submission_date": "2026-09-15T20:48:14Z",
+    "latest_updated": "2026-09-15T20:48:14Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17830v1"
+    ],
+    "abstract": "Proto-planetary nebulae are considered to be the evolutionary link between AGB stars and planetary nebulae. They possess many of the physical characteristics expected of such a link and provide valuable information about the evolutionary process in these objects. One important characteristic of proto-planetary nebulae is the prevalence of very strong bipolar and point-symmetric morphologies. In planetary nebulae, these shapes are widely considered to be the result of shaping by a binary companion. Indeed, a number of studies have shown links between strong axial or point-symmetry in planetary nebulae and close binary central star systems that have gone through a common envelope phase. Here, we explore whether the observed proto-planetary nebulae may be the progenitors of planetary nebulae with close binary central stars. We find that despite the strong shaping of proto-planetary nebulae this is unlikely to be the case. We also discuss options for evolution to close binaries and the alternatives.",
+    "status": "found"
+  },
+  "2609.17831": {
+    "arxiv_id": "2609.17831",
+    "title": "Procedural Pretraining for Molecular Property Prediction",
+    "authors": [
+      "Moritz Friedemann",
+      "Zachary Shinnick",
+      "Philip Torr",
+      "Bruno Andreis"
+    ],
+    "submission_date": "2026-09-15T20:48:50Z",
+    "latest_updated": "2026-09-15T20:48:50Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17831v1"
+    ],
+    "abstract": "Molecular property prediction is often limited by the small size of labeled downstream datasets, motivating pretraining on large corpora of unlabeled molecules. In this work, we ask whether useful inductive biases can instead be learned from abstract, procedurally generated data before a model sees any molecular data. We introduce a three-stage training pipeline consisting of procedural pretraining, molecular pretraining on SMILES, and downstream fine-tuning, and evaluate several procedural tasks spanning sequence structure, cellular automata, and graph reasoning. We find that procedural pretraining can improve molecular property prediction even after subsequent molecular pretraining: on Lipophilicity, \\textsc{Reverse} reduces test error by 4.8\\%. For context, the magnitude of this improvement is roughly 90\\% of the performance difference between our 250K-molecule baseline and the publicly released MoLFormer checkpoint pretrained on approximately 100M molecules. Our analysis shows that the benefit is strongest under downstream data scarcity, depends on the structure of the procedural data rather than only surface-level statistics, and does not increase monotonically with additional procedural training. Instead, transfer typically peaks at an intermediate procedural budget and deteriorates as the model approaches convergence on the procedural task. We further find that, for several tasks, much of the transferable information is localized in the attention layers, while feed-forward layers can contribute to over-specialization. These results show that procedural data can provide transferable structure for molecular learning and offer a complementary route to improving performance when labeled molecular data are limited.",
+    "status": "found"
+  },
+  "2609.17832": {
+    "arxiv_id": "2609.17832",
+    "title": "Adaptive-MHE : A Sampling-Based Adaptive MPC for Legged Loco-Manipulation via Moving Horizon Estimation",
+    "authors": [
+      "Hossein Keshavarz",
+      "Alejandro Ramirez-Serrano",
+      "Majid Khadiv"
+    ],
+    "submission_date": "2026-09-15T20:49:39Z",
+    "latest_updated": "2026-09-15T20:49:39Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17832v1"
+    ],
+    "abstract": "Legged robots have demonstrated a remarkable ability to traverse various terrains, yet generating effective loco-manipulation behaviors remains challenging. A key difficulty is that object and terrain parameters are typically unknown to the robot, and mismatches between these parameters and their simulated counterparts introduce a sim-to-real gap that degrades control performance. Classical system identification (Sys-ID) methods often assume differentiable dynamics, an assumption that does not hold for contact-rich legged systems. Sampling-based Sys-ID avoids this restriction by directly matching simulated and recorded state trajectories through massively parallel rollouts, but existing approaches are typically applied offline and do not adapt as environmental conditions change. We present Adaptive-MHE an online sampling-based Sys-ID framework, based on moving horizon estimation (MHE), that estimates the physical parameters of objects and terrain in the environment (e.g., mass, friction) and couples this estimate with a sampling-based model predictive controller, enabling adaptive loco-manipulation in changing and uncertain environments. In simulation and hardware experiments, our framework consistently outperforms baselines and matches the performance of a controller with access to ground-truth parameters.",
+    "status": "found"
+  },
+  "2609.17833": {
+    "arxiv_id": "2609.17833",
+    "title": "Canonical and symplectic analysis of the Holst action in the $G\\rightarrow 0$ limit",
+    "authors": [
+      "Victor Julian Pérez-Aquino",
+      "Alberto Escalante"
+    ],
+    "submission_date": "2026-09-15T20:51:16Z",
+    "latest_updated": "2026-09-15T20:51:16Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17833v1"
+    ],
+    "abstract": "By using the Dirac and symplectic formalisms, the analysis of the Holst action in the $G \\rightarrow 0$ limit is performed. We study the theory's full canonical structure and symmetries. In particular, we focus on the cases $γ= i$ and $γ\\neq i$, aiming to obtain Smolin's auto-self-dual model in terms of the Ashtekar variables and a Barbero-type formulation. We then perform the symplectic analysis and discuss the principal insight of these formalisms.",
+    "status": "found"
+  }
+}

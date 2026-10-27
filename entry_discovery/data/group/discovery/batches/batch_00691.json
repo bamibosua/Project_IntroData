@@ -1,0 +1,402 @@
+{
+  "2608.12827": {
+    "arxiv_id": "2608.12827",
+    "title": "Validation of Smartphone-Based Photogrammetric 3D Body Scanning for Automated Anthropometric Measurements Compared with a Commercial Depth-Sensor-Based Body Scanner",
+    "authors": [
+      "Ruting Cheng",
+      "Boyuan Feng",
+      "Chuhui Qiu",
+      "Joaquin A. Calderon",
+      "Qing Pan",
+      "Yufan Liu",
+      "James K. Hahn"
+    ],
+    "submission_date": "2026-08-13T05:00:55Z",
+    "latest_updated": "2026-08-13T05:00:55Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12827v1"
+    ],
+    "abstract": "3D body scanning has become an important tool in healthcare applications because of its rapid and non-invasive nature. While smartphone-based photogrammetric reconstruction provide a low-cost and accessible alternative to commercial 3D body scanners, their performance for whole-body scanning remains insufficiently validated. Thus, we designed this study to comprehensively validate the photogrammetric 3D scanning application by evaluating automatically extracted whole-body measurements and longitudinal body-shape monitoring. We evaluated a representative application, PolyCam, against the commercial depth-sensor-based Fit3D ProScanner using 144 pregnant participants scanned longitudinally throughout pregnancy. We designed an automatic circumference extraction pipeline to get measurements at four anatomical landmarks from paired 3D scans. A linear mixed-effects model was used to evaluate scanner effects and longitudinal body-shape changes. Measurement consistency was assessed using repeated PolyCam scans and tape measurements on a rigid mannequin. PolyCam demonstrated strong agreement with Fit3D, with average biases below 16 mm, intraclass correlation coefficients above 0.8, and Pearson correlation coefficients above 0.9 across all landmarks. Both systems captured comparable longitudinal body-shape changes. Mannequin experiments showed mean biases below 3.5 mm and no significant differences from tape measurements. These findings support smartphone photogrammetry as a potential accessible alternative to commercial body scanners and applicable for longitudinal 3D body-shape assessment.",
+    "status": "found"
+  },
+  "2608.12828": {
+    "arxiv_id": "2608.12828",
+    "title": "Distribution Steering via Sliced Optimal Transport Control",
+    "authors": [
+      "Kaito Ito",
+      "Anqi Dong"
+    ],
+    "submission_date": "2026-08-13T05:00:59Z",
+    "latest_updated": "2026-08-13T05:00:59Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12828v1"
+    ],
+    "abstract": "Distribution steering seeks feedback laws that drive the state law of a dynamical system between prescribed initial and terminal distributions. Optimal transport provides a natural geometric approach, but its implementation generally requires a transport map or coupling in the full state space. Sliced optimal transport avoids this full-dimensional construction through one-dimensional projections. Yet, the resulting projected maps specify only directional displacements and do not by themselves prescribe a realizable feedback law. To this end, we develop a finite-horizon control framework based on sliced optimal transport. At each sampling instant, a projected optimal transport map defines a directional terminal condition, whose minimum-energy realization yields a randomized single-direction controller. Averaging over projection directions gives a deterministic sliced feedback. For the single-integrator dynamics, the averaged feedback makes the sliced Wasserstein distance to the target non-increasing. For Gaussian endpoint laws, it is affine, preserves Gaussianity, and steers the mean and covariance to their prescribed terminal values. We further identify a law-dependent gain that yields linear decay of the sliced Wasserstein distance together with an explicit characterization of the control energy. We also prove that the randomized controller converges to the averaged sliced flow as the sampling period vanishes. Finally, we extend the construction to linear dynamical systems. Reachability-normalized coordinates allow instantaneous realization of the sliced velocity for uniformly fully actuated systems, while local controllability Gramians provide exact finite-step realization for general controllable systems. Numerical examples illustrate the resulting distributional flows.",
+    "status": "found"
+  },
+  "2608.12829": {
+    "arxiv_id": "2608.12829",
+    "title": "Semantic Steering for Controllable Generation: Tuning-Free Concept Erasure in Multimodal Diffusion Transformers",
+    "authors": [
+      "Qiao Li",
+      "Xiaomeng Fu",
+      "Yuanshu Zhao",
+      "Qipeng Wang",
+      "Jiao Dai",
+      "Jizhong Han"
+    ],
+    "submission_date": "2026-08-13T05:05:45Z",
+    "latest_updated": "2026-08-13T05:05:45Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12829v1"
+    ],
+    "abstract": "Multimodal Diffusion Transformers (MM-DiTs) have demonstrated remarkable text-to-image generation performance, surpassing traditional U-Net-based diffusion models. Nevertheless, their powerful generative capabilities also raise significant safety concerns, as they may generate sensitive or inappropriate content. While existing concept erasure methods aim to mitigate such risks, most require modifying model parameters, which are often architecture-specific and impractical for deployed larger models. Several tuning-free approaches face challenges when applied to advanced large-scale MM-DiTs due to their deeply embedded knowledge, broad semantic space, and context-dependent text encoders. To address these challenges, we propose to erase concepts by directly manipulating the model's internal representations. Our key insight, derived from an in-depth analysis of MM-DiT's block-wise generative roles, is that text-conditioned semantic representations are most salient in the middle blocks of MM-DiTs. Based on this, we extract representations of an unwanted concept and a desirable safe one from the middle block, construct a steering vector from their difference, and inject this single vector into consecutive early and middle blocks. By operating exclusively on the sparse text-branch tokens and leveraging the straight sampling trajectory of rectified flow, our method achieves effective concept erasure with negligible overhead and without any training. Extensive experiments across MM-DiT models demonstrate that our method achieves state-of-the-art performance in erasing diverse concepts, enables effective control over the final output, and remains robust to adversarial attacks.",
+    "status": "found"
+  },
+  "2608.12830": {
+    "arxiv_id": "2608.12830",
+    "title": "Improved Measurement Cost Scaling in the Nonorthogonal Quantum Eigensolver",
+    "authors": [
+      "Mingyu Kang",
+      "K. Birgitta Whaley"
+    ],
+    "submission_date": "2026-08-13T05:05:55Z",
+    "latest_updated": "2026-08-13T05:05:55Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12830v1"
+    ],
+    "abstract": "Quantum subspace diagonalization methods are promising algorithms for quantum chemistry on near-term quantum computers. These methods can estimate low-lying energies of molecular systems using shallow quantum circuits, at the cost of many circuit repetitions to estimate the projected matrix elements. Errors in these matrix elements can be converted into much larger eigenvalue errors by an ill-conditioned overlap matrix. We study this bottleneck for the nonorthogonal quantum eigensolver (NOQE), which constructs a compact multireference subspace from dressed unrestricted Hartree-Fock states. We prove a finite-shot perturbation bound showing that, after overlap thresholding, the eigenvalue sensitivity is controlled by the condition number of the retained overlap matrix rather than by a worst-case dimension factor. With a scalable thresholding scheme, the upper bound on the per-matrix-element shot count required to reach a target accuracy scales as $\\mathcal{O}(M)$, improving on the previously known $\\mathcal{O}(M^3)$ bound, where $M$ is the number of reference states. Numerical experiments on hydrogen chains and rings suggest that, in practice, the measurement cost of structured NOQE instances can grow even more slowly than this linear bound.",
+    "status": "found"
+  },
+  "2608.12831": {
+    "arxiv_id": "2608.12831",
+    "title": "Fast A/B/n Testing: Exact Multi-Policy Comparison via Tree-Coupled Feedback Sharing",
+    "authors": [
+      "Yuxiao Wen"
+    ],
+    "submission_date": "2026-08-13T05:10:43Z",
+    "latest_updated": "2026-08-14T03:53:23Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.12831v1",
+      "2608.12831v2"
+    ],
+    "abstract": "Online platforms increasingly compare many adaptive decision policies---ranking systems, recommendation algorithms, pricing rules, and language-model agents---while each reward-bearing interaction can be costly or risky. A direct A/B/n design gives each of $J\\ge 2$ policies its own horizon-$T$ trajectory and therefore uses $JT$ outcomes. We introduce Tree-Coupled A/B Testing (\\TCAB), an exact feedback-sharing design for arbitrary history-dependent contextual-bandit policies. At each round, a predictable tree connects the current policy histories; every parent--child context--action law is maximally coupled, and one reward is shared within each component of matched tree edges. Every policy retains exactly its standalone finite-horizon trajectory law, even though the policies are deliberately dependent. If $D_{e,t}$ records a mismatch on tree edge $e$ at round $t$, the number of reward queries satisfies the pathwise identity $N(T)=T+\\sum_{t,e}D_{e,t}$ and hence equals $T$ plus cumulative tree-edge total variation in expectation. This cost is conditionally optimal among exact edge-local designs on the selected tree, and a current-round minimum-spanning tree is myopically optimal among tree designs. For fixed $J$, sublinear pseudo-regret of every policy and almost-sure uniqueness of the oracle action imply $\\mathbb{E}[N(T)]=T+o(T)$, versus $JT$ for independent runs. We also obtain finite-sample variance bounds for pairwise policy contrasts. Experiments on reward-model evaluation, multiple-choice language-model evaluation, and adaptive search policies demonstrate substantial improvements in the cost--precision frontier.",
+    "status": "found"
+  },
+  "2608.12832": {
+    "arxiv_id": "2608.12832",
+    "title": "Bricks that every removable edge is solitary",
+    "authors": [
+      "Jinxin Xue",
+      "Jun Ge",
+      "Fuliang Lu",
+      "Yaxian Zhang"
+    ],
+    "submission_date": "2026-08-13T05:10:49Z",
+    "latest_updated": "2026-08-13T05:10:49Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12832v1"
+    ],
+    "abstract": "A brick is a 3-connected graph $G$ such that $G-u-v$ has a perfect matching for any two distinct vertices $u,v\\in V(G)$. An edge $e$ in a matching covered graph $G$ is removable if $G-e$ is matching covered. We say that a removable edge $e$ in a brick $G$ is $b$-invariant if $b(G-e)=b(G)=1$, where $b(H)$ denotes the number of bricks in the tight cut decomposition of a matching covered graph $H$. An edge of a graph is solitary if it lies in precisely one perfect matching. Lucchesi and Murty proposed the problem of characterizing bricks, distinct from $K_4$, $\\overline{C_6}$ and the Petersen graph, in which every $b$-invariant edge is solitary. Note that every $b$-invariant edge is removable. In this paper, we strengthen the condition by requiring that every removable edge is solitary. We show that every nonsolid brick satisfying this strengthened condition can be obtained by repeatedly splicing odd wheels (up to multiple edges). Moreover, properties of such bricks imply that \"repeatedly splicing odd wheels\" cannot be replaced by \"repeatedly splicing copies of $K_4$\".",
+    "status": "found"
+  },
+  "2608.12833": {
+    "arxiv_id": "2608.12833",
+    "title": "Finite element approximation of the linearized Cahn-Hilliard-Cook equation",
+    "authors": [
+      "Ali Mesforush",
+      "Stig Larsson"
+    ],
+    "submission_date": "2026-08-13T05:14:53Z",
+    "latest_updated": "2026-08-13T05:14:53Z",
+    "revised_dates": null,
+    "venue": "IMA Journal of Numerical Analysis, Volume 31, Issue 4, October 2011, Pages 1315 1333",
+    "latest_version": 1,
+    "versions": [
+      "2608.12833v1"
+    ],
+    "abstract": "The linearized Cahn-Hilliard-Cook equation is discretized in the spatial variables by a standard finite element method. Strong convergence estimates are proved under suitable assumptions on the covariance operator of the Wiener process, which is driving the equation. The backward Euler time stepping is also studied. The analysis is set in a framework based on analytic semigroups. The main effort is spent on proving detailed error bounds for the corresponding deterministic Cahn-Hilliard equation. The results should be interpreted as results on approximation of the stochastic convolution, which is a part of the mild solution of the nonlinear Cahn-Hilliard-Cook equation.",
+    "status": "found"
+  },
+  "2608.12834": {
+    "arxiv_id": "2608.12834",
+    "title": "In-medium properties of $D$ and $D^*$ mesons in magnetized isospin asymmetric nuclear matter",
+    "authors": [
+      "Saksham Sharma",
+      "Dhananjay Singh",
+      "Suneel Dutt",
+      "Harleen Dahiya",
+      "Arvind Kumar"
+    ],
+    "submission_date": "2026-08-13T05:16:43Z",
+    "latest_updated": "2026-08-13T05:16:43Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12834v1"
+    ],
+    "abstract": "We investigate the impact of an external magnetic field on the in-medium properties of pseudoscalar ($D^0,D^+,D_s$) and vector ($D^{0*},D^{+*},D_{s}^{*}$) mesons in isospin asymmetric nuclear matter at finite temperature using a hybrid theoretical framework combining the chiral SU(3) quark mean-field (CQMF) model and the light-front quark model (LFQM). The medium-modified constituent quark masses, obtained from the CQMF model by including the magnetized Dirac sea contribution and anomalous magnetic moments of nucleons, are used as input to the LFQM calculations of meson masses, weak decay constants, and leading-twist distribution amplitudes. We further incorporate the Landau quantization of the charged mesons restricted to the lowest Landau level, while magnetic field induced pseudoscalar-vector mixing is taken into account for each $D$-$D^{*}$ doublet. We find that the external magnetic field enhances the effective masses and decay constants of both pseudoscalar and vector $D$ mesons by magnetic catalysis, while increasing baryon density generally induces an attractive mass shift and suppresses the decay constant and distribution amplitudes. The Landau level contribution further enhances the effective masses of the charged mesons, whereas the pseudoscalar-vector mixing produces a level repulsion, shifting the vector meson masses upward and the pseudoscalar meson masses downward. The interplay between magnetic field and density effects gives rise to a nontrivial medium behavior of heavy-light meson properties, with isospin asymmetry further inducing a small but systematic mass splitting across all the meson states considered. These results provide useful insights into heavy-flavor dynamics in strongly interacting matter and are relevant to ongoing and future studies at FAIR, NICA, and J-PARC.",
+    "status": "found"
+  },
+  "2608.12835": {
+    "arxiv_id": "2608.12835",
+    "title": "AirForesight: Current-to-Future Spatial Map Imagination with Cross-Space Planning Consistency for UAV-VLN",
+    "authors": [
+      "Yutong Liu",
+      "Xiaojie Li",
+      "Mingzhu Xu",
+      "Jianlong Wu"
+    ],
+    "submission_date": "2026-08-13T05:18:23Z",
+    "latest_updated": "2026-08-13T05:18:23Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12835v1"
+    ],
+    "abstract": "Unmanned Aerial Vehicle Vision-Language Navigation (UAV-VLN) requires agents to follow language instructions, infer spatial structure from sparse multi-view observations, and execute feasible 3D motion in complex outdoor environments. Despite recent progress with large language models, most existing methods still map vision-language inputs directly to actions, providing limited explicit scene grounding and future-aware spatial reasoning. We propose AirForesight, a current-to-future spatial map imagination framework for UAV-VLN. AirForesight first learns a structured current-map representation from multi-view observations. This representation is jointly supervised by current-map reconstruction and future-trajectory prediction, encouraging it to encode both present scene structure and future motion intent. Under structured causal attention, the current spatial knowledge is propagated to future-map reasoning, and the resulting current and future representations are aggregated to predict the next 3D waypoint. To make spatial imagination more relevant to navigation, we introduce a cross-space planning consistency loss that encourages directional agreement between the predicted map-space trajectory and the expert action direction derived from the ground-truth waypoint displacement. Experiments on OpenUAV and AerialVLN-S, together with extensive ablations, demonstrate strong performance and support the effectiveness and stability of the proposed framework.",
+    "status": "found"
+  },
+  "2608.12836": {
+    "arxiv_id": "2608.12836",
+    "title": "From Atomic Evidence to Logical Composition: Structured Compositional Reasoning over Compound Answer Options",
+    "authors": [
+      "Obed Junias",
+      "Maria Leonor Pacheco"
+    ],
+    "submission_date": "2026-08-13T05:18:55Z",
+    "latest_updated": "2026-08-13T05:18:55Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12836v1"
+    ],
+    "abstract": "Large language models often fail when answer options require combining atomic judgments under explicit logical operators, even when they judge the individual atoms correctly. We study compound options connected by AND, OR, and NEITHER/NOR, introducing a framework that decomposes each option into atomic answers and scores contrastive hypotheses about each one, so the model never sees a compound option. An operator-constrained integer linear program then composes the calibrated scores into a single prediction. We evaluate on LOGICAL-COMMONSENSEQA and introduce LOGICAL-SATA, a reading-comprehension benchmark derived from SATA-Bench. Our framework improves Macro-F1 from 48.3 to 77.0 on the human-validated LOGICAL-COMMONSENSEQA split and from 47.0 to 75.6 on LOGICAL-SATA, with the largest gains on NEITHER/NOR.",
+    "status": "found"
+  },
+  "2608.12837": {
+    "arxiv_id": "2608.12837",
+    "title": "Parametric Matrix Models for Emulation in Nuclear and Many-Body Physics",
+    "authors": [
+      "Patrick Cook"
+    ],
+    "submission_date": "2026-08-13T05:19:09Z",
+    "latest_updated": "2026-08-13T05:19:09Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12837v1"
+    ],
+    "abstract": "Progress in nuclear and many-body physics today is predicated on the ability to solve large-scale, strongly correlated quantum many-body problems. As the theoretical models become more sophisticated, they also become more computationally complex. Simultaneously, quantifying uncertainty in model predictions and fitting free parameters to experimental observations requires repeated evaluation of these expensive models. Surrogate models---known as emulators---provide the means of accomplishing these goals. This thesis provides an introduction into the current state of emulation in nuclear and many-body physics. The motivations, goals, and origins of currently popular emulation methods are discussed along with selected examples. We see how many methods are closely mathematically related and how trade-offs are made to optimize specific properties or applications. The central work in this thesis is the method of parametric matrix models (PMMs), an emulation and general machine learning framework which combines aspects of traditional reduced basis method with modern parametric machine learning. PMMs are able to retain as much or as little physical information about the underlying system as desired, yielding not only excellent performance but also nearly unparalleled adaptability, interpretability, and trustworthiness as an emulation method. A formal mathematical framework for PMMs is developed and accompanied by practical step-by-step procedures for the application of the method. As part of this thesis, the open-source pyPMM package was developed. This package enables any researcher to construct, train, share, and deploy PMM-based emulators with modular, extendable, and graphics processing unit (GPU)-optimized code. All PMM examples in this thesis were created using this package.",
+    "status": "found"
+  },
+  "2608.12838": {
+    "arxiv_id": "2608.12838",
+    "title": "Weighted Nuclear Elastic Net Estimation of (Near-) Low-Rank Drift Matrices in Ornstein-Uhlenbeck Processes",
+    "authors": [
+      "Dmytro Marushkevych",
+      "Francisco Pina",
+      "Mark Podolskij"
+    ],
+    "submission_date": "2026-08-13T05:20:16Z",
+    "latest_updated": "2026-08-13T05:20:16Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12838v1"
+    ],
+    "abstract": "We study estimation of the drift matrix in a continuously observed high-dimensional Ornstein-Uhlenbeck process when the drift is exactly or approximately low rank. In this setting, exact low rank induces non-stable directions and hence a non-ergodic regime, resulting in a poorly conditioned empirical covariance matrix. To address this difficulty, we introduce a Weighted Nuclear Elastic Net Estimator that combines ridge regularization with a nuclear-norm penalty expressed in the empirical likelihood geometry. Under a general diagonalizable spectral framework, we establish oracle inequalities relative to arbitrary low-rank comparison matrices. For near low-rank drifts, the approximation error is naturally measured through the singular-value decay of the drift after weighting by the regularized empirical covariance. The stochastic term is controlled by self-normalized martingale arguments under appropriate choice of the tuning parameter. For a symmetric positive-semidefinite exact low-rank model, we verify the empirical-curvature condition required to translate the weighted bound into a Frobenius-norm bound. With an appropriate choice of tuning parameters, the resulting estimator satisfies, up to a logarithmic factor, the standard rank-$r$ matrix-estimation scaling $r d/T$: specifically, its squared Frobenius error is of order $r d\\log(T)/T$ with high probability, under an explicit dimension-horizon condition.",
+    "status": "found"
+  },
+  "2608.12839": {
+    "arxiv_id": "2608.12839",
+    "title": "Spiking Neural Networks with Elephant Reinforcement",
+    "authors": [
+      "Fernando A. Najman",
+      "Ioannis Papageorgiou",
+      "Sabricia K. Cauanny A. da Silveira"
+    ],
+    "submission_date": "2026-08-13T05:20:41Z",
+    "latest_updated": "2026-08-15T01:56:55Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.12839v1",
+      "2608.12839v2"
+    ],
+    "abstract": "We introduce a finite stochastic spiking-neuron network with Elephant-type memory, in which past firing activity modifies future excitability through a reinforcement-dependent threshold. For a bounded hard-threshold firing rate, we prove non-explosion of the finite system and obtain conditional exponential contraction in (1)-Wasserstein distance on a truncated potential space. We then formulate the corresponding replica mean-field dynamics and establish global existence, uniqueness in law, and non-explosion of the nonlinear process, together with a characterization of its invariant measures. Numerical experiments show that Elephant memory produces a (p)-dependent decline in firing activity, alters extinction behaviour, and yields finite-network dynamics closely matched by the replica mean-field approximation.",
+    "status": "found"
+  },
+  "2608.12840": {
+    "arxiv_id": "2608.12840",
+    "title": "ASPIRE-VINS: Adaptive Spline-based Visual-inertial Navigation System With Robust 3D Measurement Residuals",
+    "authors": [
+      "Kwangyik Jung",
+      "Eungchang Mason Lee",
+      "Taekjun Oh",
+      "Hyun Myung"
+    ],
+    "submission_date": "2026-08-13T05:24:17Z",
+    "latest_updated": "2026-08-13T05:24:17Z",
+    "revised_dates": null,
+    "venue": "IEEE Robotics and Automation Letters, vol. 11, no. 9, pp. 10625-10632, 2026",
+    "latest_version": 1,
+    "versions": [
+      "2608.12840v1"
+    ],
+    "abstract": "Visual-inertial navigation systems estimate six-degree-of-freedom motion by fusing visual and inertial data. Modern discrete-time methods with IMU preintegration provide strong accuracy and efficiency, but keyframe-based representations can be less flexible when residuals must be evaluated at arbitrary timestamps or when motion-dependent temporal resolution is needed. Continuous-time splines address this issue by representing the trajectory as a smooth temporal function, but uniformly spaced knots can under-represent rapid dynamics or over-parameterize static intervals. This letter proposes ASPIRE-VINS, a continuous-time VINS framework that combines adaptive knot placement (AKP), multi-resolution splines (MRS), and 3D measurement-space residuals (3D-MSR). AKP allocates knots according to local motion variation, MRS adds bounded local refinement in tangent space, and 3D-MSR provides bearing consistency by aligning transformed features with calibrated observation rays in 3D measurement space. Experiments show that ASPIRE-VINS achieves competitive or lower trajectory errors than the compared baselines, demonstrating the effectiveness of motion-adaptive continuous-time trajectory modeling under diverse motion and sensing conditions.",
+    "status": "found"
+  },
+  "2608.12841": {
+    "arxiv_id": "2608.12841",
+    "title": "AQuA: Recursively Self-Improving Quantitative Trading Research Agents",
+    "authors": [
+      "Jiacheng Guo",
+      "Suozhi Huang",
+      "Yunlong Gao",
+      "Zihao Li",
+      "Jason Ge",
+      "Shushu Liang",
+      "Xu Kuang",
+      "Mengdi Wang"
+    ],
+    "submission_date": "2026-08-13T05:25:42Z",
+    "latest_updated": "2026-09-28T03:51:30Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2608.12841v1",
+      "2608.12841v2",
+      "2608.12841v3"
+    ],
+    "abstract": "We study recursive self-improvement at the level of quantitative-investment research: whether an autonomous system can use evidence from earlier experiments to improve the hypotheses and candidates proposed in later iterations. We present AQuA, which comprises two separate language-model-driven research systems: one for symbolic factor discovery and one for trainable model development. Each system records experimental results and uses them to guide subsequent proposals. Each operates in a fixed sandbox, which fixes the data splits, feature and label definitions, and evaluator while allowing the model to act only through constrained factor expressions or configuration diffs. The factor system, a manager-mediated multi-agent pipeline, discovers and combines factors into a signal that reaches a combined validation information coefficient of about $0.190$ on a crypto universe. The model system, a config-driven loop over a hybrid time-series architecture, reaches a per-stock information coefficient of $+0.0843$ on US equities and converts it into a threshold long/short strategy with a held-out Sharpe of up to $+2.50$ at a two-leg cost. The strategy is positive in every year from 2021 to 2025.",
+    "status": "found"
+  },
+  "2608.12842": {
+    "arxiv_id": "2608.12842",
+    "title": "CABS+: Efficient and Scalable Model Merging via Conflict-Aware Sparsification and Adaptive Weight Allocation",
+    "authors": [
+      "Yuchen Liu",
+      "Zongzhen Yang",
+      "Binhang Qi",
+      "Hailong Sun",
+      "Xiang Gao"
+    ],
+    "submission_date": "2026-08-13T05:26:37Z",
+    "latest_updated": "2026-08-13T05:26:37Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12842v1"
+    ],
+    "abstract": "Model merging has recently attracted significant attention as a promising paradigm for constructing unified multi-task models without requiring additional retraining. However, parameter conflicts and knowledge interference across tasks often degrade merged-model performance. Prior work introduced Conflict-Aware and Balanced Sparsification (CABS), which reduces parameter interference through structured pruning and sequential masking. However, CABS relies on grid search to determine scaling coefficients, resulting in exponential time complexity, while its optimization objective can be dominated by high-performance tasks, leading to suboptimal overall performance. To address these limitations, we extend CABS and propose CABS+. Specifically, Adaptive Weight Allocation (AWA) optimizes merging coefficients via a gradient-free search scheme to reduce time complexity, while an asymmetric fitness function promotes more comprehensive performance gains across tasks. Moreover, we conduct a systematic empirical study of key factors influencing model merging performance and propose Relative Synergy Score (RSS) to quantify model mergeability and guide model selection. We compare CABS+ with state-of-the-art model merging methods, including CABS, AdaMerging, and WUDIMerging, across 27 datasets and 5 models covering large language, small-scale language, and vision models. Extensive experiments verify the effectiveness and efficiency of CABS+. Compared with AdaMerging and WUDIMerging, CABS+ improves overall performance by 16.97% and 12.93%, respectively, exhibits stronger stability and robustness across varying task numbers and model architectures, uses less than 25% of the GPU memory required by AdaMerging, and achieves nearly a 4x speedup in merging time over WUDIMerging.",
+    "status": "found"
+  },
+  "2608.12843": {
+    "arxiv_id": "2608.12843",
+    "title": "Heterogeneous Vision-Language Ensemble with Disagreement-Aware Reranking for Text-Based Person Anomaly Retrieval",
+    "authors": [
+      "Huu-An Vu",
+      "Cam Tu Tran Thi",
+      "Thanh Toan Le Ngo",
+      "Hoang Vo",
+      "Do Trung Hieu",
+      "Hieu Dinh Trung Pham",
+      "Khang Minh Le",
+      "Huy Minh Nhat Nguyen"
+    ],
+    "submission_date": "2026-08-13T05:28:50Z",
+    "latest_updated": "2026-08-13T05:28:50Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12843v1"
+    ],
+    "abstract": "Text-based person anomaly retrieval aims to retrieve pedestrians exhibiting anomalous behaviors from a large image gallery using natural language descriptions. Compared with conventional text-based person retrieval, this task requires fine-grained reasoning over pedestrian appearance, behaviors, object interactions, and scene context, making robust cross-modal matching significantly more challenging. This paper presents the GENAI4E team's solution to AI City Challenge 2026 Track 4. Our framework builds upon a strong retrieval backbone and progressively integrates heterogeneous vision-language embedding models through score alignment and iterative ensemble fusion, followed by disagreement-aware VLM reranking for ambiguous queries. On the official Pedestrian Anomaly Behavior (PAB) benchmark, our approach achieves 90.92% mAP, 85.13% Recall@1, 97.72% Recall@5, and 98.68% Recall@10, demonstrating the effectiveness of combining complementary vision-language representations with selective multimodal reasoning for large-scale text-based person anomaly retrieval.",
+    "status": "found"
+  },
+  "2608.12844": {
+    "arxiv_id": "2608.12844",
+    "title": "The Hayman--Wu constant is $π^2$",
+    "authors": [
+      "Paata Ivanisvili"
+    ],
+    "submission_date": "2026-08-13T05:33:55Z",
+    "latest_updated": "2026-08-14T06:12:09Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.12844v1",
+      "2608.12844v2"
+    ],
+    "abstract": "We show that for every conformal map $φ:\\mathbb{D}\\toΩ\\subsetneq\\mathbb{C}$ from the unit disk onto a simply connected proper domain $Ω$, the length of $φ^{-1}(Ω\\cap L)$ is at most $π^2$ for every line $L$.",
+    "status": "found"
+  },
+  "2608.12845": {
+    "arxiv_id": "2608.12845",
+    "title": "FSGR: Mitigating Token Frequency Bias for Fair SID-Based Generative Recommendation",
+    "authors": [
+      "Yuchen Zheng",
+      "Sihan Xu",
+      "Jingwen Yang",
+      "Xiangrui Cai",
+      "Haiwei Zhang",
+      "Xiaojie Yuan"
+    ],
+    "submission_date": "2026-08-13T05:34:51Z",
+    "latest_updated": "2026-08-13T05:34:51Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12845v1"
+    ],
+    "abstract": "Semantic ID (SID)-based generative recommendation has recently achieved remarkable success. However, existing methods suffer from a previously overlooked fairness issue, which we term \\textbf{Token Frequency Bias}, where high-frequency SID tokens are systematically over-predicted while low-frequency SID tokens are under-predicted. This bias originates from the combined effects of imbalanced semantic codebooks during SID construction, and popularity bias together with the maximum likelihood estimation objective during recommendation training, resulting in unfair exposure across item categories. Existing SID methods mainly focus on improving codebook quality and overlook the impact of token frequency imbalance on downstream recommendation fairness, while LLM debiasing methods often yield suboptimal results when directly applied to SID-based recommendation, due to the hierarchical semantics of SID tokens. To address this issue, we propose \\textbf{FSGR}, a fairness optimization framework for SID-based generative recommendation. During SID construction, FSGR employs OT-based Assignment Optimization and Dual-Criteria Re-anchor mechanism to form a more balanced SID representation space. During recommendation training, it adopts a two-stage training strategy and introduces Hierarchical Frequency Calibration for layer-specific fairness fine-tuning. Experiments on three public datasets with three backbone models demonstrate that FSGR mitigates token frequency bias and delivers an average Gini fairness improvement of over 20\\% while maintaining competitive recommendation accuracy.",
+    "status": "found"
+  },
+  "2608.12846": {
+    "arxiv_id": "2608.12846",
+    "title": "Supersymmetry, differential operators of infinite order and theta functions",
+    "authors": [
+      "Mikhail Kapranov"
+    ],
+    "submission_date": "2026-08-13T05:35:09Z",
+    "latest_updated": "2026-08-13T05:35:09Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12846v1"
+    ],
+    "abstract": "In 1972, M. Sato proposed an approach to proving modularity of forms like Thetanullwerte by characterizing them via certain differential operators of infinite order (DOI) in the modular variable(s) alone. A DOI is an infinite series in derivatives decreasing so fast that it acts on holomorphic functions by a sheaf morphism. This approach was developed by several authors including Kashiwara, Kawai, Takei and Yoshida. We give an interpretation of this approach using supersymmetry which provides a natural source of DOIs: the naive exponential of any odd supersymmetry generator is a DOI. The case of the Riemann theta function of genus n is governed by the supergroup OSp(1|2n) (and its metaplectic cover) acting on a natural super-thickening of the Siegel plane. For n=2 this is the 3-dimensional N=1 superconformal group and the structure at hand is precisely the free massless scalar supermultiplet (combining the Laplace and Dirac equations). For n>2 we get a super-extension of the generalized conformal structure existing on the Lagrangian Grassmannian as on any Hermitian symmetric space. An additional interesting feature here is that the odd supersymmetry generators acting ``on-shell'' (i.e., in the space of solutions of the equations of motion) satisfy even-style Heisenberg commutation relations. These equations of motion upgrade to a complex of differential operators corresponding to a natural BGG-type resolution of the super-Weil representation of osp(1|2n).",
+    "status": "found"
+  }
+}

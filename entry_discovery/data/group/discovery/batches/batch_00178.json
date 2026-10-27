@@ -1,0 +1,419 @@
+{
+  "2511.15269": {
+    "arxiv_id": "2511.15269",
+    "title": "jaxFMM: An Adaptive, GPU-Parallel Implementation of the Fast Multipole Method in JAX",
+    "authors": [
+      "Robert Kraft",
+      "Florian Bruckner",
+      "Dieter Suess",
+      "Claas Abert"
+    ],
+    "submission_date": "2025-11-19T09:34:01Z",
+    "latest_updated": "2026-07-15T09:57:48Z",
+    "revised_dates": null,
+    "venue": "J. Comput. Phys. 564 (2026), Article 115130",
+    "latest_version": 2,
+    "versions": [
+      "2511.15269v1",
+      "2511.15269v2"
+    ],
+    "abstract": "We introduce jaxFMM, an open-source, adaptive, highly parallel point-charge Fast Multipole Method implementation for the Laplace kernel written in JAX. It is based on a non-uniform refinement strategy with on-the-fly rotation-based transforms tailored around JAX's just-in-time compiler, which results in extremely concise and simple code. Benchmarks show that the algorithm performs well at moderate accuracies, even for highly non-uniform charge distributions. JaxFMM already massively speeds up stray-field computations in micromagnetics and with JAX features like autodiff, novel applications such as inverse-design problems and machine-learning tasks can be tackled with ease in the future.",
+    "status": "found"
+  },
+  "2511.15270": {
+    "arxiv_id": "2511.15270",
+    "title": "LargeSHS: A large-scale dataset of music adaptation",
+    "authors": [
+      "Chih-Pin Tan",
+      "Hsuan-Kai Kao",
+      "Li Su",
+      "Yi-Hsuan Yang"
+    ],
+    "submission_date": "2025-11-19T09:35:08Z",
+    "latest_updated": "2025-11-19T09:35:08Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.15270v1"
+    ],
+    "abstract": "Recent advances in AI-based music generation have focused heavily on text-conditioned models, with less attention given to reference-based generation such as song adaptation. To support this line of research, we introduce LargeSHS, a large-scale dataset derived from SecondHandSongs, containing over 1.7 million metadata entries and approximately 900k publicly accessible audio links. Unlike existing datasets, LargeSHS includes structured adaptation relationships between musical works, enabling the construction of adaptation trees and performance clusters that represent cover song families. We provide comprehensive statistics and comparisons with existing datasets, highlighting the unique scale and richness of LargeSHS. This dataset paves the way for new research in cover song generation, reference-based music generation, and adaptation-aware MIR tasks.",
+    "status": "found"
+  },
+  "2511.15271": {
+    "arxiv_id": "2511.15271",
+    "title": "Graph Query Networks for Object Detection with Automotive Radar",
+    "authors": [
+      "Loveneet Saini",
+      "Hasan Tercan",
+      "Tobias Meisen"
+    ],
+    "submission_date": "2025-11-19T09:36:49Z",
+    "latest_updated": "2025-11-19T09:36:49Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.15271v1"
+    ],
+    "abstract": "Object detection with 3D radar is essential for 360-degree automotive perception, but radar's long wavelengths produce sparse and irregular reflections that challenge traditional grid and sequence-based convolutional and transformer detectors. This paper introduces Graph Query Networks (GQN), an attention-based framework that models objects sensed by radar as graphs, to extract individualized relational and contextual features. GQN employs a novel concept of graph queries to dynamically attend over the bird's-eye view (BEV) space, constructing object-specific graphs processed by two novel modules: EdgeFocus for relational reasoning and DeepContext Pooling for contextual aggregation. On the NuScenes dataset, GQN improves relative mAP by up to +53%, including a +8.2% gain over the strongest prior radar method, while reducing peak graph construction overhead by 80% with moderate FLOPs cost.",
+    "status": "found"
+  },
+  "2511.15272": {
+    "arxiv_id": "2511.15272",
+    "title": "QADR: A Scalable, Quantum-Resistant Protocol for Anonymous Data Reporting",
+    "authors": [
+      "Nilesh Vyas",
+      "Konstantin Baier"
+    ],
+    "submission_date": "2025-11-19T09:37:19Z",
+    "latest_updated": "2025-11-19T09:37:19Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.15272v1"
+    ],
+    "abstract": "The security of future large-scale IoT networks is critically threatened by the ``Harvest Now, Decrypt Later'' (HNDL) attack paradigm. Securing the massive, long-lived data streams from these systems requires protocols that are both quantum-resistant and highly scalable. Existing solutions are insufficient: post-quantum classical protocols rely on computational assumptions that may not hold for decades, while purely quantum protocols are too resource-intensive for the sheer scale of IoT. This paper introduces the Quantum Anonymous Data Reporting (QADR) protocol, a hybrid framework that provides a theoretical benchmark and high-performance architecture for this challenge, designed for future fully-connected quantum networks. The protocol achieves scalable, quantum-resistant anonymity through a hybrid security model; it leverages information-theoretically secure keys from Quantum Key Distribution (QKD) to seed a quantum-secure pseudorandom function (QS-PRF), grounding its long-term data protection in well-established computational hardness assumptions. We also propose and analyze an automated slot reservation mechanism by making a deliberate trade-off: achieving high performance by accepting a quantifiable information leak during the anonymous slot reservation phase while maintaining strong unlinkability for the final data submission. Our security analysis formally quantifies the anonymity reduction caused by the leak and discusses pathways to fully mitigate it at a significant performance cost. We prove the protocol's critical advantage as a performance benchmark: its primary communication cost scales as $O(n^2)$, a dramatic improvement over quantum-native alternatives ($O(n^4)$), establishing a high-performance goal for future quantum-secured anonymity systems.",
+    "status": "found"
+  },
+  "2511.15273": {
+    "arxiv_id": "2511.15273",
+    "title": "RLS Framework with Segmentation of the Forgetting Profile and Low Rank Updates",
+    "authors": [
+      "Alexander Stotsky"
+    ],
+    "submission_date": "2025-11-19T09:37:29Z",
+    "latest_updated": "2025-11-19T09:37:29Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.15273v1"
+    ],
+    "abstract": "This report describes a new regularization approach based on segmentation of the forgetting profile in sliding window least squares estimation. Each segment is designed to enforce specific desirable properties of the estimator such as rapidity, desired condition number of the information matrix, accuracy, numerical stability, etc. The forgetting profile is divided in three segments, where the speed of estimation is ensured by the first segment, which employs rapid exponential forgetting of recent data.The second segment features a decline in the profile and marks the transition to the third segment, characterized by slow exponential forgetting to reduce the condition number of the information matrix using more distant data. Condition number reduction mitigates error propagation, thereby enhancing accuracy and stability. This approach facilitates the incorporation of a priori information regarding signal characteristics (i.e., the expected behavior of the signal) into the estimator. Recursive and computationally efficient algorithm with low rank updates based on new matrix inversion lemma for moving window associated with this regularization approach is developed. New algorithms significantly improve the approximation accuracy of low resolution daily temperature measurements obtained at the Stockholm Old Astronomical Observatory, thereby enhancing the reliability of temperature predictions.",
+    "status": "found"
+  },
+  "2511.15274": {
+    "arxiv_id": "2511.15274",
+    "title": "Behavior Trees vs Executable Ontologies: a Comparative Analysis of Robot Control Paradigms",
+    "authors": [
+      "Alexander Boldachev"
+    ],
+    "submission_date": "2025-11-19T09:38:01Z",
+    "latest_updated": "2025-11-19T09:38:01Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.15274v1"
+    ],
+    "abstract": "This paper compares two distinct approaches to modeling robotic behavior: imperative Behavior Trees (BTs) and declarative Executable Ontologies (EO), implemented through the boldsea framework. BTs structure behavior hierarchically using control-flow, whereas EO represents the domain as a temporal, event-based semantic graph driven by dataflow rules. We demonstrate that EO achieves comparable reactivity and modularity to BTs through a fundamentally different architecture: replacing polling-based tick execution with event-driven state propagation. We propose that EO offers an alternative framework, moving from procedural programming to semantic domain modeling, to address the semantic-process gap in traditional robotic control. EO supports runtime model modification, full temporal traceability, and a unified representation of data, logic, and interface - features that are difficult or sometimes impossible to achieve with BTs, although BTs excel in established, predictable scenarios. The comparison is grounded in a practical mobile manipulation task. This comparison highlights the respective operational strengths of each approach in dynamic, evolving robotic systems.",
+    "status": "found"
+  },
+  "2511.15275": {
+    "arxiv_id": "2511.15275",
+    "title": "Changing-look Active Galactic Nuclei from the Dark Energy Spectroscopic Instrument. IV. Broad Emission Line Evolution Sequence Among Hα, Mg II, and Hβ",
+    "authors": [
+      "Wei-Jian Guo",
+      "Victoria A. Fawcett",
+      "Małgorzata Siudek",
+      "Yan-Rong Li",
+      "Cheng Cheng",
+      "Swayamtrupta Panda",
+      "Zhiwei Pan",
+      "Shengxiu Sun",
+      "Claire L. Greenwell",
+      "David M. Alexander",
+      "John Moustakas",
+      "Shuo Zhai",
+      "Jun-Jie Jin",
+      "Huaqing Cheng",
+      "Jingwei Hu",
+      "Yong-Jie Chen",
+      "Zhi-Xiang Zhang",
+      "Jian-Min Wang"
+    ],
+    "submission_date": "2025-11-19T09:39:44Z",
+    "latest_updated": "2025-11-19T09:39:44Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.15275v1"
+    ],
+    "abstract": "From a parent catalog of 561 changing-look active galactic nuclei (CL-AGNs) identified by Guo et al. (2025), we investigate the evolutionary sequence of broad emission lines using a redshift-selected subset (0.35 < z < 0.45) of 54 CL-AGNs whose Dark Energy Spectroscopic Instrument (DESI) spectra simultaneously cover the Hα, H\\b{eta}, and Mg II emission lines. To provide a baseline for comparison, we construct a control sample of 19,897 normal Type 1 AGNs within the same redshift range from the DESI Year 1 data. Through stacked spectral analysis and line-continuum luminosity correlations, we identify a clear evolutionary sequence in all AGN where broad H\\b{eta} fades first, followed by Mg II, and then Hα, as the AGN luminosity declines - consistent with expectations from reverberation mapping. This trend reflects a radially stratified broad line region (BLR), where each line's responsivity depends on its ionization potential and radial distance from the central engine. In addition, we find that more massive supermassive black holes (SMBHs) require lower Eddington ratios to fully suppress broad emission lines, suggesting that the critical accretion threshold for the CL phenomenon is mass-dependent. Our results present the first statistical confirmation of a stratified broad line fading sequence in AGNs, reinforcing the central role of accretion state in shaping BLR structure and visibility.",
+    "status": "found"
+  },
+  "2511.15276": {
+    "arxiv_id": "2511.15276",
+    "title": "SNAP: Low-Latency Test-Time Adaptation with Sparse Updates",
+    "authors": [
+      "Hyeongheon Cha",
+      "Dong Min Kim",
+      "Hye Won Chung",
+      "Taesik Gong",
+      "Sung-Ju Lee"
+    ],
+    "submission_date": "2025-11-19T09:40:24Z",
+    "latest_updated": "2025-11-19T09:40:24Z",
+    "revised_dates": null,
+    "venue": "Advances in Neural Information Processing Systems 39 (NeurIPS 2025)",
+    "latest_version": 1,
+    "versions": [
+      "2511.15276v1"
+    ],
+    "abstract": "Test-Time Adaptation (TTA) adjusts models using unlabeled test data to handle dynamic distribution shifts. However, existing methods rely on frequent adaptation and high computational cost, making them unsuitable for resource-constrained edge environments. To address this, we propose SNAP, a sparse TTA framework that reduces adaptation frequency and data usage while preserving accuracy. SNAP maintains competitive accuracy even when adapting based on only 1% of the incoming data stream, demonstrating its robustness under infrequent updates. Our method introduces two key components: (i) Class and Domain Representative Memory (CnDRM), which identifies and stores a small set of samples that are representative of both class and domain characteristics to support efficient adaptation with limited data; and (ii) Inference-only Batch-aware Memory Normalization (IoBMN), which dynamically adjusts normalization statistics at inference time by leveraging these representative samples, enabling efficient alignment to shifting target domains. Integrated with five state-of-the-art TTA algorithms, SNAP reduces latency by up to 93.12%, while keeping the accuracy drop below 3.3%, even across adaptation rates ranging from 1% to 50%. This demonstrates its strong potential for practical use on edge devices serving latency-sensitive applications. The source code is available at https://github.com/chahh9808/SNAP.",
+    "status": "found"
+  },
+  "2511.15277": {
+    "arxiv_id": "2511.15277",
+    "title": "Non-closed subgroups of weakly branch groups",
+    "authors": [
+      "Jorge Fariña-Asategui",
+      "Paul-Henry Leemann",
+      "Tatiana Nagnibeda"
+    ],
+    "submission_date": "2025-11-19T09:40:56Z",
+    "latest_updated": "2025-11-19T09:40:56Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.15277v1"
+    ],
+    "abstract": "For a weakly branch group $G$ acting on a regular enough rooted tree, we provide two constructions of continuous families of distinct subgroups that are not closed in the profinite topology on $G$. On the one hand, we construct a continuous family of distinct non-closed subgroups such that each $H$ in the family is not ERF, that is, contains subgroups not closed in the profinite topology on $H$. On the other hand, under an additional assumption on $G$, we construct a continuous family of ERF subgroups which are not closed in the congruence (and in the profinite) topology on $G$.",
+    "status": "found"
+  },
+  "2511.15278": {
+    "arxiv_id": "2511.15278",
+    "title": "Privacy-Preserving IoT in Connected Aircraft Cabin",
+    "authors": [
+      "Nilesh Vyas",
+      "Benjamin Zhao",
+      "Aygün Baltaci",
+      "Gustavo de Carvalho Bertoli",
+      "Hassan Asghar",
+      "Markus Klügel",
+      "Gerrit Schramm",
+      "Martin Kubisch",
+      "Dali Kaafar"
+    ],
+    "submission_date": "2025-11-19T09:41:25Z",
+    "latest_updated": "2025-11-19T09:41:25Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.15278v1"
+    ],
+    "abstract": "The proliferation of IoT devices in shared, multi-vendor environments like the modern aircraft cabin creates a fundamental conflict between the promise of data collaboration and the risks to passenger privacy, vendor intellectual property (IP), and regulatory compliance. While emerging standards like the Cabin Secure Media-Independent Messaging (CSMIM) protocol provide a secure communication backbone, they do not resolve data governance challenges at the application layer, leaving a privacy gap that impedes trust. This paper proposes and evaluates a framework that closes this gap by integrating a configurable layer of Privacy-Enhancing Technologies (PETs) atop a CSMIM-like architecture. We conduct a rigorous, empirical analysis of two pragmatic PETs: Differential Privacy (DP) for statistical sharing, and an additive secret sharing scheme (ASS) for data obfuscation. Using a high-fidelity testbed with resource-constrained hardware, we quantify the trade-offs between data privacy, utility, and computing performance. Our results demonstrate that the computational overhead of PETs is often negligible compared to inherent network and protocol latencies. We prove that architectural choices, such as on-device versus virtualized processing, have a far greater impact on end-to-end latency and computational performance than the PETs themselves. The findings provide a practical roadmap for system architects to select and configure appropriate PETs, enabling the design of trustworthy collaborative IoT ecosystems in avionics and other critical domains.",
+    "status": "found"
+  },
+  "2511.15279": {
+    "arxiv_id": "2511.15279",
+    "title": "Look, Zoom, Understand: The Robotic Eyeball for Embodied Perception",
+    "authors": [
+      "Jiashu Yang",
+      "Yifan Han",
+      "Yucheng Xie",
+      "Ning Guo",
+      "Wenzhao Lian"
+    ],
+    "submission_date": "2025-11-19T09:42:08Z",
+    "latest_updated": "2026-04-03T06:36:12Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.15279v1",
+      "2511.15279v2"
+    ],
+    "abstract": "In embodied AI, visual perception should be active rather than passive: the system must decide where to look and at what scale to sense to acquire maximally informative data under pixel and spatial budget constraints. Existing vision models coupled with fixed RGB-D cameras fundamentally fail to reconcile wide-area coverage with fine-grained detail acquisition, severely limiting their efficacy in open-world robotic applications. We study the task of language-guided active visual perception: given a single RGB image and a natural language instruction, the agent must output pan, tilt, and zoom adjustments of a real PTZ (pan-tilt-zoom) camera to acquire the most informative view for the specified task. We propose EyeVLA, a unified framework that addresses this task by integrating visual perception, language understanding, and physical camera control within a single autoregressive vision-language-action model. EyeVLA introduces a semantically rich and efficient hierarchical action encoding that compactly tokenizes continuous camera adjustments and embeds them into the VLM vocabulary for joint multimodal reasoning. Through a data-efficient pipeline comprising pseudo-label generation, iterative IoU-controlled data refinement, and reinforcement learning with Group Relative Policy Optimization (GRPO), we transfer the open-world understanding of a pre-trained VLM to an embodied active perception policy using only 500 real-world samples. Evaluations on 50 diverse real-world scenes across five independent evaluation runs demonstrate that EyeVLA achieves an average task completion rate of 96%. Our work establishes a new paradigm for instruction-driven active visual information acquisition in multimodal embodied systems.",
+    "status": "found"
+  },
+  "2511.15280": {
+    "arxiv_id": "2511.15280",
+    "title": "A note on the classification of classical distance-regular graphs of negative type and the non-existence of hemisystems",
+    "authors": [
+      "Sam Adriaensen",
+      "Jan De Beule",
+      "Jozefien D'haeseleer",
+      "Sam Mattheus"
+    ],
+    "submission_date": "2025-11-19T09:43:17Z",
+    "latest_updated": "2026-08-24T09:32:45Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2511.15280v1",
+      "2511.15280v2",
+      "2511.15280v3"
+    ],
+    "abstract": "DISCLAIMER: Due to an error in the literature, we cannot be sure that the conclusions drawn in this paper are correct. The goal of this note is to connect some interesting results in the literature on algebraic graph theory and finite geometry. In 1999, Weng gave an almost complete classification of classical distance-regular graphs of negative type with diameter at least 4. He proved that these graphs are either dual polar graphs of Hermitian polar spaces, Hermitian forms graphs, or fall into a last category. It was recently proved by Yian et al. that the latter category does not exist when the diameter equals 3, which by Weng's results proves that they do not exist for bigger diameter. Using a result of Vanhove, this proves that certain hemisystems in Hermitian polar spaces cannot exist.",
+    "status": "found"
+  },
+  "2511.15281": {
+    "arxiv_id": "2511.15281",
+    "title": "Photoluminescence Mapping of Mobile and Fixed Defects in Halide Perovskite Films",
+    "authors": [
+      "Sarah C. Gillespie",
+      "Jérome Gautier",
+      "Linde M. van de Ven",
+      "Agustin O. Alvarez",
+      "Bruno Ehrler",
+      "L. J. Geerligs",
+      "Veronique S. Gevaerts",
+      "Gianluca Coletti",
+      "Erik C. Garnett"
+    ],
+    "submission_date": "2025-11-19T09:46:01Z",
+    "latest_updated": "2025-11-19T09:46:01Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.15281v1"
+    ],
+    "abstract": "Metal halide perovskites exhibit coupled electronic and ionic properties that determine their photovoltaic performance and operational stability. Understanding and quantifying ionic transport are therefore essential for advancing perovskite optoelectronics. Conventional electrical methods such as impedance spectroscopy require fully integrated devices, and their interpretation is often complicated by interfacial and contact effects, limiting the ability to isolate intrinsic ionic behavior. Here, a localized adaptation of intensity-modulated photoluminescence spectroscopy (IMPLS) is utilized to optically probe lateral ionic transport in perovskite films. The frequency-dependent photoluminescence response is measured under controlled carrier injection levels and correlated with the photoluminescence quantum yield (PLQY). The proposed diffusion model indicates that mobile ionic defects laterally migrate from high light intensity regions, giving rise to characteristic photoluminescence modulations. Ionic diffusion coefficients extracted from IMPLS agree well with literature values obtained from electrical measurements. Importantly, IMPLS mapping separates mobile and immobile defect contributions through a defect contrast coefficient (DCC), which quantifies the normalized difference between the area-averaged photoluminescence intensity and phase data. This work ultimately demonstrates that localized IMPLS provides a contact-free means to extract lateral ion diffusion coefficients while spatially distinguishing defect types across the sample.",
+    "status": "found"
+  },
+  "2511.15282": {
+    "arxiv_id": "2511.15282",
+    "title": "Realist and Pluralist Conceptions of Intelligence and Their Implications on AI Research",
+    "authors": [
+      "Ninell Oldenburg",
+      "Ruchira Dhar",
+      "Anders Søgaard"
+    ],
+    "submission_date": "2025-11-19T09:48:07Z",
+    "latest_updated": "2025-12-19T11:10:53Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.15282v1",
+      "2511.15282v2"
+    ],
+    "abstract": "In this paper, we argue that current AI research operates on a spectrum between two different underlying conceptions of intelligence: Intelligence Realism, which holds that intelligence represents a single, universal capacity measurable across all systems, and Intelligence Pluralism, which views intelligence as diverse, context-dependent capacities that cannot be reduced to a single universal measure. Through an analysis of current debates in AI research, we demonstrate how the conceptions remain largely implicit yet fundamentally shape how empirical evidence gets interpreted across a wide range of areas. These underlying views generate fundamentally different research approaches across three areas. Methodologically, they produce different approaches to model selection, benchmark design, and experimental validation. Interpretively, they lead to contradictory readings of the same empirical phenomena, from capability emergence to system limitations. Regarding AI risk, they generate categorically different assessments: realists view superintelligence as the primary risk and search for unified alignment solutions, while pluralists see diverse threats across different domains requiring context-specific solutions. We argue that making explicit these underlying assumptions can contribute to a clearer understanding of disagreements in AI research.",
+    "status": "found"
+  },
+  "2511.15283": {
+    "arxiv_id": "2511.15283",
+    "title": "Reflection positivity in a higher-derivative model with physical bound states of ghosts",
+    "authors": [
+      "Manuel Asorey",
+      "Gastão Krein",
+      "Miguel Pardina",
+      "Ilya L. Shapiro"
+    ],
+    "submission_date": "2025-11-19T09:48:20Z",
+    "latest_updated": "2025-11-19T09:48:20Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.15283v1"
+    ],
+    "abstract": "The inclusion of higher derivatives is a necessary condition for a renormalizable or superrenormalizable local theory of quantum gravity. On the other hand, higher derivatives lead to classical instabilities and a loss of unitarity at the quantum level. A standard way to detect such issues is by examining the reflection positivity condition and the existence of a Kallen-Lehmann spectral representation for the two-point function. We demonstrate that these requirements for a consistent quantum theory are satisfied in a theory we have recently proposed. This theory is based on a six-derivative scalar field action featuring a pair of complex-mass ghost fields that form a bound state. Our results support the interpretation that physical observables can emerge from ghost dynamics in a consistent and unitary framework.",
+    "status": "found"
+  },
+  "2511.15284": {
+    "arxiv_id": "2511.15284",
+    "title": "Path Planning through Multi-Agent Reinforcement Learning in Dynamic Environments",
+    "authors": [
+      "Jonas De Maeyer",
+      "Hossein Yarahmadi",
+      "Moharram Challenger"
+    ],
+    "submission_date": "2025-11-19T09:48:44Z",
+    "latest_updated": "2025-11-19T09:48:44Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.15284v1"
+    ],
+    "abstract": "Path planning in dynamic environments is a fundamental challenge in intelligent transportation and robotics, where obstacles and conditions change over time, introducing uncertainty and requiring continuous adaptation. While existing approaches often assume complete environmental unpredictability or rely on global planners, these assumptions limit scalability and practical deployment in real-world settings. In this paper, we propose a scalable, region-aware reinforcement learning (RL) framework for path planning in dynamic environments. Our method builds on the observation that environmental changes, although dynamic, are often localized within bounded regions. To exploit this, we introduce a hierarchical decomposition of the environment and deploy distributed RL agents that adapt to changes locally. We further propose a retraining mechanism based on sub-environment success rates to determine when policy updates are necessary. Two training paradigms are explored: single-agent Q-learning and multi-agent federated Q-learning, where local Q-tables are aggregated periodically to accelerate the learning process. Unlike prior work, we evaluate our methods in more realistic settings, where multiple simultaneous obstacle changes and increasing difficulty levels are present. Results show that the federated variants consistently outperform their single-agent counterparts and closely approach the performance of A* Oracle while maintaining shorter adaptation times and robust scalability. Although initial training remains time-consuming in large environments, our decentralized framework eliminates the need for a global planner and lays the groundwork for future improvements using deep RL and flexible environment decomposition.",
+    "status": "found"
+  },
+  "2511.15285": {
+    "arxiv_id": "2511.15285",
+    "title": "Normalized Solutions for the $(2,q)$-Laplacian Operator Between Mass-Critical Exponents",
+    "authors": [
+      "Laura Baldelli",
+      "Norihisa Ikoma"
+    ],
+    "submission_date": "2025-11-19T09:48:54Z",
+    "latest_updated": "2025-11-19T09:48:54Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.15285v1"
+    ],
+    "abstract": "This paper concerns the existence of normalized solutions to a class of $(2,q)$-Laplacian equations with a power type nonlinearity in the intermediate regime between the two mass critical exponents $2(1+2/N)$, $q(1+2/N)$. More precisely, we prove the existence of solutions with negative energy obtained through a global minimization procedure, and of solutions with positive energy established via a local minimization technique and a mountain-pass argument. Furthermore, we derive both existence and nonexistence results for the zero-mass case $λ= 0$, highlighting the role of the mixed diffusion in determining the qualitative behavior of solutions. Specifically, this paper's novelty lies in providing a comprehensive understanding of the intermediate cases that arise when the non-homogeneous $(2,q)$-Laplacian operator appears. Our analysis combines variational methods, compactness arguments, and delicate energy estimates adapted to the nonhomogeneous nature of the $(2,q)$-Laplacian operator.",
+    "status": "found"
+  },
+  "2511.15286": {
+    "arxiv_id": "2511.15286",
+    "title": "Transient Stability Analysis of Grid-Forming Converters with Current Limiting Considering Asymmetrical Grid Faults",
+    "authors": [
+      "Seongyeon Kim",
+      "Ki-Hyun Kim",
+      "Shenghui Cui",
+      "Jae-Jung Jung"
+    ],
+    "submission_date": "2025-11-19T09:50:46Z",
+    "latest_updated": "2025-11-19T09:50:46Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.15286v1"
+    ],
+    "abstract": "Under asymmetrical faults, analyzing the transient stability of grid-forming voltage-source converters (GFM-VSCs) becomes essential because their behavior fundamentally differs from that under symmetrical faults. When current limiting is activated under asymmetrical faults, the point-of-common-coupling voltage of a GFM-VSC contains both positive- and negative-sequence components, and the interaction between these components generates a non-negligible negative-sequence-driven active power. However, the transient stability of GFM-VSCs under asymmetrical faults has not been sufficiently investigated, and the influence of negative-sequence-driven active power remains unclear. Accordingly, this letter derives the P-δ curve of a GFM-VSC with an elliptical current limiter under asymmetrical faults by explicitly accounting for negative-sequence effects. This enables a more accurate transient stability assessment when extending conventional symmetrical-fault analyses to asymmetrical conditions. The theoretical analysis is validated by the agreement between the derived P-δ curve and both simulation and experimental results.",
+    "status": "found"
+  },
+  "2511.15287": {
+    "arxiv_id": "2511.15287",
+    "title": "Numerical analysis of the high-frequency Helmholtz equation using semiclassical analysis",
+    "authors": [
+      "Jeffrey Galkowski",
+      "Euan A. Spence"
+    ],
+    "submission_date": "2025-11-19T09:52:46Z",
+    "latest_updated": "2026-03-23T10:08:06Z",
+    "revised_dates": null,
+    "venue": "Acta Numerica 35 (2026) 1-171",
+    "latest_version": 2,
+    "versions": [
+      "2511.15287v1",
+      "2511.15287v2"
+    ],
+    "abstract": "We consider the numerical solution of high-frequency scattering problems modeled by the Helmholtz equation with a bounded obstacle. Although the analysis of this problem dates back at least 50 years, over the past decade or so, tools and techniques from $\\textit{semiclassical analysis}$ have provided a new perspective and been used to settle several long-standing open problems in this area. Semiclassical analysis works in phase space (i.e., position and frequency) and describes rigorously the extent to which solutions of high-frequency PDEs are dictated by the properties of the corresponding geometric-optic rays. The goals of the article are to (i) give a introduction to semiclassical analysis aimed at non-experts and (ii) showcase some of the numerical-analysis results about finite-element methods, boundary-element methods, and domain-decomposition methods obtained using semiclassical techniques.",
+    "status": "found"
+  },
+  "2511.15288": {
+    "arxiv_id": "2511.15288",
+    "title": "Edge-Centric Relational Reasoning for 3D Scene Graph Prediction",
+    "authors": [
+      "Yanni Ma",
+      "Hao Liu",
+      "Yulan Guo",
+      "Theo Gevers",
+      "Martin R. Oswald"
+    ],
+    "submission_date": "2025-11-19T09:53:56Z",
+    "latest_updated": "2025-11-19T09:53:56Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.15288v1"
+    ],
+    "abstract": "3D scene graph prediction aims to abstract complex 3D environments into structured graphs consisting of objects and their pairwise relationships. Existing approaches typically adopt object-centric graph neural networks, where relation edge features are iteratively updated by aggregating messages from connected object nodes. However, this design inherently restricts relation representations to pairwise object context, making it difficult to capture high-order relational dependencies that are essential for accurate relation prediction. To address this limitation, we propose a Link-guided Edge-centric relational reasoning framework with Object-aware fusion, namely LEO, which enables progressive reasoning from relation-level context to object-level understanding. Specifically, LEO first predicts potential links between object pairs to suppress irrelevant edges, and then transforms the original scene graph into a line graph where each relation is treated as a node. A line graph neural network is applied to perform edge-centric relational reasoning to capture inter-relation context. The enriched relation features are subsequently integrated into the original object-centric graph to enhance object-level reasoning and improve relation prediction. Our framework is model-agnostic and can be integrated with any existing object-centric method. Experiments on the 3DSSG dataset with two competitive baselines show consistent improvements, highlighting the effectiveness of our edge-to-object reasoning paradigm.",
+    "status": "found"
+  }
+}

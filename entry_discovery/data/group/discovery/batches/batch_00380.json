@@ -1,0 +1,413 @@
+{
+  "2601.20756": {
+    "arxiv_id": "2601.20756",
+    "title": "Supervised Guidance Training for Infinite-Dimensional Diffusion Models",
+    "authors": [
+      "Elizabeth L. Baker",
+      "Alexander Denker",
+      "Jes Frellsen"
+    ],
+    "submission_date": "2026-01-28T16:39:39Z",
+    "latest_updated": "2026-05-11T11:46:41Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.20756v1",
+      "2601.20756v2"
+    ],
+    "abstract": "Score-based diffusion models have recently been extended to infinite-dimensional function spaces, with uses such as inverse problems arising from partial differential equations. In the Bayesian formulation of inverse problems, the aim is to sample from a posterior distribution over functions obtained by conditioning a prior on noisy observations. While diffusion models provide expressive priors in function space, the theory of conditioning them to sample from the posterior remains open. We address this, assuming that either the prior lies in the Cameron-Martin space, or is absolutely continuous with respect to a Gaussian measure. We prove that the models can be conditioned using an infinite-dimensional extension of Doob's $h$-transform, and that the conditional score decomposes into an unconditional score and a guidance term. As the guidance term is intractable, we propose a simulation-free score matching objective (called Supervised Guidance Training) enabling efficient and stable posterior sampling. We illustrate the theory with numerical examples on Bayesian inverse problems in function spaces. In summary, our work offers the first function-space method for fine-tuning trained diffusion models to accurately sample from a posterior.",
+    "status": "found"
+  },
+  "2601.20757": {
+    "arxiv_id": "2601.20757",
+    "title": "Persona Prompting as a Lens on LLM Social Reasoning",
+    "authors": [
+      "Jing Yang",
+      "Moritz Hechtbauer",
+      "Elisabeth Khalilov",
+      "Evelyn Luise Brinkmann",
+      "Vera Schmitt",
+      "Nils Feldhus"
+    ],
+    "submission_date": "2026-01-28T16:41:17Z",
+    "latest_updated": "2026-01-28T16:41:17Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.20757v1"
+    ],
+    "abstract": "For socially sensitive tasks like hate speech detection, the quality of explanations from Large Language Models (LLMs) is crucial for factors like user trust and model alignment. While Persona prompting (PP) is increasingly used as a way to steer model towards user-specific generation, its effect on model rationales remains underexplored. We investigate how LLM-generated rationales vary when conditioned on different simulated demographic personas. Using datasets annotated with word-level rationales, we measure agreement with human annotations from different demographic groups, and assess the impact of PP on model bias and human alignment. Our evaluation across three LLMs results reveals three key findings: (1) PP improving classification on the most subjective task (hate speech) but degrading rationale quality. (2) Simulated personas fail to align with their real-world demographic counterparts, and high inter-persona agreement shows models are resistant to significant steering. (3) Models exhibit consistent demographic biases and a strong tendency to over-flag content as harmful, regardless of PP. Our findings reveal a critical trade-off: while PP can improve classification in socially-sensitive tasks, it often comes at the cost of rationale quality and fails to mitigate underlying biases, urging caution in its application.",
+    "status": "found"
+  },
+  "2601.20758": {
+    "arxiv_id": "2601.20758",
+    "title": "ScaleFree: Dynamic KDE for Multiscale Point Cloud Exploration in VR",
+    "authors": [
+      "Lixiang Zhao",
+      "Fuqi Xie",
+      "Tobias Isenberg",
+      "Hai-Ning Liang",
+      "Lingyun Yu"
+    ],
+    "submission_date": "2026-01-28T16:41:53Z",
+    "latest_updated": "2026-01-30T17:07:33Z",
+    "revised_dates": null,
+    "venue": "Proceedings of VR 2026",
+    "latest_version": 2,
+    "versions": [
+      "2601.20758v1",
+      "2601.20758v2"
+    ],
+    "abstract": "We present ScaleFree, a GPU-accelerated adaptive Kernel Density Estimation (KDE) algorithm for scalable, interactive multiscale point cloud exploration. With this technique, we cater to the massive datasets and complex multiscale structures in advanced scientific computing, such as cosmological simulations with billions of particles. Effective exploration of such data requires a full 3D understanding of spatial structures, a capability for which immersive environments such as VR are particularly well suited. However, simultaneously supporting global multiscale context and fine-grained local detail remains a significant challenge. A key difficulty lies in dynamically generating continuous density fields from point clouds to facilitate the seamless scale transitions: while KDE is widely used, precomputed fields restrict the accuracy of interaction and omit fine-scale structures, while dynamic computation is often too costly for real-time VR interaction. We address this challenge by leveraging GPU acceleration with k-d-tree-based spatial queries and parallel reduction within a thread group for on-the-fly density estimation. With this approach, we can recalculate scalar fields dynamically as users shift their focus across scales. We demonstrate the benefits of adaptive density estimation through two data exploration tasks: adaptive selection and progressive navigation. Through performance experiments, we demonstrate that ScaleFree with GPU-parallel implementation achieves orders-of-magnitude speedups over sequential and multi-core CPU baselines. In a controlled experiment, we further confirm that our adaptive selection technique improves accuracy and efficiency in multiscale selection tasks.",
+    "status": "found"
+  },
+  "2601.20759": {
+    "arxiv_id": "2601.20759",
+    "title": "The Latent Space of Equational Theories",
+    "authors": [
+      "Luis Berlioz",
+      "Paul-André Melliès"
+    ],
+    "submission_date": "2026-01-28T16:45:41Z",
+    "latest_updated": "2026-01-28T16:45:41Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.20759v1"
+    ],
+    "abstract": "Building on the collaborative Equational Theories project initiated by Terence Tao fifteen months ago, and combining it with ideas coming from machine learning and finite model theory, we construct a latent space of equational theories where each equational theory is located at a specific location, determined by its statistical behavior with respect to a large sample of finite magmas. This experiment enables us to observe for the first time how reasoning flows and produces surprisingly oriented and well-structured chains of logical implications in the latent space of equational theories.",
+    "status": "found"
+  },
+  "2601.20760": {
+    "arxiv_id": "2601.20760",
+    "title": "Exploring Re-inforcement Learning via Human Feedback under User Heterogeneity",
+    "authors": [
+      "Sarvesh Shashidhar",
+      "Abhishek Mishra",
+      "Madhav Kotecha"
+    ],
+    "submission_date": "2026-01-28T16:47:45Z",
+    "latest_updated": "2026-01-28T16:47:45Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.20760v1"
+    ],
+    "abstract": "Re-inforcement learning from human feedback (RLHF) has been effective in the task of AI alignment. However, one of the key assumptions of RLHF is that the annotators (referred to as workers from here on out) have a homogeneous response space. This assumption is not true in most practical settings and there have been studies done in the past to challenge this notion. This work has been inspired by such studies and explores one of the ways to deal with heterogeneity in worker preferences - by clustering workers with similar preferences and personalising reward models for each cluster. This work provides an algorithm that encourages simultaneous learning of reward models and worker embeddings. This algorithm is then empirically tested against the Reddit TL;DR dataset with unique worker IDs. We have shown that clustering users into different groups based on their preferences and created personalised reward models improves win-rate of the said models. Along with results and visualisations, this work aims to act as a stepping stone to more complicated models and gives a list of possible future extensions.",
+    "status": "found"
+  },
+  "2601.20761": {
+    "arxiv_id": "2601.20761",
+    "title": "Anytime-Valid Quantum State Tomography via Confidence Sequences",
+    "authors": [
+      "Aldo Cumitini",
+      "Luca Barletta",
+      "Osvaldo Simeone"
+    ],
+    "submission_date": "2026-01-28T16:49:28Z",
+    "latest_updated": "2026-05-15T10:48:28Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.20761v1",
+      "2601.20761v2"
+    ],
+    "abstract": "In this letter, we address the problem of developing quantum state tomography (QST) methods that remain valid at any time during a sequence of measurements. Specifically, the aim is to provide a rigorous quantification of the uncertainty associated with the current state estimate as data are acquired incrementally. To this end, the proposed framework augments existing QST techniques by associating current point estimates of the state with confidence sets that are guaranteed to contain the true quantum state with a user-defined probability. The methodology is grounded in recent statistical advances in anytime-valid confidence sequences. Numerical results confirm the theoretical coverage properties of the proposed anytime-valid QST.",
+    "status": "found"
+  },
+  "2601.20762": {
+    "arxiv_id": "2601.20762",
+    "title": "A Zero-Range Model for the Efimov Effect in the Born-Oppenheimer Approximation",
+    "authors": [
+      "G. Basti",
+      "D. Ferretti",
+      "A. Teta"
+    ],
+    "submission_date": "2026-01-28T16:50:56Z",
+    "latest_updated": "2026-01-28T16:50:56Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.20762v1"
+    ],
+    "abstract": "In this note we discuss the Efimov effect emerging in a three-particle quantum system with zero-range interactions. In particular, we consider two non-interacting identical bosons plus a different lighter particle such that the interaction between a boson and the light particle is resonant. We also assume the validity of the Born-Oppenheimer approximation. Under these conditions, we show that the three-particle system exhibits infinitely many negative eigenvalues which accumulate at zero and satisfy the universal geometrical law characterising the Efimov effect. The result we find is a generalisation of previous results recently obtained in [13, 24].",
+    "status": "found"
+  },
+  "2601.20763": {
+    "arxiv_id": "2601.20763",
+    "title": "Multiscale Numerical Modelling of Ultrafast Laser-Matter Interactions: Maxwell Two Temperature Model Molecular Dynamics (M-TTM-MD)",
+    "authors": [
+      "Othmane Benhayoun",
+      "Martin E. Garcia"
+    ],
+    "submission_date": "2026-01-28T16:52:49Z",
+    "latest_updated": "2026-01-28T16:52:49Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.20763v1"
+    ],
+    "abstract": "In this work, we present a comprehensive numerical framework that couples numerical solutions of Maxwell's equations using the Finite-Difference Time-Domain (FDTD) approach, Molecular Dynamics (MD), and the Two-Temperature Model (TTM) to describe ultrafast laser-matter interactions in metallic systems at the atomic scale. The proposed Maxwell-Two-Temperature Model-Molecular Dynamics (M-TTM-MD) bridges the gap between electromagnetic field propagation, electron-phonon energy exchange, and atomic motion, allowing for a self-consistent treatment of energy absorption, transport, and structural response within a unified simulation environment. The calculated electromagnetic fields incorporate dispersive dielectric properties derived using the Auxiliary Differential Equation (ADE) technique, while the electronic and lattice subsystems are dynamically coupled through spatially and temporally resolved energy exchange terms. The changes in the material topography are then reflected in the updated grid for the FDTD scheme. The developed M-TTM-MD model provides a self-consistent numerical framework that offers insights into laser-induced phenomena in metals, including energy transport and surface dynamics under extreme nonequilibrium conditions.",
+    "status": "found"
+  },
+  "2601.20764": {
+    "arxiv_id": "2601.20764",
+    "title": "Agentic Fog: A Policy-driven Framework for Distributed Intelligence in Fog Computing",
+    "authors": [
+      "Saeed Akbar",
+      "Muhammad Waqas",
+      "Rahmat Ullah"
+    ],
+    "submission_date": "2026-01-28T16:53:55Z",
+    "latest_updated": "2026-01-28T16:53:55Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.20764v1"
+    ],
+    "abstract": "Fog and edge computing require adaptive control schemes that can handle partial observability, severe latency requirements, and dynamically changing workloads. Recent research on Agentic AI (AAI) increasingly integrates reasoning systems powered by Large Language Models; however, these tools are not applicable to infrastructure-level systems due to their high computational cost, stochastic nature, and poor formal analyzability. In this paper, a generic model, Agentic Fog (AF), is presented, in which fog nodes are represented as policy-driven autonomous agents that communicate via p2p interactions based on shared memory and localized coordination. The suggested architecture decomposes a system's goals into abstract policy guidance and formalizes decentralized fog coordination as an exact potential game. The framework is guaranteed to converge and remain stable under asynchronous updates, bounded-rational best-response dynamics, and node failures. Simulations demonstrate that the AF system achieves lower average latency and adapts more efficiently to varying demand than greedy heuristics and integer linear programming under dynamic conditions. The sensitivity analysis also demonstrates the capability to perform optimally under different memory and coordination conditions.",
+    "status": "found"
+  },
+  "2601.20765": {
+    "arxiv_id": "2601.20765",
+    "title": "Less is More: Clustered Cross-Covariance Control for Offline RL",
+    "authors": [
+      "Nan Qiao",
+      "Sheng Yue",
+      "Shuning Wang",
+      "Yongheng Deng",
+      "Ju Ren"
+    ],
+    "submission_date": "2026-01-28T16:55:04Z",
+    "latest_updated": "2026-01-31T08:04:07Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.20765v1",
+      "2601.20765v2"
+    ],
+    "abstract": "A fundamental challenge in offline reinforcement learning is distributional shift. Scarce data or datasets dominated by out-of-distribution (OOD) areas exacerbate this issue. Our theoretical analysis and experiments show that the standard squared error objective induces a harmful TD cross covariance. This effect amplifies in OOD areas, biasing optimization and degrading policy learning. To counteract this mechanism, we develop two complementary strategies: partitioned buffer sampling that restricts updates to localized replay partitions, attenuates irregular covariance effects, and aligns update directions, yielding a scheme that is easy to integrate with existing implementations, namely Clustered Cross-Covariance Control for TD (C^4). We also introduce an explicit gradient-based corrective penalty that cancels the covariance induced bias within each update. We prove that buffer partitioning preserves the lower bound property of the maximization objective, and that these constraints mitigate excessive conservatism in extreme OOD areas without altering the core behavior of policy constrained offline reinforcement learning. Empirically, our method showcases higher stability and up to 30% improvement in returns over prior methods, especially with small datasets and splits that emphasize OOD areas.",
+    "status": "found"
+  },
+  "2601.20766": {
+    "arxiv_id": "2601.20766",
+    "title": "Observation of Dipolar Spin-ice--like Correlations in the Quantum Spin Ice Candidate Ce$_2$Sn$_2$O$_7$",
+    "authors": [
+      "Bo Yuan",
+      "M. Powell",
+      "X. Liu",
+      "J. Ni",
+      "E. M. Smith",
+      "R. Schäfer",
+      "R. Moessner",
+      "F. Ye",
+      "J. Dudemaine",
+      "A. D. Bianchi",
+      "J. W. Kolis",
+      "B. D. Gaulin"
+    ],
+    "submission_date": "2026-01-28T16:55:30Z",
+    "latest_updated": "2026-09-03T01:44:14Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2601.20766v1",
+      "2601.20766v2",
+      "2601.20766v3"
+    ],
+    "abstract": "We report diffuse scattering measurements on the dipolar-octupolar pyrochlore, Ce$_2$Sn$_2$O$_7$, to elucidate its magnetic correlations within the correlated paramagnetic regime above its ordering temperature, $\\mathrm{T_N}\\sim 40~$mK. The magnetic transition at $\\mathrm{T_N}$, observed in recent specific heat measurements, has been interpreted within the nearest-neighbor XYZ model as a transition into an all-in-all-out (AIAO) magnetic order. However, the observed diffuse scattering above $\\mathrm{T_N}$ argues against an AIAO magnetic order by exhibiting $no$ short-range order at the AIAO wave-vectors, inconsistent with the nearest neighbor model. Instead, the observed diffuse scattering strongly resembles that observed in classical dipolar spin ice, Dy$_2$Ti$_2$O$_7$, and suggests the presence of short-range correlated structures such as chains, or clusters in the low energy manifold of Ce$_2$Sn$_2$O$_7$, favored by further neighbor interactions. We discuss how chain-like states qualitatively account for the observed H-T phase diagram under a [1,1,0]-field.",
+    "status": "found"
+  },
+  "2601.20767": {
+    "arxiv_id": "2601.20767",
+    "title": "Graviton energy spectra arising from the KSVZ axion model",
+    "authors": [
+      "Yonghua Wang",
+      "Lin-Yun He",
+      "Wei Chao",
+      "Yu Gao"
+    ],
+    "submission_date": "2026-01-28T16:56:15Z",
+    "latest_updated": "2026-01-28T16:56:15Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.20767v1"
+    ],
+    "abstract": "Axion, the goldstone boson arising from the spontaneous breaking of a global $U(1)$ Peccei-Quinn symmetry, provides a dynamical solution to the strong CP problem and is an excellent dark matter candidate. Various experiments are designed to search for the axion, however no confirmative signal has been observed. On the other hand, there are also hypothetical heavy particles in axion models, such as the heavy scalar $s$, which is the CP-even component of the complex scalar that carries $U(1)_{PQ}$ charge, and the vector-like heavy quark (VLQ) in the Kim-Shifman-Vainshtein-Zakharov~(KSVZ) axion model. Studying signals induced by them are helpful for axion searches. In this paper, we calculate the graviton bremsstrahlung energy spectrum arising from the decay of the heavy scalar or VLQ in the KSVZ model. The result shows that these heavy particles can emit ultrahigh-frequency gravitational waves (GWs), with the peak frequency depending on the model's parameter inputs. In addition, the graviton spectrum is distinguished from the thermal GW background at high frequencies if there is an early matter-dominated era induced by these heavy particles. Future measurements of ultrahigh-frequency GWs may provide indirect evidence for the KSVZ axion.",
+    "status": "found"
+  },
+  "2601.20768": {
+    "arxiv_id": "2601.20768",
+    "title": "Millisecond spin coherence of electrons in semiconducting perovskites revealed by spin mode locking",
+    "authors": [
+      "Sergey R. Meliakov",
+      "Evgeny A. Zhukov",
+      "Vasilii V. Belykh",
+      "Dmitri R. Yakovlev",
+      "Bekir Turedi",
+      "Maksym V. Kovalenko",
+      "Manfred Bayer"
+    ],
+    "submission_date": "2026-01-28T16:56:34Z",
+    "latest_updated": "2026-01-28T16:56:34Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.20768v1"
+    ],
+    "abstract": "Long spin coherence times of carriers are essential for implementing quantum technologies using semiconductor devices for which, however, a possible obstacle is spin relaxation. For the spin dynamics, decisive features are the band structure, crystal symmetry, and quantum confinement. Perovskite semiconductors recently have come into focus of studies of their spin states, notivated by efficient optical access and potentially long-living coherence. Here, we report an electron spin coherence time $T_2$ of the order of 1 ms, measured for a bulk FA$_{0.95}$Cs$_{0.05}$PbI$_3$ lead halide perovskite crystal. Using periodic laser pulses, we synchronize the electron spin Larmor precession about an external magnetic field in an inhomogeneous ensemble, the effect known as spin mode locking. It appears as a decay of the optically created ensemble spin polarization within the dephasing time $T_2^*$ of up to 20 ns and its revival during the spin coherence time $T_2$ reaching the millisecond range. This exceptionally long spin coherence time in a bulk crystal is complemented by millisecond-long longitudinal spin relaxation times $T_1$ for electrons and holes, measured by optically-detected magnetic resonance. These long-lasting spin dynamics highlight perovskites as promising platform for the quantum devices with all-optical control.",
+    "status": "found"
+  },
+  "2601.20769": {
+    "arxiv_id": "2601.20769",
+    "title": "Leveraging Second-Order Curvature for Efficient Learned Image Compression: Theory and Empirical Evidence",
+    "authors": [
+      "Yichi Zhang",
+      "Fengqing Zhu"
+    ],
+    "submission_date": "2026-01-28T16:56:52Z",
+    "latest_updated": "2026-01-29T03:16:47Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.20769v1",
+      "2601.20769v2"
+    ],
+    "abstract": "Training learned image compression (LIC) models entails navigating a challenging optimization landscape defined by the fundamental trade-off between rate and distortion. Standard first-order optimizers, such as SGD and Adam, struggle with \\emph{gradient conflicts} arising from competing objectives, leading to slow convergence and suboptimal rate-distortion performance. In this work, we demonstrate that a simple utilization of a second-order quasi-Newton optimizer, \\textbf{SOAP}, dramatically improves both training efficiency and final performance across diverse LICs. Our theoretical and empirical analyses reveal that Newton preconditioning inherently resolves the intra-step and inter-step update conflicts intrinsic to the R-D objective, facilitating faster, more stable convergence. Beyond acceleration, we uncover a critical deployability benefit: second-order trained models exhibit significantly fewer activation and latent outliers. This substantially enhances robustness to post-training quantization. Together, these results establish second-order optimization, achievable as a seamless drop-in replacement of the imported optimizer, as a powerful, practical tool for advancing the efficiency and real-world readiness of LICs.",
+    "status": "found"
+  },
+  "2601.20770": {
+    "arxiv_id": "2601.20770",
+    "title": "On statistics of prime parking functions, Łukasiewicz paths, and quasisymmetric functions",
+    "authors": [
+      "Pamela E. Harris",
+      "Selvi Kara",
+      "Erin McNicholas",
+      "Kathryn Nyman",
+      "Mei Yin"
+    ],
+    "submission_date": "2026-01-28T16:57:00Z",
+    "latest_updated": "2026-09-26T21:51:01Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.20770v1",
+      "2601.20770v2"
+    ],
+    "abstract": "We recall that a parking function of length $n+1$ is said to be prime if removing any instance of 1 yields a parking function of length $n$. In this article, we study prime parking functions from multiple lenses. We derive an explicit formula for the average value of the total displacement of prime parking functions. We present a formula for the displacement-enumerator of prime parking functions that involves a sum over Łukasiewicz paths. We describe the one-to-one correspondence between parking functions and labeledŁukasiewicz paths via Dyck paths. We introduce the concept of $\\ell$-forward differences and use this as a vehicle for examining ties, ascents, and descents in prime parking functions. We establish a link between Schur functions corresponding to the partition $(i,1^{n-i})$ and fundamental quasisymmetric functions indexed by prime parking function tie sets of size $n-i.$",
+    "status": "found"
+  },
+  "2601.20771": {
+    "arxiv_id": "2601.20771",
+    "title": "Cross-Country Learning for National Infectious Disease Forecasting Using European Data",
+    "authors": [
+      "Zacharias Komodromos",
+      "Kleanthis Malialis",
+      "Artemis Kontou",
+      "Panayiotis Kolios"
+    ],
+    "submission_date": "2026-01-28T16:57:51Z",
+    "latest_updated": "2026-09-17T21:38:19Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2601.20771v1",
+      "2601.20771v2",
+      "2601.20771v3"
+    ],
+    "abstract": "Accurate forecasting of infectious disease incidence is critical for public health planning and timely intervention. While most data-driven forecasting approaches rely primarily on historical data from a single country, such data are often limited in length and variability, restricting the performance of machine learning (ML) models. In this work, we investigate a cross-country learning approach for infectious disease forecasting, in which a single model is trained on time series data from multiple countries and evaluated on a country of interest. This setting enables the model to exploit shared epidemic dynamics across countries and to benefit from an enlarged training set. We examine this approach through a case study on COVID-19 case forecasting in Cyprus, using surveillance data of European countries. We evaluate multiple models and analyse the impact of the lookback window length and cross-country 'data augmentation' on multi-step forecasting performance. The results show that combining data from other countries can lead to consistent improvements over models trained solely on national data. Although the focus is on Cyprus and COVID-19, the framework and findings provide promising insights for infectious disease forecasting in settings with limited national data.",
+    "status": "found"
+  },
+  "2601.20772": {
+    "arxiv_id": "2601.20772",
+    "title": "COMET-SG1: Lightweight Autoregressive Regressor for Edge and Embedded AI",
+    "authors": [
+      "Shakhyar Gogoi"
+    ],
+    "submission_date": "2026-01-28T16:59:56Z",
+    "latest_updated": "2026-01-28T16:59:56Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.20772v1"
+    ],
+    "abstract": "COMET-SG1 is a lightweight, stability-oriented autoregressive regression model designed for time-series prediction on edge and embedded AI systems. Unlike recurrent neural networks or transformer-based sequence models, COMET-SG1 operates through linear behavior-space encoding, memory-anchored transition estimation, and deterministic state updates. This structure prioritizes bounded long-horizon behavior under fully autoregressive inference, a critical requirement for edge deployment where prediction errors accumulate over time. Experiments on non-stationary synthetic time-series data demonstrate that COMET-SG1 achieves competitive short-horizon accuracy while exhibiting significantly reduced long-horizon drift compared to MLP, LSTM, and k-nearest neighbor baselines. With a compact parameter footprint and operations compatible with fixed-point arithmetic, COMET-SG1 provides a practical and interpretable approach for stable autoregressive prediction in edge and embedded AI applications.",
+    "status": "found"
+  },
+  "2601.20773": {
+    "arxiv_id": "2601.20773",
+    "title": "Smoothing the Black-Box: Signed-Distance Supervision for Black-Box Model Copying",
+    "authors": [
+      "Rubén Jiménez",
+      "Oriol Pujol"
+    ],
+    "submission_date": "2026-01-28T17:00:04Z",
+    "latest_updated": "2026-01-28T17:00:04Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.20773v1"
+    ],
+    "abstract": "Deployed machine learning systems must continuously evolve as data, architectures, and regulations change, often without access to original training data or model internals. In such settings, black-box copying provides a practical refactoring mechanism, i.e. upgrading legacy models by learning replicas from input-output queries alone. When restricted to hard-label outputs, copying turns into a discontinuous surface reconstruction problem from pointwise queries, severely limiting the ability to recover boundary geometry efficiently. We propose a distance-based copying (distillation) framework that replaces hard-label supervision with signed distances to the teacher's decision boundary, converting copying into a smooth regression problem that exploits local geometry. We develop an $α$-governed smoothing and regularization scheme with Hölder/Lipschitz control over the induced target surface, and introduce two model-agnostic algorithms to estimate signed distances under label-only access. Experiments on synthetic problems and UCI benchmarks show consistent improvements in fidelity and generalization accuracy over hard-label baselines, while enabling distance outputs as uncertainty-related signals for black-box replicas.",
+    "status": "found"
+  },
+  "2601.20774": {
+    "arxiv_id": "2601.20774",
+    "title": "When More Data Doesn't Help: Limits of Adaptation in Multitask Learning",
+    "authors": [
+      "Steve Hanneke",
+      "Mingyue Xu"
+    ],
+    "submission_date": "2026-01-28T17:00:11Z",
+    "latest_updated": "2026-05-28T21:13:54Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.20774v1",
+      "2601.20774v2"
+    ],
+    "abstract": "Multitask learning and related frameworks have achieved tremendous success in modern applications. In multitask learning problem, we are given a set of heterogeneous datasets collected from related source tasks and hope to enhance the performance above what we could hope to achieve by solving each of them individually. The recent work of arXiv:2006.15785 has showed that, without access to distributional information, no algorithm based on aggregating samples alone can guarantee optimal risk as long as the sample size per task is bounded. In this paper, we focus on understanding the statistical limits of multitask learning. We go beyond the no-free-lunch theorem in arXiv:2006.15785 by establishing a stronger impossibility result of adaptation that holds for arbitrarily large sample size per task. This improvement conveys an important message that the hardness of multitask learning cannot be overcame by having abundant data per task. We also discuss the notion of optimal adaptivity that may be of future interests.",
+    "status": "found"
+  },
+  "2601.20775": {
+    "arxiv_id": "2601.20775",
+    "title": "Active Learning for Decision Trees with Provable Guarantees",
+    "authors": [
+      "Arshia Soltani Moakhar",
+      "Tanapoom Laoaron",
+      "Faraz Ghahremani",
+      "Kiarash Banihashem",
+      "MohammadTaghi Hajiaghayi"
+    ],
+    "submission_date": "2026-01-28T17:02:25Z",
+    "latest_updated": "2026-02-18T19:30:22Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.20775v1",
+      "2601.20775v2"
+    ],
+    "abstract": "This paper advances the theoretical understanding of active learning label complexity for decision trees as binary classifiers. We make two main contributions. First, we provide the first analysis of the disagreement coefficient for decision trees-a key parameter governing active learning label complexity. Our analysis holds under two natural assumptions required for achieving polylogarithmic label complexity, (i) each root-to-leaf path queries distinct feature dimensions, and (ii) the input data has a regular, grid-like structure. We show these assumptions are essential, as relaxing them leads to polynomial label complexity. Second, we present the first general active learning algorithm for binary classification that achieves a multiplicative error guarantee, producing a $(1+ε)$-approximate classifier. By combining these results, we design an active learning algorithm for decision trees that uses only a polylogarithmic number of label queries in the dataset size, under the stated assumptions. Finally, we establish a label complexity lower bound, showing our algorithm's dependence on the error tolerance $ε$ is close to optimal.",
+    "status": "found"
+  }
+}

@@ -1,0 +1,391 @@
+{
+  "2609.14814": {
+    "arxiv_id": "2609.14814",
+    "title": "PHP decompositions and primitivity of group rings for linear groups",
+    "authors": [
+      "Felipe I. Flores"
+    ],
+    "submission_date": "2026-09-13T22:05:13Z",
+    "latest_updated": "2026-09-13T22:05:13Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14814v1"
+    ],
+    "abstract": "We show that every countable group $G$ that has Ozawa's property $\\rm PHP$ and contains a non-abelian free subgroup has the following property: the group ring $KG$ is primitive for any field $K$. As a consequence, we deduce that all non-trivial countable linear groups with trivial amenable radical have this property. Along the way, we prove that the class of groups with $\\rm PHP$ enjoys some permanence properties that are of independent interest.",
+    "status": "found"
+  },
+  "2609.14815": {
+    "arxiv_id": "2609.14815",
+    "title": "A Functional SVD Framework for Regularized Multivariate Functional PCA with Dual Penalization",
+    "authors": [
+      "Yue Zhao",
+      "Hossein Haghbin",
+      "Rebecca Sanders",
+      "Mehdi Maadooliat"
+    ],
+    "submission_date": "2026-09-13T22:06:06Z",
+    "latest_updated": "2026-09-13T22:06:06Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14815v1"
+    ],
+    "abstract": "This paper introduces a novel framework for Regularized Multivariate Functional Principal Component Analysis (ReMFPCA) via Functional Singular Value Decomposition (SVD). The proposed method extends existing MFPCA approaches by incorporating a generalized functional SVD within a Hilbert space framework, enabling simultaneous regularization of both functional principal components (PCs) and their associated PC scores. A key innovation of this framework is the inclusion of a sparsity penalty on the PC scores, which enhances interpretability by filtering out irrelevant subject-specific variations. This dual-penalization strategy represents a significant advancement beyond existing covariance-based eigen decomposition methods, which penalize only the functional PCs. Two power algorithm implementations, sequential and joint, are proposed, together with a cross-validation approach based on iterative regression for optimal smoothing parameter selection. Comprehensive simulation studies and real data applications demonstrate that the proposed framework substantially improves the extraction of informative and interpretable components, offering methodological and practical benefits for analyzing multivariate functional data across diverse domains.",
+    "status": "found"
+  },
+  "2609.14816": {
+    "arxiv_id": "2609.14816",
+    "title": "Second Generation Planet Formation in Post-AGB Discs - II: Dust Coagulation and Core Accretion",
+    "authors": [
+      "Ali Pourmand",
+      "Orsola De Marco",
+      "Devika Kamath",
+      "Daniel J. Price"
+    ],
+    "submission_date": "2026-09-13T22:08:28Z",
+    "latest_updated": "2026-09-13T22:08:28Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14816v1"
+    ],
+    "abstract": "Observations have established that the circumbinary discs formed around post-asymptotic giant branch (post-AGB) binaries have striking similarities to protoplanetary discs around young stars. In this study, we examine the feasibility of the different stages of growth in the core accretion framework of planet formation in post-AGB discs, in order to assess whether planet formation is possible in these systems. We find that dust coagulation up to mm sizes is possible within the lifetimes of post-AGB discs, consistent with observations. We then investigate the subsequent growth of planetesimals through pebble and planetesimal accretion. If the streaming instability operates in these discs, the resulting planetesimals formed in higher-mass post-AGB discs ($M_{\\rm disc}\\sim0.1M_\\odot$) can enter rapid pebble accretion and reach their isolation mass within the estimated disc lifetime. By contrast, in lower-mass post-AGB discs ($M_{\\rm disc}\\sim0.01M_\\odot$), planetesimal accretion is too inefficient to produce substantial further growth. We also show that the larger aspect ratios of post-AGB discs compared to protoplanetary discs around young stars imply high pebble isolation masses and therefore potential formation of rocky planets with masses extending up to Jupiter masses. After assessing gas accretion and concurrent migration in these discs, we conclude that second generation planet formation in post-AGB discs is theoretically possible within their estimated lifetimes ($10^4$--$10^5$yr) provided that local dust-to-gas ratio enhancements and sufficiently high disc masses are achieved.",
+    "status": "found"
+  },
+  "2609.14817": {
+    "arxiv_id": "2609.14817",
+    "title": "Tone on a Budget: A Reference-Free Metric for Lexical Tone in Massively Multilingual Text-to-Speech",
+    "authors": [
+      "Moses Daudu",
+      "Adeola Enitan Bamidele",
+      "Honor-Jesus Bezaleel"
+    ],
+    "submission_date": "2026-09-13T22:18:35Z",
+    "latest_updated": "2026-09-13T22:18:35Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14817v1"
+    ],
+    "abstract": "In Yorùbá, pitch alone separates \\d{o}k\\d{o} (husband, Mid), \\d{o}k\\d{ò} (vehicle, Low), and \\d{o}k\\d{ó} (hoe, High) -- the diacritics ARE the tone marks. Yet character error rate (CER), the standard automated metric for text-to-speech (TTS), is in practice computed from ASR output that drops those marks: a synthesizer can ace CER and still say vehicle for husband. We introduce DunDun -- named for the dùndún, the Yorùbá talking drum that speaks through pitch alone -- an automated, reference-free lexical-tone metric that needs no tone-labelled corpus. The gold High/Mid/Low sequence is read from the input text's diacritics (in TTS that text exists by construction, so no reference recording is needed); the prediction comes from the audio's pitch track. We validate three ways. Flattening pitch with PSOLA resynthesis collapses DunDun while CER does not move. Inverting High and Low in the answer key of 300 native recordings drives the two-class readout to 0.14, symmetrically below its 0.35 chance level -- a consistency check on the scoring path, not independent evidence. And three native listeners, over 67 blind A/B trials, pick the tone-correct clip 89.6% of the time (95% CI 80.0-94.8; p < 1e-4); whether DunDun tracks those judgements trial by trial is not resolved at this sample size. Applied to a massively multilingual zero-shot TTS model, DunDun shows what CER cannot: Yorùbá tone sits near the native anchor before any Yorùbá fine-tuning (0.567 +/- 0.02 over five decode seeds vs. 0.596; chance 0.33), despite the 21.4% CER the model's own paper reports; and a few hours of clean audio halve CER (5.6% to 2.7% by 5h, 1.7% by 15h) while tone saturates within the hour. On non-tonal Swahili, CER already captures the gains: the metric a language needs is language-dependent. We release the metric and the complete validation protocol.",
+    "status": "found"
+  },
+  "2609.14818": {
+    "arxiv_id": "2609.14818",
+    "title": "Trust by Design: Trust Calibration Through Non-Advisory Socratic Dialogue in Conversational Agents",
+    "authors": [
+      "Roba Hassan",
+      "Nahla Aboromi",
+      "Naomi Unkelos-Shpigel"
+    ],
+    "submission_date": "2026-09-13T22:19:18Z",
+    "latest_updated": "2026-09-13T22:19:18Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14818v1"
+    ],
+    "abstract": "As conversational AI systems increasingly operate in sensitive domains, the central challenge shifts from usability to trust calibration, ensuring that users rely on systems neither too much nor too little. Systems that provide advice or interpretations risk encouraging inappropriate reliance, particularly when users perceive AI outputs as authoritative. We present CASELy, a conversational agent explicitly designed to limit its own authority through non-advisory Socratic dialogue. The agent asks reflective questions grounded exclusively in user input and refuses to provide advice, recommendations, or interpretations. This design operationalizes trust calibration by constraining agent agency rather than optimizing capability. In a pilot randomized controlled study with higher education students, participants interacting with the Socratic dialogue reported substantially higher user experience (UEQ-S overall = 1.50) compared to a non-dialogue control (0). Qualitative findings identify three mechanisms supporting calibrated trust: transparency through visible grounding, preservation of user decision authority, and reduced fear of judgment. We argue that appropriate reliance can be achieved through interactional constraints, offering a design pattern for trustworthy conversational AI in sensitive contexts.",
+    "status": "found"
+  },
+  "2609.14819": {
+    "arxiv_id": "2609.14819",
+    "title": "A primer on evaluation methods for large language models in healthcare",
+    "authors": [
+      "Suzannah E McKinney",
+      "Phuc Vu",
+      "Samuel A Justice",
+      "Christopher Humphries",
+      "Alyssa Pradhan",
+      "Timothy J Keyes",
+      "Kameron C Black",
+      "John L Havlik",
+      "David JH Wu",
+      "Jack W O'Sullivan",
+      "Ethan Goh",
+      "Sarah F Mercaldo",
+      "James M Hillis"
+    ],
+    "submission_date": "2026-09-13T22:21:21Z",
+    "latest_updated": "2026-10-15T02:33:07Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2609.14819v1",
+      "2609.14819v2",
+      "2609.14819v3"
+    ],
+    "abstract": "Large language models (LLMs) have a growing range of applications in medicine, and their evaluation is critical for ensuring they provide benefit and not harm. This evaluation can be more challenging than traditional machine learning for many reasons, including probabilistic and open-ended outputs, and behavior that shifts with prompt design and accumulated context. This review covers four key areas of LLM evaluation: principles of study design, statistical methods, capability evaluation and clinical application evaluation. Capability evaluation considers different benchmarks, including multiple-choice, agentic and multi-turn benchmarks, alongside operational metrics like token usage and latency. Clinical application evaluation addresses establishing accuracy of free text outputs, such as human review and LLM-as-a-judge, and clinical trial approaches. Across sections, we describe underlying concepts and potential pitfalls, while emphasizing the importance of aligning evaluation methods with the research question. Together, this article aims to provide a pragmatic basis for designing and executing rigorous evaluations of healthcare LLMs.",
+    "status": "found"
+  },
+  "2609.14820": {
+    "arxiv_id": "2609.14820",
+    "title": "POLARIS: Training-Free Audio Fingerprinting with Saliency-Based Landmarks and Delaunay Grouping",
+    "authors": [
+      "Jiheng Li"
+    ],
+    "submission_date": "2026-09-13T22:23:25Z",
+    "latest_updated": "2026-09-15T21:11:25Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2609.14820v1",
+      "2609.14820v2"
+    ],
+    "abstract": "This work presents POLARIS, a training-free audio fingerprinting system that selects landmarks from a locally normalized saliency field and groups them into sparse fingerprints using Delaunay triangulation. To deal with query distortion, POLARIS adds fingerprints from two-hop Delaunay neighborhoods only at query time, without enlarging the reference index. An adaptive configuration applies this expansion only when the original fingerprints do not produce a confident match. We evaluate POLARIS on synthetic distortions from the public PEX Hard Medium benchmark, excluding queries with pitch or tempo shifts, and on a new benchmark of real re-recorded music. POLARIS achieves the best performance among the evaluated training-free methods on both benchmarks. On the real recordings, its adaptive configuration also outperforms the neural NMFP baseline with a comparable measured query time and a smaller logical reference payload. Code, dataset, and instructions for reproducing all experiments are available at https://github.com/JihengLi/POLARIS.git.",
+    "status": "found"
+  },
+  "2609.14821": {
+    "arxiv_id": "2609.14821",
+    "title": "Decision-Oriented Uncertainty Quantification for Risk Control in Earth System Spatiotemporal Foundation Models",
+    "authors": [
+      "Ji Lu",
+      "Huiran Duan",
+      "Bo Zhao",
+      "Xianglong Wang",
+      "Yiru Fang",
+      "Kuo Yang",
+      "Xiaoqin Feng",
+      "Jianping Gou"
+    ],
+    "submission_date": "2026-09-13T22:27:13Z",
+    "latest_updated": "2026-09-13T22:27:13Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14821v1"
+    ],
+    "abstract": "Earth system modeling is shifting from task-specific predictors toward foundation models with general spatiotemporal representation capabilities. Although these models can jointly encode dynamic Earth fields, external forcings, and static geographic context for multistep forecasting, accurate point predictions or statistically calibrated intervals alone are insufficient for high-impact applications such as extremeweather warning, flood control, renewable-energy dispatch, and emergency resource allocation. What matters in practice is whether predictive uncertainty can be translated into reliable decision risk under specific actions, loss functions, and risk preferences. We propose a decision-oriented uncertainty quantification framework for Earth system spatiotemporal foundation models. The framework produces predictive distributions of future states and uses a decision risk adapter to map forecast samples, decision context, and utility functions into action-conditional risks. A utility-aware calibration module further enforces reliability at the downstream decision-loss level rather than only at the forecast-value level. Calibrated risks are then used to select warning, dispatch, inspection, or resource-allocation actions. Compared with the strongest baseline, the proposed method reduces decision regret by 18.7%, lowers the missed-event rate from 14.2% to 9.1%, and improves expected utility by 11.6%, while maintaining 90.4% predictive coverage and reducing decision calibration error from 0.083 to 0.047. These results suggest that decision-oriented uncertainty quantification can improve the robustness and operational value of Earth system foundation models in risk-sensitive applications.",
+    "status": "found"
+  },
+  "2609.14822": {
+    "arxiv_id": "2609.14822",
+    "title": "Transcendence of Montgomery Reduction Factor in the Ring of Integers Modulo Infinitely Large Primes",
+    "authors": [
+      "Tomoki Mihara"
+    ],
+    "submission_date": "2026-09-13T22:28:11Z",
+    "latest_updated": "2026-09-13T22:28:11Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14822v1"
+    ],
+    "abstract": "We prove the transcendence over $\\mathbb{Q}$ of the image of Montgomery reduction factor $R'$ in the ring $\\mathscr{A}$ of integers modulo infinitely large primes. Here, for an odd prime number $p$, $R'$ is defined as the modular inverse of a power $R$ of $2$ modulo $p$ satisfying $2^{-k} R \\leq p < R$ for a fixed constant $k \\in \\mathbb{N}_{> 0}$ typically given as the standard bit size $32$ of an integer type, and is the element of $\\mathbb{Z}/p \\mathbb{Z}$ representing Montgomery reduction regarded as a $\\mathbb{Z}/p \\mathbb{Z}$-linear homomorphism.",
+    "status": "found"
+  },
+  "2609.14823": {
+    "arxiv_id": "2609.14823",
+    "title": "MedTRACE: Tool-Augmented Multimodal Clinical Reasoning Agents for Evidence-Grounded Decision-Making",
+    "authors": [
+      "Ji Lu",
+      "Lifei Liu",
+      "Haoran Yu",
+      "Xianglong Wang",
+      "Yiru Fang",
+      "Kuo Yang",
+      "Huiran Duan",
+      "Jianping Gou"
+    ],
+    "submission_date": "2026-09-13T22:32:49Z",
+    "latest_updated": "2026-09-13T22:32:49Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14823v1"
+    ],
+    "abstract": "Multimodal clinical decision-making requires reliable reasoning over heterogeneous evidence from electronic health records, medical images, and physiological signals. Existing models typically map these inputs directly to diagnoses without explicitly assessing evidence sufficiency, tool-use requirements, or diagnostic uncertainty. This paper presents MedTRACE, a tool-augmented multimodal clinical reasoning agent for evidence-grounded decision-making. MedTRACE uses modality-specific encoders to construct a unified patient-state representation and performs an iterative loop of hypothesis formation, toolaware deliberation, and evidence verification. It dynamically invokes visual grounding, evidence retrieval, and structured parsing tools to locate diagnosis-relevant regions, retrieve clinical knowledge and similar cases, and extract structured findings. The acquired evidence enters an evidence memory, where a consistency verifier confirms or revises the current hypothesis. MedTRACE outputs a diagnosis together with supporting evidence, an auditable reasoning trace, and calibrated confidence. Experiments on multiple multimodal clinical diagnosis benchmarks show that MedTRACE improves diagnostic accuracy by 5.4% and AUROC by 4.7 percentage points over the strongest baseline. It also improves evidenceselection F1 by 8.2 percentage points and visual-grounding IoU by 6.5 percentage points, reduces expected calibration error by 31.6%, and decreases unsupported diagnostic errors by 27.8%. These results demonstrate that active evidence acquisition and verification improve the accuracy, interpretability, and reliability of multimodal clinical decisionmaking.",
+    "status": "found"
+  },
+  "2609.14824": {
+    "arxiv_id": "2609.14824",
+    "title": "ANASSA: An Agentic AI Orchestration Framework for Spatial Intelligence",
+    "authors": [
+      "Constantinos Papantoniou",
+      "Brian Hilton"
+    ],
+    "submission_date": "2026-09-13T22:35:26Z",
+    "latest_updated": "2026-09-13T22:35:26Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14824v1"
+    ],
+    "abstract": "The emergence of large language models (LLMs) and large multimodal models (LMMs) has enabled a new class of agentic systems capable of integrating natural language understanding with tool-based execution. In geographic information systems (GIS), this shift is transforming traditional, expert-driven workflows into semiautonomous systems that can interpret user intent, construct spatial workflows, and execute geospatial analysis tasks. However, existing approaches remain limited by fragmented integration of reasoning, execution, and evaluation, particularly in complex, real-world environments. This study synthesizes recent advances in agentic GIS frameworks, benchmarks, and surveys to identify limitations in spatial reasoning, execution robustness, validation, governance, and evaluation. Building on these insights, it introduces ANASSA (Autonomous Neural Agents for Spatial Systems Architecture), an agentic AI orchestration framework that integrates structured spatial reasoning, multi-agent workflow orchestration, execution feedback, authoritative spatial validation, provenance, uncertainty handling, and human decision authority within a unified system design. The contribution is an architecture-level specification: eleven components across four layers, a six-step Geospatial AI Cognitive Loop, cross-component contracts, and governance mechanisms intended to make agentic geospatial workflows traceable, reproducible, and accountable. Empirical performance evaluation is reserved for implementation and deployment studies.",
+    "status": "found"
+  },
+  "2609.14825": {
+    "arxiv_id": "2609.14825",
+    "title": "Route, Don't Fix: Regime-Dependent Decoding Correction and a Trajectory-Gated Router for Reliable Clinical LLM Answer Selection",
+    "authors": [
+      "Zeyu Dong",
+      "Benjamin Wang",
+      "Joyee W. Jin"
+    ],
+    "submission_date": "2026-09-13T22:36:37Z",
+    "latest_updated": "2026-09-13T22:36:37Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14825v1"
+    ],
+    "abstract": "Large language models (LLMs) are often deemed unsafe for clinical question answering because of their tendency to hallucinate. Retrieval augmentation, fine-tuning, and external verifiers require new infrastructure that clinical governance must approve and may add latency or extra model calls. Inference-time correction uses the model's internal logit signals, but a fixed transformation need not suit every question. A corrector that improves accuracy by about ten percentage points on a truthfulness stress test yields negligible gains on clinical multiple-choice benchmarks, where instruction tuning concentrates output probability on one answer and leaves low terminal entropy. We introduce ALTAS, which reads terminal entropy and late-layer linearity ($R^2$) from one forward pass to choose per question between greedy decoding and late-layer trajectory correction. No classifier, probe, or head is trained; the router operates on candidate-answer logits and adds 6.5% latency overhead. Applied to every question, the correction improves TruthfulQA over greedy at 3B and 8B by 11.4 and 10.0 percentage points, respectively ($p<10^{-10}$). Gated per question, ALTAS retains gains of 8.3 to 9.5 percentage points while keeping MedQA, PubMedQA, and MedHallu within a one-percentage-point do-no-harm band, with no statistically significant differences from greedy. The method passes verification sweeps over frozen thresholds, the scoring rule, and the domain label.",
+    "status": "found"
+  },
+  "2609.14826": {
+    "arxiv_id": "2609.14826",
+    "title": "Variance of random greedy independent sets in triangle-free graphs",
+    "authors": [
+      "Mubin Shaikh"
+    ],
+    "submission_date": "2026-09-13T22:43:01Z",
+    "latest_updated": "2026-09-13T22:43:01Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14826v1"
+    ],
+    "abstract": "Inspect the vertices of a finite simple graph in uniformly random order, accepting each vertex if none of its neighbors has previously been accepted. Let $X_G$ be the number of accepted vertices. For every triangle-free graph with $n\\ge2$ vertices and $e$ edges, we prove $\\operatorname{Var}(X_G)\\le e((n-2)/n)^2$, with equality precisely for edgeless graphs and connected stars. In particular, among trees of a given order, the star uniquely maximizes the variance, with value $(n-1)(n-2)^2/n^2$. Known expected vertex-deletion stability already yields the elementary baseline $\\operatorname{Var}(X_G)\\le e$. We obtain the sharp finite-order refinement by combining a stronger centered first-choice estimate with a triangle-free edge-count identity in the law of total variance.",
+    "status": "found"
+  },
+  "2609.14827": {
+    "arxiv_id": "2609.14827",
+    "title": "Multi-Agent Reinforcement Learning in Markets with Congestion",
+    "authors": [
+      "Qixuan Zai",
+      "Randall Berry"
+    ],
+    "submission_date": "2026-09-13T22:46:13Z",
+    "latest_updated": "2026-09-13T22:46:13Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14827v1"
+    ],
+    "abstract": "This paper investigates multi-agent reinforcement learning (MARL) in settings where firms compete for customers using congestible resources. We consider Bertrand competition in which firms compete by announcing prices and customers choose among firms based on both price and congestion. The relationship between price, congestion and the quantity of customers willing to accept service is governed by an unknown inverse demand curve, which firms must learn through experience. Each firm is modeled as a self-interested learning agent that chooses its price to maximize profit. A growing literature has shown that independently learning MARL agents can develop tacitly collusive behavior. We examine how such behavior emerges in markets with congestible resources. Our results provide insight into how learning dynamics, state representation, and strategic interaction jointly shape competition, with implications for both economic learning and the design of learning-enabled markets.",
+    "status": "found"
+  },
+  "2609.14828": {
+    "arxiv_id": "2609.14828",
+    "title": "Matrix nearness problems: Do real inputs admit real solutions?",
+    "authors": [
+      "Vanni Noferini",
+      "Matvei Zhukov"
+    ],
+    "submission_date": "2026-09-13T22:52:20Z",
+    "latest_updated": "2026-09-13T22:52:20Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14828v1"
+    ],
+    "abstract": "Given a real square matrix $A$ and a nonempty closed target set of complex matrices $\\mathcal E$, invariant by complex conjugation and containing real matrices, does the subset of $\\mathcal{E}$ consisting of the matrices nearest to $A$ in the Frobenius distance always contain a real matrix? We give negative answers when $\\mathcal{E}$ is either the set of normal matrices (solving a question posed by N. Higham) or the set of matrices whose eigenvalues lie in the closed left half-plane (solving a question posed by the first author and F. Poloni). For the latter problem, we also argue that the ratio between the real and complex distances is unbounded in every dimension $n\\geq 3$, and this holds for every distance induced by a unitarily invariant norm. For both problems and $n \\geq 3$, we show that a real input $A$ uniformly drawn from the unit sphere $\\|A\\|_F=1$ has no real minimizer over $\\mathcal{E}$ with probability strictly between $0$ and $1$. The paper is complemented by some further results that are valid for more general target sets $\\mathcal{E}$.",
+    "status": "found"
+  },
+  "2609.14829": {
+    "arxiv_id": "2609.14829",
+    "title": "Enemray: Toward Capable Language Models for Hassaniya",
+    "authors": [
+      "Cheikh Ahmed"
+    ],
+    "submission_date": "2026-09-13T22:52:47Z",
+    "latest_updated": "2026-09-13T22:52:47Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14829v1"
+    ],
+    "abstract": "We introduce Enemray, a Hassaniya-centric language model that enables general-purpose interaction in Hassaniya. Enemray is trained around a stability--plasticity objective: acquire strong Hassaniya linguistic and cultural competence while preserving the general reasoning, multilingual, instruction-following, and safety behaviors of a capable instruction-tuned model. The development pipeline separates language acquisition from behavioral specialization. A separately assembled continual-pretraining corpus provides broad exposure to natural Hassaniya and Mauritanian text; layer-selective continual pretraining learns a compact language-specific parameter update; that update is transferred into the instruction-tuned parameter space; and supervised post-training develops conversational, cultural, literary, task-oriented, and cross-lingual behavior. The supervised corpus integrates selected public Hassaniya and Mauritanian resources with a substantially larger body of newly collected, reconstructed, curated, and constructed instruction data, while policy-generated replay provides a retention signal from the reference model's own behavior distribution. The resulting collection is substantially larger and broader in purpose than existing Hassaniya text resources. In evaluation, Enemray achieves the strongest English to Hassaniya translation among the compared open and proprietary models and the highest overall score on Mauritanian translation error detection, while retaining most of the general capabilities of its instruction-tuned base model on mathematical reasoning, knowledge, code generation, and function calling. This report describes the motivation, data construction, model design, training methodology, and evaluation of Enemray.",
+    "status": "found"
+  },
+  "2609.14830": {
+    "arxiv_id": "2609.14830",
+    "title": "Nakajima-extremal Artin--Schreier covers of ordinary elliptic curves in characteristic $2$",
+    "authors": [
+      "Saeed Tafazolian"
+    ],
+    "submission_date": "2026-09-13T22:52:47Z",
+    "latest_updated": "2026-09-13T22:52:47Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14830v1"
+    ],
+    "abstract": "Let $k$ be an algebraically closed field of characteristic $2$ and let $q=2^h$, $h\\ge3$. We construct ordinary bielliptic curves $X$ of genus $q+1$ for which \\[ \\Aut(X)\\cong \\Dih(C_q)\\times C_2, \\qquad |\\Aut(X)|=4q=4(g(X)-1). \\] These curves realize case \\textup{(ib)} in the classification of Giulietti--Korchmáros and give an infinite family answering a problem posed by Korchmáros. More generally, we prove that every curve in case \\textup{(ib)} arises from the same construction. Case \\textup{(ib)} occurs exactly in genera $g=2^h+1$ with $h\\ge2$. For $g\\ge9$ we determine the full automorphism group; in genus $5$ we determine its Sylow $2$-subgroup but do not claim the full automorphism group. For every fixed $q\\ge8$, the isomorphism classes in case \\textup{(ib)} of genus $q+1$ are parametrized bijectively by $(k^\\times)^2$. The construction is described in terms of an ordinary elliptic curve and an invariant differential. We determine the short orbits and ramification, the unramified cyclic quotients, and the quotients by the central involutions. For $q=8$ an explicit plane model over $\\F_2$ is given.",
+    "status": "found"
+  },
+  "2609.14831": {
+    "arxiv_id": "2609.14831",
+    "title": "Compile-once operation graphs for reusable continuous unitary transformations",
+    "authors": [
+      "Bo Peng",
+      "Niranjan Govind"
+    ],
+    "submission_date": "2026-09-13T22:53:08Z",
+    "latest_updated": "2026-09-13T22:53:08Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14831v1"
+    ],
+    "abstract": "Continuous unitary transformations repeatedly evaluate the same operator algebra as the coefficients of a Hamiltonian and its observables evolve. We compile these algebraic relationships once into a numerical operation graph that can be saved and reused for new coefficient sets, additional operators, derivatives, and forward and reverse calculations on CPUs and GPUs. Reuse is demonstrated by applying the same compiled graph to hydrogen and deuterium parameterizations of a reduced molecular model without regenerating the operator equations. The main computational challenge is construction: generated many-body algebra can contain hundreds of millions of contributions before numerical propagation begins. We address this by determining the required storage in advance and writing contributions directly into the final disk-backed representation. In a deliberately large diagnostic-enabled stress test containing more than 350 million generated contributions, peak host memory remains only about 7\\% above the final stored size. Cross-checks show that CPU and GPU implementations, forward and reverse operations, and repeated loading of the compiled graph reproduce the tested operations to numerical precision. This compile-once representation separates expensive operator-algebra generation from the numerical transformations that reuse it.",
+    "status": "found"
+  },
+  "2609.14832": {
+    "arxiv_id": "2609.14832",
+    "title": "A constructive solution to Talagrand's Gaussian convexification problem",
+    "authors": [
+      "Othmane Mazhar"
+    ],
+    "submission_date": "2026-09-13T22:56:02Z",
+    "latest_updated": "2026-09-23T23:06:37Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2609.14832v1",
+      "2609.14832v2"
+    ],
+    "abstract": "Talagrand asked for a construction of a large convex subset of a bounded Minkowski sum of a large Gaussian set. We first prove a stronger nonsymmetric existential statement: if $A\\subset\\mathbb{R}^n$ is measurable and $γ_n(A)>2/3$, then $A+A+A$ contains a compact convex set of Gaussian measure at least $1/2$. Let now $A$ be closed with $γ_n(A)\\ge7/8$, let $Φ$ be the standard Gaussian distribution function, and put $a_0=Φ^{-1}(3/4)$. For every $Λ>1$ and every $0<p<2Φ(Λa_0)-1$ we construct a centrally symmetric finite polytope $C\\subsetΛ(A+A+A)$ with $γ_n(C)\\ge p$. Thus measure $3/4$ is obtained for every $Λ>1.705510\\ldots$. We give matching upper and lower bounds for the optimal high-measure dilation and show that the dilation profile used by the construction is sharp among all symmetric half-measure cores. Finally, if $γ_n(A)\\ge5/6+η$, we construct, for every $0<\\varepsilon\\le1/2$, a centered ellipsoid $E_\\varepsilon$ with $γ_n(E_\\varepsilon)\\ge1-\\varepsilon$ and \\begin{equation} \\frac{c}{Φ^{-1}(1-\\varepsilon/2)}\\sqrt{\\frac{\\log n}{n}}\\,E_\\varepsilon\\subset A+A+A. \\end{equation} Both the dimension dependence and the dependence on $\\varepsilon$ are optimal up to constants. The construction also gives a six-summand theorem for balanced sets and a second finite construction based on subgaussian tests.",
+    "status": "found"
+  },
+  "2609.14833": {
+    "arxiv_id": "2609.14833",
+    "title": "One Model, Two Physical Stories: Auditing Misalignment in Multi-Modal World Modeling",
+    "authors": [
+      "Geigh Zollicoffer",
+      "Minh Vu",
+      "Rajiv Ranasinghe",
+      "Manish Bhattarai"
+    ],
+    "submission_date": "2026-09-13T22:56:58Z",
+    "latest_updated": "2026-09-13T22:56:58Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14833v1"
+    ],
+    "abstract": "World models, systems that generate what happens next given current environmental conditions, are increasingly being implemented with multi-modal generation in mind. However, generating multiple modalities simultaneously, such as visual simulations alongside physical state predictions in the form of text, introduces the risk of cross-modal inconsistency. Tested separately, both outputs may look convincing while still disagreeing: a model can calculate that a ball should rebound in one modality, then generate no rebound in another modality, to say nothing of diverging from real-world dynamics entirely. In this work we focus on two failures explicitly: \\emph{Internal misalignment}, the disagreement between the world model's generated video and the same world model's prediction in a different modalities, and \\emph{external misalignment} the disagreement between the world model's generation and an analytic physical environment. We derive common contracts of event, magnitude, timing, and construct a physics grounded pipeline to make comparisons measurable in both external and internal settings. We then ask whether progressively supplying the model's own contract (the A ladder for the internal setting) or a corrected physical contract (the B ladder for the external setting) closes the respective gaps. Across four mechanisms and 20 settings, we find that while language answers all 22 text probes correctly with respect to the true environment, the neutral video is often in disagreement, suggesting that the current unified backbones may not be capable of correct reasoning, internal consistency, and external physical fidelity all at once.",
+    "status": "found"
+  }
+}

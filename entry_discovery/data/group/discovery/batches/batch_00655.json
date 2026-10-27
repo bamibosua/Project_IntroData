@@ -1,0 +1,426 @@
+{
+  "2608.12107": {
+    "arxiv_id": "2608.12107",
+    "title": "Avatar-Forever: Decoupled Parallel Training for High-Quality Real-Time Infinite Avatars",
+    "authors": [
+      "Ruibin Li",
+      "Zhiyuan Ma",
+      "Fangzhou Ai",
+      "Lei Zhang"
+    ],
+    "submission_date": "2026-08-12T14:29:08Z",
+    "latest_updated": "2026-10-09T03:04:08Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.12107v1",
+      "2608.12107v2"
+    ],
+    "abstract": "Existing streaming video systems often rely on sequential, distillation-centered training pipelines to enable few-step long-video generation. However, this paradigm suffers from two limitations. First, failures or distribution shifts introduced in earlier stages affect later optimization, complicating the training process to converge. Second, the distillation-centric objective favours short-term generation but is prone to quality degradation when autoregressive errors accumulate over long rollouts. We propose Avatar-Forever, a decoupled parallel training framework for high-quality real-time infinite interactive avatars. Instead of coupling generation efficiency and long-horizon robustness under a sequential distillation pipeline, we treat them as two independent capabilities that can be trained in parallel. One branch performs full-parameter distillation to train an efficient generator with high visual quality, while another trains a lightweight long-horizon adapter via Recovery-oriented Rollout Training (RRT), which improves generation robustness under long-horizon inference conditions. Our decoupled parallel training design simplifies the overall training process and avoids unnecessary objective conflicts between few-step generation and long-horizon adaptation. We further introduce ForeverCache, a chunk-wise feature caching mechanism to substantially reduce redundant history computation during streaming inference. Built upon a 22B video foundation model, Avatar-Forever supports unbounded audio-driven avatar generation while maintaining identity consistency, motion coherence, and visual fidelity, enabling an end-to-end throughput of high-resolution 768x512 videos at 27.2 FPS on a single H100 GPU and providing a practical path toward stable digital humans.",
+    "status": "found"
+  },
+  "2608.12108": {
+    "arxiv_id": "2608.12108",
+    "title": "Beyond Parameter Space: NTK-Guided Personalized Aggregation for Robust Federated Learning",
+    "authors": [
+      "Mirko Konstantin",
+      "Stefan Zachow",
+      "Anirban Mukhopadhyay"
+    ],
+    "submission_date": "2026-08-12T14:29:43Z",
+    "latest_updated": "2026-08-13T07:52:16Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.12108v1",
+      "2608.12108v2"
+    ],
+    "abstract": "Federated learning (FL) enables collaborative model training across distributed clients while keeping data local. A central challenge is determining which client updates are beneficial for aggregation with respect to each client's target domain. Existing methods typically address this problem in parameter space by comparing model parameters or gradients. However, parameter-space similarity can be a poor proxy for predictive behavior, especially under heterogeneous, non-IID data. Consequently, updates that are misaligned with a client's target domain, including those caused by heterogeneous data or malfunctioning clients, may degrade local model performance. We propose Local Inference Guided Aggregation for Heterogeneous Training Environments to Yield Enhancement Through Agreement and Regularization (LIGHTYEAR), a federated learning framework that performs update selection in function space. LIGHTYEAR uses an NTK-based agreement score to characterize predictive behavior and determine a personalized aggregation set for each client. By relating model parameters to local predictive responses, the Neural Tangent Kernel (NTK) provides a more expressive criterion for update selection than parameter-space similarity alone. Because function-space information is not available before aggregation in conventional centralized FL, LIGHTYEAR uses a peer-to-peer (P2P) topology in which clients exchange updates directly and evaluate incoming models on private validation data. Each client selects only updates that are beneficial for its own target domain and aggregates them using a regularized rule that improves stability under heterogeneity. Across five datasets and nine baseline methods, LIGHTYEAR consistently outperforms centralized FL baselines and existing P2P approaches.",
+    "status": "found"
+  },
+  "2608.12109": {
+    "arxiv_id": "2608.12109",
+    "title": "On the Convergence Rate Lower Bound of Biochemical Computational Modules",
+    "authors": [
+      "Yuzhen Fan",
+      "Chuanhou Gao",
+      "Shibo He",
+      "Jiming Chen"
+    ],
+    "submission_date": "2026-08-12T14:30:36Z",
+    "latest_updated": "2026-08-14T02:19:34Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.12109v1",
+      "2608.12109v2"
+    ],
+    "abstract": "Biochemical reaction networks have become a central theoretical framework for implementing molecular computation. A key challenge is finite time computational accuracy, as computation outputs are encoded in limiting steady states (LSSs) of species concentrations while practical implementations operate for only finite time. This work proposes a concise characterization of convergence rate for biochemical computational modules with multiple output species, and rigorously establishes it as being bounded by the eigenvalue with largest (least negative) real part of the Jacobian matrix. Two numerical examples illustrate how the theoretical lower bound shapes the convergence rate range and reveals its dependence on reaction rate constants. This formulation enables systematic evaluation of biochemical computation speed and provides a practical design measure for constructing high-accuracy and error-controlled biochemical computational modules.",
+    "status": "found"
+  },
+  "2608.12110": {
+    "arxiv_id": "2608.12110",
+    "title": "Updates to WFC3/UVIS Encircled Energy Values in Select Filters",
+    "authors": [
+      "Anne O'Connor",
+      "Jennifer Mack",
+      "Varun Bajaj"
+    ],
+    "submission_date": "2026-08-12T14:31:46Z",
+    "latest_updated": "2026-08-12T14:31:46Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12110v1"
+    ],
+    "abstract": "We present updated encircled energy (EE) curves for a subset of UVIS filters. These are derived from a reanalysis of the drizzled Point Spread Function (PSF) data underlying the current EE calibration together with new measurements from deep observations of the PSF wings. Improved centroiding and analysis techniques applied to the drizzled PSFs produce more accurate EE values at small radii ($r \\le 10$ pixels), bringing the results into closer agreement with a large archival PSF study (Huynh et al. 2025). At large radii, we leverage deep observations of the PSF wings in six filters and compare the fraction of light between 2\" and 6\" with predictions from an optical model of the PSF (Hartig 2009). For filters with pivot wavelengths $ \\gtrsim{4000} \\mathrm{\\mathring{A}}$, the model agrees with the empirical data, but over-estimates the EE for UV filters by $\\sim0.5$% at 2\". The revised EE solutions affect the UVIS zeropoints, which are derived from aperture photometry in a 0.4\" (10 pixel) radius and corrected to 6\" using EE tables (Calamida et al. 2022). Overall, the impact is small; the EE at 0.4\" is larger by $ \\gtrsim{0.5}$ % (0.005 mag) for several filters (F218W, F225W, F275W, F775W, F814W, F845M), especially for UVIS2. In contrast, the EE value is generally smaller at 0.4\" for long-pass filters (F200LP, F350LP, F850LP), with F850LP differing by $\\sim2 $ % (0.02 mag). Updated EE tables will be delivered together with a revised set of UVIS inverse sensitivity tables and zeropoints later in 2026. In the interim, we provide EE tables for commonly used filters in Appendix A.",
+    "status": "found"
+  },
+  "2608.12111": {
+    "arxiv_id": "2608.12111",
+    "title": "The Advective Fisher-Rao Geometry of Deterministic Measure Transport",
+    "authors": [
+      "Benjamin Gess",
+      "Johannes Müller"
+    ],
+    "submission_date": "2026-08-12T14:32:31Z",
+    "latest_updated": "2026-08-12T14:32:31Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12111v1"
+    ],
+    "abstract": "A novel advective Fisher-Rao metric is introduced for optimization tasks on paths of probability measures governed by the continuity equation. This metric is shown to lead to optimal descent directions. It is then shown that this metric arises naturally from three different perspectives: As the rescaled zero-noise limit of the Fisher-Rao metric on path measures, as the expected value of the second variation of the Freidlin--Wentzell large deviation rate functional, and as the Hessian of the Benamou--Brenier action functional from dynamic optimal transport. We supplement this geometric construction with computational experiments. Here, we demonstrate empirically that the advective Fisher-Rao metric yields the desired optimal fitting of probability densities, whereas the Gauss--Newton method yields optimal fitting of velocity fields.",
+    "status": "found"
+  },
+  "2608.12112": {
+    "arxiv_id": "2608.12112",
+    "title": "Well-posedness and passivity for a class of bilinear control systems",
+    "authors": [
+      "Abdelhakim Dahmani",
+      "Hannes Gernandt",
+      "René Hosfeld",
+      "Timo Reis",
+      "Tolgahan Tasci"
+    ],
+    "submission_date": "2026-08-12T14:32:39Z",
+    "latest_updated": "2026-08-12T14:32:39Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12112v1"
+    ],
+    "abstract": "We study an abstract class of bilinear infinite-dimensional systems that arises in various applications, including district heating systems and quantum control. First, we analyze the existence of mild and classical solutions for abstract bilinear systems with admissible input operators in Banach spaces and study continuous dependence on the data. When the underlying space is a Hilbert space, these results are used to show passivity for a suitably defined co-located output and for mild solutions. The results are applied to the bilinear Schrödinger equation, the Fokker--Planck equation, and a district heating or cooling pipe.",
+    "status": "found"
+  },
+  "2608.12113": {
+    "arxiv_id": "2608.12113",
+    "title": "Structuring the Space of Perspectives",
+    "authors": [
+      "Agnese Daffara",
+      "Sebastian Padó",
+      "Tanise Ceron"
+    ],
+    "submission_date": "2026-08-12T14:32:51Z",
+    "latest_updated": "2026-08-12T14:32:51Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12113v1"
+    ],
+    "abstract": "The same event can be reported from different perspectives depending on the experiences, background, and beliefs of the writer or speaker. A variety of NLP areas engage with perspectives, spanning from text analysis to algorithm optimization. A wide range of operative concepts (such as stances, sentiment, frames, and arguments) has been used to capture perspectives in texts, however the precise relationships among those concepts remain unclear. Arguably, a deeper theoretical understanding of these concepts would empower more effective research on perspectives. In this paper, we address this gap by reviewing the space of perspectives in NLP and defining a set of properties that help distinguishing perspective-related concepts. Our analysis leads us to posit a hierarchy which organizes these concepts linearly along a single axis. Finally, we show how this principled conceptual hierarchy can help researchers navigate the field and select operationalizations of perspective that align with their specific research objectives.",
+    "status": "found"
+  },
+  "2608.12114": {
+    "arxiv_id": "2608.12114",
+    "title": "The Ingestion Tax: Adopting File-Backed Weights in Tensor Frameworks",
+    "authors": [
+      "Yuan Si",
+      "Yufeng Lin",
+      "Daming Li",
+      "Jialu Zhang"
+    ],
+    "submission_date": "2026-08-12T14:35:21Z",
+    "latest_updated": "2026-08-30T05:39:15Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.12114v1",
+      "2608.12114v2"
+    ],
+    "abstract": "Open-weight models can occupy a middle capacity regime: active weights fit in DRAM as cached file pages, but a second framework-owned copy does not fit or must be refilled as layers run, so low-batch decode rereads the weights every token. On integrated and coherent-memory systems those file pages are already GPU-readable, yet ordinary loading paths copy them into framework allocations before use. We call this copy the ingestion tax. We present file-backed weight adoption: a framework-independent producer maps each tensor with MAP_SHARED, wraps the pages as a no-copy GPU buffer, and exports a DLPack capsule that PyTorch or MLX imports as ordinary storage. Zero-copy import alone is insufficient: the implementation must also keep activations accelerator-resident and establish ordering on the GPU; an adopter that omits both runs a dense decode stage 2.3x slower than stock in the live system. With both in place, adoption removes the tax: the public route reaches 516 GB/s versus 53-82 for the default constructors, matches the identical kernel over resident storage ([-0.66%, +0.48%], paired), and is within 1.3% of a resident control on a matched Qwen2.5-72B (7.14 vs. 7.23 tok/s). At the same throughput, the weights remain clean, shared, evictable file pages: N processes decode from one mapped copy where resident loading creates N copies (at capacity, 5.5 vs. 0.08 tok/s), and a 65 GB checkpoint cuts time to first token by 6.4x versus stock loading. In Kimi K3, a 2.8T-parameter MoE, the dense int8 spine stage falls from 2.62 to 0.35 s per token (7.5x; 3.8x from storage alone). The same mechanism improves llama.cpp by 1.21x at half the footprint on an AMD APU, falls inside the 5% selection band of overlapped streaming on a capacity-exceeding GH200 workload, and is 39x slower across PCIe. The deployment rule follows memory topology: adopt file pages only where the GPU can already read them.",
+    "status": "found"
+  },
+  "2608.12115": {
+    "arxiv_id": "2608.12115",
+    "title": "Going in Circles: Collaborative Multi-Robot Treasure Hunting",
+    "authors": [
+      "Bogumil Kaminski",
+      "Pawel Pralat",
+      "Maria Sadza"
+    ],
+    "submission_date": "2026-08-12T14:35:21Z",
+    "latest_updated": "2026-08-12T14:35:21Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12115v1"
+    ],
+    "abstract": "This paper investigates a multi-robot search-and-visit problem involving $n$ robots starting at the origin and $k$ unknown treasures hidden on the unit circle $\\mathcal{C}$. The robots move independently anywhere in the plane with a maximum speed of 1 and instantly share discovery information. The goal is to determine an algorithm that minimizes the total time needed for all robots to individually visit every treasure. To establish the foundational limits of this task, we first solve an auxiliary optimal routing problem for a single robot on $\\mathcal{C}$ that possesses complete prior knowledge of the treasure locations. The exact analysis of this auxiliary problem yields explicit upper and lower bounds for the original search problem.",
+    "status": "found"
+  },
+  "2608.12116": {
+    "arxiv_id": "2608.12116",
+    "title": "CIBER $\\times$ galaxy cross-correlations reveal a bright, low-redshift NIR background",
+    "authors": [
+      "Richard M. Feder",
+      "Grigory Heaton",
+      "James J. Bock",
+      "Yun-Ting Cheng",
+      "Yi-Kuan Chiang",
+      "Phillip M. Korngut",
+      "Shuji Matsuura",
+      "Jordan Mirocha",
+      "Kohji Tsumura",
+      "Michael Zemcov"
+    ],
+    "submission_date": "2026-08-12T14:36:23Z",
+    "latest_updated": "2026-08-12T14:36:23Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12116v1"
+    ],
+    "abstract": "We perform the first tomographic analysis of near-IR extragalactic background light (EBL) anisotropies, cross-correlating CIBER 1.1 and 1.8 $μ$m imager data with photometric galaxy catalogs from DESI Legacy Survey DR8 and Hyper-Suprime-Cam Ultra-Deep Survey. We measure significantly higher cross-power than expectations from an integrated galaxy light (IGL) model on scales $\\ell < 2000$, concentrated at low redshift ($z\\lesssim 0.6$). Cluster member galaxies and associated structure account for 15-20\\% of the large-angle cross-power, indicating that group- and galaxy-scale halos contribute the bulk of the signal. Through a parametric halo model decomposition, we detect two-halo and one-halo clustering in cross-power at high significance, with amplitudes that decline smoothly across $z=0{-}1$. The inferred one-halo cross-power is of similar amplitude between DESI-LS and the deeper HSC catalog, implying a scenario in which low-redshift EBL fluctuations are amplified by contributions from lower-mass halos with satellites and/or diffuse intra-halo light (IHL). Converting our two-halo fits into estimates of $b_I \\times dI/dz$, we find that standard IGL predictions underestimate our measurements, even when assuming an intensity bias as high as 3, similar to that of large SZ clusters, suggesting that a higher $dI/dz$ is required to reconcile observed discrepancies. Lastly, we find that correlated large-scale structure (LSS) at $z<1$ accounts for a substantial fraction of the CIBER auto-power reported in earlier work. These results identify low-redshift LSS as a significant and previously unappreciated contributor to near-IR EBL fluctuation measurements, setting the stage for cross-correlation science with CIBER-2, SPHEREx and a variety of LSS tracers.",
+    "status": "found"
+  },
+  "2608.12117": {
+    "arxiv_id": "2608.12117",
+    "title": "Attractor Image-Based Deep Learning of Arterial Pulse Waves for Age Classification",
+    "authors": [
+      "Sara Vardanega",
+      "Patrick Segers",
+      "Philip Aston",
+      "Ernst Rietzschel",
+      "Jordi Alastruey",
+      "Manasi Nandi"
+    ],
+    "submission_date": "2026-08-12T14:39:41Z",
+    "latest_updated": "2026-08-12T14:39:41Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12117v1"
+    ],
+    "abstract": "Arterial pulse waveform morphology evolves with age, reflecting structural and functional changes in the cardiovascular system. Thus, vascular age is a valuable surrogate marker of cardiovascular health, and premature vascular ageing can indicate increased disease risk. Pulse wave analysis could support risk stratification in otherwise asymptomatic adults. We transformed pulse wave time-series data from photoplethysmography (PPG) and arterial tonometry into images, using the Symmetric Projection Attractor Reconstruction (SPAR) method. These SPAR images were used to train a convolutional neural network to classify healthy subjects into two closely spaced age groups (35-40 and 50-55 years). The model demonstrated consistent classification performance across internal and external test sets, achieving F1 scores above 70% for both PPG and tonometry signals. These results suggest that SPAR-derived pulse wave images contain discriminative morphological features even among healthy adults close in age. This proof-of-concept lays the groundwork for future research into the use of SPAR for early risk detection using smart wearables.",
+    "status": "found"
+  },
+  "2608.12118": {
+    "arxiv_id": "2608.12118",
+    "title": "Quasi-real photons as a probe of exotic nuclei",
+    "authors": [
+      "Takashi Nakamura",
+      "Carlos A. Bertulani"
+    ],
+    "submission_date": "2026-08-12T14:39:50Z",
+    "latest_updated": "2026-08-12T14:39:50Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12118v1"
+    ],
+    "abstract": "Coulomb excitation is an inelastic process in which either the target or the projectile is excited by the Coulomb interaction, which can equivalently be described as the absorption of a virtual photon. We discuss Coulomb excitation at relativistic energies, with particular emphasis on Coulomb dissociation, in which an excited projectile subsequently breaks up.",
+    "status": "found"
+  },
+  "2608.12119": {
+    "arxiv_id": "2608.12119",
+    "title": "Macroscopic fluctuation theory for the multi-time statistics of current in non-stationary diffusive systems",
+    "authors": [
+      "Sabyasachi Chowdhury",
+      "Kapil Sharma",
+      "Sandeep Jangid",
+      "Tridib Sadhu"
+    ],
+    "submission_date": "2026-08-12T14:40:09Z",
+    "latest_updated": "2026-08-12T14:40:09Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12119v1"
+    ],
+    "abstract": "The statistics of current fluctuations has long been a central object of study in non-equilibrium physics. Most existing work has focused on one-time statistics, while their multi-time generalisation remains comparatively less explored. We address this gap by extending the fluctuating hydrodynamics framework of Macroscopic Fluctuation Theory (MFT) to study multi-time statistics in the non-stationary state of a diffusive system on an infinite line. For the simplest cases of a non-interacting lattice gas and hard-core Brownian point particles, we present explicit solution of the MFT leading to multi-time large-deviation statistics. For generic systems, the MFT is solved perturbatively, yielding explicit results for two-time correlations. These reveal that the connection between current fluctuations and fractional Brownian motion, previously observed for flat initial conditions, does not persist for step initial conditions. We independently verify these hydrodynamic results by solving the corresponding microscopic dynamics for the non-interacting gas and for the symmetric simple exclusion process. Additional confirmation comes from numerical simulations.",
+    "status": "found"
+  },
+  "2608.12120": {
+    "arxiv_id": "2608.12120",
+    "title": "Spatial Entanglement Entropy in Nuclear Fission",
+    "authors": [
+      "S. C. Li",
+      "J. W. Chen",
+      "J. C. Pei"
+    ],
+    "submission_date": "2026-08-12T14:40:39Z",
+    "latest_updated": "2026-08-12T14:40:39Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12120v1"
+    ],
+    "abstract": "Nuclear fission provides a unique manifestation of spatially nonlocal many-body entanglement. We compute the bipartite spatial entanglement entropy exactly along dynamical fission trajectories, by leveraging the fermionic Gaussian state formulation. Across seven representative fissioning channels, the final entanglement entropy correlates strongly with the intrinsic particle number variance of the fragment, yet exhibits no simple dependence on scission geometries. Most notably the entanglement is significantly suppressed when fragments are magic nuclei, revealing a shell anti-entanglement effect. This work establishes entanglement entropy as a novel lens that extends the conventional conception of nuclear fission.",
+    "status": "found"
+  },
+  "2608.12121": {
+    "arxiv_id": "2608.12121",
+    "title": "QV-PIC: Query-Aware Visual Position-Independent Caching for Efficient RAG Serving",
+    "authors": [
+      "Yilin Liu",
+      "Rui Meng",
+      "Wangze Ni",
+      "Jianxin Yan",
+      "Heng Cao",
+      "Libin Zheng",
+      "Peng Cheng",
+      "Jinfei Liu"
+    ],
+    "submission_date": "2026-08-12T14:40:43Z",
+    "latest_updated": "2026-08-12T14:40:43Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12121v1"
+    ],
+    "abstract": "Retrieval-Augmented Generation (RAG) repeatedly prefills identical text chunks across queries, incurring redundant computations. Position-Independent Caching (PIC) mitigates it by reusing precomputed Key-Value (KV) across positions, but its efficiency is constrained by the large volume of text tokens. Rendering text chunks as images can compress the text into fewer visual tokens, but the rendered-image PIC suffers more severe quality degradation than the text PIC. This representation-specific gap primarily arises from contextual mismatches across independently compiled caches and the loss of fine-grained textual evidence during visual compression. Existing PIC repair methods mainly address the former through selective recomputation, but they incur online computation and cannot recover lost textual details. We propose QV-PIC, a query-aware dual-resolution PIC reuse framework guided by model-native templates. Offline, QV-PIC compiles visual caches under the model's native chat-template prefix, improving PIC quality without online recomputation. Online, it preserves global context with low resolution and restores fine-grained textual evidence within a high-resolution budget by cumulative query relevance scores, retaining the efficiency benefit of visual compression. Across six tasks, QV-PIC improves average F1 by 21.6 points over vanilla rendered-image PIC, closes the gap to vanilla text PIC, and surpasses optimized text PIC by 2.58 F1 while reducing TTFT by 17.2\\%. Relative to full prefill, it cuts TTFT by 83.8%.",
+    "status": "found"
+  },
+  "2608.12122": {
+    "arxiv_id": "2608.12122",
+    "title": "HandEdit: A Unified Benchmark for Egocentric Human-to-Robot Dexterous Hand Image Editing",
+    "authors": [
+      "Zhenjie Yang",
+      "Xingyu Jiao",
+      "Guopeng Zhong",
+      "Shuzhe Yang",
+      "Shi Che",
+      "Chao Wu",
+      "Chenyu Jiang",
+      "Dongjie Zhang",
+      "Yideng Zhang",
+      "Zheng Zhang",
+      "Muyun Jiang",
+      "Haisheng Su",
+      "Shuang Jin",
+      "Donghang Zhang",
+      "Chao Yang",
+      "Li Chen",
+      "Hongyang Li",
+      "Zuxuan Wu",
+      "Yu-Gang Jiang",
+      "Xiaosong Jia",
+      "Junchi Yan"
+    ],
+    "submission_date": "2026-08-12T14:41:53Z",
+    "latest_updated": "2026-08-12T14:41:53Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12122v1"
+    ],
+    "abstract": "Robotic manipulation with dexterous hands is a cornerstone of Embodied AI, yet its progress is stifled by the high cost of collecting embodiment-aware teleoperation data. While abundant egocentric videos of human hands offer a scalable alternative, the profound discrepancies in appearance, articulation, and camera viewpoints between human and robotic data raise significant challenges for co-training. Though existing general image-editing models demonstrate strong capabilities, they lack necessary embodiment-specific priors to fully bridge this gap. In this work, we present HandEdit, a unified large-scale embodiment-aware image-editing dataset and benchmark specifically designed to transform human hands and arms into various dexterous robotic embodiments within egocentric frames. HandEdit comprises over 200M editing instances derived from five diverse source datasets, covering 26 distinct URDFs, including 13 hand-only and 13 hand-arm configurations. Alongside the dataset, we establish a unified benchmark protocol with two tracks: Hand-only and Hand-Arm, supporting URDF-conditioned evaluation. We conduct extensive evaluations of 11 representative image-editing baselines using a multi-dimensional metric suite, including generic similarity metrics, VLM-based judgment, and embodiment-aware metrics. HandEdit serves as a critical resource at the intersection of image editing and robotics: it advances embodiment-aware editing models while enabling scalable dexterous robotic learning from abundant human video data, paving the way for more generalizable Embodied AI.",
+    "status": "found"
+  },
+  "2608.12123": {
+    "arxiv_id": "2608.12123",
+    "title": "Ready Cohorts: Bounding GPU Opportunity and Avoiding Host Round Trips in LLM-Agent Control",
+    "authors": [
+      "Josef Liyanjun Chen"
+    ],
+    "submission_date": "2026-08-12T14:42:15Z",
+    "latest_updated": "2026-09-12T22:20:33Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.12123v1",
+      "2608.12123v2"
+    ],
+    "abstract": "We introduce a mechanism that improves LLM-agent execution: keeping four-byte, GPU-computed control-path routing decisions on-device, avoiding a round-trip to host memory for redispatch. It is faster than host-dispatch in all 36 placements x mechanisms settings in our benchmark across four named GPUs with row-median speedup of 1.19x-2.39x, and outputs are correct, matching an independent host implementation, for all 14,557,440 calls in all configurations, in both tested mechanisms. Agent control paths can be deterministic. Their transitions between LLM calls and external tool calls can be GPU-accelerated by batching across agents and time. We define a cohort of transitions with launch times in a window, and study four shares of GPU-active time: a fixed-partition baseline F, an optimal P*, an upper bound U, and an online result A. Under assumptions of uniform relative launch deadlines, infinite capacity, and zero service times, we compute P* with a custom dynamic program and validate our simulator against it. We replay an anonymized 851-session trace, shown in full as a panel, stationary-ized with a Poisson process. With 100,000 target active agents and a launch deadline of 50 ms, where the headline results have K=256, we find F=30.19%, P*=43.00%, U=45.85%; our method for computing P* reveals that 81.83% of this opportunity is recoverable from cohort packing at fixed window ends. Our method for U relies on a novel notion of route-key, used only as a proxy (via conditional statistics) and does not purport to establish route-equivalence. We find a nested graph that retains some host-side decisions slower in all 60 configurations (five placements).",
+    "status": "found"
+  },
+  "2608.12124": {
+    "arxiv_id": "2608.12124",
+    "title": "Two routes to quantum anomalous Hall states in altermagnets",
+    "authors": [
+      "Makoto Naka",
+      "Shuntaro Sumita",
+      "Yukitoshi Motome",
+      "Hitoshi Seo"
+    ],
+    "submission_date": "2026-08-12T14:42:18Z",
+    "latest_updated": "2026-08-12T14:42:18Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12124v1"
+    ],
+    "abstract": "We theoretically propose two possible routes to realizing quantum anomalous Hall states in altermagnetic materials. We consider a minimal square-lattice Hubbard model with antisymmetric spin-orbit coupling associated with an orthorhombic crystal structure, which supports a topologically trivial altermagnetic state. By incorporating Rashba-type spin-orbit coupling and external perturbations, we demonstrate that this trivial state can be turned into topological altermagnetic phases in two distinct ways. The first route is driven by a staggered potential that breaks the symmetry connecting crystallographically equivalent sublattices, leading to a topological altermagnetic ground state characterized by a quantized Hall conductivity $\\left| σ_{xy} \\right|=e^2/h$ and a Chern number $C=1$. The second route is realized by applying a magnetic field perpendicular to the two-dimensional plane. The resulting topological state appears as a metastable state in the magnetic hysteresis loop, exhibiting a quantized Hall conductivity $\\left| σ_{xy} \\right|=2e^2/h$ associated with a Chern number $C=2$. We show that these topological transitions are accompanied by characteristic gap closings at the Brillouin-zone boundary, with the number of gap-closing points determining the Chern number. Ribbon-geometry calculations reveal chiral edge states consistent with the bulk topological invariants and demonstrate distinct spin polarizations between the $C=1$ and $C=2$ states. Our results establish experimentally accessible routes to quantized anomalous Hall responses in altermagnets.",
+    "status": "found"
+  },
+  "2608.12125": {
+    "arxiv_id": "2608.12125",
+    "title": "Do LLMs Take Care of Their Own? Similarity Signals Can Induce Cooperation",
+    "authors": [
+      "Akash Kundu",
+      "Emanuel Tewolde",
+      "Ratip Emin Berker",
+      "Samuel F. Brown",
+      "Vincent Conitzer"
+    ],
+    "submission_date": "2026-08-12T14:47:15Z",
+    "latest_updated": "2026-08-12T14:47:15Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12125v1"
+    ],
+    "abstract": "As LLM-based agents with user-instructed goals are becoming widely deployed, they increasingly encounter each other in strategic interactions, and face challenges of finding mutually beneficial outcomes. Prior literature has argued that cooperation problems such as the Prisoner's Dilemma are resolvable in settings where agents know they follow very similar decision making patterns, as for example in monocultural AI ecosystems. Following that line of work, this paper introduces the first framework for evaluating LLM decision making when agents are provided with graded similarity signals. Among our findings, we establish that different LLM models vary drastically in how they navigate similarity signals, with some modern models showing consistent behavior across cooperation problems, payoff structures, and prompt framing. Perhaps surprisingly, our experiments also show that the dataset based on which the similarity signal is computed has small to no impact on induced cooperation, and that LLM models systematically self-identify as highly similar when asked to evaluate another model's chain-of-thought reasoning by themselves. Finally, we develop an LLM-behavioral-game-theoretic model that captures some of their reasoning rationale, and show that it can support cooperative outcomes in equilibrium under sufficiently high similarity scores.",
+    "status": "found"
+  },
+  "2608.12126": {
+    "arxiv_id": "2608.12126",
+    "title": "Two Relaxations of the Dominating Hadwiger's Conjecture",
+    "authors": [
+      "António Girão",
+      "Sergey Norin",
+      "Youri Tamitegama",
+      "Jane Tan"
+    ],
+    "submission_date": "2026-08-12T14:47:56Z",
+    "latest_updated": "2026-08-12T14:47:56Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12126v1"
+    ],
+    "abstract": "Illingworth and Wood recently proposed the Dominating Hadwiger's Conjecture, a strengthening of Hadwiger's Conjecture which asserts that every graph with no dominating $K_t$-model is $(t-1)$-colorable. We prove two relaxations of this conjecture. First, we show that every graph with average degree $Ct (\\log t)^2$ contains a dominating $K_t$-model for some absolute constant $C$. This bound improves on the $2^{t-2}$ due to Illingworth and Wood and is within an $O(\\log t)$ factor from optimal. Second, we prove that the vertices of every graph with no dominating $K_t$-model can be partitioned into $t-1$ parts such that the subgraph induced by each part has bounded maximum degree.",
+    "status": "found"
+  }
+}

@@ -1,0 +1,446 @@
+{
+  "2511.16669": {
+    "arxiv_id": "2511.16669",
+    "title": "Video-as-Answer: Predict and Generate Next Video Event with Joint-GRPO",
+    "authors": [
+      "Junhao Cheng",
+      "Liang Hou",
+      "Xin Tao",
+      "Jing Liao"
+    ],
+    "submission_date": "2025-11-20T18:59:44Z",
+    "latest_updated": "2025-11-23T15:27:38Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.16669v1",
+      "2511.16669v2"
+    ],
+    "abstract": "While language models have become impactful in many real-world applications, video generation remains largely confined to entertainment. Motivated by video's inherent capacity to demonstrate physical-world information that is difficult to convey through language alone (e.g., imagine teaching someone to tie a tie using only text), we identify an underutilized opportunity to extend video as a new answer modality for Next-Event Prediction (NEP), formalized as Video-Next-Event Prediction (VNEP). While the established NEP task takes a video with a procedural or predictive question as input to predict the next event in text, VNEP requires dynamic video responses. This shift from telling to showing unlocks more intuitive and customized answers for procedural learning and creative exploration. However, this task remains challenging for existing models, as it demands an understanding of multimodal input, instruction-conditioned reasoning, and the generation of video with visual and semantic consistency. To address this, we introduce VANS, a model that leverages reinforcement learning to align a Vision-Language Model (VLM) with a Video Diffusion Model (VDM) for VNEP. The core of VANS is our proposed Joint-GRPO that orchestrates the VLM and VDM to function as a unit. Driven by a shared reward on their respective output, it optimizes the VLM to produce captions that are both accurate and friendly to visualize, while guiding the VDM to generate videos that are faithful to these captions and the input visual context. To enable this learning, we craft VANS-Data-100K, a dedicated dataset for the VNEP task. Experiments on procedural and predictive benchmarks demonstrate that VANS achieves state-of-the-art performance in both video event prediction and visualization. Codes are released in https://github.com/KlingTeam/VANS.",
+    "status": "found"
+  },
+  "2511.16670": {
+    "arxiv_id": "2511.16670",
+    "title": "Learning to Think Fast and Slow for Visual Language Models",
+    "authors": [
+      "Chenyu Lin",
+      "Cheng Chi",
+      "Jinlin Wu",
+      "Sharon Li",
+      "Kaiyang Zhou"
+    ],
+    "submission_date": "2025-11-20T18:59:48Z",
+    "latest_updated": "2026-03-08T14:37:52Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.16670v1",
+      "2511.16670v2"
+    ],
+    "abstract": "When faced with complex problems, we tend to engage in slower, more deliberate thinking. In contrast, for simple questions we give quick, intuitive responses. This dual-system thinking approach allows us to allocate cognitive resources efficiently, reserving deeper analytical effort for tasks that truly require it. However, existing reasoning-oriented visual language models (VLMs) are mostly trained to generate uniformly long reasoning, leading to substantial token waste when concise answers would suffice. In this paper, we observe that pre-trained, general-purpose VLMs manifest variations in response length for different question types, e.g., longer reasoning for math questions while shorter on perception problems. Different from existing work that overrides this prior by stimulating long reasoning without considering the problem complexity, we propose to leverage this prior to develop an explicit dual-mode thinking mechanism. Specifically, we anchor each training instance to either a fast or slow thinking prefix consistent with the model's natural response length tendency. Then, GRPO is adapted to learning dual-system thinking, enabling both autonomous and manual thinking mode selection. Extensive experiments across a wide variety of visual reasoning benchmarks demonstrate that our model, named DualMindVLM, significantly outperforms the base model and achieves state-of-the-art reasoning performance while maintaining high token efficiency.",
+    "status": "found"
+  },
+  "2511.16671": {
+    "arxiv_id": "2511.16671",
+    "title": "Thinking-while-Generating: Interleaving Textual Reasoning throughout Visual Generation",
+    "authors": [
+      "Ziyu Guo",
+      "Renrui Zhang",
+      "Hongyu Li",
+      "Manyuan Zhang",
+      "Xinyan Chen",
+      "Sifan Wang",
+      "Yan Feng",
+      "Peng Pei",
+      "Pheng-Ann Heng"
+    ],
+    "submission_date": "2025-11-20T18:59:52Z",
+    "latest_updated": "2025-11-20T18:59:52Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.16671v1"
+    ],
+    "abstract": "Recent advances in visual generation have increasingly explored the integration of reasoning capabilities. They incorporate textual reasoning, i.e., think, either before (as pre-planning) or after (as post-refinement) the generation process, yet they lack on-the-fly multimodal interaction during the generation itself. In this preliminary study, we introduce Thinking-while-Generating (TwiG), the first interleaved framework that enables co-evolving textual reasoning throughout the visual generation process. As visual content is progressively generating, textual reasoning is interleaved to both guide upcoming local regions and reflect on previously synthesized ones. This dynamic interplay produces more context-aware and semantically rich visual outputs. To unveil the potential of this framework, we investigate three candidate strategies, zero-shot prompting, supervised fine-tuning (SFT) on our curated TwiG-50K dataset, and reinforcement learning (RL) via a customized TwiG-GRPO strategy, each offering unique insights into the dynamics of interleaved reasoning. We hope this work inspires further research into interleaving textual reasoning for enhanced visual generation. Code will be released at: https://github.com/ZiyuGuo99/Thinking-while-Generating.",
+    "status": "found"
+  },
+  "2511.16672": {
+    "arxiv_id": "2511.16672",
+    "title": "EvoLMM: Self-Evolving Large Multimodal Models with Continuous Rewards",
+    "authors": [
+      "Omkar Thawakar",
+      "Shravan Venkatraman",
+      "Ritesh Thawkar",
+      "Abdelrahman Shaker",
+      "Hisham Cholakkal",
+      "Rao Muhammad Anwer",
+      "Salman Khan",
+      "Fahad Khan"
+    ],
+    "submission_date": "2025-11-20T18:59:54Z",
+    "latest_updated": "2026-06-09T22:19:41Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 4,
+    "versions": [
+      "2511.16672v1",
+      "2511.16672v2",
+      "2511.16672v3",
+      "2511.16672v4"
+    ],
+    "abstract": "Recent advances in large multimodal models (LMMs) have enabled impressive reasoning and perception abilities, yet most existing training pipelines still depend on human-curated data or externally verified reward models, limiting their autonomy and scalability. In this work, we strive to improve LMM reasoning capabilities in a purely unsupervised fashion (without any annotated data or reward distillation). To this end, we propose a self-evolving framework, named EvoLMM, that instantiates two cooperative agents from a single backbone model: a Proposer, which generates diverse, image-grounded questions, and a Solver, which solves them through internal consistency, where learning proceeds through a continuous self-rewarding process. This dynamic feedback encourages both the generation of informative queries and the refinement of structured reasoning without relying on ground-truth or human judgments. When using the popular Qwen2.5-VL as the base model, our EvoLMM yields consistent gains upto $\\sim$3\\% on multimodal math-reasoning benchmarks, including ChartQA, MathVista, and MathVision, using only raw training images. We hope our simple yet effective approach will serve as a solid baseline easing future research in self-improving LMMs in a fully-unsupervised fashion. Our code and models are available at https://github.com/mbzuai-oryx/EvoLMM.",
+    "status": "found"
+  },
+  "2511.16673": {
+    "arxiv_id": "2511.16673",
+    "title": "NoPo-Avatar: Generalizable and Animatable Avatars from Sparse Inputs without Human Poses",
+    "authors": [
+      "Jing Wen",
+      "Alexander G. Schwing",
+      "Shenlong Wang"
+    ],
+    "submission_date": "2025-11-20T18:59:54Z",
+    "latest_updated": "2025-11-20T18:59:54Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.16673v1"
+    ],
+    "abstract": "We tackle the task of recovering an animatable 3D human avatar from a single or a sparse set of images. For this task, beyond a set of images, many prior state-of-the-art methods use accurate \"ground-truth\" camera poses and human poses as input to guide reconstruction at test-time. We show that pose-dependent reconstruction degrades results significantly if pose estimates are noisy. To overcome this, we introduce NoPo-Avatar, which reconstructs avatars solely from images, without any pose input. By removing the dependence of test-time reconstruction on human poses, NoPo-Avatar is not affected by noisy human pose estimates, making it more widely applicable. Experiments on challenging THuman2.0, XHuman, and HuGe100K data show that NoPo-Avatar outperforms existing baselines in practical settings (without ground-truth poses) and delivers comparable results in lab settings (with ground-truth poses).",
+    "status": "found"
+  },
+  "2511.16674": {
+    "arxiv_id": "2511.16674",
+    "title": "Dataset Distillation for Pre-Trained Self-Supervised Vision Models",
+    "authors": [
+      "George Cazenavette",
+      "Antonio Torralba",
+      "Vincent Sitzmann"
+    ],
+    "submission_date": "2025-11-20T18:59:57Z",
+    "latest_updated": "2025-11-20T18:59:57Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.16674v1"
+    ],
+    "abstract": "The task of dataset distillation aims to find a small set of synthetic images such that training a model on them reproduces the performance of the same model trained on a much larger dataset of real samples. Existing distillation methods focus on synthesizing datasets that enable training randomly initialized models. In contrast, state-of-the-art vision approaches are increasingly building on large, pre-trained self-supervised models rather than training from scratch. In this paper, we investigate the problem of distilling datasets that enable us to optimally train linear probes on top of such large, pre-trained vision models. We introduce a method of dataset distillation for this task called Linear Gradient Matching that optimizes the synthetic images such that, when passed through a pre-trained feature extractor, they induce gradients in the linear classifier similar to those produced by the real data. Our method yields synthetic data that outperform all real-image baselines and, remarkably, generalize across pre-trained vision models, enabling us, for instance, to train a linear CLIP probe that performs competitively using a dataset distilled via a DINO backbone. Further, we show that our distilled datasets are exceptionally effective for fine-grained classification and provide a valuable tool for model interpretability, predicting, among other things, how similar two models' embedding spaces are under the platonic representation hypothesis or whether a model is sensitive to spurious correlations in adversarial datasets.",
+    "status": "found"
+  },
+  "2511.16675": {
+    "arxiv_id": "2511.16675",
+    "title": "Joint Design of Protein Surface and Structure Using a Diffusion Bridge Model",
+    "authors": [
+      "Guanlue Li",
+      "Xufeng Zhao",
+      "Fang Wu",
+      "Sören Laue"
+    ],
+    "submission_date": "2025-11-08T12:31:07Z",
+    "latest_updated": "2025-11-08T12:31:07Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.16675v1"
+    ],
+    "abstract": "Protein-protein interactions (PPIs) are governed by surface complementarity and hydrophobic interactions at protein interfaces. However, designing diverse and physically realistic protein structure and surfaces that precisely complement target receptors remains a significant challenge in computational protein design. In this work, we introduce PepBridge, a novel framework for the joint design of protein surface and structure that seamlessly integrates receptor surface geometry and biochemical properties. Starting with a receptor surface represented as a 3D point cloud, PepBridge generates complete protein structures through a multi-step process. First, it employs denoising diffusion bridge models (DDBMs) to map receptor surfaces to ligand surfaces. Next, a multi-model diffusion model predicts the corresponding structure, while Shape-Frame Matching Networks ensure alignment between surface geometry and backbone architecture. This integrated approach facilitates surface complementarity, conformational stability, and chemical feasibility. Extensive validation across diverse protein design scenarios demonstrates PepBridge's efficacy in generating structurally viable proteins, representing a significant advancement in the joint design of top-down protein structure.",
+    "status": "found"
+  },
+  "2511.16676": {
+    "arxiv_id": "2511.16676",
+    "title": "Fractional Artificial Neural Networks for Growth Models",
+    "authors": [
+      "Juan Carlos Najera-Tinoco",
+      "Martin P. Arciga-Alejandre",
+      "Jorge Sanchez-Ortiz",
+      "Francisco J. Ariza-Hernandez"
+    ],
+    "submission_date": "2025-11-08T20:45:25Z",
+    "latest_updated": "2025-11-08T20:45:25Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.16676v1"
+    ],
+    "abstract": "In this paper we present a method to solve initial value problems for fractional growth models, such as generalizations of the exponential and logistic with periodic harvesting models. Using a discretization of the Caputo derivative we propose a fractional artificial neural network, which is implemented in the statistical software R. Moreover, we show examples where the analytical solutions and the approximation of the artificial neural network are compared.",
+    "status": "found"
+  },
+  "2511.16677": {
+    "arxiv_id": "2511.16677",
+    "title": "Electromagnetic transients and failed upward leaders observed during lightning activity in an onshore wind farm",
+    "authors": [
+      "Franjo Vukovic",
+      "Bozidar Filipovic-Grcic",
+      "Nina Stipetic",
+      "Bojan Franc"
+    ],
+    "submission_date": "2025-11-09T20:16:49Z",
+    "latest_updated": "2025-11-09T20:16:49Z",
+    "revised_dates": null,
+    "venue": "Electric power systems research, 251 (2026), 1-10",
+    "latest_version": 1,
+    "versions": [
+      "2511.16677v1"
+    ],
+    "abstract": "At a wind farm in Croatia, lightning activity is monitored across the entire site using a lightning location system, and on a single wind turbine equipped with a Rogowski-coil-based current measurement system and a high-speed camera, all independently GPS-synchronized. In addition to recording lightning flash currents on the monitored turbine, the system is frequently triggered by electromagnetic disturbances caused by nearby lightning flashes. These include direct flashes to two neighboring turbines that share the same cable connection to the substation and have interconnected grounding systems with buried bare conductor, as well as cloud-to-ground flashes to soil near cable routes, where the resulting electromagnetic fields couple onto the cables, causing surges to propagate to the monitored turbine. The camera occasionally captures failed upward connecting leaders from the monitored turbine during these lightning events. This paper presents three cases of flashes to two neighboring wind turbines and two cases of cloud-to-ground flashes to nearby soil, all of which induced electromagnetic transients that propagated to the monitored turbine. Failed upward connecting leaders were observed in some of these cases. This paper provides observational analysis, providing Rogowski measurements of electromagnetic disturbances and failed leader currents, complemented by high-speed camera and lightning location system data.",
+    "status": "found"
+  },
+  "2511.16678": {
+    "arxiv_id": "2511.16678",
+    "title": "From Commissioning to Precision Data-Taking: Resolving Operational Challenges in the Nab Detector Systems",
+    "authors": [
+      "L. J. Broussard",
+      "H. Acharya",
+      "R. Alarcon",
+      "S. Baeßler",
+      "M. Benoit",
+      "K. Borah",
+      "C. L. Britton",
+      "E. Brown",
+      "J. Choi",
+      "S. Clymer",
+      "C. Crawford",
+      "N. Ericson",
+      "L. Fabris",
+      "N. Fomin",
+      "J. Fry",
+      "R. Godri",
+      "F. M. Gonzalez",
+      "A. Hagemeier",
+      "J. Hamblen",
+      "S. Hollander",
+      "A. Jezghani",
+      "K. Leung",
+      "N. Macsai",
+      "M. Makela",
+      "D. Mathews",
+      "P. L. McGaughey",
+      "A. Mendelsohn",
+      "J. Mirabal",
+      "P. E. Mueller",
+      "A. Nelsen",
+      "S. I. Penttilä",
+      "D. Počanić",
+      "J. C. Ramsey",
+      "K. Reed",
+      "L. Richburg",
+      "A. Saunders",
+      "W. Schreyer",
+      "A. Shelby",
+      "A. R. Young"
+    ],
+    "submission_date": "2025-11-10T17:50:26Z",
+    "latest_updated": "2025-11-10T17:50:26Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.16678v1"
+    ],
+    "abstract": "Our understanding of the weak mixing of quarks, described by the Cabibbo Kobayashi Maskawa (CKM) matrix, currently presents an anomaly. Thanks to major strides in both theory and experiment, improved precision in determinations of the first row of matrix elements has revealed disagreement with the expectation of unitarity. The Nab experiment at the Spallation Neutron Source is designed to precisely extract the first matrix element $V_{ud}$ and shed light on experimental tensions within the neutron beta decay dataset. Nab's asymmetric spectrometer allows coincident reconstruction of the decay proton and electron energies, which will be used to determine the electron-neutrino correlation coefficient, and thus (with the neutron lifetime) determine $V_{ud}$. This unique approach has provided a more comprehensive view of neutron beta decay, including a first observation of the full momentum phase space of the decay above detector thresholds and limits on exotic neutron states. Recent upgrades to the Nab detector system have improved the robustness and stability of the detector performance in terms of proton detection efficiency, noise performance, and detector segment availability, setting the stage for high precision physics data-taking.",
+    "status": "found"
+  },
+  "2511.16679": {
+    "arxiv_id": "2511.16679",
+    "title": "On the Measurability of True Coincidence Summing in the GRIFFIN Spectrometer",
+    "authors": [
+      "Liam Schmidt"
+    ],
+    "submission_date": "2025-11-10T21:45:04Z",
+    "latest_updated": "2026-02-12T22:23:22Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.16679v1",
+      "2511.16679v2"
+    ],
+    "abstract": "The measurement of gamma-rays from decaying nuclei allow for the investigation into nuclear structure. True coincidence summing occurs when two gamma-rays from a single decay get detected in a single detector and their energies sum together to give false peaks in the energy spectrum. Corrections to this summing effect are crucial for an accurate determination of nuclear decay events. The summing correction formalism of Semkow et al. is generalized here into the \\textit{Semkow matrix formalism} and is extended into a multiplicity expansion. This formalism is used to calculate the matrix probabilities for 180-degree coincidence events as a method for correcting coincidence summing; in doing so, the deviation between the full correction and this 180-degree correction is shown as a function of multiplicity. This formalism is extended to the \\textit{partitioned matrix formalism}, to calculate probabilities for \\textit{gated} gamma rays; where two gamma-rays of interest are taken in multi-detector coincidence. The summing correction probabilities for gated gamma-rays are provided and the deviation is shown in a manner similar to that of the singles. Terms such as measurability, event equivalence, and ontic and epistemic events are defined. It is shown that within these definitions, coincidence summing is not sufficiently measurable, or rather, its sufficient measurability is statistically bounded by the deviations derived.",
+    "status": "found"
+  },
+  "2511.16680": {
+    "arxiv_id": "2511.16680",
+    "title": "Shona spaCy: A Morphological Analyzer for an Under-Resourced Bantu Language",
+    "authors": [
+      "Happymore Masoka"
+    ],
+    "submission_date": "2025-11-12T09:19:49Z",
+    "latest_updated": "2025-11-12T09:19:49Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.16680v1"
+    ],
+    "abstract": "Despite rapid advances in multilingual natural language processing (NLP), the Bantu language Shona remains under-served in terms of morphological analysis and language-aware tools. This paper presents Shona spaCy, an open-source, rule-based morphological pipeline for Shona built on the spaCy framework. The system combines a curated JSON lexicon with linguistically grounded rules to model noun-class prefixes (Mupanda 1-18), verbal subject concords, tense-aspect markers, ideophones, and clitics, integrating these into token-level annotations for lemma, part-of-speech, and morphological features. The toolkit is available via pip install shona-spacy, with source code at https://github.com/HappymoreMasoka/shona-spacy and a PyPI release at https://pypi.org/project/shona-spacy/0.1.4/. Evaluation on formal and informal Shona corpora yields 90% POS-tagging accuracy and 88% morphological-feature accuracy, while maintaining transparency in its linguistic decisions. By bridging descriptive grammar and computational implementation, Shona spaCy advances NLP accessibility and digital inclusion for Shona speakers and provides a template for morphological analysis tools for other under-resourced Bantu languages.",
+    "status": "found"
+  },
+  "2511.16681": {
+    "arxiv_id": "2511.16681",
+    "title": "SPI: Query-Depth-Adaptive Indexing for Streaming RAG in Vector Databases",
+    "authors": [
+      "Dong Liu",
+      "Yanxuan Yu"
+    ],
+    "submission_date": "2025-11-12T09:31:08Z",
+    "latest_updated": "2026-06-14T04:08:31Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2511.16681v1",
+      "2511.16681v2",
+      "2511.16681v3"
+    ],
+    "abstract": "Vector databases (VecDBs) are increasingly deployed in retrieval-augmented generation (RAG) pipelines where query processing and document ingestion occur concurrently. The index layer needs to provide low-latency search while incorporating new vectors without frequent global rebuilding. Existing VecDB pipelines typically operate within a uniform representation regime, despite substantial variation in the semantic granularity required across queries. This motivates an index design that supports incremental updates while adapting retrieval depth to query distribution and complexity. We propose \\textbf{Semantic Pyramid Indexing (SPI)}, a VecDB-layer indexing framework that organizes embeddings into $L$ semantically aligned resolution levels and selects retrieval depth per query via a lightweight uncertainty-aware controller. SPI supports progressive coarse-to-fine ANN search, level-wise streaming insertion without global rebuilds, and distributed execution through LSH partitioning with asynchronous gRPC coordination. Unlike hierarchical ANN structures with fixed traversal rules (e.g., SPANN), SPI adapts resolution at query time while remaining compatible with FAISS and Qdrant backends. On MS MARCO and Natural Questions, SPI achieves competitive Recall@10 with lower latency under the same dense encoder family, yielding a \\textbf{1.4--2.3$\\times$} average retrieval latency reduction under fixed Recall@10 targets relative to comparable approximate-ANN baselines. A prototype scaling study up to 8 nodes shows $6.2\\times$ throughput scaling (${\\approx}73\\%$ efficiency); the 16-node configuration is included for completeness but shows diminishing efficiency. We provide a top-$K$ stability guarantee: queries with sufficient retrieval margin return an identical top-$K$ set at a shallower level. Code and configurations are available at https://github.com/FastLM/SPI_VecDB.",
+    "status": "found"
+  },
+  "2511.16682": {
+    "arxiv_id": "2511.16682",
+    "title": "Bench360: Benchmarking Local LLM Inference from 360 Degrees",
+    "authors": [
+      "Linus Stuhlmann",
+      "Mauricio Fadel Argerich",
+      "Jonathan Fürst"
+    ],
+    "submission_date": "2025-11-12T09:57:21Z",
+    "latest_updated": "2026-01-14T08:53:59Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.16682v1",
+      "2511.16682v2"
+    ],
+    "abstract": "Running LLMs locally has become increasingly common, but users face a complex design space across models, quantization levels, inference engines, and serving scenarios. Existing inference benchmarks are fragmented and focus on isolated goals, offering little guidance for practical deployments. We present Bench360, a framework for evaluating local LLM inference across tasks, usage patterns, and system metrics in one place. Bench360 supports custom tasks, integrates multiple inference engines and quantization formats, and reports both task quality and system behavior (latency, throughput, energy, startup time). We demonstrate it on four NLP tasks across three GPUs and four engines, showing how design choices shape efficiency and output quality. Results confirm that tradeoffs are substantial and configuration choices depend on specific workloads and constraints. There is no universal best option, underscoring the need for comprehensive, deployment-oriented benchmarks.",
+    "status": "found"
+  },
+  "2511.16683": {
+    "arxiv_id": "2511.16683",
+    "title": "How Well Do LLMs Understand Tunisian Arabic?",
+    "authors": [
+      "Mohamed Mahdi"
+    ],
+    "submission_date": "2025-11-12T15:23:41Z",
+    "latest_updated": "2025-11-12T15:23:41Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.16683v1"
+    ],
+    "abstract": "Large Language Models (LLMs) are the engines driving today's AI agents. The better these models understand human languages, the more natural and user-friendly the interaction with AI becomes, from everyday devices like computers and smartwatches to any tool that can act intelligently. Yet, the ability of industrial-scale LLMs to comprehend low-resource languages, such as Tunisian Arabic (Tunizi), is often overlooked. This neglect risks excluding millions of Tunisians from fully interacting with AI in their own language, pushing them toward French or English. Such a shift not only threatens the preservation of the Tunisian dialect but may also create challenges for literacy and influence younger generations to favor foreign languages. In this study, we introduce a novel dataset containing parallel Tunizi, standard Tunisian Arabic, and English translations, along with sentiment labels. We benchmark several popular LLMs on three tasks: transliteration, translation, and sentiment analysis. Our results reveal significant differences between models, highlighting both their strengths and limitations in understanding and processing Tunisian dialects. By quantifying these gaps, this work underscores the importance of including low-resource languages in the next generation of AI systems, ensuring technology remains accessible, inclusive, and culturally grounded.",
+    "status": "found"
+  },
+  "2511.16684": {
+    "arxiv_id": "2511.16684",
+    "title": "PlatonSPAD: A novel SPAD sensor for large-scale high-resolution particle detectors",
+    "authors": [
+      "Kodai Kaneyasu",
+      "Till Dieminger",
+      "Matthew Franks",
+      "Davide Sgalaberna",
+      "Claudio Bruschini",
+      "Edoardo Charbon"
+    ],
+    "submission_date": "2025-11-13T09:29:24Z",
+    "latest_updated": "2025-11-13T09:29:24Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.16684v1"
+    ],
+    "abstract": "High-resolution 3D tracking with sub-nanosecond timing is required for the detection of elementary particles, such as neutrinos. Conventional detectors, which utilize analog silicon photomultipliers, face challenges in balancing spatial resolution and scalability. To address this issue, a CMOS single-photon avalanche diode (SPAD)-based high-resolution particle detector is being developed. This work presents a study on SPAD layout optimization and a 4x4 SPAD macropixel module, fabricated in 110 nm CIS technology. Measurement results confirm that high-fill-factor designs improve photon detection efficiency without significant noise degradation. Furthermore, event-driven photon mapping and time stamping, enabled by time-to-digital converters and dedicated pixel circuits integrated into the 4x4 SPAD macropixel, were successfully demonstrated. This work is an essential step towards a sensor that detects probabilistic particle interactions and it lays the groundwork for the development of future large-scale SPAD-based particle detectors.",
+    "status": "found"
+  },
+  "2511.16685": {
+    "arxiv_id": "2511.16685",
+    "title": "Ellipsoid-Based Decision Boundaries for Open Intent Classification",
+    "authors": [
+      "Yuetian Zou",
+      "Hanlei Zhang",
+      "Hua Xu",
+      "Songze Li",
+      "Long Xiao"
+    ],
+    "submission_date": "2025-11-13T11:31:14Z",
+    "latest_updated": "2025-11-24T03:32:27Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.16685v1",
+      "2511.16685v2"
+    ],
+    "abstract": "Textual open intent classification is crucial for real-world dialogue systems, enabling robust detection of unknown user intents without prior knowledge and contributing to the robustness of the system. While adaptive decision boundary methods have shown great potential by eliminating manual threshold tuning, existing approaches assume isotropic distributions of known classes, restricting boundaries to balls and overlooking distributional variance along different directions. To address this limitation, we propose EliDecide, a novel method that learns ellipsoid decision boundaries with varying scales along different feature directions. First, we employ supervised contrastive learning to obtain a discriminative feature space for known samples. Second, we apply learnable matrices to parameterize ellipsoids as the boundaries of each known class, offering greater flexibility than spherical boundaries defined solely by centers and radii. Third, we optimize the boundaries via a novelly designed dual loss function that balances empirical and open-space risks: expanding boundaries to cover known samples while contracting them against synthesized pseudo-open samples. Our method achieves state-of-the-art performance on multiple text intent benchmarks and further on a question classification dataset. The flexibility of the ellipsoids demonstrates superior open intent detection capability and strong potential for generalization to more text classification tasks in diverse complex open-world scenarios.",
+    "status": "found"
+  },
+  "2511.16686": {
+    "arxiv_id": "2511.16686",
+    "title": "A compact, easy-to-use leak detector for vacuum systems based on the MQ-8 sensor",
+    "authors": [
+      "S. M. Kovalov",
+      "I. V. Beznosenko",
+      "A. V. Vasyliev",
+      "G. V. Sotnikov"
+    ],
+    "submission_date": "2025-11-14T11:29:40Z",
+    "latest_updated": "2025-11-14T11:29:40Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.16686v1"
+    ],
+    "abstract": "This paper presents the development of a compact leak detector for vacuum systems that operates using hydrogen as a tracer gas, detected by a semiconductor MQ-8 sensor. The sensor is connected to an Arduino microcontroller, enabling digital signal processing and real-time visualization through the Processing software environment. The designed device is capable of detecting even small hydrogen leaks caused by imperfect sealing of vacuum connections. It is characterized by simplicity, low manufacturing cost, and suitability for laboratory use as an alternative to helium leak detectors. Experimental tests confirmed the effectiveness and stability of the developed leak detector during long-term measurements.",
+    "status": "found"
+  },
+  "2511.16687": {
+    "arxiv_id": "2511.16687",
+    "title": "Regularized Unfolding of gamma-ray Spectra for Nuclear Physics Applications",
+    "authors": [
+      "E. Lima",
+      "L. L. Braseth",
+      "A. H. Mjøs",
+      "M. Hjorth-Jensen",
+      "A. Kvellestad",
+      "A. C. Larsen"
+    ],
+    "submission_date": "2025-11-14T14:08:18Z",
+    "latest_updated": "2025-11-14T14:08:18Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.16687v1"
+    ],
+    "abstract": "Reconstructing gamma-ray spectra from detector measurements is an ill-posed inverse problem. Standard methods, such as Folding Iteration with Compton Subtraction (FICS), provide point estimates but lack calibrated uncertainties and may bias the spectrum. We introduce an unfolding framework based on regularized maximum-likelihood estimation (RMLE) that enforces non-negativity and detector-response constraints while explicitly modeling background and contaminant contributions. Simulations and analytical results show that RMLE yields smoother reconstructions with well-calibrated confidence intervals and outperforms existing techniques for low-complexity spectra. Although high-complexity data remain challenging, the intervals produced by RMLE maintain correct coverage.",
+    "status": "found"
+  },
+  "2511.16688": {
+    "arxiv_id": "2511.16688",
+    "title": "Prompt-Based Value Steering of Large Language Models",
+    "authors": [
+      "Giulio Antonio Abbo",
+      "Tony Belpaeme"
+    ],
+    "submission_date": "2025-11-14T14:45:41Z",
+    "latest_updated": "2025-11-14T14:45:41Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.16688v1"
+    ],
+    "abstract": "Large language models are increasingly used in applications where alignment with human values is critical. While model fine-tuning is often employed to ensure safe responses, this technique is static and does not lend itself to everyday situations involving dynamic values and preferences. In this paper, we present a practical, reproducible, and model-agnostic procedure to evaluate whether a prompt candidate can effectively steer generated text toward specific human values, formalising a scoring method to quantify the presence and gain of target values in generated responses. We apply our method to a variant of the Wizard-Vicuna language model, using Schwartz's theory of basic human values and a structured evaluation through a dialogue dataset. With this setup, we compare a baseline prompt to one explicitly conditioned on values, and show that value steering is possible even without altering the model or dynamically optimising prompts.",
+    "status": "found"
+  }
+}

@@ -1,0 +1,399 @@
+{
+  "2609.14614": {
+    "arxiv_id": "2609.14614",
+    "title": "SH-WRNN: Implicit Spherical Harmonics Weight Field Routing Neural Networks for Asymmetric Edge Intelligence",
+    "authors": [
+      "Zhibin Jiao",
+      "Xiangjing An"
+    ],
+    "submission_date": "2026-09-13T15:44:47Z",
+    "latest_updated": "2026-09-13T15:44:47Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14614v1"
+    ],
+    "abstract": "Deep learning architectures remain rigidly built upon traditional fully connected layers. While networks scale up, few challenge this foundational root. In this work, we reshape this paradigm by transforming the core synapse weight matrix from static, discrete parameters into a differentiable, continuous field governed by spherical harmonics functions. We introduce the Implicit Spherical Harmonics Weight Field Routing Neural Network (SH-WRNN), which constrains weight matrices within a continuous parametric field instead of optimizing millions of localized discrete weights. When retrieving the weight matrix of the current layer, connection parameters are localized using latitude and longitude on a rectangular plane mapped from the continuous field. The latitudinal coordinate is specified by activated neurons from the previous layer, while the longitudinal coordinate is determined by keys generated from previous layer activations via matrix multiplication. By evaluating intersections on this map, the network dynamically extracts its connection weights on-the-fly. Empirical validation on MNIST demonstrates that under compact configurations of (32, 10, 10) and (32, 3, 10), SH-WRNN achieves robust accuracies of 91.05% and 81.54% within a single training epoch. Furthermore, we propose an asymmetric Surface Baking scheme. Upon convergence, the continuous weight field is baked once into a static parametric surface. By eliminating analytical spherical harmonics calculations during inference and reducing dynamic matrix extraction to high-speed localized memory slicing, this scheme achieves asymmetric algorithmic acceleration with negligible accuracy degradation. This paradigm shift bypasses GPU memory-bandwidth monopolies, opening a novel path to reshape the advantages of CPU computing. Code is available at https://github.com/jzb1111/SphericalHarmonyRoutedNeuralNetWork.",
+    "status": "found"
+  },
+  "2609.14615": {
+    "arxiv_id": "2609.14615",
+    "title": "Open-UniMo: Towards Unified Motion-Language Understanding and Generation in the Open World",
+    "authors": [
+      "Guocun Wang",
+      "Kenkun Liu",
+      "Guorui Song",
+      "Jing Lin",
+      "Zhe Huang",
+      "Luyuan Zhang",
+      "Dake Zhong",
+      "Choo Sin Wai",
+      "Xiaoguang Han",
+      "Haoqian Wang"
+    ],
+    "submission_date": "2026-09-13T15:46:41Z",
+    "latest_updated": "2026-09-13T15:46:41Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14615v1"
+    ],
+    "abstract": "Unified motion generation and understanding is crucial for embodied AI systems that can both synthesize and interpret human actions in open-world environments. Existing motion-language models often treat motion as an auxiliary modality of a language model, leading to text-dominated representations and limited cross-modal interaction. Moreover, the next-token prediction paradigm is not naturally suited to long motion sequences, where autoregressive generation may accumulate prediction errors. To address these challenges, we propose Open-UniMo, a unified Large Motion-Language Model (LMLM) trained on million-scale open-world motion-language data. Open-UniMo promotes modality parity by extending Qwen's vocabulary of about 150K text tokens with 64K motion tokens, enabling motion and language to share a unified token space. We further introduce motion-consistent Chain-of-Thought reasoning as an intermediate representation to bridge language semantics and motion dynamics. Open-UniMo is trained with a two-stage pipeline, where supervised fine-tuning establishes CoT-guided bidirectional motion-language mapping and Group Relative Policy Optimization (GRPO) improves semantic alignment while mitigating cumulative errors in autoregressive motion-token generation. To support comprehensive evaluation, we propose Open-MoBench, a VLM-guided benchmark for assessing text-to-motion (T2M) generation, motion-to-text (M2T) understanding, and bidirectional consistency. Extensive experiments show that Open-UniMo achieves state-of-the-art performance on both conventional metrics and Open-MoBench. Furthermore, ablation studies reveal that M2T understanding is not primarily limited by motion-token vocabulary size; instead, coupling M2T with the learnable T2M generation path yields stronger cross-modal representations, demonstrating that generation can facilitate understanding in AR-based motion-language modeling.",
+    "status": "found"
+  },
+  "2609.14616": {
+    "arxiv_id": "2609.14616",
+    "title": "Channel-Adaptive Region Adjacency Graph Carriers for Semantic Image Communication",
+    "authors": [
+      "Karim Abdallah",
+      "Maria Slim",
+      "Mariette Awad",
+      "Hadi Sarieddeen"
+    ],
+    "submission_date": "2026-09-13T15:46:46Z",
+    "latest_updated": "2026-09-13T15:46:46Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14616v1"
+    ],
+    "abstract": "Semantic image communication seeks to preserve task-relevant scene structure under limited channel resources, but carriers are often dense latent tensors or grid-aligned semantic layouts that do not explicitly encode region-level relations. This work introduces a segmentation-derived region adjacency graph (RAG) carrier, termed channel-adaptive RAG (CA-RAG), for joint source-channel coding-style image communication. Nodes store interpretable region attributes, edges preserve adjacency, channel-adaptive graph simplification (CGS) controls the node budget, and semantic belief propagation refines noisy graph embeddings before diffusion-based reconstruction. On Cityscapes, pre-channel RAG payloads are several times smaller than compressed class-index layouts in a 2,000-image study. Under additive white Gaussian noise at signal-to-noise ratios from 0 to 15 dB, CA-RAG reports higher semantic consistency than deep joint source-channel coding and a same-decoder layout baseline, with comparable perceptual quality. At 10 dB, the full-budget rate-sweep point reaches mean intersection over union (mIoU) = 0.329 at approximately 3.3 x 10^3 channel uses, while the default adaptive-CGS setting reports mIoU = 0.294 at approximately 2.6 x 10^3 channel uses.",
+    "status": "found"
+  },
+  "2609.14617": {
+    "arxiv_id": "2609.14617",
+    "title": "Monopole fission",
+    "authors": [
+      "Paul Sutcliffe"
+    ],
+    "submission_date": "2026-09-13T15:46:49Z",
+    "latest_updated": "2026-09-13T15:46:49Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14617v1"
+    ],
+    "abstract": "There is a 4N-dimensional moduli space of SU(2) BPS monopoles with charge N, but introducing a Higgs potential removes this degeneracy and yields a repulsive force between monopoles. However, if a point in the BPS monopole moduli space is sufficiently symmetric, then it flows to a similar non-BPS saddle point solution once the Higgs potential is introduced. Monopole fission, into constituent monopoles with lower charges, results from symmetry breaking perturbations of such saddle point solutions. This fission is investigated numerically, by evolving the gradient flow equations of the Yang-Mills-Higgs theory, with initial conditions and symmetry breaking perturbations created using rational maps between Riemann spheres. The results resemble components of BPS monopole scattering processes obtained within the geodesic approximation for low speed monopole dynamics.",
+    "status": "found"
+  },
+  "2609.14618": {
+    "arxiv_id": "2609.14618",
+    "title": "A Quantitative Gidas--Ni--Nirenberg Theorem for the Fractional Laplacian",
+    "authors": [
+      "Qizhen Shen",
+      "Jiongduo Xie"
+    ],
+    "submission_date": "2026-09-13T15:48:23Z",
+    "latest_updated": "2026-09-13T15:48:23Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14618v1"
+    ],
+    "abstract": "We establish a quantitative Gidas--Ni--Nirenberg theorem for the pure fractional Dirichlet problem \\[ (-Δ)^s u=k(x)g(u)\\quad\\text{in }B_1, \\qquad u=0\\quad\\text{in }\\mathbb R^n\\setminus B_1, \\qquad 0<s<1. \\] For positive bounded solutions under a two-sided $L^\\infty$ normalization, we prove \\[ \\mathcal D(u)\\le C\\,\\mathcal D(k)^γ,\\qquad 0<γ<1, \\] where $\\mathcal D$ measures spherical oscillation and outward radial increase. To the best of our knowledge, this provides the first quantitative Gidas--Ni--Nirenberg estimate for the pure fractional Dirichlet problem. The key new ingredient is a shift-uniform, weak Harnack inequality for shifted antisymmetric supersolutions, which overcomes the exterior-tail obstruction in the quantitative moving-plane argument. This mechanism extends to nonseparable nonlinearities.",
+    "status": "found"
+  },
+  "2609.14619": {
+    "arxiv_id": "2609.14619",
+    "title": "ESAFusion: LiDAR--4-D Radar Fusion via Local Geometric Complementation and Multiscale Adaptive Interaction for 3-D Object Detection",
+    "authors": [
+      "Gang Ma",
+      "Senjie Hu",
+      "Junjie Liu",
+      "Chao Wang",
+      "Hui Wei"
+    ],
+    "submission_date": "2026-09-13T15:48:23Z",
+    "latest_updated": "2026-09-24T02:01:13Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2609.14619v1",
+      "2609.14619v2"
+    ],
+    "abstract": "LiDAR--4-D radar fusion combines accurate spatial geometry with motion and reflectivity cues from radar, offering a promising solution for 3-D object detection in complex driving environments. However, sparse radar observations and differences in spatial sampling between the two modalities complicate reliable cross-modal complementation. Moreover, the relative importance of modalities and feature scales varies across spatial regions, making adaptive fusion challenging. To address these challenges, we propose ESAFusion, an evidence-aware and scale-adaptive framework that combines local geometric complementation with multiscale adaptive interaction. Specifically, we introduce an Evidence-Aware Radar Selection (ERS) module to suppress radar clutter using motion and observation-quality evidence while retaining foreground confidence for subsequent fusion. Then, the Pillar-Level Complementary Encoder (PCE) improves cross-modal complementation under mismatched spatial sampling using local geometric support from neighboring LiDAR pillars. We further design an Intra- and Inter-Scale Adaptive Fusion (ISAF) module to adaptively adjust the contributions of different modalities and feature scales in bird's-eye-view (BEV) space. Extensive experiments on the View-of-Delft (VoD) dataset show that ESAFusion achieves the highest mean average precision (mAP) among the compared methods, reaching 74.60% in the Entire Annotated Area and 88.89% in the Driving Corridor. It also attains the highest average precision (AP) for Cyclist among these methods in both regions while running at 19.23 FPS. Evaluations on VoD-Fog further demonstrate robustness under progressively degraded LiDAR observations. The source code will be made publicly available at https://github.com/SenJieHu549/ESAFusion.",
+    "status": "found"
+  },
+  "2609.14620": {
+    "arxiv_id": "2609.14620",
+    "title": "Dynamical Readout of Measurement Statistics and Emergent Entanglement-Like States in Classical Networks",
+    "authors": [
+      "Songbo Xie",
+      "Ethan Dickey",
+      "Syed Ahmed Taimoor",
+      "Sabre Kais"
+    ],
+    "submission_date": "2026-09-13T15:49:51Z",
+    "latest_updated": "2026-10-01T17:56:45Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2609.14620v1",
+      "2609.14620v2"
+    ],
+    "abstract": "Can a classical network not only encode a quantum-like state, but also read out its measurement statistics through its own collective dynamics? Here we introduce a network-native readout scheme for a structured classical network whose community modes form an effective two-qubit state space. Network connectivity selects a dominant collective mode that encodes the state, while a fixed set of ten elementary connectivity perturbations probes its collective response. The resulting shifts of the dominant growth rate form a complete basis of expectation values for the real two-qubit sector, from which joint-outcome probabilities associated with arbitrary real projectors are reconstructed by linear combination. Once these ten spectral responses are measured, the same data generate correlations over a continuous family of measurement settings. As a benchmark, for an encoded Bell state four selected correlations give $|S|=\\chsh>2$, whereas a separable product-state reference remains within the Clauser--Horne--Shimony--Holt (CHSH) bound $|S| \\leq 2 $. These results establish an informationally complete dynamical readout of effective two-qubit states directly from the spectral response of a classical network.",
+    "status": "found"
+  },
+  "2609.14621": {
+    "arxiv_id": "2609.14621",
+    "title": "The classical capacity of generalized amplitude-damping channels and its strong-converse exponent",
+    "authors": [
+      "Kun Fang"
+    ],
+    "submission_date": "2026-09-13T15:50:01Z",
+    "latest_updated": "2026-10-06T11:07:29Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2609.14621v1",
+      "2609.14621v2"
+    ],
+    "abstract": "The classical capacity of a quantum channel generally requires regularization because input codewords may be entangled across channel uses. We remove this regularization for generalized amplitude-damping channels (GADCs) and determine their exact strong-converse exponent throughout the full parameter range. The exponent is a single-letter transform of the sandwiched Rényi Holevo information and is attained by product input codewords with collective decoding. The key ingredient is a decomposition of the joint output into positive operators whose triangular factors have identical scalar Gram matrices after norm compression. A sharp triangular Schatten-norm compression inequality then establishes maximum output norm multiplicativity for diagonally sandwiched GADCs tensored with arbitrary completely positive maps. This yields additivity of the sandwiched Rényi Holevo information at every order above one. Consequently, the classical capacity equals the known one-copy Holevo information and admits a scalar optimization. Thus, entangled input codewords improve neither the capacity nor the optimal exponential decay of decoding success above capacity.",
+    "status": "found"
+  },
+  "2609.14622": {
+    "arxiv_id": "2609.14622",
+    "title": "On the Homogenization of Norm and Time Optimal Controls for Parabolic Equations with Oscillating Coefficients",
+    "authors": [
+      "Jon Asier Bárcena-Petisco",
+      "Marius Tucsnak"
+    ],
+    "submission_date": "2026-09-13T15:50:04Z",
+    "latest_updated": "2026-09-13T15:50:04Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14622v1"
+    ],
+    "abstract": "We study homogenization of norm-optimal and time-optimal controls for a one-dimensional heat equation with rapidly oscillating periodic diffusion coefficients. The controls act on a fixed subinterval and are subject to pointwise constraints in space and time. We first derive final-state observability and null-controllability estimates that are uniform with respect to the oscillation scale. Combining these estimates with periodic homogenization and an abstract theory of optimal controls for parabolic systems, we prove convergence of the norm-optimal values and controls to their homogenized counterparts. We then deduce convergence of the optimal times and time-optimal controls. The controls converge weakly-star in the space of essentially bounded functions and strongly in every Lebesgue space with finite exponent, after extension to a common time interval when necessary.",
+    "status": "found"
+  },
+  "2609.14623": {
+    "arxiv_id": "2609.14623",
+    "title": "Thermodynamic Realizability of Hidden Markov Processes: Attainment, Observable Certificates, and the Price of Architecture",
+    "authors": [
+      "Murad Aznagulov"
+    ],
+    "submission_date": "2026-09-13T15:50:16Z",
+    "latest_updated": "2026-09-13T15:50:16Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14623v1"
+    ],
+    "abstract": "What is the least dissipative finite Markov machine that can reproduce a given stochastic process exactly? A basic compactness worry is that a minimizing sequence might lower its cost only by sending microscopic rates to infinity, never converging to an actual finite-rate machine. We prove that this escape is impossible at fixed hidden dimension. States of vanishing stationary occupation can be traced out, and infinitely fast conductance classes can be contracted, without increasing entropy production or losing the limiting observed path law. Hence the exact-law cost $V_n(P)$ is attained and lower semicontinuous at every fixed state count, with no cap on rates or mean activity. Adding a positive price $κ$ per used hidden state yields an attained optimum over all finite dimensions and an exact representation by globally calibrated lower certificates built from finitely many observable path expectations. The lower envelope $G_κ(P)=\\min_n[V_n(P)+κn]$ defines an architecture phase diagram whose slope is the selected state count; divergence of that count as $κ\\downarrow0$ is equivalent to failure of any finite machine to attain the all-dimension infimum $V_\\infty(P)$. For the two-block renewal family $P_q$, we derive complete finite-dimensional phase-type cancellation equations, give an explicit four-phase counterexample to a tempting restricted parameterization, and prove strictly positive minimal dissipation at every feasible finite dimension for all $0<q<1$. These results reduce the remaining problem to one sharp question: can growing hidden architecture drive the dissipation of $P_q$ to its all-dimension infimum without any finite optimizer, and in the strongest scenario, to zero?",
+    "status": "found"
+  },
+  "2609.14624": {
+    "arxiv_id": "2609.14624",
+    "title": "TTDF: A Two-Stage Framework for Reliable Surgical Phase Transition Detection",
+    "authors": [
+      "Yushi Guo",
+      "Pietro Valdastri",
+      "Duygu Sarikaya"
+    ],
+    "submission_date": "2026-09-13T15:50:27Z",
+    "latest_updated": "2026-09-13T15:50:27Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14624v1"
+    ],
+    "abstract": "Reliable workflow transition detection is important for context-aware surgical assistance and downstream decision support. However, online surgical phase recognizers primarily focus on frame-wise accuracy and temporal consistency, rather than the reliability of workflow transition events. Directly converting phase changes into events is unreliable: temporal jitter and workflow-illegal switches produce false or duplicate events, while persistent, workflow-consistent candidates may remain incorrect. To address this limitation, we formulate reliable workflow transition detection as a distinct event-level task operating on outputs of a frozen online phase recognizer. We propose the Two-Stage Transition Detection Framework (TTDF), a causal framework that progressively filters transition candidates. Transition Candidate Extraction (TCE) first applies a minimum-duration requirement and a workflow-graph constraint to remove false candidates caused by temporal jitter and phase transitions not allowed by the workflow graph. Specifically, a candidate is retained only if the predicted target phase persists for a minimum duration and the ordered phase pair belongs to the workflow graph's allowed transition set. TCE thereby produces a high-recall candidate set without additional training. Transition Candidate Verification (TCV) suppresses remaining false candidates using phase-posterior shifts and visual-change cues from frozen DINOv2 features. Events are assessed using a phase-pair-aware one-to-one matching protocol. Experiments on Cholec80 show that TTDF reduces false transition emissions while preserving recall and controlling decision delay.",
+    "status": "found"
+  },
+  "2609.14625": {
+    "arxiv_id": "2609.14625",
+    "title": "Designing Signals for Deterrence",
+    "authors": [
+      "Hiroto Sawada",
+      "Raphael Boleslavsky",
+      "Kristopher W. Ramsay",
+      "Mehdi Shadmehr"
+    ],
+    "submission_date": "2026-09-13T15:51:11Z",
+    "latest_updated": "2026-09-13T15:51:11Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14625v1"
+    ],
+    "abstract": "States and alliances spend enormous resources signaling resolve to deter adversaries. Two canonical strategies are burning money (sunk costs) and burning bridges (audience costs). Large audience costs can deter effectively, but they may be infeasible and, even when feasible, can increase the likelihood of war relative to burning money. We propose a signaling design in which the defender retains the flexibility to fight or back down but commits ex ante, before learning its resolve, to a rule mapping realized resolve into costly actions. When audience costs are limited, this design raises defender payoffs while reducing the likelihood of war. We discuss implementation through laws and automated algorithms. We also characterize defender payoffs when audience costs are chosen endogenously from a feasible set, showing that lowering the maximum feasible audience cost can raise defender payoffs, and we compare these payoffs with those under the standard burning-money setting without commitment.",
+    "status": "found"
+  },
+  "2609.14626": {
+    "arxiv_id": "2609.14626",
+    "title": "Derivatives of Quantum Randomness: Separating Pseudorandom Unitaries from Pseudorandom (Function-like) States",
+    "authors": [
+      "Minki Hhan"
+    ],
+    "submission_date": "2026-09-13T15:54:16Z",
+    "latest_updated": "2026-09-13T15:54:16Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14626v1"
+    ],
+    "abstract": "Quantum computation gives rise to new pseudorandom primitives for states and unitaries, including pseudorandom state generators (PRSGs), pseudorandom function-like state generators (PRFSGs), and pseudorandom unitaries (PRUs). In this paper, we show a full unitary oracle separation between PRFSGs and PRUs. The separation holds between the strongest state notion and the weakest unitary notion: even adaptively secure, quantum-accessible PRFSGs do not imply non-adaptively secure, forward-only PRUs, even when their implementations are allowed to be non-unitary and use an arbitrary number of ancillary qubits. This reveals a fundamental distinction between pseudorandomness for quantum states and for quantum unitaries. Our main technical idea is to view a candidate PRU construction with access to state generation oracles as a map from the underlying oracle states to implemented unitaries, and to study the derivatives of this map. These derivatives are inherently low rank, and we exploit this low-rank structure to distinguish the resulting unitaries from truly random ones. We believe this differential perspective may be useful for studying other structural questions about quantum states and unitaries.",
+    "status": "found"
+  },
+  "2609.14627": {
+    "arxiv_id": "2609.14627",
+    "title": "Emergent Einstein-Cartan gravity from a spinor loop",
+    "authors": [
+      "Yadikaer Maitiniyazi",
+      "Shinya Matsuzaki",
+      "Kin-ya Oda",
+      "Yoshiki Uchida",
+      "Masatoshi Yamada"
+    ],
+    "submission_date": "2026-09-13T15:58:32Z",
+    "latest_updated": "2026-09-13T15:58:32Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14627v1"
+    ],
+    "abstract": "In Einstein-Cartan spinor gravity under the irreversible vierbein postulate, only the spinor among the first-order variables has a kinetic term of its own at tree level. Any nonzero background vierbein breaks the local-Lorentz (LL) symmetry spontaneously. Our previous work showed that the spinor loop generates the kinetic and mass terms of the LL gauge field, manifesting LL as a hidden local symmetry. Here we show that the spinor loop also generates the vierbein two-point function, while respecting the background gauge invariance and satisfying the Ward-Takahashi identities of the true gauge invariance, for both the general-coordinate and LL symmetries. The scheme-independent logarithmic divergence assembles the familiar induced-gravity ingredients: a cosmological constant, an Einstein-Hilbert and a Weyl-squared term for the metric sector, and a mass and a higher-derivative kinetic term for the totally antisymmetric torsion. In the vierbein sector, this torsion is carried by the derivative of the antisymmetric part of the linear vierbein fluctuation. This part is the would-be Nambu-Goldstone boson of the spontaneously broken LL symmetry, and its couplings in the minimally coupled action are all fixed by general-coordinate and LL gauge invariance. The five induced terms form a single effective action, manifestly invariant under both symmetries, completing the vierbein sector of the hidden-local-Lorentz emergent-gravity scenario.",
+    "status": "found"
+  },
+  "2609.14628": {
+    "arxiv_id": "2609.14628",
+    "title": "Interpretation of the excited $Ω_c$ family via mass and width in the chiral quark model",
+    "authors": [
+      "Xiao-Huang Hu",
+      "Zhe-Tao Miu",
+      "Yue Tan",
+      "Qi Huang",
+      "Ye Yan",
+      "Jia-Lun Ping"
+    ],
+    "submission_date": "2026-09-13T15:59:03Z",
+    "latest_updated": "2026-09-15T03:36:08Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2609.14628v1",
+      "2609.14628v2"
+    ],
+    "abstract": "In this work, the mass and decay properties for low-lying orbital excitations of $Ω_c$ baryons are investigated within the chiral quark model combined with the $^3P_0$ decay mechanism. Following the LHCb Collaboration's observations, we extend our previous study of the $Ξ_c^{\\prime}$ system to the $Ω_c$ system, with all model parameters inherited from our earlier work. Our results consistently describe the observed $Ω_c$ spectrum: $Ω_c(3000)$, $Ω_c(3050)$, $Ω_c(3065)$, and $Ω_c(3090)$ are well described as $λ$-mode $1P$ states with $J^P=1/2^-$, $3/2^-$, $3/2^-$, and $5/2^-$, respectively. $Ω_c(3119)$ cannot be described as a pure three-quark excitation. Furthermore, the $Ω_c(3185)$ and $Ω_c(3327)$ may be assigned to the $2S$ and $1D$ states, respectively. These results offer a coherent picture of the low-lying $Ω_c$ spectrum and motivate further experimental tests.",
+    "status": "found"
+  },
+  "2609.14629": {
+    "arxiv_id": "2609.14629",
+    "title": "Rate-Splitting for Service-Aware Multi-Orbit Orchestration in 6G TN-NTN Networks",
+    "authors": [
+      "Sayanti Ghosh",
+      "Mustafa Kishk",
+      "Nicola Marchetti"
+    ],
+    "submission_date": "2026-09-13T16:02:43Z",
+    "latest_updated": "2026-09-13T16:02:43Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14629v1"
+    ],
+    "abstract": "Integrated terrestrial--non-terrestrial networks (TN--NTNs) are a key enabler of sixth-generation (6G) connectivity across terrestrial, geostationary Earth orbit (GEO), medium Earth orbit (MEO), and low Earth orbit (LEO) domains. However, existing NTN frameworks do not jointly address service-aware serving-domain selection, multi-orbit coordination, and hierarchical multi-stream transmission. This paper proposes a service-aware multi-orbit rate-splitting multiple access (SA-MO-RSMA) framework that integrates global-common, orbit-common, and user-private streams with service-intent-aware serving-domain selection and resource orchestration. The framework operates as a system-level orchestration layer over existing 3GPP NTN architectures. A multi-criteria Orbit--Service Utility Function (OSUF) is introduced, together with metrics for service continuity, switching stability, power-normalized transmission efficiency, and synchronization robustness. Numerical results show that SA-MO-RSMA improves average per-user service utility, service continuity, switching stability, and transmission efficiency over the considered benchmark schemes, demonstrating its potential for coordinated service-aware multi-orbit TN--NTN operation.",
+    "status": "found"
+  },
+  "2609.14630": {
+    "arxiv_id": "2609.14630",
+    "title": "Subset-Sum Density Realization in Locally Finite Abelian Groups",
+    "authors": [
+      "Norbert Hegyvári",
+      "Thang Pham",
+      "Boqing Xue"
+    ],
+    "submission_date": "2026-09-13T16:03:40Z",
+    "latest_updated": "2026-09-13T16:03:40Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14630v1"
+    ],
+    "abstract": "Let $G$ be a countable locally finite abelian group, and let \\[ G_1\\leq G_2\\leq\\cdots, \\qquad \\bigcup_{i\\geq1}G_i=G, \\] be any filtration of $G$ by finite subgroups. For $A\\subseteq G$, let $\\mathcal P(A)$ denote the set of all finite subset sums of elements of $A$, and let $2G:=\\{2g:g\\in G\\}$. We prove that $|2G|=\\infty$ if and only if for every filtration and every interval $[α,β]\\subseteq[0,1]$, there exists $A\\subseteq G$ such that the set of limit points of \\[ \\left( \\frac{|\\mathcal P(A)\\cap G_i|}{|G_i|} \\right)_{i\\geq1} \\] is exactly $[α,β]$. We also prove a positive-density result that does not require $|2G|=\\infty$: if $G$ is infinite and $\\mathcal P(A)$ has positive upper density along the given filtration, then there is an infinite set $B\\subseteq \\mathcal P(A)$ such that $B+B\\subseteq \\mathcal P(A)$. Combining this with the realization theorem, we show that, when $|2G|=\\infty$, every interval $[α,β]$ with $0\\leqα\\leqβ\\leq1$ and $β>0$ can be realized by a set $A$ with this additional property.",
+    "status": "found"
+  },
+  "2609.14631": {
+    "arxiv_id": "2609.14631",
+    "title": "LLM Agent Capabilities Should Follow Task Intent and Context Source",
+    "authors": [
+      "Yusheng Zheng",
+      "Wenhui Zhang",
+      "Yu Mao"
+    ],
+    "submission_date": "2026-09-13T16:04:31Z",
+    "latest_updated": "2026-09-13T16:04:31Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14631v1"
+    ],
+    "abstract": "LLM agents take real actions, including executing code, modifying files, calling services, and delegating tasks, driven by context sources: user requests, tool results, documents, shell outputs, Skill and MCP instructions, memory. Unlike traditional systems, where capability is predefined, the least-privilege capability an agent needs is dynamic, depending on its task intent: what it wants to do and how. This creates a security and safety challenge: all inputs enter one shared planning channel with equal influence, by adversarial injection or accidental scope widening, yet a user's explicit request and a document's extracted text carry different trust and should not share authority to choose a destination or widen access. Existing defenses constrain operations and information flow; we study task-scoped, multi-source authority composition. We argue that agent capabilities should be scoped to the current task intent, not a sandbox or session lifetime, and that no single context source defines a complete capability. IntentCap composes capabilities from four such sources: user intent, workflow instructions, tool schemas, and runtime environment, with field-level ownership and monotonic narrowing. Each source contributes specific fields, none can fill another's, and the lease only narrows the user's authorized authority, never widens it. IntentCap uses an LLM to generate short-lived leases from these sources, validated by a deterministic checker before any side effect commits and enforced by tool- and OS-level information flow policies. Evaluation shows IntentCap blocks tested violations without rejecting benign actions, each source boundary is independently necessary, and the checker generalizes across tool, execution, placement, and delegation boundaries.",
+    "status": "found"
+  },
+  "2609.14632": {
+    "arxiv_id": "2609.14632",
+    "title": "Linear equations mod $n$ are pseudo-telepathic",
+    "authors": [
+      "Lorenzo Ciardo"
+    ],
+    "submission_date": "2026-09-13T16:04:54Z",
+    "latest_updated": "2026-09-13T16:04:54Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14632v1"
+    ],
+    "abstract": "We prove that the quantum monad in dimension $2n$ admits no natural transformation to the polymorphism clone of linear equations modulo $n$. Consequently, for every $n\\geq 2$, there exists an unsatisfiable system of linear equations over $\\mathbb{Z}_n$ whose constraint system game admits a perfect finite-dimensional quantum strategy. As a corollary, we completely characterise pseudo-telepathic constraint languages in finite dimension. The proof combines a result of Harding, Jager, and Smith on group-valued measures on subspaces of Hilbert spaces with the polymorphism-minion characterisation of quantum pseudo-telepathy.",
+    "status": "found"
+  },
+  "2609.14633": {
+    "arxiv_id": "2609.14633",
+    "title": "REVOLVE: An Automated Closed-Loop Framework for Evolving Robot Manipulation with Minimal Human Intervention",
+    "authors": [
+      "Hanyu Liu",
+      "Qian Li",
+      "Yizhu Ding",
+      "Jiayi Wen",
+      "Keqiang Ren",
+      "Yunsheng Ma",
+      "Tao Jian",
+      "Zhihua Wang",
+      "Zhuofan Yu",
+      "Xinran Li",
+      "Zhigong Song"
+    ],
+    "submission_date": "2026-09-13T16:08:03Z",
+    "latest_updated": "2026-09-17T08:03:24Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2609.14633v1",
+      "2609.14633v2"
+    ],
+    "abstract": "Recent advances in data-driven robot manipulation policies have substantially improved task execution and generalization. However, real-world deployment still relies heavily on humans for failure assessment, correction, and environment reset, while models often fail to continually learn from failures and corrective experience. We present REVOLVE (Robot Evolving via Orchestrated Loops, Verification, and Experience), an automated closed-loop framework for evolving robot manipulation with minimal human intervention. Built on a unified software platform, REVOLVE integrates data collection, policy training and deployment, failure recovery, and continual learning into a single closed-loop workflow. Its Automated Reset and Correction (ARC) architecture automatically resets the environment and intervenes to correct policy failures. Dual-Loop Evolution (DLE) continually improves the manipulation policy and agent by feeding real-world interaction and failure--correction data back into policy learning and using an external mismatch memory to refine agent judgments. Experiments across four real-world manipulation tasks show that, after five iterations, REVOLVE improves average policy success rate by 18.5% and agent judgment accuracy by 8.5%, while reducing human effort in data collection and deployment testing by 94.4% and 95.1%, respectively. These results demonstrate that REVOLVE transforms real-world deployment into a closed-loop learning process that continually accumulates and uses execution experience, enabling continual evolution of both the policy and supervisory model with substantially less human intervention.",
+    "status": "found"
+  }
+}

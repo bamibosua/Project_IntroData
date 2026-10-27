@@ -1,0 +1,427 @@
+{
+  "2511.15169": {
+    "arxiv_id": "2511.15169",
+    "title": "SafeRBench: Dissecting the Reasoning Safety of Large Language Models",
+    "authors": [
+      "Xin Gao",
+      "Shaohan Yu",
+      "Zerui Chen",
+      "Yueming Lyu",
+      "Weichen Yu",
+      "Guanghao Li",
+      "Jiyao Liu",
+      "Jianxiong Gao",
+      "Jian Liang",
+      "Ziwei Liu",
+      "Chenyang Si"
+    ],
+    "submission_date": "2025-11-19T06:46:33Z",
+    "latest_updated": "2026-01-26T15:12:11Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2511.15169v1",
+      "2511.15169v2",
+      "2511.15169v3"
+    ],
+    "abstract": "Large Reasoning Models (LRMs) have significantly improved problem-solving through explicit Chain-of-Thought (CoT) reasoning. However, this capability creates a Safety-Helpfulness Paradox: the reasoning process itself can be misused to justify harmful actions or conceal malicious intent behind lengthy intermediate steps. Most existing benchmarks only check the final output, missing how risks evolve, or ``drift'', during the model's internal reasoning. To address this, we propose SafeRBench, the first framework to evaluate LRM safety end-to-end, from the initial input to the reasoning trace and final answer. Our approach introduces: (i) a Risk Stratification Probing that uses specific risk levels to stress-test safety boundaries beyond simple topics; (ii) Micro-Thought Analysis, a new chunking method that segments traces to pinpoint exactly where safety alignment breaks down; and (iii) a comprehensive suite of 10 fine-grained metrics that, for the first time, jointly measure a model's Risk Exposure (e.g., risk level, execution feasibility) and Safety Awareness (e.g., intent awareness). Experiments on 19 LRMs reveal that while enabling Thinking modes improves safety in mid-sized models, it paradoxically increases actionable risks in larger models due to a strong always-help tendency.",
+    "status": "found"
+  },
+  "2511.15170": {
+    "arxiv_id": "2511.15170",
+    "title": "Intelligent Inverse Design of Multi-Layer Metasurface Cavities for Dual Resonance Enhancement of Nanodiamond Single Photon Emitters",
+    "authors": [
+      "Omar A. M. Abdelraouf"
+    ],
+    "submission_date": "2025-11-19T06:48:40Z",
+    "latest_updated": "2025-11-19T06:48:40Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.15170v1"
+    ],
+    "abstract": "Single-photon emitters (SPEs) based on nitrogen-vacancy centers in nanodiamonds (neutral NV0 (wavelength 575 nm) and negative NV- (wavelength 637 nm)) represent promising platforms for quantum nanophotonics applications, yet their emission efficiencies remain constrained by weak light-matter interactions. Multi-layer metasurfaces (MLM) offer unprecedented degrees of freedom for efficient light manipulation beyond conventional single-material metasurfaces, enabling dual-resonance cavities that can simultaneously enhance pump excitation and SPE collection. However, traditional trial-and-error and forward optimization methods face significant challenges in designing these complex structures due to the vast parameter space and computational demands. Here, we present NanoPhotoNet-Inverse, an artificial intelligence-driven inverse design framework based on a hybrid deep neural network architecture. This model efficiently performs inverse design of two dual-resonance MLM cavities to amplify pump and SPE emissions of different vacancies in nanodiamond and improve SPE collection. Our approach achieves inverse design prediction efficiency exceeding 98.7%, demonstrating three orders of magnitude amplification in SPE count rate and 50 picosecond lifetime, significantly surpassing conventional cavity designs. These remarkable enhancements in emission rates and collection efficiency position our platform as a transformative technology for advancing quantum communication networks, quantum computing architectures, quantum sensing applications, and quantum cryptography systems. Therefore, it opens new pathways for intelligent photonic device engineering in quantum technologies.",
+    "status": "found"
+  },
+  "2511.15171": {
+    "arxiv_id": "2511.15171",
+    "title": "Adaptive Inverse Reinforcement Learning with Online Off-Policy Data Collection",
+    "authors": [
+      "Yibei Li",
+      "Yuexin Cao",
+      "Zhixin Liu",
+      "Lihua Xie"
+    ],
+    "submission_date": "2025-11-19T06:48:48Z",
+    "latest_updated": "2025-11-19T06:48:48Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.15171v1"
+    ],
+    "abstract": "In this paper, the inverse reinforcement learning (IRL) problem is addressed to reconstruct the unknown cost function underlying an observed optimal policy in a model-free manner, whose online adaptation with completely off-policy system data still remains unclear in the literature. Without prior knowledge of the system model parameters, an adaptive and direct learning rule for the cost parameter is proposed using online off-policy system data, which only needs to satisfy the mild persistently exciting condition in the general data-driven paradigm. The adaptive and online IRL algorithm is achieved by designing full Nesterov-Todd (NT)-step primal-dual interior-point iterations. Despite solving a nonlinear and time-varying semi-definite program (SDP), the influence of system noise is rigorously analyzed, and the proposed online algorithm is shown to achieve a sublinear convergence. The proposed method is further generalized to nonlinear IRL based on differential dynamic programming. The gradient of the loss function is directly obtained via a backward pass, which eliminates the need to repeatedly solve forward RL problems as in conventional bi-level IRL frameworks. Finally, the efficiency and effectiveness of the proposed algorithms are demonstrated by numerical examples.",
+    "status": "found"
+  },
+  "2511.15172": {
+    "arxiv_id": "2511.15172",
+    "title": "Complex variational autoencoders admit Kähler structure",
+    "authors": [
+      "Andrew Gracyk"
+    ],
+    "submission_date": "2025-11-19T06:51:03Z",
+    "latest_updated": "2025-12-30T23:39:26Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 4,
+    "versions": [
+      "2511.15172v1",
+      "2511.15172v2",
+      "2511.15172v3",
+      "2511.15172v4"
+    ],
+    "abstract": "It has been discovered that latent-Euclidean variational autoencoders (VAEs) admit, in various capacities, Riemannian structure. We adapt these arguments but for complex VAEs with a complex latent stage. We show that complex VAEs reveal to some level Kähler geometric structure. Our methods will be tailored for decoder geometry. We derive the Fisher information metric in the complex case under a latent complex Gaussian with trivial relation matrix. It is well known from statistical information theory that the Fisher information coincides with the Hessian of the Kullback-Leibler (KL) divergence. Thus, the metric Kähler potential relation is exactly achieved under relative entropy. We propose a Kähler potential derivative of complex Gaussian mixtures that acts as a rough proxy to the Fisher information metric while still being faithful to the underlying Kähler geometry. Computation of the metric via this potential is efficient, and through our potential, valid as a plurisubharmonic (PSH) function, large scale computational burden of automatic differentiation is displaced to small scale. Our methods leverage the law of total covariance to bridge behavior between our potential and the Fisher metric. We show that we can regularize the latent space with decoder geometry, and that we can sample in accordance with a weighted complex volume element. We demonstrate these strategies, at the exchange of sample variation, yield consistently smoother representations and fewer semantic outliers.",
+    "status": "found"
+  },
+  "2511.15173": {
+    "arxiv_id": "2511.15173",
+    "title": "Data-driven Prediction of Species-Specific Plant Responses to Spectral-Shifting Films from Leaf Phenotypic and Photosynthetic Traits",
+    "authors": [
+      "Jun Hyeun Kang",
+      "Jung Eek Son",
+      "Tae In Ahn"
+    ],
+    "submission_date": "2025-11-19T06:51:27Z",
+    "latest_updated": "2025-11-19T06:51:27Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.15173v1"
+    ],
+    "abstract": "The application of spectral-shifting films in greenhouses to shift green light to red light has shown variable growth responses across crop species. However, the yield enhancement of crops under altered light quality is related to the collective effects of the specific biophysical characteristics of each species. Considering only one attribute of a crop has limitations in understanding the relationship between sunlight quality adjustments and crop growth performance. Therefore, this study aims to comprehensively link multiple plant phenotypic traits and daily light integral considering the physiological responses of crops to their growth outcomes under SF using artificial intelligence. Between 2021 and 2024, various leafy, fruiting, and root crops were grown in greenhouses covered with either PEF or SF, and leaf reflectance, leaf mass per area, chlorophyll content, daily light integral, and light saturation point were measured from the plants cultivated in each condition. 210 data points were collected, but there was insufficient data to train deep learning models, so a variational autoencoder was used for data augmentation. Most crop yields showed an average increase of 22.5% under SF. These data were used to train several models, including logistic regression, decision tree, random forest, XGBoost, and feedforward neural network (FFNN), aiming to binary classify whether there was a significant effect on yield with SF application. The FFNN achieved a high classification accuracy of 91.4% on a test dataset that was not used for training. This study provide insight into the complex interactions between leaf phenotypic and photosynthetic traits, environmental conditions, and solar spectral components by improving the ability to predict solar spectral shift effects using SF.",
+    "status": "found"
+  },
+  "2511.15174": {
+    "arxiv_id": "2511.15174",
+    "title": "FaultDiffusion: Few-Shot Fault Time Series Generation with Diffusion Model",
+    "authors": [
+      "Yi Xu",
+      "Zhigang Chen",
+      "Rui Wang",
+      "Yangfan Li",
+      "Fengxiao Tang",
+      "Ming Zhao",
+      "Jiaqi Liu"
+    ],
+    "submission_date": "2025-11-19T06:53:15Z",
+    "latest_updated": "2025-11-19T06:53:15Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.15174v1"
+    ],
+    "abstract": "In industrial equipment monitoring, fault diagnosis is critical for ensuring system reliability and enabling predictive maintenance. However, the scarcity of fault data, due to the rarity of fault events and the high cost of data annotation, significantly hinders data-driven approaches. Existing time-series generation models, optimized for abundant normal data, struggle to capture fault distributions in few-shot scenarios, producing samples that lack authenticity and diversity due to the large domain gap and high intra-class variability of faults. To address this, we propose a novel few-shot fault time-series generation framework based on diffusion models. Our approach employs a positive-negative difference adapter, leveraging pre-trained normal data distributions to model the discrepancies between normal and fault domains for accurate fault synthesis. Additionally, a diversity loss is introduced to prevent mode collapse, encouraging the generation of diverse fault samples through inter-sample difference regularization. Experimental results demonstrate that our model significantly outperforms traditional methods in authenticity and diversity, achieving state-of-the-art performance on key benchmarks.",
+    "status": "found"
+  },
+  "2511.15175": {
+    "arxiv_id": "2511.15175",
+    "title": "Vehicle Routing Problems via Quantum Graph Attention Network Deep Reinforcement Learning",
+    "authors": [
+      "Le Tung Giang",
+      "Vu Hoang Viet",
+      "Nguyen Xuan Tung",
+      "Trinh Van Chien",
+      "Won-Joo Hwang"
+    ],
+    "submission_date": "2025-11-19T06:54:38Z",
+    "latest_updated": "2025-11-19T06:54:38Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.15175v1"
+    ],
+    "abstract": "The vehicle routing problem (VRP) is a fundamental NP-hard task in intelligent transportation systems with broad applications in logistics and distribution. Deep reinforcement learning (DRL) with Graph Neural Networks (GNNs) has shown promise, yet classical models rely on large multi-layer perceptrons (MLPs) that are parameter-heavy and memory-bound. We propose a Quantum Graph Attention Network (Q-GAT) within a DRL framework, where parameterized quantum circuits (PQCs) replace conventional MLPs at critical readout stages. The hybrid model maintains the expressive capacity of graph attention encoders while reducing trainable parameters by more than 50%. Using proximal policy optimization (PPO) with greedy and stochastic decoding, experiments on VRP benchmarks show that Q-GAT achieves faster convergence and reduces routing cost by about 5% compared with classical GAT baselines. These results demonstrate the potential of PQC-enhanced GNNs as compact and effective solvers for large-scale routing and logistics optimization.",
+    "status": "found"
+  },
+  "2511.15176": {
+    "arxiv_id": "2511.15176",
+    "title": "Mean-Field Game of Relative Performance Portfolio for Two Populations with Poisson Common Noise",
+    "authors": [
+      "Yuchen Li",
+      "Zongxia Liang",
+      "Xiang Yu"
+    ],
+    "submission_date": "2025-11-19T06:55:18Z",
+    "latest_updated": "2025-11-19T06:55:18Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.15176v1"
+    ],
+    "abstract": "This paper studies the mean field game (MFG) and N-player game on relative performance portfolio management with two heterogeneous populations. In addition to the Brownian idiosyncratic and common noise, the first population invests in assets driven by idiosyncratic Poisson jump risk, while the second population invests in assets subject to Poisson common noise. We establish the characterization of the mean-field equilibrium (MFE) in MFG with two populations as well as the Nash equilibrium in the $N_1+N_2$-player game. Furthermore, we prove the convergence of the Nash equilibrium in the $N_1+N_2$-player game to the MFE as the number of players in two populations tends to infinity. We also discuss some impacts on MFE by the Poisson idiosyncratic risk and Poisson common noise in the context of relative performance, compensated by some numerical examples and financial implications.",
+    "status": "found"
+  },
+  "2511.15177": {
+    "arxiv_id": "2511.15177",
+    "title": "Fail fast: techniques to probe rare events in quantum error correction",
+    "authors": [
+      "Michael E. Beverland",
+      "Malcolm Carroll",
+      "Andrew W. Cross",
+      "Theodore J. Yoder"
+    ],
+    "submission_date": "2025-11-19T06:57:29Z",
+    "latest_updated": "2025-11-19T06:57:29Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.15177v1"
+    ],
+    "abstract": "The ultimate goal of quantum error correction is to create logical qubits with very low error rates (e.g. 1e-12) and assemble them into large-scale quantum computers capable of performing many (e.g. billions) of logical gates on many (e.g. thousands) of logical qubits. However, it is necessarily difficult to directly assess the performance of such high-quality logical qubits using standard Monte Carlo sampling because logical failure events become very rare. Building on existing approaches to this problem, we develop three complementary techniques to characterize the rare-event regime for general quantum low-density parity-check (qLDPC) codes under circuit noise. (I) We propose a well-motivated, low-parameter ansatz for the failure spectrum (the fraction of fault sets of each size that fail) that empirically fits all the QEC systems we studied and predicts logical error rates at all physical error rates. (II) We find min-weight logical operators of syndrome measurement circuits and exactly compute the number of min-weight failing configurations. (III) We generalize the splitting method to qLDPC codes using multi-seeded Metropolis sampling to improve convergence for systems with many inequivalent logical operators. We apply these tools to distance-6, -12, and -18 bivariate bicycle codes under circuit noise, observing strong low-error-rate performance with the recently proposed Relay decoder but also considerable scope for further improvement.",
+    "status": "found"
+  },
+  "2511.15178": {
+    "arxiv_id": "2511.15178",
+    "title": "Wannier based analysis of the direct-indirect bandgap transition by stacking MoS$_2$ layers",
+    "authors": [
+      "Shunsuke Hirai",
+      "Ibuki Terada",
+      "Michi-To Suzuki"
+    ],
+    "submission_date": "2025-11-19T07:00:51Z",
+    "latest_updated": "2026-04-15T14:02:16Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.15178v1",
+      "2511.15178v2"
+    ],
+    "abstract": "Molybdenum disulfide (MoS$_2$), a layered van der Waals material, has attracted considerable attention as a promising alternative to graphene for applications in field-effect transistors and nanophotonic devices because of its sizable band gap, high carrier mobility, large on/off ratio, and strong photoluminescence efficiency. A particularly intriguing property of MoS$_2$ is the transition of its band gap character with layer thickness: while the monolayer exhibits a direct gap, the band gap becomes indirect in multilayer and bulk forms.In this study, we clarify the microscopic mechanism underlying this transition. Focusing on the roles of atomic orbitals and interlayer interactions, we perform an analysis combining first-principles calculations with a Wannier-based model. Although interlayer $p_z$--$p_z$ coupling between neighboring sulfur atoms has been recognized as a key factor in this transition, we find that a complete quantitative description additionally requires interlayer $p_z$--$p_x$ and $p_z$--$p_y$ couplings between neighboring sulfur atoms. These findings highlight the importance of both out-of-plane and in-plane orbital contributions in governing the electronic structure of layered MoS$_2$, providing deeper insight into its band gap engineering for future device applications.",
+    "status": "found"
+  },
+  "2511.15179": {
+    "arxiv_id": "2511.15179",
+    "title": "MMCM: Multimodality-aware Metric using Clustering-based Modes for Probabilistic Human Motion Prediction",
+    "authors": [
+      "Kyotaro Tokoro",
+      "Hiromu Taketsugu",
+      "Norimichi Ukita"
+    ],
+    "submission_date": "2025-11-19T07:05:05Z",
+    "latest_updated": "2025-11-19T07:05:05Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.15179v1"
+    ],
+    "abstract": "This paper proposes a novel metric for Human Motion Prediction (HMP). Since a single past sequence can lead to multiple possible futures, a probabilistic HMP method predicts such multiple motions. While a single motion predicted by a deterministic method is evaluated only with the difference from its ground truth motion, multiple predicted motions should also be evaluated based on their distribution. For this evaluation, this paper focuses on the following two criteria. \\textbf{(a) Coverage}: motions should be distributed among multiple motion modes to cover diverse possibilities. \\textbf{(b) Validity}: motions should be kinematically valid as future motions observable from a given past motion. However, existing metrics simply appreciate widely distributed motions even if these motions are observed in a single mode and kinematically invalid. To resolve these disadvantages, this paper proposes a Multimodality-aware Metric using Clustering-based Modes (MMCM). For (a) coverage, MMCM divides a motion space into several clusters, each of which is regarded as a mode. These modes are used to explicitly evaluate whether predicted motions are distributed among multiple modes. For (b) validity, MMCM identifies valid modes by collecting possible future motions from a motion dataset. Our experiments validate that our clustering yields sensible mode definitions and that MMCM accurately scores multimodal predictions. Code: https://github.com/placerkyo/MMCM",
+    "status": "found"
+  },
+  "2511.15180": {
+    "arxiv_id": "2511.15180",
+    "title": "Singularity formation for the supersonic inward wave of compressible Euler equations with radial symmetry",
+    "authors": [
+      "Geng Chen",
+      "Faris A. El-Katri",
+      "Yanbo Hu",
+      "Yannan Shen"
+    ],
+    "submission_date": "2025-11-19T07:05:19Z",
+    "latest_updated": "2025-11-19T07:05:19Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.15180v1"
+    ],
+    "abstract": "In this paper, we consider the singularity formation of smooth solutions for the compressible radially symmetric Euler equations. By applying the characteristic method and the invariant domain idea, we show that, for polytropic ideal gases with $γ\\geq3$, the smooth solution develops a singularity in finite time for a class of initial supersonic inward waves.",
+    "status": "found"
+  },
+  "2511.15181": {
+    "arxiv_id": "2511.15181",
+    "title": "Probing Electro-Magnetic Field Enhancement in 3D Plasmonic Nanopores Using DNA-PAINT and Nanorulers",
+    "authors": [
+      "German Lanzavecchia",
+      "Anastasiia Sapunova",
+      "Alan Szalai",
+      "Shukun Weng",
+      "Ali Douaki",
+      "Makusu Tsutsui",
+      "Roman Krahne",
+      "Guillermo Acuña",
+      "Denis Garoli"
+    ],
+    "submission_date": "2025-11-19T07:09:52Z",
+    "latest_updated": "2025-11-19T07:09:52Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.15181v1"
+    ],
+    "abstract": "Plasmonic nanopores combine nanofluidic confinement with electromagnetic field enhancement, enabling optical interrogation of single molecules in sub-wavelength volumes. Yet, direct optical readout within these metallic geometries has remained challenging due to fluorescence quenching near the surface. Here, we implement DNA-PAINT as a molecular reporter of local optical fields inside plasmonic nanopores. Transient hybridization of fluorescent imager strands at the nanopore tips yields stochastic emission bursts that map active binding sites with nanometric precision. By varying the fluorophore-metal distance using DNA spacers of controlled length, we observe a non-monotonic intensity response consistent with near-field quenching and plasmonic enhancement, identifying an optimal separation of around 6 nm. Finally, we extend the concept to dual-material Au/Si nanopores, demonstrating lateral coupling between plasmonic and semiconducting regions. These results establish DNA-PAINT as a quantitative probe of nanoscale optical environments in hybrid nanopores.",
+    "status": "found"
+  },
+  "2511.15182": {
+    "arxiv_id": "2511.15182",
+    "title": "SWR-Viz: AI-assisted Interactive Visual Analytics Framework for Ship Weather Routing",
+    "authors": [
+      "Subhashis Hazarika",
+      "Leonard Lupin-Jimenez",
+      "Rohit Vuppala",
+      "Ashesh Chattopadhyay",
+      "Hon Yung Wong"
+    ],
+    "submission_date": "2025-11-19T07:09:54Z",
+    "latest_updated": "2025-11-19T07:09:54Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.15182v1"
+    ],
+    "abstract": "Efficient and sustainable maritime transport increasingly depends on reliable forecasting and adaptive routing, yet operational adoption remains difficult due to forecast latencies and the need for human judgment in rapid decision-making under changing ocean conditions. We introduce SWR-Viz, an AI-assisted visual analytics framework that combines a physics-informed Fourier Neural Operator wave forecast model with SIMROUTE-based routing and interactive emissions analytics. The framework generates near-term forecasts directly from current conditions, supports data assimilation with sparse observations, and enables rapid exploration of what-if routing scenarios. We evaluate the forecast models and SWR-Viz framework along key shipping corridors in the Japan Coast and Gulf of Mexico, showing both improved forecast stability and realistic routing outcomes comparable to ground-truth reanalysis wave products. Expert feedback highlights the usability of SWR-Viz, its ability to isolate voyage segments with high emission reduction potential, and its value as a practical decision-support system. More broadly, this work illustrates how lightweight AI forecasting can be integrated with interactive visual analytics to support human-centered decision-making in complex geospatial and environmental domains.",
+    "status": "found"
+  },
+  "2511.15183": {
+    "arxiv_id": "2511.15183",
+    "title": "HinTel-AlignBench: A Framework and Benchmark for Hindi-Telugu with English-Aligned Samples",
+    "authors": [
+      "Rishikant Chigrupaatii",
+      "Ponnada Sai Tulasi Kanishka",
+      "Lalit Chandra Routhu",
+      "Martin Patel Sama Supratheek Reddy",
+      "Divyam Gupta",
+      "Dasari Srikar",
+      "Krishna Teja Kuchimanchi",
+      "Rajiv Misra",
+      "Rohun Tripathi"
+    ],
+    "submission_date": "2025-11-19T07:11:00Z",
+    "latest_updated": "2025-11-19T07:11:00Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.15183v1"
+    ],
+    "abstract": "With nearly 1.5 billion people and more than 120 major languages, India represents one of the most diverse regions in the world. As multilingual Vision-Language Models (VLMs) gain prominence, robust evaluation methodologies are essential to drive progress toward equitable AI for low-resource languages. Current multilingual VLM evaluations suffer from four major limitations: reliance on unverified auto-translations, narrow task/domain coverage, limited sample sizes, and lack of cultural and natively sourced Question-Answering (QA). To address these gaps, we present a scalable framework to evaluate VLMs in Indian languages and compare it with performance in English. Using the framework, we generate HinTel-AlignBench, a benchmark that draws from diverse sources in Hindi and Telugu with English-aligned samples. Our contributions are threefold: (1) a semi-automated dataset creation framework combining back-translation, filtering, and human verification; (2) the most comprehensive vision-language benchmark for Hindi and and Telugu, including adapted English datasets (VQAv2, RealWorldQA, CLEVR-Math) and native novel Indic datasets (JEE for STEM, VAANI for cultural grounding) with approximately 4,000 QA pairs per language; and (3) a detailed performance analysis of various State-of-the-Art (SOTA) open-weight and closed-source VLMs. We find a regression in performance for tasks in English versus in Indian languages for 4 out of 5 tasks across all the models, with an average regression of 8.3 points in Hindi and 5.5 points for Telugu. We categorize common failure modes to highlight concrete areas of improvement in multilingual multimodal understanding.",
+    "status": "found"
+  },
+  "2511.15184": {
+    "arxiv_id": "2511.15184",
+    "title": "Spectrum and Orthogonality of Orthogonal Delay-Doppler Division Multiplexing Modulation Waveforms",
+    "authors": [
+      "Akram Shafie",
+      "Jun Tong",
+      "Jinhong Yuan",
+      "Taka Sakurai",
+      "Paul Fitzpatrick",
+      "Yuting Fang",
+      "Yixuan Xie"
+    ],
+    "submission_date": "2025-11-19T07:13:10Z",
+    "latest_updated": "2025-11-19T07:13:10Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.15184v1"
+    ],
+    "abstract": "Orthogonal delay-Doppler (DD) division multiplexing (ODDM) modulation has recently emerged as a promising paradigm for ensuring reliable communications in doubly-selective channels. This work investigates the spectra and orthogonality characteristics of analog (direct) and approximate digital implementations of ODDM systems. We first determine the time and frequency domain representations of the basis functions for waveform in analog and approximate digital ODDM systems. Thereafter, we derive their power spectral densities and show that while the spectrum of analog ODDM waveforms exhibits a step-wise behavior in its transition regions, the spectrum of approximate digital ODDM waveforms is confined to that of the ODDM sub-pulse. Next, we prove the orthogonality characteristics of approximate digital ODDM waveforms and show that, unlike analog ODDM waveforms, the approximate digital ODDM waveforms satisfy orthogonality without the need of additional time domain resources. Additionally, we examine the similarities and differences that implementations of approximate digital ODDM share with the other variants of DD modulations, focusing on the domain changes the symbols undergo, the type of pulse shaping and windowing used, and the domains and the sequence in which they are performed. Finally, we present numerical results to validate our findings and draw further insights.",
+    "status": "found"
+  },
+  "2511.15185": {
+    "arxiv_id": "2511.15185",
+    "title": "Well-posedness and time-asymptotic of Boltzmann equations for monatomic and polyatomic mixtures",
+    "authors": [
+      "Ricardo Alonso",
+      "Zongguang Li"
+    ],
+    "submission_date": "2025-11-19T07:17:18Z",
+    "latest_updated": "2025-11-19T07:17:18Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.15185v1"
+    ],
+    "abstract": "This paper considers a system of Boltzmann equations modelling the mixture of monatomic and polyatomic gases in an $L^{2}-L^{\\infty}$ perturbation theory around global modified Maxwellians accounting for the internal energy of the mixture in the whole space and the torus. We investigate the pointwise decay in velocity and internal energy of the linearized Boltzmann operators in the four types of collisions. A novel approach is developed to deal with the additional internal energy variable $I\\in \\mathbb{R}_+$ and the loss of symmetry due to dissimilar masses of the mixture components. Subsequently, we carry out a classical $L^2-L^\\infty$ method to establish the well-posedness theory of the system. The optimal polynomial time decay rate on the whole space is obtained accordingly based on the spatial Fourier's study of the linearized system. The analysis shows the structure of a perturbed Euler-type model for the solution's macroscopic quantities: density, bulk velocity, and temperature, near the steady state, which gives a potential application to investigate fluid limit problems. In addition, this work proves exponential time decay in the torus and fills the gap of classical multi-species Boltzmann in the whole space.",
+    "status": "found"
+  },
+  "2511.15186": {
+    "arxiv_id": "2511.15186",
+    "title": "Instruction-Guided Lesion Segmentation for Chest X-rays with Automatically Generated Large-Scale Dataset",
+    "authors": [
+      "Geon Choi",
+      "Hangyul Yoon",
+      "Hyunju Shin",
+      "Hyunki Park",
+      "Sang Hoon Seo",
+      "Eunho Yang",
+      "Edward Choi"
+    ],
+    "submission_date": "2025-11-19T07:17:19Z",
+    "latest_updated": "2026-03-26T08:10:28Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.15186v1",
+      "2511.15186v2"
+    ],
+    "abstract": "The applicability of current lesion segmentation models for chest X-rays (CXRs) has been limited both by a small number of target labels and the reliance on complex, expert-level text inputs, creating a barrier to practical use. To address these limitations, we introduce instruction-guided lesion segmentation (ILS), a medical-domain adaptation of referring image segmentation (RIS) designed to segment diverse lesion types based on simple, user-friendly instructions. Under this task, we construct MIMIC-ILS, the first large-scale instruction-answer dataset for CXR lesion segmentation, using our fully automated multimodal pipeline that generates annotations from CXR images and their corresponding reports. MIMIC-ILS contains 1.1M instruction-answer pairs derived from 192K images and 91K unique segmentation masks, covering seven major lesion types. To empirically demonstrate its utility, we present ROSALIA, a LISA model fine-tuned on the MIMIC-ILS dataset. ROSALIA can segment diverse lesions and provide textual explanations in response to user instructions. The model achieves high accuracy in our newly proposed task, highlighting the effectiveness of our pipeline and the value of MIMIC-ILS as a foundational resource for pixel-level CXR lesion grounding. The dataset and model are available at https://github.com/checkoneee/ROSALIA.",
+    "status": "found"
+  },
+  "2511.15187": {
+    "arxiv_id": "2511.15187",
+    "title": "Theoretical Bounds on Parallel Imaging Implicit Data Crimes in an MRI Reproducing Kernel Hilbert Space",
+    "authors": [
+      "Evan Frenklak",
+      "Yamin Arefeen",
+      "Jonathan I Tamir"
+    ],
+    "submission_date": "2025-11-19T07:20:03Z",
+    "latest_updated": "2026-02-13T23:46:56Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.15187v1",
+      "2511.15187v2"
+    ],
+    "abstract": "Magnetic Resonance Imaging (MRI) diagnoses and manages a wide range of diseases, yet long scan times drive high costs and limit accessibility. AI methods have demonstrated substantial potential for reducing scan times, but despite rapid progress, clinical translation of AI often fails. One particular class of failure modes, referred to as implicit data crimes, are a result of hidden biases introduced when MRI datasets incompletely model the MRI physics of the acquisition. Previous work identified data crimes resulting from algorithmic completion of k-space with parallel imaging and drew on simulation to demonstrate the resulting downstream biases. This work proposes a mathematical framework to re-characterize the problem as one of error reduction during interpolation between sets of evaluation coordinates. We establish a generalized matrix-based definition of the reconstruction error upper bound as a function of the input sampling pattern. Experiments on relevant sampling pattern structures demonstrate the relevance of the framework and suggest future directions for analysis of data crimes.",
+    "status": "found"
+  },
+  "2511.15188": {
+    "arxiv_id": "2511.15188",
+    "title": "BrainRotViT: Transformer-ResNet Hybrid for Explainable Modeling of Brain Aging from 3D sMRI",
+    "authors": [
+      "Wasif Jalal",
+      "Md Nafiu Rahman",
+      "Atif Hasan Rahman",
+      "M. Sohel Rahman"
+    ],
+    "submission_date": "2025-11-19T07:20:23Z",
+    "latest_updated": "2026-10-22T21:35:37Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2511.15188v1",
+      "2511.15188v2",
+      "2511.15188v3"
+    ],
+    "abstract": "Accurate brain-age estimation from structural MRI provides a valuable biomarker for studying healthy aging and neurodegenerative disease. We propose BrainRotViT (Brain ResNet over trained Vision Transformer), a two-stage, slice-based (2.5D) framework that approximates volumetric context while combining the strengths of CNNs and transformers. A Vision Transformer is pretrained on an auxiliary age-sex composite classification task and subsequently frozen. Its per-slice embeddings are stacked into a 160 x 768 feature matrix and processed as a pseudo-image by a lightweight 2D residual CNN regressor, with subject sex incorporated at the final prediction layer. Trained and validated on 5,108 samples from 11 multi-site datasets and tested on four independent held-out cohorts comprising 948 samples, BrainRotViT achieves a validation mean absolute error (MAE) of 3.43 years (Pearson r = 0.98, $R^2$ = 0.96, Spearman $ρ$ = 0.97) and cross-cohort MAEs of 4.79-5.35 years, outperforming retrained 3D-ResNet, SFCN, 3D-ViT, Global-Local Transformer, Triamese-ViT, and TSAN baselines. After age-bias correction and covariate adjustment, brain-age gap is significantly associated with Alzheimer's disease, mild cognitive impairment, and autism spectrum disorder. An interpretability pipeline combining ViT attention with guided backpropagation, saliency sanity checks, and AAL3-based anatomical localization identifies aging-related regions including the occipital lobe, cerebellum, precentral and postcentral gyri, temporal lobes, and medial superior frontal gyrus. BrainRotViT thus provides an efficient and interpretable bridge between CNN and transformer paradigms, demonstrating cross-cohort generalization while yielding biologically meaningful insights into brain aging.",
+    "status": "found"
+  }
+}

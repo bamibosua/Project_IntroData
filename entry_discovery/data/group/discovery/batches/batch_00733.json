@@ -1,0 +1,393 @@
+{
+  "2608.13667": {
+    "arxiv_id": "2608.13667",
+    "title": "Second Thought: Reasoning in Parallel as LLM Agents Act and Observe",
+    "authors": [
+      "Zhensu Sun",
+      "Chengran Yang",
+      "Yunbo Lyu",
+      "Jieke Shi",
+      "David Lo"
+    ],
+    "submission_date": "2026-08-13T18:04:53Z",
+    "latest_updated": "2026-08-13T18:04:53Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13667v1"
+    ],
+    "abstract": "LLM agents in the ReAct paradigm alternate between reasoning, acting, and observing, but deliberate reasoning is confined to the Thought phase: while the agent serializes an action and waits for the environment, its reasoning is frozen. We identify this recurring interval for Action and Observation as a reasoning idle window and ask whether it can host additional reasoning in parallel that serves future turns. Therefore, we propose Second Thought, a training-free inference framework that forks four auxiliary branches the instant each Thought phase concludes, decodes them concurrently with the main loop, and merges the generated thoughts back when the environment observation arrives. In this way, Second Thought relocates the added reasoning off the main thread's sequential decoding path. Across three agentic benchmarks and three reasoning LLMs, Second Thought lowers the average turn count in all nine (model,benchmark) pairs and reduces main thread decoding in six of them by up to 43% (roughly 20% on average among those settings), while leaving it essentially unchanged in a seventh; Pass@1 shows no significant change in seven of nine pairs and the two significant differences are +12.4 and +10.2 points. Against a compute-matched control that forces an equivalent budget onto the main thread's own reasoning, it attains strictly higher Pass@1 with 1.3 to 3.2 less sequential decoding in all four settings where the control applies.",
+    "status": "found"
+  },
+  "2608.13668": {
+    "arxiv_id": "2608.13668",
+    "title": "The Query Knows What to Forget: A Second Erase Direction for Linear Attention",
+    "authors": [
+      "Dhruman Gupta",
+      "Aritra Das",
+      "Debayan Gupta"
+    ],
+    "submission_date": "2026-08-13T18:04:53Z",
+    "latest_updated": "2026-08-13T18:04:53Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13668v1"
+    ],
+    "abstract": "Linear attention keeps a state of fixed size. At long context, many stored items share this state, and interference between them degrades retrieval. Gated DeltaNet-2 (GDN-2), like every delta-rule model before it, derives its erase vector from the key of the current token. However, the interference in its reads is measured through the query, and the erase step cannot reach it. We introduce the Query-derived Erase Direction (QED). QED adds a second erase direction derived from the query and orthogonal to the key. In the fast-weight view, a key-directed delta edit cannot change the key-orthogonal part of a read. It uses the editable part to cancel old-state content measured along the query. It also improves retrieval at every length past the training window, and it about doubles the usable context length on S-NIAH-1.",
+    "status": "found"
+  },
+  "2608.13669": {
+    "arxiv_id": "2608.13669",
+    "title": "Multiphase-Diff: Diffusion-Based Generative Modeling for High-Contrast Multiphase Physical Systems with Sharp Interfaces",
+    "authors": [
+      "Yining Huang",
+      "Zhenyu Liang"
+    ],
+    "submission_date": "2026-08-13T18:05:58Z",
+    "latest_updated": "2026-08-13T18:05:58Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13669v1"
+    ],
+    "abstract": "Physics-constrained diffusion for high-contrast, sharp-interface multiphase fields faces three coupled difficulties. At coefficient jumps, expanded pointwise strong-form PDE residuals contain singular gradient terms that can penalize physical interfaces. Under extreme contrast, low-magnitude phases may fall below the diffusion noise floor and be erased, misscaled, or generated with negative coefficients, while a global likelihood scale allows high-magnitude phases to dominate supervision. We therefore propose Multiphase-Diff, which makes three corresponding contributions: (i) a conservative flux residual that avoids differentiating discontinuous coefficients and enforces discrete conservation; (ii) an analytic bijective representation that maps low-amplitude signals to order-one latent scales and guarantees coefficient positivity through exponential decoding; and (iii) a Jacobi-preconditioned likelihood that normalizes local residual scales for balanced supervision. Experiments on three complementary multiphase benchmarks demonstrate the superiority of Multiphase-Diff over seven baselines in both physical and distributional fidelity and its robustness across phase contrasts and compositions, establishing its effectiveness for scientific sample generation in this challenging regime.",
+    "status": "found"
+  },
+  "2608.13670": {
+    "arxiv_id": "2608.13670",
+    "title": "Fixed angle inverse scattering with non-constant velocity",
+    "authors": [
+      "Lauri Oksanen",
+      "Rakesh",
+      "Mikko Salo"
+    ],
+    "submission_date": "2026-08-13T18:06:03Z",
+    "latest_updated": "2026-08-13T18:06:03Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13670v1"
+    ],
+    "abstract": "In this article, we study formally determined inverse problems for wave equations in the presence of a variable sound speed. We prove that by measuring the boundary data of finitely many plane waves and their complementary solutions, one can uniquely recover the unknown coefficients of the highest order terms of a second order hyperbolic operator with time independent coefficients. This improves earlier rigidity results in [10], [11] which compared the wave operator generated by a Riemannian metric with the wave operator generated by the Euclidean metric. We compare two general second order hyperbolic operators with time independent coefficients, with the same lower order terms. However, we require the geometry associated with one of the operators to satisfy a pseudoconvexity condition, a no-caustics condition, and a spanning condition. In particular one of the operators could be a wave operator with the sound speed close to a constant and the other operator could be arbitrary. To prove the results, we introduce the notion of a complementary solution for a generalized plane wave solution generated by an incoming plane wave. The complementary solution extends smoothly, across an interface, the generalized plane wave. The unknown coefficients appear in a transport equation at the interface. We show that the unknown coefficients in the interior can be extracted from this transport equation, from the boundary data, via a sequence of Carleman estimates for the wave operator.",
+    "status": "found"
+  },
+  "2608.13671": {
+    "arxiv_id": "2608.13671",
+    "title": "PROVE: Training-Free Prompt Recovery using Verifiable Evidence",
+    "authors": [
+      "Rupayan Mallick",
+      "Mahsa Khoshnoodi",
+      "Sarah Adel Bargal"
+    ],
+    "submission_date": "2026-08-13T18:08:00Z",
+    "latest_updated": "2026-08-13T18:08:00Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13671v1"
+    ],
+    "abstract": "Modern text-to-image models can generate highly realistic images from natural-language prompts, while recent advances in prompt inversion have made it increasingly feasible to recover those prompts from generated outputs, raising new concerns for copyright protection and content ownership. As prompt marketplaces emerge, recovered prompts can enable both the unauthorized reproduction and redistribution of copyrighted creative works, and the exposure of the prompts that encode an artist's creative recipe in AI-generated content. Existing prompt inversion methods rely on gradient-based optimization, autoregressive captioning, or reinforcement learning. However, optimization-based methods often produce unreadable prompts, captioning methods hallucinate unverified details, and RL-based approaches frequently overfit to specific generators while introducing evaluation circularity. We introduce PROVE (Prompt Recovery with Verified Evidence), a training-free, black-box prompt inversion attack that reconstructs prompts by composing verifiable scene descriptions rather than optimizing token sequences, targeting both original copyrighted works and AI-generated content. The resulting prompts are fully auditable, with every recovered claim grounded in explicit image evidence, and are formalized through a precision-constrained recall maximization objective. Across MS-COCO, Flickr30K, and Lexica, using state-of-the-art text-to-image generators, PROVE consistently outperforms optimization, captioning, and RL-based baselines on image similarity (DINO, LPIPS) and text-image alignment (CLIP), without any training, generator access, or fine-tuning, demonstrating a stronger and more practical prompt inversion attack.",
+    "status": "found"
+  },
+  "2608.13672": {
+    "arxiv_id": "2608.13672",
+    "title": "Bias Reduction for Local Polynomial Derivative Estimation",
+    "authors": [
+      "Fujia Chang",
+      "W. John Braun"
+    ],
+    "submission_date": "2026-08-13T18:09:35Z",
+    "latest_updated": "2026-08-13T18:09:35Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13672v1"
+    ],
+    "abstract": "Local polynomial smoothing is commonly used in non-parametric regression, but local linear derivative estimation still has a bias of order $O(h^2)$. This paper proposes an iterative data sharpening method to reduce the bias of derivative estimates while retaining the simplicity of local linear fitting. The method is based on two expectation operators: $L_0$, acting on the regression function, and $L_1$, acting on the first-order derivative. By repeatedly applying the residual operator $R=I-L_0$, a series of sharpened derivative estimates can be constructed. After $l$ sharpening steps, the bias order can be reduced from $O(h^2)$ to $O(h^{2l+2})$. For the Gaussian kernel, all sharpening coefficients equal 1, giving a simple closed-form single-bandwidth expression. Simulation experiments on three smooth test functions show that this method can significantly reduce the estimation bias while revealing a bias-variance trade-off.",
+    "status": "found"
+  },
+  "2608.13673": {
+    "arxiv_id": "2608.13673",
+    "title": "Nonprobability Samples for Small Area Estimation: A Review and Comparative Simulation Study",
+    "authors": [
+      "Sho Kawano",
+      "Daniel Vedensky",
+      "Qianyu Dong",
+      "Ethan Pawl",
+      "Qi Wang",
+      "Paul A. Parker",
+      "Zehang Richard Li",
+      "Scott H. Holan"
+    ],
+    "submission_date": "2026-08-13T18:12:53Z",
+    "latest_updated": "2026-08-13T18:12:53Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13673v1"
+    ],
+    "abstract": "Nonprobability samples (NPS) are attractive because they are less costly to collect, can provide substantially larger sample sizes, and may reach populations that traditional probability surveys do not. As response rates for traditional surveys fall, interest in NPS has grown rapidly within the field of survey statistics. These methods are especially relevant for small area estimation (SAE), where there is ever-present demand for estimates at fine geographic scales and detailed demographic domains. Despite rapid methodological development, there remains limited understanding of which approaches perform best under different conditions. In this paper, we review recent developments in NPS methodology, including the concept of data defect correlation (DDC) as a measure of data quality and as a tool for categorizing the various NPS methods. We then present a comprehensive simulation study that evaluates a range of NPS approaches under varying levels of DDC and extend several existing methods to the SAE setting.",
+    "status": "found"
+  },
+  "2608.13674": {
+    "arxiv_id": "2608.13674",
+    "title": "Asymmetric Discourse Homogenization and Shared Language Technology: Evidence from Reddit",
+    "authors": [
+      "Fengming Liu"
+    ],
+    "submission_date": "2026-08-13T18:13:35Z",
+    "latest_updated": "2026-08-13T18:13:35Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13674v1"
+    ],
+    "abstract": "I document an ideologically asymmetric break in the pre-existing diversification trend of political discourse, emerging around late 2022, using 6 million Reddit comments from two cross-partisan forums, 2019-2025. Conservative users experienced an interruption of their prior diversification trajectory; progressive users showed no comparable change. The asymmetry is consistent across estimation strategies (ITS, DiD, RDiT, propensity-score matching) and temporal aggregations. A daily-frequency permutation test over 2,377 candidate cutoff dates shows the ChatGPT threshold produces an unremarkable estimate (49.8th percentile): the shift builds gradually instead of breaking at a single date. A continuous cumulative LLM index, tracking AI exposure across seven model releases, remains significant under a quadratic trend specification that eliminates the binary estimate. A stayer analysis narrows the mechanism: the homogenization effect disappears when the sample is restricted to authors active throughout the study period, and the stayer confidence interval excludes within-author effects even a tenth the size of the full-sample estimate. The mechanism is most parsimoniously ecological (community-level discursive convergence) rather than individual-level AI adoption, though the data cannot cleanly separate this account from concurrent secular change.",
+    "status": "found"
+  },
+  "2608.13675": {
+    "arxiv_id": "2608.13675",
+    "title": "From BERT to Frontier Agents: Eight Years of Language-Model Progress, the Collapse of the Capability-Cost Curve, and the Rise of Task-Targeted Models",
+    "authors": [
+      "Pranav Kumar Kaliaperumal"
+    ],
+    "submission_date": "2026-08-13T18:16:21Z",
+    "latest_updated": "2026-08-13T18:16:21Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13675v1"
+    ],
+    "abstract": "Between October 2018 and July 2026 AI models progressed from simple systems like BERT to massive agents that solve complex math and write software. The ability to resolve real coding issues improved by nearly six times per year since late 2024. During this time costs dropped sharply with OpenAIs budget model GPT 5 point 6 Luna matching flagship capabilities for just one to six dollars per million tokens beating older versions at a fraction of the price. Top performance is now split across specialized models as Claude Opus 5 leads in frontend coding Claude Fable 5 excels at repository level coding and GPT 5 point 6 Sol dominates terminal tasks. In a grade school math test using the Qwen 2 point 5 model basic methods solved 58 of 100 problems while advanced sampling solved up to 79. A confidence ranking tool correctly identified 47 right answers in its top 50 choices proving highly useful for sorting tasks with all research materials made fully public.",
+    "status": "found"
+  },
+  "2608.13676": {
+    "arxiv_id": "2608.13676",
+    "title": "EEG-PRISM: Physiologically-Grounded Interpretability of Predictions by EEG Foundation Models",
+    "authors": [
+      "Deeksha M Shama",
+      "Punnisa Amornsirikul",
+      "Archana Venkataraman"
+    ],
+    "submission_date": "2026-08-13T18:17:47Z",
+    "latest_updated": "2026-08-13T18:17:47Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13676v1"
+    ],
+    "abstract": "Objective: Foundation models represent the next advancement in AI for EEG analysis; however current explainable AI techniques provide attribution scores in the time-channel input space, which is mismatched to clinical intuition about EEG. Thus, there is a critical need for a universal method that can extend the interpretability of any foundation model to alternative and physiologically relevant domains without modifying or retraining the underlying model. Methods: EEG-PRISM leverages linear transformations and established backpropagation rules to map time-channel attribution scores into alternative domains. We derive mappings to the frequency domain via an invertible DFT and to the source domain via an approximately invertible EEG generative model. We evaluate EEG-PRISM in simulated and real data, assessing recovery of ground-truth phenomena across domains with five foundation models and four AI explainers. Results: In simulation, EEG-PRISM achieves near-perfect spectral recovery and 69.2% spatial accuracy. In epilepsy, EEG-PRISM correctly determines that delta-theta activity is most salient and correctly localizes the seizure onset region with 50% accuracy. In autism, EEG-PRISM localizes the predictive delta-alpha biomarkers to frontal and temporal regions, consistent with prior work. Conclusion: EEG-PRISM is a theoretically-grounded post-hoc attribution method with accurate mapping into the spectral and spatial domains. It supports window-level analysis of transient events (e.g., seizures) and group-level identification of clinically relevant biomarkers (e.g., autism), thus advancing interpretable EEG foundation models. Significance: This work enables physiologically-grounded interpretation of EEG foundation models and supports clinically relevant insights such as event localization and biomarker identification.",
+    "status": "found"
+  },
+  "2608.13677": {
+    "arxiv_id": "2608.13677",
+    "title": "Asymptotically complete free-energy dissipation: a coarse MLSI holds at any positive temperature",
+    "authors": [
+      "Jonas Köppl",
+      "Yannic Steenbeck"
+    ],
+    "submission_date": "2026-08-13T18:21:57Z",
+    "latest_updated": "2026-08-13T18:21:57Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13677v1"
+    ],
+    "abstract": "Everybody learns in school that an out-of-equilibrium system coupled to a heat bath at a fixed temperature evolves to thermodynamic equilibrium as time goes on, and the free energy will only decrease on its way there. At least since Holley's 1971 work, mathematicians know this too, in the modest context of classical Ising Glauber dynamics. But does the free energy also asymptotically decrease to the free energy of an equilibrium state? A typical school kid would say \"yes, of course\", but since the free energy is only lower semicontinuous, this question is less straightforward than it initially seems. To the best of our knowledge, apart from the uniqueness regime, where one can make use of classical functional inequalities, this question has not previously been resolved rigorously. We prove the asymptotically complete dissipation of the free energy for the classical Ising Glauber dynamics by introducing a coarse modified log-Sobolev inequality, which holds at every positive temperature, in particular in the phase-coexistence regime.",
+    "status": "found"
+  },
+  "2608.13678": {
+    "arxiv_id": "2608.13678",
+    "title": "Composing Learned Robot Behaviors with Temporal Logic at Runtime",
+    "authors": [
+      "Moritz Zoellner",
+      "Anastasios Manganaris",
+      "Ahmed H. Qureshi",
+      "Rohan Paleja"
+    ],
+    "submission_date": "2026-08-13T18:22:08Z",
+    "latest_updated": "2026-09-30T03:38:52Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.13678v1",
+      "2608.13678v2"
+    ],
+    "abstract": "Executing Linear Temporal Logic (LTL) instructions with learned robot policies faces two practical challenges: demonstrations may cover individual behaviors without containing the temporal compositions requested at deployment, and semantic success predicates often provide little useful motor guidance through quantitative robustness. We address these challenges by separating behavior learning from temporal composition. From the same offline demonstrations, we train an unconditioned multimodal diffusion policy and a semantic predictor that estimates which semantic outcomes are likely to follow a proposed action sequence. These predictions provide a learned guidance signal without requiring hand-designed robustness measures for semantic task objectives. At deployment, an LTL automaton tracks instruction progress and scores the policy's proposed actions according to their predicted semantic outcomes. Neither learned component receives the specification during training, allowing demonstrated behaviors to be reused in longer, previously unseen temporal compositions without retraining. For additional runtime safety constraints with informative continuous margins, an optional robustness-based controller locally refines the selected actions. Experiments in a navigation environment, CALVIN manipulation, and on a real robot demonstrate reliable execution of complex temporal instructions and additional safety constraints, with substantial improvements over temporal-logic baselines.",
+    "status": "found"
+  },
+  "2608.13679": {
+    "arxiv_id": "2608.13679",
+    "title": "Strand-based Hairstyle Generation via Large Reconstruction and Multimodal Models",
+    "authors": [
+      "Conghui Hao",
+      "Tao Huang",
+      "Yuefan Shen",
+      "Tongtong Wang",
+      "Zhongtian Zheng",
+      "Kui Wu"
+    ],
+    "submission_date": "2026-08-13T18:22:08Z",
+    "latest_updated": "2026-08-13T18:22:08Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13679v1"
+    ],
+    "abstract": "Creating high-quality strand-based hairstyles in current production pipelines remains heavily dependent on skilled artists and time-consuming manual authoring, making it costly and difficult to scale. Existing learning-based methods have advanced image-driven hair reconstruction, but typically require large, diverse training datasets, struggle to generalize to complex styles such as buns and ponytails, and often operate in representations that are not directly compatible with strand-based modeling, editing, and simulation. We present a novel automatic pipeline that combines the capabilities of Large Reconstruction Models (LRMs), Large Multimodal Models (LMMs), and classical geometry processing to generate high-quality strand-based hairstyles from single-view images. Our approach produces detailed, production-ready strand geometry without task-specific training or data collection and can handle a wide variety of hairstyles, including straight and curly hair, short and long styles, and challenging structured configurations such as ponytails and buns. Across this diverse set of examples, our method generates visually compelling strand-level reconstructions within only a few minutes, making it well-suited for integration into modern digital human workflows.",
+    "status": "found"
+  },
+  "2608.13680": {
+    "arxiv_id": "2608.13680",
+    "title": "High-Energy Neutrinos from Supernova Shock Breakouts in Circumstellar Media: Light Curves, Spectra, and Contribution to the Extragalactic Neutrino Background",
+    "authors": [
+      "Tal Wasserman",
+      "Eli Waxman",
+      "Kohta Murase"
+    ],
+    "submission_date": "2026-08-13T18:22:50Z",
+    "latest_updated": "2026-08-13T18:22:50Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13680v1"
+    ],
+    "abstract": "Enhanced mass loss from core-collapse supernova (SN) progenitors shortly before explosion appears to be common, creating a compact, optically thick circumstellar medium (CSM) at $\\sim10^{14}-10^{15}$ cm. We derive an analytic description of the light curves and spectra of high-energy neutrinos emitted by nonrelativistic SN shock breakouts through such CSM, as a function of shock velocity and CSM parameters, accounting for the evolution of the hydrodynamic structure and the electromagnetic (EM) spectrum as the shock transitions from being radiation-mediated to collisionless. This evolution determines the time-dependent neutrino production efficiency, the maximum proton/neutrino energy, and the pair-production optical depth. A significant fraction of the neutrino energy is typically emitted within a few days of explosion, during breakout and before the EM light curve peak, with $1-100$ TeV neutrinos carrying $\\approx10\\%$ of the energy of shock-accelerated protons. The escape of high-energy photons ($>1$~GeV) is suppressed by pair-production for compact CSM configurations. If enhanced mass losses are common, and assuming that shock-accelerated protons carry $\\approx10\\%$ of the collisionless shock energy, CSM SN breakouts may significantly contribute to the observed high-energy neutrino background, without overproducing a corresponding high-energy gamma-ray background. SNe producing $>1$ neutrino events in a $1\\left(10\\right){\\rm km^2}$ detector are expected at a rate of $\\sim0.05\\left(1\\right){\\rm yr^{-1}}$.",
+    "status": "found"
+  },
+  "2608.13681": {
+    "arxiv_id": "2608.13681",
+    "title": "Fine-Tuning Qwen3-27B for C-to-Rust Code Translation: A Three-Stage Curriculum of Pretraining, Debugging-Aware SFT, and Task-Specific SFT",
+    "authors": [
+      "Pu Zhao",
+      "Changdi Yang",
+      "Yixiao Chen",
+      "Yi Gao",
+      "Yifan Cao",
+      "Haochen Zeng",
+      "Yanzhi Wang"
+    ],
+    "submission_date": "2026-08-13T18:24:02Z",
+    "latest_updated": "2026-08-13T18:24:02Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13681v1"
+    ],
+    "abstract": "Translating C code into safe, idiomatic Rust is a longstanding software-engineering goal because it can eliminate entire classes of memory-safety vulnerabilities while preserving the functional behavior of legacy systems. Large language models (LLMs) have shown promise for this task but typically underperform when applied off-the-shelf, since general-purpose pretraining rarely emphasizes idiomatic Rust generation, cross-language semantic equivalence, or the ability to reason about and repair compiler/runtime feedback. In this report we describe a three-stage fine-tuning curriculum applied to Qwen3-27B that is designed to progressively specialize the model for the C-to-Rust (C2Rust) translation task: (1) continued pretraining on Rust-centric corpora to strengthen the model's prior over idiomatic Rust syntax and standard-library usage; (2) supervised fine-tuning (SFT) on the microsoft/Verus_Training_Data dataset to instill debugging and self-repair behavior over Rust code; and (3) task-specific SFT on paired C/Rust solutions derived from LeetCode problems to teach direct semantic translation. We evaluate the resulting model using the agentic, static-analysis-guided verification framework of SACTOR, which performs structure-aware, two-phase (unidiomatic to idiomatic) translation with foreign-function-interface (FFI)-based end-to-end (E2E) testing. We report success rate, idiomaticity (Clippy lint counts, unsafe-code fraction), and failure-mode analyses, and compare our fine-tuned model against baseline Qwen3-27B and other LLMs evaluated under the same framework.",
+    "status": "found"
+  },
+  "2608.13682": {
+    "arxiv_id": "2608.13682",
+    "title": "A refined Schwarz lemma for $V$-harmonic maps",
+    "authors": [
+      "Guangwen Zhao"
+    ],
+    "submission_date": "2026-08-13T18:25:29Z",
+    "latest_updated": "2026-08-22T02:41:06Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.13682v1",
+      "2608.13682v2"
+    ],
+    "abstract": "In this note, we establish a refined Schwarz lemma for $V$-harmonic maps. Specifically, we prove that if $u$ is a $V$-harmonic map of generalized dilatation of order $β$ from a complete Riemannian manifold with Bakry--Émery Ricci curvature bounded below by a constant $-A$ to a Riemannian manifold with sectional curvature bounded above by a negative constant $-B$, then $$ u^*h\\le \\frac{Ac(β)}{BD(β)}g \\le \\frac{Aβ^2}{B}g, $$ where $c(β)=β^2/(1+β^2)$ and $D(β)=1-\\lfloor 1/c(β)\\rfloor c(β)^2-(1-\\lfloor 1/c(β)\\rfloor c(β))^2$. Equality in the second inequality holds if and only if $β=1,\\ 1/\\sqrt{2},\\ 1/\\sqrt{3}, \\cdots $. Our result improves the previous bounds obtained by Shen (J. Reine Angew. Math., 1984) for harmonic maps and by Chen--Li--Qiu (Nonlinear Anal., 2022) for $f$-harmonic maps. We also present some applications of our main theorem.",
+    "status": "found"
+  },
+  "2608.13683": {
+    "arxiv_id": "2608.13683",
+    "title": "Generalized space-charge solver for three-dimensional converging or diverging beams",
+    "authors": [
+      "Ji Qiang"
+    ],
+    "submission_date": "2026-08-13T18:26:35Z",
+    "latest_updated": "2026-08-13T18:26:35Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13683v1"
+    ],
+    "abstract": "Nonlinear space-charge effects play a critical role in the dynamics of high-intensity, high-brightness beams. While conventional space-charge forces scale inversely with the square of the relativistic Lorentz factor ($γ$) as beam energy increases, this suppression may not apply to all components of the electromagnetic force. In this paper, we present a generalized space-charge solver that accounts for contributions from transverse currents in three-dimensional (3D) converging or diverging beams. We demonstrate that these additional forces from transverse currents lack an explicit dependence on $γ$, potentially rendering them significant in specific high-energy applications. We provide a semi-analytical solution for a 3D converging or diverging beam with the Gaussian density distribution and identify the regimes in which these transverse current forces become comparable to conventional space-charge forces. Furthermore, we present a numerical solution for the generalized model applicable to arbitrary density distributions. Finally, we evaluate the impact of these forces on strongly converging electron beams within the interaction regions of the FCC-ee and ILC, as well as the second bunch compressor of LCLS-II-HE; our results indicate that these extra forces do not significantly alter the final electron beam quality in these specific cases.",
+    "status": "found"
+  },
+  "2608.13684": {
+    "arxiv_id": "2608.13684",
+    "title": "Learning to Assemble Novel Structures with Unfamiliar Parts under Semantic Constraints",
+    "authors": [
+      "Jonghyuk Park",
+      "Alex Lascarides",
+      "Subramanian Ramamoorthy"
+    ],
+    "submission_date": "2026-08-13T18:27:29Z",
+    "latest_updated": "2026-08-13T18:27:29Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13684v1"
+    ],
+    "abstract": "This paper describes a neurosymbolic architecture for learning to assemble novel structures using evidence from embodied conversations and task demonstrations. We focus on scenarios where an agent encounters, after deployment, semantic constraints on structures--in other words, constraints as to which part types and features make valid structures--that were not available during training, and where it is initially unaware of the relevant structure and component part concepts. The agent must acquire and exploit such knowledge through user interactions while attempting assembly. We study this setting in a simulated toy truck assembly domain, learning from symbolic evidence encoded in natural language and from dense visual observations. Our experiments show that communicating semantic constraints through natural language (e.g., \"dump trucks have a dumper\") yields more data-efficient online adaptation than relying only on task demonstrations and/or only naming the parts through natural language.",
+    "status": "found"
+  },
+  "2608.13685": {
+    "arxiv_id": "2608.13685",
+    "title": "Weird Machines in Transport Layer Security",
+    "authors": [
+      "Michael Collins",
+      "Jada Cumberland",
+      "Brianne Dunn",
+      "Ross Gore",
+      "Samuel Jackson",
+      "Sachin Shetty",
+      "Jonathan Takeshita"
+    ],
+    "submission_date": "2026-08-13T18:28:01Z",
+    "latest_updated": "2026-08-13T18:28:01Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13685v1"
+    ],
+    "abstract": "Weird machines are latent computational capabilities that emerge from the composition of architectural components. Prior work has studied this phenomenon extensively in software systems, including x86 instructions, ELF metadata, and page tables, and more recently in cyber-physical systems such as industrial control networks. This paper extends weird machine theory to a new domain: the Transport Layer Security (TLS) handshake and its two dominant implementations, OpenSSL and BoringSSL. We show that legitimate TLS primitives, including session cache entries, renegotiation logic, extension parsing, and certificate verification steps, compose into Turing-complete systems whose computation is coupled to authentication and trust decisions rather than physical actuation. We formalize this coupling, which we call trust actuation, and argue that any TLS implementation providing session storage, arithmetic on sequence counters, conditional branching on handshake state, and iteration through resumption or retry loops satisfies the conditions for arbitrary computation. We validate this theory with two working demonstrations built on real OpenSSL code paths. The first, a sentinel system, composes standard TLS primitives into a defensive mechanism that detects anomalous handshake behavior. The second, an authentication bypass, composes the same class of primitives into an attack that defeats a cipher-strength policy check through mid-connection renegotiation, without any memory corruption or external malware. Both demonstrations run against real server and client binaries in Docker.",
+    "status": "found"
+  },
+  "2608.13686": {
+    "arxiv_id": "2608.13686",
+    "title": "Strong-field Herman-Kluk propagator method for high-harmonic generation in molecules",
+    "authors": [
+      "Phi-Hung Tran",
+      "Hao Quan Truong",
+      "R. Esteban Goetz",
+      "Anh-Thu Le"
+    ],
+    "submission_date": "2026-08-13T18:32:36Z",
+    "latest_updated": "2026-08-13T18:32:36Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13686v1"
+    ],
+    "abstract": "We extend our recently developed semiclassical strong-field Herman-Kluk (SFHK) propagator method to calculate high-order harmonic generation (HHG) in diatomic molecules driven by few-cycle intense laser fields. On the example of applications to H2 and N2, we show that our method, based on a combination of the Herman-Kluk propagator and the strong-field approximation, can provide very accurate results for both HHG yield and phase, nearly identical to those from the exact numerical solutions of the time-dependent Schrodinger equation. To compare with experimental measurements, averaging over molecular orientations must be performed. Here we demonstrate a distinct and powerful advantage of the SFHK, as its Monte Carlo sampling for the integration over the alignment distribution can be efficiently combined with the integration over the initial momentum distributions of electron wave-packet right after the tunnel exit. Therefore, the total number of trajectories used for the alignment-averaged HHG spectrum does not increase much compared to that for a single fixed alignment. Similar to atomic targets, the main computational task in the SFHK is to solve the classical Hamiltonian equations for the active electron in the combined electron-target ion potential and electron-laser interaction. The motion of the center of each electron wave packet in the continuum, represented by a coherent state, is governed by an independent classical trajectory so that the computation can be parallelized very efficiently.",
+    "status": "found"
+  }
+}

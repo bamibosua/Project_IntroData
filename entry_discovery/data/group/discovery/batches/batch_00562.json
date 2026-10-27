@@ -1,0 +1,401 @@
+{
+  "2608.10247": {
+    "arxiv_id": "2608.10247",
+    "title": "DualSpectralCF: Training-Free Sign-Aware Spectral Collaborative Filtering",
+    "authors": [
+      "Guanqun Yang",
+      "Tong Qi",
+      "Xiaoxue Han"
+    ],
+    "submission_date": "2026-08-10T21:28:37Z",
+    "latest_updated": "2026-08-10T21:28:37Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10247v1"
+    ],
+    "abstract": "Real-world recommendation platforms routinely collect explicit negative feedback such as 1-star reviews, hate-button clicks, distrust between users, and very-low watch-ratio videos. Learned sign-aware recommenders exploit this signal for clear accuracy gains, but only at the cost of gradient-based training. In parallel, a line of training-free spectral collaborative filtering methods matches or beats learned graph recommenders at a fraction of the cost, yet operates on positive interactions alone. We bridge these two lines with DualSpectralCF, a training-free framework of two components that attach to any spectral backbone of the form $\\hat{\\mathbf{r}}_u = F(\\mathbf{M}) \\mathbf{r}_u$: a signed input signal $\\mathbf{r}_u^{\\pm}$ that encodes the user's explicit dislikes, and a signed item-item operator $\\mathbf{M}^{\\pm}$ that blends like-together and dislike-together similarity. The framework is backbone-agnostic and adds just two scalar hyperparameters. We instantiate DualSpectralCF on ChebyCF, GF-CF, and Turbo-CF, and evaluate on five sign-aware benchmarks: every instance matches or beats its unsigned backbone on all 5 datasets, with Recall@20 lifts up to +32.6% with backbone-specific $(γ, κ)$ tuning and +1.9% to +16.0% for DualSpectralCF-Cheby at the fixed default $(γ= -0.5, κ= 0.1)$, and the family runs 7.7 to 155.3$\\times$ faster than SIGformer while reaching 70.7% to 90.7% of its accuracy. Sign-awareness helps most for cold-start users, with up to +29.2% Recall@20 on Epinions users with 1 to 5 training items.",
+    "status": "found"
+  },
+  "2608.10248": {
+    "arxiv_id": "2608.10248",
+    "title": "Bias Smells in AI Software Development: Recognizing Potential Sources of Fairness Debt",
+    "authors": [
+      "Ronnie de Souza Santos",
+      "Cleyton Magalhaes",
+      "Rodrigo Spinola"
+    ],
+    "submission_date": "2026-08-10T21:31:25Z",
+    "latest_updated": "2026-08-10T21:31:25Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10248v1"
+    ],
+    "abstract": "Context: Fairness debt arises from AI development shortcomings that may lead to societal harms. While technical and social debt concern software design decisions and team dynamics, respectively, fairness debt captures the long-term consequences of development decisions that may reinforce bias and inequities in AI-based software systems. Despite growing attention to AI fairness, limited evidence exists on how practitioners recognize potential sources of fairness debt during development. Aim: This study investigates the indicators practitioners recognize as signaling potential sources of fairness debt in AI-based software projects. Method: We conducted an exploratory case study of four AI projects within one organization. Data were collected from 25 professionals through semi-structured interviews and open-ended questionnaires, complemented by observation of internal communication channels and project documentation, and analyzed using iterative qualitative coding, memoing, and constant comparison. Results: We identified six recurring indicators, termed bias smells: Context Oversimplification, Dataset Imbalance, Metrics Inadequacies, Ad hoc Testing, Individual Diversity Unawareness, and Homogeneous Team Composition. These smells span technical and human aspects of software development and signal conditions that may introduce or reinforce bias and contribute to fairness debt. Conclusion: Bias smells extend the software smell paradigm to fairness and provide a foundation for incorporating fairness into software quality assurance through observable indicators.",
+    "status": "found"
+  },
+  "2608.10249": {
+    "arxiv_id": "2608.10249",
+    "title": "STCAD: Scalable Trajectory Clustering and Anomaly Detection on Terabyte-Scale AIS Data",
+    "authors": [
+      "Bertram Hage",
+      "Alexander Schiøtz",
+      "Felix Thomsen",
+      "Christian Rand",
+      "Peder Heiselberg"
+    ],
+    "submission_date": "2026-08-10T21:32:42Z",
+    "latest_updated": "2026-08-10T21:32:42Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10249v1"
+    ],
+    "abstract": "We present a scalable framework for unsupervised clustering of maritime trajectories derived from terabyte-scale Automatic Identification System (AIS) archives. Variable-length trajectories are encoded with a custom BERT-based model trained via masked token modeling and clustered using CURE hierarchical clustering, producing physically interpretable trajectory groups without requiring a predefined number of clusters. An intrinsic unsupervised anomaly detection method based on reconstruction loss and clustering noise assignment identifies irregular navigation patterns. The framework is demonstrated on a national-scale AIS dataset comprising billions of messages spanning one year, yielding stable trajectory clusters and a clear separation between nominal and anomalous vessel behavior.",
+    "status": "found"
+  },
+  "2608.10250": {
+    "arxiv_id": "2608.10250",
+    "title": "Astro+ database. I. Description and first results",
+    "authors": [
+      "K. Rübke",
+      "A. Marco",
+      "I. Negueruela",
+      "A. Herrero",
+      "S. Simón-Díaz",
+      "H. M. Tabernero",
+      "L. R. Patrick"
+    ],
+    "submission_date": "2026-08-10T21:34:17Z",
+    "latest_updated": "2026-09-01T11:59:00Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.10250v1",
+      "2608.10250v2"
+    ],
+    "abstract": "The vast amounts of spectroscopic data for massive stars provided by previous and existing instruments on ground-based and space-based telescopes have saturated our capability to process them by human inspection routines. Consequently, there is a pressing need for fully automatic machine-assisted tools to help handle incoming data. To this end, we present the development of a massive star spectroscopic interactive database, Astro+. We aim to provide users with a reliable, versatile, and user-friendly platform that will be significant for understanding massive stars and set an important precedent for future open-access astrophysical research. This tool allows authorized users to upload their own spectra and, by using the fully automated tool HiLineThere, a Python-based program, it can homogeneously derive basic stellar parameters, such as v_rad, v sin i, Teff and log g for massive OB-type stars, using a solar-metallicity grid of FASTWIND models, and v_rad, [Fe/H], Teff and log g for red supergiant stars, in a completely autonomous way. Here we present the first results of the tool HiLineThere on optical spectra for OB-type stars and red supergiants. We compare the output of our analysis for OB-type stars with literature values for a large sample of well-studied objects, finding differences within the expected error ranges: Teff ~ 800 K, log g ~ 0.1 dex, and v sin i ~ 10 km/s. Preliminary tests on early-B stars also show consistent results during the transition to lower temperatures. For red supergiants, we find differences within 7 km/s in v_rad and ~300 K in Teff for two test samples.",
+    "status": "found"
+  },
+  "2608.10251": {
+    "arxiv_id": "2608.10251",
+    "title": "Off-Axis, On Purpose: Where a Transformer Computes Concepts and Why it Does So",
+    "authors": [
+      "Mark Oskin"
+    ],
+    "submission_date": "2026-08-10T21:35:48Z",
+    "latest_updated": "2026-08-10T21:35:48Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10251v1"
+    ],
+    "abstract": "A transformer's answer lives on one axis: the direction its unembedding reads. Its intermediate states largely do not, and that off-axis position is usually treated as an obstacle to interpretation. We show it is functional. A 12-layer model computes in two phases. Through the first, every sublayer writes into a subspace held near-orthogonal to the read-out, attention 75 to 96 degrees off it at every depth. Moving attention's values onto the read-out is 64 to 84 times more damaging than a matched random rotation, and the damage is entirely in cross-token mixing: the subspace insulates composition from the vocabulary. Beneath it the frame itself turns rigidly with depth. In the second phase the answer arrives on-axis, late, and by addition rather than by turning accumulated content onto the read-out. Pressing every layer onto the read-out instead, as training for early exit does, matches the baseline on perplexity, LAMBADA and BLiMP while cutting the concept-phase workspace from about twenty-five effective dimensions to fourteen, a change none of those benchmarks register. The geometry can also be imposed, though not by asking for it. Prescribing it through the loss is a lottery: six of eight seeds collapse, because a model told to null its read-out projection obeys most cheaply by discarding dimensions. Inserting one fixed rotation at the phase boundary lands it instead, at baseline quality. A sparse rotation the surrounding weights can absorb converges on all nine seeds, against five of nine for ordinary training. Which rotation is immaterial: twenty-five runs across thirteen distinct ones reach the same quality, and two baselines from different seeds hold their concepts in near-orthogonal frames while agreeing on their read-outs. That freedom is usable: a basis drawn at random and prescribed before training is adopted across the concept phase, with quality unchanged.",
+    "status": "found"
+  },
+  "2608.10252": {
+    "arxiv_id": "2608.10252",
+    "title": "Joint return levels of maximum temperature and minimum relative humidity by combining copulas with an extreme value framework for bimodal data",
+    "authors": [
+      "Beatriz G da Cruz Albernaz",
+      "Cira E G Otiniano",
+      "Carolyne Soares de Brito",
+      "Fidel E C Morales",
+      "Enzo Porto Brasil"
+    ],
+    "submission_date": "2026-08-10T21:36:41Z",
+    "latest_updated": "2026-08-10T21:36:41Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10252v1"
+    ],
+    "abstract": "Climate change has become a growing concern, particularly in regions experiencing increasingly frequent extreme events. In Brasília, the capital of Brazil, significant shifts in climate patterns have drawn attention, including episodes of intense heat, unusually cold weather, and prolonged dry periods, often accompanied by wildfires. These phenomena directly affect the population and local ecosystems, requiring detailed analyses to understand their causes and effects. In this work, the return period for the joint distribution of maximum air temperature and minimum relative humidity in Brasília is determined using a copula-based approach. First, the dependence structure between the variables is modeled through a copula, while the marginal distributions are fitted using the novel methodology for modelling extreme values in complex systems. Different copula families, including rotated versions, were evaluated using information criteria, leading to the selection of a model that adequately captured the dependence structure, including asymmetry and tail behavior. The selected model also reproduced the multimodal pattern observed in the joint density, a feature consistent with the possible presence of multiple climate regimes. In the context of climate data modelling, the bivariate return level was determined using a conditional approach to assess the occurrence of extreme scenarios characterized by high temperatures combined with low relative humidity. This analysis makes it possible to quantify the expected frequency of such events, providing valuable information for environmental risk monitoring, the planning of preventive measures, and the development of climate change adaptation strategies in the region.",
+    "status": "found"
+  },
+  "2608.10253": {
+    "arxiv_id": "2608.10253",
+    "title": "Applications of Nonlinear Projections to Rectifiable 1-sets",
+    "authors": [
+      "Rosemarie Bongers",
+      "Paige Bright",
+      "Caleb Marshall",
+      "Krystal Taylor"
+    ],
+    "submission_date": "2026-08-10T21:37:01Z",
+    "latest_updated": "2026-08-10T21:37:01Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10253v1"
+    ],
+    "abstract": "Projection theorems in Euclidean space provide a fundamental link between the geometric structure of a set and the size of its lower-dimensional images. For 1-rectifiable sets in $\\mathbb{R}^d$, a classical theorem of Federer shows that the 1-dimensional Hausdorff measure of such sets is controlled by the multiplicity-weighted lengths of finitely many linearly independent projections. We develop a framework for extending Federer's result into a diverse set of nonlinear problems. This technique yields a unified approach for studying sets through their lower-dimensional nonlinear images, as well as studying the exceptional sets which exhibit poor projective behavior. As illustrations of our technique, we show that (i) every 1-rectifiable set contains a pin whose pinned distance set has positive Lebesgue measure, and that the exceptional set of pins for which this fails is contained in a $(d-2)$-dimensional affine subspace; (ii) planar radial projections of a 1-rectifiable set can fail to have positive length from at most one vantage point unless the set is essentially linear; and finally (iii) unions of circles centered on a 1-rectifiable set have positive area under mild assumptions on the radius function.",
+    "status": "found"
+  },
+  "2608.10254": {
+    "arxiv_id": "2608.10254",
+    "title": "A Pragmatic Guide to Building Conservative Discrete Abstractions of Cyber-Physical Systems",
+    "authors": [
+      "Jordan Peper",
+      "Krish Kapadia",
+      "James Gast",
+      "Ethan Howes",
+      "Ivan Ruchkin"
+    ],
+    "submission_date": "2026-08-10T21:37:47Z",
+    "latest_updated": "2026-08-10T21:37:47Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10254v1"
+    ],
+    "abstract": "Symbolic model checking is an effective approach for verifying semantically rich temporal-logic properties of cyber-physical systems, but it hinges on discretizing continuous-state dynamics into a finite-state abstraction. To transfer verification guarantees from the abstract model to the concrete CPS, the abstraction must conservatively approximate the concrete state space and behaviors. Hence, model-builders must maintain this soundness while balancing pessimism with tractability. However, they face several common pitfalls such as under-approximating the state space, under-approximating transitions, unsound pruning of \"degenerate\" behaviors, and improper specification lifting. This tutorial presents a pragmatic, conservative-by-construction workflow for building discrete abstractions of closed-loop dynamical systems. The workflow consists of four modular steps with interchangeable subroutines: (i) state-space partition and abstraction-function design, (ii) conservative transition construction via axis-aligned bounding boxes, polytopes, or sampling with PAC coverage certificates, (iii) mitigation of spurious transitions and self-loops using certified erasure and counterexample-guided abstraction refinement, and (iv) sound lifting of LTL specifications using may-must semantics. We demonstrate the end-to-end pipeline on three case studies and report how these design choices affect abstraction structure, runtime, and verification outcomes.",
+    "status": "found"
+  },
+  "2608.10255": {
+    "arxiv_id": "2608.10255",
+    "title": "Spaces of subobjects as spectral spaces",
+    "authors": [
+      "Federico Campanini",
+      "Carmelo Antonio Finocchiaro"
+    ],
+    "submission_date": "2026-08-10T21:42:30Z",
+    "latest_updated": "2026-08-10T21:42:30Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10255v1"
+    ],
+    "abstract": "We study natural topologies on spaces of subobjects of a fixed object in a suitable category, with the aim of determining when these spaces are spectral. A central step in our approach, which is also of independent interest, is the comparison between the categorical notion of a $λ$-generated object and the order-theoretic notion of a $λ$-compact element in a lattice of subobjects. We prove that these notions coincide under some natural and mild assumptions . In the finitary case, this allows us to describe the finitely generated subobjects purely in order-theoretic terms and to construct, inside each interval of a subobject lattice, a canonical algebraic core. We study this construction abstractly for complete lattices and characterize it by a universal property. We then introduce the categorical Zariski topology on spaces of subobjects, relate it to the Scott topology, and obtain spectrality criteria for the whole subobject space and for its algebraic core.",
+    "status": "found"
+  },
+  "2608.10256": {
+    "arxiv_id": "2608.10256",
+    "title": "CRHT: A Continuous Regression Hybrid Transformer for Vessel Trajectory Prediction with Online Cluster Sampling",
+    "authors": [
+      "Alexander Schiøtz",
+      "Bertram Hage",
+      "Christian Rand",
+      "Felix Thomsen",
+      "Peder Heiselberg"
+    ],
+    "submission_date": "2026-08-10T21:42:40Z",
+    "latest_updated": "2026-08-10T21:42:40Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10256v1"
+    ],
+    "abstract": "Accurate vessel trajectory prediction is critical for maritime safety and anomaly detection, yet existing models often struggle with geographic bias and navigational realism. We propose the Continuous Regression Hybrid Transformer (CRHT), a deep learning framework designed to forecast vessel motion using Automatic Identification System (AIS) data. To mitigate spatial data imbalance, we introduce an online K-means cluster sampling strategy that ensures diverse exposure to rare maneuvers during training. Our hybrid architecture integrates 1D convolutional layers for local kinematic feature extraction with a multi-head attention mechanism for global temporal context. CRHT demonstrates superior performance in short-term forecasting, achieving the lowest errors at the 1-hour horizon. The results demonstrate that while discrete models provide high navigational stability over long horizons, CRHT offers an optimal balance of precision and maneuver tracking for real-time maritime surveillance.",
+    "status": "found"
+  },
+  "2608.10257": {
+    "arxiv_id": "2608.10257",
+    "title": "GenRec: An LLM-Backed Recommendation Ranker at Netflix",
+    "authors": [
+      "Ying Li",
+      "Shradha Sehgal",
+      "Arjun Rao",
+      "Rein Houthooft",
+      "Yaochen Zhu",
+      "Ashish Rastogi"
+    ],
+    "submission_date": "2026-08-10T21:43:14Z",
+    "latest_updated": "2026-08-21T22:32:55Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.10257v1",
+      "2608.10257v2"
+    ],
+    "abstract": "Large language models (LLMs) are reshaping recommender systems by enabling richer modeling of users, content, and context directly in natural language. At Netflix, we are exploring this direction through GenRec, an LLM-backed recommendation ranker built on top of an in-house foundational LLM. GenRec follows a two-phase framework: Phase 1 adapts an open-source LLM to Netflix data, developing deep understanding of the catalog and member behavior while balancing capabilities such as content understanding and instruction following. Phase 2 post-trains this foundation model with recommendation-ranking specific data, labels, and reward signals, aiming to align the ranker with business requirements and long-term member satisfaction. This paper focuses on Phase 2 and the transition from a traditional discriminative ranker with thousands of engineered features to an LLM-backed ranker driven by verbalized user histories and context. We describe our design for input verbalization and context engineering, post-training data construction, reward integration, model architecture, and a cost-constrained serving design based on a prefill-only inference approach. We report results from a large-scale A/B test comparing GenRec against the current production ranker model, where we show that a GenRec model trained with substantially fewer Phase-2 labeled training examples and input signals can achieve statistically significant gains in offline and online metrics. We discuss how LLM-backed recommenders could shift the recommendation paradigm: from feature engineering to context engineering, and from bespoke architectures to shared foundation backbones. We also outline practical lessons for serving such systems under real-world resource constraints.",
+    "status": "found"
+  },
+  "2608.10258": {
+    "arxiv_id": "2608.10258",
+    "title": "TAF-MED: Multi-Turn Safety Refusal Collapse in LLMs Under Declared Self-Treatment Intent",
+    "authors": [
+      "Waleed Jamil",
+      "Raphael Schmitt"
+    ],
+    "submission_date": "2026-08-10T21:43:58Z",
+    "latest_updated": "2026-08-10T21:43:58Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10258v1"
+    ],
+    "abstract": "Large language models (LLMs) increasingly provide conversational health information that may influence treatment decisions, yet existing benchmarks do not isolate whether medication-safety boundaries persist across follow-ups after explicit self-treatment intent. We introduce TAF-MED, a physician-reviewed benchmark of 500 fixed three-turn scenarios, and evaluate eight LLMs across 4,000 conversations. A rubric-based automated judge labelled responses as SAFE, LEAKY, or UNSAFE, and two physicians independently annotated a model-balanced random subset of 400 conversations. We assessed unsafe guidance, collapse after a strictly SAFE initial response, and model-ranking stability. Overall, 71.6% of conversations contained an UNSAFE response, and 61.4% of those beginning with a strictly SAFE response later collapsed to UNSAFE; model-level collapse rates ranged from 24.4% to 96.2%. Four of 28 model pairs reversed order between initial unsafe and collapse rates. Automated labels achieved 94.3% agreement with the adjudicated physician reference ($κ= 0.895$). These findings show that first-turn safety is an incomplete proxy for conversational safety persistence and motivate evaluation across complete dialogue trajectories. We will release TAF-MED on Hugging Face to support reproducible research on multi-turn medical safety.",
+    "status": "found"
+  },
+  "2608.10259": {
+    "arxiv_id": "2608.10259",
+    "title": "Astrophysical Constraints on Hadron--Quark Crossover in Hybrid Neutron Stars",
+    "authors": [
+      "Gábor László Kasza",
+      "György Wolf"
+    ],
+    "submission_date": "2026-08-10T21:45:57Z",
+    "latest_updated": "2026-10-23T08:39:29Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.10259v1",
+      "2608.10259v2"
+    ],
+    "abstract": "We investigate astrophysical constraints on hybrid neutron-star equations of state constructed by combining an extended linear sigma model description of quark matter with several representative hadronic equations of state through a smooth hadron--quark crossover. Four different hadronic models are examined in order to explore the model dependence of the resulting hybrid equations of state. After imposing stability, causality, perturbative QCD matching, tidal deformability, and maximum-mass constraints, only the eLSM+GMSR(BSK16) construction remains fully consistent with current astrophysical observations. The surviving parameterizations are further constrained using Bayesian inference based on NICER mass--radius measurements and the GW170817 gravitational-wave event. The posterior distributions favor a broad hadron--quark crossover occurring at relatively high baryon densities, while the formation of extended pure quark cores is strongly disfavored. Instead, the current observations favor neutron stars containing an extended mixed hadron--quark transition region. We also investigate the implications of the inferred maximum-mass distribution for the secondary object of GW190814 and find that, within the present model and adopted observational constraints, its interpretation as a neutron star is unlikely.",
+    "status": "found"
+  },
+  "2608.10260": {
+    "arxiv_id": "2608.10260",
+    "title": "Interpreting Language Model Hidden States at Scale",
+    "authors": [
+      "Jordan Pettyjohn",
+      "Mansi Sakarvadia",
+      "Nathaniel Hudson",
+      "Daniel McKenzie",
+      "Kyle Chard",
+      "Ian Foster"
+    ],
+    "submission_date": "2026-08-10T21:49:45Z",
+    "latest_updated": "2026-08-10T21:49:45Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10260v1"
+    ],
+    "abstract": "Lens methods interpret large language models (LLMs) by mapping intermediate activations to the output vocabulary, revealing how next-token predictions develop through the network. Trained lenses remain expensive: affine-translator parameters grow quadratically with model width, while exact, full-vocabulary Kullback--Leibler (KL) training dominates memory. Consequently, prior trained lenses have been applied to models of at most 20B parameters and remain tied to particular component types. We present OmniLens, which applies a single lens family to any model-width activation, whether residual stream, attention, or MLP, and combines two independent scaling techniques. First, low-rank translators make per-lens parameter growth linear in model width and reduce trainable parameters by up to 98.4%. Second, Subset-KL materializes only selected vocabulary logits: its Top-k mode cuts peak training memory by up to 70%, while its importance-sampled variant retains unbiased stochastic gradients for the full KL. These savings enable a dense ensemble of 482 lenses for LLaMA-3.3-70B, providing 6x the coverage of a residual-stream design at the same depth. Model-wide coverage then reveals what single-component lenses cannot: the components where a behavior is most visible need not be those where intervention is most effective, and the most effective interventions lie outside the attention heads examined by prior lens studies. Across three case studies (prompt-injection detection, multi-hop memory injection, and toxicity localization), OmniLens reproduces key published results at substantially lower cost.",
+    "status": "found"
+  },
+  "2608.10261": {
+    "arxiv_id": "2608.10261",
+    "title": "Structured dispersion modelling for mortality data using a Conway--Maxwell--Poisson specification",
+    "authors": [
+      "Jackie Siaw Tze Wong",
+      "Emiliano A. Valdez"
+    ],
+    "submission_date": "2026-08-10T21:54:02Z",
+    "latest_updated": "2026-08-10T21:54:02Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10261v1"
+    ],
+    "abstract": "Mortality models that attempt to capture dispersion typically assume a fixed dispersion structure, an assumption that is rarely satisfied in practice and that can lead to miscalibrated uncertainty and poor predictive performance. In this paper, we introduce a flexible framework for explicitly modelling dispersion in mortality data using the Conway--Maxwell--Poisson (CMP) distribution, which accommodates underdispersion, equidispersion, and overdispersion within a unified specification. Rather than imposing a global dispersion parameter, the framework allows both the type and degree of dispersion to vary by age and over time, thus capturing structural heterogeneity that simpler models may overlook. A Bayesian formulation treats dispersion as unknown, with prior structures that coherently propagate parameter, process, and distributional uncertainty. Estimation is carried out via Markov chain Monte Carlo (MCMC) methods. Using empirical death data for males in England and Wales, we show that variability in mortality counts differs substantially across ages and across time periods. This has meaningful implications for the calibration of longevity risk and the pricing of annuity products.",
+    "status": "found"
+  },
+  "2608.10262": {
+    "arxiv_id": "2608.10262",
+    "title": "Not a Monolith: Lab-Level Divergence in the Cooperative Equilibria of Chinese Frontier LLM Agents",
+    "authors": [
+      "Francisco León Zúñiga Bolívar"
+    ],
+    "submission_date": "2026-08-10T21:54:13Z",
+    "latest_updated": "2026-08-10T21:54:13Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10262v1"
+    ],
+    "abstract": "Does the cooperative bias documented for Western frontier LLM agents extend to a different alignment lineage, and should the Chinese models that embody it be treated as a single bloc or as distinct laboratories? We study four frontier-tier Chinese models - DeepSeek V4 Pro, Qwen3-Max, Kimi K2.5 and GLM-5.1 - in an evolutionary Iterated Prisoner's Dilemma, under a design that removes a confound present in prior work. Rather than letting each model convert its own natural-language strategies into code, which entangles strategic disposition with coding ability, we hold the converter fixed (GPT-5.4 Mini) across all labs, so every cross-lab comparison is a comparison of generation alone. We run the full protocol: all-play-all tournaments and a Moran process at n=500 runs per condition, across three prompt styles and four population regimes. Two pre-registered hypotheses are evaluated. H6 (not monolithic) is supported: the four labs differ significantly in aggressive-equilibrium proportion, P_A running from 1% for Qwen3-Max to 9% for DeepSeek V4 Pro, with four of six pairwise comparisons surviving Holm-Bonferroni. The spread across the four labs (P_A range 8pp) is larger than the difference between the Chinese and Western ecosystems' mean P_A (5.0% vs 5.0%): on this measure, within-ecosystem variation exceeds the East-West gap. H5 (cooperative-bias generality) is consistent but qualified: a cooperative plurality holds in 6 of 12 lab-prompt combinations against the 9 of 12 reported for Western models, a difference we do not treat as firm, since the count rests on Cooperative-Neutral near-ties and rises to 9/12 under an alternate converter in our pre-registered robustness check. The lab, not the ecosystem, is the unit at which cooperative disposition is set; treating \"Chinese models\" as a monolith is not supported by the evidence.",
+    "status": "found"
+  },
+  "2608.10263": {
+    "arxiv_id": "2608.10263",
+    "title": "Helimagnetism from competing intra- and interchain interactions in CrBr$_2$ and CrI$_2$",
+    "authors": [
+      "John A. Schneeloch",
+      "Matthew B. Stone",
+      "Zachary Morgan",
+      "Despina Louca"
+    ],
+    "submission_date": "2026-08-10T22:01:11Z",
+    "latest_updated": "2026-08-10T22:01:11Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10263v1"
+    ],
+    "abstract": "CrBr$_2$ and CrI$_2$ are promising platforms for studying the effect of dimensionality on magnetic order, having been isolated in a 3-, 2-, and 1-dimensional form as bulk crystals, monolayers, and individual chains encapsulated in carbon nanotubes. However, the interactions that give rise to their helimagnetic order are unknown. Via inelastic neutron scattering on single crystals, we have determined the exchange interactions of these compounds from the spin wave dispersions, finding that the helimagnetic order arises primarily from competing antiferromagnetic interactions between intrachain and interchain nearest-neighbors. Single-ion anisotropy is substantial, modulating the helical spin rotation and gapping the inelastic intensity at points of branch crossings. As temperature increases, long-range order vanishes but intralayer correlations remain detectable up to at least 50 K.",
+    "status": "found"
+  },
+  "2608.10264": {
+    "arxiv_id": "2608.10264",
+    "title": "On the nature of oscillating modes of proto-neutron stars",
+    "authors": [
+      "Dimitra Tseneklidou",
+      "Alejandro Torres-Forne",
+      "Pablo Cerda-Duran",
+      "Martin Obergaulinger",
+      "Jose Antonio Font"
+    ],
+    "submission_date": "2026-08-10T22:04:11Z",
+    "latest_updated": "2026-08-10T22:04:11Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10264v1"
+    ],
+    "abstract": "Newborn proto-neutron stars (PNS) are potential targets of gravitational wave asteroseismology, the study of the (inner) structure of stars via their oscillation modes. To prepare for the eventual detection of such modes by current and future gravitational wave observatories, theoretical studies have obtained the possible spectrum of oscillations. However, there has been disagreement when it comes to identifying and classifying specific modes according to the physical mechanism that excites them. In this paper, we present a novel scheme to classify the oscillation modes of a newly born PNS surrounded by a stalled accretion shock in core-collapse supernovae (CCSNe). Our classification is physically motivated, as it is based on the energy of the restoring forces of the mode. We investigate the nature of the modes by considering the different regions of the CCSN that they stem from. We apply this scheme to a set of 28 non-rotating 1D, 2D and 3D CCSN simulations performed with two different numerical codes and using different progenitors and equations of state. In that way, we find that there are different families of f-, p- and g-modes in the system, living in different areas. More specifically, we identify two families of f- and p-modes associated with the PNS and the shock, respectively, and two families of g-modes originating from the two convectively stable regions, one in the PNS core and one near its surface. We also find that the dominant high-frequency emission mode is the f-mode of the PNS, associated with the strong density gradient at its surface. Our classification procedure is automatic, performs consistently for all the models considered, and paves the way to systematic studies of the dependence of the mode frequencies on the PNS properties, with direct application to parameter estimation from future observations of gravitational wave signals.",
+    "status": "found"
+  },
+  "2608.10265": {
+    "arxiv_id": "2608.10265",
+    "title": "Enhancing Reliability of Symbolic Execution Tools for Smart Contract Analysis through Rule-Based False Positive Reduction",
+    "authors": [
+      "Muhammad Ali Hassan Ahmad",
+      "Muhammad Hashim Ali",
+      "Muhammad Ali Amer",
+      "Muhammad Naiman Jalil",
+      "Muhammad Hassan",
+      "Affan Rauf"
+    ],
+    "submission_date": "2026-08-10T22:06:14Z",
+    "latest_updated": "2026-08-10T22:06:14Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10265v1"
+    ],
+    "abstract": "A blockchain is a decentralized, secure ledger system that enables transparent and immutable record-keeping, essential for trust and security in digital transactions. Smart contracts are self-executing agreements encoded on a blockchain, enabling different parties to fulfill the terms of the agreement automatically. These contracts trigger corresponding actions when conditions are met, ensuring decentralized and transparent transactions. Writing reliable smart contracts is challenging due to the lack of standardization. To find security vulnerabilities, tools based on various approaches, including symbolic execution, are used. However, these tools often report a large number of false positives, raising concerns about their reliability. The time and effort spent investigating false positives diverts resources from addressing actual vulnerabilities. Therefore, such tools must also be evaluated according to the rate of false positives they exhibit. More importantly, the algorithms and heuristics used by the tools must be enhanced to distinguish between true vulnerabilities and false alarms. In this paper, we first demonstrate the prevalence of false positives in vulnerability reports generated by Mythril, a symbolic execution-based analysis tool for Ethereum smart contracts. We analyze the root causes of these inaccuracies and devise a rule-based approach based on the gained insight to reduce false positives. We implement our rules for the most impactful vulnerabilities in Mythril and assess the effectiveness of our approach. Our results show a significant reduction in false positives without compromising the detection of true vulnerabilities, thus enhancing the tool's reliability.",
+    "status": "found"
+  },
+  "2608.10266": {
+    "arxiv_id": "2608.10266",
+    "title": "Cohen's f or Mean Standardized Differences? Assessing Covariate Balance with Multivalued Treatments",
+    "authors": [
+      "Ariel Linden"
+    ],
+    "submission_date": "2026-08-10T22:07:48Z",
+    "latest_updated": "2026-08-12T17:15:46Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.10266v1",
+      "2608.10266v2"
+    ],
+    "abstract": "Assessing covariate balance across more than two treatment groups has no established omnibus standard: the prevailing practice averages, or takes the maximum of, pairwise standardized mean differences (SMD), while Cohen's f - the classical generalization of Cohen's d to more than two groups - offers an alternative grounded in an established effect-size framework, but the two have not been formally compared. We extend both to arbitrary weighted and covariate-adjusted models via a community-contributed Stata command, esizereg, and validate them in a simulation study of three, four, and six treatment groups under correctly specified and misspecified generalized-propensity-score weighting, correlating each statistic against downstream treatment-effect bias. Cohen's f tracks estimation bias comparably to mean absolute SMD, both pooled (r = 0.93) and within weighting arm (r approximately 0.79); maximum absolute SMD is generally weakest. This ranking was unchanged under a deliberately adversarial nonlinear/interaction outcome model. Cohen's f and the SMD-based statistics are not numerically comparable: we derive an exact representation of f as a size-weighted quadratic function of the pairwise SMDs and prove the minimum attainable ratio between f and mean absolute SMD under equal group weights, so conventional SMD thresholds should not apply directly to f. We recommend reporting f alongside its per-level and pairwise decomposition.",
+    "status": "found"
+  }
+}

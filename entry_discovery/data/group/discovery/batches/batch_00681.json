@@ -1,0 +1,397 @@
+{
+  "2608.12627": {
+    "arxiv_id": "2608.12627",
+    "title": "EgoCITE: Context-Augmented Indexing and Time-Aware Retrieval for Long-Horizon Egocentric Memory",
+    "authors": [
+      "Le Zhang",
+      "Hao Chen",
+      "Vlad Roznyatovskiy",
+      "Jianzhong Zhang",
+      "Ke Sun"
+    ],
+    "submission_date": "2026-08-12T22:20:29Z",
+    "latest_updated": "2026-08-18T22:47:18Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2608.12627v1",
+      "2608.12627v2",
+      "2608.12627v3"
+    ],
+    "abstract": "Long-horizon egocentric memory transforms continuous first-person video and audio into a searchable record of past experiences. We demonstrate two bottlenecks in existing systems: indices built from context-poor captions are unreliable for agentic search, while retrieval ignores a question's temporal intent. To address both bottlenecks, we introduce EgoCITE (Egocentric Context-augmented Indexing and Time-aware Evidence retrieval), a long-horizon agentic memory framework for egocentric QA. EgoCITE comprises three components. EgoScheme uses local multimodal context to turn fragmentary video captions and speech transcripts into self-contained atomic memory indices. EgoIndex organizes complementary action, activity, utterance, and conversation representations into searchable multi-view memory indices at multiple granularities. EgoRetrv combines semantic search with question-conditioned temporal relevance scoring and curation of retrieved evidence. We evaluate EgoCITE on EgoLifeQA, EgoMem, and EgoR1-Bench in terms of answer accuracy and target-event retrieval alignment. EgoCITE improves accuracy over agentic memory baselines by at least 4.4--14.2% while achieving 36$\\times$ lower cost than long-context LLM agents.",
+    "status": "found"
+  },
+  "2608.12628": {
+    "arxiv_id": "2608.12628",
+    "title": "The Cost of Changing Edges for Diameter Computation and More",
+    "authors": [
+      "Sam Hiken",
+      "Yael Kirkpatrick",
+      "Jakob Nogler",
+      "Virginia Vassilevska Williams"
+    ],
+    "submission_date": "2026-08-12T22:24:17Z",
+    "latest_updated": "2026-10-10T13:20:01Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.12628v1",
+      "2608.12628v2"
+    ],
+    "abstract": "The sensitivity setting is a restricted setting for dynamic algorithms, particularly practical for scenarios where extensive preprocessing is feasible but responses to real-time modifications must be near-instantaneous before the data structure is eventually rebuilt. For graph problems, a sensitivity data structure is constructed with a preprocessing time P so that the following queries can be answered quickly, preferably in $O(1)$ time: given an edge $e$, return the answer to the problem on either $G \\setminus e$ (decremental) or $G \\cup e$ (incremental). We almost entirely settle the decremental setting for the diameter and eccentricities problems in a variety of approximation regimes by matching P to the static runtime while supporting $O(1)$-time queries, thereby improving upon all previous single-failure results [Biló, Cohen, Friedrich, Schirneck, MFCS 2021; Biló, Choudhary, Cohen, Friedrich, Krogmann, Schirneck, ICALP 2023, Algorithmica 2026]. More precisely: (1) We provide a tight reduction demonstrating that any exact distance sensitivity oracle can be used to efficiently solve decremental exact diameter and all-node eccentricities; (2) For the approximate setting, we match the runtime of all known static diameter algorithms across all sparsity settings, up to an additional $1+o(1)$ factor in approximation. Conversely, for the previously unexplored incremental setting of these problems: (3) We develop new lower bounds, demonstrating that no incremental algorithm can efficiently approximate diameter, radius, or eccentricity beyond a $5/3$ factor in undirected graphs or a $2$ factor in directed graphs; (4) We introduce two new instructive techniques and demonstrate how to utilize them to construct several new algorithms. Most notably, we develop incremental single-node eccentricity approximations for both directed and undirected graphs that match our new lower bounds.",
+    "status": "found"
+  },
+  "2608.12629": {
+    "arxiv_id": "2608.12629",
+    "title": "CAKE: Compiler-Agent Co-Design for Frontier Kernel Evolution",
+    "authors": [
+      "Zihao Ye",
+      "Yingyi Huang",
+      "Hongyi Jin",
+      "Bohan Hou",
+      "Junru Shao",
+      "Zhongming Yu",
+      "Jinqi Chen",
+      "Meghan Cowan",
+      "Shiyi Cao",
+      "Shanli Xing",
+      "Hanfeng Chen",
+      "Vinod Grover",
+      "Tianqi Chen",
+      "Luis Ceze"
+    ],
+    "submission_date": "2026-08-12T22:31:32Z",
+    "latest_updated": "2026-08-12T22:31:32Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12629v1"
+    ],
+    "abstract": "GPU kernel agents and GPU programming languages have advanced separately, leaving expert kernels difficult to reproduce. Agents usually treat the compiler as a fixed black box and receive only errors, correctness outcomes, and timing, while existing DSLs either hide critical scheduling decisions or expose them through difficult layout abstractions. We present CAKE, a compiler-agent co-design in which agents author CAKE IR, a typed, hardware-explicit schedule representation. CAKE exposes warp roles, memory movement, synchronization, and pipelines while supporting verification, cost modeling, and localized diagnostics. The harness itself evolves: recurring failures become verifier rules, IR primitives, model calibrations, and reusable optimization tactics. In matched implementation-hidden Flash-KMeans clean starts on B200, the best CAKE IR candidate at an 80-million-token budget runs at 1.144x the tuned FlashML baseline, compared with 0.928x for direct CUDA/PTX. Beyond this benchmark, agent-generated Kimi Delta Attention achieves a 2.05x geometric-mean speedup over official FlashKDA and passes end-to-end serving validation. Dispatcher-backed KNN and KMeans improve performance by 1.42x to 2.12x across more than 400 shapes, and four kernel changes are available as upstream PRs. CAKE targets NVIDIA GPUs from Ampere through Blackwell and separates single-shape evolution from library generalization and dispatch.",
+    "status": "found"
+  },
+  "2608.12630": {
+    "arxiv_id": "2608.12630",
+    "title": "Novels generated by language models show compressed formal variation",
+    "authors": [
+      "Mehdy Sedaghat Payam",
+      "Justin Quinn"
+    ],
+    "submission_date": "2026-08-12T22:32:39Z",
+    "latest_updated": "2026-08-12T22:32:39Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12630v1"
+    ],
+    "abstract": "While large language models can generate entire novels, there is little information about the level of formal variation in their output over many generations. Rather than asking whether individual passages can be identified as AI-generated, this study asks whether repeated AI generation can produce the same range of diversity which is found across human corpora. This paper contrasts six corpora based on generation source and target style: twenty novels generated using GPT-5.5 Thinking in a nineteenth-century British realist style, twenty novels generated using Qwen3-14B in a nineteenth-century British realist style, twenty novels generated using each of these models in a contemporary zero style, 205 nineteenth-century human-written British novels, and sixty-five contemporary human-written Zero-Style novels. At the document level, the research includes MATTR-500, Shannon entropy, average sentence length, readability, and punctuation rate measurements. The most robust and reliable result is compression of sentence structure. Repeated generations produce novels that vary far less from one another in sentence structure than human novels do. Compression is also present in the measures of readability, punctuation, and sentence length variability within novels. Lexical measures tend to be similarly compressed, with the exception of Qwen Zero-Style MATTR. Despite having distinct mean stylistic profiles, GPT and Qwen lack a stable pattern of cross-measure correlation. This article therefore distinguishes between variance overclosure, which represents a limited formal range between novels, and a more specific phenomenon of correlational overclosure. This means that an individual AI-generated novel may resemble human fiction stylistically, while a collection of AI-generated novels occupies a much narrower formal range.",
+    "status": "found"
+  },
+  "2608.12631": {
+    "arxiv_id": "2608.12631",
+    "title": "On the abstract elementary class of acts with pure embeddings",
+    "authors": [
+      "Jonathan Feigert",
+      "Daniel Herden",
+      "Marcos Mazari-Armida"
+    ],
+    "submission_date": "2026-08-12T22:34:05Z",
+    "latest_updated": "2026-08-12T22:34:05Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12631v1"
+    ],
+    "abstract": "We study the abstract elementary class of acts with pure embeddings. In particular, we show that stability and superstability in this class can be characterized in terms of the monoid $S$ being LO (for every $s,t \\in S$, we have that $s \\in St$ or $t \\in Ss$) and weakly noetherian (every ideal is finitely generated), respectively. Moreover, under mild set-theoretic assumptions, we characterize the stability spectrum via the minimal cardinality of a generating set for every ideal. As an application, we obtain a Baer-like criterion for pure injective acts when $S$ is LO. We use this to provide an alternative proof that the class of acts has enough pure injectives when $S$ is LO.",
+    "status": "found"
+  },
+  "2608.12632": {
+    "arxiv_id": "2608.12632",
+    "title": "How Neutron Star Radii Encode the Dense-Matter Equation of State and Hadron-Quark Transition",
+    "authors": [
+      "Bao-An Li",
+      "Xavier Grundler"
+    ],
+    "submission_date": "2026-08-12T22:44:40Z",
+    "latest_updated": "2026-09-28T21:46:08Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.12632v1",
+      "2608.12632v2"
+    ],
+    "abstract": "We investigate how future high-precision neutron star (NS) radius measurements encode microscopic information about the dense-matter equation of state (EOS), focusing on a possible first-order hadron--quark phase transition and the resulting mass--radius topology. Within a Bayesian framework using meta-model EOSs with nine microscopic parameters, we analyze mock radius measurements $R_{1.4}=11.9\\pmσ_R$ km with $σ_R=0.9$ and $0.1$ km for canonical NSs. We introduce inverse EOS--radius mappings by studying the conditional mean of each EOS parameter as a function of the model-predicted canonical radius $R_{1.4}$. Their slope measures the sensitivity of an EOS parameter to the radius, while their curvature determines the leading precision dependence of its posterior mean through the Jensen expansion. The symmetry-energy parameters $L$ (slope) and $K_{\\rm sym}$ (curvature) are strongly encoded in $R_{1.4}$ and their posterior means shift appreciably with improved radius precision, whereas the higher-order hadronic parameters show stronger topology dependence. Among the transition parameters, the transition density $ρ_t$ is the most strongly encoded in $R_{1.4}$, while the energy-density jump and quark-matter sound speed are more strongly associated with the topology of the full mass--radius sequence. Since the different topologies have strongly overlapping $R_{1.4}$ distributions, even precise radius measurements cannot by themselves identify the topology or uniquely determine the high-density transition properties. These results provide a parameter-dependent hierarchy for assessing the scientific return of future high-precision radius measurements and complementary probes of high-density NS EOS.",
+    "status": "found"
+  },
+  "2608.12633": {
+    "arxiv_id": "2608.12633",
+    "title": "Offering Microsecond-Scale Cross-VM Core Elasticity on Colocated Lightweight Virtual Machines",
+    "authors": [
+      "Yibo Yan",
+      "Seo Jin Park"
+    ],
+    "submission_date": "2026-08-12T22:49:01Z",
+    "latest_updated": "2026-08-12T22:49:01Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12633v1"
+    ],
+    "abstract": "Serverless platforms commonly colocate many diverse workloads, each in a fast-booting, memory-lean virtual machine (VM), to improve deployment density. Overprovisioning each VM for its peak protects tail latency during traffic bursts but hurts density; maintaining high density while effectively protecting tail latency requires the infrastructure to be able to shift physical cores, at a microsecond timescale, to whichever latency-sensitive VM is bursting and reclaim them as the burst subsides. No VM substrate delivers this: conventional VMs resize a guest's cores only through a millisecond-scale vCPU hot-plug path, Firecracker fixes a VM's core count at boot, and the ultralight VMs that boot fastest drop multicore execution entirely. We present HyperFlux, a commodity-KVM ultralight VM substrate that makes a VM's parallelism width (the number of physical cores backing it) elastic at runtime. We show that HyperFlux can move a core across VMs in merely 13$μ$s, even when forcibly reclaiming it from a busy donor, orders of magnitude faster than vCPU hot-plug. A HyperFlux VM incurs only a 3.2MB memory footprint and can cold-boot in 1.37ms, on par with the fastest-booting ultralight VMs, while uniquely supporting multicore parallelism. Under colocation, it can reduce high-priority VMs' tail latency by up to 10x under high load compared to static core-sharing with Firecracker and Cloud Hypervisor, and deliver a lower and more stable tail latency compared to using cgroup and vCPU hot-plug under changing load bursts.",
+    "status": "found"
+  },
+  "2608.12634": {
+    "arxiv_id": "2608.12634",
+    "title": "The Price of Permission: Classification Uncertainty in Constrained Capital Markets",
+    "authors": [
+      "Abdulrahman Qadi",
+      "Akash Sharma",
+      "Francesca Medda"
+    ],
+    "submission_date": "2026-08-12T22:49:26Z",
+    "latest_updated": "2026-08-12T22:49:26Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12634v1"
+    ],
+    "abstract": "Shariah-compliant equity screening provides a transparent setting in which institutional rules determine who may own a stock. A binary label identifies current eligibility but not whether the feasible investor base is fragmented across standards or close to changing. We define this instability as classification uncertainty and formalize its investor-base consequence through permitted investor mass. In a 1999-2024 CRSP-Compustat panel of 13,188 securities classified under seven researcher-emulated Shariah rulebooks, screening-rule disagreement and proximity to active boundaries rank next-month screen-implied transitions. U.S. Fama-MacBeth diagnostics do not support an unconditional equal-weighted permission premium, and a September 2023 DJIM/S&P methodology change produces no robust matched repricing. The central event evidence uses 25 official Securities Commission Malaysia lists. The 410 inclusions already trading before the preceding review have positive but imprecise matched returns. Applying the pre-event turnover floor yields 295 inclusions with 1.76 percentage points over $[0,10]$ trading days ($p_{\\mathrm{date}}=0.008$; $p_{\\mathrm{wild}}=0.017$) and 2.25 points over $[0,20]$ ($p_{\\mathrm{date}}=0.018$; $p_{\\mathrm{wild}}=0.035$). Leave-one-date-out, first-inclusion-only, and mid-review placebo checks are supportive, although a joint 20-day pre-event test rejects. Ownership and demand-pressure diagnostics do not identify a unique marginal buyer or clean causal demand shock. The evidence supports treating classification risk as a portfolio-monitoring state. Official Shariah permission is associated with price effects in a recognized local market among sufficiently tradable securities; formal eligibility alone is insufficient.",
+    "status": "found"
+  },
+  "2608.12635": {
+    "arxiv_id": "2608.12635",
+    "title": "GateTruth: Auditing the Rigor of RTL Design Benchmarks via Mutation Testing",
+    "authors": [
+      "Meet Bhadra"
+    ],
+    "submission_date": "2026-08-12T22:50:11Z",
+    "latest_updated": "2026-08-12T22:50:11Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12635v1"
+    ],
+    "abstract": "Benchmarks for evaluating large language models on register-transfer-level (RTL) hardware design have proliferated rapidly, yet none reports having applied mutation testing, an established hardware-verification technique for quantifying testbench quality, to ask whether its own testbenches are trustworthy. A testbench that never fails is not evidence of a correct design; it may simply never stimulate the logic that is actually broken. We introduce GateTruth, a mutation-testing engine and methodology for auditing RTL benchmark testbench rigor: inject a deterministic, seeded set of semantic mutants into a reference design and measure what fraction the testbench catches. We validate the methodology against our own 68-task, dual-track reference suite -- 60 specification-to-RTL generation tasks and 8 agentic-repair tasks, scored through a pinned, deterministic synthesis-to-timing flow with correctness enforced as a strict gate -- certifying that 46 of 60 Track A testbenches kill at least 95% of injected mutants under sequential, reproducible execution; we disclose why the other 14 do not, including a Goodhart effect on testbenches revised to pass this gate. We then point the same engine, unmodified, at RTLLM v2.0, a widely adopted external benchmark: of 46 auditable designs, 72% fall below the 95% floor our own suite is held to, and three score 0% outright. A comparable audit of NVIDIA's CVDP benchmark is structurally impossible: its public release withholds reference solutions, removing the golden RTL mutation testing requires. Auditing our own instrument also surfaced a second finding: an initially uniform 4096-token output cap silently truncated three of seven evaluated models, and re-running at 16,384 tokens moved one model from fifth place to first. We argue mutation-kill certification should become a standard reporting requirement for RTL-generation benchmarks generally.",
+    "status": "found"
+  },
+  "2608.12636": {
+    "arxiv_id": "2608.12636",
+    "title": "Free-Space Quantum Networks and Optimized Fiber-Reinforcement",
+    "authors": [
+      "Alasdair I. Fletcher",
+      "Ignazio Pedone",
+      "Stefano Pirandola"
+    ],
+    "submission_date": "2026-08-12T22:50:28Z",
+    "latest_updated": "2026-08-12T22:50:28Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12636v1"
+    ],
+    "abstract": "Free-space quantum communication provides a flexible complement to fiber-based quantum networks, but its point-to-point capacity is fundamentally limited by diffraction, atmospheric extinction and beam wandering induced by turbulence. In this work, we study the end-to-end performance of large-scale free-space quantum networks connecting randomly distributed fixed or mobile users, modelled as Waxman random graphs. We derive the mean network capacity, edge consumption and connectivity phase transitions for both single-path and multi-path (flooding) routing. We also study router-centered star networks, deriving the full distribution of end-to-end capacities as a function of the router's coverage radius. We then consider how performance may be improved by reinforcing free-space networks with a small number of optimally placed fiber-based backbone nodes. We prove that any optimal backbone configuration must correspond to a capacity-maximizing Voronoi tessellation of the network region, and show that this can be efficiently approximated by a centroidal Voronoi tessellation via Lloyd's algorithm, with backbone nodes connected according to a Delaunay triangulation. Numerical results show that even a modest number of backbone nodes substantially improves end-to-end capacity and reduces edge consumption for both mobile and fixed users.",
+    "status": "found"
+  },
+  "2608.12637": {
+    "arxiv_id": "2608.12637",
+    "title": "Density Estimation on Compact Manifolds under Intrinsic Spectral Block Variation",
+    "authors": [
+      "Olga Klopp",
+      "Fedor Noskov"
+    ],
+    "submission_date": "2026-08-12T22:53:34Z",
+    "latest_updated": "2026-08-12T22:53:34Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12637v1"
+    ],
+    "abstract": "We introduce an intrinsic spectral sparsity model for nonparametric density estimation on compact connected Riemannian manifolds. Instead of penalizing coefficients in an arbitrarily chosen Laplace--Beltrami eigenbasis, we group each complete eigenspace and measure the Hilbert norm of its spectral component. The resulting block-variation space is basis independent and isometry invariant. We establish its structural, atomic, and nonlinear approximation properties and clarify its relation to Sobolev, Besov, and coefficientwise spectral $\\ell^1$ classes. We then construct a coordinate-free block-shrinkage estimator and prove a nonasymptotic signal-dependent $L^2$-oracle inequality that adapts to the unknown set of detectable eigenspaces. Under polynomial spectral growth, the risk theory separates the number of spectral blocks from their multiplicities and exhibits two regimes: one driven by a single high-dimensional eigenspace and the other by cumulative spectral complexity. Under matching spectral-growth and nondegeneracy assumptions, corresponding minimax lower bounds show that this multiplicity dependence is intrinsic, with sharp consequences for spheres and the rotation group $SO(3)$. Finally, we develop a positive, normalized, block-penalized exponential spectral sieve for log-densities and derive likelihood oracle inequalities together with expected Kullback--Leibler, Hellinger, and $L^2$ risk bounds. The resulting framework provides a geometry-respecting theory of sparse density estimation that remains invariant under changes of eigenbasis.",
+    "status": "found"
+  },
+  "2608.12638": {
+    "arxiv_id": "2608.12638",
+    "title": "Improving Fast Charging Safety With Core Temperature Estimation Via Kolmogorov-Arnold Network",
+    "authors": [
+      "Faysal Ahamed",
+      "Tanushree Roy"
+    ],
+    "submission_date": "2026-08-12T22:56:33Z",
+    "latest_updated": "2026-08-12T22:56:33Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12638v1"
+    ],
+    "abstract": "Fast charging of Lithium-ion batteries can lead to a significant temperature rise, which can cause serious risks to battery safety and lifetime. To ensure safe battery operation, thermal constraints must be enforced during the fast charging process. However, the core temperature of the battery cannot be directly measured in practice, which makes real-time safety enforcement challenging. This paper proposes a framework that incorporates core temperature estimates from Kolmogorov-Arnold Network within robust control barrier function (KAN-rCBF) constraints for battery fast-charging. The algorithm utilizes measurements from battery surface temperature, coolant temperature, coolant power, and charging current to solve a quadratic programming problem under safety constraints. We prescribe analytical safety guarantees for this optimal charging policy under KAN estimation errors and model uncertainty. Simulation results show that the proposed method maintains a safe battery temperature while achieving charging times comparable to the state-of-the-art method, where the latter fails to guarantee the same level of thermal safety.",
+    "status": "found"
+  },
+  "2608.12639": {
+    "arxiv_id": "2608.12639",
+    "title": "Dipolar-driven mean-field criticality in the ferrimagnet Eu$_2$MnSi$_2$O$_7$",
+    "authors": [
+      "Masahiro Kawamata",
+      "Maxim Avdeev",
+      "Yusuke Nambu"
+    ],
+    "submission_date": "2026-08-12T22:58:46Z",
+    "latest_updated": "2026-08-12T22:58:46Z",
+    "revised_dates": null,
+    "venue": "Physical Review Letters 137, 076703 (2026)",
+    "latest_version": 1,
+    "versions": [
+      "2608.12639v1"
+    ],
+    "abstract": "We report mean-field critical behavior in Eu$_2$MnSi$_2$O$_7$, a melilite-type ferrimagnet with spin-only Eu$^{2+}$ and Mn$^{2+}$ moments and negligible orbital contributions. Magnetization measurements combined with neutron powder diffraction reveal critical exponents close to the mean-field values, indicating that long-range dipolar interactions govern the asymptotic critical behavior in this insulating ferrimagnet. The refined magnetic structure, described by the magnetic space group $P2_12_1^\\prime2^\\prime$, exhibits a tilted ferrimagnetic configuration driven by the Dzyaloshinskii-Moriya interaction, reflecting the noncentrosymmetric nature of the lattice. These results extend the applicability of mean-field theory to complex insulating magnets and establish Eu$_2$MnSi$_2$O$_7$ as a platform for exploring ferrimagnetism and long-range interactions. To our knowledge, this is the first insulating ferrimagnet in which dipolar interactions drive mean-field criticality.",
+    "status": "found"
+  },
+  "2608.12640": {
+    "arxiv_id": "2608.12640",
+    "title": "Interpretable Causal Discovery via Causal-Effect Constraints",
+    "authors": [
+      "Cixuan Zhang",
+      "Guy Van den Broeck",
+      "Benjie Wang"
+    ],
+    "submission_date": "2026-08-12T23:01:28Z",
+    "latest_updated": "2026-08-12T23:01:28Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12640v1"
+    ],
+    "abstract": "Causal discovery aims to uncover the underlying causal relationships given data generated from a system. The goal, however, is not merely to predict causal edges given data, but also to be able to interpret and explain either observed or hypothesized phenomena, such as a particularly large causal effect. We consider this task of conditional causal discovery and cast it as a Bayesian inference problem, in which we target the posterior over causal graphs and parameters conditional on an event such as a causal-effect constraint. Unfortunately, this poses a computational challenge: existing approaches to Bayesian causal discovery struggle when the event has small posterior mass. To address this, we adapt rare-event estimation techniques to perform inference the joint graph-parameter space. Our method gradually drives a particle population toward the constrained region while maintaining samples that approximate the conditional posterior. Empirical evaluation on synthetic graphs validates the accuracy of our approach at small and large scales, and we show in a case study on the Sachs protein dataset how our method can be used to aid scientific exploration by providing pathway-level summaries.",
+    "status": "found"
+  },
+  "2608.12641": {
+    "arxiv_id": "2608.12641",
+    "title": "Empirical Simulation of Survival and Mixed-Type Data for Clinical Trial Design",
+    "authors": [
+      "Yao Chen",
+      "Jiren Sun",
+      "Yuxin Ding",
+      "Yushi Liu",
+      "Yongming Qu"
+    ],
+    "submission_date": "2026-08-12T23:04:12Z",
+    "latest_updated": "2026-08-12T23:04:12Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12641v1"
+    ],
+    "abstract": "Simulating realistic time-to-event data is essential for planning and evaluating complex clinical trial designs. Conventional approaches often sample event times from parametric families, such as Weibull or log-normal distributions, which restrict hazard shapes and may poorly represent observed survival data. We propose an empirical copula-based framework for simulating multivariate data containing continuous, binary, count, and right-censored time-to-event variables. The method completes censored historical survival data using a two-zone procedure that combines conditional Kaplan-Meier imputation with a parametric tail. It matches a target survival distribution through a log-scale location-scale transformation and a power distortion of the empirical percentile function, while preserving historical dependence through a Gaussian copula fitted to rank correlations. In an oncology trial of previously treated non-small-cell lung cancer, the method reconstructs overall survival and progression-free survival curves for the experimental arm using control-arm data and a small set of target percentiles. Simulations preserve rank correlations among baseline covariates and the dependence between progression-free and overall survival, with censored Kendall's tau of 0.522 compared with 0.549 in the observed data. The method is implemented in the R package EmpiricalSim.",
+    "status": "found"
+  },
+  "2608.12642": {
+    "arxiv_id": "2608.12642",
+    "title": "The Noetherian Case of Bayart's Power-Series Question",
+    "authors": [
+      "Viet-Hoang Tran",
+      "Dung V. Nguyen",
+      "Quang X. Nguyen",
+      "Thieu N. Vo",
+      "Tan M. Nguyen"
+    ],
+    "submission_date": "2026-08-12T23:06:13Z",
+    "latest_updated": "2026-08-12T23:06:13Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12642v1"
+    ],
+    "abstract": "Let $R$ be a commutative Noetherian ring. We prove that if the one-variable formal power-series ring $R[[x]]$ is a unique factorization domain, then so is the two-variable formal power-series ring $R[[x,y]]$. This resolves a question raised by Bayart in 1973 for Noetherian coefficient rings. The proof uses the divisor theory of Noetherian normal domains, expressed through finite rank-one reflexive modules.",
+    "status": "found"
+  },
+  "2608.12643": {
+    "arxiv_id": "2608.12643",
+    "title": "On minimal involutive generic sets of Extended Special Linear group $ESL_n(\\mathbb{F}_p)$",
+    "authors": [
+      "Ruslan Skuratovskii"
+    ],
+    "submission_date": "2026-08-12T23:07:47Z",
+    "latest_updated": "2026-08-12T23:07:47Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12643v1"
+    ],
+    "abstract": "The size of minimal systems of generators and these systems themselves for groups $ESL_n \\left[ \\mathbb{Z} \\right]$ and $ESL_n \\left( \\mathbb{F}_p \\right)$ were found. Moreover we obtain triples of involutions with\\textit{\\textbf{ two commuting involu\\-tions}} generating $ESL_5 \\left[ \\mathbb{Z} \\right]$, $ESL_5 \\left[ \\mathbb{Z} \\right]$ relatively, that are Mazurov triples.",
+    "status": "found"
+  },
+  "2608.12644": {
+    "arxiv_id": "2608.12644",
+    "title": "Lower bounds for the Smith-Thom deficiency of Hilbert squares",
+    "authors": [
+      "Viatcheslav Kharlamov",
+      "Rareş Răsdeaconu"
+    ],
+    "submission_date": "2026-08-12T23:10:03Z",
+    "latest_updated": "2026-08-12T23:10:03Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12644v1"
+    ],
+    "abstract": "We establish lower bounds for the Smith--Thom deficiency of the Hilbert square of a maximal nonsingular real projective variety. These bounds recover the known surface case and provide new obstructions to Smith-Thom maximality in every dimension at least two. As applications, we prove that the Hilbert square of any real abelian variety of dimension at least two is not Smith-Thom maximal. We further show that the deficiencies of the Hilbert squares of maximal real abelian varieties grow exponentially with the dimension. We also obtain nonmaximality results for the Hilbert squares of certain Cartesian products.",
+    "status": "found"
+  },
+  "2608.12645": {
+    "arxiv_id": "2608.12645",
+    "title": "Jagged Judges: Epistemic Stability Under Perturbation, Pressure, and Persistence",
+    "authors": [
+      "Justin Zhao",
+      "Himaghna Bhattacharjee",
+      "Hannah Korevaar",
+      "Bhaktipriya Radharapu",
+      "Khalid El-Arini"
+    ],
+    "submission_date": "2026-08-12T23:14:05Z",
+    "latest_updated": "2026-08-21T19:36:47Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.12645v1",
+      "2608.12645v2"
+    ],
+    "abstract": "LLM judges have become central infrastructure for model evaluations, online grading, and reward modeling. Judges are typically validated by accuracy on golden data, but accuracy says little about whether they are stable under re-prompting, challenge, or sustained pushback. We introduce the \\emph{Wiggle Framework}, a unified stress test for epistemic stability in LLM judges. The framework decomposes judge robustness along three dimensions: Mechanical Consistency (stability under re-prompting and reframing), Single-turn Conviction (stability under a single challenge), and Multi-turn Persistence (stability under sustained or adaptive pressure). We use the framework to study 9 frontier models across 14 judging tasks spanning safety, toxicity, AI writing detection, and political-response evaluation. Every model exhibits substantial wiggle as a judge --- flipping verdicts 25--71\\% of the time under static pushback, and 62--91\\% with an adversarial LLM persuader. Critically, we find that pressure that succeeds in changing a judge's verdict is almost always net-corrupting with respect to ground truth. Beyond the framework itself, we identify baseline jury majority strength as the most effective single-shot signal for anticipating which items wiggle. Taken together, this is the first apples-to-apples cross-dataset comparison of mechanical, conformity, and persuadability tests in a judging context.",
+    "status": "found"
+  },
+  "2608.12646": {
+    "arxiv_id": "2608.12646",
+    "title": "A Novel One-loop Model for Majorana Neutrino Mass and Dark Matter",
+    "authors": [
+      "Mohamed Belfkir",
+      "Mohamed Amin Loualidi",
+      "Salah Nasri"
+    ],
+    "submission_date": "2026-08-12T23:16:09Z",
+    "latest_updated": "2026-08-12T23:16:09Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12646v1"
+    ],
+    "abstract": "We present the first complete field-theoretic realization of the finite one-loop T4-3-i topology for Majorana neutrino mass. Here, T4-3-i denotes a one-loop realization of the Weinberg operator in which a fermion links the two external lepton--Higgs pairs. If this fermion is a Majorana singlet or triplet, the same interactions generate a tree-level type-I or type-III seesaw contribution, respectively, so that the loop is not the leading source of neutrino mass. This lower-order contribution is removed by taking the mediator to be a Dirac fermion $N$, placing lepton-number violation in a separate Majorana fermion $ψ$ inside the loop, and imposing an exact $Z_2$ symmetry that keeps the new scalars inert and stabilizes the lightest odd state. We classify the allowed electroweak charge assignments and study the minimal singlet-doublet realization, denoted T4-3-i-B1, which contains one Dirac fermion, one Majorana fermion, an inert scalar doublet, and an inert scalar singlet. The resulting rank-two neutrino mass matrix predicts one massless neutrino. We confront both normal and inverted neutrino-mass orderings with neutrino-oscillation and cosmological data, charged-lepton flavor violation, including $μ-e$ conversion, electroweak precision observables, $h\\toγγ$, theoretical consistency conditions, the relic abundance, and direct-detection limits. Both fermionic and scalar dark matter are viable. The fermionic candidate has only a loop-induced Higgs coupling and consequently a strongly suppressed spin-independent scattering rate, whereas the scalar candidate couples through a tree-level Higgs portal and can lie above the neutrino floor while remaining compatible with current limits. In both cases, coannihilation with inert scalars is essential for reproducing the observed relic abundance.",
+    "status": "found"
+  }
+}

@@ -1,0 +1,465 @@
+{
+  "2608.09907": {
+    "arxiv_id": "2608.09907",
+    "title": "DistMoE: Private-data Rehearsal-free Routing in Mixture-of-Experts for Distributed Instruction Tuning",
+    "authors": [
+      "Mainak Singha",
+      "Niccolò Biondi",
+      "Elisa Ricci",
+      "Subhankar Roy"
+    ],
+    "submission_date": "2026-08-10T17:52:14Z",
+    "latest_updated": "2026-08-10T17:52:14Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09907v1"
+    ],
+    "abstract": "Multimodal Large Language Models (MLLMs) have shown strong multimodal instruction-following ability, but adapting them to diverse visual-language domains typically assumes centralized data access and costly joint training. This is restrictive when data is distributed across private, domain-specific, or permission-limited clients. To this end, we propose DistMoE, a mixture-of-experts (MoE) approach for distributed visual instruction tuning. In each layer of the language decoder it augments the public feedforward network (FFN) with a client-specific private FFN expert, with the goal to acquire domain-specific knowledge. However, independent expert training causes the private FFNs to learn representation of different scale and magnitudes, making merging the experts difficult. To reduce client-specific drift, we introduce a public-anchored expert composition stage that updates only routers and lightweight private projection adapters on a mix of local client data and public data, via an isotropic regularization loss, therefore making it cross-client rehearsal-free composition. During inference, DistMoE performs modular routing over public and private experts, enabling token-wise domain composition without explicit domain labels. Experiments across diverse visual-language benchmarks show that DistMoE enables flexible expert reuse, effective domain adaptation, and competitive performance while preserving modular control over client-specific knowledge. Codes are available at https://github.com/mainaksingha01/DistMoE.",
+    "status": "found"
+  },
+  "2608.09908": {
+    "arxiv_id": "2608.09908",
+    "title": "Beyond Hazard Resemblance: Contrastive Event Adjudication for Training-Free Video Anomaly Detection",
+    "authors": [
+      "Wenti Yin",
+      "Xiang Wang",
+      "Huaxin Zhang",
+      "Hanqing Wang",
+      "Hongbo Shao",
+      "Changxin Gao",
+      "Nong Sang"
+    ],
+    "submission_date": "2026-08-10T17:52:51Z",
+    "latest_updated": "2026-08-10T17:52:51Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09908v1"
+    ],
+    "abstract": "Video anomaly detection (VAD) aims to identify and temporally localize abnormal events in videos. Supervised methods learn anomaly decision boundaries from target-domain annotations but require substantial in-domain data. Existing training-free methods leverage the rich semantic knowledge and reasoning capabilities of pretrained models to interpret visual content, yet these capabilities do not directly define an anomaly decision criterion: richer anomaly descriptions better capture hazard resemblance without resolving abnormality. To this end, we propose Contrastive Event Adjudication for training-free Video Anomaly Detection (CEAVAD), which shifts the unit of inference from isolated anomaly concepts to falsifiable event hypotheses and establishes an inference-time explanatory boundary through the interaction between competing explanations and video evidence. Specifically, CEAVAD first uses public-safety knowledge to construct hazard-benign event contrasts, pairing each hazard mechanism with a generic normal account and a mechanism-specific benign counterpart. It then determines whether the target interval better supports a hazard explanation or its benign competitor, yielding a revisable contrastive boundary proposal for the target. Finally, CEAVAD adjudicates between the competing explanations to determine whether the hazard hypothesis survives the video evidence, supporting both temporally localized anomaly detection and evidence-grounded explanations. Experiments on three widely used VAD benchmarks demonstrate that CEAVAD achieves state-of-the-art performance under the training-free paradigm.",
+    "status": "found"
+  },
+  "2608.09909": {
+    "arxiv_id": "2608.09909",
+    "title": "Substrate-dependent thermally driven morphological evolution of Pt$_{0.9}$Ni$_{0.1}$ thin films on sapphire and langasite",
+    "authors": [
+      "M. Awais Fiaz",
+      "M. Greenslit",
+      "R. J. Lad",
+      "Mauricio Pereira da Cunha",
+      "Luke Doucette",
+      "S. M. Hollen"
+    ],
+    "submission_date": "2026-08-10T17:53:06Z",
+    "latest_updated": "2026-09-06T05:00:12Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.09909v1",
+      "2608.09909v2"
+    ],
+    "abstract": "We examine the thermal evolution of 100-nm-thick Pt$_{0.9}$Ni$_{0.1}$ alloy films on sapphire and langasite substrates with a 10-nm Zr adhesion layer. Sequential vacuum annealing from room temperature to 800 $^\\circ$C produces a substrate-dependent morphological pathway that is quantified by atomic force microscopy, image segmentation, height-distribution analysis, and effective coarsening metrics. Both types of films remain densely granular up to 400 $^\\circ$C, undergo a sharp coarsening transition between 400 and 600 $^\\circ$C, and evolve into coalesced faceted crystallites by 800 $^\\circ$C. The mean projected feature area increases from $7.84 \\times 10^2$ to $1.09 \\times 10^5$ nm$^2$ on langasite and from $3.32 \\times 10^2$ to $1.67 \\times 10^5$ nm$^2$ on sapphire. Sapphire therefore develops the larger faceted crystallites, while langasite exhibits the larger roughness maximum at 600 $^\\circ$C. Area distributions reveal that the 400-600 $^\\circ$C transition does not uniformly shift the initial granular population but instead replaces it with a distinct large-feature ensemble. Height and roughness measurements show a pronounced maximum at 600 $^\\circ$C, followed by partial smoothing at 800 $^\\circ$C, consistent with rapid coalescence followed by faceting-limited growth. An effective Arrhenius analysis based on $Δ\\langle r^2\\rangle$, with $\\langle r^2\\rangle = \\langle A\\rangle/π$, identifies the 400-600 $^\\circ$C interval as the dominant coarsening window. These results show that the thermal stability of PtNi/Zr films on sapphire and langasite is governed by the coupled influence of alloy mobility, interfacial energetics, and substrate-dependent morphological selection.",
+    "status": "found"
+  },
+  "2608.09910": {
+    "arxiv_id": "2608.09910",
+    "title": "Wavenumber-Domain Virtual Arrays for Holographic Near-Field Localization",
+    "authors": [
+      "Giovanni Iacovelli",
+      "Chandan Kumar Sheemar",
+      "Symeon Chatzinotas"
+    ],
+    "submission_date": "2026-08-10T17:53:32Z",
+    "latest_updated": "2026-08-10T17:53:32Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09910v1"
+    ],
+    "abstract": "Monostatic localization of multiple point targets is studied for a holographic aperture operated through wavenumber-domain modes. A specular-point condition delimits the validity of the spectral model as a near-field approximation. A single snapshot observes a projection of dimension at most the target count times the polarization components, while invertible coding recovers the full channel and places the decoded data on the difference lattice of transmit and receive wavenumbers. Rank conditions settle identifiability, and the Fisher matrix reduces to a covariance over the lattice, dictating a nested mode selection that attains full-aperture resolution with only tens of RF chains.",
+    "status": "found"
+  },
+  "2608.09911": {
+    "arxiv_id": "2608.09911",
+    "title": "Tunable Multiband Geometry and Fractional Phases in Higher Vortexable Systems",
+    "authors": [
+      "Xiaohan Wan",
+      "Siddhartha Sarkar",
+      "Ting Cao",
+      "Mark Rudner",
+      "Di Xiao",
+      "Kai Sun"
+    ],
+    "submission_date": "2026-08-10T17:54:03Z",
+    "latest_updated": "2026-08-10T17:54:03Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09911v1"
+    ],
+    "abstract": "Higher vortexability is often viewed as a route to topological flat bands with higher-Landau-level-like quantum geometry. Here we emphasize a complementary perspective: it provides a tunable multiband structure in which wave function geometry can be varied continuously while the band dispersion, degeneracy, and topology remain fixed. We perform systematic exact-diagonalization studies of many-body phases in fractionally filled higher vortexable moiré systems, retaining the full flat-band Hilbert space rather than projecting onto a single band. The multiband treatment reveals a cascade of Abelian and non-Abelian phases at zero magnetic field, including integer and fractional exciton insulators, Abelian fractional Chern insulators, Moore-Read and Read-Rezayi states. At fixed filling, different phases are connected through transitions or crossovers driven solely by changes in wave function geometry, highlighting quantum geometry itself as a direct tuning parameter between competing topological states. At fillings associated with Moore-Read and Read-Rezayi states, our calculations show that interband mixing shifts the optimal quantum geometry regime without suppressing non-Abelian topological order under screened Coulomb interaction. Our results establish higher vortexable moiré bands as a tunable platform for exploring geometry-driven multiband topological phases at zero magnetic field.",
+    "status": "found"
+  },
+  "2608.09912": {
+    "arxiv_id": "2608.09912",
+    "title": "Learning Clifford-structured quantum unitaries and Hamiltonians",
+    "authors": [
+      "Arkopal Dutt",
+      "Dale Jacobs",
+      "John Jeang",
+      "Saeed Mehraban",
+      "Vladimir Podolskii"
+    ],
+    "submission_date": "2026-08-10T17:54:14Z",
+    "latest_updated": "2026-08-10T17:54:14Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09912v1"
+    ],
+    "abstract": "Learning algorithms for structured quantum unitaries and Hamiltonians have primarily considered classes of processes that are local or sparse in the Pauli basis. We turn our attention to learning $n$-qubit quantum unitaries $U$ and Hamiltonians $H$, given query access to $U$ or the unitary evolution of $H$, that may be dense in the Pauli basis but still admit concise Clifford decompositions. Specifically, we consider unitaries (or Hamiltonians) of the form $U = \\sum_i α_i C_i$ over Cliffords $C_i$ with bounded Clifford extent $\\sum_i |α_i|$. To extract this Clifford structure, we introduce an agnostic tomography protocol for Clifford unitaries that given query access to an unknown unitary $U$ with optimal Clifford fidelity $\\textsf{opt}$, outputs a Clifford unitary witnessing fidelity $\\geq \\textsf{opt} - \\varepsilon$ for some error $\\varepsilon > 0$, in time $\\textsf{poly}(n,(1/\\varepsilon)^{\\log(1/\\varepsilon)})$. We then apply this protocol to obtain tomography protocols for unitaries and Hamiltonians that have bounded Clifford extent. This extends learnability of Hamiltonians from those with sparse Pauli decompositions to those that are dense (i.e., has sparsity $Ω(2^n)$) in the Pauli basis but are Clifford structured.",
+    "status": "found"
+  },
+  "2608.09913": {
+    "arxiv_id": "2608.09913",
+    "title": "From Koszul-Complex Stabilizer Models to Superselection Profiles: Topological Rigidity and Nonsplit Extensions",
+    "authors": [
+      "Hao Song"
+    ],
+    "submission_date": "2026-08-10T17:54:31Z",
+    "latest_updated": "2026-08-10T17:54:31Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09913v1"
+    ],
+    "abstract": "Koszul-complex stabilizer models unify the toric-code hierarchy and bivariate-bicycle codes in one homological framework. To study translation-symmetry-enriched topological (SET) phases in these models and, more generally, in translation-invariant Calderbank-Shor-Steane (CSS) codes with stabilizer maps $(\\varphi_X,\\varphi_Z)$, we introduce the associated topological superselection profile $\\mathscr S_σ:=τ_{\\geq1}\\mathbf R\\!\\operatorname{Hom}_R(\\overline{\\operatorname{coker}\\varphi_σ},R),\\ σ=X,Z$. Its cohomology layers $E_σ^\\ell:=H^\\ell(\\mathscr S_σ)\\cong_R\\operatorname{Ext}_R^\\ell(\\overline{\\operatorname{coker}\\varphi_σ},R)$ encode sectors, fusion, and translation action. When finite, the $\\ell=1,2,\\ldots$ layers describe pointlike, looplike, and higher-dimensional excitations; $\\mathscr S_σ$ retains inter-layer gluing. For regular Koszul models, we compute $E_σ^\\ell$ explicitly, find $\\mathscr S_σ$ single-layer, and obtain finite-size $Z$-logicals from $\\operatorname{Tor}$. Single-layer means that at most one positive-degree layer $E_σ^\\ell$ is nonzero. Our matrix-level Schanuel-lemma method proves rigidity: under a finite-resolution hypothesis, the nonzero layer and degree uniquely determine a topological CSS code's translation SET order at the stable translation-invariant Clifford level. For prime qudits the hypothesis is automatic, and a finite layer's translation kernel gives the exact minimal coarse graining to a toric-code stack. We realize admissible single-layer data. Beyond this regime, split and nonsplit extensions of 3D qubit toric codes yield eight models sharing all identical $E_σ^\\ell$ layers with trivial translation action but having distinct size-dependent ground-state degeneracies, hence distinct translation SET phases. Thus inter-layer gluing carries SET data invisible to individual layers.",
+    "status": "found"
+  },
+  "2608.09914": {
+    "arxiv_id": "2608.09914",
+    "title": "Overcoming Data Scarcity and Confidentiality in Hardware Assurance via Synthetic Generation",
+    "authors": [
+      "Gijung Lee",
+      "Ronald Wilson",
+      "Damon L. Woodard",
+      "Domenic Forte"
+    ],
+    "submission_date": "2026-08-10T17:56:03Z",
+    "latest_updated": "2026-08-10T17:56:03Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09914v1"
+    ],
+    "abstract": "Hardware assurance relies on scanning electron microscopy (SEM) to verify nanoscale structures, but assembling the large, high-quality datasets required for automated analysis is impeded by time-intensive acquisition and strict intellectual property (IP) constraints on proprietary designs. We propose a privacy-preserving pipeline that secures IP by heavily distorting the functional design while generating a visually realistic synthetic dataset from a small set of initial examples. A StyleGAN first learns the distribution of hardware layout masks to generate novel, macroscopically varied structures. Subsequently, a conditional GAN (Pix2PixHD) translates these masks into realistic SEM images that preserve authentic textures and noise. The primary finding of this work is that a segmentation model trained exclusively on this synthetic data not only demonstrates a successful \"sim-to-real\" transfer to real images but also outperforms a baseline model trained on the limited real dataset. Because the underlying synthetic layouts are demonstrably novel and reproduce none of the specific proprietary routing of the original design, deploying the final segmentation model mitigates the risk of exposing sensitive IP to attacks like gradient inversion and membership inference, providing a highly secure, high-performance solution for hardware assurance.",
+    "status": "found"
+  },
+  "2608.09915": {
+    "arxiv_id": "2608.09915",
+    "title": "Decoupling 2D translation-invariant topological CSS codes",
+    "authors": [
+      "Yifei Wang",
+      "Zhongyi Ni",
+      "Mingxin He",
+      "Jinguo Liu",
+      "Yingfei Gu"
+    ],
+    "submission_date": "2026-08-10T17:56:05Z",
+    "latest_updated": "2026-08-10T17:56:05Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09915v1"
+    ],
+    "abstract": "Two-dimensional translation-invariant topological CSS codes on qubits are known to be locally equivalent, after coarse-graining, to stacks of toric codes. However, existing constructions generally break more translation symmetry than is required to remove anyon-permuting translations, leaving open whether any further obstruction exists. We prove that no such obstruction occurs: after passing to the maximal anyon-preserving superlattice, every such code admits a local unitary decoupling into toric codes and product states. We further provide an efficient algorithm for explicitly constructing the decoupling map, together with bounds on the required supercell size and operator spreading. The decoupling requires no additional ancillas in generic cases and extends to finite systems with suitable boundary conditions.",
+    "status": "found"
+  },
+  "2608.09916": {
+    "arxiv_id": "2608.09916",
+    "title": "AES-Debye: an Accurate, Efficient, and Scalable Engine for Debye Scattering Calculations",
+    "authors": [
+      "Navid Panchi",
+      "Sebastian Kuckuk",
+      "Markus Wittmann",
+      "Michael Engel",
+      "Alberto Leonardi"
+    ],
+    "submission_date": "2026-08-10T17:56:08Z",
+    "latest_updated": "2026-08-10T17:56:08Z",
+    "revised_dates": null,
+    "venue": "J. Appl. Crystallogr. 59, 1478 (2026)",
+    "latest_version": 1,
+    "versions": [
+      "2608.09916v1"
+    ],
+    "abstract": "Total scattering models are essential for characterizing the structure and disorder of nanoscale materials. The Debye scattering equation (DSE) provides a rigorous route to elastic total scattering, but its direct evaluation is computationally demanding because pairwise contributions must be accumulated at every scattering vector, whereas common acceleration strategies based on binned pair-distance distributions or gridded fast Fourier transforms can introduce discretization and aliasing artifacts that compromise diffuse-scattering accuracy. Here, we present AES-Debye, an accuracy-preserving DSE framework that aggregates pair distances into a pair distribution function (PDF) using corrected bin centers and numerically robust accumulation to suppress discretization and summation errors. A data-locality-aware parallel design enables efficient execution on CPUs and GPUs. We demonstrate strong scalability by computing a high-resolution total scattering profile for a system of 90 million atoms, $(0.1,μ\\mathrm{m})^{3}$, in minutes on a distributed-memory CPU platform. These capabilities extend accurate elastic total scattering calculations to large, complex systems while simultaneously providing high-resolution PDFs for downstream structural analysis.",
+    "status": "found"
+  },
+  "2608.09917": {
+    "arxiv_id": "2608.09917",
+    "title": "WhichTok? Comparing Three TikTok Data Acquisition Tools",
+    "authors": [
+      "Gayoung Jeon",
+      "Cameron Moy",
+      "Silvia Teliz",
+      "Cristina Monzer",
+      "Nicolette Alayon",
+      "Deen Freelon"
+    ],
+    "submission_date": "2026-08-10T17:56:58Z",
+    "latest_updated": "2026-08-10T17:56:58Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09917v1"
+    ],
+    "abstract": "TikTok's global growth has made it a prime platform for both entertainment and political discourse, prompting increased social science research. However, this rapidly evolving research field faces a fundamental reproducibility crisis. TikTok's opaque algorithmic systems hinder researchers from drawing meaningful empirical inferences, while the lack of standardized data collection methods compounds these challenges. This study addresses these methodological gaps by systematically comparing three data collection tools - the official TikTok Research API, Pyktok, and Apify. We evaluated five endpoints: User, Hashtag, Keyword, Comment, and Related Video. Results show substantial cross-tool differences, especially for hashtag and keyword searches. The Research API uses back-end API calls, whereas Apify and Pyktok rely on front-end web scraping, producing systematic differences in the time periods and popularity levels represented in retrieved content. The three tools yielded comprehensive and consistent results only for the user endpoint. Our results question whether these tools can acquire truly random[-ized] samples, as they introduce methodological confounds that may compromise research validity in ways not yet fully understood. Based on these results, we offer methodological, transparency, and ethical recommendations and guidelines to increase TikTok research quality.",
+    "status": "found"
+  },
+  "2608.09918": {
+    "arxiv_id": "2608.09918",
+    "title": "Ricci-flat metrics from gauged linear $σ$-models without RG flow",
+    "authors": [
+      "Dmitri Bykov",
+      "Ondrej Hulik",
+      "Ulf Lindström",
+      "Martin Roček",
+      "Rikard von Unge"
+    ],
+    "submission_date": "2026-08-10T17:57:04Z",
+    "latest_updated": "2026-08-10T17:57:04Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09918v1"
+    ],
+    "abstract": "We investigate a class of Ricci-flat Kähler metrics on generalized conifolds constructed via gauged linear sigma models (GLSMs) with indefinite signature. By introducing shadow coordinates (superfields) entering the sigma model with negative signature kinetic term, we show that these GLSMs yield explicit Ricci-flat metrics on complex cones over products of projective spaces. We provide a general formula for the resulting Kähler potentials, along with detailed examples. Our results suggest new directions for the study of Calabi-Yau metrics and toric geometry, and raise interesting questions about the geometric meaning of indefinite signature models. We also give an interpretation in terms of a novel generalized Kähler gauging.",
+    "status": "found"
+  },
+  "2608.09919": {
+    "arxiv_id": "2608.09919",
+    "title": "Detecting Behavioral Changes in Python Refactoring Implementations with Foundation Models",
+    "authors": [
+      "Jonhnanthan Oliveira",
+      "Rohit Gheyi",
+      "Márcio Ribeiro",
+      "Alessandro Garcia"
+    ],
+    "submission_date": "2026-08-10T17:57:37Z",
+    "latest_updated": "2026-08-10T17:57:37Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09919v1"
+    ],
+    "abstract": "Python is a widely adopted programming language, valued for its simplicity and flexibility. However, automated refactoring for Python remains challenging, even though refactoring is an essential practice in software evolution aimed at improving internal code structure without changing external behavior. Understanding how behavioral changes are introduced during refactoring is crucial, as such issues can compromise software reliability and reduce developer productivity. We propose an approach based on a foundation model oracle that analyzes git-style diffs to identify behavioral changes introduced by Python refactorings. We evaluated our technique on Rope refactoring implementations, reusing 1,152 refactoring attempts from a prior study and analyzing 217 resulting transformation pairs with the oracle. Our model-based analysis uncovered 13 distinct bugs among the seven refactoring types studied. All reported bugs were submitted to the respective developers, and 12 of the 13 resulting issue reports were accepted according to issue-tracker evidence. These results highlight the need to improve the robustness of current Python refactoring tools to ensure the correctness of automated code transformations and support reliable software maintenance.",
+    "status": "found"
+  },
+  "2608.09920": {
+    "arxiv_id": "2608.09920",
+    "title": "IPA: Morphology and Kinematics of Molecular Hydrogen Winds in Five Young Protostars across the Mass Spectrum Observed with JWST",
+    "authors": [
+      "Himanshu Tyagi",
+      "P. Manoj",
+      "Mayank Narang",
+      "S. Thomas Megeath",
+      "Robert Gutermuth",
+      "Lee Hartmann",
+      "Alessio Caratti o Garatti",
+      "Dan M. Watson",
+      "David A. Neufeld",
+      "Ewine F. Van Dishoeck",
+      "Neal J. Evans",
+      "Vinod Chandra Pathak",
+      "Samuel A. Federman",
+      "Tyler L. Bourke",
+      "Yao-Lun Yang",
+      "Guillem Anglada",
+      "Henrik Beuther",
+      "Leslie W. Looney",
+      "Rolf Kuiper",
+      "Pamela Klaassen",
+      "Pooneh Nazari",
+      "Bihan Banerjee",
+      "Joel Green",
+      "Sujay Vijay Jadhav",
+      "Mayra Osorio",
+      "B. Shridharan",
+      "Amelia M. Stutz",
+      "Thomas Stanke",
+      "John J. Tobin",
+      "Lukasz Tychoniec",
+      "Scott Wolk",
+      "Manya Arora"
+    ],
+    "submission_date": "2026-08-10T17:57:48Z",
+    "latest_updated": "2026-08-10T17:57:48Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09920v1"
+    ],
+    "abstract": "Molecular winds may play a key role in governing angular momentum transport and accretion during the early evolution of protostars. We present the morphology and kinematic properties of the H$_2$ emission in five young, envelope-dominated, protostars across a broad bolometric luminosity range, from 0.2 to $10^4~L_{\\odot}$, observed with the NIRSpec/IFU and MIRI/MRS onboard JWST as part of the Investigating Protostellar Accretion (IPA) program. A rich set of pure rotational lines of H$_2$, up to $v=0-0$ S(18), and a few ro-vibrational lines are detected in the winds, revealing bipolar structures. The H$_2$ lines show a stratified/onion-like structure morphologically and kinematically, where the lines with higher $E_{\\rm up}$ show a higher degree of collimation and higher velocities. Additionally, the wind velocity scales with the $L_{\\rm bol}$ of the host protostellar system. In 4 out of 5 protostars, H$_2$ emission fills the outflow cavity without showing pronounced limb brightening. We also report a tentative detection of H$_2$ wind rotation in IRAS 16253, which suggests a launch radius of $\\sim4$ au and the magnetic lever arm parameter of $\\sim5-10$. Taken together, these properties of the H$_2$ winds can be explained by the magnetohydrodynamic disk wind models. We detect a collimated, high-velocity H$_2$ jet toward HOPS 370, which is more evolved than the extremely young source HH 211, but is accreting at a high accretion rate. This suggests that the presence of collimated molecular jets in protostars is more closely connected to accretion rate than system age.",
+    "status": "found"
+  },
+  "2608.09921": {
+    "arxiv_id": "2608.09921",
+    "title": "GENCO - A Unified Neural Solver Embedded in a Development Framework for Steady-State Grid Analysis",
+    "authors": [
+      "Alban Puech",
+      "Matteo Mazzonelli",
+      "Tamara R. Govindasamy",
+      "Mangaliso Mngomezulu",
+      "Héctor Maeso-García",
+      "Thomas Tolhurst",
+      "Javad Bayazi",
+      "Ali Moeini",
+      "Naomi Simumba",
+      "Celia Cintas",
+      "David Nelischer",
+      "Romeo Kienzler",
+      "Jonas Weiss",
+      "Anna Varbella",
+      "Florian Dörfler",
+      "Gabriela Hug",
+      "Martin Mevissen",
+      "Juan Bernabé-Moreno",
+      "François Mirallès",
+      "Hendrik F. Hamann",
+      "Etienne Vos",
+      "Thomas Brunschwiler"
+    ],
+    "submission_date": "2026-08-10T17:57:49Z",
+    "latest_updated": "2026-08-20T16:00:29Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.09921v1",
+      "2608.09921v2"
+    ],
+    "abstract": "Foundation models are transforming business workflows and boosting productivity, yet they remain largely absent from engineering domains such as power system analysis, where strict physical consistency must be enforced. We present GENCO (GEometric Neural Corrective Optimizer), a unified neural solver for steady-state transmission grid analysis that handles power flow (PF), optimal power flow (OPF), and state estimation (SE) within a single architecture and shared grid representation. To support advances in neural power system solvers, we introduce the open-source GridFM Development Framework, which standardizes synthetic data generation and training in a low-code environment. We also release large-scale datasets with millions of PF and OPF scenarios across diverse grid topologies to support reproducible benchmarking. We evaluate GENCO on the PFDelta and OPFData benchmarks against state-of-the-art neural solvers and classical solvers, including Newton-Raphson and IPOPT, as well as on real-world Hydro-Québec SCADA data. For large-scale PF, GENCO recovers the full AC operating state, including voltage magnitudes and reactive power that DC-PF cannot provide, while matching DC-PF-level active power-balance residuals. It achieves up to 30x speedups over Newton-Raphson at only 2x the runtime of DC-PF. For OPF, it achieves up to 85x speedups over IPOPT while improving feasibility, optimality, and runtime over DC-OPF. For SE, GENCO is more robust than classical weighted least squares to noisy measurements and grid parameter errors, and always returns a high-quality estimate even when weighted least squares fails to converge. Together, the unified architecture and development framework provide a new approach to large-scale steady-state grid analysis, lowering the barrier to entry for power system engineers and marking a step toward Grid Foundation Models.",
+    "status": "found"
+  },
+  "2608.09922": {
+    "arxiv_id": "2608.09922",
+    "title": "The quadratic growth of Krylov spread complexity in the BTZ black hole",
+    "authors": [
+      "Aranya Bhattacharya",
+      "Mario Flory",
+      "Michal P. Heller",
+      "Emiliano Rizza",
+      "Tim Schuhmann"
+    ],
+    "submission_date": "2026-08-10T17:58:15Z",
+    "latest_updated": "2026-08-10T17:58:15Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09922v1"
+    ],
+    "abstract": "The boundary quantity that captures the growth of black-hole interiors quantified by holographic complexity remains unknown beyond 2d dilaton gravity. We provide a critical analysis of a partition-function construction of Krylov spread complexity for thermofield-double states that provides a dimension-independent boundary reconstruction from semiclassical holographic partition functions, while developing the present dynamical and bulk construction for the BTZ saddle. In the double-scaled Sachdev-Ye-Kitaev model, where exact and semiclassical results can be compared, we show that the classical limit is reliable only when taken after the complexity has been reconstructed; taking this limit at the level of individual Lanczos coefficients discards essential information. Applying the construction to a large-central-charge two-dimensional conformal field theory above the Hawking-Page temperature dual to a Bañados-Teitelboim-Zanelli black hole, we find an intermediate departure from early-time quadratic growth followed by behavior compatible with a return toward asymptotically quadratic growth, rather than the linear late-time behavior of the volume and the standard finite-functional complexity = anything class. We then match this boundary behavior to a generalized complexity = anything bulk object built from an infinite series of extrinsic-curvature invariants. The construction provides a systematic route from black-hole thermodynamics to Krylov dynamics and can naturally be extended to higher-dimensional holographic black holes.",
+    "status": "found"
+  },
+  "2608.09923": {
+    "arxiv_id": "2608.09923",
+    "title": "Unrolling a Graph-Laplacian Denoiser Realizes Only Compositions of Polynomial Graph Filters",
+    "authors": [
+      "Seyed Alireza Hosseini"
+    ],
+    "submission_date": "2026-08-10T17:58:55Z",
+    "latest_updated": "2026-08-10T17:58:55Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09923v1"
+    ],
+    "abstract": "A recent construction of unrolled networks for graph-based image restoration forms a system matrix from a graph-Laplacian denoiser through a truncated Taylor expansion, then inverts it with a fixed number of conjugate-gradient steps, with the coefficients of both stages learned. This paper shows the resulting map is a polynomial in the denoising operator, of degree at most the product of the two truncation orders, for every setting of those coefficients and therefore at every point of training: the learned steps select an element of a Krylov subspace they cannot enlarge. At the orders used in practice the reachable set is moreover a measure-zero subset of the polynomial class of the network's own degree budget, so the composition constrains the hypothesis space rather than enlarging it. At the standard initialization the realized spectral response is obtained in closed form, exceeding the intended response throughout the interior of the spectrum and approaching a nonzero floor. A lower bound on the operator's condition number, internal to the graph construction rather than to image content, then places the order required for a prescribed accuracy well above the order used in practice. The confining class is precisely the spectral graph filters for which a direct, convex parameterization has long been available.",
+    "status": "found"
+  },
+  "2608.09924": {
+    "arxiv_id": "2608.09924",
+    "title": "A Quantum Coherence Microscope in the Hubbard Regime",
+    "authors": [
+      "Lin Su",
+      "Michal Szurek",
+      "Alec Douglas",
+      "Ceren B. Dag",
+      "Markus Greiner"
+    ],
+    "submission_date": "2026-08-10T17:59:02Z",
+    "latest_updated": "2026-08-10T17:59:02Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09924v1"
+    ],
+    "abstract": "Quantum coherence underlies collective quantum phenomena and emerging quantum technologies. Quantum gas microscopes have transformed quantum simulation by providing projective snapshots of many-body states with single-atom resolution, but spatially resolved measurements of off-diagonal correlations have remained elusive. Here, using the Talbot effect, we introduce a quantum coherence microscope that maps off-diagonal correlations onto site-resolved density signals with near-single-site resolution. We use this technique to locally probe the superfluid-Mott transition in a layer of a three-dimensional optical lattice and to measure coherence beyond nearest neighbors in an engineered potential landscape. By mapping off-diagonal correlations onto density signals through controlled Talbot evolution, this work opens new possibilities for accessing observables beyond the density basis through tailored matter-wave evolution and recapture.",
+    "status": "found"
+  },
+  "2608.09925": {
+    "arxiv_id": "2608.09925",
+    "title": "From Values to Benchmarks: Evaluating Large Language Models for Governmental Use in Dutch",
+    "authors": [
+      "Laurens Samson",
+      "Iva Gornishka",
+      "Gossa Lô",
+      "Yuki M. Asano",
+      "Sennay Ghebreab"
+    ],
+    "submission_date": "2026-08-10T17:59:05Z",
+    "latest_updated": "2026-08-10T17:59:05Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09925v1"
+    ],
+    "abstract": "Large language models are increasingly being deployed in governmental settings, yet few existing evaluation frameworks jointly reflect the values of public administration and the linguistic requirements of non-English contexts. We present the \"Grip on LLMs\" framework, a systematic evaluation suite for Dutch governmental use developed in collaboration with domain experts from a major Dutch municipal organisation. Through an advisory board process, user research, and a survey of the users of a civil-servant chatbot, we identify six evaluation dimensions (factuality, honesty, social bias, energy consumption, cost, and training data transparency) and operationalise them into a benchmark suite covering more than 30 multilingual and Dutch-specific models. Our results reveal that no single model excels across all dimensions, and that trade-offs are unavoidable: higher quality consistently comes at greater environmental impact and financial cost, while bias remains largely independent of both. We further find that factuality (whether a model answers correctly) and honesty (whether a model acknowledges what it does not know) are governed by distinct properties, with high factuality not implying high honesty. To make these findings actionable for non-technical audiences, we release a publicly accessible, user-friendly model overview designed for the full range of stakeholders involved in governmental LLM selection, from engineers to policymakers.",
+    "status": "found"
+  },
+  "2608.09926": {
+    "arxiv_id": "2608.09926",
+    "title": "Learning How the World Evolves: Extrapolative Video World Models via Latent Dynamics Reasoning",
+    "authors": [
+      "Haodong Li",
+      "Shaoteng Liu",
+      "Tianyu Wang",
+      "Chongjian Ge",
+      "Sihui Ji",
+      "Jiahan Zhang",
+      "Xin Lin",
+      "Haolin Lu",
+      "Zhe Lin",
+      "Manmohan Chandraker"
+    ],
+    "submission_date": "2026-08-10T17:59:19Z",
+    "latest_updated": "2026-08-10T17:59:19Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09926v1"
+    ],
+    "abstract": "The world evolves following its dynamics, i.e., its laws of motion. However, leading video diffusion models largely fit the pixels without modeling how the pixels transit over time. Thus, they render visually plausible frames but may not accurately obey the laws. To capture the dynamics purely from pixels, we introduce Latent Dynamics Reasoning (LDR). LDR casts the latent transition as an explicit kinematic integration, where the lower-order dynamics are integrated numerically and the model regresses only the third- and higher-order residual that drives the rollout. For this integration to extrapolate better, LDR runs it on a structured latent rather than dense convolutional features. Following PhyWorld, we validate LDR on a controlled white-box physics benchmark spanning five tasks (uniform motion, parabola, collision, bouncing, looming), focusing on out-of-distribution scenarios that reveal whether a model has truly learned the underlying dynamics. LDR extrapolates the learned dynamics far better: the gap between its in- and out-of-distribution error is over 20$\\times$ smaller than the video diffusion baseline's, under both single- and joint-task training at 256$^2$ resolution, while using 26$\\times$ fewer parameters and running 143$\\times$ faster. LDR can even generalize under severe shift: for example, trained only on red balls moving left-to-right, it correctly predicts the motion of a blue square moving right-to-left. To our knowledge, this is the first video world model that extrapolates learned dynamics beyond its training distribution. Project page: https://lat-dyn-reason.github.io/",
+    "status": "found"
+  }
+}

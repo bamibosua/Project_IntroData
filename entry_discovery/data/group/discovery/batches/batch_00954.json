@@ -1,0 +1,395 @@
+{
+  "2609.16914": {
+    "arxiv_id": "2609.16914",
+    "title": "Improved Regular Expression Matching with Simple Backreferences",
+    "authors": [
+      "Philip Bille",
+      "Inge Li Gørtz",
+      "Rikke Schjeldrup Jessen"
+    ],
+    "submission_date": "2026-09-15T09:51:15Z",
+    "latest_updated": "2026-09-15T09:51:15Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16914v1"
+    ],
+    "abstract": "A regular expression with backreferences (rewb) specifies a set of strings formed by characters combined with concatenation, union, star operators, and backreferences. A backreference consists of a capturing group $(\\cdot)_i$ and a reference $\\backslash i$. The substring matched by the reference must match the substring matched by the corresponding capturing group. Given a rewb $R$ and a string $Q$, the rewb matching problem is to decide whether $Q$ is one of the strings specified by $R$. In full generality, rewb matching is NP-complete, but efficient solutions exist for various subclasses. In the paper, we focus on rewb containing a single capturing group and $k$ references. For this class, Uezato~[CPM 2026] gave an $O((k n^2 m^2)$ time and $O(n^2m^2)$ space algorithm, where $m$ is the length of the regular expression $R$ and $n$ is the length of the string $Q$. For the special case of $k=1$, Nogami and Terauchi~[MFCS 2025] gave an $O(n^2m^2)$ time and $O(n+ m^2)$ space algorithm. On the other hand, Nogami, Nakamura, and Terauchi~[arXiv 2026] gave a conditional lower bound, showing that we cannot solve the problem in $O(n^{2-ε} \\mathrm{poly}(m))$ for any $ε> 0$ assuming the orthogonal vector hypothesis. Our main result is a new algorithm that runs in $O(n^2m)$ time and uses $O(nm)$ space. This improves the above results (by a factor of $km$ and $m$, respectively) and the former's space bound (by a factor of $nm$). We also show how to extend our algorithm to handle a slightly more general class of ordered and single-nested rewbs.",
+    "status": "found"
+  },
+  "2609.16915": {
+    "arxiv_id": "2609.16915",
+    "title": "ROSETTA: Efficient and Accurate Privacy-Preserving LLM Decoding via Hybrid CKKS/TFHE Evaluation",
+    "authors": [
+      "Jiangrui Yu",
+      "Baosheng Zhang",
+      "Liang Kong",
+      "Lin Ding",
+      "Yi Chen",
+      "Ye Yu",
+      "Mingzhe Zhang",
+      "Meng Li"
+    ],
+    "submission_date": "2026-09-15T09:51:33Z",
+    "latest_updated": "2026-09-15T09:51:33Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16915v1"
+    ],
+    "abstract": "Generative large language models (LLMs) have achieved state-of-the-art performance on many real-world tasks such as code generation and question answering. These models predominantly rely on an autoregressive decoding strategy that generates output tokens sequentially. However, their pervasive deployment raises serious privacy concerns, motivating private inference frameworks based on fully homomorphic encryption (FHE). A major limitation of existing FHE frameworks is their inefficiency in evaluating nonlinear operations, which incur substantial overhead and dominate the decode stage. In this paper, we propose ROSETTA, a hybrid CKKS/TFHE framework that overcomes this limitation. We first observe that nonlinear operations in the decode stage exhibit heterogeneous workload patterns, which can be handled effectively via a hybrid approach. We then realize this with two key contributions: 1) an adaptive segmented lookup-table protocol based on TFHE that enables efficient and accurate evaluation of nonlinear operations; and 2) a scheme-aware operator-selection framework that automatically assigns each nonlinear operator to CKKS or TFHE to minimize end-to-end decoding latency. We demonstrate that ROSETTA achieves up to $4.8\\times$ Softmax speedup and $1.5$--$2.1\\times$ end-to-end speedup over the SOTA framework CacheMir.",
+    "status": "found"
+  },
+  "2609.16916": {
+    "arxiv_id": "2609.16916",
+    "title": "Pitman closest equivariant estimators under multivariate scale and location--scale models",
+    "authors": [
+      "Yihong Liu",
+      "Haojin Zhou"
+    ],
+    "submission_date": "2026-09-15T09:51:35Z",
+    "latest_updated": "2026-09-15T09:51:35Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16916v1"
+    ],
+    "abstract": "For multivariate scale and location--scale models with independent components, we extend the univariate results of Zhou and Nayak (2012) and derive optimum equivariant estimators under the generalized Pitman closeness criterion. We first show, by a counterexample, that in the multivariate case the Pitman closeness comparison within the class of equivariant estimators is not transitive, so that a Pitman closest equivariant estimator does not exist in general. We then enlarge the transformation group by the coordinate permutations---equivalently, impose the formal equivariance principle of Berger (1985) across isomorphic component problems, in the spirit of the separable rules of Robbins' (1951) compound decision theory---and show that within the resulting restricted class an optimum is restored. A multivariate median lemma based on strictly convex losses then yields explicit Pitman closest equivariant estimators of the scale parameters, powers of the scale parameters, and the location parameters, given by median-adjusted versions of any given equivariant estimator. Applications to the multivariate uniform and multivariate normal distributions are worked out in detail. Monte Carlo experiments for the Rayleigh distribution and for a competing risks model with Rayleigh component lifetimes confirm that the proposed estimators dominate the maximum likelihood and Bayes estimators under the Pitman closeness criterion, and a real industrial data set on ball bearing failure times illustrates the feasibility of the method in practice.",
+    "status": "found"
+  },
+  "2609.16917": {
+    "arxiv_id": "2609.16917",
+    "title": "Multi-Agent Learning with Cooperation-Driven Optimization Dynamics",
+    "authors": [
+      "Jarod Ketcha Kouakep",
+      "Sreyvi UANN",
+      "Timoteo Carletti"
+    ],
+    "submission_date": "2026-09-15T09:51:54Z",
+    "latest_updated": "2026-09-15T09:51:54Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16917v1"
+    ],
+    "abstract": "Multilayer Artificial Neural Networks trained via backpropagation are the basic blocks of many, more complex, classification algorithms. Their strength lies in the possibility of realizing, with arbitrary precision, any function. This result comes at the cost of the large number of involved parameters to be optimized. In this work, we propose a mechanism for cooperation, i.e., information exchange among several artificial neural networks, with the goal of reducing model complexity while maintaining performance. More precisely, we consider several \"small\" agents, i.e., containing fewer parameters than a reference \"large\" one, that during training share their predictions by incorporating this information into the loss function and thus directly influence weight updates. We consider several strategies for implementing cooperation, e.g., the voter model, majority model, and weighted average model based on an agent's confidence in its prediction. We numerically compare the accuracy of those strategies on several standard benchmarks. Our results support the claim that several small agents can outperform a single large model on a given classification task; the shared signals affect each agent's optimization algorithm by modulating both the descent direction and the step size, converging toward a global consensus. The proposed proof-of-concept significantly reduces the number of parameters to be trained while preserving comparable performance, thereby limiting computational resource usage.",
+    "status": "found"
+  },
+  "2609.16918": {
+    "arxiv_id": "2609.16918",
+    "title": "Improved Regularity for Nonlocal Hamilton--Jacobi Equations with Superlinear Hamiltonians",
+    "authors": [
+      "Adina Ciomaga",
+      "Tri Minh Lê",
+      "Olivier Ley",
+      "Erwin Topp"
+    ],
+    "submission_date": "2026-09-15T09:52:03Z",
+    "latest_updated": "2026-09-15T09:52:03Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16918v1"
+    ],
+    "abstract": "We investigate the regularity of viscosity solutions to a class of nonlocal Hamilton-Jacobi equations driven by x-dependent integro-differential operators and coercive superlinear Hamiltonians. We first establish H{ö}lder regularity for bounded viscosity solutions under general structural and continuity assumptions on the underlying L{é}vy measures, without imposing any ellipticity condition on the nonlocal operator. The H{ö}lder exponent is given explicitly in terms of the order $σ$ $\\in$ (0, 2) of the operator and the growth exponent m > 1 of the Hamiltonian. In particular, our approach applies to arbitrary superlinear Hamiltonians, including the delicate regime 1 < m < $σ$ < 2, and yields an improved regularity exponent when $σ$ $\\in$ (1, 2). Assuming in addition a weak ellipticity condition on the nonlocal operator, we prove that viscosity solutions are globally Lipschitz continuous. The proof combines the H{ö}lder regularity supplied by the coercive Hamiltonian with the regularizing effect of the nonlocal diffusion through an Ishii-Lions argument, allowing us to treat Hamiltonians with arbitrary superlinear growth. Finally, we provide a counterexample showing that, in the absence of ellipticity, Lipschitz regularity may fail if the spatial dependence of the L{é}vy measures is merely H{ö}lder continuous, thereby illustrating the sharpness of our continuity assumptions.",
+    "status": "found"
+  },
+  "2609.16919": {
+    "arxiv_id": "2609.16919",
+    "title": "NeuroSymbEAD: A Large Scale Neuro-Symbolic Caption Dataset for Omni-Directional Embodied Autonomous Driving",
+    "authors": [
+      "Muhammad Ahmed Ullah Khan",
+      "Mohammed Elamine",
+      "Sheikh Talha Uddin",
+      "Didier Stricker",
+      "Sk Aziz Ali",
+      "Muhammad Zeshan Afzal"
+    ],
+    "submission_date": "2026-09-15T09:52:51Z",
+    "latest_updated": "2026-09-15T09:52:51Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16919v1"
+    ],
+    "abstract": "This paper introduces NeuroSymbEAD, a large-scale neuro-symbolic caption dataset featuring an ego-centric knowledge graph (KG) of static and dynamic objects annotated with classes, categories, heading directions, orientations, and distances from the ego-vehicle. These annotations are used on the KITTI-360 dataset to generate multilevel textual captions representing a lightweight version of an ego-centric scene map. Outdoor scene-map reconstruction, visual recognition, and object grounding establish baselines for driving common sense and traffic/scene understanding. For these purposes, natural language-based grounded captioning of objects and their complex relationships is a widely adopted contextual representation for indoor scene tasks. Neuro-symbolic representations have proven effective in handling structured information for various computer vision and language applications. Our data annotation pipeline allows the generation of varied map segments, populating simulated or real objects within the bounding boxes predicted by any 3D object detection network, and building hierarchical text captions. We benchmark our neuro-symbolic and ontological caption generation using pre-trained grounding and learned auto-regressive captioning networks. By converting 3D driving scenes into structured ego-centric language, NeuroSymbEAD provides a benchmark for vision-language and foundation models for traffic-scene explanation, 3D reasoning, and interpretable autonomous-driving perception.",
+    "status": "found"
+  },
+  "2609.16920": {
+    "arxiv_id": "2609.16920",
+    "title": "Invariance of Hurwitz-Stability of Polynomials of Degree Five under Positive Hadamard Powers",
+    "authors": [
+      "Rola Alseidi",
+      "Raoufah Alsaidi",
+      "Jürgen Garloff"
+    ],
+    "submission_date": "2026-09-15T09:53:02Z",
+    "latest_updated": "2026-09-15T09:53:02Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16920v1"
+    ],
+    "abstract": "A complete characterization of the stability-preserving exponent set for fractional Hadamard powers of a monic Hurwitz-stable polynomial f of degree five is presented. The stability problem is reduced to the analysis of a single scalar function depending only on three parameters formed from the coefficients of the polynomial f. This reduction leads to a unique stability threshold $p_*(f) \\in (0,1)$ such that the $p$-th Hadamard power of $f$ is Hurwitz stable if and only if $p > p_*(f)$. Consequently, the stability-preserving exponent set is precisely $(p_*(f),\\infty)$. This threshold depends smoothly on the parameters and provides a global coordinate on the admissible parameter region. Finally, smooth dependence is illustrated by a one-parameter family of Hurwitz-stable polynomials whose complex-conjugate zeros approach the imaginary axis.",
+    "status": "found"
+  },
+  "2609.16921": {
+    "arxiv_id": "2609.16921",
+    "title": "Constructions of LCPs and LCD codes from twisted Reed-Solomon codes",
+    "authors": [
+      "Shuo Sun",
+      "Wenwen Chen",
+      "Chao Liu",
+      "Yaozong Zhang",
+      "Xiaoqiang Wang"
+    ],
+    "submission_date": "2026-09-15T09:54:13Z",
+    "latest_updated": "2026-09-15T09:54:13Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16921v1"
+    ],
+    "abstract": "Linear complementary pairs (LCPs) and linear complementary dual (LCD) codes have important applications in orthogonal direct-sum masking (ODSM), which provides effective countermeasures against side-channel attacks and fault-injection attacks. While LCD codes have been extensively investigated, comparatively fewer results are available for general LCPs. In this paper, we further investigate LCPs of twisted Reed--Solomon (TRS) codes. We derive necessary conditions for two TRS codes to form an LCP and establish several sufficient conditions and explicit constructions. We also study LCD codes constructed from TRS codes and investigate the security parameters of the resulting LCPs. Furthermore, under suitable conditions, we obtain MDS LCPs of TRS codes.",
+    "status": "found"
+  },
+  "2609.16922": {
+    "arxiv_id": "2609.16922",
+    "title": "Multiplicatively idempotent HSI algebras satisfy all equations of $\\mathbb{N}$",
+    "authors": [
+      "Tumadhir Alsulami",
+      "Marcel Jackson",
+      "Michael Kinyon"
+    ],
+    "submission_date": "2026-09-15T10:00:17Z",
+    "latest_updated": "2026-09-15T10:00:17Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16922v1"
+    ],
+    "abstract": "An algebra with binary operations $+,\\cdot,\\uparrow$ and constant $1$ is called an HSI algebra if it satisfies the basic commutative semiring laws for $+,\\cdot,1$ on~$\\mathbb{N}$ as well as the familiar index laws for exponentiation $\\uparrow$. These basic axioms, known as the ``High School Identities'' are known to be incomplete, and an algebra satisfying $\\HSI$ but failing an equation valid on ${\\bf N}:=\\langle \\mathbb{N};+,\\cdot,\\uparrow,1\\rangle$ is called a \\emph{Gurevič algebra}. It is currently unknown if there is an algorithm to recognise finite Gurevič algebras, and the best current result is that there exists a 12-element Gurevič algebra, and that none of the five 2-element HSI algebras are Gurevič algebras. We explain how the work of Alex Wilkie can be used to provide an algorithm for deciding validity of the equational laws of $\\langle \\mathbb{N};+,\\cdot,\\uparrow,1\\rangle$, and use this to show that multiplicatively-idempotent HSI algebras satisfy all valid laws of $\\langle \\mathbb{N};+,\\cdot,\\uparrow,1\\rangle$. As consequences of this result, we show that all 44 HSI algebras on 3 elements lie in the variety of $\\langle \\mathbb{N};+,\\cdot,\\uparrow,1\\rangle$ (that is, are not Gurevič algebras), as well as 597 of the 657 models on 4 elements and 11158 of the 13577 models on 5 elements. A further consequence is that every Brouwerian lattice lies in the variety of $\\langle \\mathbb{N};+,\\cdot,\\uparrow,1\\rangle$ (up to a simple term equivalence), showing that the variety of $\\langle \\mathbb{N};+,\\cdot,\\uparrow,1\\rangle$ has continuum many subvarieties. The constant-free signature is also explored, and it is shown that in this case all $2$-element models of the constant-free High School Laws satisfy all valid constant-free laws in $\\langle \\mathbb{N};+,\\cdot,\\uparrow\\rangle$.",
+    "status": "found"
+  },
+  "2609.16923": {
+    "arxiv_id": "2609.16923",
+    "title": "High-Multiplicity Bin Packing is FPT",
+    "authors": [
+      "Tomohiro Koana",
+      "Soh Kumabe"
+    ],
+    "submission_date": "2026-09-15T10:00:39Z",
+    "latest_updated": "2026-09-15T10:00:39Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16923v1"
+    ],
+    "abstract": "Bin packing asks whether a collection of items can be packed into at most a given number of bins of a given capacity. We consider the high-multiplicity setting with $d$ distinct item sizes, in which both the item sizes and the number of items of each size are encoded in binary. Goemans and Rothvos (JACM 2020) gave an XP algorithm parameterized by $d$. Whether this problem is fixed-parameter tractable (FPT) in $d$ has remained a central open problem. We resolve this question by giving a deterministic $O^*(2^{d^{O(d)}})$-time algorithm. We formulate bin packing as an integer linear program (ILP) with at most $(d+1)d^d$ variables. A bin configuration records the number of items of each type in one bin. We partition these configurations by their coordinate remainders modulo $d$. For each class, we use one variable for the bin count and $d$ variables for the total item counts. The convex hull of each class has the integer decomposition property, which guarantees that every feasible ILP solution corresponds to a packing.",
+    "status": "found"
+  },
+  "2609.16924": {
+    "arxiv_id": "2609.16924",
+    "title": "Positivity Bounds in $\\mathcal N =1$ Supersymmetry",
+    "authors": [
+      "Jingxuan Bu",
+      "Jiayin Gu",
+      "Runqing Wang"
+    ],
+    "submission_date": "2026-09-15T10:01:09Z",
+    "latest_updated": "2026-09-15T10:01:09Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16924v1"
+    ],
+    "abstract": "For a low-energy Effective Field Theory (EFT) to admit a consistent ultraviolet (UV) completion, it must adhere to the fundamental principles of locality, unitarity, analyticity, and Lorentz invariance. This leads to positivity constraints on certain Wilson coefficients via dispersion relations of $2\\rightarrow2$ forward elastic amplitudes, which carry significant implications for both theoretical consistency and experimental phenomenology. In this work, we extend this bootstrap framework to $\\mathcal N = 1$ supersymmetric theories, where the super-Poincaré algebra relates the bosonic and fermionic degrees of freedom within a single supermultiplet. Supersymmetric Ward identities (SWIs) enforce exact linear relations among component scattering amplitudes. Consequently, the Wilson coefficients associated with different $2\\rightarrow2$ processes are mutually constrained, rendering their respective positivity bounds dependent. Focusing on dimension-8 operators, we explicitly show the positivity bounds on quartic interactions involving scalars, fermions and gauge fields, and demonstrate how they are related as a direct consequence of the SWIs. Furthermore, we expect that the algebraic nature of this framework naturally extends to loop-level superamplitudes and higher-point processes, providing a unified bootstrap perspective on supersymmetric EFTs.",
+    "status": "found"
+  },
+  "2609.16925": {
+    "arxiv_id": "2609.16925",
+    "title": "HyCoSeq: Contextual Hyperbolic Representation Learning for Genomic Sequences",
+    "authors": [
+      "Chenhao Zeng",
+      "Zhibin Pu",
+      "Shufei Ge"
+    ],
+    "submission_date": "2026-09-15T10:01:47Z",
+    "latest_updated": "2026-09-15T10:01:47Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16925v1"
+    ],
+    "abstract": "Hyperbolic geometry provides a natural inductive bias for genomic representation learning, but existing hyperbolic genomic models primarily use Lorentz convolutions to learn local sequence representations, while their residual pathways do not directly aggregate full Lorentz representations. We propose HyCoSeq, a contextual hyperbolic representation learning framework for genomic sequences. HyCoSeq incorporates weighted Lorentzian residual aggregation into multi-curvature Lorentz encoding, allowing full Lorentz representations to participate directly in geometry-consistent local aggregation. It further introduces a bidirectional long short-term memory network that integrates information from both sequence directions to learn contextual relationships among local representations at different positions within a genomic sequence, thereby extending local hyperbolic convolutional encoding to sequence-level contextualized representations. Extensive experiments across diverse genomic tasks show that HyCoSeq outperforms existing hyperbolic baselines and, without large-scale genomic pretraining, achieves competitive performance against substantially larger pretrained DNA language models.",
+    "status": "found"
+  },
+  "2609.16926": {
+    "arxiv_id": "2609.16926",
+    "title": "Evaluating Mesh Reconstruction Methods for Crop Phenotyping",
+    "authors": [
+      "Karanvir Singh",
+      "Theo Morales",
+      "Binh-Son Hua",
+      "Mukesh Saini"
+    ],
+    "submission_date": "2026-09-15T10:02:29Z",
+    "latest_updated": "2026-10-16T19:30:52Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2609.16926v1",
+      "2609.16926v2"
+    ],
+    "abstract": "Phenotyping an agricultural crop is crucial for studying its entire life cycle, as it provides vital insights to improve yield and, ultimately, food production. Doing the same for crops grown on remote sites is a challenge for the specialists who cannot be available on-site. 3D reconstruction techniques offer a promising solution to this problem by enabling crop digitization, allowing specialists to access the resulting 3D crop models from anywhere at any time. In this work, we evaluate recent 3D reconstruction pipelines for crop phenotyping. We focus on 7 mesh reconstruction pipelines and measure the fidelity and consistency of their outputs qualitatively and quantitatively. Our results suggest that the meshes produced by the GGGS, PGSR, and 2DGS are preferable to the other pipelines, owing to their quantitative metrics and visually pleasing outputs. The GGGS pipeline is better than the second-best pipeline (2DGS) by about 27% on the radar chart with 5 dimensions, namely, User ratings, Chamfer distance, LPIPS, PSNR, and SSIM.",
+    "status": "found"
+  },
+  "2609.16927": {
+    "arxiv_id": "2609.16927",
+    "title": "Verbalizing Subliminal Learning Effects Using Text Optimization",
+    "authors": [
+      "Nathan Hu",
+      "Sanmi Koyejo",
+      "Christopher Potts"
+    ],
+    "submission_date": "2026-09-15T10:03:31Z",
+    "latest_updated": "2026-09-15T10:03:31Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16927v1"
+    ],
+    "abstract": "Subliminal learning is a phenomenon in which a distillation dataset transmits traits from the teacher model that are not legibly encoded in the dataset itself. This introduces a new challenge for model development and creates new risks from data poisoning. In this work, we use text optimization to detect subliminal learning effects and describe them as legible prompts. Subliminal learning from a prompted teacher motivates our approach. We observe that this is a special case of context distillation and leverage this observation to show that, in theory, the prompted subliminal learning dataset identifies the teacher's prompt. We reduce recovering this prompt to a text optimization problem and present a method to approximately solve it. Our method, SALVE (Search-Aided Latent Verbalization), optimizes a soft prompt, queries the same model to verbalize it as text, and uses beam search to make the verbalization reliable. In the standard subliminal learning setting, SALVE reliably recovers legible prompts that name the teacher's trait, while common text optimization methods fail to do so. In addition, we find that there are settings in which SALVE recovers the teacher's trait from a dataset even when subliminal learning fails, but that modifying student training to improve context distillation can create subliminal learning effects. We lastly show that SALVE detects subliminal learning effects in three additional settings: (1) mixtures of subliminal learning data and unrelated data, (2) data generated when the teacher is biased via activation steering, and (3) subsets of real preference data selected via Logit-Linear Selection. Overall, our results deepen our understanding of subliminal learning and present SALVE as a method to proactively detect subliminal learning effects.",
+    "status": "found"
+  },
+  "2609.16928": {
+    "arxiv_id": "2609.16928",
+    "title": "Cybersecurity in Power Grids: Standards and Research Challenges",
+    "authors": [
+      "Ferran Bohigas-Daranas",
+      "Hamid Latif-Martinez",
+      "Nicolas Llorens",
+      "David Bru i Bru",
+      "Oriol Gomis-Bellmunt",
+      "Eduardo Prieto-Araujo",
+      "Pere Barlet-Ros"
+    ],
+    "submission_date": "2026-09-15T10:03:52Z",
+    "latest_updated": "2026-09-15T10:03:52Z",
+    "revised_dates": null,
+    "venue": "Not sent to any journal 2026",
+    "latest_version": 1,
+    "versions": [
+      "2609.16928v1"
+    ],
+    "abstract": "This paper examines Smart Grid cybersecurity, emphasizing the critical distinctions between IT and OT environments. It analyzes grid architecture, substation threats, and key international standards, specifically IEC 62351, IEC 62443, and ISO 27001. Finally, it overviews latest research trends, including AI-driven threat detection.",
+    "status": "found"
+  },
+  "2609.16929": {
+    "arxiv_id": "2609.16929",
+    "title": "Exact efficient simulation of noisy logical magic states using Clifford stabilizers",
+    "authors": [
+      "Yugo Takada",
+      "Stephen D. Bartlett",
+      "Dominic J. Williamson"
+    ],
+    "submission_date": "2026-09-15T10:05:21Z",
+    "latest_updated": "2026-09-15T10:05:21Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16929v1"
+    ],
+    "abstract": "The preparation of high-fidelity logical magic states is a crucial subroutine for universal fault-tolerant quantum computation (FTQC). Predicting the performance of FTQC and developing improved protocols rely on numerical methods to classically simulate logical magic state preparation in the presence of noise. Clifford logic on Pauli-stabilizer codes with circuit-level Pauli errors can be efficiently simulated using Pauli-stabilizer formalism, but the non-Clifford operations required to prepare logical magic states render generic simulation inefficient. We introduce Clifford-stabilizer simulation, an exact and efficient algorithm based on updating a Clifford-stabilizer group to simulate noisy preparation protocols for a broad class of logical magic states used to implement non-Clifford gates in the third level of the Clifford hierarchy under circuit-level Pauli errors. Clifford-stabilizer simulation applies to a range of operations that commonly appear in preparation protocols for such logical magic states, including Pauli-stabilizer measurements, logical Clifford measurements, and transversal non-Clifford gates. Our algorithm for Clifford-stabilizer simulation maps a non-Clifford circuit with sampled circuit-level Pauli errors to a Clifford circuit that exactly reproduces its measurement outcome distribution, achieving time and space complexities polynomial in relevant protocol parameters. We perform exact simulation of magic state cultivation up to fault distance 7 by Clifford-stabilizer simulation. Our method provides a route to perform exact benchmarking of large-scale logical magic state preparation protocols required for useful FTQC.",
+    "status": "found"
+  },
+  "2609.16930": {
+    "arxiv_id": "2609.16930",
+    "title": "Repurposing Deep Limit Order Book Forecasting for Scenario-Conditioned Market Impact Modeling",
+    "authors": [
+      "Eljas Linna",
+      "Kestutis Baltakys",
+      "Derrick Manoharan",
+      "Alexandros Iosifidis",
+      "Juho Kanniainen"
+    ],
+    "submission_date": "2026-09-15T10:06:03Z",
+    "latest_updated": "2026-09-15T10:06:03Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16930v1"
+    ],
+    "abstract": "Deep Limit Order Book forecasting models capture nonlinear market dynamics, but their ability to quantify the effects of counterfactual order book messages has not been systematically validated. We introduce a model-agnostic framework that compares a trained forecaster's predictive distributions before and after injecting mechanically valid counterfactual messages, defining short-horizon model-implied market impact. A Transformer-based forecaster recovered scenario rankings with a Spearman correlation of 0.99 and 97.2% directional agreement with realized historical outcomes among non-neutral scenarios. Observation-level analysis further showed that estimated impacts captured incremental sequence-dependent variation beyond scenario identity and the pre-event forecast. These results provide evidence that pretrained Limit Order Book forecasters can be repurposed for scenario-conditioned response modeling without retraining.",
+    "status": "found"
+  },
+  "2609.16931": {
+    "arxiv_id": "2609.16931",
+    "title": "Causal Discovery via Transformed Low-Rank Quantile Surfaces",
+    "authors": [
+      "Ryo Kamimura",
+      "Thong Pham"
+    ],
+    "submission_date": "2026-09-15T10:06:19Z",
+    "latest_updated": "2026-10-21T08:46:44Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2609.16931v1",
+      "2609.16931v2"
+    ],
+    "abstract": "We propose Low-Rank Quantile Surfaces (LRQS), a bivariate causal model in which, in the causal direction, an unknown monotone transformation of the conditional quantile surface admits a low-rank functional decomposition. LRQS subsumes location-scale noise models and post-nonlinear heteroscedastic noise models, while allowing multiple quantile bases to represent changes beyond location-scale effects. We prove generic identifiability of LRQS: the transformed quantile surface is low rank in the causal direction, whereas reverse representability under the corresponding constraints occurs only for exceptional, fine-tuned cause marginals. We provide a nonparametric causal score using a fitting procedure that alternates between rank-constrained approximation of discretized quantile surfaces and isotonic estimation of the unknown monotone transformation. Experiments on synthetic mechanisms with higher-rank distributional shape variation and strong nonlinear distortions, together with standard bivariate benchmarks, show that LRQS is especially effective when conditional distributional shape or observation distortion goes beyond existing location-scale assumptions.",
+    "status": "found"
+  },
+  "2609.16932": {
+    "arxiv_id": "2609.16932",
+    "title": "A uniform commutator bound in finite von Neumann algebras",
+    "authors": [
+      "Jiaqi Wang"
+    ],
+    "submission_date": "2026-09-15T10:08:47Z",
+    "latest_updated": "2026-09-15T10:08:47Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16932v1"
+    ],
+    "abstract": "Let $\\mathcal{M}$ be a finite von Neumann algebra with normalized center-valued trace $T_{\\mathcal{M}}$. We prove that every $A\\in\\mathcal{M}$ with $T_{\\mathcal{M}}(A)=0$ admits a representation $A=BC-CB$, where $B,C\\in\\mathcal{M}$ satisfy $\\|B\\|\\|C\\|\\le K\\|A\\|$ for an absolute constant $K$ independent of $\\mathcal{M}$.",
+    "status": "found"
+  },
+  "2609.16933": {
+    "arxiv_id": "2609.16933",
+    "title": "When Confidence Signals Disagree: Local and Global Confidence in Autoregressive Language Models",
+    "authors": [
+      "Julio C. Amador Diaz Lopez"
+    ],
+    "submission_date": "2026-09-15T10:08:48Z",
+    "latest_updated": "2026-09-15T10:08:48Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16933v1"
+    ],
+    "abstract": "Modern predictive systems expose multiple quantities that are commonly interpreted as measures of confidence. However, these quantities can summarize different aspects of the predictive process. This distinction matters when confidence is used to evaluate reliability or inform downstream oversight and control. We investigate whether different confidence readouts are empirically interchangeable in an autoregressive language model by comparing local confidence, defined from the probability of the greedy-selected answer token, with global confidence, defined from modal-answer frequency under repeated sampling. Across MMLU and ARC Challenge, the two signals are weakly correlated and differ substantially in their association with correctness: global confidence is moderately associated with correctness, whereas local confidence shows little association. We further test whether question-level disagreement between the signals is associated with sampling instability. On ARC, larger local--global confidence gaps are associated with higher answer entropy, more distinct sampled answers, and lower modal-answer concentration. The gap--entropy association persists when disagreement and instability are estimated from disjoint stochastic samples, indicating that it is not explained by shared finite-sample variation. The corresponding relationship is substantially weaker on MMLU, where only 4% of questions exhibit sampling instability. These results show that confidence readouts derived from the same predictive system are not empirically interchangeable and that their disagreement can provide a diagnostic of unstable sampling behavior. Confidence should therefore be treated as an explicitly defined measurement rather than as a single intrinsic scalar property of a model, particularly when it is used to inform downstream evaluation, oversight, or control.",
+    "status": "found"
+  }
+}

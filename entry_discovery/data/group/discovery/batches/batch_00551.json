@@ -1,0 +1,399 @@
+{
+  "2608.10027": {
+    "arxiv_id": "2608.10027",
+    "title": "The Thermodynamic Cost of Computing with Heat",
+    "authors": [
+      "M. W. AlMasri"
+    ],
+    "submission_date": "2026-08-09T19:51:57Z",
+    "latest_updated": "2026-09-12T17:34:54Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.10027v1",
+      "2608.10027v2"
+    ],
+    "abstract": "Autonomous quantum thermal machines have recently been proposed as physics-based computing substrates where logical inputs and outputs are encoded in temperature gradients. While such ``thermodynamic neurons'' exhibit a clear trade-off between computational fidelity and heat dissipation, the fundamental information-theoretic limits of temperature-encoded computation remain uncharacterized. Here, we derive rigorous bounds linking average error probability, channel capacity, and entropy production for finite-capacity thermal reservoirs operating far from equilibrium. We prove that the minimal dissipation required to achieve a target average error probability $\\langle ξ\\rangle$ diverges as $\\langle ξ\\rangle$ approaches a fundamental minimum error floor $\\epsMin$ imposed by finite-reservoir thermal fluctuations. We further establish a thermodynamic channel capacity that saturates at high dissipation, and quantify the minimal dissipation required for cascaded networks to maintain target fidelity. We demonstrate that the required dissipation grows linearly $\\mathcal{O}(L)$ with network depth for shallow networks, but diverges as the network depth $L$ approaches a fundamental maximum limit $L_{\\max} = \\epsNet/\\epsMin$ imposed by the minimum error floor. Furthermore, under strong noise amplification conditions, the required dissipation can grow up to $\\mathcal{O}(L^3)$. Our framework bridges stochastic thermodynamics, finite-time information theory, and autonomous computation, providing rigorous design principles for energy-efficient analog thermodynamic hardware.",
+    "status": "found"
+  },
+  "2608.10028": {
+    "arxiv_id": "2608.10028",
+    "title": "Disproving the Petersen Coloring Conjecture: Theoretical Analysis and an Infinite Family of Counterexamples",
+    "authors": [
+      "Jan Goedgebeur",
+      "Jorik Jooken",
+      "Edita Máčajová",
+      "Davide Mattiolo",
+      "Giuseppe Mazzuoccolo",
+      "Nikolay Ulyanov"
+    ],
+    "submission_date": "2026-08-09T20:07:05Z",
+    "latest_updated": "2026-09-30T14:40:37Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 4,
+    "versions": [
+      "2608.10028v1",
+      "2608.10028v2",
+      "2608.10028v3",
+      "2608.10028v4"
+    ],
+    "abstract": "In 1988, Jaeger conjectured that every bridgeless cubic graph $G$ admits a Petersen coloring; that is, a map $E(G) \\to E(P)$ mapping any two adjacent edges of $G$ to two adjacent edges of the Petersen graph $P$. A positive resolution of Jaeger's conjecture would have immediately resolved several other famous and long-standing problems in graph theory. In July 2026, a 68-vertex counterexample was announced on X. Shortly afterwards, Putman independently presented two non-isomorphic 112-vertex counterexamples, relying solely on computer-assisted verification. In this paper, we present two counterexamples of order $52$, currently the smallest known, and provide a purely theoretical proof. In the second part, we construct an infinite family of cyclically $4$-edge-connected cubic graphs without a Petersen coloring for every even order at least $60$. Additionally, through computational verification, we show that any counterexample must have order at least $40$. Moreover, we show that our counterexamples provide a negative answer to other related problems. Finally, we conclude the paper by discussing key open problems and highlighting avenues for future work.",
+    "status": "found"
+  },
+  "2608.10029": {
+    "arxiv_id": "2608.10029",
+    "title": "A fast diagonalization algorithm to enable singular value decomposition of large matrices for efficient template matching",
+    "authors": [
+      "Matthew Giammar",
+      "Bronwyn Lucas",
+      "Alexander Strang"
+    ],
+    "submission_date": "2026-08-09T22:39:33Z",
+    "latest_updated": "2026-08-09T22:39:33Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10029v1"
+    ],
+    "abstract": "Many computational problems possess the following three features: (1) the problem could be solved efficiently if a linear operator could be diagonalized, (2) direct diagonalization is infeasible due to scale, but, (3) the operator is known to commute with a permutation since the problem is (a) symmetric with respect to a change of coordinates, or (b) the operator is block circulant. For example, high-resolution template matching demands repeated convolution of large, high resolution images with an exhaustive list of related templates. The associated linear operator could be compressed, via a low rank approximation, if diagonalized. The required decomposition expensive, but, the entire problem is symmetric to in-plane rotations. In these cases, the eigenfunctions are constrained by the symmetry. These constraints allow efficient decomposition. We illustrate a parallelized algorithm that allows fast diagonalization of any block-circulant matrix. When the index space can be partitioned into $l$ classes of $m$ interchangeable elements, the algorithm reduces storage costs by a factor of $m$ and, if $w$ workers are available, the algorithm demands $\\mathcal{O}(l^2m\\log(m)/w) + \\mathcal{O}(ml^3/w)$ floating point operations per worker yielding a $m^2$ speedup. We use this procedure to decompose a high precision template matching matrix. We compare runtime on a reduced problem, where the fast procedure ran 205 times faster per recovered feature, for 22.5 times as many features. On a typical template matching matrix, the decomposition required 25 times less time than computing the matrix entries. We also demonstrate decomposition of a $\\sim$30 times larger matrix that covers the complete set of possible projections represented in a cryo-EM image at 2~Å resolution in 14 minutes. This procedure is more stable and allows recovery of in-plane rotations to arbitrary precision.",
+    "status": "found"
+  },
+  "2608.10030": {
+    "arxiv_id": "2608.10030",
+    "title": "Causal Behavioral Evaluation of AI Agents at Scale via Automated Behavioral Science",
+    "authors": [
+      "Soo Yong Lee",
+      "Jongha Lee",
+      "Jaewan Chun",
+      "Hyunjin Hwang",
+      "Fanchen Bu",
+      "Dongyeong Hwang",
+      "Ziv Ben-Zion",
+      "Taekwan Kim",
+      "Denny Borsboom",
+      "Jaemin Yoo",
+      "Kijung Shin"
+    ],
+    "submission_date": "2026-08-10T01:14:31Z",
+    "latest_updated": "2026-09-28T07:19:09Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2608.10030v1",
+      "2608.10030v2",
+      "2608.10030v3"
+    ],
+    "abstract": "As AI agents are increasingly deployed in complex and new environments, knowing the conditions that influence their behavior becomes an indispensable step for their reliable and safe deployment. Yet causal behavioral evaluation of AI agents remains manual and labor-intensive. We introduce Abs2Sim and AEROBAT, a system of methods that support causal behavioral evaluation of AI agents via automated behavioral science. Given a user-specified target behavior, the methods automatically execute a full pipeline of behavioral science research---generating hypotheses about the behavior, designing and executing controlled experiments, making behavioral assessments, analyzing the results, and writing reports. For 12 target behaviors, the methods generated and tested 73 hypotheses: designing 1,160 controlled experiments and executing 22,954 simulation rounds in total. Moderate-to-strong statistical evidence emerged for 30 hypotheses, revealing potential modulators of AI behavior. In sum, our results demonstrate that automated behavioral science can extend the reach of behavioral evaluation of AI agents.",
+    "status": "found"
+  },
+  "2608.10031": {
+    "arxiv_id": "2608.10031",
+    "title": "Complete kinematic null for local kinetic dissipation in a sixfold-driven electron fluid",
+    "authors": [
+      "P. Shubham Parashar"
+    ],
+    "submission_date": "2026-08-10T01:38:21Z",
+    "latest_updated": "2026-08-10T01:38:21Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10031v1"
+    ],
+    "abstract": "We identify a complete kinematic null in a two-dimensional electron fluid driven by a sixfold boundary pattern. In the $U_3^\\pm$ channel of $D_{12}$, device symmetry excludes both the vector representation $R_1$ and the full first-gradient tensor $R_1\\otimes R_1$. Hence at the symmetry-fixed center $\\mathbf{j}(0)=0$ and $\\partial_i j_j(0)=0$, so every local quadratic dissipative form built from the modeled charge/momentum field through first gradient order vanishes independently of the constitutive coefficients. In an $O(2)$-isotropic angular-harmonic kinetic model the first allowed local sector is $m=3$. For $νq^2/γ_3\\ll1$, its heating is set by the previously derived coefficient $κ_4=v_F^4/(16γ_2^2γ_3)$. An explicit incompressible Stokes disk realizes a nonzero center signal, and a finite-moment kinetic boundary-value solution approaches the corresponding local benchmark. Within the local, fixed-current momentum-conserving Stokes regime, the normalized magnetic response can then be fitted for effective $γ_3$ and $γ_2$. Thus the sixfold drive creates a measurement point where ordinary local charge/momentum hydrodynamic dissipation is absent while a kinetic mode remains finite.",
+    "status": "found"
+  },
+  "2608.10032": {
+    "arxiv_id": "2608.10032",
+    "title": "Catalytic Stabilization of Ergotropy and Backflow Suppression in Open Many-Body Quantum Batteries",
+    "authors": [
+      "Liang Luo",
+      "Shun-Cai Zhao"
+    ],
+    "submission_date": "2026-08-10T03:40:31Z",
+    "latest_updated": "2026-08-19T08:01:54Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.10032v1",
+      "2608.10032v2"
+    ],
+    "abstract": "Coherent energy backflow and non-Markovian oscillations limit energy retention and degrade extractable work (ergotropy) in open many-body quantum batteries. Here, we present a catalyst-mediated charging protocol for a collective spin-array quantum battery coupled to a laser-driven charger. Using the open-system Lindblad master equation, we examine the energy transfer dynamics when both charger and battery are symmetrically coupled to an off-resonant auxiliary catalytic mode. Numerical simulations reveal that while unassisted bipartite setups exhibit pronounced backflow oscillations and poor energy retention, catalytic mediation quenches transient oscillations and accelerates energy injection. The auxiliary system operates as an energy-invariant conduit, maintaining a constant energy expectation value $\\langle H_C(t)\\rangle \\approx \\langle H_C(0)\\rangle$ and negligible transient population throughout the evolution. Microscopically, virtual excitations of the catalyst generate an effective complex inter-subsystem coupling $J_{\\text{eff}}$, which induces an underdamped-to-overdamped dynamical crossover and introduces selective coherence damping. This mechanism prevents population depletion in the battery, stabilizing the population inversion and significantly increasing the asymptotic steady-state ergotropy with increasing battery size $N_B$. These findings clarify the dissipative dynamics of catalyst-mediated energy transfer and provide a practical scheme for improving storage stability in modern quantum hardware platforms.",
+    "status": "found"
+  },
+  "2608.10033": {
+    "arxiv_id": "2608.10033",
+    "title": "Immersive Micromanipulation Integrating Pipette and Injector Operations with McKibben-Based Haptic Sensations for Workload Reduction",
+    "authors": [
+      "Kenta Yokoe",
+      "Sumiwa Saito",
+      "Yuki Funabora",
+      "Tomoko Isomura",
+      "Tadayoshi Aoyama"
+    ],
+    "submission_date": "2026-08-10T06:13:57Z",
+    "latest_updated": "2026-08-10T06:13:57Z",
+    "revised_dates": null,
+    "venue": "IEEE Access, vol. 14, pp. 116393-116404, 2026",
+    "latest_version": 1,
+    "versions": [
+      "2608.10033v1"
+    ],
+    "abstract": "Intracytoplasmic sperm injection (ICSI) requires advanced micromanipulation techniques but relies solely on visual feedback and involves frequent interface switching between pipette movement and injector operations. Existing haptic feedback systems primarily focus on pipette puncture forces and do not provide feedback on injector states. We developed an immersive micromanipulation system that unifies operational interfaces and provides McKibben-based haptic sensations to represent aspiration, discharge, and contact between the oocyte and pipette. Users operated both the pipette and injector with a single hand while receiving haptic sensations. A human-participant experiment revealed that the immersive operation interface improved micromanipulation speed and reduced cognitive workload of the micromanipulation compared with conventional methods. Additionally, McKibben-based haptic sensations improved overall system usability. The immersive micromanipulation system with McKibben-based haptic sensations successfully unified operational interfaces and reduced operator workload.",
+    "status": "found"
+  },
+  "2608.10034": {
+    "arxiv_id": "2608.10034",
+    "title": "Almost everywhere convergence of subsequences of Walsh-Nörlund means",
+    "authors": [
+      "István Blahota"
+    ],
+    "submission_date": "2026-08-10T06:50:23Z",
+    "latest_updated": "2026-08-10T06:50:23Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10034v1"
+    ],
+    "abstract": "Let $\\{q_{k}: k\\in\\mathbb{N}\\}$ be a non-increasing and convex sequence of non-negative numbers such that $q_{0}>0$. Our main result is to prove almost everywhere convergence \\[ t_{a_{n}}(f)\\to f \\] of $f\\in L_{1}(G)$ as $n\\to\\infty$, using several $\\{a_{n}: n\\in\\mathbb{P}\\}$ subsequences of positive integers for Nörlund means (defined by sequence $q$) on the Walsh-Paley system with weaker conditions than it was known before.",
+    "status": "found"
+  },
+  "2608.10035": {
+    "arxiv_id": "2608.10035",
+    "title": "Two new functions related to the sum of element orders of a finite group",
+    "authors": [
+      "Marius Tărnăuceanu"
+    ],
+    "submission_date": "2026-08-10T07:32:55Z",
+    "latest_updated": "2026-08-10T07:32:55Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10035v1"
+    ],
+    "abstract": "Let $G$ be a finite group and $H$ be a proper normal subgroup of $G$. In this note, we introduce two new functions $o(G,H)$ and $ψ''(G,H)$ involving the sums of element orders of $G$ and $H$. We prove that they satisfy certain inequalities, with equality if and only if $(G,H)$ is an equal order pair of a particular type.",
+    "status": "found"
+  },
+  "2608.10036": {
+    "arxiv_id": "2608.10036",
+    "title": "On a divisibility condition related to the sum of element orders of a finite group",
+    "authors": [
+      "Marius Tărnăuceanu"
+    ],
+    "submission_date": "2026-08-10T08:01:46Z",
+    "latest_updated": "2026-08-10T08:01:46Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10036v1"
+    ],
+    "abstract": "Given a finite group $G$, we denote by $ψ(G)$ the sum of element orders of $G$. In this note, we determine finite groups $G$ such that $|H|-|K|$ divides $ψ(H)-ψ(K)$ for all subgroups $K\\leq H\\leq G$. Two weaker conditions are also proposed.",
+    "status": "found"
+  },
+  "2608.10037": {
+    "arxiv_id": "2608.10037",
+    "title": "DOCSCHISEL: Adaptive Tool Documentation Optimization Framework for LLM Agents",
+    "authors": [
+      "You Lu",
+      "Kun Zhang",
+      "Bihuan Chen",
+      "Xin Peng"
+    ],
+    "submission_date": "2026-08-10T08:05:45Z",
+    "latest_updated": "2026-08-10T08:05:45Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10037v1"
+    ],
+    "abstract": "Large language models (LLMs) increasingly rely on external tools to accomplish complex real-world tasks, making tool documentation a critical grounding resource for LLM agents. Existing studies mainly focus on improving the tool-use capabilities of LLM agents, while largely treating tool documentation as a fixed input. Although several recent works attempt to optimize tool documentation through rewriting or compression, little is known about how the information contained in tool documentation affects agent performance across different settings. To bridge this gap, we conduct a large-scale empirical study on tool documentation for LLM agents. Our study reveals substantial heterogeneity in the information fields provided by existing tool documentation. Moreover, the effectiveness of different information fields is highly dependent on the task domain, LLM backbone, and agent paradigm, indicating that no fixed tool documentation can consistently generalize across diverse agent settings. Motivated by these findings, we propose DocsChisel, an adaptive tool documentation optimization framework for LLM agents. DocsChisel analyzes failed execution traces of a target LLM agent to identify documentation-related issues, and iteratively optimizes tool documentation by adding, removing, and refining information fields for each tool. We evaluate DocsChisel against two state-of-the-art baselines, i.e., EasyTool and DRAFT. Experimental results show that DocsChisel improves the task success rate of LLM agents by 95.89% over the original tool documentation and by 75.15%, on average, over existing baselines, while incurring limited optimization time and token overhead",
+    "status": "found"
+  },
+  "2608.10038": {
+    "arxiv_id": "2608.10038",
+    "title": "Normality of Relative Elementary Tranvection Groups",
+    "authors": [
+      "Sunil Rampuria",
+      "Ruddarraju Amrutha",
+      "Pratyusha Chattopadhyay"
+    ],
+    "submission_date": "2026-08-10T08:23:22Z",
+    "latest_updated": "2026-08-10T08:23:22Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10038v1"
+    ],
+    "abstract": "A. A. Suslin and V. I. Kopeiko proved that the elementary linear, symplectic, and orthogonal groups are normal in the general linear group, symplectic group, and orthogonal group respectively. They also proved relative versions of these normality results with respect to an ideal of a ring. A. Bak, R. Basu, and R. A. Rao proved that the linear, symplectic, and orthogonal transvection groups are normal in the respective automorphism groups. These results are generalizations of the normality results by Suslin and Kopeiko in the setup of modules. In this paper, we prove stronger versions of the normality results proved by Bak, Basu, and Rao, which say that the relative transvection groups are normal in the respective automorphism groups.",
+    "status": "found"
+  },
+  "2608.10039": {
+    "arxiv_id": "2608.10039",
+    "title": "FlowScout: From Execution Feedback to Reliable Tool-Using Agent Workflows",
+    "authors": [
+      "Shuo Hao",
+      "You Lu",
+      "Bihuan Chen",
+      "Xin Peng"
+    ],
+    "submission_date": "2026-08-10T08:41:59Z",
+    "latest_updated": "2026-08-10T08:41:59Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10039v1"
+    ],
+    "abstract": "Agentic workflows have become an important abstraction for building reliable LLM-based automation systems by organizing large language models (LLMs), tools, and control logic into explicit execution structures. However, constructing high-quality agentic workflows remains largely manual and requires substantial domain expertise. Recent studies have explored automatic agentic workflow generation from historical task-solving records, but they mainly produce LLM-centric workflows, where real tool executions are abstracted and simulated by LLM nodes, limiting the usability and stability of generated workflows. To address these limitations, we propose FlowScout, an execution-guided framework for generating tool-integrated agentic workflows from historical task-solving records. Specifically, FlowScout represents an agentic workflow as a directed graph composed of LLM nodes, tool-calling nodes, and dependency edges. It first mines a common tool coordination skeleton from historical records to construct an initial workflow, and then refines the workflow topology through Monte Carlo tree search guided by execution feedback. We evaluate FlowScout on four representative task domains and compare it with three baselines, i.e., PM4Py, ReAct and AFlow. Experimental results show that agentic workflows generated by FlowScout improve tool invocation correctness by at least 92.69% and execution quality by at least 17.66% over the baselines, while achieving lower performance variation across repeated runs.",
+    "status": "found"
+  },
+  "2608.10040": {
+    "arxiv_id": "2608.10040",
+    "title": "Online Discrepancy for Sub-Exponential Product Distributions via Regularization",
+    "authors": [
+      "Nicola Wengiel"
+    ],
+    "submission_date": "2026-08-10T09:24:46Z",
+    "latest_updated": "2026-10-18T13:50:59Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.10040v1",
+      "2608.10040v2"
+    ],
+    "abstract": "We study online discrepancy minimization for independent random vectors in $\\mathbb{R}^n$ with independent coordinates. Our deterministic algorithms require no knowledge of the horizon, and their guarantees hold at every prescribed deterministic terminal time $T$. For unit-variance sub-exponential coordinates with $ψ_1$-norms at most $σ$, we obtain terminal discrepancy $O(σ^4\\sqrt n)$ with failure probability $\\exp(-Ω(σ^3\\sqrt n))$. Independently masking centered unit-variance marks from the same class with retention probability $k/n$ gives $O(σ^4\\sqrt k)$ discrepancy with failure probability $\\exp(-Ω(σ^3\\sqrt k))$ when $k\\gtrsim\\log^2(2n)$. The fourth-power dependence on $σ$ is necessary for these sub-exponential classes at the stated confidence levels. For standard Gaussian marks, we obtain $O(\\sqrt k+\\sqrt{\\log(2n)})$ discrepancy with failure probability $\\exp(-Ω(\\sqrt k+\\sqrt{\\log(2n)}))$. Both terms are necessary up to absolute constants for $T\\ge n$. In particular, $k\\gtrsim\\log n$ is the optimal sparsity threshold for $O(\\sqrt k)$ discrepancy. For centered unit-variance sub-Gaussian marks with any fixed $ψ_2$-norm bound $σ$, logarithmic sparsity suffices for $O(σ\\sqrt{k\\log(e+σ)})$ discrepancy with probability tending to one as $n\\to\\infty$. For a dimension-dependent family of unit-variance laws with rare activations, matching bounds determine the fixed-confidence online discrepancy order $Θ(\\sqrt n\\log\\log n)$ at sufficiently long prescribed horizons. Our dense result generalizes the Rademacher-input theorem of Bansal and Spencer (2020) and establishes the horizon-independent $O(\\sqrt n)$ Gaussian terminal discrepancy scale anticipated by Gamarnik et al. (2022). The proofs combine regularization, global Fenchel estimates, coupled Lyapunov functions, and terminal moment recursions.",
+    "status": "found"
+  },
+  "2608.10041": {
+    "arxiv_id": "2608.10041",
+    "title": "Analytic Boundary Terms for Arbitrary Crystal Geometries and Direct-Sum Evaluation of Madelung Constants in Triclinic Lattices",
+    "authors": [
+      "Yang He",
+      "Zhonghan Hu"
+    ],
+    "submission_date": "2026-08-10T09:31:47Z",
+    "latest_updated": "2026-08-10T09:31:47Z",
+    "revised_dates": null,
+    "venue": "Journal of Chemical Theory and Computation, 2026",
+    "latest_version": 1,
+    "versions": [
+      "2608.10041v1"
+    ],
+    "abstract": "The direct-sum evaluation of Madelung constants is complicated by the conditional convergence of lattice sums, which gives rise to a shape-dependent boundary term. In this work, we present, for the first time, a closed-form analytic expression for this boundary term that is valid for arbitrary crystal geometries. For general triclinic lattices, this boundary term maps exactly onto the electrostatic potential generated by a set of uniformly charged parallelograms. In addition, we demonstrate that the residual finite-size correction for a crystal of characteristic size $p$ decays as $(2p+1)^{-2}$. Building on these results, we develop a robust direct-sum method for the accurate computation of Madelung constants in arbitrary triclinic lattices and validate its effectiveness through explicit calculations on representative Bravais lattices.",
+    "status": "found"
+  },
+  "2608.10042": {
+    "arxiv_id": "2608.10042",
+    "title": "UserToolBench: A User-Profile-Hidden Benchmark for Personalized Decision Making in Tool-Use LLMs",
+    "authors": [
+      "Xuexiong Yin",
+      "Zechuan Chen",
+      "Yongsen Zheng",
+      "Yuxiang Zhang",
+      "Jingyuan Yang",
+      "Bin Wang",
+      "Yubin Wang",
+      "Keze Wang"
+    ],
+    "submission_date": "2026-08-10T09:32:38Z",
+    "latest_updated": "2026-08-10T09:32:38Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10042v1"
+    ],
+    "abstract": "Tool-use LLMs are increasingly asked to act on users' behalf, but existing benchmarks usually focus on profile recall, style imitation, generic tool use, or response-level personalization. We introduce UserToolBench , a benchmark for personalized decision making in tool-use LLMs. UserToolBench tests whether a model can infer latent user preferences from interaction history, recognize when clarification is needed, and produce user-aligned tool-call trajectories under incomplete information. The benchmark is built from privacy-sanitized real interaction traces and combines structured persona profiles, public API-style tool ecosystems, and long-horizon multi-turn trajectories. It includes 10 user profiles, 36 tool sets, 1,065 turns, 170 unique tools, and evaluation-focused task types covering lack-of-information, single-tool, and multi-tool settings. Experiments with strong tool-use LLMs show that current models still have difficulty with personalized delegation. Multi-tool coordination, missing-constraint inference, and long-horizon behavioral consistency remain major bottlenecks. These results suggest that personalization evaluation should move beyond asking whether outputs sound user-specific and instead ask whether LLMs make correct decisions for the users they represent.",
+    "status": "found"
+  },
+  "2608.10043": {
+    "arxiv_id": "2608.10043",
+    "title": "N2NMatcher: Towards Inlining-Resilient Binary Decomposition and Module Matching",
+    "authors": [
+      "Ang Jia",
+      "He Jiang",
+      "Zhipeng Yang",
+      "Zhilei Ren",
+      "Xiaochen Li"
+    ],
+    "submission_date": "2026-08-10T09:37:42Z",
+    "latest_updated": "2026-08-10T09:37:42Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10043v1"
+    ],
+    "abstract": "Program-level Binary Code Similarity Analysis (BCSA) aims to identify semantically similar code regions across binary programs, serving as a fundamental technique for software plagiarism detection, vulnerability search, and malware analysis. Existing approaches often decompose binaries into modules following the structure of function call graphs (FCGs) and then match these modules by their contained functions. However, function inlining changes both FCG structures and binary function semantics, making existing decomposition and module matching methods less effective. In this work, we propose N2NMatcher, an inlining-resilient framework for binary decomposition and module matching. We first conduct an empirical study to examine whether binaries still contain functions that provide stable module boundaries across compilation settings. N2NMatcher learns to predict such functions as anchors using a hierarchical graph neural network that encodes binary ACFG-FCG representations built from opcode sequences, control-flow structures, and FCG calling context. It then performs anchor-bounded decomposition and matches the generated modules using learned module graph embeddings. Experimental results show that N2NMatcher improves both the decomposition quality and module matching accuracy compared to existing works, enabling more effective program-level BCSA.",
+    "status": "found"
+  },
+  "2608.10044": {
+    "arxiv_id": "2608.10044",
+    "title": "SABRE Hyperpolarization of Unmodified Amino Acids in Partially Aqueous Media: L-[1-13C]-Valine as a Model System",
+    "authors": [
+      "Oksana A. Bondar",
+      "Thomas B. R. Robertson"
+    ],
+    "submission_date": "2026-08-10T12:48:29Z",
+    "latest_updated": "2026-08-10T12:48:29Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10044v1"
+    ],
+    "abstract": "Hyperpolarization techniques enhance the sensitivity of nuclear magnetic resonance (NMR) and magnetic resonance imaging (MRI), enabling detection of low concentration metabolites and dynamic processes. Signal Amplification by Reversible Exchange (SABRE) transfers spin polarization from parahydrogen without permanent chemical modification of the substrate. Here, we demonstrate SABRE-mediated 13C hyperpolarization of unmodified amino acids using L-[1- 13C]-valine as the primary model system and provide preliminary evidence of applicability to glycine. Signal enhancements exceeding 60-fold were observed on a 1.1 T benchtop NMR spectrometer. The dependence of polarization on parahydrogen bubbling time, solvent composition, and substrate-to-catalyst ratio was investigated.",
+    "status": "found"
+  },
+  "2608.10045": {
+    "arxiv_id": "2608.10045",
+    "title": "Finding the Signal in the Spam: Jointly Learning Rewards and Worker Reliability from Pairwise Comparisons",
+    "authors": [
+      "Kaustubh Shivshankar Shejole",
+      "Tanish Agarwal",
+      "Arpit Agarwal",
+      "Avishek Ghosh"
+    ],
+    "submission_date": "2026-08-10T13:01:48Z",
+    "latest_updated": "2026-08-10T13:01:48Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10045v1"
+    ],
+    "abstract": "The problem of learning from pairwise comparisons has been widely studied across many domains such as recommendation systems, social choice, and more recently, fine-tuning large language models. In this problem, the goal is to learn item rewards based on pairwise comparisons between them. In many scenarios, these comparisons are elicited from crowdworkers using platforms such as Amazon Mechanical Turk, Scale AI, etc. However, crowdworkers are often unreliable due to limited domain knowledge or revenue-maximizing (spamming) behavior. In this work, our goal is to understand whether worker reliability (competency) can be learned jointly with item rewards. To this end, we adopt the Boltzmann-rational model for pairwise comparisons, which extends the Bradley-Terry-Luce model by incorporating worker competencies. We derive an EM-based algorithm for learning under this model by introducing Polya-Gamma latent variables to transform the logistic likelihood into a conditionally Gaussian form, enabling tractable optimization and leading to a simplified $Q$ function in the E-step of the algorithm. This technique allows us to reduce our formulation to a matrix sensing problem, using which we establish theoretical convergence guarantees for our algorithm. We conduct extensive experiments on real-world and synthetic datasets. These experiments demonstrate the advantages of using our algorithm over several baselines and confirm its strong robustness to both spammers and adversarial workers, highlighting its practical effectiveness in realistic crowdsourcing and reward learning settings. The code and data is publicly available at https://github.com/KaustubhShejole/BoRa_EM.",
+    "status": "found"
+  },
+  "2608.10046": {
+    "arxiv_id": "2608.10046",
+    "title": "Detecting Soft Skills in ML Engineering Roles CVs",
+    "authors": [
+      "Aidin Azamnouri",
+      "Nouran Ayad",
+      "Justus Bogner",
+      "Stefan Wagner"
+    ],
+    "submission_date": "2026-08-10T13:03:24Z",
+    "latest_updated": "2026-08-10T13:03:24Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10046v1"
+    ],
+    "abstract": "Soft skills shape collaboration among ML engineers, data scientists, and software engineers building ML-enabled systems, yet what we know about them comes almost entirely from the demand side. Job advertisements, surveys, and hiring manager interviews capture what employers ask for. How candidates themselves articulate these competencies has not been studied, and existing CV-mining work is both keyword-based, so it cannot see skills conveyed through narrative, and descriptive, reporting frequency rankings without testing whether group differences exceed sampling variation. We close both gaps. Using a balanced corpus of 300 curated CVs spanning the three roles, we extract explicitly listed and implicitly narrated soft skills with an LLM-based pipeline validated against a human-annotated ground truth, a distinction that existing extractors were not designed to make. We then convert the demand-side literature's claims into 13 falsifiable hypotheses about role signatures, seniority progression, and disclosure style, and test them with effect sizes under family-wise error control, so that candidate-side data can corroborate or contradict the demand-side account rather than merely illustrate it. Eleven hypotheses are supported, one partially, and one refuted. Candidates disclose soft skills through narrative rather than keyword lists by roughly three to one, and most so for the competencies employers value most: leadership, coordination, and mentoring (88-96% narrative). Seniority nearly triples the odds of articulating leadership. That competency, assumed universal in prior work, is articulated by software engineers at half the rate of their peers. Technical candidates do articulate soft skills, but a keyword-based screening systematically misses them.",
+    "status": "found"
+  }
+}

@@ -1,0 +1,418 @@
+{
+  "2601.18576": {
+    "arxiv_id": "2601.18576",
+    "title": "Formal Naive Dirac Operators and Graph Topology",
+    "authors": [
+      "G. M. von Hippel"
+    ],
+    "submission_date": "2026-01-26T15:20:43Z",
+    "latest_updated": "2026-05-26T10:27:20Z",
+    "revised_dates": null,
+    "venue": "JHEP 07 (2026) 117",
+    "latest_version": 2,
+    "versions": [
+      "2601.18576v1",
+      "2601.18576v2"
+    ],
+    "abstract": "Motivated by a recent conjecture of Misumi and Yumoto relating the number of zero modes of lattice Dirac operators to the sum of the Betti numbers of the underlying spacetime manifold, we study formal naive Dirac operators on a class of graphs admitting such in terms of their zero modes. Our main result is that for graphs on which translations commute, the conjecture of Misumi and Yumoto can be shown and indeed can be strengthened to obtain bounds on the individual Betti numbers rather than merely on their sum. Interpretations of the zero modes in terms of graph quotients and of the representation theory of abelian groups are given, and connections with a homology theory for such graphs are highlighted.",
+    "status": "found"
+  },
+  "2601.18577": {
+    "arxiv_id": "2601.18577",
+    "title": "Self-Refining Video Sampling",
+    "authors": [
+      "Sangwon Jang",
+      "Taekyung Ki",
+      "Jaehyeong Jo",
+      "Saining Xie",
+      "Jaehong Yoon",
+      "Sung Ju Hwang"
+    ],
+    "submission_date": "2026-01-26T15:22:27Z",
+    "latest_updated": "2026-05-20T05:19:37Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.18577v1",
+      "2601.18577v2"
+    ],
+    "abstract": "Modern video generators still struggle with complex physical dynamics, often falling short of physical realism. Existing approaches address this using external verifiers or additional training on augmented data, which is computationally expensive and still limited in capturing fine-grained motion. In this work, we present self-refining video sampling, a simple method that uses a pre-trained video generator trained on large-scale datasets as its own self-refiner. By interpreting the generator as a denoising autoencoder, we enable iterative inner-loop refinement at inference time without any external verifier or additional training. We further introduce an uncertainty-aware refinement strategy that selectively refines regions based on self-consistency, which prevents artifacts caused by over-refinement. Experiments on state-of-the-art video generators demonstrate significant improvements in motion coherence and physics alignment, achieving over 70% human preference compared to the default sampler and guidance-based sampler.",
+    "status": "found"
+  },
+  "2601.18578": {
+    "arxiv_id": "2601.18578",
+    "title": "Gas distributions inside and around haloes in the alternative dark matter simulations AIDA-TNG",
+    "authors": [
+      "Chi Zhang",
+      "Enrico Garaldi",
+      "Giulia Despali",
+      "Matteo Viel",
+      "Lauro Moscardini",
+      "Mark Vogelsberger"
+    ],
+    "submission_date": "2026-01-26T15:23:16Z",
+    "latest_updated": "2026-09-11T06:12:22Z",
+    "revised_dates": null,
+    "venue": "Phys. Rev. D 114, 063020 (2026)",
+    "latest_version": 2,
+    "versions": [
+      "2601.18578v1",
+      "2601.18578v2"
+    ],
+    "abstract": "The nature of Dark Matter (DM) is one of the greatest mysteries of modern astrophysics. While the standard Cold DM (CDM) model successfully explains observations on most astrophysical scales, DM particles have not yet been detected, leaving room for a plethora of different models. In order to identify their observable signatures, we use the AIDA-TNG cosmological simulation suite to predict the distributions of gas and neutral hydrogen (HI) in the CDM, Self-Interacting DM (SIDM), velocity-dependent SIDM (vSIDM), and Warm DM (WDM) models. We find that the DM models investigated have very limited impact on the median gas and HI profiles of haloes. Nevertheless, for the most massive haloes ($M_{\\rm vir}\\sim10^{14}\\,\\mathrm{M}_\\odot$), we find that DM self-interactions can reduce the central potential, thereby lowering gravitational heating and the central gas temperature. We find that, in all models, the halo-to-halo variation in the HI profiles is explained by AGN feedback, and that the specific characteristics of the DM model are largely subdominant. Nevertheless, we detect some systematic difference in the case of SIDM, with more HI surviving close to the centre with respect to other models. We provide fitting functions for the gas and HI profiles. We investigate the galaxy-Ly$α$ cross-correlation function (\\galacc) for different halo masses, redshifts and observational strategies. We find that at $z=0$ vSIDM can be distinguished from CDM in haloes with $10^{12}\\lesssim M_{\\rm vir}\\lesssim10^{13}\\,{\\rm M}_\\odot$, while SIDM1 can be distinguished from CDM in haloes with $M_{\\rm vir}\\gtrsim10^{13}\\,{\\rm M}_\\odot$. We estimate that statistically-robust detection requires sampling $\\sim160$ haloes with $\\sim20$ sightlines each, a task that can be achieved with current and future facilities like WEAVE, 4MOST, PFS, ELT and WST.",
+    "status": "found"
+  },
+  "2601.18579": {
+    "arxiv_id": "2601.18579",
+    "title": "GraFine: Retrieval-Time Refinement for Efficient Graph RAG over Corpus Graphs",
+    "authors": [
+      "Seonho An",
+      "Chaejeong Hyun",
+      "Min-Soo Kim"
+    ],
+    "submission_date": "2026-01-26T15:23:41Z",
+    "latest_updated": "2026-08-11T13:49:09Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.18579v1",
+      "2601.18579v2"
+    ],
+    "abstract": "Graph RAG on corpus graphs enhances retrieval by leveraging intermediate node content as contextual clues to uncover unretrieved oracle nodes. However, existing methods suffer from two critical blind spots, namely semantically blind graph expansion and topology blind pruning, or else rely on prohibitively slow retrieval and generation interleaving. To address this, we formalize these limitations through an operational taxonomy and propose a retriever design that couples semantics-aware adding with graph-aware pruning under efficiency constraints. We instantiate this design as GraFine, which alternates between two refinement stages: Semantic Proximity eXpansion (SPX) for semantics-aware node addition, and a Graph Smoothing Reranker (GSR) for graph-aware pruning. Experiments on reference networks and text-rich knowledge graphs show that GraFine improves retrieval accuracy and generation quality while maintaining time-efficiency. Furthermore, we introduce Topological Recall (TR), a metric that quantifies the topological proximity between retrieved and oracle nodes. Our analysis using TR confirms that GraFine more effectively steers refinement toward undiscovered oracle nodes by leveraging intermediate contextual clues. Our code is available at this link: https://github.com/asmath472/GraFine.",
+    "status": "found"
+  },
+  "2601.18580": {
+    "arxiv_id": "2601.18580",
+    "title": "K-Myriad: Jump-starting reinforcement learning with unsupervised parallel agents",
+    "authors": [
+      "Vincenzo De Paola",
+      "Mirco Mutti",
+      "Riccardo Zamboni",
+      "Marcello Restelli"
+    ],
+    "submission_date": "2026-01-26T15:26:40Z",
+    "latest_updated": "2026-01-26T15:26:40Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.18580v1"
+    ],
+    "abstract": "Parallelization in Reinforcement Learning is typically employed to speed up the training of a single policy, where multiple workers collect experience from an identical sampling distribution. This common design limits the potential of parallelization by neglecting the advantages of diverse exploration strategies. We propose K-Myriad, a scalable and unsupervised method that maximizes the collective state entropy induced by a population of parallel policies. By cultivating a portfolio of specialized exploration strategies, K-Myriad provides a robust initialization for Reinforcement Learning, leading to both higher training efficiency and the discovery of heterogeneous solutions. Experiments on high-dimensional continuous control tasks, with large-scale parallelization, demonstrate that K-Myriad can learn a broad set of distinct policies, highlighting its effectiveness for collective exploration and paving the way towards novel parallelization strategies.",
+    "status": "found"
+  },
+  "2601.18581": {
+    "arxiv_id": "2601.18581",
+    "title": "The Hasse principle for diagonal forms restricted to a hypersurface of adjacent degree",
+    "authors": [
+      "Anna Theorin Johansson"
+    ],
+    "submission_date": "2026-01-26T15:27:41Z",
+    "latest_updated": "2026-01-26T15:27:41Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.18581v1"
+    ],
+    "abstract": "We investigate the Hasse principle for Diophantine systems consisting of one diagonal form of degree $k$ and one general form of degree $k-1$. By refining the method of Brandes and Parsell (arXiv:2003.04350) in this specific setting, we improve the bound $n > 2^k k$ to $n > 2^{k-1}(2k-1)$; in particular, the requirement $n > 24$ in the case of degrees three and two is relaxed to $n > 20$.",
+    "status": "found"
+  },
+  "2601.18582": {
+    "arxiv_id": "2601.18582",
+    "title": "From Classification to Ranking: Enhancing LLM Reasoning Capabilities for MBTI Personality Detection",
+    "authors": [
+      "Yuan Cao",
+      "Feixiang Liu",
+      "Xinyue Wang",
+      "Yihan Zhu",
+      "Hui Xu",
+      "Zheng Wang",
+      "Qiang Qiu"
+    ],
+    "submission_date": "2026-01-26T15:28:43Z",
+    "latest_updated": "2026-01-26T15:28:43Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.18582v1"
+    ],
+    "abstract": "Personality detection aims to measure an individual's corresponding personality traits through their social media posts. The advancements in Large Language Models (LLMs) offer novel perspectives for personality detection tasks. Existing approaches enhance personality trait analysis by leveraging LLMs to extract semantic information from textual posts as prompts, followed by training classifiers for categorization. However, accurately classifying personality traits remains challenging due to the inherent complexity of human personality and subtle inter-trait distinctions. Moreover, prompt-based methods often exhibit excessive dependency on expert-crafted knowledge without autonomous pattern-learning capacity. To address these limitations, we view personality detection as a ranking task rather than a classification and propose a corresponding reinforcement learning training paradigm. First, we employ supervised fine-tuning (SFT) to establish personality trait ranking capabilities while enforcing standardized output formats, creating a robust initialization. Subsequently, we introduce Group Relative Policy Optimization (GRPO) with a specialized ranking-based reward function. Unlike verification tasks with definitive solutions, personality assessment involves subjective interpretations and blurred boundaries between trait categories. Our reward function explicitly addresses this challenge by training LLMs to learn optimal answer rankings. Comprehensive experiments have demonstrated that our method achieves state-of-the-art performance across multiple personality detection benchmarks.",
+    "status": "found"
+  },
+  "2601.18583": {
+    "arxiv_id": "2601.18583",
+    "title": "Uncooled Poisson Bolometer for High-Speed Event-Based Long-wave Thermal Imaging",
+    "authors": [
+      "Mohamed A. Mousa",
+      "Leif Bauer",
+      "Utkarsh Singh",
+      "Ziyi Yang",
+      "Angshuman Deka",
+      "Zubin Jacob"
+    ],
+    "submission_date": "2026-01-26T15:29:12Z",
+    "latest_updated": "2026-01-26T15:29:12Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.18583v1"
+    ],
+    "abstract": "Event-based vision provides high-speed, energy-efficient sensing for applications such as autonomous navigation and motion tracking. However, implementing this technology in the long-wave infrared remains a significant challenge. Traditional infrared sensors are hindered by slow thermal response times or the heavy power requirements of cryogenic cooling. Here, we introduce the first event-based infrared detector operating in a Poisson-counting regime. This is realized with a spintronic Poisson bolometer capable of broadband detection from 0.8-14$μ\\text{m}$. In this regime, infrared signals are detected through statistically resolvable changes in stochastic switching events. This approach enables room-temperature operation with high timing resolution. Our device achieves a maximum event rate of 1,250 Hz, surpassing the temporal resolution of conventional uncooled microbolometers by a factor of 4. Power consumption is kept low at 0.2$μ$W per pixel. This work establishes an operating principle for infrared sensing and demonstrates a pathway toward high-speed, energy-efficient, event-driven thermal imaging.",
+    "status": "found"
+  },
+  "2601.18584": {
+    "arxiv_id": "2601.18584",
+    "title": "Boundary condition for phonon distribution functions at a smooth crystal interface and interfacial angular momentum transfer",
+    "authors": [
+      "Yuta Suzuki",
+      "Shuntaro Sumita",
+      "Yusuke Kato"
+    ],
+    "submission_date": "2026-01-26T15:30:28Z",
+    "latest_updated": "2026-10-15T07:22:02Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2601.18584v1",
+      "2601.18584v2",
+      "2601.18584v3"
+    ],
+    "abstract": "We theoretically elucidate the boundary conditions for phonon distribution functions of long-wavelength acoustic phonons at smooth crystal interfaces. We first derive boundary conditions that fully incorporate reflection, transmission, and mode conversion. We obtain these conditions for phonons from those for classical lattice vibrations, using the correspondence between the quantum and classical descriptions. This formulation provides a theoretical foundation for the acoustic mismatch model, widely used to analyze Kapitza resistance. We then refine the boundary conditions to include spatial dependence parallel to the interface. The refined form captures transverse shifts of elastic wave packets, analogous to the optical Imbert--Fedorov shift, and ensures conservation of total angular momentum. Consequently, circularly polarized phonons carrying spin angular momentum (SAM) generate phonon orbital angular momentum (OAM) at the interface. We analytically determine the spatial profile of this OAM and demonstrate that SAM and OAM are both involved in the interfacial diffusion of chiral phonons. Our theory provides concise boundary conditions for phonons, with applications ranging from heat transport to phonon angular momentum transport.",
+    "status": "found"
+  },
+  "2601.18585": {
+    "arxiv_id": "2601.18585",
+    "title": "GimmBO: Interactive Generative Image Model Merging via Bayesian Optimization",
+    "authors": [
+      "Chenxi Liu",
+      "Selena Ling",
+      "Alec Jacobson"
+    ],
+    "submission_date": "2026-01-26T15:32:16Z",
+    "latest_updated": "2026-06-06T22:11:28Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.18585v1",
+      "2601.18585v2"
+    ],
+    "abstract": "Fine-tuning-based adaptation is widely used to customize diffusion-based image generation, leading to large collections of community-created adapters that capture diverse subjects and styles. Adapters derived from the same base model can be merged with weights, enabling the synthesis of new visual results within a vast and continuous design space. To explore this space, current workflows rely on manual slider-based tuning, an approach that scales poorly and makes weight selection difficult, even when the candidate set is limited to 20-30 adapters. We propose GimmBO to support interactive exploration of adapter merging for image generation through Preferential Bayesian Optimization (PBO). Motivated by observations from real-world usage, including sparsity and constrained weight ranges, we introduce a two-stage BO backend that improves sampling efficiency and convergence in high-dimensional spaces. We evaluate our approach with simulated users and a user study, demonstrating improved convergence, high success rates, and consistent gains over BO and line-search baselines, and further show the flexibility of the framework through several extensions.",
+    "status": "found"
+  },
+  "2601.18586": {
+    "arxiv_id": "2601.18586",
+    "title": "Learning long term climate-resilient transport adaptation pathways under direct and indirect flood impacts using reinforcement learning",
+    "authors": [
+      "Miguel Costa",
+      "Arthur Vandervoort",
+      "Carolin Schmidt",
+      "Morten W. Petersen",
+      "Martin Drews",
+      "Karyn Morrissey",
+      "Francisco C. Pereira"
+    ],
+    "submission_date": "2026-01-26T15:32:40Z",
+    "latest_updated": "2026-01-26T15:32:40Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.18586v1"
+    ],
+    "abstract": "Climate change is expected to intensify rainfall and other hazards, increasing disruptions in urban transportation systems. Designing effective adaptation strategies is challenging due to the long-term, sequential nature of infrastructure investments, deep uncertainty, and complex cross-sector interactions. We propose a generic decision-support framework that couples an integrated assessment model (IAM) with reinforcement learning (RL) to learn adaptive, multi-decade investment pathways under uncertainty. The framework combines long-term climate projections (e.g., IPCC scenario pathways) with models that map projected extreme-weather drivers (e.g. rain) into hazard likelihoods (e.g. flooding), propagate hazards into urban infrastructure impacts (e.g. transport disruption), and value direct and indirect consequences for service performance and societal costs. Embedded in a reinforcement-learning loop, it learns adaptive climate adaptation policies that trade off investment and maintenance expenditures against avoided impacts. In collaboration with Copenhagen Municipality, we demonstrate the approach on pluvial flooding in the inner city for the horizon of 2024 to 2100. The learned strategies yield coordinated spatial-temporal pathways and improved robustness relative to conventional optimization baselines, namely inaction and random action, illustrating the framework's transferability to other hazards and cities.",
+    "status": "found"
+  },
+  "2601.18587": {
+    "arxiv_id": "2601.18587",
+    "title": "Vaccine Efficacy Estimands Implied by Common Estimators Used in Individual Randomized Field Trials",
+    "authors": [
+      "Michael P. Fay",
+      "Dean Follmann",
+      "Bruce J. Swihart",
+      "Lauren E. Dang"
+    ],
+    "submission_date": "2026-01-26T15:32:54Z",
+    "latest_updated": "2026-01-26T15:32:54Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.18587v1"
+    ],
+    "abstract": "We review vaccine efficacy (VE) estimands for susceptibility in individual randomized trials with natural (unmeasured) exposure, where individual responses are measured as time from vaccination until an event (e.g., disease from the infectious agent). Common VE estimands are written as $1-θ$, where $θ$ is some ratio effect measure (e.g., ratio of incidence rates, cumulative incidences, hazards, or odds) comparing outcomes under vaccination versus control. Although the ratio effects are approximately equal with low control event rates, we explore the quality of that approximation using a nonparametric formulation. Traditionally, the primary endpoint VE estimands are full immunization (or biological) estimands that represent a subset of the intent-to-treat population, excluding those that have the event before the vaccine has been able to ramp-up to its full effect, requiring care for proper causal interpretation. Besides these primary VE estimands that summarize an effect of the vaccine over the full course of the study, we also consider local VE estimands that measure the effect at particular time points. We discuss interpretational difficulties of local VE estimands (e.g., depletion of susceptibles bias), and using frailty models as sensitivity analyses for the individual-level causal effects over time.",
+    "status": "found"
+  },
+  "2601.18588": {
+    "arxiv_id": "2601.18588",
+    "title": "Stability as a Liability:Systematic Breakdown of Linguistic Structure in LLMs",
+    "authors": [
+      "Xianzhe Meng",
+      "Qiangsheng Zeng",
+      "Ling Luo",
+      "Qinghan Yang",
+      "Jiarui Hao",
+      "Wenbo Wu",
+      "Qinyu Wang",
+      "Rui Yin",
+      "Lin Qi",
+      "Renzhi Lu"
+    ],
+    "submission_date": "2026-01-26T15:34:50Z",
+    "latest_updated": "2026-02-07T16:01:21Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.18588v1",
+      "2601.18588v2"
+    ],
+    "abstract": "Training stability is typically regarded as a prerequisite for reliable optimization in large language models. In this work, we analyze how stabilizing training dynamics affects the induced generation distribution. We show that under standard maximum likelihood training, stable parameter trajectories lead stationary solutions to approximately minimize the forward KL divergence to the empirical distribution, while implicitly reducing generative entropy. As a consequence, the learned model can concentrate probability mass on a limited subset of empirical modes, exhibiting systematic degeneration despite smooth loss convergence. We empirically validate this effect using a controlled feedback-based training framework that stabilizes internal generation statistics, observing consistent low-entropy outputs and repetitive behavior across architectures and random seeds. It indicates that optimization stability and generative expressivity are not inherently aligned, and that stability alone is an insufficient indicator of generative quality.",
+    "status": "found"
+  },
+  "2601.18589": {
+    "arxiv_id": "2601.18589",
+    "title": "AGSP-DSA: An Adaptive Graph Signal Processing Framework for Robust Multimodal Fusion with Dynamic Semantic Alignment",
+    "authors": [
+      "KV Karthikeya",
+      "Ashok Kumar Das",
+      "Shantanu Pal",
+      "Vivekananda Bhat K",
+      "Arun Sekar Rajasekaran"
+    ],
+    "submission_date": "2026-01-26T15:35:03Z",
+    "latest_updated": "2026-01-26T15:35:03Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.18589v1"
+    ],
+    "abstract": "In this paper, we introduce an Adaptive Graph Signal Processing with Dynamic Semantic Alignment (AGSP DSA) framework to perform robust multimodal data fusion over heterogeneous sources, including text, audio, and images. The requested approach uses a dual-graph construction to learn both intra-modal and inter-modal relations, spectral graph filtering to boost the informative signals, and effective node embedding with Multi-scale Graph Convolutional Networks (GCNs). Semantic aware attention mechanism: each modality may dynamically contribute to the context with respect to contextual relevance. The experimental outcomes on three benchmark datasets, including CMU-MOSEI, AVE, and MM-IMDB, show that AGSP-DSA performs as the state of the art. More precisely, it achieves 95.3% accuracy, 0.936 F1-score, and 0.924 mAP on CMU-MOSEI, improving MM-GNN by 2.6 percent in accuracy. It gets 93.4% accuracy and 0.911 F1-score on AVE and 91.8% accuracy and 0.886 F1-score on MM-IMDB, which demonstrate good generalization and robustness in the missing modality setting. These findings verify the efficiency of AGSP-DSA in promoting multimodal learning in sentiment analysis, event recognition and multimedia classification.",
+    "status": "found"
+  },
+  "2601.18590": {
+    "arxiv_id": "2601.18590",
+    "title": "Improvement of the Gilbert-Varshamov Bound for Linear Codes and Quantum Codes",
+    "authors": [
+      "Chen Yuan",
+      "Ruiqi Zhu"
+    ],
+    "submission_date": "2026-01-26T15:35:32Z",
+    "latest_updated": "2026-01-26T15:35:32Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.18590v1"
+    ],
+    "abstract": "The Gilbert--Varshamov (GV) bound is a central benchmark in coding theory, establishing existential guarantees for error-correcting codes and serving as a baseline for both Hamming and quantum fault-tolerant information processing. Despite decades of effort, improving the GV bound is notoriously difficult, and known improvements often rely on technically heavy arguments and do not extend naturally to the quantum setting due to additional self-orthogonality constraints. In this work we develop a concise probabilistic method that yields an improvement over the classical GV bound for $q$-ary linear codes. For relative distance $δ=d/n<1-1/q$, we show that an $[n,k,d]_q$ linear code exists whenever $\\frac{q^{k}-1}{q-1}\\;<\\;\\frac{c_δ\\sqrt{n}\\, q^{n}}{\\mathrm{Vol}_q(n,d-1)}$, for positive constant $c_δ$ depending only on $δ$, where $\\mathrm{Vol}_q(n,d-1)$ denotes the volume of a $q$-ary Hamming ball. We further adapt this approach to the quantum setting by analyzing symplectic self-orthogonal structures. For $δ<1-1/q^2$, we obtain an improved quantum GV bound: there exists a $q$-ary quantum code $[[n,\\,n-k,\\,d]]$ provided that $\\frac{q^{2n-k}-1}{q-1}<\\frac{c_δ\\sqrt{n}\\cdot q^{2n}}{\\sum_{i=0}^{d-1}\\binom{n}{i}(q^2-1)^i}$. In particular, our result improves the standard quantum GV bound by an $Ω(\\sqrt{n})$ multiplicative factor.",
+    "status": "found"
+  },
+  "2601.18591": {
+    "arxiv_id": "2601.18591",
+    "title": "How are MLOps Frameworks Used in Open Source Projects? An Empirical Characterization",
+    "authors": [
+      "Fiorella Zampetti",
+      "Federico Stocchetti",
+      "Federica Razzano",
+      "Damian Andrew Tamburri",
+      "Massimiliano Di Penta"
+    ],
+    "submission_date": "2026-01-26T15:35:42Z",
+    "latest_updated": "2026-01-26T15:35:42Z",
+    "revised_dates": null,
+    "venue": "23rd International Conference on Mining Software Repositories (MSR '26), April 13--14, 2026, Rio de Janeiro, Brazil",
+    "latest_version": 1,
+    "versions": [
+      "2601.18591v1"
+    ],
+    "abstract": "Machine Learning (ML) Operations (MLOps) frameworks have been conceived to support developers and AI engineers in managing the lifecycle of their ML models. While such frameworks provide a wide range of features, developers may leverage only a subset of them, while missing some highly desired features. This paper investigates the practical use and desired feature enhancements of eight popular open-source MLOps frameworks. Specifically, we analyze their usage by dependent projects on GitHub, examining how they invoke the frameworks' APIs and commands. Then, we qualitatively analyze feature requests and enhancements mined from the frameworks' issue trackers, relating these desired improvements to the previously identified usage features. Results indicate that MLOps frameworks are rarely used out-of-the-box and are infrequently integrated into GitHub Workflows, but rather, developers use their APIs to implement custom functionality in their projects. Used features concern core ML phases and whole infrastructure governance, sometimes leveraging multiple frameworks with complementary features. The mapping with feature requests highlights that users mainly ask for enhancements to core features of the frameworks, but also better API exposure and CI/CD integration.",
+    "status": "found"
+  },
+  "2601.18592": {
+    "arxiv_id": "2601.18592",
+    "title": "Global Optimization of Atomic Clusters via Physically-Constrained Tensor Train Decomposition",
+    "authors": [
+      "Konstantin Sozykin",
+      "Nikita Rybin",
+      "Andrei Chertkov",
+      "Anh-Huy Phan",
+      "Ivan Oseledets",
+      "Alexander Shapeev",
+      "Ivan Novikov",
+      "Gleb Ryzhakov"
+    ],
+    "submission_date": "2026-01-26T15:38:20Z",
+    "latest_updated": "2026-01-26T15:38:20Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.18592v1"
+    ],
+    "abstract": "The global optimization of atomic clusters represents a fundamental challenge in computational chemistry and materials science due to the exponential growth of local minima with system size (i.e., the curse of dimensionality). We introduce a novel framework that overcomes this limitation by exploiting the low-rank structure of potential energy surfaces through Tensor Train (TT) decomposition. Our approach combines two complementary TT-based strategies: the algebraic TTOpt method, which utilizes maximum volume sampling, and the probabilistic PROTES method, which employs generative sampling. A key innovation is the development of physically-constrained encoding schemes that incorporate molecular constraints directly into the discretization process. We demonstrate the efficacy of our method by identifying global minima of Lennard-Jones clusters containing up to 45 atoms. Furthermore, we establish its practical applicability to real-world systems by optimizing 20-atom carbon clusters using a machine-learned Moment Tensor Potential, achieving geometries consistent with quantum-accurate simulations. This work establishes TT-decomposition as a powerful tool for molecular structure prediction and provides a general framework adaptable to a wide range of high-dimensional optimization problems in computational material science.",
+    "status": "found"
+  },
+  "2601.18593": {
+    "arxiv_id": "2601.18593",
+    "title": "The generalised balanced power diagram: flat sections, affine transformations and an improved rendering algorithm",
+    "authors": [
+      "Felix Ballani"
+    ],
+    "submission_date": "2026-01-26T15:39:19Z",
+    "latest_updated": "2026-01-26T15:39:19Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.18593v1"
+    ],
+    "abstract": "The generalised balanced power diagram (GBPD) is regarded in the literature as a suitable geometric model for describing polycrystalline microstructures with curved grain boundaries. This article compiles properties of GBPDs with regard to affine transformations and flat sections. Furthermore, it extends an algorithm known for power diagrams for generating digital images, which is more efficient than the usual brute force approach, on GBPDs.",
+    "status": "found"
+  },
+  "2601.18594": {
+    "arxiv_id": "2601.18594",
+    "title": "On the top-dimensional $L^2$-Betti number of residually poly-$\\mathbb Z$ groups",
+    "authors": [
+      "Sam P. Fisher",
+      "Pablo Sánchez-Peralta"
+    ],
+    "submission_date": "2026-01-26T15:39:21Z",
+    "latest_updated": "2026-01-26T15:39:21Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.18594v1"
+    ],
+    "abstract": "Let $G$ be a residually poly-$\\mathbb Z$ group of finite type. We prove that $G$ admits a poly-$\\mathbb Z$ quotient with kernel $N$ satisfying $\\mathrm{cd}_{\\mathbb Q}(N) < \\mathbb{cd}_{\\mathbb Q}(G)$ if and only if the top-dimensional $L^2$-Betti number of $G$ vanishes.",
+    "status": "found"
+  },
+  "2601.18595": {
+    "arxiv_id": "2601.18595",
+    "title": "A Balanced Neuro-Symbolic Approach for Commonsense Abductive Logic",
+    "authors": [
+      "Joseph Cotnareanu",
+      "Didier Chetelat",
+      "Yingxue Zhang",
+      "Mark Coates"
+    ],
+    "submission_date": "2026-01-26T15:40:26Z",
+    "latest_updated": "2026-01-26T15:40:26Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.18595v1"
+    ],
+    "abstract": "Although Large Language Models (LLMs) have demonstrated impressive formal reasoning abilities, they often break down when problems require complex proof planning. One promising approach for improving LLM reasoning abilities involves translating problems into formal logic and using a logic solver. Although off-the-shelf logic solvers are in principle substantially more efficient than LLMs at logical reasoning, they assume that all relevant facts are provided in a question and are unable to deal with missing commonsense relations. In this work, we propose a novel method that uses feedback from the logic solver to augment a logic problem with commonsense relations provided by the LLM, in an iterative manner. This involves a search procedure through potential commonsense assumptions to maximize the chance of finding useful facts while keeping cost tractable. On a collection of pure-logical reasoning datasets, from which some commonsense information has been removed, our method consistently achieves considerable improvements over existing techniques, demonstrating the value in balancing neural and symbolic elements when working in human contexts.",
+    "status": "found"
+  }
+}

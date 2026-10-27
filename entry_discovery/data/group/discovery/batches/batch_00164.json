@@ -1,0 +1,445 @@
+{
+  "2511.14989": {
+    "arxiv_id": "2511.14989",
+    "title": "SoK: Critical Evaluation of Quantum Machine Learning for Adversarial Robustness",
+    "authors": [
+      "Saeefa Rubaiyet Nowmi",
+      "Jesus Lopez",
+      "Md Mahmudul Alam Imon",
+      "Shahrooz Pouryousef",
+      "Mohammad Saidur Rahman"
+    ],
+    "submission_date": "2025-11-19T00:13:17Z",
+    "latest_updated": "2026-05-21T23:18:26Z",
+    "revised_dates": null,
+    "venue": "Proceedings of the IEEE Symposium on Security and Privacy (SP), 2026",
+    "latest_version": 4,
+    "versions": [
+      "2511.14989v1",
+      "2511.14989v2",
+      "2511.14989v3",
+      "2511.14989v4"
+    ],
+    "abstract": "Quantum Machine Learning (QML) integrates quantum computational principles into learning algorithms, offering improved representational capacity and computational efficiency. However, the security and robustness of QML systems remain underexplored, particularly under adversarial conditions. We present the first comprehensive systematization of adversarial robustness in QML, combining conceptual organization with empirical evaluation across black-box, gray-box, and white-box threat models. We implement five representative attacks: a label-flipping poisoning attack under black-box; an encoder-level indiscriminate poisoning attack and a proxy-model clean-label backdoor attack under gray-box; and a circuit-level backdoor attack (QTrojan) and gradient-based evasion attacks (FGSM and PGD) under white-box. We evaluate these attacks using a Quantum Multilayer Perceptron (QMLP) trained on MNIST and AZ-Class across circuit depths of 2, 5, 10, and 50 layers with angle and amplitude encoding schemes. Our evaluations reveal a fundamental accuracy-robustness trade-off. Amplitude encoding achieves the highest clean accuracy (92.6% on MNIST and 67% on AZ-Class) but collapses under adversarial perturbations and depolarizing noise, whereas shallow angle-encoded models remain more stable. QUID is effective under noiseless conditions but weakened by noise, while the proxy-model backdoor persists unless the circuit itself is overwhelmed. Furthermore, the circuit-level backdoor fails in the multi-class setting, indicating a scalability limitation. Finally, QMLP models are more robust than Classical Multi-Layer Perceptron (CMLP) models under label-flipping attacks but substantially more vulnerable to gradient-based evasion. We conclude by proposing a threat-aware and noise-resilient framework for secure QML deployment.",
+    "status": "found"
+  },
+  "2511.14990": {
+    "arxiv_id": "2511.14990",
+    "title": "CoroAMU: Unleashing Memory-Driven Coroutines through Latency-Aware Decoupled Operations",
+    "authors": [
+      "Zhuolun Jiang",
+      "Songyue Wang",
+      "Xiaokun Pei",
+      "Tianyue Lu",
+      "Mingyu Chen"
+    ],
+    "submission_date": "2025-11-19T00:14:28Z",
+    "latest_updated": "2025-11-19T00:14:28Z",
+    "revised_dates": null,
+    "venue": "Proceedings of the 2025 International Conference on Parallel Architecture and Compilation (PACT). USA: IEEE Computer Society, 2025, p. 431-444",
+    "latest_version": 1,
+    "versions": [
+      "2511.14990v1"
+    ],
+    "abstract": "Modern data-intensive applications face memory latency challenges exacerbated by disaggregated memory systems. Recent work shows that coroutines are promising in effectively interleaving tasks and hiding memory latency, but they struggle to balance latency-hiding efficiency with runtime overhead. We present CoroAMU, a hardware-software co-designed system for memory-centric coroutines. It introduces compiler procedures that optimize coroutine code generation, minimize context, and coalesce requests, paired with a simple interface. With hardware support of decoupled memory operations, we enhance the Asynchronous Memory Unit to further exploit dynamic coroutine schedulers by coroutine-specific memory operations and a novel memory-guided branch prediction mechanism. It is implemented with LLVM and open-source XiangShan RISC-V processor over the FPGA platform. Experiments demonstrate that the CoroAMU compiler achieves a 1.51x speedup over state-of-the-art coroutine methods on Intel server processors. When combined with optimized hardware of decoupled memory access, it delivers 3.39x and 4.87x average performance improvements over the baseline processor on FPGA-emulated disaggregated systems under 200ns and 800ns latency respectively.",
+    "status": "found"
+  },
+  "2511.14991": {
+    "arxiv_id": "2511.14991",
+    "title": "Mahler-type volume inequality for convex bodies with tetrahedral symmetry",
+    "authors": [
+      "Arkadiy Aliev"
+    ],
+    "submission_date": "2025-11-19T00:20:18Z",
+    "latest_updated": "2025-11-19T00:20:18Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.14991v1"
+    ],
+    "abstract": "Let $ K $ be a convex body in $ \\mathbb{R}^n $. We denote the volume of $ K $ by $ \\vert K\\vert $, and the polar body of its difference body $ K - K $ by $ (K - K)^{\\circ} $. We provide a new proof of the well-known estimate \\[ |K||(K - K)^{\\circ}| \\geq \\frac{3}{2} \\] for $ K \\subset \\mathbb{R}^2 $, with equality attained for a triangle. For $ K \\subset \\mathbb{R}^3 $ with tetrahedral symmetry, we prove that \\[ |K| |(K - K)^{\\circ}| \\geq \\frac{2}{3}, \\] with equality attained for a tetrahedron.",
+    "status": "found"
+  },
+  "2511.14992": {
+    "arxiv_id": "2511.14992",
+    "title": "An Estimand-Focused Approach for AUC Generalization and Cross-Study Benchmarking",
+    "authors": [
+      "Jiajun Liu",
+      "Guangcai Mao",
+      "Xiaofei Wang"
+    ],
+    "submission_date": "2025-11-19T00:21:36Z",
+    "latest_updated": "2026-06-16T20:48:33Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.14992v1",
+      "2511.14992v2"
+    ],
+    "abstract": "The area under the ROC curve (AUC) is the standard measure of a biomarker's discriminatory accuracy; however, AUC is rarely treated as a population-specific estimand. When validation cohorts differ from the intended target population in case mix, Naïve AUC estimates can mislead both generalization and cross-study comparison. We develop an estimand-focused framework that anchors biomarker AUC inference to a prespecified target population, aligning with the ICH E9(R1) estimand perspective adapted to discrimination rather than treatment effect. The framework supports two scientific goals: generalizing a study-specific AUC to a clinically relevant target population, and benchmarking AUCs across studies on a common population footing. Methodologically, we extend calibration weighting to the U-statistic formulation of AUC, allowing valid estimation even when the target population is characterized only by summary-level covariate information. This setting is common in biomarker validation, where individual-level target data are often unavailable and existing transportability methods may not be applicable. When patient-level real-world data are accessible, the proposed augmented variants provide double robustness and improved efficiency. We establish asymptotic properties and study their performances through comprehensive simulations. Furthermore, we demonstrate the proposed framework on the POWER trials, evaluating baseline stair-climb power (SCP) as a prognostic marker for 6-month survival in advanced non-small-cell lung cancer (NSCLC). Unlike prior work on transporting model-based predictive accuracy, our framework targets the biomarker-level estimand directly and addresses cross-study comparability - an issue not resolved by current methods.",
+    "status": "found"
+  },
+  "2511.14993": {
+    "arxiv_id": "2511.14993",
+    "title": "Kandinsky 5.0: A Family of Foundation Models for Image and Video Generation",
+    "authors": [
+      "Vladimir Arkhipkin",
+      "Vladimir Korviakov",
+      "Nikolai Gerasimenko",
+      "Denis Parkhomenko",
+      "Viacheslav Vasilev",
+      "Alexey Letunovskiy",
+      "Nikolai Vaulin",
+      "Maria Kovaleva",
+      "Ivan Kirillov",
+      "Lev Novitskiy",
+      "Denis Koposov",
+      "Nikita Kiselev",
+      "Alexander Varlamov",
+      "Dmitrii Mikhailov",
+      "Vladimir Polovnikov",
+      "Andrey Shutkin",
+      "Julia Agafonova",
+      "Ilya Vasiliev",
+      "Anastasiia Kargapoltseva",
+      "Anna Dmitrienko",
+      "Anastasia Maltseva",
+      "Anna Averchenkova",
+      "Olga Kim",
+      "Tatiana Nikulina",
+      "Denis Dimitrov"
+    ],
+    "submission_date": "2025-11-19T00:23:22Z",
+    "latest_updated": "2026-05-26T15:07:50Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2511.14993v1",
+      "2511.14993v2",
+      "2511.14993v3"
+    ],
+    "abstract": "This report introduces Kandinsky 5.0, a family of state-of-the-art foundation models for high-resolution image and 10-second video synthesis. The framework comprises three core line-up of models: Kandinsky 5.0 Image Lite - a line-up of 6B parameter image generation models, Kandinsky 5.0 Video Lite - a fast and lightweight 2B parameter text-to-video and image-to-video models, and Kandinsky 5.0 Video Pro - 19B parameter models that achieves superior video generation quality. We provide a comprehensive review of the data curation lifecycle - including collection, processing, filtering and clustering - for the multi-stage training pipeline that involves extensive pre-training and incorporates quality-enhancement techniques such as self-supervised fine-tuning (SFT) and reinforcement learning (RL)-based post-training. We also present novel architectural, training, and inference optimizations that enable Kandinsky 5.0 to achieve high generation speeds and state-of-the-art performance across various tasks, as demonstrated by human evaluation. As a large-scale, publicly available generative framework, Kandinsky 5.0 leverages the full potential of its pre-training and subsequent stages to be adapted for a wide range of generative applications. We hope that this report, together with the release of our open-source code and training checkpoints, will substantially advance the development and accessibility of high-quality generative models for the research community.",
+    "status": "found"
+  },
+  "2511.14994": {
+    "arxiv_id": "2511.14994",
+    "title": "Communication-Aware Asynchronous Distributed Trajectory Optimization for UAV Swarm",
+    "authors": [
+      "Yue Yu",
+      "Xiaobo Zheng",
+      "Shaoming He"
+    ],
+    "submission_date": "2025-11-19T00:27:25Z",
+    "latest_updated": "2025-11-19T00:27:25Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.14994v1"
+    ],
+    "abstract": "Distributed optimization offers a promising paradigm for trajectory planning in Unmanned Aerial Vehicle (UAV) swarms, yet its deployment in communication-constrained environments remains challenging due to unreliable links and limited data exchange. This paper addresses this issue via a two-tier architecture explicitly designed for operation under communication constraints. We develop a Communication-Aware Asynchronous Distributed Trajectory Optimization (CA-ADTO) framework that integrates Parameterized Differential Dynamic Programming (PDDP) for local trajectory optimization of individual UAVs with an asynchronous Alternating Direction Method of Multipliers (async-ADMM) for swarm-level coordination. The proposed architecture enables fully distributed optimization while substantially reducing communication overhead, making it suitable for real-world scenarios in which reliable connectivity cannot be guaranteed. The method is particularly effective in handling nonlinear dynamics and spatio-temporal coupling under communication constraints.",
+    "status": "found"
+  },
+  "2511.14995": {
+    "arxiv_id": "2511.14995",
+    "title": "Computing Power Indices in Weighted Majority Games with Formal Power Series",
+    "authors": [
+      "Naonori Kakimura",
+      "Yoshihiko Terai"
+    ],
+    "submission_date": "2025-11-19T00:29:33Z",
+    "latest_updated": "2025-11-19T00:29:33Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.14995v1"
+    ],
+    "abstract": "In this paper, we propose fast pseudo-polynomial-time algorithms for computing power indices in weighted majority games. We show that we can compute the Banzhaf index for all players in $O(n+q\\log (q))$ time, where $n$ is the number of players and $q$ is a given quota. Moreover, we prove that the Shapley--Shubik index for all players can be computed in $O(nq\\log (q))$ time. Our algorithms are faster than existing algorithms when $q=2^{o(n)}$. Our algorithms exploit efficient computation techniques for formal power series.",
+    "status": "found"
+  },
+  "2511.14996": {
+    "arxiv_id": "2511.14996",
+    "title": "The Sequential Nature of Science: Quantifying Learning from a Sequence of Studies",
+    "authors": [
+      "Jonas M. Mikhaeil",
+      "Donald P. Green",
+      "David Blei"
+    ],
+    "submission_date": "2025-11-19T00:32:10Z",
+    "latest_updated": "2025-11-19T00:32:10Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.14996v1"
+    ],
+    "abstract": "Scientific progress is inherently sequential: collective knowledge is updated as new studies enter the literature. We propose the sequential meta-analysis research trace (SMART), which quantifies the influence of each study at the time it enters the literature. In contrast to classical meta-analysis, our method can capture how new studies may cast doubt on previously held beliefs, increasing collective uncertainty. For example, a new study may present a methodological critique of prior work and propose a superior method. Even small studies, which may not materially affect a retrospective meta-analysis, can be influential at the time they appeared. To contrast SMART with classical meta-analysis, we re-analyze two meta-analysis datasets, from psychology and labor economics. One assembles studies using a single methodology; the other contains studies that predate or follow an important methodological innovation. Our formalization of sequential learning highlights the importance of methodological innovation that might otherwise be overlooked by classical meta-analysis.",
+    "status": "found"
+  },
+  "2511.14997": {
+    "arxiv_id": "2511.14997",
+    "title": "A Neural Network Approach to Preferred Event Selection for Low-Latency Gravitational-Wave Alerts",
+    "authors": [
+      "Pratyusava Baral",
+      "Cody Messick",
+      "Patrick Brady"
+    ],
+    "submission_date": "2025-11-19T00:37:23Z",
+    "latest_updated": "2026-09-22T23:45:26Z",
+    "revised_dates": null,
+    "venue": "Phys. Rev. D 114, 063044 (2026)",
+    "latest_version": 2,
+    "versions": [
+      "2511.14997v1",
+      "2511.14997v2"
+    ],
+    "abstract": "The LIGO-Virgo-KAGRA collaboration uses multiple independent search pipelines to detect gravitational waves, often resulting in multiple triggers (g-events) for a single astrophysical source. These triggers are grouped into superevents, raising a critical question for multimessenger astronomy: which g-event provides the most accurate sky localization for electromagnetic follow-up? Currently, the g-event with the highest signal-to-noise ratio (SNR) is selected, under the assumption that it should provide the best estimators of the source's parameters, including its location on the sky. Analysis of simulated signals reveals systematic deviations from this expectation. In particular, a false-alarm rate (FAR)-based selector performs slightly better than the SNR-based method, but introduces pipeline biases. We present a neural network-based selector trained on simulated signals to identify the g-event with the minimum searched area -- a metric quantifying localization accuracy. The network uses information (detector SNRs, FAR, and chirp mass) from all of the triggers associated with each astrophysical source and is designed to be pipeline-agnostic. Our results show that the neural network outperforms both traditional selectors, achieving a mean searched area ~2% smaller than the SNR-based selector. Unlike FAR-based selection, the neural network preserves the underlying distribution of pipeline contributions, avoiding systematic biases toward specific pipelines. The network can be trained in approximately one minute on a few thousand events and performs event selection instantaneously, making it suitable for low-latency applications. These results demonstrate that machine learning can enhance multimessenger astronomy capabilities while maintaining fairness across detection pipelines. We recommend implementing this approach for future observing runs.",
+    "status": "found"
+  },
+  "2511.14998": {
+    "arxiv_id": "2511.14998",
+    "title": "FinCriticalED: A Visual Benchmark for Financial Fact-Level OCR",
+    "authors": [
+      "Yueru He",
+      "Xueqing Peng",
+      "Yupeng Cao",
+      "Yan Wang",
+      "Lingfei Qian",
+      "Haohang Li",
+      "Yi Han",
+      "Shuyao Wang",
+      "Ruoyu Xiang",
+      "Fan Zhang",
+      "Zhuohan Xie",
+      "Mingquan Lin",
+      "Prayag Tiwari",
+      "Jimin Huang",
+      "Guojun Xiong",
+      "Sophia Ananiadou"
+    ],
+    "submission_date": "2025-11-19T00:41:14Z",
+    "latest_updated": "2026-04-07T03:13:19Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2511.14998v1",
+      "2511.14998v2",
+      "2511.14998v3"
+    ],
+    "abstract": "Recent progress in multimodal large language models (MLLMs) has substantially improved document understanding, yet strong optical character recognition (OCR) performance on surface metrics does not guarantee faithful preservation of decision-critical evidence. This limitation is especially consequential in financial documents, where small visual errors can induce discrete shifts in meaning. To study this gap, we introduce FinCriticalED (Financial Critical Error Detection), a fact-centric visual benchmark for evaluating whether OCR and vision-language systems preserve financially critical evidence beyond lexical similarity. FinCriticalED contains 859 real-world financial document pages with 9,481 expert-annotated facts spanning five critical field types: numeric, temporal, monetary unit, reporting entity, and financial concept. We formulate the task as structured OCR with fact-level verification, and develop a Deterministic-Rule-Guided LLM-as-Judge protocol to assess whether model outputs preserve annotated facts in context. We benchmark 13 systems spanning OCR pipelines, specialized OCR VLMs, open-source MLLMs, and proprietary MLLMs. Results reveal a clear gap between lexical accuracy and factual reliability, with numerical values and monetary units emerging as the most vulnerable fact types, and critical errors concentrating in visually complex, mixed-layout documents with distinct failure patterns across model families. Overall, FinCriticalED provides a rigorous benchmark for trustworthy financial OCR and a practical testbed for evidence fidelity in high-stakes multimodal document understanding. Benchmark and dataset details available at https://the-finai.github.io/FinCriticalED/",
+    "status": "found"
+  },
+  "2511.14999": {
+    "arxiv_id": "2511.14999",
+    "title": "A County-Level Similarity Network of Electric Vehicle Adoption: Integrating Predictive Modeling and Graph Theory",
+    "authors": [
+      "Fahad Alrasheedi",
+      "Hesham Ali"
+    ],
+    "submission_date": "2025-11-19T00:45:20Z",
+    "latest_updated": "2025-11-19T00:45:20Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.14999v1"
+    ],
+    "abstract": "Electric vehicle (EV) adoption is essential for reducing carbon dioxide (CO2) emissions from internal combustion engine vehicles (ICEVs), which account for nearly half of transportation-related emissions in the United States. Yet regional EV adoption varies widely, and prior studies often overlook county-level heterogeneity by relying on broad state-level analyses or limited city samples. Such approaches risk masking local patterns and may lead to inaccurate or non-transferable policy recommendations. This study introduces a graph-theoretic framework that complements predictive modeling to better capture how county-level characteristics relate to EV adoption. Feature importances from multiple predictive models are averaged and used as weights within a weighted Gower similarity metric to construct a county similarity network. A mutual k-nearest-neighbors procedure and modularity-based community detection identify 27 clusters of counties with similar weighted feature profiles. EV adoption rates are then analyzed across clusters, and standardized effect sizes (Cohens d) highlight the most distinguishing features for each cluster. Findings reveal consistent global trends, such as declining median income, educational attainment, and charging-station availability across lower adoption tiers; while also uncovering important local variations that general trend or prediction analyses fail to capture. In particular, some low-adoption groups are rural but not economically disadvantaged, whereas others are urbanized yet experience high poverty rates, demonstrating that different mechanisms can lead to the same adoption outcome. By exposing both global structural patterns and localized deviations, this framework provides policymakers with actionable, cluster-specific insights for designing more effective and context-sensitive EV adoption strategies.",
+    "status": "found"
+  },
+  "2511.15000": {
+    "arxiv_id": "2511.15000",
+    "title": "Bonsai: Compiling Queries to Pruned Tree Traversals",
+    "authors": [
+      "Alexander J Root",
+      "Christophe Gyurgyik",
+      "Purvi Goel",
+      "Kayvon Fatahalian",
+      "Jonathan Ragan-Kelley",
+      "Andrew Adams",
+      "Fredrik Kjolstad"
+    ],
+    "submission_date": "2025-11-19T00:50:20Z",
+    "latest_updated": "2026-06-03T22:03:16Z",
+    "revised_dates": null,
+    "venue": "Proc. ACM Program. Lang. 10, PLDI, Article 178 (June 2026)",
+    "latest_version": 3,
+    "versions": [
+      "2511.15000v1",
+      "2511.15000v2",
+      "2511.15000v3"
+    ],
+    "abstract": "Trees can accelerate queries that search or aggregate values over large collections. They achieve this by storing metadata that enables quick pruning (or inclusion) of subtrees when predicates on that metadata can prove that none (or all) of the data in a subtree affect the query result. Existing systems implement this pruning logic manually for each query predicate and data structure. We generalize and mechanize this class of optimization. Our method derives conditions for when subtrees can be pruned (or included wholesale), expressed in terms of the metadata available at each node. We efficiently generate these conditions using symbolic interval analysis, extended with new rules to handle geometric predicates (e.g., intersection, containment). Additionally, our compiler fuses compound queries (e.g., reductions on filters) into a single tree traversal. These techniques enable the automatic derivation of generalized single-index and dual-index tree joins that support a wide class of join predicates beyond standard equality and range predicates. The generated traversals match the behavior of expert-written code that implements query-specific traversals, and can asymptotically outperform the linear scans and nested-loop joins that existing systems fall back to when hand-written cases do not apply.",
+    "status": "found"
+  },
+  "2511.15001": {
+    "arxiv_id": "2511.15001",
+    "title": "Tides and energy conditions in Einstein-Gauss-Bonnet thin-shell wormholes",
+    "authors": [
+      "Ernesto F. Eiroa",
+      "Emilio Rubín de Celis",
+      "Claudio Simeone"
+    ],
+    "submission_date": "2025-11-19T00:53:59Z",
+    "latest_updated": "2025-11-19T00:53:59Z",
+    "revised_dates": null,
+    "venue": "Universe 11 (2025) 368",
+    "latest_version": 1,
+    "versions": [
+      "2511.15001v1"
+    ],
+    "abstract": "In this article we study spherical thin-shell wormholes in five-dimensional Einstein-Gauss-Bonnet gravity. We show that configurations supported by non-exotic matter, that is matter satisfying the weak energy condition, are possible at the same time that traversability problems associated with strong radial tides at the throat can be avoided when suitable values of the parameters are adopted. Our construction is performed in such a way that it also allows for the admissible behaviour of the geometry in the whole spacetime.",
+    "status": "found"
+  },
+  "2511.15002": {
+    "arxiv_id": "2511.15002",
+    "title": "Task Specific Sharpness Aware O-RAN Resource Management using Multi Agent Reinforcement Learning",
+    "authors": [
+      "Fatemeh Lotfi",
+      "Hossein Rajoli",
+      "Fatemeh Afghah"
+    ],
+    "submission_date": "2025-11-19T00:55:24Z",
+    "latest_updated": "2025-11-19T00:55:24Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.15002v1"
+    ],
+    "abstract": "Next-generation networks utilize the Open Radio Access Network (O-RAN) architecture to enable dynamic resource management, facilitated by the RAN Intelligent Controller (RIC). While deep reinforcement learning (DRL) models show promise in optimizing network resources, they often struggle with robustness and generalizability in dynamic environments. This paper introduces a novel resource management approach that enhances the Soft Actor Critic (SAC) algorithm with Sharpness-Aware Minimization (SAM) in a distributed Multi-Agent RL (MARL) framework. Our method introduces an adaptive and selective SAM mechanism, where regularization is explicitly driven by temporal-difference (TD)-error variance, ensuring that only agents facing high environmental complexity are regularized. This targeted strategy reduces unnecessary overhead, improves training stability, and enhances generalization without sacrificing learning efficiency. We further incorporate a dynamic $ρ$ scheduling scheme to refine the exploration-exploitation trade-off across agents. Experimental results show our method significantly outperforms conventional DRL approaches, yielding up to a $22\\%$ improvement in resource allocation efficiency and ensuring superior QoS satisfaction across diverse O-RAN slices.",
+    "status": "found"
+  },
+  "2511.15003": {
+    "arxiv_id": "2511.15003",
+    "title": "Resource-Based Time and Cost Prediction in Project Networks: From Statistical Modeling to Graph Neural Networks",
+    "authors": [
+      "Reza Mirjalili",
+      "Behrad Braghi",
+      "Shahram Shadrokh Sikari"
+    ],
+    "submission_date": "2025-11-19T00:56:12Z",
+    "latest_updated": "2025-11-19T00:56:12Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.15003v1"
+    ],
+    "abstract": "Accurate prediction of project duration and cost remains one of the most challenging aspects of project management, particularly in resource-constrained and interdependent task networks. Traditional analytical techniques such as the Critical Path Method (CPM) and Program Evaluation and Review Technique (PERT) rely on simplified and often static assumptions regarding task interdependencies and resource performance. This study proposes a novel resource-based predictive framework that integrates network representations of project activities with graph neural networks (GNNs) to capture structural and contextual relationships among tasks, resources, and time-cost dynamics. The model represents the project as a heterogeneous activity-resource graph in which nodes denote activities and resources, and edges encode temporal and resource dependencies. We evaluate multiple learning paradigms, including GraphSAGE and Temporal Graph Networks, on both synthetic and benchmark project datasets. Experimental results show that the proposed GNN framework achieves an average 23 to 31 percent reduction in mean absolute error compared to traditional regression and tree-based methods, while improving the coefficient of determination R2 from approximately 0.78 to 0.91 for large and complex project networks. Furthermore, the learned embeddings provide interpretable insights into resource bottlenecks and critical dependencies, enabling more explainable and adaptive scheduling decisions.",
+    "status": "found"
+  },
+  "2511.15004": {
+    "arxiv_id": "2511.15004",
+    "title": "IonCast: A Deep Learning Framework for Forecasting Ionospheric Dynamics",
+    "authors": [
+      "Halil S. Kelebek",
+      "Linnea M. Wolniewicz",
+      "Michael D. Vergalla",
+      "Simone Mestici",
+      "Giacomo Acciarini",
+      "Bala Poduval",
+      "Olga Verkhoglyadova",
+      "Madhulika Guhathakurta",
+      "Thomas E. Berger",
+      "Frank Soboczenski",
+      "Atılım Güneş Baydin"
+    ],
+    "submission_date": "2025-11-19T00:58:17Z",
+    "latest_updated": "2025-11-19T00:58:17Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.15004v1"
+    ],
+    "abstract": "The ionosphere is a critical component of near-Earth space, shaping GNSS accuracy, high-frequency communications, and aviation operations. For these reasons, accurate forecasting and modeling of ionospheric variability has become increasingly relevant. To address this gap, we present IonCast, a suite of deep learning models that include a GraphCast-inspired model tailored for ionospheric dynamics. IonCast leverages spatiotemporal learning to forecast global Total Electron Content (TEC), integrating diverse physical drivers and observational datasets. Validating on held-out storm-time and quiet conditions highlights improved skill compared to persistence. By unifying heterogeneous data with scalable graph-based spatiotemporal learning, IonCast demonstrates how machine learning can augment physical understanding of ionospheric variability and advance operational space weather resilience.",
+    "status": "found"
+  },
+  "2511.15005": {
+    "arxiv_id": "2511.15005",
+    "title": "Mathematical Analysis of Hallucination Dynamics in Large Language Models: Uncertainty Quantification, Advanced Decoding, and Principled Mitigation",
+    "authors": [
+      "Moses Kiprono"
+    ],
+    "submission_date": "2025-11-19T00:58:36Z",
+    "latest_updated": "2025-11-19T00:58:36Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.15005v1"
+    ],
+    "abstract": "Large Language Models (LLMs) are powerful linguistic engines but remain susceptible to hallucinations: plausible-sounding outputs that are factually incorrect or unsupported. In this work, we present a mathematically grounded framework to understand, measure, and mitigate these hallucinations. Drawing on probabilistic modeling, information theory, trigonometric signal analysis, and Bayesian uncertainty estimation, we analyze how errors compound autoregressively, propose refined uncertainty metrics, including semantic and phase-aware variants, and develop principled mitigation strategies such as contrastive decoding, retrieval-augmented grounding, factual alignment, and abstention. This unified lens connects recent advances in calibration, retrieval, and alignment to support safer and more reliable LLMs.",
+    "status": "found"
+  },
+  "2511.15006": {
+    "arxiv_id": "2511.15006",
+    "title": "Toward Complete Merger Identification at Cosmic Noon with Deep Learning",
+    "authors": [
+      "Aimee Schechter",
+      "Aleksandra Ciprijanovic",
+      "Rebecca Nevin",
+      "Julie Comerford",
+      "Xuejian Shen",
+      "Aaron Stemo",
+      "Laura Blecha"
+    ],
+    "submission_date": "2025-11-19T01:15:45Z",
+    "latest_updated": "2025-11-19T01:15:45Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.15006v1"
+    ],
+    "abstract": "As we enter the era of large imaging surveys such as $\\textit{Roman}$, Rubin, and $\\textit{Euclid}$, a deeper understanding of potential biases and selection effects in optical astronomical catalogs created with the use of ML-based methods is paramount. This work focuses on a deeper understanding of the performance and limitations of deep learning-based classifiers as tools for galaxy merger identification. We train a ResNet18 model on mock Hubble Space Telescope CANDELS images from the IllustrisTNG50 simulation. Our focus is on a more challenging classification of galaxy mergers and nonmergers at higher redshifts $1<z<1.5$, including minor mergers and lower mass galaxies down to the stellar mass of $10^8 M_\\odot$. We demonstrate, for the first time, that a deep learning model, such as the one developed in this work, can successfully identify even minor and low mass mergers even at these redshifts. Our model achieves overall accuracy, purity, and completeness of 73%. We show that some galaxy mergers can only be identified from certain observation angles, leading to a potential upper limit in overall accuracy. Using Grad-CAMs and UMAPs, we more deeply examine the performance and observe a visible gradient in the latent space with stellar mass and specific star formation rate, but no visible gradient with merger mass ratio or merger stage.",
+    "status": "found"
+  },
+  "2511.15007": {
+    "arxiv_id": "2511.15007",
+    "title": "FRIENDS GUI: A graphical user interface for data collection and visualization of vaping behavior from a passive vaping monitor",
+    "authors": [
+      "Shehan Irteza Pranto",
+      "Brett Fassler",
+      "Md Rafi Islam",
+      "Ashley Schenkel",
+      "Larry W. Hawk",
+      "Edward Sazonov"
+    ],
+    "submission_date": "2025-11-19T01:18:06Z",
+    "latest_updated": "2026-04-28T16:53:09Z",
+    "revised_dates": null,
+    "venue": "Journal of Open Research Software, 14: 24 (2026)",
+    "latest_version": 2,
+    "versions": [
+      "2511.15007v1",
+      "2511.15007v2"
+    ],
+    "abstract": "Understanding puffing topography (PT), which includes puff duration, intra-puff interval, and puff count per session, is critical for evaluating Electronic Nicotine Delivery Systems (ENDS) use, toxicant exposure, and informing regulatory decisions. We developed FRIENDS (Flexible Robust Instrumentation of ENDS), an open-source device that can be attached to ENDS and records puffing and touching events. This paper introduces the FRIENDS graphical user interface (GUI) that improves accessibility and interpretability of data collected by FRIENDS. The GUI is a Python-based opensource tool that extracts, decodes, and visualizes 24-hour puffing data from the FRIENDS device. Validation using 24-hour experimental data confirmed accurate timestamp conversion, reliable event decoding, and effective behavioral visualization. The software is freely available on GitHub for public use.",
+    "status": "found"
+  },
+  "2511.15008": {
+    "arxiv_id": "2511.15008",
+    "title": "A note on the minimal pairwise distance in optimal Lennard-Jones $N$-body clusters",
+    "authors": [
+      "Michael K. -H. Kiessling",
+      "David J. Wales"
+    ],
+    "submission_date": "2025-11-19T01:19:53Z",
+    "latest_updated": "2025-11-19T01:19:53Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.15008v1"
+    ],
+    "abstract": "Good a-priori bounds on the smallest pairwise distance $r_{\\rm{min}}(\\mbox{LJ}_N^{\\rm{gmin}})$ for a three-dimensional (3D) Lennard-Jones $N$-body cluster of globally minimal energy can significantly reduce the computational search space in the NP-hard problem to find this configuration. In this contribution the virial theorem is exploited for this purpose. We prove that if a configuration ${C}^{(N)}$ is a member of $\\mbox{LJ}_N^{\\rm{equ}}$ (the stationary points), then $r_{\\rm{min}}({C}^{(N)}) \\leq r_{\\rm{min}}(\\mbox{LJ}_2^{\\rm{gmin}})$. It is also shown that if ${C}^{(N)}\\in$ LJ$_N^{\\rm{gmin}}\\subset$ LJ$_N^{\\rm{equ}}$, equality holds if and only if $N\\in\\{2,3,4\\}$. We conjecture that $r_{\\rm{min}}(\\mbox{LJ}_N^{\\rm{gmin}}) >1$ in units for which $r_{\\rm{min}}(\\mbox{LJ}_2^{\\rm{gmin}})= 2^\\frac16 \\approx 1.122462048$. This conjectured lower bound, if correct, would improve the best lower bound currently known, $r_{\\rm{min}}(\\mbox{LJ}_N^{\\rm{gmin}})\\geq 0.767764$, by about 25$\\%$. In these units the smallest minimal pair distance found through numerical searches for LJ$_N^{\\rm{gmin}}$ with $N\\leq 1000$ is $r_{\\rm{min}}(\\mbox{LJ}_{923}^{\\rm{gmin}}) \\approx 1.01361$, so the conjectured lower bound would presumably be close to optimal. From the virial theorem we obtain an identity for any ${C}^{(N)}\\in \\mbox{LJ}_N^{\\rm{equ}}$, which expresses $r_{\\rm{min}}({C}^{(N)})$ in terms of the distribution of relative distances in ${C}^{(N)}$. This result reveals interesting connections with the Erdős distance, and related problems.",
+    "status": "found"
+  }
+}

@@ -1,0 +1,412 @@
+{
+  "2609.13774": {
+    "arxiv_id": "2609.13774",
+    "title": "From Benchmark to Deployment: Shift-Robust Fabric Recognition for Industrial Textile Onboarding",
+    "authors": [
+      "Haochen Li",
+      "Chenwei Wang",
+      "Felicity S. C. Tang",
+      "Misbah Iqbal",
+      "Carman K. M. Lee",
+      "Elif Ozden Yenigun"
+    ],
+    "submission_date": "2026-09-12T07:36:03Z",
+    "latest_updated": "2026-09-12T07:36:03Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13774v1"
+    ],
+    "abstract": "Automatically recognising a fabric's construction (jersey, twill, satin) is a bottleneck in textile sourcing, where incoming swatches are still typed by hand. Benchmark accuracy suggests the problem is solved, yet rarely survives deployment. On the \\numClasses{}-class FabricFlow benchmark we expose three gaps that headline accuracy hides. First, a duplication audit reveals train/test leakage that inflates accuracy; we rebuild leakage-free splits that report the true difficulty. Second, on the clean data the binding failure is acquisition-source shift between catalogues, not the peripheral shortcuts one might fear: on an archive-exclusive hold-out, standard training holds 58.0\\% Top-1 at a calibration error of 0.158, while a simple, architecture-agnostic central-texture recipe adds 13.5 Top-1 points and restores calibration. Third, because confusing one fabric family for another is costlier than a within-family slip, we optimise a taxonomic-severity cost: a confidence-gated routing policy auto-types confident swatches and refers only the uncertain minority to a human, sharply cutting onboarding cost. Throughout we report honest negatives: hierarchical classification, OCR fusion and zero-shot vision--language models all fail to help, yielding a concrete, calibrated, cost-aware recipe for deployable textile onboarding.",
+    "status": "found"
+  },
+  "2609.13775": {
+    "arxiv_id": "2609.13775",
+    "title": "Frequency shift in gravitational lensing by Kerr metric",
+    "authors": [
+      "Samaneh Sarbaz",
+      "Sohrab Rahvar"
+    ],
+    "submission_date": "2026-09-12T07:37:45Z",
+    "latest_updated": "2026-09-12T07:37:45Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13775v1"
+    ],
+    "abstract": "In this study, we calculate the relative frequency shift ($Δν/ ν$) caused by gravitational lensing resulting from the transverse motion of a spinning lens described by the Kerr metric \\cite{Kerr:1963ud}. While the effect of transverse velocity on the frequency shift has previously been investigated using the Schwarzschild metric \\cite{Rahvar_2020,10.1093/mnras/stae1938}, extending this to the Kerr metric provides a new window for measuring the transverse velocity of a lens or its spin parameter, a parameter often subject to degeneracy in gravitational microlensing observations. Recent microlensing observations have revealed black holes as viable lensing candidates \\cite{2022ApJ...933...83S}. Since spinning black holes form naturally from stellar evolution, astrophysical black hole lenses are best described by the Kerr metric. Furthermore, recent observations of supermassive black holes at the centers of galaxies provide an ideal laboratory for testing the observational effects of the Kerr metric by measuring the frequency shifts of lensed sources.",
+    "status": "found"
+  },
+  "2609.13776": {
+    "arxiv_id": "2609.13776",
+    "title": "Surprising Effectiveness of Self-Demonstrations in Enhancing Schema-Ontology Mapping with LLMs",
+    "authors": [
+      "Siddhesh Thombre",
+      "Manasi Patwardhan",
+      "Sunita Sarawagi"
+    ],
+    "submission_date": "2026-09-12T07:42:55Z",
+    "latest_updated": "2026-09-12T07:42:55Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13776v1"
+    ],
+    "abstract": "Integrating heterogeneous relational databases into a centralized ontology remains a persistent challenge in enterprise knowledge representation, primarily due to semantic heterogeneity, cryptic schema naming, missing metadata, and the abstraction gap between relational schemas and ontological models. Although large language models (LLMs) offer strong semantic reasoning capabilities, we show that directly applying them through one-shot prompting or naive multi-stage pipelines leads to poor performance for schema-ontology mapping. This paper presents a self-demonstration-driven approach that combines a neuro-symbolic task decomposition with a novel mechanism for automatically generating pattern-guided, dependency-aware demonstrations to address this integration challenge. Our approach incorporates two key strategies to achieve substantial accuracy gains over existing LLM-based schema integration methods: (i) a neuro-symbolic decomposition of the task into cascaded sub-tasks, where symbolic constraints structure the search space and LLMs perform semantic reasoning within each focused sub-task, and (ii) self-generated demonstrations guided by domain-agnostic patterns to supervise each sub-task. Experiments on three of the most challenging scenarios from the RODI benchmark show that our approach achieves state-of-the-art performance, substantially outperforming (25 percentage points F1 improvements) both traditional schema-to-ontology mapping techniques and recent LLM-based schema-to-ontology and schema matching approaches. Ablation studies further reveal the significant benefits of pattern-guided self-demonstrations and the complementary benefits of neuro-symbolic task decomposition.",
+    "status": "found"
+  },
+  "2609.13777": {
+    "arxiv_id": "2609.13777",
+    "title": "When Do Learned Priors Help Visual Inertial Estimation? A Controlled Study of Prior Integration, Calibration, Initialization, and Backend Consistency",
+    "authors": [
+      "Jinchang Zhang",
+      "Guoyu Lu"
+    ],
+    "submission_date": "2026-09-12T07:44:53Z",
+    "latest_updated": "2026-09-12T07:44:53Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13777v1"
+    ],
+    "abstract": "Learned components are increasingly integrated into geometric visual--inertial estimators to provide motion, depth, bias, uncertainty, or confidence cues. Yet it remains unclear whether gains arise from useful learned priors or from changes in the backend, calibration, initialization, temporal association, or evaluation gauge. We present a controlled framework for learning-augmented visual--inertial estimation that separates fusion gain from the incremental value of a learned prior and evaluates four evidence layers: local motion consistency, global trajectory accuracy, physical-state correctness, and numerical consistency. We instantiate the framework with a MonoViT-based monocular motion prior added as a local relative-motion factor to an unchanged VINS backend. We compare Original VINS and learned-prior VINS under matched sensor streams, timestamps, initialization, frontend/backend settings, and camera--IMU extrinsics, while probing calibration, initialization, state coupling, scale, bundle adjustment, and loop closure. On KITTI, with fixed reference extrinsics, translation APE RMSE is 31.4 m for Original VINS and 31.8 m with the learned prior. Across four recordings, the prior changes mean APE by only -0.2%, while a five-times-higher weight worsens it by 8.2%. Online extrinsic updates increase mean APE by 45.7% and 52.1%, respectively, while mean RPE changes by less than 2%. These results show that fusion performance alone cannot establish the value of learned priors. Reliable evaluation requires same-backend controls and joint analysis of prior compatibility, calibration, initialization, global drift, physical-state error, and backend consistency.",
+    "status": "found"
+  },
+  "2609.13778": {
+    "arxiv_id": "2609.13778",
+    "title": "GEAR: From Dynamic Encoding to Dynamic Activation in Social Trajectory Prediction",
+    "authors": [
+      "Jiaheng Chen",
+      "Jiaxing Li",
+      "Leixia Wang",
+      "Jianan Ju",
+      "Tinghe Zhang"
+    ],
+    "submission_date": "2026-09-12T07:46:36Z",
+    "latest_updated": "2026-09-12T07:46:36Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13778v1"
+    ],
+    "abstract": "Human trajectory prediction requires modeling both individual motion patterns and social interactions among agents. Existing methods have made substantial progress by using attention mechanisms, graph structures, and temporal encoders to capture dynamic social context. However, most of them primarily focus on how social information is encoded, while paying less explicit attention to how the encoded social context should take effect during future trajectory generation. In this paper, we argue that dynamic social encoding does not necessarily imply dynamic social activation. The same interaction context may require different activation strengths across future horizons and scene densities: social cues should be strengthened when interaction evidence is strong, but suppressed when they are weak or noisy. To address this issue, we propose GEAR, a generation-aware bias activation model for human trajectory prediction. Built upon a bias-decomposed trajectory generation formulation, GEAR dynamically activates the individual-motion and social-resonance bias terms at each future step before final trajectory composition. This allows the model to explicitly control when and how strongly individual and social bias components participate in generation. Experiments on ETH-UCY, SDD, and NBA show that GEAR consistently improves the resonance-based baseline and achieves competitive state-of-the-art performance. Further analyses of activation patterns and density-grouped errors validate the importance of calibrating encoded social context during trajectory generation. Our code is available at https://github.com/11isnotavailable/GEAR.git.",
+    "status": "found"
+  },
+  "2609.13779": {
+    "arxiv_id": "2609.13779",
+    "title": "Force-Aware Reinforcement Learning with Hybrid Sensorless Force Estimation for Wheeled-Legged Loco-Manipulation",
+    "authors": [
+      "Xuanqi Zeng",
+      "Jiaming Wang",
+      "Tianlin Zhang",
+      "Lingwei Zhang",
+      "Botian Xu",
+      "Weipeng Xia",
+      "Zhongyu Li",
+      "Yun-Hui Liu"
+    ],
+    "submission_date": "2026-09-12T07:46:53Z",
+    "latest_updated": "2026-09-12T07:46:53Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13779v1"
+    ],
+    "abstract": "Force-controlled loco-manipulation requires a whole-body policy to coordinate locomotion and arm motion while regulating end-effector interaction forces. This is challenging under floating-base dynamics and changing support contacts, particularly when end-effector force/torque sensing is unavailable for control. This paper presents a force-aware reinforcement learning approach with hybrid sensorless force estimation for wheeled-legged loco-manipulation. The proposed method provides a structured estimate of the end-effector force as an explicit policy observation, enabling force-guided contact behavior without using an end-effector force/torque sensor for control. The force estimate is obtained by combining generalized momentum observation, contact-constrained wrench projection, and temporal residual learning: the model-based components extract the physically structured part of the whole-body disturbance, while the residual network compensates the remaining motion-dependent bias. The estimated force is integrated into a mode-conditioned whole-body policy with an axis-wise force/position selector, allowing free-space motion, pure force regulation, and hybrid force/position control within one controller. Simulation results demonstrate improved sensorless force estimation and force-control performance. Hardware experiments further validate the proposed controller through quantitative valve-rotation and hybrid wiping evaluations, together with force-guided door opening and zero-force human-guided motion on a real wheeled-legged platform.",
+    "status": "found"
+  },
+  "2609.13780": {
+    "arxiv_id": "2609.13780",
+    "title": "Mechanizing Gödel's Incompleteness Theorems and Provability Logic",
+    "authors": [
+      "Shogo Saitou",
+      "Mashu Noguchi"
+    ],
+    "submission_date": "2026-09-12T07:50:39Z",
+    "latest_updated": "2026-09-15T03:57:07Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2609.13780v1",
+      "2609.13780v2"
+    ],
+    "abstract": "We mechanized proof of Gödel's first and second incompleteness theorems, Solovay's arithmetical completeness theorem of \\mathbf{GL}, and related results in the Lean 4 theorem prover.",
+    "status": "found"
+  },
+  "2609.13781": {
+    "arxiv_id": "2609.13781",
+    "title": "PQLN: Post-Quantum Security for the Bitcoin Lightning Network's Off-Chain Surfaces",
+    "authors": [
+      "Ahmet Kurt",
+      "Abdul-Salem Beibitkhan",
+      "Yacoub Hanna",
+      "Abdullah Aydeger"
+    ],
+    "submission_date": "2026-09-12T07:51:22Z",
+    "latest_updated": "2026-09-12T07:51:22Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13781v1"
+    ],
+    "abstract": "A cryptographically relevant quantum computer will break the elliptic-curve cryptography behind Bitcoin and its Lightning Network, the most widely used payment channel network. Even a post-quantum consensus upgrade of Bitcoin would not cover Lightning's off-chain surfaces, so its gossip, peer transport, invoices, payment onions, and offers need separate protection. An adversary can already record Lightning's encrypted traffic today and decrypt it once such a computer exists. Lightning can therefore move to post-quantum cryptography now, without waiting for Bitcoin, and stop such harvest-now-decrypt-later attacks along with node impersonation, invoice forgery, and payment deanonymization. In this paper, we propose PQLN, a hybrid post-quantum extension of Lightning that protects all of these surfaces with the lattice-based standards ML-DSA and ML-KEM. PQLN distributes post-quantum node identities through Lightning's gossip, hybridizes the transport handshake, adds post-quantum signatures to invoices, commits post-quantum keys in offers, and makes payment onions hybrid. Since post-quantum material is much larger than its elliptic-curve counterpart, we introduce techniques that fit it into Lightning's existing message formats and size limits. We analyze the security of PQLN against a quantum adversary and implement it in rust-lightning, a major Lightning implementation. Our evaluation with real Lightning nodes shows that PQLN nodes interoperate with unmodified nodes. The added cryptographic operations take at most 0.33 milliseconds, and the main cost is communication, since gossip data grows about tenfold with ML-DSA and about fourfold with the smaller Falcon. To our knowledge, PQLN is the first post-quantum design, implementation, and evaluation for Lightning.",
+    "status": "found"
+  },
+  "2609.13782": {
+    "arxiv_id": "2609.13782",
+    "title": "Nuclear mass prediction using bidirectional recurrent neural networks with isotopic and isotonic chain correlations",
+    "authors": [
+      "P. Li",
+      "Y. F. Niu",
+      "F. Q. Chen",
+      "Z. M. Niu"
+    ],
+    "submission_date": "2026-09-12T07:53:21Z",
+    "latest_updated": "2026-09-12T07:53:21Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13782v1"
+    ],
+    "abstract": "Nuclear masses are fundamental quantities in nuclear physics, providing essential information for understanding nuclear structure, decay properties, and reaction processes. Here we develop a bidirectional recurrent neural network (Bi-RNN) that naturally incorporates sequential correlations along isotopic and isotonic chains for nuclear mass prediction. The model achieves a root-mean-square (rms) deviation of 78 keV for binding energies of 2339 nuclei with known masses, a 45% improvement over a conventional artificial neural network (ANN) with comparable parameter count. The Bi-RNN also delivers consistent accuracy across different odd-even parity groups and yields an rms of 99 keV for $Q_β$ values without explicit training, demonstrating that recurrent correlations encode physically relevant information beyond individual nuclear features. Extrapolation tests on 292 nuclei updated from AME2003 to AME2012 and on 109 nuclei updated from AME2012 to AME2020 reveal that the Bi-RNN maintains stable performance, substantially outperforming WS4, ANN, and earlier AME evaluations. These results demonstrate the power of recurrent architectures in capturing correlations along nuclear chains and suggest Bi-RNN as a robust tool for studying nuclear masses.",
+    "status": "found"
+  },
+  "2609.13783": {
+    "arxiv_id": "2609.13783",
+    "title": "Ground states to bi-harmonic nonlinear Schrödinger equations with competing dispersion",
+    "authors": [
+      "Christian Klein",
+      "Svetlana Roudenko"
+    ],
+    "submission_date": "2026-09-12T07:54:55Z",
+    "latest_updated": "2026-09-12T07:54:55Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13783v1"
+    ],
+    "abstract": "We study ground-state solutions of the 4th order nonlinear Schrödinger equation with mixed dispersion via the elliptic profile equation $Δ^2 Q + 2a ΔQ + bQ - |Q|^αQ=0$, focusing on symmetry breaking of least-action ground states in 2D in the regime $a=1$, $b=1+ε$, $0<ε\\ll 1$, where nonradiality was proved by Lenzmann and Weth [26]. We establish a quotient-to-mass relation converting small-$ε$ asymptotics of the Weinstein quotient into mass asymptotics, in any dimension and symmetry class. In 1D we prove the sharp small-$ε$ rate for the quotient for every $α>0$ and deduce the rates for the mass, action and potential norm. In two and higher dimensions the same relation, combined with the quotient asymptotics of Lenzmann-Weth [26] and Mandel-Oliveira e Silva [27], gives the mass rates for the Knapp-type nonradial and the radial ground states. The resulting threshold $α_K(d)=8/(d+1)$ coincides for $d\\leq3$ with the existence of normalized minimizers threshold of Fernández-Jeanjean-Mandel-Mariş [16], connecting the least-action and mass-constrained formulations. We complement this with a detailed numerical study. For the cubic nonlinearity we construct a nonradial branch from a Knapp-type example, compare it with radial and angular-mode branches, and verify the predicted rates. For the quartic nonlinearity, turning points and branching are present in the mass-energy diagrams in radial or two- and four-peak nonradial solutions. Here, although least-action ground states are nonradial for small $ε$, the normalized ground states of the same mass appear radial, a consequence of branching. For $α\\geq4$ we find only radial ground states, consistent with the conjectured sharp form of the Stein-Tomas inequality on $\\mathbb S^1$, equivalent to the radial and nonradial masses having the same leading coefficient.",
+    "status": "found"
+  },
+  "2609.13784": {
+    "arxiv_id": "2609.13784",
+    "title": "On the Structure of Low-Dimensional Poisson Algebras over Arbitrary Fields",
+    "authors": [
+      "A. V. Petrov",
+      "O. O. Pypka"
+    ],
+    "submission_date": "2026-09-12T07:55:10Z",
+    "latest_updated": "2026-09-12T07:55:10Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13784v1"
+    ],
+    "abstract": "We investigate the structure of Poisson algebras of dimensions at most three over an arbitrary field. Our approach is based on the internal structure of the associated commutative associative and Lie algebras, with particular emphasis on the associative square $P^2$, the derived Lie algebra $[P,P]$, the Lie center, the associative annihilator, idempotents, ideals and decomposability. We obtain a complete classification in dimensions one and two and give a structural classification in dimension three. In dimension two, we prove that the associative and Lie multiplications cannot be simultaneously non-zero. In dimension three, the classification is organized according to the dimension and position of the derived Lie algebra and, in the case of trivial Lie multiplication, according to the dimension of $P^2$. The arbitrary-field setting leads to phenomena which do not occur over the complex field. In particular, quadratic and cubic field extensions appear naturally in the classification, some families depend on equivalence classes of symmetric bilinear forms and on the structure of three-dimensional Lie algebras over the ground field, and characteristic $2$ gives an additional family of Poisson algebras with both multiplications non-zero. Over the complex field, the resulting classification specializes, up to changes of basis and notation, to the known classifications in dimensions at most three.",
+    "status": "found"
+  },
+  "2609.13785": {
+    "arxiv_id": "2609.13785",
+    "title": "Partition Scores Are Not System Scores: Deployment-Fidelity Gaps in Decomposed Algorithm Selection",
+    "authors": [
+      "Jiachen Zhang",
+      "Yu Tang",
+      "Li Zhu"
+    ],
+    "submission_date": "2026-09-12T07:55:42Z",
+    "latest_updated": "2026-09-12T07:55:42Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13785v1"
+    ],
+    "abstract": "Oracle-style quantities, including virtual best solvers, selected-portfolio VBS, virtual-best encodings, and best-in-family summaries, are widely reported as upper bounds on what a deployable selector could achieve. In decomposed algorithm selection, an analogous partition-level score grants an oracle choice of the best algorithm within the selected family; once the family selector is fixed, the deployable system must replace that within-family oracle with a learned within-family selector. We define the deployment-fidelity gap G(R) as the difference between partition-level and deployable end-to-end utility and derive two accounting consequences: a per-instance margin-regret stability condition that tells us when a partition-time family choice is deployment-optimal, and a sharp partition-only identification interval that, when it strictly crosses zero, prevents the partition-level report from certifying the deployable winner. Across five public algorithm-selection benchmarks spanning tabular AutoML and combinatorial CSP/SAT, every decomposed pipeline has positive G(R), ranging from 0.012 on TabZilla to 0.13 on PROTEUS-2014. Four of ten decomposed-versus-flat decisions have sign-changing point estimates; on PROTEUS-2014, a 33-point partition advantage shrinks to a 20-point end-to-end advantage. A training-side validation gap-correction diagnostic recovers the point-estimate deployable sign on all four sign-changing cells; it is a reporting aid, not a substitute for direct end-to-end evaluation. Partition and end-to-end scores should be reported side by side.",
+    "status": "found"
+  },
+  "2609.13786": {
+    "arxiv_id": "2609.13786",
+    "title": "What Makes a Great Co-Worker in an AI-Native Workplace?",
+    "authors": [
+      "Rudrajit Choudhuri",
+      "Max Meijer",
+      "Sam Yu-Te Lee",
+      "Cinoo Lee",
+      "Caolan Mannion",
+      "Peter Jahn",
+      "Anita Sarma",
+      "Christian Bird",
+      "Alice Ferng"
+    ],
+    "submission_date": "2026-09-12T08:01:37Z",
+    "latest_updated": "2026-09-12T08:01:37Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13786v1"
+    ],
+    "abstract": "As knowledge work grows interdependent between humans and AI, we ask what makes a great co-worker in an AI-native workplace. To answer this, we conducted 22 interviews and a large-scale mixed-methods survey of 1,534 knowledge workers at a multinational technology company. We contribute BACI, a framework of 75 co-worker qualities that apply to humans and AI, spanning Benevolence, Ability, Cooperativeness, and Integrity. Comparing priorities for humans and AI identified 11 co-worker archetypes and revealed disagreement over whether AI should have warmth, take initiative, or own outcomes. We also show how priorities for these archetypes varied with workers' individual characteristics. Lastly, we contribute a taxonomy of AI work etiquette capturing the obligations co-workers expect of one another when preparing, sharing, and taking responsibility for AI-supported work. Based on these findings, we derive implications to inform worker-centric AI and workplace design.",
+    "status": "found"
+  },
+  "2609.13787": {
+    "arxiv_id": "2609.13787",
+    "title": "Thermodynamic geometry of inclusion statistics",
+    "authors": [
+      "M. H. Naghizadeh Ardabili",
+      "Omid Yahyayi Monem",
+      "Habib Esmaili",
+      "Zahra Ebadi",
+      "Hosein Mohammadzadeh"
+    ],
+    "submission_date": "2026-09-12T08:03:24Z",
+    "latest_updated": "2026-09-12T08:03:24Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13787v1"
+    ],
+    "abstract": "We investigate the thermodynamic geometry of an ideal quantum gas obeying inclusion statistics, characterized by a negative statistical parameter $g < 0$. In this framework the grand-canonical partition function admits a finite maximum fugacity, and the thermodynamic scalar curvature $R$ is strictly positive for all $g < 0$, reflecting effective attractive statistical interactions analogous to those of a bosonic system. As the fugacity approaches its maximum value, $R$ diverges, signaling a phase transition of the Bose-Einstein condensation type. A key distinction from the ordinary ideal Bose gas is that the condensation temperature is elevated relative to the bosonic case, and finite-temperature condensation occurs even in the dimensional regime $1/2 < D/σ\\leq 1$ where standard bosons do not condense, while for $D/σ\\leq 1/2$ the transition temperature vanishes. Three independent criteria; divergence of $R$, the maximum fugacity singularity, and the non-analytic cusp in the specific heat, coincide at the same condensation point, confirming the thermodynamic consistency of the transition.",
+    "status": "found"
+  },
+  "2609.13788": {
+    "arxiv_id": "2609.13788",
+    "title": "Bicategorical Idempotent Completion",
+    "authors": [
+      "Tessa Kammermeier"
+    ],
+    "submission_date": "2026-09-12T08:03:24Z",
+    "latest_updated": "2026-09-12T08:03:24Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13788v1"
+    ],
+    "abstract": "In recent years, higher categorical variants of idempotents have become an object of interest. Notably, they appear when categorifying algebraic structures motivated by mathematical physics. Working in the setting of bicategories, we give a rigorous definition of the bicategorical idempotent completion as outlined by Gaiotto and Johnson-Freyd in arXiv:1905.09566. We show that this agrees with the Cauchy completion of a locally idempotent complete bicategory in the sense of Lawvere.",
+    "status": "found"
+  },
+  "2609.13789": {
+    "arxiv_id": "2609.13789",
+    "title": "PPDL: A Real-world Industrial User Retention Ratio Forecasting Framework Integrating Physical Priors with Deep Learning",
+    "authors": [
+      "Zibo Zhao",
+      "Zhengxiong Guan",
+      "Chaoli Zhang",
+      "Linyuan Geng",
+      "Xuanbing Zhu",
+      "Zhonglong Zheng",
+      "Fan Wu"
+    ],
+    "submission_date": "2026-09-12T08:04:45Z",
+    "latest_updated": "2026-09-12T08:04:45Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13789v1"
+    ],
+    "abstract": "In multi-channel paid user acquisition, early and accurate prediction of user retention at the channel level is crucial for optimizing budget allocation. User retention curves display a pronounced temporal pattern: an initial period of high churn transitions into long-term stability. This pattern is further characterized by regular fluctuations attributable to seasonality and exhibits high serial autocorrelation. These intrinsic properties make such curves highly suitable for analysis within a time-series forecasting framework. However, forecasting user retention ratio for large-scale short-video platform faces three major challenges: significant heterogeneity across channels, pronounced global trend of decay followed by saturation, and short look-back windows. To address these challenges, we propose PPDL, a novel forecasting framework that integrates physical priors with deep learning. We first introduce a trend-residual decomposition component. The trend is modeled using the Weibull distribution, whose parameters are learned via a Multilayer Perceptron (MLP). Secondly, for the residual component, we design an auxiliary embedding module on top of a deep learning backbone to maintain the channel identity awareness. Finally, to enhance the model's sensitivity to trends, we design a Multiscale Trend-penalized loss function. The proposed approach PPDL is validated through comprehensive experiments on industrial-scale datasets, covering three applications with an average of 30+ channels each. Experimental results show that PPDL achieves improvements across different backbones and significantly outperforms existing online solutions.",
+    "status": "found"
+  },
+  "2609.13790": {
+    "arxiv_id": "2609.13790",
+    "title": "Binary Optimization with Complex Constraints via Quantum Approximate Multi-Objective Optimization",
+    "authors": [
+      "Andres Ruiz",
+      "Soumyadip Ghosh",
+      "Stefan Woerner"
+    ],
+    "submission_date": "2026-09-12T08:07:15Z",
+    "latest_updated": "2026-10-05T16:46:34Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2609.13790v1",
+      "2609.13790v2"
+    ],
+    "abstract": "We show that a class of binary optimization problems with complex non-quadratic objectives or constraints can be reformulated as multi-objective quadratic unconstrained binary optimization problems. When the objective and constraints depend on a small number of quadratic features and are monotone with respect to their preferred directions, at least one globally optimal solution lies in the Pareto set of the associated MO-QUBO. This enables the constraints to be evaluated classically on Pareto-optimal candidates rather than encoded as penalties. We demonstrate the approach for binary portfolio optimization under a Conditional Value-at-Risk constraint. Using Quantum Approximate Multi-Objective Optimization on an illustrative 100-asset instance, we approximate the mean-variance Pareto front using an IBM Quantum computer and derive mean-CVaR fronts through classical post-processing. The hardware results recover the overall structure of the classical front and yield near-optimal feasible portfolios for different risk bounds.",
+    "status": "found"
+  },
+  "2609.13791": {
+    "arxiv_id": "2609.13791",
+    "title": "Restore What Matters: Lessons from Joint Restoration and Recognition",
+    "authors": [
+      "Lanqing Guo",
+      "Xijun Wang",
+      "Minchul Kim",
+      "Yu Yuan",
+      "Wes Robbins",
+      "Xingguang Zhang",
+      "Nicholas Chimitt",
+      "Stanley H. Chan",
+      "Zhangyang Wang",
+      "Xiaoming Liu"
+    ],
+    "submission_date": "2026-09-12T08:08:08Z",
+    "latest_updated": "2026-09-12T08:08:08Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13791v1"
+    ],
+    "abstract": "Recognition pipelines typically adopt a restore-then-recognize workflow, yet decades of experience show that generating visually pleasing images seldom translates to improved recognition. We propose a Joint Restoration-for-Recognition (JR$^2$) paradigm: restore only what downstream tasks truly require, with task signals dictating where, how much, and whether restoration is necessary. JR$^2$ rests on three pillars: (i) Physics, employing optics-accurate turbulence simulation, extensible to blur and noise, to ground restoration in real image formation; (ii) Neuroscience, drawing on selective attention and neuroplasticity to direct model capacity toward identity-critical regions and frames while bypassing already-clean inputs; and (iii) Vision & Learning, coupling recognition loss end-to-end through restoration and alignment so that low-level edits maximize high-level identity stability. Evaluations on IARPA-BRIAR show consistent improvements (e.g., TAR@0.01% FAR +0.6; FNIR@1% FPIR -2.5), while a quality gate skips ~70% of clean frames, reducing cost. Ablations confirm physics priors enhance realism, joint training prevents catastrophic forgetting, and selective restoration suffices in many cases. We conclude that better-looking images are neither necessary nor sufficient; restoration modules must be task-driven, selective, and physically aware. Code, pretrained models, and recipes are provided for integration.",
+    "status": "found"
+  },
+  "2609.13792": {
+    "arxiv_id": "2609.13792",
+    "title": "The VoiceMOS Challenge 2026: Evaluating Speech Enhancement, Emotional TTS and Accented TTS Systems",
+    "authors": [
+      "Wen-Chin Huang",
+      "Wei Wang",
+      "Marvin Sach",
+      "Xiaoxue Gao",
+      "Nicholas Sanders",
+      "Erica Cooper",
+      "Toda Tomoki"
+    ],
+    "submission_date": "2026-09-12T08:11:02Z",
+    "latest_updated": "2026-09-12T08:11:02Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13792v1"
+    ],
+    "abstract": "We present the results of the VoiceMOS Challenge 2026, the fifth edition of a scientific challenge on automatic prediction of subjective speech assessments. After expanding the scope to music and general audio in 2025, we refocused the evaluation target on speech and organized three tracks: prediction of absolute and comparative category ratings for enhanced speech, prediction of naturalness and emotion-related tasks for emotional text-to-speech systems, and prediction of speaker and accent similarity for codec-based speech synthesis systems. The challenge attracted a total of 18 teams worldwide, with most teams successfully surpassing the provided baselines. We summarize the challenge results, representative top-performing systems, participant feedback, and directions for future editions.",
+    "status": "found"
+  },
+  "2609.13793": {
+    "arxiv_id": "2609.13793",
+    "title": "Unrestricted 2DFA simulation of 1NFAs: A Quadratic Limitation to a New Lower Bound",
+    "authors": [
+      "Kehinde Adeogun",
+      "Christos A. Kapoutsis"
+    ],
+    "submission_date": "2026-09-12T08:12:11Z",
+    "latest_updated": "2026-09-15T13:44:55Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2609.13793v1",
+      "2609.13793v2"
+    ],
+    "abstract": "A recent result by the present authors established a quadratic lower bound, in the worst case, for the increase in the number of states when a one-way nondeterministic finite automaton is converted to a two-way deterministic finite automaton. Although this simply matched a well-known pre-existing quadratic lower bound by Chrobak, it used a distinct proof method. We show that, much like Chrobak's, this new method is also unable to deliver any lower bound strictly greater than quadratic.",
+    "status": "found"
+  }
+}

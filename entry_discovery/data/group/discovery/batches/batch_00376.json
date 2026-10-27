@@ -1,0 +1,429 @@
+{
+  "2601.20676": {
+    "arxiv_id": "2601.20676",
+    "title": "Efficient Multimodal Planning Agent for Visual Question-Answering",
+    "authors": [
+      "Zhuo Chen",
+      "Xinyu Geng",
+      "Xinyu Wang",
+      "Yong Jiang",
+      "Zhen Zhang",
+      "Pengjun Xie",
+      "Kewei Tu"
+    ],
+    "submission_date": "2026-01-28T14:58:59Z",
+    "latest_updated": "2026-01-28T14:58:59Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.20676v1"
+    ],
+    "abstract": "Visual Question-Answering (VQA) is a challenging multimodal task that requires integrating visual and textual information to generate accurate responses. While multimodal Retrieval-Augmented Generation (mRAG) has shown promise in enhancing VQA systems by providing more evidence on both image and text sides, the default procedure that addresses VQA queries, especially the knowledge-intensive ones, often relies on multi-stage pipelines of mRAG with inherent dependencies. To mitigate the inefficiency limitations while maintaining VQA task performance, this paper proposes a method that trains a multimodal planning agent, dynamically decomposing the mRAG pipeline to solve the VQA task. Our method optimizes the trade-off between efficiency and effectiveness by training the agent to intelligently determine the necessity of each mRAG step. In our experiments, the agent can help reduce redundant computations, cutting search time by over 60\\% compared to existing methods and decreasing costly tool calls. Meanwhile, experiments demonstrate that our method outperforms all baselines, including a Deep Research agent and a carefully designed prompt-based method, on average over six various datasets. Code will be released.",
+    "status": "found"
+  },
+  "2601.20677": {
+    "arxiv_id": "2601.20677",
+    "title": "Unconditional full linear convergence and quasi-optimal complexity of smoothed adaptive finite element methods",
+    "authors": [
+      "Philipp Bringmann",
+      "Christoph Lietz",
+      "Dirk Praetorius"
+    ],
+    "submission_date": "2026-01-28T15:03:07Z",
+    "latest_updated": "2026-07-24T15:26:27Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.20677v1",
+      "2601.20677v2"
+    ],
+    "abstract": "We present the first rigorous convergence analysis of the smoothed adaptive finite element method (S-AFEM) proposed in [Mulita, Giani, Heltai: SIAM J. Sci. Comput. 43, 2021]. S-AFEM modifies the classical adaptive finite element method (AFEM) by performing accurate discrete solves only on periodically determined mesh levels, while the intermediate levels employ a fixed number of cheap smoothing iterations. Numerical experiments in that work showed that this strategy generates adapted meshes comparable to those of AFEM at substantially lower computational cost. In this paper, we prove unconditional full R-linear convergence of a suitable quasi-error quantity and, for sufficiently small adaptivity parameters, optimal convergence rates with respect to the overall computational cost. The analysis requires only a mild uniform stability assumption on the employed smoother, satisfied by standard methods such as Richardson, Gauss-Seidel, conjugate gradient, and multigrid schemes. Our results apply to general second-order linear elliptic PDEs and show that S-AFEM retains all desired abstract convergence guarantees of AFEM while reducing the cumulative computational time. Numerical experiments validate the theory, analyze runtime performance, and underline the potential of S-AFEM for speed-up in AFEM computations.",
+    "status": "found"
+  },
+  "2601.20678": {
+    "arxiv_id": "2601.20678",
+    "title": "Helper-Assisted Coding for Gaussian Wiretap Channels: Deep Learning Meets PhySec",
+    "authors": [
+      "Vidhi Rana",
+      "Remi A. Chou",
+      "Taejoon Kim"
+    ],
+    "submission_date": "2026-01-28T15:04:50Z",
+    "latest_updated": "2026-01-28T15:04:50Z",
+    "revised_dates": null,
+    "venue": "in IEEE Transactions on Communications, vol. 73, no. 12, pp. 13199-13213, Dec. 2025",
+    "latest_version": 1,
+    "versions": [
+      "2601.20678v1"
+    ],
+    "abstract": "Consider the Gaussian wiretap channel, where a transmitter wishes to send a confidential message to a legitimate receiver in the presence of an eavesdropper. It is well known that if the eavesdropper experiences less channel noise than the legitimate receiver, then it is impossible for the transmitter to achieve positive secrecy rates. A known solution to this issue consists in involving a second transmitter, referred to as a helper, to help the first transmitter to achieve security. While such a solution has been studied for the asymptotic blocklength regime and via non-constructive coding schemes, in this paper, for the first time, we design explicit and short blocklength codes using deep learning and cryptographic tools to demonstrate the benefit and practicality of cooperation between two transmitters over the wiretap channel. Specifically, our proposed codes show strict improvement in terms of information leakage compared to existing codes that do not consider a helper. Our code design approach relies on a reliability layer, implemented with an autoencoder architecture based on the successive interference cancellation method, and a security layer implemented with universal hash functions. We also propose an alternative autoencoder architecture that significantly reduces training time by allowing the decoders to independently estimate messages without successively canceling interference by the receiver during training. Additionally, we show that our code design is also applicable to the multiple access wiretap channel with helpers, where two transmitters send confidential messages to the legitimate receiver.",
+    "status": "found"
+  },
+  "2601.20679": {
+    "arxiv_id": "2601.20679",
+    "title": "ShieldedCode: Learning Robust Representations for Virtual Machine Protected Code",
+    "authors": [
+      "Mingqiao Mo",
+      "Yunlong Tan",
+      "Hao Zhang",
+      "Heng Zhang",
+      "Yangfan He"
+    ],
+    "submission_date": "2026-01-28T15:07:08Z",
+    "latest_updated": "2026-01-28T15:07:08Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.20679v1"
+    ],
+    "abstract": "Large language models (LLMs) have achieved remarkable progress in code generation, yet their potential for software protection remains largely untapped. Reverse engineering continues to threaten software security, while traditional virtual machine protection (VMP) relies on rigid, rule-based transformations that are costly to design and vulnerable to automated analysis. In this work, we present the first protection-aware framework that learns robust representations of VMP-protected code. Our approach builds large-scale paired datasets of source code and normalized VM implementations, and introduces hierarchical dependency modeling at intra-, preceding-, and inter-instruction levels. We jointly optimize language modeling with functionality-aware and protection-aware contrastive objectives to capture both semantic equivalence and protection strength. To further assess resilience, we propose a protection effectiveness optimization task that quantifies and ranks different VM variants derived from the same source. Coupled with a two-stage continual pre-training and fine-tuning pipeline, our method enables models to generate, compare, and reason over protected code. Extensive experiments show that our framework significantly improves robustness across diverse protection levels, opening a new research direction for learning-based software defense. In this work, we present ShieldedCode, the first protection-aware framework that learns robust representations of VMP-protected code. Our method achieves 26.95% Pass@1 on L0 VM code generation compared to 22.58% for GPT-4o., and improves binary similarity detection Recall@1 by 10% over state of art methods like jTrans.",
+    "status": "found"
+  },
+  "2601.20680": {
+    "arxiv_id": "2601.20680",
+    "title": "Online Density-Based Clustering for Real-Time Narrative Evolution Monitorin",
+    "authors": [
+      "Ostap Vykhopen",
+      "Viktoria Skorik",
+      "Maksym Tereshchenko",
+      "Veronika Solopova"
+    ],
+    "submission_date": "2026-01-28T15:07:30Z",
+    "latest_updated": "2026-02-09T19:47:14Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.20680v1",
+      "2601.20680v2"
+    ],
+    "abstract": "Automated narrative intelligence systems for social media monitoring face significant scalability challenges when relying on batch clustering methods to process continuous data streams. We investigate replacing offline HDBSCAN with online density-based clustering algorithms in a production narrative report generation pipeline that processes large volumes of multilingual social media data. While HDBSCAN effectively discovers hierarchical clusters and handles noise, its batch-only nature requires full retraining for each time window, limiting scalability and real-time adaptability. We evaluate online clustering methods with respect to cluster quality, computational efficiency, memory footprint, and integration with downstream narrative extraction. Our evaluation combines standard clustering metrics, narrative-specific measures, and human validation of cluster correctness to assess both structural quality and semantic interpretability. Experiments using sliding-window simulations on historical data from the Ukrainian information space reveal trade-offs between temporal stability and narrative coherence, with DenStream achieving the strongest overall performance. These findings bridge the gap between batch-oriented clustering approaches and the streaming requirements of large-scale narrative monitoring systems.",
+    "status": "found"
+  },
+  "2601.20681": {
+    "arxiv_id": "2601.20681",
+    "title": "Co-Designed Adaptive Quantum State Preparation Protocols",
+    "authors": [
+      "Mafalda Ramôa",
+      "Luis Paulo Santos",
+      "Nicholas J. Mayhall",
+      "Edwin Barnes",
+      "Sophia E. Economou"
+    ],
+    "submission_date": "2026-01-28T15:07:56Z",
+    "latest_updated": "2026-01-28T15:07:56Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.20681v1"
+    ],
+    "abstract": "We propose a co-designed variant of ADAPT-VQE (Co-ADAPT-VQE) where the quantum hardware is taken into account in the construction of the ansatz. This framework can be readily used to optimize state preparation circuits for any device, addressing shortcomings such as limited connectivity, short coherence times, and variable gate errors. We exemplify the impact of Co-ADAPT-VQE by creating state preparation circuits for devices with linear nearest-neighbor (LNN) connectivity. We show a reduction of the CNOT count of the final circuits by up to 97% for 12-14 qubit systems, with the impact being greater for larger and more strongly correlated systems. Surprisingly, the circuits created by Co-ADAPT-VQE provide an over 70% CNOT count reduction with respect to the original ADAPT-VQE in all-to-all connectivity, despite being restricted to LNN qubit interactions.",
+    "status": "found"
+  },
+  "2601.20682": {
+    "arxiv_id": "2601.20682",
+    "title": "Tendon-based modelling, estimation and control for a simulated high-DoF anthropomorphic hand model",
+    "authors": [
+      "Péter Polcz",
+      "Katalin Schäffer",
+      "Miklós Koller"
+    ],
+    "submission_date": "2026-01-28T15:10:02Z",
+    "latest_updated": "2026-01-28T15:10:02Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.20682v1"
+    ],
+    "abstract": "Tendon-driven anthropomorphic robotic hands often lack direct joint angle sensing, as the integration of joint encoders can compromise mechanical compactness and dexterity. This paper presents a computational method for estimating joint positions from measured tendon displacements and tensions. An efficient kinematic modeling framework for anthropomorphic hands is first introduced based on the Denavit-Hartenberg convention. Using a simplified tendon model, a system of nonlinear equations relating tendon states to joint positions is derived and solved via a nonlinear optimization approach. The estimated joint angles are then employed for closed-loop control through a Jacobian-based proportional-integral (PI) controller augmented with a feedforward term, enabling gesture tracking without direct joint sensing. The effectiveness and limitations of the proposed estimation and control framework are demonstrated in the MuJoCo simulation environment using the Anatomically Correct Biomechatronic Hand, featuring five degrees of freedom for each long finger and six degrees of freedom for the thumb.",
+    "status": "found"
+  },
+  "2601.20683": {
+    "arxiv_id": "2601.20683",
+    "title": "Polite But Boring? Trade-offs Between Engagement and Psychological Reactance to Chatbot Feedback Styles",
+    "authors": [
+      "Samuel Rhys Cox",
+      "Joel Wester",
+      "Niels van Berkel"
+    ],
+    "submission_date": "2026-01-28T15:10:59Z",
+    "latest_updated": "2026-01-28T15:10:59Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.20683v1"
+    ],
+    "abstract": "As conversational agents become increasingly common in behaviour change interventions, understanding optimal feedback delivery mechanisms becomes increasingly important. However, choosing a style that both lessens psychological reactance (perceived threats to freedom) while simultaneously eliciting feelings of surprise and engagement represents a complex design problem. We explored how three different feedback styles: 'Direct', 'Politeness', and 'Verbal Leakage' (slips or disfluencies to reveal a desired behaviour) affect user perceptions and behavioural intentions. Matching expectations from literature, the 'Direct' chatbot led to lower behavioural intentions and higher reactance, while the 'Politeness' chatbot evoked higher behavioural intentions and lower reactance. However, 'Politeness' was also seen as unsurprising and unengaging by participants. In contrast, 'Verbal Leakage' evoked reactance, yet also elicited higher feelings of surprise, engagement, and humour. These findings highlight that effective feedback requires navigating trade-offs between user reactance and engagement, with novel approaches such as 'Verbal Leakage' offering promising alternative design opportunities.",
+    "status": "found"
+  },
+  "2601.20684": {
+    "arxiv_id": "2601.20684",
+    "title": "Spectral stability of shock profiles for the Navier-Stokes-Poisson system",
+    "authors": [
+      "Wanyong Shim"
+    ],
+    "submission_date": "2026-01-28T15:11:08Z",
+    "latest_updated": "2026-01-30T03:30:33Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.20684v1",
+      "2601.20684v2"
+    ],
+    "abstract": "We investigate the spectral stability of small-amplitude shock profiles for the one-dimensional isothermal Navier-Stokes-Poisson system, which describes ion dynamics in a collision-dominated plasma. Specifically, we establish (i) bounds on the essential spectrum, (ii) bounds on the point spectrum, and (iii) simplicity of the zero eigenvalue for the linearized operator about the profile in $L^2$. The result in (i) shows that the zero eigenvalue arising from translation invariance is embedded in the essential spectrum. Consequently, the standard Evans function approach cannot be applied directly to prove (iii). To resolve this, we employ an Evans-function framework that extends into regions of the essential spectrum, thereby enabling us to compute the derivative of the Evans function at the origin. Our result establishes that this derivative admits a factorization into two factors: one associated with transversality of the connecting profile and the other with hyperbolic stability of the corresponding shock of the quasi-neutral Euler system. We further show that both factors are nonzero, which implies simplicity of the zero eigenvalue.",
+    "status": "found"
+  },
+  "2601.20685": {
+    "arxiv_id": "2601.20685",
+    "title": "Divergent Fourier Series with Respect to Biorthonormal Systems in Function Spaces Near $L^1$",
+    "authors": [
+      "Nikoloz Devdariani"
+    ],
+    "submission_date": "2026-01-28T15:12:57Z",
+    "latest_updated": "2026-01-28T15:12:57Z",
+    "revised_dates": null,
+    "venue": "Trans. A. Razmadze Math. Inst. 179 (2025), no. 3, 381-391",
+    "latest_version": 1,
+    "versions": [
+      "2601.20685v1"
+    ],
+    "abstract": "In this paper, we generalize Bochkarev's theorem, which states that for any uniformly bounded biorthonormal system $Φ$, there exists a Lebesgue integrable function whose Fourier series with respect to the system $Φ$ diverges on a set of positive measure. We find the class of variable exponent Lebesgue spaces $L^{p(\\cdot)}([0,1]^n)$, where $1 < p(x) < \\infty$ almost everywhere on $[0,1]^n$, such that the aforementioned Bochkarev's theorem holds.",
+    "status": "found"
+  },
+  "2601.20686": {
+    "arxiv_id": "2601.20686",
+    "title": "MuRAL-CPD: Active Learning for Multiresolution Change Point Detection",
+    "authors": [
+      "Stefano Bertolasi",
+      "Diego Carrera",
+      "Diego Stucchi",
+      "Pasqualina Fragneto",
+      "Luigi Amedeo Bianchi"
+    ],
+    "submission_date": "2026-01-28T15:14:37Z",
+    "latest_updated": "2026-01-28T15:14:37Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.20686v1"
+    ],
+    "abstract": "Change Point Detection (CPD) is a critical task in time series analysis, aiming to identify moments when the underlying data-generating process shifts. Traditional CPD methods often rely on unsupervised techniques, which lack adaptability to task-specific definitions of change and cannot benefit from user knowledge. To address these limitations, we propose MuRAL-CPD, a novel semi-supervised method that integrates active learning into a multiresolution CPD algorithm. MuRAL-CPD leverages a wavelet-based multiresolution decomposition to detect changes across multiple temporal scales and incorporates user feedback to iteratively optimize key hyperparameters. This interaction enables the model to align its notion of change with that of the user, improving both accuracy and interpretability. Our experimental results on several real-world datasets show the effectiveness of MuRAL-CPD against state-of-the-art methods, particularly in scenarios where minimal supervision is available.",
+    "status": "found"
+  },
+  "2601.20687": {
+    "arxiv_id": "2601.20687",
+    "title": "Positive-Unlabeled Reinforcement Learning Distillation for On-Premise Small Models",
+    "authors": [
+      "Zhiqiang Kou",
+      "Junyang Chen",
+      "Xin-Qiang Cai",
+      "Xiaobo Xia",
+      "Ming-Kun Xie",
+      "Dong-Dong Wu",
+      "Biao Liu",
+      "Yuheng Jia",
+      "Xin Geng",
+      "Masashi Sugiyama",
+      "Tat-Seng Chua"
+    ],
+    "submission_date": "2026-01-28T15:14:50Z",
+    "latest_updated": "2026-01-28T15:14:50Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.20687v1"
+    ],
+    "abstract": "Due to constraints on privacy, cost, and latency, on-premise deployment of small models is increasingly common. However, most practical pipelines stop at supervised fine-tuning (SFT) and fail to reach the reinforcement learning (RL) alignment stage. The main reason is that RL alignment typically requires either expensive human preference annotation or heavy reliance on high-quality reward models with large-scale API usage and ongoing engineering maintenance, both of which are ill-suited to on-premise settings. To bridge this gap, we propose a positive-unlabeled (PU) RL distillation method for on-premise small-model deployment. Without human-labeled preferences or a reward model, our method distills the teacher's preference-optimization capability from black-box generations into a locally trainable student. For each prompt, we query the teacher once to obtain an anchor response, locally sample multiple student candidates, and perform anchor-conditioned self-ranking to induce pairwise or listwise preferences, enabling a fully local training loop via direct preference optimization or group relative policy optimization. Theoretical analysis justifies that the induced preference signal by our method is order-consistent and concentrates on near-optimal candidates, supporting its stability for preference optimization. Experiments demonstrate that our method achieves consistently strong performance under a low-cost setting.",
+    "status": "found"
+  },
+  "2601.20688": {
+    "arxiv_id": "2601.20688",
+    "title": "Grover's Search-Inspired Quantum Reinforcement Learning for Massive MIMO User Scheduling",
+    "authors": [
+      "Ruining Fan",
+      "Xingyu Huang",
+      "Mouli Chakraborty",
+      "Avishek Nag",
+      "Anshu Mukherjee"
+    ],
+    "submission_date": "2026-01-28T15:14:51Z",
+    "latest_updated": "2026-05-08T13:53:04Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.20688v1",
+      "2601.20688v2"
+    ],
+    "abstract": "The efficient user scheduling policy in the massive Multiple Input Multiple Output (mMIMO) system remains a significant challenge in the field of 5G and Beyond 5G (B5G) due to its high computational complexity, scalability, and Channel State Information (CSI) overhead. This paper proposes a novel Grover's search-inspired Quantum Reinforcement Learning (QRL) framework for mMIMO user scheduling. The QRL agent can explore the exponentially large scheduling space effectively by applying Grover's search to the reinforcement learning process. The model is implemented using our designed quantum-gate-based circuit, which imitates the layered architecture of reinforcement learning, where quantum operations act as policy updates and decision-making units. Moreover, the simulation results demonstrate that the proposed method achieves proper convergence and significantly outperforms classical Convolutional Neural Networks (CNN) and Quantum Deep Learning (QDL) benchmarks.",
+    "status": "found"
+  },
+  "2601.20689": {
+    "arxiv_id": "2601.20689",
+    "title": "Decoupling Perception and Calibration: Label-Efficient Image Quality Assessment Framework",
+    "authors": [
+      "Xinyue Li",
+      "Zhichao Zhang",
+      "Zhiming Xu",
+      "Shubo Xu",
+      "Xiongkuo Min",
+      "Yitong Chen",
+      "Guangtao Zhai"
+    ],
+    "submission_date": "2026-01-28T15:15:17Z",
+    "latest_updated": "2026-01-28T15:15:17Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.20689v1"
+    ],
+    "abstract": "Recent multimodal large language models (MLLMs) have demonstrated strong capabilities in image quality assessment (IQA) tasks. However, adapting such large-scale models is computationally expensive and still relies on substantial Mean Opinion Score (MOS) annotations. We argue that for MLLM-based IQA, the core bottleneck lies not in the quality perception capacity of MLLMs, but in MOS scale calibration. Therefore, we propose LEAF, a Label-Efficient Image Quality Assessment Framework that distills perceptual quality priors from an MLLM teacher into a lightweight student regressor, enabling MOS calibration with minimal human supervision. Specifically, the teacher conducts dense supervision through point-wise judgments and pair-wise preferences, with an estimate of decision reliability. Guided by these signals, the student learns the teacher's quality perception patterns through joint distillation and is calibrated on a small MOS subset to align with human annotations. Experiments on both user-generated and AI-generated IQA benchmarks demonstrate that our method significantly reduces the need for human annotations while maintaining strong MOS-aligned correlations, making lightweight IQA practical under limited annotation budgets.",
+    "status": "found"
+  },
+  "2601.20690": {
+    "arxiv_id": "2601.20690",
+    "title": "Tensor renormalization group study of cold and dense QCD in the strong coupling limit",
+    "authors": [
+      "Yuto Sugimoto",
+      "Shinichiro Akiyama",
+      "Yoshinobu Kuramashi"
+    ],
+    "submission_date": "2026-01-28T15:20:32Z",
+    "latest_updated": "2026-06-18T15:36:24Z",
+    "revised_dates": null,
+    "venue": "Phys. Rev. D 113, 114509 (2026)",
+    "latest_version": 2,
+    "versions": [
+      "2601.20690v1",
+      "2601.20690v2"
+    ],
+    "abstract": "We study the phase structure of the (3+1)-dimensional cold and dense QCD with the Kogut--Susskind quark in the strong coupling limit using the tensor renormalization group method. The chiral and nuclear transitions are investigated by calculating the chiral condensate and the quark number density as a function of the chemical potential. For a fixed temporal extent $N_τ=8$, we determine the critical quark masses $m_c^χ$ and $m_c^{n}$ for the chiral condensate and the quark number density, respectively, at which the first-order phase transition terminates with the vanishing discontinuity in thermodynamic quantities. We find that both quantities at the same quark mass exhibit a discontinuity at the same chemical potential, and the resulting critical quark masses are consistent with each other. We also compare our results for the critical quark masses with those obtained from the Monte Carlo simulation in the dual formulation and from the mean-field analysis. We further confirm the first-order phase transition at finite quark mass on a $1024^4$ lattice, which is essentially in the thermodynamic limit at zero temperature, as expected from the mean-field analysis.",
+    "status": "found"
+  },
+  "2601.20691": {
+    "arxiv_id": "2601.20691",
+    "title": "Impact of O concentration on the thermal stability and decomposition mechanism of (Cr,Al)N compared to (Ti,Al)N thin films",
+    "authors": [
+      "Pauline Kümmerl",
+      "Ganesh Kumar Nayak",
+      "Felix Leinenbach",
+      "Zsolt Czigány",
+      "Daniel Primetzhofer",
+      "Szilárd Kolozsvári",
+      "Peter Polcik",
+      "Marcus Hans",
+      "Jochen M. Schneider"
+    ],
+    "submission_date": "2026-01-28T15:21:05Z",
+    "latest_updated": "2026-01-28T15:21:05Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.20691v1"
+    ],
+    "abstract": "The composition-dependent thermal stability of (Cr$_{0.47 \\mp 0.03}$Al$_{0.53 \\mp 0.03}$)$_{z}$(O$_{y}$N$_{1-y}$)$_{1-z}$ thin films with O concentrations of y = 0, 0.15, and 0.40 is investigated up to 1200 °C and then compared to (Ti$_{0.56}$Al$_{0.44}$)$_{z}$(O$_{y}$N$_{1-y}$)$_{1-z}$. X-ray diffraction reveals a thermal stability limit of 1150 °C independent of the O concentration, as witnessed by the formation of decomposition products, namely h-Cr$_{2}$N for (Cr$_{0.50}$Al$_{0.50}$)$_{0.49}$N$_{0.51}$ and c-Cr for both (Cr$_{0.48}$Al$_{0.52}$)$_{0.48}$(O$_{0.15}$N$_{0.85}$)$_{0.52}$ and (Cr$_{0.44}$Al$_{0.56}$)$_{0.46}$(O$_{0.40}$N$_{0.60}$)$_{0.54}$. Based on TEM and ERDA data, the thermal stability limit is extended to 1100 - 1150 °C. DFT calculations indicate that bond breaking limits the thermal stability. In (Cr,Al)N, N has the lowest activation energy for migration. Furthermore, the O vacancy formation energy is highest in (Cr,Al)(O,N). It has to be overcome to enable diffusion on the non-metal sublattice, which is necessary for forming decomposition products like w-AlN or c-Cr. However, once Cr-N bonds break, decomposition into h-Cr$_{2}$N and subsequent c-Cr together with N$_{2}$ is triggered. This results in N evaporation, generating sufficient non-metal vacancies that greatly enhance diffusion and render the extensive vacancy formation energies for non-metals irrelevant. This reduction of the activation energy for mass transport on the non-metal sublattice to the migration barrier causes the similar thermal stability in (Cr$_{0.47 \\mp 0.03}$Al$_{0.53 \\mp 0.03}$)$_{z}$(O$_{y}$N$_{1-y}$)$_{1-z}$. In contrast, Al bonds break first without creating non-metal vacancies in (Ti,Al)(O,N). Thus, the high O vacancy formation energy in (Ti,Al)(O,N) significantly increases the thermal stability compared to (Ti,Al)N as well as the here investigated films.",
+    "status": "found"
+  },
+  "2601.20692": {
+    "arxiv_id": "2601.20692",
+    "title": "Optimal Transport Group Counterfactual Explanations",
+    "authors": [
+      "Enrique Valero-Leal",
+      "Bernd Bischl",
+      "Pedro Larrañaga",
+      "Concha Bielza",
+      "Giuseppe Casalicchio"
+    ],
+    "submission_date": "2026-01-28T15:22:20Z",
+    "latest_updated": "2026-01-28T15:22:20Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.20692v1"
+    ],
+    "abstract": "Group counterfactual explanations find a set of counterfactual instances to explain a group of input instances contrastively. However, existing methods either (i) optimize counterfactuals only for a fixed group and do not generalize to new group members, (ii) strictly rely on strong model assumptions (e.g., linearity) for tractability or/and (iii) poorly control the counterfactual group geometry distortion. We instead learn an explicit optimal transport map that sends any group instance to its counterfactual without re-optimization, minimizing the group's total transport cost. This enables generalization with fewer parameters, making it easier to interpret the common actionable recourse. For linear classifiers, we prove that functions representing group counterfactuals are derived via mathematical optimization, identifying the underlying convex optimization type (QP, QCQP, ...). Experiments show that they accurately generalize, preserve group geometry and incur only negligible additional transport cost compared to baseline methods. If model linearity cannot be exploited, our approach also significantly outperforms the baselines.",
+    "status": "found"
+  },
+  "2601.20693": {
+    "arxiv_id": "2601.20693",
+    "title": "Drone-Aided Blood Collection Routing Problem: A Column Generation Approach",
+    "authors": [
+      "Amirhossein Abbaszadeh",
+      "Hossein Hashemi Doulabi"
+    ],
+    "submission_date": "2026-01-28T15:23:05Z",
+    "latest_updated": "2026-08-12T02:01:46Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.20693v1",
+      "2601.20693v2"
+    ],
+    "abstract": "Platelet extraction requires whole blood to be processed within six hours of donation. To meet this deadline, blood collection organizations must optimally route a fleet of vehicles to pick up blood units from donation sites and deliver them to a processing center. This paper introduces a drone-aided blood collection routing problem in which a fleet of trucks, each equipped with a drone, operates in a synchronized manner to collect blood units before their processing time limit expires. Each truck-drone tandem can perform multiple trips throughout the planning horizon, allowing donation sites to be visited repeatedly as new blood units become available over time. We formulate this problem as a mixed-integer linear program that jointly optimizes the routing of trucks and drones, pickup schedules, and timing decisions to maximize the total number of viable blood units collected. We also develop a column generation approach that decomposes the problem into a master problem to select the optimal set of truck-drone tours and a pricing subproblem, which is solved using a tailored memetic algorithm to generate promising new columns. Through a comprehensive computational study, we show the operational benefits of integrating drones into the blood collection system. In addition, we demonstrate the superior performance of the proposed algorithm over Gurobi and two metaheuristics from the literature, namely the hybrid genetic algorithm and the invasive weed optimization, in both the drone-aided and truck-only settings.",
+    "status": "found"
+  },
+  "2601.20694": {
+    "arxiv_id": "2601.20694",
+    "title": "Is Pure Exploitation Sufficient in Exogenous MDPs with Linear Function Approximation?",
+    "authors": [
+      "Hao Liang",
+      "Jiayu Cheng",
+      "Sean R. Sinclair",
+      "Yali Du"
+    ],
+    "submission_date": "2026-01-28T15:23:50Z",
+    "latest_updated": "2026-01-28T15:23:50Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.20694v1"
+    ],
+    "abstract": "Exogenous MDPs (Exo-MDPs) capture sequential decision-making where uncertainty comes solely from exogenous inputs that evolve independently of the learner's actions. This structure is especially common in operations research applications such as inventory control, energy storage, and resource allocation, where exogenous randomness (e.g., demand, arrivals, or prices) drives system behavior. Despite decades of empirical evidence that greedy, exploitation-only methods work remarkably well in these settings, theory has lagged behind: all existing regret guarantees for Exo-MDPs rely on explicit exploration or tabular assumptions. We show that exploration is unnecessary. We propose Pure Exploitation Learning (PEL) and prove the first general finite-sample regret bounds for exploitation-only algorithms in Exo-MDPs. In the tabular case, PEL achieves $\\widetilde{O}(H^2|Ξ|\\sqrt{K})$. For large, continuous endogenous state spaces, we introduce LSVI-PE, a simple linear-approximation method whose regret is polynomial in the feature dimension, exogenous state space, and horizon, independent of the endogenous state and action spaces. Our analysis introduces two new tools: counterfactual trajectories and Bellman-closed feature transport, which together allow greedy policies to have accurate value estimates without optimism. Experiments on synthetic and resource-management tasks show that PEL consistently outperforming baselines. Overall, our results overturn the conventional wisdom that exploration is required, demonstrating that in Exo-MDPs, pure exploitation is enough.",
+    "status": "found"
+  },
+  "2601.20695": {
+    "arxiv_id": "2601.20695",
+    "title": "Quantum control of Hubbard excitons",
+    "authors": [
+      "D. R. Baykusheva",
+      "D. P. Carmichael",
+      "C. S. Weber",
+      "I-T. Lu",
+      "F. Glerean",
+      "T. Meng",
+      "P. B. M. De Oliveira",
+      "C. C. Homes",
+      "I. A. Zaliznyak",
+      "G. D. Gu",
+      "M. P. M. Dean",
+      "A. Rubio",
+      "D. M. Kennes",
+      "M. Claassen",
+      "M. Mitrano"
+    ],
+    "submission_date": "2026-01-27T18:19:48Z",
+    "latest_updated": "2026-01-27T18:19:48Z",
+    "revised_dates": null,
+    "venue": "Nat. Mater. 25, 937-943 (2026)",
+    "latest_version": 1,
+    "versions": [
+      "2601.20695v1"
+    ],
+    "abstract": "Quantum control of the many-body wavefunction is a central challenge in quantum materials research, as it could yield a precise control knob to manipulate emergent phenomena. Floquet engineering, the coherent dressing of quantum states with periodic non-resonant optical fields, has become an important strategy for quantum control. Most applications to solid-state systems have targeted weakly interacting or single-ion states, leaving the manipulation of many-body wavefunctions largely unexplored. Here, we use Floquet engineering to achieve quantum control of a strongly correlated Hubbard exciton in the one-dimensional Mott insulator Sr$_2$CuO$_3$. A nonresonant midinfrared optical field coherently dresses the exciton wavefunction, driving its rotation between bright and dark states. We use resonant third-harmonic generation to quantify ultrafast $π/2$ rotations on the Bloch sphere spanned by these exciton states. Our work advances the quest towards programmable control of correlated states and exciton-based quantum sensing.",
+    "status": "found"
+  }
+}

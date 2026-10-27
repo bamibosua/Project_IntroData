@@ -1,0 +1,406 @@
+{
+  "2608.09247": {
+    "arxiv_id": "2608.09247",
+    "title": "Herz versus Fefferman: Symmetric and asymmetric Bochner--Riesz theory",
+    "authors": [
+      "Peng Chen",
+      "Dangyang He",
+      "Adam Sikora",
+      "Lixin Yan"
+    ],
+    "submission_date": "2026-08-10T08:09:17Z",
+    "latest_updated": "2026-08-10T08:09:17Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09247v1"
+    ],
+    "abstract": "We study Bochner--Riesz summability for a one-dimensional model of noncompact manifolds with ends. Each end has an effective Euclidean dimension, and these dimensions may differ from one end to another. The central point is the contrast between the symmetric and asymmetric cases. When the end dimensions agree, the model follows Herz's radial theory for the Euclidean Laplacian. When they are unequal, a Fefferman-type obstruction appears, analogous to the ball multiplier obstruction in higher-dimensional Fourier analysis, even though the model itself is one-dimensional. We give a complete characterisation of the \\(L^p\\)-boundedness of the corresponding spectral projections and Bochner--Riesz means. In the asymmetric case, the boundedness range contains an additional restriction depending on the difference between the end dimensions. This restriction is absent from Herz's radial model and shows that Bochner--Riesz summability on spaces with unequal ends is governed not only by the maximal end dimension, but also by the interaction between the ends.",
+    "status": "found"
+  },
+  "2608.09248": {
+    "arxiv_id": "2608.09248",
+    "title": "Emotion2Skill: Model-Internal Emotion Signals for Adaptive Skill Selection and Evolution",
+    "authors": [
+      "Bohan Lin",
+      "Hejia Geng",
+      "Xinyi Xie",
+      "Heng Zhou",
+      "Qinghua Xing",
+      "Chen Zhang",
+      "Yudong Zhang"
+    ],
+    "submission_date": "2026-08-10T08:09:24Z",
+    "latest_updated": "2026-10-13T08:05:10Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2608.09248v1",
+      "2608.09248v2",
+      "2608.09248v3"
+    ],
+    "abstract": "Skill-based LLM agents select reusable procedures from external libraries to solve complex tasks, yet their routing decisions rely primarily on task descriptions, verbal reflections, and experience-derived rules, without explicitly observing the model's internal decision state. Recent interpretability work has identified emotion representations that influence model behavior, but their use has largely focused on post-hoc analysis and output steering. Their potential to guide agent-level decisions remains underexplored. We propose Emotion2Skill, a framework that extracts LLM-internal emotion vectors and incorporates them into both skill selection and skill evolution. The framework uses these representations to inform skill choice and tracks their changes to identify problematic invocations, enabling targeted skill refinement beyond coarse outcome feedback. Across two backbones, Emotion2Skill outperforms seven baselines. On Qwen3-8B, it exceeds Trace2Skill by 3.1 percentage points in WebShop success and 5.7 in ALFWorld average success. Ablations and specificity controls support the utility of context-aligned emotion signals, while co-activation analysis reveals semantically coherent emotion--skill associations. The same emotion vectors also transfer to MATH and MBPP without re-extraction. These results establish LLM-internal emotion representations as an effective decision-level signal for orchestrating agent skill systems, extending their utility beyond interpretability and output steering. Code is available at https://github.com/BoHan-LIN04/Emotion2Skill",
+    "status": "found"
+  },
+  "2608.09249": {
+    "arxiv_id": "2608.09249",
+    "title": "Track me if you can: Ephemeral coin tracing",
+    "authors": [
+      "Ignacio Amores-Sesar",
+      "Christian Cachin",
+      "Rohit Chatterjee",
+      "Luiza Soezima",
+      "François-Xavier Wicht",
+      "Michelle Yeo"
+    ],
+    "submission_date": "2026-08-10T08:09:28Z",
+    "latest_updated": "2026-09-25T12:55:19Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.09249v1",
+      "2608.09249v2"
+    ],
+    "abstract": "Privacy-preserving payment systems are well understood, yet concerns about their misuse for financial crime have led to only limited adoption in regulated settings such as central bank digital currencies (CBDCs) and institutional stablecoins. Tracing is one tool for addressing these concerns: acting on external evidence implicating a user, law enforcement follows the suspect's funds through the ledger to uncover laundering routes and accomplices. Existing coin-tracing schemes, however, provide no cryptographic bound on tracing reach: once initiated, a trace may propagate indefinitely through the transaction graph or persist across all future transactions of a targeted user. Keeping surveillance targeted and temporary therefore depends on the restraint of the authority or a committee. We introduce ephemeral coin tracing (ECT), a primitive that bounds tracing reach by construction. Each account carries an encrypted tag that records which traced identifiers its funds carry while hiding its tracing status from users. When funds move, the sender's tag degrades and merges with the recipient's tag. Each tracing contribution expires independently after a policy-defined number of hops and then becomes unrecoverable even to the tracing authority, without affecting other live contributions in the same tag. Public parameters also bound how many identifiers a tag can distinguish simultaneously. We formalize ECT and give constructions based on exponential ElGamal, Damgård-Jurik encryption, and Ring-LWE, the last providing post-quantum security.",
+    "status": "found"
+  },
+  "2608.09250": {
+    "arxiv_id": "2608.09250",
+    "title": "FEAST: Federated Shared-Space Training for Resource-Heterogeneous Clients",
+    "authors": [
+      "Bostan Khan",
+      "Masoud Daneshtalab"
+    ],
+    "submission_date": "2026-08-10T08:10:59Z",
+    "latest_updated": "2026-10-20T11:09:25Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.09250v1",
+      "2608.09250v2"
+    ],
+    "abstract": "Federated learning (FL) must serve devices with varying computational capabilities. A fixed model cannot suit all devices, while training one model per deployment limit is costly. Federated supernet training instead learns one elastic model with differently sized subnetworks, then deploys a suitable one to each device. When client inference budgets differ, however, parameters exclusive to high-cost subnetworks are reachable by fewer clients. We propose FEAST, a federated shared-space training framework that counters this imbalance by jointly training multiple subnetworks within each client's limit. Budget-tailored sub-supernet routing sends only the relevant supernet portion, and sparse aggregation merges the returned parameter slices. The trained supernet directly serves the subnetworks used during federation and supports post-hoc extraction of additional subnetworks without federated retraining. We further show that independently assigning clients' training-data volumes and inference budgets can distort accuracy--inference-cost comparisons in heterogeneous FL simulations, and introduce a one-parameter $γ$-allocation protocol to control this coupling. In our experimental setup, the SuperFedNAS and DeepFedNAS supernet training procedures remain near chance at 25M and reach at most $17.09\\%$ at $596$M inference MACs; FEAST reaches $71.06\\%$ at $596$M, $2.4$ points above the strongest model-heterogeneous weight-sharing baseline at its largest tier. Across CIFAR-100, CINIC-10, and TinyImageNet-200, FEAST achieves the highest population-averaged accuracy among the evaluated weight-sharing methods when each client receives its largest affordable subnetwork. Sub-supernet routing reduces aggregate model-parameter traffic by $6.8\\times$ relative to full-supernet transmission.",
+    "status": "found"
+  },
+  "2608.09251": {
+    "arxiv_id": "2608.09251",
+    "title": "MoRSE: Task-Oriented Multi-Agent System with Mixture of Role-Subtask Experts",
+    "authors": [
+      "Peiwen Li",
+      "Shiyang Zhang",
+      "Yangtian Zhang",
+      "Sizhuang He",
+      "David van Dijk",
+      "Rex Ying"
+    ],
+    "submission_date": "2026-08-10T08:11:24Z",
+    "latest_updated": "2026-08-10T08:11:24Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09251v1"
+    ],
+    "abstract": "Large language model-based multi-agent systems have recently shown strong potential for complex, long-horizon tasks. However, existing methods mainly rely on coarse prompt-level differentiation without parameter adaptation for diverse subtasks, resulting in insufficient inter-agent heterogeneity and limited specialized capability that bottleneck performance on tasks with complex requirements. To address this, we introduce a Task-Oriented Multi-Agent System with Mixture of Role-Subtask Experts (MoRSE) that distinguishes agents with (role, subtask)-conditional specialization at both the task structure and parameter levels. To make agents' responsibility explicit at the task structure level, we formulate a task-oriented multi-agent system that decomposes each task into a dependency-aware Directed Acyclic Graph of subtasks and assigns each agent a specific (role, subtask), introducing task-level specialization across collaborating agents. Additionally, to address the diverse role and subtask parameter adaptation demands, we propose a dynamic Mixture of (role, subtask) LoRA Experts module with a prototype-based semantic router for subtasks, augmenting agents with parameter-level specialization on a shared LLM substrate cost-effectively. Then, to co-optimize experts and router stably under sparse task rewards, we further propose a hierarchical group-relative policy optimization with two-layer credit assignment that isolates expert updates from the cross-route variance introduced by routing decisions, disentangling expert quality from routing quality. Experiments on code-generation benchmarks across three backbones demonstrate the effectiveness of our approach, with improvements in both whole-task and step-wise performance, and the gains from trained specialization generalize across held-out task categories and domains.",
+    "status": "found"
+  },
+  "2608.09252": {
+    "arxiv_id": "2608.09252",
+    "title": "FSGen: Agile Fused and Sparse Accelerator Generator with Accurate Power Model for LLM Applications",
+    "authors": [
+      "Jay Zhe-An Mok",
+      "Qijun Zhang",
+      "Zhiyao Xie"
+    ],
+    "submission_date": "2026-08-10T08:13:38Z",
+    "latest_updated": "2026-08-10T08:13:38Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09252v1"
+    ],
+    "abstract": "With the growing demand of artificial intelligence (AI) applications, large language models (LLMs) have become important workloads in many domains. The question of how to efficiently generate optimal AI chip accelerator designs remains unresolved and challenging. Currently, there is a lack of end-to-end design methodologies for efficient design space exploration (DSE). We propose FSGen, an agile framework for attention-based LLM accelerator generation with an early-stage PPA estimator. FSGen supports fused operator dataflows and sparsity with a diverse design space and finds designs with 1.4x better power efficiency or 10x speedup with similar PPA metrics compared to prior work. Pareto-optimal designs have much better performance over a wide range of LLM benchmarks and have 58x better figures of merit (FoM). Design exploration is also faster due to our PPA estimators, which have better accuracy than prior art and reduce DSE runtime drastically.",
+    "status": "found"
+  },
+  "2608.09253": {
+    "arxiv_id": "2608.09253",
+    "title": "SkillSentry: Reliable Skill Execution for LLM Agents via Runtime Assurance",
+    "authors": [
+      "You Lu",
+      "Xinyu Huang",
+      "Bihuan Chen",
+      "Xin Peng"
+    ],
+    "submission_date": "2026-08-10T08:13:52Z",
+    "latest_updated": "2026-08-10T08:13:52Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09253v1"
+    ],
+    "abstract": "LLM agents are increasingly equipped with skills to perform complex tasks through multi-step reasoning and tool use. Although skills provide reusable procedural knowledge, agents may still execute them unreliably. Even when an agent has demonstrated the capability to complete tasks under the guidance of a skill, it may fail to do so consistently across similar tasks or repeated runs due to deviations from the skill procedure or incorrect execution of individual steps. Such instability limits the practical reliability of LLM agents. To address this problem, we propose SkillSentry, a skill-oriented runtime assurance framework built upon a new domain-specific language (DSL) for representing runtime guidance for skill execution. SkillSentry initializes the runtime guidance by combining a skill specification extracted from the corresponding skill document with execution experience mined from historical successful and failed traces. It then wraps around the agent execution loop to monitor and guide skill execution under the current guidance, while iteratively refining the guidance using newly collected traces. We evaluate SkillSentry on 15 skills across two LLM agents, each paired with two backbone models, i.e., Claude Code with Claude-Haiku-4.5 and Claude-Opus-4.6, and Codex with GPT-5.2 and GPT-5.4. Our results show that SkillSentry improves the task success rate of LLM agents by 24.1% across skills, on average, while exhibiting lower variability across repeated runs.",
+    "status": "found"
+  },
+  "2608.09254": {
+    "arxiv_id": "2608.09254",
+    "title": "Business Truth, not SQL Accuracy: A Rule-Gated 7B Analytics Agent Outperforms a Direct-Prompted 32B Baseline",
+    "authors": [
+      "Morris Lee"
+    ],
+    "submission_date": "2026-08-10T08:14:24Z",
+    "latest_updated": "2026-08-10T08:14:24Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09254v1"
+    ],
+    "abstract": "LLM analytics agents are evaluated on SQL syntax accuracy, but production failures look different: questions with two valid business definitions, questions the warehouse cannot answer, deprecated columns after a schema change, and queries that execute successfully while returning the wrong business number. No execution-match metric can score them. This paper introduces WarehouseReliabilityBench, 400 frozen tasks over two synthetic warehouses in which roughly half the correct responses are a clarification, an abstention or a refusal, with pinned denominators and a pre-registered paired bootstrap fixing each claim verb before the numbers existed. QueryProof, a 7B agent, uses rules derived from a semantic layer and physical catalog to determine its behaviour, and gates every answer on deterministic post-execution checks. On an 80-task synthetic test split evaluated once, QueryProof outperforms a direct-prompted 32B baseline by +0.237 [+0.112, +0.375] Business Truth Rate at 71.0% lower cost per correct answer; against a cost-matched few-shot baseline the accuracy gain holds but the cost difference does not resolve. This compares systems rather than model sizes: the 32B baseline receives none of the scaffolding. False success falls from 0.754 to 0.351 of returned answers, and no wrong number was returned on an answerable task (0 of 24), though 13 answers went to questions requiring clarification or abstention. Removing the routing layer changes little (0.562 against 0.537), so the result does not depend on escalation. Routing tuned on validation over-abstains on test, and the fitted confidence model loses to the heuristic it replaced. Resampling template families rather than tasks widens both accuracy intervals to include zero, so the effect's direction is better supported than its magnitude. The gain tracks the deterministic layer, though no component ablation was run.",
+    "status": "found"
+  },
+  "2608.09255": {
+    "arxiv_id": "2608.09255",
+    "title": "Full-Feature versus Limited-Input Machine Learning for Residential Energy Estimation: A Comparative Analysis of RECS and ResStock Under Realistic Input Constraints",
+    "authors": [
+      "Aditya Ramnarayan",
+      "Fatih Evren",
+      "Patti Gunderson",
+      "Samuel Rosenberg"
+    ],
+    "submission_date": "2026-08-10T08:14:26Z",
+    "latest_updated": "2026-08-10T08:14:26Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09255v1"
+    ],
+    "abstract": "Residential energy estimates are often needed before detailed envelope characteristics, equipment efficiencies, infiltration, sensor, or billing data are available. This study quantifies the trade-off between predictive accuracy and input accessibility using two nationally representative U.S. residential-energy datasets: the survey-based Residential Energy Consumption Survey (RECS) and the simulation-based ResStock dataset. Full-feature models were first used to establish dataset-specific performance benchmarks. For total-energy estimation, the models were subsequently restricted to ten low-burden variables obtainable from occupants, administrative records, or location-based weather data without an on-site energy audit. Among CatBoost, XGBoost, LightGBM, Random Forest, and Neural Networks, CatBoost consistently achieved the highest predictive performance for the full-feature analysis, reaching R2 = 0.90 for ResStock and R2 = 0.73 for RECS. When the feature set was restricted to ten homeowner-accessible inputs to simulate realistic deployment conditions, model performance converged to R2 = 0.61 for RECS and R2 = 0.62 for ResStock, showing that algorithmic complexity cannot fully compensate for missing physical and behavioral information. However, for a more homogeneous ResStock cohort consisting of single-family detached, natural-gas-heated homes in Climate Zone 6A constructed between 2000 and 2010, a reduced-input model improved accuracy to R2 = 0.85, demonstrating the value of targeted modeling for homogeneous populations. The results indicate that tree-based ensemble models can serve as high-fidelity emulators of national-scale residential energy datasets. However, careful consideration of feature availability, dataset origin (empirical vs. synthetic), and applicable use cases are also important.",
+    "status": "found"
+  },
+  "2608.09256": {
+    "arxiv_id": "2608.09256",
+    "title": "Distributed Team Orchestration via Supervisor Networks: Convergence, Optimality, and Resilience",
+    "authors": [
+      "Juntian Zhu",
+      "Guanpu Chen",
+      "Tongtian Zhu",
+      "Miguel de Carvalho",
+      "Zhouwang Yang",
+      "Fengxiang He"
+    ],
+    "submission_date": "2026-08-10T08:14:46Z",
+    "latest_updated": "2026-08-10T08:14:46Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09256v1"
+    ],
+    "abstract": "In this paper, we study zero-sum potential team games with a supervisor network, where agents rely on supervisor-provided belief information rather than accurate common beliefs. The main challenge is that such belief information can be inaccurate because of supervisors' belief-estimation errors and the misreporting of joint actions by Byzantine teams. We propose the distributed team-orchestrating algorithm (DTOA), which combines team fictitious play with supervisor-based distributed belief learning. We prove the convergence of supervisors' belief estimates and establish that the induced learning dynamics converge to a near team-Nash equilibrium (TNE) in terms of the team-Nash gap (TNG). In the Byzantine setting, we consider a misreporting attack model and develop a Byzantine-resilient DTOA. We further provide probabilistic guarantees for Byzantine-team identification and establish an asymptotic bound on the honest TNG. Numerical experiments illustrate the theoretical findings, compare DTOA with baseline learning methods, and evaluate its performance in a Markov decision process setting.",
+    "status": "found"
+  },
+  "2608.09257": {
+    "arxiv_id": "2608.09257",
+    "title": "Machine-learning octet $AB$-type binary compounds across chemical space with domain knowledge of the interatomic bond",
+    "authors": [
+      "Rohan Kumar",
+      "Mariano D. Forti",
+      "Aakash A. Naik",
+      "Luca M. Ghiringhelli",
+      "Thomas Hammerschmidt"
+    ],
+    "submission_date": "2026-08-10T08:14:48Z",
+    "latest_updated": "2026-08-11T20:09:05Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.09257v1",
+      "2608.09257v2"
+    ],
+    "abstract": "The prediction of the structural stability of octet $AB$-type binary compounds is a classical materials informatics problem. The challenge is to capture the relative stability of 4-fold coordinated atoms in zincblende ($β$-ZnS) structure and 6-fold coordinated atoms in rocksalt (NaCl) structure, modulated by charge transfer and atomic-size differences. Previous structure maps and machine-learning approaches used atomic features such as valence-electron count, ionization potential and atomic radii, using either physical intuition or symbolic regression. Here, we demonstrate that explicitly incorporating the domain knowledge of the interatomic bonds can significantly and systematically improve the prediction of $β$-ZnS/NaCl stability. We encode this bonding information through a coarse-grained representation of the local electronic structure obtained by a recursive solution of a tight-binding bond model. The underlying pairwise Hamiltonians are taken from downfolded eigenstates of density-functional theory calculations for diatomic molecules and thereby include domain knowledge of the bond between specific $A-B$ pairs. The benefit of this description is demonstrated with an ensemble of independently trained Kernel Ridge or symbolic regression models combined with sequential feature selection. The obtained models are compared to a previous symbolic-regression model using the same set of \\emph{ab initio} calculations for octet binaries as training data. We find a significant improvement in the prediction of the formation energy difference of $AB$ compounds as compared to previous works and demonstrate that an increasing amount of bond-informed recursion features improves the predictive accuracy.",
+    "status": "found"
+  },
+  "2608.09258": {
+    "arxiv_id": "2608.09258",
+    "title": "Task-Oriented Formation Decision via Reinforcement Learning: Herding an Attacking Swarm",
+    "authors": [
+      "Zhaozong Wang",
+      "Guibin Sun",
+      "Jinyong Chen",
+      "Rui Zhou"
+    ],
+    "submission_date": "2026-08-10T08:14:59Z",
+    "latest_updated": "2026-08-10T08:14:59Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09258v1"
+    ],
+    "abstract": "Multi-robot systems can accomplish tasks that are difficult for a single robot by organizing into task-specific formations. Different from existing studies on multi-robot shape formation, we here study the task-oriented formation decision problem, with a focus on the herding task. This task is challenging due to the attackers' superior maneuverability and their unknown strategies. To address these challenges, we propose the following novel results. First, we encode the formation shape using a low-dimensional parameter vector. This parametric representation reformulates the formation decision as a parameter optimization problem, thereby resolving the limited flexibility of predefined shapes. By optimizing these formation parameters, the defenders' maneuverability disadvantage is mitigated through a formation shape that continuously adapts to task requirements. Second, we develop a reinforcement learning-based policy to regulate the formation parameters. Trained offline in simulations covering diverse attacking strategies, the learned policy can effectively handle adversarial unpredictability during online deployment. Comparative simulations against three baselines demonstrate that our method can successfully accomplish challenging herding tasks. Additional scalability simulations further verify its applicability to simulated scenarios involving dozens of robots. We also validate the practical feasibility of our method on a physical robotic platform with 3 attackers and 7 defenders.",
+    "status": "found"
+  },
+  "2608.09259": {
+    "arxiv_id": "2608.09259",
+    "title": "Use of the Common Information Model (IEC 61970) for Standardized Data Exchange in HVDC Digital Twin Systems",
+    "authors": [
+      "Ferran Bohigas-Daranas",
+      "Arkadius Burek",
+      "Eduardo Prieto-Araujo",
+      "Oriol Gomis-Bellmunt"
+    ],
+    "submission_date": "2026-08-10T08:15:43Z",
+    "latest_updated": "2026-08-10T08:15:43Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09259v1"
+    ],
+    "abstract": "Digital Twins (DTw) are emerging as transformative tools for High Voltage Direct Current (HVDC) transmission systems, enabling real-time monitoring, predictive maintenance, and operational optimization. However, the effectiveness of these virtual replicas fundamentally depends on seamless, reliable data exchange with their physical counterparts and any other support system. The current landscape of HVDC DTw implementations reveals a critical challenge: the absence of standardized data exchange protocols leads to vendor lock-in, interoperability issues between systems from different vendors. The contribution of this paper is to propose the standardization of Common Information Model (CIM) defined in IEC 61970 standard family, as the data exchange methodology in HVDC DTws, which is exemplified with the Cigre B4 example, as well as connected to the IEC 61850 standard for real time station control, via the harmonization guidelines from the IEC 62361-102 technical report.",
+    "status": "found"
+  },
+  "2608.09260": {
+    "arxiv_id": "2608.09260",
+    "title": "SafeQL: Search-based Refinement for Safe and Efficient LLM-based Text-to-SQL",
+    "authors": [
+      "Geonho Lee",
+      "Min-Soo Kim"
+    ],
+    "submission_date": "2026-08-10T08:16:17Z",
+    "latest_updated": "2026-08-10T08:16:17Z",
+    "revised_dates": null,
+    "venue": "Proc. VLDB Endow. 19(9): 2210-2223, 2026",
+    "latest_version": 1,
+    "versions": [
+      "2608.09260v1"
+    ],
+    "abstract": "Large language models (LLMs) have advanced Text-to-SQL by enabling natural language interfaces to databases without task-specific fine-tuning. However, existing LLM-based systems remain unreliable, often generating SQL queries that are invalid under the database schema, referencing non-existent tables, attributes, functions, or values. Such errors persist because interactions with the database management system (DBMS) are typically limited to error messages, leaving it in a largely passive role during query refinement. This paper proposes SafeQL, \\textit{a search-based refinement paradigm that redefines the role of the DBMS as an active guide in the refinement process}. Instead of regenerating entire queries after execution failure, SafeQL interprets DBMS feedback to incrementally repair only the erroneous components. Each refinement step is formulated as a guided search within a \\textit{safe query space}, where candidate queries are progressively validated through DBMS execution, thereby converging to an executable query and preventing repeated regeneration of errors. Experiments on the Bird and Spider benchmarks show that SafeQL significantly improves execution accuracy and efficiency compared to regeneration-based methods.",
+    "status": "found"
+  },
+  "2608.09261": {
+    "arxiv_id": "2608.09261",
+    "title": "Pointing Model Meets Deep Learning: A Retrospective Study on a MeerKAT+ Telescope Applying Deep Learning Methods for Blind Pointing Corrections",
+    "authors": [
+      "Stefan Thoms",
+      "Matthias Reichert"
+    ],
+    "submission_date": "2026-08-10T08:16:37Z",
+    "latest_updated": "2026-08-10T08:16:37Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09261v1"
+    ],
+    "abstract": "This study aims to compare the effectiveness of deep learning methods, specifically Feedforward Neural Networks (FNNs), with traditional Pointing Models (PMs) for compensating Blind Pointing Errors in astronomical instruments. Ambitious projects like the ongoing study for the Atacama Large Aperture Submillimeter Telescope (AtLAST) inspired the investigation of possible improvements to traditional Pointing Error (PE) modeling. The study assesses the practicality of FNNs by applying them to data from an instrument in operation: a precursor MeerKAT+ telescope from the Max Planck Institute for Radio Astronomy (MPIfR), intended to extend the current MeerKAT Radio Telescope Array at the South African Radio Astronomy Observatory (SARAO) site in the Meerkat National Park in South Africa.",
+    "status": "found"
+  },
+  "2608.09262": {
+    "arxiv_id": "2608.09262",
+    "title": "Quantum uncertainty in a macroscopic domain",
+    "authors": [
+      "Othman Q. Malhas",
+      "Bacim Alali"
+    ],
+    "submission_date": "2026-08-10T08:18:45Z",
+    "latest_updated": "2026-08-10T08:18:45Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09262v1"
+    ],
+    "abstract": "We develop a classical model-theoretic representation of partial Boolean algebras and use it to formulate quantum-like uncertainty without abandoning classical propositional logic. Given a surjection from the initial formulæ of a propositional language onto a partial Boolean algebra $(\\mathcal V,Π)$, we construct a consistent theory $\\mathcal T_g$ whose core---the ordered set of equivalence classes of initial formulæ---is isomorphic to $(\\mathcal V,Π)$. Its models are characterized as upward-closed clusters, yielding a model-theoretic formulation of KS-colourability: an $n$-dimensional partial Boolean algebra is KS-colourable exactly when the induced theory has a model meeting every pre-frame in one primitive formula. For finite-spectrum observables, uncertainty is defined by the number of locally admissible atomic outcomes. Dispersion-free models are characterized by the singleton pre-frame condition. With an additional measurement-update postulate, a finite example shows how measurement of an incompatible observable can destroy sharpness, providing a model-theoretic form of back-action. A $12$-vertex partial Boolean algebra is KS-colourable, whereas a rigorously constructed $140$-vertex, four-dimensional partial Boolean algebra is not, as shown by a parity argument; its incidence structure is isomorphic to the Peres $24$-ray, $24$-basis configuration in $\\mathbb R^4$. Macroscopic interpretations show that these phenomena arise from the organization of propositions and models rather than from nonclassical deduction. Finally, we relate certain models to the probability-one propositions of pure states and density operators, while emphasizing that such certainty models do not determine the full quantum state.",
+    "status": "found"
+  },
+  "2608.09263": {
+    "arxiv_id": "2608.09263",
+    "title": "Privileged Likelihood Is Not Automatically Value: Three Checks for Token Credit in On-Policy Self-Distillation",
+    "authors": [
+      "Xuan-Phi Nguyen",
+      "Zeyu Leo Liu",
+      "Yang Li",
+      "Shrey Pandit",
+      "Yiran Zhao",
+      "Anurag Koul",
+      "Shafiq Joty"
+    ],
+    "submission_date": "2026-08-10T08:18:48Z",
+    "latest_updated": "2026-08-25T18:29:15Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.09263v1",
+      "2608.09263v2"
+    ],
+    "abstract": "On-policy self-distillation aims to improve upon reinforcement learning from verifiable rewards (RLVR) by providing token-level scores derived from privileged information, such as reference solutions or critic feedback. These scores are treated as estimates of token-level action values, yet they answer a fundamentally different question: how the model's prediction changes when its input context is enriched, rather than how the expected outcome changes when a token is changed. We examine this gap along three dimensions: (i) whether the token-level score tracks task success; (ii) whether feedback generated from the same rollout causes the score to reflect agreement with its own description, and whether using feedback from other rollouts in the group mitigates this self-referential effect; and (iii) what behavior the resulting training objective actually reinforces. In experiments on AIME 2025, the implemented score distinguishes correct from incorrect rollouts at approximately chance level (AUC=0.505); using feedback from a different rollout does not consistently improve this discrimination; and all training configurations achieve only 24.2-33.9% Avg@4, compared with 64.2% for outcome-only GRPO. Moreover, the highest-entropy token decile accounts for 57-71% of the total absolute token-advantage mass, despite the score being least informative about reasoning quality in this regime. By contrast, similar experiments on SciKnowEval Biology improves held-out Avg@8 by 28.0%, while its corresponding trajectory scores achieve AUCs of 0.81-0.92. Together, these results suggest that dense credit assignment through distillation can be effective when its likelihood-based scores are empirically validated as meaningful proxies for outcome-relevant credit. When this alignment does not hold, however, the resulting supervision can fail to generalize and may substantially underperform outcome-based RL.",
+    "status": "found"
+  },
+  "2608.09264": {
+    "arxiv_id": "2608.09264",
+    "title": "Task-Adaptive 3D Cross-Field MRI Translation via Field-Conditioned Content-Style Pretraining",
+    "authors": [
+      "Haowen Pang",
+      "Yingqi Hao",
+      "Pengli Zhu"
+    ],
+    "submission_date": "2026-08-10T08:18:49Z",
+    "latest_updated": "2026-08-10T08:18:49Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09264v1"
+    ],
+    "abstract": "Magnetic field strength is a major source of domain shift in magnetic resonance imaging (MRI), affecting signal-to-noise ratio, tissue contrast, spatial detail, and the visibility of anatomical boundaries. The MRIxFields 2026 challenge investigates this problem through cross-field MRI translation across acquisitions at 0.1T, 1.5T, 3T, 5T, and 7T. Its three tasks, Any-to-7T, 0.1T-to-High, and Any-to-Any synthesis, require the generation of target-field image characteristics while preserving subject-specific anatomy. This problem is particularly challenging because paired acquisitions of the same subject across multiple field strengths are rarely available for training. We propose a 3D unpaired cross-field MRI translation framework based on field-conditioned content-style pretraining. The proposed framework first learns controllable field-to-field translation across all available field strengths by disentangling anatomical content from field-dependent contrast characteristics. The pretrained backbone is then adapted to task-specific target domains. Our model comprises a 3D content encoder, a 3D style encoder, a field-conditioned style generator, an AdaIN-modulated decoder, and a multi-field discriminator. Adversarial learning encourages realistic target-field appearance, while cycle-consistency, identity, content, style, and diversity constraints promote anatomical fidelity and controllable translation. We evaluate the proposed method on MRIxFields data spanning five field strengths and three MRI modalities. Experiments on paired test data demonstrate that the framework can adapt to the three challenge settings while preserving three-dimensional anatomical structure in the synthesized volumes. The implementation code is publicly available at https://github.com/Idea89560041/3D-MRI-Field-Translation.",
+    "status": "found"
+  },
+  "2608.09265": {
+    "arxiv_id": "2608.09265",
+    "title": "Entropic Partial Optimal Transport and Partial Gromov--Wasserstein Distance between Gaussian Mixtures",
+    "authors": [
+      "Toshiaki Yachimura",
+      "Xiaocheng Zou"
+    ],
+    "submission_date": "2026-08-10T08:19:29Z",
+    "latest_updated": "2026-08-10T08:19:29Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09265v1"
+    ],
+    "abstract": "Optimal transport and Gromov--Wasserstein distances are useful tools for comparing probability measures and metric measure spaces, but their balanced formulations force all mass to be matched. This constraint is often too strong for data with outliers, missing parts, or only partial overlap. In this paper, we develop entropic partial optimal transport for Gaussian mixture models and define a partial mixture Gromov--Wasserstein distance. For the finite entropic partial optimal transport problem, we prove the existence and uniqueness of the minimizer and establish quantitative large-penalty estimates. Moreover, the resulting entropic partial component couplings induce continuous partial transport plans through Gaussian optimal maps. We analyze their large-penalty and subsequent zero-entropy limits and construct the associated displacement interpolations and barycentric projection maps. In addition, by identifying each Gaussian mixture with a finite metric measure space of Gaussian components, we establish the metric property and large-penalty limit of the partial mixture Gromov--Wasserstein distance. Finally, numerical experiments on synthetic Gaussian mixtures and point clouds illustrate the effects of the penalty and entropic regularization and the robustness of partial matching to outliers.",
+    "status": "found"
+  },
+  "2608.09266": {
+    "arxiv_id": "2608.09266",
+    "title": "Did the Grid Erase the Event? EndoClock for Auditing Medical World-Model Pipelines",
+    "authors": [
+      "Yarin Udi",
+      "Tom Sharon-Shahak",
+      "Roee Masad",
+      "Dan Pri-Tal"
+    ],
+    "submission_date": "2026-08-10T08:20:42Z",
+    "latest_updated": "2026-08-10T08:20:42Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09266v1"
+    ],
+    "abstract": "Medical world models commonly learn from multimodal recordings synchronized onto a fixed-rate grid. This preprocessing resamples each native stream onto a shared time axis. Each stream has an observation clock that governs when observations are emitted or updated. When this clock depends on the latent or acquisition state, it is endogenous. In such settings, synchronization may not be neutral and can erase task-relevant evidence before the model sees the data. We introduce a four-regime taxonomy that characterizes where the evidence needed to distinguish a target event or state survives. The relevant witness may remain in the sampled values, in grid-cell update patterns, in native timing, or only in an external acquisition channel. EndoClock operationalizes this taxonomy as a conservative pretraining audit. It reports the lowest witness-bearing representation supported by the available evidence, or unresolved when no regime can be established. We illustrate this failure in echocardiography, where B-mode video write-outs cease during pulsed-wave Doppler acquisition while the corresponding measurement events remain recorded only in an external acquisition log. This work is a preliminary failure alert and executable audit. Its practical message is to preserve the native observation process long enough to determine whether synchronization has erased information required by the intended task.",
+    "status": "found"
+  }
+}

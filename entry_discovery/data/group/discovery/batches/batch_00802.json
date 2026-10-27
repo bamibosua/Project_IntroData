@@ -1,0 +1,379 @@
+{
+  "2609.13874": {
+    "arxiv_id": "2609.13874",
+    "title": "SHIFT-M3: Pre-fusion Alignment-based Consistency Screening for Multimodal ECG Record Integrity",
+    "authors": [
+      "Md Ashik Khan",
+      "Md Nahid Siddique"
+    ],
+    "submission_date": "2026-09-12T10:58:02Z",
+    "latest_updated": "2026-09-12T10:58:02Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13874v1"
+    ],
+    "abstract": "Multimodal clinical AI typically assumes that the waveform, report, metadata, and downstream predictions attached to a record belong to the same patient. In practice, linkage failures can silently assemble individually plausible but cross-patient components, creating a safety problem that standard predictive models are not designed to detect. We study this problem as multimodal record integrity triage: given an assembled record, should its modalities be trusted to belong together? We introduce SHIFT-M3, a lightweight text-based pre-fusion screen that measures alignment-based consistency between two separately produced ECG text views: an LLM-generated interpretation and a clinical report summary. On 784,680 MEETI ECG records, SHIFT-M3 achieves 97.6% TPR@5% FPR for full text-view swaps (AUROC 0.996), 90.3% for partial swaps (AUROC 0.974), and 97.7% for label-matched hard negatives (AUROC 0.996) with only 573,569 parameters. Compared with same-dataset lexical baselines, the gains are largest on partial swaps and hard negatives, suggesting that the model is learning more than surface overlap. We also introduce the CMST (Conflict-type Multimodal Stress Test) evaluation taxonomy, a three-seed stability study, a loss ablation, a temporal-tolerance sweep, and a shared-token masking control. The main remaining failure mode is longitudinal ambiguity: at the default operating point, same-patient cross-visit pairs still produce 87.0% Type-II false positives.",
+    "status": "found"
+  },
+  "2609.13875": {
+    "arxiv_id": "2609.13875",
+    "title": "Generation of Custom Solvers in Rust for Convex Optimization",
+    "authors": [
+      "Hao Zhu",
+      "Joschka Boedecker"
+    ],
+    "submission_date": "2026-09-12T11:00:05Z",
+    "latest_updated": "2026-09-12T11:00:05Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13875v1"
+    ],
+    "abstract": "We introduce cvxgenrust, an open-source tool for generating custom Rust code that solves families of parameterized convex optimization problems modeled in CVXPY. cvxgenrust canonicalizes a problem family, extracts affine maps to Clarabel cone-program data, and generates a specialized Rust crate that updates parameters and calls Clarabel natively at runtime. The generated solver can also be exposed to Python and registered as a custom CVXPY solver. Our code generator supports a wide range of convex optimization problems up to semidefinite programs and exponential-cone problems. Numerical experiments show reduced runtime relative to direct CVXPY solves and performance comparable to CVXPYgen on shared problem classes.",
+    "status": "found"
+  },
+  "2609.13876": {
+    "arxiv_id": "2609.13876",
+    "title": "Co-Speech with You: Training-Free Personalization of Robot Co-Speech Gestures",
+    "authors": [
+      "Bosong Ding",
+      "Selma Ancel",
+      "Giacomo Spigler",
+      "Murat Kirtay"
+    ],
+    "submission_date": "2026-09-12T11:02:51Z",
+    "latest_updated": "2026-09-12T11:02:51Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13876v1"
+    ],
+    "abstract": "Personal robots should adapt their co-speech gesture style to a new user without requiring model retraining. We present a training-free personalization pipeline that combines a frozen audio-conditioned diffusion prior with a gesture style encoder and lightweight conditioning adapters. The encoder is first trained to discriminate speaker identities and then jointly refined with the adapters using the diffusion objective, enabling a reusable style embedding to be extracted from approximately 10 seconds of enrollment motion through a single forward pass. To support this setting, we also release a Quest~3 capture application and a dataset of spontaneous co-speech motion from ten participants. We evaluate the system on held-out speakers using Style Recognition Accuracy (SRA) and Fr'echet Gesture Distance (FGD) to measure personalization and motion quality. Our approach improves SRA from 27.6\\% for the frozen prior to 69.5\\% while preserving motion quality (FGD 34.2 versus 34.8), and replacing the enrollment embedding with another person's reduces SRA to 11.4\\%. The generated gestures are retargeted to a physical NAO robot, and this improvement also transfers to the robot deployment setting, where speech is synthesized using five TTS voices, retaining 67.3\\% SRA.",
+    "status": "found"
+  },
+  "2609.13877": {
+    "arxiv_id": "2609.13877",
+    "title": "Tight Hardness for Temporal Path Covers at Vertex-Cover Number Two",
+    "authors": [
+      "Alp Par"
+    ],
+    "submission_date": "2026-09-12T11:02:53Z",
+    "latest_updated": "2026-09-12T11:02:53Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13877v1"
+    ],
+    "abstract": "Temporal Path Cover (TPC) and Temporally Disjoint Path Cover (TDPC) ask for minimum-cardinality covers of a temporal digraph by temporal paths, with TDPC additionally requiring pairwise temporal disjointness. Cioni et al. proved both problems NP-hard on temporal DAGs whose underlying undirected graph has vertex-cover number three and left the vertex-cover-two case open. We resolve this question affirmatively for both problems. Using polynomial-time reductions from Distinct Numerical Matching with Target Sums, we show that TPC and TDPC are NP-complete already when the underlying undirected graph has vertex-cover number exactly two. For TPC, this yields an exact vertex-cover threshold: polynomial-time solvability at vertex-cover number at most one and NP-completeness at two. For TDPC, we further study the boundary case of temporal oriented stars. A reuse-normalization argument reduces optimum solutions to leaf-unique two-edge merges. If either the incoming or outgoing side is single-label, the optimum remains polynomial-time computable even when the opposite side is multi-label. We also introduce a span parameter for feasible merge realizations and prove that any feasible family of k merges forces a realization of span at least 2k-2. Hence TDPC on temporal oriented stars is in XP parameterized by maximum span, and is polynomial-time solvable for every fixed span bound. The unrestricted multi-label star case remains open.",
+    "status": "found"
+  },
+  "2609.13878": {
+    "arxiv_id": "2609.13878",
+    "title": "A Multi-Resolution Multi-Domain Pre-Training Framework for Universal Traffic Forecasting",
+    "authors": [
+      "Zhouyang Liu",
+      "Jindong Han",
+      "Hao Wang",
+      "Xinyue Liu",
+      "Hui Gao",
+      "Dongsheng Li",
+      "Hao Liu"
+    ],
+    "submission_date": "2026-09-12T11:04:04Z",
+    "latest_updated": "2026-09-12T11:04:04Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13878v1"
+    ],
+    "abstract": "Spatio-temporal traffic data are central to intelligent transportation systems, yet their heterogeneity poses significant challenges for large-scale modeling. Existing pre-trained models often rely on a homogeneous modeling paradigm to handle highly heterogeneous traffic data. This fundamental mismatch not only limits model generalization but also leads to computationally expensive and parameter-inefficient designs. To this end, we propose FlexST, a novel pre-training framework that introduces modularity and adaptivity for traffic modeling. Specifically, we first propose a multi-resolution spatio-temporal diffusion module that captures both short-term fluctuations and long-range trends, effectively reconciling inputs with divergent temporal and spatial resolutions. After that, we construct a domain-adaptive mixture-of-experts that dynamically routes data to specialized sub-networks, enabling selective knowledge transfer while preventing negative interference across diverse domains. Moreover, we devise a unified periodic encoding strategy that injects resolution- and domain-aware inductive biases to harmonize periodic inconsistencies across datasets. Extensive experiments on 23 real-world traffic datasets demonstrate that FlexST significantly outperforms state-of-the-art baselines in zero- and few-shot settings, showcasing superior generalization, adaptability and efficiency. This work offers a new direction for building general-purpose pre-trained models capable of handling the complexity and variability of urban traffic systems.",
+    "status": "found"
+  },
+  "2609.13879": {
+    "arxiv_id": "2609.13879",
+    "title": "Map Users and Mapmakers: The Scope of Cognitive Attribution from Acquired Representations",
+    "authors": [
+      "Yiling Wu"
+    ],
+    "submission_date": "2026-09-12T11:04:44Z",
+    "latest_updated": "2026-09-12T11:04:44Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13879v1"
+    ],
+    "abstract": "An acquired representation can enlarge a system's cognitive repertoire without transferring the capacities exercised in producing that representation. This paper develops a framework for specifying that enlargement and its limits. Its central contribution is a five-part attribution table distinguishing effective tracking, application of acquired structures, acquisition from explicit specifications, acquisition from identifying observations, and retention and reuse. Each entry identifies a positive capacity commitment and a further claim requiring additional support. The argument deliberately grants meaningful content, causal efficacy, and productive inference, so that its conclusion does not depend on treating representations as inert encodings. Map and category examples show why even complete application competence leaves acquisition capacity undetermined, and why acquiring a criterion from its description differs from finding it in examples. Short formal proofs appear in an appendix. The framework is applied to Andrew Ng's world-model interpretation of Othello-GPT and to the specific indicators discussed in contemporary accounts of machine concepts. It preserves demonstrated recognition, classification, inference, and qualified acquisition while specifying what remains unestablished about criterion discovery and accumulation. The result concerns the scope of cognitive attribution rather than the constitutive conditions of concept possession: cognitive achievements deserve credit for the capacities they establish, without silently importing a broader repertoire through the labels attached to them.",
+    "status": "found"
+  },
+  "2609.13880": {
+    "arxiv_id": "2609.13880",
+    "title": "Investigating r-Process Diversity in Mildly Metal-Poor Stars Using the Th II 5989 Angstrom Line",
+    "authors": [
+      "Kurumi Furutsuka",
+      "Satoshi Honda"
+    ],
+    "submission_date": "2026-09-12T11:10:15Z",
+    "latest_updated": "2026-09-12T11:10:15Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13880v1"
+    ],
+    "abstract": "The origin of the heaviest elements remains a fundamental mystery, with the \"actinide-boost\" (Thorium overabundance) serving as a critical diagnostic of r-process nucleosynthesis conditions. While this diversity is well documented in extremely metal-poor (EMP) stars, its frequency in the mildly metal-poor (MMP) regime ($-2.0 < $ [Fe/H] $< -0.5$) is poorly constrained due to blending issues in the commonly used 4019 angstrom line. We present a systematic abundance analysis of mildly metal-poor stars, exploiting the relatively unblended Th II 5989 angstrom line. High-dispersion spectra were obtained using the 1.5 m telescope at Gunma Astronomical Observatory with GAOES, complemented by archival data from the Subaru Telescope/HDS retrieved via SMOKA. We successfully detected Th in 32 out of 42 sample stars. Our analysis demonstrates that the 5989 angstrom line is a useful diagnostic for Th abundance measurements in cool red giants. The mean [Th/Eu] ratio remains nearly constant over the MMP metallicity range, suggesting that progressive homogenization of the interstellar medium during Galactic chemical evolution would reduce abundance variations inherited from individual r-process events, or the dominant r-process events may share similar initial Th/Eu production ratios. While the [Th/Eu] ratio is nearly constant overall in the MMP regime, its dispersion appears to increase toward the metal-rich end of this regime and reaches approximately 1 dex near solar metallicity. This behavior may reflect the combined effects of variations in the initial Th/Eu production ratios of the progenitor objects, the mixing of r-process products in the interstellar medium, and the radioactive decay of Th over stellar lifetimes.",
+    "status": "found"
+  },
+  "2609.13881": {
+    "arxiv_id": "2609.13881",
+    "title": "Musical Timing in Studio Recordings",
+    "authors": [
+      "Konstantinos Tsioutas",
+      "George Xylomenos"
+    ],
+    "submission_date": "2026-09-12T11:10:48Z",
+    "latest_updated": "2026-09-12T11:10:48Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13881v1"
+    ],
+    "abstract": "Studio recording techniques vary considerably, ranging from live recordings in a shared acoustic space, to isolated booth recording and overdubbing, where musicians record their parts separately, while listening to previously recorded material. These approaches differ in terms of physical co-presence, visual contact, sound leakage, and acoustic isolation, factors that may influence musical coordination. This study investigates whether the recording style affects timing precision; specifically, whether musicians performing together in the same space achieve tighter temporal coordination. To address these questions, two datasets with a total of 391 multi-track recordings were analyzed to measure the timing relationships between musicians. In addition, an automated sound-leakage detection method was employed to infer the recording conditions of each song: pairwise Mel-spectrogram similarities between the tracks were computed, and summary statistics from the resulting similarity matrices were used to identify recordings with shared acoustic content. The results suggest that recordings showing evidence of shared room acoustics and sound leakage tend to exhibit lower timing variability than highly isolated recordings, whereas overdubbing is associated with increased timing variability.",
+    "status": "found"
+  },
+  "2609.13882": {
+    "arxiv_id": "2609.13882",
+    "title": "Vortex rivers and multiple voltage transitions in superconducting MgB$_2$ thin films",
+    "authors": [
+      "Anton Pokusinskyi",
+      "Clemens Schmid",
+      "Thomas Hauet",
+      "Oleksandr Dobrovolskiy"
+    ],
+    "submission_date": "2026-09-12T11:15:18Z",
+    "latest_updated": "2026-09-12T11:15:18Z",
+    "revised_dates": null,
+    "venue": "Low Temp. Phys. 52 (2026) 1074",
+    "latest_version": 1,
+    "versions": [
+      "2609.13882v1"
+    ],
+    "abstract": "Vortex dynamics govern the dissipation and magneto-resistive properties of type-II superconductors. At large transport currents, the current-voltage ($I$-$V$) characteristics of a superconductor in the mixed state usually exhibit a nonlinear upturn followed by an abrupt jump occurring due to a flux-flow instability. However, other transition behaviors are also possible, including the formation of phase-slip lines and normal domains. Which mechanism dominates depends on the sample uniformity, its dimensions relative to the coherence length and penetration depth, and the rates of electron energy relaxation and heat removal. Here, based on the time-dependent Ginzburg-Landau equation, we present the results of numerical modeling of the $I$-$V$ curves of superconducting films with various types of disorder. For a grain-boundary defect mesh, we find multiple voltage transitions overlaid with a nonlinear upturn of the $I$-$V$ curves. For randomly arranged elongated defects, the $I$-$V$ curves exhibit voltage steps, whereas for L-shaped defects oriented perpendicular to the transport current, the $I$-$V$ curves show extended linear regimes separated by voltage transitions. We analyze the evolution of the order parameter along the $I$-$V$ curves and discuss the experimental accessibility of the revealed dynamics regimes.",
+    "status": "found"
+  },
+  "2609.13883": {
+    "arxiv_id": "2609.13883",
+    "title": "Adaptive moving mesh methods for isotropic/anisotropic mean curvature flow with axisymmetric geometry",
+    "authors": [
+      "Yiming Wang",
+      "Meng Li"
+    ],
+    "submission_date": "2026-09-12T11:18:15Z",
+    "latest_updated": "2026-09-12T11:18:15Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13883v1"
+    ],
+    "abstract": "This paper introduces adaptive moving mesh methods for the numerical simulation of axisymmetric mean curvature flow, addressing both isotropic and anisotropic cases. The methods are developed within the framework of the mesh equidistribution principle, where a carefully designed tangential velocity is employed to dynamically redistribute mesh points during the evolution. To accurately capture the key geometric features of the evolving interfaces, we select monitor functions based on the curvature $κ$, its arc-length derivative $κ_s$, and the squared curvature $κ^2$. These monitor functions can be flexibly tailored to suit different problem settings and play a vital role in determining the resulting mesh quality and numerical accuracy. Spatial discretization is performed using central finite differences, while temporal integration is handled with first- and second-order time-stepping schemes, including the BDFk ($k=1,2$) and Crank-Nicolson methods. Additionally, a Lagrange multiplier approach is incorporated into the adaptive system to enforce the underlying geometric constraint, resulting in energy-stable numerical schemes. Numerical experiments confirm the convergence and energy stability of the proposed methods. More importantly, the results clearly show that the proposed methods offer significant advantages in complex geometric evolutions: by utilizing appropriately designed monitor functions, the adaptive methods achieve dynamic redistribution of mesh points, efficiently capturing localized geometric features, significantly improving numerical accuracy, and effectively preventing mesh degeneration, particularly in anisotropic cases.",
+    "status": "found"
+  },
+  "2609.13884": {
+    "arxiv_id": "2609.13884",
+    "title": "A Direct Algebraic Approach to Normal Ordering of Exponential Bosonic Operators with Applications to Two-Dimensional Excitonic Form Factors",
+    "authors": [
+      "Duy-Anh P. Nguyen",
+      "Ngoc-Tram D. Hoang",
+      "Dang-Khoa D. Le",
+      "Van-Hoang Le"
+    ],
+    "submission_date": "2026-09-12T11:20:07Z",
+    "latest_updated": "2026-09-12T11:20:07Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13884v1"
+    ],
+    "abstract": "We develop a systematic algebraic approach, based on the Wei--Norman factorization method, to the normal ordering of exponential bosonic operators and apply it to derive analytical excitonic form factors in two-dimensional semiconducting materials. By introducing an auxiliary parameter, the normal-ordering problem is reduced to a system of ordinary differential equations determined by the commutation relations of the underlying closed Lie algebra. The approach is first illustrated for exponential operators associated with the Heisenberg--Weyl and $su(1,1)$ algebras, and is then extended to two-mode bosonic operators involving $su(2)$ and a six-generator closed algebra that contains two coupled $su(1,1)$ subalgebras. For the excitonic application, the Levi--Civita transformation maps the two-dimensional exciton problem onto an oscillator representation, providing a natural formulation in terms of bosonic creation and annihilation operators. Combined with the Laplace and Fourier representations of the Rytova--Keldysh potential, this formulation reduces the interaction matrix elements to the evaluation of exponential bosonic form factors. The isotropic problem is governed by a three-generator $su(1,1)$ algebra, whereas the anisotropic case requires the full six-generator algebra together with an additional $su(2)$ factorization. Explicit analytical expressions for both form factors, $\\langle e^{-rt}\\rangle$ and $\\langle e^{i\\mathbf q\\cdot\\mathbf r}\\rangle$, are obtained, providing useful building blocks for matrix-element calculations in two-dimensional excitonic systems and potentially in other quantum problems involving exponential bosonic operators.",
+    "status": "found"
+  },
+  "2609.13885": {
+    "arxiv_id": "2609.13885",
+    "title": "Faithful certification of steering- and incompatibility-breaking channels",
+    "authors": [
+      "Po-Ting Hsu",
+      "Shin-Liang Chen"
+    ],
+    "submission_date": "2026-09-12T11:20:13Z",
+    "latest_updated": "2026-09-12T11:20:13Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13885v1"
+    ],
+    "abstract": "We consider a quantum steering scenario where Alice prepares a bipartite state, sends one subsystem to Bob through a quantum channel, and aims to convince him that their shared state is entangled. Bob, however, will never be convinced if the channel is steering-breaking, that is, if the channel destroys steerability for any input state. To verify that a channel renders a state useless for demonstrating steering, one must consider all possible measurements performed by Alice and check if the conditional states Bob receives admit a local-hidden-state (LHS) model. This is generally a hard problem since it requires considering an infinite number of measurement combinations. Here, we show that the method proposed in [Phys. Rev. Lett. 117, 190401 (2016); Phys. Rev. Lett. 117, 190402 (2016)] can be utilized to tackle this problem. Furthermore, owing to the intimate relation between steering and measurement incompatibility, our approach can faithfully certify whether a channel destroys incompatibility for any set of measurements. Finally, we propose an experimental criterion for certifying steering- and incompatibility-breaking channels, which may be of independent interest.",
+    "status": "found"
+  },
+  "2609.13886": {
+    "arxiv_id": "2609.13886",
+    "title": "Optimal Threshold Type Policies for Partially Observable Restless Bandits",
+    "authors": [
+      "Anu Krishna",
+      "Rahul Meshram",
+      "Kesav Ram Kaza"
+    ],
+    "submission_date": "2026-09-12T11:21:20Z",
+    "latest_updated": "2026-09-12T11:21:20Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13886v1"
+    ],
+    "abstract": "We study a finite-state partially observable restless multi-armed bandit (PO-RMAB) motivated by resource-constrained wildlife monitoring. The underlying condition of each location evolves independently, while only a limited number of locations can be actively monitored at each decision epoch. Activation reveals the current state, whereas passive operation provides no observation, yielding a collapsing-bandit belief dynamics. Our main contribution is a structural characterisation of optimal policies for the multidimensional belief-state problem. We establish sufficient conditions under which an activation advantage is monotone with respect to the belief state, and hence the optimal policy has the threshold type structure over the $(M-1)$-dimensional belief simplex. The key result is obtained by bounding the variation of the value function through a model-dependent Lipschitz constant. We further specialise the result to one-step birth-death dynamics and derive explicit bounds.",
+    "status": "found"
+  },
+  "2609.13887": {
+    "arxiv_id": "2609.13887",
+    "title": "On Banach and Kuratowski Theorem and generalized strong sequences",
+    "authors": [
+      "Joanna Jureczko"
+    ],
+    "submission_date": "2026-09-12T11:23:15Z",
+    "latest_updated": "2026-09-12T11:23:15Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13887v1"
+    ],
+    "abstract": "In 1929, Banach and Kuratowski proved under CH a combinatorial theorem, which implies that there is not a non-vanishing $σ$-additive finite measure on $\\mathbb{R}$ which is defined for every set of reals. In 2003 Bartoszyński and Halbeisen proved that Banach and Kuratowski theorem is equivalent to the existence of a K-Lusin set of the cardinality continuum an the existence of such sets is independent of $ZFC + \\neg CH$. On the other hand in 1965 Efimov introduced the strong sequences method which used to prove some well-known theorems in dyadic spaces. The aim of this paper is to show that all this notions can be generalized, i.e. considered in the generalized Baire space and to show some equivalences among them. Moreover, some applications in the direction of calibres, boundedness and partitions relations are also shown.",
+    "status": "found"
+  },
+  "2609.13888": {
+    "arxiv_id": "2609.13888",
+    "title": "Independence polynomials and the weak Lefschetz property for tadpole graphs",
+    "authors": [
+      "Tran Quang Hoa",
+      "Nguyen Duy Phuoc",
+      "Tran Nguyen Thanh Son"
+    ],
+    "submission_date": "2026-09-12T11:24:53Z",
+    "latest_updated": "2026-09-12T11:24:53Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13888v1"
+    ],
+    "abstract": "Let $T_{m,n}$ be the tadpole graph obtained by joining a cycle $C_m$ to a path $P_n$ by a bridge. We prove that the independence polynomial of every tadpole graph is unimodal and establish sharp bounds for its mode. The unimodality result follows from a general criterion for graphs obtained by attaching a path to a fixed vertex. Over a field of characteristic zero, we also give a complete classification of the pairs $(m,n)$ for which the Artinian algebra defined by the edge ideal of $T_{m,n}$ together with the squares of all variables has the weak Lefschetz property.",
+    "status": "found"
+  },
+  "2609.13889": {
+    "arxiv_id": "2609.13889",
+    "title": "When Malicious Instructions Persist: Persistent Memory Poisoning Attack on Harness-Based Agents",
+    "authors": [
+      "Shuhuai Huang",
+      "Jingfeng Zhang",
+      "Hong Jia"
+    ],
+    "submission_date": "2026-09-12T11:27:53Z",
+    "latest_updated": "2026-09-12T11:27:53Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13889v1"
+    ],
+    "abstract": "Harness design has transformed the development of LLM-based agents by integrating memory, tool use, and runtime control. However, this design also introduces security and privacy risks because malicious instructions from external sources may be written into persistent memory and persist across sessions. To study this risk, we propose PMPA, a Persistent Memory Poisoning Attack against harness-based agents. PMPA embeds malicious instructions into benign external sources and induces the victim agent to write them into persistent memory without directly accessing to the agent framework. Once stored, the poisoned memory can be retrieved in later sessions, triggering additional malicious actions and causing privacy leakage. We evaluate PMPA on OpenClaw and Claude Code across different backbone LLMs, input modalities, and trigger scenarios. Across all settings, PMPA achieves average Injection Success Rate (ISR) and Cross-session Attack Success Rate (C-ASR) of 73.7%/ 55.5% on OpenClaw and 66.9%/ 81.7% on Claude Code, while preserving benign task performance on both systems. We further evaluate a targeted prompt-level defense and find that it can reduce memory injection in many settings, but provides limited protection once the persistent memory has been poisoned.",
+    "status": "found"
+  },
+  "2609.13890": {
+    "arxiv_id": "2609.13890",
+    "title": "Learning How Much to Collaborate: Difficulty-Aware Topology Selection for Multi-Agent Code Generation",
+    "authors": [
+      "Yunsong Hong"
+    ],
+    "submission_date": "2026-09-12T11:28:16Z",
+    "latest_updated": "2026-09-12T11:28:16Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13890v1"
+    ],
+    "abstract": "Multi-agent systems for code generation are deployed with a single communication topology, chosen once for every problem. This is the wrong granularity. Evaluating five topologies on 614 problems from APPS, HumanEval+ and LiveCodeBench, we find that the advantage of hierarchical collaboration over a single agent grows from 2.4 points of pass@1 on the easiest third of problems to 21.1 points on the hardest third, while its token cost stays about ten times higher. We propose the Difficulty-Aware Topology Selector (DATS), which predicts each topology's probability of solving a problem and selects the one maximising predicted success minus cost. Its predictor is a graph network that treats the five topologies as nodes of a connectivity order rather than independent labels, worth 1.7 points over a flat multi-label head. Because the cost penalty is a single scalar recalibrable without retraining, routers compare at equal spend: under this budget-matched protocol six cost-aware methods span 21.6 percentage points, and two baselines leading DATS fall behind once calibrated to it. Fixed at 40% of the always-hierarchical cost, DATS reaches 77.7% pass@1 against 73.6% (always-hierarchical) and 74.3% (strongest learned competitor), all eleven pairwise McNemar comparisons surviving Holm-Bonferroni correction. The 4.1-point gain holds across four backbones spanning fourteen points of capability, and replacing the 39 interpretable features with a graph network or a pretrained encoder shifts accuracy by at most 1.3 points, never significantly. A cross-domain study on 400 mathematical reasoning problems reproduces the effect, the gap widening from 2.5 to 20.9 points.",
+    "status": "found"
+  },
+  "2609.13891": {
+    "arxiv_id": "2609.13891",
+    "title": "Polynomial corners in finite fields beyond the distinct-degree case",
+    "authors": [
+      "Ji Li",
+      "Chun-Yen Shen",
+      "Tuyen Trung Truong",
+      "Liangchuan Wu"
+    ],
+    "submission_date": "2026-09-12T11:29:05Z",
+    "latest_updated": "2026-09-12T11:29:05Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13891v1"
+    ],
+    "abstract": "We prove a quantitative polynomial Roth theorem for corners in \\(\\mathbb F_p^2\\) for arbitrary pairs of linearly independent polynomials. More precisely, given a positive integer $d$, there are constants $p_0$ and $C$ (depending only on $p$) so that for every $ p>p_0$, if polynomials \\(φ_1,φ_2\\in \\mathbb \\mathbb{F}_p [y]\\) are of degree $\\leq d$ vanishing at $0$ and are not linearly dependent, then every \\(A\\subset\\mathbb F_p^2\\) with $ |A|\\ge C p^{2-1/14} $ contains a nontrivial corner $$ (x_1,x_2),\\qquad (x_1+φ_1(y),x_2),\\qquad (x_1,x_2+φ_2(y)) $$ for some \\(y\\in\\mathbb F_p^\\times\\). This improves the estimate $p^{2-1/16}$ of Han--Lacey--Yang and removes the distinct-degree restriction from their quantitative theorem. The main obstruction is the equal-degree resonant case, where the Jacobian argument of Han--Lacey--Yang degenerates. We adjoin the frequency-independent part of the phase to form an augmented map \\(\\widetilde F:W\\to\\mathbb A^3\\) from the correlation threefold. We prove that this map is generically finite on every top-dimensional geometric component and has no two-dimensional fibre. Using the associated Artin--Schreier sheaf and Katz--Laumon estimates for Fourier transform of perverse sheaves, we obtain square-root cancellation outside an algebraic exceptional set of dimension at most one and uniformly bounded degree. A separate curve-sum argument gives uniform control on the exceptional set. An \\(\\ell^2\\) matrix estimate adapted to such sets completes the resonant case.",
+    "status": "found"
+  },
+  "2609.13892": {
+    "arxiv_id": "2609.13892",
+    "title": "CyclOT: Learning Quadratic Optimal Transport Maps via Synchronized Forward-Backward Interpolants",
+    "authors": [
+      "Shizhou Xu",
+      "Jiachen Liu",
+      "Shih-Hsin Wang",
+      "Stefan Broecker",
+      "Yuhao Huang",
+      "Bao Wang",
+      "Thomas Strohmer"
+    ],
+    "submission_date": "2026-09-12T11:31:53Z",
+    "latest_updated": "2026-09-12T11:31:53Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13892v1"
+    ],
+    "abstract": "We study the recovery of forward and reverse quadratic optimal-transport maps from unpaired samples in high dimensions. We introduce a bidirectional neural framework in which the learned maps induce forward and backward displacement interpolants, while the training objective combines bidirectional quadratic action, discriminator-restricted Jensen-Shannon endpoint objectives, and two-sided cycle consistency. The construction requires neither precomputed sample pairings nor an explicit convex-potential parameterization. For absolutely continuous probability measures supported on a compact convex set, and under the stated generator-approximation, discriminator-richness, and minimizer-attainment conditions, we prove a population recovery theorem: for every prescribed accuracy, the sum of the corresponding \\(L^2\\) errors between any global minimizer and the forward and reverse quadratic Brenier maps is below that accuracy, provided the discriminator level is sufficiently large and the annealing action weight becomes sufficiently small. Moreover, the cycle loss is bounded above by \\(λW_2^2(μ_0,μ_1)\\). Complementary results quantify approximate invertibility and show that exact endpoint Jensen-Shannon divergence and cycle consistency control missing target mass and many-to-one map collapse, respectively. Experiments on Swiss roll, MNIST, CelebA, single-cell perturbation data, and chest X-ray images evaluate endpoint fidelity, transport cost, inverse consistency, and the geometry of the induced interpolations.",
+    "status": "found"
+  },
+  "2609.13893": {
+    "arxiv_id": "2609.13893",
+    "title": "Lie to me: Detecting Managerial Evasiveness in Earnings Calls via Conversational Audio Encoders",
+    "authors": [
+      "Huizhong Chen",
+      "Huan Zhang"
+    ],
+    "submission_date": "2026-09-12T11:42:53Z",
+    "latest_updated": "2026-09-12T11:42:53Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13893v1"
+    ],
+    "abstract": "Earnings conference calls are a primary channel through which managers disclose information under analyst scrutiny. Prior work has linked vocal and lexical cues to future adverse outcomes, but often pools features over an entire call and underuses the interactive structure of Q&A. We propose a two-branch late-fusion framework for detecting managerial evasiveness as a predictor of extrinsic SEC events (primarily late filings): (i) an LLM-as-a-judge that maps Q&A text to an interpretable call-level vector X_text via a structured binary rubric, and (ii) a frozen conversational encoder whose temporal hidden states are read by a DeepVoice-style sequential reader to produce an audio representation h. Late fusion of (X_text, h) yields a call-level risk score p. On n=1,039 calls (212 late filings) with firm-grouped 5-fold CV, fusion reaches AUROC approx. 0.89, versus 0.55 for the text judge and 0.71 for duration alone. These results show that conversational audio dynamics encode managerial evasiveness beyond lexical content and call length, yielding a stronger early-warning signal of adverse SEC outcomes.",
+    "status": "found"
+  }
+}

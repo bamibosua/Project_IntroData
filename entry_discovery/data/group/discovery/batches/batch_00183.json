@@ -1,0 +1,395 @@
+{
+  "2511.15369": {
+    "arxiv_id": "2511.15369",
+    "title": "IPTQ-ViT: Post-Training Quantization of Non-linear Functions for Integer-only Vision Transformers",
+    "authors": [
+      "Gihwan Kim",
+      "Jemin Lee",
+      "Hyungshin Kim"
+    ],
+    "submission_date": "2025-11-19T11:56:16Z",
+    "latest_updated": "2025-11-19T11:56:16Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.15369v1"
+    ],
+    "abstract": "Previous Quantization-Aware Training (QAT) methods for vision transformers rely on expensive retraining to recover accuracy loss in non-linear layer quantization, limiting their use in resource-constrained environments. In contrast, existing Post-Training Quantization (PTQ) methods either partially quantize non-linear functions or adjust activation distributions to maintain accuracy but fail to achieve fully integer-only inference. In this paper, we introduce IPTQ-ViT, a novel PTQ framework for fully integer-only vision transformers without retraining. We present approximation functions: a polynomial-based GELU optimized for vision data and a bit-shifting-based Softmax designed to improve approximation accuracy in PTQ. In addition, we propose a unified metric integrating quantization sensitivity, perturbation, and computational cost to select the optimal approximation function per activation layer. IPTQ-ViT outperforms previous PTQ methods, achieving up to 6.44\\%p (avg. 1.78\\%p) top-1 accuracy improvement for image classification, 1.0 mAP for object detection. IPTQ-ViT outperforms partial floating-point PTQ methods under W8A8 and W4A8, and achieves accuracy and latency comparable to integer-only QAT methods. We plan to release our code https://github.com/gihwan-kim/IPTQ-ViT.git.",
+    "status": "found"
+  },
+  "2511.15370": {
+    "arxiv_id": "2511.15370",
+    "title": "The Empowerment of Science of Science by Large Language Models: New Tools and Methods",
+    "authors": [
+      "Guoqiang Liang",
+      "Jingqian Gong",
+      "Mengxuan Li",
+      "Gege Lin",
+      "Shuo Zhang"
+    ],
+    "submission_date": "2025-11-19T11:57:22Z",
+    "latest_updated": "2025-11-19T11:57:22Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.15370v1"
+    ],
+    "abstract": "Large language models (LLMs) have exhibited exceptional capabilities in natural language understanding and generation, image recognition, and multimodal tasks, charting a course towards AGI and emerging as a central issue in the global technological race. This manuscript conducts a comprehensive review of the core technologies that support LLMs from a user standpoint, including prompt engineering, knowledge-enhanced retrieval augmented generation, fine tuning, pretraining, and tool learning. Additionally, it traces the historical development of Science of Science (SciSci) and presents a forward looking perspective on the potential applications of LLMs within the scientometric domain. Furthermore, it discusses the prospect of an AI agent based model for scientific evaluation, and presents new research fronts detection and knowledge graph building methods with LLMs.",
+    "status": "found"
+  },
+  "2511.15371": {
+    "arxiv_id": "2511.15371",
+    "title": "CID: Measuring Feature Importance Through Counterfactual Distributions",
+    "authors": [
+      "Eddie Conti",
+      "Álvaro Parafita",
+      "Axel Brando"
+    ],
+    "submission_date": "2025-11-19T11:57:59Z",
+    "latest_updated": "2026-09-22T09:05:58Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2511.15371v1",
+      "2511.15371v2",
+      "2511.15371v3"
+    ],
+    "abstract": "Assessing the importance of individual features in Machine Learning is critical to understand the model's decision-making process. While numerous methods exist, the lack of a definitive ground truth for comparison highlights the need for alternative, well-founded measures. This paper introduces a novel post-hoc local feature importance method called Counterfactual Importance Distribution (CID). We generate two sets of positive and negative counterfactuals, model their distributions using Kernel Density Estimation, and rank features based on a distributional dissimilarity measure. This measure, grounded in a rigorous mathematical framework, satisfies key properties required to function as a valid metric. We showcase the effectiveness of our method by comparing with well-established local feature importance explainers. Our method not only offers complementary perspectives to existing approaches, but also improves performance on faithfulness metrics (both for comprehensiveness and sufficiency), resulting in more faithful explanations of the system. These results highlight its potential as a valuable tool for model analysis. Link to repository: https://github.com/EddieConti/CID",
+    "status": "found"
+  },
+  "2511.15372": {
+    "arxiv_id": "2511.15372",
+    "title": "A note on short minimal codes from subgeometries",
+    "authors": [
+      "Sam Adriaensen",
+      "Peter Sziklai",
+      "Zsuzsa Weiner"
+    ],
+    "submission_date": "2025-11-19T11:59:22Z",
+    "latest_updated": "2025-11-19T11:59:22Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.15372v1"
+    ],
+    "abstract": "In a 2022, Bartoli, Cossidente, Marino, and Pavese proved that in the projective space ${\\rm PG}(3,q^3)$, one can find three $\\mathbb F_q$-subgeometries such that the union of their point sets is a strong blocking set. This proves the existence of linear minimal codes with parameters $[3(q^2+1)(q+1),4]_{q^3}$ for every prime power $q$. We give a short proof of this result for odd values of $q > 9$, using the theory of small blocking sets in projective planes.",
+    "status": "found"
+  },
+  "2511.15373": {
+    "arxiv_id": "2511.15373",
+    "title": "Consistent Empirical Bayes Estimation of the Mean of a Mixing Distribution with Applications to Treatment of Nonresponse",
+    "authors": [
+      "Eitan Greenshtein"
+    ],
+    "submission_date": "2025-11-19T11:59:39Z",
+    "latest_updated": "2025-11-19T11:59:39Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.15373v1"
+    ],
+    "abstract": "We consider a Nonparametric Empirical Bayes (NPEB) framework. Let $Y_i$ be random variables, $Y_i \\sim f(y|θ_i)$, $i=1,...,n$, where $θ_i \\sim G$, and $θ_i \\in Θ$ are independent. The variables $Y_i $ are conditionally independent given $θ_i, \\; i=1,...,n$. The mixing distribution $G$ is unknown and assumed to belong to a nonparametric class $\\{G \\}$. Let $η(θ)$ be a function of $θ$. We address the problem of consistently estimating $E_G η(θ) \\equiv η_G$. This problem becomes particularly challenging when $G$ cannot be consistently estimated from the observed data. We motivate this problem, especially in contexts involving nonresponse and missing data. For such cases, a consistent estimation method is suggested and its performance is demonstrated through simulations.",
+    "status": "found"
+  },
+  "2511.15374": {
+    "arxiv_id": "2511.15374",
+    "title": "Judicial Sentencing Prediction Based on Hybrid Models and Two-Stage Learning Algorithms",
+    "authors": [
+      "Ruifen Dai",
+      "Xin Zheng",
+      "Fang Wang",
+      "Lei Guo"
+    ],
+    "submission_date": "2025-11-19T12:00:45Z",
+    "latest_updated": "2025-11-19T12:00:45Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.15374v1"
+    ],
+    "abstract": "The investigation of legal judgment prediction (LJP), such as sentencing prediction, has attracted broad attention for its potential to promote judicial fairness, making the accuracy and reliability of its computation result an increasingly critical concern. In view of this, we present a new sentencing model that shares both legal logic interpretability and strong prediction capability by introducing a two-stage learning algorithm. Specifically, we first construct a hybrid model that synthesizes a mechanism model based on the main factors for sentencing with a neural network modeling possible uncertain features. We then propose a two-stage learning algorithm: First, an adaptive stochastic gradient (ASG) algorithm is used to get good estimates for the unknown parameters in the mechanistic component of the hybrid model. Then, the Adam optimizer tunes all parameters to enhance the predictive performance of the entire hybrid model. The asymptotic convergence of the ASG-based adaptive predictor is established without requiring any excitation data conditions, thereby providing a good initial parameter estimate for prediction. Based on this, the fast-converging Adam optimizer further refines the parameters to enhance overall prediction accuracy. Experiments on a real-world dataset of intentional injury cases in China show that our new hybrid model combined with our two-stage ASG-Adam algorithm, outperforms the existing related methods in sentencing prediction performance, including those based on neural networks and saturated mechanism models.",
+    "status": "found"
+  },
+  "2511.15375": {
+    "arxiv_id": "2511.15375",
+    "title": "Parameter Importance-Driven Continual Learning for Foundation Models",
+    "authors": [
+      "Lingxiang Wang",
+      "Hainan Zhang",
+      "Zhiming Zheng"
+    ],
+    "submission_date": "2025-11-19T12:07:53Z",
+    "latest_updated": "2026-09-23T12:01:44Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.15375v1",
+      "2511.15375v2"
+    ],
+    "abstract": "Domain-specific post-training often causes catastrophic forgetting, making foundation models lose their general reasoning ability and limiting their adaptability to dynamic real-world environments. Preserving general capabilities while acquiring downstream domain knowledge is a central challenge for large language and multimodal models. Traditional continual learning methods, such as regularization, replay and architectural isolation, suffer from poor downstream performance, reliance on inaccessible historical data, or additional parameter overhead. While recent parameter-efficient tuning (PET) methods can alleviate forgetting, their effectiveness strongly depends on the choice of parameters and update strategies. In this paper, we introduce PIECE, a Parameter Importance Estimation-based Continual Enhancement method that preserves general ability while efficiently learning domain knowledge without accessing prior training data or increasing model parameters. PIECE selectively updates only 0.1% of core parameters most relevant to new tasks, guided by two importance estimators: PIECE-F based on Fisher Information, and PIECE-S based on a second-order normalization that combines gradient and curvature information. Experiments across three language models and two multimodal models show that PIECE maintains general capabilities and achieves state-of-the-art continual learning performance across diverse downstream tasks. Our results highlight a practical path to scalable, domain-adaptive foundation models without catastrophic forgetting.",
+    "status": "found"
+  },
+  "2511.15376": {
+    "arxiv_id": "2511.15376",
+    "title": "QSentry: Backdoor Detection for Quantum Neural Networks via Measurement Clustering",
+    "authors": [
+      "Shuolei Wang",
+      "Zimeng Xiao",
+      "Jinjing Shi",
+      "Heyuan Shi",
+      "Shichao Zhang",
+      "Xuelong Li"
+    ],
+    "submission_date": "2025-11-19T12:08:11Z",
+    "latest_updated": "2025-11-19T12:08:11Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.15376v1"
+    ],
+    "abstract": "Quantum neural networks (QNNs) are an important model for implementing quantum machine learning (QML), while they demonstrate a high degree of vulnerability to backdoor attacks similar to classical networks. To address this issue, a quantum backdoor attack detection framework called QSentry is proposed, in which a quantum Measurement Clustering method is introduced to detect backdoors by identifying statistical anomalies in measurement outputs. It is demonstrated that QSentry can effectively detect anomalous distributions induced by backdoor samples with extensive experiments. It achieves a 75.8% F1 score even under a 1% poisoning rate, and further improves to 85.7% and 93.2% as the poisoning rate increases to 5% and 10%, respectively. The integration of silhouette coefficients and relative cluster size enable QSentry to precisely isolate backdoor samples, yielding estimates that closely match actual poisoning ratios. Evaluations under various quantum attack scenarios demonstrate that QSentry delivers superior robustness and accuracy compared with three state-of-the-art detection methods. This work establishes a practical and effective framework for mitigating backdoor threats in QML.",
+    "status": "found"
+  },
+  "2511.15377": {
+    "arxiv_id": "2511.15377",
+    "title": "Towards Evolutionary Optimization Using the Ising Model",
+    "authors": [
+      "Simon Klüttermann"
+    ],
+    "submission_date": "2025-11-19T12:08:28Z",
+    "latest_updated": "2025-11-19T12:08:28Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.15377v1"
+    ],
+    "abstract": "In this paper, we study the problem of finding the global minima of a given function. Specifically, we consider complicated functions with numerous local minima, as is often the case for real-world data mining losses. We do so by applying a model from theoretical physics to create an Ising model-based evolutionary optimization algorithm. Our algorithm creates stable regions of local optima and a high potential for improvement between these regions. This enables the accurate identification of global minima, surpassing comparable methods, and has promising applications to ensembles.",
+    "status": "found"
+  },
+  "2511.15378": {
+    "arxiv_id": "2511.15378",
+    "title": "Terra Nova: A Comprehensive Challenge Environment for Intelligent Agents",
+    "authors": [
+      "Trevor McInroe"
+    ],
+    "submission_date": "2025-11-19T12:10:10Z",
+    "latest_updated": "2025-11-19T12:10:10Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.15378v1"
+    ],
+    "abstract": "We introduce Terra Nova, a new comprehensive challenge environment (CCE) for reinforcement learning (RL) research inspired by Civilization V. A CCE is a single environment in which multiple canonical RL challenges (e.g., partial observability, credit assignment, representation learning, enormous action spaces, etc.) arise simultaneously. Mastery therefore demands integrated, long-horizon understanding across many interacting variables. We emphasize that this definition excludes challenges that only aggregate unrelated tasks in independent, parallel streams (e.g., learning to play all Atari games at once). These aggregated multitask benchmarks primarily asses whether an agent can catalog and switch among unrelated policies rather than test an agent's ability to perform deep reasoning across many interacting challenges.",
+    "status": "found"
+  },
+  "2511.15379": {
+    "arxiv_id": "2511.15379",
+    "title": "Zero-Shot Open-Vocabulary Human Motion Grounding with Test-Time Training",
+    "authors": [
+      "Yunjiao Zhou",
+      "Xinyan Chen",
+      "Junlang Qian",
+      "Lihua Xie",
+      "Jianfei Yang"
+    ],
+    "submission_date": "2025-11-19T12:11:36Z",
+    "latest_updated": "2025-11-19T12:11:36Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.15379v1"
+    ],
+    "abstract": "Understanding complex human activities demands the ability to decompose motion into fine-grained, semantic-aligned sub-actions. This motion grounding process is crucial for behavior analysis, embodied AI and virtual reality. Yet, most existing methods rely on dense supervision with predefined action classes, which are infeasible in open-vocabulary, real-world settings. In this paper, we propose ZOMG, a zero-shot, open-vocabulary framework that segments motion sequences into semantically meaningful sub-actions without requiring any annotations or fine-tuning. Technically, ZOMG integrates (1) language semantic partition, which leverages large language models to decompose instructions into ordered sub-action units, and (2) soft masking optimization, which learns instance-specific temporal masks to focus on frames critical to sub-actions, while maintaining intra-segment continuity and enforcing inter-segment separation, all without altering the pretrained encoder. Experiments on three motion-language datasets demonstrate state-of-the-art effectiveness and efficiency of motion grounding performance, outperforming prior methods by +8.7\\% mAP on HumanML3D benchmark. Meanwhile, significant improvements also exist in downstream retrieval, establishing a new paradigm for annotation-free motion understanding.",
+    "status": "found"
+  },
+  "2511.15380": {
+    "arxiv_id": "2511.15380",
+    "title": "Simple relations from complex outflows: How the $M-σ$ relation emerges in a multi-phase environment",
+    "authors": [
+      "Matas Tartėnas",
+      "Kastytis Zubovas",
+      "Eimantas Skuodas"
+    ],
+    "submission_date": "2025-11-19T12:12:43Z",
+    "latest_updated": "2025-11-19T12:12:43Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.15380v1"
+    ],
+    "abstract": "The tight empirical $M-σ$ relation between the mass of a SMBH) and the velocity dispersion of the host galaxy bulge is often interpreted as the result of self-regulation by AGN feedback. This picture is motivated by analytical and semi-analytical models in which momentum-driven AGN winds can expel the gas once the SMBH reaches a critical mass. However, these models typically assume idealised conditions: smooth gas distributions, spherical symmetry, and very efficient cooling of the shocked AGN wind. We checked whether AGN outflows can establish the $M-σ$ relation in a multi-phase and turbulent galactic bulge subject to realistic radiative cooling while conserving the shocked AGN wind energy. We calculated a suite of purpose-built hydrodynamical simulations of AGN outflows in turbulent gas shells, covering a wide range of constant AGN luminosities. We tracked the outflow evolution over the course of $\\geq1$~Myr. We analysed the effect of AGN outflow on the cold dense gas and SMBH feeding, estimating the luminosity threshold for removing most of the cold gas from the central regions. We find that AGNs with significantly sub-Eddington luminosities cannot suppress SMBH feeding, while luminosities exceeding $\\sim 0.7$ times Eddington clear out both the diffuse hot gas and the cold clumps, consistent with the momentum-driven outflow formalism. We also show that dense gas clusters are affected almost exclusively by the AGN wind momentum, while the shocked wind energy escapes through low-density channels and inflates large bubbles of diffuse gas. Therefore, AGN wind-driven energy-conserving feedback in a turbulent multi-phase medium affects the dense gas only via the wind momentum. Thus, the momentum-driven outflow paradigm is applicable for explaining the $M-σ$ relation even in realistic systems.",
+    "status": "found"
+  },
+  "2511.15381": {
+    "arxiv_id": "2511.15381",
+    "title": "New algorithms for Feynman integral reduction and $\\varepsilon$-factorised differential equations",
+    "authors": [
+      "Iris Bree",
+      "Federico Gasparotto",
+      "Antonela Matijašić",
+      "Pouria Mazloumi",
+      "Dmytro Melnichenko",
+      "Sebastian Pögel",
+      "Toni Teschke",
+      "Xing Wang",
+      "Stefan Weinzierl",
+      "Konglong Wu",
+      "Xiaofeng Xu"
+    ],
+    "submission_date": "2025-11-19T12:16:15Z",
+    "latest_updated": "2026-05-11T16:23:12Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.15381v1",
+      "2511.15381v2"
+    ],
+    "abstract": "In this paper, we give a detailed account of the algorithm outlined in [1] for Feynman integral reduction and $\\varepsilon$-factorised differential equations. The algorithm consists of two steps. In the first step, we use a new geometric order relation in the integration-by-parts reduction to obtain a basis of master integrals, whose differential equations on the maximal cut are of a Laurent polynomial form in the regularisation parameter $\\varepsilon$ and compatible with a filtration. This step works entirely with rational functions. In a second step, we provide a method to $\\varepsilon$-factorise the aforementioned Laurent differential equations. The second step may introduce algebraic and transcendental functions. We illustrate the versatility of the algorithm by applying it to different examples with a wide range of complexity.",
+    "status": "found"
+  },
+  "2511.15382": {
+    "arxiv_id": "2511.15382",
+    "title": "Optimal Neumann boundary and distributed control of the Westervelt equation with time-fractional attenuation",
+    "authors": [
+      "Vanja Nikolić",
+      "Belkacem Said-Houari"
+    ],
+    "submission_date": "2025-11-19T12:18:41Z",
+    "latest_updated": "2025-11-19T12:18:41Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.15382v1"
+    ],
+    "abstract": "Optimal control of nonlinear acoustic waves is relevant in many medical ultrasound technologies, ranging from cancer therapy to targeted drug delivery, where it can help guide the precise deposition of acoustic energy. In this work, we study Neumann boundary and distributed control problems for tracking a prescribed pressure field governed by the Westervelt equation with time-fractional dissipation. This model captures nonlinear ultrasonic wave propagation in biological media and accounts for the experimentally observed power-law attenuation. We begin by extending the existing well-posedness theory for time-fractional equations to include inhomogeneous Neumann boundary data used as control inputs, which requires constructing an appropriate data extension and regularization. Using these analytical results for the forward problem, we prove the existence of globally optimal controls and analyze the stability of the optimization problem with respect to perturbations in the target pressure field and to vanishing regularization parameters. Finally, we investigate the associated adjoint equation, which has state-dependent coefficients, and use it to derive first-order necessary optimality conditions.",
+    "status": "found"
+  },
+  "2511.15383": {
+    "arxiv_id": "2511.15383",
+    "title": "A Compliance-Preserving Retrieval System for Aircraft MRO Task Search",
+    "authors": [
+      "Byungho Jo"
+    ],
+    "submission_date": "2025-11-19T12:25:40Z",
+    "latest_updated": "2025-11-19T12:25:40Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.15383v1"
+    ],
+    "abstract": "Aircraft Maintenance Technicians (AMTs) spend up to 30% of work time searching manuals, a documented efficiency bottleneck in MRO operations where every procedure must be traceable to certified sources. We present a compliance-preserving retrieval system that adapts LLM reranking and semantic search to aviation MRO environments by operating alongside, rather than replacing, certified legacy viewers. The system constructs revision-robust embeddings from ATA chapter hierarchies and uses vision-language parsing to structure certified content, allowing technicians to preview ranked tasks and access verified procedures in existing viewers. Evaluation on 49k synthetic queries achieves >90% retrieval accuracy, while bilingual controlled studies with 10 licensed AMTs demonstrate 90.9% top-10 success rate and 95% reduction in lookup time, from 6-15 minutes to 18 seconds per task. These gains provide concrete evidence that semantic retrieval can operate within strict regulatory constraints and meaningfully reduce operational workload in real-world multilingual MRO workflows.",
+    "status": "found"
+  },
+  "2511.15384": {
+    "arxiv_id": "2511.15384",
+    "title": "Transformations of the 2-component BKP tau functions",
+    "authors": [
+      "Mengyao Chen",
+      "Jipeng Cheng",
+      "Jinbiao Wang"
+    ],
+    "submission_date": "2025-11-19T12:26:04Z",
+    "latest_updated": "2025-11-19T12:26:04Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.15384v1"
+    ],
+    "abstract": "The 2-component BKP (2-BKP) hierarchy is an important integrable system corresponding to the infinite dimensional Lie algebras $b_{\\infty}$ and $d_{\\infty}$, which contains Novikov-Veselov equation and can be used to describe the total descendent potential of D type singularity. Here we firstly introduce the projections of the mixed pseudo-differential operators to rewrite the 2-BKP Lax equation in the Shiota construction, where the scalar Lax operators involving two differential operators $\\partial_1$ and $\\partial_2$ are used. Based upon this, the $(M_1,M_2)$-reduction of the 2-BKP hierarchy is given. After that, we give the most important result of this paper, i.e., the transformations of the 2-BKP tau functions, which are in fact the 2-BKP Darboux transformations. Here we further give the corresponding changes in the 2-BKP Lax operators. Also the corresponding results are investigated for the reduction case. Finally, the additional symmetries can be viewed as the special cases of the transformations of the 2-BKP tau functions. Besides, we discuss the Pfaffian identities of the 2-BKP tau functions by successive applications of the above transformations, which are closely related with the 2-BKP addition formulae.",
+    "status": "found"
+  },
+  "2511.15385": {
+    "arxiv_id": "2511.15385",
+    "title": "A relativistic mechanism for the enhanced isovector spin-orbit interaction suggested by parity-violating electron scattering experiments",
+    "authors": [
+      "Mengying Qiu",
+      "Tong-Gang Yue",
+      "Zhen Zhang",
+      "Lie-Wen Chen"
+    ],
+    "submission_date": "2025-11-19T12:26:56Z",
+    "latest_updated": "2026-06-18T01:18:02Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.15385v1",
+      "2511.15385v2"
+    ],
+    "abstract": "Recent high-precision parity-violating electron scattering (PVES) measurements on $^{208}$Pb (PREX-II) and $^{48}$Ca (CREX) reveal a tension in their simultaneous description within modern nuclear energy density functionals (EDFs). Analyses of these data suggest that an enhanced isovector spin-orbit interaction may help account for both measurements, but its relativistic origin in covariant density functional theory remains to be clarified. We show that, within the framework of a covariant density-dependent point-coupling EDF, an enhanced isovector tensor coupling can naturally induce such a strong isovector spin-orbit interaction. This mechanism provides a promising route toward a simultaneous description of the PREX-II and CREX results while preserving a reasonable description of finite nuclei and nuclear matter. PVES on $^{48}$Ca thus provides a sensitive probe of the covariant isovector tensor interaction.",
+    "status": "found"
+  },
+  "2511.15386": {
+    "arxiv_id": "2511.15386",
+    "title": "Dynamic stabilisation of mesospin chains",
+    "authors": [
+      "Damjan Dagbjartsson",
+      "Simon Banks",
+      "Björgvin Hjörvarsson"
+    ],
+    "submission_date": "2025-11-19T12:27:09Z",
+    "latest_updated": "2025-11-19T12:27:09Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.15386v1"
+    ],
+    "abstract": "We present a rare example of a one-dimensional system with short-range range interactions for which a self-stabilizing long-range ordered phase persists to finite temperatures. Our model offers a new perspective on the origins of shape anisotropy on the mesoscopic scale in magnetic metamaterials. Specifically, we show how the combination of a physically realistic stray-field potential and the spatial dimensionality of the system can reduce the effective dimensionality of classical magnetic mesospins. The resulting emergent constraints on the magnetic excitation spectrum underpin the observed ordering, in stark contrast to the behaviour of analogous one-dimensional models with strictly isotropic spins.",
+    "status": "found"
+  },
+  "2511.15387": {
+    "arxiv_id": "2511.15387",
+    "title": "The singularity category via the stabilization",
+    "authors": [
+      "Xiao-Wu Chen"
+    ],
+    "submission_date": "2025-11-19T12:30:59Z",
+    "latest_updated": "2025-11-19T12:30:59Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.15387v1"
+    ],
+    "abstract": "We give a detailed proof of the following fundamental result: the singularity category of a ring is triangle equivalent to the stabilization of its stable module category. The result yields singular equivalences between rings of different nature. We use Leavitt rings to describe singularity categories of artinian rings.",
+    "status": "found"
+  },
+  "2511.15388": {
+    "arxiv_id": "2511.15388",
+    "title": "Multiple Sides of 36 Coins: Measuring Peer-to-Peer Infrastructure Across Cryptocurrencies",
+    "authors": [
+      "Lucianna Kiffer",
+      "Lioba Heimbach",
+      "Dennis Trautwein",
+      "Yann Vonlanthen",
+      "Oliver Gasser"
+    ],
+    "submission_date": "2025-11-19T12:31:46Z",
+    "latest_updated": "2025-11-19T12:31:46Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.15388v1"
+    ],
+    "abstract": "Blockchain technologies underpin an expanding ecosystem of decentralized applications, financial systems, and infrastructure. However, the fundamental networking layer that sustains these systems, the peer-to-peer layer, of all but the top few ecosystems remains largely opaque. In this paper, we present the first longitudinal, cross-network measurement study of 36 public blockchain networks. Over 9 months, we deployed 15 active crawlers, sourced data from two additional community crawlers, and conducted hourly connectivity probes to observe the evolving state of these networks. Furthermore, by leveraging Ethereum's discovery protocols, we inferred metadata for an additional 19 auxiliary networks that utilize the Ethereum peer discovery protocol. We also explored Internet-wide scans, which only require probing each protocol's default ports with a simple, network-specific payload. This approach allows us to rapidly identify responsive peers across the entire address space without having to implement custom discovery and handshake logic for every blockchain. We validated this method on Bitcoin and similar networks with known ground truth, then applied it to Cardano, which we could not crawl directly. Our study uncovers dramatic variation in network size from under 10 to more than 10,000 active nodes. We quantify trends in IPv4 versus IPv6 usage, analyze autonomous systems and geographic concentration, and characterize churn, diurnal behavior, and the coverage and redundancy of discovery protocols. These findings expose critical differences in network resilience, decentralization, and observability. Beyond characterizing each network, our methodology demonstrates a general framework for measuring decentralized networks at scale. This opens the door for continued monitoring, benchmarking, and more transparent assessments of blockchain infrastructure across diverse ecosystems.",
+    "status": "found"
+  }
+}

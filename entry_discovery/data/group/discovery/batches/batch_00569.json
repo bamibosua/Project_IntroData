@@ -1,0 +1,424 @@
+{
+  "2608.10387": {
+    "arxiv_id": "2608.10387",
+    "title": "Hip Energized Monopedal Hopping",
+    "authors": [
+      "Shane Rozen-Levy",
+      "Griffon McMahon",
+      "Daniel Koditschek"
+    ],
+    "submission_date": "2026-08-11T02:28:04Z",
+    "latest_updated": "2026-08-11T02:28:04Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10387v1"
+    ],
+    "abstract": "We present a novel stepping strategy for pitch unlocked planar monopeds where the reaction torques from stabilizing pitch with a conventional PD + feedfoward controller are recruited to counteract energetic losses from damping. By moving the location of the mass center, our controller increases the pitch stabilization torque, thereby adding energy to the gait. A new stepping policy adjusts the distribution of energy between the radial and angular degrees of freedom to counteract dissipative losses and achieve a user specified balance between steady state fore-aft speed and apex height. Hybrid averaging analysis yields closed form expressions for the fixed points and eigenvalues of the resulting gait, lending insight into the interplay between the physical and control parameters' influence on performance. Simulation studies on a generic 5 link biped and a careful model of the Penn Jerboa reveal a useful correspondence to these analytical predictions. Physical experiments on the Penn Jerboa exhibit stable locomotion with speeds ranging from 1.02 m/s to 1.77 m/s (5.10 leg lengths/s to 8.85 leg lengths/s) in a manner effectively approximated by the mathematical analysis.",
+    "status": "found"
+  },
+  "2608.10388": {
+    "arxiv_id": "2608.10388",
+    "title": "An Optically Motivated Gamma-ray Study of Fermi-LAT Novae",
+    "authors": [
+      "Owen K. Henry",
+      "Timothy A. D. Paglione",
+      "David Zurek",
+      "Joshua Tan"
+    ],
+    "submission_date": "2026-08-11T02:28:38Z",
+    "latest_updated": "2026-08-11T02:28:38Z",
+    "revised_dates": null,
+    "venue": "Owen K. Henry et al 2026 ApJ 1010 45",
+    "latest_version": 1,
+    "versions": [
+      "2608.10388v1"
+    ],
+    "abstract": "High-energy (GeV) gamma-ray emission from nova eruptions was a surprise detection by the Fermi-LAT in 2010. Since then, it has been suggested that the gamma-rays from these systems are generated in collisionless non-relativistic shocks. In this theory, the observed correlation between optical and gamma-ray nova lightcurves naturally arises if a portion of the optical luminosity is reprocessed shock power. In this work, we investigate this scenario by analyzing Fermi-LAT-detected novae in varied time bins and then correlating the bin size that maximizes the nova's significance (tgam) with the nova's optical eruption data. Furthermore, we investigate whether there is a common optical decay across the sources' measured tgam values in the population. We find that across our population, a nova's $t_3$ (the time it takes the nova V band brightness to decay 3 magnitudes) appears to be the favored analysis bin that optimizes the Fermi-LAT detection significance, although there is significant spread. Additionally, we report V679 Car, a source previously noted as a marginally detected gamma-ray nova, as a $>5 σ$ detection in this work. We perform cross-correlation analysis of gamma-ray and optical lightcurves.",
+    "status": "found"
+  },
+  "2608.10389": {
+    "arxiv_id": "2608.10389",
+    "title": "Efficient Weak-Entropy PINN for Solving Hyperbolic Conservation Laws",
+    "authors": [
+      "Qi Gao",
+      "Kuang Huang",
+      "Xuan Di"
+    ],
+    "submission_date": "2026-08-11T02:34:15Z",
+    "latest_updated": "2026-08-11T02:34:15Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10389v1"
+    ],
+    "abstract": "In recent years, neural networks have significantly advanced numerical solutions of partial differential equations (PDEs). However, solving PDEs with discontinuous solutions, such as hyperbolic conservation laws, remains challenging for neural network-based methods such as physics-informed neural networks (PINNs). Existing methods often rely on strong prior assumptions such as knowledge of discontinuity locations, or they introduce artificial smoothing terms that degrade accuracy. However, accurately solving these conservation laws and predicting the formation and propagation of discontinuities in solutions is crucial in many practical applications, including gas dynamics and traffic flow modeling. In this paper, we introduce a novel Weak-Entropy PINN (WEPINN) framework for hyperbolic conservation laws with discontinuous solutions. The method enforces the governing equations in their weak (integral) formulation and incorporates the entropy condition to select the physically admissible solution, while employing the discrete fast Fourier transform (DFFT) for efficient numerical integration. Our method is tested through extensive numerical experiments on a variety of scalar conservation laws and systems of conservation laws in one and two dimensional spaces. These experiments demonstrate that our method can accurately resolve sharp discontinuities while effectively capturing interactions between multiple shock and rarefaction waves.",
+    "status": "found"
+  },
+  "2608.10390": {
+    "arxiv_id": "2608.10390",
+    "title": "A fifth-order divergence-free finite difference Hermite WENO scheme for ideal magnetohydrodynamics",
+    "authors": [
+      "Peiwen Chen",
+      "Shi Jin",
+      "Jianxian Qiu",
+      "Zhuang Zhao"
+    ],
+    "submission_date": "2026-08-11T02:40:19Z",
+    "latest_updated": "2026-08-11T02:40:19Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10390v1"
+    ],
+    "abstract": "In this paper, we present a fifth-order finite difference divergence-free Hermite weighted essentially non-oscillatory (HWENO) scheme for the ideal magnetohydrodynamics (MHD) equations. In this framework, both the solution and its spatial partial derivatives are evolved in time and jointly employed in the spatial reconstruction procedure. A major challenge in MHD simulations is preserving the divergence-free constraint of the magnetic field, which is generally violated by standard numerical methods designed solely for hyperbolic conservation laws. To address this issue, we first solve the MHD equations within the HWENO framework for hyperbolic conservation laws, yielding a magnetic field divergence that remains zero up to high-order accuracy in smooth regions. Subsequently, we apply a correction that evenly distributes the divergence error among the partial derivatives involved in the divergence-free constraint, thereby rendering the magnetic field discretely divergence-free at the new time level. This approach offers several advantages. First, the scheme retains the conservation property, as only the partial derivatives of the numerical solution are corrected, leaving the conserved variables unchanged. Second, the correction applied to the partial derivatives of the magnetic field components introduces only a high-order perturbation, thereby preserving the overall accuracy. Third, the divergence-free treatment significantly enhances robustness, as most benchmark test cases cannot be run stably without such a correction. Fourth, the correction is a simple linear operation applied at each stage of the time integration, incurring negligible additional computational cost. Extensive numerical experiments demonstrate the accuracy, resolution, efficiency, effectiveness, and robustness of the proposed scheme.",
+    "status": "found"
+  },
+  "2608.10391": {
+    "arxiv_id": "2608.10391",
+    "title": "Spatio-Temporal Scheduling for Robust and Efficient Multi-Transmitter Wireless Power Transfer",
+    "authors": [
+      "Yuna Sawada",
+      "Shino Shiraki",
+      "Nobuyoshi Kikuma",
+      "Takahiro Matsuda",
+      "Takefumi Hiraguri",
+      "Kazuki Maruta",
+      "Tomotaka Kimura"
+    ],
+    "submission_date": "2026-08-11T02:40:24Z",
+    "latest_updated": "2026-08-11T02:40:24Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10391v1"
+    ],
+    "abstract": "In multi-user wireless power transfer (WPT), scheduling schemes that determine the allocation of transmission resources among receivers play a crucial role in improving power transfer efficiency. Scheduling can be classified into time-division (TD) and space-division (SD) schemes, with the transmission order and direction designed to control when and to whom power is delivered. TD-WPT can exploit the nonlinear characteristics of rectennas by concentrating power in time; however, a system relying on highly directional transmission from a single location reduces robustness under time-varying channel conditions. This study investigated the effectiveness of spatio-temporal scheduling in coordinated multi-transmitter WPT systems. By employing multiple transmitters, the proposed method is robust against channel variations in delivering power. Moreover, coordinated beamforming among transmitters exploits inter-cluster interference. Simulation results demonstrate the potential of the proposed scheme for robust and efficient power supply, even under shadowing conditions.",
+    "status": "found"
+  },
+  "2608.10392": {
+    "arxiv_id": "2608.10392",
+    "title": "Share First, Route What Remains: A Unified Framework for Token-Adaptive MoE Computation",
+    "authors": [
+      "Gongli Zhang",
+      "Zhulin Liu",
+      "C. L. Philip Chen"
+    ],
+    "submission_date": "2026-08-11T02:40:58Z",
+    "latest_updated": "2026-08-11T02:40:58Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10392v1"
+    ],
+    "abstract": "Mixture-of-experts (MoE) models have recently moved beyond routing a fixed number of complete experts. Shared-expert designs preserve reusable knowledge, fine-grained methods vary computation within experts, and dynamic routers adapt the number of active experts. Yet these decisions are usually made independently, overlooking a basic dependency: extracting reusable computation changes both what remains and how much expert capacity the remainder needs. We study this dependency by decomposing sparsely upcycled feed-forward experts into key-value channels. Co-activated experts align at a subset of value positions; removing these positions changes expert preference; and greater shared coverage is associated with lower residual expert demand. These observations lead to one principle: share first, then route what remains. We instantiate it in UniF-MoE, a unified framework for token-adaptive MoE computation. Each expert is partitioned into aligned blocks. A shared-demand score sets the shared block count and pathway weight, key prototypes select the shared content, and the complementary demand determines the residual expert count through cumulative routing mass. A Gram regularizer separates and normalizes router embeddings, promoting diverse routing directions, sparse expert overlap, and a simple routing geometry. Experiments on DomainBed and GLUE show that this unified design improves predictive performance over representative static and dynamic MoEs while reducing activated computation, inference latency, and memory. Code is available at https://github.com/existence0420/UniF-MoE.",
+    "status": "found"
+  },
+  "2608.10393": {
+    "arxiv_id": "2608.10393",
+    "title": "Hidden in Plain Sight: Diffusion-Based Unrestricted Robotic Attacks on Vision-Language-Action Models",
+    "authors": [
+      "Jiahui Han",
+      "Yuhui Yao",
+      "Xin Wang",
+      "Jiafei Cao",
+      "Mingxuan Zhang",
+      "Danfeng Shan",
+      "Huiqi Deng",
+      "Guanchu Wang",
+      "Xia Hu"
+    ],
+    "submission_date": "2026-08-11T02:41:08Z",
+    "latest_updated": "2026-08-11T02:41:08Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10393v1"
+    ],
+    "abstract": "Vision-Language-Action (VLA) models have shown strong capabilities in controlling robots across diverse manipulation tasks. However, their adversarial robustness remains largely underexplored, and exploiting this weakness can lead to physical-world harm. Existing attacks on VLA models often rely on pixel-space perturbations or white-box access, resulting in noticeable artifacts and limited deployability in real-world robotic systems. In this work, we propose DURA, a diffusion-based unrestricted robotic attack that generates visually natural adversarial patches for VLA models. DURA supports both white-box and black-box attack settings, where the black-box setting requires only the predicted actions of the victim model. By optimizing along the latent trajectory of a pretrained diffusion model, DURA generates visually natural patches while steering the robot toward attacker-specified target actions. Extensive experiments in both simulation and the real physical world show that DURA consistently outperforms existing methods. Our findings expose a safety risk for physically deployed VLA models and call for stronger defenses.",
+    "status": "found"
+  },
+  "2608.10394": {
+    "arxiv_id": "2608.10394",
+    "title": "Improved cross-validated distances for multivariate pattern analysis",
+    "authors": [
+      "Laurent Caplette",
+      "Sarah Lippé"
+    ],
+    "submission_date": "2026-08-11T02:41:43Z",
+    "latest_updated": "2026-08-11T02:41:43Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10394v1"
+    ],
+    "abstract": "Characterizing the dissimilarity of neural representations between experimental conditions, and tracking it across time, is a central goal of multivariate pattern analysis. Guggenmos et al. (2018) assessed the reliability of many of the measures that can be used for that purpose on MEG data and recommended the use of either the cross-validated Euclidean distance or the within-class-corrected Pearson distance. In this commentary, we show that we can improve upon these distances. First, we show that the cross-validated Euclidean distance is equivalent to a sum of between-partition distances and that this equivalence can be leveraged to obtain a generalized variant, with increased reliability and accuracy. Second, we use the relationship between Euclidean distance and Pearson correlation to define a cross-validated correlation distance in a similar way. The resulting distance is more accurate and interpretable than a formulation proposed by Guggenmos and colleagues. Finally, we discuss the relationship between our generalized cross-validation and within-class correction, another strategy often used to increase reliability, and we show that generalized cross-validation results in higher accuracy for the correlation distance.",
+    "status": "found"
+  },
+  "2608.10395": {
+    "arxiv_id": "2608.10395",
+    "title": "Submillisecond Sequential Convex Optimization for Powered Landing via Dynamics Condensation and xPIPG",
+    "authors": [
+      "Wenbo Li",
+      "Ziqi Xu",
+      "Dai Shen",
+      "Shengping Gong"
+    ],
+    "submission_date": "2026-08-11T02:43:56Z",
+    "latest_updated": "2026-08-11T02:43:56Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10395v1"
+    ],
+    "abstract": "Powered landing with variable mass, free final time, and quadratic aerodynamic drag requires the repeated solution of local convex subproblems, whose main online cost lies in the long dynamics-equality chain and the inner iterations. This paper develops a condensed sequential convex approximation designed for low latency. Exact block elimination removes 217 intermediate-state components and 210 interval equations from a 31-node model, leaving 100 primal variables coupled by six terminal equalities. A low-weight energy term and fixed quadratic proximal regularization make the ideal surrogate strongly convex with predictable curvature. The inner solver is an extrapolated proportional--integral projected gradient (xPIPG) implemented with fixed-size arrays, $3\\times3$ interval solves, and a fused one-pass node map. The one-pass map is a deliberate low-cost approximation, not the exact joint proximal operator. We therefore evaluate the timed code by nonlinear trajectory residuals and independent physical checks rather than by a claim of exact KKT convergence. The single-precision C implementation completes one plan in four outer updates and 336 xPIPG updates. On an Intel Core i7-10875H, the median end-to-end solve time is \\SI{374}{\\micro\\second} and the P99 value is \\SI{512}{\\micro\\second}. All 100 common initial-state perturbations pass validation, and the median remains below \\SI{0.7}{\\milli\\second} for 15--51 nodes. An independent high-accuracy first-order-hold integration gives a terminal position error of \\SI{0.183}{\\meter}. Within the stated model, hardware, stopping rule, and timing boundary, this is, to the authors' knowledge, the first submillisecond end-to-end sequential-convex solve for a single powered-landing trajectory.",
+    "status": "found"
+  },
+  "2608.10396": {
+    "arxiv_id": "2608.10396",
+    "title": "FormStruct-Bench:A Hierarchical and Diagnostic Benchmark for Table-Form Document Structure Recognition",
+    "authors": [
+      "Lujie Ban",
+      "Jiangtao Zhu",
+      "Yuanheng Yu",
+      "Jiasheng Shi",
+      "Chenhao Ma"
+    ],
+    "submission_date": "2026-08-11T02:44:34Z",
+    "latest_updated": "2026-08-11T02:44:34Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10396v1"
+    ],
+    "abstract": "Transforming table-form documents into machine-processable records requires recovering not only their visible content but also the multilevel structure that organizes it. However, existing benchmarks evaluate either holistic document outputs or conventional table grids, and their aggregate scores provide little insight into where structural failures occur. We introduce FormStruct-Bench, a hierarchical and diagnostic benchmark that evaluates table-form document structure recognition at both the document level and progressively finer component levels, allowing aggregate performance to be traced back to specific structural failure modes. To construct auditable ground truth at scale, we annotate 70 reusable templates and expand them into 7,000 verified instances through a provenance-preserving Director--Artist--Verifier pipeline; all 1,100 instances in the template-disjoint test set additionally receive human review. Our evaluation protocol uses five primary metrics and three structure-specific diagnostics across page, schema, and component levels, together with slices over difficulty, structural constraints, and visual degradation. Across 14 API-hosted and locally deployable systems plus two SFT variants, the best document-level score reaches 83.85%, whereas the best reported fine-grained structural score remains below 18%. These results reveal a pronounced gap between reading document content and recovering the hierarchy and regional organization required for reliable table-form understanding.",
+    "status": "found"
+  },
+  "2608.10397": {
+    "arxiv_id": "2608.10397",
+    "title": "To EFX OR to MMS, That is the Question",
+    "authors": [
+      "Hadi Hosseini",
+      "Payas Khurana",
+      "Shraddha Pathak",
+      "Rohit Vaish"
+    ],
+    "submission_date": "2026-08-11T02:45:35Z",
+    "latest_updated": "2026-09-15T11:54:42Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.10397v1",
+      "2608.10397v2"
+    ],
+    "abstract": "We study the agent-wise disjunction of two central fairness notions for indivisible items, where every agent must be either envy-free up to any item (EFX) or maximin-share (MMS) satisfied. One might expect that having a flexible fairness requirement for individual agents will restore existence, especially because the existence of EFX itself resisted resolution for nearly a decade. Surprisingly, it does not. We construct counterexamples with three agents and eight submodular goods, and with three agents and seven submodular chores, significantly strengthening recent EFX impossibility results. On the positive side, we prove existence for additive mixed items with at most three valuation types when one type is a singleton. Additionally, we obtain polynomial-time approximation schemes for additive goods-only and chores-only instances. We also identify a clean separation between the disjunction and its constituents: For additive chores with two valuation types, EFX and MMS are both known to fail, whereas an EFX $\\vee$ MMS allocation always exists. Finally, we show that identical additive valuations even admit the conjunction EFX $\\wedge$ MMS for mixed items. Overall, our results show that allowing flexibility in choosing agent-specific fairness certificates expands the frontier of fair solutions while also uncovering surprising impossibilities.",
+    "status": "found"
+  },
+  "2608.10398": {
+    "arxiv_id": "2608.10398",
+    "title": "ELVAE: Evidential Learning-Based Variational Autoencoder for Uncertainty-Aware Generation",
+    "authors": [
+      "Ge Wang"
+    ],
+    "submission_date": "2026-08-11T02:45:59Z",
+    "latest_updated": "2026-08-20T18:04:11Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.10398v1",
+      "2608.10398v2"
+    ],
+    "abstract": "ELVAE places an input-dependent normal--inverse-gamma (NIG) hierarchy at each VAE latent coordinate, separating location uncertainty $u_{\\mathrm{epi}}=β/[ν(α-1)]$ from conditional variability $u_{\\mathrm{var}}=β/(α-1)$. The marginalized latent law, however, identifies only the three quotient coordinates $(γ,α,c)$ with $c=β(1+1/ν)$; reconstruction is blind to one $(ν,β)$ fiber direction. A companion theoretical analysis shows that the complete NIG prior and forward KL select a unique prior-relative canonical representative on each fiber, so canonical inverse allocation is not a fourth independent information channel. Empirically, trained inverse evidence $1/ν$ remains the strongest sensitivity-ranking score. At $τ_{\\mathrm{epi}}=1$, the three-seed mean high/low-$u_{\\mathrm{epi}}$ semantic-transition ratios are 1.98 on MNIST and 1.66 on Fashion-MNIST, falling to 1.33 and 1.16 under scale-matched controls. In the 20-draw MNIST component study with equal per-anchor perturbation energy, $1/ν$ gives high/low ratios 1.69 and 1.65 under the $u_{\\mathrm{epi}}$ and $u_{\\mathrm{var}}$ fields and 1.69 (95\\% interval 1.45--1.97) under a geometry-free isotropic field, whereas $u_{\\mathrm{var}}$ reverses the isotropic ordering to 0.76. Under the experimental prior, canonical $1/ν_{\\mathrm{can}}$ is a strictly increasing transform of $T=c/[α(γ^2+2)]$ and is bounded above by $3+\\sqrt{10}$. Thus ELVAE exposes a controllable sensitivity mechanism whose trained four-output realization is operationally informative, while the exact reconstruction-visible information remains three-dimensional and baseline image quality is a separate question.",
+    "status": "found"
+  },
+  "2608.10399": {
+    "arxiv_id": "2608.10399",
+    "title": "Observational Evidence Revises Presumed Large Ozone Worsening from Nitrogen Oxides Cuts",
+    "authors": [
+      "Xiang Weng",
+      "Xiao Lu",
+      "Jiawei Li",
+      "Grant Forster",
+      "Jessica Chapman",
+      "Beckie George",
+      "Yunbo Lu",
+      "Guowen He",
+      "Haofan Wang",
+      "Jingcheng Lai",
+      "Peer Nowack"
+    ],
+    "submission_date": "2026-08-11T02:46:28Z",
+    "latest_updated": "2026-08-11T02:46:28Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10399v1"
+    ],
+    "abstract": "Many air quality models indicate that rapid reductions in nitrogen oxides (NOx), without comparable controls on volatile organic compounds, have worsened summertime ozone pollution in urban China, producing a short-term strong ozone penalty. Other models, however, simulate the opposite response, suggesting that cutting down NOx has already helped mitigate ozone pollution. This contradiction obscures understanding of atmospheric chemistry and weakens guidance on control policy design. Here, we reconcile this disagreement and reveal the underestimated benefits of NOx emission reductions using a machine learning framework integrated with an observational constraint. We first constrain ozone responses under a 30% NOx reduction, comparable to the magnitude of NOx emission declines across major Chinese city clusters between 2015 and 2023. The constrained results indicate that ozone decreases prevail across urban China, with only small increases mainly in July 2015. This challenges the widespread ozone worsening that many models predict. We then extend the constraint across 10-60% NOx reductions, establishing its use for rapid ozone sensitivity diagnosis without exhaustive scenario modeling. This diagnosis shows that sustained NOx control increasingly favored ozone mitigation during 2015-2023, benefiting a growing share of China's population. These results underscore that continued NOx reductions can deliver larger ozone mitigation benefits than many models suggest.",
+    "status": "found"
+  },
+  "2608.10400": {
+    "arxiv_id": "2608.10400",
+    "title": "Do Judges Behave Like Algorithms?",
+    "authors": [
+      "Riya Manchanda",
+      "Eric Chen",
+      "Chloe Zhu",
+      "Cynthia Rudin",
+      "Brandon Garrett",
+      "Songman Kang"
+    ],
+    "submission_date": "2026-08-11T02:46:41Z",
+    "latest_updated": "2026-08-12T01:39:36Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.10400v1",
+      "2608.10400v2"
+    ],
+    "abstract": "What if judges already behave like algorithms? As artificial intelligence and algorithms are deployed in many settings, including the judicial system, many have debated whether judges should be allowed to rely on them. Instead, we ask whether judges follow predictable, algorithmic-like rules already. If judges already follow consistent, formula-like rules based on discrete and static factors such as criminal history, age, and charge type, then judicial behavior may be improved. However, if judges rely on individualized information that cannot be identified through court data, then standards-based decision-making may be more challenging to understand or improve. This work explores these questions by studying judicial decision-making in misdemeanor bail hearings in Harris County, Texas. Using available court data, we investigate whether magistrate judges follow what resembles an algorithm; whether they consider the same variables in their decision-making; and whether they are consistent with themselves and with each other. To do this, we train machine learning models for each judge, measure variable importance metrics to determine important variables for each judge's decision-making, and analyze outcomes of similar cases for judges. Our results reveal that these judges generally behave algorithmically: their decisions can be captured by small, interpretable formulas. However, in some cases, judges differ substantially, leading to surprising inconsistency and unequal treatment across similar defendants. Identifying cases where algorithms do not explain judicial decision-making can improve the justice system by focusing attention on decisions where individualized standards, rather than rules, better explains outcomes.",
+    "status": "found"
+  },
+  "2608.10401": {
+    "arxiv_id": "2608.10401",
+    "title": "Automatic Field-of-View Adjustment for a View-Expansive Microscope via LSTM-Based Gaze and Pipette Motion Interpretation",
+    "authors": [
+      "Kenta Yokoe",
+      "Takuya Hara",
+      "Tadayoshi Aoyama"
+    ],
+    "submission_date": "2026-08-11T02:49:27Z",
+    "latest_updated": "2026-08-11T02:49:27Z",
+    "revised_dates": null,
+    "venue": "IEEE Access, vol. 13, pp. 182915-182923, 2025",
+    "latest_version": 1,
+    "versions": [
+      "2608.10401v1"
+    ],
+    "abstract": "Intracytoplasmic sperm injection (ICSI) operators frequently adjust the field-of-view (FOV) during procedures, which interrupts workflow and increases procedure time. Conventional microscopes require manual objective lens switching and illumination adjustments to achieve different FOV sizes. We propose an AI-based automatic FOV adjustment method integrated with a view-expansive microscope. This microscope enables the simultaneous acquisition of a large FOV and high-resolution images using a single objective lens through multiview imaging with galvanometer mirrors and high-speed vision, thereby eliminating the need for physical lens exchanges. Our method utilizes a long short-term memory (LSTM) model to predict the appropriate FOV size based on real-time analysis of the pipette's position and velocity, combined with the operator's gaze position. The AI model is trained using ICSI procedure data from an expert with over five years of micromanipulation experience. Experimental evaluation with novice operators reveals that the proposed automatic FOV adjustment system significantly improves the ICSI procedure speed, reducing the average task completion time from 60.5 to 48.0 s (p < 0.001). The experiments also demonstrate that this improvement enables novice operators to achieve ICSI working speeds equivalent to those of expert operators.",
+    "status": "found"
+  },
+  "2608.10402": {
+    "arxiv_id": "2608.10402",
+    "title": "TideRL: Boosting Agentic RL Goodput with Readiness-Aware Scheduling",
+    "authors": [
+      "Yanyu Ren",
+      "Xizheng Wang",
+      "Xiao Liu",
+      "Bowen Lv",
+      "Hanchen Zhang",
+      "Shudan Zhang",
+      "Hanyu Lai",
+      "Shuai Wang",
+      "Li Chen",
+      "Dan Li",
+      "Jie Tang"
+    ],
+    "submission_date": "2026-08-11T02:49:33Z",
+    "latest_updated": "2026-08-11T02:49:33Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10402v1"
+    ],
+    "abstract": "Reinforcement learning (RL) for large language models is moving toward multi-turn agentic workloads, where rollout tasks repeatedly pause for external environments, resume with growing contexts, and finish at highly variable times. In this setting, RL training goodput, measured by training throughput, matters more than raw GPU occupancy: GPU waiting and repeated prefill recomputation are pure overhead. We present TideRL, a readiness-aware elastic RL system with Continuous Task Batching, Resource-Aware Ref-Actor Pipelining, and Elastic Resource Scaling. CTB preserves useful rollout state, $\\textrm{RA}^2\\textrm{P}$ selects between decoupled streaming and colocated aggregation from the ready backlog and arrival interval, and ERS moves ranks between rollout and training using the same readiness signals. Across text-only and multi-modal agentic workloads, TideRL improves RL training goodput by up to 5.6$\\times$ over synchronous baselines and over 33% over asynchronous baselines, while reaching similar task performance. It also improves KV cache hit rate by 1.58$\\times$, reduces per-step training time by up to 44.3%, and cuts total waiting time by up to 77.6%.",
+    "status": "found"
+  },
+  "2608.10403": {
+    "arxiv_id": "2608.10403",
+    "title": "Threat-guided Policy-aware Scene Perturbation for Safe Autonomous Driving with Online Reinforcement Learning",
+    "authors": [
+      "Xincong Hu",
+      "Lei Ou",
+      "Maosen Li",
+      "Jingtao Zhang",
+      "Liguo Hou",
+      "Zongzhang Zhang"
+    ],
+    "submission_date": "2026-08-11T02:49:50Z",
+    "latest_updated": "2026-08-11T02:49:50Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10403v1"
+    ],
+    "abstract": "Reinforcement learning (RL) has shown promising performance in autonomous driving, yet ensuring the safety of online RL policies remains challenging due to insufficient exposure to safety-critical driving scenes. The long-tailed nature of real-world traffic situations makes dangerous and rare interactions difficult to encounter through conventional sampling, limiting the ability of RL policies to learn robust safety behaviors. Existing methods improve training diversity by synthesizing challenging scenes or adversarial situations. However, these approaches typically optimize scene generation objectives separately from the evolving policy, without explicitly modeling how generated perturbations relate to the current policy's weaknesses and learning needs. In this paper, we propose Threat-guided Policy-aware Scene Perturbation (TPSP) for safe autonomous driving with online RL. TPSP introduces a policy-aware scene encoder to capture the interaction between policy behaviors and surrounding environments, enabling scene perturbation aligned with the current policy. Based on this representation, TPSP selectively perturbs critical objects rather than applying uniform modifications across the scene. Furthermore, we develop a threat-guided optimization strategy that evaluates perturbed scenes through threat-level differences between policy rollouts on original and perturbed scenes, guiding the generation of safety-critical scenes with higher training value. Comprehensive experiments demonstrate that TPSP improves safety learning efficiency, achieving strong safety performance on NAVSIM v2 with approximately 4 million kilometers of simulated driving data. Ablation studies verify that policy-aware targeted perturbations provide more informative safety-critical experiences than random or policy-unaware strategies, enabling safer driving under limited interaction budgets.",
+    "status": "found"
+  },
+  "2608.10404": {
+    "arxiv_id": "2608.10404",
+    "title": "Elbow Angle Guidance System Based on Surface Haptic Sensations Elicited by Lightweight Wearable Fabric Actuator",
+    "authors": [
+      "Kenta Yokoe",
+      "Tadayoshi Aoyama",
+      "Yuki Funabora",
+      "Masaru Takeuchi",
+      "Yasuhisa Hasegawa"
+    ],
+    "submission_date": "2026-08-11T02:49:57Z",
+    "latest_updated": "2026-08-11T02:49:57Z",
+    "revised_dates": null,
+    "venue": "Proc. 2024 IEEE International Conference on Advanced Intelligent Mechatronics (AIM), pp. 1447-1454, 2024",
+    "latest_version": 1,
+    "versions": [
+      "2608.10404v1"
+    ],
+    "abstract": "The demand for wearable haptic devices has rapidly increased for various applications. However, many haptic devices interfere with the wearer's activities and movements. In addition, several haptic devices fail to elicit intuitive haptic sensations by adjusting to the natural posture of the wearer. To address these issues, we propose an elbow angle guidance system using a lightweight wearable fabric actuator. The proposed actuator is made of fabric and has two McKibben-type artificial muscles attached to it, rendering it extremely lightweight and facilitating the delivery of surface haptic sensations to intuitively induce elbow extension and flexion. The surface haptic sensation elicited by the fabric actuator is adjusted to natural body movements without interfering with the wearer's movements. Moreover, the proposed system measures and guides the elbow angle by changing the intensity of the surface haptic sensation delivered to users in real time. The accuracy of the proposed system is demonstrated through experiments involving human participants.",
+    "status": "found"
+  },
+  "2608.10405": {
+    "arxiv_id": "2608.10405",
+    "title": "Never Stop Speaking: a Denial-of-Service Attack on End-to-End Speech Language Models",
+    "authors": [
+      "Shuozhe Cheng",
+      "Kunlan Xiang",
+      "Mingxuan Li",
+      "Ji Zhang",
+      "Dongxiao Liu",
+      "Wenbo Jiang"
+    ],
+    "submission_date": "2026-08-11T02:50:30Z",
+    "latest_updated": "2026-08-11T02:50:30Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10405v1"
+    ],
+    "abstract": "Many studies have shown that specially crafted inputs can induce large language models (LLMs) to generate excessively long outputs, resulting in significant computational overhead and resource consumption. While most existing denial-of-service (DoS) attacks target text-only LLMs, end-to-end (E2E) speech LLMs are rapidly emerging. Existing text-based DoS attacks primarily rely on prompt engineering, such as adversarial suffixes or semantic inducement, which exploit the discrete nature of text inputs and therefore cannot be directly transferred to continuous speech inputs. Moreover, prior studies on speech model security mainly focus on ASR or TTS systems, leaving the DoS vulnerability of E2E speech LLMs largely unexplored. To address this gap, we propose the perturbation-based DoS attack targeting E2E speech models. Instead of inducing long outputs through prompt manipulation, our method optimizes imperceptible acoustic perturbations to directly influence the model's autoregressive generation process while preserving the original input length. Specifically, we formulate the attack as a composite optimization objective that jointly suppresses EOS generation, encourages prolonged decoding, and largely preserves semantic consistency by integrating weighted EOS loss, top-k logit loss, length loss, and semantic alignment loss. To further improve stealthiness, we employ voice activity detection (VAD) to inject perturbations only into voiced regions. Extensive experiments on three open-source E2E speech LLMs demonstrate that our method achieves stable attack success rate while significantly increasing generation length and GPU resource consumption, revealing security risks in modern ALLMs.",
+    "status": "found"
+  },
+  "2608.10406": {
+    "arxiv_id": "2608.10406",
+    "title": "Post-Calibration Reliability Reranking of Relevance Decisions via Label-wise Monotone Projection",
+    "authors": [
+      "Inwoo Tae",
+      "Yongjae Lee"
+    ],
+    "submission_date": "2026-08-11T02:51:35Z",
+    "latest_updated": "2026-08-11T02:51:35Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10406v1"
+    ],
+    "abstract": "Web search, product search, and question-answering retrieval systems often assign a relevance label and confidence score to each query-candidate pair. The relevance label describes how well a page, product, or passage matches the query, while the confidence often guides downstream use or fallback decisions. Post-hoc calibration is therefore needed because misaligned confidence can make systems over-trust wrong predictions or unnecessarily defer correct ones. However, calibration mainly aligns confidence with average correctness, and does not remove predicted-label-dependent reliability differences that remain within the same calibrated confidence level. We address this gap with Label-wise Monotone Reliability Projection (MRP), which learns label-wise monotone functions that map calibrated confidence to correctness reliability while preserving the original predicted labels and class probabilities. The resulting reliability score reranks fixed predictions according to residual risk. Across six information access relevance datasets and multiple post-hoc calibrators, MRP improves reliability reranking and average fallback utility while preserving full-coverage accuracy and ECE. Structural ablations show that the main gains come from label-wise residual reliability rather than from global confidence remapping. We further analyze when MRP reliability scores can be embedded back into top-label probability geometry, showing that this projection is useful as a compatibility analysis but is distinct from the main reliability-reranking objective. The implementation will be made publicly available.",
+    "status": "found"
+  }
+}

@@ -1,0 +1,420 @@
+{
+  "2601.19156": {
+    "arxiv_id": "2601.19156",
+    "title": "Convergence of Muon with Newton-Schulz",
+    "authors": [
+      "Gyu Yeol Kim",
+      "Min-hwan Oh"
+    ],
+    "submission_date": "2026-01-27T03:40:48Z",
+    "latest_updated": "2026-01-27T03:40:48Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19156v1"
+    ],
+    "abstract": "We analyze Muon as originally proposed and used in practice -- using the momentum orthogonalization with a few Newton-Schulz steps. The prior theoretical results replace this key step in Muon with an exact SVD-based polar factor. We prove that Muon with Newton-Schulz converges to a stationary point at the same rate as the SVD-polar idealization, up to a constant factor for a given number $q$ of Newton-Schulz steps. We further analyze this constant factor and prove that it converges to 1 doubly exponentially in $q$ and improves with the degree of the polynomial used in Newton-Schulz for approximating the orthogonalization direction. We also prove that Muon removes the typical square-root-of-rank loss compared to its vector-based counterpart, SGD with momentum. Our results explain why Muon with a few low-degree Newton-Schulz steps matches exact-polar (SVD) behavior at a much faster wall-clock time and explain how much momentum matrix orthogonalization via Newton-Schulz benefits over the vector-based optimizer. Overall, our theory justifies the practical Newton-Schulz design of Muon, narrowing its practice-theory gap.",
+    "status": "found"
+  },
+  "2601.19157": {
+    "arxiv_id": "2601.19157",
+    "title": "GTFMN: Guided Texture and Feature Modulation Network for Low-Light Image Enhancement and Super-Resolution",
+    "authors": [
+      "Yongsong Huang",
+      "Tzu-Hsuan Peng",
+      "Tomo Miyazaki",
+      "Xiaofeng Liu",
+      "Chun-Ting Chou",
+      "Ai-Chun Pang",
+      "Shinichiro Omachi"
+    ],
+    "submission_date": "2026-01-27T03:43:39Z",
+    "latest_updated": "2026-01-27T03:43:39Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19157v1"
+    ],
+    "abstract": "Low-light image super-resolution (LLSR) is a challenging task due to the coupled degradation of low resolution and poor illumination. To address this, we propose the Guided Texture and Feature Modulation Network (GTFMN), a novel framework that decouples the LLSR task into two sub-problems: illumination estimation and texture restoration. First, our network employs a dedicated Illumination Stream whose purpose is to predict a spatially varying illumination map that accurately captures lighting distribution. Further, this map is utilized as an explicit guide within our novel Illumination Guided Modulation Block (IGM Block) to dynamically modulate features in the Texture Stream. This mechanism achieves spatially adaptive restoration, enabling the network to intensify enhancement in poorly lit regions while preserving details in well-exposed areas. Extensive experiments demonstrate that GTFMN achieves the best performance among competing methods on the OmniNormal5 and OmniNormal15 datasets, outperforming them in both quantitative metrics and visual quality.",
+    "status": "found"
+  },
+  "2601.19158": {
+    "arxiv_id": "2601.19158",
+    "title": "Accelerating Generative Recommendation via Simple Categorical User Sequence Compression",
+    "authors": [
+      "Qijiong Liu",
+      "Lu Fan",
+      "Zhongzhou Liu",
+      "Xiaoyu Dong",
+      "Yuankai Luo",
+      "Guoyuan An",
+      "Nuo Chen",
+      "Wei Guo",
+      "Yong Liu",
+      "Xiao-Ming Wu"
+    ],
+    "submission_date": "2026-01-27T03:45:37Z",
+    "latest_updated": "2026-01-27T03:45:37Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19158v1"
+    ],
+    "abstract": "Although generative recommenders demonstrate improved performance with longer sequences, their real-time deployment is hindered by substantial computational costs. To address this challenge, we propose a simple yet effective method for compressing long-term user histories by leveraging inherent item categorical features, thereby preserving user interests while enhancing efficiency. Experiments on two large-scale datasets demonstrate that, compared to the influential HSTU model, our approach achieves up to a 6x reduction in computational cost and up to 39% higher accuracy at comparable cost (i.e., similar sequence length).",
+    "status": "found"
+  },
+  "2601.19159": {
+    "arxiv_id": "2601.19159",
+    "title": "The complexity of semidefinite programs for testing $k$-block-positivity",
+    "authors": [
+      "Qian Chen",
+      "Benoît Collins"
+    ],
+    "submission_date": "2026-01-27T03:46:06Z",
+    "latest_updated": "2026-03-16T05:24:46Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.19159v1",
+      "2601.19159v2"
+    ],
+    "abstract": "We extend \\cite{chen2025srkbp} by analyzing the complexity of the $k$-block-positivity testing algorithm that stems from the optimization problem in Definition \\ref{definition:SDP-k-block-positivity}. In this paper, we investigate a symmetry reduction scheme based on rectangular shaped Young diagrams. Connecting the complexity to the dimensions of irreducible representations of $\\U(d)$, we derive an explicit formula for the complexity, which also clarifies why the semidefinite program hierarchy collapses in the $k=d$ case.",
+    "status": "found"
+  },
+  "2601.19160": {
+    "arxiv_id": "2601.19160",
+    "title": "KUBEDIRECT: Unleashing the Full Power of the Cluster Manager for Serverless Computing",
+    "authors": [
+      "Sheng Qi",
+      "Zhiquan Zhang",
+      "Xuanzhe Liu",
+      "Xin Jin"
+    ],
+    "submission_date": "2026-01-27T03:47:16Z",
+    "latest_updated": "2026-01-27T03:47:16Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19160v1"
+    ],
+    "abstract": "FaaS platforms rely on cluster managers like Kubernetes for resource management. Kubernetes is popular due to its state-centric APIs that decouple the control plane into modular controllers. However, to scale out a burst of FaaS instances, message passing becomes the primary bottleneck as controllers have to exchange extensive state through the API Server. Existing solutions opt for a clean-slate redesign of cluster managers, but at the expense of compatibility with existing ecosystem and substantial engineering effort. We present KUBEDIRECT, a Kubernetes-based cluster manager for FaaS. We find that there exists a common narrow waist across FaaS platform that allows us to achieve both efficiency and external compatibility. Our insight is that the sequential structure of the narrow waist obviates the need for a single source of truth, allowing us to bypass the API Server and perform direct message passing for efficiency. However, our approach introduces a set of ephemeral states across controllers, making it challenging to enforce end-to-end semantics due to the absence of centralized coordination. KUBEDIRECT employs a novel state management scheme that leverages the narrow waist as a hierarchical write-back cache, ensuring consistency and convergence to the desired state. KUBEDIRECT can seamlessly integrate with Kubernetes, adding ~150 LoC per controller. Experiments show that KUBEDIRECT reduces serving latency by 26.7x over Knative, and has similar performance as the state-of-the-art clean-slate platform Dirigent.",
+    "status": "found"
+  },
+  "2601.19161": {
+    "arxiv_id": "2601.19161",
+    "title": "Price of Locality in Permutation Mastermind: Are TikTok influencers Chaotic Enough?",
+    "authors": [
+      "Bernardo Subercaseaux"
+    ],
+    "submission_date": "2026-01-27T03:48:38Z",
+    "latest_updated": "2026-05-02T20:43:35Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.19161v1",
+      "2601.19161v2"
+    ],
+    "abstract": "In the permutation Mastermind game, the goal is to uncover a secret permutation $σ^\\star \\colon [n] \\to [n]$ by making a series of guesses $π_1, \\ldots, π_T$ which must also be permutations of $[n]$, and receiving as feedback after guess $π_t$ the number of positions $i$ for which $σ^\\star(i) = π_t(i)$. While the existing literature on permutation Mastermind suggests strategies in which $π_t$ and $π_{t+1}$ might be widely different permutations, a resurgence in popularity of this game as a TikTok trend shows that humans (or at least TikTok influencers) use strategies in which consecutive guesses are very similar. For example, it is common to see players attempt one transposition at a time and slowly see their score increase. Motivated by these observations, we study the theoretical impact of two forms of \"locality\" in permutation Mastermind strategies: $\\ell_k$-local strategies, in which any two consecutive guesses differ in at most $k$ positions, and the even more restrictive class of $w_k$-local strategies, in which consecutive guesses differ in a window of length at most $k$. We show that, in broad terms, the optimal number of guesses for local strategies is quadratic, and thus much worse than the $O(n \\lg n)$ guesses that suffice for non-local strategies. We also show NP-hardness of the satisfiability version for $\\ell_3$-local strategies, whereas in the $\\ell_2$-local variant the problem admits a randomized polynomial algorithm.",
+    "status": "found"
+  },
+  "2601.19162": {
+    "arxiv_id": "2601.19162",
+    "title": "Enabling SLO-Aware 5G Multi-Access Edge Computing with SMEC",
+    "authors": [
+      "Xiao Zhang",
+      "Daehyeok Kim"
+    ],
+    "submission_date": "2026-01-27T03:50:13Z",
+    "latest_updated": "2026-03-21T15:39:30Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.19162v1",
+      "2601.19162v2"
+    ],
+    "abstract": "Multi-access edge computing (MEC) promises to enable latency-critical applications by bringing computational power closer to mobile devices, but our measurements on commercial MEC deployments reveal frequent SLO violations due to high tail latencies. We identify resource contention at the RAN and the edge server as the root cause, compounded by SLO-unaware schedulers. Existing SLO-aware approaches require RAN--edge coordination, making them impractical for deployment and prone to poor performance due to coordination delays, limited heterogeneous application support, and ignoring edge resource contention. This paper introduces SMEC, a practical, SLO-aware resource management framework that facilitates deadline-aware scheduling through fully decoupled operations at the RAN and edge servers. Our key insight is that standard 5G protocols and application behaviors naturally provide information exploitable for SLO-aware management without extensive infrastructure or application changes. Evaluation on our 5G MEC testbed shows that SMEC achieves 90-96% SLO satisfaction versus under 6% for existing approaches, while reducing tail latency by up to 122$\\times$. We have open-sourced SMEC at https://github.com/smec-project.",
+    "status": "found"
+  },
+  "2601.19163": {
+    "arxiv_id": "2601.19163",
+    "title": "Strengthening the balanced set condition for the distance-regular graph of the bilinear forms",
+    "authors": [
+      "Paul Terwilliger",
+      "Jason Williford"
+    ],
+    "submission_date": "2026-01-27T03:51:27Z",
+    "latest_updated": "2026-01-27T03:51:27Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19163v1"
+    ],
+    "abstract": "We consider a distance-regular graph $Γ=(X, \\mathcal R)$ called the bilinear forms graph $H_q(D,N-D)$; we assume $N>2D\\geq 6$ and $q \\not=2$. We show that $Γ$ satisfies the following strengthened version of the balanced set condition. For a vertex $x \\in X$ and $0 \\leq i \\leq D$ define $Γ_i(x)=\\lbrace y \\in X\\vert \\partial(x,y)=i\\rbrace$, where $\\partial$ denotes the path-length distance function. Abbreviate $Γ(x)=Γ_1(x)$. Let $V={\\mathbb R}^X$ denote the standard module for ${\\rm Mat}_X(\\mathbb R)$. For $x\\in X$ let $\\hat x \\in V$ have $x$-coordinate 1 and all other coordinates 0. Let $E \\in {\\rm Mat}_X(\\mathbb R)$ denote the primitive idempotent that corresponds to the second largest eigenvalue of the adjacency matrix of $Γ$. For a subset $Ω\\subseteq X$ define $\\widehat Ω= \\sum_{x \\in Ω} \\hat x$. We fix two vertices $x,y \\in X$ and write $k=\\partial(x,y)$. To avoid degenerate situations, we assume $2 \\leq k \\leq D-1$. Using $y$ we obtain an equitable partition $\\lbrace O_i \\rbrace_{i=1}^6$ of the local graph $Γ(x)$. By construction $O_1 = Γ(x) \\cap Γ_{k-1}(y)$ and $O_6 = Γ(x) \\cap Γ_{k+1}(y)$. We call $\\lbrace O_i \\rbrace_{i=1}^6$ the $y$-partition of $Γ(x)$. Let $\\lbrace O'_i \\rbrace_{i=1}^6$ denote the $x$-partition of $Γ(y)$. According to the original balanced set condition, for $i \\in \\lbrace 1,6\\rbrace$ the vector $ E \\widehat O_i - E \\widehat O'_i$ is a scalar multiple of $E{\\hat x}-E{\\hat y}$. We show that for $1 \\leq i \\leq 6$ the vector $ E \\widehat O_i - E \\widehat O'_i$ is a scalar multiple of $E{\\hat x}-E{\\hat y}$. We investigate the consequences of this result.",
+    "status": "found"
+  },
+  "2601.19164": {
+    "arxiv_id": "2601.19164",
+    "title": "Derived graded modules",
+    "authors": [
+      "Ryo Ishizuka",
+      "Shou Yoshikawa"
+    ],
+    "submission_date": "2026-01-27T03:53:22Z",
+    "latest_updated": "2026-04-03T00:57:43Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.19164v1",
+      "2601.19164v2"
+    ],
+    "abstract": "We introduce the notion of the $\\infty$-category of (complete) derived $G$-graded modules over a $G$-graded ring $R$ for a torsion-free abelian group $G$, and we study its foundational properties. Moreover, we prove a categorical equivalence between (complete) derived $G$-graded modules over $R$ and derived (formal) comodules over a certain comonad constructed from the group ring $R[G]$ of $G$ over $R$.",
+    "status": "found"
+  },
+  "2601.19165": {
+    "arxiv_id": "2601.19165",
+    "title": "Educational Database Prototype: the Simplest of All",
+    "authors": [
+      "Yi Lyu",
+      "Yiyin Shen",
+      "Takashi Matsuzawa"
+    ],
+    "submission_date": "2026-01-27T03:56:32Z",
+    "latest_updated": "2026-01-27T03:56:32Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19165v1"
+    ],
+    "abstract": "Database Management System (DBMS) is designed to help store and process large collections of data, and is incredibly flexible to perform various kinds of optimizations as long as it achieves serializability with a high-level interface available. The current undergraduate level DBMS course in UW-Madison (i.e., CS564) involves implementing specific modules of DB architecture, including B+ tree, but students may end up spending numerous amounts of effort on corner cases and not gaining a more comprehensive understanding of the internal design. Thus, we present EduDB, a simple database prototype for educational purposes that provides students a clean, concise, and comprehensive overview of the database system. We also attempt to develop an integrative series of course projects based on EduDB, which offers a platform for students to perform any optimization learned during the semester.",
+    "status": "found"
+  },
+  "2601.19166": {
+    "arxiv_id": "2601.19166",
+    "title": "High-Performance Exact Synthesis of Two-Qubit Quantum Circuits",
+    "authors": [
+      "Andrew N. Glaudell",
+      "Michael Jarret",
+      "Swan Klein",
+      "Samuel S. Mendelson",
+      "T. C. Mooney",
+      "Mingzhen Tian"
+    ],
+    "submission_date": "2026-01-27T03:57:04Z",
+    "latest_updated": "2026-01-27T03:57:04Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19166v1"
+    ],
+    "abstract": "Exact synthesis provides unconditional optimality and canonical structure, but is often limited to small, carefully scoped regimes. We present an exact synthesis framework for two-qubit circuits over the Clifford+$T$ gate set that optimizes $T$-count exactly. Our approach exhausts a bounded search space, exploits algebraic canonicalization to avoid redundancy, and constructs a lookup table of optimal implementations that turns synthesis into a query. Algorithmically, we combine meet-in-the-middle ideas with provable pruning rules and problem-specific arithmetic designed for modern hardware. The result is an exact, reusable synthesis engine with substantially improved practical performance.",
+    "status": "found"
+  },
+  "2601.19167": {
+    "arxiv_id": "2601.19167",
+    "title": "Modeling Ordinal Survey Data with Unfolding Models",
+    "authors": [
+      "Rayleigh Lei",
+      "Abel Rodriguez"
+    ],
+    "submission_date": "2026-01-27T03:59:59Z",
+    "latest_updated": "2026-10-17T18:01:17Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.19167v1",
+      "2601.19167v2"
+    ],
+    "abstract": "Surveys that rely on ordinal polychotomous (Likert-like) items are widely employed to capture individual preferences because they allow respondents to express both the direction and strength of their preferences. Latent factor models traditionally used in this context implicitly assume that the response functions (the cumulative distribution of the ordinal outcome) are monotonic on the latent trait. This assumption can be too restrictive in several application areas, including in political science and marketing. In this work, we propose a novel ordinal probit unfolding model that can accommodate both monotonic and non-monotonic response functions. The advantages of the model are illustrated by analyzing an immigration attitude survey conducted in the United States.",
+    "status": "found"
+  },
+  "2601.19168": {
+    "arxiv_id": "2601.19168",
+    "title": "Nonvisual Support for Understanding and Reasoning about Data Structures",
+    "authors": [
+      "Brianna L. Wimer",
+      "Ritesh Kanchi",
+      "Kaija Frierson",
+      "Venkatesh Potluri",
+      "Ronald Metoyer",
+      "Jennifer Mankoff",
+      "Miya Natsuhara",
+      "Matt X. Wang"
+    ],
+    "submission_date": "2026-01-27T04:00:03Z",
+    "latest_updated": "2026-01-27T04:00:03Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19168v1"
+    ],
+    "abstract": "Blind and visually impaired (BVI) computer science students face systematic barriers when learning data structures: current accessibility approaches typically translate diagrams into alternative text, focusing on visual appearance rather than preserving the underlying structure essential for conceptual understanding. More accessible alternatives often do not scale in complexity, cost to produce, or both. Motivated by a recent shift to tools for creating visual diagrams from code, we propose a solution that automatically creates accessible representations from structural information about diagrams. Based on a Wizard-of-Oz study, we derive design requirements for an automated system, Arboretum, that compiles text-based diagram specifications into three synchronized nonvisual formats$\\unicode{x2013}$tabular, navigable, and tactile. Our evaluation with BVI users highlights the strength of tactile graphics for complex tasks such as binary search; the benefits of offering multiple, complementary nonvisual representations; and limitations of existing digital navigation patterns for structural reasoning. This work reframes access to data structures by preserving their structural properties. The solution is a practical system to advance accessible CS education.",
+    "status": "found"
+  },
+  "2601.19169": {
+    "arxiv_id": "2601.19169",
+    "title": "Recover Cell Tensor: Diffusion-Equivalent Tensor Completion for Fluorescence Microscopy Imaging",
+    "authors": [
+      "Chenwei Wang",
+      "Zhaoke Huang",
+      "Zelin Li",
+      "Wenqi Zhu"
+    ],
+    "submission_date": "2026-01-27T04:00:39Z",
+    "latest_updated": "2026-01-27T04:00:39Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19169v1"
+    ],
+    "abstract": "Fluorescence microscopy (FM) imaging is a fundamental technique for observing live cell division, one of the most essential processes in the cycle of life and death. Observing 3D live cells requires scanning through the cell volume while minimizing lethal phototoxicity. That limits acquisition time and results in sparsely sampled volumes with anisotropic resolution and high noise. Existing image restoration methods, primarily based on inverse problem modeling, assume known and stable degradation processes and struggle under such conditions, especially in the absence of high-quality reference volumes. In this paper, from a new perspective, we propose a novel tensor completion framework tailored to the nature of FM imaging, which inherently involves nonlinear signal degradation and incomplete observations. Specifically, FM imaging with equidistant Z-axis sampling is essentially a tensor completion task under a uniformly random sampling condition. On one hand, we derive the theoretical lower bound for exact cell tensor completion, validating the feasibility of accurately recovering 3D cell tensor. On the other hand, we reformulate the tensor completion problem as a mathematically equivalent score-based generative model. By incorporating structural consistency priors, the generative trajectory is effectively guided toward denoised and geometrically coherent reconstructions. Our method demonstrates state-of-the-art performance on SR-CACO-2 and three real \\textit{in vivo} cellular datasets, showing substantial improvements in both signal-to-noise ratio and structural fidelity.",
+    "status": "found"
+  },
+  "2601.19170": {
+    "arxiv_id": "2601.19170",
+    "title": "Multi-Agent Procedural Graph Extraction with Structural and Logical Refinement",
+    "authors": [
+      "Wangyang Ying",
+      "Yanchi Liu",
+      "Xujiang Zhao",
+      "Wei Cheng",
+      "Zhengzhang Chen",
+      "Wenchao Yu",
+      "Yanjie Fu",
+      "Haifeng Chen"
+    ],
+    "submission_date": "2026-01-27T04:00:48Z",
+    "latest_updated": "2026-01-27T04:00:48Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19170v1"
+    ],
+    "abstract": "Automatically extracting workflows as procedural graphs from natural language is promising yet underexplored, demanding both structural validity and logical alignment. While recent large language models (LLMs) show potential for procedural graph extraction, they often produce ill-formed structures or misinterpret logical flows. We present \\model{}, a multi-agent framework that formulates procedural graph extraction as a multi-round reasoning process with dedicated structural and logical refinement. The framework iterates through three stages: (1) a graph extraction phase with the graph builder agent, (2) a structural feedback phase in which a simulation agent diagnoses and explains structural defects, and (3) a logical feedback phase in which a semantic agent aligns semantics between flow logic and linguistic cues in the source text. Important feedback is prioritized and expressed in natural language, which is injected into subsequent prompts, enabling interpretable and controllable refinement. This modular design allows agents to target distinct error types without supervision or parameter updates. Experiments demonstrate that \\model{} achieves substantial improvements in both structural correctness and logical consistency over strong baselines.",
+    "status": "found"
+  },
+  "2601.19171": {
+    "arxiv_id": "2601.19171",
+    "title": "Bridging Gulfs in UI Generation through Semantic Guidance",
+    "authors": [
+      "Seokhyeon Park",
+      "Soohyun Lee",
+      "Eugene Choi",
+      "Hyunwoo Kim",
+      "Minkyu Kweon",
+      "Yumin Song",
+      "Jinwook Seo"
+    ],
+    "submission_date": "2026-01-27T04:01:53Z",
+    "latest_updated": "2026-02-09T01:35:44Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.19171v1",
+      "2601.19171v2"
+    ],
+    "abstract": "While generative AI enables high-fidelity UI generation from text prompts, users struggle to articulate design intent and evaluate or refine results-creating gulfs of execution and evaluation. To understand the information needed for UI generation, we conducted a thematic analysis of UI prompting guidelines, identifying key design semantics and discovering that they are hierarchical and interdependent. Leveraging these findings, we developed a system that enables users to specify semantics, visualize relationships, and extract how semantics are reflected in generated UIs. By making semantics serve as an intermediate representation between human intent and AI output, our system bridges both gulfs by making requirements explicit and outcomes interpretable. A comparative user study suggests that our approach enhances users' perceived control over intent expression and outcome interpretation, and facilitates more predictable iterative refinement. Our work demonstrates how explicit semantic representation enables systematic and explainable exploration of design possibilities in AI-driven UI design.",
+    "status": "found"
+  },
+  "2601.19172": {
+    "arxiv_id": "2601.19172",
+    "title": "A sixth-order compact time-splitting Fourier pseudospectral method for the Dirac equation",
+    "authors": [
+      "Weiguo Gao",
+      "Zhansi He",
+      "Jia Yin"
+    ],
+    "submission_date": "2026-01-27T04:02:03Z",
+    "latest_updated": "2026-10-11T10:59:04Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.19172v1",
+      "2601.19172v2"
+    ],
+    "abstract": "In this paper, we propose a novel sixth-order compact time-splitting scheme, denoted as $ S_{6\\text{c}}$, for solving the Dirac equation in the absence of external magnetic potentials. This method is easy to implement, and it provides a substantial reduction in computational complexity compared to the existing sixth-order splitting schemes. By incorporating a time-ordering technique, we also extend $S_{6\\text{c}}$ to address problems with time-dependent potentials. Comprehensive comparisons with various time-splitting methods show that $S_{6\\text{c}}$ exhibits significant advantages in terms of both precision and efficiency. Moreover, numerical results indicate that $S_{6\\text{c}}$ maintains the super-resolution property for the Dirac equation in the nonrelativistic regime in the absence of external magnetic potentials.",
+    "status": "found"
+  },
+  "2601.19173": {
+    "arxiv_id": "2601.19173",
+    "title": "SynthRM: A Synthetic Data Platform for Vision-Aided Mobile System Simulation",
+    "authors": [
+      "Yingzhe Mao",
+      "Chao Zou",
+      "Yanqun Tang"
+    ],
+    "submission_date": "2026-01-27T04:02:36Z",
+    "latest_updated": "2026-01-27T04:02:36Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19173v1"
+    ],
+    "abstract": "Vision-aided wireless sensing is emerging as a cornerstone of 6G mobile computing. While data-driven approaches have advanced rapidly, establishing a precise geometric correspondence between ego-centric visual data and radio propagation remains a challenge. Existing paradigms typically either associate 2D topology maps and auxiliary information with radio maps, or provide 3D perspective views limited by sparse radio data. This spatial representation flattens the complex vertical interactions such as occlusion and diffraction that govern signal behavior in urban environments, rendering the task of cross-view signal inference mathematically ill-posed. To resolve this geometric ambiguity, we introduce SynthRM, a scalable synthetic data platform. SynthRM implements a Visible-Aligned-Surface simulation strategy: rather than probing a global volumetric grid, it performs ray-tracing directly onto the geometry exposed to the sensor. This approach ensures pixel-level consistency between visual semantics and electromagnetic response, transforming the learning objective into a physically well-posed problem. We demonstrate the platform's capabilities by presenting a diverse, city-scale dataset derived from procedurally generated environments. By combining efficient procedural synthesis with high-fidelity electromagnetic modeling, SynthRM provides a transparent, accessible foundation for developing next-generation mobile systems for environment-aware sensing and communication.",
+    "status": "found"
+  },
+  "2601.19174": {
+    "arxiv_id": "2601.19174",
+    "title": "SHIELD: An Auto-Healing Agentic Defense Framework for LLM Resource Exhaustion Attacks",
+    "authors": [
+      "Nirhoshan Sivaroopan",
+      "Kanchana Thilakarathna",
+      "Albert Zomaya",
+      "Manu",
+      "Yi Guo",
+      "Jo Plested",
+      "Tim Lynar",
+      "Jack Yang",
+      "Wangli Yang"
+    ],
+    "submission_date": "2026-01-27T04:03:15Z",
+    "latest_updated": "2026-01-27T04:03:15Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19174v1"
+    ],
+    "abstract": "Sponge attacks increasingly threaten LLM systems by inducing excessive computation and DoS. Existing defenses either rely on statistical filters that fail on semantically meaningful attacks or use static LLM-based detectors that struggle to adapt as attack strategies evolve. We introduce SHIELD, a multi-agent, auto-healing defense framework centered on a three-stage Defense Agent that integrates semantic similarity retrieval, pattern matching, and LLM-based reasoning. Two auxiliary agents, a Knowledge Updating Agent and a Prompt Optimization Agent, form a closed self-healing loop, when an attack bypasses detection, the system updates an evolving knowledgebase, and refines defense instructions. Extensive experiments show that SHIELD consistently outperforms perplexity-based and standalone LLM defenses, achieving high F1 scores across both non-semantic and semantic sponge attacks, demonstrating the effectiveness of agentic self-healing against evolving resource-exhaustion threats.",
+    "status": "found"
+  },
+  "2601.19175": {
+    "arxiv_id": "2601.19175",
+    "title": "A Scalable Inter-edge Correlation Modeling in CopulaGNN for Link Sign Prediction",
+    "authors": [
+      "Jinkyu Sung",
+      "Myunggeum Jee",
+      "Joonseok Lee"
+    ],
+    "submission_date": "2026-01-27T04:11:40Z",
+    "latest_updated": "2026-03-05T11:54:20Z",
+    "revised_dates": null,
+    "venue": "International Conference on Learning Representations (ICLR), 2026, Vol. 2026, pp. 151880--151901",
+    "latest_version": 4,
+    "versions": [
+      "2601.19175v1",
+      "2601.19175v2",
+      "2601.19175v3",
+      "2601.19175v4"
+    ],
+    "abstract": "Link sign prediction on a signed graph is a task to determine whether the relationship represented by an edge is positive or negative. Since the presence of negative edges violates the graph homophily assumption that adjacent nodes are similar, regular graph methods have not been applicable without auxiliary structures to handle them. We aim to directly model the latent statistical dependency among edges with the Gaussian copula and its corresponding correlation matrix, extending CopulaGNN (Ma et al., 2021). However, a naive modeling of edge-edge relations is computationally intractable even for a graph with moderate scale. To address this, we propose to 1) represent the correlation matrix as a Gramian of edge embeddings, significantly reducing the number of parameters, and 2) reformulate the conditional probability distribution to dramatically reduce the inference cost. We theoretically verify scalability of our method by proving its linear convergence. Also, our extensive experiments demonstrate that it achieves significantly faster convergence than baselines, maintaining competitive prediction performance to the state-of-the-art models.",
+    "status": "found"
+  }
+}

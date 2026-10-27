@@ -1,0 +1,388 @@
+{
+  "2608.09647": {
+    "arxiv_id": "2608.09647",
+    "title": "A Preliminary Study on Simultaneous Coscheduling for Discrete GPU vs. Fused GPU",
+    "authors": [
+      "Poorna Gunathilaka",
+      "Nabayan Chaudhury",
+      "Kirshanthan Sundararajah",
+      "Wu-chun Feng"
+    ],
+    "submission_date": "2026-08-10T14:25:18Z",
+    "latest_updated": "2026-08-10T14:25:18Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09647v1"
+    ],
+    "abstract": "CPU-GPU coscheduling enables simultaneous execution of an application across both processing units, but its efficiency depends on workload partitioning and memory architecture. This preliminary study evaluates coscheduling on the NVIDIA GH200 Superchip compared to a discrete H100 PCIe platform. Using sparse conjugate gradient (CG) as a case study, we assess various work divisions across three memory-management paradigms: explicit copy, managed memory, and mapped memory. Our evaluation highlights the run time and programmability tradeoffs of reducing manual CPU-GPU data movement. The results show that compared with the H100 PCIe platform, GH200 makes several hybrid CPU-GPU work divisions competitive and makes managed memory practical for several matrices. These results suggest that integrated CPU-GPU platforms such as GH200 can improve both performance and programmability for coscheduled workloads.",
+    "status": "found"
+  },
+  "2608.09648": {
+    "arxiv_id": "2608.09648",
+    "title": "Exact boundary controllability of a singular/degenerate wave equation via singular Sturm-Liouville theory",
+    "authors": [
+      "Marcos Lopez-Garcia"
+    ],
+    "submission_date": "2026-08-10T14:25:45Z",
+    "latest_updated": "2026-08-10T14:25:45Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09648v1"
+    ],
+    "abstract": "We prove exact boundary controllability for a class of one-dimensional singular/degenerate wave equations of Sturm--Liouville type, \\[ u_{tt}-(x^αu_x)_x-βx^{α-1}u_x-μx^{α-2}u=0, \\qquad x\\in(0,1), \\] with a Dirichlet condition at the regular endpoint and a boundary control acting at the singular endpoint \\(x=0\\). The analysis is carried out in the fractional energy space % \\[ X=\\mathcal H^{ν+1/2}\\times \\mathcal H^{ν-1/2}, \\] associated with the corresponding singular Sturm--Liouville operator. Using the spectral decomposition induced by Bessel functions, we establish admissibility of the boundary observation operator and derive precise lower estimates for the observation coefficients. Exact observability is obtained through Ingham-type inequalities together with an abstract observability result for unitary groups. The proof treats simultaneously the subcritical, critical logarithmic, and limit-point regimes by means of singular Sturm--Liouville theory and boundary traces identified through the Lagrange bracket of the singular Sturm--Liouville expression.",
+    "status": "found"
+  },
+  "2608.09649": {
+    "arxiv_id": "2608.09649",
+    "title": "A pyramid with a Ramsey base is Ramsey",
+    "authors": [
+      "Kenneth Moore"
+    ],
+    "submission_date": "2026-08-10T14:26:02Z",
+    "latest_updated": "2026-08-10T14:26:02Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09649v1"
+    ],
+    "abstract": "A finite subset $X$ of ${\\mathbb R}^d$ is called a Ramsey set if for any number of colours $k$ there exists a dimension $n$ such that whenever ${\\mathbb R}^n$ is $k$-coloured there exists a monochromatic congruent copy of $X$. The classification of Ramsey sets is one of the major unsolved problems in the field of Euclidean Ramsey theory. Towards this, Ivan, Leader and Walters recently asked whether adding a point to a Ramsey set outside of its affine hull necessarily produces another Ramsey set. In this note, we answer their question in the affirmative.",
+    "status": "found"
+  },
+  "2608.09650": {
+    "arxiv_id": "2608.09650",
+    "title": "Listwise Cross-Encoder Fine-Tuning vs. Agentic Instruction Tuning for LLM Rerankers: A Systematic Study in Medical Procedure Reranking",
+    "authors": [
+      "Matan Fainzilber",
+      "Shlomit Plavner"
+    ],
+    "submission_date": "2026-08-10T14:28:30Z",
+    "latest_updated": "2026-08-10T14:28:30Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09650v1"
+    ],
+    "abstract": "Reranking medical procedures against patient queries is a critical component of health insurance information retrieval, complicated by a substantial lexical gap between patient language and clinical nomenclature. We present a systematic comparison of two reranking paradigms for this production task: (1) small cross-encoders (MedCPT, MiniLM-L12) fine-tuned with listwise learning-to-rank objectives across layer freezing configurations, and (2) Qwen3-Reranker-4B, a 4B-parameter instruction reranker whose prompt is iteratively refined via an agentic optimization loop driven by GPT-4.1. On a purpose-built dataset of 2,647 queries across 708 insurance services, we find that a 109M-parameter cross-encoder fine-tuned with ListNet outperforms the 4B-parameter model by 2.6 percentage points on NDCG@3 and 13.3 points on Spearman correlation - at 37x fewer parameters. We report practical findings, a scalable LLM based dataset construction pipeline, and deployment trade-offs relevant to production reranking systems. We release our code and a sample dataset to support reproducibility and adaptation to other domains.",
+    "status": "found"
+  },
+  "2608.09651": {
+    "arxiv_id": "2608.09651",
+    "title": "Representative Dataset Generation Framework for AI-based Failure Analysis during real-time Validation of Automotive Software Systems",
+    "authors": [
+      "Mohammad Abboush",
+      "Christoph Knieke",
+      "Andreas Rausch"
+    ],
+    "submission_date": "2026-08-10T14:28:42Z",
+    "latest_updated": "2026-08-10T14:28:42Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09651v1"
+    ],
+    "abstract": "Recently, thanks to its ability to extract knowledge from historical datasets, the data-driven approach has been widely used in various phases of the system development life cycle. During real-time system validation, remarkable achievements have been accomplished in developing an intelligent failure analysis based on historical data. However, despite its superiority over other conventional approaches, e.g., model-based and signal-based, the availability of representative datasets persists as a major challenge. Thus, for different engineering applications, new solutions to generate representative faulty data in different forms should be explored. Therefore, in this study, a novel approach based on Hardware-in-the-Loop (HIL) simulation and real-time Fault Injection (FI) method is proposed to generate and collect data samples under single and simultaneous faults for Machine Learning (ML) applications during system validation phases. The developed framework can generate not only sequential data, but also textual data including fault logs. The results show the applicability of the proposed framework in simulating and capturing the system behaviour under faults within the system components.",
+    "status": "found"
+  },
+  "2608.09652": {
+    "arxiv_id": "2608.09652",
+    "title": "QSVM-RQNN: Low-Qubit Recurrent Quantum Similarity Learning for Condition Monitoring and Fault Classification",
+    "authors": [
+      "Amit S. Patel",
+      "Himanshu R. Patel",
+      "Bikash K. Behera"
+    ],
+    "submission_date": "2026-08-10T14:28:42Z",
+    "latest_updated": "2026-08-10T14:28:42Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09652v1"
+    ],
+    "abstract": "In the Noisy Intermediate-Scale Quantum (NISQ) era, limited qubit availability and hardware noise constrain the practical deployment of quantum machine learning (QML). Existing quantum neural network (QNN) and quantum convolutional neural network (QCNN) architectures often require increasing quantum resources as the input dimension grows, limiting scalability on near-term devices. We propose QSVM-RQNN, a low-qubit framework integrating centroid-based Quantum Support Vector Machine (QSVM) similarity learning with Recurrent Quantum Neural Networks (RQNNs) for fault classification. The framework reduces the feature space using principal component analysis (PCA), partitions the reduced representation into sequential timesteps, and processes them using a compact three-qubit recurrent quantum architecture with shared parameters. Two complementary variants are developed: QSVM-RQNN-V1 performs class-conditioned joint quantum encoding of input and centroid segments, whereas QSVM-RQNN-V2 performs recurrent learning over timestep-wise quantum similarity representations. Experimental evaluation on multiple fault diagnosis datasets shows competitive and, in several cases, state-of-the-art performance compared with QSVM, QNN, QCNN, QSVM-QNN, QSVM-QCNN, and RQNN models. The proposed architectures provide favorable performance-efficiency trade-offs, improved recall, and enhanced fault detection on highly imbalanced datasets. These results demonstrate that integrating centroid-based quantum similarity learning with low-qubit recurrent representation learning provides an effective and scalable approach to condition monitoring and fault classification on resource-constrained NISQ devices.",
+    "status": "found"
+  },
+  "2608.09653": {
+    "arxiv_id": "2608.09653",
+    "title": "Predictive safety filter enhanced curriculum learning control for efficient vehicle dynamics controller",
+    "authors": [
+      "Baocong Zhang",
+      "Siliang Lu",
+      "Chenyang Li"
+    ],
+    "submission_date": "2026-08-10T14:28:44Z",
+    "latest_updated": "2026-08-10T14:28:44Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09653v1"
+    ],
+    "abstract": "Recent advances in learning-based control have enabled impressive achievements in solving complex control problems in various domains. However, since learning-based control may not be able to realize safety-guaranties, it is of great importance to enhance safety and robustness while maintaining good performances. Take vehicle motion \\& dynamics control as an example, in order to overcome the pain points of traditional methods such as heavy parameter calibration effort and learning-based control to bring better performance and efficiency in stability \\& agility over prior work for state-based vehicle control tasks, in this work, our method aims to develop a curriculum learning controller enhanced with physics-based predictive safety filter. The validation is conducted with the Python-CarSim platform, demonstrating better improvements and scalability under various maneuvers.",
+    "status": "found"
+  },
+  "2608.09654": {
+    "arxiv_id": "2608.09654",
+    "title": "Hallucination-Free GUI Grounding via Regression-Free Layout-Aware Matching",
+    "authors": [
+      "Yuke Li",
+      "Xuehan Hou"
+    ],
+    "submission_date": "2026-08-10T14:29:07Z",
+    "latest_updated": "2026-08-10T14:29:07Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09654v1"
+    ],
+    "abstract": "GUI agents are shifting from metadata-dependent large language models to purely visual multimodal large language models (MLLMs) that operate directly on screenshots. The core task, GUI grounding, requires translating abstract user instructions into precise element coordinates. This task faces a persistent dual obstacle: conventional grounding models lack the semantic richness to interpret abstract instructions, while end-to-end MLLMs suffer from coordinate hallucinations caused by deficient fine-grained perception. We propose a regression-free framework where a frozen MLLM performs instruction parsing and a dedicated grounding model handles precise localization without learning any coordinate regression. A frozen MLLM first elaborates the abstract instruction into a structured visual description rich in layout cues. These descriptions are then fed to a novel Layout-Aware GUI Grounding Model, which performs regression-free localization by matching against layout-prior candidates, inherently suppressing hallucinations and avoiding expensive fine-tuning. The grounding model is trained with only Text/Icon binary labels, requiring no coordinate regression parameters. On ScreenSpot-Pro, our method achieves over 20% improvement in grounding accuracy over end-to-end systems; on Mind2Web, it raises success rate and element selection rate by more than 15%. These results demonstrate that decoupling instruction understanding from layout-aware localization effectively resolves the core challenges of GUI interaction.",
+    "status": "found"
+  },
+  "2608.09655": {
+    "arxiv_id": "2608.09655",
+    "title": "Degeneracy: From Graphs to Matroids",
+    "authors": [
+      "Allan Bickle",
+      "James Dylan Douthitt",
+      "Wayne Ge",
+      "Jagdeep Singh"
+    ],
+    "submission_date": "2026-08-10T14:29:39Z",
+    "latest_updated": "2026-08-10T14:29:39Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09655v1"
+    ],
+    "abstract": "A graph is $k$-degenerate if every subgraph has a vertex of degree at most $k$. We extend this notion to matroids, defining a loopless matroid $M$ to be $k$-degenerate if every restriction of $M$ contains a cocircuit of size at most $k$; $M$ is minimally $k$-degenerate if it has cogirth $k$ and every proper restriction of $M$ has cogirth at most $k-1$. Our main result characterizes extremal minimally $k$-degenerate matroids. We also extend the known arboricity bound for matroids, showing that $k$-degenerate matroids have arboricity at most $k$ and providing sharper bounds.",
+    "status": "found"
+  },
+  "2608.09656": {
+    "arxiv_id": "2608.09656",
+    "title": "EgoHieraLoc: A Cortically Inspired Hierarchical Segmentation-Guided Framework for Egocentric Visual Query Localization",
+    "authors": [
+      "Yifei Cao",
+      "Guolong Wang",
+      "Mingliang Hou",
+      "Xiya Bu",
+      "Daming Liu",
+      "Yu Liu"
+    ],
+    "submission_date": "2026-08-10T14:31:01Z",
+    "latest_updated": "2026-08-10T14:31:01Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09656v1"
+    ],
+    "abstract": "Visual query localization (VQL) aims to retrieve and re-localize a queried object in egocentric videos, yet remains challenging when object boundaries are ambiguous and global context cannot effectively guide fine-grained localization. Human vision handles such ambiguity through a hierarchical process: it rapidly screens foreground candidates, selectively attends to the target despite distractors, refines perception via feedback between global context and local detail, and, when a single view is unreliable, integrates evidence across viewpoints according to its credibility. Inspired by these competencies, we propose \\textbf{EgoHieraLoc}, a unified framework for VQL-2D and VQL-3D. A Discriminative Parsing Module first extracts foreground-aware query representations using segmentation priors; a Query-Aware Module then performs robust target localization through discriminative correlation filtering with deformable modeling; and a Regional Adaptation Module feeds multi-scale context back into local regions to recover precise object boundaries. To extend this perceptual hierarchy to 3D localization, we introduce Geometric-Semantic Joint Confidence (GSJC), which multiplicatively couples segmentation confidence with local depth consistency, multi-view back-projection consistency, and triangulation-baseline quality, so that a viewpoint contributes to the 3D estimate only when it is credible both semantically and geometrically. Extensive experiments demonstrate state-of-the-art performance on both VQL-2D and -3D benchmarks.",
+    "status": "found"
+  },
+  "2608.09657": {
+    "arxiv_id": "2608.09657",
+    "title": "Wigner interferometry",
+    "authors": [
+      "Vladimir Lenok"
+    ],
+    "submission_date": "2026-08-10T14:31:40Z",
+    "latest_updated": "2026-08-10T14:31:40Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09657v1"
+    ],
+    "abstract": "Aims. This work aims to introduce a new method of interferometric measurements based on correlation of Wigner functions constructed for the fields from a distant source. Methods. This work presents theoretical studies of correlation of the Wigner functions. Numerical simulations support the findings. Results. It is shown that in comparison to the correlation of the fields, a correlation of their Wigner functions samples twice higher spatial frequencies of the source intensity distribution and has about twice smaller scale of the spatial pattern. This opens a fundamental possibility to improve the angular resolution of interferometric measurements by a factor of two.",
+    "status": "found"
+  },
+  "2608.09658": {
+    "arxiv_id": "2608.09658",
+    "title": "Removing Infrastructure Barriers in Human-Robot Collaboration Through Wireless Reconfigurable Cells",
+    "authors": [
+      "Emma Takács",
+      "Mátyás Hajós",
+      "Ádám Juniki",
+      "Ádám Fischer",
+      "Zoltán Komáromi",
+      "Kristóf Abai",
+      "Dániel Horváth",
+      "Sándor Máthé",
+      "Konstantinos Kousias",
+      "Bence Tipary"
+    ],
+    "submission_date": "2026-08-10T14:34:08Z",
+    "latest_updated": "2026-08-10T14:34:08Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09658v1"
+    ],
+    "abstract": "Human-Robot Collaboration (HRC) plays a vital role in dynamic, high mix, low volume industrial scenarios such as remanufacturing, which frequently face workcell rearrangements. Traditional setups are constrained by power and data cabling, restricting modularity and reconfigurations, while the selection of commercial wireless devices suitable for real-time perception and safe collaboration are limited in availability. This paper presents a highly flexible, wireless, 5G-based system that serves as a versatile experimental testbed for applications including remanufacturing, operator training, and user studies. To eliminate infrastructure barriers, the workcell integrates a novel battery-powered, multi-sensor platform prototype. Additionally, to support operator safety and system adaptability across environmental shifts, the system integrates a computer vision module for object detection and pose estimation, further augmented for robust hand recognition. Trained on synthetic and real data, the model reliably detects oriented grasping poses and human hands across varying lighting and background conditions (with an mAP@50-95 of 97.74 +- 0.10% and a mean inference time of 12.5 ms). Offloading these computationally intensive tasks to the edge via 5G, the proposed architecture contributes to resolving the bandwidth-latency trade-off. To demonstrate portability, the system was implemented in both Hungary and Norway, and was evaluated across a combination of public and private, Standalone and Non-Standalone 5G infrastructures. The performed network experiments produced results in round-trip response times down to 12 ms in case of compatible network-device pairings, suitable for safe, adaptive HRC. However, these measurements also revealed practical limitations related to interoperability in current 5G deployments that should be addressed in future works.",
+    "status": "found"
+  },
+  "2608.09659": {
+    "arxiv_id": "2608.09659",
+    "title": "A Domain-Specific Language for Formulating Hybrid Quantum-Classical Meta-Solver Strategies",
+    "authors": [
+      "Nick Poser",
+      "Domenik Eichhorn",
+      "Ina Schaefer"
+    ],
+    "submission_date": "2026-08-10T14:34:52Z",
+    "latest_updated": "2026-08-10T14:34:52Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09659v1"
+    ],
+    "abstract": "A key challenge when designing hybrid quantum-classical workflows is the identification of quantum candidates, that is, determining for which specific problems quantum advantages could potentially be achieved. When choosing between several candidates, it is crucial to consider the characteristics specific to the problem, as these can fundamentally determine how successful quantum or classical approaches will be. This implies that specialized expertise is needed to use hybrid quantum-classical workflows successfully. To address this challenge, we propose a domain-specific language (DSL) to express best-practices in solution strategies using a universal representation that is easy to use and share. This DSL provides a flexible approach to design hybrid quantum-classical workflows and to automate decisions for a wide range of problems, supporting decisions down to problem-specific details while remaining technically independent. Furthermore, we propose a framework that is built around our DSL that enables the execution of defined workflows using the ProvideQ toolbox as an orchestration layer. All contributions from this publication are open source.",
+    "status": "found"
+  },
+  "2608.09660": {
+    "arxiv_id": "2608.09660",
+    "title": "Improved Acceptance Criteria for Speculative Successive Cancellation Decoding of Polar Codes",
+    "authors": [
+      "Marvin Rübenacke",
+      "Ryan Seah",
+      "Warren J. Gross"
+    ],
+    "submission_date": "2026-08-10T14:36:30Z",
+    "latest_updated": "2026-08-10T14:36:30Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09660v1"
+    ],
+    "abstract": "Next-generation data-channel applications of polar codes demand decoding algorithms with high throughput and low latency. The recently proposed speculative successive cancellation (Spec-SC) decoding reduces average decoding latency by speculatively executing the right branch of successive cancellation (SC) decoding in parallel with the left branch, verifying the result once the g-function is computed. In this paper, we propose new acceptance criteria based on Hamming distance and ellipsoidal distance that improve acceptance rates, enabling greater speed-ups for lower-rate nodes. We further show that combining code membership testing with speculative decoding accelerates high-rate nodes as well. Numerical results confirm that both approaches outperform fast simplified SC (FSSC) decoding and Spec-SC with the original acceptance condition in terms latency by a wide margin, with virtually identical error-rate performance.",
+    "status": "found"
+  },
+  "2608.09661": {
+    "arxiv_id": "2608.09661",
+    "title": "Memory-, Circuit-, and Ansatz-Efficient VQLS for CFD on Hybrid Quantum-HPC Systems",
+    "authors": [
+      "Chao Lu",
+      "Muralikrishnan Gopalakrishnan Meena",
+      "Eduardo Antonio Coello Perez",
+      "Kalyana Chakravarthi Gottiparthi",
+      "Seongmin Kim"
+    ],
+    "submission_date": "2026-08-10T14:37:59Z",
+    "latest_updated": "2026-08-10T14:37:59Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09661v1"
+    ],
+    "abstract": "Fluid dynamics workloads are dominated by repeated solves of large, structured linear systems, motivating the search for quantum acceleration. The Variational Quantum Linear Solver (VQLS) is a leading near-term candidate, but practical deployment on hybrid quantum--high--performance computing (HPC) systems faces three persistent challenges: (i) the linear-combination-of-unitaries (LCU) encoding of the system matrix explodes in memory and runtime as the problem size grows, (ii) ansatz selection is largely empirical, with no clear link between standard circuit metrics and solver convergence, and (iii) end-to-end VQLS pipelines have rarely been exercised on production HPC hardware at non-trivial qubit counts. This work addresses these challenges through three contributions. First, we benchmark four matrix-encoding strategies---naive LCU, PennyLane-integrated, Fast Walsh--Hadamard Transform (FWHT)-based parallel Pauli decomposition, and an singular value decomposition (SVD)-based two-term LCU---and show that the FWHT approach reduces peak memory by up to $1298\\times$ on an $11\\times 11$ Hele--Shaw grid, while the SVD-based coherent VQLS delivers over $10{,}000\\times$ per-iteration speedup over standard Pauli-based VQLS at 8 qubits. Second, we evaluate 11 ansatz families with gradient-free and gradient-based optimizers on canonical Hele--Shaw flow, and find that expressibility and entanglement metrics correlate only weakly with VQLS convergence, motivating problem-aware ansatz design. Third, we deploy the full workflow on the OLCF Frontier supercomputer and successfully simulate a 15-qubit tridiagonal Toeplitz system on a single node. Together, these results establish a practical baseline for VQLS in hybrid quantum--HPC computation fluid dynamic (CFD) workflows and identify the remaining bottlenecks for larger problems.",
+    "status": "found"
+  },
+  "2608.09662": {
+    "arxiv_id": "2608.09662",
+    "title": "Recoiling Black Holes I. Burst of Observables",
+    "authors": [
+      "Erwan Hochart",
+      "Simon Portegies Zwart"
+    ],
+    "submission_date": "2026-08-10T14:39:23Z",
+    "latest_updated": "2026-08-10T14:39:23Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09662v1"
+    ],
+    "abstract": "We aim to investigate the tidal disruption and gravitational wave events shortly after a massive black hole binary merges in the galactic centre and whose remnant black hole is ejected from the galaxy. Using computational methods, black holes of mass $M_{\\bullet}=10^{5}$ M$_\\odot$ and $4\\times10^{5}$ M$_\\odot$ embedded in a nuclear star cluster are kicked at velocities of $v_k=300$ and $600$ km s$^{-1}$. Systems are integrated for $0.1$ Myr using a $4$th-order Hermite scheme. The kick instantaneously repopulates the loss cone, producing a strong burst of tidal disruption events and gravitational wave mergers. The anisotropy in the apsidal orientation of bound stars prolongs this burst phase. Rates increase for lower $v_k$, larger $M_{\\bullet}$ and for steeper nuclear star cluster density profiles at moment of merger. Assuming binary black holes scour a Bahcall-Wolf density profile during coalescence, ejected remnants with mass between $10^{5}\\leq M_{\\bullet}$ [M$_\\odot] \\leq 4\\times10^{5}$ generate observable offset events at a forecasted rate of $\\dot{N}\\lesssim290$ yr$^{-1}$ up to redshift $z=3$. If, at the moment of merger, the milliparsec scales of the nuclear star cluster are described by a shallow density profile ($γ=1$), this decreases to $\\dot{N}\\lesssim30$ yr$^{-1}$. The strong dependence on the initial density profile and recoil kick makes observables powerful probes of the nuclear star cluster post-massive black hole binary coalescence, and provides test for numerical relativity.",
+    "status": "found"
+  },
+  "2608.09663": {
+    "arxiv_id": "2608.09663",
+    "title": "Foliated Minimal Models and Flops",
+    "authors": [
+      "Paolo Cascini",
+      "Roktim Mascharak",
+      "Calum Spicer"
+    ],
+    "submission_date": "2026-08-10T14:40:08Z",
+    "latest_updated": "2026-08-10T14:40:08Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09663v1"
+    ],
+    "abstract": "We study minimal models and flops for foliations. We show that if $\\mathcal F$ is a rank one foliation with canonical singularities on a normal projective $\\mathbb Q$-factorial variety and $K_{\\mathcal F}$ is pseudo-effective, then any two outputs of the $K_{\\mathcal F}$-MMP are isomorphic. For co-rank one foliations on threefolds, we prove existence results for $D$-flops in the klt setting and, under additional hypotheses, in the F-dlt setting. By contrast, we construct examples showing that rank one foliations display pathologies absent from the classical MMP: flopping contractions need not admit $D$-flops, and nef and big canonical divisors need not give rise to canonical models, even in the category of algebraic spaces.",
+    "status": "found"
+  },
+  "2608.09664": {
+    "arxiv_id": "2608.09664",
+    "title": "Elementary first integrals of integral differential systems",
+    "authors": [
+      "Chitrarekha Sahu",
+      "Varadharaj R. Srinivasan"
+    ],
+    "submission_date": "2026-08-10T14:41:32Z",
+    "latest_updated": "2026-08-10T14:41:32Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09664v1"
+    ],
+    "abstract": "For a field $F$ of characteristic zero with a derivation $δ$, we provide a necessary and sufficient condition for a system of differential equations \\begin{equation*} δy_1=f_0, \\quadδy_2=f_1,\\quad\\dots\\quad,δy_n=f_{n-1}, \\end{equation*} where $f_0\\in F$, $f_1\\in F[y_1]$, $\\dots$, $f_{n-1}\\in F[y_1,\\dots,y_{n-1}]$, to have elementary first integrals.",
+    "status": "found"
+  },
+  "2608.09665": {
+    "arxiv_id": "2608.09665",
+    "title": "Carleman--Picard and time-dimensional reduction for inverse initial-data problems in nonlinear transport with memory",
+    "authors": [
+      "Navaraj Neupane",
+      "Loc H. Nguyen"
+    ],
+    "submission_date": "2026-08-10T14:42:06Z",
+    "latest_updated": "2026-08-10T14:42:06Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09665v1"
+    ],
+    "abstract": "We study an inverse initial-data problem for a quasilinear transport equation with nonlinear and memory effects. The unknown initial state is reconstructed from time-dependent measurements on the outflow boundary, with prescribed inflow data. We first apply a Legendre--exponential time-dimensional reduction to transform the governing equation into a finite nonlinear system in space. We then develop a Carleman-weighted and Tikhonov-regularized Picard method. At each iteration, the nonlinear terms are evaluated using the previous iterate, leading to a linear minimization problem with a unique solution. A Carleman estimate for the principal transport operator is used to prove that, for a sufficiently large Carleman parameter, the resulting Picard map is contractive on a prescribed admissible set. Consequently, the method converges from an arbitrary initial guess in that set. We also establish stability with respect to noisy outflow data. These analytical results concern the truncated and regularized reduced problem. Two-dimensional numerical experiments demonstrate accurate reconstruction of single and multiple inclusions, robustness with respect to noise, and rapid convergence of the Picard iteration.",
+    "status": "found"
+  },
+  "2608.09666": {
+    "arxiv_id": "2608.09666",
+    "title": "Open Evaluation Agent: Efficient and Promptable Evaluation of Visual Generative Models",
+    "authors": [
+      "Shulin Tian",
+      "Ziqi Huang",
+      "Fan Zhang",
+      "Hongyuan Zhu",
+      "Yu Qiao",
+      "Ziwei Liu"
+    ],
+    "submission_date": "2026-08-10T14:42:10Z",
+    "latest_updated": "2026-08-10T14:42:10Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09666v1"
+    ],
+    "abstract": "Recent advances in visual generative models have enabled high-quality image and video generation, but evaluating these models often demands sampling hundreds or thousands of images or videos, which is computationally expensive. Existing evaluation methods also rely on rigid pipelines that overlook specific user needs and provide numerical results without clear explanations. Mimicking how humans quickly form impressions of a model's capabilities from only a few samples, we propose the Evaluation Agent framework, which employs human-like strategies for efficient, dynamic, multi-round evaluations, offering detailed, user-tailored analyses. Given a natural-language evaluation request, the agent decomposes it into sub-aspects, generates targeted prompts, samples images or videos from the evaluated model, invokes suitable evaluation tools, and iteratively updates its plan from the observed evidence, covering both predefined benchmark dimensions and open-ended user concerns. The framework is thus efficient, promptable, explainable, and scalable across models and tools. Experiments show that Evaluation Agent reduces evaluation time to 10% of traditional methods while delivering comparable results. We further introduce Open Evaluation Agent (Open-EA) by constructing EA-CoT-10K, a corpus of history-conditioned step-level instruction-tuning records derived from multi-round evaluation rollouts, and training EA-3B from Qwen2.5-3B-Instruct as a local planning backbone that preserves the structured reasoning, tool invocation, and summary protocol of the API-based agent while reducing dependence on proprietary backbones. Experiments validate the API-based agent on established T2I/T2V benchmarks and open-ended queries, and evaluate Open-EA on four in-domain and three out-of-domain T2V generator families, showing partial cross-family transfer of the learned policy.",
+    "status": "found"
+  }
+}

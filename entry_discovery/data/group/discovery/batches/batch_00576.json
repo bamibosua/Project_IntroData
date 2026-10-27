@@ -1,0 +1,410 @@
+{
+  "2608.10527": {
+    "arxiv_id": "2608.10527",
+    "title": "Construction of 3D-Ferroelectric Polarization Microstructure and Detection of Polarization Invariants under Induced Flexoelectric Strains",
+    "authors": [
+      "Sabarigresan Murugan",
+      "Vaishnavi S M",
+      "Ranjith Ramadurai"
+    ],
+    "submission_date": "2026-08-11T06:07:38Z",
+    "latest_updated": "2026-08-11T06:07:38Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10527v1"
+    ],
+    "abstract": "Ferroelectric thin films that are heterophased and polycrystalline possess strain sensitive piezoelectric behavior. However, a direct insight into polarization orientations within a given grain and how mechanical stresses reconfigures the ferro elastically coupled polarization orientations remains ambiguous. A polarization component resolved imaging in a Piezoresponse Force Microscope (PFM) was developed in combination with correlative structure and phonon studies that provide insights into grain orientation, domains and bending stress driven phase transitions. The method correlates the polarization invariant and the respective grain orientations present underneath. The technique facilitates an experimental inverse model approach to determine crystallographic grain orientation from the ferroelectric domain. A three point bending stage introduces a flexoelectric strain in Ba0.85,Ca0.15Zr0.1Ti0.9O3_BCZT thin films and simultaneous polarization imaging. This novel technique potentially captures the formation of new polarization invariant of a monoclinic phase that appears under high pressures. The experimental findings pave way for development of inverse modelling of heterophased and polycrystalline systems.",
+    "status": "found"
+  },
+  "2608.10528": {
+    "arxiv_id": "2608.10528",
+    "title": "When Do Anchor-Based Pointwise LLM Rerankers Help? Retriever Quality, Statistical Scope, and Anchor Design",
+    "authors": [
+      "Utshab Kumar Ghosh",
+      "Shubham Chatterjee"
+    ],
+    "submission_date": "2026-08-11T06:10:42Z",
+    "latest_updated": "2026-08-15T06:10:43Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2608.10528v1",
+      "2608.10528v2",
+      "2608.10528v3"
+    ],
+    "abstract": "Anchor-based pointwise LLM reranking scores each candidate against a shared reference passage to recover cross-document context at pointwise cost. We study when this actually helps, using GCCP/PAGC as a representative method. Our study is reproduction-first. We use reproduction as a starting point for a controlled component-level stress test of anchor-based pointwise reranking. Our initial reimplementation, based only on the paper text, achieves 0.24 nDCG@10 instead of the reported 0.66, revealing that several undocumented implementation details are necessary to reproduce the method. After identifying and recovering eight such details, we reproduce the reported results within 1.6% and use the validated implementation for controlled analysis. We find that the core contrastive scoring idea is robust under rigorous statistical correction. However, two design choices held fixed in the original paper are less reliable. First, we find that combining the contrastive score with the standard pointwise relevance score helps when the first-stage retriever is BM25, but gives little or no benefit when the first-stage retriever is a stronger dense model such as E5. Second, the paper's more complex method for constructing the anchor is unnecessary. A much simpler anchor, built by interleaving the top-ranked sentences, matches or outperforms it across datasets. These findings are consistent across different LLM backbones, including a 4-bit quantized 72B model. Overall, anchor-based pointwise reranking is effective, but its gains come mainly from contrastive scoring rather than from the more complex aggregation and anchor-construction choices, and they appear under narrower conditions than the original evaluation suggests.",
+    "status": "found"
+  },
+  "2608.10529": {
+    "arxiv_id": "2608.10529",
+    "title": "Robust Multi-Agent Bandits with Heavy-Tailed Rewards and Information Asymmetry",
+    "authors": [
+      "Daphne Feng",
+      "Ricardo Parada",
+      "Lily Jiang",
+      "Sophia Yi",
+      "William Chang"
+    ],
+    "submission_date": "2026-08-11T06:10:42Z",
+    "latest_updated": "2026-08-11T06:10:42Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10529v1"
+    ],
+    "abstract": "The multi-armed bandit problem is a central framework in sequential decision-making, extensively studied under sub-Gaussian reward assumptions. However, real-world applications often involve heavy-tailed reward distributions and decentralized, information-asymmetric interactions. We study multi-agent multi-armed bandits with heavy-tailed rewards under three information-asymmetry regimes: unobserved actions with common rewards, observed actions with independent rewards, and unobserved actions with independent rewards. We develop robust decentralized algorithms for each setting and derive regret guarantees that nearly match centralized heavy-tailed rates. Experiments on a Pareto-distributed reward environment validate our theoretical findings and illustrate the trade-offs between synchronization, coordination, and exploration across the three regimes.",
+    "status": "found"
+  },
+  "2608.10530": {
+    "arxiv_id": "2608.10530",
+    "title": "On Understanding, Identifying, and Mitigating Vulnerabilities in Agentic Large Language Models",
+    "authors": [
+      "Md Jafrin Hossain",
+      "Mohammad Arif Hossain",
+      "Nirwan Ansari"
+    ],
+    "submission_date": "2026-08-11T06:11:26Z",
+    "latest_updated": "2026-08-11T06:11:26Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10530v1"
+    ],
+    "abstract": "Large Language Models (LLMs) have undergone a shift from stateless conversational interfaces to autonomous agents capable of multi-step planning, tool invocation, code execution, and maintaining persistent memory. When these agents operate with real-world privileges---calling APIs, modifying files, and querying databases---a compromised reasoning step can trigger unauthorized data access, irreversible state changes, or cascading failures, yet the security research community has not kept pace. To quantify the state of the field, we conducted a systematic literature review under PRISMA 2020 guidelines across six databases, screening 743 records and retaining 85 papers (2023--2025) on agentic LLM security. Attack research outpaces defense work by 3.9:1. Perception-layer vulnerabilities (prompt injection, jailbreaking, adversarial perturbations) dominate, accounting for 66\\% of papers, while action-layer vulnerabilities (tool misuse, code injection, sandbox escape) appear in only 4.7\\%, misaligned with real-world risk. Code execution security accounts for 3.5\\%, and tool-augmented agents 12\\%. We contribute a four-layer taxonomy mapping 13 vulnerability types across perception, brain, action, and interaction layers, and identify seven open problems centered on containment. Agentic LLM insecurity stems from architectural coupling, where weak isolation allows vulnerabilities to propagate across layers.",
+    "status": "found"
+  },
+  "2608.10531": {
+    "arxiv_id": "2608.10531",
+    "title": "Generalised higher order vectorial $\\infty$-eigenvalue problems",
+    "authors": [
+      "William Chang",
+      "Nikos Katzourakis"
+    ],
+    "submission_date": "2026-08-11T06:12:37Z",
+    "latest_updated": "2026-08-11T06:12:37Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10531v1"
+    ],
+    "abstract": "We study the problem of minimising the $L^\\infty$ norm of a function of the $k$-th derivative over a class of maps, subject to a constraint involving the $L^\\infty$ norm of a function of the map and its lower-order derivatives, for any integer $k\\geq 2$. We impose boundary conditions corresponding to the $k$-th order analogues of the classical ``clamped'' and ``hinged'' cases. By employing the method of $L^p$ approximations, we establish the existence of a special $L^\\infty$ minimiser, which solves a divergence PDE system with measure coefficients as parameters. This system constitutes the counterpart of the Aronsson--Euler equations for the constrained variational problem under consideration. Furthermore, we establish a lower bound for the eigenvalue. The present work extends the second-order vectorial results of Clark and Katzourakis [Generalised second order vectorial $\\infty$-eigenvalue problems, PRSE A, 1-21, 2024] to the general higher-order setting.",
+    "status": "found"
+  },
+  "2608.10532": {
+    "arxiv_id": "2608.10532",
+    "title": "Benchmarking LLM-Guided Control-Plane Policies for Backend Fault Isolation in HAProxy",
+    "authors": [
+      "Aman Chauhan",
+      "Vishnu Pendyala"
+    ],
+    "submission_date": "2026-08-11T06:15:20Z",
+    "latest_updated": "2026-08-11T06:15:20Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10532v1"
+    ],
+    "abstract": "Static load balancers cannot mitigate a backend that is degraded rather than down: round-robin and least-connections keep routing traffic to a server returning HTTP 500s until an operator intervenes. We ask whether a Large Language Model can replace the static routing policy itself, reading HAProxy and Prometheus telemetry every 10 seconds and isolating faulty servers through guardrailed calls to the HAProxy Data Plane API. On a reproducible benchmark with a persistent structural fault built into roughly one-third of a heterogeneous fleet, we sweep 15 open-weight models across five families (0.35B to 35B total parameters; dense, mixture-of-experts, and efficient-sparse architectures), reasoning modes, fleet scales of 3 to 9 backends, and two routing algorithms, totaling 240 runs. We find a capability threshold near 3B active parameters. Below it, LLM policies are typically unreliable and sometimes worse than no policy; above it, every model, regardless of architecture, saturates near an 88% reduction in client-perceived 5xx errors over the static baseline. The threshold is approximate: Gemma 4 E2B clears it with 2B active parameters, while the dense 3B Granite 4.0 Micro does not. The availability gain has costs. Draining concentrates load onto surviving servers, inflating tail latency 2.6 to 2.8 times, and enabling reasoning multiplies token spend roughly tenfold, overrunning the control interval and degrading effectiveness. The efficient operating point is a supra-threshold model in its cheapest non-reasoning mode, wrapped inside deterministic guardrails.",
+    "status": "found"
+  },
+  "2608.10533": {
+    "arxiv_id": "2608.10533",
+    "title": "An Asynchronous Triggered MAC Protocol for Underwater Acoustic Networks",
+    "authors": [
+      "Bingwen Huangfu",
+      "Jiani Guo",
+      "Shanshan Song",
+      "Nan Sun",
+      "Jun Liu",
+      "Miao Pan"
+    ],
+    "submission_date": "2026-08-11T06:15:38Z",
+    "latest_updated": "2026-08-15T11:18:23Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.10533v1",
+      "2608.10533v2"
+    ],
+    "abstract": "Time Division Multiple Access (TDMA)-based Medium Access Control (MAC) protocols have proven their practicality through extensive field trials in Underwater Acoustic Networks (UANs), attributable to their hardware compatibility and ease of implementation. In conventional TDMA-based MAC designs, channel access is typically organized using synchronized, fixed-length slots to mitigate contention and coordinate transmissions. However, this paradigm imposes significant clock synchronization overhead in UANs with long and variable propagation delays and struggles to improve scheduling flexibility. Although some protocols attempt to refine this slot paradigm (adjust the slot length to improve channel reuse efficiency or scheduling frequency), they are still constrained by the trade-off between channel utilization and scheduling complexity. To this end, this paper proposes AT-MAC, an Asynchronous Triggered MAC protocol that aims to achieve efficient and fair channel access through coordinated asynchronous scheduling. AT-MAC introduces a triggered slot paradigm without time synchronization, decoupling transmission scheduling from a rigid timeline and enabling asynchronous, variable-length slots to accommodate the long and diverse propagation delays. To power this slot paradigm, AT-MAC augments conventional Multi-Agent Deep Reinforcement Learning to handle asynchronous interaction, achieving coordinated channel access under partial observations. It further devises a load-aware fairness guard mechanism to enable network-wide fairness status inference solely through local overhearing, thereby guiding adaptive scheduling correction to maintain fairness. Field-reconstructed simulations and on-board inference benchmarking demonstrate the feasibility of AT-MAC. Extensive simulation results further demonstrate its consistent performance gains across the evaluated scenarios and traffic conditions.",
+    "status": "found"
+  },
+  "2608.10534": {
+    "arxiv_id": "2608.10534",
+    "title": "Tunable Memory Effect in Dissipative Strongly Correlated Quantum Systems",
+    "authors": [
+      "Haowei Li",
+      "Yu Chen",
+      "Hui Zhai"
+    ],
+    "submission_date": "2026-08-11T06:15:39Z",
+    "latest_updated": "2026-08-11T06:15:39Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10534v1"
+    ],
+    "abstract": "Strongly interacting quantum many-body systems subjected to non-Markovian dissipation pose a formidable challenge due to the interplay between strong correlation effects and memory effects. In this Letter, we develop a general theoretical framework to compute how a system observable responds to dissipation, which captures memory effects at short times and recovers the Markovian limit at longer times. Using this framework, we predict that, for a strongly correlated quantum critical state with critical exponent $η$, the short-time dynamics of a system observable always obeys a $t^{2η}$ scaling law. This emerges as a universal result from the interplay between strong correlation and memory effects, independent of the microscopic Hamiltonian of the system. We further reveal a crossover behavior of this scaling law to either $t^{2η-1}$ or linear-in-$t$ behavior beyond the memory time scale. We propose a concrete physical realization of a non-Markovian bath with tunable memory time using ultracold atoms, where our predictions can be straightforwardly verified in current experiments.",
+    "status": "found"
+  },
+  "2608.10535": {
+    "arxiv_id": "2608.10535",
+    "title": "Multi Interests for Joint Search-Recommendation Modeling",
+    "authors": [
+      "Xiangchen Pan",
+      "Wei Wei",
+      "Huakang Niu",
+      "Zhicong Cheng"
+    ],
+    "submission_date": "2026-08-11T06:15:43Z",
+    "latest_updated": "2026-08-11T06:15:43Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10535v1"
+    ],
+    "abstract": "Search and recommendation are crucial for understanding user preferences. More and more studies are attempting to jointly model search behavior and recommendation behavior, by integrating user active search and passive recommendation behavior data to better mine user preferences. However, although existing cross-domain unified modeling frameworks can effectively compensate for the differences in behavior between domains, they overlook the expression of interests in different scenarios under mixed sequences. In this study, we propose a multi-interest-based mixed sequential modeling framework MIJSR, which performs multi-interest mining and adaptive integration on search recommendation mixed sequences from both structural and semantic perspectives. Specifically, our model can be roughly divided into three modules: cross-domain behavior fusion, multi-interest mining, and multi-task prediction. Firstly, we align the representations of query and item through contrastive learning training. Then, we extract the multi interests of the mixed behavior sequence from both structural and semantic perspectives. Structurally, we extract search interests, recommendation interests, and cross interests through subsequence partitioning and mask settings; In terms of semantics, we use the semantic information of queries for clustering and perform semantic segmentation on mixed sequences to construct semantic multi interests. Finally, the adaptive fusion of multiple interests is combined with other side information to use a progressive layered extraction model for multi-task prediction. Extensive experiments on two open-source datasets have shown that our model can further enhance its accuracy in search and recommendation by extracting users' multi interests at a fine-grained level. Codes are available at https://github.com/pxcstart/MIJSR.",
+    "status": "found"
+  },
+  "2608.10536": {
+    "arxiv_id": "2608.10536",
+    "title": "Anomalous current fluctuations in the stochastic XNOR hopping model",
+    "authors": [
+      "Balázs Pozsgay"
+    ],
+    "submission_date": "2026-08-11T06:16:37Z",
+    "latest_updated": "2026-09-07T08:48:32Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.10536v1",
+      "2608.10536v2"
+    ],
+    "abstract": "We consider fluctuations of the spin current in the stochastic XNOR process, a kinetically constrained hopping model in one spatial dimension. We formulate three conjectures with explicit amplitudes for the long-time current distributions: a Gaussian limit on the $t^{1/4}$ scale for homogeneous initial states with nonzero magnetization, a half-normal limit on the $t^{1/4}$ scale for domain-wall states with opposite magnetizations, and an M-Wright limit on the $t^{1/8}$ scale for homogeneous initial states at zero magnetization. Earlier work identified the tracer mechanism and anticipated the scaling exponents and limiting shapes in the domain-wall and zero-magnetization settings. Starting from the microscopic XNOR dynamics, we predict the missing amplitudes for the continuous-time process and extend the picture to homogeneous biased initial data. Simulations provide numerical support for all three conjectures without fitted parameters. A separate mathematical companion paper presents an extensively AI-generated candidate proof. Generative-AI tools were used in the research and writing workflow.",
+    "status": "found"
+  },
+  "2608.10537": {
+    "arxiv_id": "2608.10537",
+    "title": "Measuring Semantic Abstractness of SAE Features via Nonlocality",
+    "authors": [
+      "Chuqiao Lin",
+      "Shivaji Sondhi",
+      "Xiao-Liang Qi"
+    ],
+    "submission_date": "2026-08-11T06:19:48Z",
+    "latest_updated": "2026-08-11T06:19:48Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10537v1"
+    ],
+    "abstract": "Sparse autoencoders (SAEs) have helped uncover mechanistic explanations for LLM behaviours such as reasoning, jailbreaking etc., via understanding the corresponding task-relevant and causally effective features. To evaluate such mechanistic explanations, downstream studies must distinguish surface lexical features from genuinely high-level ones. However, neither an autointerp-based semantic description nor causal steering utility fully resolves the abstraction level of a feature. To this end, we introduce \\emph{Feature Nonlocality} (FNL), defined as the entropy of the normalized per-position influence on an SAE feature's activation. We report that FNL correlates with existing LLM-based proxy metrics of feature semantic abstractness, and successfully distinguishes context-dependent reasoning features from token-driven ones, correctly assigning the higher FNL to the contextual feature in $73$--$84\\%$ of randomly drawn pairs that consist of one contextual and one token-level feature. We demonstrate two downstream applications. We audit SAE-based features used for jailbreak mitigation and find surprisingly that most effective features are positional features with low FNL rather than genuinely recognizing harmful intents. We report that steering high-FNL features in DeepSeek-R1-Distill-Llama-8B improves MATH-500 accuracy by $4.6$ points over the unsteered model and outperforms steering low-FNL features, though the gains are model-specific. We conclude that FNL provides an LLM-independent, label-free, correlational witness of the abstraction level of an SAE feature, with applications in evaluating mechanistic explanations as well as selecting features for downstream interventions.",
+    "status": "found"
+  },
+  "2608.10538": {
+    "arxiv_id": "2608.10538",
+    "title": "SKILLER: Language-Level Reinforcement Learning for Reusable Skill Extraction in Small Language Models",
+    "authors": [
+      "Chenhao Dang",
+      "Siyuan Xiong",
+      "Conghui He",
+      "Weijia Li"
+    ],
+    "submission_date": "2026-08-11T06:22:02Z",
+    "latest_updated": "2026-08-14T06:10:28Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.10538v1",
+      "2608.10538v2"
+    ],
+    "abstract": "Agent skills represent a standardized format for packaging procedural knowledge and domain expertise, serving within agent harness systems as an essential mechanism to continually constrain a language model's behavior space for repeatable, high-quality task execution. However, because strong closed-source models entail high inference costs, current popular agent harnesses, such as Codex and OpenClaw, remain prohibitively expensive when deploying these skills to accomplish real-world tasks. The rapid capability enhancement of open-source models deployable on consumer-grade GPUs presents a compelling opportunity to drastically reduce these costs by leveraging skill-based behavioral constraints. Nevertheless, automatically generating effective skills tailored specifically for such compact models remains a significant practical challenge. To address this, we propose SKILLER, a natural-language-driven reinforcement learning framework designed to automatically generate executor-specific skills for small models, which employs a strong model as the actor and critic, treats the small-model agent system as the environment, and propagates all reinforcement learning signals entirely via natural language. Extensive experimental evaluations across five relevant benchmarks using Qwen3.5-9B and Qwen3.5-4B demonstrate that SKILLER outperforms three open-source and one closed-source skill generation or evolution methods, achieving absolute gains ranging from 4.3 to 20.4 percentage points for the 9B model and 1.8 to 13.3 points for the 4B model, while remarkably matching the performance of strong closed-source models on single-skill tasks in SkillsBench. The project is available at https://github.com/DANG-ai/SKILLER.",
+    "status": "found"
+  },
+  "2608.10539": {
+    "arxiv_id": "2608.10539",
+    "title": "Comparing realtime optical gain measurement and methods on MagAO-X",
+    "authors": [
+      "Eden McEwen",
+      "Jared R. Males",
+      "Olivier Guyon",
+      "Sebastiaan Y. Haffert",
+      "Vincent Deo",
+      "Joseph D. Long",
+      "Logan A. Pearce",
+      "Laird M. Close",
+      "Warren B. Foster",
+      "Kyle Van Gorkom",
+      "Alexander D. Hedglen",
+      "Parker Johnson",
+      "Maggie Y. Kautz",
+      "Jay K. Kueny",
+      "Jialin Li",
+      "Joshua Liberman",
+      "Miles Lucas",
+      "Jennifer Lumbres",
+      "Avalon L. McLeod",
+      "Elena Tonucci",
+      "Katie Twitchell",
+      "Lauren Schatz",
+      "Alycia J. Weinberger"
+    ],
+    "submission_date": "2026-08-11T06:24:08Z",
+    "latest_updated": "2026-08-11T06:24:08Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10539v1"
+    ],
+    "abstract": "A lingering technical challenge for pyramid wavefront sensors (PyWFS) is their change in response between calibration and correction residuals, a quantity known as optical gain (OG). Given the prevalent use of PyWFSs in current and planned high contrast adaptive optics (AO), understanding and reliably measuring OG for realtime control unlocks advanced correction and post processing techniques. The OG quantity as an unknown inhibits a system's ability to stably correct non common path errors, reconstructing wavefronts, and PSF reconstruction. This work compares kinds of optical gain measurement techniques on MagAO-X, a visible light extreme AO instrument on the 6.5m Magellan Clay telescope. We present a set of on-sky measurements of OG across three techniques: 1) An on-sky calibration that acquires OG per spatial mode, 2) realtime measurements of the instantaneous Strehl Ratio (SR) on the pyramid tip, and 3) realtime measurement of known, high-frequency probe signal on the WFS itself. We compare these on-sky results with performance diagnostics to asses how faithfully OG is returned. We conclude with future steps for active control of OG on MagAO-X.",
+    "status": "found"
+  },
+  "2608.10540": {
+    "arxiv_id": "2608.10540",
+    "title": "State-Dependent Visibility of Non-Commutative Ordering in Quantum Dynamics",
+    "authors": [
+      "Ji-Chong Yang",
+      "Gui-Qi Hu"
+    ],
+    "submission_date": "2026-08-11T06:26:19Z",
+    "latest_updated": "2026-08-11T06:26:19Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10540v1"
+    ],
+    "abstract": "A nonzero commutator proves that two orderings differ as operators, but it does not ensure that a physical state can reveal the difference. We ask when non-Abelian ordering information becomes dynamically invisible. For Hermitian operators $B$ and $C$, we compare the evolutions generated by the opposite-order products $M=(B+iC)(B-iC)$ and $\\widetilde M=(B-iC)(B+iC)$, and define their operational visibility from the minimum overlap of the output states over a normalized time window. This visibility bounds the difference produced by the two orderings in every observable on the chosen state. An exact one-qubit solution shows that the same fixed pair can be perfectly invisible in one state and visible in another. We then keep the ordered generators fixed and vary only the many-body ground state across a quantum phase transition. The same ordering difference is nearly invisible in one regime and clearly visible in the other. Moreover, states with identical leading quadratic decay can develop sharply different finite-time visibility because their first distinction appears at higher order. The effect persists across distinct operator pairs and coefficient perturbations. Thus dynamical Abelianization is a property of the state-dependent process, i.e., non-Abelian ordering information can become operationally inaccessible even though the underlying operators remain non-commuting.",
+    "status": "found"
+  },
+  "2608.10541": {
+    "arxiv_id": "2608.10541",
+    "title": "Correspondence between Mean Curvature Flow and Harmonic-Ricci Flow",
+    "authors": [
+      "Tianyin Ren",
+      "Chong Song"
+    ],
+    "submission_date": "2026-08-11T06:27:44Z",
+    "latest_updated": "2026-08-11T06:27:44Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10541v1"
+    ],
+    "abstract": "In this paper, we observe that the (spacelike) mean curvature flow of a submanifold in a (pseudo-)Euclidean space is equivalent to a harmonic-Ricci flow with coupling constant $α=-1$ (or $+1$), for the corresponding Gauss map and the induced metric. The solitons of these two flows are also equivalent. As an application, we get a monotonicity formula for the spacelike mean curvature flow.",
+    "status": "found"
+  },
+  "2608.10542": {
+    "arxiv_id": "2608.10542",
+    "title": "Nonlinear Model Predictive Control via Sequential Convex Programming for Drone-to-Drone Docking",
+    "authors": [
+      "Neeraj Balachandar",
+      "Shriram Hari",
+      "Vishnu R. Unni"
+    ],
+    "submission_date": "2026-08-11T06:27:45Z",
+    "latest_updated": "2026-08-11T06:27:45Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10542v1"
+    ],
+    "abstract": "Autonomous mid-air docking of multi-rotor vehicles under disturbance-driven target motion poses a constrained non-linear trajectory optimization challenge. This work formulates the docking task as a finite-horizon optimal control problem based on a reduced-order nonlinear model augmented with disturbance states. The resulting problem is solved using sequential convex programming within a receding-horizon framework to generate dynamically feasible docking trajectories. State estimation with noisy measurements is incorporated to enable robust relative motion prediction, while trajectory execution is validated in a high-fidelity rigid-body MuJoCo simulation environment. The proposed framework is evaluated for stationary and constant-velocity target motions, demonstrating reliable convergence to the docking interface while satisfying geometric capture constraints. Quantitatively, the method maintains negligible docking-cone violations and terminal state errors within prescribed tolerances, and achieves consistent, safe docking performance for cone half-angles as low as 10 degrees. Robust operation is observed for wind disturbance levels up to a standard deviation of 0.5, while preserving bounded approach velocities and stable control effort. These results demonstrate the effectiveness of the SCP-based trajectory optimization framework for disturbance-robust aerial docking under estimation uncertainty.",
+    "status": "found"
+  },
+  "2608.10543": {
+    "arxiv_id": "2608.10543",
+    "title": "Nucleon electromagnetic form factors in nonlocal chiral effective theory",
+    "authors": [
+      "Y. Salamu",
+      "Alim Ablat"
+    ],
+    "submission_date": "2026-08-11T06:33:54Z",
+    "latest_updated": "2026-08-11T06:33:54Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10543v1"
+    ],
+    "abstract": "In this paper, we calculate the pion one-loop corrections to the electromagnetic form factors of the nucleon up to $\\mathcal{O}(p^4)$ order in the nonlocal framework. To systematically investigate the role of vector-meson dominance in the model, we also include the leading-order nucleon-vector-meson coupling. Owing to the renormalization-scheme dependence of chiral low-energy coupling constants (LECs), we refit these constants to the nucleon magnetic moments, electromagnetic radii, and the $Q^2$-dependence of the electromagnetic form factors. Compared with the previous local analysis, the model results show that, in the nonlocal framework, the $Q^2$-dependence of the electromagnetic form factors in the large-$Q^2$ region is significantly improved and are consistent with experimental data.",
+    "status": "found"
+  },
+  "2608.10544": {
+    "arxiv_id": "2608.10544",
+    "title": "Flow Straight to Reality: Perceptually Consistent Flow Matching for Efficient Image Restoration",
+    "authors": [
+      "Sangwoo Jo",
+      "Donggeun Ko",
+      "Jayeon Kang",
+      "Youngsang Kwak",
+      "Jaehwa Kwak",
+      "Sungjoon Choi"
+    ],
+    "submission_date": "2026-08-11T06:37:10Z",
+    "latest_updated": "2026-08-11T06:37:10Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10544v1"
+    ],
+    "abstract": "Image restoration is fundamentally constrained by the tradeoff between distortion and perception: minimizing pixel-wise error yields over-smoothed results, whereas optimizing for perceptual realism often introduces structural deviations. Recent approaches attempt to balance this tradeoff via posterior sampling or multi-stage generative pipelines, yet remain computationally expensive and architecturally complex. To overcome these limitations, we propose PCFlow (Perceptually Consistent Flow Matching), a unified framework that directly parameterizes a continuous transport from degraded observations to clean targets, jointly optimizing distortion and perceptual quality. While its latent consistency flow objective drives stable and efficient few-step inference, a Latent Consistency Perceptual Loss (LCPL) imposes semantic constraints directly on the guiding velocity field, steering the dynamics toward visually sharp data manifolds. Furthermore, recognizing the inherent conflict between structural and perceptual consistencies, we integrate a conflict-free gradient projection strategy to stabilize the multi-objective optimization landscape. Combined with lightweight, convolution-only backbone, PCFlow achieves competitive performance across diverse restoration tasks at a fraction of traditional computational costs.",
+    "status": "found"
+  },
+  "2608.10545": {
+    "arxiv_id": "2608.10545",
+    "title": "ImpactHO: Importance-Aware KV Cache Transfer for Multi-User Edge LLM Handover",
+    "authors": [
+      "Minwoo Kim",
+      "Soochang Song",
+      "Namyoon Lee",
+      "Bang Chul Jung",
+      "Yongjune Kim"
+    ],
+    "submission_date": "2026-08-11T06:37:10Z",
+    "latest_updated": "2026-08-11T06:37:10Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10545v1"
+    ],
+    "abstract": "Edge LLMs must preserve inference continuity when a user hands over between edge nodes, requiring key-value (KV) cache transfer to the target node. However, simultaneous handovers saturate the backhaul, preventing full cache delivery within the mobility-imposed transfer window. Rather than allocating bandwidth as if all cache entries were equally valuable, we order each user's KV cache by importance and transmit only its most informative fraction, turning token-level sparsity into communication savings. We cast the transfer as a multi-user backhaul allocation problem that maximizes average accuracy across users. Each user's partial-cache accuracy serves as its utility: a sigmoid that fits measurements on the RULER benchmark with $R^2>0.99$ across models and context lengths. Because importance ordering front-loads the high-value entries, the concave region of the accuracy curve spans nearly the entire cache. Our proposed allocator keeps served users within this region, making each per-slot allocation problem convex. The optimum is derived via a closed-form weighted water-filling solution that generalizes information-theoretic water-filling and enables online scheduling. The proposed allocator attains over 93.7% average accuracy in a 500ms transfer window, within 0.5pp of the full-cache ceiling, and reaches 98.2-99.5% of a clairvoyant upper bound.",
+    "status": "found"
+  },
+  "2608.10546": {
+    "arxiv_id": "2608.10546",
+    "title": "On the large-time behavior of strong solutions to the generalized compressible Navier-Stokes-Korteweg system in 2D and 3D for arbitrarily large initial data",
+    "authors": [
+      "Xiangdi Huang",
+      "Weili Meng"
+    ],
+    "submission_date": "2026-08-11T06:38:26Z",
+    "latest_updated": "2026-08-11T06:38:26Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10546v1"
+    ],
+    "abstract": "In this paper, we establish the global existence and large-time behavior of strong solutions for the two- and three-dimensional periodic compressible Navier-Stokes-Korteweg system with arbitrarily large initial data $(ρ_0,u_0)\\in H^3\\times H^2$. The viscosity coefficients satisfy the BD relation $μ(ρ)=νρ^α$ and $λ(ρ)=2ν(α-1)ρ^α$, while the capillarity coefficient is given by $κ(ρ)=\\varepsilon^2α^2ρ^{2α-3}$. For the case $α<1$, we first enlarge the admissible parameter range for the global existence of strong solutions established in Gu-Huang-Meng-Zhou [arXiv:2603.11762 (2026)] by exploiting the doubly parabolic structure of the density-effective velocity system. We then develop a time-discretization strategy to establish uniform integrability estimates for the effective velocity, yielding a uniform upper bound for the density. Furthermore, we introduce a novel bootstrap argument to successively improve these integrability estimates, which leads to a uniform positive lower bound for the density. Finally, we derive global-in-time higher-order estimates and prove the large-time behavior \\[ \\left\\|ρ(t)-\\frac{1}{|\\mathbb{T}^N|}\\int_{\\mathbb T^N}ρ_0 dx\\right\\|_{H^3} +\\|\\nabla u(t)\\|_{H^1} \\longrightarrow0, \\qquad t\\to\\infty, \\] without imposing any smallness assumption on the initial data. For the critical case $α=1$, we improve the admissible parameter range established in Huang-Meng-Zhang [arXiv:2602.00455 (2026)] and establish a uniform upper bound for the density.",
+    "status": "found"
+  }
+}

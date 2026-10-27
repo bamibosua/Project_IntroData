@@ -1,0 +1,432 @@
+{
+  "2601.22776": {
+    "arxiv_id": "2601.22776",
+    "title": "TSPO: Breaking the Double Homogenization Dilemma in Multi-turn Search Policy Optimization",
+    "authors": [
+      "Shichao Ma",
+      "Zhiyuan Ma",
+      "Ming Yang",
+      "Xiaofan Li",
+      "Xing Wu",
+      "Jintao Du",
+      "Yu Cheng",
+      "Weiqiang Wang",
+      "Qiliang Liu",
+      "Zhengyang Zhou",
+      "Yang Wang"
+    ],
+    "submission_date": "2026-01-30T09:58:45Z",
+    "latest_updated": "2026-04-06T08:29:58Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.22776v1",
+      "2601.22776v2"
+    ],
+    "abstract": "Multi-turn tool-integrated reasoning enables Large Language Models (LLMs) to solve complex tasks through iterative information retrieval. However, current reinforcement learning (RL) frameworks for search-augmented reasoning predominantly rely on sparse outcome-level rewards, leading to a \"Double Homogenization Dilemma.\" This manifests as (1) Process homogenization, where the thinking, reasoning, and tooling involved in generation are ignored. (2) Intra-group homogenization, coarse-grained outcome rewards often lead to inefficiencies in intra-group advantage estimation with methods like Group Relative Policy Optimization (GRPO) during sampling. To address this, we propose Turn-level Stage-aware Policy Optimization (TSPO). TSPO introduces the First-Occurrence Latent Reward (FOLR) mechanism, allocating partial rewards to the step where the ground-truth answer first appears, thereby preserving process-level signals and increasing reward variance within groups without requiring external reward models or any annotations. Extensive experiments demonstrate that TSPO significantly outperforms state-of-the-art baselines, achieving average performance gains of 24% and 13.6% on Qwen2.5-3B and 7B models, respectively. Code is available at https://github.com/Flipped-May/TSPO.",
+    "status": "found"
+  },
+  "2601.22777": {
+    "arxiv_id": "2601.22777",
+    "title": "RASST: Retrieval-Augmented Simultaneous Speech Translation",
+    "authors": [
+      "Jiaxuan Luo",
+      "Siqi Ouyang",
+      "Jiaxing Xu",
+      "Lei Li"
+    ],
+    "submission_date": "2026-01-30T09:59:24Z",
+    "latest_updated": "2026-06-13T01:58:28Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.22777v1",
+      "2601.22777v2"
+    ],
+    "abstract": "Simultaneous speech translation produces target text incrementally from partial speech input. Recent speech large language models have markedly improved SST quality but still struggle with rare and domain-specific terminology. Retrieval augmentation has helped in automatic speech recognition and neural machine translation, but extending it to SST is non-trivial: retrieval must be fast and accurate under partial speech, and the model must decide whether and when to apply retrieved terms during incremental generation. We propose Retrieval-Augmented Simultaneous Speech Translation (RASST), which addresses both challenges. For accurate cross-modal retrieval under partial input, RASST trains a lightweight speech-text retriever that produces chunkwise terminology hints for the Speech LLM via multi-scale retrieval. To use these hints correctly, we synthesize training data that teaches the Speech LLM to decide whether and when to apply each retrieved term. Experiments on ACL 60/60 dev set and the ESO test set show that RASST improves terminology accuracy by nearly 40% and overall translation quality by up to 3 BLEU points, with negligible computational overhead.",
+    "status": "found"
+  },
+  "2601.22778": {
+    "arxiv_id": "2601.22778",
+    "title": "Color Matters: Demosaicing-Guided Color Correlation Training for Generalizable AI-Generated Image Detection",
+    "authors": [
+      "Nan Zhong",
+      "Yiran Xu",
+      "Mian Zou"
+    ],
+    "submission_date": "2026-01-30T10:01:49Z",
+    "latest_updated": "2026-02-04T09:04:42Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.22778v1",
+      "2601.22778v2"
+    ],
+    "abstract": "As realistic AI-generated images threaten digital authenticity, we address the generalization failure of generative artifact-based detectors by exploiting the intrinsic properties of the camera imaging pipeline. Concretely, we investigate color correlations induced by the color filter array (CFA) and demosaicing, and propose a Demosaicing-guided Color Correlation Training (DCCT) framework for AI-generated image detection. By simulating the CFA sampling pattern, we decompose each color image into a single-channel input (as the condition) and the remaining two channels as the ground-truth targets (for prediction). A self-supervised U-Net is trained to model the conditional distribution of the missing channels from the given one, parameterized via a mixture of logistic functions. Our theoretical analysis reveals that DCCT targets a provable distributional difference in color-correlation features between photographic and AI-generated images. By leveraging these distinct features to construct a binary classifier, DCCT achieves state-of-the-art generalization and robustness, significantly outperforming prior methods across over 20 unseen generators.",
+    "status": "found"
+  },
+  "2601.22779": {
+    "arxiv_id": "2601.22779",
+    "title": "Streaming Speech Recognition with Decoder-Only Large Language Models and Latency Optimization",
+    "authors": [
+      "Genshun Wan",
+      "Wenhui Zhang",
+      "Jing-Xuan Zhang",
+      "Shifu Xiong",
+      "Jianqing Gao",
+      "Zhongfu Ye"
+    ],
+    "submission_date": "2026-01-30T10:01:49Z",
+    "latest_updated": "2026-01-30T10:01:49Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22779v1"
+    ],
+    "abstract": "Recent advances have demonstrated the potential of decoderonly large language models (LLMs) for automatic speech recognition (ASR). However, enabling streaming recognition within this framework remains a challenge. In this work, we propose a novel streaming ASR approach that integrates a read/write policy network with monotonic chunkwise attention (MoChA) to dynamically segment speech embeddings. These segments are interleaved with label sequences during training, enabling seamless integration with the LLM. During inference, the audio stream is buffered until the MoChA module triggers a read signal, at which point the buffered segment together with the previous token is fed into the LLM for the next token prediction. We also introduce a minimal-latency training objective to guide the policy network toward accurate segmentation boundaries. Furthermore, we adopt a joint training strategy in which a non-streaming LLM-ASR model and our streaming model share parameters. Experiments on the AISHELL-1 and AISHELL-2 Mandarin benchmarks demonstrate that our method consistently outperforms recent streaming ASR baselines, achieving character error rates of 5.1% and 5.5%, respectively. The latency optimization results in a 62.5% reduction in average token generation delay with negligible impact on recognition accuracy",
+    "status": "found"
+  },
+  "2601.22780": {
+    "arxiv_id": "2601.22780",
+    "title": "Cosmological Dynamics of Hyperbolic Evolution Models in $f(Q,L_m)$ Gravity",
+    "authors": [
+      "V. A. Kshirsagar",
+      "S. A. Kadam",
+      "Vishwajeet S. Goswami"
+    ],
+    "submission_date": "2026-01-30T10:02:55Z",
+    "latest_updated": "2026-01-30T10:02:55Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22780v1"
+    ],
+    "abstract": "This paper highlights cosmologically viable sine and cosine hyperbolic evolution functions in the framework of $f(Q,\\mathcal{L}_m)$ gravity. The models have been tested to check the behavior of the equation of state (EoS) parameter under the variation of parametric values. The EoS parameter experiences a quintessence phase, and is approaching to $-1$ at late time. The models are showing inclined behaviour with the $Λ$CDM model at the late time. The viability of both the models is retested using the widely accepted energy conditions in both cases. The violation of the strong energy condition admits the accelerating behaviour of the models. The same has been explained through the analysis of the profile of deceleration parameter, which concretely supports the evidence that the models explain early deceleration to late time acceleration phenomena.",
+    "status": "found"
+  },
+  "2601.22781": {
+    "arxiv_id": "2601.22781",
+    "title": "Learning with Challenges: Adaptive Difficulty-Aware Data Generation for Mobile GUI Agent Training",
+    "authors": [
+      "Linjia Kang",
+      "Zhimin Wang",
+      "Yongkang Zhang",
+      "Duo Wu",
+      "Jinghe Wang",
+      "Ming Ma",
+      "Haopeng Yan",
+      "Zhi Wang"
+    ],
+    "submission_date": "2026-01-30T10:03:20Z",
+    "latest_updated": "2026-01-30T10:03:20Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22781v1"
+    ],
+    "abstract": "Large-scale, high-quality interaction trajectories are essential for advancing mobile Graphical User Interface (GUI) agents. While existing methods typically rely on labor-intensive human demonstrations or automated model exploration to generate GUI trajectories, they lack fine-grained control over task difficulty. This fundamentally restricts learning effectiveness due to the mismatch between the training difficulty and the agent's capabilities. Inspired by how humans acquire skills through progressively challenging tasks, we propose MobileGen, a novel data generation framework that adaptively aligns training difficulty with the GUI agent's capability frontier. Specifically, MobileGen explicitly decouples task difficulty into structural (e.g., trajectory length) and semantic (e.g., task goal) dimensions. It then iteratively evaluates the agent on a curated prior dataset to construct a systematic profile of its capability frontier across these two dimensions. With this profile, the probability distribution of task difficulty is adaptively computed, from which the target difficulty for the next round of training can be sampled. Guided by the sampled difficulty, a multi-agent controllable generator is finally used to synthesize high-quality interaction trajectories along with corresponding task instructions. Extensive experiments show that MobileGen consistently outperforms existing data generation methods by improving the average performance of GUI agents by 1.57 times across multiple challenging benchmarks. This highlights the importance of capability-aligned data generation for effective mobile GUI agent training.",
+    "status": "found"
+  },
+  "2601.22782": {
+    "arxiv_id": "2601.22782",
+    "title": "Optimal Sample Splitting for Observational Studies",
+    "authors": [
+      "Qishuo Yin",
+      "Dylan S. Small"
+    ],
+    "submission_date": "2026-01-30T10:03:58Z",
+    "latest_updated": "2026-01-30T10:03:58Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22782v1"
+    ],
+    "abstract": "In observational studies of treatment effects, estimates may be biased by unmeasured confounders, which can potentially affect the validity of the results. Understanding sensitivity to such biases helps assess how unmeasured confounding impacts credibility. The design of an observational study strongly influences its sensitivity to bias. Previous work has shown that the sensitivity to bias can be reduced by dividing a dataset into a planning sample and a larger analysis sample, where the planning sample guides design decisions. But the choice of what fraction of the data to put in the planning sample vs. the analysis sample was ad hoc. Here, we develop an approach to find the optimal fraction using plasmode datasets. We show that our method works well in high-dimensional outcome spaces. We apply our method to study the effects of exposure to second-hand smoke in children. The OptimalSampling R package implementing our method is available at GitHub.",
+    "status": "found"
+  },
+  "2601.22783": {
+    "arxiv_id": "2601.22783",
+    "title": "Compact Hypercube Embeddings for Fast Text-based Wildlife Observation Retrieval",
+    "authors": [
+      "Ilyass Moummad",
+      "Marius Miron",
+      "David Robinson",
+      "Kawtar Zaher",
+      "Hervé Goëau",
+      "Olivier Pietquin",
+      "Pierre Bonnet",
+      "Emmanuel Chemla",
+      "Matthieu Geist",
+      "Alexis Joly"
+    ],
+    "submission_date": "2026-01-30T10:05:32Z",
+    "latest_updated": "2026-04-05T12:19:08Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.22783v1",
+      "2601.22783v2"
+    ],
+    "abstract": "Large-scale biodiversity monitoring platforms increasingly rely on multimodal wildlife observations. While recent foundation models enable rich semantic representations across vision, audio, and language, retrieving relevant observations from massive archives remains challenging due to the computational cost of high-dimensional similarity search. In this work, we introduce compact hypercube embeddings for fast text-based wildlife observation retrieval, a framework that enables efficient text-based search over large-scale wildlife image and audio databases using compact binary representations. Building on the cross-view code alignment hashing framework, we extend lightweight hashing beyond a single-modality setup to align natural language descriptions with visual or acoustic observations in a shared Hamming space. Our approach leverages pretrained wildlife foundation models, including BioCLIP and BioLingual, and adapts them efficiently for hashing using parameter-efficient fine-tuning. We evaluate our method on large-scale benchmarks, including iNaturalist2024 for text-to-image retrieval and iNatSounds2024 for text-to-audio retrieval, as well as multiple soundscape datasets to assess robustness under domain shift. Results show that retrieval using discrete hypercube embeddings achieves competitive, and in several cases superior, performance compared to continuous embeddings, while drastically reducing memory and search cost. Moreover, we observe that the hashing objective consistently improves the underlying encoder representations, leading to stronger retrieval and zero-shot generalization. These results demonstrate that binary, language-based retrieval enables scalable and efficient search over large wildlife archives for biodiversity monitoring systems.",
+    "status": "found"
+  },
+  "2601.22784": {
+    "arxiv_id": "2601.22784",
+    "title": "Approximating $f$-Divergences with Rank Statistics",
+    "authors": [
+      "Viktor Stein",
+      "José Manuel de Frutos"
+    ],
+    "submission_date": "2026-01-30T10:05:33Z",
+    "latest_updated": "2026-06-01T16:56:37Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.22784v1",
+      "2601.22784v2"
+    ],
+    "abstract": "We introduce a rank-statistic approximation of $f$-divergences that avoids explicit density-ratio estimation by working directly with the distribution of ranks. For a resolution parameter $K$, we map the mismatch between two univariate distributions $μ$ and $ν$ to a rank histogram on $\\{ 0, \\ldots, K\\}$ and measure its deviation from uniformity via a discrete $f$-divergence, yielding a rank-statistic divergence estimator. We prove that the resulting estimator of the divergence is monotone in $K$, is always a lower bound of the true $f$-divergence, and we establish quantitative convergence rates for $K\\to\\infty$ under mild regularity of the quantile-domain density ratio. To handle high-dimensional data, we define the sliced rank-statistic $f$-divergence by averaging the univariate construction over random projections, and we provide convergence results for the sliced limit as well. We also derive finite-sample deviation bounds along with asymptotic normality results for the estimator. Finally, we empirically validate the approach by benchmarking against neural baselines and illustrating its use as a learning objective in generative modeling experiments.",
+    "status": "found"
+  },
+  "2601.22785": {
+    "arxiv_id": "2601.22785",
+    "title": "Orders of magnitude sampling overhead reduction in quantum error mitigation",
+    "authors": [
+      "Raam Uzdin"
+    ],
+    "submission_date": "2026-01-30T10:07:31Z",
+    "latest_updated": "2026-03-03T15:16:22Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.22785v1",
+      "2601.22785v2"
+    ],
+    "abstract": "Quantum error mitigation (QEM) infers noiseless expectation values from noisy variants of a target quantum circuit. Unlike quantum error correction, QEM requires no additional hardware resources and is therefore routinely employed in experiments on contemporary quantum processors. QEM strategies based on agnostic noise amplification (ANA) are intrinsically resilient to temporal noise drift during the execution of the experiment, but their sampling cost (runtime overhead) remains a major practical bottleneck. In this work, we introduce the virtual noise scaling framework and combine it with layered mitigation to further enhance performance. While virtual noise scaling consistently reduces sampling overhead, we identify a specific noise threshold for the layered mitigation approach. When the noise level is above this threshold, layered mitigation decreases the sampling overhead; conversely, when below it, the overhead increases. Notably, this threshold is circuit-independent and depends solely on the number of layers. For strong noise, the combination of virtual noise scaling and layered mitigation yields several orders of magnitude reduction in sampling overhead compared with conventional zero-noise extrapolation post-processing. As a result, mitigation tasks that once seemed unrealistic are now challenging but achievable. The proposed approach is compatible with dynamic circuits and can be seamlessly integrated with error detection and quantum error correction schemes. In addition, it is also applicable to ANA-based mitigation of mid-circuit measurements and preparation errors. Our findings extend to any constant-step amplification factors and therefore also apply to probabilistic error amplification (PEA) QEM. We validate our post-processing approach by applying it to previously reported experimental data, where we observe a substantial improvement in mitigation efficiency and accuracy.",
+    "status": "found"
+  },
+  "2601.22786": {
+    "arxiv_id": "2601.22786",
+    "title": "Toward IIT-Inspired Consciousness in LLMs: A Reward-Based Learning Framework",
+    "authors": [
+      "Hamid Reza Akbari",
+      "Mohammad Hossein Sameti",
+      "Amir M. Mansourian",
+      "Mohammad Hossein Rohban",
+      "Hossein Sameti"
+    ],
+    "submission_date": "2026-01-30T10:07:58Z",
+    "latest_updated": "2026-01-30T10:07:58Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22786v1"
+    ],
+    "abstract": "The pursuit of Artificial General Intelligence (AGI) is a central goal in language model development, in which consciousness-like processing could serve as a key facilitator. While current language models are not conscious, they exhibit behaviors analogous to certain aspects of consciousness. This paper investigates the implementation of a leading theory of consciousness, Integrated Information Theory (IIT), within language models via a reward-based learning paradigm. IIT provides a formal, axiom-based mathematical framework for quantifying consciousness. Drawing inspiration from its core principles, we formulate a novel reward function that quantifies a text's causality, coherence and integration, characteristics associated with conscious processing. Empirically, it is found that optimizing for this IIT-inspired reward leads to more concise text generation. On out of domain tasks, careful tuning achieves up to a 31% reduction in output length while preserving accuracy levels comparable to the base model. In addition to primary task performance, the broader effects of this training methodology on the model's confidence calibration and test-time computational scaling is analyzed. The proposed framework offers significant practical advantages: it is conceptually simple, computationally efficient, requires no external data or auxiliary models, and leverages a general, capability-driven signal rather than task-specific heuristics. Code available at https://github.com/MH-Sameti/LLM_PostTraining.git",
+    "status": "found"
+  },
+  "2601.22787": {
+    "arxiv_id": "2601.22787",
+    "title": "Float8@2bits: Entropy Coding Enables Data-Free Model Compression",
+    "authors": [
+      "Patrick Putzky",
+      "Martin Genzel",
+      "Mattes Mollenhauer",
+      "Sebastian Schulze",
+      "Thomas Wollmann",
+      "Stefan Dietzel"
+    ],
+    "submission_date": "2026-01-30T10:08:15Z",
+    "latest_updated": "2026-05-29T07:43:50Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.22787v1",
+      "2601.22787v2"
+    ],
+    "abstract": "Post-training compression is currently divided into two contrasting regimes. On the one hand, fast, data-free, and model-agnostic methods (e.g., NF4 or HQQ) offer maximum accessibility but suffer from functional collapse at extreme bit-rates below 4 bits. On the other hand, techniques leveraging calibration data or extensive recovery training achieve superior fidelity but impose high computational constraints and face uncertain robustness under data distribution shifts. We introduce EntQuant, a framework that unites the advantages of these distinct paradigms. By matching the performance of data-dependent methods with the speed and universality of data-free techniques, EntQuant enables practical utility in the extreme compression regime. Our method decouples numerical precision from storage cost via entropy coding, compressing a 70B parameter model in less than 10 minutes. We demonstrate that EntQuant does not only achieve state-of-the-art results on standard evaluation sets and models, but also retains functional performance on more complex benchmarks with instruction-tuned models, all at modest inference overhead.",
+    "status": "found"
+  },
+  "2601.22788": {
+    "arxiv_id": "2601.22788",
+    "title": "FACET: Multi-Agent AI Supporting Teachers in Scaling Differentiated Learning for Diverse Students",
+    "authors": [
+      "Jana Gonnermann-Müller",
+      "Jennifer Haase",
+      "Nicolas Leins",
+      "Moritz Igel",
+      "Konstantin Fackeldey",
+      "Sebastian Pokutta"
+    ],
+    "submission_date": "2026-01-30T10:08:43Z",
+    "latest_updated": "2026-05-22T06:31:49Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 4,
+    "versions": [
+      "2601.22788v1",
+      "2601.22788v2",
+      "2601.22788v3",
+      "2601.22788v4"
+    ],
+    "abstract": "Classrooms are becoming increasingly heterogeneous, comprising learners with diverse performance and motivation levels, language proficiencies, and learning differences such as dyslexia and ADHD. While teachers recognize the need for differentiated instruction, growing workloads create substantial barriers, making differentiated instruction an ideal that is often unrealized in practice. Current AI educational tools, which promise differentiated materials, are predominantly student-facing and performance-centric, ignoring other aspects that shape learning outcomes. We introduce FACET, a teacher-facing multi-agent framework designed to address these gaps by supporting differentiation that accounts for motivation, performance, and learning differences. Developed with educational stakeholders from the outset, the framework coordinates four specialized agents, including learner simulation, diagnostic assessment, material generation, and evaluation within a teacher-in-the-loop design. School principals (N = 30) shaped system requirements through participatory workshops, while in-service K-12 teachers (N = 70) evaluated material quality. Mixed-methods evaluation demonstrates strong perceived value for inclusive differentiation. Practitioners emphasized both the urgent need arising from classroom heterogeneity and the importance of maintaining pedagogical autonomy as a prerequisite for adoption. We discuss implications for future school deployment and outline partnerships for longitudinal classroom implementation.",
+    "status": "found"
+  },
+  "2601.22789": {
+    "arxiv_id": "2601.22789",
+    "title": "Generators for automorphisms of special groups",
+    "authors": [
+      "Elia Fioravanti"
+    ],
+    "submission_date": "2026-01-30T10:08:50Z",
+    "latest_updated": "2026-01-30T10:08:50Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22789v1"
+    ],
+    "abstract": "Let $G$ be a (compact) special group in the sense of Haglund and Wise. We show that ${\\rm Out}(G)$ is finitely generated, and provide a virtual generating set consisting of Dehn twists and ``pseudo-twists''. We exhibit instances where Dehn twists alone do not suffice and completely characterise this phenomenon: it is caused by certain abelian subgroups of $G$, called ``poison subgroups'', which can be removed by replacing $G$ with a finite-index subgroup. Similar results hold for coarse-median preserving automorphisms, without the pathologies: For every special group $G$, the coarse-median preserving subgroups ${\\rm Out}(G,[μ])\\leq{\\rm Out}(G)$ are virtually generated by finitely many Dehn twists with respect to splittings of $G$ over centralisers. Proofs are based on a novel, hierarchical version of Rips and Sela's shortening argument.",
+    "status": "found"
+  },
+  "2601.22790": {
+    "arxiv_id": "2601.22790",
+    "title": "Conditional Performance Guarantee for Large Reasoning Models",
+    "authors": [
+      "Jianguo Huang",
+      "Hao Zeng",
+      "Bingyi Jing",
+      "Hongxin Wei",
+      "Bo An"
+    ],
+    "submission_date": "2026-01-30T10:09:41Z",
+    "latest_updated": "2026-01-30T10:09:41Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22790v1"
+    ],
+    "abstract": "Large reasoning models have shown strong performance through extended chain-of-thought reasoning, yet their computational cost remains significant. Probably approximately correct (PAC) reasoning provides statistical guarantees for efficient reasoning by adaptively switching between thinking and non-thinking models, but the guarantee holds only in the marginal case and does not provide exact conditional coverage. We propose G-PAC reasoning, a practical framework that provides PAC-style guarantees at the group level by partitioning the input space. We develop two instantiations: Group PAC (G-PAC) reasoning for known group structures and Clustered PAC (C-PAC) reasoning for unknown groupings. We prove that both G-PAC and C-PAC achieve group-conditional risk control, and that grouping can strictly improve efficiency over marginal PAC reasoning in heterogeneous settings. Our experiments on diverse reasoning benchmarks demonstrate that G-PAC and C-PAC successfully achieve group-conditional risk control while maintaining substantial computational savings.",
+    "status": "found"
+  },
+  "2601.22791": {
+    "arxiv_id": "2601.22791",
+    "title": "Understanding on the Edge: LLM-generated Boundary Test Explanations",
+    "authors": [
+      "Sabinakhon Akbarova",
+      "Felix Dobslaw",
+      "Robert Feldt"
+    ],
+    "submission_date": "2026-01-30T10:11:45Z",
+    "latest_updated": "2026-01-30T10:11:45Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22791v1"
+    ],
+    "abstract": "Boundary value analysis and testing (BVT) is fundamental in software quality assurance because faults tend to cluster at input extremes, yet testers often struggle to understand and justify why certain input-output pairs represent meaningful behavioral boundaries. Large Language Models (LLMs) could help by producing natural-language rationales, but their value for BVT has not been empirically assessed. We therefore conducted an exploratory study on LLM-generated boundary explanations: in a survey, twenty-seven software professionals rated GPT-4.1 explanations for twenty boundary pairs on clarity, correctness, completeness and perceived usefulness, and six of them elaborated in follow-up interviews. Overall, 63.5% of all ratings were positive (4-5 on a five-point Likert scale) compared to 17% negative (1-2), indicating general agreement but also variability in perceptions. Participants favored explanations that followed a clear structure, cited authoritative sources, and adapted their depth to the reader's expertise; they also stressed the need for actionable examples to support debugging and documentation. From these insights, we distilled a seven-item requirement checklist that defines concrete design criteria for future LLM-based boundary explanation tools. The results suggest that, with further refinement, LLM-based tools can support testing workflows by making boundary explanations more actionable and trustworthy.",
+    "status": "found"
+  },
+  "2601.22792": {
+    "arxiv_id": "2601.22792",
+    "title": "CALM: Joint Contextual Acoustic-Linguistic Modeling for Personalization of Multi-Speaker ASR",
+    "authors": [
+      "Muhammad Shakeel",
+      "Yosuke Fukumoto",
+      "Chikara Maeda",
+      "Chyi-Jiunn Lin",
+      "Shinji Watanabe"
+    ],
+    "submission_date": "2026-01-30T10:12:16Z",
+    "latest_updated": "2026-05-13T09:53:49Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.22792v1",
+      "2601.22792v2"
+    ],
+    "abstract": "We present CALM, a joint Contextual Acoustic-Linguistic Modeling framework for multi-speaker automatic speech recognition (ASR). In personalized AI scenarios, the joint availability of acoustic and linguistic cues naturally motivates the integration of target-speaker conditioning with contextual biasing in overlapping conversations. CALM implements this integration in an end-to-end framework through speaker embedding-driven target-speaker extraction and dynamic vocabulary-based contextual biasing. We evaluate CALM on simulated English (LibriSpeechMix) and Japanese (Corpus of Spontaneous Japanese mixtures, CSJMix). On two-speaker mixtures, CALM reduces biased word error rate (B-WER) from 12.7 to 4.7 on LibriSpeech2Mix and biased character error rate (B-CER) from 16.6 to 8.4 on CSJMix2 (eval3), demonstrating the effectiveness of joint acoustic-linguistic modeling across languages. We additionally report results on the AMI corpus (IHM-mix condition) to validate performance on standardized speech mixtures.",
+    "status": "found"
+  },
+  "2601.22793": {
+    "arxiv_id": "2601.22793",
+    "title": "Fast Eikonal Phase Retrieval for High-Throughput Beamlines",
+    "authors": [
+      "Alessandro Mirone",
+      "Theresa Urban",
+      "Joseph Brunet",
+      "Claire L. Walsh",
+      "Peter D. Lee",
+      "Paul Tafforeau"
+    ],
+    "submission_date": "2026-01-30T10:15:23Z",
+    "latest_updated": "2026-01-30T10:15:23Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22793v1"
+    ],
+    "abstract": "We introduce a fast Eikonal Phase Retrieval (EPR) formulation that accelerates eikonal phase retrieval by more than two orders of magnitude while retaining controlled accuracy. The method is derived from a second-order asymptotic expansion in the propagation distance $L$ and complemented by the leading Wentzel--Kramers--Brillouin (WKB) wave-optics correction, yielding an efficient iterative correction scheme preconditioned by FFT-diagonal, energy-dependent inverse operators (Paganin-type filters). To ensure robustness across practical experimental regimes, we combine two complementary solvers: (i) a local $O(L^2)$ closure that is accurate when eikonal shifts remain sub-pixel, and (ii) a non-local formulation for multi-pixel shifts, in which intensity is propagated through an explicit eikonal ray mapping using a mass-conserving bilinear redisribution on the detector grid, and detector residuals are transferred back to the object grid by the corresponding adjoint (transpose), implemented as bilinear interpolation, before applying an approximate FFT-diagonal preconditioner to accelerate convergence. The same framework supports polychromatic data through a compact spectral discretisation, allowing energy-dependent transport and inversion while keeping the iteration GPU/FFT efficient. Overall, this unified approach enables accurate and computationally efficient phase retrieval across propagation conditions relevant to high-throughput PPC-$μ$CT experiments.",
+    "status": "found"
+  },
+  "2601.22794": {
+    "arxiv_id": "2601.22794",
+    "title": "Batch Bayesian optimization of attosecond betatron pulses from laser wakefield acceleration",
+    "authors": [
+      "Dominika Maslarova",
+      "Albert Hansson",
+      "Mufei Luo",
+      "Vojtěch Horný",
+      "Julien Ferri",
+      "Istvan Pusztai",
+      "Tünde Fülöp"
+    ],
+    "submission_date": "2026-01-30T10:16:14Z",
+    "latest_updated": "2026-01-30T10:16:14Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22794v1"
+    ],
+    "abstract": "Laser wakefield acceleration can generate a femtosecond-scale broadband X-ray betatron radiation pulse from electrons accelerated by an intense laser pulse in a plasma. The micrometer-scale of the source makes wakefield betatron radiation well-suited for advanced imaging techniques, including diffraction and phase-contrast imaging. Recent progress in laser technology can expand these capabilities into the attosecond regime, where the practical applications would significantly benefit from the increased energy contained within the pulse. Here we use numerical simulations combined with batch Bayesian optimization to enhance the radiation produced by an attosecond betatron source. The method enables an efficient exploration of a multi-parameter space and identifies a regime in which a plasma density spike triggers the generation of a high-charge electron beam. This results in an improvement of more than one order of magnitude in the on-axis time-averaged power within the central time containing half of the radiated energy, compared to the reference case without the density spike.",
+    "status": "found"
+  },
+  "2601.22795": {
+    "arxiv_id": "2601.22795",
+    "title": "Sparse or Dense? A Mechanistic Estimation of Computation Density in Transformer-based LLMs",
+    "authors": [
+      "Corentin Kervadec",
+      "Iuliia Lysova",
+      "Marco Baroni",
+      "Gemma Boleda"
+    ],
+    "submission_date": "2026-01-30T10:18:29Z",
+    "latest_updated": "2026-04-15T08:49:04Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.22795v1",
+      "2601.22795v2"
+    ],
+    "abstract": "Transformer-based large language models (LLMs) are comprised of billions of parameters arranged in deep and wide computational graphs. Several studies on LLM efficiency optimization argue that it is possible to prune a significant portion of the parameters, while only marginally impacting performance. This suggests that the computation is not uniformly distributed across the parameters. We introduce here a technique to systematically quantify computation density in LLMs. In particular, we design a density estimator drawing on mechanistic interpretability. We experimentally test our estimator and find that: (1) contrary to what has been often assumed, LLM processing generally involves dense computation; (2) computation density is dynamic, in the sense that models shift between sparse and dense processing regimes depending on the input; (3) per-input density is significantly correlated across LLMs, suggesting that the same inputs trigger either low or high density. Investigating the factors influencing density, we observe that predicting rarer tokens requires higher density, and increasing context length often decreases the density. We believe that our computation density estimator will contribute to a better understanding of the processing at work in LLMs, challenging their symbolic interpretation.",
+    "status": "found"
+  }
+}

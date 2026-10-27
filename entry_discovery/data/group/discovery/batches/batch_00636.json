@@ -1,0 +1,451 @@
+{
+  "2608.11727": {
+    "arxiv_id": "2608.11727",
+    "title": "Harness-IF: Evaluating Instruction Following Across Instruction Surfaces in Coding Agents",
+    "authors": [
+      "Zining Huang",
+      "Haoran Que",
+      "Hong Zeng",
+      "Ge Zhang",
+      "Zuo Wang",
+      "Jin Chen",
+      "Haodong Wang",
+      "Zhongfei Hou",
+      "Changxin Pu",
+      "Shen Yan",
+      "Wenhao Huang"
+    ],
+    "submission_date": "2026-08-12T07:07:57Z",
+    "latest_updated": "2026-08-12T07:07:57Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11727v1"
+    ],
+    "abstract": "When a coding agent obeys a rule, it may simply have been going to do that anyway. Existing instruction-following benchmarks cannot tell the difference: they concentrate rules in the user turn, while coding-agent benchmarks emphasize final task success. We introduce Harness-IF, which scores operational rules one at a time from execution evidence: 60 realistic multi-turn coding items drawn from a 642-rule library, 256 rules receiving verdicts, placed on the five configurable surfaces a deployed agent reads. To separate compliance from coincidence we introduce Against-Prior Accuracy (AP-Acc), which scores only rules labeled as opposing unprompted defaults, observed by re-running tasks with the rule withheld across nine probe builds and curated otherwise. Across 12 frontier models, accuracy spans 72.1-85.9% and AP-Acc 66.1-78.6%; every model is worse on against-prior rules, by 3.6 to 7.4 points (mean 5.81), and the direction survives a common-support analysis with item-clustered intervals. Aggregate scores therefore overstate compliance by a model-specific margin: prior control leaves the top build unchanged and exchanges three adjacent rank pairs. A counterbalanced conflict pilot on nine separate builds adds a second result: pooled precedence does not follow prompt depth, with system prompts, project files, and user instructions ahead of tool and skill descriptions.",
+    "status": "found"
+  },
+  "2608.11728": {
+    "arxiv_id": "2608.11728",
+    "title": "Quantum mixing for eigenfunctions of rational polygons in configuration space",
+    "authors": [
+      "Kai Hippi",
+      "Søren Mikkelsen"
+    ],
+    "submission_date": "2026-08-12T07:08:17Z",
+    "latest_updated": "2026-08-12T07:08:17Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11728v1"
+    ],
+    "abstract": "The Shnirelman-Zelditch-Colin de Verdière theorem and its weak mixing extension relate quantum ergodicity and quantum mixing with ergodicity and weak mixing of the geodesic flow. Integrable systems, such as the flat torus, do not satisfy either in general. Restricting to position-dependent observables, Marklof and Rudnick established equidistribution for almost all eigenfunctions of rational polygons. In this note, we extend this result to off-diagonal elements for a subset of rational polygons not including the torus using weak mixing of the directional billiard flow for almost all directions. Additionally, we provide a different proof that establishes the same result for $2$-tori.",
+    "status": "found"
+  },
+  "2608.11729": {
+    "arxiv_id": "2608.11729",
+    "title": "Molecule-specific diffusion and desorption of interstellar ices on carbonaceous dust",
+    "authors": [
+      "Yi-Hsuan Chiu",
+      "Tushar Suhasaria",
+      "Cornelia Jäger",
+      "Chun-Yi Lee",
+      "Ko-Ju Chuang",
+      "Thomas Henning",
+      "Yu-Jung Chen"
+    ],
+    "submission_date": "2026-08-12T07:08:43Z",
+    "latest_updated": "2026-08-12T07:08:43Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11729v1"
+    ],
+    "abstract": "Interstellar ices form on dust grains in the coldest regions of molecular clouds and preserve key volatile reservoirs that could be incorporated into protoplanetary disks during star and planet formation. However, the effect of the dust surface composition on the ice structure and spectroscopic behavior remains poorly constrained. We present a comparative laboratory study of astrophysically relevant ices (CO, CO2, and H2O) deposited on inert calcium fluoride (CaF2) substrate and carbonaceous dust analogs under interstellar conditions. Infrared spectroscopy and temperature-programmed desorption reveal pronounced molecule-specific infrared spectral responses to the amorphous carbonaceous surface. CO and CO2 both exhibit broadened absorption bands, redshifted band positions, and delayed desorption, arising from thermally activated diffusion into the porous dust matrix and indicating strong molecule-surface interactions. By contrast, H2O varies only very little spectrally and thermally, indicating weak wetting and limited coupling to the substrate. These results provide direct laboratory evidence that dust-ice interfaces can affect the ice structure and desorption kinetics of interstellar ices even in thick ice layers. These findings offer new constraints for interpreting infrared absorption bands in astronomical observations and highlight the importance of surface effects in models of interstellar ice chemistry.",
+    "status": "found"
+  },
+  "2608.11730": {
+    "arxiv_id": "2608.11730",
+    "title": "Plaintext Recovery Against Post-Filtering Access Control",
+    "authors": [
+      "Zachary Espiritu",
+      "David Cash"
+    ],
+    "submission_date": "2026-08-12T07:11:18Z",
+    "latest_updated": "2026-08-12T07:11:18Z",
+    "revised_dates": null,
+    "venue": "Proceedings of the 35th USENIX Security Symposium (2026), 3753-3772",
+    "latest_version": 1,
+    "versions": [
+      "2608.11730v1"
+    ],
+    "abstract": "Fine-grained access control (FGAC) mechanisms such as row-level security (RLS) and document-level security (DLS) are widely deployed in databases to restrict access to data stored in physical indexing structures shared by multiple users (e.g., in multi-tenant databases, or in the implementation of least-privilege within an organization). FGAC implementations often use post-filtering where untrusted queries run over all data and private results are redacted afterwards. Prior work shows this approach can lead to side-channels that enable attackers to test if a chosen value exists in unseen data. While damaging, prior attacks do not enable the efficient recovery of rich, high-entropy data like full records or text documents. We show these side-channels are more damaging than previously thought. Using rich query interfaces (e.g., range, prefix, and conjunctive predicates), we amplify existence leakage into reconstruction attacks. We do this in two settings: - PostgreSQL (RLS timing). We exploit a timing side-channel and expressive SQL queries (e.g., ranges, conjunctions) to enumerate unknown attribute values and, in turn, full records via binary search over large domains. - Elasticsearch/OpenSearch (DLS scoring). We exploit scoring and prefix-expansion side-channels to recover indexed terms from documents. In some cases, we can extract $n$-grams in the corpus to recover approximate text. Our results show that FGAC side-channels must be evaluated in the presence of rich predicates, which can turn membership tests into scalable reconstruction of high-entropy records.",
+    "status": "found"
+  },
+  "2608.11731": {
+    "arxiv_id": "2608.11731",
+    "title": "ContactIPM: A Structure-Exploiting Interior-Point Solver for Contact-Implicit Trajectory Optimization",
+    "authors": [
+      "Yucheng Chen"
+    ],
+    "submission_date": "2026-08-12T07:11:58Z",
+    "latest_updated": "2026-08-12T07:11:58Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11731v1"
+    ],
+    "abstract": "Contact-implicit trajectory optimization avoids prescribing contact sequences, but yields mathematical programs with complementarity constraints (MPCCs) whose degeneracy challenges conventional primal--dual solvers. Existing contact-specific methods improve robustness to this degeneracy but do not leverage a stagewise optimal-control factorization and primal--dual consistency, while structure-exploiting optimal-control solvers are not designed for complementarity constraints. We show that these capabilities can be combined in a single primal--dual method. ContactIPM identifies complementary inequality pairs, embeds them through a barrier-coupled elastic interior relaxation, eliminates slack and dual variables stagewise, and solves the reduced Newton system using a Riccati recursion. A fixed multi-phase MPCC recovery schedule provides four continuation and restart attempts from naive initializations, while termination is gated by the unrelaxed physical complementarity residual. We compare ContactIPM with two contact-specific MPCC solvers, CRISP and IMPACT, using matched benchmark conditions and common post-solve acceptance criteria. On four fixed CRISP benchmark cases, ContactIPM is $2.17$--$8.87\\times$ faster over 20 paired timing repetitions per case and achieves higher success on the Push Box and Push-T robustness suites. Against IMPACT, ContactIPM is \\(2.96\\times\\) faster on Push T and \\(4.91\\times\\) faster on Cart Transport, but \\(4.46\\times\\) slower on Push Box. In 50 closed-loop Push Box rollouts spanning model mismatch, measurement noise, initial-pose errors, and state resets,",
+    "status": "found"
+  },
+  "2608.11732": {
+    "arxiv_id": "2608.11732",
+    "title": "Fingerprinting Text-to-Image Diffusion Models via Collapsed Generation",
+    "authors": [
+      "Yuanmin Huang",
+      "Chen Chen",
+      "Geng Hong",
+      "Xiaoyu You",
+      "Hui Xue",
+      "Zhenxing Qian",
+      "Mi Zhang",
+      "Min Yang"
+    ],
+    "submission_date": "2026-08-12T07:12:38Z",
+    "latest_updated": "2026-08-12T07:12:38Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11732v1"
+    ],
+    "abstract": "Proprietary text-to-image diffusion models are increasingly distributed as hosted services and downloadable checkpoints, making their intellectual property (IP) protection an increasingly critical concern when model leakage, copying, or unauthorized fine-tuning is disputed. In this work, we present a non-invasive model fingerprinting framework based on \\emph{collapsed generation}, a phenomenon where certain input conditions produce highly consistent images across multiple stochastic seeds. We show that collapsed generation is an intrinsic, model-dependent property of the learned generation process. These collapse-prone conditions therefore expose model-specific behavioral signatures, enabling reliable ownership verification without embedding invasive watermarks. After preparing conditions on the source model, the framework verifies a suspect model under two access settings: (1) white-box pipeline access, where optimized continuous embeddings can be injected into the generation process, and (2) black-box API-only access, where natural language prompts are queried through the service interface. In both cases, ownership evidence is measured by whether the suspect model reproduces the source model's collapse behavior across stochastic samplings. Extensive experiments across UNet- and transformer-based diffusion models show that collapsed generation fingerprints can distinguish different source models with low confusion. These fingerprints remain verifiable in fine-tuned derivatives and under common and adaptive model- or query-level obfuscations, while requiring only a modest verification query budget. Together, these results establish collapsed generation as a reliable intrinsic evidence source for non-invasive diffusion model ownership verification.",
+    "status": "found"
+  },
+  "2608.11733": {
+    "arxiv_id": "2608.11733",
+    "title": "A 12-CNOT Double Qubit Excitation Gate",
+    "authors": [
+      "Irfansha Shaik"
+    ],
+    "submission_date": "2026-08-12T07:12:57Z",
+    "latest_updated": "2026-08-27T12:04:12Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2608.11733v1",
+      "2608.11733v2",
+      "2608.11733v3"
+    ],
+    "abstract": "Effective implementation of high-level quantum gates is essential for practical quantum computing. In this work, we presented, to the best of our knowledge, the first reported 12-CNOT decomposition of the double qubit excitation operator. We compared our new circuit with the previous SOTA 13-CNOT circuits in 4 different metrics. Our new circuit has the lowest CNOT count (12), lowest CNOT depth (8, roughly 27% reduction), and lowest total circuit depth (15, 25% reduction) among all the previous SOTA circuits. With output qubit relabeling, the CNOT depth can be further reduced to 7 (roughly 36% reduction from 11). Further, we only added 2 extra 1q gates (from 11 to 13) compared to the best of the SOTA circuits. As the double qubit excitation operator can be used as a building block hundreds or thousands of times in practical quantum algorithms, any reduction in such primitives compounds over the full circuit, resulting in significant overall resource savings.",
+    "status": "found"
+  },
+  "2608.11734": {
+    "arxiv_id": "2608.11734",
+    "title": "Average hitting times and recurrence structures II: Cartesian products of powers of cycles and regular graphs",
+    "authors": [
+      "Tsuyoshi Miezaki",
+      "Shunya Tamura"
+    ],
+    "submission_date": "2026-08-12T07:13:16Z",
+    "latest_updated": "2026-08-12T07:13:16Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11734v1"
+    ],
+    "abstract": "In our previous work \\cite{MiezakiTamura2026}, we clarified the second-order linear recurrence structures appearing in the average hitting times on the $k$-th power graph $C_N^k$ of the cycle graph. In this paper, for a connected $r$-regular graph $G$ on $m$ vertices, we investigate the average hitting times of the simple random walk on the Cartesian product graph $C_N^k \\square G$. By using discrete Fourier analysis in the $C_N^k$ direction and the Laplacian spectral decomposition of $G$, we decompose the average hitting time into a component proportional to the average hitting time on $C_N^k$ and correction terms arising from the nonzero Laplacian eigenspaces of $G$. For each nonzero Laplacian eigenvalue, we introduce a Chebyshev-type polynomial, and when all of its roots are simple, we express the correction term as a finite Green-type sum. Furthermore, for two vertices having the same $G$-coordinate, we transform this expression into a second-order linear recurrence representation of the form $V_\\ell V_{N-\\ell}/V_N$. When $G$ is a walk-regular graph, the average hitting time between two vertices having the same $G$-coordinate depends only on the Laplacian eigenvalues of $G$ and their multiplicities. We also derive formulas for the number of spanning trees and the number of two-component spanning forests of $C_N^k \\square G$, and give several explicit examples.",
+    "status": "found"
+  },
+  "2608.11735": {
+    "arxiv_id": "2608.11735",
+    "title": "Locating and Controlling Implicit Personalization in Large Language Models",
+    "authors": [
+      "Yueru Yan",
+      "Siqi Wu",
+      "Thai Le"
+    ],
+    "submission_date": "2026-08-12T07:18:31Z",
+    "latest_updated": "2026-08-12T07:18:31Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11735v1"
+    ],
+    "abstract": "Large language models (LLMs) often shift their outputs in response to implicit demographic cues even when users never state a demographic identity. Previous work has documented this behavior, but the connection between these behavioral changes and the model's internal activations remains unclear. Using matched cued and neutral conversations across five LLMs, we establish that a localized internal activation signal tracks changes in recommendations, with correlations up to r=0.87. When multiple cues appear together, their internal signals largely combine, but the changes in output do not simply add up. We further show that removing the internal signal associated with one cue can suppress its influence, often more effectively than asking the model to ignore demographics via prompting, while largely preserving general benchmark performance. However, the ability to selectively remove one dimension's influence while leaving co-present dimensions intact remains highly model- and attribute-specific. These results connect implicit personalization behavior to an internal signal that can be analyzed and causally controlled.",
+    "status": "found"
+  },
+  "2608.11736": {
+    "arxiv_id": "2608.11736",
+    "title": "One-point extensions of Euclidean Ramsey sets",
+    "authors": [
+      "Mostafa Mirabi"
+    ],
+    "submission_date": "2026-08-12T07:23:39Z",
+    "latest_updated": "2026-08-12T07:23:39Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11736v1"
+    ],
+    "abstract": "Let $X$ be a finite Euclidean Ramsey set. We prove that adjoining any point outside the affine hull of $X$ gives another Euclidean Ramsey set, answering a conjecture of Ivan, Leader, and Walters. We first give an elementary product proof under the additional assumptions that the orthogonal projection of the new point lies in $conv(X)$ and that its distance from $aff(X)$ is sufficiently large. We then prove the general case by combining the product theorem for $E$-Ramsey configurations and Kříž's orbit-gluing theorem with a cyclic construction. No transitivity assumption on $X$ is needed.",
+    "status": "found"
+  },
+  "2608.11737": {
+    "arxiv_id": "2608.11737",
+    "title": "Phoenix TTS: High-Fidelity Synthesis and Voice Conversion via Flow-Matching-Driven Speech Tokenization",
+    "authors": [
+      "Peijie Chen",
+      "Zhuanling Zha",
+      "Zhipeng Nie",
+      "Weijie Wu",
+      "Yiming Liu",
+      "Daiyu Huang",
+      "Junbo Li",
+      "Jun Fang",
+      "Naiqiang Tan",
+      "Hua Chai",
+      "Qingyang Hong"
+    ],
+    "submission_date": "2026-08-12T07:23:54Z",
+    "latest_updated": "2026-08-12T07:23:54Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11737v1"
+    ],
+    "abstract": "In current zero-shot text-to-speech systems, conventional semantic tokenizers are typically optimized using supervised automatic speech recognition or self-supervised learning objectives. However, due to the inherent nature of speech, semantic and acoustic information cannot be completely decoupled, and ASR-based tokenizers discard acoustic details to focus on linguistic content; models relying on them usually struggle to achieve optimal speaker similarity. Furthermore, these tokenizers are optimized independently and lack direct supervision from downstream acoustic generation tasks. This isolated training creates a feature gap between the extracted discrete tokens and the continuous space required by acoustic models, fundamentally bottlenecking the upper bound of synthesis quality. To bridge this gap, we propose Phoenix TTS, a unified framework that tightly couples representation learning with generative acoustic modeling. Specifically, our speech tokenizer is optimized to reconstruct self-supervised features to maintain semantic richness, while simultaneously receiving direct supervision from a Flow Matching training loss. Through this joint training paradigm, the extracted discrete tokens successfully preserve essential semantic information and natively align with the feature space of the downstream Flow Matching model. Comprehensive evaluations highlight the efficiency and effectiveness of Phoenix TTS. Trained on 110K hours of data, the system achieves excellent speech intelligibility, yielding WER that consistently falls below that of ground-truth recordings. Simultaneously, it maintains robust zero-shot speaker similarity, rivaling or outperforming several prominent large-scale baselines. Furthermore, as an advantageous byproduct of this unified training, the learned tokenizer can be seamlessly adapted to zero-shot voice conversion tasks without requiring task-specific fine-tuning.",
+    "status": "found"
+  },
+  "2608.11738": {
+    "arxiv_id": "2608.11738",
+    "title": "Advancing MLLM-based UAV Image Understanding and Reasoning: A Benchmark and a Training-Free Multi-Agent System",
+    "authors": [
+      "Haoyu Zhang",
+      "Shuoxun Zhang",
+      "Peng Ye",
+      "Lin Zhang",
+      "Jiakang Yuan",
+      "Shenghong Yi",
+      "Yuening Wang",
+      "Tao Chen"
+    ],
+    "submission_date": "2026-08-12T07:25:32Z",
+    "latest_updated": "2026-08-12T07:25:32Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11738v1"
+    ],
+    "abstract": "Multimodal Large Language Model (MLLM)-based UAV aerial image understanding and reasoning is essential for aerial intelligence yet poses distinct challenges arising from extreme scale variation, arbitrary camera orientations, and high object density. Despite growing interest, existing evaluations remain fragmented across individual datasets and narrow tasks, leaving a critical gap in unified assessment of UAV understanding and reasoning capabilities. To fill this gap, we construct UAVQA-Bench, a benchmark of 1,500 human-annotated QA pairs drawn from 13 public UAV datasets, covering 6 capability dimensions and 16 tasks in both multiple-choice and visual grounding formats. Systematic evaluation of a broad range of open-source and closed-source MLLMs as well as agent-based systems on UAVQA-Bench identifies three key failure modes: domain-toolset mismatch, unchecked error propagation, and static reasoning. Motivated by these findings, we propose UAV-MAS, a training-free multi-agent system for MLLM-based UAV aerial image understanding and reasoning, comprising a Domain-Specific Perception Engine (DSPE) that routes queries to task-appropriate visual tools, a Context-Aware Iterative Refinement module (CAIR) that validates intermediate reasoning to curb error accumulation, and a Difficulty-Aware Adaptive Search mechanism (DAAS) that adjusts search depth to question difficulty. UAV-MAS with a 32B open-source MLLM achieves 77.0% overall accuracy on UAVQA-Bench, surpassing Gemini 3 Pro by 4.0\\%, while the 8B variant improves 8.7\\% over its base model.",
+    "status": "found"
+  },
+  "2608.11739": {
+    "arxiv_id": "2608.11739",
+    "title": "G0.5: One Autoregressive Stream for Robot Reasoning and Action",
+    "authors": [
+      "Yicheng Liu",
+      "Zibin Dong",
+      "Baijun Ye",
+      "Tianyuan Yuan",
+      "Tao Jiang",
+      "Anqi Yang",
+      "Shicheng Cao",
+      "Haonan Liu",
+      "Yue Sun",
+      "Zihan Guo",
+      "Xiao Liu",
+      "Dong Ke",
+      "Changxun Pan",
+      "Chenru Wu",
+      "Tailai Cheng",
+      "Xiaoshu Ren",
+      "Xinlei Zhang",
+      "Jianning Cui",
+      "Zijie Zhao",
+      "Haoyu Zhang",
+      "Kaiming Xu",
+      "Haodong Yang",
+      "Bowen Zhang",
+      "Jiahui Niu",
+      "Shaoting Zhu",
+      "Shiduo Zhang",
+      "Hang Zhao"
+    ],
+    "submission_date": "2026-08-12T07:26:47Z",
+    "latest_updated": "2026-08-12T07:26:47Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11739v1"
+    ],
+    "abstract": "The prevailing recipe for Vision-Language-Action (VLA) models couples a pretrained VLM with a separately trained flow-matching action expert. This makes the VLM a context encoder rather than a decision-maker. We introduce G0.5, a pretrained autoregressive VLA in which a single transformer decoder emits reasoning and action tokens under a single objective. Three components make this tractable at foundation-model scale: a learnable cross-embodiment action tokenizer that maps heterogeneous robot actions into a shared vocabulary; a native chain-of-thought stream interleaving task decomposition, object grounding, and action hints with action tokens; and a visual memory module that injects multi-second history through the vision encoder. Because reasoning and action share a single set of weights, the pretrained VLM's capabilities carry over to physical behavior: the model follows instructions closely, and prompts directly steer action granularity, task horizon, and out-of-distribution scene handling without further training. Pretrained on a large collection of robot datasets together with VQA samples, G0.5 surpasses state-of-the-art models across 7 independent regimes: real-world fine-tuning on R1lite and R1pro robots (76.7\\% vs.\\ 53.3\\% for $π_{0.5}$ and 24.4\\% for GR00T-N1.7), the 2025 BEHAVIOR Challenge on 50 long-horizon household mobile manipulation tasks using a generalist policy (31.4\\% vs.\\ 26.3\\% for $π_{0.5}$ and 26.1\\% for the challenge winner), DROID post-training followed by zero-shot transfer to an unseen environment and objects (82.5\\%), a language-following Pick-and-Place benchmark, LIBERO (98.9\\%), RoboTwin 2.0 (93.3\\%), and SimplerEnv-Bridge (87.3\\%).",
+    "status": "found"
+  },
+  "2608.11740": {
+    "arxiv_id": "2608.11740",
+    "title": "Magnetic noise of a dark exciton Bose-Einstein condensate",
+    "authors": [
+      "Pieter M. Gunnink"
+    ],
+    "submission_date": "2026-08-12T07:27:27Z",
+    "latest_updated": "2026-08-20T08:17:42Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.11740v1",
+      "2608.11740v2"
+    ],
+    "abstract": "Excitons provide a promising platform for the realization of solid-state Bose-Einstein condensation (BEC), offering quantum coherence, strongly correlated electron-hole physics, and superfluidity. Yet, its unambiguous experimental identification remains challenging. In particular, $S_z= \\pm 1$ triplet excitons are excellent candidates to realize an exciton BEC, because of their intrinsically limited recombination rate and thus long lifetimes. However, since their optical detection is inherently forbidden, experimental signatures remain elusive. In this work, we demonstrate that the magnetic nature of a $S_z= \\pm 1$ triplet exciton BEC gives rise to stray magnetic field noise, that can be measured using nitrogen-vacancy (NV) center magnetometry. Using an external magnetic field to tune the system from an antiferromagnetic to a ferromagnetic ordering, the longitudinal spin sound mode of the BEC softens, bringing the mode into the characteristic gigahertz frequency range of the NV spin relaxation rate and thus allowing direct detection. Furthermore, we demonstrate an unconventional UV scaling at small distances $d$ from the sample, owing to the cubic corrections to the sound mode dispersion and damping rate in the form of Beliaev damping. Through this approach, we establish that the spin component of exciton BECs offers new approaches to detect exciton BECs.",
+    "status": "found"
+  },
+  "2608.11741": {
+    "arxiv_id": "2608.11741",
+    "title": "JieZi: A Large-Scale Expert-Audited Dataset and Benchmark for Ancient Chinese Character Exegesis",
+    "authors": [
+      "Ran Li",
+      "Huiguo He",
+      "Jiahuan Cao",
+      "Junle Liu",
+      "Hiuyi Cheng",
+      "Lianwen Jin"
+    ],
+    "submission_date": "2026-08-12T07:30:00Z",
+    "latest_updated": "2026-08-12T07:30:00Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11741v1"
+    ],
+    "abstract": "The scholarly exegesis of ancient Chinese characters demands integrating visual observation, linguistic analysis, and historical context. However, existing computational approaches focus narrowly on subtasks such as character recognition and retrieval, lacking the structured datasets and benchmarks required for comprehensive scholarly analysis. To address this limitation, we introduce Ancient Chinese Character Exegesis (ACCE), a vision-language question answering (VQA) task that models the scholarly exegesis process. ACCE is organized into four progressive levels: basic character identification, glyph-form analysis, meaning exegesis, and diachronic evolution analysis. To support this task, we construct two complementary resources. JieZi-Dataset is the first large-scale, expert-audited VQA training dataset for ACCE, comprising over 500K QA pairs. It is constructed via a pipeline that reduces factual errors by constraining generation with expert-designed templates and source-text references. Human verification is further applied at each key stage to ensure scholarly accuracy. JieZi-Bench is an evaluation benchmark aligned with the exegesis process, constructed and verified by human experts to ensure evaluation reliability. It consists of four levels with reference answers curated from authoritative lexicographic works held separate from the training data. Experiments on multimodal large language models show that current models perform well on basic identification but struggle with glyph analysis, semantic reasoning, and diachronic understanding. Fine-tuning on JieZi-Dataset substantially improves performance across all four levels. Code and dataset are available at https://github.com/Ran00w/JieZi.",
+    "status": "found"
+  },
+  "2608.11742": {
+    "arxiv_id": "2608.11742",
+    "title": "Ripple-Pivot Search: Active Parallel Decoding for Diffusion Large Language Models",
+    "authors": [
+      "Yushi Ye",
+      "Xu Chen",
+      "Haoyun Jiang",
+      "Jinsong Lan",
+      "Haihong Tang",
+      "Xiangtao Li",
+      "Mingming Gong",
+      "Ivor Tsang",
+      "Yanfeng Wang",
+      "Jiangchao Yao"
+    ],
+    "submission_date": "2026-08-12T07:32:29Z",
+    "latest_updated": "2026-09-18T09:55:34Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.11742v1",
+      "2608.11742v2"
+    ],
+    "abstract": "Diffusion Large Language Models (dLLMs) have emerged as a competitive alternative to autoregressive language models, offering the potential for substantially faster inference through parallel decoding. Existing parallel decoding schedulers typically commit positions only after they meet a per-position criterion, overlooking how early commitments may benefit subsequent decoding. We identify a ripple effect in dLLM decoding: proactively committing a mid-entropy pivot position can induce a pronounced reduction in uncertainty across the remaining masked positions. This uncertainty reduction allows subsequent steps to unmask more tokens in parallel, thereby accelerating the overall decoding process. To exploit the ripple effect, we propose Ripple-Pivot Search (RPS), a novel training-free decoding method that seeks mid-entropy positions as promising candidate pivots (where to decode), and determines their token assignment that yields the greatest downstream benefit via lookahead evaluation (what to decode). Across 3 dLLMs and 4 reasoning and code-generation benchmarks, RPS achieves 4-10$\\times$ wall-clock speedup over the standard decoder while preserving generation quality, and improves accuracy over the previous lookahead baseline by up to 5.49% while delivering higher throughput in most settings. When integrated with KV caching, RPS further achieves up to 18$\\times$ wall-clock speedup over the standard decoder.",
+    "status": "found"
+  },
+  "2608.11743": {
+    "arxiv_id": "2608.11743",
+    "title": "Artin algebras of small representation bound",
+    "authors": [
+      "Youqi Yin",
+      "Shiping Liu"
+    ],
+    "submission_date": "2026-08-12T07:32:50Z",
+    "latest_updated": "2026-08-12T07:32:50Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11743v1"
+    ],
+    "abstract": "This paper introduces a novel classification approach for representation-finite artin algebras in terms of the maximal length of their indecomposable modules of finite length, which we call the representation bound. To this end, we develop methods to compute almost split sequences and establish lower bounds for the lengths of the Auslander-Reiten translates of certain modules over artin algebras. We apply these techniques and results to explicitly classify artin algebras of representation bound $n$ for each positive integer $n \\le 4.$",
+    "status": "found"
+  },
+  "2608.11744": {
+    "arxiv_id": "2608.11744",
+    "title": "Harnessing LLMs for Document-Guided Fuzzing of Python Libraries",
+    "authors": [
+      "Bin Duan",
+      "Tarek Mahmud",
+      "Meiru Che",
+      "Yan Yan",
+      "Naipeng Dong",
+      "Dan Dongseong Kim",
+      "Guowei Yang"
+    ],
+    "submission_date": "2026-08-12T07:34:29Z",
+    "latest_updated": "2026-08-12T07:34:29Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11744v1"
+    ],
+    "abstract": "Python libraries underpin deep learning, scientific computing, data analysis, and computer vision, making their reliability critical to downstream applications. Testing their APIs requires inputs that satisfy both per-parameter constraints and dependencies among parameters. Existing approaches either leave such constraints implicit in generated programs or rely on library-specific parsing rules. This paper introduces VistaFuzz, a document-guided fuzzing technique that uses a locally served open-sourced LLM to extract parameter specifications from API documents and generate inputs that satisfy both parameter constraints and inter-parameter dependencies. We evaluate VistaFuzz on 7,718 APIs across twelve Python libraries. Inter-parameter relationships occur in 40.1\\% of tested APIs, and disabling their resolution reduces the valid generation rate on those APIs from above 95\\% to 31.6\\%--52.8\\%. VistaFuzz reports 74 issues, of which 43 have been confirmed by developers and 29 have been fixed.",
+    "status": "found"
+  },
+  "2608.11745": {
+    "arxiv_id": "2608.11745",
+    "title": "LiveAnimate: Stable Long-Form Streaming Human Animation in Real-Time",
+    "authors": [
+      "Yuxuan Zhang",
+      "Haozhong Xiong",
+      "Yubo Huang",
+      "Jiayi Song",
+      "Jinpeng Yu",
+      "Haofan Wang",
+      "Jiaming Liu",
+      "Ruihua Huang",
+      "Liwei Wang"
+    ],
+    "submission_date": "2026-08-12T07:35:52Z",
+    "latest_updated": "2026-08-13T06:21:16Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.11745v1",
+      "2608.11745v2"
+    ],
+    "abstract": "Pose-driven human animation synthesizes a video of a target person from a single reference image and a driving pose stream. Real-time generation is essential for interactive applications such as live streaming, telepresence, and virtual avatars, yet diffusion-based systems require minutes to hours per clip, precluding responsive interaction. We present LiveAnimate, to our knowledge the first animation system to combine real-time streaming with stable long-form generation at billion scale, built on a 14B-parameter video Diffusion Transformer (DiT). A two-stage training pipeline first adapts a pretrained bidirectional DiT into a block-causal autoregressive generator through Reference-Anchored Teacher-Forcing Adaptation, and then reduces the sampling budget to three steps through Block-wise Self-Forcing Distillation. To preserve appearance over extended streams, we introduce Pose-Retrieval Sink Attention (PR-Sink), a bounded KV-cache mechanism combining a Static Sink that permanently anchors the first generated block, a Dynamic Sink that holds a pose-retrieved historical block, and a three-slot Rolling Window. When a pose recurs, PR-Sink restores the relevant appearance context without retaining the entire sequence, so memory and per-block latency remain constant regardless of stream duration. Together with Ulysses sequence parallelism and operator fusion, these designs enable 19.63\\,FPS streaming inference on two NVIDIA H100 GPUs. On a three-minute benchmark, LiveAnimate maintains nearly constant perceptual quality and identity from the first 30 seconds to the final minute, while prior systems degrade substantially or require hours of offline computation for the same rollout. These results establish a new operating point in quality, latency, and duration for interactive full-body animation.",
+    "status": "found"
+  },
+  "2608.11746": {
+    "arxiv_id": "2608.11746",
+    "title": "Epiplexity Guided Data Selection and Generation for Out-of-Distribution Generalization",
+    "authors": [
+      "Ellen Su",
+      "Andres Potapczynski",
+      "Shikai Qiu",
+      "Edward Hughes",
+      "Andrew Gordon Wilson"
+    ],
+    "submission_date": "2026-08-12T07:38:58Z",
+    "latest_updated": "2026-08-12T07:38:58Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11746v1"
+    ],
+    "abstract": "Modern systems are increasingly expected to transfer across tasks not specified during training. What data facilitates generalization in these new, unanticipated settings? One hypothesis is that data with more structural information could contain shared circuits and subprograms that could be recycled in a wider array of downstream settings. Epiplexity, a recently proposed measure of the structural information a compute-bounded learner can extract from data, provides a mechanism to reason about this relationship. In this paper, we show how to operationalize epiplexity as an online training signal for data selection and synthetic data generation. For selection, we fit scaling laws to the training loss curves of natural data domains to predict the expected epiplexity gain as a function of training tokens, and use this signal to adaptively determine the sampling weights over domains during training. For synthetic data generation, we define a generator's reward as the change in learner epiplexity over a buffer of previously generated data and use REINFORCE policy gradients to guide the generator toward an epiplexity-maximizing distribution. In both cases, higher epiplexity predicts improved downstream performance on zero-shot and fine-tuning based tasks, supporting the hypothesis that data rich in structural information yield representations that transfer across domains.",
+    "status": "found"
+  }
+}

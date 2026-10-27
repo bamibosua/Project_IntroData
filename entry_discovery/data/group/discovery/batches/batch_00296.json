@@ -1,0 +1,440 @@
+{
+  "2601.19076": {
+    "arxiv_id": "2601.19076",
+    "title": "C2NP: A Benchmark for Learning Scale-Dependent Geometric Invariances in 3D Materials Generation",
+    "authors": [
+      "Can Polat",
+      "Erchin Serpedin",
+      "Mustafa Kurban",
+      "Hasan Kurban"
+    ],
+    "submission_date": "2026-01-27T01:25:50Z",
+    "latest_updated": "2026-01-27T01:25:50Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19076v1"
+    ],
+    "abstract": "Generative models for materials have achieved strong performance on periodic bulk crystals, yet their ability to generalize across scale transitions to finite nanostructures remains largely untested. We introduce Crystal-to-Nanoparticle (C2NP), a systematic benchmark for evaluating generative models when moving between infinite crystalline unit cells and finite nanoparticles, where surface effects and size-dependent distortions dominate. C2NP defines two complementary tasks: (i) generating nanoparticles of specified radii from periodic unit cells, testing whether models capture surface truncation and geometric constraints; and (ii) recovering bulk lattice parameters and space-group symmetry from finite particle configurations, assessing whether models can infer underlying crystallographic order despite surface perturbations. Using diverse materials as a structurally consistent testbed, we construct over 170,000 nanoparticle configurations by carving particles from supercells derived from DFT-relaxed crystal unit cells, and introduce size-based splits that separate interpolation from extrapolation regimes. Experiments with state-of-the-art approaches, including diffusion, flow-matching, and variational models, show that even when losses are low, models often fail geometrically under distribution shift, yielding large lattice-recovery errors and near-zero joint accuracy on structure and symmetry. Overall, our results suggest that current methods rely on template memorization rather than scalable physical generalization. C2NP offers a controlled, reproducible framework for diagnosing these failures, with immediate applications to nanoparticle catalyst design, nanostructured hydrides for hydrogen storage, and materials discovery. Dataset and code are available at https://github.com/KurbanIntelligenceLab/C2NP.",
+    "status": "found"
+  },
+  "2601.19077": {
+    "arxiv_id": "2601.19077",
+    "title": "Design and fabrication of guiding patterns for topography-based searching of 2D devices for scanning tunneling microscopy measurements",
+    "authors": [
+      "Huandong Chen",
+      "Hong Li",
+      "Yutao Li",
+      "He Zhao",
+      "Ming Lu",
+      "Kazuhiro Fujita",
+      "Abhay N. Pasupathy"
+    ],
+    "submission_date": "2026-01-27T01:31:53Z",
+    "latest_updated": "2026-01-27T01:31:53Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19077v1"
+    ],
+    "abstract": "We report the design and fabrication of guiding patterns for topography-based searching of two-dimensional (2D) devices for scanning tunneling microscopy (STM) measurements. Sub-micron geometric coordinate markers were etched into SiO2/Si wafers, serving as both substrates for 2D device integration and guiding maps for sample navigation. Here, we used a monolayer graphene/h-BN device with an active area of smaller than 20 um x 20 um as a model system and demonstrated that the device could be reliably located in STM solely through topographic imaging of the guiding patterns and in situ stage calibration, without reliance on optical viewports or capacitive sensing. Atomically resolved topographic imaging and tunneling spectroscopy were also obtained. Our proposed navigation strategy is fully compatible with standard device fabrication procedures and requires no hardware modification to existing STM setups. As such, it offers a practical alternative for locating miniaturized devices in STM, shedding light on studying emerging quantum phenomena in 2D systems.",
+    "status": "found"
+  },
+  "2601.19078": {
+    "arxiv_id": "2601.19078",
+    "title": "FTA-NTN: Fairness and Throughput Assurance in Non-Terrestrial Networks",
+    "authors": [
+      "Sachin Ravikant Trankatwar",
+      "Heiko Straulino",
+      "Petar Djukic",
+      "Burak Kantarci"
+    ],
+    "submission_date": "2026-01-27T01:33:05Z",
+    "latest_updated": "2026-01-27T01:33:05Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19078v1"
+    ],
+    "abstract": "Designing optimal non-terrestrial network (NTN) constellations is essential for maximizing throughput and ensuring fair resource distribution. This paper presents FTA-NTN (Fairness and Throughput Assurance in Non-Terrestrial Networks), a multi-objective optimization framework that jointly maximizes throughput and fairness under realistic system constraints. The framework integrates multi-layer Walker Delta constellations, a parametric mobility model for user distributions across Canadian land regions, adaptive K-Means clustering for beamforming and user association, and Bayesian optimization for parameter tuning. Simulation results with 500 users show that FTA-NTN achieves over 9.88 Gbps of aggregate throughput with an average fairness of 0.42, corresponding to an optimal configuration of 9 planes with 15 satellites per plane in LEO and 7 planes with 3 satellites per plane in MEO. These values align with 3GPP NTN evaluation scenarios and representative system assumptions, confirming their relevance for realistic deployments. Overall, FTA-NTN demonstrates that throughput and fairness can be jointly optimized under practical constraints, advancing beyond throughput-centric designs in the literature and offering a scalable methodology for next-generation NTN deployments that supports efficient and equitable global connectivity.",
+    "status": "found"
+  },
+  "2601.19079": {
+    "arxiv_id": "2601.19079",
+    "title": "Neuromorphic BrailleNet: Accurate and Generalizable Braille Reading Beyond Single Characters through Event-Based Optical Tactile Sensing",
+    "authors": [
+      "Naqash Afzal",
+      "Niklas Funk",
+      "Erik Helmut",
+      "Jan Peters",
+      "Benjamin Ward-Cherrier"
+    ],
+    "submission_date": "2026-01-27T01:33:13Z",
+    "latest_updated": "2026-04-20T08:26:23Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.19079v1",
+      "2601.19079v2"
+    ],
+    "abstract": "Conventional robotic Braille readers typically rely on discrete, character-by-character scanning, limiting reading speed and disrupting natural flow. Vision-based alternatives often require substantial computation, introduce latency, and degrade in real-world conditions. In this work, we present a high accuracy, real-time pipeline for continuous Braille recognition using Evetac, an open-source neuromorphic event-based tactile sensor. Unlike frame-based vision systems, the neuromorphic tactile modality directly encodes dynamic contact events during continuous sliding, closely emulating human finger-scanning strategies. Our approach combines spatiotemporal segmentation with a lightweight ResNet-based classifier to process sparse event streams, enabling robust character recognition across varying indentation depths and scanning speeds. The proposed system achieves near-perfect accuracy (>=98%) at standard depths, generalizes across multiple Braille board layouts, and maintains strong performance under fast scanning. On a physical Braille board containing daily-living vocabulary, the system attains over 90% word-level accuracy, demonstrating robustness to temporal compression effects that challenge conventional methods. These results position neuromorphic tactile sensing as a scalable, low latency solution for robotic Braille reading, with broader implications for tactile perception in assistive and robotic applications.",
+    "status": "found"
+  },
+  "2601.19080": {
+    "arxiv_id": "2601.19080",
+    "title": "Transformer Learning of Chaotic Collective Dynamics in Many-Body Systems",
+    "authors": [
+      "Ho Jang",
+      "Gia-Wei Chern"
+    ],
+    "submission_date": "2026-01-27T01:33:33Z",
+    "latest_updated": "2026-01-27T01:33:33Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19080v1"
+    ],
+    "abstract": "Learning reduced descriptions of chaotic many-body dynamics is fundamentally challenging: although microscopic equations are Markovian, collective observables exhibit strong memory and exponential sensitivity to initial conditions and prediction errors. We show that a self-attention-based transformer framework provides an effective approach for modeling such chaotic collective dynamics directly from time-series data. By selectively reweighting long-range temporal correlations, the transformer learns a non-Markovian reduced description that overcomes intrinsic limitations of conventional recurrent architectures. As a concrete demonstration, we study the one-dimensional semiclassical Holstein model, where interaction quenches induce strongly nonlinear and chaotic dynamics of the charge-density-wave order parameter. While pointwise predictions inevitably diverge at long times, the transformer faithfully reproduces the statistical \"climate\" of the chaos, including temporal correlations and characteristic decay scales. Our results establish self-attention as a powerful mechanism for learning effective reduced dynamics in chaotic many-body systems.",
+    "status": "found"
+  },
+  "2601.19081": {
+    "arxiv_id": "2601.19081",
+    "title": "Development of a comprehensive PMT optical model for the JUNO experiment",
+    "authors": [
+      "Y. Ren",
+      "X. Yang",
+      "Y. Wang",
+      "Z. Deng",
+      "Z. Qin",
+      "A. Olshevskiy",
+      "W. Wang",
+      "N. Anfimov",
+      "Z. Wang",
+      "G. Cao"
+    ],
+    "submission_date": "2026-01-27T01:35:09Z",
+    "latest_updated": "2026-02-02T09:33:42Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.19081v1",
+      "2601.19081v2"
+    ],
+    "abstract": "There are 17,612 20-inch photomultiplier tubes (PMTs) installed at the Jiangmen Underground Neutrino Observatory (JUNO). Developing a precise optical model for the PMTs is crucial for enhancing the accuracy of detector simulations and refining the energy response model at JUNO. In this study, we established a comprehensive PMT optical model based on prior studies, taking into account the non-uniformity of photon detection efficiency (PDE) across the PMT surface and the variances in PDE as well as reflections among different PMTs. By collecting reflectance data from 669 PMTs and utilizing PDE data from mass testing systems, we estimated the thickness maps of the photocathode (PC) and the anti-reflective coating (ARC) for each PMT. We also determined the collection efficiency (CE) by decomposing PDE with consideration of the optical processes occurring within the PMTs. The refractive index and extinction coefficient of both the PC and ARC, along with the escape factor, were evaluated over a broad wavelength range of 300~nm to 700~nm, covering the entire spectrum of interest for JUNO. Compared to the prediction from a simplified PMT optical model, which assumes uniform PC and ARC across all PMTs of the same type, the further developed PMT optical model yields much more reflectance for HPK PMTs and less for NNVT PMTs, and the change in PDE is at the level of a few percent. This comprehensive PMT optical model also provides a valuable reference for other PMT-based applications.",
+    "status": "found"
+  },
+  "2601.19082": {
+    "arxiv_id": "2601.19082",
+    "title": "Payoff scaling shapes cooperation in LLM agents across languages",
+    "authors": [
+      "Trung-Kiet Huynh",
+      "Dao-Sy Duy-Minh",
+      "Thanh-Bang Cao",
+      "Phong-Hao Le",
+      "Hong-Dan Nguyen",
+      "Phu-Quy Nguyen-Lam",
+      "Minh-Luan Nguyen-Vo",
+      "Hong-Phat Pham",
+      "Phu-Hoa Pham",
+      "Thien-Kim Than",
+      "Chi-Nguyen Tran",
+      "Huy Tran",
+      "Gia-Thoai Tran-Le",
+      "Alessio Buscemi",
+      "Le Hong Trang",
+      "The Anh Han"
+    ],
+    "submission_date": "2026-01-27T01:36:50Z",
+    "latest_updated": "2026-06-06T14:41:12Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.19082v1",
+      "2601.19082v2"
+    ],
+    "abstract": "Large language models (LLMs) are increasingly deployed as autonomous agents that negotiate, coordinate, and act on behalf of users. Whether they cooperate in such settings is no longer just an academic question, but a central issue for AI governance. We approach it from a strategic-behaviour angle, asking how two everyday levers - the size of what is at stake, and the language in which the interaction is described - shape the strategies LLMs adopt in a repeated Prisoner's Dilemma. Rather than reading cooperation off raw action counts, we train supervised classifiers to recognise the canonical strategies of repeated games (always cooperate, always defect, Tit-for-Tat, Win-Stay-Lose-Shift) and use them as a lens onto LLM behaviour. To know what the strategy distribution should look like under the same payoffs, we derive an evolutionary game theory (EGT) baseline and compare it with the LLM data. The two outcomes disagree in a revealing way: as stakes grow, evolutionary theory predicts that defection should take over the population, yet LLMs move in the opposite direction, becoming more cooperative - a signature, we argue, of alignment training and the human-like reasoning patterns LLMs inherit from their training data. We further show that this picture is not particular to frontier-scale, proprietary models: it also occurs with three open-weight smaller LLMs. Overall, our analysis highlights that payoff design and linguistic framing are powerful but under-explored levers for steering LLM behaviour, with direct implications for evaluating, aligning, and governing multi-agent AI systems deployed in high-stakes, multilingual environments.",
+    "status": "found"
+  },
+  "2601.19083": {
+    "arxiv_id": "2601.19083",
+    "title": "Tiling of Hyperbolic Surface by a Single Tile",
+    "authors": [
+      "Chunlin Li",
+      "Erxiao Wang",
+      "Jie Wu",
+      "Min Yan"
+    ],
+    "submission_date": "2026-01-27T01:39:04Z",
+    "latest_updated": "2026-03-20T09:51:55Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.19083v1",
+      "2601.19083v2"
+    ],
+    "abstract": "Tilings of a surface of negative Euler characteristic by n-gons with n\\ge 7 is a finite problem. One extreme of the finite problem is single tile tilings. We develop the algorithm for finding all the single tile tilings and present the results for surfaces of small genus.",
+    "status": "found"
+  },
+  "2601.19084": {
+    "arxiv_id": "2601.19084",
+    "title": "A Probabilistic Interpretation of the Master Equation Arising from Mean Field Games with Jump Diffusion",
+    "authors": [
+      "Jiusheng Liu",
+      "Jing Zhang"
+    ],
+    "submission_date": "2026-01-27T01:43:12Z",
+    "latest_updated": "2026-01-27T01:43:12Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19084v1"
+    ],
+    "abstract": "In this paper we study the classical solution to the master equation arising from mean-field games (MFGs) driven by jump-diffusion processes. The master equation, a nonlinear partial differential equation on Wasserstein space, characterizes the value function of MFGs and is challenging to analyze directly due to its measure-valued derivatives. We propose a probabilistic interpretation using coupled McKean-Vlasov forward-backward stochastic differential equations (MV-FBSDEs) with jumps. Under suitable Lipschitz and differentiability assumptions on the coefficients, we first establish the well-posedness of the MV-FBSDEs on a small time interval via a contraction mapping argument. We then prove the existence and regularity of the first- and second-order derivatives of the solutions with respect to the spatial and measure variables, relying on careful estimates involving jump terms and measure derivatives. Finally, we show that the decoupling field of the MV-FBSDEs satisfies the master equation in the classical sense, providing both existence and uniqueness of the solution. Our work extends earlier results on diffusion-driven MFGs to the jump-diffusion setting and offers a probabilistic framework for analyzing and numerically solving such kind of master equations.",
+    "status": "found"
+  },
+  "2601.19085": {
+    "arxiv_id": "2601.19085",
+    "title": "Speed is Confidence",
+    "authors": [
+      "Joshua V. Dillon"
+    ],
+    "submission_date": "2026-01-27T01:43:59Z",
+    "latest_updated": "2026-01-29T00:09:16Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.19085v1",
+      "2601.19085v2"
+    ],
+    "abstract": "Biological neural systems must be fast but are energy-constrained. Evolution's solution: act on the first signal. Winner-take-all circuits and time-to-first-spike coding implicitly treat when a neuron fires as an expression of confidence. We apply this principle to ensembles of Tiny Recursive Models (TRM) [Jolicoeur-Martineau et al., 2025]. On Sudoku-Extreme, halt-first selection achieves 97% accuracy vs. 91% for probability averaging -- while requiring 10x fewer reasoning steps. A single baseline model achieves 85.5% +/- 1.3%. Can we internalize this as a training-only cost? Yes: by maintaining K=4 parallel latent states but backpropping only through the lowest-loss \"winner,\" we achieve 96.9% +/- 0.6% accuracy -- matching ensemble performance at 1x inference cost, with less than half the variance of the baseline. A key diagnostic: 89% of baseline failures are selection problems, revealing a 99% accuracy ceiling. As in nature, this work was also resource constrained: all experiments used a single RTX 5090. A modified SwiGLU [Shazeer, 2020] made Muon [Jordan et al., 2024] and high LR viable, enabling baseline training in 48 minutes and full WTA (K=4) in 6 hours on consumer hardware.",
+    "status": "found"
+  },
+  "2601.19086": {
+    "arxiv_id": "2601.19086",
+    "title": "A Leader-Follower Approach for The Attitude Synchronization of Multiple Rigid Body Systems on $SO(3)$",
+    "authors": [
+      "Yiliang Li",
+      "Jun-e Feng",
+      "Abdelhamid Tayebi"
+    ],
+    "submission_date": "2026-01-27T01:44:24Z",
+    "latest_updated": "2026-01-27T01:44:24Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19086v1"
+    ],
+    "abstract": "This paper deals with the leader-follower attitude synchronization problem for a group of heterogeneous rigid body systems on $SO(3)$ under an undirected, connected, and acyclic graph communication topology. The proposed distributed control strategy, endowed with almost global asymptotic stability guarantees, allows the synchronization of the rigid body systems to a constant desired orientation known only to a single rigid body. Some simulation results are also provided to validate the theoretical developments and illustrate the performance of the proposed control strategy.",
+    "status": "found"
+  },
+  "2601.19087": {
+    "arxiv_id": "2601.19087",
+    "title": "Passive Beam Shaping via Binary-Coded Apertures",
+    "authors": [
+      "Mohammed E Eltayeb"
+    ],
+    "submission_date": "2026-01-27T01:47:41Z",
+    "latest_updated": "2026-03-31T08:18:13Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2601.19087v1",
+      "2601.19087v2",
+      "2601.19087v3"
+    ],
+    "abstract": "This paper presents a coded-aperture reflector for indoor mmWave coverage enhancement in obstructed or blocked LoS settings. We model the reflecting aperture using an equivalent array-factor formulation, where each passive reflecting cell contributes a reradiated field with phase set by the incident and departure directions. Building on this model, we develop two fabrication-friendly passive synthesis methods: (i) binary (1-bit) spatial coding that enables deterministic non-specular beam formation and multibeam patterns by selecting cell participation on a dense λ/2 lattice via an ON/OFF metallization mask, and (ii) diffraction-order (periodic) steering that exploits aperture periodicity to place selected diffraction orders at prescribed angles. We analytically characterize the proposed cosine-threshold quantization rule, including its asymptotic activation ratio and a distribution-free lower bound on non-specular gain relative to ideal continuous-phase control. To validate the proposed designs, we fabricate and metallize low-cost prototypes in-house using a copper-backed 3D-printed \"inkwell\" substrate with stencil-guided conductive ink deposition. 60 GHz over-the-air measurements show non-specular power enhancements on the order of +14-20 dB relative to passive, non-engineered (all-ON) reflector baselines. Results also demonstrate that fully passive, binary-coded apertures can deliver beam control with rapid in-lab manufacturability and offer a practical alternative to power-consuming reconfigurable surfaces for static indoor mmWave links.",
+    "status": "found"
+  },
+  "2601.19088": {
+    "arxiv_id": "2601.19088",
+    "title": "Hybrid Fault-Driven Mutation Testing for Python",
+    "authors": [
+      "Saba Alimadadi",
+      "Golnaz Gharachorlu"
+    ],
+    "submission_date": "2026-01-27T01:49:38Z",
+    "latest_updated": "2026-07-20T21:55:45Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.19088v1",
+      "2601.19088v2"
+    ],
+    "abstract": "Mutation testing is an effective technique for assessing the effectiveness of test suites by systematically injecting artificial faults into programs. However, existing mutation testing techniques fall short in capturing many types of common faults in dynamically typed languages like Python. In this paper, we introduce a novel set of seven mutation operators that are inspired by prevalent anti-patterns in Python programs, designed to complement the existing general-purpose operators and broaden the spectrum of simulated faults. We propose a mutation testing technique that utilizes a hybrid of static and dynamic analyses to mutate Python programs based on these operators while minimizing equivalent mutants. We implement our approach in a tool called PyTation and evaluate it on 13 open-source Python applications. Our results show that PyTation generates mutants that complement those from general-purpose tools, exhibiting distinct behaviour under test execution and uncovering inadequacies in high-coverage test suites. We further demonstrate that PyTation produces a high proportion of unique mutants, a low cross-kill rate, and a low test overlap ratio relative to baseline tools, highlighting its novel fault model. PyTation also incurs few equivalent mutants, aided by dynamic analysis heuristics.",
+    "status": "found"
+  },
+  "2601.19089": {
+    "arxiv_id": "2601.19089",
+    "title": "EPAS: Efficient Training with Progressive Activation Sharing",
+    "authors": [
+      "Rezaul Karim",
+      "Maryam Dialameh",
+      "Yang Liu",
+      "Boxing Chen",
+      "Walid Ahmed"
+    ],
+    "submission_date": "2026-01-27T01:51:08Z",
+    "latest_updated": "2026-01-27T01:51:08Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19089v1"
+    ],
+    "abstract": "We present a novel method for Efficient training with Progressive Activation Sharing (EPAS). This method bridges progressive training paradigm with the phenomenon of redundant QK (or KV ) activations across deeper layers of transformers. EPAS gradually grows a sharing region during training by switching decoder layers to activation sharing mode. This results in throughput increase due to reduced compute. To utilize deeper layer redundancy, the sharing region starts from the deep end of the model and grows towards the shallow end. The EPAS trained models allow for variable region lengths of activation sharing for different compute budgets during inference. Empirical evaluations with QK activation sharing in LLaMA models ranging from 125M to 7B parameters show up to an 11.1% improvement in training throughput and up to a 29% improvement in inference throughput while maintaining similar loss curve to the baseline models. Furthermore, applying EPAS in continual pretraining to transform TinyLLaMA into an attention-sharing model yields up to a 10% improvement in average accuracy over state-of-the-art methods, emphasizing the significance of progressive training in cross layer activation sharing models.",
+    "status": "found"
+  },
+  "2601.19090": {
+    "arxiv_id": "2601.19090",
+    "title": "Privacy-Preserving Model Transcription with Differentially Private Synthetic Distillation",
+    "authors": [
+      "Bochao Liu",
+      "Shiming Ge",
+      "Pengju Wang",
+      "Shikun Li",
+      "Tongliang Liu"
+    ],
+    "submission_date": "2026-01-27T01:51:35Z",
+    "latest_updated": "2026-01-27T01:51:35Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19090v1"
+    ],
+    "abstract": "While many deep learning models trained on private datasets have been deployed in various practical tasks, they may pose a privacy leakage risk as attackers could recover informative data or label knowledge from models. In this work, we present \\emph{privacy-preserving model transcription}, a data-free model-to-model conversion solution to facilitate model deployment with a privacy guarantee. To this end, we propose a cooperative-competitive learning approach termed \\emph{differentially private synthetic distillation} that learns to convert a pretrained model (teacher) into its privacy-preserving counterpart (student) via a trainable generator without access to private data. The learning collaborates with three players in a unified framework and performs alternate optimization: i)~the generator is learned to generate synthetic data, ii)~the teacher and student accept the synthetic data and compute differential private labels by flexible data or label noisy perturbation, and iii)~the student is updated with noisy labels and the generator is updated by taking the student as a discriminator for adversarial training. We theoretically prove that our approach can guarantee differential privacy and convergence. The transcribed student has good performance and privacy protection, while the resulting generator can generate private synthetic data for downstream tasks. Extensive experiments clearly demonstrate that our approach outperforms 26 state-of-the-arts.",
+    "status": "found"
+  },
+  "2601.19091": {
+    "arxiv_id": "2601.19091",
+    "title": "Out-of-Distribution Generalization for Neural Physics Solvers",
+    "authors": [
+      "Zhao Wei",
+      "Chin Chun Ooi",
+      "Jian Cheng Wong",
+      "Abhishek Gupta",
+      "Pao-Hsiung Chiu",
+      "Yew-Soon Ong"
+    ],
+    "submission_date": "2026-01-27T01:57:14Z",
+    "latest_updated": "2026-01-27T01:57:14Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19091v1"
+    ],
+    "abstract": "Neural physics solvers are increasingly used in scientific discovery, given their potential for rapid in silico insights into physical, materials, or biological systems and their long-time evolution. However, poor generalization beyond their training support limits exploration of novel designs and long-time horizon predictions. We introduce NOVA, a route to generalizable neural physics solvers that can provide rapid, accurate solutions to scenarios even under distributional shifts in partial differential equation parameters, geometries and initial conditions. By learning physics-aligned representations from an initial sparse set of scenarios, NOVA consistently achieves 1-2 orders of magnitude lower out-of-distribution errors than data-driven baselines across complex, nonlinear problems including heat transfer, diffusion-reaction and fluid flow. We further showcase NOVA's dual impact on stabilizing long-time dynamical rollouts and improving generative design through application to the simulation of nonlinear Turing systems and fluidic chip optimization. Unlike neural physics solvers that are constrained to retrieval and/or emulation within an a priori space, NOVA enables reliable extrapolation beyond known regimes, a key capability given the need for exploration of novel hypothesis spaces in scientific discovery",
+    "status": "found"
+  },
+  "2601.19092": {
+    "arxiv_id": "2601.19092",
+    "title": "Axe: A Simple Unified Layout Abstraction for Machine Learning Compilers",
+    "authors": [
+      "Bohan Hou",
+      "Hongyi Jin",
+      "Guanjie Wang",
+      "Jinqi Chen",
+      "Yaxing Cai",
+      "Lijie Yang",
+      "Zihao Ye",
+      "Yaoyao Ding",
+      "Ruihang Lai",
+      "Tianqi Chen"
+    ],
+    "submission_date": "2026-01-27T01:57:29Z",
+    "latest_updated": "2026-01-28T22:37:40Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.19092v1",
+      "2601.19092v2"
+    ],
+    "abstract": "Scaling modern deep learning workloads demands coordinated placement of data and compute across device meshes, memory hierarchies, and heterogeneous accelerators. We present Axe Layout, a hardware-aware abstraction that maps logical tensor coordinates to a multi-axis physical space via named axes. Axe unifies tiling, sharding, replication, and offsets across inter-device distribution and on-device layouts, enabling collective primitives to be expressed consistently from device meshes to threads. Building on Axe, we design a multi-granularity, distribution-aware DSL and compiler that composes thread-local control with collective operators in a single kernel. Experiments show that our unified approach can bring performance close to hand-tuned kernels on across latest GPU devices and multi-device environments and accelerator backends.",
+    "status": "found"
+  },
+  "2601.19093": {
+    "arxiv_id": "2601.19093",
+    "title": "Residual-Squeezing Mechanism of Mismatch in Inverse-Squeezing Kennedy Receivers",
+    "authors": [
+      "Enhao Bai",
+      "Fengkai Sun",
+      "Tianyi Wu",
+      "Yang Ran",
+      "Zichao Zhou",
+      "Huankai Zhang",
+      "Jian Peng",
+      "Chen Dong",
+      "Laiyuan Tong",
+      "Zhenrong Zhang",
+      "Yaping Li"
+    ],
+    "submission_date": "2026-01-27T01:58:37Z",
+    "latest_updated": "2026-08-13T09:20:30Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 5,
+    "versions": [
+      "2601.19093v1",
+      "2601.19093v2",
+      "2601.19093v3",
+      "2601.19093v4",
+      "2601.19093v5"
+    ],
+    "abstract": "The discrimination of quantum states is fundamental to quantum information processing. Inverse-squeezing Kennedy (IS-Kennedy) receivers can outperform the coherent-state BPSK Helstrom benchmark at the same energy by converting transmitter-side squeezing into an effective coherent-state separation gain, without violating the Helstrom bound for the squeezed-state alphabet. This work investigates how squeezing mismatch degrades this mechanism. We show that imperfect inverse squeezing transforms the ideally nulled output into a residually squeezed state, thereby altering the photon-number statistics before detection. This residual-squeezing picture reveals a strong physical asymmetry between squeezing-magnitude and squeezing-phase mismatches. Magnitude mismatch produces an energy-independent error floor in the high-signal-energy regime, whereas phase mismatch generates a residual squeezing term that grows with signal energy. In the small-residual-squeezing regime, this leads to a polynomial growth of the leading error contribution and a rapid collapse of the SQL advantage. We also identify a parity-step effect in photon-number-resolving detection: because the nulled residual squeezed vacuum contains only even photon numbers, increasing detector resolution improves the high-energy robustness only when the effective saturation threshold crosses the next even photon number. These results identify phase locking as the dominant bottleneck for IS-Kennedy-type non-Gaussian receivers under unitary squeezing mismatch and provide design guidelines for robust squeezed-state quantum receivers.",
+    "status": "found"
+  },
+  "2601.19094": {
+    "arxiv_id": "2601.19094",
+    "title": "FloydNet: A Learning Paradigm for Global Relational Reasoning",
+    "authors": [
+      "Jingcheng Yu",
+      "Mingliang Zeng",
+      "Qiwei Ye"
+    ],
+    "submission_date": "2026-01-27T01:58:40Z",
+    "latest_updated": "2026-09-01T07:02:06Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2601.19094v1",
+      "2601.19094v2",
+      "2601.19094v3"
+    ],
+    "abstract": "Learning algorithmic computation often requires explicit relational intermediate states, yet many graph processors maintain their primary states on individual entities. We introduce \\fnet and \\textbf{Pivotal Attention} (PA), which maintain ordered pair states and update a target relation $(i,k)$ by attending over candidates formed from $(i,j)$ and $(j,k)$ for every pivot $j$. Motivated by the pair-and-pivot structure of Floyd--Warshall, PA learns relation composition and pivot weighting in parallel rather than executing its ordered min-plus recurrence. The \\kfnet{k} framework extends this operation to ordered $k$-tuples, with Self-Attention and PA as its $k=1$ and $k=2$ cases at the attention-operation level. Under atomic tuple initialization and invariant readout, we show that \\kfnet{k} is no more graph-discriminative than k-FWL; on BREC, each evaluated variant matches the success set of its corresponding WL reference. \\fnet further achieves 96.64\\% mean accuracy under the reported CLRS-30 protocol and a 99.8\\% optimality rate with 10 samples on held-out non-metric TSP instances.",
+    "status": "found"
+  },
+  "2601.19095": {
+    "arxiv_id": "2601.19095",
+    "title": "Dual Analysis of Continuous-time Economic Dispatch and Its Price Implications",
+    "authors": [
+      "Menghan Zhang",
+      "Caisheng Wang"
+    ],
+    "submission_date": "2026-01-27T01:58:42Z",
+    "latest_updated": "2026-01-27T01:58:42Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19095v1"
+    ],
+    "abstract": "As load varies continuously over time, it is essential to provide continuous-time price signals that accurately reflect supply-demand balance. However, conventional discrete-time economic dispatch fails to capture the intra-temporal variations in load and generation. Its dual solution--the marginal price--may distort economic signals, leading to inefficient market incentives. To analyze these issues, this paper develops a continuous-time dispatch model and derives its dual formulation for price analysis. The continuous-time dispatch produces dual variables that can be interpreted as price signals. Piecewise time-indexed generation and price trajectories are then constructed through a parametric programming approach. The resulting price, represented by the Lagrange multiplier of the system-wide power balance constraint, evolves piecewise along the continuous-time load profile. Each segment corresponds to a critical region characterized by a set of active constraints. Furthermore, we discuss the impact of unit-specific ramping constraints on price implications. Results indicate that continuous-time generation and price trajectories provide deeper insights into the price distortions and inefficient incentives inherent in discrete-time formulations. The proposed methodology is validated on an illustrative 5-bus system and a modified IEEE RTS-2019.",
+    "status": "found"
+  }
+}

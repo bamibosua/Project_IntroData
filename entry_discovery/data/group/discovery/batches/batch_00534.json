@@ -1,0 +1,420 @@
+{
+  "2608.09687": {
+    "arxiv_id": "2608.09687",
+    "title": "FedOrbit: Adaptive Personalized Federated Learning for Non-IID LEO Satellite Constellations",
+    "authors": [
+      "Satwat Bashir",
+      "Tasos Dagiuklas",
+      "Muddesar Iqbal"
+    ],
+    "submission_date": "2026-08-10T14:53:48Z",
+    "latest_updated": "2026-08-10T14:53:48Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09687v1"
+    ],
+    "abstract": "Federated learning (FL) in Low Earth Orbit (LEO) satellite constellations is affected by non-IID data and irregular ground-station visibility, both driven by orbital geometry. Global aggregation performs poorly when orbit-level class distributions are disjoint, while strong personalisation can be excessive when these distributions overlap. We present FedOrbit, which combines continuous orbit-level training over inter-satellite links, class-aware hierarchical aggregation, quality-weighted feature aggregation with return-rate dampening, and adaptive feature decomposition based on inter-orbit class similarity. Across three remote-sensing benchmarks and two non-IID partitions, FedOrbit achieves the highest accuracy in five of six settings and is within $0.9$ percentage points of the best result in the sixth. The gains over the strongest baseline reach $16.1$ percentage points under Dirichlet partitioning and $8.6$ under pathological partitioning, with the smallest per-orbit accuracy spread in five of six settings.",
+    "status": "found"
+  },
+  "2608.09688": {
+    "arxiv_id": "2608.09688",
+    "title": "Confusion-Geometry Rebalancing for Long-Tailed Adversarial Training",
+    "authors": [
+      "Mengnan Zhao",
+      "Geyong Min",
+      "Lihe Zhang",
+      "Tianhang Zheng",
+      "Jie Cui"
+    ],
+    "submission_date": "2026-08-10T14:54:00Z",
+    "latest_updated": "2026-08-10T14:54:00Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09688v1"
+    ],
+    "abstract": "Adversarial training under long tailed distributions suffers from a dual imbalance: the class imbalance skews the training objective toward head classes, and the adversarial inner maximization may further amplify this bias. Existing methods mitigate this issue by correcting class priors or adapting class wise robust supervision, yet they treat each class in isolation and fail to identify which boundaries drive long tailed collapse. We propose a Confusion Geometry Rebalancing method (CGRm) for long tail adversarial training, a plug in framework that leverages directed robust errors as training signals. CGRm leverages periodic robust evaluations to derive source class loss weights, class wise robust coefficients, and a directed confusion geometry graph. The method then couples feedback weighted robust optimization with graph guided margin correction, thereby boosting the robustness of vulnerable classes and sharpening the critical boundaries that drive long tailed performance degradation. Experiments on long tailed benchmarks show that CGRm achieves consistent robust performance gains over existing methods, with ablations validating the contribution of each component. We provide the code in the supplement.",
+    "status": "found"
+  },
+  "2608.09689": {
+    "arxiv_id": "2608.09689",
+    "title": "Robust spin pseudogap and spin-charge separation in the $σt$-$J$ model",
+    "authors": [
+      "Zheng-Yuan Yue",
+      "Jia-Xin Zhang",
+      "Zheng-Cheng Gu"
+    ],
+    "submission_date": "2026-08-10T14:54:09Z",
+    "latest_updated": "2026-08-10T14:54:09Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09689v1"
+    ],
+    "abstract": "The $σt$-$J$ model, obtained from the usual $t$-$J$ model by flipping the sign of the spin-down hopping term, has been proposed to eliminate the strong interference between doped holes and the spin background, known as the phase string effect. In this work, we investigate the finite-temperature properties of the $σt$-$J$ model using infinite projected entangled-pair state (iPEPS) algorithms, in comparison with the $t$-$J$ model and its easy-plane variants. We show that these models share similar spin-pseudogap thermodynamics, with a maximum in the spin susceptibility at $T^* \\sim J$ and a broad specific-heat peak. Tensor network renormalization (TNR) further provides strong evidences for a Berezinskii-Kosterlitz-Thouless (BKT) transition in the spin sector of the $σt$-$J$ model at a lower temperature $T_\\text{BKT} < T^*$ due to its reduced $\\mathrm{U}(1)$ spin-rotation symmetry. Crucially, in contrast to the $t$-$J$ model and to its easy-plane variants that also exhibit BKT transitions, these signatures remain robust upon doping: the doped holes preserve and even enhance the antiferromagnetic correlations in the $xy$ spin plane, leading to a weak doping dependence of both $T^*$ and $T_\\text{BKT}$. Finally, we develop a slave-fermion mean-field theory for the $σt$-$J$ model, whose projective symmetry group (PSG) is selected based on numerically determined hopping and pairing correlations, and show that it explains the robust spin pseudogap upon doping.",
+    "status": "found"
+  },
+  "2608.09690": {
+    "arxiv_id": "2608.09690",
+    "title": "Recurrent Neural Networks Beyond Time: Learning from Multiple Ordered Projections",
+    "authors": [
+      "Vagan Terziyan",
+      "Artur Terziian",
+      "Oleksandra Vitko"
+    ],
+    "submission_date": "2026-08-10T14:56:20Z",
+    "latest_updated": "2026-08-10T14:56:20Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09690v1"
+    ],
+    "abstract": "Recurrent neural networks (RNNs) are widely used for sequence learning, yet their application is commonly associated with temporal data, although recurrent computation fundamentally operates on ordered sequences rather than on time itself. Building on this observation, we introduce the Ordered Structural Dependency Hypothesis (OSDH), which proposes that multiple admissible orderings of the same observations may reveal complementary structural dependencies inaccessible through a single sequential organization. To operationalize this hypothesis, we propose the Independent Structural Expert Principle (ISEP), whereby projection-specific sequence models are trained independently before their learned representations are integrated through a dedicated fusion model. As a concrete realization, we present Structural Evolution RNNs (SE-RNNs), which employ conventional RNNs as projection-specific structural experts while preserving the underlying recurrent computation unchanged. Proof-of-concept experiments on three synthetic datasets with substantially different levels of structural complexity demonstrate that the proposed architecture consistently benefits from multiple ordered projections when hidden structural dependencies are present, while remaining competitive on simpler datasets. Since OSDH is independent of the underlying sequence-processing model, the proposed framework naturally extends beyond recurrent networks and may be instantiated using alternative architectures. The results suggest a general computational perspective for exploiting complementary ordered representations across diverse structured learning problems.",
+    "status": "found"
+  },
+  "2608.09691": {
+    "arxiv_id": "2608.09691",
+    "title": "Diffuse the object, keep its label: curating detector training data from a few unlabeled photographs via VLM-built 3D vegetation scenes",
+    "authors": [
+      "Mario Malizia",
+      "Marnix Enting",
+      "Rob Haelterman",
+      "Ken Hasselmann"
+    ],
+    "submission_date": "2026-08-10T14:56:47Z",
+    "latest_updated": "2026-08-10T14:56:47Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09691v1"
+    ],
+    "abstract": "Labeled images of small objects hidden in vegetation are scarce, and detectors trained on them generalize poorly across sites. Rather than reusing labels collected at another site, we synthesize labeled training images from a handful of unlabeled photographs of the deployment site itself. A vision--language model generates a coarse 3D vegetation scene from one photograph; placing 3D object meshes in the scene yields bounding boxes, segmentation masks, and per-instance occlusion directly from the scene geometry, without manual annotation. A lightweight adapter fine-tuned on the photographs conditions a diffusion pass that re-textures the renders, and a graded mask-lock sets how much diffusion may touch the object itself. In our runs this grade was the most influential curation choice: lightly diffusing the object improves minority-class recall over fully protecting its pixels, while unrestricted diffusion dissolves it. Trained on these images, a standard detector matched or exceeded its counterpart trained on a larger labeled dataset of real images from a different site, consistently across seeds on a humanitarian-demining benchmark; the comparison is thus unsupervised site adaptation from a handful of photographs against conventional cross-site label reuse. In our ablations the gains were largely insensitive to the photograph and crop budgets, and in-domain accuracy did not predict cross-site performance.",
+    "status": "found"
+  },
+  "2608.09692": {
+    "arxiv_id": "2608.09692",
+    "title": "Evaluating Generative Time-Series Models on Data with Point Masses",
+    "authors": [
+      "Jian Xu"
+    ],
+    "submission_date": "2026-08-10T14:57:36Z",
+    "latest_updated": "2026-08-10T14:57:36Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09692v1"
+    ],
+    "abstract": "Many of the series that generative time-series models are benchmarked on place a large probability mass on a single value --- it does not rain, no ride is requested, no part is ordered. We report what happens when such data is evaluated carefully. First, the standard rolling-origin protocol can score a model on a window whose atom structure bears no resemblance to the dataset: on one benchmark the dataset is $42\\%$ zeros and the evaluation windows are $13\\%$, on another $47\\%$ against $5\\%$. This is not a cosmetic problem --- it reversed one of our own conclusions, turning the strongest occurrence model in our study into what looked like a cautionary tale. Second, we give a control in which CRPS is invariant \\emph{by construction} while the temporal coupling is destroyed, which measures exactly how much that coupling contributes to a chosen statistic. Third, benchmarking seven models on a matched protocol over five seeds, an autoregressive hurdle beats a conditional flow on five of six datasets, by up to a factor of $153$, while the flow's own occurrence statistics vary by up to $62\\%$ across training seeds and every baseline is deterministic. Finally, the model ordering is not the same under five different occurrence statistics, and the two that do not share a construction agree with each other least.",
+    "status": "found"
+  },
+  "2608.09693": {
+    "arxiv_id": "2608.09693",
+    "title": "Collective-dissipation-induced dark and metastable-like states for enhanced quantum battery performance",
+    "authors": [
+      "Achraf Khoudiri",
+      "Asghar Ullah",
+      "Abderrahim El Allati",
+      "Özgür E. Müstecaplıoğlu"
+    ],
+    "submission_date": "2026-08-10T14:58:02Z",
+    "latest_updated": "2026-08-10T14:58:02Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09693v1"
+    ],
+    "abstract": "We investigate the role of symmetry-protected dark states and metastable-like frozen states in the autonomous charging dynamics of open quantum batteries described by a transverse-field Ising model. By comparing local and collective dissipation over a range of system sizes, temperatures, and magnetic phases, we demonstrate that collective dissipation generates symmetry-protected dark states together with a much larger set of frozen (metastable) states, forming an extended protected Hilbert space. We derive the multiplicity of the collective dark sector analytically, showing that it follows the Catalan sequence for even system sizes, while such states are absent for odd sizes. Our results show that collective dissipation can enhance ergotropy and charging power, with its advantage depending on temperature, magnetic phase, and system size. While the number of dark and frozen states is identical in the ferromagnetic and antiferromagnetic phases, the achievable ergotropy differs substantially because of the different spectral locations of these protected states. In particular, the antiferromagnetic configuration exhibits considerably larger extractable work owing to the favorable positioning of the protected subspaces within the many-body energy spectrum. Finally, we analyze the active Hilbert-space fraction and show that metastable protection provides an effective mechanism for suppressing dissipative losses while preserving efficient charging pathways. These results establish the dark-state and frozen-state sectors as key resources for optimizing the performance of open quantum batteries through engineered dissipation.",
+    "status": "found"
+  },
+  "2608.09694": {
+    "arxiv_id": "2608.09694",
+    "title": "Power growth of mean-L-stable operators on Banach spaces",
+    "authors": [
+      "Jian Li",
+      "Jie Li"
+    ],
+    "submission_date": "2026-08-10T14:58:05Z",
+    "latest_updated": "2026-08-17T11:04:46Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.09694v1",
+      "2608.09694v2"
+    ],
+    "abstract": "We study the growth of powers of mean-L-stable operators on Banach spaces. We show that, for linear operators, mean-L-stability is equivalent to uniform boundedness in density; this yields $\\|T^n\\|=O(n)$ on every Banach space. On Hilbert spaces we prove that mean-L-stability is equivalent to absolute Cesàro boundedness and obtain $\\|T^n\\|=O(n^{1/2-c_T})$ for some $c_T>0$. For positive mean-L-stable operators on abstract $L^p$-spaces, $1\\le p<\\infty$, we similarly obtain $\\|T^n\\|=O(n^{1/p-c_T})$, where in both cases the positive constant $c_T$ cannot be chosen uniformly over all such operators. For positive mean-L-stable operators on $p$-convex Banach lattices, we prove the bound $O(n^{1/p})$ and construct positive topologically mixing operators $T_p$ for which $\\|T_p^n\\|\\asymp n^{1/p}$, where $1\\leq p<\\infty$. These operators satisfy a uniform weak $(p,p)$ orbit estimate, while the averages of $\\|T_p^nx\\|^s$ are bounded for $s<p$, of order $\\log N$ for $s=p$, and of order $N^{s/p-1}$ for $s>p$. The operator $T_1$ is uniformly Kreiss bounded and has linear power growth, answering a question of Montes-Rodríguez, Sánchez-Álvarez and Zemánek (2005). Moreover, $T_1$ is mean-L-stable and mean Li--Yorke chaotic, while it is not distributionally chaotic. This answers a question of Bernardes, Bonilla and Peris (2020).",
+    "status": "found"
+  },
+  "2608.09695": {
+    "arxiv_id": "2608.09695",
+    "title": "Spread of Entanglement in Generalized Kicked Ising Chain",
+    "authors": [
+      "Tanay Pathak",
+      "Hiromi Ebisu",
+      "Tomaž Prosen"
+    ],
+    "submission_date": "2026-08-10T14:58:31Z",
+    "latest_updated": "2026-08-10T14:58:31Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09695v1"
+    ],
+    "abstract": "We investigate the dynamics of entanglement in a generalized version of the kicked Ising chain, extending the model from the standard qubit case (local dimension $q=2$) to higher local dimensions ($q > 2$). We identify the existence of ''dual-unitary'' points where the model's space-time duality allows for exact analytical solutions. Our analysis reveals that while a few unique dual-unitary points exist analytically for systems with local dimensions $q=3$ and $q=4$, such points do not exist for $q \\ge 5$ due to the lack of a unique kicking strength that satisfies the required matrix element conditions. Utilizing the transfer matrix method and a replica trick specifically adapted for higher dimensions, we derive exact expressions for the growth of entanglement entropy in the $q=3$ (kicked Potts-type) model starting from a class of solvable initial states. Our results demonstrate that at the dual-unitary point, both Rényi and von Neumann entanglement entropies grow linearly with time until reaching a maximum value determined by the subsystem size.",
+    "status": "found"
+  },
+  "2608.09696": {
+    "arxiv_id": "2608.09696",
+    "title": "Model Discovery Agent: LLM-assisted Bayesian experiment design for data-efficient discovery of mechanistic world models",
+    "authors": [
+      "Kevin Murphy"
+    ],
+    "submission_date": "2026-08-10T14:59:22Z",
+    "latest_updated": "2026-09-27T18:58:59Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 5,
+    "versions": [
+      "2608.09696v1",
+      "2608.09696v2",
+      "2608.09696v3",
+      "2608.09696v4",
+      "2608.09696v5"
+    ],
+    "abstract": "A primary goal of science is to learn mechanistic world models from limited experimental data, both to explain observations and to predict novel interventions. We introduce the Model Discovery Agent (MDA), which combines LLM proposals for $\\mathcal M$-open model discovery, experiment design based on Value of Information, and approximate Bayesian inference over model structures, parameters, and stochastic latent trajectories. We apply MDA to learn symbolic reaction rate laws for ChemBench \\citep{kabra2026autoscilab}, partially observed ODE models for GlucoseBench \\citep{xie2018simglucose,kovatchev2009insilico}, and partially observed SDE models for a new stochastic single-neuron simulator we create. In the appendix, we also show results on various other domains from BoxingGym \\citep{gandhi2025boxinggym}. We show that MDA has improved sample efficiency compared to various baseline methods, and the learned models are good predictors but also provide interpretable abstractions of each domain.",
+    "status": "found"
+  },
+  "2608.09697": {
+    "arxiv_id": "2608.09697",
+    "title": "Cross-frequency SGWB anisotropy from compact topology: CMB B-mode covariance as a transfer probe",
+    "authors": [
+      "Li-E Qiang",
+      "Peng Xu"
+    ],
+    "submission_date": "2026-08-10T15:01:50Z",
+    "latest_updated": "2026-08-10T15:01:50Z",
+    "revised_dates": null,
+    "venue": "Phys. Rev. D - 14 September, 2026",
+    "latest_version": 1,
+    "versions": [
+      "2608.09697v1"
+    ],
+    "abstract": "Compact spatial topology restricts the eigenmodes of primordial tensor perturbations, and the resulting discreteness can render the primordial stochastic gravitational-wave background (SGWB) anisotropic. Here we treat the CMB tensor $B$-mode covariance as a transfer-filtered measurement of that ultra-low-frequency anisotropy. Writing the normalized angular tensor-power measure as $F(k,\\hat k)=1+Q(k,\\hat k)$ and its nonmonopole moments as $q_{LM}(k)$, we obtain an explicit kernel that maps $q_{LM}(k)$ onto the off-diagonal covariance $δC^{BB}_{\\ell m,\\ell' m'}$. The kernel factorizes into tensor transfer functions and a spin-weighted Gaunt coefficient and obeys the parity rule $L+\\ell+\\ell'$ even for $BB$ and odd for $TB/EB$. It is an exact source--response representation of the full compact covariance rather than an additional observable. For a cubic three-torus the geometry pins down a common cubic angular subspace and orientation across frequency bands, although the amplitudes of the allowed multipoles still depend on the radial shell and source spectrum. The same topology-restricted template can therefore be read out either through the CMB $B$-mode kernel or through the anisotropy response of PTA/LISA/Taiji/TianQin searches. Using CAMB transfer functions and an invariant anisotropic-template statistic, we contrast this tensor channel with the scalar $T/E$ covariance. Independent direct angular-shell sums and $q_{LM}$--Gaunt contractions agree at $L_q^{\\max}=2\\ell_{\\max}$ to relative Frobenius residuals of $1.4\\times10^{-14}$--$3.0\\times10^{-14}$. The scalar sector holds most of the practical CMB topology information; a fixed-template scan places the combined full-sky $S/N=1$ transition between $L/χ_*=2.34$ and $2.36$, while the $B$-mode channel remains subthreshold but isolates the primordial SGWB contribution.",
+    "status": "found"
+  },
+  "2608.09698": {
+    "arxiv_id": "2608.09698",
+    "title": "VeriForge: Mitigating Latent Knowledge Gaps in Narrative Drafting via Mixed-Initiative Scaffolding",
+    "authors": [
+      "Ruqi Sun",
+      "Jiaping Li",
+      "Wenhui Tao",
+      "Ximing Zheng",
+      "Yuefeng Tan",
+      "Jiahao Wei",
+      "Yuxin Ma"
+    ],
+    "submission_date": "2026-08-10T15:03:26Z",
+    "latest_updated": "2026-08-10T15:03:26Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09698v1"
+    ],
+    "abstract": "Great fiction earns its verisimilitude through precise details, from how a longsword is gripped to pierce armor gaps to why a bleeding corpse cannot yet smell of decay, weaving domain expertise into the fabric of invented worlds. Current AI writing tools offer limited support for discovering and integrating unfamiliar domain knowledge into narrative. They require explicit queries that authors cannot formulate, generate finished prose that risks homogenizing voice, or assist only within the boundaries of what authors already know. We argue that AI should reveal latent knowledge gaps to writers while preserving their agency to transform discovered knowledge into authentic prose. Grounded in formative interviews with 9 fiction writers, we present VeriForge, a mixed-initiative writing system that divides cognitive labor so that the system assumes initiative over domain discovery while the author retains full initiative over narrative synthesis. VeriForge realizes this through three complementary mechanisms. Proactive inline highlighting flags potential knowledge gaps as authors draft. Dual-stream querying pairs conversational responses with source-anchored Knowledge Cards for direct fact extraction. A spatial Knowledge Canvas allows authors to organize and connect discovered knowledge across their writing. These mechanisms are powered by a graph-based retrieval-augmented generation pipeline grounded in domain-specific source materials. A within-subjects user study (N=12) provides preliminary evidence that this paradigm helps authors recognize previously overlooked knowledge gaps, supports creative exploration, and is perceived by expert raters to produce passages with stronger domain grounding in a controlled cold-start writing task.",
+    "status": "found"
+  },
+  "2608.09699": {
+    "arxiv_id": "2608.09699",
+    "title": "Full-Key Recovery and Forgery from One MQOM v2.1 Signature",
+    "authors": [
+      "José Luis Delgado"
+    ],
+    "submission_date": "2026-08-10T15:04:50Z",
+    "latest_updated": "2026-08-13T14:15:00Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.09699v1",
+      "2608.09699v2"
+    ],
+    "abstract": "We give a full-key-recovery attack on MQOM v2.1, a Round-3 candidate in the NIST additional-signature process, that recovers the complete signing key from one accepted signature and uses it to sign a fresh message. If $δ=\\operatorname{FirstBits}_λ(x)$ is the prefix of the witness $x$, the sibling path determines a public value $A$ such that tree parity gives $s=δ\\oplus A$. Substitution into the hidden-leaf commitment yields $$\\mathsf{Enc}_K(δ\\oplus A)=T\\oplus\\mathsf{LinOrtho}(δ)$$ with public values $K$ and $T$. The correction in the same signature expands a solution into a complete witness, while the public MQ relation identifies those yielding valid signing keys; serializing such a witness gives the secret key, enabling a fresh-message signature accepted by the reference verifier. We evaluate this equation over the specified AES/Rijndael circuits using retained circuit state along a Gray traversal. Complete-domain scans for Categories I and V cost $2^{142.335112}$ and $2^{271.794162}$ Boolean gates. Category-III scans cover $1/2+2^{-20}$ and $0.580004770183$ of the domain at costs of $2^{206.774558}$ and $2^{206.988685}$ gates. All four totals are below the NIST security benchmarks. Reduced-domain runs against the reference implementation recover the byte-exact witness and key in all three categories and produce a fresh-message forgery accepted by the reference verifier. Independently generated source-syntax circuits evaluate the fixed ciphers over the stated domains and translated L3 prefixes, while an exact ideal-cipher factorial-moment bound controls additional equation preimages passed to public-key validation. Every value in the equation is fixed by the accepted transcript, so salt-bound global-root expansion changes its public constants without removing the one-signature recovery channel.",
+    "status": "found"
+  },
+  "2608.09700": {
+    "arxiv_id": "2608.09700",
+    "title": "A general paracontrolled ansatz for singular SPDEs",
+    "authors": [
+      "Yvain Bruned",
+      "Nicolas Moench"
+    ],
+    "submission_date": "2026-08-10T15:06:06Z",
+    "latest_updated": "2026-10-22T13:02:47Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.09700v1",
+      "2608.09700v2"
+    ],
+    "abstract": "We provide a general ansatz for the paracontrolled approach introduced by Gubinelli, Imkeller, Perkowski for treating singular SPDEs. The ansatz proposed covers a large class of equations. It is described via decorated trees that encode its coefficients and its stochastic data. The main novelty is the recursive definition of the paracontrolled stochastic iterated integrals that involve a well-chosen combinatorial set of words. The paralinearisation is performed via a lift of iterated paraproducts to modelled distributions. The main idea is to integrate localised iterated paraproducts in order to get a global object with a good regularity. We also provide a fixed point argument and the renormalised equation with this ansatz when one uses the preparation map formalism that encompasses the BPHZ renormalisation. The last main result is the convergence of the renormalised stochastic data via the BPHZ renormalisation using an adaptation of the spectral gap approach. One obtains in the end a general solution theory for parabolic singular SPDEs via the paracontrolled approach.",
+    "status": "found"
+  },
+  "2608.09701": {
+    "arxiv_id": "2608.09701",
+    "title": "Tor and Ext vanishing results for commutative Artinian rings",
+    "authors": [
+      "Bernhard Böhmler",
+      "Rene Marczinzik"
+    ],
+    "submission_date": "2026-08-10T15:06:14Z",
+    "latest_updated": "2026-08-10T15:06:14Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09701v1"
+    ],
+    "abstract": "We give a negative answer to a question of Avramov, Buchweitz and Şega by constructing a commutative local finite-dimensional non-Gorenstein algebra $R$ with $\\operatorname{Ext}_R^1(D(R),R)=0$; this question is related to the first Tachikawa conjecture. We also give a counterexample to a conjecture of Huneke, Şega and Vraciu on Tor vanishing over commutative finite-dimensional algebras. Finally, we construct a finite-dimensional commutative local self-injective algebra $R$ over $\\mathbb{F}_2$ and an indecomposable non-projective $R$-module $M$ such that $\\operatorname{Ext}_R^1(M,M)=\\operatorname{Ext}_R^2(M,M)=0$, related to the second Tachikawa conjecture and answering a question of Dao.",
+    "status": "found"
+  },
+  "2608.09702": {
+    "arxiv_id": "2608.09702",
+    "title": "Entropies of compact subsets and supported measures",
+    "authors": [
+      "Qiang Huo",
+      "Xiangtong Wang"
+    ],
+    "submission_date": "2026-08-10T15:06:26Z",
+    "latest_updated": "2026-08-10T15:06:26Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09702v1"
+    ],
+    "abstract": "Let $(X,T)$ be a topological dynamical system and $(\\mathcal M(X),T_*)$ be its induced system. For a non-empty compact subset $K\\subset X$, we define $\\mathcal M(K)$ as the set of Borel probability measures supported on $K$. In this paper, we systematically study the relationship between various entropies of $(T,K)$ and of $(T_*,\\mathcal M(K))$. We show that: \\begin{equation*} \\begin{aligned} & h_{\\mathrm{top}}^{\\mathrm{UC}}(T,K)>0 \\iff h_{\\mathrm{top}}^{\\mathrm{UC}}(T_*,\\mathcal{M}(K))=\\infty, \\qquad &h_{\\mathrm{top}}^{P}(T,K)>0\\iff h_{\\mathrm{top}}^{P}(T_*,\\mathcal{M}(K))>0, \\qquad &h_{\\mathrm{top}}^{B}(T,K)>0 \\implies h_{\\mathrm{top}}^{B}(T_*,\\mathcal{M}(K))>0 , \\end{aligned} \\end{equation*} where $h_{\\mathrm{top}}^{\\mathrm{UC}}(T,K)$, $h_{\\mathrm{top}}^{P}(T,K)$, and $h_{\\mathrm{top}}^{B}(T,K)$ denote the upper capacity topological entropy, the packing topological entropy, and the Bowen topological entropy of $K$, respectively. Additionally, we present a counterexample involving a non-invariant set, demonstrating that the converse of the third assertion is not valid in general.",
+    "status": "found"
+  },
+  "2608.09703": {
+    "arxiv_id": "2608.09703",
+    "title": "Matryoshka Language Model Suites",
+    "authors": [
+      "Nathan Godey",
+      "Yoav Artzi"
+    ],
+    "submission_date": "2026-08-10T15:07:29Z",
+    "latest_updated": "2026-08-10T15:07:29Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09703v1"
+    ],
+    "abstract": "Training a language model suite classically requires training each model separately and serving them independently. We improve both training and inference efficiency by stacking sub-models of increasing size into a single nested architecture trained end-to-end. This Matryoshka training framework reduces the total parameter count of the suite, enables low-cost distillation from the largest to all smaller sub-models at every training step, and is well-suited for speculative decoding as the draft model is contained within the verifier. We validate our approach by training a Matryoshka suite comprising 500M, 1.5B, and 3B sub-models. Our suite is on par with independently trained baselines on benchmark performance and validation and out-of-domain perplexities, while using 36% less training compute and improving the throughput of speculative decoding by 14-26%. We also ablate key architectural choices, offering guidance for building strong Matryoshka LM suites.",
+    "status": "found"
+  },
+  "2608.09704": {
+    "arxiv_id": "2608.09704",
+    "title": "Exploring the multi-wavelength properties of the high energetic event ZTF20abbiixp/GRB 200524A: from prompt emission to afterglow",
+    "authors": [
+      "A. Ghosh",
+      "Dimple",
+      "K. Misra",
+      "P. Yu. Minaev",
+      "Y. Yao",
+      "D. A. Kann",
+      "M. Blazek",
+      "A. S. Pozanenko",
+      "S. Belkin",
+      "L. Izzo",
+      "H. Kumar",
+      "A. de Ugarte Postigo",
+      "A. Rossi",
+      "G. C. Anupama",
+      "V. Bhalerao",
+      "D. Bhattacharya",
+      "N. K. Chakradhari",
+      "S. Chandra",
+      "R. Gupta",
+      "K. M. Jayasurya",
+      "A. Kumar",
+      "B. Kumar",
+      "T. S. Kumar",
+      "A. Moskvitin",
+      "S. B. Pandey",
+      "A. Omar",
+      "A. R. Rao",
+      "L. Resmi",
+      "V. Rumyantsev",
+      "P. Sanwal",
+      "A. V. Volnova",
+      "A. O. Novichonok",
+      "M. Krugov",
+      "S. A. Ehgamberdiev",
+      "A. E. Volvach"
+    ],
+    "submission_date": "2026-08-10T15:09:03Z",
+    "latest_updated": "2026-08-10T15:09:03Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09704v1"
+    ],
+    "abstract": "We conducted a comprehensive multi-wavelength analysis of a high energetic long-duration ZTF20abbiixp / GRB~200524A detected by \\textit{Fermi} Gamma Ray Burst Monitor (GBM). Our study combines extended high-energy observations from multiple space-based observatories including \\textit{Fermi} with broadband afterglow data spanning X-ray to radio wavelengths, complemented by extensive photometric and spectroscopic follow-up from several ground-based optical facilities worldwide like 3.6-m Devasthal Optical Telescope (DOT). ZTF20abbiixp / GRB~200524A exhibits almost negligible spectral lag, likely arising from the presence of multiple overlapping emission episodes, a property uncommon among long-duration bursts. The burst additionally shows a clear intensity-tracking evolution of the prompt-emission spectral parameters. The broadband afterglow light curve best fits with a broken powerlaw with a break at $10^{5}$ s since the GBM trigger. The electron powerlaw index (p) calculated from the temporal and spectral slopes fail to distinguish between a interstellar medium and a wind environment. Our custom-developed afterglow model fits the panchromatic data well, combining forward shock (FS) and reverse shock (RS) emission. The RS contribution required to fit the early time optical data. The inferred afterglow model parameters suggest that ZTF20abbiixp / GRB~200524A is a high energetic burst expanding into a dense ISM environment, with a relatively large value of the fraction of energy going to accelerating electron and magnetic field ($ε_B$).",
+    "status": "found"
+  },
+  "2608.09705": {
+    "arxiv_id": "2608.09705",
+    "title": "State Diagnostics of Complexity in Open Quantum Systems",
+    "authors": [
+      "Komal Sah",
+      "Fabio Anza",
+      "Alexandra M. Jurgens",
+      "James P. Crutchfield"
+    ],
+    "submission_date": "2026-08-10T15:09:52Z",
+    "latest_updated": "2026-08-10T15:09:52Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09705v1"
+    ],
+    "abstract": "We study the emergence of complexity in finite-size quantum systems as their dynamics transition from closed and coherent evolution to interacting and effectively open behavior. Using a state-based geometric framework, we represent mixed quantum states as probability measures on complex projective Hilbert space. This representation allows us to track how interactions reshape the underlying pure-state geometry. We introduce two complementary diagnostics: a distinguishability measure, based on the Wasserstein distance between probability-measure representations of mixed states, that quantifies sensitivity to initial states, and a state-space coverage index that measures long-time exploration of the subsystem state space. These diagnostics provide a geometric perspective on the emergence and evolution of quantum dynamical complexity. When applied to the quantum kicked top, both diagnostics generally increase with interaction strength. Their dependence on environment size is structured by parity symmetry, with integer-spin systems often exhibiting greater sensitivity and state-space coverage than half-integer-spin systems. These results highlight finite-size quantum effects and provide a geometric approach to quantifying dynamical complexity deep in the quantum regime",
+    "status": "found"
+  },
+  "2608.09706": {
+    "arxiv_id": "2608.09706",
+    "title": "Test-Time Scaling for CAD Generation via Verifier-Free Consensus Selection",
+    "authors": [
+      "Aaron Haag",
+      "Altay Kacan",
+      "Bertram Fuchs",
+      "Oliver Lohse"
+    ],
+    "submission_date": "2026-08-10T15:10:44Z",
+    "latest_updated": "2026-08-14T10:30:47Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.09706v1",
+      "2608.09706v2"
+    ],
+    "abstract": "Large language models can write parametric CAD programs from a natural-language description (text-to-CAD generation), but a single sample is often wrong. Increasing test-time compute by sampling multiple candidates only helps if a good candidate can be identified, yet no ground-truth model is available at generation time. Existing systems often require a separate verifier, such as a vision-language judge, to select among candidates. We investigate whether the candidate pool itself provides enough signal for effective selection and a verifier-free alternative. We introduce 3D CAD consensus selection, hereafter consensus selection: sample $N$ parametric CAD programs, compile them to 3D models, and return the candidate that agrees most with the rest of the pool. The method is training-free and compatible with existing CAD agents. We investigate geometric and topological notions of agreement, each of which improves its corresponding evaluation metric. On the exact candidate pools of a state-of-the-art CAD generation method, geometric consensus improves all three geometric metrics over the method's verifier, while topological consensus matches it on topology. Across every tested LLM and prompt variant, geometric consensus also improves geometric accuracy over random selection from the same pool, reducing Chamfer distance by $1-10\\%$.",
+    "status": "found"
+  }
+}

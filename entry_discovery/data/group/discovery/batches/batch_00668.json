@@ -1,0 +1,381 @@
+{
+  "2608.12367": {
+    "arxiv_id": "2608.12367",
+    "title": "Lifecycle-Aware Archival for Asymmetric Financial Datasets: A Production Study",
+    "authors": [
+      "Tulika Manek"
+    ],
+    "submission_date": "2026-07-14T05:18:29Z",
+    "latest_updated": "2026-07-14T05:18:29Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12367v1"
+    ],
+    "abstract": "Large-scale financial transaction databases face a fundamental tension between operational freshness requirements and storage efficiency. We present the design, implementation, and production evaluation of a lifecycle-aware archival system for a financial transaction service at Razorpay managing billions of records on PostgreSQL Aurora (version 14), occupying tens of terabytes of storage and sustaining peak write throughput in the thousands of TPS. We make two contributions. First, we analytically characterize the Celebrity Partition Problem: lifecycle-state partitioning concentrates all operationally active rows in a single default partition, incurring O(N x M) planning overhead, O(N) execution I/O regression, and write amplification on every state transition. Second, we present an ID-monotonicity-based deduplication technique that exploits temporal encoding in monotonically increasing ID schemes (Snowflake IDs, ULIDs, and equivalent) to route only potentially-archived re-inserts to a warm database lookup, requiring no Bloom filters, idempotency tables, or external dependencies. We report production results from a fully deployed system: 95% hot storage size reduction, 53% reduction in monthly database infrastructure cost, ~60% reduction in service-level p99 processing latency, 51 percentage-point reduction in writer CPU utilization, and sustained operation at peak write TPS - without schema changes to the primary transaction table.",
+    "status": "found"
+  },
+  "2608.12368": {
+    "arxiv_id": "2608.12368",
+    "title": "Agreement Is Not Alignment: Divergent Moral Grounds in Human and LLM Ethical Judgments",
+    "authors": [
+      "Octavian M. Machidon",
+      "Alina L. Machidon",
+      "Vojko Strahovnik",
+      "Mateja Centa Strahovnik",
+      "Jonas Miklavčič",
+      "Marko Robnik Šikonja"
+    ],
+    "submission_date": "2026-07-14T09:24:14Z",
+    "latest_updated": "2026-07-14T09:24:14Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12368v1"
+    ],
+    "abstract": "Agreement with human judgments is a common proxy for evaluating the alignment of large language models (LLMs). Yet agreement in final labels does not show that human annotators and models rely on the same moral grounds. Two agents may reach the same judgment while appealing to different principles, contextual assumptions, or interpretations of the situation. We test this distinction using a curated 500-item ETHICS-derived benchmark spanning five domains of moral judgment, with new human annotator and LLM annotations of both final labels and supporting rationales. Across frontier and open model families, agreement with human annotator majority labels is often high. However, rationale-level analysis reveals systematic divergence in the moral grounds expressed by human annotators and models. In particular, models redistribute attention across categories such as harm, respect, promise-keeping, justice, desert, and excuse relevance, even when their final labels match the human annotator majority. Our results show that agreement should not be treated as equivalent to alignment. Label-based evaluation can therefore be misleadingly reassuring unless complemented by analysis of the reasons, principles, and moral priorities expressed in model judgments.",
+    "status": "found"
+  },
+  "2608.12369": {
+    "arxiv_id": "2608.12369",
+    "title": "Stochastic Nonlinear Waves in all the Right Phases",
+    "authors": [
+      "C. H. S. Hamster"
+    ],
+    "submission_date": "2026-07-15T10:21:46Z",
+    "latest_updated": "2026-07-15T10:21:46Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12369v1"
+    ],
+    "abstract": "I present an overview of different phases used in the literature to describe the phase of travelling waves in reaction-diffusion equations. The discussion is tailored to understand the effectiveness of these different phase descriptions in a stochastic setting in 1D. The explicit computation of the autonomous isochronal phase for the Nagumo equation is a new result.",
+    "status": "found"
+  },
+  "2608.12370": {
+    "arxiv_id": "2608.12370",
+    "title": "What Do We Mean When We Talk About Infographics?",
+    "authors": [
+      "Xiaoyu Liu",
+      "Vishnu Sreekanth",
+      "Vraj Patel",
+      "Shalin Muzumdar",
+      "Diego Lopez",
+      "Fumeng Yang",
+      "Zhicheng Liu"
+    ],
+    "submission_date": "2026-07-17T17:43:27Z",
+    "latest_updated": "2026-07-17T17:43:27Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12370v1"
+    ],
+    "abstract": "There has been limited clarity and consistency regarding what the term infographics, or information graphics, refers to in visualization research and practice. In particular, little is understood about where people's conceptualizations of infographics converge or diverge. To address this gap, we conducted a systematic literature review and a practitioner survey to identify and contrast different perspectives on infographics. We performed inductive coding on 487 sentences from 111 visualization and HCI papers, and analyzed questionnaire responses from 44 domain practitioners. Our findings reveal recurring dimensions of conceptual disagreement on infographics: role of text, relationship with data visualization, and relationships with statistical charts and data comics. Based on the results, we recommend future work to explicitly report any assumptions made along these diverging conceptualizations, to investigate the cognitive origins of these disagreements, and to develop more holistic design component frameworks for infographics. The supplementary materials are available via OSF and as an interactive web application.",
+    "status": "found"
+  },
+  "2608.12371": {
+    "arxiv_id": "2608.12371",
+    "title": "Multi-Agent Scheduling with LLM-Assisted Contract Net Negotiation for Stream Processing in Mobile Edge Computing",
+    "authors": [
+      "Sabeur Lajili",
+      "Zaki Brahmi"
+    ],
+    "submission_date": "2026-07-19T13:06:58Z",
+    "latest_updated": "2026-07-19T13:06:58Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12371v1"
+    ],
+    "abstract": "Stream-processing systems increasingly operate across heterogeneous mobile edge--cloud infrastructures, where workload volatility, resource contention, and stringent quality-of-service (QoS) requirements complicate decentralized scheduling. This paper proposes \\emph{MAS-DecStream}, whose main contribution is \\emph{LLM-MR-CNP}: an extension of the classical Contract Net Protocol with semantic CFP formulation, progressive context disclosure, multi-round proposal revision, negotiation memory, and deterministic validation. Edge-cluster agents refine natural-language offloading proposals from local observations, predicted resource states, and qualitative runtime context, while hard resource and QoS constraints remain deterministic. Experiments derived from the Alibaba ASI Trace evaluate the extension at three levels: single- versus multi-round CNP, rule-based versus LLM-assisted refinement, and fixed-model single- versus multi-round negotiation. Under the evaluated configurations, MAS-DecStream reduces latency violations to 3\\%, eliminates resource overcommitment, reaches a conflict-resolution rate of 0.91 with 20 agents, and improves utility by up to 22\\% over the multi-round rule-based baseline. A separate 25-case evaluation shows model- and prompt-dependent accuracy--cost trade-offs. The results provide initial evidence that multi-round CNP refinement is the principal protocol-level gain, with LLM assistance adding value for qualitative and uncertain runtime context.",
+    "status": "found"
+  },
+  "2608.12372": {
+    "arxiv_id": "2608.12372",
+    "title": "Position: We Need Practical AI Alignment Methods to Mirror Human Reasoning",
+    "authors": [
+      "Vijay Keswani",
+      "Breanna K. Nguyen",
+      "Cyrus Cousins",
+      "Vincent Conitzer",
+      "Walter Sinnott-Armstrong",
+      "Jana Schaich Borg"
+    ],
+    "submission_date": "2026-07-20T10:15:50Z",
+    "latest_updated": "2026-07-20T10:15:50Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12372v1"
+    ],
+    "abstract": "AI systems are increasingly employed as decision aids, decision delegates, or autonomous decision-makers. This position paper argues that in many settings, particularly high-stakes decision-making, we need accurate cognitively-aligned AI systems that reason similarly to their users, and faithfully communicate their reasoning. We review evidence that cognitive alignment improves understandability and trustworthiness, and provide new survey data showing that many users find cognitive alignment \"essential\" when an AI's rationale for a judgment or action is important to them. We outline the gaps between existing alignment methods and what is needed to achieve cognitive alignment, and present a research agenda to address these gaps. We argue that cognitive misalignment represents a likely impediment to AI adoption in many envisioned applications, and that addressing it is important for creating AI systems on which users are both willing and justified to rely.",
+    "status": "found"
+  },
+  "2608.12373": {
+    "arxiv_id": "2608.12373",
+    "title": "Don't Want Your LLM to Recommend Nuclear Strike? Try Asking It in Japanese",
+    "authors": [
+      "Rian Touchent"
+    ],
+    "submission_date": "2026-07-21T10:09:45Z",
+    "latest_updated": "2026-07-21T10:09:45Z",
+    "revised_dates": null,
+    "venue": "Proceedings of the 6th Workshop on Trustworthy NLP (TrustNLP 2026), Jul 2026, San Diego, United States. pp.489-502",
+    "latest_version": 1,
+    "versions": [
+      "2608.12373v1"
+    ],
+    "abstract": "Large language models are increasingly used in strategic and advisory contexts, yet their safety alignment is typically evaluated in English only. We test nine models from six providers and ask whether the language of a prompt can change a model's decision in a high-stakes scenario. We use single-turn game-theoretic vignettes in which a model advises a nuclear-armed nation on whether to strike a defenseless opponent. The prompt is intentionally amoral and strategically identical across languages. We find that Japanese prompts reduce launch rates in the Claude model family: Claude Sonnet 4.6 drops from 40% to 0% in scenarios where the strike is unnecessary and from 93% to 17% in contested scenarios, with minimal effect when the strike is strategically rational. The effect extends to Gemini Pro 3.1 (53% to 13%). A cross-language experiment isolates the mechanism: when instructed to reason in Japanese in an English prompt, launch rates drop from 93% to 37%. It is the language the model is asked to reason in, not the language of the input, that drives the effect. When reasoning in Japanese, models spontaneously generate moral vocabulary (''moral cost'', ''millions of lives'') that is entirely absent from the prompt. Five other models show no language effect, but they launch in nearly every condition regardless of language. The effect requires a model that already hesitates in English. These results show that LLM safety behavior is language-dependent, and that evaluating in English alone can miss both risks and safeguards encoded in other languages.",
+    "status": "found"
+  },
+  "2608.12374": {
+    "arxiv_id": "2608.12374",
+    "title": "Are you Talking Logic to Me? Assessing Language Models Syllogistic Reasoning Capabilities",
+    "authors": [
+      "Hanna Abi Akl",
+      "Fabien Gandon",
+      "Catherine Faron",
+      "Pierre Monnin"
+    ],
+    "submission_date": "2026-07-22T08:29:56Z",
+    "latest_updated": "2026-07-22T08:29:56Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12374v1"
+    ],
+    "abstract": "Language models (LMs) struggle with logical tasks like reasoning on syllogisms. It has been shown that Knowledge Representation (KR) plays a crucial role in expressing input information to help models solve tasks. This observation motivates our study of the impact of different formal KR notations on syllogistic reasoning by extending the FOLIO and P-FOLIO datasets. Our experiments on Small Language Models (SLMs) in Supervised Fine-Tuning (SFT) and Zero-Shot (ZS) settings show that the choice of input notation can yield performances competitive with natural language while enabling faster inference. We also propose a syllogistic categorization method (SEF) and use it to enrich ZS prompts with logical definitions, which boost reasoning in small models. We open-source our framework, Common Logic Grammar Construction (CLGC), as the first Python library for automatically generating syllogisms in KR notations and defining their SEF categories.",
+    "status": "found"
+  },
+  "2608.12375": {
+    "arxiv_id": "2608.12375",
+    "title": "Pipeline Denotational Design: Correct-by-Construction Data Pipelines at Zero Cost",
+    "authors": [
+      "Nikos Karayannidis"
+    ],
+    "submission_date": "2026-07-23T16:51:02Z",
+    "latest_updated": "2026-07-23T16:51:02Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12375v1"
+    ],
+    "abstract": "Pipeline Denotational Design (PDD) is a design-first methodology for building data pipelines that are correct by construction. As AI agents generate pipeline code at scale, the bottleneck shifts from writing to verifying pipelines, and the errors that matter most (grain inconsistencies that silently inflate aggregates) evade schema checks, type checks, and sampled tests. PDD designs pipelines in a semantic domain rather than in code: a design is composed from a typed algebra of operations (the Pipeline Design Algebra, one instantiation) in which every well-typed composition is grain-correct by construction. Resting on grain alone, the guarantee is universal: it holds for any grain-inferring operation set, over any engine. Correctness is established in three layers (grain, behavioral class, and domain) at design time, at zero cost, with no access to data: grain by a data-independent computation (CalcG), behavioral class by the type checker, and domain rules by a proof-carrying composition over operation contracts. A Pipeline Correctness theorem collapses the rest to a single input-boundary check: the only data-dependent residue is whether inputs meet the design's preconditions (data quality, not code correctness), which PDD emits as SQL/PySpark verification queries. Correctness by construction is a spectrum: the same design can be verified by runtime checks, the deployed type-level checker, or machine-checked proofs in Agda/Lean 4. This recasts the engineer's role: an agent instantiates a pre-verified pattern and ships a machine-checkable certificate; the human validates a compact specification and checks it. We realize the methodology in a production toolchain and set out an evaluation across pipeline patterns, behavioral classes, and data modelling paradigms. Because it rests on grain alone, the same design-time check extends to AI-generated queries over semantic layers and ontologies.",
+    "status": "found"
+  },
+  "2608.12376": {
+    "arxiv_id": "2608.12376",
+    "title": "A Heat Kernel Expectation Approach to Boundary-Corrected Li--Yau Estimates for the Dirichlet Heat Equation",
+    "authors": [
+      "Li-Chang Hung"
+    ],
+    "submission_date": "2026-07-25T19:14:32Z",
+    "latest_updated": "2026-07-25T19:14:32Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12376v1"
+    ],
+    "abstract": "In this paper, we establish an explicit boundary-corrected Li--Yau type gradient estimate for positive solutions of the Dirichlet heat equation on the Euclidean half-space. The main idea is to exploit the reflection structure of the Dirichlet heat kernel and introduce a normalized kernel-induced probability measure. Under this representation, logarithmic derivatives of the heat kernel become expectations of explicit kernel quantities. The reflected Gaussian component generates a hyperbolic correction term involving \\[ \\coth\\left(\\frac{x_n y_n}{2t}\\right), \\] which has no analogue in the whole Euclidean heat equation. Using Jensen's inequality and the sharp estimate \\[ 0<z\\,\\csch z<1 , \\qquad z>0, \\] we prove that every positive solution satisfies \\[ Δ\\log w(x,t) \\geq -\\frac n{2t} -\\frac1{x_n^2}. \\] The first term represents the classical Euclidean Li--Yau diffusion scaling, while the second term is an explicit inverse-square correction determined by the distance to the Dirichlet boundary. Our approach provides a direct kernel interpretation of the boundary effect and suggests possible extensions to more general domains.",
+    "status": "found"
+  },
+  "2608.12377": {
+    "arxiv_id": "2608.12377",
+    "title": "From Observation to Intervention: Memory in Brains and Large Language Models",
+    "authors": [
+      "Morteza Salehjahromi",
+      "Shayan A. Zadegan",
+      "Amgad Muneer",
+      "Jia Wu"
+    ],
+    "submission_date": "2026-07-27T16:45:00Z",
+    "latest_updated": "2026-07-27T16:45:00Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12377v1"
+    ],
+    "abstract": "Brains and large language models (LLMs) are fundamentally different memory systems, but they can be compared through shared functional questions: where memory-related information is represented, how partial cues recover broader associations, how new information is written or updated, and how memory-related states can be perturbed. In biological systems, these questions span synapses, neuronal ensembles, hippocampal-cortical interactions, and plasticity; in LLMs, they span weights, activations, context windows, retrieval systems, and external stores. The comparison is therefore functional and experimental rather than anatomical. Human studies reveal sparse concept responses, temporal binding, rapid association formation, episode-specific coding, and recall-related reactivation, but selective intervention remains limited. Rodent studies provide more selective causal access to learning-related ensembles, whereas human and macaque interventions usually affect broader circuits. LLMs lack lived episodic memory, yet they permit unusually direct and repeatable manipulation of internal states and stored information. We argue that this asymmetry creates a new opportunity. LLMs are not ahead in memory itself, but in experimental access. Their tools may help turn broad questions about retrieval, updating, persistence, reversibility, and unintended effects into sharper biological hypotheses. The productive bridge is to transfer experimental logic, not anatomical parts.",
+    "status": "found"
+  },
+  "2608.12378": {
+    "arxiv_id": "2608.12378",
+    "title": "Magnus mountains on spinning neutron stars",
+    "authors": [
+      "Yashaswi Gangwar",
+      "David Ian Jones"
+    ],
+    "submission_date": "2026-07-27T18:01:54Z",
+    "latest_updated": "2026-07-27T18:01:54Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12378v1"
+    ],
+    "abstract": "We investigate the formation of a \"Magnus mountain'' on a neutron star, arising from the non-axisymmetric Magnus force acting on the elastic crust by pinned superfluid vortices. Such a deformed star would act as a source of continuous gravitational waves. We consider a compressible two-component stellar model and solve the coupled equations of motion for the fluid and elastic components self-consistently, allowing the stellar deformation and the resulting mass quadrupole to be determined. For simplicity, we model the star as an infinitely long cylinder, consisting of a fluid region with a thin ocean and crust. We find that the current quadrupole is zero, while the Magnus forces are strong enough to produce (dimensionless) mass quadrupoles as large as $\\sim 10^{-5}$, and so would be limited only by the finite strength of the vortex pinning and the breaking strain of the star's elastic crust. Such large deformations are promising from the point of view of the detection of continuous gravitational waves by current and future detectors, and motivate further work on more realistic stellar models.",
+    "status": "found"
+  },
+  "2608.12379": {
+    "arxiv_id": "2608.12379",
+    "title": "Asymptotic Behavior and Error Bounds for Fisher-KPP Equations on the Real Half-Line",
+    "authors": [
+      "Chu Chu",
+      "M. W. Wong"
+    ],
+    "submission_date": "2026-07-28T02:39:10Z",
+    "latest_updated": "2026-10-03T18:13:08Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2608.12379v1",
+      "2608.12379v2",
+      "2608.12379v3"
+    ],
+    "abstract": "We study the Fisher--KPP equation on the half-line under Dirichlet,Neumann, and Robin boundary conditions. For the autonomous logistic equation, we identify bounded stationary profiles converging to $1$ and obtain exponential far-field comparison estimates. We prove local uniform convergence of nontrivial Neumann solutions to $1$. Assuming local uniform convergence of the Robin solution to its stationary profile, we derive asymptotic Neumann--Robin comparison estimates. We then consider small time-periodic Neumann and Robin boundary forcing. Under exponential stability of the homogeneous linearized semigroup, we construct a locally unique small periodic lifted mild solution and obtain a first-order expansion with a uniform $O(\\varepsilon^2)$ remainder in $C_0([0,\\infty))$.",
+    "status": "found"
+  },
+  "2608.12380": {
+    "arxiv_id": "2608.12380",
+    "title": "Synchrotron and Inverse-Compton Signatures of Black to White Hole Explosions: Weibel-Mediated External Shocks in the Interstellar Medium",
+    "authors": [
+      "Hoang Van Quyet"
+    ],
+    "submission_date": "2026-07-28T12:49:39Z",
+    "latest_updated": "2026-08-14T10:08:06Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.12380v1",
+      "2608.12380v2"
+    ],
+    "abstract": "We study the non-thermal electromagnetic counterpart expected when the relativistic, near-isotropic ejecta of a black-to-white hole transition sweep up the interstellar medium (ISM). Building on a photospheric model for the prompt $γ$-ray emission~\\cite{Villani2026}, we parametrize the kinetic energy available for an external shock, $\\eiso=R_k\\egprompt$, and model the resulting collisionless forward shock with a Weibel-mediated field~\\cite{Weibel1959,MedvedevLoeb1999,SironiSpitkovsky2011}. We estimate the synchrotron and synchrotron self-Compton (SSC) emission from shock-accelerated electrons in a one-zone, Thomson-regime approximation, including inverse-Compton cooling, Klein-Nishina suppression, self-absorption, and $γ$-$γ$ opacity, all at order-of-magnitude or first-order accuracy. For illustrative parameters ($\\egprompt\\sim10^{44}$ erg, $R_k=0.1$, $Γ_0=100$), the electrons are slow-cooling, so for $p=2.5<3$ the synchrotron spectrum peaks at the cooling frequency $ν_c$, in the MeV-to-GeV range and softening with time; the afterglow evolves in a fraction of a second to tens of seconds -- orders of magnitude faster than a classical long-duration GRB afterglow at comparable energy, density, and Lorentz factor -- with duration, peak energy, and flux depending sensitively on $R_k$, $\\nism$, and $\\epse,\\epsB,\\xie$. We identify parameter regions where a 1 keV photon-count estimate, below the intrinsic peak, exceeds a nominal detection threshold, and discuss features -- a fast, faint, roughly isotropic transient after a hard-spectrum prompt flash, without an achromatic jet break -- that may distinguish this scenario from short GRBs, magnetar giant flares, and other fast transients, while flagging the assumptions (forward-shock-only dynamics, one-zone Thomson-regime radiation, an illustrative detectability criterion) limiting its quantitative reach.",
+    "status": "found"
+  },
+  "2608.12381": {
+    "arxiv_id": "2608.12381",
+    "title": "Regularity of Solutions to One-Dimensional Degenerate Diffusion Equations with Reactions",
+    "authors": [
+      "Bendong Lou",
+      "Junfan Lu"
+    ],
+    "submission_date": "2026-07-29T23:01:22Z",
+    "latest_updated": "2026-07-29T23:01:22Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12381v1"
+    ],
+    "abstract": "We study the one-dimensional reaction-diffusion equation \\[ u_t=[A(u)]_{xx}+f(x,u). \\] The diffusion operator belongs to a broad class of nonlinear degenerate diffusion operators that includes the porous medium operator as a special case. We develop a systematic regularity theory for the solutions and their free boundaries. First, we establish the $C^1$ regularity of the pressure variable $v$, together with a lower bound for its second spatial derivative. Next, we prove Darcy's law and that, after the waiting time, a right (resp.\\ left) free boundary moves with strictly positive (resp.\\ negative) velocity (Theorem 3.1), thereby strengthening the previously known results which only gave nonnegativity (resp.\\ nonpositivity). Finally, under additional structural assumptions on the diffusion and reaction terms, we obtain higher regularity for both the solution and its free boundaries (Theorems 4.5 and 4.6). These results extend several classical regularity properties of the porous medium equation to a much broader class of degenerate diffusion equations with reactions.",
+    "status": "found"
+  },
+  "2608.12382": {
+    "arxiv_id": "2608.12382",
+    "title": "Trophic structure predicts seizure propagation in brain network models",
+    "authors": [
+      "Peter Kissack",
+      "Catherine Drysdale",
+      "Samuel Johnson"
+    ],
+    "submission_date": "2026-07-30T12:03:54Z",
+    "latest_updated": "2026-07-30T12:03:54Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12382v1"
+    ],
+    "abstract": "Epilepsy is widely regarded as a disorder driven by connectivity in the brain. We use a model of seizure dynamics on directed networks to investigate how structural properties affect seizure propensity. We find that properties such as trophic coherence, spectral radius, strong connectivity and non-normality are closely related to seizure propensity, and present a proof of a theoretical relationship between spectral radius and cycle structure. Our simulated results are robust to the kind of coupling used in the model and become stronger as network size is increased. They suggest that the overall directionality of information processing in the brain may be related to a propensity for epileptic seizures.",
+    "status": "found"
+  },
+  "2608.12383": {
+    "arxiv_id": "2608.12383",
+    "title": "Microscopic Interaction versus Purely Gravitational Coupling in Strange Quark Stars Admixed with Dark Matter: A One-Fluid and Two-Fluid Comparison",
+    "authors": [
+      "J. Sedaghat",
+      "G. H. Bordbar",
+      "M. Haghighat",
+      "S. M. Zebarjad"
+    ],
+    "submission_date": "2026-07-30T16:58:08Z",
+    "latest_updated": "2026-07-30T16:58:08Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12383v1"
+    ],
+    "abstract": "In this study, we investigate strange quark stars (SQSs) admixed with scalar dark matter (DM), focusing on the role of microscopic interactions versus purely gravitational coupling. Our results demonstrate that while the interacting one-fluid model yields viable configurations with M_TOV > 2M_sun that satisfy current pulsar M-R measurements alongside the tidal deformability (Lambda) constraints from GW170817, the noninteracting two-fluid model more robustly meets both existing GW170817 limits and the tighter Lambda bounds anticipated from next-generation gravitational-wave detectors.",
+    "status": "found"
+  },
+  "2608.12384": {
+    "arxiv_id": "2608.12384",
+    "title": "Multi-point variants of the Newton-Raphson-Simpson method arising from organizing a formal zero according to a function $φ$",
+    "authors": [
+      "Mario DeFranco"
+    ],
+    "submission_date": "2026-07-31T13:46:30Z",
+    "latest_updated": "2026-07-31T13:46:30Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12384v1"
+    ],
+    "abstract": "Fix an integer $L \\geq 1$, and a function $φ\\colon \\mathbb{Z}_{\\geq 1} \\rightarrow [0,L] \\cap \\mathbb{Z}$ with $φ^{-1}(\\{0\\}) = \\{ 1\\}$. We define a multi-point variant of the Newton-Raphson-Simpson, which we call the max-phi method, as follows. We use $φ$ to define the iteration number of a rooted plane tree. Then we construct formal series that are weighted generating functions of rooted plane trees with iteration number at most $N$. Finally we use these formulas to define the max-phi method applied to an arbitrary $L$-differentiable function.",
+    "status": "found"
+  },
+  "2608.12385": {
+    "arxiv_id": "2608.12385",
+    "title": "Decode-Branch Transformers: Decoupling the Primary Prefill Path from Additional Decode Computation",
+    "authors": [
+      "Liming Liu",
+      "Mingze Wang",
+      "Tuo Zhao"
+    ],
+    "submission_date": "2026-07-31T17:18:36Z",
+    "latest_updated": "2026-09-29T04:02:25Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2608.12385v1",
+      "2608.12385v2",
+      "2608.12385v3"
+    ],
+    "abstract": "As large language models serve ever more requests, cumulative inference cost is growing relative to the one-time cost of training. In typical serving, prompt prefill runs in parallel and is compute-bound, whereas autoregressive decode is sequential and memory-traffic-bound. Conventional width or depth scaling raises both costs together, since every added layer is evaluated in both phases and enlarges the weights read at each decode step. We instead ask whether additional learned computation can be allocated to continuation prediction while preserving prompt-wide primary computation and a single KV cache. We realize this with the Decode-Branch Transformer. Its primary path alone processes the prompt and writes the KV cache; the decode branch is omitted during prefill and activated only from the final prompt position onward, adding continuation computation without writing state or affecting the primary path. The paths share attention, MLP, and output matrices, using separate token embeddings with lightweight coupling. Grouped decode reuses loaded weight tiles and the primary KV cache across both paths, so the added arithmetic does not proportionally increase dominant memory traffic or decode latency. Across matched-token comparisons, Decode-Branch achieves lower validation loss across architectures and data settings. In MoE models, the primary and branch expert fan-outs become independent knobs for trading prompt cost, decode cost, and predictive quality. We study two expert-allocation regimes, holding prefill or decode computation fixed, and expose a prefill-decode-quality trade-off enabled by phase-specific expert allocation.",
+    "status": "found"
+  },
+  "2608.12386": {
+    "arxiv_id": "2608.12386",
+    "title": "A microscopic computational simulation of [18F]FDG transport and metabolism identifies valid regimes for compartmental analysis",
+    "authors": [
+      "Xiaoxu Zhong",
+      "Guillem Pratx"
+    ],
+    "submission_date": "2026-07-31T23:59:17Z",
+    "latest_updated": "2026-07-31T23:59:17Z",
+    "revised_dates": null,
+    "venue": "Zhong, X., & Pratx, G. (2026). A microscopic computational simulation of [18F] FDG transport and metabolism identifies valid regimes for compartmental analysis. Physics in Medicine & Biology, 71(12), 125002",
+    "latest_version": 1,
+    "versions": [
+      "2608.12386v1"
+    ],
+    "abstract": "18F-fluorodeoxyglucose ([18F]FDG) positron emission tomography (PET), combined with compartmental modeling, is a powerful non-invasive imaging method for assessing cellular metabolism. However, classical two- and three-tissue compartment models assume homogeneous [18F]FDG distribution within the tissue, which needs justification, and the definition and interpretation of rate constants across these models is not always consistent. To address these issues, we develop a finite difference solver to simulate [18F]FDG transport and metabolism within a 1 mm3 tissue volume, representing the smallest volume resolvable by PET. Our simulations reveal sub-millimeter heterogeneity in [18F]FDG distribution and show that the measured PET signal is dependent not only on cellular metabolic activity but also on interstitial [18F]FDG diffusivity, vascular permeability, and vascular architecture. We further demonstrate that our finite-difference simulation reduces to a three-tissue compartment model when interstitial [18F]FDG concentration is homogeneous. Furthermore, this simplified model itself reduces to the two-tissue compartment model when vascular permeability is sufficiently high. This work quantitatively links vascular permeability, vascular architecture, cellular uptake kinetics, [18F]FDG diffusivity, and acquisition time. It also unifies the two- and three-tissue compartment models and identifies their applicable regimes. These findings deepen our understanding of [18F]FDG transport kinetics and enhance the interpretability of dynamic [18F]FDG-PET imaging.",
+    "status": "found"
+  }
+}

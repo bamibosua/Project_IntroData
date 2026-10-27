@@ -1,0 +1,373 @@
+{
+  "2609.17554": {
+    "arxiv_id": "2609.17554",
+    "title": "English Word Sense Disambiguation in 2026: When the Labels Become the Bottleneck",
+    "authors": [
+      "Vassili Philippov",
+      "Amro Salman",
+      "Dmitrii Andreev",
+      "Penny Hands",
+      "Emil Kaiumov",
+      "Pavel Katunin",
+      "Anton Nikolaev"
+    ],
+    "submission_date": "2026-07-19T23:24:30Z",
+    "latest_updated": "2026-07-19T23:24:30Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17554v1"
+    ],
+    "abstract": "In English all-words word sense disambiguation (WSD), the labels, not the models, have become the bottleneck: frontier LLMs are accurate enough that the errors surviving in the gold standard decide benchmark rankings -- in the test sets we score on and, as we show causally, in the corpus we train on. We release lexEN, a WSD evaluation benchmark built as a conservative, human-adjudicated correction layer over Maru2022's ALL_NEW benchmark (211 labels changed, 56 removed), and SenseBench, an auditable LLM WSD evaluation harness and living leaderboard (57 models, 192 runs). The task is inventory-constrained multiple choice (the model picks from the supplied WordNet senses), so the reported accuracies are a ceiling on what models achieve without that help. On lexEN-v1 the frontier LLMs converge near 95% (best, 95.6%), the top three families are statistically indistinguishable, and accuracy trades off against reasoning effort and cost across a ~2,500x price span. Relabeling SemCor with frontier models and retraining BEM, ESCHER, and ConSeC unchanged lifts them by several F1 points on test sets the relabeling never touched; we release the relabeled corpora and Glite LENS, a 298M bi-encoder trained on the repaired labels -- to our knowledge the strongest reported (83.6 Raganato ALL, 87.4 Maru ALL_NEW) -- serving at ~$0.13 per million items. On hard items, fine-grained WordNet senses are partly ill-posed even for experts (three-reviewer Fleiss kappa=0.537); coarsening raises annotator agreement and model accuracy together across four inventories, placing a top model inside the expert agreement band at coarse granularity (statistically equivalent under three of four) but significantly below it at fine. The binding constraint is now cost.",
+    "status": "found"
+  },
+  "2609.17555": {
+    "arxiv_id": "2609.17555",
+    "title": "REQAP: Resilient Weight Packing and Quantization for Edge DNN Acceleration",
+    "authors": [
+      "Mahdi Taheri",
+      "Samira Nazari",
+      "Mubassher Ansari",
+      "Ali Azarpeyvand",
+      "Mohsen Afsharchi",
+      "Maksim Jenihhin",
+      "Christian Herglotz"
+    ],
+    "submission_date": "2026-07-20T04:10:17Z",
+    "latest_updated": "2026-07-20T04:10:17Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17555v1"
+    ],
+    "abstract": "Efficient deployment of Deep Neural Networks (DNNs) on edge accelerators requires aggressive model compression while maintaining reliability in fault-prone hardware environments. This paper presents a reliability-aware quantized weight packing methodology for systolic-array-based DNN accelerators. A sensitivity-driven mixed-precision quantization framework assigns layer-wise bit-widths according to accuracy impact while enforcing symmetric precision between weights and activations. A deterministic register-level packing strategy consolidates multiple heterogeneous operand pairs into fixed-width register words, enabling SIMD-within-a-register (SWAR) style parallel execution that reduces both memory footprint and execution cycles. To improve resilience against hardware faults, selective bit-level protection replicates the most significant bits (MSBs) of critical layers into unused register space, achieving TMR-style protection with minimal overhead. A systolic-array simulation framework is developed to evaluate the proposed packing and fault-tolerance mechanisms under realistic execution conditions. Simulations in AlexNet, VGG-11, and ResNet-18 demonstrate up to 62% memory reduction and up to 56% reduction in Multiply-Accumulate (MAC) operations, while significantly improving accuracy resilience under fault injection compared to baseline and fully protected models.",
+    "status": "found"
+  },
+  "2609.17556": {
+    "arxiv_id": "2609.17556",
+    "title": "WARD: Runtime Workload-Adaptive Vision TRansformer Framework for Dependable Edge AI",
+    "authors": [
+      "Mahdi Taheri",
+      "Pramit Kumar Bhaduri",
+      "Mohammad Masoumi",
+      "Ali Mahani"
+    ],
+    "submission_date": "2026-07-20T05:40:14Z",
+    "latest_updated": "2026-07-20T05:40:14Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17556v1"
+    ],
+    "abstract": "Edge-deployed AI operate under dynamically changing power budgets, reliability requirements, and input distributions, requiring continuous adaptation. Such conditions arise in long-running edge AI applications, including autonomous systems, industrial monitoring, and satellite onboard intelligence. Existing fault-tolerant methods assume static operating conditions, whereas continual learning techniques neglect concurrent hardware faults during online adaptation. Moreover, the practical deployment of runtime-adaptive reliability frameworks on programmable AI accelerators remains largely unexplored. This paper presents WARD, a runtime-adaptive Vision Transformer framework that combines channel-wise subnetwork partitioning, reliability-aware continual learning, and dynamic operating-mode scheduling to jointly optimize performance, fault tolerance, and adaptation according to runtime conditions. Two physically isolated subnetworks execute under four operating modes (i.e. Full-Precision Mode, Low-Power Mode, High-Reliability Mode, and Adaptive Mode) that dynamically adjust computational cost and reliability while ensuring uninterrupted inference for real-time requirements. To validate the practical deployability of the proposed framework, WARD is implemented on a lightweight FPGA-based accelerator extended with runtime hardware support for mode scheduling and resource management. Experimental results demonstrate that the proposed split architecture achieves a network-level failure rate of only 1.79% under high Bit Error Rates. The hardware implementation incurs less than 5% area overhead and supports runtime mode transitions within few clock cycles, demonstrating that adaptive reliability management can be integrated into programmable edge AI accelerators with negligible implementation overhead.",
+    "status": "found"
+  },
+  "2609.17557": {
+    "arxiv_id": "2609.17557",
+    "title": "An improved lower bound for the blowup defective chromatic separation constant",
+    "authors": [
+      "Guillaume Lecomte"
+    ],
+    "submission_date": "2026-07-20T20:25:48Z",
+    "latest_updated": "2026-07-20T20:25:48Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17557v1"
+    ],
+    "abstract": "For a graph $G$ and an integer $d \\geq 0$, let $χ^d(G)$ denote the $d$-defective chromatic number, and let $G \\boxtimes K_{d+1}$ be the $(d+1)$-fold clique blowup of $G$. Norin and Steiner disproved the conjecture $χ(G) = χ^d(G \\boxtimes K_{d+1})$ of Guo, Kang and Zwaneveld by exhibiting, for infinitely many $d$, graphs with $χ(G) \\geq (30/29) χ^d(G \\boxtimes K_{d+1})$, and they proved the universal upper bound $χ(G) \\leq 2 χ^d(G \\boxtimes K_{d+1})$. Writing $C_d = \\sup_G χ(G)/χ^d(G \\boxtimes K_{d+1})$ and $C^* = \\sup_d C_d$, their results give $C^* \\in [30/29, 2]$. We improve the lower bound: we exhibit an explicit 40-vertex graph $W$ with $χ(W) = 11$ and $χ^2(W \\boxtimes K_3) = 10$, so that $C^* \\geq C_2 \\geq 11/10 > 30/29$, already at the smallest defect for which such a separation is possible, namely $d = 2$. All parameters are established by the proofs; the only computer-assisted input, the non-list-colourability of a certain 30-vertex, 10-colour list instance $(B,L)$, is certified by an independently checkable DRAT refutation.",
+    "status": "found"
+  },
+  "2609.17558": {
+    "arxiv_id": "2609.17558",
+    "title": "Developer Investment in Agentic Platforms: Capability Spillovers, Hold-Up, and Portability",
+    "authors": [
+      "Chupeng Xie"
+    ],
+    "submission_date": "2026-07-21T07:00:48Z",
+    "latest_updated": "2026-07-21T07:00:48Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17558v1"
+    ],
+    "abstract": "Platforms increasingly host, distribute, and orchestrate third-party AI agents. A developer's investment in workflows, tool connections, testing, task records, and authorized memory creates a private capability stock and can also make complementary agents productive. The resulting stock is generated within a platform relationship, becomes platform specific, and is vulnerable to appropriation after investment. We model an origin platform that cannot commit to complete future fee and routing terms, a destination platform that commits to a verifiable recognition rule, and developers that invest before the origin resets terms. Portability protects investment through an exit option while preserving the origin's operating discretion. We characterize closed, partial, and full portability and show that the investment result survives incomplete ex post extraction. Verification has two opposing effects: it reduces transfer harm but can strengthen destination recognition and developer outside rent. It expands optimal portability only when safety and induced-investment gains exceed the additional rent and competitive leakage. Conditional on a target protected return, we compare portability with fee commitment and characterize the least-cost instrument mix. Finally, the origin is too closed when private leakage is mainly redistributive, but can be too open when duplication, fragmentation, or security costs are sufficiently real. The analysis turns agent interoperability into a conditional governance choice over relational capability rather than a presumption that openness is always efficient.",
+    "status": "found"
+  },
+  "2609.17559": {
+    "arxiv_id": "2609.17559",
+    "title": "Localizing the Gardam unit: the support geometry of units in F_2[P] and its non-unique-product relatives",
+    "authors": [
+      "Moe Tabei"
+    ],
+    "submission_date": "2026-07-22T02:39:22Z",
+    "latest_updated": "2026-09-21T04:43:58Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2609.17559v1",
+      "2609.17559v2"
+    ],
+    "abstract": "Gardam's counterexample to the Kaplansky unit conjecture is a unit of $\\mathbb{F}_2[P]$, $P$ the Promislow group, with support of size $21$; Gardam asked whether $21$ is least possible. Over $\\mathbb{F}_2$ the unit equation is a parity condition on a pair of supports, searchable over word balls. We upgrade two statements to machine-checked certificates: no support pair of sizes $\\ge2$ lies in the radius-$3$ ball (a DRAT proof of a ball form of the Craven--Pappas theorem), and every nontrivial unit with supports in the radius-$4$ ball has total support at least $42$, confirming Gardam's expectation in ball-limited form. The relatives $H_4=F(3,4)$ and the Nielsen--Soelberg groups are swept with certificates; $G_3$ is Gardam's amalgam $S$, whose unit we localize into its radius-$4$ ball. $H_4$ resists the twisted-unitary ansatz through radius $6$ for every non-identity dihedral twist. An effective localization principle makes the least support of a nontrivial unit of $\\mathbb{F}_2[P]$ computable in principle.",
+    "status": "found"
+  },
+  "2609.17560": {
+    "arxiv_id": "2609.17560",
+    "title": "Pay Only for Disagreement: Certified No-Regression Verdicts for Model Updates with Matching Label-Complexity Bounds",
+    "authors": [
+      "Vishnu Bindu Balachandran"
+    ],
+    "submission_date": "2026-07-22T02:51:14Z",
+    "latest_updated": "2026-07-22T02:51:14Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17560v1"
+    ],
+    "abstract": "Every production model is updated, by retraining, fine-tuning, quantization, or a silent vendor swap, and each update risks being worse than what it replaced. We formalize update promotion as certified paired risk-difference auditing. Our starting point is a support identity: the risk difference between two models lives on the inputs where they disagree, observable without labels. We build DISCERN, a sequential two-tier protocol. A zero-label tier certifies benign updates whose disagreement rate is below tolerance from unlabeled traffic alone. An audited tier labels only sampled disagreements through an anytime-valid confidence sequence, valid at every stopping time and under any label-routing rule, even an adversarial judge. We prove finite-sample validity and matching label-complexity bounds of order rho^2/eps^2 at the rate level, so exploiting free disagreement provably saves a factor 1/rho over any pairing-blind auditor, and the guarantee composes across an unbounded sequence of promotions from one error budget. Across 14,000+ replayed audit streams over 785 update pairs, including LoRA fine-tunes of language models up to 1.4B parameters, miscoverage is 0.0002 (nominal 5%), power 0.986 with zero false alarms, and 56% of benign updates certify with zero labels. Each audit emits a machine-checkable evidence record for post-market monitoring.",
+    "status": "found"
+  },
+  "2609.17561": {
+    "arxiv_id": "2609.17561",
+    "title": "A closed form for the block-statistic generating function of the $2\\times n$ rectangle: the two-row case of Kahane's conjecture",
+    "authors": [
+      "Patrick White"
+    ],
+    "submission_date": "2026-07-22T08:24:45Z",
+    "latest_updated": "2026-07-22T08:24:45Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17561v1"
+    ],
+    "abstract": "Kahane (arXiv:2607.11225) proves that for a fence poset $P$ of size $n$, $n!\\,Ω(P;t)=\\sum_{σ\\in S_n} t^{\\mathrm{bl}(σ)}$, with $\\mathrm{bl}(σ)$ a canonical block count, and conjectures (Conjecture 4.4) that the identity extends to the cell poset of any skew shape, with $\\mathrm{bl}$ replaced by a constructively-defined extension $\\widetilde{\\mathrm{bl}}$. We prove the conjecture for every $2\\times n$ rectangle -- the first genuinely two-dimensional case, where blocks are no longer path-intervals and the statistic is a correlated function of both rows. We introduce a two-parameter growth-state generating function $W_n(α,β;t)$ refining $\\sum_σt^{\\widetilde{\\mathrm{bl}}(σ)}$ by the rank $α$ of the bottom-row minimum and the rank $β$ of the rightmost top cell's block-root, and prove the closed form $W_n(α,β;t)=(α-1)!\\,B(n,β-2)\\,S_n(α,β;t)$ ($n\\ge 1$), where $B(n,k)$ is the Catalan triangle and $S_n$ a rising-factorial skeleton. The proof is an induction on $n$ through Kahane's column-insertion transition, whose load-bearing structural fact -- the block-root below a newly inserted top cell is always the global bottom-row minimum -- reduces the induction to a Catalan-triangle computation. Summing over $(α,β)$ telescopes to $C_n\\,t^{\\overline{n}}(t+1)^{\\overline{n}}$, which by MacMahon's product formula equals $(2n)!\\,Ω(R_{2,n};t)$. Every load-bearing step is a complete general-$n$ argument; the transition table and the inductive step are cross-checked by exhaustive enumeration (through $n=8$ and $n=9$) via an independent from-scratch implementation. General skew shapes and $m>2$ rows remain open.",
+    "status": "found"
+  },
+  "2609.17562": {
+    "arxiv_id": "2609.17562",
+    "title": "BLADE: ReliaBle Dynamic Hardware-Aware SNN-ANN Boundary SeLection for Event-BAseD Object DEtection",
+    "authors": [
+      "Mahdi Taheri",
+      "Alwin Paul"
+    ],
+    "submission_date": "2026-07-22T10:00:56Z",
+    "latest_updated": "2026-07-22T10:00:56Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17562v1"
+    ],
+    "abstract": "Hybrid Spiking Neural Network (SNN)-Artificial Neural Network (ANN) architectures combine the energy efficiency of SNNs with the superior detection accuracy of ANNs for event-based object detection. Existing hybrid SNN--ANN networks, however, employ static inference and select the SNN-ANN boundary primarily according to accuracy and energy consumption, without considering dynamic inference or reliability. This paper presents BLADE, the first reliability-aware boundary selection methodology for dynamic hybrid SNN-ANN networks with ANN early exit. The proposed framework jointly optimizes the SNN-ANN boundary and ANN early-exit configuration according to reliability, detection accuracy, execution time, and energy consumption, while incorporating reliability through hierarchical statistical fault injection during design-space exploration. Experimental evaluation on an event-based object detector achieves an mAP 0.5 of 0.691 while reducing the inference compute energy to 15.82~mJ when the ANN early exit fires. Reliability analysis identifies the most significant floating-point exponent bit as the dominant source of catastrophic failures, producing significant-or-worse accuracy degradation in 58.8% of its fault injections. Protecting this single bit with approximately 3% storage overhead eliminates catastrophic failures across the evaluated realistic technology fault rates. Furthermore, increasing the proportion of SNN computation improves fault tolerance, with the fully SNN configuration achieving a reliability retention of 0.965 under aggressive fault conditions. The results demonstrate that jointly optimizing reliability, accuracy, execution time, and energy consumption enables more dependable deployment of dynamic hybrid SNN--ANN systems for safety-critical edge AI applications.",
+    "status": "found"
+  },
+  "2609.17563": {
+    "arxiv_id": "2609.17563",
+    "title": "The Global Geometry of the Gaussian Bures Manifold: Admissible Domain, Spectral Boundary, and Asymptotic Classicality",
+    "authors": [
+      "Christian Kerskens"
+    ],
+    "submission_date": "2026-07-22T16:53:59Z",
+    "latest_updated": "2026-07-22T16:53:59Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17563v1"
+    ],
+    "abstract": "We construct the covariance-sector Bures geometry of centered bosonic Gaussian states from the Gaussian symmetric-logarithmic-derivative equation and determine its quantum-admissible domain. At the Williamson uncertainty floor, the boundary geometry is anisotropic: spectrum-changing radial coefficients diverge, whereas squeezing and rotation directions along the pure Gaussian orbit remain finite. Dually, the covariance cometric acquires an exact \\(m^2\\)-dimensional kernel when \\(m\\) modes become pure, yet the boundary remains at finite radial Bures distance. We derive the potential \\[ Φ=-\\tfrac12\\sum_k\\log(ν_k^2-\\tfrac14), \\] which generates fixed-frame covariance dilation and equals \\(βF\\) on fixed-Hamiltonian thermal families. At large symplectic eigenvalue, the relative quantum correction is \\(O(\\hbar^2/ν^2)\\), recovering covariance Fisher--Rao geometry. This intrinsic classical regime differs from the pure-state boundary, where classical statistics require a specified measurement channel. As a secondary comparison, the normalized Bures, Fisher--Rao, and action-matched Bures--Wasserstein determinant densities possess an exact one-mode junction at \\[ (x,η)=(\\sqrt{\\varphi},\\sqrt{\\varphi}),\\qquad x=2ν/\\hbar. \\] This junction is kinematic, and its branch interpretation is conditional. At a prescribed finite nonzero compression rate, the Bures action diverges while the Bures--Wasserstein cost remains finite; a bounded Bures budget instead enforces radial deceleration.",
+    "status": "found"
+  },
+  "2609.17564": {
+    "arxiv_id": "2609.17564",
+    "title": "Beyond Static RAG: An Adaptive, Tri-Metric Routing Framework for Efficient Long-Context Inference on Commodity GPUs",
+    "authors": [
+      "Saipraveen Vabbilisetty",
+      "Ajay Kumar Boddepalli",
+      "Deep Narayan Mishra",
+      "Shashank Kapadia",
+      "Haoan Wang",
+      "Anupriya Sharma"
+    ],
+    "submission_date": "2026-07-23T18:09:20Z",
+    "latest_updated": "2026-07-23T18:09:20Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17564v1"
+    ],
+    "abstract": "Deploying retrieval-augmented generation (RAG) on commodity GPUs such as the NVIDIA T4 (16 GB VRAM) exposes a practical failure mode we call the Compression Paradox: neural prompt compression can add key-value (KV) cache contention and preprocessing latency that outweigh generation-time savings, while skipping compression can cause out-of-memory (OOM) failures on long contexts. We identify two distinct failure mechanisms when a vLLM-served LLM and a PyTorch-based compressor are co-deployed under tight memory budgets, and introduce the Tri-Metric Router, a deterministic, training-free policy that selects among Raw, Neural (LLMLingua-2), and Lexical (BM25) pipelines. The router uses three CPU-side signals: spatial complexity ($L$), syntactic density ($ρ_{key}$), and type-token ratio (TTR). Unlike prior semantic-only adaptation, our dispatch signal is hardware-physical, based on VRAM headroom and a latency crossover point. Thresholds are calibrated from profiling on LongBench qasper, yielding an operating crossover near 4,332 words on T4; our contribution is this calibration methodology rather than a hardware-specific constant. On out-of-distribution holdouts, the method achieves 0% OOM failures, 88.5 $\\pm$ 4.4% oracle alignment, and 49.3% Combined F1, improving over always-on lexical compression by 5.2 points without additional VRAM or training cost.",
+    "status": "found"
+  },
+  "2609.17565": {
+    "arxiv_id": "2609.17565",
+    "title": "A Heisenberg Lift Descriptor for Order Sensitive Online Handwriting Recognition",
+    "authors": [
+      "Hassan Ugail",
+      "Newton Howard"
+    ],
+    "submission_date": "2026-07-25T19:29:10Z",
+    "latest_updated": "2026-07-25T19:29:10Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17565v1"
+    ],
+    "abstract": "Online handwriting recognition systems typically represent pen trajectories through fixed-length Euclidean shape descriptors that capture the spatial outline of each stroke, but are insensitive to the order in which that outline is produced. Two strokes that trace the same region of the plane in opposite directions are indistinguishable to any such order-blind representation, yet their traversal directions may carry decisive class information in characters where loop orientation and stroke sequencing matter. This paper introduces a Heisenberg-lift framework that addresses this gap through a compact, interpretable, order-sensitive augmentation for online pen-trajectory features. The simplest instance is the terminal signed area, a single parameter-free scalar appended to an existing Euclidean descriptor at negligible computational cost. Evaluated on two standard online handwriting benchmarks, this one-scalar addition, consistently raises classifier accuracy over the Euclidean baseline. On the hardest character pair in our study, the letters o and y, the signed area alone achieves perfect separation while the Euclidean baseline falls short. The advantage grows further under additive coordinate noise, a practically relevant degradation in pen-trajectory data. A richer fifteen-dimensional extension, derived from a noncommutative Heisenberg-group subdivision scheme, provides additional gains in noisy and loop-structured conditions. Dimension-matched statistical controls confirm that all improvements reflect geometric information rather than feature-count inflation. The resulting descriptor is lightweight, closed-form, and directly interpretable, making it a practical augmentation for online handwriting and related document-trajectory classification pipelines in which the direction of stroke execution carries discriminative information.",
+    "status": "found"
+  },
+  "2609.17566": {
+    "arxiv_id": "2609.17566",
+    "title": "Adaptive Interpolatory Curve Subdivision with Learned Local Angles",
+    "authors": [
+      "Hassan Ugail",
+      "Newton Howard"
+    ],
+    "submission_date": "2026-07-25T19:51:18Z",
+    "latest_updated": "2026-07-25T19:51:18Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17566v1"
+    ],
+    "abstract": "Curve subdivision is pivotal in computer graphics for generating smooth geometric objects from control polygons. Interpolatory subdivision is especially attractive because the refined curve is guaranteed to pass through the designer's control points. Classical four-point and six-point schemes preserve this property, but their behaviour is governed by a single global tension parameter, limiting their ability to adapt across flat regions, sharp turns and varying local geometries. We introduce an adaptive local-angle formulation that keeps the interpolatory structure intact while learning how each new vertex should be inserted. A compact edge-wise predictor assigns one insertion angle per edge, while the original vertices are copied exactly at every refinement level. Interpolation is therefore a structural property of the operator and does not depend on the trained weights. The same predictor is used with geometry-specific geodesic primitives on the Euclidean plane, the two-sphere and the Poincaré disk. Under a matched-density evaluation protocol, the method reduces nearest-neighbour error by factors of five to seventeen over the best validation-tuned fixed-tension baseline, and by about 1.8 over centripetal Catmull-Rom in the Euclidean case. It also substantially reduces bending energy and tangent roughness, while remaining competitive with separately trained per-geometry models.",
+    "status": "found"
+  },
+  "2609.17567": {
+    "arxiv_id": "2609.17567",
+    "title": "Exact three-component covers in 2-coloured random bipartite graphs",
+    "authors": [
+      "Xiao-Chuan Liu",
+      "Xu Yang"
+    ],
+    "submission_date": "2026-07-25T20:37:24Z",
+    "latest_updated": "2026-07-25T20:37:24Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17567v1"
+    ],
+    "abstract": "We resolve the two-colour three-component conjecture of Fernández, Pavez-Signé and Stein for random bipartite graphs. More precisely, we prove that if $G\\sim G(n,n,p)$ and $p\\gg\\sqrt{\\log n/n}$, then with high probability every red--blue edge-colouring of $G$ admits a cover of its vertex set by at most three monochromatic connected components. The proof is based on a uniform expansion lemma for unions of common neighbourhoods and an alternating common-neighbourhood expansion argument.",
+    "status": "found"
+  },
+  "2609.17568": {
+    "arxiv_id": "2609.17568",
+    "title": "Independence-System Realisations in Single-Source Unsplittable Flow",
+    "authors": [
+      "Koyar Afrasyab"
+    ],
+    "submission_date": "2026-07-27T01:19:35Z",
+    "latest_updated": "2026-07-27T01:19:35Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17568v1"
+    ],
+    "abstract": "Additive-congestion constraints in single-source unsplittable flow can enforce stable-set structure. This note isolates and generalises that mechanism. We introduce a path-closed notion of realising an independence system by the zero-cost choices of primary terminals in a directed acyclic flow instance. The definition quantifies over every directed source-terminal path and therefore remains valid under prefix borrowing, suffix splicing, and hybrid routes.Our main result extends the triangle mechanism: every finite loopless independence system has a polynomial-size realisation, measured in the incidence size of its minimal forbidden sets. Hence every finite simple graph, and more generally every hypergraph independence system without singleton forbidden hyperedges, is representable by an acyclic single-source gadget. We then specialise the construction to odd cycles. For C_{2k+1}, a uniform rational family produces a fractional cheap-selection vector that violates the odd-cycle inequality. A potential shift converts a signed connector separator into nonnegative arc costs and gives the exact cost-preserving additive-congestion threshold tau = 1 - bq. Within the symmetric family, the supremum threshold is (k+2)/(2(k+1)), which tends to 1/2. For C5, an exact certificate independently derives all source-terminal paths and enumerates all 3^10 = 59049 unsplittable routings using rational arithmetic.",
+    "status": "found"
+  },
+  "2609.17569": {
+    "arxiv_id": "2609.17569",
+    "title": "Lyapunov-based analysis of functional stability for edge computing systems",
+    "authors": [
+      "Oleksii S. Bychkov"
+    ],
+    "submission_date": "2026-07-27T15:41:00Z",
+    "latest_updated": "2026-07-27T15:41:00Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17569v1"
+    ],
+    "abstract": "Functional stability has been proposed as a per-function reliability concept for edge computing, in which the unit of analysis is the individual service rather than the whole system and the binary working/failed evaluation is replaced by a continuous quality function with per-function thresholds. Verifying these properties for a concrete edge orchestrator, migration policy, or distributed inference service requires a constructive method. This article connects functional stability to the direct Lyapunov method. The strong form is characterized through positive invariance of the admissible region; the weak form is connected to uniform ultimate boundedness and input-to-state stability with analytical recovery-time bounds. Switched dynamics from service migration and node failover are treated via common Lyapunov functions. Finite-horizon variants address mission-bounded edge workloads.",
+    "status": "found"
+  },
+  "2609.17570": {
+    "arxiv_id": "2609.17570",
+    "title": "Observationally Reconstructed Spacetime of NGC 5907: Dark-Matter-Corrected Black Hole Thermodynamics and Galactic Shadow",
+    "authors": [
+      "Aritra Sanyal Farook Rahaman"
+    ],
+    "submission_date": "2026-07-27T17:19:16Z",
+    "latest_updated": "2026-07-27T17:19:16Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17570v1"
+    ],
+    "abstract": "We present an observationally guided relativistic framework to investigate the thermodynamic and optical properties of a black hole in the NGC 5907 galaxy. By reconstructing the spacetime directly from the observed rotation curve, we obtain a dark-matter-corrected metric that incorporates both the galactic halo and the central compact object. The reconstructed geometry admits horizon solutions, allowing us to evaluate the Hawking temperature, Bekenstein-Hawking entropy, and heat capacity, which indicate a thermodynamically stable supermassive black hole influenced by its dark matter environment. We further analyze photon motion and the resulting gravitational shadow, deriving the photon sphere, critical impact parameter, and shadow size. Comparison with WISE W1 infrared photometry shows consistency with the predicted suppression of photon escape near the shadow radius. These results establish a unified link between galactic rotation curves, dark matter, black hole thermodynamics, and observable photometric signatures.",
+    "status": "found"
+  },
+  "2609.17571": {
+    "arxiv_id": "2609.17571",
+    "title": "Where Grokking Happens: Distributed Utility and Fourier Recoding Without a Module Switch",
+    "authors": [
+      "Dekun Yang"
+    ],
+    "submission_date": "2026-07-29T08:28:42Z",
+    "latest_updated": "2026-07-29T08:28:42Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17571v1"
+    ],
+    "abstract": "Where in a Transformer is the change from memorization to generalization functionally expressed? We introduce Transition Games--behavior-aligned exact activation games with paired non-generalizing controls--and find distributed utility gain with a prospective block-0 attention bias; selected degree-two modes account for 67--92% of its addition contrast across replacement games, and a disjoint exact path study confirms that block-1 MLP mediates more of their effect than all other tested downstream paths in 12/12 pairs. The sharper \"MLP memorizes, attention generalizes\" prediction instead reverses (-.331 bits/example at the memory anchor; 0/12 in the predicted direction), while routing onset, global rank collapse, and a prime-invariant architecture ridge also fail, identifying grokking here as spectral recoding of an existing distributed circuit rather than a module switch.",
+    "status": "found"
+  },
+  "2609.17572": {
+    "arxiv_id": "2609.17572",
+    "title": "Disentangling Algorithmic Bias from Archival Artifacts: A Controlled Audit of Vision-Language Model Valuation in Metropolitan Museum Archives",
+    "authors": [
+      "Manpreet Singh",
+      "Rhythm Bhatia",
+      "Rahul Joshi"
+    ],
+    "submission_date": "2026-07-29T17:02:00Z",
+    "latest_updated": "2026-07-29T17:02:00Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17572v1"
+    ],
+    "abstract": "Auditing vision-language models (VLMs) for societal bias requires distinguishing direct algorithmic valuation disparities from confounders embedded within archival metadata. In this study, we audit Contrastive Language-Image Pretraining (CLIP) models using historical artwork metadata from the Metropolitan Museum of Art Open Access collection (N = 1,500 total objects; N = 743 attributed works: Male n = 534, Female n = 209; n = 618 anonymous). We establish a quantitative audit framework evaluating zero-shot CLIP logit differential scores across three semantic prompt pairs (masterpiece, quality, and influence). Unadjusted evaluations demonstrate high score convergence without a statistically significant main gender effect under OpenAI CLIP (mu_F = -0.0067 vs mu_M = -0.0035, p = 0.1829) or OpenCLIP (mu_F = 0.0171 vs mu_M = 0.0237, p = 0.1224). Two One-Sided Tests (TOST) confirm statistical equivalence across Cohen's d >= 0.25 bounds (pTOST < 0.005). Multivariate OLS regression controlling for artwork medium, creation era, and aspect ratio (R^2 < 0.02) confirms that artist gender has no statistically significant conditional effect (p > 0.20). High residual embedding variance (R^2 < 2%) indicates that global zero-shot valuation metrics operate near an embedding noise floor, showing that broad zero-shot prompt logit differentials are a coarse measurement instrument rather than proving absolute model fairness. We highlight two key caveats: (i) macro-level score equivalence reflects metric insensitivity to fine-grained visual-semantic features and does not preclude localized micro-level visual biases, and (ii) excluding 41.2% unattributed holdings reflects institutional survival bias. These results demonstrate the necessity of multivariate confound control, equivalence testing, and archival provenance auditing when assessing AI fairness in cultural heritage collections.",
+    "status": "found"
+  },
+  "2609.17573": {
+    "arxiv_id": "2609.17573",
+    "title": "GroupKV: Hierarchical KV Cache Management for Long-Context Diffusion LLM Inference",
+    "authors": [
+      "Jinhao Wang",
+      "Zhexin Hu",
+      "Kangjie Zhou",
+      "Xin Zhou",
+      "Fangfang Liu"
+    ],
+    "submission_date": "2026-07-30T16:19:56Z",
+    "latest_updated": "2026-07-30T16:19:56Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17573v1"
+    ],
+    "abstract": "Diffusion large language models (dLLMs) are emerging as a promising generative paradigm that complements autoregressive decoding. In long-context settings, KV cache bloat and offloading transfer overhead have become primary bottlenecks in inference systems. Meanwhile, the periodic full-sequence recomputation and localized token updates in dLLMs make the KV lifecycle substantially more dynamic, complicating cache management and prefetch scheduling while making heavyweight token-level indexing or clustering schemes harder to amortize effectively during decoding. To address these challenges, we present \\textsc{GroupKV}, a lightweight hierarchical KV cache management system for long-context dLLM inference. We observe that under block-wise decoding, tokens within the same generation block tend to access highly overlapping and spatially concentrated context regions, making group-level sparse selection effective. Building on this observation, \\textsc{GroupKV} partitions the context into contiguous groups and performs coarse-to-fine sparse selection. \\textsc{GroupKV} further exploits cross-layer consistency to enable predictive prefetching, and incorporates a staleness correction mechanism to maintain cache coherence under dynamic KV updates. Additionally, \\textsc{GroupKV} adopts streaming prefill to reduce peak memory consumption during prefilling. Experiments show that \\textsc{GroupKV} extends the maximum serviceable context length by up to $48.00\\times$ under constrained GPU memory, improves end-to-end inference performance by up to $3.73\\times$ in offload-based long-context settings, and maintains competitive task accuracy.",
+    "status": "found"
+  }
+}

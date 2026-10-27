@@ -1,0 +1,400 @@
+{
+  "2608.12147": {
+    "arxiv_id": "2608.12147",
+    "title": "Dimension Monotonicity in Laguerre Ensembles I: Fractional Moments and Shape Transitions in the Unitary Case",
+    "authors": [
+      "Ondrej Hutník"
+    ],
+    "submission_date": "2026-08-12T15:09:04Z",
+    "latest_updated": "2026-09-11T14:20:36Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.12147v1",
+      "2608.12147v2"
+    ],
+    "abstract": "Let $W_{N,N+λ}$ have the Laguerre unitary distribution with size $N$ and real shape $λ\\ge0$. For $s>0$, we consider the normalized moment $$C_{s,λ}(N)=N^{-s-1}\\mathbb{E}[\\operatorname{Tr}W_{N,N+λ}^{s}]$$ and its dimension decrement $Γ_{N,s,λ}=C_{s,λ}(N)-C_{s,λ}(N+1)$. Iterating the Laguerre moment recurrence separates this decrement into a square source and a nonnegative shape source. The square source gives the complete finite-dimensional sign diagram: $C_{s,0}(N)$ decreases for $0<s<1$ and $s>2$, increases for $1<s<2$, and is constant for $s\\in\\{1,2\\}$. For every $s>0$ and every $N$, the decrement is strictly increasing in $λ$. The same decomposition determines the critical shrinking-shape scales: $N^{-2s}$ for $0<s<1/2$, $(\\log N)/N$ for $s=1/2$, and $N^{-1}$ for $s>1/2$. In the convex range $1<s<2$, where the two sources have opposite signs, the transition occurs when $Nλ_N$ is of order one, with critical constant $$τ_s^*=\\frac{s(s-1)(2-s)}{6(2s-1)}.$$ In the convex range, both crossings are unique for every finite $N$, and we determine their locations to second order. At $s=1/2$ we also obtain a bounded-shape two-term expansion, which supplies the unitary estimates used in the companion orthogonal paper.",
+    "status": "found"
+  },
+  "2608.12148": {
+    "arxiv_id": "2608.12148",
+    "title": "MVFM-3DAD: Multi-view Flow Matching for 3D Anomaly Detection via Density Proxy Estimation",
+    "authors": [
+      "Liangwei Li",
+      "Lin Liu",
+      "Jing Zhang",
+      "Xiaohui Du",
+      "Ruqian Hao",
+      "Xinwei Li",
+      "Hanzhe Liang",
+      "Juanxiu Liu"
+    ],
+    "submission_date": "2026-08-12T15:10:29Z",
+    "latest_updated": "2026-08-12T15:10:29Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12148v1"
+    ],
+    "abstract": "In 3D anomaly detection (3DAD), most existing methods rely on Memory bank retrieval or reconstruction. However, memory-based methods are constrained by the coverage of stored normal features, while reconstruction-based methods may learn identity shortcuts that also reconstruct anomalous inputs well. These limitations motivate a density-oriented approach that evaluates whether a test sample follows the learned normal distribution. To this end, we propose MVFM-3DAD, a flow-based framework that reframes 3DAD as density proxy estimation over the normal data distribution. MVFM-3DAD introduces a Bidirectional Geometric Projector (BGP), whose forward process converts irregular point clouds into structured multi-view representations. The Flow-guided Density Proxy Estimator (FDPE) estimates a reference density for each view feature, after which the backward process of BGP maps these multi-view density estimates to their corresponding 3D points. Building on it, anomalous features can be identified by their terminal normality. Unlike conventional flow-based likelihood estimation, our formulation requires neither input reconstruction nor explicit Jacobian evaluation, yielding a simple and efficient anomaly-scoring mechanism. Extensive experiments show that MVFM-3DAD outperforms the strongest competing methods on Real3D-AD and MVTec3D-AD. Code is available at https://github.com/lil-wayne-0319/MV3D-AD",
+    "status": "found"
+  },
+  "2608.12149": {
+    "arxiv_id": "2608.12149",
+    "title": "Massive Activations in Hybrid Linear Attention Large Language Models: Pre-Attention Spikes and Inter-Spike Plateaus",
+    "authors": [
+      "Zunhai Su",
+      "Bohan Sun",
+      "Xialie Zhuang",
+      "Shuibai Zhang",
+      "He Xiao",
+      "Hui Shen",
+      "Jing Xiong",
+      "Hengyuan Zhang",
+      "Zhongzhu Zhou",
+      "Tiantian Zhang",
+      "Ngai Wong",
+      "Chuan-Wei Kuo"
+    ],
+    "submission_date": "2026-08-12T15:11:18Z",
+    "latest_updated": "2026-09-29T04:40:11Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2608.12149v1",
+      "2608.12149v2",
+      "2608.12149v3"
+    ],
+    "abstract": "We present the first systematic study of massive activations (MAs) in layer-interleaved Hybrid linear attention large language models (HLA LLMs), examining their architectural organization, training-time emergence, underlying mechanisms, and functional significance. Across five linear attention architectures, six hybridization configurations, and five input domains, we identify two architecture-aligned morphologies: pre-attention spikes (PAS) immediately before full attention and inter-spike plateaus (ISP) persisting through intervening linear attention layers. Denser full attention increasingly connects PAS through ISP, approaching the persistent MAs of conventional Transformers. This organization also recurs across 12 public checkpoints spanning 1.2B-397B parameters, covering linear attention and state-space hybrids. Controlled pretraining of Gated DeltaNet (GDN) hybrids up to 1.3B reveals early emergence and consolidation of both morphologies, alongside asymmetric gating effects. Specifically, full attention output gates strongly attenuate MA magnitudes without eliminating their organization, whereas removing GDN output gates yields modest amplification. Mechanistically, we develop a shared systematic-outlier account: PAS follows a localized write-sink-cancel process, while ISP is consistent with delayed cancellation. Functionally, our interventions show that deleting only the four largest-magnitude PAS coordinates at each full attention input reduces mean downstream accuracy by 21.9%-63.6% relative to normal inference. Moreover, reference-conditioned spike-to-plateau connection consistently improves mean real-world retrieval accuracy, yielding relative gains of 1.1%-12.6% without retraining. Our code is available at https://github.com/StartLuxLabs/Massive-Activations-HLA.",
+    "status": "found"
+  },
+  "2608.12150": {
+    "arxiv_id": "2608.12150",
+    "title": "Who Thinks Best Depends on How Long You Let Them: Budget-Dependent Rankings in LLM Evaluation",
+    "authors": [
+      "Rodrigo Guedes de Souza",
+      "Alison R. Panisson"
+    ],
+    "submission_date": "2026-08-12T15:11:35Z",
+    "latest_updated": "2026-08-12T15:11:35Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12150v1"
+    ],
+    "abstract": "Standard evaluation of large language models assumes stable model rankings across inference conditions. We challenge this assumption by varying the token generation budget, i.e., the maximum tokens a model may produce, across seven levels (64--4,096), evaluating four models on three reasoning benchmarks (56,476 inferences). We report four findings: (i) 3--19% of items exhibit non-monotone behavior (accuracy decreasing with more budget), even after controlling for truncation, and this phenomenon is model-specific (cross-model overlap: 6--14%). (ii) Model rankings reverse across budgets on all benchmarks ($p {<} 0.01$, McNemar). (iii) Oracle analysis reveals model complementarity up to $+27.8$pp, most pronounced at constrained budgets. (iv) A budget-aware router captures 14.1% of the oracle gap cross-domain; budget features help within-domain ($+1.6$ to $+5.7$pp) but are domain-specific and hurt transfer ($-1.2$pp). These results argue for budget-conditioned evaluation protocols.",
+    "status": "found"
+  },
+  "2608.12151": {
+    "arxiv_id": "2608.12151",
+    "title": "Dimension Monotonicity in Laguerre Ensembles II: Average Singular Values and the Rectangularity Transition in the Orthogonal Case",
+    "authors": [
+      "Ondrej Hutník"
+    ],
+    "submission_date": "2026-08-12T15:14:18Z",
+    "latest_updated": "2026-09-11T14:31:59Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.12151v1",
+      "2608.12151v2"
+    ],
+    "abstract": "We study the normalized half moment $α_{\\mathbb R}^{(λ)}(N)$ of the size-$N$ Laguerre orthogonal ensemble for real shape $λ\\ge0$. At integer shape this is the expected average singular value of an $N\\times(N+λ)$ real Gaussian matrix. The square mean increases with the dimension, whereas every real shape $λ\\ge1$ decreases. Between these two regimes the decrement is strictly increasing in $λ$, and hence has a unique zero in $(0,1)$ for every $N$. There is also a unique crossing of the Marchenko--Pastur limit. Both thresholds converge to $λ_*=1-π/4$, and their first corrections show that they separate on the scale $(\\log N)/N$. The proof starts from an exact decomposition of the real half moment into its complex counterpart and a positive orthogonal correction. Recent unitary estimates take care of the complex term. An Abel completion, together with a Laguerre connection formula, turns the orthogonal correction into a positive diagonal series; the square case, the regime $λ\\ge1$, and the transition can then all be read from this same series.",
+    "status": "found"
+  },
+  "2608.12152": {
+    "arxiv_id": "2608.12152",
+    "title": "The electrical transport of intrinsic two-dimensional ferroelectric metal PtBi2",
+    "authors": [
+      "Dan Li",
+      "Liu Yang",
+      "Lei Li"
+    ],
+    "submission_date": "2026-08-12T15:15:19Z",
+    "latest_updated": "2026-08-12T15:15:19Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12152v1"
+    ],
+    "abstract": "Breaking the conventional stereotype that ferroelectrics are necessarily insulating, two-dimensional (2D) ferroelectric metals combine seemingly incompatible switchable electric polarization and metallic conductivity, providing a fertile ground for the discovery of novel electrical transport phenomena and the development of innovative electronic devices. Using the semiclassical Boltzmann equation and first-principles calculations, we systematically investigate the linear and nonlinear transport responses of the intrinsic 2D ferroelectric metal \\ch{PtBi2} to an applied electric field. Our \\textit{ab initio} molecular dynamics simulations reveal that it possesses a high Curie temperature reaching $800~\\text{K}$. We propose that the crystal structure of its high-temperature paraelectric phase can be explicitly distinguished through simple measurements of the in-plane electrical conductivity. Quantitative calculations of the Edelstein effect and the intrinsic spin Hall effect demonstrate a sizable charge-to-spin conversion efficiency, highlighting its potential in spintronics. We also find that a Berry curvature dipole-induced nonlinear Hall effect emerges in uniaxially strained \\ch{PtBi2}. Furthermore, we highlight the unique advantages of 2D ferroelectric metals in gate-controlled transport applications. Based on the domain wall scattering mechanism, we conceptually design a novel ferroelectric metal field-effect transistor (FEM-FET) capable of nonvolatile switching between high-resistance and low-resistance states under a gate voltage. Our work not only unveils the rich transport physics in 2D ferroelectric metals but also provides valuable insights into the design of next-generation nonvolatile memory and spintronic devices.",
+    "status": "found"
+  },
+  "2608.12153": {
+    "arxiv_id": "2608.12153",
+    "title": "Halving the size of skew-symmetric eigenvalue problems via the polar decomposition",
+    "authors": [
+      "Daniel Kressner",
+      "Simon Mataigne"
+    ],
+    "submission_date": "2026-08-12T15:17:38Z",
+    "latest_updated": "2026-08-12T15:17:38Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12153v1"
+    ],
+    "abstract": "This paper introduces a novel algorithm for computing eigenvalues and eigenvectors of a dense real skew-symmetric matrix $A$. Its main ingredient is the computation of a polar factor of $A$ that is both skew-symmetric and orthogonal. This polar factor is then used to transform the original problem into a Hermitian eigenvalue problem of half the size, which can be solved accurately and efficiently with standard software such as LAPACK. Numerical experiments demonstrate the stability of the method and show that its running time is competitive with existing approaches for skew-symmetric eigenvalue problems. Finally, we show that the same principle can be used to reduce an orthogonal eigenvalue problem to a unitary eigenvalue problem of half the size.",
+    "status": "found"
+  },
+  "2608.12154": {
+    "arxiv_id": "2608.12154",
+    "title": "Shortcuts to Parameter Sweeps",
+    "authors": [
+      "Chi Xiang",
+      "Guodong Cheng",
+      "Geng Li"
+    ],
+    "submission_date": "2026-08-12T15:17:59Z",
+    "latest_updated": "2026-08-12T15:17:59Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12154v1"
+    ],
+    "abstract": "Efficient evaluation of stationary parametric sensitivities over broad parameter ranges is important for identifying influential training data, fitting force fields, and predicting material responses, but standard pointwise approaches require repeated relaxation and sampling. Here we introduce Shortcuts to Parameter Sweeps (STPS), an engineered control strategy that uses an auxiliary control to transport the probability density along a prescribed family of instantaneous stationary states during a finite-time parameter sweep. This enables the continuous response curve over the full parameter interval to be estimated from a single controlled sweep using covariance-based response relations. STPS applies to both equilibrium and nonequilibrium steady-state systems, including those with unknown stationary distributions, and can be implemented directly using stationary samples in high-dimensional settings. Numerical tests on single-particle and interacting many-body systems show that STPS yields response curves in close agreement with reference results. These findings establish STPS as an efficient, sample-based framework for continuous sensitivity analysis in stochastic simulations.",
+    "status": "found"
+  },
+  "2608.12155": {
+    "arxiv_id": "2608.12155",
+    "title": "Understanding Why Foundation Models Work for Diffusion-Generated Image Detection",
+    "authors": [
+      "Davide Cozzolino",
+      "Giovanni Poggi",
+      "Luisa Verdoliva"
+    ],
+    "submission_date": "2026-08-12T15:18:10Z",
+    "latest_updated": "2026-08-12T15:18:10Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12155v1"
+    ],
+    "abstract": "Vision foundation models have recently emerged as powerful feature extractors for detecting AI-generated images, achieving strong generalization across generators and robustness to common image degradations. However, the reason behind their effectiveness is poorly understood. In this work, we investigate what cues are exploited by foundation-model-based detectors to distinguish real images from diffusion-generated ones. To this end, we design an ad hoc analysis protocol based on DDIM inversion. Given a real image we generate a sequence of synthetic copies by changing the depth of DDIM inversion. Even though most copies are semantically identical to the real reference, the detector score varies significantly across them due to subtle traces introduced by the diffusion synthesis, showing that its decision is not primarily driven by semantic failures. Through a frequency-swapping analysis, we further reveal that the discriminative cues exploited by the detectors are mainly localized in the low-to-mid frequency range, rather than only in the high-frequency range, as is the case for artifacts commonly associated with generative models. Finally, a latent-space analysis shows that regenerated images exhibit reduced variance and effective dimensionality, indicating that diffusion models do not fully reproduce the variability of real data. Overall, our results suggest that foundation-model-based detectors succeed by capturing non-semantic low-to-mid frequency distributional discrepancies between real and diffusion-generated images. These findings provide new insight into the robustness and generalization of such detectors and suggest directions for more interpretable forensic methods.",
+    "status": "found"
+  },
+  "2608.12156": {
+    "arxiv_id": "2608.12156",
+    "title": "The Shape of the Vertical Action Distribution Locates the Scatterers that Heat the Galactic Disc",
+    "authors": [
+      "Yuan-Sen Ting",
+      "Hans-Walter Rix"
+    ],
+    "submission_date": "2026-08-12T15:20:04Z",
+    "latest_updated": "2026-08-12T15:20:04Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12156v1"
+    ],
+    "abstract": "The Milky Way's stellar disc is thicker than the cold gas layer from which its stars form. What scatters stars onto orbits with greater vertical motion remains unresolved. Scatterers could fill the disc volume, as bending waves or dark substructure would, or could be confined to the midplane, as giant molecular clouds are. Scattering from a midplane layer occurs only during the fast plane-crossing phase and becomes less effective as that speed increases, whereas a volume-filling perturbation remains effective near the slow turning points. We derive the distribution of vertical action this leaves behind, for any height distribution of scatterers. The geometry turns out to enter only through the logarithmic slope of the diffusivity in action, $D\\propto J_z^{b}$, and solving the Fokker-Planck equation gives $p(J_z)\\propto\\exp[-(J_z/J_0)^{2-b}]$. Scatterers that fill the volume give $b=1$ and an exponential, a thin layer at the midplane gives $b=1/2$ and a sharper cutoff: the shape of $p(J_z)$ records where the scatterers sit, the growth of its scale how strongly they scatter. We fit this model to 7589 low-$α$ red clump stars of Ting & Rix (2019) between 5 and 10 kpc and 2 and 8 Gyr old, leaving the heating history free. This yields $b=0.51^{+0.06}_{-0.07}$, consistent with the thin-layer prediction but not the volume-filling one. Comparing the 2-4 Gyr heating amplitude with the present molecular surface density gives an effective scatterer mass of $2.7\\times10^{6}\\,M_\\odot$. Older stars have experienced more of the Galaxy's gas-richer past; correcting for that history brings all four age bins to $(1.9-2.8)\\times10^{6}\\,M_\\odot$, inside the range cloud catalogues and mass functions give. The Milky Way's disc is heated near the plane, by an evolving population of objects of giant-molecular-cloud mass.",
+    "status": "found"
+  },
+  "2608.12157": {
+    "arxiv_id": "2608.12157",
+    "title": "Connecting the tensor-categorical formulation of anyon condensation with operator algebras and entropic order parameters",
+    "authors": [
+      "Hua-Chen Zhang"
+    ],
+    "submission_date": "2026-08-12T15:20:05Z",
+    "latest_updated": "2026-10-06T10:58:42Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2608.12157v1",
+      "2608.12157v2",
+      "2608.12157v3"
+    ],
+    "abstract": "Anyon condensation that describes the transition between topological quantum field theories can be formulated in the language of tensor categories or that of operator algebras. We deploy the formalism of Doplicher-Haag-Roberts bimodules over quasi-local $\\mathrm{C}^{*}$-algebras recently developed in [1] to investigate anyon condensation, which is associated with an extension of a certain operator algebra. The connection between notions in the two formulations is thereby made manifest in an intuitive, diagrammatic manner. An entropic order parameter, as the quantum information-theoretic measure characterising a condensation, is naturally defined, and we give a very simple proof of a bound on it.",
+    "status": "found"
+  },
+  "2608.12158": {
+    "arxiv_id": "2608.12158",
+    "title": "Context Blindness in DPO: Mitigating Object Hallucination in MLLMs via Context-Calibrated Preference Optimization",
+    "authors": [
+      "Byungoh Ko",
+      "Jinyoung Park",
+      "Jongha Kim",
+      "Jeehye Na",
+      "Jaewon Cho",
+      "Hyunwoo J. Kim"
+    ],
+    "submission_date": "2026-08-12T15:20:29Z",
+    "latest_updated": "2026-08-12T15:20:29Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12158v1"
+    ],
+    "abstract": "Multimodal large language models (MLLMs) have made rapid progress, yet they still exhibit object hallucination, generating plausible but incorrect descriptions that are inconsistent with the visual input. Direct Preference Optimization (DPO) mitigates this by training models to prefer non-hallucinated responses over hallucinated ones, and recent efforts further enrich the preference data with relevant context. However, it remains unclear whether DPO actually leverages such context. To investigate this, we propose Contextual Preference Gain (CPG), a simple metric that measures how much a model's preference strengthens when relevant context is provided. We find that higher CPG consistently corresponds to lower hallucination, yet standard DPO and its variants exhibit only limited CPG, indicating that they underutilize contextual information and thus remain prone to hallucination. To address this, we propose Context-Calibrated DPO (C$^2$-DPO), which directly maximizes CPG while preserving the original preference ordering. Across multiple benchmarks, C$^2$-DPO substantially reduces hallucination without compromising general reasoning, relatively reducing the Object HalBench hallucination rate of Qwen2-VL-Instruct-2B by 36%. Code is available at https://github.com/mlvlab/C2-DPO",
+    "status": "found"
+  },
+  "2608.12159": {
+    "arxiv_id": "2608.12159",
+    "title": "The Optimal Discounting Parameter of the Power Prior under Predictive Log-Loss",
+    "authors": [
+      "Yuriy A. Reznik"
+    ],
+    "submission_date": "2026-08-12T15:21:01Z",
+    "latest_updated": "2026-08-12T15:21:01Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12159v1"
+    ],
+    "abstract": "The power prior of Ibrahim and Chen incorporates historical data into a Bayesian analysis by raising the historical likelihood to a power $a_0 \\in [0, 1]$. The choice of the exponent has remained an open question. This paper gives a closed-form answer under the predictive log-loss. For a model with $d$ parameters, a historical sample of size $N_0$, and average Kullback--Leibler divergence $\\bar{D}_0$ between the historical and current data-generating distributions, the optimal exponent is $a_0^{*} = d/(2 N_0 \\bar{D}_0 + d)$. Equivalently, the optimally borrowed effective sample size obeys the harmonic law $1/E^{*} = 1/N_0 + 2\\bar{D}_0/d$: compatible data are pooled in full, and any difference caps the borrowed information at $d/(2\\bar{D}_0)$ observations. The result is exact for multinomial data and extends to smooth parametric families. The law benchmarks adaptive borrowing, explains the reported degeneracy of the normalized power prior, and shows that neither subsetting the data nor decaying the exponent improves on the correctly discounted constant.",
+    "status": "found"
+  },
+  "2608.12160": {
+    "arxiv_id": "2608.12160",
+    "title": "Fortuity and fragility in supersymmetric SYK",
+    "authors": [
+      "James Chryssanthacopoulos",
+      "David Vegh"
+    ],
+    "submission_date": "2026-08-12T15:22:56Z",
+    "latest_updated": "2026-10-16T15:48:39Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.12160v1",
+      "2608.12160v2"
+    ],
+    "abstract": "In the $\\mathcal N=2$ supersymmetric SYK model with $N$ fermions, every BPS state is fortuitous: at fixed charge, it exists only over a finite range of $N$. Allowing the charge to increase, we show that BPS classes may instead be uplifted along lattice walks inside the fortuity window, potentially to arbitrarily large $N$. However, there is no canonical uplift. We therefore introduce a decoder $D$ whose spectrum quantifies exact uplift and its metric cost. We call the failure or increasing cost of uplifting harmonic representatives metric fragility. Chen's single-matrix model and the protected tower of the two-flavor SYK model realize bare and genuinely dressed mechanisms of perfect uplift, respectively. In the generic one-flavor model, exact uplift eventually fails. The Lin-Maldacena-Rozenberg-Shan-type operator $D^\\dagger D$ exhibits level statistics consistent with the Gaussian unitary ensemble. Its eigenvalues quantify the metric continuity of BPS states across system size, while their correlations probe chaos within the BPS sector. Metric fragility and BPS chaos are thus encoded in complementary observables of the same operator, distinguishing chaotic BPS sectors from exactly solvable towers.",
+    "status": "found"
+  },
+  "2608.12161": {
+    "arxiv_id": "2608.12161",
+    "title": "Coherent quantum geometry: de Sitter spacetime in different foliations",
+    "authors": [
+      "Tommaso Bambagiotti",
+      "Roberto Casadio",
+      "Andrea Giusti",
+      "Pedro Meert"
+    ],
+    "submission_date": "2026-08-12T15:23:01Z",
+    "latest_updated": "2026-08-12T15:23:01Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12161v1"
+    ],
+    "abstract": "In any theory of quantum gravity, an interesting question to address is to what extent known solutions of the Einstein field equations can be obtained as expectation values of metric operators on suitable quantum states. In this work, we consider coherent states (to ensure minimum uncertainty) for different foliations of the de~Sitter spacetime and study temporal evolution and coordinate invariance. A general framework will first be introduced for metrics that can be diagonalised globally. We will then find that the normalisability of coherent states in this framework requires using reference frames without coordinate singularities.",
+    "status": "found"
+  },
+  "2608.12162": {
+    "arxiv_id": "2608.12162",
+    "title": "Double Yangian and reflection algebras of the Lie superalgebra $\\mathfrak{gl}_{M|N}$, II: Quantum currents",
+    "authors": [
+      "Lucia Bagnoli",
+      "Slaven Kožić"
+    ],
+    "submission_date": "2026-08-12T15:25:37Z",
+    "latest_updated": "2026-09-04T07:50:42Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.12162v1",
+      "2608.12162v2"
+    ],
+    "abstract": "In this paper, we continue our research on the double Yangian and reflection algebras of the Lie superalgebra $\\mathfrak{gl}_{M|N}$. Extending the Etingof-Kazhdan construction, we introduce the structure of $h$-adic quantum vertex superalgebra on the vacuum module $V^c(\\mathfrak{gl}_{M|N})$ over the double Yangian of level $c\\in\\mathbb{C}$. Next, we construct families of central elements in the completed double Yangian for $\\mathfrak{gl}_{M|N}$ at the critical level. Finally, we show that the level $c$ restricted modules over the reflection algebra of $\\mathfrak{gl}_{M|N}$ are naturally equipped with the structure of quasi $V^{2c}(\\mathfrak{gl}_{M|N})$-module. By using this structure, we find explicit formulas for families of central elements in the completed reflection algebra of $\\mathfrak{gl}_{M|N}$ at the critical level.",
+    "status": "found"
+  },
+  "2608.12163": {
+    "arxiv_id": "2608.12163",
+    "title": "Effects of Tool Wear on the Surface Texture in Turning: A Feature Characterization Approach Based on ISO 21920-2",
+    "authors": [
+      "Alexander Müller",
+      "Maximilian Berndt",
+      "Hagen Schmidt",
+      "Lars Müller",
+      "Matthias Eifler",
+      "Eberhard Kerscher",
+      "Benjamin Kirsch",
+      "Jörg Seewig"
+    ],
+    "submission_date": "2026-08-12T15:25:40Z",
+    "latest_updated": "2026-08-12T15:25:40Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12163v1"
+    ],
+    "abstract": "The surface texture of a turned component acts as a fingerprint of both the process parameters and the tool wear condition, imaging the cutting edge. Classical surface parameters such as $R_\\mathrm{a}$ or $R_\\mathrm{q}$ describe the topography only globally and allow no spatially resolved evaluation of the process-induced deterministic structures. This work investigates how far the feature characterization standardized in ISO 21920-2 makes this wear information accessible and physically interpretable. The database comprises roughness profiles of twelve AlTiN-coated carbide inserts (CNMG120408) machining normalized AISI 1045 steel, measured at nine wear states over the entire tool life, with three replicate profiles per state. The correlation of standardized field and feature parameters with crater wear, flank wear, and cutting time is first examined. Watershed segmentation is then adapted to extract the rotational tool grooves and evaluate their geometry statistically. A newly developed mean-feature approach decomposes the profile into a deterministic and a stochastic component. Wear-induced changes are almost entirely carried by the deterministic component, and within it by the trailing flank of the cutting groove. A comparison with confocal measurements confirms that the mean feature reconstructs the engaged cutting edge geometry, with the trailing-flank steepening attributable to notch wear on the secondary cutting edge. An exhaustive evaluation of more than 920,000 feature characterization combinations and multivariate models reveals that the groove-level mean maximum absolute gradient $\\overline{R_\\mathrm{dt}}_\\mathrm{groove}$ alone explains 83-90% of the variance of the wear indicators, so that a single, physically motivated parameter suffices for robust wear estimation. A follow-up study will investigate inline monitoring using scattered light sensors.",
+    "status": "found"
+  },
+  "2608.12164": {
+    "arxiv_id": "2608.12164",
+    "title": "Models of a point particle in a three-dimensional AdS universe",
+    "authors": [
+      "Petr Lukeš",
+      "Pavel Krtouš"
+    ],
+    "submission_date": "2026-08-12T15:25:41Z",
+    "latest_updated": "2026-08-12T15:25:41Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12164v1"
+    ],
+    "abstract": "In 2+1-dimensional gravity, a conical deficit is commonly interpreted as a point-like particle. A distributional description of such a source is problematic since the Einstein equations are non- linear. Moreover, the total mass of the spacetime with nontrivial asymptotics is obfuscated by the infinite amount of background energy in the distant regions. In this work, we support the standard claim that the mass of a point particle is given by the angular deficit of the asymptotic geometry. We approximate the singular matter source by a sufficiently regular energy distribution, and we study the limit of negligible size for such a distribution while keeping the asymptotic geometry intact. Comparing spacetimes with equal asymptotics ensures that we correctly identify and remove the cosmological matter. We find that the angular deficit of the resulting conical spacetime is given by a limit of the local mass of the object, where the local mass is a natural concept of additive mass in 2+1 gravity. Surprisingly, the limiting mass is different from the BTZ mass parameter, although both masses are closely related.",
+    "status": "found"
+  },
+  "2608.12165": {
+    "arxiv_id": "2608.12165",
+    "title": "Shadowing in the presence of singularities: oriented versus standard shadowing, entropy and the structure of recurrent sets",
+    "authors": [
+      "Sakshi Jain",
+      "Piotr Oprocha",
+      "Elias Rego"
+    ],
+    "submission_date": "2026-08-12T15:26:47Z",
+    "latest_updated": "2026-08-12T15:26:47Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12165v1"
+    ],
+    "abstract": "We study two shadowing properties for flows that differ in the allowed reparametrizations of time: oriented shadowing permits arbitrary increasing reparametrizations, whereas standard shadowing requires their distortion to be uniformly close to one. We prove that these notions are distinct already for $C^\\infty$ flows on every closed oriented surface. Moreover, such examples are $C^0$-dense among $C^1$ flows with a singularity and consequently, on closed oriented surfaces with non-zero Euler characteristic, they are dense among all $C^1$ flows. We then relate local standard shadowing to recurrence and entropy. A non-trivial chain-transitive set with local standard shadowing forces positive topological entropy unless it is an irreducible almost heteroclinic set. Consequently, for a zero-entropy flow with standard shadowing, every non-trivial chain-recurrent class has this form, and every non-singular one is minimal. For surface flows, we further prove that oriented shadowing together with finitely many singularities forces every chain-recurrent class to be minimal.",
+    "status": "found"
+  },
+  "2608.12166": {
+    "arxiv_id": "2608.12166",
+    "title": "Co-constructing sociotechnical AI governance: participatory system mapping using algorithm registers",
+    "authors": [
+      "Íñigo de Troya",
+      "Maurus Enbergs",
+      "Neelke Doorn",
+      "Roel Dobbe"
+    ],
+    "submission_date": "2026-08-12T15:27:45Z",
+    "latest_updated": "2026-08-12T15:27:45Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12166v1"
+    ],
+    "abstract": "Algorithm registers have been championed as a means of providing transparency on the use of algorithms in public services. Yet potential publics differ in their expectations of what should be made transparent and how, as well as in their interest in and ability to parse the information currently published in the registers. Moreover, it remains unclear how these instruments can represent the sociotechnical systems in which these algorithms are embedded, and how system-level transparency can facilitate accountability. In this paper, we ask, what do algorithm registers reveal (and occlude) about the sociotechnical systems governing algorithmic systems, and how can diverse stakeholder perspectives inform a more pluralistic system-theoretic safety analysis? To do this, we probe the municipal algorithm register of a Dutch city through a case study of a decision-support tool for caseworkers' assessment of citizens' welfare benefits eligibility based on legal automation through a business rule engine. Through interviews, surveys, and participatory system mapping workshops (with municipal staff, civil society organisations, and ombudsmen, N=8), we seek to understand to what extent the register allows stakeholders to map the algorithmic system in question. These maps inform a System-Theoretic Process Analysis (STPA) that situates the register within a wider sociotechnical governance structure. Participants' contributions allow us to identify potential safety hazards which would not have been possible to see using the algorithm register alone, including benefits eligibility denial, system performance deterioration, and inability to contest wrongful decisions. By engaging both direct and indirect stakeholders, we reflect on the normative dimensions of algorithm governance efforts and how politics shape the practice of system safety analysis.",
+    "status": "found"
+  }
+}

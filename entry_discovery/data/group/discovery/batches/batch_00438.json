@@ -1,0 +1,426 @@
+{
+  "2601.21916": {
+    "arxiv_id": "2601.21916",
+    "title": "JADE: Bridging the Strategic-Operational Gap in Dynamic Agentic RAG",
+    "authors": [
+      "Yiqun Chen",
+      "Erhan Zhang",
+      "Tianyi Hu",
+      "Shijie Wang",
+      "Zixuan Yang",
+      "Meizhi Zhong",
+      "Xiaochi Wei",
+      "Yan Gao",
+      "Yi Wu",
+      "Yao Hu",
+      "Jiaxin Mao"
+    ],
+    "submission_date": "2026-01-29T16:06:44Z",
+    "latest_updated": "2026-01-29T16:06:44Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.21916v1"
+    ],
+    "abstract": "The evolution of Retrieval-Augmented Generation (RAG) has shifted from static retrieval pipelines to dynamic, agentic workflows where a central planner orchestrates multi-turn reasoning. However, existing paradigms face a critical dichotomy: they either optimize modules jointly within rigid, fixed-graph architectures, or empower dynamic planning while treating executors as frozen, black-box tools. We identify that this \\textit{decoupled optimization} creates a ``strategic-operational mismatch,'' where sophisticated planning strategies fail to materialize due to unadapted local executors, often leading to negative performance gains despite increased system complexity. In this paper, we propose \\textbf{JADE} (\\textbf{J}oint \\textbf{A}gentic \\textbf{D}ynamic \\textbf{E}xecution), a unified framework for the joint optimization of planning and execution within dynamic, multi-turn workflows. By modeling the system as a cooperative multi-agent team unified under a single shared backbone, JADE enables end-to-end learning driven by outcome-based rewards. This approach facilitates \\textit{co-adaptation}: the planner learns to operate within the capability boundaries of the executors, while the executors evolve to align with high-level strategic intent. Empirical results demonstrate that JADE transforms disjoint modules into a synergistic system, yielding remarkable performance improvements via joint optimization and enabling a flexible balance between efficiency and effectiveness through dynamic workflow orchestration.",
+    "status": "found"
+  },
+  "2601.21917": {
+    "arxiv_id": "2601.21917",
+    "title": "On Approximate Computation of Critical Points",
+    "authors": [
+      "Amir Ali Ahmadi",
+      "Georgina Hall"
+    ],
+    "submission_date": "2026-01-29T16:08:22Z",
+    "latest_updated": "2026-01-29T16:08:22Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.21917v1"
+    ],
+    "abstract": "We show that computing even very coarse approximations of critical points is intractable for simple classes of nonconvex functions. More concretely, we prove that if there exists a polynomial-time algorithm that takes as input a polynomial in $n$ variables of constant degree (as low as three) and outputs a point whose gradient has Euclidean norm at most $2^n$ whenever the polynomial has a critical point, then P=NP. The algorithm is permitted to return an arbitrary point when no critical point exists. We also prove hardness results for approximate computation of critical points under additional structural assumptions, including settings in which existence and uniqueness of a critical point are guaranteed, the function is lower bounded, and approximation is measured in terms of distance to a critical point. Overall, our results stand in contrast to the commonly-held belief that, in nonconvex optimization, approximate computation of critical points is a tractable task.",
+    "status": "found"
+  },
+  "2601.21918": {
+    "arxiv_id": "2601.21918",
+    "title": "Excited-State Intramolecular Proton Transfer and Competing Pathways in 3-Hydroxychromone: A Non-adiabatic Dynamics Study",
+    "authors": [
+      "Alessandro Nicola Nardi",
+      "Morgane Vacher"
+    ],
+    "submission_date": "2026-01-29T16:08:25Z",
+    "latest_updated": "2026-03-02T08:37:33Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.21918v1",
+      "2601.21918v2"
+    ],
+    "abstract": "Excited-state intramolecular proton transfer (ESIPT) is a fundamental photochemical process in which photoexcitation induces proton transfer within a molecule, leading to the formation of a tautomeric excited state. It was observed experimentally that the 3-hydroxychromone (3-HC) system exhibits two distinct proton-transfer time scales upon excitation to the lowest \"bright\" singlet excited state: an ultrafast component on the femtosecond time scale and a slower one on the picosecond time scale, largely insensitive to solvent effects. Up to now, the microscopic origin of the second time constant has only been hypothesised. Here, using mixed quantum-classical non-adiabatic dynamics simulations, we explicitly observe the two ESIPT time constants and we rationalise the origin of the second time scale by the presence of a competitive out-of-plane hydrogen torsional motion. Comprehensive analysis of the excited-state potential energy surfaces and nonadiabatic trajectories enables us to construct an explicit reaction network for 3-HC, delineating the interplay between canonical ESIPT and torsion-mediated pathways. This unified mechanistic framework reconciles the coexistence of ultrafast and slower ESIPT components, offering new insights into the non-adiabatic excited-state dynamics of the system.",
+    "status": "found"
+  },
+  "2601.21919": {
+    "arxiv_id": "2601.21919",
+    "title": "Self-Compression of Chain-of-Thought via Multi-Agent Reinforcement Learning",
+    "authors": [
+      "Yiqun Chen",
+      "Jinyuan Feng",
+      "Wei Yang",
+      "Meizhi Zhong",
+      "Zhengliang Shi",
+      "Rui Li",
+      "Xiaochi Wei",
+      "Yan Gao",
+      "Yi Wu",
+      "Yao Hu",
+      "Zhiqiang Pu",
+      "Jiaxin Mao"
+    ],
+    "submission_date": "2026-01-29T16:13:10Z",
+    "latest_updated": "2026-01-29T16:13:10Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.21919v1"
+    ],
+    "abstract": "The inference overhead induced by redundant reasoning undermines the interactive experience and severely bottlenecks the deployment of Large Reasoning Models. Existing reinforcement learning (RL)-based solutions tackle this problem by coupling a length penalty with outcome-based rewards. This simplistic reward weighting struggles to reconcile brevity with accuracy, as enforcing brevity may compromise critical reasoning logic. In this work, we address this limitation by proposing a multi-agent RL framework that selectively penalizes redundant chunks, while preserving essential reasoning logic. Our framework, Self-Compression via MARL (SCMA), instantiates redundancy detection and evaluation through two specialized agents: \\textbf{a Segmentation Agent} for decomposing the reasoning process into logical chunks, and \\textbf{a Scoring Agent} for quantifying the significance of each chunk. The Segmentation and Scoring agents collaboratively define an importance-weighted length penalty during training, incentivizing \\textbf{a Reasoning Agent} to prioritize essential logic without introducing inference overhead during deployment. Empirical evaluations across model scales demonstrate that SCMA reduces response length by 11.1\\% to 39.0\\% while boosting accuracy by 4.33\\% to 10.02\\%. Furthermore, ablation studies and qualitative analysis validate that the synergistic optimization within the MARL framework fosters emergent behaviors, yielding more powerful LRMs compared to vanilla RL paradigms.",
+    "status": "found"
+  },
+  "2601.21920": {
+    "arxiv_id": "2601.21920",
+    "title": "From Future of Work to Future of Workers: Addressing Asymptomatic AI Harms for Dignified Human-AI Interaction",
+    "authors": [
+      "Upol Ehsan",
+      "Samir Passi",
+      "Koustuv Saha",
+      "Todd McNutt",
+      "Mark O. Riedl",
+      "Sara Alcorn"
+    ],
+    "submission_date": "2026-01-29T16:13:41Z",
+    "latest_updated": "2026-01-29T16:13:41Z",
+    "revised_dates": null,
+    "venue": "Proceedings of the CHI Conference on Human Factors in Computing Systems, 2026",
+    "latest_version": 1,
+    "versions": [
+      "2601.21920v1"
+    ],
+    "abstract": "In the future of work discourse, AI is touted as the ultimate productivity amplifier. Yet, beneath the efficiency gains lie subtle erosions of human expertise and agency. This paper shifts focus from the future of work to the future of workers by navigating the AI-as-Amplifier Paradox: AI's dual role as enhancer and eroder, simultaneously strengthening performance while eroding underlying expertise. We present a year-long study on the longitudinal use of AI in a high-stakes workplace among cancer specialists. Initial operational gains hid ``intuition rust'': the gradual dulling of expert judgment. These asymptomatic effects evolved into chronic harms, such as skill atrophy and identity commoditization. Building on these findings, we offer a framework for dignified Human-AI interaction co-constructed with professional knowledge workers facing AI-induced skill erosion without traditional labor protections. The framework operationalizes sociotechnical immunity through dual-purpose mechanisms that serve institutional quality goals while building worker power to detect, contain, and recover from skill erosion, and preserve human identity. Evaluated across healthcare and software engineering, our work takes a foundational step toward dignified human-AI interaction futures by balancing productivity with the preservation of human expertise.",
+    "status": "found"
+  },
+  "2601.21921": {
+    "arxiv_id": "2601.21921",
+    "title": "Duality-Guided Graph Learning for Real-Time Joint Connectivity and Routing in LEO Mega-Constellations",
+    "authors": [
+      "Zhouyou Gu",
+      "Jinho Choi",
+      "Tony Q. S. Quek",
+      "Jihong Park"
+    ],
+    "submission_date": "2026-01-29T16:13:50Z",
+    "latest_updated": "2026-01-29T16:13:50Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.21921v1"
+    ],
+    "abstract": "Laser inter-satellite links (LISLs) of low Earth orbit (LEO) mega-constellations enable high-capacity backbone connectivity in non-terrestrial networks, but their management is challenged by limited laser communication terminals, mechanical pointing constraints, and rapidly time-varying network topologies. This paper studies the joint problem of LISL connection establishment, traffic routing, and flow-rate allocation under heterogeneous global traffic demand and gateway availability. We formulate the problem as a mixed-integer optimization over large-scale, time-varying constellation graphs and develop a Lagrangian dual decomposition that interprets per-link dual variables as congestion prices coordinating connectivity and routing decisions. To overcome the prohibitive latency of iterative dual updates, we propose DeepLaDu, a Lagrangian duality-guided deep learning framework that trains a graph neural network (GNN) to directly infer per-link (edge-level) congestion prices from the constellation state in a single forward pass. We enable scalable and stable training using a subgradient-based edge-level loss in DeepLaDu. We analyze the convergence and computational complexity of the proposed approach and evaluate it using realistic Starlink-like constellations with optical and traffic constraints. Simulation results show that DeepLaDu achieves up to 20\\% higher network throughput than non-joint or heuristic baselines, while matching the performance of iterative dual optimization with orders-of-magnitude lower computation time, suitable for real-time operation in dynamic LEO networks.",
+    "status": "found"
+  },
+  "2601.21922": {
+    "arxiv_id": "2601.21922",
+    "title": "Zero-Shot Video Restoration and Enhancement with Assistance of Video Diffusion Models",
+    "authors": [
+      "Cong Cao",
+      "Huanjing Yue",
+      "Shangbin Xie",
+      "Xin Liu",
+      "Jingyu Yang"
+    ],
+    "submission_date": "2026-01-29T16:14:07Z",
+    "latest_updated": "2026-01-29T16:14:07Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.21922v1"
+    ],
+    "abstract": "Although diffusion-based zero-shot image restoration and enhancement methods have achieved great success, applying them to video restoration or enhancement will lead to severe temporal flickering. In this paper, we propose the first framework that utilizes the rapidly-developed video diffusion model to assist the image-based method in maintaining more temporal consistency for zero-shot video restoration and enhancement. We propose homologous latents fusion, heterogenous latents fusion, and a COT-based fusion ratio strategy to utilize both homologous and heterogenous text-to-video diffusion models to complement the image method. Moreover, we propose temporal-strengthening post-processing to utilize the image-to-video diffusion model to further improve temporal consistency. Our method is training-free and can be applied to any diffusion-based image restoration and enhancement methods. Experimental results demonstrate the superiority of the proposed method.",
+    "status": "found"
+  },
+  "2601.21923": {
+    "arxiv_id": "2601.21923",
+    "title": "A scalable quantum-enhanced greedy algorithm for maximum independent set problems",
+    "authors": [
+      "Elisabeth Wybo",
+      "Jami Rönkkö",
+      "Olli Hirviniemi",
+      "Jernej Rudi Finžgar",
+      "Martin Leib"
+    ],
+    "submission_date": "2026-01-29T16:14:48Z",
+    "latest_updated": "2026-01-29T16:14:48Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.21923v1"
+    ],
+    "abstract": "We investigate a hybrid quantum-classical algorithm for solving the Maximum Independent Set (MIS) problem on regular graphs, combining the Quantum Approximate Optimization Algorithm (QAOA) with a minimal degree classical greedy algorithm. The method leverages pre-computed QAOA angles, derived from depth-$p$ QAOA circuits on regular trees, to compute local expectation values and inform sequential greedy decisions that progressively build an independent set. This hybrid approach maintains shallow quantum circuit and avoids instance-specific parameter training, making it well-suited for implementation on current quantum hardware: we have implemented the algorithm on a 20 qubit IQM superconducting device to find independent sets in graphs with thousands of nodes. We perform tensor network simulations to evaluate the performance of the algorithm beyond the reach of current quantum hardware and compare to established classical heuristics. Our results show that even at low depth ($p=4$), the quantum-enhanced greedy method significantly outperforms purely classical greedy baselines as well as more sophisticated approximation algorithms. The modular structure of the algorithm and relatively low quantum resource requirements make it a compelling candidate for scalable, hybrid optimization in the NISQ era and beyond.",
+    "status": "found"
+  },
+  "2601.21924": {
+    "arxiv_id": "2601.21924",
+    "title": "One-Step Bellman Alignment Enables Provably Efficient Transfer in Online RL",
+    "authors": [
+      "Elynn Chen",
+      "Enpei Zhang",
+      "Jinhang Chai",
+      "Yujun Yan"
+    ],
+    "submission_date": "2026-01-29T16:16:24Z",
+    "latest_updated": "2026-05-23T18:15:37Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.21924v1",
+      "2601.21924v2"
+    ],
+    "abstract": "We study online transfer reinforcement learning (RL) in episodic Markov decision processes, where experience from related source tasks is available during learning on a target task. A fundamental difficulty is that task similarity is typically defined in terms of rewards or transitions, whereas online RL algorithms operate on Bellman regression targets. As a result, naively reusing source Bellman updates introduces systematic bias and invalidates regret guarantees. We identify one-step Bellman alignment as the correct abstraction for transfer in online RL and propose re-weighted targeting (RWT), an operator-level correction that retargets continuation values and compensates for transition mismatch via a change of measure. RWT reduces task mismatch to a fixed one-step correction and enables statistically sound reuse of source data. This alignment yields a two-stage RWT $Q$-learning framework that separates variance reduction from bias correction. Under RKHS function approximation, we establish regret bounds that scale with the complexity of the task shift rather than the target MDP. We further show the required density ratios admit a constructive RKHS estimator with finite-sample guarantees, and empirically validate robustness to estimated and mis-specified ratios. Empirical results in both tabular and neural network settings demonstrate consistent improvements over single-task learning and naïve pooling, highlighting Bellman alignment as a model-agnostic transfer principle for online RL.",
+    "status": "found"
+  },
+  "2601.21925": {
+    "arxiv_id": "2601.21925",
+    "title": "Localizing Speech Deepfakes Beyond Transitions via Segment-Aware Learning",
+    "authors": [
+      "Yuchen Mao",
+      "Wen Huang",
+      "Yanmin Qian"
+    ],
+    "submission_date": "2026-01-29T16:17:13Z",
+    "latest_updated": "2026-01-29T16:17:13Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.21925v1"
+    ],
+    "abstract": "Localizing partial deepfake audio, where only segments of speech are manipulated, remains challenging due to the subtle and scattered nature of these modifications. Existing approaches typically rely on frame-level predictions to identify spoofed segments, and some recent methods improve performance by concentrating on the transitions between real and fake audio. However, we observe that these models tend to over-rely on boundary artifacts while neglecting the manipulated content that follows. We argue that effective localization requires understanding the entire segments beyond just detecting transitions. Thus, we propose Segment-Aware Learning (SAL), a framework that encourages models to focus on the internal structure of segments. SAL introduces two core techniques: Segment Positional Labeling, which provides fine-grained frame supervision based on relative position within a segment; and Cross-Segment Mixing, a data augmentation method that generates diverse segment patterns. Experiments across multiple deepfake localization datasets show that SAL consistently achieves strong performance in both in-domain and out-of-domain settings, with notable gains in non-boundary regions and reduced reliance on transition artifacts. The code is available at https://github.com/SentryMao/SAL.",
+    "status": "found"
+  },
+  "2601.21926": {
+    "arxiv_id": "2601.21926",
+    "title": "Information Filtering via Variational Regularization for Robot Manipulation",
+    "authors": [
+      "Jinhao Zhang",
+      "Wenlong Xia",
+      "Yaojia Wang",
+      "Zhexuan Zhou",
+      "Huizhe Li",
+      "Yichen Lai",
+      "Haoming Song",
+      "Youmin Gong",
+      "Jie Mei"
+    ],
+    "submission_date": "2026-01-29T16:17:42Z",
+    "latest_updated": "2026-05-11T07:59:53Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 4,
+    "versions": [
+      "2601.21926v1",
+      "2601.21926v2",
+      "2601.21926v3",
+      "2601.21926v4"
+    ],
+    "abstract": "Diffusion-based visuomotor policies built on 3D visual representations have achieved strong performance in learning complex robotic skills. However, most existing methods employ an oversized denoising decoder. While increasing model capacity can improve denoising, empirical evidence suggests that it also introduces redundancy and noise in intermediate feature blocks. Crucially, we find that randomly masking backbone features in U-Net or skipping intermediate layers in DiT at inference time (without changing training) can improve performance, confirming the presence of task-irrelevant noise in intermediate features. To this end, we propose Variational Regularization (VR), a plug-and-play module that imposes a context-conditioned Gaussian over the noisy features and applies a KL-divergence regularizer, forming an adaptive information bottleneck. Extensive experiments on three simulation benchmarks, RoboTwin2.0, Adroit, and MetaWorld, show that our approach consistently improves task success rates over the baseline for both DP3-UNet and DP3-DiT, achieving new state-of-the-art results. Real-world experiments further demonstrate that our method performs well in practical deployments.",
+    "status": "found"
+  },
+  "2601.21927": {
+    "arxiv_id": "2601.21927",
+    "title": "SONIC: Segmented Optimized Nexus for Information Compression in Key-Value Caching",
+    "authors": [
+      "Hong Chen",
+      "Xiang Liu",
+      "Bo Wang",
+      "Yuxuan Fan",
+      "Yuanlin Chu",
+      "Zongluo Li",
+      "Xiaowen Chu",
+      "Xuming Hu"
+    ],
+    "submission_date": "2026-01-29T16:18:08Z",
+    "latest_updated": "2026-01-29T16:18:08Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.21927v1"
+    ],
+    "abstract": "The linear growth of Key-Value (KV) cache remains a bottleneck for multi-turn LLM deployment. Existing KV cache compression methods often fail to account for the structural properties of multi-turn dialogues, relying on heuristic eviction that risks losing critical context. We propose \\textbf{SONIC}, a learning-based framework that compresses historical segments into compact and semantically rich \\textbf{Nexus} tokens. By integrating dynamic budget training, SONIC allows flexible adaptation to varying memory constraints without retraining. Experiments show that at compression ratios of 80\\% and 50\\%, SONIC consistently outperforms baselines such as H2O and StreamingLLM on four diverse multi-turn benchmarks. Specifically, on the widely used MTBench101 benchmark, SONIC achieves an average score improvement of 35.55\\% over state-of-the-art baselines, validating its effectiveness in sustaining coherent multi-turn dialogues. Furthermore, SONIC enhances deployment efficiency, accelerating the overall inference process by 50.1\\% compared to full-context generation.",
+    "status": "found"
+  },
+  "2601.21928": {
+    "arxiv_id": "2601.21928",
+    "title": "Bound-state-free Förster resonant shielding of strongly dipolar ultracold molecules",
+    "authors": [
+      "Reuben R. W. Wang"
+    ],
+    "submission_date": "2026-01-29T16:18:17Z",
+    "latest_updated": "2026-01-29T16:18:17Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.21928v1"
+    ],
+    "abstract": "We propose a method to suppress collisional loss in strongly dipolar, rotationally excited ultracold molecules using a combination of static (dc) and microwave (ac) electric fields. By tuning two excited pair molecular rotational states into a Förster resonance with a dc field, simultaneously driving excited rotational transitions with an ac field removes all long-range bound states, allowing near complete suppression of all two- and three-body collisional loss channels. While permitting tunable dipolar and anti-dipolar interactions, this bound-state-free ac/dc scheme is not subject to photon-changing collisions that are the primary source of two-body loss in shielding with two microwave fields, used to achieve the first molecular Bose-Einstein condensate [Bigagli et al., Nature 631, 289 (2024)]. Using NaCs as a representative example for strongly dipolar molecules, close-coupling calculations are performed to show that bound-state-free shielding can achieve ratios of elastic-to-loss rates $\\gtrsim 10^{6}$ at 100 nK, with currently accessible ac and dc field generation technologies. This work opens new opportunities for realizing large, long-lived samples of strongly interacting degenerate molecular gases with tunable long-range interactions.",
+    "status": "found"
+  },
+  "2601.21929": {
+    "arxiv_id": "2601.21929",
+    "title": "LoRIF: Low-Rank Influence Functions for Scalable Training Data Attribution",
+    "authors": [
+      "Shuangqi Li",
+      "Hieu Le",
+      "Jingyi Xu",
+      "Mathieu Salzmann"
+    ],
+    "submission_date": "2026-01-29T16:18:34Z",
+    "latest_updated": "2026-05-13T19:57:11Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.21929v1",
+      "2601.21929v2"
+    ],
+    "abstract": "Training data attribution (TDA) identifies which training examples most influenced a model's prediction. Influence function methods are a theoretically grounded family of TDA methods and exploit gradients. To overcome the scalability challenge arising from gradient computation, the most popular strategy is random projection (e.g., TRAK, LoGRA). However, this still faces two bottlenecks when scaling to large training sets and high-quality attribution: \\emph{(i)} storing and loading projected per-example gradients for all $N$ training examples, where query latency is dominated by I/O; and \\emph{(ii)} forming the $D \\times D$ inverse Hessian approximation, which costs $O(D^2)$ memory. Both bottlenecks scale with the projection dimension $D$, yet increasing $D$ is necessary for attribution quality -- creating a quality--scalability tradeoff. We introduce \\textbf{LoRIF} (\\textbf{Lo}w-\\textbf{R}ank \\textbf{I}nfluence \\textbf{F}unctions), which exploits low-rank structures of gradient to address both bottlenecks. First, we store rank-$c$ factors of projected per-example gradients rather than full matrices, reducing storage and query-time I/O from $O(D)$ to $O(c\\sqrt{D})$ per layer per sample. Second, we use truncated SVD with the Woodbury identity to approximate the inverse Hessian term in an $r$-dimensional subspace, reducing memory from $O(D^2)$ to $O(Dr)$. On models from 0.1B to 70B parameters trained on datasets with millions of examples, LoRIF achieves up to 20$\\times$ storage reduction and query-time speedup compared to LoGRA, while matching or exceeding its attribution quality. LoRIF makes gradient-based TDA practical at frontier scale.",
+    "status": "found"
+  },
+  "2601.21930": {
+    "arxiv_id": "2601.21930",
+    "title": "Entropy production versus memory effects in two-level open quantum systems",
+    "authors": [
+      "Guillaume Théret",
+      "Dominique Sugny",
+      "Camille L. Latune"
+    ],
+    "submission_date": "2026-01-29T16:20:31Z",
+    "latest_updated": "2026-07-27T11:28:25Z",
+    "revised_dates": null,
+    "venue": "Phys. Rev. A 114, 012456 (2026)",
+    "latest_version": 2,
+    "versions": [
+      "2601.21930v1",
+      "2601.21930v2"
+    ],
+    "abstract": "We compare several definitions of entropy production rate introduced in the literature from a large variety of situations and motivations, and then analyze their relations with memory effects. Considering a relevant experimental example of a qubit interacting with a single bosonic mode playing the role of a finite bath, we show that all definitions of entropy production coincide at weak coupling. In a stronger coupling regime, significant discrepancies emerge between the different entropy production rates, although some similarities in the overall behaviour remain. However, surprisingly, two of these definitions --one based on local quantities of the system and the other on non-local quantities-- coincide exactly, even in the case of strong coupling. Finally, a high degree of correspondence is observed when memory effects characterized by P-divisibility are compared with the sign of all entropy production rates in the case of weak coupling. Such correspondence degrades at stronger coupling, leading us to extend the concept of entropy production to the dynamical map. We show a perfect equivalence between the sign of this enlarged concept of entropy production and P-divisibility, both numerically and analytically, in the case of phase-covariant master equations.",
+    "status": "found"
+  },
+  "2601.21931": {
+    "arxiv_id": "2601.21931",
+    "title": "Extremal conditional independence for Hüsler-Reiss distributions via modular functions",
+    "authors": [
+      "Karel Devriendt",
+      "Ignacio Echave-Sustaeta Rodríguez",
+      "Frank Röttger"
+    ],
+    "submission_date": "2026-01-29T16:22:17Z",
+    "latest_updated": "2026-01-29T16:22:17Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.21931v1"
+    ],
+    "abstract": "We study extremal conditional independence for Hüsler-Reiss distributions, which is a parametric subclass of multivariate Pareto distributions. As the main contribution, we introduce two set functions, i.e.~functions which assign a value to the distribution and each of its marginals, and show that extremal conditional independence statements can be characterized by modularity relations for these functions. For the first function, we make use of the close connection between Hüsler-Reiss and Gaussian models to introduce a multiinformation-inspired measure $m^{\\text{HR}}$ for Hüsler-Reiss distributions. For the second function, we consider an invariant $σ^2$ that is naturally associated to the Hüsler-Reiss parameterization and establish the second modularity criterion under additional positivity constraints. Together, these results provide new tools for describing extremal dependence structures in high-dimensional extreme value statistics. In addition, we study the geometry of a bounded subset of Hüsler-Reiss parameters and its relation with the Gaussian elliptope.",
+    "status": "found"
+  },
+  "2601.21932": {
+    "arxiv_id": "2601.21932",
+    "title": "Broadband Second Harmonic Generation using Fixed-Period Periodically Poled Lithium Niobate",
+    "authors": [
+      "Yongjoo Kim",
+      "Yijia Cai",
+      "Zhixin Liu"
+    ],
+    "submission_date": "2026-01-29T16:22:25Z",
+    "latest_updated": "2026-01-29T16:22:25Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.21932v1"
+    ],
+    "abstract": "Periodically poled lithium niobate (PPLN) is a widely used nonlinear optical device for second harmonic generation (SHG). Despite its wide adoption in commercial systems, its bandwidth for SHG is fundamentally limited by the quasi-phase matching condition. This can be overcome by aperiodic or chirped PPLN structures; however, such devices are typically custom-fabricated and not readily available commercially. In this study, we investigate an alternative approach to achieving broadband SHG by using a standard PPLN crystal containing multiple fixed poling periods. Broadband operation is realized by angle tuning the crystal relative to input beam in free-space. The effect of angle tuning is examined over a range of incident angles, and an 1.6x enhancement in SHG bandwidth is demonstrated. These results suggest a practical and efficient strategy for broadband SHG using standard PPLN devices.",
+    "status": "found"
+  },
+  "2601.21933": {
+    "arxiv_id": "2601.21933",
+    "title": "Just Noticeable Difference Modeling for Deep Visual Features",
+    "authors": [
+      "Rui Zhao",
+      "Wenrui Li",
+      "Lin Zhu",
+      "Yajing Zheng",
+      "Weisi Lin"
+    ],
+    "submission_date": "2026-01-29T16:22:31Z",
+    "latest_updated": "2026-01-29T16:22:31Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.21933v1"
+    ],
+    "abstract": "Deep visual features are increasingly used as the interface in vision systems, motivating the need to describe feature characteristics and control feature quality for machine perception. Just noticeable difference (JND) characterizes the maximum imperceptible distortion for images under human or machine vision. Extending it to deep visual features naturally meets the above demand by providing a task-aligned tolerance boundary in feature space, offering a practical reference for controlling feature quality under constrained resources. We propose FeatJND, a task-aligned JND formulation that predicts the maximum tolerable per-feature perturbation map while preserving downstream task performance. We propose a FeatJND estimator at standardized split points and validate it across image classification, detection, and instance segmentation. Under matched distortion strength, FeatJND-based distortions consistently preserve higher task performance than unstructured Gaussian perturbations, and attribution visualizations suggest FeatJND can suppress non-critical feature regions. As an application, we further apply FeatJND to token-wise dynamic quantization and show that FeatJND-guided step-size allocation yields clear gains over random step-size permutation and global uniform step size under the same noise budget. Our code will be released after publication.",
+    "status": "found"
+  },
+  "2601.21934": {
+    "arxiv_id": "2601.21934",
+    "title": "Motivic pieces of curves: $L$-functions and periods",
+    "authors": [
+      "Harry Spencer"
+    ],
+    "submission_date": "2026-01-29T16:23:31Z",
+    "latest_updated": "2026-01-29T16:23:31Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.21934v1"
+    ],
+    "abstract": "Given a curve $C$ over a number field $K$ equipped with the action of a finite group $G$ by $K$-automorphisms, one obtains a factorisation of $L(C,s)$ into a product of $L$-functions of `motivic pieces of curves' associated to irreducible $G$-representations. We describe an algorithm for explicitly computing values of these $L$-functions, demonstrating implementations in the cases of certain curves with actions by $C_3$, $C_4$ and $D_{10}$. We explain how this algorithm can be used to factor $L$-functions of curves with endomorphisms of Hecke type. Towards applications, we explicitly formulate and numerically verify a version of Deligne's Period Conjecture for hitherto-uninvestigated $L$-functions arising from motivic pieces of superelliptic curves.",
+    "status": "found"
+  },
+  "2601.21935": {
+    "arxiv_id": "2601.21935",
+    "title": "Belief Propagation Converges to Gaussian Distributions in Sparsely-Connected Factor Graphs",
+    "authors": [
+      "Tom Yates",
+      "Yuzhou Cheng",
+      "Ignacio Alzugaray",
+      "Danyal Akarca",
+      "Pedro A. M. Mediano",
+      "Andrew J. Davison"
+    ],
+    "submission_date": "2026-01-29T16:25:13Z",
+    "latest_updated": "2026-01-29T16:25:13Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.21935v1"
+    ],
+    "abstract": "Belief Propagation (BP) is a powerful algorithm for distributed inference in probabilistic graphical models, however it quickly becomes infeasible for practical compute and memory budgets. Many efficient, non-parametric forms of BP have been developed, but the most popular is Gaussian Belief Propagation (GBP), a variant that assumes all distributions are locally Gaussian. GBP is widely used due to its efficiency and empirically strong performance in applications like computer vision or sensor networks - even when modelling non-Gaussian problems. In this paper, we seek to provide a theoretical guarantee for when Gaussian approximations are valid in highly non-Gaussian, sparsely-connected factor graphs performing BP (common in spatial AI). We leverage the Central Limit Theorem (CLT) to prove mathematically that variables' beliefs under BP converge to a Gaussian distribution in complex, loopy factor graphs obeying our 4 key assumptions. We then confirm experimentally that variable beliefs become increasingly Gaussian after just a few BP iterations in a stereo depth estimation task.",
+    "status": "found"
+  }
+}

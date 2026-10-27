@@ -1,0 +1,409 @@
+{
+  "2511.16289": {
+    "arxiv_id": "2511.16289",
+    "title": "Medusa: Detecting and Removing Failures for Scalable Quantum Computing",
+    "authors": [
+      "Karoliina Oksanen",
+      "Quan Hoang",
+      "Alexandru Paler"
+    ],
+    "submission_date": "2025-11-20T12:10:35Z",
+    "latest_updated": "2026-07-22T20:49:49Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.16289v1",
+      "2511.16289v2"
+    ],
+    "abstract": "Quantum circuits will experience failures that lead to computational errors. We introduce Medusa, an automated compilation method for lowering a circuit's failure rate. Medusa uses flags to predict the absence of high-weight errors. Our method can numerically upper bound the failure rate of a circuit in the presence of flags, and fine tune the fault-tolerance of the flags in order to reach this bound. We assume the flags can have an increased fault-tolerance as a result of applying surface QECs to the gates interacting with them. We use circuit level depolarizing noise to evaluate the effectiveness of these flags in revealing the absence of the high-weight stabilizers. Medusa reduces the cost of quantum-error-correction (QEC) because the underlying circuit has a lower failure rate. We benchmark our approach using structured quantum circuits representative of ripple-carry adders. In particular, our flag scheme demonstrates that for adder-like circuits, the failure rate of large-scale implementations can be lowered to fit the failure rates of smaller-scale circuits. We show numerically that a slight improvement in the local fault-tolerance of the flag-qubits can lead to a reduction in the overall failure rate of the entire quantum circuit.",
+    "status": "found"
+  },
+  "2511.16290": {
+    "arxiv_id": "2511.16290",
+    "title": "Development and Testing of a Modular Large-Area Cosmic Ray Telescope Using Scintillator-Fiber Hybrid Design for Millimeter-Level Muon Tracking",
+    "authors": [
+      "Yan Niu",
+      "Anqing Wang",
+      "Xiangxiang Ren",
+      "Dong Liu",
+      "Meng Wang"
+    ],
+    "submission_date": "2025-11-20T12:12:55Z",
+    "latest_updated": "2026-05-06T08:24:10Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 4,
+    "versions": [
+      "2511.16290v1",
+      "2511.16290v2",
+      "2511.16290v3",
+      "2511.16290v4"
+    ],
+    "abstract": "Cosmic-ray muons, owing to their high penetration power and abundance, have been widely employed as a natural probe in experimental particle physics. We developed a meter-scale cosmic-ray muon telescope, consisting of two parallel super-layers (1 m $\\times$ 1 m) separated vertically by one meter. A super-layer is composed of two orthogonal detection layers, of which each consists of eighteen modules arranged in parallel and packed closely together. A module consists of a plastic scintillating bar precisely aligned and stacked on top of an underlying scintillating fiber mat in which fibers are arranged in a row of bundles. For a detection layer, each scintillator bar is coupled to a PMT while fiber bundles at the same position within all modules are coupled to a single PMT. Signals from scintillating bars and fibers are combined together to determine hit positions. With this detection scheme, the telescope can meet the requirement of spatial resolution and reduce the number of readout electronic channels. This article presents the comprehensive development of the telescope, encompassing its geometric design, data acquisition system, and performance evaluation. Experimental results show that the telescope achieves a position resolution better than 2 mm and an overall detection efficiency of $\\sim$85%. The innovative design keeps the manufacturing cost low while maintaining high spatial resolution and detection efficiency.",
+    "status": "found"
+  },
+  "2511.16291": {
+    "arxiv_id": "2511.16291",
+    "title": "Absorption effects in the expanding Universe: spectral transmittance functions of the intergalactic medium for distant sources",
+    "authors": [
+      "Anguohao Yang",
+      "Bohdan Novosyadlyj",
+      "Bohdan Melekh",
+      "Gennadii Milinevsky"
+    ],
+    "submission_date": "2025-11-20T12:13:15Z",
+    "latest_updated": "2026-09-21T12:09:10Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 5,
+    "versions": [
+      "2511.16291v1",
+      "2511.16291v2",
+      "2511.16291v3",
+      "2511.16291v4",
+      "2511.16291v5"
+    ],
+    "abstract": "We construct two self-consistent analytic approximations to the neutral hydrogen fraction, $x_{\\rm HI}(z)$, and the helium ionization fractions, $x_{\\rm HeI}(z)$, $x_{\\rm HeII}(z)$, and $x_{\\rm HeIII}(z)$, that are consistent with current constraints inferred from quasar spectra, galaxy surveys, and CMB polarization measurements. These approximations describe observationally motivated early- and late-reionization scenarios. Using these histories, we analyse the formation of broad absorption troughs in the continuum spectra of high-redshift sources over $1\\leq z_{\\rm s}\\leq15$. We assume that neutral hydrogen and helium in a homogeneous diffuse intergalactic medium reside predominantly in their ground states and absorb radiation through the Lyman-series lines and continua of HI, HeI, and HeII. We compute the wavelength-dependent optical depths for the first 39 Lyman-series lines of HI and HeII, the first 10 lines of HeI, and the corresponding continua, and use them to derive spectral transmittance functions, $T(λ;z_{\\rm s})$. As illustrative applications, we apply them to toy-model continuum spectra of starless haloes and to model spectra of a low-metallicity dwarf galaxy at different redshifts. Spectral features in sources at $5\\lesssim z_{\\rm s}\\lesssim7$ caused by intergalactic absorption are found to be particularly sensitive to the adopted hydrogen and helium ionization histories",
+    "status": "found"
+  },
+  "2511.16292": {
+    "arxiv_id": "2511.16292",
+    "title": "Distributed Agent Reasoning Across Independent Systems With Strict Data Locality",
+    "authors": [
+      "Daniel Vaughan",
+      "Kateřina Vaughan"
+    ],
+    "submission_date": "2025-11-20T12:13:20Z",
+    "latest_updated": "2025-11-20T12:13:20Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.16292v1"
+    ],
+    "abstract": "This paper presents a proof-of-concept demonstration of agent-to-agent communication across distributed systems, using only natural-language messages and without shared identifiers, structured schemas, or centralised data exchange. The prototype explores how multiple organisations (represented here as a Clinic, Insurer, and Specialist Network) can cooperate securely via pseudonymised case tokens, local data lookups, and controlled operational boundaries. The system uses Orpius as the underlying platform for multi-agent orchestration, tool execution, and privacy-preserving communication. All agents communicate through OperationRelay calls, exchanging concise natural-language summaries. Each agent operates on its own data (such as synthetic clinic records, insurance enrolment tables, and clinical guidance extracts), and none receives or reconstructs patient identity. The Clinic computes an HMAC-based pseudonymous token, the Insurer evaluates coverage rules and consults the Specialist agent, and the Specialist returns an appropriateness recommendation. The goal of this prototype is intentionally limited: to demonstrate feasibility, not to provide a clinically validated, production-ready system. No clinician review was conducted, and no evaluation beyond basic functional runs was performed. The work highlights architectural patterns, privacy considerations, and communication flows that enable distributed reasoning among specialised agents while keeping data local to each organisation. We conclude by outlining opportunities for more rigorous evaluation and future research in decentralised multi-agent systems.",
+    "status": "found"
+  },
+  "2511.16293": {
+    "arxiv_id": "2511.16293",
+    "title": "Almost-simple algebraic supergroups",
+    "authors": [
+      "S. Bouarroudj",
+      "A. N. Zubkov"
+    ],
+    "submission_date": "2025-11-20T12:14:15Z",
+    "latest_updated": "2025-11-20T12:14:15Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.16293v1"
+    ],
+    "abstract": "We describe certain almost-simple algebraic supergroups over an algebraically closed field of odd or zero characteristic. In addition to supergroups with simple Lie superalgebras from Kac's theorem, we construct new supergroups whose Lie superalgebra is either non-simple or simple but is not part of Kac's list.",
+    "status": "found"
+  },
+  "2511.16294": {
+    "arxiv_id": "2511.16294",
+    "title": "Explainable AI for Diabetic Retinopathy Detection Using Deep Learning with Attention Mechanisms and Fuzzy Logic-Based Interpretability",
+    "authors": [
+      "Abishek Karthik",
+      "Pandiyaraju V",
+      "Sreya Mynampati"
+    ],
+    "submission_date": "2025-11-20T12:17:00Z",
+    "latest_updated": "2025-11-20T12:17:00Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.16294v1"
+    ],
+    "abstract": "The task of weed detection is an essential element of precision agriculture since accurate species identification allows a farmer to selectively apply herbicides and fits into sustainable agriculture crop management. This paper proposes a hybrid deep learning framework recipe for weed detection that utilizes Convolutional Neural Networks (CNNs), Vision Transformers (ViTs), and Graph Neural Networks (GNNs) to build robustness to multiple field conditions. A Generative Adversarial Network (GAN)-based augmentation method was imposed to balance class distributions and better generalize the model. Further, a self-supervised contrastive pre-training method helps to learn more features from limited annotated data. Experimental results yield superior results with 99.33% accuracy, precision, recall, and F1-score on multi-benchmark datasets. The proposed model architecture enables local, global, and relational feature representations and offers high interpretability and adaptability. Practically, the framework allows real-time, efficient deployment of edge devices for automated weed detecting, reducing over-reliance on herbicides and providing scalable, sustainable precision-farming options.",
+    "status": "found"
+  },
+  "2511.16295": {
+    "arxiv_id": "2511.16295",
+    "title": "Genus two embedded minimal surfaces in $\\mathbb{S}^3$ with dihedral symmetry",
+    "authors": [
+      "José M. Espinar",
+      "Joaquín Pérez"
+    ],
+    "submission_date": "2025-11-20T12:18:23Z",
+    "latest_updated": "2026-08-20T09:54:17Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 4,
+    "versions": [
+      "2511.16295v1",
+      "2511.16295v2",
+      "2511.16295v3",
+      "2511.16295v4"
+    ],
+    "abstract": "We prove that the Lawson surface $ξ_{2,1}$ is the unique closed embedded minimal surface of genus $2$ in $\\mathbb{S}^3$ whose isometry group contains the dihedral group $D_4$ generated by two reflections across orthogonal totally geodesic two-spheres and a half-turn about a great circle. This weakens the full-symmetry hypotheses in previous characterizations of Lawson surfaces and leads to a substantially different geometric problem.",
+    "status": "found"
+  },
+  "2511.16296": {
+    "arxiv_id": "2511.16296",
+    "title": "Toward hyper-adaptive AI-enabled 6G networks for energy efficiency: techniques, classifications and tradeoffs",
+    "authors": [
+      "Mariem Zayene",
+      "Oussama Habachi",
+      "Gerard Chalhoub"
+    ],
+    "submission_date": "2025-11-20T12:19:24Z",
+    "latest_updated": "2025-11-20T12:19:24Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.16296v1"
+    ],
+    "abstract": "Energy efficiency is shaping up to be one of the most challenging issues for 6G networks. The reason is fairly straightforward: Networks will need to meet extreme service demands while remaining sustainable and traditional optimization techniques are too limited. With users moving, traffic swinging unpredictably and services pulling in different directions, management has to be adaptive and AI may offer a way forward. This survey looks at how well AI-based methods actually deliver on that promise. We organize the review around practical use cases. For each use case, we examine how AI techniques contribute to feedback-driven adaptability and rapid decision-making under dynamic conditions. We then evaluate them against seven central dynamic aspects that we consider unavoidable in 6G. The survey also discusses crucial tradeoffs between energy efficiency and the remaining 6G main objectives such as latency, reliability, fairness and coverage, and finally identifies gaps and future research directions.",
+    "status": "found"
+  },
+  "2511.16297": {
+    "arxiv_id": "2511.16297",
+    "title": "Optimizing Operation Recipes with Reinforcement Learning for Safe and Interpretable Control of Chemical Processes",
+    "authors": [
+      "Dean Brandner",
+      "Sergio Lucia"
+    ],
+    "submission_date": "2025-11-20T12:24:37Z",
+    "latest_updated": "2025-11-20T12:24:37Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.16297v1"
+    ],
+    "abstract": "Optimal operation of chemical processes is vital for energy, resource, and cost savings in chemical engineering. The problem of optimal operation can be tackled with reinforcement learning, but traditional reinforcement learning methods face challenges due to hard constraints related to quality and safety that must be strictly satisfied, and the large amount of required training data. Chemical processes often cannot provide sufficient experimental data, and while detailed dynamic models can be an alternative, their complexity makes it computationally intractable to generate the needed data. Optimal control methods, such as model predictive control, also struggle with the complexity of the underlying dynamic models. Consequently, many chemical processes rely on manually defined operation recipes combined with simple linear controllers, leading to suboptimal performance and limited flexibility. In this work, we propose a novel approach that leverages expert knowledge embedded in operation recipes. By using reinforcement learning to optimize the parameters of these recipes and their underlying linear controllers, we achieve an optimized operation recipe. This method requires significantly less data, handles constraints more effectively, and is more interpretable than traditional reinforcement learning methods due to the structured nature of the recipes. We demonstrate the potential of our approach through simulation results of an industrial batch polymerization reactor, showing that it can approach the performance of optimal controllers while addressing the limitations of existing methods.",
+    "status": "found"
+  },
+  "2511.16298": {
+    "arxiv_id": "2511.16298",
+    "title": "Optimizing 3D Gaussian Splattering for Mobile GPUs",
+    "authors": [
+      "Md Musfiqur Rahman Sanim",
+      "Zhihao Shu",
+      "Bahram Afsharmanesh",
+      "AmirAli Mirian",
+      "Jiexiong Guan",
+      "Wei Niu",
+      "Bin Ren",
+      "Gagan Agrawal"
+    ],
+    "submission_date": "2025-11-20T12:25:26Z",
+    "latest_updated": "2025-11-20T12:25:26Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.16298v1"
+    ],
+    "abstract": "Image-based 3D scene reconstruction, which transforms multi-view images into a structured 3D representation of the surrounding environment, is a common task across many modern applications. 3D Gaussian Splatting (3DGS) is a new paradigm to address this problem and offers considerable efficiency as compared to the previous methods. Motivated by this, and considering various benefits of mobile device deployment (data privacy, operating without internet connectivity, and potentially faster responses), this paper develops Texture3dgs, an optimized mapping of 3DGS for a mobile GPU. A critical challenge in this area turns out to be optimizing for the two-dimensional (2D) texture cache, which needs to be exploited for faster executions on mobile GPUs. As a sorting method dominates the computations in 3DGS on mobile platforms, the core of Texture3dgs is a novel sorting algorithm where the processing, data movement, and placement are highly optimized for 2D memory. The properties of this algorithm are analyzed in view of a cost model for the texture cache. In addition, we accelerate other steps of the 3DGS algorithm through improved variable layout design and other optimizations. End-to-end evaluation shows that Texture3dgs delivers up to 4.1$\\times$ and 1.7$\\times$ speedup for the sorting and overall 3D scene reconstruction, respectively -- while also reducing memory usage by up to 1.6$\\times$ -- demonstrating the effectiveness of our design for efficient mobile 3D scene reconstruction.",
+    "status": "found"
+  },
+  "2511.16299": {
+    "arxiv_id": "2511.16299",
+    "title": "Emulation Capacity between Idempotent Channels",
+    "authors": [
+      "Idris Delsol",
+      "Omar Fawzi",
+      "Li Gao",
+      "Mizanur Rahaman"
+    ],
+    "submission_date": "2025-11-20T12:27:15Z",
+    "latest_updated": "2026-10-05T17:24:56Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2511.16299v1",
+      "2511.16299v2",
+      "2511.16299v3"
+    ],
+    "abstract": "We study the optimal rates of emulation (also called interconversion) between quantum channels, in three regimes: when the encoder and the decoder are unassisted, when they share classical randomness, and when they share an unlimited amount of entanglement. When the source and the target channels are idempotent, we completely characterise these three regimes, in terms of the shape vectors of the two channels, which describe the structure of their ranges. In the unassisted and shared randomness regimes, we give a single-letter expression for the emulation capacity, show that it coincides with the zero-error emulation capacity, and prove a finite-blocklength converse which implies a strong converse. In these two regimes, shared randomness does not increase the emulation capacity, and the emulation of idempotent channels is not reversible. Moreover, we provide an efficient algorithm to approximate this capacity to arbitrary precision. When an unlimited amount of shared entanglement is allowed, we determine the minimal emulation error exactly at every finite blocklength. It is governed by a single quantity, the $\\ell_2$-norm of the shape vector, so that the emulation becomes reversible, and exact emulation is achievable with finitely many maximally entangled states. Altogether, these results draw a comprehensive picture of the task of emulating idempotent channels with each other.",
+    "status": "found"
+  },
+  "2511.16300": {
+    "arxiv_id": "2511.16300",
+    "title": "Asymptotic behavior and sharp estimates for spreading fronts in a cooperative system with free boundaries",
+    "authors": [
+      "Qian Qin",
+      "JinJing Jiao",
+      "Zhiguo Wang",
+      "Hua Nie"
+    ],
+    "submission_date": "2025-11-20T12:27:47Z",
+    "latest_updated": "2025-11-20T12:27:47Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.16300v1"
+    ],
+    "abstract": "This paper investigates the dynamics of a reaction-diffusion system with two free boundaries, modeling the invasion of two cooperative species, where the free boundaries represent expanding fronts. We first analyze the long-term behavior of the system, showing that it follows a spreading-vanishing dichotomy: the two species either spread across the entire region or eventually die out. In the case of spreading, we determine the asymptotic spreading speed of the fronts by using a semi-wave system and provide sharp estimates for the moving fronts. Additionally, we show that the solution to the system converges to the corresponding semi-wave solution as time tends to infinity. These results contribute to a deeper understanding of the long-term dynamics of cooperative species in reaction-diffusion systems with free boundaries.",
+    "status": "found"
+  },
+  "2511.16301": {
+    "arxiv_id": "2511.16301",
+    "title": "Upsample Anything: A Simple and Hard to Beat Baseline for Feature Upsampling",
+    "authors": [
+      "Minseok Seo",
+      "Mark Hamilton",
+      "Changick Kim"
+    ],
+    "submission_date": "2025-11-20T12:27:53Z",
+    "latest_updated": "2025-11-24T11:32:47Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.16301v1",
+      "2511.16301v2"
+    ],
+    "abstract": "We present \\textbf{Upsample Anything}, a lightweight test-time optimization (TTO) framework that restores low-resolution features to high-resolution, pixel-wise outputs without any training. Although Vision Foundation Models demonstrate strong generalization across diverse downstream tasks, their representations are typically downsampled by 14x/16x (e.g., ViT), which limits their direct use in pixel-level applications. Existing feature upsampling approaches depend on dataset-specific retraining or heavy implicit optimization, restricting scalability and generalization. Upsample Anything addresses these issues through a simple per-image optimization that learns an anisotropic Gaussian kernel combining spatial and range cues, effectively bridging Gaussian Splatting and Joint Bilateral Upsampling. The learned kernel acts as a universal, edge-aware operator that transfers seamlessly across architectures and modalities, enabling precise high-resolution reconstruction of features, depth, or probability maps. It runs in only $\\approx0.419 \\text{s}$ per 224x224 image and achieves state-of-the-art performance on semantic segmentation, depth estimation, and both depth and probability map upsampling. \\textbf{Project page:} \\href{https://seominseok0429.github.io/Upsample-Anything/}{https://seominseok0429.github.io/Upsample-Anything/}",
+    "status": "found"
+  },
+  "2511.16302": {
+    "arxiv_id": "2511.16302",
+    "title": "Dynamic Risk Assessment of Wildland-Urban Interface Fires",
+    "authors": [
+      "Yusheng Hu",
+      "Huaiyi Pan",
+      "Shaobo Zhong",
+      "Liying Zhang"
+    ],
+    "submission_date": "2025-11-20T12:32:17Z",
+    "latest_updated": "2025-11-21T06:38:05Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.16302v1",
+      "2511.16302v2"
+    ],
+    "abstract": "Wildland-Urban Interface (WUI) fires represent a compound disaster resulting from the interactions between natural ecosystems and human settlements, characterized by significantly dynamic evolving risks. However, most current risk assessment studies are based on static frameworks, which struggle to effectively capture the dynamic changes in risk over time. To address this issue, this paper proposes an innovative method that integrates a dynamic evaluation matrix, grey incidence analysis, and an optimization model for the dynamic risk assessment of WUI fires. This method incorporates time-series data by constructing a dynamic evaluation matrix, subsequently calculates the weighted standardized matrix for each evaluated area and its local volume matrices relative to the positive and negative ideal matrices. The dynamic differences between the evaluated areas and the ideal state are quantified by calculating the grey incidence degree, and an optimization model is established to solve for the superiority degree used for risk ranking. Research demonstrates that this method not only simplifies the computational process but also effectively captures the dynamic evolution patterns of fire risk across different areas, enabling refined risk classification. Compared to existing static methods, this framework overcomes their limitation in adequately representing risk dynamics, providing a more scientific basis for decision-making in the dynamic management and proactive prevention and control of WUI fires.",
+    "status": "found"
+  },
+  "2511.16303": {
+    "arxiv_id": "2511.16303",
+    "title": "ATLAS: Efficient Atom Rearrangement for Defect-Free Neutral-Atom Quantum Arrays Under Transport Loss",
+    "authors": [
+      "Otto Savola",
+      "Alexandru Paler"
+    ],
+    "submission_date": "2025-11-20T12:32:35Z",
+    "latest_updated": "2025-11-20T12:32:35Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.16303v1"
+    ],
+    "abstract": "Neutral-atom quantum computers encode qubits in individually trapped atoms arranged in optical lattices. Achieving defect-free atom configurations is essential for high-fidelity quantum gates and scalable error correction, yet stochastic loading and atom loss during rearrangement hinder reliable large-scale assembly. This work presents ATLAS, an open-source atom transport algorithm that efficiently converts a randomly loaded $W \\times W$ lattice into a defect-free $L \\times L$ subarray while accounting for realistic physical constraints, including finite acceleration, transfer time, and per-move loss probability. In the planning phase, optimal batches of parallel moves are computed on a lossless virtual array; during execution, these moves are replayed under probabilistic atom loss to maximize the expected number of retained atoms. Monte Carlo simulations across lattice sizes $W=10$--$100$, loading probabilities $p_{\\mathrm{occ}}=0.5$--$0.9$, and loss rates $p_{\\mathrm{loss}}=0$--$0.05$ demonstrate fill rates above $99\\%$ within six iterations and over $90\\%$ atom retention at low loss. The algorithm achieves sublinear move scaling ($\\propto M^{0.55}$) and linear growth of required initial size with target dimension, outperforming prior methods in robustness and scalability -- offering a practical path toward larger neutral-atom quantum arrays.",
+    "status": "found"
+  },
+  "2511.16304": {
+    "arxiv_id": "2511.16304",
+    "title": "Herglotz-type $f(R,T)$ gravity",
+    "authors": [
+      "Marek Wazny",
+      "Lehel Csillag",
+      "Miguel A. S. Pinto",
+      "Tiberiu Harko"
+    ],
+    "submission_date": "2025-11-20T12:35:07Z",
+    "latest_updated": "2026-03-19T17:12:53Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.16304v1",
+      "2511.16304v2"
+    ],
+    "abstract": "The non-conservation of the energy-momentum tensor in $f(R,T)$ gravity can be interpreted as an effective manifestation of dissipation. Motivated by this, we propose a new formulation of $f(R,T)$ gravity based on the Herglotz variational principle, which extends the usual {Hamilton} variational principle to dissipative systems by allowing the Lagrangian to depend explicitly on the action. The resulting gravitational field equations extend those of $f(R,T)$ gravity by including Herglotz contributions. In the Newtonian limit, these contributions modify the gravitational potential, allowing us to constrain the Herglotz vector through Mercury's perihelion precession and the relativistic light deflection. The Herglotz corrections lead to a scaling law consistent with observations from the Cassini spacecraft. Examining two representative cosmological models, the Herglotz vector effectively reduces to a single function that, under suitable conditions, can play the role of a cosmological constant, providing an alternative mechanism for the Universe's accelerated expansion. Within the Herglotz variational approach, the linear $f(R,T)=R+αT$ model, previously ruled out in the standard formulation due to its fixed deceleration parameter, becomes consistent with observations {for a certain choice of the Herglotz vector.",
+    "status": "found"
+  },
+  "2511.16305": {
+    "arxiv_id": "2511.16305",
+    "title": "Full flexibility of isometric immersions of metrics with low Hölder regularity in Poznyak theorem's dimension",
+    "authors": [
+      "Marta Lewicka"
+    ],
+    "submission_date": "2025-11-20T12:35:14Z",
+    "latest_updated": "2026-08-14T15:15:15Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2511.16305v1",
+      "2511.16305v2",
+      "2511.16305v3"
+    ],
+    "abstract": "A classical result by Poznyak asserts that any smooth $2$-dimensional Riemannian metric $g$, posed on the closure of a simply connected domain $ω\\subset\\mathbb{R}^2$, has a smooth isometric immersion into $\\mathbb{R}^4$. Using techniques of convex integration, we prove that for any $2$-dimensional $g\\in{C}^{r,β}$, an isometric immersion of regularity ${C}^{1,α}(\\barω,\\mathbb{R}^4)$ for any $α<\\min\\{\\frac{r+β}{2},1\\}$, may be found arbitrarily close to any short immersion. The fact that this result's regularity reaches ${C}^{1,1-}$ for $g\\in{C}^2$, which is referred to as \"full flexibility\", should be contrasted with: (i) the regularity ${C}^{1,1/3-}$ achieved by Cao, Hirsch and Inauen for isometric immersions into $\\mathbb{R}^{3}$ and the lack of flexibility (rigidity) of such isometric immersions with regularity ${C}^{1, 2/3+}$ proved by Borisov and then by Conti, de Lellis and Szekelyhidi; (ii) the regularity ${C}^{1,1-}$ obtained byt Källen for isometric immersions into higher codimensional space $\\mathbb{R}^{8}$; and (iii) the regularity ${C}^{1,\\frac{1}{1+d(d+1)/k}-}$ proved by the author in the general case of $d$-dimensional metrics and $(d+k)$-dimensional immersions for the closely related Monge-Ampère system.",
+    "status": "found"
+  },
+  "2511.16306": {
+    "arxiv_id": "2511.16306",
+    "title": "InEKFormer: A Hybrid State Estimator for Humanoid Robots",
+    "authors": [
+      "Lasse Hohmeyer",
+      "Mihaela Popescu",
+      "Ivan Bergonzani",
+      "Dennis Mronga",
+      "Frank Kirchner"
+    ],
+    "submission_date": "2025-11-20T12:35:56Z",
+    "latest_updated": "2025-11-20T12:35:56Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.16306v1"
+    ],
+    "abstract": "Humanoid robots have great potential for a wide range of applications, including industrial and domestic use, healthcare, and search and rescue missions. However, bipedal locomotion in different environments is still a challenge when it comes to performing stable and dynamic movements. This is where state estimation plays a crucial role, providing fast and accurate feedback of the robot's floating base state to the motion controller. Although classical state estimation methods such as Kalman filters are widely used in robotics, they require expert knowledge to fine-tune the noise parameters. Due to recent advances in the field of machine learning, deep learning methods are increasingly used for state estimation tasks. In this work, we propose the InEKFormer, a novel hybrid state estimation method that incorporates an invariant extended Kalman filter (InEKF) and a Transformer network. We compare our method with the InEKF and the KalmanNet approaches on datasets obtained from the humanoid robot RH5. The results indicate the potential of Transformers in humanoid state estimation, but also highlight the need for robust autoregressive training in these high-dimensional problems.",
+    "status": "found"
+  },
+  "2511.16307": {
+    "arxiv_id": "2511.16307",
+    "title": "Stationary and switching synchronization states in an ensemble of four nonidentical phase oscillators with repulsive couplings",
+    "authors": [
+      "A. V. Bobrova",
+      "G. V. Osipov"
+    ],
+    "submission_date": "2025-11-20T12:36:31Z",
+    "latest_updated": "2026-10-22T12:07:22Z",
+    "revised_dates": null,
+    "venue": "A.V. Bobrova, G.V. Osipov. Stationary and switching synchronization states in an ensemble of four nonidentical phase oscillators with repulsive couplings // Chaos. 2026. Vol. 36, issue 10. Art. no. 103128",
+    "latest_version": 3,
+    "versions": [
+      "2511.16307v1",
+      "2511.16307v2",
+      "2511.16307v3"
+    ],
+    "abstract": "This study investigates the collective dynamics (phase synchronization, instantaneous frequencies synchronization and mean frequencies synchronization) in an ensemble of four nonidentical phase oscillators with repulsive coupling. We use the Kuramoto-Sakaguchi system of ordinary differential equations as our mathematical model. Depending on the coupling strength in the presence of a small mismatch of the natural frequencies, all possible states of frequency synchronization were found: 4:0 (global), 3:1, 2:2, 2:1:1 (cluster). It is shown that these states can be classified into two main types depending on the evolution of the instantaneous frequencies: stationary (4:0 and 2:2), characterized by constancy of phase mismatch and instantaneous frequencies, and switching (3:1 and 2:1:1), in which metastable processes with periodic switching of synchronous states are observed: for different time intervals, different types of locking of instantaneous frequencies of oscillator pairs and different types of phase mismatch were observed. A novel effect of collective dynamics - self-organized emergence of slow-fast behavior in the ensemble of elements which, if decoupled, exhibit uniform temporal evolution was demonstrated. The rather long time intervals during which the distances between some oscillators stay nearly constant alternate with short epochs of rapid evolution, involving the break up of clusters and their subsequent reassembly. For the 4:0 and 2:2 states, analytical expressions for the synchronization frequencies were derived. The presence of bistability has been revealed depending on the initial conditions of different synchronization states at the same parameters: sets of individual frequencies and value of coupling strength.",
+    "status": "found"
+  },
+  "2511.16308": {
+    "arxiv_id": "2511.16308",
+    "title": "Surface elasticity effect on Plateau-Rayleigh instability in soft solids",
+    "authors": [
+      "Pingping Zhu",
+      "Dun Li",
+      "Xiang Yu",
+      "Zheng Zhong"
+    ],
+    "submission_date": "2025-11-20T12:36:45Z",
+    "latest_updated": "2025-11-20T12:36:45Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.16308v1"
+    ],
+    "abstract": "Soft solids exhibit instability and develop surface undulations due to surface effects, a phenomenon known as the elastic Plateau-Rayleigh (PR) instability, driven by the interplay of surface and bulk elasticity. Previous studies on the PR instability in solids mainly focused on the case of constant surface tension and ignored the effect of surface elasticity. It has been shown by experiments that the surface effects in solid-like materials depend both on the surface tension and surface elasticity, but little is known about the role of the latter in the elasto-capillary instabilities in soft solids. Here, we conduct an in-depth exploration of the effect of surface elasticity on the PR instability in an elastic cylinder by coupling theoretical and numerical methods. We derive an asymptotically consistent one-dimensional (1d) model to characterize the PR instability from three-dimensional (3d) nonlinear bulk-surface elasticity, and develop a new finite-element (FE) scheme for simulating 3d deformations of the bulk-surface system. The initiation and evolution of the PR instability are obtained analytically with the aid of the 1d model. The 1d results are further validated by the 3d FE simulations. By synthesizing the 1d analytic solutions and 3d numerical results, the effects of surface elasticity, surface compressibility, surface tension, axial force and geometrical size on the PR instability are thoroughly elucidated. Our results can be applied to calibrate surface parameters for solid-like materials and develop constitutive models for elastic surfaces.",
+    "status": "found"
+  }
+}

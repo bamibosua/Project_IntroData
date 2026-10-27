@@ -1,0 +1,410 @@
+{
+  "2609.14254": {
+    "arxiv_id": "2609.14254",
+    "title": "Embracing Flow Unsteadiness: A High-Throughput Learning Platform Enables Vortex-Exploiting Bioinspired Propulsion",
+    "authors": [
+      "Fei Han",
+      "Xinyu Cui",
+      "Zhipeng Wang",
+      "Ning Yang",
+      "Hang Xu",
+      "Haifeng Zhang",
+      "Zhongming Hu",
+      "Jun Wang",
+      "Junfeng Du",
+      "Dixia Fan"
+    ],
+    "submission_date": "2026-09-13T03:11:55Z",
+    "latest_updated": "2026-09-13T03:11:55Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14254v1"
+    ],
+    "abstract": "Biological swimmers and flyers exploit unsteady vortices for propulsion, whereas engineered vehicles usually suppress them as disturbances. Learning such flow exploitation in machines is difficult because real-fluid interaction data are scarce and unstructured exploration is unstable in high-dimensional, history-dependent flows. Here we present REEF, a co-designed physical-learning framework that integrates SHOAL, an eight-channel high-throughput array for real fluid--structure interaction, with V-STAR, a staged algorithm that converts these interactions into policies through imitation, offline internalization, and online adaptation. Across lift-based, drag-based, and momentum-jet propulsors, REEF expands the attainable force envelope to more than twice that of parameterized search. Particle image velocimetry shows that these gains arise from coordinated vortex formation, growth, and force projection, rather than refinement of a fixed motion-to-force mapping. Force-trained policies transfer zero-shot to free-moving robots whose body motion changes the surrounding flow, suggesting that REEF learns transferable wake-coupling principles for embodied propulsion in unsteady fluids.",
+    "status": "found"
+  },
+  "2609.14255": {
+    "arxiv_id": "2609.14255",
+    "title": "Towards Anticipatory Databases Through Shared Data and Workload Semantics",
+    "authors": [
+      "Farzaneh Zirak",
+      "Kasper Overgaard Mortensen",
+      "Farhana Choudhury",
+      "Renata Borovica-Gajic"
+    ],
+    "submission_date": "2026-09-13T03:12:43Z",
+    "latest_updated": "2026-09-13T03:12:43Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14255v1"
+    ],
+    "abstract": "Database management systems increasingly serve dynamic and exploratory workloads, yet many of their decisions still rely on low-level signals such as recency, frequency, and address locality. These signals capture how data was accessed, but not what is being examined or how an analytical focus evolves. We argue for treating workload semantics as a first-class control signal for anticipatory decision making. Central to this view, we introduce semantic locality and semantic trajectories, which capture relationships among nearby queries and how those relationships evolve across a session. We propose a framework that represents semantic context at the data, query, and session levels, models its evolution over time, and translates it into task-specific utility estimates. We instantiate this framework in semantic prefetching and semantic cache eviction, which share a semantic layer to make two separate decisions. Prefetching uses semantic trajectories to anticipate future accesses beyond what address-based locality can capture, while eviction uses semantic relevance to inform block replacement. These systems provide initial evidence that shared semantic context can support multiple DBMS components. We further outline how this principle can extend to other decisions and data systems, and discuss key challenges in representation, cost, adaptation, and evaluation.",
+    "status": "found"
+  },
+  "2609.14256": {
+    "arxiv_id": "2609.14256",
+    "title": "Document Topic Alignment Metrics for Evaluating Topic Models of Short-Text Public Health Communications on Social Media",
+    "authors": [
+      "Wangjiaxuan Xin",
+      "Shuhua Yin",
+      "Yaorong Ge",
+      "Shi Chen"
+    ],
+    "submission_date": "2026-09-13T03:22:29Z",
+    "latest_updated": "2026-09-13T03:22:29Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14256v1"
+    ],
+    "abstract": "Topic models are widely used to analyze public health-related social media short texts, yet their evaluation remains dominated by metrics that focus entirely on generated topics alone. There is a lack of metrics that quantitatively assess whether assigned topics meaningfully represent the corresponding short-text posts. We propose Document-Topic Alignment metrics (DoTA), an assignment-aware evaluation framework comprising metrics that measure semantic alignment between documents (posts) and their assigned topics. We also introduce margin-based and discriminative variants that capture topic assignment confidence and distinguishability. We evaluate DoTA across five topic models on three public health-related social media datasets from X and compare DoTA metrics with conventional topic-based metrics. Results show that DoTA provides complementary evaluation cues and aligns meaningfully with human evaluations. These findings establish the need for assignment-aware evaluation and demonstrate that the addition of DoTA enables a more comprehensive and practically meaningful evaluation for assessing short-text topic modeling performance.",
+    "status": "found"
+  },
+  "2609.14257": {
+    "arxiv_id": "2609.14257",
+    "title": "DenMark: Robust Semantic Watermarking for Diffusion Language Models",
+    "authors": [
+      "Tianhao Ma",
+      "Weihao Xuan",
+      "Dong-Dong Wu",
+      "Farshid Nooshi",
+      "Takashi Ishida",
+      "Gang Niu",
+      "Naoto Yokoya",
+      "Masashi Sugiyama"
+    ],
+    "submission_date": "2026-09-13T03:37:48Z",
+    "latest_updated": "2026-10-11T17:40:23Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2609.14257v1",
+      "2609.14257v2"
+    ],
+    "abstract": "Semantic text watermarks encode signals in meaning rather than surface token choices, offering robustness to paraphrasing and other semantic-preserving edits. Existing semantic watermarking methods are primarily designed for autoregressive language models (ARLMs), where completed candidate units can be generated and scored before generation proceeds. This paradigm does not naturally extend to diffusion language models (DLMs), where semantic units remain incomplete during intermediate denoising steps and tokens may be updated in flexible orders. We propose DenMark, a semantic watermarking framework that injects key-dependent signals directly into the DLM denoising process. DenMark partitions the output into fixed token regions and uses temporary rollouts as semantic lookahead: conditional completions estimate the eventual semantics of an incomplete region, enabling DenMark to select local updates with higher estimated semantic watermark scores. Repeating this procedure across denoising steps progressively accumulates watermark evidence in the final output. For detection, DenMark uses calibrated scanning over candidate unit sizes to remain robust to boundary shifts introduced by semantic attacks. Across four DLMs, three datasets, and four semantic attacks, DenMark gives the strongest overall robustness and achieves the best TPR at each reported operating point in 46 of the 48 backbone-dataset-attack combinations. Overall, DenMark provides an effective semantic watermark for DLMs. Code is available at https://github.com/TianhaoMa5/DenoMark.",
+    "status": "found"
+  },
+  "2609.14258": {
+    "arxiv_id": "2609.14258",
+    "title": "SPARK: Representation-Level KV Memory Alignment for Safer Vision-Language Models",
+    "authors": [
+      "Mohd Azfar",
+      "Izhar Dad Khan"
+    ],
+    "submission_date": "2026-09-13T03:40:15Z",
+    "latest_updated": "2026-09-13T03:40:15Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14258v1"
+    ],
+    "abstract": "Vision-language models (VLMs) remain vulnerable to jailbreaks that distribute harmful intent across text and images, making unimodal safety mechanisms insufficient. We investigate whether this vulnerability can be mitigated directly in the multimodal key-value (KV) memory formed during prefill, without modifying model parameters at inference time. We introduce SPARK, a two-stage framework for targeted KV-memory repair. Stage 1 uses a disposable diagnostic adapter to identify harm-associated directions in multimodal key and value representations. Stage 2 projects out these directions, learns a lightweight residual repair, and anchors repaired keys with an image-structural prior to preserve visual grounding. Rather than applying the intervention uniformly, SPARK mixes repaired and original memory using a head-wise coefficient g_h* determined by intervention-relevant subspace energy E_h, requiring no explicit harm classifier at inference. Across LLaVA-OneVision-7B, Chameleon-7B, Qwen2-VL-7B, and InternVL2-4B, SPARK reduces multimodal attack success while preserving general capability. On LLaVA-OneVision-7B, image-only jailbreak attack success falls to 4.7%, while MMMU remains within 0.6 points of the undefended model (47.8 vs. 48.4) with near-baseline language quality. On MM-SafetyBench, attack success decreases from 39.2% to 12.4%. Even under white-box adaptive joint prompt-image attacks, attack success is limited to 20.3%, compared with 54.6% for the undefended model. These results suggest that multimodal jailbreak behavior can be substantially mitigated by selectively repairing intervention-relevant KV subspaces at prefill, particularly when harmful evidence is carried by the visual modality.",
+    "status": "found"
+  },
+  "2609.14259": {
+    "arxiv_id": "2609.14259",
+    "title": "PepC-Global: A Basin-Tuned Probabilistic Tropical Cyclone Model with Enhanced Out-of-Sample Skill and Climate-Sensitive Over-Land Decay",
+    "authors": [
+      "Cong Gao",
+      "Ning Lin"
+    ],
+    "submission_date": "2026-09-13T03:40:43Z",
+    "latest_updated": "2026-10-12T17:19:54Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2609.14259v1",
+      "2609.14259v2"
+    ],
+    "abstract": "We present PepC-Global, a global version of the Princeton environment-dependent probabilistic tropical cyclone (PepC) framework that uniquely implements basin-wise tuning within a single unified tropical cyclone climatology model. PepC-Global represents tropical cyclone climatology as a coupled stochastic process linking genesis, track, and intensity conditioned on large-scale environmental predictors. Each of the genesis, track, and intensity modules outperforms widely used linear models in out-of-sample tests. The intensity module also incorporates an environment-dependent over-land decay model, offering greater sensitivity to climate change signals than conventional fixed decay rate approaches. Systematic evaluation against observations demonstrates that PepC-Global closely reproduces genesis basin-wise frequency, seasonal cycles, interannual variability, and spatial distributions. The model also accurately captures basin-wise track patterns, along-coastline landfall frequency, and intensity statistics including lifetime maximum intensity and landfall intensity distributions. PepC-Global provides a versatile tool for probabilistic tropical cyclone hazard and risk assessment and a practical framework for investigating changes in tropical cyclone activity across future climate scenarios.",
+    "status": "found"
+  },
+  "2609.14260": {
+    "arxiv_id": "2609.14260",
+    "title": "Recursive Self-Improvement LLM Agents for Inverter Dynamic Model Identification",
+    "authors": [
+      "Jie Feng",
+      "Xiaoyang Wang",
+      "Xin Chen",
+      "Yuanyuan Shi"
+    ],
+    "submission_date": "2026-09-13T03:42:24Z",
+    "latest_updated": "2026-09-13T03:42:24Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14260v1"
+    ],
+    "abstract": "This is a position paper. We demonstrate that recursive self-improvement (RSI) large language model (LLM) agents are a natural search engine for dynamic model identification of inverter-based resources (IBRs) whose internal controls are often proprietary and hidden from grid operators. White-box models provide physical transparency but require vendor disclosure; black-box models avoid this requirement but sacrifice interpretability; and existing grey-box approaches, including sparse and symbolic regression, are poorly suited to discovering feedback control architectures or incorporating control-engineering priors. Our position is that this gap can be alleviated by (1) restricting the search space to a typed vocabulary of standard control modules, including PI controllers, phase-locked loops (PLLs), low-pass filters, etc., composed under block-diagram grammar rules, and (2) using an RSI LLM agent to perform program search over candidate block-diagram models, guided by measured frequency-domain admittance data at the point of common coupling (PCC), while fitting the free parameters of each candidate by nonlinear least squares. We instantiate this position by adapting ThetaEvolve, an open-source program-evolution framework supporting in-context evolution and test-time learning, to inverter model discovery. In a proof-of-concept study on a grid-following (GFL) inverter benchmark, the RSI loop reduces the normalized root mean square error (NRMSE) of a naive open-loop model from 0.470 to 0.0435 and identifies a 15-module closed-loop structure that closely resembles the hidden ground-truth GFL controller.",
+    "status": "found"
+  },
+  "2609.14261": {
+    "arxiv_id": "2609.14261",
+    "title": "VGFM: Expressive Robot Policies via Dense Value Guidance in Flow Matching",
+    "authors": [
+      "Prajwal Koirala",
+      "Mark Campbell"
+    ],
+    "submission_date": "2026-09-13T03:50:52Z",
+    "latest_updated": "2026-09-13T03:50:52Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14261v1"
+    ],
+    "abstract": "Recent robot learning paradigms increasingly rely on large offline datasets of robotic interactions to train control policies. Expressive generative models enable rich and multimodal action representations, expanding the capability of this paradigm for complex robotic control. However, policy improvement with multi-step generative actors remains challenging. In offline reinforcement learning (RL), incorporating value-based objectives along generative trajectories often introduces substantial training complexity, including backpropagation through time (BPTT), auxiliary architectures, or distillation losses. We propose Value-Guided Flow Matching (VGFM), a scalable offline RL framework that enables dense value-guided shaping within a flow-based policy while avoiding BPTT and additional algorithmic overhead. VGFM parameterizes the policy as a conditional flow-matching model in action (x-prediction) space, ensuring that each intermediate flow step produces a valid robot action that can be directly evaluated by a standard offline RL critic. This design allows value guidance to be applied at randomly sampled flow times without differentiating through the entire generative trajectory, while preserving inference-time flexibility by varying the discretization of the underlying flow ODE without retraining. Evaluated on robotic locomotion and manipulation tasks in OGBench, VGFM achieves strong performance across a wide range of tasks under rigorous evaluation protocols. With minimal hyperparameter tuning, these results demonstrate that VGFM provides a simple, scalable, and effective approach for expressive policy learning in long-horizon, goal-oriented robotic control.",
+    "status": "found"
+  },
+  "2609.14262": {
+    "arxiv_id": "2609.14262",
+    "title": "Bayesian optimization with kernel ensembles and disagreement-based acquisition for source localization and acoustic inversion",
+    "authors": [
+      "Heng Zhang",
+      "Haotian Xiang",
+      "Florian Meyer",
+      "Qin Lu"
+    ],
+    "submission_date": "2026-09-13T03:52:00Z",
+    "latest_updated": "2026-09-13T03:52:00Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14262v1"
+    ],
+    "abstract": "Joint source localization and geoacoustic inversion requires optimizing an objective built from an expensive normal mode propagation model. Bayesian optimization (BO) with a Gaussian process (GP) surrogate can obtain accurate parameter estimates within a limited number of forward model evaluations, but its performance depends on the choice of kernel family. With few observations in a seven-dimensional search space, no single kernel can be expected to perform consistently well across individual inversions. To reduce this dependence, we use a weighted ensemble of GPs with different kernel families, allowing the surrogate to adapt to the observed objective without committing to one kernel in advance. The ensemble is combined with an optimum-conditioned acquisition function that determines where the expensive objective should be evaluated next. Experiments on simulated and measured SWellEx-96 data show that the resulting method achieves the lowest mean final objective among the considered BO strategies and reduces parameter estimation error on most coordinates. Ablation results further show that the ensemble provides robustness to kernel choice, while the acquisition function accounts for most of the optimization gain.",
+    "status": "found"
+  },
+  "2609.14263": {
+    "arxiv_id": "2609.14263",
+    "title": "Very Credible Auction",
+    "authors": [
+      "Thanawat Sornwanee"
+    ],
+    "submission_date": "2026-09-13T03:52:06Z",
+    "latest_updated": "2026-09-13T03:52:06Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14263v1"
+    ],
+    "abstract": "We introduce a notion and motivation for very credible auctions. This is a strengthening in the commitment in the credible auctions setting, making it more suitable for a modern digital applications.",
+    "status": "found"
+  },
+  "2609.14264": {
+    "arxiv_id": "2609.14264",
+    "title": "Exploring the dynamics of the Coma galaxy cluster by mapping its X-ray emission line profiles with XRISM",
+    "authors": [
+      "Kosei Sakai",
+      "Kazuhiro Nakazawa",
+      "Maxim Markevitch",
+      "Dominique Eckert",
+      "Yuichiro Ezoe",
+      "Yuto Ichinohe",
+      "Richard Kelley",
+      "Richard Mushotzky",
+      "Nobuhiro Okabe",
+      "Yuki Omiya",
+      "Naomi Ota",
+      "Cicely Potter",
+      "Andrew Szymkowiak",
+      "Shunsuke Torii",
+      "Nhut Truong",
+      "Ayşegül Tümer",
+      "Yuusuke Uchida",
+      "Dan Wik",
+      "Irina Zhuravleva",
+      "John ZuHone"
+    ],
+    "submission_date": "2026-09-13T03:52:10Z",
+    "latest_updated": "2026-09-21T02:40:06Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2609.14264v1",
+      "2609.14264v2",
+      "2609.14264v3"
+    ],
+    "abstract": "The intracluster medium (ICM) in merging galaxy clusters exhibits turbulence and bulk flows. Unraveling these components is crucial not only for elucidating the geometry of the cluster mergers, but also for understanding the physics of magnetic field amplification and relativistic particle acceleration. XRISM/Resolve data for two $3'\\times3'$ fields in the core of the Coma cluster reveales that the ICM in the central field moves with $Δcz = -430$~km~s$^{-1}$ relative to the cluster galaxy average, while that in the southern field moves with $Δcz = -730$~km~s$^{-1}$ (see \\cite{2025ApJ...985L..20X}, hereinafter ``Paper I''). In this paper, we perform a more detailed analysis of these data sets to search for non-Gaussian features in the Fe-K line complex profiles. In the spectra from the northwest (NW) quadrant of the central field, in addition to the main and redshifted ICM components ($Δcz = -40$ km s$^{-1}$) reported in Paper I, we find evidence of another, blueshifted component, moving with $Δcz = -1250$ km s$^{-1}$. For a systematic search for other significant velocity components, we perform a bias-free 3 eV step multi-component fit to the Resolve full-array spectra from the central and southern fields. This search uncovers another redshifted component in the southern field, moving with $Δcz \\sim +1230$ km s$^{-1}$. We estimate the energy densities of the ICM turbulence and bulk motion to be similar to each other and several times greater than the energy density of the cluster's $B\\sim 5~μ$G magnetic field.",
+    "status": "found"
+  },
+  "2609.14265": {
+    "arxiv_id": "2609.14265",
+    "title": "Surjectivity of Finite Rank-Capped Enots-Wolley Sequences",
+    "authors": [
+      "Nathan Myles Nichols"
+    ],
+    "submission_date": "2026-09-13T03:54:58Z",
+    "latest_updated": "2026-09-13T03:54:58Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14265v1"
+    ],
+    "abstract": "For each fixed integer $K\\ge2$, we consider the Enots--Wolley sequence in which every term after the initial $1,2$ is required to have between two and $K$ distinct prime divisors. We prove that every integer satisfying this restriction occurs. If an exact prime support $T$ were selected only finitely often, then after a finite cutoff the terms meeting $T$ would form short episodes, and every full term would force an earlier proper term at comparable numerical height. The case $|T|=K$ is then ruled out directly. In the remaining case $|T|<K$, at a record proper value $H$, greediness forces every unblocked rank-$K$ integer below $H$ containing exactly one prime of $T$ to have occurred earlier. Fixed-order Landau estimates show that this proper population has order $H(\\log\\log H)^{K-2}/\\log H$, while the entire possible full population on the same scale has strictly smaller logarithmic order. This contradiction proves surjectivity. The theorem concerns each fixed rank cap and does not settle surjectivity of the unrestricted Enots--Wolley sequence.",
+    "status": "found"
+  },
+  "2609.14266": {
+    "arxiv_id": "2609.14266",
+    "title": "Sharp Norms from Finite Structure: Graph Matrices and Structured Chaoses",
+    "authors": [
+      "Huibo Xu",
+      "Shi Fu",
+      "Youming Qiao",
+      "Dacheng Tao"
+    ],
+    "submission_date": "2026-09-13T03:57:15Z",
+    "latest_updated": "2026-09-13T03:57:15Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14266v1"
+    ],
+    "abstract": "Graph matrices encode dependencies in random matrices built from shared random variables and arise in spectral algorithms, sum-of-squares (SoS), and high-dimensional statistics. We determine how finite graph structure controls their sharp spectral growth. For every fixed simple graph shape in the dense Rademacher model, including overlapping or empty matrix boundaries, we prove $\\mathbb E\\|M_α\\|=Θ_α(n^{(v+h-s)/2}(\\log n)^{a_*/2})$, where $v$ counts vertices, $h$ isolated summation vertices, $s$ the minimum boundary-separator size, and $a_*$ maximizes an active-component count over minimum separators. Thus two finite cut optimizations determine both the polynomial and logarithmic exponents. The formula closes the polylogarithmic gap in separator bounds, and an infinite family with identical coarse parameters but different norms shows that the logarithmic exponent records genuinely new structure. The proof controls all defect layers in growing trace moments by converting label loss into separator excess; conditional flattening and synchronized fluctuations yield matching lower bounds. We extend the analysis to specified independent-factor chaoses, local weights, unequal dimensions, bounded asymmetric noise, Gaussian inputs, and fixed-degree Hermite inputs. Applications include degree-four clique SoS feasibility for $9\\le k\\le c\\sqrt n$ without an asymptotic logarithmic loss, and Gaussian random tensor networks: deviation thresholds, sharp expected scales, entropy estimates, and, for connected loopless equal-dimensional networks, convergence of the rescaled largest output eigenvalue to the exact right edge of the limiting law. These results connect finite structure to sharp growth scales, and additional algebraic and spectral structure to full feasibility and exact limiting constants.",
+    "status": "found"
+  },
+  "2609.14267": {
+    "arxiv_id": "2609.14267",
+    "title": "Public Opinion as an Option: Leveraging Prediction Markets to Hedge Exposure to Spot Crypto Volatility",
+    "authors": [
+      "Prashanth Bhaskara",
+      "Aadit Jerfy"
+    ],
+    "submission_date": "2026-09-13T04:01:16Z",
+    "latest_updated": "2026-09-13T04:01:16Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14267v1"
+    ],
+    "abstract": "This paper proposes an investment strategy through resource allocation into Kalshi Crypto Event Contracts in order to effectively hedge exposure to spot asset volatility. Using Bitcoin as a proof of concept, we treat corresponding Kalshi markets on the asset's future price as option contracts, and through construction of different portfolio allocations present a framework for which event contracts can be effectively utilized by retail investors in order to control risk framework without reducing underlying exposure to spot volatility. We showcase this information through analysis of three separate Kalshi event contracts, all relating to a different underlying market regime (i.e bullish, bearish, flat), and provide a comprehensive risk profile for each regime. Results show that a dynamic Kalshi/Bitcoin hedging strategy outperforms more simplistic portfolios across all regimes, supporting our initial hypothesis. We discuss further considerations which can erode profits in the future (i.e. fees), and provide direction for future research.",
+    "status": "found"
+  },
+  "2609.14268": {
+    "arxiv_id": "2609.14268",
+    "title": "Learning Communication-Conditioned Generative Policies for Decentralized Multi-Agent Collision Avoidance",
+    "authors": [
+      "Prajwal Koirala",
+      "Mark Campbell"
+    ],
+    "submission_date": "2026-09-13T04:04:01Z",
+    "latest_updated": "2026-09-13T04:04:01Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14268v1"
+    ],
+    "abstract": "In this work, we propose a decentralized communication-conditioned generative framework for multi-agent collision avoidance. Agents generate short-horizon action sequences using a flow-matching policy trained from privileged offline demonstrations with access to global state. The demonstrations do not include explicit communication signals; instead, agents learn to exchange and aggregate latent messages that encode interaction-relevant intent under partial observability. This formulation supports flexible inference at test time, where unconditioned generation corresponds to independent behavior and communication-conditioned generation enables coordinated interaction without centralized planning. The resulting policies operate in a fully decentralized manner at execution time, relying only on local observations and learned messages. Combined with a receding-horizon inference scheme, the proposed approach enables efficient single-step inference of short-horizon action sequences and degrades gracefully under communication dropouts. Extensive simulation results demonstrate near-expert collision avoidance performance and strong generalization to denser, unseen multi-agent scenarios, along with zero-shot transfer to real-robot experiments.",
+    "status": "found"
+  },
+  "2609.14269": {
+    "arxiv_id": "2609.14269",
+    "title": "Direct and Indirect Physics-Informed Neural Networks for Dirichlet Boundary Control of Semilinear Parabolic Equations: A Conditional Error Analysis",
+    "authors": [
+      "Nguyen Thanh Quang",
+      "Ta Thi Thanh Mai",
+      "Bui Xuan Dieu"
+    ],
+    "submission_date": "2026-09-13T04:09:00Z",
+    "latest_updated": "2026-09-13T04:09:00Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14269v1"
+    ],
+    "abstract": "We study physics-informed neural networks (PINNs) for the Dirichlet boundary control of a semilinear parabolic equation with Tikhonov regularization. Two approaches are considered. A direct PINN parameterizes the state and control by separate networks and minimizes a penalized form of the tracking objective. An indirect PINN instead represents the state, adjoint, and control by unconstrained networks trained jointly to satisfy the first-order optimality system, with the state-control coupling and the homogeneous adjoint boundary and terminal conditions imposed as soft penalty terms rather than enforced architecturally. For the indirect formulation we develop an error estimation framework that decomposes the total error into approximation, optimization, quadrature, and soft boundary/terminal-constraint contributions. Under standing assumptions on optimal-solution regularity and compatibility, network approximability, uniform Hölder control of the soft-constraint residuals, and a local neighborhood of the reference optimality-system solution, we derive a quantitative linearized stability estimate and a conditional local nonlinear residual-to-error estimate, and construct a computable residual indicator with a conditional reliability bound. Numerical experiments on two manufactured test problems - a cubic reactiondiffusion equation and a linear equation with a nontrivial boundary control and adjoint - illustrate the behavior of the direct and indirect formulations.",
+    "status": "found"
+  },
+  "2609.14270": {
+    "arxiv_id": "2609.14270",
+    "title": "On Nilpotent and Hypocentral Quandle Homomorphisms",
+    "authors": [
+      "Yuki Imamura",
+      "Tomoki Yoshida"
+    ],
+    "submission_date": "2026-09-13T04:09:24Z",
+    "latest_updated": "2026-09-13T04:09:24Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14270v1"
+    ],
+    "abstract": "We introduce a notion of nilpotency for surjective quandle homomorphisms, which relativizes the nilpotency of quandles recently defined by Darné. A surjective homomorphism is called nilpotent if its relative inner automorphism group is nilpotent relative to the inner automorphism group of the source. We show that this condition can equally be described through the relative transvection group and the relative adjoint group, and that it is equivalent to being a finite composite of covering homomorphisms. Extending the relative lower central series to transfinite ordinals, we then introduce hypocentral homomorphisms and characterize them as the surjections that are right orthogonal to the strongly connected homomorphisms. As a consequence, the strongly connected and the hypocentral homomorphisms form an orthogonal factorization system for the surjections in the category of quandles. Finally, we also introduce reduced and operator-reduced homomorphisms, which relativize reduced quandles, and give sufficient conditions for such a homomorphism to be nilpotent.",
+    "status": "found"
+  },
+  "2609.14271": {
+    "arxiv_id": "2609.14271",
+    "title": "Probe Sets for Nonlinear Kalman Filtering: Multi-Center Gains and Covariance Recalibration",
+    "authors": [
+      "Shida Jiang",
+      "Shengyu Tao",
+      "Scott Moura"
+    ],
+    "submission_date": "2026-09-13T04:12:54Z",
+    "latest_updated": "2026-10-14T00:37:18Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2609.14271v1",
+      "2609.14271v2"
+    ],
+    "abstract": "Kalman filters (KFs) choose the gain as the product of the state-measurement cross-covariance and the inverse of the innovation covariance. In nonlinear systems, the predictive distribution generally changes shape, and these covariances require approximation. Conventional nonlinear KFs approximate them around a single center, the predicted state. They can produce inaccurate gains and overconfident covariance estimates when one local approximation does not represent the measurement geometry across the uncertainty region. To address this issue, we introduce probe sets, small covariance-scaled collections of states at which the filter repeats its local approximation. We then select the gain that minimizes the average covariance reported by these local approximations. The same construction is used in our previously proposed covariance recalibration step to improve covariance consistency. The construction applies to different KF variants without requiring a specific approximation rule. For quadratic measurements, we derive conditions under which probing yields lower normalized true error variance than the corresponding single-center gain when prediction uncertainty is sufficiently understated. We apply the framework to four KF variants and compare the resulting filters with multiple baselines across 300 randomized setups for each of two systems. The results show that probing preserves typical accuracy while substantially reducing covariance inconsistency and the rare large-error trajectories that dominate the root mean square of per-run errors. The code is available at https://github.com/Shida-Jiang/Probe_KF.",
+    "status": "found"
+  },
+  "2609.14272": {
+    "arxiv_id": "2609.14272",
+    "title": "Quantum ensembles as waves on state space",
+    "authors": [
+      "Yu-Xuan Zhang",
+      "Leong-Chuan Kwek",
+      "Jing-Ling Chen"
+    ],
+    "submission_date": "2026-09-13T04:13:04Z",
+    "latest_updated": "2026-10-11T13:10:39Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2609.14272v1",
+      "2609.14272v2"
+    ],
+    "abstract": "A quantum ensemble contains preparation weights that are lost in its average density operator. We show how optimal decisions read these weights as a wave on projective state space. Varying the input prior sweeps a surface of fixed Born overlap through the ensemble; the resulting response propagates according to the geometry of pure states and reconstructs their distribution in every finite dimension. Conditional preparations can fix this wave through contact, selecting the ensemble at a steering boundary. Positive propagation gives exact biased-qubit solutions and explicit parent measurements for noisy channels. When measurement records are combined, their state directions are averaged and the wave acquires a source whose growth measures the lost discrimination advantage. Preparation, inference and noise can thus be understood as operations on the same recoverable distribution, linking quantum correlations to measurement resolution.",
+    "status": "found"
+  },
+  "2609.14273": {
+    "arxiv_id": "2609.14273",
+    "title": "Disorder transfer for the critical SK overlap law",
+    "authors": [
+      "Yan Ru Pei"
+    ],
+    "submission_date": "2026-09-13T04:14:48Z",
+    "latest_updated": "2026-09-13T04:14:48Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14273v1"
+    ],
+    "abstract": "We give a quantitative disorder comparison for the zero-field Sherrington--Kirkpatrick model at inverse temperature one. For any fixed number of replicas, replacing Gaussian couplings by independent couplings from a bounded symmetric variance-one law changes a bounded replica expectation by at most a constant times the Gaussian overlap second moment plus $N^{-1}$. A multiplicative comparison for nonnegative observables controls the tails. The proof uses Talagrand's positive-observable estimates and Yu-Ting Chen's fourth-order replica cancellation. Assuming the Gaussian critical overlap limit stated by Du and Huang, we obtain the same limit for the random quenched overlap measure in the iterated Wasserstein-2 topology. No separate moment assumption is needed for this transfer. Their additional exponential moment bound gives convergence of the rescaled spin-glass susceptibility in every finite Wasserstein distance. The coupling class includes fair signs, uniform disorder, and signs thinned at any fixed positive density.",
+    "status": "found"
+  }
+}

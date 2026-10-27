@@ -1,0 +1,391 @@
+{
+  "2608.13967": {
+    "arxiv_id": "2608.13967",
+    "title": "SAFE: Scene-Aware Feature Modulation for Color Constancy with Learned Color Space in Pure-Color Scenes",
+    "authors": [
+      "Yuan-Kang Lee",
+      "Kuan-Lin Chen",
+      "Chih-Heng Chang",
+      "Jian-Jiun Ding"
+    ],
+    "submission_date": "2026-08-14T05:31:13Z",
+    "latest_updated": "2026-08-14T05:31:13Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13967v1"
+    ],
+    "abstract": "Color constancy on pure-color scenes is challenging: when most pixels share a narrow band of hues, every chromaticity-based cue collapses to a single point and standard estimators become ambiguous. We propose a compact framework that couples two innovations: (i) SAFE, a Scene-Aware FeaturE modulation network that organizes illumination cues into a structured four-token representation, which is then selectively reweighted based on scene complexity features; (ii) the Learned Color Space (LCS), a scene-dependent chromaticity normalization that directly addresses the chromaticity collapse problem for pure-color scenes. Experiment results show that SAFE consistently improves performance in pure-color scenes. Compared to the best-performing baseline in each metric, it reduces the mean angular error by 10%, the best-25% error by 20%, and the worst-25% error by 5.8%.",
+    "status": "found"
+  },
+  "2608.13968": {
+    "arxiv_id": "2608.13968",
+    "title": "Nonparametric Schrödinger Bridge Time Series Generator: Algorithm, Convergence Analysis and Applications",
+    "authors": [
+      "Daili Sheng",
+      "Minghui Song",
+      "Hui Sun"
+    ],
+    "submission_date": "2026-08-14T05:31:33Z",
+    "latest_updated": "2026-08-14T05:31:33Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13968v1"
+    ],
+    "abstract": "We conduct a convergence analysis for the Schrödinger Bridge Time Series (SBTS) data generator. Starting from a regularized formulation in which the data ensemble is mixed with a standard multivariate Gaussian distribution with a prescribed probability, we prove that the Euler-Maruyama discretization converges to the mixed target distribution with half-order convergence rate, provided that the ensemble size and kernel bandwidth are chosen appropriately. We further show that the regularized distribution converges to the original target distribution as the mixing probability tends to zero. The analysis simultaneously accounts for the ensemble approximation error, kernel approximation error, and time-discretization error, and therefore provides a full distributional convergence result for the SBTS generator. Empirically, we further examine the flexibility of the method by replacing the Wiener reference measure with the path measure induced by a more general SDE. The numerical experiments show that the schemes based on both the original Wiener reference measure and the SDE-induced reference measure achieve comparable performance, demonstrating the robustness and stability of the SBTS framework.",
+    "status": "found"
+  },
+  "2608.13969": {
+    "arxiv_id": "2608.13969",
+    "title": "PPOM: Marginalizing Patch-Grid Phase for CLIP-Based Generalizable Vision-Language Prompt Tuning",
+    "authors": [
+      "Liang Wang",
+      "Haoyang Li",
+      "Chao Wang",
+      "Guodong Long",
+      "Jing Jiang",
+      "Yan Peng"
+    ],
+    "submission_date": "2026-08-14T05:31:43Z",
+    "latest_updated": "2026-08-14T05:31:43Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13969v1"
+    ],
+    "abstract": "Prompt tuning adapts CLIP-based vision-language models with few trainable parameters, yet its predictions remain sensitive to the spatial sampling imposed by a frozen vision transformer. In particular, non-overlapping patch tokenization makes predictions depend on the alignment (phase) between image and the patch lattice. To reduce prediction sensitivity to patch-grid alignment, we introduce Patch-Phase Orbit Marginalization (PPOM), a training-free inference operator that treats phase shift as a nuisance variable. Given a patch stride, PPOM evaluates the identity view and reflection-padded translations, pairs opposite shifts into horizontal, vertical, and diagonal antithetic families, and assigns equal mass to these families and the identity prediction to avoid view-count bias during phase integration. In summary, PPOM provides a deterministic interface between prompt adaptation and patch-grid sensitivity. Across multiple prompt-learning hosts, PPOM improves host performance without re-training.",
+    "status": "found"
+  },
+  "2608.13970": {
+    "arxiv_id": "2608.13970",
+    "title": "CavityRank: Zero-Extra-Byte Residual Routing for Cuckoo Filters",
+    "authors": [
+      "Yongjie Guan"
+    ],
+    "submission_date": "2026-08-14T05:31:51Z",
+    "latest_updated": "2026-08-14T05:31:51Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13970v1"
+    ],
+    "abstract": "Near capacity, a cuckoo filter may reject an insertion even though a legal placement still exists: the table remains structurally feasible, but a bounded policy fails to find an augmenting path. Random kick-out keeps each step cheap but leaves no persistent direction; breadth-first search recovers direction by expanding a frontier and maintaining table-scaled state. CavityRank exploits a resource already present in four-slot packed buckets. Lookup observes only the fingerprint multiset, so query-equivalent lane orders can encode two comparison bits without widening the 64-bit bucket or changing the two-bucket query. The bits form a four-level ordinal residual rank. Insertion follows a minimum-rank edge and re-encodes each modified bucket from its outgoing edges after relocation, propagating the rank actually realized by the packed word. An exact capacity-four orientation oracle separates structural infeasibility from bounded-search loss. In a paired 4,096-bucket XOR16 ladder, CR2 closes 86.47% of Random CF's oracle gap and CavityRank leaves 1.39% of that original gap. A canonical-tie CR2-versus-CavityRank ablation isolates the second implicit bit, which closes 89.95% and 90.69% of CR2's residual gap; the corresponding closures at 65,536 buckets are 83.95% and 84.27%. A separate packed implementation study at 64 MiB and 97.75% load records 42.53 logical reads per insertion, versus 62.67 for explicit labels and 355.74 for depth-10 BFS, with zero extra bytes per bucket and no table-scaled workspace. CavityRank therefore occupies a practical design point between unguided eviction and frontier search.",
+    "status": "found"
+  },
+  "2608.13971": {
+    "arxiv_id": "2608.13971",
+    "title": "Interval Estimation of the Common Shape Parameter and Coefficient of Variation of Several Weibull Populations under Progressive Censoring",
+    "authors": [
+      "Bankitdor M. Nongrum",
+      "Adarsha Kumar Jena"
+    ],
+    "submission_date": "2026-08-14T05:31:58Z",
+    "latest_updated": "2026-08-14T05:31:58Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13971v1"
+    ],
+    "abstract": "The Weibull distribution is one of the most flexible continuous probability distributions used to model various failure rates and skewed data in reliability engineering, industry, weather studies and cancer studies. It is a common scenario in statistical inference that several Weibull populations share the same shape parameter, which also implies that they have the same coefficient of variation. While the inferential study of the common shape parameter is often considered for complete samples, the presence of censored data requires a separate investigation that has not received enough attention in the existing literature. Therefore, the focus of this article is on a comparative study of interval estimators for the common shape parameter and the common coefficient of variation under progressive type-II censoring using frequentist methods based on large-sample theory, variance estimates recovery, generalized pivots, and Bayesian inference. An optimal censoring scheme is also proposed to enhance the robustness of interval estimation. Numerical data analyses using a simulation study and a real carbon fiber strength data example are carried out for comparison, and the results recommend the intervals based on Bayesian and variance estimates recovery methods for their satisfactory performance.",
+    "status": "found"
+  },
+  "2608.13972": {
+    "arxiv_id": "2608.13972",
+    "title": "Horospherically convex optimization for fractional subspace packing and its applications",
+    "authors": [
+      "Hiroshi Hirai"
+    ],
+    "submission_date": "2026-08-14T05:32:26Z",
+    "latest_updated": "2026-08-14T05:32:26Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13972v1"
+    ],
+    "abstract": "In this paper, we address a semi-infinite LP relaxation of the vector-subspace packing problem. This is a higher-dimensional generalization of the fractional linear matroid parity problem and is closely related to Brascamp-Lieb polytopes. We show that the dual of this LP can be formulated as ``linear programming on a Euclidean building,\" namely, the problem of minimizing a Busemann function over an intersection of horoballs. This provides a natural example of horospherically convex optimization, recently introduced by Goodwin et al. (2026) and Criscitiello and Kim (2025). By applying the incremental Busemann subgradient method, we obtain an additive FPTAS for the problem. As applications, we obtain a new and simpler polynomial-time algorithm for fractional linear matroid parity, and new algorithms for the membership problem of Brascamp-Lieb polytopes.",
+    "status": "found"
+  },
+  "2608.13973": {
+    "arxiv_id": "2608.13973",
+    "title": "Rethinking Auxiliary Modalities in Multimodal Zero-shot Anomaly Detection: From Semantic Fusion to Conditional Modulation",
+    "authors": [
+      "Peng Wu",
+      "Xin Ge",
+      "Yujia Sun",
+      "Guansong Pang"
+    ],
+    "submission_date": "2026-08-14T05:33:45Z",
+    "latest_updated": "2026-08-14T05:33:45Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13973v1"
+    ],
+    "abstract": "Recent foundation model-based methods have endowed RGB images with strong zero-shot anomaly detection (ZSAD) through vision-language pretraining. However, RGB observations alone remain limited in perceiving anomalies dominated by geometric deformation, depth variation, or subtle surface changes. Auxiliary modalities can provide complementary structural information, but existing multimodal methods typically fuse them directly into a shared semantic space, which may disturb the text-aligned anomaly semantics established by RGB foundation models and often requires modality-specific architectures. To address this issue, we propose a plug-and-play auxiliary-conditioned enhancement framework for zero-shot anomaly detection. Instead of reconstructing a joint multimodal anomaly semantic space, our framework preserves the original RGB image-text anomaly matching pathway and uses auxiliary observations as conditional signals for RGB feature refinement, allowing auxiliary modalities to seamlessly enhance existing RGB-based zero-shot anomaly detectors. Specifically, a lightweight meta-learning module takes global RGB and auxiliary representations as input and generates sample-adaptive low-rank residual updates to determine how RGB features should be refined. We further construct uncertainty-aware spatial modulation from the initial RGB anomaly response and auxiliary reliability, which determines where local residual updates are strengthened or suppressed. This global-to-local conditional modulation enables selective multimodal enhancement while preserving the original RGB anomaly semantics. Extensive experiments on MVTec 3D-AD and Eyecandies demonstrate that our framework consistently improves multiple popular RGB-based zero-shot anomaly detectors, achieving state-of-the-art performance for multimodal zero-shot anomaly detection.",
+    "status": "found"
+  },
+  "2608.13974": {
+    "arxiv_id": "2608.13974",
+    "title": "ProFocus: Interpreting Affective Experience in Artistic Images with Progressive Visual Focusing",
+    "authors": [
+      "Zhiyan Zhang",
+      "Zicheng Yan",
+      "Jianqi Chen",
+      "Peipei Song",
+      "Shanshan Wang",
+      "Xun Yang"
+    ],
+    "submission_date": "2026-08-14T05:34:11Z",
+    "latest_updated": "2026-08-14T05:34:11Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13974v1"
+    ],
+    "abstract": "Interpreting the emotional responses triggered by images is central to achieving emotional intelligence. Compared with natural images, visual art is intentionally created to elicit emotional responses from its viewers through abstract concepts and visual metaphors, making affective interpretation particularly challenging. However, most existing methods rely on general-purpose visual embeddings (e.g., CLIP), failing to capture the nuanced cues underlying artistic emotion. To address this gap, we propose \\textbf{ProFocus}, a novel framework that models affective experience in artistic images via progressive visual focusing. The key idea is to model visual representation learning inspired by a hierarchical cognitive theory of human aesthetic appreciation. Technically, ProFocus contains two core components: a Hierarchical Art Critic (HAC) and a Progressive Hint Fusion (PHF) module. HAC leverages multimodal large language models to generate structured linguistic priors at three cognitive levels--atmospheric style, narrative subjects, and concrete details--thereby translating artistic perception into coherent semantic guidance. Building upon these priors, PHF departs from conventional cross-modal fusion by sequentially injecting the hierarchical hints into visual features, enabling a progressive focusing process that mirrors human perception. This design allows the model to capture subtle affective cues and produce more faithful explanations. Extensive experiments on the ArtEmis v1.0 and v2.0 datasets demonstrate that ProFocus consistently outperforms state-of-the-art methods in both emotion recognition and affective explanation. Project page: https://github.com/Zhang-Zhiyan/ProFocus.",
+    "status": "found"
+  },
+  "2608.13975": {
+    "arxiv_id": "2608.13975",
+    "title": "Neural decoders for subsystem many-hypercube codes",
+    "authors": [
+      "Ryota Nakai",
+      "Hayato Goto"
+    ],
+    "submission_date": "2026-08-14T05:35:11Z",
+    "latest_updated": "2026-08-14T05:35:11Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13975v1"
+    ],
+    "abstract": "To maximize the potential of quantum error-correcting codes, it is essential to develop high-performance decoders. The subsystem many-hypercube (MHC) codes have been developed to achieve both high encoding rates and low-weight syndrome-measurements, but the introduction of gauge degrees of freedom makes decoding more challenging. In this work, we develop neural-network-based decoders for the subsystem MHC codes in a circuit-level noise model. We demonstrate that even the gauge-measurement information can be utilized for decoding by carefully arranging the syndrome-measurement sequence, improving the decoding performance. We further show that recurrent neural decoders outperform simple fully connected neural decoders, and can decode syndrome-measurement sequences longer than those used during training.",
+    "status": "found"
+  },
+  "2608.13976": {
+    "arxiv_id": "2608.13976",
+    "title": "Boundary Harnack principle for diffusion with jumps on metric measure spaces",
+    "authors": [
+      "Zhen-Qing Chen",
+      "Jie-Ming Wang"
+    ],
+    "submission_date": "2026-08-14T05:36:30Z",
+    "latest_updated": "2026-08-14T05:36:30Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13976v1"
+    ],
+    "abstract": "A non-scale invariant BHP on any open set is obtained for a large class of discontinuous Hunt processes on metric measure spaces that are in weak duality with another Hunt process under suitable conditions in terms of estimates of exit distributions from open sets, and bounds on Green functions and the comparability of the jump density function. These conditions are easy to verify in concrete cases. Several examples are given to illustrate the main results and the new contributions of this paper. Our result in particular establishes the BHP on any open set for any Hunt process associated with a regular symmetric Dirichlet form on a metric measure space having both the strongly local term and the pure-jump term that admits a two-sided heat kernel estimates of the mixture of (sub-)Gaussian and stable-like form, as well as for a wide class of non-symmetric diffusion processes with jumps on $\\mathbb R^d.$",
+    "status": "found"
+  },
+  "2608.13977": {
+    "arxiv_id": "2608.13977",
+    "title": "PhysTrackX: Open-Source Software for Kinematics Tracking for the Physics Laboratory",
+    "authors": [
+      "Isam Abdullah Balghari",
+      "Muhammad Sabieh Anwar"
+    ],
+    "submission_date": "2026-08-14T05:36:46Z",
+    "latest_updated": "2026-08-14T05:36:46Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13977v1"
+    ],
+    "abstract": "Video analysis software is a staple of the modern undergraduate physics laboratory, enabling students to extract quantitative kinematic data from real-world phenomena. In this paper, we introduce PhysTrackX, a modern, open-source video analysis framework designed to minimize cognitive load and maximize pedagogical value. Built with a streamlined graphical interface, PhysTrackX features a comprehensive set of functionalities including video trimming, spatial calibration, and coordinate system definition with robust, machine learning based tracking. Furthermore, it introduces an integrated optical character recognition (OCR) module for synchronizing kinematic motion with external digital sensor displays, an interactive geometry plugin for in-situ spatial measurements, and a data management tool. In this article, we introduce the software and its functionality through some case studies.",
+    "status": "found"
+  },
+  "2608.13978": {
+    "arxiv_id": "2608.13978",
+    "title": "Pure braid groups are RFRS",
+    "authors": [
+      "Xiaolei Wu",
+      "Shengkui Ye"
+    ],
+    "submission_date": "2026-08-14T05:37:39Z",
+    "latest_updated": "2026-08-14T05:37:39Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13978v1"
+    ],
+    "abstract": "Agol in his 2014 ICM proceedings article \\cite[Question 11]{Agol14} asks whether braid groups are (virtually) RFRS. We answer this positively by showing that pure braid groups are RFRS. As a consequence, several families of Artin groups are virtually RFRS, including those of type $A_n$ (the braid groups), $B_n=C_n$, $\\widetilde A_n$, and $\\widetilde C_n$. Our results also provide evidence toward the problem of whether braid groups, and more generally Artin groups, are virtually special; see \\cite[Problem 9.4]{HagWi10}, \\cite[Problem 13.4]{Wise14}.",
+    "status": "found"
+  },
+  "2608.13979": {
+    "arxiv_id": "2608.13979",
+    "title": "Systemic Risk in Financial Networks Revisited: Debt Dilution as a Backdoor Bail-in",
+    "authors": [
+      "Jason Roderick Donaldson",
+      "Giorgia Piacentino",
+      "Xiaobo Yu"
+    ],
+    "submission_date": "2026-08-14T05:39:50Z",
+    "latest_updated": "2026-08-14T05:39:50Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13979v1"
+    ],
+    "abstract": "We develop a model of interbank networks with random liquidity shocks. Networks of dilutable debt---e.g., long-term, unsecured---facilitate efficient liquidity transfers: Shocked banks pledge interbank claims as collateral for new senior debt, diluting existing debt. Unlike with non-dilutable debt, indebtedness and connectedness are sources of stability, not fragility. Dilution is thus a ``backdoor bail-in'' that reallocates losses absent a resolution authority, trigger security, or ex post renegotiation. We uncover a class of networks, ``exponential networks,'' that implement optimal contingent transfers via plain debt. Yet exponential networks are not pairwise stable, whereas some core--periphery networks are, rationalizing observed interbank structures and their under-insurance against crises.",
+    "status": "found"
+  },
+  "2608.13980": {
+    "arxiv_id": "2608.13980",
+    "title": "FIRM: Fine-Grained Intra-Token Representation of Masks for Remote Sensing Reasoning Segmentation",
+    "authors": [
+      "Weidong Tang",
+      "Kaiyu Li",
+      "Yikai Wang",
+      "Yanan Wu",
+      "Haotian Gan",
+      "Shihong Wang",
+      "Xiangyong Cao"
+    ],
+    "submission_date": "2026-08-14T05:40:36Z",
+    "latest_updated": "2026-08-14T05:40:36Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13980v1"
+    ],
+    "abstract": "Reasoning segmentation requires multimodal large language models (MLLMs) to translate implicit instructions into precise pixel-level masks. MLLMs encode an image as visual tokens, each of which merges a group of image patches. In remote sensing images, small targets, thin structures, and adjacent instances can occupy different parts of the same visual token. Assigning a single binary mask label to such a token loses its internal spatial structure, causing nearby targets to merge and object boundaries to become coarse. To bridge this representational gap, we introduce FIRM, a Fine-grained Intra-token Representation of Masks. For each visual token, FIRM predicts a mask code that specifies an $r\\times r$ binary sub-cell pattern rather than a single foreground/background label. Given a target identified by the MLLM, the complete grid of mask codes is predicted in one mask pass. Fixed lookup converts the predicted codes into a discrete sub-cell mask, while marginalizing the code distribution yields a soft structural field. To further recover fine-grained boundaries within each sub-cell, we introduce a lightweight continuous renderer that refines this field using pre-merge visual features and image details. Across five reasoning and referring segmentation benchmarks on satellite and UAV images, FIRM achieves leading results, including $70.5/80.5$ gIoU/cIoU on LaSeRS and a $3.0$-point average gain on EarthReason. These results demonstrate the value of explicitly representing intra-token mask patterns for fine-grained MLLM segmentation.",
+    "status": "found"
+  },
+  "2608.13981": {
+    "arxiv_id": "2608.13981",
+    "title": "Structural Leakage in Graph Encryption: Attacks and Defenses",
+    "authors": [
+      "Hua Shen",
+      "Renzhi Chen",
+      "Ge Wu",
+      "Willy Susilo",
+      "Jing Chen",
+      "Mingwu Zhang"
+    ],
+    "submission_date": "2026-08-14T05:44:29Z",
+    "latest_updated": "2026-08-14T05:44:29Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13981v1"
+    ],
+    "abstract": "Graph encryption schemes (GES) enable secure outsourcing of graph data while supporting efficient queries. This report provides a comprehensive analysis of structural leakage in GES for single-pair shortest path (SPSP) queries, integrating findings from two recent works. First, we analyze PathGES, a scheme designed to resist query recovery attacks through heavy-light decomposition (HLD) and canonical fragment encoding. Our analysis reveals that PathGES suffers from significant imbalances in HLD decomposition, with over 99% of token-path mappings being one-to-one on real-world datasets, enabling both the Falzon-Paterson attack and side-channel inference of path lengths. Second, we present Fragment Tree attack that exploits these structural weaknesses to recover query contents, achieving up to 10.24% exact recovery on sparse graphs. Third, we introduce BlindGES, an enhanced scheme incorporating a Merge-and-Divide mechanism and two-level multimap index that reduces one-to-one mappings to below 20%, cuts setup time by 50%, reduces storage overhead by 32%, and limits path length leakage to under 1%. This report systematically presents attack methodologies, defense mechanisms, security proofs, and experimental evaluations on seven real-world datasets.",
+    "status": "found"
+  },
+  "2608.13982": {
+    "arxiv_id": "2608.13982",
+    "title": "XAI-Guided Conservative Decentralized Execution for Offline Multi-Agent Network Slicing",
+    "authors": [
+      "Eslam Eldeeb",
+      "Hatim Chergui",
+      "Merouane Debbah"
+    ],
+    "submission_date": "2026-08-14T05:54:04Z",
+    "latest_updated": "2026-08-14T05:54:04Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13982v1"
+    ],
+    "abstract": "The recent advances toward sixth-generation (6G) and beyond-6G networks have accelerated the need for intelligent resource management mechanisms capable of supporting heterogeneous services under shared infrastructures in network slicing. However, resource allocation in network slicing naturally forms a resource-coupled cooperative optimization problem with competing slice demands. Slices compete for limited resources to minimize individual latencies while coordinating to avoid conflicts and underutilization. Although multi-agent reinforcement learning (MARL) has shown promising performance in such settings, existing online formulations remain costly, unsafe, and difficult to deploy due to their reliance on environmental interactions and communication among agents. In this work, we present explainable artificial intelligence (XAI)-guided conservative decentralized execution (X-CODE). X-CODE is an explainable offline MARL that operates offline without environmental interaction, nor inter-agent communication. It exploits explainability-aware reward shaping to modify the relative preference among joint offline transitions during centralized training to improve decentralized resource-allocation behavior. In deployment, the agents operate independently without signaling exchange among the agents. Simulation results demonstrate that the proposed approach achieves zero observed resource-conflict events in the evaluated test episodes while minimizing per-slice latencies. Moreover, the proposed framework exhibits lower signaling overhead and reduces effective inference latency by 88 % under the considered communication-delay model compared to the online baselines. Source codes and datasets are available through: https://github.com/Eslam211/xcode-ran-slicing.",
+    "status": "found"
+  },
+  "2608.13983": {
+    "arxiv_id": "2608.13983",
+    "title": "Weighted Equitability and Matroid-Constrained Discrepancy",
+    "authors": [
+      "Kristóf Bérczi",
+      "Siyue Liu",
+      "Victor Reis",
+      "Jakub Tarnawski"
+    ],
+    "submission_date": "2026-08-14T05:56:14Z",
+    "latest_updated": "2026-08-14T05:56:14Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13983v1"
+    ],
+    "abstract": "We prove weighted matroid equitability. Let $M=(E,\\mathcal{I})$ be a matroid whose ground set can be partitioned into $k$ bases, and assign a nonnegative weight to every element. Then $E$ has a partition into $k$ bases such that the weights of any two bases differ by at most the largest element weight. We present two proofs based on the localized exchange theorem of Akrami, Liu, Raj, and Végh. The first is existential, while the second is constructive and leads to a strongly polynomial-time algorithm. As applications, we obtain an additive guarantee for matroid-constrained makespan minimization for identical machines and a strongly polynomial-time algorithm for finding an EF1 allocation under a matroid constraint and identical additive valuations. We further generalize the Beck--Fiala framework in discrepancy theory to settings with matroid constraints. Given a nonnegative matrix of column sparsity $Δ$, we show that a fractional basis can be rounded to a basis of no larger cost while preserving every row sum within additive error $2Δ$ times the largest matrix entry. Motivated by the $2$-sparse prefix Beck--Fiala conjecture, we formulate a conjecture on prefix-constrained matroid bases and prove a discrepancy bound $O(\\log n)$. Finally, we give a counterexample to the weighted carpooling conjecture, thereby also disproving a conjecture by Morell and Skutella on single-source unsplittable flows with two-sided discrepancy bounds.",
+    "status": "found"
+  },
+  "2608.13984": {
+    "arxiv_id": "2608.13984",
+    "title": "Multi-quantum-channel mediated tunable single-photon skyrmions from metasurfaces",
+    "authors": [
+      "Yan Wang",
+      "Zhenyu Guo",
+      "Minggui Liang",
+      "Shuangchun Wen",
+      "Yijie Shen",
+      "Hailu Luo"
+    ],
+    "submission_date": "2026-08-14T05:56:49Z",
+    "latest_updated": "2026-08-14T05:56:49Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13984v1"
+    ],
+    "abstract": "Quantum optical skyrmions, as topologically robust quantum information carriers, hold transformative potential for resilient high-dimensional quantum information networks. However, their practical exploitation was still restricted to a single quantum channel, which precludes the multiplexing essential for practical high-capacity quantum networks. Here, we utilize a metasurface to achieve multi-channel quantum state distribution of the polarization-entangled photon pairs, inducing a two-photon bunching effect in both the spin and spatial dimensions with compact flat optics. At the spatial bunching port, controlled manipulation of the spin-orbit interaction enables the generation of a tunable single-photon skyrmion pair. In contrast to any prior skyrmion generation, the single-photon skyrmions are mediated and topologically controlled by quantum measurement in multiple channels. Concurrently, during the amplitude and phase modulation process, both the skyrmion localization and the texture helicity can be precisely customized. The proposed tunable single-photon skyromions offer multidimensional controllability and topological stability provide a viable path toward noise-resilient high-dimensional quantum information processing.",
+    "status": "found"
+  },
+  "2608.13985": {
+    "arxiv_id": "2608.13985",
+    "title": "Standard-Compliant Neuromorphic Integrated Sensing and Communications Aided by an Intelligent Reflecting Surface",
+    "authors": [
+      "Jiho Park",
+      "Jiechen Chen",
+      "Joonhyuk Kang",
+      "Osvaldo Simeone"
+    ],
+    "submission_date": "2026-08-14T06:02:29Z",
+    "latest_updated": "2026-08-14T06:02:29Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13985v1"
+    ],
+    "abstract": "Neuromorphic computing enables event-driven, low-power inference and is therefore an attractive technology for jointly carrying out communication, sensing, and processing at resource-constrained wireless devices. Impulse radio ultra-wideband (IR-UWB) signaling, which is standardized in the IEEE 802.15.4 family and widely deployed for ranging and short-range communication, is naturally matched to neuromorphic processing, since both operate through sparse temporal events, or spikes. In this context, this paper studies a standard-compliant neuromorphic integrated sensing and communications (N-ISAC) system in which a single spiking neural network (SNN) receiver jointly demodulates digital data and detects a passive radar target directly from a common IEEE 802.15.4z high-rate-pulse-repetition-frequency (HRP) UWB waveform. Unlike prior N-ISAC work, which assumed a basic pulse-position-modulation interface and a simplified multipath channel, we consider the full standardized physical layer together with a realistic ray-traced channel aided by a reconfigurable intelligent surface (RIS). The model accounts for the frequency-selective response of a metamaterial-based RIS, which disperses the wideband IR-UWB pulses and can degrade both communication and sensing. Numerical experiments quantify the impact of RIS frequency selectivity on UWB ISAC and characterize the trade-off between ISAC performance and receiver computation energy.",
+    "status": "found"
+  },
+  "2608.13986": {
+    "arxiv_id": "2608.13986",
+    "title": "Coherence, charity and triangulation in statistical modelling",
+    "authors": [
+      "David J. T. Sumpter"
+    ],
+    "submission_date": "2026-08-14T06:03:32Z",
+    "latest_updated": "2026-08-14T06:03:32Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13986v1"
+    ],
+    "abstract": "Bayesian statistics rests on a few familiar distinctions: frequentist vs. Bayesian, objective versus subjective probability, a model versus the data it is fitted to, a prior versus a posterior. Here, I use Donald Davidson's \"third dogma of empiricism\" to critique such distinctions in terms of scheme/content dualisms. With a single running example -- estimating how often a football (soccer) team scores -- I argue that a degree of belief is in itself objective, that model and data are better seen as parts of one belief system than as different kinds of things, and that Bayes' theorem describes relations within that system rather than data updating a model from outside. What matters instead is how belief systems are built, checked and rebuilt. To this end, I use Davidson's constructive programme of radical interpretation to suggest that a belief system should be not only coherent (as statisticians already require) but also charitable and triangulated, answerable to other people and to a shared world. I argue that these three constraints are exactly what good statistical practice -- from eliciting priors to checking models -- already tries to satisfy and talking about them explicitly could improve this practice.",
+    "status": "found"
+  }
+}

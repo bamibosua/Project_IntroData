@@ -1,0 +1,415 @@
+{
+  "2608.09227": {
+    "arxiv_id": "2608.09227",
+    "title": "Omni2LoRA: Coherence-Preserving Parametric Memory for Efficient Omni Language Models",
+    "authors": [
+      "Puneet Mathur",
+      "Manan Suri",
+      "Dinesh Manocha"
+    ],
+    "submission_date": "2026-08-10T07:49:10Z",
+    "latest_updated": "2026-08-10T07:49:10Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09227v1"
+    ],
+    "abstract": "Omnimodal language models (OLMs) enable unified audio-visual understanding, but processing long joint token sequences makes inference computationally prohibitive. While recent token compression methods attempt to alleviate this burden, compressing modalities in isolation often destroys the temporal cross-modal anchors necessary for coherent reasoning. We introduce Omni2LoRA, a two-stage framework for efficient parametric memory compression via coherence-preserving context distillation that bypasses the token bottleneck entirely. First, a Perceiver hypernetwork processes intermediate representations from a frozen OLM to encode the multimodal context into a full-rank Low-Rank Adaptation (LoRA) adapter in a single forward pass. To prevent the resulting parameter footprint from scaling linearly with recording length, we optimize a discrete rank allocation policy via Group Relative Policy Optimization (GRPO) that uses a modality-ablated counterfactual reward to explicitly penalize the loss of audio-visual coherence, forcing the model to allocate its fixed sub-linear rank budget to synergistic cross-modal anchors rather than isolated visual features. Across three omnimodal backbones, Omni2LoRA operating at a 30% rank budget outperforms direct full-context inference and strong token-compression baselines (OmniZip, OMAC, O-MARC) on four audio-visual question answering benchmarks, improving average accuracy by 8-12% over the strongest baseline and remaining stable under compression ratios as tight as 75%, where token-pruning methods degrade sharply. By converting multimodal memory into a fixed-budget, reusable parameter state, our method drives answer-time multimodal-token load to zero, cutting per-query Time to First Token (TTFT) by up to 12x relative to full-context inference and amortizing to under 0.5s after a handful of queries.",
+    "status": "found"
+  },
+  "2608.09228": {
+    "arxiv_id": "2608.09228",
+    "title": "Privileged Solutions or Context-Induced Teacher Behavior? Dissecting On-Policy Self-Distillation",
+    "authors": [
+      "Yuki Ichihara",
+      "Naoto Iwase",
+      "Mohammad Atif Quamar",
+      "Junpei Komiyama"
+    ],
+    "submission_date": "2026-08-10T07:51:45Z",
+    "latest_updated": "2026-08-10T07:51:45Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09228v1"
+    ],
+    "abstract": "On-Policy Self-Distillation (OPSD) is commonly interpreted as the transfer of privileged information: a teacher observes the verified solution to the target problem and supervises the student's trajectory. However, this interpretation conflates two effects. The reference solution not only reveals the answer to the current instance but also changes the context under which the teacher provides token-level supervision. We investigate the role of target-specific privilege with $\\mathrm{OP}^{2}\\mathrm{SD}$ (On-Policy Self-Distillation from Other Problems), which replaces the paired reference with a problem and solution from a different example, while preserving the student rollout, teacher, and distillation objective. Across three models and three mathematics benchmarks, $\\mathrm{OP}^{2}\\mathrm{SD}$ improves over the base model, remains competitive with OPSD. The success of $\\mathrm{OP}^{2}\\mathrm{SD}$ implies that OPSD gains do not necessarily come from access to the reference solution, and that the teacher's context-induced behavior is an important factor.",
+    "status": "found"
+  },
+  "2608.09229": {
+    "arxiv_id": "2608.09229",
+    "title": "The Diffusive Exchange Driven Growth Model with unbounded kernels",
+    "authors": [
+      "Saumyajit Das",
+      "Ram Gopal Jaiswal"
+    ],
+    "submission_date": "2026-08-10T07:51:54Z",
+    "latest_updated": "2026-08-10T07:51:54Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09229v1"
+    ],
+    "abstract": "We study the discrete diffusive exchange-driven growth (EDG) equations on a bounded smooth domain of arbitrary dimension subject to homogeneous Neumann boundary conditions. The system belongs to the class of infinite systems of semilinear partial differential equations with nonlinear source terms of quadratic type. Global-in-time existence of solutions is established for separable exchange kernels of the form \\(K_{i,j}=b_i a_j\\), where the donor rates exhibit at most linear growth while the receiver rates are sublinear. The analysis is based on a uniform Fisher information estimate obtained from an entropy-entropy dissipation identity. This estimate yields renormalized solutions to a truncated system with finitely many species. A compactness argument then enables passage to the limit in the exchange operator, leading to the existence of global-in-time solutions for the full system.",
+    "status": "found"
+  },
+  "2608.09230": {
+    "arxiv_id": "2608.09230",
+    "title": "SafeSceneReason: A Multimodal Reasoning Benchmark Connecting Industrial Hazards with Accident Knowledge",
+    "authors": [
+      "Yuanchi Zhu",
+      "Kang An",
+      "Tengyue Wang",
+      "Zhongyu Yang",
+      "Chenxu Du",
+      "Xinqi Yang",
+      "Hebao Zhu",
+      "Bokai Zhao",
+      "Tianyu Liang",
+      "Ziliang Wang",
+      "Faqiang Qian",
+      "Yunli Yang",
+      "Weiyang Shi",
+      "Qibing Ren"
+    ],
+    "submission_date": "2026-08-10T07:53:54Z",
+    "latest_updated": "2026-08-10T07:53:54Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09230v1"
+    ],
+    "abstract": "Industrial-safety understanding requires more than detecting workers, equipment, and personal protective equipment. Models must also assess compliance, identify hazardous interactions, explain potential accident mechanisms, and recommend preventive actions. Existing safety datasets primarily focus on visual perception or isolated violation recognition and provide limited supervision for evidence-grounded reasoning. We introduce SafeSceneReason, a multimodal industrial-safety reasoning benchmark and companion training corpus that connects workplace scenes with knowledge from occupational accident investigations. SafeSceneReason combines two complementary data-construction pipelines. The scene-centric pipeline converts annotated workplace images into executable safety scene graphs and generates deterministic answers through program execution over objects, relations, and safety rules. The report-centric pipeline extracts figures and contextual evidence from accident reports and constructs multimodal questions using evidence graphs, explicit information boundaries, multi-step reasoning paths, and iterative verification. The resulting resource contains 110,581 verified scene-centric question--answer pairs and 13,114 refined report-centric question--answer pairs, covering perception, spatial and quantitative reasoning, compliance assessment, evidence synthesis, causal analysis, and mitigation-oriented decision making. Evaluation of representative proprietary and open-source vision--language models reveals substantial performance differences and persistent weaknesses in comparative, technical, and multi-evidence reasoning, demonstrating that strong general visual understanding does not yet guarantee reliable industrial-safety reasoning.",
+    "status": "found"
+  },
+  "2608.09231": {
+    "arxiv_id": "2608.09231",
+    "title": "BAG: Budget-Aware Gating for Diffusion Caching",
+    "authors": [
+      "Tong Zhao",
+      "Mingkun Lei",
+      "Yucheng Han",
+      "Chi Zhang"
+    ],
+    "submission_date": "2026-08-10T07:54:28Z",
+    "latest_updated": "2026-08-14T07:23:26Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.09231v1",
+      "2608.09231v2"
+    ],
+    "abstract": "Diffusion caching is a lightweight strategy that accelerates Diffusion Transformers (DiTs) by reusing intermediate features across denoising steps, but existing paradigms face a fundamental trade-off: online heuristics lack global budget awareness, whereas static schedules lack instance adaptivity and fail to flexibly adapt to varying runtime budget constraints. To bridge this gap, we present BAG (Budget-Aware Gating), a novel caching policy that unifies global budget pacing with dynamic, instance-adaptive feature reuse. Rather than relying on hand-crafted rules, BAG employs a lightweight gating network that dynamically decides whether to execute a full computation or reuse cached features at each step by jointly conditioning on the budget state and local trajectory feedback. We train this policy via offline-to-online schedule distillation, transferring the decision-making of offline-searched schedules into a compact online gate. Extensive experiments on FLUX.1-dev, Wan2.1, and Qwen-Image-2512 demonstrate that BAG consistently outperforms state-of-the-art caching methods across various speedup tiers while remaining robust across different resolutions, seeds, and guidance scales. Code will be released.",
+    "status": "found"
+  },
+  "2608.09232": {
+    "arxiv_id": "2608.09232",
+    "title": "Coalitional bargaining with transfers",
+    "authors": [
+      "Gregorio Curello",
+      "Sam Jindani"
+    ],
+    "submission_date": "2026-08-10T07:55:49Z",
+    "latest_updated": "2026-08-26T01:07:20Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.09232v1",
+      "2608.09232v2"
+    ],
+    "abstract": "We consider the problem of bargaining when transfers between agents are possible. Such situations are typically modelled as coalitional games with transferable utilities. However this model makes a strong implicit assumption: the outcome can only depend on the total surplus that each coalition of agents can achieve, not on which agents within the coalition generate the surplus. Is this assumption justified? We define a richer model in which solutions may depend on who generates the surplus. In this model, the classical axiomatisation of the Shapley value fails: a broad family of solutions satisfy efficiency, anonymity, the dummy property, and additivity. Nevertheless, we obtain an axiomatisation of the Shapley value in the richer model by adding continuity and individual rationality to the original axioms.",
+    "status": "found"
+  },
+  "2608.09233": {
+    "arxiv_id": "2608.09233",
+    "title": "DreOPD: Degraded-Reference Extrapolative On-Policy Distillation for Flow-matching Models",
+    "authors": [
+      "Mingfeng Lin",
+      "Chengfei Cai",
+      "Lin Xu",
+      "Yuxiang Wei",
+      "Liang Han"
+    ],
+    "submission_date": "2026-08-10T07:55:57Z",
+    "latest_updated": "2026-08-13T04:14:38Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.09233v1",
+      "2608.09233v2"
+    ],
+    "abstract": "Flow-matching models are now a mainstream method to image generation, but its adaptation to diverse downstream scenarios typically relies on post-training, which may cause conflicts among task-specific optimization objectives. Reinforcement learning enables direct optimization of task-specific rewards beyond the original models, yet trajectory-level optimization may incur high-variance gradients and cross-task interference. On-policy distillation (OPD) offers dense and stable supervision on student rollouts, but conventional teacher matching remains imitation-based. We propose DreOPD, a Degraded-reference extrapolative OPD method for flow-matching models that bridges these two paradigms. Our DreOPD converts implicit reward extrapolation into closed-form velocity regression, enabling extrapolative post-training with the stability of OPD. It further uses a mildly degraded reference to strengthen the teacher-reference contrast, yielding a clearer extrapolation direction. Experiments on single- and multi-teacher settings show that DreOPD outperforms OPD and multi-task RL baselines in average performance, while surpassing specialized teachers on most metrics.",
+    "status": "found"
+  },
+  "2608.09234": {
+    "arxiv_id": "2608.09234",
+    "title": "Stroboscopic Raman Spectroscopy of Atom Optics in Quasi-Bragg Regime",
+    "authors": [
+      "Joel Gomes Baptista",
+      "Louis Pagot",
+      "Sébastien Merlet",
+      "Leonid Sidorenkov",
+      "Franck Pereira Dos Santos"
+    ],
+    "submission_date": "2026-08-10T07:58:34Z",
+    "latest_updated": "2026-08-10T07:58:34Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09234v1"
+    ],
+    "abstract": "Quasi-Bragg regime is a good compromise for large-momentum-transfer atom interferometry, allowing for scaling up the interferometric area, while constraining the population of unwanted states. Separation of momentum states via standard time of flight methods, however, can be challenging when using laser-cooled atoms, rather than ultracold atoms with sub-recoil velocity distribution. To overcome this limit, we use Raman spectroscopy for stroboscopic sampling of the atomic state evolution in momentum space during the interrogating laser pulses. We quantitatively characterize atom optics employing two-photon (2___k) and multi-photon (6___k) Bragg transitions, the latter being optionally enhanced with optimal control protocol. We closely match the observed dynamics of the atomic state with simulations. Finally, we perform momentum spectroscopy of the output states in a 6___k Bragg gravimeter.",
+    "status": "found"
+  },
+  "2608.09235": {
+    "arxiv_id": "2608.09235",
+    "title": "Commuting Graph of Unitriangular Group UT(4; p)",
+    "authors": [
+      "Miseriya Majeed",
+      "Ramkumar P. B"
+    ],
+    "submission_date": "2026-08-10T07:59:09Z",
+    "latest_updated": "2026-08-10T07:59:09Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09235v1"
+    ],
+    "abstract": "Let G = UT(4; p) be the group of all 4 ? 4 unitriangular matrices over the fi?nite fi?eld Fp, where p is a prime. Using the six-parameter form of the elements of G, we describe the commutativity relation explicitly and use it to analyse the struc- ture of the graph. We prove that the reduced commuting graph is connected and has diameter 3. We also determine the size of its maximal cliques, chromatic number, independence number, per- fectness, etc. by decomposing the graph into cosets, layers, and direction parts.",
+    "status": "found"
+  },
+  "2608.09236": {
+    "arxiv_id": "2608.09236",
+    "title": "Label Granularity Skew in Federated Learning with Hierarchical Image Classification",
+    "authors": [
+      "Jaeheon Kim",
+      "Hokeun Kim",
+      "Bong Jun Choi"
+    ],
+    "submission_date": "2026-08-10T08:01:50Z",
+    "latest_updated": "2026-08-10T08:01:50Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09236v1"
+    ],
+    "abstract": "Federated learning enables privacy-preserving collaboration across distributed devices without centralizing local data. However, clients may differ not only in data distributions but also in domain knowledge and annotation capabilities. In this paper, we introduce label granularity skew, a new form of statistical heterogeneity in federated hierarchical classification, in which clients provide taxonomy-consistent labels at different levels of detail within a shared class hierarchy. To model this heterogeneity, we generate client-specific local label hierarchies using a probabilistic relational neighbor classifier and construct a WordNet-guided hierarchy via silhouette score-based coarsening. Our analysis shows that strongly coupled hierarchical models are sensitive to incomplete supervision, while the conditional softmax classifier is more robust. Based on this insight, we propose Branch-wise Decoupled Fine-Tuning (BDFT) and its federated version, FedBDFT, which fine-tune branch-wise classifiers and aggregate them through federated optimization. Experiments on CIFAR-100, TinyImageNet, and ImageNet show that FedBDFT substantially improves robustness under severe label granularity skew, with average gains of 27.9% and 56.4% at skewness levels of 0.6 and 0.9, respectively. Zero-shot results further indicate that FedBDFT better preserves hierarchical representations for unseen fine-grained classes. These findings demonstrate its effectiveness for federated hierarchical classification with heterogeneous label granularities.",
+    "status": "found"
+  },
+  "2608.09237": {
+    "arxiv_id": "2608.09237",
+    "title": "Optimizing Wavefront-Deformation Sensor Placement for Active Radio-Telescope Surfaces",
+    "authors": [
+      "Stefan Thoms",
+      "Martin Timpe",
+      "Matthias Reichert"
+    ],
+    "submission_date": "2026-08-10T08:02:48Z",
+    "latest_updated": "2026-08-10T08:02:48Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09237v1"
+    ],
+    "abstract": "Next-generation high-frequency radio telescopes require primary-surface accuracies that passive structures alone cannot reliably achieve. The Atacama Large Aperture Submillimeter Telescope (AtLAST), a 50 m single-dish concept operating up to $\\approx$ 1 THz, imposes a $\\approx$ 20 $μ$m rms surface-accuracy requirement across its full aperture. This is practically unattainable for a purely passive reflector subject to gravitational, thermal, and wind-induced deformation. Closed-loop active collimation and surface control are therefore imperative, which in turn requires the deformation field to be known across the full aperture in real time. Measuring it directly at the necessary resolution across the complete surface is, however, hardly feasible; instead, the current AtLAST concept development foresees reconstructing the surface from a limited set of discrete sensor positions. An algorithmic framework is presented that optimizes the number and placement of these sensors to maximize the reconstructability of the deformation field. Finite-element analysis (FEA) load cases (gravity, thermal, wind) define the deformation space, from which a data-driven Proper Orthogonal Decomposition (POD) basis is derived; sensor positions are then chosen by a greedy optimization algorithm and then assessed via leave-one-out cross-validation. Applied to FEA deformations of AtLAST's Back-Up Structure (BUS), and assuming a sensor noise of 5 $μ$m rms, the method reconstructs all load cases with 50 sensors to below 2.7 $μ$m rms (worst case) residual (BUS-) surface error.",
+    "status": "found"
+  },
+  "2608.09238": {
+    "arxiv_id": "2608.09238",
+    "title": "RealDenseFace: Real-time Monocular 3D Face Reconstruction from Dense UV-space Priors",
+    "authors": [
+      "Linzhou Li",
+      "Tianjia Shao",
+      "Kun Zhou"
+    ],
+    "submission_date": "2026-08-10T08:04:36Z",
+    "latest_updated": "2026-08-10T08:04:36Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09238v1"
+    ],
+    "abstract": "Recent monocular 3D face reconstruction methods achieve high fidelity by fitting a 3D Morphable Model (3DMM) to dense priors predicted by networks, but the optimization stage is computationally expensive, often taking tens of seconds per image. We present RealDenseFace, a real-time optimization-based 3D face reconstruction method with dense UV-space network predictions. Our key idea is to formulate 3DMM fitting as a nonlinear least-squares problem and solve it with a tailored Gauss-Newton solver that converges in only a few iterations. The reconstruction is conducted in two stages. In the first stage, the network predicts two dense UV-space maps from a single RGB image: a correspondence map for UV-to-image alignment, and a relative-depth map for geometric constraints along the viewing direction. In the second stage, the solver fits per-vertex targets sampled from these maps at the vertex UV coordinates. The solver supports all three reconstruction settings: single-image fitting, offline sequence reconstruction, and online tracking. Our method achieves state-of-the-art accuracy on the NeRSemble SVFR benchmark. The online tracker runs at 80+ FPS, and the offline sequence reconstruction is over 20 times faster than previous optimization-based baselines.",
+    "status": "found"
+  },
+  "2608.09239": {
+    "arxiv_id": "2608.09239",
+    "title": "On Energy Laws and Stability of First-Subdiagonal Pade Approximants for Linear Seminegative Problems",
+    "authors": [
+      "Miaosen Jiao",
+      "Zheng Sun",
+      "Kailiang Wu"
+    ],
+    "submission_date": "2026-08-10T08:04:41Z",
+    "latest_updated": "2026-08-10T08:04:41Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09239v1"
+    ],
+    "abstract": "We derive an explicit discrete energy identity for rational time discretizations generated by the first-subdiagonal Padé approximants of the exponential for solving linear seminegative problems. This work extends the diagonal Padé energy laws in [Z. Sun, Y. Wei, and K. Wu, SIAM J. Numer. Anal., 60 (2022)] to the first-subdiagonal family. The main new ingredient is an explicit Cholesky-type factorization of the energy coefficient matrix associated with the semi-inner-product terms in the discrete energy identity. The construction and proof of this factorization are nontrivial, since the matrix entries are alternating sums of Padé coefficients and the triangular factor has a parity-dependent factorial structure. We prove the factorization by reducing it to scalar rational identities and establishing them through finite product reductions and telescoping summations. Together with a β-coefficient cancellation, the factorization yields an exact discrete energy law that recovers the classical unconditional contractivity for linear seminegative problems. Numerical experiments adapted from the diagonal Padé energy-law setting illustrate the predicted order and verify the discrete dissipation identity.",
+    "status": "found"
+  },
+  "2608.09240": {
+    "arxiv_id": "2608.09240",
+    "title": "Multimodal Federated Learning under Dual-Axis Modality Missingness",
+    "authors": [
+      "Adiba Orzikulova",
+      "Jaehyun Kwak",
+      "Jaemin Shin",
+      "Yunqi Guo",
+      "Xiaomin Ouyang",
+      "Guoliang Xing",
+      "Steven Euijong Whang",
+      "Sung-Ju Lee"
+    ],
+    "submission_date": "2026-08-10T08:05:02Z",
+    "latest_updated": "2026-08-10T08:05:02Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09240v1"
+    ],
+    "abstract": "Multimodal federated learning (FL) supports collaborative modeling in privacy-sensitive health-sensing and medical settings, but realistic deployments often exhibit dual-axis modality missingness: clients have different modality sets, and individual samples may contain only subsets of the modalities available locally. Existing methods typically address these two axes separately. We propose Flux, a multimodal federated learning framework built around two complementary components. First, modality-aware confidence tempering learns sample-specific confidence for each modality through mask-aware unimodal supervision and fuses the confidence estimates from observed modalities into a sample-adaptive temperature that adjusts predictive sharpness according to evidence quality and completeness. Second, gradient-decoupled private adaptation applies this temperature only to a client-private prediction pathway, while training the shared federated model with a standard, untempered objective. This enables sample-specific, client-local confidence adaptation without allowing confidence-dependent gradients to perturb shared representation learning. Across four multimodal datasets, Flux achieves the highest average macro-F1 on every dataset, outperforming the strongest dataset-specific baseline by 0.8~2.2 points and by 1.6 points on average. Additional analyses demonstrate favorable calibration, temperature sensitivity to both modality missingness and input corruption, and more stable shared optimization under private-only tempering. Our code is available at https://github.com/AdibaOrz/Flux.",
+    "status": "found"
+  },
+  "2608.09241": {
+    "arxiv_id": "2608.09241",
+    "title": "Decoding Exoplanetary Degeneracies Through Geometry: Application to Asynchronously Rotating Systems",
+    "authors": [
+      "Mradumay Sadh"
+    ],
+    "submission_date": "2026-08-10T08:05:44Z",
+    "latest_updated": "2026-09-05T09:08:57Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 4,
+    "versions": [
+      "2608.09241v1",
+      "2608.09241v2",
+      "2608.09241v3",
+      "2608.09241v4"
+    ],
+    "abstract": "This study augments the geometry-based InstellCa code that calculates accurate irradiance values to InstellCa--2, which computes the longitude averaged instellation over a given latitude on the planet along with its effective temperature profile. The estimation of instellation is performed considering the planet as a 3D body that asynchronously rotates, causing a varying zenith angle of the star resulting in a diurnal cycle. This serves as a specialised case study to demonstrate how the combination of this relative rotation and extreme proximity to host-stars can affect the estimated effective temperatures of close-in planets. 55 Cancri e is selected specifically to demonstrate the importance of this effect as it has been earlier hypothesised to exhibit asynchronous rotation and also has a debated scientific discourse about the existence of an atmosphere on the planet. The TRAPPIST-1 system, being a multi-planetary system susceptible to mean motion resonances, also serves as an interesting exemplar case to demonstrate these effects. Incorporating the stellar zenith angle to the geometrical analysis allows the possibility of physically feasible Bond albedo values that would otherwise be prohibited if a synchronously rotating bare rock scenario is assumed. Consequently, the degeneracies in the modelling of different atmospheric states of such planets can be reduced if the correct geometry is taken into account.",
+    "status": "found"
+  },
+  "2608.09242": {
+    "arxiv_id": "2608.09242",
+    "title": "Transverse distributions of the energy-momentum tensor for a spin-$3/2$ baryon",
+    "authors": [
+      "Hui-Jae Lee",
+      "Ki-Hoon Hong",
+      "June-Young Kim",
+      "Hyun-Chul Kim"
+    ],
+    "submission_date": "2026-08-10T08:05:55Z",
+    "latest_updated": "2026-08-10T08:05:55Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09242v1"
+    ],
+    "abstract": "We develop a multipole description of transverse distributions of the energy-momentum tensor for a spin-$3/2$ baryon in frames connected by a longitudinal boost. In the transverse Breit frame, the $T^{00}$, $T^{03}$, and $T^{33}$ matrix elements are expressed through seven multipole form factors for energy, angular momentum, and stress. At finite longitudinal momentum, we factorize the Lorentz mixing of these three components from the spin-$3/2$ Wigner rotations of the external states. The resulting elastic-frame matrix elements contain six transverse multipoles, whose Fourier transforms define the distributions of energy, longitudinal momentum, and longitudinal momentum flux. We also calculate $T^{++}$, $T^{+-}$, and $T^{--}$ directly with light-front Rarita-Schwinger spinors. The elastic-frame construction provides a continuous interpolation from the transverse Breit frame to the infinite-momentum frame. In this limit, the Wigner rotation becomes the Melosh rotation, and the leading elastic-frame matrix elements reproduce the corresponding light-front results. Using the $Δ$-baryon gravitational form factors obtained in the Skyrme model as a representative numerical input, we find that the energy distribution is dominated by the energy monopole defined in the transverse Breit frame and changes only weakly under longitudinal boosts. Through boost mixing, this monopole provides the dominant contribution to the longitudinal momentum distribution and its flux at finite $P_z$. For a longitudinally polarized spin-$3/2$ target, the distributions contain only the monopole contributions, whereas those of a transversely polarized target exhibit spin-dependent quadrupole and octupole deformations and a dipole that shifts their maxima.",
+    "status": "found"
+  },
+  "2608.09243": {
+    "arxiv_id": "2608.09243",
+    "title": "Annihilator Digraphs and Extended Zero-Divisor Digraphs of Semigroups and Rings",
+    "authors": [
+      "Rasie Mekera",
+      "Defne Somer",
+      "Didem Yeşil"
+    ],
+    "submission_date": "2026-08-10T08:06:34Z",
+    "latest_updated": "2026-08-11T09:31:19Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.09243v1",
+      "2608.09243v2"
+    ],
+    "abstract": "Let $S$ be a semigroup with zero. This paper studies the zero-divisor digraph $\\overrightarrowΓ(S)$ and the extended zero-divisor digraph $\\overrightarrowΓ_{\\!E}$, and introduces the annihilator digraph $\\overrightarrow{\\mathrm{AG}}(S)$ via left and right annihilators. The diameter bound when every zero-divisor is nilpotent, and the sinks and the sources of $\\overrightarrowΓ_{\\!E}(S)$ being identical to those of $\\overrightarrowΓ(S)$ is demonstrated. The conditions in which $\\overrightarrowΓ(S)=\\overrightarrowΓ_{\\!E}(S)=\\overrightarrow{\\mathrm{AG}}(S)$ holds are established, and the connectedness, diameter, girth, and vertex degrees of $\\overrightarrow{\\mathrm{AG}}(S)$ are bounded when every zero-divisor is nilpotent or two-sided. The extended zero-divisor digraph is connected if and only if the zero-divisor digraph is connected, and it contains a directed cycle if and only if the zero-divisor digraph does. The knit degrees of $\\overrightarrowΓ(S)$, $\\overrightarrowΓ_{\\!E}(S)$, and $\\overrightarrow{\\mathrm{AG}}(S)$ are computed. For a unital ring $R$, the equality $\\overrightarrowΓ_{\\!E}(R)=\\overrightarrowΓ(R)$ is characterized by nilpotency indices and one-sided annihilator conditions; it holds for the full matrix ring $M_{n}(F)$ over a field $F$ if and only if $n=2$, and $\\overrightarrow{\\mathrm{AG}}(M_{n}(F))$ is connected and contains a directed cycle. Moreover, for an artinian noncommutative ring $R$, it was proved that $\\overrightarrowΓ(R)$ is connected if and only if $\\overrightarrowΓ_{\\!E}(R)$ is connected if and only if every one-sided identity element of $R$ is a two-sided identity of $R$.",
+    "status": "found"
+  },
+  "2608.09244": {
+    "arxiv_id": "2608.09244",
+    "title": "In-Loop Model Adaptation with Coupled Latent-Noise Guidance for High-Fidelity Subject-Driven Text-to-Image Generation",
+    "authors": [
+      "Yushun Tang",
+      "Weiming Chen",
+      "Siyi Liu",
+      "Yi Zhang",
+      "Feng Wu",
+      "Zhihai He"
+    ],
+    "submission_date": "2026-08-10T08:07:28Z",
+    "latest_updated": "2026-08-10T08:07:28Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09244v1"
+    ],
+    "abstract": "Text-to-image diffusion models have achieved remarkable success in generating high-quality images from a given text prompt. Subject-driven generation aims to synthesize customized images to mimic the appearance of subjects in given reference images within different visual contexts specified by the text prompts. The central challenge here is that, when the reference image changes, the diffusion model cannot efficiently adapt to different visual contexts while consistently maintaining the subject identity. Existing methods either train the model with a large domain-specific dataset or fine-tune the model using the reference image for hundreds of iterations before actual image generation. In this work, we explore a new approach, called \\textit{In-Loop Model Adaptation} (IMA), which adapts the core diffusion model at each generation step during the actual process of image generation, without being trained on the reference image before the generation process. To this end, we establish a DDIM inversion chain that maps the reference image to a sequence of latent, as well as a text-to-image generation chain which generates the image from the text prompt only. We then introduce a masked latent consistency loss and a noise regularization loss to characterize the latent-noise difference between the diffusion model and these two chains at each generation step. This coupled latent-noise loss is used to guide the in-loop model adaptation to preserve the subject identity specified by the reference image while maintaining accurate alignment with the text prompt, resulting in high-fidelity text-to-image generation. Our extensive experiments demonstrate that our proposed IMA method significantly improves the performance of subject-driven text-to-image generation.",
+    "status": "found"
+  },
+  "2608.09245": {
+    "arxiv_id": "2608.09245",
+    "title": "Gradient-based optimization of non-Abelian fractional quantum states in patterned superlattices",
+    "authors": [
+      "Yifei Guan",
+      "Lichen Yu",
+      "Zizhuang Liu",
+      "Xin Lu",
+      "Jianpeng Liu"
+    ],
+    "submission_date": "2026-08-10T08:07:43Z",
+    "latest_updated": "2026-08-26T16:48:02Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.09245v1",
+      "2608.09245v2"
+    ],
+    "abstract": "The realization of fractional Chern insulator (FCI) states in moiré heterostructures has attracted intense interest in the study of correlated topological states. So far, most experimentally realized FCI states may be interpreted as lattice analogues of Abelian fractional quantum Hall (FQH) states. Realizing non-Abelian FCI states is an important challenge in the field. Patterned dielectric superlattices provide a versatile platform for engineering topological flat bands. Such systems offer substantial structural flexibility and tunability, because their lattice patterns, periods, and other structural parameters can all be designed and fabricated. Here, we provide a gradient-based optimization workflow to design non-Abelian fractional states in patterned bilayer graphene superlattices. The experimentally relevant structural parameters of the superlattice devices are gradient-optimized to favor a flat Chern band with quantum-geometric properties reminiscent of those of the first excited Landau level. Exact diagonalization calculations at 1/2 filling of the optimized Chern band naturally yield non-Abelian FCIs. We apply this workflow to triangular, honeycomb, and kagome patterned superlattices and find robust non-Abelian FCIs over a large region of the parameter space spanned by superlattice constant and vertical potential drop. Our work thus establishes an experimentally feasible framework for exploring non-Abelian FCIs in realistic patterned-superlattice devices.",
+    "status": "found"
+  },
+  "2608.09246": {
+    "arxiv_id": "2608.09246",
+    "title": "An Explainable GNN Framework for Component-Level Anomaly Diagnosis",
+    "authors": [
+      "Sena Ozgunay",
+      "Louise Trav{é}-Massuy{è}s",
+      "Jean-Michel Loubes",
+      "Raul Sena Ferreira"
+    ],
+    "submission_date": "2026-08-10T08:08:36Z",
+    "latest_updated": "2026-09-14T08:34:50Z",
+    "revised_dates": null,
+    "venue": "DX 2026 - 37th International Conference on Principles of Diagnosis and Resilient Systems, Sep 2026, Cork, Ireland",
+    "latest_version": 2,
+    "versions": [
+      "2608.09246v1",
+      "2608.09246v2"
+    ],
+    "abstract": "Industrial processes are complex systems composed of multiple interacting sensors that generate multivariate time series (MTS). Detecting anomalies in such systems is critical for reliability and safety, yet understanding their origin is equally important. Existing Graph Neural Network (GNN)based methods for anomaly detection primarily focus on sensor-level deviations and either attribute anomalies directly to the deviating sensors. When diagnosis is attempted, generally, the most deviated sensor is identified as a root cause of a system fault. However, in many industrial systems, anomalies do not arise from faulty sensors but from disruptions in the influences governing the system dynamics. We propose an explainable GNN-based anomaly detection framework that shifts the perspective from sensor-level anomalies to component-level diagnosis, hypothesizing that anomalous measurements are symptoms of altered inter-sensor influences. Experiments show that the method effectively identifies and prioritizes the true faulty components, providing interpretable insights into system failures.",
+    "status": "found"
+  }
+}

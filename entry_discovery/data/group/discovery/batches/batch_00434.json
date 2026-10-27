@@ -1,0 +1,412 @@
+{
+  "2601.21836": {
+    "arxiv_id": "2601.21836",
+    "title": "ZOBA: An Efficient Single-loop Zeroth-order Bilevel Optimization Algorithm",
+    "authors": [
+      "Marco Rando",
+      "Samuel Vaiter"
+    ],
+    "submission_date": "2026-01-29T15:15:55Z",
+    "latest_updated": "2026-01-29T15:15:55Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.21836v1"
+    ],
+    "abstract": "Bilevel optimization problems consist of minimizing a value function whose evaluation depends on the solution of an inner optimization problem. These problems are typically tackled using first-order methods that require computing the gradient of the value function ({\\it the hypergradient}). In several practical settings, however, first-order information is unavailable ({\\it zeroth-order setting}), rendering these methods inapplicable. Finite-difference methods provide an alternative by approximating hypergradients using function evaluations along a set of directions. Nevertheless, such surrogates are notoriously expensive, and existing finite-difference bilevel methods rely on two-loop algorithms that are poorly parallelizable. In this work, we propose ZOBA, the first finite-difference single-loop algorithm for bilevel optimization. Our method leverages finite-difference hypergradient approximations based on delayed information to eliminate the need for nested loops. We analyze the proposed algorithm and establish convergence rates in the non-convex setting, achieving a complexity of $\\mathcal{O}(p(d + p)^2\\varepsilon^{-2})$, where $p$ and $d$ denote the dimension of inner and outer spaces respectively, which is better than prior approaches based on Hessian approximation. We further introduce and analyze HF-ZOBA, a Hessian-free variant that yields additional complexity improvements. Finally, we corroborate our findings with numerical experiments on synthetic functions and a real-world black-box task in adversarial machine learning. Our results show that our methods achieve accuracy comparable to state-of-the-art techniques while requiring less computation time.",
+    "status": "found"
+  },
+  "2601.21837": {
+    "arxiv_id": "2601.21837",
+    "title": "Trustworthy Intelligent Education: A Systematic Perspective on Progress, Challenges, and Future Directions",
+    "authors": [
+      "Xiaoshan Yu",
+      "Shangshang Yang",
+      "Ziwen Wang",
+      "Haiping Ma",
+      "Xingyi Zhang"
+    ],
+    "submission_date": "2026-01-29T15:17:25Z",
+    "latest_updated": "2026-01-29T15:17:25Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.21837v1"
+    ],
+    "abstract": "In recent years, trustworthiness has garnered increasing attention and exploration in the field of intelligent education, due to the inherent sensitivity of educational scenarios, such as involving minors and vulnerable groups, highly personalized learning data, and high-stakes educational outcomes. However, existing research either focuses on task-specific trustworthy methods without a holistic view of trustworthy intelligent education, or provides survey-level discussions that remain high-level and fragmented, lacking a clear and systematic categorization. To address these limitations, in this paper, we present a systematic and structured review of trustworthy intelligent education. Specifically, We first organize intelligent education into five representative task categories: learner ability assessment, learning resource recommendation, learning analytics, educational content understanding, and instructional assistance. Building on this task landscape, we review existing studies from five trustworthiness perspectives, including safety and privacy, robustness, fairness, explainability, and sustainability, and summarize and categorize the research methodologies and solution strategies therein. Finally, we summarize key challenges and discuss future research directions. This survey aims to provide a coherent reference framework and facilitate a clearer understanding of trustworthiness in intelligent education.",
+    "status": "found"
+  },
+  "2601.21838": {
+    "arxiv_id": "2601.21838",
+    "title": "Error-detectable Universal Control for High-Gain Bosonic Quantum Error Correction",
+    "authors": [
+      "Weizhou Cai",
+      "Zi-Jie Chen",
+      "Ming Li",
+      "Qing-Xuan Jie",
+      "Xu-Bo Zou",
+      "Guang-Can Guo",
+      "Luyan Sun",
+      "Chang-Ling Zou"
+    ],
+    "submission_date": "2026-01-29T15:17:46Z",
+    "latest_updated": "2026-01-29T15:17:46Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.21838v1"
+    ],
+    "abstract": "Protecting quantum information through quantum error correction (QEC) is a cornerstone of future fault-tolerant quantum computation. However, current QEC-protected logical qubits have only achieved coherence times about twice those of their best physical constituents. Here, we show that the primary barrier to higher QEC gains is ancilla-induced operational errors rather than intrinsic cavity coherence. To overcome this bottleneck, we introduce error-detectable universal control of bosonic modes, wherein ancilla relaxation events are detected and the corresponding trajectories discarded, thereby suppressing operational errors on logical qubits. For binomial codes, we demonstrate universal gates with fidelities exceeding $99.6\\%$ and QEC gains of $8.33\\times$ beyond break-even. Our results establish that gains beyond $10\\times$ are achievable with state-of-the-art devices, establishing a path toward fault-tolerant bosonic quantum computing.",
+    "status": "found"
+  },
+  "2601.21839": {
+    "arxiv_id": "2601.21839",
+    "title": "Test-Time Compute Games",
+    "authors": [
+      "Ander Artola Velasco",
+      "Dimitrios Rontogiannis",
+      "Stratis Tsirtsis",
+      "Manuel Gomez-Rodriguez"
+    ],
+    "submission_date": "2026-01-29T15:18:01Z",
+    "latest_updated": "2026-10-18T04:59:33Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2601.21839v1",
+      "2601.21839v2",
+      "2601.21839v3"
+    ],
+    "abstract": "Test-time compute has emerged as a promising strategy to enhance the reasoning abilities of large language models (LLMs). However, this strategy has in turn increased how much users pay cloud-based providers offering LLM-as-a-service, since providers charge users for the amount of test-time compute they use to generate an output. In our work, we show that the market of LLM-as-a-service is socially inefficient: providers have a financial incentive to increase the amount of test-time compute, even if this increase contributes little to the quality of the outputs. To address this inefficiency, we introduce a reverse second-price auction mechanism where providers bid their offered price and (expected) quality for the opportunity to serve a user, and users pay proportionally to the marginal value generated by the winning provider relative to the second-highest bidder. To illustrate and complement our theoretical results, we conduct experiments with multiple instruct models from the $\\texttt{Llama}$ and $\\texttt{Qwen}$ families, as well as reasoning models distilled from $\\texttt{DeepSeek-R1}$, on math and science benchmark datasets.",
+    "status": "found"
+  },
+  "2601.21840": {
+    "arxiv_id": "2601.21840",
+    "title": "Initial observations in X-point target divertor discharges on MAST-U",
+    "authors": [
+      "N. Lonigro",
+      "K. Verhaegh",
+      "J. Harrison",
+      "B. Lipschultz",
+      "C. Bowman",
+      "F. Federici",
+      "J. Flanagan",
+      "D. Greenhouse",
+      "D. Moulton",
+      "P. Ryan",
+      "R. Scannell",
+      "S. Silburn",
+      "T. Wijkamp",
+      "D. Brida",
+      "C. Theiler",
+      "the EUROfusion Tokamak Exploitation Team",
+      "the MAST Upgrade Team"
+    ],
+    "submission_date": "2026-01-29T15:18:51Z",
+    "latest_updated": "2026-01-29T15:18:51Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.21840v1"
+    ],
+    "abstract": "The first high-power (> 3 MW) H-mode experiments using a double-null X-point-target (XPT) divertor configuration have been performed on MAST-U. The XPT geometry is obtained by combining a large strike point radius, similar to the Super-X divertor (SXD), with an additional X-point near the separatrix in the baffled outer divertor chambers and leads to additional exhaust benefits over the SXD. The broader electron density profile near the secondary X-point leads to additional plasma-neutral interactions, evidenced by a broader hydrogenic emission profile, and resulting in larger power and ion sinks. The increase in plasma-neutral interactions also leads to lower target electron temperatures and heat fluxes. These benefits appear to extend to transients, and preliminary evidence of improved ELM buffering in the XPT is presented. These results showcase how multiple alternative divertor configuration strategies can be combined to improve momentum, power, and particle losses, which may be required for the challenging exhaust conditions of future reactors.",
+    "status": "found"
+  },
+  "2601.21841": {
+    "arxiv_id": "2601.21841",
+    "title": "Embodied Task Planning via Graph-Informed Action Generation with Large Language Models",
+    "authors": [
+      "Xiang Li",
+      "Ning Yan",
+      "Masood Mortazavi"
+    ],
+    "submission_date": "2026-01-29T15:18:58Z",
+    "latest_updated": "2026-05-17T22:32:46Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2601.21841v1",
+      "2601.21841v2",
+      "2601.21841v3"
+    ],
+    "abstract": "While Large Language Models (LLMs) have demonstrated strong zero-shot reasoning capabilities, their deployment as embodied agents still faces fundamental challenges in long-horizon planning. Unlike open-ended text generation, embodied agents must decompose high-level intents into actionable sub-goals while adhering to the constraints of a dynamic environment. Standard LLM planners frequently fail to maintain strategy coherence over extended horizons due to context window limitations or hallucinate state transitions that violate environment constraints. We propose GiG, a planning framework that structures embodied agents' memory using a Graph-in-Graph architecture. Our approach employs a Graph Neural Network (GNN) to encode environmental states into embeddings, organizing these embeddings into action-connected execution trace graphs within an experience memory bank. GiG enables retrieval of structurally-similar priors, allowing agents to ground current decisions in relevant past structural patterns. Furthermore, we introduce a bounded lookahead module that leverages symbolic transition logic to enhance the agent's planning capabilities through grounded action projections. We evaluate our framework on three embodied planning benchmarks-Robotouille Synchronous, Robotouille Asynchronous, and ALFWorld. Our method outperforms state-of-the-art baselines, achieving Pass@1 performance gains of up to 22% on Robotouille Synchronous, 37% on Asynchronous, and 15% on ALFWorld while maintaining comparable or lower computational cost.",
+    "status": "found"
+  },
+  "2601.21842": {
+    "arxiv_id": "2601.21842",
+    "title": "Optimal Software Pipelining using an SMT-Solver",
+    "authors": [
+      "Jan-Willem Roorda"
+    ],
+    "submission_date": "2026-01-29T15:19:12Z",
+    "latest_updated": "2026-01-30T14:08:20Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.21842v1",
+      "2601.21842v2"
+    ],
+    "abstract": "Software Pipelining is a classic and important loop-optimization for VLIW processors. It improves instruction-level parallelism by overlapping multiple iterations of a loop and executing them in parallel. Typically, it is implemented using heuristics. In this paper, we present an optimal software pipeliner based on a Satisfiability Modulo Theories (SMT) Solver. We show that our approach significantly outperforms heuristic algorithms and hand-optimization. Furthermore, we show how the solver can be used to give feedback to programmers and processor designers on why a software pipelined schedule of a certain initiation interval is not feasible.",
+    "status": "found"
+  },
+  "2601.21843": {
+    "arxiv_id": "2601.21843",
+    "title": "The Leibniz adjunction in homotopy type theory, with an application to simplicial type theory",
+    "authors": [
+      "Tom de Jong",
+      "Nicolai Kraus",
+      "Axel Ljungström"
+    ],
+    "submission_date": "2026-01-29T15:19:28Z",
+    "latest_updated": "2026-06-17T09:08:35Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.21843v1",
+      "2601.21843v2"
+    ],
+    "abstract": "Simplicial type theory extends homotopy type theory and equips types with a notion of directed morphisms. A Segal type is defined to be a type in which these directed morphisms can be composed. We show that all higher coherences can be stated and derived if simplicial type theory is taken to be homotopy type theory with a postulated interval type. In technical terms, this means that if a type has unique fillers for $(2,1)$-horns, it has unique fillers for all inner $(n,k)$-horns. This generalizes a result of Riehl and Shulman for the case $n = 3, k \\in \\{1, 2\\}$. Our main technical tool is the Leibniz adjunction: the pushout-product is left adjoint to the pullback-hom in the wild category of types. While this adjunction is well known for ordinary categories, it is much more involved for higher categories, and the fact that it can be proved for the wild category of types (a higher category without stated higher coherences) is non-trivial. We make profitable use of the equivalence between the wild category of maps and that of families. We have formalized the results in Cubical Agda.",
+    "status": "found"
+  },
+  "2601.21844": {
+    "arxiv_id": "2601.21844",
+    "title": "Bridging Forecast Accuracy and Inventory KPIs: A Simulation-Based Software Framework",
+    "authors": [
+      "So Fukuhara",
+      "Abdallah Alabdallah",
+      "Nuwan Gunasekara",
+      "Slawomir Nowaczyk"
+    ],
+    "submission_date": "2026-01-29T15:20:33Z",
+    "latest_updated": "2026-01-31T12:21:26Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.21844v1",
+      "2601.21844v2"
+    ],
+    "abstract": "Efficient management of spare parts inventory is crucial in the automotive aftermarket, where demand is highly intermittent and uncertainty drives substantial cost and service risks. Forecasting is therefore central, but the quality of forecasting models should be judged not by statistical accuracy (e.g., MAE, RMSE) but rather by its impact on key operational performance indicators (KPIs), such as total cost and service level. Yet most existing work evaluates models exclusively using accuracy metrics, and the relationship between these metrics and KPIs remains poorly understood. To address this gap, we propose a decision-centric simulation software framework that enables systematic evaluation of forecasting models in realistic inventory management setting. The framework comprises: (i) a synthetic demand generator tailored to spare-parts demand characteristics, (ii) a flexible forecasting module that can host arbitrary predictive models, and (iii) an inventory control simulator that consumes the forecasts and computes operational KPIs. This closed-loop setup enables researchers to evaluate models not only in terms of statistical error but also in terms of downstream inventory implications. Using a wide range of simulation scenarios, we show that improvements in accuracy metrics do not necessarily lead to better KPIs, and that models with similar error profiles can induce different cost-service trade-offs. We analyze these discrepancies to characterize how forecast performance affects inventory outcomes and derive guidance for model selection. Overall, the framework links demand forecasting and inventory management, shifting evaluation from predictive accuracy toward operational relevance in the automotive aftermarket and related domains. An open-source implementation of the software is available at https://github.com/caisr-hh/TruckParts-Demand-Inventory-Simulator/releases/tag/IDA_2026.",
+    "status": "found"
+  },
+  "2601.21845": {
+    "arxiv_id": "2601.21845",
+    "title": "Constrained Meta Reinforcement Learning with Provable Test-Time Safety",
+    "authors": [
+      "Tingting Ni",
+      "Maryam Kamgarpour"
+    ],
+    "submission_date": "2026-01-29T15:21:37Z",
+    "latest_updated": "2026-05-26T09:03:55Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.21845v1",
+      "2601.21845v2"
+    ],
+    "abstract": "Meta reinforcement learning (RL) allows agents to leverage experience across a distribution of tasks on which the agent can train at will, enabling faster learning of optimal policies on new test tasks. Despite its success in improving sample complexity on test tasks, many real-world applications, such as robotics and healthcare, impose safety constraints during testing. Constrained meta RL provides a promising framework for integrating safety into meta RL. An open question in constrained meta RL is how to ensure safety of the policy on the real-world test task, while reducing the sample complexity and thus, enabling faster learning of optimal policies. To address this gap, we propose an algorithm that refines policies learned during training, with provable safety and sample complexity guarantees for learning a near optimal policy on the test tasks. We further derive a matching lower bound, showing that this sample complexity is tight.",
+    "status": "found"
+  },
+  "2601.21846": {
+    "arxiv_id": "2601.21846",
+    "title": "Optimal Energy-Aware Service Management in Future Networks with a Gamified Incentives Mechanism",
+    "authors": [
+      "Konstantinos Varsos",
+      "Adamantia Stamou",
+      "George D. Stamoulis",
+      "Vasillios A. Siris"
+    ],
+    "submission_date": "2026-01-29T15:22:20Z",
+    "latest_updated": "2026-01-29T15:22:20Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.21846v1"
+    ],
+    "abstract": "As energy demands surge across ICT infrastructures, service providers must engage users in sustainable practices while maintaining the Quality of Experience (QoE) at acceptable levels. In this paper, we introduce such an approach, leveraging gamified incentives and a model for user's acceptance on incentives, thus encouraging energy-efficient behaviors such as adaptive bitrate streaming. Each user is characterized by an environmental sensitivity factor and a private incentive threshold, shaping probabilistic responses to energy-saving offers. A serious-game mechanism based on positive behavioral reinforcement and rewards of the users, due to their inclusion in top-K and bottom-M rankings, fosters peer comparison and competition, thus transforming passive acceptance into active engagement. Moreover, within a Stackelberg game formulation, the video streaming service provider--acting as the strategic leader--optimizes both incentive levels and game parameters to achieve network-wide energy and traffic reductions, while adhering to budgetary constraints. This structured approach empowers providers with proactive, application-level control over energy consumption, offering them measurable benefits such as reduced high-bitrate traffic and increased participation in energy-saving behaviors, while also considering user satisfaction. The results of our simulations show that indeed gamification boosts significantly user participation and energy savings provided that the incentive and game parameters are chosen optimally.",
+    "status": "found"
+  },
+  "2601.21847": {
+    "arxiv_id": "2601.21847",
+    "title": "READY: Reward Discovery for Meta-Black-Box Optimization",
+    "authors": [
+      "Zechuan Huang",
+      "Zhiguang Cao",
+      "Hongshu Guo",
+      "Yue-Jiao Gong",
+      "Zeyuan Ma"
+    ],
+    "submission_date": "2026-01-29T15:23:18Z",
+    "latest_updated": "2026-01-29T15:23:18Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.21847v1"
+    ],
+    "abstract": "Meta-Black-Box Optimization (MetaBBO) is an emerging avenue within Optimization community, where algorithm design policy could be meta-learned by reinforcement learning to enhance optimization performance. So far, the reward functions in existing MetaBBO works are designed by human experts, introducing certain design bias and risks of reward hacking. In this paper, we use Large Language Model~(LLM) as an automated reward discovery tool for MetaBBO. Specifically, we consider both effectiveness and efficiency sides. On effectiveness side, we borrow the idea of evolution of heuristics, introducing tailored evolution paradigm in the iterative LLM-based program search process, which ensures continuous improvement. On efficiency side, we additionally introduce multi-task evolution architecture to support parallel reward discovery for diverse MetaBBO approaches. Such parallel process also benefits from knowledge sharing across tasks to accelerate convergence. Empirical results demonstrate that the reward functions discovered by our approach could be helpful for boosting existing MetaBBO works, underscoring the importance of reward design in MetaBBO. We provide READY's project at https://anonymous.4open.science/r/ICML_READY-747F.",
+    "status": "found"
+  },
+  "2601.21848": {
+    "arxiv_id": "2601.21848",
+    "title": "Compact Stars Sourced by Perfect Fluid Dark Matter Halos",
+    "authors": [
+      "Yuan Yue",
+      "Yong-Qiang Wang"
+    ],
+    "submission_date": "2026-01-29T15:24:26Z",
+    "latest_updated": "2026-01-29T15:24:26Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.21848v1"
+    ],
+    "abstract": "Recent studies have shown that dark matter halos can support regular black holes or compact stars by assuming an anisotropic energy-momentum tensor. In this paper, we extend the analysis to the dark matter halo as an isotropic perfect fluid. By employing galactic dark matter profiles-specifically the Einasto and Dehnen models-as the mass-energy density source, we numerically solve the Einstein field equations and find a class of non-singular, horizonless compact star solutions. Moreover, these configurations remain stable against axial perturbations while satisfying the dominant energy condition.",
+    "status": "found"
+  },
+  "2601.21849": {
+    "arxiv_id": "2601.21849",
+    "title": "$p$-Kähler structures on fibrations and reductive Lie groups",
+    "authors": [
+      "Anna Fino",
+      "Gueo Grantcharov",
+      "Asia Mainenti"
+    ],
+    "submission_date": "2026-01-29T15:24:40Z",
+    "latest_updated": "2026-01-29T15:24:40Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.21849v1"
+    ],
+    "abstract": "We investigate the existence of $p$-Kähler structures on two classes of complex manifolds: on quasi-regular fibrations, with particular emphasis on complex homogeneous spaces, and on reductive Lie groups endowed with invariant complex structures. In the latter setting, we construct non-regular complex structures on the Lie algebras $\\mathfrak{sl}(2m-1,\\mathbb{R})$ for $m \\ge 2$ and show that these structures admit compatible balanced metrics, providing new explicit examples of balanced manifolds.",
+    "status": "found"
+  },
+  "2601.21850": {
+    "arxiv_id": "2601.21850",
+    "title": "Center of the affine $\\mathfrak{gl}_{n|1}$ at the critical level and pseudo-differential operators",
+    "authors": [
+      "Dražen Adamović",
+      "Boris Feigin",
+      "Shigenori Nakatsuka"
+    ],
+    "submission_date": "2026-01-29T15:25:20Z",
+    "latest_updated": "2026-01-29T15:25:20Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.21850v1"
+    ],
+    "abstract": "We prove that the center of the affine Lie algebra $\\widehat{\\mathfrak{gl}}_{n|1}$ at the critical level is generated by the coefficients in the expansion of the pseudo-differential operator $(\\partial_z-u_1(z))\\cdots (\\partial_z-u_n(z))(\\partial_z+u_{n+1}(z))^{-1}$ taking values in the Cartan subalgebra. This is an affine analogue of the Harish-Chandra isomorphism in the finite case. The key ingredient of the proof is the identification of the center with the Heisenberg coset of the regular W-superalgebra of $\\mathfrak{gl}_{n|1}$ at the critical level, whose associated graded algebra is realized as the affine supersymmetric polynomials. Based on this, we derive a character formula for the center, which coincides with the generating function of plane partitions with a pit condition. We also prove that the Heisenberg coset at generic levels has a similar interpretation in terms of pseudo-differential operators that deform the one at the critical level.",
+    "status": "found"
+  },
+  "2601.21851": {
+    "arxiv_id": "2601.21851",
+    "title": "Visual Disentangled Diffusion Autoencoders: Scalable Counterfactual Generation for Foundation Models",
+    "authors": [
+      "Sidney Bender",
+      "Marco Morik"
+    ],
+    "submission_date": "2026-01-29T15:25:37Z",
+    "latest_updated": "2026-05-06T16:03:53Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.21851v1",
+      "2601.21851v2"
+    ],
+    "abstract": "Foundation models, despite their robust zero-shot capabilities, remain vulnerable to spurious correlations and 'Clever Hans' strategies. Existing mitigation methods often rely on unavailable group labels or computationally expensive gradient-based adversarial optimization. To address these limitations, we propose Visual Disentangled Diffusion Autoencoders (DiDAE), a novel framework integrating frozen foundation models with disentangled dictionary learning for efficient, gradient-free counterfactual generation directly for the foundation model. DiDAE first edits foundation model embeddings in interpretable disentangled directions of the disentangled dictionary and then decodes them via a diffusion autoencoder. This allows the generation of multiple diverse, disentangled counterfactuals for each factual, much faster than existing baselines, which generate single entangled counterfactuals. When paired with Counterfactual Knowledge Distillation, DiDAE-CFKD achieves state-of-the-art performance in mitigating shortcut learning, improving downstream performance on unbalanced datasets.",
+    "status": "found"
+  },
+  "2601.21852": {
+    "arxiv_id": "2601.21852",
+    "title": "Celestial energy-energy correlation in Yang-Mills theory and gravity",
+    "authors": [
+      "HongYi Ruan",
+      "YiZhe Zheng",
+      "Hua Xing Zhu"
+    ],
+    "submission_date": "2026-01-29T15:25:50Z",
+    "latest_updated": "2026-09-06T16:41:01Z",
+    "revised_dates": null,
+    "venue": "Phys. Rev. D 114, 065004 (2026)",
+    "latest_version": 2,
+    "versions": [
+      "2601.21852v1",
+      "2601.21852v2"
+    ],
+    "abstract": "We introduce the celestial energy-energy correlator (cEEC), an infrared and collinear safe observable that makes the celestial conformal symmetry of four-dimensional scattering manifest. The cEEC is defined as a correlation function of average null energy operators measured on boost eigenstates and takes the form of a four-point function in a fictitious two-dimensional conformal field theory on the celestial sphere. An important feature of the cEEC is that it smoothly interpolates between different key regimes of perturbative gauge theory and gravity, such as the collinear limit, the Sudakov limit, and the Regge limit. We compute the cEEC to the first nontrivial order in $\\mathcal{N}=4$ super Yang-Mills theory, pure Yang-Mills theory, Einstein gravity, and $\\mathcal{N}=8$ supergravity. In $\\mathcal{N}=8$ supergravity, the cEEC is uniquely determined by celestial symmetries and boundary data, demonstrating that bootstrap methods can yield closed-form results for this class of observables.",
+    "status": "found"
+  },
+  "2601.21853": {
+    "arxiv_id": "2601.21853",
+    "title": "LEMUR: Learned Multi-Vector Retrieval",
+    "authors": [
+      "Elias Jääsaari",
+      "Ville Hyvönen",
+      "Teemu Roos"
+    ],
+    "submission_date": "2026-01-29T15:26:32Z",
+    "latest_updated": "2026-05-21T17:20:12Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.21853v1",
+      "2601.21853v2"
+    ],
+    "abstract": "Multi-vector representations generated by late interaction models, such as ColBERT, enable superior retrieval quality compared to single-vector representations in information retrieval applications. In multi-vector retrieval systems, both queries and documents are encoded using one embedding per token, and similarity between queries and documents is measured by the MaxSim similarity measure. However, the improved quality of multi-vector retrieval comes at the expense of significantly increased search latency. In this work, we introduce LEMUR, a simple yet efficient framework for multi-vector similarity search. LEMUR consists of two consecutive problem reductions: First, we formulate multi-vector similarity search as a supervised learning problem that can be solved using a one-hidden-layer neural network. Second, we reduce inference under this model to single-vector similarity search in its latent space, enabling the use of existing single-vector search indexes to accelerate retrieval. LEMUR is an order of magnitude faster than prior multi-vector similarity search methods. Our code is available at https://github.com/ejaasaari/lemur",
+    "status": "found"
+  },
+  "2601.21854": {
+    "arxiv_id": "2601.21854",
+    "title": "Unique Continuation Property for Stochastic Wave Equations",
+    "authors": [
+      "Qi Lü",
+      "Zhonghua Liao"
+    ],
+    "submission_date": "2026-01-29T15:27:03Z",
+    "latest_updated": "2026-01-29T15:27:03Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.21854v1"
+    ],
+    "abstract": "This paper establishes a fundamental and surprising phenomenon in the theory of stochastic wave equations: the restoration of the unique continuation property (UCP) across characteristic hypersurfaces, a property that is known to fail generically in the deterministic setting. We prove that if a solution to a linear stochastic wave equation vanishes on one side of a characteristic surface $Γ$, then it must vanish in a full neighborhood of any point on $Γ$, provided the stochastic diffusion coefficient is non-degenerate. This result stands in sharp contrast to the classical Hörmander-type counterexamples for deterministic waves. Furthermore, we extend the UCP to equations with non-homogeneous stochastic sources and establish a global unique continuation result from the interior of an arbitrarily narrow characteristic cone. Our proofs rely on a novel stochastic Carleman estimate, where the Itô diffusion term introduces a crucial positive energy contribution that is absent in deterministic models. These findings demonstrate a qualitative difference between deterministic and stochastic hyperbolic dynamics and open new avenues for control theory and inverse problems in stochastic setting.",
+    "status": "found"
+  },
+  "2601.21855": {
+    "arxiv_id": "2601.21855",
+    "title": "Adaptive Probabilistic Skyline Analytics for Mobile Edge-Cloud Systems via State-Aware Deep Reinforcement Learning",
+    "authors": [
+      "Chuan-Chi Lai"
+    ],
+    "submission_date": "2026-01-29T15:27:53Z",
+    "latest_updated": "2026-08-25T13:49:05Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2601.21855v1",
+      "2601.21855v2",
+      "2601.21855v3"
+    ],
+    "abstract": "The proliferation of Mobile Edge Computing (MEC) and distributed sensing necessitates efficient Probabilistic Skyline (PSKY) query analytics at the network edge. However, this process is severely constrained by the computation-communication trade-off under constrained wireless capacity and dynamic traffic conditions. Furthermore, mobility-induced workload fluctuations and spatio-temporal data shifts render static filtering policies inefficient, often triggering network congestion or compromising query fidelity. To address these systemic inefficiencies in dynamic mobile environments, this paper introduces SA-PSKY, a self-adaptive framework integrating deep reinforcement learning into a distributed query optimization architecture. We formulate the probabilistic skyline filtering as an adaptive control problem and develop a State-Aware Adaptive Weighting (SAAW) mechanism to dynamically regulate computation, communication, and fidelity. By incorporating Prioritized Experience Replay (PER) to stabilize learning around abrupt network transitions, our framework reliably navigates the Pareto-efficient operating point. Empirical evaluations confirm that SA-PSKY achieves substantial latency reduction while preserving query fidelity under constrained communication resources. Furthermore, zero-shot robustness analyses reveal superior adaptation to unseen mobility-induced uncertainty shifts, where rigid methods exhibit severe policy degradation.",
+    "status": "found"
+  }
+}

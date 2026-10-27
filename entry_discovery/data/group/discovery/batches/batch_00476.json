@@ -1,0 +1,429 @@
+{
+  "2601.22676": {
+    "arxiv_id": "2601.22676",
+    "title": "VarParser: Unleashing the Neglected Power of Variables for LLM-based Log Parsing",
+    "authors": [
+      "Jinrui Sun",
+      "Tong Jia",
+      "Minghua He",
+      "Ying Li"
+    ],
+    "submission_date": "2026-01-30T07:49:54Z",
+    "latest_updated": "2026-03-12T06:20:02Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.22676v1",
+      "2601.22676v2"
+    ],
+    "abstract": "Logs serve as a primary source of information for engineers to diagnose failures in large-scale online service systems. Log parsing, which extracts structured events from massive unstructured log data, is a critical first step for downstream tasks like anomaly detection and failure diagnosis. With advances in large language models (LLMs), leveraging their strong text understanding capabilities has proven effective for accurate log parsing. However, existing LLM-based log parsers all focus on the constant part of logs, ignoring the potential contribution of the variable part to log parsing. This constant-centric strategy brings four key problems. First, inefficient log grouping and sampling with only constant information. Second, a relatively large number of LLM invocations due to constant-based cache, leading to low log parsing accuracy and efficiency. Third, a relatively large number of consumed constant tokens in prompts leads to high LLM invocation costs. At last, these methods only retain placeholders in the results, losing the system visibility brought by variable information in logs. Facing these problems, we propose a variable-centric log parsing strategy named VarParser. Through variable contribution sampling, variable-centric parsing cache, and adaptive variable-aware in-context learning, our approach can efficiently capture the variable parts of logs and leverage their contributions to parsing. By introducing variable units, we preserve rich variable information, enhancing the integrity of log parsing results. Extensive evaluations on large-scale datasets demonstrate that VarParser achieves higher accuracy compared to existing methods, significantly improving parsing efficiency while reducing the LLM invocation costs.",
+    "status": "found"
+  },
+  "2601.22677": {
+    "arxiv_id": "2601.22677",
+    "title": "Distinguishing the nature of dark matter by mapping cosmic filaments from Lyman-alpha emission",
+    "authors": [
+      "Yizhou Liu",
+      "Liang Gao",
+      "Shihong Liao",
+      "Kai Zhu",
+      "Yingjie Jing",
+      "Huijie Hu"
+    ],
+    "submission_date": "2026-01-30T07:50:00Z",
+    "latest_updated": "2026-08-14T16:15:32Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.22677v1",
+      "2601.22677v2"
+    ],
+    "abstract": "The standard $Λ$CDM cosmological model predicts that cosmic filaments are highly clumpy, whereas warm dark matter -- invoked to address small-scale challenges in $Λ$CDM -- produces filaments that are noticeably smoother and less structured. In this work, we investigate the potential of Lyman $α$ (Ly$α$) emission to trace cosmic filaments at redshifts $z=2.5$ and $z=4$, and assess their potential for constraining the nature of dark matter. Our analysis shows that Ly$α$ filaments provide a promising observational probe of dark matter: at $z=4$, differences in filament smoothness and surface brightness serve as distinctive signatures between models. Looking ahead, the upcoming generation of 30-meter class telescopes will be critical for enabling these measurements, offering a compelling opportunity to distinguish the nature of dark matter by mapping the structure of cosmic filaments.",
+    "status": "found"
+  },
+  "2601.22678": {
+    "arxiv_id": "2601.22678",
+    "title": "Full-Graph vs. Mini-Batch Training: Comprehensive Analysis from a Batch Size and Fan-Out Size Perspective",
+    "authors": [
+      "Mengfan Liu",
+      "Da Zheng",
+      "Junwei Su",
+      "Chuan Wu"
+    ],
+    "submission_date": "2026-01-30T07:51:38Z",
+    "latest_updated": "2026-05-17T06:07:50Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2601.22678v1",
+      "2601.22678v2",
+      "2601.22678v3"
+    ],
+    "abstract": "Full-graph and mini-batch Graph Neural Network (GNN) training approaches have distinct system design demands, making it crucial to choose the appropriate approach to develop. A core challenge in comparing these two GNN training approaches lies in characterizing their model performance (i.e., convergence and generalization) and computational efficiency. While a batch size has been an effective lens in analyzing such behaviors in deep neural networks (DNNs), GNNs extend this lens by introducing a fan-out size, as full-graph training can be viewed as mini-batch training with the largest possible batch size and fan-out size. However, the impact of the batch and fan-out size for GNNs remains insufficiently explored. To this end, this paper systematically compares full-graph vs. mini-batch training of GNNs through empirical and theoretical analyses from the view points of the batch size and fan-out size. Our key contributions include: 1) We provide a novel generalization analysis using the Wasserstein distance to study the impact of the graph structure, especially the fan-out size. 2) We uncover the non-isotropic effects of the batch size and the fan-out size in GNN convergence and generalization, providing practical guidance for tuning these hyperparameters under resource constraints. Finally, full-graph training does not always yield better model performance or computational efficiency than well-tuned smaller mini-batch settings. The implementation can be found in the github link: https://github.com/LIUMENGFAN-gif/GNN_fullgraph_minibatch_training.",
+    "status": "found"
+  },
+  "2601.22679": {
+    "arxiv_id": "2601.22679",
+    "title": "Stabilizing Consistency Training: A Flow Map Analysis and Self-Distillation",
+    "authors": [
+      "Youngjoong Kim",
+      "Duhoe Kim",
+      "Woosung Kim",
+      "Jaesik Park"
+    ],
+    "submission_date": "2026-01-30T07:51:55Z",
+    "latest_updated": "2026-06-20T05:34:10Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.22679v1",
+      "2601.22679v2"
+    ],
+    "abstract": "Consistency models have been proposed for fast generative modeling, achieving results competitive with diffusion and flow models. However, these methods exhibit inherent instability and limited reproducibility when training from scratch, motivating subsequent work to explain and stabilize these issues. While these efforts have provided valuable insights, the explanations remain fragmented, and the theoretical relationships remain unclear. In this work, we provide a theoretical examination of consistency models by analyzing them from a flow map-based perspective. This joint analysis clarifies how training stability and convergence behavior can give rise to degenerate solutions. Building on these insights, we revisit self-distillation as a practical remedy for certain forms of suboptimal convergence and reformulate it to avoid excessive gradient norms for stable optimization. We demonstrate that our strategy extends beyond image generation to diffusion-based policy learning, without reliance on pretrained diffusion models for initialization, illustrating its broader applicability.",
+    "status": "found"
+  },
+  "2601.22680": {
+    "arxiv_id": "2601.22680",
+    "title": "Visual Personalization Turing Test",
+    "authors": [
+      "Rameen Abdal",
+      "James Burgess",
+      "Sergey Tulyakov",
+      "Kuan-Chieh Jackson Wang"
+    ],
+    "submission_date": "2026-01-30T07:53:07Z",
+    "latest_updated": "2026-01-30T07:53:07Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22680v1"
+    ],
+    "abstract": "We introduce the Visual Personalization Turing Test (VPTT), a new paradigm for evaluating contextual visual personalization based on perceptual indistinguishability, rather than identity replication. A model passes the VPTT if its output (image, video, 3D asset, etc.) is indistinguishable to a human or calibrated VLM judge from content a given person might plausibly create or share. To operationalize VPTT, we present the VPTT Framework, integrating a 10k-persona benchmark (VPTT-Bench), a visual retrieval-augmented generator (VPRAG), and the VPTT Score, a text-only metric calibrated against human and VLM judgments. We show high correlation across human, VLM, and VPTT evaluations, validating the VPTT Score as a reliable perceptual proxy. Experiments demonstrate that VPRAG achieves the best alignment-originality balance, offering a scalable and privacy-safe foundation for personalized generative AI.",
+    "status": "found"
+  },
+  "2601.22681": {
+    "arxiv_id": "2601.22681",
+    "title": "Anisotropic Minkowski Content for Countably $\\mathcal{H}^k$-rectifiable Sets",
+    "authors": [
+      "Filip Fryš"
+    ],
+    "submission_date": "2026-01-30T07:53:34Z",
+    "latest_updated": "2026-07-29T16:54:57Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2601.22681v1",
+      "2601.22681v2",
+      "2601.22681v3"
+    ],
+    "abstract": "We study anisotropic Minkowski content for lower-dimensional rectifiable sets. First, we prove that, for every convex body \\(C\\subseteq\\mathbb R^n\\), the \\(k\\)-dimensional \\(C\\)-anisotropic Minkowski content of every compact \\(k\\)-rectifiable set exists. We show that it is given by an integral involving the \\((n-k)\\)-dimensional volumes of the projections of \\(C\\) onto the approximate normal spaces of the set. We then establish the same formula for closed countably \\(\\mathcal H^k\\)-rectifiable sets of finite \\(\\mathcal H^k\\)-measure satisfying an AFP-\\(k\\)-condition relative to the linear span of \\(C\\), provided that the condition is witnessed by a finite Radon measure. Finally, we prove that, for a countably \\(\\mathcal H^k\\)-rectifiable set, if the formula holds for one full-dimensional convex body, then it holds for every full-dimensional convex body.",
+    "status": "found"
+  },
+  "2601.22682": {
+    "arxiv_id": "2601.22682",
+    "title": "SUN-DSBO: A Structured Unified Framework for Nonconvex Decentralized Stochastic Bilevel Optimization",
+    "authors": [
+      "Yaoshuai Ma",
+      "Xiao Wang",
+      "Wei Yao",
+      "Jin Zhang"
+    ],
+    "submission_date": "2026-01-30T07:55:32Z",
+    "latest_updated": "2026-01-30T07:55:32Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22682v1"
+    ],
+    "abstract": "Decentralized stochastic bilevel optimization (DSBO) is a powerful tool for various machine learning tasks, including decentralized meta-learning and hyperparameter tuning. Existing DSBO methods primarily address problems with strongly convex lower-level objective functions. However, nonconvex objective functions are increasingly prevalent in modern deep learning. In this work, we introduce SUN-DSBO, a Structured Unified framework for Nonconvex DSBO, in which both the upper- and lower-level objective functions may be nonconvex. Notably, SUN-DSBO offers the flexibility to incorporate decentralized stochastic gradient descent or various techniques for mitigating data heterogeneity, such as gradient tracking (GT). We demonstrate that SUN-DSBO-GT, an adaptation of the GT technique within our framework, achieves a linear speedup with respect to the number of agents. This is accomplished without relying on restrictive assumptions, such as gradient boundedness or any specific assumptions regarding gradient heterogeneity. Numerical experiments validate the effectiveness of our method.",
+    "status": "found"
+  },
+  "2601.22683": {
+    "arxiv_id": "2601.22683",
+    "title": "Dynamics of magnetoviscous warped discs around compact objects",
+    "authors": [
+      "Arthur G. Suvorov",
+      "Kostas Glampedakis"
+    ],
+    "submission_date": "2026-01-30T07:55:46Z",
+    "latest_updated": "2026-07-17T09:29:40Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2601.22683v1",
+      "2601.22683v2",
+      "2601.22683v3"
+    ],
+    "abstract": "Accretion discs that are tilted with respect to their compact hosts can warp out-of-plane through general relativistic frame-dragging. Warp influences disc dynamics in ways that have been studied extensively, especially as regards instabilities that might lead to rapid angular-momentum cancellation between neighboring rings of fluid and mass infall. We provide a review of warped-disc phenomena here, revisiting key hydrodynamical assumptions that impact calculations of the shear viscosity controlling instability thresholds. Relativistic effects at the level of gas-parcel orbits are included, as are external Lorentz forces applied by the compact primary's magnetic field. Semianalytic analysis reveals that intense magnetic fields can bring about new branches of warp modes and avoided crossings that significantly reduce the perpendicular viscosity at sub-Eddington accretion rates. Critical strengths required for misaligned torques to tear a thin disc may thus relax for systems like neutron star X-ray binaries or radio-loud active galactic nuclei.",
+    "status": "found"
+  },
+  "2601.22684": {
+    "arxiv_id": "2601.22684",
+    "title": "BioModelsRAG: A Biological Modeling Assistant Using RAG (Retrieval Augmented Generation)",
+    "authors": [
+      "Bhavyahshree Navaneetha Krishnan",
+      "Adel Heydarabadipour",
+      "Herbert Sauro"
+    ],
+    "submission_date": "2026-01-30T07:58:57Z",
+    "latest_updated": "2026-01-30T07:58:57Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22684v1"
+    ],
+    "abstract": "The BioModels database is one of the premier databases for computational models in systems biology. The database contains over 1000 curated models and an even larger number of non-curated models. All the models are stored in the machine-readable format, SBML. Although SBML can be translated into the human readable Antimony format, analyzing the models can still be time consuming. In order to bridge this gap, a LLM (large language model) assistant was created to analyze the BioModels and allow interaction between the user and the model using natural language. By doing so, a user can easily and rapidly extract the salient points in a given model. Our analysis workflow involved 'chunking' BioModels and converting them to plain text using llama3, and then embedding them in a ChromaDB database. The user-provided query was also embedded, and a similarity search was performed between the query and the BioModels in ChromaDB to extract the most relevant BioModels. The BioModels were then used as context to create the most accurate output in the chat between the user and the LLM. This approach greatly minimized the chance of hallucination and kept the LLM focused on the problem at hand.",
+    "status": "found"
+  },
+  "2601.22685": {
+    "arxiv_id": "2601.22685",
+    "title": "OOVDet: Low-Density Prior Learning for Zero-Shot Out-of-Vocabulary Object Detection",
+    "authors": [
+      "Binyi Su",
+      "Chenghao Huang",
+      "Haiyong Chen"
+    ],
+    "submission_date": "2026-01-30T07:59:35Z",
+    "latest_updated": "2026-01-30T07:59:35Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22685v1"
+    ],
+    "abstract": "Zero-shot out-of-vocabulary detection (ZS-OOVD) aims to accurately recognize objects of in-vocabulary (IV) categories provided at zero-shot inference, while simultaneously rejecting undefined ones (out-of-vocabulary, OOV) that lack corresponding category prompts. However, previous methods are prone to overfitting the IV classes, leading to the OOV or undefined classes being misclassified as IV ones with a high confidence score. To address this issue, this paper proposes a zero-shot OOV detector (OOVDet), a novel framework that effectively detects predefined classes while reliably rejecting undefined ones in zero-shot scenes. Specifically, due to the model's lack of prior knowledge about the distribution of OOV data, we synthesize region-level OOV prompts by sampling from the low-likelihood regions of the class-conditional Gaussian distributions in the hidden space, motivated by the assumption that unknown semantics are more likely to emerge in low-density areas of the latent space. For OOV images, we further propose a Dirichlet-based gradient attribution mechanism to mine pseudo-OOV image samples, where the attribution gradients are interpreted as Dirichlet evidence to estimate prediction uncertainty, and samples with high uncertainty are selected as pseudo-OOV images. Building on these synthesized OOV prompts and pseudo-OOV images, we construct the OOV decision boundary through a low-density prior constraint, which regularizes the optimization of OOV classes using Gaussian kernel density estimation in accordance with the above assumption. Experimental results show that our method significantly improves the OOV detection performance in zero-shot scenes. The code is available at https://github.com/binyisu/OOV-detector.",
+    "status": "found"
+  },
+  "2601.22686": {
+    "arxiv_id": "2601.22686",
+    "title": "FlyAware: Inertia-Aware Aerial Manipulation via Vision-Based Estimation and Post-Grasp Adaptation",
+    "authors": [
+      "Biyu Ye",
+      "Na Fan",
+      "Zhengping Fan",
+      "Weiliang Deng",
+      "Hongming Chen",
+      "Qifeng Chen",
+      "Ximin Lyu"
+    ],
+    "submission_date": "2026-01-30T08:02:33Z",
+    "latest_updated": "2026-01-30T08:02:33Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22686v1"
+    ],
+    "abstract": "Aerial manipulators (AMs) are gaining increasing attention in automated transportation and emergency services due to their superior dexterity compared to conventional multirotor drones. However, their practical deployment is challenged by the complexity of time-varying inertial parameters, which are highly sensitive to payload variations and manipulator configurations. Inspired by human strategies for interacting with unknown objects, this letter presents a novel onboard framework for robust aerial manipulation. The proposed system integrates a vision-based pre-grasp inertia estimation module with a post-grasp adaptation mechanism, enabling real-time estimation and adaptation of inertial dynamics. For control, we develop an inertia-aware adaptive control strategy based on gain scheduling, and assess its robustness via frequency-domain system identification. Our study provides new insights into post-grasp control for AMs, and real-world experiments validate the effectiveness and feasibility of the proposed framework.",
+    "status": "found"
+  },
+  "2601.22687": {
+    "arxiv_id": "2601.22687",
+    "title": "A Mathematical Analysis of a Smooth-Convex-Concave Splitting Scheme for the Swift--Hohenberg Equation",
+    "authors": [
+      "Yuki Yonekura",
+      "Daiki Iwade",
+      "Shun Sato",
+      "Takayasu Matsuo"
+    ],
+    "submission_date": "2026-01-30T08:02:38Z",
+    "latest_updated": "2026-01-30T08:02:38Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22687v1"
+    ],
+    "abstract": "The Swift--Hohenberg equation is a widely studied fourth-order model, originally proposed to describe hydrodynamic fluctuations. It admits an energy-dissipation law and, under suitable assumptions, bounded solutions. Many structure-preserving numerical schemes have been proposed to retain such properties; however, existing approaches are often fully implicit and therefore computationally expensive. We introduce a simple design principle for constructing dissipation-preserving finite difference schemes and apply it to the Swift--Hohenberg equation in three spatial dimensions. Our analysis relies on discrete inequalities for the underlying energy, assuming a Lipschitz continuous gradient and either convexity or $μ$-strong convexity of the relevant terms. The resulting method is linearly implicit, yet it preserves the original energy-dissipation law, guarantees unique solvability, ensures boundedness of numerical solutions, and admits an a priori error estimate, provided that the time step is sufficiently small. To the best of our knowledge, this is the first linearly implicit finite difference scheme for the Swift--Hohenberg equation for which all of these properties are established.",
+    "status": "found"
+  },
+  "2601.22688": {
+    "arxiv_id": "2601.22688",
+    "title": "TSLM: Tree-Structured Language Modeling for Divergent Thinking",
+    "authors": [
+      "Doyoung Kim",
+      "Jaehyeok Doo",
+      "Minjoon Seo"
+    ],
+    "submission_date": "2026-01-30T08:04:59Z",
+    "latest_updated": "2026-01-30T08:04:59Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22688v1"
+    ],
+    "abstract": "Language models generate reasoning sequentially, preventing them from decoupling irrelevant exploration paths during search. We introduce Tree-Structured Language Modeling (TSLM), which uses special tokens to encode branching structure, enabling models to generate and selectively expand multiple search paths within a single generation process. By training on complete search trees including both successful and failed attempts, TSLM learns to internalize systematic exploration without redundant recomputation of shared prefixes. TSLM achieves robust performance and superior inference efficiency by avoiding the multiple independent forward passes required by external search methods. These results suggest a new paradigm of inference-time scaling for robust reasoning, demonstrating that supervised learning on complete tree-structured traces provides an efficient alternative for developing systematic exploration capabilities in language models.",
+    "status": "found"
+  },
+  "2601.22689": {
+    "arxiv_id": "2601.22689",
+    "title": "Assistive Robots and Reasonable Work Assignment Reduce Perceived Stigma toward Persons with Disabilities",
+    "authors": [
+      "Stina Klein",
+      "Birgit Prodinger",
+      "Elisabeth André",
+      "Lars Mikelsons",
+      "Nils Mandischer"
+    ],
+    "submission_date": "2026-01-30T08:08:38Z",
+    "latest_updated": "2026-01-30T08:08:38Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22689v1"
+    ],
+    "abstract": "Robots are becoming more prominent in assisting persons with disabilities (PwD). Whilst there is broad consensus that robots can assist in mitigating physical impairments, the extent to which they can facilitate social inclusion remains equivocal. In fact, the exposed status of assisted workers could likewise lead to reduced or increased perceived stigma by other workers. We present a vignette study on the perceived cognitive and behavioral stigma toward PwD in the workplace. We designed four experimental conditions depicting a coworker with an impairment in work scenarios: overburdened work, suitable work, and robot-assisted work only for the coworker, and an offer of robot-assisted work for everyone. Our results show that cognitive stigma is significantly reduced when the work task is adapted to the person's abilities or augmented by an assistive robot. In addition, offering robot-assisted work for everyone, in the sense of universal design, further reduces perceived cognitive stigma. Thus, we conclude that assistive robots reduce perceived cognitive stigma, thereby supporting the use of collaborative robots in work scenarios involving PwDs.",
+    "status": "found"
+  },
+  "2601.22690": {
+    "arxiv_id": "2601.22690",
+    "title": "Do Transformers Have the Ability for Periodicity Generalization?",
+    "authors": [
+      "Huanyu Liu",
+      "Ge Li",
+      "Yihong Dong",
+      "Sihan Wu",
+      "Peixu Wang",
+      "Sihao Cheng",
+      "Taozhi Chen",
+      "Kechi Zhang",
+      "Hao Zhu",
+      "Tongxuan Liu"
+    ],
+    "submission_date": "2026-01-30T08:09:14Z",
+    "latest_updated": "2026-01-30T08:09:14Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22690v1"
+    ],
+    "abstract": "Large language models (LLMs) based on the Transformer have demonstrated strong performance across diverse tasks. However, current models still exhibit substantial limitations in out-of-distribution (OOD) generalization compared with humans. We investigate this gap through periodicity, one of the basic OOD scenarios. Periodicity captures invariance amid variation. Periodicity generalization represents a model's ability to extract periodic patterns from training data and generalize to OOD scenarios. We introduce a unified interpretation of periodicity from the perspective of abstract algebra and reasoning, including both single and composite periodicity, to explain why Transformers struggle to generalize periodicity. Then we construct Coper about composite periodicity, a controllable generative benchmark with two OOD settings, Hollow and Extrapolation. Experiments reveal that periodicity generalization in Transformers is limited, where models can memorize periodic data during training, but cannot generalize to unseen composite periodicity. We release the source code to support future research.",
+    "status": "found"
+  },
+  "2601.22691": {
+    "arxiv_id": "2601.22691",
+    "title": "Constraint Satisfaction Problems over Finitely Bounded Homogeneous Structures: a Dichotomy between FO and L-hard",
+    "authors": [
+      "Leonid Dorochko",
+      "Michał Wrona"
+    ],
+    "submission_date": "2026-01-30T08:11:38Z",
+    "latest_updated": "2026-07-14T19:26:27Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2601.22691v1",
+      "2601.22691v2",
+      "2601.22691v3"
+    ],
+    "abstract": "Feder-Vardi conjecture, which proposed that every finite-domain Constraint Satisfaction Problem (CSP) is either in P or it is NP-complete, has been solved independently by Bulatov and Zhuk almost ten years ago. Bodirsky-Pinsker conjecture which states a similar dichotomy for countably infinite first-order reducts of finitely bounded homogeneous structures is wide open. In this paper, we prove that CSPs over first-order expansions of finitely bounded homogeneous model-complete cores are either first-order definable (and hence in non-uniform AC$^0$) or L-hard under first-order reduction. It is arguably the most general complexity dichotomy when it comes to the scope of structures within Bodirsky-Pinsker conjecture. Our strategy is that we first give a new proof of Larose-Tesson theorem, which provides a similar dichotomy over finite structures, and then generalize that new proof to infinite structures.",
+    "status": "found"
+  },
+  "2601.22692": {
+    "arxiv_id": "2601.22692",
+    "title": "FNF: Functional Network Fingerprint for Large Language Models",
+    "authors": [
+      "Yiheng Liu",
+      "Junhao Ning",
+      "Sichen Xia",
+      "Haiyang Sun",
+      "Yang Yang",
+      "Hanyang Chi",
+      "Xiaohui Gao",
+      "Ning Qiang",
+      "Bao Ge",
+      "Junwei Han",
+      "Xintao Hu"
+    ],
+    "submission_date": "2026-01-30T08:12:16Z",
+    "latest_updated": "2026-01-30T08:12:16Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22692v1"
+    ],
+    "abstract": "The development of large language models (LLMs) is costly and has significant commercial value. Consequently, preventing unauthorized appropriation of open-source LLMs and protecting developers' intellectual property rights have become critical challenges. In this work, we propose the Functional Network Fingerprint (FNF), a training-free, sample-efficient method for detecting whether a suspect LLM is derived from a victim model, based on the consistency between their functional network activity. We demonstrate that models that share a common origin, even with differences in scale or architecture, exhibit highly consistent patterns of neuronal activity within their functional networks across diverse input samples. In contrast, models trained independently on distinct data or with different objectives fail to preserve such activity alignment. Unlike conventional approaches, our method requires only a few samples for verification, preserves model utility, and remains robust to common model modifications (such as fine-tuning, pruning, and parameter permutation), as well as to comparisons across diverse architectures and dimensionalities. FNF thus provides model owners and third parties with a simple, non-invasive, and effective tool for protecting LLM intellectual property. The code is available at https://github.com/WhatAboutMyStar/LLM_ACTIVATION.",
+    "status": "found"
+  },
+  "2601.22693": {
+    "arxiv_id": "2601.22693",
+    "title": "PEAR: Pixel-aligned Expressive humAn mesh Recovery",
+    "authors": [
+      "Jiahao Wu",
+      "Yunfei Liu",
+      "Lijian Lin",
+      "Ye Zhu",
+      "Lei Zhu",
+      "Jingyi Li",
+      "Yu Li"
+    ],
+    "submission_date": "2026-01-30T08:12:54Z",
+    "latest_updated": "2026-02-05T06:25:40Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.22693v1",
+      "2601.22693v2"
+    ],
+    "abstract": "Reconstructing detailed 3D human meshes from a single in-the-wild image remains a fundamental challenge in computer vision. Existing SMPLX-based methods often suffer from slow inference, produce only coarse body poses, and exhibit misalignments or unnatural artifacts in fine-grained regions such as the face and hands. These issues make current approaches difficult to apply to downstream tasks. To address these challenges, we propose PEAR-a fast and robust framework for pixel-aligned expressive human mesh recovery. PEAR explicitly tackles three major limitations of existing methods: slow inference, inaccurate localization of fine-grained human pose details, and insufficient facial expression capture. Specifically, to enable real-time SMPLX parameter inference, we depart from prior designs that rely on high resolution inputs or multi-branch architectures. Instead, we adopt a clean and unified ViT-based model capable of recovering coarse 3D human geometry. To compensate for the loss of fine-grained details caused by this simplified architecture, we introduce pixel-level supervision to optimize the geometry, significantly improving the reconstruction accuracy of fine-grained human details. To make this approach practical, we further propose a modular data annotation strategy that enriches the training data and enhances the robustness of the model. Overall, PEAR is a preprocessing-free framework that can simultaneously infer EHM-s (SMPLX and scaled-FLAME) parameters at over 100 FPS. Extensive experiments on multiple benchmark datasets demonstrate that our method achieves substantial improvements in pose estimation accuracy compared to previous SMPLX-based approaches. Project page: https://wujh2001.github.io/PEAR",
+    "status": "found"
+  },
+  "2601.22694": {
+    "arxiv_id": "2601.22694",
+    "title": "Farewell to Item IDs: Unlocking the Scaling Potential of Large Ranking Models via Semantic Tokens",
+    "authors": [
+      "Zhen Zhao",
+      "Tong Zhang",
+      "Jie Xu",
+      "Qingliang Cai",
+      "Qile Zhang",
+      "Leyuan Yang",
+      "Daorui Xiao",
+      "Xiaojia Chang"
+    ],
+    "submission_date": "2026-01-30T08:12:59Z",
+    "latest_updated": "2026-01-30T08:12:59Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22694v1"
+    ],
+    "abstract": "Recent studies on scaling up ranking models have achieved substantial improvement for recommendation systems and search engines. However, most large-scale ranking systems rely on item IDs, where each item is treated as an independent categorical symbol and mapped to a learned embedding. As items rapidly appear and disappear, these embeddings become difficult to train and maintain. This instability impedes effective learning of neural network parameters and limits the scalability of ranking models. In this paper, we show that semantic tokens possess greater scaling potential compared to item IDs. Our proposed framework TRM improves the token generation and application pipeline, leading to 33% reduction in sparse storage while achieving 0.85% AUC increase. Extensive experiments further show that TRM could consistently outperform state-of-the-art models when model capacity scales. Finally, TRM has been successfully deployed on large-scale personalized search engines, yielding 0.26% and 0.75% improvement on user active days and change query ratio respectively through A/B test.",
+    "status": "found"
+  },
+  "2601.22695": {
+    "arxiv_id": "2601.22695",
+    "title": "Femtoscopic correlation functions for general partial waves: Application to the $Λ(1520)$ resonance",
+    "authors": [
+      "Si-Wei Liu",
+      "Ju-Jun Xie"
+    ],
+    "submission_date": "2026-01-30T08:14:23Z",
+    "latest_updated": "2026-03-24T02:44:38Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.22695v1",
+      "2601.22695v2"
+    ],
+    "abstract": "The femtoscopic correlation function has been established in recent years as a high-precision tool for investigating hadron-hadron interactions and exotic states, providing stringent constraints on the dynamics of low-energy strong interactions. However, current research has been predominantly focused on the $s$-wave interaction between hadrons, while studies of higher partial waves remain scarce. We present a general analytical expression for the femtoscopic correlation function in an arbitrary partial wave using the Lippmann-Schwinger equation. This formalism is applied to constrain the $d$-wave $K^-p$ scattering through a combined study of the $K^-p$ correlation function and the $D_{03}$ scattering amplitude of $\\bar K N \\to \\bar K N$ and $\\bar K N \\to πΣ$ processes, from which the properties of $Λ(1520)$ are extracted and found to be in good agreement with the experimental results. These findings demonstrate the feasibility of determining dynamics between hadrons through femtoscopic correlation functions and scattering amplitudes with higher partial waves.",
+    "status": "found"
+  }
+}

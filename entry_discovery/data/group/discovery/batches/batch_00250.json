@@ -1,0 +1,403 @@
+{
+  "2601.18156": {
+    "arxiv_id": "2601.18156",
+    "title": "Beyond Pairwise Comparisons: A Distributional Test of Distinctiveness for Machine-Generated Works in Intellectual Property Law",
+    "authors": [
+      "Anirban Mukherjee",
+      "Hannah Hanwen Chang"
+    ],
+    "submission_date": "2026-01-26T05:20:33Z",
+    "latest_updated": "2026-01-26T05:20:33Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.18156v1"
+    ],
+    "abstract": "Key doctrines, including novelty (patent), originality (copyright), and distinctiveness (trademark), turn on a shared empirical question: whether a body of work is meaningfully distinct from a relevant reference class. Yet analyses typically operationalize this set-level inquiry using item-level evidence: pairwise comparisons among exemplars. That unit-of-analysis mismatch may be manageable for finite corpora of human-created works, where it can be bridged by ad hoc aggregations. But it becomes acute for machine-generated works, where the object of evaluation is not a fixed set of works but a generative process with an effectively unbounded output space. We propose a distributional alternative: a two-sample test based on maximum mean discrepancy computed on semantic embeddings to determine if two creative processes-whether human or machine-produce statistically distinguishable output distributions. The test requires no task-specific training-obviating the need for discovery of proprietary training data to characterize the generative process-and is sample-efficient, often detecting differences with as few as 5-10 images and 7-20 texts. We validate the framework across three domains: handwritten digits (controlled images), patent abstracts (text), and AI-generated art (real-world images). We reveal a perceptual paradox: even when human evaluators distinguish AI outputs from human-created art with only about 58% accuracy, our method detects distributional distinctiveness. Our results present evidence contrary to the view that generative models act as mere regurgitators of training data. Rather than producing outputs statistically indistinguishable from a human baseline-as simple regurgitation would predict-they produce outputs that are semantically human-like yet stochastically distinct, suggesting their dominant function is as a semantic interpolator within a learned latent space.",
+    "status": "found"
+  },
+  "2601.18157": {
+    "arxiv_id": "2601.18157",
+    "title": "Agentic Very Long Video Understanding",
+    "authors": [
+      "Aniket Rege",
+      "Arka Sadhu",
+      "Yuliang Li",
+      "Kejie Li",
+      "Ramya Korlakai Vinayak",
+      "Yuning Chai",
+      "Yong Jae Lee",
+      "Hyo Jin Kim"
+    ],
+    "submission_date": "2026-01-26T05:20:47Z",
+    "latest_updated": "2026-07-03T16:53:00Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2601.18157v1",
+      "2601.18157v2",
+      "2601.18157v3"
+    ],
+    "abstract": "The advent of always-on personal AI assistants, enabled by all-day wearable devices such as smart glasses, demands a new level of contextual understanding, one that goes beyond short, isolated events to encompass the continuous, longitudinal stream of egocentric video. Achieving this vision requires advances in long-horizon video understanding, where systems must interpret and recall visual and audio information spanning days or even weeks. Existing methods, including large language models and retrieval-augmented generation, are constrained by limited context windows and lack the ability to perform compositional, multi-hop reasoning over very long video streams. In this work, we address these challenges through EGAgent, an enhanced agentic framework centered on entity scene graphs, which represent people, places, objects, and their relationships over time. Our system equips a planning agent with tools for structured search and reasoning over these graphs, as well as hybrid visual and audio search capabilities, enabling detailed, cross-modal, and temporally coherent reasoning. Experiments on the EgoLifeQA and Video-MME (Long) datasets show that our method achieves state-of-the-art performance on EgoLifeQA (57.5%) and competitive performance on Video-MME (Long) (74.1%) for complex longitudinal video understanding tasks. Code is available at https://github.com/facebookresearch/egagent.",
+    "status": "found"
+  },
+  "2601.18158": {
+    "arxiv_id": "2601.18158",
+    "title": "An Initial Evaluation of Distributed Graph Algorithms using NWGraph and HPX",
+    "authors": [
+      "Karame Mohammadiporshokooh",
+      "Panagiotis Syskakis",
+      "Hartmut Kaiser"
+    ],
+    "submission_date": "2026-01-26T05:24:28Z",
+    "latest_updated": "2026-01-26T05:24:28Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.18158v1"
+    ],
+    "abstract": "Graphs are central to modeling relationships in scientific computing, data analysis, and AI/ML, but their growing scale can exceed the memory and compute capacity of single nodes, requiring distributed solutions. Existing distributed graph framework, however, face fundamental challenges: graph algorithms are latency-bound, suffer from irregular memory access, and often impose synchronization costs that limit scalability and efficiency. In this work, we present a distributed implementation of the NWGraph library integrated with the HPX runtime system. By leveraging HPX's asynchronous many-task model, our approach aims to reduce synchronization overhead, improve load balance, and provide a foundation for distributed graph analytics. We evaluate this approach using two representative algorithms: Breadth-First-Search (BFS) and (PageRank). Our initial results show that BFS achieves better performance than the distributed Boost Graph Library (BGL), while PageRank remains more challenging, with current implementation not yet outperforming BGL. These findings highlight both the promise and the open challenges of applying asynchronous task-based runtimes to graph processing, and point to opportunities for future optimizations and extensions.",
+    "status": "found"
+  },
+  "2601.18159": {
+    "arxiv_id": "2601.18159",
+    "title": "Lifecycle Cost-Effectiveness Modeling for Redundancy-Enhanced Multi-Chiplet Architectures",
+    "authors": [
+      "Zizhen Liu",
+      "Fangzhiyi Wang",
+      "Mengdi Wang",
+      "Jing Ye",
+      "Hayden Kwok-Hay So",
+      "Cheng Liu",
+      "Huawei Li"
+    ],
+    "submission_date": "2026-01-26T05:26:31Z",
+    "latest_updated": "2026-01-26T05:26:31Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.18159v1"
+    ],
+    "abstract": "The growing demand for compute-intensive applications has made multi-chiplet architectures a promising alternative to monolithic designs, offering improved scalability and manufacturing flexibility. However, effectively managing the economic effectiveness remains challenging. Existing cost models either overlook the amortization of compute value over a chip's operational lifetime or fail to evaluate how redundancy strategies, which are widely adopted to enhance yield and fault tolerance, impact long-term cost efficiency. This paper presents a comprehensive cost-effectiveness framework for multi-chiplet architectures, introducing a novel Lifecycle Cost Effectiveness (LCE) metric that evaluates amortized compute costs by jointly optimizing manufacturing expenses and operational lifetime. Our approach uniquely integrates: (1) redundancy-aware cost modeling spanning both intra- and inter-chiplet levels, (2) reliability-driven lifetime estimation, and (3) quantitative analysis of how redundancy configurations on overall economic effectiveness. Extensive trade-off and multi-objective optimization studies demonstrate the effectiveness of the model and reveal essential co-optimization strategies between module and chiplet-level redundancy to achieve cost-efficient multi-chiplet architecture designs.",
+    "status": "found"
+  },
+  "2601.18160": {
+    "arxiv_id": "2601.18160",
+    "title": "Magnetic field-induced non-trivial Lifshitz transition in TaCo2Te2",
+    "authors": [
+      "Suman Kalyan Pradhan",
+      "Xiaoming Ma",
+      "Jicheng Wang",
+      "Weiqi Liu",
+      "Yue Dai",
+      "Wenxing Chen",
+      "Xiaobai Ma",
+      "Wenyun Yang",
+      "Yu Wu",
+      "Zhaochu Luo",
+      "Raktim Datta",
+      "Arnab Bera",
+      "Samik DuttaGupta",
+      "Jinbo Yang",
+      "Yanglong Hou",
+      "Chang Liu",
+      "Rui Wu"
+    ],
+    "submission_date": "2026-01-26T05:28:22Z",
+    "latest_updated": "2026-01-26T05:28:22Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.18160v1"
+    ],
+    "abstract": "Magnetic-field-driven Lifshitz transitions are typically considered zero-temperature phenomena involving Fermi-surface reconstruction without symmetry breaking. Here, we report an unconventional Lifshitz transition in TaCo2Te2 that emerges exclusively within a narrow finite-temperature window under cooperative tuning by both temperature and magnetic field. Bulk-sensitive transport and thermoelectric measurements demonstrate continuous Fermi-surface renormalization at low temperatures, where the transition is sharply triggered by a critical magnetic field. Crucially, neutron diffraction reveals the absence of structural or magnetic phase transitions, while angle-resolved photoemission spectroscopy shows no spectral anomalies in electronic structure without magnetic field. These observations constrain the mechanism to a Zeeman-driven process invisible to equilibrium probes, establishing a paradigm where Fermi-surface topology is jointly controlled by temperature and magnetic field.",
+    "status": "found"
+  },
+  "2601.18161": {
+    "arxiv_id": "2601.18161",
+    "title": "In-depth analysis of bar formation mechanisms of disk galaxies in halos of different concentrations",
+    "authors": [
+      "T. Worrakitpoonpon"
+    ],
+    "submission_date": "2026-01-26T05:29:15Z",
+    "latest_updated": "2026-01-26T05:29:15Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.18161v1"
+    ],
+    "abstract": "We use $N$-body simulations to investigate the distinct bar formation processes in disks residing in halos of various concentrations. In a highly concentrated halo, the bar development is limited by the dominant multi-arm modes as a result of the swing amplification in the early stage. Only after the multi-arm modes decay, the bar growth proceeds mechanically owing to the particle trapping in continuation of that bar seed. In this scheme, the corotation resonance of the bar modes does not come into play at all, justified by a low amount of disk-halo angular momentum transfer and a modestly decreasing bar pattern speed. On the other hand, although reducing the halo concentration suggests the reduction of the preferred swing-amplified modes to be bi-symmetric, the bar formation in a lowly concentrated halo does not involve the swing amplification at all. Rather, the fast-growing linearly unstable bar modes of a single uniform frequency is solely the governing factor, attributed to a mild shearing. The bar modes trigger the corotation resonance since the beginning and such resonance is maintained until the end, which leads to a high amount of angular momentum transfer and a fast slowdown. For the intermediate halo concentration, the kinematical analyses of multiple non-axisymmetric modes suggests that the linear modes, the swing amplification, and the particle trapping are all present in the evolution chronology. To specify bars formed in the different halo concentrations, full analyses of the isophotal shape, the radial Fourier amplitude, and the resonance diagram can be of use.",
+    "status": "found"
+  },
+  "2601.18162": {
+    "arxiv_id": "2601.18162",
+    "title": "Fine-Grained Emotion Detection on GoEmotions: Experimental Comparison of Classical Machine Learning, BiLSTM, and Transformer Models",
+    "authors": [
+      "Ani Harutyunyan",
+      "Sachin Kumar"
+    ],
+    "submission_date": "2026-01-26T05:29:27Z",
+    "latest_updated": "2026-01-26T05:29:27Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.18162v1"
+    ],
+    "abstract": "Fine-grained emotion recognition is a challenging multi-label NLP task due to label overlap and class imbalance. In this work, we benchmark three modeling families on the GoEmotions dataset: a TF-IDF-based logistic regression system trained with binary relevance, a BiLSTM with attention, and a BERT model fine-tuned for multi-label classification. Experiments follow the official train/validation/test split, and imbalance is mitigated using inverse-frequency class weights. Across several metrics, namely Micro-F1, Macro-F1, Hamming Loss, and Subset Accuracy, we observe that logistic regression attains the highest Micro-F1 of 0.51, while BERT achieves the best overall balance surpassing the official paper's reported results, reaching Macro-F1 0.49, Hamming Loss 0.036, and Subset Accuracy 0.36. This suggests that frequent emotions often rely on surface lexical cues, whereas contextual representations improve performance on rarer emotions and more ambiguous examples.",
+    "status": "found"
+  },
+  "2601.18163": {
+    "arxiv_id": "2601.18163",
+    "title": "AI-based separation of turbulence from coherent background flows in decaying hydrodynamic turbulence",
+    "authors": [
+      "Ji-Hoon Ha",
+      "Elena S. Volnova"
+    ],
+    "submission_date": "2026-01-26T05:30:01Z",
+    "latest_updated": "2026-05-26T00:20:24Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.18163v1",
+      "2601.18163v2"
+    ],
+    "abstract": "Separating turbulent fluctuations from coherent large-scale background flows is a longstanding challenge in the analysis of numerical simulations and astronomical observations. Traditional approaches commonly rely on decomposition-based techniques such as Fourier or wavelet filtering, which assume that a meaningful separation can be achieved through scale selection. In realistic flows, however, coherent motions and turbulence often overlap across a broad range of scales and interact nonlinearly, making a unique separation inherently ambiguous. In this work, we investigate the robustness of an AI-based turbulence-background separation approach using two-dimensional incompressible Navier-Stokes simulations of decaying hydrodynamic turbulence. The simulations are initialized with a coherent background flow and divergence-free turbulent perturbations with a Kolmogorov-like spectrum and evolve without external forcing, providing a controlled physical testbed. A neural network trained exclusively on static synthetic images is applied to simulation snapshots at different evolutionary stages. The model recovers turbulent fluctuations during early and intermediate stages when partial scale separation is present. At later stages, where nonlinear interactions increasingly mix coherent and turbulent structures, the separation becomes less distinct; nevertheless, the recovered fields remain visually and spectrally consistent with the expected turbulent behavior. Quantitative comparisons with a Fourier filtering baseline show that the AI-based approach achieves comparable reconstruction accuracy while not requiring an explicit spectral cutoff scale. These results suggest that AI models trained on static data can provide a flexible diagnostic tool for turbulence-background separation in time-evolving flows, with potential applications to astrophysical datasets.",
+    "status": "found"
+  },
+  "2601.18164": {
+    "arxiv_id": "2601.18164",
+    "title": "Quantum Recurrent Unit: A Parameter-Efficient Quantum Neural Network Architecture for NISQ Devices",
+    "authors": [
+      "Tzong-Daw Wu",
+      "Hsi-Sheng Goan"
+    ],
+    "submission_date": "2026-01-26T05:30:19Z",
+    "latest_updated": "2026-01-27T14:39:38Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.18164v1",
+      "2601.18164v2"
+    ],
+    "abstract": "The rapid growth of modern machine learning (ML) models presents fundamental challenges in parameter efficiency and computational resource requirements. This study introduces the Quantum Recurrent Unit (QRU), a novel quantum neural network (NN) architecture specifically designed to address these challenges while remaining compatible with Noisy Intermediate-Scale Quantum (NISQ) devices. QRU leverages quantum controlled-SWAP (C-SWAP; Fredkin) gates to implement an information selection mechanism inspired by classical Gated Recurrent Units (GRUs), enabling selective processing of temporal information via quantum operations. Through its innovative recurrent architecture featuring measurement results feedforward state propagation and shared parameters across time steps, QRU achieves constant circuit depth and constant parameter count regardless of input sequence length, effectively circumventing stringent NISQ hardware constraints. We systematically validate QRU through three progressive experiments: (1) oscillatory behavior prediction, where 72-parameter QRU matches 197-parameter classical GRU performance; (2) Wisconsin Diagnostic Breast Cancer classification, where 35 parameters achieve 96.13% accuracy comparable to 167-parameter artificial NNs; and (3) MNIST handwritten digit recognition, where 132 parameters reach 98.05% accuracy, outperforming a 27,265-parameter convolutional NN. These results demonstrate that QRU consistently achieves comparable or superior performance with significantly fewer parameters than classical NNs while maintaining constant quantum circuit depth. The architecture's quantum-native design, combining C-SWAP-based information selection with novel recurrent processing, suggests QRU's potential as a fundamental building block for next-generation ML systems, offering a promising pathway toward more efficient and scalable quantum ML architectures.",
+    "status": "found"
+  },
+  "2601.18165": {
+    "arxiv_id": "2601.18165",
+    "title": "Functionalities of Au2O, Au2O3, Au2O3-x, and nanosheets, including spontaneous polarization, using DFT and hybrid functional",
+    "authors": [
+      "Yukio Watanabe"
+    ],
+    "submission_date": "2026-01-26T05:32:33Z",
+    "latest_updated": "2026-01-26T05:32:33Z",
+    "revised_dates": null,
+    "venue": "Physics Letters A 573, 131367 (2026)",
+    "latest_version": 1,
+    "versions": [
+      "2601.18165v1"
+    ],
+    "abstract": "We used density functional theories (DFT) to investigate the properties of Au2O and Au2O3-x (x = 00.08) to reveal their remarkable functionalities. Hybrid functional theories accurately estimate the band gap (Eg) of oxides, and the present hybrid functional calculations determined Eg values of 0.96 eV for Au2O and 2.86 eV for Au2O3, which is >300% of the commonly accepted Eg of Au2O3 (0.85 eV). Moreover, we discovered spontaneous polarization (PS) in Au2O3, which is unusually large and advantageous for catalysis. The PS was retained even in 2-nm-thick Au2O3 nanosheets, similar to hyperferroelectric, generating a potential of 0.6 eV despite screening caused by surface reconstruction, which is a novel screening mechanism. Below a thickness of 0.8 nm, the PS vanished, and inversion symmetry emerged at 0.4 nm, suggesting a new approach to finding a paraelectric phase. Au2O was supersoft under shear distortion.",
+    "status": "found"
+  },
+  "2601.18166": {
+    "arxiv_id": "2601.18166",
+    "title": "Pullback and Direct Image of Parabolic Ample and Parabolic Nef Vector Bundles",
+    "authors": [
+      "Ashima Bansal",
+      "Indranil Biswas"
+    ],
+    "submission_date": "2026-01-26T05:33:26Z",
+    "latest_updated": "2026-01-26T05:33:26Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.18166v1"
+    ],
+    "abstract": "We prove that under a finite surjective map of irreducible smooth complex projective curves, the pullback and direct image of a parabolic ample (respectively, parabolic nef) vector bundle is again parabolic ample (respectively, parabolic nef) if and only if the original parabolic vector bundle is parabolic ample (respectively, parabolic nef).",
+    "status": "found"
+  },
+  "2601.18167": {
+    "arxiv_id": "2601.18167",
+    "title": "A necessary condition for the logarithmic Minkowksi problem in higher dimension",
+    "authors": [
+      "Mijia Lai",
+      "Zixiao Wang"
+    ],
+    "submission_date": "2026-01-26T05:40:05Z",
+    "latest_updated": "2026-01-26T05:40:05Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.18167v1"
+    ],
+    "abstract": "In this paper, we establish a necessary condition for the logarithmic Minkowski problem in higher dimensions. This result generalizes a necessary condition proposed by Liu, Lu, Sun, and Xiong in their investigation of the two-dimensional case, and also refines the so-called subspace concentration condition.",
+    "status": "found"
+  },
+  "2601.18168": {
+    "arxiv_id": "2601.18168",
+    "title": "TempDiffReg: Temporal Diffusion Model for Non-Rigid 2D-3D Vascular Registration",
+    "authors": [
+      "Zehua Liu",
+      "Shihao Zou",
+      "Jincai Huang",
+      "Yanfang Zhang",
+      "Chao Tong",
+      "Weixin Si"
+    ],
+    "submission_date": "2026-01-26T05:40:45Z",
+    "latest_updated": "2026-01-26T05:40:45Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.18168v1"
+    ],
+    "abstract": "Transarterial chemoembolization (TACE) is a preferred treatment option for hepatocellular carcinoma and other liver malignancies, yet it remains a highly challenging procedure due to complex intra-operative vascular navigation and anatomical variability. Accurate and robust 2D-3D vessel registration is essential to guide microcatheter and instruments during TACE, enabling precise localization of vascular structures and optimal therapeutic targeting. To tackle this issue, we develop a coarse-to-fine registration strategy. First, we introduce a global alignment module, structure-aware perspective n-point (SA-PnP), to establish correspondence between 2D and 3D vessel structures. Second, we propose TempDiffReg, a temporal diffusion model that performs vessel deformation iteratively by leveraging temporal context to capture complex anatomical variations and local structural changes. We collected data from 23 patients and constructed 626 paired multi-frame samples for comprehensive evaluation. Experimental results demonstrate that the proposed method consistently outperforms state-of-the-art (SOTA) methods in both accuracy and anatomical plausibility. Specifically, our method achieves a mean squared error (MSE) of 0.63 mm and a mean absolute error (MAE) of 0.51 mm in registration accuracy, representing 66.7\\% lower MSE and 17.7\\% lower MAE compared to the most competitive existing approaches. It has the potential to assist less-experienced clinicians in safely and efficiently performing complex TACE procedures, ultimately enhancing both surgical outcomes and patient care. Code and data are available at: \\textcolor{blue}{https://github.com/LZH970328/TempDiffReg.git}",
+    "status": "found"
+  },
+  "2601.18169": {
+    "arxiv_id": "2601.18169",
+    "title": "Lie algebroid connection and Harder-Narasimhan reduction",
+    "authors": [
+      "Ashima Bansal",
+      "Indranil Biswas",
+      "Pradip Kumar"
+    ],
+    "submission_date": "2026-01-26T05:42:52Z",
+    "latest_updated": "2026-01-26T05:42:52Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.18169v1"
+    ],
+    "abstract": "Take a holomorphic Lie algebroid $(V,\\, φ)$ on a compact connected Riemann surface $X$ such that the anchor map $φ$ is not surjective. Let $P$ be a parabolic subgroup of a complex reductive affine algebraic group $G$ and $E_P\\, \\subset\\, E_G$ a holomorphic reduction of structure group, to $P$, of a holomorphic principal $G$--bundle $E_G$ on $X$. We prove that $E_P$ admits a holomorphic Lie algebroid connection for $(V,\\,φ)$ if the reduction $E_P$ is infinitesimally rigid. If $E_P$ is the Harder--Narasimhan reduction of $E_G$, then it is shown that $E_P$ admits a holomorphic Lie algebroid connection for $(V,\\,φ)$. In particular, for any point $x_0\\,\\in\\, X$, the Harder--Narasimhan reduction $E_P$ admits a logarithmic connection that is nonsingular on the complement $X\\setminus\\{x_0\\}$.",
+    "status": "found"
+  },
+  "2601.18170": {
+    "arxiv_id": "2601.18170",
+    "title": "A new fine-scale Berry-Esseen-type Gumbel-limit theorem for multivariate maxima",
+    "authors": [
+      "James Allen Fill"
+    ],
+    "submission_date": "2026-01-26T05:47:08Z",
+    "latest_updated": "2026-01-26T05:47:08Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.18170v1"
+    ],
+    "abstract": "For $d \\geq 2$ and i.i.d. $d$-dimensional observations $\\mathbf{X}^{(1)}, \\mathbf{X}^{(2)}, \\ldots$ with independent Exponential$(1)$ coordinates, let $\\varphi_n$ denote the minimum $\\ell^1$-norm among the maxima of $\\{\\mathbf{X}^{(1)}, \\ldots, \\mathbf{X}^{(n)}\\}$. (A _maximum_ from this set is an observation $\\mathbf{X}^{(k)}$ with $1 \\leq k \\leq n$ such that $\\mathbf{X}^{(k)} \\not\\prec \\mathbf{X}^{(i)}$ for all $1 \\leq i \\leq n$, where $\\mathbf{x} \\prec \\mathbf{y}$ means that $x_j < y_j$ for $1 \\leq j \\leq d$.) Key roles in the study of multivariate Pareto records are played by $\\varphi_n$ and by the more easily handled maximum with the maximum $\\ell^1$-norm. Fill, Naiman, and Sun (2024) proved that \\[ \\varphi_n = \\ln n - \\ln \\ln \\ln n - \\ln(d - 1) + O_{\\mathrm{p}}\\!\\left( \\frac{1}{\\ln \\ln n} \\right), \\] where $Z_n = O_{\\mathrm{p}}(a_n)$ means that $Z_n / a_n$ is bounded in probability, and conjectured that \\[ (\\ln \\ln n) \\left(\\varphi_n - [\\ln n - \\ln \\ln \\ln n - \\ln(d - 1)] \\right) \\] has a nondegenerate limiting distribution, suggesting that the limiting distribution might be that of $ - G$, where $G$ has a Gumbel distribution with location $ - \\frac{\\ln[(d - 1)!]}{d - 1}$ and scale $\\frac{1}{d - 1}$. In the present paper we prove a Berry-Esseen-type theorem for this convergence in distribution, thereby establishing a very sharp result for $\\varphi_n$.",
+    "status": "found"
+  },
+  "2601.18171": {
+    "arxiv_id": "2601.18171",
+    "title": "Learning Fair Domain Adaptation with Virtual Label Distribution",
+    "authors": [
+      "Yuguang Zhang",
+      "Lijun Sheng",
+      "Jian Liang",
+      "Ran He"
+    ],
+    "submission_date": "2026-01-26T05:48:47Z",
+    "latest_updated": "2026-01-26T05:48:47Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.18171v1"
+    ],
+    "abstract": "Unsupervised Domain Adaptation (UDA) aims to mitigate performance degradation when training and testing data are sampled from different distributions. While significant progress has been made in enhancing overall accuracy, most existing methods overlook performance disparities across categories-an issue we refer to as category fairness. Our empirical analysis reveals that UDA classifiers tend to favor certain easy categories while neglecting difficult ones. To address this, we propose Virtual Label-distribution-aware Learning (VILL), a simple yet effective framework designed to improve worst-case performance while preserving high overall accuracy. The core of VILL is an adaptive re-weighting strategy that amplifies the influence of hard-to-classify categories. Furthermore, we introduce a KL-divergence-based re-balancing strategy, which explicitly adjusts decision boundaries to enhance category fairness. Experiments on commonly used datasets demonstrate that VILL can be seamlessly integrated as a plug-and-play module into existing UDA methods, significantly improving category fairness.",
+    "status": "found"
+  },
+  "2601.18172": {
+    "arxiv_id": "2601.18172",
+    "title": "YOLO-DS: Fine-Grained Feature Decoupling via Dual-Statistic Synergy Operator for Object Detection",
+    "authors": [
+      "Lin Huang",
+      "Yujuan Tan",
+      "Weisheng Li",
+      "Shitai Shan",
+      "Liu Liu",
+      "Bo Liu",
+      "Linlin Shen",
+      "Jing Yu",
+      "Yue Niu"
+    ],
+    "submission_date": "2026-01-26T05:50:32Z",
+    "latest_updated": "2026-01-26T05:50:32Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.18172v1"
+    ],
+    "abstract": "One-stage object detection, particularly the YOLO series, strikes a favorable balance between accuracy and efficiency. However, existing YOLO detectors lack explicit modeling of heterogeneous object responses within shared feature channels, which limits further performance gains. To address this, we propose YOLO-DS, a framework built around a novel Dual-Statistic Synergy Operator (DSO). The DSO decouples object features by jointly modeling the channel-wise mean and the peak-to-mean difference. Building upon the DSO, we design two lightweight gating modules: the Dual-Statistic Synergy Gating (DSG) module for adaptive channel-wise feature selection, and the Multi-Path Segmented Gating (MSG) module for depth-wise feature weighting. On the MS-COCO benchmark, YOLO-DS consistently outperforms YOLOv8 across five model scales (N, S, M, L, X), achieving AP gains of 1.1% to 1.7% with only a minimal increase in inference latency. Extensive visualization, ablation, and comparative studies validate the effectiveness of our approach, demonstrating its superior capability in discriminating heterogeneous objects with high efficiency.",
+    "status": "found"
+  },
+  "2601.18173": {
+    "arxiv_id": "2601.18173",
+    "title": "Vertex degrees in grid graphs associated with 213-avoiding permutations",
+    "authors": [
+      "N. B. Huamaní"
+    ],
+    "submission_date": "2026-01-26T05:52:29Z",
+    "latest_updated": "2026-01-26T05:52:29Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.18173v1"
+    ],
+    "abstract": "Given a permutation of size $n$, we consider its associated grid graph whose $i$th column has height equal to the $i$th entry, with vertical edges between consecutive levels and horizontal edges between equal levels in adjacent columns. We study global degree statistics of these graphs when the permutation is chosen from the Catalan avoidance class $\\mathrm{Av}_n(213)$ (and, by reversal, also from $\\mathrm{Av}_n(312)$). We first obtain an explicit closed form for the total number of horizontal edges summed over all permutations in $\\mathrm{Av}_n(213)$. We then determine, for each degree $r\\in\\{1,2,3,4\\}$, the total number of degree-$r$ vertices accumulated over the same class, yielding closed expressions in terms of central binomial coefficients and powers of four. The proofs rely on the Catalan decomposition induced by the position of the minimum entry, which leads to gluing identities and algebraic functional equations for ordinary generating functions, completed using global vertex and degree-sum identities. As a consequence, we derive asymptotic degree proportions for a uniform random permutation in $\\mathrm{Av}_n(213)$: the distribution concentrates and the proportion of degree-$4$ vertices tends to $1$, with a deficit of order $n^{-1/2}$.",
+    "status": "found"
+  },
+  "2601.18174": {
+    "arxiv_id": "2601.18174",
+    "title": "Programming Nonlinear Interfacial Mechanics of Synthetic Cells: Lipid Geometry and DNA Nanostructures",
+    "authors": [
+      "Kazutoshi Masuda",
+      "Miho Yanagisawa"
+    ],
+    "submission_date": "2026-01-26T05:54:07Z",
+    "latest_updated": "2026-01-26T05:54:07Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.18174v1"
+    ],
+    "abstract": "Soft interfaces formed by lipid membranes are fundamental to living cells, synthetic cells, and membrane-based soft materials. However, a quantitative framework linking molecular organization with nonlinear interfacial mechanics remains elusive. Here, we establish an analytical framework that captures the nonlinear elastic response of lipid-membrane-coated synthetic cells under micropipette aspiration. Incorporating both area stretching and curvature bending enables the model to quantitatively reproduce the complete pressure-displacement response within the small-deformation regime. This approach reduces interfacial mechanics to two parameters: the in-plane area-stretching modulus and an out-of-plane bending-related term. Using this unified framework, we experimentally demonstrate that nonlinear interfacial mechanics can be programmed by altering the molecular geometry and effective dimensionality of adsorbed elements. The lipid molecular shape and curvature-dependent packing regulate in-plane stiffness, while DNA nanostructures, the other adsorbed element, introduce an orthogonal control axis via dimensionality: isolated motifs primarily enhance area stretching, whereas three-dimensional network architectures markedly reinforce bending resistance. Together, these results establish a general molecular design principle for programming interfacial mechanics and provide a quantitative foundation for engineering mechanically tunable synthetic cells and soft interfaces.",
+    "status": "found"
+  },
+  "2601.18175": {
+    "arxiv_id": "2601.18175",
+    "title": "Success Conditioning as Policy Improvement: The Optimization Problem Solved by Imitating Success",
+    "authors": [
+      "Daniel Russo"
+    ],
+    "submission_date": "2026-01-26T05:54:39Z",
+    "latest_updated": "2026-06-02T19:09:34Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.18175v1",
+      "2601.18175v2"
+    ],
+    "abstract": "A widely used technique for improving policies is success conditioning, in which one collects trajectories, identifies those that achieve a desired outcome, and updates the policy to imitate the actions taken along successful trajectories. This principle appears under many names -- rejection sampling with SFT, goal-conditioned RL, Decision Transformers -- yet what optimization problem it solves, if any, has remained unclear. We prove that success conditioning exactly solves a trust-region optimization problem, maximizing policy improvement subject to a $χ^2$ divergence constraint whose radius is determined automatically by the data. This yields an identity: relative policy improvement, the magnitude of policy change, and a quantity we call action-influence -- measuring how random variation in action choices affects success rates -- are exactly equal at every state. Success conditioning thus emerges as a conservative improvement operator. Exact success conditioning cannot degrade performance or induce dangerous distribution shift, but when it fails, it does so observably, by hardly changing the policy at all. We apply our theory to the common practice of return thresholding, showing this can amplify improvement, but at the cost of potential misalignment with the true objective.",
+    "status": "found"
+  }
+}

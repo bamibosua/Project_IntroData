@@ -1,0 +1,399 @@
+{
+  "2609.15554": {
+    "arxiv_id": "2609.15554",
+    "title": "Greedy Packing of Nested Rings: Placement Rules, a Golden Counterexample, and a Tribonacci Floor",
+    "authors": [
+      "Javier Aguilar Martín"
+    ],
+    "submission_date": "2026-09-14T13:37:01Z",
+    "latest_updated": "2026-09-15T12:12:25Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2609.15554v1",
+      "2609.15554v2"
+    ],
+    "abstract": "We study packings of annuli of a common width, allowing each ring to nest inside the hole of a larger one. The objectives of maximizing contact area and cardinality diverge: area is superadditive in the radius, cardinality is not. Under superincreasing radii, every descending greedy maximizes every positive, strictly increasing, superadditive objective. More strongly, any choice among feasible containers yields the lexicographically maximal feasible set, for containers of arbitrary shape in every dimension. This placement irrelevance holds unconditionally for at most three rings and fails at four in disks and squares; twin instances exclude every universal rule based only on the observable state. Write $ρ=\\max_i(\\sum_{j>i}r_j)/r_i$. The additive model has threshold exactly $1$. For disks we prove the exact global threshold $τ=\\varphi$, with no failure at $ρ\\le\\varphi$, for every finite inventory, even with independent hole radii. The key geometric theorem states that, under golden tail bounds, an entire disk list fits a circular container if and only if its three largest disks fit; this supplies the uniform exchange of parents that the threshold proof needs. The Tribonacci constant $T\\approx1.83929$ remains the exact floor of a rigid subfamily. A dimension-reduction lemma transfers spherical sharpness results to all dimensions $d\\ge2$, and a separate argument proves the golden threshold for at most five rings in those dimensions. For square pans, a Cartesian confinement criterion gives twins and a family proving $τ_{\\square}\\le Y\\approx1.6845$; its optimality is open. For independent holes, the exact universal area guarantee under $ρ\\leκ<1$ is $\\min(1,κ^{-2}-1)$, with threshold $1/\\sqrt2$. The repository has 122 Lean theorems. Euclidean geometry, forest assembly and continuity remain written proofs; numerical checks do not substitute for them.",
+    "status": "found"
+  },
+  "2609.15555": {
+    "arxiv_id": "2609.15555",
+    "title": "Bayesian Optimisation Using Product-of-Experts Gaussian Process Models with Uncertainty Calibration",
+    "authors": [
+      "Yean Hoon Ong"
+    ],
+    "submission_date": "2026-09-14T13:37:35Z",
+    "latest_updated": "2026-09-14T13:37:35Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.15555v1"
+    ],
+    "abstract": "Bayesian optimisation (BO) typically relies on a single global Gaussian process (GP) model as its surrogate model. However, GP regression has cubic computational complexity in the number of training data points, limiting its applicability to large-scale optimisation problems. The product-of-experts Gaussian process model with uncertainty calibration (GP-pro-c) mitigates this limitation by combining multiple local GP experts, enabling improved uncertainty quantification, reduced computational cost, and preservation of global correlations. Despite these desirable properties, the use of GP-pro-c in BO has not been thoroughly studied. This paper introduces BO-pro-c, a Bayesian optimisation algorithm that uses GP-pro-c as its surrogate model, and evaluate its performance across a diverse range of BO settings. Experimental results suggest that BO-pro-c maintains competitive optimisation performance while achieving a 0.9% reduction in simple regret and a 39.4% reduction in computational overhead relative to a BO algorithm based on a single global GP model.",
+    "status": "found"
+  },
+  "2609.15556": {
+    "arxiv_id": "2609.15556",
+    "title": "A sharp bound for sampling widths in the uniform norm: kernel $D$-optimal designs and oversampling",
+    "authors": [
+      "Sebastian Neumayer",
+      "Tino Ullrich"
+    ],
+    "submission_date": "2026-09-14T13:39:29Z",
+    "latest_updated": "2026-09-14T13:39:29Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.15556v1"
+    ],
+    "abstract": "For every reproducing kernel Hilbert space $\\mathcal{H}_K$ with bounded kernel $K$, we prove that the linear sampling widths $g_m^{\\text{lin}}$ and Gelfand widths $c_n$ in the uniform norm satisfy $$ g_m^{\\text{lin}}(B_{\\mathcal H_K})_\\infty \\leq \\frac{m+1}{m-n+1}\\, c_n(B_{\\mathcal H_K})_\\infty\\quad , \\quad m\\ge n. $$ In a certain sense, the leading factor $(m+1)/(m-n+1)$ on the right-hand side is sharp. We transfer the problem into the selection of a maximal volume subset of kernel translates (kernel $D$-optimal design). Apart from basic linear algebra, our proof employs low rank approximation techniques and a version of the Eckart-Young-Mirsky theorem. The same argument gives corresponding bounds for the selection of a reduced basis in Hilbert spaces.",
+    "status": "found"
+  },
+  "2609.15557": {
+    "arxiv_id": "2609.15557",
+    "title": "Increase of the electromechanical coupling of piezoelectric vibration harvesters through lateral bars",
+    "authors": [
+      "David Gibus",
+      "Grégoire Forges",
+      "Hélène Debéda",
+      "Pierre Gasnier",
+      "Adrien Badel"
+    ],
+    "submission_date": "2026-09-14T13:39:35Z",
+    "latest_updated": "2026-09-14T13:39:35Z",
+    "revised_dates": null,
+    "venue": "Sensors and Actuators A: Physical 2026, 410, pp.118292",
+    "latest_version": 1,
+    "versions": [
+      "2609.15557v1"
+    ],
+    "abstract": "To enhance the performance of vibration energy harvesters, it is essential to maximise the electromechanical coupling coefficient k${}^2$ of piezoelectric devices. This enables sufficient harvested power and tuning capability of the resonant frequency through electrical methods. While much literature treats the optimisation of piezoelectric cantilevers, the optimisation range is usually limited by the transverse coupling coefficient k31${}^2$ of the material. This work introduces an innovative solution to extend the optimisation range and increase the coupling coefficient of piezoelectric cantilevers. This is achieved by minimising lateral strain in the beam using lateral bars to maximise the equivalent material coupling coefficient. The theoretical basis of this innovation is demonstrated through the exploitation of the constitutive equations of piezoelectric materials. The interest of the addition of lateral bars to increase the coupling coefficient is demonstrated and studied with simulations based on the finite elements method. Finally, a proof of concept is realised using a aluminum cantilever prototype integrating a lead-free KNaNbO3 (KNN) piezoelectric material. It is tested under vibration at 0.1 m/s${}^2$ with variable resistive loads. The results show that the coupling coefficient increases by 30% and the relative frequency bandwidth by 32% with resistive tuning of the resonant frequency, by fixing eight steel bars to the cantilever. The designed prototype is a highly performant leadfree vibration energy harvester. It produces a maximum power of 49.9 $μ$W at resonance, and its normalised power density is equal to 16.5 mW/G${}^2$/cm${}^3$. Its relative frequency bandwidth is equal to 3.1%.",
+    "status": "found"
+  },
+  "2609.15558": {
+    "arxiv_id": "2609.15558",
+    "title": "Opportunistic ZGC: Leveraging Idle Cores for More Effective Concurrent Garbage Collection",
+    "authors": [
+      "Jacob Malloy",
+      "Michael R. Jantz",
+      "Terry Jones"
+    ],
+    "submission_date": "2026-09-14T13:40:04Z",
+    "latest_updated": "2026-09-22T15:09:07Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2609.15558v1",
+      "2609.15558v2"
+    ],
+    "abstract": "Managed language runtimes often provide concurrent garbage collectors so that latency-critical applications with large working sets can keep running while most collection work proceeds in the background. ZGC is a production-quality, generational, concurrent collector in OpenJDK with sub-millisecond pause times. While ZGC is designed to run concurrently, frequent and excessive collections with ZGC can still slow the mutators due to synchronization costs and interference with shared computing resources. Hence, the ZGC scheduler is conservative by default, and in most cases, will grow the heap toward the maximum allowed before scheduling a collection. While this approach minimizes collection effort, it can be wasteful, or even harmful, if the maximum heap size is not well tuned to the actual working set. We propose Opportunistic ZGC (OppZGC), a feedback-directed ZGC scheduling policy that constrains the heap dynamically and automatically, without per-application tuning. OppZGC identifies periods when CPU cores are underutilized and leverages them for concurrent collection with ZGC. We describe the design and implementation of OppZGC in OpenJDK's HotSpot Java VM and evaluate it with standard and latency-sensitive benchmarks from DaCapo Chopin and SPECjbb. OppZGC limits heap usage when there is CPU capacity sufficient for additional collections, and avoids scheduling extra collections when they would substantially degrade performance. Overall, it reduces maximum heap usage for our DaCapo benchmarks by between 61% and 90%, on average, depending on configuration, with minimal impact on throughput and request latency compared to default ZGC.",
+    "status": "found"
+  },
+  "2609.15559": {
+    "arxiv_id": "2609.15559",
+    "title": "Don't Count the Edits, Judge by the Outcome Alone: Reward-Based Evaluation for Grammatical Error Correction",
+    "authors": [
+      "Hayeong Ryu",
+      "Sunhee Jo",
+      "Seunguk Yu",
+      "YoungBin Kim"
+    ],
+    "submission_date": "2026-09-14T13:40:44Z",
+    "latest_updated": "2026-09-14T13:40:44Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.15559v1"
+    ],
+    "abstract": "Grammatical error correction (GEC) evaluation has traditionally relied on reference or edit overlap, which can penalize valid rewrites that differ from gold corrections. Reference-free metrics reduce this dependence, but evaluating whether a fluent output is a valid correction of the source remains challenging. We propose SURE, a source-conditioned reward evaluator trained on within-source preferences spanning minimal-edit and rewrite-oriented corrections. SURE jointly learns an overall reward with criteria-level supervision for grammaticality, faithfulness, and fluency, together with span-level grounding for source-side error resolution. Experiments on SEEDA show that SURE performs competitively against strong baselines, with particular gains on rewrite-style corrections and more disentangled criteria-level diagnostics. Our code is available at https://github.com/hayeonggg/SURE.",
+    "status": "found"
+  },
+  "2609.15560": {
+    "arxiv_id": "2609.15560",
+    "title": "Besicovitch's covering theorem in the parabolic metric",
+    "authors": [
+      "Nikita Dobronravov"
+    ],
+    "submission_date": "2026-09-14T13:41:25Z",
+    "latest_updated": "2026-09-14T13:41:25Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.15560v1"
+    ],
+    "abstract": "We prove that Besicovitch's covering theorem holds for the parabolic metric $d_p((x_1,t_1),(x_2,t_2))=(|x_1-x_2|^{p}+|t_1-t_2|^{\\frac{p}{2}})^{\\frac{1}{p}}$ on $\\mathbb{R}^n\\times\\mathbb{R}$ if and only if $p\\geqslant 2$. If $p=2$, this answers a question posed by P. Mattila in the affirmative.",
+    "status": "found"
+  },
+  "2609.15561": {
+    "arxiv_id": "2609.15561",
+    "title": "Can We Trust the Judges? Validation of Factuality Evaluation Methods via Answer Perturbation",
+    "authors": [
+      "Sarra Gharsallah",
+      "Adele Robaldo",
+      "Mariia Tokareva",
+      "Giovanni Gatti Pinheiro",
+      "Ilyana Guendouz",
+      "Raphaël Troncy",
+      "Paolo Papotti",
+      "Pietro Michiardi"
+    ],
+    "submission_date": "2026-09-14T13:41:35Z",
+    "latest_updated": "2026-09-14T13:41:35Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.15561v1"
+    ],
+    "abstract": "Evaluating the factual correctness of large language models (LLMs) is vital for many applications. But are our evaluation tools themselves trustworthy? Despite the rise of factuality-based metrics, their sensitivity and reliability remain underexplored. This paper introduces a meta-evaluation framework that systematically tests these metrics using controlled corruptions of gold standard answers. Our method generates ranked outputs with known degrees of degradation to probe how metrics capture nuanced changes in truthfulness. Our experiments reveal that pipeline-based methods, such as the RAGAS's factual correctness metric, better track degradation than LLM-as-judge approaches. We also propose a new variant of the factual correctness metric that provides a competitive and cost-efficient.",
+    "status": "found"
+  },
+  "2609.15562": {
+    "arxiv_id": "2609.15562",
+    "title": "PIVOT: Physics-Grounded Verification for AI-Generated Audio-Video Detection",
+    "authors": [
+      "Bo Zheng",
+      "Kangran Zhao",
+      "Xiaoyu Zhang",
+      "Weinan Guan",
+      "Zhiheng Li",
+      "Yize Chen",
+      "Haizhou Li",
+      "Qingshan Liu",
+      "Siwei Lyu",
+      "Baoyuan Wu"
+    ],
+    "submission_date": "2026-09-14T13:41:54Z",
+    "latest_updated": "2026-09-14T13:41:54Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.15562v1"
+    ],
+    "abstract": "As generative models continue to advance, AI-generated content (AIGC) is becoming increasingly realistic, weakening the artifact cues commonly exploited by existing detectors. Nevertheless, faithfully reproducing the physical behavior of real-world events remains challenging for current generators. We therefore explore detecting AIGC by assessing whether the depicted event satisfies measurable constraints derived from physical laws. We introduce PIVOT, a physics-grounded AIGC detector, instantiated here for audio-video clips, that estimates physical quantities from video and audio, selects physical laws relevant to each clip, and verifies their measurable constraints. Beyond a real/fake decision, PIVOT returns supporting evidence that records the verification outcome, relevant time window, and supporting quantities for each applicable law. Although instantiated and evaluated here on audio-video data, the framework can, in principle, extend to other AIGC modalities whenever the physical quantities required for verification can be estimated reliably. We also introduce PhysForensics-Bench, comprising paired real and generated audio-video clips from nine event-centric scene families and two recent audio-video generators. On PhysForensics-Bench, PIVOT achieves 70.30% accuracy and 64.29% F1 score on Real+Seedance, and 72.16% accuracy and 65.82% F1 on Real+VEO. In comparison, direct inspection with Gemini 3.1 Pro obtains 53.96% accuracy and 60.09% F1 on Real+Seedance, and 57.22% accuracy and 63.44% F1 on Real+Veo. These results demonstrate the practical promise of physical-consistency verification as a structured and inspectable source of evidence that complements artifact-based AIGC detection.",
+    "status": "found"
+  },
+  "2609.15563": {
+    "arxiv_id": "2609.15563",
+    "title": "Triangles minimize the Monge-Ampère eigenvalue among planar bounded convex domains of a given area",
+    "authors": [
+      "Chong Gu"
+    ],
+    "submission_date": "2026-09-14T13:43:23Z",
+    "latest_updated": "2026-09-15T16:01:08Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2609.15563v1",
+      "2609.15563v2"
+    ],
+    "abstract": "We prove that triangles minimize the Monge-Ampère eigenvalue among bounded planar convex domains of a given area, thus resolving the two-dimensional case of Le's simplex conjecture for the Monge-Ampère eigenvalue (The eigenvalue problem for the Monge-Ampère operator on general bounded convex domains, Ann. Sc. Norm. Super. Pisa Cl. Sci. (5) 18 (2018)). The proof uses a neighbor-decreasing property of the Monge-Ampère eigenvalues of convex polygons along vertex elimination parallel chord movements.",
+    "status": "found"
+  },
+  "2609.15564": {
+    "arxiv_id": "2609.15564",
+    "title": "Deterministically Optimal Robust Exact Differentiators of Arbitrary Order",
+    "authors": [
+      "Richard Seeber",
+      "Hernan Haimovich"
+    ],
+    "submission_date": "2026-09-14T13:44:26Z",
+    "latest_updated": "2026-09-14T13:44:26Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.15564v1"
+    ],
+    "abstract": "Estimation of the derivatives of a function with bounded high-order derivative in the presence of bounded measurement noise is considered, in a deterministic setting. Theoretical fundamental limitations of causal differentiators in terms of the lowest achievable worst-case differentiation error and desired properties such as exactness---the zero-error estimation of derivatives in the absence of noise---and robustness---the small sensitivity of the estimate under small perturbations---are established for the first time for arbitrary differentiation order. Differentiators that achieve these theoretically lowest bounds on their differentiation error are formally defined, fully characterized, and their properties are studied. In particular, deterministically optimal differentiators---those featuring optimal differentiation error bounds among the class of exact differentiators---are shown to exist by means of a novel construction exhibiting, in addition to exactness from the beginning, a very strong form of robustness.",
+    "status": "found"
+  },
+  "2609.15565": {
+    "arxiv_id": "2609.15565",
+    "title": "Leveraging hologenomic data for phenotypic prediction: potential and pitfalls",
+    "authors": [
+      "Sol{è}ne Pety",
+      "Ingrid David",
+      "Andrea Rau",
+      "Mahendra Mariadassou"
+    ],
+    "submission_date": "2026-09-14T13:44:59Z",
+    "latest_updated": "2026-09-14T13:44:59Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.15565v1"
+    ],
+    "abstract": "The microbiota is increasingly recognized as an active component of host biology, influencing various host phenotypes. Advances in high-throughput sequencing and the emergence of the holobiont perspective have raised expectations regarding hologenomic-informed prediction. Yet, whether and under which conditions integrating microbiota and genomic data meaningfully improves phenotypic prediction remains unclear. The biological characteristics of the microbiota, including but not limited to transmission mechanisms, environmental effects and interactions with host genetics, complicate their integration into classical evaluation frameworks. In addition, microbiota datasets are high-dimensional, highly dispersed, sparse and compositional. Finally, analytical choices such as the taxonomic granularity considered for aggregation or the similarity matrix used in prediction models may impact downstream inference and prediction accuracy. Here we explore these challenges using a comprehensive set of transgenerational hologenomic simulations. By generating controlled and contrasted biological scenarios across a broad parameter space, we examine how microbiota granularity, variance structure and host modulation influence (i) the estimation of variance components and (ii) the accuracy of phenotypic prediction. We show that the added value of hologenomic, compared to genomic prediction, is highly context dependent. Our results provide a structured framework to interrogate when and how integrating microbiota may enhance phenotypic prediction in breeding applications.",
+    "status": "found"
+  },
+  "2609.15566": {
+    "arxiv_id": "2609.15566",
+    "title": "Bernoulli flow for Erdős-Rényi graphs",
+    "authors": [
+      "Joscha Henheik",
+      "Antti Knowles"
+    ],
+    "submission_date": "2026-09-14T13:45:01Z",
+    "latest_updated": "2026-09-14T13:45:01Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.15566v1"
+    ],
+    "abstract": "We study the eigenvalues and eigenvectors of the adjacency matrix $A$ of the Erdős-Rényi graph $\\mathbb G(N,p)$ in the regime $Np \\gg (\\log N)^2$. We establish optimal isotropic delocalization for the bulk eigenvectors $\\boldsymbol u$, meaning that $\\langle \\boldsymbol v, \\boldsymbol u\\rangle^2 \\leq \\frac{C \\log N}{N}$ with very high probability for any deterministic normalized $\\boldsymbol v$. In addition, we prove local spectral universality in the bulk by showing that the local spectral statistics coincide with those of the GOE. The main tool of our proof is a local law for the resolvent of $A$, down to optimal spectral scales and with optimal error bounds. Its proof relies on a new approach to local laws that we call the Bernoulli flow. It is a characteristic flow method in which the usual Brownian process is replaced by a Bernoulli process, where each edge of the graph forms an independent Markov process that jumps at unit rate from closed to open. The spectral parameter flows according to a suitably constructed matrix-valued Bernoulli characteristic flow.",
+    "status": "found"
+  },
+  "2609.15567": {
+    "arxiv_id": "2609.15567",
+    "title": "A counterexample to the determinant approximation conjecture",
+    "authors": [
+      "Holger Kammeyer"
+    ],
+    "submission_date": "2026-09-14T13:45:43Z",
+    "latest_updated": "2026-09-14T13:45:43Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.15567v1"
+    ],
+    "abstract": "The determinant approximation conjecture states that for a residually finite group $G$ and a chain $G_i$ of finite index normal subgroups with trivial intersection, the Fuglede-Kadison determinant of every matrix over the group algebra $\\mathbb{Q} G$ is the limit of the Fuglede-Kadison determinants of the matrix reductions from $\\mathbb{Q} G$ to $\\mathbb{Q} (G/G_i)$. We disprove the conjecture by exhibiting an explicit element of the integral group ring of the Heisenberg group with determinant equal to $2$ and reduced determinants bounded by $\\sqrt[3]{5}$.",
+    "status": "found"
+  },
+  "2609.15568": {
+    "arxiv_id": "2609.15568",
+    "title": "Beyond Retrieval: Scaffolding Children's Online Learning",
+    "authors": [
+      "Diletta Micol Tobia",
+      "Hrishita Chakrabarti",
+      "Maria Soledad Pera",
+      "Monica Landoni"
+    ],
+    "submission_date": "2026-09-14T13:46:02Z",
+    "latest_updated": "2026-09-14T13:46:02Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.15568v1"
+    ],
+    "abstract": "Children increasingly turn to online information access systems that are primarily designed for the mainstream population, e.g., adults, but possess a limited understanding of how these systems work, contributing to their unstructured and ineffective search practices. This lack of knowledge can hinder their curiosity and the development of critical search skills. Grounded on the existing literature of both child-oriented Information Retrieval and Human Computer Interaction, our work positions children as active participants in the search process, framing it as a scaffolded learning experience rather than a simple retrieval task.",
+    "status": "found"
+  },
+  "2609.15569": {
+    "arxiv_id": "2609.15569",
+    "title": "Big Brains and Changing Environments: Cause or Consequence?",
+    "authors": [
+      "Sian Heesom-Green",
+      "Jonathan Shock",
+      "Geoff Nitschke"
+    ],
+    "submission_date": "2026-09-14T13:46:05Z",
+    "latest_updated": "2026-09-14T13:46:05Z",
+    "revised_dates": null,
+    "venue": "Proceedings of the Genetic and Evolutionary Computation Conference Companion (GECCO '26), Pages 121-124, 2026",
+    "latest_version": 1,
+    "versions": [
+      "2609.15569v1"
+    ],
+    "abstract": "Large brains are metabolically costly, and associations with changing environments do not imply they evolved there, as the Cognitive Buffer Hypothesis (CBH) would suggest. They may instead evolve in stable conditions and later facilitate colonization of changing environments. Using neuro-evolution in an artificial seasonal foraging task, we compared agents evolving exclusively in changing environments to agents first evolved in static environments before transitioning. Results show that larger neural networks in dynamic environments arise mainly from prior static evolution, achieving superior performance under unpredictable changes. Our results challenge strict CBH predictions, provide agent-based (computational) support for a colonization-based account and highlight the role of evolutionary history in brain size evolution.",
+    "status": "found"
+  },
+  "2609.15570": {
+    "arxiv_id": "2609.15570",
+    "title": "DIDO: Distilling Interaction-Centric Dynamics into One-Step Denoising for World Action Models",
+    "authors": [
+      "Jing Lyu",
+      "Shuanghao Bai",
+      "Runze Xiao",
+      "Zhenyu Liao",
+      "Wenxing Tan",
+      "Zihan Tang",
+      "Ruochuan Shi",
+      "Cheng Peng",
+      "Yuheng Ji",
+      "Yihao Wang",
+      "Badong Chen",
+      "Pengwei Wang",
+      "Zhongyuan Wang",
+      "Xiaoguang Zhao"
+    ],
+    "submission_date": "2026-09-14T13:46:57Z",
+    "latest_updated": "2026-10-08T18:30:00Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2609.15570v1",
+      "2609.15570v2",
+      "2609.15570v3"
+    ],
+    "abstract": "World Action Models (WAMs) use video generation models to predict future visual dynamics for robotic manipulation, but iterative denoising introduces additional latency for closed-loop control. We empirically find that visual content converges at different rates during denoising. Static background structure forms early, whereas the gripper and manipulated object remain blurry after the first step, with their interaction dynamics emerging only through subsequent denoising. Consequently, naively truncating a multi-step video model to one step preserves scene structure but loses the interaction-centric dynamics most critical for manipulation. To address this issue, we propose DIDO, which distills the converged dynamics of a multi-step video model into a single denoising step. DIDO combines distribution matching distillation with interaction-centric representation guidance. Beyond compressing multi-step generation into one forward pass, DIDO explicitly models the gripper, manipulated object, and their interaction using supervised bounding-box visual reasoning tokens. Additionally, DIDO aligns the target object's representations across multiple model layers with features from a pretrained DINOv3 encoder. This interaction-centric guidance helps the distilled model preserve both the relevant entities and their future dynamics in a single step, while substantially reducing inference latency. DIDO achieves an average success rate of 99.0\\% on LIBERO, 76.6\\% on LIBERO-Plus, and 92.0\\% on RoboTwin, while also demonstrating effective transfer to long-horizon and generalization tasks in real-world robotic manipulation.",
+    "status": "found"
+  },
+  "2609.15571": {
+    "arxiv_id": "2609.15571",
+    "title": "GRIN+: Towards Fast Yet Effective Machine Unlearning for Imbalanced Medical Data",
+    "authors": [
+      "Minghui Huang",
+      "Junxiao Wang"
+    ],
+    "submission_date": "2026-09-14T13:47:11Z",
+    "latest_updated": "2026-09-14T13:47:11Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.15571v1"
+    ],
+    "abstract": "As deep learning models become fundamental to modern healthcare, the \"Right to be Forgotten\" mandated by privacy regulations like GDPR and HIPAA necessitates effective machine unlearning (MU) to remove sensitive patient data from trained models. However, existing MU techniques often struggle with a fundamental \"privacy-efficiency-utility\" (PEU) trilemma, particularly in medical scenarios where data is frequently characterized by severe class imbalance and long-tailed distributions. In such cases, standard unlearning methods can fail to protect key clinical knowledge or mistakenly delete features essential for diagnosing rare conditions due to the gradient dominance of majority classes. To address these challenges, we propose GRIN+, a novel machine unlearning framework designed for fast and precise data erasure in imbalanced medical scenarios. GRIN+ decouples unlearning-specific knowledge from generalized representations at the parameter level by analyzing the gradient contributions of both \"forget\" and \"retain\" sets. It introduces a class-adaptive influence scoring mechanism to rectify gradient dominance and employs a direction-constrained update strategy to prevent the unintended erosion of vital clinical knowledge. Comprehensive benchmarking across multiple medical datasets, including skin cancer (ISIC), brain tumor (MRI), and breast ultrasound (BUSI), demonstrates that GRIN+ achieves an optimal balance of the PEU trilemma. Experimental results show that GRIN+ maintains high diagnostic accuracy and robust privacy while significantly enhancing runtime efficiency compared to existing baselines. We open-source the GRIN+ code and benchmarks to support further research.",
+    "status": "found"
+  },
+  "2609.15572": {
+    "arxiv_id": "2609.15572",
+    "title": "On the pluricomplex Poisson kernel and the associated complex Monge--Ampère equation",
+    "authors": [
+      "Xieping Wang"
+    ],
+    "submission_date": "2026-09-14T13:47:29Z",
+    "latest_updated": "2026-09-14T13:47:29Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.15572v1"
+    ],
+    "abstract": "We give a geometric characterization of the pluricomplex Poisson kernel of bounded strongly linearly convex domains in $\\mathbb C^{n+1}$ in terms of their foliation by all complex geodesic discs whose closure contains a fixed boundary point, thus confirming a conjecture posed by Bracci et al. in 2009, even in greater generality. The proof relies crucially on our previous results obtained in a series of two papers. We also revisit the homogeneous complex Monge--Ampère equation associated with the pluricomplex Poisson kernel and show that its solutions are far from unique in general by constructing a family of pairwise nonproportional continuous solutions on the unit ball in $\\mathbb C^{n+1}$. This sharply contrasts with the uniqueness of solutions to the corresponding equation for the pluricomplex Green function.",
+    "status": "found"
+  },
+  "2609.15573": {
+    "arxiv_id": "2609.15573",
+    "title": "Algorithmic Attention and Content Creation on Social Media Platforms",
+    "authors": [
+      "Yi Chen",
+      "Fei Li",
+      "Marcel Preuss"
+    ],
+    "submission_date": "2026-09-14T13:47:37Z",
+    "latest_updated": "2026-09-14T13:47:37Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.15573v1"
+    ],
+    "abstract": "We study revenue-maximizing attention allocation on an ad-funded social media platform governed by recommendation algorithms. Attention is costly and can be monetized through advertising or allocated to increase creators' exposure, creating a trade-off between monetization and production incentives. In a two-sided model with heterogeneous viewers and creators under private information, the optimal recommendation mix includes content that is ex post suboptimal for some viewers to leverage network externalities. These distortions are targeted: low-ability creators are excluded, while high-ability creators are subsidized through exposure or monetary payments. Two-sided complementarities reshape content variety and quality, with implications for personalization regulation and advertising markets.",
+    "status": "found"
+  }
+}

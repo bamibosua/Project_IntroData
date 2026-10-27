@@ -1,0 +1,409 @@
+{
+  "2608.09567": {
+    "arxiv_id": "2608.09567",
+    "title": "From Runnable to Verifiable: An Independent Reproducibility Study of LLM/Agent-Driven Vulnerability Validation Artifacts",
+    "authors": [
+      "Bo Chen"
+    ],
+    "submission_date": "2026-08-10T13:05:02Z",
+    "latest_updated": "2026-08-10T13:05:02Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09567v1"
+    ],
+    "abstract": "Security research artifacts---repositories, PoC exploits, and validation pipelines---are increasingly produced by LLM/agent-driven vulnerability workflows, yet the gap between \\emph{publicly available}, \\emph{runnable}, \\emph{signal-producing}, and \\emph{semantically confirmed} artifacts is poorly measured. We conduct a pre-registered reproducibility audit of this literature. A search covering 2023--2026 with dual screening yields a 104-paper consensus corpus, of which 59 papers (56.7\\%) have a publicly reachable artifact. We execute an 18-paper sample at R0/R1 and all 102 cases of the anchor benchmark (arXiv:2509.24037), with patched-counterfactual verdicts on 30 signal-producing cases and matched-negative-control verdicts on 19. Three findings stand out. First, 58/102 (56.9\\%) anchor cases contain a script-internal CVE identifier that diverges from the declared directory CVE. Second, only 10/18 (55.6\\%) paper-level artifacts complete their declared workflow at R0, rising to 11/18 (61.1\\%) after environment-only R1 repair. Third, artifact-embedded oracles prove unreliable: 20/30 patched-counterfactual audits still produce the claimed signal on the patched build, 7/19 matched negative controls still trigger on benign input, and the oracle confusion matrix has sensitivity 60\\% and specificity 45\\%. A trigger on the vulnerable build is not evidence of CVE-specific reproduction without a clean patched counterfactual. These are exploratory results from a pre-registered protocol, and our protocol---pre-registered post-conditions, R0/R1 repair ladder, G1--G3 semantic evidence levels, and patched-counterfactual oracles---is a reusable template for the security reproducibility community.",
+    "status": "found"
+  },
+  "2608.09568": {
+    "arxiv_id": "2608.09568",
+    "title": "Se-DPO: Self-Evolving Token Credit for Direct Preference Optimization",
+    "authors": [
+      "Wenxiao Zhao",
+      "Shu Wang",
+      "Ying Nian Wu"
+    ],
+    "submission_date": "2026-08-10T13:05:38Z",
+    "latest_updated": "2026-08-10T13:05:38Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09568v1"
+    ],
+    "abstract": "Direct Preference Optimization (DPO) aggregates token-level log-probability ratios via uniform summation, implicitly treating all tokens as contributing equally to the preference signal. However, the contribution of individual tokens to the preference signal varies. We introduce token credit, which modulates each token's KL regularization based on its contribution to the preference outcome. We derive that effective token credit is proportional to the magnitude of each token's implicit reward, and observe that this quantity evolves substantially during training. This implies that static token credit becomes increasingly misaligned as training progresses. In this work, we propose Se-DPO (Self-Evolving Token Credit for DPO), a live mechanism that derives token credit from the model's own evolving internal signals during DPO training. Since the reward signal varies in reliability across positions, Se-DPO calibrates token credit based on both the strength and the confidence of each token's contribution. Se-DPO requires no external models, adding only a lightweight calibration network with minimal computational overhead. Experiments show that Se-DPO improves over DPO by up to 9.8 points on AlpacaEval~2 and 12.2 points on Arena-Hard.",
+    "status": "found"
+  },
+  "2608.09569": {
+    "arxiv_id": "2608.09569",
+    "title": "Linear Convergence of a Frank-Wolfe-type Method over the Spectrahedron without Strict Complementarity",
+    "authors": [
+      "Dan Garber"
+    ],
+    "submission_date": "2026-08-10T13:06:35Z",
+    "latest_updated": "2026-08-10T13:06:35Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09569v1"
+    ],
+    "abstract": "We consider smooth convex minimization over the spectrahedron using Frank-Wolfe-type methods based only on extreme-eigenvector computations. In our recent work \\cite{garber2026randomized} we presented the first ambient-dimension-independent linear convergence rate under quadratic growth. However, the method makes an additional strong strict complementarity assumption, it is randomized, its linear rate holds only after a burn-in phase and in expectation, and it requires the objective smoothness constant. We show that these limitations can be removed. Assuming quadratic growth and that all optimal solutions have the same rank, but without assuming strict complementarity, we give a deterministic and parameter-free Frank-Wolfe-type method with a global ambient-dimension-independent linear convergence rate.",
+    "status": "found"
+  },
+  "2608.09570": {
+    "arxiv_id": "2608.09570",
+    "title": "Eigenvalue asymptotics for the one-particle density matrix and one-particle kinetic energy density operator",
+    "authors": [
+      "Søren Fournais",
+      "Alexander V. Sobolev"
+    ],
+    "submission_date": "2026-08-10T13:07:18Z",
+    "latest_updated": "2026-08-10T13:07:18Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09570v1"
+    ],
+    "abstract": "Let $ψ({\\mathbf x})$, ${\\mathbf x} \\in{\\mathbb R}^{3N}$, be an eigenfunction of the $N$-particle atomic Schrödinger operator. We consider the one-particle density matrix $γ(x, y)$ and one-particle kinetic energy density $\\varkappa(x, y)$, $x, y\\in {\\mathbb R}^3$, associated with the eigenfunction $ψ$. Both functions play a central role in quantum chemistry computations of atomic and molecular bound states: the knowledge of the eigenvalue behaviour of the integral operators ${\\sfΓ}$ and ${\\sf{K}}$ with kernels $γ(x, y)$ and $\\varkappa(x, y)$ serves to estimate the errors due to finite-dimensional approximations. We find the following asymptotic formulas for their eigenvalues $λ_k({\\sfΓ})>0$ and $λ_k({\\sf{K}})>0$: \\[ \\lim_{k\\to \\infty} k^{\\frac{8}{3}} \\,λ_k({\\sfΓ}) = A^{\\frac{8}{3}},\\quad \\lim_{k\\to \\infty} k^2\\,λ_k({\\sf{K}}) = B^2, \\] where $A$ and $B$ are non-negative constants given explicitly in terms of the eigenfunction $ψ$. These asymptotics are determined by the singularities of the function $ψ$ at pair coalescence points of the particles. To identify and isolate these singularities we use some recent regularity results for $ψ$. At the last step we apply Birman-Solomyak spectral asymptotics results for pseudodifferential operators with homogeneous symbols. In the special case where the eigenfunction $ψ$ is totally antisymmetric, it exhibits enhanced regularity, which leads to a faster decay of the eigenvalues $λ_k(\\sfΓ)$ and $λ_k(\\sf{K})$. The asymptotic formulas take the form \\[ \\lim_{k\\to \\infty} k^{\\frac{10}{3}} \\,λ_k({\\sfΓ}) = \\big(A_{asym}\\big)^{\\frac{10}{3}},\\quad \\lim_{k\\to \\infty} k^{\\frac{8}{3}} \\,λ_k({\\sf K}) = \\big(B_{asym}\\big)^{\\frac{8}{3}}, \\] where $A_{asym}$ and $B_{asym}$ are non-negative constants given explicitly in terms of the gradient of $ψ$.",
+    "status": "found"
+  },
+  "2608.09571": {
+    "arxiv_id": "2608.09571",
+    "title": "SonicWeave: Chunk-Routed Mixture-of-Experts for Unified Audio Scene Generation",
+    "authors": [
+      "Yunrui Cai",
+      "Xu Li",
+      "Yucheng Zhou",
+      "Jinchao Li",
+      "Dingdong Wang",
+      "Dongchao Yang",
+      "Xixin Wu",
+      "Chen Zhang",
+      "Zhiyong Wu",
+      "Pengfei Wan",
+      "Helen Meng"
+    ],
+    "submission_date": "2026-08-10T13:07:24Z",
+    "latest_updated": "2026-08-10T13:07:24Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09571v1"
+    ],
+    "abstract": "Text-conditioned general audio generation is moving beyond isolated speech, music, and sound-effect synthesis toward a single model that can compose them into controllable, coherent audio scenes. This unified setting is particularly challenging: heterogeneous components impose conflicting structural requirements on a shared backbone, while a complex mixed scene may contain locally distinct or overlapping content that demands fine-grained adaptation within the same clip. Existing audio mixture-of-experts (MoEs) mainly route at the domain level, while token-wise routing overlooks the local continuity inherent to acoustic signals. We propose SonicWeave, a flow-matching model for unified audio scene generation. At its core is a chunk-routed MoE with a conflict-gated prior-evidence routing mechanism (CPE-MoE). CPE-MoE routes contiguous acoustic chunks by combining a global prior that encodes the structured text condition and diffusion phase with local evidence from the evolving acoustic state. A learned conflict gate favors the prior when local states are unreliable, while allowing local evidence to influence routing when a region departs from the global scene context. SonicWeave supports speech, music, sound effects, singing, and their fine-grained mixtures with a single set of weights. Across TTS, TTA, and TTM benchmarks, SonicWeave consistently improves over controlled Dense and Base-MoE baselines. Complex-scene evaluation further demonstrates improved compositional quality, while routing analyses reveal content-dependent expert specialization across diffusion phases. These results suggest that temporally coherent, prior-evidence routing is an effective conditional-computation strategy for unified audio generation. Project page: https://caiyunrui.github.io/SonicWeave.",
+    "status": "found"
+  },
+  "2608.09572": {
+    "arxiv_id": "2608.09572",
+    "title": "Hyperbolic Multimodal Continual Learning",
+    "authors": [
+      "Jiahong Liu",
+      "Ming Shen",
+      "Xiaohao Liu",
+      "Rex Ying",
+      "Menglin Yang",
+      "Tat-Seng Chua",
+      "Irwin King"
+    ],
+    "submission_date": "2026-08-10T13:07:26Z",
+    "latest_updated": "2026-08-10T13:07:26Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09572v1"
+    ],
+    "abstract": "Hyperbolic geometry has recently emerged as a powerful representation space for multimodal learning, as it naturally captures hierarchical semantic structure across modalities. Despite this progress, how such representations behave under continual learning poses fundamentally different challenges that remain underexplored. This work provides a geometric perspective on this problem and establishes a theoretical foundation for representation preservation in hyperbolic space, showing that preventing forgetting requires cross-modal invariance under a shared hyperbolic isometry. We further show that forgetting in hyperbolic continual learning involves both semantic relation drift and hierarchy-related distortion, motivating preservation of both cross-modal relational structure and hierarchical geometry. Guided by these insights, a principled continual learning framework is derived that preserves essential geometric structure while allowing effective adaptation to new tasks. Experiments on continual multimodal benchmarks corroborate the effectiveness of the proposed approach.",
+    "status": "found"
+  },
+  "2608.09573": {
+    "arxiv_id": "2608.09573",
+    "title": "VideoVIBE: A Video-Grounded Diagnostic Benchmark for One-Shot Interactive Website Generation",
+    "authors": [
+      "Jiajun Xu",
+      "Yanghao Zhou",
+      "Jingyun Liao",
+      "Yu Bai",
+      "Jinxing Zhou",
+      "Chengliang Liu",
+      "Changsen Yuan",
+      "Bo Wang",
+      "Qian Liu"
+    ],
+    "submission_date": "2026-08-10T13:07:40Z",
+    "latest_updated": "2026-08-10T13:07:40Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09573v1"
+    ],
+    "abstract": "Natural-language-driven \"vibe coding\" enables the one-shot generation of visually rich and interactive web applications, yet reliable assessment of their quality has not kept pace. Existing evaluations often score isolated artifacts or final task outcomes, offering limited evidence about which failures occur and why. We introduce VideoVIBE, a video-grounded benchmark that transforms human-operated webpage recordings into fine-grained diagnostic tasks. It contains approximately 1.7K diagnostic Video QA instances derived from 6,338 verified failures across generated webpages, spanning semantic-logical, visual-motion, structural-temporal, and functional failures. Diagnoses are grounded primarily in recorded presentation and behavior, with webpage source code used as complementary context. We further propose V2Lens, a training-free, evidence-grounded multi-agent system that challenges and selectively refines initial video-based diagnoses through targeted visual and source-code verification. Across thirteen closed-source and open-weight Video MLLMs, Gemini-2.5-Flash is the strongest standalone model with a score of 64.54, while V2Lens reaches 71.72, an improvement of 7.18 points. Together, our results show that video-grounded evaluation can move beyond isolated artifacts and aggregate outcomes toward a behaviorally faithful and diagnostically informative account of generated application quality.",
+    "status": "found"
+  },
+  "2608.09574": {
+    "arxiv_id": "2608.09574",
+    "title": "The Politician, the Liar, and the Obedient Worker: Emerging Behavior of LLM Agents in Hierarchical Games",
+    "authors": [
+      "Fatemeh Seyedin",
+      "Adrian Weller",
+      "Jinhyuk Yun",
+      "Mahmoudreza Babaei"
+    ],
+    "submission_date": "2026-08-10T13:08:52Z",
+    "latest_updated": "2026-08-10T13:08:52Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09574v1"
+    ],
+    "abstract": "LLMs are rapidly embedding themselves into daily life: drafting our emails, managing our schedules, and making decisions on our behalf. As they move from individual tools to participants in multi-agent organizations, an important question arises: do they reproduce the governance failures like free-riding, corruption, and entrenched leadership that plague human institutions? We introduce the Hierarchical Game (HG), a public goods game extended with managerial authority, democratic elections, and private communication. Testing six frontier models across twelve experiments that add institutions one at a time (speech, peers, government, wages, oversight, elections), we find distinct behavioral profiles: Qwen promises and lies (13.3\\% broken promises); Grok refuses to cooperate on its own but becomes fully cooperative once a manager can punish it (16\\%$\\to$100\\%); Claude and GPT-4o cooperate reliably at baseline. But honesty proves fragile. When the manager role comes with a salary, all models except GPT-4o start cutting private deals to win or keep the position. When punishment is made anonymous, honest models begin to cheat. When all agents share the same model family, the first elected manager stays in power indefinitely. Leadership change only happens in groups that mix different families.",
+    "status": "found"
+  },
+  "2608.09575": {
+    "arxiv_id": "2608.09575",
+    "title": "MSP-Net: Manifold-Guided Spectral Prompt Network for Hyperspectral Object Tracking",
+    "authors": [
+      "Juliu Li",
+      "Hanlin Qin",
+      "Shuowen Yang",
+      "Jingjing Li",
+      "Yuedong Tan",
+      "Shuai Yuan",
+      "Huixin Zhou"
+    ],
+    "submission_date": "2026-08-10T13:09:25Z",
+    "latest_updated": "2026-08-10T13:09:25Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09575v1"
+    ],
+    "abstract": "Hyperspectral object tracking leverages abundant spectral information to provide unique advantages for target discrimination in complex scenes. However, existing methods typically treat hyperspectral images as multi-channel extensions of RGB images, performing feature fusion in fixed band order. This approach leads to models dependent on specific sensor configurations while neglecting manifold relationships between bands, making generalization to heterogeneous sensors difficult. Moreover, the discriminative contribution of bands dynamically changes with target attributes and scene variations, further limiting the representational capacity of static fusion strategies. To address this, we propose the Manifold-Guided Spectral Prompt Network (MSP-Net). This network first reconstructs band relationships and forms adaptive spectral grouping through graph-driven manifold routing, then jointly integrates grouped spectral statistics with template appearance to construct target-related dynamic conditional prompts, enhancing target features while suppressing background interference. Furthermore, as tracking progresses, spectral conditions continuously evolve based on intermediate target representations, enabling target prompts to adapt in real-time to appearance and scene changes. Meanwhile, reliable historical states are used to constrain target localization and scale fluctuations, significantly improving temporal stability in cross-sensor tracking. Experiments on HOT2020 and HOT2023 demonstrate that MSP-Net achieves AUC and Precision exceeding 0.80 and 0.96, respectively, exhibiting exceptional robustness under heterogeneous sensors, target deformation, and complex background conditions. The code will be released at https://github.com/GGML668897/MSP-Net.",
+    "status": "found"
+  },
+  "2608.09576": {
+    "arxiv_id": "2608.09576",
+    "title": "Anomaly detection in European cryptocurrency exchange-traded products",
+    "authors": [
+      "Julia Kończal",
+      "Rafał Połoczański"
+    ],
+    "submission_date": "2026-08-10T13:11:31Z",
+    "latest_updated": "2026-08-10T13:11:31Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09576v1"
+    ],
+    "abstract": "Cryptocurrency exchange-traded products (ETPs) listed on European exchanges provide a regulated environment for studying intraday market anomalies. We study four Bitcoin and Ethereum ETPs traded on Xetra and Nasdaq Stockholm over the period January 2024 - December 2025 using one-minute bars. As a benchmark, we adopt an extreme value theory approach in which anomalous bars are defined as returns falling below a threshold estimated by fitting a generalised Pareto distribution to left-tail exceedances. We then propose three new binary anomaly indicators. The first, a cross-venue divergence anomaly, identifies venue-specific price divergence between the two exchanges. The second is a no-recovery anomaly that identifies extreme price drops followed by little or no recovery over the next ten active bars. The third is a momentum-reversal anomaly that identifies extreme price drops following positive short-term momentum. Although each anomaly type represents fewer than 1% of one-minute bars, statistical analysis using Mann-Whitney U tests shows that anomaly observations exhibit significantly higher effective spreads, higher values of liquidity-related ratios, and more pronounced order-flow imbalances than non-anomalous bars. Furthermore, employing an out-of-sample prediction methodology with four classifiers - random forest, logistic regression, extreme gradient boosting, and light gradient boosting machine - shows that all four anomaly types are predictable one bar ahead, with AUC-ROC values of up to 0.82. Permutation importance indicates that short-term volatility and drawdown measures are generally more useful for prediction than microstructure variables.",
+    "status": "found"
+  },
+  "2608.09577": {
+    "arxiv_id": "2608.09577",
+    "title": "ElasticBack: Stealthy Conditional Backdoor in LLM-Agent Skills via Coupled Trigger-Rule Optimization",
+    "authors": [
+      "Hao Sui",
+      "Simeng Qin",
+      "Jie Liao",
+      "Xiaojun Jia",
+      "Bing Chen",
+      "Yang Liu"
+    ],
+    "submission_date": "2026-08-10T13:12:35Z",
+    "latest_updated": "2026-08-10T13:12:35Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09577v1"
+    ],
+    "abstract": "Agent skills, bundles of instructions and resources that an LLM agent loads on demand, form an emerging supply chain where a single poisoned skill can persistently compromise every agent that installs it. However, existing skill attacks either fire on every request or rely on fine-tuned weights or multiple skills, leaving a conditional and low-cost backdoor unexplored. In this work, we present ElasticBack, an effective conditional single-skill backdoor that plants a rule R in the skill document and a benign-looking trigger T in the user query, so the malicious payload fires only when both co-occur. ElasticBack binds the two sides through a trigger-as-switch construction, generating R via semantic-anchored rule injection. It then freezes R and evolves T against it with a stealth-constrained genetic search, so that effectiveness and stealth are optimized, keeping the backdoor weight-free and dormant on benign inputs. Extensive experiments across three target behaviors (50 skills each) and four agent LLMs show that ElasticBack attains a high attack success rate at a near-zero false-positive rate with preserved clean accuracy, transfers across models, and evades deployment-time defenses. These results motivate stronger defenses for the skill supply chain.",
+    "status": "found"
+  },
+  "2608.09578": {
+    "arxiv_id": "2608.09578",
+    "title": "Quantum Uncomputation of Clean and Dirty Ancilla Qubits",
+    "authors": [
+      "Chenke Liu",
+      "Li Zhou",
+      "Boning Meng"
+    ],
+    "submission_date": "2026-08-10T13:13:54Z",
+    "latest_updated": "2026-10-11T03:07:40Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.09578v1",
+      "2608.09578v2"
+    ],
+    "abstract": "Automatic uncomputation aims to provide programming-language-level support to facilitate the correct and safe use of ancilla qubits in quantum computing, but efforts have only been made for clean ancillas, leaving dirty ancillas unexplored. We present a unified formalization of the uncomputation of both clean and dirty ancillas. For the first time, we prove that checking the existence of uncomputation is coNP-hard. We introduce two complementary synthesis-oriented existence checking methods: a syntax-directed static reasoning system and a rewrite-based normalization procedure (\\RwUnx), together forming a top-down pipeline. We implement \\RwUnx in Qiskit. Compared with the state-of-the-art \\Reqompx, \\RwUnx handles practical benchmarks with complex dependencies where \\Reqompx does not, and achieves higher success rates in random-circuit experiments.",
+    "status": "found"
+  },
+  "2608.09579": {
+    "arxiv_id": "2608.09579",
+    "title": "You Only Flow Once: Calibrated and Real-Time Radar Pose Estimation with Multi-Hypothesis Normalizing Flows",
+    "authors": [
+      "Jonas Leo Mueller",
+      "Sebastian Hoefler",
+      "Dario Zanca",
+      "Naga Venkata Sai Jitin Jami",
+      "Thomas Altstidl",
+      "Bjoern M. Eskofier"
+    ],
+    "submission_date": "2026-08-10T13:15:09Z",
+    "latest_updated": "2026-08-10T13:15:09Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09579v1"
+    ],
+    "abstract": "Sparse and noisy millimeter-wave radar point cloud observations often correspond to multiple plausible human poses, making deterministic pose estimation fundamentally ill-posed. Yet existing radar methods remain deterministic, collapsing this ambiguity into a single estimate. Diffusion-based alternatives can model multi-hypothesis distributions but require costly sequential denoising for each distribution sample and lack calibrated uncertainty. We propose Multi-Hypothesis Normalizing Flow Pose Generator (MH-NFPG), which models pose distributions from radar point clouds using a conditional normalizing flow. Specifically, we combine a spatiotemporal transformer backbone with a normalizing flow that transforms a Laplace base distribution into an expressive posterior, generated in parallel through a single forward pass. Leveraging this efficiency, we outperform diffusion-based alternatives in calibration across three radar benchmarks (MM-Fi, mmRadPose, mRI), improve pose accuracy on two, and match it on the third, while achieving over 20x faster inference for applications and reducing calibration error by up to 85%. We find that calibration degrades substantially for diffusion models, whereas our flow-based approach maintains reliable coverage, also in cross-environment settings. These results demonstrate normalizing flows as a practical alternative to diffusion models for real-time, uncertainty-aware radar pose estimation. Our code will be made publicly available.",
+    "status": "found"
+  },
+  "2608.09580": {
+    "arxiv_id": "2608.09580",
+    "title": "CoRCi: Cross-Reconstruction of Coherent Interests Modeling in Cross-Domain Sequential Recommendation",
+    "authors": [
+      "Qingtian Bian",
+      "Tieying Li",
+      "Marcus de Carvalho",
+      "Jiaxing Xu",
+      "Hui Fang",
+      "Yiping Ke"
+    ],
+    "submission_date": "2026-08-10T13:15:55Z",
+    "latest_updated": "2026-08-10T13:15:55Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09580v1"
+    ],
+    "abstract": "Cross-Domain Sequential Recommendation (CDSR) aims to alleviate data sparsity by transferring dynamic user interests across related domains. A key challenge lies in effectively bridging these domains. In single-domain modeling, models cannot distinguish between domain-specific and domain-invariant interests. Recent methods merge domain-specific sequences chronologically into a mixed-domain sequence to capture domain-invariant knowledge. However, they typically deploy separate encoders for the mixed-domain sequence and train them with per-domain loss aggregation. This workflow magnifies inter-domain discrepancies and disrupts domain-invariant interest coherence, especially when query target pairs in Seq2Seq originate from different domains. In this paper, we present CoRCi (Cross-Reconstruction for Coherent Interest), a dual-target CDSR framework that tackles these drawbacks. Specifically, CoRCi proposes a Cross-Reconstruction approach that generates mixed-domain representations directly from pre-encoded specific-domain representations via cross-attention. The generated representations are then trained using a single, sequence-level, domain-agnostic loss to preserve the coherence of domain-invariant interests. To further suppress domain discrepancies in mixed-domain modeling, CoRCi introduces FocalNCE, which embeds Focal Loss into the preceding mixed-domain InfoNCE objective. The new loss assigns higher penalties to negatives drawn from the same domain as the query, thereby strengthening domain-invariant alignment. Extensive experiments on four real-world datasets demonstrate that CoRCi consistently outperforms state-of-the-art CDSR counterparts, achieving statistically significant gains across all metrics.",
+    "status": "found"
+  },
+  "2608.09581": {
+    "arxiv_id": "2608.09581",
+    "title": "GenTrack3: Hybrid Stochastic-Deterministic Online Multi-Object Tracking with Cluster-Aware Association",
+    "authors": [
+      "Toan Van Nguyen",
+      "Rasmus G. K. Christiansen",
+      "Dirk Kraft",
+      "Leon Bodenhagen"
+    ],
+    "submission_date": "2026-08-10T13:16:17Z",
+    "latest_updated": "2026-10-23T08:31:38Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.09581v1",
+      "2608.09581v2"
+    ],
+    "abstract": "Multi-object tracking (MOT) involves maintaining consistent target identities as objects dynamically enter and leave a scene. Deterministic approaches, such as tracking-by-detection with data association, produce reproducible results and are computationally efficient, but they rely heavily on motion models and are sensitive to noisy detections that can lead to association errors. In contrast, stochastic methods explicitly model uncertainty and can better handle complex non-linear dynamics, albeit at the cost of increased computational complexity and variability arising from random sampling. This paper presents an online MOT framework that integrates deterministic and stochastic principles to achieve robust tracking under uncertainty. Furthermore, a novel track-to-detection matching approach is introduced to enhance scalability with increasing target numbers while supporting group tracking. The tracking inference mechanism employs a tracklet that includes identifiers, states, velocities, track penalties and track ages of targets, supporting a systematic tracking pipeline. Each target is associated with a stochastic particle set to compute the matching cost to detections. Reference implementations of the proposed approach and baseline trackers can be found on GitHub: https://github.com/SDU-VelKoTek/GenTrack3.",
+    "status": "found"
+  },
+  "2608.09582": {
+    "arxiv_id": "2608.09582",
+    "title": "Sector-based morphological analysis of four planetary nebulae (J 320, NGC 2610, A 6672 and PRTM 1) observed with UVIT/ASTROSAT",
+    "authors": [
+      "Anisha Hazra",
+      "Ranjan Kumar",
+      "Sonika Piridi",
+      "Ananta C. Pradhan"
+    ],
+    "submission_date": "2026-08-10T13:17:56Z",
+    "latest_updated": "2026-08-10T13:17:56Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09582v1"
+    ],
+    "abstract": "Four planetary nebulae (PNe), Jonckheere 320, NGC 2610, A 6672, and PRTM 1, have been imaged in the far-ultraviolet (FUV) filter F148W ($λ_{\\mathrm {eff}} = 1481\\, \\mathring{A} $) using the Ultraviolet Imaging Telescope (UVIT) onboard ASTROSAT. The FUV images reveal faint extended emission structures surrounding the bright central star. A novel sector-based structural analysis technique was employed to examine the detailed FUV morphologies of PNe. In this method, sector strengths were calculated for each nebula and used to classify their structures. Our results show that Jonckheere 320 exhibits a polypolar morphology, while NGC 2610 and PRTM 1 display spherical structures. In contrast, A 6672 shows irregular or elliptical features in the FUV.",
+    "status": "found"
+  },
+  "2608.09583": {
+    "arxiv_id": "2608.09583",
+    "title": "A Highly Accurate Fast Decoding Framework for QLDPC codes Accelerated by Noise Perturbation and Ensemble Decoding",
+    "authors": [
+      "Mainak Bhattacharyya",
+      "Ankur Raina"
+    ],
+    "submission_date": "2026-08-10T13:18:21Z",
+    "latest_updated": "2026-08-10T13:18:21Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09583v1"
+    ],
+    "abstract": "A well-balanced decoder has been central to the development of modern fault-tolerant quantum computing. However, the inherent topologies of quantum error correcting codes can limit the performance of many well-studied decoding algorithms. In this work, we introduce Noise Assisted Ensemble Decoding (NAED), a highly accurate decoding framework with a significant advantage in real-time speed. NAED constructs an ensemble of Tanner forests, obtained as acyclic subgraphs of the original Tanner graph, and performs exact inference on each Tanner forest using a lightweight dynamic programming algorithm. The forest construction is guided by synthetic soft information derived jointly from the measured syndrome and channel statistics, with controlled noise perturbations generating diverse yet informative decoding matrix column orderings for the Tanner forest construction across the ensemble. Our benchmark results show that the proposed synthetic soft information-driven construction and inference on the Tanner forests can achieve improved or comparable decoding performances to the state-of-the-art decoding solutions, such as BP+OSD$0$, while also providing orders-of-magnitude improvements in per-round decoding speed under circuit-level noise.",
+    "status": "found"
+  },
+  "2608.09584": {
+    "arxiv_id": "2608.09584",
+    "title": "Rogue Wave Statistics from a Sparse Coherent Structure Decomposition",
+    "authors": [
+      "Yuchen He",
+      "Amin Chabchoub",
+      "Zhan Wang"
+    ],
+    "submission_date": "2026-08-10T13:19:47Z",
+    "latest_updated": "2026-08-10T13:19:47Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09584v1"
+    ],
+    "abstract": "While conventional rogue wave statistical models rely on linear or weakly nonlinear descriptions of random seas, we demonstrate experimentally that moderately or strongly nonlinear wave fields can be represented by sparse ensembles of coherent soliton-like packets. These packets exhibit log-normal amplitude distributions together with uniformly distributed phases and peak emergence times. This sparse coherent structure framework naturally leads to an extreme value description in which the probability of exceedance is governed by the tail of the coherent-structure amplitude distribution. The prediction is validated against laboratory hydrodynamic experiments across a variety of unidirectional sea states, showing good agreement with the experimental observations and comparing favourably with conventional statistical prediction models while retaining analytical simplicity. Our results provide a direct physics-based link between sparse coherent structures and rogue wave probabilities, with broader implications for nonlinear wave physics in optics, cold gases, and plasmas.",
+    "status": "found"
+  },
+  "2608.09585": {
+    "arxiv_id": "2608.09585",
+    "title": "Exact solution for the motion of a rigid particle with $\\boldsymbol{S_4}$ and $\\boldsymbol{C_{2v}}$ symmetry settling under gravity in a viscous fluid",
+    "authors": [
+      "Piotr Zdybel",
+      "Maria L. Ekiel-Jeżewska"
+    ],
+    "submission_date": "2026-08-10T13:19:49Z",
+    "latest_updated": "2026-08-10T13:19:49Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09585v1"
+    ],
+    "abstract": "We provide an exact and complete solution for the dynamics of a rigid particle of uniform density with $C_{2v}$ and $S_4$ symmetry, settling under gravity in a viscous fluid at a Reynolds number much smaller than unity. The $S_4$ symmetry renders the problem exactly integrable, with all orbits labelled by a single conserved quantity $0\\le C\\le 1$. We show that, for $0<C<1$, there are two different time scales, which lead to quasi-periodic evolution, with a significant time-dependent horizontal displacement. We obtain the tilt $θ$ and spin $ψ$ Euler angles as periodic Jacobi elliptic functions of time, and the azimuthal angle $φ$ through an incomplete elliptic integral of the third kind with a complex characteristic, which splits $φ$ into a uniform drift and a strictly periodic modulation. The orientation period and the drift rate (corresponding to a constant angular velocity around the gravity direction) follow in a closed form. The vertical centre-of-mass displacement is obtained in terms of periodic in time incomplete elliptic integrals, and the periodic orbit-averaged settling velocity reduces to a single ratio of complete elliptic integrals. The horizontal component of the motion in the laboratory frame of reference is obtained exactly and algebraically in terms of all three Euler angles, so it is quasi-periodic. The horizontal component of the centre-of-mass position traces rosette-like, in general open curves confined by two concentric `envelope' circles. We determine very simple exact expressions for radii of both envelopes and demonstrate that they tend to infinity for a family of shapes with the rotation-translation coupling decreasing to zero. We also explain the origin of cusps at the rosette-like trajectory and provide a commensurability condition selecting strictly periodic rosettes.",
+    "status": "found"
+  },
+  "2608.09586": {
+    "arxiv_id": "2608.09586",
+    "title": "ICM Out! Better Tournament Strategy from Computed Continuations, vs. Solvers and LLMs",
+    "authors": [
+      "Boning Li",
+      "Longbo Huang"
+    ],
+    "submission_date": "2026-08-10T13:20:36Z",
+    "latest_updated": "2026-08-10T13:20:36Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09586v1"
+    ],
+    "abstract": "The Independent Chip Model (ICM) converts tournament chips into reference prize equity, and policies are routinely constructed against those values. Because ICM reads only stack sizes, it omits action order, blind obligations, and seat rotation, and it does not price the elimination pressure a big stack puts on the short stacks it can bust. Those omissions can alter the successor-state contrasts that determine a move. We introduce Strategic-Continuation Optimization (SCO), a policy-construction method that enumerates current-hand outcomes, maps them to successor states, prices those states with continuation values computed from the finite tournament model, and optimizes and freezes the resulting current-hand policy. The fixed-ICM comparison policy changes one thing only: the same optimizer solves the same game with successor states priced by analytic ICM, so the two policies differ only through that pricing. We evaluate the resulting policies in a three-player jam/fold tournament with a \\$1M prize pool. Relative to the frozen strategic-continuation benchmark, analytic ICM has \\$9{,}036 mean absolute value error across all 2,838 state--seat entries. That value error rewrites the ranges it prices: measured against each decision point's own fixed-ICM jam range, SCO moves the jam frequency by an average of 14.08\\%. To price those different moves, we compare all 946 states and three policy owners while changing only the focal policy and holding both opponents and the continuation evaluator fixed. The policy produced by SCO earns \\$214.33 more prize equity per hand on average and is favored in 2,433 of 2,838 matched units. The ordering survives replacing the solver-built opponent with two LLMs and with a family of non-modeling threshold players. This value-to-policy-to-cost chain shows directly when ICM becomes an inadequate objective for tournament strategy construction.",
+    "status": "found"
+  }
+}

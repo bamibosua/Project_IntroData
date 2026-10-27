@@ -1,0 +1,428 @@
+{
+  "2601.22916": {
+    "arxiv_id": "2601.22916",
+    "title": "LLMDR: Large language model driven framework for missing data recovery in mixed data under low resource regime",
+    "authors": [
+      "Durga Keshav",
+      "GVD Praneeth",
+      "Chetan Kumar Patruni",
+      "Vivek Yelleti",
+      "U Sai Ram"
+    ],
+    "submission_date": "2026-01-30T12:38:26Z",
+    "latest_updated": "2026-01-30T12:38:26Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22916v1"
+    ],
+    "abstract": "The missing data problem is one of the important issues to address for achieving data quality. While imputation-based methods are designed to achieve data completeness, their efficacy is observed to be diminishing as and when there is increasing in the missingness percentage. Further, extant approaches often struggle to handle mixed-type datasets, typically supporting either numerical and/or categorical data. In this work, we propose LLMDR, automatic data recovery framework which operates in two stage approach, wherein the Stage-I: DBSCAN clustering algorithm is employed to select the most representative samples and in the Stage-II: Multi-LLMs are employed for data recovery considering the local and global representative samples; Later, this framework invokes the consensus algorithm for recommending a more accurate value based on other LLMs of local and global effective samples. Experimental results demonstrate that proposed framework works effectively on various mixed datasets in terms of Accuracy, KS-Statistic, SMAPE, and MSE. Further, we have also shown the advantage of the consensus mechanism for final recommendation in mixed-type data.",
+    "status": "found"
+  },
+  "2601.22917": {
+    "arxiv_id": "2601.22917",
+    "title": "Deep in the Jungle: Towards Automating Chimpanzee Population Estimation",
+    "authors": [
+      "Tom Raynes",
+      "Otto Brookes",
+      "Timm Haucke",
+      "Lukas Bösch",
+      "Anne-Sophie Crunchant",
+      "Hjalmar Kühl",
+      "Sara Beery",
+      "Majid Mirmehdi",
+      "Tilo Burghardt"
+    ],
+    "submission_date": "2026-01-30T12:40:47Z",
+    "latest_updated": "2026-01-30T12:40:47Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22917v1"
+    ],
+    "abstract": "The estimation of abundance and density in unmarked populations of great apes relies on statistical frameworks that require animal-to-camera distance measurements. In practice, acquiring these distances depends on labour-intensive manual interpretation of animal observations across large camera trap video corpora. This study introduces and evaluates an only sparsely explored alternative: the integration of computer vision-based monocular depth estimation (MDE) pipelines directly into ecological camera trap workflows for great ape conservation. Using a real-world dataset of 220 camera trap videos documenting a wild chimpanzee population, we combine two MDE models, Dense Prediction Transformers and Depth Anything, with multiple distance sampling strategies. These components are used to generate detection distance estimates, from which population density and abundance are inferred. Comparative analysis against manually derived ground-truth distances shows that calibrated DPT consistently outperforms Depth Anything. This advantage is observed in both distance estimation accuracy and downstream density and abundance inference. Nevertheless, both models exhibit systematic biases. We show that, given complex forest environments, they tend to overestimate detection distances and consequently underestimate density and abundance relative to conventional manual approaches. We further find that failures in animal detection across distance ranges are a primary factor limiting estimation accuracy. Overall, this work provides a case study that shows MDE-driven camera trap distance sampling is a viable and practical alternative to manual distance estimation. The proposed approach yields population estimates within 22% of those obtained using traditional methods.",
+    "status": "found"
+  },
+  "2601.22918": {
+    "arxiv_id": "2601.22918",
+    "title": "Microbiome association diversity reflects proximity to the edge of instability",
+    "authors": [
+      "Rubén Calvo",
+      "Adrián Roig",
+      "Roberto Corral López",
+      "José Camacho-Mateu",
+      "José A. Cuesta",
+      "Miguel A. Muñoz"
+    ],
+    "submission_date": "2026-01-30T12:40:51Z",
+    "latest_updated": "2026-01-30T12:40:51Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22918v1"
+    ],
+    "abstract": "Recent advances in metagenomics have revealed macroecological patterns or \"laws\" describing robust statistical regularities across microbial communities. Stochastic logistic models (SLMs), which treat species as independent -- akin to ideal gases in physics -- and incorporate environmental noise, reproduce many single-species patterns but cannot account for the pairwise covariation observed in microbiome data. Here we introduce an interacting stochastic logistic model (ISLM) that minimally extends the SLM by sampling an ensemble of random interaction networks chosen to preserve these single-species laws. Using dynamical mean-field theory, we map the model's phase diagram -- stable, chaotic, and unbounded-growth regimes -- where the transition from stable fixed-point to chaos is controlled by network sparsity and interaction heterogeneity via a May-like instability line. Going beyond mean-field theory to account for finite communities, we derive an estimator of an effective stability parameter that quantifies distance to the edge of instability and can be inferred from the width of the distribution of pairwise covariances in empirical species-abundance data. Applying this framework to synthetic data, environmental microbiomes, and human gut cohorts indicates that these communities tend to operate near the edge of instability. Moreover, gut communities from healthy individuals cluster closer to this edge and exhibit broader, more heterogeneous associations, whereas dysbiosis-associated states shift toward more stable regimes -- enabling discrimination across conditions such as Crohn's disease, inflammatory bowel syndrome, and colorectal cancer. Together, our results connect macroecological laws, interaction-network ensembles, and May's stability theory, suggesting that complex communities may benefit from operating near a dynamical phase transition.",
+    "status": "found"
+  },
+  "2601.22919": {
+    "arxiv_id": "2601.22919",
+    "title": "A Serverless Edge-Native Data Processing Architecture for Autonomous Driving Training",
+    "authors": [
+      "Fabian Bally",
+      "Michael Schötz",
+      "Thomas Limbrunner"
+    ],
+    "submission_date": "2026-01-30T12:41:11Z",
+    "latest_updated": "2026-01-30T12:41:11Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22919v1"
+    ],
+    "abstract": "Data is both the key enabler and a major bottleneck for machine learning in autonomous driving. Effective model training requires not only large quantities of sensor data but also balanced coverage that includes rare yet safety-critical scenarios. Capturing such events demands extensive driving time and efficient selection. This paper introduces the Lambda framework, an edge-native platform that enables on-vehicle data filtering and processing through user-defined functions. The framework provides a serverless-inspired abstraction layer that separates application logic from low-level execution concerns such as scheduling, deployment, and isolation. By adapting Function-as-a-Service (FaaS) principles to resource-constrained automotive environments, it allows developers to implement modular, event-driven filtering algorithms while maintaining compatibility with ROS 2 and existing data recording pipelines. We evaluate the framework on an NVIDIA Jetson Orin Nano and compare it against native ROS 2 deployments. Results show competitive performance, reduced latency and jitter, and confirm that lambda-based abstractions can support real-time data processing in embedded autonomous driving systems. The source code is available at https://github.com/LASFAS/jblambda.",
+    "status": "found"
+  },
+  "2601.22920": {
+    "arxiv_id": "2601.22920",
+    "title": "Q-Hawkeye: Reliable Visual Policy Optimization for Image Quality Assessment",
+    "authors": [
+      "Wulin Xie",
+      "Rui Dai",
+      "Ruidong Ding",
+      "Kaikui Liu",
+      "Xiangxiang Chu",
+      "Xinwen Hou",
+      "Jie Wen"
+    ],
+    "submission_date": "2026-01-30T12:42:32Z",
+    "latest_updated": "2026-02-14T15:49:46Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2601.22920v1",
+      "2601.22920v2",
+      "2601.22920v3"
+    ],
+    "abstract": "Image Quality Assessment (IQA) predicts perceptual quality scores consistent with human judgments. Recent RL-based IQA methods built on MLLMs focus on generating visual quality descriptions and scores, ignoring two key reliability limitations: (i) although the model's prediction stability varies significantly across training samples, existing GRPO-based methods apply uniform advantage weighting, thereby amplifying noisy signals from unstable samples in gradient updates; (ii) most works emphasize text-grounded reasoning over images while overlooking the model's visual perception ability of image content. In this paper, we propose Q-Hawkeye, an RL-based reliable visual policy optimization framework that redesigns the learning signal through unified Uncertainty-Aware Dynamic Optimization and Perception-Aware Optimization. Q-Hawkeye estimates predictive uncertainty using the variance of predicted scores across multiple rollouts and leverages this uncertainty to reweight each sample's update strength, stabilizing policy optimization. To strengthen perceptual reliability, we construct paired inputs of degraded images and their original images and introduce an Implicit Perception Loss that constrains the model to ground its quality judgments in genuine visual evidence. Extensive experiments demonstrate that Q-Hawkeye outperforms state-of-the-art methods and generalizes better across multiple datasets. Our dataset and code are available at https://github.com/AMAP-ML/Q-Hawkeye.",
+    "status": "found"
+  },
+  "2601.22921": {
+    "arxiv_id": "2601.22921",
+    "title": "Evaluating Large Language Models for Security Bug Report Prediction",
+    "authors": [
+      "Farnaz Soltaniani",
+      "Shoaib Razzaq",
+      "Mohammad Ghafari"
+    ],
+    "submission_date": "2026-01-30T12:43:01Z",
+    "latest_updated": "2026-01-30T12:43:01Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22921v1"
+    ],
+    "abstract": "Early detection of security bug reports (SBRs) is critical for timely vulnerability mitigation. We present an evaluation of prompt-based engineering and fine-tuning approaches for predicting SBRs using Large Language Models (LLMs). Our findings reveal a distinct trade-off between the two approaches. Prompted proprietary models demonstrate the highest sensitivity to SBRs, achieving a G-measure of 77% and a recall of 74% on average across all the datasets, albeit at the cost of a higher false-positive rate, resulting in an average precision of only 22%. Fine-tuned models, by contrast, exhibit the opposite behavior, attaining a lower overall G-measure of 51% but substantially higher precision of 75% at the cost of reduced recall of 36%. Though a one-time investment in building fine-tuned models is necessary, the inference on the largest dataset is up to 50 times faster than that of proprietary models. These findings suggest that further investigations to harness the power of LLMs for SBR prediction are necessary.",
+    "status": "found"
+  },
+  "2601.22922": {
+    "arxiv_id": "2601.22922",
+    "title": "Open strings on knot complements",
+    "authors": [
+      "Sachin Chauhan",
+      "Tobias Ekholm",
+      "Pietro Longhi"
+    ],
+    "submission_date": "2026-01-30T12:43:02Z",
+    "latest_updated": "2026-01-30T12:43:02Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22922v1"
+    ],
+    "abstract": "Using skein valued holomorphic curve counting techniques, we give a flow loop formula for the skein valued partition function of the Lagrangian knot complement of a fibered knot (of the $A$-model open topological strings with Lagrangian $A$-branes wrapping the complement) in the cotangent bundle of the three-sphere and in the resolved conifold. For torus knots we show that the partition function in the cotangent bundle localizes on two or three holomorphic annuli and give a corresponding generalized quiver structure for the partition function in the resolved conifold. We connect the formula to the augmentation curve, the representation variety of the knot contact homology algebra of the knot, generated by Reeb chords of its Legendrian conormal and with differential given by holomorphic disks interpolating between words of Reeb chords. The curve admits a quantization as a $q$-difference equation for the generating function of symmetrically colored HOMFLYPT-polynomials of the knot or, geometrically, for the $U(1)$-partition function of the knot conormal. For $(2,2p+1)$-torus knots we show that, after a change of variables, the partition function of the knot complement also satisfies this $q$-difference equation. This gives another geometrically defined coordinate chart for the $D$-module defined by the quantized augmentation polynomial.",
+    "status": "found"
+  },
+  "2601.22923": {
+    "arxiv_id": "2601.22923",
+    "title": "Left Ehresmann monoids with a proper basis",
+    "authors": [
+      "Gracinda Gomes",
+      "Victoria Gould",
+      "Yanhui Wang"
+    ],
+    "submission_date": "2026-01-30T12:43:32Z",
+    "latest_updated": "2026-04-26T07:36:39Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.22923v1",
+      "2601.22923v2"
+    ],
+    "abstract": "Left Ehresmann monoids, and their two-sided counterpart of Ehresmann monoids, were so named by Lawson, who elucidated their connection to the work of Ehresmann in differential geometry. This article is dedicated to building a theory for left Ehresmann monoids inspired by that for inverse semigroups; in order to do so we must develop substantially different ideas and techniques. It is known that every left Ehresmann monoid has a cover, that is, a projection separating preimage, of the form $\\mathcal{P}_{\\ell}(T,X)$, where $\\mathcal{P}_{\\ell}(T,X)$ is a left Ehresmann monoid constructed from a monoid $T$ and an order-preserving action of $T$ on a semilattice $X$ with identity. We introduce the notion of a proper basis, and show that $\\mathcal{P}_{\\ell}(T,X)$, and consequently any free left Ehresmann monoid, possesses a proper basis. We show that any left Ehresmann monoid with a proper basis displays properties close to those of two-sided Ehresmann monoids. Next, we exhibit a class of subsemigroups $\\mathcal{Q}_{\\ell}(T,X,Y)$ (properly, biunary monoid subsemigroups) of the monoids $\\mathcal{P}_{\\ell}(T,X)$, which are also left Ehresmann with a proper basis. We prove that any left Ehresmann monoid with a proper basis is isomorphic to some $\\mathcal{Q}_{\\ell}(T,X,Y)$. Our results can be regarded as being analogous to those for proper inverse semigroups, due to McAlister and O'Carroll, the $\\mathcal{Q}_{\\ell}(T,X,Y)$ playing the role of the $P$-semigroups and the $\\mathcal{P}_{\\ell}(T,X)$ the role of the semidirect products of a semilattice by a group. In the process of proving our main theorems we present a globalisation result for an order-preserving partial action of a monoid on a partially ordered set or semilattice.",
+    "status": "found"
+  },
+  "2601.22924": {
+    "arxiv_id": "2601.22924",
+    "title": "Spiral Phase and Phase Diagram of the $S$=1/2 XXZ Model on the Shastry-Sutherland Lattice",
+    "authors": [
+      "Zhengpeng Yuan",
+      "Muwei Wu",
+      "Dao-Xin Yao",
+      "Han-Qing Wu"
+    ],
+    "submission_date": "2026-01-30T12:43:47Z",
+    "latest_updated": "2026-07-13T13:08:00Z",
+    "revised_dates": null,
+    "venue": "Phys. Rev. B 113, 155154 (2026)",
+    "latest_version": 2,
+    "versions": [
+      "2601.22924v1",
+      "2601.22924v2"
+    ],
+    "abstract": "We investigate the ground-state phase diagram of the $S$=1/2 XXZ model on the two-dimensional Shastry-Sutherland lattice using exact diagonalization (ED), density-matrix renormalization group (DMRG), and cluster mean-field theory (CMFT) with DMRG as a solver. In the isotropic case ($Δ=1$), CMFT results reveal an intermediate empty plaquette (EP) phase that has a lower energy than the full plaquette (FP) phase. However, due to mean-field artifacts, CMFT alone is not suitable for accurately determining phase boundaries. Therefore, we combined three methods to map out the reliable phase diagram. Our calculations show that the EP phase narrows as $Δ$ deviates from unity and eventually vanishes. More importantly, we identify a spiral phase at small $Δ$, which has not been reported in previous studies. This phase is clearly captured by DMRG simulations on long cylindrical geometries. The competition between the EP, spiral, and $xy$-AFM phases near their boundaries provides a plausible explanation for the emergent spin-liquid-like behavior in RE$_2$Be$_2$GeO$_2$, while shedding new light on the role of XXZ anisotropy in the Shastry-Sutherland XXZ model.",
+    "status": "found"
+  },
+  "2601.22925": {
+    "arxiv_id": "2601.22925",
+    "title": "BEAR: Towards Beam-Search-Aware Optimization for Recommendation with Large Language Models",
+    "authors": [
+      "Weiqin Yang",
+      "Bohao Wang",
+      "Zhenxiang Xu",
+      "Jiawei Chen",
+      "Shengjia Zhang",
+      "Jingbang Chen",
+      "Canghong Jin",
+      "Can Wang"
+    ],
+    "submission_date": "2026-01-30T12:45:02Z",
+    "latest_updated": "2026-05-23T17:53:18Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2601.22925v1",
+      "2601.22925v2",
+      "2601.22925v3"
+    ],
+    "abstract": "Recent years have seen a rapid surge in research leveraging Large Language Models (LLMs) for recommendation. These methods typically employ supervised fine-tuning (SFT) to adapt LLMs to recommendation scenarios, and utilize beam search during inference to efficiently retrieve $B$ top-ranked recommended items. However, we identify a critical training-inference inconsistency: while SFT optimizes the overall probability of positive items, it does not guarantee that such items will be retrieved by beam search even if they possess high overall probabilities. Due to the greedy pruning mechanism, beam search can prematurely discard a positive item once its prefix probability is insufficient. To address this inconsistency, we propose BEAR (Beam-SEarch-Aware Regularization), a novel fine-tuning objective that explicitly accounts for beam search behavior during training. Rather than directly simulating beam search for each instance during training, which is computationally prohibitive, BEAR enforces a relaxed necessary condition: each token in a positive item must rank within the top-$B$ candidate tokens at each decoding step. This objective effectively mitigates the risk of incorrect pruning while incurring negligible computational overhead compared to standard SFT. Extensive experiments across four real-world datasets demonstrate that BEAR significantly outperforms strong baselines. Code is available at https://github.com/Tiny-Snow/BEAR-SIGIR-2026 .",
+    "status": "found"
+  },
+  "2601.22926": {
+    "arxiv_id": "2601.22926",
+    "title": "Poset modules of the $0$-Hecke algebras of type $B$",
+    "authors": [
+      "Young-Hun Kim",
+      "Dominic Searles"
+    ],
+    "submission_date": "2026-01-30T12:45:15Z",
+    "latest_updated": "2026-01-30T12:45:15Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22926v1"
+    ],
+    "abstract": "In 2001, Chow developed the theory of the $B_n$ posets $P$ and the type $B$ $P$-partition enumerators $K^B_P$. To provide a representation-theoretic interpretation of $K^B_P$, we define the poset modules $M^B_P$ of the 0-Hecke algebra $H_n^B(0)$ of type $B$ by endowing the set of type-$B$ linear extensions of $P$ with an $H_n^B(0)$-action. We then show that the Grothendieck group of the category associated to type-$B$ poset modules is isomorphic to the space of type $B$ quasisymmetric functions as both a $\\mathrm{QSym}$-module and comodule, where $\\mathrm{QSym}$ denotes the Hopf algebra of quasisymmetric functions. Considering an equivalence relation on $B_n$ posets, where two posets are equivalent if they share the same set of type-$B$ linear extensions, we identify a natural representative of each equivalence class, which we call a distinguished poset. We further characterize the distinguished posets whose sets of type-$B$ linear extensions form intervals in the right weak Bruhat order on the the hyperoctahedral groups. Finally, we discuss the relationship among the categories associated to type-$B$ weak Bruhat interval modules, $B_n$ poset modules, and finite-dimensional $H_n^B(0)$-modules.",
+    "status": "found"
+  },
+  "2601.22927": {
+    "arxiv_id": "2601.22927",
+    "title": "Toward Fully Autonomous Driving: AI, Challenges, Opportunities, and Needs",
+    "authors": [
+      "Lars Ullrich",
+      "Michael Buchholz",
+      "Klaus Dietmayer",
+      "Knut Graichen"
+    ],
+    "submission_date": "2026-01-30T12:45:44Z",
+    "latest_updated": "2026-01-30T12:45:44Z",
+    "revised_dates": null,
+    "venue": "IEEE Access, 29 January 2026, pp. 1--26",
+    "latest_version": 1,
+    "versions": [
+      "2601.22927v1"
+    ],
+    "abstract": "Automated driving (AD) is promising, but the transition to fully autonomous driving is, among other things, subject to the real, ever-changing open world and the resulting challenges. However, research in the field of AD demonstrates the ability of artificial intelligence (AI) to outperform classical approaches, handle higher complexities, and reach a new level of autonomy. At the same time, the use of AI raises further questions of safety and transferability. To identify the challenges and opportunities arising from AI concerning autonomous driving functionalities, we have analyzed the current state of AD, outlined limitations, and identified foreseeable technological possibilities. Thereby, various further challenges are examined in the context of prospective developments. In this way, this article reconsiders fully autonomous driving with respect to advancements in the field of AI and carves out the respective needs and resulting research questions.",
+    "status": "found"
+  },
+  "2601.22928": {
+    "arxiv_id": "2601.22928",
+    "title": "LLMs Explain't: A Post-Mortem on Semantic Interpretability in Transformer Models",
+    "authors": [
+      "Alhassan Abdelhalim",
+      "Janick Edinger",
+      "Sören Laue",
+      "Michaela Regneri"
+    ],
+    "submission_date": "2026-01-30T12:46:37Z",
+    "latest_updated": "2026-01-30T12:46:37Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22928v1"
+    ],
+    "abstract": "Large Language Models (LLMs) are becoming increasingly popular in pervasive computing due to their versatility and strong performance. However, despite their ubiquitous use, the exact mechanisms underlying their outstanding performance remain unclear. Different methods for LLM explainability exist, and many are, as a method, not fully understood themselves. We started with the question of how linguistic abstraction emerges in LLMs, aiming to detect it across different LLM modules (attention heads and input embeddings). For this, we used methods well-established in the literature: (1) probing for token-level relational structures, and (2) feature-mapping using embeddings as carriers of human-interpretable properties. Both attempts failed for different methodological reasons: Attention-based explanations collapsed once we tested the core assumption that later-layer representations still correspond to tokens. Property-inference methods applied to embeddings also failed because their high predictive scores were driven by methodological artifacts and dataset structure rather than meaningful semantic knowledge. These failures matter because both techniques are widely treated as evidence for what LLMs supposedly understand, yet our results show such conclusions are unwarranted. These limitations are particularly relevant in pervasive and distributed computing settings where LLMs are deployed as system components and interpretability methods are relied upon for debugging, compression, and explaining models.",
+    "status": "found"
+  },
+  "2601.22929": {
+    "arxiv_id": "2601.22929",
+    "title": "Semantic Leakage from Image Embeddings",
+    "authors": [
+      "Yiyi Chen",
+      "Qiongkai Xu",
+      "Desmond Elliott",
+      "Qiongxiu Li",
+      "Johannes Bjerva"
+    ],
+    "submission_date": "2026-01-30T12:46:41Z",
+    "latest_updated": "2026-02-02T09:20:53Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.22929v1",
+      "2601.22929v2"
+    ],
+    "abstract": "Image embeddings are generally assumed to pose limited privacy risk. We challenge this assumption by formalizing semantic leakage as the ability to recover semantic structures from compressed image embeddings. Surprisingly, we show that semantic leakage does not require exact reconstruction of the original image. Preserving local semantic neighborhoods under embedding alignment is sufficient to expose the intrinsic vulnerability of image embeddings. Crucially, this preserved neighborhood structure allows semantic information to propagate through a sequence of lossy mappings. Based on this conjecture, we propose Semantic Leakage from Image Embeddings (SLImE), a lightweight inference framework that reveals semantic information from standalone compressed image embeddings, incorporating a locally trained semantic retriever with off-the-shelf models, without training task-specific decoders. We thoroughly validate each step of the framework empirically, from aligned embeddings to retrieved tags, symbolic representations, and grammatical and coherent descriptions. We evaluate SLImE across a range of open and closed embedding models, including GEMINI, COHERE, NOMIC, and CLIP, and demonstrate consistent recovery of semantic information across diverse inference tasks. Our results reveal a fundamental vulnerability in image embeddings, whereby the preservation of semantic neighborhoods under alignment enables semantic leakage, highlighting challenges for privacy preservation.1",
+    "status": "found"
+  },
+  "2601.22930": {
+    "arxiv_id": "2601.22930",
+    "title": "MTDrive: Multi-turn Interactive Reinforcement Learning for Autonomous Driving",
+    "authors": [
+      "Xidong Li",
+      "Mingyu Guo",
+      "Chenchao Xu",
+      "Bailin Li",
+      "Wenjing Zhu",
+      "Yangang Zou",
+      "Rui Chen",
+      "Zehuan Wang"
+    ],
+    "submission_date": "2026-01-30T12:47:55Z",
+    "latest_updated": "2026-01-30T12:47:55Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22930v1"
+    ],
+    "abstract": "Trajectory planning is a core task in autonomous driving, requiring the prediction of safe and comfortable paths across diverse scenarios. Integrating Multi-modal Large Language Models (MLLMs) with Reinforcement Learning (RL) has shown promise in addressing \"long-tail\" scenarios. However, existing methods are constrained to single-turn reasoning, limiting their ability to handle complex tasks requiring iterative refinement. To overcome this limitation, we present MTDrive, a multi-turn framework that enables MLLMs to iteratively refine trajectories based on environmental feedback. MTDrive introduces Multi-Turn Group Relative Policy Optimization (mtGRPO), which mitigates reward sparsity by computing relative advantages across turns. We further construct an interactive trajectory understanding dataset from closed-loop simulation to support multi-turn training. Experiments on the NAVSIM benchmark demonstrate superior performance compared to existing methods, validating the effectiveness of our multi-turn reasoning paradigm. Additionally, we implement system-level optimizations to reduce data transfer overhead caused by high-resolution images and multi-turn sequences, achieving 2.5x training throughput. Our data, models, and code will be made available soon.",
+    "status": "found"
+  },
+  "2601.22931": {
+    "arxiv_id": "2601.22931",
+    "title": "Benchmarking Machine Translation on Chinese Social Media Texts",
+    "authors": [
+      "Kaiyan Zhao",
+      "Zheyong Xie",
+      "Zhongtao Miao",
+      "Xinze Lyu",
+      "Yao Hu",
+      "Shaosheng Cao"
+    ],
+    "submission_date": "2026-01-30T12:48:02Z",
+    "latest_updated": "2026-09-03T10:27:58Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.22931v1",
+      "2601.22931v2"
+    ],
+    "abstract": "The prevalence of rapidly evolving slang, neologisms, and highly stylized expressions in informal user-generated text, particularly on Chinese social media, poses significant challenges for Machine Translation (MT) benchmarking. Specifically, we identify two primary obstacles: (1) data scarcity, as high-quality parallel data requires bilingual annotators familiar with platform-specific slang, and stylistic cues in both languages; and (2) metric limitations, where traditional evaluators like COMET often fail to capture stylistic fidelity and nonstandard expressions. To bridge these gaps, we introduce CSM-MTBench, a benchmark covering five Chinese-foreign language directions and consisting of two expert-curated subsets: Fun Posts, featuring context-rich, slang- and neologism-heavy content, and Social Snippets, emphasizing concise, emotion- and style- driven expressions. Furthermore, we propose tailored evaluation approaches for each subset: measuring the translation success rate of slang and neologisms in Fun Posts, while assessing tone and style preservation in Social Snippets via a hybrid of embedding-based metrics and LLM-as-a-judge. Experiments on over 20 models reveal substantial variation in how current MT systems handle semantic fidelity and informal, social-media-specific stylistic cues. CSM-MTBench thus serves as a rigorous testbed for advancing MT systems capable of mastering real-world Chinese social media texts.",
+    "status": "found"
+  },
+  "2601.22932": {
+    "arxiv_id": "2601.22932",
+    "title": "DC-LA: Difference-of-Convex Langevin Algorithm",
+    "authors": [
+      "Hoang Phuc Hau Luu",
+      "Zhongjian Wang"
+    ],
+    "submission_date": "2026-01-30T12:49:05Z",
+    "latest_updated": "2026-05-20T09:11:24Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.22932v1",
+      "2601.22932v2"
+    ],
+    "abstract": "We study a sampling problem whose target distribution is $π\\propto \\exp(-f-r)$ where the data fidelity term $f$ is Lipschitz smooth while the regularizer term $r=r_1-r_2$ is a non-smooth difference-of-convex (DC) function, i.e., $r_1,r_2$ are convex. By leveraging the DC structure of $r$, we can smooth out $r$ by applying Moreau envelopes to $r_1$ and $r_2$ separately. In line with DC programming, we then redistribute the concave part of the regularizer to the data fidelity and study its corresponding proximal Langevin algorithm (termed DC-LA). We establish convergence of DC-LA to the target distribution $π$, up to discretization and smoothing errors, in the $q$-Wasserstein distance for all $q \\in \\mathbb{N}^*$, under the assumption that $V$ is distant dissipative. Our results improve previous work on non-log-concave sampling in terms of a more general framework and assumptions. Numerical experiments show that DC-LA produces accurate distributions in synthetic settings and provides qualitatively reasonable uncertainty quantification in a real-world Computed Tomography application.",
+    "status": "found"
+  },
+  "2601.22933": {
+    "arxiv_id": "2601.22933",
+    "title": "Resolving Structural Avalanches in Amorphous Carbon with Arclength Continuation",
+    "authors": [
+      "Fraser Birks",
+      "Ibrahim Ghanem",
+      "Lars Pastewka",
+      "James Kermode",
+      "Maciej Buze"
+    ],
+    "submission_date": "2026-01-30T12:49:17Z",
+    "latest_updated": "2026-04-25T10:57:10Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.22933v1",
+      "2601.22933v2"
+    ],
+    "abstract": "Plastic deformation in amorphous solids is carried by localized shear transformations that self-organize into avalanches. In amorphous carbon modeled with a machine-learned interatomic potential, we find that the energetics and organization of these avalanches can be resolved by systematically following the underlying energy landscape. With a pseudo-arclength numerical continuation framework, we decompose avalanches into constituent shear transformations and determine their strain-dependent energetics. Our analysis shows that, prior to onset, avalanches have a latent structure that consists of well-separated local minima. We further demonstrate that arclength continuation yields an event driven framework for following avalanche dynamics, eliminating time-step effects on statistical avalanche properties such as distributions of stress drops.",
+    "status": "found"
+  },
+  "2601.22934": {
+    "arxiv_id": "2601.22934",
+    "title": "Prescribed $T$-curvature flow on the four-dimensional unit ball",
+    "authors": [
+      "Pak Tung Ho",
+      "Cheikh Birahim Ndiaye",
+      "Liming Sun",
+      "Heming Wang"
+    ],
+    "submission_date": "2026-01-30T12:50:48Z",
+    "latest_updated": "2026-01-30T12:50:48Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22934v1"
+    ],
+    "abstract": "In this paper, we study the prescribed $T$-curvature problem on the unit ball $\\mathbb{B}^4$ of $\\mathbb{R} ^4$ via the $T$-curvature flow approach. By combining Ache-Chang's inequality with the Morse-theoretic approach of Malchiodi-Struwe, we establish existence results under strong Morse-type inequalities at infinity. As a byproduct of our argument, we also prove the exponential convergence of the $T$-curvature flow on $\\mathbb{B}^4$, starting from a $Q$-flat and minimal metric conformal to the standard Euclidean metric, to an extremal metric of Ache-Chang's inequality whose explicit expression was derived by Ndiaye-Sun.",
+    "status": "found"
+  },
+  "2601.22935": {
+    "arxiv_id": "2601.22935",
+    "title": "Protecting Private Code in IDE Autocomplete using Differential Privacy",
+    "authors": [
+      "Evgeny Grigorenko",
+      "David Stanojević",
+      "David Ilić",
+      "Egor Bogomolov",
+      "Kostadin Cvejoski"
+    ],
+    "submission_date": "2026-01-30T12:51:43Z",
+    "latest_updated": "2026-01-30T12:51:43Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22935v1"
+    ],
+    "abstract": "Modern Integrated Development Environments (IDEs) increasingly leverage Large Language Models (LLMs) to provide advanced features like code autocomplete. While powerful, training these models on user-written code introduces significant privacy risks, making the models themselves a new type of data vulnerability. Malicious actors can exploit this by launching attacks to reconstruct sensitive training data or infer whether a specific code snippet was used for training. This paper investigates the use of Differential Privacy (DP) as a robust defense mechanism for training an LLM for Kotlin code completion. We fine-tune a \\texttt{Mellum} model using DP and conduct a comprehensive evaluation of its privacy and utility. Our results demonstrate that DP provides a strong defense against Membership Inference Attacks (MIAs), reducing the attack's success rate close to a random guess (AUC from 0.901 to 0.606). Furthermore, we show that this privacy guarantee comes at a minimal cost to model performance, with the DP-trained model achieving utility scores comparable to its non-private counterpart, even when trained on 100x less data. Our findings suggest that DP is a practical and effective solution for building private and trustworthy AI-powered IDE features.",
+    "status": "found"
+  }
+}

@@ -1,0 +1,436 @@
+{
+  "2601.21936": {
+    "arxiv_id": "2601.21936",
+    "title": "AgenticSimLaw: A Juvenile Courtroom Multi-Agent Debate Simulation for Explainable High-Stakes Tabular Decision Making",
+    "authors": [
+      "Jon Chun",
+      "Kathrine Elkins",
+      "Yong Suk Lee"
+    ],
+    "submission_date": "2026-01-29T16:26:10Z",
+    "latest_updated": "2026-01-29T16:26:10Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.21936v1"
+    ],
+    "abstract": "We introduce AgenticSimLaw, a role-structured, multi-agent debate framework that provides transparent and controllable test-time reasoning for high-stakes tabular decision-making tasks. Unlike black-box approaches, our courtroom-style orchestration explicitly defines agent roles (prosecutor, defense, judge), interaction protocols (7-turn structured debate), and private reasoning strategies, creating a fully auditable decision-making process. We benchmark this framework on young adult recidivism prediction using the NLSY97 dataset, comparing it against traditional chain-of-thought (CoT) prompting across almost 90 unique combinations of models and strategies. Our results demonstrate that structured multi-agent debate provides more stable and generalizable performance compared to single-agent reasoning, with stronger correlation between accuracy and F1-score metrics. Beyond performance improvements, AgenticSimLaw offers fine-grained control over reasoning steps, generates complete interaction transcripts for explainability, and enables systematic profiling of agent behaviors. While we instantiate this framework in the criminal justice domain to stress-test reasoning under ethical complexity, the approach generalizes to any deliberative, high-stakes decision task requiring transparency and human oversight. This work addresses key LLM-based multi-agent system challenges: organization through structured roles, observability through logged interactions, and responsibility through explicit non-deployment constraints for sensitive domains. Data, results, and code will be available on github.com under the MIT license.",
+    "status": "found"
+  },
+  "2601.21937": {
+    "arxiv_id": "2601.21937",
+    "title": "Retrieval-Infused Reasoning Sandbox: A Benchmark for Decoupling Retrieval and Reasoning Capabilities",
+    "authors": [
+      "Shuangshuang Ying",
+      "Zheyu Wang",
+      "Yunjian Peng",
+      "Jin Chen",
+      "Yuhao Wu",
+      "Hongbin Lin",
+      "Dingyu He",
+      "Siyi Liu",
+      "Gengchen Yu",
+      "YinZhu Piao",
+      "Yuchen Wu",
+      "Xin Gui",
+      "Zhongyuan Peng",
+      "Xin Li",
+      "Xeron Du",
+      "Libo Qin",
+      "YiXin Cao",
+      "Ge Zhang",
+      "Stephen Huang"
+    ],
+    "submission_date": "2026-01-29T16:26:19Z",
+    "latest_updated": "2026-01-30T02:58:09Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.21937v1",
+      "2601.21937v2"
+    ],
+    "abstract": "Despite strong performance on existing benchmarks, it remains unclear whether large language models can reason over genuinely novel scientific information. Most evaluations score end-to-end RAG pipelines, where reasoning is confounded with retrieval and toolchain choices, and the signal is further contaminated by parametric memorization and open-web volatility. We introduce DeR2, a controlled deep-research sandbox that isolates document-grounded reasoning while preserving core difficulties of deep search: multi-step synthesis, denoising, and evidence-based conclusion making. DeR2 decouples evidence access from reasoning via four regimes--Instruction-only, Concepts (gold concepts without documents), Related-only (only relevant documents), and Full-set (relevant documents plus topically related distractors)--yielding interpretable regime gaps that operationalize retrieval loss vs. reasoning loss and enable fine-grained error attribution. To prevent parametric leakage, we apply a two-phase validation that requires parametric failure without evidence while ensuring oracle-concept solvability. To ensure reproducibility, each instance provides a frozen document library (drawn from 2023-2025 theoretical papers) with expert-annotated concepts and validated rationales. Experiments across a diverse set of state-of-the-art foundation models reveal substantial variation and significant headroom: some models exhibit mode-switch fragility, performing worse with the Full-set than with Instruction-only, while others show structural concept misuse, correctly naming concepts but failing to execute them as procedures.",
+    "status": "found"
+  },
+  "2601.21938": {
+    "arxiv_id": "2601.21938",
+    "title": "BookNet: Book Image Rectification via Cross-Page Attention Network",
+    "authors": [
+      "Shaokai Liu",
+      "Hao Feng",
+      "Bozhi Luan",
+      "Min Hou",
+      "Jiajun Deng",
+      "Wengang Zhou"
+    ],
+    "submission_date": "2026-01-29T16:26:25Z",
+    "latest_updated": "2026-10-11T07:36:18Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.21938v1",
+      "2601.21938v2"
+    ],
+    "abstract": "Book image rectification presents unique challenges due to its complex geometric distortions from binding constraints, where left and right pages exhibit distinctly asymmetric curvature patterns. However, existing single-page document image rectification methods fail to capture the coupled geometric relationships between adjacent pages in books. In this work, we introduce BookNet, the first end-to-end deep learning framework specifically designed for dual-page book image rectification. BookNet adopts a dual-branch architecture with cross-page attention mechanisms, enabling it to estimate warping flows for both \\rev{individual pages and the book spread}, explicitly modeling how left and right pages influence each other. Moreover, to address the absence of specialized datasets, we present Book3D, a large-scale synthetic dataset for training, and Book100, a comprehensive real-world benchmark for evaluation. Extensive experiments demonstrate that BookNet outperforms existing state-of-the-art methods on book image rectification. \\rev{Code and dataset are available at https://github.com/Liu-Shaokai/BookNet.",
+    "status": "found"
+  },
+  "2601.21939": {
+    "arxiv_id": "2601.21939",
+    "title": "Investigation of Wake Dynamics of a Slender Symmetric Trailing Edge Hydrofoil",
+    "authors": [
+      "Gabriele Gaiti",
+      "Chirag Trivedi",
+      "Kristian F. Sagmo"
+    ],
+    "submission_date": "2026-01-29T16:26:57Z",
+    "latest_updated": "2026-01-29T16:26:57Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.21939v1"
+    ],
+    "abstract": "Accurate prediction of wake dynamics behind hydrofoils is critical for mitigating vortex-induced vibrations and improving the performance of hydraulic machinery. Conventional turbulence modeling approaches often struggle to capture the unsteady, coherent structures governing wake behavior, particularly for slender hydrofoils operating at high Reynolds numbers. This study addresses this limitation by combining scale-resolving numerical simulations, including high-resolution Large Eddy Simulation (LES), with Particle Image Velocimetry (PIV) measurements to investigate the turbulent wake of a symmetric, blunt trailing-edge hydrofoil operating at zero angle of attack. The flow was analyzed at a Reynolds number of approximately 7.5x10e5, i.e. close to the onset of wake-structure interaction effects. LES was performed using a fine mesh of approximately 500 million nodes to resolve near-wall and wake dynamics beyond the experimental field of view, while PIV measurements provided time-resolved velocity fields downstream of the trailing edge. Proper Orthogonal Decomposition (POD) was applied to the PIV data to extract dominant coherent structures and quantify their contribution to the turbulent kinetic energy. POD analysis reveals that energy is distributed across many modes, with the leading mode capturing the primary wake dynamics and higher modes forming coupled oscillatory pairs associated with von Karman vortex shedding. PIV-LES agreement shows that central wake measurements combined with numerical simulations enables full wake reconstruction and validates modeling for vibration-relevant hydrofoil dynamics.",
+    "status": "found"
+  },
+  "2601.21940": {
+    "arxiv_id": "2601.21940",
+    "title": "DisContSE: Single-Step Diffusion Speech Enhancement Based on Joint Discrete and Continuous Embeddings",
+    "authors": [
+      "Yihui Fu",
+      "Tim Fingscheidt"
+    ],
+    "submission_date": "2026-01-29T16:27:14Z",
+    "latest_updated": "2026-01-29T16:27:14Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.21940v1"
+    ],
+    "abstract": "Diffusion speech enhancement on discrete audio codec features gain immense attention due to their improved speech component reconstruction capability. However, they usually suffer from high inference computational complexity due to multiple reverse process iterations. Furthermore, they generally achieve promising results on non-intrusive metrics but show poor performance on intrusive metrics, as they may struggle in reconstructing the correct phones. In this paper, we propose DisContSE, an efficient diffusion-based speech enhancement model on joint discrete codec tokens and continuous embeddings. Our contributions are three-fold. First, we formulate both a discrete and a continuous enhancement module operating on discrete audio codec tokens and continuous embeddings, respectively, to achieve improved fidelity and intelligibility simultaneously. Second, a semantic enhancement module is further adopted to achieve optimal phonetic accuracy. Third, we achieve a single-step efficient reverse process in inference with a novel quantization error mask initialization strategy, which, according to our knowledge, is the first successful single-step diffusion speech enhancement based on an audio codec. Trained and evaluated on URGENT 2024 Speech Enhancement Challenge data splits, the proposed DisContSE excels top-reported time- and frequency-domain diffusion baseline methods in PESQ, POLQA, UTMOS, and in a subjective ITU-T P.808 listening test, clearly achieving an overall top rank.",
+    "status": "found"
+  },
+  "2601.21941": {
+    "arxiv_id": "2601.21941",
+    "title": "Robust Multimodal Representation Learning in Healthcare",
+    "authors": [
+      "Xiaoguang Zhu",
+      "Linxiao Gong",
+      "Lianlong Sun",
+      "Yang Liu",
+      "Haoyu Wang",
+      "Jing Liu"
+    ],
+    "submission_date": "2026-01-29T16:27:54Z",
+    "latest_updated": "2026-01-29T16:27:54Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.21941v1"
+    ],
+    "abstract": "Medical multimodal representation learning aims to integrate heterogeneous data into unified patient representations to support clinical outcome prediction. However, real-world medical datasets commonly contain systematic biases from multiple sources, which poses significant challenges for medical multimodal representation learning. Existing approaches typically focus on effective multimodal fusion, neglecting inherent biased features that affect the generalization ability. To address these challenges, we propose a Dual-Stream Feature Decorrelation Framework that identifies and handles the biases through structural causal analysis introduced by latent confounders. Our method employs a causal-biased decorrelation framework with dual-stream neural networks to disentangle causal features from spurious correlations, utilizing generalized cross-entropy loss and mutual information minimization for effective decorrelation. The framework is model-agnostic and can be integrated into existing medical multimodal learning methods. Comprehensive experiments on MIMIC-IV, eICU, and ADNI datasets demonstrate consistent performance improvements.",
+    "status": "found"
+  },
+  "2601.21942": {
+    "arxiv_id": "2601.21942",
+    "title": "Clustering in Deep Stochastic Transformers",
+    "authors": [
+      "Lev Fedorov",
+      "Michaël E. Sander",
+      "Romuald Elie",
+      "Pierre Marion",
+      "Mathieu Laurière"
+    ],
+    "submission_date": "2026-01-29T16:28:13Z",
+    "latest_updated": "2026-01-29T16:28:13Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.21942v1"
+    ],
+    "abstract": "Transformers have revolutionized deep learning across various domains but understanding the precise token dynamics remains a theoretical challenge. Existing theories of deep Transformers with layer normalization typically predict that tokens cluster to a single point; however, these results rely on deterministic weight assumptions, which fail to capture the standard initialization scheme in Transformers. In this work, we show that accounting for the intrinsic stochasticity of random initialization alters this picture. More precisely, we analyze deep Transformers where noise arises from the random initialization of value matrices. Under diffusion scaling and token-wise RMS normalization, we prove that, as the number of Transformer layers goes to infinity, the discrete token dynamics converge to an interacting-particle system on the sphere where tokens are driven by a \\emph{common} matrix-valued Brownian noise. In this limit, we show that initialization noise prevents the collapse to a single cluster predicted by deterministic models. For two tokens, we prove a phase transition governed by the interaction strength and the token dimension: unlike deterministic attention flows, antipodal configurations become attracting with positive probability. Numerical experiments confirm the predicted transition, reveal that antipodal formations persist for more than two tokens, and demonstrate that suppressing the intrinsic noise degrades accuracy.",
+    "status": "found"
+  },
+  "2601.21943": {
+    "arxiv_id": "2601.21943",
+    "title": "Entropy-Based Dimension-Free Convergence and Loss-Adaptive Schedules for Diffusion Models",
+    "authors": [
+      "Ahmad Aghapour",
+      "Erhan Bayraktar",
+      "Ziqing Zhang"
+    ],
+    "submission_date": "2026-01-29T16:28:21Z",
+    "latest_updated": "2026-01-29T16:28:21Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.21943v1"
+    ],
+    "abstract": "Diffusion generative models synthesize samples by discretizing reverse-time dynamics driven by a learned score (or denoiser). Existing convergence analyses of diffusion models typically scale at least linearly with the ambient dimension, and sharper rates often depend on intrinsic-dimension assumptions or other geometric restrictions on the target distribution. We develop an alternative, information-theoretic approach to dimension-free convergence that avoids any geometric assumptions. Under mild assumptions on the target distribution, we bound KL divergence between the target and generated distributions by $O(H^2/K)$ (up to endpoint factors), where $H$ is the Shannon entropy and $K$ is the number of sampling steps. Moreover, using a reformulation of the KL divergence, we propose a Loss-Adaptive Schedule (LAS) for efficient discretization of reverse SDE which is lightweight and relies only on the training loss, requiring no post-training heavy computation. Empirically, LAS improves sampling quality over common heuristic schedules.",
+    "status": "found"
+  },
+  "2601.21944": {
+    "arxiv_id": "2601.21944",
+    "title": "Clarity: The Flexibility-Interpretability Trade-Off in Sparsity-aware Concept Bottleneck Models",
+    "authors": [
+      "Konstantinos P. Panousis",
+      "Diego Marcos"
+    ],
+    "submission_date": "2026-01-29T16:28:55Z",
+    "latest_updated": "2026-08-11T13:53:54Z",
+    "revised_dates": null,
+    "venue": "Transactions on Machine Learning Research (2026)",
+    "latest_version": 3,
+    "versions": [
+      "2601.21944v1",
+      "2601.21944v2",
+      "2601.21944v3"
+    ],
+    "abstract": "The widespread adoption of deep learning models in computer vision has intensified concerns about interpretability. Despite strong performance, these models are often treated as black boxes, with limited systematic investigation of their decision-making processes. While many interpretability methods exist, objective evaluation of learned representations remains limited, particularly for approaches that rely on sparsity to \"induce\" interpretability. In this work, we investigate how modeling choices in Concept Bottleneck Models (CBMs) affect the semantic alignment of concept representations. We introduce Clarity, a post-hoc diagnostic measure that captures the interplay between downstream performance and the sparsity and precision of concept activations. Using an interpretability assessment framework grounded in datasets with ground-truth concept annotations, we evaluate both VLM- and attribute predictor-based CBMs across three amortized sparsity-inducing strategies ($\\ell_1$, $\\ell_0$, and Bernoulli-based), alongside several widely used sparsity-aware CBM methods from the literature. Our experiments reveal a critical flexibility-interpretability trade-off: a model's capacity to optimize task performance by deviating from semantic alignment. We demonstrate that under this trade-off, different methods exhibit markedly different behaviors even at comparable performance levels. Finally, we validate our framework through a principled human study, which confirms that Clarity aligns significantly more closely with human trust than standard evaluation metrics.",
+    "status": "found"
+  },
+  "2601.21945": {
+    "arxiv_id": "2601.21945",
+    "title": "Dependence of Equilibrium Propagation Training Success on Network Architecture",
+    "authors": [
+      "Qingshan Wang",
+      "Clara C. Wanjura",
+      "Florian Marquardt"
+    ],
+    "submission_date": "2026-01-29T16:29:31Z",
+    "latest_updated": "2026-01-29T16:29:31Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.21945v1"
+    ],
+    "abstract": "The rapid rise of artificial intelligence has led to an unsustainable growth in energy consumption. This has motivated progress in neuromorphic computing and physics-based training of learning machines as alternatives to digital neural networks. Many theoretical studies focus on simple architectures like all-to-all or densely connected layered networks. However, these may be challenging to realize experimentally, e.g. due to connectivity constraints. In this work, we investigate the performance of the widespread physics-based training method of equilibrium propagation for more realistic architectural choices, specifically, locally connected lattices. We train an XY model and explore the influence of architecture on various benchmark tasks, tracking the evolution of spatially distributed responses and couplings during training. Our results show that sparse networks with only local connections can achieve performance comparable to dense networks. Our findings provide guidelines for further scaling up architectures based on equilibrium propagation in realistic settings.",
+    "status": "found"
+  },
+  "2601.21946": {
+    "arxiv_id": "2601.21946",
+    "title": "Critical Evaluation of Studies Alleging Evidence for Technosignatures in the POSS1-E Photographic Plates",
+    "authors": [
+      "Wesley Andrés Watters",
+      "Laura Dominé",
+      "Sarah Little",
+      "Cameron Pratt",
+      "Kevin H. Knuth",
+      "Matthew Szenher"
+    ],
+    "submission_date": "2026-01-29T16:29:46Z",
+    "latest_updated": "2026-06-25T15:20:12Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2601.21946v1",
+      "2601.21946v2",
+      "2601.21946v3"
+    ],
+    "abstract": "Recent studies by B. Villarroel et al. have assembled and analysed datasets of unidentified features measured from digital scans of pre-Sputnik photographic plates. We have examined the claims in these papers using two previously published datasets that are closely related to those used in the Villarroel et al. studies. For these datasets, the assumption of a spatially uniform-random background distribution of features, essential to the Earth shadow analysis, is shown to be false. After finding the null distribution of feature count deviations from the background, we find no statistically significant deficit in the shadow. We find that the reported correlation between the timing of feature observations and nuclear tests becomes insignificant after properly normalizing by the relevant number of observation days, and is almost completely determined by the observation schedule of the Palomar telescope. We uncover important inconsistencies in the definitions of the datasets used in these studies, as well as the use of unvalidated datasets containing catalogue stars, scan artefacts, and plate defects. We find an overall gradual increase in number density of features toward the corners and edges of plates, as well as examples of (i) empty north-south strips that span multiple plates; (ii) clusters and voids having geometric shapes; and (iii) amorphous clusters. We also highlight a circular argument used in these studies, that leverages the results of an inferential analysis to justify conclusions about the origin of the features as well as the validity of the measurements. Finally, we also review the literature concerning historical searches for optical transients in photographic plates corresponding to gamma ray bursts (GRBs); following decades of work, researchers were unable to make a confident identification of a GRB-associated optical transient.",
+    "status": "found"
+  },
+  "2601.21947": {
+    "arxiv_id": "2601.21947",
+    "title": "ToolWeaver: Weaving Collaborative Semantics for Scalable Tool Use in Large Language Models",
+    "authors": [
+      "Bowen Fang",
+      "Wen Ye",
+      "Yunyue Su",
+      "Jinghao Zhang",
+      "Qiang Liu",
+      "Yesheng Liu",
+      "Xin Sun",
+      "Shu Wu",
+      "Jiabing Yang",
+      "Baole Wei",
+      "Liang Wang"
+    ],
+    "submission_date": "2026-01-29T16:29:53Z",
+    "latest_updated": "2026-01-29T16:29:53Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.21947v1"
+    ],
+    "abstract": "Prevalent retrieval-based tool-use pipelines struggle with a dual semantic challenge: their retrievers often employ encoders that fail to capture complex semantics, while the Large Language Model (LLM) itself lacks intrinsic tool knowledge from its natural language pretraining. Generative methods offer a powerful alternative by unifying selection and execution, tasking the LLM to directly learn and generate tool identifiers. However, the common practice of mapping each tool to a unique new token introduces substantial limitations: it creates a scalability and generalization crisis, as the vocabulary size explodes and each tool is assigned a semantically isolated token. This approach also creates a semantic bottleneck that hinders the learning of collaborative tool relationships, as the model must infer them from sparse co-occurrences of monolithic tool IDs within a vast library. To address these limitations, we propose ToolWeaver, a novel generative tool learning framework that encodes tools into hierarchical sequences. This approach makes vocabulary expansion logarithmic to the number of tools. Crucially, it enables the model to learn collaborative patterns from the dense co-occurrence of shared codes, rather than the sparse co-occurrence of monolithic tool IDs. We generate these structured codes through a novel tokenization process designed to weave together a tool's intrinsic semantics with its extrinsic co-usage patterns. These structured codes are then integrated into the LLM through a generative alignment stage, where the model is fine-tuned to produce the hierarchical code sequences. Evaluation results with nearly 47,000 tools show that ToolWeaver significantly outperforms state-of-the-art methods, establishing a more scalable, generalizable, and semantically-aware foundation for advanced tool-augmented agents.",
+    "status": "found"
+  },
+  "2601.21948": {
+    "arxiv_id": "2601.21948",
+    "title": "Deep Models, Shallow Alignment: Uncovering the Granularity Mismatch in Neural Decoding",
+    "authors": [
+      "Yang Du",
+      "Siyuan Dai",
+      "Yonghao Song",
+      "Paul M. Thompson",
+      "Haoteng Tang",
+      "Liang Zhan"
+    ],
+    "submission_date": "2026-01-29T16:30:32Z",
+    "latest_updated": "2026-08-21T15:55:15Z",
+    "revised_dates": null,
+    "venue": "Transactions on Machine Learning Research (2026), ISSN 2835-8856",
+    "latest_version": 2,
+    "versions": [
+      "2601.21948v1",
+      "2601.21948v2"
+    ],
+    "abstract": "Neural visual decoding is a central problem in brain-computer interface research, aiming to reconstruct human visual perception and to elucidate the structure of neural representations. Recent contrastive neural visual decoding methods commonly align neural signals with the final embeddings of pretrained vision encoders. However, such representations are optimized for high-level semantic invariance, whereas EEG/MEG signals contain information spanning multiple levels of visual abstraction, potentially creating a representational granularity mismatch. Motivated by prior evidence that brain representations correspond to multiple levels of the DNN hierarchy, we propose Shallow Alignment, a granularity-calibration framework that systematically explores intermediate visual representations as alignment targets for neural decoding. Extensive experiments across multiple benchmarks demonstrate that Shallow Alignment significantly outperforms standard final-layer alignment, with performance gains ranging from 22% to 58% across diverse vision backbones. Notably, our approach reveals a positive scaling trend in neural visual decoding, enabling decoding performance to improve consistently with the capacity of pre-trained vision backbones. We further conduct systematic empirical analyses to shed light on the mechanisms underlying the observed performance gains. Code is available at https://github.com/yangdu-neuroai/shallow-alignment.",
+    "status": "found"
+  },
+  "2601.21949": {
+    "arxiv_id": "2601.21949",
+    "title": "Coherent vibrational dynamics in molecular bond breaking: methyl radical umbrella mode probed by femtosecond x-ray spectroscopy",
+    "authors": [
+      "Christian A. Schröder",
+      "John H. Hack",
+      "Joshua L. Edwards",
+      "Zhiyu Zhang",
+      "J. Tyler Kenyon",
+      "Qiyue Wang",
+      "Han Wang",
+      "Daniel M. Neumark",
+      "Stephen R. Leone"
+    ],
+    "submission_date": "2026-01-29T16:31:20Z",
+    "latest_updated": "2026-01-29T16:31:20Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.21949v1"
+    ],
+    "abstract": "We report on the observation of coherent molecular vibrations launched by the breaking of a molecular bond. The methyl radical, which is produced by $267\\,\\mathrm{nm}$ photodissociation of methyl iodide, is excited to high levels in its $ν_2$ ``umbrella\" vibrational mode by the dissociation. The ensuing coherent vibrational dynamics are observed by measuring ultrafast time-dependent changes in the x-ray transition energy from the C$1s$ to the singly-occupied valence orbital. Due to symmetry, the real space vibrational motion appears predominantly in the x-ray energy shift at the difference frequencies of the $ν_2$ progression, although the fundamental frequencies of the $ν_2$ mode are also observed. By constructing a fully quantum-mechanical model of the dynamics the coherent superposition is rigorously characterized and the real-space motion of the radicals is reconstructed. The retrieved trajectories are dominated by pronounced quantum beating governed by the high degree of coherent excitation and the strong negative anharmonicity of the $ν_2$ mode.",
+    "status": "found"
+  },
+  "2601.21950": {
+    "arxiv_id": "2601.21950",
+    "title": "Embracing Aleatoric Uncertainty in Medical Multimodal Learning with Missing Modalities",
+    "authors": [
+      "Linxiao Gong",
+      "Yang Liu",
+      "Lianlong Sun",
+      "Yulai Bi",
+      "Jing Liu",
+      "Xiaoguang Zhu"
+    ],
+    "submission_date": "2026-01-29T16:31:48Z",
+    "latest_updated": "2026-01-29T16:31:48Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.21950v1"
+    ],
+    "abstract": "Medical multimodal learning faces significant challenges with missing modalities prevalent in clinical practice. Existing approaches assume equal contribution of modality and random missing patterns, neglecting inherent uncertainty in medical data acquisition. In this regard, we propose the Aleatoric Uncertainty Modeling (AUM) that explicitly quantifies unimodal aleatoric uncertainty to address missing modalities. Specifically, AUM models each unimodal representation as a multivariate Gaussian distribution to capture aleatoric uncertainty and enable principled modality reliability quantification. To adaptively aggregate captured information, we develop a dynamic message-passing mechanism within a bipartite patient-modality graph using uncertainty-aware aggregation mechanism. Through this process, missing modalities are naturally accommodated, while more reliable information from available modalities is dynamically emphasized to guide representation generation. Our AUM framework achieves an improvement of 2.26% AUC-ROC on MIMIC-IV mortality prediction and 2.17% gain on eICU, outperforming existing state-of-the-art approaches.",
+    "status": "found"
+  },
+  "2601.21951": {
+    "arxiv_id": "2601.21951",
+    "title": "Diffusion Path Samplers via Sequential Monte Carlo",
+    "authors": [
+      "James Matthew Young",
+      "Paula Cordero-Encinar",
+      "Sebastian Reich",
+      "Andrew Duncan",
+      "O. Deniz Akyildiz"
+    ],
+    "submission_date": "2026-01-29T16:32:12Z",
+    "latest_updated": "2026-05-08T10:06:00Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.21951v1",
+      "2601.21951v2"
+    ],
+    "abstract": "We develop diffusion-based samplers for target distributions known up to a normalising constant. To this end, we rely on the well-known diffusion path that smoothly interpolates between a simple base distribution and the target, popularised by diffusion models. We tackle the score estimation problem by developing an efficient sequential Monte Carlo sampler that evolves auxiliary variables from conditional distributions along the path, providing principled score and density estimates for time-varying distributions. To control the variance of score estimates, we further propose practical control variate schedules that incur minimal overhead. We adapt this general framework to paths induced by the Ornstein-Uhlenbeck (OU) time-reversal process, stochastic interpolants, and diffusion annealed Langevin dynamics, outlining their trade-offs. Finally, we provide theoretical guarantees and empirically demonstrate the effectiveness of our method on several synthetic and real-world datasets.",
+    "status": "found"
+  },
+  "2601.21952": {
+    "arxiv_id": "2601.21952",
+    "title": "Lectures on Mean Curvature Flow and Related Equations",
+    "authors": [
+      "Tom Ilmanen"
+    ],
+    "submission_date": "2026-01-29T16:32:43Z",
+    "latest_updated": "2026-01-29T16:32:43Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.21952v1"
+    ],
+    "abstract": "The aim in these lectures is to study singularity formation, nonuniqueness, and topological change in motion by mean curvature.",
+    "status": "found"
+  },
+  "2601.21953": {
+    "arxiv_id": "2601.21953",
+    "title": "Fabrication effects on Niobium oxidation and surface contamination in Niobium-metal bilayers using X-ray photoelectron spectroscopy",
+    "authors": [
+      "Tathagata Banerjee",
+      "Maciej W. Olszewski",
+      "Valla Fatemi"
+    ],
+    "submission_date": "2026-01-29T16:32:46Z",
+    "latest_updated": "2026-01-29T16:32:46Z",
+    "revised_dates": null,
+    "venue": "AIP Advances 16, 045028 (2026)",
+    "latest_version": 1,
+    "versions": [
+      "2601.21953v1"
+    ],
+    "abstract": "Superconducting resonators and qubits are limited by dielectric losses from surface oxides. Surface oxides are mitigated through various strategies such as the addition of a metal capping layer, surface passivation, and acid processing. In this study, we demonstrate the use of X-ray photoelectron spectroscopy (XPS) as a rapid characterization tool to study the effectiveness cap layers for niobium for further device fabrication. We non-destructively evaluate 17 capping layers to characterize their ability to prevent oxygen diffusion, and the effects of standard fabrication processes -- annealing, resist stripping, and acid cleaning. We downselect for resilient capping layers and test their microwave resonator performance.",
+    "status": "found"
+  },
+  "2601.21954": {
+    "arxiv_id": "2601.21954",
+    "title": "Asymptotic Expansion for Expanding Spherical Averages in Real Rank One",
+    "authors": [
+      "Zhiyuan Deng",
+      "Yutian Sun"
+    ],
+    "submission_date": "2026-01-29T16:33:28Z",
+    "latest_updated": "2026-06-04T12:35:31Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.21954v1",
+      "2601.21954v2"
+    ],
+    "abstract": "This paper establishes an asymptotic expansion for expanding sector average on compact quotients of real rank-one Lie groups, with $SO(n,1)$ as a model case. Using tools from harmonic analysis and representation theory, the problem is reduced, via the action of the Casimir operator, to an ordinary differential equation(ODE) governing the evolution along the expanding $A$-direction. The asymptotic expansion is then derived from the analysis of this ODE.",
+    "status": "found"
+  },
+  "2601.21955": {
+    "arxiv_id": "2601.21955",
+    "title": "From Generative Modeling to Clinical Classification: A GPT-Based Architecture for EHR Notes",
+    "authors": [
+      "Fariba Afrin Irany",
+      "Sampson Akwafuo"
+    ],
+    "submission_date": "2026-01-29T16:33:47Z",
+    "latest_updated": "2026-02-28T19:47:21Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2601.21955v1",
+      "2601.21955v2",
+      "2601.21955v3"
+    ],
+    "abstract": "The increasing availability of unstructured clinical narratives in electronic health records (EHRs) has created new opportunities for automated disease characterization, cohort identification, and clinical decision support. However, modeling long, domain-specific clinical text remains challenging due to limited labeled data, severe class imbalance, and the high computational cost of adapting large pretrained language models. This study presents a GPT-based architecture for clinical text classification that adapts a pretrained decoder-only Transformer using a selective fine-tuning strategy. Rather than updating all model parameters, the majority of the GPT-2 backbone is frozen, and training is restricted to the final Transformer block, the final layer normalization, and a lightweight classification head. This approach substantially reduces the number of trainable parameters while preserving the representational capacity required to model complex clinical language. The proposed method is evaluated on radiology reports from the MIMIC-IV-Note dataset using uncertainty-aware CheXpert-style labels derived directly from report text. Experiments cover multiple problem formulations, including multi-label classification of radiographic findings, binary per-label classification under different uncertainty assumptions, and aggregate disease outcome prediction. Across varying dataset sizes, the model exhibits stable convergence behavior and strong classification performance, particularly in settings dominated by non-mention and negated findings. Overall, the results indicate that selective fine-tuning of pretrained generative language models provides an efficient and effective pathway for clinical text classification, enabling scalable adaptation to real-world EHR data while significantly reducing computational complexity.",
+    "status": "found"
+  }
+}

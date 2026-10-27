@@ -1,0 +1,409 @@
+{
+  "2608.09447": {
+    "arxiv_id": "2608.09447",
+    "title": "WDL-OPD: Weak-Driven On-Policy Distillation via Mixture-Constrained Co-Training",
+    "authors": [
+      "Zehao Chen",
+      "Gongxun Li",
+      "Tianxiang Ai",
+      "Yifei Li",
+      "Zixuan Huang",
+      "Wang Zhou",
+      "Tao Huang",
+      "Fuzhen Zhuang",
+      "Xianglong Lu",
+      "Jianxin Li",
+      "Deqing Wang",
+      "Yikun Ban"
+    ],
+    "submission_date": "2026-08-10T11:22:53Z",
+    "latest_updated": "2026-09-03T06:38:09Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.09447v1",
+      "2608.09447v2"
+    ],
+    "abstract": "On-policy distillation (OPD) aligns a student with a teacher on trajectories sampled from the student itself, reducing the train-test state mismatch of offline distillation. The same feedback loop can nevertheless be unstable: each update changes both the policy and the states on which the next update is computed. We introduce WDL-OPD, a mixture-constrained co-training method with two trainable policies. An anchor policy generates every rollout, an auxiliary policy evaluates the same visited states, and a geometric mixture of their token distributions is matched to a frozen teacher by reverse KL. Both policies receive gradient. We show that freezing the auxiliary recovers an anchor-plus-contrast proxy target closely related to OPD$^2$ and W2S-OPD, whereas joint training creates branch-level degrees of freedom that a static delta cannot express. In recorded Qwen3 experiments at 1.7B and 4B scale, WDL-OPD produces the strongest student checkpoint in each of four scale-domain settings. It raises MATH500 accuracy from 0.630 to 0.685 at 4B and from 0.521 to 0.585 at 1.7B. In code generation, seven single-policy OPD configurations exhibit entropy growth or trajectory degradation, while co-training reaches independently re-evaluated development scores of 0.637 and 0.375. Because several comparisons differ in curriculum or initialization, these results support a stabilization hypothesis rather than a universal causal claim. We provide the exact training algorithm, failure evidence, and the controlled comparison matrix needed to test that hypothesis.",
+    "status": "found"
+  },
+  "2608.09448": {
+    "arxiv_id": "2608.09448",
+    "title": "VANE: Reliable Test-Time Training for Vision-Language-Action Models via Future Visual Representation Prediction",
+    "authors": [
+      "Hongjin Ji",
+      "Guoyang Xia",
+      "Luoyang Sun",
+      "Fangxiang Feng",
+      "Lei Ren"
+    ],
+    "submission_date": "2026-08-10T11:22:54Z",
+    "latest_updated": "2026-08-12T10:16:02Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.09448v1",
+      "2608.09448v2"
+    ],
+    "abstract": "Test-time training (TTT) offers a lightweight way to adapt vision--language--action (VLA) policies from unlabeled deployment streams, but it remains difficult to use reliably in closed-loop manipulation. A shared adaptation space can mix incompatible task corrections, while an online update can alter subsequent actions before its consequences are known. We introduce a reliable TTT framework for VLA policies (VANE). VANE conditions prompt adaptation on the current vision--language context and learns from the future visual consequences of executed actions. Candidate updates are isolated from the live policy, evaluated on subsequent observations, and committed only when supported by future evidence, making adaptation selective and reversible. On SimplerEnv WidowX, VANE improves average success by $3.2$ percentage points over the corresponding TTT baseline. Results on Google Robot further show that deployment-time gains remain task- and embodiment-dependent. Together, these results demonstrate a constrained, evidence-based approach to adapting VLA policies during interaction.",
+    "status": "found"
+  },
+  "2608.09449": {
+    "arxiv_id": "2608.09449",
+    "title": "Sekai2: From World Exploration to Interactive World Modeling",
+    "authors": [
+      "Kang He",
+      "Wenshuo Peng",
+      "Zihui Gao",
+      "Jiaming Tan",
+      "Kaipeng Zhang",
+      "Yongtao Ge"
+    ],
+    "submission_date": "2026-08-10T11:23:01Z",
+    "latest_updated": "2026-08-11T09:05:36Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.09449v1",
+      "2608.09449v2"
+    ],
+    "abstract": "Video world models must capture how scenes evolve over time and across viewpoints. Training them for long-horizon generation and camera control therefore benefits from long videos paired with camera trajectories and temporally grounded semantics. Existing corpora rarely offer the three together: large-scale web video provides broad visual diversity but no trajectories or time-aligned text, while pose-annotated datasets are typically short-range or reconstruction-oriented. We introduce Sekai2, a multi-source real-world video dataset that carries the world-exploration footage of Sekai toward interactive world modeling. The release contains 128,892 clips totaling 2,826 hours from 10,428 source videos across 113 countries or regions, and is deliberately weighted toward sustained observation: under a common 120-second decomposition, 43,594 segments reach the full two minutes and account for 51.4% of all footage. Every clip includes a released camera trajectory and hierarchical annotations disentangling subject motion, environment dynamics, static scene content, and camera behavior, resulting in 649,597 temporally grounded segments. Crucially, we further introduce 982 panoramic sequences captured along non-linear trajectories with loops and revisits. These revisits provide repeated observations of the same locations across time and viewpoints, offering essential supervision for learning persistent scene representations, long-term spatial memory, and geometrically consistent world models. Corpus-scale analyses demonstrate complete pose-and-caption coverage, broad geographic and semantic diversity, varied camera trajectories, and highly non-redundant temporal descriptions. Together, these properties make Sekai2 a scalable resource for long-horizon video generation, camera-controllable synthesis, and interactive world-model pre-training.",
+    "status": "found"
+  },
+  "2608.09450": {
+    "arxiv_id": "2608.09450",
+    "title": "From Approachability Residuals to Anytime-Valid Evidence: The Online Convex Geometry of Testing by Betting",
+    "authors": [
+      "Jinze Zhao"
+    ],
+    "submission_date": "2026-08-10T11:23:30Z",
+    "latest_updated": "2026-08-10T11:23:30Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09450v1"
+    ],
+    "abstract": "Betting-based sequential tests and Blackwell approachability are linked by a rate-explicit reduction through support-function residuals. For a compact convex target $S$ and vector observations $r_t$, an OCO learner selects a predictable normal $w_t$ and produces $q_t=\\langle w_t,r_t\\rangle-h_S(w_t)$. We prove the exact pathwise identity $$ \\dist(\\bar r_T,S) =\\frac1T\\sum_{t=1}^Tq_t+\\frac{\\Reg_T}{T}. $$ When $|q_t|\\leq B$, composing this identity with one-sided betting yields a finite-time transfer: if the OCO and log-wealth regrets are at most $a_T$ and $\\ell_T$, respectively, then a target gap exceeding \\[ \\frac{a_T}{T} +2B\\sqrt{\\frac{\\log(1/α)+\\ell_T}{T}} \\] forces rejection by time $T$, while non-rejection certifies the converse radius. We then formulate a controlled stochastic experiment in which an action selected after $w_t$ satisfies Blackwell's supporting-halfspace condition for every null mean payoff. The resulting wealth is an e-process under adaptive nulls; sublinear OCO regret gives stochastic approachability, whereas persistent mean separation under an alternative gives exponential wealth at rate at least $δ^2/(4B^2)$. Deterministic Blackwell games and passive tests are, respectively, the noise-free and singleton-action cases of this protocol. Bounded two-sample means, kernel MMD, and active heterogeneous data sources instantiate the reduction. The resulting connection is exact algebraically, quantitative at finite time, and operational when experiments are controlled.",
+    "status": "found"
+  },
+  "2608.09451": {
+    "arxiv_id": "2608.09451",
+    "title": "Dynamic Clustering for Cross-Segment Permutation Alignment in Long Speech Separation",
+    "authors": [
+      "Yuzhu Wang",
+      "Archontis Politis",
+      "Konstantinos Drossos",
+      "Tuomas Virtanen"
+    ],
+    "submission_date": "2026-08-10T11:23:35Z",
+    "latest_updated": "2026-08-10T11:23:35Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09451v1"
+    ],
+    "abstract": "Long speech separation typically employs a segment-separation-stitch paradigm where recordings are divided into short segments, processed independently, and stitched together. Its challenge lies in predicting cross-segment permutations. This paper proposes a training-free dynamic clustering approach for cross-segment permutation alignment using speaker embedding reference pools. The method predicts the permutation using the cosine similarity between current segment embeddings and the reference pools. The approach updates reference pools by retaining the most representative speaker embeddings based on their overall cosine similarity with existing references. As a plug-and-play post-processing module compatible with existing separation models, the proposed method demonstrates superior performance compared to existing methods on dense and sparse long speech scenarios, particularly in challenging sparse scenarios with extended utterance gaps, and further shows robustness to speaker count estimation errors in unknown speaker count scenarios.",
+    "status": "found"
+  },
+  "2608.09452": {
+    "arxiv_id": "2608.09452",
+    "title": "A Content-Aware Pure Permutation with Intrinsic Avalanche Effect: Breaking the Diffusion-Permutation Dichotomy",
+    "authors": [
+      "Zahra Ghoraeian",
+      "Mohammad-Reza Sadeghi",
+      "Samaneh Mashhadi"
+    ],
+    "submission_date": "2026-08-10T11:23:39Z",
+    "latest_updated": "2026-08-10T11:23:39Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09452v1"
+    ],
+    "abstract": "Pixel permutation is a fundamental tool in image processing, image encryption, and data hiding (including watermarking and steganography) that rearranges pixels without changing their values. A common assumption in the literature is that permutation alone cannot create differential sensitivity; changing one pixel merely relocates that pixel in the output, producing no avalanche effect. This paper challenges this by introducing the Triangular Content-Aware Permutation (TCA) algorithm. The method extracts edge points using Canny and applies Delaunay Triangulation to edges and corners, creating a unique partition. Since triangulation is highly sensitive to image geometry, changing a single pixel alters the edge map, resulting in a completely different triangulation and global permutation pattern. Unlike classical dimension-based permutations and advanced content-aware methods (2025-2026), which lack differential sensitivity, TCA increases NPCR from near-zero to 97.10% solely through pixel relocation. Experiments on 50 images show that TCA, with an average of 14.81 iterations, achieves NPCR = 97.10% and UACI = 20.06%, proving pure permutation can create significant differential sensitivity. Conventional methods maintain near-zero NPCR. The iteration threshold varies from 6.4 to 30.7 based on content complexity. Low PSNR (11.93 dB) and near-zero correlation (~10^-3) confirm superior statistical performance. Although slower than classical methods due to triangulation, this is a deliberate trade-off for stronger security. Given the non-analytic, content-dependent nature of the pattern, TCA is ideal for reference-based encryption, fragile watermarking, and non-blind steganography.",
+    "status": "found"
+  },
+  "2608.09453": {
+    "arxiv_id": "2608.09453",
+    "title": "Learning to Modulate, Not to Cycle: Soft Actor---Critic Recovers Inverter-Style Heat-Pump Control",
+    "authors": [
+      "Faizan Ahmed",
+      "Aniket Dixit",
+      "James Brusey"
+    ],
+    "submission_date": "2026-08-10T11:24:29Z",
+    "latest_updated": "2026-08-10T11:24:29Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09453v1"
+    ],
+    "abstract": "On--off cycling is the main cause of compressor wear in residential heat pumps, yet reinforcement learning (RL) controllers for buildings typically optimise only energy cost and thermal comfort, ignoring how much the learned policy cycles. We add a levelised compressor-wear term to the control reward and study how the resulting behaviour depends on the RL algorithm. Training Soft Actor---Critic (SAC) and Proximal Policy Optimisation (PPO) on an identical Markov decision process for the BOPTEST bestest hydronic heat pump case, we find that SAC learns a continuous modulation policy that keeps the compressor permanently engaged---the operating principle of an inverter-driven heat pump---achieving zero start-ups per day, whereas PPO collapses to bang-bang control that cycles more than the baseline. On the BOPTEST emulator the SAC policy cuts thermal discomfort by up to 90.7% for an 11.5% cost increase, while eliminating all baseline cycling.",
+    "status": "found"
+  },
+  "2608.09454": {
+    "arxiv_id": "2608.09454",
+    "title": "An accelerator-based source of high-intensity quantum-entangled annihilation gamma photons",
+    "authors": [
+      "Riad Suleiman"
+    ],
+    "submission_date": "2026-08-10T11:26:10Z",
+    "latest_updated": "2026-08-10T11:26:10Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09454v1"
+    ],
+    "abstract": "We present the concept and development of a novel accelerator-based source of high-intensity quantum-entangled 511 keV gamma-ray pairs produced through positron-electron annihilation. The source leverages the unique capabilities of the proposed Jefferson Lab positron facility to generate polarized, high-current positron beams with a well-defined time structure. These beams enable the production of entangled annihilation photons at intensities far exceeding those available from conventional radioactive sources. The resulting gamma-ray pairs can be characterized using Compton polarimetry techniques, providing a powerful platform for precision studies of quantum entanglement. The combination of high intensity, controllable polarization, and precise timing also opens new opportunities in medical imaging, materials science, quantum information science, and spintronics. Compared with traditional radioactive sources, the proposed system offers orders-of-magnitude higher photon flux, tunable beam parameters, and unprecedented control of the annihilation process. We discuss the source design, methods for entanglement characterization, potential applications, and future development directions.",
+    "status": "found"
+  },
+  "2608.09455": {
+    "arxiv_id": "2608.09455",
+    "title": "A non-Markovian approach to spin-phonon coherence and the breakdown of the Markovian approximation",
+    "authors": [
+      "Mohamed Belhassen",
+      "Tim Schröder",
+      "Gregor Pieplow"
+    ],
+    "submission_date": "2026-08-10T11:26:27Z",
+    "latest_updated": "2026-08-10T11:26:27Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09455v1"
+    ],
+    "abstract": "Qubit coherence is an essential figure of merit for quantum information processing applications such as quantum computing, or quantum repeaters. Understanding the coherence properties of the underlying physical qubits that facilitate such applications is therefore are often limited by coupling to lattice phonons, which in turn constrains operation temperature. Here we study phonon induced electronic spin decoherence in group-IV vacancy centers in diamond. We begin by modeling the spin-phonon interaction and then employ the widely used Born-Markov approximation, highlighting its inconsistencies in this setting and its deviations from experimental observations. To close the gap between theoretical predictions and experimental results, we relax certain approximations, investigate their contributions to the predicted coherence times, and identify the dominant sources of discrepancy. We further demonstrate that experimentally measured electronic spin coherence dynamics are consistently captured within a non-Markovian framework, and we show how the magnetic field orientation influences the qubit coherence time.",
+    "status": "found"
+  },
+  "2608.09456": {
+    "arxiv_id": "2608.09456",
+    "title": "Climate-Conditioned Cascade Modeling for Multi-Peril Reinsurance: Analysis and Controlled Numerical Applications",
+    "authors": [
+      "N. Karimi",
+      "E. Salavati",
+      "F. Shokrollahi"
+    ],
+    "submission_date": "2026-08-10T11:26:42Z",
+    "latest_updated": "2026-08-10T11:26:42Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09456v1"
+    ],
+    "abstract": "Climate perils are linked through event ordering and state-dependent propagation, features not fully captured by joint loss distributions alone. This paper develops a Cascading Climate Risk Network (CCRN) for multi-peril reinsurance that separates calendar-scale climate conditioning from within-event propagation on a directed acyclic graph (DAG). The model combines complementary-log-log triggering hazards with bounded severity activation, mapping physical states to insured losses via a capacity-bounded demand-surge transformation. For fixed shocks, the event-scale cascade reaches a unique finite-step closure. Monotone comparative statics provide a pathwise upper-corner loss bound over rectangular stress sets, yielding a transparent contract-level stress-testing guarantee under common aleatory inputs. Comprehensive numerical experiments, including copula and Bayesian-network benchmarks, sensitivity analyses, and uncertainty propagation, demonstrate that while central layer prices remain robust across matched-marginal dependence structures, far-tail and high-layer behaviors differ materially. Directional propagation, annual event frequency, and dependence strength emerge as the principal risk drivers. The study provides a controlled synthetic verification of the proposed architecture.",
+    "status": "found"
+  },
+  "2608.09457": {
+    "arxiv_id": "2608.09457",
+    "title": "CMB Spectral Distortion Anisotropies from Acoustic Damping with primordial non-Gaussianity",
+    "authors": [
+      "Jens Chluba",
+      "Atsuhisa Ota",
+      "Nicola Bartolo"
+    ],
+    "submission_date": "2026-08-10T11:26:53Z",
+    "latest_updated": "2026-08-10T11:26:53Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09457v1"
+    ],
+    "abstract": "In this paper, we evaluate the precise distortion source and transfer functions caused by mixing of blackbodies of different temperatures using the recently developed frequency hierarchy (FH) treatment of CosmoTherm. With this we are able to evaluate the effects of primordial non-Gaussianity (PNG) on the $μT$, $μE$, $y T$ and $y E$ cross-power spectra including the coupled spectro-spatial evolution and important photon-transport effects retained by the FH treatment. For local-type PNG, we compare our results with those from previous works, illustrating new aspects that were previously not captured. We then demonstrate how the $μT$ and $μE$ signals change in the presence of enhanced curvature perturbations at small scales. For a nearly scale-invariant primordial spectrum, our results agree broadly with previous estimates on large angular scales but exhibit additional small-scale damping and modified $y$-distortion correlations arising from the scale dependence of the heating source and the distinct transport of distortion perturbations. Tight-coupling and monopole-source approximations accurately reproduce the $μ$-distortion spectra, while the $y$-distortion signals remain more sensitive to the detailed source evolution. For enhanced small-scale power, anisotropies generated by propagation of the distorted average spectrum can become comparable to those from anisotropic dissipation. Their different angular dependences and parameter scalings principally allow the small-scale power amplitude and primordial non-Gaussianity to be constrained separately. The results presented here thus pave the path for studying PNG in new regimes using existing and upcoming high precision CMB anisotropy data to measure primordial distortion correlations.",
+    "status": "found"
+  },
+  "2608.09458": {
+    "arxiv_id": "2608.09458",
+    "title": "Femtosecond Engineering of PolyMethylPentene(PMP) Nonlinearity via NA, Spin/orbital angular momentum (OAM), and In-Situ SC Diagnostics",
+    "authors": [
+      "Siyang Zheng",
+      "Guangyu Zhu",
+      "Walter Perrie",
+      "Dongzhi Wang",
+      "Runzhen Zhou",
+      "Juan Ignacio Ahuir-Torre",
+      "Puxiang Lai"
+    ],
+    "submission_date": "2026-08-10T11:27:54Z",
+    "latest_updated": "2026-08-10T11:27:54Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09458v1"
+    ],
+    "abstract": "While femtosecond vortex beams are widely studied for photonic fabrication, how OAM affects third-order susceptibility, energy deposition, and structural symmetry in transparent polymers remains unclear. To address this gap, we investigate femtosecond vortex beam interactions with polymethylpentene (PMP) to establish OAM control over beam shaping and energy deposition in laser micromachining. A 775 nm femtosecond laser is frequency-doubled to 387.5 nm and phase-shaped by a reflective liquid crystal-spatial light modulator, with OAM imprinted via computer-generated holograms and independently controlled spin via a quarter-wave plate. Theoretical modeling of the tensorial nonlinear polarization, combined with systematic experiments on low-NA filamentation, supercontinuum spectroscopy using an advanced spectrometer, and high-NA inscription with NA = 0.4 and 0.7, reveals that the same $χ^{(3)}$ tensor components govern all regimes. The transition from perturbative to dissipative behavior is determined solely by whether the local intensity exceeds the plasma formation threshold. Through an analytical framework based on the isotropic material model, the key innovation lies in identifying that $χ_{1122}$ governs the energy deposition and plasma threshold, whereas $χ_{1221}$ mediates the transverse nonlinear current and helicity-dependent asymmetry, thereby converting phase topology into permanent chiral structures. This enables OAM-controlled structuring with sub-micrometer feature sizes (approximately 0.43 $μ$m diameter and approximately 200 nm$^2$ area) and localized intensities reaching $10^{14}$--$10^{15}$ W/cm$^2$, providing an engineering framework for deterministic fabrication of chiral waveguides and photonic devices through precise control of topological charge and focusing conditions.",
+    "status": "found"
+  },
+  "2608.09459": {
+    "arxiv_id": "2608.09459",
+    "title": "Beyond Zipf's Law: Equifinality and Mechanistic Inference from Scaling Laws",
+    "authors": [
+      "Arthur Charpentier"
+    ],
+    "submission_date": "2026-08-10T11:28:20Z",
+    "latest_updated": "2026-08-17T13:08:43Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.09459v1",
+      "2608.09459v2"
+    ],
+    "abstract": "Scaling laws summarize complex systems through low-dimensional regularities, but the same marginal law can arise from different stochastic dynamics. We examine this ambiguity for Zipf rank--frequency scaling. An i.i.d. finite-Zipf process, a persistent Markov chain, and canonical sample-space reduction (SSR) are constructed to have exactly the same stationary marginal, $p_j=(jH_V)^{-1}$, while a latent-scale mixture produces a similar marginal through aggregation. The first three models therefore hold the population rank distribution fixed while changing temporal organization. Markov dependence shifts the finite-sample distribution of fitted exponents; at moderate persistence, a block-adjusted effective sample size reproduces most of this shift. Excess lag-1 mutual information detects serial dependence relative to a shuffle null, whereas transition direction separates reversible Markov persistence from the directional contraction of SSR. Conditioning on latent scale reveals the aggregation mechanism. Fit-window, alphabet, and sequence-boundary analyses quantify sensitivity to the observation design. These examples separate the population marginal, the finite-sample behavior of a fitted exponent, and temporal structure. Matching a scaling law is therefore a compatibility condition, not a mechanism identifier: discrimination requires observables on which candidate processes make different predictions.",
+    "status": "found"
+  },
+  "2608.09460": {
+    "arxiv_id": "2608.09460",
+    "title": "Flow-based conditional cardiac anatomy generation for virtual cohorts",
+    "authors": [
+      "Konstantinos Kevopoulos",
+      "Beatrice Moscoloni",
+      "Benjamin Alheit",
+      "Cameron Beeche",
+      "Julio A. Chirinos",
+      "Alexander Heinlein",
+      "Mathias Peirlinck"
+    ],
+    "submission_date": "2026-08-10T11:30:02Z",
+    "latest_updated": "2026-08-10T11:30:02Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09460v1"
+    ],
+    "abstract": "Cardiac digital twin research is moving from subject-specific anatomical replicas toward virtual cohorts that represent clinically relevant population subgroups. Yet access to representative imaging-derived anatomy datasets remains limited by cohort size, subgroup sparsity, and data-sharing constraints. Conditional generative models could help address this gap, but virtual cohorts are useful only if they preserve realistic, metadata-dependent anatomical variability. Existing cardiac anatomy generators largely rely on conditional variational autoencoders (cVAEs), which couple representation learning and metadata conditioning through a shared regularized latent prior. We introduce CAN-FLOW, a two-step Conditional ANatomy generation framework based on normalizing FLOWs that first learns geometry-only latent representations of diffeomorphic cardiac shape momenta and then models their sex-, age-, and body-mass-index-dependent distribution with a conditional normalizing flow. We trained CAN-FLOW on 2,208 healthy UK Biobank subjects and compared it with cVAEs across regularization strengths. CAN-FLOW generated plausible stochastic biventricular anatomies that better reproduced clinical phenotype distributions, metadata-dependent trends, subgroup variability, point-cloud coverage, and high-dimensional shape variability. Together, these results establish CAN-FLOW as a shareable framework for generating realistic, stochastically varying, metadata-conditioned biventricular anatomies for virtual cohort construction and in silico clinical trial workflows.",
+    "status": "found"
+  },
+  "2608.09461": {
+    "arxiv_id": "2608.09461",
+    "title": "Probing Non-equilibrium baths: Frequency-Resolved Thermometry and Quantum Heat Current Turnover",
+    "authors": [
+      "Akhil Bhartiya",
+      "Tobias Kramer",
+      "David Gelbwaser-Klimovsky"
+    ],
+    "submission_date": "2026-08-10T11:30:59Z",
+    "latest_updated": "2026-08-10T11:30:59Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09461v1"
+    ],
+    "abstract": "Quantum heat transport for non-equilibrium steady state (NESS) exhibits a characteristic turnover effect, where the heat current reaches a maximum and subsequently declines as system-bath coupling increases. Although numerically exact methods can simulate this non-monotonic behavior, they offer limited information on the thermal state of the heat baths. Here, we introduce a frequency-selective thermometric protocol to probe the baths sustaining an NESS. By extracting a frequency-resolved effective temperature spectrum using a tunable two-level probe, we demonstrate that spectral dispersion serves as a direct witness for the non-equilibrium state of the heat baths. To demonstrate the protocol, we applied the hierarchical equations of motion to spin-boson and two-qubit models, though any exact method can be used. For both models, the turnover effect can be explained by how the thermal state of the heat baths evolves as the system-bath coupling strength increases.",
+    "status": "found"
+  },
+  "2608.09462": {
+    "arxiv_id": "2608.09462",
+    "title": "A Reusable Four-Port S-Parameter to Link-Level Signal-Integrity Analysis Framework for High-Speed Detector Interconnects",
+    "authors": [
+      "D M S Sultan",
+      "D. Bortoletto",
+      "R. Plackett",
+      "A. E. McDougall",
+      "A. S. Rotelli",
+      "A. J. A. Knight",
+      "J. Vossebeld"
+    ],
+    "submission_date": "2026-08-10T11:31:33Z",
+    "latest_updated": "2026-09-10T14:00:06Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 4,
+    "versions": [
+      "2608.09462v1",
+      "2608.09462v2",
+      "2608.09462v3",
+      "2608.09462v4"
+    ],
+    "abstract": "A reusable MATLAB signal-integrity (SI) framework is presented that converts compatible four-port S-parameter data, measured by VNA or obtained from electromagnetic simulation, into traceable link-level evidence rather than a single loss metric. Its contribution is the checked, traceable automation of established SI operations while keeping source data, model assumptions, analytical projections, and finite-record observations distinct. The framework is demonstrated on the four 1.25 Gbps differential routes (DP1-DP4) of the PPCB-1347-MuPix11 probe card using PTSL CST Microwave 3D-Solver-derived four-port S-parameters and a virtual time-domain solver. The automated pipeline preflights file structures, performs a power-normalized mixed-mode transformation, applies route-length-aware loss decomposition, constructs a causally loaded channel model, and propagates full PRBS-31 sequences into eye-diagram, conditional-BER, and 8b10b-coded-link analyses. At the 1.25 Gbps data rate (Nyquist 0.625 GHz), DP1-DP4 exhibit differential insertion loss (SDD21) from -0.350 to -0.300 dB, differential-to-common conversion from -31.038 to -28.236 dBc, and modeled FEB-input eye openings from 0.586 to 0.588 V. The comparison shows that path length alone is not an adequate SI ranking variable: DP3 has the lowest Nyquist insertion loss, DP1 the strongest differential-to-common isolation, and DP4 the largest modeled eye. All analytical BER values remain below the reporting floor and therefore do not support a BER ranking. By preserving the distinction between route-dependent waveform behavior, model projections, and finite-record observations, the framework provides an extensible basis for comparative high-speed-interconnect SI analysis from design review through calibrated VNA measurement interpretation.",
+    "status": "found"
+  },
+  "2608.09463": {
+    "arxiv_id": "2608.09463",
+    "title": "Quantum sensing composite excitations in an anisotropic ferromagnet via a qubit",
+    "authors": [
+      "Amey S. Rodge",
+      "Tarek Moussa",
+      "Akashdeep Kamra",
+      "Bashab Dey"
+    ],
+    "submission_date": "2026-08-10T11:32:03Z",
+    "latest_updated": "2026-08-10T11:32:03Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09463v1"
+    ],
+    "abstract": "Ordered magnets harbor intrinsically squeezed ground states and magnonic excitations characterized by entanglement between spins and nonclassical magnon number composition. A pathway to detecting the superpositions of noneigenmode magnon number states underlying these nonclassical magnetic ground states has recently been demonstrated by utilizing a qubit coupled to the magnon mode via a direct dispersive interaction. Here, we theoretically develop this qubit spectroscopy further delineating the capabilities and limitations of this qubit spectroscopy for sensing the quantum superpositions that underlie the excited states. We demonstrate that the spectroscopy lends itself naturally to unraveling the superpositions that underlie the various quantized squeezed-magnon number states. However, excited states comprising superpositions of multiple squeezed Fock states become increasingly hard due to the large number of possible transitions, and resulting peaks, in the qubit spectroscopy thereby requiring qubits with narrower linewidths. Along the same lines, we theoretically demonstrate the qubit spectroscopy of a low amplitude coherent squeezed-magnon state analyzing the tradeoff between frequency crowding due to multiple transitions and peak linewidths. Our work lays the groundwork and design equations for deploying high-quality qubits towards sensing the composite nature of spin excitations in magnetic systems.",
+    "status": "found"
+  },
+  "2608.09464": {
+    "arxiv_id": "2608.09464",
+    "title": "Trajectory-Induced Self-Calibration for Hidden-Target Localization Through an Unknown-Pose Range-Bearing Relay",
+    "authors": [
+      "Yash Bagla"
+    ],
+    "submission_date": "2026-08-10T11:34:24Z",
+    "latest_updated": "2026-09-24T15:09:25Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2608.09464v1",
+      "2608.09464v2",
+      "2608.09464v3"
+    ],
+    "abstract": "This paper studies hidden-target localization from range-bearing packets reported by a relay beacon whose global position and yaw are unknown. The vehicle knows its own trajectory but never directly senses the target; the relay packet contains only local-frame range and bearing to the vehicle and to the hidden target. Unlike bearing-only network localization, relative-frame localization, and target-enclosing control, the target is neither directly observed in the vehicle frame nor treated as a node in a relative-sensing graph. The main result characterizes the minimal motion that removes the resulting calibration ambiguity: one vehicle pose leaves a continuous yaw/translation/target gauge, whereas two distinct vehicle-relative observations from one unknown-pose relay constructively determine relay yaw (modulo 2 pi), relay position, and the anchored target in the noiseless case. A local rank corollary, a shared-target multi-beacon extension, and a trajectory-spread conditioning lemma connect relay self-calibration to finite-window excitation and native range-bearing estimation. In Monte Carlo evaluation the estimator recovers the hidden target with 5.5 mm RMSE, five times below the 30 mm per-packet range noise and thirteen times more accurate than a naive EKF baseline; it converges to the same accuracy from 2 m target offsets and 2.4 rad yaw errors, and Huber weighting preserves millimeter accuracy under 10% outlier corruption that drops the unprotected estimator to a 0.10 success rate. Trajectory spread predicts estimator quality: the two weakly excited trajectories carry condition numbers above 100 with success rates of 0.82 and 0.70, while every well-excited trajectory attains full success.",
+    "status": "found"
+  },
+  "2608.09465": {
+    "arxiv_id": "2608.09465",
+    "title": "Balancing fractional Brownian motion",
+    "authors": [
+      "Hengrui Luo",
+      "Yiming Xu"
+    ],
+    "submission_date": "2026-08-10T11:35:19Z",
+    "latest_updated": "2026-08-10T11:35:19Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09465v1"
+    ],
+    "abstract": "We study the discrepancy of balancing $n$ independent sample paths of fractional Brownian motion with Hurst exponent $H\\in(0,1)$ on $[0,1]$, an infinite-dimensional analogue of balancing Gaussian vectors. We establish a phase transition at $H=1/2$: with high probability, the discrepancy is $Ω(n^{1/2-H})$ and $\\mathcal O(n^{1/2-H}(\\log n)^{c(H)})$, where $c(H)=H+1/2$ if $H\\geq 1/2$ and $c(H)=1/2$ otherwise. At the critical exponent $H=1/2$, we show that the discrepancy is $Θ(1)$ with constant probability as $n\\to\\infty$. In this regime, we further characterize the geometry of the solution space by computing the expected number of local minima, establishing an overlap gap property near the existence threshold, and proving its absence at every diverging optimality threshold. We also give randomized polynomial-time algorithms that compute signings with discrepancy $\\mathcal O(n^{1/2-H}\\sqrt{\\log n})$ for $H<1/2$, $\\mathcal O((\\log n)^{3/2})$ for $H=1/2$, and $\\mathcal O(\\sqrt{\\log n})$ for $H>1/2$, with high probability. Our analysis combines a truncated balancing argument based on a wavelet representation of fractional Brownian motion with probabilistic methods.",
+    "status": "found"
+  },
+  "2608.09466": {
+    "arxiv_id": "2608.09466",
+    "title": "Second order unfitted ghost-FEM for elliptic interface problems with applications to low-dimensional semiconductor devices",
+    "authors": [
+      "Clarissa Astuto",
+      "Giovanni Nastasi"
+    ],
+    "submission_date": "2026-08-10T11:36:21Z",
+    "latest_updated": "2026-08-10T11:36:21Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09466v1"
+    ],
+    "abstract": "We develop an unfitted ghost finite element method for elliptic interface problems with discontinuous diffusion coefficients and apply it to the electrostatic simulation of low-dimensional semiconductor devices. The proposed approach is based on a fixed Cartesian grid and represents the geometry by level-set functions, avoiding mesh generation and remeshing even in the presence of interfaces. A snapping-back-to-grid strategy is used to control the small-cut-cell issue, while interface conditions are weakly enforced by a symmetric Nitsche formulation. The method is first validated on benchmark elliptic interface problems with different geometries and coefficient jumps, showing second-order accuracy for the solution and first-order accuracy for its gradient. As an application, we consider a graphene field-effect transistor described by a self-consistent drift-diffusion-Poisson model. The electrostatic potential is computed in a two-dimensional oxide/graphene/oxide structure, while charge transport in the graphene layer is modeled by one-dimensional bipolar drift-diffusion equations in the degenerate case and by including a field-dependent mobility model. The coupled nonlinear system is solved by a damped fixed-point iteration combined with a domain-decomposition treatment of the three-layer geometry. Numerical simulations reproduce transfer characteristics with a clear transition from an OFF state to an ON state and show the influence of the gate voltage on the two-dimensional electrostatic potential. The results also indicate that the effective thickness and discretization of the graphene layer affect the transverse potential profile, supporting the use of a full two-dimensional electrostatic description with explicit oxide/graphene interface conditions.",
+    "status": "found"
+  }
+}

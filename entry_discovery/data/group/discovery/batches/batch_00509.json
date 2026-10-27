@@ -1,0 +1,421 @@
+{
+  "2608.09187": {
+    "arxiv_id": "2608.09187",
+    "title": "Failure-Aware Long-Form Translation: Design and Implementation of a Recoverable LLM Translation System",
+    "authors": [
+      "Yanlin Yu"
+    ],
+    "submission_date": "2026-08-10T06:56:56Z",
+    "latest_updated": "2026-08-10T06:56:56Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09187v1"
+    ],
+    "abstract": "A long-form translation request can succeed at the API layer and still produce an unusable result. The output may be empty, truncated, filtered, dominated by source or prompt material, or interrupted after producing text worth keeping. This report describes a recovery protocol developed for a deployed translation system with heterogeneous inputs and provider APIs. It delays the first visible release behind a 64-character window, validates the assembled output, and uses typed stream events to distinguish replacement from continuation. Interrupted work is retained only when a paragraph or sentence prefix can be re-derived from the source. Further attempts follow a stable model order and a shared deadline before entering a provenance-marked fallback path. A sanitized companion artifact implements the protocol and passes 38 public tests. Its fixed cases reproduce all 14 configured completion labels, contain four early-invalid prefixes before any of their 235 characters become visible, retain 31 boundary-safe characters across four interrupted streams, and satisfy the attempt, event, and provenance rules in two end-to-end scenarios. These results are executable checks of the published control flow. Translation quality and detector performance on naturally occurring outputs require a different evaluation.",
+    "status": "found"
+  },
+  "2608.09188": {
+    "arxiv_id": "2608.09188",
+    "title": "When Cross-Venue Agreement Is Not Price Discovery: Disclosure Frontiers for 24/7 Equity-Perpetual Oracles",
+    "authors": [
+      "Donghwa Seo",
+      "Doohwi Cha",
+      "Seunghan Son",
+      "Juyeong Lee",
+      "Minjae Lee",
+      "Minsuk Sung"
+    ],
+    "submission_date": "2026-08-10T06:57:16Z",
+    "latest_updated": "2026-08-10T06:57:16Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09188v1"
+    ],
+    "abstract": "Crypto-listed equity perpetuals trade while the primary cash market is closed, yet still need a mark for margin, funding, and liquidation. We model the closed-window mark as the fixed point of an oracle operator with two blocks: external anchoring and self/peer derivative reference. From marks and proxies alone the two are observationally equivalent: every reduced form admits infinitely many topology decompositions, and a path-law argument extends this to the full mark dynamics, so lead-lag and information-share estimators have power equal to size. Disclosure breaks the tie -- disclosed diagonal adjustment identifies the normalized topology, and disclosed support with forbidden anchors gives a row-level test that identifies, falsifies, or leaves a positive-dimensional class under a rank condition and finite-sample tolerance. Empirically, a disclosed OKX row survives pre-open falsification while a pure-external baseline shows the test's limited power, and an eight-week deep-closed panel with cash-reopen validation bounds the live-external content of closure variance. Cross-venue agreement is not price discovery unless disclosure or the cash reopen breaks the equivalence class.",
+    "status": "found"
+  },
+  "2608.09189": {
+    "arxiv_id": "2608.09189",
+    "title": "EmoS: A Theory-Grounded Framework for Evaluating and Aligning Emotional Intelligence in Spoken Language Models",
+    "authors": [
+      "Junyu Wang",
+      "Siyuan Zhang",
+      "Peiyuan Jiang",
+      "Jian Zong",
+      "Jingyu Zhang",
+      "Tianrui Wang",
+      "Yuqin Lin",
+      "Zhenghui Chen",
+      "Shuqing Xie",
+      "Ziyang Ma",
+      "Meng Ge",
+      "Xiaobao Wang",
+      "Longbiao Wang",
+      "Jianwu Dang"
+    ],
+    "submission_date": "2026-08-10T06:58:30Z",
+    "latest_updated": "2026-08-10T06:58:30Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09189v1"
+    ],
+    "abstract": "Despite significant advances in instruction-following and auditory comprehension, the evaluation of Emotional Intelligence (EI) in Spoken Language Models (SLMs) remains confined to rudimentary paralinguistic perception, lacking a systematic, theory-driven cognitive framework. We introduce EmoSBench, the first comprehensive EI evaluation benchmark for SLMs constructed upon the four-branch theoretical model, covering Perceiving, Understanding, Using, and Managing Emotion across ten sub-tasks. Preliminary assessments on EmoSBench reveal a substantial gap: even leading proprietary models like GPT-4o-Audio achieve only 52.6%, significantly trailing human baselines. To bridge this gap, we develop EmoS, a specialized evaluator model optimized via Supervised Fine-Tuning (SFT) and Group Relative Policy Optimization (GRPO). To facilitate its effective training, we curate EmoDialogue, a bilingual dataset providing necessary fine-grained supervision through response pairs with rigorously defined EI gradations. Concurrently, we introduce a reward mechanism integrating a Steep Exponential Accuracy Reward (SEAR) and a Rationale Fidelity Reward (RFR) to enforce precise ordinal scoring and valid reasoning. Experiments demonstrate that EmoS reaches 83.8% accuracy, approaching human-level performance. Furthermore, evaluations on authentic, unconstrained spoken interactions validate its robust real-world generalization, establishing a foundational framework for advancing emotionally intelligent dialogue systems.",
+    "status": "found"
+  },
+  "2608.09190": {
+    "arxiv_id": "2608.09190",
+    "title": "Structure-Preserving Uncertainty Propagation in First-Order Proof Search",
+    "authors": [
+      "Tanel Tammet"
+    ],
+    "submission_date": "2026-08-10T07:00:55Z",
+    "latest_updated": "2026-08-10T07:00:55Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09190v1"
+    ],
+    "abstract": "GK is a query-directed first-order prover that extends ordinary resolution-based proof search with explicit positive and negative claims, numerical confidence values, and prioritized default rules with exceptions. It works directly with non-ground clauses, including equality and function terms. Candidate proofs are found by bounded first-order proof search; exception conditions of defaults are checked by further bounded searches, recursively when exceptions themselves depend on defaults. This avoids requiring a finite global grounding, while allowing incomplete searches to be reported as such. This paper adds structure-preserving quantitative reporting to that framework. Retained proof histories are used in two calculations. The first reconstructs the uncertain ground premises used by each proof and computes the probability that at least one retained proof is available, without counting shared premises independently. The second resolves positive and negative support at intermediate atoms before that support is propagated through later rules; the same calculation evaluates uncertain exception conditions for individual rule applications. Reports separate positive support, negative support, conflict, and ignorance and identify detected incomplete calculations or fallbacks. The implementation performs bounded reconstruction and dependency traversal after proof search and still requires no global grounding. Analytic examples and independent simulators reproduce the reference calculations on their stated fragments. Comparisons with probabilistic logic, probabilistic ASP, default logic, and goal-directed ASP identify cases of agreement, semantic difference, unsupported translation, and incomplete computation.",
+    "status": "found"
+  },
+  "2608.09191": {
+    "arxiv_id": "2608.09191",
+    "title": "A Proof of the Imbalance Conjecture",
+    "authors": [
+      "James Alexander Schreib",
+      "Yousof Yavari"
+    ],
+    "submission_date": "2026-08-10T07:02:00Z",
+    "latest_updated": "2026-09-24T14:36:05Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2608.09191v1",
+      "2608.09191v2",
+      "2608.09191v3"
+    ],
+    "abstract": "For an edge $uv$ of a finite simple graph $G$, its imbalance is $|d_G(u)-d_G(v)|$, and the imbalance multiset $M_G$ consists of the imbalances of all edges of $G$. Kozerenko and Skochko conjectured that $M_G$ is graphic whenever every edge has positive imbalance. We prove this conjecture. The main ingredient is the following capacity bound: for every set $A$ of $k$ edges, \\[ \\sum_{e\\in E(G)\\setminus A}\\min\\{k,\\operatorname{imb}_G(e)\\} \\ge k\\max\\{Δ-k,0\\}, \\] where $Δ$ is the maximum degree of $G$. This bound yields all Erdős--Gallai inequalities directly; a parity computation completes the proof.",
+    "status": "found"
+  },
+  "2608.09192": {
+    "arxiv_id": "2608.09192",
+    "title": "Statistical inference of fast radio burst environments using galaxy number density",
+    "authors": [
+      "Vignesh V. V. Rao",
+      "Tetsuya Hashimoto",
+      "Tomotsugu Goto",
+      "Shotaro Yamasaki",
+      "Mohanraj Madheshwaran",
+      "Sridhar Gajendran",
+      "Tomoki Wada",
+      "Simon C. -C. Ho",
+      "Terry Long Phan",
+      "Yuri Uno",
+      "Amos Y. -A. Chen",
+      "Hiroto Masaka"
+    ],
+    "submission_date": "2026-08-10T07:02:26Z",
+    "latest_updated": "2026-08-10T07:02:26Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09192v1"
+    ],
+    "abstract": "Fast radio bursts (FRBs) are bright, millisecond-duration radio transients of unknown origin. They are categorized as repeaters and non-repeaters, possibly indicating distinct progenitor types. However, validating this distinction is difficult because of the limited number of localized FRBs. Large-scale galactic environments can provide insight into the nature of the host galaxies of FRBs and their progenitors. High-number-density regions are typically associated with old galaxies, whereas low-number-density regions are linked to young star-forming or less massive quiescent galaxies. In this study, we use galaxy number density to statistically assess the environments of 19 repeaters and 253 non-repeaters from CHIME Catalog 1, using galaxies from the WISE x PS1 catalog. A Kolmogorov-Smirnov (KS) test showed no significant difference between the two populations ($p_{\\rm KS} = 0.673$). This result indicates that the statistical significance of the difference could depend on small-number statistics, highlighting the necessity of future FRB samples. Intriguingly, a comparison of FRBs with random galaxy fields suggests that FRBs may preferentially occur in underdense galactic environments, with a median $p$-value ($p_{\\rm KS}$) of $2.84 \\times 10^{-2}$ compared to random galaxy apertures.",
+    "status": "found"
+  },
+  "2608.09193": {
+    "arxiv_id": "2608.09193",
+    "title": "CPDA: Class-Conditional Path Distribution Alignment for Unsupervised Time-Series Domain Adaptation",
+    "authors": [
+      "Felix Ott",
+      "Christopher Mutschler"
+    ],
+    "submission_date": "2026-08-10T07:05:58Z",
+    "latest_updated": "2026-08-10T07:05:58Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09193v1"
+    ],
+    "abstract": "Unsupervised time-series domain adaptation (DA) addresses the challenge of transferring a classifier from a labeled source domain to an unlabeled target domain under distribution shifts induced by different users, sensors, devices, acquisition conditions, or temporal dynamics. Existing methods typically mitigate this shift by aligning marginal feature distributions through adversarial training, optimal transport, or moment-based discrepancies. In this paper, we propose Class-Conditional Path Distribution Alignment (CPDA), a non-adversarial discrepancy-based framework that aligns source and target class-conditional latent path distributions rather than only global feature marginals. CPDA introduces a composite signature-spectral kernel that jointly captures pooled semantic features, temporal path structure, frequency-domain information, and low-rank path-signature dynamics, while using source labels and target soft pseudo-labels to perform class-preserving alignment. We further provide a theoretical analysis showing that CPDA defines a valid kernel discrepancy, admits existing moment-matching methods as restricted cases, and yields a class-conditional target-risk bound. Extensive experiments with CNN, ResNet18, and TCN backbones on 13 different time-series DA benchmarks demonstrate the effectiveness of CPDA against 30 discrepancy, adversarial, and pseudo-labeling baselines.",
+    "status": "found"
+  },
+  "2608.09194": {
+    "arxiv_id": "2608.09194",
+    "title": "Unsigned Frenet Data of Closed Space Curves: Exact Fibres, Generic Rigidity, and Conditional Stability",
+    "authors": [
+      "JiYe Liu",
+      "Wenkai Wang",
+      "Qiang Tian",
+      "Wenjun Wang"
+    ],
+    "submission_date": "2026-08-10T07:06:33Z",
+    "latest_updated": "2026-08-13T09:40:52Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.09194v1",
+      "2608.09194v2"
+    ],
+    "abstract": "A closed positively curved space curve is determined by its curvature and signed torsion up to an orientation-preserving rigid motion; that sign is the only place the ambient orientation enters. We ask what survives its loss, for closed embedded curves in $\\mathbb R^3$ with $κ>0$ compared pointwise in a common arclength label. The answer is governed by the branch invariant $c(τ)$, the number of components left by the infinite-order zero set of $τ$: the smooth signed lifts of $|τ|$ number exactly $2^{c(τ)}$, and reduce to $\\{τ,-τ\\}$ precisely when $c(τ)\\le1$. Hence a given unsigned datum is carried by at most $2^{c(τ)}$ classes modulo $SE(3)$, and by a single $E(3)$-orbit when $c(τ)\\le1$. Both extremes occur: for arbitrary knot types $K_1,\\dots,K_m$ there is a datum with fibre exactly $2^m$ classes modulo $SE(3)$, realising all connected sums of the $K_i$ and their mirrors; under a chirality hypothesis these are $2^m$ knot types. Conversely, curves with only simple torsion zeros are open and dense, hence residual, among parametrised $C^r$ embeddings ($r\\ge4$), and each is determined up to $E(3)$ by its datum. No uniform quantitative form of this rigidity exists; but on each stratum $Δ=\\inf_s\\sqrt{τ^2+(τ')^2}\\geδ>0$ with uniform $C^5$ and curvature bounds the orbit distance obeys a log-Lipschitz bound, whose optimal constants diverge as $δ\\downarrow0$ on the strata containing a fixed exact ambiguous pair. The engine is a one-dimensional inverse estimate for the signed square root, logarithmically optimal at that level.",
+    "status": "found"
+  },
+  "2608.09195": {
+    "arxiv_id": "2608.09195",
+    "title": "Hadron-quark phase transitions along proto-neutron-star evolution",
+    "authors": [
+      "P. Laskos-Patkos",
+      "P. S. Koliogiannis",
+      "Ch. C. Moustakidis"
+    ],
+    "submission_date": "2026-08-10T07:06:37Z",
+    "latest_updated": "2026-08-10T07:06:37Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09195v1"
+    ],
+    "abstract": "The new era of multi-messenger astronomy requires the accurate and self-consistent derivation of the nuclear equation of state at high temperature. In the present work, we focused on the calculation of hot hybrid equations of state, studying the different evolution stages of a proto-neutron star with a quark matter core (proto-hybrid star). For the hadronic matter we used two distinct Skyrme effective interactions, while for quark matter the well-known vector MIT bag model was employed. To model the era of trapped neutrinos in the system we considered the global conservation of lepton fraction which resulted in an equation of state with an extended mixed phase. For periods following the neutrino diffusion phase of a proto-neutron star, the equations of state were modelled using both the Maxwell and the Gibbs construction depending on the assumption for either local or global electric-charge conservation. With the use of the derived hybrid models, we solved the Tolman-Oppenheimer-Volkov equations to describe the corresponding hybrid star configurations. Finally, we investigated how the structure of proto-hybrid stars evolves, using constant rest mass sequences. We found that regardless of whether electric-charge is globally or locally conserved, the earlier stages of a hybrid star's life may play a crucial role on the determination of its maximum possible gravitational mass in later stages.",
+    "status": "found"
+  },
+  "2608.09196": {
+    "arxiv_id": "2608.09196",
+    "title": "SAIN: Structure-Aware Interactive Navigation with Active Dialogue Grounding for Mobile Robot",
+    "authors": [
+      "Yuhao Cao",
+      "Xiao Liu",
+      "Yang Xie",
+      "Lu Liu",
+      "Haoyao Chen"
+    ],
+    "submission_date": "2026-08-10T07:08:44Z",
+    "latest_updated": "2026-10-07T15:47:36Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.09196v1",
+      "2608.09196v2"
+    ],
+    "abstract": "Most existing vision-language navigation tasks assume that instructions are complete and unambiguous. However, real-world robots often encounter natural human instructions that are ambiguous, underspecified, or incomplete, requiring them to resolve such uncertainties through active questioning. Interactive Instance Goal Navigation (IIGN) requires an embodied agent to find the specific instance under an ambiguous category-level instruction through active dialogue. However, existing dialogue-enabled methods often consume oracle answers as transient textual context for immediate decisions, rather than persistent spatial or object-centric structured state. We present SAIN, a zero-shot framework that turns active dialogue into persistent navigation state. Instead of consuming oracle answers as one-step text hints, SAIN compiles them into target evidence, route-level corridor memory, and object-candidate labels. These states are stored in structured value, room, graph, and object memories, then consumed by a unified policy for frontier ranking and final target approach. On the VL-LN IIGN benchmark, SAIN improves SR from 20.2 to 25.4 and SPL from 13.07 to 14.17 over the strongest reported dialogue-enabled baseline, while requiring no task-specific policy training. The results support dialogue-to-state conversion as an effective zero-shot mechanism for long-horizon interactive instance navigation. Project website: https://zorattc.github.io/SAIN/",
+    "status": "found"
+  },
+  "2608.09197": {
+    "arxiv_id": "2608.09197",
+    "title": "Growth in affine Hecke categories",
+    "authors": [
+      "Kevin Coulembier",
+      "Jensen O'Sullivan",
+      "Daniel Tubbenhauer"
+    ],
+    "submission_date": "2026-08-10T07:11:29Z",
+    "latest_updated": "2026-08-10T07:11:29Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09197v1"
+    ],
+    "abstract": "This paper studies the asymptotic growth of tensor powers in affine Hecke categories, or equivalently of powers of Kazhdan--Lusztig basis elements in affine Hecke algebras. We prove general bounds in arbitrary affine type, determine precise asymptotics in affine type A1, and establish corresponding results for several natural families in affine type A2.",
+    "status": "found"
+  },
+  "2608.09198": {
+    "arxiv_id": "2608.09198",
+    "title": "Ultra-Low-Impedance Robotic Gripper for High-Bandwidth and Transparent Physical Interaction",
+    "authors": [
+      "Joon Lee",
+      "Ari Choi",
+      "Seokhwan Jeong"
+    ],
+    "submission_date": "2026-08-10T07:11:51Z",
+    "latest_updated": "2026-09-17T08:42:36Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.09198v1",
+      "2608.09198v2"
+    ],
+    "abstract": "Conventional robotic grippers often use high-ratio transmissions to generate grasping torque and external force sensors to measure physical interaction. High-ratio transmissions increase friction, reflected inertia, and mechanical impedance, while external sensors add hardware complexity. To address these trade-offs, this study proposes a novel 9-DOF, three-fingered Differential Direct-Drive (DDD) gripper that combines DD motors with a low-ratio (1:2) differential transmission. The mechanism centralizes actuator mass at the base to minimize moving-link inertia, while the differential architecture couples two motors in parallel to amplify torque during flexion. Experiments show that the prototype delivers a nominal grasping force of approximately 18 N and a fingertip force of 4.7 N, while maintaining a low motor contribution to system inertia (0.236%) and low passive mechanical impedance, with a maximum measured value of 50.1 N/m when the motors are unpowered. The proposed hardware addresses the trade-offs among torque, physical transparency, and kinematic dexterity, providing a foundation for high-bandwidth interaction and sensorless proprioceptive force estimation.",
+    "status": "found"
+  },
+  "2608.09199": {
+    "arxiv_id": "2608.09199",
+    "title": "SparsePilot: Belief-Guided Network Planning under Sparse Wireless Measurements",
+    "authors": [
+      "Xuanhao Luo",
+      "Jiayuan Huang",
+      "Longyu Zhou",
+      "Mingzhe Chen",
+      "Yuchen Liu"
+    ],
+    "submission_date": "2026-08-10T07:14:32Z",
+    "latest_updated": "2026-08-10T07:14:32Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09199v1"
+    ],
+    "abstract": "Unmanned aerial vehicles (UAVs) have emerged as a promising solution for on-demand wireless coverage planning in urban environments. Existing learning-based UAV control methods, however, typically rely on continuous access to dense user-level received signal strength (RSS) measurements. Such full-observation assumptions are difficult to satisfy in real-world deployments due to the high cost and limited availability of dense wireless feedback. Sparse-feedback decision making under severe observation constraints therefore represents a fundamental challenge. To fill this gap, we propose SparsePilot, a measurement-efficient sensing-control framework that couples active wireless probing with belief-guided network control. SparsePilot formulates spatial probing as a multi-armed bandit problem over grid cells, uses upper confidence bound probing to select informative regions, and aggregates sparse RSS measurements into a coverage belief map. A deep reinforcement learning controller then uses this belief state to generate continuous UAV mobility actions, while the full wireless state remains hidden from the policy. We further provide a theoretical analysis connecting sparse probing, belief estimation error, and the sparse-feedback performance gap. Experiments across seven urban digital twins show that SparsePilot achieves superior coverage restoration performance while using only about 3.1% of the full-observation measurement budget and demonstrates strong cross-scene generalization to unseen urban-scale wireless environments.",
+    "status": "found"
+  },
+  "2608.09200": {
+    "arxiv_id": "2608.09200",
+    "title": "NBA_Streaming: A Large-Scale Benchmark for Fine-Grained Basketball Commentary Generation in Continuous Streams",
+    "authors": [
+      "Lifang Wu",
+      "Yuyang Wu",
+      "Yangdong Gao",
+      "Fengyu Liu",
+      "Ya Jing",
+      "Liang Wang"
+    ],
+    "submission_date": "2026-08-10T07:15:09Z",
+    "latest_updated": "2026-09-21T18:50:06Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2608.09200v1",
+      "2608.09200v2",
+      "2608.09200v3"
+    ],
+    "abstract": "Live basketball commentary generation requires determining when an event is sufficiently observable and describing it before subsequent events unfold. However, existing methods are primarily designed for pre-segmented clips or complete videos, making them unsuitable for continuous streams. Existing datasets also provide limited supervision for player identities, fine-grained actions, event attributes, and coherent event chains, restricting the factual richness of generated commentary. To address these limitations, we introduce NBA_Streaming, a large-scale benchmark for online fine-grained basketball commentary generation. It contains 307.5 hours of basketball broadcasts and approximately 35K temporally aligned events, with annotations of event boundaries, player identities, fine-grained actions, event chains, and natural-language commentary. By moving from isolated clips to continuous streams, NBA_Streaming enables unified evaluation of event localization, response reliability, factual grounding, and commentary quality under causal constraints. We further propose a causal two-stage framework that combines completion-first localization with ball-centric semantic grounding, enabling the system to identify complete events from observed streams and organize scene, event, identity, and action cues for commentary generation. Extensive experiments reveal the difficulty of NBA_Streaming, where existing baselines struggle with online timing, factual grounding, and fine-grained description. Our framework consistently improves over strong alternatives, while the remaining gap highlights NBA_Streaming as a valuable benchmark for streaming sports video understanding and generation. The dataset is publicly available at https://github.com/wyy-081/NBA_Streaming.",
+    "status": "found"
+  },
+  "2608.09201": {
+    "arxiv_id": "2608.09201",
+    "title": "Signature-Guided Capacity Occupancy for Dense Expert Merging",
+    "authors": [
+      "Lingching Tung",
+      "Chi-Jui Kim",
+      "Beicheng Xu",
+      "Yuchen Wang",
+      "Bin Cui"
+    ],
+    "submission_date": "2026-08-10T07:16:10Z",
+    "latest_updated": "2026-08-10T07:16:10Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09201v1"
+    ],
+    "abstract": "Dense expert merging combines domain-specialized language models into one single checkpoint, typically by admitting task-vector support in weight space. However, this admission is governed by three decisions that existing methods answer only partially: where to open layer capacity from cross-expert conflict, who should occupy that capacity based on domain demand, and how to admit the resulting support without relying on costly recipe search. To tackle these issues, we propose SigMerge (Signature-Guided Capacity Occupancy), a structured capacity assignment framework for dense expert merging. Starting from a dense base merge, conflict signatures set each layer's capacity from cross-expert conflict, positive base-merge deficits set each domain's share of that capacity, and a sequential occupancy rule admits each expert delta up to the resulting layer-domain budget. Across 21 paired settings spanning seven dense base merges and three model pools, SigMerge improves every one (by 15.0% on average) and achieves the best average rank (1.67) among six merging methods, outperforming three categories of merging baselines.",
+    "status": "found"
+  },
+  "2608.09202": {
+    "arxiv_id": "2608.09202",
+    "title": "CRUISE: Vision-Language Model-Guided Uncertainty-Aware Cross-Modal Sensor Fusion for Robust Autonomous Driving",
+    "authors": [
+      "Junyao Wang",
+      "Yulin Xu",
+      "Yu Li",
+      "Pramod Khargonekar",
+      "Mohammad Abdullah Al Faruque"
+    ],
+    "submission_date": "2026-08-10T07:17:00Z",
+    "latest_updated": "2026-10-07T21:48:15Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.09202v1",
+      "2608.09202v2"
+    ],
+    "abstract": "Modern autonomous vehicles are equipped with multiple sensors, such as cameras, LiDAR, and radar, for comprehensive environmental perception. However, robust cross-modal feature fusion remains a critical challenge, as the reliability of each sensor varies significantly across diverse real-world driving conditions, including poor visibility and adverse weather. While uncertainty quantification (UQ) mitigates this issue by allowing models to prioritize reliable signals, existing uncertainty-aware fusion methods typically rely on simple feature-level uncertainty estimates and thus often fail to generalize effectively in complex, out-of-distribution scenarios. To address this limitation, we propose CRUISE, a novel uncertainty-aware cross-modal sensor fusion framework. CRUISE integrates a vision-language model (VLM)-guided UQ module that generates fine-grained, pixel-level uncertainty estimates. By leveraging the VLM's rich prior knowledge and superior contextual reasoning, our approach provides a highly informative guide for the fusion process. Furthermore, we introduce a dynamic adaptive mechanism that explicitly models and captures cross-modal dependencies, ensuring the framework fully exploits the inherent complementary nature of multi-sensor inputs.",
+    "status": "found"
+  },
+  "2608.09203": {
+    "arxiv_id": "2608.09203",
+    "title": "Silent coverage failures in rare-event searches and a degeneracy index that predicts them",
+    "authors": [
+      "Davide Pagano"
+    ],
+    "submission_date": "2026-08-10T07:18:41Z",
+    "latest_updated": "2026-10-09T06:48:21Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.09203v1",
+      "2608.09203v2"
+    ],
+    "abstract": "Searches for new physics in low-background experiments infer a non-negative signal strength from few events and often report an upper limit. Nominal frequentist coverage requires both a valid interval construction and an adequate data model. We study how controlled model departures affect lower- and upper-endpoint coverage for six interval procedures in an exact Poisson counting experiment, dark-matter recoil spectra, and a neutrinoless-double-beta-decay peak search. We introduce the Poisson--Fisher degeneracy index $\\mathcal I_{\\mathrm{PF}}(δν;\\vartheta_0)=(β,γ)$, which maps a specified expected-count deformation, after projection onto the complete fitted tangent space, to $β$, the signed fitted signal shift in profiled standard-error units, and $γ$, the Poisson--Fisher norm of the unabsorbed residual. Locally, the sign of $β$ identifies the threatened endpoint, while larger $γ$ implies greater detectability by the saturated-Poisson goodness-of-fit test used here at a fixed $5\\%$ type-I error rate. Across the studied deformations, positive signal-like bias degrades discovery-side coverage while making upper limits conservative; negative signal bias from overestimated signal efficiency can make the upper endpoint undercover. Calibration under the nominal simulator does not protect against misspecification of that simulator relative to the data-generating process. A plausible deformation with large $|β|$ and small $γ$ may therefore evade diagnosis and should be represented by a nuisance constrained with auxiliary information or included in a defensible envelope. In the exactly collinear constrained-nuisance benchmark, modelling the deformation restores coverage at the evaluated grid points, at a quantifiable cost in interval sensitivity.",
+    "status": "found"
+  },
+  "2608.09204": {
+    "arxiv_id": "2608.09204",
+    "title": "Effect of Photoplethysmogram Artifacts on Uncertainty in Atrial Fibrillation Detection",
+    "authors": [
+      "Andrius Sološenko",
+      "Enikö Vargova",
+      "Loïc Coquelin",
+      "Vaidotas Marozas",
+      "Andrius Petrėnas"
+    ],
+    "submission_date": "2026-08-10T07:19:28Z",
+    "latest_updated": "2026-08-10T07:19:28Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09204v1"
+    ],
+    "abstract": "Detection of atrial fibrillation (AF) from photoplethysmogram (PPG) is highly sensitive to artifacts, yet their effect on uncertainty of different AF detectors remains poorly understood. This work aims to quantify how different PPG artifact types affect the uncertainty of AF detectors. Two machine learning approaches to AF detection were explored: one using 25-s PPG signals as input ($\\mathit{D}_r$) and another using AF-related rhythm irregularity features ($\\mathit{D}_f$). The detectors were trained on wrist PPG signals acquired during cardiac rehabilitation and then systematically evaluated on 260,000 PPG signals containing controlled artifact types and durations. Uncertainty was quantified using a threshold-based error rate, conformal prediction, and Monte Carlo dropout. Using artifact-free PPG signals, $\\mathit{D}_f$ outperforms $\\mathit{D}_r$ with sensitivity/specificity of 0.94/0.94 versus 0.92/0.86. Relative to artifact-free performance, sensitivity/specificity drops by 0.52/0.03, 0.25/0.03, 0.16/0.02, and 0.07/0.02 using $\\mathit{D}_r$ for 12-s artifacts of device displacement, forearm motion, hand motion, and poor contact respectively. For $\\mathit{D}_f$, the respective drops are 0.31/0.07, 0.19/0.11, 0.14/0.15, and 0.13/0.21 for the same artifacts. $\\mathit{D}_f$ is more robust to short artifacts but exhibits increasing uncertainty with longer artifact durations, whereas $\\mathit{D}_r$ shows an abrupt performance drop when artifacts occur but is less sensitive to artifact duration. Applying conformal prediction with 90$\\%$ coverage reduces the false-positive rate by up to 12$\\%$ for $\\mathit{D}_r$ and up to 64$\\%$ for $\\mathit{D}_f$. Artifact type and duration have detector-specific effects on AF detection uncertainty. Device displacement causes the largest increase in uncertainty.",
+    "status": "found"
+  },
+  "2608.09205": {
+    "arxiv_id": "2608.09205",
+    "title": "Evidence for Counterfactual Violation of Local Conservation Laws in Quantum Events",
+    "authors": [
+      "Patrick Cameron",
+      "Francesco Di Colandrea",
+      "Filippo Cardano",
+      "Lorenzo Marrucci"
+    ],
+    "submission_date": "2026-08-10T07:22:15Z",
+    "latest_updated": "2026-08-10T07:22:15Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09205v1"
+    ],
+    "abstract": "Physical conservation laws, such as those of energy and momentum, are generally believed to hold exactly and locally in spacetime, including in quantum phenomena. Yet Aharonov, Popescu, and Rohrlich (APR) recently argued, on the basis of a thought experiment, that individual quantum events, unlike ensemble averages, may occasionally violate local conservation laws. Their argument relies on the wave phenomenon known as \"superoscillations\", which APR themselves discovered more than 30 years ago. Here we provide experimental evidence for such a violation. We extract photons from a small superoscillatory region near the core of an optical vortex and show that their mean transverse momentum is statistically incompatible with a general bound implied by local momentum conservation. The derivation of this bound requires only the theoretically well-supported assumption that the extraction mechanism does not alter the photons' mean transverse momentum. We also detect photons with high transverse momentum at a rate significantly exceeding that predicted by a model assuming local momentum conservation. Because this violation can be established only counterfactually and through postselection, it does not conflict with relativistic causality. Our results may represent the first example of a distinct form of quantum nonlocality that does not explicitly rely on entanglement.",
+    "status": "found"
+  },
+  "2608.09206": {
+    "arxiv_id": "2608.09206",
+    "title": "A primal--dual interior-point method for nonsymmetric conic optimization with conjugate-free scaling",
+    "authors": [
+      "Rui-Jin Zhang",
+      "Wenhao Fu",
+      "Yu-Hong Dai"
+    ],
+    "submission_date": "2026-08-10T07:23:47Z",
+    "latest_updated": "2026-08-10T07:23:47Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09206v1"
+    ],
+    "abstract": "We develop a primal--dual interior-point method for nonsymmetric conic optimization based on a conjugate-free scaling matrix. The scaling is obtained from a single-secant BFGS update of the primal barrier Hessian. In contrast to multi-secant BFGS scalings, it does not require conjugate-barrier derivatives. This feature is important for high-dimensional nonsymmetric cones, where conjugate-barrier derivatives may be unavailable in closed form or expensive to compute. We embed the conjugate-free scaling in a homogeneous self-dual predictor--corrector framework. Using a split central-path neighborhood that separately controls the conic variables and the scalar homogeneous variables, we prove that the scaling matrix remains uniformly comparable to the primal barrier Hessian. This comparison bound is used to prove neighborhood preservation and to show that the complementarity measure and the linear residual decrease at a uniform rate. Consequently, the method attains an iteration bound of $\\mathcal{O}(\\sqrtν\\log(1/\\varepsilon))$, improving the $\\mathcal{O}(ν\\log(1/\\varepsilon))$ bound of Badenbroek and Dahl [Optim. Methods Softw., 37 (2022), pp. 1027--1064] and matching the best-known complexity order for interior-point methods. Numerical experiments on instances involving the operator perspective epigraph cone and the quantum relative entropy cone show that the method is competitive with QICS, a specialized solver for conic models arising in quantum information.",
+    "status": "found"
+  }
+}

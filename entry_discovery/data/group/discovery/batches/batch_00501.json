@@ -1,0 +1,421 @@
+{
+  "2608.09027": {
+    "arxiv_id": "2608.09027",
+    "title": "Local Asymptotics for Treatment Choice with Partial Identification",
+    "authors": [
+      "José Luis Montiel Olea",
+      "Chen Qiu",
+      "Jörg Stoye"
+    ],
+    "submission_date": "2026-08-10T02:28:27Z",
+    "latest_updated": "2026-08-13T02:34:42Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.09027v1",
+      "2608.09027v2"
+    ],
+    "abstract": "We provide a new asymptotic framework to derive approximately optimal treatment assignments when sampling noise from data is compounded by fundamental uncertainty due to partial identification. We recenter the reduced-form parameter around its \\emph{least-favorable} configuration and consider drifting parameter sequences that yield both diminishing levels of sampling uncertainty and of partial identification. We characterize the limiting decision problem as a normal location shift model with a suitable limiting identified set. We apply our results to treatment choice problems with contaminated outcomes, to robust welfare analyses with partially identified consumer surplus, and to the problem of aggregating experimental estimates for policy adoption.",
+    "status": "found"
+  },
+  "2608.09028": {
+    "arxiv_id": "2608.09028",
+    "title": "PolicyKG: An Agentic LLM Pipeline for Translating Institutional Policies into SHACL Knowledge Graphs",
+    "authors": [
+      "Ponkrit Kaewsawee",
+      "Chaklam Silpasuwanchai",
+      "Chutiporn Anutariya"
+    ],
+    "submission_date": "2026-08-10T02:28:57Z",
+    "latest_updated": "2026-08-10T02:28:57Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09028v1"
+    ],
+    "abstract": "Institutional policies stay in natural language while the systems that check compliance demand machine-readable constraints. Bridging that gap is still done by hand. PolicyKG closes the loop. It is an LLM pipeline that reads a policy PDF, classifies each sentence as an obligation, permission, or prohibition, lifts the label into first-order deontic logic, and emits SHACL constraints. Four stages run on a LangGraph state machine with per-stage validators. The piece that matters most is the Corpus Adapter: a YAML vocabulary registry that grounds LLM predicates in a target ontology. Retargeting to a new domain means swapping the registry, not retraining a model. On the Asian Institute of Technology Policies and Procedures corpus (1,663 sentences, 443 rules), PolicyKG reaches 86.9% deontic classification accuracy (Cohen's kappa = .709). Three annotators independently re-label a 50-item sample and agree at Fleiss' kappa = .844. SHACL shape correctness on a 69-shape subset is F1 = .866. The FOL path handles 79.2% of rules; the rest go through a direct NL-to-SHACL fallback. We audited every one of the 443 rules for second- or higher-order constructs. An automated regex checklist flagged none, and a first-author pass on the 92 FOL-fallback cases confirmed the same. The exact upper 95% Clopper-Pearson bound on the true HOL rate is 0.67%. This is an audit finding for one corpus, not a proof of FOL sufficiency for institutional policy. Swapping the AIT registry for a GDPR registry raises exact property alignment from 1/15 to 11/15 (Fisher's exact p < .001; Cohen's h = 1.53). On the LexDeMod lease-contract benchmark (N = 200), Macro F1 drops to .370 because lease English uses \"shall be entitled\" for permission -- exactly the vocabulary mismatch registry swap is meant to fix. Repeated runs produce hash-identical SHACL outputs.",
+    "status": "found"
+  },
+  "2608.09029": {
+    "arxiv_id": "2608.09029",
+    "title": "Physically Constrained Agentic AI for Energy Scheduling",
+    "authors": [
+      "Dafang Zhao",
+      "Yang Deng",
+      "Zhengmao Li",
+      "Zekun Guo",
+      "Ka Tai Lau",
+      "Samson Tai"
+    ],
+    "submission_date": "2026-08-10T02:28:58Z",
+    "latest_updated": "2026-10-22T12:39:34Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.09029v1",
+      "2608.09029v2"
+    ],
+    "abstract": "Agentic AI extends energy management beyond fixed-form interaction by translating natural-language requests into coordinated scheduling actions. We present a hierarchical ReAct Energy Management System (EMS) in which one orchestrator coordinates specialist agent types for shiftable appliances, EV charging, and thermal control. Physical authorization is separated from language generation: a deterministic critic reconstructs each integrated day-ahead candidate and checks its schema, appliance cycles, device power, thermal comfort, and, when active, the whole power feeder limit. Across Qwen 3.5 checkpoints, single-appliance mixed-integer schedules were feasible in 83.3 percent of runs. Localized feedback produced no accepted coupled schedule, whereas a multi-step policy authorized 6/6 current coupled runs: 3/3 for 27B and 3/3 for 35B-A3B. The standard occupied-window policy permits pre-conditioning, enforces comfort from 09:00-18:00. Every accepted schedule passed an independent final replay. Feasible costs were 2522.499 JPY for 27B and 1592.697 JPY for 35B-A3B, which are slightly higher than the mathematical optimization optimum of 1343.380 JPY. These results establish a fail-closed workflow for agentic MIP and MILP energy scheduling under the declared physical model.",
+    "status": "found"
+  },
+  "2608.09030": {
+    "arxiv_id": "2608.09030",
+    "title": "Closing the loop in learning with missing data",
+    "authors": [
+      "Dimitrios Pylorof",
+      "Humberto E. Garcia"
+    ],
+    "submission_date": "2026-08-10T02:30:37Z",
+    "latest_updated": "2026-08-10T02:30:37Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09030v1"
+    ],
+    "abstract": "What should a machine learning model learn when data is missing during training? We look at the learning process from a dynamical systems perspective, cast data missingness as a structured loss of actuation that limits controllability of the parameter error dynamics, and ultimately derive adaptation mechanisms with Lyapunov stability characteristics that throttle model updates in ways that preserve learning coherence under partial, intermittent observability. Under recurrent excitation, our analysis provides ISS-type residual-to-state bounds with respect to a bounded closed-loop mismatch between the loss residual and the preconditioned update geometry. We evaluate the efficacy of our directional observability-aware adaptive learning approach on multimodal contexts, reinforcing its premise in promoting learning coherence and stability even in pathologically sparse domains and problems.",
+    "status": "found"
+  },
+  "2608.09031": {
+    "arxiv_id": "2608.09031",
+    "title": "HOPPER: Learnable Hop Extraction for Linearized Graph Sequence Models",
+    "authors": [
+      "Isuru Herath",
+      "Arin Gopakumar",
+      "Sharan Sahu"
+    ],
+    "submission_date": "2026-08-10T02:31:46Z",
+    "latest_updated": "2026-09-28T17:47:30Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.09031v1",
+      "2608.09031v2"
+    ],
+    "abstract": "Graph neural networks typically propagate information through repeated message-passing layers, coupling propagation distance with the number of nonlinear transformations applied. This coupling can make deep architectures difficult to optimize and lead to over-smoothing, over-squashing, and loss of long-range information. Linearized Graph Sequence Models (LGSMs) address this issue by separating propagation depth from processing depth and representing successive propagation states of each node as a sequence. However, existing LGSMs construct these sequences using fixed graph operators, limiting their ability to adapt propagation to the input graph, node features, and downstream task. We introduce HOPPER, an end-to-end learnable extension of LGSM that learns how hop sequences should be extracted before processing by a modern state-space model. HOPPER supports feature-conditioned, structure-aware, graph and hop-adaptive propagation while preserving permutation equivariance, with standard adjacency-based and non-backtracking LGSM sequences arising as special cases of the extractor family. HOPPER is state-of-the-art or competitive across ECHO-Synth and performs strongly on City-Networks. On the LRIM physics-based long-range dependency benchmark, varying the maximum neighborhood size used for message-backtracking cancellation, corresponding to the structural memory window, substantially affects performance. Ablations further isolate the contributions of the learnable extraction mechanism and its structural and feature-adaptive components, showing that adaptive hop-sequence construction provides gains beyond the downstream sequence model alone. Together, these results demonstrate that learnable sequence extraction is a flexible and effective framework for long-range graph representation learning across synthetic, physics-based and real-world graph benchmarks.",
+    "status": "found"
+  },
+  "2608.09032": {
+    "arxiv_id": "2608.09032",
+    "title": "Speaker Role and Language Diarization for Analyzing Multilingual Interviews for Language Proficiency of Older Adults",
+    "authors": [
+      "Anfeng Xu",
+      "Tiantian Feng",
+      "Kevin Huang",
+      "Pranali Khobragade",
+      "Sudarsana Kadiri",
+      "Anushikha Dhankhar",
+      "Madeleine Snider",
+      "Sarah Gao",
+      "Miguel Arce Rentería",
+      "Jinkook Lee",
+      "Shrikanth Narayanan"
+    ],
+    "submission_date": "2026-08-10T02:32:36Z",
+    "latest_updated": "2026-08-10T02:32:36Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09032v1"
+    ],
+    "abstract": "Automatic language proficiency assessment in the context of multilingual interview-based settings remains underexplored. In this work, we develop Whisper-based speaker-role and language diarization systems to automatically extract respondent speech and characterize language usage in multilingual interviews with older adults. We further investigate whether diarization-derived conversational and language-use behaviors can support downstream language proficiency assessment. Results show that language-adapted Whisper models substantially improve language diarization performance for lower-resource and linguistically related Indian languages. Statistical analyses reveal that respondent speech ratio and intended language usage are strong predictors of proficiency ratings. Furthermore, simple diarization-derived behavioral features achieve performance comparable to Whisper-based speech embeddings for proficiency prediction, while combining both yields the best results. Importantly, both the speech and language use statistical analyses and language proficiency prediction performance remain largely preserved when using fully automatic diarization outputs, demonstrating the potential of respondent-centric conversational analysis for scalable language proficiency assessment.",
+    "status": "found"
+  },
+  "2608.09033": {
+    "arxiv_id": "2608.09033",
+    "title": "Forecasting in the Fog: Real-Time versus Revised-Data Evidence on Machine Learning's Edge over the Phillips Curve",
+    "authors": [
+      "Louis Agyekum",
+      "Obed Obese"
+    ],
+    "submission_date": "2026-08-10T02:33:16Z",
+    "latest_updated": "2026-08-10T02:33:16Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09033v1"
+    ],
+    "abstract": "ML inflation forecasts are almost universally trained on fully revised data, even though real-time forecasters never have such data, and reported feature importances are typically computed in-sample, conflating predictive relevance with retrospective fit. This paper asks whether the ML advantage over the Phillips curve documented in Agyekum (2026) survives when models are trained and evaluated on real-time (ALFRED) vintages rather than revised series, and whether SHAP feature-importance rankings are an artifact of in-sample estimation. Using 2000-2026 U.S. data on unemployment, CPI and PCE inflation, payrolls, real GDP, and the 10-year-2-year Treasury spread, vintage-consistent panels are built for four traditional models (random walk, AR(1), Phillips curve, ADL-OLS) and four ML models (Random Forest, Gradient Boosting, Elastic Net, SVR), re-estimated recursively at 3-, 6-, and 12-month horizons (208, 206, 204 forecasts). Real-time/revised accuracy differences are small and, apart from one exception at 6 months (Gradient Boosting vs. Phillips curve, DM = -1.671, p = 0.097), indistinguishable under Diebold-Mariano tests; Gradient Boosting alone shows consistent positive skill at longer horizons. The random walk remains a strong short-horizon benchmark, consistent with the puzzle in Agyekum et al. (2026) for exchange rates. Using walk-forward, out-of-sample SHAP, a Random Forest on revised data assigns dominant importance to PCE inflation (mean |SHAP| = 0.778, rank 1 of 9), while on real-time data it assigns PCE negligible importance (0.039, rank 6), relying instead on current CPI (0.834 vs. 0.223). This twenty-fold swing, larger than the in-sample estimate, is invisible to point-forecast metrics and shows the model's PCE reliance is substantially a hindsight artifact. An RSI summarizes the accuracy gap by model and horizon, with implications for auditing ML inflation forecasts.",
+    "status": "found"
+  },
+  "2608.09034": {
+    "arxiv_id": "2608.09034",
+    "title": "Optimal Stability Bounds, Minimizers, and Critical Points for a Critical Nonlocal Sobolev Inequality on the Heisenberg Group",
+    "authors": [
+      "Wenjing Chen",
+      "Zexi Wang"
+    ],
+    "submission_date": "2026-08-10T02:36:40Z",
+    "latest_updated": "2026-09-14T12:28:35Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.09034v1",
+      "2608.09034v2"
+    ],
+    "abstract": "We investigate the optimal Bianchi-Egnell-type quantitative stability constant for the critical nonlocal Sobolev inequality on the Heisenberg group $\\mathbb{H}^{n}$, \\begin{equation}\\label{nS} S_{HL}(Q,μ)\\left(\\int_{\\mathbb{H}^{n}}\\int_{\\mathbb{H}^{n}} \\frac{|u(ξ)|^{Q^{\\ast}_μ}|u(η)|^{Q^{\\ast}_μ}} {|η^{-1}ξ|^μ}\\,dξdη\\right)^{\\frac{1}{Q^{\\ast}_μ}} \\leq \\int_{\\mathbb{H}^{n}}|\\nabla_{\\mathbb{H}}u|^{2}dξ, \\qquad u\\in S^{1,2}(\\mathbb{H}^{n}), \\end{equation} where $Q=2n+2$, $n\\geq1$, $0<μ<Q$, and $Q^{\\ast}_μ=(2Q-μ)/(Q-2)$. Let $\\mathfrak{M}$ denote the manifold of Jerison-Lee bubbles, and let $H_{NS}$ be the infimum of the quotient between the deficit in \\eqref{nS} and $\\mathrm{dist}(u,\\mathfrak{M})^{2}$. The central issue is that the Euclidean nonlocal problem and the local Folland-Stein-Sobolev problem each possess their own spectral and compactness structures, whereas the present problem couples the HLS interaction with the noncommutative conformal geometry of $\\mathbb{H}^{n}$. Under the stated conditions on $(n,μ)$, these strict thresholds, together with a Heisenberg-group profile decomposition and a nonlocal Br{e}zis-Lieb splitting, imply that $H_{NS}$ is attained. The minimizer then yields the strict comparison $H_{NS}>H_{BE}$ with the optimal stability constant for the local Folland-Stein-Sobolev inequality. We further prove that the sharp universal upper constant for the deficit-to-distance comparison is $1$ and characterize equality. Finally, for the associated Euler-Lagrange equation, we formulate the corresponding residual quotient and derive a strict single-bubble upper bound; this critical-point statement requires a separate expansion and does not follow from attainment of $H_{NS}$.",
+    "status": "found"
+  },
+  "2608.09035": {
+    "arxiv_id": "2608.09035",
+    "title": "MusicLayout: Explicit Structural Planning for Controllable Text-to-Music Generation",
+    "authors": [
+      "Shuyu Li",
+      "Kejun Zhang",
+      "Jiahe Lei",
+      "Shulei Ji",
+      "Zihao Wang",
+      "Jiaxing Yu",
+      "Wanying Wu",
+      "Lei Wang"
+    ],
+    "submission_date": "2026-08-10T02:38:42Z",
+    "latest_updated": "2026-08-14T13:26:32Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.09035v1",
+      "2608.09035v2"
+    ],
+    "abstract": "Text-to-music generation has advanced rapidly, but current systems still rely primarily on global text prompts, leaving the structural organization of generated music implicit and difficult to inspect, control, or revise before audio generation. To address this issue, we introduce MusicLayout, an explicit intermediate representation for controlling musical structure in text-to-music generation. MusicLayout describes a musical piece as a time-aligned layout of sections, textures, repetitions, variations, and instrument-level arrangements, serving as an interpretable planning layer between textual intent and the generated music. We integrate MusicLayout into a text-to-music framework built on a unified autoregressive formulation, where the model first generates a MusicLayout representation and subsequently predicts audio tokens conditioned on this representation within a single sequence. The resulting MusicLayout can be inspected and modified prior to audio generation, providing a mechanism for layout-level structural control. We evaluate MusicLayout through layout-conditioned generation, layout manipulation experiments, and matched-data ablations, providing evidence that explicit layout planning can improve long-range structural organization and support layout-level control. We have released the implementation as open source on GitHub at https://github.com/XaryLee/MusicLayout.",
+    "status": "found"
+  },
+  "2608.09036": {
+    "arxiv_id": "2608.09036",
+    "title": "Decision-Focused Learning in Network Interdiction Games",
+    "authors": [
+      "Luca M. Hartmann",
+      "Parinaz Naghizadeh"
+    ],
+    "submission_date": "2026-08-10T02:39:03Z",
+    "latest_updated": "2026-08-10T02:39:03Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09036v1"
+    ],
+    "abstract": "We study decision-focused learning (DFL) in shortest-path network interdiction (SPNI) games, a Stackelberg game where an interdictor (leader) strengthens the networks' arcs against attacks, while an evader (follower) who is uncertain about costs of attacking network arcs relies on a machine-learned predictor to identify the shortest path. While DFL is highly effective as an end-to-end optimization framework, we show that it faces a fundamental structural failure when employed in this game setting: its training objective admits a broad decision-equivalence class of cost estimators that achieve zero nominal loss yet fail under interdiction, reversing DFL's usual advantage over a naive prediction-focused learning (PFL) approach. To address this, we propose Adversarial DFL (A-DFL), which replaces nominal training samples with interdicted scenarios to collapse the harmful equivalence class. Experiments on synthetic and real-world networks confirm that A-DFL restores DFL's advantage in this game setting, enabling effective end-to-end optimization.",
+    "status": "found"
+  },
+  "2608.09037": {
+    "arxiv_id": "2608.09037",
+    "title": "Population-inversion map of the mesospheric sodium ladder: continuous-wave and pulsed pumping schemes for directed emission",
+    "authors": [
+      "Yucheng Yang",
+      "Chunyang Lei",
+      "Kai Guo",
+      "Chi Peng",
+      "Zongpeng Pan"
+    ],
+    "submission_date": "2026-08-10T02:39:15Z",
+    "latest_updated": "2026-08-26T02:52:12Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.09037v1",
+      "2608.09037v2"
+    ],
+    "abstract": "Directed mirrorless lasing from the mesospheric sodium layer has been proposed as a way to overcome the isotropy of laser guide star fluorescence, with demonstrated cell-scale analogues and a demonstrated stand-off magnetometry application. Several transition paths on the Na ladder compete for the same pump photons. We build a ten-level rate-equation model of the ladder from NIST transition probabilities and evaluate every electric-dipole line under four continuous-wave pumping schemes, both in a Doppler-averaged treatment and in a velocity-selective treatment appropriate for the collision-poor mesosphere. Three design-relevant results emerge. At practically accessible continuous-wave irradiances the column-gain exponents remain far below unity, consistent with published feasibility estimates; the value of the classification is to identify which lines, schemes, and pulse formats merit further study.",
+    "status": "found"
+  },
+  "2608.09038": {
+    "arxiv_id": "2608.09038",
+    "title": "Emergent Behavior Is Robust to Communication Delays at the Cost of Slower System Evolution",
+    "authors": [
+      "Seokho Jeong",
+      "Jin Gyu Lee",
+      "Hyungbo Shim"
+    ],
+    "submission_date": "2026-08-10T02:42:50Z",
+    "latest_updated": "2026-08-10T02:42:50Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09038v1"
+    ],
+    "abstract": "Previous works have shown that strong coupling among heterogeneous agents enforces practical synchronization, leading to collective behavior governed by emergent dynamics. However, it remains an open question whether emergent behavior persists in the presence of communication delays, as high-gain methods are typically sensitive to delays. To address this problem, we instead slow down the agent dynamics, reproducing the synchronization mechanism of strong coupling on a slow time scale. As a result, the emergence of collective behavior is guaranteed despite arbitrary constant communication delays. This, however, comes at a cost: delays induce a derivative-like term, thereby scaling down the vector field of the emergent dynamics. The amount of the scaling is explicitly characterized as a function of the coupling weights and the delay lengths. We further suggest that this delay-induced slowdown, which is of independent interest, may be a general feature of diffusive coupling under suitable assumptions.",
+    "status": "found"
+  },
+  "2608.09039": {
+    "arxiv_id": "2608.09039",
+    "title": "Anharmonic dephasing in the electron-phonon interaction",
+    "authors": [
+      "Mingran Kong",
+      "Bartomeu Monserrat"
+    ],
+    "submission_date": "2026-08-10T02:43:19Z",
+    "latest_updated": "2026-08-10T02:43:19Z",
+    "revised_dates": null,
+    "venue": "Phys. Rev. B 114, 084303 (2026)",
+    "latest_version": 1,
+    "versions": [
+      "2608.09039v1"
+    ],
+    "abstract": "Electron-phonon coupling has been a central topic in condensed matter physics for decades, and firstprinciples methods have demonstrated remarkable success in quantitatively capturing its role in a wide variety of physical phenomena and materials. Conventional calculations of electron-phonon coupling typically assume that phonons have infinite lifetimes, but phonons can exhibit finite lifetimes due to anharmonic phonon-phonon interactions. In this work, we derive an expression for the electron-phonon coupling scattering rates including the effects of anharmonic three-phonon interactions, which lead to phonon dephasing and finite phonon lifetimes. We also describe a first-principles implementation of this anharmonic electron-phonon coupling which can be seamlessly integrated within existing workflows for the evaluation of electron-phonon and phonon-phonon coupling interactions. Finally, we present calculations of electron-phonon scattering rates including phonon dephasing in a range of materials, and discuss the different microscopic mechanisms by which anharmonic phonons influence electron-phonon coupling. This study establishes the importance of finite phonon lifetimes in the evaluation of electron-phonon coupling, and provides a platform to explore these effects in a wide range of materials and phenomena.",
+    "status": "found"
+  },
+  "2608.09040": {
+    "arxiv_id": "2608.09040",
+    "title": "Universally optimal (wiretap) codes",
+    "authors": [
+      "Madhura Pathegama",
+      "Alexander Barg"
+    ],
+    "submission_date": "2026-08-10T02:45:25Z",
+    "latest_updated": "2026-08-10T02:45:25Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09040v1"
+    ],
+    "abstract": "Universally optimal (UO) codes were introduced by H. Cohn and A. Kumar in 2007 and later extended to the discrete setting by Cohn and Y. Zhao. They minimize the ``energy'' among all codes of the same size for a certain class of potential functions. So far only a small number of specific functionals have been linked to information theory problems. We add one more, showing that UO codes optimize $α$-mutual information for $α=2$ in the context of wiretap channels with a noiseless main channel. This implies that UO codes are optimal for transmission over this type of wiretap channels.",
+    "status": "found"
+  },
+  "2608.09041": {
+    "arxiv_id": "2608.09041",
+    "title": "Wrinkling in Selected Polymer Thin Films Induced by Combined Ion Beam and Humidity Exposure",
+    "authors": [
+      "Alessia Danagoulian",
+      "Benli Jiang",
+      "Nicholas Russo",
+      "Colette Abadie",
+      "Jalal Karimzadeh Khoei",
+      "Grace Pettis",
+      "Jocelyn Zhang",
+      "Neil Baker",
+      "Eda Güney",
+      "Omid Moradi",
+      "Wei-Jing Chen",
+      "Jiaqi Tang",
+      "Robert Sims",
+      "Kevin E. Smith",
+      "Gozde Ozaydin Ince",
+      "Karl F. Ludwig"
+    ],
+    "submission_date": "2026-08-10T02:45:53Z",
+    "latest_updated": "2026-08-10T02:45:53Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09041v1"
+    ],
+    "abstract": "This study investigates ion beam sputtering (IBS)-induced surface wrinkling phenomena in three polymers with varying hydrophilicity: poly-hydroxy-ethyl-methacrylate (pHEMA), poly-4-vinyl pyridine (p4VP), and poly-2,4,6,8-tetramethyl-2,4,6,8-tetravinylcyclotetrasiloxane (pV4D4). It is observed that pHEMA and p4VP films wrinkle only when exposed to ion bombardment and subsequent water vapor exposure. No wrinkling is observed in pV4D4 under these same conditions. X-ray photoelectron spectroscopy (XPS) and Fourier transform infrared spectroscopy (FTIR) are performed before IBS, after IBS, and after exposure to humidity. XPS shows that IBS drives chemical changes within the surface layer, creating a graphitized film at the surface. For the polymer films that exhibit wrinkling (pHEMA and p4VP), XPS and FTIR indicate water absorption in both the surface and the bulk of the films, resulting in swelling. We conjecture that the formation of wrinkles arises from this swelling being mechanically constrained by the rigid underlying silicon substrate and the stiff graphitized surface layer. In contrast, the absence of wrinkle formation in pV4D4 under the same experimental conditions can be attributed to its comparatively low water absorption and the correspondingly limited swelling response.",
+    "status": "found"
+  },
+  "2608.09042": {
+    "arxiv_id": "2608.09042",
+    "title": "DualCert: A Solver for the Traveling Salesman Problem with Constraint-Coupled Learning",
+    "authors": [
+      "Yancheng Song",
+      "Yongzhi Qi",
+      "Wei Qi",
+      "Zuo-Jun Max Shen"
+    ],
+    "submission_date": "2026-08-10T02:48:16Z",
+    "latest_updated": "2026-08-10T02:48:16Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09042v1"
+    ],
+    "abstract": "Large traveling salesman problem (TSP) instances require a solver to allocate limited computation while preserving the validity of its outputs. Existing neural--operations-research (OR) hybrids predict guidance without requiring learned transitions to satisfy constraints discovered during search. DualCert introduces \\emph{constraint-coupled learning}, in which current degree equations and dynamically separated subtour-elimination constraints (SECs) define each learned transition. At each refinement, the degree equations and selected, strictly satisfied SEC equations, with positive slacks, define an iterate-dependent primal-slack Karush--Kuhn--Tucker (KKT) manifold. Repaired dual variables and violated SEC rows define a local cost field. An exact constrained mirror-descent step maps each finite state to a positive state on the same manifold. Where selected rows and deterministic ties remain fixed, implicit differentiation maps parameter perturbations into the manifold tangent space and reuses the forward constraint operator for the local-cost-field derivative. The terminal edge state allocates computation across Held--Karp ascent, candidate-graph edge tests, and tour construction under a fixed budget. Deterministic verification recomputes original costs and accepts only verified candidate-graph lower bounds and edge decisions. On 1,000 held-out TSP1000 instances, DualCert attains a mean tour-cost gap of \\(0.0573\\%\\) from Lin--Kernighan--Helsgaun version 3 (LKH-3) reference tours in \\(9.55\\) batch-amortized seconds per instance. It returns a verified candidate-graph lower bound for every instance and achieves \\(81.46\\%\\) edge-decision coverage. The mean gap is \\(67.1\\%\\) smaller than the reported NeuroLKH mean gap. Thus, optimization constraints govern learning, while deterministic verification preserves output validity.",
+    "status": "found"
+  },
+  "2608.09043": {
+    "arxiv_id": "2608.09043",
+    "title": "Don't Scroll Back: Missing-Evidence Memory for Streaming Dialogue Summarization",
+    "authors": [
+      "Hyangsuk Min",
+      "Hwanjun Song"
+    ],
+    "submission_date": "2026-08-10T02:48:37Z",
+    "latest_updated": "2026-08-10T02:48:37Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09043v1"
+    ],
+    "abstract": "Users of modern platforms repeatedly need summaries of recent dialogue, but the window rarely contains enough context to be interpreted on its own. We formalize this setting as streaming dialogue summarization, where a system must summarize a current window using selective memory from an unbounded history under a fixed budget. We show that the central challenge is not how much history is accessed, but whether memory recovers the evidence that the current window presupposes. We construct a benchmark and evaluation protocol that separately assesses whether memory contains gap-resolving evidence and whether the generated summary reflects it. We propose ReMEMBER, a missing-evidence memory framework that conditions retrieval on unresolved window dependencies and refines retrieved chunks into evidence-dense memory under a fixed budget. Experiments on dialogues with histories up to 160K tokens show that ReMEMBER improves memory recall and gap-resolution completeness over memory construction baselines under the same budget.",
+    "status": "found"
+  },
+  "2608.09044": {
+    "arxiv_id": "2608.09044",
+    "title": "Tree-of-Experience: Hierarchical Experience Management for Self-Evolving Agents",
+    "authors": [
+      "Zihao Deng",
+      "Yining Zhu",
+      "Leiming Wang",
+      "Junbo Wang",
+      "Jingfei Lu"
+    ],
+    "submission_date": "2026-08-10T02:49:38Z",
+    "latest_updated": "2026-08-21T09:01:00Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.09044v1",
+      "2608.09044v2"
+    ],
+    "abstract": "Continual self-evolution requires LLM agents to transform environmental interactions into reliable and reusable experience. Existing methods typically refine individual trajectories or abstract shared knowledge from related trajectories, but their experience representations are often disconnected from the underlying reasoning process. This limits feedback attribution, cross-task transfer, and update and retrieval efficiency, particularly in complex reasoning tasks with outcome-level feedback. To overcome this limitation, we propose \\textbf{T}ree-\\textbf{o}f-\\textbf{E}xperience (ToE), a structured experience-management framework that aligns experience organization with the hierarchical reasoning process of LLM agents. Specifically, ToE organizes the experience into a shared tree of analytical perspectives and reasoning paths, whose reliability is calibrated through environmental outcomes to support systematic updating, transfer, and efficient retrieval. The experimental results on \\textsc{Game of 24} and \\textsc{FinEvolveBench} show that ToE substantially improves both problem-solving performance and efficiency. On \\textsc{Game of 24}, ToE achieves a 31.4\\% relative improvement in accuracy over the experience-free ToT baseline. On \\textsc{FinEvolveBench}, ToE improves tsIC by an average of 41.24\\% over the experience-free pipeline across 12 evaluation settings, whereas conventional experience-management methods often underperform experience-free baselines.",
+    "status": "found"
+  },
+  "2608.09045": {
+    "arxiv_id": "2608.09045",
+    "title": "Bridging the Gap Between Semantics and Reconstruction:Unifying Sign Language Translation and Production",
+    "authors": [
+      "Xiao Liu",
+      "Shiwei Gan",
+      "Yafeng Yin",
+      "Jiaxin Yin",
+      "Bowen Guo",
+      "Yaqi Sun",
+      "Zhiwei Jiang",
+      "Lei Xie"
+    ],
+    "submission_date": "2026-08-10T02:50:07Z",
+    "latest_updated": "2026-08-10T02:50:07Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09045v1"
+    ],
+    "abstract": "Recent advances in sign language (SL) research have shown a trend toward unifying multiple sign language understanding (SLU) subtasks, such as isolated sign language recognition (ISLR), continuous sign language recognition (CSLR), and sign language translation (SLT), within a single framework, leading to substantial progress. Meanwhile, sign language production (SLP), which generates sign sequences from text, has also attracted growing attention. This naturally raises an important question: can sign language understanding and production be unified within a single framework? Compared with unifying SLU subtasks, this problem is substantially more challenging. Existing SLU tasks largely share the same direction of mapping, namely from sign inputs to linguistic outputs, whereas SLT and SLP lie in opposite directions of sign-text mapping. A unified framework must therefore address two key challenges: (1) bridging the modality gap between continuous sign motions and discrete text tokens through a shared sign tokenizer that supports both linguistic abstraction and motion reconstruction; and (2) learning a single conditional autoregressive model that can take either sign or text as input and generate the corresponding target sequence in the opposite modality. To this end, we propose Uni-SLTP, a unified framework for SLT and SLP with two key components: (1) a shared sign tokenizer that converts sign sequences into discrete tokens and latent representations, capturing both semantic and reconstructive information; and (2) a unified autoregressive generation model that formulates both tasks as conditional sequence generation. Experiments on widely used public datasets show that Uni-SLTP achieves superior motion accuracy for SLP while maintaining competitive SLT performance.",
+    "status": "found"
+  },
+  "2608.09046": {
+    "arxiv_id": "2608.09046",
+    "title": "Measuring the Tokenization Premium: A Cost Audit for Underserved Language Communities",
+    "authors": [
+      "Avijit Roy",
+      "Proma Roy",
+      "Hrishitva Patel"
+    ],
+    "submission_date": "2026-08-10T02:51:04Z",
+    "latest_updated": "2026-08-10T02:51:04Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09046v1"
+    ],
+    "abstract": "Large language models are increasingly deployed as general-purpose educational and technical assistance systems, but their underlying infrastructure does not treat languages equally. One underexamined source of disparity is tokenization: semantically equivalent content can require substantially different token counts across languages, affecting API cost, latency, and usable context length before a model is invoked. We introduce the Tokenization Equity Audit (TEA), a reproducible benchmark for measuring tokenization premiums in technical tutoring content. TEA evaluates three widely used tokenizers, GPT-4o's o200k base, Qwen2.5-7B, and Mistral-7B, on a 120-item Python debugging corpus translated from English into Bengali, Hindi, Arabic, Tamil, and Yoruba. Bengali and Hindi serve as the primary validated cases, while the remaining languages provide exploratory cross-script and cross-family comparisons. Across this corpus, Bengali requires (1.56\\times) as many GPT-4o tokens as English, reducing a nominal 128k-token context window to an effective 82k-token English-equivalent capacity for the same semantic content. With the Qwen2.5 and Mistral tokenizers, Bengali requires up to (4.5\\times) the English token count. Yoruba, despite using the Latin script, exhibits the highest GPT-4o tokenization premium at (2.37\\times), indicating that tokenization inequity cannot be explained by script family alone. These results demonstrate that tokenization can create measurable economic and functional barriers, highlighting the need to treat tokenization as an equity-relevant infrastructure layer for underserved language communities, particularly where educational systems depend on low-cost or offline-capable AI tools.",
+    "status": "found"
+  }
+}

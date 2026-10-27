@@ -1,0 +1,400 @@
+{
+  "2511.16449": {
+    "arxiv_id": "2511.16449",
+    "title": "Bridging the Semantic-Action Gap in Visual Token Pruning for Efficient VLA Inference",
+    "authors": [
+      "Ziyan Liu",
+      "Yeqiu Chen",
+      "Hongyi Cai",
+      "Tao Lin",
+      "Shuo Yang",
+      "Zheng Liu",
+      "Bo Zhao"
+    ],
+    "submission_date": "2025-11-20T15:16:09Z",
+    "latest_updated": "2026-05-26T14:15:17Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 5,
+    "versions": [
+      "2511.16449v1",
+      "2511.16449v2",
+      "2511.16449v3",
+      "2511.16449v4",
+      "2511.16449v5"
+    ],
+    "abstract": "Vision-Language-Action (VLA) models have shown great potential for embodied AI by integrating visual perception, language understanding, and action execution. In real-time deployment, these models must process continuous visual streams, incurring substantial computational overhead. Visual token pruning -- a mainstream technique for accelerating Vision-Language Models (VLMs) by retaining salient tokens while discarding redundant ones -- offers a natural candidate solution to this challenge. However, directly applying VLM-oriented pruning methods to VLA inference can cause severe degradation in manipulation performance. Our analysis attributes this degradation to a key mismatch: VLA inference exhibits distinct attention patterns between the vision-language prefill stage and the action-decode stage, so pruning based only on context-prefill semantic salience is biased toward semantic cues and may remove action-critical visual tokens. Motivated by this observation, we propose VLA-Pruner, an effective plug-and-play token pruning method grounded in the visual requirements of VLA inference, further exploiting the temporal continuity of robot manipulation. Specifically, VLA-Pruner estimates visual-token importance from both semantic prefilling and temporally smoothed action relevance, and then applies a Combine-then-Filter strategy to retain compact, non-redundant tokens under the compute budget. Experiments show that VLA-Pruner outperforms state-of-the-art approaches across multiple VLA architectures, achieving up to 1.99x speedup with comparable manipulation quality.",
+    "status": "found"
+  },
+  "2511.16450": {
+    "arxiv_id": "2511.16450",
+    "title": "Optimizing Federated Learning in the Era of LLMs: Message Quantization and Streaming",
+    "authors": [
+      "Ziyue Xu",
+      "Zhihong Zhang",
+      "Holger R. Roth",
+      "Chester Chen",
+      "Yan Cheng",
+      "Andrew Feng"
+    ],
+    "submission_date": "2025-11-20T15:16:19Z",
+    "latest_updated": "2025-11-20T15:16:19Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.16450v1"
+    ],
+    "abstract": "Federated Learning (FL) offers a promising solution for training machine learning models across distributed data sources while preserving data privacy. However, FL faces critical challenges related to communication overhead and local resource constraints, especially in the era of Large Language Models (LLMs) with billions of parameters. The sheer size of these models exacerbates both memory and communication constraints, making efficient transmission and processing essential for practical deployment. NVIDIA FLARE, an open-source SDK for federated learning, addresses these challenges by introducing advanced communication capabilities. Building upon existing solutions for large object streaming, we enhance FL workflows for LLMs through two key techniques: message quantization and container/file streaming. Quantization reduces message size, while streaming enables efficient memory management, improving scalability and integration with existing workflows. These advancements significantly enhance the robustness and efficiency of FL with LLMs, ensuring better performance in real-world federated learning scenarios.",
+    "status": "found"
+  },
+  "2511.16451": {
+    "arxiv_id": "2511.16451",
+    "title": "The SABRE South Experiment at the Stawell Underground Physics Laboratory",
+    "authors": [
+      "L. J. Milligan"
+    ],
+    "submission_date": "2025-11-20T15:16:49Z",
+    "latest_updated": "2025-11-20T15:16:49Z",
+    "revised_dates": null,
+    "venue": "PoS ICHEP2024 (2025) 762",
+    "latest_version": 1,
+    "versions": [
+      "2511.16451v1"
+    ],
+    "abstract": "SABRE aims to provide a test of the signal observed by DAMA/LIBRA through two separate detectors that rely on joint ultra-high NaI(Tl) purity crystal R&D activities: SABRE South at SUPL Australia and SABRE North at LNGS Italy. SABRE South is designed to disentangle seasonal and site-related effects from the dark matter-like modulated signal. Ultra-high purity crystals are immersed in a liquid scintillator veto, further surrounded by passive shielding and a plastic scintillator muon veto. Significant work has been undertaken to assess and mitigate background from the detector materials, and to understand the performance of both the crystal and veto systems. SUPL is a newly built facility located 1024 m underground in Australia. SABRE South is currently being assembled and will be completed in 2025, with first subsystems already installed in SUPL. This proceedings will report on the general status of the SABRE South assembly, its expected performance, and the design of SUPL.",
+    "status": "found"
+  },
+  "2511.16452": {
+    "arxiv_id": "2511.16452",
+    "title": "Primes in arithmetic progressions under the presence of Landau-Siegel zeroes",
+    "authors": [
+      "Stelios Sachpazis"
+    ],
+    "submission_date": "2025-11-20T15:16:52Z",
+    "latest_updated": "2026-09-19T10:09:28Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.16452v1",
+      "2511.16452v2"
+    ],
+    "abstract": "Let $x\\geqslant 2$ and assume that $a$ and $q$ are coprime positive integers. As usual, $ψ(x;q,a):=\\sum_{n\\leqslant x,n\\equiv a(\\!\\!\\!\\mod{\\!\\!q})}Λ(n)$, where $Λ$ is the von Mangoldt function. In 2003, Friedlander and Iwaniec assumed the existence of exceptional characters corresponding to \"extreme\" Landau-Siegel zeroes and established a meaningful asymptotic formula for $ψ(x;q,a)$ beyond the square-root barrier of the Generalized Riemann Hypothesis. In particular, their asymptotic yields non-trivial information for moduli $q\\leqslant x^{1/2+1/231}$. In this paper, we considerably relax the extremity of the Landau-Siegel zero required in the work of Friedlander and Iwaniec and obtain a conditional asymptotic formula for $ψ(x;q,a)$ in a slightly wider range of $q$.",
+    "status": "found"
+  },
+  "2511.16453": {
+    "arxiv_id": "2511.16453",
+    "title": "Cognitive biases shape the evolution of zero-sum norms",
+    "authors": [
+      "Isaak Mengesha",
+      "Meiqi Sun",
+      "Debraj Roy"
+    ],
+    "submission_date": "2025-11-20T15:21:17Z",
+    "latest_updated": "2026-01-06T11:56:32Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.16453v1",
+      "2511.16453v2"
+    ],
+    "abstract": "Why do maladaptive perceptions and norms, such as zero-sum interpretations of interaction, persist even when they undermine cooperation and investment? We develop a framework where bounded rationality and heterogeneous cognitive biases shape the evolutionary dynamics of norm coordination. Extending evolutionary game theory with quantal response equilibria and prospect-theoretic utility, we show that subjective evaluation of payoffs systematically alters population-level equilibrium selection, generating stable but inefficient attractors. Counterintuitively, our analysis demonstrates that the benefit of rationality and the cost of risk aversion on welfare behave in nonmonotone ways: intermediate precision enhances coordination, while excessive precision or strong loss aversion leads to persistent lock-in at low-payoff and zero-sum equilibria. These dynamics produce an endogenous equity-efficiency trade-off: parameter configurations that raise aggregate welfare also increase inequality, while more equal distributions are associated with lower efficiency. The results highlight how distorted payoff perceptions can anchor societies in divergent institutional trajectories, offering a behavioral-evolutionary explanation for persistent zero-sum norms and inequality.",
+    "status": "found"
+  },
+  "2511.16454": {
+    "arxiv_id": "2511.16454",
+    "title": "LLaVA$^3$: Representing 3D Scenes like a Cubist Painter to Boost 3D Scene Understanding of VLMs",
+    "authors": [
+      "Doriand Petit",
+      "Steve Bourgeois",
+      "Vincent Gay-Bellile",
+      "Florian Chabot",
+      "Loïc Barthe"
+    ],
+    "submission_date": "2025-11-20T15:22:22Z",
+    "latest_updated": "2025-11-20T15:22:22Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.16454v1"
+    ],
+    "abstract": "Developing a multi-modal language model capable of understanding 3D scenes remains challenging due to the limited availability of 3D training data, in contrast to the abundance of 2D datasets used for vision-language models (VLM). As an alternative, we introduce LLaVA$^3$ (pronounced LLaVA-Cube), a novel method that improves the 3D scene understanding capabilities of VLM using only multi-view 2D images and without any fine-tuning. Inspired by Cubist painters, who represented multiple viewpoints of a 3D object within a single picture, we propose to describe the 3D scene for the VLM through omnidirectional visual representations of each object. These representations are derived from an intermediate multi-view 3D reconstruction of the scene. Extensive experiments on 3D VQA and 3D language grounding show that our approach outperforms previous 2D-based VLM solutions.",
+    "status": "found"
+  },
+  "2511.16455": {
+    "arxiv_id": "2511.16455",
+    "title": "[Experiment, Analysis, and Benchmark] Systematic Evaluation of Plan-based Adaptive Query Processing",
+    "authors": [
+      "Pei Mu",
+      "Anderson Chaves Carniel",
+      "Antonio Barbalace",
+      "Amir Shaikhha"
+    ],
+    "submission_date": "2025-11-20T15:22:53Z",
+    "latest_updated": "2025-11-20T15:22:53Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.16455v1"
+    ],
+    "abstract": "Unreliable cardinality estimation remains a critical performance bottleneck in database management systems (DBMSs). Adaptive Query Processing (AQP) strategies address this limitation by providing a more robust query execution mechanism. Specifically, plan-based AQP achieves this by incrementally refining cardinality using feedback from the execution of sub-plans. However, the actual reason behind the improvements of plan-based AQP, especially across different storage architectures (on-disk vs. in-memory DBMSs), remains unexplored. This paper presents the first comprehensive analysis of state-of-the-art plan-based AQP. We implement and evaluate this strategy on both on-disk and in-memory DBMSs across two benchmarks. Our key findings reveal that while plan-based AQP provides overall speedups in both environments, the sources of improvement differ significantly. In the on-disk DBMS, PostgreSQL, performance gains primarily come from the query plan reorderings, but not the cardinality updating mechanism; in fact, updating cardinalities introduces measurable overhead. Conversely, in the in-memory DBMS, DuckDB, cardinality refinement drives significant performance improvements for most queries. We also observe significant performance benefits of the plan-based AQP compared to a state-of-the-art related-based AQP method. These observations provide crucial insights for researchers on when and why plan-based AQP is effective, and ultimately guide database system developers on the tradeoffs between the implementation effort and performance improvements.",
+    "status": "found"
+  },
+  "2511.16456": {
+    "arxiv_id": "2511.16456",
+    "title": "Entropy Transfer Throughout the Structure of PDZ-2 and TIM-Barrel Proteins. A Dynamic Gaussian Network Model Study",
+    "authors": [
+      "German Mino Galaz",
+      "Javier Patino Baez",
+      "Nicolas Mino Berdu",
+      "Jose Gonzalez Suarez"
+    ],
+    "submission_date": "2025-11-20T15:23:41Z",
+    "latest_updated": "2025-11-20T15:23:41Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.16456v1"
+    ],
+    "abstract": "This research reports the entropy transfer throughout the tridimensional structure of PDZ-2 and TIM barrel structures using the dynamic Gaussian Network Model. The model predicts the allocation of the allosteric pathways of the PDZ-2. Moreover. A visualization analysis reveals that entropy and information is transported towards the effector site in PDZ-2 and near to the catalytic site of the TIM-Barrel protein. The results suggest the presence of a functional hierarchy that determine information and entropy flow directionality.",
+    "status": "found"
+  },
+  "2511.16457": {
+    "arxiv_id": "2511.16457",
+    "title": "Distinguishing thermal versus quantum annealing using probability-flux signatures across interaction networks",
+    "authors": [
+      "Yoshiaki Horiike",
+      "Yuki Kawaguchi"
+    ],
+    "submission_date": "2025-11-20T15:23:53Z",
+    "latest_updated": "2025-12-04T14:54:36Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.16457v1",
+      "2511.16457v2"
+    ],
+    "abstract": "Simulated annealing provides a heuristic solution to combinatorial optimization problems. The cost function of a problem is mapped onto the energy function of a physical many-body system, and, by using thermal or quantum fluctuations, the system explores the state space to find the ground state, which corresponds to the optimal solution of the problem. Studies have highlighted both the similarities and differences between thermal and quantum fluctuations. Nevertheless, fundamental understanding of thermal and quantum annealing remains incomplete, making it unclear how quantum annealing outperforms thermal annealing in which problem instances. Here, we investigate the many-body dynamics of thermal and quantum annealing by examining all possible interaction networks of $\\pm J$ Ising spin systems up to seven spins. Our comprehensive investigation reveals that differences between thermal and quantum annealing emerge for particular interaction networks, indicating that the structure of the energy landscape distinguishes the two dynamics. We identify the microscopic origin of these differences through probability fluxes in state space, finding that the two dynamics are broadly similar, but that quantum tunnelling produces qualitative differences. Our results provide insight into how thermal and quantum fluctuations navigate a system toward the ground state in simulated annealing, and are experimentally verifiable in atomic, molecular, and optical systems. Furthermore, these insights may improve mappings of optimization problems to Ising spin systems, yielding more accurate solutions in faster simulated annealing and thus benefiting real-world applications in industry. Our comprehensive survey of interaction networks and visualization of probability flux can help to understand, predict, and control quantum advantage in quantum annealing.",
+    "status": "found"
+  },
+  "2511.16458": {
+    "arxiv_id": "2511.16458",
+    "title": "A convex approach for Markov chain estimation from aggregate data via inverse optimal transport",
+    "authors": [
+      "Michele Mascherpa",
+      "Axel Ringh",
+      "Amirhossein Taghvaei",
+      "Johan Karlsson"
+    ],
+    "submission_date": "2025-11-20T15:24:44Z",
+    "latest_updated": "2025-11-20T15:24:44Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.16458v1"
+    ],
+    "abstract": "We address the problem of identifying the dynamical law governing the evolution of a population of indistinguishable particles, when only aggregate distributions at successive times are observed. Assuming a Markovian evolution on a discrete state space, the task reduces to estimating the underlying transition probability matrix from distributional data. We formulate this inverse problem within the framework of entropic optimal transport, as a joint optimization over the transition matrix and the transport plans connecting successive distributions. This formulation results in a convex optimization problem, and we propose an efficient iterative algorithm based on the entropic proximal method. We illustrate the accuracy and convergence of the method in two numerical setups, considering estimation from independent snapshots and estimation from a time series of aggregate observations, respectively.",
+    "status": "found"
+  },
+  "2511.16459": {
+    "arxiv_id": "2511.16459",
+    "title": "Elephants explore in spirals sometimes",
+    "authors": [
+      "Lucile Laulin",
+      "Bastien Mallein"
+    ],
+    "submission_date": "2025-11-20T15:26:14Z",
+    "latest_updated": "2025-11-20T15:26:14Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.16459v1"
+    ],
+    "abstract": "We consider in this article an Elephant Random Walk evolving in the plane. Specifically, this is a reinforced stochastic process in which the $n$th step is given by a random rotation of one of the previous steps chosen uniformly at random. We obtain a central limit theorem for this process, which shows that the process follows a randomly rotated logarithmic spiral at large times, with Gaussian fluctuations.",
+    "status": "found"
+  },
+  "2511.16460": {
+    "arxiv_id": "2511.16460",
+    "title": "From percolation transition to Anderson localization in one-dimensional speckle potentials",
+    "authors": [
+      "Margaux Vrech",
+      "Jan Major",
+      "Dominique Delande",
+      "Marcel Filoche",
+      "Nicolas Cherroret"
+    ],
+    "submission_date": "2025-11-20T15:26:35Z",
+    "latest_updated": "2026-02-26T11:20:35Z",
+    "revised_dates": null,
+    "venue": "2026 New J. Phys. 28 024508",
+    "latest_version": 2,
+    "versions": [
+      "2511.16460v1",
+      "2511.16460v2"
+    ],
+    "abstract": "Classical particles in random potentials typically experience a percolation phase transition, being trapped in clusters of mean size $χ$ that diverges algebraically at a percolation threshold. In contrast, quantum transport in random potentials is controlled by the Anderson localization length, which shows no distinct feature at this classical critical point. Here, we present a comprehensive theoretical analysis of the semi-classical crossover between these two regimes by studying particle propagation in a one-dimensional, red speckle potential, which hosts a percolation transition at its upper bound. As the system deviates from the classical limit, we find that the algebraic divergence of $χ$ continuously connects to a smooth yet non-analytic increase of the localization length. We characterize this behavior both numerically and theoretically using a semi-classical approach. In this crossover regime, the correlated and non-Gaussian nature of the speckle potential becomes essential, causing the standard Dorokhov-Mello-Pereyra-Kumar (DPMK) description for uncorrelated disorder to break down. Instead, we predict the emergence of a bimodal transmission distribution, a behavior normally absent in one dimension, which we capture within our semi-classical analysis. Deep in the quantum regime, the DMPK framework is recovered and the universal features of Anderson localization reappear.",
+    "status": "found"
+  },
+  "2511.16461": {
+    "arxiv_id": "2511.16461",
+    "title": "Connecting Collisional and Photofragmentation Resonances in the H$_2$ Ungerade Symmetry",
+    "authors": [
+      "Dávid Hvizdoš",
+      "Roman Čurík",
+      "Chris H. Greene"
+    ],
+    "submission_date": "2025-11-20T15:27:08Z",
+    "latest_updated": "2025-11-20T15:27:08Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.16461v1"
+    ],
+    "abstract": "A recently developed energy-dependent frame transformation theory that incorporates both ionization and dissociation channels of the H$_2$ molecule, is extended to treat the ungerade states that occur both in dissociative recombination and as the final state in ground state photoabsorption. The theoretical treatment includes the rotational degrees of freedom and is benchmarked against a two-dimensional model that can be solved with high accuracy and also compared with photoabsorption experiments. Analysis of the resulting spectra shows how the same resonances appear in very different observables, often with quite different line shapes.",
+    "status": "found"
+  },
+  "2511.16462": {
+    "arxiv_id": "2511.16462",
+    "title": "Systems for detecting and measuring backgrounds with the SABRE South experiment",
+    "authors": [
+      "L. J. Milligan"
+    ],
+    "submission_date": "2025-11-20T15:27:17Z",
+    "latest_updated": "2025-11-20T15:27:17Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.16462v1"
+    ],
+    "abstract": "The SABRE (Sodium iodide with Active Background REjection) experiment aims to detect an annual rate modulation from dark matter interactions in ultra-high purity NaI(Tl) crystals which will provide a model independent test of the signal observed by DAMA/LIBRA. SABRE will consist of two separate detectors in the Northern and Southern hemispheres. SABRE South will be located in the newly completed Stawell Underground Physics Laboratory (SUPL), the first deep underground laboratory in the southern hemisphere. The combination of SABRE North and South is intended to disentangle seasonal or site-related effects from the dark matter-like modulated signal. Measuring and understanding backgrounds is essential for the reliability and consistent performance of these searches, and as the first large detector in SUPL SABRE South will also be used to measure backgrounds from radiogenic and cosmogenic sources. The SABRE South veto system is designed to detect the signals generated by radiation and cosmic rays using a 12 kL linear alkyl-benzene (LAB) based liquid scintillator (LS) detector contained in a steel vessel and instrumented with 18 Hamamatsu R5912 photomultiplier tubes (PMTs), alongside a plane of 8 plastic scintillator modules (instrumented with 2 R13089 PMTs) located above the vessel to reliably detect muons from cosmic-rays with a position resolution of 5 cm.",
+    "status": "found"
+  },
+  "2511.16463": {
+    "arxiv_id": "2511.16463",
+    "title": "The metric Rips filtration, universal quasigeodesic cones, and hierarchically hyperbolic spaces",
+    "authors": [
+      "Robert Tang"
+    ],
+    "submission_date": "2025-11-20T15:28:37Z",
+    "latest_updated": "2025-11-20T15:28:37Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.16463v1"
+    ],
+    "abstract": "We introduce a flexible, categorical framework for large-scale geometry that clarifies basic behaviour of the metric Rips filtration and streamlines some constructions in geometric group theory. The paper has two main parts. First, we develop the theory of the metric Rips filtration and its colimit in natural coarse categories: informally, we characterise when the Rips colimit produces a canonical large-scale model of a metric space and use this to prove that the quasigeodesic subcategory is closed under colimits in the coarsely Lipschitz category. We also establish adjointness properties of the Rips colimit and use them to characterise extremal metrics and universal morphisms from quasigeodesic sources. Second, we apply this machinery to characterise universal quasigeodesic cones via an explicit Rips-Tuple recipe. In the HHS setting this yields a concrete, canonical model of the total space: an HHS is quasi-isometric to a Rips graph of the space of coarsely consistent tuples in the product of its factor spaces. Moreover, we give a local-to-global criterion that promotes uniformly controlled, factorwise retractions to a canonical global hierarchical retraction. Because the approach is based on universal properties and uniformly controlled coarse data rather than inductive constructions, distance formulae, or hierarchy paths, it applies equally well to arbitrary families of metric spaces equipped with pairwise constraints.",
+    "status": "found"
+  },
+  "2511.16464": {
+    "arxiv_id": "2511.16464",
+    "title": "Collision frequency between dark matter subhaloes within Milky Way-like galaxies",
+    "authors": [
+      "Koki Otaki",
+      "Yudai Kazuno",
+      "Masao Mori"
+    ],
+    "submission_date": "2025-11-20T15:29:25Z",
+    "latest_updated": "2025-11-20T15:29:25Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.16464v1"
+    ],
+    "abstract": "In the standard cold dark matter (CDM) model, sub-galactic structures hierarchically collide and merge to build up larger structures. Mergers and collisions between dwarf galaxies and dark matter subhaloes (DMSHs) play an important role in the evolution and formation of structures within a massive galaxy. We investigate the collision frequency between DMSHs associated with a massive host galaxy such as the Milky Way. We analytically estimate the density distribution of DMSH pairs for the relative distance and relative velocity ($r_\\mathrm{rel}$-$v_\\mathrm{rel}$) and the distance from the centre of the host halo and relative velocity ($r$-$v_\\mathrm{rel}$) planes, based on the distribution function of the host halo in the phase space. Then, we evaluate the collision frequencies of DMSHs by integrating the orbital evolution of DMSHs in Milky-Way-like host haloes selected from cosmological $N$-body simulations. The frequency of violent encounters, in which the relative distance of DMSHs is shorter than the sum of scale radii, is averaged as $2.1\\times 10^2\\,\\mathrm{Gyr}^{-1}$. Since the time scale of violent encounters, $4.7\\,\\mathrm{Myr}$, is shorter than the dynamical time of the host halo, collisions between DMSHs occur frequently within the host halo. Although interactions between DMSHs produce pairs with higher relative velocities, the density distributions of all and colliding pairs between DMSHs provided by numerical results are approximately similar to those of the analytical model neglecting the interactions of DMSHs on $r_\\mathrm{rel}$-$v_\\mathrm{rel}$ plane for all pairs and $r$-$v_\\mathrm{rel}$ plane for colliding pairs. We compare our results with observed colliding dwarf galaxies and provide insight into the abundance of DMSHs.",
+    "status": "found"
+  },
+  "2511.16465": {
+    "arxiv_id": "2511.16465",
+    "title": "Mesoscale tissue properties and electric fields in brain stimulation: Bridging the macroscopic and microscopic scales using layer-specific cortical conductivity",
+    "authors": [
+      "Boshuo Wang",
+      "Torge H. Worbs",
+      "Minhaj A. Hussain",
+      "Aman S. Aberra",
+      "Axel Thielscher",
+      "Warren M. Grill",
+      "Angel V. Peterchev"
+    ],
+    "submission_date": "2025-11-20T15:29:43Z",
+    "latest_updated": "2026-02-04T13:31:47Z",
+    "revised_dates": null,
+    "venue": "2026, J. Neural Eng., 23(3), 036026",
+    "latest_version": 5,
+    "versions": [
+      "2511.16465v1",
+      "2511.16465v2",
+      "2511.16465v3",
+      "2511.16465v4",
+      "2511.16465v5"
+    ],
+    "abstract": "Accurate simulations of electric fields (E-fields) in neural stimulation depend on tissue conductivity representations that link underlying microscopic tissue structure with macroscopic assumptions. Mesoscale conductivity variations can produce meaningful changes in E-fields and neural activation thresholds but remain largely absent from standard macroscopic models. Conductivity variations within the cortex are expected given the differences in cell density and volume fraction across layers. We review recent efforts modeling microscopic and mesoscopic E-fields and outline approaches that bridge micro- and macroscales to derive consistent mesoscale conductivity distributions. Using simplified microscopic models, effective tissue conductivity was estimated as a function of volume fraction of extracellular space, and the conductivities of different cortical layers were interpolated based on experimental volume fraction. The effective tissue conductivities were monotonically decreasing convex functions of the cell volume fraction. With decreasing cell volume fraction, the conductivity of cortical layers increased with depth from layer 2 to 6. Although the variation of conductivity within the cortex was small when compared to the conductivity of extracellular fluid (9% to 15%), the conductivity difference was considerably larger when compared between layers, e.g., with layer 3 and 6 being 20% and 50% more conductive than layer 2, respectively. The review and analysis provide a foundation for accurate multiscale models of E-fields and neural stimulation. Using layer-specific conductivity values within the cortex could improve the accuracy of estimations of thresholds and distributions of neural activation in E-field models of brain stimulation.",
+    "status": "found"
+  },
+  "2511.16466": {
+    "arxiv_id": "2511.16466",
+    "title": "Horizontal and Vertical Regularity of Elastic Wave Geometry",
+    "authors": [
+      "Joonas Ilmavirta",
+      "Pieti Kirkkopelto",
+      "Antti Kykkänen"
+    ],
+    "submission_date": "2025-11-20T15:35:45Z",
+    "latest_updated": "2025-11-20T15:35:45Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.16466v1"
+    ],
+    "abstract": "The elastic properties of a material are encoded in a stiffness tensor field and the propagation of elastic waves is modeled by the elastic wave equation. We characterize analytic and algebraic properties a general anisotropic stiffness tensor field has to satisfy in order for Finsler-geometric methods to be applicable in studying inverse problems related to imaging with elastic waves.",
+    "status": "found"
+  },
+  "2511.16467": {
+    "arxiv_id": "2511.16467",
+    "title": "Anatomy of an Idiom: Tracing Non-Compositionality in Language Models",
+    "authors": [
+      "Andrew Gomes"
+    ],
+    "submission_date": "2025-11-20T15:35:50Z",
+    "latest_updated": "2025-11-20T15:35:50Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.16467v1"
+    ],
+    "abstract": "We investigate the processing of idiomatic expressions in transformer-based language models using a novel set of techniques for circuit discovery and analysis. First discovering circuits via a modified path patching algorithm, we find that idiom processing exhibits distinct computational patterns. We identify and investigate ``Idiom Heads,'' attention heads that frequently activate across different idioms, as well as enhanced attention between idiom tokens due to earlier processing, which we term ``augmented reception.'' We analyze these phenomena and the general features of the discovered circuits as mechanisms by which transformers balance computational efficiency and robustness. Finally, these findings provide insights into how transformers handle non-compositional language and suggest pathways for understanding the processing of more complex grammatical constructions.",
+    "status": "found"
+  },
+  "2511.16468": {
+    "arxiv_id": "2511.16468",
+    "title": "Optimizing Quantum Key Distribution Network Performance using Graph Neural Networks",
+    "authors": [
+      "Akshit Pramod Anchan",
+      "Ameiy Acharya",
+      "Leki Chom Thungon"
+    ],
+    "submission_date": "2025-11-20T15:36:57Z",
+    "latest_updated": "2025-11-20T15:36:57Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.16468v1"
+    ],
+    "abstract": "This paper proposes an optimization of Quantum Key Distribution (QKD) Networks using Graph Neural Networks (GNN) framework. Today, the development of quantum computers threatens the security systems of classical cryptography. Moreover, as QKD networks are designed for protecting secret communication, they suffer from multiple operational difficulties: adaptive to dynamic conditions, optimization for multiple parameters and effective resource utilization. In order to overcome these obstacles, we propose a GNN-based framework which can model QKD networks as dynamic graphs and extracts exploitable characteristics from these networks' structure. The graph contains not only topological information but also specific characteristics associated with quantum communication (the number of edges between nodes, etc). Experimental results demonstrate that the GNN-optimized QKD network achieves a substantial increase in total key rate (from 27.1 Kbits/s to 470 Kbits/s), a reduced average QBER (from 6.6% to 6.0%), and maintains path integrity with a slight reduction in average transmission distance (from 7.13 km to 6.42 km). Furthermore, we analyze network performance across varying scales (10 to 250 nodes), showing improved link prediction accuracy and enhanced key generation rate in medium-sized networks. This work introduces a novel operation mode for QKD networks, shifting the paradigm of network optimization through adaptive and scalable quantum communication systems that enhance security and performance.",
+    "status": "found"
+  }
+}

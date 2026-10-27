@@ -1,0 +1,428 @@
+{
+  "2608.13087": {
+    "arxiv_id": "2608.13087",
+    "title": "Sampling Luck Masquerades as Allocation Gain: Auditing Test-Time Budget Allocation for Neural Combinatorial Optimization",
+    "authors": [
+      "Jinhyung Bae"
+    ],
+    "submission_date": "2026-08-13T10:53:48Z",
+    "latest_updated": "2026-08-13T10:53:48Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13087v1"
+    ],
+    "abstract": "Neural combinatorial optimization (NCO) solvers report the best of many sampled solutions per instance, and the sample count is, by convention, identical for every instance. Whether a non-uniform allocation of a fixed total budget would buy anything has not been measured. We measure it, and we audit the measurement itself. First, on in-distribution workloads the allocation headroom is not detectable. Across three pretrained solvers (POMO, AM, SymNCO) on uniform TSP-100, an oracle allocation computed and evaluated on the same stored samples reports a 2.2-2.6% gain with intervals excluding zero; measured out of sample the same gain is indistinguishable from zero (0.457, 0.015, -0.512 percent). Following the customary in-sample procedure, all three solvers would have supported a published 2%-level gain that does not exist. We calibrate this bias against an instance-wise null in which the true gain is zero by construction; over the ranges we test it does not shrink with more samples or more instances. Second, the same correction that removes the phantom gains preserves a real one. Under distribution shift (a workload mixing uniform and clustered instances), a pre-registered confirmatory experiment finds that allocation guided by held-out sample statistics improves best-of-k by 11.5% (AM, primary endpoint; 95% CI [7.4, 19.7]) and 12.0% (SymNCO, replication) at equal evaluation budget, with the signal-acquisition cost not charged; a pre-registered negative control (POMO, an order of magnitude more robust to shift) shows -0.3% [-0.7, 0.24]. The gain exceeds a frozen distribution-label baseline by 4.2 points [1.9, 7.7]. An exploratory policy charging a 20-sample probe against the same budget retains 3.4% (AM) and 4.6% (SymNCO). We give a correction procedure and a reporting checklist, and release all data, code, and the pre-registration record.",
+    "status": "found"
+  },
+  "2608.13088": {
+    "arxiv_id": "2608.13088",
+    "title": "Quantifying nonclassicality in qubit systems via positive operator-valued measures",
+    "authors": [
+      "Abdul Sattar Khan",
+      "Mehdi Abdi"
+    ],
+    "submission_date": "2026-08-13T10:55:46Z",
+    "latest_updated": "2026-08-13T10:55:46Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13088v1"
+    ],
+    "abstract": "We introduce an operational measure of nonclassicality for qubit systems based on the violation of Kolmogorov consistency conditions in sequential measurements. In contrast to previous work by Milz et al.~\\cite{Milz-2020}, who characterized classicality via NCGD maps, and Sakuldee et al.~\\cite{Sakuldee-2022a, Sakuldee-2022b}, who studied quantum correlations under measurement disturbance, our witness explicitly quantifies nonclassicality in terms of the POVM unsharpness parameter $a_z$. For projective measurements on an initially diagonal state, the witness vanishes identically, showing that such measurements cannot reveal nonclassicality. However, by generalizing to positive operator-valued measures (POVMs), we find that non-projective measurements can reveal nonclassicality even for diagonal initial states. We derive explicit expressions for the witness for general initial states, including coherences, and show that its maximum value is $1/4$, which is a new result achieved for unbiased POVMs, maximal dephasing, and equal initial populations. Our results connect Kolmogorov consistency, Leggett-Garg inequalities, and POVMs, providing an experimentally accessible tool for detecting nonclassicality in qubit systems with potential applications in quantum technology certification.",
+    "status": "found"
+  },
+  "2608.13089": {
+    "arxiv_id": "2608.13089",
+    "title": "Infinite series of Deza graphs with strongly regular children",
+    "authors": [
+      "Mikhail P. Golubyatnikov"
+    ],
+    "submission_date": "2026-08-13T10:56:49Z",
+    "latest_updated": "2026-10-06T13:15:07Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.13089v1",
+      "2608.13089v2"
+    ],
+    "abstract": "A Deza graph is a regular graph in which the number of common neighbours of two distinct vertices takes at most two values, regardless of adjacency. Its children are the graphs on the same vertex set in which adjacency is determined by these two common-neighbour counts. A Deza graph is called strongly Deza if both children are strongly regular. We construct an infinite family of edge-regular strongly Deza graphs using non-degenerate quadratic forms over the field with five elements. For every odd dimension greater than three and each of the two determinant square classes, we obtain a graph on the projective points represented by vectors of norm one. Its children are complementary strongly regular graphs with the parameters of the corresponding orthogonality graph on non-isotropic points and its complement. We determine the parameters by counting solutions to systems involving the associated bilinear form. These counts also yield symmetric association schemes over finite fields of odd characteristic. Further constructions include Deza graphs in dimension four, orthogonality graphs in odd dimensions, unions of relations in even dimensions over the field with nine elements, and an odd-dimensional family over the field with thirteen elements. We also give low-dimensional examples, including one whose children are a triangular graph and its complement.",
+    "status": "found"
+  },
+  "2608.13090": {
+    "arxiv_id": "2608.13090",
+    "title": "Robust controlled-Z gate for Rydberg atoms based on level-crossing-free echoing rapid adiabatic passage",
+    "authors": [
+      "Yichi Zhang",
+      "Zhenqi Bai",
+      "Xu Zhao",
+      "Hongyan Fan",
+      "Ximo Wang",
+      "Tiecheng Wang"
+    ],
+    "submission_date": "2026-08-13T10:57:00Z",
+    "latest_updated": "2026-08-13T10:57:00Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13090v1"
+    ],
+    "abstract": "We propose a controlled-Z gate scheme for Rydberg atoms based on level-crossing-free echoing rapid adiabatic population transfer. We design antisymmetric Rabi frequency pulses and symmetric detuning pulses, enabling the system to completely avoid level-crossing points throughout the evolution, and the dynamical phase is naturally eliminated by the time-reversal symmetry of the double-pulse sequence. We incorporate dissipative effects through the Lindblad master equation. The numerical simulation yields a two-qubit CZ gate fidelity of 0.9999. When the Rabi-frequency fluctuation is within $\\pm 2\\%$, and the detuning offset is within $\\pm 1\\%$, the fidelity can still remain above 0.999. Under the same dissipative model, the three-qubit CCZ gate achieves a fidelity of 0.999. When a single-parameter fluctuation does not exceed $\\pm 3\\%$, the fidelity is always higher than 0.997. Our scheme requires no laser phase jumps or fast switching operations. The zero-area pulse structure suppresses first-order intensity noise, and the symmetric double-pulse sequence avoids spatially resolved laser switching, making it suitable for parallel gate operations in large-scale neutral-atom arrays.",
+    "status": "found"
+  },
+  "2608.13091": {
+    "arxiv_id": "2608.13091",
+    "title": "Time-resolved correlation engineering in DLCZ Raman photon sources",
+    "authors": [
+      "Jiun-Shiuan Shiu",
+      "Chang-Wei Lin",
+      "Chi-Ming Yang",
+      "Ite A. Yu",
+      "Yong-Fan Chen"
+    ],
+    "submission_date": "2026-08-13T10:57:42Z",
+    "latest_updated": "2026-08-13T10:57:42Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13091v1"
+    ],
+    "abstract": "Memory-assisted quantum networks require photon sources with controllable temporal and correlation properties. The Duan-Lukin-Cirac-Zoller (DLCZ) protocol provides a platform based on spontaneous Raman scattering in atomic ensembles, but a unified predictive theory connecting control parameters to correlations under realistic propagation and noise conditions remains lacking. Here we present a propagation-inclusive open-system quantum theory that retains write-induced population redistribution while combining Heisenberg-Langevin dynamics with Maxwell-Schrödinger propagation. We experimentally validate its key predictions. The theory predicts time-dependent Stokes generation, spin-wave evolution, retrieved anti-Stokes wavepackets, and time-resolved cross-correlations. Experiments confirm robust correlations under retrieval tuning and enhanced correlations for shorter write pulses, consistent with the different scaling of correlated coincidences and accidental backgrounds with the mean spin-wave excitation number. Classically controlled retrieval enables temporal gating and slicing of the anti-Stokes wavepacket, establishing a quantitative framework for correlation engineering in memory-compatible DLCZ photon sources.",
+    "status": "found"
+  },
+  "2608.13092": {
+    "arxiv_id": "2608.13092",
+    "title": "Paths: Prompt-aware Spatio-temporal Transformer with Hierarchical Multi-modal Fusion for RGB-Event Video Person Re-Identification",
+    "authors": [
+      "Yakun Huo",
+      "Yingquan Wang",
+      "Yangyang Liu",
+      "Tianyu Yan",
+      "Yunzhi Zhuge",
+      "Pingping Zhang",
+      "Huchuan Lu"
+    ],
+    "submission_date": "2026-08-13T10:58:47Z",
+    "latest_updated": "2026-08-13T10:58:47Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13092v1"
+    ],
+    "abstract": "RGB-Event Video Person Re-Identification (RE-VReID) aims to retrieve specific person across non-overlapping cameras with complementary RGB videos and event streams. However, existing methods often decouple spatial and temporal modeling, which limits their interaction. In addition, global-level RGB-Event fusion fails to fully exploit fine-grained discriminative cues. To address these issues, we propose Paths, a unified framework with spatio-temporal modeling and hierarchical multi-modal fusion for RE-VReID. Specifically, we first design a Memory-Augmented Backbone (MAB) to maintain modality-specific identity prototypes for stable intra-modal representation learning. Then, we propose a Prompt-aware Spatio-temporal Transformer (PST) to jointly model spatial and temporal cues within a unified Transformer. Finally, we introduce a Hierarchical Multi-modal Fusion (HMF) to integrate RGB and event features at global and local levels. With these modules, our framework can learn robust and discriminative representations for RE-VReID. Extensive experiments on three public RE-VReID benchmarks including EvReID, MARS and iLIDS-VID, demonstrate the effectiveness of our proposed method. The code is available at https://github.com/Reflection0427/Paths.",
+    "status": "found"
+  },
+  "2608.13093": {
+    "arxiv_id": "2608.13093",
+    "title": "Giant exciton effects and magneto-excitonic coupling in V4S9X4 2D magnetic semiconductors",
+    "authors": [
+      "Yingjie Wei",
+      "Fan Zhang",
+      "Ying Zhao",
+      "Lixin Zhou",
+      "Yan Su",
+      "Yu Guo",
+      "Jijun Zhao"
+    ],
+    "submission_date": "2026-08-13T11:00:47Z",
+    "latest_updated": "2026-08-13T11:00:47Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13093v1"
+    ],
+    "abstract": "Room-temperature spin-optoelectronic devices require a combination of robust ferromagnetism and giant exciton binding, a pairing mutually exclusive in conventional semiconductors due to magnetic localization that screens excitons. Cluster-assembled V4S9X4 (X = F, Cl, Br and I) monolayers overcome this bottleneck via a hierarchical design, that is, intra-cluster localized states host both local magnetic moments and strong electron-hole interactions, while inter-cluster coupling mediates long-range ferromagnetism. Remarkably, these two-dimensional semiconductors exhibit intrinsic ferromagnetism with Curie temperature up to 507.6 K. As a prototype, V4S9Br4 monolayer possesses a giant exciton binding energy of 1.85 eV. Its lowest exciton is a dark state (DI) with a radiative lifetime of 1.20 ns, whereas the first bright exciton (BI) exhibits an ultrafast radiative decay of 86.87 ps. This stark lifetime contrast enables simultaneous ultrafast optical response and long-lived spin information storage. Most notably, switching between ferromagnetic and antiferromagnetic order allows for wide-range tuning of exciton lifetime, with the giant binding energy remaining nearly intact. Our findings establish cluster assembly as a powerful paradigm for designing next-generation spin-photonic and quantum information devices operating at room temperature.",
+    "status": "found"
+  },
+  "2608.13094": {
+    "arxiv_id": "2608.13094",
+    "title": "Causal Mediation Analysis with a Time-Dependent Mediator, Time-Dependent Confounders and a Time-to-Event Outcome: Revisiting the Difference Method",
+    "authors": [
+      "Robin Denz",
+      "Nina Timmesfeld"
+    ],
+    "submission_date": "2026-08-13T11:01:04Z",
+    "latest_updated": "2026-08-13T11:01:04Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13094v1"
+    ],
+    "abstract": "Mediation analysis is a powerful tool to decompose treatment effects into direct and indirect components, enabling explanations of total treatment effects in a formal statistical framework. However, applying such analyses to settings with time-to-event outcomes, time-dependent mediators and confounders remains challenging. Existing methods are statistically complex, computationally intensive, and rarely available in user-friendly software. The difference method offers a simple alternative, but its performance in this setting has not been systematically evaluated. We conducted a simulation study and real-world data analysis to fill this gap in the literature. Using Cox proportional hazards, Aalen additive hazards, and accelerated failure time (AFT) models with time-varying covariates, the difference method was compared across different data generation processes with time-dependent mediators and confounders, focusing on bias in estimated indirect effects. The parametric mediational g-formula was used as benchmark comparator. If correctly specified, the Aalen model based difference method produced unbiased estimates in the absence of a time-dependent confounder that was directly caused by the treatment. Similar results were obtained when using the Cox model based difference with rare outcomes, but not with common outcomes. The AFT model based difference method was biased in almost all scenarios, due to collapsibility issues. Only the parametric mediational g-formula was unbiased in all scenarios. In contrast to specialized methods, the difference method requires additional, often unrealistic, assumptions, such as the absence of a direct causal relationship of the treatment on time-dependent confounders. If those assumptions hold, however, it may be used as a simple and efficient alternative.",
+    "status": "found"
+  },
+  "2608.13095": {
+    "arxiv_id": "2608.13095",
+    "title": "Semantic Radiance Fields as Simulators for Spatial Reasoning in Real-World Scenes",
+    "authors": [
+      "Nico Heider",
+      "Michał Jan Włodarczyk",
+      "Katarzyna Wasielewska-Michniewska",
+      "Przemysław Hołda",
+      "Martin Schieck",
+      "Marcin Paprzycki",
+      "Maria Ganzha",
+      "Bogdan Franczyk"
+    ],
+    "submission_date": "2026-08-13T11:01:09Z",
+    "latest_updated": "2026-08-13T11:01:09Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13095v1"
+    ],
+    "abstract": "Training and evaluating spatial reasoning in embodied agents requires diverse environments that are both geometrically faithful and semantically queryable. Synthetic simulators offer ground truth semantics but sacrifice realism; simulators based on reconstructions of real-world environments have realistic appearance but lack ground truth semantics by default. We propose using Semantic Radiance Fields (SRF) as simulators for spatial reasoning agents. SRFs are a representation that unifies these requirements by lifting 2D semantic segmentations from pretrained vision models into a 3D radiance field that jointly encodes geometry, appearance, and per-class semantic identity. The resulting fields are reconstructed from posed RGB captures of real scenes and support novel-view synthesis, semantic and free-space queries within a single grounded representation. This enables the efficient generation of diverse real-world environments to train and evaluate spatial reasoning models. As an example application, we outline an SRF-driven simulator for an orchard apple-reaching task, in which the radiance field supplies camera rendering, semantic ground truth, and occupancy queries to a physics engine.",
+    "status": "found"
+  },
+  "2608.13096": {
+    "arxiv_id": "2608.13096",
+    "title": "FlowLOB: Efficient and Controllable Limit Order Book Generation with Flow Matching",
+    "authors": [
+      "Zhuohan Wang",
+      "Andreea Bacalum",
+      "Ollie Olby",
+      "Carmine Ventre",
+      "Namid Stillman"
+    ],
+    "submission_date": "2026-08-13T11:01:56Z",
+    "latest_updated": "2026-08-13T11:01:56Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13096v1"
+    ],
+    "abstract": "Limit order book (LOB) simulators are most useful to practitioners when they combine realistic market dynamics, computationally efficient sampling, controllable scenario generation, and the ability to generalize beyond the instruments seen during training---properties that existing agent-based and deep generative simulators provide only partially. We present \\textbf{FlowLOB}, a conditional \\textbf{flow}-matching generator of \\textbf{LOB} trajectories, trained on multiple Hong Kong Exchange (HKEX) symbols at three sampling frequencies ($0.1$s, $1$s, $10$s) in tick-relative representation that transfers to unseen instruments. Because flow and diffusion models admit a common formulation, we train both with identical data, architecture, and budget, and sample both through the same fixed-step ODE solvers, yielding a controlled comparison of sampling efficiency and fidelity. Flow matching attains its best quality with only $10$ ODE-solver steps, whereas diffusion needs many more function evaluations to approach the same fidelity. At this efficient operating point, FlowLOB improves realism over baselines, two learned and two agent-based models, in most distributional metrics at the two finer sampling frequencies. We evaluate counterfactual controllability with a distributional test that asks whether changing a scenario condition moves the generated statistic toward the corresponding real tail regime; FlowLOB satisfies this criterion in most tested settings. Both realism and control effects transfer zero-shot on a held-out symbol. We additionally conduct ablation studies on the network architecture and the learning rate.",
+    "status": "found"
+  },
+  "2608.13097": {
+    "arxiv_id": "2608.13097",
+    "title": "Graph-theoretic design of lasing networks for physical vision",
+    "authors": [
+      "Paul Obernolte",
+      "Jakub Dranczewski",
+      "Yixiu Yin",
+      "Tobias Farchy",
+      "Wai Kit Ng",
+      "Tobias Simonsen",
+      "Elias Großhauser",
+      "Alexis Arnaudon",
+      "Robert L. Peach",
+      "Mauricio Barahona",
+      "Riccardo Sapienza",
+      "Jack C. Gartside",
+      "T. V. Raziman"
+    ],
+    "submission_date": "2026-08-13T11:04:10Z",
+    "latest_updated": "2026-08-13T11:04:10Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13097v1"
+    ],
+    "abstract": "Physical neural networks perform learning through the intrinsic nonlinear dynamics of matter. Optimising their design presents a considerable challenge: complex many-body physics can provide powerful computation, but are expensive to simulate and large experimental optimisation runs are impractical to fabricate. Hence, the high-dimensional space of possible network topologies cannot be effectively directly searched. Here, we show that this search can be efficiently performed in an abstract graph space that is vastly cheaper to explore. Using random lasing networks -- composed of interconnected nanoscale waveguides and hosting strongly coupled lasing modes -- as an exemplar physical vision system, we establish a quantitative three-layer link: simple graph-theoretic metrics predict the nonlinear lasing physics, which in turn predicts vision performance. After validating this relationship using physical simulations, we exploit it to drive an evolutionary algorithm using graph metrics, producing network topologies that outperform random designs at a fraction of the computational cost (3000$\\times$ speed-up compared to physical simulation). On simulated image-classification tasks, graph-optimised networks substantially improve classification accuracy. As our framework operates on network topology rather than substrate-specific physics, we anticipate it can transfer to other network-based physical learning systems, providing an efficient route for the directed design and optimisation of complex, strongly-interacting physical neural networks.",
+    "status": "found"
+  },
+  "2608.13098": {
+    "arxiv_id": "2608.13098",
+    "title": "Radio-Optical Confluence in Intelligent Edge Networks",
+    "authors": [
+      "Akshita Gupta",
+      "Devika Dass",
+      "Agastya Raj",
+      "Carlos Natalino",
+      "Marco Ruffini",
+      "Paolo Monti",
+      "Daniel Kilper"
+    ],
+    "submission_date": "2026-08-13T11:09:36Z",
+    "latest_updated": "2026-08-13T11:09:36Z",
+    "revised_dates": null,
+    "venue": "2026 Optical Fiber Communications Conference and Exhibition (OFC)",
+    "latest_version": 1,
+    "versions": [
+      "2608.13098v1"
+    ],
+    "abstract": "Challenges associated with densification of radio access networks are motivating exploration of more efficient and scalable architectures. We examine recent progress in one direction that involves moving beyond radio and optical convergence to full confluence.",
+    "status": "found"
+  },
+  "2608.13099": {
+    "arxiv_id": "2608.13099",
+    "title": "Formal Verification of Quantum Ancilla Safety",
+    "authors": [
+      "Jiqi Li",
+      "Jingyi Mei",
+      "Wang Fang",
+      "Ji Guan"
+    ],
+    "submission_date": "2026-08-13T11:20:06Z",
+    "latest_updated": "2026-08-13T11:20:06Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13099v1"
+    ],
+    "abstract": "Ensuring ancilla safety is a critical correctness requirement for quantum compilation, since ancilla qubits are routinely introduced to implement complex operations with fewer gates and reduced depth. However, formally verifying this property is computationally hard due to state-space explosion in the number of qubits, particularly for dirty ancillae, which carry unknown initial states and must be restored after use. We propose an end-to-end verification-and-repair framework that rigorously addresses both clean and dirty ancilla safety. Our core contribution is a two-step reduction strategy: we first prove that verifying an $m$-qubit dirty ancilla register decomposes into $2m$ independent clean ancilla safety checks; subsequently, we reduce each clean ancilla safety instance to an algebraic commutativity check against Pauli-$Z$ and Pauli-$X$ operators. This approach yields an efficient and naturally parallel verifier and enables actionable diagnosis by classifying violations into logic errors and phase errors. Leveraging this diagnosis, we further design lightweight repair routines that append local single-qubit rotations to eliminate a broad class of local ancilla faults. We implement the full pipeline in a prototype tool using a dual-backend architecture combining decision diagrams and weighted model counting, and validate it on diverse circuits ranging from arithmetic benchmarks to Grover's algorithm. Our experiments demonstrate scalability to thousands of qubits and show that the proposed repairs effectively improve ancilla safety while preserving circuit functionality.",
+    "status": "found"
+  },
+  "2608.13100": {
+    "arxiv_id": "2608.13100",
+    "title": "Multi-Layer Context Camouflaging: A Semantic Superposition and Contextual Lamination Framework for Malpractice-Resilient Online Assessment",
+    "authors": [
+      "Gupta Lovi Raj",
+      "Kaur Kamalpreet",
+      "Dama Sri Ram",
+      "Parani Prajithaa"
+    ],
+    "submission_date": "2026-08-13T11:25:12Z",
+    "latest_updated": "2026-08-13T11:25:12Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13100v1"
+    ],
+    "abstract": "Contemporary online assessment systems rely primarily on browser lockdown, webcam monitoring, and behavioural analytics, yet remain vulnerable to attacks that extract the assessment content itself through screenshots, screen sharing, optical character recognition, and automated scraping. This paper extends the Multi-dimensional Spatio-Temporal Context Camouflaging Model (MSCCM) within the MARS (Multi-modal Assessment Resilience Suite) by introducing the Multi-Layer Context Camouflaging Theory (MCCT), a mathematical framework that protects rendered assessment content through semantic superposition. Authentic assessment content and synthetically generated camouflage are represented as a unified rendering while remaining recoverable only by legitimate candidates. The framework models the adversarial extraction process through an explicit extraction-channel operator and develops six coupled constructs: the Context Inversion Operator, Contextual Lamination Operator, Separation Channel, Human Readability Functional, Computational Ambiguity Functional, and Context Camouflage Tensor. Computational ambiguity is formulated using conditional entropy, yielding a closed-form expression that quantifies uncertainty during unauthorized extraction, while legitimate recovery is guaranteed through an exact filtering identity. We further establish theoretical properties governing ambiguity, camouflage density, semantic preservation, multi-observation leakage, and temporal multiplexing, and present a rendering algorithm with computational complexity and a pre-registered evaluation protocol. MCCT provides a mathematically rigorous foundation for behaviorally adaptive, accessibility-aware, and computationally resilient digital assessment by securing rendered assessment content while preserving readability for legitimate users.",
+    "status": "found"
+  },
+  "2608.13101": {
+    "arxiv_id": "2608.13101",
+    "title": "CASA: Content-Acoustic Speaking Assessment with Speech Encoder and Large Language Model",
+    "authors": [
+      "Nhan Phan",
+      "Ilona Lähteenmäki",
+      "Anna von Zansen",
+      "Olli-Pekka Pauna",
+      "Yaroslav Getman",
+      "Tamás Grósz",
+      "Mikko Kurimo"
+    ],
+    "submission_date": "2026-08-13T11:25:23Z",
+    "latest_updated": "2026-08-13T11:25:23Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13101v1"
+    ],
+    "abstract": "Research on automatic speaking assessment (ASA) has increasingly adopted multimodal speech large language models to assess learners' speaking performance. However, existing studies provide limited analysis of how acoustic and content information contribute to predictions and how stable the resulting performance is. We propose CASA, a simpler architecture combining Whisper-medium and Qwen3.5-2B that achieves state-of-the-art performance while providing a more interpretable separation between speech delivery and content. On the Speak & Improve Corpus 2025, CASA achieves a root mean square error (RMSE) of 0.358, improving on the previous best RMSE while using approximately half the estimated inference parameters. The general-purpose architecture is designed for adaptation to other ASA corpora without structural changes and relies on three handcrafted fluency features. Through ablations and repeated runs, we analyze the individual and complementary contributions of acoustic and content information, examine performance variability, and demonstrate the potential of large language model reasoning for training-free content validation.",
+    "status": "found"
+  },
+  "2608.13102": {
+    "arxiv_id": "2608.13102",
+    "title": "RbFT-Net: Rectify-Before-Fuse Temporal Radar Anchors for 4D Radar-Camera Depth Completion",
+    "authors": [
+      "Wentao Zhao",
+      "Shouxuan Wu",
+      "Yongtao Cen",
+      "Tianchen Deng",
+      "Yuyang Zhang",
+      "Jingchuan Wang"
+    ],
+    "submission_date": "2026-08-13T11:26:46Z",
+    "latest_updated": "2026-08-13T11:26:46Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13102v1"
+    ],
+    "abstract": "Dense metric depth prediction from cameras and millimeter-wave radar offers a cost-effective sensing solution for autonomous systems. However, radar measurements are inherently sparse and susceptible to clutter, multipath reflections, and projection errors. While aggregating multiple radar frames provides denser metric cues, it also introduces temporal misalignment and dynamic-object interference. Directly propagating such unreliable measurements can therefore corrupt large regions of the predicted depth map. To address this issue, we propose RbFT-Net, an end-to-end rectify-before-fuse framework for multi-frame 4D radar-camera depth completion. Rather than assuming accumulated radar returns to be accurate, RbFT-Net treats them as noisy temporal anchor candidates. An image-conditioned rectification module jointly corrects their image-plane locations and metric depths while estimating pointwise reliability. The rectified anchors are then selectively propagated before high-level multi-modal fusion, suppressing the influence of unreliable measurements. Experiments on ZJU-4DRadarCam and a newly collected 4D radar-camera-LiDAR dataset show that RbFT-Net consistently outperforms the evaluated independent radar-camera methods and remains competitive with plug-in pipelines using auxiliary monocular depth models. Cross-platform evaluation and component analyses further support the effectiveness of the proposed rectification and reliability-aware propagation strategy.",
+    "status": "found"
+  },
+  "2608.13103": {
+    "arxiv_id": "2608.13103",
+    "title": "S2-HWM: Sparse Event-Structured Hierarchical World Model for Long-Horizon Surgical Robot Manipulation",
+    "authors": [
+      "Shuzhe Zhang",
+      "Xin Zhu",
+      "Yinling Qian",
+      "Qiong Wang"
+    ],
+    "submission_date": "2026-08-13T11:29:20Z",
+    "latest_updated": "2026-08-13T11:29:20Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13103v1"
+    ],
+    "abstract": "Long-horizon surgical robot manipulation is challenging because task rewards are sparse, while meaningful interaction changes occur at irregular intervals. Existing world-model agents typically imagine at primitive-step resolution, leaving variable-duration task progress implicit. Manually specified stages can provide intermediate structure, but their task specific boundaries are difficult to align with state-dependent interaction transitions. We propose S2-HWM, a Sparse Event-Structured Hierarchical World Model that learns sparse event evidence from primitive latent trajectories to coordinate an event-level manager and a primitive-step worker. The event evidence schedules manager goal updates, and each selected latent goal conditions the worker's primitive actions until the next update. The learned event evidence also forms variable-duration segments for an Event Transition Model (ETM), which predicts the next?boundary stochastic state, segment duration, and accumulated segment reward. Chaining these event-level predictions provides a variable-duration continuation beyond the primitive imagination horizon for manager learning, while the worker retains primitive-step actor-critic learning. On a SurRoL-based PegTransfer task, S2-HWM achieves a success rate of 98.7%, outperforming the flat GAS DreamerV3 baseline by 22.7 percentage points.",
+    "status": "found"
+  },
+  "2608.13104": {
+    "arxiv_id": "2608.13104",
+    "title": "Online Learning of Correspondences between Images",
+    "authors": [
+      "Michael Felsberg",
+      "Fredrik Larsson",
+      "Johan Wiklund",
+      "Niclas Wadströmer",
+      "Jörgen Ahlberg"
+    ],
+    "submission_date": "2026-08-13T11:30:29Z",
+    "latest_updated": "2026-08-13T11:30:29Z",
+    "revised_dates": null,
+    "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence, ISSN 0162-8828, E-ISSN 1939-3539, Vol. 35, no 1, p. 118-129",
+    "latest_version": 1,
+    "versions": [
+      "2608.13104v1"
+    ],
+    "abstract": "We propose a novel method for iterative learning of point correspondences between image sequences. Points moving on surfaces in 3D space are projected into two images. Given a point in either view, the considered problem is to determine the corresponding location in the other view. The geometry and distortions of the projections are unknown as is the shape of the surface. Given several pairs of point-sets but no access to the 3D scene, correspondence mappings can be found by excessive global optimization or by the fundamental matrix if a perspective projective model is assumed. However, an iterative solution on sequences of point-set pairs with general imaging geometry is preferable. We derive such a method that optimizes the mapping based on Neyman's chi-square divergence between the densities representing the uncertainties of the estimated and the actual locations. The densities are represented as channel vectors computed with a basis function approach. The mapping between these vectors is updated with each new pair of images such that fast convergence and high accuracy are achieved. The resulting algorithm runs in real-time and is superior to state-of-the-art methods in terms of convergence and accuracy in a number of experiments.",
+    "status": "found"
+  },
+  "2608.13105": {
+    "arxiv_id": "2608.13105",
+    "title": "Limits of the inverse scattering problem",
+    "authors": [
+      "Matvei Fedin",
+      "Kirill Gubarev",
+      "Andrey Morozov"
+    ],
+    "submission_date": "2026-08-13T11:34:00Z",
+    "latest_updated": "2026-08-13T11:34:00Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13105v1"
+    ],
+    "abstract": "The main goal of tomography is the reconstruction of density function out of its line integrals (integral measurements of this density along x-ray lines). Such construction is possible and known as inverse x-ray/Radon transformations. We are interested in generalization of this problem to the case of particles. For this we need to limit the speed of these particles, otherwise the problem is reduced to the previous one. The question we discuss in this paper is how low can this speed be depending on the parameters of the studied potential. We study this problem using simple theoretical examples and Machine Learning pipeline to restore the potential.",
+    "status": "found"
+  },
+  "2608.13106": {
+    "arxiv_id": "2608.13106",
+    "title": "Scan-Coil Delay Causes Anisotropic Signal Loss in Fast 4D-STEM",
+    "authors": [
+      "Vishal Kumar",
+      "Andreas Jehle",
+      "Tizian Lorenzen",
+      "Julika Radecke",
+      "Knut Müller-Caspary",
+      "Massimo Kube",
+      "Henning Stahlberg"
+    ],
+    "submission_date": "2026-08-13T11:34:35Z",
+    "latest_updated": "2026-10-14T12:02:39Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.13106v1",
+      "2608.13106v2"
+    ],
+    "abstract": "Fast pixelated detectors are driving 4D-STEM toward microsecond dwell times, a regime in which the finite response of the scan deflection coils becomes comparable to the dwell time itself. Using direct probe imaging and sub-frame diffraction analysis, we document a significant intra-dwell scan-coil delay that systematically smears the recorded signal anisotropically along the fast scan direction, with a settling timescale of several tens of microseconds. We present a phase-correlation-based sub-frame alignment procedure that measures and corrects this smearing, and we assess its impact on focused and defocused 4D-STEM reconstructions over a range of scan step sizes. The correction restores signal across a broad range of spatial frequencies, with the largest gains at the large step sizes required for low-dose biological imaging. Because it operates on existing data with no modification to the microscope, the method offers a practical route to recovering signal that would otherwise be lost to scan-coil delay.",
+    "status": "found"
+  }
+}

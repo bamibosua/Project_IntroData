@@ -1,0 +1,411 @@
+{
+  "2601.22876": {
+    "arxiv_id": "2601.22876",
+    "title": "Matterhorn: Masked Time-to-First-Spike Encoding by Reassigning the Silent State for Sparse and Energy-Efficient Spiking Transformers",
+    "authors": [
+      "Zhanglu Yan",
+      "Kaiwen Tang",
+      "Zixuan Zhu",
+      "Zhenyu Bai",
+      "Qianhui Liu",
+      "Yongxin Zhu",
+      "Weng-Fai Wong"
+    ],
+    "submission_date": "2026-01-30T11:53:42Z",
+    "latest_updated": "2026-07-31T05:19:34Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.22876v1",
+      "2601.22876v2"
+    ],
+    "abstract": "Spiking neural networks (SNNs) promise energy-efficient inference for large language models (LLMs), yet most reported savings rely on compute-operation counts that overlook data movement. Energy characterization of representative spiking transformers on a commercial 22-nm process shows that accumulation contributes less than 3% of total energy, while spike-triggered inter-core transfers and weight reads dominate the cost. This makes time-to-first-spike (TTFS) encoding a natural choice, as it limits each neuron to at most one spike. However, standard TTFS maps the silent state, an all-zero spike train that transmits no events, to the rarely occurring smallest value, while the most common activations still spike. This raises a simple question: why reserve the only cost-free codeword for a rare value? This choice inverts a basic principle of energy-aware coding, under which the zero-event codeword should represent the most common value, rather than a rare extreme. Thus, we introduce masked time-to-first-spike encoding (M-TTFS), which uses a temporal mask to reassign the silent state to the most common activation value, and a dead-zone extension that trades a controlled amount of information for greater sparsity. Built on M-TTFS with dead-zone radius $k{=}1$, our spiking transformer Matterhorn reaches an overall spike rate of 1.64% on GLUE at an average score of 84.64, exceeding the best prior spiking transformer by 1.42 percentage points while consuming 67% less energy, with consistent gains on spiking LLaMA models from 7B to 70B parameters. Together, these results show that under hardware-faithful accounting, the energy advantage of SNNs is not a given: it is earned by encodings that align spikes with the data distribution.",
+    "status": "found"
+  },
+  "2601.22877": {
+    "arxiv_id": "2601.22877",
+    "title": "Global Well-posedness of Strong Solutions to the Cauchy Problem of 2D Nonhomogeneous Navier-Stokes Equations with Density-Dependent Viscosity and Vacuum",
+    "authors": [
+      "Bing Yuan",
+      "Rong Zhang",
+      "Peng Zhou"
+    ],
+    "submission_date": "2026-01-30T11:54:14Z",
+    "latest_updated": "2026-01-30T11:54:14Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22877v1"
+    ],
+    "abstract": "This paper is concerned with the Cauchy problem for the modified two-dimensional (2D) nonhomogeneous incompressible Navier-Stokes equations with density-dependent viscosity. By fully using the structure of the system, we can obtain the key estimates of $\\|\\nabla ρ\\|_{L_t^\\infty L_x^q},q>2$ without any smallness asuumption on the initial data, and thus establish the global existence of the strong solutions with the far-field density being either vacuum or nonvacuum. Notably, the initial data can be arbitrarily large and the initial density is allowed to vanish. Furthermore, the large-time asymptotic behavior of the gradients of the velocity and the pressure is also established.",
+    "status": "found"
+  },
+  "2601.22878": {
+    "arxiv_id": "2601.22878",
+    "title": "Development of Domain-Invariant Visual Enhancement and Restoration (DIVER) Approach for Underwater Images",
+    "authors": [
+      "Rajini Makam",
+      "Sharanya Patil",
+      "Dhatri Shankari T M",
+      "Suresh Sundaram",
+      "Narasimhan Sundararajan"
+    ],
+    "submission_date": "2026-01-30T11:58:40Z",
+    "latest_updated": "2026-01-30T11:58:40Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22878v1"
+    ],
+    "abstract": "Underwater images suffer severe degradation due to wavelength-dependent attenuation, scattering, and illumination non-uniformity that vary across water types and depths. We propose an unsupervised Domain-Invariant Visual Enhancement and Restoration (DIVER) framework that integrates empirical correction with physics-guided modeling for robust underwater image enhancement. DIVER first applies either IlluminateNet for adaptive luminance enhancement or a Spectral Equalization Filter for spectral normalization. An Adaptive Optical Correction Module then refines hue and contrast using channel-adaptive filtering, while Hydro-OpticNet employs physics-constrained learning to compensate for backscatter and wavelength-dependent attenuation. The parameters of IlluminateNet and Hydro-OpticNet are optimized via unsupervised learning using a composite loss function. DIVER is evaluated on eight diverse datasets covering shallow, deep, and highly turbid environments, including both naturally low-light and artificially illuminated scenes, using reference and non-reference metrics. While state-of-the-art methods such as WaterNet, UDNet, and Phaseformer perform reasonably in shallow water, their performance degrades in deep, unevenly illuminated, or artificially lit conditions. In contrast, DIVER consistently achieves best or near-best performance across all datasets, demonstrating strong domain-invariant capability. DIVER yields at least a 9% improvement over SOTA methods in UCIQE. On the low-light SeaThru dataset, where color-palette references enable direct evaluation of color restoration, DIVER achieves at least a 4.9% reduction in GPMAE compared to existing methods. Beyond visual quality, DIVER also improves robotic perception by enhancing ORB-based keypoint repeatability and matching performance, confirming its robustness across diverse underwater environments.",
+    "status": "found"
+  },
+  "2601.22879": {
+    "arxiv_id": "2601.22879",
+    "title": "Synthetic Time Series Generation via Complex Networks",
+    "authors": [
+      "Jaime Vale",
+      "Vanessa Freitas Silva",
+      "Maria Eduarda Silva",
+      "Fernando Silva"
+    ],
+    "submission_date": "2026-01-30T12:01:50Z",
+    "latest_updated": "2026-10-08T07:48:07Z",
+    "revised_dates": null,
+    "venue": "International Journal of Data Science and Analytics 22, 299 (2026)",
+    "latest_version": 3,
+    "versions": [
+      "2601.22879v1",
+      "2601.22879v2",
+      "2601.22879v3"
+    ],
+    "abstract": "Time series data are essential for a wide range of applications, yet access to high-quality datasets is often constrained by privacy concerns, acquisition costs, and labelling challenges. Synthetic time series generation has emerged as a promising approach to address these limitations. In this work, we investigate the use of complex network mappings for synthetic time series generation, focusing on the Quantile Graph (QG) representation and its inverse. While the inverse QG mapping has been previously proposed, its potential as a general-purpose data generator has not been systematically evaluated. We address this gap through a comprehensive empirical study assessing both the fidelity and utility of synthetic time series generated by the Inverse Quantile Graph (InvQG) framework. The evaluation combines statistical feature analysis, network-based topological characteristics, and performance in downstream clustering and classification tasks, using simulated and real-world datasets. The results show that InvQG effectively preserves marginal distributions and short-term temporal dependencies across a wide range of models, while exhibiting predictable limitations in capturing long-range or higher-order dynamics.",
+    "status": "found"
+  },
+  "2601.22880": {
+    "arxiv_id": "2601.22880",
+    "title": "Reinforcement Learning-Based Co-Design and Operation of Chiller and Thermal Energy Storage for Cost-Optimal HVAC Systems",
+    "authors": [
+      "Tanay Raghunandan Srinivasa",
+      "Vivek Deulkar",
+      "Aviruch Bhatia",
+      "Vishal Garg"
+    ],
+    "submission_date": "2026-01-30T12:02:13Z",
+    "latest_updated": "2026-02-07T10:40:50Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.22880v1",
+      "2601.22880v2"
+    ],
+    "abstract": "We study the joint operation and sizing of cooling infrastructure for commercial HVAC systems using reinforcement learning, with the objective of minimizing life-cycle cost over a 30-year horizon. The cooling system consists of a fixed-capacity electric chiller and a thermal energy storage (TES) unit, jointly operated to meet stochastic hourly cooling demands under time-varying electricity prices. The life-cycle cost accounts for both capital expenditure and discounted operating cost, including electricity consumption and maintenance. A key challenge arises from the strong asymmetry in capital costs: increasing chiller capacity by one unit is far more expensive than an equivalent increase in TES capacity. As a result, identifying the right combination of chiller and TES sizes, while ensuring zero loss-of-cooling-load under optimal operation, is a non-trivial co-design problem. To address this, we formulate the chiller operation problem for a fixed infrastructure configuration as a finite-horizon Markov Decision Process (MDP), in which the control action is the chiller part-load ratio (PLR). The MDP is solved using a Deep Q Network (DQN) with a constrained action space. The learned DQN RL policy minimizes electricity cost over historical traces of cooling demand and electricity prices. For each candidate chiller-TES sizing configuration, the trained policy is evaluated. We then restrict attention to configurations that fully satisfy the cooling demand and perform a life-cycle cost minimization over this feasible set to identify the cost-optimal infrastructure design. Using this approach, we determine the optimal chiller and thermal energy storage capacities to be 700 and 1500, respectively.",
+    "status": "found"
+  },
+  "2601.22881": {
+    "arxiv_id": "2601.22881",
+    "title": "AnoMod: A Dataset for Anomaly Detection and Root Cause Analysis in Microservice Systems",
+    "authors": [
+      "Ke Ping",
+      "Hamza Bin Mazhar",
+      "Yuqing Wang",
+      "Ying Song",
+      "Mika V. Mäntylä"
+    ],
+    "submission_date": "2026-01-30T12:03:51Z",
+    "latest_updated": "2026-01-30T12:03:51Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22881v1"
+    ],
+    "abstract": "Microservice systems (MSS) have become a predominant architectural style for cloud services. Yet the community still lacks high-quality, publicly available datasets for anomaly detection (AD) and root cause analysis (RCA) in MSS. Most benchmarks emphasize performance-related faults and provide only one or two monitoring modalities, limiting research on broader failure modes and cross-modal methods. To address these gaps, we introduce a new multimodal anomaly dataset built on two open-source microservice systems: SocialNetwork and TrainTicket. We design and inject four categories of anomalies (Ano): performance-level, service-level, database-level, and code-level, to emulate realistic anomaly modes. For each scenario, we collect five modalities (Mod): logs, metrics, distributed traces, API responses, and code coverage reports, offering a richer, end-to-end view of system state and inter-service interactions. We name our dataset, reflecting its unique properties, as AnoMod. This dataset enables (1) evaluation of cross-modal anomaly detection and fusion/ablation strategies, and (2) fine-grained RCA studies across service and code regions, supporting end-to-end troubleshooting pipelines that jointly consider detection and localization.",
+    "status": "found"
+  },
+  "2601.22882": {
+    "arxiv_id": "2601.22882",
+    "title": "Heavy quark polarization anisotropy as a novel probe of fireball geometry",
+    "authors": [
+      "Amaresh Jaiswal"
+    ],
+    "submission_date": "2026-01-30T12:04:13Z",
+    "latest_updated": "2026-07-04T14:04:37Z",
+    "revised_dates": null,
+    "venue": "Phys.Lett.B 879 (2026) 140688",
+    "latest_version": 2,
+    "versions": [
+      "2601.22882v1",
+      "2601.22882v2"
+    ],
+    "abstract": "We propose a new approach to probe the initial fireball geometry in relativistic heavy-ion collisions using spin polarization. Specifically, we introduce polarization harmonics of open heavy hadrons as a novel observable sensitive to geometric anisotropies. Heavy quarks are produced in early hard scatterings and can acquire spin polarization from the strong, transient electromagnetic fields present at early times. As they propagate through the anisotropic quark-gluon plasma, medium-induced interactions lead to path-length dependent depolarization, imprinting an azimuthally anisotropic polarization pattern. Within the framework of rotational Brownian motion, we show that the resulting polarization harmonics are directly related to the initial spatial eccentricities, thereby establishing heavy-flavor polarization anisotropies as a sensitive and complementary probe of the early-time collision geometry. We present quantitative estimates of the second (elliptic) polarization harmonic associated with the recently observed $D^{*+}$ spin alignment reported by the ALICE Collaboration.",
+    "status": "found"
+  },
+  "2601.22883": {
+    "arxiv_id": "2601.22883",
+    "title": "Arbitrary harmonic functions as Bose--Einstein condensates",
+    "authors": [
+      "Michiel De Wilde",
+      "Robert Seiringer"
+    ],
+    "submission_date": "2026-01-30T12:04:15Z",
+    "latest_updated": "2026-06-24T13:00:20Z",
+    "revised_dates": null,
+    "venue": "J. Math. Phys. 67, 061901 (2026)",
+    "latest_version": 2,
+    "versions": [
+      "2601.22883v1",
+      "2601.22883v2"
+    ],
+    "abstract": "We show that a suitable choice of boundary conditions for the Laplacian allows for the appearance of an an arbitrary number of condensates, described by arbitrary harmonic functions, in the thermodynamic limit of an ideal Bose gas.",
+    "status": "found"
+  },
+  "2601.22884": {
+    "arxiv_id": "2601.22884",
+    "title": "Depth-based estimation for multivariate functional data with phase variability",
+    "authors": [
+      "Ana Arribas-Gil",
+      "Sara López-Pintado"
+    ],
+    "submission_date": "2026-01-30T12:05:02Z",
+    "latest_updated": "2026-01-30T12:05:02Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22884v1"
+    ],
+    "abstract": "In the context of multivariate functional data with individual phase variation, we develop a robust depth-based approach to estimate the main pattern function when cross-component time warping is also present. In particular, we consider the latent deformation model (Carroll and Müller, 2023) in which the different components of a multivariate functional variable are also time-distorted versions of a common template function. Rather than focusing on a particular functional depth measure, we discuss the necessary conditions on a depth function to be able to provide a consistent estimation of the central pattern, considering different model assumptions. We evaluate the method performance and its robustness against atypical observations and violations of the model assumptions through simulations, and illustrate its use on two real data sets.",
+    "status": "found"
+  },
+  "2601.22885": {
+    "arxiv_id": "2601.22885",
+    "title": "Leveraging LLMs For Turkish Skill Extraction",
+    "authors": [
+      "Ezgi Arslan İltüzer",
+      "Özgür Anıl Özlü",
+      "Vahid Farajijobehdar",
+      "Gülşen Eryiğit"
+    ],
+    "submission_date": "2026-01-30T12:06:27Z",
+    "latest_updated": "2026-01-30T12:06:27Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22885v1"
+    ],
+    "abstract": "Skill extraction is a critical component of modern recruitment systems, enabling efficient job matching, personalized recommendations, and labor market analysis. Despite Türkiye's significant role in the global workforce, Turkish, a morphologically complex language, lacks both a skill taxonomy and a dedicated skill extraction dataset, resulting in underexplored research in skill extraction for Turkish. This article seeks the answers to three research questions: 1) How can skill extraction be effectively performed for this language, in light of its low resource nature? 2)~What is the most promising model? 3) What is the impact of different Large Language Models (LLMs) and prompting strategies on skill extraction (i.e., dynamic vs. static few-shot samples, varying context information, and encouraging causal reasoning)? The article introduces the first Turkish skill extraction dataset and performance evaluations of automated skill extraction using LLMs. The manually annotated dataset contains 4,819 labeled skill spans from 327 job postings across different occupation areas. The use of LLM outperforms supervised sequence labeling when used in an end-to-end pipeline, aligning extracted spans with standardized skills in the ESCO taxonomy more effectively. The best-performing configuration, utilizing Claude Sonnet 3.7 with dynamic few-shot prompting for skill identification, embedding-based retrieval, and LLM-based reranking for skill linking, achieves an end-to-end performance of 0.56, positioning Turkish alongside similar studies in other languages, which are few in the literature. Our findings suggest that LLMs can improve skill extraction performance in low-resource settings, and we hope that our work will accelerate similar research on skill extraction for underrepresented languages.",
+    "status": "found"
+  },
+  "2601.22886": {
+    "arxiv_id": "2601.22886",
+    "title": "Uncoupled Dirac-Yang-Mills Pairs on Closed Riemannian Spin Manifolds",
+    "authors": [
+      "Adam Lindström"
+    ],
+    "submission_date": "2026-01-30T12:06:30Z",
+    "latest_updated": "2026-01-30T12:06:30Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22886v1"
+    ],
+    "abstract": "We study the Dirac-Yang-Mills equations on closed spin manifolds with a focus on uncoupled solutions, i.e. solutions for which the connection form satisfies the Yang-Mills equation. Such solutions require the Dirac current, a quadratic form on the spinor bundle, to vanish. We study the condition that this current vanishes on all harmonic spinors using perturbation theory and obtain a classification of the connection forms for which this holds, which we show contains an open and dense subset of connections. This has several implications for the generic dimension of the kernel of the Dirac operator. We further establish existence results for uncoupled solutions, in particular in dimension $4$ using the index theorem. Finally we generalize a construction method for twisted harmonic spinors to construct explicit uncoupled solutions on $4$-manifolds admitting twistor spinors and on spin manifolds of any dimension admitting parallel spinors.",
+    "status": "found"
+  },
+  "2601.22887": {
+    "arxiv_id": "2601.22887",
+    "title": "MoVE: Mixture of Value Embeddings -- A New Axis for Scaling Parametric Memory in Autoregressive Models",
+    "authors": [
+      "Yangyan Li"
+    ],
+    "submission_date": "2026-01-30T12:07:23Z",
+    "latest_updated": "2026-01-30T12:07:23Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22887v1"
+    ],
+    "abstract": "Autoregressive sequence modeling stands as the cornerstone of modern Generative AI, powering results across diverse modalities ranging from text generation to image generation. However, a fundamental limitation of this paradigm is the rigid structural coupling of model capacity to computational cost: expanding a model's parametric memory -- its repository of factual knowledge or visual patterns -- traditionally requires deepening or widening the network, which incurs a proportional rise in active FLOPs. In this work, we introduce $\\textbf{MoVE (Mixture of Value Embeddings)}$, a mechanism that breaks this coupling and establishes a new axis for scaling capacity. MoVE decouples memory from compute by introducing a global bank of learnable value embeddings shared across all attention layers. For every step in the sequence, the model employs a differentiable soft gating mechanism to dynamically mix retrieved concepts from this bank into the standard value projection. This architecture allows parametric memory to be scaled independently of network depth by simply increasing the number of embedding slots. We validate MoVE through strictly controlled experiments on two representative applications of autoregressive modeling: Text Generation and Image Generation. In both domains, MoVE yields consistent performance improvements over standard and layer-wise memory baselines, enabling the construction of \"memory-dense\" models that achieve lower perplexity and higher fidelity than their dense counterparts at comparable compute budgets.",
+    "status": "found"
+  },
+  "2601.22888": {
+    "arxiv_id": "2601.22888",
+    "title": "DialectLLM: A Dialect-Aware Dialog[ue] Generation Framework Beyond Standard American English",
+    "authors": [
+      "Jio Oh",
+      "Paul Vicinanza",
+      "Thomas Butler",
+      "Steven Euijong Whang",
+      "Dezhi Hong",
+      "Amani Namboori"
+    ],
+    "submission_date": "2026-01-30T12:08:08Z",
+    "latest_updated": "2026-07-29T12:52:12Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 4,
+    "versions": [
+      "2601.22888v1",
+      "2601.22888v2",
+      "2601.22888v3",
+      "2601.22888v4"
+    ],
+    "abstract": "More than 80% of the 1.6B English speakers do not use Standard American English (SAE), yet LLMs often fail to correctly identify non-SAE dialects and generate stereotyped responses for their speakers. We introduce DialectLLM, the first large-scale framework for generating high-quality multi-dialectal conversational data encompassing the three pillars of written dialect -- lexical (vocabulary), orthographic (spelling), and morphosyntactic (grammar) features. DialectLLM produces a dialect-parallel dialog dataset spanning nine English dialects. Partnering with native linguists, we design and validate SAE-to-dialect transformation rules, ensuring authenticity. Our approach challenges the prevailing practice of applying a single morphosyntactic feature set to both user utterances and model responses, showing that models should not reproduce up to 90% of the grammatical features of a dialect. Human evaluation confirms data quality, with annotators preferring DialectLLM over prior methods in 98.8% of pairwise comparisons for dialect naturalness. We then construct DialectLLM-Bench, a dialect-parallel benchmark with 50k+ dialogs, resulting in 97k+ QA pairs, and evaluate 17 LLMs on dialect identification and response generation tasks. Even frontier models achieve under 70% accuracy, fail to reach 50% for prominent dialects like Canadian English, and systematically misclassify non-SAE dialects as American or British. Beyond benchmarking, we show that DialectLLM data also serve as a scalable LLM post-training resource, suggesting a practical path toward dialect-aware conversational AI.",
+    "status": "found"
+  },
+  "2601.22889": {
+    "arxiv_id": "2601.22889",
+    "title": "DiffuSpeech: Silent Thought, Spoken Answer via Unified Speech-Text Diffusion",
+    "authors": [
+      "Yuxuan Lou",
+      "Ziming Wu",
+      "Yaochen Wang",
+      "Yong Liu",
+      "Yingxuan Ren",
+      "Fuming Lai",
+      "Shaobing Lian",
+      "Jie Tang",
+      "Yang You"
+    ],
+    "submission_date": "2026-01-30T12:08:33Z",
+    "latest_updated": "2026-01-30T12:08:33Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22889v1"
+    ],
+    "abstract": "Current speech language models generate responses directly without explicit reasoning, leading to errors that cannot be corrected once audio is produced. We introduce \\textbf{``Silent Thought, Spoken Answer''} -- a paradigm where speech LLMs generate internal text reasoning alongside spoken responses, with thinking traces informing speech quality. To realize this, we present \\method{}, the first diffusion-based speech-text language model supporting both understanding and generation, unifying discrete text and tokenized speech under a single masked diffusion framework. Unlike autoregressive approaches, \\method{} jointly generates reasoning traces and speech tokens through iterative denoising, with modality-specific masking schedules. We also construct \\dataset{}, the first speech QA dataset with paired text reasoning traces, containing 26K samples totaling 319 hours. Experiments show \\method{} achieves state-of-the-art speech-to-speech QA accuracy, outperforming the best baseline by up to 9 points, while attaining the best TTS quality among generative models (6.2\\% WER) and preserving language understanding (66.2\\% MMLU). Ablations confirm that both the diffusion architecture and thinking traces contribute to these gains.",
+    "status": "found"
+  },
+  "2601.22890": {
+    "arxiv_id": "2601.22890",
+    "title": "A Framework for the Bayesian Calibration of Complex and Data-Scarce Models in Applied Sciences",
+    "authors": [
+      "Christina Schenk",
+      "Ignacio Romero"
+    ],
+    "submission_date": "2026-01-30T12:09:07Z",
+    "latest_updated": "2026-01-30T12:09:07Z",
+    "revised_dates": null,
+    "venue": "Arch Computat Methods Eng (2026)",
+    "latest_version": 1,
+    "versions": [
+      "2601.22890v1"
+    ],
+    "abstract": "In this work, we review the theory involved in the Bayesian calibration of complex computer models, with particular emphasis on their use for applications involving computationally expensive simulations and scarce experimental data. In the article, we present a unified framework that incorporates various Bayesian calibration methods, including well-established approaches. Furthermore, we describe their implementation and use with a new, open-source Python library, ACBICI (A Configurable BayesIan Calibration and Inference Package). All algorithms are implemented with an object-oriented structure designed to be both easy to use and readily extensible. In particular, single-output and multiple-output calibration are addressed in a consistent manner. The article completes the theory and its implementation with practical recommendations for calibrating the problems of interest. These guidelines -- currently unavailable in a unified form elsewhere -- together with the open-source Python library, are intended to support the reliable calibration of computational codes and models commonly used in engineering and related fields. Overall, this work aims to serve both as a comprehensive review of the statistical foundations and (computational) tools required to perform such calculations, and as a practical guide to Bayesian calibration with modern software tools.",
+    "status": "found"
+  },
+  "2601.22891": {
+    "arxiv_id": "2601.22891",
+    "title": "PlatoLTL: Scaling LTL-Guided Multi-Task RL",
+    "authors": [
+      "Jacques Cloete",
+      "Mathias Jackermeier",
+      "Ioannis Havoutis",
+      "Alessandro Abate"
+    ],
+    "submission_date": "2026-01-30T12:11:55Z",
+    "latest_updated": "2026-10-05T10:11:34Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2601.22891v1",
+      "2601.22891v2",
+      "2601.22891v3"
+    ],
+    "abstract": "Linear temporal logic (LTL) has emerged as a powerful formalism for specifying structured, temporally extended tasks in multi-task reinforcement learning (RL). However, while existing approaches in LTL-guided multi-task RL demonstrate success in simple environments, they suffer from challenges in representation learning and exploration efficiency when applied to high-dimensional environments with parameterized specifications. We present PlatoLTL, which elevates state-of-the-art methods to address both challenges. We model atomic propositions as instances of atomic predicates and inject task parameters directly into the goal embedding to enable efficient generalization. We also leverage simple priors on closeness to predicate satisfaction to enable and accelerate learning of complex tasks without biasing the optimal policy. We validate our approach on challenging environments including robotic manipulation and multi-drone navigation.",
+    "status": "found"
+  },
+  "2601.22892": {
+    "arxiv_id": "2601.22892",
+    "title": "Assessing the Real-World Impact of Post-Quantum Cryptography on WPA-Enterprise Networks",
+    "authors": [
+      "Lukas Köder",
+      "Nils Lohmiller",
+      "Phil Schmieder",
+      "Bastian Buck",
+      "Michael Menth",
+      "Tobias Heer"
+    ],
+    "submission_date": "2026-01-30T12:12:07Z",
+    "latest_updated": "2026-01-30T12:12:07Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22892v1"
+    ],
+    "abstract": "The advent of large-scale quantum computers poses a significant threat to contemporary network security protocols, including Wi-Fi Protected Access (WPA)-Enterprise authentication. To mitigate this threat, the adoption of Post-Quantum Cryptography (PQC) is critical. In this work, we investigate the performance impact of PQC algorithms on WPA-Enterprise-based authentication. To this end, we conduct an experimental evaluation of authentication latency using a testbed built with the open-source tools FreeRADIUS and hostapd, measuring the time spent at the client, access point, and RADIUS server. We evaluate multiple combinations of PQC algorithms and analyze their performance overhead in comparison to currently deployed cryptographic schemes. Beyond performance, we assess the security implications of these algorithm choices by relating authentication mechanisms to the quantum effort required for their exploitation. This perspective enables a systematic categorization of PQ-relevant weaknesses in WPA-Enterprise according to their practical urgency. The evaluation results show that, although PQC introduces additional authentication latency, combinations such as ML-DSA-65 and Falcon-1024 used in conjunction with ML-KEM provide a favorable trade-off between security and performance. Furthermore, we demonstrate that the resulting overhead can be effectively mitigated through session resumption. Overall, this work presents a first real-world performance evaluation of PQC-enabled WPA-Enterprise authentication and demonstrates its practical feasibility for enterprise Wi-Fi deployments.",
+    "status": "found"
+  },
+  "2601.22893": {
+    "arxiv_id": "2601.22893",
+    "title": "When Machines Get It Wrong: Large Language Models Perpetuate Autism Myths More Than Humans Do",
+    "authors": [
+      "Eduardo C. Garrido-Merchán",
+      "Adriana Constanza Cirera Tirschtigel"
+    ],
+    "submission_date": "2026-01-30T12:12:52Z",
+    "latest_updated": "2026-03-09T09:54:17Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2601.22893v1",
+      "2601.22893v2",
+      "2601.22893v3"
+    ],
+    "abstract": "As Large Language Models become ubiquitous sources of health information, understanding their capacity to accurately represent stigmatized conditions is crucial for responsible deployment. This study examines whether leading AI systems perpetuate or challenge misconceptions about Autism Spectrum Disorder, a condition particularly vulnerable to harmful myths. We administered a 30-item instrument measuring autism knowledge to 178 participants and three state-of-the-art LLMs including GPT-4, Claude, and Gemini. Contrary to expectations that AI systems would leverage their vast training data to outperform humans, we found the opposite pattern: human participants endorsed significantly fewer myths than LLMs (36.2% vs. 44.8% error rate; z = -2.59, p = .0048). In 18 of the 30 evaluated items, humans significantly outperformed AI systems. These findings reveal a critical blind spot in current AI systems and have important implications for human-AI interaction design, the epistemology of machine knowledge, and the need to center neurodivergent perspectives in AI development.",
+    "status": "found"
+  },
+  "2601.22894": {
+    "arxiv_id": "2601.22894",
+    "title": "Equatorially Asymmetric Magnetic Fields and Their Impact on Black Hole Accretion Dynamics",
+    "authors": [
+      "Ishika Palit",
+      "Indu Kalpa Dihingia",
+      "Yosuke Mizuno",
+      "Hsiang-Yi Karen Yang"
+    ],
+    "submission_date": "2026-01-30T12:13:31Z",
+    "latest_updated": "2026-01-30T12:13:31Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22894v1"
+    ],
+    "abstract": "We investigate the impact of equatorial asymmetry in the magnetic field geometry on accretion dynamics around a spinning black hole using axisymmetric general relativistic magnetohydrodynamic simulations. We consider a Fishbone--Moncrief torus orbiting a Kerr black hole with spin parameter $a = 0.9375$, threaded by large-scale magnetic fields that are asymmetric about the equatorial plane. The degree of equatorial asymmetry in the magnetic field is parametrized by an angle, with values of $30^\\circ$, $45^\\circ$, and $60^\\circ$. We examine how this equatorially asymmetric initial magnetic field configuration influences the magnetic field structure, accretion flow morphology, and angular momentum transport across a range of initial plasma beta values ($β= 0.007, 0.005, 0.001$). We find that such deformation in the magnetic field leads to noticeable changes in the inner disk structure, asymmetric outflow patterns in the poloidal plane, and time-dependent variations in accretion rates. These effects are generally more pronounced at lower beta values, where magnetic pressure dominates; in particular, the $30^\\circ$ case at $β= 0.001$ exhibits strong and persistent asymmetric inflows and outflows. Our results demonstrate that equatorially asymmetric magnetic field configurations can significantly influence the structure and variability of relativistic accretion flows. These findings motivate future extensions to full three-dimensional studies, where black hole magnetosphere can be explored in a more general setting.",
+    "status": "found"
+  },
+  "2601.22895": {
+    "arxiv_id": "2601.22895",
+    "title": "Calibrated Multivariate Distributional Regression with Pre-Rank Regularization",
+    "authors": [
+      "Aya Laajil",
+      "Elnura Zhalieva",
+      "Naomi Desobry",
+      "Souhaib Ben Taieb"
+    ],
+    "submission_date": "2026-01-30T12:13:47Z",
+    "latest_updated": "2026-01-30T12:13:47Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22895v1"
+    ],
+    "abstract": "The goal of probabilistic prediction is to issue predictive distributions that are as informative as possible, subject to being calibrated. Despite substantial progress in the univariate setting, achieving multivariate calibration remains challenging. Recent work has introduced pre-rank functions, scalar projections of multivariate forecasts and observations, as flexible diagnostics for assessing specific aspects of multivariate calibration, but their use has largely been limited to post-hoc evaluation. We propose a regularization-based calibration method that enforces multivariate calibration during training of multivariate distributional regression models using pre-rank functions. We further introduce a novel PCA-based pre-rank that projects predictions onto principal directions of the predictive distribution. Through simulation studies and experiments on 18 real-world multi-output regression datasets, we show that the proposed approach substantially improves multivariate pre-rank calibration without compromising predictive accuracy, and that the PCA pre-rank reveals dependence-structure misspecifications that are not detected by existing pre-ranks.",
+    "status": "found"
+  }
+}

@@ -1,0 +1,425 @@
+{
+  "2601.20196": {
+    "arxiv_id": "2601.20196",
+    "title": "Automated Marine Biofouling Assessment: Benchmarking Computer Vision and Multimodal LLMs on the Level of Fouling Scale",
+    "authors": [
+      "Brayden Hamilton",
+      "Tim Cashmore",
+      "Peter Driscoll",
+      "Trevor Gee",
+      "Henry Williams"
+    ],
+    "submission_date": "2026-01-28T02:46:21Z",
+    "latest_updated": "2026-01-28T02:46:21Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.20196v1"
+    ],
+    "abstract": "Marine biofouling on vessel hulls poses major ecological, economic, and biosecurity risks. Traditional survey methods rely on diver inspections, which are hazardous and limited in scalability. This work investigates automated classification of biofouling severity on the Level of Fouling (LoF) scale using both custom computer vision models and large multimodal language models (LLMs). Convolutional neural networks, transformer-based segmentation, and zero-shot LLMs were evaluated on an expert-labelled dataset from the New Zealand Ministry for Primary Industries. Computer vision models showed high accuracy at extreme LoF categories but struggled with intermediate levels due to dataset imbalance and image framing. LLMs, guided by structured prompts and retrieval, achieved competitive performance without training and provided interpretable outputs. The results demonstrate complementary strengths across approaches and suggest that hybrid methods integrating segmentation coverage with LLM reasoning offer a promising pathway toward scalable and interpretable biofouling assessment.",
+    "status": "found"
+  },
+  "2601.20197": {
+    "arxiv_id": "2601.20197",
+    "title": "Bias-Reduced Estimation of Finite Mixtures: An Application to Latent Group Structures in Panel Data",
+    "authors": [
+      "Raphaël Langevin"
+    ],
+    "submission_date": "2026-01-28T02:48:28Z",
+    "latest_updated": "2026-02-03T15:10:17Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.20197v1",
+      "2601.20197v2"
+    ],
+    "abstract": "Finite mixture models are widely used in econometric analyses to capture unobserved heterogeneity. This paper shows that maximum likelihood estimation of finite mixtures of parametric densities can suffer from substantial finite-sample bias in all parameters under mild regularity conditions. The bias arises from the influence of outliers in component densities with unbounded or large support and increases with the degree of overlap among mixture components. I show that maximizing the classification-mixture likelihood function, equipped with a consistent classifier, yields parameter estimates that are less biased than those obtained by standard maximum likelihood estimation (MLE). I then derive the asymptotic distribution of the resulting estimator and provide conditions under which oracle efficiency is achieved. Monte Carlo simulations show that conventional mixture MLE exhibits pronounced finite-sample bias, which diminishes as the sample size or the statistical distance between component densities tends to infinity. The simulations further show that the proposed estimation strategy generally outperforms standard MLE in finite samples in terms of both bias and mean squared errors under relatively weak assumptions. An empirical application to latent group panel structures using health administrative data shows that the proposed approach reduces out-of-sample prediction error by approximately 17.6% relative to the best results obtained from standard MLE procedures.",
+    "status": "found"
+  },
+  "2601.20198": {
+    "arxiv_id": "2601.20198",
+    "title": "DeRaDiff: Denoising Time Realignment of Diffusion Models",
+    "authors": [
+      "Ratnavibusena Don Shahain Manujith",
+      "Teoh Tze Tzun",
+      "Kenji Kawaguchi",
+      "Yang Zhang"
+    ],
+    "submission_date": "2026-01-28T02:53:39Z",
+    "latest_updated": "2026-02-20T08:09:00Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.20198v1",
+      "2601.20198v2"
+    ],
+    "abstract": "Recent advances align diffusion models with human preferences to increase aesthetic appeal and mitigate artifacts and biases. Such methods aim to maximize a conditional output distribution aligned with higher rewards whilst not drifting far from a pretrained prior. This is commonly enforced by KL (Kullback Leibler) regularization. As such, a central issue still remains: how does one choose the right regularization strength? Too high of a strength leads to limited alignment and too low of a strength leads to \"reward hacking\". This renders the task of choosing the correct regularization strength highly non-trivial. Existing approaches sweep over this hyperparameter by aligning a pretrained model at multiple regularization strengths and then choose the best strength. Unfortunately, this is prohibitively expensive. We introduce DeRaDiff, a denoising time realignment procedure that, after aligning a pretrained model once, modulates the regularization strength during sampling to emulate models trained at other regularization strengths without any additional training or finetuning. Extending decoding-time realignment from language to diffusion models, DeRaDiff operates over iterative predictions of continuous latents by replacing the reverse step reference distribution by a geometric mixture of an aligned and reference posterior, thus giving rise to a closed form update under common schedulers and a single tunable parameter, lambda, for on the fly control. Our experiments show that across multiple text image alignment and image-quality metrics, our method consistently provides a strong approximation for models aligned entirely from scratch at different regularization strengths. Thus, our method yields an efficient way to search for the optimal strength, eliminating the need for expensive alignment sweeps and thereby substantially reducing computational costs.",
+    "status": "found"
+  },
+  "2601.20199": {
+    "arxiv_id": "2601.20199",
+    "title": "MERGE: Next-Generation Item Indexing Paradigm for Large-Scale Streaming Recommendation",
+    "authors": [
+      "Jing Yan",
+      "Yimeng Bai",
+      "Zongyu Liu",
+      "Yahui Liu",
+      "Junwei Wang",
+      "Jingze Huang",
+      "Haoda Li",
+      "Sihao Ding",
+      "Shaohui Ruan",
+      "Yang Zhang"
+    ],
+    "submission_date": "2026-01-28T02:56:30Z",
+    "latest_updated": "2026-08-11T03:15:39Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.20199v1",
+      "2601.20199v2"
+    ],
+    "abstract": "Item indexing, which maps a large corpus of items into compact discrete representations, is critical for both discriminative and generative recommender systems, yet existing Vector Quantization (VQ)-based approaches struggle with the highly skewed and non-stationary item distributions common in industrial streaming recommenders, leading to poor assignment accuracy, imbalanced cluster occupancy, and insufficient cluster separation. To address these challenges, we propose MERGE, a next-generation item indexing paradigm that adaptively constructs clusters from scratch, dynamically monitors cluster occupancy, and forms hierarchical index structures via fine-to-coarse merging. Extensive experiments demonstrate that MERGE significantly improves assignment accuracy, cluster uniformity, and cluster separation compared with existing indexing methods, while online A/B tests show substantial gains in key business metrics, highlighting its potential as a foundational indexing approach for large-scale recommendation. Codes are available at https://github.com/baiyimeng/MERGE.",
+    "status": "found"
+  },
+  "2601.20200": {
+    "arxiv_id": "2601.20200",
+    "title": "Positive normalized solutions to a singular elliptic equation with a $L^2$-supercritical nonlinearity",
+    "authors": [
+      "Siyu Chen",
+      "Xiaojun Chang",
+      "Jiazheng Zhou"
+    ],
+    "submission_date": "2026-01-28T02:56:44Z",
+    "latest_updated": "2026-01-28T02:56:44Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.20200v1"
+    ],
+    "abstract": "This paper studies the existence of positive normalized solutions to the singular elliptic equation \\[ -Δu + λu = u^{-r} + u^{p-1} \\quad \\text{in } Ω, \\] with the Dirichlet boundary condition $u=0$ on $\\partialΩ$ and the normalization constraint $\\int_Ωu^2\\,dx = ρ$. Here $Ω\\subset\\mathbb{R}^N$ ($N\\ge3$) is a smooth bounded domain, $0<r<1$, $2+\\frac{4}{N}<p<2^*$, where $2^*$ is the critical Sobolev exponent, and $λ\\in\\mathbb{R}$ is a Lagrange multiplier. We obtain that for sufficiently small $ρ>0$, the problem admits a positive solution $(λ,u)\\in\\mathbb{R}\\times H_0^1(Ω)$. The proof is based on a variational approach using a regularized functional and a careful analysis of the limiting process.",
+    "status": "found"
+  },
+  "2601.20201": {
+    "arxiv_id": "2601.20201",
+    "title": "Further refinements of Euler-Mahonian statistics for multipermutations",
+    "authors": [
+      "Kaimei Huang",
+      "Yongzhou Wen",
+      "Sherry H. F. Yan"
+    ],
+    "submission_date": "2026-01-28T02:57:28Z",
+    "latest_updated": "2026-01-28T02:57:28Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.20201v1"
+    ],
+    "abstract": "Permutation statistics constitute a classical subject of enumerative combinatorics. In her study of the genus zeta function, Denert discovered a new Mahonian statistic for permutations, which is called the Denert's statistic ({\\bf $\\den$}) by Foata and Zeilberger. As natural extensions of the $r$-descent number ({\\bf $r\\des$}) and the $r$-major index ({\\bf $r\\maj$}) introduced by Rawlings, Liu introduced the $g$-gap $\\ell$-level descent number ({\\bf $g\\des_{\\ell}$}) and the $g$-gap $\\ell$-level major index ({\\bf $g\\maj_{\\ell}$}) for permutations. In this paper, we introduce the $g$-gap $\\ell$-level Denert's statistic ({\\bf $g\\den_{\\ell}$}) and the $g$-gap $\\ell$-level excedance number ({\\bf $g\\exc_{\\ell}$}) for multipermutations, which serve as natural generalizations of the Denert's statistic ({\\bf $\\den$}) and the excedance number ({\\bf $\\exc$}) for multipermutations first introduced by Han. By constructing two explicit bijections, we establish the equidistribution of the pairs $(g\\exc_{\\ell}, g\\den_{h} )$ and $(g\\des_{\\ell}, g\\maj_{\\ell})$ over multipermutations for all $1\\leq h\\leq g+\\ell$. Our result provides a new proof of the equidistribution of the pairs ($\\des$, $\\maj$) and ($\\exc$, $\\den$) over multipermutations originally derived by Han and enables us to confirm a recent conjecture posed by Huang-Lin-Yan. Furthermore, we demonstrate that for all $1\\leq h\\leq g+\\ell$, the pair $(g\\exc_\\ell, g\\den_{h})$ is $r$-Euler-Mahonian over multipermutations of $M=\\{1^k, 2^k, \\ldots, n^k\\}$ where $r=g+\\ell-1$ and $k\\geq 1$, which extends a recent novel result derived by Liu from permutations to multipermutations.",
+    "status": "found"
+  },
+  "2601.20202": {
+    "arxiv_id": "2601.20202",
+    "title": "From cosmological simulations to binary black hole mergers: The impact of using analytical star formation history models on gravitational-wave source populations",
+    "authors": [
+      "Sasha Levina",
+      "Floor Broekgaarden",
+      "Lieke van Son",
+      "Emanuele Berti",
+      "Amedeo Romagnolo",
+      "Ruediger Pakmor",
+      "Ana Lam"
+    ],
+    "submission_date": "2026-01-28T02:58:02Z",
+    "latest_updated": "2026-10-08T23:41:38Z",
+    "revised_dates": null,
+    "venue": "The Astrophysical Journal, Volume 1009, Issue 2, id.240, 20 pp.(2026)",
+    "latest_version": 2,
+    "versions": [
+      "2601.20202v1",
+      "2601.20202v2"
+    ],
+    "abstract": "Observations of binary black hole (BBH) mergers provide a unique window into the lives of massive stars across cosmic time. Connecting redshift-dependent merger properties to massive star progenitors requires accurate models of cosmic star formation and chemical enrichment histories. Analytical fits for the metallicity-specific cosmic star formation rate density S(Z, z) are commonly used as proxies for the complex underlying star formation history, yet they remain unconstrained. Using the IllustrisTNG cosmological simulations, we evaluate the accuracy of these analytical S(Z, z) prescriptions. By coupling the simulated and analytical S(Z, z) to the population synthesis code COMPAS, we investigate the resulting BBH merger rates and mass distributions. We find that analytical S(Z, z) prescriptions can overestimate BBH merger rates at high redshift ($z\\gtrsim6$) by up to a factor of $10$-$10^4$, depending on cosmological simulation resolution, and can introduce spurious features in the BBH mass distribution. For example, they can produce an artificial feature near $8\\,M_\\odot$ in the primary mass distribution at $z\\lesssim2$, which is absent when using the full simulation-based S(Z, z), while simultaneously suppressing high-mass features. These discrepancies arise because simple analytical models fail to capture a high-metallicity bump and a more flattened low-metallicity tail in the simulated S(Z, z) metallicity distribution. Our results highlight the importance of accurate star formation histories for modeling BBH populations, demonstrate the limitation of widely used analytical S(Z, z) fits, and underscore the need for careful integration of cosmological simulations, analytical fits, and population synthesis when interpreting gravitational-wave observations.",
+    "status": "found"
+  },
+  "2601.20203": {
+    "arxiv_id": "2601.20203",
+    "title": "Minimum-Cost Network Flow with Dual Predictions",
+    "authors": [
+      "Zhiyang Chen",
+      "Hailong Yao",
+      "Xia Yin"
+    ],
+    "submission_date": "2026-01-28T03:01:22Z",
+    "latest_updated": "2026-01-28T03:01:22Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.20203v1"
+    ],
+    "abstract": "Recent work has shown that machine-learned predictions can provably improve the performance of classic algorithms. In this work, we propose the first minimum-cost network flow algorithm augmented with a dual prediction. Our method is based on a classic minimum-cost flow algorithm, namely $\\varepsilon$-relaxation. We provide time complexity bounds in terms of the infinity norm prediction error, which is both consistent and robust. We also prove sample complexity bounds for PAC-learning the prediction. We empirically validate our theoretical results on two applications of minimum-cost flow, i.e., traffic networks and chip escape routing, in which we learn a fixed prediction, and a feature-based neural network model to infer the prediction, respectively. Experimental results illustrate $12.74\\times$ and $1.64\\times$ average speedup on two applications.",
+    "status": "found"
+  },
+  "2601.20204": {
+    "arxiv_id": "2601.20204",
+    "title": "Mode-Wise Spectral Criteria for Coupled Mass Transport in Hybrid PDE--ODE Tumor Microenvironments",
+    "authors": [
+      "Jiguang Yu",
+      "Louis Shuo Wang",
+      "Zonghao Liu",
+      "Jingfeng Liu"
+    ],
+    "submission_date": "2026-01-28T03:01:27Z",
+    "latest_updated": "2026-01-28T03:01:27Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.20204v1"
+    ],
+    "abstract": "We study coupled mass transport in a tumor--microenvironment setting with two motile densities $(S,R)$ and non-motile state switching $(P,A)$. The populations diffuse and undergo chemotactic drift; $(P,A)$ follow pointwise ODE switching. A decoupled inhibitory field $D$ satisfies a damped Neumann heat equation, giving maximum-principle bounds and exponential decay. Together with the pointwise invariant $P+A$, these identities yield global existence, positivity, and long-time reduction to limiting $(S,R)$ kinetics with a unique globally attracting coexistence state. Neumann eigenmode reduction gives closed dispersion relations. The base $(S,R)$ reaction--diffusion block remains stable for all nonconstant modes for any $d_S,d_R>0$, excluding classical Turing destabilization. Chemotaxis is posed via a diffusive cue $c$, since $\\nabla A$ is undefined for non-diffusive $A$. In one-way damped coupling, the linearized mode matrix is block triangular and leaves the $(S,R)$ spectrum unchanged. Two-way coupling adds a feedback rank-one mobility correction, induces effective cross-diffusion, and admits mode growth. We give explicit trace/determinant criteria for unstable Laplacian modes and the resulting instability thresholds.",
+    "status": "found"
+  },
+  "2601.20205": {
+    "arxiv_id": "2601.20205",
+    "title": "Hyperparameter Transfer with Mixture-of-Expert Layers",
+    "authors": [
+      "Tianze Jiang",
+      "Blake Bordelon",
+      "Cengiz Pehlevan",
+      "Boris Hanin"
+    ],
+    "submission_date": "2026-01-28T03:02:30Z",
+    "latest_updated": "2026-05-21T16:25:08Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2601.20205v1",
+      "2601.20205v2",
+      "2601.20205v3"
+    ],
+    "abstract": "Mixture-of-Experts (MoE) layers have emerged as an important tool in scaling up modern neural networks by decoupling total trainable parameters from activated parameters in the forward pass for each token. However, sparse MoEs add complexity to training due to (i) new trainable parameters (router weights) that, like all other parameter groups, require hyperparameter (HP) tuning; (ii) new architecture scale dimensions (number of and size of experts) that must be chosen and potentially taken large. To make HP selection cheap and reliable, we propose a new parameterization for transformer models with MoE layers when scaling model width, depth, number of experts, and expert (hidden) size. Our parameterization is justified by a novel dynamical mean-field theory (DMFT) analysis. When varying different model dimensions trained at a fixed token budget, we find empirically that our parameterization enables reliable HP transfer across models from 51M to over 2B total parameters. We further take HPs identified from sweeping small models on a short token horizon to train larger models on longer horizons and report performant model behaviors.",
+    "status": "found"
+  },
+  "2601.20206": {
+    "arxiv_id": "2601.20206",
+    "title": "Towards Intelligent Urban Park Development Monitoring: LLM Agents for Multi-Modal Information Fusion and Analysis",
+    "authors": [
+      "Zixuan Xiao",
+      "Chunguang Hu",
+      "Jun Ma"
+    ],
+    "submission_date": "2026-01-28T03:03:15Z",
+    "latest_updated": "2026-01-28T03:03:15Z",
+    "revised_dates": null,
+    "venue": "IEEE International Geoscience and Remote Sensing Symposium (IGARSS) 2025, Aug 3-8 2025",
+    "latest_version": 1,
+    "versions": [
+      "2601.20206v1"
+    ],
+    "abstract": "As an important part of urbanization, the development monitoring of newly constructed parks is of great significance for evaluating the effect of urban planning and optimizing resource allocation. However, traditional change detection methods based on remote sensing imagery have obvious limitations in high-level and intelligent analysis, and thus are difficult to meet the requirements of current urban planning and management. In face of the growing demand for complex multi-modal data analysis in urban park development monitoring, these methods often fail to provide flexible analysis capabilities for diverse application scenarios. This study proposes a multi-modal LLM agent framework, which aims to make full use of the semantic understanding and reasoning capabilities of LLM to meet the challenges in urban park development monitoring. In this framework, a general horizontal and vertical data alignment mechanism is designed to ensure the consistency and effective tracking of multi-modal data. At the same time, a specific toolkit is constructed to alleviate the hallucination issues of LLM due to the lack of domain-specific knowledge. Compared to vanilla GPT-4o and other agents, our approach enables robust multi-modal information fusion and analysis, offering reliable and scalable solutions tailored to the diverse and evolving demands of urban park development monitoring.",
+    "status": "found"
+  },
+  "2601.20207": {
+    "arxiv_id": "2601.20207",
+    "title": "Local Regularity Estimation through Sobolev-Scale Norm Profile",
+    "authors": [
+      "Xiaobin Li",
+      "Leevan Ling",
+      "Yizhong Sun"
+    ],
+    "submission_date": "2026-01-28T03:06:44Z",
+    "latest_updated": "2026-08-11T18:57:35Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.20207v1",
+      "2601.20207v2"
+    ],
+    "abstract": "We develop a kernel-based approach for estimating the spatially varying Sobolev regularity~$s$ of an unknown $d$-variate function~$f$ from scattered sampling data, which quantifies the degree of local differentiability supported by the data. Relying only on neighborhood data near the point of interest $z\\in Ω_z$, our method constructs a sequence of Sobolev-space reproducing kernel interpolants whose kernel smoothness order is specified by an index~$m > d/2$. The native-space norms of these interpolants are evaluated over a bounded range of~$m$, producing a \\emph{Sobolev-scale norm profile}. The elbow of this profile serves as a quantitative probe of the underlying local regularity~$s(Ω_z)$. In particular, when $m > s(Ω_z)$, the profile exhibits rapid, near-worst-case growth governed by the classical upper bound associated with the conditioning of the kernel matrix. A band-limited surrogate analysis explains this transition and establishes a lower bound linking native-norm growth to the Sobolev regularity of~$f$. Two complementary strategies are incorporated for further enhancement: (i)~a \\emph{stencil-shift} subroutine, which repositions local neighborhoods to avoid crossing discontinuities whenever possible, thereby suppressing artifacts in the norm estimates; and (ii) a \\emph{secant-based tail screening strategy} that uses two high-order norm evaluations to identify candidate low-regularity neighborhoods at reduced computational cost. Numerical experiments on synthetic test functions and turbulent-flow data demonstrate recovery of spatially varying regularity, while a surface conservation-law example illustrates the detection of evolving low-regularity regions in time-dependent PDE data.",
+    "status": "found"
+  },
+  "2601.20208": {
+    "arxiv_id": "2601.20208",
+    "title": "TRACER: Texture-Robust Affordance Chain-of-Thought for Deformable-Object Region Grounding",
+    "authors": [
+      "Wanjun Jia",
+      "Kang Li",
+      "Fan Yang",
+      "Mengfei Duan",
+      "Wenrui Chen",
+      "Yiming Jiang",
+      "Hui Zhang",
+      "Kailun Yang",
+      "Zhiyong Li",
+      "Yaonan Wang"
+    ],
+    "submission_date": "2026-01-28T03:12:18Z",
+    "latest_updated": "2026-10-03T04:48:25Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.20208v1",
+      "2601.20208v2"
+    ],
+    "abstract": "The central challenge in robotic manipulation of deformable objects lies in aligning high-level semantic instructions with physical interaction points under complex appearance and texture variations. Existing vision-based affordance prediction methods often suffer from boundary overflow and fragmented functional regions. To address these issues, we propose TRACER, a Texture-Robust Affordance Chain-of-Thought for Deformable-Object Region Grounding framework that maps hierarchical semantic reasoning to appearance-robust and physically consistent interaction regions. Specifically, a Tree-structured Affordance Chain-of-Thought (TA-CoT) decomposes high-level task intentions into hierarchical affordance-semantic instructions. A Spatially-Constrained Boundary Refinement (SCBR) mechanism suppresses prediction spillover and guides responses toward valid object regions. Furthermore, an Interactive Convergent Refinement Flow (ICRF) refines dispersed affordance responses into coherent regions, improving spatial continuity and physical plausibility. Experiments on the Fine-AGDDO15 dataset and a real-world robotic platform demonstrate that TRACER improves affordance grounding precision across diverse textures and patterns. It also enhances long-horizon manipulation success, bridging high-level semantic reasoning and low-level physical execution. The source code and dataset will be made publicly available at https://github.com/Dikay1/TRACER.",
+    "status": "found"
+  },
+  "2601.20209": {
+    "arxiv_id": "2601.20209",
+    "title": "Spark: Strategic Policy-Aware Exploration via Dynamic Branching for Long-Horizon Agentic Learning",
+    "authors": [
+      "Jinyang Wu",
+      "Shuo Yang",
+      "Changpeng Yang",
+      "Yuhao Shen",
+      "Shuai Zhang",
+      "Zhengqi Wen",
+      "Jianhua Tao"
+    ],
+    "submission_date": "2026-01-28T03:15:34Z",
+    "latest_updated": "2026-06-20T07:35:02Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.20209v1",
+      "2601.20209v2"
+    ],
+    "abstract": "Reinforcement learning has empowered large language models to act as intelligent agents, yet training them for long-horizon tasks remains challenging due to the scarcity of high-quality trajectories, especially under limited resources. Existing methods typically scale up rollout sizes and indiscriminately allocate computational resources among intermediate steps. Such attempts inherently waste substantial computation budget on trivial steps while failing to guarantee sample quality. To address this, we propose \\textbf{Spark} (\\textbf{S}trategic \\textbf{P}olicy-\\textbf{A}ware explo\\textbf{R}ation via \\textbf{K}ey-state dynamic branching), a novel framework that selectively branches at critical decision states for resource-efficient exploration. Our key insight is to activate adaptive branching exploration at critical decision points to probe promising trajectories, thereby achieving precise resource allocation that prioritizes sampling quality over blind coverage. This design leverages the agent's intrinsic decision-making signals to reduce dependence on human priors, enabling the agent to autonomously expand exploration and achieve stronger generalization. Experiments across diverse tasks (e.g., embodied planning), demonstrate that \\textsc{Spark} achieves superior success rates with significantly fewer training samples, exhibiting robust generalization even in unseen scenarios. Our code and checkpoints are available at https://github.com/jinyangwu/SPARK.",
+    "status": "found"
+  },
+  "2601.20210": {
+    "arxiv_id": "2601.20210",
+    "title": "Gamma-ray Emission from the S147 Region: Indication of Escaping Cosmic Rays Interacting with Molecular Clouds",
+    "authors": [
+      "Huan Yang",
+      "Bing Liu",
+      "Houdun Zeng",
+      "Xiaoyuan Huang"
+    ],
+    "submission_date": "2026-01-28T03:17:33Z",
+    "latest_updated": "2026-09-09T10:49:00Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.20210v1",
+      "2601.20210v2"
+    ],
+    "abstract": "We present a detailed analysis of $γ$-ray emission from the middle-aged supernova remnant (SNR) S147 (G180.0$-$1.7) using approximately 16.5 years of Fermi-LAT data. Spatially, a new extended $γ$-ray component distinct from the emission associated with the H$α$ filaments of the SNR shell is identified. This new component exhibits a strong spatial correlation with dense molecular clouds (MCs) identified in CO emission at Local Standard of Rest velocities of $0$--$5\\,\\mathrm{km\\,s^{-1}}$. Spectrally, the cloud-associated emission implies an underlying cosmic-ray (CR) proton population described by a hard power-law with an index of $Γ\\approx 2.1$, compatible with the standard diffusive shock acceleration prediction. We interpret the $γ$-ray emission in this region with a hadronic scenario involving two distinct CR populations: trapped CRs reaccelerated within the radiative SNR shell as proposed in previous work, and escaping CRs illuminating the nearby MCs. The derived CR proton intensity in the MC region significantly exceeds the local Galactic background measured by AMS-02, consistent with the interpretation that the cloud is illuminated by particles accelerated by S147. These findings provide observational support for a CR-escape scenario during the earlier evolutionary phases of this middle-aged SNR and highlight the S147 MC component as a potential candidate for detection at TeV energies by LHAASO.",
+    "status": "found"
+  },
+  "2601.20211": {
+    "arxiv_id": "2601.20211",
+    "title": "High-Resolution Mapping of Port Dynamics from Open-Access AIS Data in Tokyo Bay",
+    "authors": [
+      "Moritz Hütten"
+    ],
+    "submission_date": "2026-01-28T03:22:13Z",
+    "latest_updated": "2026-01-28T03:22:13Z",
+    "revised_dates": null,
+    "venue": "Geomatics 2026, 6(1), 10",
+    "latest_version": 1,
+    "versions": [
+      "2601.20211v1"
+    ],
+    "abstract": "Knowledge about vessel activity in port areas and around major industrial zones provides insights into economic trends, supports decision-making for shipping and port operators, and contributes to maritime safety. Vessel data from terrestrial receivers of the Automatic Identification System (AIS) have become increasingly openly available, and we demonstrate that such data can be used to infer port activities at high resolution and with precision comparable to official statistics. We analyze open-access AIS data from a three-month period in 2024 for Tokyo Bay, located in Japan's most densely populated urban region. Accounting for uneven data coverage, we reconstruct vessel activity in Tokyo Bay at $\\sim\\,$30~m resolution and identify 161 active berths across seven major port areas in the bay. During the analysis period, we find an average of $35\\pm17_{\\text{stat}}$ vessels moving within the bay at any given time, and $293\\pm22_{\\text{stat}}+65_{\\text{syst}}-10_{\\text{syst}}$ vessels entering or leaving the bay daily, with an average gross tonnage of $11{,}860^{+280}_{-\\;\\,50}$. These figures indicate an accelerating long-term trend toward fewer but larger vessels in Tokyo Bay's commercial traffic. Furthermore, we find that in dense urban environments, radio shadows in vessel AIS data can reveal the precise locations of inherently passive receiver stations.",
+    "status": "found"
+  },
+  "2601.20212": {
+    "arxiv_id": "2601.20212",
+    "title": "A low regularity exponential-type integrator for the derivative nonlinear Schrödinger equation",
+    "authors": [
+      "Lun Ji",
+      "Hang Li",
+      "Alexander Ostermann"
+    ],
+    "submission_date": "2026-01-28T03:22:18Z",
+    "latest_updated": "2026-01-28T03:22:18Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.20212v1"
+    ],
+    "abstract": "In this work, we present a first-order unfiltered exponential integrator for the one-dimensional derivative nonlinear Schrödinger equation with low regularity. Our analysis shows that for any $s>\\frac12$, the method converges with first-order in $H^s(\\mathbb{T})$ for initial data $u_0\\in H^{s+1}(\\mathbb{T})$. Moreover, we constructed a symmetrized version of this method that performs better in terms of both global error and conservation behavior. To the best of our knowledge, these are the first low regularity integrators for the derivative nonlinear Schrödinger equation. Numerical experiments illustrate our theoretical findings.",
+    "status": "found"
+  },
+  "2601.20213": {
+    "arxiv_id": "2601.20213",
+    "title": "Averages of Exponentials from the point of view of Superintegrability",
+    "authors": [
+      "A. Morozov"
+    ],
+    "submission_date": "2026-01-28T03:27:40Z",
+    "latest_updated": "2026-03-29T01:20:31Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2601.20213v1",
+      "2601.20213v2",
+      "2601.20213v3"
+    ],
+    "abstract": "We calculate Gaussian averages of arbitrary exponentials of the matrix variable $X$ with the help of superintegrability, which provides explicit expressions for Schur averages. As in the simpler cases the answer is expressed in terms of Laguerre polynomials, but in a somewhat sophisticated way. It involves triangular sum over partitions, with simple exponential factor and a complicated polynomial prefactor. Some ingredients of the formula are not found in full generality and there is still a room for further work.",
+    "status": "found"
+  },
+  "2601.20214": {
+    "arxiv_id": "2601.20214",
+    "title": "Asymptotic stability of Cayley graphs on abelian groups",
+    "authors": [
+      "Binzhou Xia",
+      "Zhishuo Zhang",
+      "Shasha Zheng"
+    ],
+    "submission_date": "2026-01-28T03:29:56Z",
+    "latest_updated": "2026-09-17T02:54:39Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.20214v1",
+      "2601.20214v2"
+    ],
+    "abstract": "For a finite group $G$, we say that a Cayley graph $Γ$ on $G$ is a most rigid representation (MRR) of $G$ if its full automorphism group has the smallest possible order among all Cayley graphs on $G$, and say that $Γ$ is stable if every automorphism of $Γ\\times K_2$ comes from $\\mathrm{Aut}(Γ)\\times\\Aut(K_2)$. Although the study of stability has attracted significant attention, particularly regarding Cayley graphs on abelian groups, a complete classification is currently out of reach even for Cayley graphs on cyclic groups. In this paper, we prove that almost all Cayley graphs on finite abelian groups are stable MRRs. This strengthens the main result of Dobson, Spiga and Verret [Combinatorica, 36 (2016), no.~4, 371--393], which states that almost all Cayley graphs on finite abelian groups are MRRs.",
+    "status": "found"
+  },
+  "2601.20215": {
+    "arxiv_id": "2601.20215",
+    "title": "Towards End-to-End Alignment of User Satisfaction via Questionnaire in Video Recommendation",
+    "authors": [
+      "Na Li",
+      "Jiaqi Yu",
+      "Minzhi Xie",
+      "Tiantian He",
+      "Xiaoxiao Xu",
+      "Zixiu Wang",
+      "Lantao Hu",
+      "Yongqi Liu",
+      "Han Li",
+      "Kaiqiao Zhan",
+      "Kun Gai"
+    ],
+    "submission_date": "2026-01-28T03:32:21Z",
+    "latest_updated": "2026-01-28T03:32:21Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.20215v1"
+    ],
+    "abstract": "Short-video recommender systems typically optimize ranking models using dense user behavioral signals, such as clicks and watch time. However, these signals are only indirect proxies of user satisfaction and often suffer from noise and bias. Recently, explicit satisfaction feedback collected through questionnaires has emerged as a high-quality direct alignment supervision, but is extremely sparse and easily overwhelmed by abundant behavioral data, making it difficult to incorporate into online recommendation models. To address these challenges, we propose a novel framework which is towards End-to-End Alignment of user Satisfaction via Questionaire, named EASQ, to enable real-time alignment of ranking models with true user satisfaction. Specifically, we first construct an independent parameter pathway for sparse questionnaire signals by combining a multi-task architecture and a lightweight LoRA module. The multi-task design separates sparse satisfaction supervision from dense behavioral signals, preventing the former from being overwhelmed. The LoRA module pre-inject these preferences in a parameter-isolated manner, ensuring stability in the backbone while optimizing user satisfaction. Furthermore, we employ a DPO-based optimization objective tailored for online learning, which aligns the main model outputs with sparse satisfaction signals in real time. This design enables end-to-end online learning, allowing the model to continuously adapt to new questionnaire feedback while maintaining the stability and effectiveness of the backbone. Extensive offline experiments and large-scale online A/B tests demonstrate that EASQ consistently improves user satisfaction metrics across multiple scenarios. EASQ has been successfully deployed in a production short-video recommendation system, delivering significant and stable business gains.",
+    "status": "found"
+  }
+}

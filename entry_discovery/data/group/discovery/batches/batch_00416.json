@@ -1,0 +1,415 @@
+{
+  "2601.21476": {
+    "arxiv_id": "2601.21476",
+    "title": "Thinking Seeds: Restarting On-Policy RL from the Model's Own Past Reasoning States",
+    "authors": [
+      "Lei Yang",
+      "Wei Bi",
+      "Chenxi Sun",
+      "Renren Jin",
+      "Deyi Xiong"
+    ],
+    "submission_date": "2026-01-29T09:56:15Z",
+    "latest_updated": "2026-10-17T09:32:30Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2601.21476v1",
+      "2601.21476v2",
+      "2601.21476v3"
+    ],
+    "abstract": "On-policy reinforcement learning (RL) for language models trains on the reasoning states visited by the current policy. As training sharpens the policy, some states reached by earlier checkpoints disappear from its rollouts. We ask whether those states can be brought back without treating the actions that created them as ordinary on-policy data. A token-level importance ratio corrects the selected action, but it does not correct the preceding context; the resulting state-distribution mismatch is bounded by the policy divergence accumulated along the sequence. We therefore use an earlier rollout as a starting state and let the current policy generate the continuation. We call this procedure \\textbf{Thinking Seeds}. Its length-ratio variant improves over on-policy training and two off-policy extensions on mathematical reasoning with two backbones. On code generation, using the prefix only as a state reaches 52.19, compared with 50.20 when prefix actions are also trained and 48.58 for on-policy training. At the population level, the continuation has the policy-gradient form of a restart objective, while the treatment of prefix actions is an explicit design choice. Relay inference and token-position analyses provide evidence for the state-coverage and action-mismatch motivations.",
+    "status": "found"
+  },
+  "2601.21477": {
+    "arxiv_id": "2601.21477",
+    "title": "Mean-Field Control on Sparse Graphs: From Local Limits to GNNs via Neighborhood Distributions",
+    "authors": [
+      "Tobias Schmidt",
+      "Kai Cui"
+    ],
+    "submission_date": "2026-01-29T09:57:48Z",
+    "latest_updated": "2026-01-29T09:57:48Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.21477v1"
+    ],
+    "abstract": "Mean-field control (MFC) offers a scalable solution to the curse of dimensionality in multi-agent systems but traditionally hinges on the restrictive assumption of exchangeability via dense, all-to-all interactions. In this work, we bridge the gap to real-world network structures by proposing a rigorous framework for MFC on large sparse graphs. We redefine the system state as a probability measure over decorated rooted neighborhoods, effectively capturing local heterogeneity. Our central contribution is a theoretical foundation for scalable reinforcement learning in this setting. We prove horizon-dependent locality: for finite-horizon problems, an agent's optimal policy at time t depends strictly on its (T-t)-hop neighborhood. This result renders the infinite-dimensional control problem tractable and underpins a novel Dynamic Programming Principle (DPP) on the lifted space of neighborhood distributions. Furthermore, we formally and experimentally justify the use of Graph Neural Networks (GNNs) for actor-critic algorithms in this context. Our framework naturally recovers classical MFC as a degenerate case while enabling efficient, theoretically grounded control on complex sparse topologies.",
+    "status": "found"
+  },
+  "2601.21478": {
+    "arxiv_id": "2601.21478",
+    "title": "Differential Dynamic Causal Nets: Model Construction, Identification and Group Comparisons",
+    "authors": [
+      "Kang You",
+      "Gary Green",
+      "Jian Zhang"
+    ],
+    "submission_date": "2026-01-29T09:58:52Z",
+    "latest_updated": "2026-01-29T09:58:52Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.21478v1"
+    ],
+    "abstract": "Pathophysiolpgical modelling of brain systems from microscale to macroscale remains difficult in group comparisons partly because of the infeasibility of modelling the interactions of thousands of neurons at the scales involved. Here, to address the challenge, we present a novel approach to construct differential causal networks directly from electroencephalogram (EEG) data. The proposed network is based on conditionally coupled neuronal circuits which describe the average behaviour of interacting neuron populations that contribute to observed EEG data. In the network, each node represents a parameterised local neural system while directed edges stand for node-wise connections with transmission parameters. The network is hierarchically structured in the sense that node and edge parameters are varying in subjects but follow a mixed-effects model. A novel evolutionary optimisation algorithm for parameter inference in the proposed method is developed using a loss function derived from Chen-Fliess expansions of stochastic differential equations. The method is demonstrated by application to the fitting of coupled Jansen-Rit local models. The performance of the proposed method is evaluated on both synthetic and real EEG data. In the real EEG data analysis, we track changes in the parameters that characterise dynamic causality within brains that demonstrate epileptic activity. We show evidence of network functional disruptions, due to imbalance of excitatory-inhibitory interneurons and altered epileptic brain connectivity, before and during seizure periods.",
+    "status": "found"
+  },
+  "2601.21479": {
+    "arxiv_id": "2601.21479",
+    "title": "Hypernetwork-Based Adaptive Aggregation for Multimodal Multiple-Instance Learning in Predicting Coronary Calcium Debulking",
+    "authors": [
+      "Kaito Shiku",
+      "Ichika Seo",
+      "Tetsuya Matoba",
+      "Rissei Hino",
+      "Yasuhiro Nakano",
+      "Ryoma Bise"
+    ],
+    "submission_date": "2026-01-29T10:00:04Z",
+    "latest_updated": "2026-01-29T10:00:04Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.21479v1"
+    ],
+    "abstract": "In this paper, we present the first attempt to estimate the necessity of debulking coronary artery calcifications from computed tomography (CT) images. We formulate this task as a Multiple-instance Learning (MIL) problem. The difficulty of this task lies in that physicians adjust their focus and decision criteria for device usage according to tabular data representing each patient's condition. To address this issue, we propose a hypernetwork-based adaptive aggregation transformer (HyperAdAgFormer), which adaptively modifies the feature aggregation strategy for each patient based on tabular data through a hypernetwork. The experiments using the clinical dataset demonstrated the effectiveness of HyperAdAgFormer. The code is publicly available at https://github.com/Shiku-Kaito/HyperAdAgFormer.",
+    "status": "found"
+  },
+  "2601.21480": {
+    "arxiv_id": "2601.21480",
+    "title": "Long-term evolution of regulatory DNA sequences. Part 2: Theory and future challenges",
+    "authors": [
+      "Elia Mascolo",
+      "Réka Borbély",
+      "Noa Ottilie Borst",
+      "Nicholas H Barton",
+      "Justin Crocker",
+      "Gašper Tkačik"
+    ],
+    "submission_date": "2026-01-29T10:00:11Z",
+    "latest_updated": "2026-01-29T10:00:11Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.21480v1"
+    ],
+    "abstract": "Promoters and enhancers are cis-regulatory elements (CREs), DNA sequences that bind transcription factor (TF) proteins to up- or down-regulate target genes. Decades-long efforts yielded TF-DNA interaction models that predict how strongly an individual TF binds arbitrary DNA sequences and how individual binding events on the CRE combine to affect gene expression. These insights can be synthesized into a global, biophysically-realistic, and quantitative genotype-phenotype (GP) map for gene regulation, a \"holy grail\" for the application of evolutionary theory. A global map provides a rare opportunity to simulate long-term evolution of regulatory sequences and pose several fundamental questions: How long does it take to evolve CREs de novo? How many non-trivial regulatory functions exist in sequence space? How connected are they? For which regulatory architecture is CRE evolution most rapid and evolvable? In this article, the second of a two-part series, we review the application of evolutionary concepts - epistasis, robustness, evolvability, tunability, plasticity, and bet-hedging - to the evolution of gene regulatory sequences. We then evaluate the potential for a unifying theory for the evolution of regulatory sequences, and identify key open challenges.",
+    "status": "found"
+  },
+  "2601.21481": {
+    "arxiv_id": "2601.21481",
+    "title": "Compressed Sensing-Driven Near-Field Localization Exploiting Array of Subarrays",
+    "authors": [
+      "Sai Pavan Deram",
+      "Jacopo Pegoraro",
+      "Javier Lorca Hernando",
+      "Jesus O. Lacruz",
+      "Joerg Widmer"
+    ],
+    "submission_date": "2026-01-29T10:00:27Z",
+    "latest_updated": "2026-01-29T10:00:27Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.21481v1"
+    ],
+    "abstract": "Near-field localization for ISAC requires large-aperture arrays, making fully-digital implementations prohibitively complex and costly. While sparse subarray architectures can reduce cost, they introduce severe estimation ambiguity from grating lobes. To address both issues, we propose SHARE (Sparse Hierarchical Angle-Range Estimation), a novel two-stage sparse recovery algorithm. SHARE operates in two stages. It first performs coarse, unambiguous angle estimation using individual subarrays to resolve the grating lobe ambiguity. It then leverages the full sparse aperture to perform a localized joint angle-range search. This hierarchical approach avoids an exhaustive and computationally intensive two-dimensional grid search while preserving the high resolution of the large aperture. Simulation results show that SHARE significantly outperforms conventional one-shot sparse recovery methods, such as Orthogonal Matching Pursuit (OMP), in both localization accuracy and robustness. Furthermore, we show that SHARE's overall localization accuracy is comparable to or even surpasses that of the fully-digital 2D-MUSIC algorithm, despite MUSIC having access to the complete, uncompressed data from every antenna element. SHARE therefore provides a practical path for high-resolution near-field ISAC systems.",
+    "status": "found"
+  },
+  "2601.21482": {
+    "arxiv_id": "2601.21482",
+    "title": "Learning-Based Sensor Scheduling for Delay-Aware and Stable Remote State Estimation",
+    "authors": [
+      "Nho-Duc Tran",
+      "Aamir Mahmood",
+      "Mikael Gidlund"
+    ],
+    "submission_date": "2026-01-29T10:01:18Z",
+    "latest_updated": "2026-01-29T10:01:18Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.21482v1"
+    ],
+    "abstract": "Unpredictable sensor-to-estimator delays fundamentally distort what matters for wireless remote state estimation: not just freshness, but how delay interacts with sensor informativeness and energy efficiency. In this paper, we present a unified, delay-aware framework that models this coupling explicitly and quantifies a delay-dependent information gain, motivating an information-per-joule scheduling objective beyond age of information proxies (AoI). To this end, we first introduce an efficient posterior-fusion update that incorporates delayed measurements without state augmentation, providing a consistent approximation to optimal delayed Kalman updates, and then derive tractable stability conditions ensuring that bounded estimation error is achievable under stochastic, delayed scheduling. This conditions highlight the need for unstable modes to be observable across sensors. Building on this foundation, we cast scheduling as a Markov decision process and develop a proximal policy optimization (PPO) scheduler that learns directly from interaction, requires no prior delay model, and explicitly trades off estimation accuracy, freshness, sensor heterogeneity, and transmission energy through normalized rewards. In simulations with heterogeneous sensors, realistic link-energy models, and random delays, the proposed method learns stably and consistently achieves lower estimation error at comparable energy than random scheduling and strong RL baselines (DQN, A2C), while remaining robust to variations in measurement availability and process/measurement noise.",
+    "status": "found"
+  },
+  "2601.21483": {
+    "arxiv_id": "2601.21483",
+    "title": "DimStance: Multilingual Datasets for Dimensional Stance Analysis",
+    "authors": [
+      "Jonas Becker",
+      "Liang-Chih Yu",
+      "Shamsuddeen Hassan Muhammad",
+      "Jan Philip Wahle",
+      "Terry Ruas",
+      "Idris Abdulmumin",
+      "Lung-Hao Lee",
+      "Nelson Odhiambo",
+      "Lilian Wanzare",
+      "Wen-Ni Liu",
+      "Tzu-Mi Lin",
+      "Zhe-Yu Xu",
+      "Ying-Lung Lin",
+      "Jin Wang",
+      "Maryam Ibrahim Mukhtar",
+      "Bela Gipp",
+      "Saif M. Mohammad"
+    ],
+    "submission_date": "2026-01-29T10:02:08Z",
+    "latest_updated": "2026-02-06T09:40:59Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.21483v1",
+      "2601.21483v2"
+    ],
+    "abstract": "Stance detection is an established task that classifies an author's attitude toward a specific target into categories such as Favor, Neutral, and Against. Beyond categorical stance labels, we leverage a long-established affective science framework to model stance along real-valued dimensions of valence (negative-positive) and arousal (calm-active). This dimensional approach captures nuanced affective states underlying stance expressions, enabling fine-grained stance analysis. To this end, we introduce DimStance, the first dimensional stance resource with valence-arousal (VA) annotations. This resource comprises 11,746 target aspects in 7,365 texts across five languages (English, German, Chinese, Nigerian Pidgin, and Swahili) and two domains (politics and environmental protection). To facilitate the evaluation of stance VA prediction, we formulate the dimensional stance regression task, analyze cross-lingual VA patterns, and benchmark pretrained and large language models under regression and prompting settings. Results show competitive performance of fine-tuned LLM regressors, persistent challenges in low-resource languages, and limitations of token-based generation. DimStance provides a foundation for multilingual, emotion-aware, stance analysis and benchmarking.",
+    "status": "found"
+  },
+  "2601.21484": {
+    "arxiv_id": "2601.21484",
+    "title": "ETS: Energy-Guided Test-Time Scaling for Training-Free RL Alignment",
+    "authors": [
+      "Xiuyu Li",
+      "Jinkai Zhang",
+      "Mingyang Yi",
+      "Yu Li",
+      "Longqiang Wang",
+      "Yue Wang",
+      "Ju Fan"
+    ],
+    "submission_date": "2026-01-29T10:06:52Z",
+    "latest_updated": "2026-05-19T09:15:43Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2601.21484v1",
+      "2601.21484v2",
+      "2601.21484v3"
+    ],
+    "abstract": "Reinforcement Learning (RL) post-training alignment for language models is effective, but also costly and unstable in practice, owing to its complicated training process. To address this, we propose a training-free inference method to sample directly from the optimal RL policy. The transition probability applied to Masked Language Modeling (MLM) consists of a reference policy model and an energy term. Based on this, our algorithm, Energy-Guided Test-Time Scaling (ETS), estimates the key energy term via online Monte Carlo, with a provable convergence rate. Moreover, to ensure practical efficiency, ETS leverages modern acceleration frameworks alongside tailored importance sampling estimators, substantially reducing inference latency while provably preserving sampling quality. Experiments on MLM (including autoregressive models and diffusion language models) across reasoning, coding, and science benchmarks show that our ETS consistently improves generation quality, validating its effectiveness and design. The code is available at https://github.com/sheriyuo/ETS.",
+    "status": "found"
+  },
+  "2601.21485": {
+    "arxiv_id": "2601.21485",
+    "title": "Features distinguishing the flow behavior of polyelectrolytes with opposite charges in aqueous solutions",
+    "authors": [
+      "Suresha P. Ranganath",
+      "Manohar V. Badiger",
+      "Bernhard A. Wolf"
+    ],
+    "submission_date": "2026-01-29T10:07:26Z",
+    "latest_updated": "2026-01-29T10:07:26Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.21485v1"
+    ],
+    "abstract": "Solution viscosities of a polycation and a polyanion in NaCl-water: HSAB-guided rheology The zero-shear viscosities of poly(3-acrylamido-propyl-trimethyl-ammonium-chloride) (PAPTMAC-Cl, M ~ 7.8 kDa) and poly(styrene-sulfonate sodium) (PSS-Na, M ~ 75.6 kDa) were measured in aqueous NaCl solutions at 25 degrees C over a wide range of salt concentrations. Extrapolation to zero polymer concentration yields an intrinsic viscosity of 4 460 mL g^-1 for the polycation, i.e. roughly three times larger than that of the polyanion, although the polycation's molar mass is only one-tenth of the polyanion's. At low salinities the shear-overlap parameter S as a function of polymer concentration c exhibits a pronounced maximum for PAPTMAC-Cl, whereas PSS-Na shows a clear inflection point. With increasing NaCl concentration both curves become linear, indicating that the system has entered a regime where the solute dominates the flow behavior. The crossover concentrations (S_crov) of the polycation are systematically larger than those of the polyanion. By applying Pearson's Hard-Soft Acid-Base (HSAB) concept we find that the observed differences are not a simple consequence of opposite polymer charges. Rather they arise from the specific ion-pairing: the soft NR4+ group of PAPTMAC pairs with the hard Cl-, whereas the hard RSO3- units of PSS-Na interact with the hard Na+. This insight suggests that the rheological response of polyelectrolyte solutions can be deliberately tuned by choosing counter-ions of appropriate hardness/softness. Keywords: intrinsic viscosity, shear-overlap, polyelectrolytes, sodium chloride, HSAB theory, rheology, soft-matter.",
+    "status": "found"
+  },
+  "2601.21486": {
+    "arxiv_id": "2601.21486",
+    "title": "The Daugavet property for Sobolev spaces over the plane",
+    "authors": [
+      "Samir Hamad"
+    ],
+    "submission_date": "2026-01-29T10:08:30Z",
+    "latest_updated": "2026-01-29T10:08:30Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.21486v1"
+    ],
+    "abstract": "We show that $W^{1,1}(\\mathbb{R}^2)$ has the Daugavet property when endowed with the norm induced by the $L^1$-norm of the gradient, but fails to have the slice diameter two property when equipped with the usual Sobolev norm.",
+    "status": "found"
+  },
+  "2601.21487": {
+    "arxiv_id": "2601.21487",
+    "title": "Manifold constrained steepest descent for smooth and closed-set optimization",
+    "authors": [
+      "Kaiwei Yang",
+      "Lexiao Lai"
+    ],
+    "submission_date": "2026-01-29T10:08:37Z",
+    "latest_updated": "2026-08-13T04:05:33Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.21487v1",
+      "2601.21487v2"
+    ],
+    "abstract": "We study minimization of smooth functions over feasible sets that have smooth embedded-manifold structure throughout or only on selected regions, using linear minimization oracles (LMOs) to determine search directions under user-chosen norms. Restricting an LMO to a tangent space, however, can require an iterative inner solve. We propose \\emph{Manifold Constrained Steepest Descent} (MCSD) and a tangent-projected variant, MCSD-TP, which avoid solving tangent-space LMO subproblems iteratively. The spectral-norm specialization of MCSD on the Stiefel manifold yields \\emph{SPEL}, which admits an efficient implementation using matrix-sign computations. Under standard regularity assumptions, both methods attain an \\(O(\\log T/\\sqrt T)\\) best-iterate stationarity bound. For closed feasible sets, the hybrid MCSD--PGD combines either smooth method with projected gradient descent; under the corresponding local smoothness condition, every accumulation point is Bouligand stationary. Experiments on Stiefel-constrained PCA, weighted low-rank approximation, and sparse phase retrieval illustrate the proposed methods.",
+    "status": "found"
+  },
+  "2601.21488": {
+    "arxiv_id": "2601.21488",
+    "title": "HADUA: Hierarchical Attention and Dynamic Uniform Alignment for Robust Cross-Subject Emotion Recognition",
+    "authors": [
+      "Jiahao Tang",
+      "Youjun Li",
+      "Yangxuan Zheng",
+      "Xiangting Fan",
+      "Siyuan Lu",
+      "Nuo Zhang",
+      "Zi-Gang Huang"
+    ],
+    "submission_date": "2026-01-29T10:08:38Z",
+    "latest_updated": "2026-01-29T10:08:38Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.21488v1"
+    ],
+    "abstract": "Robust cross-subject emotion recognition from multimodal physiological signals remains a challenging problem, primarily due to modality heterogeneity and inter-subject distribution shift. To tackle these challenges, we propose a novel adaptive learning framework named Hierarchical Attention and Dynamic Uniform Alignment (HADUA). Our approach unifies the learning of multimodal representations with domain adaptation. First, we design a hierarchical attention module that explicitly models intra-modal temporal dynamics and inter-modal semantic interactions (e.g., between electroencephalogram(EEG) and eye movement(EM)), yielding discriminative and semantically coherent fused features. Second, to overcome the noise inherent in pseudo-labels during adaptation, we introduce a confidence-aware Gaussian weighting scheme that smooths the supervision from target-domain samples by down-weighting uncertain instances. Third, a uniform alignment loss is employed to regularize the distribution of pseudo-labels across classes, thereby mitigating imbalance and stabilizing conditional distribution matching. Extensive experiments on multiple cross-subject emotion recognition benchmarks show that HADUA consistently surpasses existing state-of-the-art methods in both accuracy and robustness, validating its effectiveness in handling modality gaps, noisy pseudo-labels, and class imbalance. Taken together, these contributions offer a practical and generalizable solution for building robust cross-subject affective computing systems.",
+    "status": "found"
+  },
+  "2601.21489": {
+    "arxiv_id": "2601.21489",
+    "title": "Fundamental Limits of Decentralized Self-Regulating Random Walks",
+    "authors": [
+      "Ali Khalesi",
+      "Rawad Bitar"
+    ],
+    "submission_date": "2026-01-29T10:09:22Z",
+    "latest_updated": "2026-08-07T11:00:53Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.21489v1",
+      "2601.21489v2"
+    ],
+    "abstract": "We study self-regulating random walks (SRRWs), a decentralized mechanism for maintaining a stable population of mobile tokens on a graph. Tokens move by random walks, may be lost at faulty or malicious trap nodes, and may be locally forked or terminated according to node visit ages. The goal is to prevent both extinction and runaway growth without a central coordinator. We develop a graph-aware, controller-agnostic theory for SRRWs on finite connected graphs with lazy reversible random-walk dynamics. The main technical tool is a set of node-dependent return-time tail bounds, which yield population-dependent envelope functions describing how often local ages are large enough to trigger control actions. These envelopes translate graph structure into drift certificates: when the population is small, the achieved fork rate must compensate trap-induced absorption; when the population is large, trap losses and deliberate terminations must dominate forks. Using these certificates, we characterize population corridors for which the full system-state process is positive recurrent. We also identify two fundamental limits: stable finite-communication operation requires sufficient graph-limited forking capacity to offset absorption, and recovery from burst deletions or insertions is limited by the graph-dependent frequency of eligible local visits. Finally, we describe a minimal hysteresis controller with two age thresholds, one for replenishment and one for suppression, and show that its recovery behavior follows from the same certified margin conditions. Worked examples and numerical experiments on heterogeneous graphs illustrate how the stationary distribution, return-time envelopes, drift margins, finite-cost balance, reaction-time limits, and operating corridors can be computed and validated in concrete SRRW systems.",
+    "status": "found"
+  },
+  "2601.21490": {
+    "arxiv_id": "2601.21490",
+    "title": "Are they just delegating? Cross-Sample Predictions on University Students' & Teachers' Use of AI",
+    "authors": [
+      "Fabian Albers",
+      "Sebastian Strauß",
+      "Nikol Rummel",
+      "Nils Köbis"
+    ],
+    "submission_date": "2026-01-29T10:09:38Z",
+    "latest_updated": "2026-01-29T10:09:38Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.21490v1"
+    ],
+    "abstract": "Mutual trust between teachers and students is a prerequisite for effective teaching, learning, and assessment in higher education. Accurate predictions about the other group's use of generative artificial intelligence (AI) are fundamental for such trust. However, the disruptive rise of AI has transformed academic work practices, raising important questions about how teachers and students use these tools and how well they can estimate each other's usage. While the frequency of use is well studied, little is known about how AI is used, and comparisons with similar practices are rare. This study surveyed German university teachers (N = 113) and students (N = 123) on the frequency of AI use and the degree of delegation across six identical academic tasks. Participants also provided incentivized cross-sample predictions of the other group's AI use to assess the accuracy of their predictions. We find that students reported higher use of AI and greater delegation than teachers. Both groups significantly overestimated the other group's use, with teachers predicting very frequent use and high delegation by students, and students assuming teachers use AI similarly to themselves. These findings reveal a perception gap between teachers' and students' expectations and actual AI use. Such gaps may hinder trust and effective collaboration, underscoring the need for open dialogue about AI practices in academia and for policies that support the equitable and transparent integration of AI tools in higher education.",
+    "status": "found"
+  },
+  "2601.21491": {
+    "arxiv_id": "2601.21491",
+    "title": "Rigid Body Rotors in Planar Potentials: A Novel type of Superintegrable Mechanical Systems in the Plane",
+    "authors": [
+      "D. Latini"
+    ],
+    "submission_date": "2026-01-29T10:10:58Z",
+    "latest_updated": "2026-07-02T08:53:26Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.21491v1",
+      "2601.21491v2"
+    ],
+    "abstract": "We investigate the superintegrability of rigid body rotors coupled to planar systems. In particular, we study the isotropic harmonic oscillator in two dimensions, with its (central) force acting on the rotor's center of mass constrained to move in the plane. By including an internal rotational degree of freedom described by a rigid rotor, the resulting planar system possesses three degrees of freedom: two translational and one rotational. When the orbital motion and the internal rotation are tuned to resonance, additional integrals of motion arise, extending the hidden symmetry algebras of the underlying models. For the oscillator, the well-known $\\mathfrak{su}(2)$ symmetry algebra can be enlarged by the presence of the rotor, with the conserved momentum $p_θ$ reasonably playing the role of a deformation parameter. These algebraic structures remain to be properly understood, and we hope that this short work will serve as an invitation to further investigate these interesting models. To close the work, we also examine the oscillator in a vertical plane, in the presence of a rotor, under the effect of a uniform gravitational field, showing that the algebraic structure persists as a translated version of the isotropic case, as expected. In all these settings, the extended dynamics admits five functionally independent integrals, thereby confirming maximal superintegrability. Our simple yet nontrivial results suggest that rigid-body rotors provide a natural mechanism for generating new families of (resonant) superintegrable systems, along with their associated symmetry algebras, an outcome that aligns with the main objective of this work.",
+    "status": "found"
+  },
+  "2601.21492": {
+    "arxiv_id": "2601.21492",
+    "title": "Organizational Practices and Socio-Technical Design of Human-Centered AI",
+    "authors": [
+      "Thomas Herrmann"
+    ],
+    "submission_date": "2026-01-29T10:13:15Z",
+    "latest_updated": "2026-01-29T10:13:15Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.21492v1"
+    ],
+    "abstract": "This contribution explores how the integration of Artificial Intelligence (AI) into organizational practices can be effectively framed through a socio-technical perspective to comply with the requirements of Human-centered AI (HCAI). Instead of viewing AI merely as a technical tool, the analysis emphasizes the importance of embedding AI into communication, collaboration, and decision-making processes within organizations from a human-centered perspective. Ten case-based patterns illustrate how AI support of predictive maintenance can be organized to address quality assurance and continuous improvement and to provide different types of sup-port for HCAI. The analysis shows that AI adoption often requires and enables new forms of organizational learning, where specialists jointly interpret AI output, adapt workflows, and refine rules for system improve-ment. Different dimensions and levels of socio-technical integration of AI are considered to reflect the effort and benefits of keeping the organization in the loop.",
+    "status": "found"
+  },
+  "2601.21493": {
+    "arxiv_id": "2601.21493",
+    "title": "A Poisson Factor Mixture Model for the Analysis of Linguistic Competence in Italian University Students' Writing",
+    "authors": [
+      "Silvia Dallari",
+      "Laura Anderlucci",
+      "Nicola Grandi",
+      "Angela Montanari"
+    ],
+    "submission_date": "2026-01-29T10:13:22Z",
+    "latest_updated": "2026-01-29T10:13:22Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.21493v1"
+    ],
+    "abstract": "Public debate on the alleged decline of language skills among younger generations often focuses on university students, the most highly educated segment of the population. Rather than addressing the ill posed question of linguistic decline, this paper examines how formal written Italian is currently used by university students and whether systematic patterns of competence and heterogeneity can be identified. The analysis is based on data from the UniversITA project, which collected formal texts written by a large and nationally representative sample of Italian university students. Texts were annotated for linguistically motivated features covering orthography, lexicon, syntax, morphosyntax, coherence, register, and sentence structure, yielding low frequency multivariate count data. To analyse these data, we propose a novel model-based clustering approach based on a Poisson factor mixture model that accounts for dependence among linguistic features and unobserved population heterogeneity. The results identify two correlated dimensions of writing competence, interpretable as communicative competence and linguistic grammatical competence. When educational and socio demographic information is incorporated, distinct student profiles emerge that are associated with field of study and educational background. These findings provide quantitative evidence on contemporary writing and offer insights relevant for language education and higher education policy.",
+    "status": "found"
+  },
+  "2601.21494": {
+    "arxiv_id": "2601.21494",
+    "title": "The Path of Least Resistance: Guiding LLM Reasoning Trajectories with Prefix Consensus",
+    "authors": [
+      "Ishan Jindal",
+      "Sai Prashanth Akuthota",
+      "Jayant Taneja",
+      "Sachin Dev Sharma"
+    ],
+    "submission_date": "2026-01-29T10:14:24Z",
+    "latest_updated": "2026-02-03T15:36:47Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.21494v1",
+      "2601.21494v2"
+    ],
+    "abstract": "Large language models achieve strong reasoning performance, but inference strategies such as Self-Consistency (SC) are computationally expensive, as they fully expand all reasoning traces. We introduce PoLR (Path of Least Resistance), the first inference-time method to leverage prefix consistency for compute-efficient reasoning. PoLR clusters short prefixes of reasoning traces, identifies the dominant cluster, and expands all paths in that cluster, preserving the accuracy benefits of SC while substantially reducing token usage and latency. Our theoretical analysis, framed via mutual information and entropy, explains why early reasoning steps encode strong signals predictive of final correctness. Empirically, PoLR consistently matches or exceeds SC across GSM8K, MATH500, AIME24/25, and GPQA-DIAMOND, reducing token usage by up to 60% and wall-clock latency by up to 50%. Moreover, PoLR is fully complementary to adaptive inference methods (e.g., Adaptive Consistency, Early-Stopping SC) and can serve as a drop-in pre-filter, making SC substantially more efficient and scalable without requiring model fine-tuning.",
+    "status": "found"
+  },
+  "2601.21495": {
+    "arxiv_id": "2601.21495",
+    "title": "Clustering Methods for Identifying and Modelling Areas with Similar Temperature Variations",
+    "authors": [
+      "Edoardo Otranto"
+    ],
+    "submission_date": "2026-01-29T10:14:50Z",
+    "latest_updated": "2026-01-29T10:14:50Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.21495v1"
+    ],
+    "abstract": "This paper proposes a novel data-driven approach for identifying and modelling areas with similar temperature variations throufigureh clustering and Space-Time AutoRegressive (STAR) models. Using annual temperature data from 168 countries (1901-2022), we apply three clustering methods based on (i) warming rates, (ii) annual temperature variations, and (iii) persistence of variation signs, using Euclidean and Hamming distances. These clusters are then employed to construct alternative spatial weight matrices for STAR models. Empirical results show that distance-based STAR models outperform classical contiguity-based ones, both in-sample and out-of-sample, with the Hamming distance-based STAR model achieving the best predictive accuracy. The study demonstrates that using statistical similarity rather than geographical proximity improves the modelling of global temperature dynamics, suggesting broader applicability to other environmental and socioeconomic datasets.",
+    "status": "found"
+  }
+}

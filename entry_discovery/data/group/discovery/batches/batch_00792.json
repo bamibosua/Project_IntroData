@@ -1,0 +1,423 @@
+{
+  "2609.13674": {
+    "arxiv_id": "2609.13674",
+    "title": "Constructive recurrences for determinants and permanents of banded Toeplitz matrices",
+    "authors": [
+      "Max A. Alekseyev",
+      "Dmitry I. Khomovsky"
+    ],
+    "submission_date": "2026-09-12T02:59:10Z",
+    "latest_updated": "2026-09-12T02:59:10Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13674v1"
+    ],
+    "abstract": "For fixed nonnegative integers $m_1,m_2$, let $A_n=(a_{j-i})_{i,j=1}^n$ be the leading $n\\times n$ section of a Toeplitz matrix with lower and upper semibandwidths $m_1$ and $m_2$. We give two constructive Laplace-expansion methods for scalar recurrences of $\\det A_n$ and $\\perm A_n$. The increasing-rows method eliminates a fixed family of boundary cofactors and gives recurrence order at most $d=\\binom{m_1+m_2}{m_1}$ for both sequences. The row-column method closes normalized boundary minors recursively and packages them in a sparse transfer matrix. Its reachable states are classified exactly: level $j$ is indexed by a pair of $j$-subsets of $[m_1]$ and $[m_2]$. Hence the transfer dimension is $d$, and we obtain an explicit formula for the number of nonzero transitions. For determinants, the complementary cofactors of the increasing-rows construction are coordinates of the classical compound companion representation. The independently constructed row-column transfer has the Widom characteristic polynomial and is generically similar to the compound transfer. Thus the order $d$ recurrence is generically minimal for the unrestricted fixed-band determinant family. For permanents the same state graph gives the binomial upper bound, without a general minimality claim. The pentadiagonal case recovers Sweet's order-six determinant recurrence and its permanent analogue, while the one-superdiagonal family gives closed scalar recurrences and rational generating functions. Position-dependent band weights preserve the finite state graph but replace the constant transfer by a cocycle. For cyclic determinants, Fourier diagonalization produces all subset products of the symbol roots and a generically minimal annihilator of degree $2^{m_1+m_2}$, corresponding to the passage from one exterior degree to the full exterior algebra.",
+    "status": "found"
+  },
+  "2609.13675": {
+    "arxiv_id": "2609.13675",
+    "title": "Does Online Gravity Estimation Matter? Revisiting a Silent Design Split in LiDAR-Inertial Odometry",
+    "authors": [
+      "Jie Xu",
+      "Ziyi Jin",
+      "Kangjin Yu",
+      "Can Jiang",
+      "Hongjun Huang",
+      "Tongxing Jin",
+      "Hongkun Luo",
+      "Zhongpu Xia"
+    ],
+    "submission_date": "2026-09-12T03:00:05Z",
+    "latest_updated": "2026-09-22T07:25:37Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2609.13675v1",
+      "2609.13675v2",
+      "2609.13675v3"
+    ],
+    "abstract": "LiDAR-inertial odometry (LIO) systems differ in whether they continue estimating gravity after initialization. We compare four gravity-bias state configurations in each of FAST-LIO2 and LIO-SAM, then separately test a gravity-direction factor. Across 12 dataset sequences evaluated with FAST-LIO2, fixing gravity under continuous LiDAR correction produces mean paired changes in vertical and 3D position errors with 90% confidence intervals within $\\pm 2\\%$. Tests on 4 sequences with LIO-SAM likewise show no consistent benefit from online gravity. Multi-second LiDAR outages, unlike reduced range or field of view, reveal trajectory-dependent costs of fixing gravity. A history-matched 23D-to-21D switch places the repeatable 3D error increase after LiDAR updates resume. Under 5-s outages, a direction factor from the same IMU used for preintegration improves accuracy on Hall05 but worsens both errors with online gravity on TUHH. Dynamic-start tests also show fixed-bias failures at particular starting phases. We recommend keeping gravity and accelerometer bias online for robustness; use a direction factor only after verifying vertical and 3D accuracy gains under the intended operating conditions.",
+    "status": "found"
+  },
+  "2609.13676": {
+    "arxiv_id": "2609.13676",
+    "title": "Windowed A-K-MDP",
+    "authors": [
+      "Xiangwen Yang",
+      "Frankie Cho",
+      "Iadine Chades"
+    ],
+    "submission_date": "2026-09-12T03:01:17Z",
+    "latest_updated": "2026-10-01T01:48:33Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2609.13676v1",
+      "2609.13676v2"
+    ],
+    "abstract": "Markov decision processes (MDPs) are used to support decision-making in conservation of biodiversity, but policies, even over small state spaces, can be difficult to interpret for conservation managers. K-MDP methods address this problem by building simpler MDPs with at most K abstract states. We show that the previously proposed A-K-MDP algorithm that relies on selecting a discretisation divisor using binary search can skip better abstract states. To fix this issue, we propose Windowed A-K-MDP, an algorithm that generates every distinct feasible partition induced within a declared divisor window and evaluates candidates until reaching the ideal value loss (J = 0) or exhausting the family of candidates. Across 33 K-MDP instances, Windowed improved 25 and tied 8.",
+    "status": "found"
+  },
+  "2609.13677": {
+    "arxiv_id": "2609.13677",
+    "title": "Nonsmooth Optimization via Orthogonalized Momentum",
+    "authors": [
+      "Lexiao Lai",
+      "Tianyi Lin",
+      "Jiayu Zhang"
+    ],
+    "submission_date": "2026-09-12T03:08:36Z",
+    "latest_updated": "2026-10-09T00:40:38Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2609.13677v1",
+      "2609.13677v2"
+    ],
+    "abstract": "Modern real application problems involve matrix-valued parameters, yet conventional optimizers treat them as vectors, thereby motivating matrix-aware methods that exploit input-output geometry, such as Muon which orthogonalizes the momentum matrices before parameter updates. Its empirical success raises a conceptual question: can orthogonalized momentum remain effective beyond smooth optimization? This paper studies this question for locally Lipschitz functions using a generalized derivative framework compatible with backpropagation. Our first contribution is to identify a key limitation: for every fixed momentum factor $β\\in[0,1)$, Muon can fail to approach the global optimal solution of a convex Lipschitz objective from almost every initialization, when step sizes adapt to the full gradient history. The failure can occur even along bounded iterates. Our example is inspired by the one of Parshakova et al. which only covers $β\\in[0,\\frac{1}{2})$. Then, we show that the obstruction lies in fixed momentum rather than orthogonalization. Indeed, when the momentum factor is adaptive and approaches 1 together with a vanishing step size, Muon recovers asymptotic convergence for nonconvex nonsmooth optimization under the boundedness and regularity conditions. Moreover, we propose MAGD, which combines orthogonalized momentum with gradient, weighted based on their relative progress. MAGD retains asymptotic convergence in nonconvex settings and achieves an $O(\\min\\{m,n\\}ε^{-2})$ rate in convex settings. A lower bound shows the optimal dimension dependence. Experiments on synthetic problems, image classification, and LLM pretraining show MAGD is a simple and practical alternative to Muon. Together, our results characterize when orthogonalized momentum fails without smoothness and how it can be made reliable and we hope that the analysis may be useful more broadly.",
+    "status": "found"
+  },
+  "2609.13678": {
+    "arxiv_id": "2609.13678",
+    "title": "Addressing Cross-Stage Decoupling of Semantic and Collaborative Signals in Generative Recommendation",
+    "authors": [
+      "Jiayi Dan"
+    ],
+    "submission_date": "2026-09-12T03:10:03Z",
+    "latest_updated": "2026-09-12T03:10:03Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13678v1"
+    ],
+    "abstract": "Generative recommendation reformulates sequential recommendation as autoregressive generation by encoding items into semantic tokens, enabling improved scaling capability and cross-domain generalization. However, existing generative recommender systems typically follow a two-stage pipeline, where item tokenization is largely dominated by textual semantics with limited incorporation of collaborative signals and interaction similarity, leading to code assignments that are misaligned with downstream generation. Conversely, the generation stage tends to overlook the original semantic information, as the code sequences are re-embedded based on interaction data. This cross-stage information decoupling limits semantic coherence and recommendation accuracy. To address this issue, we propose SCRec, a general framework that enhances cross-stage coherence through bidirectional information supplementation. Specifically, we introduce (i) collaborative-enhanced tokenization to explicitly inject textualized collaborative signals into semantic tokenization, without introducing additional alignment task, (ii) semantic-guided generation to dynamically recalibrate semantic priors with learnable code embeddings in generation stage, and (iii) manifold alignment to reconcile the geometric mismatch between the embedding space of discrete codebook indices and the dense continuous semantic space. These interrelated components form a general framework that aligns semantic and collaborative signals and enhances cross-stage information coherence, with minimal additional training and inference costs. Extensive experiments demonstrate the effectiveness, robustness, and generalizability of our proposed framework.",
+    "status": "found"
+  },
+  "2609.13679": {
+    "arxiv_id": "2609.13679",
+    "title": "How to Better Train VLAs: Lessons Learned From the REAL-I Challenge at ICRA 2026",
+    "authors": [
+      "Jiaming Wang",
+      "Jizhuo Chen",
+      "Diwen Liu",
+      "Wang Song",
+      "Qiang Wang",
+      "Jie Ren",
+      "Chao Fu",
+      "Dingkun Zhu",
+      "Minchi Ruan",
+      "Hongtong Li",
+      "Yuhua Jiang",
+      "Zhiwei Xue",
+      "Yongping Pan",
+      "Harold Soh"
+    ],
+    "submission_date": "2026-09-12T03:12:46Z",
+    "latest_updated": "2026-09-17T12:30:47Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2609.13679v1",
+      "2609.13679v2"
+    ],
+    "abstract": "How can robot policies learn more effectively from a fixed demonstration budget? The first Real-world Embodied AI Learning (REAL-I) Challenge at ICRA 2026 examined this question through simulation, real-robot evaluation, and an on-site final on a shared dual-arm humanoid platform. We describe the challenge tasks, data and deployment interfaces, and competition results, then compare the approaches contributed by NUS-CLEAR, RCL-Lab, and DeepTouch AI. Their systems combined pretrained vision-language-action models and task-specific imitation policies with different strategies for data curation, staged adaptation, checkpoint selection, and action-space design. The team reports highlight the importance of adapting to the deployment environment while retaining prior capabilities, treating demonstration quality at an appropriate temporal scale, and suppressing errors in inactive robot components. They also expose the limitations of offline action-prediction metrics for forecasting closed-loop success. These observations motivate a view of fixed-data robot learning that integrates data, adaptation, evaluation, and deployment.",
+    "status": "found"
+  },
+  "2609.13680": {
+    "arxiv_id": "2609.13680",
+    "title": "Drift-Constrained Optimization: Only Direction Matters in Fine-Tuning Instruct Models",
+    "authors": [
+      "Fei Yuan",
+      "Changjiang Gao",
+      "Yilei Tu",
+      "Yifeng Liu",
+      "Shujian Huang",
+      "Yu Qiao"
+    ],
+    "submission_date": "2026-09-12T03:13:54Z",
+    "latest_updated": "2026-09-12T03:13:54Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13680v1"
+    ],
+    "abstract": "Fine-tuning instruct models often improves target performance while inducing behavioral drift from the reference model, which can degrade existing capabilities. Rather than treating this drift as an uncontrolled consequence of optimization, we specify a behavioral drift budget before optimization and ask how to boost the target-task performance within it. Locally, behavioral drift induces a shared geometry anchored at the reference model, with the drift budget defining a boundary within this space. In this space, drift determines distance from the reference, leaving update direction as the remaining degree of freedom. Fine-tuning updates can therefore be compared through their directional efficiency, naturally reformulating fine-tuning as a direction-selection problem. This reformulation makes a concrete prediction: changing the accessible directions can qualitatively alter the outcome of fine-tuning. We test this prediction in a stringent QA-only setting, where strong instruct models are fine-tuned only on final answers but must still generate multi-step reasoning at inference. Despite this mismatch, a coarse layer-selective probe reverses the failure of QA-only fine-tuning and reveals the existence of effective directions, with multiple neighboring configurations improving target performance while preserving reasoning and general capabilities. Across Qwen3-8B and Qwen3-14B, these directions substantially improve scientific reasoning and multilingual translation. Over more than 100 languages, the resulting models match or outperform dedicated translation systems and provide a stronger initialization for subsequent reinforcement learning. Our results suggest that fine-tuning is not just about how much a model changes, but how that change is spent. https://github.com/CONE-MT/DCO and https://huggingface.co/collections/LLaMAX/dco",
+    "status": "found"
+  },
+  "2609.13681": {
+    "arxiv_id": "2609.13681",
+    "title": "Consistency and precision of very long baseline interferometry source coordinate time series",
+    "authors": [
+      "X. -X. Zhang",
+      "N. Liu",
+      "S. B. Lambert",
+      "K. Le Bail",
+      "H. Krásná",
+      "O. Titov",
+      "M. Karbon",
+      "T. Nilsson",
+      "Z. Zhu",
+      "J. -C. Liu",
+      "I. N. Huda",
+      "J. Yang",
+      "X. -P. Cheng",
+      "B. -W. Sohn",
+      "F. -C. Shu",
+      "X. He",
+      "Z. -W. Wang",
+      "Z. -Y. Zhang",
+      "H. -F. Yu",
+      "J. Yao",
+      "D. -D. Zhang"
+    ],
+    "submission_date": "2026-09-12T03:28:30Z",
+    "latest_updated": "2026-10-19T13:59:10Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2609.13681v1",
+      "2609.13681v2"
+    ],
+    "abstract": "Coordinate time series of extragalactic radio sources from very long baseline interferometry observations are widely used to evaluate source positional stability, select stable sources for celestial reference frames, assess reference-frame axis stability, and investigate source-related astrometric variability. Their external consistency, realistic errors, and relation to processing strategies and analysis configurations remain to be investigated. We aim to compare coordinate time series solutions from different analysis centers and investigate how processing strategies and configurations contribute to their differences. We collected eight solutions from seven analysis centers and selected 496 common sources after data selection, reference-frame alignment, and extraction of common observing sessions. Inter-solution differences were characterized with pairwise positional offsets and correlation analysis, and realistic positional errors with the N-cornered-hat (NCH) method and bootstrap resampling. Most solutions have median weighted root mean square (WRMS) values of a few hundred microarcseconds $(\\mathrm{μas})$, and the median NCH-derived precision is about 200-300 $\\mathrm{μas}$ in right ascension and 250-400 $\\mathrm{μas}$ in declination. Solutions with similar strategies, software, or source constraints show higher consistency, with more similar WRMS values, stronger correlations, and closer precision estimates. Consistency is affected not only by the global or independent mode distinction but also by detailed analysis configuration. NCH-derived precision depends on declination, being poorer in the southern sky, and stabilizes with more observing sessions. Processing strategies and configurations introduce marginal differences; solutions remain generally consistent. Inter-solution comparisons independently estimate realistic stochastic errors beyond formal errors.",
+    "status": "found"
+  },
+  "2609.13682": {
+    "arxiv_id": "2609.13682",
+    "title": "LayerRoute: Adaptive Layer-Skipping with LoRA-Preserved Quality for Efficient LLM Inference",
+    "authors": [
+      "Prateek Kumar Sikdar"
+    ],
+    "submission_date": "2026-09-12T03:30:59Z",
+    "latest_updated": "2026-09-12T03:30:59Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13682v1"
+    ],
+    "abstract": "We introduce LayerRoute, a parameter-efficient method for adaptive transformer layer-skipping that combines per-layer hard-gated routing (trained via a straight-through estimator) with joint LoRA fine-tuning. LayerRoute augments each of the 24 transformer blocks in Qwen2.5-0.5B-Instruct with a lightweight per-layer router (~21.5K parameters) and LoRA adapters (rank 8, ~1.08M parameters), training both jointly under a gate-regularized language-modeling objective. Across 10 independently-seeded training runs, LayerRoute converges to an identical skip-pattern structure in every run - a consistent set of 9 middle layers (8-16) becomes skip-eligible in all 10 seeds - and delivers genuine, verified wallclock speedup in every run (1.02x-1.06x, mean 1.04x). Quality is preserved or improved in every configuration tested: joint LoRA adaptation yields a perplexity improvement over the unmodified backbone in all 10 seeds (mean delta = -1.16 and -1.11 across the two evaluation splits used). We further verify the router performs genuine, non-trivial per-input computation: gate decisions in skip-eligible layers change the actual skip/run outcome for 87-100% of held-out samples, confirming real input-dependent routing rather than a fixed pruning pattern. LayerRoute trains in under 7 minutes on a single A100 and adds negligible overhead beyond the routing decision itself. We report our full reproducibility methodology, including a systematic diagnostic investigation into what determines the router's per-input decisions, as part of this work.",
+    "status": "found"
+  },
+  "2609.13683": {
+    "arxiv_id": "2609.13683",
+    "title": "Heating of black-Si by microwaves at 2.45 GHz: effect of nano-needle orientation",
+    "authors": [
+      "Massimiliano Zamengo",
+      "Haoran Mu",
+      "Hsin-Hui Huang",
+      "Tomas Katkus",
+      "Darius Gailevičius",
+      "Saulius Juodkazis",
+      "Junko Morikawa"
+    ],
+    "submission_date": "2026-09-12T03:35:18Z",
+    "latest_updated": "2026-09-12T03:35:18Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13683v1"
+    ],
+    "abstract": "Silicon, which is highly reflective and has negligible absorption at the microwave 2.45 GHz range, can be heated when it is turned into black-Si with a surface texture of nano-needles made by SF6/O2 plasma etching. Microwave heating of flat Si and of black-Si with vertical and with tilted (oriented) nano-needles was compared under identical conditions in a cylindrical TM010 resonator. Samples were placed horizontally on a 150-micrometer-thick cover glass, which standardized their height and position inside the cavity and allowed a common calibration of the radiation thermometer against a K-type thermocouple. Under a stepwise protocol of only 2-3-4 W of microwave power (60 s per step), black-Si with vertical needles reached ~ 260 C, systematically exceeding flat Si (~ 190 C), while black-Si with oriented needles showed a delayed but abrupt onset of heating at 3 W. In situ monitoring of the cavity resonance revealed a 2-3 MHz downshift of the resonance frequency f for all samples, with the drift consistently appearing once the sample temperature exceeded ~ 120 - 150 C, consistent with thermally activated carrier generation in Si. At a given temperature, each sample loads the cavity at a different f and quality factor Q, indicating an orientation-dependent effective permittivity of the nano-needle array, in line with the strong form birefringence of tilted black-Si. Application potential and challenges in the quantitative temperature and permittivity determination are discussed.",
+    "status": "found"
+  },
+  "2609.13684": {
+    "arxiv_id": "2609.13684",
+    "title": "Extensions and Segre stratifications over algebraic surfaces",
+    "authors": [
+      "Thomas Goller",
+      "Yinbang Lin"
+    ],
+    "submission_date": "2026-09-12T03:37:14Z",
+    "latest_updated": "2026-09-12T03:37:14Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13684v1"
+    ],
+    "abstract": "We study two closely related topics over algebraic surfaces: stability of extensions of stable sheaves by stable sheaves, and maximal subsheaves of a given stable sheaf. For the former, we provide a construction of complete families of sheaves via extensions and prove the stability for some cases. The construction enables us to prove certain cases of Weak Brill--Noether over rational surfaces. The second topic leads to a refinement of the Segre stratification of the moduli of sheaves. We obtain the expected dimension of certain refined Segre strata over rational surfaces and K3 surfaces. Over the projective plane, we prove our main result that all refined Segre strata corresponding to line bundles are irreducible of the expected dimension and are nested under taking closures. As a consequence, we obtain more cases of the stability of extensions. Our results suggest that refined Segre strata behave much better than Brill--Noether strata. Our study of the refined Segre strata relies crucially on Bridgeland stability conditions and the work of Li and Zhao.",
+    "status": "found"
+  },
+  "2609.13685": {
+    "arxiv_id": "2609.13685",
+    "title": "Not all Negation Cues are Equal: Affixal Negations Yield Better Negation Understanding",
+    "authors": [
+      "Tian Tan",
+      "Eduardo Blanco"
+    ],
+    "submission_date": "2026-09-12T03:39:27Z",
+    "latest_updated": "2026-09-12T03:39:27Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13685v1"
+    ],
+    "abstract": "Negation remains a longstanding challenge for both language models (LMs) and large language models (LLMs). Prior work mainly focuses on a small set of high-frequency single-word negation cues, such as not and never, with limited exploration of broader negation types and modern LLMs. To address this gap, we construct NegCue, a large-scale dataset containing over 1.8M samples spanning single-word, multi-word, and affixal negation with more than 200 unique cues. We further pre-train both encoder-only LMs and LLMs on NegCue to investigate how different negation types affect negation understanding. Experiments on five downstream benchmarks show that negation types contribute unevenly to performance gains under the same training scale. In particular, affixal negation yields the largest improvements, while the gains from the commonly studied single-word negation remain modest. Moreover, our results demonstrate that further pre-training improves negation understanding for both LMs and LLMs.",
+    "status": "found"
+  },
+  "2609.13686": {
+    "arxiv_id": "2609.13686",
+    "title": "Lorentz Violation and Vector Meson Dominance",
+    "authors": [
+      "Brett Altschul"
+    ],
+    "submission_date": "2026-09-12T03:39:55Z",
+    "latest_updated": "2026-09-12T03:39:55Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13686v1"
+    ],
+    "abstract": "Vector meson dominance models describe the mixing of photons with vector mesons; the hadronic admixture frequently dominates the interactions of photons with nucleons. This mixing also makes it possible to test for new physics affecting the vector mesons using photon measurements. The possibilities for new physics to be contrained in this indirect fashion include potential Lorentz and CPT violations in the hadronic effective action. The characteristic scale of bounds on Lorentz violation coefficients in the $ρ^{0}$ meson sector is two orders of magnitude weaker than the corresponding photon bounds, three orders of magnitude weaker for $φ$ vector mesons, and four orders of magnitude weaker for $ω$ mesons.",
+    "status": "found"
+  },
+  "2609.13687": {
+    "arxiv_id": "2609.13687",
+    "title": "Differential calculus on quantized irreducible flag manifolds",
+    "authors": [
+      "Toshiyuki Tanisaki"
+    ],
+    "submission_date": "2026-09-12T03:46:49Z",
+    "latest_updated": "2026-10-13T05:14:25Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2609.13687v1",
+      "2609.13687v2"
+    ],
+    "abstract": "We give a new description of the differential calculus on the quantized irreducible flag manifold given by Heckenberger-Kolb. We also define a quantum analogue of the Dolbeault complex associated to an equivariant vector bundle on the irreducible flag manifold, and show that its cohomology groups coincide with the cohomology groups given by Andersen-Polo-Wen defined using the induction functor.",
+    "status": "found"
+  },
+  "2609.13688": {
+    "arxiv_id": "2609.13688",
+    "title": "SONAR: A Structure-Consistent Neural Operator for Null-Space-Aware Sparse View CT Reconstruction",
+    "authors": [
+      "Song Ni",
+      "Haijun Yu",
+      "Haodong Li",
+      "Changsheng Fang",
+      "Shuyi Fan",
+      "Yixing Huang",
+      "Hengyong Yu"
+    ],
+    "submission_date": "2026-09-12T03:46:54Z",
+    "latest_updated": "2026-09-12T03:46:54Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13688v1"
+    ],
+    "abstract": "Sparse-view computed tomography (CT) reduces radiation dose and acquisition time but remains severely ill-posed because incomplete projections poorly constrain null-space information. Existing learning-based methods often estimate this information in high-dimensional image space, conflate physical measurement errors with prediction errors, and depend on fixed discretizations. We propose SONAR, a Structure-Consistent Neural Operator for Null-Space-Aware Reconstruction. Instead of recovering the full null-space component, SONAR predicts a low-dimensional null-space-aware representation from the acquired projections as pseudo-measurements. It separates measurement and pseudo-measurement residuals, lifts them into the image domain through physics operators, and applies independent neural operators to constrain their structural effects, thereby accommodating admissible errors while suppressing unsupported structures. To support cross-discretization reconstruction, an anisotropic U-shaped neural operator models the periodic angular and nonperiodic detector dimensions using direction-dependent continuous supports, while image-domain neural operators re-discretize continuous kernels on target grids. These components form an optimization-inspired unrolled network. Experiments on simulated AAPM and clinical MARS photon-counting CT data demonstrate consistent improvements across seen and unseen view settings and unseen image resolutions. On AAPM dataset, SONAR improves PSNR by 1.87~dB at 62 views and by 7.63~dB under zero-shot transfer to a $512\\times512$ grid over the strongest competing methods. SONAR also achieves the best overall performance in all clinical settings evaluated, demonstrating accurate, structurally reliable, and discretization-robust sparse-view CT reconstruction.",
+    "status": "found"
+  },
+  "2609.13689": {
+    "arxiv_id": "2609.13689",
+    "title": "Multi-Instrument Analysis of NOAA AR 12781: Coupling Surface Evolution of the AR with Its In-Situ Solar Wind Signatures",
+    "authors": [
+      "Dharanesh Palaniappan",
+      "Khagendra Katuwal"
+    ],
+    "submission_date": "2026-09-12T03:53:49Z",
+    "latest_updated": "2026-09-12T03:53:49Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13689v1"
+    ],
+    "abstract": "Understanding the relationship between photospheric magnetic flux evolution and coronal emission remains an important problem in heliophysics. We investigate the decay of NOAA Active Region 12781 from 7 to 11 November 2020 using observations from the Solar Dynamics Observatory (SDO). Coronal emission was measured from the Atmospheric Imaging Assembly (AIA) 193\\~Å images, while the photospheric signed and unsigned magnetic flux was derived from Helioseismic and Magnetic Imager (HMI) observations of the FeĨ 6173\\~Å line. The unsigned magnetic flux and mean 193\\~Å intensity showed a strong inverse relationship, with Pearson and Spearman correlation coefficients of $r\\_p=-0.771$ and $r\\_s=-0.758$, respectively. During the five-day decay phase, the unsigned magnetic flux decreased by 36.54\\\\% from its maximum value, while the coronal emission increased by 21.96\\\\%. We also compared the remote-sensing observations with near-Earth solar-wind and interplanetary magnetic-field measurements from the OMNI database using an estimated propagation delay. The results show that the coronal emission did not vary directly with the photospheric magnetic flux during the decay of AR\\~12781. The possible association with the solar wind is discussed cautiously because a direct source connection cannot be established from the time-delay estimate alone.",
+    "status": "found"
+  },
+  "2609.13690": {
+    "arxiv_id": "2609.13690",
+    "title": "Jacobian estimates and geometric inequalities under intermediate Ricci curvature",
+    "authors": [
+      "Kwok-Kun Kwong",
+      "Jihye Lee",
+      "Fabio Ricci"
+    ],
+    "submission_date": "2026-09-12T03:55:35Z",
+    "latest_updated": "2026-10-22T04:20:03Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2609.13690v1",
+      "2609.13690v2"
+    ],
+    "abstract": "We prove a Jacobian estimate underlying both the Heintze--Karcher comparison and the Alexandrov--Bakelman--Pucci method for submanifolds of arbitrary codimension. The estimate retains the contributions of ambient curvature along geodesics emanating from the submanifold and requires no curvature sign assumption. As applications, we obtain a quantitative Fenchel--Willmore inequality with explicit curvature remainders under nonnegative $n$-intermediate Ricci curvature, Michael--Simon Sobolev and isoperimetric inequalities under nonnegative $(n-1)$-intermediate Ricci curvature, and corresponding extensions under quadratic curvature decay. In each result, the required intermediate Ricci curvature condition depends only on the dimension of the submanifold and is independent of its codimension.",
+    "status": "found"
+  },
+  "2609.13691": {
+    "arxiv_id": "2609.13691",
+    "title": "MomentBA: Second-order Spatial Moments for Anisotropic Correspondence Uncertainty in Differentiable Bundle Adjustment",
+    "authors": [
+      "Yuqing Wang",
+      "Xiaoji Niu",
+      "Yan Wang",
+      "Hailiang Tang",
+      "Jian Kuang",
+      "Tisheng Zhang"
+    ],
+    "submission_date": "2026-09-12T03:58:09Z",
+    "latest_updated": "2026-09-12T03:58:09Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13691v1"
+    ],
+    "abstract": "Most existing visual odometry (VO) systems treat feature correspondences as deterministic measurements or assign uniform uncertainty, ignoring the inherent localization ambiguity of different observations. However, correspondence uncertainty is often anisotropic due to image structures such as edges, repetitive patterns, and motion blur, which can significantly affect geometric optimization. In this work, we propose MomentBA, a geometry-aware bundle adjustment framework that derives anisotropic correspondence uncertainty from second-order spatial moments of local similarity responses. Instead of introducing additional covariance prediction networks, the proposed method directly converts matching response distributions into interpretable covariance estimates and incorporates them into bundle adjustment as correspondence-specific information matrices for uncertainty-aware residual weighting. Furthermore, the proposed formulation is integrated into a differentiable optimization framework, establishing a direct connection between correspondence uncertainty and geometric estimation. Experiments on the EuRoC MAV and TartanAir v1 Hard datasets demonstrate that MomentBA improves monocular visual odometry accuracy compared with existing feature-based and learning-based approaches. The proposed anisotropic covariance model achieves lower rotational errors and more robust trajectory estimation than fixed and isotropic uncertainty models, validating the effectiveness of geometry-induced uncertainty modeling for challenging visual environments.",
+    "status": "found"
+  },
+  "2609.13692": {
+    "arxiv_id": "2609.13692",
+    "title": "Prefix Sharing Is a Sorting Problem",
+    "authors": [
+      "Rong He"
+    ],
+    "submission_date": "2026-09-12T04:02:31Z",
+    "latest_updated": "2026-09-12T04:02:31Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13692v1"
+    ],
+    "abstract": "LLM serving reuses KV cache by exact prefix match, so when a prompt is assembled from a set of reusable pieces -- retrieved passages, tool definitions, few-shot exemplars -- the order chosen for those pieces determines how much computation can be shared. Every deployed system fixes that order by a single global convention. We prove this is optimal only when requests contain at most two pieces, and asymptotically wrong in general. Our main result is a structure theorem: the minimum prefix-trie cost equals min_H sum_x w(x) t_x(H) over binary hierarchies H on the requests, where t_x(H) is the canonical decomposition size of the set of requests needing chunk x. Choosing chunk orders is therefore equivalent to choosing one hierarchy over requests. The identity yields an O(3^m) exact algorithm, identifies the two-chunk case as minimum vertex cover, and shows that on the leave-one-out family the optimum is the minimum external path length of a binary tree -- the merge-sort recursion -- so a global order pays Theta(n^2) against a true cost of Theta(n log n). Agglomerative clustering by common intersection is a tight 1/2-approximation for the achievable saving. On BM25 retrieval traces over three BEIR corpora the resulting layout reduces prefill by 17-36% against production RAG ordering, and the margin widens with retrieval depth as the theory predicts. Serving requests in the hierarchy's DFS order finally lets a cache holding one request's context attain the unbounded-cache optimum exactly, so cache capacity and reorder window act as substitutes.",
+    "status": "found"
+  },
+  "2609.13693": {
+    "arxiv_id": "2609.13693",
+    "title": "Beyond Kruskal: Polynomial-Time Tensor Decomposition under the Lovitz-Petrov Condition",
+    "authors": [
+      "Shiri Sivan"
+    ],
+    "submission_date": "2026-09-12T04:03:29Z",
+    "latest_updated": "2026-09-22T07:08:14Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2609.13693v1",
+      "2609.13693v2"
+    ],
+    "abstract": "Identifiability criteria certify that a given tensor decomposition is a unique rank decomposition. Kruskal's classical condition is one of the best-known deterministic criteria for identifiability. However, no polynomial-time decomposition algorithm is known under the Kruskal condition, and verifying the condition itself is NP-hard. Lovitz and Petrov introduced a strictly more general identifiability condition which, in contrast, is polynomial-time verifiable, but no polynomial-time decomposition algorithm was previously known under this condition. We give a polynomial-time algorithm for tensor decomposition under the Lovitz--Petrov condition. Moreover, combining our algorithm with polynomial-time verification of the Lovitz--Petrov condition yields an efficient end-to-end certification procedure: after computing a decomposition, one can deterministically certify in polynomial time that it is unique and therefore of minimum rank. This contrasts with an arbitrary tensor decomposition, which certifies only an upper bound on the tensor rank, while determining tensor rank is NP-hard in general.",
+    "status": "found"
+  }
+}

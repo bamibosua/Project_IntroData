@@ -1,0 +1,434 @@
+{
+  "2601.20416": {
+    "arxiv_id": "2601.20416",
+    "title": "Promotion of cooperation in deme-structured populations with growth-merging dynamics",
+    "authors": [
+      "Damien Ribière",
+      "Alia Abbara",
+      "Anne-Florence Bitbol"
+    ],
+    "submission_date": "2026-01-28T09:22:38Z",
+    "latest_updated": "2026-08-24T17:03:05Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.20416v1",
+      "2601.20416v2"
+    ],
+    "abstract": "The spatial structure of populations may promote the emergence and maintenance of cooperation. Cooperation in the prisoner's dilemma is favored under specific update rules in evolutionary graph theory models with one individual per node of a graph, but this effect vanishes in models with well-mixed demes connected by migrations under soft selection (each deme contributing independently of its productivity). In contrast, experiments and models involving cycles of growth, merging and dilution have shown that spatial structure can favor cooperation. Here, we reconcile these findings by studying deme-structured populations under growth-merging-dilution dynamics, corresponding to a clique (fully connected graph) under hard selection (each deme contributing in proportion to its productivity). We obtain analytical conditions for the cooperator fraction to increase during deterministic logistic growth, and to increase on average under dilution-growth-merging cycles, in the weak selection regime, where fitness differences between genotypes are small. Furthermore, we analytically express the fixation probability of cooperators under weak selection, yielding a criterion for cooperators to have a higher fixation probability than neutral mutants. Finally, numerical simulations show that stochastic growth further promotes cooperation. Overall, hard selection is essential for cooperation to be promoted in deme-structured populations.",
+    "status": "found"
+  },
+  "2601.20417": {
+    "arxiv_id": "2601.20417",
+    "title": "SpeechMapper: Speech-to-text Embedding Projector for LLMs",
+    "authors": [
+      "Biswesh Mohapatra",
+      "Marcely Zanon Boito",
+      "Ioan Calapodescu"
+    ],
+    "submission_date": "2026-01-28T09:22:58Z",
+    "latest_updated": "2026-02-04T13:11:44Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.20417v1",
+      "2601.20417v2"
+    ],
+    "abstract": "Current speech LLMs bridge speech foundation models to LLMs using projection layers, training all of these components on speech instruction data. This strategy is computationally intensive and susceptible to task and prompt overfitting. We present SpeechMapper, a cost-efficient speech-to-LLM-embedding training approach that mitigates overfitting, enabling more robust and generalizable models. Our model is first pretrained without the LLM on inexpensive hardware, and then efficiently attached to the target LLM via a brief 1K-step instruction tuning (IT) stage. Through experiments on speech translation and spoken question answering, we demonstrate the versatility of SpeechMapper's pretrained block, presenting results for both task-agnostic IT, an ASR-based adaptation strategy that does not train in the target task, and task-specific IT. In task-agnostic settings, Speechmapper rivals the best instruction-following speech LLM from IWSLT25, despite never being trained on these tasks, while in task-specific settings, it outperforms this model across many datasets, despite requiring less data and compute. Overall, SpeechMapper offers a practical and scalable approach for efficient, generalizable speech-LLM integration without large-scale IT.",
+    "status": "found"
+  },
+  "2601.20418": {
+    "arxiv_id": "2601.20418",
+    "title": "Sufficiently Regularized Nonnegative Quartic Polynomials are Sum-of-Squares",
+    "authors": [
+      "Wenqi Zhu",
+      "Coralia Cartis"
+    ],
+    "submission_date": "2026-01-28T09:23:52Z",
+    "latest_updated": "2026-04-02T13:38:35Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.20418v1",
+      "2601.20418v2"
+    ],
+    "abstract": "A polynomial that is nonnegative need not be a sum of squares of polynomials. This classical gap, identified by Hilbert in 1888, lies at the heart of why the global optimization of multivariate quartic polynomials is NP-hard. Yet we show that this gap is closed when using (sufficient) regularization, which fundamentally alters the algebraic structure of the problem. Namely, we investigate a class of quartically-regularized cubic polynomials which arise naturally in polynomial optimization and higher-order tensor methods for nonconvex problems. We show that, under mild assumptions and for sufficiently large Euclidean quartic regularization, the shifted nonnegative polynomial becomes a sum of squares, yielding an exact semidefinite programming (SDP) formulation at the zeroth level of the Lasserre hierarchy. We further derive explicit bounds on the regularization parameter that guarantee this property. Beyond this asymptotic regime, we identify structured subclasses for which SoS exactness holds for all regularization levels, including quadratic-quartic models and a class of low-rank-type cubic tensors. In contrast, we show that separable quartic regularized polynomials -- including classical tensor models proposed by Schnabel (1991) -- do not, in general, induce SoS representations, even under arbitrarily large regularization. Our results reveal a sharp structural boundary between tractable and intractable regimes in polynomial optimization. In particular, they explain why Euclidean quartic regularization plays a significant role: in addition to regularising the model, it can induce exact SoS certificates and exact SDP representations.",
+    "status": "found"
+  },
+  "2601.20419": {
+    "arxiv_id": "2601.20419",
+    "title": "Let's Roll a BiFTA: Bi-refinement for Fine-grained Text-visual Alignment in Vision-Language Models",
+    "authors": [
+      "Yuhao Sun",
+      "Chengyi Cai",
+      "Jiacheng Zhang",
+      "Zesheng Ye",
+      "Xingliang Yuan",
+      "Feng Liu"
+    ],
+    "submission_date": "2026-01-28T09:24:14Z",
+    "latest_updated": "2026-01-28T09:24:14Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.20419v1"
+    ],
+    "abstract": "Recent research has shown that aligning fine-grained text descriptions with localized image patches can significantly improve the zero-shot performance of pre-trained vision-language models (e.g., CLIP). However, we find that both fine-grained text descriptions and localized image patches often contain redundant information, making text-visual alignment less effective. In this paper, we tackle this issue from two perspectives: \\emph{View Refinement} and \\emph{Description refinement}, termed as \\textit{\\textbf{Bi}-refinement for \\textbf{F}ine-grained \\textbf{T}ext-visual \\textbf{A}lignment} (BiFTA). \\emph{View refinement} removes redundant image patches with high \\emph{Intersection over Union} (IoU) ratios, resulting in more distinctive visual samples. \\emph{Description refinement} removes redundant text descriptions with high pairwise cosine similarity, ensuring greater diversity in the remaining descriptions. BiFTA achieves superior zero-shot performance on 6 benchmark datasets for both ViT-based and ResNet-based CLIP, justifying the necessity to remove redundant information in visual-text alignment.",
+    "status": "found"
+  },
+  "2601.20420": {
+    "arxiv_id": "2601.20420",
+    "title": "Concept Component Analysis: A Principled Approach for Concept Extraction in LLMs",
+    "authors": [
+      "Yuhang Liu",
+      "Erdun Gao",
+      "Dong Gong",
+      "Anton van den Hengel",
+      "Javen Qinfeng Shi"
+    ],
+    "submission_date": "2026-01-28T09:27:05Z",
+    "latest_updated": "2026-01-29T04:05:29Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.20420v1",
+      "2601.20420v2"
+    ],
+    "abstract": "Developing human understandable interpretation of large language models (LLMs) becomes increasingly critical for their deployment in essential domains. Mechanistic interpretability seeks to mitigate the issues through extracts human-interpretable process and concepts from LLMs' activations. Sparse autoencoders (SAEs) have emerged as a popular approach for extracting interpretable and monosemantic concepts by decomposing the LLM internal representations into a dictionary. Despite their empirical progress, SAEs suffer from a fundamental theoretical ambiguity: the well-defined correspondence between LLM representations and human-interpretable concepts remains unclear. This lack of theoretical grounding gives rise to several methodological challenges, including difficulties in principled method design and evaluation criteria. In this work, we show that, under mild assumptions, LLM representations can be approximated as a {linear mixture} of the log-posteriors over concepts given the input context, through the lens of a latent variable model where concepts are treated as latent variables. This motivates a principled framework for concept extraction, namely Concept Component Analysis (ConCA), which aims to recover the log-posterior of each concept from LLM representations through a {unsupervised} linear unmixing process. We explore a specific variant, termed sparse ConCA, which leverages a sparsity prior to address the inherent ill-posedness of the unmixing problem. We implement 12 sparse ConCA variants and demonstrate their ability to extract meaningful concepts across multiple LLMs, offering theory-backed advantages over SAEs.",
+    "status": "found"
+  },
+  "2601.20421": {
+    "arxiv_id": "2601.20421",
+    "title": "Steer'n Roll: A Stereoscopic Flow-Sensing Strategy for Planktonic Prey Detection and Capture",
+    "authors": [
+      "Tommaso Redaelli",
+      "Eva Kanso",
+      "Christophe Eloy"
+    ],
+    "submission_date": "2026-01-28T09:28:34Z",
+    "latest_updated": "2026-04-12T18:50:12Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.20421v1",
+      "2601.20421v2"
+    ],
+    "abstract": "Planktonic organisms such as copepods sense swimming prey and sinking food particles through the hydrodynamic disturbances they generate. However, because these flow fields are often highly symmetric, they provide little directional information, making accurate localization of the source challenging. Here, we introduce the steer'n roll sensing and response strategy. This strategy combines stereoscopic flow sensing and a roll motion. Stereoscopic sensing allows plankton to disambiguate flow signals by integrating two spatially separated flow measurements, while a roll about the swimming axis enhances exploration of the three-dimensional space. We show that steer'n roll is efficient, achieving a 100% success rate, versatile across signal type, and robust to flow sensing noise, orientational diffusion, and turbulence. Together, these findings identify a biologically plausible mechanism for prey detection and capture via flow sensing, and offer testable insights into the sensory-motor strategies of planktonic organisms.",
+    "status": "found"
+  },
+  "2601.20422": {
+    "arxiv_id": "2601.20422",
+    "title": "Guiding the Recommender: Information-Aware Auto-Bidding for Content Promotion",
+    "authors": [
+      "Yumou Liu",
+      "Zhenzhe Zheng",
+      "Jiang Rong",
+      "Yao Hu",
+      "Fan Wu",
+      "Guihai Chen"
+    ],
+    "submission_date": "2026-01-28T09:29:04Z",
+    "latest_updated": "2026-01-28T09:29:04Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.20422v1"
+    ],
+    "abstract": "Modern content platforms offer paid promotion to mitigate cold start by allocating exposure via auctions. Our empirical analysis reveals a counterintuitive flaw in this paradigm: while promotion rescues low-to-medium quality content, it can harm high-quality content by forcing exposure to suboptimal audiences, polluting engagement signals and downgrading future recommendation. We recast content promotion as a dual-objective optimization that balances short-term value acquisition with long-term model improvement. To make this tractable at bid time in content promotion, we introduce a decomposable surrogate objective, gradient coverage, and establish its formal connection to Fisher Information and optimal experimental design. We design a two-stage auto-bidding algorithm based on Lagrange duality that dynamically paces budget through a shadow price and optimizes impression-level bids using per-impression marginal utilities. To address missing labels at bid time, we propose a confidence-gated gradient heuristic, paired with a zeroth-order variant for black-box models that reliably estimates learning signals in real time. We provide theoretical guarantees, proving monotone submodularity of the composite objective, sublinear regret in online auction, and budget feasibility. Extensive offline experiments on synthetic and real-world datasets validate the framework: it outperforms baselines, achieves superior final AUC/LogLoss, adheres closely to budget targets, and remains effective when gradients are approximated zeroth-order. These results show that strategic, information-aware promotion can improve long-term model performance and organic outcomes beyond naive impression-maximization strategies.",
+    "status": "found"
+  },
+  "2601.20423": {
+    "arxiv_id": "2601.20423",
+    "title": "Overview of tau lepton physics at a super tau-charm facility",
+    "authors": [
+      "Zhiqing Zhang"
+    ],
+    "submission_date": "2026-01-28T09:32:40Z",
+    "latest_updated": "2026-01-28T09:32:40Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.20423v1"
+    ],
+    "abstract": "An overview of tau lepton physics is presented, using the tau lepton discovery and its precision measurements as examples to illustrate the importance of the energy region to be covered by the super tau-charm factory. By presenting the current measurement status of the major physics topics, the emphasize is put on pointing out a few open issues and possibilities for the super tau-charm factory.",
+    "status": "found"
+  },
+  "2601.20424": {
+    "arxiv_id": "2601.20424",
+    "title": "Hopes and Fears -- Emotion Distribution in the Topic Landscape of Finnish Parliamentary Speech 2000-2020",
+    "authors": [
+      "Anna Ristilä",
+      "Otto Tarkka",
+      "Veronika Laippala",
+      "Kimmo Elo"
+    ],
+    "submission_date": "2026-01-28T09:32:41Z",
+    "latest_updated": "2026-01-28T09:32:41Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.20424v1"
+    ],
+    "abstract": "Existing research often treats parliamentary discourse as a homogeneous whole, overlooking topic-specific patterns. Parliamentary speeches address a wide range of topics, some of which evoke stronger emotions than others. While everyone has intuitive assumptions about what the most emotive topics in a parliament may be, there has been little research into the emotions typically linked to different topics. This paper strives to fill this gap by examining emotion expression among the topics of parliamentary speeches delivered in Eduskunta, the Finnish Parliament, between 2000 and 2020. An emotion analysis model is used to investigate emotion expression in topics, from both synchronic and diachronic perspectives. The results strengthen evidence of increasing positivity in parliamentary speech and provide further insights into topic-specific emotion expression within parliamentary debate.",
+    "status": "found"
+  },
+  "2601.20425": {
+    "arxiv_id": "2601.20425",
+    "title": "Quartet of Diffusions: Structure-Aware Point Cloud Generation through Part and Symmetry Guidance",
+    "authors": [
+      "Chenliang Zhou",
+      "Fangcheng Zhong",
+      "Weihao Xia",
+      "Albert Miao",
+      "Canberk Baykal",
+      "Cengiz Oztireli"
+    ],
+    "submission_date": "2026-01-28T09:33:14Z",
+    "latest_updated": "2026-01-28T09:33:14Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.20425v1"
+    ],
+    "abstract": "We introduce the Quartet of Diffusions, a structure-aware point cloud generation framework that explicitly models part composition and symmetry. Unlike prior methods that treat shape generation as a holistic process or only support part composition, our approach leverages four coordinated diffusion models to learn distributions of global shape latents, symmetries, semantic parts, and their spatial assembly. This structured pipeline ensures guaranteed symmetry, coherent part placement, and diverse, high-quality outputs. By disentangling the generative process into interpretable components, our method supports fine-grained control over shape attributes, enabling targeted manipulation of individual parts while preserving global consistency. A central global latent further reinforces structural coherence across assembled parts. Our experiments show that the Quartet achieves state-of-the-art performance. To our best knowledge, this is the first 3D point cloud generation framework that fully integrates and enforces both symmetry and part priors throughout the generative process.",
+    "status": "found"
+  },
+  "2601.20426": {
+    "arxiv_id": "2601.20426",
+    "title": "Mix2Morph: Learning Sound Morphing from Noisy Mixes",
+    "authors": [
+      "Annie Chu",
+      "Hugo Flores García",
+      "Oriol Nieto",
+      "Justin Salamon",
+      "Bryan Pardo",
+      "Prem Seetharaman"
+    ],
+    "submission_date": "2026-01-28T09:34:18Z",
+    "latest_updated": "2026-01-28T09:34:18Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.20426v1"
+    ],
+    "abstract": "We introduce Mix2Morph, a text-to-audio diffusion model fine-tuned to perform sound morphing without a dedicated dataset of morphs. By finetuning on noisy surrogate mixes at higher diffusion timesteps, Mix2Morph yields stable, perceptually coherent morphs that convincingly integrate qualities of both sources. We specifically target sound infusions, a practically and perceptually motivated subclass of morphing in which one sound acts as the dominant primary source, providing overall temporal and structural behavior, while a secondary sound is infused throughout, enriching its timbral and textural qualities. Objective evaluations and listening tests show that Mix2Morph outperforms prior baselines and produces high-quality sound infusions across diverse categories, representing a step toward more controllable and concept-driven tools for sound design. Sound examples are available at https://anniejchu.github.io/mix2morph .",
+    "status": "found"
+  },
+  "2601.20427": {
+    "arxiv_id": "2601.20427",
+    "title": "Reducing End-to-End Latency of Cause-Effect Chains with Shared Cache Analysis",
+    "authors": [
+      "Yixuan Zhu",
+      "Yinkang Gao",
+      "Bo Zhang",
+      "Xiaohang Gong",
+      "Binze Jiang",
+      "Lei Gong",
+      "Wenqi Lou",
+      "Teng Wang",
+      "Chao Wang",
+      "Xi Li",
+      "Xuehai Zhou"
+    ],
+    "submission_date": "2026-01-28T09:34:44Z",
+    "latest_updated": "2026-01-28T09:34:44Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.20427v1"
+    ],
+    "abstract": "Cause-effect chains, as a widely used modeling method in real-time embedded systems, are extensively applied in various safety-critical domains. End-to-end latency, as a key real-time attribute of cause-effect chains, is crucial in many applications. But the analysis of end-to-end latency for cause-effect chains on multicore platforms with shared caches still presents an unresolved issue. Traditional methods typically assume that the worst-case execution time (WCET) of each task in the cause-effect chain is known. However, in the absence of scheduling information, these methods often assume that all shared cache accesses result in misses, leading to an overestimation of WCET and, consequently, affecting the accuracy of end-to-end latency. However, effectively integrating scheduling information into the WCET analysis process of the chains may introduce two challenges: first, how to leverage the structural characteristics of the chains to optimize shared cache analysis, and second, how to improve analysis accuracy while avoiding state space explosion. To address these issues, this paper proposes a novel end-to-end latency analysis framework designed for multi-chain systems on multicore platforms with shared caches. This framework extracts scheduling information and structural characteristics of cause-effect chains, constructing fine-grained and scalable inter-core memory access contexts at the basic block level for time-sensitive shared cache analysis. This results in more accurate WCET (TSC-WCET) estimates, which are then used to derive the end-to-end latency. Finally, we conduct experiments on dual-core and quad-core systems with various cache configurations, which show that under certain settings, the average maximum end-to-end latency of cause-effect chains is reduced by up to 34% and 26%.",
+    "status": "found"
+  },
+  "2601.20428": {
+    "arxiv_id": "2601.20428",
+    "title": "Nonlinear Dimensionality Reduction with Diffusion Maps in Practice",
+    "authors": [
+      "Sönke Beier",
+      "Paula Pirker-Díaz",
+      "Friedrich Pagenkopf",
+      "Karoline Wiesner"
+    ],
+    "submission_date": "2026-01-28T09:35:32Z",
+    "latest_updated": "2026-01-28T09:35:32Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.20428v1"
+    ],
+    "abstract": "Diffusion Map is a spectral dimensionality reduction technique which is able to uncover nonlinear submanifolds in high-dimensional data. And, it is increasingly applied across a wide range of scientific disciplines, such as biology, engineering, and social sciences. But data preprocessing, parameter settings and component selection have a significant influence on the resulting manifold, something which has not been comprehensively discussed in the literature so far. We provide a practice oriented review of the Diffusion Map technique, illustrate pitfalls and showcase a recently introduced technique for identifying the most relevant components. Our results show that the first components are not necessarily the most relevant ones.",
+    "status": "found"
+  },
+  "2601.20429": {
+    "arxiv_id": "2601.20429",
+    "title": "GRTX: Efficient Ray Tracing for 3D Gaussian-Based Rendering",
+    "authors": [
+      "Junseo Lee",
+      "Sangyun Jeon",
+      "Jungi Lee",
+      "Junyong Park",
+      "Jaewoong Sim"
+    ],
+    "submission_date": "2026-01-28T09:37:12Z",
+    "latest_updated": "2026-01-28T09:37:12Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.20429v1"
+    ],
+    "abstract": "3D Gaussian Splatting has gained widespread adoption across diverse applications due to its exceptional rendering performance and visual quality. While most existing methods rely on rasterization to render Gaussians, recent research has started investigating ray tracing approaches to overcome the fundamental limitations inherent in rasterization. However, current Gaussian ray tracing methods suffer from inefficiencies such as bloated acceleration structures and redundant node traversals, which greatly degrade ray tracing performance. In this work, we present GRTX, a set of software and hardware optimizations that enable efficient ray tracing for 3D Gaussian-based rendering. First, we introduce a novel approach for constructing streamlined acceleration structures for Gaussian primitives. Our key insight is that anisotropic Gaussians can be treated as unit spheres through ray space transformations, which substantially reduces BVH size and traversal overhead. Second, we propose dedicated hardware support for traversal checkpointing within ray tracing units. This eliminates redundant node visits during multi-round tracing by resuming traversal from checkpointed nodes rather than restarting from the root node in each subsequent round. Our evaluation shows that GRTX significantly improves ray tracing performance compared to the baseline ray tracing method with a negligible hardware cost.",
+    "status": "found"
+  },
+  "2601.20430": {
+    "arxiv_id": "2601.20430",
+    "title": "Youtu-Parsing: Perception, Structuring and Recognition via High-Parallelism Decoding",
+    "authors": [
+      "Haoyu Cao",
+      "Kun Yin",
+      "Yunfei Wu",
+      "Bing Liu",
+      "Zhongpeng Cai",
+      "Xiaotian Li",
+      "Huang Chen",
+      "Xin Li",
+      "Yinsong Liu",
+      "Deqiang Jiang",
+      "Xing Sun",
+      "Yunsheng Wu",
+      "Qianyu Li",
+      "Antai Guo",
+      "Yanzhen Liao",
+      "Yanqiu Qu",
+      "Haodong Lin",
+      "Chengxu He",
+      "Shuangyin Liu"
+    ],
+    "submission_date": "2026-01-28T09:37:13Z",
+    "latest_updated": "2026-07-13T14:16:50Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.20430v1",
+      "2601.20430v2"
+    ],
+    "abstract": "This paper presents Youtu-Parsing, an efficient and versatile document parsing model designed for high-performance content extraction. The architecture employs a native Vision Transformer (ViT) featuring a dynamic-resolution visual encoder to extract shared document features, coupled with a prompt-guided Youtu-LLM-2B language model for layout analysis and region-prompted decoding. Leveraging this decoupled and feature-reusable framework, we introduce a high-parallelism decoding strategy comprising two core components: token parallelism and query parallelism. The token parallelism strategy concurrently generates up to 64 candidate tokens per inference step, which are subsequently validated through a verification mechanism. This approach yields a 5--11x speedup over traditional autoregressive decoding and is particularly well-suited for highly structured scenarios, such as table recognition. To further exploit the advantages of region-prompted decoding, the query parallelism strategy enables simultaneous content prediction for multiple bounding boxes (up to five), providing an additional 2x acceleration while maintaining output quality equivalent to standard decoding. Youtu-Parsing encompasses a diverse range of document elements, including text, formulas, tables, charts, seals, and hierarchical structures. Furthermore, the model exhibits strong robustness when handling rare characters, multilingual text, and handwritten content. Extensive evaluations demonstrate that Youtu-Parsing achieves state-of-the-art (SOTA) performance on both the OmniDocBench and olmOCR-bench benchmarks. Overall, Youtu-Parsing demonstrates significant experimental value and practical utility for large-scale document intelligence applications.",
+    "status": "found"
+  },
+  "2601.20431": {
+    "arxiv_id": "2601.20431",
+    "title": "On Eigenvalues of Logarithmic Potential Operator in the Hyperbolic Space",
+    "authors": [
+      "Jiya Rose Johnson",
+      "Sheela Verma"
+    ],
+    "submission_date": "2026-01-28T09:37:32Z",
+    "latest_updated": "2026-01-28T09:37:32Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.20431v1"
+    ],
+    "abstract": "Let $Ω$ be a bounded open set in the Poincaré hyperbolic disk, $\\mathbb{D}$. In this article, we consider the hyperbolic logarithmic potential operator $\\mathcal{L}_h : L^2(Ω) \\to L^2(Ω)$, defined by \\begin{equation*} \\mathcal{L}_h u(z)=\\frac{1}{2}\\int_Ω\\log\\frac{1}{[z,w]}\\,u(w)\\, {\\,\\rm d}(w), \\end{equation*} and the associated eigenvalue problem on $Ω$ \\begin{equation} \\mathcal{L}_h u=τu. \\end{equation} We first extend the notion of polarization with respect to hyperplanes in the Poincaré disk and prove the associated properties. Then we establish a reverse Faber-Krahn inequality for the largest eigenvalue, $τ_{h}$ of $\\mathcal{L}_h$, under polarization. Further, we provide a representation formula for the eigenfunctions of $\\mathcal{L}_h$. In addition, we show that the operator $\\mathcal{L}_h$ is a positive operator on $L^2(Ω)$.",
+    "status": "found"
+  },
+  "2601.20432": {
+    "arxiv_id": "2601.20432",
+    "title": "Self Voice Conversion as an Attack against Neural Audio Watermarking",
+    "authors": [
+      "Yigitcan Özer",
+      "Wanying Ge",
+      "Zhe Zhang",
+      "Xin Wang",
+      "Junichi Yamagishi"
+    ],
+    "submission_date": "2026-01-28T09:41:18Z",
+    "latest_updated": "2026-03-16T02:07:34Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.20432v1",
+      "2601.20432v2"
+    ],
+    "abstract": "Audio watermarking embeds auxiliary information into speech while maintaining speaker identity, linguistic content, and perceptual quality. Although recent advances in neural and digital signal processing-based watermarking methods have improved imperceptibility and embedding capacity, robustness is still primarily assessed against conventional distortions such as compression, additive noise, and resampling. However, the rise of deep learning-based attacks introduces novel and significant threats to watermark security. In this work, we investigate self voice conversion as a universal, content-preserving attack against audio watermarking systems. Self voice conversion remaps a speaker's voice to the same identity while altering acoustic characteristics through a voice conversion model. We demonstrate that this attack severely degrades the reliability of state-of-the-art watermarking approaches and highlight its implications for the security of modern audio watermarking techniques.",
+    "status": "found"
+  },
+  "2601.20433": {
+    "arxiv_id": "2601.20433",
+    "title": "MARE: Multimodal Alignment and Reinforcement for Explainable Deepfake Detection via Vision-Language Models",
+    "authors": [
+      "Wenbo Xu",
+      "Wei Lu",
+      "Xiangyang Luo"
+    ],
+    "submission_date": "2026-01-28T09:44:31Z",
+    "latest_updated": "2026-09-14T11:58:16Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 5,
+    "versions": [
+      "2601.20433v1",
+      "2601.20433v2",
+      "2601.20433v3",
+      "2601.20433v4",
+      "2601.20433v5"
+    ],
+    "abstract": "Deepfake detection is a widely researched topic that is crucial for combating the spread of malicious content, with existing methods mainly modeling the problem as classification or spatial localization. The rapid advancements in generative models impose new demands on Deepfake detection. In this paper, we propose multimodal alignment and reinforcement for explainable Deepfake detection via vision-language models, termed MARE, which aims to enhance the accuracy and reliability of Vision-Language Models (VLMs) in Deepfake detection and reasoning. Specifically, MARE designs comprehensive reward functions, incorporating reinforcement learning from human feedback (RLHF), to incentivize the generation of text-spatially aligned reasoning content that adheres to human preferences. Besides, MARE introduces a forgery disentanglement module to capture intrinsic forgery traces from high-level facial semantics, thereby improving its authenticity detection capability. We conduct thorough evaluations on the reasoning content generated by MARE. Both quantitative and qualitative experimental results demonstrate that MARE achieves state-of-the-art performance in terms of accuracy and reliability.",
+    "status": "found"
+  },
+  "2601.20434": {
+    "arxiv_id": "2601.20434",
+    "title": "Electro-Optic Modulation in Polycrystalline Barium Titanate Metasurfaces Enhanced by Poling",
+    "authors": [
+      "Eleni Prountzou",
+      "Helena C. Weigand",
+      "Virginia Falcone",
+      "Ülle-Linda Talts",
+      "Rachel Grange"
+    ],
+    "submission_date": "2026-01-28T09:46:17Z",
+    "latest_updated": "2026-01-28T09:46:17Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.20434v1"
+    ],
+    "abstract": "Electrically tunable metasurfaces leveraging the strong Pockel's effect in barium titanate (BaTiO$_3$ or BTO) are a promising platform for reconfigurable free-space optical devices. However, the high cost, limited scalability, and restricted substrate compatibility of epitaxial BTO films hinder its exploitation. Here, we demonstrate free-space optical modulators based on imprinted BTO metasurfaces with targeted designs for optical and electric field confinement within the active material. With resonances exhibiting high quality factors of up to 200, we demonstrate improved transmission modulation at sub-volt driving amplitudes and frequencies up to 5 MHz. Additional enhancement is achieved via ferroelectric domain alignment, resulting in up to 25 % higher modulation strength compared to the unbiased case and up to 75 % compared to previous demonstrations. This enhanced EO response, arising from the effective permittivity engineering and domain orientation in these polycrystalline metasurfaces, holds significant potential for scalable and efficient EO modulators and active metasurfaces.",
+    "status": "found"
+  },
+  "2601.20435": {
+    "arxiv_id": "2601.20435",
+    "title": "Rethinking Thread Scheduling under Oversubscription: A User-Space Framework for Coordinating Multi-runtime and Multi-process Workloads",
+    "authors": [
+      "Aleix Roca",
+      "Vicenç Beltran"
+    ],
+    "submission_date": "2026-01-28T09:46:46Z",
+    "latest_updated": "2026-01-28T09:46:46Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.20435v1"
+    ],
+    "abstract": "The convergence of high-performance computing (HPC) and artificial intelligence (AI) is driving the emergence of increasingly complex parallel applications and workloads. These workloads often combine multiple parallel runtimes within the same application or across co-located jobs, creating scheduling demands that place significant stress on traditional OS schedulers. When oversubscribed (there are more ready threads than cores), OS schedulers rely on periodic preemptions to multiplex cores, often introducing interference that may degrade performance. In this paper, we present: (1) The User-space Scheduling Framework (USF), a novel seamless process scheduling framework completely implemented in user-space. USF enables users to implement their own process scheduling algorithms without requiring special permissions. We evaluate USF with its default cooperative policy, (2) SCHED_COOP, designed to reduce interference by switching threads only upon blocking. This approach mitigates well-known issues such as Lock-Holder Preemption (LHP), Lock-Waiter Preemption (LWP), and scalability collapse. We implement USF and SCHED_COOP by extending the GNU C library with the nOS-V runtime, enabling seamless coordination across multiple runtimes (e.g., OpenMP) without requiring invasive application changes. Evaluations show gains up to 2.4x in oversubscribed multi-process scenarios, including nested BLAS workloads, multi-process PyTorch inference with LLaMA-3, and Molecular Dynamics (MD) simulations.",
+    "status": "found"
+  }
+}

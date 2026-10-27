@@ -1,0 +1,418 @@
+{
+  "2609.13734": {
+    "arxiv_id": "2609.13734",
+    "title": "PolicyMem: Geometric Policy Memory for LLM Governance",
+    "authors": [
+      "Yuanchen Bei",
+      "Zhengzhang Chen",
+      "Yanjun Zhao",
+      "Haoyu Wang",
+      "Hanghang Tong",
+      "Haifeng Chen"
+    ],
+    "submission_date": "2026-09-12T06:07:43Z",
+    "latest_updated": "2026-09-12T06:07:43Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13734v1"
+    ],
+    "abstract": "As large language models (LLMs) are increasingly deployed in real-world high-stakes applications, effective governance has become essential. Existing safeguards largely follow two paradigms: learning-based guards provide strong semantic discrimination but couple policy behavior to trained models and taxonomies, while programmable frameworks offer flexible control but require substantial manual prompt and workflow engineering. Neither externalizes policies as reusable operational states, making it difficult to consistently reuse policy evidence across detection, intervention, and verification. In this paper, we introduce PolicyMem, a geometric policy memory that externalizes natural-language policies as reusable geometric memory objects represented by low-rank subspaces in a shared representation space. A memory writer compiles natural-language policies into policy memory slots, and query-response pairs read the policy memory through projection energy. The resulting policy-evidence profile directly mediates the safety verdict and is reused for policy attribution and post-intervention verification. Coupled with a response rewriter, PolicyMem enables a detect-rewrite-verify loop for LLM governance. Across five widely used benchmarks, PolicyMem achieves state-of-the-art unsafe behavior detection while enabling effective policy attribution, rewriting, and post-intervention verification through the shared policy memory.",
+    "status": "found"
+  },
+  "2609.13735": {
+    "arxiv_id": "2609.13735",
+    "title": "Finiteness of an Isogeny Class via Equidistribution",
+    "authors": [
+      "Jit Wu Yap"
+    ],
+    "submission_date": "2026-09-12T06:09:30Z",
+    "latest_updated": "2026-09-12T06:09:30Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13735v1"
+    ],
+    "abstract": "In a very recent, beautiful paper, Junyi Xie and Ziquan Yang gave a new proof of Faltings' isogeny theorem over number fields by reducing to Tate's theorem over finite fields. We show that the same ideas can be adapted to prove finiteness of an isogeny class over number fields from the finiteness of an isogeny class over finite fields. Hence we obtain a new proof of the Shafarevich conjecture over number fields. The proof in this paper was obtained through the use of GPT6 Astra Ultra.",
+    "status": "found"
+  },
+  "2609.13736": {
+    "arxiv_id": "2609.13736",
+    "title": "Adjusting for Many Covariates in Randomized Clinical Trials with GLMs: Bias Reduction by Jackknife and Practical Guidance",
+    "authors": [
+      "Sihui Zhao",
+      "Xinbo Wang",
+      "Yongyong Ren",
+      "Hongyu Zhao",
+      "Hui Lu",
+      "Lin Liu"
+    ],
+    "submission_date": "2026-09-12T06:12:14Z",
+    "latest_updated": "2026-09-12T06:12:14Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13736v1"
+    ],
+    "abstract": "Adjusting for baseline covariates has become standard practice in analyzing randomized clinical trials. In the low-dimensional setting, it is well understood that covariate adjustment through a parametric working model can sometimes be more efficient than the unadjusted difference-in-mean estimator. However, when the number of adjusted covariates is large relative to the sample size $n$, a naïve adjustment may introduce excessive bias, leading to invalid statistical inference. The current literature that tries to resolve this issue is either limited to linear working models or relies on sample splitting, which may raise concerns about the replicability of RCT analyses. In this paper, we devise a novel jackknife-based approach to covariate adjustment through generalized linear models (GLMs), which we term as JAckknife Score-based Adjustment (JASA), together with its calibrated version JASACal. By employing a nuanced jackknife strategy, JASA and JASACal avoid sample splitting and make full use of the data, while ensuring that the bias of JASA or JASACal is still negligible even when the number of adjusted covariates is large compared to $n$. JASA also encompasses state-of-the-art adjusted estimators through linear working models as a special case. Through extensive simulation experiments and a real data analysis, we demonstrate that JASA or JASACal can adjust for a much greater number of covariates than existing benchmarks. These empirical results also shed some new light on practical guidance for covariate adjustment with GLMs. Both JASA and JASACal have been incorporated into our R package HOIFCar available from CRAN. The package HOIFCar is developed to serve as a user-friendly option for covariate adjustment in RCTs, in particular when practitioners hope to adjust for a large number of covariates.",
+    "status": "found"
+  },
+  "2609.13737": {
+    "arxiv_id": "2609.13737",
+    "title": "ForeSight: Enhancing Risk Monitoring via Early Safety Signal Distillation",
+    "authors": [
+      "Hanling Wang",
+      "Chenlong Wei",
+      "Ling Xu",
+      "Hanyan Niu",
+      "Qi Cao",
+      "Shizhou Huang",
+      "Yang Yang",
+      "Xiaohui Zhu",
+      "Yao Zhu"
+    ],
+    "submission_date": "2026-09-12T06:15:17Z",
+    "latest_updated": "2026-09-12T06:15:17Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13737v1"
+    ],
+    "abstract": "As large language models (LLMs) are increasingly deployed, the generation of harmful content has become a critical safety concern. Existing safeguards operate at the input, output, or streaming-generation stages, while early-risk methods that rely on surface tokens or output logits may suffer from weak initial signals, and internals-based detectors using dense representations may retain highly entangled and redundant safety-irrelevant information. It therefore remains unclear whether the earliest post-generation hidden states already contain reliable signals about final-response harmfulness. To address this gap, we propose ForeSight, a first-token output-risk forecasting framework that distills weak and redundant early safety signals into compact, layer-aware risk representations. Experiments on five safety benchmarks and two target models demonstrate that ForeSight achieves superior and efficient early-risk forecasting while relying solely on first-token hidden states. The code is available at: https://github.com/Scabbards1500/Foresight",
+    "status": "found"
+  },
+  "2609.13738": {
+    "arxiv_id": "2609.13738",
+    "title": "Gradient estimates and Liouville-type theorems for the semilinear elliptic equation involving the nonlinear gradient source",
+    "authors": [
+      "Wenguo Liang",
+      "Zhengce Zhang"
+    ],
+    "submission_date": "2026-09-12T06:16:18Z",
+    "latest_updated": "2026-09-12T06:16:18Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13738v1"
+    ],
+    "abstract": "We study local and global properties of positive solutions to the equation $-Δu=u^p+M|\\nabla u|^q$ in a domain $Ω$ of $\\mathbb R^N$, where $p,q$ are parameters and $M>0$. By constructing a linear operator, we establish the differential inequality containing an auxiliary function. By selecting appropriate auxiliary functions over various regions and employing the maximum principle, we derive the local gradient estimates for all $(p,q)\\in \\mathbb R^2$, and further establish Liouville-type theorems. As an application, we acquire universal estimates for local solutions of elliptic equations with general nonlinearities. Our results extend partial conclusions established in Bidaut-Véron, Garcia-Huidobro and Véron [Math. Ann. 378 (1-2) (2020) 13-56].",
+    "status": "found"
+  },
+  "2609.13739": {
+    "arxiv_id": "2609.13739",
+    "title": "HarnessBandit: Joint Learnability-Transferability Scheduling for Multi-Harness Agentic Reinforcement Learning",
+    "authors": [
+      "Hongliang Wei",
+      "Xiaobing Tu",
+      "Yinggui Wang",
+      "Zhengxi Liu",
+      "Rongkun Xue",
+      "Jinkui Ren",
+      "Xiantao Zhang",
+      "Debin Zhao",
+      "Xiaopeng Fan"
+    ],
+    "submission_date": "2026-09-12T06:22:45Z",
+    "latest_updated": "2026-09-12T06:22:45Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13739v1"
+    ],
+    "abstract": "Language-model agents are increasingly deployed through diverse harnesses that differ in system prompts, tool schemas, control loops, and trajectory formats. The same model can perform unevenly across these interfaces, making robustness to harness variation an important objective. A natural approach is to train a shared policy through multiple harnesses, but doing so introduces a scheduling problem: each training step should favor a harness that currently provides a useful learning signal while also producing an update that benefits the other harnesses. We develop HarnessBandit, an online scheduler that selects one harness per optimizer step. After a group-relative policy optimization (GRPO) update, it observes learnability -- the mean absolute advantage on the batch -- and transferability -- the cosine between a low-dimensional gradient sketch of the current harness and exponential moving averages of the remaining harnesses. The two signals are fused after pooled sliding-window min-max normalization and sampled with a visit-dependent bonus and an explicit exploration floor. We train Qwen3.5-2B across six harnesses on ClawGym and evaluate on PinchBench (held-out tasks, in-distribution OpenClaw) and ClawEval (held-out tasks and harness). HarnessBandit improves over mixed-batch multi-harness training on both benchmarks, while training diagnostics indicate that learnability and transferability provide distinct, evolving signals.",
+    "status": "found"
+  },
+  "2609.13740": {
+    "arxiv_id": "2609.13740",
+    "title": "Optimal Cohort Staircase Designs",
+    "authors": [
+      "Soumadeb Pain",
+      "Satya Prakash Singh"
+    ],
+    "submission_date": "2026-09-12T06:23:29Z",
+    "latest_updated": "2026-09-12T06:23:29Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13740v1"
+    ],
+    "abstract": "Staircase cluster randomized trials restrict outcome collection to a limited window around each cluster's transition from control to intervention. This can reduce the burden of repeated measurement, but the allocation of clusters and participants across treatment sequences requires careful consideration. We develop an optimal design framework for closed-cohort staircase trials with continuous outcomes, allowing cluster sizes to differ across sequences. Under a linear mixed model, we express treatment-effect precision through sequence-specific information contributions and establish convexity of the variance criterion in the cluster allocation proportions. An equivalence theorem characterizes optimal allocations, and reversal symmetry yields analytical solutions for several three- and four-sequence designs. We also consider joint optimization of sequence allocation and cluster sizes under a fixed participant total. Numerical investigations show that the value of unequal cluster sizes depends on the observation window and correlation structure: gains are often modest but can be substantial in selected settings. Comparisons with complete stepped-wedge designs demonstrate a trade-off between repeated measurements and additional clusters, with staircase designs achieving lower costs in some settings at comparable precision. Illustrations motivated by psychosocial cancer care and trial recruitment distinguish hypothetical design adaptations from the original studies. The results support choosing sequence allocation, cluster sizes, and observation windows jointly when repeated measurement is a major constraint.",
+    "status": "found"
+  },
+  "2609.13741": {
+    "arxiv_id": "2609.13741",
+    "title": "The structure of automorphism groups of zero-dimensional monomial algebras",
+    "authors": [
+      "Roberto Díaz",
+      "Giancarlo Lucchini Arteche",
+      "Gonzalo Manzano-Flores"
+    ],
+    "submission_date": "2026-09-12T06:25:07Z",
+    "latest_updated": "2026-09-12T06:25:07Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13741v1"
+    ],
+    "abstract": "Let $A$ be a zero-dimensional monomial algebra over an algebraically closed field of characteristic zero, that is, a finite-dimensional quotient of a polynomial ring by a monomial ideal. Its automorphism group $G$ is a linear algebraic group, described through the homogeneous nilpotent derivations of $A$. We analyze the structure of $G$ in detail. Its identity component $G^0$ is a semidirect product of its unipotent radical and a reductive subgroup isomorphic to a product of general linear groups, and for each root degree we characterize when the associated derivations give rise to an additive root subgroup, and determine its dimension. Using the Lie brackets of these derivations, we then give an explicit algorithm that produces, out of the minimal monomial generators of the ideal, a family of root subgroups generating $G^0$ together with a maximal torus. Such a family is minimal in the generic case. We also show that the component group $G/G^0$ can be arbitrary: every finite group arises as the component group of the automorphism group of some zero-dimensional monomial algebra. Finally, we apply these results to the algebras $\\mathbf{k}[\\mathbf{x}]/\\mathfrak{m}^d$, showing that the subgroup generated by a maximal torus and the outer root subgroups is exactly the subgroup of automorphisms with constant Jacobian determinant, and we deduce from this a new proof of Anick's theorem on the density of the tame automorphisms of $\\mathbf{k}[\\mathbf{x}]$.",
+    "status": "found"
+  },
+  "2609.13742": {
+    "arxiv_id": "2609.13742",
+    "title": "Hyper-LLaVA: Hyperbolic Uncertainty-aware Modality-Balanced Routing for Multimodal Continual Instruction Tuning",
+    "authors": [
+      "Kunlun Xu",
+      "Yanqin Zhang",
+      "Wenwen Qiang",
+      "Jiahuan Zhou"
+    ],
+    "submission_date": "2026-09-12T06:26:42Z",
+    "latest_updated": "2026-09-12T06:26:42Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13742v1"
+    ],
+    "abstract": "Multimodal Continual Instruction Tuning (MCIT) aims to exploit the incrementally accumulated knowledge to process multimodal inputs of diverse tasks, where parameter routing plays an important role. State-of-the-art methods rely on sample-to-task center similarity and cross-modal fusion with equal weight during routing. However, such solutions face two fundamental flaws: (1) Within each modality, the sample-to-task center distance is sub-optimal for routing since the abundant intra-task diversity information is underleveraged. (2) Different modalities exhibit varying reliability across tasks, where the modality with inter-task ambiguity can easily misguide the routing result. To address these problems, we propose Hyperbolic Uncertainty-aware Modality-Balanced Routing (Hyper-LLaVA) to improve parameter routing capacity based on cross-modality task feature uncertainty modeling. Specifically, to improve intra-modality task matching, Hyper-LLaVA accesses the sample-to-task distribution similarity in the Hyperbolic space. Besides, to alleviate the degradation brought by unreliable modalities, Hyper-LLaVA quantifies the task matching ambiguity within each modality to achieve adaptive balancing between task matching across modalities. Based on the complementary intra- and inter-modality task matching enhancement, our Hyper-LLaVA outperforms state-of-the-art approaches by large margins. Our source code is available at https://github.com/zhoujiahuan1991/ICML2026-Hyper-LLaVA",
+    "status": "found"
+  },
+  "2609.13743": {
+    "arxiv_id": "2609.13743",
+    "title": "Polarized Semi-Inclusive Deep-Inelastic Scattering at $\\mathcal O(α_s^3)$ in QCD",
+    "authors": [
+      "Liang Dong",
+      "Shen Fang",
+      "Jun Gao",
+      "Hai Tao Li",
+      "Ding Yu Shao",
+      "Bin Zhou",
+      "Yu Jiao Zhu"
+    ],
+    "submission_date": "2026-09-12T06:27:25Z",
+    "latest_updated": "2026-09-12T06:27:25Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13743v1"
+    ],
+    "abstract": "Unraveling the partonic origin of the proton spin requires precise determinations of polarized parton distribution functions (PDFs), which depend on comparably precise theoretical predictions for polarized scattering, particularly in view of the high-precision measurements anticipated at the future Electron-Ion Collider. We present the first next-to-next-to-next-to-leading order (N$^3$LO) QCD predictions for longitudinally polarized semi-inclusive deep-inelastic scattering (SIDIS) in a fully differential form, together with next-to-next-to-leading order predictions for the hadron transverse-momentum spectrum. These results are obtained by extending the two-dimensional transverse-momentum subtraction framework to the spin-dependent cross section. Together with the corresponding unpolarized calculation, these results enable consistent N$^3$LO predictions for longitudinal double-spin asymmetries and provide a precision baseline for future analyses of helicity PDFs and transverse-momentum-dependent helicity distributions.",
+    "status": "found"
+  },
+  "2609.13744": {
+    "arxiv_id": "2609.13744",
+    "title": "Room-Temperature Storage of Entanglement in a Silicon Carbide Quantum Node",
+    "authors": [
+      "Shuo Ren",
+      "Rui-Jian Liang",
+      "Qi-Cheng Hu",
+      "Zhen-Xuan He",
+      "Ji-Yang Zhou",
+      "Wu-Xi Lin",
+      "Zhi-He Hao",
+      "Tao Tu",
+      "Jin-Shi Xu",
+      "Chuan-Feng Li",
+      "Guang-Can Guo"
+    ],
+    "submission_date": "2026-09-12T06:28:03Z",
+    "latest_updated": "2026-09-12T06:28:03Z",
+    "revised_dates": null,
+    "venue": "Phys. Rev. Lett. 137, 100803 (2026)",
+    "latest_version": 1,
+    "versions": [
+      "2609.13744v1"
+    ],
+    "abstract": "Robust entanglement at room temperature is a central challenge for solid-state quantum information processing and quantum-enhanced sensing. Here we demonstrate room-temperature storage of entanglement in a silicon carbide (SiC) quantum node by coherently transferring an electron-nuclear entangled state onto long-lived nuclear-spin memory qubits. Using a shallow single color center in 4H-SiC, conventionally denoted PL6, we realize a fully addressable three-qubit register composed of one electron-spin processor and two strongly coupled $^{29}$Si nuclear-spin memory qubits. This platform enables the deterministic generation of high-fidelity entangled states, including a nuclear-spin Bell state with a fidelity of $94 \\pm 2\\%$ and a three-qubit Greenberger-Horne-Zeilinger (GHZ)-type state with a fidelity of $89 \\pm 4\\%$. By implementing a SWAP-gate protocol in the strong hyperfine-coupling regime, the electron-nuclear entanglement is transferred to the nuclear-spin memory with a fidelity of $92.5 \\pm 2.5\\%$, extending the entanglement lifetime by a factor of 240. We further confirm the generality of this approach in an additional heterogeneous $^{29}$Si-$^{13}$C nuclear-spin register and, through a statistical survey of 200 single PL6 centers, show that multi-nuclear-spin registers occur naturally with probabilities above 10%. These results position shallow SiC color centers as a powerful platform for entanglement-assisted quantum sensing and scalable room-temperature quantum technologies.",
+    "status": "found"
+  },
+  "2609.13745": {
+    "arxiv_id": "2609.13745",
+    "title": "Inside VLM Chart Reading: Tracing Value Reading from Vertical Bar Charts Across Space and Depth",
+    "authors": [
+      "Tianhao Niu",
+      "Qingfu Zhu",
+      "Wanxiang Che"
+    ],
+    "submission_date": "2026-09-12T06:28:11Z",
+    "latest_updated": "2026-09-12T06:28:11Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13745v1"
+    ],
+    "abstract": "Vision--language models (VLMs) can answer chart questions accurately, but output accuracy does not show how they combine the evidence needed to recover an exact value. We study vertical-bar value reading with controlled counterfactual activation patching in Qwen2.5VL-7B-Instruct and InternVL3.5-8B. The study connects three analyses: (1) The single-factor results show that the changed bar-top region restores much more answer preference than the unchanged bar body, despite containing fewer visual tokens. Legend- and series-related states also lose local recoverability earlier than bar-geometry and axis-scale states. (2) In the handoff analysis, restoration shifts from visual legend regions in early layers to prompt-series positions in middle layers. Resetting the prompt-series state selectively reduces legend-source rescue, supporting its role as a partial mediator. (3) In the factorial analysis, both models can use geometry and scale states from separate donors to favor the combined target. InternVL performs similarly when the states come from separate donors or one image, while Qwen shows lower restoration for separate donors which suggests higher context sensitivity. Together, these results provide preliminary causal evidence for localizing the internal computations that support exact bar-value reading.",
+    "status": "found"
+  },
+  "2609.13746": {
+    "arxiv_id": "2609.13746",
+    "title": "Low-Ripple Modulation Strategy for a Photovoltaic-Based Triple-Port Hydrogen Production System",
+    "authors": [
+      "Shiqi Zhang",
+      "Ziang Jiao",
+      "Jiaxin Su",
+      "Ning Wang",
+      "Zheng Li",
+      "Xiaoqiang Guo",
+      "Changchun Hua"
+    ],
+    "submission_date": "2026-09-12T06:31:36Z",
+    "latest_updated": "2026-09-12T06:31:36Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13746v1"
+    ],
+    "abstract": "Among various production methods, hydrogen generation via electrolysis powered by renewable energy plays a key role in achieving large-scale green hydrogen production. The triple active bridge isolated DC-DC conversion system exhibits significant application potential in hydrogen production due to its advantages, such as high energy density, wide step-down ratio, and high reliability. However, the output current ripple at the hydrogen production port critically affects the efficiency of the electrolyzer and the hydrogen production rate. Existing studies have limited optimization effects on current ripple and struggle to achieve dynamic optimization, leading to constrained ripple suppression under dynamic operating conditions. To address this issue, this paper proposes a low-ripple modulation strategy based on coordinated optimization of inner and outer phase-shift angles for multi-port power conversion systems in renewable energy hydrogen production. By establishing an accurate mathematical model, the optimal phase-shift angle combination under minimal current ripple conditions is derived. An improved differential evolution algorithm with adaptive parameter strategy is employed to achieve global optimization under dynamic conditions. Simulation and experimental results demonstrate that the proposed strategy effectively suppresses current ripple, providing an efficient and reliable solution for hydrogen production from fluctuating renewable energy sources.",
+    "status": "found"
+  },
+  "2609.13747": {
+    "arxiv_id": "2609.13747",
+    "title": "How Should Reasoning Be Organized in a Transformer's Latent Space?",
+    "authors": [
+      "Hongyu Gu",
+      "Chang Liu",
+      "Jingwen Fu"
+    ],
+    "submission_date": "2026-09-12T06:35:15Z",
+    "latest_updated": "2026-09-29T02:00:54Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2609.13747v1",
+      "2609.13747v2"
+    ],
+    "abstract": "Continuous reasoning has emerged as a promising way to improve reasoning in large language models (LLMs). Yet we still lack a clear principle for deciding what a latent state should preserve. Reasoning by superposition shows that a single latent state can encode several search alternatives and expand them in parallel. We ask how those states should be weighted as reasoning proceeds. A natural choice is to preserve only the states active at the frontier step, since keeping every reached state appears to spread a limited hidden width too thin. We show that the opposite can hold. When later computation draws on several reached states, a cumulative state can guide attention correctly at a smaller hidden width than a frontier state that stores fewer states. At the same width, the cumulative state therefore keeps more intermediate states available for later reasoning. More generally, equal cumulative weights are optimal when future queries are unknown and remain close to the best task-specific weights when those queries are known. Experiments with two-layer and GPT-2 Transformers reproduce the predicted width advantage and show that unequal weights fail first on the states that receive the least weight. This suggests a important principle: keep reached states equally weighted, and restore equal weights as computation proceeds.",
+    "status": "found"
+  },
+  "2609.13748": {
+    "arxiv_id": "2609.13748",
+    "title": "Shot-based variational simulation of the toric code phase transition: Energy, global entanglement, and noise resilience",
+    "authors": [
+      "Hayede Zarei",
+      "Mohammad Hossein Zarei"
+    ],
+    "submission_date": "2026-09-12T06:36:42Z",
+    "latest_updated": "2026-09-12T06:36:42Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13748v1"
+    ],
+    "abstract": "We investigate the capability of variational quantum circuits in detecting a topological phase transition within the toric code model subjected to a uniform magnetic field. The detection is carried out via shot-based computations of both the ground state energy and the global entanglement. We begin by employing well-established renormalization techniques to construct a quantum circuit that accurately represents the pure toric code under periodic boundary condition. This circuit is subsequently parameterized to enable a shot-based variational simulation of the ground state in the presence of the magnetic field. Our results demonstrate that even for the minimal lattice sizes and a finite number of measurement shots, the ground state energy exhibits a distinct singularity at the transition point which can be reliably approximated through finite-size scaling analysis. Furthermore, we introduce a secondary variational circuit designed to compute the global entanglement of the generated ground state. We observe that both global entanglement and its conditional counterpart display the expected qualitative behavior at the transition point, consistent with the topological nature of the phase transition. To evaluate the practical viability of our variational approach on real quantum hardware, we systematically examine the detrimental effects of gate noise on the analysis. We find that the topological phase exhibits a notable robustness against noise, manifesting as a linear decrease in the transition point with increasing noise strength.",
+    "status": "found"
+  },
+  "2609.13749": {
+    "arxiv_id": "2609.13749",
+    "title": "Time domain non-linear quantum interferometry",
+    "authors": [
+      "C. Fruy",
+      "A. Théry",
+      "B. Hue",
+      "W. Legrand",
+      "L. Jarjat",
+      "J. Craquelin",
+      "M. R. Delbecq",
+      "A. Cottet",
+      "T. Kontos"
+    ],
+    "submission_date": "2026-09-12T06:37:42Z",
+    "latest_updated": "2026-09-12T06:37:42Z",
+    "revised_dates": null,
+    "venue": "Phys. Rev. A 113, 023706 (2026)",
+    "latest_version": 1,
+    "versions": [
+      "2609.13749v1"
+    ],
+    "abstract": "Interferometry is a powerful method for studying many fundamental phenomena ranging from gravitational waves to anyon excitations. Besides loss of coherence in the interferometer paths, quantum mechanics sets an incompressible bound for linear interferometry arising from the quantum noise of the light beam, called the shot noise limit. Here, we implement a non-linear quantum interferometer that uses a microwave cavity and a magnetic field resilient anharmonic superconducting quantum circuit made of granular aluminum. The circuit enables interferometry beyond the shot noise limit. A direct application of our findings is the detection of dark matter (axions or dark photons), high-frequency gravitational waves or astronomical masers.",
+    "status": "found"
+  },
+  "2609.13750": {
+    "arxiv_id": "2609.13750",
+    "title": "Blow-up or grow-up for the focusing 3D cubic NLS with a repulsive inverse-power potential at the mass--energy threshold",
+    "authors": [
+      "Alex H. Ardila",
+      "Zuyu Ma",
+      "Ying Wang"
+    ],
+    "submission_date": "2026-09-12T06:37:51Z",
+    "latest_updated": "2026-09-12T06:37:51Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13750v1"
+    ],
+    "abstract": "We consider the focusing cubic nonlinear Schrodinger equation with a repulsive inverse-power potential $V(x)=a|x|^{-μ}$, where $a>0$ and $1<μ\\leq 2$. At the mass-energy threshold, Miao, Murphy, and Zheng, as well as Ardila, Hamano, and Ikeda, established sharp scattering results in the positive virial region. In this paper, we continue to study the dynamics in the negative virial region and show that, in each time direction, solutions either blow up in finite time or grow up.",
+    "status": "found"
+  },
+  "2609.13751": {
+    "arxiv_id": "2609.13751",
+    "title": "Soltés problem for the Kirchhoff index of a graph",
+    "authors": [
+      "Kurt Klement Gottwald",
+      "Tomislav Došlić",
+      "Snježana Majstorović Ergotić"
+    ],
+    "submission_date": "2026-09-12T06:43:31Z",
+    "latest_updated": "2026-09-12T06:43:31Z",
+    "revised_dates": null,
+    "venue": "Applied Mathematics and Computation, Volume 510, 2026",
+    "latest_version": 1,
+    "versions": [
+      "2609.13751v1"
+    ],
+    "abstract": "We say that $v\\in V(G)$ is a \\textit{good vertex} if the Kirchhoff index remains unchanged when $v$ is removed, i.e. $Kf(G)=Kf(G-v)$. In 1991, Šoltés studied the Wiener index of a graph and posed the problem of identifying graphs for which the removal of an arbitrary vertex preserves the Wiener index. In this paper, we explore a similar concept: identifying \\textit{Kirchhoff Šoltés graphs}, i.e. graphs in which all vertices are good vertices. We show that the cycle $C_5$ is a Kirchhoff Šoltés graph. We consider several relaxed versions of the Kirchhoff Šoltés problem, where the primary objective is to identify graphs containing at least one good vertex. One of them is the \\textit{$β$-Kirchhoff Šoltés problem}, which seeks to find an infinite family of graphs in which the proportion of good vertices is at least $β$, with $β\\in (0,1]$ being a specified rational number. Another one involves constructing infinite families of graphs where the proportion of good vertices increases and asymptotically approaches a given real number $γ\\in (0,1]$ as the order of the graph grows. We demonstrate that both relaxed versions have infinitely many solutions. In particular, we prove the existence of infinitely many graphs for which the proportion $β$ of good vertices, $1/7\\leq β<1/5$ tends to a certain irrational number. Furthermore, we prove the existence of infinitely many graphs with half good vertices, and for each $s\\in\\mathbb{N}$, we construct an infinite family of graphs whose proportion of good vertices tends to $\\frac{s+1}{2s+1}$. These findings could be pivotal in addressing the original problem of determining whether there are additional solutions beyond $C_5$.",
+    "status": "found"
+  },
+  "2609.13752": {
+    "arxiv_id": "2609.13752",
+    "title": "Bilinear magnon--exciton coupling in biased ferromagnetic electron--hole bilayers",
+    "authors": [
+      "Pieter M. Gunnink"
+    ],
+    "submission_date": "2026-09-12T06:44:02Z",
+    "latest_updated": "2026-09-29T14:05:01Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2609.13752v1",
+      "2609.13752v2",
+      "2609.13752v3"
+    ],
+    "abstract": "The hybridization of magnons and excitons would combine magnetic and optical degrees of freedom in a single composite quasiparticle. Such a hybridization is however difficult to achieve, because of their inherent energy mismatch. We propose that in biased bipolar ferromagnetic electron--hole bilayers the excitons and magnons can be brought into resonance, with the exciton energy lowered through the voltage bias to match the magnon energies. We demonstrate the linear hybridization of magnons and spin-flip excitons in this regime, starting from the microscopic exchange interactions between electrons and localized magnetic moments. We show that further increasing the gate voltage softens the hybrid magnon--exciton mode and realizes a magnon--exciton condensate, which manifests in both the magnon and exciton sectors and is associated with spin-superfluid transport. Ferromagnetic electron--hole bilayers therefore provide a new platform for the study of composite magnon--exciton quasiparticles and the realization of spinful condensates and associated spin superfluidity.",
+    "status": "found"
+  },
+  "2609.13753": {
+    "arxiv_id": "2609.13753",
+    "title": "A Nonlocal Perfusion-Gated Angiogenesis System: Global Weak Solutions, Fast-Signal Limits, and Invasion Fronts",
+    "authors": [
+      "Jiguang Yu",
+      "Louis Shuo Wang"
+    ],
+    "submission_date": "2026-09-12T06:47:38Z",
+    "latest_updated": "2026-09-12T06:47:38Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13753v1"
+    ],
+    "abstract": "Continuum angiogenesis systems often use local endothelial or vessel density as an oxygen-delivery proxy without distinguishing structurally formed vessels from pressure-supported vascular function. We formulate a two-dimensional model in which lumenized density determines a normalized nonlocal conductivity, a globally solved pressure field, and a flow-functional density that gates oxygen delivery and vessel regression. For fixed positive regularization parameters and signal relaxation times, we prove Lipschitz stability of the pressure--perfusion map and global bounded weak solvability; strong vessel compactness follows from a nonlocal ordinary differential equation stability estimate rather than spatial smoothing. As the oxygen and vascular endothelial growth factor timescales vanish simultaneously, weak solutions converge along a subsequence to a parabolic--elliptic--ordinary differential equation system, with both fast fields converging strongly in \\(L^2(0,T;H^1)\\). A locally frozen one-dimensional reduction admits monotone fronts precisely at or above the threshold \\(B+2\\sqrt{DR}\\) for \\(B\\geq-\\sqrt{DR}\\) and \\(-DR/B\\) otherwise. Finite-volume experiments verify the analytical mechanisms and show that equal-mass vessel fields can generate distinct functional masses and oxygenation levels.",
+    "status": "found"
+  }
+}

@@ -1,0 +1,430 @@
+{
+  "2511.12909": {
+    "arxiv_id": "2511.12909",
+    "title": "CASL: Curvature-Augmented Self-supervised Learning for 3D Anomaly Detection",
+    "authors": [
+      "Yaohua Zha",
+      "Xue Yuerong",
+      "Chunlin Fan",
+      "Yuansong Wang",
+      "Tao Dai",
+      "Ke Chen",
+      "Shu-Tao Xia"
+    ],
+    "submission_date": "2025-11-17T02:58:09Z",
+    "latest_updated": "2025-11-17T02:58:09Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.12909v1"
+    ],
+    "abstract": "Deep learning-based 3D anomaly detection methods have demonstrated significant potential in industrial manufacturing. However, many approaches are specifically designed for anomaly detection tasks, which limits their generalizability to other 3D understanding tasks. In contrast, self-supervised point cloud models aim for general-purpose representation learning, yet our investigation reveals that these classical models are suboptimal at anomaly detection under the unified fine-tuning paradigm. This motivates us to develop a more generalizable 3D model that can effectively detect anomalies without relying on task-specific designs. Interestingly, we find that using only the curvature of each point as its anomaly score already outperforms several classical self-supervised and dedicated anomaly detection models, highlighting the critical role of curvature in 3D anomaly detection. In this paper, we propose a Curvature-Augmented Self-supervised Learning (CASL) framework based on a reconstruction paradigm. Built upon the classical U-Net architecture, our approach introduces multi-scale curvature prompts to guide the decoder in predicting the spatial coordinates of each point. Without relying on any dedicated anomaly detection mechanisms, it achieves leading detection performance through straightforward anomaly classification fine-tuning. Moreover, the learned representations generalize well to standard 3D understanding tasks such as point cloud classification. The code is available at https://github.com/zyh16143998882/CASL.",
+    "status": "found"
+  },
+  "2511.12910": {
+    "arxiv_id": "2511.12910",
+    "title": "TOPP-DWR: Time-Optimal Path Parameterization of Differential-Driven Wheeled Robots Considering Piecewise-Constant Angular Velocity Constraints",
+    "authors": [
+      "Yong Li",
+      "Yujun Huang",
+      "Yi Chen",
+      "Hui Cheng"
+    ],
+    "submission_date": "2025-11-17T02:58:53Z",
+    "latest_updated": "2025-11-17T02:58:53Z",
+    "revised_dates": null,
+    "venue": "2025 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS 2025)",
+    "latest_version": 1,
+    "versions": [
+      "2511.12910v1"
+    ],
+    "abstract": "Differential-driven wheeled robots (DWR) represent the quintessential type of mobile robots and find extensive appli- cations across the robotic field. Most high-performance control approaches for DWR explicitly utilize the linear and angular velocities of the trajectory as control references. However, existing research on time-optimal path parameterization (TOPP) for mobile robots usually neglects the angular velocity and joint vel- ocity constraints, which can result in degraded control perfor- mance in practical applications. In this article, a systematic and practical TOPP algorithm named TOPP-DWR is proposed for DWR and other mobile robots. First, the non-uniform B-spline is adopted to represent the initial trajectory in the task space. Second, the piecewise-constant angular velocity, as well as joint velocity, linear velocity, and linear acceleration constraints, are incorporated into the TOPP problem. During the construction of the optimization problem, the aforementioned constraints are uniformly represented as linear velocity constraints. To boost the numerical computational efficiency, we introduce a slack variable to reformulate the problem into second-order-cone programming (SOCP). Subsequently, comparative experiments are conducted to validate the superiority of the proposed method. Quantitative performance indexes show that TOPP-DWR achieves TOPP while adhering to all constraints. Finally, field autonomous navigation experiments are carried out to validate the practicability of TOPP-DWR in real-world applications.",
+    "status": "found"
+  },
+  "2511.12911": {
+    "arxiv_id": "2511.12911",
+    "title": "Wide-Area Feedback Control for Renewables-Heavy Power Systems: A Comparative Study of Reinforcement Learning and Lyapunov-Based Design",
+    "authors": [
+      "Muhammad Nadeem",
+      "MirSaleh Bahavarnia",
+      "Ahmad F. Taha"
+    ],
+    "submission_date": "2025-11-17T02:59:26Z",
+    "latest_updated": "2025-11-17T02:59:26Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.12911v1"
+    ],
+    "abstract": "As renewable energy sources become more prevalent, accurately modeling power grid dynamics is becoming increasingly more complex. Concurrently, data acquisition and realtime system state monitoring are becoming more available for control centers. This motivates shifting from \\textit{model- and Lyapunov-based} feedback controller designs toward \\textit{model-free} ones. Reinforcement learning (RL) has emerged as a key tool for designing model-free controllers. Various studies have been carried out to study voltage/frequency control strategies via RL. However, usually a simplified system model is used neglecting detailed dynamics of solar, wind, and composite loads -- and damping system-wide oscillations and modeling power flows are all usually ignored. To that end, we pose an optimal feedback control problem for a detailed renewables-heavy power system, defined by a set of nonlinear differential algebraic equations (NDAE). The control problem is solved using a completely model-free design via RL as well as using a model-based approach built upon the Lyapunov stability theory with guarantees. The paper in its essence seeks to explore whether data-driven feedback control should be used in power grids over its model-driven counterpart. Theoretical developments and thorough case studies are presented with an eye on this exploration. Finally, a detailed analysis is provided to delineate the strengths and weaknesses of both approaches for renewables-heavy grids.",
+    "status": "found"
+  },
+  "2511.12912": {
+    "arxiv_id": "2511.12912",
+    "title": "DiffuDepGrasp: Diffusion-based Depth Noise Modeling Empowers Sim2Real Robotic Grasping",
+    "authors": [
+      "Yingting Zhou",
+      "Wenbo Cui",
+      "Weiheng Liu",
+      "Guixing Chen",
+      "Haoran Li",
+      "Dongbin Zhao"
+    ],
+    "submission_date": "2025-11-17T02:59:37Z",
+    "latest_updated": "2025-11-17T02:59:37Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.12912v1"
+    ],
+    "abstract": "Transferring the depth-based end-to-end policy trained in simulation to physical robots can yield an efficient and robust grasping policy, yet sensor artifacts in real depth maps like voids and noise establish a significant sim2real gap that critically impedes policy transfer. Training-time strategies like procedural noise injection or learned mappings suffer from data inefficiency due to unrealistic noise simulation, which is often ineffective for grasping tasks that require fine manipulation or dependency on paired datasets heavily. Furthermore, leveraging foundation models to reduce the sim2real gap via intermediate representations fails to mitigate the domain shift fully and adds computational overhead during deployment. This work confronts dual challenges of data inefficiency and deployment complexity. We propose DiffuDepGrasp, a deploy-efficient sim2real framework enabling zero-shot transfer through simulation-exclusive policy training. Its core innovation, the Diffusion Depth Generator, synthesizes geometrically pristine simulation depth with learned sensor-realistic noise via two synergistic modules. The first Diffusion Depth Module leverages temporal geometric priors to enable sample-efficient training of a conditional diffusion model that captures complex sensor noise distributions, while the second Noise Grafting Module preserves metric accuracy during perceptual artifact injection. With only raw depth inputs during deployment, DiffuDepGrasp eliminates computational overhead and achieves a 95.7% average success rate on 12-object grasping with zero-shot transfer and strong generalization to unseen objects.Project website: https://diffudepgrasp.github.io/.",
+    "status": "found"
+  },
+  "2511.12913": {
+    "arxiv_id": "2511.12913",
+    "title": "CoS: Towards Optimal Event Scheduling via Chain-of-Scheduling",
+    "authors": [
+      "Yiming Zhao",
+      "Jiwei Tang",
+      "Shimin Di",
+      "Libin Zheng",
+      "Jianxing Yu",
+      "Jian Yin"
+    ],
+    "submission_date": "2025-11-17T03:01:47Z",
+    "latest_updated": "2025-11-17T03:01:47Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.12913v1"
+    ],
+    "abstract": "Recommending event schedules is a key issue in Event-based Social Networks (EBSNs) in order to maintain user activity. An effective recommendation is required to maximize the user's preference, subjecting to both time and geographical constraints. Existing methods face an inherent trade-off among efficiency, effectiveness, and generalization, due to the NP-hard nature of the problem. This paper proposes the Chain-of-Scheduling (CoS) framework, which activates the event scheduling capability of Large Language Models (LLMs) through a guided, efficient scheduling process. CoS enhances LLM by formulating the schedule task into three atomic stages, i.e., exploration, verification and integration. Then we enable the LLMs to generate CoS autonomously via Knowledge Distillation (KD). Experimental results show that CoS achieves near-theoretical optimal effectiveness with high efficiency on three real-world datasets in a interpretable manner. Moreover, it demonstrates strong zero-shot learning ability on out-of-domain data.",
+    "status": "found"
+  },
+  "2511.12914": {
+    "arxiv_id": "2511.12914",
+    "title": "Planar graphs without cycles of length 4 or 5 are $(7m:2m)$-DP-colorable",
+    "authors": [
+      "Xiaoyan Xu",
+      "Xuding Zhu"
+    ],
+    "submission_date": "2025-11-17T03:05:30Z",
+    "latest_updated": "2025-11-17T03:05:30Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.12914v1"
+    ],
+    "abstract": "It was conjectured by Steinberg in 1976 that planar graphs without cycles of length 4 or 5 are 3-colorable. This conjecture attracted a substantial amount of attention and was finally refuted by Cohen-Addad, Hebdige, Král', Li and Salgado in 2017. Although Steinberg's conjecture is settled, coloring of this family of graphs, as well as some other families of planar graphs forbidding certain cycle lengths have been attracting a lot of recent attention and many challenging problems remain open. One problem of interest is multiple coloring and multiple list coloring of this family of graphs. It was proved by Dvǒrák and Hu that planar graphs without cycles of length 4 or 5 are $(11,3)$-colorable, and this result was improved by Wang, who proved that graphs in this family are $(7:2)$-colorable. On the other hand, it was proved by Xu and Zhu that for every positive integer $m$, there is a graph in this family which is not $(3m + \\lfloor \\frac{m-1}{12} \\rfloor, m)$-choosable. In this paper, we prove that for any positive integer $m$, graphs in this family are $(7m:2m)$-DP-colorable, and hence $(7m,2m)$-choosable.",
+    "status": "found"
+  },
+  "2511.12915": {
+    "arxiv_id": "2511.12915",
+    "title": "Quantitative blow-up suppression for the Patlak-Keller-Segel(-Navier-Stokes) system via Couette flow on $\\mathbb{R}^2$",
+    "authors": [
+      "Yubo Chen",
+      "Wendong Wang",
+      "Guoxu Yang"
+    ],
+    "submission_date": "2025-11-17T03:06:54Z",
+    "latest_updated": "2025-12-04T07:53:06Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.12915v1",
+      "2511.12915v2"
+    ],
+    "abstract": "It is well known that solutions to the Patlak--Keller--Segel system on $\\mathbb{R}^2$ blow up in finite time if the initial mass exceeds $8π$. In this paper, we investigate the mixing effect induced by a Couette flow $(Ay, 0)$ with a quantitatively determined amplitude $A$, which suppresses bacterial aggregation. For the Patlak--Keller--Segel system advected by such a flow on $\\mathbb{R}^2$, we prove that the solutions remain global in time even for large initial mass, provided the amplitude $A$ is sufficiently large. Specifically, global well-posedness holds if $A$ satisfies a lower bound of the form $C_* \\left(\\| \\langle D_x\\rangle^{m} \\langle {D_x}^{-1}\\rangle^εn_{\\mathrm{in}} \\|_{L^2}^2+1\\right)^{9/2}$. A notable feature of our result is the explicit estimate of the sufficient constant, given by $C_* = 2,058,614$. Furthermore, for the coupled Patlak--Keller--Segel--Navier--Stokes system near the Couette flow, we establish an analogous global existence result, provided the amplitude is sufficiently large in form of $C_*\\|(n_{\\rm in}, |D_x|^{1/3} n_{\\rm in},ω_{\\rm in})\\|_{Y_{m,ε}}^9$.",
+    "status": "found"
+  },
+  "2511.12916": {
+    "arxiv_id": "2511.12916",
+    "title": "Fault2Flow: An AlphaEvolve-Optimized Human-in-the-Loop Multi-Agent System for Fault-to-Workflow Automation",
+    "authors": [
+      "Yafang Wang",
+      "Yangjie Tian",
+      "Xiaoyu Shen",
+      "Gaoyang Zhang",
+      "Jiaze Sun",
+      "He Zhang",
+      "Ruohua Xu",
+      "Feng Zhao"
+    ],
+    "submission_date": "2025-11-17T03:07:40Z",
+    "latest_updated": "2025-11-17T03:07:40Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.12916v1"
+    ],
+    "abstract": "Power grid fault diagnosis is a critical process hindered by its reliance on manual, error-prone methods. Technicians must manually extract reasoning logic from dense regulations and attempt to combine it with tacit expert knowledge, which is inefficient, error-prone, and lacks maintainability as ragulations are updated and experience evolves. While Large Language Models (LLMs) have shown promise in parsing unstructured text, no existing framework integrates these two disparate knowledge sources into a single, verified, and executable workflow. To bridge this gap, we propose Fault2Flow, an LLM-based multi-agent system. Fault2Flow systematically: (1) extracts and structures regulatory logic into PASTA-formatted fault trees; (2) integrates expert knowledge via a human-in-the-loop interface for verification; (3) optimizes the reasoning logic using a novel AlphaEvolve module; and (4) synthesizes the final, verified logic into an n8n-executable workflow. Experimental validation on transformer fault diagnosis datasets confirms 100\\% topological consistency and high semantic fidelity. Fault2Flow establishes a reproducible path from fault analysis to operational automation, substantially reducing expert workload.",
+    "status": "found"
+  },
+  "2511.12917": {
+    "arxiv_id": "2511.12917",
+    "title": "Explore How to Inject Beneficial Noise in MLLMs",
+    "authors": [
+      "Ruishu Zhu",
+      "Sida Huang",
+      "Ziheng Jiao",
+      "Hongyuan Zhang"
+    ],
+    "submission_date": "2025-11-17T03:11:41Z",
+    "latest_updated": "2025-11-17T03:11:41Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.12917v1"
+    ],
+    "abstract": "Multimodal Large Language Models (MLLMs) have played an increasingly important role in multimodal intelligence. However, the existing fine-tuning methods often ignore cross-modal heterogeneity, limiting their full potential. In this work, we propose a novel fine-tuning strategy by injecting beneficial random noise, which outperforms previous methods and even surpasses full fine-tuning, with minimal additional parameters. The proposed Multimodal Noise Generator (MuNG) enables efficient modality fine-tuning by injecting customized noise into the frozen MLLMs. Specifically, we reformulate the reasoning process of MLLMs from a variational inference perspective, upon which we design a multimodal noise generator that dynamically analyzes cross-modal relationships in image-text pairs to generate task-adaptive beneficial noise. Injecting this type of noise into the MLLMs effectively suppresses irrelevant semantic components, leading to significantly improved cross-modal representation alignment and enhanced performance on downstream tasks. Experiments on two mainstream MLLMs, QwenVL and LLaVA, demonstrate that our method surpasses full-parameter fine-tuning and other existing fine-tuning approaches, while requiring adjustments to only about $1\\sim2\\%$ additional parameters. The relevant code is uploaded in the supplementary.",
+    "status": "found"
+  },
+  "2511.12918": {
+    "arxiv_id": "2511.12918",
+    "title": "Inverse Design of Integrated Terahertz Vortex Beam Emitters with Staged-Annealing Topology Optimization",
+    "authors": [
+      "Faqian Chong",
+      "Tiancheng Zhang",
+      "Yulun Wu",
+      "Bingtao Gao",
+      "Yingjie Wu",
+      "Shilong Li",
+      "Hongsheng Chen",
+      "Song Han"
+    ],
+    "submission_date": "2025-11-17T03:15:39Z",
+    "latest_updated": "2025-11-17T03:15:39Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.12918v1"
+    ],
+    "abstract": "Integrated photonics is increasingly demanded in applications such as large-scale data centers, intelligent sensing, and next-generation wireless communications, where compact, multifunctional, and energy-efficient components are essential. Inverse-designed photonics, empowered by optimization and learning algorithms, have emerged as a powerful paradigm for realizing compact and multifunctional integrated photonic components. In this work, we develop a staged-annealing topological optimization (SATO) framework tailored for the design of integrated terahertz (THz) beam-shaping devices. Employing this inverse-designed framework, we experimentally demonstrate a class of compact THz vortex beam emitters on an all-silicon on-chip platform. These devices efficiently convert the in-plane fundamental transverse electric (TE) waveguide mode into free-space vortex beams with mode purity up to 87% and energy conversion efficiency up to 74% across the target wavelength range (680 μm to 720 μm). The inverse-designed emitters exhibit ultracompact footprints (lateral size < 4λ) and a free-standing configuration, enabling the generation of dual-directional vortex beams carrying opposite topological charges. The proposed SATO framework provides a generalizable and fabrication-compatible approach for THz photonic device engineering, offering a scalable pathway toward complex structured beam manipulation in next-generation wireless communication systems and on-chip integrated THz photonic systems.",
+    "status": "found"
+  },
+  "2511.12919": {
+    "arxiv_id": "2511.12919",
+    "title": "CoordAR: One-Reference 6D Pose Estimation of Novel Objects via Autoregressive Coordinate Map Generation",
+    "authors": [
+      "Dexin Zuo",
+      "Ang Li",
+      "Wei Wang",
+      "Wenxian Yu",
+      "Danping Zou"
+    ],
+    "submission_date": "2025-11-17T03:15:46Z",
+    "latest_updated": "2025-12-15T07:42:59Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2511.12919v1",
+      "2511.12919v2",
+      "2511.12919v3"
+    ],
+    "abstract": "Object 6D pose estimation, a crucial task for robotics and augmented reality applications, becomes particularly challenging when dealing with novel objects whose 3D models are not readily available. To reduce dependency on 3D models, recent studies have explored one-reference-based pose estimation, which requires only a single reference view instead of a complete 3D model. However, existing methods that rely on real-valued coordinate regression suffer from limited global consistency due to the local nature of convolutional architectures and face challenges in symmetric or occluded scenarios owing to a lack of uncertainty modeling. We present CoordAR, a novel autoregressive framework for one-reference 6D pose estimation of unseen objects. CoordAR formulates 3D-3D correspondences between the reference and query views as a map of discrete tokens, which is obtained in an autoregressive and probabilistic manner. To enable accurate correspondence regression, CoordAR introduces 1) a novel coordinate map tokenization that enables probabilistic prediction over discretized 3D space; 2) a modality-decoupled encoding strategy that separately encodes RGB appearance and coordinate cues; and 3) an autoregressive transformer decoder conditioned on both position-aligned query features and the partially generated token sequence. With these novel mechanisms, CoordAR significantly outperforms existing methods on multiple benchmarks and demonstrates strong robustness to symmetry, occlusion, and other challenges in real-world tests.",
+    "status": "found"
+  },
+  "2511.12920": {
+    "arxiv_id": "2511.12920",
+    "title": "Auditing Google's AI Overviews and Featured Snippets: A Case Study on Baby Care and Pregnancy",
+    "authors": [
+      "Desheng Hu",
+      "Joachim Baumann",
+      "Aleksandra Urman",
+      "Elsa Lichtenegger",
+      "Robin Forsberg",
+      "Aniko Hannak",
+      "Christo Wilson"
+    ],
+    "submission_date": "2025-11-17T03:16:36Z",
+    "latest_updated": "2026-03-23T01:15:32Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 4,
+    "versions": [
+      "2511.12920v1",
+      "2511.12920v2",
+      "2511.12920v3",
+      "2511.12920v4"
+    ],
+    "abstract": "Google Search increasingly surfaces AI-generated content through features like AI Overviews (AIO) and Featured Snippets (FS), which users frequently rely on despite having no control over their presentation. Through a systematic algorithm audit of 1,508 real baby care and pregnancy-related queries, we evaluate the quality and consistency of these information displays. Our robust evaluation framework assesses multiple quality dimensions, including answer consistency, relevance, presence of medical safeguards, source categories, and sentiment alignment. Our results reveal concerning gaps in information consistency, with information in AIO and FS displayed on the same search result page being inconsistent with each other in 33% of cases. Despite high relevance scores, both features critically lack medical safeguards (present in just 11% of AIO and 7% of FS responses). While health and wellness websites dominate source categories for both, AIO and FS, FS also often link to commercial sources. These findings have important implications for public health information access and demonstrate the need for stronger quality controls in AI-mediated health information. Our methodology provides a transferable framework for auditing AI systems across high-stakes domains where information quality directly impacts user well-being.",
+    "status": "found"
+  },
+  "2511.12921": {
+    "arxiv_id": "2511.12921",
+    "title": "Generative Photographic Control for Scene-Consistent Video Cinematic Editing",
+    "authors": [
+      "Huiqiang Sun",
+      "Liao Shen",
+      "Zhan Peng",
+      "Kun Wang",
+      "Size Wu",
+      "Yuhang Zang",
+      "Tianqi Liu",
+      "Zihao Huang",
+      "Xingyu Zeng",
+      "Zhiguo Cao",
+      "Wei Li",
+      "Chen Change Loy"
+    ],
+    "submission_date": "2025-11-17T03:17:23Z",
+    "latest_updated": "2025-11-17T03:17:23Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.12921v1"
+    ],
+    "abstract": "Cinematic storytelling is profoundly shaped by the artful manipulation of photographic elements such as depth of field and exposure. These effects are crucial in conveying mood and creating aesthetic appeal. However, controlling these effects in generative video models remains highly challenging, as most existing methods are restricted to camera motion control. In this paper, we propose CineCtrl, the first video cinematic editing framework that provides fine control over professional camera parameters (e.g., bokeh, shutter speed). We introduce a decoupled cross-attention mechanism to disentangle camera motion from photographic inputs, allowing fine-grained, independent control without compromising scene consistency. To overcome the shortage of training data, we develop a comprehensive data generation strategy that leverages simulated photographic effects with a dedicated real-world collection pipeline, enabling the construction of a large-scale dataset for robust model training. Extensive experiments demonstrate that our model generates high-fidelity videos with precisely controlled, user-specified photographic camera effects.",
+    "status": "found"
+  },
+  "2511.12922": {
+    "arxiv_id": "2511.12922",
+    "title": "Tokenize Once, Recommend Anywhere: Unified Item Tokenization for Multi-domain LLM-based Recommendation",
+    "authors": [
+      "Yu Hou",
+      "Won-Yong Shin"
+    ],
+    "submission_date": "2025-11-17T03:18:04Z",
+    "latest_updated": "2025-11-17T03:18:04Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.12922v1"
+    ],
+    "abstract": "Large language model (LLM)-based recommender systems have achieved high-quality performance by bridging the discrepancy between the item space and the language space through item tokenization. However, existing item tokenization methods typically require training separate models for each item domain, limiting generalization. Moreover, the diverse distributions and semantics across item domains make it difficult to construct a unified tokenization that preserves domain-specific information. To address these challenges, we propose UniTok, a Unified item Tokenization framework that integrates our own mixture-of-experts (MoE) architecture with a series of codebooks to convert items into discrete tokens, enabling scalable tokenization while preserving semantic information across multiple item domains. Specifically, items from different domains are first projected into a unified latent space through a shared encoder. They are then routed to domain-specific experts to capture the unique semantics, while a shared expert, which is always active, encodes common knowledge transferable across domains. Additionally, to mitigate semantic imbalance across domains, we present a mutual information calibration mechanism, which guides the model towards retaining similar levels of semantic information for each domain. Comprehensive experiments on wide-ranging real-world datasets demonstrate that the proposed UniTok framework is (a) highly effective: achieving up to 51.89% improvements over strong benchmarks, (b) theoretically sound: showing the analytical validity of our architectural design and optimization; and (c) highly generalizable: demonstrating robust performance across diverse domains without requiring per-domain retraining, a capability not supported by existing baselines.",
+    "status": "found"
+  },
+  "2511.12923": {
+    "arxiv_id": "2511.12923",
+    "title": "Time-Efficient Quantum Many-Body State Synthesis and its Optimization via Warm Start Strategies",
+    "authors": [
+      "Prashasti Tiwari",
+      "Dylan Lewis",
+      "Sougato Bose"
+    ],
+    "submission_date": "2025-11-17T03:21:12Z",
+    "latest_updated": "2026-08-02T22:21:55Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.12923v1",
+      "2511.12923v2"
+    ],
+    "abstract": "Quantum mechanical ground states of many-body systems can be important resources for various investigations: for quantum sensing, for benchmarking quantum hardware with classically solvable states, as the initial states for nonequilibrium quantum dynamics following quenches, the simulation of quantum processes that start by coupling systems in ground states, eg, could be a process in quantum chemistry, while their approximations are required as inputs to quantum phase estimation algorithm. However, preparing ground states can be challenging; for example, it may require adiabatic switching of Hamiltonian terms slower than an inverse gap, which can be time consuming and bring in decoherence. Here we investigate the possibility of preparing a many-body entangled ground state of a certain Hamiltonian, which can be called a quantum ``problem'' Hamiltonian, using the time evolution of an initial fiducial state by another time independent ``solver'' Hamiltonian with couplings up to unit strength for a very short fixed (unit) time: a ``time efficient'' ansatz. The parameters of the solver Hamiltonian are optimised classically minimising energy as the cost function. We present a study of up to $n=14$ qubit many-body states prepared using this methodology. Importantly, we find that a strategy of combining a warm start (an already prepared ground state of a $n-1$ qubit Hamiltonian) and incrementally adding extra couplings of a qubit is the best scaling strategy to prepare the ground state of a $n$-qubit Hamiltonian.",
+    "status": "found"
+  },
+  "2511.12924": {
+    "arxiv_id": "2511.12924",
+    "title": "Slater-Condon Rules and Spin-Orbit Couplings: 2-(2-(2,5-Dimethoxybenzylidene)hydrazineyl)-4-(trifluoromethyl)thiazole a test case",
+    "authors": [
+      "Hasnain Mehmood",
+      "Tashfeen Akhtar",
+      "Jesús Espinosa-Romero",
+      "Mauricio Maldonado-Domínguez",
+      "Jakub Višňák",
+      "Mirza Wasif Baig"
+    ],
+    "submission_date": "2025-11-17T03:24:12Z",
+    "latest_updated": "2025-11-18T04:50:20Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.12924v1",
+      "2511.12924v2"
+    ],
+    "abstract": "Light-atom chromophores can display properties often associated with heavy-atom compounds, such as intersystem crossing leading to phosphorescence and singlet oxygen generation, yet their use remains comparatively underexplored. Here, we report the synthesis of HM610, a derivative of the benzylidenehydrazinylthiazole light-atom chromophore backbone. Spin-orbit couplings (SOCs), computed with the sf-X2C-S-TDDFT method, follow Slater-Condon rules and predict moderate values. Trajectory surface hopping simulations further illustrate the role of dynamical effects in promoting ISC, yet these results together establish that HM610 has only limited potential as a triplet sensitizer without further structural modification, such as heavy atom substitution. Based on the benchmarked (TD)DFT protocol, a computational set studying six systematic analogues allowed us to study the influence of electron-donating (-OMe) and electron-withdrawing (-CF3) substituents on the common backbone, revealing the impact of substitution on the geometry and photophysics of light-atom analogues of HM610 and paving the way for future studies where the introduction of heavy atoms and their impact on triplet sensitization by this family of chromophores can be probed.",
+    "status": "found"
+  },
+  "2511.12925": {
+    "arxiv_id": "2511.12925",
+    "title": "Lectures on stabilized ellipsoid embeddings",
+    "authors": [
+      "Kyler Siegel"
+    ],
+    "submission_date": "2025-11-17T03:24:16Z",
+    "latest_updated": "2025-11-17T03:24:16Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.12925v1"
+    ],
+    "abstract": "These notes are based on a five-part minicourse on stabilized symplectic embeddings given in Les Marécottes, Switzerland during a September 2025 workshop. Our main goal is to explain the recent resolution of the (restricted) stabilized ellipsoid embedding problem by D. McDuff and the author. Along the way we also introduce various other ideas which shed light on the context and hint at possible generalizations. Some of the concepts covered include sesquicuspidal curves, symplectic inflation, multidirectional tangency constraints, well-placed curves, cluster transformations, Looijenga pairs, toric models, scattering diagrams, and the tropical vertex theorem.",
+    "status": "found"
+  },
+  "2511.12926": {
+    "arxiv_id": "2511.12926",
+    "title": "Non-Hyperbolic Chaotic Dynamics: Renormalization and More",
+    "authors": [
+      "Marco Martens",
+      "Liviana Palmisano"
+    ],
+    "submission_date": "2025-11-17T03:27:10Z",
+    "latest_updated": "2026-09-07T16:25:07Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 4,
+    "versions": [
+      "2511.12926v1",
+      "2511.12926v2",
+      "2511.12926v3",
+      "2511.12926v4"
+    ],
+    "abstract": "In two-dimensional unfoldings of homoclinic tangencies, the parameter space contains codimension-1 laminations whose leaves consist of maps with invariant non-hyperbolic Cantor sets. These sets are wild and unstable in the sense of Newhouse and contain Collet-Eckmann points with dense orbits. Thus, wild and non-hyperbolic chaotic dynamics can coexist on a single invariant set, while persisting along codimension-1 manifolds. Even more strikingly, each leaf of the lamination contains a map with infinitely many sinks accumulating on the invariant Cantor set carrying the Collet-Eckmann dynamics. In particular, the occurrence of infinitely many sinks is compatible with this type of non-hyperbolic chaotic behavior, with both phenomena organized around the same invariant Cantor set. To analyze these phenomena, we introduce a generalized renormalization scheme for two-dimensional systems, which describes the dynamics at successive scales and reveals a finite-scale hyperbolic structure within these non-hyperbolic regimes.",
+    "status": "found"
+  },
+  "2511.12927": {
+    "arxiv_id": "2511.12927",
+    "title": "Dual-Mode Asymmetric Transmission based on Asymmetric and Orthogonal Gratings: Polarization-Dependent and -Independent Modes",
+    "authors": [
+      "Ruihan Ma",
+      "Yuqing Cheng",
+      "Mengtao Sun"
+    ],
+    "submission_date": "2025-11-17T03:30:39Z",
+    "latest_updated": "2025-11-17T03:30:39Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.12927v1"
+    ],
+    "abstract": "A dual-mode asymmetric transmission (AT) nanodevice based on the asymmetric and orthogonal grating-film-grating (AO-GFG) structure is proposed and systematically investigated theoretically. The device supports two distinct localized surface plasmon resonance (LSPR) modes for forward transmission, corresponding to the polarization-dependent (M1) and the polarization-independent (M2) resonances, respectively. This results in the fact that when x-polarized light is incident, only M2 exists; when y-polarized light is incident, both M1 and M2 exist. Besides, both modes yield the maximum isolation ratio of more than 10 dB. The electric field distributions further indicate that M2 exhibits strong confinement and efficient tunneling through the metallic film, while M1 shows weaker but more polarization-sensitive hybridization. The coexistence and tunability of these two modes constitute the physical basis of dual-mode AT, highlighting the AO-GFG structure as a promising platform for high-isolation and polarization-tunable plasmonic devices in the visible and near-infrared regions.",
+    "status": "found"
+  },
+  "2511.12928": {
+    "arxiv_id": "2511.12928",
+    "title": "Visual Room 2.0: Seeing is Not Understanding for MLLMs",
+    "authors": [
+      "Haokun Li",
+      "Yazhou Zhang",
+      "Jizhi Ding",
+      "Qiuchi Li",
+      "Peng Zhang"
+    ],
+    "submission_date": "2025-11-17T03:34:52Z",
+    "latest_updated": "2025-11-17T03:34:52Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.12928v1"
+    ],
+    "abstract": "Can multi-modal large language models (MLLMs) truly understand what they can see? Extending Searle's Chinese Room into the multi-modal domain, this paper proposes the Visual Room argument: MLLMs may describe every visual detail precisely yet fail to comprehend the underlying emotions and intentions, namely seeing is not understanding. Building on this, we introduce \\textit{Visual Room} 2.0, a hierarchical benchmark for evaluating perception-cognition alignment of MLLMs. We model human perceptive and cognitive processes across three levels: low, middle, and high, covering 17 representative tasks. The perception component ranges from attribute recognition to scene understanding, while the cognition component extends from textual entailment to causal and social reasoning. The dataset contains 350 multi-modal samples, each with six progressive questions (2,100 in total) spanning perception to cognition. Evaluating 10 state-of-the-art (SoTA) MLLMs, we highlight three key findings: (1) MLLMs exhibit stronger perceptual competence than cognitive ability (8.0\\%$\\uparrow$); (2) cognition appears not causally dependent on perception-based reasoning; and (3) cognition scales with model size, but perception does not consistently improve with larger variants. This work operationalizes Seeing $\\ne$ Understanding as a testable hypothesis, offering a new paradigm from perceptual processing to cognitive reasoning in MLLMs. Our dataset is available at https://huggingface.co/datasets/LHK2003/PCBench.",
+    "status": "found"
+  }
+}

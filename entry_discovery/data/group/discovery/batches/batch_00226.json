@@ -1,0 +1,408 @@
+{
+  "2511.16229": {
+    "arxiv_id": "2511.16229",
+    "title": "Q-MLLM: Vector Quantization for Robust Multimodal Large Language Model Security",
+    "authors": [
+      "Wei Zhao",
+      "Zhe Li",
+      "Yige Li",
+      "Jun Sun"
+    ],
+    "submission_date": "2025-11-20T10:55:19Z",
+    "latest_updated": "2025-11-20T10:55:19Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.16229v1"
+    ],
+    "abstract": "Multimodal Large Language Models (MLLMs) have demonstrated impressive capabilities in cross-modal understanding, but remain vulnerable to adversarial attacks through visual inputs despite robust textual safety mechanisms. These vulnerabilities arise from two core weaknesses: the continuous nature of visual representations, which allows for gradient-based attacks, and the inadequate transfer of text-based safety mechanisms to visual content. We introduce Q-MLLM, a novel architecture that integrates two-level vector quantization to create a discrete bottleneck against adversarial attacks while preserving multimodal reasoning capabilities. By discretizing visual representations at both pixel-patch and semantic levels, Q-MLLM blocks attack pathways and bridges the cross-modal safety alignment gap. Our two-stage training methodology ensures robust learning while maintaining model utility. Experiments demonstrate that Q-MLLM achieves significantly better defense success rate against both jailbreak attacks and toxic image attacks than existing approaches. Notably, Q-MLLM achieves perfect defense success rate (100\\%) against jailbreak attacks except in one arguable case, while maintaining competitive performance on multiple utility benchmarks with minimal inference overhead. This work establishes vector quantization as an effective defense mechanism for secure multimodal AI systems without requiring expensive safety-specific fine-tuning or detection overhead. Code is available at https://github.com/Amadeuszhao/QMLLM.",
+    "status": "found"
+  },
+  "2511.16230": {
+    "arxiv_id": "2511.16230",
+    "title": "When Less is More: A Story of Failing Bayesian Optimization Due to Additional Expert Knowledge",
+    "authors": [
+      "Dorina Weichert",
+      "Gunar Ernis",
+      "Marvin Worthmann",
+      "Peter Ryzko",
+      "Lukas Seifert"
+    ],
+    "submission_date": "2025-11-20T10:56:07Z",
+    "latest_updated": "2025-11-20T10:56:07Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.16230v1"
+    ],
+    "abstract": "The compounding of plastics with recycled material remains a practical challenge, as the properties of the processed material is not as easy to control as with completely new raw materials. For a data scientist, it makes sense to plan the necessary experiments in the development of new compounds using Bayesian Optimization, an optimization approach based on a surrogate model that is known for its data efficiency and is therefore well suited for data obtained from costly experiments. Furthermore, if historical data and expert knowledge are available, their inclusion in the surrogate model is expected to accelerate the convergence of the optimization. In this article, we describe a use case in which the addition of data and knowledge has impaired optimization. We also describe the unsuccessful methods that were used to remedy the problem before we found the reasons for the poor performance and achieved a satisfactory result. We conclude with a lesson learned: additional knowledge and data are only beneficial if they do not complicate the underlying optimization goal.",
+    "status": "found"
+  },
+  "2511.16231": {
+    "arxiv_id": "2511.16231",
+    "title": "Pass@k Metric for RLVR: A Diagnostic Tool of Exploration, But Not an Objective",
+    "authors": [
+      "Yang Yu"
+    ],
+    "submission_date": "2025-11-20T10:58:21Z",
+    "latest_updated": "2025-11-20T10:58:21Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.16231v1"
+    ],
+    "abstract": "The ability of Large Language Models (LLMs) to perform complex, multi-step reasoning is a central focus of modern AI research. To evaluate and enhance this capability, the pass@k metric, which measures the probability of obtaining at least one correct solution in k independent samples, has received significant attention. Its intuitive appeal has led to its adoption not only as an evaluation standard but also as a direct optimization objective in reinforcement learning. In this paper, we analyze the pass@k objective, derive its gradient, and demonstrate that it is fundamentally a per-example positive reweighting of the simpler pass@1 objective. Our analysis reveals that the pass@k objective provides a vanishing learning signal in regimes where exploration is most critical. We further analyze the dynamics of \"exploration collapse\", showing that as the policy concentrates probability mass, the gap between pass@k and pass@1 diminishes. We conclude that while pass@k is a useful diagnostic tool, it may be an unsuitable direct objective for optimization. Instead, mechanisms explicitly encouraging efficient exploration could offer a more effective path forward for reinforcement learning in reasoning tasks.",
+    "status": "found"
+  },
+  "2511.16232": {
+    "arxiv_id": "2511.16232",
+    "title": "From nature to engineering: Bio-inspired spacer solutions for membrane distillation",
+    "authors": [
+      "Alaa Adel Ibrahim",
+      "Stephan Leyer"
+    ],
+    "submission_date": "2025-11-20T11:00:42Z",
+    "latest_updated": "2025-11-20T11:00:42Z",
+    "revised_dates": null,
+    "venue": "Desalination, 613, 119064",
+    "latest_version": 1,
+    "versions": [
+      "2511.16232v1"
+    ],
+    "abstract": "Biomimetic design principles, inspired by the structure of alligator osteoderms, are employed to provide innovative solutions for enhancing membrane distillation system performance. A novel spacer design for membrane distillation (MD) systems is introduced, incorporating the unique structural features of these natural formations. Three-dimensional computational fluid dynamics (CFD) simulations are performed to investigate nine new spacer configurations, with particular emphasis placed on enhancing mixing efficiency within the feed channel, which serves as the primary focus of this research. Results demonstrate that the novel spacer configurations exhibit superior performance, achieving up to a fivefold increase in mixing efficiency relative to the baseline of an empty channel. Furthermore, the new spacers are assessed and contrasted with two types of conventional spacers and the empty channel configuration with respect to pressure drop, thermal performance, and mass transfer properties.",
+    "status": "found"
+  },
+  "2511.16233": {
+    "arxiv_id": "2511.16233",
+    "title": "FT-NCFM: An Influence-Aware Data Distillation Framework for Efficient VLA Models",
+    "authors": [
+      "Kewei Chen",
+      "Yayu Long",
+      "Shuai Li",
+      "Mingsheng Shang"
+    ],
+    "submission_date": "2025-11-20T11:04:14Z",
+    "latest_updated": "2025-11-20T11:04:14Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.16233v1"
+    ],
+    "abstract": "The powerful generalization of Vision-Language-Action (VLA) models is bottlenecked by their heavy reliance on massive, redundant, and unevenly valued datasets, hindering their widespread application. Existing model-centric optimization paths, such as model compression (which often leads to performance degradation) or policy distillation (whose products are model-dependent and lack generality), fail to fundamentally address this data-level challenge. To this end, this paper introduces FT-NCFM, a fundamentally different, data-centric generative data distillation framework. Our framework employs a self-contained Fact-Tracing (FT) engine that combines causal attribution with programmatic contrastive verification to assess the intrinsic value of samples. Guided by these assessments, an adversarial NCFM process synthesizes a model-agnostic, information-dense, and reusable data asset. Experimental results on several mainstream VLA benchmarks show that models trained on just 5% of our distilled coreset achieve a success rate of 85-90% compared with training on the full dataset, while reducing training time by over 80%. Our work demonstrates that intelligent data distillation is a highly promising new path for building efficient, high-performance VLA models.",
+    "status": "found"
+  },
+  "2511.16234": {
+    "arxiv_id": "2511.16234",
+    "title": "Nonequilibrium phase transition in single-file transport at high crowding",
+    "authors": [
+      "Annika Vonhusen",
+      "Sören Schweers",
+      "Artem Ryabov",
+      "Philipp Maass"
+    ],
+    "submission_date": "2025-11-20T11:05:53Z",
+    "latest_updated": "2025-11-20T11:05:53Z",
+    "revised_dates": null,
+    "venue": "Chaos 35, 123127 (2025)",
+    "latest_version": 1,
+    "versions": [
+      "2511.16234v1"
+    ],
+    "abstract": "Driven particle transport in crowded and confining environments is fundamental to diverse phenomena across physics, chemistry, and biology. A main objective in studying such systems is to identify novel emergent states and phases of collective dynamics. Here, we report on a nonequilibrium phase transition occurring in periodic structures at high particle densities. This transition separates a weak-current phase of thermally activated transport from a high-current phase of solitary wave propagation. It is reflected also in a change of universality classes characterizing correlations of particle current fluctuations. Our findings demonstrate that sudden changes to high current states can occur when increasing particle densities beyond critical values.",
+    "status": "found"
+  },
+  "2511.16235": {
+    "arxiv_id": "2511.16235",
+    "title": "Describing Functions and Phase Response Curves of Excitable Systems",
+    "authors": [
+      "Robin Wroblowski",
+      "Rodolphe Sepulchre"
+    ],
+    "submission_date": "2025-11-20T11:09:38Z",
+    "latest_updated": "2026-07-17T09:59:45Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2511.16235v1",
+      "2511.16235v2",
+      "2511.16235v3"
+    ],
+    "abstract": "The describing function (DF) and phase response curve (PRC) are classical tools for the analysis of feedback oscillations and rhythmic behaviors, widely used across control engineering, biology, and neuroscience. These tools are known to have limitations in networks of relaxation oscillators and excitable systems. For this reason, the paper proposes a novel approach tailored to excitable systems. Our analysis focuses on the discrete-event operator mapping input trains of events to output trains of events. The methodology is illustrated on the excitability model of Hodgkin-Huxley. The proposed framework provides a basis for designing and analyzing central pattern generators in networks of excitable neurons, with direct relevance to neuromorphic control and neurophysiology.",
+    "status": "found"
+  },
+  "2511.16236": {
+    "arxiv_id": "2511.16236",
+    "title": "Optimized User Experience for Labeling Systems for Predictive Maintenance Applications",
+    "authors": [
+      "Michelle Hallmann",
+      "Michael Stern",
+      "Francesco Vona",
+      "Ute Franke",
+      "Thomas Ostertag",
+      "Benjamin Schlueter",
+      "Jan-Niklas Voigt-Antons"
+    ],
+    "submission_date": "2025-11-20T11:10:38Z",
+    "latest_updated": "2025-11-20T11:10:38Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.16236v1"
+    ],
+    "abstract": "This paper presents the design and implementation of a graphical labeling user interface for a monitoring and predictive maintenance system for trains and rail infrastructure in a rural area of Germany. Aiming to enhance rail transportation's economic viability and operational efficiency, our project utilizes cost-effective wireless monitoring systems that combine affordable sensors and machine learning algorithms. Given that a successful labeling phase is indispensable for training a supervised machine learning system, we emphasize the importance of a user-friendly labeling user interface, which can be optimally integrated into the daily work routines of annotators. The labeling system has been designed based on best practices in usability heuristics and will be validated for usability and user experience through a study, the protocol for which is presented here. The value of this work lies in its potential to reduce maintenance costs and improve service reliability in rail transportation, contributing to the academic literature and offering practical insights for research on effective labeling user interfaces, as well as for the development of labeling systems in the industry. Upon completion of the study, we will share the results, refine the system as necessary, and explore its scalability in other areas of infrastructure maintenance.",
+    "status": "found"
+  },
+  "2511.16237": {
+    "arxiv_id": "2511.16237",
+    "title": "Asteroid phase curve modeling with empirical correction for shape and viewing geometry",
+    "authors": [
+      "Dagmara Oszkiewicz. Przemysław Bartczak",
+      "Milagros Colazo",
+      "Antti Penttilä"
+    ],
+    "submission_date": "2025-11-20T11:11:02Z",
+    "latest_updated": "2025-11-20T11:11:02Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.16237v1"
+    ],
+    "abstract": "We present a novel empirical method for correcting asteroid phase curves for rotational and geometrical effects using precomputed spin-and-shape models. Our approach normalizes sparse photometric data to a pole-on geometry, enabling consistent phase-curve fitting across apparitions. We fit both the H,G1,G2 and H,G12 phase functions to the normalized data. We also numerically derive new constraints on parameter ranges that ensure physically meaningful solutions. These constraints are based on the requirement that the reduced magnitude must monotonically decrease with phase angle and remain within plausible slope bounds. Compared to earlier bounds, our new constraints are more permissive. We also compare derivative-based and derivative-free optimization methods, highlighting convergence issues with the HG12 function and offering mitigation strategies. We applied our method to over 25,000 asteroids observed by the ATLAS survey, demonstrating its usability. The new method enables the selection of the preferred spin-and-shape solution based on either statistical phase-curve model selection criteria and/or physically motivated constraints on the phase-curve shape.",
+    "status": "found"
+  },
+  "2511.16238": {
+    "arxiv_id": "2511.16238",
+    "title": "Numerical identification of the time-dependent coefficient in the heat equation with fractional Laplacian",
+    "authors": [
+      "Arshyn Altybay",
+      "Gulzat Nalzhupbayeva"
+    ],
+    "submission_date": "2025-11-20T11:11:51Z",
+    "latest_updated": "2026-09-09T13:37:20Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.16238v1",
+      "2511.16238v2"
+    ],
+    "abstract": "We consider the inverse problem of identifying a time-dependent source coefficient in a one-dimensional heat equation governed by the spectral Dirichlet fractional Laplacian from a weighted integral measurement. We present the continuous semigroup formulation and reduce the inverse problem to a Volterra equation under a nondegeneracy condition. For the numerical approximation, the spectral fractional operator is discretised by the fractional matrix power $A_h=L_h^s$ of the standard Dirichlet difference Laplacian and combined with a Crank--Nicolson scheme. We prove unconditional stability and an $O(τ^2+h^2)$ convergence estimate under a second-order spatial consistency assumption. A scalar reconstruction formula for the unknown coefficient is derived together with a discrete identifiability condition, and conditional convergence of the coupled state--coefficient reconstruction is established. For noisy integral measurements, regularised differentiation is used to approximate the required derivative data. Numerical experiments illustrate stable reconstruction for \\(1\\%\\)--\\(5\\%\\) relative noise and are consistent with the derived conditional error estimate.",
+    "status": "found"
+  },
+  "2511.16239": {
+    "arxiv_id": "2511.16239",
+    "title": "Optimizing Predictive Maintenance: Enhanced AI and Backend Integration",
+    "authors": [
+      "Michael Stern",
+      "Michelle Hallmann",
+      "Francesco Vona",
+      "Ute Franke",
+      "Thomas Ostertag",
+      "Benjamin Schlueter",
+      "Jan-Niklas Voigt-Antons"
+    ],
+    "submission_date": "2025-11-20T11:19:06Z",
+    "latest_updated": "2025-11-20T11:19:06Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.16239v1"
+    ],
+    "abstract": "Rail transportation success depends on efficient maintenance to avoid delays and malfunctions, particularly in rural areas with limited resources. We propose a cost-effective wireless monitoring system that integrates sensors and machine learning to address these challenges. We developed a secure data management system, equipping train cars and rail sections with sensors to collect structural and environmental data. This data supports Predictive Maintenance by identifying potential issues before they lead to failures. Implementing this system requires a robust backend infrastructure for secure data transfer, storage, and analysis. Designed collaboratively with stakeholders, including the railroad company and project partners, our system is tailored to meet specific requirements while ensuring data integrity and security. This article discusses the reasoning behind our design choices, including the selection of sensors, data handling protocols, and Machine Learning models. We propose a system architecture for implementing the solution, covering aspects such as network topology and data processing workflows. Our approach aims to enhance the reliability and efficiency of rail transportation through advanced technological integration.",
+    "status": "found"
+  },
+  "2511.16240": {
+    "arxiv_id": "2511.16240",
+    "title": "On the Bergman Kernel of complex hyperbolic manifolds",
+    "authors": [
+      "Jingzhou Sun"
+    ],
+    "submission_date": "2025-11-20T11:19:23Z",
+    "latest_updated": "2026-04-11T12:58:34Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2511.16240v1",
+      "2511.16240v2",
+      "2511.16240v3"
+    ],
+    "abstract": "We prove a formula for the Bergman kernel of polarized complex hyperbolic manifolds. The formula expresses the Bergman kernel as a sum over the geodesic loops in the manifold. As an application, we prove a result about the maximum and minimum of the Bergman kernel function. We also prove an estimate of the off-diagonal Bergman kernel.",
+    "status": "found"
+  },
+  "2511.16241": {
+    "arxiv_id": "2511.16241",
+    "title": "Preserving the Josephson Coupling of Twisted Cuprate Junctions via Tailored Silicon Nitride Circuits Boards",
+    "authors": [
+      "Tommaso Confalone",
+      "Flavia Lo Sardo",
+      "Domenico Montemurro",
+      "Davide Massarotti",
+      "Valerii M. Vinokur",
+      "Genda Gu",
+      "Francesco Tafuri",
+      "Kornelius Nielsch",
+      "Golam Haider",
+      "Nicola Poccia"
+    ],
+    "submission_date": "2025-11-20T11:19:44Z",
+    "latest_updated": "2025-11-20T11:19:44Z",
+    "revised_dates": null,
+    "venue": "Small (2025): e06520",
+    "latest_version": 1,
+    "versions": [
+      "2511.16241v1"
+    ],
+    "abstract": "Controlled fabrication of twisted van der Waals heterostructures is essential to unlock the full potential of moire materials. However, achieving reproducibility remains a major challenge, particularly for air-sensitive materials such as $Bi_{2}Sr_{2}CaCu_{2}O_{8+δ}$ (BSCCO), where it is crucial to preserve the intrinsic and delicate superconducting properties of the interface throughout the entire fabrication process. Here, we present a dry, inert and cryogenic assembly method that combines silicon nitride nanomembranes (NMBs) with pre-patterned electrodes and the cryogenic stacking technique (CST) to fabricate high-quality twisted BSCCO Josephson junctions (JJs). This protocol prevents thermal and chemical degradation during both interface formation and electrical contact integration. We also find that asymmetric membrane designs, such as a double cantilever, effectively suppress vibration-induced disorder due to wire bonding, resulting in sharp and hysteretic current-voltage characteristics. The junctions exhibit a twist-angle-dependent Josephson coupling with magnitudes comparable to the highest-performing devices reported to date, but achieved through a straightforward and versatile contact method, offering a scalable and adaptable platform for future applications. These findings highlight the importance of both interface and contact engineering in addressing reproducibility in superconducting van der Waals heterostructures.",
+    "status": "found"
+  },
+  "2511.16242": {
+    "arxiv_id": "2511.16242",
+    "title": "Heralded quantum non-Gaussian states in pulsed levitating optomechanics",
+    "authors": [
+      "F. Bemani",
+      "A. A. Rakhubovsky",
+      "R. Filip"
+    ],
+    "submission_date": "2025-11-20T11:20:10Z",
+    "latest_updated": "2025-11-20T11:20:10Z",
+    "revised_dates": null,
+    "venue": "npj Quantum Information 11, 160 (2025)",
+    "latest_version": 1,
+    "versions": [
+      "2511.16242v1"
+    ],
+    "abstract": "Optomechanics with levitated nanoparticles is a promising way to combine very different types of quantum non-Gaussian aspects induced by continuous dynamics in a nonlinear or time-varying potential with the ones coming from discrete quantum elements in dynamics or measurement. First, it is necessary to prepare quantum non-Gaussian states using both methods. The nonlinear and time-varying potentials have been widely analyzed for this purpose. However, feasible preparation of provably quantum non-Gaussian states in a single mechanical mode using discrete photon detection has not been proposed yet for optical levitation. We explore pulsed optomechanical interactions combined with non-linear photon detection techniques to approach mechanical Fock states and confirm their quantum non-Gaussianity. We also predict the conditions under which the optomechanical interaction can induce multiple-phonon addition processes, which are relevant for $n$-phonon quantum non-Gaussianity. The practical applicability of quantum non-Gaussian states for sensing phase-randomized displacements is shown. Besides such applications, generating quantum non-Gaussian states of levitated nanoparticles can help to study fundamental questions of quantum thermodynamics, and macroscopic quantum effects.",
+    "status": "found"
+  },
+  "2511.16243": {
+    "arxiv_id": "2511.16243",
+    "title": "An Agent-Based Simulation of Regularity-Driven Student Attrition: How Institutional Time-to-Live Constraints Create a Dropout Trap in Higher Education",
+    "authors": [
+      "H. R. Paz"
+    ],
+    "submission_date": "2025-11-20T11:21:39Z",
+    "latest_updated": "2025-11-20T11:21:39Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.16243v1"
+    ],
+    "abstract": "High dropout rates in engineering programmes are conventionally attributed to student deficits: lack of academic preparation or motivation. However, this view neglects the causal role of \"normative friction\": the complex system of administrative rules, exam validity windows, and prerequisite chains that constrain student progression. This paper introduces \"The Regularity Trap,\" a phenomenon where rigid assessment timelines decouple learning from accreditation. We operationalize the CAPIRE framework into a calibrated Agent-Based Model (ABM) simulating 1,343 student trajectories across a 42-course Civil Engineering curriculum. The model integrates empirical course parameters and thirteen psycho-academic archetypes derived from a 15-year longitudinal dataset. By formalizing the \"Regularity Regime\" as a decaying validity function, we isolate the effect of administrative time limits on attrition. Results reveal that 86.4% of observed dropouts are driven by normative mechanisms (expiry cascades) rather than purely academic failure (5.3%). While the overall dropout rate stabilized at 32.4%, vulnerability was highly heterogeneous: archetypes with myopic planning horizons faced attrition rates up to 49.0%, compared to 13.2% for strategic agents, despite comparable academic ability. These findings challenge the neutrality of administrative structures, suggesting that rigid validity windows act as an invisible filter that disproportionately penalizes students with lower self-regulatory capital.",
+    "status": "found"
+  },
+  "2511.16244": {
+    "arxiv_id": "2511.16244",
+    "title": "Constraining interacting dark energy models with black hole superradiance",
+    "authors": [
+      "Zhen-Hong Lyu",
+      "Rong-Gen Cai",
+      "Shao-Jiang Wang",
+      "Xiang-Xi Zeng"
+    ],
+    "submission_date": "2025-11-20T11:24:10Z",
+    "latest_updated": "2026-04-27T06:56:08Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2511.16244v1",
+      "2511.16244v2",
+      "2511.16244v3"
+    ],
+    "abstract": "The recent preference for a dynamical dark energy (DE) from the Dark Energy Spectroscopic Instrument seems to call for interactions between DE and dark matter (DM), either from direct DE-DM interaction or indirect interaction induced by modified gravity. Therefore, an independent probe for these kinds of DE-DM interactions would be appealing from observational aspects. In this paper, we propose the black hole superradiance as a novel astrophysical probe for field-theoretic interacting DE-DM models, providing complementary constraints independent of large-scale cosmological observations. The core principle is that the DE-DM interaction can alter the effective mass of the superradiant ultralight boson, thereby modifying its superradiant instability rate around spinning black holes. We explore this connection through two distinct scenarios: a model where the DE field mediates a dark fifth force within the DM sector, affecting the superradiance from DM particles; and a novel mechanism where the DE field itself becomes superradiant due to the effective mass enhancement induced by dense DM spikes around supermassive black holes. By applying a statistical framework to black hole observations in both scenarios, we derive constraints on the fundamental DE-DM coupling strength. Although the current constraints are rather loose due to small samples and inaccurate measurements, our work provides new astrophysical constraints on these interacting DE-DM scenarios and establishes a new synergy between black hole physics and cosmology for probing the fundamental nature of the dark sector.",
+    "status": "found"
+  },
+  "2511.16245": {
+    "arxiv_id": "2511.16245",
+    "title": "GazeInterpreter: Parsing Eye Gaze to Generate Eye-Body-Coordinated Narrations",
+    "authors": [
+      "Qing Chang",
+      "Zhiming Hu"
+    ],
+    "submission_date": "2025-11-20T11:25:47Z",
+    "latest_updated": "2025-11-20T11:25:47Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.16245v1"
+    ],
+    "abstract": "Comprehensively interpreting human behavior is a core challenge in human-aware artificial intelligence. However, prior works typically focused on body behavior, neglecting the crucial role of eye gaze and its synergy with body motion. We present GazeInterpreter - a novel large language model-based (LLM-based) approach that parses eye gaze data to generate eye-body-coordinated narrations. Specifically, our method features 1) a symbolic gaze parser that translates raw gaze signals into symbolic gaze events; 2) a hierarchical structure that first uses an LLM to generate eye gaze narration at semantic level and then integrates gaze with body motion within the same observation window to produce integrated narration; and 3) a self-correcting loop that iteratively refines the modality match, temporal coherence, and completeness of the integrated narration. This hierarchical and iterative processing can effectively align physical values and semantic text in the temporal and spatial domains. We validated the effectiveness of our eye-body-coordinated narrations on the text-driven motion generation task in the large-scale Nymeria benchmark. Moreover, we report significant performance improvements for the sample downstream tasks of action anticipation and behavior summarization. Taken together, these results reveal the significant potential of parsing eye gaze to interpret human behavior and open up a new direction for human behavior understanding.",
+    "status": "found"
+  },
+  "2511.16246": {
+    "arxiv_id": "2511.16246",
+    "title": "Constraining the Corona Geometry of Cyg X-1 with Broad Band Spectrum and Polarimetric Analysis Based on Observations in May 2022",
+    "authors": [
+      "Sixuan Zhang",
+      "Tsunefumi Mizuno",
+      "Tomohisa Kawashima",
+      "Chris Done",
+      "Yasushi Fukazawa",
+      "Hiromitsu Takahashi",
+      "Ryusei Komine",
+      "Koudai Takebayashi",
+      "Ken Ohsuga"
+    ],
+    "submission_date": "2025-11-20T11:26:24Z",
+    "latest_updated": "2025-11-20T11:26:24Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.16246v1"
+    ],
+    "abstract": "Cygnus X-1 (Cyg X-1) exhibited a low hard state in 2022, observed by several missions. The IXPE reported that the polarization angle is aligned with the radio jet and gave a polarization degree approximately 4 times higher than the general expectations of $1\\%$ through the analysis of the time-integrated data with a simple spectral model, indicating that the disk inclination is higher than a canonical value of about $30^{\\circ}$. Many subsequent theoretical studies employed a non-standard model to explain this high PD. Here, we revisit the disk/corona spectrum through a detailed joint analysis using IXPE, NuSTAR, and NICER data. By investigating the time variability of the spectrum, we find that the two-Comptonization components model can better reproduce the data than the one-Comptonization component model originally adopted. We observed a lower disk photon temperature of about 0.15 keV. Detailed simulation suggests that lowering the disk temperature by a factor of 2 increases the PD by roughly 2 percentage points in the IXPE 2--8 keV band for a slab-like corona geometry, helping to reconcile the observed high PD with theoretical predictions. However, The simulated PDs are still significantly lower than the observed ones - even for a rather high $60^{\\circ}$ inclination. We also investigated the polarization properties of a simple wedge-shaped corona with a truncated disk and a sandwiching slab corona. We find that the slab corona predicts an apparent energy dependence in PD while PA remains constant in the IXPE band, in agreement with the observed polarization. Therefore, we suggest that Cyg X-1 in 2022 May exhibits a two-Comptonization coronal emission with different optical depths, and the hard one is in a sandwiching slab geometry. We also discuss how the polarization is affected by other parameters of the black hole and the corona.",
+    "status": "found"
+  },
+  "2511.16247": {
+    "arxiv_id": "2511.16247",
+    "title": "Dynamical simulation of the Interstellar Comet 3I/ATLAS",
+    "authors": [
+      "Goldy Ahuja",
+      "Shashikiran Ganesh"
+    ],
+    "submission_date": "2025-11-20T11:26:59Z",
+    "latest_updated": "2025-11-20T11:26:59Z",
+    "revised_dates": null,
+    "venue": "The Astrophysical Journal Letters, 995, L13 (2025)",
+    "latest_version": 1,
+    "versions": [
+      "2511.16247v1"
+    ],
+    "abstract": "Comet 3I/ATLAS, also known as C/2025 N1, was discovered on 2025 July 1 UT by NASA Asteroid Terrestrial-impact Last Alert System (ATLAS), with a v$_{\\infty}$ $\\sim$ 58 kms$^{-1}$. This is the fastest among the three interstellar objects discovered so far. In this work, we study the interaction of the 3I/ATLAS with Mars, pre-perihelion, and Jupiter post-perihelion. We also present the results of the dynamical simulations of the orbital evolution of the comet for a hundred years in the past and future. For our analysis, we have used REBOUND, an N-Body simulation package, to study these situations. We use the adaptive size mathematical integrator \\textsc{Ias15}, with a 1-day time step for long-term integration, and a 1-hour time step to study the effect of the planets on this body during the close encounters. We have seen an effect of Jupiter on the orbital parameters of the comet, which affects its post-perijove trajectory significantly. The impact of Mars on this comet is minimal compared to the effect of Jupiter. This is consistent with the point that the comet moves well past Mars's Hill radius but very close to Jupiter's Hill radius at the respective close approaches. However, the effect of non-gravitational forces will alter the results. Since the non-gravitational forces are not yet known, we predict the variation of the orbital parameters considering a range of possible magnitudes of the non-gravitational acceleration.",
+    "status": "found"
+  },
+  "2511.16248": {
+    "arxiv_id": "2511.16248",
+    "title": "Revisiting Fairness-aware Interactive Recommendation: Item Lifecycle as a Control Knob",
+    "authors": [
+      "Yun Lu",
+      "Xiaoyu Shi",
+      "Hong Xie",
+      "Chongjun Xia",
+      "Zhenhui Gong",
+      "Mingsheng Shang"
+    ],
+    "submission_date": "2025-11-20T11:27:04Z",
+    "latest_updated": "2025-11-20T11:27:04Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.16248v1"
+    ],
+    "abstract": "This paper revisits fairness-aware interactive recommendation (e.g., TikTok, KuaiShou) by introducing a novel control knob, i.e., the lifecycle of items. We make threefold contributions. First, we conduct a comprehensive empirical analysis and uncover that item lifecycles in short-video platforms follow a compressed three-phase pattern, i.e., rapid growth, transient stability, and sharp decay, which significantly deviates from the classical four-stage model (introduction, growth, maturity, decline). Second, we introduce LHRL, a lifecycle-aware hierarchical reinforcement learning framework that dynamically harmonizes fairness and accuracy by leveraging phase-specific exposure dynamics. LHRL consists of two key components: (1) PhaseFormer, a lightweight encoder combining STL decomposition and attention mechanisms for robust phase detection; (2) a two-level HRL agent, where the high-level policy imposes phase-aware fairness constraints, and the low-level policy optimizes immediate user engagement. This decoupled optimization allows for effective reconciliation between long-term equity and short-term utility. Third, experiments on multiple real-world interactive recommendation datasets demonstrate that LHRL significantly improves both fairness and user engagement. Furthermore, the integration of lifecycle-aware rewards into existing RL-based models consistently yields performance gains, highlighting the generalizability and practical value of our approach.",
+    "status": "found"
+  }
+}

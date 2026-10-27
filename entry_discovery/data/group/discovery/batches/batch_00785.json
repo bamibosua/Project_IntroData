@@ -1,0 +1,403 @@
+{
+  "2609.13534": {
+    "arxiv_id": "2609.13534",
+    "title": "Harmfulness Propagation Dynamics: Layer-wise Trajectories of Adversarial Intent in Large Language Models",
+    "authors": [
+      "Noor Islam S. Mohammad",
+      "Uluğ Bayazıt"
+    ],
+    "submission_date": "2026-09-11T21:04:55Z",
+    "latest_updated": "2026-09-11T21:04:55Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13534v1"
+    ],
+    "abstract": "We identify \\textbf{Harmfulness Propagation Dynamics (HPD)}: for harmful prompts, the projection of the last-token hidden state onto a learned harm direction rises monotonically with transformer depth, whereas benign prompts remain flat or oscillatory. This cross-layer signature reflects harmful intent as a \\emph{progressively resolved} semantic property: surface form appears early, while pragmatic intent consolidates later, making the \\emph{trajectory shape} more informative than any single-layer snapshot. Moreover, LDA-based harm directions, learned per layer, remain stable across random splits (pairwise cosine similarity $>0.97$), supporting the projection sequence as a reproducible structured signal. Building on HPD, we introduce \\textbf{\\herald{}} (\\textbf{H}armful \\textbf{E}ncoding \\textbf{R}ecognition via \\textbf{A}ctivation \\textbf{L}ayer \\textbf{D}ynamics). This lightweight input moderator extracts a seven-dimensional feature record, slope, curvature, monotonicity, onset layer, and related statistics from the cross-layer projection sequence and classifies it with a 288-parameter MLP. \\herald{} stores one $d$-dimensional direction per layer ($262$\\,KB for a 32-layer, $d{=}4096$ model), requires no gradient computation during training, and adds only $2.6{\\times}10^{-6}$ prefill FLOPs at inference. Across eight prompt-harmfulness benchmarks and four model families, \\herald{} achieves an average F1 of $89.3$ on OLMo2-7B, surpassing all tested guard models on adversarial jailbreak detection ($98.4$ vs.\\ $96.9$ F1) and outperforming prior latent-based methods by $2.3$-$4.1$ F1 points on every backbone. Per-instance trajectories provide machine-readable audit records that reveal \\emph{when} and \\emph{how} harmfulness emerges, offering an interpretability advantage over single-layer approaches.",
+    "status": "found"
+  },
+  "2609.13535": {
+    "arxiv_id": "2609.13535",
+    "title": "From Legal Text to AI-specific Risk Sources: A Systematic Analysis of the EU AI Act's High-Risk Requirements",
+    "authors": [
+      "Ronald Schnitzer",
+      "Mike Auer",
+      "Rumpa Choudhury",
+      "Andreas Hapfelmeier",
+      "Maximilian Hoeving",
+      "Isabelle Painter",
+      "Josiane Xavier Parreira",
+      "Sonja Zillner"
+    ],
+    "submission_date": "2026-09-11T21:05:33Z",
+    "latest_updated": "2026-09-11T21:05:33Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13535v1"
+    ],
+    "abstract": "The EU AI Act introduces mandatory requirements for high-risk AI systems with the explicit goal of ensuring the development and operation of trustworthy AI. At the same time, AI risk management practices rely on structured risk taxonomies to systematically identify and treat AI-specific risk sources. As both the AI Act and established risk taxonomies aim to address AI-induced risks, a natural question is whether they align in the risk sources they cover. However, no clear mapping exists between the risks implicitly addressed by the Act's high-risk requirements and established taxonomies, leaving practitioners without a structured basis for aligning regulatory obligations with AI risk management practice. This paper presents a systematic classification of the requirements extracted from the EU AI Act Section 2 (Requirements for high-risk AI systems), revealing that only a minority directly address AI-specific risk sources, while the majority impose organizational process and documentation obligations. From the AI risk-related requirements, a consolidated list of distinct AI-specific risk sources is derived. The resulting EU AI Act Risk Source List takes an important step towards bridging the gap between legal obligation and AI risk management practice, providing a structured reference for explicit comparison between existing AI risk taxonomies and the risk sources implicitly addressed by the EU AI Act. Important Note: This is the authors' preprint. The paper was presented at the 4th International Conference on Frontiers of Artificial Intelligence, Ethics, and Multidisciplinary Applications. A link to the conference's official proceedings will be provided upon publication.",
+    "status": "found"
+  },
+  "2609.13536": {
+    "arxiv_id": "2609.13536",
+    "title": "Identifiability of the three-dimensional anisotropic thermal-conductivity tensor in thermoreflectance measurements: Single-orientation limits and full-tensor recover",
+    "authors": [
+      "Dihui Wang",
+      "Heng Ban"
+    ],
+    "submission_date": "2026-09-11T21:06:24Z",
+    "latest_updated": "2026-09-15T05:03:11Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2609.13536v1",
+      "2609.13536v2"
+    ],
+    "abstract": "Materials with full anisotropic thermal conductivity tensors are widely used in advanced applications, creating a need for dedicated characterization. Such tensors contain six independent components: three diagonal conductivities and three non-zero off-diagonal couplings. However, whether thermoreflectance measurements on a single crystalline orientation can uniquely determine an arbitrary tensor remains unclear. Here, we show that every fully anisotropic thermal-conductivity tensor admits a Schur-equivalent tensor with zero cross-plane couplings ($k_{xz}=k_{yz}=0$). The two tensors produce identical surface thermal responses, and this equivalence persists as frequency, delay time, beam geometry, and spatial offset vary. We further demonstrate that parameter-identifiability assessments based on heuristic interpretations of sensitivity trends or singular-value decomposition (SVD) of the sensitivity matrix cannot, by themselves, rule out globally equivalent solutions in fully anisotropic systems. Combining systematic analysis with numerical validation, we provide guidance on selecting signals and measurement orientations for full-tensor characterization. Specifically, measurements at three mutually orthogonal crystallographic orientations provide complementary information for full-tensor recovery. These findings clarify the limits of single-surface measurements and establish a systematic approach to characterizing fully anisotropic thermal-conductivity tensors.",
+    "status": "found"
+  },
+  "2609.13537": {
+    "arxiv_id": "2609.13537",
+    "title": "Dynamic HBM Repartitioning for Multi-Turn MoE Serving",
+    "authors": [
+      "Jinpyo Kim",
+      "Mingi Kwon",
+      "Younghoon Min",
+      "Jongryool Kim",
+      "Jishen Zhao"
+    ],
+    "submission_date": "2026-09-11T21:06:26Z",
+    "latest_updated": "2026-09-11T21:06:26Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13537v1"
+    ],
+    "abstract": "Long-running multi-turn requests accumulate reusable key-value (KV) state. Once this state exceeds a fixed GPU KV-cache allocation, serving systems evict reusable prefixes, repeat prefill work, and may preempt requests. This pressure is particularly acute for Mixture-of-Experts (MoE) models: their expert weights occupy most GPU high-bandwidth memory (HBM), even though each token activates only a sparse subset of experts. A static boundary between weights and the KV cache prevents serving systems from using expert memory to preserve reusable state as conversations grow. We present VAMP, an MoE serving framework that changes this HBM boundary at runtime. When a KV allocation cannot be satisfied, VAMP compares the estimated future work of three alternatives: staging expert weights from host memory, evicting cached prefixes that may require re-prefill, or preempting and rescheduling requests. It then converts a bounded expert-weight region into KV-cache capacity when that action has the lowest estimated penalty. CUDA Virtual Memory Management page remapping performs this conversion without copying resident KV data. We implement VAMP in the vLLM serving engine and evaluate Qwen3-Next-80B on recorded and controlled multi-turn workloads. Across five replays of a recorded 2,103-turn SWE-bench agent workload, VAMP with a 15% maximum expert-offloading ratio reduces time-to-first-token (TTFT) p90 from 26.1 s to 1.10 s (23.6 times) and increases request throughput by 20.7% relative to unmodified vLLM, while increasing time per output token (TPOT) by 31.1%.",
+    "status": "found"
+  },
+  "2609.13538": {
+    "arxiv_id": "2609.13538",
+    "title": "Protein eXplosion Imaging (PXI): Protein Structures from Laser-Driven Explosions",
+    "authors": [
+      "Alfredo Bellisario",
+      "Tomas André",
+      "Carl Caleman",
+      "Nicuşor Tîmneanu"
+    ],
+    "submission_date": "2026-09-11T21:07:56Z",
+    "latest_updated": "2026-09-15T08:46:47Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2609.13538v1",
+      "2609.13538v2"
+    ],
+    "abstract": "We investigate the structural information retained in the distribution of explosion ion trajectories from proteins subjected to strong ionization. Using molecular-dynamics simulations and machine-learning analysis benchmarked against an analytical approach, we show that low-resolution structural information can be retrieved from the explosion distributions alone. An ensemble of convolutional neural networks trained on simulated spherical ion maps recovers the radius of gyration and the three semi-axes of an ellipsoidal molecular envelope with prediction errors of 1.2 Å and 1.5 Å, respectively, while an analytical ellipsoid charge model returns similar estimates and performs best for globular structures. We further investigate how higher-level structural information and symmetries can be extrapolated from ion measurements. This study supports the viability for structural determination of single proteins without large-scale X-ray facilities.",
+    "status": "found"
+  },
+  "2609.13539": {
+    "arxiv_id": "2609.13539",
+    "title": "Assortment Control Unlocks the Value of Dynamic Pricing in Mixed Last-Mile Delivery",
+    "authors": [
+      "Ze Zhou",
+      "Balázs Kulcsár"
+    ],
+    "submission_date": "2026-09-11T21:08:30Z",
+    "latest_updated": "2026-09-11T21:08:30Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13539v1"
+    ],
+    "abstract": "The growth of e-commerce has intensified the need for last-mile delivery systems that can jointly manage customer choice and operational efficiency. We study the Dynamic Offering and Pricing of Mixed Delivery Options problem, in which a logistics service provider dynamically selects and prices attended home-delivery time slots and out-of-home pickup options for sequentially arriving customers. Each decision affects immediate revenue, customer acceptance, and the route-dependent fulfillment cost realized at the end of the booking horizon. We formulate DOPMDO as a finite-horizon Markov decision process and propose State-Value Anchored Pricing via Approximate Dynamic Programming. The method learns a continuation-value approximation on an aggregate state representation of the mixed-delivery system and uses accepted-versus-rejected value differences to estimate option-level opportunity costs. These opportunity costs are embedded in an anchored trust-region pricing problem around a calibrated fine-static benchmark. Computational experiments on the real-world Seattle instance show that SVAP--ADP increases mean episode profit by 7.0\\% relative to current practice (95\\% CI: 6.7--7.2\\%), primarily by reducing terminal fulfillment cost while maintaining a stable home--locker--opt-out mix. Assortment-control experiments show that dynamic pricing is most effective when the menu exposes operationally valuable locker alternatives, with richer candidate pools delivering substantially larger gains than restricted nearest-locker menus. These results indicate that anticipatory pricing and assortment control are complementary: pricing steers customers toward lower-cost options, but the menu determines whether high-value consolidation opportunities are available in the first place.",
+    "status": "found"
+  },
+  "2609.13540": {
+    "arxiv_id": "2609.13540",
+    "title": "Observable Signatures of Supernova Shock Breakout in Confined Circumstellar Medium",
+    "authors": [
+      "Wun-Yi Chen",
+      "Ke-Jung Chen",
+      "Keiichi Maeda",
+      "Friedrich K. Röpke"
+    ],
+    "submission_date": "2026-09-11T21:09:02Z",
+    "latest_updated": "2026-09-11T21:09:02Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13540v1"
+    ],
+    "abstract": "Supernova shock breakout encodes rich information about stellar explosions, including the properties of the progenitor, the explosion mechanism, and the circumstellar environment. We present the first two-dimensional multigroup radiation-hydrodynamic simulations of shock breakout from Red Supergiant (RSG) progenitor stars embedded in confined circumstellar medium (CSM) produced shortly before core collapse. Our simulations reveal that radiation escaping ahead of the shock forms a radiative precursor that pre-accelerates the CSM and induces strong hydrodynamic mixing. This mixing substantially modifies the structure and evolution of the breakout photosphere and, consequently, the emergent radiation. The resulting bolometric light curves reach peak luminosities of $1.43$-$3.15 \\times 10^{44}\\ \\mathrm{erg\\ s^{-1}}$ with duration of $4.1\\text{--}35.4$~hr, with these signatures controlled by the CSM mass and the confined radius. Our multiwavelength calculations further reveal a pronounced extreme-ultraviolet emission, where ionizing photons of energies ${\\ge}54.4$~eV can sustain flash-ionized He-II and power strong emission from its recombination line of $λ4686$ angstrom. Furthermore, we identify diagnostic signatures of shock breakout with dense CSM and assess their detectability with Einstein Probe and ULTRASAT. Our models and predictions provide promising diagnostics of shock breakout in CSM that may be detectable by current and forthcoming high-cadence ultraviolet and X-ray space telescopes.",
+    "status": "found"
+  },
+  "2609.13541": {
+    "arxiv_id": "2609.13541",
+    "title": "Slow Thermalization and Long-Lived Coherence across Acoustic Phonon Branches in BAs",
+    "authors": [
+      "Zeyu Xiang",
+      "Ying Peng",
+      "Ange Benise Niyikiza",
+      "Fanghao Zhang",
+      "Haoyuan Li",
+      "Takahiro Sato",
+      "Thomas Linker",
+      "Yanwen Sun",
+      "Meredith Henstridge",
+      "Vincent Esposito",
+      "James F. Cotter",
+      "Diling Zhu",
+      "Zhifeng Ren",
+      "Bolin Liao"
+    ],
+    "submission_date": "2026-09-11T21:09:04Z",
+    "latest_updated": "2026-09-11T21:09:04Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13541v1"
+    ],
+    "abstract": "The exceptionally high thermal conductivity of cubic boron arsenide (BAs) arises from suppressed three-phonon scattering associated with its large acoustic--optical gap. In this regime, four-phonon processes become non-negligible, creating an unusual scattering hierarchy with unexplored consequences for nonequilibrium phonon dynamics. Here, time-resolved x-ray diffuse scattering reveals exceptionally slow, branch-dependent acoustic phonon thermalization and long-lived coherence. Exploiting branch sensitivity in one-phonon diffuse scattering, we resolve transverse acoustic (TA) and longitudinal acoustic (LA) thermalization times of 29.2 and 13.9~ps, respectively; even the LA timescale is at least three times that in common semiconductors. Phonon dispersion calculations assign coherent oscillations at 0.19 and 0.27~THz to the TA and LA modes, respectively; both persist with little decay over 50~ps, with comparable coherence found only in diamond. These findings provide a direct dynamical manifestation of the weak phonon scattering underlying the exceptional thermal transport of BAs.",
+    "status": "found"
+  },
+  "2609.13542": {
+    "arxiv_id": "2609.13542",
+    "title": "Local Response Theory of Electrified Interfaces from Screened Effective Charges",
+    "authors": [
+      "Nicolas G. Hörmann",
+      "Nicolas Bergmann",
+      "Karsten Reuter"
+    ],
+    "submission_date": "2026-09-11T21:11:33Z",
+    "latest_updated": "2026-09-11T21:11:33Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13542v1"
+    ],
+    "abstract": "First-principles, electronic-structure simulations provide direct access to ground-state, global system properties. In the context of computational electrochemistry these are, e.g., bias-dependent energies, free energies, work functions, and capacitances. However, a comparably systematic local description of how these quantities respond to biasing via interfacial charging is still missing. Here, we introduce the screened electrochemical Born effective charge (SEBEC), a mixed total-energy derivative that measures the force response of an atomic degree of freedom to interfacial charging under electrochemical boundary conditions. SEBECs play the role for electrochemistry that Born effective charges play in the modern theory of polarization: they provide an unambiguous decomposition of global response and generate the same formal structures for structural relaxation, capacitance, and electrochemical Stark tuning that are familiar from solid-state response theory. The broader implication is a local response framework that brings electrochemical interfaces closer to the conceptual rigor long established for insulating solids.",
+    "status": "found"
+  },
+  "2609.13543": {
+    "arxiv_id": "2609.13543",
+    "title": "Asclepius: An Adaptive Harness for Long-Horizon Clinical Agents",
+    "authors": [
+      "Grace Chang Yuan",
+      "Xiaoman Zhang",
+      "Sung Eun Kim",
+      "Luyang Luo",
+      "Pranav Rajpurkar"
+    ],
+    "submission_date": "2026-09-11T21:14:59Z",
+    "latest_updated": "2026-09-11T21:14:59Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13543v1"
+    ],
+    "abstract": "LLM agents are predominantly benchmarked on short, single-task trajectories, yet real deployments run for hours under contention, surfacing a different class of failures. We use the Clinical Environment Simulator (CES), in which an agent manages an entire emergency-department shift under continuous time and resource pressure, as a testbed: long-horizon execution failures manifest measurably in a single rollout under structured, multi-dimensional grading. On CES, current agents reach the correct diagnosis in most cases yet fail to deliver complete and timely critical actions, revealing an execution gap. We attribute this gap to three long-horizon failure modes, each operationalized as a per-trace counter: instruction-adherence drift, treatment incompleteness, and a severity-equity gap in timeliness. We then introduce Asclepius, an adaptive agent scaffolding with a self-evolving harness that rewrites the operating manual between shifts from trace-level feedback, an externalized clinical skills library for high-stakes regimen knowledge, and three isolated subagents that partition per-turn decisions across the patient queue. On held-out batches never observed during harness evolution, Asclepius improves critical-action correctness by 22% (p = 0.024) over a strong baseline agent framework while preserving diagnostic accuracy, with consistent gains across five LLM judges from three model families; on the full ten-batch set, improvements reach 25% on critical actions and 13% on timeliness. The three failure modes form a coupled bottleneck: decisive reductions appear only when all three components act together.",
+    "status": "found"
+  },
+  "2609.13544": {
+    "arxiv_id": "2609.13544",
+    "title": "PEAT: Pseudo-Error Assessment for GPU Kernel Validation in DNN Training",
+    "authors": [
+      "Xuan Truong Nguyen",
+      "Hong Quan Tran",
+      "Tuan Duc Chu",
+      "Thanh Tuan Dao"
+    ],
+    "submission_date": "2026-09-11T21:16:15Z",
+    "latest_updated": "2026-09-11T21:16:15Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13544v1"
+    ],
+    "abstract": "Deep neural networks (DNNs) are widely adopted in various fields, driving an emerging trend in developing software stacks associated with DNN training systems. For example, many codes have been ported across different frameworks or developed to leverage the computing power of GPUs or domain-specific accelerators. However, validating a kernel implementation in DNN training is time-consuming and generally requires massive storage. Specifically, this poses a fundamental question: how to characterize the behavior of a new implementation when it is integrated into a DNN training flow. Unfortunately, this problem is not well investigated in the literature, to the best of our knowledge. To address this shortcoming, we present PEAT - a lightweight inspection framework for \\underline{P}seudo-\\underline{E}rror \\underline{A}ssessment associated with GPU kernel validation in DNN \\underline{T}raining. Firstly, inspired by conventional fault injection (FI), PEAT's Profiler invokes an operation-wise kernel in a training flow to collect a DNN model's states (e.g., checkpoints and activations). More importantly, the Profiler introduces two simple yet effective techniques, playback FI and frequency-based runtime FI, leveraging persistent kernel calling during the training process. Secondly, PEAT's Analyzer characterizes profiled errors, revealing some signatures from the error distribution of a kernel compared to the golden one. Lastly, PEAT's Detector provides some guidelines as a sufficient condition, which enables associating several well-known error models with signature patterns. We demonstrate the applicability of our approach by presenting the results and analysis using GPUs from the two most popular vendors, NVIDIA V100 and AMD MI250, on various AI models, from vision tasks to language models, for both pretraining and finetuning scenarios.",
+    "status": "found"
+  },
+  "2609.13545": {
+    "arxiv_id": "2609.13545",
+    "title": "Runtime-Incremental Transformer for Reinforcement-Learning-Based Adaptive Control",
+    "authors": [
+      "Giansalvo Cirrincione",
+      "Adriano Fagiolini"
+    ],
+    "submission_date": "2026-09-11T21:16:47Z",
+    "latest_updated": "2026-09-11T21:16:47Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13545v1"
+    ],
+    "abstract": "Learning-based adaptive control of robotic manipulators with non-observable friction memory has been addressed by attention- based meta-controllers whose number of attention heads is fixed before training and is tuned by costly offline search. At long memory horizons, such fixed-capacity controllers are prone to catastrophic failures on a sizeable fraction of training seeds. The present paper introduces a runtime mechanism that grows and prunes the heads of the attention block during reinforcement learning, governed by two signals: the effective rank of the on-policy context distribution, which triggers growth when representational capacity becomes insufficient, and the per-head output magnitude, which flags redundant heads for removal. Policy continuity at growth events and a quantitative bound at prune events are established analytically. On a two- link manipulator with Stribeck friction, the proposed mechanism attains full success across all memory regimes, eliminating the long-horizon failure mode and removing the need for offline tuning of the head count.",
+    "status": "found"
+  },
+  "2609.13546": {
+    "arxiv_id": "2609.13546",
+    "title": "WISER: Systematic Design-Space Exploration of Trapped Ions with Multiplexed Control",
+    "authors": [
+      "Scott Jones",
+      "Song-qing-hao Yang",
+      "Prakash Murali"
+    ],
+    "submission_date": "2026-09-11T21:22:31Z",
+    "latest_updated": "2026-10-02T15:06:01Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2609.13546v1",
+      "2609.13546v2"
+    ],
+    "abstract": "Trapped-ion Quantum Charge-Coupled Devices (QCCD) are a leading contender for quantum computing, but their scalability is constrained by control wiring and electronics. Wiring using Integrated Switching Electronics (WISE), a recently proposed QCCD architecture, reduces wiring through multiplexing and integrated switching hardware. However, this leaves an execution model with limited parallelism and limited flexibility in ion movement. Further, these devices need to be paired with a quantum error correction (QEC) code to enable fault-tolerant quantum computation (FTQC). Can WISE architectures efficiently support FTQC requirements? Which QEC choices, device and control parameters are practical? We present WISER, a cross-layer design-space exploration framework for trapped-ion systems with multiplexed control. WISER combines a WISE-specific SAT-based compiler, a physics-informed noise model and logical-memory simulation to estimate logical error rates, logical clock speeds and control power across hardware parameters and QEC families. Its compiler reduces routing time by $2.6$--$18.8\\times$ relative to a greedy WISE-compatible baseline. Our analysis provides concrete design guidance. Two-ion traps with $16$-way multiplexing, $8\\times$ lower than the original WISE proposal, give the fastest logical clock that meets our reliability and cold-stage power targets. With current hardware parameters, the distance-7 surface code is the only evaluated code to meet our early-FTQC screen, at $4.58\\,$Hz and $2.04\\,$W of DAC power per logical qubit. At this operating point, ion transport and recooling take $94$--$96\\%$ of the WISE cycle, and even without them sample-and-hold electrode charging leaves millisecond-scale syndrome-extraction rounds.",
+    "status": "found"
+  },
+  "2609.13547": {
+    "arxiv_id": "2609.13547",
+    "title": "Toward Optimal Switching Regret for Multi-Armed Bandits with Oblivious Adversary",
+    "authors": [
+      "Mengxiao Zhang"
+    ],
+    "submission_date": "2026-09-11T21:23:20Z",
+    "latest_updated": "2026-09-11T21:23:20Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13547v1"
+    ],
+    "abstract": "We study switching regret in adversarial multi-armed bandits, where the learner competes with an arm sequence that changes at most $S$ times. When $S$ is known, an optimal expected regret of $\\widetilde{\\mathcal{O}}(\\sqrt{(S+1)KT})$ is obtainable [Auer et al., 2002]. However, when $S$ is unknown, Marinov and Zimmert [2021] show that this guarantee is impossible under an adaptive adversary. In this paper, we show that a single algorithm achieves $\\widetilde{\\mathcal{O}}(\\sqrt{(S+1)KT})$ expected regret for every $S$ against an oblivious adversary, resolving an open problem of Auer et al. [2019b]. Our algorithm combines a fixed-share learner initialized with a small learning rate and dyadic-interval subroutines that search for local improvements using randomized learning rates and implicit exploration. Importantly, a non-uniform prior favors following the main learner, keeping the cost of maintaining many subroutines small. When the subroutines accumulate sufficient improvement over the main learner, its learning rate doubles, allowing adaptation to the unknown number of comparator switches $S$.",
+    "status": "found"
+  },
+  "2609.13548": {
+    "arxiv_id": "2609.13548",
+    "title": "AutoTailor: Automatic, User-Aligned Capability Selection and Adaptation for Web Agents",
+    "authors": [
+      "Xinyun Cao",
+      "Adriana Szekeres",
+      "Fazle Elahi Faisal"
+    ],
+    "submission_date": "2026-09-11T21:24:40Z",
+    "latest_updated": "2026-09-11T21:24:40Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13548v1"
+    ],
+    "abstract": "Web agents can utilize reusable tools to reduce the cost and latency of low-level browser interaction, but automatically discovered tool collections can be large, redundant, and poorly aligned with user demand. We present AutoTailor, a meta-agentic framework for constructing and maintaining a compact set of trajectory-derived Model Context Protocol (MCP) APIs. Offline, AutoTailor converts web trajectories into parameterized browser-automation programs, applies a Quality Filter to remove APIs with unsuitable granularity and redundant functionality, and applies a Usage Likelihood Filter to prioritize broadly useful capabilities while preserving semantic coverage. Online, Dynamic Reselection monitors task outcomes and API usage, identifies recurring coverage gaps, adds relevant candidates, and prunes persistently unused capabilities. We evaluate AutoTailor on 106 WebArena Postmill tasks. Offline filtering reduces the initial 1,283 unrefined APIs to 87, and Dynamic Reselection produces a 33-API set. With reasoning and acting (ReAct) fallback, this set achieves 90.6% correctness, compared with 87.5% for ReAct alone, while reducing average total request-token cost by 57.8% and latency by 29.4%. Without ReAct, it achieves 60.1% correctness, marginally matching the performance of unrefined set, while reducing request-token usage by 94.9%. Together, these results show that static filtering produces a compact inventory of APIs expected to support core, high-likelihood tasks, while dynamic reselection further tailors that inventory to observed user needs. This combination improves accuracy and latency while sharply reducing token usage and end-to-end cost, demonstrating the value of user-aligned capability management for efficient web agents.",
+    "status": "found"
+  },
+  "2609.13549": {
+    "arxiv_id": "2609.13549",
+    "title": "Practical Considerations for Processing Massive Classical Data via Quantum Oracle Sketching",
+    "authors": [
+      "Stefano Markidis"
+    ],
+    "submission_date": "2026-09-11T21:30:25Z",
+    "latest_updated": "2026-09-11T21:30:25Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13549v1"
+    ],
+    "abstract": "Classical-to-quantum I/O is a critical bottleneck for data-intensive quantum workloads. Quantum Oracle Sketching (QOS) has been proposed to address this problem. We identify its practical requirements, including the representation of data as a probability distribution over oracle addresses, the relation between sample count, approximation error, and update cost, and the coherence and runtime support required for online execution. To study QOS on current quantum computing devices, we develop an offline realization that compiles sample blocks into empirical phase oracles and evaluate it using DNA fingerprinting. The application converges with relatively few samples, while exact phase fusion combines repeated updates to the same address. However, the compiled circuits remain too deep for current quantum computing devices. Practical QOS therefore requires lower depth oracle synthesis and interactive quantum runtimes.",
+    "status": "found"
+  },
+  "2609.13550": {
+    "arxiv_id": "2609.13550",
+    "title": "An entropic characterization of Haag duality",
+    "authors": [
+      "Ruizhi Liu",
+      "Lauritz van Luijk"
+    ],
+    "submission_date": "2026-09-11T21:30:26Z",
+    "latest_updated": "2026-10-01T20:04:00Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2609.13550v1",
+      "2609.13550v2"
+    ],
+    "abstract": "Motivated by Haag duality in quantum spin systems, we show that Haag duality for a pair of commuting factors generated by increasing sequences of finite-dimensional matrix algebras is equivalent to the asymptotic vanishing of a suitable conditional mutual information. For spin systems, let an annulus separate a finite region from the exterior. Haag duality then holds for a region $A$ if and only if the mutual information of the inner region and the exterior, conditioned on the part of $A$ inside the annulus, vanishes as the outer radius becomes large. As a corollary, assuming a strict area law with subleading corrections, Haag duality holds for single cones, and it holds for unions of two or more disjoint cones precisely when the topological entanglement entropy vanishes. For translation-invariant pure states on spin chains, half-chain Haag duality is equivalent to vanishing entropy density.",
+    "status": "found"
+  },
+  "2609.13551": {
+    "arxiv_id": "2609.13551",
+    "title": "Towards Practical Precision Agriculture: Real-Time Fruit Detection and Video Analytics on Embedded Edge Hardware",
+    "authors": [
+      "Ivica Dimitrovski",
+      "Vlatko Spasev",
+      "Ivan Kitanovski",
+      "Petre Lameski",
+      "Dane Boshev"
+    ],
+    "submission_date": "2026-09-11T21:32:02Z",
+    "latest_updated": "2026-09-11T21:32:02Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13551v1"
+    ],
+    "abstract": "Static-image benchmarks do not capture the computational and temporal requirements of practical orchard video analytics. This study presents an end-to-end framework for real-time fruit detection, tracking, and counting on the NVIDIA Jetson Orin Nano Super. A lightweight YOLO26s detector is trained independently on four public datasets representing apples, mangoes, blueberries, and strawberries under a common protocol. The models are deployed on embedded platform using PyTorch and TensorRT at FP32, FP16, and INT8 precision. APPLE MOTS is then used for temporal video analytics because it provides orchard sequences with persistent fruit identities, enabling evaluation of multi-object tracking and unique-fruit counting. The selected FP16 TensorRT detector is integrated into an NVIDIA DeepStream pipeline combining hardware-accelerated decoding, ByteTrack tracking, and motion-aware line-crossing analytics. Across the four detection tasks, mean test mAP@50:95 ranges from 0.4957 to 0.8656. On the Jetson, TensorRT FP16 achieves 66.76-74.56 images/s at 13.41-14.98 ms prediction latency, while reducing mAP@50:95 by only 0.0020-0.0054 and gross energy consumption by approximately 64-66% relative to PyTorch FP32. The complete detector-tracker-analytics pipeline reaches 44.96-54.11 FPS and sustains the configured 30-FPS input rate without output-frame loss. On held-out orchard video sequences, HOTA ranges from 0.345 to 0.538, event-level counting F1 from 0.611 to 0.803, and relative count error from 6.2% to 51.6%. Performance varies across acquisition geometries: near-lateral row viewing yields the most stable tracking and counting, whereas forward traversal remains association- and recall-limited despite spatially adaptive counting geometry. These results show that practical edge-based fruit monitoring requires efficient detection and acquisition geometries that support reliable temporal association.",
+    "status": "found"
+  },
+  "2609.13552": {
+    "arxiv_id": "2609.13552",
+    "title": "Toward a Decision-Assurance Layer for AI-Assisted Flight Planning in Air Traffic Management",
+    "authors": [
+      "Alexandre Barreto",
+      "Shou Matsumoto",
+      "Jorge Valverde-Rebaza",
+      "Cleiton Ataide",
+      "Paulo Costa"
+    ],
+    "submission_date": "2026-09-11T21:32:05Z",
+    "latest_updated": "2026-09-11T21:32:05Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13552v1"
+    ],
+    "abstract": "Generative AI is increasingly being used informally in Air Traffic Management (ATM) for tasks such as flight plan generation, trajectory interpretation, and constraint checking. Although these tools can reduce workload and accelerate planning, their non-deterministic outputs create safety and operational risks in human-in-the-loop settings. This paper proposes the AI Trust and Assurance Layer (ATAL), a model-agnostic decision assurance architecture that evaluates whether AI-generated flight-planning outputs are sufficiently reliable for operational use. ATAL combines semantic stability under prompt variation, operational consistency of structured outputs, and normative constraint validation against domain rules, and maps these signals to a Decision Readiness Level (DRL) for human operators. An ATM-inspired experimental study shows how unsafe, inconsistent, or misleading outputs can be identified before influencing flight-plan validation or execution. Although demonstrated in aviation, the framework is also transferable to other safety-critical decision-support domains that require human oversight under regulatory constraints.",
+    "status": "found"
+  },
+  "2609.13553": {
+    "arxiv_id": "2609.13553",
+    "title": "A Conditional-Distribution Framework for Validating Synthetic Multivariate Data",
+    "authors": [
+      "Hari Dahal",
+      "Ishanu Chattopadhyay"
+    ],
+    "submission_date": "2026-09-11T21:32:52Z",
+    "latest_updated": "2026-09-11T21:32:52Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13553v1"
+    ],
+    "abstract": "Statistical validation of synthetic multivariate data requires assessing whether a generator preserves the joint dependence structure of the target population without merely reproducing observed records. We develop a model-agnostic framework based on full conditional distributions. For each coordinate, we normalize the conditional probability assigned to the observed value by the largest conditional probability available in the same record context; averaging this quantity yields a one-sided MAP-alignment statistic that can be estimated using a conditional model fitted on held-out real data. The mathematical contribution is twofold: under strict positivity and compatibility, the complete normalized conditional profile identifies the joint distribution, and its integrated L1 difference defines a metric on finite-state generative processes; we also establish consistency and finite-sample concentration for the corresponding empirical estimators. Because high conditional alignment alone can arise from copying or concentration on conditional modes, we pair it with nearest-real similarity as a separate record-level novelty diagnostic. We evaluate the framework on NSHAP health and aging data, influenza B genomic surveillance, and 34 General Social Survey waves. In GSS, the Large Science Model matched the original-data control in mean conditional alignment while retaining substantial novelty, indicating preservation of conditional structure without row reuse. In influenza B, a Chow-Liu generator matched the control alignment but had almost no novelty, revealing near-reproduction of observed records. The framework therefore distinguishes three statistically different failure modes: loss of dependence, record reuse, and mode concentration, and provides a principled basis for validating synthetic health, surveillance, and population data.",
+    "status": "found"
+  }
+}

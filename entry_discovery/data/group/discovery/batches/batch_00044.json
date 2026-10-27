@@ -1,0 +1,409 @@
+{
+  "2511.12589": {
+    "arxiv_id": "2511.12589",
+    "title": "Tomography of high-twist proton structure through $ep$ elastic scattering",
+    "authors": [
+      "Ji-Xin Yu",
+      "Shan Cheng",
+      "Jia-Jie Han",
+      "Hsiang-nan Li",
+      "Fu-Sheng Yu"
+    ],
+    "submission_date": "2025-11-16T13:22:23Z",
+    "latest_updated": "2025-12-04T06:46:29Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.12589v1",
+      "2511.12589v2"
+    ],
+    "abstract": "We present the first high-twist study of the proton form factors $F_{1,2}(Q^2)$ in $ep$ elastic scattering based on the perturbative QCD $k_T$ factorization, $Q^2$ being momentum transfer squared. It is motivated by unexpectedly large higher-power contributions from subleading-twist light-cone distribution amplitudes (LCDAs), which are attributed to the enhancement in endpoint regions of parton momentum fractions. We highlight that the endpoint enhancement, tamed by the $k_T$ resummation effect, is crucial for accommodating the approximate scaling behavior of the $Q^4F_1(Q^2)$ data at intermediate $Q^2\\sim {\\cal O}(10)$ GeV$^2$. The proton LCDAs up to twist 6 are then extracted, and verified by the charge-parity asymmetries observed in hadronic heavy baryon decays. Our work provides new insights into the proton three-dimensional structure and manifests the precision requirement for reliable perturbative analyses of baryonic exclusive processes.",
+    "status": "found"
+  },
+  "2511.12590": {
+    "arxiv_id": "2511.12590",
+    "title": "Fine-Grained Representation for Lane Topology Reasoning",
+    "authors": [
+      "Guoqing Xu",
+      "Yiheng Li",
+      "Yang Yang"
+    ],
+    "submission_date": "2025-11-16T13:24:30Z",
+    "latest_updated": "2025-11-18T16:06:07Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.12590v1",
+      "2511.12590v2"
+    ],
+    "abstract": "Precise modeling of lane topology is essential for autonomous driving, as it directly impacts navigation and control decisions. Existing methods typically represent each lane with a single query and infer topological connectivity based on the similarity between lane queries. However, this kind of design struggles to accurately model complex lane structures, leading to unreliable topology prediction. In this view, we propose a Fine-Grained lane topology reasoning framework (TopoFG). It divides the procedure from bird's-eye-view (BEV) features to topology prediction via fine-grained queries into three phases, i.e., Hierarchical Prior Extractor (HPE), Region-Focused Decoder (RFD), and Robust Boundary-Point Topology Reasoning (RBTR). Specifically, HPE extracts global spatial priors from the BEV mask and local sequential priors from in-lane keypoint sequences to guide subsequent fine-grained query modeling. RFD constructs fine-grained queries by integrating the spatial and sequential priors. It then samples reference points in RoI regions of the mask and applies cross-attention with BEV features to refine the query representations of each lane. RBTR models lane connectivity based on boundary-point query features and further employs a topological denoising strategy to reduce matching ambiguity. By integrating spatial and sequential priors into fine-grained queries and applying a denoising strategy to boundary-point topology reasoning, our method precisely models complex lane structures and delivers trustworthy topology predictions. Extensive experiments on the OpenLane-V2 benchmark demonstrate that TopoFG achieves new state-of-the-art performance, with an OLS of 48.0 on subsetA and 45.4 on subsetB.",
+    "status": "found"
+  },
+  "2511.12591": {
+    "arxiv_id": "2511.12591",
+    "title": "Charge-state stability of single NV centers in HPHT-type IIa diamond",
+    "authors": [
+      "Darya Meniailava",
+      "Michael Petrov",
+      "Josef Soucek",
+      "Milos Nesladek"
+    ],
+    "submission_date": "2025-11-16T13:25:15Z",
+    "latest_updated": "2025-11-20T01:37:19Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.12591v1",
+      "2511.12591v2"
+    ],
+    "abstract": "This is a preliminary version. Improvements and additional analysis will be included in a revised manuscript. We investigate the charge-state stability of individual nitrogen-vacancy (NV) centers in weakly doped HPHT IIa diamond containing sub-ppm concentrations of boron and nitrogen. Using Ti/Al coplanar electrodes on an oxygen-terminated surface, we study how applied electric fields and optical excitation jointly govern NV charge conversion. By combining voltage-dependent photoluminescence, real-time charge-state monitoring, laser-power saturation with spectral decomposition, and time-resolved measurements, we reveal that electric fields several micrometers from the contacts significantly increase the NV- population and enhance spin readout. At low excitation powers, the NV- population evolves on minute timescales following compressed-exponential kinetics, consistent with slow space-charge rearrangement in ultra-insulating diamond. Under pulsed excitation, we observe hundreds-of-nanoseconds NV-/NV0 conversion driven by hole capture, which is strongly suppressed by applied bias. Our results demonstrate that residual boron acceptors play a key role in determining charge-state stability and show how electrical bias can reliably stabilize NV- in weakly doped bulk diamond.",
+    "status": "found"
+  },
+  "2511.12592": {
+    "arxiv_id": "2511.12592",
+    "title": "Knowledge is Overrated: A zero-knowledge machine learning and cryptographic hashing-based framework for verifiable, low latency inference at the LHC",
+    "authors": [
+      "Pratik Jawahar",
+      "Caterina Doglioni",
+      "Maurizio Pierini"
+    ],
+    "submission_date": "2025-11-16T13:31:35Z",
+    "latest_updated": "2025-11-16T13:31:35Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.12592v1"
+    ],
+    "abstract": "Low latency event-selection (trigger) algorithms are essential components of Large Hadron Collider (LHC) operation. Modern machine learning (ML) models have shown great offline performance as classifiers and could improve trigger performance, thereby improving downstream physics analyses. However, inference on such large models does not satisfy the $40\\text{MHz}$ online latency constraint at the LHC. In this work, we propose \\texttt{PHAZE}, a novel framework built on cryptographic techniques like hashing and zero-knowledge machine learning (zkML) to achieve low latency inference, via a certifiable, early-exit mechanism from an arbitrarily large baseline model. We lay the foundations for such a framework to achieve nanosecond-order latency and discuss its inherent advantages, such as built-in anomaly detection, within the scope of LHC triggers, as well as its potential to enable a dynamic low-level trigger in the future.",
+    "status": "found"
+  },
+  "2511.12593": {
+    "arxiv_id": "2511.12593",
+    "title": "Ground states of the defocusing NLSE with a point interaction",
+    "authors": [
+      "Gustavo de Paula Ramos"
+    ],
+    "submission_date": "2025-11-16T13:34:53Z",
+    "latest_updated": "2025-12-06T15:16:04Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.12593v1",
+      "2511.12593v2"
+    ],
+    "abstract": "Suppose that either (i) $N = 2$, $α\\in \\mathbb{R}$ and $p > 2$ or (ii) $N = 3$, $α< 0$ and $2 < p < 3$. We prove that there exists an explicitly computable $μ_0 = μ_0 (N, α, p) > 0$ such that if $0 < μ< μ_0$, then the following normalized semilinear elliptic problem with a point interaction admits ground states: \\[ \\begin{cases} - Δ_αu + ωu + u |u|^{p - 2} = 0 &\\text{in} ~ \\mathbb{R}^N; \\\\ \\|u\\|_{\\mathscr{L}^2}^2 = μ, \\end{cases} \\] where $- Δ_α$ denotes the Laplacian of point interaction (centered at the origin) with inverse scattering length $- 2 (N - 1) πα$ and we want to solve for $ω\\in \\mathbb{R}$, $u \\colon \\mathbb{R}^N \\to \\mathbb{R}$. We remark that this kind of solutions does not exist in the framework of the defocusing NLSE without a point interaction.",
+    "status": "found"
+  },
+  "2511.12594": {
+    "arxiv_id": "2511.12594",
+    "title": "Seg-VAR: Image Segmentation with Visual Autoregressive Modeling",
+    "authors": [
+      "Rongkun Zheng",
+      "Lu Qi",
+      "Xi Chen",
+      "Yi Wang",
+      "Kun Wang",
+      "Hengshuang Zhao"
+    ],
+    "submission_date": "2025-11-16T13:36:19Z",
+    "latest_updated": "2025-11-16T13:36:19Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.12594v1"
+    ],
+    "abstract": "While visual autoregressive modeling (VAR) strategies have shed light on image generation with the autoregressive models, their potential for segmentation, a task that requires precise low-level spatial perception, remains unexplored. Inspired by the multi-scale modeling of classic Mask2Former-based models, we propose Seg-VAR, a novel framework that rethinks segmentation as a conditional autoregressive mask generation problem. This is achieved by replacing the discriminative learning with the latent learning process. Specifically, our method incorporates three core components: (1) an image encoder generating latent priors from input images, (2) a spatial-aware seglat (a latent expression of segmentation mask) encoder that maps segmentation masks into discrete latent tokens using a location-sensitive color mapping to distinguish instances, and (3) a decoder reconstructing masks from these latents. A multi-stage training strategy is introduced: first learning seglat representations via image-seglat joint training, then refining latent transformations, and finally aligning image-encoder-derived latents with seglat distributions. Experiments show Seg-VAR outperforms previous discriminative and generative methods on various segmentation tasks and validation benchmarks. By framing segmentation as a sequential hierarchical prediction task, Seg-VAR opens new avenues for integrating autoregressive reasoning into spatial-aware vision systems. Code will be available at https://github.com/rkzheng99/Seg-VAR.",
+    "status": "found"
+  },
+  "2511.12595": {
+    "arxiv_id": "2511.12595",
+    "title": "Distribution of lengths of closed saddle connections on moduli space of large genus translation surface",
+    "authors": [
+      "Shenxing Zhang"
+    ],
+    "submission_date": "2025-11-16T13:37:41Z",
+    "latest_updated": "2026-08-27T15:51:09Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 4,
+    "versions": [
+      "2511.12595v1",
+      "2511.12595v2",
+      "2511.12595v3",
+      "2511.12595v4"
+    ],
+    "abstract": "Let $S_g$ be a closed surface of genus $g$ and $\\mathcal{H}_g$ be the moduli space of Abelian differentials on $S_g$. A stratum of $\\mathcal{H}_g$, endowed with the Masur-Veech measure, becomes a probability space. Then the number of closed saddle connections with lengths in $[\\frac{a}{\\sqrt{g}},\\frac{b}{\\sqrt{g}}]$ on a random translation surface in the stratum is a random variable. We prove that when $g\\to \\infty$, the distribution of the random variable converges to a Poisson distributed random variable. This result answers a question of Masur, Rafi and Randecker.",
+    "status": "found"
+  },
+  "2511.12596": {
+    "arxiv_id": "2511.12596",
+    "title": "Group-Aware Reinforcement Learning for Output Diversity in Large Language Models",
+    "authors": [
+      "Oron Anschel",
+      "Alon Shoshan",
+      "Adam Botach",
+      "Shunit Haviv Hakimi",
+      "Asaf Gendler",
+      "Emanuel Ben Baruch",
+      "Nadav Bhonker",
+      "Igor Kviatkovsky",
+      "Manoj Aggarwal",
+      "Gerard Medioni"
+    ],
+    "submission_date": "2025-11-16T13:42:55Z",
+    "latest_updated": "2025-11-16T13:42:55Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.12596v1"
+    ],
+    "abstract": "Large Language Models (LLMs) often suffer from mode collapse, repeatedly generating the same few completions even when many valid answers exist, limiting their diversity across a wide range of tasks. We introduce Group-Aware Policy Optimization (GAPO), a simple extension of the recent and popular Group Relative Policy Optimization (GRPO) that computes rewards over the group as a whole. GAPO enables learning from the group-level properties such as diversity and coverage. We demonstrate GAPO using a frequency-aware reward function that encourages uniform sampling over valid LLM completions, and show that GAPO-trained models produce valid and more diverse model responses. Beyond this setup, GAPO generalizes to open-ended prompts and improves response diversity without compromising accuracy on standard LLM benchmarks (GSM8K, MATH, HumanEval, MMLU-Pro). Our code will be made publicly available.",
+    "status": "found"
+  },
+  "2511.12597": {
+    "arxiv_id": "2511.12597",
+    "title": "MindRec: A Diffusion-driven Coarse-to-Fine Paradigm for Generative Recommendation",
+    "authors": [
+      "Mengyao Gao",
+      "Chongming Gao",
+      "Haoyan Liu",
+      "Qingpeng Cai",
+      "Peng Jiang",
+      "Jiajia Chen",
+      "Shuai Yuan",
+      "Xiangnan He"
+    ],
+    "submission_date": "2025-11-16T13:42:59Z",
+    "latest_updated": "2025-11-18T05:03:05Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.12597v1",
+      "2511.12597v2"
+    ],
+    "abstract": "Recent advancements in large language model-based recommendation systems often represent items as text or semantic IDs and generate recommendations in an auto-regressive manner. However, due to the left-to-right greedy decoding strategy and the unidirectional logical flow, such methods often fail to produce globally optimal recommendations. In contrast, human reasoning does not follow a rigid left-to-right sequence. Instead, it often begins with keywords or intuitive insights, which are then refined and expanded. Inspired by this fact, we propose MindRec, a diffusion-driven coarse-to-fine generative paradigm that emulates human thought processes. Built upon a diffusion language model, MindRec departs from auto-regressive generation by leveraging a masked diffusion process to reconstruct items in a flexible, non-sequential manner. Particularly, our method first generates key tokens that reflect user preferences, and then expands them into the complete item, enabling adaptive and human-like generation. To further emulate the structured nature of human decision-making, we organize items into a hierarchical category tree. This structure guides the model to first produce the coarse-grained category and then progressively refine its selection through finer-grained subcategories before generating the specific item. To mitigate the local optimum problem inherent in greedy decoding, we design a novel beam search algorithm, Diffusion Beam Search, tailored for our mind-inspired generation paradigm. Experimental results demonstrate that MindRec yields a 9.5\\% average improvement in top-1 accuracy over state-of-the-art methods, highlighting its potential to enhance recommendation performance. The implementation is available via https://github.com/Mr-Peach0301/MindRec.",
+    "status": "found"
+  },
+  "2511.12598": {
+    "arxiv_id": "2511.12598",
+    "title": "Supersqueezed sphere",
+    "authors": [
+      "Hongda Qiu"
+    ],
+    "submission_date": "2025-11-16T13:51:06Z",
+    "latest_updated": "2025-11-16T13:51:06Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.12598v1"
+    ],
+    "abstract": "This work pose an example of a smooth closed surface in $\\mathbb{R}^3$ which has genus $0$, normal curvatures at most $1$ in absolute value and encloses a volume smaller than the volume of a unit ball. It gives a negative answer to a question asked by Dmitri Burago and Anton Petrunin.",
+    "status": "found"
+  },
+  "2511.12599": {
+    "arxiv_id": "2511.12599",
+    "title": "FINRS: A Risk-Sensitive Trading Framework for Real Financial Markets",
+    "authors": [
+      "Bijia Liu",
+      "Ronghao Dang"
+    ],
+    "submission_date": "2025-11-16T13:56:04Z",
+    "latest_updated": "2025-11-16T13:56:04Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.12599v1"
+    ],
+    "abstract": "Large language models (LLMs) have shown strong reasoning capabilities and are increasingly explored for financial trading. Existing LLM-based trading agents, however, largely focus on single-step prediction and lack integrated mechanisms for risk management, which reduces their effectiveness in volatile markets. We introduce FinRS, a risk-sensitive trading framework that combines hierarchical market analysis, dual-decision agents, and multi-timescale reward reflection to align trading actions with both return objectives and downside risk constraints. Experiments on multiple stocks and market conditions show that FinRS achieves superior profitability and stability compared to state-of-the-art methods.",
+    "status": "found"
+  },
+  "2511.12600": {
+    "arxiv_id": "2511.12600",
+    "title": "Multiscale Comparison of Nonparametric Trending Coefficients",
+    "authors": [
+      "Marina Khismatullina",
+      "Bernhard van der Sluis"
+    ],
+    "submission_date": "2025-11-16T13:56:25Z",
+    "latest_updated": "2025-11-16T13:56:25Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.12600v1"
+    ],
+    "abstract": "This paper proposes a novel framework to test for slope heterogeneity between time-varying coefficients in panel data models. Our test not only allows us to detect whether the coefficient functions are the same across all units or not, but also determines which of them are different and where these differences are located. We establish the asymptotic validity of our multiscale test. As an extension of the proposed procedure, we show how to use the results to uncover latent group structures in the model. We apply our methods to test for heterogeneity in the effect of U.S. monetary shocks on 49 foreign economies and itself. We find evidence that such heterogeneity indeed exists and we discuss the clustering results for two groups.",
+    "status": "found"
+  },
+  "2511.12601": {
+    "arxiv_id": "2511.12601",
+    "title": "Symmetry-Aware Graph Metanetwork Autoencoders: Model Merging through Parameter Canonicalization",
+    "authors": [
+      "Odysseas Boufalis",
+      "Jorge Carrasco-Pollo",
+      "Joshua Rosenthal",
+      "Eduardo Terres-Caballero",
+      "Alejandro García-Castellanos"
+    ],
+    "submission_date": "2025-11-16T13:57:50Z",
+    "latest_updated": "2025-11-16T13:57:50Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.12601v1"
+    ],
+    "abstract": "Neural network parameterizations exhibit inherent symmetries that yield multiple equivalent minima within the loss landscape. Scale Graph Metanetworks (ScaleGMNs) explicitly leverage these symmetries by proposing an architecture equivariant to both permutation and parameter scaling transformations. Previous work by Ainsworth et al. (2023) addressed permutation symmetries through a computationally intensive combinatorial assignment problem, demonstrating that leveraging permutation symmetries alone can map networks into a shared loss basin. In this work, we extend their approach by also incorporating scaling symmetries, presenting an autoencoder framework utilizing ScaleGMNs as invariant encoders. Experimental results demonstrate that our method aligns Implicit Neural Representations (INRs) and Convolutional Neural Networks (CNNs) under both permutation and scaling symmetries without explicitly solving the assignment problem. This approach ensures that similar networks naturally converge within the same basin, facilitating model merging, i.e., smooth linear interpolation while avoiding regions of high loss. The code is publicly available on our GitHub repository.",
+    "status": "found"
+  },
+  "2511.12602": {
+    "arxiv_id": "2511.12602",
+    "title": "LoRA-Enhanced Vision Transformer for Single Image based Morphing Attack Detection via Knowledge Distillation from EfficientNet",
+    "authors": [
+      "Ria Shekhawat",
+      "Sushrut Patwardhan",
+      "Raghavendra Ramachandra",
+      "Praveen Kumar Chandaliya",
+      "Kishor P. Upla"
+    ],
+    "submission_date": "2025-11-16T13:58:11Z",
+    "latest_updated": "2025-11-16T13:58:11Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.12602v1"
+    ],
+    "abstract": "Face Recognition Systems (FRS) are critical for security but remain vulnerable to morphing attacks, where synthetic images blend biometric features from multiple individuals. We propose a novel Single-Image Morphing Attack Detection (S-MAD) approach using a teacher-student framework, where a CNN-based teacher model refines a ViT-based student model. To improve efficiency, we integrate Low-Rank Adaptation (LoRA) for fine-tuning, reducing computational costs while maintaining high detection accuracy. Extensive experiments are conducted on a morphing dataset built from three publicly available face datasets, incorporating ten different morphing generation algorithms to assess robustness. The proposed method is benchmarked against six state-of-the-art S-MAD techniques, demonstrating superior detection performance and computational efficiency.",
+    "status": "found"
+  },
+  "2511.12603": {
+    "arxiv_id": "2511.12603",
+    "title": "PID-controlled Langevin Dynamics for Faster Sampling of Generative Models",
+    "authors": [
+      "Hongyi Chen",
+      "Jianhai Shu",
+      "Jingtao Ding",
+      "Yong Li",
+      "Xiao-Ping Zhang"
+    ],
+    "submission_date": "2025-11-16T13:59:43Z",
+    "latest_updated": "2025-11-16T13:59:43Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.12603v1"
+    ],
+    "abstract": "Langevin dynamics sampling suffers from extremely low generation speed, fundamentally limited by numerous fine-grained iterations to converge to the target distribution. We introduce PID-controlled Langevin Dynamics (PIDLD), a novel sampling acceleration algorithm that reinterprets the sampling process using control-theoretic principles. By treating energy gradients as feedback signals, PIDLD combines historical gradients (the integral term) and gradient trends (the derivative term) to efficiently traverse energy landscapes and adaptively stabilize, thereby significantly reducing the number of iterations required to produce high-quality samples. Our approach requires no additional training, datasets, or prior information, making it immediately integrable with any Langevin-based method. Extensive experiments across image generation and reasoning tasks demonstrate that PIDLD achieves higher quality with fewer steps, making Langevin-based generative models more practical for efficiency-critical applications. The implementation can be found at \\href{https://github.com/tsinghua-fib-lab/PIDLD}{https://github.com/tsinghua-fib-lab/PIDLD}.",
+    "status": "found"
+  },
+  "2511.12604": {
+    "arxiv_id": "2511.12604",
+    "title": "Electron Tunneling Enhances Thermal Conductance through Metal-Insulator-Semiconductor Junctions",
+    "authors": [
+      "Yizhe Liu",
+      "Bo Sun"
+    ],
+    "submission_date": "2025-11-16T14:00:34Z",
+    "latest_updated": "2025-11-16T14:00:34Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.12604v1"
+    ],
+    "abstract": "The presence of interfaces in semiconductor devices substantially hinders thermal transport, contributing disproportionately to the overall thermal resistance. However, approaches to enhance interfacial thermal transport remain scarce without changing the interface structure, as the intrinsic electron and phonon properties of constituent materials set an upper limit. Here, we find a new thermal transport pathway, electronic heat tunneling, to enhance interfacial thermal conductance through metal-insulator-semiconductor junctions. By applying photoexcitation or bias voltage, we observe remarkable thermal conductance increases in operando, opening a new channel for efficient interfacial heat dissipation. The electron quantum tunneling pathway is parallel to conventional phonon-mediated interfacial thermal transport, and violates the Wiedemann-Franz law since this pathway deviates from the paradigm of diffusive transport. Moreover, we develop a tunneling mismatch model to describe the enhanced thermal conductance, originating from tunneling heat flux. Our Letter demonstrates a previously unexplored heat transport mechanism to enhance thermal conductance, bypassing the need for interface engineering. These findings emphasize the essential need to understand semiconductor thermal properties under realistic operating conditions.",
+    "status": "found"
+  },
+  "2511.12605": {
+    "arxiv_id": "2511.12605",
+    "title": "A carrier-wave factored one-way Navier--Stokes method for boundary-layer instability modelling",
+    "authors": [
+      "E. J. Badcock",
+      "S. Mughal"
+    ],
+    "submission_date": "2025-11-16T14:04:07Z",
+    "latest_updated": "2026-07-06T20:16:35Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.12605v1",
+      "2511.12605v2"
+    ],
+    "abstract": "We present M-OWNS, a spatial marching method that combines the carrier-wave factoring of the parabolised stability equations (PSE) with a recursive one-way Navier--Stokes (OWNS-R) projection framework. A distinct numerical resolution and efficiency advantage is offered by the approach, in modelling disturbance and instability state evolution. A spectral resolution comparison analysis shows that to leading order, for any excited eigenfunction whose eigenvalue lies closer to the carrier wavenumber than to the origin, the wave-factored system resolves the mode at a coarser streamwise numerical step size relative to the unfactored system. A non-iterating variant, with the carrier wavenumber determined from the base flow, temporal frequency and spanwise wavenumber alone, achieves equivalent resolution accuracy at identical per-step cost to unfactored OWNS. For the fixed-carrier variant, M-OWNS reduces the total solve count by factors of two to eight relative to unfactored OWNS across the test cases considered, with larger reductions possible when the iterated closure condition of PSE is suitable. The method is validated across incompressible and subsonic flat-plate boundary-layers, three-dimensional crossflow disturbances, and a Mach~4.5 hypersonic boundary-layer with four forcing configurations: eigenfunction inlet forcing, wall suction/blowing, multi-mode freestream forcing and randomised inlet forcing. The wall suction/blowing case is validated against a fully elliptic linear harmonic Navier--Stokes solver. For deterministic forcing scenarios, M-OWNS captures disturbance amplitudes, acoustic radiation fields, and modal synchronisation sequences at coarser streamwise resolution than unfactored OWNS. Under broadband randomised forcing, M-OWNS resolves mixed-mode disturbance development at half the numerical cost relative to standard OWNS.",
+    "status": "found"
+  },
+  "2511.12606": {
+    "arxiv_id": "2511.12606",
+    "title": "Pixels or Positions? Benchmarking Modalities in Group Activity Recognition",
+    "authors": [
+      "Drishya Karki",
+      "Merey Ramazanova",
+      "Anthony Cioppa",
+      "Silvio Giancola",
+      "Bernard Ghanem"
+    ],
+    "submission_date": "2025-11-16T14:04:12Z",
+    "latest_updated": "2026-04-21T06:06:34Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2511.12606v1",
+      "2511.12606v2",
+      "2511.12606v3"
+    ],
+    "abstract": "Group Activity Recognition (GAR) is well studied on the video modality for surveillance and indoor team sports (e.g., volleyball, basketball). Yet, other modalities such as agent positions and trajectories over time, i.e. tracking, remain comparatively under-explored despite being compact, agent-centric signals that explicitly encode spatial interactions. Understanding whether pixel (video) or position (tracking) modalities leads to better group activity recognition is therefore important to drive further research on the topic. However, no standardized benchmark currently exists that aligns broadcast video and tracking data for the same group activities, leading to a lack of apples-to-apples comparison between these modalities for GAR. In this work, we introduce SoccerNet-GAR, a multimodal dataset built from the $64$ matches of the football World Cup 2022. Specifically, the broadcast videos and player tracking modalities for $87{,}939$ group activities are synchronized and annotated with $10$ categories. Furthermore, we define a unified evaluation protocol to benchmark two strong unimodal approaches: (i) competitive video-based classifiers and (ii) tracking-based classifiers leveraging graph neural networks. In particular, our novel role-aware graph architecture for tracking-based GAR directly encodes tactical structure through positional edges connecting players by their on-pitch roles. Our tracking model achieves $77.8\\%$ balanced accuracy compared to $60.9\\%$ for the best video baseline, while training with $7 \\times$ less GPU hours and $479 \\times$ fewer parameters ($180K$ vs. $86.3M$). This study provides new insights into the relative strengths of pixels and positions for group activity recognition in sports.",
+    "status": "found"
+  },
+  "2511.12607": {
+    "arxiv_id": "2511.12607",
+    "title": "Open-World Test-Time Adaptation with Hierarchical Feature Aggregation and Attention Affine",
+    "authors": [
+      "Ziqiong Liu",
+      "Yushun Tang",
+      "Junyang Ji",
+      "Zhihai He"
+    ],
+    "submission_date": "2025-11-16T14:05:23Z",
+    "latest_updated": "2025-11-16T14:05:23Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.12607v1"
+    ],
+    "abstract": "Test-time adaptation (TTA) refers to adjusting the model during the testing phase to cope with changes in sample distribution and enhance the model's adaptability to new environments. In real-world scenarios, models often encounter samples from unseen (out-of-distribution, OOD) categories. Misclassifying these as known (in-distribution, ID) classes not only degrades predictive accuracy but can also impair the adaptation process, leading to further errors on subsequent ID samples. Many existing TTA methods suffer substantial performance drops under such conditions. To address this challenge, we propose a Hierarchical Ladder Network that extracts OOD features from class tokens aggregated across all Transformer layers. OOD detection performance is enhanced by combining the original model prediction with the output of the Hierarchical Ladder Network (HLN) via weighted probability fusion. To improve robustness under domain shift, we further introduce an Attention Affine Network (AAN) that adaptively refines the self-attention mechanism conditioned on the token information to better adapt to domain drift, thereby improving the classification performance of the model on datasets with domain shift. Additionally, a weighted entropy mechanism is employed to dynamically suppress the influence of low-confidence samples during adaptation. Experimental results on benchmark datasets show that our method significantly improves the performance on the most widely used classification datasets.",
+    "status": "found"
+  },
+  "2511.12608": {
+    "arxiv_id": "2511.12608",
+    "title": "Closed neighborhood complexes of graphs",
+    "authors": [
+      "Takahiro Matsushita"
+    ],
+    "submission_date": "2025-11-16T14:08:31Z",
+    "latest_updated": "2025-12-07T03:29:54Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.12608v1",
+      "2511.12608v2"
+    ],
+    "abstract": "The closed neighborhood complex $\\mathcal{N}[G]$ of a simple graph $G$ is the simplicial complex whose simplices are finite sets of vertices contained in a closed neighborhood of a vertex in $G$. We reveal that the closed neighborhood complex has close connections with other concepts, including the independence complex of the canonical double covering and the independence complex of the neighborhood hypergraph. Furthermore, we show that the fundamental group of the closed neighborhood complex is isomorphic to Grigor'yan--Lin--Muranov--Yau's fundamental group of a graph introduced in the study of path homology.",
+    "status": "found"
+  }
+}

@@ -1,0 +1,416 @@
+{
+  "2601.21896": {
+    "arxiv_id": "2601.21896",
+    "title": "Past- and Future-Informed KV Cache Policy with Salience Estimation in Autoregressive Video Diffusion",
+    "authors": [
+      "Hanmo Chen",
+      "Chenghao Xu",
+      "Xu Yang",
+      "Xuan Chen",
+      "Cheng Deng"
+    ],
+    "submission_date": "2026-01-29T15:55:29Z",
+    "latest_updated": "2026-02-04T13:26:51Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2601.21896v1",
+      "2601.21896v2",
+      "2601.21896v3"
+    ],
+    "abstract": "Video generation is pivotal to digital media creation, and recent advances in autoregressive video generation have markedly enhanced the efficiency of real-time video synthesis. However, existing approaches generally rely on heuristic KV Cache policies, which ignore differences in token importance in long-term video generation. This leads to the loss of critical spatiotemporal information and the accumulation of redundant, invalid cache, thereby degrading video generation quality and efficiency. To address this limitation, we first observe that token contributions to video generation are highly time-heterogeneous and accordingly propose a novel Past- and Future-Informed KV Cache Policy (PaFu-KV). Specifically, PaFu-KV introduces a lightweight Salience Estimation Head distilled from a bidirectional teacher to estimate salience scores, allowing the KV cache to retain informative tokens while discarding less relevant ones. This policy yields a better quality-efficiency trade-off by shrinking KV cache capacity and reducing memory footprint at inference time. Extensive experiments on benchmarks demonstrate that our method preserves high-fidelity video generation quality while enables accelerated inference, thereby enabling more efficient long-horizon video generation. Our code will be released upon paper acceptance.",
+    "status": "found"
+  },
+  "2601.21897": {
+    "arxiv_id": "2601.21897",
+    "title": "A Low-Complexity Plug-and-Play Deep Learning Model for Generalizable Massive MIMO Precoding",
+    "authors": [
+      "Ali Hasanzadeh Karkan",
+      "Ahmed Ibrahim",
+      "Jean-François Frigon",
+      "François Leduc-Primeau"
+    ],
+    "submission_date": "2026-01-29T15:56:07Z",
+    "latest_updated": "2026-01-29T15:56:07Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.21897v1"
+    ],
+    "abstract": "Massive multiple-input multiple-output (mMIMO) downlink precoding offers high spectral efficiency but remains challenging to deploy in practice because near-optimal algorithms such as the weighted minimum mean squared error (WMMSE) are computationally expensive, and sensitive to SNR and channel-estimation quality, while existing deep learning (DL)-based solutions often lack robustness and require retraining for each deployment site. This paper proposes a plug-and-play precoder (PaPP), a DL framework with a backbone that can be trained for either fully digital (FDP) or hybrid beamforming (HBF) precoding and reused across sites, transmit-power levels, and with varying amounts of channel estimation error, avoiding the need to train a new model from scratch at each deployment. PaPP combines a high-capacity teacher and a compact student with a self-supervised loss that balances teacher imitation and normalized sum-rate, trained using meta-learning domain-generalization and transmit-power-aware input normalization. Numerical results on ray-tracing data from three unseen sites show that the PaPP FDP and HBF models both outperform conventional and deep learning baselines, after fine-tuning with a small set of local unlabeled samples. Across both architectures, PaPP achieves more than 21$\\times$ reduction in modeled computation energy and maintains good performance under channel-estimation errors, making it a practical solution for energy-efficient mMIMO precoding.",
+    "status": "found"
+  },
+  "2601.21898": {
+    "arxiv_id": "2601.21898",
+    "title": "Making Models Unmergeable via Scaling-Sensitive Loss Landscape",
+    "authors": [
+      "Minwoo Jang",
+      "Hoyoung Kim",
+      "Jabin Koo",
+      "Jungseul Ok"
+    ],
+    "submission_date": "2026-01-29T15:56:55Z",
+    "latest_updated": "2026-06-09T19:30:30Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.21898v1",
+      "2601.21898v2"
+    ],
+    "abstract": "The rise of model hubs has made it easier to access reusable model components, making model merging a practical tool for combining capabilities. Yet, this modularity also creates a governance gap: downstream users can recompose released weights into unauthorized mixtures that bypass safety alignment or licensing terms. Because existing defenses are largely post-hoc and architecture-specific, they provide inconsistent protection across diverse architectures and release formats in practice. To close this gap, we propose Trap$^2$, an architecture-agnostic protection framework that encodes protection into updates during fine-tuning, regardless of whether they are released as adapters or full models. Instead of relying on architecture-dependent approaches, Trap$^2$ uses weight re-scaling as a simple proxy for the merging process. It keeps released weights effective in standalone use, but degrades them under re-scaling that often arises in merging, undermining unauthorized recomposition.",
+    "status": "found"
+  },
+  "2601.21899": {
+    "arxiv_id": "2601.21899",
+    "title": "Breaking the Regional Barrier: Inductive Semantic Topology Learning for Worldwide Air Quality Forecasting",
+    "authors": [
+      "Zhiqing Cui",
+      "Siru Zhong",
+      "Ming Jin",
+      "Shirui Pan",
+      "Qingsong Wen",
+      "Yuxuan Liang"
+    ],
+    "submission_date": "2026-01-29T15:58:07Z",
+    "latest_updated": "2026-01-29T15:58:07Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.21899v1"
+    ],
+    "abstract": "Global air quality forecasting grapples with extreme spatial heterogeneity and the poor generalization of existing transductive models to unseen regions. To tackle this, we propose OmniAir, a semantic topology learning framework tailored for global station-level prediction. By encoding invariant physical environmental attributes into generalizable station identities and dynamically constructing adaptive sparse topologies, our approach effectively captures long-range non-Euclidean correlations and physical diffusion patterns across unevenly distributed global networks. We further curate WorldAir, a massive dataset covering over 7,800 stations worldwide. Extensive experiments show that OmniAir achieves state-of-the-art performance against 18 baselines, maintaining high efficiency and scalability with speeds nearly 10 times faster than existing models, while effectively bridging the monitoring gap in data-sparse regions.",
+    "status": "found"
+  },
+  "2601.21900": {
+    "arxiv_id": "2601.21900",
+    "title": "TraceRouter: Robust Safety for Large Foundation Models via Path-Level Intervention",
+    "authors": [
+      "Chuancheng Shi",
+      "Shangze Li",
+      "Wenjun Lu",
+      "Wenhua Wu",
+      "Cong Wang",
+      "Zifeng Cheng",
+      "Fei Shen",
+      "Tat-Seng Chua"
+    ],
+    "submission_date": "2026-01-29T15:58:12Z",
+    "latest_updated": "2026-01-31T01:26:24Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.21900v1",
+      "2601.21900v2"
+    ],
+    "abstract": "Despite their capabilities, large foundation models (LFMs) remain susceptible to adversarial manipulation. Current defenses predominantly rely on the \"locality hypothesis\", suppressing isolated neurons or features. However, harmful semantics act as distributed, cross-layer circuits, rendering such localized interventions brittle and detrimental to utility. To bridge this gap, we propose \\textbf{TraceRouter}, a path-level framework that traces and disconnects the causal propagation circuits of illicit semantics. TraceRouter operates in three stages: (1) it pinpoints a sensitive onset layer by analyzing attention divergence; (2) it leverages sparse autoencoders (SAEs) and differential activation analysis to disentangle and isolate malicious features; and (3) it maps these features to downstream causal pathways via feature influence scores (FIS) derived from zero-out interventions. By selectively suppressing these causal chains, TraceRouter physically severs the flow of harmful information while leaving orthogonal computation routes intact. Extensive experiments demonstrate that TraceRouter significantly outperforms state-of-the-art baselines, achieving a superior trade-off between adversarial robustness and general utility. Our code will be publicly released. WARNING: This paper contains unsafe model responses.",
+    "status": "found"
+  },
+  "2601.21901": {
+    "arxiv_id": "2601.21901",
+    "title": "A generalisation of the Euclid-Mullin sequences",
+    "authors": [
+      "Andrew R. Booker",
+      "Omri Simon"
+    ],
+    "submission_date": "2026-01-29T15:59:15Z",
+    "latest_updated": "2026-02-02T10:03:21Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.21901v1",
+      "2601.21901v2"
+    ],
+    "abstract": "We extend Mullin's prime-generating procedures to produce sequences of primes lying in given residue classes. In particular we study the sequences generated by cyclotomic polynomials $Φ_m(cx)$ for suitable $c\\in\\mathbb{Z}$. Under the Extended Riemann Hypothesis in general and unconditionally for some moduli, we show that the analogue of the second Euclid--Mullin sequence omits infinitely many primes $\\equiv1\\pmod{m}$. We further show unconditionally that at least one prime is omitted for infinitely many $m$. This generalises work of the first author for $m=1$ and the second author for $m=2^k$.",
+    "status": "found"
+  },
+  "2601.21902": {
+    "arxiv_id": "2601.21902",
+    "title": "Hardware-Triggered Backdoors",
+    "authors": [
+      "Jonas Möller",
+      "Erik Imgrund",
+      "Thorsten Eisenhofer",
+      "Konrad Rieck"
+    ],
+    "submission_date": "2026-01-29T15:59:40Z",
+    "latest_updated": "2026-01-31T17:10:24Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.21902v1",
+      "2601.21902v2"
+    ],
+    "abstract": "Machine learning models are routinely deployed on a wide range of computing hardware. Although such hardware is typically expected to produce identical results, differences in its design can lead to small numerical variations during inference. In this work, we show that these variations can be exploited to create backdoors in machine learning models. The core idea is to shape the model's decision function such that it yields different predictions for the same input when executed on different hardware. This effect is achieved by locally moving the decision boundary close to a target input and then refining numerical deviations to flip the prediction on selected hardware. We empirically demonstrate that these hardware-triggered backdoors can be created reliably across common GPU accelerators. Our findings reveal a novel attack vector affecting the use of third-party models, and we investigate different defenses to counter this threat.",
+    "status": "found"
+  },
+  "2601.21903": {
+    "arxiv_id": "2601.21903",
+    "title": "User Acceptance Model for Smart Incentives in Sustainable Video Streaming towards 6G",
+    "authors": [
+      "Konstantinos Varsos",
+      "Adamantia Stamou",
+      "George D. Stamoulis",
+      "Vasillios A. Siris"
+    ],
+    "submission_date": "2026-01-29T16:00:08Z",
+    "latest_updated": "2026-01-29T16:00:08Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.21903v1"
+    ],
+    "abstract": "The rapid growth of 5G video streaming is intensifying energy consumption across access, core, and data-center networks, underscoring the critical need for energy and carbon-efficient solutions. While reducing streaming bitrates improves energy efficiency, its success hinges on user acceptance--particularly when lower bitrates may be perceived as reduced quality of experience (QoE). Therefore, there is a need to develop transparent, user-centric incentive models that balance sustainability with perceived value. We propose a user-acceptance model that combines diverse environmental awareness, personalized responsiveness to incentives, and varying levels of altruism into a unified probabilistic framework. The model incorporates dynamic, individualized incentives that adapt over time. We further enhance the framework by incorporating (i) social well-being as a motivator for altruistic choices, (ii) provider-driven education strategies that gradually adjust user acceptance thresholds, and (iii) data-driven learning of user traits from historical offer--response interactions. Extensive synthetic-data experiments reveal the trade-offs between provider cost and network flexibility, showing that personalized incentives and gradual behavioral adaptation can advance sustainability targets without compromising stakeholder requirements.",
+    "status": "found"
+  },
+  "2601.21904": {
+    "arxiv_id": "2601.21904",
+    "title": "Beyond Global Alignment: Fine-Grained Motion-Language Retrieval via Pyramidal Shapley-Taylor Learning",
+    "authors": [
+      "Hanmo Chen",
+      "Guangtao Lyu",
+      "Chenghao Xu",
+      "Jiexi Yan",
+      "Xu Yang",
+      "Cheng Deng"
+    ],
+    "submission_date": "2026-01-29T16:00:12Z",
+    "latest_updated": "2026-02-04T13:24:36Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2601.21904v1",
+      "2601.21904v2",
+      "2601.21904v3"
+    ],
+    "abstract": "As a foundational task in human-centric cross-modal intelligence, motion-language retrieval aims to bridge the semantic gap between natural language and human motion, enabling intuitive motion analysis, yet existing approaches predominantly focus on aligning entire motion sequences with global textual representations. This global-centric paradigm overlooks fine-grained interactions between local motion segments and individual body joints and text tokens, inevitably leading to suboptimal retrieval performance. To address this limitation, we draw inspiration from the pyramidal process of human motion perception (from joint dynamics to segment coherence, and finally to holistic comprehension) and propose a novel Pyramidal Shapley-Taylor (PST) learning framework for fine-grained motion-language retrieval. Specifically, the framework decomposes human motion into temporal segments and spatial body joints, and learns cross-modal correspondences through progressive joint-wise and segment-wise alignment in a pyramidal fashion, effectively capturing both local semantic details and hierarchical structural relationships. Extensive experiments on multiple public benchmark datasets demonstrate that our approach significantly outperforms state-of-the-art methods, achieving precise alignment between motion segments and body joints and their corresponding text tokens. The code of this work will be released upon acceptance.",
+    "status": "found"
+  },
+  "2601.21905": {
+    "arxiv_id": "2601.21905",
+    "title": "A priori bounds for some infinitely renormalizable quadratic: IV. Elephant Eyes",
+    "authors": [
+      "Jeremy Kahn",
+      "Misha Lyubich"
+    ],
+    "submission_date": "2026-01-29T16:00:14Z",
+    "latest_updated": "2026-01-29T16:00:14Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.21905v1"
+    ],
+    "abstract": "In this paper we prove a priori bounds for an ``elephant eye'' combinatorics. Little $M$-copies specifying these combinatorics are allowed to converge to the cusp of the Mandelbrot set. To handle it, we develope a new geometric tool: uniform thin-thick decompositions for bordered Riemann surfaces.",
+    "status": "found"
+  },
+  "2601.21906": {
+    "arxiv_id": "2601.21906",
+    "title": "On Gautschi & Stirling Identities, Asymptotics and Inequalities for the Pi (or Gamma) Function",
+    "authors": [
+      "Marc Schmidlin"
+    ],
+    "submission_date": "2026-01-29T16:00:22Z",
+    "latest_updated": "2026-01-29T16:00:22Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.21906v1"
+    ],
+    "abstract": "We derive two-sided bounds for a class of Stirling-type asymptotic formulas for piecewise logarithmic interpolations of the pi function, and hence also for the factorials and the gamma functions. The bounds are derived by first proving some integral identity versions of Gautschi's inequality and a class of Stirling-type asymptotic formulas, and then bounding these integrals by asymptotically optimal bounds. Additionally, all the proofs given rely only on common elementary arguments and connect, generalise and possibly improve various results that have been published previously. Lastly, we provide numerical comparisons concerning the effectiveness and behaviour of the bounds and approximations in a graphical manner, which clearly indicate that the bounds are asymptotically optimal.",
+    "status": "found"
+  },
+  "2601.21907": {
+    "arxiv_id": "2601.21907",
+    "title": "Mode Switching Through Exceptional Points Induced by Lasing-Inversion Coupling",
+    "authors": [
+      "Xingwei Gao",
+      "Cheng Guo",
+      "David Burghoff"
+    ],
+    "submission_date": "2026-01-29T16:00:30Z",
+    "latest_updated": "2026-01-29T16:00:30Z",
+    "revised_dates": null,
+    "venue": "Optica 13(10), 2118-2125 (2026)",
+    "latest_version": 1,
+    "versions": [
+      "2601.21907v1"
+    ],
+    "abstract": "The gain-loss coupling in optical cavities induces exceptional points (EPs), where two optical modes coalesce. The large modal overlap near an EP intensifies gain competition, favoring single-mode lasing. Recent studies further revealed self-modulation closer to the EP that transforms the lasing mode into a frequency comb. Such EP-enabled comb formation suggests a previously unaccounted-for mechanism that overcomes the strong gain competition and drives a second mode to threshold. Here, using a Bloch coupled-mode theory derived from first principles, we show that the second threshold arises from dynamical couplings among the population inversion, the lasing field, and a dark cavity mode. The lasing-inversion coupling produces extra EPs, whose spectral structure governs switching among single-mode lasing and frequency combs with different repetition rates. This above-threshold mode-switching mechanism enables new opportunities for tunable photonic systems, including adaptive optical communication links and dual-comb spectroscopy.",
+    "status": "found"
+  },
+  "2601.21908": {
+    "arxiv_id": "2601.21908",
+    "title": "The 'Big Three' of Scientific Information: A comparative bibliometric review of Web of Science, Scopus, and OpenAlex",
+    "authors": [
+      "Daniel Torres-Salinas",
+      "Wenceslao Arroyo-Machado"
+    ],
+    "submission_date": "2026-01-29T16:00:42Z",
+    "latest_updated": "2026-01-29T16:00:42Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.21908v1"
+    ],
+    "abstract": "The present comparative study examines the three main multidisciplinary bibliographic databases, Web of Science Core Collection, Scopus, and OpenAlex, with the aim of providing up-to-date evidence on coverage, metadata quality, and functional features to help inform strategic decisions in research assessment. The report is structured into two complementary methodological sections. First, it presents a systematic review of recent scholarly literature that investigates record volume, open-access coverage, linguistic diversity, reference coverage, and metadata quality; this is followed by an original bibliometric analysis of the 2015-2024 period that explores longitudinal distribution, document types, thematic profiles, linguistic differences, and overlap between databases. The text concludes with a ten-point executive summary and five recommendations.",
+    "status": "found"
+  },
+  "2601.21909": {
+    "arxiv_id": "2601.21909",
+    "title": "From Meta-Thought to Execution: Cognitively Aligned Post-Training for Generalizable and Reliable LLM Reasoning",
+    "authors": [
+      "Shaojie Wang",
+      "Liang Zhang"
+    ],
+    "submission_date": "2026-01-29T16:00:48Z",
+    "latest_updated": "2026-05-28T16:50:42Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.21909v1",
+      "2601.21909v2"
+    ],
+    "abstract": "Current LLM post-training methods optimize complete reasoning trajectories through Supervised Fine-Tuning (SFT) followed by outcome-based Reinforcement Learning (RL). While effective, a closer examination reveals a fundamental gap: this approach does not align with how humans actually solve problems. Human cognition naturally decomposes problem-solving into two distinct stages: first acquiring abstract strategies (i.e., meta-knowledge) that generalize across problems, then adapting them to specific instances. In contrast, by treating complete trajectories as basic units, current methods are inherently problem-centric, entangling abstract strategies with problem-specific execution. To address this misalignment, we propose a cognitively-inspired framework that explicitly mirrors the two-stage human cognitive process. Specifically, Chain-of-Meta-Thought CoMT focuses supervised learning on abstract reasoning patterns without specific executions, enabling acquisition of generalizable strategies. Confidence-Calibrated Reinforcement Learning (CCRL) then optimizes task adaptation via confidence-aware rewards on intermediate steps, preventing overconfident errors from cascading and improving execution reliability. Experiments across four models and ten benchmarks show 2.10% and 3.86% improvements in-distribution and out-of-distribution respectively over standard methods, while remaining highly robust to variations in teacher model selection, optimization methods, and symbolic perturbations.",
+    "status": "found"
+  },
+  "2601.21910": {
+    "arxiv_id": "2601.21910",
+    "title": "Beyond the Finite Variant Property: Extending Symbolic Diffie-Hellman Group Models (Extended Version)",
+    "authors": [
+      "Sofia Giampietro",
+      "Ralf Sasse",
+      "David Basin"
+    ],
+    "submission_date": "2026-01-29T16:00:56Z",
+    "latest_updated": "2026-01-29T16:00:56Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.21910v1"
+    ],
+    "abstract": "Diffie-Hellman groups are commonly used in cryptographic protocols. While most state-of-the-art, symbolic protocol verifiers support them to some degree, they do not support all mathematical operations possible in these groups. In particular, they lack support for exponent addition, as these tools reason about terms using unification, which is undecidable in the theory describing all Diffie-Hellman operators. In this paper we approximate such a theory and propose a semi-decision procedure to determine whether a protocol, which may use all operations in such groups, satisfies user-defined properties. We implement this approach by extending the Tamarin prover to support the full Diffie-Hellman theory, including group element multiplication and hence addition of exponents. This is the first time a state-of-the-art tool can model and reason about such protocols. We illustrate our approach's effectiveness with different case studies: ElGamal encryption and MQV. Using Tamarin, we prove security properties of ElGamal, and we rediscover known attacks on MQV.",
+    "status": "found"
+  },
+  "2601.21911": {
+    "arxiv_id": "2601.21911",
+    "title": "$f$-Mode oscillations and the gravitational response of compact stars with analytic equations of state",
+    "authors": [
+      "Kilar Zhang",
+      "Alessandro Parisi",
+      "C. Vásquez Flores",
+      "C. Henrique Lenzi",
+      "Chian-Shu Chen"
+    ],
+    "submission_date": "2026-01-29T16:01:27Z",
+    "latest_updated": "2026-07-07T02:04:59Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.21911v1",
+      "2601.21911v2"
+    ],
+    "abstract": "We use a simple holographic model to study the property of cold and dense neutron stars (NSs) and deconfined QCD matter. With the aim of investigating the global properties of compact stars, such as the total gravitational mass and radius, the equation of states (EOS) of neutron stars and quark stars (QSs) are used to solve the Tolman-Oppenheimer-Volkov (TOV) equations for stellar structure. Additionally, we investigate the tidal deformabilities and $f$-mode oscillation for these two different compact stars. Our main conclusion is that, by using a holographic equation of state, it is possible to obtain neutron matter and quark matter properties and that it is also possible to extend the procedure to astrophysical applications.",
+    "status": "found"
+  },
+  "2601.21912": {
+    "arxiv_id": "2601.21912",
+    "title": "ProRAG: Process-Supervised Reinforcement Learning for Retrieval-Augmented Generation",
+    "authors": [
+      "Zhao Wang",
+      "Ziliang Zhao",
+      "Zhicheng Dou"
+    ],
+    "submission_date": "2026-01-29T16:04:59Z",
+    "latest_updated": "2026-01-29T16:04:59Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.21912v1"
+    ],
+    "abstract": "Reinforcement learning (RL) has become a promising paradigm for optimizing Retrieval-Augmented Generation (RAG) in complex reasoning tasks. However, traditional outcome-based RL approaches often suffer from reward sparsity and inefficient credit assignment, as coarse-grained scalar rewards fail to identify specific erroneous steps within long-horizon trajectories. This ambiguity frequently leads to \"process hallucinations\", where models reach correct answers through flawed logic or redundant retrieval steps. Although recent process-aware approaches attempt to mitigate this via static preference learning or heuristic reward shaping, they often lack the on-policy exploration capabilities required to decouple step-level credit from global outcomes. To address these challenges, we propose ProRAG, a process-supervised reinforcement learning framework designed to integrate learned step-level supervision into the online optimization loop. Our framework consists of four stages: (1) Supervised Policy Warmup to initialize the model with a structured reasoning format; (2) construction of an MCTS-based Process Reward Model (PRM) to quantify intermediate reasoning quality; (3) PRM-Guided Reasoning Refinement to align the policy with fine-grained process preferences; and (4) Process-Supervised Reinforcement Learning with a dual-granularity advantage mechanism. By aggregating step-level process rewards with global outcome signals, ProRAG provides precise feedback for every action. Extensive experiments on five multi-hop reasoning benchmarks demonstrate that ProRAG achieves superior overall performance compared to strong outcome-based and process-aware RL baselines, particularly on complex long-horizon tasks, validating the effectiveness of fine-grained process supervision. The code and model are available at https://github.com/lilinwz/ProRAG.",
+    "status": "found"
+  },
+  "2601.21913": {
+    "arxiv_id": "2601.21913",
+    "title": "Rapid estimation of global sea surface temperatures from sparse streaming in situ observations",
+    "authors": [
+      "Cassidy All",
+      "Kevin Ho",
+      "Maya Magnuski",
+      "Christopher Nicolaides",
+      "Louisa B. Ebby",
+      "Mohammad Farazmand"
+    ],
+    "submission_date": "2026-01-29T16:05:30Z",
+    "latest_updated": "2026-08-18T13:42:36Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.21913v1",
+      "2601.21913v2"
+    ],
+    "abstract": "Reconstructing high-resolution sea surface temperatures (SST) from staggered SST measurements is essential for weather forecasting and climate projections. However, when SST measurements are sparse, the resulting inferred SST fields are rather inaccurate. Here, we demonstrate the ability of Sparse Discrete Empirical Interpolation Method (S-DEIM) to reconstruct the high-resolution SST field from sparse in situ observations, without using a model. The S-DEIM estimate consists of two terms, one computed from instantaneous in situ observations using empirical interpolation, and the other learned from the historical time series of observations using recurrent neural networks (RNNs). We train the RNNs using the National Oceanic and Atmospheric Administration's weekly high-resolution SST dataset spanning the years 1989-2021 which constitutes the training data. Subsequently, we examine the performance of S-DEIM on the test data, comprising January 2022 to January 2023. For this test data, S-DEIM infers the high-resolution SST from 100 in situ observations, constituting only 0.2% of the high-resolution spatial grid. We show that the resulting S-DEIM reconstructions are about 40% more accurate than earlier empirical interpolation methods, such as DEIM and Q-DEIM. Furthermore, 91% of S-DEIM estimates fall within $\\pm 1^\\circ$C of the true SST. We also demonstrate that S-DEIM is robust with respect to sensor placement: even when the sensors are distributed randomly, S-DEIM reconstruction error deteriorates only by 1-2%. S-DEIM is also computationally efficient. Training the RNN, which is performed only once offline, takes approximately one minute. Once trained, the S-DEIM reconstructions are computed in less than a second. As such, S-DEIM can be used for rapid SST reconstruction from sparse streaming observational data in real time.",
+    "status": "found"
+  },
+  "2601.21914": {
+    "arxiv_id": "2601.21914",
+    "title": "Joint Laser Inter-Satellite Link Matching and Traffic Flow Routing in LEO Mega-Constellations via Lagrangian Duality",
+    "authors": [
+      "Zhouyou Gu",
+      "Jinho Choi",
+      "Jihong Park"
+    ],
+    "submission_date": "2026-01-29T16:06:20Z",
+    "latest_updated": "2026-07-25T12:54:45Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.21914v1",
+      "2601.21914v2"
+    ],
+    "abstract": "Low Earth orbit (LEO) mega-constellations greatly extend the coverage and resilience of future wireless systems. Within the mega-constellations, laser inter-satellite links (LISLs) enable high-capacity, long-range connectivity. Existing LISL schemes often overlook mechanical limitations of laser communication terminals (LCTs) and non-uniform global traffic profiles caused by uneven user and gateway distributions, leading to suboptimal throughput and underused LCTs/LISLs -- especially when each satellite carries only a few LCTs. This paper investigates the joint optimization of LCT connections and traffic routing to maximize the constellation throughput, considering the realistic LCT mechanics and a snapshot-level spatial traffic profile. We show that the resulting per-snapshot formulation is a mixed-integer program coupling LCT connections with flow-rate variables under link capacity constraints, and the associated fixed-snapshot abstract decision problem is NP-hard. Due to its intractability, we resort to relaxing the coupling constraints via Lagrangian duality, decomposing the problem into a weighted graph-matching for LCT connections, weighted shortest-path routing tasks, and a linear program for rate allocation. Here, Lagrange multipliers reflect congestion weights between satellites, jointly guiding the matching, routing, and rate allocation. Subgradient descent optimizes the multipliers, with proven convergence. Simulations using real-world constellation and terrestrial data show that our methods substantially improve network throughput by up to $35\\%$--$145\\%$ over existing non-joint approaches.",
+    "status": "found"
+  },
+  "2601.21915": {
+    "arxiv_id": "2601.21915",
+    "title": "VideoAesBench: Benchmarking the Video Aesthetics Perception Capabilities of Large Multimodal Models",
+    "authors": [
+      "Yunhao Li",
+      "Sijing Wu",
+      "Zhilin Gao",
+      "Zicheng Zhang",
+      "Qi Jia",
+      "Huiyu Duan",
+      "Xiongkuo Min",
+      "Guangtao Zhai"
+    ],
+    "submission_date": "2026-01-29T16:06:30Z",
+    "latest_updated": "2026-02-01T10:19:54Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.21915v1",
+      "2601.21915v2"
+    ],
+    "abstract": "Large multimodal models (LMMs) have demonstrated outstanding capabilities in various visual perception tasks, which has in turn made the evaluation of LMMs significant. However, the capability of video aesthetic quality assessment, which is a fundamental ability for human, remains underexplored for LMMs. To address this, we introduce VideoAesBench, a comprehensive benchmark for evaluating LMMs' understanding of video aesthetic quality. VideoAesBench has several significant characteristics: (1) Diverse content including 1,804 videos from multiple video sources including user-generated (UGC), AI-generated (AIGC), compressed, robotic-generated (RGC), and game videos. (2) Multiple question formats containing traditional single-choice questions, multi-choice questions, True or False questions, and a novel open-ended questions for video aesthetics description. (3) Holistic video aesthetics dimensions including visual form related questions from 5 aspects, visual style related questions from 4 aspects, and visual affectiveness questions from 3 aspects. Based on VideoAesBench, we benchmark 23 open-source and commercial large multimodal models. Our findings show that current LMMs only contain basic video aesthetics perception ability, their performance remains incomplete and imprecise. We hope our VideoAesBench can be served as a strong testbed and offer insights for explainable video aesthetics assessment. The data will be released on https://github.com/michaelliyunhao/VideoAesBench",
+    "status": "found"
+  }
+}

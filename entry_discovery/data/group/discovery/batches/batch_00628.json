@@ -1,0 +1,412 @@
+{
+  "2608.11567": {
+    "arxiv_id": "2608.11567",
+    "title": "Sparse and robust geometric twin support vector machine via asymmetric RoBoSS loss function",
+    "authors": [
+      "Kai Qi",
+      "Xinji Huang",
+      "Hongchun Wang"
+    ],
+    "submission_date": "2026-08-12T02:19:03Z",
+    "latest_updated": "2026-08-12T02:19:03Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11567v1"
+    ],
+    "abstract": "In real-world scenarios, the training data usually contains redundant features, label noise and feature noise, which provide severe challenges for the efficiency of machine learning methods. Since standard support vector machine (SVM) adopts $l_2$-norm penalty and hinge loss function, it lacks the ability of selecting significant features and is sensitive to noise. To address these issues, this paper proposes a novel asymmetric, robust, bounded, sparse and smooth (aR) loss function for $l_1$-norm penalized geometric twin SVM (aRSGTSVM) to handle classification and regression tasks. The $l_1$-norm penalty can achieve the feature selection. The proposed aR loss function can not only effectively mitigate the impact of label noise, but also significantly enhance the stability to resampling noise, i.e., the zero-mean feature noise around the boundary hyperplanes. Furthermore, a statistical analysis of the robustness of aRSGTSVM was also conducted using the influence function. Since aRSGTSVM involves nonconvex and nonsmooth optimization, we develop a fast and stable proximal gradient descent based solving algorithm. Compared with related state-of-the-art methods, experimental results demonstrate the superiority of the proposed aRSGTSVM on both synthetic and UCI datasets. Furthermore, we apply aRSGTSVM to index tracking tasks, where results for tracking the different indices in the China stock market show that it can achieve satisfactory performance.",
+    "status": "found"
+  },
+  "2608.11568": {
+    "arxiv_id": "2608.11568",
+    "title": "Scopes equivalence for blocks of Ariki-Koike algebras",
+    "authors": [
+      "Joseph Chuang",
+      "Kai Meng Tan"
+    ],
+    "submission_date": "2026-08-12T02:23:52Z",
+    "latest_updated": "2026-08-12T02:23:52Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11568v1"
+    ],
+    "abstract": "We obtain necessary and sufficient conditions for a block of an Ariki-Koike algebra to have the property that all its associated multipartitions have no addable node with a given residue. This leads to a classification of Scopes equivalence classes for Ariki-Koike algebras in terms of their pyramid numbers and Scopes vectors, generalising that for level 1 and for core blocks. Our proof is independent of the results of Richards for level 1.",
+    "status": "found"
+  },
+  "2608.11569": {
+    "arxiv_id": "2608.11569",
+    "title": "Improved quantum sampling methods for molecular simulations",
+    "authors": [
+      "Connor van Rossum",
+      "Jeffery Cohn",
+      "Sally Shrapnel",
+      "Riddhi Gupta"
+    ],
+    "submission_date": "2026-08-12T02:27:06Z",
+    "latest_updated": "2026-10-06T05:00:13Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.11569v1",
+      "2608.11569v2"
+    ],
+    "abstract": "Quantum-selected configuration interaction (QSCI) methods use a quantum computer to identify dominant electronic configurations in the molecular ground state, while a classical computer diagonalizes the Hamiltonian within the reduced subspace spanned by those configurations. Sample-based quantum diagonalization (SQD), a leading QSCI approach, uses iterative classical post-processing to correct noisy quantum measurement to ensure that the corresponding configurations remain physically sensible. In this work, we show that SQD performance can be strongly influenced by uncontrolled growth of the classical diagonalization subspace. When classical resources are not explicitly constrained, classical uniform random sampling can reproduce SQD benchmarks as noise increases the diversity of sampled configurations. We show any fair benchmarking protocol of SQD must explicitly control diagonalization size over unique samples. We then address the problem of efficiently discovering physically relevant, energy-lowering configurations by introducing a measurement protocol based on non-orthogonal configuration interaction (NOCI). By distributing measurements across orbital bases optimized with respect to the molecular Hamiltonian, we obtain improved sample efficiency relative to measurements performed solely in the Hartree--Fock basis. Importantly, these improvements persist even under fixed classical resource budgets, demonstrating that the resulting configurations are of higher quality rather than being more numerous. Under our proposed benchmarking procedure, we establish measurement-basis engineering as a promising route to improving quantum sampling methods for electronic structure.",
+    "status": "found"
+  },
+  "2608.11570": {
+    "arxiv_id": "2608.11570",
+    "title": "Minkowski Polytopes of Spherical Designs: High-Order Isotropy and Quantitative Sphericity",
+    "authors": [
+      "Congpei An"
+    ],
+    "submission_date": "2026-08-12T02:29:17Z",
+    "latest_updated": "2026-08-12T02:29:17Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11570v1"
+    ],
+    "abstract": "Let $X_N=\\{x_1,\\dots,x_N\\}\\subset \\Sph^2$ be a spherical $t$-design of strength $t\\ge2$, and let $μ_X$ be its empirical measure. Minkowski's theorem associates with $X_N$ a convex polytope $P_X\\subset\\R^3$, unique up to translation, whose facet normals are the design nodes and whose facets all have area $4π/N$; equivalently, $S_{P_X}=4πμ_X$. We show that this realization transfers polynomial exactness into exact convex geometry: the normalized surface tensors of $P_X$ agree with those of the unit ball through order $t$, and mixed volumes are exact against convex bodies whose support functions are spherical polynomials of degree at most $t$. We next derive quantitative shape information. Spherical Jackson approximation yields a $1$-Wasserstein discrepancy $W_1(μ_X,σ)=O(t^{-1})$, while degree-two exactness gives a uniform nondegeneracy condition. Combined with quantitative inverse stability for Minkowski's problem, this implies, after Steiner normalization, \\[ d_H(P_X,B)=O(t^{-1/2}),\\qquad α(P_X,B)=O(t^{-3/4}), \\] for every spherical $t$-design, without assumptions on cardinality, separation, covering radius, or spectral conditioning. Projection bodies retain the full $O(t^{-1})$ scale, separating linear surface-area observables from nonlinear reconstruction of the body. In the critical regime $N=(t+1)^2$, a uniform spectral lower bound for the sampling Gram matrix further forces the facet normals to be separated at the wavelength scale $t^{-1}$. The construction extends to $\\Sph^d$, with the universal Hausdorff rate $O(t^{-1/d})$.",
+    "status": "found"
+  },
+  "2608.11571": {
+    "arxiv_id": "2608.11571",
+    "title": "Spherical CR uniformizations of a sequence of hyperbolic 3-manifolds",
+    "authors": [
+      "Jiming Ma",
+      "Baohua Xie"
+    ],
+    "submission_date": "2026-08-12T02:29:33Z",
+    "latest_updated": "2026-08-12T02:29:33Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11571v1"
+    ],
+    "abstract": "Let $s782$ be the 2-cusped hyperbolic 3-manifold in the SnapPy census. Its spherical CR uniformization was established in \\cite{JWX2023} using the Ford domain of the complex hyperbolic triangle group $Δ_{4,4,\\infty;\\infty}$. By comparing the combinatorial structures of the Ford domain of $Δ_{4,4,\\infty;\\infty}$ and the Dirichlet domain of $Δ_{4,4,n;\\infty}$, we prove that for each $n \\geq 5$, the Dehn filling of $s782$ along the slope $(n-1)\\mathcal{m}_1 + \\mathcal{l}_1$ on its second cusp admits a spherical CR uniformization, where $(\\mathcal{m}_1, \\mathcal{l}_1)$ denotes the meridian-longitude system of a cusp in SnapPy notation.",
+    "status": "found"
+  },
+  "2608.11572": {
+    "arxiv_id": "2608.11572",
+    "title": "RECAST: A Machine-Learning Framework for Correction and Super-Resolution of Coarse-Grid PDE Solvers",
+    "authors": [
+      "Maryam Reza",
+      "Farbod Faraji"
+    ],
+    "submission_date": "2026-08-12T02:30:49Z",
+    "latest_updated": "2026-08-12T02:30:49Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11572v1"
+    ],
+    "abstract": "Coarse-grid numerical solvers can substantially reduce the computational cost of time-dependent PDE simulation, but under-resolution often degrades both the trajectory and the spatial fidelity of the solution. We introduce RECAST (Recurrent Error Correction And Super-resolution of coarse-grid Trajectories), a machine-learning framework designed to restore this lost accuracy while retaining coarse-grid evolution. RECAST combines learned correction within the numerical time-stepping loop with reconstruction of the corresponding fine-grid state from the corrected coarse history. We evaluate the framework on six one-dimensional PDE systems spanning transport, diffusion, dispersion, reaction, and wave dynamics, using spatial grids coarsened by factors of 8-16 and 1000-step closed-loop rollouts from unseen initial conditions. Across the test cases, RECAST remains closely aligned with the fine-grid reference solutions and reduces time-averaged relative error by approximately 50-92% compared with the corresponding uncorrected coarse-grid solvers. Additional tests show generalization to unseen PDE parameter values, while comparison with a contemporary coarse-correction architecture shows that RECAST achieves lower error and better long-horizon agreement with the fine-grid reference over 5000-step rollouts. These results demonstrate that the learned correction and reconstruction capabilities of RECAST can enable substantially coarser PDE evolution without the corresponding loss of solution fidelity, providing a proof-of-concept route toward machine-learning acceleration of higher-dimensional numerical simulations across science and engineering.",
+    "status": "found"
+  },
+  "2608.11573": {
+    "arxiv_id": "2608.11573",
+    "title": "Reinforcing Step-level Reasoning for Effective Self-Correction in LLMs",
+    "authors": [
+      "Vu Duc Anh",
+      "Nhat M. Hoang",
+      "Do Xuan Long",
+      "Cong-Duy Nguyen",
+      "Ponhvoan Srey",
+      "Luu Anh Tuan"
+    ],
+    "submission_date": "2026-08-12T02:31:02Z",
+    "latest_updated": "2026-08-31T06:47:52Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.11573v1",
+      "2608.11573v2"
+    ],
+    "abstract": "Achieving effective self-correction, where models verify and correct their own mistakes, remains a fundamental challenge for large language models (LLMs). In this work, we propose Self-Fix Step-DPO (SFS-DPO), a reinforcement learning based, two-stage framework for step-level self-verification and self-correction. The first stage strengthens step-level reasoning via step-level preference optimization, while the second stage explicitly trains models to self-verify and self-correct. We further introduce a teacher-assisted variant, SFS-DPO-R, which incorporates explanatory rationales for error verification to provide stronger corrective signals. Comprehensive in-domain and out-of-domain evaluations across multiple LLMs demonstrate that SFS-DPO and SFS-DPO-R consistently outperform prior step-level training baselines. Our analysis further reveals improvements in self-correction frequency and effectiveness, highlighting the importance of strengthening step-level reasoning for robust performance.",
+    "status": "found"
+  },
+  "2608.11574": {
+    "arxiv_id": "2608.11574",
+    "title": "Hand Visibility Detector: Per-Keypoint Visibility Estimation for Hands",
+    "authors": [
+      "Ryosei Hara",
+      "Masashi Hatano",
+      "Rintaro Yanagi",
+      "Atsushi Hashimoto",
+      "Takuma Yagi",
+      "Mariko Isogawa"
+    ],
+    "submission_date": "2026-08-12T02:31:10Z",
+    "latest_updated": "2026-08-12T02:31:10Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11574v1"
+    ],
+    "abstract": "Hand Pose Estimation (HPE) is a fundamental technology for various applications such as AR/VR and robotics. In these applications, the visibility of each hand joint in the image is crucial for assessing the reliability of estimation results under occlusion. However, most existing HPE methods output joint positions without explicitly indicating their visibility. Although some methods account for occlusion or visibility, visibility estimation has mainly been used as an auxiliary signal for improving pose estimation. To our knowledge, per-joint hand visibility estimation has not been systematically studied as a standalone task. In this work, we propose Hand Visibility Detector, a model for estimating the visibility of individual hand joints, and present the first systematic investigation of visibility estimation as an independent task. We show that leveraging the prior knowledge of HPE models pretrained on large-scale data as a backbone yields high performance in this task. We further demonstrate the utility of Hand Visibility Detector on a downstream task of 3D hand pose annotation via multi-view triangulation of 2D keypoints, showing that visibility-weighted triangulation reduces reprojection error. Our method is released as a ready-to-use package, and the code and demo are available at https://github.com/ryhara/hand_visibility_detector .",
+    "status": "found"
+  },
+  "2608.11575": {
+    "arxiv_id": "2608.11575",
+    "title": "Testing Covarying Coupling Constants (CCC) against the full SPARC rotation-curve sample: a like-for-like comparison with MOND and NFW",
+    "authors": [
+      "Rajendra P. Gupta",
+      "Nikolaos Samaras"
+    ],
+    "submission_date": "2026-08-12T02:32:13Z",
+    "latest_updated": "2026-08-12T02:32:13Z",
+    "revised_dates": null,
+    "venue": "Mon Not R Astron Soc (2026)",
+    "latest_version": 1,
+    "versions": [
+      "2608.11575v1"
+    ],
+    "abstract": "The Covarying Coupling Constants (CCC) framework, developed to account for high-redshift JWST observations, contains a mechanism -- a covarying-constant effective mass field keyed to local density -- that modifies galactic dynamics without particle dark matter. We test it against the full Spitzer Photometry and Accurate Rotation Curves (SPARC) sample of 175 disc galaxies, extending an earlier study of a few objects. Working in an inverse formulation, in which each model predicts the baryonic rotation curve from the observed one, we compare CCC against Modified Newtonian Dynamics (MOND) and one- and two-parameter Navarro-Frenk-White (NFW) haloes on identical footing, using the reduced $χ^2_ν$. We show that the published sharp density turn-off in the earlier study is unphysical and replace it with a smooth transition -- the density-space analogue of the MOND interpolating function, introducing no new parameter. One-parameter smooth-CCC then performs comparably to galaxy-by-galaxy fitted MOND (the lower $χ^2_ν$ in 56 per cent of galaxies, mean $χ^2_ν$ of 2.58 versus 2.65; the paired difference is not significant), while two-parameter NFW shows a substantially broader fit-quality distribution and a larger tail of poor or boundary-limited fits (mean $χ^2_ν\\approx 7$). The CCC turn-off density is not universal (scatter 0.82 dex) and correlates with galaxy size, qualitatively consistent with a spherical reconstruction applied to flattened disc systems. Recast as an acceleration, however, $a_t = V_{\\rm flat}^2/R_t$ has scatter 0.33 dex (on the 91-galaxy resolved subset) -- matching the MOND scale $a_0$ (0.34 dex) -- and comparable magnitude of order $2 \\times 10^{-10}$ m/s$^2$, with its size correlation removed. Though not designed for galactic dynamics, CCC describes rotation curves as well as galaxy-by-galaxy fitted MOND.",
+    "status": "found"
+  },
+  "2608.11576": {
+    "arxiv_id": "2608.11576",
+    "title": "Dialogue-Aware Video-to-Music Generation Using Public Domain Film Collections",
+    "authors": [
+      "Haven Kim",
+      "Zachary Novack",
+      "Julian McAuley",
+      "Hao-Wen Dong"
+    ],
+    "submission_date": "2026-08-12T02:32:32Z",
+    "latest_updated": "2026-08-12T02:32:32Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11576v1"
+    ],
+    "abstract": "Video-to-music generation has drawn growing interest for its role in conveying the emotion of visual media, including film. Progress in the field, however, is hampered by a reproducibility gap: models are often trained on crawled corpora referenced through YouTube URLs that may be deleted, with the underlying data often difficult and time-consuming to retrieve. To address this, we introduce the Open Screen Soundtrack Library version 2 (OSSL-v2), a self-hosted corpus of 34,343 video clips totaling 246.4 hours, sourced from public-domain films. Unlike crawled corpora, OSSL-v2 is reproducible (i.e., not subject to link rot) and copyright-conscious, yet still large enough to train functional video-to-music models. We then use this film-domain corpus to study dialogue as a conditioning signal for video-to-music generation, motivated by the close temporal coupling between film music and on-screen speech. Specifically, we augment existing models' video cross-attention with a time axis and modulate it frame-by-frame with the dialogue track. Evaluated on both public-domain and commercial films, our approach shows improvement over the state-of-the-art baselines. The dataset is available at https://huggingface.co/datasets/McAuley-Lab/OSSL-v2.",
+    "status": "found"
+  },
+  "2608.11577": {
+    "arxiv_id": "2608.11577",
+    "title": "Uni-SFU: Algorithm-HW Co-Design for Universal SFUs via Mixed-Degree Piecewise Approximation",
+    "authors": [
+      "Miao Sun",
+      "Yucheng Huang",
+      "Mingcong Cao",
+      "Jaehyun Park",
+      "Partha Pratim Pande",
+      "Umit Y. Ogras"
+    ],
+    "submission_date": "2026-08-12T02:34:29Z",
+    "latest_updated": "2026-08-12T02:34:29Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11577v1"
+    ],
+    "abstract": "Nonlinear activation functions are essential to modern deep neural networks (DNNs), but their hardware evaluation places significant pressure on the special-function units (SFUs) of GPUs and custom accelerators. Therefore, piecewise polynomial approximations are commonly used within allowed error bounds to improve computational efficiency. However, existing techniques often approximate each activation function in isolation using fixed-degree polynomials and uniform segments, leading to hardware redundancy and sub-optimal precision. To address these limitations, we present Uni-SFU, an algorithm-hardware co-design framework that jointly optimizes approximation accuracy and silicon area for a diverse set of activation functions. Uni-SFU leverages a joint search across all target functions to assign mixed-degree polynomials to nonuniform segments, guided by an RTL-derived area cost model. This approach identifies a unified hardware configuration to implement the target activation functions under given accuracy constraints. Validated across over 700 neural network variants and three Natural Language Processing (NLP) models, Uni-SFU achieves a superior Mean Squared Error (MSE) below 8.22x10^-8, limiting top-1 accuracy degradation to within 1.02% compared to floating-point baselines. The proposed design occupies only 6,800 um2 in GF 22nm CMOS technology, achieving a superior trade-off between silicon area and system-level accuracy compared to SOTA counterparts.",
+    "status": "found"
+  },
+  "2608.11578": {
+    "arxiv_id": "2608.11578",
+    "title": "Sparse spanning $k$-strong oriented subdigraphs in split digraphs",
+    "authors": [
+      "Jia Zhou",
+      "Jørgen Bang-Jensen",
+      "Jin Yan"
+    ],
+    "submission_date": "2026-08-12T02:36:54Z",
+    "latest_updated": "2026-08-12T02:36:54Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11578v1"
+    ],
+    "abstract": "Jackson and Thomassen conjectured that every $2k$-strong digraph admits a spanning $k$-strong oriented subdigraph [Ann. N. Y. Acad. Sci. 555 (1989) 402-412]. The conjecture holds for $k=1$ but other than some partial results that have been obtained for general $k$ in some special families of digraphs, including symmetric digraphs, the conjecture remains wide open in general. Even the existence of an integer $K$ such that every $K$-strong digraph has a 2-strong spanning oriented subdigraph is open. As a natural optimization counterpart, the minimum spanning $k$-strong subdigraph (MSSS$_k$) problem, is to find the minimum number of arcs in a spanning $k$-strong subdigraph of a $k$-strong digraph. This problem is NP-hard already for $k=1$ as it generalizes the hamiltonian cycle problem. In this paper, we address both problems simultaneously for the class of split digraphs, by constructing sparse spanning $k$-strong oriented subdigraphs. Specifically, we prove that every $k$-strong split digraph $D = (V_1, V_2; A)$ with minimum semi-degree {$δ^0(D)\\geq 26k+15$} contains a spanning $k$-strong oriented subdigraph with no more than $kn+k|V_1|+98k^2+38k+3$ arcs, where $kn + k|V_1|$ is tight and the $k^{2}$ term is tight up to a constant factor. For the class of $k$-strong tournaments with minimum semi-degree at least $26k+15$ our results improve the bound obtained by Kang in [Combin. Probab. Comput., 27:892-907, 2018].",
+    "status": "found"
+  },
+  "2608.11579": {
+    "arxiv_id": "2608.11579",
+    "title": "Efficient Compilation for Hamiltonian Simulation via Global Binary Symplectic Form Simplification",
+    "authors": [
+      "Zhaohui Yang",
+      "Yuwei Han",
+      "Ruiyun Zhang",
+      "Dawei Ding",
+      "Jianxin Chen",
+      "Yuan Feng",
+      "Yuan Xie"
+    ],
+    "submission_date": "2026-08-12T02:38:42Z",
+    "latest_updated": "2026-08-25T16:13:19Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.11579v1",
+      "2608.11579v2"
+    ],
+    "abstract": "Hamiltonian simulation is a core quantum workload, underpinning variational quantum algorithms and Trotterized time evolution. Such programs are expressed as Pauli exponential sequences, exhibiting structural patterns that are highly amenable to high-level synthesis and optimization. Existing compilers, however, fail to fully unlock the optimization potential of their global algebraic structure, even when employing advanced graph- or tableau-based methods. We present Symphony, a holistic compilation approach built on the binary symplectic form (BSF) representation of Pauli strings. Unlike prior group-wise BSF simplification and path-based Pauli network synthesis, Symphony applies generalized controlled-Pauli Clifford transformations directly to a global BSF tableau, adaptively reducing active Pauli rows and emitting eligible two-qubit blocks other than single-qubit rotations in a forward Clifford frame. Following algebraic simplification, Symphony performs a causality-preserving block rescheduling heuristic that respects frame-induced dependencies while exposing extensive two-qubit block parallelism opportunities. This streamlined compilation style comprehensively exploits simultaneous simplification and commutativity opportunities, achieving efficient global optimization without relying on computationally expensive heuristics or long-horizon searches. Across the generic Hamiltonian simulation benchmarks in HamLib, Symphony achieves average reductions of 59% in two-qubit gate count and 91% in circuit depth. It strictly Pareto-dominates prior state-of-the-art compilers, requiring 1.14--1.58$\\times$ fewer two-qubit gates and especially shrinking two-qubit circuit depth by a substantial factor of 1.87--5.67$\\times$ on average.",
+    "status": "found"
+  },
+  "2608.11580": {
+    "arxiv_id": "2608.11580",
+    "title": "RoadWeaver: Large-Scale Lane-Level HD Map Generation from Scratch for Autonomous Driving Simulation",
+    "authors": [
+      "Yueyuan Li",
+      "Zexi Chen",
+      "Weijie Xi",
+      "Mingyang Jiang",
+      "Songan Zhang",
+      "Hanyang Zhuang",
+      "Ming Yang"
+    ],
+    "submission_date": "2026-08-12T02:39:14Z",
+    "latest_updated": "2026-08-12T02:39:14Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11580v1"
+    ],
+    "abstract": "Autonomous driving simulation requires diverse and scalable lane-level HD maps to support long-horizon evaluation across complex road networks. Existing approaches either rely on handcrafted or reconstructed real-world maps, which limits scalability, or generate only local road structures rather than complete HD maps. We present RoadWeaver, a coarse-to-fine framework for from-scratch generation of diverse, large-scale HD maps. RoadWeaver first synthesizes a global road layout, expands it into a connected road network, and then constructs lane-level geometry with topologically consistent lane connectivity. Experimental results show that RoadWeaver achieves a 99.8\\% reachability, a 10.7\\% dead-end ratio, and an endpoint alignment error of 0.24 m. Compared with SOTA generation methods, it reduces endpoint alignment error by 94.4\\% while generating complete HD maps in 1.39--3.50 s. The generated maps can be directly deployed in driving simulators, providing scalable simulation environments for future closed-loop evaluation of autonomous driving systems. The training code and an out-of-the-box implementation of RoadWeaver will be released upon acceptance.",
+    "status": "found"
+  },
+  "2608.11581": {
+    "arxiv_id": "2608.11581",
+    "title": "RAGE-Vis:A Relation-Aware Generative Editing Interface for Natural Language-Based Chart Editing",
+    "authors": [
+      "Ziyao Kang",
+      "Yiping Sun",
+      "Linxuan Tian",
+      "Henghuan Qu",
+      "Wei Zeng",
+      "Jiazhi Xia"
+    ],
+    "submission_date": "2026-08-12T02:40:09Z",
+    "latest_updated": "2026-08-31T09:11:29Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.11581v1",
+      "2608.11581v2"
+    ],
+    "abstract": "Natural language offers an easy way for users to express chart editing intents, which are often composite and cross-component (e.g., adjusting style, extending categories, highlighting values). However, existing methods typically map instructions to a single operation or widget, limiting their ability to handle high-level requests and often producing locally plausible but globally inconsistent results due to a lack of awareness of relationships between chart components. To address these challenges, we introduce RAGE-Vis, a Relation-Aware Generative Editing interface for natural language-based chart editing. The system supports bitmap chart images as input and converts them into an editable parameterized intermediate representation. Instead of mapping instructions to a single edit or widget, RAGE-Vis parses composite intents, identifies targets and scopes, and generates hierarchical editing panels for underspecified requests, enabling users to adjust both global settings and local parameters. Furthermore, RAGE-Vis identifies potentially affected fields based on visual encoding relations, structural relationships, and expressive consistency relations, and organizes them into actionable widgets to support cross-component coordinated controls. Through two case studies, we demonstrate the applicability of RAGE-Vis in complex editing tasks, including style adjustment, data extension, order rearrangement, legend layout, and color mapping. A user study further shows that participants can effectively handle underspecified requests, explore candidate alternatives, and maintain cross-component consistency with RAGE-Vis.",
+    "status": "found"
+  },
+  "2608.11582": {
+    "arxiv_id": "2608.11582",
+    "title": "A Hybrid Framework of Vision Transformer and Gated Recurrent Unit for Detection of Mosquito Diseases",
+    "authors": [
+      "Danial Sharifrazi",
+      "Saadat Behzadi",
+      "Nouman Javed",
+      "Roohallah Alizadehsani",
+      "Prasad N. Paradkar",
+      "Asim Bhatti"
+    ],
+    "submission_date": "2026-08-12T02:43:47Z",
+    "latest_updated": "2026-08-12T02:43:47Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11582v1"
+    ],
+    "abstract": "Identifying dengue virus-infected mosquitoes from control mosquitoes is a major challenge in analyzing mosquito locomotion behavior due to the small size and complexity of the video background. Conventional AI methods are often unable to extract accurate features from video frames and produce erroneous features. In this study, a three-step framework is introduced: first, mosquitoes are identified and the background is removed using the YOLO 11M model, then visual features are extracted using the Vision Transformer (ViT), and finally the videos are classified with a convolutional GRU (ConvGRU) classifier. A comparative analysis of different models, including Recurrent Neural Network (RNN), Long Short-Term Memory (LSTM), Gated Recurrent Unit (GRU), and their convolutional versions showed that the ConvGRU model achieved the best performance; it achieved 88.88% accuracy, 84.45% precision, 82.82% recall, and 82.81% F1 score. These results demonstrate that combining convolutional models with sequence-based networks, especially in the ConvGRU model, allows the simultaneous extraction of precise spatial features and long-term temporal dependencies from mosquito movements. Finally, the proposed framework provides a reliable solution for analyzing mosquito behavior in complex environments.",
+    "status": "found"
+  },
+  "2608.11583": {
+    "arxiv_id": "2608.11583",
+    "title": "Localizing Safety Alignment: MLP Layers and Mid-Network Blocks Encode Refusal Behavior in Large Language Models",
+    "authors": [
+      "Mingyu Zong",
+      "Sampad Mohanty",
+      "Bhaskar Krishnamachari"
+    ],
+    "submission_date": "2026-08-12T02:44:30Z",
+    "latest_updated": "2026-08-12T02:44:30Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11583v1"
+    ],
+    "abstract": "Safety alignment in large language models is often treated as a distributed property of the entire network, yet its practical brittleness suggests that refusal behavior may be concentrated in a smaller set of parameters. This work addresses where safety-aligned refusal is encoded by transplanting weights from aligned models into matched unaligned base models at multiple levels of granularity. Using two open-weight model pairs and four safety benchmarks, we conducted experiments to compare the effects of replacing attention weights, MLP weights, contiguous layer regions, and MLP blocks. Across both model families, refusal transfer is dominated by MLP weights: replacing MLP parameters recovers substantially more malicious-prompt refusal than replacing attention parameters, with gains of at least 2.7 times more across benchmarks. Within the MLP stack, refusal-relevant parameters exhibit a consistent mid-network concentration, as the block spanning layers 8-11 is selected first in all six greedy searches over model-dataset pairs. The results also show that the composition of safety-relevant components is non-additive: in five of six greedy trajectories, adding more aligned blocks can reduce refusal performance, and selective block subsets can outperform full MLP transplantation on malicious refusal, benign over-refusal, or both. Finally, greedy orders transferred to OR-Bench vary with the source benchmark used to derive them, indicating a benchmark-dependent precision-coverage trade-off. These results suggest that safety alignment in current LLMs is both localized and interaction-sensitive, offering insight into alignment brittleness and potential avenues for targeted safety interventions.",
+    "status": "found"
+  },
+  "2608.11584": {
+    "arxiv_id": "2608.11584",
+    "title": "EnterpriseRAG: Benchmarking LLM Instruction Adherence and Robustness under Non-Ideal Enterprise Retrieval",
+    "authors": [
+      "Huiqi Miao",
+      "Xinbao Sun",
+      "Bo Wang",
+      "Fanyu Meng",
+      "Lijun Mei",
+      "Na Wu",
+      "Di Jin",
+      "Chao Deng",
+      "Junlan Feng"
+    ],
+    "submission_date": "2026-08-12T02:51:04Z",
+    "latest_updated": "2026-08-12T02:51:04Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11584v1"
+    ],
+    "abstract": "Enterprise RAG deployments face a critical reliability gap: while LLMs satisfy 80% of individual constraints, only 26.8% of responses meet all requirements simultaneously, revealing a 57-point orchestration gap. Existing benchmarks assume clean retrieval with simple queries, failing to capture production conditions where noisy documents and multi-dimensional constraints coexist. We introduce EnterpriseRAG, a benchmark of 983 expert-validated samples across six domains that systematically simulates three failure modes absent from prior work: retrieval noise, knowledge gaps, and factual conflicts, coupled with complex instructions. Evaluation of 13 state-of-the-art LLMs reveals a severe instruction adherence collapse, where high per-constraint satisfaction masks low holistic compliance. Critical findings expose deep barriers under knowledge gaps and factual conflicts, even with reasoning-enhanced inference, indicating production RAG requires explicit context-aware protocols and calibrated judgment. EnterpriseRAG provides a reproducible foundation for measuring and closing these gaps, directly informing deployment decisions for enterprise-scale RAG systems. We will release the benchmark and evaluation framework upon publication.",
+    "status": "found"
+  },
+  "2608.11585": {
+    "arxiv_id": "2608.11585",
+    "title": "Unifying Physical Backpropagation",
+    "authors": [
+      "Cyrill Bösch",
+      "Yigithan Gediz",
+      "Clara C. Wanjura",
+      "Hakan E. Türeci"
+    ],
+    "submission_date": "2026-08-12T02:53:39Z",
+    "latest_updated": "2026-09-23T00:56:01Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.11585v1",
+      "2608.11585v2"
+    ],
+    "abstract": "Physical computing systems exploit device dynamics for computation, but their gradient-based optimization is challenging: backpropagation through a digital twin suffers from a model-reality gap. On-device gradient computation could resolve this issue, and a handful of theoretical and experimental studies have proposed ways to achieve it. Yet a unifying theory identifying when a physical system can compute the gradient of its own performance has been missing. Here we develop such a unification based on the adjoint method: we identify sufficient conditions under which the adjoint field required for formally exact gradients can be generated on the same hardware that performs the computation. Linear and nonlinear systems obey fundamentally different conditions: for linear systems, damping or gain is admissible provided reciprocity is preserved. For nonlinear trajectory systems, the sufficient conditions are reciprocity of the linearized system and the existence of a time-reversal mirror. Algorithmically, the nonlinear case requires infinitesimal nudging, whereas linear systems admit a finite-amplitude experiment. We recover (quantum) Equilibrium Propagation, Hamiltonian echo backpropagation, fully forward mode training and in situ gradient methods in integrated-photonic and free-space-optical systems. Finally, we show that reciprocity is a special case of more general intertwining conditions. For linear systems, these permit exact on-device gradients in a class of non-Hermitian, non-reciprocal systems. For nonlinear trajectories, they combine with generalized time-reversal mirrors to cover, e.g., PT-symmetric equations. The framework also includes time-dependent parameters and Onsager-reciprocal dynamics, providing a unified basis for formally exact physical learning.",
+    "status": "found"
+  },
+  "2608.11586": {
+    "arxiv_id": "2608.11586",
+    "title": "Higher Regularity of Homogeneous Gradient Compositions for $p$-Laplace-Type Equations",
+    "authors": [
+      "Quoc Hung Nguyen",
+      "Le Xuan Truong"
+    ],
+    "submission_date": "2026-08-12T02:53:45Z",
+    "latest_updated": "2026-08-12T02:53:45Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11586v1"
+    ],
+    "abstract": "In this paper, we study higher regularity of homogeneous functions of the gradient of solutions to the inhomogeneous $p$-Laplace equation $\\operatorname{div}(|Du|^{p-2}Du)=f$. Although a solution need not be of class $C^2$ across its critical set, its gradient is locally Hölder continuous. Suppose that $Du\\in C^{0,α}_{\\rm loc}$ with $α\\le 1/(p-1)$, and let $Φ$ be smooth away from the origin and positively homogeneous of degree $m$. We prove that $Φ(Du)\\in C^k_{\\rm loc}$ whenever $m>k/α$. Moreover, all its derivatives of order at most $k$ vanish on the critical set. The proof uses the intrinsic scale $r\\simeq |Du|^{1/α}$, Schauder estimates for a normalized uniformly elliptic equation, and an extension lemma across the critical set. We also obtain corresponding results for autonomous anisotropic equations and for elliptic and parabolic $p$-Laplace systems, under the appropriate Hölder assumption on the gradient. Finally, the same argument gives $C^k$ regularity criteria for high powers of nonnegative solutions to the porous medium equation.",
+    "status": "found"
+  }
+}

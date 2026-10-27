@@ -1,0 +1,453 @@
+{
+  "2609.14954": {
+    "arxiv_id": "2609.14954",
+    "title": "A time explicit multiscale framework for heterogeneous elastic wave propagation based on multipoint stress discretization",
+    "authors": [
+      "Xiang Zhong",
+      "Eric T. Chung",
+      "Shubin Fu"
+    ],
+    "submission_date": "2026-09-14T02:58:01Z",
+    "latest_updated": "2026-09-14T02:58:01Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14954v1"
+    ],
+    "abstract": "Simulating elastic wave propagation in heterogeneous media presents significant mathematical and computational challenges, since resolving fine-scale material variations requires extremely fine spatial discretizations, while mixed stress--displacement formulations typically lead to large saddle-point systems that are not well suited for efficient time integration. Moreover, conventional multiscale reductions generally produce nontrivial coarse mass matrices, thereby requiring additional linear solves at every time step and diminishing the advantages of explicit schemes. To address these difficulties, we develop a time explicit multiscale method based on a multipoint stress control volume discretization. The central innovation is a unified spatial--temporal reduction strategy that simultaneously removes two dominant algebraic bottlenecks: the complex global fine-scale mixed solve and the repeated coarse-scale mass solve arising in conventional multiscale time stepping. More specifically, the stress and auxiliary rotation variables are eliminated locally, leading to a symmetric positive definite reduced stiffness operator, upon which a multiscale space is constructed using a density-weighted local spectral problem. The associated projected mass bilinear form preserves the physical mass inner product and gives an identity mass matrix under a density-orthonormal auxiliary basis, leading naturally to an explicit central-difference scheme. We establish discrete energy stability under a coarse-scale CFL condition and derive convergence estimates for both the density-weighted displacement and the locally recovered stress. Numerical experiments in heterogeneous media validate the theoretical results and demonstrate the effectiveness of the proposed method for elastic wave propagation.",
+    "status": "found"
+  },
+  "2609.14955": {
+    "arxiv_id": "2609.14955",
+    "title": "Measurement of Cosmic-Ray Density in the Spiral Arms toward Galactic Anticenter",
+    "authors": [
+      "Jia-hao Liu",
+      "Bing Liu",
+      "Rui-zhi Yang"
+    ],
+    "submission_date": "2026-09-14T02:59:57Z",
+    "latest_updated": "2026-09-14T02:59:57Z",
+    "revised_dates": null,
+    "venue": "J.-H. Liu, B. Liu, R.-Z. Yang, The Astrophysical Journal 1008, no. 2 (2026) 143",
+    "latest_version": 1,
+    "versions": [
+      "2609.14955v1"
+    ],
+    "abstract": "Using nearly 17 years of Fermi-LAT data, we analyzed the diffuse gamma-ray emission associated with different spiral arms of the Milky Way in the ranges $l = 105^\\circ$ to $145^\\circ$ and $b = -5^\\circ$ to $5^\\circ$. The gamma-ray emissions from these spiral arms all exhibited clear pion-bump features, which can be well explained by a power-law spectrum of cosmic-ray protons. The spectral indices corresponding to the three distinct spiral arms -- the Local Arm, the Perseus Arm, and the Outer Arm -- are found to be approximately $-2.75$, $-2.55$, and $-2.80$, respectively. The energy densities of the cosmic rays above 10 GeV are estimated to be all around 0.2$\\rm~eV~cm^{-3}$. We further compared our results with previous studies, which have established various propagation models predicting that cosmic ray density decreases and spectra soften with increasing Galactocentric radius. We found higher densities and harder spectral indices than predicted in the outer Galaxy, suggesting possible contributions from a larger halo, slower magnetic field decay, or a combination of these and other effects. In particular, the spectral hardening observed in the Perseus Arm may be attributed to locally enhanced cosmic-ray acceleration.",
+    "status": "found"
+  },
+  "2609.14956": {
+    "arxiv_id": "2609.14956",
+    "title": "CAL-MOS: Bridging Layers with Adapters for Robust MOS Prediction Across Speech Foundation Models",
+    "authors": [
+      "Alef Iury Siqueira Ferreira",
+      "Pedro Lustosa Rege Botelho",
+      "Fernanda Silva",
+      "Daniel Casanova",
+      "Rafael Faustino",
+      "Frederico Oliveira",
+      "Arlindo Galvão Filho",
+      "Anderson da Silva Soares"
+    ],
+    "submission_date": "2026-09-14T03:00:06Z",
+    "latest_updated": "2026-09-14T03:00:06Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14956v1"
+    ],
+    "abstract": "Speech Quality Assessment (SQA) is essential for modern speech technologies, and recent non-intrusive SQA predictors increasingly rely on Speech Foundation Models (SFMs). However, because SFMs expose representations from many layers, it remains unclear which depths are most informative for MOS prediction and how multi-layer information should be combined reliably across backbones and datasets. We benchmark ten SFMs on four MOS datasets under three regimes: full fine-tuning, last-layer probing with a frozen encoder, and naive cross-layer weighted aggregation. We find that the best layer is strongly backbone- and dataset-dependent, and that naive weighted fusion can be unstable across settings. We further evaluate a layer-calibrated aggregation variant that applies per-layer adapters before pooling, which improves the robustness of multi-layer fusion and narrows the gap to full fine-tuning while keeping the backbone frozen.",
+    "status": "found"
+  },
+  "2609.14957": {
+    "arxiv_id": "2609.14957",
+    "title": "Majority dynamics on sparse random graphs",
+    "authors": [
+      "Gopal Goel",
+      "Ashwin Sah"
+    ],
+    "submission_date": "2026-09-14T03:04:28Z",
+    "latest_updated": "2026-09-14T03:04:28Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14957v1"
+    ],
+    "abstract": "Consider a simple undirected graph $G$ on $N$ vertices, with each vertex holding an opinion from one of two options. Starting from the initial opinions on day 1, we run majority dynamics: on each subsequent day, all vertices simultaneously adopt the majority opinion among their neighbors, retaining their current opinion in case of a tie. A well-studied conjecture of Benjamini, Chan, O'Donnell, Tamuz, and Tan states that if $G$ is drawn from the random binomial model $\\mathbb{G}(N,p)$, and if the starting opinions are chosen uniformly at random, then as long as $pN \\to \\infty$ the network will converge to 99% consensus with high probability. We confirm this conjecture as long as $pN \\ge N^{\\varepsilon}$ for any fixed $\\varepsilon > 0$, showing that full unanimity is reached with high probability in $O(1/\\varepsilon)$ days. This result improves on a line of results by Fountoulakis, Kang, and Makai, who achieve $\\varepsilon = 1/2$; Chakraborti, Kim, Lee, and Tran, who achieve $\\varepsilon = 2/5$; and Jaffe, who achieves $\\varepsilon = 1/3$. The proof technique involves iteratively revealing the \"opinion histories\" for each vertex through time, keeping track of the degrees between every vertex and each of $2^k$ opinion history classes on day $k$. Our analysis of this process requires intricate estimates for degree-constrained random graph models using graph enumeration tools from the work of McKay and Wormald as well as Canfield, Greenhill, and McKay, and their extensions by Liebenau and Wormald. In doing so, we connect the discrete dynamics to a deterministic idealized process, whose leading-order behavior is described by conditional Gaussian probabilities and expectations.",
+    "status": "found"
+  },
+  "2609.14958": {
+    "arxiv_id": "2609.14958",
+    "title": "A Calibrated Reduced-Order Force Model for Bacterial Hydrodynamics in Free Space and Near a Planar Boundary",
+    "authors": [
+      "Hoa Nguyen",
+      "William Wallace",
+      "Orrin Shindell",
+      "Frank Healy",
+      "Ricardo Cortez",
+      "Bruce Rodenborn"
+    ],
+    "submission_date": "2026-09-14T03:05:37Z",
+    "latest_updated": "2026-09-14T03:05:37Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14958v1"
+    ],
+    "abstract": "Accurately resolving the near-field flow generated by many swimming bacteria while retaining computational efficiency remains challenging. Stokeslet-based models with many force points can capture detailed near-field hydrodynamics but are computationally expensive. Other approaches include far-field and low-order models that use fewer points but sacrifice near-field accuracy. We introduce a reduced-order framework based on the method of regularized Stokeslets that preserves important near-field flow features while using substantially fewer force points. The method replaces the force distribution of a high-fidelity model with forces on a sparse set of points whose strengths are determined by constrained least-squares calibration to the high-fidelity velocity field of a single bacterium. The calibrated forces yield an approximation that preserves the dominant reference-flow structure while satisfying the force-free and torque-free conditions of self-propelled swimming. Principal component analysis is then used to represent the phase-dependent variation of the calibrated forces using only a few dominant modes. By fitting the corresponding modal coefficients as continuous functions of flagellar phase, the reduced-order forces can be approximated at any phase of the flagellar cycle. The framework is applied in both free space and near a no-slip planar boundary, where it preserves the dominant flow structures and captures the wall-induced redirection of the surrounding fluid. The optimized cell-body regularization parameter depends weakly on wall distance, and the remaining velocity discrepancy is concentrated primarily near the cell body. By substantially reducing the number of force points, the reduced-order model lowers both the computational cost and memory requirements of velocity-field evaluation, making large-domain simulations of multi-swimmer flow fields more practical.",
+    "status": "found"
+  },
+  "2609.14959": {
+    "arxiv_id": "2609.14959",
+    "title": "High-Probability Nash Regret for Decentralized Learning in Markov $α$-Potential Games: Episodic and Fully Online Asynchronous Algorithms with Applications to Markov Congestion Games",
+    "authors": [
+      "S. Rasoul Etesami"
+    ],
+    "submission_date": "2026-09-14T03:06:51Z",
+    "latest_updated": "2026-09-14T03:06:51Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14959v1"
+    ],
+    "abstract": "We study decentralized learning of Nash equilibria (NE) in infinite-horizon discounted Markov games under bandit feedback, focusing on Markov $α$-potential games. We develop KL-projected natural policy gradient (NPG) algorithms in two settings: an episodic setting with frozen policies during sampling and a fully online setting in which players receive a single realized cost sample per time step and update their policies asynchronously along a continuing trajectory. We establish finite-time high-probability NE regret bounds of order $\\widetilde O(T^{-1/4})$ and $\\widetilde O(T^{-2/15})$ for the episodic and fully online settings, respectively, up to fixed approximation terms. Crucially, our bounds eliminate the distribution-mismatch coefficient, which can scale prohibitively with the size of the state space, while accommodating potential approximation, estimation-oracle bias, and transition sensitivity. We further identify a state-wise potential structure that yields sharper guarantees with additive dependence on the potential approximation error $α$. We specialize the framework to independent-resource Markov congestion games (IMCGs), establish their approximate-potential and transition-sensitivity properties, and construct decentralized estimation oracles from realized costs. As an application, we introduce strategic online job scheduling on stochastic machines and obtain a scalable decentralized algorithm for learning stable dispatching policies. Overall, our results provide the first finite-time high-probability NE regret guarantees for fully online asynchronous decentralized learning in Markov $α$-potential games, remove distribution-mismatch coefficients from the regret bounds, accommodate fixed estimation-oracle bias, and provide scalable decentralized learning with finite-time guarantees for IMCGs.",
+    "status": "found"
+  },
+  "2609.14960": {
+    "arxiv_id": "2609.14960",
+    "title": "Universal Defect Statistics in Reverse Quenches",
+    "authors": [
+      "Eduard J. Braun",
+      "Daniel Rubin",
+      "Margaux Cartier",
+      "Gerhard Zürn",
+      "Matthias Weidemüller"
+    ],
+    "submission_date": "2026-09-14T03:08:14Z",
+    "latest_updated": "2026-09-14T03:08:14Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14960v1"
+    ],
+    "abstract": "We derive an extension of the generalized Kibble-Zurek mechanism (KZM), which provides a stochastic approach to defect formation, to reverse quench protocols. While the universal scaling behavior of defects in reverse quenches has been observed previously in certain 1D chains, we argument from a probability-theoretical perspective that this scaling persists in general, and is given by the double of the defect density variance in forward quenches. We validate these results analytically for the one-dimensional transverse field Ising model and numerically for its bond-disordered variant governed by an infinite randomness fixed point. Starting from the paramagnetic phase, this protocol relies solely on global control of the system's magnetic field and global magnetization measurements, enabling the extraction of critical exponents without microscopic access to individual defects. This approach offers a robust and experimentally feasible method for probing quantum critical behavior through entirely global operations.",
+    "status": "found"
+  },
+  "2609.14961": {
+    "arxiv_id": "2609.14961",
+    "title": "Discrete $C^*$-Frobenius Algebras and Infinite-Index Extensions in Algebraic Quantum Field Theories",
+    "authors": [
+      "Ziyun Xu"
+    ],
+    "submission_date": "2026-09-14T03:08:39Z",
+    "latest_updated": "2026-09-14T03:08:39Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14961v1"
+    ],
+    "abstract": "We introduce discrete $C^*$-Frobenius algebras as categorical data for constructing infinite-index extensions of Möbius covariant nets. The underlying representation is a countable direct sum of simple dualized modules, while the direct sum itself is not necessarily dualizable. Accordingly, rather than requiring a single bounded multiplication morphism, we work with compatible families of bounded left and right multiplication morphisms. Using Bin Gui's theory of categorical extensions, we associate to every discrete $C^*$-Frobenius algebra two (generally non-local) Möbius covariant extensions generated by left and right charged fields, respectively. If the discrete $C^*$-Frobenius algebra is commutative, the two extensions coincide and yield a local Möbius covariant extension. As applications, for every $C^*$-tensor category generated by an invertible object with trivial self-braiding such that its fusion product rule is given by $\\mathbb{Z}$, we construct two classes of examples: the simple current extension by $\\mathbb{Z}$ and the discrete Longo-Rehren construction.",
+    "status": "found"
+  },
+  "2609.14962": {
+    "arxiv_id": "2609.14962",
+    "title": "Geometric Flow enhanced Graph Coarsening",
+    "authors": [
+      "Chaoqun Fei",
+      "Guoxuan Li",
+      "Tinglve Zhou",
+      "Chuanqing Wang",
+      "Yangyang Li"
+    ],
+    "submission_date": "2026-09-14T03:10:43Z",
+    "latest_updated": "2026-09-14T03:10:43Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14962v1"
+    ],
+    "abstract": "Recently, researchers have proposed a graph pooling operation, akin to the pooling process in conventional convolutional neural networks (CNN), aimed at reducing the computation cost of Graph convolutional neural networks (GCNNs). While most GCNN-based methods treat graph pooling as a node clustering problem and propose learning a cluster assignment matrix, existing clustering-based pooling methods tend to focus solely on the rough topology information of graphs, neglecting the exploitation of higher-order mutual connections among neighbors. In terms of message passing on graph, the ease of information passing on edges reflects the closeness between neighboring nodes, which significantly relies on the interconnectivity among neighbors. In this study, we address this gap by considering such local connection information and introducing a novel graph pooling method named RicciPool. We introduce discrete graph curvature, particularly Ollivier-Ricci curvature, as a measure of higher-order connectivity around an edge. Subsequently, we construct an Ollivier-Ricci flow formula to reweigh edge weights, leveraging the crucial information provided by Ricci curvature, particularly vital for extracting clusters in graphs. Building upon this foundation, we utilize the spectral clustering technique to learn a new cluster assignment matrix. Experimental results on multiple bioinformatics protein datasets and social networks underscore the effectiveness of our proposed method.",
+    "status": "found"
+  },
+  "2609.14963": {
+    "arxiv_id": "2609.14963",
+    "title": "Can We Triage LLM Translation Errors in Classical Texts Without Human References? Source Novelty, GEMBA Scoring, and Budgeted Review through Pali-to-English Translation",
+    "authors": [
+      "Máté Metzger"
+    ],
+    "submission_date": "2026-09-14T03:11:09Z",
+    "latest_updated": "2026-09-14T03:11:09Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14963v1"
+    ],
+    "abstract": "As large language models become capable translators of classical texts, a key challenge is deciding which outputs need expert review when no human reference exists. This study tests reference-free error triage through Pali-to-English translation. Three LLMs translated 15,493 passages. Five signals were compared: source novelty, source-candidate embedding distance, peer-translation disagreement, English-to-Pali backtranslation, and no-reference GEMBA scoring. Signals were calibrated on a 3,000-item reference-informed LLM-adjudicated sample and checked against a 500-item author-adjudicated anchor. Human references supported calibration and validation only; they were never used to compute the risk signals. Source novelty was a useful source-side risk prior but not a per-candidate error detector. Peer disagreement and backtranslation provided secondary signal. The strongest method was no-reference GEMBA scoring by a panel of models generally regarded as stronger than the translators: reviewing the top 10% by GEMBA risk captured 81.6% of panel-major errors in the calibration set. GEMBA also remained the best reference-free signal against the author anchor. A same-tier panel, with self-scoring excluded, remained useful but performed worse, indicating that evaluator strength matters beyond the prompt alone. A budgeted workflow is proposed, combining source novelty, peer disagreement, and stronger candidate-aware judging to allocate human review. Transfer to other classical languages, including Latin, Ancient Greek, and Sanskrit, remains to be tested.",
+    "status": "found"
+  },
+  "2609.14964": {
+    "arxiv_id": "2609.14964",
+    "title": "Exact Breit-Rabi formulae for the nitrogen-vacancy center in diamond",
+    "authors": [
+      "Alex Tritt",
+      "Lincoln D. Turner",
+      "Michael S. J. Barson"
+    ],
+    "submission_date": "2026-09-14T03:15:06Z",
+    "latest_updated": "2026-09-14T03:15:06Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14964v1"
+    ],
+    "abstract": "The hyperfine structure that the nitrogen-vacancy (NV) center in diamond has with its nitrogen nucleus is of immense importance for quantum sensing and quantum computing. Current methods of calculating the NV hyperfine energy eigenvalues and eigenstates with respect to an axial magnetic field - i.e., calculating the NV Breit-Rabi formula - resort to numerical methods and analytic approximations. Here we provide an exact, closed-form expression to the NV hyperfine energy eigenvalues and eigenstates for both the nitrogen-14 and -15 cases.",
+    "status": "found"
+  },
+  "2609.14965": {
+    "arxiv_id": "2609.14965",
+    "title": "MoVT: Video-Augmented Motion Tokenizer for Text-to-Motion Generation",
+    "authors": [
+      "Beibei Jing",
+      "Tianle Guo",
+      "Youjia Zhang",
+      "Zikai Song",
+      "Yawei Luo",
+      "Junqing Yu",
+      "Tao Guan",
+      "Wei Yang"
+    ],
+    "submission_date": "2026-09-14T03:15:22Z",
+    "latest_updated": "2026-09-14T03:15:22Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14965v1"
+    ],
+    "abstract": "Text-driven 3D human motion generation models face significant challenges in responding to diverse and unconstrained textual prompts, primarily due to the limited availability of 3D motion training data. To address this, we introduce MoVT, a novel framework that effectively leverages the extensive range of human action videos to enhance text-to-motion generation. At the core of our approach is the cross-modal augmented motion tokenizer, which projects discrete 3D motion tokens into the 2D domain. This projection allows us to enrich the motion codebook with complex, real-world motion patterns derived from videos. The enriched discrete tokens are then mapped back to the 3D domain, resulting in aligned 3D and 2D codebooks with an enhanced capacity to represent intricate motions. These enhanced codebooks are integrated into a generative masked transformer, which predicts masked motion token indices in a modality-agnostic manner. This enables the use of text-index pairs, generated from the 2D codebook and annotated motion videos, to further enhance the generator. Extensive empirical evaluations show that MoVT performs favorably against prior state-of-the-art methods across multiple key metrics.",
+    "status": "found"
+  },
+  "2609.14966": {
+    "arxiv_id": "2609.14966",
+    "title": "Forecasting Coupled Dark Energy Parameters with the One-Loop Galaxy Power Spectrum",
+    "authors": [
+      "Bilal Tüdes",
+      "Luca Amendola"
+    ],
+    "submission_date": "2026-09-14T03:18:22Z",
+    "latest_updated": "2026-09-29T21:10:35Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2609.14966v1",
+      "2609.14966v2",
+      "2609.14966v3"
+    ],
+    "abstract": "We forecast constraints on the parameters of the coupled dark energy model using DESI and Euclid data with the one-loop galaxy power spectrum. We investigate the distinguishability of our model from the zero-coupling scenario at the $1σ$ level and explore how the parameter constraints depend on the fiducial coupling $β_{\\rm fid}$, the fixed potential slope parameter $ν$, the maximum wavenumber $k_{\\max}$, and different prior choices. We find that the inclusion of mildly non-linear scales improves the constraints on the coupling by roughly a factor of five. Then, we address the question of which is the minimum value of $β$ that can be distinguished from zero at $1σ$. We find that for our reference case $k_{\\rm max}=0.2 h/$Mpc, $β=0.15$ lies roughly $1σ$ above zero. In the most optimistic case with $k_{\\rm max}=0.3 h/$Mpc and including a Planck prior on $Ω_{m0}$, this value can be reduced to $0.05$. These values are substantially larger than the current constraints on $β$, but the latter have been obtained assuming $β$ to be constant from at least the decoupling epoch to today, while we only employ late-time data. We conclude therefore that only models that allow for time-varying couplings can be detected with late-time datasets.",
+    "status": "found"
+  },
+  "2609.14967": {
+    "arxiv_id": "2609.14967",
+    "title": "A Corpus-Aligned Uthmani-to-Standard Quranic Word Mapping and a Deterministic Recitation Validator",
+    "authors": [
+      "Yahya Mohamed Elnawasany"
+    ],
+    "submission_date": "2026-09-14T03:20:42Z",
+    "latest_updated": "2026-09-14T03:20:42Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14967v1"
+    ],
+    "abstract": "Quranic text is distributed in two orthographic forms that are byte-level distinct: the Uthmani script used in every printed mushaf, and the Standard (Imla'i) Arabic form that every mainstream Arabic NLP tool is built for. The gap is concentrated in one Unicode character, U+0670 (superscript alef), which appears in some of the most frequently recited words in the Quran and is silently mishandled by general-purpose Arabic normalizers. We release a 2,290-pair, corpus-aligned Uthmani-to-Standard word mapping constructed by aligning the complete 6,236-verse Quran across both orthographic forms, together with a seven-step text normalization pipeline built on it. Normalizing both forms of all 6,236 verses through that pipeline yields identical strings for 90.9% of verses, and we characterize the residual divergence rather than assert that it is closed. On top of the normalized text, we build a deterministic, LLM-free Quranic recitation validator using a four-layer verse-matching search (exact, morphological, relaxed, fuzzy) and word-error-rate-graded feedback across five severity tiers. The validator scores 98.4% (122/124) on a 124-case suite emitted by the released test harness, and both failures share one mechanism: a single substitution error can make a different verse an exact match. A full-corpus census additionally quantifies an inherent text-only ambiguity affecting 16.5% of verses, and on 34 recitation transcripts drawn from a deployed Arabic ASR system the validator identifies the correct verse in every case. We release the mapping, the script that builds it, the validator, and the evaluation harness under open licenses; every number in this paper except the deployment measurement, whose transcripts are not ours to publish, is reproduced by running them.",
+    "status": "found"
+  },
+  "2609.14968": {
+    "arxiv_id": "2609.14968",
+    "title": "HiGFRL: Hierarchical Graph Fusion-Driven Reinforcement Learning for Dependency-Aware Task Scheduling in Heterogeneous Cloud",
+    "authors": [
+      "Tiangang Li",
+      "Shi Ying",
+      "Xiangbo Tian"
+    ],
+    "submission_date": "2026-09-14T03:21:40Z",
+    "latest_updated": "2026-09-14T03:21:40Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14968v1"
+    ],
+    "abstract": "Online scheduling of dependency-aware tasks in heterogeneous cloud clusters is a fundamental yet challenging problem due to the complex interplay between DAG topologies and multi-dimensional resource constraints. While DRL has shown promise, existing GNN-based approaches often struggle to efficiently model high-order topological dependencies and suffer from loose coupling between task and resource states, leading to myopic scheduling decisions. To address these limitations, we propose HiGFRL, a Hierarchical Graph Fusion-Driven Reinforcement Learning framework. HiGFRL constructs a novel three-level state representation comprising a Static Hypergraph, a Dynamic Global Graph, and a Local Bipartite Graph to explicitly model the interplay between task dependencies and real-time cluster dynamics. Specifically, we design a fusion-driven dual-network architecture to optimize RL decision-making, where a Context Fusion Allocator integrates local bipartite matching features with fused global context to execute precise task-to-node allocation, and a Global State Evaluator leverages the global dynamic graph representation to accurately estimate expected long-term cumulative reward. Furthermore, we incorporate a topology-prior-guided hybrid reward mechanism that distills static topological priors into the learning process to accelerate convergence. Extensive experiments using real-world Alibaba cluster traces demonstrate that HiGFRL significantly outperforms heuristics and DRL baselines. Specifically, in challenging large-scale high-load scenarios, HiGFRL reduces the Makespan by up to 32.55%, and optimizes the average task flow time and average task wait time by 13.58% and 13.79%, respectively. Experimental results confirm that HiGFRL not only significantly improves cluster throughput but also ensures superior QoS by substantially reducing queuing delays. Code Release:https://github.com/igeng/HiGFRL.",
+    "status": "found"
+  },
+  "2609.14969": {
+    "arxiv_id": "2609.14969",
+    "title": "Online Language Adaptive Sampling for Better Distributed Cross-lingual Gains",
+    "authors": [
+      "Quang Phuoc Nguyen",
+      "Félix Gaschi",
+      "David Anugraha",
+      "Santiago Martínez Novoa",
+      "En-Shiun Annie Lee"
+    ],
+    "submission_date": "2026-09-14T03:23:26Z",
+    "latest_updated": "2026-09-14T03:23:26Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14969v1"
+    ],
+    "abstract": "Realignment is a promising approach for improving the cross-lingual transfer ability of multilingual language models, particularly for extremely low-resource languages (LRLs). However, existing realignment methods rely on uniform and random sampling of parallel sentences across languages, which may be suboptimal under limited batch sizes. In practice, models may benefit from seeing certain languages more frequently, especially those that are poorly aligned, and the optimal distribution can evolve throughout training. In this work, we propose a simple yet effective adaptive sampling strategy that assigns trainable sampling probabilities to each language. Languages that contribute more to the realignment loss are sampled more frequently in subsequent batches, and the optimal distribution can evolve throughout training. Our method employs an inner-outer optimization loop with a small overhead, leading to consistent performance improvements and, more importantly, distributing the gains across languages. We observed a $+0.67$ average performance increase on all tasks with XLM-R, and $+0.60$ with Gemma 2 9B compared with uniform realignment. Furthermore, our method is robust across different models. Code available at https://github.com/felixgaschi/multilingual-alignment-and-transfer.",
+    "status": "found"
+  },
+  "2609.14970": {
+    "arxiv_id": "2609.14970",
+    "title": "Towards a knowledge-enhanced single-cell foundation model",
+    "authors": [
+      "Hanqing Zhang",
+      "Jie Bao",
+      "Mei Ma",
+      "Shuai Liu",
+      "Jiaying Ma",
+      "Jiaguan Liu",
+      "Jiaxiao Li",
+      "Zhenbo Li",
+      "Wenwen Gong",
+      "Zhijun Ca"
+    ],
+    "submission_date": "2026-09-14T03:23:55Z",
+    "latest_updated": "2026-09-14T03:23:55Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14970v1"
+    ],
+    "abstract": "Single-cell foundation models (scFMs) increasingly rely on large-scale transcriptomic pretraining, yet expanding pretraining data can yield diminishing gains while substantially increasing computational cost. Our data scaling analyses showed that incorporating biological knowledge, including cell-level text annotation and gene-level regulatory information, provided additional scaling dimension than simply increasing data size. Motivated by this observation, we present scKITE, a simple yet effective scFM that integrates cell-annotation and gene-regulatory supervision into a shared transcriptomic Transformer encoder through lightweight auxiliary decoders. These decoders are used only during pretraining and subsequently discarded, yielding a general-purpose encoder enriched with biological knowledge for downstream applications. With only 179,067 pretraining samples, i.e., less than 0.5\\% of those used by previous strong scFMs, scKITE outperformed these models across diverse downstream tasks, highlighting knowledge-enhanced pretraining as a promising paradigm for biologically grounded scFMs.",
+    "status": "found"
+  },
+  "2609.14971": {
+    "arxiv_id": "2609.14971",
+    "title": "Opacity Is Not Just Opacity",
+    "authors": [
+      "Chunran Zhang",
+      "Tianrui Li"
+    ],
+    "submission_date": "2026-09-14T03:23:56Z",
+    "latest_updated": "2026-09-22T09:45:50Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2609.14971v1",
+      "2609.14971v2",
+      "2609.14971v3"
+    ],
+    "abstract": "Web graphics travel with content across pages and themes, where changing backgrounds can require recoloring and maintenance. Opacity already makes a fixed object's appearance depend on its background, yet is usually understood only as how much the object obscures it. In fact, opacity controls the scaling of the object-background color difference; transparency is only one effect of this relationship. Zero places the output at the background and one at the source color, but difference scaling need not stop at either position. We retain the compositing expression and extend the coefficient domain from $[0,1]$ to the real numbers: negative values reverse the difference, whereas values above one expand it in the same direction. We focus on same-direction expansion for reusing Web graphics across backgrounds. Each object carries a fixed source color and coefficient, while the actual background determines the enhancement direction. Background-adaptive contrast enhancement thus becomes part of the object's compositing properties, reducing the design and maintenance of separate color variants. The implementation reuses the original equation without increasing the per-pixel arithmetic operation count within the same pipeline. Enumerating all 8-bit sRGB source colors on 16 predefined light and dark canvases, a fixed $α=1.1$ increases the contrast ratio in 99.8145% of combinations. Without changing source colors, 4.8346% of all combinations newly reach the $3:1$ contrast threshold. Output validation and timing across three browsers demonstrate implementation in the same WebGL pipeline, with no sustained additional runtime observed.",
+    "status": "found"
+  },
+  "2609.14972": {
+    "arxiv_id": "2609.14972",
+    "title": "Learning to Solve Stochastic Controls with Unknown Drifts and Running Rewards: Theory, Algorithms and Convergence",
+    "authors": [
+      "Jin Ma",
+      "Gaozhan Wang",
+      "Jianfeng Zhang",
+      "Xunyu Zhou"
+    ],
+    "submission_date": "2026-09-14T03:25:42Z",
+    "latest_updated": "2026-09-14T03:25:42Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14972v1"
+    ],
+    "abstract": "We study continuous-time and possibly high-dimensional stochastic control problems where drift coefficients and running reward functions are unknown. Due to these missing model primitives, we take the exploratory, reinforcement learning (RL) framework of Wang, Zariphopoulou, and Zhou(2020) with relaxed controls and entropy regularization. The objective is to develop theoretically grounded, efficient and scalable RL algorithms to learn both the optimal value functions (which also solve the exploratory HJB equation) and optimal exploratory feedback control policies. When the diffusion coefficients do not contain control, we employ probabilistic representations of both the optimal value function and its gradient based on an auxiliary state process depending only on the diffusion part of the original dynamics. With a delicate analysis on some properly defined mappings and their fixed points, this leads to the introduction of our policy iteration algorithms and their convergence. We demonstrate the performance of our algorithms through various numerical examples. Finally, we study a special control-dependent diffusion case where probability representation of the Hessian is called for.",
+    "status": "found"
+  },
+  "2609.14973": {
+    "arxiv_id": "2609.14973",
+    "title": "PhysBrain 1.5: From Vision-Language Models to Physical Foundation Models",
+    "authors": [
+      "DeepCybo Team",
+      "Yu Bin",
+      "Haipeng Cao",
+      "Zheng Chang",
+      "Kai Chen",
+      "Youning Chen",
+      "Kailin Deng",
+      "Yichao Du",
+      "Xiaotong Fu",
+      "Haoyang Ge",
+      "Yunlong Guo",
+      "Chenliu Hao",
+      "Jiyan He",
+      "Xuguo He",
+      "Yakun Hou",
+      "Kai Hu",
+      "Cong Huang",
+      "Tuopusen Huang",
+      "Yu Huang",
+      "Hong Li",
+      "Peize Li",
+      "Shijie Lian",
+      "Xiaopeng Lin",
+      "Yun Lin",
+      "Haibao Liu",
+      "Haochen Liu",
+      "Qiuzhi Liu",
+      "Shengcai Liu",
+      "Zhiqiang Liu",
+      "Tao Luo",
+      "Peng Ren",
+      "Shuo Ren",
+      "Chaoyi Ruan",
+      "Zhaolong Shen",
+      "Yukun Shi",
+      "Qiyuan Su",
+      "Yuxuan Tian",
+      "Yining Wang",
+      "Changti Wu",
+      "Hao Wu",
+      "Xueyin Xu",
+      "Ruoqi Yang",
+      "Zhaoyang Yang",
+      "Hang Yuan",
+      "Zhaoyang Zeng",
+      "Hanwen Zhang",
+      "Ruimeng Zhang",
+      "Yao Zhang",
+      "Yibo Zhang",
+      "Yuxiang Zhang",
+      "Zhirui Zhang",
+      "Ziyi Zhang",
+      "Zubin Zheng",
+      "Zishen Zhuang"
+    ],
+    "submission_date": "2026-09-14T03:25:46Z",
+    "latest_updated": "2026-09-14T03:25:46Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14973v1"
+    ],
+    "abstract": "We present PhysBrain 1.5, a unified model for understanding physical environments, generating actions, and predicting future states. Motivated by the physical loop of observation, interaction, and environmental change, we bring these capabilities into a common learning framework. Starting from a general vision--language model, we encode language responses, end-effector motion, and dense visual targets as discrete sequences and jointly optimize them with autoregressive next-token prediction. Pre-training draws its embodied supervision entirely from human interaction videos, using task-centered episodes to pair semantic and spatial context with recovered motion and subsequent observations. We then adapt the model through supervised fine-tuning on a mixture of human demonstrations, robot trajectories, and simulated experience. Across 28 embodied understanding benchmarks, our 8B model achieves an average score of 72.5, setting a new open-source state of the art and performing on par with leading proprietary models such as GPT-6-Astra and Gemini 3.6 Flash. It achieves the best open-source results on 14 benchmarks while retaining general multimodal capabilities. Beyond these understanding evaluations, qualitative examples show the model's ability to produce end-effector trajectories and predict future scenes through spatially aligned RGB, depth, and robot-mask outputs.",
+    "status": "found"
+  }
+}

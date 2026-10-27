@@ -1,0 +1,459 @@
+{
+  "2601.21276": {
+    "arxiv_id": "2601.21276",
+    "title": "More Code, Less Reuse: Investigating Code Quality and Reviewer Sentiment towards AI-generated Pull Requests",
+    "authors": [
+      "Haoming Huang",
+      "Pongchai Jaisri",
+      "Shota Shimizu",
+      "Lingfeng Chen",
+      "Sota Nakashima",
+      "Gema Rodríguez-Pérez"
+    ],
+    "submission_date": "2026-01-29T05:13:21Z",
+    "latest_updated": "2026-01-29T05:13:21Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.21276v1"
+    ],
+    "abstract": "Large Language Model (LLM) Agents are advancing quickly, with the increasing leveraging of LLM Agents to assist in development tasks such as code generation. While LLM Agents accelerate code generation, studies indicate they may introduce adverse effects on development. However, existing metrics solely measure pass rates, failing to reflect impacts on long-term maintainability and readability, and failing to capture human intuitive evaluations of PR. To increase the comprehensiveness of this problem, we investigate and evaluate the characteristics of LLM to know the pull requests' characteristics beyond the pass rate. We observe the code quality and maintainability within PRs based on code metrics to evaluate objective characteristics and developers' reactions to the pull requests from both humans and LLM's generation. Evaluation results indicate that LLM Agents frequently disregard code reuse opportunities, resulting in higher levels of redundancy compared to human developers. In contrast to the quality issues, our emotions analysis reveals that reviewers tend to express more neutral or positive emotions towards AI-generated contributions than human ones. This disconnect suggests that the surface-level plausibility of AI code masks redundancy, leading to the silent accumulation of technical debt in real-world development environments. Our research provides insights for improving human-AI collaboration.",
+    "status": "found"
+  },
+  "2601.21277": {
+    "arxiv_id": "2601.21277",
+    "title": "Shortlisting: a Principled Approach",
+    "authors": [
+      "Edith Elkind",
+      "Qishen Han",
+      "Lirong Xia"
+    ],
+    "submission_date": "2026-01-29T05:16:06Z",
+    "latest_updated": "2026-01-29T05:16:06Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.21277v1"
+    ],
+    "abstract": "Shortlisting is the process of selecting a subset of alternatives from a larger pool for further consideration or final decision-making. It is widely applied in social choice and multi-agent system scenarios. The growing demand for participatory decision-making and the continuously expanding space of candidates create an urgent need for efficient and fair shortlisting procedures. However, little principled study has been done on this problem. This blue-sky paper aims to highlight the overlooked significance of shortlisting, distinguish it from related problems, provide initial thoughts, and, more importantly, serve as a call to arms. We envision that principled shortlisting can reduce cognitive burden, enable fair collective decisions, encourage broader participation, and ultimately build trust in democratic systems.",
+    "status": "found"
+  },
+  "2601.21278": {
+    "arxiv_id": "2601.21278",
+    "title": "GeoRC: A Benchmark for Geolocation Reasoning Chains",
+    "authors": [
+      "Mohit Talreja",
+      "Joshua Diao",
+      "Jim Thannikary James",
+      "Radu Casapu",
+      "Tejas Santanam",
+      "Ethan Mendes",
+      "Alan Ritter",
+      "Wei Xu",
+      "James Hays"
+    ],
+    "submission_date": "2026-01-29T05:18:40Z",
+    "latest_updated": "2026-04-20T16:58:56Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.21278v1",
+      "2601.21278v2"
+    ],
+    "abstract": "Vision Language Models (VLMs) are good at recognizing the global location of a photograph -- their geolocation prediction accuracy rivals the best human experts. But many VLMs are startlingly bad at \\textit{explaining} which image evidence led to their prediction, even when their location prediction is correct. In this paper, we introduce GeoRC, the first benchmark for geolocation reasoning chains sourced directly from Champion-tier GeoGuessr experts, including the reigning world champion. This benchmark consists of 800 ``ground truth'' reasoning chains across 500 query scenes from GeoGuessr maps, with expert chains addressing hundreds of different discriminative attributes, such as soil properties, architecture, and license plate shapes. We evaluate LLM-as-a-judge and VLM-as-a-judge strategies for scoring VLM-generated reasoning chains against our expert reasoning chains and find that Qwen 3 LLM-as-a-judge correlates best with human-expert scoring. Our benchmark reveals that while large, closed-source VLMs such as Gemini and GPT 5 rival human experts at predicting locations, they still lag behind human experts when it comes to producing auditable reasoning chains. Small open-weight VLMs such as Llama and Qwen catastrophically fail on our benchmark -- they perform only slightly better than a baseline in which an LLM hallucinates a reasoning chain with oracle knowledge of the photo location but \\textit{no visual information at all}. We believe the gap between human experts and VLMs on this task points to VLM limitations at extracting fine-grained visual attributes from high resolution images. We open source our benchmark for the community to use.",
+    "status": "found"
+  },
+  "2601.21279": {
+    "arxiv_id": "2601.21279",
+    "title": "NEXUS: Bit-Exact ANN-to-SNN Equivalence via Neuromorphic Gate Circuits with Surrogate-Free Training",
+    "authors": [
+      "Zhengzheng Tang"
+    ],
+    "submission_date": "2026-01-29T05:23:56Z",
+    "latest_updated": "2026-01-30T02:45:40Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.21279v1",
+      "2601.21279v2"
+    ],
+    "abstract": "Spiking Neural Networks (SNNs) promise energy-efficient computing through event-driven sparsity, yet all existing approaches sacrifice accuracy by approximating continuous values with discrete spikes. We propose NEXUS, a framework that achieves bit-exact ANN-to-SNN equivalence -- not approximate, but mathematically identical outputs. Our key insight is constructing all arithmetic operations, both linear and nonlinear, from pure IF neuron logic gates that implement IEEE-754 compliant floating-point arithmetic. Through spatial bit encoding (zero encoding error by construction), hierarchical neuromorphic gate circuits (from basic logic gates to complete transformer layers), and surrogate-free STE training (exact identity mapping rather than heuristic approximation), NEXUS produces outputs identical to standard ANNs up to machine precision. Experiments on models up to LLaMA-2 70B demonstrate identical task accuracy (0.00% degradation) with mean ULP error of only 6.19, while achieving 27-168,000$\\times$ energy reduction on neuromorphic hardware. Crucially, spatial bit encoding's single-timestep design renders the framework inherently immune to membrane potential leakage (100% accuracy across all decay factors $β\\in[0.1,1.0]$), while tolerating synaptic noise up to $σ=0.2$ with >98% gate-level accuracy.",
+    "status": "found"
+  },
+  "2601.21280": {
+    "arxiv_id": "2601.21280",
+    "title": "Token Entropy Regularization for Multi-modal Antenna Affiliation Identification",
+    "authors": [
+      "Dong Chen",
+      "Ruoyu Li",
+      "Xinyan Zhang",
+      "Jialei Xu",
+      "Ruosen Zhao",
+      "Zhikang Zhang",
+      "Lingyun Li",
+      "Zizhuang Wei"
+    ],
+    "submission_date": "2026-01-29T05:26:21Z",
+    "latest_updated": "2026-01-30T12:09:31Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.21280v1",
+      "2601.21280v2"
+    ],
+    "abstract": "Accurate antenna affiliation identification is crucial for optimizing and maintaining communication networks. Current practice, however, relies on the cumbersome and error-prone process of manual tower inspections. We propose a novel paradigm shift that fuses video footage of base stations, antenna geometric features, and Physical Cell Identity (PCI) signals, transforming antenna affiliation identification into multi-modal classification and matching tasks. Publicly available pretrained transformers struggle with this unique task due to a lack of analogous data in the communications domain, which hampers cross-modal alignment. To address this, we introduce a dedicated training framework that aligns antenna images with corresponding PCI signals. To tackle the representation alignment challenge, we propose a novel Token Entropy Regularization module in the pretraining stage. Our experiments demonstrate that TER accelerates convergence and yields significant performance gains. Further analysis reveals that the entropy of the first token is modality-dependent. Code will be made available upon publication.",
+    "status": "found"
+  },
+  "2601.21281": {
+    "arxiv_id": "2601.21281",
+    "title": "EGAM: Extended Graph Attention Model for Solving Routing Problems",
+    "authors": [
+      "Licheng Wang",
+      "Yuzi Yan",
+      "Mingtao Huang",
+      "Yuan Shen"
+    ],
+    "submission_date": "2026-01-29T05:30:34Z",
+    "latest_updated": "2026-01-29T05:30:34Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.21281v1"
+    ],
+    "abstract": "Neural combinatorial optimization (NCO) solvers, implemented with graph neural networks (GNNs), have introduced new approaches for solving routing problems. Trained with reinforcement learning (RL), the state-of-the-art graph attention model (GAM) achieves near-optimal solutions without requiring expert knowledge or labeled data. In this work, we generalize the existing graph attention mechanism and propose the extended graph attention model (EGAM). Our model utilizes multi-head dot-product attention to update both node and edge embeddings, addressing the limitations of the conventional GAM, which considers only node features. We employ an autoregressive encoder-decoder architecture and train it with policy gradient algorithms that incorporate a specially designed baseline. Experiments show that EGAM matches or outperforms existing methods across various routing problems. Notably, the proposed model demonstrates exceptional performance on highly constrained problems, highlighting its efficiency in handling complex graph structures.",
+    "status": "found"
+  },
+  "2601.21282": {
+    "arxiv_id": "2601.21282",
+    "title": "WorldBench: Benchmarking Physical Understanding of World Models by Isolating Physics Concepts",
+    "authors": [
+      "Rishi Upadhyay",
+      "Howard Zhang",
+      "Jim Solomon",
+      "Ayush Agrawal",
+      "Yunhao Ba",
+      "Alex Wong",
+      "Celso M de Melo",
+      "Achuta Kadambi"
+    ],
+    "submission_date": "2026-01-29T05:31:02Z",
+    "latest_updated": "2026-08-18T05:02:28Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.21282v1",
+      "2601.21282v2"
+    ],
+    "abstract": "Recent advances in generative foundational models, often termed \"world models,\" have propelled interest in applying them to critical tasks like robotic planning and autonomous system training. For reliable deployment, these models must exhibit high physical fidelity, accurately simulating real-world dynamics. Existing physics-based video benchmarks, however, suffer from entanglement, where a single test simultaneously evaluates multiple physical laws and concepts, fundamentally limiting their diagnostic capability. We introduce WorldBench, a novel video-based benchmark specifically designed for concept-specific, disentangled evaluation, allowing us to rigorously isolate and assess understanding of a single physical concept or law at a time. To make WorldBench comprehensive, we design benchmarks at two different levels: 1) an evaluation of intuitive physical understanding with higher level concepts such as object permanence or scale/perspective, and 2) an evaluation of low-level physical constants and material properties such as friction coefficients or fluid viscosity, allowing to measure excatly how far from reality generated videos are. When SOTA video-based world models are evaluated on WorldBench, we find specific patterns of failure in particular physics concepts, with all tested models lacking the physical consistency required to generate reliable real-world interactions. Through its concept-specific evaluation, WorldBench offers a more nuanced and scalable framework for rigorously evaluating the physical reasoning capabilities of video generation and world models, paving the way for more robust and generalizable world-model-driven learning.",
+    "status": "found"
+  },
+  "2601.21283": {
+    "arxiv_id": "2601.21283",
+    "title": "DUET: Distilled LLM Unlearning from an Efficiently Contextualized Teacher",
+    "authors": [
+      "Yisheng Zhong",
+      "Zhengbang Yang",
+      "Zhuangdi Zhu"
+    ],
+    "submission_date": "2026-01-29T05:32:35Z",
+    "latest_updated": "2026-02-26T21:47:54Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.21283v1",
+      "2601.21283v2"
+    ],
+    "abstract": "LLM unlearning is a technique to remove the impacts of undesirable knowledge from the model without retraining from scratch, which is indispensable towards trustworthy AI. Existing unlearning methods face significant limitations: conventional tuning-based unlearning is computationally heavy and prone to catastrophic forgetting. In contrast, in-contextualized unlearning is lightweight for precise unlearning but vulnerable to prompt removal or reverse engineering attacks. In response, we propose Distilled Unlearning from an Efficient Teacher (DUET), a novel distillation-based unlearning method that combines the merits of these two lines of work. It learns a student model to imitate the behavior of a prompt-steered teacher that effectively refuses undesirable knowledge generation while preserving general domain knowledge. Extensive evaluations on existing benchmarks with our enriched evaluation protocols demonstrate that DUET achieves higher performance in both forgetting and utility preservation, while being orders of magnitude more data-efficient than state-of-the-art unlearning methods.",
+    "status": "found"
+  },
+  "2601.21284": {
+    "arxiv_id": "2601.21284",
+    "title": "PILD: Physics-Informed Learning via Diffusion",
+    "authors": [
+      "Tianyi Zeng",
+      "Tianyi Wang",
+      "Jiaru Zhang",
+      "Zimo Zeng",
+      "Feiyang Zhang",
+      "Yiming Xu",
+      "Sikai Chen",
+      "Junfeng Jiao",
+      "Christian Claudel",
+      "Xinbo Chen"
+    ],
+    "submission_date": "2026-01-29T05:33:51Z",
+    "latest_updated": "2026-07-23T16:27:13Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.21284v1",
+      "2601.21284v2"
+    ],
+    "abstract": "Diffusion models have emerged as powerful generative tools for modeling complex data distributions, yet their purely data-driven nature limits applicability in engineering and scientific problems where physical laws must be respected. This paper proposes Physics-Informed Learning via Diffusion (PILD), a framework that unifies diffusion modeling and physical constraints through a probabilistic residual formulation with a virtual residual observation sampled from a Laplace distribution. To make this formulation practical under noisy diffusion states, we introduce a Jensen-gap-aware adaptive residual scale, which reduces the bias induced by residual likelihood marginalization. Additionally, we develop a physics-conditional alignment mechanism for conditional tasks that encourages intermediate latent representations to remain consistent with the observation conditions during denoising. The proposed framework is concise, modular, and broadly applicable to problems governed by ordinary differential equations, partial differential equations, as well as algebraic equations or inequality constraints. Extensive experiments across engineering and scientific tasks show that PILD improves physical fidelity and predictive accuracy over representative physics-informed and diffusion-based baselines.",
+    "status": "found"
+  },
+  "2601.21285": {
+    "arxiv_id": "2601.21285",
+    "title": "Zenith: Scaling up Ranking Models for Billion-scale Livestreaming Recommendation",
+    "authors": [
+      "Ruifeng Zhang",
+      "Zexi Huang",
+      "Zikai Wang",
+      "Ke Sun",
+      "Bohang Zheng",
+      "Yuchen Jiang",
+      "Zhe Chen",
+      "Zhen Ouyang",
+      "Huimin Xie",
+      "Phil Shen",
+      "Junlin Zhang",
+      "Yuchao Zheng",
+      "Wentao Guo",
+      "Qinglei Wang"
+    ],
+    "submission_date": "2026-01-29T05:36:49Z",
+    "latest_updated": "2026-02-05T03:44:28Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2601.21285v1",
+      "2601.21285v2",
+      "2601.21285v3"
+    ],
+    "abstract": "Accurately capturing feature interactions is essential in recommender systems, and recent trends show that scaling up model capacity could be a key driver for next-level predictive performance. While prior work has explored various model architectures to capture multi-granularity feature interactions, relatively little attention has been paid to efficient feature handling and scaling model capacity without incurring excessive inference latency. In this paper, we address this by presenting Zenith, a scalable and efficient ranking architecture that learns complex feature interactions with minimal runtime overhead. Zenith is designed to handle a few high-dimensional Prime Tokens with Token Fusion and Token Boost modules, which exhibits superior scaling laws compared to other state-of-the-art ranking methods, thanks to its improved token heterogeneity. Its real-world effectiveness is demonstrated by deploying the architecture to TikTok Live, a leading online livestreaming platform that attracts billions of users globally. Our A/B test shows that Zenith achieves +1.05%/-1.10% in online CTR AUC and Logloss, and realizes +9.93% gains in Quality Watch Session / User and +8.11% in Quality Watch Duration / User.",
+    "status": "found"
+  },
+  "2601.21286": {
+    "arxiv_id": "2601.21286",
+    "title": "Ira: Efficient Transaction Replay for Distributed Systems",
+    "authors": [
+      "Adithya Bhat",
+      "Harshal Bhadreshkumar Shah",
+      "Mohsen Minaei"
+    ],
+    "submission_date": "2026-01-29T05:38:59Z",
+    "latest_updated": "2026-08-03T20:41:38Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2601.21286v1",
+      "2601.21286v2",
+      "2601.21286v3"
+    ],
+    "abstract": "In primary-backup replication, the consensus latency is bounded by the time for backup nodes to replay (re-execute) transactions proposed by the primary. Our key insight is that the primary, having already executed transactions, possesses knowledge of future access patterns which is the information needed for optimal replay by the backups. In this work, we present Ira, a framework to accelerate backup replay by transmitting compact hints alongside transaction batches. We use Ethereum for our case study and present a concrete protocol, Ira-L, within our framework to improve cache management of Ethereum block execution. The primaries implementing Ira-L provide hints that consist of the working set of keys used in an Ethereum block and one byte of metadata per key indicating the table to read from, and backups use these hints for efficient block replay. We evaluated Ira-L against the state-of-the-art Ethereum client reth over two weeks of Ethereum blocks (100,800 blocks, 24 million transactions). Our hint generation adds 10.9% overhead to primary execution time. On the backup, our hint-driven prefetching speeds up aggregate replay by 5.2x with a single prefetch thread, and by 23.6x with 16 threads. Our hints add a median of 47 KB compressed metadata per block (~5% of block payload).",
+    "status": "found"
+  },
+  "2601.21287": {
+    "arxiv_id": "2601.21287",
+    "title": "Towards Zero Rotation and Beyond: Architecting Neural Networks for Fast Secure Inference with Homomorphic Encryption",
+    "authors": [
+      "Yifei Cai",
+      "Yizhou Feng",
+      "Qiao Zhang",
+      "Chunsheng Xin",
+      "Hongyi Wu"
+    ],
+    "submission_date": "2026-01-29T05:40:05Z",
+    "latest_updated": "2026-01-29T05:40:05Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.21287v1"
+    ],
+    "abstract": "Privacy-preserving deep learning addresses privacy concerns in Machine Learning as a Service (MLaaS) by using Homomorphic Encryption (HE) for linear computations. However, the computational overhead remains a major challenge. While prior work has improved efficiency, most approaches build on models originally designed for plaintext inference. Such models incur architectural inefficiencies when adapted to HE. We argue that substantial gains require networks tailored to HE rather than retrofitting plaintext architectures. Our design has two components: the building block and the overall architecture. First, StriaBlock targets the most expensive HE operation, rotation. It integrates ExRot-Free Convolution and a novel Cross Kernel, eliminating external rotations and requiring only 19% of the internal rotations used by plaintext models. Second, our architectural principles include (i) the Focused Constraint Principle, which limits cost-sensitive factors while preserving flexibility elsewhere, and (ii) the Channel Packing-Aware Scaling Principle, which adapts bottleneck ratios to ciphertext channel capacity that varies with depth. Together, these strategies control both local and end-to-end HE cost, enabling a balanced HE-tailored network. We evaluate the resulting StriaNet across datasets of varying scales, including ImageNet, Tiny ImageNet, and CIFAR-10. At comparable accuracy, StriaNet achieves speedups of 9.78x, 6.01x, and 9.24x on ImageNet, Tiny ImageNet, and CIFAR-10, respectively.",
+    "status": "found"
+  },
+  "2601.21288": {
+    "arxiv_id": "2601.21288",
+    "title": "Drive-KD: Multi-Teacher Distillation for VLMs in Autonomous Driving",
+    "authors": [
+      "Weitong Lian",
+      "Zecong Tang",
+      "Haoran Li",
+      "Tianjian Gao",
+      "Yifei Wang",
+      "Zixu Wang",
+      "Lingyi Meng",
+      "Tengju Ru",
+      "Zhejun Cui",
+      "Yichen Zhu",
+      "Hangshuo Cao",
+      "Qi Kang",
+      "Tianxing Chen",
+      "Kaixuan Wang",
+      "Yu Zhang"
+    ],
+    "submission_date": "2026-01-29T05:41:24Z",
+    "latest_updated": "2026-06-04T16:17:48Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.21288v1",
+      "2601.21288v2"
+    ],
+    "abstract": "Autonomous driving is an important and safety-critical task, and recent advances in LLMs/VLMs have opened new possibilities for reasoning and planning in this domain. However, large models demand substantial GPU memory and exhibit high inference latency, while conventional supervised fine-tuning (SFT) often struggles to bridge the capability gaps of small models. To address these limitations, we propose Drive-KD, a framework that decomposes autonomous driving into a \"perception-reasoning-planning\" triad and transfers these capabilities via knowledge distillation. We identify layer-specific attention as the distillation signal to construct capability-specific single-teacher models that outperform baselines. Moreover, we unify these single-teacher settings into a multi-teacher distillation framework and introduce asymmetric gradient projection to mitigate cross-capability gradient conflicts. Extensive evaluations validate the generalization of our method across diverse model families and scales. Experiments show that our distilled InternVL3-1B model, with ~42 times less GPU memory and ~11.4 times higher throughput, achieves better overall performance than the pretrained 78B model from the same family on DriveBench, and surpasses GPT-5.1 on the planning dimension, providing insights toward efficient autonomous driving VLMs.",
+    "status": "found"
+  },
+  "2601.21289": {
+    "arxiv_id": "2601.21289",
+    "title": "TimeSliver : Symbolic-Linear Decomposition for Explainable Time Series Classification",
+    "authors": [
+      "Akash Pandey",
+      "Payal Mohapatra",
+      "Wei Chen",
+      "Qi Zhu",
+      "Sinan Keten"
+    ],
+    "submission_date": "2026-01-29T05:42:58Z",
+    "latest_updated": "2026-03-06T19:40:11Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.21289v1",
+      "2601.21289v2"
+    ],
+    "abstract": "Identifying the extent to which every temporal segment influences a model's predictions is essential for explaining model decisions and increasing transparency. While post-hoc explainable methods based on gradients and feature-based attributions have been popular, they suffer from reference state sensitivity and struggle to generalize across time-series datasets, as they treat time points independently and ignore sequential dependencies. Another perspective on explainable time-series classification is through interpretable components of the model, for instance, leveraging self-attention mechanisms to estimate temporal attribution; however, recent findings indicate that these attention weights often fail to provide faithful measures of temporal importance. In this work, we advance this perspective and present a novel explainability-driven deep learning framework, TimeSliver, which jointly utilizes raw time-series data and its symbolic abstraction to construct a representation that maintains the original temporal structure. Each element in this representation linearly encodes the contribution of each temporal segment to the final prediction, allowing us to assign a meaningful importance score to every time point. For time-series classification, TimeSliver outperforms other temporal attribution methods by 11% on 7 distinct synthetic and real-world multivariate time-series datasets. TimeSliver also achieves predictive performance within 2% of state-of-the-art baselines across 26 UEA benchmark datasets, positioning it as a strong and explainable framework for general time-series classification.",
+    "status": "found"
+  },
+  "2601.21290": {
+    "arxiv_id": "2601.21290",
+    "title": "Second-Order Toeplitz Determinant for Quasi-Convex Mappings",
+    "authors": [
+      "Surya Giri"
+    ],
+    "submission_date": "2026-01-29T05:44:03Z",
+    "latest_updated": "2026-01-29T05:44:03Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.21290v1"
+    ],
+    "abstract": "This paper presents sharp estimates for the second-order Toeplitz determinant whose entries are the coefficients of convex functions defined on the unit disk in $\\mathbb{C}$. These estimates are further extended to a subclass of holomorphic mappings defined on the unit ball in a complex Banach space and on the unit polydisk in $\\mathbb{C}^n$, which, as special cases, yield bounds for the classes of quasi-convex mappings of type $B$.",
+    "status": "found"
+  },
+  "2601.21291": {
+    "arxiv_id": "2601.21291",
+    "title": "Gaussian Belief Propagation Network for Depth Completion",
+    "authors": [
+      "Jie Tang",
+      "Pingping Xie",
+      "Jian Li",
+      "Ping Tan"
+    ],
+    "submission_date": "2026-01-29T05:44:41Z",
+    "latest_updated": "2026-09-10T16:46:37Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2601.21291v1",
+      "2601.21291v2",
+      "2601.21291v3"
+    ],
+    "abstract": "Depth completion aims to predict a dense depth map from a color image with sparse depth measurements. Although deep learning methods have achieved state-of-the-art (SOTA), effectively handling the sparse and irregular nature of input depth data in deep networks remains a significant challenge, often limiting performance, especially under high sparsity. To overcome this limitation, we introduce the Gaussian Belief Propagation Network (GBPN), a novel hybrid framework synergistically integrating deep learning with probabilistic graphical models for end-to-end depth completion. Specifically, a scene-specific Markov Random Field (MRF) is dynamically constructed by the Graphical Model Construction Network (GMCN), and then inferred via Gaussian Belief Propagation (GBP) to yield the dense depth distribution. Crucially, the GMCN learns to construct not only the data-dependent potentials of MRF but also its structure by predicting adaptive non-local edges, enabling the capture of complex, long-range spatial dependencies. Furthermore, we enhance GBP with a serial \\& parallel message passing scheme, designed for effective information propagation, particularly from sparse measurements. Extensive experiments demonstrate that GBPN achieves SOTA performance on the NYUv2 and KITTI benchmarks. Evaluations across varying sparsity levels, sparsity patterns, and datasets highlight GBPN's superior performance, notable robustness, and generalizable capability.",
+    "status": "found"
+  },
+  "2601.21292": {
+    "arxiv_id": "2601.21292",
+    "title": "Evaluating Classifications of Extremely Metal-poor Candidates Selected from Gaia XP Spectra",
+    "authors": [
+      "Riley Thai",
+      "Andrew R. Casey",
+      "Alexander Ji",
+      "Vedant Chandra",
+      "Hans-Walter Rix"
+    ],
+    "submission_date": "2026-01-29T05:45:58Z",
+    "latest_updated": "2026-01-29T05:45:58Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.21292v1"
+    ],
+    "abstract": "Extremely metal-poor stars are intrinsically rare, but emerging methods exist to accurately classify them from all-sky Gaia XP low-resolution spectra. To assess their overall accuracy for targeting metal-poor stars, we present a high-resolution spectroscopic followup of 75 very metal-poor candidates selected from the catalog by R. Andrae, V. Chandra, and H. W. Rix. We discover 2 new extremely metal-poor ($\\rm{[Fe / H]}<-3$) stars and 20 new very metal-poor ($\\rm{[Fe/H]} < -2$) stars. Abundances of up to 22 elements are derived from 1D local thermodynamic equilibrium analysis and kinematic parameters are derived using Gaia astrometry and spectroscopic radial velocities. The chemodynamical properties are mostly consistent with expectations for halo stars, but we discover an Mg-enhanced CEMP star ($\\mathrm{[Mg/Fe]} = 0.89$) and an Mg-poor star from an accreted ultra-faint dwarf galaxy. The Gaia XP metallicity estimates are consistent with our $\\rm{[Fe/H]}$ measurements down to $\\rm{[Fe/H]}\\sim -3.0$, but estimates worsen in highly extincted regions. We find that 4 other XP-based metallicity catalogs succeed in mitigating contaminants and can also classify metal-poor stars robustly to $\\rm{[Fe/H]}\\sim -3.0$. Our results demonstrate the utility of Gaia XP spectra for identifying the most metal-poor stars across the Galaxy.",
+    "status": "found"
+  },
+  "2601.21293": {
+    "arxiv_id": "2601.21293",
+    "title": "Reliability-Calibrated Edge-IoT Early Fault Warning for Rotating Machinery with a Physics-Guided Tiny-Mamba Transformer",
+    "authors": [
+      "Changyu Li",
+      "Huabei Nie",
+      "Xiaoya Ni",
+      "Lu Wang",
+      "Lijuan Shen",
+      "Kaishun Wu",
+      "Fei Luo"
+    ],
+    "submission_date": "2026-01-29T05:46:12Z",
+    "latest_updated": "2026-06-10T17:13:45Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2601.21293v1",
+      "2601.21293v2",
+      "2601.21293v3"
+    ],
+    "abstract": "Industrial Internet of Things (IIoT) systems increasingly rely on distributed vibration sensing to support predictive maintenance of rotating machinery. In practical deployments, however, raw signal upload is costly and alarm decisions must be made locally under limited computation, changing operating conditions, and strict nuisance-alarm budgets. This paper presents a reliability-calibrated edge-IoT early-warning framework, in which a compact Physics-Guided Tiny-Mamba Transformer (PG-TMT) acts as the representation module and an extreme value theory (EVT) layer converts streaming anomaly scores into event-level alarm episodes. PG-TMT combines a depthwise-separable convolutional stem, a Tiny-Mamba state-space branch, and a lightweight local Transformer to capture transient, long-horizon, and multichannel degradation cues under batch-size-one inference. To improve auditability, temporal attention is projected to the frequency domain and softly aligned with analytical bearing fault-order bands. EVT calibration, dual-threshold hysteresis, and trimmed-tail fitting provide controllable false-alarm intensity even when healthy calibration data are imperfect. Experiments on CWRU, Paderborn, XJTU-SY, and an industrial pilot demonstrate that the proposed framework improves PR-AUC, reduces detection delay under a controlled nuisance-alarm budget, and remains robust to structured interference, metadata uncertainty, compound fault mixtures, and domain transfer. With a sub-1 MB footprint and Jetson p99 latency below 7 ms, the framework supports calibrated and interpretable early warnings for IIoT predictive maintenance.",
+    "status": "found"
+  },
+  "2601.21294": {
+    "arxiv_id": "2601.21294",
+    "title": "Missing-Data-Induced Phase Transitions in Spectral Partial Least Squares",
+    "authors": [
+      "Anders Gjølbye",
+      "Emma Kargaard",
+      "Ida Kargaard",
+      "Lina Skerath",
+      "Hiba Nassar",
+      "Lars Kai Hansen"
+    ],
+    "submission_date": "2026-01-29T05:46:44Z",
+    "latest_updated": "2026-10-02T14:14:35Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2601.21294v1",
+      "2601.21294v2",
+      "2601.21294v3"
+    ],
+    "abstract": "Spectral partial least squares (PLS-SVD) estimates the directions shared by two views of the same samples. We analyze it using a rank-one regression model, with entries of both views missing completely at random and filled with zeros. Missing response entries weaken the signal, whereas missing design entries also tilt the recovered direction. The setting is the proportional regime, with Gaussian response noise and a design that is column-orthogonal before masking. For incoherent designs and planted directions, we prove that as the signal diverges, the squared overlap with the truth approaches $1$ on the response side but only a ceiling on the design side. This ceiling is strictly below $1$ whenever design entries are missing, unless samples of vanishing leverage carry the signal. For this estimator, a stronger signal therefore cannot remove the design-side error. Under equal leverage and an explicit spectral condition on the masked design, which we prove for designs taken from nested Hadamard matrices, we establish a phase transition and derive the recovery curves. Under the same conditions, the critical signal strength is exactly proportional to $ρ_y^{-1/2}$, with $ρ_y$ the fraction of response entries retained. A heuristic replica derivation reproduces the equations behind these curves, and simulations follow them, including on random orthogonal designs outside the verified class. In semi-synthetic experiments on real biological designs with unequal leverage, the predicted ceiling varies across directions, and high-signal recovery tracks it. These results bring the theory of PLS-SVD closer to what is known for PCA under homogeneous missingness and show that the loss of signal-to-noise ratio observed there does not, by itself, describe missing design entries.",
+    "status": "found"
+  },
+  "2601.21295": {
+    "arxiv_id": "2601.21295",
+    "title": "Blow-up phemomenon for the Geng-Xue system and related models",
+    "authors": [
+      "Song Liu",
+      "Zhaoyang Yin"
+    ],
+    "submission_date": "2026-01-29T05:47:03Z",
+    "latest_updated": "2026-01-29T05:47:03Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.21295v1"
+    ],
+    "abstract": "In this paper, we consider the Cauchy problem of the Geng-Xue system with cubic nonlinearity. Firstly, we prove a blow-up criteria in the low besov space. Secondly, we prove the blow-up phenomenon by using the method which does not require any conservation law. Finally, we extend our results to the b-family of two-component system with cubic nonlinearity.",
+    "status": "found"
+  }
+}

@@ -1,0 +1,405 @@
+{
+  "2609.17754": {
+    "arxiv_id": "2609.17754",
+    "title": "Learning Market Competition in Shared Spectrum: A Multi-Agent Reinforcement Learning Approach",
+    "authors": [
+      "Qixuan Zai",
+      "Randall Berry"
+    ],
+    "submission_date": "2026-09-15T19:04:23Z",
+    "latest_updated": "2026-10-17T18:39:36Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2609.17754v1",
+      "2609.17754v2",
+      "2609.17754v3"
+    ],
+    "abstract": "This paper investigates market competition among wireless service providers (SPs) that serve customers using shared spectrum. Prior work has analyzed such markets through models of competition with congestible resources, capturing both the congestion-sensitive nature of wireless spectrum and the effects of spectrum sharing on service quality. These models typically assume that the market demand function is known, enabling SPs to optimize pricing or quantity decisions under either Bertrand or Cournot competition. In contrast, we consider a setting in which the demand function is initially unknown and must be learned over time. We model this learning process using multi-agent reinforcement learning (MARL), allowing competing SPs to learn market dynamics while adapting their competitive strategies. Although MARL has shown strong performance in a variety of economic settings, recent work has demonstrated that it can also give rise to tacit collusion among self-interested agents. We therefore examine whether similar collusive behavior emerges in shared-spectrum markets and how its prevalence depends on the mode of competition (price versus quantity) and the choice of MARL algorithm. Our results provide insight into the interaction between learning dynamics, market structure, and spectrum sharing, with implications for both wireless market design and the deployment of learning-enabled decision-making systems.",
+    "status": "found"
+  },
+  "2609.17755": {
+    "arxiv_id": "2609.17755",
+    "title": "Evolution of US Oral Political Language",
+    "authors": [
+      "Jacques Savoy"
+    ],
+    "submission_date": "2026-09-15T19:04:43Z",
+    "latest_updated": "2026-09-15T19:04:43Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17755v1"
+    ],
+    "abstract": "The analysis of US political language is usually based on the written form (e.g. presidential addresses) or posts broadcasted on various social networks. Oral production, however, which is even more frequent, can better reveal the style and mode of thinking of the speaker. This study covers this mode of linguistic communication by considering 19 candidates from the presidential elections between 1960 to 2024. Our main research objectives are to disclose the main trends hidden in those presidential debates. Do we observe a clear simplification of the US political language over time? Does Trump have poor language compared to the other candidates? Do unusual stylistic features occur only with a single, specific president? Moreover, can we detect a pattern explaining the success or failure of some nominees? Over time, this study demonstrates a significant reduction in political language complexity, a decrease of the mean sentence length, and a noteworthy decline of complex terms. Moreover, the emotional tone increases over the decades, while logical and rational thinking tends to lessen.",
+    "status": "found"
+  },
+  "2609.17756": {
+    "arxiv_id": "2609.17756",
+    "title": "JADES: Dynamical Measurements of Dark Matter Halo Masses at $z \\approx 7$ Using Galaxy Pairs",
+    "authors": [
+      "Zihao Wu",
+      "Daniel J. Eisenstein",
+      "Benjamin D. Johnson",
+      "Lars Hernquist",
+      "Sandro Tacchella",
+      "Brant E. Robertson",
+      "Santiago Arribas",
+      "Andrew J. Bunker",
+      "Qiao Duan",
+      "Jakob M. Helton",
+      "Zhiyuan Ji",
+      "Dávid Puskás",
+      "Pierluigi Rinaldi",
+      "Fengwu Sun",
+      "Hannah Übler",
+      "Yongda Zhu"
+    ],
+    "submission_date": "2026-09-15T19:07:34Z",
+    "latest_updated": "2026-09-15T19:07:34Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17756v1"
+    ],
+    "abstract": "We present dynamical measurements of dark matter halo masses at $z\\approx7$ using galaxy pairs. Galaxy pairs in the early Universe are usually in their first infall, before substantial orbital evolution or phase mixing. Their relative velocities closely trace the halo mass, especially when the pair separation is near the halo virial radius. In the TNG100 simulation, we find that dynamical mass estimators can recover halo masses with an intrinsic scatter of $\\sim$0.2 dex. We apply this method to 10 pair systems at z=6-8 with [O III] spectroscopy from the JWST Advanced Deep Extragalactic Survey (JADES). We infer the stellar-to-halo mass relation while marginalizing over projection effects, measurement uncertainties, and intrinsic scatter. We find a mean halo mass of $\\log\\,(M_{200}/M_\\odot)=11.06\\pm0.21$ at $\\log\\,(M_{*}/M_\\odot)=9$. These galaxies do not appear to inhabit unusually massive halos. Our results instead indicate a high stellar-to-halo mass ratio, corresponding to an integrated star formation efficiency of $5^{+3}_{-2}\\%$, about twice the TNG100 prediction, although the current statistical significance is limited. Future observations with larger samples will tighten these constraints and directly examine whether enhanced star formation efficiency drives the overabundance of luminous galaxies at cosmic dawn.",
+    "status": "found"
+  },
+  "2609.17757": {
+    "arxiv_id": "2609.17757",
+    "title": "Imitation Learning for Autonomous Driving in CARLA",
+    "authors": [
+      "Jordy Kieto"
+    ],
+    "submission_date": "2026-09-15T19:08:03Z",
+    "latest_updated": "2026-09-15T19:08:03Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17757v1"
+    ],
+    "abstract": "Behavioral cloning trains a policy offline on expert demonstrations, but deployment is closed loop: each action affects the observations the policy receives next. We study how much closed-loop driving competence a compact multimodal policy can acquire from offline demonstrations in the CARLA simulator. The policy uses five-frame histories of RGB images, LiDAR, vehicle telemetry, and lane waypoints to predict throttle, brake, and steering at 20 Hz. Demonstrations were collected in three stages, ending with a systematic route-generation procedure that enumerates spawn points and feasible maneuvers and verifies completed autopilot routes. The released 1.36 million parameter policy was trained on 236,882 windows, representing about 3.3 hours of driving from 448 captures. The resulting policy drives autonomously for hours on training and held-out routes. In our runs, it did so without collisions and also transferred qualitatively to an unseen CARLA town with different road geometry. We also observed recovery from large trajectory deviations, although we do not claim systematic recovery without controlled evaluation. We report offline metrics and distinguish measured results from qualitative closed-loop observations. We release the code, trained checkpoint, ONNX model, data sample, and an evidence audit for the reported claims.",
+    "status": "found"
+  },
+  "2609.17758": {
+    "arxiv_id": "2609.17758",
+    "title": "CALOS: Control-Affine Lyapunov On-manifold Safety Layer for Safe Deep Reinforcement Learning for Quadrotors",
+    "authors": [
+      "Fabrizio Cesareo",
+      "Sebastiano Mengozzi",
+      "Nicola Mimmo",
+      "Andrea Acquaviva"
+    ],
+    "submission_date": "2026-09-15T19:08:07Z",
+    "latest_updated": "2026-09-15T19:08:07Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17758v1"
+    ],
+    "abstract": "Deep Reinforcement Learning has demonstrated remarkable capability in quadrotor control, yet learned policies offer no guarantee of respecting safety constraints during training or deployment. We present CALOS (Control-Affine Lyapunov On-manifold Safety), a runtime safety layer that enforces attitude constraints on a quadrotor without modifying the underlying learning algorithm. CALOS formulates four tilt-angle inequalities and a Lyapunov descent condition as a single quadratic program whose solution is the minimum-norm correction to the nominal torque output of the policy. The quadratic program is solved exactly via active-set enumeration over the three-dimensional torque space, with a computational cost low enough to enforce constraints in real time across thousands of parallel simulation environments, as required by modern massively parallel Deep Reinforcement Learning training. Evaluated on trajectory-tracking tasks in NVIDIA Isaac Lab, CALOS reduces lateral tracking error by 55-60% relative to an unconstrained Proximal Policy Optimization baseline while achieving zero attitude-constraint violations on the training trajectory. By restricting exploration to safe regions of the state space, the safety layer also accelerates training convergence and improves data efficiency without producing suboptimal policies.",
+    "status": "found"
+  },
+  "2609.17759": {
+    "arxiv_id": "2609.17759",
+    "title": "Derivative-Free Structured Updates for Muon",
+    "authors": [
+      "Pengcheng Xie"
+    ],
+    "submission_date": "2026-09-15T19:08:19Z",
+    "latest_updated": "2026-09-15T19:08:19Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17759v1"
+    ],
+    "abstract": "Muon updates matrix-valued neural-network parameters by orthogonalizing a gradient-based momentum matrix. Its reliance on derivatives limits its use when gradients are unavailable or unreliable. We develop a derivative-free framework that constructs Muon-style updates from structured finite differences. Four variants are considered: full entrywise recovery, random low-rank surrogates, basis-aligned rank-one probing, and direct structured search. Exhaustive basis-aligned probing is equivalent, up to positive scaling before ideal polar orthogonalization, to coordinate finite differences. Matrix-regression experiments show that random rank-one probing can reduce the number of function evaluations substantially, at the cost of less accurate updates. Controlled noisy-gradient experiments on regression and a neural network illustrate when accurate function values can compensate for an unreliable gradient oracle. A small CartPole study further examines orthogonal rank-one probes under a fixed episode budget. These results support structured probing as a practical option for selected black-box problems; they do not establish a general convergence guarantee or an advantage over accurate, inexpensive gradients.",
+    "status": "found"
+  },
+  "2609.17760": {
+    "arxiv_id": "2609.17760",
+    "title": "Every graph with no $K_7^=$ minor is 6-colorable",
+    "authors": [
+      "Zdeněk Dvořák",
+      "Sergey Norin",
+      "Neil Rahman"
+    ],
+    "submission_date": "2026-09-15T19:10:20Z",
+    "latest_updated": "2026-09-15T19:10:20Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17760v1"
+    ],
+    "abstract": "The first open case of Hadwiger's conjecture states that every $K_7$-minor-free graph is 6-colorable. We prove that this is the case for $K_7^=$-minor-free graphs, where $K_7^=$ denotes the graph obtained from $K_7$ by deleting two independent edges. The proof is based on an independently interesting density result: Every 5-connected $K_7^=$-minor-free graph with $n\\ge 6$ vertices has at most $4n-8$ edges.",
+    "status": "found"
+  },
+  "2609.17761": {
+    "arxiv_id": "2609.17761",
+    "title": "Why Some Strikes Last Longer: The Resilience Paradox of Partially Functional Institutions",
+    "authors": [
+      "Nuno Crokidakis"
+    ],
+    "submission_date": "2026-09-15T19:10:41Z",
+    "latest_updated": "2026-09-15T19:10:41Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17761v1"
+    ],
+    "abstract": "Labor strikes do not necessarily lead to complete institutional disruption, particularly when non-striking sectors maintain part of normal activities. We propose a minimal dynamical model to investigate how such residual activity affects the persistence of labor conflicts. The model couples strike participation, institutional response, and overall functionality through two competing mechanisms: a direct suppressive effect of residual activity on strike participation and an indirect effect arising from the reduced institutional pressure to resolve the conflict. Analytical calculations reveal a counterintuitive regime in which increasing residual activity increases, rather than decreases, stationary strike participation. We characterize this behavior through a strike-response susceptibility and derive an exact compensation threshold separating the conventional regime from a resilience-paradox regime. At the threshold, the two mechanisms exactly balance, making stationary strike participation independent of residual activity. Numerical results confirm the analytical predictions and illustrate the underlying mechanism. Our results show that institutional resilience can have an unintended dynamical consequence: by absorbing part of the disruption generated by a strike, continued operation may reduce the urgency of institutional response and thereby favor conflict persistence. This provides a simple example of how individually stabilizing processes can collectively generate counterintuitive outcomes in complex social systems.",
+    "status": "found"
+  },
+  "2609.17762": {
+    "arxiv_id": "2609.17762",
+    "title": "Is Luke the Author of a Gospel and the Acts of the Apostles?",
+    "authors": [
+      "Jacques Savoy"
+    ],
+    "submission_date": "2026-09-15T19:11:16Z",
+    "latest_updated": "2026-09-15T19:11:16Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17762v1"
+    ],
+    "abstract": "According to Christian tradition, Luke is credited with authoring a Gospel and the Acts of the Apostles, even if his name does not appear in either book, both originally written in Koine Greek. Several biblical scholars assume that both texts were written by a common author, while others deduce the presence of two authors. Different studies have been found to support either finding, some based on qualitative evaluation, while a few others consider the occurrence frequency differences between the two books. To propose an enhanced quantitative analysis, this study is grounded on two recent authorship attribution models. The Burrows' Delta, applied with eleven different feature sizes, demonstrates common authorship. An author verification model confirms this finding. The following experiments consider several stylistic representations, feature sizes, and distance functions to confirm that Luke is the true author of both books.",
+    "status": "found"
+  },
+  "2609.17763": {
+    "arxiv_id": "2609.17763",
+    "title": "Modular Deep Learning Mechanisms for Auditable Next-Day Wildfire Spread Prediction",
+    "authors": [
+      "Miguel Esparza",
+      "Aydin Ayanzadeh",
+      "Ahmad Mousavi",
+      "Ali Mostafavi"
+    ],
+    "submission_date": "2026-09-15T19:12:06Z",
+    "latest_updated": "2026-09-18T15:11:57Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2609.17763v1",
+      "2609.17763v2"
+    ],
+    "abstract": "Next-day wildfire prediction requires models whose forecasts can be evaluated alongside the assumptions and historical evidence used in their computation. Although deep learning can learn spatial patterns from remote-sensing data, predictive performance alone does not establish physical fidelity or operational trustworthiness. This study investigates three modular augmentations for next-day active-fire prediction: wind- and slope-conditioned attention biases, physics-feature retrieval-augmented output correction, and fire conditioned dual-stream gating. The attention biases expose prescribed directional preferences, while the retrieval module selects historical tiles using a nine-dimensional environmental and fire-state descriptor and applies a learned correction to a frozen model's logits. The modules are evaluated across five backbones on the Next Day Wildfire Spread benchmark, using staged ablations, directional audits, retrieval perturbations, calibration measures, and computational comparisons. The three-seed mean F1 score and area under the precision--recall curve (AUC-PR) of a SwinUNETR model with all three augmentations are 0.4216 and 0.3673. Then, a mixed ensemble (two augmented architectures and one non-augmented architecture) model achieves 0.4292 and 0.3790. Benefits vary across architectures, and retrieval-related improvements in AUC-PR do not consistently translate into higher F1. The constructed wind bias aligns closely with input wind, but its alignment with observed next-day fire displacement is much weaker, distinguishing prior inspectability from predictive physical fidelity. The study contributes a framework for exposing and evaluating selected domain-informed components within wildfire prediction models. Together, the results presented show that predictive performance, operational trustworthiness, and computational practicality need not be competing objectives.",
+    "status": "found"
+  },
+  "2609.17764": {
+    "arxiv_id": "2609.17764",
+    "title": "How Calibration Content Shapes Attention-Based Reranking",
+    "authors": [
+      "Petros Karypis",
+      "Hossein Rajaby Faghihi",
+      "Peter Chen",
+      "Rui Zhu",
+      "Noveen Sachdeva",
+      "Yan Zhu",
+      "Julian McAuley"
+    ],
+    "submission_date": "2026-09-15T19:12:58Z",
+    "latest_updated": "2026-09-15T19:12:58Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17764v1"
+    ],
+    "abstract": "Attention-based rerankers score documents by aggregating query-to-document attention and subtracting a null-query calibration pass to remove positional and structural bias. Although widely used, this calibration assumes that the null pass removes irrelevant signal from each document. We show that modern prompt content, e.g. constraints, instructions, personas, and demonstrations can violate this assumption when it enters the scoring readout, making the null pass relevance-aware rather than null. We find that calibration is especially harmful when applied to prompts containing longer, more detailed instructions as the null-pass step removes relevant signal. Based on these findings, we propose interpolated null calibration, a training-free modification that controls how much of the instruction content enters the null baseline. It recovers attention-based reranking performance on instruction-heavy tasks where standard calibration fails, while preserving calibration's benefits when the null pass remains relevance-agnostic. On instruction heavy tasks, the recovered rankings surpass generative rerankers. We also show that in-context demonstrations improve attention-based reranking with little calibration interference, since demonstrations act only through the query pass and leave the null pass unchanged.",
+    "status": "found"
+  },
+  "2609.17765": {
+    "arxiv_id": "2609.17765",
+    "title": "Constraining the $f_0(980)$ Structure and Formation Dynamics via Anisotropy-Response Scaling",
+    "authors": [
+      "Roy A. Lacey"
+    ],
+    "submission_date": "2026-09-15T19:13:44Z",
+    "latest_updated": "2026-09-15T19:13:44Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17765v1"
+    ],
+    "abstract": "A species-resolved anisotropy-response scaling framework is used to investigate the structure and formation dynamics of the $f_0(980)$ in relativistic nuclear collisions. Published measurements in high-multiplicity p+Pb collisions at $\\sqrt{s_{NN}}=8.16$~TeV exhibit broad scaling closure under a single-meson response construction, with a small effective final-state response, $ζ_{f_0}\\simeq0.04$, whereas a symmetric ${\\rm K\\bar K}$ constituent-response construction gives substantially poorer closure. An explicitly molecular ${\\rm K\\bar K}$ calculation also exhibits single-meson-like scaling but gives a substantially larger effective final-state response, $ζ_{f_0}\\simeq0.16$. Thus, single-meson scaling alone is not a unique structural discriminator. The combined response construction and $ζ_{f_0}$ constraints characterize the measured $f_0(980)$ by a single-meson-like anisotropy response with weak final-state sensitivity, distinctly different from the molecular benchmark. These results establish anisotropy-response scaling as a new experimental probe of $f_0(980)$ formation dynamics and motivate systematic tests across collision systems and beam energies.",
+    "status": "found"
+  },
+  "2609.17766": {
+    "arxiv_id": "2609.17766",
+    "title": "DRT&R: Direct Radar Teach & Repeat",
+    "authors": [
+      "Alexander Krawciw",
+      "Daniil Lisus",
+      "Cedric Le Gentil",
+      "Timothy D. Barfoot"
+    ],
+    "submission_date": "2026-09-15T19:13:53Z",
+    "latest_updated": "2026-09-15T19:13:53Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17766v1"
+    ],
+    "abstract": "Radar-based navigation is appealing for its robustness to adverse conditions involving airborne particles, such as precipitation, dust, fog, and smoke, that can cause lidar-based systems to fail. Recently, direct methods that retain and use the entire radar scan rather than sparse points have improved on-road global localization performance. However, they have yet to be deployed in off-road environments or in closed-loop systems. Additionally, even direct global maps may lose information: their global nature leads to a smoothing out of viewpoint-dependent radar artifacts, which can provide pose information when mapping and localization occur along similar trajectories. This paper introduces Direct Radar Teach & Repeat (DRT&R): a direct spinning radar-based navigation stack that maximizes the amount of retained information by combining direct radar processing with local mapping. DRT&R yields state-of-the-art (SOTA) localization performance in both on-road and off-road environments. Using 344 km of on-road data and 20 km of off-road data, DRT&R is able to localize to within 4 cm in most on-road and off-road conditions, and 12 cm in geometrically degenerate and sparse environments. DRT&R is also evaluated autonomously in closed loop with an MPC controller for more than 10 km using a Clearpath Warthog off-road vehicle, demonstrating that it runs in real time and achieves SOTA tracking performance for off-road radar navigation.",
+    "status": "found"
+  },
+  "2609.17767": {
+    "arxiv_id": "2609.17767",
+    "title": "Fuzzy subhyperspaces generated by admissible mappings",
+    "authors": [
+      "O. R. Dehghan",
+      "R. Ameri"
+    ],
+    "submission_date": "2026-09-15T19:16:44Z",
+    "latest_updated": "2026-09-15T19:16:44Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17767v1"
+    ],
+    "abstract": "Fuzzy hypervector spaces provide a structural framework for modeling graded uncertainty in algebraic systems with multivalued operations. In this paper, we introduce and investigate admissible mappings as a constructive mechanism for generating fuzzy subhyperspaces. These mappings represent fuzzy substructures through families of fuzzy points and allow a systematic characterization of generators. We prove that maximal admissible mappings generate fuzzy subhyperspaces in a manner analogous to bases in classical linear theory, and we present examples over real and finite hypervector spaces to clarify the role of maximality. The proposed approach contributes to the structural foundations of fuzzy modeling in hyperalgebraic settings and may support further developments in soft computing environments involving graded and non-deterministic structures.",
+    "status": "found"
+  },
+  "2609.17768": {
+    "arxiv_id": "2609.17768",
+    "title": "Spatio-temporal Latent Denoising Diffusion Probabilistic Models for Reduced-order Modeling of Parametrized Dynamical Systems",
+    "authors": [
+      "Michiel Nikken",
+      "Nicolò Botteghi",
+      "Federico Califano",
+      "Silke Glas"
+    ],
+    "submission_date": "2026-09-15T19:18:25Z",
+    "latest_updated": "2026-09-15T19:18:25Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17768v1"
+    ],
+    "abstract": "Many scientific problems require accurate modeling of complex physical phenomena, such as fluid dynamics or climate modeling. These phenomena often result in high-dimensional and thus computationally expensive computational models that can limit their application to real-time and multi-query problems. Model-order reduction (MOR) is an approach that seeks to approximate full-order models (FOMs) using reduced-order models (ROMs), trading a minor reduction in accuracy for a major reduction in computational cost. In this work, we propose a non-intrusive MOR method using generative machine learning by means of denoising diffusion probabilistic models (DDPMs) for generating solutions of the dynamical systems under different instances of their parameters. Unlike conventional DDPMs, which often operate purely in the spatial domain, we aim to generate spatio-temporal solutions to improve quality and temporal coherence. In addition, we embed the DDPM in a latent space obtained by sequentially applying proper orthogonal decomposition and an autoencoder to reduce the data dimensionality and the computational cost of the DDPM. We test our approach on a parametrized 2D fluid flow around an obstacle. The numerical experiments demonstrate that our latent DDPM can (i) produce accurate and temporally coherent solutions, (ii) achieve strong generalization capabilities to scenarios involving unseen parameter values, and (iii) extrapolate in time beyond the training horizon.",
+    "status": "found"
+  },
+  "2609.17769": {
+    "arxiv_id": "2609.17769",
+    "title": "Prior-Aided Masked Vector Quantization CSI Feedback for FDD Massive MIMO Systems",
+    "authors": [
+      "Yi Song",
+      "Tianyu Yang",
+      "Kangda Zhi",
+      "Shuangyang Li",
+      "Fangzhou Wu",
+      "Songyan Xue",
+      "Giuseppe Caire"
+    ],
+    "submission_date": "2026-09-15T19:19:24Z",
+    "latest_updated": "2026-09-15T19:19:24Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17769v1"
+    ],
+    "abstract": "Downlink channel state information (CSI) feedback is a key bottleneck in frequency-division duplex (FDD) massive MIMO systems, as the user equipment (UE) must convey its estimated channel to the base station (BS) over a limited uplink (UL) budget. To improve CSI reconstruction accuracy under tight feedback constraints, we propose prior-aided masked vector quantization (PM-VQ), a learning-based separate source--channel coding (SSCC) feedback scheme conditioned on the average angle--delay power map---a compact representation of the channel second-order statistics available at both the UE and the BS. In PM-VQ, a prior-aided encoder maps the CSI to latent tokens, and a spatially-adaptive masking module (SAMM) scores and selects the most informative tokens within the feedback budget. The selected tokens are vector-quantized and fed back together with their positions, while an adaptive de-masking module (ADM) completes the latent representation at the BS before prior-conditioned decoding. To support variable-rate compression, a single model is trained over a range of selected-token counts, enabling operation across multiple feedback dimensions without retraining. We evaluate PM-VQ against three representative baselines on a Sionna-generated 3GPP TR~38.901 UMa dataset, focusing on the most challenging diffuse regime where channel energy is spread across many angle--delay coefficients. Simulation results show that PM-VQ achieves the lowest NMSE across all tested SNR levels and feedback dimensions in this regime. Moreover, the angle--delay power-map prior remains beneficial even when estimated from only a few channel realizations.",
+    "status": "found"
+  },
+  "2609.17770": {
+    "arxiv_id": "2609.17770",
+    "title": "PointGrade: Geometric Priors for Grading MoonBoard Problems",
+    "authors": [
+      "Beatrice Stotz",
+      "Ningna Wang",
+      "Daria Nogina",
+      "Caroline Zhang",
+      "Jiyang Yin",
+      "Amy Huang",
+      "Ben Yang",
+      "Jace Li",
+      "Joel Salzman",
+      "Steven Feiner",
+      "Silvia Sellán"
+    ],
+    "submission_date": "2026-09-15T19:21:44Z",
+    "latest_updated": "2026-09-15T19:21:44Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17770v1"
+    ],
+    "abstract": "A MoonBoard is a standardized bouldering wall used in gyms around the world. Climbs up the wall limited to only a subset of holds are known as problems. We introduce PointGrade, a novel machine learning approach to predicting the difficulty of a MoonBoard problem. By sampling a point cloud from pre-scanned meshes of every hold, our model combines 3D object classification architecture with existing sequence-based approaches to difficulty grade prediction. Our method captures latent geometric information contained the climb, outperforming other work on the problem that neglect this data.",
+    "status": "found"
+  },
+  "2609.17771": {
+    "arxiv_id": "2609.17771",
+    "title": "HINT-Plan: Human Intention-Aware Robot Task Planning in Context-Rich Environments using Vision Language Models",
+    "authors": [
+      "Yuchen Liu",
+      "Luigi Palmieri",
+      "Lujun Li",
+      "Radu State",
+      "Ilche Georgievski",
+      "Marco Aiello"
+    ],
+    "submission_date": "2026-09-15T19:24:35Z",
+    "latest_updated": "2026-09-15T19:24:35Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17771v1"
+    ],
+    "abstract": "Approaches to incorporating human awareness into mobile robot decision-making mainly focus on collision avoidance in low-level motion planning, often overlooking the challenges posed by human presence and high-level behavior. To address this vacancy, we present HINT-Plan, a novel approach to integrate human intention prediction into robot task planning. HINT-Plan employs Vision Language Models (VLMs) to anticipate high-level human intentions from third-person image observations, convert them into goal states, and solve joint task-planning problems. To effectively enable scene awareness in context-rich environments, we use hierarchical Scene Graphs (SGs) as high-level representations of the environment, and translate environmental topology and actionable knowledge into formal planning language to ensure executable plans. Evaluated in a photorealistic simulation, HINT-Plan achieves an overall success rate of 69.71% in joint human-robot task planning, substantially outperforming the baselines by up to 35.29%, while also reducing functional conflicts. The results show the effectiveness of explicitly incorporating inferred human intentions into formal multi-agent task planning for proactive human-aware robot decision-making.",
+    "status": "found"
+  },
+  "2609.17772": {
+    "arxiv_id": "2609.17772",
+    "title": "When AI Generates Covariates: Causal Typing and Estimand Drift in Sequential Experiments",
+    "authors": [
+      "Takes Fujita",
+      "Nobutaka Hattori"
+    ],
+    "submission_date": "2026-09-15T19:24:40Z",
+    "latest_updated": "2026-09-15T19:24:40Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17772v1"
+    ],
+    "abstract": "AI-generated covariates from notes, conversations, images, and wearable streams can change the causal question when their roles are left unspecified. A generated feature may represent a treatment version, pre-action state, history, design variable, mediator, outcome proxy, observation process, or intercurrent event; these roles are not interchangeable. We formulate a causal type discipline for sequential experiments: a versioned representation map, a causal role classifier, a claim-status filter, and an estimand lock. The lock fixes a standardized proximal effect before generated covariates enter the analysis. Under audit correctness and standard identification assumptions, admissible role assignments preserve this estimand. We apply the established conditional-covariance characterization of compression bias to substitution of generated representations for design-relevant states. A standardized decomposition separates compression, conditional-law, and standardization drift. Further results cover mediator adjustment, post-action leakage, marker-intervention conflation, outcome-guided discovery, and state-measurement error. Cluster-level orthogonal estimators distinguish empirical and superpopulation targets under repeated sessions and missing outcomes. Simulations show that refinement helps when it retains design-relevant information, whereas design erasure, leakage, and same-data marker selection can produce bias or undercoverage. The framework places causal semantics and claim status before confirmatory inference with generated representations.",
+    "status": "found"
+  },
+  "2609.17773": {
+    "arxiv_id": "2609.17773",
+    "title": "Generalized short monochromatic odd cycles",
+    "authors": [
+      "Sammy Luo",
+      "Zixuan Xu"
+    ],
+    "submission_date": "2026-09-15T19:36:26Z",
+    "latest_updated": "2026-09-15T19:36:26Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17773v1"
+    ],
+    "abstract": "Answering a question of Noga Alon, we generalize a result of Janzer and Yip to show that every $k$-edge-coloring of $K_{r^k+1}$ contains a monochromatic subgraph with chromatic number at least $r+1$ and diameter $O(k^{3/2}r^{k/2}\\log r)$.",
+    "status": "found"
+  }
+}

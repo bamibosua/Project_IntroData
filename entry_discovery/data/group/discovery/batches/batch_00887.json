@@ -1,0 +1,373 @@
+{
+  "2609.15574": {
+    "arxiv_id": "2609.15574",
+    "title": "Towards the new NNPDF4.1 global analysis",
+    "authors": [
+      "Felix Hekhorn"
+    ],
+    "submission_date": "2026-09-14T13:47:53Z",
+    "latest_updated": "2026-09-14T13:47:53Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.15574v1"
+    ],
+    "abstract": "We review progress and plans towards a new global PDF analysis from the NNPDF Collaboration. This new release will be based on state-of-the-art theory calculations, and in particular will be based on exact NNLO interpolation grids, (approximate) N3LO QCD corrections to DGLAP evolution and DIS structure functions, and QED effects to DGLAP evolution. All relevant sources of experimental and theoretical uncertainties, the latter including missing higher orders and higher twists, are taken into account. As compared to NNPDF4.0, this new release includes more than 25 new datasets from HERA jets to Drell-Yan (inclusive and with extra jets), top quark, and jet production at the LHC among others. Our machine learning methodology is statistically validated by extensive closure and future tests and benefits from an improved hyperoptimization algorithm.",
+    "status": "found"
+  },
+  "2609.15575": {
+    "arxiv_id": "2609.15575",
+    "title": "Bell-inequality violation in light transmitted through disordered emitter ensembles",
+    "authors": [
+      "Ruolin Guan",
+      "Vineesha Srivastava",
+      "Kasper J. Kusmierek",
+      "Ivan Vybornyi",
+      "Klemens Hammerer"
+    ],
+    "submission_date": "2026-09-14T13:48:36Z",
+    "latest_updated": "2026-09-24T15:59:43Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2609.15575v1",
+      "2609.15575v2"
+    ],
+    "abstract": "We show that light transmitted through a disordered ensemble of weakly coupled two-level emitters can violate a Bell inequality in a continuous-wave Franson-type measurement. The Bell signal is determined by two steady-state output-field correlations, the equal-time intensity correlation $g^{(2)}(0)$ and the phase-sensitive two-photon coherence $R$. We compute these quantities for bidirectional propagation through disordered emitter ensembles using a fourth-order cumulant expansion of the many-body master equation. The resulting Bell inequality violation appears in two distinct regimes, an antibunched regime where equal-time coincidences are suppressed and a bunched regime where photon pairs remain phase coherent. Extrapolating the numerics to a representative weak single-emitter coupling $β=0.01$ predicts violation in the antibunched regime for atom numbers $N\\simeq75$-$220$, and in the bunched regime for $N\\gtrsim250$.",
+    "status": "found"
+  },
+  "2609.15576": {
+    "arxiv_id": "2609.15576",
+    "title": "Approval Integrity and Recovery in LLM Answer Publication",
+    "authors": [
+      "Faruk Alpay",
+      "Taylan Alpay"
+    ],
+    "submission_date": "2026-09-14T13:48:48Z",
+    "latest_updated": "2026-09-14T13:48:48Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.15576v1"
+    ],
+    "abstract": "Publication integrity in LLM systems requires binding approved content to its current authorization context. We examine exact-content binding, authorization freshness and checkpoint recovery in Lightcap's publication enforcement mechanism. On 900 independently human-annotated RAGTruth responses from 150 source tasks, three dated Ministral models and a same-model direct-grounding baseline yield 3,600 assessments. The production response-act checker instantiated with 14B accepts 291 of 302 unsupported-labelled answers; the direct baseline accepts 41. Supported-answer retention is 95.2% and 66.9%, respectively. An exact promotion-correction identity tracks error through 100 chronological 3B-14B-8B-14B answer trajectories. Among 65 initially approved answers, the final stateful recheck-recovery policy increases exact-match error by 9.23 percentage points relative to the initial checkpoint (95% article-clustered interval [-1.72, 19.61]). Controlled evidence-fingerprint changes expose asymmetric freshness enforcement between publication and recovery. A separate BIPIA prompt-injection experiment records zero target insertions among 266 valid editor outputs. External Hugging Face calibration experiments transfer retrieval models from ArguAna to SciFact and NFCorpus, and diagnostic decision rules from Thunderbird to BGL, distinguishing probability calibration from ranking changes. The measurements separate semantic false approval, stale authorization and recovery-induced error at executable publication boundaries.",
+    "status": "found"
+  },
+  "2609.15577": {
+    "arxiv_id": "2609.15577",
+    "title": "How well do fast discrete trigonometric transforms work for parametric numerical integration?",
+    "authors": [
+      "Gerlind Plonka",
+      "Daniel Potts",
+      "Manfred Tasche"
+    ],
+    "submission_date": "2026-09-14T13:49:19Z",
+    "latest_updated": "2026-09-14T13:49:19Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.15577v1"
+    ],
+    "abstract": "The fast Fourier transform (FFT) and its real counterparts, the fast algorithms of the discrete cosine transform (DCT) and the discrete sine transform (DST), are frequently employed for the numerical evaluation of the Fourier cosine and Fourier sine transform, thereby acting as parametric quadrature rules based on finitely many samples of a given continuous function. But how accurate are the obtained results? In this paper we study the error occurring if the DCT of type I (DCT-I) and the DST of type I (DST-I) are applied to compute $\\int_0^{\\infty} f(x)\\cos(2πxv)\\d x$ and $\\int_0^{\\infty} f(x)\\sin(2πxv)\\d x$ for $f \\in L^1(\\Rp) \\cap C(\\Rp)$ and $v \\in \\Rp$, as well as the error occurring if the Chebyshev coefficients $\\frac{2}π\\int_0^π h(\\cosθ)\\,\\cos(nθ)\\dθ$, $n \\in \\Np$, of a function $h \\in C(I)$ on $I := [-1,1]$ are computed by the DCT-I. We present practicable, explicit error estimates under polynomial, exponential, and mixed decay conditions. For the Fourier cosine and sine transform, rational functions lead to a geometric decay in the frequency parameter $P$ combined with an algebraic plateau of order $L^{-3/2}$ in the sampling parameter $L$, while for meromorphic functions such as $\\operatorname{sech}(π\\,\\cdot)$ the critical geometric rate is attained in both parameters. For Chebyshev approximation of a rational function with simple poles in $\\C \\setminus I$, the quadrature error has the critical geometric rate $ρ_0^{-P}$ with an explicit constant, where $ρ_0 > 1$ is the parameter of the largest Bernstein ellipse of analyticity. Several numerical examples illustrate the theory.",
+    "status": "found"
+  },
+  "2609.15578": {
+    "arxiv_id": "2609.15578",
+    "title": "The Magnitude Mirage: Rethinking Confidence for Reasoning-Intensive Retrieval",
+    "authors": [
+      "Jamie Holdcroft",
+      "Abdelrahman Abdallah",
+      "Adam Jatowt"
+    ],
+    "submission_date": "2026-09-14T13:49:24Z",
+    "latest_updated": "2026-09-14T13:49:24Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.15578v1"
+    ],
+    "abstract": "Many production RAG systems implement retrieval abstention by thresholding raw similarity scores, implicitly treating score magnitude as a confidence signal. We demonstrate that this practice degrades systematically as queries require reasoning beyond semantic matching. Across 11 retrieval architectures and 28 datasets, neural retrievers consistently assign high similarity scores to semantically related but constraint-violating documents, causing magnitude-based thresholds to collapse toward near-random abstention performance on logical and temporal reasoning tasks---a failure we term the Magnitude Mirage. To address this without computationally expensive alternatives, we conduct a large-scale empirical study of six zero-cost Query Performance Prediction (QPP) metrics across three cognitive tiers: semantic matching (BEIR), logical reasoning (BRIGHT), and temporal reasoning (TEMPO). Our central finding is that the key improvement comes from abandoning magnitude in favor of score-distribution signals: the gain from this shift exceeds the differences among distributional alternatives by a factor of 5-10$\\times$. In particular, Score Gap ($s_1 - s_k$) and a practical adaptation of Score Magnitude and Variance (LSMV) improve abstention AUROC by up to 0.16 in settings where magnitude-based confidence provides little discriminative power. These methods require no additional inference, retraining, or latency, making them a practical zero-cost replacement for magnitude thresholding in deployed RAG systems.",
+    "status": "found"
+  },
+  "2609.15579": {
+    "arxiv_id": "2609.15579",
+    "title": "What a gated sensing pipeline never looks at: bandwidth reduction and the misses behind it",
+    "authors": [
+      "Raghu Venkat",
+      "Tricha Anjali"
+    ],
+    "submission_date": "2026-09-14T13:50:14Z",
+    "latest_updated": "2026-09-14T13:50:14Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.15579v1"
+    ],
+    "abstract": "An airborne sensor on a contested link cannot send video, so the appealing move is to send findings instead and report the ratio between the two. We evaluate a gated sensing pipeline that does this, combining learned object detection and image-text comparison with deterministic scheduling, gating, evidence accumulation and transmission rules. On staged footage with the semantic stage live it sends 38,736 bits over 211 s, a reduction of 41,977x, and names 1 of 4 staged events with no false report. That detection has since been superseded: a correction to how the tracker measures speed removed the measurement artefact the normality model had been learning from, and the flight no longer warms. Under the corrected code the pipeline names 1 of 7 staged events across four flights, and we report both. On a control flight where nothing was staged it reports nothing, a reduction of 155,830x: the largest number in the study and the least informative, because a reduction ratio measures the scene. The mechanisms that produce the reduction also decide which observations ever reach a decision, so the two cannot be reported apart. We give a tick-level trace of one flight (3,187 rows) that places each of three missed events at the stage where it stopped progressing: one produced no track, one failed the structural place test at 0.129, and one passed 539 structural ticks but reached only 3.192 against a boundary of 3.807. We also report one instance of a known failure mode, an online normality model absorbing the object it will later judge, measured against the threshold that object then failed. The evidence is one detection and six misses across four staged flights, beside one clean control, and we treat it as a case study. We give the reproduction protocol and generated results, identify which supporting artifacts are not distributed, and state which experiments did not run.",
+    "status": "found"
+  },
+  "2609.15580": {
+    "arxiv_id": "2609.15580",
+    "title": "An Overview of Rate-Distortion-Perception Theory",
+    "authors": [
+      "Jun Chen",
+      "Ashish Khisti"
+    ],
+    "submission_date": "2026-09-14T13:50:19Z",
+    "latest_updated": "2026-09-14T13:50:19Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.15580v1"
+    ],
+    "abstract": "This paper provides a comprehensive overview of the rate-distortion-perception framework, tracing its evolution from mathematical theory to practical deployment. We review the mathematical definition of the the mathematical definition of the Blau--Michaeli function and the associated coding theorems, examine computational methods for its evaluation, and discuss alternative formulations of the framework. Operational principles and design guidelines for modern image and video coding are also presented, highlighting the rate-distortion-perception framework as a rigorous foundation for developing next-generation perceptual compression systems.",
+    "status": "found"
+  },
+  "2609.15581": {
+    "arxiv_id": "2609.15581",
+    "title": "Classical Solutions for a Finite-Horizon Exit-Time Problem with Degenerate Diffusion Control",
+    "authors": [
+      "Lihua Bai",
+      "Linyu Miao"
+    ],
+    "submission_date": "2026-09-14T13:53:00Z",
+    "latest_updated": "2026-09-14T13:53:00Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.15581v1"
+    ],
+    "abstract": "We study finite-horizon exit-time control of a one-dimensional affine diffusion, with an unbounded control acting on both drift and volatility. Since an admissible control can cancel the instantaneous volatility, the associated HJB equation is not uniformly parabolic. Moreover, the location of the degeneracy is not prescribed by the model coefficients but depends on the unknown value function and optimal feedback. Rather than relying on a viscosity-solution formulation, we work under suitable structural assumptions and prove that the value function is a $C^{1,2}$ classical solution throughout the interior of the state domain and is strictly convex in the state variable. Moreover, we construct a locally Lipschitz optimal feedback, explicitly identify the degenerate set as a curve, and show that the closed-loop drift on this curve equals the time derivative of its state coordinate. Finally, we prove invariance and inaccessibility before exit and derive exact squared-logarithmic asymptotics for approach probabilities.",
+    "status": "found"
+  },
+  "2609.15582": {
+    "arxiv_id": "2609.15582",
+    "title": "On questions posed by Gundersen and Yang concerning a certain binomial differential equation",
+    "authors": [
+      "Xuxu Xiang",
+      "Jianren Long"
+    ],
+    "submission_date": "2026-09-14T13:53:20Z",
+    "latest_updated": "2026-09-14T13:53:20Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.15582v1"
+    ],
+    "abstract": "Suppose \\(a, b, c\\) are polynomials with \\(ab \\neq 0\\) and \\(c\\) nonconstant. We determine all entire solutions to the equation \\begin{equation*} f'f'' - a(z)f^2 = b(z)e^{2c(z)}. \\end{equation*} This completely solves two open questions posed by Gundersen and Yang in [Comput. Methods Funct. Theory 21 (2021), 605-617].",
+    "status": "found"
+  },
+  "2609.15583": {
+    "arxiv_id": "2609.15583",
+    "title": "Generalized Parton Distributions: Phenomenology, Extraction, and Hadron Imaging",
+    "authors": [
+      "Simonetta Liuti",
+      "Zaki Panjsheeri",
+      "Kemal Tezgin"
+    ],
+    "submission_date": "2026-09-14T13:53:25Z",
+    "latest_updated": "2026-09-14T13:53:25Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.15583v1"
+    ],
+    "abstract": "Generalized Parton Distributions (GPDs) provide a framework for investigating the correlated momentum and spatial structure of quarks and gluons in hadrons and for accessing fundamental properties such as angular momentum and the QCD energy-momentum tensor. In this review, we discuss the present status of GPD phenomenology, emphasizing the challenges involved in connecting deeply virtual exclusive measurements to the underlying partonic structure. We organize this problem in terms of two successive inverse problems: the extraction of Compton Form Factors (CFFs) from measured observables and the reconstruction of GPDs from the convolution integrals defining the CFFs. We review the theoretical description and phenomenological parametrizations of GPDs, current strategies for CFF and GPD extraction, and the role of lattice QCD, Bayesian inference, uncertainty quantification, and artificial intelligence, including neural networks and interpretable machine-learning approaches. We discuss the limitations of present determinations and the opportunities offered by the Jefferson Lab program, complementary exclusive processes, and the future Electron-Ion Collider. Finally, we consider how increasingly precise and multidimensional information, together with new statistical and AI methodologies, will transform GPD phenomenology in the emerging era of precision hadron imaging.",
+    "status": "found"
+  },
+  "2609.15584": {
+    "arxiv_id": "2609.15584",
+    "title": "Multiscale modeling of host-pathogen interactions and mucociliary clearance during non-tuberculous mycobacterial pulmonary infection",
+    "authors": [
+      "Jindong Wang",
+      "Kali Konstantinopoulos",
+      "Po-Chun Kuo",
+      "Mingchao Cai",
+      "Ning Wei",
+      "Elsje Pienaar",
+      "Wenrui Hao"
+    ],
+    "submission_date": "2026-09-14T13:53:48Z",
+    "latest_updated": "2026-09-14T13:53:48Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.15584v1"
+    ],
+    "abstract": "Non-tuberculous mycobacterial (NTM) infections are a clinical challenge in cystic fibrosis (CF), where impaired mucociliary clearance and altered mucus rheology promote bacterial colonization despite host immune responses. Understanding how bacterial growth, immune cell dynamics, and mucus transport regulate infection progression is difficult because these processes interact across spatial and temporal scales. We develop a computational framework bridging a mechanistic agent-based model (ABM) of NTM infection with a spatially resolved partial differential equation (PDE) model. The PDE model couples bacterial proliferation, macrophage chemotaxis, immune-mediated clearance, mucus degradation, and viscoelastic transport in a two-compartment geometry representing mucus and lung tissue. Parameters are calibrated using data from the established ABM, yielding an efficient continuum representation while preserving cellular mechanisms. The PDE model reproduces bacterial and macrophage dynamics and enables analyses of mucus-related mechanisms and therapies. Sensitivity analysis identifies mucus viscosity, bacterial diffusivity, and macrophage mobility as key regulators of bacterial persistence through mucociliary clearance and tissue colonization. Simulations reveal nonlinear effects of mucolytic therapies: enhanced clearance reduces bacterial burden in mucus, whereas excessive viscosity reduction may promote migration into lung tissue, supporting combination with antibacterial treatment. This framework provides a quantitative platform for studying pulmonary infections, evaluating therapies, and developing patient-specific digital twins.",
+    "status": "found"
+  },
+  "2609.15585": {
+    "arxiv_id": "2609.15585",
+    "title": "Extension of Likelihood Ratio Analysis Method to Skorokhod $M_1$ Topology (with Application to Poissonian Smooth Change-Point Model)",
+    "authors": [
+      "Arij Amiri",
+      "Sergue{ï} Dachian"
+    ],
+    "submission_date": "2026-09-14T13:55:14Z",
+    "latest_updated": "2026-09-14T13:55:14Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.15585v1"
+    ],
+    "abstract": "We extend the Ibragimov-Khasminskii likelihood ratio analysis method, in the one-dimensional parameter case, to a framework based on the Skorokhod $M\\_1$ topology. The proposed framework applies to a broad class of statistical models, including those for which the normalized likelihood ratio processes are continuous while the limiting likelihood ratio process is discontinuous, a setting outside the scope of classical approaches based on the uniform or Skorokhod $J\\_1$ topologies. We derive sufficient conditions for the weak convergence of likelihood ratio processes in the space of c{à}dl{à}g functions on $\\RR$ vanishing at $\\pm\\infty$, endowed with the Skorokhod $M\\_1$ topology, and show how this convergence yields the asymptotic behavior of the maximum likelihood estimator. We also introduce new techniques for controlling the $M\\_1$ modulus of continuity. Although these techniques are particularly well suited to models in which all jumps and steep continuous transitions are in the same direction, they are of independent interest and may prove useful beyond this setting. As an application, we study a smooth change-point model for inhomogeneous Poisson processes in the fast regime, where the transition interval shrinks faster than $1/n$. We establish that in this case the maximum likelihood estimator has the same asymptotic behavior (consistency, rate of convergence, limiting distribution and convergence of moments) as in the corresponding ''pure'' change-point model.",
+    "status": "found"
+  },
+  "2609.15586": {
+    "arxiv_id": "2609.15586",
+    "title": "Information Erasure and Quantum Imprint in Quantum Measurement and First-Order SPAM Error Separation",
+    "authors": [
+      "Taiga Suzuki",
+      "Yuki Ito",
+      "Masayuki Ohzeki"
+    ],
+    "submission_date": "2026-09-14T13:55:28Z",
+    "latest_updated": "2026-09-14T13:55:28Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.15586v1"
+    ],
+    "abstract": "We introduce information erasure and quantum imprint as two properties that classify quantum instruments. Information erasure is the property that an appropriate postselection can render the distribution of earlier measurement outcomes independent of the initial quantum state while retaining all outcome branches. Quantum imprint is the complementary property that no admissible postselection can eliminate this state dependence. We show that this classification has a nontrivial structure and that the natural intuition that measurements providing more information about the initial quantum state should be less likely to exhibit information erasure does not hold in general. We further show that, under a sufficiently reliable postselection, information erasure enables first-order separation of state-preparation and measurement (SPAM) errors. Specifically, the first-order contribution of state-preparation error vanishes from the posterior distribution, whereas visible first-order contributions of measurement error remain. This result recasts SPAM error separation from the problem of simultaneously characterizing state preparation and measurement into the problem of realizing a reliable postselection.",
+    "status": "found"
+  },
+  "2609.15587": {
+    "arxiv_id": "2609.15587",
+    "title": "An Information-Space Perspective to Scene Graph Sufficiency for Robotic Task Planning",
+    "authors": [
+      "Başak Sakçak",
+      "Francesco Verdoja"
+    ],
+    "submission_date": "2026-09-14T13:55:41Z",
+    "latest_updated": "2026-09-14T13:55:41Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.15587v1"
+    ],
+    "abstract": "Planning in complex environments requires task specifications grounded in representations that capture objects, relations, and affordances; scene graphs meet this need, but their size in large environments hinders efficient planning. While task-aware pruning and hierarchical abstractions have been explored, a general, task-centric formalization of what constitutes a sufficient scene graph for planning remains open. This paper provides such a formalization by modeling planning over scene graphs within an information-spaces framework through the definition of scene graph transition systems and relevant action semantics for navigation and manipulation. We then introduce derived scene graphs via information mappings that merge and prune nodes and induce quotient transition systems augmented with motion primitives to capture higher-level actions over merged graph nodes. Sufficiency is characterized by two conditions: (i) the information mapping yields a deterministic quotient, and (ii) the task is well-posed over derived traces, ensuring plans found on the derived model are feasible on the maximal system. We illustrate the framework using a task over an example environment, showing both sufficient and insufficient reduced scene graphs.",
+    "status": "found"
+  },
+  "2609.15588": {
+    "arxiv_id": "2609.15588",
+    "title": "Extraction of genuine twist-3 distribution from data",
+    "authors": [
+      "Alexey Vladimirov"
+    ],
+    "submission_date": "2026-09-14T13:56:25Z",
+    "latest_updated": "2026-09-14T13:56:25Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.15588v1"
+    ],
+    "abstract": "The report on an extraction of genuine twist-three parton distributions, obtained from a joint fit of the deep-inelastic scattering (DIS) structure function $g_2$, its moment $d_2$, and the Sivers and worm-gear-T asymmetries measured in semi-inclusive DIS (SIDIS). These four observables probe different sections of the same twist-three distributions, and thus their joint analysis makes a precision extraction of this two-variable function possible. Considering a sub-set of observables does not constrain the twist-three distribution in all its parts. Nonetheless, such consideration places a sufficient amount of restrictions to sufficiently accurately estimate eliminated observables, explicitly demonstrating the universality of twist-three distributions.",
+    "status": "found"
+  },
+  "2609.15589": {
+    "arxiv_id": "2609.15589",
+    "title": "Polarized varieties without arithmetically Cohen-Macaulay bundles and section rings without graded maximal Cohen-Macaulay modules in characteristic zero",
+    "authors": [
+      "Cristian Anghel"
+    ],
+    "submission_date": "2026-09-14T13:57:34Z",
+    "latest_updated": "2026-09-14T13:57:34Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.15589v1"
+    ],
+    "abstract": "We exhibit smooth polarized surfaces $(Y,H)$ over $\\mathbf{C}$ carrying no nonzero arithmetically Cohen-Macaulay bundle of any rank. Equivalently, their section rings are three-dimensional normal $\\mathbb{N}$-graded $\\mathbf{C}$-domains, with an isolated singularity at the vertex, admitting no nonzero finitely generated graded maximal Cohen-Macaulay module. To the author's knowledge no such ring was previously known. Their existence contrasts with the theorem of Hartshorne, Hochster and Peskine-Szpiro that a three-dimensional $\\mathbb{N}$-graded domain over a perfect field of characteristic $p>0$ always has one. As a consequence, in characteristic zero Hochster's small Cohen-Macaulay conjecture admits no graded refinement. The nonexistence criterion is numerical: for $|H|$ base-point-free with finite morphism, $H^2<K_Y^2-8χ(\\mathcal{O}_Y)=τ(Y)$, the signature of $Y$ over $\\mathbf{C}$, leaves no nonzero $\\mathcal{E}$ with $H^1(Y,\\mathcal{E}(tH))=0$ for all $t$. For Ulrich bundles, being semistable, this is Bogomolov's inequality; what is new is that no stability hypothesis and no condition on the Hilbert polynomial are needed, the Harder-Narasimhan filtration of $\\mathcal{E}$ being compared instead with the Horrocks splitting of its direct image on $\\mathbb{P}^2$. Hirzebruch's Hesse surfaces with $H_n=4A_n-E_n$, $n\\ge3$, qualify. In dimension $m$ the obstruction reads $(m+1)H^m\\ge(K_X^2-2c_2(X))\\cdot H^{m-2}$, the inequality Lopez proved for Ulrich bundles; products and complete intersections inside them give examples in every dimension $\\ge3$, and the threefold examples show that the characteristic-$p$ hypothesis in the criterion of Shimomoto-Tavanfar is essential.",
+    "status": "found"
+  },
+  "2609.15590": {
+    "arxiv_id": "2609.15590",
+    "title": "An extension of algebraic independence of special values for non-lacunary power series",
+    "authors": [
+      "Hajime Kaneko",
+      "Satoru Oshima",
+      "Takafumi Tsurumaki"
+    ],
+    "submission_date": "2026-09-14T13:57:38Z",
+    "latest_updated": "2026-09-14T13:57:38Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.15590v1"
+    ],
+    "abstract": "We study the algebraic independence of special values of power series $f(β^{-1})$, where $β$ is a fixed Pisot or Salem number. In particular, we consider the case where $f(X)=\\sum_{n\\geq 0} t(n) X^{w(n)}$ is not a lacunary series and is not assumed to satisfy any special functional equation, such as a Mahler-type functional equation. In our main results, we give a new criterion of the algebraic independence of three values. Applying our main results, we prove that the following three values are algebraically independent: \\[ % \\begin{gathered} \\sum_{n=3}^{\\infty}\\lfloor n^{y}\\rfloorβ^{-\\lfloor n^{\\log \\log n}\\rfloor},\\quad \\sum_{n=3}^{\\infty}β^{-\\lfloor n^{\\log \\log n}\\rfloor},\\quad \\sum_{n=1}^{\\infty}β^{-\\lfloor n^{\\log n}\\rfloor}, % \\end{gathered} \\] where $y$ is an arbitrary positive real number. Since our criterion is flexible, we have considerable freedom in choosing the coefficients $(t(n))_{n\\geq 0}$ and the exponents $(w(n))_{n\\geq 0}$.",
+    "status": "found"
+  },
+  "2609.15591": {
+    "arxiv_id": "2609.15591",
+    "title": "A 3-regular counterexample to the Bilu--Linial signing conjecture",
+    "authors": [
+      "Zhiqiang Xu"
+    ],
+    "submission_date": "2026-09-14T13:57:45Z",
+    "latest_updated": "2026-09-29T05:47:08Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 4,
+    "versions": [
+      "2609.15591v1",
+      "2609.15591v2",
+      "2609.15591v3",
+      "2609.15591v4"
+    ],
+    "abstract": "We construct a finite connected simple cubic graph $F$ such that every signing of its edges yields a signed adjacency matrix with an eigenvalue outside $[-2\\sqrt2,2\\sqrt2]$. This disproves the Bilu--Linial signing conjecture for general regular graphs. The graph $F$ is not Ramanujan, and the conjecture restricted to Ramanujan base graphs remains open.",
+    "status": "found"
+  },
+  "2609.15592": {
+    "arxiv_id": "2609.15592",
+    "title": "Nonparametric Regression on Fixed-Cardinality Subsets:Minimax Risk and Random-Design Effects",
+    "authors": [
+      "G{é}rard Biau"
+    ],
+    "submission_date": "2026-09-14T13:57:46Z",
+    "latest_updated": "2026-09-14T13:57:46Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.15592v1"
+    ],
+    "abstract": "We study regression with subsets as covariates. The response is an unknown function of the input subset, and observations consist of noisy evaluations at uniformly sampled subsets, each containing exactly \\(k\\) items from a ground set of size \\(d\\). This problem arises in combination screening, bundle preference modeling, and other settings in which outcomes depend on collections of prescribed size. The fixed-cardinality constraint couples the membership coordinates, so standard product-domain notions of interaction and smoothness cannot be imported unchanged. We use the harmonic decomposition of the Johnson graph to define an intrinsic Johnson--Sobolev scale and determine the exact dimensions of low-order interaction spaces. We derive finite-sample risk bounds for harmonic projection and establish a nonasymptotic minimax characterization when the Johnson--Sobolev energy budget is controlled relative to the noise variance. We also show that stable least squares removes the signal-dependent fluctuation of empirical projection when the empirical Gram matrix is sufficiently well conditioned. For arbitrary signal-to-noise ratios, a rank-deficiency analysis quantifies the components left unidentified by the random design. Together, the rank-deficiency analysis and a centered completion estimator yield minimax bounds that match up to constants whenever \\(\\min(k,d-k)\\) and the smoothness order are fixed. Numerical experiments reported in the Supplementary Material illustrate estimation under different interaction profiles and distinguish the effects of observation noise, random-design fluctuation, and incomplete coverage.",
+    "status": "found"
+  },
+  "2609.15593": {
+    "arxiv_id": "2609.15593",
+    "title": "Upper bounds of the Laplace spectrum on compact Kähler manifolds",
+    "authors": [
+      "Yuan Yuan"
+    ],
+    "submission_date": "2026-09-14T13:57:49Z",
+    "latest_updated": "2026-09-14T13:57:49Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.15593v1"
+    ],
+    "abstract": "On a connected compact Kähler manifold without boundary, we derive a uniform upper bound for each Laplace eigenvalue over all Kähler metrics in a given Kähler class. This provides an affirmative answer to a question of Yau.",
+    "status": "found"
+  }
+}

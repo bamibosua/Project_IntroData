@@ -1,0 +1,398 @@
+{
+  "2609.16314": {
+    "arxiv_id": "2609.16314",
+    "title": "Robust Fault Detection in Mechanical Multimodal Time Series via Self-Supervised Cross-Modal Reconstruction",
+    "authors": [
+      "Magnus Munk Jensen",
+      "Dorte Hammershøi",
+      "Rafał Wiśniewski",
+      "Olga Fink"
+    ],
+    "submission_date": "2026-09-14T20:24:53Z",
+    "latest_updated": "2026-09-14T20:24:53Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16314v1"
+    ],
+    "abstract": "Fault detection is essential in industrial systems, enabling early identification of abnormal behaviour and improving safety, reliability, and operational efficiency. Modern systems increasingly rely on heterogeneous sensing modalities that capture complementary aspects of the underlying physical process. However, existing data-driven anomaly detection methods often process each modality independently or use simple feature-level fusion, limiting their ability to exploit cross-modal relationships that characterize normal system behaviour. Their performance also commonly assumes similar training and deployment distributions, whereas real-world operation is affected by changing operating conditions, environmental influences, and system degradation that induce distribution shifts and reduce detection performance, especially in unseen regimes. In this work, we propose a multimodal anomaly detection framework based on cross-modal reconstruction of heterogeneous time-series sensor data. Rather than modeling each modality independently, the framework learns system dynamics by reconstructing each modality from the others, thereby exploiting complementary information across modalities. This integrates information across sensing channels without requiring explicit temporal alignment or identical sampling rates, while improving robustness to sensor noise, missing measurements, and modality-specific disturbances. To address distribution shifts during real-world deployment, anomalies are identified using cross-modal reconstruction error and an adaptive test-time thresholding mechanism that adjusts to changing operating conditions. Experiments on three industrial case studies show strong fault detection performance and substantially improved robustness under out-of-distribution conditions, with the largest gains observed in the most challenging operating regimes.",
+    "status": "found"
+  },
+  "2609.16315": {
+    "arxiv_id": "2609.16315",
+    "title": "SongCraft: Unified Song Generation and Editing with Reconstructive Learning",
+    "authors": [
+      "Haohe Liu",
+      "Varun Nagaraja",
+      "Gael Le Lan",
+      "Xinhao Mei",
+      "Zhaoheng Ni",
+      "Vikas Chandra",
+      "Abdelrahman Mohamed",
+      "Yangyang Shi"
+    ],
+    "submission_date": "2026-09-14T20:25:58Z",
+    "latest_updated": "2026-09-14T20:25:58Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16315v1"
+    ],
+    "abstract": "Song generation and editing have mostly been treated as separate tasks. Existing editing methods often require noise injection and regeneration or curated paired training data. We propose a unified approach for song generation and editing based on reconstructive pretraining, in which a model is trained to reconstruct audio from varying numbers of interpretable conditions. With conditions such as text and lyrics, the model learns to generate diverse songs. With dense conditions specifying fine-grained music attributes, the model learns to reconstruct the target and enables editing by modifying any single attribute while keeping others fixed. This leads to SongCraft, a latent flow matching based model trained for both generation and fine-grained editing. To improve song generation quality, we further introduce word-level phoneme alignment that improves pronunciation learning and accelerates convergence, beat conditioning that improves general musicality, and representation alignment on VAE latent space that produces semantically meaningful latents for improved generation quality. Experiments show that SongCraft achieves the lowest word error rate among evaluated song generation baselines while maintaining competitive audio quality. We further show that a single model can support editing of lyrics, vocal melody, beats, and singer identity, and we also study the trade-off between reconstruction quality and editability.",
+    "status": "found"
+  },
+  "2609.16316": {
+    "arxiv_id": "2609.16316",
+    "title": "Navigating the Delicate Geometry of Beehive Mite Infestation with Optimal Control",
+    "authors": [
+      "Julia Saff",
+      "Bhargav R. Karamched"
+    ],
+    "submission_date": "2026-09-14T20:29:48Z",
+    "latest_updated": "2026-09-14T20:29:48Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16316v1"
+    ],
+    "abstract": "The parasitic mite Varroa destructor poses a severe existential threat to global honey bee Apis mellifera populations. In this paper, we present a dynamical systems model of hive-mite interactions incorporating a eusocial Allee effect to evaluate the efficacy of chemical interventions. We partition treatments into ``soft'' miticides (targeting phoretic mites) and ``harsh'' miticides (penetrating the capped brood to target reproductive mites). Our bifurcation analysis reveals a fundamental trade-off: while harsh treatments effectively eradicate the protected mite reservoir by shifting the transcritical bifurcation boundary, they impose sublethal toxicity on the bees. We analytically show that exceeding a critical dosage threshold culminates in a catastrophic saddle-node bifurcation that guarantees colony collapse. To navigate this toxicity limit, we formulate an optimal control problem using Pontryagin's Maximum Principle. Numerical solutions reveal that a dynamic ``shock and maintain'' cocktail strategy optimally balances reservoir clearance with hive viability. Expanding the model to include treatment-resistant strains demonstrates that single-chemical reliance forces the hive onto a highly toxic, nearly unsustainable chemical treadmill. Finally, our mathematical framework yields a striking ecological prediction: because the eradication boundary scales intimately with the colony's carrying capacity, unchecked mite pressure will likely exert evolutionary forces that select for smaller, naturally resistant hives over the massive colonies favored by commercial agriculture.",
+    "status": "found"
+  },
+  "2609.16317": {
+    "arxiv_id": "2609.16317",
+    "title": "Generative models for simulation based filtering: Formulations and Empirical Comparisons",
+    "authors": [
+      "Mohammad Al-Jarrah",
+      "Wei Deng",
+      "Bamdad Hosseini",
+      "Amirhossein Taghvaei"
+    ],
+    "submission_date": "2026-09-14T20:31:29Z",
+    "latest_updated": "2026-09-14T20:31:29Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16317v1"
+    ],
+    "abstract": "This letter presents a unified formulation and a controlled numerical comparison of generative-model approaches to the nonlinear filtering problem. Under this formulation the analysis step is realized by a transport of the forecast distribution to the posterior, the approaches differing only in how that transport is selected and learned. We derive three new filters, based on stochastic interpolants, their deterministic flow-matching limit, and Schrödinger bridges realized through forward--backward SDEs. We develop a two-stage tuning procedure that separates the training of the generative model from its online refinement. The resulting methods are compared against the optimal transport filter (OTF), the Knothe--Rosenblatt filter (KRF), the sequential importance resampling (SIR) particle filter and the ensemble Kalman filter (EnKF), in terms of accuracy, computational time, and sensitivity to ensemble size and state dimension. The results indicate that every generative filter resolves multimodal posteriors that the EnKF and SIR do not, that no single generative framework dominates, the preferred method being set by the available online budget and ensemble size, and that the filters differ in the regularity of the particle trajectories they produce.",
+    "status": "found"
+  },
+  "2609.16318": {
+    "arxiv_id": "2609.16318",
+    "title": "Transfinite contractive propagation and the ball fixed point property in \\texorpdfstring{$C(K)$}{C(K)}",
+    "authors": [
+      "Cleon S. Barroso"
+    ],
+    "submission_date": "2026-09-14T20:32:40Z",
+    "latest_updated": "2026-09-14T20:32:40Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16318v1"
+    ],
+    "abstract": "We prove that, for a compact Hausdorff space $K$, the real Banach space $C(K)$ has the ball fixed point property if and only if $K$ is extremally disconnected. The new implication is obtained by constructing a fixed-point-free nonexpansive self-map of the whole closed unit ball whenever $K$ is a compact $F$-space which is not extremally disconnected. The construction uses a transfinite contractive propagation system with two increasing profiles. A successor--limit delay preserves their tail constraint and has no subsolution in the profile domain. Analysis records boundary deficits; positive operators on ordinal $C_0$-spaces and a common center determined by the two tails yield a nonexpansive synthesis satisfying an order domination inequality. The required topological families are obtained from a gap in a maximal Boolean chain in the zero-dimensional case, and from a transfinite extension of signs otherwise. The argument works in ZFC and resolves the question posed by Avilés, Japón, Lennard, Martínez-Cervantes, and Stawski.",
+    "status": "found"
+  },
+  "2609.16319": {
+    "arxiv_id": "2609.16319",
+    "title": "ConGraspXL: Controllable Constraint-Conditioned Dexterous Grasping Motion Synthesis",
+    "authors": [
+      "Hui Zhang",
+      "Mirko Meboldt",
+      "Jie Song"
+    ],
+    "submission_date": "2026-09-14T20:35:04Z",
+    "latest_updated": "2026-09-14T20:35:04Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16319v1"
+    ],
+    "abstract": "Dexterous grasping is usually conducted for specific tasks, leading to heterogeneous constraints such as specific approach directions, desired contact regions, specified wrist trajectories, and functional hand poses. Our previous work, GraspXL, achieves scalable grasping motion synthesis for diverse objects and hand morphologies, while lacking controllability for synthesis under such various task-driven constraints. In this paper, we propose ConGraspXL, which extends GraspXL with controllable constraint-conditioned grasp motion synthesis that accommodates diverse task-driven constraints and their combinations. We introduce a hierarchical constraint formulation, enable flexible constraint composition with a masked residual interface, and improve control precision with dynamic hand centers and feed-forward wrist guidance. Without losing the strong generalization capabilities of GraspXL, ConGraspXL enables precise and flexible controllability for various individual constraints and their combinations, providing a plug-and-play low-level grasp controller for downstream applications such as whole-body grasp completion, functional grasping, and human-motion imitation.",
+    "status": "found"
+  },
+  "2609.16320": {
+    "arxiv_id": "2609.16320",
+    "title": "Probing proximity-induced superconductivity in bilayer graphene using gate-defined quantum dots",
+    "authors": [
+      "Philipp Schmidt",
+      "Mathies Funke",
+      "Till Tenger",
+      "Katarina Stanojević",
+      "Hubert Dulisch",
+      "Kenji Watanabe",
+      "Takashi Taniguchi",
+      "Fabian Hassler",
+      "Christian Volk",
+      "Szabolcs Csonka",
+      "Christoph Stampfer"
+    ],
+    "submission_date": "2026-09-14T20:36:46Z",
+    "latest_updated": "2026-09-14T20:36:46Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16320v1"
+    ],
+    "abstract": "Van der Waals heterostructures offer a direct way of combining two-dimensional (2D) materials with different electronic properties, such as 2D semiconductors, metals, and superconductors, in a single device. Bilayer graphene (BLG) is particularly attractive in this context, as its electrically tunable band gap enables local control of tunnel barriers and quantum dots. Here, we realize an all-2D hybrid platform based on BLG proximitized by superconducting NbSe$_2$. Using local electrostatic gates, we define tunnel barriers and quantum dots at different distances from the lateral superconductor-semiconductor interface. The quantum dots serve as local spectroscopic probes of the proximitized BLG channel segment, forming tunable superconductor-quantum dot-normal conductor junction devices. Coulomb blockade and finite-bias spectroscopy reveal a proximity-induced superconducting gap of up to $80\\,\\mathrm{μeV}$ and allow to track its evolution with increasing distance from the NbSe$_2$ contact. We find that the local density of states remains suppressed over distances exceeding 1 $μ$m, consistent with superconducting proximity through a highly ballistic BLG channel. Our results show that BLG-superconductor hybrids offer a controllable platform where quantum dots and quantum point contacts can be well combined with superconductivity.",
+    "status": "found"
+  },
+  "2609.16321": {
+    "arxiv_id": "2609.16321",
+    "title": "FairLint-DL: An IDE-Native Tool for Fairness Debugging of Deep Learning Software",
+    "authors": [
+      "Archit Rathod",
+      "Saeid Tizpaz-Niari"
+    ],
+    "submission_date": "2026-09-14T20:37:44Z",
+    "latest_updated": "2026-09-14T20:37:44Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16321v1"
+    ],
+    "abstract": "Existing fairness analysis tools predominantly operate as post-training evaluation frameworks, requiring practitioners to complete the full model development lifecycle before assessing bias. We present FairLint-DL, a Visual Studio Code extension that implements a shift-left approach to fairness testing by enabling pre-training, IDE-native bias detection directly on tabular datasets. FairLint-DL trains a configurable deep neural network as a proxy model and applies information-theoretic Quantitative Individual Discrimination (QID) metrics. Grounded in Shannon and min-entropy, QID quantifies the causal influence of protected attributes on predictions. The system implements a two-phase gradient-guided search algorithm for discovering discriminatory instances, a causal debugging pipeline that localizes bias to specific network layers and neurons via sensitivity analysis, and dual explainability engines using SHAP and LIME for feature-level attribution. Evaluation on three tabular benchmarks (Adult Census Income, German Credit, and Bank Marketing) reveals fairness concerns that vary widely across datasets: on Adult, 96.0% of analyzed instances exhibit QID above the 0.1-bit significance threshold, with a mean QID of 0.619 bits and a disparate impact ratio of 0.581, violating the four-fifths legal rule. FairLint-DL produces these results within 12 seconds on cached models, demonstrating the feasibility of integrating fairness analysis into the developer workflow without significant overhead.",
+    "status": "found"
+  },
+  "2609.16322": {
+    "arxiv_id": "2609.16322",
+    "title": "Cross-Anatomy Transfer Versus Sparse Interpolation in Digital-Twin-Oriented Aortic Fluid-Structure Interaction Surrogates",
+    "authors": [
+      "Ali Nourbakhsh",
+      "Mohammad Reza Niroomand",
+      "Erfan Nourbakhsh"
+    ],
+    "submission_date": "2026-09-14T20:37:45Z",
+    "latest_updated": "2026-09-14T20:37:45Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16322v1"
+    ],
+    "abstract": "Surrogate credibility for fluid-structure interac- tion (FSI) requires distinguishing transfer across independent anatomies from interpolation within an already sampled surface. Four de-identified human aortic models from the Vascular Model Repository were reconstructed into separate lumen and nominal 1.5-mm wall domains and analyzed under matched first-cycle two-way FSI. A geometry-only LightGBM prior, selected by leave-one-anatomy-out development on three anatomies, was zero-shot evaluated on a fourth, then probed with a post-zero- shot sparse field-completion case study over six targets. Zero-shot transfer was poor across all targets. At a five-percent anchor level (203 anchors, 3,852 evaluation nodes), prior-plus-adaptation reached an oscillatory shear index (OSI) R2 of 0.603. However, same-anchor controls tuned only on the three development anatomies were stronger for several outcomes: inverse-distance weighting reached R2 = 0.829 (OSI), 0.617 (peak von Mises stress), 0.676 (mean stress); radial basis function interpolation reached 0.917, 0.714, 0.778. Sparse within-anatomy labels thus support field completion, but this four-anatomy cohort gives no evidence the cross-anatomy prior adds value beyond direct interpolation. We frame this as a first computational stage toward a measurement-linked digital twin: the surrogate/update layer is evaluated here, while larger cohorts, converged FSI, measurable patient-side inputs, and physics-informed learning remain future work, not a claim of a complete clinical twin. Our code, data and computation files are available at https://github. com/ali-nourbakhsh2005/Aortic-FSI-Sparse-Field-Completion",
+    "status": "found"
+  },
+  "2609.16323": {
+    "arxiv_id": "2609.16323",
+    "title": "Understanding the Usability of Cryptographic Verification Tools",
+    "authors": [
+      "Tarikul Islam",
+      "Yasin Islam",
+      "Khandakar Ashrafi Akbar",
+      "Imtiaz Karim"
+    ],
+    "submission_date": "2026-09-14T20:40:52Z",
+    "latest_updated": "2026-09-14T20:40:52Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16323v1"
+    ],
+    "abstract": "Cryptographic protocol verification tools are widely used to analyze the security of complex protocols, yet how users interact with these tools remains comparatively understudied. We present an exploratory human-centered study of experienced users of Tamarin, ProVerif, and related protocol verifiers. Our survey included researchers, graduate students, and practitioners with hands-on experience using Tamarin, ProVerif, or related tools. The findings reveal usability barriers across the verification workflow, including difficulties debugging non-termination and performance issues, and the lack of systematic methods for validating formal models against real protocols. When proofs fail without concrete attacks, users commonly simplify models, add helper lemmas, and revisit modeling abstractions. Participants also called for actionable diagnostics, clearer explanations of results, visualization, and automation for recurring proof tasks. Our findings suggest that persistent usability challenges arise from the gap between protocol-level reasoning and the verifier's formal model, proof procedures, and diagnostic output. We derive concrete design priorities for improving the accessibility, interpretability, and usability of cryptographic protocol verification tools.",
+    "status": "found"
+  },
+  "2609.16324": {
+    "arxiv_id": "2609.16324",
+    "title": "The Post-Outburst Spectrum of L1415-IRS",
+    "authors": [
+      "Lynne A. Hillenbrand",
+      "Thomas P. Greene",
+      "Evan R. Portnoi",
+      "Bringfried Stecklum"
+    ],
+    "submission_date": "2026-09-14T20:40:58Z",
+    "latest_updated": "2026-09-14T20:40:58Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16324v1"
+    ],
+    "abstract": "We present near-infrared spectroscopic observations of L1415-IRS, a Class I type young stellar object that underwent a factor of $>$30 photometric outburst in the early 2000s. Ours is the first reported spectroscopy of this deeply embedded source. Both components of L1415-IRS present continuum plus $H_2$ emission. The southern component has additional weak HI Br$γ$ and $CO$ emission. Based upon our spectrum and evidence of a declining lightcurve, we hypothesize that either: the outburst was not large enough and therefore hot enough to produce the FU Ori type absorption spectrum commonly interpreted as an accretion disk atmosphere, or the source has already recovered from FU Ori-type equatorial accretion to re-establish T Tauri-type magnetospheric accretion.",
+    "status": "found"
+  },
+  "2609.16325": {
+    "arxiv_id": "2609.16325",
+    "title": "General first-order constitutive equations for a relativistic dissipative multi-component fluid in the presence of a weak background electromagnetic field",
+    "authors": [
+      "J. Félix Salazar",
+      "Ana Laura García-Perciante",
+      "Olivier Sarbach"
+    ],
+    "submission_date": "2026-09-14T20:42:14Z",
+    "latest_updated": "2026-09-14T20:42:14Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16325v1"
+    ],
+    "abstract": "In this work we establish general constitutive equations for a relativistic plasma composed of an arbitrary number of classical, charged, and chemically non-reacting species in the presence of a background electromagnetic field. The intensity of the electromagnetic force acting on either species is assumed to be comparable with the gradients of the state variables and is thus considered as a first-order driving force for dissipation within the gradient expansion. Assuming that the species share the same temperature and velocity flow when in equilibrium, we determine the entropy production and establish constitutive equations in terms of first-order frame invariant quantities. Conditions on the corresponding transport coefficients are given in order to comply with Onsager's reciprocal relations and the second law of thermodynamics. In particular, we discuss cross effects for the binary mixture which may be relevant for astrophysical and cosmological applications. Finally, we derive a complete set of evolution equations governing the dynamics of a binary mixture propagating on an arbitrary spacetime background.",
+    "status": "found"
+  },
+  "2609.16326": {
+    "arxiv_id": "2609.16326",
+    "title": "Endpoint Differentiability Moduli for Fully Nonlinear Elliptic Equations",
+    "authors": [
+      "Aelson Sobral",
+      "Eduardo V. Teixeira"
+    ],
+    "submission_date": "2026-09-14T20:43:05Z",
+    "latest_updated": "2026-09-14T20:43:05Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16326v1"
+    ],
+    "abstract": "A classical consequence of Caffarelli's fully nonlinear regularity theory [L. A. Caffarelli, Ann. of Math. (2) 130 (1989), no. 1, 189-213] is that viscosity solutions of uniformly elliptic equations $F(D^2u)=f$, with $f\\in L^p$, $p > n$, are locally $C^{1,γ}$ for every $γ< \\min\\{α_H,σ_p\\}$. Here $α_H=α_H(n,λ,Λ)\\in(0,1)$ denotes the universal Hölder exponent for gradient regularity of $F(D^2h)=0$, while $σ_p=1-n/p$ is the scaling exponent of the source term. In the source-limited regime $σ_p < α_H$, the singularity of $f$ is the decisive obstruction and the endpoint $γ=σ_p$ is attainable. In the homogeneous-limited regime $α_H\\leσ_p$, however, classical theory only yields $γ< α_H$, leaving the limiting differentiability estimate unquantified. This is the endpoint gap addressed here. When $α_H < σ_p$, we prove that solutions admit pointwise Taylor expansions satisfying $|u(x)-u(x_0)-Du(x_0)\\cdot(x-x_0)|\\lesssim |x-x_0|^{1+α_H}\\left(1+\\log\\frac{1}{|x-x_0|}\\right)^m$. Thus the homogeneous differentiability scale is reached up to an explicit logarithmic defect. At the critical threshold $α_H=σ_p$, finite logarithmic powers no longer close the iteration; nevertheless, a slower selection of scales yields $|u(x)-u(x_0)-Du(x_0)\\cdot(x-x_0)|=O\\left(|x-x_0|^{1+α_H}\\exp\\left(A\\sqrt{1+\\log\\frac{1}{|x-x_0|}}\\right)\\right)$. Both estimates improve the full family of classical sub-endpoint $C^{1,γ}$ bounds, $γ< α_H$, by quantifying differentiability at the limiting homogeneous exponent. The proof introduces a new scale-selection mechanism for endpoint Campanato-type recurrences, suggesting a flexible tool whenever the limiting smoothness is dictated by the homogeneous theory itself. We also discuss the role and possible optimality of the resulting logarithmic defects.",
+    "status": "found"
+  },
+  "2609.16327": {
+    "arxiv_id": "2609.16327",
+    "title": "Effective Dissipation and Asymptotic Stability in a Finite-Level Quantum System with Wave-Induced Memory",
+    "authors": [
+      "Thierry Goudon"
+    ],
+    "submission_date": "2026-09-14T20:43:20Z",
+    "latest_updated": "2026-09-14T20:43:20Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16327v1"
+    ],
+    "abstract": "We study quantum systems modeled by Liouville-Von Neumann equations, with a finite number of energy levels. The system is coupled to a wave equation, intended to reproduce environmental effects on the quantum system. The whole dynamic is energy conservative, but damping effects are expected to be embodied into the energy exchanges with the environment. We analyse how these effects can effectively damp quantum coherences. We exhibit key mechanisms and structural properties for such a damping to arise, with a neat distinction between pure and mixed cases",
+    "status": "found"
+  },
+  "2609.16328": {
+    "arxiv_id": "2609.16328",
+    "title": "Characteristic Mapping Method for Vlasov-Poisson with BGK-collisions",
+    "authors": [
+      "Xi-Yuan Yin",
+      "Philipp Krah",
+      "Zetao Lin",
+      "Jean-Christophe Nave",
+      "Kai Schneider"
+    ],
+    "submission_date": "2026-09-14T20:43:44Z",
+    "latest_updated": "2026-09-14T20:43:44Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16328v1"
+    ],
+    "abstract": "This work presents the first steps for simulating kinetic plasmas with collisions using the characteristic mapping method (CMM). The CMM is a semi-Lagrangian method that explores a semi-group structure to store diffeomorphic flow maps efficiently. Using the semi-group structure, individual submaps can be composed to relate the flow backward in time to its initial food point. The novelty of the presented work is handling the source term by storing sub-integrals that correspond to the individual sub-maps and allow efficient integration. Furthermore, we use the Lagrangian structure to avoid implicit time integration in the hydrodynamic regime, which is known to be stiff. We benchmark our method on the Boltzmann-BGK and Vlasov-Poisson-BGK equations and consider different test cases, the Sod shock tube problem and nonlinear Landau damping for different Knudsen numbers. We show third-order spatial and temporal convergence and illustrate the fine-scale zoom property of CMM for the bump-on-tail instability.",
+    "status": "found"
+  },
+  "2609.16329": {
+    "arxiv_id": "2609.16329",
+    "title": "Hadamard Rigidity and Sharp Stability in the Completely Bounded Bohnenblust--Hille Inequality",
+    "authors": [
+      "Daniel Núñez-Alarcón",
+      "Daniel M. Pellegrino",
+      "Eduardo V. Teixeira"
+    ],
+    "submission_date": "2026-09-14T20:43:55Z",
+    "latest_updated": "2026-09-14T20:43:55Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16329v1"
+    ],
+    "abstract": "The completely bounded Bohnenblust--Hille inequality of Arunachalam, Dutt, Escudero Gutiérrez and Palazuelos controls coefficient summability with optimal constant one, independently of the ambient dimension. We classify all nonzero equality cases over both the real and complex fields: they are precisely scalar multiples of Hadamard chains supported on equal-sided Cartesian boxes. Thus equality determines both the support and the factorization of the coefficient tensor. For each fixed degree $d\\ge2$, we also establish sharp structural stability. A form with completely bounded norm one and deficit $\\varepsilon$ lies within $C_d\\sqrt\\varepsilon$, in the critical coefficient $\\ell_{2d/(d+1)}$ norm, of both a flat unimodular path and a normalized unitary chain on the same box. The corresponding unimodular and scaled unitary edges satisfy a matching normalized Frobenius estimate. At zero deficit both approximants coincide with the original Hadamard chain. All constants are independent of the ambient dimension, and the exponent $1/2$ is optimal for both approximations over either field.",
+    "status": "found"
+  },
+  "2609.16330": {
+    "arxiv_id": "2609.16330",
+    "title": "Neutron Star Merger Universality Relations for a Quark--Hadron Crossover Equation of State",
+    "authors": [
+      "Wei Sun",
+      "Grant J. Mathews",
+      "Atul Kedia"
+    ],
+    "submission_date": "2026-09-14T20:44:10Z",
+    "latest_updated": "2026-09-14T20:44:10Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16330v1"
+    ],
+    "abstract": "A crossover transition from hadronic to quark matter during the merger of neutron stars can lead to interesting observational consequences in the emergent gravitational radiation. In particular, the increased pressure in the crossover density region ($2-5$ times the nuclear saturation density) can lead to an extended duration of high-frequency ($\\sim 2-3.5$ kHz) gravitational wave emission during the post-merger epoch. We study the universality relations for a variety of equations of state with and without a crossover transition to a quark mater based upon the QHC19 and QHC21 EoSs. We find that the long-duration post-merger gravitational-wave emission is more pronounced in the QHC21 EoS. We then consider universality relations among various observable quantities that have been identified in simulations with hadronic equations of state. We show that there are deviations from the universality relations for some quantities that may ultimately provide an observational signal that such a transition has occurred.",
+    "status": "found"
+  },
+  "2609.16331": {
+    "arxiv_id": "2609.16331",
+    "title": "ManiSkillFormer: Demonstration-Free Compositional Manipulation via Geometric Contracts and Agentic Skill Graph",
+    "authors": [
+      "Peiqi Yu",
+      "Mosam Dabhi",
+      "Shangtao Li",
+      "Bowei Li",
+      "Laszlo Jeni",
+      "Changliu Liu"
+    ],
+    "submission_date": "2026-09-14T20:45:53Z",
+    "latest_updated": "2026-09-22T23:14:23Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2609.16331v1",
+      "2609.16331v2",
+      "2609.16331v3"
+    ],
+    "abstract": "Adapting robotic manipulation to new objects and tasks often requires additional demonstrations or manual engineering. Reusable manipulation skills can reduce this effort, but adapting these skills to new scenes remains challenging. We present ManiSkillFormer, a framework for demonstration-free and compositional manipulation that connects perception and action through explicit geometric contracts. Building on reusable skill schemas, LLM agents generate contracts specifying the geometry primitives required by each skill, together with corresponding motion templates for semantic objects and task contexts. These contracts guide a perception module to ground task-relevant 3D geometry from observations, which is then used to instantiate reusable motion templates in a skill library. We evaluate ManiSkillFormer on a dual-arm robot across demonstration-free pick-and-place with 30 instances from 8 object categories, functional manipulation including unscrewing, pouring, pressing, and folding, and three long-horizon tasks. ManiSkillFormer achieves an average success rate of 88.97% for pick-and-place, 75.00% for functional manipulation, and completion rates of 50--80% across the long-horizon tasks, outperforming the evaluated baselines and two ablated pipelines. These results demonstrate the potential of explicit geometric contracts to support skill reuse and composition across objects and tasks without per-object policy fine-tuning or additional robot demonstrations. The project website is at https://patricia1019.github.io/ManiSkillFormer/.",
+    "status": "found"
+  },
+  "2609.16332": {
+    "arxiv_id": "2609.16332",
+    "title": "Amortized Relaxed Locally Decodable Codes",
+    "authors": [
+      "Jeremiah Blocki",
+      "Justin Zhang"
+    ],
+    "submission_date": "2026-09-14T20:46:09Z",
+    "latest_updated": "2026-09-14T20:46:09Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16332v1"
+    ],
+    "abstract": "Locally decodable codes (LDCs) enable recovery of any message symbol by probing only a small number of positions in a possibly corrupted codeword. The central parameters of an LDC are its rate, locality, and error tolerance. Ideally, one would like all three parameters to be constant. However, classical lower bounds show that such codes cannot exist. A recent line of work introduced amortized locally decodable codes (aLDCs), in which the decoder is tasked with recovering an entire block of consecutive message symbols rather than a single symbol. While prior work obtained ideal aLDCs with constant rate, constant error tolerance, and constant amortized locality, those constructions relied on either shared randomness hidden from the channel or computational assumptions restricting the channel. Another well-studied relaxation is the notion of a relaxed locally decodable code (RLDC), in which the decoder may output a special failure symbol $\\bot$ rather than risk decoding incorrectly. In this work, we introduce the notion of an amortized relaxed locally decodable code (aRLDC), combining amortized decoding with the relaxed decoding paradigm. Unlike prior ideal aLDC constructions, our model is fully information-theoretic and makes no assumptions about shared randomness or computational limitations of the adversarial channel. We construct the first aRLDC with constant rate, constant error tolerance, and constant amortized locality. Moreover, for any block of length $Ω(\\mathrm{polylog}(k))$, our decoder achieves amortized locality $1+δ^{1 - o(1)}$, where $δ$ is the error tolerance parameter. Thus, asymptotically, recovering a long block requires essentially less than two codeword probe per message symbol recovered. By contrast, without amortization no RLDC can simultaneously achieve constant rate, constant error tolerance, and constant locality.",
+    "status": "found"
+  },
+  "2609.16333": {
+    "arxiv_id": "2609.16333",
+    "title": "Disentangling Stellar Mass and Environmental Effects on eROSITA AGN Activity using multi-wavelength data from GAMA, WISE, GALEX, and DESI Legacy Survey",
+    "authors": [
+      "Navya Saraswat",
+      "Shadab Alam",
+      "Subhabrata Majumdar"
+    ],
+    "submission_date": "2026-09-14T20:46:11Z",
+    "latest_updated": "2026-09-14T20:46:11Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16333v1"
+    ],
+    "abstract": "We use a stellar-mass complete sample of $\\sim 36{,}000$ galaxies from GAMA/eFEDS to test whether AGN activity depends on environment independent of stellar mass. To isolate this effect, we introduce $δ_{\\rm rank}$, a novel local overdensity metric defined within narrow stellar mass bins. Our main result is that X-ray-selected AGNs show a clear environmental trend, the AGN fraction rises from $\\sim 4\\%$ in low-density regions to $\\sim 6\\%$ in high-density regions, with a sharp transition at $δ_{\\rm rank} \\sim 0.4$. This environmental dependence is absent for WISE-selected and broad-line AGN, and Eddington ratios show no variation across environments. We also found that for galaxies with $\\mathrm{SFR} > 15\\,M_\\odot\\,\\mathrm{yr}^{-1}$, X-ray AGN fraction is approximately 5%, 60% and 20% in low, mid and high $δ_{\\rm rank}$ galaxies. We show that relationship between AGN fraction and SFR varies dramatically with both environment and selection method. We conclude that environment on scales of $\\sim 5h^{-1}\\,\\mathrm{Mpc}$ regulates X-ray AGN triggering efficiency.",
+    "status": "found"
+  }
+}

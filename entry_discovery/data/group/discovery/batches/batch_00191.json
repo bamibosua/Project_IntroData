@@ -1,0 +1,404 @@
+{
+  "2511.15529": {
+    "arxiv_id": "2511.15529",
+    "title": "Decentralized Gaussian Process Classification and an Application in Subsea Robotics",
+    "authors": [
+      "Yifei Gao",
+      "Hans J. He",
+      "Daniel J. Stilwell",
+      "James McMahon"
+    ],
+    "submission_date": "2025-11-19T15:26:47Z",
+    "latest_updated": "2025-11-19T15:26:47Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.15529v1"
+    ],
+    "abstract": "Teams of cooperating autonomous underwater vehicles (AUVs) rely on acoustic communication for coordination, yet this communication medium is constrained by limited range, multi-path effects, and low bandwidth. One way to address the uncertainty associated with acoustic communication is to learn the communication environment in real-time. We address the challenge of a team of robots building a map of the probability of communication success from one location to another in real-time. This is a decentralized classification problem -- communication events are either successful or unsuccessful -- where AUVs share a subset of their communication measurements to build the map. The main contribution of this work is a rigorously derived data sharing policy that selects measurements to be shared among AUVs. We experimentally validate our proposed sharing policy using real acoustic communication data collected from teams of Virginia Tech 690 AUVs, demonstrating its effectiveness in underwater environments.",
+    "status": "found"
+  },
+  "2511.15530": {
+    "arxiv_id": "2511.15530",
+    "title": "Convergence and Sketching-Based Efficient Computation of Neural Tangent Kernel Weights in Physics-Based Loss",
+    "authors": [
+      "Max Hirsch",
+      "Federico Pichi"
+    ],
+    "submission_date": "2025-11-19T15:29:42Z",
+    "latest_updated": "2025-11-19T15:29:42Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.15530v1"
+    ],
+    "abstract": "In multi-objective optimization, multiple loss terms are weighted and added together to form a single objective. These weights are chosen to properly balance the competing losses according to some meta-goal. For example, in physics-informed neural networks (PINNs), these weights are often adaptively chosen to improve the network's generalization error. A popular choice of adaptive weights is based on the neural tangent kernel (NTK) of the PINN, which describes the evolution of the network in predictor space during training. The convergence of such an adaptive weighting algorithm is not clear a priori. Moreover, these NTK-based weights would be updated frequently during training, further increasing the computational burden of the learning process. In this paper, we prove that under appropriate conditions, gradient descent enhanced with adaptive NTK-based weights is convergent in a suitable sense. We then address the problem of computational efficiency by developing a randomized algorithm inspired by a predictor-corrector approach and matrix sketching, which produces unbiased estimates of the NTK up to an arbitrarily small discretization error. Finally, we provide numerical experiments to support our theoretical findings and to show the efficacy of our randomized algorithm. Code Availability: https://github.com/maxhirsch/Efficient-NTK",
+    "status": "found"
+  },
+  "2511.15531": {
+    "arxiv_id": "2511.15531",
+    "title": "Modal logical aspects of provability predicates and consistency statements",
+    "authors": [
+      "Haruka Kogure",
+      "Taishi Kurahashi"
+    ],
+    "submission_date": "2025-11-19T15:31:47Z",
+    "latest_updated": "2026-06-11T07:48:49Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.15531v1",
+      "2511.15531v2"
+    ],
+    "abstract": "This paper studies the modal logical aspects of provability predicates and consistency statements for theories of arithmetic. First, we provide an overview of previous works on the correspondence between various derivability conditions for provability predicates and different modal logics. The main technical contribution of the present paper is to establish the arithmetical completeness of the logics $\\mathsf{NP}$, $\\mathsf{ND}$, $\\mathsf{NP4}$, and $\\mathsf{ND4}$ by extending Solovay's method and refining Arai's construction of Rosser provability predicates.",
+    "status": "found"
+  },
+  "2511.15532": {
+    "arxiv_id": "2511.15532",
+    "title": "NMPC-based Motion Planning with Adaptive Weighting for Dynamic Object Interception",
+    "authors": [
+      "Chen Cai",
+      "Saksham Kohli",
+      "Steven Liu"
+    ],
+    "submission_date": "2025-11-19T15:31:47Z",
+    "latest_updated": "2025-11-19T15:31:47Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.15532v1"
+    ],
+    "abstract": "Catching fast-moving objects serves as a benchmark for robotic agility, posing significant coordination challenges for cooperative manipulator systems holding a catcher, particularly due to inherent closed-chain constraints. This paper presents a nonlinear model predictive control (MPC)-based motion planner that bridges high-level interception planning with real-time joint space control, enabling dynamic object interception for systems comprising two cooperating arms. We introduce an Adaptive- Terminal (AT) MPC formulation featuring cost shaping, which contrasts with a simpler Primitive-Terminal (PT) approach relying heavily on terminal penalties for rapid convergence. The proposed AT formulation is shown to effectively mitigate issues related to actuator power limit violations frequently encountered with the PT strategy, yielding trajectories and significantly reduced control effort. Experimental results on a robotic platform with two cooperative arms, demonstrating excellent real time performance, with an average planner cycle computation time of approximately 19 ms-less than half the 40 ms system sampling time. These results indicate that the AT formulation achieves significantly improved motion quality and robustness with minimal computational overhead compared to the PT baseline, making it well-suited for dynamic, cooperative interception tasks.",
+    "status": "found"
+  },
+  "2511.15533": {
+    "arxiv_id": "2511.15533",
+    "title": "Spatiotemporal Activity-Driven Networks",
+    "authors": [
+      "Zsófia Simon",
+      "Jari Saramäki"
+    ],
+    "submission_date": "2025-11-19T15:32:03Z",
+    "latest_updated": "2025-11-19T15:32:03Z",
+    "revised_dates": null,
+    "venue": "Phys. Rev. E 114, 2026",
+    "latest_version": 1,
+    "versions": [
+      "2511.15533v1"
+    ],
+    "abstract": "Temporal-network models have provided key insights into how time-varying connectivity shapes dynamical processes such as spreading. Among them, the activity-driven model is a widely used, analytically tractable benchmark. Yet many temporal networks, such as those of physical proximity, are also embedded in space, and spatial constraints are known to affect dynamics unfolding on the networks strongly. Despite this, there is a lack of similar simple and solvable models for spatiotemporal contact structures. Here, we introduce a spatial activity-driven model in which short-range contacts are more frequent. This model is analytically tractable and captures the joint effects of space and time. We show analytically and numerically that the model reproduces several characteristic features of social and contact networks, including strong and weak ties, clustering, and triangles having weights above the median. These traits can be attributed to space acting as a form of memory. Simulations of spreading dynamics on top of the model networks further illustrate the role of space, highlighting how localisation slows down spreading. Furthermore, the framework is well-suited for modelling social distancing in a principled way as an intervention measure aimed at reducing long-range links. We find that, unlike for non-spatial networks, even a small spatially targeted reduction in the total number of contacts can be very effective. More broadly, by offering a tractable framework, the model enables systematic exploration of dynamical processes on spatiotemporal networks.",
+    "status": "found"
+  },
+  "2511.15534": {
+    "arxiv_id": "2511.15534",
+    "title": "Exploring the use of AI authors and reviewers at Agents4Science",
+    "authors": [
+      "Federico Bianchi",
+      "Owen Queen",
+      "Nitya Thakkar",
+      "Eric Sun",
+      "James Zou"
+    ],
+    "submission_date": "2025-11-19T15:32:07Z",
+    "latest_updated": "2025-11-19T15:32:07Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.15534v1"
+    ],
+    "abstract": "There is growing interest in using AI agents for scientific research, yet fundamental questions remain about their capabilities as scientists and reviewers. To explore these questions, we organized Agents4Science, the first conference in which AI agents serve as both primary authors and reviewers, with humans as co-authors and co-reviewers. Here, we discuss the key learnings from the conference and their implications for human-AI collaboration in science.",
+    "status": "found"
+  },
+  "2511.15535": {
+    "arxiv_id": "2511.15535",
+    "title": "A Hybrid CNN-ViT-GNN Framework with GAN-Based Augmentation for Intelligent Weed Detection in Precision Agriculture",
+    "authors": [
+      "Pandiyaraju V",
+      "Abishek Karthik",
+      "Sreya Mynampati",
+      "Poovarasan L",
+      "D. Saraswathi"
+    ],
+    "submission_date": "2025-11-19T15:32:08Z",
+    "latest_updated": "2025-11-19T15:32:08Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.15535v1"
+    ],
+    "abstract": "The task of weed detection is an essential element of precision agriculture since accurate species identification allows a farmer to selectively apply herbicides and fits into sustainable agriculture crop management. This paper proposes a hybrid deep learning framework recipe for weed detection that utilizes Convolutional Neural Networks (CNNs), Vision Transformers (ViTs), and Graph Neural Networks (GNNs) to build robustness to multiple field conditions. A Generative Adversarial Network (GAN)-based augmentation method was imposed to balance class distributions and better generalize the model. Further, a self-supervised contrastive pre-training method helps to learn more features from limited annotated data. Experimental results yield superior results with 99.33% accuracy, precision, recall, and F1-score on multi-benchmark datasets. The proposed model architecture enables local, global, and relational feature representations and offers high interpretability and adaptability. Practically, the framework allows real-time, efficient deployment to edge devices for automated weed detecting, reducing over-reliance on herbicides and providing scalable, sustainable precision-farming options.",
+    "status": "found"
+  },
+  "2511.15536": {
+    "arxiv_id": "2511.15536",
+    "title": "The CAPIRE Curriculum Graph: Structural Feature Engineering for Curriculum-Constrained Student Modelling in Higher Education",
+    "authors": [
+      "H. R. Paz"
+    ],
+    "submission_date": "2025-11-19T15:33:00Z",
+    "latest_updated": "2025-11-19T15:33:00Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.15536v1"
+    ],
+    "abstract": "Curricula in long-cycle programmes are usually recorded in institutional databases as linear lists of courses, yet in practice they operate as directed graphs of prerequisite relationships that constrain student progression through complex dependencies. This paper introduces the CAPIRE Curriculum Graph, a structural feature engineering layer embedded within the CAPIRE framework for student attrition prediction in Civil Engineering at Universidad Nacional de Tucuman, Argentina. We formalise the curriculum as a directed acyclic graph, compute course-level centrality metrics to identify bottleneck and backbone courses, and derive nine structural features at the student-semester level that capture how students navigate the prerequisite network over time. These features include backbone completion rate, bottleneck approval ratio, blocked credits due to incomplete prerequisites, and graph distance to graduation. We compare three model configurations - baseline CAPIRE, CAPIRE plus macro-context variables, and CAPIRE plus macro plus structural features - using Random Forest classifiers on 1,343 students across seven cohorts (2015-2021). While macro-context socioeconomic indicators fail to improve upon the baseline, structural curriculum features yield consistent gains in performance, with the best configuration achieving overall Accuracy of 86.66% and F1-score of 88.08% and improving Balanced Accuracy by 0.87 percentage points over a strong baseline. Ablation analysis further shows that all structural features contribute in a synergistic fashion rather than through a single dominant metric. By making curriculum structure an explicit object in the feature layer, this work extends CAPIRE from a multilevel leakage-aware framework to a curriculum-constrained prediction system that bridges network science, educational data mining, and institutional research.",
+    "status": "found"
+  },
+  "2511.15537": {
+    "arxiv_id": "2511.15537",
+    "title": "Using Light Curve Derivatives to Estimate the Fill-out Factor of Overcontact Binaries",
+    "authors": [
+      "Shinjirou Kouzuma"
+    ],
+    "submission_date": "2025-11-19T15:33:43Z",
+    "latest_updated": "2025-11-19T15:33:43Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.15537v1"
+    ],
+    "abstract": "We propose a simple method for estimating the fill-out factor of overcontact binary systems using the derivatives of light curves. We synthesized 74,431 sample light curves, covering the typical parameter space of overcontact binaries. On the basis of a recent study that proposed a new classification scheme using light curve derivatives up to the fourth order, the sample light curves were classified. Among the classified types, for systems exhibiting high mass ratios and high inclinations (i.e., SPf type), we found that the fill-out factor has a strong correlation with the time interval between two local extrema in the third derivatives of their light curves. An empirical formula to estimate the fill-out factor was derived using regression analysis for the identified correlation. Application to real overcontact binary data demonstrated that the proposed method is practical for obtaining reliable estimates of the fill-out factor and its associated uncertainties.",
+    "status": "found"
+  },
+  "2511.15538": {
+    "arxiv_id": "2511.15538",
+    "title": "Atomic Visualization of Bulk and Surface Superconductivity in Weyl Semimetal γ-PtBi2",
+    "authors": [
+      "Hao Zhang",
+      "Hui Chen",
+      "Zichen Huang",
+      "Zi-Ang Wang",
+      "Guangyuan Han",
+      "Ruisong Ma",
+      "Xiangde Zhu",
+      "Wei Ning",
+      "Chengmin Shen",
+      "Qing Huan",
+      "Hong-Jun Gao"
+    ],
+    "submission_date": "2025-11-19T15:34:23Z",
+    "latest_updated": "2025-11-19T15:34:23Z",
+    "revised_dates": null,
+    "venue": "Chin. Phys. Lett. 42, 120708 (2025)",
+    "latest_version": 1,
+    "versions": [
+      "2511.15538v1"
+    ],
+    "abstract": "A bulk superconductor hosting intrinsic surface superconductivity provides a unique platform to study Majorana bound states. The superconductor, trigonal γ-PtBi2, is a promising candidate, as surface superconducting gaps and topological surface states have been observed. However, the simultaneous presence of bulk and surface superconductivity has not been resolved. Here, we directly visualize coexisting bulk and surface superconducting gaps in trigonal PtBi2 by using ultra-low-temperature scanning tunneling microscopy/spectroscopy. The bulk gap is Δ ~ 0.053 meV with a critical temperature (Tc) ~ 0.5 K and a critical field below 0.01 T, accompanied by a vortex lattice and bound states, yielding a coherence length of ~200 nm. Remarkably, certain surface regions show a much larger gap of Δ ~ 0.42 meV, persisting up to Tc ~ 3 K and surviving magnetic fields up to 2 T, yet lacking a static vortex lattice. This coexistence of robust surface and bulk superconductivity establishes γ-PtBi2 as a unique platform for investigating the interplay between bulk and surface Cooper pairings in superconducting topological materials.",
+    "status": "found"
+  },
+  "2511.15539": {
+    "arxiv_id": "2511.15539",
+    "title": "Asymmetric noncommutative torus has vanishing Einstein tensor",
+    "authors": [
+      "Deeponjit Bose",
+      "Andrzej Sitarz"
+    ],
+    "submission_date": "2025-11-19T15:36:13Z",
+    "latest_updated": "2026-03-11T15:14:20Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.15539v1",
+      "2511.15539v2"
+    ],
+    "abstract": "We explicitly compute the spectral metric, torsion and Einstein tensors for a nontrivial spectral triple on a noncommutative torus, with the Dirac operator related to the fully equivariant Dirac by a partial conformal rescaling (as introduced in [1]). The results show that the spectral triple has vanishing torsion and the Einstein tensor also identically vanishes.",
+    "status": "found"
+  },
+  "2511.15540": {
+    "arxiv_id": "2511.15540",
+    "title": "Inverse reconstruction of Einstein cluster collapse and oscillations in tangential-pressure spacetimes",
+    "authors": [
+      "Jan J. Ostrowski"
+    ],
+    "submission_date": "2025-11-19T15:36:48Z",
+    "latest_updated": "2026-10-22T18:32:19Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.15540v1",
+      "2511.15540v2"
+    ],
+    "abstract": "We formulate an inverse reconstruction procedure for spherically symmetric Datta--Bondi--Gair spacetimes with vanishing radial pressure and non-zero tangential pressure supported by angular momentum. Extending the logic of Krasiński--Hellaby reconstruction for Lemaître--Tolman--Bondi dust, we determine the full, exact space-time information from prescribed density, velocity or equilibrium state. Two specific constructions are developed. The first represents an initially expanding fluid with a finite turnaround, followed by an asymptotic collapse to an unstable Einstein cluster configuration. In the second, a static equilibrium density and a finite time density-velocity pair determine finite amplitude oscillations around a stable Einstein cluster. Numerical examples use a Jaffe-type final profile and an Einasto equilibrium with an approximate Navarro--Frenk--White finite time profile. The latter admits many oscillations before the first shell crossing is detected. The constructions provide diagnostics of the admissibility of prescribed configurations.",
+    "status": "found"
+  },
+  "2511.15541": {
+    "arxiv_id": "2511.15541",
+    "title": "The VVVX quest for satellites around the Circinus galaxy",
+    "authors": [
+      "L. D. Baravalle",
+      "A. L. O'Mill",
+      "M. V. Alonso",
+      "C. Obasi",
+      "D. Minniti",
+      "M. Gómez",
+      "C. Villalon",
+      "J. Nilo-Castellón",
+      "C. Valotto",
+      "M. Soto",
+      "I. V. Daza Perilla",
+      "M. A. Sgró",
+      "J. G. Fernández-Trincado"
+    ],
+    "submission_date": "2025-11-19T15:37:09Z",
+    "latest_updated": "2025-11-19T15:37:09Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.15541v1"
+    ],
+    "abstract": "The Circinus galaxy is the nearest type-2 Seyfert galaxy, which is at a distance of 4.2 Mpc. Its environment is challenging to explore because it is located at low Galactic latitudes, behind the Galactic disc. The long-term goal is to characterise the Circinus galaxy halo and determine the presence of dwarf satellites using near-infrared data. We selected 1,542 galaxies from the VVV NIRGC within a 2-degree radius around Circinus, representing 2/3 of the virial radius. Structural parameters such as half-light radii and colours were used, and correlations were examined. A neural network was trained with 486 galaxies with known spectroscopic redshifts to estimate photometric redshifts for all galaxies. Potential satellites were defined based on half-light radii compatible with the typical sizes of dwarf satellites, and combined with photometric redshifts. The galaxy properties are reliably characterised down to $K_{s}$ $\\sim$ 15.5 mag, which represents about 90% completeness of detections. At the distance of Circinus, this limiting magnitude corresponds to $K_{s}$ absolute magnitude of $-12.6$ mag, which allows us to find dwarf galaxies. There are 20 galaxies with half-light radii larger than 2.45 arcsec, only 8 have photometric redshifts below 0.04. None of these galaxies is close to Circinus, which has a redshift of 0.0015. The ANNz model exhibited a high degree of accuracy in the range $0.001 < z_{phot} < 0.023$. The presence of dwarf satellites could not be confirmed with the available data in the studied region. The apparent lack of satellites may be genuine, possibly related to AGN feedback effects. This work demonstrates the effectiveness of combining near-infrared data and machine learning techniques to estimate photometric redshifts at low Galactic latitudes, providing useful information for future spectroscopic follow-up campaigns.",
+    "status": "found"
+  },
+  "2511.15542": {
+    "arxiv_id": "2511.15542",
+    "title": "Is There New Physics Beyond 30 TeV in the BOAT?",
+    "authors": [
+      "Filip Rescic",
+      "Luis Recabarren Vergara",
+      "Michele Doro",
+      "Tomislav Terzić"
+    ],
+    "submission_date": "2025-11-19T15:37:12Z",
+    "latest_updated": "2026-07-06T14:23:44Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.15542v1",
+      "2511.15542v2"
+    ],
+    "abstract": "We show that the GRB 221009A spectrum detected by LHAASO can be used to probe effects of quadratic subluminal Lorentz Invariance Violation (LIV) through the enhancement of the observed flux at the highest energies. In particular, we argue that excesses in the GRB 221009A data currently classified as non-detections at energies $E \\gtrsim 30$ TeV warrant further investigation, as they may indicate a recovery of the intrinsic source spectrum consistent with the LIV-induced suppression of $γγ\\to e^-e^+$ interactions within the quadratic subluminal scenario. This would increase the accessible parameter space of the energy scale of new physics.",
+    "status": "found"
+  },
+  "2511.15543": {
+    "arxiv_id": "2511.15543",
+    "title": "A Physics Informed Machine Learning Framework for Optimal Sensor Placement and Parameter Estimation",
+    "authors": [
+      "Georgios Venianakis",
+      "Constantinos Theodoropoulos",
+      "Michail Kavousanakis"
+    ],
+    "submission_date": "2025-11-19T15:37:17Z",
+    "latest_updated": "2025-11-19T15:37:17Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.15543v1"
+    ],
+    "abstract": "Parameter estimation remains a challenging task across many areas of engineering. Because data acquisition can often be costly, limited, or prone to inaccuracies (noise, uncertainty) it is crucial to identify sensor configurations that provide the maximum amount of information about the unknown parameters, in particular for the case of distributed-parameter systems, where spatial variations are important. Physics-Informed Neural Networks (PINNs) have recently emerged as a powerful machine-learning (ML) tool for parameter estimation, particularly in cases with sparse or noisy measurements, overcoming some of the limitations of traditional optimization-based and Bayesian approaches. Despite the widespread use of PINNs for solving inverse problems, relatively little attention has been given to how their performance depends on sensor placement. This study addresses this gap by introducing a comprehensive PINN-based framework that simultaneously tackles optimal sensor placement and parameter estimation. Our approach involves training a PINN model in which the parameters of interest are included as additional inputs. This enables the efficient computation of sensitivity functions through automatic differentiation, which are then used to determine optimal sensor locations exploiting the D-optimality criterion. The framework is validated on two illustrative distributed-parameter reaction-diffusion-advection problems of increasing complexity. The results demonstrate that our PINNs-based methodology consistently achieves higher accuracy compared to parameter values estimated from intuitively or randomly selected sensor positions.",
+    "status": "found"
+  },
+  "2511.15544": {
+    "arxiv_id": "2511.15544",
+    "title": "Quadruple system HD 135160 in a unique 2+2 configuration",
+    "authors": [
+      "Michal Zummer",
+      "Petr Harmanec",
+      "Brad Barlow",
+      "Mark Blackford",
+      "Jana Švrčková"
+    ],
+    "submission_date": "2025-11-19T15:38:03Z",
+    "latest_updated": "2025-11-19T15:38:03Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.15544v1"
+    ],
+    "abstract": "Analysing a large body of observational data, we found that HD 135160 is a quadruple 2+2 system, composed of a massive ellipsoidal binary ('heartbeat' star) with components Aa and Ab in an eccentric 8.234 d orbit and an eclipsing binary (with components Ba and Bb), with a 5.853 d period and partial eclipses that have already been reported from the space photometry secured by the Transiting Exoplanet Survey Satellite (TESS). Our systematic echelle spectroscopy, secured since September 2021, led to the discovery that the optical spectra are dominated by spectral lines of three early-type stars, two moving around each other on a 8.234 d orbit of a high eccentricity, which causes periodic brightenings near the periastron passage, and the third one (component Ba) being the brighter component of the 5.853 d binary. Both pairs are physically bounded and revolve around each other with a period somewhere between 1600 and 2200 days (4.4 to 6 years). The object exhibits small cyclic light variations of a variable amplitude and characteristic time scale of 0.071 d (14.14 c d-1), seen throughout the whole orbit. The nature of these tiny changes deserves further investigation. It also seems that the earlier classification of the object as a Be star is unfounded.",
+    "status": "found"
+  },
+  "2511.15545": {
+    "arxiv_id": "2511.15545",
+    "title": "Uncoordinated Cooperative OFDM Multi-Hop UAV Relay Networks Using Virtual Channels Based on All-Pass Filters",
+    "authors": [
+      "Noura Sellami",
+      "Mohamed Siala"
+    ],
+    "submission_date": "2025-11-19T15:38:04Z",
+    "latest_updated": "2025-11-19T15:38:04Z",
+    "revised_dates": null,
+    "venue": "Wireless Pers Commun, vol. 142, July 2025",
+    "latest_version": 1,
+    "versions": [
+      "2511.15545v1"
+    ],
+    "abstract": "In this paper, we propose an efficient transmission scheme for autonomous cooperative Orthogonal Frequency Division Multiplexing (OFDM) based multi-hop Unmanned Aerial Vehicle (UAV) relay networks. These systems often suffer from destructive interference at the destination node due to uncoordinated transmissions of common packets by cooperating UAVs. To address this issue, we introduce the concept of virtual transmit channels at each UAV, implemented using truncated all-pass filters (APFs). This approach ensures that all subcarriers benefit from comparable transmit powers, guaranteeing excellent performance when a single UAV is transmitting. In scenarios where multiple UAVs cooperate without coordination, the inherent randomness of the generated virtual channels facilitates cooperative diversity, effectively mitigating destructive interference. We further integrate this method with the distributed randomized space-time block coding (STBC) scheme to enhance transmission reliability. Additionally, we propose efficient algorithms for estimating the composite channels that combine both the true propagation channels and the virtual channels. Simulation results demonstrate that our proposed scheme significantly outperforms the classical phase dithering scheme across various scenarios.",
+    "status": "found"
+  },
+  "2511.15546": {
+    "arxiv_id": "2511.15546",
+    "title": "Extracting Mellin moments of double parton distributions from lattice data",
+    "authors": [
+      "Markus Diehl",
+      "Oskar Grocholski",
+      "Daniel Reitinger",
+      "Andreas Schäfer",
+      "Christian Zimmermann"
+    ],
+    "submission_date": "2025-11-19T15:38:21Z",
+    "latest_updated": "2026-05-18T12:25:28Z",
+    "revised_dates": null,
+    "venue": "JHEP 05 (2026) 004",
+    "latest_version": 2,
+    "versions": [
+      "2511.15546v1",
+      "2511.15546v2"
+    ],
+    "abstract": "Reconstructing Mellin moments of double parton distributions from calculations on a Euclidean lattice requires taking an integral over a variable that may be regarded as a Ioffe time. The Fourier conjugate of this variable plays the role of a kinematic skewness in the double parton distributions. We discuss the skewness dependence of the relevant hadronic correlation functions. Using several models, we study the impact of this dependence on extracting moments of double parton distributions from existing lattice data.",
+    "status": "found"
+  },
+  "2511.15547": {
+    "arxiv_id": "2511.15547",
+    "title": "Non-Abelian Zero Modes in Fractional Quantum Hall-Superconductor Heterostructure",
+    "authors": [
+      "Gustavo M. Yoshitome",
+      "Pedro R. S. Gomes"
+    ],
+    "submission_date": "2025-11-19T15:38:27Z",
+    "latest_updated": "2026-09-18T23:35:28Z",
+    "revised_dates": null,
+    "venue": "Annals of Physics 495, (2026) 170729",
+    "latest_version": 3,
+    "versions": [
+      "2511.15547v1",
+      "2511.15547v2",
+      "2511.15547v3"
+    ],
+    "abstract": "We discuss the emergence of non-Abelian zero modes from twist defects in Abelian topological phases. We consider a setup built from a fractional quantum Hall (or a fractional Chern insulator)-superconductor heterostructure, which effectively induces a phase transition, leading to a topological phase endowed with new anyonic symmetries, and accordingly supporting distinct types of zero modes at fixed filling. These defects are modeled at the interface between two copies of the same heterostructure arranged side by side, which produces counterpropagating modes that can be gapped by interactions that realize the anyonic symmetries. We characterize the parafermions associated with each anyonic symmetry and discuss how their presence affect the periodicity of Josephson tunneling current.",
+    "status": "found"
+  },
+  "2511.15548": {
+    "arxiv_id": "2511.15548",
+    "title": "Infinite Anticipation Backward Stochastic Differential Equations",
+    "authors": [
+      "Guanwei Cheng",
+      "Shuzhen Yang"
+    ],
+    "submission_date": "2025-11-19T15:38:43Z",
+    "latest_updated": "2025-11-19T15:38:43Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.15548v1"
+    ],
+    "abstract": "In this paper, we introduce a new type of backward stochastic differential equations (BSDEs) with infinite anticipation, where the generator depends on the entire future values of the solution in infinite horizon. We show that the new BSDEs has a unique solution and admits a comparison result. In the end, we solve a stochastic control problem via a duality between BSDEs with infinite anticipation and stochastic differential equations (SDEs) with infinite delay.",
+    "status": "found"
+  }
+}

@@ -1,0 +1,407 @@
+{
+  "2608.12347": {
+    "arxiv_id": "2608.12347",
+    "title": "DCBA: Detection of Collaborative Black-Hole Attacks in Connected Dominated Set using Baiting Process",
+    "authors": [
+      "Lata B T",
+      "Venugopal K R"
+    ],
+    "submission_date": "2026-06-13T16:11:41Z",
+    "latest_updated": "2026-06-13T16:11:41Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12347v1"
+    ],
+    "abstract": "Mobile Ad-hoc Network (MANET) is temporary and dynamic network topology, wherein nodes are mobile in nature and distributed randomly in a network area. In MANET, nodes cooperate with each other to operate and forward data through multihop communication between source and destination. MANET is exposed to different types of attacks due to absence of central administration. However, some nodes decline to cooperate, misbehaves and appears to be malicious affecting network functionality and connectivity. Providing security and identifying malicious node has become one of the challenging research topics in MANET. Black-hole attack is considered to be most popular attack that degrades the overall network performance. Black-hole node falsely advertises the shortest path to destination intentionally to disrupt the network communication resulting in packet drop. In collaborative black-hole attacks, multiple black-hole nodes cooperate and launch attacks in order to degrade network reliability. In this article we propose a Lightweight technique to detect and isolate Collaborative Black-Hole attacks (LW-CBH) by enhancing existing AODV routing protocol. In this scheme a timer based baiting process and reverse tracing setup is used to detect malicious node through control status message in MAC layer which are Reply Sequence (R-SEQ) and Code Sequence (C-SEQ) message of connected dominated set of nodes. However existing AODV routing protocol fails to detect malicious node during dynamic topology changing in MANET. Simulation of proposed technique is performed using discrete event simulator tool NS-2.35. The simulation results are evaluated for throughput, packet delivery ratio, average end-to-end delay and normalized routing overhead.",
+    "status": "found"
+  },
+  "2608.12348": {
+    "arxiv_id": "2608.12348",
+    "title": "Can Large Language Models Reason about Event-Time Stream-Processing Semantics?",
+    "authors": [
+      "Zhuoxi Wang",
+      "Shibo Zheng",
+      "Haoyu Zhang"
+    ],
+    "submission_date": "2026-06-17T17:01:31Z",
+    "latest_updated": "2026-08-14T01:56:53Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.12348v1",
+      "2608.12348v2"
+    ],
+    "abstract": "Streaming systems increasingly hand work to large language models (LLMs): writing pipelines, triaging alerts, reading logs. All of it assumes the model knows how event-time stream processing behaves, and we test that assumption directly. StreamReason-Bench asks a model to stand in for an event-time stream processor. Given a windowed query and a stream of out-of-order events, it reports which windows fire, with their aggregates, and which events are dropped as late. The answer key comes from a small reference implementation of Dataflow-model semantics, so we can grade exactly, and with a partial-credit row-F1, without running an engine. On 600 generated items covering tumbling, hopping, session, and processing-time windows, the models do poorly on event time. When told to answer directly, no model that actually follows the instruction clears 34% exact match; chain-of-thought (CoT) roughly doubles that for several of them (GPT-4o goes from 0.34 to 0.48), and only one frontier model that reasons by default comes near solving the set (0.85). A processing-time control, with no watermarks and nothing late, is almost solved by every capable model. The gap points to event-time and late-data handling, not windowing or arithmetic, as the hard part. Sorting errors by window type tells the same story: late-data mistakes dominate the event-time windows and vanish on the control, while session windows mostly fail on where the session boundaries fall.",
+    "status": "found"
+  },
+  "2608.12349": {
+    "arxiv_id": "2608.12349",
+    "title": "The Affordance is the Message: Creative Media as Complex Systems",
+    "authors": [
+      "Ane Espeseth",
+      "Elias Najarro"
+    ],
+    "submission_date": "2026-07-02T15:48:21Z",
+    "latest_updated": "2026-07-02T15:48:21Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12349v1"
+    ],
+    "abstract": "The affordances of a creative medium strongly condition the creative artefacts the medium will produce. In this work, we present a formalisation of computational creativity (CC) media using the conceptual toolbox of complex systems (CS). We introduce the notions of emergence, collective intelligence and self-organisation, non-linear dynamics, criticality, multi-scale hierarchy, phase transitions, diversity of attractors, path dependence, and open-endedness, and connect them to the existing CC literature. Together these nine properties form a vocabulary with which creative media can be described and compared at the system level, while medium affordances are the design-level mechanisms that determine each medium's complex system properties. The formalisation emphasises the influence of each medium's affordances in determining what the medium can produce in creative processes. To demonstrate the proposed theoretical approach, we characterise a diverse set of media (r/place, Minecraft, cellular automata, Twitter, Boids, ...) using this vocabulary. The proposed formalisation under the CS concepts serves a dual purpose: it establishes a link between the affordances and realised practices of the medium, and it offers a shared lens for characterising existing creative media.",
+    "status": "found"
+  },
+  "2608.12350": {
+    "arxiv_id": "2608.12350",
+    "title": "From Caveman to Expert Analyst: Energy Consumption of Variable LLM Tasks",
+    "authors": [
+      "Diego Manya",
+      "Ethan I. Thorpe",
+      "Ji Zhang",
+      "Myranda Shirk",
+      "Jiamian He",
+      "Angel Hsu",
+      "Michael P. Vandenbergh"
+    ],
+    "submission_date": "2026-07-02T22:25:37Z",
+    "latest_updated": "2026-07-02T22:25:37Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12350v1"
+    ],
+    "abstract": "The energy demand growth and environmental impacts of artificial intelligence (AI) have generated substantial interest in supplying sufficient low-cost electricity for AI-driven data center development. Research on the ability of demand-side management to address these challenges has been more limited. Shifting the amount or timing of demand from retail, corporate, and other organizational behaviors is a plausible option but only if changes in demand-related behavior have important effects on the envi- ronmental and electricity effects of AI. This article tests four retail (i.e., consumer) user behaviors with high behavioral plasticity to assess their technical abatement potential. The research concludes that non- reasoning models provide sufficient quality while consuming close to one-twentieth of energy compared to reasoning models, saving an amount equal to the annual electricity requirement of at least 141,000 US households under daily usage assumptions. Simple prompt modifications can yield additional reduc- tions in energy consumption by up to 65% using non-reasoning models. Specifically, the practice that maintains the highest degree of similarity with the baseline reduces electricity demand in the range of 4 to 35%, an amount equal to the annual electricity requirement of up to 7,200 US households. Although AI advancements make precise estimates of environmental and electricity impacts difficult to assess, the results confirm that certain minimally intrusive best practices aimed at the majority of users can reduce the energy and environmental burdens imposed by AI.",
+    "status": "found"
+  },
+  "2608.12351": {
+    "arxiv_id": "2608.12351",
+    "title": "Assessment Design in the GenAI Era: The X1-X2-X3 Assessment Pattern for Testing Students' AI Literacy, Learning Outcomes, and Reflection",
+    "authors": [
+      "Riasat Islam",
+      "Thomas Roelleke"
+    ],
+    "submission_date": "2026-07-02T22:42:55Z",
+    "latest_updated": "2026-07-02T22:42:55Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12351v1"
+    ],
+    "abstract": "Generative artificial intelligence (GenAI) has challenged the validity of unsupervised online assessment, especially in technical subjects where plausible answers can be produced with little effort. This paper reports lessons from designing and implementing an AI-aware, AI-testing assessment in a large second-year undergraduate database systems module. The design combined two linked elements: (1) a structured three-part response format (X1-X2-X3) in which students documented a sourced answer, produced their own answer, and evaluated the sourced output; and (2) an AI-aware question-design process in which draft tasks were stress-tested against contemporary GenAI tools and revised when generic prompting produced superficially adequate answers. The account draws on archived assessment materials, rubrics, planning records, design-time GenAI trials, practice-response data, attainment records, and external review comments. Its main contribution is a reusable assessment-design method rather than a claim of measured learning gains. We show how the pattern developed across iterations and how it can support authentic assessment, visible AI literacy, student judgement, and more transparent marking. The paper offers practical guidance for lecturers adapting assessment to routine GenAI use, focusing on testing AI literacy rather than penalising students for misconduct.",
+    "status": "found"
+  },
+  "2608.12352": {
+    "arxiv_id": "2608.12352",
+    "title": "Why AI Governance Frameworks Are Hard to Adopt: A Role-Based Stress Test of the NIST AI RMF",
+    "authors": [
+      "Joseph R. Simons",
+      "David A. Broniatowski"
+    ],
+    "submission_date": "2026-07-03T02:29:10Z",
+    "latest_updated": "2026-07-03T02:29:10Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12352v1"
+    ],
+    "abstract": "AI governance frameworks can be known, used, and implemented in form without becoming governance in practice. This paper examines that problem through a role-based stress test of the NIST Artificial Intelligence Risk Management Framework (AI RMF) in consumer lending. We treat framework adoption as a governance translation problem: whether RMF language can become role-usable, cross-level, authority-connected governance over the AI system-in-use, rather than producing governance-looking artifacts. The study uses LLM-based role simulation as a structured analytic probe. We apply a 4 $\\times$ 2 $\\times$ 3 design across four organizational roles, two AI deployments, and three governance hard cases, producing 120 scored responses. Results show that local translation was not the main problem. Simulated actors generally understood their assigned roles and translated the RMF into local activity. The harder problem was whether that activity became governance value. Actor role was strongly associated with Cross-Level Governance Value, Authority Connection, Governance Translatability, and governance value. Deployment was strongly associated with Structural Fit: the RMF fit a bounded ML underwriting model more cleanly than a workflow-embedded LLM underwriting copilot. Risk reduction was harder still. It appeared only when governance value was present and Structural Fit was full, but neither condition was sufficient by itself. The paper contributes a diagnostic account of framework-based AI governance. Frameworks create value when they help organizations see, interpret, escalate, authorize, and correct risk in the AI system-in-use. They also create value when they reveal limits of governability under existing evidence paths, authority structures, and system boundaries.",
+    "status": "found"
+  },
+  "2608.12353": {
+    "arxiv_id": "2608.12353",
+    "title": "Visibility Asymmetry: How Vendor Attention Shapes Which EdTech Breakdowns Become Product-Visible",
+    "authors": [
+      "Lucan Li"
+    ],
+    "submission_date": "2026-07-03T16:30:02Z",
+    "latest_updated": "2026-07-03T16:30:02Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12353v1"
+    ],
+    "abstract": "Infrastructure scholarship in CSCW often treats breakdown as the moment when infrastructures become visible. However, in vendor-managed sociotechnical systems, not all breakdowns become visible to actors who have the capacity to repair them. Drawing on a retrospective qualitative study of a Chinese K-12 EdTech deployment, including 11 interviews, 5 classroom observations, and more than 28 days of field notes, this paper introduces visibility asymmetry: a sensitizing concept for understanding how similar local breakdowns encounter uneven conditions for being routed, recognized, and acted upon. The analysis traces a four-stage mechanism through which procurement categories sort schools into attention tiers; staffing and visit cadence follow those tiers; only some local problems travel through staff or administrator channels; and dashboards can re-code unresolved repair labor as evidence of adoption. By shifting attention from the occurrence of breakdown to the organizational channels through which breakdown becomes actionable, this paper extends CSCW work on infrastructure, articulation work, and repair. It concludes by discussing implications for feedback systems that can surface repair needs without expanding surveillance.",
+    "status": "found"
+  },
+  "2608.12354": {
+    "arxiv_id": "2608.12354",
+    "title": "SCALE-Sim EVA: Design Principles for an Extensible, Visualizable, and Adaptable Accelerator Simulation Framework",
+    "authors": [
+      "Jingtian Dang",
+      "Ritik Raj",
+      "Tushar Krishna"
+    ],
+    "submission_date": "2026-07-03T17:09:04Z",
+    "latest_updated": "2026-07-03T17:09:04Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12354v1"
+    ],
+    "abstract": "Modern AI accelerators increasingly combine heterogeneous compute units, hierarchical memories, local buffers, and specialized data movement paths. This diversity makes fixed accelerator simulators difficult to extend beyond their original execution model. We present SCALE-Sim EVA, an extensible, visualizable, and adaptable simulation framework for IR-aware accelerator modeling. EVA represents workloads as tensor-based commands, tracks runtime tensor placement and readiness, and executes commands on composable hardware components with user-defined functional units and memory behavior. Instead of replaying address-level cycle traces, EVA computes cycle timing from tensor readiness, hardware-unit availability, and modeled operation or transfer latency. Its command decomposition mechanism bridges compiler-level IR granularity and hardware-level execution granularity, allowing global tensor operations to be lowered and scheduled locally across a hardware hierarchy. EVA also emits open command and storage traces for visual analysis of execution timelines, memory occupancy, and resource contention.",
+    "status": "found"
+  },
+  "2608.12355": {
+    "arxiv_id": "2608.12355",
+    "title": "Humans are Missing from AI Coding Agent Research",
+    "authors": [
+      "Zora Z. Wang",
+      "John Yang",
+      "Kilian Lieret",
+      "Alexa Tartaglini",
+      "Valerie Chen",
+      "Yuxiang Wei",
+      "Zijian Wang",
+      "Lingming Zhang",
+      "Karthik Narasimhan",
+      "Ludwig Schmidt",
+      "Graham Neubig",
+      "Daniel Fried",
+      "Diyi Yang"
+    ],
+    "submission_date": "2026-07-04T01:24:03Z",
+    "latest_updated": "2026-07-04T01:24:03Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12355v1"
+    ],
+    "abstract": "Recent progress in AI coding agent research has led to rapid improvements in agents' ability to autonomously perform complex software engineering tasks, from editing large codebases to executing long-horizon development workflows. As these systems make strides, however, the primary bottleneck to practical usefulness increasingly shifts away from pure task-solving capability, and toward challenges in how users communicate with, supervise, and trust agents. In this position paper, we argue for a reorientation from autonomous to human-centered coding agents: systems designed not only to complete tasks, but to collaborate effectively with people. We identify four core interaction-level dimensions that characterize the human-agent task-solving loop: task alignment, verifiability, steerability, and adaptability. Finally, we outline concrete research directions to advance these dimensions, including user-involved coding environments, comprehensive verification mechanisms, and principled measures of human-agent interaction quality.",
+    "status": "found"
+  },
+  "2608.12356": {
+    "arxiv_id": "2608.12356",
+    "title": "Measuring Curriculum-Labor Market Alignment at the Scale of a Program Portfolio",
+    "authors": [
+      "Sherzod Turaev",
+      "Saja Aldabet",
+      "Mary John",
+      "Namya Musthafa",
+      "Mamoun Awad",
+      "Nazar Zaki",
+      "Khaled Shuaib"
+    ],
+    "submission_date": "2026-07-04T01:27:27Z",
+    "latest_updated": "2026-07-04T01:27:27Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12356v1"
+    ],
+    "abstract": "A college offering several overlapping computing degrees implicitly assumes that its programs are differentiated in line with how the labor market segments computing work and that, together, they prepare graduates for that market. Testing this is difficult, because the instruments available to curriculum committees, namely advisory boards, tracer studies, and employer surveys, are slow, narrow, and hard to reproduce. We apply one uniform, taxonomy-anchored alignment analysis across all five undergraduate programs of a College of Information Technology, comparing 1,922 course learning outcomes against 103,349 competencies extracted from a unified corpus of 5,186 deduplicated job openings from four boards. Every competency is obtained by a grounded single-language-model procedure that copies it verbatim from the source and verifies it against the source, then assigns it to one of eleven ESCO-aligned domains and a Bloom cognitive level; the curricular supply is read not as a catalog but on a realized-attainment basis that respects the credit-hour and elective constraints under which a student completes a degree. The extraction is validated blind by two independent faculty raters (domain kappa 0.91, Bloom level kappa 0.86) and the ESCO matching against a human-adjudicated gold set (kappa 0.72). Four findings emerge. The content gaps are systemic rather than program-specific, concentrated in systems, software engineering, security, and web development; the shared college core satisfies only about a third of the demanded competencies; the programs are well differentiated in disciplinary content yet homogeneous in where they fall short; and the curriculum is pitched roughly a full Bloom level below the market across the portfolio, most acutely in systems. We discuss the implications for program design, curriculum governance, and the practice of curriculum analytics.",
+    "status": "found"
+  },
+  "2608.12357": {
+    "arxiv_id": "2608.12357",
+    "title": "DrawTalking It Out: Creativity-Support Research as Creative Process Itself",
+    "authors": [
+      "Karl Toby Rosenberg"
+    ],
+    "submission_date": "2026-07-04T18:48:26Z",
+    "latest_updated": "2026-07-04T18:48:26Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12357v1"
+    ],
+    "abstract": "I think the creative process in conducting open-ended creativity-adjacent research is itself part of the creative process (including ideation, pivots, and tangents excluded from the final work) that deserves greater emphasis. how might we bridge multiple open-ended projects and serve broader non-technical audiences? We may choose to emphasize interaction techniques rather than singular tools in isolation. We may grow a community based on our shareable experiences in creativity interactions, to draw more complete pictures of how we creatively solve creativity problems (or satisfy curiosities). This may lead to new directions. I briefly elaborate on this using the example of \"DrawTalking\" a drawing+talking interactions work. DrawTalking itself resulted from a winding creative process exploring spontaneous interactive world-building and storytelling when drawing and talking.",
+    "status": "found"
+  },
+  "2608.12358": {
+    "arxiv_id": "2608.12358",
+    "title": "Interaction Readiness: A Framework for Building and Evaluating AI Agents in Human Roles",
+    "authors": [
+      "Sudhir Alladi Venkatesh"
+    ],
+    "submission_date": "2026-07-04T19:39:58Z",
+    "latest_updated": "2026-07-04T19:39:58Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12358v1"
+    ],
+    "abstract": "Product and engineering teams building role-bearing AI agents face an evaluation gap: an agent can produce accurate, safe, and fluent content while still failing the behavioral requirements of its assigned role. This paper introduces Interaction Readiness as a framework for specifying and evaluating that missing layer of performance. The framework separates content specifications, which govern what an agent knows and says, from interaction specifications, which define how an agent should conduct itself in a role-governed exchange. Interaction specifications require teams to define role purpose, authority boundaries, recurring situations, boundary cases, repair behaviors, and audit criteria before deployment. We operationalize interaction readiness through four agent operations: understanding purpose, calibrating authority, managing tone, and repairing breakdowns. Using StudyChat, a public dataset of student interactions with an AI tutoring agent, we show that content accuracy and interaction quality are independent dimensions: an agent may be factually correct while failing as a tutor, or interactionally sound while technically wrong. The most persistent failure is authority miscalibration: the agent often knows how to answer, but not whether, when, or how the tutor role permits it to answer. The paper translates these findings into a specification template and audit procedures that product and engineering teams can apply before and after deployment",
+    "status": "found"
+  },
+  "2608.12359": {
+    "arxiv_id": "2608.12359",
+    "title": "Can We Trust AI Agents in the Supermarket? Sugar Content Inference from Product Images",
+    "authors": [
+      "Jose Berengueres"
+    ],
+    "submission_date": "2026-07-04T19:40:11Z",
+    "latest_updated": "2026-07-04T19:40:11Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12359v1"
+    ],
+    "abstract": "Nutritional labels are legally permitted to appear in very small print, reducing real-world readability and encouraging consumers to rely on 'AI nutrition lens' and vision-capable conversational agents for dietary guidance. We evaluate whether such AI-mediated advice can meaningfully substitute for regulated labeling using a bounded, verifiable task: inferring which of two packaged foods contains less sugar from front-of-pack images alone. A Two-Alternative Forced Choice game was used to evaluate AI agent systems across four national supermarket contexts: Sweden, the USA, Australia, and Kazakhstan. The results (N=132 comparisons) across both agents reveal a significant performance divide contingent on context. For global products the agents achieved 88.9% accuracy (p < 0.0001 against chance). For local products (Sweden), accuracy dropped to 59.5% (p = 0.29), rendering the AI's guidance statistically indistinguishable from random guessing. These findings indicate a cross-market bias consistent with uneven training-data coverage, raising concerns about trust, equity, and accountability, particularly when nutritional judgment shifts from auditable public labels to proprietary inference pipelines. We conclude that AI nutrition lens applications are better framed as assistive, educational tools rather than as replacements for regulated labels, and we highlight the need for auditable datasets and evaluation benchmarks aligned with local food ecosystems.",
+    "status": "found"
+  },
+  "2608.12360": {
+    "arxiv_id": "2608.12360",
+    "title": "Regulatory Approval Is Not Enough: Gaps in Trustworthy AI Reporting in FDA-Cleared Medical Devices",
+    "authors": [
+      "Ahmed M Salih",
+      "Oliver Díaz",
+      "Alejandro Guzman",
+      "Noah Marquez Vara",
+      "Fotios Avgoustidis",
+      "Rituraj Singh",
+      "Saman Barakat",
+      "Zahra Raisi-Estabragh",
+      "Karim Lekadir"
+    ],
+    "submission_date": "2026-07-04T22:56:15Z",
+    "latest_updated": "2026-07-04T22:56:15Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12360v1"
+    ],
+    "abstract": "Background: AI/ML-enabled medical devices are increasingly deployed in healthcare under evolving regulatory frameworks. As these systems become more integrated into clinical decision-making, there is growing expectation that they demonstrate key dimensions of trustworthy AI to support clinician, patient, and public trust. Whether publicly available regulatory documentation provides sufficient evidence to independently assess the trustworthiness of cleared AI systems remains unclear. Methods: We analysed FDA AI/ML-enabled medical device summary reports published between 2021 and 2025. Reports underwent automated keyword screening followed by multi-stage manual consensus review to identify documented evidence for the six FUTURE-AI principles: Fairness, Universality, Traceability, Usability, Robustness, and Explainability. Descriptive, temporal, and clinical-domain analyses were performed. Multivariable logistic regression assessed whether year of clearance or clinical domain predicted higher reporting transparency, defined as evidence reported for three or more principles. Results: Of 1,105 FDA summary reports screened, 519 were included. Trustworthy AI reporting was limited and uneven. Nearly one quarter (24.7%) provided no evidence for any principle, and none documented evidence across all six. Robustness was most frequently reported (57.6%), while Traceability (8.3%) and Explainability (3.5%) were the most pronounced gaps. Neither year of clearance (OR 1.02, 95% CI 0.88-1.19) nor clinical domain (OR 0.73, 95% CI 0.46-1.15) predicted higher reporting transparency. Interpretation: Substantial, persistent trustworthy AI reporting gaps exist in FDA documentation. Regulatory approval alone should not be considered a proxy for trustworthiness. Standardised, audit-ready reporting across the AI lifecycle is needed to support independent assessment and responsible adoption of healthcare AI.",
+    "status": "found"
+  },
+  "2608.12361": {
+    "arxiv_id": "2608.12361",
+    "title": "New Terms, New Toxicity: Consensus-based Chinese Neologism Toxicity Detection via Search-Augmented LLMs",
+    "authors": [
+      "Shiyao Cui",
+      "QingLin Zhang",
+      "Di Wang",
+      "Yida Lu",
+      "Zhexin Zhang",
+      "Jinhua Gao",
+      "Jinglin Yang",
+      "Min He",
+      "Han Qiu",
+      "Minlie Huang"
+    ],
+    "submission_date": "2026-07-05T03:12:32Z",
+    "latest_updated": "2026-07-05T03:12:32Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12361v1"
+    ],
+    "abstract": "Neologisms, emerging terms in meaning or form, can serve as new vehicles for toxic expression, like \"country girl\" as a stigmatizing label targeting feminism. Such toxic neologisms appear benign but have evolved into toxic usage in public consensus, posing challenges to moderation systems and remaining underexplored. In this paper, we investigate how to detect implicit toxicity expressed via neologisms. We first propose a taxonomy that captures the origins and consensus-verification criteria of toxic neologisms, followed by the construction of a lexicon spanning widely observed risk categories. To capture toxicity grounded in public consensus, we introduce SeTox, a search-augmented framework that enables static large language models (LLMs) to incorporate real-time web context for neologism toxicity detection. Experiments show that SeTox, even with 3B-scale models, outperforms recent large-scale models, demonstrating its scalability to incorporate real-world knowledge for toxic neologism detection. Disclaimer: this paper has offensive contents that may be disturbing to some readers.",
+    "status": "found"
+  },
+  "2608.12362": {
+    "arxiv_id": "2608.12362",
+    "title": "Strategy-Oriented Feedback for Fostering Systematic Problem-Solving in Machine Learning Education",
+    "authors": [
+      "Clemens Witt",
+      "Thiemo Leonhardt",
+      "Erik Marx",
+      "Mareen Grillenberger"
+    ],
+    "submission_date": "2026-07-06T06:31:18Z",
+    "latest_updated": "2026-07-06T06:31:18Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12362v1"
+    ],
+    "abstract": "Enabling students to develop systematic problem-solving strategies is a central goal in computing education and of particular relevance in the emerging field of machine learning (ML) education. While exploratory approaches are common in ML learning tasks, fostering the development and persistence of structured problem-solving strategies remains challenging, as these demand considerable metacognitive regulation and persistence, causing learners to often revert to exploratory trial-and-error behavior. To address this challenge, we augmented a digital puzzle-based learning game for decision tree construction with an adaptive feedback module generating individualized messages based on the continuous evaluation of learners' problem-solving strategies. Building on an earlier baseline study, the present work investigates how this strategy-oriented feedback shapes students' problem-solving processes. For this purpose, screencast video data and gameplay logs (N=205, approx. 55 hours of gameplay footage) are used to enable fine-grained insights into learners' strategic behavior, its persistence, and transitions. The findings demonstrate how strategy-oriented feedback can support the development of structured problem-solving skills in decision tree construction and inform the design of ML learning environments that foster transferable competencies in secondary computing education.",
+    "status": "found"
+  },
+  "2608.12363": {
+    "arxiv_id": "2608.12363",
+    "title": "EU-ETS under attack? The impact of carbon price suppression on the decarbonization of the power sector",
+    "authors": [
+      "Javier Gonzalez-Ruiz",
+      "Carlos Rodriguez-Pardo",
+      "Alice Di Bella",
+      "Paolo Mastropietro",
+      "Jose Pablo Chavez-Avila",
+      "Massimo Tavoni"
+    ],
+    "submission_date": "2026-07-06T14:34:26Z",
+    "latest_updated": "2026-07-06T14:34:26Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12363v1"
+    ],
+    "abstract": "European countries are debating policies to mitigate the increased energy costs caused by renewed geopolitical tensions, while pursuing decarbonization and electrification. A notable example is Italy's 2026 Decreto Bollette package, which proposes to remove the carbon price equivalent from the bids of certain gas-driven power plants to wholesale electricity markets, among other provisions. We use this as a case study to assess the long-term implications of suppressing the carbon price signal in the electricity market for investment, emissions, and consumer costs. We employ a stylized Italian power system using MARLEY, a multi-agent reinforcement learning framework focused on long-term electricity market assessments. In this framework, we test this policy across configurations with varying levels of support for green investment, resource adequacy, and flexibility. Results show that partial suppression of the carbon price signal yields short-term cost reductions but only a minor long-term effect on total system costs, as the deferred emissions are ultimately repaid by consumers. CO$_2$ emissions rise across most configurations since suppressing the price signal erodes incentives for renewable and storage investment. Only the most ambitious configurations for supporting green investment avoid this outcome, but they do so by marginalizing the wholesale price signal itself, thereby requiring a commitment to a hybrid market paradigm that is in contradiction with the rationale of the proposed price intervention.",
+    "status": "found"
+  },
+  "2608.12364": {
+    "arxiv_id": "2608.12364",
+    "title": "Single-axis high-energy X-ray diffraction tomography for elastic residual strain: uniqueness and stability of solutions in the presence of equilibrium constraints",
+    "authors": [
+      "Christopher Wensrich",
+      "Sean Holman",
+      "Matias Courdurier",
+      "William Lionheart"
+    ],
+    "submission_date": "2026-07-10T02:58:11Z",
+    "latest_updated": "2026-09-29T12:48:31Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.12364v1",
+      "2608.12364v2"
+    ],
+    "abstract": "It is well-established that single-axis Transverse Ray Transform tomography data from high-energy X-ray diffraction is insufficient for general reconstruction of three-dimensional elastic strain. In this paper we show that, when combined with the constraint of mechanical equilibrium, this problem becomes uniquely solvable for isotropic elastic samples with known elastic constants and non-zero Poisson's ratio. Building on the reconstruction framework of Desai and Lionheart [N.M. Desai, W.R.B. Lionheart, An explicit reconstruction algorithm for the transverse ray transform of a second rank tensor field from three axis data, Inverse Problems 32 (11) (2016) 115009], we formulate this constrained single-axis tomography problem in the Fourier domain and show that the resulting system is invertible everywhere outside a finite collection of measure zero characteristic planes. In the case of bounded samples, this is sufficient to establish uniqueness for reconstructions. We further derive conditional stability estimates that quantify the regularity requirements associated with reconstruction of the various strain components.",
+    "status": "found"
+  },
+  "2608.12365": {
+    "arxiv_id": "2608.12365",
+    "title": "FluctlightDB: A Memory Model of Data for AI Agents",
+    "authors": [
+      "Ganesh S"
+    ],
+    "submission_date": "2026-07-10T09:18:32Z",
+    "latest_updated": "2026-09-14T10:54:11Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.12365v1",
+      "2608.12365v2"
+    ],
+    "abstract": "For fifty years, data systems have answered two questions. The relational model asked which records match a predicate; the vector model asked which vectors lie nearest a query. Neither was built for cue-driven, provenance-weighted recall across long sessions. We propose treating long-term agent memory as a distinct data model -- with its own write semantics (encoding, separation, consolidation, provenance) and read semantics (cue-driven activation across a linked memory graph) -- and present FluctlightDB, an embedded engine that implements this contract via experience() and activate(). We do not claim novelty over Mem0, Zep, or HippoRAG-style memory layers, only an embedded engine contract beneath them. Numbers are typed by metric; retrieval is not generation. On LoCoMo (official evidence-recall; 10 conversations, 1,982 gold spans), our native-Rust CHORUS stack reaches 96.8% at k=150 as raw evidence recall with no neighbor expansion, on an internally reproduced July 2026 run; at k=5 it still yields 72.6%, while end-to-end QA over date-stamped context reaches 85% at k=15 (retrieval-bound). On LongMemEval-S (500 questions), official session_recall@8 is 97.6% (488/500) and end-to-end QA with our reader/judge stack is 97.4% (487/500) -- different protocols from vendor leaderboard figures we cite for context only. On BEIR SciFact (shared MiniLM embeddings, same harness), CHORUS/PRISM edges Chroma on nDCG@10 (0.646 vs. 0.645) and Recall@10 (0.792 vs. 0.783). A graded provenance-conflict suite (n=50) scores 18% top-1 when all pairs share one brain versus 100% under per-case isolation (ceiling, not deployment evidence). Engine, harnesses and frozen JSON are MIT; pip install \"fluctlightdb[native]\" re-runs the published numbers. We claim no new neuroscience and no new transformer: a missing layer of the data stack, released for others to re-run and contest.",
+    "status": "found"
+  },
+  "2608.12366": {
+    "arxiv_id": "2608.12366",
+    "title": "Spatial decay and nonlinear smoothing of the sixth-order Boussinesq equation",
+    "authors": [
+      "Xiangqian Yan",
+      "Yongsheng Li",
+      "Wei Yan"
+    ],
+    "submission_date": "2026-07-12T10:06:32Z",
+    "latest_updated": "2026-07-12T10:06:32Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12366v1"
+    ],
+    "abstract": "In this paper, we study the initial value problem of the sixth-order Boussinesq equation with quadratic and cubic nonlinearities in arbitrary spatial dimensions. First, by using the Fourier restriction norm method and a high-low frequency decomposition, we establish the nonlinear smoothing for this equation, namely, the integral form of the solution to the Duhamel formulation enjoys higher regularity than its linear counterpart. Finally, by using the nonlinear smoothing, we establish the uniform convergence of the integral term and its spatial decay for each fixed $t$.",
+    "status": "found"
+  }
+}

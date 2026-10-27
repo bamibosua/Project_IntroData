@@ -1,0 +1,405 @@
+{
+  "2608.13427": {
+    "arxiv_id": "2608.13427",
+    "title": "Modeling Bond-Dependent Kitaev-like interaction in 2D Edge-Sharing Tetrahedral Magnets: FeX (X=Te, Se)",
+    "authors": [
+      "Mengdong Li",
+      "Can Huangb",
+      "Bingjie Liu",
+      "Zhixin Liu",
+      "Yanfei Pan",
+      "Jiyu Fan",
+      "Chunlan Ma",
+      "Daning Shi",
+      "Yan Zhua"
+    ],
+    "submission_date": "2026-08-13T16:16:06Z",
+    "latest_updated": "2026-08-27T09:40:34Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.13427v1",
+      "2608.13427v2"
+    ],
+    "abstract": "Bond-dependent magnetic interactions, exemplified by the Kitaev model, are known to arise from the interplay between spin-orbit coupling (SOC) and specific coordination geometries, but have so far been almost exclusively identified in edge-sharing octahedral systems. Whether such interactions persist in edge-sharing tetrahedral environments, characteristic of the parent compounds of iron-based superconductors, remains an open question. Here, we construct a Kitaev-like model for monolayer FeTe and FeSe and demonstrate the presence of a previously unrecognized bond-dependent Ising-type interaction, induced jointly by chalcogen-mediated SOC and the tetrahedral crystal-field geometry. A microscopic spin model for these bond-dependent interactions is derived via strong-coupling perturbation theory, and the strengths of the individual exchange terms are extracted by partitioning the magnetic anisotropy energy calculated using density functional theory across various collinear magnetic orders. We reveal that the Kitaev-like interaction dominates the magnetic anisotropy in FeTe, whereas in FeSe, it strongly competes with a single-ion anisotropy of opposite sign. The resulting noncollinear local anisotropy axes generate intrinsic single-site spin frustration, providing a microscopic mechanism for magnetic disorder that transcends isotropic exchange models. Our results establish edge-sharing tetrahedral magnets as a new platform for bond-dependent interactions and extend the scope of Kitaev physics beyond octahedral coordination.",
+    "status": "found"
+  },
+  "2608.13428": {
+    "arxiv_id": "2608.13428",
+    "title": "RAIL: An Automatic Classifier of the Artificial Intelligence Readiness Level",
+    "authors": [
+      "Juan Irving Vasquez",
+      "Juan Terven",
+      "Laura-Ivoone Garay-Jimenez"
+    ],
+    "submission_date": "2026-08-13T16:17:41Z",
+    "latest_updated": "2026-08-13T16:17:41Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13428v1"
+    ],
+    "abstract": "Assessing the maturity of artificial intelligence technologies is essential for investment decisions, project management, and policy monitoring, yet the available readiness frameworks are heterogeneous and difficult to apply automatically: the adaptation of Technology Readiness Levels to AI lacks AI-specific gating criteria, the Machine Learning Technology Readiness Levels presuppose access to internal process artifacts, and AI/data readiness dimension models employ scales that resist direct comparison. This paper makes two contributions. First, we unify these three frameworks into the Unified AI Readiness Level (AIRL), a nine-level ordinal scale built on an environmental evidence ladder and complemented by dimensional caps (covering specification, data existence, data quality, data legality, expert knowledge, and algorithmic maturity) together with a generality-anchoring rule and explicit assignment disciplines, so that a readiness level becomes decidable from a natural-language description of the work alone. Second, we propose RAIL (Readiness Assessment via Independent LLM-experts), a panel-of-experts classifier that operationalizes the scale: one evidence agent and six independent dimension agents, each a large language model with a narrowly scoped mandate, deliver verdicts that a deterministic minimum rule aggregates and a chief expert reviews under asymmetric authority, confirming or lowering the panel's recommendation but never raising it above the caps. The method was tested in the analysis of several research works showing consistency and avoiding overestimation from monolithic LLM classifiers.",
+    "status": "found"
+  },
+  "2608.13429": {
+    "arxiv_id": "2608.13429",
+    "title": "MANGO: An Autodiff Neutrino Oscillation Engine for Differentiable Analysis Pipelines",
+    "authors": [
+      "Pierre Granger"
+    ],
+    "submission_date": "2026-08-13T16:17:44Z",
+    "latest_updated": "2026-09-09T08:30:37Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.13429v1",
+      "2608.13429v2"
+    ],
+    "abstract": "Computing neutrino oscillation probabilities is a solved problem; computing their derivatives is not. We present MANGO (MANGO: A Neutrino Gradient Oscillator), a composable oscillation engine in which every computed quantity is differentiable with respect to all inputs, including propagation geometry, detector depth, and individual Earth-shell densities. None of these quantities appear in traditional analytic probability formulas. The engine supports vacuum, constant-density, layered-PREM, arbitrary-profile, and adiabatic solar propagation, alongside front-ends for non-standard interactions, 3+N sterile states, decoherence, and non-unitary mixing. Because reverse-mode cost depends on output rather than input dimension, evaluating sensitivities incurs a constant 2.5-3x forward-pass overhead. As a result, calculating sensitivities for all 369 density, electron-fraction, and shell-radius parameters of a layered Earth costs no more than the 6 standard oscillation parameters. By maintaining exact sensitivity signals, MANGO allows gradients to flow continuously past the probability stage and through detector response, event weighting, binning, and likelihoods. We demonstrate this on a stylized Earth-tomography analysis. In a single pass, MANGO computes the marginalized uncertainty on a six-zone radial density model and, by differentiating through the inverse Fisher matrix, evaluates its sensitivity with respect to detector angular resolution. This provides an experimental-design metric unreachable using traditional analytic probability formulas. Three-flavor and layered-Earth probabilities match external benchmarks (OscProb, NuFast-Earth) to within 10^-9 to 10^-5, while all forward models, BSM limits, and differentiation paths are verified against exact analytic solutions and finite differences.",
+    "status": "found"
+  },
+  "2608.13430": {
+    "arxiv_id": "2608.13430",
+    "title": "Are You Sure You're Sure? On the Impact of Instruction Tuning on Confidence and Lexical Diversity",
+    "authors": [
+      "Irina Proskurina",
+      "Mayank Kumar",
+      "Oyindolapo O. Komolafe"
+    ],
+    "submission_date": "2026-08-13T16:18:45Z",
+    "latest_updated": "2026-09-18T10:53:56Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.13430v1",
+      "2608.13430v2"
+    ],
+    "abstract": "Instruction-tuned language models achieve strong performance across a range of generation tasks but have recently been shown to exhibit verbalized overconfidence, which may manifest in less diverse supporting rationales for incorrect answers. However, whether such overconfidence is associated with rationale consistency remains an open question. In this paper, we study whether changes in the lexical diversity of generated answer rationales accompany changes in model confidence induced by instruction tuning. We evaluate three matched base and instruction-tuned models across question-answering benchmarks and find that instruction tuning consistently increases answer confidence, despite limited changes in predictive accuracy, while degrading likelihood-based calibration. Secondly, we observe a non-uniform effect of instruction tuning on rationale diversity: cross-rationale diversity consistently decreases, whereas surface-level lexical diversity varies in both direction and magnitude across models and benchmarks. Finally, we find that these differences persist after controlling for answer selection and rationale length, confirming that confidence and rationale diversity capture distinct effects of instruction tuning.",
+    "status": "found"
+  },
+  "2608.13431": {
+    "arxiv_id": "2608.13431",
+    "title": "Measuring the Arrow of Time: Identification, Estimation, and Inference for Directional Structure in Multivariate Time Series",
+    "authors": [
+      "Avishek Bhandari"
+    ],
+    "submission_date": "2026-08-13T16:19:52Z",
+    "latest_updated": "2026-08-13T16:19:52Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13431v1"
+    ],
+    "abstract": "Many questions across the sciences take the same form: several coupled series are observed together, and the analyst wants to know not merely that they move together but which one moves first, and how strongly. This paper sets out a complete method built on one organising idea: the direction of a coupled system is exactly the part of its behaviour that changes when the record is played backwards. Tools built on contemporaneous covariance alone (correlation matrices, distance measures, spanning trees, undirected centralities, principal components) carry no information about direction: a reversible system and a circulating one can share identical covariance at every sampling of the same point-in-time record. Formally, direction is a circulation matrix carried by the lagged covariance. Its vanishing is exactly statistical time reversibility for linear systems, feature maps carry the characterisation to nonlinear ones, and under the Gaussian benchmark its magnitude is an entropy-production functional of the identified circulation, the quadratic component of the divergence per unit time between the forward and reversed records. Around this estimand we build a cross-fitted estimator removing first-order bias, delete-block jackknife standard errors, and a randomisation test exact under its stated block null, with a familywise correction and a nonlinear extension. A sampling theory says when the arrow is measurable at all, and a design layer separates transmission from the ordering of clocks. A laboratory of four systems with known answers compares the method with correlation networks, Granger causality, transfer entropy, and connectedness indices, reporting the failures of each when read as a measure of direction, including our own. Complete algorithms and worked examples in two languages make the paper the base reference for a series of applications.",
+    "status": "found"
+  },
+  "2608.13432": {
+    "arxiv_id": "2608.13432",
+    "title": "The Production of Electron-Capture Elements in Thermonuclear Supernovae: Theory vs. Observations",
+    "authors": [
+      "S. Shiber",
+      "P. Hoeflich",
+      "T. Mera",
+      "E. Fereidouni",
+      "Z. Levy",
+      "D. Maci",
+      "C. Ashall",
+      "K. Medler",
+      "J. M. DerKacy",
+      "E. Baron",
+      "M. Shahbandeh",
+      "C. M. Pfeffer"
+    ],
+    "submission_date": "2026-08-13T16:20:03Z",
+    "latest_updated": "2026-08-13T16:20:03Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13432v1"
+    ],
+    "abstract": "Type Ia supernovae (SNe Ia) explosively destroy carbon-oxygen white dwarfs (WDs) in multiple stellar systems. They produce approximately 50% of the iron-group elements in the Universe, synthesize electron-capture (EC) elements, drive nuclear physics experiments, and underpin high-precision cosmology. To first order, the outcome is governed by nuclear physics, a property often described as stellar amnesia. Recently, this stellar amnesia has begun to be broken by the nearly universal detection of EC elements with JWST. These elements trace high-density burning, largely ruling out the currently popular helium-triggered, sub-Mch detonation models as the dominant channel. Instead, the ubiquitous presence of EC is shifting back the focus to dynamical and secular mergers, and near-Mch explosions similar to the deflagration model W7, but in which the nuclear flame undergoes a deflagration-to-detonation transition. The early deflagration phase is especially important because spherical simulations identify the central WD density, and thus the WD mass, as a key parameter governing the explosion. Here, we present detailed magneto-hydrodynamical simulations. We find that small-scale, pre-existing turbulence expected from the pre-explosion smoldering phase is essential for overcoming the fundamental challenges imposed by the intrinsic 3D physics. This turbulence systematically reduces the production of EC elements by about a factor of two, implying the need for WD central densities closer to those associated with accretion-induced collapse to a neutron star. We also demonstrate the effect of magnetic fields near the saturation field strength and highlight the need for higher-precision EC rates at low Ye.",
+    "status": "found"
+  },
+  "2608.13433": {
+    "arxiv_id": "2608.13433",
+    "title": "Algebraic Decomposition Theory for Transformer Length Generalization",
+    "authors": [
+      "Andy Yang",
+      "Blerta Veseli",
+      "Corentin Barloy",
+      "Michaël Cadilhac",
+      "Andreas Krebs",
+      "Charles Paperman",
+      "Howard Straubing",
+      "Michael Hahn"
+    ],
+    "submission_date": "2026-08-13T16:20:56Z",
+    "latest_updated": "2026-08-13T16:20:56Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13433v1"
+    ],
+    "abstract": "Transformer-based language models are known to sometimes generalize to sequences longer than seen during training, but we lack a precise characterization of which tasks admit length generalization. It is not even known which regular languages transformers length-generalize on -- and this is a foundational class of languages. Our contributions are to establish the first complete characterization of which regular languages transformers length-generalize on and provide a decision algorithm running in polynomial time in the size of the language's syntactic monoid. These results rely on an effective characterization of the regular languages in C-RASP, a recently-established formalism that expresses which languages transformers length-generalize on. This characterization is challenging because classical tools like Krohn-Rhodes decomposition theory for finite semigroups are insufficient for C-RASP. Firstly, the basic building blocks of Krohn-Rhodes theory -- flip-flop and simple groups -- are not expressible in C-RASP. Secondly, the basic building block of C-RASP (unbounded counting) is not expressible by the finite semigroups of Krohn-Rhodes theory. Thus, length generalization on regular languages is controlled by an algebraic property that is invisible to classical finite decomposition theory. We generalize classical decomposition theory from finite semigroups to the infinite additive group on the integers, allowing us to characterize C-RASP in terms of iterated wreath products of the integers and derive a provable polynomial-time decision algorithm for regular language membership. Experiments across a broad test suite of regular languages confirm that our theory captures transformers' length-generalization behavior more accurately than existing classifications.",
+    "status": "found"
+  },
+  "2608.13434": {
+    "arxiv_id": "2608.13434",
+    "title": "Fast Tendermint: Speeding Up a Foundational Consensus Protocol",
+    "authors": [
+      "Preston Vander Vos",
+      "Daniel Cason"
+    ],
+    "submission_date": "2026-08-13T16:22:18Z",
+    "latest_updated": "2026-10-22T17:01:57Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.13434v1",
+      "2608.13434v2"
+    ],
+    "abstract": "Tendermint is among the most widely studied and deployed Byzantine fault-tolerant (BFT) consensus protocols, owing in part to its native leader-rotation mechanism that subsumes complex view changes. Like most partially-synchronous BFT protocols, Tendermint tolerates $f < n/3$ Byzantine processes and decides in three communication steps. Motivated by the push for lower-latency blockchains, a recent line of work shows that consensus can be solved in two communication steps when $f < n/5$. We present Fast Tendermint, an adaptation of Tendermint to the $n > 5f$ setting that decides in two communication steps in the good case, while preserving Tendermint's leader-rotation structure. Fast Tendermint collapses Tendermint's prevote and precommit steps into a single voting step and merges the $locked$ and $valid$ state. We give proofs of agreement, validity, and termination, and a formal specification in Quint, a modern surface syntax for TLA+, used to model-check the protocol.",
+    "status": "found"
+  },
+  "2608.13435": {
+    "arxiv_id": "2608.13435",
+    "title": "Characteristic Mode Analysis of Plasmonic Nanostructures Using Hydrodynamic Volume Integral Equation",
+    "authors": [
+      "Meruyert Khamitova",
+      "Ran Zhao",
+      "Doolos Aibek Uulu",
+      "Sebastian Celis Sierra",
+      "Hakan Bagci"
+    ],
+    "submission_date": "2026-08-13T16:22:30Z",
+    "latest_updated": "2026-08-13T16:22:30Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13435v1"
+    ],
+    "abstract": "Metallic nanostructures confine electromagnetic fields at subwavelength scales, making them attractive as plasmonic nanoantennas. At these scales, the response of metals becomes nonlocal, and the hydrodynamic model is widely used to capture this response. However, existing solvers provide only the response to a prescribed excitation and do not directly reveal the intrinsic resonances of the structure. This work extends the characteristic mode analysis to plasmonic nanostructures to enable excitation-independent modal analysis of their resonant behavior. For simple metals, the coupled hydrodynamic and volume integral equations are reduced to a single hydrodynamic volume integral equation in terms of the induced current. The equation is discretized and cast as a generalized eigenvalue problem within the characteristic mode analysis framework, whose solution yields the characteristic mode currents and modal significance curves of the structure. The proposed framework is validated through three metallic nanostructures: a nanosphere, a nanorod, and a nanodimer. The results show that the method identifies the intrinsic resonances of each structure, including resonances not excited by a given source and additional resonances arising from the nonlocal response, which are absent in local models. The proposed framework provides physical insight into the modal mechanisms of plasmonic nanostructures and serves as a practical tool for their analysis and design.",
+    "status": "found"
+  },
+  "2608.13436": {
+    "arxiv_id": "2608.13436",
+    "title": "Low-Complexity Channel Parameter Estimation for Coprime HRIS-Assisted MIMO Systems",
+    "authors": [
+      "Jean C. S. Ferreira",
+      "Melryllin G. O. Sousa",
+      "Fazal-E Asim"
+    ],
+    "submission_date": "2026-08-13T16:24:25Z",
+    "latest_updated": "2026-08-13T16:24:25Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13436v1"
+    ],
+    "abstract": "This paper proposes a parameter estimation scheme for uplink MIMO systems assisted by a Hybrid Reconfigurable Intelligent Surface (HRIS). To reduce hardware complexity, the HRIS employs a small number of active elements arranged in a sparse coprime geometry for local sensing, while the remaining elements passively reflect signals. This simultaneous sensing and reflection significantly improves accuracy over fully passive architectures. The method leverages Khatri-Rao and Kronecker factorizations to efficiently decouple the cascaded channel at the base station. Furthermore, spatial smoothing resolves the coprime array rank deficiency, enabling robust angular extraction via Root-MUSIC. Simulations demonstrate highly resilient estimation performance across scenarios.",
+    "status": "found"
+  },
+  "2608.13437": {
+    "arxiv_id": "2608.13437",
+    "title": "Lattice Boltzmann Method for Compressible Navier-Stokes-Fourier Equations",
+    "authors": [
+      "Fedor Bukreev",
+      "Adrian Kummerländer",
+      "Mathias J. Krause"
+    ],
+    "submission_date": "2026-08-13T16:24:39Z",
+    "latest_updated": "2026-08-13T16:24:39Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13437v1"
+    ],
+    "abstract": "A lattice Boltzmann scheme for the three-dimensional compressible Navier--Stokes--Fourier equations, derived automatically from the declared system by a symbolic compiler, is validated against exact solutions and published reference data. The declared system carries the viscous stress and the heat flux as transported state, and is discretized on a D3Q7 lattice in single precision. Against the exact Sod and Becker solutions the captured shock thickness converges at first order. On the supersonic Taylor-Green vortex at $M_0 = 1.25$ the scheme at $512^3$ matches the reference dilatational dissipation more closely than seven compared solvers, by thirty percent over the next best. Every operator in this solver, the generated collision and constitutive closure and the added shock sensor alike, reads only the cell it acts on, and data reaches a neighbor only by streaming along the lattice characteristics.",
+    "status": "found"
+  },
+  "2608.13438": {
+    "arxiv_id": "2608.13438",
+    "title": "ContactGuard: Pre-Contact Execution Monitoring with Action-Conditioned Latent World Models",
+    "authors": [
+      "Gehan Zheng",
+      "Matthew Johnson-Roberson",
+      "Weiming Zhi"
+    ],
+    "submission_date": "2026-08-13T16:25:54Z",
+    "latest_updated": "2026-08-13T16:25:54Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13438v1"
+    ],
+    "abstract": "Contact-rich manipulation failures are often detected only after the robot has committed to contact. This is especially limiting in wrist-camera setups: close gripper--object views help observe contact, but a poor approach may already push, miss, slip, or disturb the object before conventional detectors react. We introduce \\emph{ContactGuard}, a pre-contact execution monitor for chunked visuomotor policies. Given the policy's planned action chunk, ContactGuard predicts its short-horizon consequence in latent visual space and aborts if the predicted future latent indicates likely failure. Its latent world model is trained from unlabelled robot trajectories to predict compact multi-view visual embeddings under planned actions, avoiding pixel-level video prediction. A lightweight failure probe is then trained from a small labelled set of pre-contact clips. At deployment, ContactGuard anchors prediction before an imminent contact event, rolls the model forward under the policy's own actions, and verifies the predicted post-contact latent. Across real-world contact-rich manipulation tasks, ContactGuard predicts failure more accurately than direct and corrupted-action ablations, and transfers to live robot as a pre-contact abort signal without modifying the underlying policy.",
+    "status": "found"
+  },
+  "2608.13439": {
+    "arxiv_id": "2608.13439",
+    "title": "Retrospective Statistical Inference",
+    "authors": [
+      "Chong Gu"
+    ],
+    "submission_date": "2026-08-13T16:25:59Z",
+    "latest_updated": "2026-08-13T16:25:59Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13439v1"
+    ],
+    "abstract": "In this article, we explore a new paradigm for statistical inference. The approach centers around the point estimate based on observed data, simulating replicates using the estimate as the truth to produce clones of the estimate, with inference deriving from the clone distribution. It avoids prospective finite-dimensional model assumptions, but it makes no probabilistic claims concerning the truth; it suggests an alternative system of uncertainty quantification that is operable in nonparametric function estimation. The procedures are demonstrated using examples of smoothing spline ANOVA models in nonparametric regression. The paradigm also applies in parametric regression, where the proposed inference closely resembles traditional inference operation-wise. Conceptual discussions are scattered throughout.",
+    "status": "found"
+  },
+  "2608.13440": {
+    "arxiv_id": "2608.13440",
+    "title": "Memory Stabilizes Spontaneous Particle Aggregation: A Linearized Vlasov--Fokker--Planck Analysis",
+    "authors": [
+      "Jan Haskovec"
+    ],
+    "submission_date": "2026-08-13T16:27:11Z",
+    "latest_updated": "2026-08-13T16:27:11Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13440v1"
+    ],
+    "abstract": "We perform a linearized stability analysis of the Vlasov--Fokker--Planck equation obtained as the mean-field description of a stochastic spontaneous aggregation model with memory. Memory is represented by a chain of $K$ internal variables. We characterize the spatially homogeneous equilibria and derive a scalar dispersion relation for spatially inhomogeneous perturbations. When all relaxation rates are equal, we show that every Fourier mode that is unstable in the memoryless model possesses a unique critical relaxation parameter: sufficiently long memory stabilizes the mode, whereas it remains unstable for short memory. Although memory may destabilize individual modes associated with negative Fourier coefficients of the sensing kernel, we prove that, for radially symmetric distance-decreasing kernels, it cannot destabilize a homogeneous equilibrium that is stable in the memoryless model. Thus, memory cannot create an overall instability of an otherwise stable homogeneous state, although it may change the set of the unstable modes. We present a numerical example for the normalized top-hat kernel, demonstrating that increasing the effective memory length successively stabilizes the Fourier modes, with higher frequencies being stabilized before lower ones. This is consistent with the coarsening effect observed in recent particle simulations. Finally, under suitable nondegeneracy and regularity assumptions, we use the Crandall--Rabinowitz theorem to obtain branches of spatially inhomogeneous stationary solutions bifurcating from the homogeneous state.",
+    "status": "found"
+  },
+  "2608.13441": {
+    "arxiv_id": "2608.13441",
+    "title": "Edit2TikZ: A Comprehensive and Challenging Benchmark for Scientific Figure Editing with TikZ",
+    "authors": [
+      "Zongyun Zhang",
+      "Jiacheng Ruan",
+      "Xian Gao",
+      "Ruizhu Zhou",
+      "Lingcheng Meng",
+      "Lining Hu",
+      "Ting Liu",
+      "Yuzhuo Fu"
+    ],
+    "submission_date": "2026-08-13T16:27:18Z",
+    "latest_updated": "2026-08-13T16:27:18Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13441v1"
+    ],
+    "abstract": "Although multimodal large language models (MLLMs) have shown substantial potential in visual understanding and graphic code generation, editing scientific figures through code presents a greater challenge: a model must jointly recover visual structure, ground the requested change, generate compilable code, and preserve all unrelated content. While existing TikZ benchmarks mainly focus on figure reconstruction and generation, few systematically evaluate instruction-guided scientific figure editing with compilable code. We introduce Edit2TikZ, a comprehensive benchmark for scientific figure editing tasks, featuring 1,548 diverse and high-quality samples. Edit2TikZ combines real-world and controlled synthetic edit cases, supports both textual and visual localization request, and contains multi-step editing, each with step-level annotations. We further construct a human-aligned evaluation framework to measure whether a requested edit is completed while irrelevant content is preserved. Utilizing Edit2TikZ, we evaluate 14 mainstream MLLMs and find that current systems remain unreliable: on average, proprietary models achieve a compilation success rate of merely 75% and remain limited in both figure restoration and edit correctness, while compact models below 9B struggle further with instruction following and complete figure generation. Therefore, we build a mixed training set TikZEditMix and adopt reconstruction-then-editing curriculum learning for compact models. On Qwen3.5-4B, this training improves the compilation success rate from 45.35% to 83.40% and yields an average improvement of 18.7 points across our proposed evaluation metrics. The code and data will be released at https://github.com/Solunny/Edit2TikZ.",
+    "status": "found"
+  },
+  "2608.13442": {
+    "arxiv_id": "2608.13442",
+    "title": "Theoretical Properties of Covariate-Adaptive Randomization with a Diverging Number of Covariates",
+    "authors": [
+      "Yuhang Tao",
+      "Li-Xin Zhang"
+    ],
+    "submission_date": "2026-08-13T16:29:15Z",
+    "latest_updated": "2026-08-27T17:06:00Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.13442v1",
+      "2608.13442v2"
+    ],
+    "abstract": "Covariate-adaptive randomization procedures are widely used in clinical trials to improve covariate balance. In modern applications, experimenters often have access to many covariates, motivating the need for a theory of covariate-adaptive randomization procedures with a diverging number of covariates. This paper studies two classes of covariate-adaptive randomization procedures, referred to as imbalance-efficient covariate-adaptive randomization and imbalance-robust covariate-adaptive randomization, when the feature dimension diverges. We derive convergence rates for the imbalance of the covariates used in randomization. For both procedures, the imbalance is of a smaller order than that under complete randomization when the feature dimension is $o(n)$, whereas it is of the same order when the feature dimension is $Ω(n)$. For imbalance-robust covariate-adaptive randomization, we further establish the asymptotic properties of the imbalance of additional covariates and use these results to derive the asymptotic distribution of the difference-in-means estimator for the average treatment effect and construct asymptotically valid confidence intervals. Furthermore, we provide extensive numerical and empirical studies to illustrate the practical relevance of our theoretical results.",
+    "status": "found"
+  },
+  "2608.13443": {
+    "arxiv_id": "2608.13443",
+    "title": "Fundamental Gaps for the Dirichlet p-Laplacian on Convex Domains",
+    "authors": [
+      "Rui Chen",
+      "Daniel Hauer"
+    ],
+    "submission_date": "2026-08-13T16:29:36Z",
+    "latest_updated": "2026-09-25T17:12:21Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2608.13443v1",
+      "2608.13443v2",
+      "2608.13443v3"
+    ],
+    "abstract": "We study the fundamental gap of the Dirichlet $p$-Laplacian on bounded convex domains. We first prove the sharp one-dimensional estimate $Γ_p(I_D,V)\\ge (p-1)(2^p-1)(π_p/D)^p$, $I_D=(-D/2,D/2)$, for all $1<p<\\infty$ and convex potentials $V$, with equality exactly for constant $V$. An analysis of collapsing convex domains shows that $p=2$ is exceptional: for $p\\ne2$, the higher-dimensional gap is not governed by the sharp one-dimensional constant. For $V\\equiv0$, define $G_{p,N}:=\\inf_{Ω\\subset\\mathbb R^N}\\operatorname{diam}(Ω)^pΓ_p(Ω,0)$ over bounded convex domains. We prove $G_{2,N}=3π^2$ and $G_{p,N}=0$ for $1<p<2$, $N\\ge2$, while for every $p>2$, $G_{p,N}>0$ and the infimum is attained. We obtain explicit dimension-dependent bounds and $G_{p,N}\\asymp_p N^{p-2}$ as $N\\to\\infty$, while for fixed $N$, $\\lim_{p\\downarrow2}G_{p,N}=3π^2$ and $\\lim_{p\\to\\infty}G_{p,N}^{1/p}=4$. We also characterize the collapse as $p\\downarrow2$: minimizing domains degenerate, and every limiting normalized ground-state measure is supported on a unit segment and, up to rigid motions, equals $2\\cos^2(πt)\\,dt$ on $(-1/2,1/2)$. The proof establishes log-concavity of the first $p$-eigenfunction with convex potential, a degenerate weighted Poincaré inequality for the ground-state measure, and a lower gap bound in terms of the first eigenvalue and the associated weighted Poincaré constant. These estimates also give the compactness and equality analysis for the collapsing minimizers.",
+    "status": "found"
+  },
+  "2608.13444": {
+    "arxiv_id": "2608.13444",
+    "title": "Algorithmic Gender Prediction Is Illegitimate, But Gender Imputation Can Yield Valid Measurements",
+    "authors": [
+      "Evan Dong",
+      "Angelina Wang"
+    ],
+    "submission_date": "2026-08-13T16:30:47Z",
+    "latest_updated": "2026-08-13T16:30:47Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13444v1"
+    ],
+    "abstract": "Machine learning ethics researchers and critical HCI scholars have argued that algorithmically predicting gender is wrong. At the same time, other researchers rely on predicted gender labels to study gender disparities and develop algorithmic fairness techniques. How do we reconcile these two seemingly contradictory intuitions? We differentiate two ways gender prediction may be wrong: being illegitimate, thereby contributing to harm; and being invalid, thereby producing unusable measurements. Our analysis translates arguments against gender prediction into these terms of legitimacy and validity and shows how gender imputation applied for fairness purposes can be illegitimate yet still yield valid disparity measurements. We clarify this bind by drawing upon transfeminist literature to distinguish sexism that targets women and femininity from sexism that targets transgender and nonbinary people. While gender imputation can produce valid measurements for the former, it is illegitimate and harmful for the latter. We argue that practitioners should deploy gender imputation only when it would achieve anti-discrimination benefits that cannot be achieved through other reasonable means, while harms are minimized to the extent possible. We examine this tension in three case studies: auditing gender bias in generative image models, measuring gender disparities in film, and imputing gender from personal names. By disentangling legitimacy from validity, and differentiating these two forms of sexism, we show how debates over gender prediction have conflated distinct concerns, obscuring both the settings in which gender imputation can support fairness efforts and the harms towards transgender and nonbinary people that it fundamentally cannot capture. We conclude by recommending the development of more inclusive methods that address all kinds of sexism.",
+    "status": "found"
+  },
+  "2608.13445": {
+    "arxiv_id": "2608.13445",
+    "title": "Chebyshev polynomials on a Jordan arc",
+    "authors": [
+      "Benedikt Buchecker",
+      "Benjamin Eichinger",
+      "Olof Rubin",
+      "Aron Wennman"
+    ],
+    "submission_date": "2026-08-13T16:31:15Z",
+    "latest_updated": "2026-09-29T07:17:33Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.13445v1",
+      "2608.13445v2"
+    ],
+    "abstract": "We describe the asymptotics of Chebyshev polynomials on an analytic Jordan arc in the plane. This gives an affirmative answer to a conjecture of Christiansen-Simon-Zinchenko, based on predictions of Widom from 1969. The proof combines weighted Faber polynomials with extremal signatures, discrete orthogonal polynomials and a Marcinkiewicz-Zygmund sampling inequality, and yields Szegő-Widom asymptotics for the Chebyshev polynomials themselves.",
+    "status": "found"
+  },
+  "2608.13446": {
+    "arxiv_id": "2608.13446",
+    "title": "Blue Noise as a Lattice Gibbs Ensemble",
+    "authors": [
+      "Zhuoran Yi"
+    ],
+    "submission_date": "2026-08-13T16:31:53Z",
+    "latest_updated": "2026-10-03T15:12:49Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.13446v1",
+      "2608.13446v2"
+    ],
+    "abstract": "We present an algorithm for generating blue-noise point sets that is simultaneously local and parallel, and whose output is a draw, up to a bounded error, from an explicit probability distribution. Methods that optimize point positions achieve high spectral quality but tend to couple all points globally, while tile-based methods, the main existing local approach, assemble their output from point sets constructed offline rather than generating it from scratch; we show that locality does not require giving that up. Concretely, we model blue noise as a Gibbs distribution over a lattice, with a pairwise penalty whose continuous parameters control repulsion strength, scale, and hardness. To sample this distribution locally, we trace each site's dependencies backward in time and truncate the trace to a bounded region known before sampling begins; tiles can therefore be generated independently in any order, with no communication between them. We stipple a 14557$\\times$8418 James Webb Space Telescope image tile by tile, with peak memory under 51 MiB, set by the working window rather than the image dimensions. Spectral quality is competitive with existing methods at matched density, and the construction extends naturally to multi-class outputs.",
+    "status": "found"
+  }
+}

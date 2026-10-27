@@ -1,0 +1,440 @@
+{
+  "2601.22756": {
+    "arxiv_id": "2601.22756",
+    "title": "Understanding Generalization from Embedding Dimension and Distributional Convergence",
+    "authors": [
+      "Junjie Yu",
+      "Zhuoli Ouyang",
+      "Haotian Deng",
+      "Chen Wei",
+      "Wenxiao Ma",
+      "Jianyu Zhang",
+      "Zihan Deng",
+      "Quanying Liu"
+    ],
+    "submission_date": "2026-01-30T09:32:04Z",
+    "latest_updated": "2026-01-30T09:32:04Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22756v1"
+    ],
+    "abstract": "Deep neural networks often generalize well despite heavy over-parameterization, challenging classical parameter-based analyses. We study generalization from a representation-centric perspective and analyze how the geometry of learned embeddings controls predictive performance for a fixed trained model. We show that population risk can be bounded by two factors: (i) the intrinsic dimension of the embedding distribution, which determines the convergence rate of empirical embedding distribution to the population distribution in Wasserstein distance, and (ii) the sensitivity of the downstream mapping from embeddings to predictions, characterized by Lipschitz constants. Together, these yield an embedding-dependent error bound that does not rely on parameter counts or hypothesis class complexity. At the final embedding layer, architectural sensitivity vanishes and the bound is dominated by embedding dimension, explaining its strong empirical correlation with generalization performance. Experiments across architectures and datasets validate the theory and demonstrate the utility of embedding-based diagnostics.",
+    "status": "found"
+  },
+  "2601.22757": {
+    "arxiv_id": "2601.22757",
+    "title": "Unveiling Scaling Behaviors in Molecular Language Models: Effects of Model Size, Data, and Representation",
+    "authors": [
+      "Dong Xu",
+      "Qihua Pan",
+      "Sisi Yuan",
+      "Jianqiang Li",
+      "Zexuan Zhu",
+      "Junkai Ji"
+    ],
+    "submission_date": "2026-01-30T09:32:12Z",
+    "latest_updated": "2026-01-30T09:32:12Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22757v1"
+    ],
+    "abstract": "Molecular generative models, often employing GPT-style language modeling on molecular string representations, have shown promising capabilities when scaled to large datasets and model sizes. However, it remains unclear and subject to debate whether these models adhere to predictable scaling laws under fixed computational budgets, which is a crucial understanding for optimally allocating resources between model size, data volume, and molecular representation. In this study, we systematically investigate the scaling behavior of molecular language models across both pretraining and downstream tasks. We train 300 models and conduct over 10,000 experiments, rigorously controlling compute budgets while independently varying model size, number of training tokens, and molecular representation. Our results demonstrate clear scaling laws in molecular models for both pretraining and downstream transfer, reveal the substantial impact of molecular representation on performance, and explain previously observed inconsistencies in scaling behavior for molecular generation. Additionally, we publicly release the largest library of molecular language models to date to facilitate future research and development. Code and models are available at https://github.com/SZU-ADDG/MLM-Scaling.",
+    "status": "found"
+  },
+  "2601.22758": {
+    "arxiv_id": "2601.22758",
+    "title": "AutoRefine: Compiling Trajectories into Validated Typed Agent Artifacts",
+    "authors": [
+      "Libin Qiu",
+      "Zhirong Gao",
+      "Junfu Chen",
+      "Yuhang Ye",
+      "Liangyu Li",
+      "Weizhi Huang",
+      "Xiaobo Xue",
+      "Wenkai Qiu",
+      "Shuo Tang"
+    ],
+    "submission_date": "2026-01-30T09:33:30Z",
+    "latest_updated": "2026-08-10T06:51:25Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.22758v1",
+      "2601.22758v2"
+    ],
+    "abstract": "Large language model agents repeatedly encounter related tasks, yet systems that learn from trajectories commit every lesson to one predefined artifact form. A local constraint, a reusable procedure, and a delegated objective require different amounts of runtime ownership, so one form either under-specifies the correction or wraps it in execution machinery it does not need. We present AutoRefine, which treats trajectory learning as typed artifact compilation. It contrasts failed against successful trajectories to derive a type-neutral, evidence-linked intervention specification, then compiles that specification into the first Rule, Skill, or bounded Subagent that closes it under a runtime-relative ownership order: the selected schema must own every specified observation, state variable, dependent decision, and completion condition. Validation is stated in the same terms: a type-specific contract gate tests whether the generated object realizes its declared boundary, and a replay gate admits it only when it improves the correction cases linked to its source failures without regression on preservation cases. With GPT-5.6-terra as the shared backbone, AutoRefine records the highest success on ALFWorld, ScienceWorld, TravelPlanner, and SpreadsheetBench, and ties the best result on SkillCraft; on TravelPlanner it reaches 80.56% success against 50.0% for the strongest baseline. Removing boundary closure or replay validation costs 15.00 and 16.11 percentage points, the two largest losses among our construction and admission policies. In a longitudinal TravelPlanner stream, the repository holds 89--91% held-out success after 60 learning tasks with no net loss on previously solved tasks, and frozen repositories improve all 25 evaluated source--target pairs, more within a domain (14.20 points on average) than across domains (6.99).",
+    "status": "found"
+  },
+  "2601.22759": {
+    "arxiv_id": "2601.22759",
+    "title": "Qualitative Evaluation of LLM-Designed GUI",
+    "authors": [
+      "Bartosz Sawicki",
+      "Tomasz Les",
+      "Dariusz Parzych",
+      "Aleksandra Wycisk-Ficek",
+      "Pawel Trebacz",
+      "Pawel Zawadzki"
+    ],
+    "submission_date": "2026-01-30T09:33:44Z",
+    "latest_updated": "2026-01-30T09:33:44Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22759v1"
+    ],
+    "abstract": "As generative artificial intelligence advances, Large Language Models (LLMs) are being explored for automated graphical user interface (GUI) design. This study investigates the usability and adaptability of LLM-generated interfaces by analysing their ability to meet diverse user needs. The experiments included utilization of three state-of-the-art models from January 2025 (OpenAI GPT o3-mini-high, DeepSeek R1, and Anthropic Claude 3.5 Sonnet) generating mockups for three interface types: a chat system, a technical team panel, and a manager dashboard. Expert evaluations revealed that while LLMs are effective at creating structured layouts, they face challenges in meeting accessibility standards and providing interactive functionality. Further testing showed that LLMs could partially tailor interfaces for different user personas but lacked deeper contextual understanding. The results suggest that while LLMs are promising tools for early-stage UI prototyping, human intervention remains critical to ensure usability, accessibility, and user satisfaction.",
+    "status": "found"
+  },
+  "2601.22760": {
+    "arxiv_id": "2601.22760",
+    "title": "AscendCraft: Automatic Ascend NPU Kernel Generation via DSL-Guided Transcompilation",
+    "authors": [
+      "Zhongzhen Wen",
+      "Shudi Shao",
+      "Zhong Li",
+      "Yu Ge",
+      "Tongtong Xu",
+      "Yuanyi Lin",
+      "Tian Zhang"
+    ],
+    "submission_date": "2026-01-30T09:34:59Z",
+    "latest_updated": "2026-01-30T09:34:59Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22760v1"
+    ],
+    "abstract": "The performance of deep learning models critically depends on efficient kernel implementations, yet developing high-performance kernels for specialized accelerators remains time-consuming and expertise-intensive. While recent work demonstrates that large language models (LLMs) can generate correct and performant GPU kernels, kernel generation for neural processing units (NPUs) remains largely underexplored due to domain-specific programming models, limited public examples, and sparse documentation. Consequently, directly generating AscendC kernels with LLMs yields extremely low correctness, highlighting a substantial gap between GPU and NPU kernel generation. We present AscendCraft, a DSL-guided approach for automatic AscendC kernel generation. AscendCraft introduces a lightweight DSL that abstracts non-essential complexity while explicitly modeling Ascend-specific execution semantics. Kernels are first generated in the DSL using category-specific expert examples and then transcompiled into AscendC through structured, constraint-driven LLM lowering passes. Evaluated on MultiKernelBench across seven operator categories, AscendCraft achieves 98.1% compilation success and 90.4% functional correctness. Moreover, 46.2% of generated kernels match or exceed PyTorch eager execution performance, demonstrating that DSL-guided transcompilation can enable LLMs to generate both correct and competitive NPU kernels. Beyond benchmarks, AscendCraft further demonstrates its generality by successfully generating two correct kernels for newly proposed mHC architecture, achieving performance that substantially surpasses PyTorch eager execution.",
+    "status": "found"
+  },
+  "2601.22761": {
+    "arxiv_id": "2601.22761",
+    "title": "Undecidability in Spacetime Geometry via the AdS/CFT Correspondence",
+    "authors": [
+      "Sameer Ahmad Mir",
+      "Francesco Marino",
+      "Arshid Shabir",
+      "Lawrence M. Krauss",
+      "Mir Faizal"
+    ],
+    "submission_date": "2026-01-30T09:38:25Z",
+    "latest_updated": "2026-01-30T09:38:25Z",
+    "revised_dates": null,
+    "venue": "Physical Review D 113, L021904 (2026)",
+    "latest_version": 1,
+    "versions": [
+      "2601.22761v1"
+    ],
+    "abstract": "Undecidability, a hallmark of Gödel incompleteness theorems, has recently emerged in quantum many-body physics through the spectral gap problem. We demonstrate how this logical limitation can be holographically transmitted to a class of gravitational theories via the AdS/CFT correspondence. By embedding a translationally invariant spin Hamiltonian with undecidable gap status into a large-N gauge theory, we generate an AdS dual in which the selection of dominant bulk saddle (Poincaré AdS or AdS soliton) is itself undecidable. Consequently, under standard semiclassical holographic assumptions, even determining which smooth spacetime geometry emerges from quantum gravity can be beyond the limits of computability.",
+    "status": "found"
+  },
+  "2601.22762": {
+    "arxiv_id": "2601.22762",
+    "title": "Numerical Differentiation of Functions of Two Variables Using Chebyshev Polynomials",
+    "authors": [
+      "Maksym Kyselov",
+      "Sergiy G. Solodky"
+    ],
+    "submission_date": "2026-01-30T09:40:17Z",
+    "latest_updated": "2026-01-30T09:40:17Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22762v1"
+    ],
+    "abstract": "We investigate the problem of numerical differentiation of bivariate functions from weighted Wiener classes using Chebyshev polynomial expansions. We develop and analyze a new version of the truncation method based on Chebyshev polynomials and the idea of hyperbolic cross to reconstruct partial derivatives of arbitrary order. The method exploits the approximation properties of Chebyshev polynomials and their natural connection to weighted spaces through the Chebyshev weight function. We derive a choice rule for the truncation parameter as a function of the noise level, smoothness parameters of the function class, and the order of differentiation. This approach allows us to establish explicit error estimates in both weighted integral norms and uniform metric.",
+    "status": "found"
+  },
+  "2601.22763": {
+    "arxiv_id": "2601.22763",
+    "title": "Is Task-Specific Training Necessary for Anomaly Detection?",
+    "authors": [
+      "Xingwu Zhang",
+      "Guanxuan Li",
+      "Paul Henderson",
+      "Gerardo Aragon-Camarasa",
+      "Zijun Long"
+    ],
+    "submission_date": "2026-01-30T09:40:42Z",
+    "latest_updated": "2026-06-09T14:44:31Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2601.22763v1",
+      "2601.22763v2",
+      "2601.22763v3"
+    ],
+    "abstract": "Current state-of-the-art multi-class unsupervised anomaly detection (MUAD) methods rely on training encoder--decoder models to reconstruct anomaly-free features. However, we argue that such task-specific training is costly under distribution shifts, and that reconstruction-based residual scoring further faces a fidelity--stability dilemma. Existing training-free alternatives, in turn, remain prone to cross-category and cross-region mismatches in MUAD. Motivated by these limitations, we propose Retrieval-based Anomaly Detection (RAD), a task-specific training-free framework that stores anomaly-free features in a memory and detects anomalies through multi-level retrieval, matching test patches against the memory. Experiments demonstrate that RAD achieves state-of-the-art performance across four established benchmarks (MVTec-AD, VisA, Real-IAD, 3D-ADAM) under both standard and few-shot settings. On MVTec-AD, RAD reaches 96.7% Pixel AUROC with just a single anomaly-free image compared to 98.5% of RAD's full-data performance. Collectively, these findings overturn the assumption that MUAD requires task-specific training, showing that state-of-the-art anomaly detection is feasible with training-free memory-based retrieval. Our code is available at https://github.com/longkukuhi/RAD.",
+    "status": "found"
+  },
+  "2601.22764": {
+    "arxiv_id": "2601.22764",
+    "title": "How Far Can Pretrained LLMs Go in Symbolic Music? Controlled Comparisons of Supervised and Preference-based Adaptation",
+    "authors": [
+      "Deepak Kumar",
+      "Emmanouil Karystinaios",
+      "Gerhard Widmer",
+      "Markus Schedl"
+    ],
+    "submission_date": "2026-01-30T09:44:01Z",
+    "latest_updated": "2026-01-30T09:44:01Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22764v1"
+    ],
+    "abstract": "Music often shares notable parallels with language, motivating the use of pretrained large language models (LLMs) for symbolic music understanding and generation. Despite growing interest, the practical effectiveness of adapting instruction-tuned LLMs to symbolic music remains insufficiently characterized. We present a controlled comparative study of finetuning strategies for ABC-based generation and understanding, comparing an off-the-shelf instruction-tuned backbone to domain-adapted variants and a music-specialized LLM baseline. Across multiple symbolic music corpora and evaluation signals, we provide some insights into adaptation choices for symbolic music applications. We highlight the domain adaptation vs.~preserving prior information tradeoff as well as the distinct behaviour of metrics used to measure the domain adaptation for symbolic music.",
+    "status": "found"
+  },
+  "2601.22765": {
+    "arxiv_id": "2601.22765",
+    "title": "Bayesian Matrix Completion Under Geometric Constraints",
+    "authors": [
+      "Rohit Varma Chiluvuri",
+      "Santosh Nannuru"
+    ],
+    "submission_date": "2026-01-30T09:45:34Z",
+    "latest_updated": "2026-01-30T09:45:34Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22765v1"
+    ],
+    "abstract": "The completion of a Euclidean distance matrix (EDM) from sparse and noisy observations is a fundamental challenge in signal processing, with applications in sensor network localization, acoustic room reconstruction, molecular conformation, and manifold learning. Traditional approaches, such as rank-constrained optimization and semidefinite programming, enforce geometric constraints but often struggle under sparse or noisy conditions. This paper introduces a hierarchical Bayesian framework that places structured priors directly on the latent point set generating the EDM, naturally embedding geometric constraints. By incorporating a hierarchical prior on latent point set, the model enables automatic regularization and robust noise handling. Posterior inference is performed using a Metropolis-Hastings within Gibbs sampler to handle coupled latent point posterior. Experiments on synthetic data demonstrate improved reconstruction accuracy compared to deterministic baselines in sparse regimes.",
+    "status": "found"
+  },
+  "2601.22766": {
+    "arxiv_id": "2601.22766",
+    "title": "Sparse Attention as Compact Kernel Regression",
+    "authors": [
+      "Saul Santos",
+      "Nuno Gonçalves",
+      "Daniel C. McNamee",
+      "Marcos Treviso",
+      "André F. T Martins"
+    ],
+    "submission_date": "2026-01-30T09:45:35Z",
+    "latest_updated": "2026-05-08T15:01:26Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2601.22766v1",
+      "2601.22766v2",
+      "2601.22766v3"
+    ],
+    "abstract": "Recent work has revealed a link between self-attention mechanisms in transformers and test-time kernel regression via the Nadaraya-Watson estimator, with standard softmax attention corresponding to a Gaussian kernel. However, a kernel-theoretic understanding of sparse attention mechanisms is currently missing. In this paper, we establish a formal correspondence between sparse attention and compact (bounded support) kernels. We show that normalized ReLU and sparsemax attention arise from Epanechnikov kernel regression under fixed and adaptive normalizations, respectively. More generally, we demonstrate that widely used kernels in nonparametric density estimation -- including Epanechnikov, biweight, and triweight -- correspond to $α$-entmax attention with $α= 1 + \\frac{1}{n}$ for $n \\in \\mathbb{N}$, while the softmax/Gaussian relationship emerges in the limit $n \\to \\infty$. This unified perspective explains how sparsity naturally emerges from kernel design and provides principled alternatives to heuristic top-$k$ attention and other associative memory mechanisms. Experiments with a kernel-regression-based variant of transformers -- Memory Mosaics -- show that kernel-based sparse attention achieves competitive performance on language modeling, in-context learning, and length generalization tasks, offering a principled framework for designing attention mechanisms.",
+    "status": "found"
+  },
+  "2601.22767": {
+    "arxiv_id": "2601.22767",
+    "title": "Statistical study for binary star evolution in dense embedded clusters",
+    "authors": [
+      "Wenjie Wu",
+      "Pavel Kroupa",
+      "Vikrant V. Jadhav"
+    ],
+    "submission_date": "2026-01-30T09:46:27Z",
+    "latest_updated": "2026-02-02T17:02:57Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.22767v1",
+      "2601.22767v2"
+    ],
+    "abstract": "Context: The dynamical evolution of binary populations in embedded star clusters shapes the statistical properties of binaries observed in the Galactic field. Accurately modelling this process requires resolving both early cluster dynamics and binary interactions. Aims: We aim to characterize the early dynamical evolution of primordial binaries in embedded clusters and identify the key parameters that govern binary survival and disruption. Methods: We perform a set of direct $N$-body simulations starting from 100\\% primordial binaries in a time-varying gas potential of a gas-embedded cluster. To describe the evolution of binary orbital properties, we define empirical dynamical operators for period, binding energy, and mass ratio, and calibrate them across the simulated ensemble. Results:The binding energy and orbital period evolve in a consistent, sigmoidal fashion. Their dynamical operators reveal that hard binaries heat the cluster and suppress wide binary formation, while a small residual population of soft binaries survives. The evolution of the mass-ratio distribution is less directly linked to dynamical processing and more shaped by internal processes such as stellar physics process in the pre-main-sequence phase. High-$q$ systems tend to be enhanced, while low-$q$ systems are prone to disruption. Conclusions: The binary evolution in clusters is primarily governed by binding energy and orbital period. Our model improves over previous parameterizations of the dynamical operator by allowing for the existence of wide binaries and incorporating the embedded cluster phase. For individual clusters, direct $N$-body modelling remains the only reliable approach. On Galactic scales, population synthesis methods based on the stellar dynamical operator approach developed here remain essential.",
+    "status": "found"
+  },
+  "2601.22768": {
+    "arxiv_id": "2601.22768",
+    "title": "Electroactive morphing effects on the aerodynamic performance through wobulation around an A320 wing with vibrating trailing edge at high Reynolds number",
+    "authors": [
+      "C. Rouaix",
+      "C. Jiménez-Navarro",
+      "M. Carvalho",
+      "C. Raibaudo",
+      "J. Abou-Khalil",
+      "A. Marouf",
+      "Y. Hoarau",
+      "G. Harran",
+      "J. C. R. Hunt",
+      "H. Hangan",
+      "J. F. Rouchon",
+      "M. Braza"
+    ],
+    "submission_date": "2026-01-30T09:47:04Z",
+    "latest_updated": "2026-01-30T09:47:04Z",
+    "revised_dates": null,
+    "venue": "Journal of Fluids and Structures, 2023, 123, pp.104016",
+    "latest_version": 1,
+    "versions": [
+      "2601.22768v1"
+    ],
+    "abstract": "This study aims to investigate the effects of electroactive morphing on a 70cm chord A320 wing by means of near trailing edge slight deformation and vibration. Wing morphing is performed by Macro Fiber Composites (MFC) mini-piezoelectric actuators distributed along the span of the ''Reduced Scale'' (RS) A320 prototype of the H2020 No 723402 European research project SMS, ''Smart Morphing and Sensing for aeronautical configurations'', (https://cordis.europa.eu/project/id/723402 and www.smartwing.org/SMS/EU). The configuration studied corresponds to a low-subsonic regime (Mach number 0.063) with a 10 degree incidence and a Reynolds number of 1 Million. The numerical simulations are carried out with the Navier-Stokes Multi-Block (NSMB) solver, which takes into account the deformation of the rear part of the wing implemented experimentally with the piezoelectric actuators. A detailed physical analysis of the morphing effects on the wake dynamics and on the aerodynamic performance is conducted with a constant amplitude of 0.7cm over a wide range of actuation frequencies [10-600]Hz. Optimal vibration ranges of [180-192]Hz and [205-215]Hz were found to respectively provide a 1% drag reduction and a 2% lift-to-drag ratio increase compared to the non-morphing (static) configuration. The natural frequencies associated with the shear layer Kelvin-Helmholtz (KH) vortices and the Von-Karman (VK) vortex shedding were found to play a central role in the modification of the wake dynamics by morphing as well as in the increase of the aerodynamic performance. Actuating at (or close to) the upper shear layer (USL) natural frequency (~185Hz) provides an order of 1% drag reduction and 1% lift-to-drag ratio increase, while actuating at (or close to) the lower shear layer (LSL) natural frequency (~208Hz) provides an order of 8% lift increase and 2% lift-to-drag increase. Furthermore, the linear variation of the actuation frequency over time, called wobulation, was shown to have significant effects. This approach demonstrated, through an appropriate mapping, the ability to quickly and efficiently detect optimal constant actuation frequency ranges providing aerodynamic performance increase and simultaneously reducing the amplitude of the main instability modes.",
+    "status": "found"
+  },
+  "2601.22769": {
+    "arxiv_id": "2601.22769",
+    "title": "Beyond Abstract Compliance: Operationalising trust in AI as a moral relationship",
+    "authors": [
+      "Lameck Mbangula Amugongo",
+      "Tutaleni Asino",
+      "Nicola J Bidwell"
+    ],
+    "submission_date": "2026-01-30T09:48:24Z",
+    "latest_updated": "2026-01-30T09:48:24Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22769v1"
+    ],
+    "abstract": "Dominant approaches, e.g. the EU's \"Trustworthy AI framework\", treat trust as a property that can be designed for, evaluated, and governed according to normative and technical criteria. They do not address how trust is subjectively cultivated and experienced, culturally embedded, and inherently relational. This paper proposes some expanded principles for trust in AI that can be incorporated into common development methods and frame trust as a dynamic, temporal relationship, which involves transparency and mutual respect. We draw on relational ethics and, in particular, African communitarian philosophies, to foreground the nuances of inclusive, participatory processes and long-term relationships with communities. Involving communities throughout the AI lifecycle can foster meaningful relationships with AI design and development teams that incrementally build trust and promote more equitable and context-sensitive AI systems. We illustrate how trust-enabling principles based on African relational ethics can be operationalised, using two use-cases for AI: healthcare and education.",
+    "status": "found"
+  },
+  "2601.22770": {
+    "arxiv_id": "2601.22770",
+    "title": "Okara: Detection and Attribution of TLS Man-in-the-Middle Vulnerabilities in Android Apps with Foundation Models",
+    "authors": [
+      "Haoyun Yang",
+      "Ronghong Huang",
+      "Yong Fang",
+      "Beizeng Zhang",
+      "Junpu Guo",
+      "Zhanyu Wu",
+      "Xianghang Mi"
+    ],
+    "submission_date": "2026-01-30T09:49:09Z",
+    "latest_updated": "2026-03-17T11:27:35Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.22770v1",
+      "2601.22770v2"
+    ],
+    "abstract": "Transport Layer Security (TLS) is fundamental to secure online communication, yet vulnerabilities in certificate validation that enable Man-in-the-Middle (MitM) attacks remain a pervasive threat in Android apps. Existing detection tools are hampered by low-coverage UI interaction, costly instrumentation, and a lack of scalable root-cause analysis. We present Okara, a framework that leverages foundation models to automate the detection and deep attribution of TLS MitM Vulnerabilities (TMVs). Okara's detection component, TMV-Hunter, employs foundation model-driven GUI agents to achieve high-coverage app interaction, enabling efficient vulnerability discovery at scale. Deploying TMV-Hunter on 37,349 apps from Google Play and a third-party store revealed 8,374 (22.42%) vulnerable apps. Our measurement shows these vulnerabilities are widespread across all popularity levels, affect critical functionalities like authentication and code delivery, and are highly persistent with a median vulnerable lifespan of over 1,300 days. Okara's attribution component, TMV-ORCA, combines dynamic instrumentation with a novel LLM-based classifier to locate and categorize vulnerable code according to a comprehensive new taxonomy. This analysis attributes 41% of vulnerabilities to third-party libraries and identifies recurring insecure patterns, such as empty trust managers and flawed hostname verification. We have initiated a large-scale responsible disclosure effort and will release our tools and datasets to support further research and mitigation.",
+    "status": "found"
+  },
+  "2601.22771": {
+    "arxiv_id": "2601.22771",
+    "title": "GRANITE: A Generalized Regional Framework for Identifying Agreement in Feature-Based Explanations",
+    "authors": [
+      "Julia Herbinger",
+      "Gabriel Laberge",
+      "Maximilian Muschalik",
+      "Yann Pequignot",
+      "Marvin N. Wright",
+      "Fabian Fumagalli"
+    ],
+    "submission_date": "2026-01-30T09:49:26Z",
+    "latest_updated": "2026-01-30T09:49:26Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22771v1"
+    ],
+    "abstract": "Feature-based explanation methods aim to quantify how features influence the model's behavior, either locally or globally, but different methods often disagree, producing conflicting explanations. This disagreement arises primarily from two sources: how feature interactions are handled and how feature dependencies are incorporated. We propose GRANITE, a generalized regional explanation framework that partitions the feature space into regions where interaction and distribution influences are minimized. This approach aligns different explanation methods, yielding more consistent and interpretable explanations. GRANITE unifies existing regional approaches, extends them to feature groups, and introduces a recursive partitioning algorithm to estimate such regions. We demonstrate its effectiveness on real-world datasets, providing a practical tool for consistent and interpretable feature explanations.",
+    "status": "found"
+  },
+  "2601.22772": {
+    "arxiv_id": "2601.22772",
+    "title": "Rust and Go directed fuzzing with LibAFL-DiFuzz",
+    "authors": [
+      "Timofey Mezhuev",
+      "Darya Parygina",
+      "Daniil Kuts"
+    ],
+    "submission_date": "2026-01-30T09:52:50Z",
+    "latest_updated": "2026-10-05T14:12:25Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2601.22772v1",
+      "2601.22772v2",
+      "2601.22772v3"
+    ],
+    "abstract": "In modern SSDLC, program analysis and automated testing are essential for minimizing vulnerabilities before software release, with fuzzing being a fast and widely used dynamic testing method. However, traditional coverage-guided fuzzing may be less effective in specific tasks like verifying static analysis reports or reproducing crashes, while directed fuzzing, focusing on targeted program locations using proximity metrics, proves to be more effective. Some of the earliest directed fuzzers are, for example, AFLGo and BEACON, which use different proximity metric approaches. Although most automated testing tools focus on C/C++ code, the growing popularity of Rust and Go causes the need for precise and efficient testing solutions for these languages. This work expands the applicability of directed fuzzing beyond traditional analysis of C/C++ software. We present a novel approach to directed greybox fuzzing tailored specifically for Rust and Go applications. We introduce advanced preprocessing techniques, rustc compiler customizations, and elaborate graph construction and instrumentation methods to enable effective targeting of specific program locations. Our implemented fuzzing tools, based on LibAFL-DiFuzz backend, demonstrate competitive advantages compared to popular existing fuzzers like afl$.$rs, cargo-fuzz, and go-fuzz. According to TTE (Time to Exposure) experiments, Rust-LibAFL-DiFuzz outperforms other tools by the best TTE result. Some stability issues can be explained by different mutation approaches. Go-LibAFL-DiFuzz outperforms its opponent by the best and, in the majority of cases, by average result, having two cases with orders of magnitude difference. These results prove better efficiency and accuracy of our approach.",
+    "status": "found"
+  },
+  "2601.22773": {
+    "arxiv_id": "2601.22773",
+    "title": "A Structured Approach to Safety Case Construction for AI Systems",
+    "authors": [
+      "Sung Une Lee",
+      "Liming Zhu",
+      "Md Shamsujjoha",
+      "Liming Dong",
+      "Qinghua Lu",
+      "Jieshan Chen",
+      "Lionel Briand"
+    ],
+    "submission_date": "2026-01-30T09:53:22Z",
+    "latest_updated": "2026-03-06T02:14:50Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2601.22773v1",
+      "2601.22773v2",
+      "2601.22773v3"
+    ],
+    "abstract": "Safety cases, structured arguments that a system is acceptably safe, are becoming central to the governance of AI systems. Yet, traditional safety-case practices from aviation or nuclear engineering rely on well-specified system boundaries, stable architectures, and known failure modes. Modern AI systems, such as generative and agentic AI, are the opposite. Their capabilities emerge unpredictably from low-level training objectives, their behaviour varies with prompts, and their risk profiles shift through fine-tuning, scaffolding, or deployment context. This study examines how safety cases are currently constructed for AI systems and why classical approaches fail to capture these dynamics. This study introduces comprehensive taxonomies for AI-specific claim types (assertion-based, constraint-based, capability-based), argument types (demonstrative, comparative, causal/explanatory, risk-based, and normative), and evidence families (empirical, mechanistic, comparative, expert-driven, formal methods, operational/field data, and model-based). It then proposes a reusable safety-case template, each of which follows a predefined structure of claims, arguments, and evidence tailored for AI systems. Each template is illustrated by end-to-end patterns that address distinctive challenges, such as evaluation without ground truth, dynamic model updates, and threshold-based risk decisions. The result is a systematic, composable, and reusable approach to constructing and maintaining safety cases that are credible, auditable, and adaptive to the evolving behaviour of generative and frontier AI systems.",
+    "status": "found"
+  },
+  "2601.22774": {
+    "arxiv_id": "2601.22774",
+    "title": "Characterization of $n$-Lie Derivations on Generalized Matrix Algebras",
+    "authors": [
+      "Xinfeng Liang",
+      "Minghao Wang",
+      "Feng Wei"
+    ],
+    "submission_date": "2026-01-30T09:53:22Z",
+    "latest_updated": "2026-03-01T13:35:53Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.22774v1",
+      "2601.22774v2"
+    ],
+    "abstract": "The principal objective of this paper is to determine the structure of $n$-Lie derivations ($n\\geq 3$) on generalized matrix algebras.It is shown that under certain mild assumptions, every $n$-Lie derivation can be decomposed into the sum of an extremal $n$-derivation and an $n$-linear centrally-valued mapping. As direct applications, we provide complete characterizations of $n$-Lie derivations on both full matrix algebras and triangular algebras.",
+    "status": "found"
+  },
+  "2601.22775": {
+    "arxiv_id": "2601.22775",
+    "title": "The Symplectic-to-Contact Dictionary",
+    "authors": [
+      "Fabrizio Pugliese",
+      "Giovanni Sparano",
+      "Luca Vitagliano"
+    ],
+    "submission_date": "2026-01-30T09:58:39Z",
+    "latest_updated": "2026-01-30T09:58:39Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22775v1"
+    ],
+    "abstract": "Contact Geometry is an odd dimensional analogue of Symplectic Geometry. This vague idea can actually be formalized in a rather precise way by means of a Symplectic-to-Contact Dictionary. The aim of this review paper is discussing the basic entries in this dictionary. Surprisingly, the dictionary can also be applied to apparently far away situations like complex and $G$-structures, to get old and new interesting geometries.",
+    "status": "found"
+  }
+}

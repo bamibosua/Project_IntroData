@@ -1,0 +1,402 @@
+{
+  "2609.15454": {
+    "arxiv_id": "2609.15454",
+    "title": "Design-based Estimation and Inference on Quantile Exposure Effect under General Interference",
+    "authors": [
+      "Haoxiang Wang",
+      "Lan Wang",
+      "Xiao-Hua Zhou"
+    ],
+    "submission_date": "2026-09-14T12:20:42Z",
+    "latest_updated": "2026-09-14T12:20:42Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.15454v1"
+    ],
+    "abstract": "Many applications in public health, environmental science, and economics feature spillovers across connected units, violating the Stable Unit Treatment Value Assumption (SUTVA) underlying classical quantile treatment effect methods. We develop a general framework for defining, estimating, and conducting inference for quantile exposure effects (QEEs) under network interference, encompassing quantile direct and spillover effects as leading cases. Studying QEEs under interference faces three substantive challenges. First, because a single exposure level represents many neighborhood treatment configurations, the causal estimand must aggregate over these configurations in an interpretable manner. Second, quantile estimands are intrinsically non-smooth, placing them outside much of the existing network theory involving only Lipschitz or differentiable functionals. Third, in design-based, finite-population network settings, conventional smoothness assumptions on outcome densities cannot be imposed directly. Using conditional neighborhood dependence, we establish asymptotic normality under explicit network degree conditions and derive a locally uniform convergence rate for kernel density estimation. We also characterize the variance estimation bias arising from heterogeneous unit-specific score means and construct asymptotically conservative confidence intervals. Extensive simulations and an application to an educational intervention in school friendship networks demonstrate that the proposed framework reveals heterogeneous exposure effects, including tail-specific impacts, that are missed by analyses based solely on average treatment effects.",
+    "status": "found"
+  },
+  "2609.15455": {
+    "arxiv_id": "2609.15455",
+    "title": "InterSocialBench: Benchmarking Human and LLM Preferences for Companion-Robot Social Behavior",
+    "authors": [
+      "Yaodan Xu",
+      "Boyang Guo",
+      "Yuqing Gu",
+      "Qingxin Zhang",
+      "Yiwen Deng",
+      "Meng Liu",
+      "Lintian Li"
+    ],
+    "submission_date": "2026-09-14T12:21:12Z",
+    "latest_updated": "2026-09-14T12:21:12Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.15455v1"
+    ],
+    "abstract": "Companion robots face everyday situations in which several feasible behaviors may be appropriate, yet different people prefer different responses. We introduce InterSocialBench, a benchmark of 210 domestic scenarios and 18 high-level behaviors, pairing judgments from 100 human participants with 23,520 responses from seven large language models under 16 personality conditions. Each human annotation preserves a preferred action alongside explicitly appropriate and inappropriate candidates. A structured construction pipeline covers behavioral alternatives, competing situational cues, and relevant history and future tasks. Evaluation distinguishes preferred-choice agreement from explicit rejection, using scenario-grouped splits for trainable predictors. Simple frequency and persona-voting baselines illustrate these objectives. Across the tested prompts, model and human behavior distributions differ, and the diversity gap remains after matching response counts: humans exhibit 4.68 distinct choices per scenario, compared with 2.06--3.46 for the models. Human scenario-level plurality agreement is 51.5%, describing disagreement rather than a universal prediction ceiling. InterSocialBench supports evaluating social behavior selection without replacing individual judgments with a single consensus label.",
+    "status": "found"
+  },
+  "2609.15456": {
+    "arxiv_id": "2609.15456",
+    "title": "Electromagnetic Selection Rules and Coherent Manipulation of Quantum Skyrmion via Surface Acoustic Wave Phonons",
+    "authors": [
+      "Geng Li",
+      "Yu-Yuan Chen",
+      "Yu-xi Liu"
+    ],
+    "submission_date": "2026-09-14T12:22:01Z",
+    "latest_updated": "2026-09-14T12:22:01Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.15456v1"
+    ],
+    "abstract": "Skyrmions are competitive candidates for information-storage units and have great prospect in quantum information processing. We here study coherent control of a quantum skyrmion via surface acoustic wave (SAW) phonons in a piezoelectric SAW cavity. Exact diagonalization of a finite Dzyaloshinskii-Moriya cluster reveals the eigenstates of quantum skyrmion with robust scalar chirality. The underlying lattice-spin symmetry imposes polarization-dependent selection rules for the electromagnetic transitions between eigenstates states. Considering the small mode volume of the SAW phonon easy to reach strong coupling, we derive the interaction Hamiltonian between the quantum skyrmion as a qubit and a single-mode quantized SAW via the electric field induced by piezoelectric effect, and find that the coupling strength at the single-phonon level increases linearly with skyrmion radius. This enables enhanced spin-acoustic coupling for larger skyrmionic textures and for low magnetic dissipation. Our results establish few-spin quantum skyrmions as compact building blocks for hybrid quantum information processing and suggest a route toward more densely integrated on-chip quantum devices.",
+    "status": "found"
+  },
+  "2609.15457": {
+    "arxiv_id": "2609.15457",
+    "title": "AnchorGUI: Asymmetric Memory for Dual-Scale Learning in GUI Navigation",
+    "authors": [
+      "Shengjie Jin",
+      "Zelong Sun",
+      "Hengbo Xu",
+      "Yanbiao Ma",
+      "Zhiwu Lu"
+    ],
+    "submission_date": "2026-09-14T12:22:26Z",
+    "latest_updated": "2026-09-14T12:22:26Z",
+    "revised_dates": null,
+    "venue": "Computer Vision - ECCV 2026, LNCS 17038, pp. 97-113, Springer (2026)",
+    "latest_version": 1,
+    "versions": [
+      "2609.15457v1"
+    ],
+    "abstract": "Vision-Language Models (VLMs) enable autonomous GUI navigation, but agents still struggle to process and learn from dense, continuous visual histories. This bottleneck hinders both immediate error correction within a single episode (intra-trial) and experience distillation across multiple attempts (cross-trial). We trace these challenges to an empirical informational asymmetry in GUI navigation: while expected transitions can often be compressed into lightweight textual summaries, unexpected outcomes benefit from preserved screenshots as causal evidence for accurate diagnosis. Building on this insight, we propose AnchorGUI, a unified framework driven by the Cognitive State Anchor (CSA). The CSA acts as a per-step primitive that actively compares expected and observed transitions, converting passive multimodal trajectories into explicit prediction-error signals. These signals orchestrate a dual-scale learning mechanism via an asymmetric memory. For intra-trial correction, a sliding window selectively retains visual evidence for detected mismatches, providing immediate, visually-grounded feedback. For cross-trial distillation, this asymmetric memory focuses the computationally expensive credit assignment search space on likely failure steps. Experiments across four benchmarks validate the effectiveness of our approach. On AndroidWorld, AnchorGUI achieves a 57.3% success rate with a $2.4\\times$ token reduction per step. Furthermore, cross-trial distillation reaches 69.2% success (+11.9% gain), significantly outperforming standard reflection methods while maintaining sub-linear context scaling.",
+    "status": "found"
+  },
+  "2609.15458": {
+    "arxiv_id": "2609.15458",
+    "title": "Mobility- and Feedback-Aware Multi-Level Conflict-Triggered Hybrid Beamforming for Multi-User mmWave UAV Systems",
+    "authors": [
+      "Thuan Van Le",
+      "Nguyen Cong Luong",
+      "Xingwang Li",
+      "Vo Nguyen Quoc Bao",
+      "Ngo Hoang Tu"
+    ],
+    "submission_date": "2026-09-14T12:23:29Z",
+    "latest_updated": "2026-09-14T12:23:29Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.15458v1"
+    ],
+    "abstract": "This paper investigates hybrid beamforming for multi-user large multiple-input multiple-output millimeter-wave unmanned aerial vehicle (UAV) downlink systems under mobility-induced channel aging and delayed beam-training feedback. Analog beam selection from compact delayed reports is a partial-observation decision, while additional candidate evaluations consume processing time and reduce the useful payload interval. We propose a mobility- and feedback-aware multi-level refinement strategy, termed MLR-TG, to improve robustness without always-on candidate search. Candidate subsets are ranked by a predicted net utility constructed from quantized complex coefficients of the reported codewords and the UAV mobility state, while the transmission regularized zero-forcing precoder is computed once from pilot-estimated effective channel state information (CSI) after analog selection. The refinement level is adaptively selected according to conflict severity and aging sensitivity. The selection rule is a two-statistic approximation of predicted-utility maximization, employs a system-size-invariant conflict score, and is calibrated offline on training data disjoint from evaluation. Simulations on a three-dimensional air-to-ground model with UAV attitude dynamics and common channel trajectories show that MLR-TG reduces system outage probability by 26.7% and improves the 5th-percentile user rate by 53.9% relative to greedy sector beamforming, while net spectral efficiency remains within 0.96%. Compared with always-on global top-3 refinement, MLR-TG improves net spectral efficiency by 5.5% while evaluating 77.9% fewer candidates, and remains within 3.4% of a noncausal-CSI level oracle in net spectral efficiency while requiring 86.9% fewer feedback bits than full-CSI reporting.",
+    "status": "found"
+  },
+  "2609.15459": {
+    "arxiv_id": "2609.15459",
+    "title": "Discrete q-Hermitian Clifford analysis",
+    "authors": [
+      "Baruch Schneider",
+      "Diana Schneiderová",
+      "Yifan Zhang"
+    ],
+    "submission_date": "2026-09-14T12:23:37Z",
+    "latest_updated": "2026-09-24T16:01:14Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2609.15459v1",
+      "2609.15459v2"
+    ],
+    "abstract": "We develop a discrete $q$-Hermitian Clifford calculus based on coordinatewise Jackson differences on multiplicative $q$-lattices. The resulting Hermitian Jackson--Dirac operators are nilpotent, factor a $q$-Laplacian, and have occupancy-dependent Euler anticommutators. These give explicit Fischer projectors and homotopies, but the local calculus is not controlled by total degree. We prove a two-face Cauchy--Kovalevskaya theorem for polynomials and extend it to a $q$-analytic Jackson--Fischer class. A divided-power conjugation recovers scalar Euler relations and transfers the classical joint Fischer decomposition and dimension formulas. The Jackson--Fischer completion is a vector-valued $q$-Fock space whose polarized nullspaces have projected reproducing kernels; the joint kernel is obtained by alternating projections. We also determine the linear symmetry group of the multiplicative lattice.",
+    "status": "found"
+  },
+  "2609.15460": {
+    "arxiv_id": "2609.15460",
+    "title": "Optical activation of nonlinear Hall effect in topological insulators with warped Fermi surface",
+    "authors": [
+      "Mohammad Shafiei",
+      "Farhad Fazileh",
+      "Milorad V. Milošević"
+    ],
+    "submission_date": "2026-09-14T12:24:25Z",
+    "latest_updated": "2026-09-14T12:24:25Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.15460v1"
+    ],
+    "abstract": "Topological insulators (TIs) with hexagonally warped Fermi surface are natural platforms for the nonlinear Hall effect, as warping breaks inversion symmetry while preserving time-reversal symmetry (TRS). Here we show that this inversion breaking alone is insufficient: although warping generates a strongly anisotropic Berry curvature, the preserved threefold rotational symmetry forces the equilibrium Berry curvature dipole (BCD) to vanish identically. We demonstrate that linearly polarized light removes this symmetry obstruction: in the off-resonant Floquet regime, it lowers the rotational symmetry while preserving TRS, thereby generating a finite BCD whose magnitude, orientation, and sign are continuously tunable by the light intensity and polarization. For realistic Bi$_2$Te$_3$ parameters, we show that the induced BCD reaches $\\sim$0.03~nm, yielding microampere-scale nonlinear Hall currents under experimentally accessible conditions. Our results therefore establish Floquet symmetry engineering as a route to activating the symmetry-forbidden nonlinear transport on TI surfaces without breaking the TRS.",
+    "status": "found"
+  },
+  "2609.15461": {
+    "arxiv_id": "2609.15461",
+    "title": "Probing gluon saturation through inclusive hadron production in DIS",
+    "authors": [
+      "Carlisle Casuga",
+      "Swaleha Mulani",
+      "Heikki Mäntysaari"
+    ],
+    "submission_date": "2026-09-14T12:24:39Z",
+    "latest_updated": "2026-09-14T12:24:39Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.15461v1"
+    ],
+    "abstract": "We investigate gluon saturation effects in semi-inclusive deep inelastic scattering (SIDIS) at small-$x$ within the Color Glass Condensate framework. We compute the SIDIS cross section at leading order in the dipole picture, expressing it in terms of the dipole-target scattering amplitude. We validate our framework by comparing with the charged hadron spectra measured at HERA. Our predictions for the EIC indicate that saturation effects result in significant nuclear suppression in the SIDIS cross section, and can provide complementary constraints on the initial condition for the Balitsky-Kovchegov evolution extracted from inclusive DIS data. These results demonstrate that SIDIS measurements at the EIC are sensitive to nonlinear QCD dynamics in the saturation regime.",
+    "status": "found"
+  },
+  "2609.15462": {
+    "arxiv_id": "2609.15462",
+    "title": "Gravitational-Wave Image Multiplicity as a Topological Probe of Dark-Matter Core Collapse",
+    "authors": [
+      "Tonghua Liu",
+      "Kai Liao",
+      "Marek Biesiada",
+      "Bing Sun"
+    ],
+    "submission_date": "2026-09-14T12:25:59Z",
+    "latest_updated": "2026-09-14T12:25:59Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.15462v1"
+    ],
+    "abstract": "Dark-matter self-interactions can drive subhalos through gravothermal core collapse, but conventional lensing observables vary continuously with uncertain inner profiles. We show that gravitational-wave image multiplicity provides a discrete alternative. Near a macro-critical minimum, increasing subhalo central convergence opens two caustics in sequence, converting one detectable waveform into three and then five stationary images. Using weighted SASHIMI subhalos and an ET+CE selection model, we forecast almost 2 systems with at least three copies detectable in five years if dense remnants survive, compared with the prediction of 0.36 in 5yrs for standard CDM. The much more diagnostic second case is rare: the corresponding 5yrs yield with at least four detectable copies is 0.149, versus $1.55\\times10^{-6}$ for CDM. According to the Poisson statistics, this gives only a 13.8\\% probability of at least one event detected in 5 years. Thus this is a rare-event, exposure-limited test rather than a guaranteed detection: a resolved second pair would be difficult to reconcile with the fiducial single-halo CDM population, whereas a five-year null result would not by itself constrain remnant survival strongly.",
+    "status": "found"
+  },
+  "2609.15463": {
+    "arxiv_id": "2609.15463",
+    "title": "Harmonic sums and the Galois group of the Mellin-KZ difference equation",
+    "authors": [
+      "Nikita Markarian"
+    ],
+    "submission_date": "2026-09-14T12:26:12Z",
+    "latest_updated": "2026-09-14T12:26:12Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.15463v1"
+    ],
+    "abstract": "We identify the universal Galois group of the difference equation obtained by the Mellin transform of the Knizhnik-Zamolodchikov equation with the prounipotent group associated with the transport Hopf algebra of Deligne and Terasoma studied in \\cite{Markarian}. At each finite weight, we realize the Picard-Vessiot ring by finite multiple harmonic sums. We also interpret the classical Gamma-corrected projected associator as the comparison between finite and regularized asymptotic fibers in this realization.",
+    "status": "found"
+  },
+  "2609.15464": {
+    "arxiv_id": "2609.15464",
+    "title": "Ontological free will as incompressible information adjunction: A noncomputability boundary beyond P versus NP",
+    "authors": [
+      "J{é}rome Clech"
+    ],
+    "submission_date": "2026-09-14T12:26:55Z",
+    "latest_updated": "2026-09-14T12:26:55Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.15464v1"
+    ],
+    "abstract": "We study a conditional model of ontological free will in which a pre-act state structures several coherent global continuations without intrinsically distinguishing one as the future actualisation. The topos-theoretic component is formalised by a choice sheaf and by the action of automorphisms preserving the pre-act data: the absence of a fixed point rules out any natural equivariant selection. An act changes an unpointed object into a pointed one and reduces its symmetry group to a stabiliser. Independently, a causal algorithmic incompressibility axiom imposes nearly maximal online description complexity on the actual choices. Uniformly observable post-act traces then allow their reconstruction. We prove a conditional transfer result: such traces must carry asymptotically all the singularisation information unavailable in the pre-act regime, and no uniform Turing predictor computes the choices from causal histories alone. The formalism proves neither that human beings satisfy the model nor a separation of P from NP; it identifies a boundary at which prediction concerns the existence of a computable function rather than its time complexity.",
+    "status": "found"
+  },
+  "2609.15465": {
+    "arxiv_id": "2609.15465",
+    "title": "Building a Dataset for Music Sample Identification",
+    "authors": [
+      "R. Oguz Araz",
+      "Xavier Lizarraga",
+      "Xavier Serra",
+      "Dmitry Bogdanov"
+    ],
+    "submission_date": "2026-09-14T12:27:55Z",
+    "latest_updated": "2026-10-06T13:38:25Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2609.15465v1",
+      "2609.15465v2"
+    ],
+    "abstract": "Sample identification (SI) is the task of matching an element of a musical work to its musically transformed versions used to create new works. The task has received little attention and lacks large-scale publicly available data. In this work, we mine sampling annotations from a music database and split them for training and evaluation. The resulting dataset is nearly three orders of magnitude larger than the existing SI benchmarks, with training, validation, and test sets of 114 k, 6 k, and 10 k tracks. We find that naively splitting the annotations places the same tracks in different sets. To avoid this, we construct a graph from the annotations and split it over connected components. We further find that a single mega-component contains half of the annotations, making component-wise splitting incompatible with balanced splits; we trim it, yielding a leakage-aware pipeline. We share the dataset for non-commercial scientific research purposes only and make the data-analysis and splitting code publicly available. We hope that our work fosters research on SI.",
+    "status": "found"
+  },
+  "2609.15466": {
+    "arxiv_id": "2609.15466",
+    "title": "Reconstruction of the superstatistical temperature distribution from single-particle kinetic energies",
+    "authors": [
+      "Sergio Davis"
+    ],
+    "submission_date": "2026-09-14T12:27:55Z",
+    "latest_updated": "2026-09-14T12:27:55Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.15466v1"
+    ],
+    "abstract": "The framework of superstatistics can be used to describe non-Maxwellian single-particle velocity distributions as mixtures of Maxwellian distributions, where the weight is imposed by a probability density associated to the inverse temperature $β= 1/(k_B T)$. Among the typical model choices for $β$ are gamma, inverse gamma and lognormal distributions, sometimes called the universality classes of superstatistics. Given a set of observed velocities, however, there is no direct method to determine the underlying temperature distribution, as temperature itself is not a phase-space observable, and numerically inverting the Laplace transform is an unreliable process. In this work, we show that Jaynes' principle of maximum entropy can be used to successfully reconstruct the inverse temperature distribution from data, by using the logarithmic moments of the kinetic energy as constraints. Although the kinetic energy distributions for the three universality classes are almost indistinguishable at the same mean and variance of $β$, the method correctly discriminates between them.",
+    "status": "found"
+  },
+  "2609.15467": {
+    "arxiv_id": "2609.15467",
+    "title": "Turkish MMLU Pro: Traceable Option Augmentation and Its Validity Limits in Turkish Multiple-Choice Evaluation",
+    "authors": [
+      "M. Ali Bayram"
+    ],
+    "submission_date": "2026-09-14T12:28:09Z",
+    "latest_updated": "2026-09-14T12:28:09Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.15467v1"
+    ],
+    "abstract": "Adding answer options can lower multiple-choice scores without improving assessment validity. Turkish MMLU Pro examines this distinction using 12,000 Turkish-source questions across 58 sections. Each question retains its stem, five original options and source key, and receives five options copied from other questions in the same section. Sentence-embedding retrieval proposes candidates; a language model selects existing identifiers. Deterministic verification reconstructs all 60,000 additions. A 25-model calibration exposes scoring and generation-budget effects. Five evaluations produce source-key accuracies of 34.8%-81.4%. On 981 shared questions, one API-served model falls from 93.7% with five choices to 83.1% with ten; 102 of 115 lost correct responses select borrowed options. The decrease is 24.4 percentage points on heuristically flagged negative stems and 5.9 points elsewhere. A completed human-checked audit of 200 sampled questions, with undocumented reviewer tool use, yields 47 and 31 multiple-answer judgments across the two record sets, 25 of the latter unresolved. These records support concern about ambiguity, while their dependence and incomplete reviewer-method documentation limit validation. Because order and labels also change, the paired comparison measures augmentation as implemented. The contribution is a traceable construction and an analysis of its validity limits, not evidence that lower ten-choice scores measure knowledge better.",
+    "status": "found"
+  },
+  "2609.15468": {
+    "arxiv_id": "2609.15468",
+    "title": "Time Machine Experiments: Using Historically-Bounded AI for Inquiry into the Human Mind",
+    "authors": [
+      "Hiromu Yakura",
+      "Robin Schimmelpfennig",
+      "Ezequiel Lopez-Lopez",
+      "Alejandro H. Artiles",
+      "Levin Brinkmann",
+      "Jean-François Bonnefon",
+      "Azim Shariff",
+      "Iyad Rahwan"
+    ],
+    "submission_date": "2026-09-14T12:28:17Z",
+    "latest_updated": "2026-09-14T12:28:17Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.15468v1"
+    ],
+    "abstract": "Can interacting with someone from 1930, with no knowledge of what happened after, influence a person's perception of the past? People reason about the present against a picture of the past without observing it. The past is reconstructed from memory and testimony, but this reconstruction has been filtered through everything that happened since. Historically-bounded large language models (LLMs) make that past available for interaction. As a proof-of-concept for the impact of interacting with historical minds, we ran a preregistered randomized experiment ($N=240$), where participants interacted with an LLM trained on pre-1930 text. The interaction reduced the illusion of moral decline, the tendency to view the past as more moral than the present, compared to the contemporary-model control. This Time Machine Experiment paradigm informs new forms of interactive experiments, where temporal knowledge boundaries become experimental variables, and expands the realm of science fiction science, which turns thought experiments into actual experiments.",
+    "status": "found"
+  },
+  "2609.15469": {
+    "arxiv_id": "2609.15469",
+    "title": "Automatic control of gold nanoparticle clustering in plasmonic nanopores based on Raman spectroscopic feedback",
+    "authors": [
+      "Iuliia Sheinman",
+      "Yingqi Zhao",
+      "Zhendai Huang",
+      "Kuo Zhan",
+      "Zuyan Chen",
+      "Ilkka Nissinen",
+      "Shuai Li",
+      "Jianan Huang"
+    ],
+    "submission_date": "2026-09-14T12:28:27Z",
+    "latest_updated": "2026-09-14T12:28:27Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.15469v1"
+    ],
+    "abstract": "Plasmonic nanopores have been used to trap single nanoparticles using electric bias for single-molecule surface enhanced Raman spectroscopic (SM-SERS) detection and sequencing. While they exhibit high sensitivity, removal of nanoparticle clusters in the nanopore is so labor intensive that it hampers biosensing applications. Here, our approach is to use a microcontroller to change the electric voltage to remove the nanoparticle clusters in the nanopore with feedback by the Raman spectra. The SM-SERS spectra of the molecules adsorbed on nanoparticle surface can be acquired over a sufficiently long period, so that the microcontroller can analyze them with <100 ms and trigger the voltage change to remove the nanoparticle cluster. Our system is promising for automatic and high-throughput SM-SERS detection and analysis of DNA and proteins.",
+    "status": "found"
+  },
+  "2609.15470": {
+    "arxiv_id": "2609.15470",
+    "title": "Memory-induced blow-up solutions and their dynamical transitions in distributed delay differential equations",
+    "authors": [
+      "Yu Ichida"
+    ],
+    "submission_date": "2026-09-14T12:28:56Z",
+    "latest_updated": "2026-09-14T12:28:56Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.15470v1"
+    ],
+    "abstract": "In this paper, we investigate finite-time blow-up solutions for distributed delay differential equations incorporating memory effects with a specific gamma distribution kernel. Focusing on typical nonlinear terms that cause finite-time singularities in ordinary differential equations (ODEs), we examine how memory effects change the existence, rate, and qualitative properties of blow-up. By comparing these behaviors with those of the corresponding non-delayed and memory-free ODEs, we show that time delay originating from memory not only essentially induces finite-time blow-up (``memory-induced blow-up''), but also drastically alters the blow-up profile, such as accelerating algebraic blow-up rates or driving a qualitative transition from ODE quenching to logarithmic blow-up. Furthermore, by incorporating a self-inhibitory term, we reveal a threshold phenomenon in the phase space that governs the occurrence and non-occurrence of blow-up depending on the initial conditions and parameters. These results are established by reducing the system to a two-dimensional ODE via the linear chain trick, and analyzing the dynamics at infinity using Poincaré-type compactification, blow-up techniques, and the center manifold theorem.",
+    "status": "found"
+  },
+  "2609.15471": {
+    "arxiv_id": "2609.15471",
+    "title": "HISPO: Hierarchical Importance-Sampling Policy Optimization with Entropy-Derived Segments",
+    "authors": [
+      "Quoc-Vinh Lai-Dang",
+      "Hyo-Sang Shin"
+    ],
+    "submission_date": "2026-09-14T12:29:00Z",
+    "latest_updated": "2026-09-14T12:29:00Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.15471v1"
+    ],
+    "abstract": "Reinforcement learning with verifiable rewards (RLVR) has become a central approach for improving mathematical reasoning in language models, but long-form completions introduce a difficult credit-assignment problem: different parts of a solution trace may contribute unevenly to final correctness. Existing policyoptimization objectives for RLVR commonly apply importance-sampling correction at either the token level (GRPO, DAPO) or the sequence level (GSPO), imposing different granularities for assigning credit across a response. We introduce Hierarchical Importance-Sampling Policy Optimization (HISPO), a segment-level policy-optimization method that constructs rollout-time entropy-derived contiguous segments, assigns soft entropy-based saliency weights, and applies clipped importance-sampling correction at the segment granularity. This provides an intermediate correction unit between token-level GRPO/DAPO and sequence-level GSPO. We evaluate HISPO by fine-tuning Qwen3-1.7B-Base on mathematical reasoning tasks. Across six benchmarks, HISPO improves Pass@8 over the strongest baseline on all benchmarks and matches or exceeds the strongest baseline in Acc@8 on five of them. On AIME25, HISPO improves over GRPO by +3.75 Acc@8 and +3.78 Pass@8, and over GSPO by +2.50 Acc@8 and +1.27 Pass@8. These results suggest that segment-level correction is a promising granularity for RLVR in long-form mathematical reasoning.",
+    "status": "found"
+  },
+  "2609.15472": {
+    "arxiv_id": "2609.15472",
+    "title": "Spook the Machine: Gamified Exploration of Human Imagination of Machine Fear",
+    "authors": [
+      "Levin Brinkmann",
+      "Hiromu Yakura",
+      "Sonia Nicoletti",
+      "Mar Canet Sola",
+      "Thomas F. Eisenmann",
+      "Ali Dasmeh",
+      "Omar Sherif",
+      "Bramantyo Ibrahim Supriyatno",
+      "Prateek Gupta",
+      "Ignacio Serna",
+      "Rodrigo Bermudez Schettino",
+      "Iyad Rahwan"
+    ],
+    "submission_date": "2026-09-14T12:29:05Z",
+    "latest_updated": "2026-09-14T12:29:05Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.15472v1"
+    ],
+    "abstract": "What happens when AI machines express fear? Do humans engage differently depending on how they express it? And what does it take to design for affective human-AI interaction? We present Spook the Machine, a gamified platform where participants generate images to frighten AI agents endowed with personality-driven phobias. Machines respond with emotional reactions ranging from calm analysis to begging for mercy, and a gallery of successful scares becomes visible to subsequent users. In a public deployment during Halloween 2024, 832 participants created 15,719 artifacts across 89 machines in a $2\\times2$ design varying the machine's emotional expressiveness (neutral vs. high-emotion) and reward structure (rewarding scariness alone vs. scariness plus novelty). Emotionally expressive machines deepened engagement at moments of failure: users deliberated longer even when the machine did not express fear, and learned faster from the gallery, yet their creative output remained unchanged across all measures. Rewarding novelty sustained collective creative diversity over time; without it, users increasingly repeated what had previously worked. Each machine developed its own trajectory through accumulated social learning, with the gallery shaping what participants created next. These findings show that emotional expression and reward design are complementary levers for steering collective human-AI interaction: emotional expression shapes how deeply users engage, while reward structure shapes how they explore.",
+    "status": "found"
+  },
+  "2609.15473": {
+    "arxiv_id": "2609.15473",
+    "title": "The lower envelope of ultraspherical polynomials",
+    "authors": [
+      "K. Castillo",
+      "S. Sadigova"
+    ],
+    "submission_date": "2026-09-14T12:30:24Z",
+    "latest_updated": "2026-09-25T16:50:23Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2609.15473v1",
+      "2609.15473v2"
+    ],
+    "abstract": "Let $R_n^{(a,b)}=P_n^{(a,b)}/P_n^{(a,b)}(1)$ be the normalised Jacobi polynomials. For $α\\ge0$, put $ξ_0=-1$ and let $ξ_n$ be the largest zero of $R_n^{(α+1,α)}$ for $n\\ge1$. We prove that $$ R_k^{(α,α)}(x) =\\min_{n\\ge0}R_n^{(α,α)}(x), \\quad ξ_{k-1}\\le x\\leξ_k, $$ for every $k\\ge1$. This determines the pointwise lower envelope of the normalised ultraspherical polynomials and answers Question 2 posed by F. M. de Oliveira Filho in his 2009 thesis. For $α>0$ and $-1<x<1$, we also determine all minimising degrees. The sequence is non-increasing up to each such degree, which answers his Question 1 in this range. A Legendre example gives a negative answer when $α=0$.",
+    "status": "found"
+  }
+}

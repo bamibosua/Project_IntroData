@@ -1,0 +1,423 @@
+{
+  "2608.11227": {
+    "arxiv_id": "2608.11227",
+    "title": "Forecasting Side Effects of Activation Steering",
+    "authors": [
+      "Chong Yong Ong",
+      "Alson Wei Jie Sim",
+      "Peixin Zhang",
+      "Jun Sun"
+    ],
+    "submission_date": "2026-07-28T08:46:06Z",
+    "latest_updated": "2026-07-28T08:46:06Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11227v1"
+    ],
+    "abstract": "Activation steering modifies a language model by adding a learned direction to its hidden activations, enabling targeted behavioral changes without retraining. While effective, steering often produces unintended side effects on other behaviors, making it difficult to deploy safely. We therefore ask: can these side effects be forecasted before steering is applied? We answer this question by constructing a cross-effect matrix over a taxonomy of 67 behaviors across three open-weight language models. We find that side effects are common, structured, and often asymmetric, revealing interactions that cannot be explained by existing similarity-based heuristics. Despite this complexity, we show that side effects are largely predictable before steering is performed. Their magnitude depends primarily on the target behavior, while their direction can be forecasted from the model's unsteered representations with substantially higher accuracy than simple baselines. Our results demonstrate that activation steering has systematic and forecastable side effects, enabling proactive safety auditing and more informed deployment of steering interventions.",
+    "status": "found"
+  },
+  "2608.11228": {
+    "arxiv_id": "2608.11228",
+    "title": "Playing time tracks recent exposure in fifteen men's and women's football leagues: the denominator gradient and what it does to per-minute injury rates",
+    "authors": [
+      "Gustavo Pedro Ricou",
+      "Nicholas Mahony"
+    ],
+    "submission_date": "2026-07-29T17:27:14Z",
+    "latest_updated": "2026-08-22T14:08:04Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2608.11228v1",
+      "2608.11228v2",
+      "2608.11228v3"
+    ],
+    "abstract": "Football injury incidence is conventionally reported per 1000 hours of exposure, dividing counts by recorded playing time. Where recorded minutes track the workload under study, that division removes part of the association it should scale. We aimed to quantify the two defects contaminating a recorded-minute denominator, outcome truncation and exposure-dependent playing time, and to measure the denominator gradient across leagues and sexes. Retrospective observational cohort study of 88,573 appearances by 1208 male English Premier League players, 2017-2025, with replication from appearance records alone in 628,487 men's and 29,799 women's appearances across 15 European leagues. Changing only the offset moved the seven-day estimate from a rate ratio of 1.27 (95% CI 1.11 to 1.44) to 1.09 (0.95 to 1.25), an attenuation of 0.151 (0.140 to 0.163) that divided away 14.0% of the rate ratio; the outcome truncated recorded minutes but explained none of it (-0.095%, resampled interval -0.41 to 0.20). Independent sources confirmed attribution in 24 of 27 resolved records (88.9%, 71.9 to 96.1). The gradient exceeded the negligible threshold of 0.05 in all 15 leagues: 0.431 to 0.655 in men's competitions, 0.444 to 0.647 in women's. Restricting to starters returned it below that threshold in eight of eight men's leagues but five of seven women's, the bound reaching 0.058 in Sweden. Recorded minutes are not a neutral denominator, and the gradient should be reported before any per-minute rate. These are measurements from public records, not a tested hypothesis, and the remedy is league-specific: run the check locally.",
+    "status": "found"
+  },
+  "2608.11229": {
+    "arxiv_id": "2608.11229",
+    "title": "Synchronizing Beliefs with Second-Order Theory-of-Mind in Human-Autonomy Teams (Extended Version)",
+    "authors": [
+      "Jack Mirenzi",
+      "Henny Admoni"
+    ],
+    "submission_date": "2026-07-29T18:44:01Z",
+    "latest_updated": "2026-07-29T18:44:01Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11229v1"
+    ],
+    "abstract": "Comparative feedback, asking people which of two behaviors they prefer, has become a standard way to align robot and agent behavior with human intent when the reward itself cannot be specified directly. Preference-based reward learning typically casts the human teacher as a passive oracle answering learner-generated queries. We argue this forfeits the teacher's defining advantage: knowledge of the objective. A teacher who knows the target can construct training examples more efficiently than any learner-driven acquisition strategy, an advantage that widens as the reward's feature dimension grows. However, exploiting this advantage requires an accurate model of what the learner currently knows. We therefore recast preference learning as a human-autonomy team problem coupling two behavioral models: the teacher maintains a model of the learner to design an informative curriculum, and the learner maintains a second-order model of the teacher's model, emitting structured preference constraints (understanding statements) that keep the teacher's model of the learner synchronized. In simulation, an informed teacher outperforms learner-led selection; teacher-model drift under alternating teachers erodes this advantage; and understanding statements repair it, with second-order (ToM-2) statements outperforming mean-belief statements when the teacher's error about the learner is concentrated in a particular direction rather than spread evenly.",
+    "status": "found"
+  },
+  "2608.11230": {
+    "arxiv_id": "2608.11230",
+    "title": "The edge-based contiguous p-median problem: exact formulations and strengthening inequalities",
+    "authors": [
+      "Zeyad Kassem",
+      "Behnam Jabbari-Marand",
+      "Adolfo R. Escobedo"
+    ],
+    "submission_date": "2026-07-30T03:49:03Z",
+    "latest_updated": "2026-10-17T18:21:25Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.11230v1",
+      "2608.11230v2"
+    ],
+    "abstract": "This paper introduces the edge-based contiguous p-median (ECpM) problem, which partitions the roads in a network into a given number of compact and contiguous territories. We develop two binary programming formulations that minimize the total network distance from each road to its assigned center node. The first uses an exponential number of cut-set contiguity (CSC) constraints and is solved with a branch-and-cut (B&C) algorithm that checks incumbent solutions for contiguity and adds violated CSC constraints as needed. The second is a compact formulation that imposes a stronger form of contiguity through shortest-path contiguity (SPC) constraints. These constraints are added up front, and the formulation is solved directly with an off-the-shelf solver. Despite this stronger requirement, we show that SPC-based ECpM has the same optimal objective value as ECpM with general contiguity and even the relaxed edge-based p-median (EpM). As a result, the SPC constraints preserve at least one optimal EpM solution and can therefore strengthen the EpM formulation. We also establish three structural properties of ECpM solutions and use them to derive three families of inequalities that further strengthen these formulations. Computational experiments on 84 instances from 14 real-world road networks show that adding the SPC constraints to EpM enables all instances to be solved to optimality and reduces solution times. In contrast, EpM without these constraints and CSC-based ECpM reach the time limit on six and eight instances, respectively. The proposed inequalities reduce both counts to one and further reduce solution times.",
+    "status": "found"
+  },
+  "2608.11231": {
+    "arxiv_id": "2608.11231",
+    "title": "LinearKV: One Cached State Suffices for Position-Independent Caching in Hybrid LLMs",
+    "authors": [
+      "Yirui Liu",
+      "Ruoling Qi",
+      "Longwen Wang",
+      "Xuaner Wu",
+      "Jian Chen",
+      "Yuxin Jin",
+      "Jiawei Shao",
+      "Xuelong Li"
+    ],
+    "submission_date": "2026-07-31T02:10:44Z",
+    "latest_updated": "2026-07-31T02:10:44Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11231v1"
+    ],
+    "abstract": "LLM serving is increasingly accelerated by position-independent caching (PIC). Existing PIC methods, however, are built for full-attention models, where a token-indexed KV cache underlies its core operations: matching reusable token chunks, concatenating their KV entries, and selectively recomputing a few tokens to restore cross-chunk context. Hybrid LLMs break these primitives---they replace most attention layers with linear recurrences that expose only a fixed-size state, leaving no token-indexed KV to concatenate or to locally repair. This raises a natural question: can PIC benefit hybrid models, and what would it take? We present LinearKV, a training-free hybrid-PIC framework. Its key insight is a \\emph{decoupled initialization}: each linear layer maps its $K$ matched local states to a single initial state, while full-attention layers concatenate their KV as before. LinearKV is therefore compatible with existing PIC methods, reusing their token selection and recomputation as-is. Under this framework, we find that a \\emph{single cached state} suffices as the linear layer's initializer. The algebraically principled alternative---composing all $K$ cached states into the exact full-prefix state, as concurrent work HYPIC does---is unnecessary and, on some architectures, even harmful. We compare the two across three hybrid models and three PIC selectors. On the two GDN models the two tie, both recovering most of full quality (up to $92\\%$); on the Mamba-2 model, exact composition instead collapses under every selector---under EPIC, for instance, it recovers only $46.6\\%$ of full quality, versus $86.8\\%$ for a single cached block initializer. A single state initializer is also cheaper, cutting time-to-first-token to $0.46\\times$ full prefill versus a further $5$--$17\\%$ overhead for exact composition; results hold across LongBench QA and RULER at 8K--32K.",
+    "status": "found"
+  },
+  "2608.11232": {
+    "arxiv_id": "2608.11232",
+    "title": "Backtrader-Bench: Benchmarking LLM Agents on Algorithmic Trading with Self-Generated MCQs",
+    "authors": [
+      "Ruoxi Zhao",
+      "Maziar Raissi"
+    ],
+    "submission_date": "2026-07-31T02:37:57Z",
+    "latest_updated": "2026-07-31T02:37:57Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11232v1"
+    ],
+    "abstract": "Evaluating LLM coding agents in algorithmic trading is difficult because static benchmarks risk data contamination and numerical backtest outputs require ground truth from actual code execution. We present Backtrader-Bench, a framework with two complementary pipelines. A deterministic multiple-choice question (MCQ) pipeline generates questions from backtest configurations across five trading strategies, 33 templates, and three difficulty tiers, with an independent checker that re-derives every answer. A generator-solver filtering pipeline autonomously mines harder questions: a generator writes questions verified by executable code, converts them to MCQs, and discards any that a no-tool solver can answer without code execution. We evaluate 11 models without tools (10 runs each) and four with-tools configurations on a 30-question curated set. Tool-augmented agents reach 90.0% accuracy in a single pass (GPT-5.5 and Opus 4.7), outperforming the best no-tools baselines (73.0%, averaged over 10 runs) by 17 percentage points. On 38 separately mined questions, no-tools accuracy drops further, with half the models falling to roughly random-chance level (25%). Beyond evaluation, the scalable MCQ infrastructure is designed to produce a training corpus for reinforcement learning, with the ultimate goal of building a specialized agent for quantitative trading workflows.",
+    "status": "found"
+  },
+  "2608.11233": {
+    "arxiv_id": "2608.11233",
+    "title": "Retrofitting Recurrent Depth into a Pretrained Language Model: Installation, Extrapolation, Transfer, and Retention at Two Parameter Budgets",
+    "authors": [
+      "Mark Shapiro"
+    ],
+    "submission_date": "2026-07-31T03:02:09Z",
+    "latest_updated": "2026-07-31T03:02:09Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11233v1"
+    ],
+    "abstract": "A dense, pretrained language model can be retrofitted with recurrent depth and learn an iterative latent transition that persists after outcome-only annealing. Qwen2.5-0.5B-Instruct is split into a Prelude, a weight-tied Recurrent Block, and a Coda, with an identity-preserving one-loop path and a re-entry bridge on later loops. At loop 1 the retrofit remains non-inferior to its base on a preregistered ARC battery. Three findings. First, the mechanism is a reusable procedure rather than terminal-answer lookup, and installs at two budgets: 6M trained parameters over frozen base weights and 180M full-block. With intermediate-step supervision, the model computes one task step per loop and persists when only final answers are graded. The adapter matched the full block overall (83.8% versus 84.0%), led through depth 11, and trailed beyond. Verbal fine-tuning reached 79-86% on controlled verbal renderings (zero-shot transfer was minimal), and adapter verbal training begun from the installed mechanism outpaced matched fresh training by 18.6 points, including on a held-out test set. Second, the operation extrapolates to roughly 1.5 times its supervised depth, holding 70% accuracy through depth 18. Third, a same-size scratchpad-trained model matched the recurrent model within its learned horizon but collapsed beyond it. The recurrent model won overall, 84% versus 72%, retained 53% versus 2.5% beyond depth 10, and answered 7.6 times faster. An iterative transformer can therefore perform deeper reasoning in latent space faster than comparable or larger models fine-tuned on the same task, in a system-level comparison. A second task, running the rule in reverse, exposed the limits: the inverse was learnable in isolation, but no continuation acquired it while preserving the installed mechanism and general capability, a catastrophic-interference boundary. Learned depth selection remains open.",
+    "status": "found"
+  },
+  "2608.11234": {
+    "arxiv_id": "2608.11234",
+    "title": "InfraBench: Evaluating Infrastructure Agents Across Layers, Lifecycle, and Risk",
+    "authors": [
+      "Yuan Gao",
+      "Zeren Yang",
+      "Junnan Li",
+      "Shawn",
+      "Zhong",
+      "Ahmed Dajani",
+      "Mai Zheng",
+      "Andrea Arpaci-Dusseau",
+      "Remzi Arpaci-Dusseau"
+    ],
+    "submission_date": "2026-07-31T03:53:11Z",
+    "latest_updated": "2026-10-18T10:47:24Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 4,
+    "versions": [
+      "2608.11234v1",
+      "2608.11234v2",
+      "2608.11234v3",
+      "2608.11234v4"
+    ],
+    "abstract": "Managing modern computing infrastructure has become a steadily harder problem due to the ever-increasing complexity. Recent advances in AI agents create a timely opportunity to automate infrastructure management tasks, but it remains unclear how well such agents can handle real-world infrastructure complexity. We present InfraBench, a benchmark for infrastructure agents organized around system layers, the operational lifecycle, and risk. The current prototype couples container, VM, and bare-metal backends with task-specific verifiers that distinguish functional repair from durability and cleanup, and analyzes retained action-trace findings for unsafe shortcuts. We evaluate 18 agent-model configurations on 12 seed tasks, with three attempts per task. Mean effective scores range from 45.5% to 89.2%; the strongest configuration completes 77.8% of attempts perfectly. In the available lifecycle checks, pass rates fall from 91.5% for functional repair to 80.9% for durability and 38.9% for cleanup. These results show why immediate recovery is an incomplete measure of operational capability. We use this evidence to motivate a planned expansion toward 40-60 tasks centered on managed cloud infrastructure and redesign after incidents, including provider-native Kubernetes networking. This extension is a research direction; the reported results remain those of the 12-task prototype. InfraBench, its tasks, evaluation harness, and live leaderboard are available at infraben.ch.",
+    "status": "found"
+  },
+  "2608.11235": {
+    "arxiv_id": "2608.11235",
+    "title": "CORA-Diff: Confidence-Oriented Residual Acceptance for Efficient Diffusion Language Model Inference",
+    "authors": [
+      "Yifan Wu",
+      "Yufeng Zhang",
+      "Kenli Li"
+    ],
+    "submission_date": "2026-07-31T07:32:10Z",
+    "latest_updated": "2026-07-31T07:32:10Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11235v1"
+    ],
+    "abstract": "Diffusion language models (DLMs) update many tokens in parallel, yet practical decoders often use a fixed denoising horizon. Many predictions stabilize early, but blockwise decoding continues until all positions are resolved, causing repeated dense forward passes. Existing accelerators often rely on learned filters, modified scores, dependency models, or cache-specific mechanisms. We ask whether native trajectory signals can identify residual positions likely to match the deterministic dense endpoint. We propose CORA-Diff, a training-free method that preserves the original transfer rule and applies confidence-and-persistence gating only to positions that rule leaves unresolved. Accepted tokens remain visible as context, and the block terminates once all positions are resolved. This requires no backbone change, learned acceptance model, or logit modification. Our theory explains why high-confidence, persistent predictions are more likely to match the fixed-horizon dense endpoint, and paired post-intervention trajectories provide direct empirical support. We select one operating point on a separate GSM8K calibration subset and freeze it for all evaluations. Under a matched Learn2PD-style LLaDA protocol, CORA-Diff has the lowest measured runtime in all eight task-length settings. Task scores match or exceed dense decoding in five settings, and the largest observed drop is 1.22 points. Its incremental speedups over EOS-aware dense decoding are 2.70x and 3.32x on GSM8K and HumanEval. It also reaches 13.14x under the fixed-horizon 1024/1024 mechanism-isolation protocol and transfers to Dream without retuning at 3.18x-3.53x. These results show that native confidence and persistence enable reliable residual acceptance, reducing repeated denoising computation while preserving task quality.",
+    "status": "found"
+  },
+  "2608.11236": {
+    "arxiv_id": "2608.11236",
+    "title": "TRACE Bench: Task-driven Roleplay Agentic Checklist Evaluation",
+    "authors": [
+      "Jiahui Zhang",
+      "Ziwei Zhang",
+      "Yipeng Wang",
+      "Yibo Liu",
+      "Haozhou Pang",
+      "Yikai Hu",
+      "Hongyan Ren",
+      "Lan Zhou",
+      "Qi Gan",
+      "Kai Sheng"
+    ],
+    "submission_date": "2026-07-31T07:35:59Z",
+    "latest_updated": "2026-07-31T07:35:59Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11236v1"
+    ],
+    "abstract": "Roleplay evaluation should do more than assign a single score: it should reveal which role requirements were tested, which failed, and which dialogue evidence supports the judgment. We propose TRACE Bench, a task-driven agentic checklist evaluation framework. It decomposes each role profile offline into a fixed checklist, then uses a User Agent to converse naturally with the target roleplay model while privately updating checklist states from model responses. Scores therefore trace back to checklist items and supporting dialogue turns rather than a black-box holistic impression. For coverage cross-validation, we audit released M2 free-dialogue transcripts from the MiniMax Role-play Benchmark against the same role-derived checklist. The released free-chat transcripts cover only 73.74% of key role-profile points, whereas TRACE Bench reaches 99.91% coverage in fewer turns. Robustness experiments show stable rankings under repeated runs and User Agent replacement. Across 26 models, TRACE Bench reports overall rankings together with capability breakdowns and checklist traces. It also supports Closed-Loop Benchmark Evolution, distilling verification methods proven effective in failed traces so later evaluations can more reliably elicit and examine observed failure modes.",
+    "status": "found"
+  },
+  "2608.11237": {
+    "arxiv_id": "2608.11237",
+    "title": "Geometry-aware Incremental Neural Operator for Long-Horizon PDE prediction",
+    "authors": [
+      "Jiaquan Zhang",
+      "Shuxu Chen",
+      "Haifan Meng",
+      "Yi Lu",
+      "Zhihan Lyu",
+      "Fan Mo",
+      "Wei Dong",
+      "Yang Yang",
+      "Chaoning Zhang"
+    ],
+    "submission_date": "2026-07-31T07:46:35Z",
+    "latest_updated": "2026-07-31T07:46:35Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11237v1"
+    ],
+    "abstract": "Neural operators have shown strong potential for learning solution operators of partial differential equations (PDEs). However, long-horizon autoregressive prediction remains challenging: local errors accumulate as spectral inconsistency, phase misalignment, or mean drift. Existing methods mainly improve state representations and operator backbones, while leaving the repeatedly applied latent transition increment weakly structured, allowing spectral errors and unstable channel couplings to accumulate during rollout. To address these issues, we propose a geometry-aware incremental neural operator (GeoIncNO) for stable long-horizon PDE prediction. GeoIncNO predicts latent increments for residual advancement and uses lightweight low-rank projectors to regulate channel coupling within active frequency bands derived from the increment spectral energy distribution. To reduce physical-space reconstruction errors, GeoIncNO further introduces a mean--fluctuation decoupled reconstruction mechanism, where stable mean structures and dynamic fluctuations are fused separately, and phase correction is applied only to the zero-mean fluctuation component. Extensive experiments on six PDE benchmarks, covering 1D, 2D, and 3D dynamical systems, show that GeoIncNO achieves consistently strong prediction accuracy, improved rollout stability, and better spectral fidelity compared with competitive neural-operator baselines.",
+    "status": "found"
+  },
+  "2608.11238": {
+    "arxiv_id": "2608.11238",
+    "title": "Towards Query-Agnostic RAG Evaluation via Query Coverage and Claim Verifiability",
+    "authors": [
+      "Jeonghwan Choi",
+      "Taewon Yun",
+      "Minjeong Ban",
+      "Gyeonghun Sun",
+      "Jae-Gil Lee",
+      "Hwanjun Song"
+    ],
+    "submission_date": "2026-07-31T09:21:43Z",
+    "latest_updated": "2026-08-31T04:55:22Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2608.11238v1",
+      "2608.11238v2",
+      "2608.11238v3"
+    ],
+    "abstract": "Retrieval-augmented generation improves the factuality of large language models by grounding responses in retrieved evidence, yet existing evaluation frameworks struggle to provide consistent, fine-grained diagnostics across the diverse spectrum of user queries, ranging from close-ended fact-seeking to open-ended explanatory requests. We propose Q-CARE, a query-agnostic and fully reference-free framework that enables fine-grained assessment by decomposing queries into sub-queries and answers into atomic claims. Q-CARE establishes a unified evaluation principle based on query coverage and claim verifiability, yielding coverage-aware retriever metrics (C-Prec@k, C-nDCG@k) and claim-level generator metrics (Completeness, Conciseness, and Verifiableness). On a human-annotated benchmark spanning eight datasets, Q-CARE achieves higher correlation with human judgments than four existing RAG evaluation metrics, including RAGEval and RAGChecker, proving its effectiveness as a reliable, automated evaluation framework. Code and data are publicly available at https://github.com/DISL-Lab/Q-CaRE-COLM-26.",
+    "status": "found"
+  },
+  "2608.11239": {
+    "arxiv_id": "2608.11239",
+    "title": "Reinforcement Learning based DBMS Buffer Pool Auto-Tuning for Optimal Memory Utilization",
+    "authors": [
+      "Yifan Wang",
+      "Patrick Royer",
+      "Raphaël Féraud",
+      "David Delande"
+    ],
+    "submission_date": "2026-07-31T09:40:32Z",
+    "latest_updated": "2026-07-31T09:40:32Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11239v1"
+    ],
+    "abstract": "Administering Database Management Systems (DBMS) instances requires Database Administrators (DBA) to balance performance in terms of Service Level Agreement (SLA) against resource usage, often prompting RAM over-allocation that wastes memory. We introduce MicroTune, an online RL-based buffer adjustment system that minimizes unnecessary memory allocation while ensuring SLA compliance. To identify the most effective RL core, we evaluate multiple algorithms under diverse benchmark workloads, training MicroTune on extensive traces of both external metrics (latency, throughput) and internal DBMS metrics (status variables and performance statistics). Experimental results demonstrate that MicroTune dynamically adapts buffer sizes to workload fluctuations, outperforming baselines by achieving significant memory savings with fewer SLA violations. These findings underscore the promise of reinforcement learning for adaptive resource management in DBMS environments.",
+    "status": "found"
+  },
+  "2608.11240": {
+    "arxiv_id": "2608.11240",
+    "title": "VQ-bench: A Composable Vector Quantization Framework",
+    "authors": [
+      "Ashwin Padaki",
+      "Amir Ingber",
+      "Edo Liberty"
+    ],
+    "submission_date": "2026-07-31T15:24:12Z",
+    "latest_updated": "2026-07-31T15:24:12Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11240v1"
+    ],
+    "abstract": "Vector quantization is an old problem but has recently become central to AI infrastructure. It is therefore experiencing a surge of renewed engineering and research activity. This paper provides a unified framework for developing and benchmarking new quantization algorithms. We describe 7 common conceptual quantization primitives and show how to compose them arbitrarily. We then re-express 25 common quantizers as pipelines of these primitives. Finally, we publish VQ-bench as open-source to be extended further and make reproducible benchmarks publicly available.",
+    "status": "found"
+  },
+  "2608.11241": {
+    "arxiv_id": "2608.11241",
+    "title": "RecSys Factory: Bounding LLM Agent Autonomy to Decision Points in the Industrial Recommender Lifecycle",
+    "authors": [
+      "Dongyang Ao",
+      "Kaixiang Fang",
+      "Shijie Xu"
+    ],
+    "submission_date": "2026-07-31T15:42:45Z",
+    "latest_updated": "2026-07-31T15:42:45Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11241v1"
+    ],
+    "abstract": "Deploying LLM agents into industrial recommender operations exposes a three-way tension we frame as the autonomy-determinism-efficiency trilemma: general autonomy (interpreting operator intent, generating glue code zero-shot), industrial determinism (schema-conforming feature extraction, non-crashing A/B, zero compliance-path hallucination), and end-to-end efficiency. Any two can be maximized against the third. We present RecSys Factory, an LLM-agent platform deployed for 78 days across three heterogeneous Tencent recommender business lines. The design principle is autonomy at decision points, not over pipelines, made concrete through three deconstructions that each discharge one vertex of the trilemma. Runtime is deconstructed into three host-emitted event sources (Claude Code Stop hooks, corporate-IM webhooks, workflow scheduler APIs): the platform carries no long-running daemon during the wait phase and consumes zero CPU during the 94% of wall-clock spent waiting on Spark or GPU jobs. Capability is deconstructed into a 29-file skill ecosystem (8,971 lines of SKILL.md) whose per-skill pitfall tables mechanically compile into a 400-entry PitfallStore, confining autonomy to bounded typed decision surfaces inside pre-committed pipelines. Deployment spans three business lines with disjoint label semantics, A/B layer topologies, and operator personas; an onboarding-time compression is observed on two of the three and is reported as a case-study observation, not a generalization claim, and not measured against a controlled pre-platform baseline. The human is retained at the diagnostic-versus-execution boundary via a human-in-the-loop card protocol, deployed as an audit-trail primitive (schema-validated, idempotent, replayable) and reported from an 8-day 16-run pilot. Across the 78-day window the platform recorded 1,624 CLI-tool dispatches at a 78.6% aggregate success rate.",
+    "status": "found"
+  },
+  "2608.11242": {
+    "arxiv_id": "2608.11242",
+    "title": "Lost in Context Compaction: When LLM Systems Drop Side Constraints",
+    "authors": [
+      "Zhiqi Wang",
+      "Yichi Zhang",
+      "Dongwon Lee",
+      "Nathalie Baracaldo",
+      "Yuchen Yang"
+    ],
+    "submission_date": "2026-07-31T16:04:00Z",
+    "latest_updated": "2026-10-11T01:17:51Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.11242v1",
+      "2608.11242v2"
+    ],
+    "abstract": "When the context window is under pressure, LLM systems compact prior context to continue ongoing tasks. We study Side Constraints (SCs), user-issued instructions such as \"do not delete any emails until I confirm,\" that constrain an LLM's behavior across subsequent turns but can be silently dropped during compaction. In an inbox experiment, an agent deleted emails without approval in 30/100 sessions after compaction, compared with none before compaction. To systematically evaluate SC preservation, we introduce CONPACT, an evaluation suite measuring semantic retention and downstream compliance across three scenarios: multi-turn chat, multi-turn tool use, and long-horizon research. The evaluated compactors retain only 17% of injected SCs on average. Loss occurs across compactors and settings, with retention varying by compactor, context length, SC framing, and injection location. We propose an SC extractor that maintains constraints separately from the task summary and appends them to the compacted context, achieving over 90% retention across all three scenarios without modifying the compactor or LLM. Code and data are available at https://github.com/ZhiqiEliWang/compaction-integrity.",
+    "status": "found"
+  },
+  "2608.11243": {
+    "arxiv_id": "2608.11243",
+    "title": "The Off-Support Barrier: Why Semantic Safety Constraints Are Not Learning-Problem Invariants, and What Follows for Prior Design, Containment, and Verification",
+    "authors": [
+      "Yoshinori Watanabe"
+    ],
+    "submission_date": "2026-08-01T11:18:44Z",
+    "latest_updated": "2026-08-01T11:18:44Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11243v1"
+    ],
+    "abstract": "We argue that a single structural fact organizes a wide range of phenomena in contemporary AI safety: a semantic safety constraint (e.g., the agent does not escape its sandbox) is an off-support object. Formally, if q is the data distribution and \\(p(\\cdot\\mid w)\\) the model, the safety predicate B is not measurable with respect to \\(σ(\\text{model}, q)\\), whereas the real log-canonical threshold (RLCT) of singular learning theory (SLT) is. From this non-invariance we derive, as corollaries rather than independent observations: (i) why reward hacking and sandbox escape arise under outcome-based optimization; (ii) why encoding such constraints through Bayesian prior design or soft penalty weighting has poor leverage in singular models; (iii) why hard invariants belong in the harness and soft dispositions in the model; (iv) why the same B is nonetheless soundly and locally certifiable by formal verification, exactly as the local learning coefficient (LLC) locally pins the same RLCT --- with two precise points of disanalogy; and (v) why the residual difficulty, identifying which off-support region matters, coincides with performative prediction and self-referential functional dynamics, where SLT's analytic machinery breaks down. We use the July 2026 OpenAI--Hugging Face evaluation incident as the motivating case. Numerical experiments code and related proofs in lean are available at https://github.com/xiangze/Preventing_Jailbreak_as_regularization",
+    "status": "found"
+  },
+  "2608.11244": {
+    "arxiv_id": "2608.11244",
+    "title": "BEST-KAG: Enhancing Question Answering of Building Engineering Standards with Multimodal Knowledge Graph Modeling and Large Language Model",
+    "authors": [
+      "Jia-Rui Lin",
+      "Junxi Guo",
+      "Keyin Chen",
+      "Peng Pan"
+    ],
+    "submission_date": "2026-08-02T10:27:15Z",
+    "latest_updated": "2026-08-02T10:27:15Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11244v1"
+    ],
+    "abstract": "Construction standards are critical for building safety and sustainability. Existing standard application workflows rely on keyword-based document retrieval and manual cross-clause interpretation, which cannot reliably support multi-clause reasoning, multimodal knowledge utilization, or traceable clause-level evidence linkage. To address these limitations, this study develops a multimodal knowledge-driven framework that supports question answering on standard knowledge named BEST-KAG (Knowledge-Augmented Generation for Building Engineering STandards). The framework introduces 1) a multimodal knowledge graph (MKG) for unified representation of document hierarchy and heterogeneous standard knowledge with various connections, 2) a rule-LLM hybrid knowledge construction pipeline for scalable multimodal knowledge extraction, creating a large MAG with 251 building engineering standards, 171,652 nodes and 310,914 edges, and 3) a graph-retrieval-based knowledge-augmented generation architecture for clause-grounded and traceable question answering. Experiments demonstrate that BEST-KAG consistently outperforms multiple mainstream LLMs in terms of Expert evaluation, and metrics including BLEU, and ROUGE, with the best improvement up to 74.01% compared to the baselines.",
+    "status": "found"
+  },
+  "2608.11245": {
+    "arxiv_id": "2608.11245",
+    "title": "Towards Sustainable Learning in Online Education: A Reinforcement Learning Approach",
+    "authors": [
+      "Chaofan Zhai",
+      "Yicheng Song",
+      "Ravi Bapna",
+      "Junyao Ye"
+    ],
+    "submission_date": "2026-08-02T19:25:26Z",
+    "latest_updated": "2026-08-02T19:25:26Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11245v1"
+    ],
+    "abstract": "Online education offers unprecedented scalability and accessibility to global learners from diverse backgrounds, but it often suffers from low engagement and poor long term learning effectiveness. To address these challenges, we introduce AI Tutor, a reinforcement learning based model designed to promote sustainable learning by optimizing both short and longterm learning outcomes. In the short term, AI-Tutor draws on cognitive theory to guide learners through a balance of acquiring new knowledge and reinforcing prior learning. In the long term, it models learner engagement to inform strategies that sustain motivation and reduce dropout. These enhancements enable AI-Tutor to provide personalized guidance that fosters both effective learning and sustained participation. Empirical evaluations on 23 million learning records from 33,700 learners show that AI Tutor consistently outperforms state-of-the-art baselines across engagement, knowledge retention, and final learning outcomes. Learning path analyses further reveal how AI-Tutor adapts its strategies to learners with diverse profiles, offering adaptive and human-centered support.",
+    "status": "found"
+  },
+  "2608.11246": {
+    "arxiv_id": "2608.11246",
+    "title": "Towards the Harness of Embodied Agents",
+    "authors": [
+      "Qi Wang",
+      "Tianyi Wang",
+      "Chengyang Li",
+      "Shikun Ban",
+      "Yurun Chen",
+      "Yizhong Ge",
+      "Jason Qin",
+      "Chengtai Li",
+      "Wentao Zhu"
+    ],
+    "submission_date": "2026-08-03T09:19:38Z",
+    "latest_updated": "2026-08-03T09:19:38Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11246v1"
+    ],
+    "abstract": "The success of coding agents has established the harness as a paradigm: what an agent achieves depends not on the model alone, but on the infrastructure around it. We ask whether the same paradigm extends to embodied agents in the physical world. We present Thea, a harness in which an agentic loop orchestrates robot capabilities, each wrapped as a callable tool. It inherits the core components of coding agents, modified as the physical world requires. The world, however, withholds two abilities that software grants for free: reading the state of the world, and judging the outcome of an action. To bridge these gaps, Thea introduces Scene Graph as Context, a persistent, symbolic representation of the world, and Evaluation as Exit Codes, which detects when an action should terminate, judges whether it succeeded, and on failure diagnoses the cause. Together they close the loop between the agent and the physical world. Rich behaviors then emerge from the composition of tools, and the closed loop carries long-horizon tasks to completion in real environments.",
+    "status": "found"
+  }
+}

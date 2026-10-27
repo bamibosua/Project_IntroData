@@ -1,0 +1,435 @@
+{
+  "2601.22136": {
+    "arxiv_id": "2601.22136",
+    "title": "StepShield: When, Not Whether to Intervene on Rogue Agents",
+    "authors": [
+      "Gloria Felicia",
+      "Zitha Sasindran",
+      "Jinfeng He",
+      "Michael Eniolade",
+      "Hemant Kumar",
+      "Milan Hussain Angati"
+    ],
+    "submission_date": "2026-01-29T18:55:46Z",
+    "latest_updated": "2026-07-07T06:58:47Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.22136v1",
+      "2601.22136v2"
+    ],
+    "abstract": "Agent safety benchmarks measure whether a monitor detects harm, not when. Yet timing is the difference between intervention and autopsy. We introduce StepShield, the first benchmark that treats detection timeliness as a first-class metric. On 9,429 incident-grounded code-agent trajectories, we define the Early Intervention Rate (EIR): the fraction of detected rogue trajectories where the alert fires within a k-step window after the divergence point, isolating timing quality from coverage. This metric exposes what we call the Forensics Trap: a pattern-based guardrail with 847 rules achieves 86% recall yet is statistically indistinguishable from random timing on EIR (0.23 vs. 0.24; p = 0.66, one-sided binomial; difference within CI), because over three-quarters of its alerts trigger on benign prefix code before any violation occurs. The 4x EIR gap between rule-based and semantic detectors is completely invisible to accuracy, recall, or F1. Our finding is structural: regex guardrails detect syntax, not intent, and therefore cannot distinguish the moment an agent turns rogue, rendering the entire deployed class of pattern-based monitors unsuited for real-time oversight. No existing method simultaneously achieves high recall, low false-positive rate, and timely intervention, establishing step-level rogue detection as genuinely unsolved.",
+    "status": "found"
+  },
+  "2601.22137": {
+    "arxiv_id": "2601.22137",
+    "title": "PRISM: Distribution-free Adaptive Computation of Matrix Functions for Accelerating Neural Network Training",
+    "authors": [
+      "Shenghao Yang",
+      "Zhichao Wang",
+      "Oleg Balabanov",
+      "N. Benjamin Erichson",
+      "Michael W. Mahoney"
+    ],
+    "submission_date": "2026-01-29T18:55:46Z",
+    "latest_updated": "2026-01-29T18:55:46Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22137v1"
+    ],
+    "abstract": "Matrix functions such as square root, inverse roots, and orthogonalization play a central role in preconditioned gradient methods for neural network training. This has motivated the development of iterative algorithms that avoid explicit eigendecompositions and rely primarily on matrix multiplications, making them well suited for modern GPU accelerators. We present PRISM (Polynomial-fitting and Randomized Iterative Sketching for Matrix functions computation), a general framework for accelerating iterative algorithms for computing matrix functions. PRISM combines adaptive polynomial approximation with randomized sketching: at each iteration, it fits a polynomial surrogate to the current spectrum via a sketched least-squares problem, adapting to the instance at hand with minimal overhead. We apply PRISM to accelerate Newton-Schulz-like iterations for matrix square roots and orthogonalization, which are core primitives in machine learning. Unlike prior methods, PRISM requires no explicit spectral bounds or singular value estimates; and it adapts automatically to the evolving spectrum. Empirically, PRISM accelerates training when integrated into Shampoo and Muon optimizers.",
+    "status": "found"
+  },
+  "2601.22138": {
+    "arxiv_id": "2601.22138",
+    "title": "Optimal cross-correlation technique to search for strongly lensed gravitational waves",
+    "authors": [
+      "Anirban Kopty",
+      "Sanjit Mitra",
+      "Anupreeta More"
+    ],
+    "submission_date": "2026-01-29T18:55:54Z",
+    "latest_updated": "2026-01-29T18:55:54Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22138v1"
+    ],
+    "abstract": "As the number of detected gravitational wave (GW) events increases with the improved sensitivity of the observatories, detecting strongly lensed pairs of events is becoming a real possibility. Identifying such lensed pairs, however, remains challenging due to the computational cost and/or the reliance on prior knowledge of source parameters in existing methods. This study investigates a novel approach, Optimal Cross-Correlation Analysis for Multiplets (OCCAM), applied to strain data from one or more detectors for Compact Binary Coalescence (CBC) events identified by GW searches, using an optimal, mildly model-dependent, low computation cost approach to identify strongly lensed candidates. This technique efficiently narrows the search space, allowing for more sensitive, but (much) higher latency, algorithms to refine the results further. We demonstrate that our method performs significantly better than other computationally inexpensive methods. In particular, we achieve 97 percent (80 percent) lensed event detection at a pairwise false positive probability of approximately 13 percent (7 percent) for a single detector with LIGO design sensitivity, assuming an SNR greater than or equal to 10 astrophysically motivated lensed and unlensed populations. Thus, this method, using a network of detectors and in conjunction with sky-localisation information, can enormously reduce the false positive probability, making it highly viable to efficiently and quickly search for lensing pairs among thousands of events, including the sub-threshold candidates.",
+    "status": "found"
+  },
+  "2601.22139": {
+    "arxiv_id": "2601.22139",
+    "title": "Reasoning While Asking: Transforming Reasoning Large Language Models from Passive Solvers to Proactive Inquirers",
+    "authors": [
+      "Xin Chen",
+      "Feng Jiang",
+      "Yiqian Zhang",
+      "Hardy Chen",
+      "Shuo Yan",
+      "Wenya Xie",
+      "Min Yang",
+      "Shujian Huang"
+    ],
+    "submission_date": "2026-01-29T18:56:12Z",
+    "latest_updated": "2026-05-28T17:57:34Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.22139v1",
+      "2601.22139v2"
+    ],
+    "abstract": "Reasoning-oriented Large Language Models (LLMs) have achieved remarkable progress with Chain-of-Thought (CoT) prompting, yet they remain fundamentally limited by a \\emph{blind self-thinking} paradigm: performing extensive internal reasoning even when critical information is missing or ambiguous. We propose Proactive Interactive Reasoning (PIR), a new reasoning paradigm that transforms LLMs from passive solvers into proactive inquirers that interleave reasoning with clarification. Unlike existing search- or tool-based frameworks that primarily address knowledge uncertainty by querying external environments, PIR targets premise- and intent-level uncertainty through direct interaction with the user. PIR is implemented via two core components: (1) an uncertainty-aware supervised fine-tuning procedure that equips models with interactive reasoning capability, and (2) a user-simulator-based policy optimization framework driven by a composite reward that aligns model behavior with user intent. Extensive experiments on mathematical reasoning, code generation, and document editing demonstrate that PIR consistently outperforms strong baselines, achieving up to 32.70\\% higher accuracy, 22.90\\% higher pass rate, and 41.36 BLEU improvement, while reducing nearly half of the reasoning computation and unnecessary interaction turns. Further reliability evaluations on factual knowledge, question answering, and missing-premise scenarios confirm the strong generalization and robustness of PIR. Model and code are publicly available at: \\href{https://github.com/SUAT-AIRI/Proactive-Interactive-R1}",
+    "status": "found"
+  },
+  "2601.22140": {
+    "arxiv_id": "2601.22140",
+    "title": "Quantum fluctuations in hydrodynamics and quantum long-time tails",
+    "authors": [
+      "Akash Jain"
+    ],
+    "submission_date": "2026-01-29T18:56:22Z",
+    "latest_updated": "2026-01-29T18:56:22Z",
+    "revised_dates": null,
+    "venue": "SciPost Phys. 21, 083 (2026)",
+    "latest_version": 1,
+    "versions": [
+      "2601.22140v1"
+    ],
+    "abstract": "We construct a quantum Schwinger-Keldysh (SK) effective field theory for the diffusive hydrodynamics of a conserved scalar field. Quantum corrections within the SK framework are guided by fluctuation-dissipation relations, enforced via a dynamical Kubo-Martin-Schwinger (KMS) symmetry. We find that the KMS symmetry necessarily generates fluctuation contributions in the SK effective action at all orders in the noise field, thereby giving rise to intrinsically non-Gaussian noise. We use our results to compute one-loop quantum corrections to the two-point density-density retarded correlation function, leading to a quantum generalization of hydrodynamic long-time tails. Our results apply at arbitrarily high orders in $\\hbar$. The one-loop results for retarded correlation functions have been expressed in terms of a family of polynomials. We also provide a closed-form expression for the one-loop results at leading order in the wavevector expansion.",
+    "status": "found"
+  },
+  "2601.22141": {
+    "arxiv_id": "2601.22141",
+    "title": "Routing the Lottery: Adaptive Subnetworks for Heterogeneous Data",
+    "authors": [
+      "Grzegorz Stefanski",
+      "Alberto Presta",
+      "Michal Byra"
+    ],
+    "submission_date": "2026-01-29T18:56:41Z",
+    "latest_updated": "2026-01-29T18:56:41Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22141v1"
+    ],
+    "abstract": "In pruning, the Lottery Ticket Hypothesis posits that large networks contain sparse subnetworks, or winning tickets, that can be trained in isolation to match the performance of their dense counterparts. However, most existing approaches assume a single universal winning ticket shared across all inputs, ignoring the inherent heterogeneity of real-world data. In this work, we propose Routing the Lottery (RTL), an adaptive pruning framework that discovers multiple specialized subnetworks, called adaptive tickets, each tailored to a class, semantic cluster, or environmental condition. Across diverse datasets and tasks, RTL consistently outperforms single- and multi-model baselines in balanced accuracy and recall, while using up to 10 times fewer parameters than independent models and exhibiting semantically aligned. Furthermore, we identify subnetwork collapse, a performance drop under aggressive pruning, and introduce a subnetwork similarity score that enables label-free diagnosis of oversparsification. Overall, our results recast pruning as a mechanism for aligning model structure with data heterogeneity, paving the way toward more modular and context-aware deep learning.",
+    "status": "found"
+  },
+  "2601.22142": {
+    "arxiv_id": "2601.22142",
+    "title": "Superdiffusion and anomalous regularization in self-similar random incompressible flows",
+    "authors": [
+      "Scott Armstrong",
+      "Ahmed Bou-Rabee",
+      "Tuomo Kuusi"
+    ],
+    "submission_date": "2026-01-29T18:57:00Z",
+    "latest_updated": "2026-09-06T17:08:28Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.22142v1",
+      "2601.22142v2"
+    ],
+    "abstract": "We study the long-time behavior of a particle in $\\mathbb{R}^d$, $d \\geq 2$, subject to molecular diffusion and advection by a random incompressible flow. The velocity field is the divergence of a stationary random stream matrix $\\mathbf{k} $ with positive Hurst exponent $γ> 0$, so the resulting random environment is multiscale and self-similar. In the perturbative regime $γ\\ll 1$, we prove quenched power-law superdiffusion: for a typical realization of the environment, the displacement variance at time $t$ grows like $t^{2/(2-γ)}$, the scaling predicted by renormalization group heuristics. We also identify the leading prefactor up to a random (quenched) relative error of order $γ^{\\frac12}\\left| \\log γ\\right|^{9/2}$. The proof implements a Wilsonian renormalization group scheme at the level of the infinitesimal generator $\\nabla \\cdot (νI_d + \\mathbf{k} ) \\nabla$, based on a self-similar induction across scales. We demonstrate that the coarse-grained generator is well-approximated, at each scale $r$, by a constant-coefficient Laplacian with effective diffusivity growing like $r^γ$. This approximation is inherently scale-local: reflecting the multifractal nature of the environment, the relative error does not decay with the scale, but remains of order $γ^{\\frac12}\\left| \\log γ\\right|^{7/2}$. We also prove anomalous regularization under the quenched law: for almost every realization of the drift, solutions of the associated elliptic equation are Hölder continuous with exponent $1 - Cγ^{\\frac12}$ and satisfy estimates which are uniform in the molecular diffusivity $ν$ and the scale.",
+    "status": "found"
+  },
+  "2601.22143": {
+    "arxiv_id": "2601.22143",
+    "title": "JUST-DUB-IT: Video Dubbing via Joint Audio-Visual Diffusion",
+    "authors": [
+      "Anthony Chen",
+      "Naomi Ken Korem",
+      "Gal Zeevi",
+      "Tavi Halperin",
+      "Matan Ben Yosef",
+      "Urska Jelercic",
+      "Ofir Bibi",
+      "Or Patashnik",
+      "Daniel Cohen-Or"
+    ],
+    "submission_date": "2026-01-29T18:57:13Z",
+    "latest_updated": "2026-05-11T12:30:46Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.22143v1",
+      "2601.22143v2"
+    ],
+    "abstract": "Audio-Visual Foundation Models, which are pretrained to jointly generate sound and visual content, have recently shown an unprecedented ability to model multi-modal generation and editing, opening new opportunities for downstream tasks. Among these tasks, video dubbing could greatly benefit from such priors, yet most existing solutions still rely on complex, task-specific pipelines that struggle in real-world settings. In this work, we introduce a single-model approach that adapts a foundational audio-video diffusion model for video-to-video dubbing via a lightweight LoRA. The LoRA enables the model to condition on an input audio-video while jointly generating translated audio and synchronized facial motion. To train this LoRA, we leverage the generative model itself to synthesize paired multilingual videos of the same speaker. Specifically, we generate multilingual videos with language switches within a single clip, and then inpaint the face and audio in each half to match the language of the other half. By leveraging the rich generative prior of the audio-visual model, our approach preserves speaker identity and lip synchronization while remaining robust to complex motion and real-world dynamics. We demonstrate that our approach produces high-quality dubbed videos with improved visual fidelity, lip synchronization, and robustness compared to existing dubbing pipelines.",
+    "status": "found"
+  },
+  "2601.22144": {
+    "arxiv_id": "2601.22144",
+    "title": "All-order prescription for facet regions in massless wide-angle scattering",
+    "authors": [
+      "Yao Ma"
+    ],
+    "submission_date": "2026-01-29T18:57:19Z",
+    "latest_updated": "2026-10-08T16:46:39Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.22144v1",
+      "2601.22144v2"
+    ],
+    "abstract": "We take a step toward answering a long-standing question in the asymptotic expansion of Feynman integrals: how to systematically determine and interpret the regions in the Expansion-by-Regions technique for multiscale processes? Focusing on generic massless wide-angle scattering, we provide an all-order momentum-space prescription for facet regions, which generally dominate -- and in most cases exhaust -- the contributions in a given asymptotic expansion. This extends the Euclidean-space picture, where regions correspond to specific subgraphs, to the complexities of Minkowski space. Our results are derived from a novel analytical approach combining graph theory and convex geometry, and they yield several key byproducts. Theoretically, we uncover for the first time the algebraic structure underlying momentum modes (collinear, soft, and their hierarchies): they form a non-distributive lattice in general. Phenomenologically, we show that ``cascading modes'' are always absent in our scope. Algorithmically, we implement this prescription in \"Facet Region Interpreter\", a computer program to systematically derive regions in momentum space, by which we validate our prescription through 18,000+ examples.",
+    "status": "found"
+  },
+  "2601.22145": {
+    "arxiv_id": "2601.22145",
+    "title": "Neural S-matrix bootstrap II: solvable 4d amplitudes with particle production",
+    "authors": [
+      "Mehmet Asim Gumus",
+      "Damien Leflot",
+      "Piotr Tourkine",
+      "Alexander Zhiboedov"
+    ],
+    "submission_date": "2026-01-29T18:58:34Z",
+    "latest_updated": "2026-01-29T18:58:34Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22145v1"
+    ],
+    "abstract": "We study a model for nonperturbative unitarization of the four-point contact scalar amplitude in four dimensions. It is defined through an infinite sum of planar diagrams, constructed using two-particle unitarity and crossing symmetry. We reformulate the problem in terms of a set of nonlinear integral equations obeyed by the single and double discontinuities of the amplitude. We then solve them using a neural-network ansatz trained by minimizing a physics-informed loss functional. We obtain a one-parameter family of amplitudes, which exhibit rich structure: sizeable particle production, nontrivial emergent Regge behavior, Landau curves, a logarithmic decay at high energy and fixed angle. Finally, we go beyond the two-particle-reducible setup by treating the multi-particle data -- supported above the multi-particle Landau curves due to multi-particle unitarity -- as a dynamical variable. We demonstrate that it can be tuned to suppress low-spin particle production -- a phenomenon we call Aks screening -- at the cost of generating larger and oscillatory double spectral density in the multi-particle region.",
+    "status": "found"
+  },
+  "2601.22146": {
+    "arxiv_id": "2601.22146",
+    "title": "FineInstructions: Scaling Synthetic Instructions to Pre-Training Scale",
+    "authors": [
+      "Ajay Patel",
+      "Colin Raffel",
+      "Chris Callison-Burch"
+    ],
+    "submission_date": "2026-01-29T18:58:47Z",
+    "latest_updated": "2026-07-30T21:34:57Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2601.22146v1",
+      "2601.22146v2",
+      "2601.22146v3"
+    ],
+    "abstract": "Due to limited supervised training data, large language models (LLMs) are typically pre-trained via a self-supervised \"predict the next word\" objective on a vast amount of unstructured text data. To make the resulting model useful to users, it is further trained on a far smaller amount of \"instruction-tuning\" data comprised of supervised training examples of instructions and responses. To overcome the limited amount of supervised data, we propose a procedure that can transform the knowledge in internet-scale pre-training documents into billions of synthetic instruction and answer training pairs. The resulting dataset, called FineInstructions, uses ~18M instruction templates created from real user-written queries and prompts. These instruction templates are matched to and instantiated with human-written source documents from unstructured pre-training corpora. With \"supervised\" synthetic training data generated at this scale, an LLM can be pre-trained from scratch solely with the instruction-tuning objective, which is far more in-distribution with the expected downstream usage of LLMs (responding to user prompts). We conduct controlled token-for-token training experiments and find pre-training on FineInstructions outperforms standard pre-training and other proposed synthetic pre-training techniques on standard benchmarks measuring free-form response quality. Our resources can be found at https://huggingface.co/fineinstructions .",
+    "status": "found"
+  },
+  "2601.22147": {
+    "arxiv_id": "2601.22147",
+    "title": "Variance component score test for multivariate change point detection with applications to mobile health",
+    "authors": [
+      "Melissa Lynne Martin",
+      "Juliette Brook",
+      "Sage Rush",
+      "Theodore D. Satterthwaite",
+      "Ian J. Barnett"
+    ],
+    "submission_date": "2026-01-29T18:58:48Z",
+    "latest_updated": "2026-01-29T18:58:48Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22147v1"
+    ],
+    "abstract": "Multivariate change point detection is the process of identifying distributional shifts in time-ordered data across multiple features. This task is particularly challenging when the number of features is large relative to the number of observations. This problem is often present in mobile health, where behavioral changes in at-risk patients must be detected in real time in order to prompt timely interventions. We propose a variance component score test (VC*) for detecting changes in feature means and/or variances using only pre-change point data to estimate distributional parameters. Through simulation studies, we show that VC* has higher power than existing methods. Moreover, we demonstrate that reducing bias by using only pre-change point days to estimate parameters outweighs the increased estimator variances in most scenarios. Lastly, we apply VC* and competing methods to passively collected smartphone data in adolescents and young adults with affective instability.",
+    "status": "found"
+  },
+  "2601.22148": {
+    "arxiv_id": "2601.22148",
+    "title": "Symmetries of regular $q$-graphs",
+    "authors": [
+      "Daniel R Hawtin",
+      "Padraig Ó Catháin"
+    ],
+    "submission_date": "2026-01-29T18:58:54Z",
+    "latest_updated": "2026-01-29T18:58:54Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22148v1"
+    ],
+    "abstract": "Given a finite vector space $V=\\mathbb{F}_q^n$, the $q$-analogue of a graph, called a $q$-graph, is a pair $Γ=(\\mathcal{V},\\mathcal{E})$, where $\\mathcal{V}$ is the set of $1$-dimensional subspaces of $V$ and $\\mathcal{E}$ is a subset of the $2$-dimensional subspaces of $V$. Elements of $\\mathcal{V}$ and $\\mathcal{E}$ are called vertices and edges, respectively. If the edges through a vertex $X$ consist of all $2$-spaces of a $(k+1)$-dimensional space which contain $X$, regardless of the choice of vertex, then $Γ$ is $k$-regular. Moreover, $Γ$ is flag-transitive if there is a subgroup of $Γ{\\rm L}_n(q)$ preserving $\\mathcal{E}$ and acting transitively on the set of all incident vertex-edge pairs; and symmetric if there is a subgroup of $Γ{\\rm L}_n(q)$ preserving $\\mathcal{E}$ and acting transitively on the set of all ordered pairs of adjacent vertices. This paper classifies all $k$-regular $q$-graphs that are either flag-transitive or symmetric. The $q$-graphs in the classification are constructed from familiar objects in finite geometry, including spreads, symplectic polar spaces, and generalised hexagons. The classification depends essentially on the classification of transitive linear groups, and thus ultimately on the classification of finite simple groups.",
+    "status": "found"
+  },
+  "2601.22149": {
+    "arxiv_id": "2601.22149",
+    "title": "DynaWeb: Model-Based Reinforcement Learning of Web Agents",
+    "authors": [
+      "Hang Ding",
+      "Peidong Liu",
+      "Junqiao Wang",
+      "Ziwei Ji",
+      "Meng Cao",
+      "Rongzhao Zhang",
+      "Lynn Ai",
+      "Eric Yang",
+      "Tianyu Shi",
+      "Lei Yu"
+    ],
+    "submission_date": "2026-01-29T18:59:07Z",
+    "latest_updated": "2026-04-17T18:27:53Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.22149v1",
+      "2601.22149v2"
+    ],
+    "abstract": "The development of autonomous web agents, powered by Large Language Models (LLMs) and reinforcement learning (RL), represents a significant step towards general-purpose AI assistants. However, training these agents is severely hampered by the challenges of interacting with the live internet, which is inefficient, costly, and fraught with risks. Model-based reinforcement learning (MBRL) offers a promising solution by learning a world model of the environment to enable simulated interaction. This paper introduces DynaWeb, a novel MBRL framework that trains web agents through interacting with a web world model trained to predict naturalistic web page representations given agent actions. This model serves as a synthetic web environment where an agent policy can dream by generating vast quantities of rollout action trajectories for efficient online reinforcement learning. Beyond free policy rollouts, DynaWeb incorporates real expert trajectories from training data, which are randomly interleaved with on-policy rollouts during training to improve stability and sample efficiency. Experiments conducted on the challenging WebArena and WebVoyager benchmarks demonstrate that DynaWeb consistently and significantly improves the performance of state-of-the-art open-source web agent models. Our findings establish the viability of training web agents through imagination, offering a scalable and efficient way to scale up online agentic RL.",
+    "status": "found"
+  },
+  "2601.22150": {
+    "arxiv_id": "2601.22150",
+    "title": "Do VLMs Perceive or Recall? Probing Visual Perception vs. Memory with Classic Visual Illusions",
+    "authors": [
+      "Xiaoxiao Sun",
+      "Mingyang Li",
+      "Kun Yuan",
+      "Min Woo Sun",
+      "Mark Endo",
+      "Shengguang Wu",
+      "Changlin Li",
+      "Yuhui Zhang",
+      "Zeyu Wang",
+      "Serena Yeung-Levy"
+    ],
+    "submission_date": "2026-01-29T18:59:24Z",
+    "latest_updated": "2026-03-31T04:43:57Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2601.22150v1",
+      "2601.22150v2",
+      "2601.22150v3"
+    ],
+    "abstract": "Large Vision-Language Models (VLMs) often answer classic visual illusions \"correctly\" on original images, yet persist with the same responses when illusion factors are inverted, even though the visual change is obvious to humans. This raises a fundamental question: do VLMs perceive visual changes or merely recall memorized patterns? While several studies have noted this phenomenon, the underlying causes remain unclear. To move from observations to systematic understanding, this paper introduces VI-Probe, a controllable visual-illusion framework with graded perturbations and matched visual controls (without illusion inducer) that disentangles visually grounded perception from language-driven recall. Unlike prior work that focuses on averaged accuracy, we measure stability and sensitivity using Polarity-Flip Consistency, Template Fixation Index, and an illusion multiplier normalized against matched controls. Experiments across different families reveal that response persistence arises from heterogeneous causes rather than a single mechanism. For instance, GPT-5 exhibits memory override, Claude-Opus-4.1 shows perception-memory competition, while Qwen variants suggest visual-processing limits. Our findings challenge single-cause views and motivate probing-based evaluation that measures both knowledge and sensitivity to controlled visual change. Data and code are available at https://sites.google.com/view/vi-probe/",
+    "status": "found"
+  },
+  "2601.22151": {
+    "arxiv_id": "2601.22151",
+    "title": "Late Breaking Results: Conversion of Neural Networks into Logic Flows for Edge Computing",
+    "authors": [
+      "Daniel Stein",
+      "Shaoyi Huang",
+      "Rolf Drechsler",
+      "Bing Li",
+      "Grace Li Zhang"
+    ],
+    "submission_date": "2026-01-29T18:59:50Z",
+    "latest_updated": "2026-01-29T18:59:50Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22151v1"
+    ],
+    "abstract": "Neural networks have been successfully applied in various resource-constrained edge devices, where usually central processing units (CPUs) instead of graphics processing units exist due to limited power availability. State-of-the-art research still focuses on efficiently executing enormous numbers of multiply-accumulate (MAC) operations. However, CPUs themselves are not good at executing such mathematical operations on a large scale, since they are more suited to execute control flow logic, i.e., computer algorithms. To enhance the computation efficiency of neural networks on CPUs, in this paper, we propose to convert them into logic flows for execution. Specifically, neural networks are first converted into equivalent decision trees, from which decision paths with constant leaves are then selected and compressed into logic flows. Such logic flows consist of if and else structures and a reduced number of MAC operations. Experimental results demonstrate that the latency can be reduced by up to 14.9 % on a simulated RISC-V CPU without any accuracy degradation. The code is open source at https://github.com/TUDa-HWAI/NN2Logic",
+    "status": "found"
+  },
+  "2601.22152": {
+    "arxiv_id": "2601.22152",
+    "title": "Cobordism and Concordance of Surfaces in 4-Manifolds",
+    "authors": [
+      "Simeon Hellsten"
+    ],
+    "submission_date": "2026-01-29T18:59:51Z",
+    "latest_updated": "2026-01-29T18:59:51Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22152v1"
+    ],
+    "abstract": "We show that two properly embedded compact surfaces in an orientable 4-manifold are cobordant if and only if they are $\\mathbb{Z}/2$-homologous and either the 4-manifold has boundary or the surfaces have the same normal Euler number. If the 4-manifold is simply-connected and the surfaces are closed, non-orientable, and cobordant, we show that they are in fact concordant. This completes the classification of closed surfaces in simply-connected 4-manifolds up to concordance. Our methods give new constructions of cobordisms with prescribed boundaries, and completely determine when a given cobordism between the boundaries extends to a cobordism or concordance between the surfaces. We obtain our concordance results by extending Sunukjian's method of ambient surgery to the unoriented case using Pin$^-$-structures. We also discuss conditions for an arbitrary codimension 2 properly embedded submanifold to admit an unoriented spanning manifold with prescribed boundary. All results hold in both the smooth and topological categories.",
+    "status": "found"
+  },
+  "2601.22153": {
+    "arxiv_id": "2601.22153",
+    "title": "DynamicVLA: A Vision-Language-Action Model for Dynamic Object Manipulation",
+    "authors": [
+      "Haozhe Xie",
+      "Beichen Wen",
+      "Jiarui Zheng",
+      "Zhaoxi Chen",
+      "Fangzhou Hong",
+      "Haiwen Diao",
+      "Ziwei Liu"
+    ],
+    "submission_date": "2026-01-29T18:59:51Z",
+    "latest_updated": "2026-10-01T17:59:30Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.22153v1",
+      "2601.22153v2"
+    ],
+    "abstract": "Manipulating dynamic objects remains an open challenge for Vision-Language-Action (VLA) models. Although recent VLAs generalize well in static manipulation, dynamic scenes introduce a latency-induced perception-execution mismatch: object states continue to evolve during inference, making actions predicted from past observations stale at execution time. We present DynamicVLA, a latency-aware VLA model for dynamic object manipulation. It combines a compact 0.4B architecture and convolutional vision encoder for efficient multimodal inference with a continuous inference schedule that overlaps reasoning and execution for non-blocking control. Latent-aware Action Streaming then discards latency-invalid action prefixes and executes only the temporally valid suffix of each predicted chunk, preserving action-time alignment under dynamic object motion. To fill the missing foundation of dynamic manipulation data, we introduce the Dynamic Object Manipulation (DOM) benchmark, built with an automated collection pipeline that gathers 200K synthetic episodes across 2.8K scenes and 206 objects, and enables fast collection of 2K real-world episodes without teleoperation. Extensive evaluations in simulation and on real robots show that DynamicVLA improves dynamic manipulation success under changing object motion, perception-heavy instructions, and unseen motion patterns.",
+    "status": "found"
+  },
+  "2601.22154": {
+    "arxiv_id": "2601.22154",
+    "title": "Exploring Reasoning Reward Model for Agents",
+    "authors": [
+      "Kaixuan Fan",
+      "Kaituo Feng",
+      "Manyuan Zhang",
+      "Tianshuo Peng",
+      "Zhixun Li",
+      "Yilei Jiang",
+      "Shuang Chen",
+      "Peng Pei",
+      "Xunliang Cai",
+      "Xiangyu Yue"
+    ],
+    "submission_date": "2026-01-29T18:59:52Z",
+    "latest_updated": "2026-04-28T11:53:16Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.22154v1",
+      "2601.22154v2"
+    ],
+    "abstract": "Agentic Reinforcement Learning (Agentic RL) has achieved notable success in enabling agents to perform complex reasoning and tool use. However, most methods still relies on sparse outcome-based reward for training. Such feedback fails to differentiate intermediate reasoning quality, leading to suboptimal training results. In this paper, we introduce Agent Reasoning Reward Model (Agent-RRM), a multi-faceted reward model that produces structured feedback for agentic trajectories, including (1) an explicit reasoning trace , (2) a focused critique that provides refinement guidance by highlighting reasoning flaws, and (3) an overall score that evaluates process performance. Leveraging these signals, we systematically investigate three integration strategies: Reagent-C (text-augmented refinement), Reagent-R (reward-augmented guidance), and Reagent-U (unified feedback integration). Extensive evaluations across 12 diverse benchmarks demonstrate that Reagent-U yields substantial performance leaps, achieving 43.7% on GAIA and 46.2% on WebWalkerQA, validating the effectiveness of our reasoning reward model and training schemes. Code, models, and datasets are all released to facilitate future research.",
+    "status": "found"
+  },
+  "2601.22155": {
+    "arxiv_id": "2601.22155",
+    "title": "UEval: A Benchmark for Unified Multimodal Generation",
+    "authors": [
+      "Bo Li",
+      "Yida Yin",
+      "Wenhao Chai",
+      "Xingyu Fu",
+      "Zhuang Liu"
+    ],
+    "submission_date": "2026-01-29T18:59:52Z",
+    "latest_updated": "2026-01-29T18:59:52Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22155v1"
+    ],
+    "abstract": "We introduce UEval, a benchmark to evaluate unified models, i.e., models capable of generating both images and text. UEval comprises 1,000 expert-curated questions that require both images and text in the model output, sourced from 8 real-world tasks. Our curated questions cover a wide range of reasoning types, from step-by-step guides to textbook explanations. Evaluating open-ended multimodal generation is non-trivial, as simple LLM-as-a-judge methods can miss the subtleties. Different from previous works that rely on multimodal Large Language Models (MLLMs) to rate image quality or text accuracy, we design a rubric-based scoring system in UEval. For each question, reference images and text answers are provided to a MLLM to generate an initial rubric, consisting of multiple evaluation criteria, and human experts then refine and validate these rubrics. In total, UEval contains 10,417 validated rubric criteria, enabling scalable and fine-grained automatic scoring. UEval is challenging for current unified models: GPT-5-Thinking scores only 66.4 out of 100, while the best open-source model reaches merely 49.1. We observe that reasoning models often outperform non-reasoning ones, and transferring reasoning traces from a reasoning model to a non-reasoning model significantly narrows the gap. This suggests that reasoning may be important for tasks requiring complex multimodal understanding and generation.",
+    "status": "found"
+  }
+}

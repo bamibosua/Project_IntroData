@@ -1,0 +1,420 @@
+{
+  "2601.19316": {
+    "arxiv_id": "2601.19316",
+    "title": "Modeling Sampling Workflows for Code Repositories",
+    "authors": [
+      "Romain Lefeuvre",
+      "Maïwenn Le Goasteller",
+      "Jessie Galasso",
+      "Benoit Combemale",
+      "Quentin Perez",
+      "Houari Sahraoui"
+    ],
+    "submission_date": "2026-01-27T07:56:33Z",
+    "latest_updated": "2026-04-09T13:15:48Z",
+    "revised_dates": null,
+    "venue": "MSR '26 - 23rd International Conference on Mining Software Repositories, Apr 2026, Rio de Janeiro, Brazil",
+    "latest_version": 2,
+    "versions": [
+      "2601.19316v1",
+      "2601.19316v2"
+    ],
+    "abstract": "Empirical software engineering research often depends on datasets of code repository artifacts, where sampling strategies are employed to enable large-scale analyses. The design and evaluation of these strategies are critical, as they directly influence the generalizability of research findings. However, sampling remains an underestimated aspect in software engineering research: we identify two main challenges related to (1) the design and representativeness of sampling approaches, and (2) the ability to reason about the implications of sampling decisions on generalizability. To address these challenges, we propose a Domain-Specific Language (DSL) to explicitly describe complex sampling strategies through composable sampling operators. This formalism supports both the specification and the reasoning about the generalizability of results based on the applied sampling strategies. We implement the DSL as a Python-based fluent API, and demonstrate how it facilitates representativeness reasoning using statistical indicators extracted from sampling workflows. We validate our approach through a case study of MSR papers involving code repository sampling. Our results show that the DSL can model the sampling strategies reported in recent literature.",
+    "status": "found"
+  },
+  "2601.19317": {
+    "arxiv_id": "2601.19317",
+    "title": "Remarks on well-posedness for linear elliptic equations via divergence-free transformation",
+    "authors": [
+      "Haesung Lee"
+    ],
+    "submission_date": "2026-01-27T07:56:37Z",
+    "latest_updated": "2026-01-27T07:56:37Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19317v1"
+    ],
+    "abstract": "This paper investigates the well-posedness of linear elliptic equations, focusing on the divergence-free transformation introduced in the author's recent work [J. Math. Anal. Appl. 548 (2025), 129425]. By comparing this approach with classical bilinear form methods, we demonstrate that while standard techniques encounter limitations in handling zero-order coefficients $c \\in L^1(U)$, the divergence-free transformation successfully establishes well-posedness in this setting. Furthermore, utilizing the Riesz-Thorin interpolation theorem between the cases $c \\in L^1(U)$ and $c \\in L^{\\frac{2d}{d+2}}(U)$, we establish the existence and uniqueness of weak solutions under the assumption $c \\in L^s(U)$ for $s \\in [1, \\frac{2d}{d+2}]$.",
+    "status": "found"
+  },
+  "2601.19318": {
+    "arxiv_id": "2601.19318",
+    "title": "Perception-to-Pursuit: Track-Centric Temporal Reasoning for Open-World Drone Detection and Autonomous Chasing",
+    "authors": [
+      "Venkatakrishna Reddy Oruganti"
+    ],
+    "submission_date": "2026-01-27T07:57:29Z",
+    "latest_updated": "2026-02-19T22:28:12Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.19318v1",
+      "2601.19318v2"
+    ],
+    "abstract": "Autonomous drone pursuit requires not only detecting drones but also predicting their trajectories in a manner that enables kinematically feasible interception. Existing tracking methods optimize for prediction accuracy but ignore pursuit feasibility, resulting in trajectories that are physically impossible to intercept 99.9% of the time. We propose Perception-to-Pursuit (P2P), a track-centric temporal reasoning framework that bridges detection and actionable pursuit planning. Our method represents drone motion as compact 8-dimensional tokens capturing velocity, acceleration, scale, and smoothness, enabling a 12-frame causal transformer to reason about future behavior. We introduce the Intercept Success Rate (ISR) metric to measure pursuit feasibility under realistic interceptor constraints. Evaluated on the Anti-UAV-RGBT dataset with 226 real drone sequences, P2P achieves 28.12 pixel average displacement error and 0.597 ISR, representing a 77% improvement in trajectory prediction and 597x improvement in pursuit feasibility over tracking-only baselines, while maintaining perfect drone classification accuracy (100%). Our work demonstrates that temporal reasoning over motion patterns enables both accurate prediction and actionable pursuit planning.",
+    "status": "found"
+  },
+  "2601.19319": {
+    "arxiv_id": "2601.19319",
+    "title": "Counting square-free values of random polynomials",
+    "authors": [
+      "Efthymios Sofos"
+    ],
+    "submission_date": "2026-01-27T07:57:37Z",
+    "latest_updated": "2026-01-27T07:57:37Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19319v1"
+    ],
+    "abstract": "We prove that the average error term when counting square-free values of polynomials is the quartic root of the main term.",
+    "status": "found"
+  },
+  "2601.19320": {
+    "arxiv_id": "2601.19320",
+    "title": "StableQAT: Stable Quantization-Aware Training at Ultra-Low Bitwidths",
+    "authors": [
+      "Tianyi Chen",
+      "Sihan Chen",
+      "Xiaoyi Qu",
+      "Dan Zhao",
+      "Ruomei Yan",
+      "Jongwoo Ko",
+      "Luming Liang",
+      "Pashmina Cameron"
+    ],
+    "submission_date": "2026-01-27T08:00:57Z",
+    "latest_updated": "2026-02-18T06:38:29Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.19320v1",
+      "2601.19320v2"
+    ],
+    "abstract": "Quantization-aware training (QAT) is essential for deploying large models under strict memory and latency constraints, yet achieving stable and robust optimization at ultra-low bitwidths remains challenging. Common approaches based on the straight-through estimator (STE) or soft quantizers often suffer from gradient mismatch, instability, or high computational overhead. As such, we propose StableQAT, a unified and efficient QAT framework that stabilizes training in ultra low-bit settings via a novel, lightweight, and theoretically grounded surrogate for backpropagation derived from a discrete Fourier analysis of the rounding operator. StableQAT strictly generalizes STE as the latter arises as a special case of our more expressive surrogate family, yielding smooth, bounded, and inexpensive gradients that improve QAT training performance and stability across various hyperparameter choices. In experiments, StableQAT exhibits stable and efficient QAT at 2-4 bit regimes, demonstrating improved training stability, robustness, and superior performance with negligible training overhead against standard QAT techniques. Our code is available at https://github.com/microsoft/StableQAT.",
+    "status": "found"
+  },
+  "2601.19321": {
+    "arxiv_id": "2601.19321",
+    "title": "Predictive Accuracy versus Interpretability in Energy Markets: A Copula-Enhanced TVP-SVAR Analysis",
+    "authors": [
+      "Fredy Pokou",
+      "Jules Sadefo Kamdem",
+      "Kpante Emmanuel Gnandi"
+    ],
+    "submission_date": "2026-01-27T08:04:16Z",
+    "latest_updated": "2026-01-27T08:04:16Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19321v1"
+    ],
+    "abstract": "This paper investigates whether structural econometric models can rival machine learning in forecasting energy--macro dynamics while retaining causal interpretability. Using monthly data from 1999 to 2025, we develop a unified framework that integrates Time-Varying Parameter Structural VARs (TVP-SVAR) with advanced dependence structures, including DCC-GARCH, t-copulas, and mixed Clayton--Frank--Gumbel copulas. These models are empirically evaluated against leading machine learning techniques Gaussian Process Regression (GPR), Artificial Neural Networks, Random Forests, and Support Vector Regression across seven macro-financial and energy variables, with Brent crude oil as the central asset. The findings reveal three major insights. First, TVP-SVAR consistently outperforms standard VAR models, confirming structural instability in energy transmission channels. Second, copula-based extensions capture non-linear and tail dependence more effectively than symmetric DCC models, particularly during periods of macroeconomic stress. Third, despite their methodological differences, copula-enhanced econometric models and GPR achieve statistically equivalent predictive accuracy (t-test p = 0.8444). However, only the econometric approach provides interpretable impulse responses, regime shifts, and tail-risk diagnostics. We conclude that machine learning can replicate predictive performance but cannot substitute the explanatory power of structural econometrics. This synthesis offers a pathway where AI accuracy and economic interpretability jointly inform energy policy and risk management.",
+    "status": "found"
+  },
+  "2601.19322": {
+    "arxiv_id": "2601.19322",
+    "title": "Polyhedral design with blended $n$-sided interpolants",
+    "authors": [
+      "Péter Salvi"
+    ],
+    "submission_date": "2026-01-27T08:05:13Z",
+    "latest_updated": "2026-01-27T08:05:13Z",
+    "revised_dates": null,
+    "venue": "Proceedings of the Eleventh Hungarian Conference on Computer Graphics and Geometry, pp. 46-51, 2024",
+    "latest_version": 1,
+    "versions": [
+      "2601.19322v1"
+    ],
+    "abstract": "A new parametric surface representation is proposed that interpolates the vertices of a given closed mesh of arbitrary topology. Smoothly connecting quadrilateral patches are created by blending local, multi-sided quadratic interpolants. In the non-four-sided case, this requires a special parameterization technique involving rational curves. Appropriate handling of triangular subpatches and alternative subpatch representations are also discussed.",
+    "status": "found"
+  },
+  "2601.19323": {
+    "arxiv_id": "2601.19323",
+    "title": "Positive autocorrelation at unit lag for stationary random walk Metropolis-Hastings in ${\\mathbb R}^d$",
+    "authors": [
+      "James Allen Fill",
+      "Svante Janson"
+    ],
+    "submission_date": "2026-01-27T08:06:17Z",
+    "latest_updated": "2026-01-27T08:06:17Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19323v1"
+    ],
+    "abstract": "It is often asserted in the literature that one should expect positive autocorrelation for random walk Metropolis-Hastings (RWMH), especially if the typical proposal step-size is small relative to the variability in the target density. In this paper, we consider a stationary RWMH chain ${\\bf X}$ taking values in $d$-dimensional Euclidean space and (subject only to the existence of densities with respect to Lebesgue measure) with general target distribution having finite second moment and general proposal random walk step-distribution. We prove, for any nonzero vector ${\\bf c}$, strict positivity of the autocorrelation function at unit lag for the stochastic process $\\langle{\\bf c},{\\bf X}\\rangle$, that is, \\[{\\operatorname{Corr}}(\\langle{\\bf c},{\\bf X}_0\\rangle,\\langle{\\bf c},{\\bf X}_1\\rangle)>0,\\] and we establish the same result, but with weak inequality (which can in some cases be equality) when the state space for ${\\bf X}$ is changed to the integer grid ${\\mathbb Z}^d$. Further, for ${\\bf c}\\neq{\\bf 0}$ we establish the sharp lower bound \\[{\\operatorname{Corr}}(\\langle{\\bf c},{\\bf X}_0\\rangle,\\langle{\\bf c},{\\bf X}_1\\rangle)>\\tfrac19\\] on autocorrelation when we assume both that (i) the target density $π$ is spherically symmetric and unimodal in the specific sense that $π({\\bf x})=\\hatπ(\\|{\\bf x}\\|)$ for some nonincreasing function $\\hatπ$ on $[0,\\infty)$ and that (ii) the proposal step-density is symmetric about ${\\bf 0}$. We study the autocorrelation indirectly, by considering the incremental variance function (or incremental second-moment function) at unit lag. The same approach allows us also for $r\\in[2,\\infty)$ to upper-bound the incremental $r$th-absolute-moment function at unit lag. We give also closely related inequalities for the total variation distance between two distributions on ${\\mathbb R}^d$ differing only by a location shift.",
+    "status": "found"
+  },
+  "2601.19324": {
+    "arxiv_id": "2601.19324",
+    "title": "Graphene Josephson Junctions for Engineering Motional Quanta",
+    "authors": [
+      "Zhen-Yang Peng",
+      "Mehdi Abdi"
+    ],
+    "submission_date": "2026-01-27T08:10:24Z",
+    "latest_updated": "2026-01-27T08:10:24Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19324v1"
+    ],
+    "abstract": "We propose a hybrid quantum device based on the graphene Josephson junctions, where the vibrational degrees of freedom of a graphene membrane couple to the superconducting circuits. The flexural mode-controlled tunneling of the Cooper pairs introduces a strong and tunable coupling even at the zero-point fluctuations level. By employing this interaction, we show that a parametric process can be efficiently implemented. We then investigate foundational and technological applications of our hybrid device empowered by nonlinear interactions, with fast generation of non-classical mechanical states, and critically enhanced quantum sensing under suitable quantum control. Our work provides the possibility of employing the graphene motional degree of freedom for quantum information processing in circuit quantum nanomechanical structures.",
+    "status": "found"
+  },
+  "2601.19325": {
+    "arxiv_id": "2601.19325",
+    "title": "Innovator-VL: A Multimodal Large Language Model for Scientific Discovery",
+    "authors": [
+      "Zichen Wen",
+      "Boxue Yang",
+      "Shuang Chen",
+      "Yaojie Zhang",
+      "Yuhang Han",
+      "Junlong Ke",
+      "Cong Wang",
+      "Yicheng Fu",
+      "Jiawang Zhao",
+      "Jiangchao Yao",
+      "Xi Fang",
+      "Zhen Wang",
+      "Henxing Cai",
+      "Lin Yao",
+      "Zhifeng Gao",
+      "Yanhui Hong",
+      "Nang Yuan",
+      "Yixuan Li",
+      "Guojiang Zhao",
+      "Haoyi Tao",
+      "Nan Wang",
+      "Han Lyu",
+      "Guolin Ke",
+      "Ning Liao",
+      "Xiaoxing Wang",
+      "Kai Chen",
+      "Zhiyu Li",
+      "Feiyu Xiong",
+      "Sihan Hu",
+      "Kun Chen",
+      "Yanfeng Wang",
+      "Weinan E",
+      "Linfeng Zhang",
+      "Linfeng Zhang"
+    ],
+    "submission_date": "2026-01-27T08:12:18Z",
+    "latest_updated": "2026-01-27T08:12:18Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19325v1"
+    ],
+    "abstract": "We present Innovator-VL, a scientific multimodal large language model designed to advance understanding and reasoning across diverse scientific domains while maintaining excellent performance on general vision tasks. Contrary to the trend of relying on massive domain-specific pretraining and opaque pipelines, our work demonstrates that principled training design and transparent methodology can yield strong scientific intelligence with substantially reduced data requirements. (i) First, we provide a fully transparent, end-to-end reproducible training pipeline, covering data collection, cleaning, preprocessing, supervised fine-tuning, reinforcement learning, and evaluation, along with detailed optimization recipes. This facilitates systematic extension by the community. (ii) Second, Innovator-VL exhibits remarkable data efficiency, achieving competitive performance on various scientific tasks using fewer than five million curated samples without large-scale pretraining. These results highlight that effective reasoning can be achieved through principled data selection rather than indiscriminate scaling. (iii) Third, Innovator-VL demonstrates strong generalization, achieving competitive performance on general vision, multimodal reasoning, and scientific benchmarks. This indicates that scientific alignment can be integrated into a unified model without compromising general-purpose capabilities. Our practices suggest that efficient, reproducible, and high-performing scientific multimodal models can be built even without large-scale data, providing a practical foundation for future research.",
+    "status": "found"
+  },
+  "2601.19326": {
+    "arxiv_id": "2601.19326",
+    "title": "Beyond Photon Shot Noise: Chemical Limits in Spectrophotometric Precision",
+    "authors": [
+      "Georg Engelhardt",
+      "Dahai He",
+      "JunYan Luo"
+    ],
+    "submission_date": "2026-01-27T08:12:32Z",
+    "latest_updated": "2026-01-27T08:12:32Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19326v1"
+    ],
+    "abstract": "In this work, we investigate precision limitations in spectrophotometry (i.e., spectroscopic concentration measurements) imposed by chemical processes of molecules. Using the recently developed Photon-resolved Floquet theory, which generalizes Maxwell-Bloch theory for higher-order measurement statistics, we analyze a molecular model system subject to chemical reactions whose electronic and optical properties depend on the chemical state. Analysis of sensitivity bounds reveals: (i) Phase measurements are more sensitive than intensity measurements; (ii) Sensitivity exhibits three regimes: photon-shot-noise limited, chemically limited, and intermediate; (iii) Sensitivity shows a turnover as a function of reaction rate due to the interplay between coherent electronic dynamics and incoherent chemical dynamics. Our findings demonstrate that chemical properties must be considered to estimate ultimate precision limits in optical spectrophotometry.",
+    "status": "found"
+  },
+  "2601.19327": {
+    "arxiv_id": "2601.19327",
+    "title": "A generalization of Boppana's entropy inequality",
+    "authors": [
+      "Boon Suan Ho"
+    ],
+    "submission_date": "2026-01-27T08:13:51Z",
+    "latest_updated": "2026-01-27T08:13:51Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19327v1"
+    ],
+    "abstract": "In recent progress on the union-closed sets conjecture, a key lemma has been Boppana's entropy inequality: $h(x^2)\\geφxh(x)$, where $φ=(1+\\sqrt5)/2$ and $h(x)=-x\\log x-(1-x)\\log(1-x)$. In this note, we prove that the generalized inequality $α_kh(x^k)\\ge x^{k-1}h(x)$, first conjectured by Yuster, holds for real $k>1$, where $α_k$ is the unique positive solution to $x(1+x)^{k-1}=1$. This implies an analogue of the union-closed sets conjecture for approximate $k$-union closed set systems. We also formalize our proof in Lean 4.",
+    "status": "found"
+  },
+  "2601.19328": {
+    "arxiv_id": "2601.19328",
+    "title": "STONKS first results: Long-term transients in the XMM-Newton Galactic plane survey",
+    "authors": [
+      "Robbie Webbe",
+      "E. Quintin",
+      "N. A. Webb",
+      "Gabriele Ponti",
+      "Tong Bao",
+      "Chandreyee Maitra",
+      "Shifra Mandel",
+      "Samaresh Mondal"
+    ],
+    "submission_date": "2026-01-27T08:14:04Z",
+    "latest_updated": "2026-01-27T08:14:04Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19328v1"
+    ],
+    "abstract": "The study of astronomical transients at high energies provides insights into some of the most extreme physical events in the universe; however, carrying out their detection and fast follow-up studies are limited by instrumental constraints. Search for Transient Object in New observations using Known Sources (STONKS) is a near-real-time transient detection system for XMM-Newton offering the capability to detect transients in XMM-Newton observations at fainter fluxes than can be achieved with wide survey instruments. We present the transients detected with the STONKS pipeline found in an XMM-Newton multi-year heritage survey of the Galactic plane to identify and classify highly variable X-ray sources that have recently been reported in this region. We examined the alerts created by the STONKS pipeline from over 200 XMM observations of the Galactic plane, screening for instrumental effects. The 78 alerts associated with 70 real astrophysical sources were then subjected to further temporal and spectral analysis. From the 70 sources we identified, we were able to classify 32 with a high degree of confidence, including 7 X-ray binaries, 1 $γ$-Cas analogue, and 1 magnetar candidate. Of the 70 sources, 23 were detected for the first time in X-rays. This systematic analysis of publicly available data has shown the value and potential of STONKS in the application to XMM-Newton observations. It will enable the community to detect transient and highly variable sources at fainter fluxes than with any other X-ray transient detection systems.",
+    "status": "found"
+  },
+  "2601.19329": {
+    "arxiv_id": "2601.19329",
+    "title": "Equilibrium Selection and Closure in DSGE Solution Methods",
+    "authors": [
+      "Mitsuhiro Okano"
+    ],
+    "submission_date": "2026-01-27T08:14:18Z",
+    "latest_updated": "2026-09-09T07:22:54Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.19329v1",
+      "2601.19329v2"
+    ],
+    "abstract": "Standard DSGE solution practice closes forward-looking equilibrium problems by combining model specification with criteria that select one operational equilibrium from multiple candidate paths, yet this closure step typically remains implicit. This paper formalizes that closure step as a substantive operation in standard DSGE solution practice. By separating the economic specification ($S$), the self-referential operator ($T$), and the equilibrium selection rule ($Π$), the $(S, T, Π)$ triad provides a descriptive semantic grammar for comparing closure choices across familiar solution environments. The framework clarifies what standard solver diagnostics actually report, captures the regime-iteration logic of piecewise-linear methods like OccBin, explains why independent linear solvers often reproduce the same selected equilibrium, and distinguishes within-model refinements from specification-augmenting closure changes under indeterminacy.",
+    "status": "found"
+  },
+  "2601.19330": {
+    "arxiv_id": "2601.19330",
+    "title": "On blow up NLS with a multiplicative noise",
+    "authors": [
+      "Chenjie Fan",
+      "Junzhe Wang"
+    ],
+    "submission_date": "2026-01-27T08:14:43Z",
+    "latest_updated": "2026-04-06T03:04:29Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.19330v1",
+      "2601.19330v2"
+    ],
+    "abstract": "It is of significant interest to understand whether a noise will speed up or prevent blow up. Under certain nondegenerate conditions, \\cite{dD2005Blowup} proved a multiplicative noise will speed up blow up of NLS, in the sense that, blow up can happen in any short time with positive probability. We prove that such probability is indeed quite small, and provide a large deviation type upper bound.",
+    "status": "found"
+  },
+  "2601.19331": {
+    "arxiv_id": "2601.19331",
+    "title": "Extreme Points and Large Contests",
+    "authors": [
+      "Giovanni Valvassori Bolgè"
+    ],
+    "submission_date": "2026-01-27T08:16:16Z",
+    "latest_updated": "2026-02-27T08:13:49Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.19331v1",
+      "2601.19331v2"
+    ],
+    "abstract": "In this paper, we characterize the extreme points of a class of multidimensional monotone functions. This result is then applied to large contests, where it provides a useful representation of optimal allocation rules under a broad class of distributional preferences of the contest designer. In contests with complete information, the representation significantly simplifies the characterization of the equilibria.",
+    "status": "found"
+  },
+  "2601.19332": {
+    "arxiv_id": "2601.19332",
+    "title": "CaseMaster: Designing and Evaluating a Probe for Oral Case Presentation Training with LLM Assistance",
+    "authors": [
+      "Yang Ouyang",
+      "Yuansong Xu",
+      "Chang Jiang",
+      "Yifan Jin",
+      "Haoran Jiang",
+      "Quan Li"
+    ],
+    "submission_date": "2026-01-27T08:17:11Z",
+    "latest_updated": "2026-01-27T08:17:11Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19332v1"
+    ],
+    "abstract": "Preparing an oral case presentation (OCP) is a crucial skill for medical students, requiring clear communication of patient information, clinical findings, and treatment plans. However, inconsistent student participation and limited guidance can make this task challenging. While Large Language Models (LLMs) can provide structured content to streamline the process, their role in facilitating skill development and supporting medical education integration remains underexplored. To address this, we conducted a formative study with six medical educators and developed CaseMaster, an interactive probe that leverages LLM-generated content tailored to medical education to help users enhance their OCP skills. The controlled study suggests CaseMaster has the potential to both improve presentation quality and reduce workload compared to traditional methods, an implication reinforced by expert feedback. We propose guidelines for educators to develop adaptive, user-centered training methods using LLMs, while considering the implications of integrating advanced technologies into medical education.",
+    "status": "found"
+  },
+  "2601.19333": {
+    "arxiv_id": "2601.19333",
+    "title": "Metric $k$-clustering using only Weak Comparison Oracles",
+    "authors": [
+      "Rahul Raychaudhury",
+      "Aryan Esmailpour",
+      "Sainyam Galhotra",
+      "Stavros Sintos"
+    ],
+    "submission_date": "2026-01-27T08:17:22Z",
+    "latest_updated": "2026-01-27T08:17:22Z",
+    "revised_dates": null,
+    "venue": "ICLR 2026",
+    "latest_version": 1,
+    "versions": [
+      "2601.19333v1"
+    ],
+    "abstract": "Clustering is a fundamental primitive in unsupervised learning. However, classical algorithms for $k$-clustering (such as $k$-median and $k$-means) assume access to exact pairwise distances -- an unrealistic requirement in many modern applications. We study clustering in the \\emph{Rank-model (R-model)}, where access to distances is entirely replaced by a \\emph{quadruplet oracle} that provides only relative distance comparisons. In practice, such an oracle can represent learned models or human feedback, and is expected to be noisy and entail an access cost. Given a metric space with $n$ input items, we design randomized algorithms that, using only a noisy quadruplet oracle, compute a set of $O(k \\cdot \\mathsf{polylog}(n))$ centers along with a mapping from the input items to the centers such that the clustering cost of the mapping is at most constant times the optimum $k$-clustering cost. Our method achieves a query complexity of $O(n\\cdot k \\cdot \\mathsf{polylog}(n))$ for arbitrary metric spaces and improves to $O((n+k^2) \\cdot \\mathsf{polylog}(n))$ when the underlying metric has bounded doubling dimension. When the metric has bounded doubling dimension we can further improve the approximation from constant to $1+\\varepsilon$, for any arbitrarily small constant $\\varepsilon\\in(0,1)$, while preserving the same asymptotic query complexity. Our framework demonstrates how noisy, low-cost oracles, such as those derived from large language models, can be systematically integrated into scalable clustering algorithms.",
+    "status": "found"
+  },
+  "2601.19334": {
+    "arxiv_id": "2601.19334",
+    "title": "When Benchmarks Leak: Inference-Time Decontamination for LLMs",
+    "authors": [
+      "Jianzhe Chai",
+      "Yu Zhe",
+      "Jun Sakuma"
+    ],
+    "submission_date": "2026-01-27T08:19:40Z",
+    "latest_updated": "2026-01-27T08:19:40Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19334v1"
+    ],
+    "abstract": "Benchmark-based evaluation is the de facto standard for comparing large language models (LLMs). However, its reliability is increasingly threatened by test set contamination, where test samples or their close variants leak into training data and artificially inflate reported performance. To address this issue, prior work has explored two main lines of mitigation. One line attempts to identify and remove contaminated benchmark items before evaluation, but this inevitably alters the evaluation set itself and becomes unreliable when contamination is moderate or severe. The other line preserves the benchmark and instead suppresses contaminated behavior at evaluation time; however, such interventions often interfere with normal inference and lead to noticeable performance degradation on clean inputs. We propose DeconIEP, a decontamination framework that operates entirely during evaluation by applying small, bounded perturbations in the input embedding space. Guided by a relatively less-contaminated reference model, DeconIEP learns an instance-adaptive perturbation generator that steers the evaluated model away from memorization-driven shortcut pathways. Across multiple open-weight LLMs and benchmarks, extensive empirical results show that DeconIEP achieves strong decontamination effectiveness while incurring only minimal degradation in benign utility.",
+    "status": "found"
+  },
+  "2601.19335": {
+    "arxiv_id": "2601.19335",
+    "title": "On the Determination of Gel Points",
+    "authors": [
+      "Kazumi Suematsu",
+      "Haruo Ogura",
+      "Seiichi Inayama",
+      "Toshihiko Okamoto"
+    ],
+    "submission_date": "2026-01-27T08:20:06Z",
+    "latest_updated": "2026-01-27T08:20:06Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19335v1"
+    ],
+    "abstract": "A critical composition of cross-linked polysiloxanes observed by Scanlan and Winter is reinvestigated in comparison with the theory of gelation. We assume, based on the Scott findings, the geometric distribution for one of the monomers, divinyl-terminated poly(dimethylsiloxane). Calculation results show that the two theories are in near-consistency, supporting the Scanlan-Winter estimation based on the linear viscoelastic theory. On the other hand, there is a disturbing result that calculation using the mean molecular weight, $M_{n}$, leads to exact agreement between the two theories, suggesting that the distribution is in effect monodisperse, contrary to the assumed geometric one and also the observed polydispersity, $M_w/M_n=2.1$. Further experimental studies employing monodisperse monomers would be highly valuable to consolidate the bridge between these two fundamental theories.",
+    "status": "found"
+  }
+}

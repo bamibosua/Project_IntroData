@@ -1,0 +1,540 @@
+{
+  "2511.12469": {
+    "arxiv_id": "2511.12469",
+    "title": "Metasurface-Enabled Superheterodyne Transmitter With Decoupled Harmonic-Free Signal Generation and Precoding",
+    "authors": [
+      "Xuehui Dong",
+      "Miyu Feng",
+      "Chen Shao",
+      "Bokai Lai",
+      "Jianan Zhang",
+      "Rujing Xiong",
+      "Kai Wan",
+      "Tiebin Mi",
+      "Robert Caiming Qiu"
+    ],
+    "submission_date": "2025-11-16T05:55:28Z",
+    "latest_updated": "2025-11-16T05:55:28Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.12469v1"
+    ],
+    "abstract": "The evolution of programmable metasurfaces (PM) from passive beamforming to active information transmission marks a paradigm shift for next-generation wireless systems. However, this transition is hindered by fundamental limitations in conventional metasurface transmitter architectures, including restricted modulation orders, symbol-level spatial inconsistency, and significant harmonic interference. These issues stem from the intrinsic coupling between baseband signal processing and radio-frequency beamforming in monolithic designs reliant on simplistic switching mechanisms. This paper proposes a novel metasurface-enabled superheterodyne architecture (MSA) that fundamentally decouples these functionalities. The MSA introduces a dual-stage up-conversion process, comprising a digital up-conversion module for in-phase/quadrature modulation and baseband-to-intermediate frequency conversion, a precoder module for precoding, and a custom-designed magnitude-phase-decoupled metasurface that acts as a reconfigurable reflective mixer array. This decoupling of harmonic-free waveform generation from spatial precoding overcomes the critical drawbacks of existing approaches. Experimental results from a 5.8 GHz proof-of-concept prototype system validate the MSA's superior performance. The system generates spatially isotropic constellations for arbitrary-order QAM modulations, ensures consistent time-frequency signatures for applications like Doppler-spoofing, and achieves data rates up to 20 Mbps within a linear operating region that minimizes nonlinear distortion. The capability of employing spatial diversity and multi-stream interference cancellation has been demonstrated for the first time in a PM-based transmitter.",
+    "status": "found"
+  },
+  "2511.12470": {
+    "arxiv_id": "2511.12470",
+    "title": "Cross-Layer Design for Near-Field mmWave Beam Management and Scheduling under Delay-Sensitive Traffic",
+    "authors": [
+      "Zijun Wang",
+      "Anjali Omer",
+      "Jacob Chakareski",
+      "Nicholas Mastronarde",
+      "Rui Zhang"
+    ],
+    "submission_date": "2025-11-16T06:09:41Z",
+    "latest_updated": "2025-11-16T06:09:41Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.12470v1"
+    ],
+    "abstract": "Next-generation wireless networks will rely on mmWave/sub-THz spectrum and extremely large antenna arrays (ELAAs). This will push their operation into the near field where far-field beam management degrades and beam training becomes more costly and must be done more frequently. Because ELAA training and data transmission consume energy and training trades off with service time, we pose a cross-layer control problem that couples PHY-layer beam management with MAC-layer service under delay-sensitive traffic. The controller decides when to retrain and how aggressively to train (pilot count and sparsity) while allocating transmit power, explicitly balancing pilot overhead, data-phase rate, and energy to reduce the queueing delay of MAC-layer frames/packets to be transmitted. We model the problem as a partially observable Markov decision process and solve it with deep reinforcement learning. In simulations with a realistic near-field channel and varying mobility and traffic load, the learned policy outperforms strong 5G-NR--style baselines at a comparable energy: it achieves 85.5% higher throughput than DFT sweeping and reduces the overflow rate by 78%. These results indicate a practical path to overhead-aware, traffic-adaptive near-field beam management with implications for emerging low-latency, high-rate next-generation applications such as digital twin, spatial computing, and immersive communication.",
+    "status": "found"
+  },
+  "2511.12471": {
+    "arxiv_id": "2511.12471",
+    "title": "Diffusion Model Based Signal Recovery Under 1-Bit Quantization",
+    "authors": [
+      "Youming Chen",
+      "Zhaoqiang Liu"
+    ],
+    "submission_date": "2025-11-16T06:18:14Z",
+    "latest_updated": "2026-01-10T15:06:18Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.12471v1",
+      "2511.12471v2"
+    ],
+    "abstract": "Diffusion models (DMs) have demonstrated to be powerful priors for signal recovery, but their application to 1-bit quantization tasks, such as 1-bit compressed sensing and logistic regression, remains a challenge. This difficulty stems from the inherent non-linear link function in these tasks, which is either non-differentiable or lacks an explicit characterization. To tackle this issue, we introduce Diff-OneBit, which is a fast and effective DM-based approach for signal recovery under 1-bit quantization. Diff-OneBit addresses the challenge posed by non-differentiable or implicit links functions via leveraging a differentiable surrogate likelihood function to model 1-bit quantization, thereby enabling gradient based iterations. This function is integrated into a flexible plug-and-play framework that decouples the data-fidelity term from the diffusion prior, allowing any pretrained DM to act as a denoiser within the iterative reconstruction process. Extensive experiments on the FFHQ, CelebA and ImageNet datasets demonstrate that Diff-OneBit gives high-fidelity reconstructed images, outperforming state-of-the-art methods in both reconstruction quality and computational efficiency across 1-bit compressed sensing and logistic regression tasks. Our code is available at https://github.com/Chenyouming123/DiffOneBit.",
+    "status": "found"
+  },
+  "2511.12472": {
+    "arxiv_id": "2511.12472",
+    "title": "Assessing LLMs for Serendipity Discovery in Knowledge Graphs: A Case for Drug Repurposing",
+    "authors": [
+      "Mengying Wang",
+      "Chenhui Ma",
+      "Ao Jiao",
+      "Tuo Liang",
+      "Pengjun Lu",
+      "Shrinidhi Hegde",
+      "Yu Yin",
+      "Evren Gurkan-Cavusoglu",
+      "Yinghui Wu"
+    ],
+    "submission_date": "2025-11-16T06:19:53Z",
+    "latest_updated": "2025-11-16T06:19:53Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.12472v1"
+    ],
+    "abstract": "Large Language Models (LLMs) have greatly advanced knowledge graph question answering (KGQA), yet existing systems are typically optimized for returning highly relevant but predictable answers. A missing yet desired capacity is to exploit LLMs to suggest surprise and novel (\"serendipitious\") answers. In this paper, we formally define the serendipity-aware KGQA task and propose the SerenQA framework to evaluate LLMs' ability to uncover unexpected insights in scientific KGQA tasks. SerenQA includes a rigorous serendipity metric based on relevance, novelty, and surprise, along with an expert-annotated benchmark derived from the Clinical Knowledge Graph, focused on drug repurposing. Additionally, it features a structured evaluation pipeline encompassing three subtasks: knowledge retrieval, subgraph reasoning, and serendipity exploration. Our experiments reveal that while state-of-the-art LLMs perform well on retrieval, they still struggle to identify genuinely surprising and valuable discoveries, underscoring a significant room for future improvements. Our curated resources and extended version are released at: https://cwru-db-group.github.io/serenQA.",
+    "status": "found"
+  },
+  "2511.12473": {
+    "arxiv_id": "2511.12473",
+    "title": "Generating all Ahlfors currents by a single entire curve",
+    "authors": [
+      "Yunling Chen",
+      "John Erik Fornæss",
+      "Song-Yan Xie"
+    ],
+    "submission_date": "2025-11-16T06:20:25Z",
+    "latest_updated": "2025-11-16T06:20:25Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.12473v1"
+    ],
+    "abstract": "Let \\(X\\) be a compact complex manifold possessing the \\emph{Runge approximation property on discs}, meaning that every holomorphic map from a closed disc into \\(X\\) is approximable by a global holomorphic map from \\(\\mathbb{C}\\). We construct an entire curve \\(F : \\mathbb{C} \\to X\\) such that the associated family of concentric holomorphic discs \\(\\{F|_{\\overline{\\mathbb{D}}_r}\\}_{r>0}\\) generates all Ahlfors currents on \\(X\\), thereby settling a conjecture of Sibony.",
+    "status": "found"
+  },
+  "2511.12474": {
+    "arxiv_id": "2511.12474",
+    "title": "Co-Layout: LLM-driven Co-optimization for Interior Layout",
+    "authors": [
+      "Chucheng Xiang",
+      "Ruchao Bao",
+      "Biyin Feng",
+      "Wenzheng Wu",
+      "Zhongyuan Liu",
+      "Yirui Guan",
+      "Ligang Liu"
+    ],
+    "submission_date": "2025-11-16T06:20:55Z",
+    "latest_updated": "2026-03-06T17:00:55Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.12474v1",
+      "2511.12474v2"
+    ],
+    "abstract": "We present a novel framework for automated interior design that combines large language models (LLMs) with grid-based integer programming to jointly optimize room layout and furniture placement. Given a textual prompt, the LLM-driven agent workflow extracts structured design constraints related to room configurations and furniture arrangements. These constraints are encoded into a unified grid-based representation inspired by ``Modulor\". Our formulation accounts for key design requirements, including corridor connectivity, room accessibility, spatial exclusivity, and user-specified preferences. To improve computational efficiency, we adopt a coarse-to-fine optimization strategy that begins with a low-resolution grid to solve a simplified problem and guides the solution at the full resolution. Experimental results across diverse scenarios demonstrate that our joint optimization approach significantly outperforms existing two-stage design pipelines in solution quality, and achieves notable computational efficiency through the coarse-to-fine strategy.",
+    "status": "found"
+  },
+  "2511.12475": {
+    "arxiv_id": "2511.12475",
+    "title": "Vortex states and entanglement properties in multiphoton pair production",
+    "authors": [
+      "Hong-Hao Fan",
+      "Lie-Juan Li",
+      "Zhi-Hang Yao",
+      "Orkash Amat",
+      "Suo Tang",
+      "Bai-Song Xie"
+    ],
+    "submission_date": "2025-11-16T06:27:46Z",
+    "latest_updated": "2025-11-16T06:27:46Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.12475v1"
+    ],
+    "abstract": "We investigate the multiphoton pair production in circularly polarized field via two level model. There appears obvious discrete ring structures in the momentum distribution of the created particles, in which the ring radius is mainly controlled by the number of the photons absorbed in the creation with the energy conservation and could also be modulated by the spin of the created pair. These multiphoton rings become narrower when both of the pair particles' spin are aligned with the direction of the field rotation, and become broader if both spin are antiparallel to that direction. This spin-modulation can be simply understood with the angular momentum conservation, as less orbital angular momentum from the absorbed photons would be transferred to the created particles if their spins are aligned with the field rotation. The orbital angular momentum of the created particles is manifested as the vortex structure in the phase of the momentum distribution, and valued as the topological charge of this phase vortex. We also study the spin entanglement between the created particles, and reveal that the entanglement becomes stronger with the increase of the particles' transverse momentum, and gets sharp peak in the transition between different multiphoton rings, where the topological charge of the phase vortex is changed.",
+    "status": "found"
+  },
+  "2511.12476": {
+    "arxiv_id": "2511.12476",
+    "title": "Performance and Risk Analytics of Asian Exchange-Traded Funds",
+    "authors": [
+      "Bhathiya Divelgama",
+      "Nancy Asare Nyarko",
+      "Naa Sackley Dromo Aryee",
+      "Abootaleb Shirvani",
+      "Svetlozar T. Rachev"
+    ],
+    "submission_date": "2025-11-16T06:48:53Z",
+    "latest_updated": "2025-11-16T06:48:53Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.12476v1"
+    ],
+    "abstract": "Investing in Asian markets through exchange-traded funds (ETFs) provides investors with access to rapidly expanding economies and valuable diversification opportunities. This study examines the advantages and challenges of investing in Asian ETFs by conducting comprehensive risk assessments, portfolio analyses, and performance comparisons. The dataset comprises 29 ETFs offering exposure across a wide spectrum of Asian markets, including broad regional funds, country-specific ETFs, as well as sector-focused funds, dividend-oriented ETFs, small-cap portfolios, and emerging market bond ETFs. To evaluate risk and return dynamics, the study employs Markowitz's efficient frontier to identify optimal portfolios for given levels of risk, and conditional value-at-risk (CVaR) to capture potential extreme losses for a more comprehensive risk assessment. Multiple portfolio configurations are analyzed under long-only and long-short investment strategies to assess adaptability across varying market conditions. Furthermore, key performance risk measures, including the Sharpe ratio, Rachev ratio, and stable tail-adjusted return ratio (STARR), are calculated to provide an in-depth evaluation of reward-to-risk efficiency, with particular emphasis on the role of tail behavior in portfolio performance. This research aims to deliver deeper insights into the risk-return trade-offs, tail-risk behavior, and efficiency of Asian ETFs, offering investors a practical foundation for constructing robust and well-diversified portfolios across both emerging and developed Asian markets.",
+    "status": "found"
+  },
+  "2511.12477": {
+    "arxiv_id": "2511.12477",
+    "title": "Detection of disk-jet co-precession in a tidal disruption event",
+    "authors": [
+      "Yanan Wang",
+      "Zikun Lin",
+      "Linhui Wu",
+      "Weihua Lei",
+      "Shuyuan Wei",
+      "Shuang-Nan Zhang",
+      "Long Ji",
+      "Santiago del Palacio",
+      "Ranieri D. Baldi",
+      "Yang Huang",
+      "Jifeng Liu",
+      "Bing Zhang",
+      "Aiyuan Yang",
+      "Rurong Chen",
+      "Yangwei Zhang",
+      "Ailing Wang",
+      "Lei Yang",
+      "Panos Charalampopoulos",
+      "David R. A. Williams-Baldwin",
+      "Zhu-Heng Yao",
+      "Fu-Guo Xie",
+      "Defu Bu",
+      "Hua Feng",
+      "Xinwu Cao",
+      "Hongzhou Wu",
+      "Wenxiong Li",
+      "Erlin Qiao",
+      "Giorgos Leloudas",
+      "Joseph P Anderson",
+      "Xinwen Shu",
+      "Dheeraj R. Pasham",
+      "Hu Zou",
+      "Matt Nicholl",
+      "Thomas Wevers",
+      "Tomas E. Muller-Bravo",
+      "Jing Wang",
+      "Jianyan Wei",
+      "Yu-Lei Qiu",
+      "Weijian Guo",
+      "Claudia P. Gutierrez",
+      "Mariusz Gromadzki",
+      "Cosimo Inserra",
+      "Lydia Makrygianni",
+      "Francesca Onori",
+      "Tanja Petrushevska",
+      "Diego Altamirano",
+      "Lluis Galbany",
+      "Miguel Perez-Torres",
+      "Ting-Wan Chen"
+    ],
+    "submission_date": "2025-11-16T06:57:43Z",
+    "latest_updated": "2025-12-30T02:19:19Z",
+    "revised_dates": null,
+    "venue": "Science Advances, 11, 25.9068 (2025)",
+    "latest_version": 2,
+    "versions": [
+      "2511.12477v1",
+      "2511.12477v2"
+    ],
+    "abstract": "Theories and simulations predict that intense spacetime curvature near black holes bends the trajectories of light and matter, driving disk and jet precession under relativistic torques. However, direct observational evidence of disk-jet co-precession remains elusive. Here, we report the most compelling case to date: a tidal disruption event (TDE) exhibiting unprecedented 19.6-day quasi-periodic variations in both X-rays and radio, with X-ray amplitudes exceeding an order of magnitude. The nearly synchronized X-ray and radio variations suggest a shared mechanism regulating the emission regions. We demonstrate that a disk-jet Lense-Thirring precession model successfully reproduces these variations while requiring a low-spin black hole. This study uncovers previously uncharted short-term radio variability in TDEs, highlights the transformative potential of high-cadence radio monitoring, and offers profound insights into disk-jet physics.",
+    "status": "found"
+  },
+  "2511.12478": {
+    "arxiv_id": "2511.12478",
+    "title": "Lightweight Deep Autoencoder for ECG Denoising with Morphology Preservation and Near Real-Time Hardware Deployment",
+    "authors": [
+      "Mahdi Pirayesh Shirazi Nejad",
+      "David Hicks",
+      "Matt Valentine",
+      "Ki H. Chon"
+    ],
+    "submission_date": "2025-11-16T07:02:09Z",
+    "latest_updated": "2025-11-16T07:02:09Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.12478v1"
+    ],
+    "abstract": "Electrocardiogram (ECG) signals are often degraded by various noise sources such as baseline wander, motion artifacts, and electromyographic interference, posing a major challenge in clinical settings. This paper presents a lightweight deep learning-based denoising framework, forming a compact autoencoder architecture. The model was trained under severe noise conditions (-5 dB signal-to-noise ratio (SNR)) using a rigorously partitioned dataset to ensure no data leakage and robust generalization. Extensive evaluations were conducted across seven noise configurations and three SNR levels (-5 dB, 0 dB, and +5 dB), showing consistent denoising performance with minimal morphological distortion, critical for maintaining diagnostic integrity. In particular, tests on clinically vital rhythms such as ventricular tachycardia (VT) and ventricular fibrillation (VF) confirm that the proposed model effectively suppresses noise without altering arrhythmic features essential for diagnosis. Visual and quantitative assessments, including SNR improvement, RMSE, and correlation metrics, validate the model's efficacy in preserving waveform fidelity. To demonstrate real-world applicability, the model was deployed on a Raspberry Pi 4 using TensorFlow Lite with float16 precision. Inference latency was measured at just 1.41 seconds per 14-second ECG segment, indicating feasibility for near-real-time use in edge devices. Overall, this study introduces a lightweight, hardware-validated, and morphologically reliable ECG denoising solution suitable for integration into portable or wearable healthcare systems.",
+    "status": "found"
+  },
+  "2511.12479": {
+    "arxiv_id": "2511.12479",
+    "title": "ClutterNav: Gradient-Guided Search for Efficient 3D Clutter Removal with Learned Costmaps",
+    "authors": [
+      "Navin Sriram Ravie",
+      "Keerthi Vasan M",
+      "Bijo Sebastian"
+    ],
+    "submission_date": "2025-11-16T07:10:46Z",
+    "latest_updated": "2025-11-16T07:10:46Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.12479v1"
+    ],
+    "abstract": "Dense clutter removal for target object retrieval presents a challenging problem, especially when targets are embedded deep within densely-packed configurations. It requires foresight to minimize overall changes to the clutter configuration while accessing target objects, avoiding stack destabilization and reducing the number of object removals required. Rule-based planners when applied to this problem, rely on rigid heuristics, leading to high computational overhead. End-to-end reinforcement learning approaches struggle with interpretability and generalizability over different conditions. To address these issues, we present ClutterNav, a novel decision-making framework that can identify the next best object to be removed so as to access a target object in a given clutter, while minimising stack disturbances. ClutterNav formulates the problem as a continuous reinforcement learning task, where each object removal dynamically updates the understanding of the scene. A removability critic, trained from demonstrations, estimates the cost of removing any given object based on geometric and spatial features. This learned cost is complemented by integrated gradients that assess how the presence or removal of surrounding objects influences the accessibility of the target. By dynamically prioritizing actions that balance immediate removability against long-term target exposure, ClutterNav achieves near human-like strategic sequencing, without predefined heuristics. The proposed approach is validated extensively in simulation and over real-world experiments. The results demonstrate real-time, occlusion-aware decision-making in partially observable environments.",
+    "status": "found"
+  },
+  "2511.12480": {
+    "arxiv_id": "2511.12480",
+    "title": "MaskAnyNet: Rethinking Masked Image Regions as Valuable Information in Supervised Learning",
+    "authors": [
+      "Jingshan Hong",
+      "Haigen Hu",
+      "Huihuang Zhang",
+      "Qianwei Zhou",
+      "Zhao Li"
+    ],
+    "submission_date": "2025-11-16T07:11:33Z",
+    "latest_updated": "2025-11-16T07:11:33Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.12480v1"
+    ],
+    "abstract": "In supervised learning, traditional image masking faces two key issues: (i) discarded pixels are underutilized, leading to a loss of valuable contextual information; (ii) masking may remove small or critical features, especially in fine-grained tasks. In contrast, masked image modeling (MIM) has demonstrated that masked regions can be reconstructed from partial input, revealing that even incomplete data can exhibit strong contextual consistency with the original image. This highlights the potential of masked regions as sources of semantic diversity. Motivated by this, we revisit the image masking approach, proposing to treat masked content as auxiliary knowledge rather than ignored. Based on this, we propose MaskAnyNet, which combines masking with a relearning mechanism to exploit both visible and masked information. It can be easily extended to any model with an additional branch to jointly learn from the recomposed masked region. This approach leverages the semantic diversity of the masked regions to enrich features and preserve fine-grained details. Experiments on CNN and Transformer backbones show consistent gains across multiple benchmarks. Further analysis confirms that the proposed method improves semantic diversity through the reuse of masked content.",
+    "status": "found"
+  },
+  "2511.12481": {
+    "arxiv_id": "2511.12481",
+    "title": "Mock Observations for the CSST Mission: Multi-Channel Imager--Instrument Simulation",
+    "authors": [
+      "Zhao-Jun Yan",
+      "Huan-Yuan Shan",
+      "Zhen-Ya Zheng",
+      "Xi-Yan Peng",
+      "Zhao-Xiang Qi",
+      "Chun Xu",
+      "Lin Lin",
+      "Xin-Rong Wen",
+      "Chun-Yan Jiang",
+      "Li-Xin Zheng",
+      "Jing Zhong",
+      "Fang-Ting Yuan",
+      "Zhen-Lei Chen",
+      "Wei Chen",
+      "Mao-Chun Wu",
+      "Zhen-Sen Fu",
+      "Ke-Xin Li",
+      "Lin Nie",
+      "Chao Liu",
+      "Nan Li",
+      "Qiao Wang",
+      "Zi-Huang Cao",
+      "Shuai Feng",
+      "Guo-Liang Li",
+      "Lei Wang",
+      "Cheng-Liang Wei",
+      "Xiao-Bo Li",
+      "Zhang Ban",
+      "Xun Yang",
+      "Yu-Xi Jiang",
+      "De-Zi Liu",
+      "Yong-He Chen",
+      "Xiao-Hua Liu",
+      "Fang Xu",
+      "Xue Cheng",
+      "Yue Su",
+      "Tong-Fang Duan",
+      "Chao Qi",
+      "Na Li",
+      "Geng Zheng",
+      "Chong Ma",
+      "Jing Tang",
+      "Ran Li"
+    ],
+    "submission_date": "2025-11-16T07:22:04Z",
+    "latest_updated": "2025-11-16T07:22:04Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.12481v1"
+    ],
+    "abstract": "The Chinese Space Station Survey Telescope (CSST), a two-meter aperture astronomical space telescope under China's manned space program, is equipped with multiple back-end scientific instruments. As an astronomical precision measurement module of the CSST, the Multi-Channel Imager (MCI) can cover a wide wavelength range from ultraviolet to near-infrared with three-color simultaneous high-precision photometry and imaging, which meets the scientific requirements for various fields. The diverse scientific objectives of MCI require not only a robust airborne platform, advanced optical systems, and observing facilities but also comprehensive software support for scientific operations and research. To this end, it is essential to develop realistic observational simulation software to thoroughly evaluate the MCI data stream and provide calibration tools for future scientific investigations. The MCI instrument simulation software will serve as a foundation for the development of the MCI data processing pipeline and will facilitate improvements in both hardware and software, as well as in the observational operation strategy, in alignment with the mission's scientific goals. In conclusion, we present a comprehensive overview of the MCI instrument simulation and some corresponding performances of the MCI data processing pipeline.",
+    "status": "found"
+  },
+  "2511.12482": {
+    "arxiv_id": "2511.12482",
+    "title": "Discovering autonomous quantum error correction via deep reinforcement learning",
+    "authors": [
+      "Yue Yin",
+      "Tailong Xiao",
+      "Xiaoyang Deng",
+      "Ming He",
+      "Jianping Fan",
+      "Guihua Zeng"
+    ],
+    "submission_date": "2025-11-16T07:31:50Z",
+    "latest_updated": "2026-06-02T03:23:05Z",
+    "revised_dates": null,
+    "venue": "Phys. Rev. A 112, 062618 (2025)",
+    "latest_version": 2,
+    "versions": [
+      "2511.12482v1",
+      "2511.12482v2"
+    ],
+    "abstract": "Quantum error correction is essential for fault-tolerant quantum computing. However, standard methods relying on active measurements may introduce additional errors. Autonomous quantum error correction (AQEC) circumvents this by utilizing engineered dissipation and drives in bosonic systems, but identifying practical encoding remains challenging due to stringent Knill-Laflamme conditions. In this work, we utilize curriculum learning enabled deep reinforcement learning to discover Bosonic codes under approximate AQEC framework to resist both single-photon and double-photon losses. We present an analytical solution of solving the master equation under approximation conditions, which can significantly accelerate the training process of reinforcement learning. The agent first identifies an encoded subspace surpassing the breakeven point through rapid exploration within a constrained evolutionary time-frame, then strategically fine-tunes its policy to sustain this performance advantage over extended temporal horizons. We find that the two-phase trained agent can discover the optimal set of codewords, i.e., the Fock states $\\ket{4}$ and $\\ket{7}$ considering the effect of both single-photon and double-photon loss. We identify that the discovered code surpasses the breakeven threshold over a longer evolution time and achieve the state-of-art performance. We also analyze the robustness of the code against the phase damping and amplitude damping noise. Our work highlights the potential of curriculum learning enabled deep reinforcement learning in discovering the optimal quantum error correct code especially in early fault-tolerant quantum systems.",
+    "status": "found"
+  },
+  "2511.12483": {
+    "arxiv_id": "2511.12483",
+    "title": "Mock Observations for the CSST Mission: Integral Field Spectrograph--Instrument Simulation",
+    "authors": [
+      "Zhao-Jun Yan",
+      "Jun Yin",
+      "Lei Hao",
+      "Shi-Yin Shen",
+      "Wei Chen",
+      "Shuai Feng",
+      "Yi-Fei Xiong",
+      "Chun Xu",
+      "Xin-Rong Wen",
+      "Lin Lin",
+      "Chao Liu",
+      "Lin Long",
+      "Zhen-Lei Chen",
+      "Mao-Chun Wu",
+      "Xiao-Bo Li",
+      "Zhang Ban",
+      "Xun Yang",
+      "Yu-Xi Jiang",
+      "Guo-Liang Li",
+      "Ke-Xin Li",
+      "Jian-Jun Chen",
+      "Nan Li",
+      "Cheng-Liang Wei",
+      "Lei Wang",
+      "Bai-Chuan Ren",
+      "Jun Wei",
+      "Jing Tang",
+      "Ran Li"
+    ],
+    "submission_date": "2025-11-16T07:33:56Z",
+    "latest_updated": "2025-11-16T07:33:56Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.12483v1"
+    ],
+    "abstract": "The Chinese Space Station Survey Telescope (CSST) is a next-generation Stage-IV facility renowned for its wide field of view, high image quality, and multi-band observational capabilities. Among the five instruments onboard the CSST, the Integral Field Spectrograph (IFS) offers the unique ability to simultaneously capture spatial and spectral information across a field of view of no less than $6^{''}\\times6^{''}$. Key advantages of the IFS include a high spatial resolution of $0.2^{''}$ and a broad spectral coverage from 350 to 1000 nm, making it an ideal instrument for studying physical processes in the vicinity of supermassive black holes within galaxies. To more accurately assess the technical and scientific performance of the CSST-IFS, it is essential to develop a simulation tool that incorporates realistic effects from all optical components. Such a simulation will form an integral part of the CSST-IFS data and pipeline system, enabling the development of the data reduction pipeline well ahead of actual observations. This paper presents an end-to-end simulation workflow for the CSST-IFS, incorporating a wide range of instrumental effects that may influence its spectral and imaging performance. The simulation accounts for optical diffraction effects introduced by all components, such as image slicers and slit array, as well as sub-pixel effects from gratings. It also includes various detector noises, frame-shifting effects, and charge-transfer inefficiency. Real observational conditions--such as target Doppler shift, cosmic rays, and other in-orbit operational effects--are also considered. We describe the technical implementation of the simulation and present results that quantitatively characterize key instrument parameters.",
+    "status": "found"
+  },
+  "2511.12484": {
+    "arxiv_id": "2511.12484",
+    "title": "One Request, Multiple Experts: LLM Orchestrates Domain Specific Models via Adaptive Task Routing",
+    "authors": [
+      "Xu Yang",
+      "Chenhui Lin",
+      "Haotian Liu",
+      "Qi Wang",
+      "Yue Yang",
+      "Wenchuan Wu"
+    ],
+    "submission_date": "2025-11-16T07:36:49Z",
+    "latest_updated": "2026-08-24T03:42:07Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.12484v1",
+      "2511.12484v2"
+    ],
+    "abstract": "With the integration of massive distributed energy resources and the widespread participation of novel market entities, the operation of active distribution networks (ADNs) is progressively evolving into a complex, multi-scenario, and multi-objective problem. Although expert engineers have developed numerous domain specific models (DSMs) to address distinct technical problems, mastering, integrating, and orchestrating these heterogeneous DSMs still entail considerable overhead for ADN operators. Therefore, an intelligent approach is urgently required to unify these DSMs and enable efficient coordination. To address this challenge, this paper proposes the ADN-Agent architecture, which leverages a general large language model (LLM) to coordinate multiple DSMs, enabling adaptive intent recognition, task decomposition, and DSM invocation. Within the ADN-Agent, we design a novel communication mechanism that provides a unified and flexible interface for diverse heterogeneous DSMs. Finally, for specific language-intensive subtasks, we propose an automated training pipeline for fine-tuning small language models, thereby effectively enhancing the overall problem-solving capability of the system. Comprehensive comparisons and ablation experiments validate the efficacy of the proposed method and demonstrate that the ADN-Agent architecture outperforms existing LLM application paradigms.",
+    "status": "found"
+  },
+  "2511.12485": {
+    "arxiv_id": "2511.12485",
+    "title": "ARCHE: A Novel Task to Evaluate LLMs on Latent Reasoning Chain Extraction",
+    "authors": [
+      "Pengze Li",
+      "Jiaqi Liu",
+      "Junchi Yu",
+      "Lihao Liu",
+      "Mingyu Ding",
+      "Wanli Ouyang",
+      "Shixiang Tang",
+      "Xi Chen"
+    ],
+    "submission_date": "2025-11-16T07:37:09Z",
+    "latest_updated": "2025-11-16T07:37:09Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.12485v1"
+    ],
+    "abstract": "Large language models (LLMs) are increasingly used in scientific domains. While they can produce reasoning-like content via methods such as chain-of-thought prompting, these outputs are typically unstructured and informal, obscuring whether models truly understand the fundamental reasoning paradigms that underpin scientific inference. To address this, we introduce a novel task named Latent Reasoning Chain Extraction (ARCHE), in which models must decompose complex reasoning arguments into combinations of standard reasoning paradigms in the form of a Reasoning Logic Tree (RLT). In RLT, all reasoning steps are explicitly categorized as one of three variants of Peirce's fundamental inference modes: deduction, induction, or abduction. To facilitate this task, we release ARCHE Bench, a new benchmark derived from 70 Nature Communications articles, including more than 1,900 references and 38,000 viewpoints. We propose two logic-aware evaluation metrics: Entity Coverage (EC) for content completeness and Reasoning Edge Accuracy (REA) for step-by-step logical validity. Evaluations on 10 leading LLMs on ARCHE Bench reveal that models exhibit a trade-off between REA and EC, and none are yet able to extract a complete and standard reasoning chain. These findings highlight a substantial gap between the abilities of current reasoning models and the rigor required for scientific argumentation.",
+    "status": "found"
+  },
+  "2511.12486": {
+    "arxiv_id": "2511.12486",
+    "title": "A Decentralized Root Cause Localization Approach for Edge Computing Environments",
+    "authors": [
+      "Duneesha Fernando",
+      "Maria A. Rodriguez",
+      "Rajkumar Buyya"
+    ],
+    "submission_date": "2025-11-16T07:38:14Z",
+    "latest_updated": "2025-11-16T07:38:14Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.12486v1"
+    ],
+    "abstract": "Edge computing environments host increasingly complex microservice-based IoT applications, which are prone to performance anomalies that can propagate across dependent services. Identifying the true source of such anomalies, known as Root Cause Localization (RCL), is essential for timely mitigation. However, existing RCL approaches are designed for cloud environments and rely on centralized analysis, which increases latency and communication overhead when applied at the edge. This paper proposes a decentralized RCL approach that executes localization directly at the edge device level using the Personalized PageRank (PPR) algorithm. The proposed method first groups microservices into communication- and colocation-aware clusters, thereby confining most anomaly propagation within cluster boundaries. Within each cluster, PPR is executed locally to identify the root cause, significantly reducing localization time. For the rare cases where anomalies propagate across clusters, we introduce an inter-cluster peer-to-peer approximation process, enabling lightweight coordination among clusters with minimal communication overhead. To enhance the accuracy of localization in heterogeneous edge environments, we also propose a novel anomaly scoring mechanism tailored to the diverse anomaly triggers that arise across microservice, device, and network layers. Evaluation results on the publicly available edge dataset, MicroCERCL, demonstrate that the proposed decentralized approach achieves comparable or higher localization accuracy than its centralized counterpart while reducing localization time by up to 34%. These findings highlight that decentralized graph-based RCL can provide a practical and efficient solution for anomaly diagnosis in resource-constrained edge environments.",
+    "status": "found"
+  },
+  "2511.12487": {
+    "arxiv_id": "2511.12487",
+    "title": "ToxSearch: Evolving Prompts for Toxicity Search in Large Language Models",
+    "authors": [
+      "Onkar Shelar",
+      "Travis Desell"
+    ],
+    "submission_date": "2025-11-16T07:47:31Z",
+    "latest_updated": "2026-01-24T06:07:58Z",
+    "revised_dates": null,
+    "venue": "In: García-Sánchez, P., Díaz Álvarez, J., Murphy, A. (eds) Applications of Evolutionary Computation. EvoApplications 2026. Lecture Notes in Computer Science, vol 16525. Springer, Cham",
+    "latest_version": 2,
+    "versions": [
+      "2511.12487v1",
+      "2511.12487v2"
+    ],
+    "abstract": "Large Language Models remain vulnerable to adversarial prompts that elicit toxic content even after safety alignment. We present ToxSearch, a black-box evolutionary framework that tests model safety by evolving prompts in a synchronous steady-state loop. The system employs a diverse set of operators, including lexical substitutions, negation, back-translation, paraphrasing, and two semantic crossover operators, while a moderation oracle provides fitness guidance. Operator-level analysis shows heterogeneous behavior: lexical substitutions offer the best yield-variance trade-off, semantic-similarity crossover acts as a precise low-throughput inserter, and global rewrites exhibit high variance with elevated refusal costs. Using elite prompts evolved on LLaMA 3.1 8B, we observe practically meaningful but attenuated cross-model transfer, with toxicity roughly halving on most targets, smaller LLaMA 3.2 variants showing the strongest resistance, and some cross-architecture models retaining higher toxicity. These results suggest that small, controllable perturbations are effective vehicles for systematic red-teaming and that defenses should anticipate cross-model reuse of adversarial prompts rather than focusing only on single-model hardening.",
+    "status": "found"
+  },
+  "2511.12488": {
+    "arxiv_id": "2511.12488",
+    "title": "The first AKRA mass map reconstruction from HSC Y1 data",
+    "authors": [
+      "Yuan Shi",
+      "Pengjie Zhang",
+      "Zhao Chen",
+      "Jian Qin",
+      "Li Cui",
+      "Furen Deng",
+      "Ji Yao"
+    ],
+    "submission_date": "2025-11-16T07:53:08Z",
+    "latest_updated": "2026-04-22T14:21:36Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2511.12488v1",
+      "2511.12488v2",
+      "2511.12488v3"
+    ],
+    "abstract": "Weak lensing mass-mapping from shear catalogs faces systematic challenges from survey masks and spatially varying noise. To overcome these issues and reconstruct unbiased convergence $κ$ maps, we have constructed the AKRA (Accurate Kappa Reconstruction Algorithm), a prior-free and maximum-likelihood based analytical method. It has been validated for mock shear catalogs with a variety of survey masks. In this work, we present the first real-data application of the AKRA on the Subaru Hyper Suprime-Cam Year 1 (HSC Y1) data. We first validate AKRA using mock shear catalogs from the \\texttt{Kun} simulation suite, with masks corresponding to the six HSC Y1 regions (\\texttt{GAMA09H}, \\texttt{GAMA15H}, \\texttt{HECTOMAP}, \\texttt{VVDS}, \\texttt{WIDE12H}, and \\texttt{XMMLSS}). The investigated statistics, including the lensing power spectrum, $\\langle κ^2\\rangle$, $\\langle κ^3\\rangle$, and the one-point probability distribution function of $κ$, are all unbiased. We then apply AKRA to the HSC Y1 shear catalog and provide reconstructed $κ$ maps ready for subsequent scientific analyses.",
+    "status": "found"
+  }
+}

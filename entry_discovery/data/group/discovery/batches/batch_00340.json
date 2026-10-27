@@ -1,0 +1,471 @@
+{
+  "2601.19956": {
+    "arxiv_id": "2601.19956",
+    "title": "VoxPrivacy: A Benchmark for Evaluating Interactional Privacy of Speech Language Models",
+    "authors": [
+      "Yuxiang Wang",
+      "Hongyu Liu",
+      "Dekun Chen",
+      "Xueyao Zhang",
+      "Zhizheng Wu"
+    ],
+    "submission_date": "2026-01-27T06:22:14Z",
+    "latest_updated": "2026-09-03T06:04:10Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.19956v1",
+      "2601.19956v2"
+    ],
+    "abstract": "As Speech Language Models (SLMs) transition from personal devices to shared, multi-user environments such as smart homes, a new challenge emerges: the model is expected to distinguish between users to manage information flow appropriately. Without this capability, an SLM could reveal one user's confidential schedule to another, a privacy failure we term interactional privacy. Thus, the ability to generate speaker-aware responses becomes essential for SLM safe deployment. Current SLM benchmarks test dialogue ability but overlook speaker identity. Multi-speaker benchmarks check who said what without assessing whether SLMs adapt their responses. Privacy benchmarks focus on globally sensitive data (e.g., bank passwords) while neglecting contextual privacy-sensitive information (e.g., a user's private appointment). To address this gap, we introduce VoxPrivacy, the first benchmark designed to evaluate interactional privacy in SLMs. VoxPrivacy spans three tiers of increasing difficulty, from following direct secrecy commands to proactively protecting privacy. Our evaluation of nine SLMs on a 32-hour bilingual dataset reveals a widespread vulnerability: most open-source models perform close to random chance (around 50% accuracy) on conditional privacy decisions, while even strong closed-source systems fall short on proactive privacy inference. We further validate these findings on Real-VoxPrivacy, a human-recorded subset, confirming that failures observed on synthetic data persist in real speech. Finally, we demonstrate a viable path forward: by fine-tuning on a new 4,000-hour training set, we improve privacy-preserving abilities while maintaining robustness. To support future work, we release the VoxPrivacy benchmark, the large-scale training set, and the fine-tuned model to foster the development of safer and more context-aware SLMs.",
+    "status": "found"
+  },
+  "2601.19957": {
+    "arxiv_id": "2601.19957",
+    "title": "SunBURST: Deterministic GPU-Accelerated Bayesian Evidence via Mode-Centric Laplace Integration",
+    "authors": [
+      "Ira Wolfson"
+    ],
+    "submission_date": "2026-01-27T07:21:55Z",
+    "latest_updated": "2026-01-27T07:21:55Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19957v1"
+    ],
+    "abstract": "Bayesian evidence evaluation becomes computationally prohibitive in high dimensions due to the curse of dimensionality and the sequential nature of sampling-based methods. We introduce SunBURST, a deterministic GPU-native algorithm for Bayesian evidence calculation that replaces global volume exploration with mode-centric geometric integration. The pipeline combines radial mode discovery, batched L-BFGS refinement, and Laplace-based analytic integration, treating modes independently and converting large batches of likelihood evaluations into massively parallel GPU workloads. For Gaussian and near-Gaussian posteriors, where the Laplace approximation is exact or highly accurate, SunBURST achieves numerical agreement at double-precision tolerance in dimensions up to 1024 in our benchmarks, with sub-linear wall-clock scaling across the tested range. In multimodal Gaussian mixtures, conservative configurations yield sub-percent accuracy while maintaining favorable scaling. SunBURST is not intended as a universal replacement for sampling-based inference. Its design targets regimes common in physical parameter estimation and inverse problems, where posterior mass is locally well approximated by Gaussian structure around a finite number of modes. In strongly non-Gaussian settings, the method can serve as a fast geometry-aware evidence estimator or as a preprocessing stage for hybrid workflows. These results show that high-precision Bayesian evidence evaluation can be made computationally tractable in very high dimensions through deterministic integration combined with massive parallelism.",
+    "status": "found"
+  },
+  "2601.19958": {
+    "arxiv_id": "2601.19958",
+    "title": "Deep Neural Networks as Iterated Function Systems and a Generalization Bound",
+    "authors": [
+      "Jonathan Vacher"
+    ],
+    "submission_date": "2026-01-27T07:32:49Z",
+    "latest_updated": "2026-01-27T07:32:49Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19958v1"
+    ],
+    "abstract": "Deep neural networks (DNNs) achieve remarkable performance on a wide range of tasks, yet their mathematical analysis remains fragmented: stability and generalization are typically studied in disparate frameworks and on a case-by-case basis. Architecturally, DNNs rely on the recursive application of parametrized functions, a mechanism that can be unstable and difficult to train, making stability a primary concern. Even when training succeeds, there are few rigorous results on how well such models generalize beyond the observed data, especially in the generative setting. In this work, we leverage the theory of stochastic Iterated Function Systems (IFS) and show that two important deep architectures can be viewed as, or canonically associated with, place-dependent IFS. This connection allows us to import results from random dynamical systems to (i) establish the existence and uniqueness of invariant measures under suitable contractivity assumptions, and (ii) derive a Wasserstein generalization bound for generative modeling. The bound naturally leads to a new training objective that directly controls the collage-type approximation error between the data distribution and its image under the learned transfer operator. We illustrate the theory on a controlled 2D example and empirically evaluate the proposed objective on standard image datasets (MNIST, CelebA, CIFAR-10).",
+    "status": "found"
+  },
+  "2601.19959": {
+    "arxiv_id": "2601.19959",
+    "title": "Comment on \"Instability of the ferromagnetic quantum critical point and symmetry of the ferromagnetic ground state in two-dimensional and three-dimensional electron gases with arbitrary spin-orbit splitting\"",
+    "authors": [
+      "D. Belitz",
+      "T. R. Kirkpatrick"
+    ],
+    "submission_date": "2026-01-27T08:00:15Z",
+    "latest_updated": "2026-05-19T21:37:23Z",
+    "revised_dates": null,
+    "venue": "Phys. Rev. B 114, 026401 (2026)",
+    "latest_version": 2,
+    "versions": [
+      "2601.19959v1",
+      "2601.19959v2"
+    ],
+    "abstract": "Metallic quantum ferromagnets in the absence of quenched disorder are known to generically undergo a first-order quantum phase transition, avoiding the quantum critical point that had originally been expected. This is due to soft modes in the underlying Fermi liquid that lead to long-ranged correlations. These correlations in turn yield a nonanalytic dependence of the free energy on the magnetization even at a mean-field level that results in a fluctuation-induced first-order transition. Kirkpatrick and Belitz [Phys. Rev. Lett. {\\bf 124}, 147201 (2020)] have pointed out that one notable exception are non-centrosymmetric metals with a strong spin-orbit interaction. In such materials the spin-orbit interaction gives the relevant soft modes a mass, which inhibits the mechanism leading to a first-order transition. Miserev, Loss, and Klinovaja [Phys. Rev. B {\\bf 106}, 134417 (2022)] have claimed that this conclusion does not hold if electron-electron interactions in the particle-particle channel, or 2$\\kF$ scattering processes, are considered. They concluded that this interaction channel leads to soft modes that are not rendered massive by the spin-orbit interaction and again lead to a first-order quantum phase transition. In this Comment we show that this conclusion is not correct in three-dimensional magnets if the screening of the interaction is properly taken into account.",
+    "status": "found"
+  },
+  "2601.19960": {
+    "arxiv_id": "2601.19960",
+    "title": "Do we really need Self-Attention for Streaming Automatic Speech Recognition?",
+    "authors": [
+      "Youness Dkhissi",
+      "Valentin Vielzeuf",
+      "Elys Allesiardo",
+      "Anthony Larcher"
+    ],
+    "submission_date": "2026-01-27T08:07:14Z",
+    "latest_updated": "2026-01-27T08:07:14Z",
+    "revised_dates": null,
+    "venue": "International Conference on Acoustics, Speech, and Signal Processing (ICASSP), IEEE Signal Processing Society, May 2026, Barcelona, Spain",
+    "latest_version": 1,
+    "versions": [
+      "2601.19960v1"
+    ],
+    "abstract": "Transformer-based architectures are the most used architectures in many deep learning fields like Natural Language Processing, Computer Vision or Speech processing. It may encourage the direct use of Transformers in the constrained tasks, without questioning whether it will yield the same benefits as in standard tasks. Given specific constraints, it is essential to evaluate the relevance of transformer models. This work questions the suitability of transformers for specific domains. We argue that the high computational requirements and latency issues associated with these models do not align well with streaming applications. Our study promotes the search for alternative strategies to improve efficiency without sacrificing performance. In light of this observation, our paper critically examines the usefulness of transformer architecture in such constrained environments. As a first attempt, we show that the computational cost for Streaming Automatic Speech Recognition (ASR) can be reduced using deformable convolution instead of Self-Attention. Furthermore, we show that Self-Attention mechanisms can be entirely removed and not replaced, without observing significant degradation in the Word Error Rate.",
+    "status": "found"
+  },
+  "2601.19961": {
+    "arxiv_id": "2601.19961",
+    "title": "MeanCache: From Instantaneous to Average Velocity for Accelerating Flow Matching Inference",
+    "authors": [
+      "Huanlin Gao",
+      "Ping Chen",
+      "Fuyuan Shi",
+      "Ruijia Wu",
+      "Li YanTao",
+      "Qiang Hui",
+      "Yuren You",
+      "Ting Lu",
+      "Chao Tan",
+      "Shaoan Zhao",
+      "Zhaoxiang Liu",
+      "Fang Zhao",
+      "Kai Wang",
+      "Shiguo Lian"
+    ],
+    "submission_date": "2026-01-27T08:35:50Z",
+    "latest_updated": "2026-03-09T04:12:59Z",
+    "revised_dates": null,
+    "venue": "ICLR 2026",
+    "latest_version": 3,
+    "versions": [
+      "2601.19961v1",
+      "2601.19961v2",
+      "2601.19961v3"
+    ],
+    "abstract": "We present MeanCache, a training-free caching framework for efficient Flow Matching inference. Existing caching methods reduce redundant computation but typically rely on instantaneous velocity information (e.g., feature caching), which often leads to severe trajectory deviations and error accumulation under high acceleration ratios. MeanCache introduces an average-velocity perspective: by leveraging cached Jacobian--vector products (JVP) to construct interval average velocities from instantaneous velocities, it effectively mitigates local error accumulation. To further improve cache timing and JVP reuse stability, we develop a trajectory-stability scheduling strategy as a practical tool, employing a Peak-Suppressed Shortest Path under budget constraints to determine the schedule. Experiments on FLUX.1, Qwen-Image, and HunyuanVideo demonstrate that MeanCache achieves 4.12X and 4.56X and 3.59X acceleration, respectively, while consistently outperforming state-of-the-art caching baselines in generation quality. We believe this simple yet effective approach provides a new perspective for Flow Matching inference and will inspire further exploration of stability-driven acceleration in commercial-scale generative models.",
+    "status": "found"
+  },
+  "2601.19962": {
+    "arxiv_id": "2601.19962",
+    "title": "Controlled drug delivery from chitosan-coated heparin-loaded nanopores anodically grown on nitinol shape-memory alloy",
+    "authors": [
+      "M. Moradi",
+      "E. Salahinejad",
+      "E. Sharifi",
+      "L. Tayebi"
+    ],
+    "submission_date": "2026-01-27T10:51:57Z",
+    "latest_updated": "2026-01-27T10:51:57Z",
+    "revised_dates": null,
+    "venue": "Carbohydrate polymers, 314 (2023) 120961",
+    "latest_version": 1,
+    "versions": [
+      "2601.19962v1"
+    ],
+    "abstract": "Nitinol (NiTi shape-memory alloy) is an interesting candidate in various medical applications like dental, orthopedic, and cardiovascular devices, owing to its unique mechanical behaviors and proper biocompatibility. The aim of this work is the local controlled delivery of a cardiovascular drug, heparin, loaded onto nitinol treated by electrochemical anodizing and chitosan coating. In this regard, the structure, wettability, drug release kinetics, and cell cytocompatibility of the specimens were analyzed in vitro. The two-stage anodizing process successfully developed a regular nanoporous layer of Ni-Ti-O on nitinol, which considerably decreased the sessile water contact angle and induced hydrophilicity. The application of the chitosan coatings controlled the release of heparin mainly by a diffusional mechanism, where the drug release mechanisms were evaluated by the Higuchi, first-order, zero-order, and Korsmeyer-Pepass models. Human umbilical cord endothelial cells (HUVECs) viability assay also showed the non-cytotoxicity of the samples, so that the best performance was found for the chitosan-coated samples. It is concluded that the designed drug delivery systems are promising for cardiovascular, particularly stent applications.",
+    "status": "found"
+  },
+  "2601.19963": {
+    "arxiv_id": "2601.19963",
+    "title": "Cross-Session Decoding of Neural Spiking Data via Task-Conditioned Latent Alignment",
+    "authors": [
+      "Canyang Zhao",
+      "Bolin Peng",
+      "J. Patrick Mayo",
+      "Ce Ju",
+      "Bing Liu"
+    ],
+    "submission_date": "2026-01-27T11:06:33Z",
+    "latest_updated": "2026-05-02T02:56:21Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2601.19963v1",
+      "2601.19963v2",
+      "2601.19963v3"
+    ],
+    "abstract": "Training a high-performing neural decoder can be difficult when only limited data are available from a recording session. To address this challenge, we propose a Task-Conditioned Latent Alignment framework (TCLA) for cross-session neural decoding with limited target-session data. Building upon an autoencoder architecture, TCLA first learns a low-dimensional neural representation from a source session with sufficient data. For target sessions with limited data, TCLA then aligns the target latent representations to the source session in a task-conditioned manner, enabling effective transfer of learned neural representations to support decoder training in the target session. We evaluate TCLA on the macaque motor and oculomotor center-out datasets. Compared to baseline methods trained solely on target-session data, TCLA consistently improves decoding performance across datasets and decoding settings, with gains in the coefficient of determination of up to 0.386 for y coordinate velocity decoding in a motor dataset. These results suggest that TCLA provides an effective strategy for transferring knowledge from source to target sessions, improving neural decoding performance under conditions with limited target-session data.",
+    "status": "found"
+  },
+  "2601.19964": {
+    "arxiv_id": "2601.19964",
+    "title": "Achieving Productivity Gains with AI-based IDE features: A Journey at Google",
+    "authors": [
+      "Maxim Tabachnyk",
+      "Xu Shu",
+      "Alexander Frömmgen",
+      "Pavel Sychev",
+      "Vahid Meimand",
+      "Ilia Krets",
+      "Stanislav Pyatykh",
+      "Abner Araujo",
+      "Kristóf Molnár",
+      "Satish Chandra"
+    ],
+    "submission_date": "2026-01-27T11:41:30Z",
+    "latest_updated": "2026-01-27T11:41:30Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19964v1"
+    ],
+    "abstract": "We discuss Google's journey in developing and refining two internal AI-based IDE features: code completion and natural-language-driven code transformation (Transform Code). We address challenges in latency, user experience and suggestion quality, all backed by rigorous experimentation. The article serves as an example of how to refine AI developer tools across the user interface, backend, and model layers, to deliver tangible productivity improvements in an enterprise setting.",
+    "status": "found"
+  },
+  "2601.19965": {
+    "arxiv_id": "2601.19965",
+    "title": "Modeling Cascaded Delay Feedback for Online Net Conversion Rate Prediction: Benchmark, Insights and Solutions",
+    "authors": [
+      "Mingxuan Luo",
+      "Guipeng Xv",
+      "Sishuo Chen",
+      "Xinyu Li",
+      "Li Zhang",
+      "Zhangming Chan",
+      "Xiang-Rong Sheng",
+      "Han Zhu",
+      "Jian Xu",
+      "Bo Zheng",
+      "Chen Lin"
+    ],
+    "submission_date": "2026-01-27T13:24:32Z",
+    "latest_updated": "2026-01-29T07:50:32Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.19965v1",
+      "2601.19965v2"
+    ],
+    "abstract": "In industrial recommender systems, conversion rate (CVR) is widely used for traffic allocation, but it fails to fully reflect recommendation effectiveness because it ignores refund behavior. To better capture true user satisfaction and business value, net conversion rate (NetCVR), defined as the probability that a clicked item is purchased and not refunded, has been proposed.Unlike CVR, NetCVR prediction involves a more complex multi-stage cascaded delayed feedback process. The two cascaded delays from click to conversion and from conversion to refund have opposite effects, making traditional CVR modeling methods inapplicable. Moreover, the lack of open-source datasets and online continuous training schemes further hinders progress in this area.To address these challenges, we introduce CASCADE (Cascaded Sequences of Conversion and Delayed Refund), the first large-scale open dataset derived from the Taobao app for online continuous NetCVR prediction. Through an in-depth analysis of CASCADE, we identify three key insights: (1) NetCVR exhibits strong temporal dynamics, necessitating online continuous modeling; (2) cascaded modeling of CVR and refund rate outperforms direct NetCVR modeling; and (3) delay time, which correlates with both CVR and refund rate, is an important feature for NetCVR prediction.Based on these insights, we propose TESLA, a continuous NetCVR modeling framework featuring a CVR-refund-rate cascaded architecture, stage-wise debiasing, and a delay-time-aware ranking loss. Extensive experiments demonstrate that TESLA consistently outperforms state-of-the-art methods on CASCADE, achieving absolute improvements of 12.41 percent in RI-AUC and 14.94 percent in RI-PRAUC on NetCVR prediction. The code and dataset are publicly available at https://github.com/alimama-tech/NetCVR.",
+    "status": "found"
+  },
+  "2601.19966": {
+    "arxiv_id": "2601.19966",
+    "title": "Global Plane Waves From Local Gaussians: Periodic Charge Densities in a Blink",
+    "authors": [
+      "Jonas Elsborg",
+      "Felix Ærtebjerg",
+      "Luca Thiede",
+      "Alán Aspuru-Guzik",
+      "Tejs Vegge",
+      "Arghya Bhowmik"
+    ],
+    "submission_date": "2026-01-27T16:19:40Z",
+    "latest_updated": "2026-05-29T15:52:05Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.19966v1",
+      "2601.19966v2"
+    ],
+    "abstract": "We introduce ELECTRAFI, a fast, end-to-end differentiable model for predicting periodic charge densities in crystalline materials. ELECTRAFI constructs anisotropic Gaussians in real space and exploits their closed-form Fourier transforms to analytically evaluate plane-wave coefficients via the Poisson summation formula. This formulation delegates non-local and periodic behavior to analytic transforms, enabling reconstruction of the full periodic charge density with a single inverse FFT. By avoiding explicit real-space grid probing, periodic image summation, and spherical harmonic expansions, ELECTRAFI matches or exceeds state-of-the-art accuracy across periodic benchmarks while being up to $633 \\times$ faster than the strongest competing method, reconstructing crystal charge densities in a fraction of a second. When used to initialize DFT calculations, ELECTRAFI reduces total DFT compute cost by up to ~20%, whereas slower charge density models negate savings due to high inference times. Our results show that accuracy and inference cost jointly determine end-to-end DFT speedups, and motivate our focus on efficiency.",
+    "status": "found"
+  },
+  "2601.19967": {
+    "arxiv_id": "2601.19967",
+    "title": "Perturbation-Induced Linearization: Constructing Unlearnable Data with Solely Linear Classifiers",
+    "authors": [
+      "Jinlin Liu",
+      "Wei Chen",
+      "Xiaojin Zhang"
+    ],
+    "submission_date": "2026-01-27T17:26:41Z",
+    "latest_updated": "2026-01-29T15:37:51Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.19967v1",
+      "2601.19967v2"
+    ],
+    "abstract": "Collecting web data to train deep models has become increasingly common, raising concerns about unauthorized data usage. To mitigate this issue, unlearnable examples introduce imperceptible perturbations into data, preventing models from learning effectively. However, existing methods typically rely on deep neural networks as surrogate models for perturbation generation, resulting in significant computational costs. In this work, we propose Perturbation-Induced Linearization (PIL), a computationally efficient yet effective method that generates perturbations using only linear surrogate models. PIL achieves comparable or better performance than existing surrogate-based methods while reducing computational time dramatically. We further reveal a key mechanism underlying unlearnable examples: inducing linearization to deep models, which explains why PIL can achieve competitive results in a very short time. Beyond this, we provide an analysis about the property of unlearnable examples under percentage-based partial perturbation. Our work not only provides a practical approach for data protection but also offers insights into what makes unlearnable examples effective.",
+    "status": "found"
+  },
+  "2601.19968": {
+    "arxiv_id": "2601.19968",
+    "title": "What is the AGI in Offensive Security ?",
+    "authors": [
+      "Youngwoong Cho"
+    ],
+    "submission_date": "2026-01-27T17:41:55Z",
+    "latest_updated": "2026-01-27T17:41:55Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19968v1"
+    ],
+    "abstract": "What is the AGI in Offensive Security? One can break it down into two questions : (1) any offensive security tasks could be reduced into symbolic language manipulation (language representation + reasoning), (2) powerful language model (LLM) are enough to \"deal with\" any symbolic language manipulation. This paper can formally model a target system as a state machine and a hacker as an interactive symbolic agent. And it shows that every interaction in an offensive engagement can be encoded as a finite string. This paper provides definitions, short lemmas, and open discussion.",
+    "status": "found"
+  },
+  "2601.19969": {
+    "arxiv_id": "2601.19969",
+    "title": "E2HiL: Entropy-Guided Sample Selection for Efficient Real-World Human-in-the-Loop Reinforcement Learning",
+    "authors": [
+      "Haoyuan Deng",
+      "Yudong Lin",
+      "Yuanjiang Xue",
+      "Haoyang Du",
+      "Qianzhun Wang",
+      "Boyang Zhou",
+      "Zhenyu Wu",
+      "Ziwei Wang"
+    ],
+    "submission_date": "2026-01-27T18:13:22Z",
+    "latest_updated": "2026-08-25T07:09:28Z",
+    "revised_dates": null,
+    "venue": "IEEE Robotics and Automation Letters, vol. 11, no. 7, pp. 8084-8091, 2026",
+    "latest_version": 2,
+    "versions": [
+      "2601.19969v1",
+      "2601.19969v2"
+    ],
+    "abstract": "Human-in-the-loop guidance has emerged as an effective approach for accelerating online reinforcement learning (RL) in real-world manipulation. However, existing human-in-the-loop RL (HiL-RL) frameworks often suffer from low sample efficiency, requiring substantial human interventions to achieve convergence and thereby leading to high labor costs. To address this, we propose a sample-efficient real-world human-in-the-loop RL framework named E2HiL, which requires fewer human interventions by actively selecting informative samples. Specifically, stable reduction of policy entropy enables improved trade-off between exploration and exploitation with higher sample efficiency. We first build influence functions of different samples on the policy entropy, which is efficiently estimated by the covariance of action probabilities and soft advantages of policies. Then we select samples with moderate values of influence functions, where shortcut samples that induce sharp entropy drops and noisy samples with negligible effect are pruned. Extensive experiments across 10 real-world manipulation tasks, spanning multiple embodiments and learning frameworks, demonstrate that E2HiL improves success rates by 24.9% while reducing human interventions by 9.3% compared to state-of-the-art HiL-RL baselines. These results validate its effectiveness as a policy- and embodiment-agnostic plug-and-play module for efficient real-world RL. The project page can be found at https://e2hil.github.io/.",
+    "status": "found"
+  },
+  "2601.19970": {
+    "arxiv_id": "2601.19970",
+    "title": "Benchmarking LLAMA Model Security Against OWASP Top 10 For LLM Applications",
+    "authors": [
+      "Nourin Shahin",
+      "Izzat Alsmadi"
+    ],
+    "submission_date": "2026-01-27T18:20:14Z",
+    "latest_updated": "2026-01-27T18:20:14Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19970v1"
+    ],
+    "abstract": "As large language models (LLMs) move from research prototypes to enterprise systems, their security vulnerabilities pose serious risks to data privacy and system integrity. This study benchmarks various Llama model variants against the OWASP Top 10 for LLM Applications framework, evaluating threat detection accuracy, response safety, and computational overhead. Using the FABRIC testbed with NVIDIA A30 GPUs, we tested five standard Llama models and five Llama Guard variants on 100 adversarial prompts covering ten vulnerability categories. Our results reveal significant differences in security performance: the compact Llama-Guard-3-1B model achieved the highest detection rate of 76% with minimal latency (0.165s per test), whereas base models such as Llama-3.1-8B failed to detect threats (0% accuracy) despite longer inference times (0.754s). We observe an inverse relationship between model size and security effectiveness, suggesting that smaller, specialized models often outperform larger general-purpose ones in security tasks. Additionally, we provide an open-source benchmark dataset including adversarial prompts, threat labels, and attack metadata to support reproducible research in AI security, [1].",
+    "status": "found"
+  },
+  "2601.19971": {
+    "arxiv_id": "2601.19971",
+    "title": "MAJORS II: HCO+& HCN Abundances in W40",
+    "authors": [
+      "René Plume",
+      "David J. Eden",
+      "Malcolm J. Currie",
+      "Lawrence K. Morgan",
+      "Xue-Jian Jiang",
+      "James DiFrancesco",
+      "Masatoshi Imanishi",
+      "Kee-Tae Kim",
+      "Tie Liu",
+      "Raffaele Rani",
+      "Alessio Traficante",
+      "Jane Cohen",
+      "Neal J. Evans",
+      "Luis C. Ho",
+      "Eun Jung Chung",
+      "Sihan Jiao",
+      "Chang Won Lee",
+      "Dana Alina",
+      "Toby Moore",
+      "Jonathan M. C. Rawlings",
+      "Florian Kirchschlager",
+      "Sudeshna Patra",
+      "Andrew J. Rigby",
+      "Hsien Shang",
+      "Jihye Hwang",
+      "Patricio Sanhueza",
+      "Mark G. Rawlings",
+      "Kianoosh Tahani",
+      "Junfeng Wang",
+      "Kate Pattle",
+      "James S. Urquhart",
+      "Quang Nguyen-Luong",
+      "Sarah E. Ragan",
+      "Yang Su",
+      "Xindi Tang",
+      "Agata Karska",
+      "Michael G. Burton"
+    ],
+    "submission_date": "2026-01-27T18:23:06Z",
+    "latest_updated": "2026-01-27T18:23:06Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19971v1"
+    ],
+    "abstract": "We present observations of HCN and HCO$^+$ J = $3 - 2$ in the central $424'' \\times 424''$ region of the W40 massive star forming region. The observations were taken as part of a pilot project for the MAJORS large program at the JCMT telescope. By incorporating prior knowledge of N(H$_2$) and $T_K$, assuming a constant density, and using the RADEX radiative transfer code we found that the HCN and HCO$^+$ abundances range from $X$(HCN) = $0.4-7.0 \\times 10^{-8}$ and $X$(HCO$^+$) = $0.4-7.3 \\times 10^{-9}$. Additional modelling using the NAUTILUS chemical evolution code, that takes H$_2$ density variations into account, however, suggests the HCN and HCO$^+$ abundances may be fairly constant. Careful modelling of three different positions finds $X$(HCN) = $1.3-1.7 \\times 10^{-8}$, $X$(HCO$^+$) = $1.3-3.1 \\times 10^{-9}$. Cross-comparison of the two models also provides a crude estimate of the gas density producing the HCN and HCO$^+$ emission, with H$_2$ densities in the range $5 \\times 10^4 - 5 \\times 10^5$ cm$^{-3}$, suggesting that the HCN and HCO$^+$ emission does indeed arise from dense gas. High UV intensity (e.g. $G_o >$ a few thousand) has no effect on the abundances in regions where the visual extinction is large enough to effectively shield the gas from the UV field. In regions where $A_V < 6$, however, the abundance of both species is lowered due to destructive reactions with species that are directly affected by the radiation field.",
+    "status": "found"
+  },
+  "2601.19972": {
+    "arxiv_id": "2601.19972",
+    "title": "Just in time Informed Trees: Manipulability-Aware Asymptotically Optimized Motion Planning",
+    "authors": [
+      "Kuanqi Cai",
+      "Liding Zhang",
+      "Xinwen Su",
+      "Kejia Chen",
+      "Chaoqun Wang",
+      "Sami Haddadin",
+      "Alois Knoll",
+      "Arash Ajoudani",
+      "Luis Figueredo"
+    ],
+    "submission_date": "2026-01-27T18:58:51Z",
+    "latest_updated": "2026-01-27T18:58:51Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19972v1"
+    ],
+    "abstract": "In high-dimensional robotic path planning, traditional sampling-based methods often struggle to efficiently identify both feasible and optimal paths in complex, multi-obstacle environments. This challenge is intensified in robotic manipulators, where the risk of kinematic singularities and self-collisions further complicates motion efficiency and safety. To address these issues, we introduce the Just-in-Time Informed Trees (JIT*) algorithm, an enhancement over Effort Informed Trees (EIT*), designed to improve path planning through two core modules: the Just-in-Time module and the Motion Performance module. The Just-in-Time module includes \"Just-in-Time Edge,\" which dynamically refines edge connectivity, and \"Just-in-Time Sample,\" which adjusts sampling density in bottleneck areas to enable faster initial path discovery. The Motion Performance module balances manipulability and trajectory cost through dynamic switching, optimizing motion control while reducing the risk of singularities. Comparative analysis shows that JIT* consistently outperforms traditional sampling-based planners across $\\mathbb{R}^4$ to $\\mathbb{R}^{16}$ dimensions. Its effectiveness is further demonstrated in single-arm and dual-arm manipulation tasks, with experimental results available in a video at https://youtu.be/nL1BMHpMR7c.",
+    "status": "found"
+  },
+  "2601.19973": {
+    "arxiv_id": "2601.19973",
+    "title": "A constrained linear model for continuum normalization of stellar spectra",
+    "authors": [
+      "Andrew R. Casey",
+      "Adam Wheeler",
+      "Megan Bedell",
+      "David W. Hogg",
+      "Andrew Sayjdari",
+      "Lily Zhao"
+    ],
+    "submission_date": "2026-01-27T19:00:00Z",
+    "latest_updated": "2026-01-27T19:00:00Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19973v1"
+    ],
+    "abstract": "Inferring stellar parameters and chemical abundances by forward modeling stellar spectra usually requires a spectral synthesis code, or an emulator constructed from a curated training set. In these situations continuum normalization is often implemented as a pre-processing step that is independent of stellar parameters. This leads to results that are biased, or inconsistent across signal-to-noise ratios. A more justified approach is to forward model spectra with all nuisances simultaneously, but in practice this can be an expensive or non-convex optimization procedure. Here we describe a constrained linear model that can fit stellar absorption, telluric transmission, the joint continuum-instrument response. Stellar absorption and telluric transmission are each modeled by factorizing a grid of rectified theoretical spectra into two non-negative matrices with a chosen number of basis components. This model characterizes all possible spectra in many fewer parameters than comparable data-driven models. The non-negativity constraint ensures basis vectors are strictly additive, which limits rectified flux to less than or equal to unity, such that we can distinguish normalized spectra from the joint instrument-continuum response. The model requires no initial guess, and the linearity ensures that inference is convex, stable, and fast. This model allows us to reliably fit nuisances (e.g., tellurics, continuum), and is readily extensible to radial velocity and rotational broadening, without any prior knowledge about the fundamental stellar properties. We demonstrate our method by fitting ESO/HARPS high-resolution echelle spectra of BAFGKM-type stars. With repeat observations of $α$-Centauri A we present results that are best in class: consistent across time to 0.2% at S/N ~ 100, and to better than 0.5% at S/N ~ 30.",
+    "status": "found"
+  },
+  "2601.19974": {
+    "arxiv_id": "2601.19974",
+    "title": "Next-to-Leading Order Running in the SMEFT",
+    "authors": [
+      "Lukas Born",
+      "Javier Fuentes-Martín",
+      "Anders Eller Thomsen"
+    ],
+    "submission_date": "2026-01-27T19:00:00Z",
+    "latest_updated": "2026-03-18T12:35:30Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.19974v1",
+      "2601.19974v2"
+    ],
+    "abstract": "The next-to-leading order (NLO) Standard Model Effective Field Theory (SMEFT) renormalization group equations are needed to account for phenomenologically relevant operator mixing and ensure renormalization scale independence in NLO calculations of observables. For the first time, we present the renormalization group equations of the baryon-number-conserving sector of the dimension-six SMEFT up to two-loop order. Our calculations have been performed using functional methods with an anticommuting $ γ_5 $-scheme. A variety of strategies are employed to mitigate the reading-point ambiguities inherent to this scheme choice. We also describe how a local version of the $ \\boldsymbol{R}^\\ast $-method is adapted to handle the evanescent operators arising in dimensional regularization. The results are provided in various supplementary files to make them accessible for both human inspection and numerical implementation.",
+    "status": "found"
+  },
+  "2601.19975": {
+    "arxiv_id": "2601.19975",
+    "title": "Detecting half-quantum superconducting vortices by spin-qubit relaxometry",
+    "authors": [
+      "Gábor B. Halász",
+      "Nirjhar Sarkar",
+      "Yueh-Chun Wu",
+      "Joshua T. Damron",
+      "Chengyun Hua",
+      "Benjamin Lawrie"
+    ],
+    "submission_date": "2026-01-27T19:00:00Z",
+    "latest_updated": "2026-01-27T19:00:00Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19975v1"
+    ],
+    "abstract": "Half-quantum vortices in spin-triplet superconductors are predicted to harbor Majorana zero modes and may provide a viable avenue to topological quantum computation. Here, we introduce a novel approach for directly measuring the half-integer-quantized magnetic fluxes, $Φ= h / (4e)$, carried by such half-quantum vortices via spin-qubit relaxometry. We consider a superconducting strip with a narrow pinch point at which vortices cross quasi-periodically below a spin qubit as a result of a bias current. We demonstrate that the relaxation rate of the spin qubit exhibits a pronounced peak if the vortex-crossing frequency matches the transition frequency of the spin qubit and conclude that the magnetic flux $Φ$ of a single vortex can be obtained by dividing the corresponding voltage along the strip with the transition frequency. We discuss experimental constraints on implementing our proposed setup in spin-triplet candidate materials like UTe$_2$, UPt$_3$, and URhGe.",
+    "status": "found"
+  }
+}

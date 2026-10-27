@@ -1,0 +1,416 @@
+{
+  "2609.12834": {
+    "arxiv_id": "2609.12834",
+    "title": "Self-supervised Pre-training Helps Retinal Disease Progression Modelling Most When Data Is Scarce",
+    "authors": [
+      "Ifeoma Veronica Nwabufo",
+      "Julius Gervelmeyer",
+      "Sarah Müller",
+      "Philipp Berens"
+    ],
+    "submission_date": "2026-09-11T13:28:36Z",
+    "latest_updated": "2026-09-11T13:28:36Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.12834v1"
+    ],
+    "abstract": "Modelling how a disease progresses over time requires longitudinal imaging cohorts, which are scarce and small, whereas cross-sectional data -- one image per participant -- is abundant. Self-supervised pre-training on such data offers a way to bridge this gap, but it is unclear which strategy best supports progression modelling, or how that answer depends on the amount of labelled longitudinal data. We study this for age-related macular degeneration (AMD), pre-training encoders on the large cross-sectional NAKO cohort and predicting time to late AMD on the longitudinal AREDS dataset. We compare in-house self-supervised encoders against a general-purpose (DINOv2) and a domain-specific (RETFound) foundation model, across contrastive, masked-autoencoding, and self-distillation objectives, under frozen and fine-tuned protocols, and across labelled training sets from 100 to 32,250 examples. Which model performs best depends on how the encoder is used. When the encoder is frozen and labels are few -- the regime typical of longitudinal cohorts -- pre-trained representations reach clinically reasonable discrimination from a few hundred labelled samples, while models trained from scratch do not; this advantage fades under fine-tuning. Transfer is governed by the self-supervision objective rather than corpus scale or domain match, so that an encoder pre-trained on a modest cross-sectional cohort matches or exceeds a far larger in-domain foundation model. Together, these results offer a practical recipe for building progression models where longitudinal data is scarce: a frozen self-supervised encoder with a lightweight survival head.",
+    "status": "found"
+  },
+  "2609.12835": {
+    "arxiv_id": "2609.12835",
+    "title": "HemaHier: Chain-Conditioned Ordinal Hierarchies for Lineage-Aware Bone-Marrow Cytology",
+    "authors": [
+      "Afshin Bozorgpour",
+      "Peter Schüffler",
+      "Edgar Jost",
+      "Dorit Merhof"
+    ],
+    "submission_date": "2026-09-11T13:30:20Z",
+    "latest_updated": "2026-09-11T13:30:20Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.12835v1"
+    ],
+    "abstract": "Bone-marrow cytology is inherently structured: each cell belongs to a hematopoietic lineage, and many cell types lie on ordered maturation trajectories. Standard flat classifiers ignore this structure, treating a mild same-lineage confusion the same as a severe cross-lineage mistake and predicting only discrete labels. We propose HemaHier, an ordinal-hierarchical prediction head for a frozen or lightly adapted cytology foundation model. Its central component is a chain-conditioned maturity score that reads a single maturity value under a per-chain query, supervised only on biologically valid healthy chains, while dysplastic and off-chain cell types remain classes but are excluded from maturity supervision. Fine and lineage predictions are coupled through a shared posterior that guarantees hierarchical consistency, and a staged objective first stabilizes recognition, then adds lineage and maturity supervision. On three bone-marrow datasets under a shared ontology, HemaHier achieves competitive recognition while reducing biologically severe errors and adding a within-lineage maturity ordering that flat classifiers lack. Code is available at https://github.com/xmindflow/HemaHier.",
+    "status": "found"
+  },
+  "2609.12836": {
+    "arxiv_id": "2609.12836",
+    "title": "Ultrastrong Au-Te bonding drives disorder in monolayer ZrTe$_5$ on gold",
+    "authors": [
+      "Konrád Kandrai",
+      "Zoltán Tajkov",
+      "Péter Kun",
+      "Levente Tapasztó",
+      "János Koltai",
+      "Péter Nemes-Incze"
+    ],
+    "submission_date": "2026-09-11T13:30:53Z",
+    "latest_updated": "2026-09-11T13:30:53Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.12836v1"
+    ],
+    "abstract": "Monolayer ZrTe$_5$ is predicted to host a large-gap quantum spin Hall phase, motivating efforts to isolate single layers of the material. Gold-assisted exfoliation produces clean monolayers of many chalcogen-terminated van der Waals crystals, but the strong Te-Au bond may compete with the bonding network of the ZrTe$_5$ layer itself. Across tens of samples, low-temperature scanning tunneling microscopy on gold-exfoliated flakes shows a disordered monolayer surface in the overwhelming majority of cases, while thicker flakes preserve the characteristic quasi-one-dimensional chain structure. \\emph{Ab initio} calculations of the ZrTe$_5$/Au(111) interface reproduce this asymmetry and resolve its mechanism: the Te atoms facing the gold chemisorb, rupturing the weak zigzag Te-Te bonds that cross-link the ZrTe$_3$ chains, turning the discrete bond-length spectrum of the crystal into a continuous one, while the chains persist as distorted units. Charge analysis shows the signature of covalent Te-Au bonding with a modest transfer that hole-dopes the monolayer; in the bilayer, the distortion and the doping stay confined to the layer contacting the gold, and the chemisorption and disorder each preclude the predicted quantum spin Hall phase. The same quasi-covalent Te-Au bond may perturb the contact layer of other gold-exfoliated Te-terminated crystals, particularly those with weakly connected intralayer networks.",
+    "status": "found"
+  },
+  "2609.12837": {
+    "arxiv_id": "2609.12837",
+    "title": "Parameter Sensitivity Analysis for Aerial LiDAR-Inertial Odometries in low-altitude flights",
+    "authors": [
+      "Robert Milijas",
+      "Jose Ramiro Martinez-de Dios",
+      "Stjepan Bogdan"
+    ],
+    "submission_date": "2026-09-11T13:31:48Z",
+    "latest_updated": "2026-09-11T13:31:48Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.12837v1"
+    ],
+    "abstract": "LiDAR-based SLAM (Simultaneous Localization and Mapping) and LIO (LiDAR-inertial odometry) algorithms are often used for precise navigation of unmanned aerial vehicles, especially during interactions with the aerial robot's environment. However, the performance of these algorithms is greatly dependent on the scenario, LiDAR, and robot motion characteristics, often requiring an intensive tuning process to achieve the desired performance. To aid these tuning efforts, this paper analyzes the influence on performance of the parameters of an EKF-based LIO algorithm (FAST-LIO2) and the LIO module of a graph-based SLAM algorithm (Cartographer) on aerial LiDAR SLAM datasets recorded using different LiDARs in low-to-moderate-altitude flights in diverse environments. The analysis is conducted on the absolute trajectory error (ATE) resulting from processing the datasets with the LIO algorithms configured with each combination of parameters obtained in an exhaustive grid search. The relationship between individual parameters and the ATE results is assessed using Pearson's correlation, while the influence of each parameter is assessed using random forest permutation importance analyses with random forest models trained to predict the resulting ATE values based on the choice of parameters. The performed analysis obtains for Cartographer and FAST-LIO2: i) the identification of parameters with stronger influence in performance, ii) a simplified tuning procedure, and iii) tuning recommendations. Using the proposed tuning recommendations, both algorithms obtain on the analyzed datasets ATE values within 5 cm to the optimal performance found in the grid search procedure in 94% of the analyzed cases.",
+    "status": "found"
+  },
+  "2609.12838": {
+    "arxiv_id": "2609.12838",
+    "title": "Projective Kernels and Replicability in Modular Function Theory",
+    "authors": [
+      "Hicham Saber",
+      "Abdellah Sebbar"
+    ],
+    "submission_date": "2026-09-11T13:32:53Z",
+    "latest_updated": "2026-09-11T13:32:53Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.12838v1"
+    ],
+    "abstract": "We introduce a projective-kernel framework for the study of replicable functions in modular function theory. The main point is that the same two-point kernel simultaneously encodes the differential projective geometry of a modular function and the Faber--Grunsky data governing its replicability. This makes it possible to translate between Schwarzian invariants, coefficient identities, and modular correspondences within a single structure. The kernel yields a reconstruction theorem showing that the ordinary Schwarzian determines the normalized Grunsky matrix and hence the underlying Laurent expansion. When Norton's replicability relations are imposed, the projective kernel produces strong arithmetic restrictions on the possible cusp data. In the degree-one case this leads to a precise classification: replicability and complete replicability are equivalent to solvability of the projective monodromy, while the icosahedral case is excluded by an explicit Grunsky obstruction. The same principle extends to the arithmetic Hecke triangle groups. The projective-kernel viewpoint also isolates the remaining global difficulty in Norton's Hauptmodul conjecture and provides a natural setting in which replicability, projective monodromy, and modular differential invariants can be studied together.",
+    "status": "found"
+  },
+  "2609.12839": {
+    "arxiv_id": "2609.12839",
+    "title": "Evaluating Context Segmentation in Locally Deployable SLMs for Cybersecurity CTF Tasks",
+    "authors": [
+      "Sebastiano Nordio",
+      "Michele Lotto"
+    ],
+    "submission_date": "2026-09-11T13:34:48Z",
+    "latest_updated": "2026-09-15T20:53:36Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2609.12839v1",
+      "2609.12839v2",
+      "2609.12839v3"
+    ],
+    "abstract": "The proliferation of highly capable open-weight Small Language Models (SLMs) democratizes access to advanced cybersecurity capabilities, posing an escalating risk as these models can bypass proprietary API guardrails when deployed locally. However, SLMs deployed as autonomous agents often struggle with long-horizon, exploratory tasks like cybersecurity Capture The Flag (CTF) challenges due to context bloat and cognitive degradation from accumulated tool-call outputs. To understand and mitigate this cybersecurity threat, we introduce context segmentation, a two-level agentic framework that divides complex exploitation tasks into manageable, contextually isolated sub-problems. Evaluating on the picoCTF dataset using memory-constrained gemma-4 models, we demonstrate that for the E4B model, our strategy acts as an intelligent search, achieving competitive rewards with superior token efficiency compared to brute-force retries, and successfully solving 18.52% of tasks that standard agentic execution fails to complete. Code is available at https://github.com/9xeb/context-segmentation.",
+    "status": "found"
+  },
+  "2609.12840": {
+    "arxiv_id": "2609.12840",
+    "title": "State-adapted generalized mean-field projections for Pauli propagation of Heisenberg dynamics",
+    "authors": [
+      "Federico Tomás B. Pérez",
+      "Gabriela Wójtowicz",
+      "Martin B. Plenio"
+    ],
+    "submission_date": "2026-09-11T13:35:24Z",
+    "latest_updated": "2026-09-11T13:35:24Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.12840v1"
+    ],
+    "abstract": "The Heisenberg picture can make quantum many-body simulation efficient when evolved observables admit compact operator representation within low-dimensional structures. Conventional Pauli-string propagation and truncation techniques exploit this structure, but in coherent Hamiltonian dynamics their error control is often heuristic and their stability can be poor. We introduce a state-adapted Krylov framework based on geometric generalized mean-field projections of many-body observables onto low-body operator subspaces. The resulting dynamics approximate expectation values, do not extend spatial support beyond that prescribed by Lieb-Robinson bounds, and compress high-body correlations onto their state-relevant low-body representatives rather than simply discarding them. We derive necessary operator-entanglement obstructions to low-body representation and conditional sufficient bounds on representation and dynamical errors involving nonstabilizerness and controlled high-body tails. Numerical benchmarks show improved, stable finite-$m$ hierarchies and simulations on large three-dimensional lattices, establishing a scalable state-adapted alternative to conventional Heisenberg-picture weight-truncation of Pauli strings.",
+    "status": "found"
+  },
+  "2609.12841": {
+    "arxiv_id": "2609.12841",
+    "title": "A Graph-Based Approach for Mapping Kernel-Level Telemetry to MITRE ATT&CK",
+    "authors": [
+      "Matteo Lupinacci",
+      "Luigi Arena",
+      "Francesco Blefari",
+      "Angelo Furfaro"
+    ],
+    "submission_date": "2026-09-11T13:35:27Z",
+    "latest_updated": "2026-09-11T13:35:27Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.12841v1"
+    ],
+    "abstract": "Mapping observed system behavior to standardized frameworks like MITRE ATT&CK is essential for threat-informed defense, but remains largely manual. Existing automated methods depend on Cyber Threat Intelligence reports, which offer only retrospective accounts of attacks. Low-level telemetry, i.e. kernel-level system calls, instead provides evidence of adversary behavior, yet its volume and complexity have limited its use for automated mapping. We present a methodology that collects kernel-level events via eBPF, correlates attacker commands into a provenance graph, and derives compact graph representations suitable for LLM-based reasoning. These representations are mapped to the MITRE ATT&CK framework using both pure LLM prompting and retrieval-augmented generation (RAG) grounded in the ATT&CK knowledge base, producing ranked technique candidates along with supporting rationales. We implement this methodology as an end-to-end pipeline, named Trace2ATT&CK and evaluate it on 347 Linux Atomic Red Team tests using locally deployed open-weights LLMs. RAG consistently improves ATT&CK mapping performance over pure prompting, while provenance graph substantially outperforms raw telemetry. These results show that local inference over graph-based behavioral descriptions can make automated ATT&CK mapping from kernel-level telemetry operationally viable, without compromising data confidentiality.",
+    "status": "found"
+  },
+  "2609.12842": {
+    "arxiv_id": "2609.12842",
+    "title": "MIMA: Multi-Interest Recommendation via Multi-Positive Exclusive Assignment",
+    "authors": [
+      "Xingyuan Mao",
+      "Alin Fan",
+      "Shichao Nie",
+      "Junfeng Zhang",
+      "Yan Xiao",
+      "Tao Luo",
+      "Xiaoyi Zeng"
+    ],
+    "submission_date": "2026-09-11T13:36:25Z",
+    "latest_updated": "2026-09-11T13:36:25Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.12842v1"
+    ],
+    "abstract": "Multi-interest recommendation represents each user with multiple interest vectors for fine-grained candidate matching, yet it often suffers from interest collapse, where the learned interests converge to similar representations. We highlight the prevailing single-positive paradigm as one important factor behind this issue. Since each instance provides only one positive item, intents are optimized independently, potentially causing the same best-matching interest to be repeatedly updated toward different positives while leaving the others under-supervised. Moreover, existing methods rarely model how strongly a user activates each interest, leaving scores from different interest channels incomparable at inference. To address these problems, we propose MIMA, a Multi-Interest recommendation framework built on Multi-positive exclusive Assignment. MIMA groups items co-occurring within the same request into a positive set, generates complementary interests with a causal Transformer decoder, and exclusively assigns each positive to supervise a distinct interest via Hungarian matching, so that interest differentiation emerges from the training objective itself rather than auxiliary regularization. A lightweight routing module further estimates user-interest activation probabilities to calibrate scores across interest channels. Experiments on three public datasets and an industrial dataset show that MIMA consistently outperforms state-of-the-art baselines, and an online A/B test yields significant business gains.",
+    "status": "found"
+  },
+  "2609.12843": {
+    "arxiv_id": "2609.12843",
+    "title": "Pre-Trained Low-Rank Tensor Decomposition for Multi-Dimensional Image Recovery",
+    "authors": [
+      "Bing-Zhang Fu",
+      "Zhi-Long Han",
+      "Ting-Zhu Huang",
+      "Xi-Le Zhao",
+      "Deyu Meng"
+    ],
+    "submission_date": "2026-09-11T13:36:36Z",
+    "latest_updated": "2026-09-11T13:36:36Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.12843v1"
+    ],
+    "abstract": "Recently, tensor decompositions are prevalent for multi-dimensional image representation, which learn the instance-specific structure of each image from scratch. However, tensor decompositions neglect the common structure across different images, leading to limited semantic modeling capability, high computational cost, and a large number of learnable parameters. To address this challenge, we suggest the first pre-trained low-rank tensor decomposition (PLTD) framework, which organically integrates the pre-trained large vision model into the classical tensor decomposition framework. Beyond the shallow and untrained deep tensor decomposition, the suggested PLTD achieves an unprecedented balance among higher recovery fidelity, fewer learnable parameters, and smaller carbon footprint. Specifically, PLTD factorizes the target tensor into a latent tensor and a learnable transform that maps the latent tensor back to the original data domain. The latent tensor consists of two indispensable and complementary terms, i.e., a fixed pre-trained latent tensor and a learnable low-rank latent tensor. The fixed pre-trained latent tensor is distilled from a pre-trained large vision model (i.e., DINOv3) to capture the common structure of the target tensor, while the learnable low-rank latent tensor characterizes the instance-specific structure of the target tensor. To examine the potential of PLTD, we develop the corresponding multi-dimensional image recovery model and theoretically justify the advantages of this framework. Additionally, we discuss the connections between PLTD and classical tensor decomposition frameworks. Extensive experiments on multi-dimensional image recovery demonstrate that PLTD consistently achieves superior performance compared with state-of-the-art methods.",
+    "status": "found"
+  },
+  "2609.12844": {
+    "arxiv_id": "2609.12844",
+    "title": "Hardy--Littlewood Maximal Operator and Two-Layer Muckenhoupt Weights on Infinite Rooted $k$-Ary Trees",
+    "authors": [
+      "Dachun Yang",
+      "Wen Yuan",
+      "Mingdong Zhang"
+    ],
+    "submission_date": "2026-09-11T13:37:22Z",
+    "latest_updated": "2026-09-11T13:37:22Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.12844v1"
+    ],
+    "abstract": "Let $k\\geq 2$ be an integer, $T$ an infinite rooted $k$-ary tree, and $M$ the Hardy--Littlewood maximal operator on $T$. For any $p\\in(0,\\infty)$, we characterize the weight $w$ such that $M$ is bounded on $L^p(w)$. To this end, we introduce a two-layer Muckenhoupt weight class $\\mathscr A_p$ and prove that, for any $p\\in(\\frac{1}{2},\\infty)$, the boundedness of $M$ on $L^p(w)$, $w\\in\\mathscr A_p$, and the exponential decay boundedness of spherical averaging operators on $L^p(w)$ are mutually equivalent, and that, when $p\\in(0,\\frac{1}{2}]$, there exists no weight $w$ such that $M$ is bounded on $L^p(w)$. Moreover, for any $p\\in(\\frac{1}{2},\\infty)$, we establish the quantitative estimate, with the optimal exponent $\\frac{1}{p}$ of the weight constant, for the boundedness of $M$ on $L^p(w)$. For any $p\\in(1,\\infty)$, we also obtain two further equivalent characterizations of the boundedness of $M$ on $L^p(w)$, respectively, in terms of a global Sawyer-type testing condition and an estimate for the weighted product measure of distance incidence sets. As applications, for any $p\\in(\\frac{1}{2},\\infty)$, under the assumption that $M$ is bounded on $L^p(w)$, we establish the boundedness of exponentially decaying kernel operators on $L^p(w)$ and weighted Fefferman--Stein vector-valued inequalities.",
+    "status": "found"
+  },
+  "2609.12845": {
+    "arxiv_id": "2609.12845",
+    "title": "A Device to Control and Manipulate Occlusion Effects for Own Voice Perception Studies",
+    "authors": [
+      "Rouben Rehman",
+      "Simon Kersten",
+      "Aron Schliep",
+      "Janina Fels"
+    ],
+    "submission_date": "2026-09-11T13:39:04Z",
+    "latest_updated": "2026-09-11T13:39:04Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.12845v1"
+    ],
+    "abstract": "The occlusion effect (OE) refers to changes of the eardrum sound pressure through ear canal occlusion. It consists of two phenomena: an insertion loss (IL) attenuating air-conducted sounds, and an occlusion gain (OG) amplifying bone-conduction. Perceptual research on this is hindered by high variability of the OE across individuals, complicating repeatable presentation of precise OE conditions. Consequently, a method to control OE conditions reproducibly during perceptual experiments is needed. For such investigations, the system must enable separate control of IL and OG. We present an approach based on modified commercial earmuffs with integrated microphones. The design integrates dedicated impedance measurements and the derivation of digital filters, which are applied to the microphone signals to emulate arbitrary OE curves. The system is evaluated objectively through appropriate measurements. Results show that the headphones' inherent OG is guaranteed to be below 6dB above 115Hz, falling below 0dB above 155Hz. Emulation is shown to work accurately over the entire frequency range of interest. Limitations arise mainly due to a slight residual inherent OG for deep voices and the processing delay of the system. Future work will focus on the perceptual evaluation of the system and its application in perceptual studies.",
+    "status": "found"
+  },
+  "2609.12846": {
+    "arxiv_id": "2609.12846",
+    "title": "Classification of torsion of elliptic curves over quintic fields",
+    "authors": [
+      "Filip Najman"
+    ],
+    "submission_date": "2026-09-11T13:39:11Z",
+    "latest_updated": "2026-10-02T12:14:52Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2609.12846v1",
+      "2609.12846v2",
+      "2609.12846v3"
+    ],
+    "abstract": "We determine all the groups that appear as the torsion group of an elliptic curve over a quintic number field. Apart from the groups that already occur infinitely often, which were determined by Derickx and Sutherland, exactly three groups occur: $\\mathbb{Z}/28\\mathbb{Z}$, $\\mathbb{Z}/30\\mathbb{Z}$ and $\\mathbb{Z}/2\\mathbb{Z}\\times\\mathbb{Z}/18\\mathbb{Z}$. Up to isomorphism of the pair $(K,E)$, the first and the third are each realised by a single elliptic curve and the second by two curves, which are $2$-isogenous over a common quintic field. The curves realising $\\mathbb{Z}/28\\mathbb{Z}$ and $\\mathbb{Z}/30\\mathbb{Z}$ were found by van Hoeij, while the group $\\mathbb{Z}/2\\mathbb{Z}\\times\\mathbb{Z}/18\\mathbb{Z}$ is new, and $5$ is the smallest degree in which a non-cyclic sporadic torsion group occurs. The methods improve on those developed by Derickx and Najman, and are based on Hecke sieves and the arithmetic of cuspidal divisor classes.",
+    "status": "found"
+  },
+  "2609.12847": {
+    "arxiv_id": "2609.12847",
+    "title": "Classification of solutions to the Liouville equation with a nonlinear Robin boundary condition on the unit disk",
+    "authors": [
+      "Jingbo Dou",
+      "Yunyun Hu",
+      "Keqing Peng"
+    ],
+    "submission_date": "2026-09-11T13:39:23Z",
+    "latest_updated": "2026-09-11T13:39:23Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.12847v1"
+    ],
+    "abstract": "In this paper, we study the nonlinear boundary value problem \\begin{equation*} \\begin{cases} -Δu=e^{2u},& \\mbox{in } {\\mathbb{D}},\\\\ \\frac{\\partial u}{\\partialν}+λ=e^u ,& \\mbox{on } {\\mathbb{S}^{1}}, \\end{cases} \\end{equation*} where $\\mathbb D$ is the unit disk, $λ$ is a constant and $ν$ denotes the outer unit normal on $\\mathbb S^1$. For $0<λ\\le2$, we establish a complete classification of smooth solutions. For $2<λ\\leq3$, we prove a dichotomy between radial solutions and nonradial solutions. We develop a Hardy-Wronskian boundary rigidity method that transforms the nonlinear boundary value problem into a spectral rigidity problem for normalized holomorphic frames. This method exploits the complex-analytic structure of the Liouville equation with a Robin boundary condition and provides a new rigidity framework for related two-dimensional elliptic boundary value problems.",
+    "status": "found"
+  },
+  "2609.12848": {
+    "arxiv_id": "2609.12848",
+    "title": "Diversifying time evolution of matrix product states using BUGs",
+    "authors": [
+      "Kornél Kapás",
+      "Dominik Sulz",
+      "Charlotte Verhoeven",
+      "Miklós Antal Werner",
+      "Örs Legeza",
+      "Christian Lubich"
+    ],
+    "submission_date": "2026-09-11T13:40:16Z",
+    "latest_updated": "2026-09-11T13:40:16Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.12848v1"
+    ],
+    "abstract": "Time evolution of tensor-network states is a central tool for studying nonequilibrium dynamics in strongly correlated quantum systems. In the past decade, using the time-dependent variational principle (TDVP) discretized by projector-splitting has become the gold standard for evolving matrix product states (MPS) with long-range Hamiltonians. More recently, a conceptually different class of discretizations of the TDVP, the class of Basis Update and Galerkin (BUG) integrators, has been developed within the framework of dynamical low-rank approximation, offering an alternative, more flexible approach. In this work, we formulate two BUG integrators explicitly for MPS. The BUG integrators result in \"single-site\" MPS integrators that are robust with respect to small singular values, avoid backward-in-time substeps, and naturally allow for the adaptive choice of bond dimensions. We consider the augmented BUG integrator of first order and the midpoint BUG integrator of second order and clarify their relation to the projector-splitting discretization of the TDVP. Using representative models of strongly correlated quantum systems, like the XY spin model with long-range interaction and two-dimensional lattice models of fermions and spins of various lengths, we perform a systematic numerical comparison between BUG and projector-splitting time discretizations of the continuous-time TDVP, focusing on scalability, numerical complexity, and accuracy. We find that BUG integrators, due to their reduced numerical cost and the flexibility of the concept, provide a competitive and, in certain regimes, advantageous alternative to the well-established time-stepping by projector-splitting in TDVP, especially in models with large local dimensions, and in cases where observables are extracted with high temporal resolution.",
+    "status": "found"
+  },
+  "2609.12849": {
+    "arxiv_id": "2609.12849",
+    "title": "Spectrum of singularities, analytic torsion and Calabi--Yau degenerations",
+    "authors": [
+      "Dennis Eriksson",
+      "Gerard Freixas i Montplet"
+    ],
+    "submission_date": "2026-09-11T13:40:35Z",
+    "latest_updated": "2026-09-11T13:40:35Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.12849v1"
+    ],
+    "abstract": "We relate the spectrum of singularities to the geometry of degenerating Calabi--Yau manifolds through holomorphic analytic torsion. We express the leading asymptotic coefficients of the analytic torsion of holomorphic differential forms in terms of Hodge-theoretic invariants of vanishing cycles. For isolated hypersurface singularities, these formulas lead to the formulation of new higher Durfee--Saito conjectures bounding Hodge-filtration dimensions by the Milnor number and Eulerian numbers. We also prove that, for isolated quasi-homogeneous singularities, the spectral measure is dominated in convex order by the corresponding Irwin--Hall distribution. Applying the torsion formulas to the BCOV invariant yields a computable obstruction to birational smooth fillings. For isolated singularities, its local contribution is expressed in terms of Hertling's spectral variance and a Bernoulli sum determined by monodromy. As applications, we rule out birational smooth fillings for projective Calabi--Yau degenerations with smooth total space and singular central fiber having only ADE or terminal Brieskorn--Pham singularities, in relative dimension at least three, extending results of Voisin.",
+    "status": "found"
+  },
+  "2609.12850": {
+    "arxiv_id": "2609.12850",
+    "title": "MGAvatar: Mesh-Bound Gaussians for Head Avatar Geometry and Appearance Modeling",
+    "authors": [
+      "Lei Shi",
+      "Sen Peng",
+      "Zhiyang Deng",
+      "Zhonggui Chen",
+      "Xiaohu Guo",
+      "Baorong Yang",
+      "Xiao Dong"
+    ],
+    "submission_date": "2026-09-11T13:41:06Z",
+    "latest_updated": "2026-09-14T11:23:47Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2609.12850v1",
+      "2609.12850v2"
+    ],
+    "abstract": "Accurate head modeling requires a stable yet expressive geometric representation. Existing Gaussian-based head avatars commonly rely on parametric templates (e.g., FLAME) for Gaussian initialization and deformation, but these templates lack personalized priors and struggle to represent structures such as hair and clothing. To address this issue, we propose MGAvatar, a Gaussian-mesh hybrid representation that jointly models geometry and appearance through two Gaussian-mesh binding modes. Specifically, we introduce vertex-bound Gaussians and constrain their learnable parameters, enabling progressive mesh deformation to represent complex head geometry, while a pose-dependent offset module accounts for non-rigid deformations. Once geometry is stabilized, MGAvatar switches to face-bound Gaussians for appearance modeling. To improve appearance consistency across novel poses and viewpoints, we introduce a view-conditioned neural color field that alleviates artifacts caused by independently optimized Gaussian colors. In addition, we design a Gaussian offset network to predict Gaussian offset maps in the observation space, providing greater flexibility for face-bound Gaussians to capture dynamic facial textures. Extensive experiments on multi-view and monocular videos show that MGAvatar outperforms existing methods in rendering quality, producing high-fidelity head avatars with rich texture details.",
+    "status": "found"
+  },
+  "2609.12851": {
+    "arxiv_id": "2609.12851",
+    "title": "MedRoundsQA: A Persona and Difficulty Aware Evaluation for Multi-Turn Medical Consultations",
+    "authors": [
+      "Youssef Mohamed",
+      "Ahmed Heakl",
+      "Qinrong Cui",
+      "Junhong Liang",
+      "Rafiq Ali",
+      "Bdour Babillie",
+      "Nazira Dunbayeva",
+      "Lang Gao",
+      "Omar Hussein",
+      "Ahmed Nada",
+      "Ahmed Mohamed Magdy Mohamed",
+      "Jinghui Liu",
+      "Salman Khan",
+      "Imran Razzak",
+      "Yuxia Wang",
+      "Xiuying Chen"
+    ],
+    "submission_date": "2026-09-11T13:41:53Z",
+    "latest_updated": "2026-09-11T13:41:53Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.12851v1"
+    ],
+    "abstract": "Medical benchmarks are dominated by single-turn, multiple-choice clinical cases that poorly reflect real consultations. Practically, clinicians elicit evidence interactively and patient communication varies widely. We introduce MedRoundsQA, a multi-turn diagnostic benchmark derived from 1,387 board-exam cases across 17 specialties. Each case is converted into a structured 24-slot clinical record, and then instantiated as controlled doctor-patient dual-agent dialogues under varying patient personas, with the underlying clinical content held fixed. We further classify cases by difficulty using model-based uncertainty to enable easy-to-hard analysis. Evaluations of fifteen LLM doctor agents show that (i) moving from a single-turn diagnosis on the standardized records to multi-turn consultations causes large degradations of roughly 13-39 points; (ii) more turns reliably improves question relevance, but diagnostic accuracy exhibits diminishing returns and typically plateaus after 6-12 turns; and (iii) patient persona differences can shift diagnosis accuracy by about 7-8 points (lowest to highest education), highlighting equity risks that single-turn benchmarks miss.",
+    "status": "found"
+  },
+  "2609.12852": {
+    "arxiv_id": "2609.12852",
+    "title": "On the growth of Lie algebras and Jordan algebras",
+    "authors": [
+      "Be'eri Greenfeld"
+    ],
+    "submission_date": "2026-09-11T13:42:38Z",
+    "latest_updated": "2026-09-11T13:42:38Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.12852v1"
+    ],
+    "abstract": "We prove that every increasing, polynomially bounded function is realizable, up to bi-Lipschitz equivalence, as the growth function of some finitely generated Lie algebra. This does not extend to general increasing subexponential functions. We further prove that the classes of growth functions of Jordan algebras and associative algebras coincide, answering in the affirmative a question of Martínez and Zelmanov.",
+    "status": "found"
+  },
+  "2609.12853": {
+    "arxiv_id": "2609.12853",
+    "title": "Very Exciting: Zero-Shot Model Predictive Control of Buildings via Excitation-Based Generalized Transfer Learning Models",
+    "authors": [
+      "Fabian Raisch",
+      "Felix Koch",
+      "Zack Xuereb Conti",
+      "Christoph Goebel",
+      "Benjamin Tischler"
+    ],
+    "submission_date": "2026-09-11T13:42:45Z",
+    "latest_updated": "2026-09-15T15:25:46Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2609.12853v1",
+      "2609.12853v2"
+    ],
+    "abstract": "The widespread adoption of data-driven, energy-efficient model predictive control (MPC) in buildings remains hindered by substantial effort to collect data and train models for individual buildings. Transfer learning (TL) has consequently gained increasing attention for target building modeling, as it reduces data requirements and modeling effort by reusing pretrained source models. However, these TL models are typically evaluated only on prediction accuracy in the target, without testing downstream control performance. To address this gap, we apply a state-of-the-art TL approach - pretraining a generalized model on multiple source buildings using standard operational data - within an MPC setup in a target building. We show that this approach is insufficient to achieve satisfactory control performance. As a solution, we introduce generalized models pretrained on excitation-based operational source data - purposefully probed inputs that explore the building's state-action space. For evaluation, we apply the generalized models via zero-shot (i.e., without fine-tuning) to 32 simulated target buildings and assess MPC performance. Our results show that excitation-based generalized models achieve the strongest control performance among all benchmarks, outperforming an online linear model-based MPC and a PI controller by 6.4% and 36.9%, respectively. By combining strong control performance with the ability to generalize across multiple buildings, without requiring any target-specific data, our approach reduces MPC setup cost and simplifies its widespread deployment in the building sector.",
+    "status": "found"
+  }
+}

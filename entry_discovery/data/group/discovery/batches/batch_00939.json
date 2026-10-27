@@ -1,0 +1,398 @@
+{
+  "2609.16614": {
+    "arxiv_id": "2609.16614",
+    "title": "RoleBreak: Benchmarking Long-Horizon Role-Playing Robustness in Spoken Dialogue",
+    "authors": [
+      "Yuqi Wang",
+      "Fengyuan Liu",
+      "Haochen Luo",
+      "Zhiqi Yu",
+      "Qi Liu"
+    ],
+    "submission_date": "2026-09-15T04:19:53Z",
+    "latest_updated": "2026-09-15T04:19:53Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16614v1"
+    ],
+    "abstract": "Speech-to-speech dialogue models increasingly support persona control, yet existing spoken role-playing benchmarks remain largely character-centric and short-horizon. This leaves open whether spoken dialogue models can sustain diverse roles over extended interactions, especially beyond predefined fictional characters. We introduce RoleBreak, an open benchmark for long-horizon role-playing robustness in spoken dialogue. RoleBreak contains 310 character-based and user-centered roles, 6,688 human-verified dialogue turns, and 11,743 fine-grained evaluation criteria, with 1,856 turns carrying expressive emotion targets for evaluating vocal emotion. Its scenarios are designed to stress role consistency, interaction quality, safety, and affect over extended conversations. We evaluate nine configurations spanning full-duplex, omni-modal, and cascaded ASR--LLM--TTS paradigms. We find four key patterns. First, current systems are substantially stronger at semantic role adherence than at vocal emotion. Second, semantic robustness remains brittle over long interactions: even the strongest evaluated system encounters its first persona and safety failures after only 10.4 and 11.6 turns on average. Third, scaling the LLM substantially improves semantic robustness and delays failure, but yields little improvement in vocal emotion. Finally, user vocal emotion affects role-playing behavior even when linguistic content is fixed. These findings highlight persistent gaps in both long-horizon robustness and vocal expressiveness in spoken role-playing systems.",
+    "status": "found"
+  },
+  "2609.16615": {
+    "arxiv_id": "2609.16615",
+    "title": "Revisiting nuclear chirality in $^{128}$Cs with relativistic configuration-interaction density functional theory",
+    "authors": [
+      "Yakun Wang"
+    ],
+    "submission_date": "2026-09-15T04:20:59Z",
+    "latest_updated": "2026-09-15T04:20:59Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16615v1"
+    ],
+    "abstract": "Nuclear chirality in $^{128}$Cs is revisited within the microscopic relativistic configuration-interaction density functional (ReCD) theory. The positive-parity doublet bands are investigated by simultaneously examining their energy spectra, electromagnetic transition probabilities, $g$ factors, spectroscopic quadrupole moments, and underlying angular-momentum geometry. Without introducing additional parameters adjusted to the spectroscopic data, the ReCD calculations provide an overall satisfactory description of the available experimental observables. In particular, a comprehensive analysis of the available experimental data and the calculated spectroscopic observables indicates qualitative resemblances between the partner bands around $I = 17\\hbar$. A microscopic analysis of the angular-momentum geometry through \\textit{azimuthal plots} reveals a distinct evolution of the rotational mode with increasing spin: chiral vibration at $I < 17\\hbar$, static chirality at $I = 17\\hbar$, and a transition toward planar rotation at higher spins. These results suggest that static chiral geometry in $^{128}$Cs is confined to a narrow spin region around $I = 17\\hbar$ within the present ReCD calculations.",
+    "status": "found"
+  },
+  "2609.16616": {
+    "arxiv_id": "2609.16616",
+    "title": "Integrated Photonic Devices in Thin-Film Barium Titanate: Opportunities and Challenges",
+    "authors": [
+      "Hong-Lin Lin",
+      "Minghao Shang",
+      "Yuhui Yin",
+      "Wujie Fu",
+      "Luo Qi",
+      "Aaron J. Danner"
+    ],
+    "submission_date": "2026-09-15T04:21:04Z",
+    "latest_updated": "2026-09-15T04:21:04Z",
+    "revised_dates": null,
+    "venue": "Appl. Phys. Rev. 13, 031330 (2026)",
+    "latest_version": 1,
+    "versions": [
+      "2609.16616v1"
+    ],
+    "abstract": "Thin-film barium titanate (BaTiO3, or BTO) has emerged as a promising electro-optic (EO) material for integrated photonics due to its exceptionally large Pockels coefficients, low optical loss, and compatibility with heterogeneous integration. Recent advances in epitaxial thin-film growth, crystal orientation control, ferroelectric domain engineering, and scalable integration have enabled EO performance in thin-film BTO approaching bulk-like properties on photonic platforms. This review provides a comprehensive overview of integrated photonic devices based on thin-film BTO, including fundamental material properties, thin-film growth and integration strategies, passive waveguide configurations, EO response at both the film and device levels, and relevant optical applications. We review the role of film orientation, domain structure, and device geometry in determining accessible EO coefficients and modulation mechanisms, as well as the distinctions between intrinsic and effective EO responses demonstrated at the film and device levels. Representative studies are compared in terms of film-quality-related metrics and device performance figures of merit, alongside emerging applications realized in BTO-based platforms. Finally, we discuss the remaining challenges and outline future development directions toward high-performance BTO-based integrated photonic systems.",
+    "status": "found"
+  },
+  "2609.16617": {
+    "arxiv_id": "2609.16617",
+    "title": "Divergence Timing and Cumulative Disagreement under KV-Cache Eviction",
+    "authors": [
+      "Xinyue Luo",
+      "Fei Yu"
+    ],
+    "submission_date": "2026-09-15T04:23:53Z",
+    "latest_updated": "2026-09-18T04:09:40Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2609.16617v1",
+      "2609.16617v2"
+    ],
+    "abstract": "KV-cache eviction perturbs the conditional token distributions governing autoregressive generation. We investigate how first-divergence timing and subsequent token mismatch determine cumulative disagreement. We derive an exact decomposition under a specified stepwise maximal coupling: the expected mismatch fraction equals a first-mismatch contribution plus post-divergence exposure multiplied by its mismatch rate. An explicit construction over unrestricted autoregressive kernel pairs realizes the sharp interval of risks compatible with a finite divergence-aligned observation window. Residual-branch conditional Monte Carlo provides unbiased joint estimates of occurrence, occupation, and window/tail contributions, with per-replicate variance dominance for total token loss. Complete trajectories from Meta-Llama-3.1-8B-Instruct and Qwen2.5-7B-Instruct show that SnapKV at 50% retention enters divergence later and less often than SnapKV-512 or recent-token retention with the same 50% prompt-cache budget, while post-divergence total variation (TV) remains high. In an exploratory analysis of 288 documents, post-divergence exposure accounts for 85-90% of four aggregate mismatch gaps. On 288 independent documents at 90% retention, prespecified comparisons show higher branch-aligned TV in the late than in the early window in both models.",
+    "status": "found"
+  },
+  "2609.16618": {
+    "arxiv_id": "2609.16618",
+    "title": "A Multiverse of Good and Bad Controls: Candidate Causal Graphs for Interpreting Model Robustness Analysis",
+    "authors": [
+      "Shoki Okubo"
+    ],
+    "submission_date": "2026-09-15T04:25:41Z",
+    "latest_updated": "2026-09-15T04:25:41Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16618v1"
+    ],
+    "abstract": "Model robustness analysis estimates an effect across a multiverse of specifications that pools control sets identifying the declared estimand with sets that condition on mediators or colliders. We propose stating rival assumptions about contested controls as a small set of candidate causal graphs, enumerating the adjustment sets each graph licenses, and reporting robustness metrics conditional on each graph. A finite-mixture identity splits the licensed multiverse's dispersion into within-graph and between-graph components; the between-graph share is a conditional descriptive summary whose reading depends on the candidate set, the weights, and a common estimand. Simulations examine misleading pooled robustness assessments and the limits of the decomposition. Applications to hurricane fatalities, job training, and union wages show fragility that survives every graph, instability produced by unlicensed specifications, and a fragility verdict concealing a significant premium in each adjustment-identified candidate world. An R package implements the workflow.",
+    "status": "found"
+  },
+  "2609.16619": {
+    "arxiv_id": "2609.16619",
+    "title": "DiSR-ECG: Residual Shifting Conditional Diffusion for Robust ECG Super-Resolution",
+    "authors": [
+      "Fan-Yi Hsu",
+      "I Chiu",
+      "Kuan-Chen Wang",
+      "Sheng-Yu Peng",
+      "Yu Tsao"
+    ],
+    "submission_date": "2026-09-15T04:26:57Z",
+    "latest_updated": "2026-09-15T04:26:57Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16619v1"
+    ],
+    "abstract": "Electrocardiogram (ECG) signals are essential for arrhythmia diagnosis. With the growing adoption of long-term monitoring via wearable and portable devices, energy-efficient acquisition has become critical, motivating the development of ECG super-resolution (SR) techniques to reconstruct high-resolution signals from low-sampling-rate inputs. While recent SR methods based on discriminative neural networks have shown strong performance, their robustness under distribution shift remains uncertain, which poses a key challenge for real-world deployment. In this study, we propose DiSR-ECG, a residual shifting conditional diffusion framework for robust ECG SR. The model integrates residual shifting with Mamba-based temporal modeling and conditional guidance to enable accurate multi-lead reconstruction. Experiments on two large-scale ECG databases, PTB-XL for in-domain evaluation and Chapman Shaoxing for cross-dataset evaluation, demonstrate that DiSR ECG achieves state-of-the-art performance in both settings, with particularly strong generalization under distribution shift. These results highlight the potential of DiSR-ECG to provide reliable and clinically applicable ECG reconstruction for real-world monitoring.",
+    "status": "found"
+  },
+  "2609.16620": {
+    "arxiv_id": "2609.16620",
+    "title": "Application of Regional Chemical Potential Analysis to Si Adsorption on the Diamond (001) Surface",
+    "authors": [
+      "Masahiro Fukuda",
+      "Arath E. Marin Ramirez",
+      "Yoshiaki Sugimoto",
+      "Taisuke Ozaki"
+    ],
+    "submission_date": "2026-09-15T04:27:51Z",
+    "latest_updated": "2026-09-15T04:27:51Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16620v1"
+    ],
+    "abstract": "Adsorption of carbon dimers and Si atoms on the reconstructed diamond (001) surface is inves- tigated using density functional theory and regional chemical potential (RCP) analysis. We first demonstrate that the RCP distribution provides a real-space description of the bonding rearrange- ments responsible for the site-selective growth of experimentally observed carbon-dimer ribbons. We then examine the adsorption of single and multiple Si atoms. The calculated adsorption ener- gies show that a single Si atom preferentially bridges a surface carbon dimer and that subsequently adsorbed Si atoms favor neighboring dimer sites through Si-Si bond formation. The RCP analysis identifies electron-donating regions at the ends of finite Si chains, providing an intuitive explanation for their preferential one-dimensional growth and a physically motivated strategy for selecting candi- date adsorption structures. At higher Si coverages, geometry optimizations yield Si stripe and planar square-lattice structures on the diamond surface. Surface phase analysis indicates that an increase in the effective Si chemical potential favors structures with progressively higher Si coverages, from the Si stripe phase to the Si square-lattice phase. The calculated band structures reveal a progressive reduction of the surface band gap with increasing Si coverage. In the Si square-lattice structure, several bands cross the Fermi level, and the conducting states along the two in-plane directions have distinct Si and C character because the underlying diamond (001) substrate lacks fourfold rotational symmetry. These results establish RCP analysis as a useful approach for interpreting surface covalent bonding and guiding the exploration of adsorption-driven surface structures.",
+    "status": "found"
+  },
+  "2609.16621": {
+    "arxiv_id": "2609.16621",
+    "title": "Stable by Construction: Variational Latent Markov Operators for Long-Horizon PDE Prediction",
+    "authors": [
+      "Junyi Liao",
+      "Johann Guilleminot",
+      "Vahid Tarokh"
+    ],
+    "submission_date": "2026-09-15T04:28:59Z",
+    "latest_updated": "2026-09-15T04:28:59Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16621v1"
+    ],
+    "abstract": "Neural PDE solvers provide efficient surrogates for time-dependent physical systems, but autoregressive prediction over long horizons remains challenging because local errors can induce distribution shift and accumulate under recursive deployment. We develop a variational approach to this problem by introducing latent Markov dynamics in which physical states are represented by latent distributions and evolved through probabilistic transitions. The framework is formulated directly on function spaces and specialized to functional Gaussian models, where structured latent perturbations induce a spectral geometry and variational transition alignment regularizes the learned dynamics. We further analyze how these mechanisms affect autoregressive error propagation, providing a theoretical connection between variational training and long-horizon prediction. We instantiate the framework as the Variational Autoencoding Markov Operator (VAMO), which combines spatially resolved latent fields, structured Gaussian perturbations, and a neural-operator transition. Empirically, we demonstrate the effectiveness of VAMO on several fluid-dynamics benchmarks with prediction horizons extending substantially beyond those represented during training, where it consistently reduces error accumulation and improves rollout stability over several deterministic and noise-injection baselines. Overall, these results highlight variational modeling as a complementary approach to robust long-horizon neural PDE dynamics.",
+    "status": "found"
+  },
+  "2609.16622": {
+    "arxiv_id": "2609.16622",
+    "title": "Characterizing Heterogeneous Rates in Finite Mixture Estimation via Partial Optimal Transport",
+    "authors": [
+      "Dung Le",
+      "Huy Nguyen",
+      "Trang Pham",
+      "Alessandro Rinaldo",
+      "Nhat Ho"
+    ],
+    "submission_date": "2026-09-15T04:32:53Z",
+    "latest_updated": "2026-09-15T04:32:53Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16622v1"
+    ],
+    "abstract": "Parameter estimation in finite mixture models can exhibit highly heterogeneous convergence behavior: locally isolated components may be estimated substantially faster than groups of competing components. Existing analyses based on Wasserstein distances typically characterize only the worst-case rate and therefore do not fully capture this local heterogeneity. In this paper, we introduce a Voronoi-based partial optimal transport (VPOT) framework for obtaining refined local and global convergence guarantees for the maximum likelihood estimator of the mixing measure. The key geometric idea is to localize the comparison of two mixing measures to extended Voronoi neighborhoods and use partial optimal transport to accommodate the unequal masses of their local restrictions. Within each neighborhood, the first-order POT discrepancy is raised to a power determined by the number of locally competing atoms, allowing the resulting loss to adapt to the local degree of singularity. Under suitable regularity and strong identifiability conditions, we establish uniform local and global upper bounds for a maximum likelihood estimator under the VPOT loss. These bounds reveal a configuration-dependent form of parameter estimation: less singular local configurations admit faster convergence, whereas the most singular configuration recovers the classical worst-case behavior characterized by Wasserstein-based analyses. We further establish a minimax lower bound showing that the convergence rate for estimating the mixing measure under the VPOT loss is optimal. Our results hold in arbitrary fixed dimension without requiring mixing proportions to be uniformly bounded away from zero or prior knowledge of the true number of mixture components. Overall, VPOT provides a configuration-adaptive framework for capturing heterogeneous parameter-estimation behavior in finite mixture models.",
+    "status": "found"
+  },
+  "2609.16623": {
+    "arxiv_id": "2609.16623",
+    "title": "Terahertz two-dimensional coherent spectroscopy: unlocking coherent quantum intraband nonlinear dynamics",
+    "authors": [
+      "Se Jin Park",
+      "In Hyeok Choi",
+      "Jeong Woo Han"
+    ],
+    "submission_date": "2026-09-15T04:34:43Z",
+    "latest_updated": "2026-09-15T04:34:43Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16623v1"
+    ],
+    "abstract": "Quantum materials host a rich spectrum of low-energy collective excitations- phonons, magnons, plasmons, polaritons, and Higgs modes- that fundamentally govern their emergent properties, but remain inaccessible to conventional linear THz spectroscopy when nonlinear pathways overlap or non-perturbative dynamics emerge. Terahertz two-dimensional coherent spectroscopy (THz-2DCS), realized through phase-stable high-field THz pulse sequences, directly resolves this challenge by delivering phase-resolved multidimensional spectra that uniquely disentangle coherent intraband nonlinear quantum dynamics from incoherent backgrounds. Here, we establish a unified theoretical framework by using density-matrix formalism combined with the optical Bloch equations, from which nonlinear pathways are systematically derived and visualized on the Bloch sphere. This framework provides insight into low-energy nonlinear dynamics exhibiting homogeneous or inhomogeneous broadening depending on the scattering mechanism, enabling the interpretation of nonlinear signals in both the perturbative regime, described by a susceptibility expansion, and the non-perturbative regime. Building on this foundation, we comprehensively survey THz-2DCS investigations of nonlinear plasmon, phonon, magnon, and polariton. Finally, we outline future opportunities, including integration with optical-pump THz-probe platforms for nonequilibrium quantum control.",
+    "status": "found"
+  },
+  "2609.16624": {
+    "arxiv_id": "2609.16624",
+    "title": "Existence and Asymptotic Stability of Traveling Waves of Two-species Lotka-Volterra Competition-Diffusion Systems via Geometric Singular Perturbations",
+    "authors": [
+      "Chueh-Hsin Chang",
+      "Tzi-Sheng Yang"
+    ],
+    "submission_date": "2026-09-15T04:37:05Z",
+    "latest_updated": "2026-09-15T04:37:05Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16624v1"
+    ],
+    "abstract": "We consider the two-species Lotka-Volterra competition-diffusion system where one species has a small diffusion rate relative to the other species and has a small competition coefficient. By the geometric singular perturbation theory, we prove the existence of the wavefront connecting the coexistence state to the trivial state, with traveling speed greater than the minimal speed. For such wavefronts, we show that the profiles of both species are monotone. Finally, we use the geometric singular perturbation theory to estimate the associated Evans function, and give the related stability results.",
+    "status": "found"
+  },
+  "2609.16625": {
+    "arxiv_id": "2609.16625",
+    "title": "AURA: Agentic Diagnosis and Refinement for Production Recommender Systems at Scale",
+    "authors": [
+      "SungGeun Kim",
+      "Abhinav Narain",
+      "Daniel Nemirovsky"
+    ],
+    "submission_date": "2026-09-15T04:38:06Z",
+    "latest_updated": "2026-09-15T04:38:06Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16625v1"
+    ],
+    "abstract": "How and why does a recommender system fail the users it serves? Oftentimes, practitioners are left to improve their algorithms based on a combination of feedback from stakeholder teams, domain expertise, and insights from data analyses. Yet the nuances of how and where recommendations perform well or poorly for end users are difficult to discern from aggregate quantitative metrics. Whereas these metrics provide a high-level and incomplete picture, further granularity into the quality of recommendations and their patterns requires reasoning with domain understanding and objectivity, at scale. We contemplate this complex conundrum and describe a method and implementation that uses the latest AI agentic advances to provide actionable diagnoses and improvements for production recommender systems. We present AURA (Agentic Understanding and Refinement of recommender Algorithms), an end-to-end agentic system that performs qualitative evaluation at scale and can then generate improvements to our algorithms at the code level. Specialized agents read production engagement logs, from thousands of sessions to millions, and surface patterns and examples of how the recommender fails real users. The next step uses those diagnoses and context about the recommender's own code, data, and training pipeline to propose and implement refinements grounded in that codebase. We report the system design, initial tests on production data from two large consumer platforms at a major media-streaming company, safeguards, operational learnings, and early results toward a self-improving recommender system. Finally, the diagnostic gap AURA closes is not specific to streaming. The architecture is built to transfer: every domain-specific element enters through the configuration layer that already ported it between our two platforms. We map it concretely to e-commerce and online-retail recommendation.",
+    "status": "found"
+  },
+  "2609.16626": {
+    "arxiv_id": "2609.16626",
+    "title": "JewelTry: Mask-Free Scale Aware Jewelry Virtual Try-On",
+    "authors": [
+      "Xinlei Niu",
+      "Peixia Li",
+      "Jun Wang",
+      "Chenchen Xu",
+      "Jiayu Yang",
+      "Jing Zhang",
+      "Pulak Purkait",
+      "Hongdong Li"
+    ],
+    "submission_date": "2026-09-15T04:38:58Z",
+    "latest_updated": "2026-09-15T04:38:58Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16626v1"
+    ],
+    "abstract": "Virtual try-on (VTON) enables customers to visualize how fashion products appear when worn and has become an important technology for online shopping. While recent advances have substantially improved garment VTON, jewelry remains a challenging and underexplored category due to its small size, rigid structure, and sensitivity to fine-grained visual details. Realistic jewelry VTON requires not only faithful appearance transfer but also accurate scale and placement relative to the wearer. Existing jewelry VTON methods typically rely on mask guidance, whereas mask-free approaches lack explicit guidance for modeling the product scale. To bridge this gap, we introduce JVTO-Bench, a benchmark dataset for scale-faithful jewelry VTON, providing reference source target triplets with real-world product-scale annotations across four major jewelry categories. Building upon this benchmark, we propose JewelTry, a mask-free diffusion framework for scale-aware jewelry VTON. JewelTry incorporates a scale adapter that encodes product dimensions into a scale token, enabling the model to learn scale relationships between jewelry items and surrounding human anatomy in-context. To further improve jewelry consistency, we introduce a single-directional condition attention mechanism and an attention refinement loss that preserve both coarse geometry and fine-grained structural details of the reference jewelry. Extensive experiments show that JewelTry achieves a balance among visual fidelity, background preservation, object consistency and scale accuracy, establishing a strong baseline for mask-free, scale-aware jewelry virtual try-on.",
+    "status": "found"
+  },
+  "2609.16627": {
+    "arxiv_id": "2609.16627",
+    "title": "Quantifying Organizational Environmental Action from Web Data and Large Language Models",
+    "authors": [
+      "Quinn Reynolds",
+      "Daniel Shore",
+      "Vianey Leos Barajas",
+      "Tanhum Yoreh",
+      "Meredith Franklin"
+    ],
+    "submission_date": "2026-09-15T04:43:23Z",
+    "latest_updated": "2026-09-15T04:43:23Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16627v1"
+    ],
+    "abstract": "Quantifying organizational environmental action from publicly available web content remains a challenging environmental data science problem because relevant information can be dispersed across multiple webpages and is primarily communicated through unstructured text. We present a scalable computational framework for transforming organizational web content into structured measures of environmental action and demonstrate the approach using Jewish congregations in the United States. We constructed a national database of 4,964 congregations by integrating multiple geospatial, knowledge-base, directory, and manually reviewed sources. Of these, 2,657 had active websites that were successfully crawled, producing a corpus of 154,454 webpages. We compared three approaches for detecting environmental actions: keyword retrieval followed by large language model (LLM) classification, semantic vector retrieval followed by LLM classification, and direct LLM classification classification without preliminary retrieval. Agreement with an expert human reviewer was lowest for keyword retrieval ($κ$ = 0.26), higher for semantic vector retrieval ($κ$ = 0.42), and similar for direct LLM classification ($κ$ = 0.40). Although semantic retrieval achieved the highest agreement, its retrieval recall was 0.87, indicating loss of relevant content before classification. Applied to the complete corpus, direct LLM classification identified at least one environmental action at 1,398 congregations (53%), providing greater coverage than either retrieval-based approach. These results demonstrate that preliminary retrieval can reduce computational cost but may exclude relevant information before it reaches the classifier. The framework provides a reproducible approach for extracting organization-level environmental information from unstructured web content that can be adapted to other institutions.",
+    "status": "found"
+  },
+  "2609.16628": {
+    "arxiv_id": "2609.16628",
+    "title": "Quantum Simulation of Two-Dimensional Free Dirac Hamiltonian in Multimode Circuit QED",
+    "authors": [
+      "Jiwon Kang",
+      "Jiuk Lee",
+      "Eliya Blumenthal",
+      "Shay Hacohen-Gourgy",
+      "Eunseong Kim"
+    ],
+    "submission_date": "2026-09-15T04:45:37Z",
+    "latest_updated": "2026-09-15T04:45:37Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16628v1"
+    ],
+    "abstract": "Two-dimensional massive Dirac systems feature a gapped Dirac-cone dispersion central to a broad range of phenomena in condensed-matter and topological physics. While quantum simulations have demonstrated one-dimensional Dirac dynamics and two-dimensional massless Weyl dynamics, programmable simulation of massive two-dimensional Dirac dynamics remains experimentally unexplored. Here, we realize a programmable two-dimensional free Dirac Hamiltonian in circuit QED, with independently tunable spin-momentum couplings and mass, using a single Rabi-driven qubit coupled to two modes of a multimode cavity. Using this Hamiltonian, we observe rotational Zitterbewegung of a two-dimensional massive Dirac particle and its dependence on the effective mass. Time-dependent master-equation simulations incorporating measured decoherence, corrections beyond the rotating-wave approximation (RWA), and anharmonicity of the transmon reproduce the observed dynamics. Our results establish multimode circuit QED as a compact, programmable platform for higher-dimensional relativistic quantum dynamics and provide a foundation for exploring dynamical and topological phenomena in gapped Dirac systems.",
+    "status": "found"
+  },
+  "2609.16629": {
+    "arxiv_id": "2609.16629",
+    "title": "Learning to Optimize UAV Path Planning for Data Sensing in Wireless Sensor Networks",
+    "authors": [
+      "Sijie Ma",
+      "Zeyuan Ma",
+      "Weijia Cao",
+      "Yue-Jiao Gong",
+      "Lingling Ma",
+      "Zhiyang Huang",
+      "Jun Zhang"
+    ],
+    "submission_date": "2026-09-15T04:51:47Z",
+    "latest_updated": "2026-09-15T04:51:47Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16629v1"
+    ],
+    "abstract": "UAVs have emerged as highly flexible platforms for data sensing in Wireless Sensor Networks (WSNs). Path planning for UAVs in such tasks plays a key role to assure remote sensing effectiveness and friendly energy consumption. However, existing approaches show two key limitations: i) they are primarily hand-crafted with certain design biases that harm adaptation on unseen tasks. ii) they predominantly assume idealized spatial complexities of actual environments through simplified simulation, causing them to underperform during real-world deployment. In this paper, we propose a novel learning-assisted planning framework, termed Landscape-Aware Meta Differential Evolution (LAMDE), to tackle the mentioned limitations. The major contributions come from the following aspects. We first re-formulate such UAV path planning problem to embrace challenging constraints. To efficiently navigate this highly constrained space, we propose a bi-level learning to optimize approach, where the meta-level is a trainable algorithm configuration policy that meta-learns an adaptable planning strategy for low-level planning algorithm. To address the potential training data scarcity and distribution shift in real-world environments, we introduce a landscape-aware automatic augmentation scheme that enriches training data. At the low-level, a Differential Evolution algorithm is deployed for solving the path planning tasks. To enhance the solving flexibility, we further design a variable-length encoding strategy that dynamically prunes redundant hover points and optimizes continuous flight parameters concurrently within a unified search space. Based on all proposed designs, we meta-train LAMDE and compare it with representative baselines. Comprehensive experiments demonstrate that LAMDE achieves state-of-the-art performance on the tested complex UAV path planning tasks in WSN data collection scenarios.",
+    "status": "found"
+  },
+  "2609.16630": {
+    "arxiv_id": "2609.16630",
+    "title": "Two-qubit gates for the soft 0-π qubit",
+    "authors": [
+      "Zhenxing Liu",
+      "Eli Weissler",
+      "Joshua Combes"
+    ],
+    "submission_date": "2026-09-15T04:53:11Z",
+    "latest_updated": "2026-09-15T04:53:11Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16630v1"
+    ],
+    "abstract": "The 0-π qubit promises longer lifetimes than the transmon, making it a strong candidate for a next-generation, lower-error qubit. Gyenis et al. experimentally demonstrated an unprotected single-qubit gate in the soft 0-π regime [1], but no corresponding two-qubit gate has yet been proposed. We propose an unprotected CZ gate for capacitively coupled soft 0-π qubits. The gate uses a direct transition between a computational state and a higher non-computational state. Assuming negligible device disorder and a phenomenological noise model, the simulated CZ gate achieves a fidelity of approximately 99.9% at a gate time of approximately 160 ns.",
+    "status": "found"
+  },
+  "2609.16631": {
+    "arxiv_id": "2609.16631",
+    "title": "Kazhdan constants for two-element generating sets of $\\mathrm{SL}_n(\\mathbb Z)$",
+    "authors": [
+      "Jvbin Yao"
+    ],
+    "submission_date": "2026-09-15T04:53:27Z",
+    "latest_updated": "2026-09-15T04:53:27Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16631v1"
+    ],
+    "abstract": "For $n\\geq3$, the group $\\mathrm{SL}_n(\\mathbb Z)$ has property $(T)$, so every finite generating set has a positive Kazhdan constant. However, it was recently shown that the infimum of these constants over all finite generating sets is $0$. This naturally raises the question of whether the infimum remains zero when the cardinality of the generating sets is bounded in advance. We prove that the infimum of the Kazhdan constants of $\\mathrm{SL}_n(\\mathbb Z)$ over all two-element generating sets is $0$ for every $n\\geq3$.",
+    "status": "found"
+  },
+  "2609.16632": {
+    "arxiv_id": "2609.16632",
+    "title": "The prime spectrum of the talented monoid of a higher-rank graph and applications",
+    "authors": [
+      "Roozbeh Hazrat",
+      "Promit Mukherjee"
+    ],
+    "submission_date": "2026-09-15T04:54:00Z",
+    "latest_updated": "2026-09-15T04:54:00Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16632v1"
+    ],
+    "abstract": "In this paper, we further investigate the role of the graded Grothendieck group $K_0^{\\gr}$ and its positive cone (the talented monoid) as an effective tool for distinguishing structural types of algebras associated to higher-rank $k$-graphs. We study the prime spectrum (the space of all prime $Γ$-order ideals equipped with a Zariski-like topology) of a general commutative $Γ$-monoid and establish that this space is spectral in the sense of Hochster, provided the monoid has the refinement property and every $Γ$-order ideal is finitely generated. As a result we are able to show that the prime spectrum of the talented monoid of a row-finite $k$-graph without sources and with a finite set of vertices is spectral. For any row-finite $k$-graph $Λ$ without sources, one of our main results says that the space of all graded prime ideals of the Kumjian--Pask algebra $\\KP(Λ)$ is homeomorphic to both the space of all prime $\\mathbb{Z}^k$-order ideals and the space of all prime $\\mathbb{Z}^k$-filters of the talented monoid $T_Λ$. Another main result of this paper provides a complete topological description of regular $Γ$-order ideals of a refinement $Γ$-monoid: a $Γ$-order ideal $J$ is regular if and only if the corresponding closed (resp., open) set $V(J)$ (resp., $D(J)$) is regular closed (resp., regular open) in the prime spectrum. As an application of these results, we establish a lattice isomorphism between the lattice of all regular $\\mathbb{Z}^k$-order ideals of the talented monoid and the lattice of all regular graded ideals of the Kumjian--Pask algebra via a spectrum-theoretic approach.",
+    "status": "found"
+  },
+  "2609.16633": {
+    "arxiv_id": "2609.16633",
+    "title": "Inferring Temporal Dependencies from Social Time Series with the Cross-Correlogram",
+    "authors": [
+      "Bridget Smart",
+      "Renaud Lambiotte",
+      "Takaaki Aoki",
+      "Ryota Kobayashi"
+    ],
+    "submission_date": "2026-09-15T04:55:14Z",
+    "latest_updated": "2026-09-15T04:55:14Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16633v1"
+    ],
+    "abstract": "Characterizing temporal interactions in social systems is challenging because social behavior can be bursty and non-stationary, violating the stationarity assumptions of many methods used to measure temporal dependence. The cross-correlogram, an existing technique used to profile neural excitations and inhibitions, offers an interpretable alternative to methods such as Granger causality or co-occurrence, as it produces a full profile of lagged dependence directly from event times rather than a single summary statistic. We adapt the cross-correlogram by integrating functional models of behavior with data-driven temporal response profiling. By characterizing how periodic structure biases traditional cross-correlograms, we propose a correction based on smooth intensity functions, specified from a known functional form or estimated empirically. This approach provides a robust, interpretable estimator of temporal dependency profiles even when collective rhythms operate on timescales that overlap those of the interactions of interest. We demonstrate theoretically and through simulation that the proposed method recovers temporal dependencies in periodic regimes, outperforming interval-jitter and Granger causality methods. Finally, we apply the method to 3.1 million event times from X (formerly Twitter) collected between 2019 and 2020, demonstrating how cross-correlograms reveal delayed temporal relationships in collective online behavior that are missed by co-occurrence measures. For a subset of television-related hashtags, recovered delays align with known broadcast schedules, providing evidence that the proposed method captures genuine temporal structure rather than artifacts of shared attention cycles.",
+    "status": "found"
+  }
+}

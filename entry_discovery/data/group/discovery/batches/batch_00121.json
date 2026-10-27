@@ -1,0 +1,426 @@
+{
+  "2511.14129": {
+    "arxiv_id": "2511.14129",
+    "title": "MalRAG: A Retrieval-Augmented LLM Framework for Open-set Malicious Traffic Identification",
+    "authors": [
+      "Xiang Luo",
+      "Chang Liu",
+      "Gang Xiong",
+      "Chen Yang",
+      "Gaopeng Gou",
+      "Yaochen Ren",
+      "Zhen Li"
+    ],
+    "submission_date": "2025-11-18T04:25:16Z",
+    "latest_updated": "2025-11-18T04:25:16Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.14129v1"
+    ],
+    "abstract": "Fine-grained identification of IDS-flagged suspicious traffic is crucial in cybersecurity. In practice, cyber threats evolve continuously, making the discovery of novel malicious traffic a critical necessity as well as the identification of known classes. Recent studies have advanced this goal with deep models, but they often rely on task-specific architectures that limit transferability and require per-dataset tuning. In this paper we introduce MalRAG, the first LLM driven retrieval-augmented framework for open-set malicious traffic identification. MalRAG freezes the LLM and operates via comprehensive traffic knowledge construction, adaptive retrieval, and prompt engineering. Concretely, we construct a multi-view traffic database by mining prior malicious traffic from content, structural, and temporal perspectives. Furthermore, we introduce a Coverage-Enhanced Retrieval Algorithm that queries across these views to assemble the most probable candidates, thereby improving the inclusion of correct evidence. We then employ Traffic-Aware Adaptive Pruning to select a variable subset of these candidates based on traffic-aware similarity scores, suppressing incorrect matches and yielding reliable retrieved evidence. Moreover, we develop a suite of guidance prompts where task instruction, evidence referencing, and decision guidance are integrated with the retrieved evidence to improve LLM performance. Across diverse real-world datasets and settings, MalRAG delivers state-of-the-art results in both fine-grained identification of known classes and novel malicious traffic discovery. Ablation and deep-dive analyses further show that MalRAG effective leverages LLM capabilities yet achieves open-set malicious traffic identification without relying on a specific LLM.",
+    "status": "found"
+  },
+  "2511.14130": {
+    "arxiv_id": "2511.14130",
+    "title": "PRISM: Prompt-Refined In-Context System Modelling for Financial Retrieval",
+    "authors": [
+      "Chun Chet Ng",
+      "Jia Yu Lim",
+      "Zhen Hao Chu",
+      "Yixi Zhou",
+      "Wei Zeng Low"
+    ],
+    "submission_date": "2025-11-18T04:30:52Z",
+    "latest_updated": "2026-10-21T08:59:25Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2511.14130v1",
+      "2511.14130v2",
+      "2511.14130v3"
+    ],
+    "abstract": "Deploying LLMs for financial information retrieval demands accuracy, cost efficiency, and reproducibility, yet most approaches require expensive fine-tuning. PRISM is a training-free framework that composes three deployable modules (prompt engineering, in-context learning, and a candidate refinement module) with a boundary-condition study of multi-agent coordination for financial document retrieval. On FiQA-2018, stacked reranking and $k$-reciprocal encoding raise Recall@100 from 0.7783 to 0.8326. On FinAgentBench, a Cohere-refined top-50 pool yields a higher observed end-to-end NDCG@5, below this evaluation's minimum detectable effect, while cutting per-query cost by about 35%. Added complexity does not always pay off: $k$-reciprocal encoding stops helping once the upstream stage is already high-recall, and multi-agent coordination is not a default for fine-grained chunk ranking. Matched pairs that hold prompt, model, and exemplars fixed lose 0.0702 and 0.0681 combined NDCG@5 to their single-path controls, and the whole gap sits at the chunk stage. We release an expert-annotated FinAgentBench evaluation set, together with a label-robustness sweep over 16 alternative ground-truth constructions, restoring a reproducible evaluation path after the original evaluator went offline. Without fine-tuning, PRISM placed third on the official FinAgentBench private leaderboard (leaderboard basis, NDCG@5 0.71181), reaches NDCG@10 0.6197 on FiQA-2018, and 98% accuracy on FinanceBench. We report per-query latency, token, and dollar accounting across roughly 40 configurations, present the quality-cost-latency Pareto frontier, and introduce FACET, a transparent SLA-specific scalarization for choosing among non-dominated configurations. Code and dataset are released at https://bit.ly/prism-ailens.",
+    "status": "found"
+  },
+  "2511.14131": {
+    "arxiv_id": "2511.14131",
+    "title": "Run, Ruminate, and Regulate: A Dual-process Thinking System for Vision-and-Language Navigation",
+    "authors": [
+      "Yu Zhong",
+      "Zihao Zhang",
+      "Rui Zhang",
+      "Lingdong Huang",
+      "Haihan Gao",
+      "Shuo Wang",
+      "Da Li",
+      "Ruijian Han",
+      "Jiaming Guo",
+      "Shaohui Peng",
+      "Di Huang",
+      "Yunji Chen"
+    ],
+    "submission_date": "2025-11-18T04:32:00Z",
+    "latest_updated": "2025-11-18T04:32:00Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.14131v1"
+    ],
+    "abstract": "Vision-and-Language Navigation (VLN) requires an agent to dynamically explore complex 3D environments following human instructions. Recent research underscores the potential of harnessing large language models (LLMs) for VLN, given their commonsense knowledge and general reasoning capabilities. Despite their strengths, a substantial gap in task completion performance persists between LLM-based approaches and domain experts, as LLMs inherently struggle to comprehend real-world spatial correlations precisely. Additionally, introducing LLMs is accompanied with substantial computational cost and inference latency. To address these issues, we propose a novel dual-process thinking framework dubbed R3, integrating LLMs' generalization capabilities with VLN-specific expertise in a zero-shot manner. The framework comprises three core modules: Runner, Ruminator, and Regulator. The Runner is a lightweight transformer-based expert model that ensures efficient and accurate navigation under regular circumstances. The Ruminator employs a powerful multimodal LLM as the backbone and adopts chain-of-thought (CoT) prompting to elicit structured reasoning. The Regulator monitors the navigation progress and controls the appropriate thinking mode according to three criteria, integrating Runner and Ruminator harmoniously. Experimental results illustrate that R3 significantly outperforms other state-of-the-art methods, exceeding 3.28% and 3.30% in SPL and RGSPL respectively on the REVERIE benchmark. This pronounced enhancement highlights the effectiveness of our method in handling challenging VLN tasks.",
+    "status": "found"
+  },
+  "2511.14132": {
+    "arxiv_id": "2511.14132",
+    "title": "A Fuzzy Logic-Based Cryptographic Framework For Real-Time Dynamic Key Generation For Enhanced Data Encryption",
+    "authors": [
+      "Kavya Bhand",
+      "Payal Khubchandani",
+      "Jyoti Khubchandani"
+    ],
+    "submission_date": "2025-11-18T04:34:31Z",
+    "latest_updated": "2025-11-18T04:34:31Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.14132v1"
+    ],
+    "abstract": "With the ever-growing demand for cybersecurity, static key encryption mechanisms are increasingly vulnerable to adversarial attacks due to their deterministic and non-adaptive nature. Brute-force attacks, key compromise, and unauthorized access have become highly common cyber threats. This research presents a novel fuzzy logic-based cryptographic framework that dynamically generates encryption keys in real-time by accessing system-level entropy and hardware-bound trust. The proposed system leverages a Fuzzy Inference System (FIS) to evaluate system parameters that include CPU utilization, process count, and timestamp variation. It assigns entropy level based on linguistically defined fuzzy rules which are fused with hardware-generated randomness and then securely sealed using a Trusted Platform Module (TPM). The sealed key is incorporated in an AES-GCM encryption scheme to ensure both confidentiality and integrity of the data. This system introduces a scalable solution for adaptive encryption in high-assurance computing, zero-trust environments, and cloud-based infrastructure.",
+    "status": "found"
+  },
+  "2511.14133": {
+    "arxiv_id": "2511.14133",
+    "title": "Synthetic Survival Control: Extending Synthetic Controls for \"When-If\" Decision",
+    "authors": [
+      "Jessy Xinyi Han",
+      "Devavrat Shah"
+    ],
+    "submission_date": "2025-11-18T04:36:20Z",
+    "latest_updated": "2025-11-18T04:36:20Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.14133v1"
+    ],
+    "abstract": "Estimating causal effects on time-to-event outcomes from observational data is particularly challenging due to censoring, limited sample sizes, and non-random treatment assignment. The need for answering such \"when-if\" questions--how the timing of an event would change under a specified intervention--commonly arises in real-world settings with heterogeneous treatment adoption and confounding. To address these challenges, we propose Synthetic Survival Control (SSC) to estimate counterfactual hazard trajectories in a panel data setting where multiple units experience potentially different treatments over multiple periods. In such a setting, SSC estimates the counterfactual hazard trajectory for a unit of interest as a weighted combination of the observed trajectories from other units. To provide formal justification, we introduce a panel framework with a low-rank structure for causal survival analysis. Indeed, such a structure naturally arises under classical parametric survival models. Within this framework, for the causal estimand of interest, we establish identification and finite sample guarantees for SSC. We validate our approach using a multi-country clinical dataset of cancer treatment outcomes, where the staggered introduction of new therapies creates a quasi-experimental setting. Empirically, we find that access to novel treatments is associated with improved survival, as reflected by lower post-intervention hazard trajectories relative to their synthetic counterparts. Given the broad relevance of survival analysis across medicine, economics, and public policy, our framework offers a general and interpretable tool for counterfactual survival inference using observational data.",
+    "status": "found"
+  },
+  "2511.14134": {
+    "arxiv_id": "2511.14134",
+    "title": "Topological transition induced by selective random defects on a honeycomb lattice",
+    "authors": [
+      "Sogen Ikegami",
+      "Kiyu Fukui",
+      "Shun Okumura",
+      "Yasuyuki Kato",
+      "Yukitoshi Motome"
+    ],
+    "submission_date": "2025-11-18T04:39:59Z",
+    "latest_updated": "2025-11-18T04:39:59Z",
+    "revised_dates": null,
+    "venue": "Phys. Rev. B 113, 144203 (2026)",
+    "latest_version": 1,
+    "versions": [
+      "2511.14134v1"
+    ],
+    "abstract": "We investigate how the spectral and topological properties of electron systems evolve on a lattice that interpolates between the honeycomb and its 1/6-depleted structures through the introduction of selective random defects. We find that in certain parameter regimes, the topological properties of the two lattice systems are smoothly connected, whereas in other regimes, selective random defects induce a topological transition. Analysis based on an effective model reveals that the effect of selective random defects can be understood as a modulation of hopping amplitudes. Our results highlight the potential for designing and controlling the spectral and even topological properties of electronic systems across a wide range of material platforms.",
+    "status": "found"
+  },
+  "2511.14135": {
+    "arxiv_id": "2511.14135",
+    "title": "AdaFair-MARL: Enforcing Adaptive Fairness Constraints in Multi-Agent Reinforcement Learning",
+    "authors": [
+      "Promise Ekpo",
+      "Saesha Agarwal",
+      "Felix Grimm",
+      "Lekan Molu",
+      "Angelique Taylor"
+    ],
+    "submission_date": "2025-11-18T04:48:50Z",
+    "latest_updated": "2026-04-22T21:56:51Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.14135v1",
+      "2511.14135v2"
+    ],
+    "abstract": "Fair workload enforcement in heterogeneous multi-agent systems that pursue shared objectives remains challenging. Fixed fairness penalties often introduce inefficiencies, training instability, and conflicting agent incentives. Reward-shaping approaches in fair Multi-Agent Reinforcement Learning (MARL) typically incorporate fairness through heuristic penalties or scalar reward modifications and often rely on post-hoc evaluation. However, these methods do not guarantee that a desired fairness level will be satisfied. To address this limitation, we propose the Adaptive Fairness Multi-Agent Reinforcement Learning (AdaFair-MARL) framework, which formulates workload fairness as an explicit constraint so that agents maintain balanced contributions while optimizing team performance. We present AdaFair-MARL, a constrained cooperative MARL framework whose core algorithmic component is a primal-dual update that enforces workload fairness via adaptive Lagrange multiplier updates. Grounding the framework in a cooperative Markov game, we derive the fairness constraint from Jain's Fairness Index (JFI) geometry and show that the resulting feasible set admits a second-order cone representation, enabling principled Lagrangian dual-ascent updates without manual penalty tuning. Experiments in a simulated hospital coordination environment (MARLHospital) demonstrate the effectiveness of AdaFair-MARL compared to reward-shaping and fixed-penalty fairness methods, improving workload balance while maintaining team performance. We found that AdaFair-MARL achieves nearly perfect constraint satisfaction (0.99-1.00) while significantly improving workload fairness compared to fixed-penalty baselines.",
+    "status": "found"
+  },
+  "2511.14136": {
+    "arxiv_id": "2511.14136",
+    "title": "Beyond Accuracy: A Multi-Dimensional Framework for Evaluating Enterprise Agentic AI Systems",
+    "authors": [
+      "Sushant Mehta"
+    ],
+    "submission_date": "2025-11-18T04:50:19Z",
+    "latest_updated": "2025-11-18T04:50:19Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.14136v1"
+    ],
+    "abstract": "Current agentic AI benchmarks predominantly evaluate task completion accuracy, while overlooking critical enterprise requirements such as cost-efficiency, reliability, and operational stability. Through systematic analysis of 12 main benchmarks and empirical evaluation of state-of-the-art agents, we identify three fundamental limitations: (1) absence of cost-controlled evaluation leading to 50x cost variations for similar precision, (2) inadequate reliability assessment where agent performance drops from 60\\% (single run) to 25\\% (8-run consistency), and (3) missing multidimensional metrics for security, latency, and policy compliance. We propose \\textbf{CLEAR} (Cost, Latency, Efficacy, Assurance, Reliability), a holistic evaluation framework specifically designed for enterprise deployment. Evaluation of six leading agents on 300 enterprise tasks demonstrates that optimizing for accuracy alone yields agents 4.4-10.8x more expensive than cost-aware alternatives with comparable performance. Expert evaluation (N=15) confirms that CLEAR better predicts production success (correlation $ρ=0.83$) compared to accuracy-only evaluation ($ρ=0.41$).",
+    "status": "found"
+  },
+  "2511.14137": {
+    "arxiv_id": "2511.14137",
+    "title": "Unifying Convolution and Attention via Convolutional Nearest Neighbors",
+    "authors": [
+      "Mingi Kang",
+      "Jeová Farias Sales Rocha Neto"
+    ],
+    "submission_date": "2025-11-18T04:54:39Z",
+    "latest_updated": "2026-07-01T03:20:56Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2511.14137v1",
+      "2511.14137v2",
+      "2511.14137v3"
+    ],
+    "abstract": "Convolutional Neural Networks and Vision Transformers are the two dominant architectural families in computer vision, defined by spatially local convolution and global self-attention respectively. Despite their apparent differences, we show that both operations are special cases of a single $k$-nearest neighbor aggregation framework: convolution selects neighbors by spatial proximity while attention selects by feature similarity, placing them at two ends of a shared operational spectrum. We introduce Convolutional Nearest Neighbors (ConvNN), a unified framework that exactly recovers standard and depthwise convolution, self-attention, and sparse attention variants including KVT-attention as special cases, and exposes the design space of neighbor-selection strategies between them through configurable similarity functions, positional encodings, and aggregation kernels. We validate ConvNN on ImageNet-1K classification across two complementary architectures: a hybrid branching layer in ResNet-50 that combines local and global feature learning, improving top-1 accuracy by 3.0% over the ResNet-50 baseline, and ConvNN-attention in ViT-Base that achieves 81.64% top-1 accuracy, surpassing standard multi-head self-attention by 0.7%. Together, these results demonstrate that ConvNN provides a principled foundation for designing operations that bridge convolutional and attention-based computation.",
+    "status": "found"
+  },
+  "2511.14138": {
+    "arxiv_id": "2511.14138",
+    "title": "FxSearcher: gradient-free text-driven audio transformation",
+    "authors": [
+      "Hojoon Ki",
+      "Jongsuk Kim",
+      "Minchan Kwon",
+      "Junmo Kim"
+    ],
+    "submission_date": "2025-11-18T04:58:48Z",
+    "latest_updated": "2025-11-20T06:33:16Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.14138v1",
+      "2511.14138v2"
+    ],
+    "abstract": "Achieving diverse and high-quality audio transformations from text prompts remains challenging, as existing methods are fundamentally constrained by their reliance on a limited set of differentiable audio effects. This paper proposes FxSearcher, a novel gradient-free framework that discovers the optimal configuration of audio effects (FX) to transform a source signal according to a text prompt. Our method employs Bayesian Optimization and CLAP-based score function to perform this search efficiently. Furthermore, a guiding prompt is introduced to prevent undesirable artifacts and enhance human preference. To objectively evaluate our method, we propose an AI-based evaluation framework. The results demonstrate that the highest scores achieved by our method on these metrics align closely with human preferences. Demos are available at https://hojoonki.github.io/FxSearcher/",
+    "status": "found"
+  },
+  "2511.14139": {
+    "arxiv_id": "2511.14139",
+    "title": "FlexiCup: Wireless Multimodal Suction Cup with Dual-Zone Vision-Tactile Sensing",
+    "authors": [
+      "Junhao Gong",
+      "Shoujie Li",
+      "Kit-Wa Sou",
+      "Changqing Guo",
+      "Hourong Huang",
+      "Tong Wu",
+      "Yifan Xie",
+      "Chenxin Liang",
+      "Chuqiao Lyu",
+      "Xiaojun Liang",
+      "Wenbo Ding"
+    ],
+    "submission_date": "2025-11-18T04:58:54Z",
+    "latest_updated": "2026-03-28T09:48:39Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.14139v1",
+      "2511.14139v2"
+    ],
+    "abstract": "Conventional suction cups lack sensing capabilities for contact-aware manipulation in unstructured environments. This paper presents FlexiCup, a multimodal suction cup with wireless electronics that integrate dual-zone vision-tactile sensing. The central zone dynamically switches between vision and tactile modalities via illumination control, while the peripheral zone provides continuous spatial awareness. The modular mechanical design supports both vacuum (sustained-contact adhesion) and Bernoulli (contactless lifting) actuation while maintaining the identical dual-zone sensing architecture, demonstrating sensing-actuation decoupling where sensing and actuation principles are orthogonally separable. We validate hardware versatility through dual control paradigms. Modular perception-driven grasping achieves comparable success rates across vacuum (90.0%) and Bernoulli (86.7%) modes using identical sensing and control pipelines, validating the sensing architecture's effectiveness across fundamentally different pneumatic principles. Diffusion-based end-to-end learning achieves 73.3% and 66.7% success on contact-aware manipulation tasks, with ablation studies confirming 13% improvements from multi-head attention coordinating dual-zone observations. Hardware designs, firmware, and experimental videos are available at the companion website: https://flexicup.junhaogong.top.",
+    "status": "found"
+  },
+  "2511.14140": {
+    "arxiv_id": "2511.14140",
+    "title": "Beyond Fixed and Dynamic Prompts: Embedded Jailbreak Templates for Advancing LLM Security",
+    "authors": [
+      "Hajun Kim",
+      "Hyunsik Na",
+      "Daeseon Choi"
+    ],
+    "submission_date": "2025-11-18T04:59:10Z",
+    "latest_updated": "2025-11-18T04:59:10Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.14140v1"
+    ],
+    "abstract": "As the use of large language models (LLMs) continues to expand, ensuring their safety and robustness has become a critical challenge. In particular, jailbreak attacks that bypass built-in safety mechanisms are increasingly recognized as a tangible threat across industries, driving the need for diverse templates to support red-teaming efforts and strengthen defensive techniques. However, current approaches predominantly rely on two limited strategies: (i) substituting harmful queries into fixed templates, and (ii) having the LLM generate entire templates, which often compromises intent clarity and reproductibility. To address this gap, this paper introduces the Embedded Jailbreak Template, which preserves the structure of existing templates while naturally embedding harmful queries within their context. We further propose a progressive prompt-engineering methodology to ensure template quality and consistency, alongside standardized protocols for generation and evaluation. Together, these contributions provide a benchmark that more accurately reflects real-world usage scenarios and harmful intent, facilitating its application in red-teaming and policy regression testing.",
+    "status": "found"
+  },
+  "2511.14141": {
+    "arxiv_id": "2511.14141",
+    "title": "Data Center Control Against Sub-Synchronous Resonance: A Data-Driven Approach",
+    "authors": [
+      "Grant Ruan",
+      "Marija D. Ilic",
+      "Le Xie"
+    ],
+    "submission_date": "2025-11-18T04:59:22Z",
+    "latest_updated": "2025-11-18T04:59:22Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.14141v1"
+    ],
+    "abstract": "Data centers host a variety of essential services such as cloud computing and artificial intelligence. Electric grid operators, however, have limited knowledge of the reliability risks of data center interconnection due to their unique operational characteristics. An emerging concern is the sub-synchronous resonance (SSR) which refer to unexpected voltage/current oscillations at typical frequencies below 60/50 Hz. It remains unknown whether and how the interactions between data centers and the grid may trigger resonances, equipment damages, and even cascading failures. In this paper, we focus on grid-connected data centers that draw electricity from the grid through power factor correction (PFC) converters. We conduct two-tone frequency sweep to investigate the data centers' impedance characteristics, i.e. magnitude and phase angle variations over frequencies, and showcase their deep dependence on compute workloads. The impedance modeling provides a direct approach to evaluating SSR risks and enable a cooperative mechanism to alarm and avoid resonance-prone situations. Building upon the impedance, a data-driven preventive controller is then established to raise early warnings of risky operation and suggest flexible workload management according to the given grid conditions. Through case study, we demonstrate how to use impedance to understand the unexpected interactions. Data-driven impedance is validated to show decent performance in capturing the unique impedance dips and tracking the impedance variations across a range of workload scenarios. The early warning and preventive control approaches are further effective to improve the safety margins with minimal workload rescheduling. The key findings of this work will provide valuable insights for grid operators and data center managers, and support preparation for future scenarios involving large-scale data center integration.",
+    "status": "found"
+  },
+  "2511.14142": {
+    "arxiv_id": "2511.14142",
+    "title": "From Graphs to Hypergraphs: Enhancing Aspect-Based Sentiment Analysis via Multi-Level Relational Modeling",
+    "authors": [
+      "Omkar Mahesh Kashyap",
+      "Padegal Amit",
+      "Madhav Kashyap",
+      "Ashwini M Joshi",
+      "Shylaja SS"
+    ],
+    "submission_date": "2025-11-18T05:01:25Z",
+    "latest_updated": "2025-11-18T05:01:25Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.14142v1"
+    ],
+    "abstract": "Aspect-Based Sentiment Analysis (ABSA) predicts sentiment polarity for specific aspect terms, a task made difficult by conflicting sentiments across aspects and the sparse context of short texts. Prior graph-based approaches model only pairwise dependencies, forcing them to construct multiple graphs for different relational views. These introduce redundancy, parameter overhead, and error propagation during fusion, limiting robustness in short-text, low-resource settings. We present HyperABSA, a dynamic hypergraph framework that induces aspect-opinion structures through sample-specific hierarchical clustering. To construct these hyperedges, we introduce a novel acceleration-fallback cutoff for hierarchical clustering, which adaptively determines the level of granularity. Experiments on three benchmarks (Lap14, Rest14, MAMS) show consistent improvements over strong graph baselines, with substantial gains when paired with RoBERTa backbones. These results position dynamic hypergraph construction as an efficient, powerful alternative for ABSA, with potential extensions to other short-text NLP tasks.",
+    "status": "found"
+  },
+  "2511.14143": {
+    "arxiv_id": "2511.14143",
+    "title": "SMART: Shot-Aware Multimodal Video Moment Retrieval with Audio-Enhanced MLLM",
+    "authors": [
+      "An Yu",
+      "Weiheng Lu",
+      "Jian Li",
+      "Zhenfei Zhang",
+      "Yunhang Shen",
+      "Felix X. -F. Ye",
+      "Ming-Ching Chang"
+    ],
+    "submission_date": "2025-11-18T05:03:17Z",
+    "latest_updated": "2026-06-08T00:19:12Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.14143v1",
+      "2511.14143v2"
+    ],
+    "abstract": "Video Moment Retrieval is a task in video understanding that aims to localize a specific temporal segment in an untrimmed video based on a natural language query. Despite recent progress in moment retrieval from videos using both traditional techniques and Multimodal Large Language Models (MLLM), most existing methods still rely on coarse temporal understanding and a single visual modality, limiting performance on complex videos. To address this, we introduce \\textit{S}hot-aware \\textit{M}ultimodal \\textit{A}udio-enhanced \\textit{R}etrieval of \\textit{T}emporal \\textit{S}egments (SMART), an MLLM-based framework that integrates audio cues and leverages shot-level temporal structure. SMART enriches multimodal representations by combining audio and visual features while applying \\textbf{Shot-aware Token Compression}, which selectively retains high-information tokens within each shot to reduce redundancy and preserve fine-grained temporal details. We also refine prompt design to better utilize audio-visual cues. Evaluations on Charades-STA and QVHighlights show that SMART achieves significant improvements over state-of-the-art methods, including a 1.61\\% increase in R1@0.5 and 2.59\\% gain in R1@0.7 on Charades-STA.",
+    "status": "found"
+  },
+  "2511.14144": {
+    "arxiv_id": "2511.14144",
+    "title": "Applying Relation Extraction and Graph Matching to Answering Multiple Choice Questions",
+    "authors": [
+      "Naoki Shimoda",
+      "Akihiro Yamamoto"
+    ],
+    "submission_date": "2025-11-18T05:03:27Z",
+    "latest_updated": "2025-11-18T05:03:27Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.14144v1"
+    ],
+    "abstract": "In this research, we combine Transformer-based relation extraction with matching of knowledge graphs (KGs) and apply them to answering multiple-choice questions (MCQs) while maintaining the traceability of the output process. KGs are structured representations of factual knowledge consisting of entities and relations. Due to the high construction cost, they had been regarded as static databases with validated links. However, the recent development of Transformer-based relation extraction (RE) methods has enabled us to generate KGs dynamically by giving them natural language texts, and thereby opened the possibility for representing the meaning of the input sentences with the created KGs. Using this effect, we propose a method that answers MCQs in the \"fill-in-the-blank\" format, taking care of the point that RE methods generate KGs that represent false information if provided with factually incorrect texts. We measure the truthfulness of each question sentence by (i) converting the sentence into a relational graph using an RE method and (ii) verifying it against factually correct KGs under the closed-world assumption. The experimental results demonstrate that our method correctly answers up to around 70% of the questions, while providing traceability of the procedure. We also highlight that the question category has a vast influence on the accuracy.",
+    "status": "found"
+  },
+  "2511.14145": {
+    "arxiv_id": "2511.14145",
+    "title": "Flag-transitive $2$-$(v,k,λ)$ designs with $λ\\ge (r,λ)^2$",
+    "authors": [
+      "Junchi Zhang",
+      "Jianbing Lu",
+      "Meizi Ou"
+    ],
+    "submission_date": "2025-11-18T05:10:54Z",
+    "latest_updated": "2025-11-18T05:10:54Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.14145v1"
+    ],
+    "abstract": "This paper is devoted to the study of $2$-designs with $λ\\ge (r,λ)^2$ admitting a flag-transitive automorphism group $G$. The group $G$ has been shown to be point-primitive of either almost simple or affine type. In this paper, we classify the $2$-designs with $λ\\geq (r,λ)^2>1$ admitting a flag-transitive almost simple automorphism group with socle $\\mathrm{PSL}_n(q)$ or $\\mathrm{PSU}_n(q)$ for $n \\geq 3$.",
+    "status": "found"
+  },
+  "2511.14146": {
+    "arxiv_id": "2511.14146",
+    "title": "SCOPE: Spectral Concentration by Distributionally Robust Joint Covariance-Precision Estimation",
+    "authors": [
+      "Renjie Chen",
+      "Viet Anh Nguyen",
+      "Huifu Xu"
+    ],
+    "submission_date": "2025-11-18T05:13:49Z",
+    "latest_updated": "2025-11-18T05:13:49Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.14146v1"
+    ],
+    "abstract": "We propose a distributionally robust formulation for simultaneously estimating the covariance matrix and the precision matrix of a random vector.The proposed model minimizes the worst-case weighted sum of the Frobenius loss of the covariance estimator and Stein's loss of the precision matrix estimator against all distributions from an ambiguity set centered at the nominal distribution. The radius of the ambiguity set is measured via convex spectral divergence. We demonstrate that the proposed distributionally robust estimation model can be reduced to a convex optimization problem, thereby yielding quasi-analytical estimators. The joint estimators are shown to be nonlinear shrinkage estimators. The eigenvalues of the estimators are shrunk nonlinearly towards a positive scalar, where the scalar is determined by the weight coefficient of the loss terms. By tuning the coefficient carefully, the shrinkage corrects the spectral bias of the empirical covariance/precision matrix estimator. By this property, we call the proposed joint estimator the Spectral concentrated COvariance and Precision matrix Estimator (SCOPE). We demonstrate that the shrinkage effect improves the condition number of the estimator. We provide a parameter-tuning scheme that adjusts the shrinkage target and intensity that is asymptotically optimal. Numerical experiments on synthetic and real data show that our shrinkage estimators perform competitively against state-of-the-art estimators in practical applications.",
+    "status": "found"
+  },
+  "2511.14147": {
+    "arxiv_id": "2511.14147",
+    "title": "Imaging with super-resolution in changing random media",
+    "authors": [
+      "Alexander Christie",
+      "Matan Leibovich",
+      "Miguel Moscoso",
+      "Alexei Novikov",
+      "George Papanicolaou",
+      "Chrysoula Tsogka"
+    ],
+    "submission_date": "2025-11-18T05:18:00Z",
+    "latest_updated": "2026-02-17T22:14:33Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.14147v1",
+      "2511.14147v2"
+    ],
+    "abstract": "We develop an imaging algorithm that exploits strong scattering to achieve super-resolution in changing random media. The method processes large and diverse array datasets using sparse dictionary learning, clustering, and multidimensional scaling. Starting from random initializations, the algorithm reliably extracts the unknown medium properties necessary for accurate imaging using back-propagation, $\\ell_2$ or $\\ell_1$ methods. Remarkably, scattering enhances resolution beyond homogeneous medium limits. When abundant data are available, the algorithm allows the realization of super-resolution in imaging.",
+    "status": "found"
+  },
+  "2511.14148": {
+    "arxiv_id": "2511.14148",
+    "title": "AsyncVLA: Asynchronous Flow Matching for Vision-Language-Action Models",
+    "authors": [
+      "Yuhua Jiang",
+      "Shuang Cheng",
+      "Yan Ding",
+      "Feifei Gao",
+      "Biqing Qi"
+    ],
+    "submission_date": "2025-11-18T05:21:11Z",
+    "latest_updated": "2026-05-07T13:40:47Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.14148v1",
+      "2511.14148v2"
+    ],
+    "abstract": "Vision-language-action (VLA) models have recently emerged as a powerful paradigm for building generalist robots. However, traditional VLA models that generate actions through flow matching (FM) typically rely on rigid and uniform time schedules, i.e., synchronous FM (SFM). Without action context awareness and asynchronous self-correction, SFM becomes unstable in long-horizon tasks, where a single action error can cascade into failure. In this work, we propose asynchronous flow matching VLA (AsyncVLA), a novel framework that introduces temporal flexibility in asynchronous FM (AFM) and enables self-correction in action generation. AsyncVLA breaks from the vanilla SFM in VLA models by generating the action tokens in a non-uniform time schedule with action context awareness. Besides, our method introduces the confidence rater to extract confidence of the initially generated actions, enabling the model to selectively refine inaccurate action tokens before execution. Moreover, we propose a unified training procedure for SFM and AFM that endows a single model with both modes, improving KV-cache utilization. Extensive experiments on robotic manipulation benchmarks demonstrate that AsyncVLA is data-efficient and exhibits self-correction ability. AsyncVLA outperforms existing methods across both simulation and real-world evaluations. Our code is available at https://github.com/YuhuaJiang2002/AsyncVLA.",
+    "status": "found"
+  }
+}

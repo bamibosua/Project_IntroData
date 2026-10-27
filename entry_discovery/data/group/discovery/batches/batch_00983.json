@@ -1,0 +1,386 @@
+{
+  "2609.17494": {
+    "arxiv_id": "2609.17494",
+    "title": "Equivariant Cohomological Crepant Resolution Conjecture for ADE-orbifolds",
+    "authors": [
+      "Qike Li",
+      "Fabio Perroni"
+    ],
+    "submission_date": "2026-09-15T17:35:37Z",
+    "latest_updated": "2026-09-15T17:35:37Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17494v1"
+    ],
+    "abstract": "Let G be a non-trivial finite subgroup of SL_2(C) and let p : X \\to C^2/G be the minimal resolution. We prove the C^*-equivariant Cohomological Crepant Resolution Conjecture for the ADE orbifold [C^2/G]. More precisely, after specializing the quantum parameters at suitable roots of unity, we prove that the Bryan-Gholampour transformation induces an isomorphism between the C^*-equivariant quantum cohomology of X and the C^*-equivariant Chen-Ruan cohomology of [C^2/G]. Our proof is direct and is based on the McKay correspondence, ADE root systems, and character theory. Following the character-theoretic form of the Bryan-Gholampour change of variables, we use the McKay correspondence to diagonalize the transformation and to reduce the compatibility of the products to a uniform root-system identity. In type A, this reduction admits a discrete Fourier realization. In type D, the cyclic subgroup of the binary dihedral group leads instead to finite sine transforms, while the exceptional cases E_6,E_7,E_8 are treated by exact matrix computations over the corresponding cyclotomic fields. As a preliminary result, for a symplectic complex vector space V and a finite subgroup G of Sp(V), we give an explicit presentation of the C^*-equivariant Chen-Ruan product of [V/G] and identify the resulting algebra with the Rees algebra of the center of the group algebra with respect to the age filtration. In particular, the equivariant Chen-Ruan algebra interpolates between the center of the group algebra and its associated graded algebra, the latter recovering the ordinary Chen-Ruan cohomology.",
+    "status": "found"
+  },
+  "2609.17495": {
+    "arxiv_id": "2609.17495",
+    "title": "First-Crossing Reduction and Inference for No-Rescue Effects under Deterministic Rescue",
+    "authors": [
+      "Shu Tamano"
+    ],
+    "submission_date": "2026-09-15T17:37:27Z",
+    "latest_updated": "2026-09-15T17:37:27Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17495v1"
+    ],
+    "abstract": "Clinical protocols may require rescue medication when a patient's condition crosses a prespecified threshold. The outcome under continued non-rescue is then unobserved after first crossing, preventing point identification without extrapolation assumptions. In this paper, we develop sharp partial identification and inference for this hypothetical estimand while retaining the original no-rescue intervention. We show that bounding this mean reduces exactly to restricting conditional mean effects of withholding rescue at first-crossing histories. Building on this representation, restrictions on prespecified crossing-stratum averages yield three results. (i) A finite convex program gives sharp bounds without modeling post-crossing trajectories, attained by full-data laws that preserve the observed distribution. (ii) Confidence intervals incorporate sampling uncertainty and numerical error to cover the entire sharp set, including strata with no observed crossings. (iii) Under local feasibility conditions, sampling and numerical errors control endpoint accuracy even with zero-probability strata, whereas valid coverage requires no such conditions. Our experiments show that the stratum-average restrictions can yield narrower confidence intervals in larger samples, and that accounting for uncertainty in empty strata maintains valid coverage when rescue is rare.",
+    "status": "found"
+  },
+  "2609.17496": {
+    "arxiv_id": "2609.17496",
+    "title": "Verifiable Social Reasoning for LLM Assistants",
+    "authors": [
+      "Amir Taubenfeld",
+      "Zorik Gekhman",
+      "Avigail Grinstein-Dabush",
+      "Itay Laish",
+      "Ariel Goldstein",
+      "Marian Croak",
+      "Avinatan Hassidim",
+      "Yossi Matias",
+      "Amir Feder"
+    ],
+    "submission_date": "2026-09-15T17:37:29Z",
+    "latest_updated": "2026-09-15T17:37:29Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17496v1"
+    ],
+    "abstract": "LLM assistants are widely used for daily social advice, yet evaluating their social reasoning in such consultation settings remains challenging since (i) it requires setups where the assistant learns about social situations from subjective user narratives, and (ii) social properties, such as others' intentions, typically lack verifiable ground truth. To address these challenges, we introduce Fuse, a multi-agent simulation framework for studying user-mediated social reasoning. In Fuse, a target agent with a hidden motive interacts with other agents including one representing the user, who then consults the evaluated assistant to infer the target's motive, providing verifiable ground truth by construction. Simulation faithfulness is validated through a human study with 24k annotations. We apply Fuse to 12 LLMs and demonstrate its analytical utility by systematically isolating key factors, showing that (i) user mediation compounds the inherent difficulty of social reasoning; (ii) LLMs exhibit systematic sensitivity to biased user framing; (iii) models can require more details than humans need to reach a correct prediction; and (iv) longer conversations do not always improve performance despite providing opportunities for clarifying questions. We open-source Fuse and a dataset with 21k examples.",
+    "status": "found"
+  },
+  "2609.17497": {
+    "arxiv_id": "2609.17497",
+    "title": "Beyond Hardware: Adaptive Algorithmic Control by State-Proxy Equalization",
+    "authors": [
+      "Jianlong Lu",
+      "Hongrui Zhang",
+      "Thorsten Koch",
+      "Ying Chen"
+    ],
+    "submission_date": "2026-09-15T17:37:39Z",
+    "latest_updated": "2026-10-08T13:36:21Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2609.17497v1",
+      "2609.17497v2"
+    ],
+    "abstract": "Recent advances in quantum computing have been driven primarily by improvements in hardware. Here we show that substantial gains can instead arise from how finite computational resources are allocated throughout a quantum computation. We introduce Adaptive Algorithmic Control (A2C), a software paradigm founded on a State-Proxy Equalization theorem, which proves that the optimal allocation for a state-derived proxy-error functional equalizes cumulative computational hardness rather than physical time. The required computational hardness is inferred directly from the evolving quantum state, avoiding explicit reconstruction of the exponentially large many-body spectrum. Across quantum optimization problems containing up to 156 qubits, combining exact simulations, large-scale supercomputer computations and IBM quantum hardware experiments, A2C improves the low-energy sampling probabilities by $22\\%$ to over $100,000\\%$ under matched circuit depths and measurement budgets. These results demonstrate that quantum computational performance depends not only on hardware capabilities, but also on how finite computational resources are organized, establishing adaptive algorithmic control as a complementary software pathway for advancing quantum computation.",
+    "status": "found"
+  },
+  "2609.17498": {
+    "arxiv_id": "2609.17498",
+    "title": "Antidistinguishability of states in General Probabilistic Theories",
+    "authors": [
+      "Satyaki Manna",
+      "Anandamay Das Bhowmik"
+    ],
+    "submission_date": "2026-09-15T17:37:48Z",
+    "latest_updated": "2026-09-15T17:37:48Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17498v1"
+    ],
+    "abstract": "We investigate antidistinguishability of states within the framework of general probabilistic theories (GPTs). We formulate antidistinguishability, strong and equal antidistinguishability as refined notions that imposed additional constraint on the measurement effects. We establish general results relating these notions of antidistinguishability and derive an upper bound on the cardinality of equally antidistinguishable sets in terms of the affine dimension of the state space. We then study antidistinguishability in polygonal theories, obtaining conditions for antidistinguishability of a set of states. In consequence, we show that the set of all pure states in a polygon model is antidistinguishable. Additionally, we identify broad families of strongly and equally antidistinguishable states. Finally, using Random Exclusion Codes, whose success probability is governed by the antidistinguishability of different sets of encoding states, we probe the nonclassicality of polygon theories. We find that certain polygon models can outperform the optimal quantum value, while their optimal performance converges to the quantum limit in the large-polygon limit.",
+    "status": "found"
+  },
+  "2609.17499": {
+    "arxiv_id": "2609.17499",
+    "title": "ENCP: Episode-Normalized Conformal Prediction for Vision-and-Language Navigation",
+    "authors": [
+      "Vicky Feliren",
+      "A. Taufiq Asyhari",
+      "Muhamad Risqi U. Saputra"
+    ],
+    "submission_date": "2026-09-15T17:42:15Z",
+    "latest_updated": "2026-09-15T17:42:15Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17499v1"
+    ],
+    "abstract": "Uncertainty estimation for Vision-Language-Navigation (VLN) models is a critical task since it can help identify ambiguous and unreliable predictions, enabling agents to make safer navigation decisions. As one of the most advanced uncertainty estimation frameworks, conformal prediction (CP) offers a promising approach for uncertainty estimation in VLN. However, given that VLN agent requires a sequence of steps, standard calibration in conformal prediction fails to provide coverage guarantee it promises over a dependent, variable-length VLN episode. To this end, we propose Episode-Normalized Conformal Prediction (ENCP), which rescales a nonconformity score by the policy's residual confidence and calibrates one maximum score per episode. Under exchangeable calibration and test episodes, this construction covers the ground truth at every step with probability at least $1 - α$, while allowing dependence among steps within an episode. Across four VLN policies and three nonconformity scores on R2R and REVERIE dataset, ENCP meets all reported empirical step-coverage targets on the seen-to-unseen evaluation. These results demonstrate that ENCP can provide model-agnostic uncertainty estimates, which might be useful for determining when a VLN agent should defer to a more capable predictor, including human assistance.",
+    "status": "found"
+  },
+  "2609.17500": {
+    "arxiv_id": "2609.17500",
+    "title": "Visualizing Berry curvature in a Floquet-Chern insulator",
+    "authors": [
+      "Younsik Kim",
+      "Rishi Acharya",
+      "Hannah E. Aguirre",
+      "Lucca Figari",
+      "Daniel P. Shoemaker",
+      "Fahad Mahmood"
+    ],
+    "submission_date": "2026-09-15T17:42:29Z",
+    "latest_updated": "2026-09-15T17:42:29Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17500v1"
+    ],
+    "abstract": "Circularly polarized light can open a topological gap in a gapless Dirac system, creating a Floquet-Chern insulator. However, its Berry curvature has not been directly resolved. Here we use circular-dichroism time- and angle-resolved photoemission spectroscopy (Tr-ARPES) to map the light-induced Berry curvature of Floquet-Bloch states on the surface of Bi$_2$Se$_3$. By comparing spectra for opposite helicities of the mid-infrared pump, we isolate the induced geometric response. We observe alternating-sign Berry-curvature features at Floquet gaps that repeat at intervals set by the pump photon energy and redistribute with pump field strength in agreement with calculations for a periodically driven Dirac Hamiltonian. Both the induced Berry-curvature and the Floquet Dirac gap decay faster than the replica intensity, showing that spectral replicas can persist even after coherent Floquet hybridization weakens. These results establish momentum-resolved Berry-curvature mapping as a direct probe of light-induced topology and coherent Floquet band formation.",
+    "status": "found"
+  },
+  "2609.17501": {
+    "arxiv_id": "2609.17501",
+    "title": "A Case Study on Noise Resilient Operator Selection in Adaptive Variational Quantum Algorithms",
+    "authors": [
+      "Soorya Haravu",
+      "Mafalda Ramôa",
+      "Bharath Sambasivam"
+    ],
+    "submission_date": "2026-09-15T17:42:37Z",
+    "latest_updated": "2026-09-15T17:42:37Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17501v1"
+    ],
+    "abstract": "Hardware noise has been shown to significantly impact the accuracy of ADAPT-VQE, a ground state preparation algorithm. While previous work has studied the impact of noise on its parameter optimization step, its impact on the critical operator selection step remains comparatively unexplored. In this work, we examine the impact of a variety of noise channels on this step, using a linear H$_3$ molecule as a test case. We show that, despite the selection criterion's natural resilience to some noise, both coherent and incoherent noise can prevent convergence for sufficiently high noise rates. We employ quantum error mitigation techniques--dynamical decoupling, zero noise extrapolation, and Pauli twirling--and show that when combined appropriately, these techniques are capable of restoring a successful convergence profile. Our results highlight how error mitigation can improve the performance of ADAPT-VQE and enable convergence in the presence of hardware noise, offering valuable insights into the implementation of the algorithm on near-term quantum hardware.",
+    "status": "found"
+  },
+  "2609.17502": {
+    "arxiv_id": "2609.17502",
+    "title": "Extending Andreotti's proof of Torelli's theorem to nodal curves",
+    "authors": [
+      "Alex Abreu",
+      "Marco Pacini",
+      "Nicola Pagani"
+    ],
+    "submission_date": "2026-09-15T17:42:57Z",
+    "latest_updated": "2026-09-15T17:42:57Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17502v1"
+    ],
+    "abstract": "Let $C$ be a connected nodal curve of genus $g$ over an algebraically closed field $k$ of characteristic zero. Let \\[ A(C)=\\Big(J(C), {\\overline{P^{g-1}_C}}, Θ(C) \\Big) \\] be the stable semi-abelic pair (in the sense of Alexeev) associated with its canonical compactified Jacobian $\\overline{P^{g-1}_C}$ in degree $g-1$. The canonical triple of $C$ consists of the closure of its canonical image together with two sets of distinguished points encoding the information of the images of the nonseparating nodes and of the branch data of the canonical map. We prove a functorial reconstruction: given connected nodal curves $C$ and $C'$ over $k$, every isomorphism $A(C)\\cong A(C')$ of stable semi-abelic pairs canonically induces a projectivity between the corresponding canonical triples of $C$ and $C'$. Passing to isomorphism classes, this recovers the reconstruction statement in the compactified Torelli theorem of Caporaso-Viviani. Our proof extends Andreotti's Gauss-map strategy. The branch locus of the projection from the normalization of the Gauss graph recovers the nonlinear canonical components and branch data by projective biduality; boundary strata of the compactified Jacobian recover the node-images; and incidence arguments recover the linear components. Along the way, we repair technical gaps in the classical treatments of Andreotti's proof of Torelli's theorem for smooth curves.",
+    "status": "found"
+  },
+  "2609.17503": {
+    "arxiv_id": "2609.17503",
+    "title": "Computations of Floer Lasagna Modules for Traces of Negative L-Space Knots",
+    "authors": [
+      "Colin McCulloch"
+    ],
+    "submission_date": "2026-09-15T17:43:41Z",
+    "latest_updated": "2026-09-15T17:43:41Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17503v1"
+    ],
+    "abstract": "We show that for all negative $L$-space knots and framings $n\\geq2g(K)$, if a certain cobordism map between cables of $K$ is non-vanishing, then the Floer lasagna module of the knot trace of $K$ with framing $-n$ is infinite dimensional. Further, for the maps on the hat flavour of link Floer homology induced by band maps, quasi-stabilisations and pair of pants cobordisms we give a description of the map on the $E^{\\infty}$-page of Ozsvath and Szabo's spectral sequence for forgetting components.",
+    "status": "found"
+  },
+  "2609.17504": {
+    "arxiv_id": "2609.17504",
+    "title": "Enhanced thermal stability of SiGeSn by suppressing surface-mediated degradation",
+    "authors": [
+      "Anis Attiaoui",
+      "Sebastian Koelling",
+      "Lu Luo",
+      "Simone Assali",
+      "Oussama Moutanabbir"
+    ],
+    "submission_date": "2026-09-15T17:44:24Z",
+    "latest_updated": "2026-09-17T04:34:53Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2609.17504v1",
+      "2609.17504v2"
+    ],
+    "abstract": "$\\text{SiGeSn}$ alloys are promising silicon-compatible semiconductors for monolithic infrared photonics. However, their metastable nature limits the thermal budgets available for post-growth device processing, and the mechanisms governing their thermal degradation remain unresolved. Here, we investigate the thermal stability of $\\text{Si}_{0.08}\\text{Ge}_{0.83}\\text{Sn}_{0.04}$ alloys using in situ spectroscopic ellipsometry (SE) during isothermal annealing at 550 °C. We show that adding an ultrathin oxide cap kinetically suppresses Sn exchange with the free surface while leaving bulk diffusion pathways largely unaffected. Uncapped films undergo phase separation after 50 min, accompanied by void formation, a 60% thickness reduction, and a 400 meV blueshift of the $E_{2}$ critical point (CP) transition, consistent with substitutional Sn depletion from the probed volume through surface segregation. In contrast, oxide-capped films exhibit a small compositional change (<1 at.% Sn) and optical shift (<20 meV) over the same period, with suppressed void formation, strain relaxation, and alloy decomposition. This surface-kinetic control additionally yields a 25-fold reduction in contact resistivity relative to annealed uncapped alloys. These results identify surface Sn transport as the dominant degradation pathway in SiGeSn and demonstrate that an ultrathin oxide cap extends the thermal stability of metastable group-IV alloys, providing a practical route toward their integration into advanced silicon photonic and electronic platforms.",
+    "status": "found"
+  },
+  "2609.17505": {
+    "arxiv_id": "2609.17505",
+    "title": "Stellar Ages of M Dwarf Hosts of Temperate Sub-Neptunes",
+    "authors": [
+      "Lalitha Sairam",
+      "Nikku Madhusudhan"
+    ],
+    "submission_date": "2026-09-15T17:44:39Z",
+    "latest_updated": "2026-09-15T17:44:39Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17505v1"
+    ],
+    "abstract": "Measuring M dwarf ages is a central challenge in stellar astrophysics. These stars evolve so slowly that isochrone fitting gives little constraint, requiring alternative methods based on rotation, activity, and kinematics. Reliable ages help constrain the formation and evolution of planetary systems around M dwarfs, including the temperate sub-Neptunes now being characterised with the James Webb Space Telescope (JWST). We present an age analysis of six nearby M dwarf planet hosts (TOI-732, TOI-736, TOI-270, TOI-1468, TOI-1231, and K2-18) using lithium absorption at 6708 Å, rotation periods, and Galactic kinematics. The Li I 6708 Åfeature is absent above 3$σ$ in all targets, implying substantial depletion and ages exceeding 200 Myr. Rotation periods of 39-145 days yield ages of 2.8-8.6 Gyr, calibrated against open cluster M dwarfs and including the intrinsic dispersion of the rotation-age relation. Kinematic ages span 0.8-13 Gyr with uncertainties of 4-6 Gyr. These are less precise per star but help identify outliers such as TOI-1231 (~13 Gyr) and K2-18 ( ~1-2 Gyr) and place the stars in Galactic context. Rotation yields age constraints 2-6 times tighter than kinematics where periods are measured, and comparable constraints where periods must be inferred from chromospheric activity. Combining multiple indicators enables more secure classification of these stars' evolutionary states, providing reference points for future comparative studies.",
+    "status": "found"
+  },
+  "2609.17506": {
+    "arxiv_id": "2609.17506",
+    "title": "Proof of the singularity conjecture for discrete subgroups of $\\mathrm{SL}_2(\\mathbb{R})$",
+    "authors": [
+      "Timothée Bénard"
+    ],
+    "submission_date": "2026-09-15T17:45:15Z",
+    "latest_updated": "2026-09-15T17:45:15Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17506v1"
+    ],
+    "abstract": "Let $μ$ be a finitely supported probability measure on $\\mathrm{SL}_2(\\mathbb{R})$ whose support generates a Zariski-dense discrete subgroup. We prove that its stationary probability measure on $\\mathbb{P}^1(\\mathbb{R})$ is singular with respect to the $\\mathrm{SO}(2)$-invariant probability measure. The proof compares winding variances on finite covers of a closed hyperbolic surface and uses a topological obstruction.",
+    "status": "found"
+  },
+  "2609.17507": {
+    "arxiv_id": "2609.17507",
+    "title": "Constraints on the central engine of merger-driven long gamma-ray bursts",
+    "authors": [
+      "Muskan Yadav",
+      "Roberto Ricci",
+      "Paz Beniamini",
+      "Hira Waseem",
+      "Tatsuya Matsumoto",
+      "Simone Dichiara",
+      "Eleonora Troja"
+    ],
+    "submission_date": "2026-09-15T17:46:35Z",
+    "latest_updated": "2026-09-15T17:46:35Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17507v1"
+    ],
+    "abstract": "Recent observations have identified a new class of long-duration gamma-ray bursts (GRBs) likely produced by compact binary mergers. Using radio observations and lightcurve modelling, we investigate whether a magnetar remnant can power the long-lasting prompt emission observed in this merger-driven GRB sample. We derive constraints on the magnetars' rotational energy and magnetic-field strength, and assess whether the magnetar central-engine model is viable for the observed events. We conducted 2.1 GHz radio observations of seven nearby merger-driven GRBs ($z<0.25$) using the Australia Telescope Compact Array (ATCA), obtaining sensitive upper limits on late-time radio emission 520-6900 days post-burst. We modelled the expected radio light curves from magnetar-energized ejecta interacting with the circumburst medium and compared them to our observations. We separately tested the magnetar hypothesis against the extended gamma-ray emission using a fallback-accreting magnetar model. No radio counterpart is detected in any of the observed GRBs, with 3$σ$ flux density upper limits of 33-72 $μ$Jy at 2.1 GHz. Modelling the expected synchrotron emission from magnetar-energized ejecta interacting with the circumburst medium, we find that the radio non-detections remain compatible with energetic outflows in low-density environments. The analysis of the prompt gamma-ray emission provides complementary constraints on the spin period and magnetic field of the magnetar engine. Once fallback accretion and jet baryon-loading are considered, the parameter space is narrowly confined.",
+    "status": "found"
+  },
+  "2609.17508": {
+    "arxiv_id": "2609.17508",
+    "title": "The chemistry of embrittlement: How hydrogen dwindles cohesion in iron during fracture",
+    "authors": [
+      "Aleksei Egorov"
+    ],
+    "submission_date": "2026-09-15T17:46:47Z",
+    "latest_updated": "2026-09-15T17:46:47Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17508v1"
+    ],
+    "abstract": "Normally strong and tough, steel$\\unicode{x2014}$with iron as its base$\\unicode{x2014}$falls prey to severe embrittlement when infiltrated by hydrogen; the insights into why are not well understood. This work explores how hydrogen affects bond strength in iron during fracture and why it reduces cohesion between fracture surfaces, laying bare the central role of electrostatic repulsion.",
+    "status": "found"
+  },
+  "2609.17509": {
+    "arxiv_id": "2609.17509",
+    "title": "LACE: Layer-Wise Compression for Dynamic Frame Rate Codecs",
+    "authors": [
+      "Thanapat Trachu",
+      "Samuele Cornell",
+      "William Chen",
+      "Shinji Watanabe"
+    ],
+    "submission_date": "2026-09-15T17:46:51Z",
+    "latest_updated": "2026-09-15T17:46:51Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17509v1"
+    ],
+    "abstract": "Neural audio codecs are a key component in speech language modeling. However, their high frame rates lead to long sequence lengths, increasing computational costs. Dynamic frame rate codecs mitigate this by reducing the effective frame rate using a compression step to merge multiple frames together. However, most prior methods either operate on single-codebook codecs or apply a single compression step before multi-layer quantization. This forces all quantization layers to share the same segmentation boundaries, despite the residual embeddings at different quantization layers exhibiting different rates of change over time. We propose LACE (Layer-Adaptive Codec Encoding), a dynamic frame rate codec that applies an independent compression step at each quantization layer, enabling layer-specific segmentation boundaries. To use LACE tokens in downstream text-to-speech (TTS), we further introduce union alignment and boundary anchor mechanisms to make durations consistent across layers while preserving compression benefits. Experiments on LibriTTS show that LACE offers a better rate-quality tradeoff than prior dynamic frame rate methods on the reconstruction task and improves TTS inference efficiency while maintaining competitive synthesis quality. Our code is released as part of the ESPnet3 codec recipe.",
+    "status": "found"
+  },
+  "2609.17510": {
+    "arxiv_id": "2609.17510",
+    "title": "A Fully Analytic Expression for the 2PN N-Body Hamiltonian",
+    "authors": [
+      "Felix M. Heinze",
+      "Gerhard Schäfer",
+      "Bernd Brügmann"
+    ],
+    "submission_date": "2026-09-15T17:47:05Z",
+    "latest_updated": "2026-09-15T17:47:05Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17510v1"
+    ],
+    "abstract": "We present a complete analytic expression for the $N$-body Hamiltonian of nonspinning point particles at second post-Newtonian (2PN) order in the Arnowitt-Deser-Misner (ADM) gauge. Recent work reduced the general $N$-body Hamiltonian to a form containing a single unresolved integral term, which prevented a fully explicit closed-form representation. Here, we evaluate this integral analytically and thereby obtain a fully explicit closed-form expression for the general 2PN $N$-body Hamiltonian. We outline the main steps of the derivation and validate the analytic expression through direct numerical comparisons with the original integral representation.",
+    "status": "found"
+  },
+  "2609.17511": {
+    "arxiv_id": "2609.17511",
+    "title": "Asymptotic Behavior of Radial Solutions to Singular $p$-Laplacian Equations as $p\\to1$",
+    "authors": [
+      "Juan Pablo Alcon Apaza"
+    ],
+    "submission_date": "2026-09-15T17:48:24Z",
+    "latest_updated": "2026-09-15T17:48:24Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17511v1"
+    ],
+    "abstract": "We study the singular limit $p \\downarrow 1$ for positive radial entire solutions $u_p$ of $$ -Δ_p u_p=F_p\\left(|x|, u_p,\\left|\\nabla u_p\\right|\\right) u_p^{-β_p} \\quad \\text { in } \\mathbb{R}^n, $$ where $n \\geq 2,1<p<\\min \\{2, \\sqrt{n}\\}$, and $0 \\leq β_p \\leq p-1$. Assuming that $$ F_p \\rightarrow F_1 \\quad \\text { locally uniformly }, \\quad \\frac{β_p}{p-1} \\rightarrow \\mathbf{c} \\in[0,1] \\quad \\text { as } p \\downarrow 1, $$ we prove that, after passing to a subsequence, $u_{p_j} \\rightarrow u$ in $C_{\\text {loc }}\\left(\\mathbb{R}^n\\right)$ and $\\nabla u_{p_j} \\stackrel{*}{\\rightharpoonup} \\nabla u$ in $L_{\\text {loc }}^{\\infty}\\left(\\mathbb{R}^n ; \\mathbb{R}^n\\right)$, where $u \\in W^{1, \\infty}\\left(\\mathbb{R}^n\\right)$ is radial, and solves $$ -Δ_1 u=\\mathtt{K}(|x|) \\quad \\text { in } \\mathbb{R}^n . $$ On $\\left\\{x \\in \\mathbb{R}^n \\mid \\mathtt{G}(|x|)<1\\right\\}$, we prove that $\\mathtt{K}(|x|)=w^{-\\mathbf{c}} F_1(|x|, u(x), 0)$ and that $\\nabla u=0$ a.e., where $u_{p_i}^{p_i-1} \\rightarrow w$. On the other hand, we show that if $ρ\\mapsto F_1(r, t, ρ)$ is affine for every $r$ and $t$, then $\\mathtt{K}(|x|)=$ $w^{-\\mathbf{c}} F_1(|x|, u(x),|\\nabla u(x)|)$ a.e. in $\\mathbb{R}^n$. For $n=1$ and $1<p<2$, we study $$ \\frac{\\mathrm{d}}{\\mathrm{~d} x}\\left(\\left|u_p^{\\prime}\\right|^{p-2} u_p^{\\prime}\\right)=\\mathtt{F}_p\\left(|x|, u_p,\\left|u_p^{\\prime}\\right|\\right) u_p^{-β_p} \\quad \\text { in } \\mathbb{R} $$ and obtain analogous results as $p \\downarrow 1$.",
+    "status": "found"
+  },
+  "2609.17512": {
+    "arxiv_id": "2609.17512",
+    "title": "Uniqueness of free boundary minimal annuli",
+    "authors": [
+      "Davide Parise",
+      "Jonathan J. Zhu"
+    ],
+    "submission_date": "2026-09-15T17:49:35Z",
+    "latest_updated": "2026-09-15T17:49:35Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17512v1"
+    ],
+    "abstract": "We prove that every smooth properly embedded free-boundary minimal annulus in the unit ball is congruent to the critical catenoid. We also classify positive solutions of $(Δ_{\\mathbb{S}^2}+2)u=0$ on smooth spherical annuli with $u=0$ and $|\\nabla u|=1$ on the boundary; their one-homogeneous extensions are the axially symmetric Alt-Caffarelli cones. Lastly, we also treat the case of free-boundary minimal annuli in spherical caps.",
+    "status": "found"
+  },
+  "2609.17513": {
+    "arxiv_id": "2609.17513",
+    "title": "Chern bounds and tangent geometry of polarized Calabi-Yau threefolds",
+    "authors": [
+      "Atsushi Kanazawa"
+    ],
+    "submission_date": "2026-09-15T17:50:18Z",
+    "latest_updated": "2026-09-24T07:26:59Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2609.17513v1",
+      "2609.17513v2"
+    ],
+    "abstract": "We study the numerical geography and tangent geometry of very amply polarized Calabi--Yau threefolds $(X,H)$ through the positivity of the first jet bundle $J^1(H)$. Writing $d=\\int_X H^3$, $c=\\int_Xc_2(X) H$, and $e=\\int_X c_3(X)$, we exploit two different positivity properties of this single bundle. Mixed intersections on $\\mathbb{P}(J^1(H)^*)$ give $e\\ge-5d-c-c^2/(4d)$, while a volume estimate for a perturbed tautological class gives $e\\ge40d\\left[(1-\\frac{c}{10d})^{3/2}-1\\right]$; in particular $e+6c\\ge0$, improving Sun's inequality $e+10c\\ge0$. As consequences, we obtain the uniform Hodge bounds $-4d-80\\le h^{1,1}(X)-h^{2,1}(X)\\le173d/66$, the lower bound $\\mathrm{deg}X^\\vee\\ge78$ for the dual hypersurface, and, in the critical case $X\\subset\\mathbb{P}^6$, the upper bound $d\\le34$. We also prove that, for every $m\\ge2$, the tangent-incidence morphism associated with $|mH|$ is the normalization of the tangent variety, conjecture tangent birationality for complete embeddings $X\\subset\\mathbb{P}^N$ with $N\\ge7$, and verify it for several families.",
+    "status": "found"
+  }
+}

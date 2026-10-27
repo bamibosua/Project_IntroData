@@ -1,0 +1,406 @@
+{
+  "2609.13654": {
+    "arxiv_id": "2609.13654",
+    "title": "Multimodal Foundation Models Adaptation based on Domain-Aware Relaxed Orthogonal Subspace for Remote Sensing",
+    "authors": [
+      "Han Luo",
+      "Ruoyu Yang",
+      "Yinhe Liu",
+      "Yanfei Zhong"
+    ],
+    "submission_date": "2026-09-12T02:19:11Z",
+    "latest_updated": "2026-09-12T02:19:11Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13654v1"
+    ],
+    "abstract": "Pretrained foundation models (FMs) have achieved remarkable success in computer vision, yet their high fine-tuning cost limits practical deployment. Parameter-efficient fine-tuning (PEFT) methods such as Low-Rank Adaptation (LoRA) improve efficiency by constraining updates to a predefined low-rank subspace. However, when applied to remote sensing tasks with substantial domain shifts, the fixed subspace is constructed without observing the downstream activation distribution and can therefore provide a poor coordinate system for adaptation, a phenomenon herein termed subspace mismatch. To address this issue, a unified framework is introduced, termed Domain-aware Relaxed Orthogonal Subspace adaptation (DROS), which reformulates low-rank adaptation as data-conditioned subspace learning and flexible subspace adaptation. Specifically, the weight decomposition is conditioned on second-order activation statistics estimated from the downstream training distribution, so that the initialization reflects the feature geometry actually induced by the remote-sensing data, followed by flexible geometric transformations enabled by a relaxed orthogonal parameterization. Furthermore, the framework is extended to multimodal settings (MM-DROS) by sharing transformation structures across modality-specific subspaces, facilitating efficient cross-modal interaction. Extensive experiments on multiple remote sensing benchmarks demonstrate that DROS achieves state-of-the-art performance, even surpassing full fine-tuning, without additional inference overhead.",
+    "status": "found"
+  },
+  "2609.13655": {
+    "arxiv_id": "2609.13655",
+    "title": "Online Bayesian Node Classification on Inductive Graphs under Distribution Shift",
+    "authors": [
+      "Jinwen Xu",
+      "Gonzalo Mateos Buckstein",
+      "Qin Lu"
+    ],
+    "submission_date": "2026-09-12T02:23:30Z",
+    "latest_updated": "2026-09-12T02:23:30Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13655v1"
+    ],
+    "abstract": "On evolving graphs, node classifiers must satisfy two key requirements: inductive generalization to newly arriving nodes under distribution shift and calibrated uncertainty for safety-sensitive applications. Standard graph neural networks (GNNs) are typically trained once and address neither requirement. We adapt the Bayesian last-layer (BLL) model by placing random last-layer parameters on top of a deterministic GNN encoder for uncertainty quantification. The categorical softmax likelihood required for classification breaks Gaussian conjugacy, so neither the training posterior nor the test-time streaming update has a closed-form solution. To address both challenges, we introduce a variational Bayesian last-layer (VBLL) objective that jointly trains the encoder and an approximate last-layer posterior by maximizing an evidence lower bound with a Monte Carlo expected log-likelihood. At test time, we freeze the encoder and apply an online Laplace update to the last-layer posterior. This update corresponds to a power-prior Bayesian model with exponential forgetting and a Kullback-Leibler anchor to the training posterior. Across five node-classification benchmarks under distribution shift, online GVBLL is the only method to achieve the best accuracy and negative log-likelihood on every dataset. It improves accuracy by up to 17 percentage points on Cora and 14 percentage points on ogbn-arxiv over the strongest non-GVBLL baseline, while remaining competitive in calibration with MC Dropout, Deep Ensembles, Temperature Scaling, and Gaussian-process classifiers.",
+    "status": "found"
+  },
+  "2609.13656": {
+    "arxiv_id": "2609.13656",
+    "title": "Probing the anomalous symmetry-breaking in kagome material CsV3Sb5 via third-order nonlinearity",
+    "authors": [
+      "Zheng Dai",
+      "Fengyi Guo",
+      "Shuai Zhang",
+      "Xiubing Li",
+      "Congcong Li",
+      "Yufan Ju",
+      "Ziqi Wang",
+      "Bin Cheng",
+      "Zhe Ying",
+      "Fengqi Song"
+    ],
+    "submission_date": "2026-09-12T02:25:09Z",
+    "latest_updated": "2026-09-12T02:25:09Z",
+    "revised_dates": null,
+    "venue": "Nano Lett. (2026)",
+    "latest_version": 1,
+    "versions": [
+      "2609.13656v1"
+    ],
+    "abstract": "The kagome material has rapidly established itself as a research frontier in condensed matter physics, owing to its distinctive geometric structure and the rich array of unconventional physical phenomena. In the kagome AV3Sb5 (A = K, Rb, Cs) family, the charge-ordered state exhibits a remarkable characteristic, i.e., anomalous symmetry-breaking, which is tied to the topological nature of the electronic band structure. Here, we report the third-order nonlinear longitudinal and Hall responses that persist stably up to room temperature in the kagome material CsV3Sb5. Notably, the nonlinear responses demonstrate significant enhancement below the charge density wave (~ 77 K) order and anomalous symmetry-breaking (~ 39 K) state. The scaling analysis indicates that the third-order nonlinear transport is governed jointly by quantum geometric contribution and extrinsic scattering. This study realizes a giant third-order nonlinear response and provides a distinct method to detect anomalous symmetry-breaking in CsV3Sb5.",
+    "status": "found"
+  },
+  "2609.13657": {
+    "arxiv_id": "2609.13657",
+    "title": "Safety as a Constraint: Fine-Tuning a LLM Recommender to Explain Itself",
+    "authors": [
+      "Jiashu He",
+      "Emma Yanyang Kong",
+      "JJ Tan",
+      "David Fagnan"
+    ],
+    "submission_date": "2026-09-12T02:28:08Z",
+    "latest_updated": "2026-09-12T02:28:08Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13657v1"
+    ],
+    "abstract": "Traditional recommender systems are typically trained to predict what item users will interact with next, but not why. However, offering personalized evidence for why a user might like the predicted item is an important way to enhance the service and to raise the likelihood that the user will be genuinely interested in the recommendation. This service can be delivered by integrating a frontier-model call into the member-facing pipeline, but it will add extra cost and latency. In this paper, we train a recommender LLM to generate personalized explanations for its reccomendation, based on the user's watching history at a large video streaming service. We impose two requirements on the generated explanation: it must be faithful to the elements of the shows it links, and it must be strictly non-harmful to the user. To this end, we first train two LLM-judge reward models covering three specific criteria, and propose constrained GRPO to incorporate these different criteria. On a held-out real-world testing set, our fine-tuned model improves the all-three-criteria PASS rate rises from 0.649 to 0.956 under our own judges and from 0.677 to 0.931 under an independent judge, where as the frontier generator performs similar to the untuned recommender baseline. We conduct further experiments to show that the model's language and recommendation abilities remain unchanged. Based on these results, we conclude that an LLM-based recommender can be fine-tuned on other complex tasks without compromising its original recommendation performance, thus provide insights for further agentic user interface powered by a single model.",
+    "status": "found"
+  },
+  "2609.13658": {
+    "arxiv_id": "2609.13658",
+    "title": "Thixotropy versus viscoelasticity: a matter of time",
+    "authors": [
+      "Rishabh V. More"
+    ],
+    "submission_date": "2026-09-12T02:31:20Z",
+    "latest_updated": "2026-09-12T02:31:20Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13658v1"
+    ],
+    "abstract": "Thixotropic and viscoelastic materials both retain their deformation history and are difficult to distinguish. However, a stationary linear response obeys the Kramers-Kronig relations. A structure that evolves during a sweep renders the spectrum inconsistent with them, so the residual from one chirp and no model measures nonstationarity. It survives the small-amplitude limit, returns to its baseline at any stationary state, and, for bounded restructuring, peaks near the structural time. We verify this on eight models and demonstrate it on published spectra of a thixotropic silica suspension.",
+    "status": "found"
+  },
+  "2609.13659": {
+    "arxiv_id": "2609.13659",
+    "title": "UniqueShip: Mitigating Data Leakage in Acoustic Ship Classification Benchmark Datasets",
+    "authors": [
+      "Connor Hashemi",
+      "Trevor Stout",
+      "Anthony Hoogs",
+      "Jason Parham"
+    ],
+    "submission_date": "2026-09-12T02:31:38Z",
+    "latest_updated": "2026-09-12T02:31:38Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13659v1"
+    ],
+    "abstract": "Underwater Acoustic Target Recognition (UATR) of ships is well-suited for machine learning, yet its progress is hindered by the lack of large, diverse, and publicly available labeled datasets. In this work, we introduce UniqueShip, a machine learning-ready benchmark dataset for UATR applications sourced from the open Ocean Networks Canada (ONC) repository. Unlike previous datasets, we explicitly control for \"data leakage\" between the training and evaluation sets to ensure more reliable and generalizable model evaluation that does not encourage the model to memorize individual ships. We demonstrate that typical, random data partitioning in two prominent UATR datasets leads to falsely optimistic test performance, increasing accuracy by 10-48 percentage points compared to our more careful partitioning. Ablations on UniqueShip further show that doubling the number of unique vessels improves accuracy by 2.4-2.6 percentage points, while doubling total audio duration improves only by 0.8-1.3 points, indicating that vessel diversity should drive dataset curation more than total hours. We provide baselines with convolutional and transformer backbones, and analyze how ship metadata correlates with classification performance, finding that individual vessel characteristics predict classification difficulty far better than distance to the hydrophone alone. Overall, UniqueShip contains 2,460 hours of ship-radiated audio from 4,218 unique vessels (3,437 hours including background). We publish the dataset, code, and easy-to-download splits at uniqueshipdata.org to foster further UATR research.",
+    "status": "found"
+  },
+  "2609.13660": {
+    "arxiv_id": "2609.13660",
+    "title": "Who Wrote This? Turing, Total Variation, and the Mathematics of AI-Text Detection",
+    "authors": [
+      "Santiago Schnell"
+    ],
+    "submission_date": "2026-09-12T02:39:11Z",
+    "latest_updated": "2026-09-12T02:39:11Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13660v1"
+    ],
+    "abstract": "What can a finished text reveal about the process that produced it? Drawing on Turing's imitation game and statistical decision theory, this article examines the limits of AI-text detection as an inference from a completed object to an unobserved history. For two known source distributions with equal prior probabilities, a standard identity gives the minimum average classification error as half their probability overlap. This overlap is one minus their total variation distance. Perfect detection therefore requires nonoverlapping distributions; useful discrimination does not. In practice, the problem is harder: human and machine writing form changing families of distributions, posterior probabilities depend on base rates, and ``AI-written'' becomes ambiguous when people and software contribute to the same text. Turing's interrogator can ask another question; a detector restricted to finished prose cannot. Distinguishability, source attribution, authentication, and compliance are different inferential tasks. The paper's own documented human-AI provenance shows what a production history can reveal that a binary label cannot.",
+    "status": "found"
+  },
+  "2609.13661": {
+    "arxiv_id": "2609.13661",
+    "title": "FedV-KGQA in Practice: Design Lessons and an Interactive Prototype",
+    "authors": [
+      "Md Saikat Islam Khan Bappy",
+      "Oshani Seneviratne"
+    ],
+    "submission_date": "2026-09-12T02:39:19Z",
+    "latest_updated": "2026-09-12T02:39:19Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13661v1"
+    ],
+    "abstract": "Knowledge graph question answering usually assumes that one system can reach the whole graph. In practice, facts are often held by organizations that share entity identifiers but own disjoint relation types, so no single party sees a complete reasoning chain. This poster presents the empirical findings of FedV-KGQA on multi-hop question answering over such vertically partitioned graphs. Each silo enriches its local graph and trains a knowledge graph embedding on its own triples. A server then concatenates the silo-specific entity views, anchors the projected question at the topic entity, and ranks candidates by similarity. Raw triples and relation embeddings never leave a silo. Comparing the FedV-KGQA experiments with one another yields three results. First, federated fusion recovers most of the centralized accuracy, while a single silo recovers little. Second, anchoring and enrichment matter more than the choice of embedding model. Third, the cheapest encoder depends on the target accuracy rather than on parameter count. This poster paper contributes that cross-experiment comparison, four design lessons drawn from it, and an interactive prototype that runs real inference and traces the full pipeline, per question, on released checkpoints.",
+    "status": "found"
+  },
+  "2609.13662": {
+    "arxiv_id": "2609.13662",
+    "title": "Underwater Barrier Sensing Under a Network False-Alarm Budget",
+    "authors": [
+      "Hesam Mosalli",
+      "Stephane Blouin",
+      "Amir G. Aghdam"
+    ],
+    "submission_date": "2026-09-12T02:41:46Z",
+    "latest_updated": "2026-09-12T02:41:46Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13662v1"
+    ],
+    "abstract": "We study joint sensor placement and detector operating-point allocation for guarding a region against an adversarial crossing. Each sensor may adjust its detection threshold, while all sensors draw on a shared network-level false-alarm budget. For a Gaussian signal-excess model of a square-law detector, we give a necessary and sufficient condition for the negative-log miss hazard to be concave in a sensor's false-alarm probability. At fixed deployment, this yields a concave max-min allocation whose saddle point equalizes marginal barrier gain per unit alarm against a worst-case occupation measure. A perspective reformulation supplies linear cuts for the mixed-integer joint problem, and a separate certificate lower-bounds the continuum barrier strength independently of the graph used for path search. On a deep-water case study based on the canonical Munk profile, reallocating a fixed alarm budget raises the graph design objective by 14.9% at unchanged sensor count and alarm load, and the certificate establishes the barrier requirement on the interpolated continuum field, which the graph value alone cannot.",
+    "status": "found"
+  },
+  "2609.13663": {
+    "arxiv_id": "2609.13663",
+    "title": "Data-Driven Spiking Control for Distributed $\\varepsilon$-Nash Equilibrium Seeking",
+    "authors": [
+      "Linqi Wang",
+      "Wei Xiao",
+      "Yuzhou Wei",
+      "Bin Xin",
+      "Keyou You",
+      "Gang Wang"
+    ],
+    "submission_date": "2026-09-12T02:43:12Z",
+    "latest_updated": "2026-09-12T02:43:12Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13663v1"
+    ],
+    "abstract": "This paper studies how a feedback law synthesized directly from data can be realized by spiking control while retaining a game-theoretic performance guarantee. We consider distributed $\\varepsilon$-Nash equilibrium (NE) seeking in network games played by linear dynamical agents with unknown models and exogenous disturbances. The pseudo-gradient of the game is treated as a regulated error, and local internal models account for signals generated by known exosystems. Robust linear matrix inequalities are then used to compute stabilizing analogue feedback gains directly from noisy local input-state data, without identifying the agent dynamics. To implement these gains using only fixed-weight spikes, we develop two spiking realizations. The first realization uses non-interacting leaky integrate-and-fire units, while the second permits reset coupling among the neuronal units. In both cases, a continuous auxiliary coordinate exposes the impulsive closed loop as the stable analogue system driven by a bounded implementation error. This representation yields forward completeness, Zeno-freeness, and an ultimate bound on the pseudo-gradient, subject to explicit event-processing conditions for the connected architecture. The bound implies that, after a finite transient, the agents' outputs constitute an $\\varepsilon$-NE for every $\\varepsilon$ above a finite threshold. A spacecraft formation reconfiguration example illustrates the data-driven synthesis, the two spiking realizations, and their practical equilibrium behavior.",
+    "status": "found"
+  },
+  "2609.13664": {
+    "arxiv_id": "2609.13664",
+    "title": "Cost Characterization of Vertically Partitioned Federated Knowledge Graphs",
+    "authors": [
+      "Md Saikat Islam Khan Bappy",
+      "Oshani Seneviratne"
+    ],
+    "submission_date": "2026-09-12T02:47:14Z",
+    "latest_updated": "2026-09-12T02:47:14Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13664v1"
+    ],
+    "abstract": "Knowledge graphs are increasingly distributed across autonomous organizations that share an entity space but own disjoint subsets of relations, forming a vertical partition. Answering a multi-hop query may require combining facts from several silos, making the partitioning strategy a key data management decision that affects communication, indexing, load balance, and query latency. However, the costs associated with different partitioning strategies remain insufficiently studied. We formalize vertical partitioning as a design space and compare four strategies: semantic domain grouping, frequency-balanced partitioning, co-occurrence graph-cut partitioning, and random partitioning. We evaluate them using five metrics: communication cost, candidate index size, cross-silo path length, load balance, and end-to-end query latency. Three of the five prove to be determined by the graph and the silo count rather than by the partition, which reduces the design problem to two conflicting axes, cross-silo path length and load balance. Experiments on MetaQA and PathQuestion use a fixed federated knowledge graph question-answering architecture based on TransE embeddings and a frozen BERT encoder across three silo configurations. By keeping the learning model unchanged, we isolate the effect of partitioning and show that the trade-off between locality and balance holds only where each silo can hold several relations, weakening as the number of silos increases. The study provides practical guidance for deployments constrained by cross-silo reasoning or by silo load.",
+    "status": "found"
+  },
+  "2609.13665": {
+    "arxiv_id": "2609.13665",
+    "title": "MARC: Morphology-Aware Regression of Consensus for Cell Segmentation in Subcellular Spatial Transcriptomics",
+    "authors": [
+      "Xinyu Shu",
+      "Andrew Zhang",
+      "Jean Yang",
+      "Jinman Kim"
+    ],
+    "submission_date": "2026-09-12T02:48:36Z",
+    "latest_updated": "2026-09-12T02:48:36Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13665v1"
+    ],
+    "abstract": "Accurate cell segmentation remains a major bottleneck in subcellular spatial transcriptomics (SST), in which morphological images and spatially resolved RNA transcripts are used to partition tissues into individual cellular instances. As segmentation serves as the foundation for constructing cell-level representations, boundary errors can lead to incorrect transcript assignments and compromise downstream analyses. However, reliable ground-truth boundaries are unavailable because they must be inferred from incomplete morphological and transcript signals. Furthermore, manual annotation of a large number of cells is time-consuming. Agreement among complementary segmentation methods provides a practical surrogate for identifying well-supported and ambiguous regions, but explicit consensus construction requires executing multiple computationally intensive pipelines. In this study, we propose MARC (Morphology-Aware Regression of Consensus), a framework that predicts a multi-method consensus-support map for SST segmentation. MARC is trained with leave-one-method-out consensus pseudo-targets and a Foreground-Union Consensus Loss that focuses supervision on candidate and consensus foreground. We evaluated MARC on 4,642 held-out tiles from Xenium kidney tissue, achieving a mean Dice score of 0.90, a mean intersection-over-union of 0.82, and a mean cell-level Spearman correlation of 0.79 against explicitly computed cross-method consensus maps. We demonstrate that the predicted consensus maps localise weakly supported regions while preserving consensus-based rankings and identifying low-consensus cells for manual review. These results show that MARC closely approximates explicit cross-method consensus without multi-method inference and therefore has the potential to facilitate robust, consensus-aware evaluation of cell segmentation in large-scale SST studies.",
+    "status": "found"
+  },
+  "2609.13666": {
+    "arxiv_id": "2609.13666",
+    "title": "The edge spectral extremal problem for odd wheels in nonzero residue classes",
+    "authors": [
+      "Honghao Chen",
+      "Jing Gao",
+      "Shuchao Li"
+    ],
+    "submission_date": "2026-09-12T02:49:34Z",
+    "latest_updated": "2026-09-26T12:08:06Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2609.13666v1",
+      "2609.13666v2",
+      "2609.13666v3"
+    ],
+    "abstract": "For a fixed integer $k\\ge 2$, let $W_{2k+1}=K_1\\vee C_{2k}$ be an odd wheel graph. The fixed-size spectral extremal problem aims to determine \\[ \\operatorname{spex}(m,W_{2k+1}):=\\max\\{ρ(G): e(G)=m,\\ G \\text{ is } W_{2k+1}\\text{-free}\\}, \\] where $ρ(G)$ denotes the adjacency spectral radius. Based on this problem, Yu, Li, and Peng [18] proposed the following conjecture: For large $m$, every $W_{2k+1}$-free graph of size $m$ satisfies $ρ(G)^2-(k-1)ρ(G)\\le m-\\binom{k}{2}$ with equality precisely for $K_k\\vee qK_1$ and $m-\\binom{k}{2}=kq$. Very recently, Fang, Zhai and Zhang [7] confirmed the Yu--Li--Peng conjecture. When $m$ is large, $k\\ge 2$ and $m-\\binom{k}{2}$ is not divisible by $k$, the exact solution for the above problem is still open. Regarding this problem, Yu, Zhang, and Zhang [19] proposed the following conjecture: Let $r$ be a nonzero remainder when $m-\\binom{k}{2}$ is divided by $k$. Then $S_{k,m}$ is the unique graph among $W_{2k+1}$-free graphs of size $m$ having maximum spectral radius, where $S_{k,m}$ is obtained from $K_k\\vee qK_1$ by adding a vertex $z$ and joining it to exactly $r$ vertices of the $K_k$. In this paper we address this problem in each nonzero residue class. Our result completely settles the Yu-Zhang-Zhang conjecture for $k\\ge 3$.",
+    "status": "found"
+  },
+  "2609.13667": {
+    "arxiv_id": "2609.13667",
+    "title": "GeoSkill:Experience-Driven Hierarchical Skill Learning with Collaborative Revision forGeospatialAgents",
+    "authors": [
+      "Han Luo",
+      "Xian Xu",
+      "Yinhe Liu",
+      "Yanfei Zhong"
+    ],
+    "submission_date": "2026-09-12T02:50:52Z",
+    "latest_updated": "2026-10-11T16:45:12Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2609.13667v1",
+      "2609.13667v2"
+    ],
+    "abstract": "Geospatial agents are increasingly expected to support recurring and evolving analytical tasks rather than execute isolated workflows. In such settings, effective agents must distill prior execution experience into reusable geospatial procedural knowledge to guide future planning and tool use. However, existing memory-augmented paradigms struggle to summarize both long-horizon tool-chain orchestration experience and tool-level invocation constraints in geospatial analysis, while directly relying on LLM self-reflection to update experience often leads to misattribution and unreliable revisions. To address these challenges, we propose GeoSkill, an experience-driven hierarchical skill learning framework for geospatial agents. GeoSkill comprises two core components: (i) a Hierarchical Skill Bank (HSB), consisting of a Planning Skill Bank and a Tool Skill Bank, which respectively distill high-level task-planning experience and tool usage constraints, enabling structured representation and cross-task reuse of historical execution experience; and (ii) a Collaborative Trace-driven Skill Revision (CTSR) mechanism, where Judge, Critic, and Refiner collaboratively perform error identification, skill-level defect localization, and targeted modification, preventing misattributed and unreliable revisions from polluting the skill bank. GeoSkill learns and validates skills from historical executions during development, and freezes the skill bank for retrieval-only guidance on unseen tasks during deployment. Extensive experiments on EarthBench and ThinkGeo demonstrate that GeoSkill effectively transforms historical execution experience into reusable hierarchical skills, improving both end-to-end task accuracy and tool-execution reliability in geospatial tasks.",
+    "status": "found"
+  },
+  "2609.13668": {
+    "arxiv_id": "2609.13668",
+    "title": "Structures of the Basic Reproduction Number $R_0$ Across Compartmental Disease Models",
+    "authors": [
+      "Zhuolin Qu",
+      "Abhi Ashwath"
+    ],
+    "submission_date": "2026-09-12T02:51:39Z",
+    "latest_updated": "2026-09-12T02:51:39Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13668v1"
+    ],
+    "abstract": "The basic reproduction number $R_0$ is the central dimensionless quantity in mathematical epidemiology, characterizing the threshold for disease outbreak and the early growth rate of an epidemic. The algebraic form of $R_0$ varies widely across models of distinct transmission mechanisms, and its interpretation can yield further biological insight into transmission dynamics and disease intervention. We present a structural taxonomy of $R_0$ for compartmental ordinary differential equation models spanning a range of disease transmission features, including staged progression, differential infectivity, competing strains, vector-borne transmission, sexually transmitted infection, recurrent infection, maternal transmission, and gene drive inheritance. For each structural class, we provide a worked example, deriving $R_0$ via the next-generation matrix approach and interpreting the resulting algebraic expression in terms of the underlying transmission pathway. By unifying disparate derivations under a single structural framework, we clarify when and why particular algebraic forms of $R_0$ arise. This review serves both as a research synthesis and as a self-contained pedagogical reference for students and researchers entering the field.",
+    "status": "found"
+  },
+  "2609.13669": {
+    "arxiv_id": "2609.13669",
+    "title": "Batched pattern search for QAOA parameter optimization on cloud-accessed quantum hardware",
+    "authors": [
+      "Muhammad Faryad"
+    ],
+    "submission_date": "2026-09-12T02:51:48Z",
+    "latest_updated": "2026-09-12T02:51:48Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13669v1"
+    ],
+    "abstract": "On a cloud-accessed quantum processor the classical optimizer of a variational algorithm communicates with the device through submitted jobs, and each job carries a queueing and turnaround overhead that does not depend on how many circuits it contains. We study a simple consequence of this for the quantum approximate optimization algorithm (QAOA). An optimizer whose next set of trial parameters is known before any result returns can evaluate the whole set in one job, whereas a sequential optimizer such as COBYLA spends one job per function evaluation. We compare a batched pattern search with COBYLA on IBM's \\ibmfez\\ processor for cardinality-constrained portfolio selection with six to twelve assets, giving both optimizers the same number of jobs and the same number of shots. At every size the batched search reaches, after its first job, a parameter quality that the serial optimizer takes several jobs to match, and the two methods converge to comparable final values; repeating the eight-asset comparison from four starting points gives the same ordering each time. The instances are small enough to be solved exactly, which lets us check that the device's output distribution is correlated with the true ranking of portfolios and is clearly separated from a control circuit of the same depth with the cost layer removed. A short scan over circuit depth at classically optimal parameters shows that on this device the measured solution quality peaks at two or three QAOA layers. The protocol is described in enough detail to be reproduced, and the notebooks and raw counts are released.",
+    "status": "found"
+  },
+  "2609.13670": {
+    "arxiv_id": "2609.13670",
+    "title": "Enhancing Event Candidate Acquisition for Event Linking",
+    "authors": [
+      "Ziyang Zhang",
+      "Yinan Liu",
+      "Boyi Xue",
+      "Yingxuan Huang",
+      "Bin Wang",
+      "Xiaochun Yang"
+    ],
+    "submission_date": "2026-09-12T02:52:41Z",
+    "latest_updated": "2026-09-12T02:52:41Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13670v1"
+    ],
+    "abstract": "Event linking associates event mentions in text with entries in a knowledge base (KB), or identifies them as out-of-KB events. Although existing methods use different architectures, candidate event acquisition can still be weakened by short ambiguous mentions, noisy arguments, and evidence that is unevenly useful for retrieval. We present MACE, a Multi-Agent Candidate Event acquisition method that refines event structure before linking. MACE uses evidence-specialized LLM agents to acquire time, location, participant, and event-type evidence, exposes intermediate queries to candidate-event lookup tools, and lets a coordinator revise the evidence set before final candidate construction. Experiments on two event linking benchmarks show that adding MACE to different event linking models consistently improves accuracy. These results show that MACE improves event linking through better candidate event acquisition without modifying the event linking model.",
+    "status": "found"
+  },
+  "2609.13671": {
+    "arxiv_id": "2609.13671",
+    "title": "Not All Duplicates Are Coordination: Generic vs. Non-Generic Duplicate Campaigns in Information Operations",
+    "authors": [
+      "Ashfaq Ali Shafin",
+      "Khandaker Mamun Ahmed"
+    ],
+    "submission_date": "2026-09-12T02:52:57Z",
+    "latest_updated": "2026-09-12T02:52:57Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13671v1"
+    ],
+    "abstract": "Duplicate content is widely used to study coordinated behavior in social media information operations (IOs), but not all repetition provides equally meaningful evidence of coordination. Generic, reusable, or low-information posts may create noisy account-account links when projected into coordination graphs. We study this problem using 187,000 English-language tweets from six Russian Twitter Information Operations datasets. We introduce a generic/non-generic distinction for duplicate campaigns, label tweets using an LLM-assisted protocol with independent human validation, and train supervised classifiers over sentence embeddings to scale the labels. We construct duplicate campaigns using lexical similarity and two embedding-based methods. Generic campaigns are rare under lexical matching but account for nearly 39% of campaigns detected by embedding-based methods. Restricting graphs to non-generic campaigns reduces graph size and the largest connected component while increasing density, suggesting a smaller but more focused coordination structure. These findings show that duplicate-based coordination analysis should consider both textual similarity and semantic specificity.",
+    "status": "found"
+  },
+  "2609.13672": {
+    "arxiv_id": "2609.13672",
+    "title": "Recoverability as a System Primitive for Long-Horizon AI Agents",
+    "authors": [
+      "Zhihui Zhang",
+      "Wei Liu"
+    ],
+    "submission_date": "2026-09-12T02:54:33Z",
+    "latest_updated": "2026-09-12T02:54:33Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13672v1"
+    ],
+    "abstract": "AI agents can be interrupted while editing files, calling tools, or carrying out multi-step tasks. Restarting repeats completed work, but continuing from unverified or outdated progress can carry earlier errors forward. A saved state is not necessarily a suitable place to resume. We introduce recoverability as a system primitive that makes reuse an explicit decision: select a supported starting point and a permitted recovery action, or withhold automatic continuation. Its behavioral contract binds that choice to supporting evidence, execution, and independent checks. A reference architecture connects persistence, validation, and control, with complementary runtime instances testing distinct responsibilities. Four deterministic and 20 paired file challenges demonstrate that accurate restoration and successful completion can conceal disallowed starting points. Progress controls attribute retained work to shared restoration. Event-time tests show that permission must also constrain the action, and that independently held policy evidence can expose violations even after an effect occurs. These findings establish why recovery decisions need their own evaluation, beyond restored bytes and final task success. Within supplied policies and a declared trust model, the contribution is a common, testable interface for retaining justified progress and making the conditions for its reuse explicit and enforceable.",
+    "status": "found"
+  },
+  "2609.13673": {
+    "arxiv_id": "2609.13673",
+    "title": "Effect of Buried-Interface Preparation for Nb Superconducting Resonators on InP",
+    "authors": [
+      "Logan S. Kusher",
+      "Ding Peng",
+      "Zihua Zhu",
+      "Arunav Bordoloi",
+      "Axel Leblanc",
+      "Lukas J. Baker",
+      "Nichae Adnan",
+      "Jacob Issokson",
+      "Alvin Wang",
+      "Frederik Knudsen",
+      "Krishna Dindial",
+      "Melissa Mikalsen",
+      "Taha Kaleem",
+      "Andrei Vrajitoarea",
+      "Yingge Du",
+      "Patrick J. Strohbeen",
+      "Javad Shabani"
+    ],
+    "submission_date": "2026-09-12T02:54:49Z",
+    "latest_updated": "2026-09-12T02:54:49Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13673v1"
+    ],
+    "abstract": "Substrate surface preparation is a key step in the fabrication of electronic devices. In III--V semiconductor platforms, e.g. used in HEMTs and lasers, removal of the native substrate oxide is extremely important, where improper removal will negatively affect end-of-line device performance. However, the impact of substrate preparation in hybrid superconductor--semiconductor (S--Sm) systems relevant to quantum information applications remains poorly understood. This study compares three surface preparations for the deposition of sputtered Nb films on InP: (i) no intentional oxide removal (control), (ii) \\textit{in-situ} $\\mathrm{Ar}^{+}$ milling, and (iii) S-passivation. \\textit{In-situ} $\\mathrm{Ar}^{+}$ milling reduces the O concentration at the metal--substrate (MS) interface, but also roughens the InP surface, increasing the effective thickness of the Nb--InP interface and promoting O incorporation through extended defects in the Nb film. S-passivation suppresses interfacial O more effectively while preserving a sharper and smoother buried interface. It also yields Nb films with higher superconducting transition temperatures and less structural damage than the $\\mathrm{Ar}^{+}$-milled samples. Despite these materials improvements, the microwave response is comparable across the three preparations. At single photon powers, the highest internal quality factors, $Q_i$, are approximately $1.30\\times10^{5}$ ($130\\mathrm{k}$) for the control resonators, $9.7\\times10^{4}$ ($97\\mathrm{k}$) for the S-passivated resonators, and $8.4\\times10^{4}$ ($84\\mathrm{k}$) for the $\\mathrm{Ar}^{+}$-milled resonators. These results suggest that the present devices are not primarily limited by dielectric loss at the buried Nb--InP interface.",
+    "status": "found"
+  }
+}

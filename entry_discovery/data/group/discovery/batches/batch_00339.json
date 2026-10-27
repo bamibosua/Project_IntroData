@@ -1,0 +1,400 @@
+{
+  "2601.19936": {
+    "arxiv_id": "2601.19936",
+    "title": "Gap-K%: Measuring Top-1 Prediction Gap for Detecting Pretraining Data",
+    "authors": [
+      "Minseo Kwak",
+      "Jaehyung Kim"
+    ],
+    "submission_date": "2026-01-16T07:29:36Z",
+    "latest_updated": "2026-05-29T03:58:42Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.19936v1",
+      "2601.19936v2"
+    ],
+    "abstract": "The opacity of massive pretraining corpora in Large Language Models (LLMs) raises significant privacy and copyright concerns, making pretraining data detection a critical challenge. Existing state-of-the-art methods typically rely on token likelihoods, yet they often overlook the gap between the target token and the model's top-1 prediction, as well as local correlations between adjacent tokens. In this work, we propose Gap-K%, a novel pretraining data detection method grounded in the optimization dynamics of LLM pretraining. By analyzing the next-token prediction objective, we observe that discrepancies between the model's top-1 prediction and the target token induce strong gradient signals, which are explicitly penalized during training. Motivated by this, Gap-K% leverages the log probability gap between the top-1 predicted token and the target token, incorporating a sliding window strategy to capture local correlations and mitigate token-level fluctuations. Extensive experiments on the WikiMIA and MIMIR benchmarks demonstrate that Gap-K% achieves state-of-the-art performance, consistently outperforming prior baselines across various model sizes and input lengths.",
+    "status": "found"
+  },
+  "2601.19937": {
+    "arxiv_id": "2601.19937",
+    "title": "Critical Transit Infrastructure in Smart Cities and Urban Air Quality: A Multi-City Seasonal Comparison of Ridership and PM2.5",
+    "authors": [
+      "Sean Elliott",
+      "Sohini Roy"
+    ],
+    "submission_date": "2026-01-16T07:57:59Z",
+    "latest_updated": "2026-04-03T06:01:46Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.19937v1",
+      "2601.19937v2"
+    ],
+    "abstract": "Public transit is a critical component of urban mobility and equity, yet mobility and air-quality linkages are rarely operationalized in reproducible smart-city analytics workflows. This study develops a transparent, multi-source monitoring dataset that integrates agency-reported transit ridership with ambient fine particulate matter PM2.5 from the U.S. EPA Air Quality System (AQS) for four U.S. metropolitan areas - New York City, Chicago, Las Vegas, and Phoenix, using two seasonal snapshots (March and October 2024). We harmonize heterogeneous ridership feeds (daily and stop-level) to monthly system totals and pair them with monthly mean PM2.5 , reporting both absolute and per-capita metrics to enable cross-city comparability. Results show pronounced structural differences in transit scale and intensity, with consistent seasonal shifts in both ridership and PM2.5 that vary by urban context. A set of lightweight regression specifications is used as a descriptive sensitivity analysis, indicating that apparent mobility-PM2.5 relationships are not uniform across cities or seasons and are strongly shaped by baseline city effects. Overall, the paper positions integrated mobility and environment monitoring as a practical smart-city capability, offering a scalable framework for tracking infrastructure utilization alongside exposure-relevant air-quality indicators to support sustainable communities and public-health-aware urban resilience.",
+    "status": "found"
+  },
+  "2601.19938": {
+    "arxiv_id": "2601.19938",
+    "title": "DecHW: Heterogeneous Decentralized Federated Learning Exploiting Second-Order Information",
+    "authors": [
+      "Adnan Ahmad",
+      "Chiara Boldrini",
+      "Lorenzo Valerio",
+      "Andrea Passarella",
+      "Marco Conti"
+    ],
+    "submission_date": "2026-01-16T11:21:42Z",
+    "latest_updated": "2026-01-16T11:21:42Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19938v1"
+    ],
+    "abstract": "Decentralized Federated Learning (DFL) is a serverless collaborative machine learning paradigm where devices collaborate directly with neighbouring devices to exchange model information for learning a generalized model. However, variations in individual experiences and different levels of device interactions lead to data and model initialization heterogeneities across devices. Such heterogeneities leave variations in local model parameters across devices that leads to slower convergence. This paper tackles the data and model heterogeneity by explicitly addressing the parameter level varying evidential credence across local models. A novel aggregation approach is introduced that captures these parameter variations in local models and performs robust aggregation of neighbourhood local updates. Specifically, consensus weights are generated via approximation of second-order information of local models on their local datasets. These weights are utilized to scale neighbourhood updates before aggregating them into global neighbourhood representation. In extensive experiments with computer vision tasks, the proposed approach shows strong generalizability of local models at reduced communication costs.",
+    "status": "found"
+  },
+  "2601.19939": {
+    "arxiv_id": "2601.19939",
+    "title": "oculomix: Hierarchical Sampling for Retinal-Based Systemic Disease Prediction",
+    "authors": [
+      "Hyunmin Kim",
+      "Yukun Zhou",
+      "Rahul A. Jonas",
+      "Lie Ju",
+      "Sunjin Hwang",
+      "Pearse A. Keane",
+      "Siegfried K. Wagner"
+    ],
+    "submission_date": "2026-01-16T16:31:58Z",
+    "latest_updated": "2026-01-16T16:31:58Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19939v1"
+    ],
+    "abstract": "Oculomics - the concept of predicting systemic diseases, such as cardiovascular disease and dementia, through retinal imaging - has advanced rapidly due to the data efficiency of transformer-based foundation models like RETFound. Image-level mixed sample data augmentations, such as CutMix and MixUp, are frequently used for training transformers, yet these techniques perturb patient-specific attributes, such as medical comorbidity and clinical factors, since they only account for images and labels. To address this limitation, we propose a hierarchical sampling strategy, Oculomix, for mixed sample augmentations. Our method is based on two clinical priors. First (exam level), images acquired from the same patient at the same time point share the same attributes. Second (patient level), images acquired from the same patient at different time points have a soft temporal trend, as morbidity generally increases over time. Guided by these priors, our method constrains the mixing space to the patient and exam levels to better preserve patient-specific characteristics and leverages their hierarchical relationships. The proposed method is validated using ViT models on a five-year prediction of major adverse cardiovascular events (MACE) in a large ethnically diverse population (Alzeye). We show that Oculomix consistently outperforms image-level CutMix and MixUp by up to 3% in AUROC, demonstrating the necessity and value of the proposed method in oculomics.",
+    "status": "found"
+  },
+  "2601.19940": {
+    "arxiv_id": "2601.19940",
+    "title": "Continuous-Flow Data-Rate-Aware CNN Inference on FPGA",
+    "authors": [
+      "Tobias Habermann",
+      "Michael Mecik",
+      "Zhenyu Wang",
+      "César David Vera",
+      "Martin Kumm",
+      "Mario Garrido"
+    ],
+    "submission_date": "2026-01-16T17:27:19Z",
+    "latest_updated": "2026-03-07T11:05:34Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.19940v1",
+      "2601.19940v2"
+    ],
+    "abstract": "Among hardware accelerators for deep-learning inference, data flow implementations offer low latency and high throughput capabilities. In these architectures, each neuron is mapped to a dedicated hardware unit, making them well-suited for field-programmable gate array (FPGA) implementation. Previous unrolled implementations mostly focus on fully connected networks because of their simplicity, although it is well known that convolutional neural networks (CNNs) require fewer computations for the same accuracy. When observing the data flow in CNNs, pooling layers and convolutional layers with a stride larger than one, the number of data at their output is reduced with respect to their input. This data reduction strongly affects the data rate in a fully parallel implementation, making hardware units heavily underutilized unless it is handled properly. This work addresses this issue by analyzing the data flow of CNNs and presents a novel approach to designing data-rate-aware, continuous-flow CNN architectures. The proposed approach ensures a high hardware utilization close to 100% by interleaving low data rate signals and sharing hardware units, as well as using the right parallelization to achieve the throughput of a fully parallel implementation. The results show that a significant amount of the arithmetic logic can be saved, which allows implementing complex CNNs like MobileNet on a single FPGA with high throughput.",
+    "status": "found"
+  },
+  "2601.19941": {
+    "arxiv_id": "2601.19941",
+    "title": "Bench4HLS: End-to-End Evaluation of LLMs in High-Level Synthesis Code Generation",
+    "authors": [
+      "M Zafir Sadik Khan",
+      "Kimia Azar",
+      "Hadi Kamali"
+    ],
+    "submission_date": "2026-01-16T20:52:42Z",
+    "latest_updated": "2026-01-16T20:52:42Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19941v1"
+    ],
+    "abstract": "In last two years, large language models (LLMs) have shown strong capabilities in code generation, including hardware design at register-transfer level (RTL). While their use in high-level synthesis (HLS) remains comparatively less mature, the ratio of HLS- to RTL-focused studies has shifted from 1:10 to 2:10 in the past six months, indicating growing interest in leveraging LLMs for high-level design entry while relying on downstream synthesis for optimization. This growing trend highlights the need for a comprehensive benchmarking and evaluation framework dedicated to LLM-based HLS. To address this, We present Bench4HLS for evaluating LLM-generated HLS designs. Bench4HLS comprises 170 manually drafted and validated case studies, spanning small kernels to complex accelerators, curated from widely used public repositories. The framework supports fully automated assessment of compilation success, functional correctness via simulation, and synthesis feasibility/optimization. Crucially, Bench4HLS integrates a pluggable API for power, performance, and area (PPA) analysis across various HLS toolchains and architectures, demonstrated here with Xilinx Vitis HLS and validated on Catapult HLS. By providing a structured, extensible, and plug-and-play testbed, Bench4HLS establishes a foundational methodology for benchmarking LLMs in HLS workflows.",
+    "status": "found"
+  },
+  "2601.19942": {
+    "arxiv_id": "2601.19942",
+    "title": "Latent Object Permanence: Topological Phase Transitions, Free-Energy Principles, and Renormalization Group Flows in Deep Transformer Manifolds",
+    "authors": [
+      "Faruk Alpay",
+      "Bugra Kilictas"
+    ],
+    "submission_date": "2026-01-16T23:11:02Z",
+    "latest_updated": "2026-01-16T23:11:02Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19942v1"
+    ],
+    "abstract": "We study the emergence of multi-step reasoning in deep Transformer language models through a geometric and statistical-physics lens. Treating the hidden-state trajectory as a flow on an implicit Riemannian manifold, we analyze the layerwise covariance spectrum of activations, where $C^{(\\ell)}=\\mathbb{E}[h^{(\\ell)}h^{(\\ell)\\top}]$, and track deviations from a random-matrix bulk. Across model scales (1.5B--30B), we observe a sharp reduction in effective dimensionality consistent with a phase transition: an order parameter based on sparsity/localization, $Ω(h)=1-\\|h\\|_1/(\\sqrt{d}\\|h\\|_2)$, exhibits a discontinuity near a critical normalized depth $γ_c\\approx 0.42$ in sufficiently large models. We formalize the forward pass as a discrete coarse-graining map and relate the appearance of stable \"concept basins\" to fixed points of this renormalization-like dynamics. The resulting low-entropy regime is characterized by a spectral tail collapse and by the formation of transient, reusable object-like structures in representation space, which we call Transient Class Objects (TCOs). We provide theoretical conditions connecting logical separability to spectral decay and validate the predicted signatures with layerwise probes on multiple open-weight model families.",
+    "status": "found"
+  },
+  "2601.19943": {
+    "arxiv_id": "2601.19943",
+    "title": "Emergent Specialization in Learner Populations: Competition as the Source of Diversity",
+    "authors": [
+      "Yuhao Li"
+    ],
+    "submission_date": "2026-01-16T23:11:18Z",
+    "latest_updated": "2026-01-16T23:11:18Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19943v1"
+    ],
+    "abstract": "How can populations of learners develop coordinated, diverse behaviors without explicit communication or diversity incentives? We demonstrate that competition alone is sufficient to induce emergent specialization -- learners spontaneously partition into specialists for different environmental regimes through competitive dynamics, consistent with ecological niche theory. We introduce the NichePopulation algorithm, a simple mechanism combining competitive exclusion with niche affinity tracking. Validated across six real-world domains (cryptocurrency trading, commodity prices, weather forecasting, solar irradiance, urban traffic, and air quality), our approach achieves a mean Specialization Index of 0.75 with effect sizes of Cohen's d > 20. Key findings: (1) At lambda=0 (no niche bonus), learners still achieve SI > 0.30, proving specialization is genuinely emergent; (2) Diverse populations outperform homogeneous baselines by +26.5% through method-level division of labor; (3) Our approach outperforms MARL baselines (QMIX, MAPPO, IQL) by 4.3x while being 4x faster.",
+    "status": "found"
+  },
+  "2601.19944": {
+    "arxiv_id": "2601.19944",
+    "title": "Classifier Calibration at Scale: An Empirical Study of Model-Agnostic Post-Hoc Methods",
+    "authors": [
+      "Valery Manokhin",
+      "Daniel Grønhaug"
+    ],
+    "submission_date": "2026-01-19T18:23:36Z",
+    "latest_updated": "2026-01-19T18:23:36Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19944v1"
+    ],
+    "abstract": "We study model-agnostic post-hoc calibration methods intended to improve probabilistic predictions in supervised binary classification on real i.i.d. tabular data, with particular emphasis on conformal and Venn-based approaches that provide distribution-free validity guarantees under exchangeability. We benchmark 21 widely used classifiers, including linear models, SVMs, tree ensembles (CatBoost, XGBoost, LightGBM), and modern tabular neural and foundation models, on binary tasks from the TabArena-v0.1 suite using randomized, stratified five-fold cross-validation with a held-out test fold. Five calibrators; Isotonic regression, Platt scaling, Beta calibration, Venn-Abers predictors, and Pearsonify are trained on a separate calibration split and applied to test predictions. Calibration is evaluated using proper scoring rules (log-loss and Brier score) and diagnostic measures (Spiegelhalter's Z, ECE, and ECI), alongside discrimination (AUC-ROC) and standard classification metrics. Across tasks and architectures, Venn-Abers predictors achieve the largest average reductions in log-loss, followed closely by Beta calibration, while Platt scaling exhibits weaker and less consistent effects. Beta calibration improves log-loss most frequently across tasks, whereas Venn-Abers displays fewer instances of extreme degradation and slightly more instances of extreme improvement. Importantly, we find that commonly used calibration procedures, most notably Platt scaling and isotonic regression, can systematically degrade proper scoring performance for strong modern tabular models. Overall classification performance is often preserved, but calibration effects vary substantially across datasets and architectures, and no method dominates uniformly. In expectation, all methods except Pearsonify slightly increase accuracy, but the effect is marginal, with the largest expected gain about 0.008%.",
+    "status": "found"
+  },
+  "2601.19945": {
+    "arxiv_id": "2601.19945",
+    "title": "Benchmarking von ASR-Modellen im deutschen medizinischen Kontext: Eine Leistungsanalyse anhand von Anamnesegesprächen",
+    "authors": [
+      "Thomas Schuster",
+      "Julius Trögele",
+      "Nico Döring",
+      "Robin Krüger",
+      "Matthieu Hoffmann",
+      "Holger Friedrich"
+    ],
+    "submission_date": "2026-01-23T22:32:40Z",
+    "latest_updated": "2026-01-23T22:32:40Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19945v1"
+    ],
+    "abstract": "Automatic Speech Recognition (ASR) offers significant potential to reduce the workload of medical personnel, for example, through the automation of documentation tasks. While numerous benchmarks exist for the English language, specific evaluations for the German-speaking medical context are still lacking, particularly regarding the inclusion of dialects. In this article, we present a curated dataset of simulated doctor-patient conversations and evaluate a total of 29 different ASR models. The test field encompasses both open-weights models from the Whisper, Voxtral, and Wav2Vec2 families as well as commercial state-of-the-art APIs (AssemblyAI, Deepgram). For evaluation, we utilize three different metrics (WER, CER, BLEU) and provide an outlook on qualitative semantic analysis. The results demonstrate significant performance differences between the models: while the best systems already achieve very good Word Error Rates (WER) of partly below 3%, the error rates of other models, especially concerning medical terminology or dialect-influenced variations, are considerably higher.",
+    "status": "found"
+  },
+  "2601.19946": {
+    "arxiv_id": "2601.19946",
+    "title": "MK-SGC-SC: Multiple Kernel Guided Sparse Graph Construction in Spectral Clustering for Unsupervised Speaker Diarization",
+    "authors": [
+      "Nikhil Raghav",
+      "Avisek Gupta",
+      "Swagatam Das",
+      "Md Sahidullah"
+    ],
+    "submission_date": "2026-01-24T09:51:08Z",
+    "latest_updated": "2026-01-29T06:29:30Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.19946v1",
+      "2601.19946v2"
+    ],
+    "abstract": "Speaker diarization aims to segment audio recordings into regions corresponding to individual speakers. Although unsupervised speaker diarization is inherently challenging, the prospect of identifying speaker regions without pretraining or weak supervision motivates research on clustering techniques. In this work, we share the notable observation that measuring multiple kernel similarities of speaker embeddings to thereafter craft a sparse graph for spectral clustering in a principled manner is sufficient to achieve state-of-the-art performances in a fully unsupervised setting. Specifically, we consider four polynomial kernels and a degree one arccosine kernel to measure similarities in speaker embeddings, using which sparse graphs are constructed in a principled manner to emphasize local similarities. Experiments show the proposed approach excels in unsupervised speaker diarization over a variety of challenging environments in the DIHARD-III, AMI, and VoxConverse corpora. To encourage further research, our implementations are available at https://github.com/nikhilraghav29/MK-SGC-SC.",
+    "status": "found"
+  },
+  "2601.19947": {
+    "arxiv_id": "2601.19947",
+    "title": "NCSAM Noise-Compensated Sharpness-Aware Minimization for Noisy Label Learning",
+    "authors": [
+      "Jiayu Xu",
+      "Junbiao Pang"
+    ],
+    "submission_date": "2026-01-24T11:10:29Z",
+    "latest_updated": "2026-05-28T12:22:28Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2601.19947v1",
+      "2601.19947v2",
+      "2601.19947v3"
+    ],
+    "abstract": "Learning from Noisy Labels (LNL) remains a fundamental challenge in deep learning because real-world datasets often contain corrupted annotations. Most existing methods rely on label correction or sample selection mechanisms. In contrast, we study LNL from an optimization perspective by establishing a theoretical connection between label noise and the flatness-seeking behavior of Sharpness-Aware Minimization (SAM). Based on this analysis, we propose Noise-Compensated Sharpness-Aware Minimization (NCSAM), which uses a noise-compensated perturbation to counteract the optimization bias induced by noisy labels. By correcting distorted SAM perturbations, NCSAM mitigates the memorization of noisy labels during training while preserving the simplicity of optimization-based learning. Experiments on synthetic and real-world noisy-label benchmarks show that NCSAM consistently improves over SAM-based optimization baselines and remains competitive with representative noisy-label learning methods.",
+    "status": "found"
+  },
+  "2601.19948": {
+    "arxiv_id": "2601.19948",
+    "title": "Advances in ion-doping of Ca-Mg silicate bioceramics for bone tissue engineering",
+    "authors": [
+      "Ashkan Namdar",
+      "Erfan Salahinejad"
+    ],
+    "submission_date": "2026-01-25T21:05:30Z",
+    "latest_updated": "2026-01-25T21:05:30Z",
+    "revised_dates": null,
+    "venue": "Coordination Chemistry Reviews, 478 (2023) 215001",
+    "latest_version": 1,
+    "versions": [
+      "2601.19948v1"
+    ],
+    "abstract": "The use of bioceramics as hard tissue substitutes is extensive due to their excellent biocompatible and osteogenic behaviors. Among various bioceramics, Ca-Mg silicates are unique from the viewpoints of osteoinductive and mechanical properties, as well as their outstanding osteoconductive and angiogenic behaviors owing to the release of Si, Ca and Mg. Despite these distinct advantages, different compositions of these bioceramics still require mechanical and biological enhancements for further applications. For this purpose, doping with some ions like F-, Sr2+, Cu2+, Eu2+, Ba+, Ce3+ and some alkali cations has been proved to be a valued approach. This review attempts to bring together areas for the performance improvement of the further researched Ca-Mg silicates (i.e., diopside, akermanite, bredigite and monticellite) and the alteration of these compositions via ion-doping. It is concluded that a correct choice of dopants incorporated at the optimal concentration makes these silicates ideal bone substitutes competing or even superior to calcium phosphates (apatites) and bioglasses which are known as the most prominent bioceramics.",
+    "status": "found"
+  },
+  "2601.19949": {
+    "arxiv_id": "2601.19949",
+    "title": "RIR-Mega-Speech: A Reverberant Speech Corpus with Comprehensive Acoustic Metadata and Reproducible Evaluation",
+    "authors": [
+      "Mandip Goswami"
+    ],
+    "submission_date": "2026-01-25T22:17:18Z",
+    "latest_updated": "2026-01-25T22:17:18Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19949v1"
+    ],
+    "abstract": "Despite decades of research on reverberant speech, comparing methods remains difficult because most corpora lack per-file acoustic annotations or provide limited documentation for reproduction. We present RIR-Mega-Speech, a corpus of approximately 117.5 hours created by convolving LibriSpeech utterances with roughly 5,000 simulated room impulse responses from the RIR-Mega collection. Every file includes RT60, direct-to-reverberant ratio (DRR), and clarity index ($C_{50}$) computed from the source RIR using clearly defined, reproducible procedures. We also provide scripts to rebuild the dataset and reproduce all evaluation results. Using Whisper small on 1,500 paired utterances, we measure 5.20% WER (95% CI: 4.69--5.78) on clean speech and 7.70% (7.04--8.35) on reverberant versions, corresponding to a paired increase of 2.50 percentage points (2.06--2.98). This represents a 48% relative degradation. WER increases monotonically with RT60 and decreases with DRR, consistent with prior perceptual studies. While the core finding that reverberation harms recognition is well established, we aim to provide the community with a standardized resource where acoustic conditions are transparent and results can be verified independently. The repository includes one-command rebuild instructions for both Windows and Linux environments.",
+    "status": "found"
+  },
+  "2601.19950": {
+    "arxiv_id": "2601.19950",
+    "title": "Defensive Rebalancing for Automated Market Makers",
+    "authors": [
+      "Sam Devorsetz",
+      "Maurice Herlihy"
+    ],
+    "submission_date": "2026-01-26T00:12:00Z",
+    "latest_updated": "2026-08-04T17:59:50Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.19950v1",
+      "2601.19950v2"
+    ],
+    "abstract": "This paper introduces and analyzes \\emph{defensive rebalancing}, a novel mechanism for protecting constant-function market makers (CFMMs) from value leakage due to arbitrage. A \\emph{rebalancing} transfers assets directly from one CFMM's pool to another's, bypassing the CFMMs' standard trading protocols. In any \\emph{arbitrage-prone} configuration, we prove there exists a rebalancing to an \\textit{arbitrage-free} configuration that strictly increases some CFMMs' liquidities without reducing the liquidities of the others. Moreover, we prove that a configuration is arbitrage-free if and only if it is \\emph{Pareto efficient} under rebalancing, meaning that any further direct asset transfers must decrease some CFMM's liquidity. We prove that for any log-concave trading function, including the ubiquitous constant product market maker, the search for an optimal, arbitrage-free rebalancing that maximizes global liquidity while ensuring no participant is worse off can be cast as a convex optimization problem with a unique, computationally tractable solution. We extend this framework to \\emph{mixed rebalancing}, where a subset of participating CFMMs use a combination of direct transfers and standard trades to transition to an arbitrage-free configuration while harvesting arbitrage profits from non-participating CFMMs, and from price oracle market makers such as centralized exchanges. Our results provide a rigorous foundation for future AMM protocols that proactively defend liquidity providers against arbitrage.",
+    "status": "found"
+  },
+  "2601.19951": {
+    "arxiv_id": "2601.19951",
+    "title": "Pianoroll-Event: A Novel Score Representation for Symbolic Music",
+    "authors": [
+      "Lekai Qian",
+      "Haoyu Gu",
+      "Dehan Li",
+      "Boyu Cao",
+      "Qi Liu"
+    ],
+    "submission_date": "2026-01-26T09:59:35Z",
+    "latest_updated": "2026-01-26T09:59:35Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19951v1"
+    ],
+    "abstract": "Symbolic music representation is a fundamental challenge in computational musicology. While grid-based representations effectively preserve pitch-time spatial correspondence, their inherent data sparsity leads to low encoding efficiency. Discrete-event representations achieve compact encoding but fail to adequately capture structural invariance and spatial locality. To address these complementary limitations, we propose Pianoroll-Event, a novel encoding scheme that describes pianoroll representations through events, combining structural properties with encoding efficiency while maintaining temporal dependencies and local spatial patterns. Specifically, we design four complementary event types: Frame Events for temporal boundaries, Gap Events for sparse regions, Pattern Events for note patterns, and Musical Structure Events for musical metadata. Pianoroll-Event strikes an effective balance between sequence length and vocabulary size, improving encoding efficiency by 1.36\\times to 7.16\\times over representative discrete sequence methods. Experiments across multiple autoregressive architectures show models using our representation consistently outperform baselines in both quantitative and human evaluations.",
+    "status": "found"
+  },
+  "2601.19952": {
+    "arxiv_id": "2601.19952",
+    "title": "LTS-VoiceAgent: A Listen-Think-Speak Framework for Efficient Streaming Voice Interaction via Semantic Triggering and Incremental Reasoning",
+    "authors": [
+      "Wenhao Zou",
+      "Yuwei Miao",
+      "Zhanyu Ma",
+      "Jun Xu",
+      "Jiuchong Gao",
+      "Jinghua Hao",
+      "Renqing He",
+      "Jingwen Xu"
+    ],
+    "submission_date": "2026-01-26T15:42:35Z",
+    "latest_updated": "2026-01-26T15:42:35Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19952v1"
+    ],
+    "abstract": "Real-time voice agents face a dilemma: end-to-end models often lack deep reasoning, while cascaded pipelines incur high latency by executing ASR, LLM reasoning, and TTS strictly in sequence, unlike human conversation where listeners often start thinking before the speaker finishes. Since cascaded architectures remain the dominant choice for complex tasks, existing cascaded streaming strategies attempt to reduce this latency via mechanical segmentation (e.g., fixed chunks, VAD-based splitting) or speculative generation, but they frequently either break semantic units or waste computation on predictions that must be rolled back. To address these challenges, we propose LTS-VoiceAgent, a Listen-Think-Speak framework that explicitly separates when to think from how to reason incrementally. It features a Dynamic Semantic Trigger to detect meaningful prefixes, and a Dual-Role Stream Orchestrator that coordinates a background Thinker (for state maintenance) and a foreground Speaker (for speculative solving). This parallel design enables \"thinking while speaking\" without blocking responses. We also introduce a Pause-and-Repair benchmark containing natural disfluencies to stress-test streaming robustness. Experiments across VERA, Spoken-MQA, BigBenchAudio, and our benchmark show that LTS-VoiceAgent achieves a stronger accuracy-latency-efficiency trade-off than serial cascaded baselines and existing streaming strategies.",
+    "status": "found"
+  },
+  "2601.19953": {
+    "arxiv_id": "2601.19953",
+    "title": "Probabilistic Sensing: Intelligence in Data Sampling",
+    "authors": [
+      "Ibrahim Albulushi",
+      "Saleh Bunaiyan",
+      "Suraj S. Cheema",
+      "Hesham ElSawy",
+      "Feras Al-Dirini"
+    ],
+    "submission_date": "2026-01-27T00:41:38Z",
+    "latest_updated": "2026-01-27T00:41:38Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19953v1"
+    ],
+    "abstract": "Extending the intelligence of sensors to the data-acquisition process - deciding whether to sample or not - can result in transformative energy-efficiency gains. However, making such a decision in a deterministic manner involves risk of losing information. Here we present a sensing paradigm that enables making such a decision in a probabilistic manner. The paradigm takes inspiration from the autonomous nervous system and employs a probabilistic neuron (p-neuron) driven by an analog feature extraction circuit. The response time of the system is on the order of microseconds, over-coming the sub-sampling-rate response time limit and enabling real-time intelligent autonomous activation of data-sampling. Validation experiments on active seismic survey data demonstrate lossless probabilistic data acquisition, with a normalized mean squared error of 0.41%, and 93% saving in the active operation time of the system and the number of generated samples.",
+    "status": "found"
+  },
+  "2601.19954": {
+    "arxiv_id": "2601.19954",
+    "title": "A General Multiplication Theorem for Multivariate Hermite Polynomials",
+    "authors": [
+      "Alistair Shilton"
+    ],
+    "submission_date": "2026-01-27T00:45:07Z",
+    "latest_updated": "2026-01-27T00:45:07Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19954v1"
+    ],
+    "abstract": "The multiplication theorem for univariate Hermite polynomials $H_k(λx)$ is well-known. In this paper we generalize this result to multivariate Hermite polynomials ${\\rm H}_{\\bf k}({\\mathbfΛ}{\\bf x};{\\mathbfΣ})$, and use this result to derive a multiplication theorem for univariate polynomials applied to inner-products $H_k({\\mathbfλ}^{\\rm T} {\\bf x})$.",
+    "status": "found"
+  },
+  "2601.19955": {
+    "arxiv_id": "2601.19955",
+    "title": "NeuroAI and Beyond",
+    "authors": [
+      "Jean-Marc Fellous",
+      "Gert Cauwenberghs",
+      "Cornelia Fermüller",
+      "Yulia Sandamisrkaya",
+      "Terrence Sejnowski"
+    ],
+    "submission_date": "2026-01-27T01:57:51Z",
+    "latest_updated": "2026-01-27T01:57:51Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19955v1"
+    ],
+    "abstract": "Neuroscience and Artificial Intelligence (AI) have made significant progress in the past few years but have only been loosely inter-connected. Based on a workshop held in August 2025, we identify current and future areas of synergism between these two fields. We focus on the subareas of embodiment, language and communication, robotics, learning in humans and machines and Neuromorphic engineering to take stock of the progress made so far, and possible promising new future avenues. Overall, we advocate for the development of NeuroAI, a type of Neuroscience-informed Artificial Intelligence that, we argue, has the potential for significantly improving the scope and efficiency of AI algorithms while simultaneously changing the way we understand biological neural computations. We include personal statements from several leading researchers on their diverse views of NeuroAI. Two Strength-Weakness-Opportunities-Threat (SWOT) analyses by researchers and trainees are appended that describe the benefits and risks offered by NeuroAI.",
+    "status": "found"
+  }
+}

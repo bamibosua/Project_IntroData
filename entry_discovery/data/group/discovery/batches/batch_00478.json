@@ -1,0 +1,428 @@
+{
+  "2601.22716": {
+    "arxiv_id": "2601.22716",
+    "title": "Breaking the Blocks: Continuous Low-Rank Decomposed Scaling for Unified LLM Quantization and Adaptation",
+    "authors": [
+      "Pingzhi Tang",
+      "Ruijie Zhou",
+      "Fanxu Meng",
+      "Wenjie Pei",
+      "Muhan Zhang"
+    ],
+    "submission_date": "2026-01-30T08:46:02Z",
+    "latest_updated": "2026-01-30T08:46:02Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22716v1"
+    ],
+    "abstract": "Current quantization methods for LLMs predominantly rely on block-wise structures to maintain efficiency, often at the cost of representational flexibility. In this work, we demonstrate that element-wise quantization can be made as efficient as block-wise scaling while providing strictly superior expressive power by modeling the scaling manifold as continuous low-rank matrices ($S = BA$). We propose Low-Rank Decomposed Scaling (LoRDS), a unified framework that rethinks quantization granularity through this low-rank decomposition. By \"breaking the blocks\" of spatial constraints, LoRDS establishes a seamless efficiency lifecycle: it provides high-fidelity PTQ initialization refined via iterative optimization, enables joint QAT of weights and scaling factors, and facilitates high-rank multiplicative PEFT adaptation. Unlike additive PEFT approaches such as QLoRA, LoRDS enables high-rank weight updates within a low-rank budget while incurring no additional inference overhead. Supported by highly optimized Triton kernels, LoRDS consistently outperforms state-of-the-art baselines across various model families in both quantization and downstream fine-tuning tasks. Notably, on Llama3-8B, our method achieves up to a 27.0% accuracy improvement at 3 bits over NormalFloat quantization and delivers a 1.5x inference speedup on NVIDIA RTX 4090 while enhancing PEFT performance by 9.6% on downstream tasks over 4bit QLoRA, offering a robust and integrated solution for unified compression and adaptation of LLMs.",
+    "status": "found"
+  },
+  "2601.22717": {
+    "arxiv_id": "2601.22717",
+    "title": "Policy learning under constraint: Maximizing a primary outcome while controlling an adverse event",
+    "authors": [
+      "Laura Fuentes-Vicente",
+      "Mathieu Even",
+      "Gaelle Dormion",
+      "Julie Josse",
+      "Antoine Chambaz"
+    ],
+    "submission_date": "2026-01-30T08:46:40Z",
+    "latest_updated": "2026-01-30T08:46:40Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22717v1"
+    ],
+    "abstract": "A medical policy aims to support decision-making by mapping patient characteristics to individualized treatment recommendations. Standard approaches typically optimize a single outcome criterion. For example, recommending treatment according to the sign of the Conditional Average Treatment Effect (CATE) maximizes the policy \"value\" by exploiting treatment effect heterogeneity. This point of view shifts policy learning towards the challenge of learning a reliable CATE estimator. However, in multi-outcome settings, such strategies ignore the risk of adverse events, despite their relevance. PLUC (Policy Learning Under Constraint) addresses this challenges by learning an estimator of the CATE that yields smoothed policies controlling the probability of an adverse event in observational settings. Inspired by insights from EP-learning, PLUC involves the optimization of strongly convex Lagrangian criteria over a convex hull of functions. Its alternating procedure iteratively applies the Frank-Wolfe algorithm to minimize the current criterion, then performs a targeting step that updates the criterion so that its evaluations at previously visited landmarks become targeted estimators of the corresponding theoretical quantities. An R package PLUC-R provides a practical implementation. We illustrate PLUC's performance through a series of numerical experiments.",
+    "status": "found"
+  },
+  "2601.22718": {
+    "arxiv_id": "2601.22718",
+    "title": "A Step Back: Prefix Importance Ratio Stabilizes Policy Optimization",
+    "authors": [
+      "Shiye Lei",
+      "Zhihao Cheng",
+      "Dacheng Tao"
+    ],
+    "submission_date": "2026-01-30T08:47:19Z",
+    "latest_updated": "2026-01-30T08:47:19Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22718v1"
+    ],
+    "abstract": "Reinforcement learning (RL) post-training has increasingly demonstrated strong ability to elicit reasoning behaviors in large language models (LLMs). For training efficiency, rollouts are typically generated in an off-policy manner using an older sampling policy and then used to update the current target policy. To correct the resulting discrepancy between the sampling and target policies, most existing RL objectives rely on a token-level importance sampling ratio, primarily due to its computational simplicity and numerical stability. However, we observe that token-level correction often leads to unstable training dynamics when the degree of off-policyness is large. In this paper, we revisit LLM policy optimization under off-policy conditions and show that the theoretically rigorous correction term is the prefix importance ratio, and that relaxing it to a token-level approximation can induce instability in RL post-training. To stabilize LLM optimization under large off-policy drift, we propose a simple yet effective objective, Minimum Prefix Ratio (MinPRO). MinPRO replaces the unstable cumulative prefix ratio with a non-cumulative surrogate based on the minimum token-level ratio observed in the preceding prefix. Extensive experiments on both dense and mixture-of-experts LLMs, across multiple mathematical reasoning benchmarks, demonstrate that MinPRO substantially improves training stability and peak performance in off-policy regimes.",
+    "status": "found"
+  },
+  "2601.22719": {
+    "arxiv_id": "2601.22719",
+    "title": "Single-Shot Flow Spectroscopy of a Polariton Condensate: Kibble-Zurek and Kolmogorov-Like Scaling",
+    "authors": [
+      "Ivan Krasionov",
+      "Anton Putintsev",
+      "Maksim Kolker",
+      "Tamsin Cookson",
+      "Sergey Alyatkin",
+      "Pavlos G. Lagoudakis"
+    ],
+    "submission_date": "2026-01-30T08:49:16Z",
+    "latest_updated": "2026-01-30T08:49:16Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22719v1"
+    ],
+    "abstract": "Quantized vortices are fundamental topological excitations of quantum fluids. We report single-shot interferometric measurements of spontaneous vortex nucleation in a room-temperature organic exciton-polariton condensate. From hundreds of independent realizations we find random vortex-core positions and unbiased circulation, consistent with intrinsically stochastic, unpinned defect formation. The mean vortex number scales with pump power above threshold with an exponent consistent with Kibble-Zurek freeze-out in a driven-dissipative condensate. Using reconstructed phase maps we obtain single-shot flow fields, compute the incompressible component, and extract kinetic-energy spectra. Vortex-containing realizations develop a robust Kolmogorov-like segment with Einc(k) proportional to k^(-5/3) over a finite k range, indicating the onset of turbulent spectral scaling in a quantum fluid of light. These results establish single-shot access to phase and flow as a direct route to quantifying stochastic defect formation and emerging turbulence in polariton condensates.",
+    "status": "found"
+  },
+  "2601.22720": {
+    "arxiv_id": "2601.22720",
+    "title": "AEGIS: White-Box Attack Path Generation using LLMs and Training Effectiveness Evaluation for Large-Scale Cyber Defence Exercises",
+    "authors": [
+      "Ivan K. Tung",
+      "Yu Xiang Shi",
+      "Alex Chien",
+      "Wenkai Liu",
+      "Lawrence Zheng"
+    ],
+    "submission_date": "2026-01-30T08:52:27Z",
+    "latest_updated": "2026-01-30T08:52:27Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22720v1"
+    ],
+    "abstract": "Creating attack paths for cyber defence exercises requires substantial expert effort. Existing automation requires vulnerability graphs or exploit sets curated in advance, limiting where it can be applied. We present AEGIS, a system that generates attack paths using LLMs, white-box access, and Monte Carlo Tree Search over real exploit execution. LLM-based search discovers exploits dynamically without pre-existing vulnerability graphs, while white-box access enables validating exploits in isolation before committing to attack paths. Evaluation at CIDeX 2025, a large-scale exercise spanning 46 IT hosts, showed that AEGIS-generated paths are comparable to human-authored scenarios across four dimensions of training experience (perceived learning, engagement, believability, challenge). Results were measured with a validated questionnaire extensible to general simulation-based training. By automating exploit chain discovery and validation, AEGIS reduces scenario development from months to days, shifting expert effort from technical validation to scenario design.",
+    "status": "found"
+  },
+  "2601.22721": {
+    "arxiv_id": "2601.22721",
+    "title": "Profunctorial algebras",
+    "authors": [
+      "Quentin Aristote",
+      "Umberto Tarantino"
+    ],
+    "submission_date": "2026-01-30T08:53:15Z",
+    "latest_updated": "2026-04-10T14:54:22Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.22721v1",
+      "2601.22721v2"
+    ],
+    "abstract": "We provide a bicategorical generalization of Barr's landmark 1970 paper, in which he describes how to extend Set-monads to relations and uses this to characterize topological spaces as the relational algebras of the ultrafilter monad. With two-sided discrete fibrations playing the role of relations in a bicategory, we first describe how to extend pseudomonads on a bicategory to skew monads on its bicategory of two-sided discrete fibrations, and we characterize in terms of exact squares when these extensions are themselves pseudomonads. As a wide class of examples, we show that every Set-monad induces a pseudomonad on the 2-category of categories admitting a skew extension to profunctors, and in a few relevant cases we introduce suitable quotients also extending to profunctors. Among the latter, we then focus on the ultracompletion pseudomonad, whose pseudoalgebras are ultracategories: we characterize the normalized lax algebras of its profunctorial extension as ultraconvergence spaces, a recently-introduced categorification of topological spaces.",
+    "status": "found"
+  },
+  "2601.22722": {
+    "arxiv_id": "2601.22722",
+    "title": "Local Intrinsic Dimension of Representations Predicts Alignment and Generalization in AI Models and Human Brain",
+    "authors": [
+      "Junjie Yu",
+      "Wenxiao Ma",
+      "Chen Wei",
+      "Jianyu Zhang",
+      "Haotian Deng",
+      "Zihan Deng",
+      "Quanying Liu"
+    ],
+    "submission_date": "2026-01-30T08:54:59Z",
+    "latest_updated": "2026-01-30T08:54:59Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22722v1"
+    ],
+    "abstract": "Recent work has found that neural networks with stronger generalization tend to exhibit higher representational alignment with one another across architectures and training paradigms. In this work, we show that models with stronger generalization also align more strongly with human neural activity. Moreover, generalization performance, model--model alignment, and model--brain alignment are all significantly correlated with each other. We further show that these relationships can be explained by a single geometric property of learned representations: the local intrinsic dimension of embeddings. Lower local dimension is consistently associated with stronger model--model alignment, stronger model--brain alignment, and better generalization, whereas global dimension measures fail to capture these effects. Finally, we find that increasing model capacity and training data scale systematically reduces local intrinsic dimension, providing a geometric account of the benefits of scaling. Together, our results identify local intrinsic dimension as a unifying descriptor of representational convergence in artificial and biological systems.",
+    "status": "found"
+  },
+  "2601.22723": {
+    "arxiv_id": "2601.22723",
+    "title": "A Cross-Domain Graph Learning Protocol for Single-Step Molecular Geometry Refinement",
+    "authors": [
+      "Chengchun Liu",
+      "Wendi Cai",
+      "Boxuan Zhao",
+      "Fanyang Mo"
+    ],
+    "submission_date": "2026-01-30T08:55:46Z",
+    "latest_updated": "2026-01-30T08:55:46Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22723v1"
+    ],
+    "abstract": "Accurate molecular geometries are a prerequisite for reliable quantum-chemical predictions, yet density functional theory (DFT) optimization remains a major bottleneck for high-throughput molecular screening. Here we present GeoOpt-Net, a multi-branch SE(3)-equivariant geometry refinement network that predicts DFT-quality structures at the B3LYP/TZVP level of theory in a single forward pass starting from inexpensive initial conformers generated at a low-cost force-field level. GeoOpt-Net is trained using a two-stage strategy in which a broadly pretrained geometric representation is subsequently fine-tuned to approach B3LYP/TZVP-level accuracy, with theory- and basis-set-aware calibration enabled by a fidelity-aware feature modulation (FAFM) mechanism. Benchmarking against representative approaches spanning classical conformer generation (RDKit), semiempirical quantum methods (xTB), data-driven geometry refinement pipelines (Auto3D), and machine-learning interatomic potentials (UMA) on external drug-like molecules demonstrates that GeoOpt-Net achieves sub-milli-Å all-atom RMSD with near-zero B3LYP/TZVP single-point energy deviations, indicating DFT-ready geometries that closely reproduce both structural and energetic references. Beyond geometric metrics, GeoOpt-Net generates initial guesses intrinsically compatible with DFT convergence criteria, yielding nonzero ``All-YES'' convergence rates (65.0\\% under loose and 33.4\\% under default thresholds), and substantially reducing re-optimization steps and wall-clock time. GeoOpt-Net further exhibits smooth and predictable energy scaling with molecular complexity while preserving key electronic observables such as dipole moments. Collectively, these results establish GeoOpt-Net as a scalable, physically consistent geometry refinement framework that enables efficient acceleration of DFT-based quantum-chemical workflows.",
+    "status": "found"
+  },
+  "2601.22724": {
+    "arxiv_id": "2601.22724",
+    "title": "SORIS: A Self-Organized Reconfigurable Intelligent Surface Architecture for Wireless Communications",
+    "authors": [
+      "Evangelos Koutsonas",
+      "Alexandros-Apostolos A. Boulogeorgos",
+      "Stylianos E. Trevlakis",
+      "George C. Alexandropoulos",
+      "Theodoros A. Tsiftsis",
+      "Rui Zhang"
+    ],
+    "submission_date": "2026-01-30T08:56:15Z",
+    "latest_updated": "2026-01-30T08:56:15Z",
+    "revised_dates": null,
+    "venue": "IEEE Transactions on Green Communications and Networking, vol. 10, pp. 1749-1764, 2026",
+    "latest_version": 1,
+    "versions": [
+      "2601.22724v1"
+    ],
+    "abstract": "In this paper, a new reconfigurable intelligent surface (RIS) hardware architecture, called self-organized RIS (SORIS), is proposed. The architecture incorporates a microcontroller connected to a single-antenna receiver operating at the same frequency as the RIS unit elements, operating either in transmission or reflection mode. The transmitting RIS elements enable the low latency estimation of both the incoming and outcoming channels at the microcontroller's side. In addition, a machine learning approach for estimating the incoming and outcoming channels involving the remaining RIS elements operating in reflection mode is devised. Specifically, by appropriately selecting a small number of elements in transmission mode, and based on the channel reciprocity principle, the respective channel coefficients are first estimated, which are then fed to a low-complexity neural network that, leveraging spatial channel correlation over RIS elements, returns predictions of the channel coefficients referring to the rest of elements. In this way, the SORIS microcontroller acquires channel state information, and accordingly reconfigures the panel's metamaterials to assist data communication between a transmitter and a receiver, without the need for separate connections with them. Moreover, the impact of channel estimation on the proposed solution, and a detailed complexity analysis for the used model, as well as a wiring density and control signaling analysis, is performed. The feasibility and efficacy of the proposed self-organized RIS design and operation are verified by Monte Carlo simulations, providing useful guidelines on the selection of the RIS elements for operating in transmission mode for initial channel estimation.",
+    "status": "found"
+  },
+  "2601.22725": {
+    "arxiv_id": "2601.22725",
+    "title": "OpenVTON-Bench: A Large-Scale High-Resolution Benchmark for Controllable Virtual Try-On Evaluation",
+    "authors": [
+      "Jin Li",
+      "Tao Chen",
+      "Kai Wen",
+      "Siqi Yin",
+      "Shuai Jiang",
+      "Weijie Wang",
+      "Jingwen Luo",
+      "Chenhui Wu"
+    ],
+    "submission_date": "2026-01-30T08:58:00Z",
+    "latest_updated": "2026-10-10T04:04:40Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 5,
+    "versions": [
+      "2601.22725v1",
+      "2601.22725v2",
+      "2601.22725v3",
+      "2601.22725v4",
+      "2601.22725v5"
+    ],
+    "abstract": "Recent advances in diffusion models have significantly elevated the visual fidelity of Virtual Try-On (VTON) systems, yet reliable evaluation remains a persistent bottleneck. Traditional metrics struggle to quantify fine-grained texture details and semantic consistency, while existing datasets fail to meet commercial standards in scale and diversity. We present OpenVTON-Bench, a large-scale benchmark comprising approximately 100K high-resolution image pairs (up to $1536\\times1536$). The dataset combines Gemini-powered dense captioning with stratified sampling across 20 visual clusters obtained by DINOv3 K-Means. To support reliable evaluation, we propose a multi-modal protocol that measures VTON quality along five interpretable dimensions: background consistency, identity fidelity, texture fidelity, shape plausibility, and overall realism. The protocol integrates VLM-based semantic reasoning with a novel Multi-Scale Representation Metric based on SAM3 segmentation and morphological erosion, enabling the separation of boundary alignment errors from internal texture artifacts. Under the specified evaluation rubric, our representation metric shows strong agreement with human model rankings (Kendall's $τ$ of 0.833 vs. 0.611 for SSIM). Code and dataset are available at https://github.com/RenxingIntelligence/OpenVTON-Bench.",
+    "status": "found"
+  },
+  "2601.22726": {
+    "arxiv_id": "2601.22726",
+    "title": "A unified framework for hot accretion flows with finite angular momentum: from Bondi-like to disc-like regimes",
+    "authors": [
+      "Cheng-Liang Jiao",
+      "Liying Zhu",
+      "Er-gang Zhao",
+      "Xiang-dong Shi"
+    ],
+    "submission_date": "2026-01-30T09:02:20Z",
+    "latest_updated": "2026-01-30T09:02:20Z",
+    "revised_dates": null,
+    "venue": "Res. Astron. Astrophys. 26 (2026) 115008",
+    "latest_version": 1,
+    "versions": [
+      "2601.22726v1"
+    ],
+    "abstract": "Observations of X-ray luminous elliptical galaxies suggest that the accretion rate onto the central supermassive black hole can reach a substantial fraction of the Bondi rate. However, classical accretion theory applicable to such hot accretion flows treats spherically symmetric Bondi accretion and disc-like advection-dominated accretion flows (ADAFs) as two distinct limiting cases, lacking a unified framework for flows with finite angular momentum. In this work, we develop such a framework that continuously connects these two regimes. Our model naturally recovers the Bondi solution in the limit of vanishing angular momentum and approaches the properties of classical ADAFs at high angular momentum, while providing a physically well-defined description of the intermediate regime where neither limiting case is strictly applicable. We further demonstrate that the accretion rate is jointly regulated by the angular momentum of the ambient gas and the gas viscosity. For sufficiently large but physically reasonable viscosity, the accretion rate can remain at a significant fraction of the Bondi rate even in the presence of substantial gas rotation. These results offer a natural explanation for how such accretion rates can be sustained despite finite angular momentum in realistic galactic environments.",
+    "status": "found"
+  },
+  "2601.22727": {
+    "arxiv_id": "2601.22727",
+    "title": "A Wide Bandwidth Trans-impedance Amplifier for Picosecond-Scale SiPM Characterization in a Wide Temperature Range",
+    "authors": [
+      "P. Carniti",
+      "C. Gotti",
+      "G. Pessina",
+      "D. Trotta"
+    ],
+    "submission_date": "2026-01-30T09:02:28Z",
+    "latest_updated": "2026-08-26T07:43:00Z",
+    "revised_dates": null,
+    "venue": "2026 JINST 21 P08026",
+    "latest_version": 2,
+    "versions": [
+      "2601.22727v1",
+      "2601.22727v2"
+    ],
+    "abstract": "Future high-energy physics experiments using SiPMs as photosensitive elements may require operation at low temperatures (down to 80 K) to measure single photons with high time resolution in a highly radioactive environment. This calls for a complete characterization of these sensors over a wide temperature range to find the best compromise between detector performance and cooling requirements. This paper presents the design of a transimpedance amplifier featuring high gain ($\\sim 7500\\ \\text{V/A}$), very high speed ($<500\\ \\text{ps}$ rise time) and low input noise ($\\lesssim 20\\ \\text{pA}/\\sqrt{\\text{Hz}}$), able to faithfully reproduce all the features of SiPM signals without affecting its noise or jitter performance. These features make the amplifier suitable for precise measurements of the time-of-arrival of single-photon signals, as well as gain and recovery time. This article provides a detailed and thorough analysis of the circuit. The network was simulated and measured in two configurations that differ in their open-loop gain and dominant pole frequencies. After selecting the best configuration for our purposes, the amplifier was characterized in detail at ambient temperature and at 80 K. Finally, we evaluated the amplifier using a SiPM operated at low over-voltage. While SiPMs are typically characterized at high over-voltage to enhance gain and minimize timing jitter, testing at low over-voltage allowed us to assess the amplifier's performance under more challenging and realistic conditions for single-photon timing.",
+    "status": "found"
+  },
+  "2601.22728": {
+    "arxiv_id": "2601.22728",
+    "title": "On Small Pair Decompositions for Point Sets",
+    "authors": [
+      "Kevin Buchin",
+      "Jacobus Conradi",
+      "Sariel Har-Peled",
+      "Antonia Kalb",
+      "Abhiruk Lahiri",
+      "Lukas Plätz",
+      "Carolin Rehs",
+      "Sampson Wong"
+    ],
+    "submission_date": "2026-01-30T09:03:32Z",
+    "latest_updated": "2026-02-02T19:43:13Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.22728v1",
+      "2601.22728v2"
+    ],
+    "abstract": "$\\newcommand{\\Re}{\\mathbb{R}}$We study the minWSPD problem of computing the minimum-size well-separated pairs decomposition of a set of points, and show constant approximation algorithms in low-dimensional Euclidean space and doubling metrics. This problem is computationally hard already $\\Re^2$, and is also hard to approximate. We also introduce a new pair decomposition, removing the requirement that the diameters of the parts should be small. Surprisingly, we show that in a general metric space, one can compute such a decomposition of size $O( \\tfrac{n}{\\varepsilon}\\log n)$, which is dramatically smaller than the quadratic bound for WSPDs. In $\\Re^d$, the bound improves to $O( d \\tfrac{n}{\\varepsilon}\\log \\tfrac{1}{\\varepsilon } )$.",
+    "status": "found"
+  },
+  "2601.22729": {
+    "arxiv_id": "2601.22729",
+    "title": "GaussianOcc3D: A Gaussian-Based Adaptive Multi-modal 3D Occupancy Prediction",
+    "authors": [
+      "A. Enes Doruk",
+      "Hasan F. Ates"
+    ],
+    "submission_date": "2026-01-30T09:05:30Z",
+    "latest_updated": "2026-01-30T09:05:30Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22729v1"
+    ],
+    "abstract": "3D semantic occupancy prediction is a pivotal task in autonomous driving, providing a dense and fine-grained understanding of the surrounding environment, yet single-modality methods face trade-offs between camera semantics and LiDAR geometry. Existing multi-modal frameworks often struggle with modality heterogeneity, spatial misalignment, and the representation crisis--where voxels are computationally heavy and BEV alternatives are lossy. We present GaussianOcc3D, a multi-modal framework bridging camera and LiDAR through a memory-efficient, continuous 3D Gaussian representation. We introduce four modules: (1) LiDAR Depth Feature Aggregation (LDFA), using depth-wise deformable sampling to lift sparse signals onto Gaussian primitives; (2) Entropy-Based Feature Smoothing (EBFS) to mitigate domain noise; (3) Adaptive Camera-LiDAR Fusion (ACLF) with uncertainty-aware reweighting for sensor reliability; and (4) a Gauss-Mamba Head leveraging Selective State Space Models for global context with linear complexity. Evaluations on Occ3D, SurroundOcc, and SemanticKITTI benchmarks demonstrate state-of-the-art performance, achieving mIoU scores of 49.4%, 28.9%, and 25.2% respectively. GaussianOcc3D exhibits superior robustness across challenging rainy and nighttime conditions.",
+    "status": "found"
+  },
+  "2601.22730": {
+    "arxiv_id": "2601.22730",
+    "title": "ImgCoT: Compressing Long Chain of Thought into Compact Visual Tokens for Efficient Reasoning of Large Language Model",
+    "authors": [
+      "Xiaoshu Chen",
+      "Sihang Zhou",
+      "Ke Liang",
+      "Taichun Zhou",
+      "Xinwang Liu"
+    ],
+    "submission_date": "2026-01-30T09:06:45Z",
+    "latest_updated": "2026-01-30T09:06:45Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22730v1"
+    ],
+    "abstract": "Compressing long chains of thought (CoT) into compact latent tokens is crucial for efficient reasoning with large language models (LLMs). Recent studies employ autoencoders to achieve this by reconstructing textual CoT from latent tokens, thus encoding CoT semantics. However, treating textual CoT as the reconstruction target forces latent tokens to preserve surface-level linguistic features (e.g., word choice and syntax), introducing a strong linguistic inductive bias that prioritizes linguistic form over reasoning structure and limits logical abstraction. Thus, we propose ImgCoT that replaces the reconstruction target from textual CoT to the visual CoT obtained by rendering CoT into images. This substitutes linguistic bias with spatial inductive bias, i.e., a tendency to model spatial layouts of the reasoning steps in visual CoT, enabling latent tokens to better capture global reasoning structure. Moreover, although visual latent tokens encode abstract reasoning structure, they may blur reasoning details. We thus propose a loose ImgCoT, a hybrid reasoning that augments visual latent tokens with a few key textual reasoning steps, selected based on low token log-likelihood. This design allows LLMs to retain both global reasoning structure and fine-grained reasoning details with fewer tokens than the complete CoT. Extensive experiments across multiple datasets and LLMs demonstrate the effectiveness of the two versions of ImgCoT.",
+    "status": "found"
+  },
+  "2601.22731": {
+    "arxiv_id": "2601.22731",
+    "title": "Gravitational form factors of the $Z$-boson",
+    "authors": [
+      "P. Beißner",
+      "J. Yu. Panteleeva",
+      "B. -D. Sun",
+      "E. Epelbaum",
+      "J. Gegelia"
+    ],
+    "submission_date": "2026-01-30T09:10:07Z",
+    "latest_updated": "2026-01-30T09:10:07Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22731v1"
+    ],
+    "abstract": "Matrix elements of the energy-momentum tensor for one-particle states of the $Z$-boson are parameterized in terms of gravitational form factors. One-loop order electroweak corrections to these quantities are calculated. Renormalization and physical interpretation of the obtained results are discussed.",
+    "status": "found"
+  },
+  "2601.22732": {
+    "arxiv_id": "2601.22732",
+    "title": "Active Learning-Driven Lightweight YOLOv9: Enhancing Efficiency in Smart Agriculture",
+    "authors": [
+      "Hung-Chih Tu",
+      "Bo-Syun Chen",
+      "Yun-Chien Cheng"
+    ],
+    "submission_date": "2026-01-30T09:14:35Z",
+    "latest_updated": "2026-01-30T09:14:35Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22732v1"
+    ],
+    "abstract": "This study addresses the demand for real-time detection of tomatoes and tomato flowers by agricultural robots deployed on edge devices in greenhouse environments. Under practical imaging conditions, object detection systems often face challenges such as large scale variations caused by varying camera distances, severe occlusion from plant structures, and highly imbalanced class distributions. These factors make conventional object detection approaches that rely on fully annotated datasets difficult to simultaneously achieve high detection accuracy and deployment efficiency. To overcome these limitations, this research proposes an active learning driven lightweight object detection framework, integrating data analysis, model design, and training strategy. First, the size distribution of objects in raw agricultural images is analyzed to redefine an operational target range, thereby improving learning stability under real-world conditions. Second, an efficient feature extraction module is incorporated to reduce computational cost, while a lightweight attention mechanism is introduced to enhance feature representation under multi-scale and occluded scenarios. Finally, an active learning strategy is employed to iteratively select high-information samples for annotation and training under a limited labeling budget, effectively improving the recognition performance of minority and small-object categories. Experimental results demonstrate that, while maintaining a low parameter count and inference cost suitable for edge-device deployment, the proposed method effectively improves the detection performance of tomatoes and tomato flowers in raw images. Under limited annotation conditions, the framework achieves an overall detection accuracy of 67.8% mAP, validating its practicality and feasibility for intelligent agricultural applications.",
+    "status": "found"
+  },
+  "2601.22733": {
+    "arxiv_id": "2601.22733",
+    "title": "Spectral insights into active matter: Exceptional Points and the Mathieu equation",
+    "authors": [
+      "Horst-Holger Boltz",
+      "Thomas Ihle"
+    ],
+    "submission_date": "2026-01-30T09:17:40Z",
+    "latest_updated": "2026-02-24T15:22:08Z",
+    "revised_dates": null,
+    "venue": "Entropy 28(3), 284 (2026)",
+    "latest_version": 2,
+    "versions": [
+      "2601.22733v1",
+      "2601.22733v2"
+    ],
+    "abstract": "We show that recent numerical findings of universal scaling relations in systems of noisy, aligning self-propelled particles by Kürsten [Kürsten, arXiv:2402.18711v2 [cond-mat.soft] (2025)] can robustly be explained by perturbation theory and known results for the Mathieu equation with purely imaginary parameter. In particular, we highlight the significance of a cascade of exceptional points that leads to non-trivial fractional scaling exponents in the singular-perturbation limit of high activity. Crucially, these features are rooted in the Fokker-Planck operator corresponding to free self-propulsion. This can be viewed as a dynamical phase transition in the dynamics of noisy active matter. We also predict that these scaling relations depend on the symmetry of the alignment interactions and discuss the relevance of this structure in the free propagation for self-alignment and cohesion-type interactions.",
+    "status": "found"
+  },
+  "2601.22734": {
+    "arxiv_id": "2601.22734",
+    "title": "Electrical conductivity of a random nanowire network: comparison of two-dimensional and quasi-three-dimensional models",
+    "authors": [
+      "Yuri Yu. Tarasevich",
+      "Andrei V. Eserkepov"
+    ],
+    "submission_date": "2026-01-30T09:17:45Z",
+    "latest_updated": "2026-02-25T08:05:12Z",
+    "revised_dates": null,
+    "venue": "Europhysics Letters (EPL), 2026, Volume 153, Number 5, 51001",
+    "latest_version": 3,
+    "versions": [
+      "2601.22734v1",
+      "2601.22734v2",
+      "2601.22734v3"
+    ],
+    "abstract": "Although the two-dimensional model of random networks of metallic nanowires or carbon nanotubes is widely used, it significantly overestimates the number of contacts between elements compared to quasi-three-dimensional models. This, within the mean-field approximation, leads to overestimates of the electrical conductivity, especially when the main contribution to the system's electrical conductivity comes from the contact resistances between the conductors. In the two-dimensional model, the system's electrical conductivity depends quadratically on the conductor density, whereas in the three-dimensional model, this dependence is linear. We propose a simple modification of a two-dimensional model, which can capture the saturation effect of the number of contacts per conductor in a real nanowire network.",
+    "status": "found"
+  },
+  "2601.22735": {
+    "arxiv_id": "2601.22735",
+    "title": "MM-THEBench: Do Reasoning MLLMs Think Reasonably?",
+    "authors": [
+      "Zhidian Huang",
+      "Zijun Yao",
+      "Ji Qi",
+      "Shangqing Tu",
+      "Junxian Ma",
+      "Jinxin Liu",
+      "Weichuan Liu",
+      "Xiaoyin Che",
+      "Lei Hou",
+      "Juanzi Li"
+    ],
+    "submission_date": "2026-01-30T09:17:50Z",
+    "latest_updated": "2026-01-30T09:17:50Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22735v1"
+    ],
+    "abstract": "Recent advances in multimodal large language models (MLLMs) mark a shift from non-thinking models to post-trained reasoning models capable of solving complex problems through thinking. However, whether such thinking mitigates hallucinations in multimodal perception and reasoning remains unclear. Self-reflective reasoning enhances robustness but introduces additional hallucinations, and subtle perceptual errors still result in incorrect or coincidentally correct answers. Existing benchmarks primarily focus on models before the emergence of reasoning MLLMs, neglecting the internal thinking process and failing to measure the hallucinations that occur during thinking. To address these challenges, we introduce MM-THEBench, a comprehensive benchmark for assessing hallucinations of intermediate CoTs in reasoning MLLMs. MM-THEBench features a fine-grained taxonomy grounded in cognitive dimensions, diverse data with verified reasoning annotations, and a multi-level automated evaluation framework. Extensive experiments on mainstream reasoning MLLMs reveal insights into how thinking affects hallucination and reasoning capability in various multimodal tasks.",
+    "status": "found"
+  }
+}

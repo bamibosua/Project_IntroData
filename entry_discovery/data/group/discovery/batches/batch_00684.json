@@ -1,0 +1,400 @@
+{
+  "2608.12687": {
+    "arxiv_id": "2608.12687",
+    "title": "Finding the Needle in a Haystack: Test-Time Analog Circuit Representation Adaptation for Bayesian Optimization",
+    "authors": [
+      "Fin Amin",
+      "Sounak Dutta",
+      "Paul D. Franzon"
+    ],
+    "submission_date": "2026-08-13T01:09:58Z",
+    "latest_updated": "2026-08-13T01:09:58Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12687v1"
+    ],
+    "abstract": "Bayesian optimization (BO) is a sample-efficient framework for analog circuit topology search, where evaluating each candidate topology can require costly simulation. However, representation-based BO methods typically treat circuit embeddings as fixed after encoder training. This creates a mismatch between representation learning and optimization: embeddings learned to encode or reconstruct circuit structure are not necessarily organized according to the figure of merit (FoM) being optimized. This paper introduces Test-Time Analog Representation Adaptation for Bayesian Optimization (TTARO), an online deep-kernel BO framework that adapts circuit representations throughout the search process. Starting from pretrained circuit embeddings, TTARO jointly learns a nonlinear feature transformation and a Gaussian-process surrogate using the FoM labels of the circuits evaluated so far. Following each new evaluation, TTARO updates the representation and surrogate before selecting the next candidate. We compare TTARO with conventional Gaussian Process-based BO over fixed embeddings and with Deep Kernel Learning (DKL), which learns the representation only from the initial evaluated designs and keeps it fixed throughout the remainder of the search. By continually incorporating newly observed FoM labels into representation learning, TTARO aligns the search space with the optimization objective as BO progresses. In our experiments, TTARO reduces regret AUC by 15.2% on average relative to BO and by 20.7% relative to DKL across 40 encoder/kernel/acquisition settings, outperforming prior art in most settings with reductions as large as 46.7%.",
+    "status": "found"
+  },
+  "2608.12688": {
+    "arxiv_id": "2608.12688",
+    "title": "Stochastic Mixed-Integer Optimization of Dynamic Electricity Tariffs with Consumer Protection",
+    "authors": [
+      "Ananya Kale",
+      "Mohit Apte",
+      "Chhaya Gosavi"
+    ],
+    "submission_date": "2026-08-13T01:11:15Z",
+    "latest_updated": "2026-08-13T01:11:15Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12688v1"
+    ],
+    "abstract": "Day-ahead residential tariffs must be posted before demand is observed. Aggressive high prices can cut peaks in simulation, but they can also raise customer bills. This paper measures how much peak reduction is lost when a tariff design problem is required to keep revenue near a flat-tariff baseline and to limit bill increases. Using half-hourly data from 5,566 Low Carbon London households (167.8 million validated readings), we estimate quasi-experimental price response against the standard-tariff comparison group, form bootstrap demand scenarios, and solve stochastic mixed-integer programs with HiGHS. On all 73 eligible held-out test days, a segment-protected stochastic tariff reduces simulated peak demand by 2.29% on average (95% day-bootstrap CI [2.11, 2.48]), with revenue change -2.26% and mean worst-segment bill increase 2.48%. Removing the segment bill cap raises peak reduction only to 2.37%, while the worst segment bill increase rises to 6.81%: in this sample, substantial average protection costs little peak-shaving performance. The same schedules leave a household 95th-percentile bill increase of 8.61% (CVaR95 14.76%), so segment-average caps do not bound household tails. We report the full price-of-protection frontier under consistent household simulation and compare segment protection with a representative-household (tail-aware) variant: the latter cuts household p95 from 8.61% to 7.05% while changing mean peak reduction only from 2.29% to 2.28%. All optimized outcomes are model-based counterfactuals under an opt-in trial; wholesale costs are unavailable, so we do not optimize profit.",
+    "status": "found"
+  },
+  "2608.12689": {
+    "arxiv_id": "2608.12689",
+    "title": "Mr3D-VL: A generalist vision language foundation model for Multiparametric 3D Magnetic Resonance Imaging",
+    "authors": [
+      "Zhi Qiao",
+      "Xintong Wu",
+      "Yichu He",
+      "Feng Shi"
+    ],
+    "submission_date": "2026-08-13T01:12:34Z",
+    "latest_updated": "2026-08-13T01:12:34Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12689v1"
+    ],
+    "abstract": "Multi-parametric magnetic resonance imaging (mpMRI) is a cornerstone for brain tumor diagnosis and treatment, yet current AI models face critical limitations: their lack of natural language interaction and interpretability impedes spatial information integration and cross-modal reasoning required clinically. Key challenges arise from significant physical meaning differences across modalities, spatial misalignment due to scan intervals, and the need for complex multi-feature interpretation in tasks like glioma grading. While visual-language models (VLMs) show promise in cross-modal understanding, existing methods focus mainly on 2D image modeling, neglecting direct perception of 3D volumetric space. Although 3D VLMs have been proposed for report generation and feature alignment in 3D CT imaging, mpMRI applications demand collaborative inference across multiple imaging modalities-a requirement unmet by current solutions. To address this, we introduce Mr3D-VL, a dedicated visual-language foundation model for multi-parametric 3D MRI. With 4 billion parameters, it employs an unsupervised pre-trained shared 3D encoder and 4D rotational positional embedding for dual modality-spatial integration. Its cross-modal projection layer uses a multi-resolution feature implantation strategy to enhance feature perception across resolutions. Experimental results show significant improvements over existing 4B/7B/30B domain-specific and general-purpose models in text generation tasks, achieving a BERTScore of 0.856 for report generation, with question-answering accuracy at 0.713 and multiple-choice accuracy at 0.912.",
+    "status": "found"
+  },
+  "2608.12690": {
+    "arxiv_id": "2608.12690",
+    "title": "Algebraic constructions of point sequences with quasi-uniform two-dimensional projections",
+    "authors": [
+      "Takashi Goda"
+    ],
+    "submission_date": "2026-08-13T01:13:44Z",
+    "latest_updated": "2026-08-13T01:13:44Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12690v1"
+    ],
+    "abstract": "Motivated by sequential space-filling designs for computer experiments, we study algebraic constructions of extensible point sets in the $d$-dimensional unit cube whose two-dimensional coordinate projections are all quasi-uniform. Our two constructions share a common parametrization in terms of finite configurations of distinct rational directions on the projective line $\\mathbb{P}^1(\\mathbb{Q})$. First, using a cubic number field, we construct explicit Kronecker sequences for which the mesh ratios of all two-dimensional coordinate projections remain uniformly bounded over every initial segment of length $N\\ge 2$. Second, using a real quadratic field, a split prime, and a compatible $p$-adic embedding, we construct nested rank-1 lattice designs with the same uniform projection property at every nesting level. The proofs combine algebraic norm estimates with transference principles between simultaneous and dual Diophantine approximation, yielding lower bounds for the separation radii and upper bounds for the covering radii, both of optimal order in the number of points, uniformly over all coordinate pairs. We also investigate how the choice of rational projective coefficients affects the resulting mesh ratios. This leads to a minimax problem for finite configurations on $\\mathbb{P}^1(\\mathbb{Q})$, in which one seeks to minimize the maximum mesh ratio over all two-dimensional coordinate projections. These constructions provide extensible point sets with uniformly controlled bivariate geometry.",
+    "status": "found"
+  },
+  "2608.12691": {
+    "arxiv_id": "2608.12691",
+    "title": "Integrated Alchemical and Conformational Enhanced Sampling for Solvation Free Energy Calculations",
+    "authors": [
+      "Gabriela B. Correa",
+      "Charlles R. A. Abreu",
+      "Nisanth N. Nair",
+      "Mark E. Tuckerman"
+    ],
+    "submission_date": "2026-08-13T01:14:17Z",
+    "latest_updated": "2026-08-13T01:14:17Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12691v1"
+    ],
+    "abstract": "Accurate solvation free energies from molecular dynamics simulations require efficient sampling of coupled slow variables, including solvent coordinates, solute conformational modes, and the alchemical coordinate $λ$. Here, we develop a $λ$-dynamics framework that combines mass scaling, on-the-fly probability enhanced sampling (OPES), and driven adiabatic free energy dynamics (d-AFED) to address these sampling challenges within a unified protocol. For rigid organic solutes, Hamiltonian replica exchange with mass scaling is first used to quantify the effect of octanol solvent relaxation. Reducing all octanol atomic masses by a factor of ten accelerates convergence by more than fivefold while preserving equilibrium solvation free energies. These calculations then provide reference benchmarks for $λ$-OPES, a dual-bias $λ$-dynamics strategy that combines the \"standard\" and \"explore\" variants of OPES to promote transitions along the alchemical coordinate. This approach reaches convergence on timescales comparable to replica exchange, but without predefined $λ$ windows or multiple parallel simulations. For flexible $N$-acetyl amino-acid amide solutes, $λ$-OPES is coupled with d-AFED on selected backbone and side-chain dihedrals to enable simultaneous alchemical and conformational enhanced sampling. This combined strategy improves agreement with experimental octanol-water partition coefficients and reduces the mean absolute error from 0.75 log units with $λ$-OPES alone to 0.30 log units with $λ$-OPES-d-AFED. Overall, this work establishes an integrated enhanced sampling protocol for solvation free energy calculations across rigid organic solutes and flexible peptide-like solutes, and provides a foundation for the application of alchemical free energy methods to larger and more conformationally complex systems.",
+    "status": "found"
+  },
+  "2608.12692": {
+    "arxiv_id": "2608.12692",
+    "title": "TCAD Cryogenic Model Parameters Calibration based on 65 nm NMOS Experimental Data",
+    "authors": [
+      "Wesley Xi",
+      "Vikram Magendar",
+      "Alhaji A Sharka",
+      "Hiu Yung Wong"
+    ],
+    "submission_date": "2026-08-13T01:15:43Z",
+    "latest_updated": "2026-08-13T01:15:43Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12692v1"
+    ],
+    "abstract": "In this paper, 65 nm n-type Metal-Oxide-Semiconductor Field-Effect-Transistors (nMOSFETs) are taped out and measured at 292 K to 4.5 K. Technology Computer-Aided-Design (TCAD) model parameters are then calibrated to fit the simulation curves to experimental electrical curves. Transmission electron microscopy (TEM) is used to unveil the dimensions of the transistors to ensure accurate modeling. The experimental and simulation capacitance-voltage (CV) curves, drain current - gate voltage (IDVG) curves, and drain current - drain voltage (IDVD) curves are fitted well using the calibrated parameters. The major models calibrated are the Lucent model, which is comprised of an extended PhuMob model, Lombardi model for surface mobility, and the Hänsch high field mobility model. A band-tail model with adjusted band width is applied to fit the sub-threshold swings at all temperatures. The calibrated parameters are expected to be applicable to other technologies because TCAD models are not technology-specific. It is also found that, except for saturation velocity, no new temperature-dependent model is needed. The calibration process and fitting strategies are detailed and are expected to be applicable to calibrate other transistor types.",
+    "status": "found"
+  },
+  "2608.12693": {
+    "arxiv_id": "2608.12693",
+    "title": "Synchronous Observers Revisited for Runtime Verification of Lustre Using STL",
+    "authors": [
+      "Logan Kenwright",
+      "Partha Roop",
+      "Sobhan Chatterjee",
+      "Nathan Allen"
+    ],
+    "submission_date": "2026-08-13T01:17:11Z",
+    "latest_updated": "2026-08-13T01:17:11Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12693v1"
+    ],
+    "abstract": "Signal Temporal Logic (STL) is a popular formalism for the temporal safety properties of cyber-physical systems, most often used for runtime verification. In the synchronous family of languages, safety properties are instead expressed as synchronous observers, modules composed with a program for static verification, which are also runnable specifications suitable for runtime verification, though this use is rarely explored. We present a technique for compiling the synchronous fragment of STL (SSTL) into synchronous observers in the dataflow language Lustre. Unlike previous work, we allow arbitrary nesting of bounded SSTL properties via modular compilation, and admit a globally unbounded outer operator for online monitoring; the resulting observers serve both runtime verification and, as a by-product, static verification with the Kind2 model checker. We further contribute an interactive visualiser that renders a property's three-valued verdict over an editable trace, and evaluate on two case studies from the literature: a spring-mass system and a car-following cruise controller.",
+    "status": "found"
+  },
+  "2608.12694": {
+    "arxiv_id": "2608.12694",
+    "title": "Infrared imaging of thermally-driven jets and eddies in planetary-style laboratory turbulence",
+    "authors": [
+      "Cy S. David",
+      "Remy Monville",
+      "Daphne Lemasquerier",
+      "Lvcian Vltava",
+      "Jonathan M. Aurnou"
+    ],
+    "submission_date": "2026-08-13T01:18:30Z",
+    "latest_updated": "2026-08-13T01:18:30Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12694v1"
+    ],
+    "abstract": "This paper is associated with a poster winner of a 2025 American Physical Society's Division of Fluid Dynamics (DFD) Milton van Dyke Award for work presented at the DFD Gallery of Fluid Motion. The original poster is available online at the Gallery of Fluid Motion, at https://doi.org/10.1103/APS.DFD.2025.GFM.P012",
+    "status": "found"
+  },
+  "2608.12695": {
+    "arxiv_id": "2608.12695",
+    "title": "The Impact of Temporal Context Length and Encoding Strategies on Self-Supervised ECG Representation Learning",
+    "authors": [
+      "Ahmed Sameh",
+      "Ramzi Al-Sharawi",
+      "Yogatheesan Varatharajah"
+    ],
+    "submission_date": "2026-08-13T01:18:39Z",
+    "latest_updated": "2026-08-25T06:53:02Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.12695v1",
+      "2608.12695v2"
+    ],
+    "abstract": "Self-supervised electrocardiogram (ECG) models are often trained on a few seconds of ECG signal and, increasingly, on discretized token sequences. It remains unclear whether these choices sacrifice information needed for rhythm inference and longitudinal consistency in real-world ambulatory recordings. We present a controlled study on the Icentia11k single-lead dataset that varies (i) the input horizon (16 seconds, 1 minute, 5 minutes, and 10 minutes) and (ii) the front-end representation (continuous convolutional patch embeddings vs. fixed vector-quantized tokens), while holding the Transformer backbone and training protocol constant. Representations are assessed by downstream abnormal rhythm detection and by patient-level retrieval that probes cross-session stability. Our results show that increasing temporal context beyond 16-second snapshots yields stronger transfer and higher retrieval accuracy, with the strongest performance achieved by the 5- and 10-minute models, indicating improved capture of slow-varying rhythm dynamics and individual-specific structure. Across all evaluated horizons, continuous patch embeddings outperform discretized tokens, suggesting that quantization can discard clinically relevant waveform detail. These findings motivate ECG foundation models that emphasize extended context and continuous encoders for clinical prediction and similarity-based applications. Our code and pretrained models are publicly available at https://github.com/muha-0/ecg-ssl-representation-learning.",
+    "status": "found"
+  },
+  "2608.12696": {
+    "arxiv_id": "2608.12696",
+    "title": "An Evolving Leptonic Jet Model for Delayed Radio Flares in Neutrino Blazars",
+    "authors": [
+      "Alina Kochocki",
+      "Xavier Rodrigues",
+      "Nathan Whitehorn"
+    ],
+    "submission_date": "2026-08-13T01:19:38Z",
+    "latest_updated": "2026-08-13T01:19:38Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12696v1"
+    ],
+    "abstract": "The jets of blazar active galactic nuclei (AGN) are promising sites of hadron acceleration and subsequent neutrino production, owing to their extreme intrinsic power and high radiation density. Potential associations of IceCube neutrinos with blazars displaying delayed radio flares, such as TXS~0506+056 and PKS~1424+240, may support this scenario. However, the mechanisms and location of particle acceleration in the jet remain unclear. The 2017 IceCube event associated with TXS 0506+056 was concurrent with the initial peak of a flare in gamma rays, followed by a longer flare at radio frequencies peaking three years later. State-of-the-art single-zone radiative source models focus on the compact high-energy-emitting region, and thus fail to describe this subsequent radio enhancement. In this work, we model the time-domain multi-frequency evolution of TXS 0506+056 by considering electron emission along the physically extended jet. We couple a numerical particle interaction framework with a dynamic description of the temporal and spatial jet evolution down to the parsec scale. We fit the model to multi-wavelength data, including multi-frequency radio light curves. The results suggest that the parsec-scale jet meets a population of older, cooled electrons near the edge of the observable radio core, establishing a causal relation between the initial high-energy emission and trailing radio activity. This spatially and temporally resolved modeling approach can offer new insights into the physical conditions along the jet of flaring neutrino candidate blazars.",
+    "status": "found"
+  },
+  "2608.12697": {
+    "arxiv_id": "2608.12697",
+    "title": "Matrix-Driven Quartic Overhauser (QOVR) Surface Structural Framework: Continuity Limitations, Computer Graphics Algorithms, and Software Implementation",
+    "authors": [
+      "Hakan Üstünel"
+    ],
+    "submission_date": "2026-08-13T01:20:42Z",
+    "latest_updated": "2026-10-17T02:09:45Z",
+    "revised_dates": null,
+    "venue": "Symmetry 2026, 18(10), 1723",
+    "latest_version": 2,
+    "versions": [
+      "2608.12697v1",
+      "2608.12697v2"
+    ],
+    "abstract": "This study introduces the spatial and analytical construction of the Quartic Overhauser (QOVR) surface generation framework designed to address boundary alignment and localized shape modification constraints. This framework implements a variable-parameter fourth-degree novel matrix formulation to achieve parameter tracking across orthogonal coordinate axes. The analytical pipeline integrates directional spline blending functions with symmetric spatial control matrices, ensuring that internal knot vector variations allow localized surface adjustments while maintaining the position convergence of global edge boundaries. Computational verification confirms that while the current formulation satisfies explicit C^{0} positional closure and C^{1} tangent continuity conditions across the internal and boundary interfaces without triggering global curvature propagation, with edge joint separation, or wave-like artefacts, C^{2} curvature continuity is not maintained. As demonstrated by three-dimensional mesh models and colormap visualizations, the spatial intensity fields condense strictly within the immediate neighborhood of the modified element, verifying that the displacement effect decreases progressively as the distance from the perturbed control points increases. This explicit decoupling aligns with structural symmetry and boundary alignment across adjacent geometric patches, satisfying manufacturing and reverse engineering sealing requirements.",
+    "status": "found"
+  },
+  "2608.12698": {
+    "arxiv_id": "2608.12698",
+    "title": "Class Geometry as Supervision for Sample-Efficient Open-World Detection",
+    "authors": [
+      "Akash Rao",
+      "Zhou Chen",
+      "Revanth Reddy Palem",
+      "Udhav Ramachandran",
+      "Ruth Scimeca",
+      "Sathyanarayanan N. Aakur"
+    ],
+    "submission_date": "2026-08-13T01:20:47Z",
+    "latest_updated": "2026-08-13T01:20:47Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12698v1"
+    ],
+    "abstract": "Open-world object detection requires models to recognize known categories, reject unfamiliar objects, and incorporate new classes over time. This is especially challenging in scarce-data settings such as biomedical and scientific imaging, where rare categories may have only a few annotated examples and fine-grained classes differ by subtle morphology. Prototype-based detectors are natural for this regime, but they typically learn class prototypes as independent anchors, ignoring relational structure among classes. We propose class-geometry supervision (CGS), a general framework that constrains learned prototype or class-representation spaces to preserve visual or semantic class dissimilarities estimated from training data. CGS introduces a dissimilarity-preserving objective that aligns pairwise distances among learned class representations with a target class-geometry matrix while retaining the standard task loss. We instantiate the same objective across prototype recognition, few-shot biomedical object detection, open-set detection, novel-class insertion, and OWOD adaptation on COCO. Experiments show that CGS improves sample efficiency in recognition and ova detection, substantially strengthens novel-class insertion, and improves unknown recall on COCO while retaining much of the known-class detection performance. Ablations show that meaningful visual geometry provides the most reliable gains, while random geometry can help novel separation but is less consistent for few-shot detection. These results suggest that relational class geometry is an effective supervisory signal for building calibrated and extensible open-world detectors under limited supervision.",
+    "status": "found"
+  },
+  "2608.12699": {
+    "arxiv_id": "2608.12699",
+    "title": "SPURS: Massive Stars, Dense Gas, and Ly$α$ Escape in GN-z11 at $z = 10.6$",
+    "authors": [
+      "Zuyi Chen",
+      "Daniel P. Stark",
+      "Charlotte A. Mason",
+      "Peter Senchyna",
+      "Mengtao Tang",
+      "Keerthi Vasan G. C.",
+      "Lily Whitler",
+      "Adele Plat",
+      "Viola Gelli"
+    ],
+    "submission_date": "2026-08-13T01:22:49Z",
+    "latest_updated": "2026-08-19T15:39:04Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2608.12699v1",
+      "2608.12699v2",
+      "2608.12699v3"
+    ],
+    "abstract": "We present ultra-deep {\\it JWST} spectroscopy of GN-z11 ($z=10.6$) obtained through the SPURS Cycle 4 Large Program, providing the deepest rest-UV view yet obtained of a galaxy at $z>10$. GN-z11 was previously found to be nitrogen-enhanced with detectable Ly$α$. The SPURS spectrum reveals P-Cygni stellar wind features and broad He II emission that are jointly reproduced by stellar population models incorporating very massive stars (VMS; $>100\\,M_\\odot$) at low metallicity and young ages ($\\lesssim3$ Myr). We also detect a broad ($\\rm FWHM=1670$ km s$^{-1}$) component to N IV] $\\lambda1486$, now seen in several nitrogen emitters, potentially arising from dense WN-like winds or LBV-like outbursts associated with a population of VMS in a dense environment, though an AGN-driven wind cannot be excluded. In either scenario, this broad component may trace the gas producing GN-z11's nitrogen enhancement. Rest-UV absorption lines reveal a fast ($\\sim500$~km~s$^{-1}$), highly ionized outflow and a negligible neutral gas covering fraction. We resolve the weak Ly$α$ emission (EW=5.6 Å, $f_{\\rm esc,Lyα}=2.7$\\%), finding a broad red wing (44\\% of flux at $>500$ km s$^{-1}$) that should experience reduced IGM damping wing suppression and help explain Ly$α$ visibility at $z>10$. Fine-structure O I* $\\lambda1304$ emission indicates dense neutral gas near a subset of the ionizing sources, which may also scatter Ly$α$ to the large observed velocities. The weak low-ionization absorption favors a picture in which this dense neutral gas is confined to a compact nuclear region. Together, these results are consistent with a rapid burst of star formation building up the dense nuclear regions and surrounding clusters in GN-z11.",
+    "status": "found"
+  },
+  "2608.12700": {
+    "arxiv_id": "2608.12700",
+    "title": "A Contract-Grade Verifier for LLM-Generated GPU Kernels, and a Native Blackwell Backward for the Gated-Linear-Recurrence Family",
+    "authors": [
+      "Rishi Shah",
+      "Rishav Shrestha"
+    ],
+    "submission_date": "2026-08-13T01:25:56Z",
+    "latest_updated": "2026-08-17T20:55:05Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.12700v1",
+      "2608.12700v2"
+    ],
+    "abstract": "Systems that generate GPU kernels with language models report high correctness rates. Those rates come from a single loose test: run the kernel on a few random inputs at one fixed shape and accept it if the output is close to a reference. A kernel can pass that test and still be silently wrong. It can return an ordinary number where the true answer is a NaN or an infinity, differ from run to run, break when the shape changes, or accumulate in fp16 where the reference keeps an fp32 total. We build the instrument that checks correctness properly: a contract-grade verifier of twelve adversarial gates, each a property a correct kernel must satisfy, several of them tolerance-free, so no choice of threshold can explain a failure away. Aimed outward, the verifier audits 2,638 machine-generated kernels that a public system's own harness had already accepted as correct. It finds 39.5% broken beyond any tolerance argument and 62.1% carrying at least one violation. The field's standard test accepts 1,487 kernels the verifier rejects, against only 14 the other way. We defend the finding four independent ways: a 7/7 positive control, a threshold-calibration sweep, 98.5% agreement with the reference benchmark's own correctness code, and a stratified hand-audit. Aimed inward, the verifier judges a kernel of our own: the first native Blackwell tcgen05 training backward for the gated-linear-recurrence (GDN) family, including the reverse-state stage the field still runs on a fallback. We establish its correctness independently, against a double-precision oracle, and train five family members through it. The correctness signal behind reported progress in kernel generation is far weaker than the numbers suggest, and a set of tolerance-free contracts would close most of the gap.",
+    "status": "found"
+  },
+  "2608.12701": {
+    "arxiv_id": "2608.12701",
+    "title": "Sharp proper estimation of fixed-component Gaussian location mixtures in polynomial time",
+    "authors": [
+      "Hengzhi He",
+      "Guang Cheng"
+    ],
+    "submission_date": "2026-08-13T01:28:44Z",
+    "latest_updated": "2026-08-13T01:28:44Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12701v1"
+    ],
+    "abstract": "We consider a mixture of at most $k$ unit-covariance Gaussians in $\\mathbb{R}^d$ whose means belong to a fixed-radius ball, with no separation or minimum-weight condition. Doss, Wu, Yang and Zhou (2023) proved that the minimax Hellinger risk is of order $\\sqrt{d/n}\\wedge 1$ and constructed a proper polynomial-time estimator with the slower general bound $(d/n)^{1/4}$; obtaining the sharp rate in polynomial time for fixed $k\\geq 3$ was left open. We resolve this question. The key device is a moment-fiber range finder. A second-moment subspace controls the energy missed by projection. We then estimate finitely many one-free-index Hermite contractions. These vector-valued contractions recover every tensor component containing exactly one missed direction at the sharp $\\sqrt{d/n}$ scale. Every remaining term contains at least two missed factors and is therefore controlled by the residual second-moment energy. The resulting subspace has dimension depending only on $k$. Exhaustive moment fitting in this constant-dimensional space produces a proper mixture and, together with the dimension-free moment characterization of Gaussian mixtures, achieves the optimal Hellinger rate in polynomial arithmetic time for every fixed $k$.",
+    "status": "found"
+  },
+  "2608.12702": {
+    "arxiv_id": "2608.12702",
+    "title": "An Algebraic Method for Optimizing the State, Control, and Terminal State Weight Matrices for Optimal Feedback Control",
+    "authors": [
+      "Daegyun Choi",
+      "Donghoon Kim",
+      "James D. Turner"
+    ],
+    "submission_date": "2026-08-13T01:34:14Z",
+    "latest_updated": "2026-08-13T01:34:14Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12702v1"
+    ],
+    "abstract": "The necessary conditions for formulating optimal feedback control algorithms have been known for many years. Free parameters exist in the performance index in the form of state and control penalty and terminal state penalty matrices for tuning the performance of the optimally controlled system. The selection process is typically experimental and iterative. To generate the weight matrices for optimal feedback control algorithms, an optimization process is proposed. Typically, the optimization process for the weight matrices requires several numerical integration processes that are computationally expensive; this work overcomes the classical high computational cost by exploiting closed-form solutions for the time-varying Riccati matrix, state trajectories, state transition matrix, and the optimal performance index. Closed-form algebraic equations are used to generate all partial derivative calculations, and no numerical integration is required. The closed-form partial derivatives are used to generate analytic gradients for the optimization steps. The optimization strategy seeks to minimize the terminal state values for the feedback control problem. A numerical example is presented to demonstrate the effectiveness of the proposed optimization algorithm. The resulting computational procedures are expected to be broadly useful for control theory applications in science and engineering.",
+    "status": "found"
+  },
+  "2608.12703": {
+    "arxiv_id": "2608.12703",
+    "title": "Alignment Drift in Single-Model Speculative Decoding for ASR: Mechanism, Correction, and Cost",
+    "authors": [
+      "Xinyu Wang",
+      "Huapeng Zhou",
+      "Ziyu Zhao",
+      "Silin Meng",
+      "Ke Bai",
+      "Dongming Shen",
+      "Xiao-Wen Chang",
+      "Alex Smola"
+    ],
+    "submission_date": "2026-08-13T01:34:38Z",
+    "latest_updated": "2026-08-13T01:34:38Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12703v1"
+    ],
+    "abstract": "Speculative decoding speeds up generation by letting a cheap draft propose several tokens that a target model checks in one pass. In the single-model form, the draft is a lightweight module attached to the target rather than a separate model. Applying this design to Automatic Speech Recognition (ASR) introduces an extra problem. The draft can read the whole audio at every step, yet its proposals get worse as it runs on its own. Access is not localization. The accepted text keeps the transcript position explicit, but the draft must also track the changing audio position. In the primary matched comparison, per-step audio access changes the first proposal modestly but roughly doubles later-proposal acceptance. Fixed-width windows show that the audio position explains part of this gap. A correctly placed window recovers continuation, while an equally narrow window at the wrong position reduces it. Late-draft median error reaches 21 frames in the hardest reported condition, while target attention during verification stays within a 2-frame median. We test two ways to reduce this drift. The first reads the audio position from verification attention and uses it to guide the next draft round. It saves time only when the extra accepted tokens offset the readout cost. The second is AnchorDraft, which teaches the draft to track the audio position during training without changing the inference graph. The trained draft improves end-to-end speed at both tested target scales. These results show that ASR self-speculation depends on token prediction, audio-position tracking, and draft cost.",
+    "status": "found"
+  },
+  "2608.12704": {
+    "arxiv_id": "2608.12704",
+    "title": "Efficient Hessian-Free Methods for Multi-Objective Bilevel Optimization with Nonconvex Lower Level",
+    "authors": [
+      "Yicong Jiang",
+      "Feihu Huang"
+    ],
+    "submission_date": "2026-08-13T01:37:49Z",
+    "latest_updated": "2026-09-05T08:00:09Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2608.12704v1",
+      "2608.12704v2",
+      "2608.12704v3"
+    ],
+    "abstract": "Multi-objective bilevel optimization has wide applications in the AI area such as automated learning and multi-task meta-learning. Although recently some works have been begun to study the multi-objective bilevel optimization, the proposed methods rely on the (strongly) convex lower level problems. In fact, these multi-objective bilevel learning problems are generally nonconvex, and particularly their lower level problems are nonconvex. To fill this gap, we propose a class of Multi-Objective Moreau Envelope based Hessian-free Algorithms (MOMEHA) for the multi-objective bilevel learning problems with nonconvex lower level. Specifically, our method uses the Moreau envelope to relax the original problem into a multi-objective single-level optimization with an envelope constraint. In particular, our method retains computational advantages of being single-loop and Hessian-free in the multi-objective setting by incorporating a smooth weighted Tchebycheff scalarization. Furthermore, we propose a momentum-based variant of MOMEHA (i.e., MB-MOMEHA) method for the stochastic multi-objective bilevel learning problems. In theory, we provide the convergence properties of our algorithms under both deterministic and stochastic setting. Some experiments on few-shot meta-learning and neural architecture search demonstrate that our methods outperform the existing approaches in Pareto front, validating its effectiveness and robustness.",
+    "status": "found"
+  },
+  "2608.12705": {
+    "arxiv_id": "2608.12705",
+    "title": "Topological obstructions to geometric positivity and negativity on Calabi-Yau manifolds",
+    "authors": [
+      "Ping Li"
+    ],
+    "submission_date": "2026-08-13T01:38:42Z",
+    "latest_updated": "2026-08-13T01:38:42Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12705v1"
+    ],
+    "abstract": "We study whether the topology underlying a Calabi-Yau manifold can support natural geometric positivity or negativity structures. In even complex dimension $n \\geq 4$ (assuming $b_2=1$ when $n \\geq 6$), we strengthen a theorem of Oguiso-Peternell by proving that a Calabi-Yau manifold is not homeomorphic to a weak Fano $n$-fold. The same obstruction applies to Kähler manifolds with quasi-positive holomorphic sectional curvature. A transformation-group analogue excludes, in particular, symplectic manifolds admitting Hamiltonian circle actions with isolated fixed points. On the negative side, we show that the fundamental group of a Calabi-Yau manifold is not isomorphic to that of a Kähler hyperbolic manifold. Taken together, these results exhibit a common topological rigidity separating Calabi-Yau manifolds from several fundamental classes governed by geometric positivity or negativity.",
+    "status": "found"
+  },
+  "2608.12706": {
+    "arxiv_id": "2608.12706",
+    "title": "Scalar induced gravitational waves as probes of dark QCD",
+    "authors": [
+      "Wan-Zhe Feng",
+      "Ao Li",
+      "Jing-Zhi Zhou"
+    ],
+    "submission_date": "2026-08-13T01:38:52Z",
+    "latest_updated": "2026-08-13T01:38:52Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.12706v1"
+    ],
+    "abstract": "We investigate scalar induced gravitational waves (SIGWs) as probes of a dark QCD crossover. Motivated by twin Higgs and asymmetric twin baryon dark matter scenarios, we consider a dark QCD sector with a confinement scale approximately 5.5 times the Standard Model (SM) QCD scale. We construct the effective energy and entropy degrees of freedom for the SM supplemented by dark QCD sectors containing either three light dark quark flavors or all six dark quark flavors. The resulting equation of state parameter and sound speed are then used to solve the first-order scalar perturbations and the second-order SIGWs through the SM and dark QCD crossover epochs. For a monochromatic primordial curvature power spectrum, we first demonstrate that the realistic SM thermal history modifies the SIGW spectrum relative to the idealized radiation-dominated case. We then show that a dark QCD crossover generates an additional frequency-shifted distortion when the enhanced scalar mode reenters the horizon near the dark confinement scale. This distinctive feature can therefore serve as a characteristic signature of the dark QCD sector. Our results demonstrate that SIGWs provide a complementary cosmological probe of hidden confining sectors, with characteristic spectral features shifted to higher frequencies relative to the SM QCD imprint. The analysis developed in this work can also be extended to other well-motivated theories containing different dark confining sectors.",
+    "status": "found"
+  }
+}

@@ -1,0 +1,415 @@
+{
+  "2601.18696": {
+    "arxiv_id": "2601.18696",
+    "title": "Explainability Methods for Hardware Trojan Detection: A Systematic Comparison",
+    "authors": [
+      "Paul Whitten",
+      "Francis Wolff",
+      "Chris Papachristou"
+    ],
+    "submission_date": "2026-01-26T17:13:00Z",
+    "latest_updated": "2026-08-04T00:40:26Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 7,
+    "versions": [
+      "2601.18696v1",
+      "2601.18696v2",
+      "2601.18696v3",
+      "2601.18696v4",
+      "2601.18696v5",
+      "2601.18696v6",
+      "2601.18696v7"
+    ],
+    "abstract": "Hardware trojans are malicious circuits which compromise the functionality and security of an integrated circuit (IC). These circuits are manufactured directly into the silicon and cannot be fixed by security patches like software. The solution would require a costly product recall by replacing the IC and hence, early detection in the design process is essential. Hardware detection at best provides statistically based solutions with many false positives and false negatives. These detection methods require more thorough explainable analysis to filter out false indicators. Existing explainability methods developed for general domains like image classification do not always provide the actionable insights hardware engineers need. A question remains: how do domain-aware property analysis, model-agnostic case-based reasoning, and model-agnostic feature attribution techniques compare for hardware security applications? This work compares three categories of explainability for gate-level hardware trojan detection on the Trust-Hub benchmark dataset: (1) domain-aware property-based analysis of 31 circuit-specific features derived from gate fanin patterns, flip-flop distances, and primary Input/Output (I/O) connectivity; (2) model-agnostic case-based reasoning using k-nearest neighbors for precedent-based explanations; and (3) model-agnostic feature attribution methods (Local Interpretable Model-agnostic Explanations (LIME), SHapley Additive exPlanations (SHAP), gradient) that provide generic importance scores without circuit-level context.",
+    "status": "found"
+  },
+  "2601.18697": {
+    "arxiv_id": "2601.18697",
+    "title": "Bridging Instead of Replacing Online Coding Communities with AI through Community-Enriched Chatbot Designs",
+    "authors": [
+      "Junling Wang",
+      "Lahari Goswami",
+      "Gustavo Kreia Umbelino",
+      "Kiara Chau",
+      "Mrinmaya Sachan",
+      "April Yi Wang"
+    ],
+    "submission_date": "2026-01-26T17:14:05Z",
+    "latest_updated": "2026-01-28T17:06:18Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.18697v1",
+      "2601.18697v2"
+    ],
+    "abstract": "LLM-based chatbots like ChatGPT have become popular tools for assisting with coding tasks. However, they often produce isolated responses and lack mechanisms for social learning or contextual grounding. In contrast, online coding communities like Kaggle offer socially mediated learning environments that foster critical thinking, engagement, and a sense of belonging. Yet, growing reliance on LLMs risks diminishing participation in these communities and weakening their collaborative value. To address this, we propose Community-Enriched AI, a design paradigm that embeds social learning dynamics into LLM-based chatbots by surfacing user-generated content and social design feature from online coding communities. Using this paradigm, we implemented a RAG-based AI chatbot leveraging resources from Kaggle to validate our design. Across two empirical studies involving 28 and 12 data science learners, respectively, we found that Community-Enriched AI significantly enhances user trust, encourages engagement with community, and effectively supports learners in solving data science tasks. We conclude by discussing design implications for AI assistance systems that bridge -- rather than replace -- online coding communities.",
+    "status": "found"
+  },
+  "2601.18698": {
+    "arxiv_id": "2601.18698",
+    "title": "Are Video Generation Models Geographically Fair? An Attraction-Centric Evaluation of Global Visual Knowledge",
+    "authors": [
+      "Xiao Liu",
+      "Jiawei Zhang"
+    ],
+    "submission_date": "2026-01-26T17:14:57Z",
+    "latest_updated": "2026-01-26T17:14:57Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.18698v1"
+    ],
+    "abstract": "Recent advances in text-to-video generation have produced visually compelling results, yet it remains unclear whether these models encode geographically equitable visual knowledge. In this work, we investigate the geo-equity and geographically grounded visual knowledge of text-to-video models through an attraction-centric evaluation. We introduce Geo-Attraction Landmark Probing (GAP), a systematic framework for assessing how faithfully models synthesize tourist attractions from diverse regions, and construct GEOATTRACTION-500, a benchmark of 500 globally distributed attractions spanning varied regions and popularity levels. GAP integrates complementary metrics that disentangle overall video quality from attraction-specific knowledge, including global structural alignment, fine-grained keypoint-based alignment, and vision-language model judgments, all validated against human evaluation. Applying GAP to the state-of-the-art text-to-video model Sora 2, we find that, contrary to common assumptions of strong geographic bias, the model exhibits a relatively uniform level of geographically grounded visual knowledge across regions, development levels, and cultural groupings, with only weak dependence on attraction popularity. These results suggest that current text-to-video models express global visual knowledge more evenly than expected, highlighting both their promise for globally deployed applications and the need for continued evaluation as such systems evolve.",
+    "status": "found"
+  },
+  "2601.18699": {
+    "arxiv_id": "2601.18699",
+    "title": "Mechanistic Analysis of Catastrophic Forgetting in Large Language Models During Continual Fine-tuning",
+    "authors": [
+      "Gustav Olaf Yunus Laitinen-Fredriksson Lundstrom-Imanov"
+    ],
+    "submission_date": "2026-01-26T17:15:10Z",
+    "latest_updated": "2026-06-13T16:39:39Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.18699v1",
+      "2601.18699v2"
+    ],
+    "abstract": "Sequential fine-tuning of Large Language Models (LLMs) adaptation to target tasks often triggers catastrophic forgetting, where the acquisition of novel target skills degrades ancestral capabilities. This paper presents a systematic comparative study of catastrophic forgetting across twenty premier models representing the state-of-the-art in mid-2026. We categorize our investigation into two primary research lines: (i) a behavioral and semantic output drift analysis of ten leading closed-source models (including Claude Fable 5, GPT-5.5 High, and Gemini 3.5 Flash), and (ii) a deep mechanistic interpretation of ten prominent open-weight architectures (such as DeepSeek-V4-Pro, Llama 4 Maverick, and Qwen 3.6-27B). Through weight-space trajectory tracking, Centered Kernel Alignment (CKA), and routing gate drift calculations in Mixture-of-Experts (MoE) layers, we localize the neural circuits highly susceptible to parameter overwriting. Our findings indicate that early-layer attention heads exhibit systemic entropic dispersion, while mid-to-deep feed-forward networks (or sparse expert blocks) suffer localized representation collapse. Informed by these insights, we introduce Low-Rank Circuit Projection (LRCP), a subspace-regularized training intervention. Empirical evaluations show that LRCP successfully mitigates up to 94.2% of ancestral capabilities in open-weight configurations and matches the adaptation velocity of standard PEFT baselines.",
+    "status": "found"
+  },
+  "2601.18700": {
+    "arxiv_id": "2601.18700",
+    "title": "TEA-Bench: A Systematic Benchmarking of Tool-enhanced Emotional Support Dialogue Agent",
+    "authors": [
+      "Xingyu Sui",
+      "Yanyan Zhao",
+      "Yulin Hu",
+      "Jiahe Guo",
+      "Weixiang Zhao",
+      "Bing Qin"
+    ],
+    "submission_date": "2026-01-26T17:15:27Z",
+    "latest_updated": "2026-05-08T02:15:03Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.18700v1",
+      "2601.18700v2"
+    ],
+    "abstract": "Emotional Support Conversation requires not only affective expression but also grounded instrumental support to provide trustworthy guidance. However, existing ESC systems and benchmarks largely focus on affective support in text-only settings, overlooking how external tools can enable factual grounding and reduce hallucination in multi-turn emotional support. We introduce TEA-Bench, the first interactive benchmark for evaluating tool-augmented agents in ESC, featuring realistic emotional scenarios, an MCP-style tool environment, and process-level metrics that jointly assess the quality and factual grounding of emotional support. Experiments on nine LLMs show that tool augmentation generally improves emotional support quality and reduces hallucination, but the gains are strongly capacity-dependent: stronger models use tools more selectively and effectively, while weaker models benefit only marginally. We further release TEA-Dialog, a dataset of tool-enhanced ESC dialogues, and find that supervised fine-tuning improves in-distribution support but generalizes poorly. Our results underscore the importance of tool use in building reliable emotional support agents. Our code and data can be found in https://github.com/XingYuSSS/TEA-Bench.",
+    "status": "found"
+  },
+  "2601.18701": {
+    "arxiv_id": "2601.18701",
+    "title": "Hyperkähler bases for six rational bordism theories",
+    "authors": [
+      "Jonathan Buchanan",
+      "Arun Debray",
+      "Cameron Krulewski",
+      "Stephen McKean"
+    ],
+    "submission_date": "2026-01-26T17:20:42Z",
+    "latest_updated": "2026-01-26T17:20:42Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.18701v1"
+    ],
+    "abstract": "We use tori and Hilbert schemes of K3 surfaces to construct explicit bases for the real, complex, and quaternionic versions of rational symplectic and rational Spin bordism. The key input to our work is a theorem of Oberdieck, Song, and Voisin on the Milnor genus of Hilbert schemes of K3s.",
+    "status": "found"
+  },
+  "2601.18702": {
+    "arxiv_id": "2601.18702",
+    "title": "From Fuzzy to Exact: The Halo Architecture for Infinite-Depth Reasoning via Rational Arithmetic",
+    "authors": [
+      "Hansheng Ren"
+    ],
+    "submission_date": "2026-01-26T17:24:34Z",
+    "latest_updated": "2026-10-20T19:26:19Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 5,
+    "versions": [
+      "2601.18702v1",
+      "2601.18702v2",
+      "2601.18702v3",
+      "2601.18702v4",
+      "2601.18702v5"
+    ],
+    "abstract": "The prevailing scaling paradigm of Large Language Models (LLMs) rests on a substrate of \"Fuzzy\" floating-point arithmetic. To mitigate the inherent instability of this approximate foundation, modern architectures have erected a complex scaffolding of structural and numerical heuristics--Complex Residuals, Pre-RMSNorm, Attention Scaling, and Gradient Clipping--consuming significant compute solely to prevent numerical collapse. We propose a paradigm shift to the \"Exact\". We introduce the Halo Architecture, grounded in the Rational Field (Q) and powered by a custom Exact Inference Unit (EIU). To resolve the exponential bit-width growth of rational arithmetic, Halo employs a Dual-Ring Topology that unifies two complementary control mechanisms: (1) The Micro-Ring (Continuum Maintenance), which strictly bounds memory complexity via Diophantine Approximation; and (2) The Macro-Ring (Symbolic Alignment), which enforces logical consistency via periodic state collapse. This stable dual-ring substrate allows for the \"Great Dismantling\" of numerical scaffolding, reducing the Transformer block to its \"Clean\" algebraic form (Tabula Rasa). Furthermore, we verify the \"Efficiency Paradox\": the elimination of gradient noise (sigma -> 0) allows for Macro-Learning Rates, potentially reducing the Total Time-to-Convergence by orders of magnitude. Halo demonstrates that General Intelligence requires the hybridization of continuous fields and discrete chains under a rigorous mathematical framework.",
+    "status": "found"
+  },
+  "2601.18703": {
+    "arxiv_id": "2601.18703",
+    "title": "Chemotaxis-inspired PDE models of airborne infectious disease transmission: epidemiologically-motivated mathematical and numerical analyses",
+    "authors": [
+      "Alex Viguerie",
+      "Malú Grave",
+      "Alvaro L. G. A. Coutinho",
+      "Alessandro Veneziani",
+      "Thomas J. R. Hughes"
+    ],
+    "submission_date": "2026-01-26T17:25:09Z",
+    "latest_updated": "2026-01-26T17:25:09Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.18703v1"
+    ],
+    "abstract": "Partial differential equation (PDE) models for infectious diseases, while less common than their ordinary differential equation (ODE) counterparts, have found successful applications for many years. Such models are typically of reaction-diffusion type, and model spatial propagation as a diffusive process. However, given the complex nature of human mobility, such models are limited in their ability to describe airborne infectious diseases in human populations. Recent work has advocated for the inclusion of an additional chemotaxis-type term as an alternative; spatial propagation of infection fronts is assumed additionally to flow from low-to-high concentrations of susceptible populations. The present work extends the study of such models by providing an epidemiologically interpretable analysis, directly connecting model behavior to information readily available to policymakers. In particular, we derive a spatially-aware basic reproduction number, which accounts for spatial heterogeneity in population density. Furthermore, we discuss several important aspects concerning the numerical solution of the model, including the introduction of a stabilization scheme. Finally, we perform a series of simulation studies in the Italian region of Lombardy (severely affected by the COVID-19 outbreak in 2020) and in the US state of Georgia, in which we demonstrate the model's potential to better capture important spatiotemporal dynamics observed in real-world data compared to pure reaction-diffusion models.",
+    "status": "found"
+  },
+  "2601.18704": {
+    "arxiv_id": "2601.18704",
+    "title": "Data-Driven Qubit Characterization and Optimal Control using Deep Learning",
+    "authors": [
+      "Paul Surrey",
+      "Julian D. Teske",
+      "Tobias Hangleiter",
+      "Hendrik Bluhm",
+      "Pascal Cerfontaine"
+    ],
+    "submission_date": "2026-01-26T17:26:20Z",
+    "latest_updated": "2026-01-26T17:26:20Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.18704v1"
+    ],
+    "abstract": "Quantum computing requires the optimization of control pulses to achieve high-fidelity quantum gates. We propose a machine learning-based protocol to address the challenges of evaluating gradients and modeling complex system dynamics. By training a recurrent neural network (RNN) to predict qubit behavior, our approach enables efficient gradient-based pulse optimization without the need for a detailed system model. First, we sample qubit dynamics using random control pulses with weak prior assumptions. We then train the RNN on the system's observed responses, and use the trained model to optimize high-fidelity control pulses. We demonstrate the effectiveness of this approach through simulations on a single $ST_0$ qubit.",
+    "status": "found"
+  },
+  "2601.18705": {
+    "arxiv_id": "2601.18705",
+    "title": "Efficient SN-like and PN-like Dynamic Low Rank methods for Thermal Radiative Transfer",
+    "authors": [
+      "Terry Haut",
+      "John Loffeld",
+      "Lukas Einkemmer",
+      "Pierson Guthrey",
+      "Stefan Brunner",
+      "William Schill"
+    ],
+    "submission_date": "2026-01-26T17:32:02Z",
+    "latest_updated": "2026-01-26T17:32:02Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.18705v1"
+    ],
+    "abstract": "Dynamic Low Rank (DLR) methods are a promising way to reduce the computational cost and memory footprint of the high-dimensional thermal radiative transfer (TRT) equations. The TRT equations are a system of nonlinear PDEs that model the energy exhchange between the material temperature and the radiation energy density; due to their high dimensionality, solving the TRT equations is often bottleneck in multi-physics simulations. DLR methods represent the solution in terms of time-evolving SVD-like factors of angle and space. Although previous work has explored DLR methods for TRT, most of the methods have limitations that make them impractical for realistic scenarios and uncompetitive with current non-DLR production codes. Here we develop new PN-like and SN-like Dynamic Low Rank (DLR) methods for TRT. In the SN-like DLR method, we use the time-evolving angular basis functions to select time-evolving angles; this DLR formulation enables us to use the highly optimized SN transport sweep as our main computational kernel, and results in a practical way of leveraging low-rank methods in production TRT codes. In contrast, our PN-like DLR method uses an even-parity formulation and results in positive-definite linear systems to solve for each time step. We demonstrate the methods on several challenging, highly heterogenous problems in two spatial dimensions $(4$D) that these DLR schemes can give significant reduction in angular artifacts (``ray effects'') with the same cost as gold-standard SN methods.",
+    "status": "found"
+  },
+  "2601.18706": {
+    "arxiv_id": "2601.18706",
+    "title": "Health-SCORE: Towards Scalable Rubrics for Improving Health-LLMs",
+    "authors": [
+      "Zhichao Yang",
+      "Sepehr Janghorbani",
+      "Dongxu Zhang",
+      "Jun Han",
+      "Qian Qian",
+      "Andrew Ressler",
+      "Gregory D. Lyng",
+      "Sanjit Singh Batra",
+      "Robert E. Tillman"
+    ],
+    "submission_date": "2026-01-26T17:34:10Z",
+    "latest_updated": "2026-01-26T17:34:10Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.18706v1"
+    ],
+    "abstract": "Rubrics are essential for evaluating open-ended LLM responses, especially in safety-critical domains such as healthcare. However, creating high-quality and domain-specific rubrics typically requires significant human expertise time and development cost, making rubric-based evaluation and training difficult to scale. In this work, we introduce Health-SCORE, a generalizable and scalable rubric-based training and evaluation framework that substantially reduces rubric development costs without sacrificing performance. We show that Health-SCORE provides two practical benefits beyond standalone evaluation: it can be used as a structured reward signal to guide reinforcement learning with safety-aware supervision, and it can be incorporated directly into prompts to improve response quality through in-context learning. Across open-ended healthcare tasks, Health-SCORE achieves evaluation quality comparable to human-created rubrics while significantly lowering development effort, making rubric-based evaluation and training more scalable.",
+    "status": "found"
+  },
+  "2601.18707": {
+    "arxiv_id": "2601.18707",
+    "title": "SMART: Scalable Mesh-free Aerodynamic Simulations from Raw Geometries using a Transformer-based Surrogate Model",
+    "authors": [
+      "Jan Hagnberger",
+      "Mathias Niepert"
+    ],
+    "submission_date": "2026-01-26T17:34:16Z",
+    "latest_updated": "2026-06-12T08:14:43Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.18707v1",
+      "2601.18707v2"
+    ],
+    "abstract": "Machine learning-based surrogate models have emerged as more efficient alternatives to numerical solvers for physical simulations over complex geometries, such as car bodies. Many existing models incorporate the simulation mesh as an additional input, thereby reducing prediction errors. However, generating a simulation mesh for new geometries is computationally costly. In contrast, mesh-free methods, which do not rely on the simulation mesh, typically incur higher errors. Motivated by these considerations, we introduce SMART, a neural surrogate model that predicts physical quantities at arbitrary query locations using only a point-cloud representation of the geometry, without requiring access to the simulation mesh. The geometry and simulation parameters are encoded into a shared latent space that captures both structural and parametric characteristics of the physical field. A physics decoder then attends to the encoder's intermediate latent representations to map spatial queries to physical quantities. Through this cross-layer interaction, the model jointly updates latent geometric features and the evolving physical field. Extensive experiments show that SMART is competitive with and often outperforms existing methods that rely on the simulation mesh as input, demonstrating its capabilities for industry-level simulations.",
+    "status": "found"
+  },
+  "2601.18708": {
+    "arxiv_id": "2601.18708",
+    "title": "Ultra-fast growth of primordial black holes through radiative absorption",
+    "authors": [
+      "Dimitris S. Kallifatides",
+      "Theodoros Papanikolaou",
+      "Emmanuel N. Saridakis"
+    ],
+    "submission_date": "2026-01-26T17:34:46Z",
+    "latest_updated": "2026-01-26T17:34:46Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.18708v1"
+    ],
+    "abstract": "We show that Schwarzschild primordial black holes (PBHs) formed in the radiation-dominated era can grow extremely rapidly through $\\textit{radiative absorption}$ governed by the full Stefan-Boltzmann law. By introducing a principle of isonomy - ensuring identical particle species dependence for Hawking emission and absorption - we find that, whenever the temperature of the PBH environment is larger than the PBH horizon temperature, PBHs generically gain mass. In particular, for PBH masses following the critical collapse mass-scaling law with critical exponent $γ_\\mathrm{crit}$, with $γ_\\mathrm{crit} \\in (0.33, 0.49)$, the aforementioned radiative absorption mass growth mechanism produces a striking effect: PBHs forming with a mass $10^6M_\\odot$ during BBN can reach $\\mathcal{O}(10^{10} M_\\odot)$ within $\\mathcal{O}(10^{6} \\mathrm{s})$ ($\\sim $ 58 days). Interestingly enough, small deviations from $γ_\\mathrm{crit}$, depending itself on the number of relativistic species present in the primordial plasma, yield a continuous PBH mass spectrum providing us ultimately with a single, Standard-Model-based explanation for the origin of stellar-mass, intermediate-mass, and supermassive black holes (SMBHs), and naturally accounting for the early appearance of SMBHs. The Schwarzschild treatment presented here can be extended to spherically symmetric cosmological black holes, indicating that radiative absorption is a dominant and previously overlooked PBH growth channel in the early Universe.",
+    "status": "found"
+  },
+  "2601.18709": {
+    "arxiv_id": "2601.18709",
+    "title": "Weight modules for quantum symmetric pair subalgebras",
+    "authors": [
+      "Catharina Stroppel",
+      "Liao Wang"
+    ],
+    "submission_date": "2026-01-26T17:36:01Z",
+    "latest_updated": "2026-01-26T17:36:01Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.18709v1"
+    ],
+    "abstract": "We develop a theory of weights for a quantum analogue of the symmetric pair (gl4,gl2 x gl2) realised as a quantum symmetric pair subalgebra. Based on Letzter's triangular decomposition we define Verma modules. Using magical operators that are compatible with weight spaces, we classify weight Verma modules and characterise their irreducible finite dimensional quotients. We then prove the existence of weight bases in tensor products by explicitly constructing some highest weight vectors. These constructions allow us to mimic the important aspects of the classical finite dimensional representation theory. Applications include a definition of rational representations, the BGG resolution, a Clebsch--Gordan formula, the Harish-Chandra isomorphism and central characters, as well as a classification and description of all irreducible polynomial representations.",
+    "status": "found"
+  },
+  "2601.18710": {
+    "arxiv_id": "2601.18710",
+    "title": "Analyzing Images of Blood Cells with Quantum Machine Learning Methods: Equilibrium Propagation and Variational Quantum Circuits to Detect Acute Myeloid Leukemia",
+    "authors": [
+      "A. Bano",
+      "L. Liebovitch"
+    ],
+    "submission_date": "2026-01-26T17:36:19Z",
+    "latest_updated": "2026-01-26T17:36:19Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.18710v1"
+    ],
+    "abstract": "This paper presents a feasibility study demonstrating that quantum machine learning (QML) algorithms achieve competitive performance on real-world medical imaging despite operating under severe constraints. We evaluate Equilibrium Propagation (EP), an energy-based learning method that does not use backpropagation (incompatible with quantum systems due to state-collapsing measurements) and Variational Quantum Circuits (VQCs) for automated detection of Acute Myeloid Leukemia (AML) from blood cell microscopy images using binary classification (2 classes: AML vs. Healthy). Key Result: Using limited subsets (50-250 samples per class) of the AML-Cytomorphology dataset (18,365 expert-annotated images), quantum methods achieve performance only 12-15% below classical CNNs despite reduced image resolution (64x64 pixels), engineered features (20D), and classical simulation via Qiskit. EP reaches 86.4% accuracy (only 12% below CNN) without backpropagation, while the 4-qubit VQC attains 83.0% accuracy with consistent data efficiency: VQC maintains stable 83% performance with only 50 samples per class, whereas CNN requires 250 samples (5x more data) to reach 98%. These results establish reproducible baselines for QML in healthcare, validating NISQ-era feasibility.",
+    "status": "found"
+  },
+  "2601.18711": {
+    "arxiv_id": "2601.18711",
+    "title": "There is no Definable Grauert Direct Image Theorem",
+    "authors": [
+      "Hélène Esnault",
+      "Moritz Kerz"
+    ],
+    "submission_date": "2026-01-26T17:36:47Z",
+    "latest_updated": "2026-02-12T19:42:07Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.18711v1",
+      "2601.18711v2"
+    ],
+    "abstract": "We prove the claim in the title by showing that a definable Grauert Direct Image Theorem in o-minimal geometry would imply a weak representability-like property of the definable Picard functor. However, this weak representability cannot hold because of the Definable Chow Theorem of Peterzil and Starchenko. v2: small typos corrected.",
+    "status": "found"
+  },
+  "2601.18712": {
+    "arxiv_id": "2601.18712",
+    "title": "Giant Resonant Enhancement of Photoinduced Dynamical Cooper Pairing, far above $T_c$",
+    "authors": [
+      "Sambuddha Chattopadhyay",
+      "Marios Michael",
+      "Andrea Cavalleri",
+      "Eugene Demler"
+    ],
+    "submission_date": "2026-01-26T17:38:44Z",
+    "latest_updated": "2026-01-26T17:38:44Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.18712v1"
+    ],
+    "abstract": "Pump-probe experiments performed on $\\mathrm{K}_3\\mathrm{C}_{60}$ have unveiled both optical and transport signatures of metastable light-induced superconductivity up to room temperature, far above $T_c$. Recent experiments have uncovered that excitation in the vicinity of $50 ~\\textrm{meV}$ enables the observation of high temperature light-induced superconductivity at significantly lower fluences. Inspired by these experiments we develop a mechanism which can explain such a giant resonant enhancement of light-induced superconductivity. Within a minimal non-linear Holstein model, we show that resonantly driving optical Raman modes leads to a time-dependent electron-phonon coupling. Such a coupling then modulates the effective electron-electron attraction, with the strongest modulations occurring when the drive is resonant with the phonon frequency. These dynamical modulations of the pairing interactions lead to Floquet-BCS instabilities at temperatures far exceeding equilibrium $T_c$, as observed in experiments. We conclude by discussing the implications of our general analysis on the $\\mathrm{K}_3\\mathrm{C}_{60}$ experiments specifically and suggesting experimental signatures of our mechanism.",
+    "status": "found"
+  },
+  "2601.18713": {
+    "arxiv_id": "2601.18713",
+    "title": "Point transformer for protein structural heterogeneity analysis using CryoEM",
+    "authors": [
+      "Muyuan Chen",
+      "Muchen Li",
+      "Renjie Liao"
+    ],
+    "submission_date": "2026-01-26T17:38:52Z",
+    "latest_updated": "2026-01-26T17:38:52Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.18713v1"
+    ],
+    "abstract": "Structural dynamics of macromolecules is critical to their structural-function relationship. Cryogenic electron microscopy (CryoEM) provides snapshots of vitrified protein at different compositional and conformational states, and the structural heterogeneity of proteins can be characterized through computational analysis of the images. For protein systems with multiple degrees of freedom, it is still challenging to disentangle and interpret the different modes of dynamics. Here, by implementing Point Transformer, a self-attention network designed for point cloud analysis, we are able to improve the performance of heterogeneity analysis on CryoEM data, and characterize the dynamics of highly complex protein systems in a more human-interpretable way.",
+    "status": "found"
+  },
+  "2601.18714": {
+    "arxiv_id": "2601.18714",
+    "title": "Low Cost, High Efficiency: LiDAR Place Recognition in Vineyards with Matryoshka Representation Learning",
+    "authors": [
+      "Judith Vilella-Cantos",
+      "Mauro Martini",
+      "Marcello Chiaberge",
+      "Mónica Ballesta",
+      "David Valiente"
+    ],
+    "submission_date": "2026-01-26T17:38:56Z",
+    "latest_updated": "2026-04-22T18:34:25Z",
+    "revised_dates": null,
+    "venue": "Ecological Informatics, Volume 95, 2026, 103780, ISSN 1574-9541",
+    "latest_version": 2,
+    "versions": [
+      "2601.18714v1",
+      "2601.18714v2"
+    ],
+    "abstract": "Localization in agricultural environments is challenging due to their unstructured nature and lack of distinctive landmarks. Although agricultural settings have been studied in the context of object classification and segmentation, the place recognition task for mobile robots is not trivial in the current state of the art. In this study, we propose MinkUNeXt-VINE, a lightweight, deep-learning-based method that surpasses state-of-the-art methods in vineyard environments thanks to its pre-processing and Matryoshka Representation Learning multi-loss approach. Our method prioritizes enhanced performance with low-cost, sparse LiDAR inputs and lower-dimensionality outputs to ensure high efficiency in real-time scenarios. Additionally, we present a comprehensive ablation study of the results on various evaluation cases and two extensive long-term vineyard datasets employing different LiDAR sensors. The results demonstrate the efficiency of the trade-off output produced by this approach, as well as its robust performance on low-cost and low-resolution input data. The code is publicly available for reproduction.",
+    "status": "found"
+  },
+  "2601.18715": {
+    "arxiv_id": "2601.18715",
+    "title": "Additive sink subtraction",
+    "authors": [
+      "Anjali Bhagat",
+      "Urban Larsson",
+      "Hikaru Manabe",
+      "Takahiro Yamashita"
+    ],
+    "submission_date": "2026-01-26T17:38:56Z",
+    "latest_updated": "2026-03-16T19:23:36Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2601.18715v1",
+      "2601.18715v2",
+      "2601.18715v3"
+    ],
+    "abstract": "Subtraction games are a classical topic in Combinatorial Game Theory. A result of Golomb~(1966) shows that every subtraction game with a finite move set has an eventually periodic nim-sequence, but the known proof yields only an exponential upper bound on the period length. Flammenkamp~(1997) conjectures a striking classification for three-move subtraction games: non-additive rulesets exhibit linear period lengths of the form ``the sum of two moves'', where the choice of which two moves displays fractal-like behavior, while additive sets $S=\\{a,b,a+b\\}$ have purely periodic outcomes with linear or quadratic period lengths. Despite early attention in Winning Ways~(1982), the general additive case remains open. We introduce and analyze a dual winning convention, which we call {\\sc sink subtraction}. Unlike the standard {\\em wall} convention, where moves to negative positions are forbidden, the sink convention declares a player the winner upon moving to a non-positive position. We show that {\\sc additive sink subtraction} admits a complete solution: the nim-sequence is purely periodic with an explicit linear or quadratic period formula, and we conjecture a duality between additive sink subtraction and classical wall subtraction. Keywords: Additive Subtraction Game, Nimber, Periodicity, Sink Convention.",
+    "status": "found"
+  }
+}

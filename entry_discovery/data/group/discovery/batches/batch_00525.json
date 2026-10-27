@@ -1,0 +1,461 @@
+{
+  "2608.09507": {
+    "arxiv_id": "2608.09507",
+    "title": "Learning Preference Adaptation for Large Language Model Personalization via Verbal Reinforcement Learning",
+    "authors": [
+      "Yuting Liu",
+      "Wei Wu",
+      "Jianzhe Zhao",
+      "Guibing Guo"
+    ],
+    "submission_date": "2026-08-10T12:11:47Z",
+    "latest_updated": "2026-08-12T10:18:53Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.09507v1",
+      "2608.09507v2"
+    ],
+    "abstract": "Natural language user preferences provide an interpretable interface for LLM personalization. However, universal preference summaries often contain information irrelevant to a particular downstream task. Directly supplying the full preference summary therefore wastes context capacity and introduces cross-task distraction, while manually designing task-specific preference views is difficult to scale. In this work, we study \\emph{task-specific preference adaptation}: given a universal user preference summary and a downstream task, derive a task-conditioned representation that preserves sufficient decision-relevant evidence while removing redundant context. To this end, we propose \\textsc{AlignXada}, a training-free meta-learning framework that induces reusable textual refinement policies for adapting universal preference summaries to task-specific ones. The refinement policy is iteratively optimized by a meta learner through verbal reinforcement learning. Across 13 tasks and three downstream models (39 task--model cells), \\textsc{AlignXada} achieves an average gain of 3.82 points, improving 33 cells while retaining only 22.8\\% of the original profile tokens and outperforming RAG in 36 cells. An extended faithfulness analysis further shows that the refined profiles remain largely grounded in the source preferences while preserving task-relevant personalization signals, suggesting that profile-side adaptation serves as a practical complement to universal memory construction for lifelong personalized agents.",
+    "status": "found"
+  },
+  "2608.09508": {
+    "arxiv_id": "2608.09508",
+    "title": "200 mm Wafer-Scale Monolithic 3D Integration of Atomic Layer-Deposited Oxide Semiconductors",
+    "authors": [
+      "Chang Niu",
+      "Linjia Long",
+      "Luqi Zheng",
+      "Shuting Du",
+      "Jian-Yu Lin",
+      "Kisoo Nam",
+      "Zehao Lin",
+      "Chang Liu",
+      "Juanjuan Lu",
+      "Haiyan Wang",
+      "Haitong Li",
+      "Peide D. Ye"
+    ],
+    "submission_date": "2026-08-10T12:13:37Z",
+    "latest_updated": "2026-08-10T12:13:37Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09508v1"
+    ],
+    "abstract": "Monolithic 3D (M3D) integration offers a pathway to overcome the scaling limits of conventional silicon complementary metal-oxide-semiconductor (CMOS) technology by extending dense vertical stacking of multifunctional logic and memory devices. Here, we demonstrate wafer-scale M3D integration of three tiers of atomic-layer-deposited (ALD) indium oxide (InOx)-based devices (>100,000 fabricated), including ferroelectric, enhancement-mode, and depletion-mode field-effect transistors, on 200 mm silicon wafers. We achieve threshold voltage standard deviation as low as 0.04 V, average electron mobility up to 91.6 cm2V-1s-1, and fully functional cross-tier circuits. A four-tier 3D computing-in-memory (CIM) accelerator targeting large language model workloads is developed using a custom InOx process design kit, delivering 1.4x to 2.9x speedup and comparable energy-delay product improvements over 2D baselines. These results establish ALD InOx M3D integration as a scalable and CMOS-compatible platform for next-generation artificial intelligence hardware and advanced electronics.",
+    "status": "found"
+  },
+  "2608.09509": {
+    "arxiv_id": "2608.09509",
+    "title": "Gate-based emulation of boson sampling using photonic qubits",
+    "authors": [
+      "Aastha P. Zalone",
+      "S. P. Dinesh",
+      "C. M. Chandrashekar"
+    ],
+    "submission_date": "2026-08-10T12:13:38Z",
+    "latest_updated": "2026-08-10T12:13:38Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09509v1"
+    ],
+    "abstract": "Boson sampling arising from multiphoton interference in linear-optical networks is a prominent non-universal model for quantum computation. Here, by encoding the multi-qubit state to bosonic Fock state, we present a scalable quantum-circuit framework for simulating boson sampling on a universal quantum computing platform. Beginning with balanced beam-splitter transformations on the single- and two-photon sectors, we derive equivalent quantum-circuit implementations and unify them within a common Hilbert-space representation using an ancilla-assisted encoding. This construction is then generalized to arbitrary interferometers by replacing each optical beam splitter with a repeating quantum-circuit unit that selectively acts only within the relevant local interference subspace, requiring $N+1$ qubits for a two-photon $N$-mode interferometer and a linear-overhead subspace-identification procedure. Using this framework, gate-based quantum circuit for a four-mode boson-sampling circuit is developed and experimentally implemented on a four-qubit gate-based photonic qubit system. The qubit framework for emulating boson sampling of $n-$photons in $m-$mode will be useful to solve a broad class of sampling complexity problem on a gate-based quantum computers.",
+    "status": "found"
+  },
+  "2608.09510": {
+    "arxiv_id": "2608.09510",
+    "title": "Build it, Break it, Repeat: Benchmarking and improving LLM-manipulated disinformation detection in social media posts",
+    "authors": [
+      "Kevin Thomas",
+      "Milosz Kasprzyk",
+      "Reuel C Igbokwe Onuigbo",
+      "Elliott Pert",
+      "Cameron Tovey",
+      "João A. Leite",
+      "Olesya Razuvayevskaya",
+      "Carolina Scarton"
+    ],
+    "submission_date": "2026-08-10T12:13:41Z",
+    "latest_updated": "2026-08-10T12:13:41Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09510v1"
+    ],
+    "abstract": "Detecting machine-generated disinformation on social media is increasingly difficult as large language models (LLMs) make it easier to generate and rewrite misleading content at scale. Static benchmark evaluations, measuring detector performance on fixed held-out datasets, do not capture how detectors behave when posts are deliberately transformed to evade classification. This paper adapts the Build it, Break it, Fix it framework into Build it, Break it, Repeat (BiBiR): iterative sessions designed to stress-test detectors' robustness under iterative adversarial conditions, evaluating whether models remain reliable when disinformation posts are systematically transformed to evade classification. Across five iterations, the findings show that the best adversarial breakers' transformations came from a combination of back-translation and LLM persona-based rewriting, with the best performing technique achieving a 95% label flip rate (LFR), whilst still preserving the meaning of the original posts. The best builders' model was a triplet contrastive model with a dynamic anchor switching (DASS) architecture, which achieved an average accuracy of 72.68%, outperforming the strong baseline (a fine-tuned e5-small-LoRA) by 15 percentage points on the most robust set of breakers' adversarial attacks. The results demonstrate that an iterative framework best exposes detector weaknesses and pushes robustness improvements; however, it may still require semantic preservation analysis to distinguish valid adversarial evasion from transformations that changed the original disinformation claims' meaning.",
+    "status": "found"
+  },
+  "2608.09511": {
+    "arxiv_id": "2608.09511",
+    "title": "Dust production in the harsh environment of Sgr A* - MIRI/JWST observation of the O-rich asymptotic giant branch star IRS~3",
+    "authors": [
+      "F. Peißker",
+      "M. García Marín",
+      "A. Eckart",
+      "G. Wright",
+      "O. C. Jones",
+      "D. Dicken",
+      "A. Alonso Herrero",
+      "D. Rouan",
+      "D. Law",
+      "T. Böker",
+      "T. Henning",
+      "M. Baes",
+      "A. Labiano",
+      "L. Pantoni",
+      "L. Hermosa Muñoz",
+      "P. O. Lagage",
+      "P. van der Werf",
+      "G. Östlin",
+      "J. A. D. L. Blommaert",
+      "M. Güdel",
+      "P. Guillard"
+    ],
+    "submission_date": "2026-08-10T12:13:53Z",
+    "latest_updated": "2026-08-10T12:13:53Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09511v1"
+    ],
+    "abstract": "Studies of the interstellar medium (ISM) have frequently revealed signatures of the dust produced in the envelopes of asymptotic giant branch (AGB) stars, demonstrating a connection between the dust composition of the ISM and that of AGB stellar envelopes. Investigating this relationship in the extreme, radiation-dominated environment surrounding Sgr A*, the center of our own galaxy, reveals how such conditions might influence dust composition and the recycling of material in galactic centers. IRS 3, the brightest L band source in the Galactic center and most prominent AGB star within the inner parsec of the Milky Way, is embedded in a dusty envelope with an estimated radius of $\\sim$10000 AU. We aim to conduct a comprehensive spectral analysis to more tightly constrain the dust composition and line-emitting species within the envelope of IRS 3 in the immediate vicinity of Sgr A*. In 2025, we observed the inner parsec of the Milky Way with the Mid-Infrared Instrument (MIRI) on board the James Webb Space Telescope (JWST) as part of the guaranteed time observations (GTO) program Mid-Infrared Characterisation of Nearby Iconic galaxy Centres (MICONIC). We used the MIRI Medium Resolution Spectrometer (MRS) to study the spectroscopic characteristics of the AGB star IRS 3, located about 0.17 parsecs in projection from Sgr A*.",
+    "status": "found"
+  },
+  "2608.09512": {
+    "arxiv_id": "2608.09512",
+    "title": "Renormalising Generative Models for Active Inference: Foundations, Derivations, and Verification",
+    "authors": [
+      "Karim Zaghw",
+      "Andrew Pashea",
+      "Marc Pritsch",
+      "Wouter Nuijten",
+      "Karl Friston",
+      "Lancelot Da Costa"
+    ],
+    "submission_date": "2026-08-10T12:14:05Z",
+    "latest_updated": "2026-08-29T19:35:03Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.09512v1",
+      "2608.09512v2"
+    ],
+    "abstract": "Active inference offers a unified framework for perception, learning, and action, but scaling discrete active-inference models to rich spatial and temporal domains remains difficult. Renormalising generative models (RGMs) address this challenge by composing discrete generative models across spatial and temporal scales, coarse-graining lower-level states and paths into higher-level causes for objects, events, and action. However, fully reproducing and adapting the framework remains difficult: the mathematical exposition is compact, and the reference implementations are deeply integrated within specialized software environments, leaving many algorithmic details implicit. This paper addresses these challenges by providing a self-contained, derivation-oriented account of RGMs together with an open, verified implementation. We explain how the hierarchy is built, how beliefs and actions are updated within it, and how information is passed between levels. Where the published equations and implementation differ in emphasis, we make those choices explicit and explain their modelling consequences. By clarifying the theory and separating it from its original implementation context, this work lowers practical barriers to entry and makes RGMs more transparent, auditable, and reproducible, providing a foundation for future quantitative evaluation and development on machine-learning benchmarks.",
+    "status": "found"
+  },
+  "2608.09513": {
+    "arxiv_id": "2608.09513",
+    "title": "Faster Algorithms for Multimarginal Optimal Transport",
+    "authors": [
+      "Brandon Augustino",
+      "Yue Sun",
+      "Atithi Acharya",
+      "Shouvanik Chakrabarti",
+      "Junhyung Lyle Kim",
+      "Shree Hari Sureshbabu",
+      "Charlie Che"
+    ],
+    "submission_date": "2026-08-10T12:14:25Z",
+    "latest_updated": "2026-10-06T13:42:36Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.09513v1",
+      "2608.09513v2"
+    ],
+    "abstract": "We study constructive discrete multimarginal optimal transport (MOT) among $m$ distributions on $n$ points, where the cost tensor $C$ has $N=n^m$ entries. For additive accuracy $\\varepsilon$, let $κ=\\max\\{1,(\\max C-\\min C)/\\varepsilon\\}$. Classically, we give two algorithms that return exactly feasible additive-$\\varepsilon$ couplings. A deterministic box--simplex method with rounding runs in $O(m^2Nκ\\log N)=\\widetilde O(m^3Nκ)$ time, while an exact reduction to positive packing followed by rank-one completion runs in randomized time $\\widetilde O(m^2Nκ)$. At fixed $κ$, both match the $Ω(N)$ cost of writing a dense coupling, up to factors in $m$ and logarithms. Quantumly, in the general entry-access model, tensor Sinkhorn followed by sparse recovery returns an exactly feasible additive-$\\varepsilon$ coupling as a classical list of $\\widetilde O(m^2nκ^2)$ atoms, using $\\widetilde O(m^4\\sqrt{Nn}\\,κ^3)$ coherent cost queries without materializing the tensor. Finally, for fixed $m$ and constant normalized accuracy, we prove sparse-output lower bounds of $\\widetildeΩ(N)$ randomized classical queries, even with unrestricted output size, and $\\widetildeΩ(\\sqrt{Nn})$ quantum queries for outputs with at most $n\\operatorname{polylog}(n)$ atoms. Hence, for fixed $m$ and normalized accuracy between $(\\log n)^{-O(1)}$ and a sufficiently small constant, explicit sparse MOT construction has query complexity $\\widetildeΘ(N)$ classically and $\\widetildeΘ(\\sqrt{Nn})$ quantumly.",
+    "status": "found"
+  },
+  "2608.09514": {
+    "arxiv_id": "2608.09514",
+    "title": "A refinement of the Q-Polynomial for twisted knots",
+    "authors": [
+      "Tumpa Mahato",
+      "Prabhakar Madeti"
+    ],
+    "submission_date": "2026-08-10T12:14:52Z",
+    "latest_updated": "2026-08-10T12:14:52Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09514v1"
+    ],
+    "abstract": "This paper introduces a two-variable polynomial invariant for oriented twisted knots, denoted by $Q_{K}^{z}(s,t)$, refining the $Q$-polynomial of N. Kamada and S. Kamada \\cite{NaoSei}. We exhibit an infinite family of twisted knots indistinguishable by the $Q$-polynomial but separated by the $Q^z$-polynomial. To prove invariance, we first determine a generating set of oriented Reidemeister moves for twisted knot diagrams, extending the result of Ali \\cite{Dan} for oriented virtual knots; this result is new and of independent interest, as it provides the minimal framework needed to verify invariance of any oriented twisted knot invariant. As further applications, we derive an explicit crossing change formula, obtain lower bounds on the Gordian distance between homotopic twisted knots, examine the existence of cosmetic crossings in a twisted knot diagram, and finally prove that $Q^{z}_{K}(s,t)$ is a Vassiliev invariant of order one.",
+    "status": "found"
+  },
+  "2608.09515": {
+    "arxiv_id": "2608.09515",
+    "title": "Tether-Inertial Localization for Planetary Drones",
+    "authors": [
+      "Dielof van Loon",
+      "Anton Bredenbeck",
+      "Lennart Puck",
+      "Martin Azkarate",
+      "Salua Hamaza"
+    ],
+    "submission_date": "2026-08-10T12:15:39Z",
+    "latest_updated": "2026-08-10T12:15:39Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09515v1"
+    ],
+    "abstract": "Recent developments in planetary exploration have shown the potential of Unmanned Aerial Vehicles (UAVs), such as the Ingenuity helicopter that provided valuable mapping data. However, limited payload capabilities constrain the flight times and compute available for localization, which restrict their applicability. By providing a tethered connection, issues such as battery and computational constraints are offloaded to the base rover. At the same time, the cable can be exploited for non-drifting localization. This work presents a novel Tether-Inertial Localization approach that uses tether length and angle measurements to estimate the UAV position relative to its base. The method combines a computationally efficient analytical catenary model with a Gaussian Process (GP) residual error compensation. This accounts for systematic sensor inaccuracies and model limitations. Experimental validation across circular, triangular, and figure-eight trajectories with tether lengths up to 4.5 m and a total flight time of 37 minutes demonstrates the effectiveness of the proposed approach. Using only tether-based position estimates for feedback, the analytical catenary model achieves an average RMSE of 7.4 cm, which is further reduced to 5.2 cm through GP-based residual compensation, one order of magnitude better than the state-of-the-art. These results establish Tether-Inertial Localization as a practical alternative to vision- and GNSS-based localization for Tethered Unmanned Aerial Vehicles (TUAVs).",
+    "status": "found"
+  },
+  "2608.09516": {
+    "arxiv_id": "2608.09516",
+    "title": "HarnessWAM: Bridging Prediction and Deliberation in World Action Models",
+    "authors": [
+      "Zhaopeng Gu",
+      "Bingke Zhu",
+      "Tianxi Lin",
+      "Guibo Zhu",
+      "Yingying Chen",
+      "Kai Wang",
+      "Tingyu Yuan",
+      "Fan Yang",
+      "Chaoyang Zhao",
+      "Zhaowen Li",
+      "Peng Su",
+      "Jinqiao Wang"
+    ],
+    "submission_date": "2026-08-10T12:15:59Z",
+    "latest_updated": "2026-10-10T09:30:45Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.09516v1",
+      "2608.09516v2"
+    ],
+    "abstract": "World Action Models~(WAMs) jointly learn environmental dynamics and robot actions, introducing priors over physical evolution into embodied control. However, finite-horizon prediction and action generation are insufficient for complex embodied tasks that require global planning, cross-stage state maintenance, execution verification, and failure recovery. We refer to this mismatch as the prediction-deliberation gap. To address this gap, we propose HarnessWAM, an agentic framework for WAMs. HarnessWAM employs a vision-language-model-based Task Manager to maintain an evidence-grounded scene belief and organize the global instruction into a structured task graph. Capability-conditioned executable-space projection then compiles the graph into WAM-supported skill sequences that satisfy task dependencies and embodiment-state constraints. During execution, HarnessWAM couples a lightweight progress estimator with event-triggered Task Manager deliberation. The estimator supplies frequent execution cues, while the Task Manager uses observations, task state, and interaction history to verify outcomes and decide whether to advance, acquire evidence, revise the plan, or recover. Local recovery preserves acquired scene knowledge so that execution can resume after failure. HarnessWAM achieves state-of-the-art average performance on RoboMemArena, with full-task and subtask success rates of 64.4% and 76.8%, respectively, and reaches 23.7% success on RoboCerebra Ideal. On a physical UR3 arm, full-task success reaches 95% for shape-conditioned tabletop tidying and 90% for memory-dependent box exploration. These results demonstrate the effectiveness of model-external agentic orchestration in bridging the prediction-deliberation gap for complex embodied tasks.",
+    "status": "found"
+  },
+  "2608.09517": {
+    "arxiv_id": "2608.09517",
+    "title": "Classification of anomalous actions of finite groups with the Rokhlin property",
+    "authors": [
+      "Sergio Girón Pacheco",
+      "Gábor Szabó"
+    ],
+    "submission_date": "2026-08-10T12:16:08Z",
+    "latest_updated": "2026-08-10T12:16:08Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09517v1"
+    ],
+    "abstract": "Given a finite group G, we develop a generalization of the fundamental classification of Rokhlin G-actions on C*-algebras to the setting of anomalous G-actions with the Rokhlin property. For Rokhlin G-kernels on C*-algebras covered by the classification program, this implies that the induced G-action on some known invariants determines the conjugacy class. Extending a result of Izumi, we show that G-kernels with the Rokhlin property on Kirchberg algebras are classified by their anomaly and the induced module structure on the K-theory groups. We explore K-theoretic obstructions for the existence of Rokhlin G-kernels on general separable C*-algebras and use these to characterise which G-module structures arise as K-groups of Kirchberg algebras admitting a Rokhlin G-kernel with a given lifting obstruction.",
+    "status": "found"
+  },
+  "2608.09518": {
+    "arxiv_id": "2608.09518",
+    "title": "Compound beams for direct experimental comparison of quantum operations",
+    "authors": [
+      "Kishore Thapliyal",
+      "Jan Perina",
+      "Pavel Pavlicek",
+      "Antonin Cernoch"
+    ],
+    "submission_date": "2026-08-10T12:16:57Z",
+    "latest_updated": "2026-10-14T12:27:10Z",
+    "revised_dates": null,
+    "venue": "New J. Phys. 28, 104511 (2026)",
+    "latest_version": 2,
+    "versions": [
+      "2608.09518v1",
+      "2608.09518v2"
+    ],
+    "abstract": "Compound beams composed of simple experimental blocks (detected in simultaneous detection windows) that form specific quantum-correlated structures are suggested for simulating the properties of different quantum operations used for creating highly nonclassical and entangled multi-mode states needed in quantum communication, metrology, and information protocols. Qualitative and quantitative comparison of multi-photon addition and subtraction in compound multi-mode thermal as well as sub-Poissonian beams and multi-mode twin beams with their intensities extending over two orders in magnitude is provided. Adding and subtracting up to twenty photocounts, optimal conditions for the generation of experimental nonclassical states are identified. In general, photon addition is identified as advantageous over photon subtraction for the multi-mode thermal and sub-Poissonian beams: It induces (enhances) the nonclassicality in the former (latter) state. Contrary to this, photon subtraction outperforms photon addition in the multi-mode twin beams. Moreover, exploiting temporal photon-pair correlations in compound twin beams when post-selecting, nearly ideal experimental photon(s) addition is demonstrated. The results apply for the beams with mean photon number per mode much less than one.",
+    "status": "found"
+  },
+  "2608.09519": {
+    "arxiv_id": "2608.09519",
+    "title": "XFeat Revisited: Reproducibility and Evaluation of a Lightweight Image Matcher",
+    "authors": [
+      "Lazar Đoković",
+      "Aimee Lin"
+    ],
+    "submission_date": "2026-08-10T12:18:02Z",
+    "latest_updated": "2026-08-10T12:18:02Z",
+    "revised_dates": null,
+    "venue": "Transactions on Machine Learning Research, August 2026",
+    "latest_version": 1,
+    "versions": [
+      "2608.09519v1"
+    ],
+    "abstract": "We present a reproducibility study of XFeat, a lightweight local feature extractor and matcher designed to identify corresponding points across images efficiently on resource-constrained hardware. We re-implement the architecture based on the paper and supplementary material, re-evaluate the authors' released checkpoint alongside our re-implementation, and conduct additional architectural ablations to examine design choices that were not fully justified in the original work. This distinction between re-evaluation and reproduction is important, as the paper, supplement, and public code differ in several implementation details, including the backbone layout, fusion block, and training losses. Empirically, our reproduced models closely match and, in some cases, outperform the re-evaluated original checkpoint on MegaDepth-1500 and ScanNet-1500, supporting the main claim that XFeat provides a strong accuracy-efficiency trade-off for standard image-matching benchmarks. Our ablations provide a more nuanced view of two architectural arguments from the original paper. In particular, the parallel keypoint branch is important for semi-dense matching, but its benefit is less pronounced than originally claimed, while the evidence for the specific placement of the single skip-connection remains inconclusive. Finally, we reproduce the original downstream evaluations and find close agreement for homography estimation, while Aachen visual localization remains below the reported results, even for the released checkpoint, suggesting sensitivity to underspecified evaluation details. We then extend the analysis to zero-shot out-of-distribution and cross-modal matching across retinal, thermal-visible, and multimodal remote-sensing imagery, where XFeat remains effective in some settings but degrades sharply under severe modality shifts.",
+    "status": "found"
+  },
+  "2608.09520": {
+    "arxiv_id": "2608.09520",
+    "title": "A Height-Constrained 2-Point Minimal Solver for Pose Estimation from Active LED Markers with Event Cameras",
+    "authors": [
+      "Runze Yuan",
+      "Alexander Kappler",
+      "Jun Zhang",
+      "Kuangyi Chen",
+      "Fabio Morbidi",
+      "Pascal Vasseur",
+      "Cédric Demonceaux",
+      "Friedrich Fraundorfer"
+    ],
+    "submission_date": "2026-08-10T12:19:24Z",
+    "latest_updated": "2026-08-10T12:19:24Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09520v1"
+    ],
+    "abstract": "In many autonomous applications requiring real-time localization, active marker-based systems are preferred due to their low latency and ease of deployment compared to computationally demanding feature-based methods. Event~\\mbox{cameras} offer high temporal resolution and minimal delay and are commonly used with active LED markers for robust real-time localization. Existing methods typically rely on Perspective-n-Point (PnP) solvers for pose estimation. However, structured marker layouts can be challenging to deploy in space-constrained scenarios, while partial self-motion information (e.g., gravity direction and altitude) is readily available from onboard sensors. We derive a robust and accurate minimal solver that estimates camera pose from only two LED markers by incorporating known tilt angle and camera height measured by an onboard sensor, such as an IMU or an altimeter. The proposed formulation uniquely determines the camera pose through both a closed-form and a linear least-squares solution. We further analyze degenerate configurations and characterize the conditions under which height information does not contribute to rotation estimation. For evaluation, we developed an event-based active marker system to collect real-world data with ground truth from a motion capture system. Experiments on both synthetic and real data demonstrate improved accuracy over the state-of-the-art P2P solver and competitive performance relative to P3P.",
+    "status": "found"
+  },
+  "2608.09521": {
+    "arxiv_id": "2608.09521",
+    "title": "One Adapter Pair per Model: A Universal Activation Interface for Language Models",
+    "authors": [
+      "Su-Hyeon Kim",
+      "Jiwan Mun",
+      "Yo-Sub Han"
+    ],
+    "submission_date": "2026-08-10T12:21:36Z",
+    "latest_updated": "2026-08-10T12:21:36Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09521v1"
+    ],
+    "abstract": "Activation-based tools are usually tied to one model's native hidden space, requiring probes, sparse autoencoders, and natural-language interpreters to be rebuilt or rediscovered for each new language model. We present a Universal Activation Bus, a framework that provides a common activation interface across compatible language models. Using a small set of source models, we learn a shared dense space together with one lightweight linear encoder--decoder adapter pair per model. After source training, the interface is frozen; a new model joins by fitting only its adapter pair on unlabeled matched text. The resulting interface allows activation-based tools to be shared across connected models, including common probes and SAE features as well as access to an NLA originally trained for a different model. Across five models, semantically related texts form consistent neighborhoods in the shared space, and an onboarded model reuses these tools effectively without retraining them. We further show that an intermediate activation from one model can be used by another model's frozen upper layers to produce predictions. These results establish a stable, model-wise activation contract for reusable tools across compatible language models.",
+    "status": "found"
+  },
+  "2608.09522": {
+    "arxiv_id": "2608.09522",
+    "title": "TriView-YOLO: Early Multi-View Fusion for Ground Penetrating Radar Cavity Detection in Soft, High-Water-Content Soils",
+    "authors": [
+      "Suphawut Thawinutchokaudom",
+      "Sompote Youwai",
+      "Warat Kongkitkul",
+      "Mitsumasa Yamashina",
+      "Jose M. D. S. Rodrigues Neto",
+      "Jun Shinohara"
+    ],
+    "submission_date": "2026-08-10T12:21:52Z",
+    "latest_updated": "2026-08-10T12:21:52Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09522v1"
+    ],
+    "abstract": "Automated detection of subsurface cavities from Ground Penetrating Radar (GPR) is most difficult in soft, high-water-content ground, where conductive, water-saturated soil attenuates the signal and degrades cavity reflections, yet this is also the condition under which cavities most readily form. This paper proposes TriView-YOLO, a multi-view YOLOv12 detector for road cavity screening in such ground. Three co-registered views (longitudinal B-scan, horizontal C-scan, and cross-section B-scan) form a 9-channel input fused by a TripleInputConv layer that replaces the YOLOv12 stem; the rest of the network is unchanged, and bounding boxes are required on the longitudinal view only. Training used 1,600 expert-verified field samples, principally metropolitan road surveys of Bangkok, Thailand, acquired with a vehicle-mounted multichannel three-dimensional GPR mobile mapping system, with surveys over the firmer subgrades of Japan added to training and validation only. The test set comes exclusively from the Bangkok surveys, over soft marine clay with 80-140% water content and a water table at 1-2 m depth, a ground condition for which no dedicated deep learning cavity-detection evaluation has been reported. On this unaugmented, field-only test set, split randomly within surveys, the proposed model attains mAP50 of 0.558 +/- 0.028 over three seeds at 23.6 GFLOPs and 3.1 ms per image. Ablations show that removing the auxiliary views lowers mAP50 and recall, whereas public and synthetic training images, DINOv3 features, larger model scale, and COCO pretraining bring no gain.",
+    "status": "found"
+  },
+  "2608.09523": {
+    "arxiv_id": "2608.09523",
+    "title": "Generalized Convexity and Smoothness via Conjugate Duality, with Applications to Deep Network Training",
+    "authors": [
+      "Binchuan Qi"
+    ],
+    "submission_date": "2026-08-10T12:24:29Z",
+    "latest_updated": "2026-10-20T10:09:31Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.09523v1",
+      "2608.09523v2"
+    ],
+    "abstract": "Stochastic gradient descent (SGD) and its variants train deep neural networks (DNNs) effectively in practice, yet classical optimization theory does not fully explain this success: conventional analyses rest on differentiability, convexity, and smoothness, assumptions that DNN objectives routinely violate. We close this gap by generalizing convexity and smoothness, through Legendre functions and convex conjugation, into a unified optimization framework for DNN training. We introduce \\(\\mathcal{H}(ψ)\\)-convexity and \\(\\mathcal{H}(Ψ)\\)-smoothness, a single formalism that encompasses convex and non-convex as well as smooth and non-smooth objectives and reveals a natural duality between generalized convexity and smoothness. Building on these notions, we derive generalized gradient descent (GD) and generalized SGD via convex conjugation. We prove that generalized GD attains an optimal learning rate of exactly \\(1\\), and we establish rigorous gradient-energy-based convergence rates for both optimizers. We further recast DNN training as a composite optimization problem and show that its convergence hinges on jointly reducing the gradient energy and controlling the extreme eigenvalues of the structure matrix; a model capacity risk quantifies the residual error that no optimizer can remove. Experiments on six datasets (MNIST, Fashion-MNIST, CIFAR-10, CIFAR-100, TREC, and SST-2) and on convolutional, residual, and Transformer architectures, with five loss functions, are consistent with the predicted training dynamics.",
+    "status": "found"
+  },
+  "2608.09524": {
+    "arxiv_id": "2608.09524",
+    "title": "STAIR: Effective Incident Response Using an End-to-End Agentic Planning Framework",
+    "authors": [
+      "Hanlin Jiang",
+      "Jionghao Huang",
+      "Shaofei Li",
+      "Bojia Yu",
+      "Peng Jiang",
+      "Yuxin Ren",
+      "Ning Jia",
+      "Yao Guo",
+      "Ding Li"
+    ],
+    "submission_date": "2026-08-10T12:25:12Z",
+    "latest_updated": "2026-10-09T08:48:42Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.09524v1",
+      "2608.09524v2"
+    ],
+    "abstract": "Incident response planning is critical for restoring compromised software systems. Existing AIOps methods automate fault diagnosis and remediation and adapt response using feedback, but lack a unified decision basis across planning and execution. This limits their ability to maintain incident state and align actions with evolving recovery objectives during long-horizon, multi-stage security incident response. We present STAIR, an end-to-end agentic response framework that organizes planning and execution around a shared incident state. STAIR maintains incident evidence, response actions, and execution feedback in Graph-as-State (GAS), using the latest state to determine the response stage and recovery objectives for stage-specialized planning. The framework retrieves effect-validated historical experience based on the current state and stage to guide action selection. An Execution Harness executes actions, returns feedback to update GAS, and validates action effects for future experience reuse. We construct STAIR-Bench, an executable incident response benchmark comprising 44 Docker-based cyber-range cases. On its held-out test cases, STAIR achieves an overall defense score of 0.95, improving over the strongest baseline by approximately 10.47%. In the independent CAGE4 environment with ongoing attacks and benign activity, STAIR reduces cumulative penalties by approximately 28.8% relative to the strongest baseline.",
+    "status": "found"
+  },
+  "2608.09525": {
+    "arxiv_id": "2608.09525",
+    "title": "Symphony: Simple Phase Control for Wave Energy Systems",
+    "authors": [
+      "Pedro Fornaro",
+      "Eugenio Gelos",
+      "Demian Garcia-Violini",
+      "John V. Ringwood"
+    ],
+    "submission_date": "2026-08-10T12:25:36Z",
+    "latest_updated": "2026-08-10T12:25:36Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09525v1"
+    ],
+    "abstract": "Despite significant advancements in controlling wave energy converters, efficiently achieving real-time energy-maximising control remains a challenge. This paper addresses this obstacle by introducing Symphony, a novel non-optimisation-based (NOB) controller inspired by phase control techniques for wave energy devices. Symphony is a suboptimal control that inherits all the advantages of NOB controllers, such as simplicity of design, implementation, tuning, and use, while additionally providing hard-motion-constrained reference trajectories and close-to-optimal performance across the evaluated sea states, even in the presence of measurement noise and model uncertainty. Symphony is designed using a hierarchical structure: By relying on an implicit Gaussian differential equation that requires an excitation force estimate, an upper loop provides a close-to-optimal motion-constrained velocity trajectory and a feedforward control term. Then, a user-flexible lower loop tracks the desired velocity trajectory by combining feedback and feedforward terms. In this paper, Symphony performance is assessed in terms of power absorption. Statistically representative results are obtained using multiple sea-state realisations across varying peak wave periods, considering measurement noise and radiation model uncertainty. The results presented in this paper demonstrate the potential of Symphony, which achieves, in most of the evaluated scenarios, more than 90\\% of the power absorption obtained by a spectral (optimisation-based) control solution.",
+    "status": "found"
+  },
+  "2608.09526": {
+    "arxiv_id": "2608.09526",
+    "title": "RangeFactory: Scalable Construction of Multi-Hop Cyber Ranges",
+    "authors": [
+      "Hanlin Jiang",
+      "Puyi Wang",
+      "Jiandong Jin",
+      "Shaofei Li",
+      "Zhan Shen",
+      "Pengli Wang",
+      "Ziming Wang",
+      "Yifeng Cai",
+      "Ning Jia",
+      "Yuxin Ren",
+      "Peng Jiang",
+      "Yao Guo",
+      "Ding Li"
+    ],
+    "submission_date": "2026-08-10T12:25:49Z",
+    "latest_updated": "2026-08-10T12:25:49Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09526v1"
+    ],
+    "abstract": "Real-world cyberattacks often require sustained progress across multiple hosts and network segments, making multi-hop cyber ranges essential infrastructure for studying and improving LLM agents' ability to sustain complete attack chains. Prior work has scaled isolated vulnerability tasks and constructed multi-host scenarios from manually specified vulnerability semantics. However, they are still unable to automatically orchestrate the growing supply of vulnerability environments into end-to-end validated multi-hop ranges. To this end, we present RangeFactory, an automated cyber-range orchestration framework that constructs multi-hop cyber ranges at scale from isolated vulnerability environments. RangeFactory formulates range construction as dependency resolution: it extracts dependency information from agents' actual attacks against real vulnerabilities, resolves known dependencies through template-guided orchestration, and uses end-to-end attack execution to validate runtime dependencies that emerge after composition. Using RangeFactory, we construct RangeBench with 1,148 validated range instances spanning 287 distinct attack chains and evaluate frontier attack agents across attack depth, network scale, and task information. Among runs that compromise the entry vulnerability, 24.5-47.0% still fail to complete the remaining attack path, revealing a substantial sustained-compromise gap between establishing an initial foothold and completing a multi-hop attack. RangeFactory further produces a corpus of 5,541 outcome-annotated multi-hop attack trajectories, providing execution data for attack-process analysis and future agent training.",
+    "status": "found"
+  }
+}

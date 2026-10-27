@@ -1,0 +1,421 @@
+{
+  "2608.11827": {
+    "arxiv_id": "2608.11827",
+    "title": "Weak stability and binary convex combinations of slices",
+    "authors": [
+      "Rainis Haller"
+    ],
+    "submission_date": "2026-08-12T09:11:31Z",
+    "latest_updated": "2026-08-12T09:11:31Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11827v1"
+    ],
+    "abstract": "We study weak openness and related geometric properties of convex combinations of slices of the unit balls of Banach spaces. We prove that, for every $m\\geq 2$, properties $\\mathrm{P1}^{(m)}$ and $\\mathrm{CWO}^{(m)}$ are equivalent, and likewise for their closure variants. Consequently, both $\\mathrm{P1}$ and $\\overline{\\mathrm{P1}}$ are determined by convex combinations of two slices; in particular P1 and CWO are equivalent. We construct infinite-dimensional real Banach spaces with $\\mathrm{P2}^{(2)}$ but without P2, and with $\\mathrm{P3}^{(2)}$ but without P3. In the latter space, every convex combination of two slices contains two points at distance 2, although the space fails the strong diameter two property. Finally, we give an equivalent norm on the real space $c_0$ for which $\\overline{\\mathrm{P1}}$ holds, but P1 fails. These answers several questions raised in the literature.",
+    "status": "found"
+  },
+  "2608.11828": {
+    "arxiv_id": "2608.11828",
+    "title": "A Universal Random Precoding Framework for MIMO Systems",
+    "authors": [
+      "Jiazhen Dong",
+      "Lei Liu",
+      "Xiaojun Yuan",
+      "Baoming Bai"
+    ],
+    "submission_date": "2026-08-12T09:11:36Z",
+    "latest_updated": "2026-08-12T09:11:36Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11828v1"
+    ],
+    "abstract": "Current wireless systems combat inter-symbol interference (ISI) by diagonalizing or sparsifying the channel matrix, yet they remain vulnerable to selective fading. To address this, we propose a universal random precoding (RP) transmission framework based on the universality class. RP leverages random transforms to statistically exploit all subchannels and construct an equivalent channel belonging to the universality class, thereby enhancing diversity gain while maintaining backward compatibility with existing waveforms. Low-complexity implementations include the randomly permuted fast transform (FT-RP) and the interleaved block-sparse fast transform (IBSFT-RP). A cross-domain OAMP/MAMP (CD-OAMP/MAMP) detector is designed for RP systems, which is replica maximum \\textit{a posteriori} (MAP)-optimal according to state evolution (SE). Simulation results on MIMO systems demonstrate that RP with CD-OAMP/MAMP achieves near-RM performance with much lower complexity, with additional benefits of flexible compression ratios for spectral efficiency.",
+    "status": "found"
+  },
+  "2608.11829": {
+    "arxiv_id": "2608.11829",
+    "title": "Towards Understanding On-Policy Distillation through the Lens of Test-Time Scaling",
+    "authors": [
+      "Xinmu Ge",
+      "Zizhuo Zhang",
+      "Yu Huang",
+      "Jianing Zhu",
+      "Lin Yuan",
+      "Wanli Gu",
+      "Weichang Wu",
+      "Weiran Huang",
+      "Bo Han",
+      "Xiaolu Zhang",
+      "Jiangchao Yao"
+    ],
+    "submission_date": "2026-08-12T09:13:35Z",
+    "latest_updated": "2026-09-28T12:56:13Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2608.11829v1",
+      "2608.11829v2",
+      "2608.11829v3"
+    ],
+    "abstract": "On-policy distillation (OPD) has emerged as a promising post-training technique for enhancing LLM reasoning. Under the reverse KL objective, the idealized optimum of OPD aligns the student distribution with that of the teacher. When the teacher consistently outperforms the student, this naturally suggests that OPD should yield broad improvements over the pre-OPD student. However, do such improvements extend across the entire range of test-time sampling budgets? In this work, we revisit this expectation through the lens of test-time scaling by varying the sampling budget $K$ and evaluating performance with pass@$K$. Across multiple settings, we observe two distinct patterns: OPD can improve pass@$K$ at both small and large sampling budgets, but it can also improve small-budget performance while reducing large-budget pass@$K$. We show one condition that guarantees such a reversal and an idealized reverse KL counterexample where it occurs even when the teacher has higher accuracy on every problem. To choose between two candidate teachers at a target sampling budget, we propose the \\textit{Teacher Advantage Score at $K$} (TAS@$K$), which can be computed before OPD training to predict which teacher will lead to a larger improvement in pass@$K$. Across three domains and thirteen benchmarks, the ordering predicted by TAS@$K$ agrees with the observed pass@$K$ improvements of the resulting OPD models in 83.6\\% of experiments, providing a useful signal for teacher selection at the target pass@$K$.",
+    "status": "found"
+  },
+  "2608.11830": {
+    "arxiv_id": "2608.11830",
+    "title": "Quantifying the Relationship Between Clinical Safety and Environmental Impact in Therapeutic LLMs",
+    "authors": [
+      "Alireza A. Safaei",
+      "Laura M. Vowels",
+      "Matthew J. Vowels",
+      "Apoorv Jha",
+      "Shekoufeh Rahimi"
+    ],
+    "submission_date": "2026-08-12T09:14:26Z",
+    "latest_updated": "2026-08-12T09:14:26Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11830v1"
+    ],
+    "abstract": "The deployment of large language models (LLMs) in mental health contexts raises questions about the relationship between clinical safety and environmental cost. In this paper, we examine this relationship by combining K-Bench clinical safety scores with EcoLogits life-cycle assessment estimates across 47 supported model configurations. We evaluate model performance and environmental impact across four dimensions: energy use, carbon emissions, water consumption, and abiotic depletion. The results indicate a non-linear trade-off at the upper end of the safety distribution: a 2.61 percentage-point increase in clinical safety score corresponded to an approximately 60-fold increase in estimated energy use per million output tokens. Row-level analyses further suggest that additional test-time compute did not consistently improve clinical safety and, in some configurations, was associated with lower clinical safety scores. These findings suggest that relying solely on larger models or additional inference-time computation may be an inefficient strategy for improving safety in therapeutic AI systems. We discuss the implications for sustainable deployment and highlight dynamic model selection, including model cascading, as a potential approach for reducing environmental impact while preserving clinical performance in higher-risk cases.",
+    "status": "found"
+  },
+  "2608.11831": {
+    "arxiv_id": "2608.11831",
+    "title": "Kernel Methods for Learning Operators with Multiple Inputs and Outputs",
+    "authors": [
+      "Adrien Weihs",
+      "Chunyang Liao",
+      "Jingmin Sun",
+      "Hayden Schaeffer"
+    ],
+    "submission_date": "2026-08-12T09:15:20Z",
+    "latest_updated": "2026-08-12T09:15:20Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11831v1"
+    ],
+    "abstract": "Learning mappings between infinite-dimensional objects is a central challenge in scientific machine learning. We introduce a general kernel-based encoder-decoder framework for operator learning that separates observation, representation, learning, and reconstruction. We develop this framework for multi-input, multi-output operator learning, where operators map between products of potentially distinct function spaces. Our approximation theory shows that, although the number of inputs and outputs can increase, the convergence rate is governed by the most challenging constituent approximation problem rather than the overall problem dimension. The framework leads to practical kernel methods with closed-form training and inference, combining mathematical tractability with computational efficiency. We further specialize the approach to multiple operator learning by introducing KernelMO, a family of kernel methods with complementary operator-valued and product-space formulations. Across five families of parametric partial differential equations, the proposed methods achieve competitive or state-of-the-art predictive accuracy while reducing training and inference costs relative to neural operator architectures and deep learning based models, offering an efficient and lightweight alternative.",
+    "status": "found"
+  },
+  "2608.11832": {
+    "arxiv_id": "2608.11832",
+    "title": "Optically Tunable Threshold Switching and Thermally Activated Transport in Planar Ag/MAPbI$_3$ Thin Single-Crystal Devices",
+    "authors": [
+      "Ofelia Durante",
+      "Valeria Demontis",
+      "Sebastiano De Stefano",
+      "Selene Matta",
+      "Adolfo Mazzotti",
+      "Daniela Marongiu",
+      "Emanuele Meloni",
+      "Elisa Pili",
+      "Fang Liu",
+      "Nicola Sestu",
+      "Angelica Simbula",
+      "Mauro Carta",
+      "Michele Saba",
+      "Andrea Mura",
+      "Massimiliano Di Ventra",
+      "Giovanni Bongiovanni",
+      "Antonio Di Bartolomeo"
+    ],
+    "submission_date": "2026-08-12T09:16:22Z",
+    "latest_updated": "2026-08-12T09:16:22Z",
+    "revised_dates": null,
+    "venue": "Advanced Science (2026): e77024",
+    "latest_version": 1,
+    "versions": [
+      "2608.11832v1"
+    ],
+    "abstract": "Halide perovskites have enabled major advances in optoelectronics, extending well beyond photovoltaics. Their mixed ionic-electronic conduction, once regarded as detrimental to device stability, is increasingly viewed as a functional degree of freedom for memory and neuromorphic-inspired devices, especially when coupled to external stimuli such as light. Specifically, single crystals are attractive models because they suppress grain-boundary effects and microstructural disorder that can mask intrinsic transport and interfacial mechanisms in polycrystalline films. Here, we report the growth of thin methylammonium lead iodide (MAPbI$_3$) single crystals by a space-confined method and their integration into planar two-terminal devices with directly deposited Ag contacts. At room temperature, the devices exhibit ultra-low dark currents ($10^{-13}-10^{-12}$ A) and negligible hysteresis in the dark. Under illumination, the current increases due to photogeneration and the I-V characteristics develop a pronounced polarity-dependent hysteresis and a threshold-like transition between two conductance states. Temperature-dependent dark measurements (300-400 K) show thermionically activated, contact-influenced transport and a weakly varying normalized hysteresis metric. Together with the back-to-back Schottky-diode analysis and control devices using more inert contact materials, these results support a transport model in which Ag/perovskite interfaces play a central role and the hysteretic response is influenced by coupled interfacial and ionic processes.",
+    "status": "found"
+  },
+  "2608.11833": {
+    "arxiv_id": "2608.11833",
+    "title": "Inferring Empirical Sound Resource Bounds via Symbolic Execution and Linear Programming (Extended Version)",
+    "authors": [
+      "Samuel Frontull",
+      "Manuel Meitinger",
+      "Georg Moser"
+    ],
+    "submission_date": "2026-08-12T09:16:43Z",
+    "latest_updated": "2026-08-12T09:16:43Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11833v1"
+    ],
+    "abstract": "Existing approaches to resource analysis of programs can be classified into two main paradigms: static analysis and dynamic analysis methods. The former allow for formal guarantees but are inherently incomplete; the latter are widely applicable but may miss rare but characteristic (worst-case) scenarios and thus lack soundness. Hybrid approaches attempt to combine the strengths of both paradigms, thereby enabling the analysis of programs that are either too complex for purely static techniques or where dynamic approaches suffer from combinatorial explosion. In this paper, we present a novel hybrid approach that systematically derives upper bounds for the worst-case resource consumption of functional programs. Our method combines dynamic symbolic execution to exhaustively explore all possible computation paths within a constrained input space with mixed-integer linear programming to derive empirically sound upper bounds. We have implemented the methodology in a prototype tool, dubbed CompAS, which we made available on Zenodo.",
+    "status": "found"
+  },
+  "2608.11834": {
+    "arxiv_id": "2608.11834",
+    "title": "Scattering Theory For 3D Cubic Damped Magnetic Schrödinger Equation",
+    "authors": [
+      "Luca Fanelli",
+      "Haruya Mizutani",
+      "Yilin Song",
+      "Ying Wang",
+      "Jiqiang Zheng"
+    ],
+    "submission_date": "2026-08-12T09:17:03Z",
+    "latest_updated": "2026-08-12T09:17:03Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11834v1"
+    ],
+    "abstract": "We consider the three-dimensional defocusing cubic nonlinear Schrödinger equation with variable coefficients, a magnetic potential, and a non-negative localized damping term, \\[ i\\partial_tu+(\\nabla-iA)\\cdot G(\\nabla-iA)u+ia(x)u=|u|^2u, \\qquad t>0,\\quad x\\in\\mathbb R^3. \\] No non-trapping condition is imposed on the metric $G$. Instead, the variable-coefficient region is assumed to be contained in the effective damping region. Under a one-centre condition on the tangential magnetic field, we prove global well-posedness for initial data in $H^{1+\\varepsilon}$, uniform mass and energy bounds, and show the local energy decay. To obtain scattering, we impose a support condition on the full magnetic field inside the damping region. Under these stronger assumptions, the solution scatters to a free Schrödinger evolution in $H^s$ for every $0\\le s<1$. The appendix discusses a separate constant-damping framework for abstract Hamiltonians.",
+    "status": "found"
+  },
+  "2608.11835": {
+    "arxiv_id": "2608.11835",
+    "title": "Distractor-Aware Video Object Segmentation",
+    "authors": [
+      "Andreas Robinson",
+      "Abdelrahman Eldesokey",
+      "Michael Felsberg"
+    ],
+    "submission_date": "2026-08-12T09:17:20Z",
+    "latest_updated": "2026-08-12T09:17:20Z",
+    "revised_dates": null,
+    "venue": "Pattern Recognition. DAGM GCPR 2021. Lecture Notes in Computer Science, vol. 13024, pp. 222-234. Springer, Cham (2021)",
+    "latest_version": 1,
+    "versions": [
+      "2608.11835v1"
+    ],
+    "abstract": "Semi-supervised video object segmentation is a challenging task that aims to segment a target throughout a video sequence given an initial mask at the first frame. Discriminative approaches have demonstrated competitive performance on this task at a sensible complexity. These approaches typically formulate the problem as a one-versus-one classification between the target and the background. However, in reality, a video sequence usually encompasses a target, background, and possibly other distracting objects. Those objects increase the risk of introducing false positives, especially if they share visual similarities with the target. Therefore, it is more effective to separate distractors from the background, and handle them independently. We propose a one-versus-many scheme to address this situation by separating distractors into their own class. This separation allows imposing special attention to challenging regions that are most likely to degrade the performance. We demonstrate the prominence of this formulation by modifying the learning-what-to-learn (LWL) method to be distractor-aware. Our proposed approach sets a new state-of-the-art on the DAVIS 2017 val dataset, and improves over the baseline on the DAVIS 2017 test-dev benchmark by 4.6 percentage points.",
+    "status": "found"
+  },
+  "2608.11836": {
+    "arxiv_id": "2608.11836",
+    "title": "Enabling Differentiated QoS Degradation for Replicated Databases under Failures",
+    "authors": [
+      "Belkis Djeffal",
+      "Pierre Bourhis",
+      "Romain Rouvoy"
+    ],
+    "submission_date": "2026-08-12T09:17:35Z",
+    "latest_updated": "2026-08-12T09:17:35Z",
+    "revised_dates": null,
+    "venue": "SRDS 2026 - IEEE International Symposium on Reliable Distributed Systems, Sep 2026, Rome, Italy",
+    "latest_version": 1,
+    "versions": [
+      "2608.11836v1"
+    ],
+    "abstract": "Elasticity is commonly presented as the default response to capacity loss after failures, since replacement replicas can compensate for failed nodes and restore pre-incident service levels. Replacement capacity entails both delay and additional resource commitment, as replicas must be provisioned and synchronized before they can serve traffic. Under fixed budgets or constrained operating conditions, capacity restoration cannot be treated as the immediate recovery path. Failure handling must instead define how the service continues while capacity remains reduced. When the service exposes differentiated service levels, capacity loss cannot be handled uniformly. Degradation becomes part of the service behavior, requiring explicit control over how reduced capacity affects each class without erasing the intended differentiation. We study differentiated QoS degradation in replicated database services with service-class-aware sessions. We present a repair-to-target policy, implemented in PLB, a PostgreSQL JDBC middleware load balancer for service-class-aware routing. When fail-stop failures remove part of the available capacity, PLB updates the role assignment of healthy replicas into Premium, Mixed, and Freemium roles. This keeps the replica pool shared while ensuring that new session assignments continue to reflect the service class. We evaluate PLB under single and cascading replica failures across two deployment strategies: isolated perclass replica pools and shared, priority-agnostic routing. The results show that PLB improves median Premium goodput retention by 26-28 percentage points under a Premium-side fault, achieves more than 2x higher Premium goodput in the most severe cascading-failure phase, and reduces Premium p95 latency by 18.2% relative to shared round-robin.",
+    "status": "found"
+  },
+  "2608.11837": {
+    "arxiv_id": "2608.11837",
+    "title": "On Arithmetic Cordial Labeling of Product Graphs",
+    "authors": [
+      "Jason D. Andoyo"
+    ],
+    "submission_date": "2026-08-12T09:18:38Z",
+    "latest_updated": "2026-08-12T09:18:38Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11837v1"
+    ],
+    "abstract": "Let $η$ be a fixed positive integer. Let $S$ be a subset of $\\mathbb{Z}$, $\\star:S\\times S\\to \\mathbb{Z}$ be a binary function, and $ζ_η:\\{ξ\\in \\mathbb{Z}:\\gcd(ξ,η)=1\\}\\to \\{0,1\\}$ be a function. For a simple graph $G$ of order $n$, a bijective function $f:V(G)\\to S$ (where $|S|=n$) is called an arithmetic cordial labeling modulo $η$ under the arithmetic structure $\\langle S,ζ_η,\\star\\rangle$ if the induced function $f_η^*:E(G)\\to \\{0,1\\}$, defined by $f_η^*(ab)=1$ whenever $\\gcd(f(a)\\star f(b),η)= 1$ and $ζ_η(f(a)\\star f(b))=1$; otherwise, $f_η^*(ab)=0$, satisfies the condition $|e_{f_η^*}(0)-e_{f_η^*}(1)|\\leq 1$, where $e_{f_η^*}(i)$ is the number of edges with label $i$ ($i=0,1$). In this paper, the arithmetic cordial labeling of product graphs, namely, corona, lexicographic, cartesian, tensor, and strong, is explored under the operation of addition.",
+    "status": "found"
+  },
+  "2608.11838": {
+    "arxiv_id": "2608.11838",
+    "title": "GeoBridge: Decoupled Semantic Conditioning for Generative Image Geolocalization",
+    "authors": [
+      "Zhiyang Dou",
+      "Xumeng Han",
+      "Fengde Peng",
+      "Zipeng Wang",
+      "Moxuan Zhao",
+      "Zhipei Huang",
+      "Zhenjun Han"
+    ],
+    "submission_date": "2026-08-12T09:21:02Z",
+    "latest_updated": "2026-08-12T09:21:02Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11838v1"
+    ],
+    "abstract": "Multimodal large language models (MLLMs) have advanced image geolocalization mainly by improving how they reason about geographic cues. How that reasoning isdecoded into coordinates, however, has lagged behind. Predicting a place name for a geocoding API is discrete and lossy: it ignores image evidence and collapses multi-granular semantics into a coarse lookup. We argue that the bottleneck has shifted from what a model reasons to how that reasoning is represented for a continuous, geometry-aware decoder. We present GeoBridge, a role-decoupled conditioning mechanism that connects a frozen semantic MLLM to a frozen Riemannian flow-matching head that generates coordinates on the sphere. The central obstacle is arole conflict: supervising the condition with discrete semantic labels biases its representation toward class-discriminative geometry, at odds with the smooth manifold the generative head requires. GeoBridge keeps the semantic supervision decoupled from the condition interface: a separate projection forms the continuous condition the frozen head expects, injecting geographic priors without disturbing the spherical decoder. On IM2GPS3K, GeoBridge reaches 38.67/52.89/70.37 at the 25/200/750 km thresholds, improving over a place-name-to-API pipeline and reasoning-augmented direct prediction at these precision-relevant scales. GeoBridge is a decode-side algorithmic contribution, orthogonal and complementary to chain-of-thought reasoning. Code will be made publicly available.",
+    "status": "found"
+  },
+  "2608.11839": {
+    "arxiv_id": "2608.11839",
+    "title": "Air Quality Station Simulation via LSTM and Attention-Based Modelling",
+    "authors": [
+      "Alexander Kostadinov",
+      "Petar O. Hristov",
+      "Dessislava Petrova-Antonova"
+    ],
+    "submission_date": "2026-08-12T09:26:56Z",
+    "latest_updated": "2026-08-12T09:26:56Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11839v1"
+    ],
+    "abstract": "Poor air quality in urban areas is driven by a complex chain of processes and presents a significant public health concern. To better understand and control the mechanisms that determine air quality, cities deploy networks of measurement stations, and launch initiatives for collecting denser data about the concentration of pollutants in the atmosphere. Extracting insights from the stations relies on their reliable and uninterrupted operation. However, hardware is susceptible to faults and black- outs that may result in data unavailability, which affects the overall quality of analyses. In this paper, we present a deep-learning model, called SATADL, which can infer complex relations and output multiple-hour-ahead air-quality forecasts. The goal of the model is to simulate the mea- surements of an unresponsive station until its operation is restored. The architecture of the model, which allows it to extract information from different aspects of the data, is described in detail and a careful examination of all of its components is provided. We demonstrate the performance of SATADL on four sets of air quality stations from around the world, by using it to simulate the concentration of PM10 for periods of hypothetical failures of one of the measurement stations, lasting for as long as 48 hours. A selection of baseline and published deep learning models were trained and used as a benchmark. The results show that SATADL per- forms better across different prediction windows, for both coefficient of determination and root mean squared error, demonstrating its suitability as a virtual proxy station.",
+    "status": "found"
+  },
+  "2608.11840": {
+    "arxiv_id": "2608.11840",
+    "title": "User-Assisted Collaborative Distributed Inference for Efficient QoS-Aware Autoscaling",
+    "authors": [
+      "Alfreds Lapkovskis",
+      "Ali Beikmohammadi",
+      "Sindri Magnússon",
+      "Praveen Kumar Donta"
+    ],
+    "submission_date": "2026-08-12T09:28:43Z",
+    "latest_updated": "2026-08-12T09:28:43Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11840v1"
+    ],
+    "abstract": "Growing demand for artificial intelligence (AI) inference services requires scalable infrastructure, yet centralized serving costs rise with demand. We propose a collaborative distributed inference system combining dedicated infrastructure with resources contributed by service users. Dedicated resources provide baseline capacity for maintaining quality of service (QoS), while volunteered resources absorb increasing demand without proportional growth in centralized infrastructure. To capture stochastic and dynamic interactions among users, resources, tasks, and policies, we develop a high-dimensional generative Markov model with structured temporal factorization. The model supports simulation and provides a foundation for task scheduling and QoS-aware resource allocation optimization. We evaluate the system across user populations, resource capacities, and centralized and distributed scheduling policies. Simulations show that distributed scheduling becomes increasingly advantageous as the user population grows, improving request completion and P99 latency while substantially reducing dedicated resource consumption. These results demonstrate the feasibility of user-assisted collaborative inference for infrastructure-efficient autoscaling.",
+    "status": "found"
+  },
+  "2608.11841": {
+    "arxiv_id": "2608.11841",
+    "title": "Weinstock inequalities for outward-minimizing domains",
+    "authors": [
+      "Chaoqun Gao",
+      "Yong Wei",
+      "Rong Zhou"
+    ],
+    "submission_date": "2026-08-12T09:33:09Z",
+    "latest_updated": "2026-08-12T09:33:09Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11841v1"
+    ],
+    "abstract": "We prove sharp Weinstock inequalities for the first nonzero Steklov eigenvalue of smooth outward-minimizing domains in Euclidean space and hyperbolic space. The method is based on the weak inverse mean curvature flow of Huisken--Ilmanen. The main new ingredient is an endpoint distributional monotonicity argument obtained from the calibrated weak formulation and the Gauss--Green formula for divergence-measure fields.",
+    "status": "found"
+  },
+  "2608.11842": {
+    "arxiv_id": "2608.11842",
+    "title": "Existence and non-existence results for a fractional Lane-Emden equation with nonlocal Neumann conditions",
+    "authors": [
+      "Eleonora Cinti",
+      "Matteo Talluri",
+      "Tobias Weth"
+    ],
+    "submission_date": "2026-08-12T09:33:43Z",
+    "latest_updated": "2026-08-12T09:33:43Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11842v1"
+    ],
+    "abstract": "We consider the fractional Lane-Emden equation with a nonlocal Neumann condition in a half-space. We establish the existence of non-constant solutions for the critical problem in any dimension. On the other hand, we show that, in dimension $n=1$, the subcritical problem admits only the trivial solution. This result follows from a new Pohozaev-type identity, which we obtain by using suitable decay estimates for the solutions.",
+    "status": "found"
+  },
+  "2608.11843": {
+    "arxiv_id": "2608.11843",
+    "title": "When the Knowledge Base Becomes the Gold Standard: Measuring Resource-Shared Evaluation Loops in Entity-Level Machine Translation",
+    "authors": [
+      "Jinhyung Bae",
+      "Dain Kil",
+      "Seongmin Oh",
+      "Seungmin Lee"
+    ],
+    "submission_date": "2026-08-12T09:33:59Z",
+    "latest_updated": "2026-08-12T09:33:59Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11843v1"
+    ],
+    "abstract": "The Seungjeongwon Ilgi, a UNESCO Memory of the World record, is only 37.4% translated, and the most conspicuous failure mode in automatic translation is the person name -- a misread name corrupts the historical fact rather than merely the surface. Low-resource historical domains have no expert gold standard for entity translation, so practitioners substitute a knowledge base (KB) for the gold. That KB is the same resource injected into the system: scoring becomes self-referential and the metric measures instruction compliance rather than translation quality. We measure this loop. Using expert person-name annotations from the National Institute of Korean History as a gold independent of the injection pipeline, we hold the entity set fixed and vary only the provenance of the correct reading. Of 527 expert-annotated mentions, only 31.1% lie outside the injection pipeline, and the residual loop is not uniform -- in the overlapping segment the injected reading agrees with the human translation 97.8% of the time against 70.1% in the independent one, so the segment that looks healthiest is the one the loop is holding up. Across four models, a difference-in-differences analysis shows the gain from KB injection is confined to the segment whose gold shares the injected resource; in the independent segment it is at or below zero. Post-injection preservation clusters in a narrow 0.910-0.996 band even though baseline capability differs fivefold, so the reported gain is the complement of prior performance and weaker models appear to improve more dramatically. On an independent sample built by removing the construction filter, the measure replicates within model (overlapping intervals) while discriminating between models (non-overlapping intervals) -- it reflects a property of the model, not of the sample.",
+    "status": "found"
+  },
+  "2608.11844": {
+    "arxiv_id": "2608.11844",
+    "title": "BoltNet: An Ultra-Lightweight Convolutional Network for On-Device Plant Species Identification",
+    "authors": [
+      "Daniel Rossi",
+      "Guido Borghi",
+      "Roberto Vezzani"
+    ],
+    "submission_date": "2026-08-12T09:34:52Z",
+    "latest_updated": "2026-08-12T09:34:52Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11844v1"
+    ],
+    "abstract": "Automated plant species identification from citizen-science imagery is an established, demanding fine-grained recognition problem: large taxonomic label spaces, visually similar species, and long-tailed observations require real model capacity, while field use constrains memory, latency, and power. Model size is only part of the deployment cost: intermediate activations held in memory during inference and platformdependent execution behavior matter too, so compact recognition must be assessed on target hardware rather than through complexity metrics alone. We present BoltNet, an ultra-lightweight fully convolutional architecture combining a Spatial Redistribution Bottleneck and Logit PreSampling to improve the tradeoff between predictive performance and model size in high-cardinality classification, and report the AccuracyCompression Tradeoff as a complementary diagnostic. On Pl@ntNet300K, BoltNet reaches 0.682 F1-score with 341K parameters (1.37 MB), the highest F1-score among evaluated models below 2 MB and close to substantially larger convolutional backbones. Model-only measurements on a Raspberry Pi 5, Jetson Orin Nano, and Hailo-8 characterize execution across CPU, GPU, and NPU platforms, where BoltNet is the most consistently efficient model, with the best FPS/W on the GPU and NPU and second-best on the CPU. Results on AIDERv2 and CLRS provide secondary evidence of transfer across environmental image-classification tasks. Code available at: https://codeberg.org/danielrossi/BoltNet",
+    "status": "found"
+  },
+  "2608.11845": {
+    "arxiv_id": "2608.11845",
+    "title": "ResPCC: A Loss-Resilient Neural Point Cloud Codec over Lossy Networks",
+    "authors": [
+      "Xueqin Niu",
+      "Mufan Liu",
+      "Yifan Wang",
+      "Le Yang",
+      "Jun Sun",
+      "Yiling Xu"
+    ],
+    "submission_date": "2026-08-12T09:37:51Z",
+    "latest_updated": "2026-08-12T09:37:51Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11845v1"
+    ],
+    "abstract": "Point cloud compression (PCC) is critical for efficient storage and transmission of 3D data. While recent learning-based PCC methods achieve good rate-distortion (R-D) performance, they generally rely on ideal transmission conditions. In practice, packet loss is a common issue and can severely distort latent features, causing coordinate drift and geometric degradation. To address this challenge, we present ResPCC, the first end-to-end neural point cloud codec designed to offer intrinsic resilience against data loss. Our framework is loss-rate-aware and adapts to diverse packet loss conditions. At the encoder, we introduce a Condition-Adaptive Latent Modulation (CALM) module to adjust latent feature distributions according to the perceived loss rate, as well as a Spatial-Channel Interleaving (SCI) mechanism that transforms channel-wise data extinction into spatially scattered element-wise missing patterns. At the decoder, we develop a Mask-Aware Graph-based Latent Restoration (MGLR) module, followed by a Dictionary-based Refinement (DBR) stage to recover corrupted features and align them with canonical priors. Evaluations on ShapeNet and SemanticKITTI under 5\\% to 30\\% packet loss rates show that ResPCC consistently delivers superior stability and R-D performance over baselines. Our framework maintains high reconstruction fidelity under lossy conditions, providing a reliable solution for 3D data transmission over practical networks. Code is available at https://github.com/starrynight314/ResPCC.",
+    "status": "found"
+  },
+  "2608.11846": {
+    "arxiv_id": "2608.11846",
+    "title": "From Overlooked to Explored: Recovering Item Relations via Mixture of Perspectives for Sequential Recommendation",
+    "authors": [
+      "Junyoung Kim",
+      "Wonbin Kweon",
+      "Woojoo Kim",
+      "Jaehyung Lim",
+      "Dongha Kim",
+      "Hwanjo Yu"
+    ],
+    "submission_date": "2026-08-12T09:39:04Z",
+    "latest_updated": "2026-09-16T15:15:49Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.11846v1",
+      "2608.11846v2"
+    ],
+    "abstract": "Capturing user preference from a user's interaction sequence is the central challenge of Sequential Recommendation (SR). This preference intuitively emerges from inter-item relations: each item transition reflects a preference embedded in the relations between items, making the faithful capture of these relations essential for accurate recommendation. For this reason, self-attention is dominant in sequential recommendation for its ability to compute pairwise item interactions, yet our empirical analysis reveals that it consistently suffers from similarity bias across various types of transformer-based SR models: dot-product attention scores disproportionately favor similar items, systematically overlooking heterogeneous relations with meaningful preference signals and directly limiting recommendation performance. To address this, we propose PRISM (Perspective-based Relational Insight Synthesis Module), a module that re-examines item relations from multiple perspectives. PRISM employs K Perspective Lenses to calibrate attention from distinct viewpoints, combining an Affinity View that refines homogeneous relations and a Contrast View that exposes heterogeneous ones suppressed by similarity bias, enabling the model to capture the full spectrum of user preferences. Extensive experiments on seven real-world benchmarks demonstrate that PRISM consistently outperforms state-of-the-art baselines. Our code is available at https://github.com/327aem/PRISM/.",
+    "status": "found"
+  }
+}

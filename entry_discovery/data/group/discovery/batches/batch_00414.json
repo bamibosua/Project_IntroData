@@ -1,0 +1,447 @@
+{
+  "2601.21436": {
+    "arxiv_id": "2601.21436",
+    "title": "From Consistency to Complementarity: Aligned and Disentangled Multi-modal Learning for Time Series Understanding and Reasoning",
+    "authors": [
+      "Hang Ni",
+      "Weijia Zhang",
+      "Fei Wang",
+      "Zezhi Shao",
+      "Hao Liu"
+    ],
+    "submission_date": "2026-01-29T09:13:46Z",
+    "latest_updated": "2026-02-04T05:39:31Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.21436v1",
+      "2601.21436v2"
+    ],
+    "abstract": "Advances in multi-modal large language models (MLLMs) have inspired time series understanding and reasoning tasks, that enable natural language querying over time series, producing textual analyses of complex temporal dynamics. Recent attempts hybridize numerical time series with their visualized plots, facilitating precise value reasoning and visual structure comprehension for comprehensive time series understanding of MLLMs. However, effective numerical-visual modality integration remains challenging due to fine-grained temporal misalignment across modalities and severe entanglement between shared and modality-specific semantics, which hinder localized interpretation and complementary reasoning. To address these issues, we propose MADI, a multi-modal LLM enhanced with fine-grained alignment and disentangled interaction, featuring (1) Patch-level Alignment, which enforces physically grounded fine-grained correspondence across heterogeneous modalities, (2) Discrete Disentangled Interaction, which separates modality-common semantics into compact discrete latents and adaptively synergizes the purified modality-unique information, and (3) Critical-token Highlighting, which emphasizes informative, query-relevant signals for robust reasoning. Experiments on synthetic and real-world benchmarks show that MADI consistently outperforms general-purpose LLMs and time-series-specialized MLLMs.",
+    "status": "found"
+  },
+  "2601.21437": {
+    "arxiv_id": "2601.21437",
+    "title": "Accurate Network Traffic Matrix Prediction via LEAD: a Large Language Model-Enhanced Adapter-Based Conditional Diffusion Model",
+    "authors": [
+      "Yu Sun",
+      "Yaqiong Liu",
+      "Nan Cheng",
+      "Jiayuan Li",
+      "Zihan Jia",
+      "Xialin Du",
+      "Mugen Peng"
+    ],
+    "submission_date": "2026-01-29T09:16:05Z",
+    "latest_updated": "2026-02-02T16:13:21Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.21437v1",
+      "2601.21437v2"
+    ],
+    "abstract": "Driven by the evolution toward 6G and AI-native edge intelligence, network operations increasingly require predictive and risk-aware adaptation under stringent computation and latency constraints. Network Traffic Matrix (TM), which characterizes flow volumes between nodes, is a fundamental signal for proactive traffic engineering. However, accurate TM forecasting remains challenging due to the stochastic, non-linear, and bursty nature of network dynamics. Existing discriminative models often suffer from over-smoothing and provide limited uncertainty awareness, leading to poor fidelity under extreme bursts. To address these limitations, we propose LEAD, a Large Language Model (LLM)-Enhanced Adapter-based conditional Diffusion model. First, LEAD adopts a \"Traffic-to-Image\" paradigm to transform traffic matrices into RGB images, enabling global dependency modeling via vision backbones. Then, we design a \"Frozen LLM with Trainable Adapter\" model, which efficiently captures temporal semantics with limited computational cost. Moreover, we propose a Dual-Conditioning Strategy to precisely guide a diffusion model to generate complex, dynamic network traffic matrices. Experiments on the Abilene and GEANT datasets demonstrate that LEAD outperforms all baselines. On the Abilene dataset, LEAD attains a remarkable 45.2% reduction in RMSE against the best baseline, with the error margin rising only marginally from 0.1098 at one-step to 0.1134 at 20-step predictions. Meanwhile, on the GEANT dataset, LEAD achieves a 0.0258 RMSE at 20-step prediction horizon which is 27.3% lower than the best baseline.",
+    "status": "found"
+  },
+  "2601.21438": {
+    "arxiv_id": "2601.21438",
+    "title": "Analytic Solution for the Motion of Spinning Particles in Plane Gravitational Wave Spacetime",
+    "authors": [
+      "Ke Wang"
+    ],
+    "submission_date": "2026-01-29T09:16:37Z",
+    "latest_updated": "2026-05-08T16:35:27Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.21438v1",
+      "2601.21438v2"
+    ],
+    "abstract": "The interaction between spin and gravitational waves causes spinning bodies to deviate from their geodesics. In this work, we obtain the analytic solution of the Mathisson--Papapetrou--Dixon equations at linear order in the spin for plane gravitational wave spacetimes. Our approach combines a parallel-transported tetrad with the translational Killing symmetries of plane wave spacetimes, yielding six conserved quantities that fully determine the momentum, spin evolution, and worldline. The resulting transverse and longitudinal motions are expressed in closed form as single integrals of the retarded time, providing a unified and model-independent framework for computing spin--curvature-induced deviations. This analytic solution offers a versatile tool for studying spin-dependent effects in gravitational memory, Penrose-limit geometries, and high-energy scattering regimes.",
+    "status": "found"
+  },
+  "2601.21439": {
+    "arxiv_id": "2601.21439",
+    "title": "The Paradox of Robustness: Decoupling Rule-Based Logic from Affective Noise in High-Stakes Decision-Making",
+    "authors": [
+      "Jon Chun",
+      "Katherine Elkins"
+    ],
+    "submission_date": "2026-01-29T09:17:05Z",
+    "latest_updated": "2026-04-04T20:22:53Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.21439v1",
+      "2601.21439v2"
+    ],
+    "abstract": "While Large Language Models (LLMs) are widely documented to be sensitive to minor prompt perturbations and prone to sycophantic alignment, their robustness in consequential, rule-bound decision-making remains under-explored. We uncover a striking \"Paradox of Robustness\": despite their known lexical brittleness, aligned LLMs exhibit strong robustness to emotional framing effects in rule-bound institutional decision-making. Using a controlled perturbation framework across three high-stakes domains (healthcare, finance, and education), we find a negligible effect size (Cohen's h = 0.003) compared to the substantial biases observed in analogous human contexts (h in [0.3, 0.8]), approximately two orders of magnitude smaller. This invariance persists across eight models with diverse training paradigms, suggesting the mechanisms driving sycophancy and prompt sensitivity do not translate to failures in logical constraint satisfaction. While LLMs may be \"brittle\" to how a query is formatted, they appear considerably more stable against affective attempts to bias rule-bound decisions. To probe the boundary of this finding, we add two reviewer-driven side studies. A five-scenario immigration extension yields a small but statistically detectable +0.8 percentage point shift that remains within a pre-specified +/-3 percentage point Region of Practical Equivalence (ROPE), while a screening-level adversarial narrative pilot finds no meaningful decision shift under stronger LLM-generated prompts. We release a core benchmark (9 base scenarios x 18 condition variants = 162 unique prompts), code, and data to facilitate replicable evaluation.",
+    "status": "found"
+  },
+  "2601.21440": {
+    "arxiv_id": "2601.21440",
+    "title": "MgAl burning chain in M 54: the globular cluster-like properties of a nuclear star cluster",
+    "authors": [
+      "D. A. Alvarez Garay",
+      "A. Mucciarelli",
+      "P. Ventura",
+      "M. Bellazzini",
+      "S. Covella"
+    ],
+    "submission_date": "2026-01-29T09:20:58Z",
+    "latest_updated": "2026-01-29T09:20:58Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.21440v1"
+    ],
+    "abstract": "In this study, we present the chemical abundances of Fe, Mg, Al, Si, and K for a sample of 233 likely member stars of M 54. All the stars were observed with the FLAMES high-resolution multi-object spectrograph mounted at the VLT. Our analysis confirmed the presence of a large metallicity range in M 54, with the majority of the stars having -1.8 < [Fe/H] < -1.0 dex and few stars with [Fe/H] > -1.0 dex. The mean value of the total sample is [Fe/H] = -1.40 (σ = 0.22 dex). A Markov Chain Monte Carlo analysis revealed that the observed spread in [Fe/H] is compatible with a non-null intrinsic iron dispersion. We also found that the metallicity distribution function and the broadening of the red giant branch of M 54 are not compatible with a single age, but instead they suggest a wide age range from ~ 13 Gyr to ~ 1 - 2 Gyr or a smaller age range if a significant He enhancement (Y ~ 0.35/0.40) is present in the most metal-rich stars. We identified among the stars in M 54 the entire pattern of anticorrelations linked to the MgAl burning cycle. In particular, the metal-rich component displays a higher level of H-burning with the presence of more extended anticorrelations than the metal-poor component. No Mg-poor ([Mg/Fe]<0.0 dex) stars are identified in M 54. The evidence collected so far cannot be explained neither with a globular cluster-like scenario nor with a galactic chemical evolution. The chemical properties of M 54 can be explained within a scenario where this system formed through the merging of two globular clusters, the metal-poor one with standard characteristics and the more metal-rich one with more pronounced chemical anomalies, a possibly younger than the first one. M 54 is confirmed as a key stellar system for explaining the chemical evolution of a nuclear star cluster.",
+    "status": "found"
+  },
+  "2601.21441": {
+    "arxiv_id": "2601.21441",
+    "title": "A Rigidity theorem on conformally compact Einstein manifolds in high dimensions",
+    "authors": [
+      "Yuxin Ge",
+      "Sun-Yung Alice Chang"
+    ],
+    "submission_date": "2026-01-29T09:21:11Z",
+    "latest_updated": "2026-01-29T09:21:11Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.21441v1"
+    ],
+    "abstract": "In this paper, we establish a Liouville type rigidity result for a class of asymptotically hyperbolic non-compact Einstein metrics defined on manifolds of dimension $d\\ge 5$ extending the earlier result in dimension $d=4$.",
+    "status": "found"
+  },
+  "2601.21442": {
+    "arxiv_id": "2601.21442",
+    "title": "Irrationality of rapidly converging series: a problem of Erdős and Graham",
+    "authors": [
+      "Kevin Barreto",
+      "Jiwon Kang",
+      "Sang-hyun Kim",
+      "Vjekoslav Kovač",
+      "Shengtong Zhang"
+    ],
+    "submission_date": "2026-01-29T09:22:08Z",
+    "latest_updated": "2026-07-08T05:12:28Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2601.21442v1",
+      "2601.21442v2",
+      "2601.21442v3"
+    ],
+    "abstract": "Answering a question of Erdős and Graham, we show that the double exponential growth condition $\\limsup_{n\\to\\infty}a_n^{1/φ^n}=\\infty$ for a strictly increasing sequence of positive integers $\\{a_n\\}_{n=1}^\\infty$ is sufficient for the series $\\sum_{n=1}^\\infty 1/(a_n a_{n+1})$ to have an irrational sum; here $φ$ denotes the golden ratio. We also provide a positive generalization to $\\sum_{n=1}^\\infty 1/(a_n^{w_0}\\cdots a_{n+d-1}^{w_{d-1}})$, and a negative result showing that some of its instances are essentially optimal. The original problem was autonomously solved by the AI agent \\emph{Aletheia}, powered by Gemini Deep Think, while the remaining material is largely a product of human-AI interactions.",
+    "status": "found"
+  },
+  "2601.21443": {
+    "arxiv_id": "2601.21443",
+    "title": "Optically reconfigurable canalization of exciton-polaritons in a non-hyperbolic perovskite",
+    "authors": [
+      "Jiahao Ren",
+      "Olha Bahrova",
+      "Feng Jin",
+      "Hao Zheng",
+      "Dmitry Solnyshkov",
+      "Cheng-Wei Qiu",
+      "Guillaume Malpuech",
+      "Rui Su"
+    ],
+    "submission_date": "2026-01-29T09:22:46Z",
+    "latest_updated": "2026-01-29T09:22:46Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.21443v1"
+    ],
+    "abstract": "The ability to steer polariton flow on-demand holds significant promise towards nanophotonic applications and photonic circuitry. Polariton canalization, exhibiting intrinsic collimation and diffractionless transport, emerges as a promising solution without guiding structures. However, earlier demonstrations have been restricted to certain crystal surfaces with intrinsic hyperbolic responses and operated in the linear regime. Here, we experimentally demonstrate canalization of nonlinear exciton polariton condensates with optical reconfigurability in a birefringent CsPbBr3 perovskite crystal without intrinsic hyperbolic response. By embedding the birefringent perovskite crystal into a planar microcavity, the interplay between cavity transverse-electric-transverse-magnetic splitting and crystalline birefringence produces an anisotropic band geometry with a hyperbolic-flat-parabolic evolution of polaritonic isofrequency contours (IFCs). Nonresonant pumping drives exciton polariton condensation onto flat far-field contours with nonlinear emission amplification, leading to coherent canalized flows with over twentyfold collimation with respect to arc-shaped contours. Reconfiguring the optical pumping-spot size allows switching the nonlinear polariton condensates into hyperbolic and parabolic IFC regimes, leading to divergent propagation behaviour with collimating reconfiguration. Our study reveals a distinct canalization framework for shaping the nonlinear exciton-polariton condensate flows, opening opportunities for all-optical polaritonic logic circuits based on stabilized nonlinear quantum interconnects.",
+    "status": "found"
+  },
+  "2601.21444": {
+    "arxiv_id": "2601.21444",
+    "title": "APB-V: Accelerating Long-Video Understanding via Sequence-Parallelism-aware Approximate Attention",
+    "authors": [
+      "Yuxiang Huang",
+      "Mingye Li",
+      "Xu Han",
+      "Chaojun Xiao",
+      "Weilin Zhao",
+      "Ao Sun",
+      "Ziqi Yuan",
+      "Hao Zhou",
+      "Fandong Meng",
+      "Zhiyuan Liu"
+    ],
+    "submission_date": "2026-01-29T09:23:13Z",
+    "latest_updated": "2026-06-01T05:52:56Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.21444v1",
+      "2601.21444v2"
+    ],
+    "abstract": "The efficiency of long-video inference remains a critical bottleneck, mainly due to the dense computation in the prefill stage of Large Multimodal Models (LMMs). Existing methods either compress visual embeddings or apply sparse attention on a single GPU, yielding limited acceleration or degraded performance and restricting LMMs from handling longer, more complex videos. To overcome these issues, we propose APB-V, a sequence-parallel framework with optimized attention that accelerates long-video inference across multiple GPUs. By distributing approximate attention, APB-V reduces computation and increases parallelism, enabling efficient processing of more visual embeddings without compression and thereby improving task performance. System-level optimizations, such as load balancing and fused forward passes, further unleash the potential of APB-V, delivering speedups of 12.72x, 1.70x, and 1.18x over FlashAttn, ZigZagRing, and APB, without notable performance loss. Code available at https://github.com/thunlp/APB",
+    "status": "found"
+  },
+  "2601.21445": {
+    "arxiv_id": "2601.21445",
+    "title": "Classifying integer tilings and hypertilings",
+    "authors": [
+      "Oleg Karpenkov",
+      "Ian Short",
+      "Matty van Son",
+      "Andrei Zabolotskii"
+    ],
+    "submission_date": "2026-01-29T09:25:11Z",
+    "latest_updated": "2026-10-14T08:28:00Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2601.21445v1",
+      "2601.21445v2",
+      "2601.21445v3"
+    ],
+    "abstract": "There are two objectives to this work: to classify all tame integer tilings and to classify all tame integer hypertilings. Motivation for the first objective comes from Conway and Coxeter's modelling of positive integer friezes using triangulated polygons, which has received significant attention since the discovery of cluster algebras by Fomin and Zelevinsky in 2002. Assem, Reutenauer, and Smith introduced $\\text{SL}_2$-tilings as generalisations of friezes, and Bessenrodt, Holm, and Jørgensen classified positive integer $\\text{SL}_2$-tilings using infinite triangulated polygons. Here we consider $N$-tilings, of which $\\text{SL}_2$-tilings are the case $N=1$. We provide a geometric model for all tame integer $N$-tilings using a generalisation of the Farey graph in the hyperbolic plane. Highlights of this model include classifications of all positive integer $N$-tilings and of all positive rational friezes, with entries encoded by lambda lengths or weight data of triangulated polygons. The second objective is motivated by Bhargava's celebrated study of binary quadratic forms using integer cubes and by an observation of Demonet et al. that there is essentially only one three-dimensional positive integer tiling with $\\text{SL}_2$ cross sections. We consider a richer class of three-dimensional tilings, which we call hypertilings, using the Cayley hyperdeterminant. We classify all tame integer hypertilings using generalised Farey graphs; remarkably, those with Cayley hyperdeterminant 1 prove to have a simple description in terms of triple Hadamard products of integer pairs.",
+    "status": "found"
+  },
+  "2601.21446": {
+    "arxiv_id": "2601.21446",
+    "title": "Synthetic Pattern Generation and Detection of Financial Activities using Graph Autoencoders",
+    "authors": [
+      "Francesco Zola",
+      "Lucia Muñoz",
+      "Andrea Venturi",
+      "Amaia Gil"
+    ],
+    "submission_date": "2026-01-29T09:25:13Z",
+    "latest_updated": "2026-01-29T09:25:13Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.21446v1"
+    ],
+    "abstract": "Illicit financial activities such as money laundering often manifest through recurrent topological patterns in transaction networks. Detecting these patterns automatically remains challenging due to the scarcity of labeled real-world data and strict privacy constraints. To address this, we investigate whether Graph Autoencoders (GAEs) can effectively learn and distinguish topological patterns that mimic money laundering operations when trained on synthetic data. The analysis consists of two phases: (i) data generation, where synthetic samples are created for seven well-known illicit activity patterns using parametrized generators that preserve structural consistency while introducing realistic variability; and (ii) model training and validation, where separate GAEs are trained on each pattern without explicit labels, relying solely on reconstruction error as an indicator of learned structure. We compare three GAE implementations based on three distinct convolutional layers: Graph Convolutional (GAE-GCN), GraphSAGE (GAE-SAGE), and Graph Attention Network (GAE-GAT). Experimental results show that GAE-GCN achieves the most consistent reconstruction performance across patterns, while GAE-SAGE and GAE-GAT exhibit competitive results only in few specific patterns. These findings suggest that graph-based representation learning on synthetic data provides a viable path toward developing AI-driven tools for detecting illicit behaviors, overcoming the limitations of financial datasets.",
+    "status": "found"
+  },
+  "2601.21447": {
+    "arxiv_id": "2601.21447",
+    "title": "Trade uncertainty impact on stock-bond correlations: Insights from conditional correlation models",
+    "authors": [
+      "Demetrio Lacava",
+      "Edoardo Otranto"
+    ],
+    "submission_date": "2026-01-29T09:26:35Z",
+    "latest_updated": "2026-01-29T09:26:35Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.21447v1"
+    ],
+    "abstract": "This paper investigates the impact of Trade Policy Uncertainty (TPU) on stock-bond correlation dynamics in the United States. Using daily data on major U.S. stock indices and the 10-year Treasury bond from 2015 to 2025, we estimate correlation within a two-step GARCH-based framework, relying on multivariate specifications, including Constant Conditional Correlation (CCC), Smooth Transition Conditional Correlation (STCC), and Dynamic Conditional Correlation (DCC) models. We extend these frameworks by incorporating TPU index and a presidential dummy to capture effects of trade uncertainty and government cycles. The findings show that constant correlation models are strongly rejected in favor of time-varying specifications. Both STCC and DCC models confirm TPU's central role in driving correlation dynamics, with significant differences across political regimes. DCC models augmented with TPU and political effects deliver the best in-sample fit and strongest forecasting performance, as measured by statistical and economic loss functions.",
+    "status": "found"
+  },
+  "2601.21448": {
+    "arxiv_id": "2601.21448",
+    "title": "ChipBench: A Next-Step Benchmark for Evaluating LLM Performance in AI-Aided Chip Design",
+    "authors": [
+      "Zhongkai Yu",
+      "Chenyang Zhou",
+      "Yichen Lin",
+      "Hejia Zhang",
+      "Haotian Ye",
+      "Junxia Cui",
+      "Zaifeng Pan",
+      "Jishen Zhao",
+      "Yufei Ding"
+    ],
+    "submission_date": "2026-01-29T09:26:55Z",
+    "latest_updated": "2026-02-01T00:41:29Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.21448v1",
+      "2601.21448v2"
+    ],
+    "abstract": "While Large Language Models (LLMs) show significant potential in hardware engineering, current benchmarks suffer from saturation and limited task diversity, failing to reflect LLMs' performance in real industrial workflows. To address this gap, we propose a comprehensive benchmark for AI-aided chip design that rigorously evaluates LLMs across three critical tasks: Verilog generation, debugging, and reference model generation. Our benchmark features 44 realistic modules with complex hierarchical structures, 89 systematic debugging cases, and 132 reference model samples across Python, SystemC, and CXXRTL. Evaluation results reveal substantial performance gaps, with state-of-the-art Claude-4.5-opus achieving only 30.74\\% on Verilog generation and 13.33\\% on Python reference model generation, demonstrating significant challenges compared to existing saturated benchmarks where SOTA models achieve over 95\\% pass rates. Additionally, to help enhance LLM reference model generation, we provide an automated toolbox for high-quality training data generation, facilitating future research in this underexplored domain. Our code is available at https://github.com/zhongkaiyu/ChipBench.git.",
+    "status": "found"
+  },
+  "2601.21449": {
+    "arxiv_id": "2601.21449",
+    "title": "Nimbus: A Unified Embodied Synthetic Data Generation Framework",
+    "authors": [
+      "Zeyu He",
+      "Yuchang Zhang",
+      "Yuanzhen Zhou",
+      "Miao Tao",
+      "Hengjie Li",
+      "Hui Wang",
+      "Yang Tian",
+      "Jia Zeng",
+      "Tai Wang",
+      "Wenzhe Cai",
+      "Yilun Chen",
+      "Ning Gao",
+      "Jiangmiao Pang"
+    ],
+    "submission_date": "2026-01-29T09:27:31Z",
+    "latest_updated": "2026-02-09T06:57:47Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.21449v1",
+      "2601.21449v2"
+    ],
+    "abstract": "Scaling data volume and diversity is critical for generalizing embodied intelligence. While synthetic data generation offers a scalable alternative to expensive physical data acquisition, existing pipelines remain fragmented and task-specific. This isolation leads to significant engineering inefficiency and system instability, failing to support the sustained, high-throughput data generation required for foundation model training. To address these challenges, we present Nimbus, a unified synthetic data generation framework designed to integrate heterogeneous navigation and manipulation pipelines. Nimbus introduces a modular four-layer architecture featuring a decoupled execution model that separates trajectory planning, rendering, and storage into asynchronous stages. By implementing dynamic pipeline scheduling, global load balancing, distributed fault tolerance, and backend-specific rendering optimizations, the system maximizes resource utilization across CPU, GPU, and I/O resources. Our evaluation demonstrates that Nimbus achieves a 2-3X improvement in end-to-end throughput compared to unoptimized baselines and ensuring robust, long-term operation in large-scale distributed environments. This framework serves as the production backbone for the InternData suite, enabling seamless cross-domain data synthesis.",
+    "status": "found"
+  },
+  "2601.21450": {
+    "arxiv_id": "2601.21450",
+    "title": "Variance & Greediness: A comparative study of metric-learning losses",
+    "authors": [
+      "Donghuo Zeng",
+      "Hao Niu",
+      "Zhi Li",
+      "Masato Taya"
+    ],
+    "submission_date": "2026-01-29T09:28:30Z",
+    "latest_updated": "2026-01-29T09:28:30Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.21450v1"
+    ],
+    "abstract": "Metric learning is central to retrieval, yet its effects on embedding geometry and optimization dynamics are not well understood. We introduce a diagnostic framework, VARIANCE (intra-/inter-class variance) and GREEDINESS (active ratio and gradient norms), to compare seven representative losses, i.e., Contrastive, Triplet, N-pair, InfoNCE, ArcFace, SCL, and CCL, across five image-retrieval datasets. Our analysis reveals that Triplet and SCL preserve higher within-class variance and clearer inter-class margins, leading to stronger top-1 retrieval in fine-grained settings. In contrast, Contrastive and InfoNCE compact embeddings are achieved quickly through many small updates, accelerating convergence but potentially oversimplifying class structures. N-pair achieves a large mean separation but with uneven spacing. These insights reveal a form of efficiency-granularity trade-off and provide practical guidance: prefer Triplet/SCL when diversity preservation and hard-sample discrimination are critical, and Contrastive/InfoNCE when faster embedding compaction is desired.",
+    "status": "found"
+  },
+  "2601.21451": {
+    "arxiv_id": "2601.21451",
+    "title": "BBGKY Hierarrchy for N D0-Branes",
+    "authors": [
+      "J. Kluson"
+    ],
+    "submission_date": "2026-01-29T09:30:00Z",
+    "latest_updated": "2026-01-29T09:30:00Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.21451v1"
+    ],
+    "abstract": "We study statistical description of N D0-branes system that is defined by matrix mechanics. We determine BBGKY hierarchy for collection of distribution functions that gives exact statistical description of this system.",
+    "status": "found"
+  },
+  "2601.21452": {
+    "arxiv_id": "2601.21452",
+    "title": "SAGE: Sequence-level Adaptive Gradient Evolution for Generative Recommendation",
+    "authors": [
+      "Yu Xie",
+      "Xing Kai Ren",
+      "Ying Qi",
+      "Hu Yao"
+    ],
+    "submission_date": "2026-01-29T09:30:13Z",
+    "latest_updated": "2026-02-13T03:06:35Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2601.21452v1",
+      "2601.21452v2",
+      "2601.21452v3"
+    ],
+    "abstract": "Reinforcement learning-based preference optimization is increasingly used to align list-wise generative recommenders with complex, multi-objective user feedback, yet existing optimizers such as Gradient-Bounded Policy Optimization (GBPO) exhibit structural limitations in recommendation settings. We identify a Symmetric Conservatism failure mode in which symmetric update bounds suppress learning from rare positive signals (e.g., cold-start items), static negative-sample constraints fail to prevent diversity collapse under rejection-dominated feedback, and group-normalized multi-objective rewards lead to low-resolution training signals. To address these issues, we propose SAGE (Sequence-level Adaptive Gradient Evolution), a unified optimizer designed for list-wise generative recommendation. SAGE introduces sequence-level signal alignment via a geometric-mean importance ratio and a decoupled multi-objective advantage estimator to reduce token-level variance and mitigate reward collapse, together with asymmetric adaptive bounding that applies positive Boost updates to successful slates and an entropy-aware penalty to discourage low-diversity failures. Experiments on Amazon Product Reviews and the large-scale RecIF-Bench demonstrate consistent improvements in top-K accuracy, cold-start recall, and diversity across both Semantic-ID and native-text action spaces, while preserving numerical stability during training. These results suggest that asymmetric, sequence-aware policy optimization provides a principled and effective framework for addressing optimization failures in generative recommendation.",
+    "status": "found"
+  },
+  "2601.21453": {
+    "arxiv_id": "2601.21453",
+    "title": "LION: A Clifford Neural Paradigm for Multimodal-Attributed Graph Learning",
+    "authors": [
+      "Xunkai Li",
+      "Zhengyu Wu",
+      "Zekai Chen",
+      "Henan Sun",
+      "Daohan Su",
+      "Guang Zeng",
+      "Hongchao Qin",
+      "Rong-Hua Li",
+      "Guoren Wang"
+    ],
+    "submission_date": "2026-01-29T09:30:36Z",
+    "latest_updated": "2026-01-29T09:30:36Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.21453v1"
+    ],
+    "abstract": "Recently, the rapid advancement of multimodal domains has driven a data-centric paradigm shift in graph ML, transitioning from text-attributed to multimodal-attributed graphs. This advancement significantly enhances data representation and expands the scope of graph downstream tasks, such as modality-oriented tasks, thereby improving the practical utility of graph ML. Despite its promise, limitations exist in the current neural paradigms: (1) Neglect Context in Modality Alignment: Most existing methods adopt topology-constrained or modality-specific operators as tokenizers. These aligners inevitably neglect graph context and inhibit modality interaction, resulting in suboptimal alignment. (2) Lack of Adaptation in Modality Fusion: Most existing methods are simple adaptations for 2-modality graphs and fail to adequately exploit aligned tokens equipped with topology priors during fusion, leading to poor generalizability and performance degradation. To address the above issues, we propose LION (c\\underline{LI}ff\\underline{O}rd \\underline{N}eural paradigm) based on the Clifford algebra and decoupled graph neural paradigm (i.e., propagation-then-aggregation) to implement alignment-then-fusion in multimodal-attributed graphs. Specifically, we first construct a modality-aware geometric manifold grounded in Clifford algebra. This geometric-induced high-order graph propagation efficiently achieves modality interaction, facilitating modality alignment. Then, based on the geometric grade properties of aligned tokens, we propose adaptive holographic aggregation. This module integrates the energy and scale of geometric grades with learnable parameters to improve modality fusion. Extensive experiments on 9 datasets demonstrate that LION significantly outperforms SOTA baselines across 3 graph and 3 modality downstream tasks.",
+    "status": "found"
+  },
+  "2601.21454": {
+    "arxiv_id": "2601.21454",
+    "title": "4D-CAAL: 4D Radar-Camera Calibration and Auto-Labeling for Autonomous Driving",
+    "authors": [
+      "Shanliang Yao",
+      "Zhuoxiao Li",
+      "Runwei Guan",
+      "Kebin Cao",
+      "Meng Xia",
+      "Fuping Hu",
+      "Sen Xu",
+      "Yong Yue",
+      "Xiaohui Zhu",
+      "Weiping Ding",
+      "Ryan Wen Liu"
+    ],
+    "submission_date": "2026-01-29T09:30:41Z",
+    "latest_updated": "2026-01-29T09:30:41Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.21454v1"
+    ],
+    "abstract": "4D radar has emerged as a critical sensor for autonomous driving, primarily due to its enhanced capabilities in elevation measurement and higher resolution compared to traditional 3D radar. Effective integration of 4D radar with cameras requires accurate extrinsic calibration, and the development of radar-based perception algorithms demands large-scale annotated datasets. However, existing calibration methods often employ separate targets optimized for either visual or radar modalities, complicating correspondence establishment. Furthermore, manually labeling sparse radar data is labor-intensive and unreliable. To address these challenges, we propose 4D-CAAL, a unified framework for 4D radar-camera calibration and auto-labeling. Our approach introduces a novel dual-purpose calibration target design, integrating a checkerboard pattern on the front surface for camera detection and a corner reflector at the center of the back surface for radar detection. We develop a robust correspondence matching algorithm that aligns the checkerboard center with the strongest radar reflection point, enabling accurate extrinsic calibration. Subsequently, we present an auto-labeling pipeline that leverages the calibrated sensor relationship to transfer annotations from camera-based segmentations to radar point clouds through geometric projection and multi-feature optimization. Extensive experiments demonstrate that our method achieves high calibration accuracy while significantly reducing manual annotation effort, thereby accelerating the development of robust multi-modal perception systems for autonomous driving.",
+    "status": "found"
+  },
+  "2601.21455": {
+    "arxiv_id": "2601.21455",
+    "title": "Questioning the Coverage-Length Metric in Conformal Prediction: When Shorter Intervals Are Not Better",
+    "authors": [
+      "Yizhou Min",
+      "Yizhou Lu",
+      "Lanqi Li",
+      "Zhen Zhang",
+      "Jiaye Teng"
+    ],
+    "submission_date": "2026-01-29T09:31:28Z",
+    "latest_updated": "2026-06-16T04:09:47Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.21455v1",
+      "2601.21455v2"
+    ],
+    "abstract": "Conformal prediction(CP) has become a cornerstone of distribution-free uncertainty quantification, conventionally evaluated by its coverage and interval length. This work critically examines the sufficiency of these standard metrics. We demonstrate that the interval length might be deceptively improved through a counter-intuitive approach termed Prejudicial Trick(PT), while the coverage remains valid. Specifically, for any given test sample, PT probabilistically returns an interval, which is either null or constructed using an adjusted confidence level, thereby preserving marginal coverage. While PT potentially yields a deceptively lower interval length, it introduces practical vulnerabilities: the same input can yield completely different prediction intervals across repeated runs of the algorithm. We formally derive the conditions under which PT achieves these misleading improvements and provide extensive empirical evidence across various regression and classification tasks. Furthermore, we introduce a new metric interval stability which helps detect whether a new CP method implicitly improves the length based on such PT-like techniques. Code is available at https://github.com/benben-cd/PT-Conformal-Prediction.",
+    "status": "found"
+  }
+}

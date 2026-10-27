@@ -1,0 +1,428 @@
+{
+  "2608.09047": {
+    "arxiv_id": "2608.09047",
+    "title": "Diversity Matters: Distributional Feature Coverage Sample Selection for Data-Efficient Backdoor Attacks",
+    "authors": [
+      "Yi Yang",
+      "Xiaoke Chen",
+      "Jinyang Huang",
+      "Feng-Qi Cui",
+      "Yu-Tong Guo",
+      "Jia-Cheng Zhao",
+      "Haiming Jin",
+      "Xiaokang Zhou",
+      "Meng Li"
+    ],
+    "submission_date": "2026-08-10T02:52:24Z",
+    "latest_updated": "2026-08-10T02:52:24Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09047v1"
+    ],
+    "abstract": "Backdoor attacks compromise training data so that a model retains clean accuracy but predicts an attacker-chosen target on triggered inputs. At very low poisoning rates, only a few samples convey the trigger--target association, making poison-sample selection critical. Existing methods typically rank candidates using per-sample scores, which can select redundant samples from similar semantic regions, and many require task-specific surrogate training. We propose Distributional Feature Coverage Sample Selection (DFCS), a training-free, trigger-agnostic method that clusters fixed pretrained features into one region per poisoning slot and selects the centroid-nearest sample from each region. A local first-order analysis relates this allocation to feature-coverage and representative-mass terms. Across BadNets and Blended attacks on CIFAR-10, Tiny-ImageNet, and Imagenette, DFCS achieves the highest mean attack success rate among seven selectors in all six dataset--attack settings, averaging $96.30\\%$ and exceeding the strongest comparator in each setting by 4.60 percentage points on average while preserving clean accuracy. These results support distributional feature coverage as an effective selection principle for low-budget dirty-label backdoor attacks.",
+    "status": "found"
+  },
+  "2608.09048": {
+    "arxiv_id": "2608.09048",
+    "title": "GeoAI-based post-segmentation quality validation of building footprints via spatial feature engineering",
+    "authors": [
+      "Shah Imran Ahsan Chowdhury",
+      "Kazi Jihadur Rashid",
+      "Rajsree Das Tuli",
+      "Rahul Saha",
+      "Bulbul Ahammad"
+    ],
+    "submission_date": "2026-08-10T02:55:07Z",
+    "latest_updated": "2026-08-10T02:55:07Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09048v1"
+    ],
+    "abstract": "Deep learning-based building footprint extraction from high-resolution imagery often produces topologically inconsistent vectors unfit for direct GIS database ingestion. To address this, we present a multidomain GeoAI quality control framework that automates error detection to systematically purify vector footprint databases. Candidate footprints were generated across five UAV survey sites in Bangladesh using U-Net (ResNet-34) and SAM-LoRA (ViT-B). The extracted raster masks were vectorized, geometrically regularized, and consolidated under a spatial-exclusivity constraint to eliminate duplicate representations. We used twenty-four predictors capturing geometric, spatial-contextual, and raster-derived spectral and texture properties. Machine Learning (ML) classifiers were trained on a development partition (Sites B-D) and rigorously validated on a spatially independent test set (Site E) excluded from hyperparameter tuning and class balancing. The experimental results demonstrate that geometric and spatial-contextual predictors using Decision Tree (DT) provide the most effective discriminatory evidence for identifying object-level boundary deformations. DT achieved an accuracy of 95.31%, an F1-score of 91.06%, and a Matthews correlation coefficient (MCC) of 0.880 on the unseen testing site. At the database level, this framework successfully identified 87.34% of erroneous footprints while maintaining 98.31% of acceptable structures, reducing the residual error proportion from 27.32% to 4.62% and improving final database purity to 95.38%. This translates into a relative error reduction of 83.09%. The findings indicate that post-segmentation object-level ML provides a highly transferable, robust mechanism for automated quality assurance in production-ready geographic information system (GIS) workflows.",
+    "status": "found"
+  },
+  "2608.09049": {
+    "arxiv_id": "2608.09049",
+    "title": "Security and Privacy Taxonomy Generation from Mobile App Reviews",
+    "authors": [
+      "Moghis Fereidouni",
+      "Krishna Upadhyay",
+      "Umar Farooq",
+      "A. B. Siddique"
+    ],
+    "submission_date": "2026-08-10T02:55:24Z",
+    "latest_updated": "2026-10-19T01:32:36Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.09049v1",
+      "2608.09049v2"
+    ],
+    "abstract": "Mobile app reviews are a rich, continuously renewing source of how users experience privacy and security, yet existing taxonomies of these concerns are hand-crafted and cannot keep pace with the evolving nature of the data. Automating taxonomy construction is the natural response, but scalability is the core challenge: current LLM- and clustering-based methods are developed for scientific corpora of a few thousand documents and do not extend to app review collections numbering in the hundreds of thousands. We address this gap in two ways. First, we filter app reviews for privacy- and security-related content, yielding a comprehensive corpus of over 600K reviews. Second, we introduce TaxoScale, a pipeline that handles taxonomy construction at this scale by extending an expert-defined taxonomy via Recursive Hierarchical Clustering and LLM-based node naming. TaxoScale outperforms strong automatic-taxonomy baselines on path, level, coverage, and novelty metrics, and discovers novel branches absent from prior taxonomies. We publicly release our code and data to support reproducibility and future research.",
+    "status": "found"
+  },
+  "2608.09050": {
+    "arxiv_id": "2608.09050",
+    "title": "Electronic conductivity in anharmonic crystals: Phonon dephasing in the electron-phonon interaction",
+    "authors": [
+      "Mingran Kong",
+      "Bartomeu Monserrat"
+    ],
+    "submission_date": "2026-08-10T02:55:44Z",
+    "latest_updated": "2026-08-10T02:55:44Z",
+    "revised_dates": null,
+    "venue": "Phys. Rev. B 114, L080304 (2026)",
+    "latest_version": 1,
+    "versions": [
+      "2608.09050v1"
+    ],
+    "abstract": "The electron-phonon interaction underpins many material properties, for example, the conductivity of metals and the optoelectronic response of semiconductors. First-principles calculations of the electron-phonon interaction are a powerful tool to quantitatively describe many of these properties in increasingly complex materials. However, one key assumption of all calculations is that phonons have infinite lifetimes, an approximation that may break down when anharmonic phonon-phonon interactions are strong. In this work, we present a theory for the interaction of electrons with finite-lifetime phonons experiencing dephasing. Using a first-principles implementation of the theory, we find that anharmonic dephasing dramatically enhances electron-phonon scattering rates in metallic MgB2. Microscopically, phonon-phonon interactions create new scattering channels that increase the phase space available for electron-phonon scattering. As a result, anharmonic dephasing strongly suppresses conductivity in MgB2, bringing the calculated values substantially closer to experiment within the Boltzmann transport equation framework. This example establishes the importance of finite phonon lifetimes in the evaluation of electron-phonon scattering, and the microscopic mechanism suggests that anharmonic dephasing could play an important role in the conductivity of many metals. More broadly, our theory and first-principles implementation of anharmonic dephasing in the electron-phonon interaction provides a solid foundation to explore this regime in other materials.",
+    "status": "found"
+  },
+  "2608.09051": {
+    "arxiv_id": "2608.09051",
+    "title": "On the Schauder Estimates for Non-local Equations with Drift: The Supercritical Case",
+    "authors": [
+      "Yanfang Li",
+      "Guohuan Zhao"
+    ],
+    "submission_date": "2026-08-10T02:57:05Z",
+    "latest_updated": "2026-08-10T02:57:05Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09051v1"
+    ],
+    "abstract": "We establish a Schauder estimate for a nonlocal Cauchy problem with drift. The leading operator is the generator of a non-degenerate $α$-stable process with $α\\in(0,1)$, and the drift is $β$-Hölder continuous with $β\\in (1-α,1)$. The proof relies on a refined conic Littlewood--Paley decomposition and a one-dimensional one-sided dyadic maximum principle.",
+    "status": "found"
+  },
+  "2608.09052": {
+    "arxiv_id": "2608.09052",
+    "title": "Triple Expert Learning from Noisy Labels for Semi-Supervised Vision Foundation Model Adaptation",
+    "authors": [
+      "Xuanyu Liu",
+      "Zheng Fang",
+      "Hongyang He",
+      "Yundi Hong",
+      "Daizong Liu"
+    ],
+    "submission_date": "2026-08-10T03:00:17Z",
+    "latest_updated": "2026-08-10T03:00:17Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09052v1"
+    ],
+    "abstract": "Semi-supervised adaptation of vision foundation models (VFMs) commonly freezes the pretrained backbone and updates lightweight modules such as LoRA. However, pseudo-labels have mixed reliability, and a single LoRA adapter must absorb reliable, ambiguous, and noisy gradients in the same low-rank space. This can make VFM adaptation sensitive to pseudo-label noise. We propose \\textbf{TriNoL}, a \\textbf{Tri}ple-expert learning framework from \\textbf{No}isy \\textbf{L}abels for semi-supervised VFM adaptation. TriNoL routes unlabeled samples into three confidence regions and assigns them to three LoRA experts: a Positive Expert for high-confidence pseudo-labels, an Alignment Expert for medium-confidence ambiguous samples, and a Negative Expert for low-confidence noisy samples. The VFM backbone remains frozen, and only the LoRA experts and classifier head are updated. By separating different pseudo-label reliability regions into specialized adaptation paths, TriNoL improves robustness to noisy supervision while keeping the training cost low.",
+    "status": "found"
+  },
+  "2608.09053": {
+    "arxiv_id": "2608.09053",
+    "title": "Diagnosing as Cardiologists Do: ECG Agents with Doctor-Grounded Priors for Clinical Reasoning Across Diseases and Populations",
+    "authors": [
+      "Hongxiang Gao",
+      "He-yang Xu",
+      "Yuwen Li",
+      "Minghui Zhao",
+      "Zhipeng Cai",
+      "Xingyao Wang",
+      "Chenxi Yang",
+      "Jianqing Li",
+      "Chengyu Liu"
+    ],
+    "submission_date": "2026-08-10T03:00:35Z",
+    "latest_updated": "2026-08-10T03:00:35Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09053v1"
+    ],
+    "abstract": "Cardiologists interpret electrocardiograms by localizing waveform components, measuring rhythm and interval patterns, and translating these structured observations into diagnostic evidence. Whether this expert reading process can serve as an effective prior for ECG agents remains unclear. To address this question, we introduce LuminaECG, a clinically structured ECG reasoning framework that reformulates ECG interpretation as measurement-grounded visual reading. ECG signals are rendered on standard electrocardiographic grid paper to preserve the spatial and scale cues used in clinical reading. P-wave, QRS-complex, and T-wave boundaries are explicitly delineated, and color-coded segmentation decomposes the waveform into discrete visual measurement primitives. A general 2B vision-language backbone is then trained with low-rank supervised fine-tuning to associate these primitives with diagnostic reasoning, without architectural modification. Across open, proprietary, and ECG-specialist zero-shot baselines, LuminaECG improves both waveform measurement and diagnostic recovery. It reaches a clinically meaningful reader tier on the CODE-test benchmark, transfers across geographically diverse ECG datasets without retraining, and generates reports whose structure contains an emergent prognostic signal. These findings suggest that effective ECG agents require not only larger models, but supervision that preserves the alignment between measurable waveform evidence and clinical knowledge.",
+    "status": "found"
+  },
+  "2608.09054": {
+    "arxiv_id": "2608.09054",
+    "title": "Altermagnetism-Induced Spin-resolved electronic structure in Janus FeX0.5Y0.5 Monolayers (X, Y = S, Se, Te)",
+    "authors": [
+      "Mengyang Zhang",
+      "Jie Li",
+      "Yifei Chen",
+      "Shifang Li",
+      "Zhentao Fu",
+      "Jianxin Zhong"
+    ],
+    "submission_date": "2026-08-10T03:00:42Z",
+    "latest_updated": "2026-10-14T23:56:25Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.09054v1",
+      "2608.09054v2"
+    ],
+    "abstract": "Realizing the spin-resolved electronic properties in superconducting materials stands as a critical frontier, offering both novel fundamental physics and potential for dissipationless spin-based devices. Here, we predict a series of Janus FeX0.5Y0.5 monolayers derived from iron-based superconductors (e.g., FeSe, FeTe, and FeS) by using Kondo-type model and first-principles calculations. These Janus structures exhibit significant spin-splittingelectronic states, large topological band gaps (51.4 meV) and high Néel temperatures (415 K). We further reveal that valley polarization can be effectively tuned via applied in-plane strain and the resulting valley-polarized anomalous Hall conductivity can be manipulated by shifting the Fermi level. Our work suggests a new strategy based on altermagnetism for engineering spin-splitting states in superconducting systems and inspires further exploration of superconducting spintronics.",
+    "status": "found"
+  },
+  "2608.09055": {
+    "arxiv_id": "2608.09055",
+    "title": "Repeated-Game Security for Restaking-Based Verifiable Inference",
+    "authors": [
+      "Zhenhang Shang",
+      "Yingzhe Yu",
+      "Kani Chen"
+    ],
+    "submission_date": "2026-08-10T03:03:56Z",
+    "latest_updated": "2026-08-10T03:03:56Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09055v1"
+    ],
+    "abstract": "Restaking-based protocols enable verifiable LLM inference without the high proving cost of zkML or the hardware trust assumptions of TEEs. Their security is commonly justified by a one-round slashing condition: a rational provider should not cheat when the expected penalty exceeds the cost saving from dishonest inference. This paper shows that this condition can overstate security when inference is supplied repeatedly under the same stake. We model verifiable inference as a discounted repeated game and identify a repeated-game gap caused by proportional slashing: detected deviations reduce future penalty exposure, while cost savings are earned again across queries. We derive the gap in closed form, show that it persists under minimum-stake ejection, and extend it to memoryless bounded-slashing protocols covering deployed designs. We propose a deployable mechanism combining history-dependent challenges, reputation-weighted slashing, and stake vesting. The mechanism restores infinite-horizon subgame-perfect incentive compatibility against stationary mixed-strategy deviations above an explicit discount-factor threshold without per-query cryptographic verification. Evaluation across nine open-weight model pairs from 0.5B to 14B parameters shows that the audit signal has the required concave detectability response. A Stackelberg audit-budget analysis shows that improved signal responsiveness reduces the baseline audit rate by 2.6x at discount factor 0.95. Calibrated to deployed parameters, surveyed protocols pass one-round incentive compatibility but admit repeated-game deviations for discount factors between 0.92 and 0.98, with deviation-profit fractions of 1.5%--8%. Our mechanism reduces deviation profits by 31%--54% while maintaining low-latency economic verification.",
+    "status": "found"
+  },
+  "2608.09056": {
+    "arxiv_id": "2608.09056",
+    "title": "Long-range multipartite entanglement in holographic gapless systems",
+    "authors": [
+      "Xiantong Chen",
+      "Xuanting Ji",
+      "Xin-Xiang Ju",
+      "Wen-Peng Li",
+      "Ya-Wen Sun"
+    ],
+    "submission_date": "2026-08-10T03:04:09Z",
+    "latest_updated": "2026-08-10T03:04:09Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09056v1"
+    ],
+    "abstract": "Gapless quantum systems support correlations over arbitrarily long distances, giving rise to power-law long-range entanglement. We investigate long-range entanglement at strong coupling for three-dimensional gapless systems using holography, asking whether multipartite entanglement can exhibit scale-growing behavior and become enhanced at large distances. We show that a broad class of multipartite entanglement quantities share the same leading large-distance scaling exponent determined by the IR geometry. To realize different scaling regimes, we consider hyperscaling-violating IR geometries. Depending on the parameters, long-distance multipartite entanglement can decay, become logarithmic, grow subextensively, or reach a volume law. We also analyze an anisotropic IR geometry \\(\\mathrm{AdS}_{3}\\times\\mathbb{R}^{2}\\), where long-range multipartite entanglement survives along one direction but becomes short-ranged in the transverse gapped directions. These results show that holographic gapless phases can support rich and enhanced long-range multipartite entanglement, providing a nonlocal characterization of the underlying IR physics.",
+    "status": "found"
+  },
+  "2608.09057": {
+    "arxiv_id": "2608.09057",
+    "title": "Model the Edit, Not the Image: Visual Autoregressive Editing from a Source-Centric Perspective",
+    "authors": [
+      "Hongyi Fang",
+      "Chuwen Xie",
+      "Benjia Zhou",
+      "Yu-Xuan Qiu",
+      "Chenggong Hu",
+      "Zhibin Wang",
+      "Chao Chen",
+      "Jianbin Qin",
+      "Rui Mao"
+    ],
+    "submission_date": "2026-08-10T03:05:09Z",
+    "latest_updated": "2026-08-13T16:50:15Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.09057v1",
+      "2608.09057v2"
+    ],
+    "abstract": "Next-scale visual autoregressive models (VARs) have emerged as a powerful generative paradigm, producing high-quality images through efficient coarse-to-fine prediction. However, their potential for text-guided image editing remains largely underexplored. Existing training-free VAR editing approaches often formulate editing as target-conditioned regeneration guided or constrained by the source image, and may rely on inversion, test-time optimization, attention control, or user-provided masks. This generation-centric formulation does not fully exploit the multiscale source representations provided by VARs and may introduce additional computation or intervention. We instead take a source-centric perspective on VAR editing, in which the encoded source image tokens serve as the primary visual state and the editing process focuses on condition-induced changes. Based on this perspective, we propose \\textbf{EditMod}, which compares source- and target-conditioned predictions under a shared autoregressive context, treats their difference as a scale-wise editing direction, and applies it as a residual update to source tokens at selected scales. Experiments show that EditMod achieves leading source-image fidelity while maintaining strong text alignment, and completes end-to-end editing of a 1K image in only 1.57 seconds on a single A100 GPU without per-image preparation.",
+    "status": "found"
+  },
+  "2608.09058": {
+    "arxiv_id": "2608.09058",
+    "title": "When Can Text Embeddings Replace Item Calibration? A Geometric Diagnostic for Semantic Loadings in Multidimensional Adaptive Testing",
+    "authors": [
+      "Amirreza Mehrabi"
+    ],
+    "submission_date": "2026-08-10T03:05:42Z",
+    "latest_updated": "2026-08-10T03:05:42Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09058v1"
+    ],
+    "abstract": "Multidimensional item response theory relies on calibrated item parameters, such as discrimination and category threshold values, which are usually estimated from large samples of human test responses. This study investigates whether the directional loadings of these parameters can be recovered directly from item text using pre-trained sentence embeddings, avoiding the need for initial item calibration. Using the open-source IPIP Big-Five dataset ($n=19{,}719$; 50 items), we built a multidimensional computerized adaptive testing (CAT) simulation using D-optimal item selection. We compared three item loading sources: fitted graded response model parameters, semantic text embeddings, and a lexical baseline. In simulation, semantic embeddings recovered latent trait profiles almost as accurately as fitted parameters (correlation $0.825$ vs. $0.857$), performing noticeably better than simple word overlap ($0.752$). However, the embedding-based model produced inflated posterior variance, showing nearly four times higher measurement uncertainty despite accurate point estimates. We attribute this to collinearity across dimensions, as embedding-derived loadings pointed in similar directions across traits (condition number $137$ vs. $1.0$; mean trait cosine $0.90$). This outcome reflects the shared vocabulary common in personality items. We propose a simple diagnostic metric based on the loading matrix condition number to evaluate whether an item bank is suitable for text-derived loadings prior to testing.",
+    "status": "found"
+  },
+  "2608.09059": {
+    "arxiv_id": "2608.09059",
+    "title": "On the Observability and Controllability of Leaky-ReLU Networks",
+    "authors": [
+      "Liangjie Sun",
+      "Wai-Ki Ching",
+      "Shun-ichi Azuma",
+      "Tatsuya Akutsu"
+    ],
+    "submission_date": "2026-08-10T03:06:48Z",
+    "latest_updated": "2026-08-10T03:06:48Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09059v1"
+    ],
+    "abstract": "This paper studies minimum-node observability and controllability of Leaky rectified linear unit (Leaky-ReLU) networks under degree constraints. The objective is to characterize how many state nodes must be measured or directly actuated to determine the initial state from a finite output sequence or to steer the network between arbitrary states within a finite horizon. For observability, a graph-theoretic analysis yields a class-wide upper bound on the minimum number of observation nodes. We construct a family of networks attaining this bound, thereby determining the exact worst-case minimum number of observation nodes. We also construct networks that are observable from a single node over a finite horizon, establishing the exact best-case value of one. By establishing an observability--controllability duality under the corresponding degree constraints, we obtain analogous exact best- and worst-case results for the minimum number of control nodes. A comparison with ReLU networks shows how replacing the zero negative slope with a nonzero slope changes the observation-node requirement. More generally, the observability arguments require only injectivity of the activation function, whereas the controllability results extend to bijective activation functions.",
+    "status": "found"
+  },
+  "2608.09060": {
+    "arxiv_id": "2608.09060",
+    "title": "A complete characterization of the existence of extremals for the Trudinger-Moser inequality on $\\mathbb{R}^2$ under sharp $L^p$-perturbations",
+    "authors": [
+      "Lu Chen",
+      "Rou Jiang",
+      "Guozhen Lu",
+      "Maochun Zhu"
+    ],
+    "submission_date": "2026-08-10T03:08:23Z",
+    "latest_updated": "2026-08-10T03:08:23Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09060v1"
+    ],
+    "abstract": "In this paper, we investigate the following critical Trudinger--Moser inequality on $\\mathbb R^2$ under sharp $L^p$-perturbations: $$ S(λ,p) := \\sup_{\\substack{u\\in H^{1}(\\mathbb R^{2})\\\\ \\int_{\\mathbb R^2}(|\\nabla u|^2+|u|^2)\\,dx\\le 1}} \\int_{\\mathbb R^2} \\left(e^{4πu^2}-1-λ|u|^p\\right)\\,dx . $$ For $2<p\\le 4$, we prove the existence of a critical value $λ^{\\ast}\\in(0,+\\infty)$ such that $S(λ,p)$ is attained when $λ<λ^{\\ast}$ and is not attained when $λ>λ^{\\ast}$. Moreover, we show that the nonattainment in this range is caused by a vanishing phenomenon. For $p=2$, combining our analysis with the nonexistence results for $L^2$-perturbed Trudinger--Moser inequalities obtained in \\cite{Chenluzhu}, we establish the existence of two finite thresholds $λ_{\\ast}>-\\infty$ and $λ^{\\ast}<+\\infty$ such that $S(λ,2)$ is attained when $λ_{\\ast}<λ<λ^{\\ast}$, and is not attained when $λ<λ_{\\ast}$ or $λ>λ^{\\ast}$. In contrast, for $p>4$, we prove that $S(λ,p)$ is attained for all admissible values of $λ$. Our results indicate that, in the whole-space setting, the $L^p$-perturbation term affects the existence and nonexistence of extremals through either concentration or vanishing phenomena, which is fundamentally different from the bounded-domain case, where existence or nonexistence is governed solely by concentration phenomena. These results provide a complete characterization of how sharp $L^p$ perturbations determine the existence and nonexistence of extremals for critical Trudinger--Moser inequalities on the entire $\\mathbb R^2$. The resulting existence and nonexistence theory exhibits a threshold structure with respect to the $L^p$ pertubation reminiscent of the classical Brezis--Nirenberg phenomenon in the whole space $\\mathbb R^2$.",
+    "status": "found"
+  },
+  "2608.09061": {
+    "arxiv_id": "2608.09061",
+    "title": "Breaking the 4-Approximation Barrier in Strategyproof Two-Facility Location",
+    "authors": [
+      "Mengfan Ma",
+      "Bo Peng"
+    ],
+    "submission_date": "2026-08-10T03:09:52Z",
+    "latest_updated": "2026-08-10T03:09:52Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09061v1"
+    ],
+    "abstract": "We study strategyproof mechanism design without transfers for the two-facility location problem in metric spaces. A mechanism selects two facility locations based on agents' reported locations; each agent incurs her distance to the nearer facility, and the objective is to minimize the expected social cost. A mechanism is strategyproof if no agent ever benefits from misreporting her location. The best approximation ratio achieved by a randomized strategyproof mechanism has been $4$, attained by the Proportional mechanism of Lu, Sun, Wang, and Zhu (EC 2010), and the best lower bound has been $1.045$, due to Lu, Wang, and Zhou (WINE 2009). Neither bound has moved since then, even on the line $\\mathbb{R}$. We improve both bounds. Our main result is a randomized strategyproof mechanism with approximation ratio $11/3 \\approx 3.667$ on every Ptolemaic metric space, a rich class containing all Euclidean spaces. The mechanism randomizes between the Proportional mechanism and a new mechanism that we call Global Pair. Global Pair draws an unordered pair of agents with probability proportional to their distance and opens facilities at their reported locations. Although Global Pair and Proportional each have approximation ratio $4$, the two mechanisms attain their worst-case approximation ratios on complementary instances. Randomizing between them balances these complementary weaknesses and breaks the $4$-approximation barrier. On the lower-bound side, we construct a new two-profile instance that yields a lower bound of $(1+\\sqrt{2})/2 \\approx 1.207$, improving upon the previous lower bound of $1.045$.",
+    "status": "found"
+  },
+  "2608.09062": {
+    "arxiv_id": "2608.09062",
+    "title": "Rickard's question on standard derived equivalences",
+    "authors": [
+      "Wei Hu",
+      "Changchang Xi",
+      "Jin Zhang"
+    ],
+    "submission_date": "2026-08-10T03:10:39Z",
+    "latest_updated": "2026-09-02T08:43:49Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.09062v1",
+      "2608.09062v2"
+    ],
+    "abstract": "In 1991 Rickard asked whether every derived equivalence of algebras over a common field is standard. We construct a series of examples of non-standard derived equivalences, and thus answer the question negatively. Moreover, we give a necessary and sufficient condition for the question to be true.",
+    "status": "found"
+  },
+  "2608.09063": {
+    "arxiv_id": "2608.09063",
+    "title": "The minimal obstruction modulus for quadratic forms",
+    "authors": [
+      "Naoki Ochi"
+    ],
+    "submission_date": "2026-08-10T03:11:33Z",
+    "latest_updated": "2026-08-10T03:11:33Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09063v1"
+    ],
+    "abstract": "Let $Q = ax^2+bxy+cy^2$ be a primitive positive definite integral binary quadratic form with discriminant $Δ= b^2-4ac$. It is known that $Q$ admits a local obstruction; that is, there exist $k,l \\in \\mathbb{Z}$ such that $Q \\not\\equiv l \\pmod k$. We study the minimal obstruction modulus $κ_Q := \\min \\{k \\in \\mathbb{Z}_{\\geq 1} \\mid \\text{there exists } l \\text{ such that } Q \\not\\equiv l \\pmod k \\}$, and we determine $κ_Q$ completely, treating the cases $Δ\\equiv 0 \\pmod 4$ and $Δ\\equiv 1 \\pmod 4$ separately. We also determine the analogous invariants for primitive ternary diagonal forms.",
+    "status": "found"
+  },
+  "2608.09064": {
+    "arxiv_id": "2608.09064",
+    "title": "Unveiling Metal Mixing in a Grand-Design Spiral: A UV-optical multiphase spatially resolved study of M83",
+    "authors": [
+      "Adarsh Ranjan",
+      "Bethan L. James",
+      "Svea Hernandez",
+      "R. Rickards Vaught",
+      "Nimisha Kumari",
+      "Alessandra Aloisi",
+      "Peter Zeidler"
+    ],
+    "submission_date": "2026-08-10T03:11:56Z",
+    "latest_updated": "2026-08-10T03:11:56Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09064v1"
+    ],
+    "abstract": "We present a spatially resolved, multiphase study of chemical enrichment around young star clusters (YSCs) in the nearby grand-design spiral M83 by combining far-ultraviolet(UV) absorption-line spectroscopy from HST/COS with cospatial optical spectroscopy from VLT/MUSE and LBT/MODS. Our sample includes 18 YSCs spanning spectroscopic ages of ~1-6 Myr and galactocentric radii out to R/R_{25}=0.56. Neutral (H I) abundances were derived from UV absorption-line spectroscopy and compared with ionised (H II) abundances from reddening-corrected optical emission lines. Because auroral lines are not detected in all regions, we develop and apply an empirical multi-zone electron temperature (T_e) calibration based on strong-line diagnostics to estimate T_e and derive reliable nebular abundances. We measure oxygen(O), sulphur(S), nitrogen(N), and iron(Fe) abundance tracing enrichment from distinct nucleosynthetic channels. The alpha-elements (O and S) exhibit similar behaviour, consistent with enrichment by core-collapse supernovae, whereas Fe shows weaker variations, reflecting its delayed production by Type Ia supernovae. Nitrogen displays the largest phase offset (ionised-neutral), with enhancements of up to $Delta$N/H~1.5 dex and $Delta$N/O>1.5 dex in the ionised gas relative to the neutral phase, indicating localised enrichment by massive stars and inefficient mixing between gas phases on Myr timescales. While the ionised gas exhibits signatures of feedback-regulated chemical enrichment and large-scale abundance gradients, corresponding trends are weak or absent in the neutral gas, consistent with metals remaining largely confined to the immediate star-forming environment during the earliest stages of cluster evolution in a massive grand-design spiral.",
+    "status": "found"
+  },
+  "2608.09065": {
+    "arxiv_id": "2608.09065",
+    "title": "Self-induced crystalline fluctuation spin-glass state in Mn7C3 binary compounds",
+    "authors": [
+      "Zekun Yu",
+      "Chao Zhou",
+      "Kuo Bao",
+      "Xiaofeng Wang",
+      "Zhaoqing Wang",
+      "Jinming Zhu",
+      "Enxuan Li",
+      "Andong Yao",
+      "Yuhan Meng",
+      "Yufei Ge",
+      "Xingbin Zhao",
+      "Shuailing Ma",
+      "Pinwen Zhu",
+      "Qiang Tao",
+      "Tian Cui"
+    ],
+    "submission_date": "2026-08-10T03:12:35Z",
+    "latest_updated": "2026-08-10T03:12:35Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09065v1"
+    ],
+    "abstract": "Crystalline spin glasses are attractive compounds owing to their unique nature and applications. Here, we synthesised a bulk Pnma-type Mn7C3 spin glass by a high-temperature, high-pressure method. Experimental characterisation including X-ray diffraction and magnetic susceptibility measurements demonstrated that the compound has a triangular Ising-model-based structure, high freezing temperature of 37.4 K, and novel competition mechanism. Theoretical calculations and simulations revealed that the triangular Mn units are spontaneously frustrated and bridge neighbouring Mn units via polarised C atoms and messenger Mn atoms. Triangular C units each share one electron within a three-pronged electron cloud. This electron is the direct cause of frustration and competition in Mn7C3. The competition within the triangular Mn units suggests that the possible magnetic configurations are highly degenerate and that the Mn7C3 spin glass has high robustness. This work introduces a new family of spin glasses with ordered microgeometries that drive electronic structure disorder, and an application-friendly spin-glass material for use in fields like high-efficiency hardware and algorithm design in artificial intelligence.",
+    "status": "found"
+  },
+  "2608.09066": {
+    "arxiv_id": "2608.09066",
+    "title": "SSHafe: A Real-Time SSH Brute Force Attack Detection and Novel Credential Rotation Standard",
+    "authors": [
+      "Aditya Mitra",
+      "Amar Kumar Mandal",
+      "Amaan Rais Shah",
+      "Iqra Naz",
+      "E. Fatih Yetkin",
+      "Tuğçe Ballı"
+    ],
+    "submission_date": "2026-08-10T03:13:41Z",
+    "latest_updated": "2026-08-10T03:13:41Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09066v1"
+    ],
+    "abstract": "SSH remains a critical yet heavily targeted protocol for remote system administration, with password-based authentication exposing servers to large-scale brute-force, dictionary, and credential-spray attacks. Existing rule-based defences such as Fail2Ban fail to detect slow, distributed, or threshold-aware adversaries, while conventional account-recovery mechanisms: email links, OTPs, and out-of-band verification introduce additional vulnerabilities including phishing, session hijacking, and weak authentication binding. This work presents SSHafe, a real-time SSH brute-force detection and mitigation system that combines time-series feature engineering with a lightweight LightGBM classifier to identify attack patterns directly from system authentication logs. A multi-scale sliding-window approach extracts behavioural features such as attempt rates, inter-arrival times, failure ratios, and username diversity, enabling the model to achieve a detection accuracy of 99.96% on benchmark data and strong performance on unlabeled real-world traffic. Upon detecting an attack, SSHafe automatically blocks the targeted user account and delivers an SSH banner guiding legitimate users to a novel passkey-based password-rotation workflow. The proposed novel password reset standard performs authentication and password update in a single cryptographically bound flow, eliminating the need for sessions, cookies, OTPs, or email-based verification, and mitigating phishing, session hijacking, CSRF, and replay attacks. Experiments on an Azure VM and live adversarial traffic demonstrate that SSHafe can identify and suppress brute-force activity within ten seconds, preventing account compromise even with weak credentials.",
+    "status": "found"
+  }
+}

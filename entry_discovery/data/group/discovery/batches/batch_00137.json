@@ -1,0 +1,420 @@
+{
+  "2511.14449": {
+    "arxiv_id": "2511.14449",
+    "title": "DIR-TIR: Dialog-Iterative Refinement for Text-to-Image Retrieval",
+    "authors": [
+      "Zongwei Zhen",
+      "Biqing Zeng"
+    ],
+    "submission_date": "2025-11-18T12:45:10Z",
+    "latest_updated": "2025-11-18T12:45:10Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.14449v1"
+    ],
+    "abstract": "This paper addresses the task of interactive, conversational text-to-image retrieval. Our DIR-TIR framework progressively refines the target image search through two specialized modules: the Dialog Refiner Module and the Image Refiner Module. The Dialog Refiner actively queries users to extract essential information and generate increasingly precise descriptions of the target image. Complementarily, the Image Refiner identifies perceptual gaps between generated images and user intentions, strategically reducing the visual-semantic discrepancy. By leveraging multi-turn dialogues, DIR-TIR provides superior controllability and fault tolerance compared to conventional single-query methods, significantly improving target image hit accuracy. Comprehensive experiments across diverse image datasets demonstrate our dialogue-based approach substantially outperforms initial-description-only baselines, while the synergistic module integration achieves both higher retrieval precision and enhanced interactive experience.",
+    "status": "found"
+  },
+  "2511.14450": {
+    "arxiv_id": "2511.14450",
+    "title": "Hyperion: Hierarchical Scheduling for Parallel LLM Acceleration in Multi-tier Networks",
+    "authors": [
+      "Mulei Ma",
+      "Xinyi Xu",
+      "Minrui Xu",
+      "Zihan Chen",
+      "Yang Yang",
+      "Tony Q. S. Quek"
+    ],
+    "submission_date": "2025-11-18T12:46:51Z",
+    "latest_updated": "2025-12-01T11:01:02Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.14450v1",
+      "2511.14450v2"
+    ],
+    "abstract": "LLMs are increasingly executed in edge where limited GPU memory and heterogeneous computation jointly constrain deployment which motivates model partitioning and request scheduling. In this setting, minimizing latency requires addressing the tight coupling between model placement and request scheduling across heterogeneous nodes, as suboptimal decisions in one domain can negate benefits in the other. In this paper, we propose Hyperion, a hierarchical two-stage framework that jointly optimizes partitioning and scheduling for pipelined LLM inference. Hyperion minimizes latency by balancing resources across tiers without requiring model retraining or incurring significant runtime overhead. Leveraging the timescale difference between partitioning and request arrivals, Stage 1 performs offline, inter-tier partitioning via a Hyperion Split with Dynamic Programming (HypSplit-DP) procedure to produce balanced stage times under tier capacity and memory constraints; to adapt to time-varying load, Stage 2 performs online, intra-tier scheduling with a lightweight Hyperion Scheduling for Real-Time (HypSched-RT) that maps each request to the best available node using real-time estimates of queue length and effective capacity. Experiments with Phi-3-medium demonstrate that Hyperion reduces latency by up to 52.1% (vs. GPipe) and 31.2% (vs. HEFT). Furthermore, Hyperion exhibits superior scalability for long-sequence generation, maintaining 44.5% lower latency and higher GPU utilization.",
+    "status": "found"
+  },
+  "2511.14451": {
+    "arxiv_id": "2511.14451",
+    "title": "PyEMILI: A New Generation Computer-aided Spectral Line Identifier -- II. Emission-line Identification and Plasma Diagnostics of a Sample of Gaseous Nebulae",
+    "authors": [
+      "Zhijun Tu",
+      "Xuan Fang",
+      "Jorge García-Rojas",
+      "Robert Williams",
+      "Jifeng Liu"
+    ],
+    "submission_date": "2025-11-18T12:52:05Z",
+    "latest_updated": "2025-11-18T12:52:05Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.14451v1"
+    ],
+    "abstract": "In order to test the robustness and reliability of the new generation spectral-line identifier PyEMILI, as initially introduced in Paper I, in line identification and establish a reference/benchmark dataset for future spectroscopic studies, we run the code on the line lists of a selected sample of emission-line nebulae, including planetary nebulae (PNe), HII regions, and Herbig-Haro (HH) objects with deep high-dispersion spectroscopic observations published over the past two decades. The automated line identifications by PyEMILI demonstrate significant improvements in both completeness and accuracy compared to the previous manual identifications in the literature. Since our last report of PyEMILI, the atomic transition database used by the code has been further expanded by cross-matching the Kurucz Line Lists. Moreover, to aid the PyEMILI identification of numerous faint optical recombination lines (ORLs) of CII, NII, OII and NeII, we compiled a new dataset of effective recombination coefficients for these nebular lines, and created a new subroutine in the code to generate theoretical spectra of heavy-element ORLs at various electron temperature and density cases; these theoretical spectra can be used to fit the observed recombination spectrum of a PN to obtain the electron temperature, density and ionic abundances using the Markov-Chain Monte Carlo (MCMC) method. We present MCMC-derived parameters for a sample of PNe. This work establishes PyEMILI as a robust and versatile tool for both line identification and plasma diagnostics in deep spectroscopy of gaseous nebulae.",
+    "status": "found"
+  },
+  "2511.14452": {
+    "arxiv_id": "2511.14452",
+    "title": "Hybrid Modeling of Photoplethysmography for Non-invasive Monitoring of Cardiovascular Parameters",
+    "authors": [
+      "Emanuele Palumbo",
+      "Sorawit Saengkyongam",
+      "Maria R. Cervera",
+      "Jens Behrmann",
+      "Andrew C. Miller",
+      "Guillermo Sapiro",
+      "Christina Heinze-Deml",
+      "Antoine Wehenkel"
+    ],
+    "submission_date": "2025-11-18T12:56:20Z",
+    "latest_updated": "2025-11-18T12:56:20Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.14452v1"
+    ],
+    "abstract": "Continuous cardiovascular monitoring can play a key role in precision health. However, some fundamental cardiac biomarkers of interest, including stroke volume and cardiac output, require invasive measurements, e.g., arterial pressure waveforms (APW). As a non-invasive alternative, photoplethysmography (PPG) measurements are routinely collected in hospital settings. Unfortunately, the prediction of key cardiac biomarkers from PPG instead of APW remains an open challenge, further complicated by the scarcity of annotated PPG measurements. As a solution, we propose a hybrid approach that uses hemodynamic simulations and unlabeled clinical data to estimate cardiovascular biomarkers directly from PPG signals. Our hybrid model combines a conditional variational autoencoder trained on paired PPG-APW data with a conditional density estimator of cardiac biomarkers trained on labeled simulated APW segments. As a key result, our experiments demonstrate that the proposed approach can detect fluctuations of cardiac output and stroke volume and outperform a supervised baseline in monitoring temporal changes in these biomarkers.",
+    "status": "found"
+  },
+  "2511.14453": {
+    "arxiv_id": "2511.14453",
+    "title": "Multi-network Topology Underlying Individual Language Learning Success",
+    "authors": [
+      "Peilun Song",
+      "Shuguang Yang",
+      "Xiujuan Geng",
+      "Zhenzhong Gan",
+      "Suiping Wang",
+      "Gangyi Feng"
+    ],
+    "submission_date": "2025-11-18T12:57:41Z",
+    "latest_updated": "2025-11-18T12:57:41Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.14453v1"
+    ],
+    "abstract": "Adult language learning varies greatly among individuals. Traditionally associated with frontotemporal language regions, this variability is increasingly seen as stemming from distributed brain networks. However, the role of these networks and their topological organization in explaining these differences remains unclear. We hypothesize that graph-theory-based network analysis of intrinsic multimodal connectivities across multiple networks explains overall and component-specific variations in language learning. We tested this in 101 healthy adults who underwent resting-state fMRI, structural MRI, and diffusion tensor imaging before seven days of six artificial language training tasks. We identified one dominant general learning component shared across tasks and five task-specific ones. Cross-validated predictive models used multimodal multi-network graph-theoretic metrics to predict final learning outcomes (LO) and rates (LR). We significantly predicted the LO and LR of the general component, which were primarily contributed by dorsal attention and frontoparietal networks. Nodal local efficiency was the most consistent predictor, with additional contributions from node clustering coefficient and network centrality for LR, highlighting local robustness, mesoscale network segregation, and global influence in explaining individual differences. Only task-specific word learning LO was predictable, relying on default mode and frontoparietal hubs with high betweenness centrality and efficiency. These findings demonstrate that intrinsic network topologies underlie differences in language learning success, supporting a multiple-systems hypothesis in which attentional-control networks interact with default and subcortical systems to shape learning trajectories. This advances mechanistic understanding and paves the way for personalized language education.",
+    "status": "found"
+  },
+  "2511.14454": {
+    "arxiv_id": "2511.14454",
+    "title": "Observation of the surface hybridization gap in the electrical transport properties of the ultrathin topological insulator (Bi$_{1-x}$Sb$_{x}$)$_2$Te$_3$",
+    "authors": [
+      "Feike van Veen",
+      "Sofie Kölling",
+      "Stijn R. de Wit",
+      "Roel Metsch",
+      "Daniel Rosenbach",
+      "Chuan Li",
+      "Alexander Brinkman"
+    ],
+    "submission_date": "2025-11-18T12:58:55Z",
+    "latest_updated": "2025-11-18T12:58:55Z",
+    "revised_dates": null,
+    "venue": "Phys. Rev. B 112, 045425 (2025)",
+    "latest_version": 1,
+    "versions": [
+      "2511.14454v1"
+    ],
+    "abstract": "We study the three-dimensional topological insulator (Bi$_{1-x}$Sb$_{x}$)$_{2}$Te$_{3}$ in its ultrathin limit i.e. when the thickness is of the same order as the surface state penetration depth. It is expected that in this limit a hybridization gap opens at the Dirac point, which gives rise to a quantum spin Hall (QSH) or insulating phase, depending on the material thickness. We fabricate (Bi$_{1-x}$Sb$_{x}$)$_{2}$Te$_{3}$ Hall bars with a thicknesses of 6 and 9 nm and measure an insulating phase around the Dirac point for low bias and at sub-Kelvin temperatures only in samples fabricated from the 6 nm films, which indicates the presence of a hybridization gap. The effect of a perpendicular magnetic field on the hybridization gap is studied but remains partially unresolved. The results form an important step towards experimentally realizing the quantum spin Hall state via hybridization in ultrathin films of (Bi$_{1-x}$Sb$_{x}$)$_{2}$Te$_{3}$, yet, they also expose a knowledge gap regarding transport measurements in these systems.",
+    "status": "found"
+  },
+  "2511.14455": {
+    "arxiv_id": "2511.14455",
+    "title": "Nonparametric estimation of conditional probability distributions using a generative approach based on conditional push-forward neural networks",
+    "authors": [
+      "Nicola Rares Franco",
+      "Lorenzo Tedesco"
+    ],
+    "submission_date": "2025-11-18T12:59:20Z",
+    "latest_updated": "2025-12-22T16:00:38Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2511.14455v1",
+      "2511.14455v2",
+      "2511.14455v3"
+    ],
+    "abstract": "We introduce conditional push-forward neural networks (CPFN), a generative framework for conditional distribution estimation. Instead of directly modeling the conditional density $f_{Y|X}$, CPFN learns a stochastic map $\\varphi=\\varphi(x,u)$ such that $\\varphi(x,U)$ and $Y|X=x$ follow approximately the same law, with $U$ a suitable random vector of pre-defined latent variables. This enables efficient conditional sampling and straightforward estimation of conditional statistics through Monte Carlo methods. The model is trained via an objective function derived from a Kullback-Leibler formulation, without requiring invertibility or adversarial training. We establish a near-asymptotic consistency result and demonstrate experimentally that CPFN can achieve performance competitive with, or even superior to, state-of-the-art methods, including kernel estimators, tree-based algorithms, and popular deep learning techniques, all while remaining lightweight and easy to train.",
+    "status": "found"
+  },
+  "2511.14456": {
+    "arxiv_id": "2511.14456",
+    "title": "Analyzing the Impact of Participant Failures in Cross-Silo Federated Learning",
+    "authors": [
+      "Fabian Stricker",
+      "David Bermbach",
+      "Christian Zirpins"
+    ],
+    "submission_date": "2025-11-18T12:59:51Z",
+    "latest_updated": "2025-11-18T12:59:51Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.14456v1"
+    ],
+    "abstract": "Federated learning (FL) is a new paradigm for training machine learning (ML) models without sharing data. While applying FL in cross-silo scenarios, where organizations collaborate, it is necessary that the FL system is reliable; however, participants can fail due to various reasons (e.g., communication issues or misconfigurations). In order to provide a reliable system, it is necessary to analyze the impact of participant failures. While this problem received attention in cross-device FL where mobile devices with limited resources participate, there is comparatively little research in cross-silo FL. Therefore, we conduct an extensive study for analyzing the impact of participant failures on the model quality in the context of inter-organizational cross-silo FL with few participants. In our study, we focus on analyzing generally influential factors such as the impact of the timing and the data as well as the impact on the evaluation, which is important for deciding, if the model should be deployed. We show that under high skews the evaluation is optimistic and hides the real impact. Furthermore, we demonstrate that the timing impacts the quality of the trained model. Our results offer insights for researchers and software architects aiming to build robust FL systems.",
+    "status": "found"
+  },
+  "2511.14457": {
+    "arxiv_id": "2511.14457",
+    "title": "Benchmarking OpenWiFiSync on ESP32: Towards Cost-Effective Wireless Time Synchronization",
+    "authors": [
+      "Michael Gundall",
+      "Jan Herbst",
+      "Robin Müller",
+      "Hans D. Schotten"
+    ],
+    "submission_date": "2025-11-18T13:00:49Z",
+    "latest_updated": "2025-11-18T13:00:49Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.14457v1"
+    ],
+    "abstract": "Wireless time synchronization of mobile devices is a key enabler for numerous Industry 4.0 applications, such as coordinated and synchronized tasks or the generation of high-precision timestamps for machine learning or artificial intelligence algorithms. Traditional wireline clock synchronization protocols, however, cannot achieve the performance in wireless environments without significant modifications. To address this challenge, we make use of the Reference Broadcast Infrastructure Synchronization protocol, which leverages the broadcast nature of wireless communications and remains both non-invasive and standard-compliant. We implement and validate this protocol on a low-cost testbed using ESP32 modules and a commercial Wi-Fi access point. To support further research and development, we release our implementation as open-source software under the GNU General Public License Version 3 license via the OpenWifiSync project on GitHub. Our results demonstrate that synchronization accuracies within +/-30 microseconds are achievable using energy-efficient and affordable hardware, making this approach suitable for a wide range of use cases.",
+    "status": "found"
+  },
+  "2511.14458": {
+    "arxiv_id": "2511.14458",
+    "title": "Advancing Minimally Invasive Precision Surgery in Large Open Cavities with Robotic Flexible Endoscopy",
+    "authors": [
+      "Michelle Mattille",
+      "Alexandre Mesot",
+      "Miriam Weisskopf",
+      "Nicole Ochsenbein-Koelble",
+      "Ueli Moehrlen",
+      "Bradley J. Nelson",
+      "Quentin Boehler"
+    ],
+    "submission_date": "2025-11-18T13:01:05Z",
+    "latest_updated": "2026-09-18T07:59:34Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.14458v1",
+      "2511.14458v2"
+    ],
+    "abstract": "Flexible robots hold great promise for enhancing minimally invasive surgery (MIS) by providing superior dexterity, precise control, and safe tissue interaction. Yet, translating these advantages into endoscopic interventions within large open cavities remains challenging. The lack of anatomical constraints and the inherent flexibility of such devices complicate their control, and the limited field of view of endoscopes restricts situational awareness. We present a robotic platform designed to overcome these challenges and demonstrate its potential in fetoscopic laser coagulation, a complex MIS procedure typically performed only by highly experienced surgeons. Our system combines a magnetically actuated flexible endoscope with teleoperated and semi-autonomous navigation capabilities for performing targeted laser ablations. To enhance surgical awareness, the platform reconstructs real-time mosaics of the endoscopic scene, providing an extended and continuous visual context. The ability of this system to address the key limitations of MIS in open spaces is validated in vivo in an ovine model.",
+    "status": "found"
+  },
+  "2511.14459": {
+    "arxiv_id": "2511.14459",
+    "title": "Hölder regularity in bang-bang type affine optimal control problems",
+    "authors": [
+      "Alberto Domínguez Corella",
+      "Vladimir Veliov"
+    ],
+    "submission_date": "2025-11-18T13:01:21Z",
+    "latest_updated": "2025-11-18T13:01:21Z",
+    "revised_dates": null,
+    "venue": "Large-Scale Scientific Computing, Lecture Notes in Comput. Sci. 13127 (2022), 306-313",
+    "latest_version": 1,
+    "versions": [
+      "2511.14459v1"
+    ],
+    "abstract": "This paper revisits the issue of Hölder Strong Metric sub-Regularity (HSMs-R) of the optimality system associated with ODE optimal control problems that are affine with respect to the control. The main contributions are as follows. First, the metric in the control space, introduced in this paper, differs from the ones used so far in the literature in that it allows to take into consideration the bang-bang structure of the optimal control functions. This is especially important in the analysis of Model Predictive Control algorithms. Second, the obtained sufficient conditions for HSMs-R extend the known ones in a way which makes them applicable to some problems which are non-linear in the state variable and the Hölder exponent is smaller than one (that is, the regularity is not Lipschitz).",
+    "status": "found"
+  },
+  "2511.14460": {
+    "arxiv_id": "2511.14460",
+    "title": "Agent-R1: A Unified and Modular Framework for Agentic Reinforcement Learning",
+    "authors": [
+      "Mingyue Cheng",
+      "Shuo Yu",
+      "Daoyu Wang",
+      "Qingchuan Li",
+      "Xiaoyu Tao",
+      "Jie Ouyang",
+      "Yucong Luo",
+      "Yitong Zhou",
+      "Qi Liu",
+      "Enhong Chen"
+    ],
+    "submission_date": "2025-11-18T13:03:15Z",
+    "latest_updated": "2026-05-30T06:08:55Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.14460v1",
+      "2511.14460v2"
+    ],
+    "abstract": "Large language models (LLMs) have rapidly evolved from single-turn text generators into the foundation of increasingly capable agents. As these agents take on more complex reasoning, decision making, tool use, and long-horizon tasks, reinforcement learning (RL) is becoming increasingly important for shaping their behavior. This shift is especially visible in agentic RL, where models must interact with tools and environments across multiple rounds rather than produce a single standalone response. In this regime, the usual view of a trajectory as one ever-growing token sequence becomes increasingly inadequate: it makes context evolution rigid and creates representation mismatches between rollout and training. This paper presents Agent-R1, a unified and modular framework for agentic RL built around step-level trajectory representation, flexible context management, and layered interfaces for workflows, environments and optimization. The key idea is to treat each interaction step as the basic reinforcement-learning transition, while keeping the optimization layer flexible: once the interaction is modeled at the step level, the framework can support token-level credit assignment, step-level credit assignment, or other compatible designs. These design choices make the framework compatible with a range of optimization strategies rather than tying it to a single algorithm. Together, these components provide a principled, extensible, and reusable substrate for agentic RL.",
+    "status": "found"
+  },
+  "2511.14461": {
+    "arxiv_id": "2511.14461",
+    "title": "Effective Diversification of Multi-Carousel Book Recommendation",
+    "authors": [
+      "Daniël Wilten",
+      "Gideon Maillette de Buy Wenniger",
+      "Arjen Hommersom",
+      "Paul Lucassen",
+      "Emiel Poortman"
+    ],
+    "submission_date": "2025-11-18T13:03:16Z",
+    "latest_updated": "2025-11-18T13:03:16Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.14461v1"
+    ],
+    "abstract": "Using multiple carousels, lists that wrap around and can be scrolled, is the basis for offering content in most contemporary movie streaming platforms. Carousels allow for highlighting different aspects of users' taste, that fall in categories such as genres and authors. However, while carousels offer structure and greater ease of navigation, they alone do not increase diversity in recommendations, while this is essential to keep users engaged. In this work we propose several approaches to effectively increase item diversity within the domain of book recommendations, on top of a collaborative filtering algorithm. These approaches are intended to improve book recommendations in the web catalogs of public libraries. Furthermore, we introduce metrics to evaluate the resulting strategies, and show that the proposed system finds a suitable balance between accuracy and beyond-accuracy aspects.",
+    "status": "found"
+  },
+  "2511.14462": {
+    "arxiv_id": "2511.14462",
+    "title": "Cracking the Microsecond: An Efficient and Precise Time Synchronization Scheme for Hybrid 5G-TSN Networks",
+    "authors": [
+      "Michael Gundall",
+      "Hans D. Schotten"
+    ],
+    "submission_date": "2025-11-18T13:03:34Z",
+    "latest_updated": "2025-11-18T13:03:34Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.14462v1"
+    ],
+    "abstract": "Achieving precise time synchronization in wireless systems is essential for both industrial applications and 5G, where sub-microsecond accuracy is required. However, since the Industrial Internet of Things (IIoT) market is negligible compared to the consumer electronics market, the so-called IIoT enhancements have not yet been implemented in silicon. Moreover, there is no guarantee that this situation will change soon. Thus, alternative solutions must be explored. This paper addresses this challenge by introducing a scheme that uses a protocol capable of leveraging existing infrastructure to synchronize User Equipments (UEs), with one of the UEs serving as the master. If this master is connected via a wired link to the factory network, it can also function as a boundary clock for the factory network, including any Time-Sensitive Networking (TSN) network. Furthermore, the 5G Core Network (5GC) and 5G Base Station (gNB) can also be synchronized if they are connected either to the factory network or to the master UE. The proposed solution is implemented and evaluated on a hardware testbed using OpenAirInterface (OAI) and Software Defined Radios (SDRs). Time offset and clock skew are analyzed using a moving average filter with various window sizes. Results show that a filter size of 1024 provides the best accuracy for offset prediction between UEs. In a controlled lab environment, the approach consistently achieves synchronization within +/-50 ns, leaving sufficient margin for synchronization errors in real deployments while still maintaining sub-microsecond accuracy. These findings demonstrate the feasibility and high performance of the proposed protocol for stringent industrial use cases.",
+    "status": "found"
+  },
+  "2511.14463": {
+    "arxiv_id": "2511.14463",
+    "title": "First Laplace eigenvalue of strongly isotropy irreducible spaces",
+    "authors": [
+      "Emilio A. Lauret",
+      "Fiorela Rossi Bertone",
+      "Alejandro Tolcachier"
+    ],
+    "submission_date": "2025-11-18T13:04:28Z",
+    "latest_updated": "2025-11-18T13:04:28Z",
+    "revised_dates": null,
+    "venue": "Math. Z. 313 (2026), article number 57",
+    "latest_version": 1,
+    "versions": [
+      "2511.14463v1"
+    ],
+    "abstract": "We study the smallest positive eigenvalue $λ_1$ of the Laplace-Beltrami operator associated with any compact strongly isotropy irreducible space. We provide an explicit expression for all simply connected cases. Furthermore, every strongly isotropy irreducible space is automatically an Einstein manifold, and we prove for each of them that $E<λ_1\\leq 16E$, where $E$ denotes the corresponding Einstein constant.",
+    "status": "found"
+  },
+  "2511.14464": {
+    "arxiv_id": "2511.14464",
+    "title": "Asymptotic Properties of the Derivative of Self-Intersection Local Time of Multidimensional Fractional Brownian Motion",
+    "authors": [
+      "Jiazhen Gu",
+      "Jinchi Jiang",
+      "Qian Yu"
+    ],
+    "submission_date": "2025-11-18T13:05:01Z",
+    "latest_updated": "2025-11-18T13:05:01Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.14464v1"
+    ],
+    "abstract": "Let \\{B_t^H,t\\geq0\\} be a d-dimensional fractional Brownian motion. We prove that the approximation of the first-order derivative of self-intersection local time, defined as α_{\\varepsilon,t}^{(1)}(0)=-\\int_0^t\\int_0^sp_\\varepsilon^{(1)}(B_s^H-B_r^H)\\d r\\d s, where p_\\varepsilon^{(1)}(x_1,\\cdots,x_d):=\\partial _{x_1}p(x_1,\\cdots,x_d) and p_\\varepsilon(x)=(2π\\varepsilon)^{-d/2}e^{|x|^2/2\\varepsilon},x\\in\\mathbb{R}^d, d\\geq2 is the heat kernel, exits in L^2 sense if and only if H<\\frac{3}{2(1+d)} and satisfies three different central limit theorems when normalized by \\varepsilon^{\\frac d2+1-\\frac1H} for H>\\frac12 and d\\geq2, normalized by \\varepsilon^{\\frac d2+\\frac12-\\frac 3{4H}} for \\frac{3}{2(1+d)}<H<\\frac12 and d\\geq3, and normalized by \\log(1/\\varepsilon)^{-\\frac12} for the critical case H=\\frac{3}{2(1+d)} and d\\geq3.",
+    "status": "found"
+  },
+  "2511.14465": {
+    "arxiv_id": "2511.14465",
+    "title": "nnterp: A Standardized Interface for Mechanistic Interpretability of Transformers",
+    "authors": [
+      "Clément Dumas"
+    ],
+    "submission_date": "2025-11-18T13:05:02Z",
+    "latest_updated": "2025-12-14T21:16:19Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.14465v1",
+      "2511.14465v2"
+    ],
+    "abstract": "Mechanistic interpretability research requires reliable tools for analyzing transformer internals across diverse architectures. Current approaches face a fundamental tradeoff: custom implementations like TransformerLens ensure consistent interfaces but require coding a manual adaptation for each architecture, introducing numerical mismatch with the original models, while direct HuggingFace access through NNsight preserves exact behavior but lacks standardization across models. To bridge this gap, we develop nnterp, a lightweight wrapper around NNsight that provides a unified interface for transformer analysis while preserving original HuggingFace implementations. Through automatic module renaming and comprehensive validation testing, nnterp enables researchers to write intervention code once and deploy it across 50+ model variants spanning 16 architecture families. The library includes built-in implementations of common interpretability methods (logit lens, patchscope, activation steering) and provides direct access to attention probabilities for models that support it. By packaging validation tests with the library, researchers can verify compatibility with custom models locally. nnterp bridges the gap between correctness and usability in mechanistic interpretability tooling.",
+    "status": "found"
+  },
+  "2511.14466": {
+    "arxiv_id": "2511.14466",
+    "title": "Effect of Dopamine in Enhancement of SNR of Cortico-Striatal-Thalamo-Cortical Loop Spiking",
+    "authors": [
+      "Hadi Barati",
+      "Ali Nayerifar",
+      "Mehdi Fardmanesh"
+    ],
+    "submission_date": "2025-11-18T13:05:09Z",
+    "latest_updated": "2025-11-25T17:23:29Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.14466v1",
+      "2511.14466v2"
+    ],
+    "abstract": "In this work, the effects of dopamine neurotransmitter within the Cortico-Striatal-Thalamo-Cortical (CSTC) loop have been investigated. Simulations confirmed dopamine facilitates movement via thalamic disinhibition. Analysis of its impact on the signal-to-noise ratio (SNR) revealed a complex, region-specific outcome: SNR increased in some regions (e.g., D2 Striatum: 3.41 dB to 6.25 dB), decreased in others (e.g., Thalamus VL: 6.24 dB to 3.93 dB), and remained stable elsewhere (e.g., M1: 3.16 dB to 3.13 dB). This heterogeneity stems from dopamine increasing the excitability of D1-receptor-expressing neurons, which amplifies channel conductance noise and reduces SNR in specific circuits. Thus, dopamine acts not as a uniform signal enhancer, but as a complex modulator that critically balances facilitation and noise within the CSTC loop.",
+    "status": "found"
+  },
+  "2511.14467": {
+    "arxiv_id": "2511.14467",
+    "title": "Enhancing BGP Security by Understanding BGP's Language with LLMs",
+    "authors": [
+      "Heng Zhao",
+      "Ruoyu Wang",
+      "Tianhang Zheng",
+      "Qi Li",
+      "Bo Lv",
+      "Yuyi Wang",
+      "Wenliang Du"
+    ],
+    "submission_date": "2025-11-18T13:06:52Z",
+    "latest_updated": "2026-09-29T14:17:34Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.14467v1",
+      "2511.14467v2"
+    ],
+    "abstract": "The trust-based nature of Border Gateway Protocol (BGP) makes it vulnerable to prefix hijacking and misconfigurations. Traditional BGP anomaly detection relies on manual inspection with poor scalability, while Machine/Deep Learning (M/DL)-based approaches suffer from suboptimal precision, limited generalizability, and high retraining cost. This is because existing M/DL methods focus on topological structures rather than semantic characteristics of Autonomous Systems (ASes), assigning dissimilar embeddings to functionally similar but topologically distant ASes. To address this, we propose BGPShield, a novel anomaly detection framework built on an Adaptive LLM BGP Encoder that captures each AS's Behavior Portrait and Routing Policy Rationale beyond topology. Inspired by multimodal LLMs, the encoder generates embeddings representing both routing behaviors and semantics of ASes via contrastive learning. We further introduce SAM-ED to quantify BGP-specific semantic deviations between historical and updated paths, rather than naively accumulating distances without awareness of BGP-specific structures. Evaluated on 16 real-world datasets, BGPShield detects 100% of verified anomalies with an average false discovery rate below 5%. The open-source LLMs used by BGPShield were released prior to several evaluation events, verifying generalizability on unseen events. Furthermore, BGPShield can construct the representation for a previously unseen AS within one second, significantly outperforming BEAM which demands thorough retraining (averagely 65 hours).",
+    "status": "found"
+  },
+  "2511.14468": {
+    "arxiv_id": "2511.14468",
+    "title": "$\\mathcal{L}\\mathcal{R}$-Ending partisan rulesets",
+    "authors": [
+      "Hiroki Inazu",
+      "Shun-ichi Kimura",
+      "Koki Suetsugu"
+    ],
+    "submission_date": "2025-11-18T13:08:20Z",
+    "latest_updated": "2026-08-21T01:24:03Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.14468v1",
+      "2511.14468v2"
+    ],
+    "abstract": "In this paper, we consider $\\mathcal{L}\\mathcal{R}$-ending partisan rulesets as a branch of combinatorial game theory. In these rulesets, the sets of options of both players are the same. However, there are two kinds of terminal positions. If the game ends in one kind of terminal position, then a player wins, and if the game ends in the other kind of terminal position, the other player wins. We introduce notations for positions in $\\mathcal{L}\\mathcal{R}$-ending partisan rulesets including disjunctive sum of terminal positions depending on the parity and basic definitions and show their algebraic structures. We also introduce some examples of $\\mathcal{L}\\mathcal{R}$-ending partisan rulesets and show how our results can be used for analyzing the rulesets.",
+    "status": "found"
+  }
+}

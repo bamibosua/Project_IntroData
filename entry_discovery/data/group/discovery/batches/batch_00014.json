@@ -1,0 +1,456 @@
+{
+  "2511.11989": {
+    "arxiv_id": "2511.11989",
+    "title": "BeyondFacial: Identity-Preserving Personalized Generation Beyond Facial Close-ups",
+    "authors": [
+      "Songsong Zhang",
+      "Chuanqi Tang",
+      "Hongguang Zhang",
+      "Guijian Tang",
+      "Minglong Li",
+      "Xueqiong Li",
+      "Shaowu Yang",
+      "Yuanxi Peng",
+      "Wenjing Yang",
+      "Jing Zhao"
+    ],
+    "submission_date": "2025-11-15T01:56:14Z",
+    "latest_updated": "2025-11-21T08:39:43Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.11989v1",
+      "2511.11989v2"
+    ],
+    "abstract": "Identity-Preserving Personalized Generation (IPPG) has advanced film production and artistic creation, yet existing approaches overemphasize facial regions, resulting in outputs dominated by facial close-ups.These methods suffer from weak visual narrativity and poor semantic consistency under complex text prompts, with the core limitation rooted in identity (ID) feature embeddings undermining the semantic expressiveness of generative models. To address these issues, this paper presents an IPPG method that breaks the constraint of facial close-ups, achieving synergistic optimization of identity fidelity and scene semantic creation. Specifically, we design a Dual-Line Inference (DLI) pipeline with identity-semantic separation, resolving the representation conflict between ID and semantics inherent in traditional single-path architectures. Further, we propose an Identity Adaptive Fusion (IdAF) strategy that defers ID-semantic fusion to the noise prediction stage, integrating adaptive attention fusion and noise decision masking to avoid ID embedding interference on semantics without manual masking. Finally, an Identity Aggregation Prepending (IdAP) module is introduced to aggregate ID information and replace random initializations, further enhancing identity preservation. Experimental results validate that our method achieves stable and effective performance in IPPG tasks beyond facial close-ups, enabling efficient generation without manual masking or fine-tuning. As a plug-and-play component, it can be rapidly deployed in existing IPPG frameworks, addressing the over-reliance on facial close-ups, facilitating film-level character-scene creation, and providing richer personalized generation capabilities for related domains.",
+    "status": "found"
+  },
+  "2511.11990": {
+    "arxiv_id": "2511.11990",
+    "title": "Improving Autoformalization Using Direct Dependency Retrieval",
+    "authors": [
+      "Shaoqi Wang",
+      "Lu Yu",
+      "Siwei Lou",
+      "Feng Yan",
+      "Chunjie Yang",
+      "Qing Cui",
+      "Jun Zhou"
+    ],
+    "submission_date": "2025-11-15T02:05:11Z",
+    "latest_updated": "2026-01-01T15:38:15Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 4,
+    "versions": [
+      "2511.11990v1",
+      "2511.11990v2",
+      "2511.11990v3",
+      "2511.11990v4"
+    ],
+    "abstract": "The convergence of deep learning and formal mathematics has spurred research in formal verification. Statement autoformalization, a crucial first step in this process, aims to translate informal descriptions into machine-verifiable representations but remains a significant challenge. The core difficulty lies in the fact that existing methods often suffer from a lack of contextual awareness, leading to hallucination of formal definitions and theorems. Furthermore, current retrieval-augmented approaches exhibit poor precision and recall for formal library dependency retrieval, and lack the scalability to effectively leverage ever-growing public datasets. To bridge this gap, we propose a novel retrieval-augmented framework based on DDR (\\textit{Direct Dependency Retrieval}) for statement autoformalization. Our DDR method directly generates candidate library dependencies from natural language mathematical descriptions and subsequently verifies their existence within the formal library via an efficient suffix array check. Leveraging this efficient search mechanism, we constructed a dependency retrieval dataset of over 500,000 samples and fine-tuned a high-precision DDR model. Experimental results demonstrate that our DDR model significantly outperforms SOTA methods in both retrieval precision and recall. Consequently, an autoformalizer equipped with DDR shows consistent performance advantages in both single-attempt accuracy and multi-attempt stability compared to models using traditional selection-based RAG methods.",
+    "status": "found"
+  },
+  "2511.11991": {
+    "arxiv_id": "2511.11991",
+    "title": "ReCast: Reliability-aware Codebook Assisted Lightweight Time Series Forecasting",
+    "authors": [
+      "Xiang Ma",
+      "Taihua Chen",
+      "Pengcheng Wang",
+      "Xuemei Li",
+      "Caiming Zhang"
+    ],
+    "submission_date": "2025-11-15T02:11:05Z",
+    "latest_updated": "2026-03-05T13:18:18Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2511.11991v1",
+      "2511.11991v2",
+      "2511.11991v3"
+    ],
+    "abstract": "Time series forecasting is crucial for applications in various domains. Conventional methods often rely on global decomposition into trend, seasonal, and residual components, which become ineffective for real-world series dominated by local, complex, and highly dynamic patterns. Moreover, the high model complexity of such approaches limits their applicability in real-time or resource-constrained environments. In this work, we propose a novel \\textbf{RE}liability-aware \\textbf{C}odebook-\\textbf{AS}sisted \\textbf{T}ime series forecasting framework (\\textbf{ReCast}) that enables lightweight and robust prediction by exploiting recurring local shapes. ReCast encodes local patterns into discrete embeddings through patch-wise quantization using a learnable codebook, thereby compactly capturing stable regular structures. To compensate for residual variations not preserved by quantization, ReCast employs a dual-path architecture comprising a quantization path for efficient modeling of regular structures and a residual path for reconstructing irregular fluctuations. A central contribution of ReCast is a reliability-aware codebook update strategy, which incrementally refines the codebook via weighted corrections. These correction weights are derived by fusing multiple reliability factors from complementary perspectives by a distributionally robust optimization (DRO) scheme, ensuring adaptability to non-stationarity and robustness to distribution shifts. Extensive experiments demonstrate that ReCast outperforms state-of-the-art (SOTA) models in accuracy, efficiency, and adaptability to distribution shifts.",
+    "status": "found"
+  },
+  "2511.11992": {
+    "arxiv_id": "2511.11992",
+    "title": "Goal-Oriented Multi-Agent Reinforcement Learning for Decentralized Agent Teams",
+    "authors": [
+      "Hung Du",
+      "Hy Nguyen",
+      "Srikanth Thudumu",
+      "Rajesh Vasa",
+      "Kon Mouzakis"
+    ],
+    "submission_date": "2025-11-15T02:11:31Z",
+    "latest_updated": "2025-11-15T02:11:31Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.11992v1"
+    ],
+    "abstract": "Connected and autonomous vehicles across land, water, and air must often operate in dynamic, unpredictable environments with limited communication, no centralized control, and partial observability. These real-world constraints pose significant challenges for coordination, particularly when vehicles pursue individual objectives. To address this, we propose a decentralized Multi-Agent Reinforcement Learning (MARL) framework that enables vehicles, acting as agents, to communicate selectively based on local goals and observations. This goal-aware communication strategy allows agents to share only relevant information, enhancing collaboration while respecting visibility limitations. We validate our approach in complex multi-agent navigation tasks featuring obstacles and dynamic agent populations. Results show that our method significantly improves task success rates and reduces time-to-goal compared to non-cooperative baselines. Moreover, task performance remains stable as the number of agents increases, demonstrating scalability. These findings highlight the potential of decentralized, goal-driven MARL to support effective coordination in realistic multi-vehicle systems operating across diverse domains.",
+    "status": "found"
+  },
+  "2511.11993": {
+    "arxiv_id": "2511.11993",
+    "title": "Dynamic Parameter Optimization for Highly Transferable Transformation-Based Attacks",
+    "authors": [
+      "Jiaming Liang",
+      "Chi-Man Pun"
+    ],
+    "submission_date": "2025-11-15T02:14:38Z",
+    "latest_updated": "2025-11-15T02:14:38Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.11993v1"
+    ],
+    "abstract": "Despite their wide application, the vulnerabilities of deep neural networks raise societal concerns. Among them, transformation-based attacks have demonstrated notable success in transfer attacks. However, existing attacks suffer from blind spots in parameter optimization, limiting their full potential. Specifically, (1) prior work generally considers low-iteration settings, yet attacks perform quite differently at higher iterations, so characterizing overall performance based only on low-iteration results is misleading. (2) Existing attacks use uniform parameters for different surrogate models, iterations, and tasks, which greatly impairs transferability. (3) Traditional transformation parameter optimization relies on grid search. For n parameters with m steps each, the complexity is O(mn). Large computational overhead limits further optimization of parameters. To address these limitations, we conduct an empirical study with various transformations as baselines, revealing three dynamic patterns of transferability with respect to parameter strength. We further propose a novel Concentric Decay Model (CDM) to effectively explain these patterns. Building on these insights, we propose an efficient Dynamic Parameter Optimization (DPO) based on the rise-then-fall pattern, reducing the complexity to O(nlogm). Comprehensive experiments on existing transformation-based attacks across different surrogate models, iterations, and tasks demonstrate that our DPO can significantly improve transferability.",
+    "status": "found"
+  },
+  "2511.11994": {
+    "arxiv_id": "2511.11994",
+    "title": "Extremum-Seeking Boundary Control for Schrödinger-Type PDEs",
+    "authors": [
+      "Paulo Henrique Foganholo Biazetto",
+      "Gustavo Artur de Andrade",
+      "Tiago Roux Oliveira",
+      "Miroslav Krstic"
+    ],
+    "submission_date": "2025-11-15T02:16:23Z",
+    "latest_updated": "2025-11-15T02:16:23Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.11994v1"
+    ],
+    "abstract": "This paper addresses the design and analysis of an extremum-seeking (ES) controller for scalar static maps in the context of infinite-dimensional dynamics governed by complex-valued partial differential equations (PDEs) of Schrodinger type. The system is actuated at one boundary, and the map input is defined as a real-valued quadratic functional corresponding to the squared norm of the complex state at the uncontrolled boundary. An isomorphism between the complex Hilbert space and its two-dimensional real-valued representation is established to enable the use of the standard multivariable Newton-based ES method. To compensate for the PDE actuation dynamics, a boundary control strategy based on a two-step backstepping procedure is employed. With a perturbation-based estimate of the Hessian inverse, the local exponential stability to a small neighborhood of the unknown extremum point is proved. A numerical example illustrates the effectiveness of the proposed extremum-seeking methodology.",
+    "status": "found"
+  },
+  "2511.11995": {
+    "arxiv_id": "2511.11995",
+    "title": "Upper Bound on the Cosmic Baryon Chemical Potential from Lepton-Flavor Asymmetry",
+    "authors": [
+      "Francesco Di Clemente",
+      "Alessandro Drago",
+      "Lorenzo Formaggio",
+      "Claudia Ratti",
+      "Volodymyr Vovchenko",
+      "Geetika Yadav"
+    ],
+    "submission_date": "2025-11-15T02:19:13Z",
+    "latest_updated": "2025-11-15T02:19:13Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.11995v1"
+    ],
+    "abstract": "We study the early Universe trajectory around the QCD transition in lepton-flavor-asymmetric cases with small total lepton asymmetry ($|\\ell|\\lesssim 10^{-2}$), while allowing large individual lepton asymmetries. For each temperature, we find an upper bound on the baryon chemical potential $μ_{\\mathrm B}(T)$: $τ$--$μ$ asymmetric cases exhibit a local maximum, whereas $μ$--$e$ cases approach a limiting curve. Thus, even extreme lepton-flavor asymmetry alone cannot reach a first-order region, unless the critical point is moved to a substantially lower $μ_\\mathrm{B}/T$ because of the nonzero $μ_\\mathrm{Q}$. Therefore, we constrain the QCD-era relic to the standard scenario of a chiral crossover transition.",
+    "status": "found"
+  },
+  "2511.11996": {
+    "arxiv_id": "2511.11996",
+    "title": "Graphical Model-based Inference on Persistent Homology",
+    "authors": [
+      "Zitian Wu",
+      "Arkaprava Roy",
+      "Leo L. Duan"
+    ],
+    "submission_date": "2025-11-15T02:26:49Z",
+    "latest_updated": "2025-11-18T17:03:24Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.11996v1",
+      "2511.11996v2"
+    ],
+    "abstract": "Persistent homology is a cornerstone of topological data analysis, offering a multiscale summary of topology with robustness to nuisance transformations, such as rotations and small deformations. Persistent homology has seen broad use across domains such as computer vision and neuroscience. Most statistical treatments, however, use homology primarily as a feature extractor, relying on statistical distance-based tests or simple time-to-event models for inferential tasks. While these approaches can detect global differences, they rarely localize the source of those differences. We address this gap by taking a graphical model-based approach: we associate each vertex with a population latent position in a conic space and model each bar's key events (birth and death times) using an exponential distribution, whose rate is a transformation of the latent positions according to an event occurring on the graph. The low-dimensional bars have simple graph-event representations, such as the formation of a minimum spanning tree or the triangulation of a loop, and thus enjoy tractable likelihoods. Taking a Bayesian approach, we infer latent positions and enable model extensions such as hierarchical models that allow borrowing strength across groups. Applications to a neuroimaging study of Alzheimer's disease demonstrate that our method localizes sources of difference and provides interpretable, model-based analyses of topological structure in complex data. The code is provided and maintained at https://github.com/zitian-wu/graphPH.",
+    "status": "found"
+  },
+  "2511.11997": {
+    "arxiv_id": "2511.11997",
+    "title": "Imitation Learning with Safety and L2 Stability Certificates for Boundary Control of Reaction-Diffusion PDEs",
+    "authors": [
+      "Paulo Henrique Foganholo Biazetto",
+      "Mirko Fiacchini",
+      "Christophe Prieur",
+      "Gustavo Artur de Andrade"
+    ],
+    "submission_date": "2025-11-15T02:27:25Z",
+    "latest_updated": "2025-11-15T02:27:25Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.11997v1"
+    ],
+    "abstract": "This paper proposes an imitation learning (IL) framework for synthesizing neural network (NN) controllers that achieve boundary stabilization of systems governed by reaction-diffusion partial differential equations (PDEs). The plant is assumed to be actuated through a Dirichlet boundary condition and subject to a Neumann condition on the unactuated side. The design is based on a finite-dimensional truncated model that captures the unstable dynamics of the original infinite-dimensional system, which is obtained via spectral decomposition. Convex stability and safety conditions are then derived for this truncated model by combining Lyapunov theory with local quadratic constraints (QC), which bound the nonlinear activation functions of the NN and guarantee robustness to model truncation, thus addressing the spillover problem. These conditions are integrated into the IL process to jointly minimize the imitation loss and maximize the volume of the certified region of attraction (ROA). The proposed framework is validated on an unstable reaction-diffusion PDE, demonstrating that the resulting NN controller efficiently reproduces the expert policy while ensuring formal stability guarantees.",
+    "status": "found"
+  },
+  "2511.11998": {
+    "arxiv_id": "2511.11998",
+    "title": "He-star donor pathway for the hypervelocity star D6-2",
+    "authors": [
+      "Abinaya Swaruba Rajamuthukumar",
+      "Ruediger Pakmor",
+      "Stephen Justham",
+      "Aakash Bhat",
+      "Ken J Shen"
+    ],
+    "submission_date": "2025-11-15T02:31:53Z",
+    "latest_updated": "2025-11-15T02:31:53Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.11998v1"
+    ],
+    "abstract": "Type Ia supernovae are thermonuclear explosions of white dwarfs, yet the nature of their progenitor systems remains uncertain. Recent discoveries of hypervelocity stars provide unique constraints, as these stars likely represent the surviving companions of such explosions. Using detailed binary evolution models computed with MESA and population synthesis with MSE, we investigate the outcomes of hot subdwarf + white dwarf binaries undergoing helium accretion. We find that donors can nearly exhaust their helium and form compact, C/O cores before explosion. The predicted ejection velocities span a broad distribution reaching up to $\\sim 1000\\,\\mathrm{km\\,s^{-1}}$, with D6-2 representing the extreme high-velocity tail of this population. We estimate analytically that the thin residual helium envelope can be stripped by the supernova ejecta, producing a C/O-rich surface composition consistent with the observed spectrum. The Type Ia supernova rate from this channel is ${\\sim}(1.69\\pm0.06)\\times10^{-5}\\,\\mathrm{M_\\odot^{-1}}$, consistent with 1% of the observed Type Ia supernova rate. Hot subdwarf + white dwarf binaries containing nearly exhausted He-star donors can therefore naturally explain the velocity and composition of D6-2 while providing a quantitatively consistent contribution to the observed Type Ia supernova rate. Our models predict a distribution of surviving donor remnants with various core He fractions and with ejection velocities extending down to $\\sim 450\\,\\mathrm{ km\\,s^{-1}}$. The orbital velocities of donor stars in this progenitor channel naturally yield orbital velocities consistent with US 708, LP 40-365 stars, and D6-2, indicating that a single class of thermonuclear supernova progenitors can account for their entire range of ejection velocities.",
+    "status": "found"
+  },
+  "2511.11999": {
+    "arxiv_id": "2511.11999",
+    "title": "WITNESS: A lightweight and practical approach to fine-grained predictive mutation testing",
+    "authors": [
+      "Zeyu Lu",
+      "Peng Zhang",
+      "Chun Yong Chong",
+      "Shan Gao",
+      "Yibiao Yang",
+      "Yanhui Li",
+      "Lin Chen",
+      "Yuming Zhou"
+    ],
+    "submission_date": "2025-11-15T02:38:00Z",
+    "latest_updated": "2025-11-15T02:38:00Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.11999v1"
+    ],
+    "abstract": "Existing fine-grained predictive mutation testing studies predominantly rely on deep learning, which faces two critical limitations in practice: (1) Exorbitant computational costs. The deep learning models adopted in these studies demand significant computational resources for training and inference acceleration. This introduces high costs and undermines the cost-reduction goal of predictive mutation testing. (2) Constrained applicability. Although modern mutation testing tools generate mutants both inside and outside methods, current fine-grained predictive mutation testing approaches handle only inside-method mutants. As a result, they cannot predict outside-method mutants, limiting their applicability in real-world scenarios. We propose WITNESS, a new fine-grained predictive mutation testing approach. WITNESS adopts a twofold design: (1) With collected features from both inside-method and outside-method mutants, WITNESS is suitable for all generated mutants. (2) Instead of using computationally expensive deep learning, WITNESS employs lightweight classical machine learning models for training and prediction. This makes it more cost-effective and enabling straightforward explanations of the decision-making processes behind the adopted models. Evaluations on Defects4J projects show that WITNESS consistently achieves state-of-the-art predictive performance across different scenarios. Additionally, WITNESS significantly enhances the efficiency of kill matrix prediction. Post-hoc analysis reveals that features incorporating information from before and after the mutation are the most important among those used in WITNESS. Test case prioritization based on the predicted kill matrix shows that WITNESS delivers results much closer to those obtained by using the actual kill matrix, outperforming baseline approaches.",
+    "status": "found"
+  },
+  "2511.12000": {
+    "arxiv_id": "2511.12000",
+    "title": "Measurement-Based Quantum Computation Using the Spin-1 XXZ Model with Uniaxial Anisotropy",
+    "authors": [
+      "Hiroki Ohta",
+      "Aaron Merlin Müller",
+      "Shunji Tsuchiya"
+    ],
+    "submission_date": "2025-11-15T02:38:34Z",
+    "latest_updated": "2026-05-04T19:32:12Z",
+    "revised_dates": null,
+    "venue": "Phys. Rev. A 113, 052407 (2026)",
+    "latest_version": 4,
+    "versions": [
+      "2511.12000v1",
+      "2511.12000v2",
+      "2511.12000v3",
+      "2511.12000v4"
+    ],
+    "abstract": "We demonstrate that the ground state of a spin-1 $XXZ$ chain with uniaxial anisotropies, single-ion anisotropy $D$ and Ising-like anisotropy $J$, within the Haldane phase can serve as a resource state for measurement-based quantum computation implementing single-qubit gates. The gate fidelity of both elementary rotation gates and general single-qubit unitary gates composed of rotations about the $x$, $y$, and $z$ axes is evaluated, and is found to exceed 0.99 when $D$ or $J$ is appropriately tuned. Furthermore, we derive an analytic expression for the rotation-gate fidelity under the assumption that the state lies within the $\\mathbb Z_2\\times \\mathbb Z_2$-protected Haldane phase, showing that it is determined by the postmeasurement spin-spin correlation function and the failure probability. The observed enhancement of gate fidelity in the spin-1 $XXZ$ chain originates from the strengthening of antiferromagnetic (AFM) correlations near the AFM phase, which effectively suppresses failure states.",
+    "status": "found"
+  },
+  "2511.12001": {
+    "arxiv_id": "2511.12001",
+    "title": "Critical or Compliant? The Double-Edged Sword of Reasoning in Chain-of-Thought Explanations",
+    "authors": [
+      "Eunkyu Park",
+      "Wesley Hanwen Deng",
+      "Vasudha Varadarajan",
+      "Mingxi Yan",
+      "Gunhee Kim",
+      "Maarten Sap",
+      "Motahhare Eslami"
+    ],
+    "submission_date": "2025-11-15T02:38:49Z",
+    "latest_updated": "2026-09-28T15:51:18Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2511.12001v1",
+      "2511.12001v2",
+      "2511.12001v3"
+    ],
+    "abstract": "Explanations are often promoted as tools for transparency, but they can also foster confirmation bias; users may assume reasoning is correct whenever outputs appear acceptable. We study this double-edged role of Chain-of-Thought (CoT) explanations in multimodal moral scenarios by systematically perturbing reasoning chains and manipulating delivery tones. Specifically, we analyze reasoning errors in vision language models (VLMs) and how they impact user trust and the ability to detect errors. Our findings reveal two key effects: (1) users often equate trust with outcome agreement, sustaining reliance even when reasoning is flawed, and (2) the confident tone suppresses error detection while maintaining reliance, showing that delivery styles can override correctness. These results highlight how CoT explanations can simultaneously clarify and mislead, underscoring the need for NLP systems to provide explanations that encourage scrutiny and critical thinking rather than blind trust. All code will be released publicly.",
+    "status": "found"
+  },
+  "2511.12002": {
+    "arxiv_id": "2511.12002",
+    "title": "Selecting Fine-Tuning Examples by Quizzing VLMs",
+    "authors": [
+      "Tenghao Ji",
+      "Eytan Adar"
+    ],
+    "submission_date": "2025-11-15T02:48:48Z",
+    "latest_updated": "2025-11-15T02:48:48Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.12002v1"
+    ],
+    "abstract": "A challenge in fine-tuning text-to-image diffusion models for specific topics is to select good examples. Fine-tuning from image sets of varying quality, such as Wikipedia Commons, will often produce poor output. However, training images that \\textit{do} exemplify the target concept (e.g., a \\textit{female Mountain Bluebird}) help ensure that the generated images are similarly representative (e.g., have the prototypical blue-wings and gray chest). In this work, we propose QZLoRA, a framework to select images for low-rank adaptation (LoRA). The approach leverages QuizRank, a method to automatically rank images by treating them as an `educational intervention' and `quizzing' a VLM. We demonstrate that QZLoRA can produce better aligned, photorealistic images with fewer samples. We also show that these fine-tuned models can produce stylized that are similarly representative (i.e., illustrations). Our results highlight the promise of combining automated visual reasoning with parameter-efficient fine-tuning for topic-adaptive generative modeling.",
+    "status": "found"
+  },
+  "2511.12003": {
+    "arxiv_id": "2511.12003",
+    "title": "Look as You Think: Unifying Reasoning and Visual Evidence Attribution for Verifiable Document RAG via Reinforcement Learning",
+    "authors": [
+      "Shuochen Liu",
+      "Pengfei Luo",
+      "Chao Zhang",
+      "Yuhao Chen",
+      "Haotian Zhang",
+      "Qi Liu",
+      "Xin Kou",
+      "Tong Xu",
+      "Enhong Chen"
+    ],
+    "submission_date": "2025-11-15T02:50:23Z",
+    "latest_updated": "2025-11-29T05:50:04Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.12003v1",
+      "2511.12003v2"
+    ],
+    "abstract": "Aiming to identify precise evidence sources from visual documents, visual evidence attribution for visual document retrieval-augmented generation (VD-RAG) ensures reliable and verifiable predictions from vision-language models (VLMs) in multimodal question answering. Most existing methods adopt end-to-end training to facilitate intuitive answer verification. However, they lack fine-grained supervision and progressive traceability throughout the reasoning process. In this paper, we introduce the Chain-of-Evidence (CoE) paradigm for VD-RAG. CoE unifies Chain-of-Thought (CoT) reasoning and visual evidence attribution by grounding reference elements in reasoning steps to specific regions with bounding boxes and page indexes. To enable VLMs to generate such evidence-grounded reasoning, we propose Look As You Think (LAT), a reinforcement learning framework that trains models to produce verifiable reasoning paths with consistent attribution. During training, LAT evaluates the attribution consistency of each evidence region and provides rewards only when the CoE trajectory yields correct answers, encouraging process-level self-verification. Experiments on vanilla Qwen2.5-VL-7B-Instruct with Paper- and Wiki-VISA benchmarks show that LAT consistently improves the vanilla model in both single- and multi-image settings, yielding average gains of 8.23% in soft exact match (EM) and 47.0% in IoU@0.5. Meanwhile, LAT not only outperforms the supervised fine-tuning baseline, which is trained to directly produce answers with attribution, but also exhibits stronger generalization across domains.",
+    "status": "found"
+  },
+  "2511.12004": {
+    "arxiv_id": "2511.12004",
+    "title": "ComLQ: Benchmarking Complex Logical Queries in Information Retrieval",
+    "authors": [
+      "Ganlin Xu",
+      "Zhitao Yin",
+      "Linghao Zhang",
+      "Jiaqing Liang",
+      "Weijia Lu",
+      "Xiaodong Zhang",
+      "Zhifei Yang",
+      "Sihang Jiang",
+      "Deqing Yang"
+    ],
+    "submission_date": "2025-11-15T02:58:21Z",
+    "latest_updated": "2025-11-23T06:31:37Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.12004v1",
+      "2511.12004v2"
+    ],
+    "abstract": "Information retrieval (IR) systems play a critical role in navigating information overload across various applications. Existing IR benchmarks primarily focus on simple queries that are semantically analogous to single- and multi-hop relations, overlooking \\emph{complex logical queries} involving first-order logic operations such as conjunction ($\\land$), disjunction ($\\lor$), and negation ($\\lnot$). Thus, these benchmarks can not be used to sufficiently evaluate the performance of IR models on complex queries in real-world scenarios. To address this problem, we propose a novel method leveraging large language models (LLMs) to construct a new IR dataset \\textbf{ComLQ} for \\textbf{Com}plex \\textbf{L}ogical \\textbf{Q}ueries, which comprises 2,909 queries and 11,251 candidate passages. A key challenge in constructing the dataset lies in capturing the underlying logical structures within unstructured text. Therefore, by designing the subgraph-guided prompt with the subgraph indicator, an LLM (such as GPT-4o) is guided to generate queries with specific logical structures based on selected passages. All query-passage pairs in ComLQ are ensured \\emph{structure conformity} and \\emph{evidence distribution} through expert annotation. To better evaluate whether retrievers can handle queries with negation, we further propose a new evaluation metric, \\textbf{Log-Scaled Negation Consistency} (\\textbf{LSNC@$K$}). As a supplement to standard relevance-based metrics (such as nDCG and mAP), LSNC@$K$ measures whether top-$K$ retrieved passages violate negation conditions in queries. Our experimental results under zero-shot settings demonstrate existing retrieval models' limited performance on complex logical queries, especially on queries with negation, exposing their inferior capabilities of modeling exclusion.",
+    "status": "found"
+  },
+  "2511.12005": {
+    "arxiv_id": "2511.12005",
+    "title": "LithoSeg: A Coarse-to-Fine Framework for High-Precision Lithography Segmentation",
+    "authors": [
+      "Xinyu He",
+      "Botong Zhao",
+      "Bingbing Li",
+      "Shujing Lyu",
+      "Jiwei Shen",
+      "Yue Lu"
+    ],
+    "submission_date": "2025-11-15T02:58:48Z",
+    "latest_updated": "2025-11-15T02:58:48Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.12005v1"
+    ],
+    "abstract": "Accurate segmentation and measurement of lithography scanning electron microscope (SEM) images are crucial for ensuring precise process control, optimizing device performance, and advancing semiconductor manufacturing yield. Lithography segmentation requires pixel-level delineation of groove contours and consistent performance across diverse pattern geometries and process window. However, existing methods often lack the necessary precision and robustness, limiting their practical applicability. To overcome this challenge, we propose LithoSeg, a coarse-to-fine network tailored for lithography segmentation. In the coarse stage, we introduce a Human-in-the-Loop Bootstrapping scheme for the Segment Anything Model (SAM) to attain robustness with minimal supervision. In the subsequent fine stage, we recast 2D segmentation as 1D regression problem by sampling groove-normal profiles using the coarse mask and performing point-wise refinement with a lightweight MLP. LithoSeg outperforms previous approaches in both segmentation accuracy and metrology precision while requiring less supervision, offering promising prospects for real-world applications.",
+    "status": "found"
+  },
+  "2511.12006": {
+    "arxiv_id": "2511.12006",
+    "title": "Uncertainty-Guided Selective Adaptation Enables Cross-Platform Predictive Fluorescence Microscopy",
+    "authors": [
+      "Kai-Wen K. Yang",
+      "Andrew Bai",
+      "Alexandra Bermudez",
+      "Yunqi Hong",
+      "Zoe Latham",
+      "Iris Sloan",
+      "Michael Liu",
+      "Vishrut Goyal",
+      "Cho-Jui Hsieh",
+      "Neil Y. C. Lin"
+    ],
+    "submission_date": "2025-11-15T03:01:05Z",
+    "latest_updated": "2025-11-15T03:01:05Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.12006v1"
+    ],
+    "abstract": "Deep learning is transforming microscopy, yet models often fail when applied to images from new instruments or acquisition settings. Conventional adversarial domain adaptation (ADDA) retrains entire networks, often disrupting learned semantic representations. Here, we overturn this paradigm by showing that adapting only the earliest convolutional layers, while freezing deeper layers, yields reliable transfer. Building on this principle, we introduce Subnetwork Image Translation ADDA with automatic depth selection (SIT-ADDA-Auto), a self-configuring framework that integrates shallow-layer adversarial alignment with predictive uncertainty to automatically select adaptation depth without target labels. We demonstrate robustness via multi-metric evaluation, blinded expert assessment, and uncertainty-depth ablations. Across exposure and illumination shifts, cross-instrument transfer, and multiple stains, SIT-ADDA improves reconstruction and downstream segmentation over full-encoder adaptation and non-adversarial baselines, with reduced drift of semantic features. Our results provide a design rule for label-free adaptation in microscopy and a recipe for field settings; the code is publicly available.",
+    "status": "found"
+  },
+  "2511.12007": {
+    "arxiv_id": "2511.12007",
+    "title": "Hofstadter-Herman Visualization as a Diagnostic Tool for Systematic Effects in Electromagnetic Form Factor Extractions",
+    "authors": [
+      "Tyler Williams",
+      "Jennifer Rittenhouse West",
+      "Douglas W. Higinbotham",
+      "Fatiha Benmokhtar"
+    ],
+    "submission_date": "2025-11-15T03:05:57Z",
+    "latest_updated": "2026-09-05T19:16:39Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 4,
+    "versions": [
+      "2511.12007v1",
+      "2511.12007v2",
+      "2511.12007v3",
+      "2511.12007v4"
+    ],
+    "abstract": "The internal charge and magnetization distributions of the proton are characterized by electromagnetic form factors GE and GM. They are experimentally extracted via Rosenbluth separation, which measures the elastic scattering of electrons and protons at multiple beam energies and angles at fixed momentum transfer Q2. Conventionally, form factor values are obtained by plotting reduced cross sections against the virtual photon polarization parameter epsilon and then extracting the slope and intercept of the best fit lines. An alternative visualization method, proposed by Hofstadter and Herman in 1960, plots GM2 vs. GE2 curves instead. The best fit values of GE2 and GM2 are immediately visible from the intersection region of the curves and their uncertainty bands. In this work, we apply both conventional and Hofstadter-Herman visualizations to classic 1994 SLAC elastic scattering data. We demonstrate that the Hofstadter-Herman method reveals previously obscured regions of form factor parameter space and highlights subtle experimental discrepancies among data sets. Our results motivate adopting this visualization method as a routine diagnostic cross-check at the Electron-Ion Collider and elsewhere to flag normalization shifts and related adjustments before they enter global fits.",
+    "status": "found"
+  },
+  "2511.12008": {
+    "arxiv_id": "2511.12008",
+    "title": "Adaptive Diagnostic Reasoning Framework for Pathology with Multimodal Large Language Models",
+    "authors": [
+      "Yunqi Hong",
+      "Johnson Kao",
+      "Liam Edwards",
+      "Nein-Tzu Liu",
+      "Chung-Yen Huang",
+      "Alex Oliveira-Kowaleski",
+      "Cho-Jui Hsieh",
+      "Neil Y. C. Lin"
+    ],
+    "submission_date": "2025-11-15T03:06:59Z",
+    "latest_updated": "2025-11-15T03:06:59Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.12008v1"
+    ],
+    "abstract": "AI tools in pathology have improved screening throughput, standardized quantification, and revealed prognostic patterns that inform treatment. However, adoption remains limited because most systems still lack the human-readable reasoning needed to audit decisions and prevent errors. We present RECAP-PATH, an interpretable framework that establishes a self-learning paradigm, shifting off-the-shelf multimodal large language models from passive pattern recognition to evidence-linked diagnostic reasoning. At its core is a two-phase learning process that autonomously derives diagnostic criteria: diversification expands pathology-style explanations, while optimization refines them for accuracy. This self-learning approach requires only small labeled sets and no white-box access or weight updates to generate cancer diagnoses. Evaluated on breast and prostate datasets, RECAP-PATH produced rationales aligned with expert assessment and delivered substantial gains in diagnostic accuracy over baselines. By uniting visual understanding with reasoning, RECAP-PATH provides clinically trustworthy AI and demonstrates a generalizable path toward evidence-linked interpretation.",
+    "status": "found"
+  }
+}

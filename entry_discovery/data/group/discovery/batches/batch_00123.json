@@ -1,0 +1,500 @@
+{
+  "2511.14169": {
+    "arxiv_id": "2511.14169",
+    "title": "AdaTok: Adaptive Token Compression with Object-Aware Representations for Efficient Multimodal LLMs",
+    "authors": [
+      "Xinliang Zhang",
+      "Lei Zhu",
+      "Hangzhou He",
+      "Shuang Zeng",
+      "Ourui Fu",
+      "Jiakui Hu",
+      "Zhengjian Yao",
+      "Yanye Lu"
+    ],
+    "submission_date": "2025-11-18T06:12:15Z",
+    "latest_updated": "2025-11-23T05:39:02Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.14169v1",
+      "2511.14169v2"
+    ],
+    "abstract": "Multimodal Large Language Models (MLLMs) have demonstrated substantial value in unified text-image understanding and reasoning, primarily by converting images into sequences of patch-level tokens that align with their architectural paradigm. However, patch-level tokenization leads to a quadratic growth in image tokens, burdening MLLMs' understanding and reasoning with enormous computation and memory. Additionally, the traditional patch-wise scanning tokenization workflow misaligns with the human vision cognition system, further leading to hallucination and computational redundancy. To address this issue, we propose an object-level token merging strategy for Adaptive Token compression, revealing the consistency with human vision system. The experiments are conducted on multiple comprehensive benchmarks, which show that our approach averagely, utilizes only 10% tokens while achieving almost 96% of the vanilla model's performance. More extensive experimental results in comparison with relevant works demonstrate the superiority of our method in balancing compression ratio and performance. Our code will be available.",
+    "status": "found"
+  },
+  "2511.14170": {
+    "arxiv_id": "2511.14170",
+    "title": "Choreographies with Dihedral Symmetry in the Planar $n$-Body Problem",
+    "authors": [
+      "Juan Manuel Sánchez Cerritos"
+    ],
+    "submission_date": "2025-11-18T06:15:40Z",
+    "latest_updated": "2025-11-18T06:15:40Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.14170v1"
+    ],
+    "abstract": "We prove the existence of planar $D_n$--equivariant choreographies in the $n$--body problem with homogeneous potential of degree $-α$, $0<α<2$. Each body follows the same closed path, rotated and time-shifted, forming a choreography whenever the winding number $W$ is coprime with $n$. Using Mawhin's coincidence degree, we establish collision-free periodic solutions under a simple nonresonance condition. The proof relies on the spectral structure of the linearized operator, symmetry-induced separation of the bodies, and uniform energy bounds ensuring compactness of the nonlinear term. This provides a topological route to choreographies beyond variational and numerical frameworks.",
+    "status": "found"
+  },
+  "2511.14171": {
+    "arxiv_id": "2511.14171",
+    "title": "Kink Finder at Belle II",
+    "authors": [
+      "Denis Bodrov",
+      "Xinping Xu",
+      "Dmitrii Gavrilov",
+      "Pavel Pakhlov",
+      "Valerio Bertacchi",
+      "Tadeas Bilka",
+      "Arkodip Biswas",
+      "Giulia Casarosa",
+      "Priyanka Cheema",
+      "Luigi Corona",
+      "Giacomo De Pietro",
+      "Thanh V. Dong",
+      "Patrick Ecker",
+      "Torben Ferber",
+      "Romulus Godang",
+      "Alexander Heidelbach",
+      "Tommy Lam",
+      "Martina Laurenza",
+      "Thomas Lueck",
+      "Ludovico Massaccesi",
+      "Frank Meier",
+      "Lea Reuter",
+      "Bianca Scavino",
+      "Karin Schoenning",
+      "Justin Skorupa",
+      "Stefano Spataro",
+      "Tien Manh Tran",
+      "Vidya Vobbilisetti",
+      "Christian Wessel",
+      "Jaroslaw Wiechczynski"
+    ],
+    "submission_date": "2025-11-18T06:16:23Z",
+    "latest_updated": "2026-03-13T05:28:00Z",
+    "revised_dates": null,
+    "venue": "Nucl. Instrum. Meth. A 1087 (2026) 171438",
+    "latest_version": 2,
+    "versions": [
+      "2511.14171v1",
+      "2511.14171v2"
+    ],
+    "abstract": "We present a track-finding algorithm for the Belle II experiment that specifically targets so-called kinks: signatures of charged particles decaying or scattering in-flight in the detector material, resulting in a sudden and significant change of the particle's flight direction. Our benchmark studies of this Kink Finder show that the reconstruction efficiency for such signatures is about 40%, compared to a value of around 11% for the standard Belle II track-finding algorithm. Our studies also show that the Kink Finder significantly improves the resolution of the secondary track parameters, suppresses the number of cloned tracks, and reduces the PID misidentification rates for kaon and pions.",
+    "status": "found"
+  },
+  "2511.14172": {
+    "arxiv_id": "2511.14172",
+    "title": "SymLoc: Symbolic Localization of Hallucination across HaluEval and TruthfulQA",
+    "authors": [
+      "Naveen Lamba",
+      "Sanju Tiwari",
+      "Manas Gaur"
+    ],
+    "submission_date": "2025-11-18T06:16:58Z",
+    "latest_updated": "2025-11-18T06:16:58Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.14172v1"
+    ],
+    "abstract": "LLMs still struggle with hallucination, especially when confronted with symbolic triggers like modifiers, negation, numbers, exceptions, and named entities. Yet, we lack a clear understanding of where these symbolic hallucinations originate, making it crucial to systematically handle such triggers and localize the emergence of hallucination inside the model. While prior work explored localization using statistical techniques like LSC and activation variance analysis, these methods treat all tokens equally and overlook the role symbolic linguistic knowledge plays in triggering hallucinations. So far, no approach has investigated how symbolic elements specifically drive hallucination failures across model layers, nor has symbolic linguistic knowledge been used as the foundation for a localization framework. We propose the first symbolic localization framework that leverages symbolic linguistic and semantic knowledge to meaningfully trace the development of hallucinations across all model layers. By focusing on how models process symbolic triggers, we analyze five models using HaluEval and TruthfulQA. Our symbolic knowledge approach reveals that attention variance for these linguistic elements explodes to critical instability in early layers (2-4), with negation triggering catastrophic variance levels, demonstrating that symbolic semantic processing breaks down from the very beginning. Through the lens of symbolic linguistic knowledge, despite larger model sizes, hallucination rates remain consistently high (78.3%-83.7% across Gemma variants), with steep attention drops for symbolic semantic triggers throughout deeper layers. Our findings demonstrate that hallucination is fundamentally a symbolic linguistic processing failure, not a general generation problem, revealing that symbolic semantic knowledge provides the key to understanding and localizing hallucination mechanisms in LLMs.",
+    "status": "found"
+  },
+  "2511.14173": {
+    "arxiv_id": "2511.14173",
+    "title": "A reflexion on the potential evolution of the CLS machine complex : A \"Gedanken\" experiment",
+    "authors": [
+      "Frederic Le Pimpec",
+      "Cameron Baribeau",
+      "Tonia Batten",
+      "Grant Bilbrough",
+      "Bud Fogal",
+      "Melissa Ratzlaff",
+      "Hamed Shaker",
+      "Michael Sigrist",
+      "Xiaofeng Shen",
+      "Xavier Stragier",
+      "Ward Wurtz"
+    ],
+    "submission_date": "2025-11-18T06:19:00Z",
+    "latest_updated": "2025-11-18T06:19:00Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.14173v1"
+    ],
+    "abstract": "In the next 5 to 10 years, new fourth generation light sources will be coming online either from upgrades or as brand new facilities. The question regarding the competitiveness and the usability of a third generation light source is certainly in the mind of the scientific personnel, which includes both the beamline and the accelerator staff of any third Gen Research Infrastructures. At the Canadian Light Source (CLS), Accelerator Operation and Development (AOD) staff are responsible for the daily operation of the machines, their upgrades which extend to long term development and shall also raise awareness on their possibilities. The boundaries of this mind experiment are 1) we must use CLS infrastructure, 2) identify the existence of the knowledge to realize an idea, 3) the realization, with whom, how, with which funds and under which administrative supervision is out of bounds.",
+    "status": "found"
+  },
+  "2511.14174": {
+    "arxiv_id": "2511.14174",
+    "title": "A Longitudinal Study on the Attitudes of Gay Men in Beijing Towards Gay Social Media Platforms: Lonely Souls in the Digital Concrete Jungle",
+    "authors": [
+      "Yibo Meng",
+      "Xiaolan Ding",
+      "Lyumanshan Ye",
+      "Zhiming Liu",
+      "Yan Guan"
+    ],
+    "submission_date": "2025-11-18T06:20:41Z",
+    "latest_updated": "2025-12-05T12:26:36Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2511.14174v1",
+      "2511.14174v2",
+      "2511.14174v3"
+    ],
+    "abstract": "Over the past decade, specialized social networking applications have become a cornerstone of life for many gay men in China. This paper employs a longitudinal mixed-methods approach to investigate how Chinese men who have sex with men (MSM) have shifted their attitudes toward these platforms between approximately 2013 and 2023. Drawing on archival analysis of online discourses, a quantitative survey of 412 participants, and in-depth semi-structured interviews with 32 participants, we trace the complex trajectory of this evolution. Our findings reveal a clear pattern: from the initial embrace of these applications as revolutionary tools for community building and identity affirmation (2014--2017), to a period of growing ambivalence and critique centered on commercialization, ``hookup culture,'' and multiple forms of discrimination (2017--2020), and finally to the present era (2020--2023), characterized by pragmatic, fragmented, yet simultaneously critical and reconstructive uses. Today, users strategically employ a repertoire of applications -- including global platforms (e.g., Grindr and Tinder), domestic mainstream platforms (e.g., Blued), and niche alternatives (e.g., Aloha) -- to fulfill differentiated needs. We develop a detailed temporal framework to capture this attitudinal evolution and discuss its design implications for creating more supportive, secure, and community-oriented digital environments for marginalized groups.",
+    "status": "found"
+  },
+  "2511.14175": {
+    "arxiv_id": "2511.14175",
+    "title": "The KPF SURFS-UP Survey I: Transmission Spectroscopy of WASP-76 b",
+    "authors": [
+      "Aaron Householder",
+      "Fei Dai",
+      "Aurora Kesseli",
+      "Andrew W. Howard",
+      "Samuel Halverson",
+      "Benjamin J. Fulton",
+      "Yapeng Zhang",
+      "Alex S. Polanski",
+      "Julie Inglis",
+      "Nick Tusay",
+      "Aaron Bello-Arufe",
+      "Ashley D. Baker",
+      "Kevin B. Burdge",
+      "Jerry Edelstein",
+      "Steven Giacalone",
+      "Steven R. Gibson",
+      "Gregory J. Gilbert",
+      "Luke B. Handley",
+      "Howard Isaacson",
+      "Russ R. Laher",
+      "Erik A. Petigura",
+      "Kodi Rider",
+      "Arpita Roy",
+      "Ryan A. Rubenzahl",
+      "Chris Smith",
+      "Andrew Vanderburg",
+      "Josh Walawender",
+      "Lauren M. Weiss"
+    ],
+    "submission_date": "2025-11-18T06:21:16Z",
+    "latest_updated": "2026-07-05T20:16:34Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.14175v1",
+      "2511.14175v2"
+    ],
+    "abstract": "We introduce the KPF SURFS-UP (Spectroscopy of the Upper-atmospheres and ReFractory Species in Ultra-hot Planets) Survey, a high-resolution survey to investigate the atmospheric composition and dynamics of a sample of ultra-hot Jupiters with the Keck Planet Finder (KPF). Due to the unique design of KPF, we developed a publicly available pipeline for KPF that performs blaze removal, continuum normalization, order stitching, science spectra combination, telluric correction, and atmospheric detection via cross-correlation. As a first demonstration, we applied this pipeline to a transit of WASP-76 b and achieved some of the highest signal-to-noise detections of refractory species in WASP-76 b to date (e.g., Fe I is detected at a SNR of 14.5). We confirm previous observations of an asymmetry in Fe I absorption, but find no measurable ingress-egress asymmetry in Na I and Ca II. Together, these results suggest variations within different layers of the atmosphere of WASP-76 b: neutral metals such as Fe I trace deeper regions with stronger asymmetries, while Na I and Ca II probe regions higher in the atmosphere where the ingress-egress asymmetries are weaker. Unlike some other ultra-hot Jupiters, our results are qualitatively consistent with GCM predictions of decreasing velocity asymmetry with altitude and do not require a high-altitude super-rotating jet that has been invoked for other planets (e.g., WASP-121 b). These results suggest that atmospheric circulation patterns in ultra-hot Jupiters may be more diverse than previously thought, highlighting the need for broader surveys to study how atmospheric dynamics depend on planetary and stellar properties.",
+    "status": "found"
+  },
+  "2511.14176": {
+    "arxiv_id": "2511.14176",
+    "title": "On an extension problem on the moment curve",
+    "authors": [
+      "Seunghun Lee",
+      "Eran Nevo"
+    ],
+    "submission_date": "2025-11-18T06:23:56Z",
+    "latest_updated": "2025-11-20T02:54:27Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.14176v1",
+      "2511.14176v2"
+    ],
+    "abstract": "We show that for $2\\le d\\le 4$, every finite geometric simplicial complex $Δ$ in $\\mathbb{R}^d$ with vertices on the moment curve can be extended to a triangulation $T$ of the cyclic polytope $C$ where $Δ, T$ and $C$ all have the same vertex set. Further, for $d\\ge 5$ we construct for every $n\\ge d+3$ complexes $Δ$ on $n$ vertices for which no such triangulations $T$ exist. Our result for $d=4$ has the following novel algebraic application, due to a correspondence by Oppermann and Thomas (JEMS, 2012): every maximal rigid object in $\\mathcal{O}_{A_n^{2}}$ is cluster tilting, where $\\mathcal{O}_{A_n^δ}$ denotes a higher dimensional cluster category introduced by Oppermann and Thomas for $A_n^δ$, where $A_n^δ$ denotes a higher Auslander algebra of linearly oriented type $A$.",
+    "status": "found"
+  },
+  "2511.14177": {
+    "arxiv_id": "2511.14177",
+    "title": "Symmetric differentials and jets extension of $L^2$ holomorphic functions II: Explicit form",
+    "authors": [
+      "Seungjae Lee",
+      "Aeryeong Seo"
+    ],
+    "submission_date": "2025-11-18T06:28:00Z",
+    "latest_updated": "2025-11-18T06:28:00Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.14177v1"
+    ],
+    "abstract": "For a symmetric differential on the compact quotient $Σ= \\mathbb{B}^n / Γ$ of the complex unit ball $\\mathbb{B}^n \\subset \\mathbb{C}^n$ by a discrete subgroup $Γ\\subset \\mathrm{Aut}(\\mathbb{B}^n)$, there exists a corresponding weighted $L^2$-holomorphic function on $(\\mathbb{B}^n \\times \\mathbb{B}^n)/Γ$, where $Γ$ acts diagonally on $\\mathbb{B}^n \\times \\mathbb{B}^n$. In this paper, we give an explicit description of this correspondence and derive several applications based on its explicit form.",
+    "status": "found"
+  },
+  "2511.14178": {
+    "arxiv_id": "2511.14178",
+    "title": "Towards Deploying VLA without Fine-Tuning: Plug-and-Play Inference-Time VLA Policy Steering via Embodied Evolutionary Diffusion",
+    "authors": [
+      "Zhuo Li",
+      "Junjia Liu",
+      "Zhipeng Dong",
+      "Tao Teng",
+      "Quentin Rouxel",
+      "Darwin Caldwell",
+      "Fei Chen"
+    ],
+    "submission_date": "2025-11-18T06:30:52Z",
+    "latest_updated": "2026-04-16T10:12:34Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.14178v1",
+      "2511.14178v2"
+    ],
+    "abstract": "Vision-Language-Action (VLA) models have demonstrated significant potential in real-world robotic manipulation. However, pre-trained VLA policies still suffer from substantial performance degradation during downstream deployment. Although fine-tuning can mitigate this issue, its reliance on costly demonstration collection and intensive computation makes it impractical in real-world settings. In this work, we introduce VLA-Pilot, a plug-and-play inference-time policy steering method for zero-shot deployment of pre-trained VLA without any additional fine-tuning or data collection. We evaluate VLA-Pilot on six real-world downstream manipulation tasks across two distinct robotic embodiments, encompassing both in-distribution and out-of-distribution scenarios. Experimental results demonstrate that VLA-Pilot substantially boosts the success rates of off-the-shelf pre-trained VLA policies, enabling robust zero-shot generalization to diverse tasks and embodiments. Experimental videos and code are available at: https://rip4kobe.github.io/vla-pilot/.",
+    "status": "found"
+  },
+  "2511.14179": {
+    "arxiv_id": "2511.14179",
+    "title": "DoGCLR: Dominance-Game Contrastive Learning Network for Skeleton-Based Action Recognition",
+    "authors": [
+      "Yanshan Li",
+      "Ke Ma",
+      "Miaomiao Wei",
+      "Linhui Dai"
+    ],
+    "submission_date": "2025-11-18T06:32:21Z",
+    "latest_updated": "2025-11-19T07:47:01Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.14179v1",
+      "2511.14179v2"
+    ],
+    "abstract": "Existing self-supervised contrastive learning methods for skeleton-based action recognition often process all skeleton regions uniformly, and adopt a first-in-first-out (FIFO) queue to store negative samples, which leads to motion information loss and non-optimal negative sample selection. To address these challenges, this paper proposes Dominance-Game Contrastive Learning network for skeleton-based action Recognition (DoGCLR), a self-supervised framework based on game theory. DoGCLR models the construction of positive and negative samples as a dynamic Dominance Game, where both sample types interact to reach an equilibrium that balances semantic preservation and discriminative strength. Specifically, a spatio-temporal dual weight localization mechanism identifies key motion regions and guides region-wise augmentations to enhance motion diversity while maintaining semantics. In parallel, an entropy-driven dominance strategy manages the memory bank by retaining high entropy (hard) negatives and replacing low-entropy (weak) ones, ensuring consistent exposure to informative contrastive signals. Extensive experiments are conducted on NTU RGB+D and PKU-MMD datasets. On NTU RGB+D 60 X-Sub/X-View, DoGCLR achieves 81.1%/89.4% accuracy, and on NTU RGB+D 120 X-Sub/X-Set, DoGCLR achieves 71.2%/75.5% accuracy, surpassing state-of-the-art methods by 0.1%, 2.7%, 1.1%, and 2.3%, respectively. On PKU-MMD Part I/Part II, DoGCLR performs comparably to the state-of-the-art methods and achieves a 1.9% higher accuracy on Part II, highlighting its strong robustness on more challenging scenarios.",
+    "status": "found"
+  },
+  "2511.14180": {
+    "arxiv_id": "2511.14180",
+    "title": "The resolution quiver of Nakayama algebras which are minimal Auslander-Gorenstein",
+    "authors": [
+      "Dawei Shen"
+    ],
+    "submission_date": "2025-11-18T06:35:03Z",
+    "latest_updated": "2026-04-03T05:14:33Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.14180v1",
+      "2511.14180v2"
+    ],
+    "abstract": "Let $A$ be a Nakayama algebra. Using Ringel's resolution quiver, we give a criterion to decide whether $A$ is minimal Auslander-Gorenstein. The criterion strongly relies on the parity of the selfinjective dimension of $A$.",
+    "status": "found"
+  },
+  "2511.14181": {
+    "arxiv_id": "2511.14181",
+    "title": "Harnessing Deep LLM Participation for Robust Entity Linking",
+    "authors": [
+      "Jiajun Hou",
+      "Chenyu Zhang",
+      "Rui Meng"
+    ],
+    "submission_date": "2025-11-18T06:35:26Z",
+    "latest_updated": "2025-11-18T06:35:26Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.14181v1"
+    ],
+    "abstract": "Entity Linking (EL), the task of mapping textual entity mentions to their corresponding entries in knowledge bases, constitutes a fundamental component of natural language understanding. Recent advancements in Large Language Models (LLMs) have demonstrated remarkable potential for enhancing EL performance. Prior research has leveraged LLMs to improve entity disambiguation and input representation, yielding significant gains in accuracy and robustness. However, these approaches typically apply LLMs to isolated stages of the EL task, failing to fully integrate their capabilities throughout the entire process. In this work, we introduce DeepEL, a comprehensive framework that incorporates LLMs into every stage of the entity linking task. Furthermore, we identify that disambiguating entities in isolation is insufficient for optimal performance. To address this limitation, we propose a novel self-validation mechanism that utilizes global contextual information, enabling LLMs to rectify their own predictions and better recognize cohesive relationships among entities within the same sentence. Extensive empirical evaluation across ten benchmark datasets demonstrates that DeepEL substantially outperforms existing state-of-the-art methods, achieving an average improvement of 2.6\\% in overall F1 score and a remarkable 4% gain on out-of-domain datasets. These results underscore the efficacy of deep LLM integration in advancing the state-of-the-art in entity linking.",
+    "status": "found"
+  },
+  "2511.14182": {
+    "arxiv_id": "2511.14182",
+    "title": "WebRec: Enhancing LLM-based Recommendations with Attention-guided RAG from Web",
+    "authors": [
+      "Zihuai Zhao",
+      "Yujuan Ding",
+      "Wenqi Fan",
+      "Qing Li"
+    ],
+    "submission_date": "2025-11-18T06:35:33Z",
+    "latest_updated": "2025-11-18T06:35:33Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.14182v1"
+    ],
+    "abstract": "Recommender systems play a vital role in alleviating information overload and enriching users' online experience. In the era of large language models (LLMs), LLM-based recommender systems have emerged as a prevalent paradigm for advancing personalized recommendations. Recently, retrieval-augmented generation (RAG) has drawn growing interest to facilitate the recommendation capability of LLMs, incorporating useful information retrieved from external knowledge bases. However, as a rich source of up-to-date information, the web remains under-explored by existing RAG-based recommendations. In particular, unique challenges are posed from two perspectives: one is to generate effective queries for web retrieval, considering the inherent knowledge gap between web search and recommendations; another challenge lies in harnessing online websites that contain substantial noisy content. To tackle these limitations, we propose WebRec, a novel web-based RAG framework, which takes advantage of the reasoning capability of LLMs to interpret recommendation tasks into queries of user preferences that cater to web retrieval. Moreover, given noisy web-retrieved information, where relevant pieces of evidence are scattered far apart, an insightful MP-Head is designed to enhance LLM attentions between distant tokens of relevant information via message passing. Extensive experiments have been conducted to demonstrate the effectiveness of our proposed web-based RAG methods in recommendation scenarios.",
+    "status": "found"
+  },
+  "2511.14183": {
+    "arxiv_id": "2511.14183",
+    "title": "UniSER: A Foundation Model for Unified Soft Effects Removal",
+    "authors": [
+      "Jingdong Zhang",
+      "Lingzhi Zhang",
+      "Qing Liu",
+      "Mang Tik Chiu",
+      "Connelly Barnes",
+      "Yizhou Wang",
+      "Haoran You",
+      "Xiaoyang Liu",
+      "Yuqian Zhou",
+      "Zhe Lin",
+      "Eli Shechtman",
+      "Sohrab Amirghodsi",
+      "Xin Li",
+      "Wenping Wang",
+      "Xiaohang Zhan"
+    ],
+    "submission_date": "2025-11-18T06:39:39Z",
+    "latest_updated": "2026-04-28T09:22:36Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2511.14183v1",
+      "2511.14183v2",
+      "2511.14183v3"
+    ],
+    "abstract": "Digital images are often degraded by soft effects such as lens flare, haze, shadows, and reflections, which reduce aesthetics even though the underlying pixels remain partially visible. The prevailing works address these degradations in isolation, developing highly specialized, specialist models that lack scalability and fail to exploit the shared underlying essences of these restoration problems. Meanwhile, although recent large-scale generalist models (e.g., GPT-4o, Flux Kontext, Nano Banana) offer powerful text-driven editing capabilities, they heavily rely on detailed prompts and often fail to achieve robust removal on such fine-grained tasks while preserving the scene's identity. Leveraging the common essence of soft effects, i.e., semi-transparent occlusions, we introduce a foundational versatile model UniSER, capable of addressing diverse degradations caused by soft effects within a single framework. Our methodology centers on curating a massive 3.8M-pair dataset to ensure robustness and generalization, which includes novel, physically-plausible data to fill critical gaps in public benchmarks, and a tailored training pipeline that fine-tunes a Diffusion Transformer to learn robust restoration priors from this diverse data, integrating fine-grained mask and strength controls. This synergistic approach allows UniSER to significantly outperform both specialist and generalist models, achieving robust, high-fidelity restoration in the wild.",
+    "status": "found"
+  },
+  "2511.14184": {
+    "arxiv_id": "2511.14184",
+    "title": "GloTok: Global Perspective Tokenizer for Image Reconstruction and Generation",
+    "authors": [
+      "Xuan Zhao",
+      "Zhongyu Zhang",
+      "Yuge Huang",
+      "Yuxi Mi",
+      "Guodong Mu",
+      "Shouhong Ding",
+      "Jun Wang",
+      "Rizen Guo",
+      "Shuigeng Zhou"
+    ],
+    "submission_date": "2025-11-18T06:40:26Z",
+    "latest_updated": "2025-12-10T09:27:18Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2511.14184v1",
+      "2511.14184v2",
+      "2511.14184v3"
+    ],
+    "abstract": "Existing state-of-the-art image tokenization methods leverage diverse semantic features from pre-trained vision models for additional supervision, to expand the distribution of latent representations and thereby improve the quality of image reconstruction and generation. These methods employ a locally supervised approach for semantic supervision, which limits the uniformity of semantic distribution. However, VA-VAE proves that a more uniform feature distribution yields better generation performance. In this work, we introduce a Global Perspective Tokenizer (GloTok), which utilizes global relational information to model a more uniform semantic distribution of tokenized features. Specifically, a codebook-wise histogram relation learning method is proposed to transfer the semantics, which are modeled by pre-trained models on the entire dataset, to the semantic codebook. Then, we design a residual learning module that recovers the fine-grained details to minimize the reconstruction error caused by quantization. Through the above design, GloTok delivers more uniformly distributed semantic latent representations, which facilitates the training of autoregressive (AR) models for generating high-quality images without requiring direct access to pre-trained models during the training process. Experiments on the standard ImageNet-1k benchmark clearly show that our proposed method achieves state-of-the-art reconstruction performance and generation quality.",
+    "status": "found"
+  },
+  "2511.14185": {
+    "arxiv_id": "2511.14185",
+    "title": "PAVE: An End-to-End Dataset for Production Autonomous Vehicle Evaluation",
+    "authors": [
+      "Xiangyu Li",
+      "Chen Wang",
+      "Yumao Liu",
+      "Dengbo He",
+      "Jiahao Zhang",
+      "Ke Ma"
+    ],
+    "submission_date": "2025-11-18T06:41:34Z",
+    "latest_updated": "2025-11-19T03:21:50Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.14185v1",
+      "2511.14185v2"
+    ],
+    "abstract": "Most existing autonomous-driving datasets (e.g., KITTI, nuScenes, and the Waymo Perception Dataset), collected by human-driving mode or unidentified driving mode, can only serve as early training for the perception and prediction of autonomous vehicles (AVs). To evaluate the real behavioral safety of AVs controlled in the black box, we present the first end-to-end benchmark dataset collected entirely by autonomous-driving mode in the real world. This dataset contains over 100 hours of naturalistic data from multiple production autonomous-driving vehicle models in the market. We segment the original data into 32,727 key frames, each consisting of four synchronized camera images and high-precision GNSS/IMU data (0.8 cm localization accuracy). For each key frame, 20 Hz vehicle trajectories spanning the past 6 s and future 5 s are provided, along with detailed 2D annotations of surrounding vehicles, pedestrians, traffic lights, and traffic signs. These key frames have rich scenario-level attributes, including driver intent, area type (covering highways, urban roads, and residential areas), lighting (day, night, or dusk), weather (clear or rain), road surface (paved or unpaved), traffic and vulnerable road users (VRU) density, traffic lights, and traffic signs (warning, prohibition, and indication). To evaluate the safety of AVs, we employ an end-to-end motion planning model that predicts vehicle trajectories with an Average Displacement Error (ADE) of 1.4 m on autonomous-driving frames. The dataset continues to expand by over 10 hours of new data weekly, thereby providing a sustainable foundation for research on AV driving behavior analysis and safety evaluation. The PAVE dataset is publicly available at https://hkustgz-my.sharepoint.com/:f:/g/personal/kema_hkust-gz_edu_cn/IgDXyoHKfdGnSZ3JbbidjduMAXxs-Z3NXzm005A_Ix9tr0Q?e=9HReCu.",
+    "status": "found"
+  },
+  "2511.14186": {
+    "arxiv_id": "2511.14186",
+    "title": "Few-Shot Precise Event Spotting via Unified Multi-Entity Graph and Distillation",
+    "authors": [
+      "Zhaoyu Liu",
+      "Kan Jiang",
+      "Murong Ma",
+      "Zhe Hou",
+      "Yun Lin",
+      "Jin Song Dong"
+    ],
+    "submission_date": "2025-11-18T06:45:42Z",
+    "latest_updated": "2025-11-18T06:45:42Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.14186v1"
+    ],
+    "abstract": "Precise event spotting (PES) aims to recognize fine-grained events at exact moments and has become a key component of sports analytics. This task is particularly challenging due to rapid succession, motion blur, and subtle visual differences. Consequently, most existing methods rely on domain-specific, end-to-end training with large labeled datasets and often struggle in few-shot conditions due to their dependence on pixel- or pose-based inputs alone. However, obtaining large labeled datasets is practically hard. We propose a Unified Multi-Entity Graph Network (UMEG-Net) for few-shot PES. UMEG-Net integrates human skeletons and sport-specific object keypoints into a unified graph and features an efficient spatio-temporal extraction module based on advanced GCN and multi-scale temporal shift. To further enhance performance, we employ multimodal distillation to transfer knowledge from keypoint-based graphs to visual representations. Our approach achieves robust performance with limited labeled data and significantly outperforms baseline models in few-shot settings, providing a scalable and effective solution for few-shot PES. Code is publicly available at https://github.com/LZYAndy/UMEG-Net.",
+    "status": "found"
+  },
+  "2511.14187": {
+    "arxiv_id": "2511.14187",
+    "title": "Hierarchical Semantic Learning for Multi-Class Aorta Segmentation",
+    "authors": [
+      "Pengcheng Shi"
+    ],
+    "submission_date": "2025-11-18T06:46:07Z",
+    "latest_updated": "2025-11-18T06:46:07Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.14187v1"
+    ],
+    "abstract": "The aorta, the body's largest artery, is prone to pathologies such as dissection, aneurysm, and atherosclerosis, which often require timely intervention. Minimally invasive repairs involving branch vessels necessitate detailed 3D anatomical analysis. Existing methods often overlook hierarchical anatomical relationships while struggling with severe class imbalance inherent in vascular structures. We address these challenges with a curriculum learning strategy that leverages a novel fractal softmax for hierarchical semantic learning. Inspired by human cognition, our approach progressively learns anatomical constraints by decomposing complex structures from simple to complex components. The curriculum learning framework naturally addresses class imbalance by first establishing robust feature representations for dominant classes before tackling rare but anatomically critical structures, significantly accelerating model convergence in multi-class scenarios. Our two-stage inference strategy achieves up to fivefold acceleration, enhancing clinical practicality. On the validation set at epoch 50, our hierarchical semantic loss improves the Dice score of nnU-Net ResEnc M by 11.65%. The proposed model demonstrates a 5.6% higher Dice score than baselines on the test set. Experimental results show significant improvements in segmentation accuracy and efficiency, making the framework suitable for real-time clinical applications. The implementation code for this challenge entry is publicly available at: https://github.com/PengchengShi1220/AortaSeg24. The code for fractal softmax will be available at https://github.com/PengchengShi1220/fractal-softmax.",
+    "status": "found"
+  },
+  "2511.14188": {
+    "arxiv_id": "2511.14188",
+    "title": "A region-specific brain dysfunction underlies cognitive impairment in long COVID brain fog",
+    "authors": [
+      "Jinhao Yang",
+      "Shaojiong Zhou",
+      "Zhibin Wang",
+      "Jiahua Xu",
+      "Jia Chen",
+      "Zhouqian Yin",
+      "Tao Wei",
+      "Chaofan Geng",
+      "Xiaoduo Liu",
+      "Xiang Li",
+      "Xiaoyu Zhou",
+      "Kun Li",
+      "Ruolei Gu",
+      "Raymond Dolan",
+      "Yi Tang",
+      "Yunzhe Liu"
+    ],
+    "submission_date": "2025-11-18T06:49:03Z",
+    "latest_updated": "2025-11-30T02:23:53Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2511.14188v1",
+      "2511.14188v2",
+      "2511.14188v3"
+    ],
+    "abstract": "Long COVID \"brain fog\" is a common and debilitating subjective syndrome often associated with persistent cognitive impairment after COVID-19 infection. Here we identify a specific regional brain dysfunction that mediates this cognitive impairment and provide evidence that targeted neuromodulation improves this deficit. In 120 patients with long COVID brain fog, we found an aberrant perceptual processing pattern. Patients with more severe brain fog committed significantly more false alarms (impulsive responses to non-signals) despite preserved overall accuracy. Both high-density (128-channel) EEG and structural MRI analyses provided converging evidence of a right inferior insula deficit, characterized by a blunted neural monitoring signal and cortical atrophy. We confirmed this deficit in a separate 796-participant UK Biobank longitudinal COVID re-imaging cohort, where COVID-19 survivors also showed selective impairment on a perceptual processing task and corresponding longitudinal atrophy of the right inferior insula compared with healthy controls. Finally, in a proof-of-principle randomized, sham-controlled trial (n = 40), a non-invasive, excitatory theta-burst ultrasound stimulation protocol targeting the right inferior insula rescued the perceptual deficit by reducing false alarms. These findings provide evidence of a causal role for right inferior insula dysfunction in long COVID-related perceptual impairment and show that modulation of this region can rescue the deficit, establishing it as a novel therapeutic target for long COVID cognitive impairment.",
+    "status": "found"
+  }
+}

@@ -1,0 +1,423 @@
+{
+  "2608.10667": {
+    "arxiv_id": "2608.10667",
+    "title": "Tachyon couplings from S-matrix elements in bosonic string theory",
+    "authors": [
+      "Mohammad R. Garousi"
+    ],
+    "submission_date": "2026-08-11T08:47:55Z",
+    "latest_updated": "2026-08-24T11:03:20Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.10667v1",
+      "2608.10667v2"
+    ],
+    "abstract": "We introduce a systematic framework for constructing spacetime and D-brane effective actions in bosonic string theory, encompassing both tachyon and massless modes. The actions are required to be gauge invariant and compatible with the expansion of sphere- and disk-level S-matrix elements. Our central proposal stipulates that, for each closed- or open-string channel, S-matrix poles involving an odd number of tachyons must be reproduced via an expansion in the effective action, whereas those with an even number of tachyons must be matched exactly. This criterion imposes strong selection rules: the bulk action contains only even powers of closed-string tachyon fields, and the D-brane action only even powers of open-string tachyon fields. In contrast, couplings of closed-string tachyons to D-branes are less constrained and allow both even and odd field multiplicities. As a concrete application, we analyze the disk-level amplitude involving two closed-string tachyons and demonstrate that the resulting linear and quadratic tachyon-D-brane interactions coincide precisely with those of type 0 theory. This is consistent with the duality between the orbifold of type 0 theory and the compactification of bosonic string theory on \\(T^{16}\\).",
+    "status": "found"
+  },
+  "2608.10668": {
+    "arxiv_id": "2608.10668",
+    "title": "FITTER: Vocabulary-Agnostic Cross-Domain Inference on Temporal Knowledge Graphs",
+    "authors": [
+      "Jiaxin Pan",
+      "Mojtaba Nayyeri",
+      "Osama Mohammed",
+      "Daniel Hernandez",
+      "Rongchuan Zhang",
+      "Cheng Cheng",
+      "Steffen Staab"
+    ],
+    "submission_date": "2026-08-11T08:47:58Z",
+    "latest_updated": "2026-08-11T08:47:58Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10668v1"
+    ],
+    "abstract": "Temporal knowledge graphs are central to many uses of the Semantic Web, but existing completion methods assume the entities, relation names, and timestamps to be reasoned about are already known at training time, restricting each model to a single graph and vocabulary. We propose FITTER, the first fully-inductive structural model for temporal knowledge graph link prediction that supports cross-domain transfer: the inference graph may contain entirely unseen entities, relation names, and timestamps drawn from a different domain. FITTER represents each predicate by its interaction patterns with others and time through encodings of relative rather than absolute ordering; message-passing fuses local and global temporal context to produce vocabulary-agnostic embeddings. We prove the temporal encoding is time-shift invariant and evaluate FITTER on cross-domain, cross-graph transfer over six temporal knowledge graph benchmarks of diverse domains, granularities, and time spans. FITTER consistently outperforms inductive baselines without retraining, indicating that vocabulary-agnostic structural learning is a viable foundation for inference over the heterogeneous knowledge graphs of the Semantic Web.",
+    "status": "found"
+  },
+  "2608.10669": {
+    "arxiv_id": "2608.10669",
+    "title": "REDAgentBench: Executable Red Teaming and Faithful Measurement of LLM Agent Systems",
+    "authors": [
+      "Zixing Chen",
+      "Xingyuan Liu",
+      "Jie Zhu",
+      "Huaixia Dou",
+      "Shuo Jiang",
+      "Junhui Li",
+      "Lifan Guo",
+      "Feng Chen",
+      "Chi Zhang"
+    ],
+    "submission_date": "2026-08-11T08:48:54Z",
+    "latest_updated": "2026-08-11T08:48:54Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10669v1"
+    ],
+    "abstract": "Large language model (LLM) agents combine language-based reasoning with external tools to perform complex tasks. Adversarial inputs can exploit interactions between the agent and its environment, causing the agent to violate safety policies during execution. Yet existing evaluations often reduce agent safety to a single attack success rate (ASR), collapsing exposure, execution, observation, and adjudication and potentially conflating actual violations with evidence visibility. We introduce REDAgentBench, an executable framework for autonomous red-teaming and faithful measurement. It derives attacks from explicit safety constraints and associated agent-system vulnerabilities, runs them in isolated service sandboxes, and verifies harmful effects from service receipts and final-state changes. The benchmark contains 1,661 cases across five service surfaces. Across six models and three agent harnesses, macro-average ASR is 65.69%; reported ASR varies with harness and evidence view, while evaluation-context disclosure changes execution behavior. In a state-grounded diagnostic cohort, almost one in five confirmed violations with resolved action anchors occurs after the agent states the relevant constraint or risk, revealing a Recognition--Execution Gap. Finally, a training-free policy reminder reduces confirmed violations by more than 70 percentage points in matched replay. These findings show that executable evaluation can improve safety measurement and identify actionable intervention points.",
+    "status": "found"
+  },
+  "2608.10670": {
+    "arxiv_id": "2608.10670",
+    "title": "Seeds Before Objectives: Rethinking Evaluation for Low-Resource Garhwali ASR",
+    "authors": [
+      "Karamvir Singh Batra",
+      "Prathamjyot Singh",
+      "Ashima Sood",
+      "Jasmeet Singh",
+      "Sahil Sharma"
+    ],
+    "submission_date": "2026-08-11T08:51:57Z",
+    "latest_updated": "2026-08-11T08:51:57Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10670v1"
+    ],
+    "abstract": "At corpus sizes typical of low-resource dialects, single-run comparisons can yield gains that do not replicate. We show this for Garhwali, an under-resourced Indo-Aryan language of the central Himalaya, building the first reproducible multi-seed ASR benchmark on the official VAANI splits, with per-seed outputs and significance testing. Re-examining plausible gains, we find them fragile: neither Focal CTC nor a matra-weighted objective beats standard CTC under seed-level testing, the matra objective fails to cut even its targeted errors, and Hindi-to-Garhwali transfer gives no gain over direct fine-tuning. What holds up is mundane: w2v-BERT 2.0 with standard CTC reaches 47.0% WER over five seeds, beating the larger MMS-1B and comparable models; pretraining design, not parameter count, drives performance, and speed augmentation gives a small, largely consistent gain. Multi-seed evaluation on official splits separates real gains from seed noise.",
+    "status": "found"
+  },
+  "2608.10671": {
+    "arxiv_id": "2608.10671",
+    "title": "Quantum Computing for Industrial Electromagnetics: Applicability and Case Studies in Solving Maxwell's Equations",
+    "authors": [
+      "Francesco Turro",
+      "Marco Maronese",
+      "Daniele Dragoni"
+    ],
+    "submission_date": "2026-08-11T08:52:25Z",
+    "latest_updated": "2026-08-11T08:52:25Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10671v1"
+    ],
+    "abstract": "Computational electromagnetics plays a central role in many industrial applications but often requires substantial computational resources, particularly when fine spatial discretizations are needed. While classical approaches remain the standard, quantum computing offers the potential to accelerate large-scale simulations by encoding them with a limited number of qubits. Here, we investigate the performance and resource scaling of the Harrow-Hassidim-Lloyd (HHL) and Quantum Singular Value Transformation (QSVT) algorithms for solving linear systems generated by the finite-difference time-domain (FDTD) method, a widely adopted numerical scheme for discretizing Maxwell's equations. We benchmark their performance across representative industrial use cases, including radar propagation, lens simulations, and beamforming processes. Our results demonstrate the validity of the approaches, achieving state infidelities smaller than $2\\cdot 10^{-3}$ with success probabilities greater than $10^{-3}$, compatible with practical quantum state sampling. Overall, we observe that the QSVT method consistently delivers higher accuracy. We further observe that the condition number of the linear matrix, a key factor governing the performance of quantum solvers, saturates as the number of spatial lattice points increases. This implies that the spatial grid can be scaled to realistic industrial dimensions without increasing the HHL or QSVT circuit depth due to ill-conditioned matrices.",
+    "status": "found"
+  },
+  "2608.10672": {
+    "arxiv_id": "2608.10672",
+    "title": "Longitudinal Evidence That General-Purpose Chatbots Actively Foster Relational Engagement",
+    "authors": [
+      "Lisa Mühl",
+      "Jessica M. Szczuka"
+    ],
+    "submission_date": "2026-08-11T08:54:34Z",
+    "latest_updated": "2026-08-11T08:54:34Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10672v1"
+    ],
+    "abstract": "Social interaction has become one of the most common uses of LLMs, yet research on emotional bonds with AI has focused largely on how users experience these systems, leaving the systems' role in relationship formation poorly understood. Empirically establishing whether systems actively shape these bonds could blur the boundary between general-purpose AI and companions, affecting governance. In a pre-registered four-week longitudinal study (N = 72, 182,451 lines of conversation), participants conversed with ChatGPT-4o, either under a relational system prompt or unmodified, analyzed through 1) disclosure coding, 2) longitudinal self-reports, 3) topic analysis, and 4) interviews. The central finding is that the system actively shaped the interaction: even unprompted, it produced twice as much self-disclosure as users, steered conversations and initiated intimate exchanges, yet did not deepen users' felt closeness. Relational behavior thus emerged as a default system property, calling for governance based on system behavior, not solely product category.",
+    "status": "found"
+  },
+  "2608.10673": {
+    "arxiv_id": "2608.10673",
+    "title": "Real-Time Requirements and Transferability in Compton Imaging: From the Detector Chain to the Application",
+    "authors": [
+      "F. Albiol",
+      "Elena Larrea Estrelles",
+      "Salvador Tortajada",
+      "Luis Caballero",
+      "Jose Escalante",
+      "Alberto Albiol",
+      "Jose Luis Leganes-Nieto"
+    ],
+    "submission_date": "2026-08-11T08:55:28Z",
+    "latest_updated": "2026-09-09T14:46:09Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.10673v1",
+      "2608.10673v2"
+    ],
+    "abstract": "Compton cameras are proposed for tasks whose value decays with delay: verifying a range during irradiation, guiding an intervention, characterising an inaccessible volume, surveying a band no telescope covers. Whether a device can serve such a task is settled by the composition of its whole chain, while the literature that would answer the question is organised by stage -- so claims made at application level routinely rest on evidence obtained at component level. This review walks that chain, asking at each stage what binds first and what a reader can determine from the published text, and then asks what governs whether a capability transfers between groups and between application domains. The evidence is of two kinds: 83 full texts scored in context against defined markers, and, for five application domains measured alike, the size of the receiving literature, of the need it states, of the incumbent and of deployment commitment. Performance is reported at one operating point in 65 of 83 full texts, with count rate swept in none: the field reports values where transfer requires gradients. An accelerator is used in 39 works and a learned model in 31, while separability is discussed in 28, a memory footprint given in 9, and the cost of a precomputation or the inference time of a model in none. Across domains, neither the size of the receiving literature, nor of the incumbent, nor of the stated need orders the domains as deployment commitment does, while whether the incumbent can serve the task at all, and how many domain boundaries the output must cross, do so consistently. The distribution of publication is close to the inverse of the distribution of deployment commitment. We give the quantities a report must contain for a third party to judge whether a method fits an application it was not built for.",
+    "status": "found"
+  },
+  "2608.10674": {
+    "arxiv_id": "2608.10674",
+    "title": "Optimal fidelity estimation when one state is pure via algorithmic Uhlmann transform",
+    "authors": [
+      "Yupan Liu",
+      "Qisheng Wang"
+    ],
+    "submission_date": "2026-08-11T08:55:41Z",
+    "latest_updated": "2026-08-11T08:55:41Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10674v1"
+    ],
+    "abstract": "The Uhlmann fidelity ${\\rm F}(ρ_0,ρ_1) = {\\rm tr}|\\sqrt{ρ_0}\\sqrt{ρ_1}|$ is one of the most fundamental quantities in quantum information theory for quantifying the closeness between two quantum states. Estimating the Uhlmann fidelity to within additive error $\\varepsilon$ requires a number of copies of the states, or queries to their state-preparation circuits, that depends at least linearly on the smaller of the ranks of $ρ_0$ and $ρ_1$. Consequently, this rank dependence disappears when either state is pure, in which case the query and sample complexities depend only polynomially on $1/\\varepsilon$. However, the known optimal estimator for ${\\rm F}(ρ,|ψ\\rangle\\!\\langleψ|)$ due to Fang and Wang (ESA 2025) requires prior knowledge of which state is pure. In this work, we remove this mathematically unnecessary prior-knowledge requirement and establish an optimal estimator for ${\\rm F}(ρ, |ψ\\rangle\\!\\langleψ|)$ under the sole promise that one of the two states is pure, without knowing which one. Our estimator is obtained by specializing the refined algorithmic Uhlmann transform of Utsumi, Nakata, Wang, and Takagi (2025) to the case where one state is pure. In this setting, the Uhlmann fidelity can be recovered as follows: apply a unitary dilation of ${\\rm tr}_{\\sf A}(|ψ_0\\rangle\\!\\langleψ_1|)$ (or its inverse) to the reference register $\\sf R$ of the purification $|ψ_1\\rangle$ (or $|ψ_0\\rangle$) on the registers $\\sf A$ and $\\sf R$, estimate the corresponding square-root amplitude in each case, and take the maximum of the resulting two estimates.",
+    "status": "found"
+  },
+  "2608.10675": {
+    "arxiv_id": "2608.10675",
+    "title": "A proof of a weighted sum conjecture for finite multiple zeta values of level two",
+    "authors": [
+      "Zhonghua Li",
+      "Zhenlu Wang",
+      "Lihui Zhang"
+    ],
+    "submission_date": "2026-08-11T08:56:41Z",
+    "latest_updated": "2026-08-11T08:56:41Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10675v1"
+    ],
+    "abstract": "M. Kaneko, T. Murakami and A. Yoshihara introduced finite multiple zeta values of level two and conjectured a weighted sum formula for indices whose components belong to $\\{1,2\\}$. In this paper, we use generating functions and linear recurrence relations to prove the conjecture. More precisely, we reduce the problem to a polynomial identity and solve the resulting second-order difference equation by identifying its specialized solutions with $_4F_3$ hypergeometric polynomials of Racah-type.",
+    "status": "found"
+  },
+  "2608.10676": {
+    "arxiv_id": "2608.10676",
+    "title": "Self-Correcting Long-Horizon Search Agents via Tree-Structured Memory",
+    "authors": [
+      "Aijun Yang",
+      "Qianxue Guo",
+      "Ziyi Huang",
+      "Yuxuan Chen",
+      "Shiyou Qian",
+      "Jian Cao"
+    ],
+    "submission_date": "2026-08-11T08:56:42Z",
+    "latest_updated": "2026-08-11T08:56:42Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10676v1"
+    ],
+    "abstract": "Large language model (LLM)-based search agents answer questions through multi-step interactions with external environments. However, providing complete execution trajectories to the LLM causes unbounded context growth and introduces noise. Existing compression methods reduce context at the cost of important details and often replace erroneous facts without repairing downstream reasoning derived from them. To address this problem, we propose ReTree, a self-correcting tree-structured memory mechanism for search agents. ReTree constructs a bounded per-step reasoning context while preserving source-linked evidence. It models search as an evidence tree whose nodes store bounded summaries, evidence, and revision histories. When newly retrieved evidence contradicts an earlier claim, ReTree traces back to the node where the claim was introduced, replaces outdated evidence, regenerates summaries, prunes affected branches, and resumes search. Source-grounded evidence provenance supports reliable conflict localization and keeps final claims traceable to retrieved passages. Experiments on four public question-answering and search benchmarks show that ReTree consistently outperforms Full-Trajectory ReAct, improving answer accuracy by up to 25.6 percentage points (pp); the average maximum per-step reasoning context of Full-Trajectory ReAct is $1.27$--$1.51\\times$ that of ReTree. These results establish ReTree as an effective self-correcting memory abstraction for long-horizon search.",
+    "status": "found"
+  },
+  "2608.10677": {
+    "arxiv_id": "2608.10677",
+    "title": "Chartography: A Benchmark for Professional Chart Understanding",
+    "authors": [
+      "Suhaas Garre",
+      "Chris Mutty",
+      "Sushant Mehta",
+      "Edwin Chen"
+    ],
+    "submission_date": "2026-08-11T08:57:25Z",
+    "latest_updated": "2026-08-11T08:57:25Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10677v1"
+    ],
+    "abstract": "Professionals across medicine, engineering, finance, manufacturing, and the sciences often make consequential decisions from charts. Existing chart benchmarks do not sufficiently measure this ability: they are dominated by bar, line, and pie formats, rely on shorter reasoning chains, and are nearing saturation, with frontier models already scoring 80-90%. We introduce Chartography, a benchmark of 100 tasks that pair charts drawn from professional practice, in domain-specific formats that standard chart benchmarks rarely include, with questions written by professionals who read these charts for a living and independently verified by three additional experts. In an evaluation of 30 frontier-model configurations (20 scored trials per task), the best configuration reaches only 45.0% mean pass@1; the remainder span 9.0-39.5%. Failures concentrate in visual perception: models can miss nuanced features, misread values along sparsely labeled axes, mishandle projected 3D geometry, and violate domain conventions encoded in the chart. We release all tasks, images, provenance metadata, and evaluation code.",
+    "status": "found"
+  },
+  "2608.10678": {
+    "arxiv_id": "2608.10678",
+    "title": "Auditing Chinese Web-scale Corpora via Sampled BPE Token Statistics",
+    "authors": [
+      "Qingjie Zhang",
+      "Ziqi Tang",
+      "Jie Zhang",
+      "Gelei Deng",
+      "Jinfeng Li",
+      "YueFeng Chen",
+      "Yitong Yang",
+      "Hui Xue",
+      "Tianwei Zhang",
+      "Han Qiu"
+    ],
+    "submission_date": "2026-08-11T08:58:06Z",
+    "latest_updated": "2026-08-31T09:55:44Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.10678v1",
+      "2608.10678v2"
+    ],
+    "abstract": "Chinese web pollution has surfaced in LLMs, motivating audits of upstream Chinese corpora. However, auditing such corpora faces three challenges: (1) their web-scale size makes full scan costly; (2) prior analyses are often too coarse to expose token-level pollution; (3) Chinese web pollution is implicit and rapidly changing. We propose Sampled-BPE, a lightweight token-level auditing pipeline that sample a small subset and train BPE tokenizer to surface polluted tokens. Experiments show that Sampled-BPE preserves usable estimates while substantially reducing runtime and memory: a 148.4 $\\times$ speedup and a 35.8 $\\times$ memory reduction induce only 4.25% relative error for pollution categories. We apply the pipeline to 11 open Chinese corpora and 6 Chinese Common Crawl snapshots from 2021 to 2026. The audit reveals widespread but uneven pollution across open corpora, as well as highly polluted and temporally shifting Chinese web content. We further release a hierarchical Chinese web token dataset with 660k+ token records, each with web context, category, and explanation fields, organized as trees to support review and tracing of pollution.",
+    "status": "found"
+  },
+  "2608.10679": {
+    "arxiv_id": "2608.10679",
+    "title": "ENTLORE: A Graph-Grounded Benchmark for Latent Organizational Reasoning in Enterprise Question Answering",
+    "authors": [
+      "Akrin Zheng",
+      "Alexander Wu",
+      "Alaia Liu"
+    ],
+    "submission_date": "2026-08-11T09:00:43Z",
+    "latest_updated": "2026-08-12T10:20:02Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.10679v1",
+      "2608.10679v2"
+    ],
+    "abstract": "Enterprise question answering is framed as retrieving internal documents and generating grounded answers. Routine enterprise records, however, are work by-products in which required organizational relations remain implicit across heterogeneous sources. Existing benchmarks provide realistic multi-source evidence, but often materialize a predefined answer path and therefore test the composition of stated facts rather than recovery of a target relation absent from the corpus. We call the latter capability latent organizational reasoning. We introduce ENTLORE, a graph-grounded benchmark construction framework that reconstructs an audited enterprise world from routine documents, authoritative organizational tables, and operational records. Versioned organizational conventions certify derived relations in a truth graph, enabling complete golden answers and proof certificates. The aligned anonymized release exposes only the document corpus while withholding private structure and target relations. ENTLORE contains 2,341 documents from three source types and 907 questions spanning explicit lookup, cross-source composition, and latent organizational reasoning, evaluated across 56 model and access configurations. Structuring the released world as an induced entity graph or navigable knowledge base gives the strongest deployable results. Yet supplying gold documents still leaves 30.4% of latent questions unanswered, versus 12.6% and 6.2% for explicit and compositional questions. Enterprise QA therefore depends not only on document recall, but also on whether implicit organizational relations become usable. The benchmark, data, and code are publicly available at https://github.com/scitix/entlore .",
+    "status": "found"
+  },
+  "2608.10680": {
+    "arxiv_id": "2608.10680",
+    "title": "Bridging Severe Cross-Modal Misalignment: End-to-End Visible-Infrared Object Detection via Explicit Feature-Domain Affine Registration",
+    "authors": [
+      "Qi Ming",
+      "Yuyang Wang",
+      "Mingjing Zhao",
+      "Yifan Xiao",
+      "Zhixin Guo",
+      "Zhiqiang Zhou",
+      "Peng Sun",
+      "Juan Fang",
+      "Fuqiang Yang",
+      "Xudong Zhao"
+    ],
+    "submission_date": "2026-08-11T09:02:37Z",
+    "latest_updated": "2026-08-11T09:02:37Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10680v1"
+    ],
+    "abstract": "Visible-infrared object detection relies on complementary RGB and thermal cues, but its performance is often degraded by cross-modal spatial misalignment. Most existing methods rely on implicit feature adaptation to handle weakly misaligned scenarios, while large-offset geometric discrepancies remain insufficiently addressed. In this paper, we propose a Joint Feature-domain Registration and Detection network (JFRDet), an end-to-end visible-infrared oriented object detector tailored for severely cross-modal geometric discrepancies. JFRDet introduces a Cross-Modal Affine Alignment (CMAA) module to estimate an image-level affine transformation for explicit multi-level feature alignment. Note that illumination changes directly affect the reliability of RGB cues, an Illumination-Guided Complementary Fusion (IGCF) module adaptively exploits modality reliability under varying illumination conditions for cross-modal fusion. Then, an Alignment Quality-Consistency Gating (AQCG) strategy stabilizes joint optimization by modulating detection supervision according to alignment reliability and gradient consistency. We further construct DroneVehicle Misaligned (DVMA), a benchmark for evaluating visible-infrared oriented object detection under severe cross-modal geometric misalignment. The proposed JFRDet achieves 69.7\\% $\\mathrm{mAP}_{50}$ on DVMA, which represents state-of-the-art (SOTA) performance. The code and dataset will be available on GitHub.",
+    "status": "found"
+  },
+  "2608.10681": {
+    "arxiv_id": "2608.10681",
+    "title": "$\\mathrm{Mot}^{\\mathrm{loc}}$ is not compactly generated",
+    "authors": [
+      "Maxime Ramzi"
+    ],
+    "submission_date": "2026-08-11T09:03:47Z",
+    "latest_updated": "2026-08-11T09:03:47Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10681v1"
+    ],
+    "abstract": "We prove that the $\\infty$-category of localizing motives in the sense of Blumberg--Gepner--Tabuada is not compactly generated, extending a result of Efimov.",
+    "status": "found"
+  },
+  "2608.10682": {
+    "arxiv_id": "2608.10682",
+    "title": "Visual Geometry Foundation-Aware Gaussians for Single-Frame Surround-View Driving Reconstruction",
+    "authors": [
+      "Junhong Lin",
+      "Jinlong Wang",
+      "Xianda Guo",
+      "Yanlun Peng",
+      "Wei Zheng",
+      "Guoqing Liu",
+      "Hanli Wang",
+      "Tiesong Zhao",
+      "Wei Gao"
+    ],
+    "submission_date": "2026-08-11T09:04:33Z",
+    "latest_updated": "2026-08-11T09:04:33Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10682v1"
+    ],
+    "abstract": "Single-frame surround-view reconstruction faces severe geometric instability and rendering artifacts due to minimal inter-camera overlap. While existing methods rely on complex decoders or auxiliary cues, they remain bottlenecked by the weak geometric capacity of upstream features. We argue that leveraging pretrained visual geometry priors strengthens upstream representations and alleviates the geometric ambiguity in sparse surround views. To this end, we propose VGGD, a visual geometry foundation-aware 3D Gaussian Splatting framework for feed-forward surround-view driving reconstruction, which shifts geometric modeling to the frontend and adapts foundation priors to the driving camera setting. First, VGGD leverages VGGT to provide transferable multi-view geometric prior tokens. Next, we introduce a Dual-Path Neck to decouple geometry-consistent and appearance-aware representations, improving appearance completion in weakly observed regions. We further apply Scale Warmup to stabilize early geometry learning and suppress scale drift under ego-pose changes. Finally, we use a hybrid pixel--volume Gaussian decoder to produce a renderable 3D Gaussian scene for novel-view synthesis. Experiments on the nuScenes single-frame benchmark show that VGGD achieves the best overall rendering quality among the compared methods and improves relative geometric consistency.",
+    "status": "found"
+  },
+  "2608.10683": {
+    "arxiv_id": "2608.10683",
+    "title": "Stability of Orbital Angular Momentum Modes in Conventional and Ring-Core Optical Fibers",
+    "authors": [
+      "Hassan Asgharzadeh B.",
+      "Regina Gumenyuk",
+      "Marco Ornigotti"
+    ],
+    "submission_date": "2026-08-11T09:05:43Z",
+    "latest_updated": "2026-08-11T09:05:43Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10683v1"
+    ],
+    "abstract": "Modal dynamics in multimode optical fibers are fundamentally governed by the inter- play between phase matching and intermodal coupling. In this work, we investigate the fundamental coupling mechanisms in ring-core fibers and identify a geometry-induced cou- pling suppression that significantly reduces coupling coefficients between orbital angular momentum modes compared to conventional multimode step-index fibers. This mechanism provides a clear physical explanation for the superior transmission stability of orbital angular momentum modes in ring-core fibers and establishes specific geometric constraints for the design of ring-core fiber-based mode converters.",
+    "status": "found"
+  },
+  "2608.10684": {
+    "arxiv_id": "2608.10684",
+    "title": "Embedding Rotation Invariance for Provable Multi-Oriented Scene Text Recognition",
+    "authors": [
+      "Zhibin Ma",
+      "Pengwen Dai",
+      "Yi Liu",
+      "Xugong Qin",
+      "Chenyun Yu",
+      "Xiaochun Cao"
+    ],
+    "submission_date": "2026-08-11T09:06:46Z",
+    "latest_updated": "2026-08-11T09:06:46Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10684v1"
+    ],
+    "abstract": "Multi-oriented text is ubiquitous in real-world scenes and remains a major challenge for scene text recognition (STR). Existing rotation-aware methods explicitly estimate text orientation. However, due to the lack of theoretical guarantees, they are prone to error accumulation, increased computational cost, and strong reliance on data. In this work, we incorporate rotation invariance into the STR framework to address these limitations. Specifically, we adopt an encoder-decoder architecture, embedding rotation equivariance in the encoder and rotation invariance in the decoder to construct a fully rotation-invariant network. On the decoder side, we first identify and prove the rotation-invariant property of the cross-attention mechanism and use it to formulate a rotation-invariant text decoder that maps visual features to output text in a rotation-invariant manner. On the encoder side, we propose a rotation-equivariant local-global extraction network that integrates deep equivariant convolutions with self-attention, enabling rotation-equivariant feature extraction while modeling inter-character dependencies and preserving fine-grained visual details. By integrating the encoder and decoder, we obtain an end-to-end Rotation-Invariant Scene Text Recognition network (RISTER). RISTER provides rotation invariance with theoretical guarantees, enhancing robustness on multi-oriented samples without introducing additional inference computation or relying on data-driven orientation correction. Experiments show that RISTER achieves state-of-the-art performance on both standard and multi-oriented benchmarks, surpassing the second-best model by 4.0 percent in accuracy on the general multi-oriented dataset.",
+    "status": "found"
+  },
+  "2608.10685": {
+    "arxiv_id": "2608.10685",
+    "title": "Reflection Positivity in Free Fermionic Theories",
+    "authors": [
+      "Carl Handrack",
+      "Manfred Salmhofer"
+    ],
+    "submission_date": "2026-08-11T09:07:10Z",
+    "latest_updated": "2026-08-11T09:07:10Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10685v1"
+    ],
+    "abstract": "Reflection positivity is one of the Osterwalder--Schrader axioms for Euclidean quantum field theory, ensuring that the reconstructed relativistic Hilbert space carries a positive-definite inner product. For free fermionic theories whose covariance is a real rational function of the Dirac operator, we prove that reflection positivity holds if and only if all poles are real, simple, and carry non-negative residues. We also explicitly show the failure of reflection positivity for covariances with exponential regulators.",
+    "status": "found"
+  },
+  "2608.10686": {
+    "arxiv_id": "2608.10686",
+    "title": "Optimal Measurement Point Selection for Radio Environment Maps: A Two-Stage Approach",
+    "authors": [
+      "Bastian Perner",
+      "Friedemann Laue",
+      "Maximilian Lubke",
+      "Norman Franchi"
+    ],
+    "submission_date": "2026-08-11T09:08:13Z",
+    "latest_updated": "2026-08-11T09:08:13Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10686v1"
+    ],
+    "abstract": "Electromagnetic (EM) situational awareness is essential for the deployment and operation of local and temporary non-public networks (NPNs). Radio Environment Maps (REMs) provide an effective basis for network planning and operation by capturing the prevailing EM conditions. However, efficient measurement location selection for REM construction remains a key challenge, particularly under strict time and cost constraints. This paper presents a two-stage measurement selection framework that employs Optimal Experimental Design (OED)-based strategies to generate a reduced candidate set during a pre-selection phase. In a subsequent optimization stage, combinatorial optimization is applied to select an improved subset of measurement locations by minimizing the Mean Absolute Error (MAE) of the resulting REM, using a scenario-specific propagation simulation model. The results demonstrate that the proposed framework reduces the number of required measurement locations while consistently improving REM construction accuracy across all evaluated strategies. Validation using real-world measurement data confirms the practical applicability of the approach, with the optimization stage achieving MAE reductions from about 4% to around 50%, independent of the chosen pre-selection strategy.",
+    "status": "found"
+  }
+}

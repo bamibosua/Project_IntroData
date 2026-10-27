@@ -1,0 +1,427 @@
+{
+  "2608.09987": {
+    "arxiv_id": "2608.09987",
+    "title": "The Impact of Cut-ins on Mixed-Autonomy Traffic Flow: Bridging Microscopic Game-Theoretic Model and Macroscopic Flow Analysis",
+    "authors": [
+      "Yu Song"
+    ],
+    "submission_date": "2026-08-06T14:20:11Z",
+    "latest_updated": "2026-08-06T14:20:11Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09987v1"
+    ],
+    "abstract": "The transition to automated transportation introduces mixed-autonomy traffic where human drivers may strategically exploit the risk-averse behavior of Connected and Automated Vehicles (CAVs). While microscopic models capture these dyadic interactions, their aggregate impact on network-level stability remains unquantified due to the scale gap between agent-based and continuum models. This study bridges this analytical divide by integrating a game-theoretic friction term directly into the macroscopic kinematic wave framework. We model the cut-in maneuver as a Stackelberg game, identifying a distinct \"exploitation window\" where human drivers leverage CAV defensiveness to execute aggressive merges. By deriving a closed-form micro-macro bridge, we translate these discrete strategic outcomes into a continuous friction parameter that endogenously modifies the traffic conservation law. Theoretical analysis and numerical simulations confirm that this behavioral asymmetry functions as a deterministic destabilizer, generating perturbation source terms that trigger phantom jams and strictly reduce road capacity. Crucially, we reveal a convex relationship between CAV penetration and system efficiency, identifying a critical instability regime at intermediate penetration rates (approximately 45 percent) where the frequency of exploitable interactions is maximized. These findings demonstrate that without socially aware control policies, the defensive nature of early-deployment CAVs may paradoxically degrade traffic flow stability.",
+    "status": "found"
+  },
+  "2608.09988": {
+    "arxiv_id": "2608.09988",
+    "title": "OpenPM: Auditable Point-in-Time Evaluation for LLM Portfolio-Management Agents",
+    "authors": [
+      "Xinying Cai",
+      "Minghao Guo",
+      "Jiahe Liu",
+      "Jiaojiao Han",
+      "Bangwei Guo",
+      "Yitao Long",
+      "Yuxuan Chen",
+      "Bohan Wu",
+      "Dimitris N. Metaxas",
+      "Raymond Li"
+    ],
+    "submission_date": "2026-08-06T16:04:44Z",
+    "latest_updated": "2026-08-06T16:04:44Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09988v1"
+    ],
+    "abstract": "Large language models are increasingly used to read markets, assess risk, and allocate capital. However, reported results for LLM trading agents can be inflated by look-ahead leakage, optimistic execution, and risk mandates that are described but not enforced. We present OpenPM, an auditable point-in-time evaluation framework for LLM portfolio-management agents. In OpenPM, an agent manages a \\$1M long-only book over the S\\&P 500 universe using market data at five-minute intervals. Every record visible to the agent must be available at the decision time. Natural-language risk mandates are converted into typed constraints and enforced on the executed portfolio. Each run produces audit artifacts, including a contamination certificate, a cost-sensitivity curve, and a constraint-adherence report. We also build a reference agent named the tiered allocator, where typed analysts score candidates, a constructor LLM proposes weights, and a deterministic critic guarantees feasibility. We isolate constructor behavior by capturing analyst evidence once and replaying it across constructor models. In our short-window case study, stronger constructors show modest and model-dependent gains over equal weighting on the same pool, but analyst quality matters more than constructor choice, and turnover is the main cost driver. All returns are upper bounds on a single frozen window without market impact, not validated alpha.",
+    "status": "found"
+  },
+  "2608.09989": {
+    "arxiv_id": "2608.09989",
+    "title": "Algorithmic statistics of retinal images",
+    "authors": [
+      "Loan Huynh",
+      "Ronald Zambrano",
+      "Layton Aho",
+      "Fabio Lavinsky",
+      "Gadi Wollstein",
+      "Joel S. Schuman",
+      "Andrew R. Cohen"
+    ],
+    "submission_date": "2026-08-06T18:57:07Z",
+    "latest_updated": "2026-08-12T13:09:57Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.09989v1",
+      "2608.09989v2"
+    ],
+    "abstract": "There has been a tremendous amount of image processing and machine learning research to measure and classify disease progression from live optical coherence tomography (OCT) imaging of the retina. The images considered here are large, complex, three-dimensional (3-D) and difficult to visualize effectively. Many current supervised machine learning approaches, \\emph{e.g.} neural networks, are non-metric meaning that any features or measurements generated can introduce systematic distortion that may be correlated with underlying non-meaningful physiological differences. Here we present a metric learning approach using the normalized compression distance (NCD) combined with anisotropic structure-enhancing filters to quantify and visualize the principal differences among a collection of 3-D retinal images. We validate the NCD-measured structural differences between pairs of images against the physician-measured change in visual field function, achieving a prediction error of $\\sim$ 0.5 dB, more accurate than non-metric deep learning approaches. The normalized compression vectors (NCV) are proposed as a feature set measuring visual differences among a collection of 3-D microscopy images. The utility of the NCV for visualizing and measuring patterns of change is demonstrated for a human with moderate non-progressing glaucoma and for a non-human primate model using intraocular pressure setting manipulation. We conclude with a brief simulation of non-metric embedding features, \\emph{e.g.} from neural networks, introducing class-correlated statistical distortion.",
+    "status": "found"
+  },
+  "2608.09990": {
+    "arxiv_id": "2608.09990",
+    "title": "The iSTORM Instrument for Airborne Measurements of Gamma-Ray Emissions from Thunderstorms",
+    "authors": [
+      "Daniel Shy",
+      "J. Eric Grove",
+      "Bernard Phlips",
+      "Alena Schell",
+      "Mary Johnson-Rambert",
+      "Mason Quick",
+      "David Corredor",
+      "Scott Podgorny",
+      "Roy Salinas",
+      "Mitch Davis"
+    ],
+    "submission_date": "2026-08-06T19:39:56Z",
+    "latest_updated": "2026-10-23T15:54:53Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.09990v1",
+      "2608.09990v2"
+    ],
+    "abstract": "The in-Situ Thunderstorm Observer for Radiation Mechanisms (iSTORM) is a gamma-ray spectrometer to study gamma-ray transients originating from thunderstorms, such as glows and terrestrial gamma-ray flashes (TGFs). It is designed and built by the U.S. Naval Research Laboratory for deployment aboard a NASA ER-2 aircraft. Using an array of 32 one-inch-diameter $\\mathrm{CeBr}_3$ scintillators read out with silicon photomultipliers (SiPMs), the instrument achieves an energy range of $\\sim 250 \\ \\mathrm{keV}$ to $5 \\ \\mathrm{MeV}$ under flight conditions, with a total geometrical area of $157 \\ \\mathrm{cm^2}$. One of two gamma-ray instruments in the ALOFT campaign, iSTORM recorded glows, terrestrial gamma-ray flashes (TGFs), and the newly discovered flickering gamma-ray flashes (FGFs).",
+    "status": "found"
+  },
+  "2608.09991": {
+    "arxiv_id": "2608.09991",
+    "title": "Longitudinal 3D Foundation Modeling for Neoadjuvant Breast Cancer Response Prediction from Serial DCE-MRI",
+    "authors": [
+      "Fidel Omar Tito Cruz",
+      "Neda Ghafouri",
+      "Zengyan Wang",
+      "Pegah Khosravi",
+      "Yu Tian",
+      "Chen Chen"
+    ],
+    "submission_date": "2026-08-07T05:30:24Z",
+    "latest_updated": "2026-08-07T05:30:24Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09991v1"
+    ],
+    "abstract": "Pathologic complete response (pCR) is an important endpoint in neoadjuvant chemotherapy (NAC) for breast cancer, and predicting pCR from imaging during treatment could support treatment response assessment. Many existing imaging-based approaches rely on a single static timepoint, which fails to capture changes that occur during treatment. In this work, we present a longitudinal framework that combines a frozen 3D foundation encoder (Pillar-0) with our Temporal Dynamics Network (TDN) to predict treatment response from serial Dynamic Contrast-Enhanced (DCE) MRI acquired across four clinical timepoints from pre-treatment to pre-surgery. The TDN combines time-aware volumetric embeddings with clinical and treatment data to predict pCR. Evaluated on 982 patients from the combined I-SPY2 and ACRIN-6698 cohort, the proposed model achieves strong performance across all reported metrics when longitudinal 3D imaging is fused with clinical data (test AUROC: 73.6%, balanced accuracy: 69.1%). While clinical variables provide the strongest individual predictive signal, longitudinal 3D imaging contributes complementary information when fused with clinical data, improving pCR prediction. Our source code is available at: https://github.com/omarftt/longitudinal_temporal_pillar.",
+    "status": "found"
+  },
+  "2608.09992": {
+    "arxiv_id": "2608.09992",
+    "title": "Knowledge-Guided 3D CT Generation: A Conditioning-Centric Taxonomy",
+    "authors": [
+      "Francesca Pia Panaccione",
+      "Eugenio Lomurno",
+      "Matteo Matteucci"
+    ],
+    "submission_date": "2026-08-07T08:35:14Z",
+    "latest_updated": "2026-08-07T08:35:14Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09992v1"
+    ],
+    "abstract": "Controllable generation guided by external knowledge is a key requirement in modern generative deep learning applications, enabling the synthesis of samples with explicit constraints on semantic content, structural properties, and variability. In 3D Computed Tomography (CT), such control is essential for clinical applications, including data augmentation, privacy-preserving data sharing, and the simulation of specific anatomical or pathological scenarios. While research on conditional 3D CT generation has expanded rapidly, the diversity of existing approaches makes systematic comparison difficult and obscures fundamental design choices. In this survey, we propose a conditioning-centric taxonomy that organizes the literature along three orthogonal dimensions: the type of external knowledge (K), the knowledge integration paradigm (I), and the generative architecture (A). This factorization defines an explicit design space (K x I x A) that provides a unified perspective on prior work. Using this framework, we systematize existing methods, identify dominant trends and recurring design patterns, and highlight underexplored regions of the design space that point toward promising directions for future research.",
+    "status": "found"
+  },
+  "2608.09993": {
+    "arxiv_id": "2608.09993",
+    "title": "APCReg: Anatomical-Prior-Guided Coarse-to-Fine CBCT--IOS Registration via Multi-View Projection and Reliability-Controlled Residual Correction",
+    "authors": [
+      "Xincan Zheng",
+      "Yaqi Wang",
+      "Zhi Li",
+      "Jiahao Bao",
+      "Lan Feng",
+      "Yiru Xia",
+      "Shuai Wang"
+    ],
+    "submission_date": "2026-08-07T09:06:05Z",
+    "latest_updated": "2026-08-07T09:06:05Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09993v1"
+    ],
+    "abstract": "Registration between cone-beam computed tomography (CBCT) and intraoral scans (IOS) is essential for patient-specific surgical planning. However, disparate imaging modalities, limited overlap, and large pose offsets make automated registration unreliable. Consequently, clinical registration remains dependent on conventional geometry pipelines and manual clinician adjustment. To address these challenges, we propose APCReg, an anatomical-prior-guided coarse-to-fine framework for global registration and reliability-controlled residual correction. Specifically, multi-view anatomical coarse registration (MACR) performs ordered orthogonal projection alignment (buccal, proximal, and occlusal) to decompose the six-degree-of-freedom search before three-dimensional refinement. Overlap-aware residual registration (OARR) combines shared KPConv features, a folded arch-length cue, overlap-gated cross-attention, and Sinkhorn matching. Finally, dental-arch-structured hypothesis selection evaluates diverse poses on held-out reliable correspondences, while a ground-truth-free coarse-retention guard conditionally retains a geometrically reliable coarse pose. On 60 held-out jaw pairs, APCReg achieves a submillimeter mean Chamfer distance of 0.87 mm and a Hausdorff distance of 2.92 mm under this evaluation protocol, and ranks first across the six reported metrics among the evaluated open-source baselines.",
+    "status": "found"
+  },
+  "2608.09994": {
+    "arxiv_id": "2608.09994",
+    "title": "SpecF2M: A Spectral-Aware Multi-task Network Estimating Axial Length and Refractive Error from Pediatric Fundus Photographs",
+    "authors": [
+      "Mengxian He",
+      "Xinyue Liu",
+      "Yunyun Sun",
+      "Wei Hao",
+      "Minqing Zhang",
+      "Lichun Wang",
+      "Shunyi Zhang",
+      "Wu Yuan"
+    ],
+    "submission_date": "2026-08-07T09:44:57Z",
+    "latest_updated": "2026-08-07T09:44:57Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09994v1"
+    ],
+    "abstract": "Spherical Equivalent Refraction (SER) and Axial Length (AL) are core indicators for pediatric myopia screening, yet their measurements require dedicated biometry and cycloplegic refraction. Fundus photography offers an accessible imaging modality, as myopia-related posterior-pole changes are visible in 45$^\\circ$ fundus images. However, these cues are often low-contrast, spatially diffuse, and multi-scale. Moreover, AL, Sphere (SPH), and Cylinder (CYL) share partially overlapping but non-identical anatomical correlates. We propose SpecF2M, a spectral-aware multi-task network for estimating AL and SER components from pediatric fundus photographs. SpecF2M integrates a deterministic anatomy-guided enhancement module, a hybrid spatial--spectral backbone combining MixCNN and Hybrid Spectral Learning (HSL) blocks, and an expert-routing head for component-level estimation of AL, SPH, and CYL. On a pediatric cohort of 4,359 eligible child visits and 6,966 fundus images, SpecF2M outperforms controlled CNN/ViT baselines for AL and SPH estimation, achieving MAEs of 0.5347 mm and 0.7062 D, respectively. Component-level analysis further reveals asymmetric task coupling, where CYL exhibits weaker association with fundus-derived myopic patterns than AL/SPH. These results support fundus-based, screening-oriented estimation of pediatric myopia indicators, while external validation remains necessary before deployment.",
+    "status": "found"
+  },
+  "2608.09995": {
+    "arxiv_id": "2608.09995",
+    "title": "Structural Guidance for Unified Joint Demosaicing and Denoising",
+    "authors": [
+      "Qixin Zheng",
+      "Ping Chen",
+      "Qiangqiang Shen",
+      "Haijin Zeng"
+    ],
+    "submission_date": "2026-08-07T10:14:20Z",
+    "latest_updated": "2026-08-07T10:14:20Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09995v1"
+    ],
+    "abstract": "Joint demosaicing and denoising is a fundamental step in camera image signal processing, yet remains challenging because different Bayer-like color filter arrays (CFAs) and sensor noise jointly corrupt both color sampling and image content. Existing unified restoration networks explicitly model CFA geometry but are still driven primarily by pixel-level supervision, making them prone to structural degradation around edges, repetitive textures, and moiré patterns where local evidence is unreliable. We attribute this limitation partly to the absence of explicit structural guidance beyond pixel-level reconstruction supervision. Motivated by this observation, we propose a structural-guided unified restoration framework that injects pretrained structural knowledge into CFA-aware image restoration. Our model receives a unified five-channel observation consisting of the raw mosaic, CFA masks, and a noise-level map. A SwinIR restoration branch reconstructs pixel details under CFA-conditioned modulation, while a parallel structural reasoning branch extracts complementary structural cues from a sparse pseudo-RGB observation. To bridge the substantial domain gap between sparse noisy sensor data and the natural-image pretraining domain of the structural encoder, we introduce a lightweight trainable adapter before residually fusing structural and restoration features. A shared decoder jointly predicts the restored RGB image and an auxiliary clean mosaic, providing supervision in both image and sensor domains. Extensive experiments across multiple CFA patterns and noise levels demonstrate consistent improvements over state-of-the-art unified and CFA-specific methods, indicating that adapted structural priors can enhance robust camera image restoration. The source codes and dataset are provided in the supplementary material.",
+    "status": "found"
+  },
+  "2608.09996": {
+    "arxiv_id": "2608.09996",
+    "title": "Energy and Performance Benchmarking of Deep Learning Models for Breast Cancer Detection",
+    "authors": [
+      "Samar Garrab",
+      "Ghada Achour"
+    ],
+    "submission_date": "2026-08-07T13:01:36Z",
+    "latest_updated": "2026-08-07T13:01:36Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09996v1"
+    ],
+    "abstract": "Recent advances in machine learning have greatly improved breast cancer detection, enabling more accurate and timely diagnosis. Deep learning (DL) models show strong potential for medical image analysis; however, as their architectural complexity increases, their environmental impacts are becoming a growing concern. In this paper, we present a comparative analysis of seven DL models for breast cancer detection on two medical datasets: Breast Ultrasound and BreakHis 400X. The evaluated architectures range from Convolutional Neural Networks (CNNs) and transformers to hybrid models. In addition to performance metrics, we assess CO2 emissions during both training and inference. Our results show that EfficientNet and ResNet consistently deliver strong performance, although with higher CO2 emissions. The selected transformers, such as DeiT-Tiny, perform competitively on both datasets, whereas DenseNet121 achieves lower accuracy. On the Breast Ultrasound Dataset, DeiT provides the most favourable balance between accuracy and energy consumption, whereas on the BreakHis dataset, the ViT and Swin models achieve the best results. Overall, our findings indicate that no single architecture category from the evaluated ones consistently dominates across the two selected datasets. Our results highlight the importance of jointly considering performance, emissions, and dataset characteristics when selecting models for medical applications.",
+    "status": "found"
+  },
+  "2608.09997": {
+    "arxiv_id": "2608.09997",
+    "title": "Transformer Geometry Observatory TGO-IV: Developmental Topology Observatory",
+    "authors": [
+      "Kaustubh Kapil",
+      "Kishor P. Upla"
+    ],
+    "submission_date": "2026-08-07T13:11:22Z",
+    "latest_updated": "2026-08-07T13:11:22Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09997v1"
+    ],
+    "abstract": "Transformers have had a profound impact on the world of language processing and computer vision. As efforts to answer the million-dollar question of ``How does a Transformer learn?\" have been increasing, existing interpretability studies primarily analyze representations at isolated layers or the network as a whole, while the developmental evolution of individual representations and its manifolds across transformer layers remains underexplored. With this work, we aim at providing a comprehensive analysis of the evolution of representations as the representation point cloud transforms across the layers; thereby attempting to isolate layers or establish a trend which comes closer to justifying how and when raw input representations evolve into task-relevant feature representations. Thus, Transformer Geometry Observatory-TGO-IV introduces a topological framework for analysing the evolution of Transformer representations through the lens of Persistent Homology. Rather than studying local geometric properties alone, TGO-IV constructs Vietoris--Rips simplicial complexes from token-level representation point clouds and investigates the evolution of their persistent topological signatures across Transformer layers. The proposed framework comprises complementary topological observatories including Persistence Diagrams, Barcode Diagrams, Betti Curves, Persistence Landscapes, Bottleneck Distance, and Wasserstein Distance, enabling a comprehensive analysis of how the global topology of representation point clouds develops throughout the forward pass.",
+    "status": "found"
+  },
+  "2608.09998": {
+    "arxiv_id": "2608.09998",
+    "title": "Towards Sustainable Artificial Intelligence: A Comprehensive Review and Comparative Analysis of Deep Learning Models' Carbon Footprint",
+    "authors": [
+      "Samar Garrab",
+      "Sarra Boughriou",
+      "Manel BenSassi"
+    ],
+    "submission_date": "2026-08-07T13:52:38Z",
+    "latest_updated": "2026-08-07T13:52:38Z",
+    "revised_dates": null,
+    "venue": "Applied Intelligence, vol. 56, Article 173, 2026",
+    "latest_version": 1,
+    "versions": [
+      "2608.09998v1"
+    ],
+    "abstract": "Artificial Intelligence (AI) and Machine Learning (ML) have become powerful tools for supporting and automating complex human tasks. Despite their benefits, growing attention has been directed toward their environmental implications, primarily due to their high energy demands and associated carbon emissions. This concern is particularly relevant in light of the increasing deployment of large-scale models, especially Deep Learning (DL) architectures, which provide advanced predictive capabilities but require substantial computational resources. This paper presents a systematic review of research on Green AI, Green DL, and optimization techniques aimed at reducing the environmental impact of AI models. In addition, we examine and compare several carbon measurement tools for estimating emissions generated by AI algorithms. To complement the review, we conducted an empirical evaluation using a CPU-based experimental setup, in which six DL models were implemented for a multi-label classification task. The objective was to quantify and compare their overall carbon emissions and to determine which stages of the DL lifecycle contribute most significantly to the total footprint. The results show that the training phase is the primary source of emissions. Moreover, the findings reveal that increased architectural complexity does not systematically translate into proportional accuracy gains, highlighting the importance of carefully balancing predictive performance and environmental cost. These results reinforce the need to integrate sustainability considerations into model selection and AI system design.",
+    "status": "found"
+  },
+  "2608.09999": {
+    "arxiv_id": "2608.09999",
+    "title": "Robustness of transferability estimation metrics for medical imaging",
+    "authors": [
+      "Niclas Claßen",
+      "Théo Sourget",
+      "Dovile Juodelyte",
+      "Rob van der Goot",
+      "Veronika Cheplygina"
+    ],
+    "submission_date": "2026-08-07T13:56:18Z",
+    "latest_updated": "2026-08-07T13:56:18Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09999v1"
+    ],
+    "abstract": "In transfer learning, the choice of source model largely influences the performance on a target dataset. Still, selecting a fitting source remains a challenging task, especially in medical imaging where one has to decide between models pre-trained on off-the-shelf options, such as ImageNet, and domain specific datasets. Transferability estimation (TE) metrics address this problem by aiming to predict the best performing source model in a computationally cost effective way. However, previous work has reported conflicting TE metric performances due to differences in experimental setups. Moreover, most TE metrics are designed for and evaluated on natural images, while being optimized for accuracy, whereas in medical imaging metrics that are more robust to class imbalance are typically used. We study the impact of varying the target dataset as an isolated factor, by constructing miniature populations of different sample sizes and random seeds. In addition, we investigate the influence of the evaluation metric used to obtain the reference ranking. We find that small modifications to the target dataset change the rankings. Furthermore, we show that the choice of evaluation metric affects the reference rankings and therefore the evaluation of TE metrics. Overall, we observe a low agreement between rankings from TE metrics and reference. The code, model checkpoints and data splits used in this work are available through https://github.com/niclasclassen/robustness-of-transferability-estimation-metrics-for-medical-imaging.",
+    "status": "found"
+  },
+  "2608.10000": {
+    "arxiv_id": "2608.10000",
+    "title": "Pre- to Post-Contrast Synthesis of Breast DCE-MRI using Latent Bridge Matching",
+    "authors": [
+      "Sina Amirrajab",
+      "Zohaib Salahuddin",
+      "Henry C Woodruff",
+      "Philippe Lambin"
+    ],
+    "submission_date": "2026-08-07T14:46:32Z",
+    "latest_updated": "2026-08-07T14:46:32Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10000v1"
+    ],
+    "abstract": "Dynamic contrast-enhanced magnetic resonance imaging (DCE-MRI) is central to breast cancer imaging, but gadolinium administration increases scan burden and motivates contrast-reduced alternatives, including synthetic contrast generation. We propose a latent bridge matching (LBM) framework for synthesizing peak-enhanced breast DCE-MRI from pre-contrast images in the MAMA-SYNTH challenge setting. Instead of starting from Gaussian noise as in conventional latent diffusion models (LDMs), the proposed model learns a conditional bridge between paired pre-contrast and peak-enhanced VAE latents. A latent UNet predicts the remaining correction from intermediate bridge states to the peak-enhanced latent, enabling iterative refinement while keeping the trajectory anchored to patient-specific anatomy. We evaluated two LBM conditioning variants on 91 DUKE validation cases. For the tumor-conditioned variant, tumor masks were used as conditioning inputs. Tumor-conditioning improved performance compared with pre-contrast conditioning, reducing MSE from 1.023 to 0.940 and FRD from 7.523 to 4.716, while increasing tumor SSIM from 0.355 to 0.429. The tumor-conditioned LBM also outperformed the evaluated LDM baseline on this validation cohort. These results suggest that latent bridge matching is a promising pre-contrast-anchored formulation for virtual contrast enhancement, while further work is needed to validate generalization and remove dependence on ground-truth tumor masks at inference.",
+    "status": "found"
+  },
+  "2608.10001": {
+    "arxiv_id": "2608.10001",
+    "title": "Implicit representations are dead. Long live explicit primitives!",
+    "authors": [
+      "Nil Stolt-Ansó",
+      "Maik Dannecker",
+      "Wenqi Huang",
+      "Andras Jakab",
+      "Daniel Rueckert"
+    ],
+    "submission_date": "2026-08-07T15:30:48Z",
+    "latest_updated": "2026-08-07T15:30:48Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10001v1"
+    ],
+    "abstract": "Continuous parameterization of medical data has emerged as a powerful paradigm for resolution-independent image representation. While Implicit Neural Representations offer high fidelity and compact storage, their reliance on global Multi-Layer Perceptrons incurs sizeable computational costs, large memory requirements, and extensive optimization times. As medical imaging trends towards ever-more detailed, high-resolution volumes, these costs impose significant bottlenecks in the applicability of implicit approaches. Recently, explicit Gaussian-based primitives have revolutionized the representation learning paradigm by trading deep network evaluations for localized, rasterization-friendly primitives. In this paper, we present a comprehensive, cross-dimensional evaluation of Gaussian representations against implicit approaches for medical imaging applications. First, we outline a theoretical overview on the mathematical properties offered by explicit primitives beyond what is capable under the implicit neural paradigm. Subsequently, we benchmark the computational performance on two demanding image datasets: 2D microscopy histology and 3D lung Computed Tomography (CT). Our experiments demonstrate that Gaussian representations consistently match or surpass reconstruction metrics compared to implicit methods across all compression factors, while displaying significantly lower optimization times, and memory requirements. Together with the compelling mathematical properties offered by explicit primitives, these findings motivate the wider adoption of Gaussian representations and position them as an attractive direction for future research in medical imaging.",
+    "status": "found"
+  },
+  "2608.10002": {
+    "arxiv_id": "2608.10002",
+    "title": "LoRCA: LoRA Cycle Adaptation for Histology to HiP-CT Translation with DINOv3",
+    "authors": [
+      "Yang Zhou",
+      "Edoardo Occhipinti",
+      "Banboye Kidzeru Elvis",
+      "Jishizhan Chen",
+      "Stathis Megas",
+      "Joseph Brunet",
+      "Joanna Purzycka",
+      "Theresa Urban",
+      "Hector Dejea",
+      "Sarah Amalia Teichmann",
+      "Menna R Clatworthy",
+      "Paul Tafforeau",
+      "Peter D Lee",
+      "Claire L Walsh"
+    ],
+    "submission_date": "2026-08-07T15:43:55Z",
+    "latest_updated": "2026-08-07T15:43:55Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10002v1"
+    ],
+    "abstract": "Hierarchical Phase-Contrast Tomography (HiP-CT) is a synchrotron based X-ray imaging technique that enables non-destructive, volumetric imaging of intact organs with multi-resolutions bridging 20 $μm$/voxel for whole organs to near-cellular resolution ($\\sim$0.8 $μm$/voxel) in local regions. This offers the opportunity to bring volumetric whole-organ context to histology. However, nonlinear registration between H\\&E histology and HiP-CT volumes is challenging due to the differences in feature representations of different colour spaces. Synthesis-before-registration methods have shown strong results in histology-to-MRI and histology-to-CT alignment. However, existing approaches either rely on manual anatomical contours or are trained from scratch without semantic constraints, limiting their generalisability to soft tissue organs and novel modalities. We propose LoRCA (LoRA Cycle Adaptation), a cycle consistent style translation framework built on a shared frozen DINOv3 with modality-specific LoRA adapters, learning modality-specific representations that are decoded and adversarially trained. LoRCA enables structure-preserving translation without requiring paired training data. The frozen backbone is intended to be a structural anchor that prevents content drift by preserving pretrained semantic-extraction capability. We evaluate translation quality using Fréchet Inception Distance (FID) and structural fidelity via mutual information and Canny edge preservation. LoRCA outperforms CycleGAN in both translation quality and structural consistency. As a preliminary indicator of downstream registration utility, we find that style-translated images yield increased feature correspondences under MatchAnything on manually aligned HiP-CT and histology test pairs, suggesting that LoRCA-style translation is a promising step towards 2D histological sections to 3D HiP-CT volumes registration.",
+    "status": "found"
+  },
+  "2608.10003": {
+    "arxiv_id": "2608.10003",
+    "title": "Remote Sensing-Based Hybrid Statistical and Machine Learning Ensemble Modeling of Yellowfin Tuna Catch in the Western Equatorial Indian Ocean",
+    "authors": [
+      "Avishka Wijepala",
+      "Sharukshan Niranjan",
+      "Lisitha Abeysekara",
+      "Pasindu Weerasinghe"
+    ],
+    "submission_date": "2026-08-07T16:35:56Z",
+    "latest_updated": "2026-08-07T16:35:56Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10003v1"
+    ],
+    "abstract": "Yellowfin tuna (Thunnus albacares) is an economically important pelagic species in the Indian Ocean, but its monthly catch variability is difficult to predict because reported catch is influenced by ocean productivity, thermal habitat, monsoon seasonality, fishing-ground characteristics, and fleet behavior. This study develops a remote sensing-based statistical and machine learning stacked ensemble for modeling monthly yellowfin tuna catch across five fishing grounds in the western equatorial Indian Ocean during 2003-2024. Monthly fishery records were integrated with satellite-derived chlorophyll-a concentration (CHL) and sea surface temperature (SST). Linear mixed models (LMMs) and a generalized additive mixed model (GAMM) were used to represent interpretable current and lagged environmental effects, while Random Forest models captured nonlinear interactions among lagged, rolling, seasonal, anomaly, and spatial predictors. Expanding-window validation over the pre-COVID evaluation period from 2008 to 2019 was used to reduce temporal leakage. Among the individual models, the GAMM achieved the best log-scale performance, with an R-squared value of 0.137 and an RMSE of 1.284, while RF-E6 achieved the lowest RMSE on the kilogram scale. The nonnegative Ridge stacked ensemble improved the log-scale R-squared value to 0.177, with an RMSE of 1.254 and an MAE of 1.000. These results show that satellite-derived CHL and SST contain useful but incomplete predictive information for monthly catch modeling.",
+    "status": "found"
+  },
+  "2608.10004": {
+    "arxiv_id": "2608.10004",
+    "title": "ReCBM: Uncertainty-Gated Relational Reasoning for Concept Bottleneck Models",
+    "authors": [
+      "An Sui",
+      "Yuzhu Li",
+      "Fuping Wu",
+      "Xiahai Zhuang"
+    ],
+    "submission_date": "2026-08-07T19:59:47Z",
+    "latest_updated": "2026-08-07T19:59:47Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10004v1"
+    ],
+    "abstract": "Concept Bottleneck Models (CBMs) provide an interpretable framework by grounding predictions in human-understandable concepts, enabling semantic inspection and test-time intervention. Recent variants have improved CBMs through richer concept representations, uncertainty estimation, and dependency modeling. However, robust reasoning under unreliable concept states remains underexplored. Without such reasoning, misleading semantic evidence can propagate through the bottleneck, compromising both explanations and downstream predictions. To address this issue, we propose ReCBM, an uncertainty-gated relational reasoning framework for CBMs. ReCBM introduces semantically defined concept relations into the bottleneck and uses uncertainty to guide their refinement. By modeling co-occurrence, implication, and exclusion, ReCBM specifies how evidence is exchanged across concepts, while uncertainty modulates the contribution of each concept during this process. Experiments across diverse datasets showed that ReCBM improved concept and task recovery under missing and flipped concepts, supported uncertainty-aware intervention, and extracted compact task-relevant concept subsets without degrading downstream performance.",
+    "status": "found"
+  },
+  "2608.10005": {
+    "arxiv_id": "2608.10005",
+    "title": "Exploiting Structure in the Boolean Weighted Constraint Satisfaction Problem: A Constraint Composite Graph-Based Approach",
+    "authors": [
+      "Hong Xu"
+    ],
+    "submission_date": "2026-08-07T20:59:54Z",
+    "latest_updated": "2026-08-07T20:59:54Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10005v1"
+    ],
+    "abstract": "What is \"structure,\" and how can we exploit it in combinatorial optimization? Reasoning tasks such as system design, state estimation, and prediction can be cast as combinatorial optimization problems (COPs), traditionally attacked by dedicated algorithms that fail outside their narrow subclass, while communities working on equivalent problems reinvent each other's techniques. The weighted constraint satisfaction problem (WCSP) is a general framework that subsumes COPs from many communities and represents complex physical and non-physical systems, from spin glasses to social networks. Is such generality a curse? Our answer is to exploit \"structure\": a general-purpose WCSP algorithm should automatically imitate the specialized algorithm for whatever subclass its input belongs to. A WCSP has macro (graphical) structure, which variables interact, and micro (numerical) structure, how they interact. Separate schools of thought exploit one or the other, never both. The constraint composite graph (CCG), introduced in 2008, unifies them: it is an undirected graph over a WCSP instance's variables plus auxiliary ones, on which minimum weighted vertex cover (MWVC) solves the original instance. It is efficiently constructible, but largely unexploited. This dissertation answers three questions affirmatively. The CCG has theoretical advantages beyond identifying tractable classes (new properties proved here); it is practically useful (efficient implementation and experiments); and it extends promisingly to non-Boolean variables (new encodings). We use the CCG to (a) kernelize a WCSP instance, fixing optimal values of some variables by maxflow before search begins, (b) improve min-sum message passing, (c) exploit integer linear programming solvers, and (d) solve COPs on quantum annealers. Solving general COPs faster classically also yields better baselines for the debated quantum advantage.",
+    "status": "found"
+  },
+  "2608.10006": {
+    "arxiv_id": "2608.10006",
+    "title": "On quantum mechanics self-consistency: EPR incompleteness claims require no extraneous concepts beyond the theory's plain formalism for refutation",
+    "authors": [
+      "D. F. Orsini",
+      "L. R. N. Oliveira",
+      "M. G. E. da Luz"
+    ],
+    "submission_date": "2026-08-07T21:08:12Z",
+    "latest_updated": "2026-08-07T21:08:12Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10006v1"
+    ],
+    "abstract": "From a phenomenological and experimental viewpoint, quantum mechanics is remarkably successful in explaining effects and processes in the microscopic world. Recently, however, a growing body of literature has revisited the theory's own formal foundations, specifically addressing issues of self-consistency and completeness. As a major historical example of these foundational challenges, the Einstein-Podolsky-Rosen (EPR) argument famously claimed that the theory is incomplete. While many valid criticisms and refutations of the EPR logic exist, they generally rely on a combination of technical results and conceptual objections to EPR's interpretive assumptions, thus transcending the plain quantum framework itself. Motivated by these trends of examining the theory's structural limits, here we revisit the EPR argument. Focusing on elements essential to the EPR reasoning, we first analyze general quantum correlations for EPR states: (i) the fact that their observables are always associated with non-commuting operators, and (ii) the nature of the correlated information obtained through measurement. From these two points alone, and relying strictly on the core rules of quantum mechanics, we demonstrate how to overturn the alleged EPR incompleteness without invoking any extraneous propositions. Consequently, we show that the standard formalism alone suffices to resolve such type of skepticism regarding the theory's physical reach. This offers, at least in a paradigmatic instance, a powerful indication of a structurally well-founded, self-consistent quantum theory.",
+    "status": "found"
+  }
+}

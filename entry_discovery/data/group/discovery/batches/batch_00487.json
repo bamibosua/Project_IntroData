@@ -1,0 +1,402 @@
+{
+  "2601.22896": {
+    "arxiv_id": "2601.22896",
+    "title": "Game-Theoretic Co-Evolution for LLM-Based Heuristic Discovery",
+    "authors": [
+      "Xinyi Ke",
+      "Kai Li",
+      "Junliang Xing",
+      "Yifan Zhang",
+      "Jian Cheng"
+    ],
+    "submission_date": "2026-01-30T12:14:52Z",
+    "latest_updated": "2026-02-09T09:14:58Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.22896v1",
+      "2601.22896v2"
+    ],
+    "abstract": "Large language models (LLMs) have enabled rapid progress in automatic heuristic discovery (AHD), yet most existing methods are predominantly limited by static evaluation against fixed instance distributions, leading to potential overfitting and poor generalization under distributional shifts. We propose Algorithm Space Response Oracles (ASRO), a game-theoretic framework that reframes heuristic discovery as a program level co-evolution between solver and instance generator. ASRO models their interaction as a two-player zero-sum game, maintains growing strategy pools on both sides, and iteratively expands them via LLM-based best-response oracles against mixed opponent meta-strategies, thereby replacing static evaluation with an adaptive, self-generated curriculum. Across multiple combinatorial optimization domains, ASRO consistently outperforms static-training AHD baselines built on the same program search mechanisms, achieving substantially improved generalization and robustness on diverse and out-of-distribution instances.",
+    "status": "found"
+  },
+  "2601.22897": {
+    "arxiv_id": "2601.22897",
+    "title": "Grassmannian Geometry and Global Convergence of Variable Projection for Neural Networks",
+    "authors": [
+      "Mathias Dus"
+    ],
+    "submission_date": "2026-01-30T12:15:05Z",
+    "latest_updated": "2026-01-30T12:15:05Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22897v1"
+    ],
+    "abstract": "Training deep neural networks and Physics-Informed Neural Networks (PINNs) often leads to ill-conditioned and stiff optimization problems. A key structural feature of these models is that they are linear in the output-layer parameters and nonlinear in the hiddenlayer parameters, yielding a separable nonlinear least-squares formulation. In this work, we study the classical variable projection (VarPro) method for such problems in the context of deep neural networks. We provide a geometric formulation on the Grassmannian and analyze the structure of critical points and convergence properties of the reduced problem. When the feature map is parametrized by a neural network, we show that these properties persist except in rank-deficient regimes, which we address via a regularized Grassmannian framework. Numerical experiments for regression and PINNs, including an efficient solver for the heat equation, illustrate the practical effectiveness of the approach.",
+    "status": "found"
+  },
+  "2601.22898": {
+    "arxiv_id": "2601.22898",
+    "title": "$f_2(1270)\\toπ+π$ as a probe of spin and vorticity in heavy-ion collisions",
+    "authors": [
+      "In Woo Park",
+      "Beomkyu Kim",
+      "Giorgio Torrieri",
+      "Kayman J. Gonçalves",
+      "Sanghoon Lim",
+      "Su Houng Lee"
+    ],
+    "submission_date": "2026-01-30T12:16:47Z",
+    "latest_updated": "2026-01-30T12:16:47Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22898v1"
+    ],
+    "abstract": "The correlation between vorticity and spin alignment in heavy-ion collisions can be probed through polarization measurements of hadrons, whose total spin originates from both constituent-quark spins and orbital angular momentum in the quark-model framework. To motivate such experimental studies, we calculate the general angular distribution of produced pion in $f_2(1270)\\toπ+π$ using interaction Lagrangian and helicity formalism and check that both methods yield the same result. The distribution is given as a function of angle between pion and initial quantization axis of $f_2$ and the spin density matrix element of $f_2$. Its diagonal entries and $ρ_{20}$ component were computed assuming local thermal equilibrium and blast wave model for different centrality classes, hence given as a function of azimuthal angle with respect to the impact parameter.",
+    "status": "found"
+  },
+  "2601.22899": {
+    "arxiv_id": "2601.22899",
+    "title": "Uncertainty-Aware Extrapolation in Bayesian Oblique Trees",
+    "authors": [
+      "Viktor Andonovikj",
+      "Sašo Džeroski",
+      "Pavle Boškoski"
+    ],
+    "submission_date": "2026-01-30T12:19:17Z",
+    "latest_updated": "2026-01-30T12:19:17Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22899v1"
+    ],
+    "abstract": "Decision trees are widely used due to their interpretability and efficiency, but they struggle in regression tasks that require reliable extrapolation and well-calibrated uncertainty. Piecewise-constant leaf predictions are bounded by the training targets and often become overconfident under distribution shift. We propose a single-tree Bayesian model that extends VSPYCT by equipping each leaf with a GP predictor. Bayesian oblique splits provide uncertainty-aware partitioning of the input space, while GP leaves model local functional behaviour and enable principled extrapolation beyond the observed target range. We present an efficient inference and prediction scheme that combines posterior sampling of split parameters with \\gls{gp} posterior predictions, and a gating mechanism that activates GP-based extrapolation when inputs fall outside the training support of a leaf. Experiments on benchmark regression tasks show improvements in the predictive performance compared to standard variational oblique trees, and substantial performance gains in extrapolation scenarios.",
+    "status": "found"
+  },
+  "2601.22900": {
+    "arxiv_id": "2601.22900",
+    "title": "MulFeRL: Enhancing Reinforcement Learning with Verbal Feedback in a Multi-turn Loop",
+    "authors": [
+      "Xuancheng Li",
+      "Haitao Li",
+      "Yujia Zhou",
+      "YiqunLiu",
+      "Qingyao Ai"
+    ],
+    "submission_date": "2026-01-30T12:19:54Z",
+    "latest_updated": "2026-05-30T11:40:38Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.22900v1",
+      "2601.22900v2"
+    ],
+    "abstract": "Reinforcement Learning with Verifiable Rewards (RLVR) is widely used to improve reasoning across domains, but outcome-only scalar rewards are often sparse and uninformative. This limitation is especially severe for failed samples, where scalar rewards indicate only that a solution is incorrect without explaining why the reasoning breaks down. In this paper, we leverage richer verbal feedback to guide RLVR on failed samples and convert feedback-induced progress into trainable learning signals. We propose MulFeRL (Multi-turn Feedback-guided Reinforcement Learning), a multi-turn, event-triggered RLVR framework that combines progress induction for feedback-guided regeneration of failed samples, progress credit assignment for learning from verifier-confirmed progress, and structured feedback injection for integrating feedback into the model's reasoning process. Trained on sampled OpenR1-Math, MulFeRL outperforms supervised, self-distillation-based, and RLVR baselines in-domain, while also showing strong out-of-domain generalization.",
+    "status": "found"
+  },
+  "2601.22901": {
+    "arxiv_id": "2601.22901",
+    "title": "Status Updating via Integrated Sensing and Communication: Freshness Optimisation",
+    "authors": [
+      "Touraj Soleymani",
+      "Mohamad Assaad",
+      "John S. Baras"
+    ],
+    "submission_date": "2026-01-30T12:21:46Z",
+    "latest_updated": "2026-07-03T16:17:25Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.22901v1",
+      "2601.22901v2"
+    ],
+    "abstract": "In this paper, we study how sensing and communication should be jointly coordinated in integrated sensing and communication (ISAC) systems to maintain timely situational awareness under reliability and resource constraints. We consider an ISAC-enabled base station that supports a remote source by dynamically choosing between sensing new state information and communicating previously acquired information, with the two operations semantically intertwined rather than serving separate targets and users. Both sensing and communication are unreliable and costly. The objective is to optimise a long-term cost that captures information freshness at the source, measured by the age of information (AoI), together with sensing and communication overheads. The resulting sequential decision problem is formulated as an infinite-horizon Markov decision process (MDP) with two-dimensional AoI states that capture information freshness at the source and at the base station. We prove that the optimal stationary policy admits a monotone threshold structure characterised by a nondecreasing switching curve in the AoI state space, and show that, as the base-station information becomes staler, the system increasingly favours sensing over communication. Our numerical analysis corroborates the theoretical findings.",
+    "status": "found"
+  },
+  "2601.22902": {
+    "arxiv_id": "2601.22902",
+    "title": "Evidence for quark-diquark structure of baryons from fluctuations of conserved charges",
+    "authors": [
+      "Michał Marczenko",
+      "Krzysztof Redlich"
+    ],
+    "submission_date": "2026-01-30T12:21:46Z",
+    "latest_updated": "2026-08-29T06:42:43Z",
+    "revised_dates": null,
+    "venue": "Phys. Rev. C 114, 025205 (2026)",
+    "latest_version": 2,
+    "versions": [
+      "2601.22902v1",
+      "2601.22902v2"
+    ],
+    "abstract": "We study fluctuations and correlations of conserved charges in QCD using a string-based description of the hadronic mass spectrum. Mesons and baryons are modeled as open relativistic strings with quark-antiquark and quark-diquark endpoints, respectively, leading to an exponential Hagedorn growth of states with a limiting temperature fixed by the string tension. We find that continuous Hagedorn spectra constrained by experimentally established hadrons underestimate net-baryon number fluctuations obtained in lattice QCD calculations. By extracting the Hagedorn string spectrum directly from lattice QCD through a fit to the second-order net-baryon number susceptibility, we obtain a consistent description of a broad set of fluctuations of conserved charges from LQCD with the Hagedorn temperature $T_H \\simeq 323~$MeV, without introducing additional free parameters. Our results provide thermodynamic evidence in support of a string quark-diquark picture of baryons in the confined phase of QCD.",
+    "status": "found"
+  },
+  "2601.22903": {
+    "arxiv_id": "2601.22903",
+    "title": "Rigidity of Koebe Polyhedra and Inversive Distance Circle Packings",
+    "authors": [
+      "John C. Bowers",
+      "Philip L. Bowers",
+      "Carl O. R. Lutz"
+    ],
+    "submission_date": "2026-01-30T12:24:48Z",
+    "latest_updated": "2026-03-08T13:30:32Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.22903v1",
+      "2601.22903v2"
+    ],
+    "abstract": "Hyperbolic inversive distance circle packings on the $2$-sphere correspond to Koebe polyhedra in the Beltrami-Klein model $\\mathbb{B}^{3}$ of hyperbolic $3$-space. Koebe polyhedra are triangulated convex hyperbolic polyhedra with hyperideal vertices whose faces meet $\\mathbb{B}^{3}$. We prove the global rigidity of these circle packings or, equivalently, of these Koebe polyhedra under mild assumptions on the links of their vertices. Previous rigidity results apply only when all edges of the Koebe polyhedron are tangent or, alternatively, when no edge is tangent to the ideal boundary of hyperbolic space. We remove these restrictions. This generalizes the global rigidity results of both Bao-Bonahon and Bowers-Bowers-Pratt (arXiv:1703.09338), as well as the uniqueness part of the celebrated Koebe-Andre'ev-Thurston Theorem to the case where adjacent circles need not touch.",
+    "status": "found"
+  },
+  "2601.22904": {
+    "arxiv_id": "2601.22904",
+    "title": "Hyperspherical Autoencoder for High-Fidelity Image Reconstruction and Generation",
+    "authors": [
+      "Hun Chang",
+      "Byunghee Cha",
+      "Jong Chul Ye"
+    ],
+    "submission_date": "2026-01-30T12:25:34Z",
+    "latest_updated": "2026-05-09T06:56:08Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.22904v1",
+      "2601.22904v2"
+    ],
+    "abstract": "Recent studies have explored using pretrained Vision Foundation Models (VFMs) such as DINO for generative autoencoders, showing strong generative performance. Unfortunately, existing approaches often suffer from limited reconstruction fidelity due to the loss of high-frequency details. In this work, we present the \\textbf{\\em Hyperspherical Autoencoder (HAE)}, a framework that bridges semantic representation and pixel-level reconstruction. Our key insight is that while semantic information in contrastive representations is primarily directional, enforcing strict magnitude matching hinders the preservation of fine-grained details. To address this, we introduce a {\\em Directional Feature Alignment} objective that enforces semantic consistency while allowing flexible feature magnitudes for detail retention, alongside a {\\em Hierarchical Convolutional Patch Embedding} module to enhance local structure preservation. Furthermore, observing that SSL-based representations intrinsically lie on a hypersphere, we employ {\\em Riemannian Flow Matching} to train a Diffusion Transformer (DiT) directly on this spherical latent manifold. Notably, our manifold-aware DiT exhibits highly efficient convergence, achieving an exceptional gFID of \\textbf{1.96} alongside a reconstruction rFID of \\textbf{0.78} and a PSNR of \\textbf{25.2} dB, validating the advantages of our manifold-aware approach.",
+    "status": "found"
+  },
+  "2601.22905": {
+    "arxiv_id": "2601.22905",
+    "title": "FlexLoRA: Entropy-Guided Flexible Low-Rank Adaptation",
+    "authors": [
+      "Muqing Liu",
+      "Chongjie Si",
+      "Yuheng Jia"
+    ],
+    "submission_date": "2026-01-30T12:25:47Z",
+    "latest_updated": "2026-01-30T12:25:47Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22905v1"
+    ],
+    "abstract": "Large pre-trained models achieve remarkable success across diverse domains, yet fully fine-tuning incurs prohibitive computational and memory costs. Parameter-efficient fine-tuning (PEFT) has thus become a mainstream paradigm. Among them, Low-Rank Adaptation (LoRA) introduces trainable low-rank matrices and shows strong performance, nevertheless, its fixed-rank design limits flexibility. Dynamic rank allocation methods mitigate this issue by pruning redundant directions; however, they often rely on heuristic, element-level metrics that globally sort rank directions without matrix-wise distinction, and they lack mechanisms to expand capacity in layers requiring additional adaptation. To overcome these limitations, we propose FlexLoRA, an entropy-guided flexible low-rank adaptation framework that (i) evaluates matrix importance via spectral energy entropy, (ii) supports rank pruning and expansion under a global budget, and (iii) employs zero-impact initialization for newly added singular directions to ensure stability. By addressing granularity, flexibility, and stability limitations, FlexLoRA provides a more principled solution for PEFT. Extensive experiments show that FlexLoRA consistently outperforms state-of-the-art baselines across benchmarks. Codes are available at https://github.com/Chongjie-Si/Subspace-Tuning.",
+    "status": "found"
+  },
+  "2601.22906": {
+    "arxiv_id": "2601.22906",
+    "title": "QSOFEED: Investigating warm molecular, low- and high-ionization atomic gas in six type-2 quasars with GTC/EMIR",
+    "authors": [
+      "P. H. Cezar",
+      "M. Coloma Puga",
+      "C. Ramos Almeida",
+      "J. A. Acosta-Pulido",
+      "G. Speranza",
+      "L. R. Holden",
+      "C. N. Tadhunter",
+      "M. V. Zanchettin",
+      "A. Audibert"
+    ],
+    "submission_date": "2026-01-30T12:25:52Z",
+    "latest_updated": "2026-01-30T12:25:52Z",
+    "revised_dates": null,
+    "venue": "A&A 708, A12 (2026)",
+    "latest_version": 1,
+    "versions": [
+      "2601.22906v1"
+    ],
+    "abstract": "We present long-slit near-infrared spectroscopic observations of six nearby (z$\\sim$0.1) radio-quiet type-2 quasars (QSO2s) from the Quasar Feedback (QSOFEED) sample. They have bolometric luminosities of $10^{45-46}~erg~s^{-1}$ and stellar masses of $ 10^{10.6-11.3}~M_{\\odot}$. The observations were obtained with the instrument Espectrógrafo Multiobjeto Infra-Rojo (EMIR) on the 10.4 m Gran Telescopio Canarias. The nuclear K-band spectra (central $\\sim$1-3 kpc of the QSO2s) reveal signatures of high-velocity outflows in either the Pa$α$ or Br$γ$ lines, depending on the redshift, and in the [Si VI] lines. The broadest kinematic components have full width at half maximum (FWHM) of $\\sim$1200-2500 km $s^{-1}$. From the near-infrared hydrogen recombination lines we derived ionized outflow masses of $M_{Hion} \\sim0.08-20\\times 10^{6}~M_{\\odot}$, mass outflow rates of $\\dot{M}_{Hion}\\sim0.03-6~M_{\\odot}~yr^{-1}$, and kinetic powers of $\\dot{E}_{Hion}\\sim 10^{37.8-40.8}~erg~s^{-1}$. These ionized gas outflow masses and mass outflow rates have median values that are 5.9 and 5.8 times larger, respectively, than those derived from the [Si VI] line. Our study provides evidence, at least for these six QSO2s, that the near-infrared recombination lines and [Si VI] are tracing the same outflow (i.e., they have similar kinematics and radii), but they carry different amounts of mass. We detected warm molecular lines in the six QSO2s, from which we measured total (nuclear) gas masses from 1.1 (0.7) to 32 (13) $\\times~10^3~M_{\\odot}$, similar to other QSO2s with warm $H_2$ measurements reported in the literature, but we did not find any molecular outflow associated with them. Comparing with other five QSO2s with $H_2$ measurements reported in the literature, we find that the four QSO2s with detected $H_2$ outflows have total (nuclear) $H_2$ masses 2.2 (2.7) times larger, on average.",
+    "status": "found"
+  },
+  "2601.22907": {
+    "arxiv_id": "2601.22907",
+    "title": "Examples of finitely presented groups with strong fixed point properties and property (T)",
+    "authors": [
+      "Indira Chatterji",
+      "Martin Kassabov"
+    ],
+    "submission_date": "2026-01-30T12:26:10Z",
+    "latest_updated": "2026-01-30T12:26:10Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22907v1"
+    ],
+    "abstract": "We construct a finitely presented group with property (T) which can not act on on reasonable spaces. Such group is constructed using an generalization of Hall embedding theorem, where property (T) is added at the expense of weakening the simplicity requirement.",
+    "status": "found"
+  },
+  "2601.22908": {
+    "arxiv_id": "2601.22908",
+    "title": "Reducibility of self-maps in monoid and its related invariants",
+    "authors": [
+      "Gopal Chandra Dutta"
+    ],
+    "submission_date": "2026-01-30T12:30:06Z",
+    "latest_updated": "2026-02-28T05:28:21Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.22908v1",
+      "2601.22908v2"
+    ],
+    "abstract": "Given a positive integer $k$, we investigate the $k$-redcibility of self-maps in the monoid $Å^k(X\\vee Y)$, consisting of self-maps that induce isomorphisms on homology groups up to degree $k$. In general, verifying $k$-reducibility is a subtle problem. We show that the $k$-reducibility of a self-map is determine through its induced endomorphisms on homology or cohomology groups. Moreover, under the k-reducibility assumption, the computation of the homology self-closeness number of the wedge sum of spaces essentially reduces to the computation of the homology self-closeness numbers of the individual wedge summands. We generalize the notion of an atomic space to that of an $n$-atomic space and establish some of its fundamental properties. We show that the $k$-reducibility criteria for self-maps in a monoid $Å^k(X)$ is satisfied when the space $X$ decomposes as a wedge sum of distinct $n$-atomic spaces. Finally, we determine the homology self-closeness numbers of wedge sums of distinct $n$-atomic spaces.",
+    "status": "found"
+  },
+  "2601.22909": {
+    "arxiv_id": "2601.22909",
+    "title": "$q$-state Potts ice",
+    "authors": [
+      "Mark Potts",
+      "S. A. Parameswaran",
+      "Roderich Moessner"
+    ],
+    "submission_date": "2026-01-30T12:32:31Z",
+    "latest_updated": "2026-06-03T13:36:14Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.22909v1",
+      "2601.22909v2"
+    ],
+    "abstract": "Classical and quantum spin ice arguably provide the simplest route towards spin liquids and their emergent gauge fields. $q-$state Potts ice models have been constructed that generalize spin ice, hosting multiple emergent $\\text{U}(1)$ gauge fields and excitations charged under non-trivial combinations of these fields. We present a general treatment of classical $q-$state Potts ices relating their properties to the $\\mathfrak{su}(q)$ Lie algebras, and demonstrate how the properties of charged excitations in the classical model can be related to this symmetry group. We also introduce quantum generalizations of the Potts ice models, and demonstrate how charge flavor changing interactions unique to $q>2$ models dominate their low energy physics. We further show how symmetries inherited from the $\\mathfrak{su}(q)$ can lead to flux vacuum frustration, greatly modifying the dynamical properties of charged excitations.",
+    "status": "found"
+  },
+  "2601.22910": {
+    "arxiv_id": "2601.22910",
+    "title": "The Bondi universe: Can negative mass drive the cosmological expansion?",
+    "authors": [
+      "Giovanni Manfredi",
+      "Jean-Louis Rouet",
+      "Bruce Miller"
+    ],
+    "submission_date": "2026-01-30T12:33:22Z",
+    "latest_updated": "2026-04-20T15:45:28Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2601.22910v1",
+      "2601.22910v2",
+      "2601.22910v3"
+    ],
+    "abstract": "We identify a new cosmological coincidence that parallels the well-known matter/dark-energy coincidence: the present-epoch transition of the universe from a weakly coupled (collisionless) to a strongly coupled (collisional) gravitational regime. Within a cosmological model containing equal amounts of positive and negative Bondi masses -- consistent with the weak equivalence principle and momentum conservation -- we show that this coupling transition naturally coincides with the shift from a coasting to an accelerating expansion. A linear response analysis of the corresponding Vlasov-Poisson system reveals that mixed positive-negative mass configurations are always unstable, with growth rates that increase at shorter wavelengths, thereby driving the system toward strong coupling. Using long-time, exact one-dimensional N-body simulations, we demonstrate that the universe undergoes three successive expansion phases: an initial ballistic regime, an intermediate random-walk acceleration driven by sporadic Bondi encounters, and finally a uniformly accelerating phase triggered by the formation of stable positive/negative mass pairs. The onset of this last phase occurs precisely when the coupling parameter crosses unity, linking the two cosmological coincidences through a single dynamical mechanism. These results suggest that cosmic acceleration may arise from the nonlinear dynamics of a gravitationally neutral mixed-mass universe, without invoking dark energy or a cosmological constant.",
+    "status": "found"
+  },
+  "2601.22911": {
+    "arxiv_id": "2601.22911",
+    "title": "A categorical account of the Metropolis-Hastings algorithm",
+    "authors": [
+      "Rob Cornish",
+      "Andi Q. Wang"
+    ],
+    "submission_date": "2026-01-30T12:34:01Z",
+    "latest_updated": "2026-07-12T15:56:07Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.22911v1",
+      "2601.22911v2"
+    ],
+    "abstract": "Metropolis-Hastings (MH) is a foundational Markov chain Monte Carlo (MCMC) algorithm. In this paper, we ask whether it is possible to formulate and analyse MH in terms of categorical probability, using a recent involutive framework for MH-type procedures as a concrete case study. We show how basic MCMC concepts such as invariance and reversibility can be formulated in Markov categories, and how one part of the MH kernel can be analysed using standard CD categories. To go further, we then study enrichments of CD categories over commutative monoids. This gives an expressive setting for reasoning abstractly about a range of important probabilistic concepts, including substochastic kernels, finite and $σ$-finite measures, absolute continuity, singular measures, and Lebesgue decompositions. Using these tools, we give synthetic necessary and sufficient conditions for a general MH-type sampler to be reversible with respect to a given target distribution.",
+    "status": "found"
+  },
+  "2601.22912": {
+    "arxiv_id": "2601.22912",
+    "title": "Feedback Control via Integrated Sensing and Communication: Uncertainty Optimisation",
+    "authors": [
+      "Touraj Soleymani",
+      "Mohamad Assaad",
+      "John S. Baras"
+    ],
+    "submission_date": "2026-01-30T12:34:07Z",
+    "latest_updated": "2026-07-03T16:34:51Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.22912v1",
+      "2601.22912v2"
+    ],
+    "abstract": "This paper studies integrated sensing and communication (ISAC) coordination for feedback control tasks under shared platform constraints. We consider a cyber-physical system in which a remote dynamical process (i.e., remote source) is regulated with the support of an ISAC-enabled base station that alternates between sensing the source state and communicating control-relevant information to the source, with the two operations semantically intertwined rather than serving separate targets and users. For a Gauss-Markov source with Bernoulli-distributed sensing and communication links and a finite-horizon linear-quadratic-Gaussian (LQG) cost, we derive the optimal ISAC and control policies. Under a Bellman-operator condition, we prove that the optimal ISAC policy at the base station follows an order-threshold structure in terms of the source and base-station estimation covariances, while the optimal control policy at the source follows a certainty-equivalent structure in terms of the source state estimate. We show that the threshold region, defined as the set of estimation covariance pairs for which communication is preferred over sensing, expands with increasing source uncertainty and contracts with increasing base-station uncertainty. Our numerical analysis validates the theoretical findings.",
+    "status": "found"
+  },
+  "2601.22913": {
+    "arxiv_id": "2601.22913",
+    "title": "Multi-Cue Anomaly Detection and Localization under Data Contamination",
+    "authors": [
+      "Anindya Sundar Das",
+      "Monowar Bhuyan"
+    ],
+    "submission_date": "2026-01-30T12:34:13Z",
+    "latest_updated": "2026-02-04T11:10:48Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.22913v1",
+      "2601.22913v2"
+    ],
+    "abstract": "Visual anomaly detection in real-world industrial settings faces two major limitations. First, most existing methods are trained on purely normal data or on unlabeled datasets assumed to be predominantly normal, presuming the absence of contamination, an assumption that is rarely satisfied in practice. Second, they assume no access to labeled anomaly samples, limiting the model from learning discriminative characteristics of true anomalies. Therefore, these approaches often struggle to distinguish anomalies from normal instances, resulting in reduced detection and weak localization performance. In real-world applications, where training data are frequently contaminated with anomalies, such methods fail to deliver reliable performance. In this work, we propose a robust anomaly detection framework that integrates limited anomaly supervision into the adaptive deviation learning paradigm. We introduce a composite anomaly score that combines three complementary components: a deviation score capturing statistical irregularity, an entropy-based uncertainty score reflecting predictive inconsistency, and a segmentation-based score highlighting spatial abnormality. This unified scoring mechanism enables accurate detection and supports gradient-based localization, providing intuitive and explainable visual evidence of anomalous regions. Following the few-anomaly paradigm, we incorporate a small set of labeled anomalies during training while simultaneously mitigating the influence of contaminated samples through adaptive instance weighting. Extensive experiments on the MVTec and VisA benchmarks demonstrate that our framework outperforms state-of-the-art baselines and achieves strong detection and localization performance, interpretability, and robustness under various levels of data contamination.",
+    "status": "found"
+  },
+  "2601.22914": {
+    "arxiv_id": "2601.22914",
+    "title": "Exact black holes and black branes with bumpy horizons supported by superfluid pions",
+    "authors": [
+      "Fabrizio Canfora",
+      "Andrés Gomberoff",
+      "Carla Henríquez-Baez",
+      "Aldo Vera"
+    ],
+    "submission_date": "2026-01-30T12:34:35Z",
+    "latest_updated": "2026-04-15T21:28:22Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2601.22914v1",
+      "2601.22914v2",
+      "2601.22914v3"
+    ],
+    "abstract": "We present exact solutions of the Einstein $SU(2)$ non-linear sigma model in $3+1$ spacetime dimensions, describing bumpy black holes and black branes. Using an Ansatz for superfluid pion multi-vortices, the matter sector reduces to a first-order BPS system, while the Einstein equations reduce to a Liouville equation with a smooth source governing the horizon deformation. These solutions describe horizons of different constant curvatures, with nontrivial bumpy geometries protected by an integer topological invariant, namely the vorticity, which also controls the number of bumps and the black hole thermodynamics. Remarkably, such horizons arise in a minimal and physically motivated matter model, without invoking exotic fields or modified gravity. The physical implications of these results in holography and astrophysics are briefly described.",
+    "status": "found"
+  },
+  "2601.22915": {
+    "arxiv_id": "2601.22915",
+    "title": "Intrinsic MIMO Particle Communication Channel with Random Advection",
+    "authors": [
+      "Fatih Merdan",
+      "Ozgur B. Akan"
+    ],
+    "submission_date": "2026-01-30T12:35:16Z",
+    "latest_updated": "2026-01-30T12:35:16Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22915v1"
+    ],
+    "abstract": "In this work, receiver diversity in advection-dominated diffusion-advection channels is investigated. Strong directed flow fundamentally alters the communication-theoretic properties of molecular communication systems (MC). Specifically, advection preserves the temporal ordering and shape of transmitted pulses, enabling pulse-based and higher-order modulation schemes that are typically infeasible in purely diffusive environments. Focusing on a single transmitter and a single type of information molecule, it is demonstrated that spatially distributed receivers can observe distinct realizations of the same transmitted signal, giving rise to diversity gain. Several receiver combining strategies are evaluated and shown to improve detection performance compared to single-receiver operation, particularly in low-to-moderate signal-to-noise ratio (SNR) regimes. The results provide a structured framework for understanding receiver-side diversity in molecular communication, highlighting the role of advection as a key enabler for reliable pulse-based signaling. This perspective establishes a foundation for future studies on advanced modulation, joint equalization and detection, and multi-molecule MIMO extensions that can further enhance the performance and physical applicability of MC systems.",
+    "status": "found"
+  }
+}

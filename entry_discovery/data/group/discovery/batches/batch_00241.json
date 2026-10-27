@@ -1,0 +1,406 @@
+{
+  "2511.16529": {
+    "arxiv_id": "2511.16529",
+    "title": "Analytical Fock Representation of Two-Mode Squeezing for Quantum Interference",
+    "authors": [
+      "Xuemei Gu",
+      "Carlos Ruiz-Gonzalez",
+      "Mario Krenn"
+    ],
+    "submission_date": "2025-11-20T16:43:08Z",
+    "latest_updated": "2026-02-10T12:28:45Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.16529v1",
+      "2511.16529v2"
+    ],
+    "abstract": "Two-mode squeezing is central to entangled-photon generation and nonlinear interferometry, yet standard perturbative low-gain treatments and Gaussian formalisms can obscure the interference of photon-number amplitudes, especially in nonlinear interferometers and at high gain. Here we derive a closed-form Fock-basis expression for the action of the two-mode squeezing operator on arbitrary number states, enabling the direct analysis of nonlinear interferometers in the photon-number basis at arbitrary squeezing strength. Within this framework, we provide intuitive physical interpretations of several known quantum-interference effects and identify a new multi-photon interference phenomenon in a four-crystal geometry that could readily be observed in laboratories. Our work provides a compact analytic toolkit and explicit design rules for engineering multi-photon interference, with applications in quantum sensing, precision metrology, and quantum state generation.",
+    "status": "found"
+  },
+  "2511.16530": {
+    "arxiv_id": "2511.16530",
+    "title": "Targeted Parameter Estimation for Robust Empirical Bayes Ranking",
+    "authors": [
+      "Nicholas C. Henderson",
+      "Nicholas Hartman"
+    ],
+    "submission_date": "2025-11-20T16:43:27Z",
+    "latest_updated": "2025-11-20T16:43:27Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.16530v1"
+    ],
+    "abstract": "Ordering the expected outcomes across a collection of clusters after performing a covariate adjustment commonly arises in many applied settings, such as healthcare provider evaluation. Regression parameters in such covariate adjustment models are frequently estimated by maximum likelihood or through other criteria that do not directly evaluate the quality of the rankings resulting from using a particular set of parameter estimates. In this article, we propose both a novel empirical Bayes ranking procedure and an associated estimation approach for finding the regression parameters of the covariate adjustment model. By building our ranking approach around estimating approximate percentiles of the covariate-adjusted cluster-level means, we are able to develop manageable expressions for the expected ranking squared-error loss associated with any choice of the covariate-adjustment model parameters, and we harness this to generate a novel unbiased estimator for this expected loss. Minimization of this unbiased estimator directly leads to a novel ranking procedure that is often more robust than conventional empirical Bayes ranking methods. Through a series of simulation studies, we show that our approach consistently delivers improved ranking squared-error performance relative to competing methods, such as posterior expected ranks and ranking the components of the best linear unbiased predictor. Estimating rankings using our method is illustrated with an example from a longitudinal study evaluating test scores across a large group of schools.",
+    "status": "found"
+  },
+  "2511.16531": {
+    "arxiv_id": "2511.16531",
+    "title": "Non-isoparametric Serrin domains of $\\mathbb{S}^3$ with connected toric boundary",
+    "authors": [
+      "Andrea Bisterzo",
+      "Shigeru Sakaguchi"
+    ],
+    "submission_date": "2025-11-20T16:44:07Z",
+    "latest_updated": "2025-11-20T16:44:07Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.16531v1"
+    ],
+    "abstract": "We investigate the overdetermined torsion problem $\\begin{cases} -Δu = 1 & \\text{in}\\ Ω\\\\ u=0 & \\text{on}\\ \\partial Ω\\\\ \\frac{\\partial u}{\\partial ν}=\\text{const.} & \\text{on}\\ \\partial Ω, \\end{cases}$ where $Ω$ is a smooth Riemannian domain. Domains admitting a solution to this problem are called \\textit{Serrin domains}, after the celebrated work of Serrin \\cite{Se71}, where is proved that in $\\mathbb{R}^n$ such domains are geodesic balls. In the present paper we establish the existence of two distinct types of Serrin domains of $\\mathbb{S}^3$, respectively of small and large volume, each of whose boundary is connected and is neither isometric to a geodesic sphere nor to a Clifford torus. These domains arise as nontrivial perturbations of some classical symmetric solutions to the same problem. Our approach relies on an implicit construction based on the Crandall-Rabinowitz bifurcation theorem, which allows us to detect branches of non-radial solutions bifurcating from a family of radial ones. The resulting examples highlight new geometric configurations of the torsion problem in the three-dimensional sphere, providing another proof of the fact that the rigidity of Serrin-type results can fail in the presence of curvature.",
+    "status": "found"
+  },
+  "2511.16532": {
+    "arxiv_id": "2511.16532",
+    "title": "Enhancing Multi-Camera Gymnast Tracking Through Domain Knowledge Integration",
+    "authors": [
+      "Fan Yang",
+      "Shigeyuki Odashima",
+      "Shoichi Masui",
+      "Ikuo Kusajima",
+      "Sosuke Yamao",
+      "Shan Jiang"
+    ],
+    "submission_date": "2025-11-20T16:47:45Z",
+    "latest_updated": "2025-11-20T16:47:45Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.16532v1"
+    ],
+    "abstract": "We present a robust multi-camera gymnast tracking, which has been applied at international gymnastics championships for gymnastics judging. Despite considerable progress in multi-camera tracking algorithms, tracking gymnasts presents unique challenges: (i) due to space restrictions, only a limited number of cameras can be installed in the gymnastics stadium; and (ii) due to variations in lighting, background, uniforms, and occlusions, multi-camera gymnast detection may fail in certain views and only provide valid detections from two opposing views. These factors complicate the accurate determination of a gymnast's 3D trajectory using conventional multi-camera triangulation. To alleviate this issue, we incorporate gymnastics domain knowledge into our tracking solution. Given that a gymnast's 3D center typically lies within a predefined vertical plane during \\revised{much of their} performance, we can apply a ray-plane intersection to generate coplanar 3D trajectory candidates for opposing-view detections. More specifically, we propose a novel cascaded data association (DA) paradigm that employs triangulation to generate 3D trajectory candidates when cross-view detections are sufficient, and resort to the ray-plane intersection when they are insufficient. Consequently, coplanar candidates are used to compensate for uncertain trajectories, thereby minimizing tracking failures. The robustness of our method is validated through extensive experimentation, demonstrating its superiority over existing methods in challenging scenarios. Furthermore, our gymnastics judging system, equipped with this tracking method, has been successfully applied to recent Gymnastics World Championships, earning significant recognition from the International Gymnastics Federation.",
+    "status": "found"
+  },
+  "2511.16533": {
+    "arxiv_id": "2511.16533",
+    "title": "Distributed MIS Algorithms for Rational Agents using Games",
+    "authors": [
+      "Nithin Salevemula",
+      "Shreyas Pai"
+    ],
+    "submission_date": "2025-11-20T16:48:25Z",
+    "latest_updated": "2025-11-20T16:48:25Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.16533v1"
+    ],
+    "abstract": "We study the problem of computing a Maximal Independent Set (MIS) in distributed networks where each node is a rational agent whose payoff depends on whether it joins the MIS. Classical distributed algorithms assume that nodes follow the prescribed protocol, but this assumption fails when nodes are strategic and may deviate if doing so increases their expected utility. Standard MIS algorithms rely on honest randomness or unique identifiers to break symmetry. In rational settings, however, agents may manipulate randomness, and relying solely on identifiers can create unfairness, giving some nodes zero probability of joining the MIS and thus no incentive to participate. To address these issues, we propose two algorithms based on a utility model in which agents seek locally correct solutions while also having preferences over which solution is chosen. Randomness in our algorithms is generated through pairwise interactions between neighboring nodes, viewed as simple games in which no single node can unilaterally affect the outcome. This allows symmetry breaking while remaining compatible with rational behavior. For both algorithms, we prove that at every stage of the execution, given any history, no agent can increase its expected utility through a unilateral deviation, assuming others follow the algorithm. This gives a stronger guarantee than Trembling-Hand Perfect Equilibrium. When all nodes follow the protocol, every node has a positive probability of joining the MIS, and the final output is a correct MIS. Under mild additional assumptions, both algorithms terminate in $O(\\log n)$ rounds with high probability.",
+    "status": "found"
+  },
+  "2511.16534": {
+    "arxiv_id": "2511.16534",
+    "title": "Electroweak precision tests",
+    "authors": [
+      "L. Reina",
+      "L. Silvestrini"
+    ],
+    "submission_date": "2025-11-20T16:49:04Z",
+    "latest_updated": "2025-12-05T15:15:08Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.16534v1",
+      "2511.16534v2"
+    ],
+    "abstract": "The Standard Model of particle physics provides a rigorous framework within which processes mediated by electroweak interactions can be calculated with great accuracy. By comparing with high-precision experimental measurements of the same processes, deviations from Standard Model predictions can be identified as indirect signals of new physics. In particular, electroweak precision fits combine multiple observables and provide a unique test of the Standard Model consistency at the quantum level.",
+    "status": "found"
+  },
+  "2511.16535": {
+    "arxiv_id": "2511.16535",
+    "title": "Investigating Optical Flow Computation: From Local Methods to a Multiresolution Horn-Schunck Implementation with Bilinear Interpolation",
+    "authors": [
+      "Haytham Ziani"
+    ],
+    "submission_date": "2025-11-20T16:49:05Z",
+    "latest_updated": "2025-11-20T16:49:05Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.16535v1"
+    ],
+    "abstract": "This paper presents an applied analysis of local and global methods, with a focus on the Horn-Schunck algorithm for optical flow computation. We explore the theoretical and practical aspects of local approaches, such as the Lucas-Kanade method, and global techniques such as Horn-Schunck. Additionally, we implement a multiresolution version of the Horn-Schunck algorithm, using bilinear interpolation and prolongation to improve accuracy and convergence. The study investigates the effectiveness of these combined strategies in estimating motion between frames, particularly under varying image conditions.",
+    "status": "found"
+  },
+  "2511.16536": {
+    "arxiv_id": "2511.16536",
+    "title": "A $(2+\\varepsilon)$-approximation algorithm for the general scheduling problem in quasipolynomial time",
+    "authors": [
+      "Alexander Armbruster",
+      "Lars Rohwedder",
+      "Andreas Wiese"
+    ],
+    "submission_date": "2025-11-20T16:49:07Z",
+    "latest_updated": "2025-11-20T16:49:07Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.16536v1"
+    ],
+    "abstract": "We study the general scheduling problem (GSP) which generalizes and unifies several well-studied preemptive single-machine scheduling problems, such as weighted flow time, weighted sum of completion time, and minimizing the total weight of tardy jobs. We are given a set of jobs with their processing times and release times and seek to compute a (possibly preemptive) schedule for them on one machine. Each job incurs a cost that depends on its completion time in the computed schedule, as given by a separate job-dependent cost function for each job, and our objective is to minimize the total resulting cost of all jobs. The best known result for GSP is a polynomial time $O(\\log\\log P)$-approximation algorithm [Bansal and Pruhs, FOCS 2010, SICOMP 2014]. We give a quasi-polynomial time $(2+ε)$-approximation algorithm for GSP, assuming that the jobs' processing times are quasi-polynomially bounded integers. For the special case of the weighted tardiness objective, we even obtain an improved approximation ratio of $1+ε$. For this case, no better result had been known than the mentioned $O(\\log\\log P)$-approximation for the general case of GSP. Our algorithms use a reduction to an auxiliary geometric covering problem. In contrast to a related reduction for the special case of weighted flow time [Rohwedder, Wiese, STOC 2021][Armbruster, Rohwedder, Wiese, STOC 2023] for GSP it seems no longer possible to establish a tree-like structure for the rectangles to guide an algorithm that solves this geometric problem. Despite the lack of structure due to the problem itself, we show that an optimal solution can be transformed into a near-optimal solution that has certain structural properties. Due to those we can guess a substantial part of the solution quickly and partition the remaining problem in an intricate way, such that we can independently solve each part recursively.",
+    "status": "found"
+  },
+  "2511.16537": {
+    "arxiv_id": "2511.16537",
+    "title": "A critical Hardy-Rellich inequality",
+    "authors": [
+      "Hernán Castro"
+    ],
+    "submission_date": "2025-11-20T16:52:15Z",
+    "latest_updated": "2026-07-02T14:53:57Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 4,
+    "versions": [
+      "2511.16537v1",
+      "2511.16537v2",
+      "2511.16537v3",
+      "2511.16537v4"
+    ],
+    "abstract": "In this work, we prove a critical version of a Hardy-Rellich type inequality. We show that for $N\\geq 1$ and for $-N<a<1$, $a\\neq 0$ there exists a constant $C_{N,a}>0$ such that \\[ \\int_{\\mathbb R^N}\\left|\\nabla\\left(\\frac{u(x)}{|x|}\\right)\\right|^N|x|^a\\,\\mathrm{d}x\\leq C_{N,a}\\int_{\\mathbb R^N}\\left|Δu(x)\\right|^N |x|^a\\,\\mathrm{d}x, \\] for any $u\\in C^\\infty_c(\\mathbb R^N\\setminus\\left\\{0\\right\\})$.",
+    "status": "found"
+  },
+  "2511.16538": {
+    "arxiv_id": "2511.16538",
+    "title": "Local scaling limits of quadrangulations rooted on geodesics",
+    "authors": [
+      "Mathieu Mourichoux"
+    ],
+    "submission_date": "2025-11-20T16:52:16Z",
+    "latest_updated": "2025-11-20T16:52:16Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.16538v1"
+    ],
+    "abstract": "We identify the local scaling limit of the Uniform Infinite Planar Quadrangulation (UIPQ) and of critical Boltzmann quadrangulations, when one simultaneously rescales the distances and reroot them far away from the root of a distinguished geodesic. The limiting space is the bigeodesic Brownian plane, which appears as the local limit of the Brownian sphere around an interior point of a geodesic. We also show that the $\\overline{\\mathrm{UIPQ}}$ introduced by Dieuleveut, which is the local limit of the $\\mathrm{UIPQ}$ rerooted at a far away point of its infinite geodesic, has the same scaling limit. These results can be seen as a commutation property between local limit, scaling limit and moving forward on a geodesic in random quadrangulations. The proofs are based on spinal decompositions of random trees and coupling results.",
+    "status": "found"
+  },
+  "2511.16539": {
+    "arxiv_id": "2511.16539",
+    "title": "Probing moire excitons in MoSe2/WSe2 heterobilayers by combined micro-photoluminescence and lateral force microscopy",
+    "authors": [
+      "L. Caussou",
+      "H. Moutaabbid",
+      "M. Bernard",
+      "F. Margaillan",
+      "T. Taniguchi",
+      "K. Watanabe",
+      "C. Lagoin",
+      "F. Dubin",
+      "V. Voliotis"
+    ],
+    "submission_date": "2025-11-20T16:53:08Z",
+    "latest_updated": "2025-11-20T16:53:08Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.16539v1"
+    ],
+    "abstract": "We study interlayer excitons in MoSe2/WSe2 heterobilayers, by combining lateral force microscopy and micro-photoluminescence spectroscopy. This allows us to correlate the spatial profile of the moiré superlattice with the distribution of optically active states accessible to interlayer excitons. In heterostructures where a few degrees twist angle is imposed between the MoSe and WSe crystallographic axes, we show that a continuous moiré lattice is realized across areas close to the optical diffraction limit. In such regions, the photoluminescence reduces to a few narrow-band lines only, energetically distributed consistently with the geometry of the moiré lattice. This correlation reveals that interlayer excitons explore a controlled periodic confinement, paving the way towards implementations of Bose-Hubbard models.",
+    "status": "found"
+  },
+  "2511.16540": {
+    "arxiv_id": "2511.16540",
+    "title": "Beyond Tokens in Language Models: Interpreting Activations through Text Genre Chunks",
+    "authors": [
+      "Éloïse Benito-Rodriguez",
+      "Einar Urdshals",
+      "Jasmina Nasufi",
+      "Nicky Pochinkov"
+    ],
+    "submission_date": "2025-11-20T16:53:12Z",
+    "latest_updated": "2025-11-20T16:53:12Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.16540v1"
+    ],
+    "abstract": "Understanding Large Language Models (LLMs) is key to ensure their safe and beneficial deployment. This task is complicated by the difficulty of interpretability of LLM structures, and the inability to have all their outputs human-evaluated. In this paper, we present the first step towards a predictive framework, where the genre of a text used to prompt an LLM, is predicted based on its activations. Using Mistral-7B and two datasets, we show that genre can be extracted with F1-scores of up to 98% and 71% using scikit-learn classifiers. Across both datasets, results consistently outperform the control task, providing a proof of concept that text genres can be inferred from LLMs with shallow learning models.",
+    "status": "found"
+  },
+  "2511.16541": {
+    "arxiv_id": "2511.16541",
+    "title": "Supervised Contrastive Learning for Few-Shot AI-Generated Image Detection and Attribution",
+    "authors": [
+      "Jaime Álvarez Urueña",
+      "David Camacho",
+      "Javier Huertas Tato"
+    ],
+    "submission_date": "2025-11-20T16:53:24Z",
+    "latest_updated": "2025-11-21T08:44:06Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.16541v1",
+      "2511.16541v2"
+    ],
+    "abstract": "The rapid advancement of generative artificial intelligence has enabled the creation of synthetic images that are increasingly indistinguishable from authentic content, posing significant challenges for digital media integrity. This problem is compounded by the accelerated release cycle of novel generative models, which renders traditional detection approaches (reliant on periodic retraining) computationally infeasible and operationally impractical. This work proposes a novel two-stage detection framework designed to address the generalization challenge inherent in synthetic image detection. The first stage employs a vision deep learning model trained via supervised contrastive learning to extract discriminative embeddings from input imagery. Critically, this model was trained on a strategically partitioned subset of available generators, with specific architectures withheld from training to rigorously ablate cross-generator generalization capabilities. The second stage utilizes a k-nearest neighbors (k-NN) classifier operating on the learned embedding space, trained in a few-shot learning paradigm incorporating limited samples from previously unseen test generators. With merely 150 images per class in the few-shot learning regime, which are easily obtainable from current generation models, the proposed framework achieves an average detection accuracy of 91.3%, representing a 5.2 percentage point improvement over existing approaches . For the source attribution task, the proposed approach obtains improvements of of 14.70% and 4.27% in AUC and OSCR respectively on an open set classification context, marking a significant advancement toward robust, scalable forensic attribution systems capable of adapting to the evolving generative AI landscape without requiring exhaustive retraining protocols.",
+    "status": "found"
+  },
+  "2511.16542": {
+    "arxiv_id": "2511.16542",
+    "title": "EOGS++: Earth Observation Gaussian Splatting with Internal Camera Refinement and Direct Panchromatic Rendering",
+    "authors": [
+      "Pierrick Bournez",
+      "Luca Savant Aira",
+      "Thibaud Ehret",
+      "Gabriele Facciolo"
+    ],
+    "submission_date": "2025-11-20T16:54:17Z",
+    "latest_updated": "2026-03-27T17:28:11Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.16542v1",
+      "2511.16542v2"
+    ],
+    "abstract": "Recently, 3D Gaussian Splatting has been introduced as a compelling alternative to NeRF for Earth observation, offering competitive reconstruction quality with significantly reduced training times. In this work, we extend the Earth Observation Gaussian Splatting (EOGS) framework to propose EOGS++, a novel method tailored for satellite imagery that directly operates on raw high-resolution panchromatic data without requiring external preprocessing. Furthermore, leveraging optical flow techniques we embed bundle adjustment directly within the training process, avoiding reliance on external optimization tools while improving camera pose estimation. We also introduce several improvements to the original implementation, including early stopping and TSDF post-processing, all contributing to sharper reconstructions and better geometric accuracy. Experiments on the IARPA 2016 and DFC2019 datasets demonstrate that EOGS++ achieves state-of-the-art performance in terms of reconstruction quality and efficiency, outperforming the original EOGS method and other NeRF-based methods while maintaining the computational advantages of Gaussian Splatting. Our model demonstrates an improvement from 1.33 to 1.19 mean MAE errors on buildings compared to the original EOGS models",
+    "status": "found"
+  },
+  "2511.16543": {
+    "arxiv_id": "2511.16543",
+    "title": "The Oracle and The Prism: A Decoupled and Efficient Framework for Generative Recommendation Explanation",
+    "authors": [
+      "Jiaheng Zhang",
+      "Daqiang Zhang"
+    ],
+    "submission_date": "2025-11-20T16:59:16Z",
+    "latest_updated": "2025-12-06T08:27:39Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.16543v1",
+      "2511.16543v2"
+    ],
+    "abstract": "The integration of Large Language Models (LLMs) into explainable recommendation systems often leads to a performance-efficiency trade-off in end-to-end architectures, where joint optimization of ranking and explanation can result in suboptimal compromises. To resolve this, we propose Prism, a novel decoupled framework that rigorously separates the recommendation process into a dedicated ranking stage and an explanation generation stage. This decomposition ensures that each component is optimized for its specific objective, eliminating inherent conflicts in coupled models. Inspired by knowledge distillation, Prism leverages a powerful, instruction-following teacher LLM (FLAN-T5-XXL) as an Oracle to produce high-fidelity explanatory knowledge. A compact, fine-tuned student model (BART-Base), the Prism, then specializes in synthesizing this knowledge into personalized explanations. Our extensive experiments on benchmark datasets reveal a key finding: the distillation process not only transfers knowledge but also acts as a noise filter. Our 140M-parameter Prism model significantly outperforms its 11B-parameter teacher in human evaluations of faithfulness and personalization, demonstrating an emergent ability to correct hallucinations present in the teacher's outputs. While achieving a 24x speedup and a 10x reduction in memory consumption, our analysis validates that decoupling, coupled with targeted distillation, provides an efficient and effective pathway to high-quality, and perhaps more importantly, trustworthy explainable recommendation.",
+    "status": "found"
+  },
+  "2511.16544": {
+    "arxiv_id": "2511.16544",
+    "title": "WER is Unaware: Assessing How ASR Errors Distort Clinical Understanding in Patient Facing Dialogue",
+    "authors": [
+      "Zachary Ellis",
+      "Jared Joselowitz",
+      "Yash Deo",
+      "Yajie He",
+      "Anna Kalygina",
+      "Aisling Higham",
+      "Mana Rahimzadeh",
+      "Yan Jia",
+      "Ibrahim Habli",
+      "Ernest Lim"
+    ],
+    "submission_date": "2025-11-20T16:59:20Z",
+    "latest_updated": "2026-01-19T12:48:12Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2511.16544v1",
+      "2511.16544v2",
+      "2511.16544v3"
+    ],
+    "abstract": "As Automatic Speech Recognition (ASR) is increasingly deployed in clinical dialogue, standard evaluations still rely heavily on Word Error Rate (WER). This paper challenges that standard, investigating whether WER or other common metrics correlate with the clinical impact of transcription errors. We establish a gold-standard benchmark by having expert clinicians compare ground-truth utterances to their ASR-generated counterparts, labeling the clinical impact of any discrepancies found in two distinct doctor-patient dialogue datasets. Our analysis reveals that WER and a comprehensive suite of existing metrics correlate poorly with the clinician-assigned risk labels (No, Minimal, or Significant Impact). To bridge this evaluation gap, we introduce an LLM-as-a-Judge, programmatically optimized using GEPA through DSPy to replicate expert clinical assessment. The optimized judge (Gemini-2.5-Pro) achieves human-comparable performance, obtaining 90% accuracy and a strong Cohen's kappa of 0.816. This work provides a validated, automated framework for moving ASR evaluation beyond simple textual fidelity to a necessary, scalable assessment of safety in clinical dialogue.",
+    "status": "found"
+  },
+  "2511.16545": {
+    "arxiv_id": "2511.16545",
+    "title": "Cold Quark Matter: Renormalization group improvement of the perturbative series",
+    "authors": [
+      "Loïc Fernandez",
+      "Jean-Loïc Kneur"
+    ],
+    "submission_date": "2025-11-20T16:59:20Z",
+    "latest_updated": "2025-11-20T16:59:20Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.16545v1"
+    ],
+    "abstract": "We discuss recent improvements of the cold and dense QCD pressure owing to an all-order resummation of the soft modes, or to the so-called renormalization group optimized perturbation theory (RGOPT). Both approaches show a significant improvement of the residual renormalization scale dependence with respect to the state-of-the-art results for the perturbative pressure.",
+    "status": "found"
+  },
+  "2511.16546": {
+    "arxiv_id": "2511.16546",
+    "title": "Progressive Supernet Training for Efficient Visual Autoregressive Modeling",
+    "authors": [
+      "Xiaoyue Chen",
+      "Yuling Shi",
+      "Kaiyuan Li",
+      "Huandong Wang",
+      "Yong Li",
+      "Xiaodong Gu",
+      "Xinlei Chen",
+      "Mingbao Lin"
+    ],
+    "submission_date": "2025-11-20T16:59:24Z",
+    "latest_updated": "2025-11-20T16:59:24Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.16546v1"
+    ],
+    "abstract": "Visual Auto-Regressive (VAR) models significantly reduce inference steps through the \"next-scale\" prediction paradigm. However, progressive multi-scale generation incurs substantial memory overhead due to cumulative KV caching, limiting practical deployment. We observe a scale-depth asymmetric dependency in VAR: early scales exhibit extreme sensitivity to network depth, while later scales remain robust to depth reduction. Inspired by this, we propose VARiant: by equidistant sampling, we select multiple subnets ranging from 16 to 2 layers from the original 30-layer VAR-d30 network. Early scales are processed by the full network, while later scales utilize subnet. Subnet and the full network share weights, enabling flexible depth adjustment within a single model. However, weight sharing between subnet and the entire network can lead to optimization conflicts. To address this, we propose a progressive training strategy that breaks through the Pareto frontier of generation quality for both subnets and the full network under fixed-ratio training, achieving joint optimality. Experiments on ImageNet demonstrate that, compared to the pretrained VAR-d30 (FID 1.95), VARiant-d16 and VARiant-d8 achieve nearly equivalent quality (FID 2.05/2.12) while reducing memory consumption by 40-65%. VARiant-d2 achieves 3.5 times speedup and 80% memory reduction at moderate quality cost (FID 2.97). In terms of deployment, VARiant's single-model architecture supports zero-cost runtime depth switching and provides flexible deployment options from high quality to extreme efficiency, catering to diverse application scenarios.",
+    "status": "found"
+  },
+  "2511.16547": {
+    "arxiv_id": "2511.16547",
+    "title": "On the modular platoon-based vehicle-to-vehicle electric charging problem",
+    "authors": [
+      "Zhexi Fu",
+      "Joseph Y. J. Chow"
+    ],
+    "submission_date": "2025-11-20T17:00:08Z",
+    "latest_updated": "2025-11-20T17:00:08Z",
+    "revised_dates": null,
+    "venue": "Transportation Research Record (2026)",
+    "latest_version": 1,
+    "versions": [
+      "2511.16547v1"
+    ],
+    "abstract": "We formulate a mixed integer linear program (MILP) for a platoon-based vehicle-to-vehicle charging (PV2VC) technology designed for modular vehicles (MVs) and solve it with a genetic algorithm (GA). A set of numerical experiments with five scenarios are tested and the computational performance between the commercial software applied to the MILP model and the proposed GA are compared on a modified Sioux Falls network. By comparison with the optimal benchmark scenario, the results show that the PV2VC technology can save up to 11.07% in energy consumption, 11.65% in travel time, and 11.26% in total cost. For the PV2VC operational scenario, it would be more beneficial for long-distance vehicle routes with low initial state of charge, sparse charging facilities, and where travel time is perceived to be higher than energy consumption costs.",
+    "status": "found"
+  },
+  "2511.16548": {
+    "arxiv_id": "2511.16548",
+    "title": "Utilizing Large Language Models for Zero-Shot Medical Ontology Extension from Clinical Notes",
+    "authors": [
+      "Guanchen Wu",
+      "Yuzhang Xie",
+      "Huanwei Wu",
+      "Zhe He",
+      "Hui Shao",
+      "Xiao Hu",
+      "Carl Yang"
+    ],
+    "submission_date": "2025-11-20T17:00:46Z",
+    "latest_updated": "2025-11-20T17:00:46Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.16548v1"
+    ],
+    "abstract": "Integrating novel medical concepts and relationships into existing ontologies can significantly enhance their coverage and utility for both biomedical research and clinical applications. Clinical notes, as unstructured documents rich with detailed patient observations, offer valuable context-specific insights and represent a promising yet underutilized source for ontology extension. Despite this potential, directly leveraging clinical notes for ontology extension remains largely unexplored. To address this gap, we propose CLOZE, a novel framework that uses large language models (LLMs) to automatically extract medical entities from clinical notes and integrate them into hierarchical medical ontologies. By capitalizing on the strong language understanding and extensive biomedical knowledge of pre-trained LLMs, CLOZE effectively identifies disease-related concepts and captures complex hierarchical relationships. The zero-shot framework requires no additional training or labeled data, making it a cost-efficient solution. Furthermore, CLOZE ensures patient privacy through automated removal of protected health information (PHI). Experimental results demonstrate that CLOZE provides an accurate, scalable, and privacy-preserving ontology extension framework, with strong potential to support a wide range of downstream applications in biomedical research and clinical informatics.",
+    "status": "found"
+  }
+}

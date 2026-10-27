@@ -1,0 +1,435 @@
+{
+  "2608.11747": {
+    "arxiv_id": "2608.11747",
+    "title": "Making Every Step Count: Spatio-Temporal Information Allocation for Imaging Inverse Problems",
+    "authors": [
+      "Yi Cao",
+      "Xiangyong Cao",
+      "Pei Liu",
+      "Yong-Jin Liu",
+      "Deyu Meng"
+    ],
+    "submission_date": "2026-08-12T07:39:22Z",
+    "latest_updated": "2026-08-12T07:39:22Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11747v1"
+    ],
+    "abstract": "Flow-based generative models have emerged as powerful image priors for training-free inverse problem solving, capturing coherent semantics and fine-grained structure. Despite these strengths, existing flow-based inverse solvers primarily focus on the design of individual updates, largely overlooking spatio-temporal information allocation under a fixed number of function evaluations (NFEs). Temporally, insufficient early exploration can trap the flow trajectory in an incorrect semantic basin, whereas excessive allocation of NFEs to early stages leaves little budget for late-stage refinement. Spatially, data consistency provides direct constraints only within observed regions, whereas the recovery of missing regions relies mainly on the generative prior. To address these two issues, we introduce two complementary and training-free components, i.e., Spectrum-Adaptive Scheduling (SAS) and Measurement-Prioritized Attention (MPA). For temporal allocation, SAS distributes the available NFEs over flow time according to the degradation spectrum and logSNR geometry, thus better balancing semantic exploration and detail refinement. For spatial propagation, MPA exploits data-prior conflicts to guide information toward weakly constrained regions, thereby enhancing semantic and structural fidelity. Extensive experiments on standard image inverse problems, e.g., super-resolution, motion deblurring, and inpainting, demonstrate that the proposed components can be integrated into existing flow-based inverse solvers in a plug-and-play manner without retraining or additional flow-model evaluations, and can also significantly improve the restoration quality of existing solvers.",
+    "status": "found"
+  },
+  "2608.11748": {
+    "arxiv_id": "2608.11748",
+    "title": "Dual Modality Prompted Diffusion Priors for Zero Shot Hyperspectral Pansharpening",
+    "authors": [
+      "Pengwei Xie",
+      "Fei Zhu",
+      "Jiajun Li",
+      "Xiangyuan Liu",
+      "Xiangyuan Liu",
+      "Kangqing Shen",
+      "Gemine Vivone"
+    ],
+    "submission_date": "2026-08-12T07:40:57Z",
+    "latest_updated": "2026-08-19T06:54:34Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.11748v1",
+      "2608.11748v2"
+    ],
+    "abstract": "Hyperspectral pansharpening aims to reconstruct a high resolution hyperspectral (HRHS) image from a panchromatic (PAN) image and a low resolution hyperspectral (LRHS) image while preserving both spatial details and spectral fidelity. Recent diffusion based methods exploit pretrained image priors by generating a low dimensional representation and subsequently mapping it to the hyperspectral domain. However, the observed panchromatic and hyperspectral images are typically imposed only through external reconstruction objectives, limiting their direct interaction with the diffusion prior. To address this issue, we propose dual-modality image-prompted diffusion model (DIDM) for zero shot hyperspectral pansharpening. DIDM encodes the low resolution hyperspectral and panchromatic observations into spectral and spatial prompt tokens, respectively, and injects them into intermediate features of a frozen remote sensing diffusion model through cross attention, allowing complementary spectral and spatial information to directly guide diffusion feature evolution. In addition, we introduce a panchromatic guided weighted pixel aware total variation regularizer that combines low resolution hyperspectral degradation fidelity and panchromatic response fidelity with gradient adaptive structural regularization, thereby preserving structural discontinuities while suppressing spurious variations in homogeneous regions. Extensive experiments on Pavia, Chikusei, and Houston under reduced resolution protocols show that DIDM achieves the best performance across all evaluated metrics, while full resolution evaluation on FR1 yields the highest HQNR among the compared methods. These results demonstrate that internal dual modality prompting and panchromatic guided structural regularization provide an effective balance between spatial detail enhancement and spectral preservation.",
+    "status": "found"
+  },
+  "2608.11749": {
+    "arxiv_id": "2608.11749",
+    "title": "MOON: Multi-Objective OrthoNormalized Updates for Multitask Learning",
+    "authors": [
+      "Shiji Zhou",
+      "Kunlin Lyu",
+      "Lei Zhang",
+      "Ruodong Wang",
+      "Yifan Sun"
+    ],
+    "submission_date": "2026-08-12T07:41:31Z",
+    "latest_updated": "2026-08-12T07:41:31Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11749v1"
+    ],
+    "abstract": "Multi-objective optimization (MOO) has demonstrated significant success in multi-task learning by mitigating task conflicts through gradient manipulation. However, most existing methods flatten model parameters into vectors and perform gradient manipulation under Euclidean geometry, thereby overlooking the matrix structure prevalent in modern architectures such as Transformers. In this paper, we show that gradient manipulation in Euclidean space does not generally yield the steepest descent direction under matrix geometry, potentially limiting optimization efficiency. Drawing from the theory of steepest descent for matrix-valued parameters, we propose MOON (Multi-Objective OrthoNormalized Updates), which performs gradient manipulation under spectral--nuclear norm geometry and uses the orthonormalized manipulated gradient for parameter updates. Theoretically, for smooth non-convex objectives, we establish convergence of the averaged Pareto-stationarity measure at rates of $\\mathcal{O}(T^{-1/2})$ in the deterministic setting and $\\mathcal{O}(T^{-1/4})$ under stochastic gradients. Empirical results across various benchmarks show that MOON consistently improves both optimization efficiency and final multi-task performance. Our code is available at https://github.com/KunlinLyu/MOON.",
+    "status": "found"
+  },
+  "2608.11750": {
+    "arxiv_id": "2608.11750",
+    "title": "Reinforcement Learning-Based Output Feedback LQR for Continuous-Time MIMO Systems",
+    "authors": [
+      "Qihua Chen",
+      "Mingxiang Liu",
+      "Lili Wang",
+      "Zhiyun Lin",
+      "Minyue Fu"
+    ],
+    "submission_date": "2026-08-12T07:43:42Z",
+    "latest_updated": "2026-08-12T07:43:42Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11750v1"
+    ],
+    "abstract": "This article studies model-free output feedback linear quadratic regulation (LQR) for continuous-time linear systems with an $n$-dimensional state, an $m$-dimensional input, and a $p$-dimensional output, using filtered input--output data. Since the system state is unavailable, existing methods rely on dynamic filters to parameterize the hidden state using measurable input--output signals. However, the intrinsic dimension of the resulting filter-based parametrization can be smaller than the dimension of the complete filtered vector, and this deterministic redundancy can make the Bellman regressions rank deficient. We characterize this intrinsic dimension and show that the conventional filtered vector contains only $2n$ independent components for single-input multi-output (SIMO) systems and $n(m+1)$ independent components for general multi-input multi-output (MIMO) systems. Based on this characterization, a reduced filtered vector is extracted directly from data and used to develop reduced model-free output feedback policy iteration and value iteration equations, eliminating the redundant directions and decreasing the number of unknown parameters while retaining a fully input--output data-based implementation. A numerical example illustrates the rank reduction and the effectiveness of the learned controller.",
+    "status": "found"
+  },
+  "2608.11751": {
+    "arxiv_id": "2608.11751",
+    "title": "Light-induced effective magnetic fields in Landau quantized graphene",
+    "authors": [
+      "Hiroki Ueda",
+      "Alexej Pashkin",
+      "Ece Uykur",
+      "Kryštof Kašša",
+      "Filip Chudoba",
+      "Jan Kunc",
+      "Manfred Helm",
+      "Milan Orlita",
+      "Stephan Winnerl"
+    ],
+    "submission_date": "2026-08-12T07:44:17Z",
+    "latest_updated": "2026-08-12T07:44:17Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11751v1"
+    ],
+    "abstract": "Ultrafast magnetism triggered by circularly polarized radiation underpins ultrafast spin control, relevant to future technologies, e.g., opto-spintronics and magnonics. The dynamics are often complicated and intertwined among correlated subsystems, such as electrons, spins, phonons, plasmons, topology, and lattice, due to many-body quantum coupling at ultrafast timescales. Here, we demonstrate light-induced effective magnetic fields generated by selective excitation between non-equidistant Landau quantized states in graphene, a prototypical Dirac material, using circularly polarized pulses. By magnetically tuning the Landau-level transition resonance away from other low-energy excitations, we obtain a clean electrostatically controllable platform and identify the microscopic origin of the light-induced magnetic signals, independent of sublattice coupling. Because different Landau levels carry distinct optical Hall conductivities, direct modification of their occupancies via optical excitations creates transient Faraday rotation signals with dispersive magnetic-field dependence, mirroring the static magneto-optical lineshape. The induced effective magnetic field normalized by the pump electric field exceeds typical reported values for the inverse Faraday effect of electronic origin. Our results establish a clear microscopic picture of the inverse Faraday effect of electronic origin, which can trigger hierarchical dynamics among correlated sublattices once Landau-level transitions are magnetically tuned to coincide with other low-energy excitations in Dirac systems and related materials.",
+    "status": "found"
+  },
+  "2608.11752": {
+    "arxiv_id": "2608.11752",
+    "title": "UniSwap: Streaming Audio-Visual Identity Swapping for Talking Videos",
+    "authors": [
+      "Yuxuan Zhang",
+      "Haozhong Xiong",
+      "Jiayi Song",
+      "Jinpeng Yu",
+      "Yang Shi",
+      "Jiaming Liu",
+      "Ruihua Huang",
+      "Liwei Wang"
+    ],
+    "submission_date": "2026-08-12T07:45:39Z",
+    "latest_updated": "2026-08-13T06:23:47Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.11752v1",
+      "2608.11752v2"
+    ],
+    "abstract": "Talking-video character replacement requires coordinated transfer of appearance and voice while preserving the source motion, scene, linguistic content, and audio-video timing. Existing methods use separately optimized models for the two modalities, making audio-visual consistency difficult to enforce. We present UniSwap, the first framework for streaming joint audio-visual identity replacement in talking videos. Given a source video, a reference image, and a reference voice clip, UniSwap transfers the reference appearance and vocal timbre within a single audio-visual diffusion transformer while preserving the source content and dynamics. To address the scarcity of aligned cross-identity training pairs, we introduce a swap-and-reconstruct pipeline that removes visual and vocal identity from real clips and uses the original clips as reconstruction targets. Starting from a bidirectional backbone, we progressively adapt the model through In-context Pretraining for joint replacement, Conditional Streaming Adaptation for block-causal KV-cached generation, and Efficient Self-forcing DMD for mitigating exposure bias and reducing sampling from 30 to 3 denoising steps per block. Efficient Multi-LoRA Switching enables the three DMD roles to share a single frozen backbone. Feature-RoPE Decomposition keeps cached positions within the training range, supporting stable long-form inference. Experiments demonstrate strong audio-visual synchronization, competitive identity preservation, efficient streaming, and stable long-form generation.",
+    "status": "found"
+  },
+  "2608.11753": {
+    "arxiv_id": "2608.11753",
+    "title": "LabelFusion-TS: Fusing Large Language Models, Transformer Encoders, and Financial Time Series for Monetary-Policy Stance Classification",
+    "authors": [
+      "Michael Schlee",
+      "Fabian Lukassen",
+      "Christoph Weisser"
+    ],
+    "submission_date": "2026-08-12T07:46:29Z",
+    "latest_updated": "2026-08-12T07:46:29Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11753v1"
+    ],
+    "abstract": "Financial text is produced and interpreted within a market environment, yet financial text classifiers almost always receive text alone. We study whether financial time series are useful as an additional input on the task of classifying sentences from Federal Reserve communication as hawkish, dovish, or neutral. Our system, \\lfts{}, extends the \\lf{} architecture with this modality: a small voting network combines three independently trained components, a fine-tuned RoBERTa encoder, a prompted large language model (LLM), and a fused ensemble of time-series transformers over the market series of the months preceding publication. Because only about a thousand annotated sentences are available for training, the RoBERTa encoder is first pre-trained on sentences annotated automatically by the LLM and only then fine-tuned on the human labels. Trained on Federal Open Market Committee (FOMC) communication up to 2015 and evaluated on 2015--2022, the fused system achieves 70.2\\% weighted F1 -- against 64.1\\% for the zero-shot LLM -- and overtakes it with as few as 240 human-labelled sentences. We take this as initial evidence for market time series as an input modality in financial text classification.",
+    "status": "found"
+  },
+  "2608.11754": {
+    "arxiv_id": "2608.11754",
+    "title": "Characterizing Nonlinearities in IM-DD Links via the Best Linear Approximation: Distortion Analysis and Modulation Optimization",
+    "authors": [
+      "Sebastian Fraga Fernández",
+      "Leonardo Minelli",
+      "Fernando de Bernardinis",
+      "Felipe Villenas",
+      "Yunus Can Gültekin",
+      "Alex Alvarado"
+    ],
+    "submission_date": "2026-08-12T07:48:23Z",
+    "latest_updated": "2026-08-12T07:48:23Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11754v1"
+    ],
+    "abstract": "We use the best linear approximation (BLA) to characterize nonlinearities in IM-DD links. The orthogonal nonlinear distortion is shown to be non-Gaussian. The BLA is used to approximate the optimum modulation depth for different equalizer structures.",
+    "status": "found"
+  },
+  "2608.11755": {
+    "arxiv_id": "2608.11755",
+    "title": "MuseCritic: Learning Multi-Aspect Song Rewards through Natural-Language Aesthetic Critiques",
+    "authors": [
+      "Jiabao Zhuang",
+      "Changhao Jiang",
+      "Hanchen Wang",
+      "Jiahao Chen",
+      "Zhixiong Yang",
+      "Zhenghao Xiang",
+      "Yifei Cao",
+      "Jiajun Sun",
+      "Hui Li",
+      "Ming Zhang",
+      "Tao Ji",
+      "Tao Gui",
+      "Qi Zhang",
+      "Xuanjing Huang"
+    ],
+    "submission_date": "2026-08-12T07:49:17Z",
+    "latest_updated": "2026-10-01T12:21:36Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.11755v1",
+      "2608.11755v2"
+    ],
+    "abstract": "Long-form song generation models continue to improve in duration, structural coherence, and acoustic complexity, increasing the need for reliable aesthetic rewards aligned with human preferences. However, reward models for complete songs remain limited, and existing evaluators typically predict scores in a single forward pass without readable explanations. To this end, we introduce MuseCritic, a semi-scalar reward model that generates a natural-language critique covering five aesthetic dimensions and uses it as an intermediate representation to predict continuous reward scores. MuseCritic follows a two-stage training pipeline: a teacher model first provides high-quality critiques for supervised fine-tuning, then the fine-tuned model generates its own critiques for reward learning, mitigating training-inference distribution shift. On an in-domain test set of 200 SongEval songs, MuseCritic reduces macro-averaged mean squared error from 0.2875 to 0.2316 and improves macro-averaged LCC, SRCC, and Kendall's tau to 0.9068, 0.8838, and 0.7178, respectively. On the out-of-domain Music Arena benchmark with 733 preference pairs, it achieves 71.35% accuracy and remains competitive with strong music-specific reward models. Using MuseCritic with GRPO also improves Muse-0.6B on all nine aesthetic metrics from SongEval and Audiobox Aesthetics. These results show that critique-conditioned reward modeling reduces scoring error and provides an effective optimization signal for song generation. The project repository is available at https://github.com/WuqnEl/MuseCritic.",
+    "status": "found"
+  },
+  "2608.11756": {
+    "arxiv_id": "2608.11756",
+    "title": "Origin, strength, and speed of the nonlinear optical response of transparent conducting oxides to single-cycle optical pulses",
+    "authors": [
+      "Ieng-Wai Un",
+      "Subhajit Sarkar",
+      "Yonatan Sivan"
+    ],
+    "submission_date": "2026-08-12T07:52:04Z",
+    "latest_updated": "2026-08-24T03:30:08Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.11756v1",
+      "2608.11756v2"
+    ],
+    "abstract": "We present a first-principles study of the nonlinear optical response of transparent conducting oxides at the nanoscale due to excitation by intense, extremely short pulses based on a density matrix framework. We identify a strong ($O(1)$) thermal nonlinearity, which is complemented with stimulated emission and excited-state absorption; it yields a cumulative permittivity change decorated by quantum coherent oscillations. Further, rigorous calculations under far-from-equilibrium conditions show that electron-electron thermalization occurs within a few femtoseconds, supporting interpretations of high-harmonic generation measurements and in agreement with a generalization of Fermi liquid theory.",
+    "status": "found"
+  },
+  "2608.11757": {
+    "arxiv_id": "2608.11757",
+    "title": "Complete characterization of the differential spectrum of a Niho type power function",
+    "authors": [
+      "Nian Li",
+      "Xi Xie",
+      "Rui Xu",
+      "Yi Yu",
+      "Xiangyong Zeng"
+    ],
+    "submission_date": "2026-08-12T07:52:49Z",
+    "latest_updated": "2026-08-12T07:52:49Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11757v1"
+    ],
+    "abstract": "Power functions with Niho exponents have attracted considerable attention due to their important applications in sequence design, coding theory, and cryptography. This paper investigates the differential properties of Niho type power functions of the form $F(x)=x^{s(2^m-1)+1}$ over $\\mathbb{F}_{2^{2m}}$ with $2\\leq s\\leq 2^m$. We first establish a general characterization of the differential spectrum of $F(x)$ having at most three nonzero values via its Walsh spectrum. Focusing subsequently on the case $s=(2^k+1)^{-1} \\pmod{2^m+1}$ where $\\gcd(k,m)=e$, we employ a refined analysis of the number of solutions to certain equations over finite fields. Specifically, it is proved that $F(x)$ is locally differentially $2^e$-uniform when $\\gcd(2^k-1,2^m+1)=2^e+1$ and locally differentially $(2^{2e}-2^e)$-uniform when $\\gcd(2^k-1,2^m+1)=1$, and their differential spectra are completely determined. These results completely characterize the differential properties of this family and yield new infinite families of locally differentially $4$-uniform power functions.",
+    "status": "found"
+  },
+  "2608.11758": {
+    "arxiv_id": "2608.11758",
+    "title": "AWARe: Mitigating Catastrophic Forgetting via Activation-Weighted Adaptive REtention",
+    "authors": [
+      "Juncheng Liao",
+      "Jinfan Lv",
+      "Guoming Wang",
+      "Jupeng Zheng",
+      "Ling Xiao",
+      "Siliang Tang"
+    ],
+    "submission_date": "2026-08-12T07:55:15Z",
+    "latest_updated": "2026-08-12T07:55:15Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11758v1"
+    ],
+    "abstract": "Multimodal Large Language Models (MLLMs) exhibit strong generalization and reasoning abilities due to large-scale multimodal pre-training. However, fine-tuning these models on downstream tasks often leads to catastrophic forgetting, where newly learned task-specific knowledge degrades previously acquired capabilities. This issue arises because gradient updates for new tasks overwrite parameters critical to prior knowledge, limiting the practical deployment of MLLMs. To address this challenge, we propose Activation-Weighted Adaptive REtention (AWARe), a fine-tuning method that mitigates catastrophic forgetting by dynamically controlling parameter updates based on activation patterns. AWARe assigns activation-based importance scores to parameters, selectively freezing those essential for preserving prior capabilities while allowing less important parameters to adapt to new tasks. Importantly, AWARe operates without modifying model architectures, ensuring compatibility with existing inference engines. Extensive experiments demonstrate that AWARe effectively preserves upstream capabilities while achieving superior downstream performance compared to existing methods. Code is available at https://github.com/kaln27/AWARe.",
+    "status": "found"
+  },
+  "2608.11759": {
+    "arxiv_id": "2608.11759",
+    "title": "Automated binary classification of hazelnut X-ray images: A deep-learning benchmark for quality assessment",
+    "authors": [
+      "Giancarlo Sportelli",
+      "Nicola Belcari",
+      "Roberta Pace",
+      "Umberto Bernardo",
+      "Sharmin Sultana",
+      "Alessandra Toncelli",
+      "Matteo Giaccone"
+    ],
+    "submission_date": "2026-08-12T07:55:22Z",
+    "latest_updated": "2026-08-12T07:55:22Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11759v1"
+    ],
+    "abstract": "Non-destructive X-ray imaging can reveal internal hazelnut defects that are difficult to detect by external inspection alone; however, automated interpretation remains challenging because of subtle radiographic differences among classes, marked class imbalance, and limited annotated data. Here, we present a benchmark for binary hazelnut quality classification (healthy versus defective) based on 799 segmented single-kernel X-ray images (224 x 224 pixels, grayscale), grouped into 101 acquisition units. Seven single-model configurations and ten probability-aggregation ensembles were evaluated using a group-wise split-rotation protocol across five data splits generated using different random seeds. Decision thresholds were selected on the validation set, and performance was assessed deterministically on validation and test sets. Under the expert-reassessed annotation condition, the average-probability ensemble of the binary cross-entropy-trained convolutional neural network and frozen Swin Transformer achieved the highest mean balanced accuracy (86.3% +/- 1.8%, five seeds), with several other ensembles providing comparable performance. Across methods, substantial split-to-split variability was observed, indicating that multi-split evaluation is essential for reliable model comparison at this dataset scale. Expert reassessment of ambiguous samples improved the performance of all 17 evaluated methods by 2.8-8.1 percentage points, while having only a limited effect on cross-split variance. The results highlight both the potential of deep learning for automated X-ray-based hazelnut quality assessment and the importance of rigorous evaluation and label curation in small, imbalanced agricultural imaging datasets.",
+    "status": "found"
+  },
+  "2608.11760": {
+    "arxiv_id": "2608.11760",
+    "title": "Tight Nonasymptotic Local Convergence of Sinkhorn-Knopp",
+    "authors": [
+      "Wenzhi Gao",
+      "Zhaonan Qu",
+      "Yinyu Ye",
+      "Madeleine Udell"
+    ],
+    "submission_date": "2026-08-12T07:56:08Z",
+    "latest_updated": "2026-09-28T20:19:50Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2608.11760v1",
+      "2608.11760v2",
+      "2608.11760v3"
+    ],
+    "abstract": "We revisit the Sinkhorn-Knopp (SK) algorithm for the matrix scaling problem. Despite extensive literature on the global convergence of SK and its variants, its local linear convergence behavior remains less understood. We address this gap by providing the first nonasymptotic local analysis of SK that matches the rate obtained from existing asymptotic Jacobian-based arguments. We show that under certain connectivity conditions, SK is a polynomial-time algorithm for doubly stochastic matrix scaling. With the developed tools, we showcase the local suboptimality of SK and provide accelerated variants. Finally, for dense matrices, we improve the complexity of existing first-order matrix scaling algorithms from $O(\\tfrac{n^{7/3}}{\\varepsilon^{2/3}})$ to $O(\\tfrac{n^{9/4}}{\\sqrt{\\varepsilon}})$.",
+    "status": "found"
+  },
+  "2608.11761": {
+    "arxiv_id": "2608.11761",
+    "title": "Cherenkov light as a mechanism for light flashes seen by astronauts in space",
+    "authors": [
+      "Dominika Švecová",
+      "Pavol Bobík",
+      "Blahoslav Pastirčák"
+    ],
+    "submission_date": "2026-08-12T07:57:09Z",
+    "latest_updated": "2026-08-12T07:57:09Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11761v1"
+    ],
+    "abstract": "Astronauts first reported light flashes during the Apollo 11 mission. These events have since been associated with cosmic rays, although their underlying mechanism remains uncertain. This study investigates possible formation processes using Geant4 simulations of cosmic ray interactions in a simplified model of the human eye. We apply published models of human visual perception to the simulated particle induced photons and compare the resulting light flash rates with experimental observations. Our results indicate that, in interplanetary space and in low Earth orbit outside the South Atlantic Anomaly, Cherenkov radiation generated in the eye produces retinal responses consistent with the observed frequency of astronaut light flashes. The dominant contributing primaries are found to be high Z nuclei, primarily iron, with additional contributions from oxygen and carbon nuclei. In contrast, conditions in the South Atlantic Anomaly suggest that additional mechanisms may be required to explain observed light flashes. We also find that the absence of light flashes at Earth's surface is consistent with insufficient retinal stimulation from muon induced Cherenkov radiation under typical geometrical and flux conditions.",
+    "status": "found"
+  },
+  "2608.11762": {
+    "arxiv_id": "2608.11762",
+    "title": "A comparison of CNN architectures for Alzheimer's disease detection in single-view MRI scans",
+    "authors": [
+      "Hiram Zuniga",
+      "Ulises Orozco-Rosas",
+      "Kenia Picos"
+    ],
+    "submission_date": "2026-08-12T08:01:15Z",
+    "latest_updated": "2026-08-12T08:01:15Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11762v1"
+    ],
+    "abstract": "Alzheimer's disease is a leading cause of death with no cure. Therefore, early detection is critical to slow progression and preserve quality of life. Diagnosis relies on medical history, cognitive tests, physical exams, and MRI brain scans, making deep learning suitable for Alzheimer's classification. This work proposes a benchmark that evaluates ten different convolutional neural network (CNN) architectures (including ResNet, DenseNet, MobileNet, EfficientNet, and VGG family models) under the same held-out test split protocol. A two-stage transfer learning and full fine-tuning pipeline is introduced to perform training using a class-balanced subset (3,900 images) derived from the OASIS medical imaging dataset, comprising 86,437 single-view MRI brain scans labeled into four classifications of Alzheimer's disease: Non-Demented, Very Mild Dementia, Mild Dementia, and Moderate Dementia. The best results were achieved by VGG16, with a 0.9637 validation accuracy and a 0.9533 test accuracy score. A key finding documented in this work is the difficulty of classifying the transition from Non-Demented to Very Mild Demented stages, observed consistently across all ten architectures.",
+    "status": "found"
+  },
+  "2608.11763": {
+    "arxiv_id": "2608.11763",
+    "title": "Edit distance exponents for irrational rotations",
+    "authors": [
+      "Andrew Best",
+      "Yuval Peres"
+    ],
+    "submission_date": "2026-08-12T08:02:50Z",
+    "latest_updated": "2026-10-15T15:30:36Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.11763v1",
+      "2608.11763v2"
+    ],
+    "abstract": "We study quantitative edit-distance asymptotics for symbolic codings of irrational rotations $x \\mapsto x+α$ on $\\mathbb{T}$ in terms of the irrationality exponent $μ(α)$. For the binary coding determined by an interval $[0,β)$, let $d_N(x,y)$ be the edit distance between the codings of the orbits of the points $x$ and $y$ up to time $N-1$. For every $α\\notin \\mathbb{Q}$, almost every $β\\in (0,1)$, and almost every $x,y \\in \\mathbb{T}$, we determine the edit-distance exponents $\\displaystyle (*) \\; \\; \\limsup_{N\\to\\infty}\\frac{\\log d_N(x,y)}{\\log N} = \\frac{ρ(α)}{ρ(α)+1} \\; \\;$ and $\\; \\; \\displaystyle\\liminf_{N\\to\\infty}\\frac{\\log d_N(x,y)}{\\log N} = \\min\\Bigl\\{\\frac{1}{2},\\frac{1}{ρ(α)}\\Bigr\\}$, where $ ρ(α):=μ(α) - 1$. We find a surprising transition at the golden mean $\\varphi= \\frac{1+\\sqrt{5}}{2}$: If $ ρ(α) \\le \\varphi$, then both asymptotics in $(*)$ hold for all $β$. However, for every finite $ρ>\\varphi$, there is an uncountable set of $α$ with $ρ(α)=ρ$ for which both edit-distance exponents are strictly smaller than the corresponding values in $(*)$ for uncountably many $β$. We also derive consequences for aperiodic circle homeomorphisms and Sturmian sequences. For rotations of $\\mathbb{T}^d$ coded by boxes, we prove that for almost every rotation vector, the common edit-distance exponent is $d/(d+1)$.",
+    "status": "found"
+  },
+  "2608.11764": {
+    "arxiv_id": "2608.11764",
+    "title": "Schur-Riesz Variational Enrichment: A Generalized Refinement Framework for Finite Elements",
+    "authors": [
+      "Matthew Francis Dixon"
+    ],
+    "submission_date": "2026-08-12T08:04:17Z",
+    "latest_updated": "2026-08-21T06:37:33Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2608.11764v1",
+      "2608.11764v2",
+      "2608.11764v3"
+    ],
+    "abstract": "Width theory identifies economical spaces for compact PDE solution families, but does not provide a stable adaptive selection rule. We introduce Schur-Riesz refinement, which compares ordinary h/p refinement with operator-informed functions on a common variational scale. Projection removes content already represented by the incumbent, Riesz bounds test coefficient stability, and exact Schur gain ranks the surviving directions. New non-regression, bulk-contraction, and mixed near-oracle results provide finite-run error, dimension, and work certificates for coercive Galerkin and noncoercive minimum-residual formulations. We applied Schur-Riesz refinement across coercive and noncoercive PDEs. At matched dimension, automatic modes reduce held-out error by $50.2\\%$ for 2D heterogeneous Helmholtz and $30.9\\%$ for 2D Darcy. At matched Darcy error, the selected space uses $38.2\\%$ fewer coordinates, reducing deployment memory by $38.9\\%$ and online time by $30.1\\%$. The additional offline construction is reusable and can be amortized across multiple right-hand sides for a fixed operator. On locked 3D heterogeneous Helmholtz tests, the method reduces mean error by $25.1$-$47.3\\%$ against matched spectral-polynomial spaces and meets target errors with 24-96 coordinates, versus 1,331-6,859 for native MFEM hp-refinement. In an adaptive audit, 48 coordinates attain mean error $.1092$, compared with $.0967$ using 878 polynomial coordinates, while making online solves $6.8\\times$ faster. Thus, the experiments demonstrate that Schur-Riesz refinement can construct smaller stable spaces with lower deployment memory and repeated-solve cost, while preserving a certified incumbent when richer functions do not help.",
+    "status": "found"
+  },
+  "2608.11765": {
+    "arxiv_id": "2608.11765",
+    "title": "ProBAG: Prototype-Guided Boundary-Aware Graph Diffusion for Weakly Supervised Histopathology Segmentation",
+    "authors": [
+      "Duy-Dong Nguyen",
+      "Le-Van Thai",
+      "Hoai Nhan Pham",
+      "Ngoc Lam Quang Bui",
+      "Tam Tran",
+      "Zhi Huang"
+    ],
+    "submission_date": "2026-08-12T08:05:07Z",
+    "latest_updated": "2026-08-12T08:05:07Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11765v1"
+    ],
+    "abstract": "Weakly supervised semantic segmentation enables histopathology tissue segmentation from image-level annotations, avoiding costly pixel-level labeling by expert pathologists. However, CAM-based methods often localize only highly discriminative regions and remain unreliable near tissue interfaces. We propose ProBAG, a stage-1 pseudo-mask generator that combines dataset-specific visual prototypes with pathology-aligned CONCH text prototypes over multi-scale frozen UNI features. ProBAG introduces two complementary mechanisms: class-wise power recalibration that reshapes inter-class competition while preserving the total foreground activation mass at each pixel, and one-step graph diffusion in which feature affinities are penalized by a late-transformer attention-context discrepancy used as a soft structural boundary cue. The resulting stage-1 pseudo-masks require neither CRF nor an external segmentation model; for complete two-stage comparison, they additionally supervise a downstream Phikon-FPN segmenter. Experiments on BCSS-WSSS and LUAD-HistoSeg show consistent gains over recent WSSS approaches, while ablations indicate that pathology-aligned text semantics provide the largest improvement and graph refinement provides a smaller complementary gain. The code is available at: https://github.com/wterrr/WSSS",
+    "status": "found"
+  },
+  "2608.11766": {
+    "arxiv_id": "2608.11766",
+    "title": "Instruction Alignment for Binary Code Representation Learning",
+    "authors": [
+      "Huaijin Wang",
+      "Shuai Wang"
+    ],
+    "submission_date": "2026-08-12T08:07:26Z",
+    "latest_updated": "2026-08-12T08:07:26Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11766v1"
+    ],
+    "abstract": "Binary code representation learning is a fundamental problem in software security and reverse engineering. Existing methods mainly learn function-level embeddings that capture coarse-grained semantic relationships between binary functions, but they largely ignore fine-grained instruction-level correspondences. This limitation misses valuable supervision signals available from compiler debug information, which can support the learning of more accurate and interpretable binary code representations. We propose to leverage instruction alignment knowledge to further improve binary code representation learning. Our preliminary study reveals that models finetuned for function-level binary code similarity exhibit substantially better instruction alignment than their pre-trained model, suggesting a strong correlation between instruction alignment and function-level embedding quality. Motivated by this observation, we design a training approach that explicitly incorporates instruction alignment as an auxiliary training objective. Our experiments show that instruction alignment training improves retrieval accuracy and provides more discriminative signal for the model's similarity judgments.",
+    "status": "found"
+  }
+}

@@ -1,0 +1,402 @@
+{
+  "2608.10327": {
+    "arxiv_id": "2608.10327",
+    "title": "Toward a Theory of Value in AI Alignment",
+    "authors": [
+      "Andrew Smart",
+      "Shazeda Ahmed",
+      "Jackie Kay",
+      "Jimmy Tobin",
+      "Kris Shrishak",
+      "Abeba Birhane"
+    ],
+    "submission_date": "2026-08-10T23:57:02Z",
+    "latest_updated": "2026-08-10T23:57:02Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10327v1"
+    ],
+    "abstract": "Can AI systems be aligned to human values? The popularization of large language models (LLMs) and multi-modal foundation models has seen a rise in harms spanning from toxic speech and hallucinations to AI agents executing unauthorized actions. Within the field of AI safety, these harmful instances are often framed as the alignment problem, or of models being misaligned with human values. Researchers have responded by pursuing applied and theoretical AI value alignment efforts, often without specifying what they mean by human values. How does the field of AI value alignment conceive of human values? How are these conceptions of values technically operationalized and evaluated? What does the emergent theory of value from this field signify for the future of AI? We annotated 94 value alignment research papers to discern their implicit theory of values in AI. The majority do not define values, relying heavily on preferences as a stand in that runs the risk of reducing complex culturally situated concepts down to binary choices. As researchers dispense with using human annotators for model training and evaluation, turning instead to synthetic data and autorater approaches to aligning and evaluating models, we identify the potential to close off alternative methods for contesting and enacting values in foundation models. In making AI value alignments philosophical commitments explicit, we seek to bring great specificity and under explored perspectives in the debate on whether and how AI can address human values.",
+    "status": "found"
+  },
+  "2608.10328": {
+    "arxiv_id": "2608.10328",
+    "title": "Statistical analysis of block structured latent variable models",
+    "authors": [
+      "Chengyu Cui",
+      "Gongjun Xu"
+    ],
+    "submission_date": "2026-08-10T23:57:19Z",
+    "latest_updated": "2026-08-10T23:57:19Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10328v1"
+    ],
+    "abstract": "This paper studies block structured latent variable models, in which observed variables are grouped into distinct blocks based on their relationships with the underlying latent variables. These block structures are prevalent in various fields such as psychology, education, economics, and genetics. Despite their widespread applications, the fundamental statistical properties of these models remain largely unexplored. In this work, we present a comprehensive statistical analysis of the block structured latent variable models. In particular, we first derive conditions for model identifiability across various block designs. Furthermore, we investigate the maximum likelihood estimation under these identifiability constraints. To accommodate these intricate constraints associated with various block configurations, we introduce a Lagrangian-type formulation for the constrained nonconvex optimization problem and show that its optimum coincides with that of the original problem. This formulation serves as a critical tool for understanding the behavior of the constrained estimator under various block structures. Building on that, we establish sharp non-asymptotic error bounds and asymptotic distributions of the constrained maximum likelihood estimator. We also propose a computational framework to obtain the estimator and establish theoretical properties for the algorithm output. Our theoretical findings are validated through simulation studies and empirical data analyses.",
+    "status": "found"
+  },
+  "2608.10329": {
+    "arxiv_id": "2608.10329",
+    "title": "Who Gets Heeded? An Obligation-Level Audit of Responsiveness in EPA Rulemaking",
+    "authors": [
+      "Jianing Fan",
+      "Yue Yao"
+    ],
+    "submission_date": "2026-08-11T00:05:58Z",
+    "latest_updated": "2026-08-11T00:05:58Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10329v1"
+    ],
+    "abstract": "Notice-and-comment rulemaking gives any affected party the same formal right to influence federal regulation, but formal access is not substantive capacity to shape rule text. Existing strategies operate at the rule or aggregate-corpus level, too coarse to capture the discrete regulatory obligations where commenters seek change. We introduce obligation-level responsiveness auditing, an auditable, AI-assisted framework for measuring whether public-comment engagement co-occurs with changes to specific regulatory duties. The framework extracts proposed and final-rule obligations, matches comments to the obligations they address, and classifies proposed-final outcomes; each load-bearing component is evaluated against blind human judgment. We apply the framework to 70,075 comments across 36 EPA anchor rulemakings, drawn from a corpus of 786,197 comments across 6,145 dockets from 2010-2022. Three descriptive findings emerge. First, engagement is associated with revision at a modest within-docket magnitude. Second, support-versus-opposition direction does not clearly differentiate outcomes, an informative null inconsistent with simple preference-aggregation. Third, under a permissive reconstruction of commenter type, organizational-majority engagement concentrates in editorial-refinement rather than substantive-modification outcomes at the cross-docket level. A blind human audit of the load-bearing outcome contrast preserves this third finding under corrected labels and reveals that text-similarity methods are insufficient for distinguishing editorial from substantive regulatory change, a measurement-validity lesson we treat as a supporting methodological contribution. Together, these findings locate the equity asymmetry upstream of agency response: in differential capacity across commenter populations to identify, interpret, and contest specific legal obligations.",
+    "status": "found"
+  },
+  "2608.10330": {
+    "arxiv_id": "2608.10330",
+    "title": "Hierarchical Compositionality for An Assistive AI Agent",
+    "authors": [
+      "Tianyi Fu",
+      "Mohan Sridharan"
+    ],
+    "submission_date": "2026-08-11T00:17:56Z",
+    "latest_updated": "2026-09-13T10:38:53Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2608.10330v1",
+      "2608.10330v2",
+      "2608.10330v3"
+    ],
+    "abstract": "AI agents are increasingly being developed to assist humans in various applications, and Large Language Models and other deep network architectures are considered to be state of the art for such agents. These methods are impressive stochastic predictors, but they are resource-hungry, opaque, and known to make arbitrary decisions in novel situations due to the narrow set of underlying representation and processing choices. Our work seeks to explore the design of architectures for such AI agents based on core principles that can be traced back to the early pioneers of AI but are not fully utilized in modern AI methods. We do so in this paper in the context of the core problem of AI agents addressing ambiguity in the objects being referred to by the human participants. Humans address such ambiguity by heuristically leveraging compositional knowledge of domain context and the preferences of the other human participants. Drawing inspiration from this observation, we describe an architecture that embeds the principle of hierarchical compositionality and uses simple heuristics to achieve the desired disambiguation. Specifically, domain objects are represented in terms of primitive attributes drawn from human-validated semantic feature norms, and a hierarchical combination of attributes and concepts automatically identified from a limited observed history of interactions of an assistive agent with specific users. The assistive agent then achieves the desired disambiguation by reasoning with knowledge of this compositional hierarchy; axioms governing domain dynamics; and models of semantic compatibility, session salience, and user-specific thematic preference, requesting human clarification when necessary. Experiments show that our approach consistently outperforms state of the art data-driven baselines, supporting adaptation to specific user profiles.",
+    "status": "found"
+  },
+  "2608.10331": {
+    "arxiv_id": "2608.10331",
+    "title": "History Matters: Damage-Mediated Amplification of Brain Deformation and Injury Risk under Repeated Head Impacts",
+    "authors": [
+      "Carson Cooper",
+      "Anu Tripathi",
+      "Genevieve Palardy",
+      "Kshitiz Upadhyay"
+    ],
+    "submission_date": "2026-08-11T00:24:27Z",
+    "latest_updated": "2026-08-11T00:24:27Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10331v1"
+    ],
+    "abstract": "Computational head models are typically applied to isolated impacts, leaving repeated head loading largely unexplored. An Ogden-Roxburgh Mullins damage formulation was implemented in a high-fidelity finite element head model to represent loading-history-dependent softening during cyclic brain-tissue deformation. Repeated-loading histories derived from mixed martial arts head-impact data were applied and compared with damage-free hyperelastic (HE) and linear visco-hyperelastic (LVHE) model variants. Under five identical single-axis cycles, Mullins-type softening progressively increased strain and strain rate metrics relative to the HE model. Mullins-based injury probabilities progressively exceeded strain-based HE predictions and diverged from unchanged kinematics-based predictions, indicating that neglecting prior softening may underestimate injury risk. In a randomized twenty-cycle multiaxial sequence, cycles of similar kinematic intensity produced different deformation and injury-risk estimates depending on prior softening. HE and LVHE models predicted higher injury probabilities initially, whereas the Mullins-based model produced the largest later-cycle estimates and highest probability of at least one injury over the sequence. Regional amplification depended on loading direction and prior softening, with no direction-independent trend among brain substructures. Gyral elements exhibited higher cumulative maximum principal strain than sulcal elements, which showed greater amplification relative to initial responses. These findings demonstrate that short-term damage-mediated softening can substantially amplify tissue deformation and injury-risk estimates beyond damage-free head models under the same loading histories. Further experimental characterization of cyclic brain-tissue softening is needed to improve models of repeated head loading and traumatic brain injury.",
+    "status": "found"
+  },
+  "2608.10332": {
+    "arxiv_id": "2608.10332",
+    "title": "Topological Feasibility Guarantees for Differentiable Predictive Control",
+    "authors": [
+      "Guangyu Wu",
+      "Ján Drgoňa"
+    ],
+    "submission_date": "2026-08-11T00:27:50Z",
+    "latest_updated": "2026-08-11T00:27:50Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10332v1"
+    ],
+    "abstract": "Differentiable predictive control (DPC), a self-supervised learning approach for approximating explicit model predictive control (MPC) policies, offers significant computational advantages over online optimization-based MPC. However, feasibility guarantees, a core requirement for safe control, are currently provided either probabilistically or via online safety filters. The lack of rigorous feasibility guarantees for offline policy optimization remains an open problem. This paper establishes deterministic feasibility guarantees for DPC using a novel topological analysis of the induced reachable safe set, without requiring online safety filters. By exploiting the inherent model-based nature of DPC, in which differentiable system dynamics are embedded directly into the computational graph, we analyze the properties of the learned control policies and the corresponding system states from topological and geometric perspectives. Inspired by our theoretical analysis, we propose a novel self-supervised offline policy learning strategy that utilizes a proxy loss with Control Barrier Functions (CBFs). Crucially, these properties not only significantly improve policy training but also enable the derivation of strict, deterministic feasibility guarantees from a finite number of training samples. Extensive closed-loop simulations validate our theoretical findings, demonstrating that the empirical constraint violations monotonically decrease to zero as the training sample size increases. Ultimately, this work illustrates that DPC policy optimization yields formal safety certificates that are structurally unattainable with conventional black-box methods, e.g., reinforcement learning (RL) or supervised learning-based approximate MPC, thereby providing a new perspective on feasibility guarantees in learning-based control.",
+    "status": "found"
+  },
+  "2608.10333": {
+    "arxiv_id": "2608.10333",
+    "title": "MERA: Model Evolution and Routing with Skill Adaptation for Agentic Systems at Scale",
+    "authors": [
+      "Yuhang Yao",
+      "Zeyu Wang",
+      "Wanyi Chen",
+      "Tongyun Yang",
+      "Yuhang Han",
+      "Jie Xiao",
+      "Chengke Bao",
+      "Tianyi Zhao",
+      "Lynn Ai",
+      "Eric Yang",
+      "Tianyu Shi"
+    ],
+    "submission_date": "2026-08-11T00:28:02Z",
+    "latest_updated": "2026-08-11T00:28:02Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10333v1"
+    ],
+    "abstract": "LLM agents execute heterogeneous sequences of model calls within a single task: some invocations require careful reasoning, while others are structured steps such as formatting or tool-argument construction. Prior routing methods exploit this asymmetry by assigning easy invocations to a cheaper small model and difficult ones to a large model. Such policies reduce inference cost, but they leave the small model's capability unchanged, so attainable savings remain bounded by the work the student can already solve. MERA instead improves the small model itself, using a single model invocation as the unit of adaptation. In each cycle, MERA replays failed student invocations to obtain execution-verified teacher demonstrations, distills recurring procedures into an iteratively updated SkillBook, and fine-tunes a student LoRA adapter via supervised learning and optional GRPO. Routing serves as supporting machinery for deployment: the improved student is served behind a cost-calibrated router with verifier-backed fallback, and a candidate SkillBook, adapter, or router is admitted only when joint replay preserves task quality. Empirically, four-cycle adaptation raises Qwen2.5-Coder-1.5B from 28.7% to 49.7% pass on held-out HumanEval+MBPP. Under verifier-backed fallback, the deployed policy retains 88.3% pass at 60.8% of always-Luna cost. On TAU-2, a fine-tuned Qwen3.5-2B improves from 14/35 to 18/35 and matches an unadapted 4B model. These results indicate that verifier-backed multi-cycle adaptation can increase small-model capability, rather than only routing around a fixed student.",
+    "status": "found"
+  },
+  "2608.10334": {
+    "arxiv_id": "2608.10334",
+    "title": "Wave-particle-mixedness redistribution in Schwarzschild spacetime",
+    "authors": [
+      "Sumeng Wang",
+      "Xiaofen Huang"
+    ],
+    "submission_date": "2026-08-11T00:34:22Z",
+    "latest_updated": "2026-08-11T00:34:22Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10334v1"
+    ],
+    "abstract": "The redistribution of the wave feature, particle feature, and mixedness is investigated for two-qubit isotropic states in Schwarzschild spacetime under Hawking radiation and environmental decoherence. It is shown that Hawking radiation changes their relative weights among different horizon regions rather than simply suppressing them. The analysis is further extended to phase damping, phase flip, and bit flip channels. Phase damping monotonically suppresses the wave feature and enhances mixedness, phase flip produces a symmetric death-and-revival behavior of the wave feature, and bit flip mainly reshapes the particle feature and mixedness through diagonal population redistribution. However, although Hawking radiation and channel noise affect the distribution of wave feature, particle feature, and mixedness in the subsystems, the triality relation among them still holds and remains unaffected by thermal and environmental noises.",
+    "status": "found"
+  },
+  "2608.10335": {
+    "arxiv_id": "2608.10335",
+    "title": "On the Squarefree Values of Degree-$2q$ Polynomials",
+    "authors": [
+      "Sergio Ricardo Zapata Ceballos",
+      "Fatemeh Jalalvand"
+    ],
+    "submission_date": "2026-08-11T00:35:11Z",
+    "latest_updated": "2026-10-15T21:07:25Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.10335v1",
+      "2608.10335v2"
+    ],
+    "abstract": "In this work, we show that if $h(x)$ is an irreducible monic integer polynomial of degree $2q$ (with $q$ prime), whose defining field extension of $\\mathbb{Q}$ contains a Galois extension of degree $q$, then there is a positive density of integers $n$ such that $h(n)$ is squarefree; in particular, $h(n)$ is squarefree for infinitely many integers $n$. As an application, we prove that the family of exceptional cubic fields contains an infinite subfamily whose unit shapes converge to the hexagonal lattice. To the best of our knowledge, this is the first example of a family of non-Galois totally real cubic fields whose unit shapes converge to the hexagonal lattice.",
+    "status": "found"
+  },
+  "2608.10336": {
+    "arxiv_id": "2608.10336",
+    "title": "A Multinomial Probit Model for Asymmetric Choice Responses",
+    "authors": [
+      "Cash Looi",
+      "Ruben Loaiza-Maya",
+      "Didier Nibbering"
+    ],
+    "submission_date": "2026-08-11T00:37:19Z",
+    "latest_updated": "2026-08-11T00:37:19Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10336v1"
+    ],
+    "abstract": "Standard multinomial probit (MNP) models specify symmetric latent utility distributions, implying that choice probabilities respond symmetrically to positive and negative covariate shifts of the same magnitude. This restriction is often implausible in empirical choice settings and can lead to misleading elasticity and substitution predictions. We propose a skewed multinomial probit (SMNP) model that captures asymmetric choice responses by specifying a multivariate skew-normal distribution for the latent utilities. The model preserves the flexible substitution patterns of the MNP framework, introduces alternative-specific skewness parameters, and nests the standard MNP model when skewness is zero. Introducing skewness creates identification and computational challenges because the skewness parameters interact with the MNP scale normalization and disrupt the conditional Gaussian updating structure used in Bayesian MNP estimation. We address these challenges through a covariance reparameterization that enforces identification and positive definiteness by construction, interpretable priors on the identified parameter space, and a double data-augmentation scheme that yields a Metropolis-Hastings within Gibbs sampler. Numerical experiments and applications to consumer choice data show that SMNP recovers asymmetric choice responses, improves probabilistic prediction, and produces economically meaningful differences in price elasticities and substitution patterns.",
+    "status": "found"
+  },
+  "2608.10337": {
+    "arxiv_id": "2608.10337",
+    "title": "Narrative Keyframing for Generative Creative Writing",
+    "authors": [
+      "Chao Zhang",
+      "Abe Davis"
+    ],
+    "submission_date": "2026-08-11T00:41:29Z",
+    "latest_updated": "2026-08-11T00:41:29Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10337v1"
+    ],
+    "abstract": "We introduce narrative keyframing, an interaction technique for AI-assisted creative writing that lets writers specify different types of narrative constraints at selected moments in a story, then use AI to generate intervening prose. Inspired by the use of keyframing in animation, narrative keyframing offers a flexible way to connect story planning with adaptive control over generated text. We explore three types of keyframes: plot keyframes define significant events in a story, character keyframes represent how individual characters change over the narrative, and perspective keyframes capture how individual characters experience different events through first-person narratives. Plot and character keyframes offer a flexible way to adapt the type of high-level conditioning explored in previous AI writing tools to more customizable, iterative, and fine-scale control, while perspective keyframes add a new way to control characterization and focalization by using first-person narratives as an intermediary. Through a user study, we show that narrative keyframing supports a more controllable, transparent, and engaging way to use generative AI in creative writing.",
+    "status": "found"
+  },
+  "2608.10338": {
+    "arxiv_id": "2608.10338",
+    "title": "ResonaVis: Visualizing Interactive Music Data to Support Reflective Music Composition for Therapeutic Contexts",
+    "authors": [
+      "Abhishek Karwankar",
+      "Elise Ruggiero",
+      "Daniel Stevens",
+      "Matthew Louis Mauriello"
+    ],
+    "submission_date": "2026-08-11T00:42:04Z",
+    "latest_updated": "2026-08-11T00:42:04Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10338v1"
+    ],
+    "abstract": "Designing music for therapeutic contexts requires navigating complex relationships between musical structure and listeners' sensory responses, yet composers often lack structured representations of these interactions, relying instead on intuition. We present ResonaVis, an interactive visualization system that helps composers analyze interaction and audio data from prior sessions with children with Autism Spectrum Disorder (ASD), informing future compositions. ResonaVis integrates audio features and interaction logs to capture how children engage with layered musical compositions, representing this engagement through coordinated visualizations of temporal transitions, layer co-occurrence, rhythmic activity, and spectral characteristics. Rather than prescribing strategies or supporting therapy sessions directly, the system surfaces patterns in past session data to support data-informed reflection during composition. We evaluated ResonaVis through a mixed-methods study with eight music students and a follow-up case study with two experienced composers. Results demonstrate good usability (SUS = 72.23), exceeding benchmarks for early prototypes, and show that participants could identify interaction patterns, reason about layer relationships, and make informed compositional decisions with high perceived performance and low frustration. Confidence in interpreting interaction and acoustic data for ASD-focused composition increased significantly across multiple dimensions (p < 0.05), with qualitative findings suggesting a shift toward more adaptive, data-informed composition. This work contributes a visualization design space for therapeutic music interaction data, an integrated system for compositional reflection, and empirical evidence that visualization tools support analytical reasoning and confidence in data-informed creative practice. (Abstract shortened for arXiv.)",
+    "status": "found"
+  },
+  "2608.10339": {
+    "arxiv_id": "2608.10339",
+    "title": "Expert-Guided g-computation with Large Language Models for Estimating Causal Effects on Timings: Applications to Hospital Quality Improvement",
+    "authors": [
+      "Patrick Vossler",
+      "Jialin Ouyang",
+      "F. Richard Guo",
+      "Anran Huang",
+      "Ali Shojaie",
+      "Lucas Zier",
+      "Fan Xia",
+      "Jean Feng"
+    ],
+    "submission_date": "2026-08-11T00:42:58Z",
+    "latest_updated": "2026-08-11T00:42:58Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10339v1"
+    ],
+    "abstract": "Hospital quality improvement (QI) programs routinely face multiple candidate interventions to optimize hospital flow, but existing methods struggle to estimate and rank the causal effects of such interventions. This work focuses on one of the most standard hospital metrics, the average length of stay (LOS), and its causal estimand, the average time saved. To characterize this causal effect, qualitative approaches rely on expert judgment to map patient trajectories, making them susceptible to cognitive biases; quantitative approaches rely on data-driven models, which fail when interventions are hypothetical with no historical data or have complex causal mechanisms that require clinical reasoning rather than data alone. We propose expert-guided g-computation, or egg-computation, which combines the complementary strengths of both approaches by connecting the Gantt charts commonly used to map patient trajectories with the causal DAG literature. We introduce a causal model over Gantt charts and establish identification using a variant of g-computation that seeks expert input only for components unidentifiable from data. To make egg-computation practical, we develop an LLM-assisted pipeline that reliably scales up expert reasoning. In simulations, egg-computation outperforms conventional causal inference methods when patients have diverse causal structures and intervention mechanisms. In a study of eleven candidate QI interventions at an urban safety-net hospital, the LLM pipeline generated graphs and time-saving estimates highly concordant with those of human experts. Beyond healthcare, egg-computation is a broadly applicable framework for estimating the average time saved for candidate interventions whose causal mechanisms can be represented using Gantt charts.",
+    "status": "found"
+  },
+  "2608.10340": {
+    "arxiv_id": "2608.10340",
+    "title": "Giant mode splitting of azimuthal spin waves in radial vortices",
+    "authors": [
+      "Zhenyu Wang",
+      "Liangrui Li",
+      "Xuejuan Liu",
+      "Xiansi Wang",
+      "Ruifang Wang",
+      "H. Y. Yuan"
+    ],
+    "submission_date": "2026-08-11T00:47:29Z",
+    "latest_updated": "2026-08-11T00:47:29Z",
+    "revised_dates": null,
+    "venue": "Phys. Rev. B 114, 094431 (2026)",
+    "latest_version": 1,
+    "versions": [
+      "2608.10340v1"
+    ],
+    "abstract": "Radial vortex is a topological spin texture stabilized by the interfacial Dzyaloshinskii-Moriya interaction (DMI) in ferromagnetic disks. Previous investigations have shown that the doublet splitting of azimuthal modes in traditional circular vortices arises from the coupling between azimuthal spin waves and vortex core (VC), an effect occurs only for azimuthal indices $m=\\pm1$ and is absent for higher-order modes. Here, we present a giant mode splitting of azimuthal spin waves in radial vortices, even in the absence of the VC. This mode splitting arises from the DMI, which can be an order of magnitude larger than that induced by the VC. Moreover, the DMI-induced frequency splitting increases with both the DMI constant and mode index, reaching tens of GHz for higher-order azimuthal modes. Our results reveal a robust mechanism for mode splitting in chiral magnetic textures and deepen the fundamental understanding of the DMI effect on the spin-wave dynamics in confined magnets.",
+    "status": "found"
+  },
+  "2608.10341": {
+    "arxiv_id": "2608.10341",
+    "title": "Attainment Boundaries and Escape Rates in Asymptotically Conic Optimization",
+    "authors": [
+      "Vinh Nguyen"
+    ],
+    "submission_date": "2026-08-11T00:57:13Z",
+    "latest_updated": "2026-08-11T00:57:13Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10341v1"
+    ],
+    "abstract": "We study attainment boundaries for linear optimization over unbounded convex sets. For epigraphs of finite convex functions, convex conjugacy separates recession-cone copositivity, boundedness below, and attainment through three nested subsets of conjugate space. At a finite but unattained boundary value, we establish a facewise asymptotic selection theorem for inward perturbations of the objective. The theorem identifies the escaping directions of the perturbed minimizers, their precise blow-up scale, and the leading asymptotics of the optimal value; the critical set may be multidimensional, and no radial symmetry is assumed. For radial asymptotically conic epigraphs, we obtain a complete boundary trichotomy and universal scaling laws for objective tilting, hard truncation, and power regularization. For shifted ellipsoidal second-order cone programs, we derive explicit primal--dual formulas together with sharp escape, conditioning, and regularization rates. These models also admit an exact robust-optimization representation. At the attainment boundary, strict primal feasibility, zero duality gap, and dual attainment can coexist with failure of primal attainment.",
+    "status": "found"
+  },
+  "2608.10342": {
+    "arxiv_id": "2608.10342",
+    "title": "Shape optimisation of nonlinear Naghdi shells on discrete geometries",
+    "authors": [
+      "Ado Farsi",
+      "Alberto Paganini"
+    ],
+    "submission_date": "2026-08-11T00:57:32Z",
+    "latest_updated": "2026-08-11T00:57:32Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10342v1"
+    ],
+    "abstract": "A thin shell carries load through its shape and, at finite deflections, its stiffness changes with the load itself, so a shape optimum found with a linear model can be far from optimal. We present an automated framework that embeds the fully geometrically nonlinear shell response in the shape-optimisation loop. The forward model, a five-parameter nonlinear Naghdi shell stabilised against locking by partial selective reduced integration, operates directly on a discrete (faceted) triangulation with a numerically recovered director field -- dispensing with the exact mid-surface parameterisation of isogeometric approaches, a chart that ceases to exist once the geometry itself is the design variable. Implemented in Firedrake, the model generates its residual, consistent tangent and adjoint automatically; shape derivatives, computed by algorithmic differentiation through the full load-continuation solve, drive the Fireshape/ROL trust-region optimiser. The forward solver reproduces the Sze/Abaqus benchmark for a clamped semi-cylindrical shell under a point load, capturing the progressive stiffening that a geometrically linear model cannot reproduce. The optimisation is validated against the COMSOL benchmark, a sheet-metal bracket under bending: the framework develops the same off-mid-plane corrugation mechanism and attains an 87% reduction of elastic strain energy within the prescribed displacement budget, matching the benchmark's magnitude and area change. Applied to the curved semi-cylinder, it forms a smooth stiffening crease that reduces the shell's average deflection under load by 78%.",
+    "status": "found"
+  },
+  "2608.10343": {
+    "arxiv_id": "2608.10343",
+    "title": "Efficient Noise Context-Aware Representation for Low-Dose CT Denoising",
+    "authors": [
+      "Minwoo Yu",
+      "N. Robert Bennett",
+      "Jongduk Baek",
+      "Adam S. Wang"
+    ],
+    "submission_date": "2026-08-11T00:57:39Z",
+    "latest_updated": "2026-10-14T13:37:17Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.10343v1",
+      "2608.10343v2"
+    ],
+    "abstract": "While deep learning-based denoising has become widely adopted in low-dose CT, conventional models use generic architectures designed for natural images, failing to account for non-stationary and spatially correlated CT noise characteristics. To address this, we propose an Efficient Noise COntext-aware REpresentation (ENCORE) framework that explicitly leverages CT noise characteristics and anatomical features. First, we reformulate the noise synthesis procedure based on a realistic noise distribution beyond the conventional Gaussian approximation, establishing a rigorous foundation for training pair generation. Next, we extract local noise power and correlation contexts to guide the denoising process. To fully leverage the potential of noise context, we propose a FlyingConv module, which adaptively changes convolution weights for each local image region. Notably, our approach demonstrates substantial gains in both denoising quality and computational efficiency. Furthermore, manipulating the intensity of the noise context maps at inference time enables zero-shot conditional denoising, allowing for dynamic control over the output image texture. The entire pipeline is available at https://github.com/minwoo-yu/ENCORE.git",
+    "status": "found"
+  },
+  "2608.10344": {
+    "arxiv_id": "2608.10344",
+    "title": "On the Importance of Geometric Nonlinearity and Temperature-Dependent Properties in Multi-Material Thermo-Mechanical Topology Optimization",
+    "authors": [
+      "Shirin Hosseinmardi",
+      "Xiangyu Sun",
+      "Ramin Bostanabad"
+    ],
+    "submission_date": "2026-08-11T01:01:36Z",
+    "latest_updated": "2026-08-13T01:54:41Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.10344v1",
+      "2608.10344v2"
+    ],
+    "abstract": "Thermo-mechanical compliant devices are commonly designed with small-strain linear elasticity and temperature-independent material properties, even though they might operate hundreds of kelvin above ambient where both assumptions are questionable. In this work, we quantify the effect and cost of each assumption in multi-material topology optimization of thermally actuated compliant devices. To this end, we introduce a physics-informed, simultaneous analysis-and-design framework with (i) a finite-strain quadratic-Hencky (logarithmic-strain) constitutive model whose isotropic thermal eigenstrain admits an exact additive split in log-strain space, and (ii) temperature-dependent conductivity, thermal expansion, and elastic moduli for a titanium--copper--steel material system. We optimize a thermal actuator and a thermal gripper at three design temperatures under both a baseline model and the full physics, subject to mass and manufacturability constraints. Every converged design is re-evaluated by verified nonlinear finite element solvers in the full factorial of constitutive law and property model. The comparison between the two factors reveals that the constitutive law is the decisive modeling choice: These devices work as linkages where linear kinematics mistakes rotation for compressive strain; its error therefore grows with the design temperature and concentrates on the very layouts that exploit rotation best. Because a linear optimizer also steers away from the rotation-rich mechanisms that would expose this bias, the model can deceptively appear trustworthy when validated against its own designs. Designing with the full physics yields consistently stronger and more temperature-robust devices at a modest increase in design-time cost.",
+    "status": "found"
+  },
+  "2608.10345": {
+    "arxiv_id": "2608.10345",
+    "title": "CasDeblurGS: Cascaded 2D-to-3D Multi-View Consistency for 3D Gaussian Splatting from Two Blurry Images",
+    "authors": [
+      "Haeyun Choi",
+      "Minhyuk Jang",
+      "I-Gil Kim"
+    ],
+    "submission_date": "2026-08-11T01:13:21Z",
+    "latest_updated": "2026-08-11T01:13:21Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10345v1"
+    ],
+    "abstract": "Free-viewpoint 3D scene media is increasingly important for immersive applications, yet practical capture often suffers from severe view sparsity and motion blur. Although neural rendering has advanced sparse-view synthesis, existing blur-aware methods typically require substantial multi-view redundancy, accurate camera poses, or costly per-scene optimization. We address a stringent yet practical setting: reconstructing a coherent 3D scene from only two motion-blurred images with known intrinsics, without input-view poses, auxiliary sharp images, or per-scene test-time optimization. To this end, we propose CasDeblurGS, a cascaded framework that progressively recovers reliable cross-view information from local 2D correspondences to global 3D guidance. Stage 1 constructs locally reliable guidance through occlusion-aware correspondence filtering, while Stage 2 aggregates the intermediate restorations into a provisional pose-free 3D Gaussian representation whose input-view re-renders provide dense global guidance for final restoration. The resulting views enable a more coherent 3D representation and higher-quality novel-view synthesis. Experiments on real-world and synthetic Deblur-NeRF scenes show consistent gains over strong baselines, improving PSNR by 1.19 dB and 2.11 dB, respectively. Progressive ablations, cross-view correspondence visualization, and camera reprojection analysis further demonstrate improvements in both rendering quality and multi-view geometric consistency.",
+    "status": "found"
+  },
+  "2608.10346": {
+    "arxiv_id": "2608.10346",
+    "title": "Towards Unified Dynamic Face Landmark Detection",
+    "authors": [
+      "Sebastian Regalado",
+      "Varshanth R. Rao",
+      "Ruowei Jiang",
+      "Parham Aarabi",
+      "Igor Gilitschenski"
+    ],
+    "submission_date": "2026-08-11T01:14:53Z",
+    "latest_updated": "2026-09-24T19:06:41Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.10346v1",
+      "2608.10346v2"
+    ],
+    "abstract": "Although advancements in face landmark detection (FLD) methods continue to push performance boundaries, they overlook two major functional limitations: (1) different network parameters need to be trained independently for each ``$N$-point'' benchmark dataset, and (2) a model trained on an ``$N$-point'' dataset reliably outputs only the $N$ landmarks. In our work, we first conceptualize Face Part-Anchored Landmark Positions (FPALPs), wherein each landmark is treated as a progression value between zero (start) and one (end) along a face part's contour. Every landmark can be expressed in the FPALP format, irrespective of its source dataset, hence unlocking the ability to unify all ``$N$-point'' datasets into a single dataset. Secondly, we represent each landmark with an FPALP-based query, refine it progressively with a cross-modality decoder, and predict its coordinates based on the final representation. Our approach, called Unified Dynamic FLD, embodies these two design choices and streamlines the landmark detection pipeline by enabling (1) a single model to learn on any number of ``$N$-point'' datasets, and (2) yield any number of specific landmark predictions by loading the designated landmark queries at runtime. Extensive experiments on multiple benchmark datasets show that our method delivers these benefits while remaining competitive with, and in several cases outperforming existing state-of-the-art methods.",
+    "status": "found"
+  }
+}

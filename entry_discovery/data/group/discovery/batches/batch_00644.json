@@ -1,0 +1,411 @@
+{
+  "2608.11887": {
+    "arxiv_id": "2608.11887",
+    "title": "Bivariate quaternionic factorizations and surfaces that decompose into two circles",
+    "authors": [
+      "Johanna Frischauf",
+      "Niels Lubbes",
+      "Hans-Peter Schröcker"
+    ],
+    "submission_date": "2026-08-12T10:11:53Z",
+    "latest_updated": "2026-08-12T10:11:53Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11887v1"
+    ],
+    "abstract": "We present an algebraic and geometric condition for bivariate quaternionic polynomials of arbitrary bidegree to have a univariate linear left or right factor. We apply this quaternionic factorization theorem to the bidegree (1,1) case and recover a classical theorem of Clifford in elliptic geometry. By applying to the bidegree (2,2) case, we obtain decompositions into two circles of celestial surfaces, namely surfaces in the 3-dimensional sphere that contain two circles through a general point. This results in an alternative proof and refinement for a theorem by Skopenkov and Krasauskas from 2019, which states that a non-quartic celestial surface is Möbius equivalent to either the pointwise product of circles in the unit-quaternions, or an inverse stereographic projection of the pointwise sum of circles in Euclidean space. Our proposed method extends this decomposition result to the quartic case and we show that surfaces are, up to Möbius equivalence and stereographic projections, not both a sum and product of circles.",
+    "status": "found"
+  },
+  "2608.11888": {
+    "arxiv_id": "2608.11888",
+    "title": "Agent Skills Can Be Harmful: An Empirical Study of Skill-Induced Failures in LLM Agents",
+    "authors": [
+      "Gen Dong",
+      "Yanjie Gao",
+      "Liqun Li",
+      "Tianyin Xu",
+      "Yu Hua",
+      "Fan Yang"
+    ],
+    "submission_date": "2026-08-12T10:15:19Z",
+    "latest_updated": "2026-08-12T10:15:19Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11888v1"
+    ],
+    "abstract": "Agent skills are the de facto mechanism for extending LLM agents with reusable guidance. A skill can shape the agent's task execution, including planning, tool use, problem-solving, and validation. Prior work reported mixed results of agent skills: some skills improve task success rates, while others have no effect, increase token use and execution time, and even reduce success rates. This paper presents a comprehensive analysis of skill-induced agent failures by attributing task failures and cost regressions to specific loaded skills. We introduce a differential analysis framework that attributes a failure or regression to a skill by comparing a target skill-guided run against a no-skill or semantically matched skill reference run that solves the same task, or solves it more cheaply. We instantiate this framework on SkillsBench and SWE-Skills-Bench, yielding 307 skill-induced failures, including 125 functional failures and 182 efficiency regressions. We also build SkillTriage, a taxonomy-guided attribution tool that normalizes paired cases, extracts differential evidence, and produces triage reports. Our major findings include: (1) Skill induced functional failures are rarely caused by obviously irrelevant skills; instead, seemingly relevant skills often make the agent incorrectly implement or omit task-required implementation elements. (2) Skill-induced efficiency regressions are not explained by prompt length alone. (3) The largest sources within Excessive Procedure are excessive verification and heavy implementation pipelines, contributing 67 and 30 cases, respectively. This shows that skills often turn validation checklists and construction recipes into mandatory work. Based on our findings, we propose research topics and tooling improvements for safer and more cost-aware skill reuse.",
+    "status": "found"
+  },
+  "2608.11889": {
+    "arxiv_id": "2608.11889",
+    "title": "DexterSQL: Deep Schema Exploration and Rule-based Correction for Text-to-SQL Generation",
+    "authors": [
+      "Anik Pramanik",
+      "Murat Kantarcioglu",
+      "Vincent Oria",
+      "Shantanu Sharma"
+    ],
+    "submission_date": "2026-08-12T10:17:08Z",
+    "latest_updated": "2026-09-08T22:58:19Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.11889v1",
+      "2608.11889v2"
+    ],
+    "abstract": "Prompting-based (i.e., non-fine-tuning) Text-to-SQL methods, where underlying large language model parameters are not changed for the task, face three problems: (i) relying on coarse-grained schema information that may not reveal the fine-grained relationships needed to distinguish ambiguous columns, (ii) failing to capture recurring SQL-generation failures, and (iii) suffering from omission or hallucination of components in complex questions. This paper develops DexterSQL, a prompting/non-fine-tuning-based Text-to-SQL system that improves SQL generation with three novel components: (i) deep schema explorator that identifies ambiguous columns, analyzes their individual and joint data distributions to uncover their relationships and the distinct role of each, (ii) database-agnostic rule creator that mines mismatches between generated and gold SQL only on the training database and converts them into database-agnostic corrective rules that capture recurring LLM failure patterns; and (iii) multi-path SQL generation that introduces a dependency-tree-based intermediate representation that uses the question's sentence structure to guide its decomposition into an SQL skeleton for final SQL generation. DexterSQL achieves a higher accuracy compared to the state-of-the-art using both open-source/weight and closed-source/weight models. Particularly, DexterSQL shows a high improvement of at least 5.5% using an open-weight model (GPT-OSS-120B) on BIRDDev, with total accuracy 70.4%. DexterSQL also shows better improvement of at least 1.4% using closed-weight models, with total accuracy 72.1% and 72.9% on BIRD-Dev with GPT-4o and GPT-5.2.",
+    "status": "found"
+  },
+  "2608.11890": {
+    "arxiv_id": "2608.11890",
+    "title": "The optimization landscape of peaked-circuit generation",
+    "authors": [
+      "Ilyes Jamoussi"
+    ],
+    "submission_date": "2026-08-12T10:17:41Z",
+    "latest_updated": "2026-08-27T05:17:58Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.11890v1",
+      "2608.11890v2"
+    ],
+    "abstract": "Peaked circuits are random quantum circuits whose measurement returns one bitstring far more often than chance. The probability of that string is the peakedness, and a verifier who knows the string checks the device in a few shots. Peaked circuits are a candidate route to verifiable quantum advantage, and classical generation is the bottleneck. Aaronson and Zhang train a variational circuit by gradient descent, and the peakedness they reach decays exponentially with the number of qubits. They state that either their optimizer stalls or no efficient generation method exists. Here we show that no bare fixed base fits the decay we measure and that neither the barren plateau nor fragmentation of the solution set explains it. We measure the optimization landscape on eighteen instances per size, from eight to sixteen qubits, under a protocol whose falsifiers were fixed in advance. The decay steepens as the qubit number grows, leaving extrapolations to larger devices unsupported. A better optimizer exists, but it gains a few percent and the peakedness it reaches decays at nearly the same rate. Aaronson and Zhang attribute the difficulty to a barren plateau. The plateau is present, but the second-order amplitude data are depth-independent while the attained peakedness is not. Independent runs land on uncorrelated solutions, yet paths connecting them stay well above the scale of a random state, so fragmentation fails at that scale. In the deep limit we take the scrambled state Haar-random. There we prove that no search over a polynomial-parameter Lipschitz family, exhaustive search included, beats the scale of a random state by more than a poly(n) factor on average. Both branches of the Aaronson-Zhang alternative therefore stay open. A generation method must beat a preregistered baseline, and a hardness argument must accommodate a solution set connected at the scale of a random state.",
+    "status": "found"
+  },
+  "2608.11891": {
+    "arxiv_id": "2608.11891",
+    "title": "Benchmark-Based Comparative Assessment of Publicly Benchmarked Indian Foundation Models: A Capability and Evaluation-Maturity Framework",
+    "authors": [
+      "Avinash Agarwal",
+      "Vridhi Jain"
+    ],
+    "submission_date": "2026-08-12T10:19:14Z",
+    "latest_updated": "2026-08-16T08:59:32Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.11891v1",
+      "2608.11891v2"
+    ],
+    "abstract": "Purpose: Governments increasingly fund indigenous foundation models to strengthen national AI capability, digital sovereignty, and multilingual computing. This paper assesses India's foundation-model ecosystem and examines whether apparent capability gaps in public benchmark evidence may also reflect gaps in evaluation maturity. Approach: The paper presents a structured, benchmark-based comparative assessment of Indian foundation models against global frontier and comparable-scale models across eight capability domains: general-purpose reasoning, coding and software engineering, agentic AI and computer use, cybersecurity, vision and image understanding, video and multimodal understanding, scientific research, and Indic language capability. Using only publicly reported results, it proposes an exploratory four-dimension Benchmark Maturity Index (BMI), scoring each domain on standardization, participation, independent verification, and national Findings: Indian models achieve strong scores on established benchmarks such as MMLU and MATH-500. However, these are now widely regarded as saturated, and frontier developers no longer report them. Indian models participate far less frequently in newer, agentic, and domain-specialized evaluations, and participation is highly uneven across organizations. Sarvam AI reports the broadest coverage by a substantial margin. The BMI refines, and in some cases revises, the maturity judgments a purely descriptive review would produce. Practical implications: Many apparent capability gaps cannot be distinguished, on available evidence, from evaluation-ecosystem gaps, with direct implications for how national AI programs should design monitoring and funding criteria. Originality: The paper proposes BMI as a reusable instrument for scoring evaluation-ecosystem maturity at the domain level and demonstrates its application to the Indian foundation-model ecosystem.",
+    "status": "found"
+  },
+  "2608.11892": {
+    "arxiv_id": "2608.11892",
+    "title": "Fast eight-order Pade schemes based on Chebyshev polynomials for direct Zakharov-Shabat problem",
+    "authors": [
+      "Sergey Medvedev",
+      "Igor Chekhovskoy",
+      "Irina Vaseva",
+      "Mikhail Fedoruk"
+    ],
+    "submission_date": "2026-08-12T10:20:08Z",
+    "latest_updated": "2026-08-12T10:20:08Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11892v1"
+    ],
+    "abstract": "In this work, we construct fast eighth-order Pade schemes for the direct Zakharov-Shabat scattering problem. The schemes are based on an eighth-order exponential integrator obtained from the Magnus expansion. A direct extension of the conventional fast Pade representation to the eighth-order case leads to insufficiently accurate fast variants in the considered tests. To overcome this difficulty, we reformulate the spectral dependence on a finite real interval using the Joukowski mapping and represent the local numerators and denominators in the Chebyshev polynomial basis. This makes it possible to construct the global transition matrix by a fast product tree while retaining a compact polynomial representation. Numerical experiments for chirped hyperbolic secant potentials with both signs of dispersion show that the proposed Chebyshev-based fast schemes substantially improve the accuracy of the corresponding direct fast variants and can be used for efficient computation of the continuous nonlinear spectrum.",
+    "status": "found"
+  },
+  "2608.11893": {
+    "arxiv_id": "2608.11893",
+    "title": "Notes on $K^{\\infty}$",
+    "authors": [
+      "Paul Flavell"
+    ],
+    "submission_date": "2026-08-12T10:20:24Z",
+    "latest_updated": "2026-08-13T01:55:19Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.11893v1",
+      "2608.11893v2"
+    ],
+    "abstract": "Glauberman's characteristic $p$-functor $K^{\\infty}$ has a number of remarkable properties. For example it controls $p$-transfer in any finite group provided $p \\geq 5$. These notes are the author's attempt to understand and simplify this work.",
+    "status": "found"
+  },
+  "2608.11894": {
+    "arxiv_id": "2608.11894",
+    "title": "Continuous Linear Surjections from $C_p(X)$ onto Symmetric Sequence Ideals in $c_0$",
+    "authors": [
+      "Jerzy Kąkol",
+      "Wiesław Śliwa"
+    ],
+    "submission_date": "2026-08-12T10:20:44Z",
+    "latest_updated": "2026-08-12T10:20:44Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11894v1"
+    ],
+    "abstract": "Rosenthal's classical theorem says that, for every infinite compact space $X$, the Banach space $C(X)$ admits a quotient isomorphic to either $c_0$ or $\\ell_2$. The corresponding question for $C_p(X)$, the space $C(X)$ endowed with the topology of pointwise convergence, is much subtler and still open; the only compact spaces for which the existence of an infinite-dimensional metrizable quotient is not presently settled in ZFC are Efimov compacta. We prove that the Banach space case cannot be reproduced with the usual sequence spaces carrying their pointwise topologies: Let $X$ be a Tychonoff space and let $E\\subseteq c_0$ be a non-trivial symmetric sequence ideal endowed with the subspace topology inherited from $\\mathbb{R}^{\\mathbb{N}}$. Then the existence of a continuous linear surjection $T:C_p(X)\\rightarrow E_p$ implies $E=c_0$, where $E_p$ means $E$ with the topology inherited from $\\mathbb{R}^{\\mathbb{N}}$. Hence, no proper non-zero symmetric sequence ideal of $c_0$ can be realized as a continuous linear image of a $C_p$-space. Combining this result with the characterization of the Josefson--Nissenzweig property for $C_p(X)$ obtained by Banakh, Kąkol, and Śliwa, we derive a complete characterization of all pairs $(X,E)$ for which such a surjection exists. In particular, for every $0<q<\\infty$, there is no continuous linear surjection $C_p(X)\\rightarrow(\\ell_q)_p$.",
+    "status": "found"
+  },
+  "2608.11895": {
+    "arxiv_id": "2608.11895",
+    "title": "Scalable Multi-Agent Maze Traversal with Local Communication",
+    "authors": [
+      "Julian Rau",
+      "Jahir Argote-Gerald",
+      "Grace McFassel",
+      "Genki Miyauchi",
+      "Paul Trodden",
+      "Roderich Groß"
+    ],
+    "submission_date": "2026-08-12T10:21:26Z",
+    "latest_updated": "2026-08-12T10:21:26Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11895v1"
+    ],
+    "abstract": "Cave networks, pipe systems, and similar maze-like environments pose significant challenges for multi-agent navigation in unknown settings with limited communication. We propose a distributed algorithm that enables agents to collectively traverse an unknown, possibly cyclic graph. Agents enter sequentially at a designated start node and are tasked to localize and reach an undisclosed goal while avoiding collisions. They coordinate via local communication using leader-follower relationships and leader switching. At any moment in time, exploration is performed by only one of the agents, which runs a single-agent maze solver. We prove that the algorithm is complete, that its makespan is asymptotically equivalent (in the number of agents) to that of an optimal full-knowledge strategy, and derive its time and space complexity. Simulations with up to $625$ agents show a decreasing average sum-of-fuels as the number of agents increases and demonstrate that the proposed approach outperforms a naïve baseline in which all agents independently execute the single-agent solver.",
+    "status": "found"
+  },
+  "2608.11896": {
+    "arxiv_id": "2608.11896",
+    "title": "First and Comprehensive Study of V0757 Pup : $γ-$Doradus Pulsator in Detached Eclipsing Binary",
+    "authors": [
+      "Bakuh Danang Setyo Budi",
+      "Bryant Randolph",
+      "Rafa Nanda Akilah",
+      "Evan Irawan Akbar",
+      "Hakim Luthfi Malasan",
+      "Puji Irawati"
+    ],
+    "submission_date": "2026-08-12T10:22:24Z",
+    "latest_updated": "2026-08-12T10:22:24Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11896v1"
+    ],
+    "abstract": "Pulsating stars in detached eclipsing binary (EA) systems are known for providing many important physical informations which constrain both stellar structure and evolution theories. To date, fewer than 50 $γ$ Doradus (GDOR) stars have been found in eclipsing binary systems, making them important targets to study \\textit{g}-mode pulsation inside the stars. We present a comprehensive physical and pulsational analysis of V0757 Pup (TIC 6939791), a detached eclipsing binary system observed by the TESS mission (Sectors 7, 34, 61, and 88) and followed up with ground-based spectroscopy from the Thai National Telescope. By combining light curve modeling with radial velocities derived from medium-resolution spectra, we determined the fundamental stellar and atmospheric parameters with high precision. The system consists of an F2V primary ($M_1=1.305\\pm0.026M_\\odot, R_1=1.643\\pm0.020R_\\odot$) and a G1V secondary ($M_2=0.934\\pm0.030M_\\odot, R_2=0.941\\pm0.079R_\\odot$). We performed a detailed frequency analysis of the residual light curves, identifying two dominant independent pulsation frequencies at $f\\sim0.79$ c/d and $0.98$ c/d. These frequencies, along with the derived pulsation constant ($Q\\sim0.6$ d), confirm the primary component as a $γ$ Doradus pulsator. An analysis of Eclipse Timing Variations (ETV) reveals non detection of third body companions with current available dataset, strengthen by the result of \\textit{Gaia} astrometric analysis. Evolutionary modeling indicates the system is $\\sim2.2$ Gyr old, with the primary expected to fill its Roche lobe in $\\sim1$ Gyr. Additionally, we calculate a distance of $d\\approx350$ pc based on orbital and SED modeling, which is in excellent agreement with the \\textit{Gaia} DR3 parallax distance.",
+    "status": "found"
+  },
+  "2608.11897": {
+    "arxiv_id": "2608.11897",
+    "title": "Strain-controlled sign reversal of the anomalous Hall effect in Ru/[Co/Ni]$_N$ multilayers",
+    "authors": [
+      "Jingying Zhang",
+      "Sigang Wang",
+      "Yue Xiang",
+      "Wenhui Xie",
+      "Zhe Yuan",
+      "Yi Liu",
+      "Zongzhi Zhang"
+    ],
+    "submission_date": "2026-08-12T10:22:52Z",
+    "latest_updated": "2026-08-12T10:22:52Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11897v1"
+    ],
+    "abstract": "The anomalous Hall effect (AHE) is a hallmark transport phenomenon in ferromagnets arising from relativistic spin-orbit interaction. Here, we report an unexpected sign reversal of the AHE in Ru/[Co/Ni]$_N$ multilayers controlled by the stacking sequence of the Ru layer. When Ru is placed beneath, rather than atop, the Co/Ni multilayers, the anomalous Hall signal switches from positive to negative. By systematically varying the multilayer repeat number N and combining transport measurements with first-principles calculations, we show that this reversal originates from in-plane tensile strain imposed by the Ru underlayer, which reshapes the electronic structure and redistributes Berry curvature near the Fermi level. Our findings establish interfacial strain as an effective knob for tuning Berry-curvature-driven transport and suggest a pathway toward strain-controlled topological transport phenomena in magnetic multilayers.",
+    "status": "found"
+  },
+  "2608.11898": {
+    "arxiv_id": "2608.11898",
+    "title": "On-Policy Self-Distillation for Multi-Dialect ASR: Mastering Dialects, Retaining Mandarin",
+    "authors": [
+      "Shuiyuan Wang",
+      "Bingshen Mu",
+      "Pengshen Zhang",
+      "Chengyou Wang",
+      "Yujie Liao",
+      "Chengdong Liang",
+      "Binbin Zhang",
+      "Qiangze Feng",
+      "Lei Xie"
+    ],
+    "submission_date": "2026-08-12T10:23:07Z",
+    "latest_updated": "2026-08-12T10:23:07Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11898v1"
+    ],
+    "abstract": "Recent large-scale ASR models already achieve strong Mandarin recognition accuracy and have some ability to recognize Chinese dialects. However, their dialect recognition accuracy is still limited in real-world speech. Direct dialect adaptation can lower dialect CER, but it may also raise Mandarin CER. We therefore study how to adapt a capable ASR model to improve multi-dialect recognition without degrading Mandarin recognition. We adopt an adaptation pipeline where continual pre-training (CPT) and dialect supervised fine-tuning (SFT) provide a strong foundation, and On-Policy Self-Distillation (OPSD) serves as the final refinement. OPSD addresses the train--test mismatch in autoregressive ASR by training the student model on its own decoded prefixes while a frozen teacher, conditioned on the reference transcript as privileged context, provides soft token-level targets. This replaces hard cross-entropy updates on dialect data with distillation, preserving Mandarin ability while refining dialect recognition. We instantiate the framework with Qwen3-ASR-1.7B and evaluate it on public and internal Mandarin and dialect test sets. Under matched refinement data and schedule, OPSD improves dialect recognition without raising Mandarin CER, whereas continued teacher-forced fine-tuning increases Mandarin CER. We will release the model weights and evaluation scripts.",
+    "status": "found"
+  },
+  "2608.11899": {
+    "arxiv_id": "2608.11899",
+    "title": "Beyond Prompted Agreement: Instruction Effects on Key and Beat Grouping in Text-to-Music Generation",
+    "authors": [
+      "Yining Wang"
+    ],
+    "submission_date": "2026-08-12T10:25:17Z",
+    "latest_updated": "2026-10-18T16:03:18Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.11899v1",
+      "2608.11899v2"
+    ],
+    "abstract": "In music-generation models, an explicit instruction to realize a musical attribute can paradoxically make it less common. How, then, should we assess whether a model follows a musical instruction? We use matched inputs that omit an attribute, specify one target, or specify another target, and compare the resulting audio. We evaluate key and beat grouping in ACE-Step 1.5, Stable Audio 3 and LeVo2 on 2,304 primary outputs. In Stable Audio 3, a four-beat instruction reduces detected four-beat occurrence from 96.9% to 56.3%, even though four beats remain more common than three under their respective instructions. Further experiments show that rephrasing can improve attainment while reducing the difference between target instructions, and that ACE-Step shows larger changes in target occurrence when text instructions retain its native attribute field. Our findings suggest that evaluating musical instruction following requires both target attainment and comparisons with generation with an omitted target instruction and with a different specified target.",
+    "status": "found"
+  },
+  "2608.11900": {
+    "arxiv_id": "2608.11900",
+    "title": "Static multipolar Einstein-vector-Gauss-Bonnet black holes",
+    "authors": [
+      "Burkhard Kleihaus",
+      "Jutta Kunz"
+    ],
+    "submission_date": "2026-08-12T10:26:22Z",
+    "latest_updated": "2026-08-12T10:26:22Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11900v1"
+    ],
+    "abstract": "We construct and analyze static multipolar black holes in Einstein-vector-Gauss-Bonnet theory with a quadratic coupling function. The vectorized solutions bifurcate from the Schwarzschild black hole at discrete values of the Gauss-Bonnet coupling, obtained from a perturbative eigenvalue problem on the Schwarzschild background and labelled by the angular multipole number $\\ell$. We restrict to the fundamental radial branches. The electric sector contains the known spherically symmetric $\\ell=0$ branch as well as axisymmetric branches with $\\ell>0$. These electric branches extend to larger values of the coupling. The magnetic sector features a sequence of axisymmetric branches, including the previously found magnetic dipole branch at $\\ell=0$. The magnetic branches instead exist only on finite intervals of the coupling, ending at critical solutions. Away from the bifurcation point, nonlinearities generate additional multipoles, but even-$\\ell$ and odd-$\\ell$ moments remain separated.",
+    "status": "found"
+  },
+  "2608.11901": {
+    "arxiv_id": "2608.11901",
+    "title": "DaViNCi: A Dataset Towards Outdoor Vision-and-Language Navigation with Continuous Actions and Dynamic Elements",
+    "authors": [
+      "Zihao Xie",
+      "Pingrui Lai",
+      "Yitong Wu",
+      "Hua Yang"
+    ],
+    "submission_date": "2026-08-12T10:27:48Z",
+    "latest_updated": "2026-08-12T10:27:48Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11901v1"
+    ],
+    "abstract": "Vision-and-Language Navigation (VLN) has progressively expanded from indoor to outdoor environments. However, existing outdoor VLN datasets still rely on fixed discrete topological graphs for construction. It fails to align with the rapidly changing real-world outdoor environments and impedes the sim-to-real transfer of VLN agents. To address this limitation, we propose DaViNCi (\\textbf{D}yn\\textbf{a}mic \\textbf{Vi}sion-and-Language \\textbf{N}avigation in \\textbf{C}ont\\textbf{i}nuous Environment), the first outdoor VLN dataset that simultaneously introduces both continuous and dynamic factors. The agent not only moves in the outdoor environment using continuous actions but is also required to handle unpredictable dynamic elements. The dataset encompasses six distinct maps with a total of 6,933 trajectories. Through comprehensive comparative experiments, we find that the success rate on DaViNCi decreased by more than 10\\% in discrete environments compared to previous datasets. And there is an even greater decline in continuous settings, demonstrating the challenge of DaViNCi. Furthermore, we clarify the impact of action granularity and dynamic elements. These results demonstrate the practical value of DaViNCi in advancing outdoor VLN toward more realistic environments. The website is https://xzh0312.github.io/DaViNCi/.",
+    "status": "found"
+  },
+  "2608.11902": {
+    "arxiv_id": "2608.11902",
+    "title": "Three new exoplanet systems from the Dispersed Matter Planet Project",
+    "authors": [
+      "J. R. Barnes",
+      "C. A. Haswell",
+      "Z. O. B. Ross",
+      "E. Rutherford",
+      "M. R. Standing",
+      "A. T. Stevenson",
+      "D. Staab",
+      "L. Fossati",
+      "J. S. Jenkins",
+      "D. Alves"
+    ],
+    "submission_date": "2026-08-12T10:28:10Z",
+    "latest_updated": "2026-08-12T10:28:10Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11902v1"
+    ],
+    "abstract": "We present a radial velocity analysis of three bright, low-activity stars identified by the Dispersed Matter Planet Project (DMPP). We use a Bayesian framework to compare purely Keplerian models with models incorporating stellar activity via a quasi-periodic Gaussian Process (GP). DMPP-7 (HD 118006) is a slightly evolved star that harbours a single 0.72 Saturn-mass giant ($m_\\textrm{p}\\sin i$ = 69 M$_\\oplus$) with an orbital period of P = 4.93 d. A longer 21 d - 22 d period cannot be conclusively confirmed as a stellar rotation signature rather than a purely Keplerian signal. For HD 67200, which exhibits Ca ii H&K variability, a model with only a GP is strongly favoured over a purely dynamical model. The GP model shows moderate evidence for a single Keplerian with P = 2.67 d. For HD 2134, a 21 d - 32 d rotation period signal is associated with tentative FWHM variability. A model with a GP is not conclusively favoured, but all models considered show moderate evidence for an additional single Keplerian with P = 2.78 d. Despite our target selection favouring near edge-on orbital geometries, we find no evidence for transits in TESS photometry. DMPP-7 b lies at the transition between the high-radius population and the Neptunian ridge and savannah regions. Further observations are required to establish whether the coherent short-period HD 67200 and HD 2134 signals are stellar or dynamical in origin. If planetary, the signals correspond to minimum masses of $m_\\textrm{p}\\sin i$ = 2.07 M$_\\oplus$ and $m_\\textrm{p}\\sin i$ = 2.86 M$_\\oplus$",
+    "status": "found"
+  },
+  "2608.11903": {
+    "arxiv_id": "2608.11903",
+    "title": "End-to-End Modelling of Earthquake-Induced Polarisation Perturbations in Submarine Optical Fibres",
+    "authors": [
+      "Rick M. Butler",
+      "José Núñez-Kasaneva",
+      "Gabriele Liga",
+      "Magnus Karlsson",
+      "Alex Alvarado",
+      "Christian Häger"
+    ],
+    "submission_date": "2026-08-12T10:29:11Z",
+    "latest_updated": "2026-08-12T10:29:11Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11903v1"
+    ],
+    "abstract": "We present an end-to-end model of earthquake-perturbed signal propagation in submarine fibres. Ground displacements are converted to fibre strain via ocean pressure, and injected into a split-step model. Our model shows good qualitative alignment with measurements from the Curie cable during the 2020 Oaxaca earthquake.",
+    "status": "found"
+  },
+  "2608.11904": {
+    "arxiv_id": "2608.11904",
+    "title": "Height lower bounds for elements of highly composite rings",
+    "authors": [
+      "Siu Hang Man",
+      "Niclas Technau",
+      "Martin Widmer",
+      "Pavlo Yatsyna"
+    ],
+    "submission_date": "2026-08-12T10:30:01Z",
+    "latest_updated": "2026-08-12T10:30:01Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11904v1"
+    ],
+    "abstract": "Let $\\mathbb{Q}^{(d)}$ be the composite field of all number fields of degree at most $d$. In 2001 Bombieri and Zannier proved that $\\mathbb{Q}^{(2)}$ has the Northcott property and asked what happens for $d\\geq 3$. Here we study the absolute Weil height for elements in the composite ring of the rings of integers of such number fields. In particular, we consider $\\mathbb{Q}^{(3)}$ as the composite field of $\\mathbb{Q}^{(2)}$ and a minimal infinite family of cubic fields, and we show that the composite ring of the rings of integers of these fields does have the Northcott property. Our results follow from new height lower bounds, expressed in terms of the degree. Moreover, we introduce a notion of size for subfields of $\\mathbb{Q}^{(3)}$. For instance, $\\mathbb{Q}^{(3)}$ has size $1$ and the maximal abelian subfield of $\\mathbb{Q}^{(3)}$ has size $1/2$. We show that there is a subfield of $\\mathbb{Q}^{(3)}$ of size $1$ which has the Northcott property.",
+    "status": "found"
+  },
+  "2608.11905": {
+    "arxiv_id": "2608.11905",
+    "title": "Policy-as-logic for robust reasoning over rules",
+    "authors": [
+      "Rahul Nair",
+      "Bastian Lipka",
+      "Elizabeth Daly"
+    ],
+    "submission_date": "2026-08-12T10:30:25Z",
+    "latest_updated": "2026-08-12T10:30:25Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11905v1"
+    ],
+    "abstract": "In many practical applications of generative AI systems, from tax rules to airline baggage allowance, responses to natural language queries must respect written policies or rules. We present a hybrid symbolic approach that expresses policies in formal logic and at inference time exploits the representation power of language models for fact extraction to ground predicates, and an answer set solver for reasoning such that responses are interpretable, auditable, and as we show, accurate and robust under input perturbations. Specifically, we show this separation of extraction and reasoning steps outperforms policy-as-prompt and policy-as-code methods in most cases with ~10x reduction in token usage. The results point to the value of structured reasoning and symbolic solvers in conjunction with generative models to make robust decisions involving objective criteria.",
+    "status": "found"
+  },
+  "2608.11906": {
+    "arxiv_id": "2608.11906",
+    "title": "Spin-polarized supercurrents and Josephson diode effect in altermagnets",
+    "authors": [
+      "Janus F. Niebuhr",
+      "Matthias Eschrig",
+      "Danilo Nikolić"
+    ],
+    "submission_date": "2026-08-12T10:33:33Z",
+    "latest_updated": "2026-08-12T10:33:33Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11906v1"
+    ],
+    "abstract": "We present a systematic theoretical study of the Josephson effect in junctions consisting of a d-wave altermagnet (AM) placed between two BCS superconductors (SC). In general, the SC/AM interfaces are spin-active and modeled by spin-dependent $δ$ potentials, allowing for an arbitrary direction of the local exchange field vector. The model is formulated within the fully quantum (Gor'kov) and quasiclassical (Eilenberger) Green's function technique, applied to two distinct cases of (i) a weakly spin-polarized AM (exchange field much smaller compared to the Fermi energy) and (ii) a strongly spin-polarized AM (exchange field comparable to the Fermi energy). We apply our model to the SC/AM/SC geometry, accounting for the Josephson current-phase relation (CPR). In the weakly spin-polarized regime, the CPR displays the normal Josephson effect. Irrespective of the orientation of the altermagnet, the junction undergoes the $0-π$ transition. Depending on the orientation, the system displays the features similar to those of a ferromagnetic or an antiferromagnetic junction. To investigate the spin-polarized currents and nonreciprocal transport as the central results of the present work, we put the main focus on the strongly spin-polarized regime. Within this regime, we distinguish two cases. A coplanar exchange field profile across the junctions displays the normal Josephson effect; however, with a pure and stable long-range second harmonic in the CPR. In contrast, a noncoplanar exchange field profile gives rise to the so-called quantum geometric phases across the junction, leading to the absence of the phase-inversion center in the Josephson CPR. As a result, a Josephson diode effect emerges with a significant charge diode efficiency larger than 30% and a perfect spin diode efficiency of 100%.",
+    "status": "found"
+  }
+}

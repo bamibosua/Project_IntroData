@@ -1,0 +1,425 @@
+{
+  "2511.15549": {
+    "arxiv_id": "2511.15549",
+    "title": "A Full-Induction Magnetohydrodynamics Solver for Liquid Metal Fusion Blankets in Vertex-CFD",
+    "authors": [
+      "Eirik Endeve",
+      "Doug Stefanski",
+      "Marc-Olivier G. Delchini",
+      "Stuart Slattery",
+      "Cory D. Hauck",
+      "Bruno Turcksin",
+      "Sergey Smolentsev"
+    ],
+    "submission_date": "2025-11-19T15:39:10Z",
+    "latest_updated": "2025-11-19T15:39:10Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.15549v1"
+    ],
+    "abstract": "Multiphysics modeling of liquid metal fusion blankets, which produce tritium and convert energy of neutrons created via fusion reactions into heat, is crucial for predicting performance, ensuring structural integrity, and optimizing energy production. While traditional blanket modeling of liquid metal flows during normal steady operating conditions commonly employs the inductionless approximation of the magnetohydrodynamics (MHD) equations, transient scenarios, when the plasma-confining magnetic field varies on millisecond time scales, require a full-induction MHD approach that dynamically evolves the magnetic field via the time-dependent induction equation. This paper presents the formulation, implementation, and initial verification of a full-induction MHD solver integrated within the open-source Vertex-CFD framework, which aims to achieve tight multiphysics coupling, a flexible software design enabling easy extension and addition of physics models, and performance portability across computing platforms. The solver utilizes finite element spatial discretization, implicit Runge--Kutta time integration, and an inexact Newton method to solve the resulting discrete nonlinear system, leveraging Trilinos packages for efficient computation. Verification against selected benchmark problems demonstrates accuracy and robustness of the solver. Furthermore, when the solver is applied to an idealized blanket model in 2.5D and full 3D, results obtained with Vertex-CFD are in good agreement with recently published quasi-2D simulations. These findings establish a computational foundation for future simulations of transient MHD phenomena in liquid metal blankets with Vertex-CFD, and open avenues for future extensions and performance optimizations.",
+    "status": "found"
+  },
+  "2511.15550": {
+    "arxiv_id": "2511.15550",
+    "title": "UltraDP: Generalizable Carotid Ultrasound Scanning with Force-Aware Diffusion Policy",
+    "authors": [
+      "Ruoqu Chen",
+      "Xiangjie Yan",
+      "Kangchen Lv",
+      "Gao Huang",
+      "Zheng Li",
+      "Xiang Li"
+    ],
+    "submission_date": "2025-11-19T15:40:22Z",
+    "latest_updated": "2025-11-20T08:15:40Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.15550v1",
+      "2511.15550v2"
+    ],
+    "abstract": "Ultrasound scanning is a critical imaging technique for real-time, non-invasive diagnostics. However, variations in patient anatomy and complex human-in-the-loop interactions pose significant challenges for autonomous robotic scanning. Existing ultrasound scanning robots are commonly limited to relatively low generalization and inefficient data utilization. To overcome these limitations, we present UltraDP, a Diffusion-Policy-based method that receives multi-sensory inputs (ultrasound images, wrist camera images, contact wrench, and probe pose) and generates actions that are fit for multi-modal action distributions in autonomous ultrasound scanning of carotid artery. We propose a specialized guidance module to enable the policy to output actions that center the artery in ultrasound images. To ensure stable contact and safe interaction between the robot and the human subject, a hybrid force-impedance controller is utilized to drive the robot to track such trajectories. Also, we have built a large-scale training dataset for carotid scanning comprising 210 scans with 460k sample pairs from 21 volunteers of both genders. By exploring our guidance module and DP's strong generalization ability, UltraDP achieves a 95% success rate in transverse scanning on previously unseen subjects, demonstrating its effectiveness.",
+    "status": "found"
+  },
+  "2511.15551": {
+    "arxiv_id": "2511.15551",
+    "title": "Meta-Black-Box Optimization with Bi-Space Landscape Analysis and Dual-Control Mechanism for SAEA",
+    "authors": [
+      "Yukun Du",
+      "Haiyue Yu",
+      "Xiaotong Xie",
+      "Yan Zheng",
+      "Lixin Zhan",
+      "Yudong Du",
+      "Chongshuang Hu",
+      "Boxuan Wang",
+      "Jiang Jiang"
+    ],
+    "submission_date": "2025-11-19T15:43:19Z",
+    "latest_updated": "2025-11-19T15:43:19Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.15551v1"
+    ],
+    "abstract": "Surrogate-Assisted Evolutionary Algorithms (SAEAs) are widely used for expensive Black-Box Optimization. However, their reliance on rigid, manually designed components such as infill criteria and evolutionary strategies during the search process limits their flexibility across tasks. To address these limitations, we propose Dual-Control Bi-Space Surrogate-Assisted Evolutionary Algorithm (DB-SAEA), a Meta-Black-Box Optimization (MetaBBO) framework tailored for multi-objective problems. DB-SAEA learns a meta-policy that jointly regulates candidate generation and infill criterion selection, enabling dual control. The bi-space Exploratory Landscape Analysis (ELA) module in DB-SAEA adopts an attention-based architecture to capture optimization states from both true and surrogate evaluation spaces, while ensuring scalability across problem dimensions, population sizes, and objectives. Additionally, we integrate TabPFN as the surrogate model for accurate and efficient prediction with uncertainty estimation. The framework is trained via reinforcement learning, leveraging parallel sampling and centralized training to enhance efficiency and transferability across tasks. Experimental results demonstrate that DB-SAEA not only outperforms state-of-the-art baselines across diverse benchmarks, but also exhibits strong zero-shot transfer to unseen tasks with higher-dimensional settings. This work introduces the first MetaBBO framework with dual-level control over SAEAs and a bi-space ELA that captures surrogate model information.",
+    "status": "found"
+  },
+  "2511.15552": {
+    "arxiv_id": "2511.15552",
+    "title": "Multimodal Evaluation of Russian-language Architectures",
+    "authors": [
+      "Artem Chervyakov",
+      "Ulyana Isaeva",
+      "Anton Emelyanov",
+      "Artem Safin",
+      "Maria Tikhonova",
+      "Alexander Kharitonov",
+      "Yulia Lyakh",
+      "Petr Surovtsev",
+      "Denis Shevelev",
+      "Vildan Saburov",
+      "Vasily Konovalov",
+      "Elisei Rykov",
+      "Ivan Sviridov",
+      "Amina Miftakhova",
+      "Ilseyar Alimova",
+      "Alexander Panchenko",
+      "Alexander Kapitanov",
+      "Alena Fenogenova"
+    ],
+    "submission_date": "2025-11-19T15:43:53Z",
+    "latest_updated": "2026-01-26T07:50:42Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2511.15552v1",
+      "2511.15552v2",
+      "2511.15552v3"
+    ],
+    "abstract": "Multimodal large language models (MLLMs) are currently at the center of research attention, showing rapid progress in scale and capabilities, yet their intelligence, limitations, and risks remain insufficiently understood. To address these issues, particularly in the context of the Russian language, where no multimodal benchmarks currently exist, we introduce MERA Multi, an open multimodal evaluation framework for Russian-spoken architectures. The benchmark is instruction-based and encompasses default text, image, audio, and video modalities, comprising 18 newly constructed evaluation tasks for both general-purpose models and modality-specific architectures (imageto-text, video-to-text, and audio-to-text). Our contributions include: (i) a universal taxonomy of multimodal abilities; (ii) 18 datasets created entirely from scratch with attention to Russian cultural and linguistic specificity, unified prompts, and metrics; (iii) baseline results for both closed-source and open-source models; (iv) a methodology for preventing benchmark leakage, including watermarking for private sets. While our current focus is on Russian, the proposed benchmark provides a replicable methodology for constructing multimodal benchmarks in typologically diverse languages, particularly within the Slavic language family.",
+    "status": "found"
+  },
+  "2511.15553": {
+    "arxiv_id": "2511.15553",
+    "title": "Starobinsky potential and power suppression in hybrid Loop Quantum Cosmology",
+    "authors": [
+      "Marceau Henry",
+      "Guillermo A. Mena Marugán",
+      "Antonio Vicente-Becerril"
+    ],
+    "submission_date": "2025-11-19T15:46:12Z",
+    "latest_updated": "2025-11-19T15:46:12Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.15553v1"
+    ],
+    "abstract": "We study the effect on the primordial tensor power spectrum of varying the number of e-folds during slow-roll inflation in Loop Quantum Cosmology with a Starobinsky potential. Using the hybrid quantization approach, we derive the effective mass governing tensor mode evolution. The choice of vacuum state is crucial, especially since the preinflationary phase predicted by Loop Quantum Cosmology invalidates the choice of the Bunch-Davies state as the preferred vacuum. We adopt a choice which is optimally adapted to the dynamics, so that it provides a non-oscillating (NO) spectrum free of spurious contributions, and permits an asymptotic Hamiltonian diagonalization (AHD) of the perturbations. For this so-called NO-AHD vacuum, we compute the power spectrum using both analytic approximations and numerical integration. Our results confirm the accuracy of our approximations in a wide range of situations, including short- and long-lived inflationary scenarios. The primordial power spectrum exhibits a characteristic cutoff on a wavenumber scale determined primarily by the background dynamics around the bounce that replaces the big bang in Loop Quantum Cosmology.",
+    "status": "found"
+  },
+  "2511.15554": {
+    "arxiv_id": "2511.15554",
+    "title": "Chemical systems with chaos",
+    "authors": [
+      "Tomislav Plesa"
+    ],
+    "submission_date": "2025-11-19T15:46:33Z",
+    "latest_updated": "2025-11-19T15:46:33Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.15554v1"
+    ],
+    "abstract": "Three-dimensional polynomial dynamical systems (DSs) can display chaos with various properties already in the quadratic case with only one or two quadratic monomials. In particular, one-wing chaos is reported in quadratic DSs with only one quadratic monomial, while two-wing and hidden chaos in quadratic DSs with only two quadratic monomials. However, none of the reported DSs can be realized with chemical reactions. To bridge this gap, in this paper, we investigate chaos in chemical dynamical systems (CDSs) - a subset of polynomial DSs that can model the dynamics of mass-action chemical reaction networks. To this end, we develop a fundamental theory for mapping polynomial DSs into CDSs of the same dimension and with a reduced number of non-linear terms. Applying this theory, we show that, under suitable robustness assumptions, quadratic CDSs, and cubic CDSs with only one cubic, can display a rich set of chaotic solutions already in three dimensions. Furthermore, we construct some relatively simple three-dimensional examples, including a quadratic CDS with one-wing chaos and three quadratics, a cubic CDS with two-wing chaos and one cubic, and a quadratic CDS with hidden chaos and five quadratics.",
+    "status": "found"
+  },
+  "2511.15555": {
+    "arxiv_id": "2511.15555",
+    "title": "RIS-Enabled UAV Communications and Sensing: Opportunities, Challenges, and Key Technologies",
+    "authors": [
+      "Yajun Zhao",
+      "Mengnan Jian",
+      "Yifei Yuan"
+    ],
+    "submission_date": "2025-08-12T09:28:55Z",
+    "latest_updated": "2025-08-12T09:28:55Z",
+    "revised_dates": null,
+    "venue": "IEEE Transactions on Cognitive Communications and Networking",
+    "latest_version": 1,
+    "versions": [
+      "2511.15555v1"
+    ],
+    "abstract": "Unmanned Aerial Vehicles (UAVs) play a pivotal role in the emerging low-altitude economy. However, they face significant challenges in achieving reliable network coverage during transit operations. This paper provides an in-depth investigation into the characteristics and challenges of communication networks tailored for UAVs. First, we outline typical operational scenarios, traffic patterns, and a dual-layer heterogeneous network topology. This topology is essential for enabling three-dimensional continuous coverage and ensuring seamless network coexistence between UAVs and other network entities. Moreover, the paper delves into the channel characteristics and specific challenges faced by UAV Integrated Sensing and Communication (ISAC) networks. It highlights the limitations of traditional Active Phased Array Antenna (APAA)-based networks, particularly regarding cost, complexity, and site deployment constraints. We then introduce Reconfigurable Intelligent Surface (RIS)-assisted networks as a promising solution for enhancing UAV signal coverage. The key technical features of RIS are discussed, including design principles, antenna tilt configurations, new beam types, and beam tracking mechanisms. In addition, we examine the impact of highfrequency bands and their absorption peaks on signal attenuation. The paper further explores network architecture designs aimed at improving UAV signal coverage, facilitating network coexistence, and supporting RIS-enhanced UAV sensing. Field trial results evaluating the effectiveness of RIS in improving UAV coverage are presented. Finally, we outline future technological trends and highlight potential advancements to further optimize UAV communication systems. We also emphasize the importance of engineering implementation and standardization efforts in RIS-based UAV-ISAC networks.",
+    "status": "found"
+  },
+  "2511.15556": {
+    "arxiv_id": "2511.15556",
+    "title": "Event-based Data Format Standard (EVT+)",
+    "authors": [
+      "Jonah P. Sengupta",
+      "Mohammad Imran Vakil",
+      "Thanh M. Dang",
+      "Ian Pardee",
+      "Paul Coen",
+      "Olivia Aul"
+    ],
+    "submission_date": "2025-11-19T15:49:06Z",
+    "latest_updated": "2025-11-19T15:49:06Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.15556v1"
+    ],
+    "abstract": "Event-based Sensing (EBS) hardware is quickly proliferating while finding foothold in many commercial, industrial, and defense applications. At present, there are a handful of technologically mature systems which produce data streams with diverse output formats. In the near future it is anticipated there will be vendors who offer new sensor hardware which could also yield unique data schema that are not aligned to past efforts. Thus, due to the relative nascent nature of the technology and its potential for widespread use in a variety of applications, it is an opportune time to define a standard for this class of sensors' output data. The intent of this document is to identify and provide a standard for the collected EBS streaming data. The main objective of the standard is to be sensor agnostic, incorporate some of the current sensor configurations and modalities, and account for the developing configurations and modalities. The intent is also to leave enough place holders and space in the standard for future variations that may develop as EBS technology matures.",
+    "status": "found"
+  },
+  "2511.15557": {
+    "arxiv_id": "2511.15557",
+    "title": "B+ANN: A Fast Billion-Scale Disk-based Nearest-Neighbor Index",
+    "authors": [
+      "Selim Furkan Tekin",
+      "Rajesh Bordawekar"
+    ],
+    "submission_date": "2025-11-19T15:50:28Z",
+    "latest_updated": "2025-11-19T15:50:28Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.15557v1"
+    ],
+    "abstract": "Storing and processing of embedding vectors by specialized Vector databases (VDBs) has become the linchpin in building modern AI pipelines. Most current VDBs employ variants of a graph-based ap- proximate nearest-neighbor (ANN) index algorithm, HNSW, to an- swer semantic queries over stored vectors. Inspite of its wide-spread use, the HNSW algorithm suffers from several issues: in-memory design and implementation, random memory accesses leading to degradation in cache behavior, limited acceleration scope due to fine-grained pairwise computations, and support of only semantic similarity queries. In this paper, we present a novel disk-based ANN index, B+ANN, to address these issues: it first partitions input data into blocks containing semantically similar items, then builds an B+ tree variant to store blocks both in-memory and on disks, and finally, enables hybrid edge- and block-based in-memory traversals. As demonstrated by our experimantal evaluation, the proposed B+ANN disk-based index improves both quality (Recall value), and execution performance (Queries per second/QPS) over HNSW, by improving spatial and temporal locality for semantic operations, reducing cache misses (19.23% relative gain), and decreasing the memory consumption and disk-based build time by 24x over the DiskANN algorithm. Finally, it enables dissimilarity queries, which are not supported by similarity-oriented ANN indices.",
+    "status": "found"
+  },
+  "2511.15558": {
+    "arxiv_id": "2511.15558",
+    "title": "Voss Surfaces in Sine-Gordon Hierarchies",
+    "authors": [
+      "Michal Marvan"
+    ],
+    "submission_date": "2025-11-19T15:51:01Z",
+    "latest_updated": "2026-08-14T20:11:51Z",
+    "revised_dates": null,
+    "venue": "SIGMA 22 (2026), 075, 26 pages",
+    "latest_version": 3,
+    "versions": [
+      "2511.15558v1",
+      "2511.15558v2",
+      "2511.15558v3"
+    ],
+    "abstract": "We explore a method, initiated by Guichard in 1890, which allows to generate sequences of Voss surfaces, starting from an arbitrarily chosen pseudospherical surface and a seed solution of the Moutard equation, by means of two simple transformations. In this paper, we 1) identify the Guichard transformations with the well-known recursion operator for symmetries of the sine-Gordon equation and its inverse; 2) prove a lemma which allows us to derive the length of Guichard's sequences from the invariance properties of the initial sine-Gordon solution; 3) introduce an extended class of inverted operators, expanding the class of Voss surfaces obtainable by quadratures; 4) clarify relevant aspects of Guthrie's formalism, paving the way for the future employment of the entire division algebra of recursion operators. A number of Voss nets are presented explicitly.",
+    "status": "found"
+  },
+  "2511.15559": {
+    "arxiv_id": "2511.15559",
+    "title": "Excess of diffuse gamma-ray emission detected from the galaxy cluster Abell 119 from 14-year Fermi-LAT Data",
+    "authors": [
+      "Gajanan D Harale",
+      "Surajit Paul"
+    ],
+    "submission_date": "2025-11-19T15:52:38Z",
+    "latest_updated": "2025-11-19T15:52:38Z",
+    "revised_dates": null,
+    "venue": "Gajanan D Harale and Surajit Paul 112 (2025) 103025 (Phys. Rev. D)",
+    "latest_version": 1,
+    "versions": [
+      "2511.15559v1"
+    ],
+    "abstract": "Galaxy clusters are among the most massive gravitationally bound systems in the Universe and are considered major reservoirs of high-energy cosmic rays, yet no conclusive $γ$-ray detection from them has been achieved. This non-detection may stem from limited sensitivity and source localization of current $γ$-ray instruments, as well as strong interactions of $γ$-rays with intervening material that restrict detectable signals to only a few nearby and dynamically active clusters. Motivated by these constraints, we selected a sample of nearby ($z<0.05$) merging clusters and analyzed 14 years of \\textit{Fermi}-LAT data. In this work, we present a detailed study of Abell 119 (A119), a merging cluster with significant X-ray luminosity and complex dynamics. Using \\textit{Fermipy} and \\textit{Fermi} Science Tools, we modeled all potential $γ$-ray sources and confirmed the 4FGL point sources 4FGL J0059.3$-$0152, 4FGL J0101.0$-$0059, and 4FGL J0059.2+0006 with significant TS values.s. It further reveals, a $\\sim4σ$ excess of diffuse $γ$-ray emission offset by $\\sim0.25^\\circ$ from the cluster center, plausibly associated with the cluster halo. An extended model provides the best fit, yielding luminosity bounds of $\\sim 12.21^{+2.74}_{-3.95}\\times10^{42}\\,\\mathrm{erg\\,s^{-1}}$ and a particle spectral index of $\\sim2.25^{+0.38}_{-0.13}$, consistent with earlier expectations for cluster-scale non-thermal emission. These results suggest a hadronic origin for the detected signal. Although the $\\sim4σ$ excess is compelling, uncertainties in localization and instrumental limitations prevent a definitive detection. Nonetheless, the results highlight the potential for deeper cluster studies, and the estimated neutrino flux $E^{2}φ_ν\\approx3\\times10^{-10}\\,\\mathrm{GeV\\,cm^{-2}\\,s^{-1}\\,sr^{-1}}$ motivates future observations with upcoming neutrino telescopes.",
+    "status": "found"
+  },
+  "2511.15560": {
+    "arxiv_id": "2511.15560",
+    "title": "Recent progress of scanning tunneling microscopy/spectroscopy study of pair density wave in superconductors",
+    "authors": [
+      "Zi-Ang Wang",
+      "Bin Hu",
+      "Xianghe Han",
+      "Hui Chen",
+      "Hong-Jun Gao"
+    ],
+    "submission_date": "2025-11-19T15:53:02Z",
+    "latest_updated": "2025-11-19T15:53:02Z",
+    "revised_dates": null,
+    "venue": "Front. Phys. 21, 035207 (2026)",
+    "latest_version": 1,
+    "versions": [
+      "2511.15560v1"
+    ],
+    "abstract": "A pair density wave (PDW) is a superconducting state characterized by an order parameter with finite center-of-mass momentum in the absence of an external magnetic field, thereby breaking the conventional translational symmetry in homogeneous superconductors. It is proposed that PDW emerges from magnetic interactions, strong electron-electron correlations, and their interplay with competing orders. In this review, we highlight recent advances in the detection and study of PDWs using scanning tunneling microscopy and spectroscopy (STM/STS). We focus on how the signatures of PDW have been experimentally visualized across a variety of extraordinary superconductors, including iron-based superconductors, cuprate superconductors, spin-triplet superconductors, kagome-lattice superconductors, and transition metal dichalcogenides. Beginning with an introduction to the fundamental concept of PDWs and the unique capabilities of STM/STS, particularly its atomic-scale spatial resolution and advanced data analysis techniques, we discuss key experimental findings, including the direct visualization of charge density modulations associated with PDWs. Finally, we discuss emerging challenges and future directions, aiming to inspire future research into the nature of PDWs in superconductors.",
+    "status": "found"
+  },
+  "2511.15561": {
+    "arxiv_id": "2511.15561",
+    "title": "Variance-reduced extreme value index estimators using control variates in a semi-supervised setting",
+    "authors": [
+      "Louison Bocquet-Nouaille",
+      "Jérôme Morio",
+      "Benjamin Bobbia"
+    ],
+    "submission_date": "2025-11-19T15:54:42Z",
+    "latest_updated": "2025-11-19T15:54:42Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.15561v1"
+    ],
+    "abstract": "The estimation of the Extreme Value Index (EVI) is fundamental in extreme value analysis but suffers from high variance due to reliance on only a few extreme observations. We propose a control variates based transfer learning approach in a semi-supervised framework, where a small set of coupled target and source observations is combined with abundant unpaired source data. By expressing the Hill estimator of the target EVI as a ratio of means, we apply approximate control variates to both numerator and denominator, with jointly optimized coefficients that guarantee variance reduction without introducing bias. We show theoretically and through simulations that the asymptotic relative variance reduction of the transferred Hill estimator is proportional to the tail dependence between the target and source variables and independent of their EVI values. Thus, substantial variance reduction can be achieved even without similarity in tail heaviness of the target and source distributions. The proposed approach can be extended to other EVI estimators expressed with ratio of means, as demonstrated on the moment estimator. The practical value of the proposed method is illustrated on multi-fidelity water surge and ice accretion datasets.",
+    "status": "found"
+  },
+  "2511.15562": {
+    "arxiv_id": "2511.15562",
+    "title": "High Density Hybridisation Using ENIG Bumping and Anisotropic Conductive Films",
+    "authors": [
+      "Haripriya Bangaru",
+      "Giovanni Calderini",
+      "Dominik Dannheim",
+      "Rui De Oliveira",
+      "Ahmet Lale",
+      "Moritz Lauser",
+      "Mateus Vicente Barreto Pinto",
+      "Peter Svihra"
+    ],
+    "submission_date": "2025-11-19T15:56:03Z",
+    "latest_updated": "2025-11-19T15:56:03Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.15562v1"
+    ],
+    "abstract": "Fine-pitch hybridisation processes are essential for next-generation pixel detectors and high-density microelectronic assemblies. Conventional bump-bonding techniques, although reliable, remain costly and difficult to implement for single-die applications. In this work, we present flip-chip hybridisation results combining Electroless Nickel Immersion Gold (ENIG) bumping with Anisotropic Conductive Film (ACF) bonding, both developed in-house. This method enables fine-pitch interconnections without requiring wafer-level processing. The feasibility of the ENIG-ACF process for functional devices was demonstrated by hybridising functional Timepix3 ASIC and Ti-LGAD (Trench Isolated Low-Gain Avalanche Detector) sensors with 55 um pitch. The approach was then extended to test structures with 25 um pitch, using aligned-particle ACFs. The analysis revealed that the main limitation originated from the mismatch between ACF thickness and bump height, underlining the importance of interface geometry optimisation. To address this, a dedicated simulation program was developed to model the isotropic growth of ENIG bumps and to determine the optimum bump height as a function of ACF thickness and pixel-matrix geometry. The results provide valuable guidelines for future high connection density assemblies and demonstrate the potential of the ENIG-ACF process as a scalable, low-cost alternative to conventional bump-bonding techniques.",
+    "status": "found"
+  },
+  "2511.15563": {
+    "arxiv_id": "2511.15563",
+    "title": "Design and Optimization of Adaptive Diversity Schemes in Quantum MIMO Channels",
+    "authors": [
+      "Shehbaz Tariq",
+      "Symeon Chatzinotas"
+    ],
+    "submission_date": "2025-11-19T15:58:10Z",
+    "latest_updated": "2025-11-19T15:58:10Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.15563v1"
+    ],
+    "abstract": "As quantum networks evolve toward a full quantum Internet, reliable transmission in quantum multiple-input multiple-output (QuMIMO) settings becomes essential, yet remains difficult due to noise, crosstalk, and the mixing of quantum information across subchannels. To improve reliability in such settings, we study an adaptive diversity strategy for discrete-variable QuMIMO systems based on universal asymmetric cloning at the transmitter and probabilistic purification at the receiver. An input qubit is encoded into M approximate clones, transmitted over an N x N multi-mode quantum channel, and recovered through a purification map optimized using available channel state information (CSI). For the given cloning asymmetry parameters, we derive an eigenvalue-based expression for the decoder-optimal end-to-end fidelity in the form of a generalized Rayleigh quotient, which enables efficient tuning of the cloner without iterative optimization. As a design choice, we employ semidefinite program (SDP) to construct the purification map for only a targeted success probability p. This numerical framework is used to study fixed-noise, dimension-scaling noise, and stochastic depolarization regimes. A cloning asymmetry index is introduced to quantify the distribution of quantum information across the multiple subchannels across these operating conditions. The results show that the proposed scheme yields significant fidelity gains in crosstalk-dominated settings and automatically adapts to channel symmetry and channel conditions. This work provides design guidelines for future QuMIMO systems and establishes a robust baseline for more advanced transmission and decoding strategies.",
+    "status": "found"
+  },
+  "2511.15564": {
+    "arxiv_id": "2511.15564",
+    "title": "Toward Open-Source Chiplets for HPC and AI: Occamy and Beyond",
+    "authors": [
+      "Paul Scheffler",
+      "Thomas Benz",
+      "Tim Fischer",
+      "Lorenzo Leone",
+      "Sina Arjmandpour",
+      "Luca Benini"
+    ],
+    "submission_date": "2025-11-19T15:58:21Z",
+    "latest_updated": "2025-11-19T15:58:21Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.15564v1"
+    ],
+    "abstract": "We present a roadmap for open-source chiplet-based RISC-V systems targeting high-performance computing and artificial intelligence, aiming to close the performance gap to proprietary designs. Starting with Occamy, the first open, silicon-proven dual-chiplet RISC-V manycore in 12nm FinFET, we scale to Ramora, a mesh-NoC-based dual-chiplet system, and to Ogopogo, a 7nm quad-chiplet concept architecture achieving state-of-the-art compute density. Finally, we explore possible avenues to extend openness beyond logic-core RTL into simulation, EDA, PDKs, and off-die PHYs.",
+    "status": "found"
+  },
+  "2511.15565": {
+    "arxiv_id": "2511.15565",
+    "title": "Scriboora: Rethinking Human Pose Forecasting",
+    "authors": [
+      "Daniel Bermuth",
+      "Alexander Poeppel",
+      "Wolfgang Reif"
+    ],
+    "submission_date": "2025-11-19T15:58:33Z",
+    "latest_updated": "2026-09-27T16:12:09Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2511.15565v1",
+      "2511.15565v2",
+      "2511.15565v3"
+    ],
+    "abstract": "Human pose forecasting predicts future human poses from past observations for applications including action recognition, sports analysis, and human-robot interaction. However, progress in the field is difficult to assess because reported results often rely on heterogeneous preprocessing, inconsistent metric implementations, and partially released artifacts. This paper re-examines human pose forecasting as an evaluation problem by auditing a wide range of recent forecasting methods, identifying several reproducibility issues, and introducing a unified training and evaluation pipeline for absolute pose forecasting. Under this unified protocol, mature cross-domain sequence models adapted from speech recognition provide strong baselines and obtain the lowest errors among the evaluated models. To study deployment-relevant noise, a paired clean/detector-noisy dataset variant is introduced using poses generated by a pose-estimation model. The experiments show that detector-generated poses cause substantial performance degradation compared with clean motion-capture inputs, but that part of this degradation can be recovered by adapting the forecaster on detector-generated pose sequences.",
+    "status": "found"
+  },
+  "2511.15566": {
+    "arxiv_id": "2511.15566",
+    "title": "Constraint-preserving quantum algorithm for the multi-frequency antenna placement problem",
+    "authors": [
+      "Matteo Vandelli",
+      "Francesco Ferrari",
+      "Daniele Dragoni"
+    ],
+    "submission_date": "2025-11-19T15:59:20Z",
+    "latest_updated": "2025-11-19T15:59:20Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.15566v1"
+    ],
+    "abstract": "Quantum algorithms for combinatorial optimization typically encode constraints as soft penalties within the objective function, which can reduce efficiency and scalability compared to state-of-the-art classical methods that instead exploit constraints to guide the search toward high-quality solutions. Although solving this issue for an arbitrary problem is inherently a hard task, we address this challenge for a specific problem in the field of telecommunications, the multi-frequency antenna placement problem, by introducing a constraint-preserving quantum adiabatic algorithm (QAA). To this aim, we construct a quantum circuit that prepares an initial state comprising an equal superposition of all feasible solutions, and define a custom mixer that preserves both the one-hot encoding constraint for vertex coloring and the cardinality constraint on the number of antennas. This scheme can be extended to a broader range of applications characterized by similar constraints. We first benchmark the performance of this quantum algorithm against a basic version of QAA, demonstrating superior performance in terms of feasibility and success probability. We then apply this algorithm to large problem sizes with hundreds of variables using a constraint-aware decomposition method based on the SPLIT framework. Our results indicate competitive performance against other large-scale classical approaches, such as branch-and-bound and simulated annealing. This work supports previous claims that constraint-aware algorithms are crucial for the practical and efficient application of quantum methods in industrial settings.",
+    "status": "found"
+  },
+  "2511.15567": {
+    "arxiv_id": "2511.15567",
+    "title": "Computer-Use Agents as Judges for Generative User Interface",
+    "authors": [
+      "Kevin Qinghong Lin",
+      "Siyuan Hu",
+      "Linjie Li",
+      "Zhengyuan Yang",
+      "Lijuan Wang",
+      "Philip Torr",
+      "Mike Zheng Shou"
+    ],
+    "submission_date": "2025-11-19T16:00:02Z",
+    "latest_updated": "2025-11-19T16:00:02Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.15567v1"
+    ],
+    "abstract": "Computer-Use Agents (CUA) are becoming increasingly capable of autonomously operating digital environments through Graphical User Interfaces (GUI). Yet, most GUI remain designed primarily for humans--prioritizing aesthetics and usability--forcing agents to adopt human-oriented behaviors that are unnecessary for efficient task execution. At the same time, rapid advances in coding-oriented language models (Coder) have transformed automatic GUI design. This raises a fundamental question: Can CUA as judges to assist Coder for automatic GUI design? To investigate, we introduce AUI-Gym, a benchmark for Automatic GUI development spanning 52 applications across diverse domains. Using language models, we synthesize 1560 tasks that simulate real-world scenarios. To ensure task reliability, we further develop a verifier that programmatically checks whether each task is executable within its environment. Building on this, we propose a Coder-CUA in Collaboration framework: the Coder acts as Designer, generating and revising websites, while the CUA serves as Judge, evaluating functionality and refining designs. Success is measured not by visual appearance, but by task solvability and CUA navigation success rate. To turn CUA feedback into usable guidance, we design a CUA Dashboard that compresses multi-step navigation histories into concise visual summaries, offering interpretable guidance for iterative redesign. By positioning agents as both designers and judges, our framework shifts interface design toward agent-native efficiency and reliability. Our work takes a step toward shifting agents from passive use toward active participation in digital environments. Our code and dataset are available at https://github.com/showlab/AUI.",
+    "status": "found"
+  },
+  "2511.15568": {
+    "arxiv_id": "2511.15568",
+    "title": "Integrability of Siegel transforms and an application",
+    "authors": [
+      "René Pfitscher"
+    ],
+    "submission_date": "2025-11-19T16:01:47Z",
+    "latest_updated": "2025-11-19T16:01:47Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.15568v1"
+    ],
+    "abstract": "We establish sharp algebraic criteria for the $L^{p}$-integrability, for $p = 1, 2, \\infty$, of a natural generalization of the Siegel transform to the setting of rational representations of semisimple algebraic $\\mathbb{Q}$-groups, extending Siegel's analytic work in the geometry of numbers. As an application, we derive an effective asymptotic formula for the number of rational approximations of bounded height to almost every real point on a rank-one flag variety at the Diophantine exponent. The argument combines the integrability criterion with effective equidistribution estimates for translated orbits of maximal compact subgroups, a result of independent interest.",
+    "status": "found"
+  }
+}

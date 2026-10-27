@@ -1,0 +1,400 @@
+{
+  "2608.10047": {
+    "arxiv_id": "2608.10047",
+    "title": "Physics-Informed Machine Learning in Prognostics and Health Management: A Systematic Literature Review",
+    "authors": [
+      "Christopher Braun",
+      "Julian Raible",
+      "Marco F. Huber"
+    ],
+    "submission_date": "2026-08-10T13:20:08Z",
+    "latest_updated": "2026-08-10T13:20:08Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10047v1"
+    ],
+    "abstract": "In modern industry, keeping complex systems reliable, safe, and efficient hinges on Prognostics and Health Management (PHM). Machine Learning (ML) has largely driven advancements in diagnostics and prognostics, yet purely data-driven models face inherent limitations, such as poor generalization, an inability to infer causal relationships, and a lack of interpretability. Physics-Informed Machine Learning (PIML) helps mitigate these limitations by incorporating prior physical knowledge directly into the ML pipeline, thereby fostering growing interest in its application to PHM. This work investigates how PIML is being leveraged in the context of PHM through a systematic literature review of 212 studies. The review introduces a four-class classification scheme, consisting of observational bias, inductive bias, learning bias, and hybrid approaches, and further categorizes studies by PHM task. Across all four classes, the reviewed studies consistently demonstrate improved predictive performance over conventional baselines across a broad range of assets, although the literature is heavily skewed toward lithium-ion batteries and bearings, and dominated by problem-specific solutions. Overall, the review indicates that physics-informed approaches already provide tangible benefits, whereas claims of improvements concerning some of the aforementioned limitations lack sufficient supporting evidence. Future research should prioritize transferable design patterns, benchmarks comparing integration strategies, and uncertainty-aware models that are lightweight and robust enough for online deployment in real-world settings.",
+    "status": "found"
+  },
+  "2608.10048": {
+    "arxiv_id": "2608.10048",
+    "title": "Numerical modeling of microstructure evolution in nanocrystalline alloys - grain boundary segregation, solute drag and mechanics",
+    "authors": [
+      "Prakarsh Pandey",
+      "Shiva Rudraraju"
+    ],
+    "submission_date": "2026-08-10T14:23:19Z",
+    "latest_updated": "2026-08-10T14:23:19Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10048v1"
+    ],
+    "abstract": "Nanocrystalline (NC) alloys hold much promise as structural alloys due to their superior mechanical properties over traditional coarser grained microcrystalline alloys. Strength of metallic alloys is related to the underlying grain size - as represented by the classical Hall-Petch relation. Generally, a metals strength increases with decreasing mean grain size from the micrometer scale to the nanometer scale, until about a mean size of 20 nm. Any further decrease of grain size results in decreasing strength. Thus, there is an optimal range of mean grain size for most metals about which maximum material strength can be obtained. In the context of NC alloys, stabilization of the grain size in this optimal range is one of the primary synthesis challenges. Since nm-scale mean grain sizes are desired, phenomena like GB solute segregation and solute precipitation are utilized during alloy synthesis to mitigate grain growth. Numerical modeling the phenomena of GB-solute interactions and the evolution of these stabilized GBs under mechanical load are of immense interest to the NC alloy community. To enrich the numerical modeling formulations available in this space, we present here a phase-field method based numerical framework to model GB segregation, solute precipitation and effect of external loading on NC alloys. While some of these effects have been modeled in isolation, a unified treatment of the solute and GB segregation with mechanics interactions has not be considered in the literature. We present a 3D FEM finite-strain phase-field formulation for modeling grain evolution and microstructure stabilization. Beyond the formulation, various case studies demonstrate the applicability of this framework. Further, thermodynamic and kinetic arguments are provided based on the evolution of GB energy to explain the effects of solute drag, GB pinning and mechanical deformation.",
+    "status": "found"
+  },
+  "2608.10049": {
+    "arxiv_id": "2608.10049",
+    "title": "Virtually Gorenstein Artin algebras are weakly Gorenstein",
+    "authors": [
+      "Weiqing Li"
+    ],
+    "submission_date": "2026-08-10T14:37:31Z",
+    "latest_updated": "2026-09-10T13:39:38Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2608.10049v1",
+      "2608.10049v2",
+      "2608.10049v3"
+    ],
+    "abstract": "We prove that all (possibly infinitely generated) semi-Gorenstein-projective modules over a virtually Gorenstein Artin algebra are Gorenstein projective. We also establish a new criterion for determining the projective (injective) dimensions of modules over virtually Gorenstein Artin algebras. This enables us to show the validities of the Auslander-Gorenstein Conjecture, the (Strong) Nakayama Conjecture and Tachikawa's First Conjecture for virtually Gorenstein Artin algebras. Finally, we prove that the Auslander-Reiten Conjecture holds for virtually Gorenstein Artin algebras of finite CM-type.",
+    "status": "found"
+  },
+  "2608.10050": {
+    "arxiv_id": "2608.10050",
+    "title": "Observational Policy Ranking for SMB Financial Guidance from Multi-Action Accounting Logs",
+    "authors": [
+      "Shrutendra Harsola",
+      "Vignesh Subrahmaniam",
+      "Vikas Raturi",
+      "Kamalika Das",
+      "Xiang Gao",
+      "Kratika Gupta",
+      "Ruocheng Guo",
+      "Padmaja Jonnalagedda",
+      "Ananya Pramod",
+      "Sricharan Kumar"
+    ],
+    "submission_date": "2026-08-10T14:46:10Z",
+    "latest_updated": "2026-08-10T14:46:10Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10050v1"
+    ],
+    "abstract": "Small and medium-sized businesses need timely financial guidance, yet historical accounting logs record self-selected and often co-occurring business changes rather than randomized recommendations. We formulate this setting as observational policy ranking: from pre-decision financial information, a policy selects one of 34 ledger-derived business-change categories for a target financial KPI. Using 85,078 company-month observations from 7,505 firms, we introduce Covariate-Adjusted Residual Policy Learning (CAR-PL), an action-wise R-learner that operates directly on multi-hot logs and regularizes selection by observational support. We compare CAR-PL with an uplift T-Learner, a conservative contextual value model, a zero-shot LLM, and non-personalized references on company-disjoint held-out firms under a shared model-assisted scoring rule. CAR-PL has the highest Gross Profit point estimate (0.084), the T-Learner has the highest Revenue point estimate (0.085), and the contextual value model has the highest Quick Ratio point estimate (0.062). CAR-PL and the T-Learner are not statistically separated on either growth KPI in matched company-clustered comparisons, while CAR-PL selects 33-34 categories and produces less concentrated selections across the catalog. Outcome-model-only scoring retains the same KPI-level point-estimate leader or top pair, and category rankings remain similar when the all-zero treatment reference is replaced by the most common training co-action pattern. These findings support objective-specific ranking of SMB financial guidance from multi-action accounting logs.",
+    "status": "found"
+  },
+  "2608.10051": {
+    "arxiv_id": "2608.10051",
+    "title": "Global Non-Identifiability of Fubini-Study Geometry from Complete One-Period Endpoint Data",
+    "authors": [
+      "Rashid Ahmad"
+    ],
+    "submission_date": "2026-08-10T15:33:19Z",
+    "latest_updated": "2026-08-10T15:33:19Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10051v1"
+    ],
+    "abstract": "We establish a global, worst-case non-identifiability theorem for periodically driven finite-dimensional quantum systems. On the unrestricted smooth periodic Hamiltonian class, we show that the period-averaged Fubini-Study metric component of a fixed initial state cannot, in general, be reconstructed from exact one-period propagators indexed by every starting time and external parameter. Thus, even complete starting-time-resolved endpoint data are insufficient to determine this intra-period geometric quantity. The obstruction is characterized exactly. The starting-time-indexed endpoint data determine the conjugation path of the monodromy, but not its particular unitary lift. On each fixed-monodromy slice, the observational fibres are precisely the right orbits generated by smooth parameter-dependent based loops taking values in the pointwise centralizer of the monodromy. The Fubini-Study functional is not invariant under this fibre action and therefore does not factor through the endpoint observation map. An explicit real-analytic two-level witness demonstrates the obstruction within a commuting, one-generator Hamiltonian family, so neither non-Abelian time ordering nor Floquet-logarithm ambiguity is required. A continuous family of Hamiltonians produces identical starting-time-indexed one-period endpoint data while yielding different, and on the unrestricted class arbitrarily separated, period-averaged Fubini-Study geometry. Non-identifiability persists under any prescribed uniform bound on the parameter derivative of the Hamiltonian. The result is a deterministic global statement, not a claim of generic non-identifiability or experimental impossibility. It identifies a precise information gap between complete one-period endpoint data and full intra-period dynamics: the missing information is the unitary lift of the observed monodromy path rather than ordinary scalar phase freedom.",
+    "status": "found"
+  },
+  "2608.10052": {
+    "arxiv_id": "2608.10052",
+    "title": "Ripple Signatures of Majorana Hybridization across a Topological Quantum Quench",
+    "authors": [
+      "Xin-Xin Wang",
+      "Jin-Xin Li",
+      "Ya-Wen Tang",
+      "Lu Qin",
+      "Zun-Lue Zhu",
+      "Wu-Ming Liu",
+      "Liang-Liang Wang",
+      "Xing-Dong Zhao"
+    ],
+    "submission_date": "2026-08-10T15:57:25Z",
+    "latest_updated": "2026-08-10T15:57:25Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10052v1"
+    ],
+    "abstract": "The crossover between topology and nonequilibrium dynamics has emerged as a rich frontier, in which quantum systems can exhibit unique dynamical phenomena that lie beyond the reach of equilibrium. Of particular interest are quench dynamics across topological phase, as it may reveal the information about the underlying Majorana zero-energy states. Here, we investigate the fate of Majorana boundary modes in a quenched fermionic superfluid using self-consistent time-dependent Bogoliubov-de Gennes theory. For quantum quenches within the topological regime, Majorana boundary modes survive but undergo coherent boundary oscillations arising from the nonadiabatic deformation of their wave functions. Furthermore, a pronounced ripple pattern appears in the post-quench density distribution following a sudden topology-changing quench. Here we identify that these ripple structures originates from the coherent hybridization and interference of the initially separated Majorana boundary states. Our findings establish nonequilibrium boundary dynamics as a new approach for probing Majorana physics, which is complementary to conventional equilibrium measurements.",
+    "status": "found"
+  },
+  "2608.10053": {
+    "arxiv_id": "2608.10053",
+    "title": "ND-Photonic QRNGs in a Noisy Environment",
+    "authors": [
+      "J. M. Agüero Trejo",
+      "Cristian S. Calude",
+      "O. C. Stoica"
+    ],
+    "submission_date": "2026-08-10T17:25:37Z",
+    "latest_updated": "2026-08-10T17:25:37Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10053v1"
+    ],
+    "abstract": "Standard pseudo-random generators have weaknesses that have led to the development of quantum random number generators (QRNGs). However, common QRNG validation methods, whether based on quantum indeterminism or statistical tests, are insufficient to guarantee high-quality randomness. In contrast, a mathematical theory based on the Located Kochen-Specker Theorem proves that 3D QRNGs produce maximally unpredictable outputs without using entanglement, and both theory and experiments have supported their security. The paper focuses on a practical photonic implementation of a 3D QRNG that is easier to deploy than cryogenic superconducting implementations. As any physical implementation is subject to various measurement errors, it is important to study theoretically and experimentally the type and role of errors in 3D QRNGs. In this paper, we will model the photonic 3D QRNG as an open quantum system, constructed as an arrangement of imperfect beam-splitters with a range of losses based on the fidelity of its components, and we will show that under certain conditions, the process remains within the scope of the Kochen-Specker Theorem, which guarantees maximum unpredictability.",
+    "status": "found"
+  },
+  "2608.10054": {
+    "arxiv_id": "2608.10054",
+    "title": "Training Set Synthesis for Bioacoustic Denoising: A Case Study With Mice",
+    "authors": [
+      "Reyhaneh Abbasi",
+      "Peter Balazs",
+      "Vincent Lostanlen",
+      "Clara Hollomey",
+      "Dustin J. Penn",
+      "Sarah M. Zala",
+      "Nicki Holighaus"
+    ],
+    "submission_date": "2026-08-10T17:53:14Z",
+    "latest_updated": "2026-08-10T17:53:14Z",
+    "revised_dates": null,
+    "venue": "IEEE Transactions on Audio, Speech and Language Processing 34 (2026) 3802-3816",
+    "latest_version": 1,
+    "versions": [
+      "2608.10054v1"
+    ],
+    "abstract": "Bioacoustic recordings are often degraded by ambient noise, which complicates the analysis of weak or noise-overlapped vocalizations. Convolutional neural networks, particularly U-Net architectures, have shown a strong denoising performance in speech and music processing. However, their direct application to bioacoustic signals is limited by the scarcity of clean training data. To address this issue, we propose a training set synthesis approach and develop a supervised denoising model that predicts a complex ratio mask in the time-frequency domain. The model leverages ridges, or frequency contours, that represent the fundamental frequency together with one or more harmonic partial components of vocalizations. These ridges are used both for the synthesis of training sets and to design a loss function that assigns higher weights to the ridge regions (ridge-guided loss function). This weighting step helps the network better preserve vocalization details during denoising. As a case study, we evaluate our approach using ultrasonic vocalizations (USVs) recordings of house mice, which are widely studied in behavioral biology and neuroscience. In actual field recordings, the proposed method enhances fundamental and harmonic partial ridge tracking compared to our previous signal-processing approach. In addition, a classifier trained on denoised data improves USV classification on out-of-sample, noisy recordings from wild and domesticated mice compared to classifiers trained on noisy recordings. Our proposed method also substantially improves the scale-invariant signal-to-distortion ratio on synthetic testing data across a wide range of input signal-to-noise ratios. Although we focus on USVs, the proposed approach should be broadly applicable to other bioacoustic signals with trackable ridges, and thus enables ridgebased training set synthesis and denoising.",
+    "status": "found"
+  },
+  "2608.10055": {
+    "arxiv_id": "2608.10055",
+    "title": "Polyhedral Outer-Approximations for MISOCP: Geometry and Cutting Planes",
+    "authors": [
+      "Yongzheng Dai"
+    ],
+    "submission_date": "2026-08-10T17:54:50Z",
+    "latest_updated": "2026-08-10T17:54:50Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10055v1"
+    ],
+    "abstract": "Mixed-integer second-order cone programs are commonly solved by polyhedral outer approximation (OA), which iteratively strengthens a linear relaxation of the conic feasible region through cutting planes. We study how such approximations can be constructed more efficiently. First, we analyze the marginal contribution of a newly generated cut relative to cuts already present in the relaxation. Using violation- and volume-based measures, we show that this contribution decreases at least as fast as linearly as the new supporting direction approaches an existing one. Motivated by this geometric analysis, we develop a cut-generation strategy that balances separation depth with angular novelty and admits closed-form constructions. Second, we introduce a progressive-integrality OA framework that proceeds from an LP relaxation through partially integral relaxations before reaching the full MILP, thereby using inexpensive early iterations to strengthen the approximation before later mixed-integer solves. Computational experiments on CBLIB instances and large-scale AC unit-commitment models demonstrate complementary benefits from the proposed cut strategy and progressive integrality, substantially reducing the computational effort of outer approximation.",
+    "status": "found"
+  },
+  "2608.10056": {
+    "arxiv_id": "2608.10056",
+    "title": "Navigating the Proximity-Safety Balance: Constraint Decomposition for Human Following in Pedestrian Crowds",
+    "authors": [
+      "Shiting Gong",
+      "Jianpeng Yao",
+      "Jinfeng Wang",
+      "Marco Pavone",
+      "Jiachen Li"
+    ],
+    "submission_date": "2026-08-10T17:59:15Z",
+    "latest_updated": "2026-08-10T17:59:15Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10056v1"
+    ],
+    "abstract": "Following a target human in crowded environments involves an inherent conflict between staying close to the target and navigating safely among surrounding pedestrians and obstacles. This conflict becomes more severe in dense scenarios, where aggressive following risks collisions and conservative margins lead to target loss, especially when pedestrian behaviors are unfamiliar or unpredictable. Existing reinforcement learning (RL) methods typically encode these competing objectives into a single dense reward, but the resulting proximity-safety balance is implicit and difficult to adjust across conditions. To address this, we decompose the human-following task into a sparse task reward and independent cost constraints within a multi-constraint RL formulation, where each constraint is managed through cost thresholds with direct behavioral meaning rather than implicit reward weight ratios, allowing explicit and tunable control over the trade-off. We further quantify the prediction uncertainty of human motions and integrate these estimates into the RL costs to enhance safety under unpredictable conditions. Extensive experiments across both in-distribution and out-of-distribution settings demonstrate that our method achieves an effective proximity-safety balance compared to baselines. Real-robot deployment further validates the feasibility of our method in real-world scenarios. More details are available on our project page: https://nav-ps-balance.github.io/.",
+    "status": "found"
+  },
+  "2608.10057": {
+    "arxiv_id": "2608.10057",
+    "title": "LEGO: Leveled Language Gaussian Splatting",
+    "authors": [
+      "Yuning Peng",
+      "Haiping Wang",
+      "Yuan Liu",
+      "Yipeng Lu",
+      "Zhen Dong",
+      "Bisheng Yang"
+    ],
+    "submission_date": "2026-08-10T17:59:21Z",
+    "latest_updated": "2026-08-10T17:59:21Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10057v1"
+    ],
+    "abstract": "We introduce LEGO for advanced open-vocabulary scene understanding. Beyond basic concept recognition, its core innovation lies in capturing the intrinsic semantic hierarchies within the scene, such as the \"flowerpot -> bouquet -> bud -> petal\" lineage. While foundation models like SAM can identify multi-granular structures in 2D, their partitions are strictly perspective-bound and lack cross-view consensus. LEGO self-adaptively re-grades volatile multi-view SAM granularities into a unified, 3D-consistent hierarchy. This provides precise supervision for the structurally coherent, multi-level segmentation of 3D scenes. By grounding these segments with CLIP embeddings, LEGO recovers open-vocabulary semantic logic across hierarchical levels. Furthermore, by incorporating spatial relationships, we elevate these segments into level-wise language scene graphs, effectively empowering Large Language Models to perform complex, context-aware spatial reasoning and precise visual grounding. Experimental results demonstrate that LEGO establishes new state-of-the-art performance across both promptable and open-vocabulary 3D segmentation benchmarks, exhibiting advanced hierarchical scene decomposition and context-aware spatial reasoning.",
+    "status": "found"
+  },
+  "2608.10058": {
+    "arxiv_id": "2608.10058",
+    "title": "Radiative Transfer Modeling of Stripped-envelope Supernovae II: Neural Network Emulation of Light Curves",
+    "authors": [
+      "S. Karthik Yadavalli",
+      "V. Ashley Villar",
+      "Maria R. Drout",
+      "Sebastian Gomez",
+      "Miranda Pikus",
+      "Yunyi Shen"
+    ],
+    "submission_date": "2026-08-10T18:00:00Z",
+    "latest_updated": "2026-08-10T18:00:00Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10058v1"
+    ],
+    "abstract": "We present the first neural-network emulator of stripped-envelope supernova (SESN) lightcurves, trained on a grid of 4499 light curves simulated with the radiative transfer (RT) code sedona. Using this emulator, we show that m_ni, m_ejecta, the ejecta velocity profile, and the degree of Ni-56 mixing can all be inferred from multiband lightcurves. We find that the degeneracy between ejecta mass and ejecta velocity is substantially weaker with this emulator than in traditional semianalytical models. The emulator is able to independently constrain the influence of ejecta mass and of ejecta velocity on the resulting lightcurve, rather than making them degenerate by design as traditional semianalytical models do. We additionally show that this inference is significantly more accurate than that done by the classical Arnett model for both simulated ZTF-like and LSST-like lightcurves. Finally, we present lightcurves fits to three well-studied SESNe: SN~1994I, SN~2007gr, and iPTF13bvn, constraining their m_ni, m_ejecta, and Ni-56 mixing.",
+    "status": "found"
+  },
+  "2608.10059": {
+    "arxiv_id": "2608.10059",
+    "title": "Cell Natural Orbitals in Quantum Materials",
+    "authors": [
+      "Harshitra Mahalingam",
+      "Nishchhal Verma",
+      "Daniel Muñoz-Segovia",
+      "Raquel Queiroz"
+    ],
+    "submission_date": "2026-08-10T18:00:00Z",
+    "latest_updated": "2026-08-10T18:00:00Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10059v1"
+    ],
+    "abstract": "Understanding correlated quantum matter starts with an accurate model of the single-particle states that interact at low energies: their dispersion, band geometry, orbital content and charge density. In many cases, notably the topological bands of moire materials, it is not straightforward to find a real-space description with a few local orbitals that accomplishes this task. Here we provide a systematic way to identify the local degrees of freedom that best capture the band geometry and charge density of any chosen set of bands. We use the unit-cell one-particle reduced density matrix (UC-1pRDM), obtained by restricting the projector onto the target bands to a single unit cell. Its eigenstates, which we call cell natural orbitals (CNOs), form a local, symmetric basis uniquely determined by the Bloch wavefunctions and the choice of real-space partition. Their eigenvalues measure the occupation of each CNO in the target bands, quantifying entanglement across unit-cell boundaries and the importance of multi-orbital character. A set of CNOs that maximizes total spectral weight and reproduces the target band symmetries provides optimal trial states for Wannierization. We exemplify this by constructing a lattice model for twisted bilayer WSe$_2$ that tracks the orbital content across twist angles.",
+    "status": "found"
+  },
+  "2608.10060": {
+    "arxiv_id": "2608.10060",
+    "title": "Complexity measures in holographic cascading theories with multiscale dynamics",
+    "authors": [
+      "Carlos Nunez",
+      "Juan F. Pedraza",
+      "Javier G. Subils"
+    ],
+    "submission_date": "2026-08-10T18:00:00Z",
+    "latest_updated": "2026-08-10T18:00:00Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10060v1"
+    ],
+    "abstract": "Using the gravitational duals, we perform a systematic study of two notions of complexity in a family of three-dimensional gauge theories with rich infrared structure. For thermofield double states, we employ the complexity=volume prescription, which relates computational complexity to the volume of the dual Einstein-Rosen bridge. For one particle states created by the insertion of a local operator on the vacuum, we study their spreading in Krylov space, encoded holographically by the radial momentum of bulk excitations. We investigate these two notions of complexity across the parameter space of the theories, focusing on the two limiting values of a tunable parameter. Near the limit where the theories flow close to an intermediate conformal fixed point, both notions reveal distinct manifestations of ``walking'' dynamics. Near the opposite limit, computational complexity is largely insensitive to the confining nature of the ground state, whereas the frequency of oscillations in the Krylov spread complexity -- set by the emerging infrared scale -- is sensitive to the presence of confinement.",
+    "status": "found"
+  },
+  "2608.10061": {
+    "arxiv_id": "2608.10061",
+    "title": "Mysterious Transients in the Palomar Observatory Sky Survey (POSS-1) as profound manifestation of the Dark Matter physics",
+    "authors": [
+      "Ariel Zhitnitsky"
+    ],
+    "submission_date": "2026-08-10T18:00:00Z",
+    "latest_updated": "2026-08-10T18:00:00Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10061v1"
+    ],
+    "abstract": "Transient star-like objects of unknown origin have been identified in the first Palomar Observatory Sky Survey (POSS-1) as part of the Vanishing and Appearing Sources during a Century of Observations (VASCO) project. The source of the transients recorded by POSS-1 remains unknown, which is the warrant to coin the observed phenomena as Mysterious Transients (MT). We advocate an idea that the dark matter (DM) in form of the axion quark nuggets (AQN) made of standard model quarks (or antiquarks) and gluons, similar to the old idea of the Witten's strangelets, could {\\it simultaneously} explain {\\it all } the observed MT signals (including very short time scale for flash itself, association with nuclear test timing, observed alignments of several MT events, correlation with UAP reports, etc) collected or recorded for many years. Essentially we argue that the MT is a cousin of Ball Lightning (BL) events, also observed for centuries, without commonly accepted physics explanation. The basic parameters of this model (such as the typical baryon charge of the nuggets) had been fixed long ago by explaining the observed excess of radiation at variety of scales: from galactic to the solar, to local Earth's environments. In this work we use the same framework with the same set of parameters to study the observed MT phenomena. We also suggest several tests which substantiate or refute our proposal. We also present some suggestions on type of instruments required to study this specific (and well defined) type of the UAP events representing the cousins of BL and MT events in the AQN framework.",
+    "status": "found"
+  },
+  "2608.10062": {
+    "arxiv_id": "2608.10062",
+    "title": "Archimedean Seesaw: Small Neutrino Masses and Large Lepton-number Violation",
+    "authors": [
+      "Tao Han",
+      "Alejandro Ibarra",
+      "Subhojit Roy",
+      "Martina Sabová"
+    ],
+    "submission_date": "2026-08-10T18:00:00Z",
+    "latest_updated": "2026-08-10T18:00:00Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10062v1"
+    ],
+    "abstract": "Contrary to the common lore that observable lepton-number violation (LNV) is inevitably suppressed by tiny neutrino masses, we identify a class of seesaw models in which arbitrarily large LNV can naturally coexist with sub-eV neutrino masses. We construct a symmetry-protected texture-zero structure in the neutrino Yukawa couplings and heavy Majorana mass matrix that gives rise to the required accidental symmetry, thereby protecting the light neutrinos from acquiring mass even in the presence of arbitrarily large LNV in the heavy sector. Small neutrino masses arise naturally from lifting the texture-zero structure while preserving the underlying symmetry. The resulting framework offers a rich and experimentally accessible phenomenology, predicting Heavy Neutral Leptons with sizeable active-sterile mixing over a broad range of experimentally accessible masses, giving rise to observable LNV signatures at collider and intensity-frontier experiments.",
+    "status": "found"
+  },
+  "2608.10063": {
+    "arxiv_id": "2608.10063",
+    "title": "Unveiling and Characterising Ubiquitous Nitrogen Enhancement in $6 \\leq z \\leq 10$ Galaxies with JWST Spectroscopy",
+    "authors": [
+      "Raunaq Singh Rai",
+      "Guido Roberts-Borsani"
+    ],
+    "submission_date": "2026-08-10T18:00:00Z",
+    "latest_updated": "2026-08-10T18:00:00Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10063v1"
+    ],
+    "abstract": "The James Webb Space Telescope (JWST) has revealed a growing number of $z>6$ galaxies with enhanced N/O ratios that challenge standard chemical enrichment frameworks. We test whether this is exclusive to extreme systems or a generic feature of $6 \\leq z \\leq 10$ populations through a stacking analysis of 135 galaxies with JWST/NIRSpec $R\\sim1000$ spectroscopy, probing the origin of N, C and O enrichment and its dependence on recent star formation. A full-sample composite reveals prominent C III], C IV, N IV] and He II emission, demonstrating a ubiquity of high-ionisation UV lines. Auroral [O III]$λ$4363 electron temperatures and multi-ionisation zone modelling yield direct-$T_e$ abundances with supersolar $\\log(\\mathrm{N/O}) = -0.57^{+0.09}_{-0.10}$ and subsolar $\\log(\\mathrm{C/O}) = -0.80^{+0.03}_{-0.03}$ at $12 + \\log(\\mathrm{O/H}) = 7.79^{+0.03}_{-0.03}$, in contrast with local samples and suggesting significant nitrogen enhancement within the first billion years. Stacking further by recent star formation activity over burst timescales of $Δt = 3$--$20$~Myr, we find that sources caught in a recent burst are less enriched in both N/O and metallicity than those in a relative lull, with the largest contrasts confined to the shortest timescales. C/O, however, remains largely invariant across all metrics. We interpret these observations as the result of delayed AGB enrichment across multiple burst episodes, together with dilution by pristine gas inflows. Cosmological simulations reproduce this trend with CCSNe and AGB yields alone, without the need for shorter-lived (super-)massive stars. Enhanced N/O therefore appears to be a generic feature of high-redshift systems, produced by standard enrichment processes rather than requiring new physical frameworks.",
+    "status": "found"
+  },
+  "2608.10064": {
+    "arxiv_id": "2608.10064",
+    "title": "Electroweak precision observables at NLL order in the SMEFT",
+    "authors": [
+      "Ulrich A. Haisch",
+      "Ben A. Stefanek"
+    ],
+    "submission_date": "2026-08-10T18:00:00Z",
+    "latest_updated": "2026-08-10T18:00:00Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10064v1"
+    ],
+    "abstract": "Electroweak precision observables (EWPO) remain among the most powerful indirect probes of physics beyond the Standard Model (BSM), and future $e^+ e^-$ colliders are expected to substantially enhance their sensitivity. Within the framework of the Standard Model Effective Field Theory (SMEFT), we show how EWPO predictions can be systematically improved to next-to-leading-logarithmic (NLL) accuracy by combining fixed-order tree-level and one-loop matching with two- and one-loop renormalization-group evolution. We derive NLL expressions that encode the full dependence on all 210 independent Wilson coefficients and illustrate their impact through fits to both current and projected collider measurements. This work provides a basis for global SMEFT analyses at NLL precision, thereby maximizing the indirect reach to BSM physics through EWPO measurements. The phenomenological relevance of this framework is illustrated explicitly in both the custodial Randall-Sundrum model and a custodial composite Higgs model.",
+    "status": "found"
+  },
+  "2608.10065": {
+    "arxiv_id": "2608.10065",
+    "title": "Explaining the X-ray Precursor, Ultra-long Prompt Emission, and Week-long Decay of GRB250702B with a Jetted Micro-TDE",
+    "authors": [
+      "Fulya Kıroğlu",
+      "Taeho Ryu",
+      "Alexander Tchekhovskoy",
+      "Kyle Kremer",
+      "Daichi Tsuna",
+      "Brian D. Metzger"
+    ],
+    "submission_date": "2026-08-10T18:00:00Z",
+    "latest_updated": "2026-08-10T18:00:00Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10065v1"
+    ],
+    "abstract": "The longest detected gamma-ray burst, GRB250702B, exhibited seven hours of prompt $γ$-ray emission, preceded by a soft X-ray precursor ($\\sim1$ day earlier) and followed by a weeks-long fading X-ray tail. Lacking an established progenitor for all three phases, we propose that this ultra-long GRB (ULGRB) is powered by a jetted micro-tidal disruption event (micro-TDE), in which a spinning stellar-mass black hole (BH) disrupts a Sun-like star and launches a relativistic jet via the Blandford-Znajek mechanism. Micro-TDE debris disks have hours-to-days viscous timescales, naturally explaining ULGRB durations. Using 3D hydrodynamic AREPO simulations of a $1\\,M_\\odot$ star disrupted by a $10\\,M_\\odot$ BH, we show that within $\\sim1$ day the debris forms a quasi-steady envelope with a low-density polar funnel ($ρ\\propto r^{-2}$, half-opening angle $\\approx15^\\circ$). Applying an analytic jet-stability framework to these profiles, we find that the $r^{-2}$ funnel keeps the jet below the kink-instability threshold, enabling stable propagation and breakout for jet powers, $L_{\\rm jet}\\gtrsim10^{47}$ erg s$^{-1}$. We attribute the X-ray precursor to pre-disk stream-fed accretion; the prompt GRB to a tightly beamed jet ($θ_{\\rm b}\\lesssim1^\\circ$, $L_{γ,\\rm iso}\\sim10^{51}$ erg s$^{-1}$) escaping the funnel, launched by a rapidly spinning BH ($a_\\bullet\\sim0.9$); and the weeks-long X-ray decline to disk-wind mass loss ($L_{\\rm jet}\\propto t^{-2}$) combined with jet widening ($θ_{\\rm b}\\propto t$, initially steepening the decay to $L_{\\rm X,iso}\\propto L_{\\rm jet}/θ_{\\rm b}^{2}\\propto t^{-4}$). Our model reproduces the multi-phase evolution of GRB250702B and establishes jetted micro-TDEs as a physically motivated ULGRB engine.",
+    "status": "found"
+  },
+  "2608.10066": {
+    "arxiv_id": "2608.10066",
+    "title": "The Last Crossing in Excursion-Set Theory of Cosmic Reionization",
+    "authors": [
+      "Hanjue Zhu"
+    ],
+    "submission_date": "2026-08-10T18:00:00Z",
+    "latest_updated": "2026-08-10T18:00:00Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10066v1"
+    ],
+    "abstract": "I introduce the last crossing of the photon-counting barrier as a statistic for analytical models of cosmic reionization. Because ionizing galaxies are biased tracers of density and their photons propagate through gas of spatially varying opacity, the galaxy-IGM connection requires statistics beyond the global ionized fraction. The excursion-set model of Furlanetto et al. (2004) identifies the ionized-bubble scale around a point with the first crossing of a photon-counting barrier. I develop the last-crossing formalism and define the last-crossing scale, $R_\\ell$, as the smallest scale on which the enclosed photon budget still ionizes the enclosed gas. I derive its distribution analytically. Using the empirical-barrier framework of Kaurov (2016) applied to CROC simulations, I measure both crossings in the simulated IGM. The last-crossing formalism separates externally ionized regions, whose photon-counting condition fails below $R_\\ell$, from internally ionized regions whose trajectories remain above the barrier to the resolution scale. Resolved external regions are predominantly underdense, with larger $R_\\ell$ selecting lower density and later reionization. At fixed local density, first-crossing scale, and reionization redshift, these regions show deficits in ionizing-luminosity and galaxy-number density at small radius relative to matched unresolved regions, and excesses in both at intermediate radius. Their combination of low gas density and a deficit of nearby sources suggests that Ly$α$ transmission spikes may preferentially arise in these regions: low density reduces the opacity, while sources on larger scales maintain the ionized state. The last-crossing picture connects the internal source geometry of ionized regions to a testable prediction for radial galaxy distributions around transmission-selected IGM locations.",
+    "status": "found"
+  }
+}

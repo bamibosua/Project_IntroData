@@ -1,0 +1,415 @@
+{
+  "2608.09347": {
+    "arxiv_id": "2608.09347",
+    "title": "Binary code rate bounds via classical--quantum channels",
+    "authors": [
+      "Omar Alrabiah",
+      "Venkatesan Guruswami"
+    ],
+    "submission_date": "2026-08-10T09:25:40Z",
+    "latest_updated": "2026-08-10T09:25:40Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09347v1"
+    ],
+    "abstract": "We derive the four principal asymptotic rate-distance tradeoffs for binary codes---Plotkin, Elias--Bassalygo, and the two McEliece--Rodemich--Rumsey--Welch (MRRW) bounds---from one theorem, the ``pretty good criterion.'' If the bit error rate under the pretty good measurement (PGM)---the quantum analog of posterior sampling---of a binary-input output-symmetric classical--quantum (cq) channel lies below $δ$, then every length-$n$ binary code, linear or nonlinear, of relative distance $δ$ has rate at most the channel's capacity, up to an $O(n^{-1/2})$ correction. Rate--distance bounds thereby reduce to a channel design problem, wherein the task is to minimize channel capacity subject to the posterior bit error rate constraint. Via the pretty good criterion, the binary erasure channel (BEC) yields Plotkin, the binary symmetric channel (BSC) yields Elias--Bassalygo, the pure-state channel (PSC) yields the first MRRW bound, and a masked PSC yields the second MRRW bound exactly. This framework is then instantiated with new channels to improve upon the MRRW bounds. Specifically, the mixed-qubit channel (MQC), a mixed-state version of PSC, strictly improves the first MRRW bound at every $0 < δ< \\frac{1}{2}$, while the masked mixed-qubit channel (2MQC) strictly improves the second MRRW bound throughout the same interval.",
+    "status": "found"
+  },
+  "2608.09348": {
+    "arxiv_id": "2608.09348",
+    "title": "In-Context Density Estimation for Tabular Data",
+    "authors": [
+      "Patryk Marszałek",
+      "Jacek Tabor",
+      "Marek Śmieja"
+    ],
+    "submission_date": "2026-08-10T09:26:22Z",
+    "latest_updated": "2026-08-10T09:26:22Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09348v1"
+    ],
+    "abstract": "Density estimation underlies many unsupervised tasks on tabular data such as anomaly detection, out-of-distribution detection, and data augmentation. Although all these problems reduce to questions about where probability mass lies, they are typically solved individually by fitting a separate model to each dataset, with its own hyperparameters and tuning budget. We introduce ICED, an in-context, energy-based density estimator that removes this per-dataset cost. ICED is a transformer-based model pretrained once on a synthetic prior built specifically for density estimation under an objective that fits log-density where it is informative and preserves its ordering elsewhere. In the inference, it reads a dataset as context and returns an unnormalized log-density for any query point in a single forward pass, with no fitting, sampling, or hyperparameter selection. A single frozen ICED model then drives four tasks usually handled by four specialized pipelines: density estimation, out-of-distribution detection, unsupervised anomaly detection, and generative augmentation. Across all four, it is competitive with the strongest task-specific method, while being the only approach that needs no retraining, no tuning, and no labels to move between them. The code is available at https://github.com/gmum/iced.",
+    "status": "found"
+  },
+  "2608.09349": {
+    "arxiv_id": "2608.09349",
+    "title": "White paper: A perspective on civilian-to-defence research transfer to SDD",
+    "authors": [
+      "Rute C. Sofia",
+      "Daniel Mendez",
+      "Simon Barner",
+      "Hao Shen",
+      "Julian Woermann",
+      "Andrea Stocco",
+      "Axel von Arnim",
+      "Holger Pfeifer",
+      "Alexander Pretschner"
+    ],
+    "submission_date": "2026-08-10T09:30:24Z",
+    "latest_updated": "2026-08-10T09:30:24Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09349v1"
+    ],
+    "abstract": "Military capability is increasingly determined by software. Yet defence platforms are procured on decade-long timescales, while the software and AI models they carry must evolve in days or hours. This paper calls this mismatch the lifecycle paradox, and argues it is the central problem Software-Defined Defence (SDD) must solve. SDD rests on three dimensions: software and systems engineering (design, procurement, certification), AI engineering (sovereignty and trust of learned components), and connectivity and infrastructure engineering (timely exchange of information among sensors, AI, and operators). The proposed path to resilient SDD starts from civilian technologies, addressed through a continuous, DevOps-style loop: model-based systems engineering and simulation-based testing front-load design and verification; tactical connectivity and low-power edge execution carry that design into contested operation; continuous compliance, assurance, and variability management run as cross-cutting concerns. This loop is sustainable given capabilities already proven in automotive, manufacturing, space, and energy. The next step is validating them under adversarial or defence-certified conditions, with short-, medium-, and long-term paths to closing gaps. Closing the SDD gap while preserving civic benefits is a distributed responsibility: researchers must redirect methods toward adversarial conditions; industry must expose tooling to operational needs; policymakers must shape regulatory instruments; and defence agencies must validate results with operators. Recommendations span three horizons: a short-term baseline of adversarial testing and connectivity pilots; a medium-term pipeline of incremental certification; and a long-term validation closing the loop under operational conditions.",
+    "status": "found"
+  },
+  "2608.09350": {
+    "arxiv_id": "2608.09350",
+    "title": "A Machine Learning Based Search for Lunar Anomalies",
+    "authors": [
+      "Cameron Kelahan",
+      "Daniel Angerhausen",
+      "Adam Lesnikowski",
+      "Valentin T. Bickel"
+    ],
+    "submission_date": "2026-08-10T09:30:31Z",
+    "latest_updated": "2026-08-10T09:30:31Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09350v1"
+    ],
+    "abstract": "The Lunar Reconnaissance Orbiter (LRO) has been collecting high-resolution images (at around 0.5-2 meters per pixel linearly with its Narrow Angle Camera) of the Moon since 2009, amassing a large dataset of images and offering researchers the opportunity to study the surface of the Moon at unprecedented scale. Here, we aim to test the abilities of the Beta-Variational Autoencoder (VAE) created by Lesnikowski et al. (2024), an unsupervised learning model which identifies anomalous features across the Moon's surface, locating not only scientifically useful geologic formations such as rockfall deposits, fresh impact craters, irregular mare patches, or volcanic pits/collapsed lava tubes, but also artificial objects such as landed spacecraft. This investigation further gauged the model's ability to locate anomalous surface features, successfully recovering two places of interest (Plaskett Crater and Paracelsus C Crater) and numerous landed technological assets at a statistically significant rate.",
+    "status": "found"
+  },
+  "2608.09351": {
+    "arxiv_id": "2608.09351",
+    "title": "Test-Time Augmentation for LLMs: Where to Inject Diversity at Inference Time",
+    "authors": [
+      "Nikita Kozodoi",
+      "Zainab Afolabi",
+      "Jack Butler"
+    ],
+    "submission_date": "2026-08-10T09:31:48Z",
+    "latest_updated": "2026-10-19T13:05:00Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.09351v1",
+      "2608.09351v2"
+    ],
+    "abstract": "Aggregating several LLM responses to the same question can improve accuracy, but every method that does so must decide where the responses should differ. Established test-time scaling methods such as self-consistency vary only the reasoning path, resampling from a fixed input. The input modification offers several further options: the wording of the question can be rephrased, the spelling can be perturbed, and the accompanying images can be transformed. We study Test-Time Augmentation (TTA), which aggregates predictions across transformed versions of the input, and use it to ask where diversity is best injected. Comparing these options across six benchmarks at a matched number of inference calls, we find that where the diversity comes from matters more than how much of it there is. Meaning-preserving paraphrases of the input yield the largest accuracy gains (+1.80 pp over a single call) and reach peak accuracy with the fewest samples. Yet, they are not the most diverse: character-level noise makes the responses disagree far more often (37.8% versus 27.4%) while gaining less accuracy, and perturbing two modalities at once falls below the single-call baseline. Not all diversity is equally useful: perturbations that keep the meaning intact produce disagreement that aggregation can use, while those that corrupt it produce disagreement that is wrong. Overall, our results suggest that for mid-tier LLMs such as Claude Haiku, varying how a question is phrased is a better use of an inference call than varying the reasoning path. Our TTA implementation is available at github.com/aws-samples/sample-genai-reflection-for-bedrock.",
+    "status": "found"
+  },
+  "2608.09352": {
+    "arxiv_id": "2608.09352",
+    "title": "OpenRIS: Democratizing reconfigurable intelligent surfaces for real-world wireless enhancements",
+    "authors": [
+      "Weicong Chen",
+      "Junjie Ai",
+      "Lin Bai",
+      "Xiaokun Teng",
+      "Wen Jun Teng",
+      "Wankai Tang",
+      "Xiao Li",
+      "Wei Xiang Jiang",
+      "Shi Jin",
+      "Tie Jun Cui"
+    ],
+    "submission_date": "2026-08-10T09:31:55Z",
+    "latest_updated": "2026-08-10T09:31:55Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09352v1"
+    ],
+    "abstract": "Wireless enhancement is critical for next-generation mobile communication systems to realize seamless connectivity, yet traditional network expansion strategies are becoming economically unsustainable. Reconfigurable intelligent surfaces (RISs) provide a promising alternative by improving signal utilization. However, high hardware and deployment costs of advanced RISs limit their large-scale application. Here, we democratize this technology with OpenRIS, an open-source and low-cost platform composed of Lego-like meta-bricks. With digital-twin assistance, these meta-bricks can be flexibly assembled into arbitrary shapes to achieve customized, mass-deployable wireless enhancement without extra power. Experiments and full-wave simulations verify that the discretized OpenRIS achieves consistent performance with the continuous RIS. We further develop a dual-user wireless transmission system and a three-dimensional coverage measurement system to showcase the versatile applicability of OpenRIS in wireless enhancements. As a plug-and-play solution, OpenRIS accelerates the translation of RIS theory into practice and is poised to integrate into infrastructure, reshaping the future wireless world as steel and concrete shape modern cities.",
+    "status": "found"
+  },
+  "2608.09353": {
+    "arxiv_id": "2608.09353",
+    "title": "The Sharp Upper Bounds for the Median Eigenvalues of Graphs",
+    "authors": [
+      "Zhengbo Chen",
+      "Yuzhenni Wang",
+      "Xiao-Dong Zhang"
+    ],
+    "submission_date": "2026-08-10T09:32:13Z",
+    "latest_updated": "2026-08-10T09:32:13Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09353v1"
+    ],
+    "abstract": "Let $λ_1\\geqλ_2\\geq\\cdots\\geqλ_n$ be the eigenvalues of a simple graph $G$ of order $n$. The HL-index of $G$ is defined by $R(G)=\\max\\|λ_h|,|λ_\\ell|\\}$ with $h=\\lfloor(n+1)/2\\rfloor$ and $\\ell=\\lceil(n+1)/2\\rceil$.In this paper, we prove that if $G$ is $ K_4$-minor-free or $ K _ {2,3} $-minor-free, then $R(G)\\leq\\sqrt{5}-1$ with equality attained by an infinite family of outerplanar graphs.Moreover, we show that $R(G)\\leq\\sqrt{d-2}$ for triangle-free graphs with maximum degree at most $d$ and average degree at most $(d-2)(d^2-2d+2)/(d^2-3d+5)$.",
+    "status": "found"
+  },
+  "2608.09354": {
+    "arxiv_id": "2608.09354",
+    "title": "A new example of crystalline-type measure with unit masses and an application to tiling of the real line by translates of a function",
+    "authors": [
+      "Anton Tselishchev"
+    ],
+    "submission_date": "2026-08-10T09:35:13Z",
+    "latest_updated": "2026-08-10T09:35:13Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09354v1"
+    ],
+    "abstract": "In this note we provide a simple explicit example of a discrete set $Λ\\subset\\mathbb{R}$ of unbounded density such that the Fourier transform of its counting measure $\\widehatδ_Λ$ is a tempered distribution of the form $cδ_0'' + μ$ where $μ$ is a discrete measure supported by a union of three arithmetic progressions. This example is then used to construct a translational tiling of unbounded density of the real line by a function with compact support.",
+    "status": "found"
+  },
+  "2608.09355": {
+    "arxiv_id": "2608.09355",
+    "title": "Alpha as an Efficiency Signal: Visibility-Routed RGBA Image-to-Video Generation",
+    "authors": [
+      "Zhe Li",
+      "Honghao Qiao",
+      "Zhixin Xu",
+      "Qijie Wang",
+      "Bo Peng",
+      "Dawei Li"
+    ],
+    "submission_date": "2026-08-10T09:35:36Z",
+    "latest_updated": "2026-08-10T09:35:36Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09355v1"
+    ],
+    "abstract": "RGBA videos combine RGB appearance with an alpha channel, enabling animated assets to be applied across arbitrary backgrounds, which are heavily used in gaming industry. However, generating high-quality RGBA animations for games remains challenging for two reasons. First, most existing RGBA video datasets are dominated by photorealistic content, with limited coverage of game assets. Second, the traditional generate-then-matte pipelines estimate alpha only after RGB synthesis, so semi-transparent regions are often blurred by background, resulting in unstable matting outputs. More recently, many methods have begun to model RGB and alpha jointly, but existing approaches are mostly text-conditioned, and still have unresolved issues in efficiency and quality. To address these challenges, we introduce GameAlpha-2.4K, a 2.4K-clip game-style RGBA video dataset built with matte-friendly synthesis, multi-hypothesis alpha recovery, and compositing-based quality gates. Using this dataset, we train a reference-conditioned RGBA video generator that jointly produces RGB frames and alpha mattes in a single pass. To improve efficiency, we propose a visibility router that identifies transparent tokens in an early stage and bypasses their later DiT updates, while x_0-lock guides them along the original flow-matching schedule toward self-predicted endpoints. Our model obtains lower FVD than traditional two-stage pipelines, and the visibility router skips 35% of token evaluations in the final two DiT denoising steps, providing a 1.2x backbone speedup with negligible quality degradation compared to dense inference.",
+    "status": "found"
+  },
+  "2608.09356": {
+    "arxiv_id": "2608.09356",
+    "title": "Universal or Language-Family-Specific Script Unification for Cross-Lingual Transfer? A Case Study on Turkic Languages",
+    "authors": [
+      "Zijie Zhang"
+    ],
+    "submission_date": "2026-08-10T09:35:38Z",
+    "latest_updated": "2026-08-10T09:35:38Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09356v1"
+    ],
+    "abstract": "Closely related languages written in different scripts expose little surface overlap to multilingual models, limiting cross-lingual transfer. We compare two approaches to script unification: the general-purpose uroman romanizer and the family-specific Common Turkic Script (CTS). We train matched fastText models on transliterated Wikipedia corpora from 11 Turkic languages and evaluate them on WikiANN named entity recognition and Universal Dependencies part-of-speech tagging. CTS and uroman show no significant difference on NER, while both substantially outperform the official monolingual fastText baselines. POS results reveal no universal winner: language-specific differences are associated with the cross-lingual character n-gram coverage induced by each representation, while within-language coverage becomes more important when target-language supervision is available. Although CANINE-c achieves higher overall POS averages, the substantially simpler fastText-based systems remain competitive on several treebanks. Overall, the effectiveness of script unification depends on the language, the induced subword overlap, and the available supervision.",
+    "status": "found"
+  },
+  "2608.09357": {
+    "arxiv_id": "2608.09357",
+    "title": "ControlRadio: Prompt-Driven Controllable Diffusion for Cross-Modal Radio Map Generation",
+    "authors": [
+      "Kangjun Liu",
+      "Xiying Pan",
+      "Shuhang Zhang",
+      "Xiang Xiang",
+      "Ke Chen",
+      "Yaowei Wang"
+    ],
+    "submission_date": "2026-08-10T09:36:02Z",
+    "latest_updated": "2026-08-10T09:36:02Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09357v1"
+    ],
+    "abstract": "Radio maps describe how wireless signals propagate across space and are essential for wireless communication, sensing, and network planning. However, constructing accurate radio maps traditionally requires either dense measurements or computationally expensive physical simulations, which limits scalability and real-time deployment. Recent advances in generative artificial intelligence offer a promising alternative, but existing approaches lack fine-grained control and physical consistency when applied to real-world wireless environments. Here we present \\textbf{ControlRadio}, a controllable generative framework that produces radio maps from natural-language descriptions and environmental layouts, including building structures and transmitter locations. Joint semantic and spatial conditioning enables interpretable, propagation-plausible generation, while a controlled latent prior and layout-aware conditioning improve stability and structural consistency. Extensive experiments demonstrate that ControlRadio achieves state-of-the-art accuracy and strong generalization across diverse urban scenarios, while reducing computation time by more than four orders of magnitude compared with conventional simulation-based methods. Such results suggest a new paradigm for scalable and controllable wireless environment modeling, with broad implications for next-generation communication systems and data-driven radio sensing.",
+    "status": "found"
+  },
+  "2608.09358": {
+    "arxiv_id": "2608.09358",
+    "title": "On Sobolev spaces for the Grushin operator",
+    "authors": [
+      "Nishta Garg",
+      "Rahul Garg"
+    ],
+    "submission_date": "2026-08-10T09:37:22Z",
+    "latest_updated": "2026-08-10T09:37:22Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09358v1"
+    ],
+    "abstract": "We define Sobolev spaces associated with the Grushin operator with or without drift. We study some of their norm equivalences and establish embedding and algebra properties. We also prove the boundedness of the Riesz transforms on these spaces.",
+    "status": "found"
+  },
+  "2608.09359": {
+    "arxiv_id": "2608.09359",
+    "title": "How Accurately Can the Energy Use of Spark Applications Be Estimated Based on Resource Utilisation?",
+    "authors": [
+      "Youssef Moawad",
+      "Kathleen West",
+      "Vasilis Bountris",
+      "Philipp Thamm",
+      "Yehia Elkhatib",
+      "Lauritz Thamsen"
+    ],
+    "submission_date": "2026-08-10T09:39:02Z",
+    "latest_updated": "2026-08-10T09:39:02Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09359v1"
+    ],
+    "abstract": "Distributed batch data processing applications are widely executed on cloud-based resources where restricted user access to node-level hardware energy counters hinders transparent sustainability accounting. Energy and carbon attribution methodologies therefore depend on power models and available resource utilisation traces, yet the accuracy of these estimates has to be validated while direct counters are available. In this work, we use Apache Spark running on Kubernetes as a case-study dataflow runtime and cluster resource manager to compare model-based energy estimates to Intel RAPL package and DRAM energy on an AWS bare-metal cloud and an on-premises cluster, comparing different CPU usage signals and memory coefficients. We show that external monitoring improves signed package-energy error relative to Spark task traces, reducing underestimation from -29.58% to -24.41% on AWS and from -24.00% to -16.22% on-premises.",
+    "status": "found"
+  },
+  "2608.09360": {
+    "arxiv_id": "2608.09360",
+    "title": "Deep Learning based Detection of Fishing Vessels and Fishing Monitoring using Nightlight Images",
+    "authors": [
+      "Shantakar Mohanty",
+      "Prasun Kumar Gupta",
+      "Raian Vargas Maretto"
+    ],
+    "submission_date": "2026-08-10T09:39:18Z",
+    "latest_updated": "2026-08-10T09:39:18Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09360v1"
+    ],
+    "abstract": "The demand for maritime surveillance has given rise to the need for monitoring fishing vessel activities, particularly in addressing the challenge of \"dark vessels\" that operate without Automatic Identification System (AIS) transmission. This study presents a novel approach for detecting small-scale fishing vessels using nighttime light (NTL) imagery from the SDGSAT-1 satellite, combined with deep learning techniques to enhance fishing monitoring awareness along the western coast of India. A dual-branch YOLO11 architecture was developed to exploit both the 10-meter panchromatic and 40-meter RGB imagery from SDGSAT-1. The custom model architecture was specifically optimized for small object detection in NTL imagery, featuring parallel convolutional backbones that process both modalities before concatenation for enhanced feature extraction. The dual-branch YOLO11 model demonstrated optimal performance with a precision of 0.99, recall of 0.93, F1-score of 0.96, and mAP@50 of 0.96, significantly outperforming single-branch implementations of YOLOv5s, YOLOv8s, and standard YOLO11s architectures. When applied to the western coast of India, the model detected 31525 vessel instances across the temporal dataset spanning 2022-23. Cross-matching analysis with AIS data revealed that only 7146 (22.7%) of detected vessels had corresponding AIS transmissions, while 24379 (77.3%) were identified as potential dark vessels. Spatio-temporal analysis showed peak fishing activity during January-April, with a primary activity corridor parallel to the coastline within 50-100 km, corresponding to productive continental shelf areas. This research contributes to maritime surveillance capabilities by highlighting the effectiveness of nighttime lights satellite imagery for fishing vessel detection and provides valuable insights into fishing patterns and potential regulatory compliance issues in Indian waters.",
+    "status": "found"
+  },
+  "2608.09361": {
+    "arxiv_id": "2608.09361",
+    "title": "Stein structures not determined by the contact boundary",
+    "authors": [
+      "Nobuo Iida"
+    ],
+    "submission_date": "2026-08-10T09:40:17Z",
+    "latest_updated": "2026-08-13T06:55:23Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.09361v1",
+      "2608.09361v2"
+    ],
+    "abstract": "We construct two Stein structures on the same compact smooth four-manifold whose boundary contact forms are strictly identified and whose first Chern classes agree, but whose exact symplectic forms are not symplectomorphic. Moreover, no diffeomorphism makes the associated Weinstein structures homotopic. The examples are obtained by removing a tubular neighborhood of a smooth bicanonical curve from a fake projective plane and comparing the induced Stein structure with its conjugate. Their canonical Spinc structures differ by a nonzero class of order two. After the boundary forms are normalized using a common Boothby-Wang connection form, a hypothetical symplectomorphism preserves the oriented circle fiber and extends over the divisor cap, contradicting canonical-class rigidity. For the Weinstein statement, the required fiber-preservation is obtained from a monopole Floer grading asymmetry, using the Nelson-Weiler computation and Taubes's ECH-Seiberg-Witten correspondence. This gives an affirmative solution to a normalized version of the relative filling problem following Problem 4.96 in the K3 problem list.",
+    "status": "found"
+  },
+  "2608.09362": {
+    "arxiv_id": "2608.09362",
+    "title": "Orbital Detection",
+    "authors": [
+      "Kuranage Roche Rayan Ranasinghe",
+      "Giuseppe Thadeu Freitas de Abreu"
+    ],
+    "submission_date": "2026-08-10T09:40:53Z",
+    "latest_updated": "2026-08-10T09:40:53Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09362v1"
+    ],
+    "abstract": "We introduce orbital detection (OD), a framework for designing asymptotically optimal, low-complexity message passing (MP) receivers for digitally modulated multiple-input multiple-output (MIMO) systems, based on relaxing the discrete symbol prior into a mixed discrete-continuous density. The resulting orbital prior factors each symbol's distribution into a discrete radial component, supported on only the \\(L << M\\) amplitude rings of an arbitrary constellation \\(\\mathcal{M}\\) of cardinality \\(M = |\\mathcal{M}|\\), and a continuous, maximum-entropy phase density on each ring. This compresses the propagated posterior mean and variance losslessly into \\(3L\\) real scalars, and collapses the optimal \\(\\mathcal{O}(M)\\)-complexity denoiser into a closed-form hierarchy whose per-symbol cost falls to \\(\\mathcal{O}(L)\\) and ultimately \\(\\mathcal{O}(1)\\): the orbital Bessel denoiser (OBD), its Bessel-free variant the orbital Gaussian denoiser (OGD), and the orbital phase denoiser (OPD), proved irreducible on the ring manifold. A Jacobi-Anger ladder recovers the exact detector with geometrically vanishing error. Five information-theoretic results follow. First, the OBD, OGD, and OPD share an identical leading-order state evolution (SE) fixed point. Second, the sole price is a change in the high-SNR error-decay law, from exponential to linear, which never hardens into an error floor. Third, for any underloaded system the induced rate loss vanishes exponentially in SNR, so every level is asymptotically capacity-achieving in the constellation-constrained sense, attaining \\(\\log_2 M\\). Fourth, OD attains a minimum mean square error (MMSE) dimension \\(d=1/2\\), halfway between the \\(d=0\\) Bayes-optimal denoiser (BOD) and the \\(d=1\\) linear receiver. Fifth, a non-asymptotic optimal-transport bound in Wasserstein distance links constellation ring geometry directly to the achievable rate.",
+    "status": "found"
+  },
+  "2608.09363": {
+    "arxiv_id": "2608.09363",
+    "title": "Identifying the large-scale synoptic drivers contributing to the Kerala floods using multivariate feature-based analysis",
+    "authors": [
+      "Marion P. Mittermaier"
+    ],
+    "submission_date": "2026-08-10T09:41:22Z",
+    "latest_updated": "2026-08-10T09:41:22Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09363v1"
+    ],
+    "abstract": "Parts of Kerala were hit by devastating floods three years in a row. This sequence was historically without precedent. This paper uses a multivariate object-based approach to examine the global forecasts of the Met Office Unified Model for the 2018, 2019 and 2020 monsoon seasons to identify and understand the large-scale synoptic drivers that led to the floods. Identifying similarities between synoptic drivers behind these flooding events was a key objective, as was understanding whether one could enhance predictability by using a multivariate approach for post-processing forecast output, using variables other than just precipitation, which is often inherently less predictable on its own. To this end event identification focused on the analyses first, and then on a day 5 forecast. The study found that the multivariate version of the Method for Object-based Diagnostic Evaluation (MvMODE) was able to successfully identify sequences of days in all three seasons corresponding to the event dates, which in combination, had flood-producing potential. This was achieved in both the analyses and in the 5-day forecasts, proving that a) the events share common synoptic drivers and b) there is inherent predictability which can be tapped into. The 5-day forecasts matched the analysed objects on each occasion, proving that the underlying large-scale drivers may be predictable into the medium-range. Based on the results, the paper proposes a conceptual synoptic pattern evolution which can help identify such events in future. The synoptic pattern has some similarities to atmospheric rivers in the mid-latitudes.",
+    "status": "found"
+  },
+  "2608.09364": {
+    "arxiv_id": "2608.09364",
+    "title": "Quantum-Classical Coexistence Network Tomography",
+    "authors": [
+      "Xuchuang Wang",
+      "Joseph C. Chapman",
+      "Aneesh Ramaswamy",
+      "Matheus Guedes de Andrade",
+      "Yu-Zhen Janice Chen",
+      "Joseph M. Lukens",
+      "Gayane Vardoyan",
+      "Don Towsley"
+    ],
+    "submission_date": "2026-08-10T09:42:05Z",
+    "latest_updated": "2026-08-10T09:42:05Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09364v1"
+    ],
+    "abstract": "Quantum-classical coexistence networks (QCNs) share optical fiber between quantum and classical signals via wavelength-division multiplexing, offering a practical path to quantum communication over existing telecom infrastructure. However, co- and counter-propagating classical traffic introduce distinct depolarization noise, complicating channel characterization. We develop a tomography framework that infers per-link channel parameters of a QCN from end-to-end measurements alone. We first model each coexisting fiber by decomposing the signal evolution into photon loss, successful transmission, and three direction-dependent depolarization components. We then derive closed-form link-level estimators, and extend the approach to star-topology networks through a system of multiplicative equations across end-node pairs, together with a simple classical-signal-direction-switching protocol that resolves the remaining unknowns. On single-link experimental testbed data, we recover per-link depolarization probabilities accurately, with estimated process fidelities closely tracking the Bayesian-process-tomography baseline across multiple fiber lengths and wavelengths; residual gaps reflect the depolarization-only approximation. Absent a multi-link coexistence testbed, we validate the star-network estimators on emulated paths built from measured single-link channels. We further extend the framework in two directions: (i) a channel model that factorizes the coexisting fiber into a depolarizing-with-loss signal channel and a Raman-noise-injection channel on separate optical modes -- a completely-positive, trace-preserving tensor product -- whose link observables reduce exactly to our basic model; and (ii) a generalization to arbitrary topologies via a peeling algorithm (trees) and a least-squares estimator (meshes), validated by Monte-Carlo simulations on tree and cyclic-mesh networks.",
+    "status": "found"
+  },
+  "2608.09365": {
+    "arxiv_id": "2608.09365",
+    "title": "leaspy: LEArning Spatiotemporal Patterns in PYthon",
+    "authors": [
+      "Juliette Ortholand",
+      "Sofia Kaisaridi",
+      "Nicolas Gensollen",
+      "Etienne Maheux",
+      "Caglayan Tuna",
+      "Raphael Couronne",
+      "Arnaud Valladier",
+      "Pierre-Emmanuel Poulet",
+      "Nemo Fournier",
+      "Léa Aguilhon",
+      "Maylis Tran",
+      "Gabrielle Casimiro",
+      "Jean-Vincent Martini",
+      "Sebastian Mendez",
+      "Igor Koval",
+      "Stanley Durrleman",
+      "Sophie Tezenas Du Montcel"
+    ],
+    "submission_date": "2026-08-10T09:43:26Z",
+    "latest_updated": "2026-08-10T09:43:26Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09365v1"
+    ],
+    "abstract": "Longitudinal data are fundamental across scientific disciplines for modeling how complex systems evolve over time. A core challenge in these settings is handling temporal misalignment: different subjects undergo a similar underlying process but at varying speeds and starting times. This difficulty is further compounded when tracking multivariate dynamics, where features interact dynamically rather than following simple, independent pathways. To address these challenges, we present leaspy (LEArning Spatiotemporal patterns in PYthon), an open-source Python library. Built on a mixed effects model, leaspy enables the estimation of population-level trajectories while accounting for subject-specific variability. The library supports multivariate formulation across diverse data types, including continuous, time-to-event (joint), and mixture models-and has been successfully applied to characterize disease heterogeneity, and generate individual predictions We demonstrate its practical utility through an application in neurodegenerative disease progression. Developed following modern software engineering practices, including systematic testing and continuous integration, leaspy facilitates the integration of new models and provides a robust user-friendly library for longitudinal progression modeling.",
+    "status": "found"
+  },
+  "2608.09366": {
+    "arxiv_id": "2608.09366",
+    "title": "Beyond Binary: Continuous State Optimization with Graph-Structured Objectives",
+    "authors": [
+      "Corinna Cortes",
+      "Yishay Mansour",
+      "Mehryar Mohri"
+    ],
+    "submission_date": "2026-08-10T09:46:28Z",
+    "latest_updated": "2026-08-10T09:46:28Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09366v1"
+    ],
+    "abstract": "Large-scale learning systems often face the challenge of balancing multiple, potentially competing objectives, such as fairness, accuracy, and latency. While recent work has formalized this as an optimization problem over binary states, many real-world control parameters, such as fairness thresholds, diversity mixing rates, or resource budgets, are continuous. In this work, we extend the framework to \\emph{continuous state spaces}. We model the problem as minimizing a sum of linear objectives subject to \\emph{movement costs} that penalize system instability. We capture the local structure of the objectives using a \\emph{dependency graph} (or factor graph), where each objective is determined by a subset of the state attributes. To address the tension between exploration and stability, we propose \\emph{Lazy Graph-LinUCB}, an algorithm that performs lazy updates to minimize switching costs while maintaining near-optimal regret. Beyond stability, we introduce three advanced mechanisms to exploit the underlying graph structure: (1) an \\emph{asynchronous} update schedule that eliminates synchronization overhead in sparse graphs; (2) an \\emph{adaptive} algorithm that learns the graph structure from data; and (3) a \\emph{joint estimator} that leverages data sharing among correlated objectives to significantly tighten regret bounds. Empirically, we demonstrate that these structural exploitations reduce movement costs by more than a factor of three in heterogeneous systems while maintaining similar cumulative losses.",
+    "status": "found"
+  }
+}

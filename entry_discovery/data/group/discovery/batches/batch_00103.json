@@ -1,0 +1,409 @@
+{
+  "2511.13769": {
+    "arxiv_id": "2511.13769",
+    "title": "Compiling to linear neurons",
+    "authors": [
+      "Joey Velez-Ginorio",
+      "Nada Amin",
+      "Konrad Kording",
+      "Steve Zdancewic"
+    ],
+    "submission_date": "2025-11-14T22:19:50Z",
+    "latest_updated": "2025-11-14T22:19:50Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.13769v1"
+    ],
+    "abstract": "We don't program neural networks directly. Instead, we rely on an indirect style where learning algorithms, like gradient descent, determine a neural network's function by learning from data. This indirect style is often a virtue; it empowers us to solve problems that were previously impossible. But it lacks discrete structure. We can't compile most algorithms into a neural network -- even if these algorithms could help the network learn. This limitation occurs because discrete algorithms are not obviously differentiable, making them incompatible with the gradient-based learning algorithms that determine a neural network's function. To address this, we introduce $\\textsf{Cajal}$: a typed, higher-order and linear programming language intended to be a minimal vehicle for exploring a direct style of programming neural networks. We prove $\\textsf{Cajal}$ programs compile to linear neurons, allowing discrete algorithms to be expressed in a differentiable form compatible with gradient-based learning. With our implementation of $\\textsf{Cajal}$, we conduct several experiments where we link these linear neurons against other neural networks to determine part of their function prior to learning. Linking with these neurons allows networks to learn faster, with greater data-efficiency, and in a way that's easier to debug. A key lesson is that linear programming languages provide a path towards directly programming neural networks, enabling a rich interplay between learning and the discrete structures of ordinary programming.",
+    "status": "found"
+  },
+  "2511.13770": {
+    "arxiv_id": "2511.13770",
+    "title": "Game-theoretic Regulated Decentralized Coordination for Airspace Sector Overload Mitigation",
+    "authors": [
+      "Jaehan Im",
+      "Daniel Delahaye",
+      "David Fridovich-Keil",
+      "Ufuk Topcu"
+    ],
+    "submission_date": "2025-11-14T22:46:21Z",
+    "latest_updated": "2026-07-13T21:07:57Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.13770v1",
+      "2511.13770v2"
+    ],
+    "abstract": "Decentralized air traffic management systems offer a scalable alternative to centralized control, but often assume high levels of cooperation. In practice, such assumptions frequently break down since airspace sectors operate independently and prioritize local objectives. We address the problem of sector overload in decentralized air traffic management by proposing a regulated decentralized protocol that models self-interested behaviors based on best response dynamics. Each sector adjusts the departure times of flights under its control to reduce its own congestion, without requiring centralized joint optimization. A tunable cooperativeness factor models the degree to which each sector accounts for overload in other sectors, while a minimal admissibility rule prevents local updates from creating new overloads. We prove that the proposed protocol satisfies a potential game structure, ensuring that best response dynamics converge to a pure Nash equilibrium under this restriction. In addition, we identify a sufficient condition under which an overload-free solution corresponds to a global minimizer of the potential function. Numerical experiments using 24 hours of European flight data demonstrate that the proposed algorithm substantially reduces overload even with only minimal cooperation between sectors, while maintaining scalability and achieving solution quality comparable to the centralized benchmark.",
+    "status": "found"
+  },
+  "2511.13771": {
+    "arxiv_id": "2511.13771",
+    "title": "ExplainableGuard: Interpretable Adversarial Defense for Large Language Models Using Chain-of-Thought Reasoning",
+    "authors": [
+      "Shaowei Guan",
+      "Yu Zhai",
+      "Zhengyu Zhang",
+      "Yanze Wang",
+      "Hin Chi Kwok"
+    ],
+    "submission_date": "2025-11-15T06:11:07Z",
+    "latest_updated": "2025-11-15T06:11:07Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.13771v1"
+    ],
+    "abstract": "Large Language Models (LLMs) are increasingly vulnerable to adversarial attacks that can subtly manipulate their outputs. While various defense mechanisms have been proposed, many operate as black boxes, lacking transparency in their decision-making. This paper introduces ExplainableGuard, an interpretable adversarial defense framework leveraging the chain-of-thought (CoT) reasoning capabilities of DeepSeek-Reasoner. Our approach not only detects and neutralizes adversarial perturbations in text but also provides step-by-step explanations for each defense action. We demonstrate how tailored CoT prompts guide the LLM to perform a multi-faceted analysis (character, word, structural, and semantic) and generate a purified output along with a human-readable justification. Preliminary results on the GLUE Benchmark and IMDB Movie Reviews dataset show promising defense efficacy. Additionally, a human evaluation study reveals that ExplainableGuard's explanations outperform ablated variants in clarity, specificity, and actionability, with a 72.5% deployability-trust rating, underscoring its potential for more trustworthy LLM deployments.",
+    "status": "found"
+  },
+  "2511.13772": {
+    "arxiv_id": "2511.13772",
+    "title": "Can LLMs Create Legally Relevant Summaries and Analyses of Videos?",
+    "authors": [
+      "Lyra Hoeben-Kuil",
+      "Gijs van Dijck",
+      "Jaromir Savelka",
+      "Johanna Gunawan",
+      "Konrad Kollnig",
+      "Marta Kolacz",
+      "Mindy Duffourc",
+      "Shashank Chakravarthy",
+      "Hannes Westermann"
+    ],
+    "submission_date": "2025-11-15T07:30:39Z",
+    "latest_updated": "2025-11-15T07:30:39Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.13772v1"
+    ],
+    "abstract": "Understanding the legally relevant factual basis of an event and conveying it through text is a key skill of legal professionals. This skill is important for preparing forms (e.g., insurance claims) or other legal documents (e.g., court claims), but often presents a challenge for laypeople. Current AI approaches aim to bridge this gap, but mostly rely on the user to articulate what has happened in text, which may be challenging for many. Here, we investigate the capability of large language models (LLMs) to understand and summarize events occurring in videos. We ask an LLM to summarize and draft legal letters, based on 120 YouTube videos showing legal issues in various domains. Overall, 71.7\\% of the summaries were rated as of high or medium quality, which is a promising result, opening the door to a number of applications in e.g. access to justice.",
+    "status": "found"
+  },
+  "2511.13773": {
+    "arxiv_id": "2511.13773",
+    "title": "PRITES: An integrative framework for investigating and assessing web-scraped HTTP-response datasets for research applications",
+    "authors": [
+      "Cynthia A. Huang",
+      "Tina Lam"
+    ],
+    "submission_date": "2025-11-15T08:17:54Z",
+    "latest_updated": "2025-11-15T08:17:54Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.13773v1"
+    ],
+    "abstract": "The ability to programmatically retrieve vast quantities of data from online sources has given rise to increasing usage of web-scraped datasets for various purposes across government, industry and academia. Contemporaneously, there has also been growing discussion about the statistical qualities and limitations of collecting from online data sources and analysing web-scraped datasets. However, literature on web-scraping is distributed across computer science, statistical methodology and application domains, with distinct and occasionally conflicting definitions of web-scraping and conceptualisations of web-scraped data quality. This work synthesises technical and statistical concepts, best practices and insights across these relevant disciplines to inform documentation during web-scraping processes, and quality assessment of the resultant web-scraped datasets. We propose an integrated framework to cover multiple processes during the creation of web-scraped datasets including 'Plan', 'Retrieve', 'Investigate', 'Transform', 'Evaluate' and 'Summarise' (PRITES). The framework groups related quality factors which should be monitored during the collection of new web-scraped data, and/or investigated when assessing potential applications of existing web-scraped datasets. We connect each stage to existing discussions of technical and statistical challenges in collecting and analysing web-scraped data. We then apply the framework to describe related work by the co-authors to adapt web-scraped retail prices for alcoholic beverages collected by an industry data partner into analysis-ready datasets for public health policy research. The case study illustrates how the framework supports accurate and comprehensive scientific reporting of studies using web-scraped datasets.",
+    "status": "found"
+  },
+  "2511.13774": {
+    "arxiv_id": "2511.13774",
+    "title": "Hybrid Predictive Quantum Feedback: Extending Qubit Lifetimes Beyond the Wiseman-Milburn Limit",
+    "authors": [
+      "Ali Abu-Nada",
+      "Aryan Iliat",
+      "Russell Ceballos"
+    ],
+    "submission_date": "2025-11-15T09:45:47Z",
+    "latest_updated": "2026-04-03T20:10:34Z",
+    "revised_dates": null,
+    "venue": "Proc. IEEE QCNC 2026, pp. 312-316, 2026",
+    "latest_version": 3,
+    "versions": [
+      "2511.13774v1",
+      "2511.13774v2",
+      "2511.13774v3"
+    ],
+    "abstract": "Amplitude damping fundamentally limits qubit lifetimes by irreversibly leaking energy and information into the environment. Standard Wiseman--Milburn feedback offers only modest improvement because it acts on a single measured quadrature and its corrective drive is degraded by loop delay. We introduce a compact hybrid upgrade with two components: (i) a coherently coupled \\emph{ancilla} qubit that receives the homodyne current and feeds back \\emph{quantum-coherently} on the system, recovering information from \\emph{both} field quadratures and intentionally engineered to decay much faster than the system; and (ii) a lightweight supervised predictor that forecasts the near-future homodyne current, phase-aligning the correction to overcome hardware latency. A Lindblad treatment yields closed-form effective decay rates: the ancilla suppresses the emission channel by a cooperativity factor, while the predictor further suppresses the residual decay in proportion to forecast quality. Using IBM-scale parameters (baseline \\(T_1 = 50~μ\\mathrm{s}\\)), numerical simulations surpass the W--M limit, achieving \\(\\sim 3\\!-\\!4\\times\\) longer \\(T_1\\) together with improved population retention and integrated energy. The method is modular and hardware-compatible: ancilla coupling and supervised prediction can be added to existing W--M loops to convert leaked information into a precise, time-advanced corrective drive. We also include a detailed, student-friendly derivation of the effective rates for both ancilla-assisted and prediction-enhanced feedback, making the impact of each design element analytically transparent.",
+    "status": "found"
+  },
+  "2511.13775": {
+    "arxiv_id": "2511.13775",
+    "title": "Known Meets Unknown: Mitigating Overconfidence in Open Set Recognition",
+    "authors": [
+      "Dongdong Zhao",
+      "Ranxin Fang",
+      "Changtian Song",
+      "Zhihui Liu",
+      "Jianwen Xiang"
+    ],
+    "submission_date": "2025-11-15T09:56:44Z",
+    "latest_updated": "2025-11-15T09:56:44Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.13775v1"
+    ],
+    "abstract": "Open Set Recognition (OSR) requires models not only to accurately classify known classes but also to effectively reject unknown samples. However, when unknown samples are semantically similar to known classes, inter-class overlap in the feature space often causes models to assign unjustifiably high confidence to them, leading to misclassification as known classes -- a phenomenon known as overconfidence. This overconfidence undermines OSR by blurring the decision boundary between known and unknown classes. To address this issue, we propose a framework that explicitly mitigates overconfidence caused by inter-class overlap. The framework consists of two components: a perturbation-based uncertainty estimation module, which applies controllable parameter perturbations to generate diverse predictions and quantify predictive uncertainty, and an unknown detection module with distinct learning-based classifiers, implemented as a two-stage procedure, which leverages the estimated uncertainty to improve discrimination between known and unknown classes, thereby enhancing OSR performance. Experimental results on three public datasets show that the proposed framework achieves superior performance over existing OSR methods.",
+    "status": "found"
+  },
+  "2511.13776": {
+    "arxiv_id": "2511.13776",
+    "title": "Tri-Level Stochastic-Robust Co-Planning of Distribution Networks and Renewable Charging Stations With an Adaptive iC&CG Algorithm",
+    "authors": [
+      "Yongheng Wang",
+      "Xiemin Mo",
+      "Tao Liu"
+    ],
+    "submission_date": "2025-11-15T11:40:26Z",
+    "latest_updated": "2025-11-15T11:40:26Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.13776v1"
+    ],
+    "abstract": "Renewable charging stations (RCSs) that co-locate electric-vehicle (EV) charging with distributed generation (DG) can raise renewable utilization and improve distribution-network (DN) efficiency, yet their variability and the siting-dependent charging demand can overload feeders if placed poorly. This paper proposes a tri-level, two-stage stochastic-robust optimization (SRO) co-planning framework that jointly determines RCS siting and DN expansion while accounting for transportation flows and population density. The model distinguishes two uncertainty classes: (i) decision-dependent uncertainty (DDU), under which EV charging loads vary with RCS siting; and (ii) decision-independent uncertainty (DIU), under which load fluctuations and renewable-generation variability do not depend on the RCS locations or the DN topology. At the upper level, the framework selects RCS sites and DN expansions. At the middle level, EV routing and charging are dispatched given the RCS siting to produce charging loads DDU. At the lower level, DN operation minimizes annualized loss costs under the worst-case DIU, reformulated via Karush-Kuhn-Tucker (KKT) conditions. To solve the resulting problem efficiently, we develop an adaptive inexact column-and-constraint generation (A-iC&CG) algorithm and prove finite-iteration convergence. Case studies on a 47-node DN coupled with a 68-hub transportation network in Shenzhen, China, show that A-iC&CG outperforms benchmark algorithms and that PV-EV hybrid stations are cost-optimal, with RCS siting concentrated near substations and high-flow hubs.",
+    "status": "found"
+  },
+  "2511.13777": {
+    "arxiv_id": "2511.13777",
+    "title": "Hashpower allocation in Pay-per-Share blockchain mining pools",
+    "authors": [
+      "Pierre-Olivier Goffard",
+      "Hansjoerg Albrecher",
+      "Jean-Pierre Fouque"
+    ],
+    "submission_date": "2025-11-15T13:42:59Z",
+    "latest_updated": "2025-11-15T13:42:59Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.13777v1"
+    ],
+    "abstract": "Mining blocks in a blockchain using the \\textit{Proof-of-Work} consensus protocol involves significant risk, as network participants face continuous operational costs while earning infrequent capital gains upon successfully mining a block. A common risk mitigation strategy is to join a mining pool, which combines the computing resources of multiple miners to provide a more stable income. This article examines a Pay-per-Share (PPS) reward system, where the pool manager can adjust both the share difficulty and the management fee. Using a simplified wealth model for miners, we explore how miners should allocate their computing resources among different mining pools, considering the trade-off between risk transfer to the manager and management fees.",
+    "status": "found"
+  },
+  "2511.13778": {
+    "arxiv_id": "2511.13778",
+    "title": "Guaranteed DGEMM Accuracy While Using Reduced Precision Tensor Cores Through Extensions of the Ozaki Scheme",
+    "authors": [
+      "Angelika Schwarz",
+      "Anton Anders",
+      "Cole Brower",
+      "Harun Bayraktar",
+      "John Gunnels",
+      "Kate Clark",
+      "RuQing G. Xu",
+      "Samuel Rodriguez",
+      "Sebastien Cayrols",
+      "Paweł Tabaszewski",
+      "Victor Podlozhnyuk"
+    ],
+    "submission_date": "2025-11-16T00:49:03Z",
+    "latest_updated": "2025-11-16T00:49:03Z",
+    "revised_dates": null,
+    "venue": "SCA/HPCAsia 2026: Supercomputing Asia and International Conference on High Performance Computing in Asia Pacific Region (SCA/HPCAsia 2026), January 26--29, 2026, Osaka, Japan",
+    "latest_version": 1,
+    "versions": [
+      "2511.13778v1"
+    ],
+    "abstract": "The rapid growth of artificial intelligence (AI) has made low-precision formats such as FP16, FP8, and, most recently, block-scaled FP4 the primary focus of modern GPUs, where Tensor Cores now deliver orders-of-magnitude higher throughput than traditional FP64 pipelines. This hardware shift has sparked a new line of algorithm research: using low-precision units to emulate double-precision accuracy through schemes such as Ozaki decompositions. We advance this direction with Automatic Dynamic Precision (ADP), a fully GPU-resident framework that makes emulated FP64 matrix multiplication both efficient and reliable. At its core is the Exponent Span Capacity (ESC), a hardware-agnostic estimator that conservatively determines the decomposition parameter (also known as slices) required to achieve FP64-level accuracy. Built on ESC, ADP integrates exception handling, run time heuristics, and seamless fallback to native FP64, ensuring correctness without host-device synchronization or user intervention. Additionally, we further improve Ozaki-style decompositions with an unsigned integer slicing scheme, which increases representational efficiency and reduces computational waste. Validated against recently proposed BLAS grading tests, ADP consistently preserves FP64 fidelity on challenging inputs while incurring less than 10% run time overhead. In a 55-bit mantissa setting, our approach achieves up to 2.3x and 13.2x speedups over native FP64 GEMM on NVIDIA Blackwell GB200 and the RTX Pro 6000 Blackwell Server Edition, respectively. Our results demonstrate that low-precision accelerators can serve as a practical, production-ready foundation for high-fidelity and high-performance scientific computing workloads.",
+    "status": "found"
+  },
+  "2511.13779": {
+    "arxiv_id": "2511.13779",
+    "title": "Semantic Multiplexing",
+    "authors": [
+      "Mohammad Abdi",
+      "Francesca Meneghello",
+      "Francesco Restuccia"
+    ],
+    "submission_date": "2025-11-16T01:14:14Z",
+    "latest_updated": "2025-11-16T01:14:14Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.13779v1"
+    ],
+    "abstract": "Mobile devices increasingly require the parallel execution of several computing tasks offloaded at the wireless edge. Existing communication systems only support parallel transmissions at the bit level, which fundamentally limits the number of tasks that can be concurrently processed. To address this bottleneck, this paper introduces the new concept of Semantic Multiplexing. Our approach shifts stream multiplexing from bits to tasks by merging multiple task-related compressed representations into a single semantic representation. As such, Semantic Multiplexing can multiplex more tasks than the number of physical channels without adding antennas or widening bandwidth by extending the effective degrees of freedom at the semantic layer, without contradicting Shannon capacity rules. We have prototyped Semantic Multiplexing on an experimental testbed with Jetson Orin Nano and millimeter-wave software-defined radios and tested its performance on image classification and sentiment analysis while comparing to several existing baselines in semantic communications. Our experiments demonstrate that Semantic Multiplexing allows jointly processing multiple tasks at the semantic level while maintaining sufficient task accuracy. For example, image classification accuracy drops by less than 4% when increasing from 2 to 8 the number of tasks multiplexed over a 4$\\times$4 channel. Semantic Multiplexing reduces latency, energy consumption, and communication load respectively by up to 8$\\times$, 25$\\times$, and 54$\\times$ compared to the baselines while keeping comparable performance. We pledge to publicly share the complete software codebase and the collected datasets for reproducibility.",
+    "status": "found"
+  },
+  "2511.13780": {
+    "arxiv_id": "2511.13780",
+    "title": "Self-Attention as Distributional Projection: A Unified Interpretation of Transformer Architecture",
+    "authors": [
+      "Nihal Mehta"
+    ],
+    "submission_date": "2025-11-16T02:25:04Z",
+    "latest_updated": "2025-11-16T02:25:04Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.13780v1"
+    ],
+    "abstract": "This paper presents a mathematical interpretation of self-attention by connecting it to distributional semantics principles. We show that self-attention emerges from projecting corpus-level co-occurrence statistics into sequence context. Starting from the co-occurrence matrix underlying GloVe embeddings, we demonstrate how the projection naturally captures contextual influence, with the query-key-value mechanism arising as the natural asymmetric extension for modeling directional relationships. Positional encodings and multi-head attention then follow as structured refinements of this same projection principle. Our analysis demonstrates that the Transformer architecture's particular algebraic form follows from these projection principles rather than being an arbitrary design choice.",
+    "status": "found"
+  },
+  "2511.13781": {
+    "arxiv_id": "2511.13781",
+    "title": "Human-Centered Threat Modeling in Practice: Lessons, Challenges, and Paths Forward",
+    "authors": [
+      "Warda Usman",
+      "Yixin Zou",
+      "Daniel Zappala"
+    ],
+    "submission_date": "2025-11-16T03:03:41Z",
+    "latest_updated": "2025-11-16T03:03:41Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.13781v1"
+    ],
+    "abstract": "Human-centered threat modeling (HCTM) is an emerging area within security and privacy research that focuses on how people define and navigate threats in various social, cultural, and technological contexts. While researchers increasingly approach threat modeling from a human-centered perspective, little is known about how they prepare for and engage with HCTM in practice. In this work, we conduct 23 semi-structured interviews with researchers to examine the state of HCTM, including how researchers design studies, elicit threats, and navigate values, constraints, and long-term goals. We find that HCTM is not a prescriptive process but a set of evolving practices shaped by relationships with participants, disciplinary backgrounds, and institutional structures. Researchers approach threat modeling through sustained groundwork and participant-centered inquiry, guided by values such as care, justice, and autonomy. They also face challenges including emotional strain, ethical dilemmas, and structural barriers that complicate efforts to translate findings into real-world impact. We conclude by identifying opportunities to advance HCTM through shared infrastructure, broader recognition of diverse contributions, and stronger mechanisms for translating findings into policy, design, and societal change.",
+    "status": "found"
+  },
+  "2511.13782": {
+    "arxiv_id": "2511.13782",
+    "title": "Imagine in Space: Exploring the Frontier of Spatial Intelligence and Reasoning Efficiency in Vision Language Models",
+    "authors": [
+      "Xiaoxing Lian",
+      "Aidong Yang",
+      "Jun Zhu",
+      "Peng Wang",
+      "Yue Zhang"
+    ],
+    "submission_date": "2025-11-16T03:09:55Z",
+    "latest_updated": "2025-11-16T03:09:55Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.13782v1"
+    ],
+    "abstract": "Large language models (LLMs) and vision language models (VLMs), such as DeepSeek R1,OpenAI o3, and Gemini 2.5 Pro, have demonstrated remarkable reasoning capabilities across logical inference, problem solving, and decision making. However, spatial reasoning:a fundamental component of human cognition that includes mental rotation, navigation, and spatial relationship comprehension remains a significant challenge for current advanced VLMs. We hypothesize that imagination, the internal simulation of spatial states, is the dominant reasoning mechanism within a spatial world model. To test this hypothesis and systematically probe current VLM spatial reasoning mechanisms, we introduce SpatiaLite, a fully synthetic benchmark that jointly measures spatial reasoning accuracy and reasoning efficiency. Comprehensive experiments reveal three key findings. First, advanced VLMs predominantly rely on linguistic representations for reasoning and imagination, resulting in significant deficiencies on visual centric tasks that demand perceptual spatial relations and 3D geometry transformations such as mental rotation or projection prediction. Second, advanced VLMs exhibit severe inefficiency in their current spatial reasoning mechanisms, with token usage growing rapidly as transformation complexity increases. Third, we propose an Imagery Driven Framework (IDF) for data synthesis and training, which can implicitly construct an internal world model that is critical for spatial reasoning in VLMs. Building on SpatiaLite, this work delineates the spatial reasoning limits and patterns of advanced VLMs, identifies key shortcomings, and informs future advances",
+    "status": "found"
+  },
+  "2511.13783": {
+    "arxiv_id": "2511.13783",
+    "title": "The Cosmic Star Formation History: Insights from Kilonova-Associated Gamma-Ray Bursts",
+    "authors": [
+      "Qin-Mei Li",
+      "Qi-Bin Sun",
+      "Sheng-Bang Qian",
+      "Si-Yuan Zhu",
+      "Fu-Xing Li"
+    ],
+    "submission_date": "2025-11-16T04:03:10Z",
+    "latest_updated": "2025-11-16T04:03:10Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.13783v1"
+    ],
+    "abstract": "The origin of the Universe and its material content remains one of the most fundamental questions in science. Gamma-ray bursts (GRBs), with their extreme luminosities and high-redshift detectability, provide a unique window into the history of cosmic formation and chemical evolution. Consequently, the GRB formation rate (FR) has been employed to trace the star formation rate (SFR) across cosmic time. GRBs are conventionally classified into long and short categories (lGRBs and sGRBs) based on their $ T_{90} $ duration. sGRBs are widely employed as tracers of the delayed SFR, owing to their origin linked to the inspiral timescales of compact binary systems. However, some studies suggest that the detection of supernova-associated sGRBs may indicate potential contamination by core-collapse events. In this work, we move beyond the $ T_{90} $ classification and focus exclusively on GRBs with confirmed kilonova signatures, which provide unambiguous evidence of binary compact star mergers, to reassess their connection with the delayed SFR. Through analysis of a kilonova-associated GRB (KN/GRBs) sample, we find that even within this robust subset, the KN/GRB FR displays a trend contrary to that of the delayed SFR at low redshifts ($ z < 1 $). This result challenges the conventional theory by indicating that low-redshift KN/GRBs may not accurately trace the delayed SFR, independent of core-collapse contamination, while further validation with larger KN/GRB samples is essential to determine the reliability of compact binary mergers as probes of delayed SFR.",
+    "status": "found"
+  },
+  "2511.13784": {
+    "arxiv_id": "2511.13784",
+    "title": "Temporal Object-Aware Vision Transformer for Few-Shot Video Object Detection",
+    "authors": [
+      "Yogesh Kumar",
+      "Anand Mishra"
+    ],
+    "submission_date": "2025-11-16T09:59:57Z",
+    "latest_updated": "2025-11-16T09:59:57Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.13784v1"
+    ],
+    "abstract": "Few-shot Video Object Detection (FSVOD) addresses the challenge of detecting novel objects in videos with limited labeled examples, overcoming the constraints of traditional detection methods that require extensive training data. This task presents key challenges, including maintaining temporal consistency across frames affected by occlusion and appearance variations, and achieving novel object generalization without relying on complex region proposals, which are often computationally expensive and require task-specific training. Our novel object-aware temporal modeling approach addresses these challenges by incorporating a filtering mechanism that selectively propagates high-confidence object features across frames. This enables efficient feature progression, reduces noise accumulation, and enhances detection accuracy in a few-shot setting. By utilizing few-shot trained detection and classification heads with focused feature propagation, we achieve robust temporal consistency without depending on explicit object tube proposals. Our approach achieves performance gains, with AP improvements of 3.7% (FSVOD-500), 5.3% (FSYTV-40), 4.3% (VidOR), and 4.5 (VidVRD) in the 5-shot setting. Further results demonstrate improvements in 1-shot, 3-shot, and 10-shot configurations. We make the code public at: https://github.com/yogesh-iitj/fs-video-vit",
+    "status": "found"
+  },
+  "2511.13785": {
+    "arxiv_id": "2511.13785",
+    "title": "Quantifying Distribution Shift in Traffic Signal Control with Histogram-Based GEH Distance",
+    "authors": [
+      "Federico Taschin",
+      "Ozan K. Tonguz"
+    ],
+    "submission_date": "2025-11-16T11:05:02Z",
+    "latest_updated": "2025-11-16T11:05:02Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.13785v1"
+    ],
+    "abstract": "Traffic signal control algorithms are vulnerable to distribution shift, where performance degrades under traffic conditions that differ from those seen during design or training. This paper introduces a principled approach to quantify distribution shift by representing traffic scenarios as demand histograms and comparing them with a GEH-based distance function. The method is policy-independent, interpretable, and leverages a widely used traffic engineering statistic. We validate the approach on 20 simulated scenarios using both a NEMA actuated controller and a reinforcement learning controller (FRAP++). Results show that larger scenario distances consistently correspond to increased travel time and reduced throughput, with particularly strong explanatory power for learning-based control. Overall, this method can predict performance degradation under distribution shift better than previously published techniques. These findings highlight the utility of the proposed framework for benchmarking, training regime design, and monitoring in adaptive traffic signal control.",
+    "status": "found"
+  },
+  "2511.13786": {
+    "arxiv_id": "2511.13786",
+    "title": "CellStream: Dynamical Optimal Transport Informed Embeddings for Reconstructing Cellular Trajectories from Snapshots Data",
+    "authors": [
+      "Yue Ling",
+      "Peiqi Zhang",
+      "Zhenyi Zhang",
+      "Peijie Zhou"
+    ],
+    "submission_date": "2025-11-16T13:18:45Z",
+    "latest_updated": "2025-11-16T13:18:45Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.13786v1"
+    ],
+    "abstract": "Single-cell RNA sequencing (scRNA-seq), especially temporally resolved datasets, enables genome-wide profiling of gene expression dynamics at single-cell resolution across discrete time points. However, current technologies provide only sparse, static snapshots of cell states and are inherently influenced by technical noise, complicating the inference and representation of continuous transcriptional dynamics. Although embedding methods can reduce dimensionality and mitigate technical noise, the majority of existing approaches typically treat trajectory inference separately from embedding construction, often neglecting temporal structure. To address this challenge, here we introduce CellStream, a novel deep learning framework that jointly learns embedding and cellular dynamics from single-cell snapshot data by integrating an autoencoder with unbalanced dynamical optimal transport. Compared to existing methods, CellStream generates dynamics-informed embeddings that robustly capture temporal developmental processes while maintaining high consistency with the underlying data manifold. We demonstrate CellStream's effectiveness on both simulated datasets and real scRNA-seq data, including spatial transcriptomics. Our experiments indicate significant quantitative improvements over state-of-the-art methods in representing cellular trajectories with enhanced temporal coherence and reduced noise sensitivity. Overall, CellStream provides a new tool for learning and representing continuous streams from the noisy, static snapshots of single-cell gene expression.",
+    "status": "found"
+  },
+  "2511.13787": {
+    "arxiv_id": "2511.13787",
+    "title": "Exploring Transferability of Self-Supervised Learning by Task Conflict Calibration",
+    "authors": [
+      "Huijie Guo",
+      "Jingyao Wang",
+      "Peizheng Guo",
+      "Xingchen Shen",
+      "Changwen Zheng",
+      "Wenwen Qiang"
+    ],
+    "submission_date": "2025-11-16T14:01:42Z",
+    "latest_updated": "2025-11-16T14:01:42Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.13787v1"
+    ],
+    "abstract": "In this paper, we explore the transferability of SSL by addressing two central questions: (i) what is the representation transferability of SSL, and (ii) how can we effectively model this transferability? Transferability is defined as the ability of a representation learned from one task to support the objective of another. Inspired by the meta-learning paradigm, we construct multiple SSL tasks within each training batch to support explicitly modeling transferability. Based on empirical evidence and causal analysis, we find that although introducing task-level information improves transferability, it is still hindered by task conflict. To address this issue, we propose a Task Conflict Calibration (TC$^2$) method to alleviate the impact of task conflict. Specifically, it first splits batches to create multiple SSL tasks, infusing task-level information. Next, it uses a factor extraction network to produce causal generative factors for all tasks and a weight extraction network to assign dedicated weights to each sample, employing data reconstruction, orthogonality, and sparsity to ensure effectiveness. Finally, TC$^2$ calibrates sample representations during SSL training and integrates into the pipeline via a two-stage bi-level optimization framework to boost the transferability of learned representations. Experimental results on multiple downstream tasks demonstrate that our method consistently improves the transferability of SSL models.",
+    "status": "found"
+  },
+  "2511.13788": {
+    "arxiv_id": "2511.13788",
+    "title": "Scaling Patterns in Adversarial Alignment: Evidence from Multi-LLM Jailbreak Experiments",
+    "authors": [
+      "Samuel Nathanson",
+      "Rebecca Williams",
+      "Cynthia Matuszek"
+    ],
+    "submission_date": "2025-11-16T15:16:33Z",
+    "latest_updated": "2026-01-01T13:08:55Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.13788v1",
+      "2511.13788v2"
+    ],
+    "abstract": "Large language models (LLMs) increasingly operate in multi-agent and safety-critical settings, raising open questions about how their vulnerabilities scale when models interact adversarially. This study examines whether larger models can systematically jailbreak smaller ones - eliciting harmful or restricted behavior despite alignment safeguards. Using standardized adversarial tasks from JailbreakBench, we simulate over 6,000 multi-turn attacker-target exchanges across major LLM families and scales (0.6B-120B parameters), measuring both harm score and refusal behavior as indicators of adversarial potency and alignment integrity. Each interaction is evaluated through aggregated harm and refusal scores assigned by three independent LLM judges, providing a consistent, model-based measure of adversarial outcomes. Aggregating results across prompts, we find a strong and statistically significant correlation between mean harm and the logarithm of the attacker-to-target size ratio (Pearson r = 0.51, p < 0.001; Spearman rho = 0.52, p < 0.001), indicating that relative model size correlates with the likelihood and severity of harmful completions. Mean harm score variance is higher across attackers (0.18) than across targets (0.10), suggesting that attacker-side behavioral diversity contributes more to adversarial outcomes than target susceptibility. Attacker refusal frequency is strongly and negatively correlated with harm (rho = -0.93, p < 0.001), showing that attacker-side alignment mitigates harmful responses. These findings reveal that size asymmetry influences robustness and provide exploratory evidence for adversarial scaling patterns, motivating more controlled investigations into inter-model alignment and safety.",
+    "status": "found"
+  }
+}

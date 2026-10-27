@@ -1,0 +1,413 @@
+{
+  "2601.20036": {
+    "arxiv_id": "2601.20036",
+    "title": "Computational aspects of disks enclosing many points",
+    "authors": [
+      "Prosenjit Bose",
+      "Guillermo Esteban",
+      "Tyler Tuttle"
+    ],
+    "submission_date": "2026-01-27T20:18:50Z",
+    "latest_updated": "2026-01-27T20:18:50Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.20036v1"
+    ],
+    "abstract": "Let $S$ be a set of $n$ points in the plane. We present several different algorithms for finding a pair of points in $S$ such that any disk that contains that pair must contain at least $cn$ points of $S$, for some constant $c>0$. The first is a randomized algorithm that finds a pair in $O(n\\log n)$ expected time for points in general position, and $c = 1/2-\\sqrt{(1+2α)/12}$, for any $0<α<1$. The second algorithm, also for points in general position, takes quadratic time, but the constant $c$ is improved to $1/2-1/{\\sqrt{12}} \\approx 1/4.7$. The second algorithm can also be used as a subroutine to find the pair that maximizes the number of points inside any disk that contains the pair, in $O(n^2\\log n)$ time. We also consider variants of the problem. When the set $S$ is in convex position, we present an algorithm that finds in linear time a pair of points such that any disk through them contains at least $n/3$ points of $ S $. For the variant where we are only interested in finding a pair such that the diametral disk of that pair contains many points, we also have a linear-time algorithm that finds a disk with at least $n/3$ points of $S$. Finally, we present a generalization of the first two algorithms to the case where the set $S$ of points is coloured using two colours. We also consider adapting these algorithms to solve the same problems when $S$ is a set of points inside of a simple polygon $P$, with the notion of a disk replaced by that of a geodesic disk.",
+    "status": "found"
+  },
+  "2601.20037": {
+    "arxiv_id": "2601.20037",
+    "title": "Structural Compositional Function Networks: Interpretable Functional Compositions for Tabular Discovery",
+    "authors": [
+      "Fang Li"
+    ],
+    "submission_date": "2026-01-27T20:20:07Z",
+    "latest_updated": "2026-01-27T20:20:07Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.20037v1"
+    ],
+    "abstract": "Despite the ubiquity of tabular data in high-stakes domains, traditional deep learning architectures often struggle to match the performance of gradient-boosted decision trees while maintaining scientific interpretability. Standard neural networks typically treat features as independent entities, failing to exploit the inherent manifold structural dependencies that define tabular distributions. We propose Structural Compositional Function Networks (StructuralCFN), a novel architecture that imposes a Relation-Aware Inductive Bias via a differentiable structural prior. StructuralCFN explicitly models each feature as a mathematical composition of its counterparts through Differentiable Adaptive Gating, which automatically discovers the optimal activation physics (e.g., attention-style filtering vs. inhibitory polarity) for each relationship. Our framework enables Structured Knowledge Integration, allowing domain-specific relational priors to be injected directly into the architecture to guide discovery. We evaluate StructuralCFN across a rigorous 10-fold cross-validation suite on 18 benchmarks, demonstrating statistically significant improvements (p < 0.05) on scientific and clinical datasets (e.g., Blood Transfusion, Ozone, WDBC). Furthermore, StructuralCFN provides Intrinsic Symbolic Interpretability: it recovers the governing \"laws\" of the data manifold as human-readable mathematical expressions while maintaining a compact parameter footprint (300--2,500 parameters) that is over an order of magnitude (10x--20x) smaller than standard deep baselines.",
+    "status": "found"
+  },
+  "2601.20038": {
+    "arxiv_id": "2601.20038",
+    "title": "Node-Weighted Multicut in Planar Digraphs",
+    "authors": [
+      "Chandra Chekuri",
+      "Rhea Jain"
+    ],
+    "submission_date": "2026-01-27T20:20:33Z",
+    "latest_updated": "2026-01-27T20:20:33Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.20038v1"
+    ],
+    "abstract": "Kawarabayashi and Sidiropoulos [KS22] obtained an $O(\\log^2 n)$-approximation algorithm for Multicut in planar digraphs via a natural LP relaxation, which also establishes a corresponding upper bound on the multicommodity flow-cut gap. Their result is in contrast to a lower bound of $\\tildeΩ(n^{1/7})$ on the flow-cut gap for general digraphs due to Chuzhoy and Khanna [CK09]. We extend the algorithm and analysis in [KS22] to the node-weighted Multicut problem. Unlike in general digraphs, node-weighted problems cannot be reduced to edge-weighted problems in a black box fashion due to the planarity restriction. We use the node-weighted problem as a vehicle to accomplish two additional goals: (i) to obtain a deterministic algorithm (the algorithm in [KS22] is randomized), and (ii) to simplify and clarify some aspects of the algorithm and analysis from [KS22]. The Multicut result, via a standard technique, implies an approximation for the Nonuniform Sparsest Cut problem with an additional logarithmic factor loss.",
+    "status": "found"
+  },
+  "2601.20039": {
+    "arxiv_id": "2601.20039",
+    "title": "Hypergraph Samplers: Typical and Worst Case Behavior",
+    "authors": [
+      "Vedat Levi Alev",
+      "Uriya A. First"
+    ],
+    "submission_date": "2026-01-27T20:27:29Z",
+    "latest_updated": "2026-01-27T20:27:29Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.20039v1"
+    ],
+    "abstract": "We study the utility and limitations of using $k$-uniform hypergraphs $H = ([n], E)$ ($n \\ge \\mathrm{poly}(k)$) in the context of error reduction for randomized algorithms for decision problems with one- or two-sided error. Our error reduction idea is sampling a uniformly random hyperedge of $H$, and repeating the algorithm $k$ times using the hyperedge vertices as seeds. This is a general paradigm, which captures every pseudorandom method generating $k$ seeds without repetition. We show two results which imply a gap between the typical and the worst-case behavior of using $H$ for error-reduction. First, in the context of one-sided error reduction, if using a random hyperedge of $H$ decreases the error probability from $p$ to $p^k + ε$, then $H$ cannot have too few edges, i.e., $|E| = Ω(n k^{-1} ε^{-1})$. Thus, the number of random bits needed for reducing the error from $p$ to $p^k + ε$ cannot be reduced below $\\lg n+\\lg(ε^{-1})-\\lg k+O(1)$. This is also true for hypergraphs of average uniformity $k$. Our result implies new lower bounds for dispersers and vertex-expanders. Second, if the vertex degrees are reasonably distributed, we show that in a $(1-o(1))$-fraction of the cases, choosing $k$ pseudorandom seeds using $H$ will reduce the error probability to at most $o(1)$ above the error probability of using $k$ IID seeds, for both algorithms with one- or two-sided error. Thus, despite our lower bound, for a $(1-o(1))$-fraction of randomized algorithms (and inputs) for decision problems, the advantage of using IID samples over samples obtained from a uniformly random edge of a reasonable hypergraph is negligible. A similar statement holds true for randomized algorithms with two-sided error.",
+    "status": "found"
+  },
+  "2601.20040": {
+    "arxiv_id": "2601.20040",
+    "title": "Mechanisms of particle entrainment in confined gas-particle systems under moving boundaries",
+    "authors": [
+      "Arata Hashimoto",
+      "Ryosuke Mitani",
+      "Toshiki Imatani",
+      "Mikio Sakai"
+    ],
+    "submission_date": "2026-01-27T20:28:53Z",
+    "latest_updated": "2026-01-27T20:28:53Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.20040v1"
+    ],
+    "abstract": "Particle entrainment in confined gas-particle systems driven by moving boundaries is central to many industrial and natural processes, including pharmaceutical manufacturing, food processing, and chemical engineering. Although often termed a \"suction effect,\" its physical origin remains unclear, especially under unsteady flow, strong particle interactions, and transient force networks. Here we study suction-induced entrainment in a prototypical confined system using high-fidelity coupled CFD-DEM simulations resolving unsteady gas flow and discrete particle motion with moving boundaries. By decomposing the forces on individual particles, we show that suction is not purely pressure-driven, but results from the combined action of pressure-gradient and unsteady drag forces generated by boundary-accelerated flow. Despite the heterogeneous and transient force fields, the final entrained mass is found to be governed primarily by a single energetic measure: the mechanical work performed on the particle assembly in the entrainment direction during boundary motion, rather than by peak instantaneous forces. Varying boundary kinematics demonstrates that changes in displacement or velocity history control entrainment mainly by modifying the duration over which fluid-particle forces perform work. These results reveal an organizing principle for suction-driven entrainment and establish a work-based framework for boundary-induced particle transport in confined gas-particle systems.",
+    "status": "found"
+  },
+  "2601.20041": {
+    "arxiv_id": "2601.20041",
+    "title": "CiMRAG: CiM-Aware Domain-Adaptive and Noise-Resilient Retrieval-Augmented Generation for Edge-Based LLMs",
+    "authors": [
+      "Shih-Hsuan Chiu",
+      "Ming-Syan Chen"
+    ],
+    "submission_date": "2026-01-27T20:30:59Z",
+    "latest_updated": "2026-02-03T10:43:01Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2601.20041v1",
+      "2601.20041v2",
+      "2601.20041v3"
+    ],
+    "abstract": "Personalized virtual assistants powered by large language models (LLMs) on edge devices are attracting growing attention, with Retrieval-Augmented Generation (RAG) emerging as a key method for personalization by retrieving relevant profile data and generating tailored responses. However, deploying RAG on edge devices faces efficiency hurdles due to the rapid growth of profile data, such as user-LLM interactions and recent updates. While Computing-in-Memory (CiM) architectures mitigate this bottleneck by eliminating data movement between memory and processing units via in-situ operations, they are susceptible to environmental noise that can degrade retrieval precision. This poses a critical issue in dynamic, multi-domain edge-based scenarios (e.g., travel, medicine, and law) where both accuracy and adaptability are paramount. To address these challenges, we propose Task-Oriented Noise-resilient Embedding Learning (TONEL), a framework that improves noise robustness and domain adaptability for RAG in noisy edge environments. TONEL employs a noise-aware projection model to learn task-specific embeddings compatible with CiM hardware constraints, enabling accurate retrieval under noisy conditions. Extensive experiments conducted on personalization benchmarks demonstrate the effectiveness and practicality of our methods relative to strong baselines, especially in task-specific noisy scenarios.",
+    "status": "found"
+  },
+  "2601.20042": {
+    "arxiv_id": "2601.20042",
+    "title": "Correlated dynamics of three-particle bound states induced by emergent impurities in Bose-Hubbard model",
+    "authors": [
+      "Wenduo Zhao",
+      "Boning Huang",
+      "Yongguan Ke",
+      "Chaohong Lee"
+    ],
+    "submission_date": "2026-01-27T20:44:41Z",
+    "latest_updated": "2026-05-22T03:34:03Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2601.20042v1",
+      "2601.20042v2",
+      "2601.20042v3"
+    ],
+    "abstract": "Bound states, known as particles tied together and moving as a whole, are profound correlated effects induced by particle-particle interactions. While dimer-monomer bound states are manifested as a single particle attached to a dimer bound pair, it is still unclear about quantum walks and Bloch oscillations of dimer-monomer bound states. Here, we revisit three-particle bound states in the Bose-Hubbard model and find that interaction-induced impurities adjacent to bound pair and boundaries cause two kinds of bound states: one is dimer-monomer bound state and the other is bound edge state. In quantum walks, the spread velocity of dimer-monomer bound state is determined by the maximal group velocity of their energy band, which is much smaller than that in the single-particle case. In Bloch oscillations, the period of dimer-monomer bound states is one third of that in the single-particle case. Emergence of bound edge states also requires that interaction-induced defects are greater than the effective tunneling strength of three-particle bound state. Our work provides new insights to basic mechanics and collective dynamics of three-particle bound states.",
+    "status": "found"
+  },
+  "2601.20043": {
+    "arxiv_id": "2601.20043",
+    "title": "Regime-Adaptive Bayesian Optimization via Dirichlet Process Mixtures of Gaussian Processes",
+    "authors": [
+      "Yan Zhang",
+      "Xuefeng Liu",
+      "Sipeng Chen",
+      "Sascha Ranftl",
+      "Chong Liu",
+      "Shibo Li"
+    ],
+    "submission_date": "2026-01-27T20:45:50Z",
+    "latest_updated": "2026-07-28T15:01:15Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.20043v1",
+      "2601.20043v2"
+    ],
+    "abstract": "Standard Bayesian Optimization (BO) assumes uniform smoothness across the search space an assumption violated in multi-regime problems such as molecular conformation search through distinct energy basins or drug discovery across heterogeneous molecular scaffolds. A single GP either oversmooths sharp transitions or hallucinates noise in smooth regions, yielding miscalibrated uncertainty. We propose RAMBO, a Dirichlet Process Mixture of Gaussian Processes that automatically discovers latent regimes during optimization, each modeled by an independent GP with locally-optimized hyperparameters. We derive collapsed Gibbs sampling that analytically marginalizes latent functions for efficient inference, and introduce adaptive concentration parameter scheduling for coarse-to-fine regime discovery. Our acquisition functions decompose uncertainty into intra-regime and inter-regime components. Experiments on synthetic benchmarks and real-world applications, including molecular conformer optimization, virtual screening for drug discovery, and fusion reactor design, demonstrate consistent improvements over state-of-the-art baselines on multi-regime objectives.",
+    "status": "found"
+  },
+  "2601.20044": {
+    "arxiv_id": "2601.20044",
+    "title": "Quantum Channels on Graphs: a Resonant Tunneling Perspective",
+    "authors": [
+      "Giuseppe Catalano",
+      "Farzad Kianvash",
+      "Vittorio Giovannetti"
+    ],
+    "submission_date": "2026-01-27T20:48:09Z",
+    "latest_updated": "2026-01-27T20:48:09Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.20044v1"
+    ],
+    "abstract": "Quantum transport on structured networks is strongly influenced by interference effects, which can dramatically modify how information propagates through a system. We develop a quantum-information-theoretic framework for scattering on graphs in which a full network of connected scattering sites is treated as a quantum channel linking designated input and output ports. Using the Redheffer star product to construct global scattering matrices from local ones, we identify resonant concatenation, a nonlinear composition rule generated by internal back-reflections. In contrast to ordinary channel concatenation, resonant concatenation can suppress noise and even produce super-activation of the quantum capacity, yielding positive capacity in configurations where each constituent channel individually has zero capacity. We illustrate these effects through models exhibiting resonant-tunneling-enhanced transport. Our approach provides a general methodology for analyzing coherent information flow in quantum graphs, with relevance for quantum communication, control, and simulation in structured environments.",
+    "status": "found"
+  },
+  "2601.20045": {
+    "arxiv_id": "2601.20045",
+    "title": "GLIMPSE-DDT spectroscopic properties of faint-end galaxies at $z\\sim6$: Towards first metal enrichment, dust production, and ionizing photon production",
+    "authors": [
+      "Yoshihisa Asada",
+      "Seiji Fujimoto",
+      "John Chisholm",
+      "Rohan P. Naidu",
+      "Hakim Atek",
+      "Gabriel Brammer",
+      "Lukas J. Furtak",
+      "Vasily Kokorev",
+      "Richard Pan",
+      "Arghyadeep Basu",
+      "Volker Bromm",
+      "Miroslava Dessauges-Zavadsky",
+      "Tiger Yu-Yang Hsiao",
+      "Michelle Jecmen",
+      "Damien Korber",
+      "Boyuan Liu",
+      "Jed McKinney",
+      "Kristen B. W. McQuinn",
+      "Daniel Schaerer"
+    ],
+    "submission_date": "2026-01-27T20:48:22Z",
+    "latest_updated": "2026-01-27T20:48:22Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.20045v1"
+    ],
+    "abstract": "Ultra-faint galaxies at high-$z$ are fundamental elements of the early galaxy assembly, and spectroscopic characterization of this population is essential to understand the earliest galaxy evolution. Leveraging the ultra-deep JWST/NIRCam and NIRSpec observations of a gravitational lensing field of Abell S1063, taken as part of the GLIMPSE survey, we present spectroscopic properties of 16 galaxies fainter than $M_{\\rm UV}=-17$ mag, including the metallicity, dust attenuation, and the ionizing photon production efficiency. The emission lines are generally quite strong, roughly half of which cannot be replicated with standard stellar populations and require an extreme ionizing source. We also identify relatively strong [OIII] emission lines from all sample galaxies, which indicates that the low-mass end of the mass-metallicity relation is extended down to $M_\\star\\sim10^6\\ M_\\odot$ at $z\\sim6$. The strong [OIII] line detection from the lowest-mass galaxy among the sample ($M_\\star\\sim10^{5.6}\\ M_\\odot$) stands in contrast to recent reports of extremely metal-poor galaxy candidates at similar mass and redshift, suggesting that there could be two distinct pathways of the earliest metal enrichment as simulations have predicted. Interestingly, we detect both dust attenuation and galactic outflow in one of the sample galaxies with $M_\\star=10^{6.6}\\ M_\\odot$ at $z=5.5$. All the dust, metal, and outflow contents in this galaxy can be consistently explained by supernovae (SNe), indicative of the key roles of SNe in the earliest galaxy assembly such as dust production, metal enrichment, stellar feedback, and baryon cycle.",
+    "status": "found"
+  },
+  "2601.20046": {
+    "arxiv_id": "2601.20046",
+    "title": "Externally Validated Longitudinal GRU Model for Visit-Level 180-Day Mortality Risk in Metastatic Castration-Resistant Prostate Cancer",
+    "authors": [
+      "Javier Mencia-Ledo",
+      "Mohammad Noaeen",
+      "Zahra Shakeri"
+    ],
+    "submission_date": "2026-01-27T20:48:53Z",
+    "latest_updated": "2026-01-27T20:48:53Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.20046v1"
+    ],
+    "abstract": "Metastatic castration-resistant prostate cancer (mCRPC) is a highly aggressive disease with poor prognosis and heterogeneous treatment response. In this work, we developed and externally validated a visit-level 180-day mortality risk model using longitudinal data from two Phase III cohorts (n=526 and n=640). Only visits with observable 180-day outcomes were labeled; right-censored cases were excluded from analysis. We compared five candidate architectures: Long Short-Term Memory, Gated Recurrent Unit (GRU), Cox Proportional Hazards, Random Survival Forest (RSF), and Logistic Regression. For each dataset, we selected the smallest risk-threshold that achieved an 85% sensitivity floor. The GRU and RSF models showed high discrimination capabilities initially (C-index: 87% for both). In external validation, the GRU obtained a higher calibration (slope: 0.93; intercept: 0.07) and achieved an PR-AUC of 0.87. Clinical impact analysis showed a median time-in-warning of 151.0 days for true positives (59.0 days for false positives) and 18.3 alerts per 100 patient-visits. Given late-stage frailty or cachexia and hemodynamic instability, permutation importance ranked BMI and systolic blood pressure as the strongest associations. These results suggest that longitudinal routine clinical markers can estimate short-horizon mortality risk in mCRPC and support proactive care planning over a multi-month window.",
+    "status": "found"
+  },
+  "2601.20047": {
+    "arxiv_id": "2601.20047",
+    "title": "Minimax Rates for Hyperbolic Hierarchical Learning",
+    "authors": [
+      "Divit Rawal",
+      "Sriram Vishwanath"
+    ],
+    "submission_date": "2026-01-27T20:50:24Z",
+    "latest_updated": "2026-01-27T20:50:24Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.20047v1"
+    ],
+    "abstract": "We prove an exponential separation in sample complexity between Euclidean and hyperbolic representations for learning on hierarchical data under standard Lipschitz regularization. For depth-$R$ hierarchies with branching factor $m$, we first establish a geometric obstruction for Euclidean space: any bounded-radius embedding forces volumetric collapse, mapping exponentially many tree-distant points to nearby locations. This necessitates Lipschitz constants scaling as $\\exp(Ω(R))$ to realize even simple hierarchical targets, yielding exponential sample complexity under capacity control. We then show this obstruction vanishes in hyperbolic space: constant-distortion hyperbolic embeddings admit $O(1)$-Lipschitz realizability, enabling learning with $n = O(mR \\log m)$ samples. A matching $Ω(mR \\log m)$ lower bound via Fano's inequality establishes that hyperbolic representations achieve the information-theoretic optimum. We also show a geometry-independent bottleneck: any rank-$k$ prediction space captures only $O(k)$ canonical hierarchical contrasts.",
+    "status": "found"
+  },
+  "2601.20048": {
+    "arxiv_id": "2601.20048",
+    "title": "Insight Agents: An LLM-Based Multi-Agent System for Data Insights",
+    "authors": [
+      "Jincheng Bai",
+      "Zhenyu Zhang",
+      "Jennifer Zhang",
+      "Zhihuai Zhu"
+    ],
+    "submission_date": "2026-01-27T20:51:01Z",
+    "latest_updated": "2026-02-02T01:17:35Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.20048v1",
+      "2601.20048v2"
+    ],
+    "abstract": "Today, E-commerce sellers face several key challenges, including difficulties in discovering and effectively utilizing available programs and tools, and struggling to understand and utilize rich data from various tools. We therefore aim to develop Insight Agents (IA), a conversational multi-agent Data Insight system, to provide E-commerce sellers with personalized data and business insights through automated information retrieval. Our hypothesis is that IA will serve as a force multiplier for sellers, thereby driving incremental seller adoption by reducing the effort required and increase speed at which sellers make good business decisions. In this paper, we introduce this novel LLM-backed end-to-end agentic system built on a plan-and-execute paradigm and designed for comprehensive coverage, high accuracy, and low latency. It features a hierarchical multi-agent structure, consisting of manager agent and two worker agents: data presentation and insight generation, for efficient information retrieval and problem-solving. We design a simple yet effective ML solution for manager agent that combines Out-of-Domain (OOD) detection using a lightweight encoder-decoder model and agent routing through a BERT-based classifier, optimizing both accuracy and latency. Within the two worker agents, a strategic planning is designed for API-based data model that breaks down queries into granular components to generate more accurate responses, and domain knowledge is dynamically injected to to enhance the insight generator. IA has been launched for Amazon sellers in US, which has achieved high accuracy of 90% based on human evaluation, with latency of P90 below 15s.",
+    "status": "found"
+  },
+  "2601.20049": {
+    "arxiv_id": "2601.20049",
+    "title": "Evolving beyond collapse: An adaptive particle batch smoother for cryospheric data assimilation",
+    "authors": [
+      "Kristoffer Aalstad",
+      "Esteban Alonso-González",
+      "Norbert Pirk",
+      "Sebastian Westermann",
+      "Clarissa Willmes",
+      "Ruitang Yang"
+    ],
+    "submission_date": "2026-01-27T20:51:50Z",
+    "latest_updated": "2026-01-27T20:51:50Z",
+    "revised_dates": null,
+    "venue": "Geosci. Model Dev., 19, 8565-8596, 2026",
+    "latest_version": 1,
+    "versions": [
+      "2601.20049v1"
+    ],
+    "abstract": "We present a new adaptive particle-based data assimilation scheme for cryospheric applications that leverages promising developments in importance sampling. The proposed approach seeks to combine some of the advantages of two widely used classes of schemes: particle methods and iterative ensemble Kalman methods. Specifically, it extends the PBS that is commonly used in cryospheric data assimilation, with the AMIS algorithm. This adaptive formulation transforms the PBS into an iterative scheme with improved resilience against ensemble collapse and the ability to implement early-stopping strategies. As such, computational cost is automatically adapted to the complexity of the problem at hand, even down to the grid-cell and water year level in distributed multiyear simulations. In homage to the schemes that it builds on, we coin this new algorithm the Adaptive Particle Batch Smoother (AdaPBS) and we test it across a range of scenarios. First, we conducted an intercomparison of some of the most commonly used cryospheric data assimilation algorithms using MCMC simulation as a costly gold-standard benchmark in a simplified temperature index model assimilating snow depth observations. We further evaluated AdaPBS by assimilating snow depth observations from the ESMSnowMIP project at 6 different sites spanning 3 continents, using an ensemble of simulations generated with the more complex FSM2. Our results demonstrate that AdaPBS is a robust and reliable tool, outperforming or at least matching the performance of other commonly used algorithms and successfully handling complex cases with dense observational datasets. All experiments were carried out using the open-source MuSA toolbox, which now includes AdaPBS and MCMC among the growing list of available cryospheric data assimilation methods.",
+    "status": "found"
+  },
+  "2601.20050": {
+    "arxiv_id": "2601.20050",
+    "title": "A mixed virtual element discretization for the generalized Oseen problem",
+    "authors": [
+      "Felipe Lepe",
+      "Gonzalo Rivera"
+    ],
+    "submission_date": "2026-01-27T20:52:18Z",
+    "latest_updated": "2026-01-27T20:52:18Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.20050v1"
+    ],
+    "abstract": "In this paper we introduce a mixed virtual element method to approximate the solution for the two dimensional generalized Oseen problem. We introduce the pseudostress as an additional unknown, which allows to eliminate the pressure from the system; the pressure can be recovered via a post-process of the pseudostress tensor. We prove existence and uniqueness of the continuous solution via a fixed point argument. Under standard mesh assumptions, we develop a virtual element method to approximate both the tensor and the velocity field, and we show that it is stable. Furthermore, we provide a priori error estimates for the method and validate them through a series of numerical tests using different polygonal meshes.",
+    "status": "found"
+  },
+  "2601.20051": {
+    "arxiv_id": "2601.20051",
+    "title": "Size Matters: Reconstructing Real-Scale 3D Models from Monocular Images for Food Portion Estimation",
+    "authors": [
+      "Gautham Vinod",
+      "Bruce Coburn",
+      "Siddeshwar Raghavan",
+      "Jiangpeng He",
+      "Fengqing Zhu"
+    ],
+    "submission_date": "2026-01-27T20:53:45Z",
+    "latest_updated": "2026-01-27T20:53:45Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.20051v1"
+    ],
+    "abstract": "The rise of chronic diseases related to diet, such as obesity and diabetes, emphasizes the need for accurate monitoring of food intake. While AI-driven dietary assessment has made strides in recent years, the ill-posed nature of recovering size (portion) information from monocular images for accurate estimation of ``how much did you eat?'' is a pressing challenge. Some 3D reconstruction methods have achieved impressive geometric reconstruction but fail to recover the crucial real-world scale of the reconstructed object, limiting its usage in precision nutrition. In this paper, we bridge the gap between 3D computer vision and digital health by proposing a method that recovers a true-to-scale 3D reconstructed object from a monocular image. Our approach leverages rich visual features extracted from models trained on large-scale datasets to estimate the scale of the reconstructed object. This learned scale enables us to convert single-view 3D reconstructions into true-to-life, physically meaningful models. Extensive experiments and ablation studies on two publicly available datasets show that our method consistently outperforms existing techniques, achieving nearly a 30% reduction in mean absolute volume-estimation error, showcasing its potential to enhance the domain of precision nutrition. Code: https://gitlab.com/viper-purdue/size-matters",
+    "status": "found"
+  },
+  "2601.20052": {
+    "arxiv_id": "2601.20052",
+    "title": "Explainable deep learning reveals the physical mechanisms behind the turbulent kinetic energy equation",
+    "authors": [
+      "Francisco Alcántara-Ávila",
+      "Andrés Cremades",
+      "Sergio Hoyas",
+      "Ricardo Vinuesa"
+    ],
+    "submission_date": "2026-01-27T20:55:47Z",
+    "latest_updated": "2026-01-27T20:55:47Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.20052v1"
+    ],
+    "abstract": "In this work, we investigate the physical mechanisms governing turbulent kinetic energy transport using explainable deep learning (XDL). An XDL model based on SHapley Additive exPlanations (SHAP) is used to identify and percolate high-importance structures for the evolution of the turbulent kinetic energy budget terms of a turbulent channel flow at a friction Reynolds number of $Re_τ= 125$. The results show that the important structures are predominantly located in the near-wall region and are more frequently associated with sweep-type events. In the viscous layer, the SHAP structures relevant for production and viscous diffusion are almost entirely contained within those relevant for dissipation, revealing a clear hierarchical organization of near-wall turbulence. In the outer layer, this hierarchical organization breaks down and only velocity-pressure-gradient correlation and turbulent transport SHAP structures remain, with a moderate spatial coincidence of approximately $60\\%$. Finally, we show that none of the coherent structures classically studied in turbulence are capable of representing the mechanisms behind the various terms of the turbulent kinetic energy budget throughout the channel. These results reveal dissipation as the dominant organizing mechanism of near-wall turbulence, constraining production and viscous diffusion within a single structural hierarchy that breaks down in the outer layer.",
+    "status": "found"
+  },
+  "2601.20053": {
+    "arxiv_id": "2601.20053",
+    "title": "General Scalar Field Inflation ACT Attractors: Utilizing the $n_s(r)$ relation",
+    "authors": [
+      "V. K. Oikonomou"
+    ],
+    "submission_date": "2026-01-27T20:57:16Z",
+    "latest_updated": "2026-01-27T20:57:16Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.20053v1"
+    ],
+    "abstract": "The ACT data have severely constrained the single scalar field models. Known models of inflation, like the Starobinsky model, the Higgs model and the $a$-attractors are at least $2σ$ off the ACT data. In this work we aim to provide a top-to-bottom approach in single scalar field inflationary cosmology compatible with the ACT data. Specifically, inspired by the fact that the Starobinsky model, the Higgs model and the $a$-attractors, all being plateau potentials, result to the same attractor relation between the spectral index of scalar perturbations and the tensor-to-scalar ratio, which is of the form $n_s(r)=1-αr^{1/2}$, in this work we seek for attractors of the form $n_s(r)=f(r)$ that may lead to ACT-compatible inflation. Specifically, we fix the function $f(r)$ to have a specific desirable form and then solve the differential equation $n_s(r)=f(r)$ to find the potential which results to the relation $n_s(r)=f(r)$. We discovered analytically three classes of potentials which are variants of the general form $n_s(r)=γ\\pm βr \\pm r^{1/2}$ and all these models are found to be compatible with the ACT data.",
+    "status": "found"
+  },
+  "2601.20054": {
+    "arxiv_id": "2601.20054",
+    "title": "Game-Theoretic Autonomous Driving: A Graphs of Convex Sets Approach",
+    "authors": [
+      "Nikolaj Käfer",
+      "Ahmed Khalil",
+      "Edward Huynh",
+      "Efstathios Bakolas",
+      "David Fridovich-Keil"
+    ],
+    "submission_date": "2026-01-27T20:58:15Z",
+    "latest_updated": "2026-01-27T20:58:15Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.20054v1"
+    ],
+    "abstract": "Multi-vehicle autonomous driving couples strategic interaction with hybrid (discrete-continuous) maneuver planning under shared safety constraints. We introduce IBR-GCS, an Iterative Best Response (IBR) planning approach based on the Graphs of Convex Sets (GCS) framework that models highway driving as a generalized noncooperative game. IBR-GCS integrates combinatorial maneuver reasoning, trajectory planning, and game-theoretic interaction within a unified framework. The key novelty is a vehicle-specific, strategy-dependent GCS construction. Specifically, at each best-response update, each vehicle builds its own graph conditioned on the current strategies of the other vehicles, with vertices representing lane-specific, time-varying, convex, collision-free regions and edges encoding dynamically feasible transitions. This yields a shortest-path problem in GCS for each best-response step, which admits an efficient convex relaxation that can be solved using convex optimization tools without exhaustive discrete tree search. We then apply an iterative best-response scheme in which vehicles update their trajectories sequentially and provide conditions under which the resulting inexact updates converge to an approximate generalized Nash equilibrium. Simulation results across multi-lane, multi-vehicle scenarios demonstrate that IBR-GCS produces safe trajectories and strategically consistent interactive behaviors.",
+    "status": "found"
+  },
+  "2601.20055": {
+    "arxiv_id": "2601.20055",
+    "title": "VERGE: Formal Refinement and Guidance Engine for Verifiable LLM Reasoning",
+    "authors": [
+      "Vikash Singh",
+      "Darion Cassel",
+      "Nathaniel Weir",
+      "Nick Feng",
+      "Sam Bayless"
+    ],
+    "submission_date": "2026-01-27T20:59:11Z",
+    "latest_updated": "2026-10-11T01:28:54Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2601.20055v1",
+      "2601.20055v2",
+      "2601.20055v3"
+    ],
+    "abstract": "Despite the syntactic fluency of Large Language Models (LLMs), ensuring their logical correctness in high-stakes domains remains a fundamental challenge. We present a neurosymbolic framework that combines LLMs with SMT solvers to produce verification-guided answers through iterative refinement. Our approach decomposes LLM outputs into atomic claims, autoformalizes them into first-order logic, and verifies their logical consistency using automated theorem proving. We introduce three key innovations: (1) multi-model consensus via formal semantic equivalence checking to ensure logic-level alignment between candidates, eliminating the syntactic bias of surface-form metrics, (2) semantic routing that directs different claim types to appropriate verification strategies: symbolic solvers for logical claims and LLM ensembles for commonsense reasoning, and (3) precise logical error localization via Minimal Correction Subsets (MCS), which pinpoint the exact subset of claims to revise, transforming binary failure signals into actionable feedback. Our framework classifies claims by their logical status and aggregates multiple verification signals into a unified score with variance-based penalty. The system iteratively refines answers using structured feedback until acceptance criteria are met or convergence is achieved. This hybrid approach delivers formal guarantees where possible and consensus verification elsewhere, advancing trustworthy AI. With the GPT-OSS-120B model, VERGE demonstrates an average performance uplift of 18.7% at convergence across a set of reasoning benchmarks compared to single-pass approaches.",
+    "status": "found"
+  }
+}

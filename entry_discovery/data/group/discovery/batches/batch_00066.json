@@ -1,0 +1,424 @@
+{
+  "2511.13029": {
+    "arxiv_id": "2511.13029",
+    "title": "AA-Omniscience: Evaluating Cross-Domain Knowledge Reliability in Large Language Models",
+    "authors": [
+      "Declan Jackson",
+      "William Keating",
+      "George Cameron",
+      "Micah Hill-Smith"
+    ],
+    "submission_date": "2025-11-17T06:27:16Z",
+    "latest_updated": "2025-11-17T06:27:16Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.13029v1"
+    ],
+    "abstract": "Existing language model evaluations primarily measure general capabilities, yet reliable use of these models across a range of domains demands factual accuracy and recognition of knowledge gaps. We introduce AA-Omniscience, a benchmark designed to measure both factual recall and knowledge calibration across 6,000 questions. Questions are derived from authoritative academic and industry sources, and cover 42 economically relevant topics within six different domains. The evaluation measures a model's Omniscience Index, a bounded metric (-100 to 100) measuring factual recall that jointly penalizes hallucinations and rewards abstention when uncertain, with 0 equating to a model that answers questions correctly as much as it does incorrectly. Among evaluated models, Claude 4.1 Opus attains the highest score (4.8), making it one of only three models to score above zero. These results reveal persistent factuality and calibration weaknesses across frontier models. Performance also varies by domain, with the models from three different research labs leading across the six domains. This performance variability suggests models should be chosen according to the demands of the use case rather than general performance for tasks where knowledge is important.",
+    "status": "found"
+  },
+  "2511.13030": {
+    "arxiv_id": "2511.13030",
+    "title": "Thermal infrared characterization of spatially unresolved resident space objects: Prospects from analytical two-component modeling",
+    "authors": [
+      "Stephen Catsamas",
+      "Sarah Caddy",
+      "Michele Trenti",
+      "Benjamin Metha",
+      "Simon Barraclough",
+      "Robert Mearns",
+      "Airlie Chapman",
+      "Rachel Webster"
+    ],
+    "submission_date": "2025-11-17T06:27:27Z",
+    "latest_updated": "2025-11-17T06:27:27Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.13030v1"
+    ],
+    "abstract": "In this work we investigate the potential of a thermal infrared (IR) space telescope to remotely characterize the component temperatures of a satellite. With the rapid increase in the number of objects launched in recent years, the ability to detect, track, identify and determine the intent of satellites has become of increasing importance. Spectral modeling of satellites from multi-wavelength photometry in the thermal IR is a technique that has the potential to derive information about the temperature and operational status of a satellite in orbit, without the requirement to spatially resolve the target. Previous work has focused on determination of a single/effective temperature for a Resident Space Objects (RSOs) - such as satellites, asteroids, debris and rocket bodies - from remote observations, obtaining mixed results in terms of ability to classify objects. To progress, we explore a two-greybody component spectral model. Using this analytical model, we investigate which temperature characteristics may be identified from unresolved multi-wavelength photometric observations as a function of the signal-to-noise ratio, under the assumption of Poisson noise-dominated data. With this instrument-agnostic framework, we then quantify the potential of this model to discriminate between RSOs with a single temperature (e.g. natural rocks) versus human-made satellites with a chassis and deployed solar panels where significant component temperature differences exist under typical orbital configurations. Last, we comment on promising prospects of this model for applications to existing and future space telescope observations to characterize RSOs from spatially unresolved photometry",
+    "status": "found"
+  },
+  "2511.13031": {
+    "arxiv_id": "2511.13031",
+    "title": "Towards 3D Object-Centric Feature Learning for Semantic Scene Completion",
+    "authors": [
+      "Weihua Wang",
+      "Yubo Cui",
+      "Xiangru Lin",
+      "Zhiheng Li",
+      "Zheng Fang"
+    ],
+    "submission_date": "2025-11-17T06:28:26Z",
+    "latest_updated": "2025-12-22T14:03:37Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2511.13031v1",
+      "2511.13031v2",
+      "2511.13031v3"
+    ],
+    "abstract": "Vision-based 3D Semantic Scene Completion (SSC) has received growing attention due to its potential in autonomous driving. While most existing approaches follow an ego-centric paradigm by aggregating and diffusing features over the entire scene, they often overlook fine-grained object-level details, leading to semantic and geometric ambiguities, especially in complex environments. To address this limitation, we propose Ocean, an object-centric prediction framework that decomposes the scene into individual object instances to enable more accurate semantic occupancy prediction. Specifically, we first employ a lightweight segmentation model, MobileSAM, to extract instance masks from the input image. Then, we introduce a 3D Semantic Group Attention module that leverages linear attention to aggregate object-centric features in 3D space. To handle segmentation errors and missing instances, we further design a Global Similarity-Guided Attention module that leverages segmentation features for global interaction. Finally, we propose an Instance-aware Local Diffusion module that improves instance features through a generative process and subsequently refines the scene representation in the BEV space. Extensive experiments on the SemanticKITTI and SSCBench-KITTI360 benchmarks demonstrate that Ocean achieves state-of-the-art performance, with mIoU scores of 17.40 and 20.28, respectively.",
+    "status": "found"
+  },
+  "2511.13032": {
+    "arxiv_id": "2511.13032",
+    "title": "Uni-Inter: Unifying 3D Human Motion Synthesis Across Diverse Interaction Contexts",
+    "authors": [
+      "Sheng Liu",
+      "Yuanzhi Liang",
+      "Jiepeng Wang",
+      "Sidan Du",
+      "Chi Zhang",
+      "Xuelong Li"
+    ],
+    "submission_date": "2025-11-17T06:32:38Z",
+    "latest_updated": "2026-09-07T06:43:42Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.13032v1",
+      "2511.13032v2"
+    ],
+    "abstract": "We present Uni-Inter, a unified framework for human motion generation that supports a wide range of interaction scenarios: including human-human, human-object, and human-scene-within a single, task-agnostic architecture. In contrast to existing methods that rely on task-specific designs and exhibit limited generalization, Uni-Inter introduces the Unified Interactive Volume (UIV), a volumetric representation that encodes heterogeneous interactive entities into a shared spatial field. This enables consistent relational reasoning and compound interaction modeling. Motion generation is formulated as joint-wise probabilistic prediction over the UIV, allowing the model to capture fine-grained spatial dependencies and produce coherent, context-aware behaviors. Experiments across three representative interaction tasks demonstrate that Uni-Inter achieves competitive performance and generalizes well to novel combinations of entities. These results suggest that unified modeling of compound interactions offers a promising direction for scalable motion synthesis in complex environments.",
+    "status": "found"
+  },
+  "2511.13033": {
+    "arxiv_id": "2511.13033",
+    "title": "ZX-DB: A Graph Database for Quantum Circuit Simplification and Rewriting via the ZX-Calculus",
+    "authors": [
+      "Valter Uotila",
+      "Cong Yu",
+      "Bo Zhao"
+    ],
+    "submission_date": "2025-11-17T06:33:18Z",
+    "latest_updated": "2025-11-17T06:33:18Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.13033v1"
+    ],
+    "abstract": "Quantum computing is an emerging computational paradigm with the potential to outperform classical computers in solving a variety of problems. To achieve this, quantum programs are typically represented as quantum circuits, which must be optimized and adapted for target hardware through quantum circuit compilation. We introduce ZX-DB, a data-driven system that performs quantum circuit simplification and rewriting inside a graph database using ZX-calculus, a complete graphical formalism for quantum mechanics. ZX-DB encodes ZX-calculus rewrite rules as standard openCypher queries and executes them on an example graph database engine, Memgraph, enabling efficient, database-native transformations of large-scale quantum circuits. ZX-DB integrates correctness validation via tensor and graph equivalence checks and is evaluated against the state-of-the-art PyZX framework. Experimental results show that ZX-DB achieves up to an order-of-magnitude speedup for independent rewrites, while exposing pattern-matching bottlenecks in current graph database engines. By uniting quantum compilation and graph data management, ZX-DB opens a new systems direction toward scalable, database-supported quantum computing pipelines.",
+    "status": "found"
+  },
+  "2511.13034": {
+    "arxiv_id": "2511.13034",
+    "title": "An Online Multiobjective Policy Gradient for Long-run Average-reward Markov Decision Process",
+    "authors": [
+      "Rahul Misra",
+      "Manuela L. Bujorianu",
+      "Rafał Wisniewski"
+    ],
+    "submission_date": "2025-11-17T06:33:26Z",
+    "latest_updated": "2025-11-17T06:33:26Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.13034v1"
+    ],
+    "abstract": "We propose a reinforcement learning (RL) framework for multi-objective decision-making, where the agent seeks to optimize a vector of rewards rather than a single scalar value. The objective is to ensure that the time-averaged reward vector converges asymptotically to a predefined target set. Since standard RL algorithms operate on scalar rewards, we introduce a dynamic scalarization mechanism guided by Blackwell's Approachability Theorem. This theorem enables adaptive updates of the scalarization vector to guarantee convergence toward the target set. Assuming ergodicity, the Markov chain induced by the learned policies admits a stationary distribution, ensuring all states recur with finite return times. Our algorithm exploits this property by defining an inner loop that applies a policy gradient method (with baseline) between successive visits to a designated recurrent state, enforcing Blackwell's condition at each iteration. An outer loop then updates the scalarization vector after each recurrence. We establish theoretical convergence of the long-run average reward vector to the target set and validate the approach through a numerical example.",
+    "status": "found"
+  },
+  "2511.13035": {
+    "arxiv_id": "2511.13035",
+    "title": "One-Step Generative Policies with Q-Learning: A Reformulation of MeanFlow",
+    "authors": [
+      "Zeyuan Wang",
+      "Da Li",
+      "Yulin Chen",
+      "Ye Shi",
+      "Liang Bai",
+      "Tianyuan Yu",
+      "Yanwei Fu"
+    ],
+    "submission_date": "2025-11-17T06:34:17Z",
+    "latest_updated": "2025-11-17T06:34:17Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.13035v1"
+    ],
+    "abstract": "We introduce a one-step generative policy for offline reinforcement learning that maps noise directly to actions via a residual reformulation of MeanFlow, making it compatible with Q-learning. While one-step Gaussian policies enable fast inference, they struggle to capture complex, multimodal action distributions. Existing flow-based methods improve expressivity but typically rely on distillation and two-stage training when trained with Q-learning. To overcome these limitations, we propose to reformulate MeanFlow to enable direct noise-to-action generation by integrating the velocity field and noise-to-action transformation into a single policy network-eliminating the need for separate velocity estimation. We explore several reformulation variants and identify an effective residual formulation that supports expressive and stable policy learning. Our method offers three key advantages: 1) efficient one-step noise-to-action generation, 2) expressive modelling of multimodal action distributions, and 3) efficient and stable policy learning via Q-learning in a single-stage training setup. Extensive experiments on 73 tasks across the OGBench and D4RL benchmarks demonstrate that our method achieves strong performance in both offline and offline-to-online reinforcement learning settings. Code is available at https://github.com/HiccupRL/MeanFlowQL.",
+    "status": "found"
+  },
+  "2511.13036": {
+    "arxiv_id": "2511.13036",
+    "title": "uCLIP: Parameter-Efficient Multilingual Extension of Vision-Language Models with Unpaired Data",
+    "authors": [
+      "Dahyun Chung",
+      "Donghyun Shin",
+      "Yujin Sung",
+      "Seunggi Moon",
+      "Jinwoo Jeon",
+      "Byung-Jun Lee"
+    ],
+    "submission_date": "2025-11-17T06:34:49Z",
+    "latest_updated": "2025-12-08T06:07:33Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.13036v1",
+      "2511.13036v2"
+    ],
+    "abstract": "Contrastive Language-Image Pre-training (CLIP) has demonstrated strong generalization across a wide range of visual tasks by leveraging large-scale English-image pairs. However, its extension to low-resource languages remains limited due to the scarcity of high-quality multilingual image-text data. Existing multilingual vision-language models exhibit consistently low retrieval performance in underrepresented languages including Czech, Finnish, Croatian, Hungarian, and Romanian on the Crossmodal-3600 (XM3600) benchmark. To address this, we propose a lightweight and data-efficient framework for multilingual vision-language alignment. Our approach requires no image-text pairs or text-text pairs and freezes both the pretrained image encoder and multilingual text encoder during training. Only a compact 1.7M-parameter projection module is trained, using a contrastive loss over English representations as semantic anchors. This minimal training setup enables robust multilingual alignment even for languages with limited supervision. Extensive evaluation across multiple multilingual retrieval benchmarks confirms the effectiveness of our method, showing significant gains in five underrepresented languages where existing models typically underperform. These findings highlight the effectiveness of our pivot-based, parameter-efficient alignment strategy for inclusive multimodal learning.",
+    "status": "found"
+  },
+  "2511.13037": {
+    "arxiv_id": "2511.13037",
+    "title": "Reconciliation of Bayes and empirical Bayes interval estimation with application to small area estimation",
+    "authors": [
+      "Aditi Sen",
+      "Masayo Y. Hirose",
+      "Partha Lahiri"
+    ],
+    "submission_date": "2025-11-17T06:34:52Z",
+    "latest_updated": "2026-07-13T00:34:14Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.13037v1",
+      "2511.13037v2"
+    ],
+    "abstract": "Multi-level normal hierarchical models, also interpreted as mixed effects models, play an important role in developing statistical theory in multi-parameter estimation for a wide range of applications, including small area estimation. In this article, we propose a novel reconciliation framework of the empirical Bayes (EB) and hierarchical Bayes approaches for interval estimation of random effects under a two-level normal model. Our framework shows that a second-order efficient empirical Bayes confidence interval, with EB coverage error of order $O(m^{-3/2})$, $m$ being the number of areas in the area-level model, can also be viewed as a credible interval whose expected posterior coverage is close to the nominal level, provided a carefully chosen prior, referred to as a \"matching prior\", is placed on the hyperparameters. While existing literature has examined matching priors that reconcile frequentist and Bayesian inference in various settings, this paper is the first to study matching priors with the goal of interval estimation of random effects in a two-level model. We obtain a matching prior on the variance component that achieves a proper posterior under mild regularity conditions. The theoretical results in the paper are corroborated through a Monte Carlo simulation study and real data analysis.",
+    "status": "found"
+  },
+  "2511.13038": {
+    "arxiv_id": "2511.13038",
+    "title": "A Fractional Calculus Framework for Open Quantum Dynamics: From Liouville to Lindblad to Memory Kernels",
+    "authors": [
+      "Bo Peng",
+      "Yu Zhang"
+    ],
+    "submission_date": "2025-11-17T06:35:42Z",
+    "latest_updated": "2025-12-17T00:51:27Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.13038v1",
+      "2511.13038v2"
+    ],
+    "abstract": "Open quantum systems exhibit dynamics ranging from unitary evolution to irreversible dissipation. While the Gorini--Kossakowski--Sudarshan--Lindblad (GKSL) equation uniquely characterizes Markovian CPTP evolution, many physical platforms display non-Markovian features such as algebraic relaxation and coherence backflow. Fractional calculus provides a natural way to model such long-memory behavior through power-law temporal kernels introduced by fractional time derivatives. Here we develop a unified framework that embeds fractional master equations within the broader hierarchy of open-system formalisms. The fractional equation forms a structured subclass of memory-kernel models, reduces to the Lindblad form at unit order, and, through Bochner--Phillips subordination, admits a CPTP representation as an average over Lindblad semigroups. Its resolvent structure further connects fractional dynamics to established non-Markovian approaches, including Nakajima--Zwanzig kernels and hierarchical equations of motion, providing a compact surrogate for long-memory effects. This formulation positions fractional calculus as a rigorous and practical language for quantum dynamics with intrinsic memory, supporting both analytical insight and efficient quantum simulation.",
+    "status": "found"
+  },
+  "2511.13039": {
+    "arxiv_id": "2511.13039",
+    "title": "MGCA-Net: Multi-Grained Category-Aware Network for Open-Vocabulary Temporal Action Localization",
+    "authors": [
+      "Zhenying Fang",
+      "Richang Hong"
+    ],
+    "submission_date": "2025-11-17T06:40:02Z",
+    "latest_updated": "2026-07-03T08:20:00Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.13039v1",
+      "2511.13039v2"
+    ],
+    "abstract": "Open-Vocabulary Temporal Action Localization (OV-TAL) aims to recognize and localize instances of any desired action categories in videos without explicitly curating training data for all categories. Existing methods mostly recognize action categories at a single granularity, which degrades the recognition accuracy of both base and novel action categories. To address these issues, we propose a Multi-Grained Category-Aware Network (MGCA-Net) comprising a localizer, an action presence predictor, a conventional classifier, and a coarse-to-fine classifier. Specifically, the localizer localizes category-agnostic action proposals. For these action proposals, the action presence predictor estimates the probability that they belong to an action instance. At the same time, the conventional classifier predicts the probability of each action proposal over base action categories at the snippet granularity. Novel action categories are recognized by the coarse-to-fine classifier, which first identifies action presence at the video granularity. Finally, it assigns each action proposal to one category from the coarse categories at the proposal granularity. Through coarse-to-fine category awareness for novel actions and the conventional classifier's awareness of base actions, multi-grained category awareness is achieved, effectively enhancing localization performance. Comprehensive evaluations on the THUMOS'14 and ActivityNet-1.3 benchmarks demonstrate that our method achieves state-of-the-art performance. Furthermore, our MGCA-Net achieves state-of-the-art results under the Zero-Shot Temporal Action Localization setting.",
+    "status": "found"
+  },
+  "2511.13040": {
+    "arxiv_id": "2511.13040",
+    "title": "How Good is BLI as an Alignment Measure: A Study in Word Embedding Paradigm",
+    "authors": [
+      "Kasun Wickramasinghe",
+      "Nisansa de Silva"
+    ],
+    "submission_date": "2025-11-17T06:41:41Z",
+    "latest_updated": "2025-11-17T06:41:41Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.13040v1"
+    ],
+    "abstract": "Sans a dwindling number of monolingual embedding studies originating predominantly from the low-resource domains, it is evident that multilingual embedding has become the de facto choice due to its adaptability to the usage of code-mixed languages, granting the ability to process multilingual documents in a language-agnostic manner, as well as removing the difficult task of aligning monolingual embeddings. But is this victory complete? Are the multilingual models better than aligned monolingual models in every aspect? Can the higher computational cost of multilingual models always be justified? Or is there a compromise between the two extremes? Bilingual Lexicon Induction is one of the most widely used metrics in terms of evaluating the degree of alignment between two embedding spaces. In this study, we explore the strengths and limitations of BLI as a measure to evaluate the degree of alignment of two embedding spaces. Further, we evaluate how well traditional embedding alignment techniques, novel multilingual models, and combined alignment techniques perform BLI tasks in the contexts of both high-resource and low-resource languages. In addition to that, we investigate the impact of the language families to which the pairs of languages belong. We identify that BLI does not measure the true degree of alignment in some cases and we propose solutions for them. We propose a novel stem-based BLI approach to evaluate two aligned embedding spaces that take into account the inflected nature of languages as opposed to the prevalent word-based BLI techniques. Further, we introduce a vocabulary pruning technique that is more informative in showing the degree of the alignment, especially performing BLI on multilingual embedding models. Often, combined embedding alignment techniques perform better while in certain cases multilingual embeddings perform better (mainly low-resource language cases).",
+    "status": "found"
+  },
+  "2511.13041": {
+    "arxiv_id": "2511.13041",
+    "title": "Mitigating Recommendation Biases via Group-Alignment and Global-Uniformity in Representation Learning",
+    "authors": [
+      "Miaomiao Cai",
+      "Min Hou",
+      "Lei Chen",
+      "Le Wu",
+      "Haoyue Bai",
+      "Yong Li",
+      "Meng Wang"
+    ],
+    "submission_date": "2025-11-17T06:42:29Z",
+    "latest_updated": "2025-11-17T06:42:29Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.13041v1"
+    ],
+    "abstract": "Collaborative Filtering~(CF) plays a crucial role in modern recommender systems, leveraging historical user-item interactions to provide personalized suggestions. However, CF-based methods often encounter biases due to imbalances in training data. This phenomenon makes CF-based methods tend to prioritize recommending popular items and performing unsatisfactorily on inactive users. Existing works address this issue by rebalancing training samples, reranking recommendation results, or making the modeling process robust to the bias. Despite their effectiveness, these approaches can compromise accuracy or be sensitive to weighting strategies, making them challenging to train. In this paper, we deeply analyze the causes and effects of the biases and propose a framework to alleviate biases in recommendation from the perspective of representation distribution, namely Group-Alignment and Global-Uniformity Enhanced Representation Learning for Debiasing Recommendation (AURL). Specifically, we identify two significant problems in the representation distribution of users and items, namely group-discrepancy and global-collapse. These two problems directly lead to biases in the recommendation results. To this end, we propose two simple but effective regularizers in the representation space, respectively named group-alignment and global-uniformity. The goal of group-alignment is to bring the representation distribution of long-tail entities closer to that of popular entities, while global-uniformity aims to preserve the information of entities as much as possible by evenly distributing representations. Our method directly optimizes both the group-alignment and global-uniformity regularization terms to mitigate recommendation biases. Extensive experiments on three real datasets and various recommendation backbones verify the superiority of our proposed framework.",
+    "status": "found"
+  },
+  "2511.13042": {
+    "arxiv_id": "2511.13042",
+    "title": "APP: A* Post-Processing Algorithm for Robots with Bidirectional Shortcut and Path Perturbation",
+    "authors": [
+      "Yong Li",
+      "Hui Cheng"
+    ],
+    "submission_date": "2025-11-17T06:42:37Z",
+    "latest_updated": "2025-11-17T06:42:37Z",
+    "revised_dates": null,
+    "venue": "IEEE Robotics and Automation Letters ( Volume: 8, Issue: 11, November 2023)",
+    "latest_version": 1,
+    "versions": [
+      "2511.13042v1"
+    ],
+    "abstract": "Paths generated by A* and other graph-search-based planners are widely used in the robotic field. Due to the restricted node-expansion directions, the resulting paths are usually not the shortest. Besides, unnecessary heading changes, or zig-zag patterns, exist even when no obstacle is nearby, which is inconsistent with the human intuition that the path segments should be straight in wide-open space due to the absence of obstacles. This article puts forward a general and systematic post-processing algorithm for A* and other graph-search-based planners. The A* post-processing algorithm, called APP, is developed based on the costmap, which is widely used in commercial service robots. First, a bidirectional vertices reduction algorithm is proposed to tackle the asymm- etry of the path and the environments. During the forward and backward vertices reduction, a thorough shortcut strategy is put forward to improve the path-shortening performance and avoid unnecessary heading changes. Second, an iterative path perturbation algorithm is adopted to locally reduce the number of unnecessary heading changes and improve the path smooth- ness. Comparative experiments are then carried out to validate the superiority of the proposed method. Quantitative performance indexes show that APP outperforms the existing methods in planning time, path length as well as the number of unnecessary heading changes. Finally, field navigation experiments are carried out to verify the practicability of APP.",
+    "status": "found"
+  },
+  "2511.13043": {
+    "arxiv_id": "2511.13043",
+    "title": "Spark-Prover-X1: Formal Theorem Proving Through Diverse Data Training",
+    "authors": [
+      "Xinyuan Zhou",
+      "Yi Lei",
+      "Xiaoyu Zhou",
+      "Jingyi Sun",
+      "Yu Zhu",
+      "Zhongyi Ye",
+      "Weitai Zhang",
+      "Quan Liu",
+      "Si Wei",
+      "Cong Liu"
+    ],
+    "submission_date": "2025-11-17T06:44:02Z",
+    "latest_updated": "2025-12-01T03:26:44Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2511.13043v1",
+      "2511.13043v2",
+      "2511.13043v3"
+    ],
+    "abstract": "Large Language Models (LLMs) have shown significant promise in automated theorem proving, yet progress is often constrained by the scarcity of diverse and high-quality formal language data. To address this issue, we introduce Spark-Prover-X1, a 7B parameter model trained via an three-stage framework designed to unlock the reasoning potential of more accessible and moderately-sized LLMs. The first stage infuses deep knowledge through continuous pre-training on a broad mathematical corpus, enhanced by a suite of novel data tasks. Key innovation is a \"CoT-augmented state prediction\" task to achieve fine-grained reasoning. The second stage employs Supervised Fine-tuning (SFT) within an expert iteration loop to specialize both the Spark-Prover-X1-7B and Spark-Formalizer-X1-7B models. Finally, a targeted round of Group Relative Policy Optimization (GRPO) is applied to sharpen the prover's capabilities on the most challenging problems. To facilitate robust evaluation, particularly on problems from real-world examinations, we also introduce ExamFormal-Bench, a new benchmark dataset of 402 formal problems. Experimental results demonstrate that Spark-Prover achieves state-of-the-art performance among similarly-sized open-source models within the \"Whole-Proof Generation\" paradigm. It shows exceptional performance on difficult competition benchmarks, notably solving 27 problems on PutnamBench (pass@32) and achieving 24.0\\% on CombiBench (pass@32). Our work validates that this diverse training data and progressively refined training pipeline provides an effective path for enhancing the formal reasoning capabilities of lightweight LLMs. We will release both Spark-Prover-X1-7B and Spark-Formalizer-X1-7B, along with the ExamFormal-Bench dataset, in the near future.",
+    "status": "found"
+  },
+  "2511.13044": {
+    "arxiv_id": "2511.13044",
+    "title": "Bi-View Embedding Fusion: A Hybrid Learning Approach for Knowledge Graph's Nodes Classification Addressing Problems with Limited Data",
+    "authors": [
+      "Rosario Napoli",
+      "Giovanni Lonia",
+      "Antonio Celesti",
+      "Massimo Villari",
+      "Maria Fazio"
+    ],
+    "submission_date": "2025-11-17T06:45:14Z",
+    "latest_updated": "2025-11-17T06:45:14Z",
+    "revised_dates": null,
+    "venue": "Knowledge Graphs, Springer Nature Singapore, 2026, pp. 19-34",
+    "latest_version": 1,
+    "versions": [
+      "2511.13044v1"
+    ],
+    "abstract": "Traditional Machine Learning (ML) methods require large amounts of data to perform well, limiting their applicability in sparse or incomplete scenarios and forcing the usage of additional synthetic data to improve the model training. To overcome this challenge, the research community is looking more and more at Graph Machine Learning (GML) as it offers a powerful alternative by using relationships within data. However, this method also faces limitations, particularly when dealing with Knowledge Graphs (KGs), which can hide huge information due to their semantic nature. This study introduces Bi-View, a novel hybrid approach that increases the informative content of node features in KGs to generate enhanced Graph Embeddings (GEs) that are used to improve GML models without relying on additional synthetic data. The proposed work combines two complementary GE techniques: Node2Vec, which captures structural patterns through unsupervised random walks, and GraphSAGE, which aggregates neighbourhood information in a supervised way. Node2Vec embeddings are first computed to represent the graph topology, and node features are then enriched with centrality-based metrics, which are used as input for the GraphSAGE model. Moreover, a fusion layer combines the original Node2Vec embeddings with the GraphSAGE-influenced representations, resulting in a dual-perspective embedding space. Such a fusion captures both topological and semantic properties of the graph, enabling the model to exploit informative features that may exist in the dataset but that are not explicitly represented. Our approach improves downstream task performance, especially in scenarios with poor initial features, giving the basis for more accurate and precise KG-enanched GML models.",
+    "status": "found"
+  },
+  "2511.13045": {
+    "arxiv_id": "2511.13045",
+    "title": "Reheating and Inflationary dynamics driven by an inverse tangent potential",
+    "authors": [
+      "Mayur Abhisheki",
+      "Prasanta Kumar Das"
+    ],
+    "submission_date": "2025-11-17T06:45:16Z",
+    "latest_updated": "2025-11-21T10:08:57Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.13045v1",
+      "2511.13045v2"
+    ],
+    "abstract": "In this work, we study the early universe inflation and the post-inflation reheating era employing an inverse tangent potential of the form $V=V_0 \\cdot[tan^{-1}(\\frac{κφ}{m_p})]^2$, where $κ$ is a free parameter of the potential and $m_p$ is the reduced Planck mass. We derive the slow roll parameters, the number of e-folds(N), the scalar spectral index $n_s$, the tensor-to-scalar ratio $r$, and the tensor spectral index $n_T$ for the inverse tangent potential. We examine the inflationary observables using the data of the Planck-2018 and recent ACT collaboration and obtain constraints on the potential parameter $κ$. We also employ a reheating analysis by invoking the conservation of entropy between today and the time when reheating starts. We obtain bounds on the reheating temperature $T_{re}$ and the number of e-folds of the reheating $N_{re}$ using the spectral-index $n_s$ constraints from Planck 2018 and the ACT results. We show that this inverse-tangent potential can act as an alternative to the standard inflationary potentials like Starobinsky which are excluded at $2σ$ level by the recent sixth data release (DR6) of the Atacama Cosmology Telescope (ACT) collaboration.",
+    "status": "found"
+  },
+  "2511.13046": {
+    "arxiv_id": "2511.13046",
+    "title": "Knowing Ourselves Through Others: Reflecting with AI in Digital Human Debates",
+    "authors": [
+      "Ichiro Matsuda",
+      "Komichi Takezawa",
+      "Katsuhito Muroi",
+      "Kensuke Katori",
+      "Ryosuke Hyakuta",
+      "Jingjing Li",
+      "Yoichi Ochiai"
+    ],
+    "submission_date": "2025-11-17T06:48:13Z",
+    "latest_updated": "2025-11-17T06:48:13Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.13046v1"
+    ],
+    "abstract": "LLMs can act as an impartial other, drawing on vast knowledge, or as personalized self-reflecting user prompts. These personalized LLMs, or Digital Humans, occupy an intermediate position between self and other. This research explores the dynamic of self and other mediated by these Digital Humans. Using a Research Through Design approach, nine junior and senior high school students, working in teams, designed Digital Humans and had them debate. Each team built a unique Digital Human using prompt engineering and RAG, then observed their autonomous debates. Findings from generative AI literacy tests, interviews, and log analysis revealed that participants deepened their understanding of AI's capabilities. Furthermore, experiencing their own creations as others prompted a reflective attitude, enabling them to objectively view their own cognition and values. We propose \"Reflecting with AI\" - using AI to re-examine the self - as a new generative AI literacy, complementing the conventional understanding, applying, criticism and ethics.",
+    "status": "found"
+  },
+  "2511.13047": {
+    "arxiv_id": "2511.13047",
+    "title": "DiffPixelFormer: Differential Pixel-Aware Transformer for RGB-D Indoor Scene Segmentation",
+    "authors": [
+      "Yan Gong",
+      "Jianli Lu",
+      "Yongsheng Gao",
+      "Jie Zhao",
+      "Xiaojuan Zhang",
+      "Susanto Rahardja"
+    ],
+    "submission_date": "2025-11-17T06:51:07Z",
+    "latest_updated": "2025-11-17T06:51:07Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.13047v1"
+    ],
+    "abstract": "Indoor semantic segmentation is fundamental to computer vision and robotics, supporting applications such as autonomous navigation, augmented reality, and smart environments. Although RGB-D fusion leverages complementary appearance and geometric cues, existing methods often depend on computationally intensive cross-attention mechanisms and insufficiently model intra- and inter-modal feature relationships, resulting in imprecise feature alignment and limited discriminative representation. To address these challenges, we propose DiffPixelFormer, a differential pixel-aware Transformer for RGB-D indoor scene segmentation that simultaneously enhances intra-modal representations and models inter-modal interactions. At its core, the Intra-Inter Modal Interaction Block (IIMIB) captures intra-modal long-range dependencies via self-attention and models inter-modal interactions with the Differential-Shared Inter-Modal (DSIM) module to disentangle modality-specific and shared cues, enabling fine-grained, pixel-level cross-modal alignment. Furthermore, a dynamic fusion strategy balances modality contributions and fully exploits RGB-D information according to scene characteristics. Extensive experiments on the SUN RGB-D and NYUDv2 benchmarks demonstrate that DiffPixelFormer-L achieves mIoU scores of 54.28% and 59.95%, outperforming DFormer-L by 1.78% and 2.75%, respectively. Code is available at https://github.com/gongyan1/DiffPixelFormer.",
+    "status": "found"
+  },
+  "2511.13048": {
+    "arxiv_id": "2511.13048",
+    "title": "Unidirectional-Road-Network-Based Global Path Planning for Cleaning Robots in Semi-Structured Environments",
+    "authors": [
+      "Yong Li",
+      "Hui Cheng"
+    ],
+    "submission_date": "2025-11-17T06:52:41Z",
+    "latest_updated": "2025-11-17T06:52:41Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.13048v1"
+    ],
+    "abstract": "Practical global path planning is critical for commercializing cleaning robots working in semi-structured environments. In the literature, global path planning methods for free space usually focus on path length and neglect the traffic rule constraints of the environments, which leads to high-frequency re-planning and increases collision risks. In contrast, those for structured environments are developed mainly by strictly complying with the road network representing the traffic rule constraints, which may result in an overlong path that hinders the overall navigation efficiency. This article proposes a general and systematic approach to improve global path planning performance in semi-structured environments. A unidirectional road network is built to represent the traffic constraints in semi-structured environments and a hybrid strategy is proposed to achieve a guaranteed planning result.Cutting across the road at the starting and the goal points are allowed to achieve a shorter path. Especially, a two-layer potential map is proposed to achieve a guaranteed performance when the starting and the goal points are in complex intersections. Comparative experiments are carried out to validate the effectiveness of the proposed method. Quantitative experimental results show that, compared with the state-of-art, the proposed method guarantees a much better balance between path length and the consistency with the road network.",
+    "status": "found"
+  }
+}

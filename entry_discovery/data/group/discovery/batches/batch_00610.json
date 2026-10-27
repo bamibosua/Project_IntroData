@@ -1,0 +1,382 @@
+{
+  "2608.11207": {
+    "arxiv_id": "2608.11207",
+    "title": "Dynamic Governance of Multi-LLM Agent Systems for Collaborative Conversational Outcomes",
+    "authors": [
+      "Alexander Liss",
+      "Nicholas Desmond",
+      "Santiago Gil Gallego"
+    ],
+    "submission_date": "2026-04-25T21:47:25Z",
+    "latest_updated": "2026-04-25T21:47:25Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11207v1"
+    ],
+    "abstract": "When two LLM agents with structurally opposed objectives interact across multiple turns, the absence of a shared goal function produces not competition but collapse: the visitor capitulates, the site agent stops varying its approach, and the conversation terminates without achieving either agent's stated objective. This paper asks whether a control-theoretic governance layer can substitute for that missing goal function. The Experience Orchestrator (EO) addresses this in a simulated financial services environment where a site agent guides a visitor toward advisor contact while the visitor maintains psychologically realistic resistance. EO governs the joint trajectory through three mechanisms: a Contextual Bandit (CB) that selects content arms calibrated from real-world web analytics, a PID controller that enforces behavioral consistency via dynamic schema constraints, and a POMDP belief tracker that maintains a probabilistic model of visitor intent. Across 60,000 simulations, EO achieves a +32 percentage point lift in high-intent advisor contact rate (78.1% vs. 46.1% over a naive LLM control), with CB variant selection accounting for 97% of between-factor outcome variance -- confirming that the governance policy, not environmental initial conditions, determines where trajectories end up. Persona-level analysis reveals two distinct regimes: for visitors with no natural inclination toward conversion, the governance layer is the difference between a functional system and a non-functional one; for visitors already near alignment, a naive LLM's empathetic defaults are largely sufficient. All findings are conditional on LLM-to-LLM simulation. The PID controller has not been calibrated against real human unpredictability, and validating EO on live traffic is the critical next step.",
+    "status": "found"
+  },
+  "2608.11208": {
+    "arxiv_id": "2608.11208",
+    "title": "Siebeck--Marden Theorems and Symmetric Parametrizations of Cyclic Polygons",
+    "authors": [
+      "Mohammad Hassan Murad"
+    ],
+    "submission_date": "2026-06-27T17:11:44Z",
+    "latest_updated": "2026-08-14T21:55:41Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.11208v1",
+      "2608.11208v2"
+    ],
+    "abstract": "The classical Blaschke-product approach provides an elegant description of triangles inscribed in a circle and circumscribed about an ellipse. Motivated by the Siebeck--Marden theorem, we derive a symmetric parametrization for cyclic $p$-gons circumscribed about a Siebeck--Marden curve of class $p-1$, recovering the Blaschke product parametrization as the triangular case. We then use this parametrization to establish several geometric invariance results, including a characterization of when the sum of the squares of all sides and diagonals is invariant. We revisit Cayley's criterion for 3- and 4-Poncelet pairs and obtain a complete classification of the associated central conics solely in terms of their foci. In particular, we show that the formulas for the lengths of the major axis obtained under the assumption on the foci of the conic lying inside the circumcircle remain valid when one focus or both foci lie outside the circumcircle, thereby extending the classical theory from ellipses to all admissible central conics. Several geometric properties of the associated cyclic quadrilaterals are also obtained.",
+    "status": "found"
+  },
+  "2608.11209": {
+    "arxiv_id": "2608.11209",
+    "title": "A unified analytic approach to O-metric inequalities and applications to fixed point theory",
+    "authors": [
+      "Hallowed Oluwadara Olaoluwa",
+      "Aminat Olawunmi Ige",
+      "Johnson Olajire Olaleru"
+    ],
+    "submission_date": "2026-07-01T13:18:50Z",
+    "latest_updated": "2026-07-01T13:18:50Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11209v1"
+    ],
+    "abstract": "The concept of O-metrics was recently introduced as a generalization of several metric-type structures by replacing the addition operation of the standard triangle inequality with a binary operation that may fail to be associative. This non-associativity naturally to generalized polygon inequalities and patterned compositions. In this work we develop an analytic framework for inequalities arising in such settings. By introducing generalized $\\om$-series governed by admissible control functions $\\varphi$, we establish a separation principle that resolves inequalities of the form $u \\leq v \\, \\om \\, \\varphi(k,u)$. This result provides convergence criteria for patterned compositions and determines intervals for the admissible contraction parameter $k$. As application, some fixed point theorems of Ćirić type are obtained for mappings on O-metric spaces, as well as corresponding results for b-metric spaces. The approach provides a unified analytic framework for studying contractive conditions and iterative processes in generalized metric spaces.",
+    "status": "found"
+  },
+  "2608.11210": {
+    "arxiv_id": "2608.11210",
+    "title": "Distribird: Literature-Informed Prior Distribution Design for Bayesian Model Calibration",
+    "authors": [
+      "Patrik P. Süli",
+      "György Eigner",
+      "Roland Hollós"
+    ],
+    "submission_date": "2026-07-13T13:43:28Z",
+    "latest_updated": "2026-08-17T18:05:48Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.11210v1",
+      "2608.11210v2"
+    ],
+    "abstract": "Bayesian calibration of process-based models requires a prior distribution for each model parameter. Despite decades of methodological work, researchers almost always fall back on uniform priors. The main reason is that building informative priors from scientific literature is slow and needs both domain and statistical expertise. We present Distribird, an agentic web application that automates this process. Given a parameter name, physical description, and domain context, Distribird deploys a multi-agent pipeline that searches the literature, extracts and weights reported values by domain relevance, and fits a probability distribution via AIC model selection. When no literature is available, the system falls back to sensible uninformative alternatives, and clearly reports both the evidence behind and the confidence level of every prior it produces. It is designed for the problems where the models have physically interpretable parameters, where domain knowledge exists in the published literature. We evaluate the tool on 24~parameters across 10 scientific domains comparing three open-weight models (Qwen3.6 27B, Gemma 4 31B, Mistral Small 4 119B) with a single-prompt LLM baseline. On prior quality the full pipeline matches this baseline. Every prior is traced to the specific papers and values from which it was constructed; a built-in validity layer declines to produce priors for out-of-scope requests, whereas the single-prompt baseline returns confident but unfounded priors for them in 11 of 30~model-parameter cases; and every language-model call runs locally, so no parameter description or unpublished modelling detail is transmitted to a third-party LLM provider (only generated search terms reach the public literature databases). For scientific use, we argue these properties matter more than a marginal improvement in point-estimate accuracy.",
+    "status": "found"
+  },
+  "2608.11211": {
+    "arxiv_id": "2608.11211",
+    "title": "A Forced-Structure Reduction and Verifiable Bounds for Conway's 99-Graph",
+    "authors": [
+      "Aalok Thakkar",
+      "Simone Severini"
+    ],
+    "submission_date": "2026-07-13T18:42:21Z",
+    "latest_updated": "2026-09-18T17:29:15Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.11211v1",
+      "2608.11211v2"
+    ],
+    "abstract": "Conway's 99-graph problem asks whether a strongly regular graph with parameters $\\mathrm{srg}(99,14,1,2)$ exists. We develop two complementary lines of attack. Fixing one vertex, the conditions $λ=1$ and $μ=2$ force its neighbourhood to be a perfect matching and determine every edge between that neighbourhood and the remaining vertices. For $(99,14,1,2)$, the unresolved part is therefore a constrained $12$-regular graph on $84$ vertices. We encode this reduction in CP-SAT and validate it by recovering the unique $\\mathrm{srg}(9,4,1,2)$. We also prove by exhaustive enumeration that no circulant graph on $\\mathbb{Z}/99$ satisfies more than $68.0\\%$ of the CAISc constraints, and we give a validated orbit formulation for prescribed automorphisms. We then study the partial-score search problem. Fourteen human-designed search configurations reached at most $69.43\\%$. Separately, we supplied the scoring function to an evolutionary program-search system. It produced a degree-preserving $4$-vertex-switch tabu search whose best verified artifact scores $70.73\\%$. The generated move differs from those used in our own searches and crosses a plateau that was stable under them. These results do not resolve the existence problem, but they reduce the exact search space and improve the best verified partial construction found in our experiments.",
+    "status": "found"
+  },
+  "2608.11212": {
+    "arxiv_id": "2608.11212",
+    "title": "Detecting a Route Flip Is Easier Than Knowing Whether to Fix It: Causal Route-Mediated Damage in Quantized Mixture-of-Experts",
+    "authors": [
+      "Parvel Gu"
+    ],
+    "submission_date": "2026-07-14T01:12:04Z",
+    "latest_updated": "2026-07-14T01:12:04Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11212v1"
+    ],
+    "abstract": "Top-k Mixture-of-Experts (MoE) routing is discontinuous, so a deployment-motivated numerical disturbance -- simulated 4-bit KV-cache quantization read by a protected BF16 gate -- pushes tokens across decision boundaries and flips which experts fire. This paper proposes no new mitigation; it supplies a causal apparatus, empirical findings, and a detection-limit result. A four-run apparatus prices the route-mediated fraction (RMF) of quantization damage, a token-level attribution decomposes it by mechanism, and pre-registered probes carry the findings across three architectures. On OLMoE-1B-7B at 4-bit KV (pilot), about a third of the damage is routing-mediated: RMF ~ 0.31 (discovery 0.31 [0.20, 0.41]; process-replicated mean 0.313 +/- 0.020; pre-registered re-execution 0.231). The deployable router margin detects that a flip occurred (AUC 0.772) but cannot tell a harmful flip from a helpful one (at chance): among the tested local, inference-observable router statistics we find no predictor of a flip's loss sign above chance -- an empirical benefit-detection barrier bounding selective repair restricted to this feature family. The signed-flip tax and sign-inseparability carry cross-model; the clean-reference remedy's payout is architecture-modulated; a controlled same-checkpoint flag-swap re-scopes the gate's normalization convention to a damage-magnitude moderator, not a route-recoverability mechanism. A real int4 KV kernel yields a fraction compatible with the fake-quant dose curve but underpowered (95% CI [-0.111, 0.394] includes zero) -- ruling out gross disagreement, not an independent replication. Hypotheses, thresholds, and evaluations were pre-registered before measurement, with misses reported; a pre-registered held-out read replicates the partition and the near-cancelling tax out of sample, while the strict impossibility exclusion narrowly misses.",
+    "status": "found"
+  },
+  "2608.11213": {
+    "arxiv_id": "2608.11213",
+    "title": "Static Equilibria of Perturbed Spheres: A Single-Harmonic Class Map, a Parity Obstruction, and a Certified Counter for the Mono-Monostatic Regime",
+    "authors": [
+      "Vincent Wesley Couey"
+    ],
+    "submission_date": "2026-07-16T18:56:37Z",
+    "latest_updated": "2026-07-16T18:56:37Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11213v1"
+    ],
+    "abstract": "Varkonyi and Domokos proved that homogeneous convex bodies exist with any prescribed numbers $S\\ge1$ of stable and $U\\ge1$ of unstable static equilibria, the case $S=U=1$ being the mono-monostatic Gomboc. Their result is an existence statement. We give a complete constructive answer for the simplest nondegenerate shapes: a homogeneous body whose boundary is the unit sphere perturbed radially by a single real spherical harmonic $Y_\\ell^m$ ($\\ell\\ge2$, $1\\le m\\le\\ell$) has exactly $S = U = m(\\ell-m+1)$ stable and unstable equilibria, for every amplitude in the convex range when $m\\ge2$ and for small amplitude when $m=1$. For $m\\ge2$ the reduction to the critical points of the harmonic is an identity: the symmetry of a single tesseral harmonic pins the centroid at the origin exactly, so the centroid-to-surface distance is a strictly increasing function of the harmonic. We count the critical points of $Y_\\ell^m$ and verify the Poincare-Hopf balance in index form, the polar monkey-saddles persisting unsplit with index $1-m$. Three consequences follow: a single harmonic populates only the diagonal $S=U$, so none of degree $\\ge2$ is mono-monostatic; any centrally symmetric (even-degree) perturbation has even $S,U$, a parity obstruction; hence mono-monostaticity is intrinsically multi-harmonic. A predict-then-confirm study on eight bodies matches the formula exactly. For the multi-harmonic regime, where mono-monostatic bodies live, we give a certified equilibrium counter (interval arithmetic on the centroid-to-surface distance, Krawczyk uniqueness, interval-Hessian classification, stereographic polar charts) that, given the centroid, provably neither under- nor over-counts. It certifies specific near-spherical bodies mono-monostatic, including a known analytic parameterization, settling by certified computation a question that drainage-basin and seed-based methods leave ambiguous.",
+    "status": "found"
+  },
+  "2608.11214": {
+    "arxiv_id": "2608.11214",
+    "title": "On the Coxeter Cohomology of Irreducible Representations of Symmetric Groups",
+    "authors": [
+      "Hayley Bertrand",
+      "Jing Anne McLaughlin"
+    ],
+    "submission_date": "2026-07-16T20:54:01Z",
+    "latest_updated": "2026-07-16T20:54:01Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11214v1"
+    ],
+    "abstract": "This work is part of a research program to compute the Hochschild homology groups $\\text{HH}_*(\\mathbb{C}[x_1, ..., x_d]/(x_1, ..., x_d)^3; \\mathbb{C})$ via Coxeter cohomology, which utilizes the isomorphism \\[ \\text{HH}_i(\\mathbb{C}[x_1, ..., x_d]/(x_1, ..., x_d)^3; \\mathbb{C}) \\cong \\sum_{0 \\leq j \\leq i} H_C^j\\bigg( S_{i+j}, V^{\\otimes(i+j)} \\bigg)\\] provided by Larsen and Lindenstrauss. Here, $H^*_C$ denotes Coxeter cohomology, $S_{i+j}$ is the symmetric group on $i+j$ letters, and $V$ is the standard representation of $\\text{GL}_d(\\mathbb{C})$ on $\\mathbb{C}^d$. While previous work has focused exclusively on the case $d=2$, we extend some results to all values of $d$. Notably, we show that when the tensor representation is replaced by an irreducible representation, the Euler characteristic of the corresponding Coxeter cohomology is given by a polynomial with bounded degree. Although the problem is motivated by algebra and topology, the solution relies primarily on combinatorial arguments.",
+    "status": "found"
+  },
+  "2608.11215": {
+    "arxiv_id": "2608.11215",
+    "title": "Poor Man's Agentic Modeling: Simulating Large LLM-Agent Societies on a Laptop",
+    "authors": [
+      "Igor Itkin"
+    ],
+    "submission_date": "2026-07-19T08:44:38Z",
+    "latest_updated": "2026-07-19T08:44:38Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11215v1"
+    ],
+    "abstract": "Simulating societies of many large language model (LLM) agents is expensive, yet the questions asked of such simulations are usually macroscopic: phase behaviour, stylised facts, and scaling with the number of agents $N$, not the cognition of any single agent. We turn a statistical-physics observation into a method: replace each LLM agent by a low-parameter model fitted from a few hundred to a few thousand cheap queries, then run the society at any $N$ on a laptop. Whether this works is decided before the simulation runs, chiefly by what each agent perceives. We introduce an [interaction order x memory] taxonomy that maps perception and memory to an effective theory and a predicted $N$-trend of the surrogate error. We validate it on a faithful reimplementation of the LLM macroeconomy EconAgent and seven further named LLM simulations, with agent decisions cloned from genuine LLM elicitations (primarily DeepSeek) for a few dollars; the predicted error trends hold cell by cell, and the two refuted predictions, both on a strongly saturating response and traced to its curvature, are themselves matched quantitatively by the theory with no free parameters.",
+    "status": "found"
+  },
+  "2608.11216": {
+    "arxiv_id": "2608.11216",
+    "title": "AutoWorldModel-Bench: A State-Centric Benchmark for Automated World-Model Research",
+    "authors": [
+      "Marjan Moodi",
+      "Xuankang Zhu",
+      "Fernando De Mesentier Silva",
+      "Harold Chaput",
+      "Mohammad Reza Taesiri"
+    ],
+    "submission_date": "2026-07-20T23:35:45Z",
+    "latest_updated": "2026-08-16T01:00:16Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.11216v1",
+      "2608.11216v2"
+    ],
+    "abstract": "World modeling is an unsettled field: architectures, training objectives, and state representations interact in complex ways, and no single recipe dominates across environments. This makes it an ideal testbed for AI coding agents acting as autonomous researchers--a setting in which the improvement direction is not specified in advance, unlike the engineering-to-spec tasks that dominate current agent benchmarks. We introduce AutoWorldModel-Bench, a closed-loop benchmark in which frontier coding agents autonomously improve a provided base world model under a fixed compute budget. The benchmark spans eight game environments under a unified structured-state representation--ground-truth entity state extracted from each game and consumed through a shared tensor format--which isolates dynamics modeling from perception and enables minutes-per-run iteration. Across 64 sessions, Codex-5.4 and Claude Opus 4.6 improve their base on a held-out test split in all but one session, with about half (33 of 64) a substantial gain ($Δ\\geq +0.10$) and the remaining improvements smaller but positive; in 91% of sessions the winning edit is a substantive change to the model or training rather than a hyperparameter tweak. Our benchmark offers a setting in which frontier coding agents can be evaluated on open-ended research rather than engineering-to-spec problems.",
+    "status": "found"
+  },
+  "2608.11217": {
+    "arxiv_id": "2608.11217",
+    "title": "Decompositions of Tetrahedra into Height Functions",
+    "authors": [
+      "Connor Castillo",
+      "Jackson Smith"
+    ],
+    "submission_date": "2026-07-21T01:15:21Z",
+    "latest_updated": "2026-07-21T01:15:21Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11217v1"
+    ],
+    "abstract": "In short, we call a polyhedron P a height function if there exists some face F of P such that P lies entirely within F when orthogonally projected onto the affine plane containing F. Because tetrahedra come in various configurations, we propose a dihedral angle classification of tetrahedra, and prove that a tetrahedron T is either a height function already, or, at most one planar bisection of T is needed to produce two height function tetrahedra. Furthermore, we prove that such bisections belong to infinitely large families of bisections.",
+    "status": "found"
+  },
+  "2608.11218": {
+    "arxiv_id": "2608.11218",
+    "title": "MaSRead: Content-Addressed Reading of Replicated Latent Stores",
+    "authors": [
+      "Carlos Baquero",
+      "Luís Brito",
+      "João Resende"
+    ],
+    "submission_date": "2026-07-21T08:48:06Z",
+    "latest_updated": "2026-07-21T08:48:06Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11218v1"
+    ],
+    "abstract": "Independent agents that reason in latent space can share computed state as key-value cache fragments rather than text. Merged by a conflict-free replicated data type, these fragments form a store that converges under any delivery order or duplication. Yet a later query, unknown at encode time, cannot reliably read the merged cache: colocated fragments interfere, so colocation is not addressability. MaSRead addresses the read to content. It routes through opaque keyed tag sets derived from fragment words and decodes each selected fragment under a hard attention mask that hides the rest. Under lexical connectivity, a graph walk reaches the fragments required by a multi-hop query. Across chain, pipeline, symmetric, hub, and natural-language stores, MaSRead recovers visited fragments in isolation, remains effective as unrelated fragments accumulate, and transfers to another model family. After routing, materialized decoding depends on fragment length rather than total store size; end-to-end work still includes store-dependent routing and one read per visited fragment. The limits are explicit: lexical routing can miss disconnected evidence, and answer composition remains bounded by the frozen reader. Thus a replicated latent store becomes selectively readable for later queries when the needed fragments connect to the query through content.",
+    "status": "found"
+  },
+  "2608.11219": {
+    "arxiv_id": "2608.11219",
+    "title": "From Monolithic to Modular: Segment-level Automatic Prompt Optimization",
+    "authors": [
+      "Nikita Kulin",
+      "Viktor Zhuravlev",
+      "Artur Khairullin",
+      "Sergey Muravyov",
+      "Ilya Makarov",
+      "Daniil Sukhorukov",
+      "Ekaterina Averkova"
+    ],
+    "submission_date": "2026-07-21T16:02:04Z",
+    "latest_updated": "2026-07-21T16:02:04Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11219v1"
+    ],
+    "abstract": "Automatic Prompt Optimization (APO) often rewrites prompts monolithically, which can improve one behavior while degrading others. We present SAPO, a segment-level APO method that decomposes prompts into role, context, tasks, and output format, then applies targeted improvements based on top-5 and bottom-5 examples. The optimization loop uses one LLM with static meta-prompts and structured outputs for segmentation, weakness analysis, and candidate generation. We describe a train/validation protocol and a two-stage generation process: (1) segment-level diagnosis and recommendation extraction, (2) candidate synthesis constrained by weak/strong segment signals. Using the evaluation setup across SQuADv2, TweetEval, XSUM, CommonGen, and GSM8K on GPT-3.5-Turbo and GPT-4o-mini, SAPO achieves the best average score against Zero-shot and strong APO baselines including APE, OPRO, EvoPrompt, GEPA, and StraGO.",
+    "status": "found"
+  },
+  "2608.11220": {
+    "arxiv_id": "2608.11220",
+    "title": "LLMs in Process Diagram Engineering: From Optimal PFDs to Validated P&IDs",
+    "authors": [
+      "Timur Zakarin",
+      "Sergei Voitov",
+      "Sergei Shumilin",
+      "Evgeny Burnaev"
+    ],
+    "submission_date": "2026-07-21T16:17:10Z",
+    "latest_updated": "2026-07-21T16:17:10Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11220v1"
+    ],
+    "abstract": "Nowadays, the creation of a process flow diagram (PFD) and its subsequent transformation into a piping and instrumentation diagram (P&ID) is predominantly performed manually. Applying artificial intelligence in the task could potentially lead not only to process automation and time savings, but also to financial gains by exploring numerous diagram's topology options and reducing manual labor. This research presents P&ID Pilot - a practical end-to-end AI pipeline capable of handling flowsheet developing for both stages. The first stage focuses on PFD synthesis, whereas the second is directed toward modifying the generated PFD into P&ID. After comparing four different methods, the hybrid approach combining genetic algorithms (GA) and large language models (LLM) is shown to generate the optimal valid PFD topology, achieving the lowest loss value among all the methods, while satisfying the required outlet flow parameters without engineering-rule violations. For the second stage, the proposed LLM-based agent successfully transforms the generated PFD into a source-grounded P&ID by producing validated, executable modifications through a restricted engineering software development kit, achieving 100% execution success while maintaining compliance with domain-specific rules and reference graph structures. This unified pipeline - coupling GA/LLM-driven synthesis with an LLM-based transformation agent - offers a feasible path toward end-to-end process design automation by producing validated, deployable outputs and substantially reduces manual engineering effort.",
+    "status": "found"
+  },
+  "2608.11221": {
+    "arxiv_id": "2608.11221",
+    "title": "A Conceptual Framework for Refining Influence Knowledge from Simulation Evidence in Cyber-Physical Systems",
+    "authors": [
+      "Barbara da Silva Oliveira",
+      "Julien Deantoni",
+      "Nicolas Ferry"
+    ],
+    "submission_date": "2026-07-22T09:24:44Z",
+    "latest_updated": "2026-07-22T09:24:44Z",
+    "revised_dates": null,
+    "venue": "ACM/IEEE 29th International Conference on Model Driven Engineering Languages and Systems, Oct 2026, Malaga, Spain",
+    "latest_version": 1,
+    "versions": [
+      "2608.11221v1"
+    ],
+    "abstract": "Cyber-physical systems (CPS) are typically developed by multiple stakeholders who produce artefacts tailored to their specific domains of expertise. The behaviour of these systems emerges from the interaction between those artefacts and their operational environment. Simulation and co-simulation have become essential approaches for analysing CPS behaviour and, through simulation campaigns, developers can explore system responses under changing conditions, including interactions with the environment. However, the lack of details and understanding of some environmentmediated interactions (typically the ones beyond direct sensing and actuation), which remain unmodelled due to their complexity, a lack of time, or a lack of domain experience, hinders the proper comprehension and exploitation of simulation results. To address these limitations, we propose a conceptual framework leveraging the novel concept of Influences to support the iterative and incremental refinement of simulation campaigns and deepen the understanding of the system behaviour. We demonstrate the proposed approach through a case study involving a mobile robot implemented using Simulink/Gazebo co-simulation.",
+    "status": "found"
+  },
+  "2608.11222": {
+    "arxiv_id": "2608.11222",
+    "title": "Bayesian Quantile-Based Correction and Synthesis of Hydrologic Products",
+    "authors": [
+      "Antonio De Leon",
+      "Raquel Prado",
+      "Bruno Sansó"
+    ],
+    "submission_date": "2026-07-22T22:17:25Z",
+    "latest_updated": "2026-08-15T04:31:31Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.11222v1",
+      "2608.11222v2"
+    ],
+    "abstract": "River-flow forecasting requires predictive distributions that remain informative in both routine and extreme conditions. We develop a Bayesian quantile-based correction-and-synthesis framework built on Dynamic Quantile Linear Models (DQLMs). The framework links U.S. Geological Survey (USGS) observations, retrospective products, and ensemble forecast products through a shared latent quantile process, learns dynamic discrepancies for each external source, and combines quantile-specific posterior predictions into a single predictive distribution. We also adapt variational Bayes inference to the extended dynamic quantile linear model using Laplace--Delta approximations for non-conjugate parameters. The methodology is illustrated using daily flow for the San Lorenzo River together with products from the European Centre for Medium-Range Weather Forecasts (ECMWF) Global Flood Awareness System (GloFAS) and the National Oceanic and Atmospheric Administration (NOAA) National Weather Service (NWS), with emphasis on medium-range forecasting and uncertainty quantification across multiple quantile levels.",
+    "status": "found"
+  },
+  "2608.11223": {
+    "arxiv_id": "2608.11223",
+    "title": "Transit Destination Inference from Tap-In-Only Bus Smart-Card Data: A Hierarchical Bayesian Approach",
+    "authors": [
+      "Gefei Zhao",
+      "Jiahe Ling",
+      "Yuelong Su"
+    ],
+    "submission_date": "2026-07-23T12:57:47Z",
+    "latest_updated": "2026-07-23T12:57:47Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11223v1"
+    ],
+    "abstract": "Entry-only automatic fare collection systems record boardings but not alightings, preventing direct construction of origin-destination (OD) matrices. This study develops a Hierarchical Bayesian Latent-Destination (HBLD) model that combines station-hour boarding and inferred alighting demand with passenger card histories. Trip-chain destinations are treated as noisy evidence with a reliability parameter, allowing destination uncertainty to propagate into OD flows. The model was applied to 838,305 bus tap-ins collected in Changzhou in May 2025 and linked to stop-network and hourly weather data. It estimates destination distributions over feasible downstream and reverse-direction through-terminal stops using network, time-of-day, weather, and smoothed historical demand effects. A Bayesian personalization layer uses prior card trips and reverts to the shared trip-level distribution when history is unavailable. Fitted by stochastic variational inference and evaluated on the final week, HBLD outperformed the strongest baseline. Observed boarding patterns consistently improved prediction, especially without card history, while inferred alighting patterns helped only when trip-chain evidence was strongly trusted. The model captured travel consistent with through-terminal riding and bus-assisted road crossing and estimated destinations for trips unresolved by deterministic chaining. Because true alightings were unavailable, scores measure agreement with trip-chain outputs rather than actual destination accuracy. HBLD provides uncertainty-aware destination predictions and OD matrices for service management, planning, scheduling, and resource allocation.",
+    "status": "found"
+  },
+  "2608.11224": {
+    "arxiv_id": "2608.11224",
+    "title": "Harnessing agent memory to build lifelong AI partners for materials scientists",
+    "authors": [
+      "Siyu Liu",
+      "Bo Hu",
+      "Beilin Ye",
+      "He Cao",
+      "David J. Srolovitz",
+      "Tongqi Wen"
+    ],
+    "submission_date": "2026-07-25T09:11:52Z",
+    "latest_updated": "2026-07-25T09:11:52Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11224v1"
+    ],
+    "abstract": "Materials research advances through accumulated experience - scripts that work, protocols that are trusted, warnings attached to failed calculations or experiments, and judgement that links a new question to an old result. This experience is essential for reproducibility and knowledge transfer, yet it is usually fragmented across notebooks, repositories, job logs and individual memory, and it is rarely portable across artificial-intelligence agents. Here we argue that a lifelong AI partner for materials science can be designed around persistent memory rather than around a particular agent implementation. We introduce a self-evolving memory framework that stores scientific experience as inspectable facts and executable skills, so that observations, failure boundaries, protocols and validation checks can be retrieved, revised and migrated across models. We evaluate the idea in three computational settings that expose different layers of materials-research competence. In 49 real-world materials-tool-use questions comprising 138 executable subtasks, memory nearly doubles GPT-5.2 task success without model-parameter updates. In elemental-solid equation-of-state calculations, memory converts a wavefunction-initialization failure into a pre-execution guardrail, improving outcomes from 22/1/4 to 25/2/0 Correct/Partial/Error and avoiding 92% of repeated errors. In 13 practical material simulation workflows, remembered skills and failure facts halve the aggregate trace burden (tokens) and reduce tool calls by over a factor of two by the third round, while preserving physically meaningful outputs in band-gap, phonon, vacancy and work-function analyses. These results show that agent memory can serve as a durable scientific asset; a portable, self-improving record of materials-research experience that outlives any single model or agent stack.",
+    "status": "found"
+  },
+  "2608.11225": {
+    "arxiv_id": "2608.11225",
+    "title": "Identity from the Outside: A Conceptual Framework and Research Program for AI Personality Clones",
+    "authors": [
+      "Luc E. Brunet"
+    ],
+    "submission_date": "2026-07-27T18:18:21Z",
+    "latest_updated": "2026-07-27T18:18:21Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11225v1"
+    ],
+    "abstract": "AI \"personality clones\" force a re-examination of personal identity in operational terms. Setting aside the hard problem of consciousness, we approach identity through the indiscernibility of manifestations, as assessed by an observer over a duration. We distinguish three criteria that \"identity\" conflates: fidelity to a target person, generic human-likeness, and individuality. We propose a six-term factorization of observed identity (substrate, dispositions, memory, update dynamics, context, exogenous contingencies), with a state-space formulation. Indiscernibility is defined as one minus a judge's distinguishing advantage, and the factorization's coefficients become local sensitivities estimable by randomized ablation. The central claim is a conditional conjecture: given hypotheses about the agent's information on its own persistence and about consequences bearing on its own stakes, versionability tends to degrade long-horizon indiscernibility. An analogy with lambda-calculus, linear typing, and bisimulation clarifies what linearity does and does not establish. Between product-clone and individual we identify a third object, the delegate: a task-limited, bounded-lifespan partial clone ending in a bandwidth-limited testament. We map the empirical literature onto the three criteria, propose an experimental program, and argue that the correct long-horizon criterion is not trajectory fidelity but climate fidelity: matching the conditional distribution of a person's possible responses. The best clone is the one that diverges from the original as the original would have diverged from itself.",
+    "status": "found"
+  },
+  "2608.11226": {
+    "arxiv_id": "2608.11226",
+    "title": "Cutting AI Datacenter Energy with Reinforcement Learning: Measured Power Control of LLM Training from One GPU to the Fleet",
+    "authors": [
+      "Eliseo Curcio"
+    ],
+    "submission_date": "2026-07-27T20:51:03Z",
+    "latest_updated": "2026-07-27T20:51:03Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11226v1"
+    ],
+    "abstract": "Reinforcement-learning post-training dominates modern language-model development, yet its power behavior on GPU hardware has not been characterized, and datacenters manage GPU power with workload-blind mechanisms, static caps and reactive throttling, that slow hardware indiscriminately. We instrument GRPO training with half-second power telemetry at 7B, 14B, and 72B scales on one to four A100s (380,000+ samples), and train a PPO meta-controller that adapts the workload's own generation parameters to measured power. Against the full 500-step 7B trace, the controller cuts power-limit violations by 89.8% while increasing token output by 18.1% and energy efficiency by 26.2% (tokens per MWh). Deployed live at 72B, the same controller family yields replicated null results, diagnosed as the group-size actuator losing authority under model sharding. An actuator-authority sweep shows the same parameters applied as generation concurrency retain 17-22% power authority, isolating an occupancy-versus-volume principle; a controller rebuilt on that actuator controls a live 72B rollout-generation workload across three replications: 35.7% more output than a static safe baseline at 2.27 +/- 1.08% budget violations, 87.2% fewer violations than uncontrolled operation, and the best mean throughput and energy per token among constrained controllers, with an adaptive threshold rule matching it in one of three operating conditions. Under realistic measurement windows the original 72B transients fall from 23.6% at half-second resolution to 1.6% at 30 s and zero at 5 min; a composed 16-GPU fleet shows zero violations at 30 s and longer, with peak demand at 50-56% of nameplate. For this fleet mix, roughly twofold oversubscription of nameplate appears feasible, subject to operator validation. We quantify the economic and carbon consequences and specify a low-cost operator pilot.",
+    "status": "found"
+  }
+}

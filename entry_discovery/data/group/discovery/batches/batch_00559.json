@@ -1,0 +1,408 @@
+{
+  "2608.10187": {
+    "arxiv_id": "2608.10187",
+    "title": "ConnectionMind: Leveraging Social Networks and Large Language Models for Personalized Recommendation at Meta",
+    "authors": [
+      "Haoyu Han",
+      "Yuming Liu",
+      "Lei Huang",
+      "Lizhu Zhang",
+      "Jiliang Tang",
+      "Xiangjun Fan"
+    ],
+    "submission_date": "2026-08-10T20:02:31Z",
+    "latest_updated": "2026-08-10T20:02:31Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10187v1"
+    ],
+    "abstract": "Modern recommendation systems on social media platforms such as Meta must model complex social relationships, including friendships, group memberships, and creator interactions, alongside massive and heterogeneous content such as text and video. Traditional recommendation models, however, often omit these signals or treat them independently, lacking the reasoning capability to integrate multi-relational context for fine-grained personalization. We present ConnectionMind, a production-ready recommendation framework that tightly integrates the social network structure with large language models (LLMs) to enable scalable, interpretable, and reasoning-aware personalization in Meta. ConnectionMind constructs a heterogeneous graph connecting users, items, friends, groups, and creator pages, and formulates recommendation as a graph reasoning problem: discovering personalized paths from users to candidate items. An LLM-based policy is employed to reason over these graph structures and guide recommendation decisions. To train the system at scale, ConnectionMind adopts a two-stage learning strategy. We first perform supervised fine-tuning (SFT) on large-scale user-item interaction trajectories to initialize the reasoning policy, followed by end-to-end reinforcement learning (RL) to refine the model's ability to reason over social graphs for personalized recommendation. Extensive experiments on multiple real-world datasets demonstrate the effectiveness of ConnectionMind compared to representative baselines. More importantly, ConnectionMind has been deployed in Meta's large-scale recommendation pipeline and has been evaluated through online A/B tests, achieving a 0.43% improvement in video watch time. These results demonstrate measurable real-world impact in a production recommendation system.",
+    "status": "found"
+  },
+  "2608.10188": {
+    "arxiv_id": "2608.10188",
+    "title": "What Actually Serializes GPU LZ77 Decode: Three Decoders, Three Mechanisms, and an Encode-Time Lever That Removes the Last One",
+    "authors": [
+      "Yakiv Shavidze"
+    ],
+    "submission_date": "2026-08-10T20:02:34Z",
+    "latest_updated": "2026-08-10T20:02:34Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10188v1"
+    ],
+    "abstract": "The sequential part of GPU LZ77 decode is not where the field assumes it is. Across three decoder architectures on an H100 we measure that parse, not copy, holds 64-72% of device-resident decode time; that bounding back-reference chain depth - provable, and costing 0.006% in ratio - moves latency by at most 2.8% and, for the file's own latency spike, provably by nothing at all, since a byte-level comparison of all 15,499 blocks shows the cap alters none of the 181 blocks involved; that self-overlapping matches are periodic fills rather than dependency chains, which makes them fully parallel and speeds the match layer by 2.75-8.42x bit-perfect; and that the last genuinely sequential element, a four-entry distance history, can be removed by the encoder for 0.540% of ratio, growing the dependency-free parse run from 4 commands to 706. We also report the floor the format runs into: with a median match of 7 bytes against a 128-byte cache line, bus efficiency is 4.4% and a coalesced write of the same data is 39x faster. A separate section records ten hypotheses these measurements refuted, including one methodological error of our own. Every reproducible claim carries a machine-checkable record: a fresh clone of the tagged release passes 17 of 17 checks reachable without a GPU, none failing.",
+    "status": "found"
+  },
+  "2608.10189": {
+    "arxiv_id": "2608.10189",
+    "title": "The Rotation Curve of the Milky Way: State of the Art, the Keplerian Decline Debate, and Implications for Dark Matter",
+    "authors": [
+      "Alessandro Melchiorri",
+      "Ruchika"
+    ],
+    "submission_date": "2026-08-10T20:06:03Z",
+    "latest_updated": "2026-09-12T16:26:37Z",
+    "revised_dates": null,
+    "venue": "New Astronomy Reviews, Volume 103, 2026",
+    "latest_version": 2,
+    "versions": [
+      "2608.10189v1",
+      "2608.10189v2"
+    ],
+    "abstract": "For four decades, the roughly flat rotation curve (RC) of the Milky Way (MW) stood as local evidence for an extended dark matter (DM) halo. \\textit{Gaia} DR3 has changed the picture: several analyses now find a velocity decline beyond R \\approx 15\\kpc, and the most radical interpretation \\citep{jiao2023} claims a nearly Keplerian fall-off (\\vc \\propto R^{-1/2}) that excludes a flat RC at 3σand implies a total dynamical mass of only \\sim 2 \\times 10^{11}\\Msun---three to five times below pre-\\textit{Gaia} estimates. Taken at face value, this would make the MW exceptional among comparable spirals and challenge both Λ-CDM and MOND. It would also alter predictions for direct-detection experiments, although the local DM density is not fixed by virial mass alone. The Keplerian claim rests on the delicate assumptions of axisymmetric Jeans modelling, while stellar streams, globular clusters, satellite kinematics, and the Local Group timing argument generally favour a substantially heavier halo, and cosmological simulations reveal potentially substantial biases in Jeans-inferred outer RCs. This review offers a self-contained, pedagogical account of the debate: we derive the full formalism from first principles---the Jeans equations, the asymmetric drift correction, the standard DM halo and baryonic mass models, the MOND flat-RC prediction, and the timing argument---present an illustrative phenomenological MCMC fit and a Gaussian Process reconstruction of the RC, and critically assess which features of the decline can be regarded as established and which remain open.",
+    "status": "found"
+  },
+  "2608.10190": {
+    "arxiv_id": "2608.10190",
+    "title": "Peripheral Traps and Lower Bounds on Mixing Times for Random Walks on Sparse Heavy-Tailed Random Intersection Graphs",
+    "authors": [
+      "Vyacheslav Koval"
+    ],
+    "submission_date": "2026-08-10T20:08:55Z",
+    "latest_updated": "2026-08-14T12:10:51Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.10190v1",
+      "2608.10190v2"
+    ],
+    "abstract": "This paper analyzes mixing time lower bounds for random walks on sparse, heavy-tailed Random Intersection Graphs. In sparse feature regimes, heavy-tailed feature distributions lead to the formation of peripheral trap -- chains of overlapping low-weight feature cliques attached to high-weight hub nodes within the graph's giant component. By modeling escape trajectories from these traps as continuous limit hitting times for reflected Brownian motion, the analysis demonstrates that random walks experience logarithmic squared delays. Consequently, the mixing time is bounded below by $Ω(\\log^2 n)$, and the local total variation distance exhibits non-concentrated decay, formally preventing a sharp cutoff phenomenon.",
+    "status": "found"
+  },
+  "2608.10191": {
+    "arxiv_id": "2608.10191",
+    "title": "Integration Theory for Completely positive Instruments: A Lyapunov-Type Theorem and Applications",
+    "authors": [
+      "Arghya Chongdar"
+    ],
+    "submission_date": "2026-08-10T20:09:34Z",
+    "latest_updated": "2026-08-10T20:09:34Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10191v1"
+    ],
+    "abstract": "We develop a theory of integration with respect to quantum instruments through two complementary approaches: a vector measure formulation based on Bartle's integration theory and a tensor product construction. As a principal application, we establish a CP map-valued Lyapunov theorem by characterizing the convexity of the range of non-atomic completely positive instruments via the associated integration map. This extends the work of Plosker and Ramsey~\\cite{Plosker_Ramsey} from POVMs to completely positive instruments and gives a general characterization of the phenomenon exhibited in their setting. We also establish a correspondence between completely positive instruments and completely positive maps, prove a Krein--Milman type theorem for the $C^*$-convex set of unital completely positive instruments, and show that the tensor product construction connects the theory of CP instruments with the integration theory for POVMs due to Farenick \\emph{et al}(\\cite{douglus_plosker_ramsey_povmintegration_1}).",
+    "status": "found"
+  },
+  "2608.10192": {
+    "arxiv_id": "2608.10192",
+    "title": "A micro-continuum physics-based model for cohesive sediment gravity flows across mudslide, mudflow, and turbidity current regimes",
+    "authors": [
+      "Mitchell D. Jans",
+      "Cyprien Soulaine",
+      "Judy Q. Yang",
+      "Ian C. Bourg"
+    ],
+    "submission_date": "2026-08-10T20:10:25Z",
+    "latest_updated": "2026-08-10T20:10:25Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10192v1"
+    ],
+    "abstract": "Gravity driven sediment flows are responsible for a major portion of sediment redistribution within oceans, reservoirs, and lakes, with important implications in coastal erosion, siltation, carbon burial, and contaminant migration in aquatic systems. Despite the ubiquity of this phenomenon, current mechanistic understanding of sediment gravity flows (SGFs) remains limited. This knowledge gap is particularly acute in the case of cohesive, fine-grained sediments (i.e., muds) due to the complex properties of the clay matrix, including low permeability, viscoplastic rheology, and flocculation. In this work, we develop a computational fluid dynamics model that accurately predicts key features of cohesive, clay-rich SGFs based on independent measurements of the relation between sediment solid fraction and rheological yield stress. In particular, the model captures the four primary flow regimes (low density turbidity currents, high density turbidity currents, mudflows, and mudslides) observed in lock-exchange experiments with slurries containing smectite or kaolinite clay. The model is validated through comparison with previous experimental observations of sediment flow morphology, speed, and runout distance. Overall, we demonstrate the ability to predict the influence of intrinsic (particle size, grain density, and rheology) and extrinsic sediment properties (sediment topography and solid fraction) in the development of self-sustaining cohesive SGFs.",
+    "status": "found"
+  },
+  "2608.10193": {
+    "arxiv_id": "2608.10193",
+    "title": "A Necessary and Sufficient Hall Condition for Hypergraphs",
+    "authors": [
+      "Xiaoyao Huang"
+    ],
+    "submission_date": "2026-08-10T20:11:09Z",
+    "latest_updated": "2026-08-16T17:19:45Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.10193v1",
+      "2608.10193v2"
+    ],
+    "abstract": "We prove a necessary and sufficient Hall condition for a family $A=(A_e)_{e\\in E(G)}$ of hypergraphs indexed by the edges of a forest \\(G\\). This restriction on the index graph is sharp. The loop-only case recovers the classical Hall's Theorem with multiplicities for arbitrary finite set systems, while the loopless case shows that full rainbow matching is polynomial time solvable under this forest structure, although the problem is NP-complete in general. As another application, we prove every $5$-tough chordal graph is Hamilton-connected, improving toughness bounds of $18$ for Hamiltonicity (1998) and $10$ for Hamilton-connectedness (2017).",
+    "status": "found"
+  },
+  "2608.10194": {
+    "arxiv_id": "2608.10194",
+    "title": "Context and Symmetry in Auditing: A Case Study of Skeleton Inference in Motion Capture",
+    "authors": [
+      "Emma Harvey",
+      "Emanuel Moss",
+      "Hauke Sandhaus",
+      "Abigail Z. Jacobs",
+      "Mona Sloane"
+    ],
+    "submission_date": "2026-08-10T20:12:40Z",
+    "latest_updated": "2026-08-10T20:12:40Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10194v1"
+    ],
+    "abstract": "Humans are increasingly expected to interact with AI systems that observe and make inferences about them - but do these systems actually work? A standard approach to answering this question is AI auditing. Conducting an AI audit requires identifying how a system behaves (i.e., determining what types of inputs to audit it with and then observing and documenting actual system behavior) and contrasting that with how a system should behave (i.e., determining what the nominal outputs of a system should look like). We argue that this is best done through a contextual audit, which we introduce as a method for auditing measurements within the context of the practices that produce them. We show how contextual auditing enables the interrogation of assumptions implicit in the audit process and allows auditors to be explicit about what serves as ground truth, which we define as verifiable measurements about the real world against which systems are evaluated. We outline how the concept of symmetry from science and technology studies can enable audits when ground truth is unknown, unknowable, or contested. Finally, to demonstrate how contextual and symmetric audits can be conducted in practice, we present a case study of skeleton inference in motion capture and propose areas suggested by our case study as particularly fruitful for future audits of motion capture systems.",
+    "status": "found"
+  },
+  "2608.10195": {
+    "arxiv_id": "2608.10195",
+    "title": "More Accurate, Less Human: Gestalt Grouping in Vision Models",
+    "authors": [
+      "Sudhanva Manjunath Athreya",
+      "Sai Phani Kumar Malladi"
+    ],
+    "submission_date": "2026-08-10T20:14:14Z",
+    "latest_updated": "2026-08-10T20:14:14Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10195v1"
+    ],
+    "abstract": "Human vision organizes what it sees into wholes: same-colored points group into series, similar marks cohere into categories, and shapes complete into recognizable objects. These are the Gestalt operations that visualization design builds on. Whether vision models organize visual content this way has not been systematically tested. We introduce a behavioral battery that scores models against human data from prior perception studies on four grouping tasks: mark-color odd-one-out, color-series counting, silhouette recognition, and object odd-one-out. We apply it to 45 models across five training families: supervised, self-supervised, and contrastive vision-language encoders, open-weight VLMs, and closed foundation models. The battery reveals that agreement with human responses captures aspects of perceptual organization that conventional performance metrics fail to distinguish, with several closed models exhibiting substantially lower alignment than their benchmark accuracy would suggest. Scoring against published perception data therefore gives visualization research a reusable yardstick, requiring no new user study, for auditing whether the models now entering visualization pipelines organize what they see the way their human audience does.",
+    "status": "found"
+  },
+  "2608.10196": {
+    "arxiv_id": "2608.10196",
+    "title": "ELMER: Evolutionary Language Model that Explores and Refines",
+    "authors": [
+      "Matthew Siper",
+      "Ahmed Khalifa",
+      "Julian Togelius"
+    ],
+    "submission_date": "2026-08-10T20:14:39Z",
+    "latest_updated": "2026-08-10T20:14:39Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10196v1"
+    ],
+    "abstract": "Program evolution can measure whether a mutation helped, but it rarely controls how far the mutation moves in behavior space. Syntactic edit size is an unreliable proxy: a small code change can alter nearly every action, while a larger rewrite can preserve the same execution trace. We introduce an Evolutionary Language Model that searches over natural-language policy descriptions and compiles typed programs for execution. A fully fine-tuned Qwen3-8B model learns three task-conditioned operations: conditional semantic mutation, natural language to domain-specific language (GPTL) compilation, and GPTL to natural language translation. The model is fine-tuned with conditional input on the mutation strength (low, medium, high) using Direct Preference Optimization (oDPO). Across 252 fixed-budget evolutionary searches, oDPO improves both behavioral calibration and finite-budget search efficiency. Natural-language attains the highest observed held-out fitness. Our analysis shows that the condition input (mutation strength) systematically changes semantic edit composition and that language mutations preserve more parent fitness at matched small-to-moderate behavioral displacement. These results show that language can serve as a steerable, execution-grounded search representation over executable program space.",
+    "status": "found"
+  },
+  "2608.10197": {
+    "arxiv_id": "2608.10197",
+    "title": "An Optimal Energy Production Problem with Energy Source Switching and Load Following Nuclear Power Plants",
+    "authors": [
+      "Fabio Baschetti",
+      "Alessandro Gnoatto",
+      "Athena Picarelli"
+    ],
+    "submission_date": "2026-08-10T20:15:50Z",
+    "latest_updated": "2026-08-10T20:15:50Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10197v1"
+    ],
+    "abstract": "The integration of weather-dependent renewable generation increases the volatility of residual demand and raises the value of dispatchable low-carbon flexibility. This paper studies the optimal operation of a load-following nuclear power plant owned by a producer that must balance stochastic residual demand while accounting for ramping limits and costly changes in operating regimes. Nuclear output can be increased, decreased, or kept constant, and the production decision is formulated as a finite-horizon optimal switching problem. We analyze both a closed-economy benchmark, where excess production cannot be sold and shortages require costly back-up generation, and an open-economy setting, where the producer can trade electricity at prices driven by aggregate market residual demand. The value functions are characterized as viscosity solutions of a system of Hamilton-Jacobi-Bellman quasi-variational inequalities, and optimal policies are computed using a monotone semi-Lagrangian scheme. The numerical results show how shortage costs, switching costs, ramping capability, and market access shape optimal nuclear load following. The analysis highlights the economic value of controllable low-carbon capacity in renewable-intensive systems and provides implications for flexibility remuneration, balancing-market design, and interconnection policy.",
+    "status": "found"
+  },
+  "2608.10198": {
+    "arxiv_id": "2608.10198",
+    "title": "Post-Hoc Sparse Coding of Latent Communication Between Vision-Language Model Agents",
+    "authors": [
+      "Di Wu",
+      "Xiaohui Zhu"
+    ],
+    "submission_date": "2026-08-10T20:16:38Z",
+    "latest_updated": "2026-08-10T20:16:38Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10198v1"
+    ],
+    "abstract": "Latent-space communication allows heterogeneous vision-language model agents to exchange continuous representations without serializing visual and reasoning states into text. Vision Wormhole realizes this approach by translating visual features into a universal latent representation that can be consumed by another model, but every message is transported as a dense tensor of the same size regardless of its content. A fixed-capacity dense tensor therefore need not have a fixed effective information density: some messages may use only a small fraction of the available representational degrees of freedom. This observation suggests that the communication channel may be substantially compressible. We study its redundancy by fitting a post-hoc sparse autoencoder to frozen Vision Wormhole activations and measuring reconstruction, downstream utility, feature reuse, and token-level interventions across nine reasoning benchmarks. Relative to the original float32 transport, a uint16-index/float16-value sparse payload with k=4 active coefficients per token reduces the transmitted bytes by 128x. In a single-run evaluation, the seven-task non-AIME mean accuracy changes from 49.85% to 49.77%. The fitted 4096-element dictionary uses only 50 features, and task-level active sets have a mean pairwise Jaccard similarity of 0.906. These measurements establish strong post-hoc compressibility relative to the original transport, but do not yet isolate the incremental contribution of sparse coding from position selection, reduced precision, low-rank structure, or SAE optimization effects. The results motivate matched-payload comparisons and communication mechanisms whose payload adapts to the information used by each message.",
+    "status": "found"
+  },
+  "2608.10199": {
+    "arxiv_id": "2608.10199",
+    "title": "Wavelength Calibration Accuracy Across the STIS CCD: Pipeline Update and User Guidance",
+    "authors": [
+      "Matilde Mingozzi",
+      "Robert Jedrzejewski",
+      "Matthew Siebert",
+      "Daniel Welty",
+      "Sean Lockwood",
+      "Joleen Carlberg"
+    ],
+    "submission_date": "2026-08-10T20:16:51Z",
+    "latest_updated": "2026-08-10T20:16:51Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10199v1"
+    ],
+    "abstract": "We investigate the wavelength calibration accuracy of STIS CCD spectra as a function of detector position, focusing on the E1/E2 pseudo-apertures. Comparison between measured lamp line centroids and laboratory wavelengths shows that, while the standard calstis solution is stable at the detector center, significant offsets are present toward the CCD edges and increase with time. We used a test version of calstis in which the wavelength calibration step employs a row-selected cross-correlation, leading to improved wavelength calibration accuracy for edge extractions. Motivated by these results, we implemented an update to calstis4 that applies a row-selected wavecal procedure to observations taken with the E1/E2 pseudo-apertures, while preserving the standard procedure for nominal extractions. The updated pipeline was then used to reprocess the entire STIS archive in MAST. Validation tests confirm improved agreement between nominal and E1/E2 spectra without significant side effects for more than 97% of the datasets in the MAST archive. The main exceptions are the majority of G230MB and a few G230LB and G430M datasets, where the lower signal-to-noise at the CCD edge makes the lamp lines harder to detect and cosmic-ray residuals can dominate the cross-correlation, leading to incorrect wavelength shifts. A Jupyter Notebook is also provided to enable similar corrections in case the cross-correlation fails, for extractions at positions other than E1/E2, or for multiple extractions along the slit. Finally, we discuss the potential impact of the wavelength calibration accuracy on science results.",
+    "status": "found"
+  },
+  "2608.10200": {
+    "arxiv_id": "2608.10200",
+    "title": "Active Electronic Terahertz Imaging for Industrial Applications: From Hardware to the Paradigm Shift by Artificial Intelligence",
+    "authors": [
+      "Aparajita Bandyopadhyay",
+      "Hui Yuan",
+      "Willie J. Padilla",
+      "David J. Brady",
+      "Hartmut G. Roskos"
+    ],
+    "submission_date": "2026-08-10T20:17:09Z",
+    "latest_updated": "2026-08-10T20:17:09Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10200v1"
+    ],
+    "abstract": "Imaging with terahertz (THz) radiation (0.3-10 THz) benefits from a unique combination of attributes: penetration through dry, non-polar packaging materials; variations of dielectric functions to provide contrast; the existence of spectral fingerprint resonances for some classes of materials; non-ionizing photon energies that are safe for use around humans; and - viewed from the low-frequency side - an extension of the capabilities of microwave radar to higher frequencies and thus to substantially better spatial resolution, at wavelengths which still permit direct measurement of the complex-valued radiation field. This review concentrates on active THz imaging with electronic sources combined with power detectors or coherent receivers - the system class most likely to deliver fast (ideally real-time), cost-effective and deployable solutions for a wide range of industrial applications such as quality control, non-destructive testing, security screening and ranging for situational awareness. Such systems should be deployable on robotic and emerging autonomous platforms. We review the state of the art of compact semiconductor detector arrays, of imaging modalities ranging from focused-beam raster and frequency-modulated continuous-wave architectures to coherent Fourier-plane acquisition, and of augmentation techniques such as compressive sensing. Particular attention is paid to the growing role of artificial intelligence: from convolutional neural networks and physics-informed deep learning for phase retrieval and image reconstruction, to agentic frameworks for autonomous system design. The bottlenecks of THz imaging - acquisition speed, resolution, contrast and cost - are re-examined in the light of these innovations, and a reference-anchored technology roadmap is derived which projects an order-of-magnitude reduction in the measurement requirements of THz imaging.",
+    "status": "found"
+  },
+  "2608.10201": {
+    "arxiv_id": "2608.10201",
+    "title": "QCD-Matched Gluonic Response in Heavy-Quarkonium Born-Oppenheimer EFT: Locality, Channel Factorization, and the Peskin Limit",
+    "authors": [
+      "Arkadiy I. Syamtomov"
+    ],
+    "submission_date": "2026-08-10T20:17:45Z",
+    "latest_updated": "2026-08-27T15:39:22Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2608.10201v1",
+      "2608.10201v2",
+      "2608.10201v3"
+    ],
+    "abstract": "We formulate a source-dependent QCD-to-BOEFT matching for the gluonic response of a stable compact heavy-quarkonium state. The matched complementary-space resolvent preserves coupled Born-Oppenheimer dynamics, while an exact Feshbach decomposition separates channels retained explicitly from sectors integrated out at the next matching step. Spectral separation, kernel analyticity, and joint propagation-source bounds provide sufficient conditions for a local channel-factorized OPE; otherwise low-energy BO poles and cuts remain dynamical. The weak-coupling pNRQCD response is recovered as a limiting reference problem. With the additional leading-$E1$, large-$N_c$/free-octet assumptions, the source-weighted spectral measure reproduces the established Bhanot-Peskin electric moments and dissociation cut. For a Coulombic spin-singlet $1S$ state we also obtain the sequential-$M1$ contribution $c_{B,GG}^{(1)ij} =5πα_s^2(c_FV_{\\rm iso}^{(s)})^2δ^{ij}/16$ and the covariant-kinetic seagull contribution $c_{B,\\mathrm{dia}}^{(1)ij} =-πα_s^2δ^{ij}/4$. These are identifiable components, not the complete magnetic matching coefficient.",
+    "status": "found"
+  },
+  "2608.10202": {
+    "arxiv_id": "2608.10202",
+    "title": "Unextendible stabiliser bases",
+    "authors": [
+      "Markus Frembs"
+    ],
+    "submission_date": "2026-08-10T20:17:51Z",
+    "latest_updated": "2026-08-10T20:17:51Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10202v1"
+    ],
+    "abstract": "We study incomplete sets of orthogonal stabiliser states that cannot be extended by a further stabiliser state orthogonal to all of its members. Such sets are the stabiliser analogue of unextendible product bases (UPBs), and we thus call them unextendible stabiliser bases (USBs). Leveraging the symplectic geometry underlying the $n$-qudit Pauli group in prime local dimension, we explicitly construct USBs for systems of four qubits and three qudits of odd prime local dimension. Moreover, we show that these are the respective minimal qubit, respectively qudit numbers for which such bases exist, and that USBs exist for all $n\\geq4$ qubit and for all $n\\geq3$ odd-prime-dimensional qudit systems. Finally, we compare the resource-theoretic aspects of USBs with those of UPBs. We establish that, analogous to the case of UPBs, the orthogonal complement of every unextendible stabiliser set is a stabiliser-free subspace, and its normalised projector is necessarily magic; moreover, it is bound magic in odd prime dimension, yet need not be for qubits. We also show that USB unextendibility alone imposes no uniform quantitative obstruction to discrimination by stabiliser operations.",
+    "status": "found"
+  },
+  "2608.10203": {
+    "arxiv_id": "2608.10203",
+    "title": "A Convolutional Layer Activation Dimensionality Reduction for Out-of-Distribution and Adversarial Attack Detection Methods",
+    "authors": [
+      "Leandro de Souza Rosa",
+      "Lorenzo Capelli",
+      "Clara Nunes Barrancos",
+      "Mauro Mangia",
+      "Riccardo Rovatti"
+    ],
+    "submission_date": "2026-08-10T20:18:47Z",
+    "latest_updated": "2026-08-10T20:18:47Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10203v1"
+    ],
+    "abstract": "Despite the success of convolutional neural networks in image classification tasks and their general application in multi-modal models, their susceptibility to out-of-distribution and adversarial attack samples raises concerns regarding trustworthiness and safety. Among the approaches to tackle such issues, detection methods that analyze the model's intermediate activations to estimate a confidence score are a promising family that evaluates the decision process, relying on a dimensionality reduction step to enable efficient downstream processing of the high-dimensional activations. However, when considering convolutional layers, the dimensionality reduction methods in the literature either lack a mechanism to control the compression/information-loss trade-off or yield large representations. In this paper, we carefully analyze two state-of-the-art detection methods and their dimensionality reductions for convolutional layers and develop a novel reduction method with a controllable high-compression level. We extend these two state-of-the-art detection methods, enabling the usage of any dimensionality reduction, and evaluate their performance on out-of-distribution and adversarial attack detection. Results show that the detection methods with the proposed dimensionality reduction consistently perform better than, or comparable to, the strongest alternative. Furthermore, the proposed method is shown to reduce computation and memory footprints, given that it has the highest compression among the compared methods.",
+    "status": "found"
+  },
+  "2608.10204": {
+    "arxiv_id": "2608.10204",
+    "title": "Boundary-Seeking Policy Gradient for Safe Reinforcement Learning",
+    "authors": [
+      "Chenhua Fan",
+      "Jiahui Zhu",
+      "Yuhang Zhang",
+      "Honghao Wei"
+    ],
+    "submission_date": "2026-08-10T20:20:01Z",
+    "latest_updated": "2026-08-10T20:20:01Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10204v1"
+    ],
+    "abstract": "Safe reinforcement learning maximizes reward subject to safety constraints. For Constrained Markov Decision Processes, the linear-programming view over occupancy measures implies that whenever the constraint is active at optimality, the optimal policy lies exactly on the constraint boundary, yet standard gradient-based methods do not exploit this structure and often settle in the feasible interior. We introduce Boundary-Seeking Policy Gradient (BSPG), a first-order method whose update combines a tangential component that improves reward while preserving cost to first order with a signed, residual-driven normal component that regulates the policy toward the active boundary from either side; the combined direction admits an algebraic Lagrangian form with an induced coefficient and no learned dual variable. Under exact gradients and stated regularity conditions, the constraint residual converges to zero from either side with a finite-horizon $O(1/\\sqrt{T})$ bound, the tangential component is a reward-ascent direction on the boundary, and any convergent parameter sequence is stationary on the active constraint set, satisfying the KKT conditions when the limit is also a local maximizer over the feasible set. This complements existing analyses, which certify feasibility but do not characterize the constraint value at convergence. On a standard Safety-Gymnasium navigation task, BSPG attains higher reward while tracking the boundary more tightly than the compared baselines.",
+    "status": "found"
+  },
+  "2608.10205": {
+    "arxiv_id": "2608.10205",
+    "title": "Sensor fusion on MagAO-X: real time vibration control using accelerometers",
+    "authors": [
+      "Parker T. Johnson",
+      "Jared R. Males",
+      "Povilas Palunas",
+      "Olivier Guyon",
+      "Sebastiaan Haffert",
+      "Joseph Long",
+      "Vincent Deo",
+      "Julien Lozi",
+      "Laird M. Close",
+      "Maggie Kautz",
+      "Jay Kueny",
+      "Jialin Li",
+      "Joshua Liberman",
+      "Miles Lucas",
+      "Matthijs Mars",
+      "Eden McEwen",
+      "Tiffany Nguyen",
+      "Elena Tonucci",
+      "Katie Twitchell"
+    ],
+    "submission_date": "2026-08-10T20:20:46Z",
+    "latest_updated": "2026-08-10T20:20:46Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10205v1"
+    ],
+    "abstract": "Mechanical vibrations are a significant source of residual wavefront error (WFE) in adaptive optics (AO) systems, limiting the performance of high-contrast imaging instruments. We present the design and on-sky deployment of a low-cost, modular accelerometer telemetry system for the MagAO-X extreme AO instrument on the 6.5 m Magellan Clay Telescope, consisting of piezoelectric accelerometers and a Raspberry Pi-based acquisition system that streams synchronized data to the real-time control computer with microsecond-level timing stability. The system is used to identify dominant telescope vibration sources and quantify their coupling to AO telemetry, revealing that several narrow-band modes originate from subsystems including the primary mirror glycol pump, secondary mirror actuation system, and telescope autofocus system. Coherence analysis between the synchronized accelerometer and wavefront sensor telemetry demonstrates that approximately one-third of the residual tip and tilt WFE is correlated with structural vibrations, indicating that accelerometer telemetry provides a promising foundation for future predictive control implementations. These results demonstrate that low-cost accelerometer telemetry provides a practical approach for vibration identification and a foundation for predictive control in current and future AO systems.",
+    "status": "found"
+  },
+  "2608.10206": {
+    "arxiv_id": "2608.10206",
+    "title": "Edge Phoneme Recognition for Children's Speech through Age-Aware Training",
+    "authors": [
+      "Matthew Arboleda",
+      "Ryan Arboleda",
+      "Sophie Haak",
+      "Sam Hjelmeset",
+      "Andrew Franck",
+      "Bingrui Yang",
+      "Jose Bustamante Ortiz",
+      "Yuanrong Shen",
+      "Joel Walsh"
+    ],
+    "submission_date": "2026-08-10T20:20:56Z",
+    "latest_updated": "2026-08-10T20:20:56Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10206v1"
+    ],
+    "abstract": "Detecting phonemes from children's speech has historically been difficult due to the scarcity of training data, and unique characteristics of children's speech. During a phoneme detection competition, we found that training a lightweight model to predict the age of the learner, as well as the phoneme sequence, enabled a 94M-parameter model to outperform WavLM Large models (317M) on the target DrivenData distribution, and fall within approximately 0.04 CER of competition ensembles with 90 times the parameters. This has enabled the creation of PhonemeTrainer, an application that can run on most modern cellular phones. This will ultimately enable better Automated Speech Recognition (ASR) and pronunciation helper apps for children's speech, with the privacy and compliance benefits that come with edge processing.",
+    "status": "found"
+  }
+}

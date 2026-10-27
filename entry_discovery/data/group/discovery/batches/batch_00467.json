@@ -1,0 +1,458 @@
+{
+  "2601.22496": {
+    "arxiv_id": "2601.22496",
+    "title": "Action-Sufficient Goal Representations",
+    "authors": [
+      "Jinu Hyeon",
+      "Woobin Park",
+      "Hongjoon Ahn",
+      "Taesup Moon"
+    ],
+    "submission_date": "2026-01-30T03:08:37Z",
+    "latest_updated": "2026-07-27T05:00:26Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.22496v1",
+      "2601.22496v2"
+    ],
+    "abstract": "In offline goal-conditioned reinforcement learning (GCRL), hierarchical approaches decompose long-horizon tasks into high-level subgoal prediction and low-level action execution. A critical design choice in such architectures is the goal representation-the compressed encoding of goals that serves as the interface between these levels. Existing methods derive this representation from value learning, implicitly assuming that information sufficient for value estimation is adequate for optimal action prediction. We show that this assumption can fail even under exact value estimation, as such representations may collapse goals requiring distinct optimal actions. To address this, we introduce action sufficiency, an information-theoretic condition on goal representations necessary for optimal action prediction. We prove that value sufficiency, the preservation of sufficient information for value estimation, does not imply action sufficiency and empirically verify that the latter is more strongly associated with control success in a discrete environment. We further demonstrate that an actor-based representation, naturally induced by standard log-likelihood training of the low-level policy, is approximately action-sufficient. Empirically, our actor-based representations consistently outperform representations learned via value function estimation.",
+    "status": "found"
+  },
+  "2601.22497": {
+    "arxiv_id": "2601.22497",
+    "title": "Fairness-Aware Performance Evaluation for Multi-Party Multi-Objective Optimization",
+    "authors": [
+      "Zifan Zhao",
+      "Peilan Xu",
+      "Wenjian Luo"
+    ],
+    "submission_date": "2026-01-30T03:09:58Z",
+    "latest_updated": "2026-09-30T14:59:01Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.22497v1",
+      "2601.22497v2"
+    ],
+    "abstract": "In multiparty multiobjective optimization problems, solution sets are usually evaluated using classical performance metrics, aggregated across DMs. However, such mean-based evaluations may be unfair by favoring certain parties, as they assume identical geometric approximation quality to each party's PF carries comparable evaluative significance. Moreover, prevailing notions of MPMOP optimal solutions are restricted to strictly common Pareto optimal solutions, representing a narrow form of cooperation in multiparty decision making scenarios. These limitations obscure whether a solution set reflects balanced relative gains or meaningful consensus among heterogeneous DMs. To address these issues, this paper develops a fairness-aware performance evaluation framework grounded in a generalized notion of consensus solutions. From a cooperative game-theoretic perspective, we formalize four axioms that a fairness-aware evaluation function for MPMOPs should satisfy. By introducing a concession rate vector to quantify acceptable compromises by individual DMs, we generalize the classical definition of MPMOP optimal solutions and embed classical performance metrics into a Nash-product-based evaluation framework, which is theoretically shown to satisfy all axioms. To support empirical validation, we further construct benchmark problems that extend existing MPMOP suites by incorporating consensus-deficient negotiation structures. Experimental results demonstrate that the proposed evaluation framework is able to distinguish algorithmic performance in a manner consistent with consensus-aware fairness considerations. Specifically, algorithms converging toward strictly common solutions are assigned higher evaluation scores when such solutions exist, whereas in the absence of strictly common solutions, algorithms that effectively cover the commonly acceptable region are more favorably evaluated.",
+    "status": "found"
+  },
+  "2601.22498": {
+    "arxiv_id": "2601.22498",
+    "title": "FITMM: Adaptive Frequency-Aware Multimodal Recommendation via Information-Theoretic Representation Learning",
+    "authors": [
+      "Wei Yang",
+      "Rui Zhong",
+      "Yiqun Chen",
+      "Shixuan Li",
+      "Heng Ping",
+      "Chi Lu",
+      "Peng Jiang"
+    ],
+    "submission_date": "2026-01-30T03:16:54Z",
+    "latest_updated": "2026-01-30T03:16:54Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22498v1"
+    ],
+    "abstract": "Multimodal recommendation aims to enhance user preference modeling by leveraging rich item content such as images and text. Yet dominant systems fuse modalities in the spatial domain, obscuring the frequency structure of signals and amplifying misalignment and redundancy. We adopt a spectral information-theoretic view and show that, under an orthogonal transform that approximately block-diagonalizes bandwise covariances, the Gaussian Information Bottleneck objective decouples across frequency bands, providing a principled basis for separate-then-fuse paradigm. Building on this foundation, we propose FITMM, a Frequency-aware Information-Theoretic framework for multimodal recommendation. FITMM constructs graph-enhanced item representations, performs modality-wise spectral decomposition to obtain orthogonal bands, and forms lightweight within-band multimodal components. A residual, task-adaptive gate aggregates bands into the final representation. To control redundancy and improve generalization, we regularize training with a frequency-domain IB term that allocates capacity across bands (Wiener-like shrinkage with shut-off of weak bands). We further introduce a cross-modal spectral consistency loss that aligns modalities within each band. The model is jointly optimized with the standard recommendation loss. Extensive experiments on three real-world datasets demonstrate that FITMM consistently and significantly outperforms advanced baselines.",
+    "status": "found"
+  },
+  "2601.22499": {
+    "arxiv_id": "2601.22499",
+    "title": "Chance-Constrained Secrecy Optimization in Hybrid RIS-Empowered and UAV-Assisted Networks",
+    "authors": [
+      "Elhadj Moustapha Diallo",
+      "Mamadou Aliou Diallo",
+      "Abusaeed B. M. Adam",
+      "Muhammad Naeem Shah"
+    ],
+    "submission_date": "2026-01-30T03:18:30Z",
+    "latest_updated": "2026-01-30T03:18:30Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22499v1"
+    ],
+    "abstract": "This paper considers a hybrid reconfigurable environment comprising a UAV-mounted reflecting RIS, an outdoor STAR-RIS enabling simultaneous transmission and reflection, and an indoor holographic RIS (H-RIS), jointly enhancing secure downlink communication for indoor and outdoor users. The system operates under user mobility, dynamic blockages, colluding idle and active eavesdroppers, and transceiver and surface hardware impairments. A 3GPP and ITU-compliant stochastic channel model is developed, capturing mobility-induced covariance evolution, outdoor-indoor penetration losses, and distortion-aware noise due to practical EVM-based impairments. We aim to minimize the aggregate secrecy-outage probability subject to secrecy-rate constraints, QoS requirements, power limitations, and statistical CSI uncertainty. The resulting problem contains coupled secrecy and QoS chance constraints and nonlinear interactions among the BS beamforming vectors, multi-surface phase coefficients, and UAV position. To handle these difficulties, we derive rigorous Bernstein-type deterministic approximations for all chance constraints, yielding a distributionally robust reformulation. Building on this, we propose an alternating optimization framework that employs successive convex approximation (SCA) to convexify each block and solve the BS beamforming, RIS, STAR-RIS, H-RIS configuration, and UAV placement subproblems efficiently. The proposed algorithm is shown to monotonically decrease a smooth surrogate of the secrecy-outage cost and converge to a stationary point of the robustified problem. Simulations based on 3GPP TR 38.901, TR 36.873, and ITU-R P.2109 demonstrate that integrating UAV-RIS, STAR-RIS, and H-RIS significantly reduces secrecy-outage probability compared with benchmark schemes and provides strong robustness to channel uncertainty, blockages, colluding eavesdroppers, and hardware impairments.",
+    "status": "found"
+  },
+  "2601.22500": {
+    "arxiv_id": "2601.22500",
+    "title": "The GECKOS Survey: Extraplanar ionised gas in star-forming galaxies from eDIG to galaxy-scale winds",
+    "authors": [
+      "R. Elliott",
+      "D. B. Fisher",
+      "B. Mazzilli Ciraulo",
+      "A. Fraser-McKelvie",
+      "M. R. Hayden",
+      "M. Martig",
+      "J. van de Sande",
+      "A. J. Battisti",
+      "J. Bland-Hawthorn",
+      "A. D. Bolatto",
+      "T. H. Brown",
+      "B. Catinella",
+      "F. Combes",
+      "L. Cortese",
+      "T. A. Davis",
+      "E. Emsellem",
+      "D. A. Gadotti",
+      "F. Pinna",
+      "T. H. Puzia",
+      "L. A. Silva-Lima",
+      "L. M. Valenzuela",
+      "G. van de Ven"
+    ],
+    "submission_date": "2026-01-30T03:21:43Z",
+    "latest_updated": "2026-01-30T03:21:43Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22500v1"
+    ],
+    "abstract": "We map the extraplanar gas, with $\\sim$50-200 pc resolution, in nine star-forming galaxies using Multi-Unit Spectroscopic Explorer (MUSE) observations from the GECKOS VLT Large Program targeting edge-on galaxies with similar stellar mass as the Milky Way. The narrow range in stellar mass ($\\pm0.35$ dex) of the GECKOS sample makes it ideal for studying trends with star formation rate (SFR). We find strong extraplanar emission reaching $\\sim$2-8 kpc from the disk midplane in all targets with $\\rm{SFR}\\geq$1 M$_{\\odot}$ yr$^{-1}$. Targets with SFR$\\,\\geq\\,$5 M$_{\\odot}$ yr$^{-1}$ have brighter, more extended H$α$ emission compared to lower SFR targets. In high-SFR systems, the gas velocity dispersion ($σ_{\\rm Hα}$) shows a biconical morphology, consistent with the expectation of outflows. This agrees with previous works suggesting high velocity dispersion in a biconical shape is a good means to identify outflows. We find mixed results using line diagnostics ([OIII]$_{5007}$/H$β$ - [NII]/H$α$ and $σ_{\\rm Hα}$ - [SII]/H$α$) to spatially resolve ionisation mechanisms across the extraplanar gas. The highest [NII]/H$α$ are the extraplanar gas of the highest SFR systems, yet main-sequence galaxies have the highest [OIII]/H$β$. While the morphology of [NII]/H$α$ may be useful to identify outflows, the absolute value of the line ratio alone may not distinguish strong outflows from extraplanar gas of main-sequence galaxies. The ubiquitous extraplanar emission can be interpreted as the result of feedback, in the form of large-scale winds for starbursts or smaller-scale galactic fountains for main-sequence galaxies. Moreover, shock-heating may ionise gas at the interface of the disk and the circumgalactic medium, independent of the source of the gas.",
+    "status": "found"
+  },
+  "2601.22501": {
+    "arxiv_id": "2601.22501",
+    "title": "MIRRORTALK: Forging Personalized Avatars Via Disentangled Style and Hierarchical Motion Control",
+    "authors": [
+      "Renjie Lu",
+      "Xulong Zhang",
+      "Xiaoyang Qu",
+      "Jianzong Wang",
+      "Shangfei Wang"
+    ],
+    "submission_date": "2026-01-30T03:23:01Z",
+    "latest_updated": "2026-01-30T03:23:01Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22501v1"
+    ],
+    "abstract": "Synthesizing personalized talking faces that uphold and highlight a speaker's unique style while maintaining lip-sync accuracy remains a significant challenge. A primary limitation of existing approaches is the intrinsic confounding of speaker-specific talking style and semantic content within facial motions, which prevents the faithful transfer of a speaker's unique persona to arbitrary speech. In this paper, we propose MirrorTalk, a generative framework based on a conditional diffusion model, combined with a Semantically-Disentangled Style Encoder (SDSE) that can distill pure style representations from a brief reference video. To effectively utilize this representation, we further introduce a hierarchical modulation strategy within the diffusion process. This mechanism guides the synthesis by dynamically balancing the contributions of audio and style features across distinct facial regions, ensuring both precise lip-sync accuracy and expressive full-face dynamics. Extensive experiments demonstrate that MirrorTalk achieves significant improvements over state-of-the-art methods in terms of lip-sync accuracy and personalization preservation.",
+    "status": "found"
+  },
+  "2601.22502": {
+    "arxiv_id": "2601.22502",
+    "title": "Entanglement in Elastic and Inelastic Two-particle Scatterings at High Energy",
+    "authors": [
+      "Robi Peschanski",
+      "Shigenori Seki"
+    ],
+    "submission_date": "2026-01-30T03:24:20Z",
+    "latest_updated": "2026-06-04T10:26:02Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.22502v1",
+      "2601.22502v2"
+    ],
+    "abstract": "We study the entanglement produced in transverse momentum by two-particle scattering at high energy. Employing the S-matrix framework for the derivation of reduced density matrices, we formulate the entanglement entropy for an inelastic scattering as well as an elastic one. We display the formulas of the entanglement entropy in terms of two-body cross sections. We also derive the entanglement density as a function of the transverse momentum. As an application, we then focus on both forward elastic ($pn \\to pn$) and inelastic ($pn \\to np$) channels scattering allowing for a fruitful comparison of the two reactions with the same proton-neutron content. We evaluate the elastic and inelastic entanglement entropy by using known parameterizations of experimental data for neutron-proton reactions. Comparing those entanglement entropies, we observe that the inelastic scattering produces more overall entanglement than the elastic one in the $pn$ sector.",
+    "status": "found"
+  },
+  "2601.22503": {
+    "arxiv_id": "2601.22503",
+    "title": "Quantum-Enhanced Sensing Enabled by Scrambling-Induced Genuine Multipartite Entanglement",
+    "authors": [
+      "Guantian Hu",
+      "Wenxuan Zhang",
+      "Zhihua Chen",
+      "Liuzhu Zhong",
+      "Jingchao Zhao",
+      "Chilong Liu",
+      "Zixing Liu",
+      "Yue Xu",
+      "Yongchang Lin",
+      "Yougui Ri",
+      "Guixu Xie",
+      "Mingze Liu",
+      "Haolan Yuan",
+      "Yuxuan Zhou",
+      "Yu Zhang",
+      "Chang-Kang Hu",
+      "Song Liu",
+      "Dian Tan",
+      "Dapeng Yu"
+    ],
+    "submission_date": "2026-01-30T03:28:36Z",
+    "latest_updated": "2026-01-30T03:28:36Z",
+    "revised_dates": null,
+    "venue": "Phys. Rev. Lett. (2026)",
+    "latest_version": 1,
+    "versions": [
+      "2601.22503v1"
+    ],
+    "abstract": "Quantum sensing leverages quantum resources to surpass the standard quantum limit, yet many existing protocols rely on the preparation of complex entangled states and Hamiltonian engineering, posing challenges for universality and scalability. Here, we report an experimental realization of a universal protocol, known as Butterfly Metrology, proposed in [arXiv:2411.12794], demonstrating a scrambling-based approach for quantum-enhanced sensing on a superconducting quantum processor. By exploiting many-body information scrambling, we observe quantum-enhanced sensitivity to an encoded phase beyond the standard quantum limit, with a scaling consistent with a factor-of-two of the Heisenberg limit for system sizes of up to 10 qubits. Importantly, we experimentally establish a connection between the enhanced sensitivity and the dynamics of the out-of-time-order correlator (OTOC), and show that the buildup of scrambling-induced genuine multipartite entanglement underlies the observed sensitivity enhancement. Our results demonstrate a scalable and practical approach for quantum-enhanced sensing in interacting many-body quantum systems.",
+    "status": "found"
+  },
+  "2601.22504": {
+    "arxiv_id": "2601.22504",
+    "title": "Class-Aware Permutation-Invariant Signal-to-Distortion Ratio for Semantic Segmentation of Sound Scene with Same-Class Sources",
+    "authors": [
+      "Binh Thien Nguyen",
+      "Masahiro Yasuda",
+      "Daiki Takeuchi",
+      "Daisuke Niizumi",
+      "Noboru Harada"
+    ],
+    "submission_date": "2026-01-30T03:31:20Z",
+    "latest_updated": "2026-01-30T03:31:20Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22504v1"
+    ],
+    "abstract": "To advance immersive communication, the Detection and Classification of Acoustic Scenes and Events (DCASE) 2025 Challenge recently introduced Task 4 on Spatial Semantic Segmentation of Sound Scenes (S5). An S5 system takes a multi-channel audio mixture as input and outputs single-channel dry sources along with their corresponding class labels. Although the DCASE 2025 Challenge simplifies the task by constraining class labels in each mixture to be mutually exclusive, real-world mixtures frequently contain multiple sources from the same class. The presence of duplicated labels can significantly degrade the performance of the label-queried source separation (LQSS) model, which is the key component of many existing S5 systems, and can also limit the validity of the official evaluation metric of DCASE 2025 Task 4. To address these issues, we propose a class-aware permutation-invariant loss function that enables the LQSS model to handle queries involving duplicated labels. In addition, we redesign the S5 evaluation metric to eliminate ambiguities caused by these same-class sources. To evaluate the proposed method within the S5 system, we extend the label prediction model to support same-class labels. Experimental results demonstrate the effectiveness of the proposed methods and the robustness of the new metric on mixtures both with and without same-class sources.",
+    "status": "found"
+  },
+  "2601.22505": {
+    "arxiv_id": "2601.22505",
+    "title": "Constructing BERT Models: How Team Dynamics and Focus Shape AI Model Impact",
+    "authors": [
+      "Likun Cao",
+      "Kai Li"
+    ],
+    "submission_date": "2026-01-30T03:31:33Z",
+    "latest_updated": "2026-01-30T03:31:33Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22505v1"
+    ],
+    "abstract": "The rapid evolution of AI technologies, exemplified by BERT-family models, has transformed scientific research, yet little is known about their production and recognition dynamics in the scientific system. This study investigates the development and impact of BERT-family models, focusing on team size, topic specialization, and citation patterns behind the models. Using a dataset of 4,208 BERT-related papers from the Papers with Code (PWC) dataset, we analyze how the BERT-family models evolve across methodological generations and how the newness of models is correlated with their production and recognition. Our findings reveal that newer BERT models are developed by larger, more experienced, and institutionally diverse teams, reflecting the increasing complexity of AI research. Additionally, these models exhibit greater topical specialization, targeting niche applications, which aligns with broader trends in scientific specialization. However, newer models receive fewer citations, particularly over the long term, suggesting a \"first-mover advantage,\" where early models like BERT garner disproportionate recognition. These insights highlight the need for equitable evaluation frameworks that value both foundational and incremental innovations. This study underscores the evolving interplay between collaboration, specialization, and recognition in AI research.",
+    "status": "found"
+  },
+  "2601.22506": {
+    "arxiv_id": "2601.22506",
+    "title": "Observation of Janus Chirality for Coherent Thermal Emission from Metasurfaces",
+    "authors": [
+      "Kaili Sun",
+      "Yangjian Cai",
+      "Maxim V. Gorkunov",
+      "Yuri Kivshar",
+      "Zhanghua Han"
+    ],
+    "submission_date": "2026-01-30T03:31:56Z",
+    "latest_updated": "2026-01-30T03:31:56Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22506v1"
+    ],
+    "abstract": "Metasurfaces emerged as a powerful tool for controlling thermal radiation, yet achieving coherent emission with opposite circular handednesses remains a highly challenging problem. Here, we demonstrate experimentally the Janus chiral thermal emission from metasurfaces with opposite circular handednesses on either side of a single device. We employ anisotropic metasurfaces supporting high-Q resonances with photonic flatbands enabling near-unity circular dichroism through in-plane symmetry control. Our experiments confirm the Janus coherent emission, and they are validated by the results of the coupled-mode theory. The flatband resonant metasurfaces enabling a control of chiral thermal emission provide an efficient platform for spin-controlled light-matter interaction.",
+    "status": "found"
+  },
+  "2601.22507": {
+    "arxiv_id": "2601.22507",
+    "title": "DreamVAR: Taming Reinforced Visual Autoregressive Model for High-Fidelity Subject-Driven Image Generation",
+    "authors": [
+      "Xin Jiang",
+      "Jingwen Chen",
+      "Yehao Li",
+      "Yingwei Pan",
+      "Kezhou Chen",
+      "Zechao Li",
+      "Ting Yao",
+      "Tao Mei"
+    ],
+    "submission_date": "2026-01-30T03:32:29Z",
+    "latest_updated": "2026-01-30T03:32:29Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22507v1"
+    ],
+    "abstract": "Recent advances in subject-driven image generation using diffusion models have attracted considerable attention for their remarkable capabilities in producing high-quality images. Nevertheless, the potential of Visual Autoregressive (VAR) models, despite their unified architecture and efficient inference, remains underexplored. In this work, we present DreamVAR, a novel framework for subject-driven image synthesis built upon a VAR model that employs next-scale prediction. Technically, multi-scale features of the reference subject are first extracted by a visual tokenizer. Instead of interleaving these conditional features with target image tokens across scales, our DreamVAR pre-fills the full subject feature sequence prior to predicting target image tokens. This design simplifies autoregressive dependencies and mitigates the train-test discrepancy in multi-scale conditioning scenario within the VAR paradigm. DreamVAR further incorporates reinforcement learning to jointly enhance semantic alignment and subject consistency. Extensive experiments demonstrate that DreamVAR achieves superior appearance preservation compared to leading diffusion-based methods.",
+    "status": "found"
+  },
+  "2601.22508": {
+    "arxiv_id": "2601.22508",
+    "title": "CoVA: Text-Guided Composed Video Retrieval for Audio-Visual Content",
+    "authors": [
+      "Gyuwon Han",
+      "Young Kyun Jang",
+      "Chanho Eom"
+    ],
+    "submission_date": "2026-01-30T03:36:43Z",
+    "latest_updated": "2026-01-30T03:36:43Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22508v1"
+    ],
+    "abstract": "Composed Video Retrieval (CoVR) aims to retrieve a target video from a large gallery using a reference video and a textual query specifying visual modifications. However, existing benchmarks consider only visual changes, ignoring videos that differ in audio despite visual similarity. To address this limitation, we introduce Composed retrieval for Video with its Audio CoVA, a new retrieval task that accounts for both visual and auditory variations. To support this, we construct AV-Comp, a benchmark consisting of video pairs with cross-modal changes and corresponding textual queries that describe the differences. We also propose AVT Compositional Fusion (AVT), which integrates video, audio, and text features by selectively aligning the query to the most relevant modality. AVT outperforms traditional unimodal fusion and serves as a strong baseline for CoVA. Examples from the proposed dataset, including both visual and auditory information, are available at https://perceptualai-lab.github.io/CoVA/.",
+    "status": "found"
+  },
+  "2601.22509": {
+    "arxiv_id": "2601.22509",
+    "title": "Keep Rehearsing and Refining: Lifelong Learning Vehicle Routing under Continually Drifting Tasks",
+    "authors": [
+      "Jiyuan Pei",
+      "Yi Mei",
+      "Jialin Liu",
+      "Mengjie Zhang",
+      "Xin Yao"
+    ],
+    "submission_date": "2026-01-30T03:37:39Z",
+    "latest_updated": "2026-05-07T09:56:26Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.22509v1",
+      "2601.22509v2"
+    ],
+    "abstract": "Existing neural solvers for vehicle routing problems (VRPs) are typically trained either in a one-off manner on a fixed set of pre-defined tasks or in a lifelong manner with tasks arriving sequentially, assuming sufficient training on each task. Both settings overlook a common real-world property: problem patterns may drift continually over time, yielding massive tasks sequentially arising, each with only limited training resources. In this paper, we propose a novel lifelong learning paradigm for neural VRP solvers under continual task drift over time, where each task is locally stationary at one learning time step but receives only insufficient training resources. We empirically demonstrate that such continual drift arises in practice using a real-world logistics dataset. We then propose Dual Replay with Experience Enhancement (DREE), a general framework to improve learning efficiency and mitigate catastrophic forgetting under such drift. Extensive experiments based on both the real-world logistics dataset and commonly used synthetic dataset show that, under such continual drift, DREE effectively learns new tasks, preserves prior knowledge, improves generalization to unseen tasks, and can be applied to various existing neural solvers.",
+    "status": "found"
+  },
+  "2601.22510": {
+    "arxiv_id": "2601.22510",
+    "title": "Shattered Compositionality: Counterintuitive Learning Dynamics of Transformers for Arithmetic",
+    "authors": [
+      "Xingyu Zhao",
+      "Darsh Sharma",
+      "Rheeya Uppaal",
+      "Yiqiao Zhong"
+    ],
+    "submission_date": "2026-01-30T03:38:54Z",
+    "latest_updated": "2026-08-08T23:41:54Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.22510v1",
+      "2601.22510v2"
+    ],
+    "abstract": "Large language models (LLMs) often achieve strong benchmark accuracy yet remain brittle under small distribution shifts. While recent mechanistic studies reveal the discrepancy between LLMs and humans in skill compositions, the learning dynamics of skill acquisition and the role of data distributions remain elusive. In this study, we train transformers on synthetic arithmetic tasks with black-box model-agnostic metrics for analyzing non-human skill compositions. We discover that transformers often acquire skills for arithmetic in reverse order or in parallel instead of human-like sequential rules--a phenomenon we refer to as shattered compositionality. To explain these behaviors, we provide evidence that correlational matching to the training data, rather than causal or procedural composition, shapes learning dynamics. As a consequence, this non-human acquisition creates competition between partially learned skills, producing characteristic mixing errors and weaker robustness under controlled distribution shifts. We further show that the same qualitative behavior persists in modern LLMs and is not mitigated by pure model scaling or scratchpad supervision. Our results highlight a mismatch between training-time skill acquisition and the human-like hierarchical compositions, with implications for reasoning reliability and out-of-distribution robustness.",
+    "status": "found"
+  },
+  "2601.22511": {
+    "arxiv_id": "2601.22511",
+    "title": "Mock Worlds, Real Skills: Building Small Agentic Language Models with Synthetic Tasks, Simulated Environments, and Rubric-Based Rewards",
+    "authors": [
+      "Yuanjie Lyu",
+      "Chengyu Wang",
+      "Lei Shen",
+      "Jun Huang",
+      "Tong Xu"
+    ],
+    "submission_date": "2026-01-30T03:43:42Z",
+    "latest_updated": "2026-03-12T08:14:12Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.22511v1",
+      "2601.22511v2"
+    ],
+    "abstract": "Small LLMs often struggle to match the agentic capabilities of large, costly models. While reinforcement learning can help, progress has been limited by two structural bottlenecks: existing open-source agentic training data are narrow in task variety and easily solved; real-world APIs lack diversity and are unstable for large-scale reinforcement learning rollout processes. We address these challenges with SYNTHAGENT, a framework that jointly synthesizes diverse tool-use training data and simulates complete environments. Specifically, a strong teacher model creates novel tasks and tool ecosystems, then rewrites them into intentionally underspecified instructions. This compels agents to actively query users for missing details. When handling synthetic tasks, an LLM-based user simulator provides user-private information, while a mock tool system delivers stable tool responses. For rewards, task-level rubrics are constructed based on required subgoals, user-agent interactions, and forbidden behaviors. Across 14 challenging datasets in math, search, and tool use, models trained on our synthetic data achieve substantial gains, with small models outperforming larger baselines.",
+    "status": "found"
+  },
+  "2601.22512": {
+    "arxiv_id": "2601.22512",
+    "title": "DRL-Enabled Trajectory Planing for UAV-Assisted VLC: Optimal Altitude and Reward Design",
+    "authors": [
+      "Tian-Tian Lin",
+      "Yi Liu",
+      "Xiao-Wei Tang",
+      "Yunmei Shi",
+      "Yi Huang",
+      "Zhongxiang Wei",
+      "Qingqing Wu",
+      "Yuhan Dong"
+    ],
+    "submission_date": "2026-01-30T03:44:14Z",
+    "latest_updated": "2026-01-30T03:44:14Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22512v1"
+    ],
+    "abstract": "Recently, the integration of unmanned aerial vehicle (UAV) and visible light communication (VLC) technologies has emerged as a promising solution to offer flexible communication and efficient lighting. This letter investigates the three-dimensional trajectory planning in a UAV-assisted VLC system, where a UAV is dispatched to collect data from ground users (GUs). The core objective is to develop a trajectory planning framework that minimizes UAV flight distance, which is equivalent to maximizing the data collection efficiency. This issue is formulated as a challenging mixed-integer non-convex optimization problem. To tackle it, we first derive a closed-form optimal flight altitude under specific VLC channel gain threshold. Subsequently, we optimize the UAV horizontal trajectory by integrating a novel pheromone-driven reward mechanism with the twin delayed deep deterministic policy gradient algorithm, which enables adaptive UAV motion strategy in complex environments. Simulation results validate that the derived optimal altitude effectively reduces the flight distance by up to 35% compared to baseline methods. Additionally, the proposed reward mechanism significantly shortens the convergence steps by approximately 50%, demonstrating notable efficiency gains in the context of UAV-assisted VLC data collection.",
+    "status": "found"
+  },
+  "2601.22513": {
+    "arxiv_id": "2601.22513",
+    "title": "Why Self-Rewarding Works: Theoretical Guarantees for Iterative Alignment of Language Models",
+    "authors": [
+      "Shi Fu",
+      "Yingjie Wang",
+      "Shengchao Hu",
+      "Peng Wang",
+      "Dacheng Tao"
+    ],
+    "submission_date": "2026-01-30T03:45:43Z",
+    "latest_updated": "2026-02-03T07:16:33Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.22513v1",
+      "2601.22513v2"
+    ],
+    "abstract": "Self-Rewarding Language Models (SRLMs) achieve notable success in iteratively improving alignment without external feedback. Yet, despite their striking empirical progress, the core mechanisms driving their capabilities remain unelucidated, leaving a critical gap in theoretical understanding. This paper provides the first rigorous theoretical guarantees for SRLMs. We first establish a lower bound that characterizes the fundamental limits of a single update step, revealing a critical dependence on the quality of the initial model. We then derive finite-sample error bounds for the full iterative paradigm, showing that performance improves at a rate of $\\widetilde{\\mathcal{O}}\\left(1/\\sqrt{n}\\right)$ with sample size $n$. Crucially, our analysis reveals that the dependence on the initial model decays exponentially with the number of iterations $T$. This provides a formal explanation for why self-rewarding succeeds: it robustly overcomes poor initialization by steering the dynamics toward internal stability and consistency. Finally, we instantiate our theoretical framework for the linear softmax model class, yielding tailored guarantees that connect our high-level insights to practical model architectures.",
+    "status": "found"
+  },
+  "2601.22514": {
+    "arxiv_id": "2601.22514",
+    "title": "Note on Euler characteristic of a toric vector bundle",
+    "authors": [
+      "Suhyon Chong",
+      "Shaoyu Huang",
+      "Kiumars Kaveh"
+    ],
+    "submission_date": "2026-01-30T03:47:14Z",
+    "latest_updated": "2026-04-07T00:37:56Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.22514v1",
+      "2601.22514v2"
+    ],
+    "abstract": "A convex chain is a finite integer linear combination of indicator functions of convex polytopes. Khovanskii-Pukhlikov extend the Ehrhart theory of convex lattice polytopes to the setting of convex chains. Extending the relationship between equivariant line bundles on projective toric varieties and virtual lattice polytopes, we associate a lattice convex chain to a torus equivariant vector bundle on a toric variety and show that sum of values of this convex chain on lattice points gives the Euler characteristic of the bundle.",
+    "status": "found"
+  },
+  "2601.22515": {
+    "arxiv_id": "2601.22515",
+    "title": "DNA: Uncovering Universal Latent Forgery Knowledge",
+    "authors": [
+      "Jingtong Dou",
+      "Chuancheng Shi",
+      "Yemin Wang",
+      "Shiming Guo",
+      "Anqi Yi",
+      "Wenhua Wu",
+      "Li Zhang",
+      "Fei Shen",
+      "Tat-Seng Chua"
+    ],
+    "submission_date": "2026-01-30T03:48:30Z",
+    "latest_updated": "2026-01-30T03:48:30Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22515v1"
+    ],
+    "abstract": "As generative AI achieves hyper-realism, superficial artifact detection has become obsolete. While prevailing methods rely on resource-intensive fine-tuning of black-box backbones, we propose that forgery detection capability is already encoded within pre-trained models rather than requiring end-to-end retraining. To elicit this intrinsic capability, we propose the discriminative neural anchors (DNA) framework, which employs a coarse-to-fine excavation mechanism. First, by analyzing feature decoupling and attention distribution shifts, we pinpoint critical intermediate layers where the focus of the model logically transitions from global semantics to local anomalies. Subsequently, we introduce a triadic fusion scoring metric paired with a curvature-truncation strategy to strip away semantic redundancy, precisely isolating the forgery-discriminative units (FDUs) inherently imprinted with sensitivity to forgery traces. Moreover, we introduce HIFI-Gen, a high-fidelity synthetic benchmark built upon the very latest models, to address the lag in existing datasets. Experiments demonstrate that by solely relying on these anchors, DNA achieves superior detection performance even under few-shot conditions. Furthermore, it exhibits remarkable robustness across diverse architectures and against unseen generative models, validating that waking up latent neurons is more effective than extensive fine-tuning.",
+    "status": "found"
+  }
+}

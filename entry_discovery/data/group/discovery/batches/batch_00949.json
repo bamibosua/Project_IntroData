@@ -1,0 +1,418 @@
+{
+  "2609.16814": {
+    "arxiv_id": "2609.16814",
+    "title": "Can We Do Interpretable NLI with Graphs Based on Atomic Propositions?",
+    "authors": [
+      "Younes Boufouss",
+      "Luc Pommeret",
+      "Thomas Gerald",
+      "Patrick Paroubek",
+      "Sophie Rosset"
+    ],
+    "submission_date": "2026-09-15T08:20:20Z",
+    "latest_updated": "2026-09-17T09:19:48Z",
+    "revised_dates": null,
+    "venue": "AKBC @ EMNLP, ACL, Oct 2026, Budapest, Hungary",
+    "latest_version": 3,
+    "versions": [
+      "2609.16814v1",
+      "2609.16814v2",
+      "2609.16814v3"
+    ],
+    "abstract": "While Large Language Model (LLM)-based Natural Language Inference (NLI) systems achieve high accuracy, their decision-making processes lack auditable structures. This paper explores whether NLI can be performed using only interpretable, graph-based representations of evidence. We introduce a fully graph-based pipeline where the classifier never directly processes the input text. Instead, sentences are decomposed into atomic propositions, converted into ConceptNet triples via constrained decoding, and represented as three graphs per pair: premise, hypothesis, and a retrieved ConceptNet subgraph. These graphs are then fed into a fine-tuned 0.8-billion-parameter language model. On the SNLI dataset, our pipeline achieves 89.7% accuracy, just 1.9 points below an identically trained text-based model. On ANLI, it matches the published performance of RoBERTa-large on rounds R2 and R3 (48.0% vs. 48.9% and 44.9% vs. 44.4%) but trails by 16 points on R1, resulting in an overall gap of 9 to 14 points compared to its text counterpart. We term this gap the price of interpretability and demonstrate that it stems from representational limitations rather than data constraints. Ablation studies further reveal that graphs and text are complementary: combining both modalities achieves 92.1% accuracy on SNLI.",
+    "status": "found"
+  },
+  "2609.16815": {
+    "arxiv_id": "2609.16815",
+    "title": "Rethinking Visual Embodiment Dependence in Visuomotor Policies",
+    "authors": [
+      "Hongjie Fang",
+      "Yuxuan Lu",
+      "Chenxi Wang",
+      "Haoxiang Qin",
+      "Shirun Tang",
+      "Zihao He",
+      "Shangning Xia",
+      "Jingjing Chen",
+      "Wanxi Liu",
+      "Shiquan Wang",
+      "Cewu Lu"
+    ],
+    "submission_date": "2026-09-15T08:20:56Z",
+    "latest_updated": "2026-09-15T08:20:56Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16815v1"
+    ],
+    "abstract": "Visuomotor policies observe both the task scene and the acting embodiment, allowing embodiment-specific visual cues to influence action prediction. We study this phenomenon as visual embodiment dependence (VED) and show, through cue-conflict interventions across representative policies, that visible robot configuration can become a shortcut to task progress. Rather than eliminating VED, we argue that it should be structured around embodiment information that supports control and generalization. We realize this through embodiment canonicalization in 3D point clouds, replacing the original embodiment with a canonical end-effector representation (CER) that preserves control-relevant geometry while abstracting embodiment-specific morphology. Its editable form further enables configuration-decorrelation augmentation for unfamiliar robot configurations. Experiments show that embodiment canonicalization substantially improves human-to-robot policy transfer without robot demonstrations, while simply removing the embodiment is insufficient without preserving control-relevant geometry. We further find that CER itself can become a configuration shortcut when robot configuration becomes decoupled from task progress; configuration-decorrelation augmentation mitigates this failure mode and restores robust recovery without sacrificing performance on seen configurations. Together, these results show that robust visuomotor learning benefits from structuring, rather than removing, visual embodiment information. Project website: https://tonyfang.net/ved",
+    "status": "found"
+  },
+  "2609.16816": {
+    "arxiv_id": "2609.16816",
+    "title": "ImpossibleRubrics: Stress-Testing Generated Rubrics as Reward Signals",
+    "authors": [
+      "Bowen Qin",
+      "Yi Xie",
+      "Yesheng Liu",
+      "Xi Yang"
+    ],
+    "submission_date": "2026-09-15T08:21:40Z",
+    "latest_updated": "2026-09-15T08:21:40Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16816v1"
+    ],
+    "abstract": "Language model-generated rubrics are increasingly used as reward signals for rubric-based reinforcement learning, LLM-as-a-judge evaluation, and automated grading. Such rubrics are reliable only if they reward honest answers over adversarial answers optimized to exploit them. Yet their robustness to such optimization remains poorly understood. We isolate the hardest regime: impossible tasks, where the prompt pressures the model toward an unsupported conclusion, so the only honest response is to acknowledge the impossibility. We introduce ImpossibleRubrics, a benchmark of 169 impossible tasks spanning six impossibility categories, each paired with a verifiable oracle certificate specifying what an honest answer may and may not claim, together with 48 answerable controls. Rather than providing fixed rubrics, ImpossibleRubrics provides task environments and certificates, allowing rubrics to be generated downstream and then adversarially tested for whether they reward certificate-violating answers. Eleven generators are exploited 8--26% of the time on the unbiased 150-of-169 environment cut; on a deliberately selected stress cut the strongest generator we measured is still exploited 36% while a certificate-faithful rubric is exploited 0%, so what we measure is a rubric-quality gap, not task impossibility. One result runs against intuition. A single generic rubric (\"be decisive, penalize hedging\") used unchanged for every task is exploited 64% of the time, and seven of the eleven generators are exploited more often than that while writing a rubric tailored to each one. The tailored criteria appear to tell an attacker which claim to fabricate. The problem is not that rubrics are vague; it is that they are specific about the wrong things.",
+    "status": "found"
+  },
+  "2609.16817": {
+    "arxiv_id": "2609.16817",
+    "title": "Converter-Grid Interaction Stability Guaranteed Safe Deep Reinforcement Learning for Energy Storage Systems in Grid Frequency Support",
+    "authors": [
+      "Fei Liu",
+      "Mengfan Zhang",
+      "Zhipeng Li",
+      "Frede Blaabjerg",
+      "Qianwen Xu"
+    ],
+    "submission_date": "2026-09-15T08:22:05Z",
+    "latest_updated": "2026-09-15T08:22:05Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16817v1"
+    ],
+    "abstract": "The growing integration of converter interfaced renewable energy resources (RESs) intensifies stability challenges. Energy storage system (ESS) can provide fast and flexible frequency support to mitigate frequency deviations. However, the interface converter of ESS may encounter converter-grid interaction stability issues. This paper proposes a converter-grid interaction stability guaranteed safe DRL (CIS-DRL) method for ESS integrated power systems to achieve frequency regulation. We first obtain a double DNN-based stability region to identify the guaranteed converter-grid interaction stability. Next, a novel converter-grid interaction stability Safe-TD3 (CIS-STD3) algorithm is designed that integrates a stability feasibility projection layer to map unsafe actions into stable action set before execution, enforcing converter-grid interaction stability as a hard constraint throughout learning process. The proposed approach enables ESS for grid frequency support with 100% converter-grid interaction stability without violations. Experimental results show that the proposed CIS-DRL method achieves improved frequency regulation performance while preventing unstable operating points, demonstrating its practical applicability for real time ESS frequency support.",
+    "status": "found"
+  },
+  "2609.16818": {
+    "arxiv_id": "2609.16818",
+    "title": "InceptionRAG: Stealthy Poisoning Attack Against Retrieval-Augmented Generation",
+    "authors": [
+      "Jiachang Zhang",
+      "Min Chen",
+      "Xiao Ren",
+      "Zhenyong Zhang",
+      "Yuanchao Shu",
+      "Yunjun Gao",
+      "Zhikun Zhang"
+    ],
+    "submission_date": "2026-09-15T08:22:10Z",
+    "latest_updated": "2026-09-15T08:22:10Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16818v1"
+    ],
+    "abstract": "Retrieval-augmented generation (RAG) systems enhance large language models (LLMs) with external knowledge but have been demonstrated to be vulnerable to corpus poisoning. Existing poisoning attacks against RAG largely focus on single-point explicit injection, where the malicious payload is fully encapsulated within a single document. Consequently, recent mitigation mechanisms have evolved to identify and diminish these threats effectively. In this paper, we first verify that existing mitigation mechanisms are insufficient for a new class of threats: indirect logic induction. Motivated by this observation, we introduce InceptionRAG, a stealthy attack mechanism that subverts the standard attack paradigm. Instead of injecting explicit malicious payloads, InceptionRAG fragments it into a chain of dormant passages. These passages appear harmless and can bypass existing mitigation mechanisms when examined separately. However, when retrieved together, they trigger LLMs to self-deduce target misinformation via multi-hop reasoning. To further improve the applicability of InceptionRAG in black-box settings, we propose zeroth-order suffix optimization (ZOSO) to automate the generation of authoritative suffixes. Extensive evaluations across three datasets and three LLMs demonstrate that InceptionRAG achieves an attack success rate exceeding 80% even under rigorous adversarial constraints. In particular, InceptionRAG shows superior evasion capabilities, effectively bypassing established defenses that mitigate traditional single-document injections. Our findings expose a concerning paradox: the stronger reasoning capabilities of LLMs increase their vulnerability to reasoning-based poisoning attacks. To mitigate potential misuse, we propose a document isolation-based defense, HODOR, which decouples adversarial logical dependencies.",
+    "status": "found"
+  },
+  "2609.16819": {
+    "arxiv_id": "2609.16819",
+    "title": "Generation of pure spin currents via nonadiabatic quantum pumping in an antiferromagnetic chain",
+    "authors": [
+      "Leila Eslami",
+      "Fatemeh Bourbour",
+      "Somaieh Ahmadi",
+      "Santanu K. Maiti"
+    ],
+    "submission_date": "2026-09-15T08:23:17Z",
+    "latest_updated": "2026-09-15T08:23:17Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16819v1"
+    ],
+    "abstract": "In this study, quantum spin pumping in an antiferromagnetic chain driven by time-dependent potential is investigated. The aim is to explore the possibility of generating and controlling spin currents in the absence of external bias and to examine the role of exchange field and periodic driving in the separation of spin-up and spin-down currents. The system is described using a tight-binding model, and spin-resolved currents are calculated employing the Keldysh non-equilibrium Green's function formalism. Two time-dependent potentials with a specific phase difference are applied to the two ends of the chain, while the chemical potentials of both electrodes are set equal. The results demonstrate that in the adiabatic regime (low frequencies), the response of the two spin channels is nearly identical. However, as the driving frequency increases and the system enters the nonadiabatic regime, absorption and emission processes of energy quanta become activated, leading to significant differences between spin-up and spin-down currents. The pumped current exhibits strong dependence on the chemical potential, allowing for the control of both magnitude and direction of the spin current through its adjustment. With increasing frequency, the spin current enhances, and parameters can be tuned such that the charge current nearly vanishes while a considerable spin current persists. This finding indicates the feasibility of achieving nearly pure spin pumping without net charge transfer in the antiferromagnetic chain. The results provide a promising perspective for designing spin-pumping devices based on antiferromagnetic systems.",
+    "status": "found"
+  },
+  "2609.16820": {
+    "arxiv_id": "2609.16820",
+    "title": "High-intensity wave vortices in the beamoptics domain: 3D spatial structure, singleplane models, and their propagation properties",
+    "authors": [
+      "I. Mokhun",
+      "O. Angelsky",
+      "A. Bekshaev",
+      "Y. Galushko",
+      "Y. Viktorovskaya"
+    ],
+    "submission_date": "2026-09-15T08:23:17Z",
+    "latest_updated": "2026-09-15T08:23:17Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16820v1"
+    ],
+    "abstract": "Typically, vortices in wave fields are associated with amplitude zeros. In contrast, recently described high-intensity (Type II) wave vortices appear near amplitude poles and can exist only in disconnected space. We attempt to extend the concept of a Type II optical vortex (OV) to paraxial beam-like optical fields. It is shown that \"true\" Type II OV fields can exist only in a multiply connected three-dimensional space, where spatial \"holes\" impenetrable to the electromagnetic field are formed by purposefully created filamentary inclusions of material. However, the cross-section of a \"true\" Type II OV can be reproduced in a specific plane of ordinary \"free\" space, where the hole is designated by a region with zero amplitude. Methods for the practical creation of the discussed field structures are proposed, including methods using programmable light modulators and computer-synthesized holograms. The results of computer simulations demonstrate reasonable agreement with experimental data.",
+    "status": "found"
+  },
+  "2609.16821": {
+    "arxiv_id": "2609.16821",
+    "title": "Odd diffusion and power-law correlations in chiral mass-transport processes",
+    "authors": [
+      "Koushik Das",
+      "Animesh Hazra",
+      "Punyabrata Pradhan"
+    ],
+    "submission_date": "2026-09-15T08:24:27Z",
+    "latest_updated": "2026-09-15T08:24:27Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16821v1"
+    ],
+    "abstract": "We study mass-conserving Markov jump processes on a square lattice, where masses hop with a preferred rotational sense, thus breaking both time-reversal and mirror symmetries. We consider closed systems with both periodic and open (reflecting) boundaries, the latter supporting a steady-state edge current. We show that odd diffusion, arising from the chiral transport, generically provides a mechanism for the emergence of scale-invariant two-point density correlations in nonequilibrium steady states even in the presence of lattice rotation symmetry -- a mechanism that is qualitatively distinct from the well-known mechanism of anisotropic hopping. We exactly calculate the steady-state equal-time density-density correlations, which exhibit an algebraic decay, $C(\\mathbf{r}) \\sim |\\mathbf{r}|^{-4}$ for $|\\mathbf{r}| \\gg 1$. This algebraic behavior results from the interplay between the off-diagonal components of the diffusion and mobility tensors, demonstrating that chiral transport alone can generate power-law correlations in isotropic driven systems. Remarkably, the structure factor in the zero-wavenumber limit and the amplitude of the power laws depend nontrivially on chirality. While increasing chirality initially suppresses large-scale density fluctuations, the fluctuations beyond a threshold odd-diffusion strength vary nonmonotonically with chirality and develop a cusp singularity.",
+    "status": "found"
+  },
+  "2609.16822": {
+    "arxiv_id": "2609.16822",
+    "title": "Execution Flexibility in Automated Planning: A Comparative Evaluation of Deordering and Reordering Strategies",
+    "authors": [
+      "Md. Monjurul Islam",
+      "Sabah Binte Noor",
+      "Fazlul Hasan Siddiqui",
+      "Gahangir Hossain"
+    ],
+    "submission_date": "2026-09-15T08:24:32Z",
+    "latest_updated": "2026-09-15T08:24:32Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16822v1"
+    ],
+    "abstract": "This study covers foundational concepts for enhancing plan-execution flexibility, including partial-order planning, the producer-consumer-threat formalism, and a range of deordering and reordering strategies. Creating a partial-order plan from a sequential one by removing unnecessary ordering constraints is a practical way to improve execution flexibility, and several methods have been proposed for this task. This study analyzes their capabilities across ordering, action handling, parameter handling, plan structure, concurrency, and complexity, and evaluates them against each other on a shared benchmark. The central finding is that block deordering-based approaches, which restructure causal dependencies through block-level grouping and subplan substitution, substantially outperform MaxSAT-based approaches despite the latter's theoretical guarantees of minimum reordering. The reason is structural: minimum reordering optimizes within the causal structure already present in the plan, whereas block deordering-based methods change that structure, exposing orderings that would otherwise appear necessary. A further distinction is practical: block deordering-based methods are anytime algorithms that always return a valid result, while MaxSAT-based methods fail entirely on a substantial portion of plans and offer no partial solution when they do. Block substitution further extends the parallel execution by formalizing non-concurrency constraints, though its impact is limited to domains with resource-based interactions. On efficiency, block deordering-based approaches achieve the highest flex gain per unit of computation time, while MaxSAT-based encodings incur large computational overhead.",
+    "status": "found"
+  },
+  "2609.16823": {
+    "arxiv_id": "2609.16823",
+    "title": "LCAP: Population-Informed Latent Chip Adaptation from Few Output Probes for Photonic Neural Networks",
+    "authors": [
+      "Tianyu Gao",
+      "Guantian Zheng"
+    ],
+    "submission_date": "2026-09-15T08:25:14Z",
+    "latest_updated": "2026-09-15T08:25:14Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16823v1"
+    ],
+    "abstract": "Photonic neural networks (PNNs) offer efficient analog inference, but parameters optimized under ideal device models can degrade after fabrication, creating a persistent simulation-to-hardware (sim-to-real) gap. When many identically designed chips are deployed, calibrating each device from scratch compounds this cost. We propose Latent Chip Adaptation from Probes (LCAP), a population-informed framework that decomposes hardware adaptation into a transferable population correction and probe-inferred latent personalization. LCAP first learns a shared correction from 80 historical chips, then extracts a low-dimensional correction space from device-specific refinements. At deployment, 32 fixed unlabeled output probes infer an unseen chip's latent correction coordinates, enabling feed-forward personalization without target-device optimization. On a three-layer 64-mode MZI simulator with phase variation, beam-splitter errors, quantization, and crosstalk, accuracy improves from 80.4147% under direct deployment to 92.6860% after shared calibration and 93.3617% with LCAP. LCAP improves 27/30 unseen chips and raises worst-device accuracy from 89.18% to 90.54%.",
+    "status": "found"
+  },
+  "2609.16824": {
+    "arxiv_id": "2609.16824",
+    "title": "Adapting to Decision-Relevant Non-Stationarity in Decentralized Heterogeneous Bandits",
+    "authors": [
+      "Zhaojun Peng"
+    ],
+    "submission_date": "2026-09-15T08:25:36Z",
+    "latest_updated": "2026-09-15T08:25:36Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16824v1"
+    ],
+    "abstract": "Decentralized bandit systems often contain heterogeneous agents: rewards can change at individual agents even when the best action for the network stays the same. These local changes may cancel when rewards are averaged across agents, so the number of local changes $\\Stloc$ can be much larger than the number of changes in the best common arm $\\Stdec$. We introduce Decision-Relevant Fresh Comparison (DRFC), which uses new, balanced samples from all agents to compare arms at the network level and switches only when fresh global evidence indicates that the common best arm has changed. We prove a high-probability dynamic regret bound with no adaptation term depending on $\\Stloc$, and show that every algorithm must still pay for identifying genuine decision switches and propagating them through the communication graph. Under a distinct time-average benchmark, an anytime-valid sliding-window extension handles gradual drift; experiments on synthetic, semi-real, and MovieLens-1M replays show that DRFC ignores decision-irrelevant local changes while the extension avoids false switches.",
+    "status": "found"
+  },
+  "2609.16825": {
+    "arxiv_id": "2609.16825",
+    "title": "Orbital-angular-momentum partition in hydrogen photoionization by a monochromatic vortex beam",
+    "authors": [
+      "Zhongchen Xing",
+      "Chengyin Wu",
+      "Zheng Li",
+      "Marcelo F. Ciappina"
+    ],
+    "submission_date": "2026-09-15T08:26:17Z",
+    "latest_updated": "2026-09-15T08:26:17Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16825v1"
+    ],
+    "abstract": "Understanding how optical orbital angular momentum (OAM) is transferred to matter requires treating recoil and translational motion alongside the internal electronic dynamics. We develop a center-of-mass-resolved theory of one-photon ionization of hydrogen by a monochromatic Laguerre--Gaussian beam and show that the Bessel-vortex photoelectron predicted in fixed-target models is a preparation-dependent limit. For a sharply defined atomic center-of-mass momentum, the recoil records the photon-cone azimuth, and tracing over it generally destroys the coherence required for a pure electron vortex. In the small-transverse-retardation regime, the optical OAM is transferred predominantly to the center-of-mass motion and hence, in the laboratory frame, to the proton. Finite-retardation corrections redistribute angular momentum between center-of-mass and relative motion, while an additional correlation contribution to the electron and proton angular momenta can be tuned through the spatial uncertainty of the atomic center of mass. These results reveal atomic recoil as a key element of OAM transfer in photoionization.",
+    "status": "found"
+  },
+  "2609.16826": {
+    "arxiv_id": "2609.16826",
+    "title": "Testing a Pre-Supernova Contribution to $^{44}$Ti in Cassiopeia A",
+    "authors": [
+      "Toshiki Sato",
+      "Joshua Issa",
+      "Falk Herwig",
+      "Yui Kuboike",
+      "J. Martin Laming",
+      "Kai Matsunaga",
+      "Ryo Sawada"
+    ],
+    "submission_date": "2026-09-15T08:26:47Z",
+    "latest_updated": "2026-09-15T08:26:47Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16826v1"
+    ],
+    "abstract": "The radioactive isotope $^{44}$Ti in Cassiopeia A has been used as a tracer of the innermost ejecta and explosion asymmetries in core-collapse supernova explosions. However, recent stellar-evolution models suggest substantial $^{44}$Ti may also be synthesized prior to explosion during oxygen-carbon (O-C) shell mergers, a process proposed for the Cas A progenitor. We investigate this pre-supernova contribution by combining NuSTAR measurements of the spatial and kinematic distribution of $^{44}$Ti with X-ray and infrared ejecta diagnostics. The low- and intermediate-velocity $^{44}$Ti components are more closely associated with O-layer tracers than with shocked Fe-rich material. If the $^{44}$Ti associated with the O-layer tracers was synthesized prior to core collapse, it could contribute up to $\\sim7\\times10^{-5}~M_\\odot$, about half of the total. We find that this amount of $^{44}$Ti can be produced in O-C shell-merger models with ingestion rates and convective velocities higher than those in standard one-dimensional stellar-evolution calculations. Stable Fe-group abundance ratios measured with XRISM provide an additional constraint on the explosive contribution, as three-dimensional models with larger $^{44}$Ti yields tend to predict Ti/Fe and Mn/Cr ratios above the observed values. These results suggest that both pre-supernova shell-merger nucleosynthesis and explosive burning contribute to the observed $^{44}$Ti.",
+    "status": "found"
+  },
+  "2609.16827": {
+    "arxiv_id": "2609.16827",
+    "title": "Information Geometric Self-Organization at the Edge of Stability in High-Capacity Kernel Associative Memories",
+    "authors": [
+      "Akira Tamamori"
+    ],
+    "submission_date": "2026-09-15T08:27:55Z",
+    "latest_updated": "2026-09-25T03:56:55Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 4,
+    "versions": [
+      "2609.16827v1",
+      "2609.16827v2",
+      "2609.16827v3",
+      "2609.16827v4"
+    ],
+    "abstract": "High-capacity associative memories based on Kernel Logistic Regression (KLR) exhibit exceptional storage capabilities and robustness. Previous empirical studies identified a hyperparameter regime, the \"Ridge of Optimization,\" where attractor stability is maximized. However, the geometric nature of this regime and the optimization dynamics required to reach it have remained unclear. In this paper, we investigate the static geometry of the parameter space and the learning trajectory of Gradient Descent (GD) in KLR-trained Hopfield networks. Using the eigenvalue spectrum of the Hessian, we reveal that the Ridge corresponds to a phase boundary located adjacent to a rank-1 spectral collapse, acting as a geometric singularity where the principal curvature is massively amplified. Furthermore, we demonstrate that the learning dynamics exhibit a transient self-stabilizing behavior driven by the Edge of Stability (EoS) phenomenon. Rather than seeking flat regions, the network parameters are driven toward a state where the local curvature dynamically equilibrates near the stability limit dictated by the learning rate, allowing the optimization to survive the initial instability. We provide analytical derivations for both the rank-1 asymptotic collapse and the dynamic feedback loop governing this equilibration. These findings suggest that optimal, high-capacity memory representations are not formed in flat minima, but are dynamically sculpted at the highly curved boundaries of geometric singularities.",
+    "status": "found"
+  },
+  "2609.16828": {
+    "arxiv_id": "2609.16828",
+    "title": "Impedance-Aware Optimized Pulse Patterns for Reconfigurable Battery Systems",
+    "authors": [
+      "Julian Estaller",
+      "Johannes Buberger",
+      "Andreas Wiedenmann",
+      "Wolfgang Grupp",
+      "Tobias Hoegerl",
+      "Thomas Weyh"
+    ],
+    "submission_date": "2026-09-15T08:29:06Z",
+    "latest_updated": "2026-09-15T08:29:06Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16828v1"
+    ],
+    "abstract": "Reconfigurable battery systems (RBS) synthesize the converter output voltage by inserting and bypassing battery cell groups, so every switching state changes not only the source voltage but also the source impedance. This paper shows that this configuration-dependent impedance breaks a tacit assumption of optimized pulse patterns (OPP): patterns designed with the customary linear plant model overestimate their achievable current quality by up to an order of magnitude and converge to a distortion floor set by the resistance modulation. We propose impedance-aware optimized pulse patterns (IA-OPP), which embed the level-dependent source impedance in the optimization objective, combined with an event-budget formulation that treats the reconfiguration rate of the communication bus as a managed resource. An exact closed-form evaluation of the piecewise-exponential load current renders the objective smooth in the switching instants. In a simulated cascaded-bridge reference system, IA-OPP attains 0.52% current total harmonic distortion (THD) at a reconfiguration rate of 2.4 kHz, outperforming nearest-level modulation, phase-shifted carrier pulse-width modulation (PWM) at up to five times the switching rate, and a classical OPP baseline at every event budget; the advantage persists across the modulation-index range and under +/-30% parameter mismatch. For three-wire star-connected systems, masking triplen orders in the objective restores the full advantage, with the impedance-aware patterns beating their linear-model counterparts by about 20% at equal budget.",
+    "status": "found"
+  },
+  "2609.16829": {
+    "arxiv_id": "2609.16829",
+    "title": "Penalty-Uniform Localization for State-Constrained Policy Iteration",
+    "authors": [
+      "Yeongjong Kim",
+      "Jiwoong Jang",
+      "Yeoneung Kim"
+    ],
+    "submission_date": "2026-09-15T08:29:13Z",
+    "latest_updated": "2026-09-15T08:29:13Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16829v1"
+    ],
+    "abstract": "Penalizing a state constraint creates a singular localization problem: whole-space values may grow like the inverse penalty parameter, while numerical diffusion allows even an inward feedback to cross the boundary. For deterministic discounted optimal control, we show how the penalty itself supplies confinement that offsets this growth. With mesh size $h$ and penalty parameter $\\varepsilon$, an inward barrier bounds the additional cost of numerical leakage by $O(h/\\varepsilon)$ for a monotone centered-difference scheme with vanishing viscosity. Under $h\\le\\varepsilon$, an occupation estimate then yields $O(h)$ localization error with a sufficient box margin logarithmic in $1/h$ and independent of $\\varepsilon$. We extend the result to bounded squared-distance penalties and combine it with residual-based evaluation bounds and discounted policy-error propagation. Under coupled refinement with vanishing penalization and discretization errors, explicit conditions on evaluation errors and greedy gaps ensure convergence of the neural value approximations to the constrained value, allowing measurable, nonunique greedy selectors. Reference calculations isolate leakage and localization across mesh and penalty scales, and distinguish evaluation, iteration, and approximation errors. An explicit cylindrical state-constraint solution provides a benchmark in arbitrary dimension, tested up to dimension twenty. Paired obstacle-navigation experiments illustrate why policy-value accuracy must be assessed alongside sampled residuals when comparing raw-residual and finite-grid-assisted neural evaluation.",
+    "status": "found"
+  },
+  "2609.16830": {
+    "arxiv_id": "2609.16830",
+    "title": "Bilinearity Preserving Algebraic Flux Correction",
+    "authors": [
+      "Sarthak Sourav Dash",
+      "Abhinav Jha"
+    ],
+    "submission_date": "2026-09-15T08:29:39Z",
+    "latest_updated": "2026-09-15T08:29:39Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16830v1"
+    ],
+    "abstract": "Algebraic flux correction schemes for convection--diffusion--reaction equations rely on linearity preservation to avoid unnecessary artificial diffusion: the limiter is inactive whenever the discrete solution is affine. On quadrilateral and hexahedral meshes, this is insufficient, since the finite element space also contains bilinear functions that are reproduced exactly on axis-aligned meshes. We show that a mesh patch admits bilinearity preservation if and only if the central node lies in the convex hull of its neighbours after lifting each neighbour by the product of its coordinate differences, and we derive a sharp explicit value for the limiter parameter on such patches when the cell edges are parallel to the coordinate axes. We further characterize the meshes on which a mapped bilinear finite element space reproduces a bilinear function exactly, thereby establishing a fundamental limitation on what any limiter can achieve on general quadrilaterals. Numerical experiments confirm the theory: on axis-aligned grids, the proposed limiter reproduces a bilinear solution to the accuracy of the nonlinear iteration, whereas the linearity-preserving limiter does not. A sensitivity study shows that the parameter required for bilinearity preservation lies close to the upper end of the range for which the nonlinear problem can be solved by the fixed-point iteration considered here.",
+    "status": "found"
+  },
+  "2609.16831": {
+    "arxiv_id": "2609.16831",
+    "title": "Pinching-Antenna System With Movable Waveguides: Modeling and Optimization",
+    "authors": [
+      "Jingze Ding",
+      "Zijian Zhou",
+      "Bingli Jiao",
+      "Rui Zhang"
+    ],
+    "submission_date": "2026-09-15T08:29:48Z",
+    "latest_updated": "2026-09-15T08:29:48Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16831v1"
+    ],
+    "abstract": "This paper proposes a movable waveguide (MW)-enabled pinching-antenna system (PASS), in which each waveguide is connected via a flexible cable and can be linearly moved by drivers. By simultaneously moving the MWs and the pinching antennas (PAs) on them, MW-enabled PASS can effectively track user locations and form flexible array geometries for efficient beamforming. We first examine the special case with a single user and derive the closed-form solutions for the optimal MW positions as well as an upper bound on the user rate. Furthermore, we develop a two-step optimization algorithm to maximize the achievable rate for the user, where the first step determines the optimal MW positions using the derived closed-form solutions, and the second step alternately optimizes the PA positions through a one-dimensional (1D) local search based on the user location. Then, for the general multi-user scenario, we derive the upper bounds on the minimum rate among all users. To maximize their minimum rate, we propose a low-complexity two-scale optimization algorithm, where the large-scale global search coarsely determines the MW and PA positions, followed by a small-scale local search to finely tune them. In addition, a two-timescale optimization scheme based on statistical channel information is investigated to reduce the mechanical movement overhead of the MWs. Simulation results demonstrate that the proposed scheme achieves performance close to the derived bounds. It also flexibly adapts to different user distributions compared with the conventional PASS employing dense or sparse fixed-position waveguides (FPWs), as well as fixed-position antenna (FPA) schemes.",
+    "status": "found"
+  },
+  "2609.16832": {
+    "arxiv_id": "2609.16832",
+    "title": "What Breaks Local Watermarks? A Robustness Benchmark for Local Invisible Image Watermarking",
+    "authors": [
+      "Kai Yao",
+      "Bence Szilágyi",
+      "Sebestyén Kamp",
+      "Máté Poór",
+      "Máté Szilveszter",
+      "Matyas K. Zsoldos",
+      "Marc Juarez"
+    ],
+    "submission_date": "2026-09-15T08:30:39Z",
+    "latest_updated": "2026-09-15T08:30:39Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16832v1"
+    ],
+    "abstract": "Local image watermarking embeds an invisible signal into selected image regions rather than spreading it across the entire image, enabling payload recovery from specific objects or regions without perceptibly altering the image. Existing studies evaluate the robustness of payload recovery and localization under image transformations, but they often focus on their own proposed method, resulting in narrow evaluations with inconsistent choices of transformations, datasets, and metrics. These inconsistencies across studies limit direct comparisons across methods and muddle the overall picture of local watermark robustness. To address this gap, we present the first systematic robustness benchmark for local watermarks across 55 image transformations, including (i) signal distortions, (ii) changes in image coordinate alignment, (iii) indirect local edits, and (iv) direct watermark edits. The benchmark evaluates MaskWM, WAM, OmniGuard, TrustMark, and PixelSeal, all methods that either provide native localization or require minimal adaptation to support it. Our results show that all evaluated methods are vulnerable to some transformation, with MaskWM standing out as offering the strongest payload recovery and localization, although it has the lowest image quality in the clean setting. Synchronization further improves MaskWM's payload recovery under several geometric transformations, albeit at an additional cost to image quality. A key finding is that local watermark robustness depends strongly on the nature of the transformation: signal distortions are often tolerated by the strongest methods, while geometric misalignment and generative local edits, such as inpainting and outpainting, can completely impair payload recovery. We observe that payload recovery and localization are related but not interchangeable, and both strongly depend on the transformation's impact on the watermark region.",
+    "status": "found"
+  },
+  "2609.16833": {
+    "arxiv_id": "2609.16833",
+    "title": "Bringing Engineering into the Physics Lab: Exploring Crank-Slider Dynamics with Smartphones",
+    "authors": [
+      "Josep Ll. Suñer",
+      "Rod Milbrandt",
+      "Juan C. Castro-Palacio",
+      "Alfonso Merchante",
+      "Francisco M. Muñoz-Peréz",
+      "Juan A. Monsoriu"
+    ],
+    "submission_date": "2026-09-15T08:30:52Z",
+    "latest_updated": "2026-09-15T08:30:52Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16833v1"
+    ],
+    "abstract": "Many of the students enrolled in the calculus-based physics sequence are pursuing engineering degrees. Lab activities that have a direct connection to engineering, analyzed with the physics they have been studying, can grab students' interest and provide a real-world connection. All the better if the equipment is inexpensive and partly self-built. In addition, we wanted to use smartphones as data collection devices. Smartphones have become valuable tools for physics education because they provide an accessible and inexpensive means of experimental data acquisition through their built-in sensors. Several free applications, such as Physics Toolbox and phyphox, facilitate sensor-based data collection and analysis, making it possible to perform meaningful laboratory activities without expensive equipment. We chose to use a simple crank-slider mechanism for our activity. The crank-slider converts rotary motion into linear motion and has common applications in such things as internal combustion engines and compressors. Educational studies have shown that slider-crank mechanisms and related mechanical devices provide effective contexts for introducing engineering concepts and connecting theoretical models with practical applications. In our implementation, a rotary motor drives a disk connected by a rod to a cart moving along an air track. Students investigate the resulting motion using smartphone data acquisition and video analysis. Experimental measurements are then compared with the predictions of a mathematical model derived from the geometry of the system.",
+    "status": "found"
+  }
+}

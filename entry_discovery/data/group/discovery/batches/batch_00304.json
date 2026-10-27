@@ -1,0 +1,408 @@
+{
+  "2601.19236": {
+    "arxiv_id": "2601.19236",
+    "title": "VC-Bench: Pioneering the Video Connecting Benchmark with a Dataset and Evaluation Metrics",
+    "authors": [
+      "Zhiyu Yin",
+      "Zhipeng Liu",
+      "Kehai Chen",
+      "Lemao Liu",
+      "Jin Liu",
+      "Hong-Dong Li",
+      "Yang Xiang",
+      "Min Zhang"
+    ],
+    "submission_date": "2026-01-27T06:15:12Z",
+    "latest_updated": "2026-01-27T06:15:12Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19236v1"
+    ],
+    "abstract": "While current video generation focuses on text or image conditions, practical applications like video editing and vlogging often need to seamlessly connect separate clips. In our work, we introduce Video Connecting, an innovative task that aims to generate smooth intermediate video content between given start and end clips. However, the absence of standardized evaluation benchmarks has hindered the development of this task. To bridge this gap, we proposed VC-Bench, a novel benchmark specifically designed for video connecting. It includes 1,579 high-quality videos collected from public platforms, covering 15 main categories and 72 subcategories to ensure diversity and structure. VC-Bench focuses on three core aspects: Video Quality Score VQS, Start-End Consistency Score SECS, and Transition Smoothness Score TSS. Together, they form a comprehensive framework that moves beyond conventional quality-only metrics. We evaluated multiple state-of-the-art video generation models on VC-Bench. Experimental results reveal significant limitations in maintaining start-end consistency and transition smoothness, leading to lower overall coherence and fluidity. We expect that VC-Bench will serve as a pioneering benchmark to inspire and guide future research in video connecting. The evaluation metrics and dataset are publicly available at: https://anonymous.4open.science/r/VC-Bench-1B67/.",
+    "status": "found"
+  },
+  "2601.19237": {
+    "arxiv_id": "2601.19237",
+    "title": "Automatic Synthesis of Visualization Design Knowledge Bases",
+    "authors": [
+      "Hyeok Kim",
+      "Sehi L'Yi",
+      "Nils Gehlenborg",
+      "Jeffrey Heer"
+    ],
+    "submission_date": "2026-01-27T06:16:12Z",
+    "latest_updated": "2026-01-27T06:16:12Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19237v1"
+    ],
+    "abstract": "Formal representations of the visualization design space, such as knowledge bases and graphs, consolidate design practices into a shared resource and enable automated reasoning and interpretable design recommendations. However, prior approaches typically depend on fixed, manually authored rules, making it difficult to build novel representations or extend them for different visualization domains. Instead, we propose data-driven methods that automatically synthesize visualization design knowledge bases. Specifically, our methods (1) extract candidate design features from a visualization corpus, (2) select features forward and backward, and (3) render the final knowledge base. In our benchmark evaluation compared to Draco 2, our synthesized knowledge base offers general and interpretable design features and improves the accuracy of predicting effective designs by 1-15% in varied training and test sets. When we apply our approach to genomics visualization, the synthesized knowledge base includes sensible features with accuracy up to 97%, demonstrating the applicability of our approach to other visualization domains.",
+    "status": "found"
+  },
+  "2601.19238": {
+    "arxiv_id": "2601.19238",
+    "title": "A Hybrid BLE-Wi-Fi Communication Architecture for Adaptive Imaging in Wireless Capsule Endoscopy",
+    "authors": [
+      "Ziyao Zhou",
+      "Zhuoran Sun",
+      "Chen Shen",
+      "Xinyi Shen",
+      "Zhehao Lu",
+      "Sikkandar",
+      "Hen-Wei Huang"
+    ],
+    "submission_date": "2026-01-27T06:18:50Z",
+    "latest_updated": "2026-01-27T06:18:50Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19238v1"
+    ],
+    "abstract": "Wireless capsule endoscopy (WCE) is fundamentally constrained by limited wireless bandwidth, resulting in low imaging resolution and frame rate, which can cause motion blur and missed lesions. Although adaptive frame-rate schemes have been explored to accommodate transient gastrointestinal (GI) motility, these approaches typically require sacrificing image resolution. The use of higher-frequency communication bands is further limited by increased tissue attenuation. To address these challenges, we propose a hybrid Bluetooth Low Energy (BLE) and WiFi communication architecture that combines the low-power operation of BLE with the high data throughput of WiFi. We systematically evaluate the performance of BLE and WiFi under tissue-mimicking conditions by measuring throughput, received signal strength indicator (RSSI), and power consumption. The results demonstrate that amplified BLE with an adaptive transmission power control strategy provides a stable frame rate at low power consumption, while 2.4 GHz WiFi operating in station mode is the most suitable high-throughput communication configuration for WCE. Compared with WiFi, BLE reduces power consumption by approximately ten times, whereas WiFi achieves up to ten times higher throughput. To reconcile these complementary trade-offs, we further introduce a hybrid system with a frame-boundary-synchronized switching mechanism to ensure lossless data transmission during BLE and WiFi transitions. Experimental results show that the switching latency from BLE to WiFi is approximately 92.66 ms, which is longer than the WiFi-to-BLE switching latency of 15.49 ms when transmitting 10 kB image payloads. Overall, the proposed hybrid BLE and WiFi system enables robust, lossless, and energy-efficient mode switching, supports adaptive imaging, and advances the development of next-generation autonomous WCE platforms.",
+    "status": "found"
+  },
+  "2601.19239": {
+    "arxiv_id": "2601.19239",
+    "title": "LLM-based Vulnerability Detection at Project Scale: An Empirical Study",
+    "authors": [
+      "Fengjie Li",
+      "Jiajun Jiang",
+      "Dongchi Chen",
+      "Yingfei Xiong"
+    ],
+    "submission_date": "2026-01-27T06:20:00Z",
+    "latest_updated": "2026-09-25T00:32:44Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.19239v1",
+      "2601.19239v2"
+    ],
+    "abstract": "As software complexity grows, automated vulnerability detection becomes increasingly important. Recent LLM-based detectors combine semantic reasoning with static analysis for project-scale scanning, but their practical effectiveness and failure causes remain unclear. We present the first comprehensive empirical study of specialized LLM-based detectors at project scale, evaluating five specialized methods, two general-purpose agents, and four traditional static analyzers on 265 known C/C++ and Java vulnerabilities and 24 active open-source projects/modules. Using Codex-assisted labeling with stratified manual validation, we analyze 6,442 sampled warnings and classify 5,896 false positives using a taxonomy derived from 355 manually inspected reports. Our study yields three findings. First, general-purpose agents achieve the highest recall but struggle with complex code, while both LLM-based and traditional methods suffer from incomplete API modeling. Second, many tools exhibit high false discovery rates on real-world projects/modules. Truncated interprocedural context and incorrect program-point classification are the dominant false-positive causes, with LLM-based tools exhibiting additional reasoning and prompt-compliance failures. Third, LLM-based methods incur substantial costs: hundreds of thousands to hundreds of millions of tokens, API charges exceeding $1,000 per project/module, and runtimes ranging from hours to days. These findings reveal limitations in the robustness, reliability, and scalability of current detectors and inform directions for more effective and practical project-scale vulnerability detection.",
+    "status": "found"
+  },
+  "2601.19240": {
+    "arxiv_id": "2601.19240",
+    "title": "Symmetry Adapted Analysis of Screw Dislocation: Electronic Structure and Carrier Recombination Mechanisms in GaN",
+    "authors": [
+      "Yuncheng Xie",
+      "Haozhe Shi",
+      "Menglin Huang",
+      "Weibin Chu",
+      "Shiyou Chen",
+      "Xin-Gao Gong"
+    ],
+    "submission_date": "2026-01-27T06:22:03Z",
+    "latest_updated": "2026-04-22T14:48:53Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.19240v1",
+      "2601.19240v2"
+    ],
+    "abstract": "As fundamental one-dimensional defects, screw dislocations profoundly reshape the energy landscape and carrier dynamics of crystalline materials. By restoring the exact algebra of the screw dislocation group, we unveil the latent symmetry constraints that govern the electronic structure, providing a more rigorous physical picture than the conventional treatments. When applied to GaN, the method yields a band-connectivity constraint and rigorous dipole selection rules for polarization-resolved transitions. Combined with computed Hamiltonian matrix, the approach gives symmetry-filtered radiative and dielectric calculations and reveals a piezoelectrical effect at the dislocation core that strongly suppresses radiative recombination. The pronounced dominance of non-radiative capture over radiative recombination highlights the detrimental impact of screw dislocations on the luminous efficiency of GaN, providing a theoretical foundation for optimizing dislocation-limited optoelectronic devices.",
+    "status": "found"
+  },
+  "2601.19241": {
+    "arxiv_id": "2601.19241",
+    "title": "Reevaluating Bluetooth Low Energy for Ingestible Electronics",
+    "authors": [
+      "Ziyao Zhou",
+      "Zhuoran Sun",
+      "Xinyi Shen",
+      "Tianming Zhou",
+      "Yang Li",
+      "Rong Tan",
+      "Chen Shen",
+      "Tiancheng Cao",
+      "Hen-Wei Huang"
+    ],
+    "submission_date": "2026-01-27T06:26:54Z",
+    "latest_updated": "2026-09-08T14:43:43Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.19241v1",
+      "2601.19241v2"
+    ],
+    "abstract": "Bluetooth Low Energy (BLE) is widely used in wearable devices but has rarely been considered for ingestible electronics because of severe tissue attenuation at 2.4 GHz. In this work, we systematically reevaluate BLE for ingestible applications by benchmarking it against representative Sub-GHz schemes in terms of tissue attenuation, power consumption, throughput, reliability, bidirectional communication, latency, and system integration. Water-phantom and in vivo measurements confirm stronger attenuation at 2.4 GHz, by approximately 40 dB; however, front-end-module (FEM)-assisted BLE compensates for this loss while maintaining practical received signal levels and energy efficiency. For ingestible sensing applications requiring below 100 kbps, BLE with a 20 dBm transmission power achieves lower power consumption than the evaluated Sub-GHz alternatives. BLE also provides protocol-level reliability through retransmission and in-order packet delivery, whereas Sub-GHz links can suffer packet loss under high attenuation. In addition, BLE supports bidirectional communication with limited throughput degradation, while the evaluated Sub-GHz implementation shows a substantial reduction. End-to-end measurements further demonstrate lower BLE latency because of its native compatibility with modern computing infrastructure. Finally, BLE offers advantages in antenna form factor, ecosystem support, and system integration. These results demonstrate that properly configured BLE is a practical communication solution for next-generation ingestible electronics.",
+    "status": "found"
+  },
+  "2601.19242": {
+    "arxiv_id": "2601.19242",
+    "title": "Intersections of Cantor sets with hyperbolas and continuous images",
+    "authors": [
+      "Yi Cai",
+      "Xiu Chen",
+      "Lipeng Wang"
+    ],
+    "submission_date": "2026-01-27T06:27:09Z",
+    "latest_updated": "2026-01-27T06:27:09Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19242v1"
+    ],
+    "abstract": "Given $λ\\in (0,1/2)$, let \\begin{equation*} C_λ=\\set{(1-λ)\\sum_{i=1}^\\infty d_iλ^{i-1}:d_i\\in\\set{0,1}} \\end{equation*} be the middle Cantor sets with convex hull $[0, 1]$. We are interested in the set $S_t=\\set{(x,y)\\in C_λ\\times C_λ: xy=t}$, where $t\\in[0,1]$. Since the cases where $t=0$ or $t=1$ are trivial, we assume that $t\\in(0,1)$ in what follows. We show that there exists a $λ_0=0.4302$ such that for all $λ$ satisfying $λ_0 \\le λ< 1/2$, the set $S_t$ has the cardinality of the continuum for every $t \\in (0,1)$. Besides, we further investigate the continuous image of $C_λ\\times C_λ$, that is, for any given $2\\le k\\in \\nn$, we give a sufficient condition for set $\\set{x^ky:x,y\\in C_λ}$ to be the interval $[0,1]$. Our observations reveal that the behavior exhibited by the image of the function $f_k(x,y)=x^ky$ is complex and depends on the parameters $k$ and $λ$.",
+    "status": "found"
+  },
+  "2601.19243": {
+    "arxiv_id": "2601.19243",
+    "title": "Contrast-Source-Based Physics-Driven Neural Network for Inverse Scattering Problems",
+    "authors": [
+      "Yutong Du",
+      "Zicheng Liu"
+    ],
+    "submission_date": "2026-01-27T06:27:56Z",
+    "latest_updated": "2026-01-27T06:27:56Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19243v1"
+    ],
+    "abstract": "Deep neural networks (DNNs) have recently been applied to inverse scattering problems (ISPs) due to their strong nonlinear mapping capabilities. However, supervised DNN solvers require large-scale datasets, which limits their generalization in practical applications. Untrained neural networks (UNNs) address this issue by updating weights from measured electric fields and prior physical knowledge, but existing UNN solvers suffer from long inference time. To overcome these limitations, this paper proposes a contrast-source-based physics-driven neural network (CSPDNN), which predicts the induced current distribution to improve efficiency and incorporates an adaptive total variation loss for robust reconstruction under varying contrast and noise conditions. The improved imaging performance is validated through comprehensive numerical simulations and experimental data.",
+    "status": "found"
+  },
+  "2601.19244": {
+    "arxiv_id": "2601.19244",
+    "title": "Physics-Informed Neuro-Symbolic Recommender System: A Dual-Physics Approach for Personalized Nutrition",
+    "authors": [
+      "Chayan Banerjee"
+    ],
+    "submission_date": "2026-01-27T06:28:24Z",
+    "latest_updated": "2026-01-27T06:28:24Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19244v1"
+    ],
+    "abstract": "Traditional e-commerce recommender systems primarily optimize for user engagement and purchase likelihood, often neglecting the rigid physiological constraints required for human health. Standard collaborative filtering algorithms are structurally blind to these hard limits, frequently suggesting bundles that fail to meet specific total daily energy expenditure and macronutrient balance requirements. To address this disconnect, this paper introduces a Physics-Informed Neuro-Symbolic Recommender System that integrates nutritional science directly into the recommendation pipeline via a dual-layer architecture. The framework begins by constructing a semantic knowledge graph using sentence-level encoders to strictly align commercial products with authoritative nutritional data. During the training phase, an implicit physics regularizer applies a differentiable thermodynamic loss function, ensuring that learned latent embeddings reflect nutritional plausibility rather than simple popularity. Subsequently, during the inference phase, an explicit physics optimizer employs simulated annealing and elastic quantity optimization to generate discrete grocery bundles that strictly adhere to the user's protein and caloric targets.",
+    "status": "found"
+  },
+  "2601.19245": {
+    "arxiv_id": "2601.19245",
+    "title": "Beyond In-Domain Detection: SpikeScore for Cross-Domain Hallucination Detection",
+    "authors": [
+      "Yongxin Deng",
+      "Zhen Fang",
+      "Sharon Li",
+      "Ling Chen"
+    ],
+    "submission_date": "2026-01-27T06:28:35Z",
+    "latest_updated": "2026-02-19T03:16:24Z",
+    "revised_dates": null,
+    "venue": "In Proceedings of the Fourteenth International Conference on Learning Representations (ICLR 2026)",
+    "latest_version": 5,
+    "versions": [
+      "2601.19245v1",
+      "2601.19245v2",
+      "2601.19245v3",
+      "2601.19245v4",
+      "2601.19245v5"
+    ],
+    "abstract": "Hallucination detection is critical for deploying large language models (LLMs) in real-world applications. Existing hallucination detection methods achieve strong performance when the training and test data come from the same domain, but they suffer from poor cross-domain generalization. In this paper, we study an important yet overlooked problem, termed generalizable hallucination detection (GHD), which aims to train hallucination detectors on data from a single domain while ensuring robust performance across diverse related domains. In studying GHD, we simulate multi-turn dialogues following LLMs' initial response and observe an interesting phenomenon: hallucination-initiated multi-turn dialogues universally exhibit larger uncertainty fluctuations than factual ones across different domains. Based on the phenomenon, we propose a new score SpikeScore, which quantifies abrupt fluctuations in multi-turn dialogues. Through both theoretical analysis and empirical validation, we demonstrate that SpikeScore achieves strong cross-domain separability between hallucinated and non-hallucinated responses. Experiments across multiple LLMs and benchmarks demonstrate that the SpikeScore-based detection method outperforms representative baselines in cross-domain generalization and surpasses advanced generalization-oriented methods, verifying the effectiveness of our method in cross-domain hallucination detection.",
+    "status": "found"
+  },
+  "2601.19246": {
+    "arxiv_id": "2601.19246",
+    "title": "Magnetic Resonance Simulation of Effective Transverse Relaxation (T2*)",
+    "authors": [
+      "Hidenori Takeshima"
+    ],
+    "submission_date": "2026-01-27T06:28:52Z",
+    "latest_updated": "2026-01-27T06:28:52Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19246v1"
+    ],
+    "abstract": "Purpose: To simulate effective transverse relaxation ($T_2^*$) as a part of MR simulation. $T_2^*$ consists of reversible ($T_2^{\\prime}$) and irreversible ($T_2$) components. Whereas simulations of $T_2$ are easy, $T_2^{\\prime}$ is not easily simulated if only magnetizations of individual isochromats are simulated. Theory and Methods: Efficient methods for simulating $T_2^{\\prime}$ were proposed. To approximate the Lorentzian function of $T_2^{\\prime}$ realistically, conventional simulators require 100+ isochromats. This approximation can be avoided by utilizing a linear phase model for simulating an entire Lorentzian function directly. To represent the linear phase model, the partial derivatives of the magnetizations with respect to the frequency axis were also simulated. To accelerate the simulations with these partial derivatives, the proposed methods introduced two techniques: analytic solutions, and combined transitions. For understanding the fundamental mechanism of the proposed method, a simple one-isochromat simulation was performed. For evaluating realistic cases, several pulse sequences were simulated using two phantoms with and without $T_2^{\\prime}$ simulations. Results: The one-isochromat simulation demonstrated that $T_2^{\\prime}$ simulations were possible. In the realistic cases, $T_2^{\\prime}$ was recovered as expected without using 100+ isochromats for each point. The computational times with $T_2^{\\prime}$ simulations were only 2.0 to 2.7 times longer than those without $T_2^{\\prime}$ simulations. When the above-mentioned two techniques were utilized, the analytic solutions accelerated 19 times, and the combined transitions accelerated up to 17 times. Conclusion: Both theory and results showed that the proposed methods simulated $T_2^{\\prime}$ efficiently by utilizing a linear model with a Lorentzian function, analytic solutions, and combined transitions.",
+    "status": "found"
+  },
+  "2601.19247": {
+    "arxiv_id": "2601.19247",
+    "title": "TIGaussian: Disentangle Gaussians for Spatial-Awared Text-Image-3D Alignment",
+    "authors": [
+      "Jiarun Liu",
+      "Qifeng Chen",
+      "Yiru Zhao",
+      "Minghua Liu",
+      "Baorui Ma",
+      "Sheng Yang"
+    ],
+    "submission_date": "2026-01-27T06:30:32Z",
+    "latest_updated": "2026-01-27T06:30:32Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19247v1"
+    ],
+    "abstract": "While visual-language models have profoundly linked features between texts and images, the incorporation of 3D modality data, such as point clouds and 3D Gaussians, further enables pretraining for 3D-related tasks, e.g., cross-modal retrieval, zero-shot classification, and scene recognition. As challenges remain in extracting 3D modal features and bridging the gap between different modalities, we propose TIGaussian, a framework that harnesses 3D Gaussian Splatting (3DGS) characteristics to strengthen cross-modality alignment through multi-branch 3DGS tokenizer and modality-specific 3D feature alignment strategies. Specifically, our multi-branch 3DGS tokenizer decouples the intrinsic properties of 3DGS structures into compact latent representations, enabling more generalizable feature extraction. To further bridge the modality gap, we develop a bidirectional cross-modal alignment strategies: a multi-view feature fusion mechanism that leverages diffusion priors to resolve perspective ambiguity in image-3D alignment, while a text-3D projection module adaptively maps 3D features to text embedding space for better text-3D alignment. Extensive experiments on various datasets demonstrate the state-of-the-art performance of TIGaussian in multiple tasks.",
+    "status": "found"
+  },
+  "2601.19248": {
+    "arxiv_id": "2601.19248",
+    "title": "Exponentially Consistent Low-Complexity Outlier Hypothesis Testing for Continuous Sequences",
+    "authors": [
+      "Lina Zhu",
+      "Lin Zhou"
+    ],
+    "submission_date": "2026-01-27T06:31:14Z",
+    "latest_updated": "2026-01-27T06:31:14Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19248v1"
+    ],
+    "abstract": "In this work, we revisit outlier hypothesis testing and propose exponentially consistent, low-complexity fixed-length tests that achieve a better tradeoff between detection performance and computational complexity than existing exhaustive-search methods. In this setting, the goal is to identify outlying sequences from a set of observed sequences, where most sequences are i.i.d. from a nominal distribution and outliers are i.i.d. from a different anomalous distribution. While prior work has primarily focused on discrete-valued sequences, we extend the results of Bu et al. (TSP 2019) to continuous-valued sequences and develop a distribution-free test based on the MMD metric. Our framework handles both known and unknown numbers of outliers. In the unknown-count case, we bound the detection performance and characterize the tradeoff among the exponential decay rates of three types of error probabilities. Finally, we quantify the performance penalty incurred when the number of outliers is unknown.",
+    "status": "found"
+  },
+  "2601.19249": {
+    "arxiv_id": "2601.19249",
+    "title": "GLOVE: Global Verifier for LLM Memory-Environment Realignment",
+    "authors": [
+      "Xingkun Yin",
+      "Hongyang Du"
+    ],
+    "submission_date": "2026-01-27T06:32:05Z",
+    "latest_updated": "2026-09-26T09:37:20Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.19249v1",
+      "2601.19249v2"
+    ],
+    "abstract": "Most existing memory-enhanced Large Language Model (LLM) approaches implicitly assume that memory validity can be established either through external evaluators that provide task-specific success signals or through internal model cognition, such as reflection, for editing memory entries. However, these assumptions often break down in practical environments with dynamic drifts. We propose the Global Verifier (GLOVE), a framework that introduces a new design dimension for LLM memory systems by establishing a relative notion of truth. Through active probing to detect inconsistencies between retrieved memories and fresh observations, GLOVE enables memory-environment realignment by verifying and updating memory without access to ground-truth supervision or strong reliance on model introspection. We evaluate GLOVE on diverse benchmarks spanning web navigation, planning, and control, augmented with controlled environmental drifts that introduce non-stationarity beyond the original benchmark settings. Our results show that GLOVE substantially improves agent success rates, suggesting a robust pathway to cognitive agents capable of self-evolving.",
+    "status": "found"
+  },
+  "2601.19250": {
+    "arxiv_id": "2601.19250",
+    "title": "Precision-induced Adaptive Randomized Low-Rank Approximation for SVD and Matrix Inversion",
+    "authors": [
+      "Weiwei Xu",
+      "Weijie Shen",
+      "Zhengjian Bai",
+      "Chen Xu"
+    ],
+    "submission_date": "2026-01-27T06:33:07Z",
+    "latest_updated": "2026-01-27T06:33:07Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19250v1"
+    ],
+    "abstract": "Singular value decomposition (SVD) and matrix inversion are ubiquitous in scientific computing. Both tasks are computationally demanding for large scale matrices. Existing algorithms can approximatively solve these problems with a given rank, which however is unknown in practice and requires considerable cost for tuning. In this paper, we tackle the SVD and matrix inversion problems from a new angle, where the optimal rank for the approximate solution is explicitly guided by the distribution of the singular values. Under the framework, we propose a precision-induced random re-normalization procedure for the considered problems without the need of guessing a good rank. The new algorithms built upon the procedure simultaneously calculate the optimal rank for the task at a desired precision level and lead to the corresponding approximate solution with a substantially reduced computational cost. The promising performance of the new algorithms is supported by both theory and numerical examples.",
+    "status": "found"
+  },
+  "2601.19251": {
+    "arxiv_id": "2601.19251",
+    "title": "Interpolating conformal algebra in $(1+1)$ dimensions between the instant form and the light-front form of relativistic dynamics",
+    "authors": [
+      "Chueng-Ryong Ji",
+      "Hariprashad Ravikumar"
+    ],
+    "submission_date": "2026-01-27T06:33:26Z",
+    "latest_updated": "2026-03-24T19:00:31Z",
+    "revised_dates": null,
+    "venue": "Phys. Rev. D 113, 096018 (2026)",
+    "latest_version": 2,
+    "versions": [
+      "2601.19251v1",
+      "2601.19251v2"
+    ],
+    "abstract": "We present the interpolating conformal algebra between the instant form dynamics (IFD) and the light-front dynamics (LFD) in $(1+1)$ dimensions, along with a $4\\times4$ interpolating projective spacetime matrix representation. While there are six generators in the $(1+1)$ dimensional conformal algebra, the number of kinematic and dynamic generators dramatically changes in LFD, maximizing (minimizing) the number of kinematic (dynamic) generators to four (two) with respect to two (four) kinematic (dynamic) generators in IFD, as well as in any other forms of dynamics between IFD and LFD. It confirms and signifies the utility of LFD, saving substantial dynamical efforts in solving the $(1+1)$ dimensional quantum field theories. We also present $2\\times2$ Pauli matrix representation of $(1+0)$ and $(0+1)$ conformal groups, and creation/annihilation operators of quantum simple harmonic oscillator representations of $(1+0)$ dimensional conformal groups.",
+    "status": "found"
+  },
+  "2601.19252": {
+    "arxiv_id": "2601.19252",
+    "title": "Concircular helices and concircular surfaces in Euclidean 3-space R3",
+    "authors": [
+      "Pascual Lucas",
+      "José Antonio Ortega-Yagües"
+    ],
+    "submission_date": "2026-01-27T06:33:49Z",
+    "latest_updated": "2026-01-27T06:33:49Z",
+    "revised_dates": null,
+    "venue": "Hacettepe Journal of Mathematics and Statistics, 2023, Vol. 52 (4), pp. 995-1005",
+    "latest_version": 1,
+    "versions": [
+      "2601.19252v1"
+    ],
+    "abstract": "In this paper we characterize concircular helices in $R^3$ by means of a differential equation involving their curvature and torsion. We find a full description of concircular surfaces in $R^3$ as a special family of ruled surfaces, and we show that $M$ in $R^3$ is a proper concircular surface if and only if either $M$ is parallel to a conical surface or $M$ is the normal surface to a spherical curve. Finally, we characterize the concircular helices as geodesics of concircular surfaces.",
+    "status": "found"
+  },
+  "2601.19253": {
+    "arxiv_id": "2601.19253",
+    "title": "A property that characterizes the Enneper surface and helix surfaces",
+    "authors": [
+      "Pascual Lucas",
+      "José Antonio Ortega-Yagües"
+    ],
+    "submission_date": "2026-01-27T06:34:02Z",
+    "latest_updated": "2026-01-27T06:34:02Z",
+    "revised_dates": null,
+    "venue": "Mediterranean Journal of Mathematics, 2024, Vol. 21, 155",
+    "latest_version": 1,
+    "versions": [
+      "2601.19253v1"
+    ],
+    "abstract": "The main goal of this paper is to show that helix surfaces and the Enneper surface are the only surfaces in the 3-dimensional Euclidean space $R^3$ whose isogonal lines are generalized helices and pseudo-geodesic lines.",
+    "status": "found"
+  },
+  "2601.19254": {
+    "arxiv_id": "2601.19254",
+    "title": "Constraining FRB Microstructure with Polarised Shot Noise",
+    "authors": [
+      "J. C. F. Balzan",
+      "A. Bera",
+      "C. W. James",
+      "B. Meyers"
+    ],
+    "submission_date": "2026-01-27T06:36:18Z",
+    "latest_updated": "2026-07-22T11:05:42Z",
+    "revised_dates": null,
+    "venue": "Publications of the Astronomical Society of Australia 43 (2026): e074",
+    "latest_version": 3,
+    "versions": [
+      "2601.19254v1",
+      "2601.19254v2",
+      "2601.19254v3"
+    ],
+    "abstract": "We present FIRES, a polarised shot-noise (PSN) framework that models fast radio burst (FRB) dynamic spectra as the incoherent superposition of Gaussian microshots with varying polarisation angles (PAs). Applied to the CRAFT bursts FRB 20191001A and FRB 20240318A, FIRES can reproduce key spectro-polarimetric behaviours seen in these data: scattering suppresses PA variability on the trailing edge, while the leading edge preferentially retains intrinsic structure when sufficient signal-to-noise is present. We quantify this behaviour using the PA variance ratio $\\mathcal{R}_ψ$ and explore the joint plane of measured linear polarisation fraction $Π_L$ versus PA variance to identify allowed regions of microshot number $N$, intrinsic PA dispersion $σ_ψ$, and intrinsic linear fraction $Π_{L,0}$ at fixed signal-to-noise. This restricts these combinations permitted within the adopted shot-noise framework. For FRB 20191001A, the data are consistent with an extended parameter space, reflecting degeneracies between intrinsic PA structure, microshot superposition, scattering, finite sampling, noise, and the assumed microshot-property distributions. FRB 20240318A occupies a more restricted region, favouring fewer microshots and larger intrinsic PA dispersion. By combining an emission-mechanism-independent forward-modeling framework with minimal assumptions and observational constraints, FIRES facilitates qualitative and quantitative exploration of how microshot superposition, scattering, finite sampling, and noise can shape observed FRB polarimetry under the PSN model.",
+    "status": "found"
+  },
+  "2601.19255": {
+    "arxiv_id": "2601.19255",
+    "title": "LLM-Assisted Logic Rule Learning: Scaling Human Expertise for Time Series Anomaly Detection",
+    "authors": [
+      "Haoting Zhang",
+      "Shekhar Jain"
+    ],
+    "submission_date": "2026-01-27T06:37:37Z",
+    "latest_updated": "2026-01-27T06:37:37Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19255v1"
+    ],
+    "abstract": "Time series anomaly detection is critical for supply chain management to take proactive operations, but faces challenges: classical unsupervised anomaly detection based on exploiting data patterns often yields results misaligned with business requirements and domain knowledge, while manual expert analysis cannot scale to millions of products in the supply chain. We propose a framework that leverages large language models (LLMs) to systematically encode human expertise into interpretable, logic-based rules for detecting anomaly patterns in supply chain time series data. Our approach operates in three stages: 1) LLM-based labeling of training data instructed by domain knowledge, 2) automated generation and iterative improvements of symbolic rules through LLM-driven optimization, and 3) rule augmentation with business-relevant anomaly categories supported by LLMs to enhance interpretability. The experiment results showcase that our approach outperforms the unsupervised learning methods in both detection accuracy and interpretability. Furthermore, compared to direct LLM deployment for time series anomaly detection, our approach provides consistent, deterministic results with low computational latency and cost, making it ideal for production deployment. The proposed framework thus demonstrates how LLMs can bridge the gap between scalable automation and expert-driven decision-making in operational settings.",
+    "status": "found"
+  }
+}

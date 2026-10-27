@@ -1,0 +1,427 @@
+{
+  "2511.13009": {
+    "arxiv_id": "2511.13009",
+    "title": "TR-Gaussians: High-fidelity Real-time Rendering of Planar Transmission and Reflection with 3D Gaussian Splatting",
+    "authors": [
+      "Yong Liu",
+      "Keyang Ye",
+      "Tianjia Shao",
+      "Kun Zhou"
+    ],
+    "submission_date": "2025-11-17T06:09:21Z",
+    "latest_updated": "2025-11-17T06:09:21Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.13009v1"
+    ],
+    "abstract": "We propose Transmission-Reflection Gaussians (TR-Gaussians), a novel 3D-Gaussian-based representation for high-fidelity rendering of planar transmission and reflection, which are ubiquitous in indoor scenes. Our method combines 3D Gaussians with learnable reflection planes that explicitly model the glass planes with view-dependent reflectance strengths. Real scenes and transmission components are modeled by 3D Gaussians and the reflection components are modeled by the mirrored Gaussians with respect to the reflection plane. The transmission and reflection components are blended according to a Fresnel-based, view-dependent weighting scheme, allowing for faithful synthesis of complex appearance effects under varying viewpoints. To effectively optimize TR-Gaussians, we develop a multi-stage optimization framework incorporating color and geometry constraints and an opacity perturbation mechanism. Experiments on different datasets demonstrate that TR-Gaussians achieve real-time, high-fidelity novel view synthesis in scenes with planar transmission and reflection, and outperform state-of-the-art approaches both quantitatively and qualitatively.",
+    "status": "found"
+  },
+  "2511.13010": {
+    "arxiv_id": "2511.13010",
+    "title": "Are Graph Transformers Necessary? Efficient Long-Range Message Passing with Fractal Nodes in MPNNs",
+    "authors": [
+      "Jeongwhan Choi",
+      "Seungjun Park",
+      "Sumin Park",
+      "Sung-Bae Cho",
+      "Noseong Park"
+    ],
+    "submission_date": "2025-11-17T06:11:52Z",
+    "latest_updated": "2025-11-17T06:11:52Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.13010v1"
+    ],
+    "abstract": "Graph Neural Networks (GNNs) have emerged as powerful tools for learning on graph-structured data, but often struggle to balance local and global information. While graph Transformers aim to address this by enabling long-range interactions, they often overlook the inherent locality and efficiency of Message Passing Neural Networks (MPNNs). We propose a new concept called fractal nodes, inspired by the fractal structure observed in real-world networks. Our approach is based on the intuition that graph partitioning naturally induces fractal structure, where subgraphs often reflect the connectivity patterns of the full graph. Fractal nodes are designed to coexist with the original nodes and adaptively aggregate subgraph-level feature representations, thereby enforcing feature similarity within each subgraph. We show that fractal nodes alleviate the over-squashing problem by providing direct shortcut connections that enable long-range propagation of subgraph-level representations. Experiment results show that our method improves the expressive power of MPNNs and achieves comparable or better performance to graph Transformers while maintaining the computational efficiency of MPNN by improving the long-range dependencies of MPNN.",
+    "status": "found"
+  },
+  "2511.13011": {
+    "arxiv_id": "2511.13011",
+    "title": "Beyond Darkness: Thermal-Supervised 3D Gaussian Splatting for Low-Light Novel View Synthesis",
+    "authors": [
+      "Qingsen Ma",
+      "Chen Zou",
+      "Dianyun Wang",
+      "Jia Wang",
+      "Liuyu Xiang",
+      "Zhaofeng He"
+    ],
+    "submission_date": "2025-11-17T06:12:53Z",
+    "latest_updated": "2025-11-17T06:12:53Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.13011v1"
+    ],
+    "abstract": "Under extremely low-light conditions, novel view synthesis (NVS) faces severe degradation in terms of geometry, color consistency, and radiometric stability. Standard 3D Gaussian Splatting (3DGS) pipelines fail when applied directly to underexposed inputs, as independent enhancement across views causes illumination inconsistencies and geometric distortion. To address this, we present DTGS, a unified framework that tightly couples Retinex-inspired illumination decomposition with thermal-guided 3D Gaussian Splatting for illumination-invariant reconstruction. Unlike prior approaches that treat enhancement as a pre-processing step, DTGS performs joint optimization across enhancement, geometry, and thermal supervision through a cyclic enhancement-reconstruction mechanism. A thermal supervisory branch stabilizes both color restoration and geometry learning by dynamically balancing enhancement, structural, and thermal losses. Moreover, a Retinex-based decomposition module embedded within the 3DGS loop provides physically interpretable reflectance-illumination separation, ensuring consistent color and texture across viewpoints. To evaluate our method, we construct RGBT-LOW, a new multi-view low-light thermal dataset capturing severe illumination degradation. Extensive experiments show that DTGS significantly outperforms existing low-light enhancement and 3D reconstruction baselines, achieving superior radiometric consistency, geometric fidelity, and color stability under extreme illumination.",
+    "status": "found"
+  },
+  "2511.13012": {
+    "arxiv_id": "2511.13012",
+    "title": "Harnack inequalities for nonlocal operators with supercritical drifts and their applications",
+    "authors": [
+      "Zhen-Qing Chen",
+      "Xicheng Zhang"
+    ],
+    "submission_date": "2025-11-17T06:13:11Z",
+    "latest_updated": "2025-11-17T06:13:11Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.13012v1"
+    ],
+    "abstract": "In this paper, we investigate Harnack estimates for weak solutions to the following nonlocal equation: $$ \\partial_t u = Δ^{α/2} u + b \\cdot \\nabla u + f, $$ where $Δ^{α/2}$ denotes the fractional Laplacian, $b$ is a divergence-free vector field in a critical or supercritical regularity regime, and $f$ is a distribution in a fractional Sobolev space with negative indices. As applications of the analytical results obtained in this paper, we establish the well-posedness of critical stochastic quasi-geostrophic equations driven by additive Brownian noise, prove the existence of weak solutions to the two-dimensional fractional Navier--Stokes equations with measure-valued initial vorticity, and demonstrate the well-posedness of generalized martingale problems associated with critical stochastic differential equations.",
+    "status": "found"
+  },
+  "2511.13013": {
+    "arxiv_id": "2511.13013",
+    "title": "You Only Look Omni Gradient Backpropagation for Moving Infrared Small Target Detection",
+    "authors": [
+      "Guoyi Zhang",
+      "Guangsheng Xu",
+      "Siyang Chen",
+      "Han Wang",
+      "Xiaohu Zhang"
+    ],
+    "submission_date": "2025-11-17T06:13:41Z",
+    "latest_updated": "2026-07-30T06:02:42Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.13013v1",
+      "2511.13013v2"
+    ],
+    "abstract": "Moving infrared small target detection is a key component of infrared search and tracking systems, yet it remains extremely challenging due to low signal-to-clutter ratios, severe target-background imbalance, and weak discriminative features. Existing deep learning methods primarily focus on spatio-temporal feature aggregation, but their gains are limited, revealing that the fundamental bottleneck lies in ambiguous per-frame feature representations rather than spatio-temporal modeling itself. Motivated by this insight, we propose BP-FPN, a backpropagation-driven feature pyramid architecture that fundamentally rethinks feature learning for small target. BP-FPN introduces Gradient-Isolated Low-Level Shortcut (GILS) to efficiently incorporate fine-grained target details without inducing shortcut learning, and Directional Gradient Regularization (DGR) to enforce hierarchical feature consistency during backpropagation. The design is theoretically grounded, introduces negligible computational overhead, and can be seamlessly integrated into existing frameworks. Extensive experiments on multiple public datasets show that BP-FPN consistently establishes new state-of-the-art performance. To the best of our knowledge, it is the first FPN designed for this task entirely from the backpropagation perspective.",
+    "status": "found"
+  },
+  "2511.13014": {
+    "arxiv_id": "2511.13014",
+    "title": "Maximal Palindromes in MPC: Simple and Optimal",
+    "authors": [
+      "Solon P. Pissis"
+    ],
+    "submission_date": "2025-11-17T06:13:46Z",
+    "latest_updated": "2025-11-17T06:13:46Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.13014v1"
+    ],
+    "abstract": "In the classical longest palindromic substring (LPS) problem, we are given a string $S$ of length $n$, and the task is to output a longest palindromic substring in $S$. Gilbert, Hajiaghayi, Saleh, and Seddighin [SPAA 2023] showed how to solve the LPS problem in the Massively Parallel Computation (MPC) model in $\\mathcal{O}(1)$ rounds using $\\mathcal{\\widetilde{O}}(n)$ total memory, with $\\mathcal{\\widetilde{O}}(n^{1-ε})$ memory per machine, for any $ε\\in (0,0.5]$. We present a simple and optimal algorithm to solve the LPS problem in the MPC model in $\\mathcal{O}(1)$ rounds. The total time and memory are $\\mathcal{O}(n)$, with $\\mathcal{O}(n^{1-ε})$ memory per machine, for any $ε\\in (0,0.5]$. A key attribute of our algorithm is its ability to compute all maximal palindromes in the same complexities. Furthermore, our new insights allow us to bypass the constraint $ε\\in (0,0.5]$ in the Adaptive MPC model. Our algorithms and the one proposed by Gilbert et al. for the LPS problem are randomized and succeed with high probability.",
+    "status": "found"
+  },
+  "2511.13015": {
+    "arxiv_id": "2511.13015",
+    "title": "Geometry Meets Light: Leveraging Geometric Priors for Universal Photometric Stereo under Limited Multi-Illumination Cues",
+    "authors": [
+      "King-Man Tam",
+      "Satoshi Ikehata",
+      "Yuta Asano",
+      "Zhaoyi An",
+      "Rei Kawakami"
+    ],
+    "submission_date": "2025-11-17T06:14:38Z",
+    "latest_updated": "2025-11-18T10:05:51Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.13015v1",
+      "2511.13015v2"
+    ],
+    "abstract": "Universal Photometric Stereo is a promising approach for recovering surface normals without strict lighting assumptions. However, it struggles when multi-illumination cues are unreliable, such as under biased lighting or in shadows or self-occluded regions of complex in-the-wild scenes. We propose GeoUniPS, a universal photometric stereo network that integrates synthetic supervision with high-level geometric priors from large-scale 3D reconstruction models pretrained on massive in-the-wild data. Our key insight is that these 3D reconstruction models serve as visual-geometry foundation models, inherently encoding rich geometric knowledge of real scenes. To leverage this, we design a Light-Geometry Dual-Branch Encoder that extracts both multi-illumination cues and geometric priors from the frozen 3D reconstruction model. We also address the limitations of the conventional orthographic projection assumption by introducing the PS-Perp dataset with realistic perspective projection to enable learning of spatially varying view directions. Extensive experiments demonstrate that GeoUniPS delivers state-of-the-arts performance across multiple datasets, both quantitatively and qualitatively, especially in the complex in-the-wild scenes.",
+    "status": "found"
+  },
+  "2511.13016": {
+    "arxiv_id": "2511.13016",
+    "title": "The Good, The Bad, and The Hybrid: A Reward Structure Showdown in Reasoning Models Training",
+    "authors": [
+      "Subramanyam Sahoo"
+    ],
+    "submission_date": "2025-11-17T06:15:26Z",
+    "latest_updated": "2025-11-17T06:15:26Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.13016v1"
+    ],
+    "abstract": "Reward design is central to reinforcement learning from human feedback (RLHF) and alignment research. In this work, we propose a unified framework to study hard, continuous, and hybrid reward structures for fine-tuning large language models (LLMs) on mathematical reasoning tasks. Using Qwen3-4B with LoRA fine-tuning on the GSM8K dataset, we formalize and empirically evaluate reward formulations that incorporate correctness, perplexity, reasoning quality, and consistency. We introduce an adaptive hybrid reward scheduler that transitions between discrete and continuous signals, balancing exploration and stability. Our results show that hybrid reward structures improve convergence speed and training stability over purely hard or continuous approaches, offering insights for alignment via adaptive reward modeling.",
+    "status": "found"
+  },
+  "2511.13017": {
+    "arxiv_id": "2511.13017",
+    "title": "Prospects for a Solid-State Nuclear Clock",
+    "authors": [
+      "Steven M. Girvin",
+      "Leo Radzihovsky"
+    ],
+    "submission_date": "2025-11-17T06:15:45Z",
+    "latest_updated": "2025-11-17T06:15:45Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.13017v1"
+    ],
+    "abstract": "Motivated by recent experimental breakthroughs toward a realization of a solid-state Thorium-229 nuclear clock, we review the technology, basic physics motivation, and limitations of the present generation of atomic clocks. We then discuss prospects for a new generation of clocks based on an anomalous low-energy 8.4 eV nuclear transition in Th-229, with an extremely long lifetime of 641 seconds when doped into CaF crystals. To realize such solid-state nuclear clocks one must confront basic nuclear, AMO, and solid state physics questions. Key challenges are understanding and minimizing the effects of inhomogeneous broadening, associated with strains and electric field gradients due to both the Th dopants and intrinsic crystal defects.",
+    "status": "found"
+  },
+  "2511.13018": {
+    "arxiv_id": "2511.13018",
+    "title": "The Final-Stage Bottleneck: A Systematic Dissection of the R-Learner for Network Causal Inference",
+    "authors": [
+      "S Sairam",
+      "Sara Girdhar",
+      "Shivam Soni"
+    ],
+    "submission_date": "2025-11-17T06:16:04Z",
+    "latest_updated": "2026-04-01T05:31:54Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2511.13018v1",
+      "2511.13018v2",
+      "2511.13018v3"
+    ],
+    "abstract": "The R-Learner is a powerful, theoretically-grounded framework for estimating heterogeneous treatment effects, prized for its robustness to nuisance model errors. However, its application to network data, where causal heterogeneity is often graph-dependent, presents a critical challenge to its core assumption of a well-specified final-stage model. In this paper, we conduct a large-scale empirical study to systematically dissect the R-Learner framework on graphs. We provide the first rigorous evidence that the primary driver of performance is the inductive bias of the final-stage CATE estimator, an effect that dominates the choice of nuisance models. Our central finding is the quantification of a catastrophic \"representation bottleneck\": we prove with overwhelming statistical significance (p < 0.001) that R-Learners with a graph-blind final stage fail completely (MSE > 4.0), even when paired with powerful GNN nuisance models. Conversely, our proposed end-to-end Graph R-Learner succeeds and significantly outperforms a strong, non-DML GNN T-Learner baseline. Furthermore, we identify and provide a mechanistic explanation for a subtle, topology-dependent \"nuisance bottleneck,\" linking it to GNN over-squashing via a targeted \"Hub-Periphery Trade-off\" analysis. Our findings are validated across diverse synthetic and semi-synthetic benchmarks. We release our code as a reproducible benchmark to facilitate future research on this critical \"final-stage bottleneck.\"",
+    "status": "found"
+  },
+  "2511.13019": {
+    "arxiv_id": "2511.13019",
+    "title": "MeanFlow Transformers with Representation Autoencoders",
+    "authors": [
+      "Zheyuan Hu",
+      "Chieh-Hsin Lai",
+      "Ge Wu",
+      "Yuki Mitsufuji",
+      "Stefano Ermon"
+    ],
+    "submission_date": "2025-11-17T06:17:08Z",
+    "latest_updated": "2025-11-17T06:17:08Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.13019v1"
+    ],
+    "abstract": "MeanFlow (MF) is a diffusion-motivated generative model that enables efficient few-step generation by learning long jumps directly from noise to data. In practice, it is often used as a latent MF by leveraging the pre-trained Stable Diffusion variational autoencoder (SD-VAE) for high-dimensional data modeling. However, MF training remains computationally demanding and is often unstable. During inference, the SD-VAE decoder dominates the generation cost, and MF depends on complex guidance hyperparameters for class-conditional generation. In this work, we develop an efficient training and sampling scheme for MF in the latent space of a Representation Autoencoder (RAE), where a pre-trained vision encoder (e.g., DINO) provides semantically rich latents paired with a lightweight decoder. We observe that naive MF training in the RAE latent space suffers from severe gradient explosion. To stabilize and accelerate training, we adopt Consistency Mid-Training for trajectory-aware initialization and use a two-stage scheme: distillation from a pre-trained flow matching teacher to speed convergence and reduce variance, followed by an optional bootstrapping stage with a one-point velocity estimator to further reduce deviation from the oracle mean flow. This design removes the need for guidance, simplifies training configurations, and reduces computation in both training and sampling. Empirically, our method achieves a 1-step FID of 2.03, outperforming vanilla MF's 3.43, while reducing sampling GFLOPS by 38% and total training cost by 83% on ImageNet 256. We further scale our approach to ImageNet 512, achieving a competitive 1-step FID of 3.23 with the lowest GFLOPS among all baselines. Code is available at https://github.com/sony/mf-rae.",
+    "status": "found"
+  },
+  "2511.13020": {
+    "arxiv_id": "2511.13020",
+    "title": "PHASE: Physiology-Aware Hyperspectral Reconstruction via Object-to-Human Domain Adaptation",
+    "authors": [
+      "Yufei Wen",
+      "Shuxing Zhong",
+      "Jingdan Kang",
+      "Yuting Zhang",
+      "Jintai Chen",
+      "Kaishun Wu"
+    ],
+    "submission_date": "2025-11-17T06:17:13Z",
+    "latest_updated": "2026-06-01T04:43:57Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.13020v1",
+      "2511.13020v2"
+    ],
+    "abstract": "Although hyperspectral imaging offers unparalleled non-invasive physiological insight, its bulky hardware, slow acquisition, and regulatory burden severely limit its clinical availability. A natural workaround is to reconstruct hyperspectral information from ubiquitous RGB or CASSI measurements. However, existing paradigms, developed for object-centric scenes, rely on reflectance-based feature alignment, assuming that spectral similarity preserves semantic meaning. This assumption breaks down in physiological imaging, where visually similar RGB responses may arise from distinct and entangled physiological states. This mismatch motivates a shift from reflectance alignment to physiology-aware representation learning, grounded in shared light-matter interaction principles -- a shift that introduces fundamental challenges from cross-channel semantic shifts (C1) and irreversible information loss in RGB-based acquisition (C2). We therefore design PHASE, a physiology-aware hyperspectral reconstruction paradigm that fundamentally redefines object-to-human transfer by disentangling cross-channel physiological semantics via Physiological Channel Reinterpretation and restricting reconstruction to physiologically plausible solutions through Physiologically Constrained Alignment. Under two source-to-target transfer protocols, PHASE consistently outperforms state-of-the-art methods by up to +2.20 SSIM and -3.06 in SAM with merely 1.5% labeled supervision.",
+    "status": "found"
+  },
+  "2511.13021": {
+    "arxiv_id": "2511.13021",
+    "title": "PragWorld: A Benchmark Evaluating LLMs' Local World Model under Minimal Linguistic Alterations and Conversational Dynamics",
+    "authors": [
+      "Sachin Vashistha",
+      "Aryan Bibhuti",
+      "Atharva Naik",
+      "Martin Tutek",
+      "Somak Aditya"
+    ],
+    "submission_date": "2025-11-17T06:17:17Z",
+    "latest_updated": "2025-11-17T06:17:17Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.13021v1"
+    ],
+    "abstract": "Real-world conversations are rich with pragmatic elements, such as entity mentions, references, and implicatures. Understanding such nuances is a requirement for successful natural communication, and often requires building a local world model which encodes such elements and captures the dynamics of their evolving states. However, it is not well-understood whether language models (LMs) construct or maintain a robust implicit representation of conversations. In this work, we evaluate the ability of LMs to encode and update their internal world model in dyadic conversations and test their malleability under linguistic alterations. To facilitate this, we apply seven minimal linguistic alterations to conversations sourced from popular datasets and construct two benchmarks comprising yes-no questions. We evaluate a wide range of open and closed source LMs and observe that they struggle to maintain robust accuracy. Our analysis unveils that LMs struggle to memorize crucial details, such as tracking entities under linguistic alterations to conversations. We then propose a dual-perspective interpretability framework which identifies transformer layers that are useful or harmful and highlights linguistic alterations most influenced by harmful layers, typically due to encoding spurious signals or relying on shortcuts. Inspired by these insights, we propose two layer-regularization based fine-tuning strategies that suppress the effect of the harmful layers.",
+    "status": "found"
+  },
+  "2511.13022": {
+    "arxiv_id": "2511.13022",
+    "title": "Learning Time-Scale Invariant Population-Level Neural Representations",
+    "authors": [
+      "Eshani Patel",
+      "Yisong Yue",
+      "Geeling Chau"
+    ],
+    "submission_date": "2025-11-17T06:20:31Z",
+    "latest_updated": "2025-11-17T06:20:31Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.13022v1"
+    ],
+    "abstract": "General-purpose foundation models for neural time series can help accelerate neuroscientific discoveries and enable applications such as brain computer interfaces (BCIs). A key component in scaling these models is population-level representation learning, which leverages information across channels to capture spatial as well as temporal structure. Population-level approaches have recently shown that such representations can be both efficient to learn on top of pretrained temporal encoders and produce useful representations for decoding a variety of downstream tasks. However, these models remain sensitive to mismatches in preprocessing, particularly on time-scales, between pretraining and downstream settings. We systematically examine how time-scale mismatches affects generalization and find that existing representations lack invariance. To address this, we introduce Time-scale Augmented Pretraining (TSAP), which consistently improves robustness to different time-scales across decoding tasks and builds invariance in the representation space. These results highlight handling preprocessing diversity as a key step toward building generalizable neural foundation models.",
+    "status": "found"
+  },
+  "2511.13023": {
+    "arxiv_id": "2511.13023",
+    "title": "SLMQuant:Benchmarking Small Language Model Quantization for Practical Deployment",
+    "authors": [
+      "Jiacheng Wang",
+      "Yejun Zeng",
+      "Jinyang Guo",
+      "Yuqing Ma",
+      "Aishan Liu",
+      "Xianglong Liu"
+    ],
+    "submission_date": "2025-11-17T06:20:33Z",
+    "latest_updated": "2025-11-17T06:20:33Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.13023v1"
+    ],
+    "abstract": "Despite the growing interest in Small Language Models (SLMs) as resource-efficient alternatives to Large Language Models (LLMs), their deployment on edge devices remains challenging due to unresolved efficiency gaps in model compression. While quantization has proven effective for LLMs, its applicability to SLMs is significantly underexplored, with critical questions about differing quantization bottlenecks and efficiency profiles. This paper introduces SLMQuant, the first systematic benchmark for evaluating LLM compression techniques when applied to SLMs. Through comprehensive multi-track evaluations across diverse architectures and tasks, we analyze how state-of-the-art quantization methods perform on SLMs. Our findings reveal fundamental disparities between SLMs and LLMs in quantization sensitivity, demonstrating that direct transfer of LLM-optimized techniques leads to suboptimal results due to SLMs' unique architectural characteristics and training dynamics. We identify key factors governing effective SLM quantization and propose actionable design principles for SLM-tailored compression. SLMQuant establishes a foundational framework for advancing efficient SLM deployment on low-end devices in edge applications, and provides critical insights for deploying lightweight language models in resource-constrained scenarios.",
+    "status": "found"
+  },
+  "2511.13024": {
+    "arxiv_id": "2511.13024",
+    "title": "AGN feedback in merging galaxies with a SMUGGLE multiphase ISM",
+    "authors": [
+      "Aneesh Sivasankaran",
+      "Laura Blecha",
+      "Paul Torrey",
+      "Luke Zoltan Kelley",
+      "Aklant Bhowmick",
+      "Mark Vogelsberger",
+      "Lars Hernquist",
+      "Federico Marinacci",
+      "Laura V. Sales"
+    ],
+    "submission_date": "2025-11-17T06:22:48Z",
+    "latest_updated": "2025-11-17T06:22:48Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.13024v1"
+    ],
+    "abstract": "We study fast nuclear winds driven by Active Galactic Nucleus (AGN) feedback in merging galaxies using high-resolution hydrodynamics simulations. We use Stars and MUltiphase Gas in GaLaxiEs (SMUGGLE) to explicitly model the multiphase interstellar medium (ISM) and employ sub-grid dynamical friction for massive black holes (BHs). Furthermore, we use a super-Lagrangian refinement scheme to resolve AGN feedback coupling to the ISM at $\\sim10-100\\,$pc scales. By comparison between merging and isolated galaxies, with and without AGN feedback, we identify trends in the complex interplay between dynamics, BH fueling and feedback, and star formation and feedback. We consider three galaxy types: Milky Way analogs, Sbc-type galaxies, and Small Magellanic Cloud (SMC) analogs. The synergy between AGN feedback and merger dynamics is strongest in the Milky Way-like mergers, where the AGN winds are energetically dominant and entrain more gas when the initially thin disks become thick and amorphous during the merger. In contrast, the merger of thicker, vigorously star-forming Sbc galaxies is not strongly impacted by AGN feedback until star formation declines in the post-merger phase. Finally, while the sub-grid dynamical friction prescription effectively retains BHs in galactic nuclei during more massive mergers, the clumpy multiphase ISM induces significant wandering of low-mass BHs $\\mathrm{(<10^5M_\\odot)}$ in the shallow potentials of the SMC-like galaxies. These low-mass BHs wander at distances $\\gtrsim 2$ kpc from the galactic center, yielding negligible BH accretion and feedback. This has implications for LISA event rates and present a further challenge to understanding the rapid growth of $z\\sim7-10$ quasars discovered by JWST.",
+    "status": "found"
+  },
+  "2511.13025": {
+    "arxiv_id": "2511.13025",
+    "title": "Reconstruction of Manifold Distances from Noisy Observations",
+    "authors": [
+      "Charles Fefferman",
+      "Jonathan Marty",
+      "Kevin Ren"
+    ],
+    "submission_date": "2025-11-17T06:24:31Z",
+    "latest_updated": "2025-11-17T06:24:31Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.13025v1"
+    ],
+    "abstract": "We consider the problem of reconstructing the intrinsic geometry of a manifold from noisy pairwise distance observations. Specifically, let $M$ denote a diameter 1 d-dimensional manifold and $μ$ a probability measure on $M$ that is mutually absolutely continuous with the volume measure. Suppose $X_1,\\dots,X_N$ are i.i.d. samples of $μ$ and we observe noisy-distance random variables $d'(X_j, X_k)$ that are related to the true geodesic distances $d(X_j,X_k)$. With mild assumptions on the distributions and independence of the noisy distances, we develop a new framework for recovering all distances between points in a sufficiently dense subsample of $M$. Our framework improves on previous work which assumed i.i.d. additive noise with known moments. Our method is based on a new way to estimate $L_2$-norms of certain expectation-functions $f_x(y)=\\mathbb{E}d'(x,y)$ and use them to build robust clusters centered at points of our sample. Using a new geometric argument, we establish that, under mild geometric assumptions--bounded curvature and positive injectivity radius--these clusters allow one to recover the true distances between points in the sample up to an additive error of $O(\\varepsilon \\log \\varepsilon^{-1})$. We develop two distinct algorithms for producing these clusters. The first achieves a sample complexity $N \\asymp \\varepsilon^{-2d-2}\\log(1/\\varepsilon)$ and runtime $o(N^3)$. The second introduces novel geometric ideas that warrant further investigation. In the presence of missing observations, we show that a quantitative lower bound on sampling probabilities suffices to modify the cluster construction in the first algorithm and extend all recovery guarantees. Our main technical result also elucidates which properties of a manifold are necessary for the distance recovery, which suggests further extension of our techniques to a broader class of metric probability spaces.",
+    "status": "found"
+  },
+  "2511.13026": {
+    "arxiv_id": "2511.13026",
+    "title": "REVISOR: Beyond Textual Reflection, Towards Multimodal Introspective Reasoning in Long-Form Video Understanding",
+    "authors": [
+      "Jiaze Li",
+      "Hao Yin",
+      "Wenhui Tan",
+      "Jingyang Chen",
+      "Boshen Xu",
+      "Yuxun Qu",
+      "Yijing Chen",
+      "Jianzhong Ju",
+      "Zhenbo Luo",
+      "Jian Luan"
+    ],
+    "submission_date": "2025-11-17T06:25:12Z",
+    "latest_updated": "2026-05-14T09:07:42Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2511.13026v1",
+      "2511.13026v2",
+      "2511.13026v3"
+    ],
+    "abstract": "Self-reflection mechanisms that rely on purely text-based rethinking processes perform well in most multimodal tasks. However, when directly applied to long-form video understanding scenarios, they exhibit clear limitations. The fundamental reasons for this lie in two points: (1)long-form video understanding involves richer and more dynamic visual input, meaning rethinking only the text information is insufficient and necessitates a further rethinking process specifically targeting visual information; (2) purely text-based reflection mechanisms lack cross-modal interaction capabilities, preventing them from fully integrating visual information during reflection. Motivated by these insights, we propose REVISOR (REflective VIsual Segment Oriented Reasoning), a novel framework for tool-augmented multimodal reflection. REVISOR enables MLLMs to collaboratively construct introspective reflection processes across textual and visual modalities, significantly enhancing their reasoning capability for long-form video understanding. To ensure that REVISOR can learn to accurately review video segments highly relevant to the question during reinforcement learning, we designed the Dual Attribution Decoupled Reward (DADR) mechanism. Integrated into the GRPO training strategy, this mechanism enforces causal alignment between the model's reasoning and the selected video evidence. Notably, the REVISOR framework significantly enhances long-form video understanding capability of MLLMs without requiring supplementary supervised fine-tuning or external models, achieving impressive results on four benchmarks including VideoMME, LongVideoBench, MLVU, and LVBench.",
+    "status": "found"
+  },
+  "2511.13027": {
+    "arxiv_id": "2511.13027",
+    "title": "Scaling Generative Verifiers For Natural Language Mathematical Proof Verification And Selection",
+    "authors": [
+      "Sadegh Mahdavi",
+      "Branislav Kisacanin",
+      "Shubham Toshniwal",
+      "Wei Du",
+      "Ivan Moshkov",
+      "George Armstrong",
+      "Renjie Liao",
+      "Christos Thrampoulidis",
+      "Igor Gitman"
+    ],
+    "submission_date": "2025-11-17T06:25:35Z",
+    "latest_updated": "2025-11-17T06:25:35Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.13027v1"
+    ],
+    "abstract": "Large language models have achieved remarkable success on final-answer mathematical problems, largely due to the ease of applying reinforcement learning with verifiable rewards. However, the reasoning underlying these solutions is often flawed. Advancing to rigorous proof-based mathematics requires reliable proof verification capabilities. We begin by analyzing multiple evaluation setups and show that focusing on a single benchmark can lead to brittle or misleading conclusions. To address this, we evaluate both proof-based and final-answer reasoning to obtain a more reliable measure of model performance. We then scale two major generative verification methods (GenSelect and LLM-as-a-Judge) to millions of tokens and identify their combination as the most effective framework for solution verification and selection. We further show that the choice of prompt for LLM-as-a-Judge significantly affects the model's performance, but reinforcement learning can reduce this sensitivity. However, despite improving proof-level metrics, reinforcement learning does not enhance final-answer precision, indicating that current models often reward stylistic or procedural correctness rather than mathematical validity. Our results establish practical guidelines for designing and evaluating scalable proof-verification and selection systems.",
+    "status": "found"
+  },
+  "2511.13028": {
+    "arxiv_id": "2511.13028",
+    "title": "Floquet breathers in a modulated nonlinear lattice",
+    "authors": [
+      "Masayuki Kimura",
+      "Juan F. R. Archilla",
+      "Yusuke Doi",
+      "Víctor J. Sánchez-Morcillo"
+    ],
+    "submission_date": "2025-11-17T06:26:05Z",
+    "latest_updated": "2026-03-17T12:58:26Z",
+    "revised_dates": null,
+    "venue": "Chaos 36, 3 (2026) 033151",
+    "latest_version": 5,
+    "versions": [
+      "2511.13028v1",
+      "2511.13028v2",
+      "2511.13028v3",
+      "2511.13028v4",
+      "2511.13028v5"
+    ],
+    "abstract": "In this work, we study a space-time modulated electro-mechanical system, consisting of an array of coupled cantilevers with their on-site potential provided by electromagnets driven by AC currents. Model equations are derived, and the effect of the modulation on the dispersion bands is examined. The theory of breather existence and stability is extended to include space-time modulation. We perform numerical simulations in a time-modulated system, showing three types of breather response depending on the driving frequency: (i) the modulation frequency is an integer multiple of the breather frequency or, in other words, this phenomenon corresponds to period doubling, tripling, etc.; (ii) the opposite, that is, the breather frequency is an integer multiple of the modulation frequency, corresponding to period-halving, etc. (iii) the breather and modulation frequencies are commensurate in a different form. We use for all of them the term {\\em Floquet breathers} in analogy with Floquet solitons in photonic systems. As there is no dissipation, but periodic forcing, the energy is generally conserved but only at discrete times. There exists in this system a huge variety of breathers, either site-centered, symmetric and antisymmetric, bond centered, in-phase or in-quadrature with the modulation, and we analyze the evolution of stability of some of them as a function of the modulation frequency. The construction of a similar system would be of interest to study the properties of dynamic metamaterials.",
+    "status": "found"
+  }
+}

@@ -1,0 +1,401 @@
+{
+  "2511.12729": {
+    "arxiv_id": "2511.12729",
+    "title": "Development of an Uncertainty Workflow to Support Landsat TIRS Split Window-Derived Surface Temperature Products",
+    "authors": [
+      "Amirhossein Hassanzadeh",
+      "Robert Mancini",
+      "Aaron Gerace",
+      "Rehman Eon",
+      "Matthew Montanaro"
+    ],
+    "submission_date": "2025-11-16T18:56:34Z",
+    "latest_updated": "2025-11-16T18:56:34Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.12729v1"
+    ],
+    "abstract": "Current Landsat Level 2 surface temperature products are derived using a single-channel (SC) methodology to estimate per-pixel surface temperature (ST) maps from Level~1 radiance data. A known issue with the Level 2 uncertainty, however, is its susceptibility to overestimation of uncertainty due to its dependence on Landsat's cloud mask, which is prone to false-positives. Beginning with Collection 3, the split window (SW) approach will serve as the surface temperature algorithm for the level-2 product, reflecting its adaptability across conditions which necessitates the development of a dedicated uncertainty workflow. We introduce an improved uncertainty workflow, based on a physical parameter called total precipitable water (TPW), that more adequately estimates the uncertainty associated with surface temperature estimates. We leveraged a SW algorithm for estimating surface temperature to drive the uncertainty methodology discussed here. First, considering Landsat is not equipped with the optical channels necessary for deriving TPW, we create an XGBoost-based machine learning pipeline that relates TIRS bands 10 & 11 image radiance to TPW using the MODIS product as reference. The resulting modeling approach achieves a mean absolute error in estimating TPW of 0.54 [cm] and a coefficient of determination (R2) as high as 0.89. Secondly, we propose an improved (SW-based) uncertainty workflow that also uses standard error propagation but incorporates uncertainty as a function of TPW. Our work fills the gap in the operational surface temperature algorithms and their corresponding uncertainty workflow tailored for Landsat 8 and 9, and machine learning based models for predicting atmospheric water vapor using thermal infrared sensor bands on board Landsat 8 and 9.",
+    "status": "found"
+  },
+  "2511.12730": {
+    "arxiv_id": "2511.12730",
+    "title": "Improving the Generalisation of Learned Reconstruction Frameworks",
+    "authors": [
+      "Emilien Valat",
+      "Ozan Öktem"
+    ],
+    "submission_date": "2025-11-16T18:57:13Z",
+    "latest_updated": "2025-11-16T18:57:13Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.12730v1"
+    ],
+    "abstract": "Ensuring proper generalization is a critical challenge in applying data-driven methods for solving inverse problems in imaging, as neural networks reconstructing an image must perform well across varied datasets and acquisition geometries. In X-ray Computed Tomography (CT), convolutional neural networks (CNNs) are widely used to filter the projection data but are ill-suited for this task as they apply grid-based convolutions to the sinogram, which inherently lies on a line manifold, not a regular grid. The CNNs, unaware of the geometry, are implicitly tied to it and require an excessive amount of parameters as they must infer the relations between measurements from the data rather than from prior information. The contribution of this paper is twofold. First, we introduce a graph data structure to represent CT acquisition geometries and tomographic data, providing a detailed explanation of the graph's structure for circular, cone-beam geometries. Second, we propose GLM, a hybrid neural network architecture that leverages both graph and grid convolutions to process tomographic data. We demonstrate that GLM outperforms CNNs when performance is quantified in terms of structural similarity and peak signal-to-noise ratio, despite the fact that GLM uses only a fraction of the trainable parameters. Compared to CNNs, GLM also requires significantly less training time and memory, and its memory requirements scale better. Crucially, GLM demonstrates robust generalization to unseen variations in the acquisition geometry, like when training only on fully sampled CT data and then testing on sparse-view CT data.",
+    "status": "found"
+  },
+  "2511.12731": {
+    "arxiv_id": "2511.12731",
+    "title": "Kagome metals",
+    "authors": [
+      "Domenico Di Sante",
+      "Titus Neupert",
+      "Giorgio Sangiovanni",
+      "Ronny Thomale",
+      "Riccardo Comin",
+      "Ilija Zeljkovic",
+      "Joseph G. Checkelsky",
+      "Stephen D. Wilson"
+    ],
+    "submission_date": "2025-11-16T18:58:14Z",
+    "latest_updated": "2025-11-16T18:58:14Z",
+    "revised_dates": null,
+    "venue": "Rev. Mod. Phys. 98, 015002 (2026)",
+    "latest_version": 1,
+    "versions": [
+      "2511.12731v1"
+    ],
+    "abstract": "Three important driving forces for creating qualitatively new phases in quantum materials are the topology of the materials' electronic band structures, frustration in the electrons' motion or magnetic interactions, and strong correlations between their charge, spin, and orbital degrees of freedom. In very few material systems do all of these aspects come together to contribute on an equal footing to stabilize new electronic states with unprecedented properties; however the search for such systems can be guided by models of configurational motifs or key sublattices that can host such physics. One of the most fascinating structural motifs for realizing this rich interplay of frustration, electronic topology, and electron correlation effects is the kagome lattice. In this review, we provide an overview of the theoretical underpinnings driving the physics of kagome lattices, and we then discuss experimental progress in realizing novel states enabled by kagome networks in crystalline materials. Different material classes are discussed with an emphasis on the phenomenologies of their electronic states and how they map to interactions arising from their kagome lattices.",
+    "status": "found"
+  },
+  "2511.12732": {
+    "arxiv_id": "2511.12732",
+    "title": "Scalable and Communication-Efficient Varying Coefficient Mixed Effect Models: Methodology, Theory, and Applications",
+    "authors": [
+      "Lida Chalangar Jalili Dehkharghani",
+      "Li-Hsiang Lin"
+    ],
+    "submission_date": "2025-11-16T18:58:31Z",
+    "latest_updated": "2026-05-28T16:32:54Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2511.12732v1",
+      "2511.12732v2",
+      "2511.12732v3"
+    ],
+    "abstract": "Human migration exhibits complex spatiotemporal dependence driven by environmental and socioeconomic forces. Modeling such patterns at scale requires methods that accommodate many random effects while remaining feasible when raw data or large design matrices cannot be freely shared across distributed nodes. We develop a communication-efficient inference framework for Varying Coefficient Mixed Models (VCMMs) with flexible mean structures and large correlated random-effect components. Using a Bayesian hierarchical representation of penalized splines, we derive sufficient statistics that preserve each node's likelihood contribution and recover the estimator from the full data under unrestricted communication. Under communication constraints, these statistics support a one-step communication-efficient estimator with first-order efficiency. An SVD-enhanced implementation stabilizes large or ill-conditioned random-effect covariance operators. Theory establishes likelihood preservation, convergence, asymptotic efficiency, and finite-sample concentration. Simulations and U.S. migration-flow data demonstrate accuracy, scalability, and recovery of dynamic spatial patterns.",
+    "status": "found"
+  },
+  "2511.12733": {
+    "arxiv_id": "2511.12733",
+    "title": "Near Field Tapering with Slepian Window: Balancing the Range Angle Sidelobe Trade off",
+    "authors": [
+      "Ahmed Hussain",
+      "Ahmed Sultan",
+      "Asmaa Abdallah",
+      "Abdulkadir Celik",
+      "Ahmed M. Eltawil"
+    ],
+    "submission_date": "2025-11-16T19:00:03Z",
+    "latest_updated": "2025-11-16T19:00:03Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.12733v1"
+    ],
+    "abstract": "Near-field beamforming enables target discrimination in both range (axial) and angle (lateral) dimensions. Elevated sidelobes along either dimension, however, increase susceptibility to interference and degrade detection performance. Conventional amplitude tapering techniques, designed for far-field scenarios, cannot simultaneously suppress axial and lateral sidelobes in near-field. In this letter, we propose a Slepian-based amplitude tapering approach that maximizes mainlobe energy concentration, achieving significant sidelobe reduction in both dimensions. Numerical results show that the proposed taper improves peak sidelobe suppression by approximately 24 dB in the lateral domain and 10 dB in the axial domain compared to a conventional uniform window.",
+    "status": "found"
+  },
+  "2511.12734": {
+    "arxiv_id": "2511.12734",
+    "title": "On the Harmonic characteristic polynomial of specific graphs",
+    "authors": [
+      "Sadruddin Rahimi",
+      "Saeid Alikhani"
+    ],
+    "submission_date": "2025-11-16T19:00:32Z",
+    "latest_updated": "2025-11-16T19:00:32Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.12734v1"
+    ],
+    "abstract": "This paper explores the Harmonic matrix $MH(G)$ associated with a simple graph $ G $, where each entry corresponds to $ \\frac{2}{d_i + d_j} $ for adjacent vertices $ v_i $ and $ v_j $. We investigate the spectral properties of this matrix, particularly focusing on its eigenvalues. A central objective of this work is to compute the Harmonic characteristic polynomial. Furthermore, we analyze the Harmonic energy $ HE(G) $ of a graph as the sum of the absolute values of the eigenvalues of $ MH(G) $. Explicit expressions for both the Harmonic characteristic polynomial and the Harmonic energy are derived for several specific classes of graphs.",
+    "status": "found"
+  },
+  "2511.12735": {
+    "arxiv_id": "2511.12735",
+    "title": "Backdoor Attacks on Open Vocabulary Object Detectors via Multi-Modal Prompt Tuning",
+    "authors": [
+      "Ankita Raj",
+      "Chetan Arora"
+    ],
+    "submission_date": "2025-11-16T19:05:31Z",
+    "latest_updated": "2026-01-13T12:36:18Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.12735v1",
+      "2511.12735v2"
+    ],
+    "abstract": "Open-vocabulary object detectors (OVODs) unify vision and language to detect arbitrary object categories based on text prompts, enabling strong zero-shot generalization to novel concepts. As these models gain traction in high-stakes applications such as robotics, autonomous driving, and surveillance, understanding their security risks becomes crucial. In this work, we conduct the first study of backdoor attacks on OVODs and reveal a new attack surface introduced by prompt tuning. We propose TrAP (Trigger-Aware Prompt tuning), a multi-modal backdoor injection strategy that jointly optimizes prompt parameters in both image and text modalities along with visual triggers. TrAP enables the attacker to implant malicious behavior using lightweight, learnable prompt tokens without retraining the base model weights, thus preserving generalization while embedding a hidden backdoor. We adopt a curriculum-based training strategy that progressively shrinks the trigger size, enabling effective backdoor activation using small trigger patches at inference. Experiments across multiple datasets show that TrAP achieves high attack success rates for both object misclassification and object disappearance attacks, while also improving clean image performance on downstream datasets compared to the zero-shot setting. Code: https://github.com/rajankita/TrAP",
+    "status": "found"
+  },
+  "2511.12736": {
+    "arxiv_id": "2511.12736",
+    "title": "Diamonds on trees",
+    "authors": [
+      "Osvaldo Guzmán",
+      "Carlos López-Callejas"
+    ],
+    "submission_date": "2025-11-16T19:06:56Z",
+    "latest_updated": "2026-02-15T16:18:14Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.12736v1",
+      "2511.12736v2"
+    ],
+    "abstract": "We generalize the diamond principle and its variants using the notion of stationarity in trees introduced by Brodsky in [Brodsky, A. M., A theory of stationary trees and the balanced Baumgartner--Hajnal--Todorcevic theorem for trees. The Bulletin of Symbolic Logic]. In particular, we show that if $T$ is a nonspecial $ω_1$-tree, then $\\diamondsuit_T \\implies \\diamondsuit$, and if $T$ is a Suslin tree, then $\\diamondsuit_T \\iff \\diamondsuit$. We also prove that $\\diamondsuit^*$ implies $\\diamondsuit_T$ (yielding the consistency of $\\diamondsuit_T$) and establish the consistency of $\\neg\\diamondsuit^* + (\\forall T\\text{ nonspecial }ω_1\\text{-tree }(\\diamondsuit_T))$. Finally, we demonstrate that it is consistent with $\\diamondsuit$ that there exists a nonspecial $ω_1$-tree with $(\\neg\\diamondsuit_T)$, introducing two forcing properties -- $σ(S)$-closed and strategically closed in models -- which are preserved under countable support iterations.",
+    "status": "found"
+  },
+  "2511.12737": {
+    "arxiv_id": "2511.12737",
+    "title": "From Images to Physics: Probabilistic Inference of Galaxy Parameters and Emission Lines via VAE & Normalizing Flows",
+    "authors": [
+      "Adiba Amira Siddiqa",
+      "Sayed Shafaat Mahmud",
+      "Rafael Martinez-Galarza"
+    ],
+    "submission_date": "2025-11-16T19:08:29Z",
+    "latest_updated": "2025-11-16T19:08:29Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.12737v1"
+    ],
+    "abstract": "We introduce a Variational Autoencoder (VAE)--Normalizing Flow (NF) framework for rapid probabilistic inference of galaxy properties and emission line fluxes at $z \\leq 0.3$ from SDSS \\textit{gri} imaging and photometry. Our model probabilistically infers stellar mass, star formation rate (SFR), redshift, gas-phase metallicity, and central black hole mass for a given galaxy. The model accruacy matches current non-spectroscopic methods for stellar mass and redshift, surpasses them for SFR and metallicity, and introduces the first probabilistic central black hole mass estimates from imaging + photometry. It also delivers probabilistic estimates of H$α$, H$β$, [N~\\textsc{ii}], and [O~\\textsc{iii}] emission line fluxes directly from imaging, enabling SFR, metallicity, dust, and AGN/shock diagnostics without spectroscopy. This approach opens new pathways for scalable, physics-informed inference in upcoming surveys such as Roman and Rubin LSST.",
+    "status": "found"
+  },
+  "2511.12738": {
+    "arxiv_id": "2511.12738",
+    "title": "Direct Visual Grounding by Directing Attention of Visual Tokens",
+    "authors": [
+      "Parsa Esmaeilkhani",
+      "Longin Jan Latecki"
+    ],
+    "submission_date": "2025-11-16T19:09:21Z",
+    "latest_updated": "2026-08-07T04:34:22Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.12738v1",
+      "2511.12738v2"
+    ],
+    "abstract": "Vision Language Models (VLMs) mix visual tokens and text tokens. A puzzling issue is the fact that visual tokens most related to the query receive little to no attention in the final layers of the LLM module of VLMs from the answer tokens, where all tokens are treated equally, in particular, visual and language tokens in the LLM attention layers. This fact may result in wrong answers to visual questions, as our experimental results confirm. It appears that the standard next-token prediction (NTP) loss provides an insufficient signal for directing attention to visual tokens. We hypothesize that a more direct supervision of the attention of visual tokens to corresponding language tokens in the LLM module of VLMs will lead to improved performance on visual tasks. To demonstrate that this is indeed the case, we propose a novel loss function that directly supervises the attention of visual tokens. It directly grounds the answer language tokens in images by directing their attention to the relevant visual tokens. This is achieved by aligning the attention distribution of visual tokens to ground truth attention maps with KL divergence. The ground truth attention maps are obtained from task geometry in synthetic cases or from standard grounding annotations (e.g., bounding boxes or point annotations) in real images, and are used inside the LLM for attention supervision without requiring new labels. The obtained KL attention loss (KLAL) when combined with NTP encourages VLMs to attend to relevant visual tokens while generating answer tokens. This results in notable improvements across geometric tasks, pointing, and referring expression comprehension on both synthetic and real-world data, as demonstrated by our experiments. We also introduce a new dataset to evaluate the line tracing abilities of VLMs. Surprisingly, even commercial VLMs do not perform well on this task.",
+    "status": "found"
+  },
+  "2511.12739": {
+    "arxiv_id": "2511.12739",
+    "title": "ProxyPrints: From Database Breach to Spoof, A Plug-and-Play Defense for Biometric Systems",
+    "authors": [
+      "Yaniv Hacmon",
+      "Keren Gorelik",
+      "Gilad Gressel",
+      "Yisroel Mirsky"
+    ],
+    "submission_date": "2025-11-16T19:12:36Z",
+    "latest_updated": "2025-11-16T19:12:36Z",
+    "revised_dates": null,
+    "venue": "2025 Annual Computer Security Applications Conference (ACSAC)",
+    "latest_version": 1,
+    "versions": [
+      "2511.12739v1"
+    ],
+    "abstract": "Fingerprint recognition systems are widely deployed for authentication and forensic applications, but the security of stored fingerprint data remains a critical vulnerability. While many systems avoid storing raw fingerprint images in favor of minutiae-based templates, recent research shows that these templates can be reverse-engineered to reconstruct realistic fingerprint images, enabling physical spoofing attacks that compromise user identities with no means of remediation. We present ProxyPrints, the first practical defense that brings cancellable biometrics to existing fingerprint recognition systems without requiring modifications to proprietary matching software. ProxyPrints acts as a transparent middleware layer between the fingerprint scanner and the matching algorithm, transforming each scanned fingerprint into a consistent, unlinkable alias. This transformation allows biometric identities to be revoked and replaced in the event of a breach, without affecting authentication accuracy. Additionally, ProxyPrints provides organizations with breach detection capabilities by enabling the identification of out-of-band spoofing attempts involving compromised aliases. We evaluate ProxyPrints on standard benchmark datasets and commercial fingerprint recognition systems, demonstrating that it preserves matching performance while offering strong security and revocability. Our open-source implementation includes tools for alias generation and deployment in real-world pipelines, making ProxyPrints a drop-in, scalable solution for fingerprint data protection.",
+    "status": "found"
+  },
+  "2511.12740": {
+    "arxiv_id": "2511.12740",
+    "title": "Deep Imbalanced Multi-Target Regression: 3D Point Cloud Voxel Content Estimation in Simulated Forests",
+    "authors": [
+      "Amirhossein Hassanzadeh",
+      "Bartosz Krawczyk",
+      "Michael Saunders",
+      "Rob Wible",
+      "Keith Krause",
+      "Dimah Dera",
+      "Jan van Aardt"
+    ],
+    "submission_date": "2025-11-16T19:14:13Z",
+    "latest_updated": "2025-11-16T19:14:13Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.12740v1"
+    ],
+    "abstract": "Voxelization is an effective approach to reduce the computational cost of processing Light Detection and Ranging (LiDAR) data, yet it results in a loss of fine-scale structural information. This study explores whether low-level voxel content information, specifically target occupancy percentage within a voxel, can be inferred from high-level voxelized LiDAR point cloud data collected from Digital Imaging and remote Sensing Image Generation (DIRSIG) software. In our study, the targets include bark, leaf, soil, and miscellaneous materials. We propose a multi-target regression approach in the context of imbalanced learning using Kernel Point Convolutions (KPConv). Our research leverages cost-sensitive learning to address class imbalance called density-based relevance (DBR). We employ weighted Mean Saquared Erorr (MSE), Focal Regression (FocalR), and regularization to improve the optimization of KPConv. This study performs a sensitivity analysis on the voxel size (0.25 - 2 meters) to evaluate the effect of various grid representations in capturing the nuances of the forest. This sensitivity analysis reveals that larger voxel sizes (e.g., 2 meters) result in lower errors due to reduced variability, while smaller voxel sizes (e.g., 0.25 or 0.5 meter) exhibit higher errors, particularly within the canopy, where variability is greatest. For bark and leaf targets, error values at smaller voxel size datasets (0.25 and 0.5 meter) were significantly higher than those in larger voxel size datasets (2 meters), highlighting the difficulty in accurately estimating within-canopy voxel content at fine resolutions. This suggests that the choice of voxel size is application-dependent. Our work fills the gap in deep imbalance learning models for multi-target regression and simulated datasets for 3D LiDAR point clouds of forests.",
+    "status": "found"
+  },
+  "2511.12741": {
+    "arxiv_id": "2511.12741",
+    "title": "Pointwise bounds on Dirichlet Green's functions for a singular drift term",
+    "authors": [
+      "Aritro Pathak"
+    ],
+    "submission_date": "2025-11-16T19:15:23Z",
+    "latest_updated": "2026-04-23T17:29:26Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2511.12741v1",
+      "2511.12741v2",
+      "2511.12741v3"
+    ],
+    "abstract": "We introduce a technique to obtain pointwise upper and lower bounds for the Green's function of elliptic operators whose principal part is the Laplacian and that include a drift term diverging near the boundary like a power of the inverse distance with exponent less than 1, in the unit ball B(0,1) \\subset \\mathbb{R}^n, n \\ge 3. The constants in the upper estimates are uniform in B(0,r) for each r < 1, with explicit dependence on r. The drift here belongs to C^{1,α}_{\\mathrm{loc}} and may, more generally, be majorized by a function radially integrable up to the boundary. These appear to be the first such estimates for non-coercive drifts and remain new even for smooth drifts, suggesting extensions to singular potentials and other settings where energy methods fail.",
+    "status": "found"
+  },
+  "2511.12742": {
+    "arxiv_id": "2511.12742",
+    "title": "Stabilizing Self-Consuming Diffusion Models with Latent Space Filtering",
+    "authors": [
+      "Zhongteng Cai",
+      "Yaxuan Wang",
+      "Yang Liu",
+      "Xueru Zhang"
+    ],
+    "submission_date": "2025-11-16T19:17:00Z",
+    "latest_updated": "2025-11-16T19:17:00Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.12742v1"
+    ],
+    "abstract": "As synthetic data proliferates across the Internet, it is often reused to train successive generations of generative models. This creates a ``self-consuming loop\" that can lead to training instability or \\textit{model collapse}. Common strategies to address the issue -- such as accumulating historical training data or injecting fresh real data -- either increase computational cost or require expensive human annotation. In this paper, we empirically analyze the latent space dynamics of self-consuming diffusion models and observe that the low-dimensional structure of latent representations extracted from synthetic data degrade over generations. Based on this insight, we propose \\textit{Latent Space Filtering} (LSF), a novel approach that mitigates model collapse by filtering out less realistic synthetic data from mixed datasets. Theoretically, we present a framework that connects latent space degradation to empirical observations. Experimentally, we show that LSF consistently outperforms existing baselines across multiple real-world datasets, effectively mitigating model collapse without increasing training cost or relying on human annotation.",
+    "status": "found"
+  },
+  "2511.12743": {
+    "arxiv_id": "2511.12743",
+    "title": "An Evaluation Framework for Network IDS/IPS Datasets: Leveraging MITRE ATT&CK and Industry Relevance Metrics",
+    "authors": [
+      "Adrita Rahman Tori",
+      "Khondokar Fida Hasan"
+    ],
+    "submission_date": "2025-11-16T19:17:00Z",
+    "latest_updated": "2025-11-16T19:17:00Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.12743v1"
+    ],
+    "abstract": "The performance of Machine Learning (ML) and Deep Learning (DL)-based Intrusion Detection and Prevention Systems (IDS/IPS) is critically dependent on the relevance and quality of the datasets used for training and evaluation. However, current AI model evaluation practices for developing IDS/IPS focus predominantly on accuracy metrics, often overlooking whether datasets represent industry-specific threats. To address this gap, we introduce a novel multi-dimensional framework that integrates the MITRE ATT&CK knowledge base for threat intelligence and employs five complementary metrics that together provide a comprehensive assessment of dataset suitability. Methodologically, this framework combines threat intelligence, natural language processing, and quantitative analysis to assess the suitability of datasets for specific industry contexts. Applying this framework to nine publicly available IDS/IPS datasets reveals significant gaps in threat coverage, particularly in the healthcare, energy, and financial sectors. In particular, recent datasets (e.g., CIC-IoMT, CIC-UNSW-NB15) align better with sector-specific threats, whereas others, like CICIoV-24, underperform despite their recency. Our findings provide a standardized, interpretable approach for selecting datasets aligned with sector-specific operational requirements, ultimately enhancing the real-world effectiveness of AI-driven IDS/IPS deployments. The efficiency and practicality of the framework are validated through deployment in a real-world case study, underscoring its capacity to inform dataset selection and enhance the effectiveness of AI-driven IDS/IPS in operational environments.",
+    "status": "found"
+  },
+  "2511.12744": {
+    "arxiv_id": "2511.12744",
+    "title": "SAGE: Saliency-Guided Contrastive Embeddings",
+    "authors": [
+      "Colton R. Crum",
+      "Christopher Sweet",
+      "Adam Czajka"
+    ],
+    "submission_date": "2025-11-16T19:19:59Z",
+    "latest_updated": "2025-12-05T15:58:18Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.12744v1",
+      "2511.12744v2"
+    ],
+    "abstract": "Integrating human perceptual priors into the training of neural networks has been shown to raise model generalization, serve as an effective regularizer, and align models with human expertise for applications in high-risk domains. Existing approaches to integrate saliency into model training often rely on internal model mechanisms, which recent research suggests may be unreliable. Our insight is that many challenges associated with saliency-guided training stem from the placement of the guidance approaches solely within the image space. Instead, we move away from the image space, use the model's latent space embeddings to steer human guidance during training, and we propose SAGE (Saliency-Guided Contrastive Embeddings): a loss function that integrates human saliency into network training using contrastive embeddings. We apply salient-preserving and saliency-degrading signal augmentations to the input and capture the changes in embeddings and model logits. We guide the model towards salient features and away from non-salient features using a contrastive triplet loss. Additionally, we perform a sanity check on the logit distributions to ensure that the model outputs match the saliency-based augmentations. We demonstrate a boost in classification performance across both open- and closed-set scenarios against SOTA saliency-based methods, showing SAGE's effectiveness across various backbones, and include experiments to suggest its wide generalization across tasks.",
+    "status": "found"
+  },
+  "2511.12745": {
+    "arxiv_id": "2511.12745",
+    "title": "DIVIDE: A Framework for Learning from Independent Multi-Mechanism Data Using Deep Encoders and Gaussian Processes",
+    "authors": [
+      "Vivek Chawla",
+      "Boris Slautin",
+      "Utkarsh Pratiush",
+      "Dayakar Penumadu",
+      "Sergei Kalinin"
+    ],
+    "submission_date": "2025-11-16T19:22:59Z",
+    "latest_updated": "2025-11-16T19:22:59Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.12745v1"
+    ],
+    "abstract": "Scientific datasets often arise from multiple independent mechanisms such as spatial, categorical or structural effects, whose combined influence obscures their individual contributions. We introduce DIVIDE, a framework that disentangles these influences by integrating mechanism-specific deep encoders with a structured Gaussian Process in a joint latent space. Disentanglement here refers to separating independently acting generative factors. The encoders isolate distinct mechanisms while the Gaussian Process captures their combined effect with calibrated uncertainty. The architecture supports structured priors, enabling interpretable and mechanism-aware prediction as well as efficient active learning. DIVIDE is demonstrated on synthetic datasets combining categorical image patches with nonlinear spatial fields, on FerroSIM spin lattice simulations of ferroelectric patterns, and on experimental PFM hysteresis loops from PbTiO3 films. Across benchmarks, DIVIDE separates mechanisms, reproduces additive and scaled interactions, and remains robust under noise. The framework extends naturally to multifunctional datasets where mechanical, electromagnetic or optical responses coexist.",
+    "status": "found"
+  },
+  "2511.12746": {
+    "arxiv_id": "2511.12746",
+    "title": "Giant number-parity effect and scalable spin squeezing in Luttinger liquids",
+    "authors": [
+      "Filippo Caleca",
+      "Saverio Bocini",
+      "Fabio Mezzacapo",
+      "Tommaso Roscilde"
+    ],
+    "submission_date": "2025-11-16T19:23:25Z",
+    "latest_updated": "2025-11-16T19:23:25Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.12746v1"
+    ],
+    "abstract": "Finite-size quantum spin systems can be magnetized by the application of a symmetry-breaking field, but in general their symmetry is expected to be restored once the field is turned off adiabatically. Recently (F. Caleca et al., arXiv:2412.15493) we have shown that systems of half-integer spins with an odd number of sites and a parity-preserving Hamiltonian can retain a finite magnetization, hence exhibiting spontaneous symmetry breaking (SSB) at finite size. Here we generalize this phenomenon to spin chains whose low-energy physics (in zero field) realizes a Luttinger-liquid phase. We observe that odd-sized chains can exhibit a phenomenon of finite-size quasi-SSB, in which a net sub-extensive magnetization, $M \\sim N^{1-1/(4K)}$ is retained, where $N$ is the number of sites and $K$ the Luttinger exponent. Interestingly, the states prepared by turning off the symmetry-breaking field quasi-adiabatically display scalable spin squeezing -- namely stronger the bigger the system -- regardless of the parity of $N$. The scaling of the squeezing parameter is dictated again by the Luttinger exponent, $ξ_R^2 \\sim N^{-1+1/(2K)}$. This result shows that scalable quantum correlations with metrological significance, associated typically with high-dimensional systems, can be found as well in gapless one-dimensional ones; and they are a direct consequence of the critical nature of Luttinger liquids.",
+    "status": "found"
+  },
+  "2511.12747": {
+    "arxiv_id": "2511.12747",
+    "title": "BMO solvability with singular drifts on ample sawtooth domains implies $L^p$ solvability",
+    "authors": [
+      "Aritro Pathak"
+    ],
+    "submission_date": "2025-11-16T19:23:40Z",
+    "latest_updated": "2026-08-26T09:18:43Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2511.12747v1",
+      "2511.12747v2",
+      "2511.12747v3"
+    ],
+    "abstract": "For a linear elliptic operator with a singular drift that satisfies a finite Carleson measure condition, we prove that there exist `ample' sawtooth domains of the unit ball $B(0,1)\\subset \\R^{n+1}$ so that a BMO solvability assumption in these sawtooth subdomains implies that the elliptic measure satisfies the weak $A_\\infty$ condition with respect to the surface measure on this `ample' sawtooth domain. This is a quantifiable absolute continuity condition, which is equivalent to saying the $L^p$ Dirichlet problem is solvable for some $1<p<\\infty$. Such singular drifts have been considered in the literature in the context of perturbative $L^p$ Dirichlet solvability problems, by Hofmann-Lewis and Kenig-Pipher. By an ample sawtooth domain, we mean a sawtooth domain whose boundary coincides with the boundary of the unit ball, except for an arbitrarily small fraction. The methods can be naturally extended to show the result for more general bounded Lipschitz domains.",
+    "status": "found"
+  },
+  "2511.12748": {
+    "arxiv_id": "2511.12748",
+    "title": "Dispersive estimates and long-time validity for Bogoliubov dynamics of interacting Bose gases",
+    "authors": [
+      "Phan Thành Nam",
+      "Simone Rademacher",
+      "Avy Soffer"
+    ],
+    "submission_date": "2025-11-16T19:23:47Z",
+    "latest_updated": "2026-02-05T14:35:07Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2511.12748v1",
+      "2511.12748v2",
+      "2511.12748v3"
+    ],
+    "abstract": "We consider the Bogoliubov approximation for the many-body quantum dynamics of weakly interacting Bose gases and establish a uniform-in-time validity of the Bogoliubov theory. The proof relies on a detailed analysis of the dispersive behavior of the symplectic Bogoliubov dynamics, which allows for a rigorous derivation of the Bogoliubov theory as an effective description of quantum fluctuations around the Bose-Einstein condensate on all time scales.",
+    "status": "found"
+  }
+}

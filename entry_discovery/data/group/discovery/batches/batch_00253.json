@@ -1,0 +1,425 @@
+{
+  "2601.18216": {
+    "arxiv_id": "2601.18216",
+    "title": "Rhea: Detecting Privilege-Escalated Evasive Ransomware Attacks Using Format-Aware Validation in the Cloud",
+    "authors": [
+      "Beom Heyn Kim",
+      "Seok Min Hong",
+      "Mohammad Mannan"
+    ],
+    "submission_date": "2026-01-26T07:05:09Z",
+    "latest_updated": "2026-01-26T07:05:09Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.18216v1"
+    ],
+    "abstract": "Ransomware variants increasingly combine privilege escalation with sophisticated evasion strategies such as intermittent encryption, low-entropy encryption, and imitation attacks. Such powerful ransomware variants, privilege-escalated evasive ransomware (PEER), can defeat existing solutions relying on I/O-pattern analysis by tampering with or obfuscating I/O traces. Meanwhile, conventional statistical content-based detection becomes unreliable as the encryption size decreases due to sampling noises. We present Rhea, a cloud-offloaded ransomware defense system that analyzes replicated data snapshots, so-called mutation snapshots. Rhea introduces Format-Aware Validation that validates the syntactic and semantic correctness of file formats, instead of relying on statistical or entropy-based indicators. By leveraging file-format specifications as detection invariants, Rhea can reliably identify fine-grained and evasive encryption even under elevated attacker privileges. Our evaluation demonstrates that Rhea significantly outperforms existing approaches, establishing its practical effectiveness against modern ransomware threats.",
+    "status": "found"
+  },
+  "2601.18217": {
+    "arxiv_id": "2601.18217",
+    "title": "Paying Less Generalization Tax: A Cross-Domain Generalization Study of RL Training for LLM Agents",
+    "authors": [
+      "Zhihan Liu",
+      "Lin Guan",
+      "Yixin Nie",
+      "Kai Zhang",
+      "Zhuoqun Hao",
+      "Lin Chen",
+      "Asli Celikyilmaz",
+      "Zhaoran Wang",
+      "Na Zhang"
+    ],
+    "submission_date": "2026-01-26T07:07:03Z",
+    "latest_updated": "2026-01-26T07:07:03Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.18217v1"
+    ],
+    "abstract": "Generalist LLM agents are often post-trained on a narrow set of environments but deployed across far broader, unseen domains. In this work, we investigate the challenge of agentic post-training when the eventual test domains are unknown. Specifically, we analyze which properties of reinforcement learning (RL) environments and modeling choices have the greatest influence on out-of-domain performance. First, we identify two environment axes that strongly correlate with cross-domain generalization: (i) state information richness, i.e., the amount of information for the agent to process from the state, and (ii) planning complexity, estimated via goal reachability and trajectory length under a base policy. Notably, domain realism and text-level similarity are not the primary factors; for instance, the simple grid-world domain Sokoban leads to even stronger generalization in SciWorld than the more realistic ALFWorld. Motivated by these findings, we further show that increasing state information richness alone can already effectively improve cross-domain robustness. We propose a randomization technique, which is low-overhead and broadly applicable: add small amounts of distractive goal-irrelevant features to the state to make it richer without altering the task. Beyond environment-side properties, we also examine several modeling choices: (a) SFT warmup or mid-training helps prevent catastrophic forgetting during RL but undermines generalization to domains that are not included in the mid-training datamix; and (b) turning on step-by-step thinking during RL, while not always improving in-domain performance, plays a crucial role in preserving generalization.",
+    "status": "found"
+  },
+  "2601.18218": {
+    "arxiv_id": "2601.18218",
+    "title": "PaperTok: Exploring the Use of Generative AI for Creating Short-form Videos for Research Communication",
+    "authors": [
+      "Meziah Ruby Cristobal",
+      "Hyeonjeong Byeon",
+      "Tze-Yu Chen",
+      "Ruoxi Shang",
+      "Donghoon Shin",
+      "Ruican Zhong",
+      "Tony Zhou",
+      "Gary Hsieh"
+    ],
+    "submission_date": "2026-01-26T07:08:57Z",
+    "latest_updated": "2026-01-26T07:08:57Z",
+    "revised_dates": null,
+    "venue": "In Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems (CHI '26), Apr 13-17, 2026, Barcelona, Spain. ACM, New York, NY, USA",
+    "latest_version": 1,
+    "versions": [
+      "2601.18218v1"
+    ],
+    "abstract": "The dissemination of scholarly research is critical, yet researchers often lack the time and skills to create engaging content for popular media such as short-form videos. To address this gap, we explore the use of generative AI to help researchers transform their academic papers into accessible video content. Informed by a formative study with science communicators and content creators (N=8), we designed PaperTok, an end-to-end system that automates the initial creative labor by generating script options and corresponding audiovisual content from a source paper. Researchers can then refine based on their preferences with further prompting. A mixed-methods user study (N=18) and crowdsourced evaluation (N=100) demonstrate that PaperTok's workflow can help researchers create engaging and informative short-form videos. We also identified the need for more fine-grained controls in the creation process. To this end, we offer implications for future generative tools that support science outreach.",
+    "status": "found"
+  },
+  "2601.18219": {
+    "arxiv_id": "2601.18219",
+    "title": "Automated HER2 scoring with uncertainty quantification using lensfree holography and deep learning",
+    "authors": [
+      "Che-Yung Shen",
+      "Xilin Yang",
+      "Yuzhu Li",
+      "Leon Lenk",
+      "Aydogan Ozcan"
+    ],
+    "submission_date": "2026-01-26T07:09:08Z",
+    "latest_updated": "2026-01-26T07:09:08Z",
+    "revised_dates": null,
+    "venue": "BME Frontiers, AAAS (2026)",
+    "latest_version": 1,
+    "versions": [
+      "2601.18219v1"
+    ],
+    "abstract": "Accurate assessment of human epidermal growth factor receptor 2 (HER2) expression is critical for breast cancer diagnosis, prognosis, and therapy selection; yet, most existing digital HER2 scoring methods rely on bulky and expensive optical systems. Here, we present a compact and cost-effective lensfree holography platform integrated with deep learning for automated HER2 scoring of immunohistochemically stained breast tissue sections. The system captures lensfree diffraction patterns of stained HER2 tissue sections under RGB laser illumination and acquires complex field information over a sample area of ~1,250 mm^2 at an effective throughput of ~84 mm^2 per minute. To enhance diagnostic reliability, we incorporated an uncertainty quantification strategy based on Bayesian Monte Carlo dropout, which provides autonomous uncertainty estimates for each prediction and supports reliable, robust HER2 scoring, with an overall correction rate of 30.4%. Using a blinded test set of 412 unique tissue samples, our approach achieved a testing accuracy of 84.9% for 4-class (0, 1+, 2+, 3+) HER2 classification and 94.8% for binary (0/1+ vs. 2+/3+) HER2 scoring with uncertainty quantification. Overall, this lensfree holography approach provides a practical pathway toward portable, high-throughput, and cost-effective HER2 scoring, particularly suited for resource-limited settings, where traditional digital pathology infrastructure is unavailable.",
+    "status": "found"
+  },
+  "2601.18220": {
+    "arxiv_id": "2601.18220",
+    "title": "LLM-ForcedAligner: A Non-Autoregressive and Accurate LLM-Based Forced Aligner for Multilingual and Long-Form Speech",
+    "authors": [
+      "Bingshen Mu",
+      "Xian Shi",
+      "Xiong Wang",
+      "Hexin Liu",
+      "Jin Xu",
+      "Lei Xie"
+    ],
+    "submission_date": "2026-01-26T07:11:48Z",
+    "latest_updated": "2026-01-30T03:29:28Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.18220v1",
+      "2601.18220v2"
+    ],
+    "abstract": "Forced alignment (FA) predicts start and end timestamps for words or characters in speech, but existing methods are language-specific and prone to cumulative temporal shifts. The multilingual speech understanding and long-sequence processing abilities of speech large language models (SLLMs) make them promising for FA in multilingual, crosslingual, and long-form speech settings. However, directly applying the next-token prediction paradigm of SLLMs to FA results in hallucinations and slow inference. To bridge the gap, we propose LLM-ForcedAligner, reformulating FA as a slot-filling paradigm: timestamps are treated as discrete indices, and special timestamp tokens are inserted as slots into the transcript. Conditioned on the speech embeddings and the transcript with slots, the SLLM directly predicts the time indices at slots. During training, causal attention masking with non-shifted input and label sequences allows each slot to predict its own timestamp index based on itself and preceding context, with loss computed only at slot positions. Dynamic slot insertion enables FA at arbitrary positions. Moreover, non-autoregressive inference is supported, avoiding hallucinations and improving speed. Experiments across multilingual, crosslingual, and long-form speech scenarios show that LLM-ForcedAligner achieves a 69%~78% relative reduction in accumulated averaging shift compared with prior methods. Checkpoint and inference code are available at https://github.com/QwenLM/Qwen3-ASR.",
+    "status": "found"
+  },
+  "2601.18221": {
+    "arxiv_id": "2601.18221",
+    "title": "Elliptic genera and E8 Bundles in odd dimensions",
+    "authors": [
+      "Siyao Liu",
+      "Yong Wang"
+    ],
+    "submission_date": "2026-01-26T07:13:24Z",
+    "latest_updated": "2026-01-26T07:13:24Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.18221v1"
+    ],
+    "abstract": "This paper aims to derive new anomaly cancellation formulas by combining modular forms with E8 and E8*E8 bundles. To this end, we systematically twist and generalize known SL(2,Z) modular forms to define new modular forms associated with these bundles on odd-dimensional spin and spin^c manifolds, leading to a new series of anomaly cancellation formulas.",
+    "status": "found"
+  },
+  "2601.18222": {
+    "arxiv_id": "2601.18222",
+    "title": "HomoFM: Deep Homography Estimation with Flow Matching",
+    "authors": [
+      "Mengfan He",
+      "Liangzheng Sun",
+      "Chunyu Li",
+      "Ziyang Meng"
+    ],
+    "submission_date": "2026-01-26T07:17:32Z",
+    "latest_updated": "2026-01-26T07:17:32Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.18222v1"
+    ],
+    "abstract": "Deep homography estimation has broad applications in computer vision and robotics. Remarkable progresses have been achieved while the existing methods typically treat it as a direct regression or iterative refinement problem and often struggling to capture complex geometric transformations or generalize across different domains. In this work, we propose HomoFM, a new framework that introduces the flow matching technique from generative modeling into the homography estimation task for the first time. Unlike the existing methods, we formulate homography estimation problem as a velocity field learning problem. By modeling a continuous and point-wise velocity field that transforms noisy distributions into registered coordinates, the proposed network recovers high-precision transformations through a conditional flow trajectory. Furthermore, to address the challenge of domain shifts issue, e.g., the cases of multimodal matching or varying illumination scenarios, we integrate a gradient reversal layer (GRL) into the feature extraction backbone. This domain adaptation strategy explicitly constrains the encoder to learn domain-invariant representations, significantly enhancing the network's robustness. Extensive experiments demonstrate the effectiveness of the proposed method, showing that HomoFM outperforms state-of-the-art methods in both estimation accuracy and robustness on standard benchmarks. Code and data resource are available at https://github.com/hmf21/HomoFM.",
+    "status": "found"
+  },
+  "2601.18223": {
+    "arxiv_id": "2601.18223",
+    "title": "Minimal spectral radius of graphs with given matching number",
+    "authors": [
+      "Jiaqi Liu",
+      "Zhenzhen Lou",
+      "Vilmar Trevisan"
+    ],
+    "submission_date": "2026-01-26T07:21:35Z",
+    "latest_updated": "2026-01-26T07:21:35Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.18223v1"
+    ],
+    "abstract": "The Brualdi-Solheid problem asks which graph achieves the extremal (maximum or minimum) spectral radius for a given class of graphs. This paper addresses the Brualdi-Solheid problem for \\( \\mathcal{G}_{n,β} \\), the family of graphs with order \\( n \\) and matching number \\( β\\), aiming to identify its spectrally minimal graphs i.e., those that minimize the spectral radius \\(ρ(G)\\). We introduce the novel concept of ``quasi-adjacency'' relation, developing a unified structural classification framework for trees in \\(\\mathcal{G}_{n,β}\\), which clarifies structural properties and provides a constructive method to generate trees with fixed \\(β\\). By showing that all spectrally minimal graphs in \\( \\mathcal{G}_{n,β} \\) are trees, we further narrow the search for extremal graphs. Additionally, we apply this framework to the representative cases \\(β=2,3,4\\), obtaining the minimizers by explicit structural formulas involving parameters related to \\(n\\).",
+    "status": "found"
+  },
+  "2601.18224": {
+    "arxiv_id": "2601.18224",
+    "title": "On the Generalized Conditional Gradient Method for Mean Field Games with Local Coupling Terms",
+    "authors": [
+      "Haruka Nakamura",
+      "Norikazu Saito"
+    ],
+    "submission_date": "2026-01-26T07:22:19Z",
+    "latest_updated": "2026-09-10T12:15:39Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.18224v1",
+      "2601.18224v2"
+    ],
+    "abstract": "We study the generalized conditional gradient (GCG) method for time-dependent second-order mean field games (MFG) with local coupling terms. While explicit convergence rates of the GCG method were previously established only for globally coupled interactions, the assumptions used there fail to cover typical local interactions such as congestion effects. To overcome this limitation, we introduce a refined analytical framework adapted to local couplings and derive explicit convergence estimates in terms of the exploitability and optimality gap. The key difficulty lies in establishing uniform bounds on the Hamilton--Jacobi--Bellman solutions; this is solved via the Cole--Hopf transformation under a standard quadratic Hamiltonian with a convection effect. We further provide numerical experiments demonstrating convergence behavior and confirming the theoretical rates. Additionally, the existence and uniqueness of smooth solutions to the MFG system with locally coupled interactions are established.",
+    "status": "found"
+  },
+  "2601.18225": {
+    "arxiv_id": "2601.18225",
+    "title": "ShopSimulator: Evaluating and Exploring RL-Driven LLM Agent for Shopping Assistants",
+    "authors": [
+      "Pei Wang",
+      "Yanan Wu",
+      "Xiaoshuai Song",
+      "Weixun Wang",
+      "Gengru Chen",
+      "Zhongwen Li",
+      "Kezhong Yan",
+      "Ken Deng",
+      "Qi Liu",
+      "Shuaibing Zhao",
+      "Shaopan Xiong",
+      "Xuepeng Liu",
+      "Xuefeng Chen",
+      "Wanxi Deng",
+      "Wenbo Su",
+      "Bo Zheng"
+    ],
+    "submission_date": "2026-01-26T07:24:28Z",
+    "latest_updated": "2026-01-26T07:24:28Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.18225v1"
+    ],
+    "abstract": "Large language model (LLM)-based agents are increasingly deployed in e-commerce shopping. To perform thorough, user-tailored product searches, agents should interpret personal preferences, engage in multi-turn dialogues, and ultimately retrieve and discriminate among highly similar products. However, existing research has yet to provide a unified simulation environment that consistently captures all of these aspects, and always focuses solely on evaluation benchmarks without training support. In this paper, we introduce ShopSimulator, a large-scale and challenging Chinese shopping environment. Leveraging ShopSimulator, we evaluate LLMs across diverse scenarios, finding that even the best-performing models achieve less than 40% full-success rate. Error analysis reveals that agents struggle with deep search and product selection in long trajectories, fail to balance the use of personalization cues, and to effectively engage with users. Further training exploration provides practical guidance for overcoming these weaknesses, with the combination of supervised fine-tuning (SFT) and reinforcement learning (RL) yielding significant performance improvements. Code and data will be released at https://github.com/ShopAgent-Team/ShopSimulator.",
+    "status": "found"
+  },
+  "2601.18226": {
+    "arxiv_id": "2601.18226",
+    "title": "Yunjue Agent Tech Report: A Fully Reproducible, Zero-Start In-Situ Self-Evolving Agent System for Open-Ended Tasks",
+    "authors": [
+      "Haotian Li",
+      "Shijun Yang",
+      "Weizhen Qi",
+      "Silei Zhao",
+      "Rui Hua",
+      "Mingzhu Song",
+      "Xiaojian Yang",
+      "Chao Peng"
+    ],
+    "submission_date": "2026-01-26T07:27:47Z",
+    "latest_updated": "2026-02-06T17:29:24Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.18226v1",
+      "2601.18226v2"
+    ],
+    "abstract": "Conventional agent systems often struggle in open-ended environments where task distributions continuously drift and external supervision is scarce. Their reliance on static toolsets or offline training lags behind these dynamics, leaving the system's capability boundaries rigid and unknown. To address this, we propose the In-Situ Self-Evolving paradigm. This approach treats sequential task interactions as a continuous stream of experience, enabling the system to distill short-term execution feedback into long-term, reusable capabilities without access to ground-truth labels. Within this framework, we identify tool evolution as the critical pathway for capability expansion, which provides verifiable, binary feedback signals. Within this framework, we develop Yunjue Agent, a system that iteratively synthesizes, optimizes, and reuses tools to navigate emerging challenges. To optimize evolutionary efficiency, we further introduce a Parallel Batch Evolution strategy. Empirical evaluations across five diverse benchmarks under a zero-start setting demonstrate significant performance gains over proprietary baselines. Additionally, complementary warm-start evaluations confirm that the accumulated general knowledge can be seamlessly transferred to novel domains. Finally, we propose a novel metric to monitor evolution convergence, serving as a function analogous to training loss in conventional optimization. We open-source our codebase, system traces, and evolved tools to facilitate future research in resilient, self-evolving intelligence.",
+    "status": "found"
+  },
+  "2601.18227": {
+    "arxiv_id": "2601.18227",
+    "title": "150 years of ground-based solar instrumentation at Meudon observatory (1876-2026)",
+    "authors": [
+      "Jean-Marie Malherbe"
+    ],
+    "submission_date": "2026-01-26T07:29:24Z",
+    "latest_updated": "2026-01-26T07:29:24Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.18227v1"
+    ],
+    "abstract": "The Sun has been observed through a telescope for four centuries. However, its study made a prodigious leap at the end of the nineteenth century with the appearance of photography and spectroscopy, then at the beginning of the following century with the invention of the coronagraph and monochromatic filters, and finally in the second half of the twentieth century with the advent of large ground-based telescopes and space exploration. This article retraces the main stages of solar instrumental developments in Meudon, from its foundation by Jules Janssen in 1876 to the present day, limited to ground-based or balloon instrumentation, designed in Meudon and installed there or in other places (Nan{\\c c}ay, Pic du Midi, Canary Islands). The Meudon astronomers played a pioneering role in the history of solar physics through the experimentation of innovative techniques. After the golden age of inventions, came the time of large instruments, studied in Meudon but often installed in more favourable sites, and that of space, in a framework of international collaboration, but this is not discussed here.",
+    "status": "found"
+  },
+  "2601.18228": {
+    "arxiv_id": "2601.18228",
+    "title": "Facial Emotion Recognition on FER-2013 using an EfficientNetB2-Based Approach",
+    "authors": [
+      "Sahil Naik",
+      "Soham Bagayatkar",
+      "Pavankumar Singh"
+    ],
+    "submission_date": "2026-01-26T07:29:50Z",
+    "latest_updated": "2026-01-26T07:29:50Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.18228v1"
+    ],
+    "abstract": "Detection of human emotions based on facial images in real-world scenarios is a difficult task due to low image quality, variations in lighting, pose changes, background distractions, small inter-class variations, noisy crowd-sourced labels, and severe class imbalance, as observed in the FER-2013 dataset of 48x48 grayscale images. Although recent approaches using large CNNs such as VGG and ResNet achieve reasonable accuracy, they are computationally expensive and memory-intensive, limiting their practicality for real-time applications. We address these challenges using a lightweight and efficient facial emotion recognition pipeline based on EfficientNetB2, trained using a two-stage warm-up and fine-tuning strategy. The model is enhanced with AdamW optimization, decoupled weight decay, label smoothing (epsilon = 0.06) to reduce annotation noise, and clipped class weights to mitigate class imbalance, along with dropout, mixed-precision training, and extensive real-time data augmentation. The model is trained using a stratified 87.5%/12.5% train-validation split while keeping the official test set intact, achieving a test accuracy of 68.78% with nearly ten times fewer parameters than VGG16-based baselines. Experimental results, including per-class metrics and learning dynamics, demonstrate stable training and strong generalization, making the proposed approach suitable for real-time and edge-based applications.",
+    "status": "found"
+  },
+  "2601.18229": {
+    "arxiv_id": "2601.18229",
+    "title": "Breakdown of bosonic Thouless pump due to interaction in a quasiperiodic lattice",
+    "authors": [
+      "Suman Mondal",
+      "Emmanuel Gottlob",
+      "Fabian Heidrich-Meisner",
+      "Ulrich Schneider"
+    ],
+    "submission_date": "2026-01-26T07:32:02Z",
+    "latest_updated": "2026-01-26T07:32:02Z",
+    "revised_dates": null,
+    "venue": "Phys. Rev. B 113, 235131 (2026)",
+    "latest_version": 1,
+    "versions": [
+      "2601.18229v1"
+    ],
+    "abstract": "We investigate the effect of inter-particle interaction on the quantized Thouless pump in the bosonic quasiperiodic Aubry-Andr{é} model and find that the quantization of the pumped charge breaks down already for weak interactions. Furthermore, the pumped charge undergoes sharp changes as a function of interaction strength that we can attribute to the closing of specific doublon channels. As expected, the quantization revives in the hard-core limit at very large interaction strengths where the bosons are subject to a hardcore constraint. Interestingly, the stability of isolated doublons under the pump depends on the band they are in. For repulsive interactions and a suitably fixed pump period, doublons in the lowest band are pumped stably while doublons in higher bands dissociate during the pump with one particle decaying into a lower band. This asymmetry leads to the decay of the total energy over time, in stark contrast to the typical Floquet heating expected for a driven many-body system.",
+    "status": "found"
+  },
+  "2601.18230": {
+    "arxiv_id": "2601.18230",
+    "title": "Using LibCal Seats to Better Serve Students",
+    "authors": [
+      "François Renaville",
+      "Fabienne Prosmans"
+    ],
+    "submission_date": "2026-01-26T07:34:06Z",
+    "latest_updated": "2026-01-26T07:34:06Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.18230v1"
+    ],
+    "abstract": "This chapter examines the evolution of library services at the University of Liège (ULiège), with a focus on the implementation and assessment of the LibCal Seats booking module. Introduced in September 2020 in response to the COVID-19 pandemic, this system was designed to manage occupancy and maintain social distancing. While initially a temporary measure, the seat booking service remains in use during peak periods. Drawing on survey data from 2022 and 2023, the chapter analyses user perceptions of the system. Results indicate strong student appreciation, particularly regarding stress reduction and equitable access to study spaces. Despite overall satisfaction, issues such as unoccupied reserved seats and an unnecessarily complex booking process emerged, leading to targeted improvements. This chapter highlights the importance of responsive, user-centred services in academic libraries. The adoption of the booking system helped address challenges such as overcrowding and \"seat hogging,\" ultimately contributing to a more organised and accessible environment. The case study illustrates how technology can enhance library service delivery, offering insights for institutions seeking to optimise space management. The continued evaluation of the system reflects a broader commitment to adapting services in alignment with user needs and institutional priorities.",
+    "status": "found"
+  },
+  "2601.18231": {
+    "arxiv_id": "2601.18231",
+    "title": "Rethinking Cross-Modal Fine-Tuning: Optimizing the Interaction Between Feature Alignment and Target Fitting",
+    "authors": [
+      "Trong Khiem Tran",
+      "Manh Cuong Dao",
+      "Phi Le Nguyen",
+      "Thao Nguyen Truong",
+      "Trong Nghia Hoang"
+    ],
+    "submission_date": "2026-01-26T07:34:15Z",
+    "latest_updated": "2026-04-20T05:13:19Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 4,
+    "versions": [
+      "2601.18231v1",
+      "2601.18231v2",
+      "2601.18231v3",
+      "2601.18231v4"
+    ],
+    "abstract": "Adapting pre-trained models to unseen feature modalities has become increasingly important due to the growing need for cross-disciplinary knowledge integration. A key challenge here is how to align the representation of new modalities with the most relevant parts of the pre-trained model's representation space to enable accurate knowledge transfer. This requires combining feature alignment with target fine-tuning, but uncalibrated combinations can exacerbate misalignment between the source and target feature-label structures and reduce target generalization. Existing work, however, lacks a theoretical understanding of this critical interaction between feature alignment and target fitting. To bridge this gap, we develop a principled framework that establishes a provable generalization bound on the target error, which explains the interaction between feature alignment and target fitting through a novel concept of feature-label distortion. This bound offers actionable insights into how this interaction should be optimized for practical algorithm design. The resulting approach achieves significantly improved performance over state-of-the-art methods across a wide range of benchmark datasets.",
+    "status": "found"
+  },
+  "2601.18232": {
+    "arxiv_id": "2601.18232",
+    "title": "Complex-Valued-Matrix Permanents: SPA-based Approximations and Double-Cover Analysis",
+    "authors": [
+      "Junda Zhou",
+      "Pascal O. Vontobel"
+    ],
+    "submission_date": "2026-01-26T07:39:21Z",
+    "latest_updated": "2026-01-26T07:39:21Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.18232v1"
+    ],
+    "abstract": "Approximating the permanent of a complex-valued matrix is a fundamental problem with applications in Boson sampling and probabilistic inference. In this paper, we extend factor-graph-based methods for approximating the permanent of non-negative-real-valued matrices that are based on running the sum-product algorithm (SPA) on standard normal factor graphs, to factor-graph-based methods for approximating the permanent of complex-valued matrices that are based on running the SPA on double-edge normal factor graphs. On the algorithmic side, we investigate the behavior of the SPA, in particular how the SPA fixed points change when transitioning from real-valued to complex-valued matrix ensembles. On the analytical side, we use graph covers to analyze the Bethe approximation of the permanent, i.e., the approximation of the permanent that is obtained with the help of the SPA. This combined algorithmic and analytical perspective provides new insight into the structure of Bethe approximations in complex-valued problems and clarifies when such approximations remain meaningful beyond the non-negative-real-valued settings.",
+    "status": "found"
+  },
+  "2601.18233": {
+    "arxiv_id": "2601.18233",
+    "title": "The global attractor of the Toner-Tu-Swift-Hohenberg equations of active turbulence and its properties",
+    "authors": [
+      "Daniel W. Boutros",
+      "Kolluru Venkata Kiran",
+      "John D. Gibbon",
+      "Rahul Pandit"
+    ],
+    "submission_date": "2026-01-26T07:39:40Z",
+    "latest_updated": "2026-01-26T07:39:40Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.18233v1"
+    ],
+    "abstract": "The Toner-Tu-Swift-Hohenberg (TTSH) equations are one of the basic equations that are used to model turbulent behaviour in active matter, specifically the swarming of bacteria in suspension. They combine features of the incompressible Navier-Stokes, the Toner-Tu and Swift-Hohenberg equations, together with the important properties that they are linearly driven, and that the Laplacian diffusion is taken to be negative in combination with hyper-dissipation. We prove that the TTSH equations possess a finite-dimensional compact global attractor on the periodic domain $\\mathbb{T}^d$ ($d=2,3$) and we establish explicit estimates for its Lyapunov dimension which agree with the heuristic prediction based on the Swift-Hohenberg length scale. The predominance of this length scale (as a vortex length scale) has been observed in both numerical and experimental studies of bacterial turbulence, so our methods and results provide a rigorous theoretical foundation for this phenomenon. We also carry out pseudospectral direct numerical simulations of these PDEs in dimension $d=2$ through which we obtain Lyapunov spectra for representative parameter values. We show that our numerical results are consistent with the analytically derived rigorous bounds.",
+    "status": "found"
+  },
+  "2601.18234": {
+    "arxiv_id": "2601.18234",
+    "title": "Generative AI in Saudi Arabia: A National Survey of Adoption, Risks, and Public Perceptions",
+    "authors": [
+      "Abdulaziz AlDakheel",
+      "Ali Alshehre",
+      "Esraa Alamoudi",
+      "Moslim AlKhabbaz",
+      "Ahmed Aljohani",
+      "Raed Alharbi"
+    ],
+    "submission_date": "2026-01-26T07:40:41Z",
+    "latest_updated": "2026-01-26T07:40:41Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.18234v1"
+    ],
+    "abstract": "Generative Artificial Intelligence (GenAI) is rapidly becoming embedded in Saudi Arabia's digital transformation under Vision 2030, yet public awareness, adoption, and concerns surrounding these tools remain underexplored. This study provides an early snapshot of GenAI engagement among Saudi nationals. Using a nationwide survey of 330 participants across regions, age groups, and employment sectors, we examine seven dimensions of GenAI use: awareness and understanding, adoption patterns, perceived impacts, training needs, risks and barriers, data-sharing behaviors, and future expectations. Findings show that 93% of respondents actively use GenAI primarily for text-based tasks, while more advanced uses such as programming or multimodal generation are less common. Despite the prevalence of use, overall awareness and conceptual understanding remain uneven, with many reporting limited technical knowledge. Participants recognize GenAI's benefits for productivity, work quality, and understanding complex information, yet caution that sustained reliance may undermine critical thinking and key professional skills. Trust in AI-generated outputs remains cautious, with widespread concerns about privacy, misinformation, and ethical misuse, including potential job displacement. Respondents show strong interest in structured GenAI training that combines foundational skills, domain-specific applications, and clear guidance on privacy, ethics, and responsible use. These results establish a baseline for GenAI engagement in Saudi Arabia and highlight priorities for policymakers and developers: expanding AI literacy, ensuring culturally and linguistically aligned GenAI solutions, and strengthening frameworks for privacy and responsible deployment.",
+    "status": "found"
+  },
+  "2601.18235": {
+    "arxiv_id": "2601.18235",
+    "title": "Data-Efficient Electromagnetic Surrogate Solver Through Dissipative Relaxation Transfer Learning",
+    "authors": [
+      "Sunghyun Nam",
+      "Chan Y. Park",
+      "Min Seok Jang"
+    ],
+    "submission_date": "2026-01-26T07:41:30Z",
+    "latest_updated": "2026-05-18T04:51:24Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.18235v1",
+      "2601.18235v2"
+    ],
+    "abstract": "In neural network surrogate solvers for electromagnetic simulations, accurately modeling resonant phenomena remains a central challenge. High-amplitude resonances generate strongly localized field patterns that deviate significantly from the general distribution of non-resonant cases, leading to instability and degraded predictive performance. To address this, we introduce dissipative relaxation transfer learning (DIRTL), a data-efficient training framework that integrates transfer learning with loss-regularized optimization principles from high-Q photonics. DIRTL first pretrains the model on data generated with a small fictitious material loss, which broadens sharp resonant modes and suppresses extreme field amplitudes. This smoothing of the response landscape enables the model to learn global modal features more effectively. The pretrained model is subsequently fine-tuned on the target lossless dataset containing true high-amplitude resonances, allowing stable adaptation based on the pretrained representation. Applied to both the Fourier Neural Operator (FNO) and UNet architectures, DIRTL yields substantial improvements in prediction accuracy, including up to a two-fold error reduction for the FNO variant. Furthermore, DIRTL demonstrates robustness across diverse training conditions and supports multi-tasking performance, suggesting the generalizability and flexibility of the pretrained core. Altogether, these results position DIRTL as a physically grounded curriculum for improving the reliability of neural network surrogate solvers.",
+    "status": "found"
+  }
+}

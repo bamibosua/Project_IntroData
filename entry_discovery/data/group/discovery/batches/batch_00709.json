@@ -1,0 +1,407 @@
+{
+  "2608.13187": {
+    "arxiv_id": "2608.13187",
+    "title": "Performance Evaluation of an Adaptive Quadrature and a Double Exponential Formula Using Arbitrary-Precision Floating-Point Arithmetic",
+    "authors": [
+      "Tomonori Kouya"
+    ],
+    "submission_date": "2026-08-13T12:53:41Z",
+    "latest_updated": "2026-09-09T00:35:53Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.13187v1",
+      "2608.13187v2"
+    ],
+    "abstract": "Using arbitrary-precision arithmetic provided by the GNU Multiple Precision Floating-Point Reliable Library, we implement AQE11D---that is, Ninomiya's adaptive 9-point Newton--Cotes rule extended with a sequence of higher-order rules---and Takahasi and Moris' double exponential (DE) formula. We evaluate them for Kahaner's 21 test problems. For both absolute tolerances $10^{-50}$ and $10^{-100}$, AQE11D attains target accuracy on all 21 problems; however, for strong endpoint singularity such as $1/\\sqrt{x}$, it requires about $5.4\\times10^{7}$ function evaluations at $10^{-100}$, roughly $7\\times10^{4}$ times as many as the DE formula. The formula converges on 18 problems at both tolerances, demonstrating its strength against endpoint singularities but also its failure, as it stands, on problems with a singularity inside the integration interval.",
+    "status": "found"
+  },
+  "2608.13188": {
+    "arxiv_id": "2608.13188",
+    "title": "Power in Liquid Democracy: A Network Centrality Approach",
+    "authors": [
+      "Davide Grossi",
+      "Andreas Nitsche",
+      "Georgios Papasotiropoulos",
+      "Oskar Skibski",
+      "Piotr Skowron",
+      "Tomasz Wąs"
+    ],
+    "submission_date": "2026-08-13T12:53:55Z",
+    "latest_updated": "2026-08-13T12:53:55Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13188v1"
+    ],
+    "abstract": "This paper develops a computationally tractable framework for measuring voters' power in collective decision-making platforms that support transitive and suspendable delegations---commonly known as liquid democracy. We employ Random Walk Decay centrality to capture how influence propagates through delegation networks, argue for its intuitive appeal in this context and its advantages over alternatives such as PageRank, and derive a natural axiomatic characterization within the class of power metrics. Moreover, we conceptualize how the framework can be extended into a practical tool for analyzing power distributions in such platforms, and propose and study, both axiomatically and algorithmically, methods for selecting representative slates of influential participants.",
+    "status": "found"
+  },
+  "2608.13189": {
+    "arxiv_id": "2608.13189",
+    "title": "Enabling Ultra-Low-Power Always-On Feedforward Leakage Suppression Logic Circuits with FDSOI",
+    "authors": [
+      "Clément Choné",
+      "Leslie Xu",
+      "Filippo Quadri",
+      "Pasquale Davide Schiavone",
+      "Alexandre Levisse",
+      "Jean-Luc Naguel",
+      "David Atienza",
+      "Andreas Burg"
+    ],
+    "submission_date": "2026-08-13T12:57:32Z",
+    "latest_updated": "2026-08-13T12:57:32Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13189v1"
+    ],
+    "abstract": "The growing deployment of real-time applications on wearable and Internet of Things (IoT) edge devices has intensified the need for energy-efficient, high-performance systems that meet stringent timing and energy constraints. Events-driven architectures leverage the sparsity of real-time to further improve system energy efficiency by employing an always-on (AO) domain to monitor inputs and activate a high-performance (HP) domain only when relevant events occur. However, for low-duty-cycle applications, the energy bottleneck shifts toward the AO domain, where leakage power dominates overall consumption. To mitigate this issue, AO circuits are typically implemented using high voltage threshold (HVT) or ultra-high voltage threshold (UHVT) transistors, thereby avoiding sub- and near-threshold operation, which is highly sensitive to process, voltage, and temperature (PVT) variations. In this context, feedforward leakage suppression logic (FLSL) has recently emerged as a promising candidate, offering reduced leakage compared to conventional. However, previous studies report a significant degradation in FLSL leakage performance in technology nodes below 90 nm, primarily due to increased gate and junction leakage currents. FDSOI technology, with its ability to effectively suppress junction leakage, provides an opportunity to overcome this limitation and restore FLSL efficiency in advanced nodes. Therefore, we demonstrate in this work that FLSL implemented in a 22 nm FDSOI technology can significantly reduce the energy consumption of small AO circuits with low-frequency inputs compared to state-of-the-art ultra-low-power CMOS designs. Silicon measurements on an FIR filter and an AES cryptographic core show reduced operating voltage and up to 9.8 x and 1.83 x reductions in leakage power compared to equivalent HVT and UHVT CMOS implementations, respectively.",
+    "status": "found"
+  },
+  "2608.13190": {
+    "arxiv_id": "2608.13190",
+    "title": "ProME: Prototype-Margin Environments with Repair-Aware Selection for Group-Robust Learning",
+    "authors": [
+      "Qianqian Wang",
+      "Yunshan Li",
+      "Dawei Huang",
+      "Wenwu Gong",
+      "Lili Yang"
+    ],
+    "submission_date": "2026-08-13T12:57:41Z",
+    "latest_updated": "2026-08-13T12:57:41Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13190v1"
+    ],
+    "abstract": "Group-robust learning is crucial for maintaining accuracy on rare subpopulations when training-group labels are unavailable. However, existing methods often infer environments from a separate reference model and select representations before fitting the classifier used at deployment, leaving both decisions misaligned with the deployed predictor. In this work, we formulate group robustness without training-group labels as the endogenous environments with repair-aware selection (ERAS) problem, and propose ProME (Prototype-Margin Environments) to align both decisions with the deployed predictor. ProME splits prototype margins at their median to construct approximately balanced environments along the training trajectory, and fits a group-balanced linear head on group-annotated validation data to rank the resulting predictors by validation worst-group accuracy. We theoretically bound the worst risk across the inferred environments for a fixed predictor and partition, showing that this bound transfers to the oracle groups under an explicit alignment condition. Extensive experiments show that prototype margins enrich shortcut-conflicting examples, classifier repair reshapes candidate evaluation, and ProME achieves the highest average worst-group accuracy among the compared methods with the same group-label access.",
+    "status": "found"
+  },
+  "2608.13191": {
+    "arxiv_id": "2608.13191",
+    "title": "Smart Contract Invariants Protect Against Cybercriminals",
+    "authors": [
+      "Sofia Bobadilla",
+      "Humaira Afrin",
+      "Angela Novelli",
+      "Martin Monperrus"
+    ],
+    "submission_date": "2026-08-13T12:58:36Z",
+    "latest_updated": "2026-08-13T12:58:36Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13191v1"
+    ],
+    "abstract": "Blockchains are among the most adversarial environments in computing. Billions are stolen by cybercriminals who exploit vulnerabilities. This is an open problem and no concept or technique has proven to really make a difference. In this paper, we claim that the classical notion of program invariant is perhaps the most powerful solution to the problem. We devise anoriginal experimental protocol to 1) study how invariants would have protected against past real-world attacks and 2) whether state-of-the-art automated tools can find them. The experimental toolchain is sophisticated. It is based on INVARIANTEVAL, a benchmark of 28 real Ethereum exploits, each paired with a human-authored invariant that blocks the attack. We validate every invariant with PONDEREPLAY, a replay framework that re-executes transactions in order to prove the correctness and soundness of smart contract invariants. We demonstrate that smart contract invariants block all the cybercriminal attacks in INVARIANTEVAL, fully validated by replaying 108,637 historical transactions. Our large-scale experiments clearly demonstrate that smart contract invariants protect against cybercriminals.",
+    "status": "found"
+  },
+  "2608.13192": {
+    "arxiv_id": "2608.13192",
+    "title": "Generalizations of the Christoffel-Darboux formula and congruences involving Apéry-like numbers",
+    "authors": [
+      "Zhi-Hong Sun"
+    ],
+    "submission_date": "2026-08-13T12:59:09Z",
+    "latest_updated": "2026-08-13T12:59:09Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13192v1"
+    ],
+    "abstract": "In this paper, we first extend the Christoffel-Darboux formula for orthogonal polynomials to general three-term recurrence sequences, and then investigate the identities and congruences for $g_n(x)$ and $v_n(x)$ given by \\begin{align*} &g_0(x)=1,\\ g_1(x)=\\frac{x+1}2,\\ (n+1)^2g_{n+1}(x)=\\Big(2n(n+1)+\\frac{x+1}2\\Big)g_n(x)-n^2g_{n-1}(x)\\ (n\\ge 1), \\\\&v_0(x)=1,\\ v_1(x)=x,\\ (n+1)^3v_{n+1}(x)=(2n+1)(n(n+1)+x)v_n(x)-n^3v_{n-1}(x)\\ (n\\ge 1).\\end{align*}",
+    "status": "found"
+  },
+  "2608.13193": {
+    "arxiv_id": "2608.13193",
+    "title": "A Canonical Positive Definite Kernel Associated with the $ξ$-Bergman Kernel",
+    "authors": [
+      "Sahil Gehlawat",
+      "Aakanksha Jain",
+      "Amar Deep Sarkar"
+    ],
+    "submission_date": "2026-08-13T12:59:22Z",
+    "latest_updated": "2026-08-13T12:59:22Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13193v1"
+    ],
+    "abstract": "Let $Ω\\subset \\mathbb{C}^{n}$ and $ξ\\in \\ell^{1}$. The $ξ$-Bergman kernel $K_{ξ, Ω}$, introduced by Bao and Guan, generalizes the classical Bergman kernel by replacing the point evaluation functional with a functional determined by sequence $ξ$. While this kernel inherits several important extremal and plurisubharmonic properties, it is intrinsically an on-diagonal object and therefore lacks the two-variable reproducing kernel structure that lies at the heart of the classical Bergman theory. The purpose of this paper is to associate a canonical Hermitian positive-definite kernel with the $ξ$-Bergman kernel and to investigate its analytic and geometric properties. Our construction is based on the family of Riesz representatives corresponding to the $ξ$-evaluation functionals. More precisely, we introduce a Hermitian kernel obtained as the Gram kernel of these representatives and show that it is positive definite and for $z \\in Ω$ satisfies \\[ B_{ξ,Ω}(z,z)=K_{ξ,Ω}(z), \\] thereby recovering the $ξ$-Bergman kernel as its diagonal restriction. As a consequence, we prove that the $ξ$-Bergman kernel is real analytic on $Ω$. We also establish biholomorphic transformation laws, and obtain a representation of the $ξ$-Bergman kernel in terms of derivatives of the classical Bergman kernel. Furthermore, we obtain explicit formulas for the $ξ$-Bergman kernel on the upper half-plane $\\mathbb{H}$ corresponding to several classes of sequences $ξ$, establish corresponding $ξ$-Lu Qi-Keng results, and derive precise boundary asymptotics. These examples illustrate how the choice of the differential functional influences both the zero set and the boundary growth of the associated kernel.",
+    "status": "found"
+  },
+  "2608.13194": {
+    "arxiv_id": "2608.13194",
+    "title": "Fidelity-Constrained Anchoring for Black-Box Denoisers",
+    "authors": [
+      "Masaki Satoh"
+    ],
+    "submission_date": "2026-08-13T12:59:32Z",
+    "latest_updated": "2026-08-13T12:59:32Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13194v1"
+    ],
+    "abstract": "We propose a fidelity-constrained framework that anchors the output of a black-box denoiser to its input without retraining and with little additional computation. The method linearly blends the denoised image with the input and selects the maximum blending factor that satisfies a prescribed local fidelity constraint using Peak Signal-to-Noise Ratio (PSNR) or Structural Similarity Index (SSIM). For PSNR control, a closed-form solution is obtained under a local constant-blending assumption. For SSIM control, we derive a tractable formulation based on inverse SSIM under the same assumption and solve it efficiently using iterative root finding. Experiments on DIV2K images with synthetic Gaussian noise and outputs from Real-ESRGAN and a non-local means denoiser show that the proposed anchoring strategy provides effective fidelity control while balancing denoising performance and statistical naturalness, as measured by the excess kurtosis of residual noise. In particular, SSIM-based anchoring yields more consistent behavior across noise levels than PSNR-based anchoring.",
+    "status": "found"
+  },
+  "2608.13195": {
+    "arxiv_id": "2608.13195",
+    "title": "Co-leading Teams Drive Scientific Novelty in Large-scale Research Infrastructures",
+    "authors": [
+      "Mingze Zhang",
+      "Yizhan Li",
+      "Hao Peng",
+      "Zexia Li"
+    ],
+    "submission_date": "2026-08-13T12:59:38Z",
+    "latest_updated": "2026-08-13T12:59:38Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13195v1"
+    ],
+    "abstract": "Large-scale research infrastructures (LSRIs) have become the engine of modern scientific discovery. While these big machines predominantly operate under a user-oriented model where external teams conduct research with support from in-house researchers, the structural integration of staff scientists into user teams and its association with scientific novelty remains unclear. By leveraging a dataset of 273,109 publications across 76 global LSRIs and applying a hybrid machine-learning framework to classify papers into three collaboration patterns: external user only, staff participating, and staff co-leading, we find a distinct novelty premium for external teams that formally integrate staff as co-authors, especially when staff scientists play co-leading rather than participating roles. Further, the premium peaks at a relatively balanced user-staff team composition, potentially due to an \"epistemic lock-in\" by either party. Crucially, we find that the ideal collaboration architecture evolves with user experience: while newcomers can obtain a large novelty premium from mere staff participation, experienced users only benefit from staff co-leading teams. This result suggests a \"knowledge saturation effect\" for which a deeper intellectual partnership is needed to sustain novelty. By revealing how user-staff collaboration structure drives scientific creativity, our study offers practical policy implications for the strategic management and intervention of LSRIs in the era of human-machine collaboration.",
+    "status": "found"
+  },
+  "2608.13196": {
+    "arxiv_id": "2608.13196",
+    "title": "Spatial similarity in socioeconomic data: a wavelet approach for England",
+    "authors": [
+      "Duncan Cook",
+      "John AD Aston"
+    ],
+    "submission_date": "2026-08-13T13:00:20Z",
+    "latest_updated": "2026-08-13T13:00:20Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13196v1"
+    ],
+    "abstract": "Socioeconomic indicators in England exhibit complex spatial patterns that are not well captured by standard approaches based on averages or broad geographic classifications. We propose a method for comparing areas based on their internal spatial structure, using a multiresolution representation derived from the discrete wavelet transform. The method embeds areal data into a regular grid, extracts local windows, and represents each as a set of scale- and direction-specific detail coefficients. A dissimilarity measure, defined over these coefficients and minimised over rotations and reflections, is used to identify contiguous sets of statistical units with similar spatial structure. We apply the approach to England's 2025 Index of Multiple Deprivation at the lower layer super output area level. We show that areas with similar internal structure are often found across regions, levels of urbanisation, and average deprivation, challenging the use of these categories as proxies for local geography. The results provide a framework for identifying comparable places based on how deprivation is distributed within them, with implications for policy evaluation and transferability.",
+    "status": "found"
+  },
+  "2608.13197": {
+    "arxiv_id": "2608.13197",
+    "title": "Beyond Simulated Benchmarks: Evaluating Motion Representations for Fall Detection Under Real-World Data Scarcity",
+    "authors": [
+      "Timilehin B. Aderinola",
+      "Ilaria D'Ascanio",
+      "Luca Palmerini",
+      "Lorenzo Chiari",
+      "Jochen Klenk",
+      "Clemens Becker",
+      "Brian Caulfield",
+      "Georgiana Ifrim"
+    ],
+    "submission_date": "2026-08-13T13:02:31Z",
+    "latest_updated": "2026-08-13T13:02:31Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13197v1"
+    ],
+    "abstract": "Falls are a major health concern for older adults, and wearable sensors have been widely explored for detecting falls and enabling timely intervention. However, real-world falls are extremely rare: collecting 100 of them requires an estimated 100,000 days of monitoring, resulting in severely limited labelled data for training machine learning models. Consequently, many approaches rely on simulated datasets, often reporting high laboratory performance but limited real-world generalisation. We present a systematic evaluation of motion representations for wearable fall detection under real-world data scarcity. Using accelerometer signals, we compare interval-based, kernel-based, symbolic, and foundation model representations. As an interpretable baseline, we additionally investigate a lightweight symbolic representation that converts short motion segments into symbolic sentences augmented with physically-grounded impact descriptors. Experiments use FallAllD, a simulated falls dataset, and FARSEEING, a clinically verified real-world falls dataset. Through cross-validation, controlled data scarcity, and cross-dataset transfer, we examine how representation choices affect robustness under realistic deployment. Our results reveal that highly parameterised kernel and foundation models excel on simulated data but degrade severely under both data scarcity and domain shift. Although the interval-based representation achieves the strongest absolute real-world performance, augmenting a symbolic representation with physically-grounded impact descriptors yields the smallest degradation under domain shift and retains detection sensitivity under extreme scarcity, albeit at lower precision. These findings highlight the importance of evaluating beyond simulated benchmarks and show that representation choice is critical for deployable fall detection given the scarcity of real-world data.",
+    "status": "found"
+  },
+  "2608.13198": {
+    "arxiv_id": "2608.13198",
+    "title": "Ultrafast Tracking of the Spallation Layer in Bulk Gold, Aluminum, and Steel",
+    "authors": [
+      "Nicolas Thomae",
+      "Julian Vollmann",
+      "Julian Freundel",
+      "Maximilian Spellauge",
+      "David Redka",
+      "Heinz P. Huber"
+    ],
+    "submission_date": "2026-08-13T13:02:32Z",
+    "latest_updated": "2026-08-13T13:02:32Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13198v1"
+    ],
+    "abstract": "Extreme manufacturing with ultrashort-pulse (USP) lasers at the physical limit of precision and efficiency requires understanding ablation dynamics on the picosecond-to-nanosecond timescale. Pump-probe reflectometry (PPR) provides direct access to photomechanical spallation through Newton ring (NR) interference, but this signature vanishes when the spallation layer becomes optically opaque or the ablated material strongly attenuates the probe. Here, we combine PPR with phase-sensitive interferometric pump-probe (PPI) measurements to track the spallation layer in bulk steel, aluminum, and gold. PPI resolves the propagating layer even when the reflected probe signal is suppressed by >95%. Joint PPR/PPI analysis with transfer-matrix modelling (TMM) yields spallation layer thickness, vapor layer absorption, and the layer disintegration times. These quantities are key determinants of the energy coupling of subsequent pulses in GHz burst processing.",
+    "status": "found"
+  },
+  "2608.13199": {
+    "arxiv_id": "2608.13199",
+    "title": "Optimal local convergence criteria for integer and Gaussian integer continued fractions",
+    "authors": [
+      "Ian Short",
+      "Margaret Stanier",
+      "Matty van Son",
+      "Andrei Zabolotskii"
+    ],
+    "submission_date": "2026-08-13T13:02:52Z",
+    "latest_updated": "2026-09-21T11:06:01Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.13199v1",
+      "2608.13199v2"
+    ],
+    "abstract": "The objective of this work is to determine optimal local restrictions on the coefficients of integer and Gaussian integer continued fractions that imply convergence. We identify all minimal restrictions involving words of length two in the integer case, and we identify all reversible minimal restrictions of length two in the Gaussian integer case. In the integer setting, our classification is equivalent to a classification of minimal unavoidable words of length two in Conway--Coxeter quiddity sequences. We also construct a canonical set of restrictions of infinite cardinality that is strictly stronger than every finite set of restrictions.",
+    "status": "found"
+  },
+  "2608.13200": {
+    "arxiv_id": "2608.13200",
+    "title": "GEM: A Generative Embedding Model Bridging Reasoning and Retrieval",
+    "authors": [
+      "Zhili Shen",
+      "Craig Macdonald"
+    ],
+    "submission_date": "2026-08-13T13:03:49Z",
+    "latest_updated": "2026-08-14T09:58:29Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.13200v1",
+      "2608.13200v2"
+    ],
+    "abstract": "Modern LLMs excel at reasoning and instruction following, enabling users to express complex and diverse information needs. However, conventional retrievers largely rely on surface-level matching between queries and documents, resulting in a growing gap between how users express their needs and how retrievers interpret them. In this paper, we present GEM, a generative embedding model that augments retrieval through its own knowledge by explicitly reasoning about user intent and relevance criteria. GEM unifies generation and embedding within a single model: it first reasons over the query, then appends an embedding token to encode the enriched context for retrieval. Evaluated on reasoning-intensive and instruction-following retrieval tasks, GEM demonstrates the effectiveness of its reasoning-augmented retrieval, outperforming its non-reasoning variant and matching baselines using substantially larger models. Furthermore, GEM's generative nature allows test-time compute scaling via prompting to further enhance retrieval performance. Our code is available at: https://anonymous.4open.science/r/GEM.",
+    "status": "found"
+  },
+  "2608.13201": {
+    "arxiv_id": "2608.13201",
+    "title": "Sinkhorn Linearization and the Spectral Proxy: Unifying the Statistical and Algorithmic Theory of Feature-Parameterized Inverse Optimal Transport via a Single Spectral Sandwich",
+    "authors": [
+      "Han Dong",
+      "Jiaming Li",
+      "Yongqiang Gong",
+      "Ruixi Li",
+      "Yin Liu"
+    ],
+    "submission_date": "2026-08-13T13:03:55Z",
+    "latest_updated": "2026-08-13T13:03:55Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13201v1"
+    ],
+    "abstract": "We develop the statistical and algorithmic theory of inverse optimal transport (IOT) under the feature-parameterized cost C_theta(i,j) = -theta^T phi(i,j). The core technical contribution is the Sinkhorn linearization -- the implicit-function sensitivity of the entropic OT plan to the cost -- together with its spectral proxy, a formula that is spectrally exact yet geometrically transparent. The restricted Hessian on the tangent space satisfies the spectral sandwich (pi_min/epsilon) I <= H_T^{-1} <= (pi_max/epsilon) I, yielding the single core bound sigma_min >= (pi_min/(a_max epsilon)) sqrt(lambda_min(Sigma)) that drives the entire theory. On this core we establish four theorems and one observation. T1 (identifiability): theta is globally injective on the quotient of the gauge kernel, with dimension bound F <= (K-1)^2. T2 (sparsistency): the l1-penalized estimator recovers the true support under irrepresentability and score concentration, with exponential failure probability. T3 (well-posedness): the feature-moment map M(theta) = Phi^T x_theta is strongly monotone, and the inverse is Lipschitz with constant L <= epsilon ||Phi^T S_a||_op / (pi_min lambda_min(Sigma)). T4 (convergence): local strong convexity with mu >= pi_min^2 lambda_min(Sigma) / epsilon^2 guarantees monotone gradient descent convergence. O5 (misspecification): the estimator converges to the OT-model projection of the truth; the Holder continuity of the projection map is assessed numerically, yielding setting-dependent empirical exponents alpha_eff in (0,1).",
+    "status": "found"
+  },
+  "2608.13202": {
+    "arxiv_id": "2608.13202",
+    "title": "Infinitely many elliptic curves over $\\mathbb{Q}(i)$ of exact ranks 4 and 6 with $j$-invariant 1728",
+    "authors": [
+      "Ben Savoie"
+    ],
+    "submission_date": "2026-08-13T13:05:34Z",
+    "latest_updated": "2026-08-13T13:05:34Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13202v1"
+    ],
+    "abstract": "For each $r\\in\\{4,6\\}$, we construct an explicit one-parameter family of elliptic curves over $\\mathbb{Q}(i)$ containing infinitely many pairwise nonisomorphic curves genuinely defined over $\\mathbb{Q}(i)$ with $j$-invariant $1728$ and rank exactly $r$. We construct explicit $\\mathbb{Q}(i)$-rational points to bound the ranks from below. Kai's theorem on prime values of linear patterns over number fields provides specializations with controlled local behavior, allowing us to obtain matching upper bounds via $[1+i]$-descent. The construction extends the strategy of the author's earlier rank-$2$ paper by replacing a symmetric Gaussian-prime configuration with systems of binary linear forms satisfying several complementary square identities. In the rank-$6$ case, the support vectors attached to the three constructed points and $(0,0)$ span the self-dual Reed-Muller code $\\mathrm{RM}(1,3)$, which also occurs as the kernel of the quadratic-residue Laplacian governing the Selmer group.",
+    "status": "found"
+  },
+  "2608.13203": {
+    "arxiv_id": "2608.13203",
+    "title": "Positive stabilization of a pure diffusion system",
+    "authors": [
+      "Violaine Piengeon",
+      "Joseph J. Winkin"
+    ],
+    "submission_date": "2026-08-13T13:06:04Z",
+    "latest_updated": "2026-08-13T13:06:04Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13203v1"
+    ],
+    "abstract": "This paper provides a complete analytical study of the positive stabilization, positive state estimation, and observer-based positive stabilization problems for a generic boundary control diffusion system with point observation. In particular, optimal design problems are solved analytically, and an original strategy for observer-based feedback stabilization is proposed. The three problems are also investigated for an arbitrary-order spatial discretization of the nominal PDE system enabling numerical implementation together with rigorous comparisons with the nominal solutions. In both the continuous and discretized settings, explicit and readily implementable solutions are derived.",
+    "status": "found"
+  },
+  "2608.13204": {
+    "arxiv_id": "2608.13204",
+    "title": "Counter-examples for Tensorization Property of Strong Data Processing Inequality for Quantum Divergences",
+    "authors": [
+      "Yu Cao"
+    ],
+    "submission_date": "2026-08-13T13:07:36Z",
+    "latest_updated": "2026-08-13T13:07:36Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13204v1"
+    ],
+    "abstract": "The data processing inequality is a fundamental property that describes the loss of information through noisy channels. A more refined description is characterized by the strong data processing inequality (SDPI). In classical information theory, the tensorization of strong data processing inequality holds for a whole family of $f$-divergences. However, its quantum counterpart is less known. The tensorization of SDPI was shown only for some special cases previously, and the general understanding about the tensorization property of SDPI for quantum divergences remains open. In this work, we report two negative results: the tensorization property fails for certain quantum chi-square divergences, and it also does not hold for the quantum relative entropy.",
+    "status": "found"
+  },
+  "2608.13205": {
+    "arxiv_id": "2608.13205",
+    "title": "HPSD: Hybrid-Policy Self-Distillation for Text-Image-to-Video Diffusion Models",
+    "authors": [
+      "Jiazi Bu",
+      "Pengyang Ling",
+      "Yujie Zhou",
+      "Yibin Wang",
+      "Yuhang Zang",
+      "Xuanlang Dai",
+      "Shengyuan Ding",
+      "Tianyi Wei",
+      "Xiaohang Zhan",
+      "Jiaqi Wang",
+      "Tong Wu",
+      "Dahua Lin",
+      "Xingang Pan"
+    ],
+    "submission_date": "2026-08-13T13:08:27Z",
+    "latest_updated": "2026-08-13T13:08:27Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13205v1"
+    ],
+    "abstract": "Text-Image-to-Video (TI2V) models are an emerging unified architecture, where a single model simultaneously supports text-to-video (T2V) and image-to-video (I2V) generation. Given a high-quality first frame or a detailed textual prompt, TI2V models unlock substantially better visual quality than their T2V mode, raising a natural question: can the capability elicited by such privileged conditions be internalized into the model's own base generation ability? A common approach toward this goal is model self-distillation. However, the most straightforward solution, supervised fine-tuning, follows an off-policy strategy: its supervision is confined to teacher-generated endpoints from a fixed offline distribution rather than student-visited states, lacking precise correction tailored to the evolving policy. Recent on-policy distillation methods instead suffer from condition-state mismatch, where supervision is steered toward the given first frame instead of the student's actual content, misleading the correction. To achieve self-distillation that absorbs the teacher's privileged prior while retaining precise policy correction, in this work, we propose Hybrid-Policy Self-Distillation (HPSD), a novel self-distillation framework where a single TI2V model acts as both teacher and student under different conditions: the teacher operates in TI2V mode with a high-quality first frame and an enhanced prompt, while the student runs in the base T2V mode with only the vanilla prompt. Specifically, the student inherits off-policy teacher trajectory points as anchors, locally refines them toward its own policy, and finally receives velocity-level supervision on these self-generated roll-outs. Extensive experiments demonstrate that HPSD significantly improves T2V performance while also delivering notable TI2V gains, effectively strengthening the model's base generation ability.",
+    "status": "found"
+  },
+  "2608.13206": {
+    "arxiv_id": "2608.13206",
+    "title": "Long-term 3+1 simulations of primordial black hole formation during radiation domination",
+    "authors": [
+      "Zhuan Ning",
+      "Rong-Gen Cai",
+      "Shao-Jiang Wang",
+      "Chul-Moon Yoo"
+    ],
+    "submission_date": "2026-08-13T13:08:52Z",
+    "latest_updated": "2026-09-03T14:03:26Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.13206v1",
+      "2608.13206v2"
+    ],
+    "abstract": "We develop an efficient three-dimensional numerical-relativity framework for primordial black-hole (PBH) formation from superhorizon curvature perturbations in a radiation-dominated Universe. We implement flux-conservative relativistic hydrodynamics in the adaptive-mesh-refinement code \\textsc{GRChombo} and introduce a cosmologically scaled Gamma-driver that allows the cosmic-time step to grow in proportion to the scale factor. For a representative long-term simulation, the scaled driver preserves the apparent-horizon mass evolution and constraint behavior while reducing the number of coarse-level advances by a factor of approximately $94$ relative to the standard driver. We also construct a conformal-time version of the moving-puncture gauge as an independent check. Applying the framework to a spherical Gaussian curvature profile, we find a collapse threshold $0.79578 < μ_c < 0.79580$ and a critical exponent $γ\\simeq 0.3559$, consistent with previous spherically symmetric results. We further fit the late-time PBH mass growth to the Zel'dovich--Novikov accretion law, demonstrating that the code can follow both near-critical collapse and long-term post-formation evolution in three dimensions. The framework provides a foundation for future studies of PBH formation beyond spherical symmetry.",
+    "status": "found"
+  }
+}

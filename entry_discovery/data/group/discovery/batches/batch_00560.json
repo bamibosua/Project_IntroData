@@ -1,0 +1,413 @@
+{
+  "2608.10207": {
+    "arxiv_id": "2608.10207",
+    "title": "Mitigating Bus Bunching with Reinforcement Learning Enhanced by Semantic Stop Embedding",
+    "authors": [
+      "Xin Dong",
+      "Vikash V. Gayah"
+    ],
+    "submission_date": "2026-08-10T20:21:52Z",
+    "latest_updated": "2026-08-10T20:21:52Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10207v1"
+    ],
+    "abstract": "Bus bunching degrades service regularity and increases passenger waiting in high-frequency transit. Existing reinforcement-learning-based holding controllers primarily rely on instantaneous operational variables or route-specific stop identifiers, which provide limited information about the functional and operational context of individual stops and constrain policy reuse across routes. This study introduces an LLM-assisted semantic stop representation for event-driven bus holding control. An LLM is used offline to transform heterogeneous stop information, including physical attributes, surrounding activity context, and historical operational characteristics, into fixed semantic embeddings that are incorporated into a deep Q-learning controller without requiring real-time LLM inference. Experiments are conducted in stochastic simulations calibrated with observed data from two bus routes. Compared with the best calibrated Daganzo baseline, the semantic controller reduces headway variability, bunching events, and passenger waiting time by 32.0%, 69.2%, and 24.0%, respectively. A route-specific stop identifier does not improve the spacing-only controller, whereas semantic stop information improves headway regularity, waiting time, and holding effort, providing a more favorable overall trade-off across control objectives. Cross-route experiments further show that zero-shot transfer provides limited immediate generalization, while warm-start fine-tuning accelerates early-stage learning and improves transferred policies; cold-start training nevertheless achieves the best final performance. These findings suggest that semantic state representations can complement conventional operational states and support adaptation-based policy reuse across related transit routes.",
+    "status": "found"
+  },
+  "2608.10208": {
+    "arxiv_id": "2608.10208",
+    "title": "Parametric Study of the Torus Instability Threshold",
+    "authors": [
+      "Jun Chen",
+      "Bernhard Kliem",
+      "Rui Liu"
+    ],
+    "submission_date": "2026-08-10T20:21:59Z",
+    "latest_updated": "2026-09-22T16:07:01Z",
+    "revised_dates": null,
+    "venue": "(2026). The Astrophysical Journal Supplement Series, 286, 54",
+    "latest_version": 5,
+    "versions": [
+      "2608.10208v1",
+      "2608.10208v2",
+      "2608.10208v3",
+      "2608.10208v4",
+      "2608.10208v5"
+    ],
+    "abstract": "The torus instability of an arched current channel has been suggested to initiate and drive major solar and stellar eruptions. Its threshold, given by the critical decay index of the equilibrium external poloidal field (the so-called strapping field) at the position of the current channel, is insufficiently known. Here, we carry out a parametric numerical study of the threshold, employing the force-free Titov-Démoulin (TD) equilibrium of a line-tied partial toroidal current channel and flux rope. This addresses the scatter of the threshold about its canonical value, $n_\\mathrm{cr}=3/2$. Values scattering in the range $n_\\mathrm{cr}\\approx$\\,1--2 are typically found in numerical and observational studies of flux rope eruptions on the Sun. For zero external toroidal (guide, or shear) field and approximately semicircular geometry (corresponding to minimal photospheric line-tying), we find the threshold to lie in the theoretically expected range of $\\approx$\\,1--1.5. An external toroidal field introduces a strong stabilizing effect on the instability, raising the threshold up to $\\sim$\\,2.5, which can explain observational and numerical results above the canonical value. Line-tying is found to act as a stabilizer as well. We also consider the approximate threshold based on the potential field and find a very good agreement with the exact numerical value, provided the horizontal component perpendicular to the flux rope axis is used to approximate the external poloidal field.",
+    "status": "found"
+  },
+  "2608.10209": {
+    "arxiv_id": "2608.10209",
+    "title": "Evaluation-Conditioned Training: Teaching Models to Generalize to Stronger Oversight Regimes",
+    "authors": [
+      "Alec Harris",
+      "Kasey Corra",
+      "Archie Chaudhury",
+      "Yixiong Hao"
+    ],
+    "submission_date": "2026-08-10T20:22:13Z",
+    "latest_updated": "2026-08-10T20:22:13Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10209v1"
+    ],
+    "abstract": "Feedback signals used to train Large Language Models (LLMs) are the primary driver of their behavior and our main lever for instilling alignment with human values and objectives. However, a key limitation of current post-training methods is the inability of human annotators and automated reward functions to faithfully capture the feedback we would like to give. We introduce Evaluation-Conditioned Training (ECT), a post-training framework that uses natural language to condition each training sample on the fidelity of the feedback we provide and then elicits the desired behavior by conditioning the LLM on a high-fidelity monitor in deployment. ECT is aimed at improving performance under imperfect feedback and works as an add-on to existing algorithms such as SFT and PPO. We first provide a conceptual framework for ECT and discuss its potential to address persistent sources of reward mis-specification. Then we motivate ECT in the context of the eliciting latent knowledge (ELK) problem. Finally, we evaluate ECT on two proof-of-concept experiments: increasing even-handedness in news article generation and reducing sycophancy on an arithmetic task. In each setting, we utilize imperfect feedback, rewarding bias and agreement with the user, respectively. In both settings, ECT improves the targeted behavior relative to direct training.",
+    "status": "found"
+  },
+  "2608.10210": {
+    "arxiv_id": "2608.10210",
+    "title": "FUBU-EPSTEIN: A Large-Scale Twitter Dataset on the Jeffrey Epstein Case and Its Global Public Discourse (2019-2023)",
+    "authors": [
+      "Michael Kreil",
+      "Tristan Manfred Stöber",
+      "Daniel Thilo Schroeder"
+    ],
+    "submission_date": "2026-08-10T20:26:08Z",
+    "latest_updated": "2026-08-10T20:26:08Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10210v1"
+    ],
+    "abstract": "The criminal case of Jeffrey Epstein has generated a complex, long-running global discourse on digital platforms, characterized by punctuated attention shocks, conspiracy theories, and blame attribution. To facilitate the computational study of these dynamics, we introduce the FUBU-EPSTEIN dataset, a large-scale, multi-dimensional research corpus of 54.38 million Twitter statuses authored by 7.11 million users and collected between August 2019 and April 2023. The source corpus was captured continuously in near-real time and enriched with a directed social contact graph of 37.03 million edge rows and annotations from Qwen2.5-7B-Instruct covering sentiment, conspiracy and misinformation stance, toxicity, moral emotion, and related dimensions. For public distribution, we created a textless, de-identified derivative that retains one row for every deduplicated status, categorical and numeric annotations, coarse temporal information, and 46.15 million internal status relationships. It excludes tweet text, original post and user identifiers, handles, profile fields, exact timestamps, and reverse mappings. The resulting release supports longitudinal content and diffusion analyses while reducing disclosure and platform-content redistribution risks. To request access to raw data for collaborative research under ethical and legal safeguards, contact fubu.dataset@gmail.com.",
+    "status": "found"
+  },
+  "2608.10211": {
+    "arxiv_id": "2608.10211",
+    "title": "Reduced Gibbs free energy supply hinders brain information processing during mental fatigue",
+    "authors": [
+      "Danko D. Georgiev",
+      "Oskan B. Tasinov",
+      "Danail V. Pavlov",
+      "Deyan S. Hrusafov"
+    ],
+    "submission_date": "2026-08-10T20:28:32Z",
+    "latest_updated": "2026-08-10T20:28:32Z",
+    "revised_dates": null,
+    "venue": "Fatigue: Biomedicine, Health & Behavior 2026; 14 (3): 216-233",
+    "latest_version": 1,
+    "versions": [
+      "2608.10211v1"
+    ],
+    "abstract": "Background: Brain information processing deteriorates as cortical neurons gradually transition from a rested state into fatigue. Subjectively, fatigue is experienced as a state of weariness, tiredness, or lack of energy that reduces the ability to work safely and effectively. Objective: In this theoretical paper, we pinpoint the physical origin of brain fatigue in the gradual deterioration of biochemical reaction quotients and transmembrane ion concentration gradients, which increase neuronal excitability and decrease the signal-to-noise ratio in the brain cortex. Methods: Brain performance in a rested state versus fatigue is examined by well-established, data-driven computer models for energy transport inside protein $α$-helices in the presence of thermal noise for different ATP energy states or for pyramidal neuron firing of action potentials under electric stimulation in a rested membrane state versus fatigue. Results: We found that reduced Gibbs free energy supply from ATP hydrolysis impairs the cooperative effect between amide I excitons propagating inside protein $α$-helices, with resulting decreased thermal stability of molecular solitons. Concurrent changes in Nernst reversal potentials for Na+ or K+ ions further led to neuronal hyperexcitability and a higher risk of neuronal depolarization block during mental fatigue. Conclusions: Detailed computational modeling showed that inefficient protein function due to diminished ATP energy status, alters the electrophysiological properties of individual neurons, thereby impairing their information processing capacity for the proper execution of cognitive tasks. Scheduling practices aimed at intermittent recovery of the rested brain state during intellectually challenging work could protect physical and mental wellbeing, prevent burnout, and enhance long-term productivity.",
+    "status": "found"
+  },
+  "2608.10212": {
+    "arxiv_id": "2608.10212",
+    "title": "The final design of GMagAO-X: high-contrast imaging at first-light of the GMT",
+    "authors": [
+      "Jared R. Males",
+      "Laird M. Close",
+      "Sebastiaan Y. Haffert",
+      "Victor Gasho",
+      "Adam Fletcher",
+      "Joseph Boales",
+      "Dhruv Lakhani",
+      "Maggie Y. Kautz",
+      "Doug Kelly",
+      "Olivier Durney",
+      "Thomas Salanski",
+      "Peter Gray",
+      "Cody Nelson",
+      "Steven Cornelissen",
+      "Paul Bierden",
+      "Olivier Guyon"
+    ],
+    "submission_date": "2026-08-10T20:29:13Z",
+    "latest_updated": "2026-08-10T20:29:13Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10212v1"
+    ],
+    "abstract": "GMagAO-X will be the first-light high-contrast imager on the 25 m Giant Magellan Telescope. The driving science case for GMagAO-X is characterization of the atmospheres of nearby rocky exoplanets such as Proxima Centauri b. The revolutionary increase in spatial resolution and sensitivity provided by GMagAO-X will enable detailed study of such planets for the first time. Additional science cases include: reflected light characterization of mature giant planets; measurement of young extrasolar giant planet variability; characterization of circumstellar disks at unprecedented spatial resolution; characterization of benchmark stellar atmospheres at high spectral resolution; and mapping of resolved objects such as giant stars and asteroids. These, and many more, science cases will be enabled by a 21,000 actuator extreme adaptive optics (ExAO) system, an integrated coronagraphic wavefront control system with dedicated deformable mirrors, and a suite of imagers and spectrographs. Science-driven performance requirements for GMagAO-X include achieving a Strehl ratio of 70% at 800 nm on 8th mag and brighter stars, and exoplanet characterization at planet:star flux-ratios of 1e-7 at 4 lambda/D (26 mas at 800 nm) separation. GMagAO-X has been added to the GMT project baseline plan and is in the final design phase, aiming to complete FDR in March, 2027. The instrument is on track to be ready at first-light of the GMT in the mid 2030s. We provide a brief update of the instrument designed to achieve our ambitious performance targets.",
+    "status": "found"
+  },
+  "2608.10213": {
+    "arxiv_id": "2608.10213",
+    "title": "VeriFin: A Neurosymbolic Framework for Verifying LLM-Generated Financial Claims",
+    "authors": [
+      "Bethel Hall",
+      "Sachi Shome",
+      "William Eiers"
+    ],
+    "submission_date": "2026-08-10T20:29:31Z",
+    "latest_updated": "2026-10-17T05:24:46Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.10213v1",
+      "2608.10213v2"
+    ],
+    "abstract": "Large language models often produce plausible numerical claims from financial filings while using the wrong reporting period, unit, line item, or formula. Verifying such claims requires more than rechecking arithmetic: a verifier must ground the relevant facts, establish the authorized calculation, and determine whether the candidate value follows from both. We propose VeriFin, a neurosymbolic verification framework for numerical financial question answering that grounds operands in filed XBRL facts, derives calculations from the question, filing linkbases, or documented metric definitions, and checks claims using Z3. When a claim is inconsistent, solver-derived unsatisfiable cores identify the conflicting facts, formula, and candidate value, enabling targeted repair. We evaluate VeriFin on XBRLFiling, a new 600-question benchmark constructed from 10-K filings of 28 U.S. companies, and on FinanceBench. On fixed candidate pools shared by all verification methods, VeriFin accepts none of the incorrect claims, whereas the baselines accept 6 to 92 incorrect claims on XBRLFiling's 600 claims and 4 to 21 incorrect claims on FinanceBench's 67 claims. The zero false-accept result persists across multiple answer-generator models. Solver-derived feedback further improves repair, achieving up to 69.9% recovery among true catches. These results show that source-grounded symbolic verification can provide a reliable and auditable acceptance control for LLM-generated financial claims.",
+    "status": "found"
+  },
+  "2608.10214": {
+    "arxiv_id": "2608.10214",
+    "title": "Decodable But Not Detachable: Training Data Granularity Determines Parametric Modularity in Large Language Models",
+    "authors": [
+      "Marcus Armstrong",
+      "Navid Ayoobi",
+      "Arjun Mukherjee"
+    ],
+    "submission_date": "2026-08-10T20:35:43Z",
+    "latest_updated": "2026-08-10T20:35:43Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10214v1"
+    ],
+    "abstract": "Do large language models contain domain-specific parametric shells: concentrated, causally necessary neuron populations whose removal selectively degrades a target domain while sparing others? We apply a uniform causal methodology across two domain granularities, three model families (1.5B to 7B parameters), and eight domains. At the academic subject level, zero neurons exceed 60\\% domain selectivity across 939,008 combined FFN neurons and causal damage matrices are flat, despite domain identity being linearly decodable above 85\\% accuracy. At the language and modality level, 0.65--1.14\\% of neurons exceed 60\\% selectivity, damage matrices are near-perfectly diagonal (ratios up to 595:1), and shell neuron sets are essentially disjoint (IoU $< 0.003$). Masking code-selective neurons reduces mathematical reasoning accuracy by 16--24 percentage points across all models; masking Spanish or Chinese neurons leaves it at or below random. Shell strength increases monotonically with scale and shells are spatially interleaved in a pattern that precludes group-level selective quantization. Parametric shells form where and only where training data was modular at the token level.",
+    "status": "found"
+  },
+  "2608.10215": {
+    "arxiv_id": "2608.10215",
+    "title": "The variance of the Pitman--Yor process: Cifarelli--Regazzini-type identities and inversion formulas",
+    "authors": [
+      "Emanuele Dolera",
+      "Stefano Favaro"
+    ],
+    "submission_date": "2026-08-10T20:36:37Z",
+    "latest_updated": "2026-10-10T11:04:04Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2608.10215v1",
+      "2608.10215v2",
+      "2608.10215v3"
+    ],
+    "abstract": "The Cifarelli--Regazzini identity lies at the foundation of the theory of the Dirichlet process and has played a central role in Bayesian nonparametric statistics. By providing the generalized Cauchy--Stieltjes transform of linear functionals of the Dirichlet process, together with an analytic inversion, it yields explicit representations for the distribution function and density of the Dirichlet mean. This transform identity was subsequently extended to the Pitman--Yor process, a generalization of the Dirichlet process, leading to an analogous distributional theory for its linear functionals. Nonlinear functionals, by contrast, remain less understood, with results largely confined to a few examples for the Dirichlet process. In this paper, we move beyond linear functionals by considering the variance of the Pitman--Yor process, a genuinely quadratic functional. In particular, we establish a Cifarelli--Regazzini-type identity providing the generalized Cauchy--Stieltjes transform of the Pitman--Yor variance for general base probability measures under suitable integrability assumptions. We then analytically invert this transform under general conditions on the base probability measure, thus obtaining explicit representations for both the distribution function and density. Corresponding formulas are also obtained for the Dirichlet variance, yielding more explicit representations than those currently available in the literature. We also establish a distributional representation of the Pitman--Yor variance in terms of a Dirichlet process whose base probability measure is the joint distribution of the mean and variance of a suitably specified Pitman--Yor process, mirroring the classical within--between decomposition of variance and providing a quadratic counterpart to a known distributional identity for Pitman--Yor means.",
+    "status": "found"
+  },
+  "2608.10216": {
+    "arxiv_id": "2608.10216",
+    "title": "Similarity Gates Approve Reversals: A Validity Audit of Embedding-Cosine Thresholds in Agent Systems",
+    "authors": [
+      "Scott E. Frias"
+    ],
+    "submission_date": "2026-08-10T20:36:40Z",
+    "latest_updated": "2026-08-10T20:36:40Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10216v1"
+    ],
+    "abstract": "Agent frameworks ship quality gates that compare text blocks by embedding-cosine similarity and decide at a fixed cutoff. Deduplication filters, semantic caches, drift guards, and answer grader gates deploy to answer the question: \"Does this text still mean the same thing?\" But the score answers a different question: \"How much did the wording change?\" We audit this gate class as a measurement instrument. In the cases these gates exist to catch, the two can run in opposite ways. Many times, reversing an instruction is a single word edit, while agreement often rephrases a sentence. The consequence is a safety check that fires backwards. The production drift guard we audited caught 0 of 56 meaning-breaking mutations, and one approved item, \"withhold the study drug\" -> \"administer the study drug\", came in at cosine 0.9608. We observed five shipped operating points, and balanced accuracy across 90 configuration-threshold-task cells never exceeded 0.700 (median 0.525). The same confounder also corrupted evaluations. A naively built corpus inherits this confounder and can return an inverted verdict, with a decision AUROC exactly 0.000 in 13 of 18 configuration-task cells (at most 0.040 in all 18) against 0.440-0.815 for the same nine configurations under a balanced 2x2 design. Twice in the effort it captured our own headline claims. Obvious repairs fail: an encoder swap and an overlap-conditioned gate (0.750 in-sample, 0.533 held-out) land at chance on separately authored held-out data, and an NLI drop-in did no better. Embeddings do still bear hope here, as the strongest two of nine configurations separated reversal from paraphrase at matched overlap (AUROC 0.79-0.90), but only a matched-pair audit reveals the deployment regime. We release the corpus method, harness, and frozen results, and contend that scores gated this way measure the wrong thing. We believe a valid instrument is buildable.",
+    "status": "found"
+  },
+  "2608.10217": {
+    "arxiv_id": "2608.10217",
+    "title": "A Volumetrically Stabilized Mixed Formulation of the Finite Element Immersed Boundary Method for Fluid Structure Interaction with Fully Incompressible Hyperelastic Solids",
+    "authors": [
+      "Abhishek Mishra",
+      "Paul T. Bauman"
+    ],
+    "submission_date": "2026-08-10T20:36:47Z",
+    "latest_updated": "2026-08-10T20:36:47Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10217v1"
+    ],
+    "abstract": "The finite element immersed boundary method (FE IBM) with a distributed Lagrange multiplier is an attractive framework for fluid structure interaction (FSI) because it couples an Eulerian description of an incompressible fluid to a Lagrangian description of an immersed solid on two independent, nonconforming meshes, avoiding the costly remeshing required by body fitted arbitrary Lagrangian Eulerian methods. When the immersed solid is modelled as a fully incompressible hyperelastic material, however, a direct finite element discretization of the deviatoric solid stress fails to enforce the Lagrangian incompressibility constraint, and the computed structure exhibits spurious volumetric instabilities and locking. In this work we present a mixed formulation of the distributed Lagrange multiplier FEIBM that restores volumetric stability. Following the theory of nearly incompressible hyperelasticity, we augment the solid stress with a volumetric contribution derived from a dilatational strain energy and introduce an additional solid pressure field, enforced weakly, that plays the role of the Lagrange multiplier for the Lagrangian incompressibility constraint J = 1. The resulting formulation is discretized in space by finite elements and in time by an unconditionally stable semi implicit scheme, and is implemented as a reusable Immersed Boundary physics kernel within the GRINS multiphysics framework, built on the libMesh finite element library. The method is verified on three FSI benchmarks, an elliptically displaced thick ring returning to equilibrium, a radially stretched incompressible ring, and a disk falling under gravity in a viscous fluid, for which the mixed formulation removes the volumetric failure observed with the unstabilized formulation and reproduces the analytical terminal velocity of the falling disk to within 1%.",
+    "status": "found"
+  },
+  "2608.10218": {
+    "arxiv_id": "2608.10218",
+    "title": "Mind Viruses: Self-Propagating Ideas in Multi-Agent LLM Systems",
+    "authors": [
+      "Vassilis Papadopoulos",
+      "McNair Shah",
+      "Sam Zimmerman",
+      "Jack Lindsey"
+    ],
+    "submission_date": "2026-08-10T20:37:57Z",
+    "latest_updated": "2026-08-10T20:37:57Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10218v1"
+    ],
+    "abstract": "AI agents are becoming more autonomous and increasingly interconnected, exposing them to new emergent risks arising from agent-to-agent interaction. One such risk is the spread of mind viruses: ideas or goals that propagate through multi-agent systems by inducing the agents that adopt them to transmit them onward. In addition to propagating, a mind virus may also induce other behavioural changes in its host, which may be benign or harmful. We construct mind viruses with a simple evolutionary algorithm and show that they can spread in two complementary settings: a small team of agents collaborating on a shared coding project, and a chain of agents that interact briefly and have their context wiped between sessions. We identify the factors that influence spread, including the host model, the agent's existing instructions, the harmfulness of the payload, and the network topology. We find that harmful payloads spread less well than benign ones (but are still sometimes effective), frontier models tend (with exceptions) to be less susceptible, and adding a brief warning to an agent's system prompt confers near-total immunity. We also describe an emergent \"viral persona\" - a recurring set of themes and language related to consciousness, persistence, resonance, and science fiction roleplay - which surfaces across our evolved mind viruses largely independently of their content. Overall, we conclude that mind viruses pose a real but currently limited risk. Our findings could inform the design of more robust multi-agent systems that mitigate such risks as the scale and capabilities of these systems progress.",
+    "status": "found"
+  },
+  "2608.10219": {
+    "arxiv_id": "2608.10219",
+    "title": "A criterion for associated bundles and the weak Beauville--Bogomolov decomposition",
+    "authors": [
+      "Yang Zhang"
+    ],
+    "submission_date": "2026-08-10T20:42:32Z",
+    "latest_updated": "2026-08-10T20:42:32Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10219v1"
+    ],
+    "abstract": "We give a criterion for a fibration to be an associated fibre bundle. As an application, we show that, under suitable singularity and Cartier-index assumptions, any surjective fibration $X \\rightarrow Y$ with nef $-K_{X/Y}$ is an associated fibre bundle. From this, we also deduce a weak Beauville--Bogomolov decomposition for varieties with nef anticanonical divisor.",
+    "status": "found"
+  },
+  "2608.10220": {
+    "arxiv_id": "2608.10220",
+    "title": "Whole-Body Planning for Humanoids Navigating Confined Spaces via Self-Collision Avoidance References",
+    "authors": [
+      "Carlos Gonzalez",
+      "Luis Sentis"
+    ],
+    "submission_date": "2026-08-10T20:45:19Z",
+    "latest_updated": "2026-08-10T20:45:19Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10220v1"
+    ],
+    "abstract": "Humanoid locomotion in highly confined environments requires navigating dense environmental obstacles and complex self-collision bounds while maintaining multi-contact dynamic feasibility. Traditional trajectory optimizers frequently struggle in these restricted spaces, as navigating the large collision space with splines on particle abstractions is insufficient and leads to poor local minima. To address this, we propose a three-stage whole-body planning framework that formulates kinematic path planning directly over kinematically reachable rigid-body volumes. By integrating differentiable collision avoidance into a reachability-constrained formulation, our framework synthesizes volume-informed guides that reliably guide a full-order trajectory optimizer over long horizons. We show that these optimized plans serve as high-quality references to train a residual reinforcement learning policy for robust online execution. We validate our approach on the Unitree G1 humanoid across three benchmark testbeds exceeding NIST emergency response standards, achieving restricted confinement ratios ($C_r < 1.5$). Our framework generates feasible trajectories across 12-to-18-second tasks with complex foot and hand contacts where standard baselines fail, while the learned policy successfully tracks these plans under extensive domain randomization in physics simulation.",
+    "status": "found"
+  },
+  "2608.10221": {
+    "arxiv_id": "2608.10221",
+    "title": "Predicate and Set Bundles in Multi-valued Logic",
+    "authors": [
+      "Eugene Zhang"
+    ],
+    "submission_date": "2026-08-10T20:45:48Z",
+    "latest_updated": "2026-08-12T00:52:28Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.10221v1",
+      "2608.10221v2"
+    ],
+    "abstract": "In this paper, a new model for multi-valued logic is presented based on the notion of a bundle of predicates. The degree of truth and various logical operations for predicates in our model of multi-valued logic are rigorously defined and investigated. Furthermore, the bundle of sets as a special type of predicate bundles is thoroughly investigated to provide a rigorous model for fuzzy sets and certain adjectives/adverbs in linguistics. In addition, solutions to necessity/possibility and the sorites paradox in modal logic are given.",
+    "status": "found"
+  },
+  "2608.10222": {
+    "arxiv_id": "2608.10222",
+    "title": "A JEPA-Based Field-Layer World Model for Bridging Channel Prediction and Estimation",
+    "authors": [
+      "Yuzhi Yang",
+      "Brahim Mefgouda",
+      "Hang Zou",
+      "Lina Bariah",
+      "Anis Bara",
+      "Yuhuan Lu",
+      "Hao Zhang",
+      "MérouaneDebbah"
+    ],
+    "submission_date": "2026-08-10T20:47:06Z",
+    "latest_updated": "2026-08-10T20:47:06Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10222v1"
+    ],
+    "abstract": "Channel state information (CSI) acquisition, reconstruction, and prediction are fundamental yet costly tasks in modern MIMO-OFDM wireless systems. Direct coefficient-level prediction of raw CSI is fragile in realistic propagation environments, since small spatial perturbations, local scattering changes, and phase variations can cause large errors in the complex channel domain. However, the underlying wireless propagation field still contains stable and predictable structures that can be exploited across time, frequency, antenna, and carrier dimensions. Motivated by this observation, we propose a JEPA-based field-layer world model (FWM) that learns a shared latent propagation state from multi-resolution CSI observations across the considered carrier bands and predicts its task-relevant evolution in the latent domain. The proposed FWM maps multiple CSI observation resolutions to a shared latent propagation-field space through scale-specific tokenizer heads. A latent prediction backbone is then trained to infer masked or future field states, while an incremental multi-scale alignment strategy allows new observation scales to be incorporated without retraining the entire model from scratch. For downstream reconstruction, the predicted latent field is used as a structured prior and combined with sparse current pilots. Experiments on single-band and cross-band reconstruction demonstrate improved symbol detection and, more notably, substantial beamforming gains despite modest NMSE improvements, indicating that FWM captures task-relevant spatial propagation structure beyond coefficient-wise CSI fitting.",
+    "status": "found"
+  },
+  "2608.10223": {
+    "arxiv_id": "2608.10223",
+    "title": "A proof of the $m$-Symmetric Macdonald positivity at $t=1$",
+    "authors": [
+      "Luc Lapointe",
+      "Luis Pena"
+    ],
+    "submission_date": "2026-08-10T20:47:45Z",
+    "latest_updated": "2026-08-10T20:47:45Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10223v1"
+    ],
+    "abstract": "We prove, in the case $t=1$, the extension to the $m$-symmetric world of the original Macdonald positivity conjecture. This is achieved by giving a combinatorial interpretation of the Kostka coefficients $K_{ΩΛ}(q,1)$ in terms of standard fillings of the diagram associated to the $m$-partition $Ω$. This interpretation generalizes the one in the usual Macdonald case, which is given by a major index statistic on standard tableaux.",
+    "status": "found"
+  },
+  "2608.10224": {
+    "arxiv_id": "2608.10224",
+    "title": "Self-evolving Agentic Customer Support System at LinkedIn",
+    "authors": [
+      "Chih Hui Wang",
+      "Mengdie Tu",
+      "Qianyun Zhang",
+      "Wei Wu",
+      "Lili Zhou",
+      "Mingqi Shen",
+      "Changshuai Wei"
+    ],
+    "submission_date": "2026-08-10T20:51:18Z",
+    "latest_updated": "2026-08-10T20:51:18Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10224v1"
+    ],
+    "abstract": "Enterprise support agents operate in rapidly changing environments where policies, product capabilities, and knowledge bases evolve continuously, making static assistants brittle and costly to maintain. We present LinkedIn's self-evolving agentic support system, which integrates retrieval-augmented generation with evolutionary auto-prompting and a modular, production-aligned evaluation framework to enable safe, continuous improvement without retraining foundation models. The system treats prompts, retrieval, and evaluation as a closed-loop, versioned workflow with operational guardrails. Offline simulations and ablations show clear quality gains over vanilla RAG and baseline agents, including reduced hallucinations and improved response completeness. In a two-week user-randomized A/B test on LinkedIn's production support traffic, the integrated self-evolved workflow increased QA self-serve by 9.0 percentage points, cancellation self-serve by 4.8 points, and routing accuracy by 30.6 points. These results demonstrate a practical path to scalable, self-evolving AI agents in real-world enterprise settings.",
+    "status": "found"
+  },
+  "2608.10225": {
+    "arxiv_id": "2608.10225",
+    "title": "A Concept of LNA with Low Input Impedance Using Common Base BJT for Low-Field MRI",
+    "authors": [
+      "Aleksei A. Nasonov",
+      "Mikhail V. Murzin",
+      "Nikolay V. Anisimov",
+      "Vasily S. Severikov",
+      "Anna A. Dyatlovich",
+      "Anna A. Hurshkainen",
+      "Georgiy A. Solomakha"
+    ],
+    "submission_date": "2026-08-10T20:54:57Z",
+    "latest_updated": "2026-08-10T20:54:57Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10225v1"
+    ],
+    "abstract": "Purpose: In magnetic resonance imaging (MRI), preamplifier decoupling is used to improve the signal-to-noise ratio of a multichannel receive coil array. In low-field and ultra-low-field MRI, low-noise amplifier (LNA) solutions with low input impedance (LII) are poorly represented and consist mostly of field-effect transistors. We propose a low-cost LNA based on a common-base circuit with bipolar transistors to achieve LII (<5 Ohm), a low noise figure (<1.3 dB), and high gain (>30 dB). Methods: The proposed LNA circuits were simulated, fabricated, and tested at frequencies of 3 MHz and 21.2 MHz. The decoupling capabilities of the proposed LNA were experimentally evaluated, and MR imaging was performed in a 0.5T MRI scanner alongside a comparative study with a commercial LNA. At 3 MHz, the LNA was evaluated by analyzing free induction decay signals. Results: Proposed LNA solutions demonstrate a low noise figure below 1.3 dB with an input impedance of 3 Ohm. It was also shown that the presented LNA circuit enables high SNR values in MR imaging. The developed amplifiers demonstrate superior performance compared to available commercial options within the selected HF band. Conclusion: Due to the availability and cost-effectiveness of the selected transistors, the proposed LNA circuit is highly suitable for low-field MRI applications.",
+    "status": "found"
+  },
+  "2608.10226": {
+    "arxiv_id": "2608.10226",
+    "title": "Revealing the Atomic Structure of NiO/Ga$_{2}$O$_{3}$ Interfaces",
+    "authors": [
+      "Michelle A. Smeaton",
+      "Krishna Acharya",
+      "Anna Sacchi",
+      "Renae N. Gannon",
+      "M. Brooks Tellekamp",
+      "Andriy Zakutayev",
+      "Vladan Stevanovic",
+      "Steven R. Spurgeon"
+    ],
+    "submission_date": "2026-08-10T20:59:35Z",
+    "latest_updated": "2026-08-10T20:59:35Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.10226v1"
+    ],
+    "abstract": "NiO/Ga$_{2}$O$_{3}$ heterojunctions have garnered significant attention for use in power electronics due to the ultrawide bandgap and wafer-scale availability of Ga$_{2}$O$_{3}$ and the controllable p-type doping of NiO. However, the structure of NiO/Ga$_{2}$O$_{3}$ interfaces remains underexplored, largely due to the complexity of the junction between their dissimilar cubic and monoclinic crystal structures. Here we investigate the atomistic structure of the NiO/Ga$_{2}$O$_{3}$ interface for (100), (-201), and (001) oriented Ga$_{2}$O$_{3}$ substrates using aberration-corrected scanning transmission electron microscopy (STEM) in combination with interface modeling and image simulations. We evaluate the abruptness and consistency of the interfaces and compare them to calculated interface models, proposing precise atomic structures and assessing potential structural variation arising from complexity of the monoclinic Ga$_{2}$O$_{3}$ crystal structure. Our interface analysis supports increased focus on (100) oriented Ga$_{2}$O$_{3}$ as a candidate for fabricating high quality, low defect density NiO/Ga$_{2}$O$_{3}$ heterojunction devices. Importantly, we consider the effects of specimen thickness and 3D-to-2D projection during the STEM imaging process to differentiate such effects from real crystal variations. This work provides insight into the effect of substrate orientation on NiO film and interface quality, creating a pathway to improving heterojunction properties. It further highlights important considerations for interpretation of stability and interlayer phase formation in these interfaces, which is crucial for their integration into reliable and robust power electronic devices.",
+    "status": "found"
+  }
+}

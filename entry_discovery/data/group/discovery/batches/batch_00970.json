@@ -1,0 +1,392 @@
+{
+  "2609.17234": {
+    "arxiv_id": "2609.17234",
+    "title": "Self-Distilled Pronunciation and Accent Control for Neural Text-to-Speech",
+    "authors": [
+      "Shuhei Kato"
+    ],
+    "submission_date": "2026-09-15T14:13:51Z",
+    "latest_updated": "2026-09-24T10:46:39Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2609.17234v1",
+      "2609.17234v2",
+      "2609.17234v3"
+    ],
+    "abstract": "Text-to-speech that reads raw text has no lexicon: a rare word is read as guessed, and a native Japanese listener accepts a word only if its reading and pitch accent are both right. A known remedy installs a reading-and-accent channel into a released model, but it needs many recordings. This paper removes the recordings: the frozen backbone reads a sentence containing a common word it already says correctly, and that output serves as the teacher for the same sentence with the word replaced by an annotated reading with its pitch accent. Screened raters judged the tag right on 0.80 to 0.93 of unseen difficult words on four backbones spanning autoregressive, diffusion, and encoder-decoder synthesis; plain kana, which cannot express an accent, got 0.38 to 0.60. On words needing no edit, naturalness is non-inferior on one backbone; on the other three, listeners prefer the unedited rendition by 0.19 to 0.26.",
+    "status": "found"
+  },
+  "2609.17235": {
+    "arxiv_id": "2609.17235",
+    "title": "AraMIP: Extending MIPVU Towards Metaphor Identification in Arabic",
+    "authors": [
+      "Mandar Marathe",
+      "Manar Ali",
+      "Sara Nabhani",
+      "Raia Abu Ahmad",
+      "Ibrahim Baroud",
+      "Omar Momen"
+    ],
+    "submission_date": "2026-09-15T14:14:10Z",
+    "latest_updated": "2026-09-15T14:14:10Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17235v1"
+    ],
+    "abstract": "Metaphor research has gained increasing attention due to its relevance to linguistic creativity, language use, cognitive processes, and related areas. While many efforts have been devoted to metaphor identification and annotation in English and other languages, Arabic remains under-resourced in this area. In this work, we propose the Arabic Metaphor Identification Procedure (AraMIP), a novel guideline for Arabic metaphor annotation. AraMIP builds on the widely used Metaphor Identification Procedure Vrije Universiteit (MIPVU) framework, incorporating adaptations that accounts for the language-specific properties of Arabic. We distinguish three major types of Arabic figurative language: Isti'ara (metaphor), kinaya (metonymy/indirect expression), and tashbih (simile), and annotate a pilot dataset of 300 sentences (5277 words). Our analysis reveals key challenges specific to Arabic, including morphological complexity, inconsistencies in dictionary sense ordering, and the absence of standardized contextual materials for annotators. This work contributes a first step toward standardized Arabic figurative instances and facilitates the development of larger annotated resources, thereby supporting future research on figurative language in Arabic.",
+    "status": "found"
+  },
+  "2609.17236": {
+    "arxiv_id": "2609.17236",
+    "title": "A Memorization Floor for LLM Refinement of Decompiled Code",
+    "authors": [
+      "Muhammad Asjad"
+    ],
+    "submission_date": "2026-09-15T14:15:08Z",
+    "latest_updated": "2026-09-15T14:15:08Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17236v1"
+    ],
+    "abstract": "We introduce a memorization floor: a within-item control separating what LLM refinement of decompiler output recovers from its input from what it recovers from its prior. Refine a function, then refine it again from an input whose identifiers have been destroyed, and measure what survives. Because the comparison is within-item, corpus difficulty cannot contribute; it costs twenty API calls. Applied to functions written after our analysis plan was committed, so no released model could have memorized them, it reports two things. Recovery is real: refined output sits +0.072 to +0.137 above an arm-matched permutation null built from its own output vocabulary. But it does not depend on the input we ablate: destroying the input's dataflow changes the naming gain by +0.001 (95% CI [-0.026, +0.026]), and removing type prefixes or permuting names changes it by no more. A second refiner from another vendor, registered in advance and given byte-identical inputs, reproduces this -- twelve contrasts, two models, twelve nulls. Readability stays at ceiling throughout, so a reader is given no signal. The null is bounded, not absolute: contributions under 0.056 are invisible, and the ablation leaves operations intact, so naming from those alone remains a competing reading. No registered hypothesis was confirmed, and we report the five instrument failures behind that in full, including a reassembly harness biased against the treated arm and an equivalence checker we registered without checking it worked on our inputs.",
+    "status": "found"
+  },
+  "2609.17237": {
+    "arxiv_id": "2609.17237",
+    "title": "Optimal transport of image sources for interpolation of room impulse responses with moving sources",
+    "authors": [
+      "Jesper Brunnström",
+      "Filip Elvander",
+      "Isabel Haasler"
+    ],
+    "submission_date": "2026-09-15T14:17:40Z",
+    "latest_updated": "2026-09-15T14:17:40Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17237v1"
+    ],
+    "abstract": "In geometrical acoustics, room impulse responses (RIRs) can be represented by a set of image sources in free space. For a fixed source position, the image sources allow for computing RIRs at arbitrary receiver positions. However, for a moving physical source, the image sources also move, making interpolation more difficult. In this paper we develop an interpolation method for image source positions of a moving source, given image source positions at the start and end of the trajectory. The method exploits the fact that each image source moves the same distance as the physical source. A statistical model is developed to derive cost functions and an appropriate dummy cost used in the proposed partial optimal transport (POT) approach. Through simulated experiments, POT using the proposed cost functions is shown to be effective compared to the alternatives.",
+    "status": "found"
+  },
+  "2609.17238": {
+    "arxiv_id": "2609.17238",
+    "title": "Covariate Selection for Doubly Robust Double/debiased Machine Learning Estimators for Causal Inference",
+    "authors": [
+      "Muwon Kwon",
+      "Peter M. Steiner"
+    ],
+    "submission_date": "2026-09-15T14:18:34Z",
+    "latest_updated": "2026-09-15T14:18:34Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17238v1"
+    ],
+    "abstract": "High-dimensional data create challenges for causal effect estimation because identifying the covariates needed for correct model specification becomes increasingly difficult. Double/debiased machine learning (DML) facilitates the use of machine learning (ML) for causal inference by mitigating regularization and overfitting bias, but comparatively less attention has been given to covariate selection in relation to the double robustness (DR) property possessed by some DML estimators. In particular, ML-based covariate selection may result in differential covariate selection or in misspecification of both models, thereby limiting the practical utility of the DR property. To address these issues, we propose using the union of the covariates selected by the propensity score (PS) and outcome ML models to re-estimate both models. Simulation results show that using the union consistently reduces more confounding bias than using separate selected covariate sets. The results also show that ML-based estimation does not uniformly outperform conventional DR estimation, even under conditions favorable to the Lasso, and that post-Lasso reduces more confounding bias than standard Lasso. These findings demonstrate that successful use of ML for causal inference depends not only on the ML algorithm but also on how the information obtained through covariate selection is incorporated into causal effect estimation.",
+    "status": "found"
+  },
+  "2609.17239": {
+    "arxiv_id": "2609.17239",
+    "title": "Quantum Brownian motion in a temperature gradient",
+    "authors": [
+      "Ricardo J. S. Afonso",
+      "Pedro V. Paraguassú",
+      "Thiago Werlang",
+      "Daniel Valente"
+    ],
+    "submission_date": "2026-09-15T14:19:33Z",
+    "latest_updated": "2026-09-15T14:19:33Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17239v1"
+    ],
+    "abstract": "When a classical Brownian particle is subjected to a temperature gradient it can undergo thermophoresis, i.e., the particle gets transported towards the colder regions of the environment, which bears relevant consequences to nonequilibrium self-organization. Here, we investigate how the quantum Brownian motion is affected by a temperature gradient. We employ a recently proposed generalized system-plus-reservoir model, where one assumes a continuum field of thermal baths. As our main result, we obtain the quantum influence functional, within the Feynmann-Vernon path integral approach. To test convergence, we derive an effective Langevin equation for the center of mass of the quantum wavepacket, and show that it coincides with the classical Langevin equation at high temperatures. Both the fully quantum (low temperatures) and the semiclassical (high temperature) limits show signatures of quantum thermophoresis in the quantum Brownian motion, a so far unexplored effect.",
+    "status": "found"
+  },
+  "2609.17240": {
+    "arxiv_id": "2609.17240",
+    "title": "Swim-and-Breach at Palm Scale: A Rudder-Steered Two-Propeller Underwater Robot Platform with Differential-Thrust Pitch Control",
+    "authors": [
+      "Daehyun Choi",
+      "Ian Bergerson",
+      "Hengjia Zhu",
+      "Tianjun Lan",
+      "Saad Bhamla"
+    ],
+    "submission_date": "2026-09-15T14:19:39Z",
+    "latest_updated": "2026-09-15T14:19:39Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17240v1"
+    ],
+    "abstract": "We present a palm-scale (65 mm, 34 g) swim-and-breach robot platform. Two vertically stacked propellers provide both propulsion and differential-thrust pitch control under a proportional-integral-derivative (PID) loop, and a tail rudder adds yaw control. The hull, evaluated by flow simulation, reduces the drag five-fold relative to an equivalent cuboid, and the propellers are optimized using B-series modeling validated by dynamometer measurements. The current robot swims at 13.9 body lengths per second and turns at 209 deg per second, corresponding to the upper limits reported for underwater robots. In free swimming, the pitch loop turns the body to any commanded nose-up pitch angle, and, with the rudder stabilizing the exit, the current robot leaps 1.6 body lengths high and 3.7 long in a seamless cruise-leap-cruise sequence. The platform can be used to build small-scale robots that cross barriers and dry gaps between pools for inspection in streams, flooded structures, and industrial systems.",
+    "status": "found"
+  },
+  "2609.17241": {
+    "arxiv_id": "2609.17241",
+    "title": "ECHO: Early-layer Collaborative Hierarchical Orchestration with Bonus Logits in Speculative Decoding",
+    "authors": [
+      "Ziyang Ma",
+      "Zihong Zhang",
+      "Zuchao Li",
+      "Lefei Zhang",
+      "Baoyuan Qi",
+      "Siqi Li",
+      "Simin Yu"
+    ],
+    "submission_date": "2026-09-15T14:21:33Z",
+    "latest_updated": "2026-09-15T14:21:33Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17241v1"
+    ],
+    "abstract": "While draft-model-free speculative decoding offers a promising path to efficient LLM inference, it is frequently constrained by stale draft candidates and the high computational cost of the verification. To address these challenges, we propose ECHO, a hierarchical dual-loop framework that exploits the functional asymmetry between LLM layers. Leveraging the high discriminative efficiency of early layers and the authoritative distribution of final layers, ECHO bifurcates inference into a high-frequency inner loop and a low-frequency outer loop. Within the inner loop, early-layer bonus logits drive rapid, multi-step draft-tree exploration at a minimal cost. Simultaneously, the outer loop performs authoritative full-model verification through a state-reuse mechanism. Crucially, the outer loop also utilizes final-layer bonus logits to correct existing paths and supplement the tree with high-confidence candidates for subsequent cycles. Experimental results across diverse benchmarks demonstrate that ECHO significantly boosts mean accepted tokens and achieves a 2.4$\\times$ to 2.9$\\times$ speedup, outperforming existing state-of-the-art baselines with negligible engineering overhead and no extra deployment parameters, albeit with a one-shot fine-tuning dependency for optimal acceleration. The code is available at https://github.com/whucs21Mzy/ECHO.",
+    "status": "found"
+  },
+  "2609.17242": {
+    "arxiv_id": "2609.17242",
+    "title": "Trajectory CPHD Filtering for Multiple Turning Vehicles With Decoupled Orientation and Axial-Scale Estimation",
+    "authors": [
+      "Yunhe Cao",
+      "Yu Wan",
+      "Yuanhao Cheng",
+      "Tat-Soon Yeo",
+      "Jie Fu"
+    ],
+    "submission_date": "2026-09-15T14:21:54Z",
+    "latest_updated": "2026-09-15T14:21:54Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17242v1"
+    ],
+    "abstract": "Reliable estimation of vehicle orientation, centroid, and footprint is important for representing road-user occupancy during vehicle turns at intersections and other common road maneuvers. During a turn, the vehicle orientation and direction of motion may differ, and coupling the orientation with the axial scales can degrade both orientation and extent estimates. This paper proposes a trajectory cardinalized probability hypothesis density filter with a Decoupled Orientation and Axial-Scale Estimation (DOAM) model for multiple-vehicle tracking. The model represents the kinematic, orientation, and squared semi-axis-length states separately within each trajectory component, reducing the mutual interference between orientation variation and scale estimation without introducing an additional interacting multiple-model structure. A structured coordinate-ascent variational inference recursion jointly updates these state sequences and the measurement-source variables. The trajectory-component likelihood and weight update associated with the decoupled representation are derived while retaining the standard cardinality recursion. A fixed-lag trajectory implementation further uses current measurements to correct historical states within the smoothing window. Evaluation with signalized-intersection simulations and real onboard LiDAR measurements shows improved estimation of vehicle orientation, centroid, and extent, particularly during turns. The resulting vehicle-state and footprint estimates provide information for road-user occupancy perception and subsequent collision-risk assessment and motion planning.",
+    "status": "found"
+  },
+  "2609.17243": {
+    "arxiv_id": "2609.17243",
+    "title": "Glycine in the interstellar medium revisited: Resolving conformational complexity kinetically",
+    "authors": [
+      "Judith Wurmel",
+      "John M. Simmie"
+    ],
+    "submission_date": "2026-09-15T14:24:23Z",
+    "latest_updated": "2026-09-15T14:24:23Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17243v1"
+    ],
+    "abstract": "Numerous attempts to detect glycine, a simple amino acid and a key building block of proteins in all life on Earth, in the interstellar medium have so far been unsuccessful in spite of the fact that it is present in meteorites, comets and asteroids. Glycine is conformationally diverse, existing in eight different forms, and the aim is to show that interconversions, in the dark, are governed by quantum mechanical tunnelling at temperatures from 300 K down to 10 K and to compute the rate at which these changes occur resulting in recommendations to maximise a successful outcome.",
+    "status": "found"
+  },
+  "2609.17244": {
+    "arxiv_id": "2609.17244",
+    "title": "Gopakumar-Vafa invariants and Macdonald formula II",
+    "authors": [
+      "Lutian Zhao"
+    ],
+    "submission_date": "2026-09-15T14:25:55Z",
+    "latest_updated": "2026-09-15T14:25:55Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17244v1"
+    ],
+    "abstract": "We prove the cohomological Gopakumar-Vafa/Pandharipande-Thomas correspondence for the local plane and quadric in every effective curve class and Euler characteristic. The strict supports of the simple perverse constituents of the stable pair vanishing cycle direct images are closures of loci of transverse unions of smooth connected curves. Wall-crossing and duality leave a finite range of Euler characteristics to consider. In this range, a commutation relation for point modifications on bounded stacks of surface pairs excludes all other supports. Applying the family Macdonald formula on the reduced locus gives the correspondence as an identity of semisimplified perverse direct images on the Chow variety.",
+    "status": "found"
+  },
+  "2609.17245": {
+    "arxiv_id": "2609.17245",
+    "title": "Soliton Resolution at Blow-Up for the Subconformal Nonlinear Wave Equation",
+    "authors": [
+      "Hatem Zaag"
+    ],
+    "submission_date": "2026-09-15T14:27:35Z",
+    "latest_updated": "2026-09-15T14:27:35Z",
+    "revised_dates": null,
+    "venue": "International Congress of Mathematicians 2026, Jul 2026, Philadelphia (PA), United States. pp.368-387",
+    "latest_version": 1,
+    "versions": [
+      "2609.17245v1"
+    ],
+    "abstract": "We consider the nonlinear wave equation (NLW) with a superlinear pure power nonlinearity in the subconformal and conformal cases. Under some conditions on initial data, this equation is known to have solutions which blow up in finite time. Two questions are then relevant: (i) the classification of all possible blow-up behaviors; (ii) the construction of examples of blow-up solutions. As we will show, the situation is entirely settled in the one-dimensional case, where we fully solve the famous soliton resolution conjecture. Various extensions to higher dimensions and to perturbed versions of NLW are given, including the construction of a solution in 2-d, with a nearly pyramidal blow-up graph. Carrying out this program was made possible thanks to a synergy of techniques from the PDE theory, mathematical physics, and analysis, including ODE techniques, spectral theory, and energy methods. Throughout this presentation, we will insist on connections with the study of other types of PDEs, in particular in the parabolic case. Surprisingly enough, in spite of the difference between parabolic and hyperbolic equations at the linear level, the nonlinear nature brings in a strong unity-both in the results and in the methods-between these two important classes of PDEs.",
+    "status": "found"
+  },
+  "2609.17246": {
+    "arxiv_id": "2609.17246",
+    "title": "Improved weighted bounds for the strong maximal function",
+    "authors": [
+      "Sheldy Ombrosi",
+      "Guillermo Rey"
+    ],
+    "submission_date": "2026-09-15T14:27:45Z",
+    "latest_updated": "2026-09-15T14:27:45Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17246v1"
+    ],
+    "abstract": "We improve the exponents of the $A_p$ constant in the strong and weak-type weighted bounds for the strong maximal function, for every $1 < p <\\infty$ and every dimension $d \\geq 2$. In dimension two, the strong and weak $L^2(w)$ exponents improve from $2$ to $7/4$ and from $3/2$ to $5/4$, respectively. The proof exploits the geometry of pairwise intersections of antichains of dyadic rectangles.",
+    "status": "found"
+  },
+  "2609.17247": {
+    "arxiv_id": "2609.17247",
+    "title": "DriveMCP: An Agentic AI framework for Advanced Driver Assistance System",
+    "authors": [
+      "Farzad Nadiri",
+      "Mehdi Cina",
+      "Ahmad B. Rad"
+    ],
+    "submission_date": "2026-09-15T14:29:18Z",
+    "latest_updated": "2026-09-15T14:29:18Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17247v1"
+    ],
+    "abstract": "An agentic AI driver-assistance framework that integrates perception, compliance reasoning, vehicle-state interpretation, and safety arbitration into a modular and auditable pipeline. The architecture, referred to as DriveMCP, incorporates a sensor-like perception stack alongside DriveLM as the vision-language front end to generate a graph-structured scene understanding (Graph Visual Question Answering) and language-grounded driving information. Key compliance elements in world_state, including posted speed limits and jurisdiction cues, are derived from DriveLM outputs through a structured parsing layer rather than being injected as simulator ground truth. A stateful orchestration layer coordinates specialized experts exposed as Model Context Protocol (MCP) servers: (i) a Rules server that performs retrieval-augmented compliance reasoning over jurisdiction-specific traffic codes and sign conventions, (ii) a Weather server that estimates traction risk and contextual speed advisories, and (iii) an MCP-CAN server that surfaces Controller Area Network (CAN)/On-Board Diagnostics (OBD) telemetry and diagnostic context for health-aware risk shaping. These outputs are fused to generate a structured decision that prompts a recommended course of action. The outcome is then further filtered by a Responsibility-Sensitive Safety (RSS)-inspired guardrail that arbitrates speak versus act decisions under bounded online adaptation. In CARLA simulation across multilingual, cross-border, and dynamic speed-limit scenarios, DriveMCP reduces traffic infractions and overspeed relative to the VLM-Direct, VLM-Direct+RAG, and VLM-Tools-NoArbiter baselines, while improving hazard response time and maintaining sub-second advisory latency.",
+    "status": "found"
+  },
+  "2609.17248": {
+    "arxiv_id": "2609.17248",
+    "title": "Video-HolmesV2: Can MLLMs Reason with Spatio-Temporal Audio-Visual Evidence in Long Videos?",
+    "authors": [
+      "Zhaoyang Wei",
+      "Zipeng Wang",
+      "Yushe Cao",
+      "Chenhui Qiang",
+      "Shuaibing Cheng",
+      "Xuesong Yang",
+      "Sen Nie",
+      "Bowen Jiang",
+      "Wenchao Ding",
+      "Yanchao Hao",
+      "Zheng Wei",
+      "Xuehui Yu",
+      "Zhenjun Han"
+    ],
+    "submission_date": "2026-09-15T14:30:00Z",
+    "latest_updated": "2026-09-15T14:30:00Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17248v1"
+    ],
+    "abstract": "Multimodal Large Language Models have demonstrated impressive video understanding, yet their ability to reason over long-form narratives is often masked by visual-centric evaluations and inefficient context processing. Existing benchmarks over-rely on visual heuristics while marginalizing auditory cues, effectively reducing models to \"silent observers\" that bypass genuine cross-modal reasoning. Moreover, standard dense sampling creates an evidence-context trade-off: increasing frames to capture evidence inevitably leads to attention distraction and token explosion. To bridge these gaps, we present Video-HolmesV2, a novel benchmark designed for Deep Audio-Visual Coupling. Unlike previous works, it enforces an Evidence-Based Evaluation, requiring models to justify answers with precise spatio-temporal audio-visual evidence, thereby reducing confounding effects of guessing and hallucinated evidence. To support this, we introduce: (1) a Multi-Model Cross-Verification pipeline to ensure task rigor; (2) a Spatio-temporal Evidence-Aware Metric for fine-grained calibration. Furthermore, we propose an Audio-Text Guided Token Compression framework. By fusing task intent with auditory anchors, our method distills high-value reasoning cues to mitigate long-context noise. In our evaluation, even strong proprietary models achieve below 60% accuracy, while our approach outperforms comparable open-source omni-models.",
+    "status": "found"
+  },
+  "2609.17249": {
+    "arxiv_id": "2609.17249",
+    "title": "Port-Hamiltonian Koopman Operator Synthesis for Mechanical Systems",
+    "authors": [
+      "Rajpal Singh",
+      "Aditya Singh",
+      "Jishnu Keshavan"
+    ],
+    "submission_date": "2026-09-15T14:31:18Z",
+    "latest_updated": "2026-09-15T14:31:18Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17249v1"
+    ],
+    "abstract": "Finite-dimensional Koopman models enable efficient linear prediction and control of nonlinear robotic systems. However, models learned purely from trajectory data may violate the energetic structure of the underlying mechanics, producing predictions that exhibit artificial energy growth and diverge under recursive propagation. This work presents a structure-preserving Koopman framework for Euler-Lagrange systems built on generalized-momentum coordinates. The momentum transformation exposes the mechanical actuation as a known, state-independent port, which is preserved explicitly in the lifted dynamics. A structure-constrained neural architecture is developed to jointly learn the lifting functions and a port-Hamiltonian Koopman generator, rendering the learned dynamics passive by construction rather than through penalty terms or post-hoc projection. A Cayley-midpoint discretization further preserves the corresponding storage-dissipation balance exactly in discrete time. These properties are established analytically by deriving the discrete storage balance and associated stability guarantees of the learned predictor. Simulation and experimental studies demonstrate improved prediction accuracy, data efficiency, and closed-loop tracking over Koopman baselines, with increasing gains for higher-dimensional systems.",
+    "status": "found"
+  },
+  "2609.17250": {
+    "arxiv_id": "2609.17250",
+    "title": "Weighted lattice point enumeration in lecture hall order polytopes",
+    "authors": [
+      "Katharina Jochemko",
+      "Krishna Menon"
+    ],
+    "submission_date": "2026-09-15T14:31:31Z",
+    "latest_updated": "2026-09-15T14:31:31Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17250v1"
+    ],
+    "abstract": "We consider weighted lattice point enumeration in lecture hall order polytopes. We observe that these half-open polytopes are closed under weight-lifting for a large class of polynomial weights, including monomials and weights given by binomial coefficients. For rooted trees, we prove that the corresponding (weighted) $h^\\ast$-polynomial is real-rooted thereby complementing previous results of Savage-Visontai and Brändén-Leander.",
+    "status": "found"
+  },
+  "2609.17251": {
+    "arxiv_id": "2609.17251",
+    "title": "Persistent Recurrent Memory Between Transformer Layers - Improves Language Model Generalization",
+    "authors": [
+      "Eduardo Novaes Hering"
+    ],
+    "submission_date": "2026-09-15T14:31:43Z",
+    "latest_updated": "2026-09-15T14:31:43Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17251v1"
+    ],
+    "abstract": "We introduce a simple architectural modification to decoder-only transformers: a persistent recurrent state that observes hidden representations via cross-attention, updates itself through a GRU, and modulates subsequent processing via gated addition. Inserted between the lower and upper halves of a 6-layer transformer, this module adds only 3.7\\% additional parameters while reducing evaluation loss from $2.438 \\pm 0.004$ to $1.743 \\pm 0.018$, corresponding to a 28.5\\% reduction on held-out language modeling data. The improvement is statistically significant across 5 random seeds ($p < 0.01$) and corresponds to reduced overfitting (generalization gap 0.12 vs 0.26). Through controlled ablations, we demonstrate that the improvement stems entirely from the persistent memory topology, not from auxiliary self-prediction objectives. A model with identical topology but no auxiliary loss performs equivalently, while a random auxiliary loss provides no benefit. Representation probing reveals that the persistent state encodes narrative position (52\\% vs 33\\% chance level)---information that standard attention maintains less efficiently. Our results suggest that bridging transformer layers with a lightweight recurrent memory is a simple, effective approach to improving generalization in small-scale language models.",
+    "status": "found"
+  },
+  "2609.17252": {
+    "arxiv_id": "2609.17252",
+    "title": "Quasi-Helmholtz Calderón Multiplicative Preconditioning for Higher-Order Global Multi-Trace Integral Equations",
+    "authors": [
+      "Cedric Münger",
+      "Alessandro Zuccotti",
+      "Van Chien Le",
+      "Kristof Cools"
+    ],
+    "submission_date": "2026-09-15T14:33:52Z",
+    "latest_updated": "2026-09-15T14:33:52Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17252v1"
+    ],
+    "abstract": "The paper presents a higher-order global multi-trace integral equation for time-harmonic electromagnetic scattering by composite objects. The higher-order multi-trace formulation is preconditioned with a Calderón multiplicative preconditioner using higher-order quasi-Helmholtz projectors. The higher-order quasi-Helmholtz projectors separate the solenoidal and non-solenoidal components of the basis functions. Separate access to the Helmholtz components circumvents the explicit inversion of an ill-conditioned mixed Gram matrix. This enables the application of Calderón multiplicative preconditioning without refining the mesh and resorting to dual basis functions. Furthermore, it enables low-frequency stabilization, as the solenoidal and non-solenoidal components can be rescaled individually. The higher-order quasi-Helmholtz projectors are computed iteratively, enabling iterative solvers to efficiently solve the preconditioned matrix system, yielding accurate solutions in a few dozen iterations. Numerical experiments are conducted for composite dielectric bodies, confirming the effectiveness of the proposed preconditioner for the global multi-trace formulation discretized with higher-order basis functions for dense meshes and at very low frequencies",
+    "status": "found"
+  },
+  "2609.17253": {
+    "arxiv_id": "2609.17253",
+    "title": "Logarithmic stability for recovering initial data of fractional heat equations from thin-set observations",
+    "authors": [
+      "Kai Yu",
+      "Zhiyuan Li"
+    ],
+    "submission_date": "2026-09-15T14:34:31Z",
+    "latest_updated": "2026-09-15T14:34:31Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17253v1"
+    ],
+    "abstract": "We study the inverse problem of recovering initial data for fractional heat equations on bounded domains from observations taken on two types of possibly Lebesgue-null sets: the first consists of general thin sets whose Hausdorff dimension exceeds \\(n-1\\); the second consists of specially constructed sets of zero Hausdorff dimension, built from algebraic irrational points and rapidly accumulating sequences.By extending thin-set observability inequalities from the classical heat equation to the fractional setting and employing a unified spectral inequality with exponent \\(β\\in(0,s)\\), we establish a quantitative observability estimate for every fractional exponent \\(s>1/2\\). For general thin sets one has \\(β=1/2\\); for the special zero-dimensional sets any \\(β\\in(1/2,s)\\) is admissible, yet the short-time observability cost always remains of exponential type, with the rate governed by \\(β\\) relative to \\(s\\). Under an a priori smoothness assumption, we also prove a logarithmic stability estimate.We further design a regularised least-squares reconstruction algorithm and provide a conditional convergence analysis, showing that the reconstruction error is bounded by the sum of a spectral truncation term and a logarithmic term dictated by the continuous stability, and that the error decays logarithmically as the noise level tends to zero. Numerical simulations using very few observation points confirm the feasibility of the proposed approach.",
+    "status": "found"
+  }
+}

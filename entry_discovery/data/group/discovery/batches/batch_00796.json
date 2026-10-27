@@ -1,0 +1,386 @@
+{
+  "2609.13754": {
+    "arxiv_id": "2609.13754",
+    "title": "Preconditioned Three-Term Conjugate Gradient Framework for Nonconvex Finite Minimax Problems",
+    "authors": [
+      "Wenzhe Zhao"
+    ],
+    "submission_date": "2026-09-12T06:50:37Z",
+    "latest_updated": "2026-09-12T06:50:37Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13754v1"
+    ],
+    "abstract": "This paper develops a hyperbolic-majorization preconditioned three-term nonlinear conjugate-gradient framework for nonconvex finite minimax optimization. An analytic symmetric positive definite metric is derived from a global quadratic majorization of the hyperbolic smoothing model and is used simultaneously as a curvature absorber, a preconditioner, and the line-search energy metric. With the displacement \\(s_{k-1}\\) fixed and a variable curvature response \\(b_k\\), an enhanced three-term direction is introduced together with an adaptive parameter \\(μ_k^\\star\\) that is maximal under the requirement that the baseline worst-case metric-energy constant be preserved. The resulting framework yields a Dai--Liao-type conjugacy relation, enhanced sufficient descent, a smoothing-parameter-uniform Armijo lower bound, fixed-smoothing global first-order convergence and complexity, and Clarke-stationary accumulation points under continuation.",
+    "status": "found"
+  },
+  "2609.13755": {
+    "arxiv_id": "2609.13755",
+    "title": "Row-Polar LP-Newton for Linear Programming with Corral Repair",
+    "authors": [
+      "Yanfei Li",
+      "Yuki Matsuno",
+      "Jianming Shi"
+    ],
+    "submission_date": "2026-09-12T07:01:01Z",
+    "latest_updated": "2026-09-12T07:01:01Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13755v1"
+    ],
+    "abstract": "LP-Newton solves a linear program through a sequence of nearest-point problems. Given an interior feasible point for an inequality-form LP, we construct the compact hull formed by the origin and its normalized constraint rows. Polar LP-Newton (P-LPN) follows the objective ray to the boundary of this row-polar hull, where it recovers a primal-dual optimum or a recession direction proving unboundedness. For rational row-polar data, we prove an outer-iteration bound quadratic in dimension and linear in binary input length, excluding inner Wolfe work. Restarting Wolfe at every outer iteration discards its terminal corral even though the hull is unchanged and the next target lies on the same ray. Corral-repair P-LPN (CR-P-LPN) instead repairs that corral and uses it to start the next projection. Verification over the full hull preserves P-LPN's projections, outer targets, and LP conclusion in exact arithmetic. Experiments in Julia and MATLAB show where repair helps. After common initialization, median P-LPN times across 180 single-LP tests are 1.62 times the corresponding CR-P-LPN times in Julia and 1.55 times in MATLAB. On three problems with 5,000 to 100,000 rows, the corresponding geometric-mean factors are 2.03 and 1.46. A separate end-to-end study includes initialization on 19 application-derived LPs. CR-P-LPN has lower median total time than the faster cold HiGHS mode, either dual simplex or the interior-point method with crossover, on 18 of the 19 workloads in each language. The geometric means of the ratios of HiGHS time to CR-P-LPN time are 4.93 and 3.06. Component comparisons identify terminal-corral reuse as the useful component, whereas candidate-first ordering alone shows no consistent gain. Repair is not always beneficial: it is slower on Klee-Minty tests, and an author-implemented simplex is faster on the retained Netlib models.",
+    "status": "found"
+  },
+  "2609.13756": {
+    "arxiv_id": "2609.13756",
+    "title": "Development of Low-Cost Real-Time Driver Drowsiness Detection System using Eye Centre Tracking and Dynamic Thresholding",
+    "authors": [
+      "Fuzail Khan",
+      "Sandeep Sharma",
+      "M. R. Arulalan"
+    ],
+    "submission_date": "2026-09-12T07:03:17Z",
+    "latest_updated": "2026-09-12T07:03:17Z",
+    "revised_dates": null,
+    "venue": "Intelligent Systems Design and Applications. ISDA 2018 2018. Advances in Intelligent Systems and Computing, vol 940. Springer, Cham",
+    "latest_version": 1,
+    "versions": [
+      "2609.13756v1"
+    ],
+    "abstract": "One in every five vehicle accidents on the road today is caused simply due to driver fatigue. Fatigue or otherwise drowsiness, significantly reduces the concentration and vigilance of the driver thereby increasing the risk of inherent human error leading to injuries and fatalities. Hence, our primary motive being - to reduce road accidents using a non-intrusive image processing based alert system. In this regard, we have built a system that detects driver drowsiness by real time tracking and monitoring the pattern of the driver's eyes. The stand alone system consists of 3 interconnected components - a processor, a camera and an alarm. After initial facial detection, the eyes are located, extracted and continuously monitored to check whether they are open or closed on the basis of a pixel-by-pixel method. When the eyes are seen to be closed for a certain amount of time, drowsiness is said to be detected and an alarm is issued accordingly to alert the driver and hence, prevent a casualty.",
+    "status": "found"
+  },
+  "2609.13757": {
+    "arxiv_id": "2609.13757",
+    "title": "The crossing number and the unit-distance crossing number of the Hamming graphs H(d,3)=K_3^{box d}, and their realizations over many coordinate fields",
+    "authors": [
+      "Haroldo Costa Silva Filho"
+    ],
+    "submission_date": "2026-09-12T07:08:19Z",
+    "latest_updated": "2026-09-12T07:08:19Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13757v1"
+    ],
+    "abstract": "The Hamming graph H(d,3)=K_3^{box d} (n=3^d vertices) is the graph of single-symbol errors of ternary codes, yet we ask a geometric question of it: can it be drawn in the plane with every edge exactly one unit long and no two non-adjacent vertices a unit apart? It can, for every d, joining two problems into one. Where does it live? As a Minkowski sum of unit triangles, each H(d,3) has a hidden flexibility carrying its coordinates up the constructibility ladder (compass, origami, and beyond), so one graph is realizable over many number fields at once, in the plane and in R^3 (edim(H(d,q))=q-1). Yet almost every faithful realization is transcendental: the Galois picture is a measure-zero shadow of a vast transcendental continuum, matching the exists-R hardness of unit-distance recognition. How crowded must a unit drawing be? We separate the ordinary crossing number from a unit-distance crossing number (absent from Schaefer's survey), and one recursion H(d,3)=H(d-1,3) box K_3 controls both. We prove cr(H)=Theta(n^2), with sharp one-page constant 7/6; and Omega(n^2) <= udcr(H) <= O(n^2 log n) by concentration, plus a closed-form majorant (3/2)n^2(L^2-L+1), L=log_3 n. The least-crossing drawing we find is constructible (origami): field and crossings are two readings of one geometry. All claims are verified computationally; the lower bound udcr=Omega(n^2 log n) is the central open problem.",
+    "status": "found"
+  },
+  "2609.13758": {
+    "arxiv_id": "2609.13758",
+    "title": "On the Equivalence of Stochastic Control and Path Space Formulations for Schrödinger Bridges over Compact Connected Lie Groups",
+    "authors": [
+      "Hamza Mahmood",
+      "Georgiy A. Bondar",
+      "Abhishek Halder",
+      "Adeel Akhtar"
+    ],
+    "submission_date": "2026-09-12T07:08:38Z",
+    "latest_updated": "2026-09-12T07:08:38Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13758v1"
+    ],
+    "abstract": "We establish the equivalence between the stochastic optimal control and path space formulations of the Schrödinger bridge problem (SBP) for the kinematic equation on a compact connected Lie group. Using the geometric concepts of horizontal lift and stochastic anti-development, we derive a Girsanov-type change-of-measure result, and show that the expected control energy equals the relative entropy of the controlled path law with respect to the reference Wiener measure. Thus, the SBP is equivalently a path space relative entropy minimization problem subject to prescribed endpoint marginals.Our result has three useful implications. From an analytic viewpoint, the shown equivalence helps prove the existence and uniqueness of the SB. From a probabilistic viewpoint, it helps interpret the SB as the most probable deviation of the uncontrolled stochastic dynamics consistent with the endpoint constraints. From a computational viewpoint, it allows using static Sinkhorn recursions to directly solve the relative entropy minimization problem and compute the optimal path measure. We illustrate the equivalence numerically on the torus $\\mathbb{T}^2$. The code is publicly available at: https://github.com/gradslab/LargeDeviationSBP",
+    "status": "found"
+  },
+  "2609.13759": {
+    "arxiv_id": "2609.13759",
+    "title": "Nuclear landscape based on point-coupling density functional with localized exchange terms",
+    "authors": [
+      "Y. N. Huang",
+      "Q. Zhao",
+      "Y. F. Niu"
+    ],
+    "submission_date": "2026-09-12T07:09:27Z",
+    "latest_updated": "2026-09-12T07:09:27Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13759v1"
+    ],
+    "abstract": "Nuclear landscape is initially explored in the framework of relativistic Hartree-Bogoliubov theory under the spherical approximation, adopting the newly developed PCF-PK1 density functional. The functional effectively incorporates exchange terms via the Fierz transformation and explicitly includes the tensor coupling. We analyze the limits of the nuclear landscape and nuclear ground state properties including binding energies, charge radii, α-decay energies, compared with other functionals and experiment. In the present calculations, 7210 nuclei are predicted to be bound with the root-mean-square deviation of binding energies 7.170 MeV. The removal of spurious shell closure at Z = 58 and 92 is discussed by shell gaps and single-particle spectra. For superheavy nuclei, potential magic numbers beyond 208Pb are studied. The inclusion of the tensor coupling in PCF-PK1 helps restore the pseudospin symmetry, leading to a less pronounced shell closure at Z = 120.",
+    "status": "found"
+  },
+  "2609.13760": {
+    "arxiv_id": "2609.13760",
+    "title": "Positioning manuscripts in the scientific landscape with agentic AI",
+    "authors": [
+      "Jiawen Chen",
+      "Zichen Zhang",
+      "Bingxuan Li",
+      "Quan Sun",
+      "Yiyan Zhang",
+      "Edric Tam",
+      "Jinjie Lin",
+      "Didong Li",
+      "Yun Li",
+      "Bingxin Zhao"
+    ],
+    "submission_date": "2026-09-12T07:10:14Z",
+    "latest_updated": "2026-09-12T07:10:14Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13760v1"
+    ],
+    "abstract": "Publishing a research manuscript is a routine yet demanding part of scientific life: time-consuming, stressful, and often uncertain in outcome. Recent advances in large language model (LLM)-based agentic AI have shown promise across a range of scientific tasks, and here we ask whether agentic AI can help researchers navigate the publication process itself by reliably inferring a manuscript's eventual publication venue from its content and literature context. We introduce PASS (Publication-oriented Agentic Scientific System), an agentic system that understands manuscripts within their domain-specific literature context and predicts top-matched publication venues. PASS positions each manuscript within its surrounding literature landscape by reconstructing its local scientific neighborhood, tracing its topic trajectory, and reasoning over field-specific journal spaces. Evaluated on a leakage-audited benchmark of over 2,000 preprints across 16 biomedical fields, PASS achieved Top-1 accuracy of 50.3% and Top-5 accuracy of 86.1%, outperforming state-of-the-art LLM baselines and established journal-selection tools. PASS-produced quality scores, such as impact potential and novelty, aligned with independent measures of publication outcome. We also found that the designed literature retrieval module is the strongest performance contributor, particularly for positioning manuscripts relative to nearby work, and that PASS maintained near-full performance from the abstract alone, whereas LLM baselines required the full manuscript text. An independent human evaluation found strong researcher agreement with PASS's manuscript understanding and recommendation rationale. PASS has been released as a public platform (https://ratemypaper.ai/) for broad researcher access.",
+    "status": "found"
+  },
+  "2609.13761": {
+    "arxiv_id": "2609.13761",
+    "title": "Learning In-Hand Object Reaching to General 6D Poses",
+    "authors": [
+      "Junxiao Lin",
+      "Tianyue Wu",
+      "Jie Yin",
+      "Jia Pan",
+      "Kaifeng Zhang",
+      "Weiming Zhi"
+    ],
+    "submission_date": "2026-09-12T07:11:37Z",
+    "latest_updated": "2026-09-12T07:11:37Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13761v1"
+    ],
+    "abstract": "In-hand manipulation allows multi-fingered dexterous hands to reconfigure grasped objects without releasing and regrasping them. This improves manipulation efficiency by reducing repeated grasp acquisition and large arm motions. However, most learning-based methods focus on reorientation, continuous rotation, or translation, whereas many tasks require joint control of object position and orientation. We formulate this capability as in-hand 6D object pose reaching: starting from an existing grasp, coordinated finger motions move the object to a palm-relative target pose. We present POISE (Palm-relative Object reaching In SE(3)), a sim-to-real reinforcement learning framework for this task. POISE combines diverse stable-grasp initialization, goal- and geometry-conditioned control, an adaptive 6D goal curriculum, and a compact reward scheme for pose reaching and grasp preservation. In simulation, diverse initialization raises held-out-grasp success from 40.1% to 51.5% and post-drop recovery from 33.8% to 72.9%; the curriculum raises full-range success from 6.2% to 59.5%. On hardware, the grasp-maintenance reward improves three-target sequence success from 20% to 80%. In real-world experiments, POISE reaches successive 6D targets without manual reset across multiple object geometries and wrist orientations, and recovers from external disturbances. To support further research in dexterous manipulation, we will release our code at https://junxiaolin.github.io/poise-website/.",
+    "status": "found"
+  },
+  "2609.13762": {
+    "arxiv_id": "2609.13762",
+    "title": "Surrogate-assisted three-dimensional Gross-Pitaevskii characterization of Bose-Einstein condensate transport on an atom chip",
+    "authors": [
+      "Naoki Shibuya"
+    ],
+    "submission_date": "2026-09-12T07:14:25Z",
+    "latest_updated": "2026-09-15T10:23:20Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2609.13762v1",
+      "2609.13762v2"
+    ],
+    "abstract": "We develop a surrogate-assisted workflow for millimeter-scale transport of a $^{87}$Rb Bose--Einstein condensate (BEC) on a multi-wire atom chip. Gradient-based inverse optimization generates 42 current schedules spanning seven regularization strengths and six transport durations. A low-cost Gaussian phase-space model ranks these schedules by endpoint overlap at three atom numbers. A Thomas--Fermi scaling (Ermakov) model estimates cloud dimensions for case-specific moving-grid construction. We then evaluate selected schedules in detail with the three-dimensional Gross--Pitaevskii equation (GPE). At $N=10^3$ and $T=0.5$ s, the surrogate predicts a larger axial center-of-mass (COM) excursion than at longer durations. The GPE confirms this prediction and reveals sloshing that persists through delivery, with an endpoint fidelity $F_{3D}=0.9244$. For all five longer transports, the surrogate predicts near-unit endpoint overlap for the top-ranked schedules, and GPE propagation using these schedules gives $F_{3D}>0.9997$. At $N=10^4$ and $T=2.0$ s, the surrogate-selected schedule similarly gives $F_{3D}=0.999932$. These results demonstrate that the surrogate estimates provide a useful low-cost basis for candidate screening, while GPE propagation resolves the transport dynamics and the delivered condensate state.",
+    "status": "found"
+  },
+  "2609.13763": {
+    "arxiv_id": "2609.13763",
+    "title": "Rigidity and stability for the Bogovskii constant",
+    "authors": [
+      "Glen Wheeler"
+    ],
+    "submission_date": "2026-09-12T07:14:42Z",
+    "latest_updated": "2026-09-12T07:14:42Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13763v1"
+    ],
+    "abstract": "We prove that balls are the unique minimisers of the Bogovskii constant among bounded connected Lipschitz domains in $\\mathbb{R}^n$, $n\\geq 2$, resolving Open Problem 2 of Gazzola, Grunau and Sperone (arXiv:2608.25861).",
+    "status": "found"
+  },
+  "2609.13764": {
+    "arxiv_id": "2609.13764",
+    "title": "Coincidences and Growth of Boxed Mesh Patterns",
+    "authors": [
+      "Sergey Kitaev",
+      "Dun Qiu",
+      "Chao Xu"
+    ],
+    "submission_date": "2026-09-12T07:16:01Z",
+    "latest_updated": "2026-09-12T07:16:01Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13764v1"
+    ],
+    "abstract": "A boxed mesh pattern is a mesh pattern whose selected entries lie in an empty axis-parallel rectangle. We classify coincidences of boxed patterns with classical and vincular patterns, exhibit a genuinely bivincular coincidence, and prove that no boxed--bivincular coincidence occurs for patterns of length at least five. Together with known results, this shows that every boxed pattern of length at least five has factorial growth and hence fails the Stanley--Wilf property. At length four, one exceptional orbit is enumerated by the semi-Baxter numbers, while the remaining exceptional orbit, $\\{2143,3412\\}$, is unresolved; we conjecture that it has factorial growth. For Box(123), we derive an exact maximum-insertion identity and prove the subfactorial upper bound $2^{5n}n^{βn}$, where $β=\\log_2(2\\cos(π/7))<0.85$. A closed enumeration remains open. We also prove a general first-moment formula for boxed mesh patterns that depends only on the length of the underlying pattern; in particular, the expected number of Box(123) occurrences in a uniformly random permutation of length $n$ is asymptotic to $n\\log n$. For Box(12), we identify the occurrence statistic with the up-degree in the strong Bruhat order, obtaining its maximum, its mean, and an exact insertion identity for the distribution polynomials. We conjecture that the coefficients of these polynomials are unimodal.",
+    "status": "found"
+  },
+  "2609.13765": {
+    "arxiv_id": "2609.13765",
+    "title": "Last-Iterate Performance of Gradient Descent and Relaxed Proximal Point via $s$-Composability",
+    "authors": [
+      "Salah Chikhi"
+    ],
+    "submission_date": "2026-09-12T07:18:05Z",
+    "latest_updated": "2026-09-20T01:25:48Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2609.13765v1",
+      "2609.13765v2"
+    ],
+    "abstract": "The notion of s-composability was introduced to compose optimized stepsize schedules while preserving sharp guarantees. We show that the same joint potential has a second use: it can serve directly as a certificate of sharp last-iterate performance. We develop this viewpoint for constant and silver schedules. For the constant schedule, we prove the s-composability statement posed as an open question by Grimmer et al. (2025), at every finite horizon, through an explicit nonnegative smooth-convex interpolation certificate. The result identifies the unique constant stepsize minimizing the worst-case final gradient norm of smooth convex gradient descent under an initial-distance bound, thereby proving the optimal stepsize, value, and uniqueness predicted by Conjecture 3 of Taylor et al. (2017) without resolving its full worst-case curve. Through the Moreau envelope, the same constant is also the unique constant relaxation minimizing the worst-case final residual of relaxed proximal point. More generally, for every positive s-composable schedule, we determine the exact worst-case final proximal objective-gap constant and give a matching one-dimensional example. Applying this result to the already s-composable original silver schedule yields its exact last-iterate objective-gap constant, closing a question left open by Wang et al. (2025).",
+    "status": "found"
+  },
+  "2609.13766": {
+    "arxiv_id": "2609.13766",
+    "title": "Cyclotomic expansions of colored $SU(n)$ invariants of two-strand torus knots and Bailey transforms",
+    "authors": [
+      "Chuwen Wang"
+    ],
+    "submission_date": "2026-09-12T07:19:36Z",
+    "latest_updated": "2026-09-12T07:19:36Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13766v1"
+    ],
+    "abstract": "Habiro's cyclotomic expansion of the colored Jones polynomial has a higher rank analogue conjectured by Chen--Liu--Zhu for colored $SU(n)$ invariants. We prove this conjecture for torus knots $T(2,2p+1)$ and give a Bailey theoretic realization of the cyclotomic coefficients. For $n\\geq2$ and $K_p=T(2,2p+1)$, the colored $SU(n)$ invariants admit an expansion $$ J_N^{SU(n)}(K_p;q) = \\sum_{m=0}^{N} \\left(\\prod_{j=0}^{m-1}\\{N-j\\}\\{N+n+j\\}\\right) H_m^{(n,p)}(q), $$ where $H_m^{(n,p)}(q)\\in\\mathbb Z[q^{\\pm1}]$ is independent of the color $N$. The proof identifies the cyclotomic basis with a Newton basis and rewrites the resulting Newton coefficients as an ordinary Bailey transform. The Lin--Zheng formula for $T(2,2p+1)$ then gives a well-poised Bailey kernel. A terminating very-well-poised ${}_6φ_5$ summation diagonalizes the kernel and reduces the integrality problem to an ordinary Bailey transition. We prove a uniform integrality theorem for these transitions in a formal integral $q$-difference operator algebra. As a direct corollary, the expansion yields the corresponding congruence relations and proves part(i) of the Chen--Liu--Zhu $SU(n)$ volume conjecture for $T(2,2p+1)$.",
+    "status": "found"
+  },
+  "2609.13767": {
+    "arxiv_id": "2609.13767",
+    "title": "Dedekind Poisson Algebras over Arbitrary Fields",
+    "authors": [
+      "A. I. Plakosh",
+      "O. O. Pypka"
+    ],
+    "submission_date": "2026-09-12T07:21:21Z",
+    "latest_updated": "2026-09-12T07:21:21Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13767v1"
+    ],
+    "abstract": "We study Poisson algebras in which every Poisson subalgebra is a Poisson ideal, called Dedekind Poisson algebras, over arbitrary fields and without any finite-dimensionality assumption. In characteristic different from 2, combining the two operations by $x*y=xy+[x,y]$ connects the problem with Outcalt's classical classification of power-associative H-algebras and yields the same structural type. We obtain a complete classification by a direct two-operation argument valid in every characteristic. This approach also shows that characteristic 2 retains additional Poisson information which cannot be recovered from the single product $*$.",
+    "status": "found"
+  },
+  "2609.13768": {
+    "arxiv_id": "2609.13768",
+    "title": "HyperProve: Answer-Guided Hypergraph Expansion for Multi-Hop Question Answering",
+    "authors": [
+      "An Nguyen Phu",
+      "Dung Nguyen Quang",
+      "Luu Hieu An",
+      "Linh Ngo Van",
+      "Trung Le",
+      "Thien Huu Nguyen"
+    ],
+    "submission_date": "2026-09-12T07:22:53Z",
+    "latest_updated": "2026-09-12T07:22:53Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13768v1"
+    ],
+    "abstract": "Multi-hop question answering often fails when retrieval treats evidence as isolated matches to the original question, since the facts needed to answer a complex question are usually connected through intermediate entities, relations, and constraints. We propose HyperProve, a retrieval-augmented QA framework that addresses this challenge by coupling question decomposition with answer-conditioned expansion over a hypergraph of atomic facts. HyperProve does not use atomic facts, hypergraphs, or iterative retrieval in isolation; instead, it carries intermediate answers and supporting hyperedges as retrieval state, then uses that state to bias the next local hypergraph expansion. This design enables HyperProve to construct coherent evidence chains for final answer generation while making the retrieval process stateful and fact-centered. Across multi-hop QA benchmarks, HyperProve achieves the best overall performance in our evaluation, outperforming the strongest baselines by an average relative improvement of 6.2% in answer accuracy and 4.9% in F1.",
+    "status": "found"
+  },
+  "2609.13769": {
+    "arxiv_id": "2609.13769",
+    "title": "Finite dimensional reductions of integrable differential-difference equations",
+    "authors": [
+      "Alexander Mikhailov"
+    ],
+    "submission_date": "2026-09-12T07:27:27Z",
+    "latest_updated": "2026-09-12T07:27:27Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13769v1"
+    ],
+    "abstract": "Integrable partial differential equations, such as the Korteweg--De Vries (KdV) equation, admit infinite hierarchies of commuting higher symmetries. Their symmetry reductions give rise to integrable finite-dimensional dynamical systems solvable in terms of Abelian functions. This underlies the finite-gap integration method for the KdV equation, introduced by S.P. Novikov and subsequently extended to many other integrable systems. In this paper, I introduce the concept of reduction ideals and a new class of reductions for integrable differential--difference equations, leading to integrable finite-dimensional systems in both commutative and noncommutative settings. This class includes periodic reductions, symmetry reductions, and a broad family of other reductions defined in terms of the associated Lax operator. The reduction constraints define integrable maps that enable solutions of the reduced systems to be extended to solutions of the corresponding differential-difference equations. The construction is illustrated using the Volterra hierarchy.",
+    "status": "found"
+  },
+  "2609.13770": {
+    "arxiv_id": "2609.13770",
+    "title": "Training Specialist Models without Reasoning Trajectories for Domain Expert Distillation",
+    "authors": [
+      "Yilei Tu",
+      "Zihao Li",
+      "Shaoxiong Ji",
+      "Jörg Tiedemann",
+      "Fei Yuan"
+    ],
+    "submission_date": "2026-09-12T07:29:08Z",
+    "latest_updated": "2026-09-12T07:29:08Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13770v1"
+    ],
+    "abstract": "Specialist distillation effectively transfers domain expertise to student models via teacher-generated reasoning trajectories. However, when these specialists are trained solely on question--answer pairs without explicit reasoning supervision, what governs the trajectories they generate? In this work, we show that specialist optimization implicitly selects from this latent trajectory space. To isolate and observe this latent distribution, we leverage student distillation not as a downstream goal, but as an agnostic probe---since students inherit no parameterization or optimization constraints from the specialist, inheriting only the sampled trajectories themselves. Through this probe, our empirical analysis unveils a tight governing relationship: across 27 specialist--student pairings, their specialization--generalization profiles correlate exceptionally strongly. Crucially, explicitly controlling the specialist's distributional drift systematically shifts both the teacher and its distilled student along a controllable trade-off between domain precision and general-capability retention. Across chemistry, physics, and multilingual settings, distilled students systematically reflect these specialist-induced profiles, even across divergent model families. Our findings establish a new view of specialist training: when gold reasoning is absent, tuning choices directly control the latent supervision passed to downstream models.",
+    "status": "found"
+  },
+  "2609.13771": {
+    "arxiv_id": "2609.13771",
+    "title": "Homeostatic Continual Learning",
+    "authors": [
+      "Yue Jin"
+    ],
+    "submission_date": "2026-09-12T07:29:29Z",
+    "latest_updated": "2026-09-12T07:29:29Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13771v1"
+    ],
+    "abstract": "In this paper, I formulate a Continual Learning problem and propose a method named \"Homeostatic Continual Learning\" that enables an AI agent to learn continuously in a changing environment without catastrophic forgetting. The core of the method is to find outliers in the environment data when the agent experiences an outlier in its output. Through this method, the agent gradually completes its model and policy and performs well in more and more contexts. I also suggest that we may use the method to build a world model where the agent factorizes the objects in the world into features, abstract objects into comparable instances of concepts and map concepts to intents through features. I discuss the works needed to render the method practical, the connections to many fields in Artificial Intelligence and the broader implications of the method.",
+    "status": "found"
+  },
+  "2609.13772": {
+    "arxiv_id": "2609.13772",
+    "title": "Eccentric Connectivity Index of Cartesian product and Strong product of Strongly Connected Digraphs",
+    "authors": [
+      "Vysakh Chakooth",
+      "Prasanth G. Narasimha-Shenoi"
+    ],
+    "submission_date": "2026-09-12T07:32:17Z",
+    "latest_updated": "2026-09-12T07:32:17Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13772v1"
+    ],
+    "abstract": "Let $G=(V,E)$ be a graph. The \\emph{eccentric connectivity index} of $G$ is defined as $$ξ^C(G)=\\sum_{u\\in V(G)}d_uecc(u)$$ where $d_u$ and $ecc(u)$ are the degree and eccentricity of $u$, respectively. For a strongly connected digraph $D=(V,A)$, the eccentric connectivity index is defined as $$ξ^C(D)=\\frac{1}{2}\\sum_{u\\in V(D)}(d_u^++d_u^-)mecc(u)$$ where $d_u^+$ and $d_u^-$ are the out-degree and in-degree of $u$, respectively, and $mecc(u)$ is its m-eccentricity with respect to the maximum distance $md(u,v)=\\max\\{\\vec d(u,v),\\vec d(v,u)\\}$. In this article, give formulas and bounds for the eccentric connectivity index of Cartesian and strong products of strongly connected digraphs and discuss the corresponding equality cases. Also, an attempt is made to study the self-centeredness of these products and establish conditions under which the Cartesian and strong products are self-centered.The results are extended to products of several digraphs.",
+    "status": "found"
+  },
+  "2609.13773": {
+    "arxiv_id": "2609.13773",
+    "title": "Does Reasoning Improve Psychological Depth in Large Language Models? It Depends on Who's Judging",
+    "authors": [
+      "Ruichen Zheng",
+      "Yihe Wang",
+      "Fabrice Y Harel-Canada",
+      "Sara Khosravi",
+      "Zeynep Senahan Yildiz",
+      "Amit Sahai",
+      "Nanyun Peng"
+    ],
+    "submission_date": "2026-09-12T07:34:54Z",
+    "latest_updated": "2026-09-12T07:34:54Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.13773v1"
+    ],
+    "abstract": "LLM-as-a-Judge evaluators are increasingly used to score open-ended generation, yet a judge's correlation with human ratings on its development set may not guarantee valid measurement when outputs are closely matched and human preferences are subjective. We study this failure mode through psychological depth in short stories. Seven human readers and an LLM-judge ensemble selected on the original scalar Psychological Depth Scale dataset ($ρ= 0.646$) evaluated 60 blinded, prompt-matched story pairs from GPT-5 vs.\\ GPT-4o and DeepSeek-R1 vs.\\ DeepSeek-V3. Human preferences showed no universal reasoning advantage: GPT-5 was modestly preferred over GPT-4o (60.0--62.9\\%), whereas DeepSeek-R1 trailed V3 (42.9\\%), and inter-reader agreement was near chance (Krippendorff's $α= 0.070$), with within-reader consistency and recurring weighting patterns suggesting structured heterogeneity rather than random responding. The judge, by contrast, favored reasoning outputs in 89.0\\% of dimension-level comparisons and 59 of 60 pairs on aggregate PDS, uniformly across all five evaluator configurations, and its scores were associated with surface features such as sentence length and lexical diversity. These results suggest that development-set performance is insufficient evidence for deployment validity on a shifted distribution, and that point-estimate judges can obscure the heterogeneity in subjective human evaluation.",
+    "status": "found"
+  }
+}

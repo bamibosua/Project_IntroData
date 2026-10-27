@@ -1,0 +1,402 @@
+{
+  "2608.13267": {
+    "arxiv_id": "2608.13267",
+    "title": "How Do VLMs Behave When Blind or Misled? Behavioral Evaluation of VLMs on Scientific Figures",
+    "authors": [
+      "Paul Osemudiame Oamen",
+      "Owusu-Banahene Osei",
+      "Ananya Mukherjee",
+      "Christian Greisinger",
+      "Steffen Eger",
+      "Pius Onobhayedo",
+      "Wei Zhao"
+    ],
+    "submission_date": "2026-08-13T14:06:35Z",
+    "latest_updated": "2026-08-13T14:06:35Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13267v1"
+    ],
+    "abstract": "Existing vision-language model (VLM) benchmarks emphasize perception and reasoning accuracy (how well VLMs describe and reason about what they see in an image), with limited attention to behavioral reliability under uncertainty (how they behave when visual evidence is missing or misleading). We introduce SciFigBench, a diagnostic VLM benchmark for scientific figure understanding that jointly evaluates perception, reasoning, and behavioral reliability under uncertainty. It contains 250 figures with high-quality human annotations across three evaluation aspects, totaling 600+ hours of annotation effort. We further extend these figures via image transformations, reasoning questions, resistance probes, caption-bias probes, and confirmed selective-blur targets, producing over 34,000 evaluation setups for stress testing. We further propose the Admittance-Resistance-Inductance (A-R-I) framework to evaluate whether models acknowledge insufficient evidence, resist misleading context, and infer cautiously from partial information. Our results reveal substantial behavioral differences among models. GPT-5.2 achieves the highest description quality (MQM 91.6) with strong reasoning accuracy (78.4%), yet hallucinates unreadable content in 96% of cases, whereas Gemini 3.1 Pro, a comparably capable model (MQM 90.2, reasoning 81.0%), admits uncertainty in 71% of such cases and achieves the strongest resistance score (0.91). These findings show that high perception and reasoning accuracy alone do not guarantee behavioral reliability, a dimension critical for deployment in scientific workflows.",
+    "status": "found"
+  },
+  "2608.13268": {
+    "arxiv_id": "2608.13268",
+    "title": "Multiobjective Preexpectation Reasoning for Probabilistic Programs",
+    "authors": [
+      "Lena Verscht",
+      "Hannah Mertens",
+      "Kevin Batz",
+      "Sebastian Junges",
+      "Benjamin Lucien Kaminski",
+      "Joost-Pieter Katoen"
+    ],
+    "submission_date": "2026-08-13T14:06:58Z",
+    "latest_updated": "2026-10-21T09:49:53Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.13268v1",
+      "2608.13268v2"
+    ],
+    "abstract": "Probabilistic programs with nondeterminism model planning problems in which a strategy typically resolves the nondeterminism to meet a specification. We study the multiobjective setting, meeting several specifications at once along a Pareto front, and provide a deductive, program-level account of strategy synthesis. Its core is a multiobjective preexpectation transformer mapping a tuple of postexpectations to the set of simultaneously achievable values, an element of the convex Hoare powerdomain. It conservatively extends weakest preexpectations and lifts standard loop rules. We develop rules to synthesize witnessing strategies as mixed determinizations that solve nondeterminism probabilistically. We prove the transformer and synthesis rules sound against an operational Markov decision process (MDP) semantics, without requiring a finite state space: our approach can be seen as a symbolic approach - at program level - for multiobjective optimization over infinite MDPs. We demonstrate our machinery using two case studies.",
+    "status": "found"
+  },
+  "2608.13269": {
+    "arxiv_id": "2608.13269",
+    "title": "Stellar tidal systematics in apsidal-motion searches for circumbinary planets: CH Ind and SW CMa",
+    "authors": [
+      "Qunfeng Jiang"
+    ],
+    "submission_date": "2026-08-13T14:07:02Z",
+    "latest_updated": "2026-08-13T14:07:02Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13269v1"
+    ],
+    "abstract": "Thornton et al. (2026) reported 27 non-transiting circumbinary-planet candidates from excess apsidal motion in TESS eclipsing-binary timings. The classical stellar contribution is sensitive to target-specific radii, apsidal constants $k_2$, and rotation. We re-evaluate two evolved, double-lined eclipsing binaries in that sample: the pulsating system CH Ind and the Am system SW CMa. Their component masses and radii have been measured in dedicated binary studies, allowing the stellar contribution to be calculated directly. For CH Ind, six independent TESS sector nodes give $\\dotω_{\\rm obs}=1.82^{+0.99}_{-0.94}\\times10^{-3}\\ {\\rm deg\\,cycle^{-1}}$, while a coeval fit to the measured binary components predicts $\\dotω_{\\rm stars}=2.05^{+0.43}_{-0.34}\\times10^{-3}\\ {\\rm deg\\,cycle^{-1}}$. For SW CMa, its measured dimensions raise the classical term by a factor of about 16; the published target-specific prediction, $0.670\\pm0.020\\times10^{-3}\\ {\\rm deg\\,cycle^{-1}}$, agrees with the observed $0.690\\pm0.050\\times10^{-3}\\ {\\rm deg\\,cycle^{-1}}$. Neither system shows a significant excess prograde component. The comparison shows that candidates from a bulk search require target-specific binary models before a third-body interpretation is assigned.",
+    "status": "found"
+  },
+  "2608.13270": {
+    "arxiv_id": "2608.13270",
+    "title": "Exploiting Phase Noise for Sensing Privacy in ISAC Systems",
+    "authors": [
+      "Musa Furkan Keskin",
+      "Kawon Han",
+      "Henk Wymeersch",
+      "Christos Masouros"
+    ],
+    "submission_date": "2026-08-13T14:07:31Z",
+    "latest_updated": "2026-08-13T14:07:31Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13270v1"
+    ],
+    "abstract": "We investigate sensing privacy in orthogonal frequency-division multiplexing (OFDM) integrated sensing and communication (ISAC) systems under the impact of phase noise (PN) arising from local oscillator (LO) imperfections. Specifically, we consider an ISAC scenario comprising a legitimate monostatic ISAC transceiver (Alice), an eavesdropper performing unauthorized bistatic sensing (Eve) and a communication user (UE), each equipped with a non-ideal LO. To characterize sensing performance in the presence of PN, we carry out a misspecified Cramér-Rao bound (MCRB) analysis of monostatic and bistatic range estimation at Alice and Eve, whose differential PN processes are self-correlated (delay-dependent) and cross-correlated (delay-independent) due to the use of a shared and an independent LO, respectively. Simulation results reveal three-way trade-offs among legitimate monostatic sensing at Alice, unauthorized bistatic sensing at Eve and communication to the UE under PN, governed by the LO quality at Alice. Through the LO asymmetry between Alice and Eve, worsening LO quality at Alice can significantly enlarge sensing privacy gap in her favor, especially for nearby targets, with only a moderate reduction in data rate in noise-limited regimes.",
+    "status": "found"
+  },
+  "2608.13271": {
+    "arxiv_id": "2608.13271",
+    "title": "Slow and Steady: Preventing MEV with Verifiable Delays",
+    "authors": [
+      "Zeta Avarikioti",
+      "Dimitris Karakostas",
+      "Karl Kreder",
+      "Shreekara Shastry"
+    ],
+    "submission_date": "2026-08-13T14:08:34Z",
+    "latest_updated": "2026-08-13T14:08:34Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13271v1"
+    ],
+    "abstract": "Our work presents a defense mechanism against Maximal Extractable Value (MEV) opportunities in distributed ledgers. The mechanism relies on the idea of enforcing a verifiable delay when generating transactions, such that a block creator cannot react to the appearance of a MEV opportunity without breaking liveness. We present positive results both in the Byzantine setting and in a game theoretic model of rational participants. We additionally present negative bounds that outline the limitations of this line of defense. Finally, we explore real-world implementation details of verifiable delays and show that, based on historical MEV data, our mechanism could realistically help prevent most existing MEV threats.",
+    "status": "found"
+  },
+  "2608.13272": {
+    "arxiv_id": "2608.13272",
+    "title": "Sovereign by necessity? Frontier AI export controls, cyber security, and the limits of national AI capability",
+    "authors": [
+      "Alan Woodward",
+      "Andrew Rogoyski"
+    ],
+    "submission_date": "2026-08-13T14:09:45Z",
+    "latest_updated": "2026-08-13T14:09:45Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13272v1"
+    ],
+    "abstract": "A small number of firms based in two states produce the most capable frontier AI models. The governments of those states have shown both the legal power and the political will to decide which other countries may use these systems. In June 2026 the United States required a leading developer to obtain licences before releasing its most advanced models to any foreign person, including foreign nationals resident in the United States. The affected models were withdrawn worldwide at short notice, partly because the restriction proved impractical to administer. This followed within months of the first documented case of a largely autonomous, AI-run cyber espionage campaign, and coincided with mounting evidence that frontier models alter the economics of both cyber attack and cyber defence. This article examines how these two developments interact, and situates them within the unusual market dynamics now driving large-scale AI development. It argues that access to frontier AI is becoming part of national cyber defence, that such access can be revoked, and that the obvious remedy of sovereign capability remains only partly feasible for all but a handful of states. Drawing on evidence about training costs, the concentration of computing power and the support offered by national AI programmes, it asks what sovereignty can realistically mean for small and middle powers, and for large powers as well. The article proposes a layered strategy: negotiated access guarantees, sovereignty at the level of inference, hedging with open-weight models, pooled regional capability, sustained talent development and continued investment in basic cyber resilience. The open-weight hedge proves at once more capable and more politically exposed than is commonly assumed. Much of the near-term risk lies in how capable models are deployed and contained rather than in their apparent performance.",
+    "status": "found"
+  },
+  "2608.13273": {
+    "arxiv_id": "2608.13273",
+    "title": "A Finite Automaton Approach to Combinatorial Games",
+    "authors": [
+      "Kai Liang"
+    ],
+    "submission_date": "2026-08-13T14:10:55Z",
+    "latest_updated": "2026-08-29T22:29:48Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.13273v1",
+      "2608.13273v2"
+    ],
+    "abstract": "This study applies finite automata to the automatic solving of a variety of combinatorial games. For games whose positions and moves can be represented as regular languages and their operations, we design a two-stage automatic solving algorithm: first, construct a candidate finite automaton to determine the $\\mathcal{P}$- and $\\mathcal{N}$-positions, and then perform rigorous formal verification on this automaton; once verified, a complete solution of the game is obtained. For partizan octal games, we introduce a generalized misère quotient, overcoming the limitation that traditional theory applies only to impartial games. Using the above algorithm, we successfully solve the majority of two-digit partizan octal games, and based on these results, we propose a partizan version of Guy's conjecture. We also successfully solve a considerable number of partizan octal games under misère play, and give a conjecture on the structure of those games exhibiting ``algebraic periodicity'' among them. For Kotzig's nim, we resolve the most important related conjecture: we prove that the outcomes and SG values are periodic under both normal and misère play (including their partizan versions). Our algorithm successfully solves several small-scale cases, including misère play and partizan versions. This study pioneers a new theoretical tool and algorithmic paradigm for the automatic solving of combinatorial games, and has broad prospects for further extension and application in the field of combinatorial game theory.",
+    "status": "found"
+  },
+  "2608.13274": {
+    "arxiv_id": "2608.13274",
+    "title": "Causal Mediation Analysis for Network Data with Graph Neural Network",
+    "authors": [
+      "Peikai Wu",
+      "Zhiguo Xiao"
+    ],
+    "submission_date": "2026-08-13T14:10:55Z",
+    "latest_updated": "2026-08-13T14:10:55Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13274v1"
+    ],
+    "abstract": "Causal mediation analysis is typically formulated under no interference, an assumption often violated in networked populations. We develop a nonparametric framework for a single large observed network that allows simultaneous treatment and mediator spillovers and high-dimensional network confounding. Exposure and mediator mappings define causal estimands without restricting the true interference mechanism, separating own from spillover effects without prespecified aggregation models. Under strengthened conditional independence conditions, we identify own controlled direct, natural direct, and natural indirect effects and give primitive sufficient conditions in terms of structural errors. We construct augmented inverse probability weighted estimators that are doubly robust for controlled effects and multiply robust for natural effects, using graph neural networks to learn high-dimensional nuisance functions from node features and the adjacency matrix. Under approximate neighborhood interference, weak network dependence, and suitable first-stage rates, we establish asymptotic normality of the effect estimators and consistency of a network HAC variance estimator. In simulations the graph neural network estimator outperforms machine learning methods built on hand-constructed neighborhood features, and a reanalysis of an agricultural insurance experiment in rural China finds insurance knowledge to be a substantive mediating channel while perception-based mediators are not.",
+    "status": "found"
+  },
+  "2608.13275": {
+    "arxiv_id": "2608.13275",
+    "title": "Block Repetition of Numerical Invariants for the Submodules $[z^k-w^k]$ in $H^2(\\mathbb D^2)$",
+    "authors": [
+      "Yin Liu",
+      "Yufeng Lu",
+      "Chao Zu"
+    ],
+    "submission_date": "2026-08-13T14:10:57Z",
+    "latest_updated": "2026-08-13T14:10:57Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13275v1"
+    ],
+    "abstract": "For $k\\ge 2$, let $M_k=[z^k-w^k]$ be the principal homogeneous submodule of the Hardy space over the bidisk. We determine Yang's complete sequence of numerical invariants and prove $$ Σ_0(M_k)=\\frac{π^2}{6},\\qquad Σ_j(M_k)=Σ_{\\lceil j/k\\rceil}([z-w]),\\quad j\\ge1. $$ The proof exploits a residue-class decomposition of the Toeplitz matrices associated with the graded wandering spaces. Consequently, Yang's monotonicity conjecture holds for the family $\\{M_k:k\\ge2\\}$. We also show that the nonzero spectral data of the core operator are independent of $k$, whereas the numerical invariant sequence recovers $k$ from the length of its constant blocks. Thus the higher numerical invariants detect module-theoretic information invisible to the core spectrum.",
+    "status": "found"
+  },
+  "2608.13276": {
+    "arxiv_id": "2608.13276",
+    "title": "A new characterization of right keys, and the $m$-symmetric Schur functions at $t=0$",
+    "authors": [
+      "Luc Lapointe",
+      "Luis Pena"
+    ],
+    "submission_date": "2026-08-13T14:11:43Z",
+    "latest_updated": "2026-08-13T14:11:43Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13276v1"
+    ],
+    "abstract": "The ring $R_m$ of $m$-symmetric functions consists of the formal power series that are symmetric in the variables $x_{m+1},x_{m+2},\\dots$ but carry no symmetry in the first $m$ variables. We develop a combinatorial theory for the specialization at $t=0$ of the Schur functions of $R_m$. Our main tool is a new characterization of right key tableaux as suprema of the sets of decreasing subwords of the reading words of the subtableaux of $T$. Being invariant under elementary Knuth transformations, this characterization is compatible with the RSK correspondence. We obtain in this way a generating function over semistandard tableaux for the $m$-symmetric Schur functions at $t=0$, together with a combinatorial proof of a Cauchy identity in $R_m$. The $m$-symmetric Schur functions and their dual are then respectively identified with Demazure atoms and Demazure characters. Restricted to the last $m$ variables, our correspondence specializes to a proof, by ordinary RSK, of Lascoux's nonsymmetric Cauchy identity for Demazure characters and atoms. As further applications, we relate the $m$-symmetric Schur functions at $t=0$ to the almost symmetric Schur functions through a unitriangular change-of-basis matrix, obtain tableau generating functions and Cauchy identities for both families, and derive Jacobi-Trudi type determinantal formulas for three different bases.",
+    "status": "found"
+  },
+  "2608.13277": {
+    "arxiv_id": "2608.13277",
+    "title": "Mixture of Training: Recombining Small-Scale Scaffolded Pretraining Runs into a Larger Language Model",
+    "authors": [
+      "Mohammed Sabry",
+      "Sean Augenstein",
+      "Keith Rush",
+      "Lucio Dery"
+    ],
+    "submission_date": "2026-08-13T14:13:46Z",
+    "latest_updated": "2026-08-13T14:13:46Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13277v1"
+    ],
+    "abstract": "We ask whether language-model pre-training can be decomposed into smaller, independently trainable jobs that can later be recomposed into a coherent larger model. We introduce Mixture of Training (MoT), a scaffolded modular pre-training procedure that partitions a target Transformer into contiguous layer blocks, trains each block inside a frozen pretrained aligner scaffold, and then recomposes the trained blocks with an optional short end-to-end adaptation pass. On a 1.3B-parameter Gemma-style model trained on C4, MoT provides a small-scale proof of mechanism: independently trained depth slices can be recomposed into a usable language model, and a quality-parity schedule reaches the same reported perplexity as the monolithic baseline. This parity setting processes more aggregate tokens and has a shorter idealized layer-equivalent critical path after aligner preparation; its effective compute advantage depends on reusing the aligner across runs. We therefore present MoT not as a general replacement for monolithic pre-training, but as a small-scale framework for studying whether scaffolded sub-runs can act as reusable training units.",
+    "status": "found"
+  },
+  "2608.13278": {
+    "arxiv_id": "2608.13278",
+    "title": "Categorification of the genus two DAHA",
+    "authors": [
+      "Semeon Arthamonov",
+      "Ievgen Makedonskyi",
+      "Daniil Sarafannikov"
+    ],
+    "submission_date": "2026-08-13T14:14:42Z",
+    "latest_updated": "2026-10-21T08:16:58Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.13278v1",
+      "2608.13278v2"
+    ],
+    "abstract": "We construct three derived endofunctors on the derived category of graded integrable representations of the current algebra of a flat degeneration of $D(2|1,α)$, and prove that their classes in the Grothendieck group are the genus two Macdonald operators. Computing the graded $\\operatorname{Ext}$ pairing explicitly, we deduce the self-adjointness of the genus two Macdonald operators and the orthogonality of genus $2$ Macdonald polynomials with respect to the certain skew-bilinear form.",
+    "status": "found"
+  },
+  "2608.13279": {
+    "arxiv_id": "2608.13279",
+    "title": "Print&Fold: Printing and Folding Shape-accurate 3D Models",
+    "authors": [
+      "Archit Kumar",
+      "Zachary Grimm",
+      "Mingsheng Xu",
+      "Shlok Rathi",
+      "Martin Nisser"
+    ],
+    "submission_date": "2026-08-13T14:14:47Z",
+    "latest_updated": "2026-08-13T14:14:47Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13279v1"
+    ],
+    "abstract": "This paper introduces Print&Fold, a tool to allow FDM 3D printing of complex models with less time and material while preserving shape accuracy. Key to this work is a folding algorithm that planarizes foldable faces internal to the 3D model. While folding techniques typically discretize a target model's surface, thereby fabricating low fidelity counterparts, our method preserves the surface features in the physical print. Our design tool allows users to unfold 3D models to be FDM-printed flat before manually folding these into their target shapes. We showcase a variety of applications and evaluate the material and time savings across a range of 3D models.",
+    "status": "found"
+  },
+  "2608.13280": {
+    "arxiv_id": "2608.13280",
+    "title": "Contractibility of space of symplectically self-polar convex bodies",
+    "authors": [
+      "Mark Berezovik"
+    ],
+    "submission_date": "2026-08-13T14:15:22Z",
+    "latest_updated": "2026-08-13T14:15:22Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13280v1"
+    ],
+    "abstract": "Symplectically self-polar bodies have been introduced recently. They appeared in the context of Mahler's conjecture and in the context of symplectic outer billiard dynamics. In this paper we discuss the topology of the space of symplectically self-polar convex bodies. Namely, we show that this space is contractible.",
+    "status": "found"
+  },
+  "2608.13281": {
+    "arxiv_id": "2608.13281",
+    "title": "X-ray Flaring and Variability in NGC 1275, the Heart of the Perseus Cluster",
+    "authors": [
+      "Sarah Ketchum",
+      "Jon M. Miller",
+      "S. W. Allen",
+      "Doyee Byun",
+      "Tianyin Hu",
+      "Missagh Mehdipour",
+      "Veronica Tananko",
+      "Xin Xiang",
+      "Irina Zhuravleva"
+    ],
+    "submission_date": "2026-08-13T14:15:57Z",
+    "latest_updated": "2026-08-13T14:15:57Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13281v1"
+    ],
+    "abstract": "NGC 1275 is the central galaxy in the Perseus Cluster. The active galactic nucleus (AGN) within NGC 1275 is notable for its strong and variable radio activity, tied to the production of radio jets that inflate large bubbles in the hot intracluster medium (ICM). High spatial resolution X-ray imaging can separate the AGN from the bright ICM, but monitoring the mass accretion rate onto the black hole and establishing disk-jet connections in NGC 1275 requires a high cadence. Here, we report on X-ray monitoring of NGC 1275 using data taken over 20 years with the Neil Gehrels Swift Observatory. Modeling the temporally constant ICM in each observation allows X-ray emission from accretion onto the black hole to be traced reliably, with typical flux errors of $\\sim 3\\%$. X-ray flaring by a factor of $\\sim2$ over mere days is detected starting on MJD 59956 (2023 Feb. 21). The flares imply an emission region consistent with $r \\leq 870~(10^{8}~M_{\\odot}/M_{BH})~ GM/c^{2}$. The profile of the flaring is inconsistent with simple predictions for tidal disruption events. A flare appears roughly 300 days later in radio monitoring data at 43 GHz. Overall, our results indicate that coordinated, moderate-resolution X-ray imaging and radio monitoring could potentially trace disk-jet connections in the AGN that most vividly impact large-scale structure, and be extended to other sources that impact their hosts.",
+    "status": "found"
+  },
+  "2608.13282": {
+    "arxiv_id": "2608.13282",
+    "title": "Gravitational Wave Standard Sirens as Probes of Lorentz Violation in Bumblebee Gravity",
+    "authors": [
+      "Ayan Banerjee",
+      "Bobur Turimov",
+      "Francisco Tello-Ortiz",
+      "Sulton Usanov",
+      "Farkhod Turaev"
+    ],
+    "submission_date": "2026-08-13T14:16:46Z",
+    "latest_updated": "2026-08-13T14:16:46Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13282v1"
+    ],
+    "abstract": "Gravitational-wave standard sirens provide a direct measurement of luminosity distance and therefore offer a new way to test gravity over cosmological scales. We use this idea to forecast the sensitivity of the Einstein Telescope (ET) to Lorentz violation in Bumblebee gravity, and we examine how the forecast changes when Type~Ia supernova information is added. A timelike Bumblebee vacuum expectation value can affect the cosmic expansion and, when it evolves with redshift, the propagation amplitude of gravitational waves. We study a constant-field case and an evolving-field case using mock ET catalogues with $10^3$ events together with a Pantheon+-like supernova sample. The supernova data substantially improve the background parameters: in the constant-field case the uncertainties in $H_0$ and $Ω_m$ decrease by a factor of about $4.4$, while in the evolving-field case they decrease by factors of about $1.6$ and $6.2$, respectively. By contrast, the Lorentz-violating parameter $\\ell_0$ remains prior dominated, and the evolution index $β$ is constrained only by the gravitational-wave sector. The best forecast precision, $Δ\\ell_0\\simeq0.028$, is about $4.7\\times10^{12}$ times weaker than the bound implied by GW170817. The principal result is therefore a quantified sensitivity gap rather than a forecast detection. We also express the prediction in the phenomenological $(Ξ,n)$ description of modified gravitational-wave propagation, allowing direct comparison with standard-siren studies of other gravity models.",
+    "status": "found"
+  },
+  "2608.13283": {
+    "arxiv_id": "2608.13283",
+    "title": "Towards Context-Aware Clinical Motion Understanding in Daily Living at Home: Freezing of Gait Detection with Egocentric Vision",
+    "authors": [
+      "Vayalet Stefanova",
+      "Diwas Lamsal",
+      "Margot Genbrugge",
+      "Maxim Yudayev",
+      "Christian Schlenstedt",
+      "Moran Gilat",
+      "Bart Vanrumste",
+      "Benjamin Filtjens"
+    ],
+    "submission_date": "2026-08-13T14:16:49Z",
+    "latest_updated": "2026-08-13T14:16:49Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13283v1"
+    ],
+    "abstract": "Understanding motion in daily living requires context beyond kinematics, because similar inertial patterns during activities of daily living (ADLs) can reflect intentional stopping, object interaction, or pathological movement impairment. Egocentric vision provides task-related context that may help disambiguate these cases. We investigate this challenge through freezing of gait (FOG) detection in Parkinson's disease (PD), a symptom strongly influenced by contextual factors during ADLs. Using synchronized egocentric video, wearable IMUs, and expert-annotated FOG labels collected from 13 PD participants in their homes, we evaluate frozen representations from pretrained ego-video and time-series foundation models, alongside an IMU-based TCN trained from scratch, under leave-one-subject-out evaluation. The IMU-based TCN achieved the strongest event-detection performance, reaching 42.3 F1 and 83.0 AUROC, compared with 32.6 F1 and 77.2 AUROC for V-JEPA2 ego-video features. Although ego-video alone did not outperform IMU-based sensing, it showed above-chance discrimination, and qualitative analyses suggest that egocentric vision may capture FOG-relevant information independent of IMUs. Together, these results support the use of pretrained ego-video representations to add contextual information to wearable-sensor-based clinical motion understanding in daily living.",
+    "status": "found"
+  },
+  "2608.13284": {
+    "arxiv_id": "2608.13284",
+    "title": "Predictive Relative-Velocity Steering for Safe Robotic Manipulator Teleoperation in Dynamic Environments",
+    "authors": [
+      "Changhao Hu",
+      "Zeyi Liu",
+      "Songqiao Hu",
+      "Shuang Liu",
+      "Zihan Meng",
+      "Xiao He"
+    ],
+    "submission_date": "2026-08-13T14:17:12Z",
+    "latest_updated": "2026-08-13T14:17:12Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13284v1"
+    ],
+    "abstract": "Recent advances in teleoperation have enabled robotic manipulators to perform dexterous, human-arm-like motions. However, human operators may fail to avoid suddenly appearing obstacles promptly and effectively, particularly under network latency or limited attention, thereby creating safety risks. To address this issue, we propose a lightweight and modular framework for proactive collision avoidance, operating directly at the end-effector velocity-command level. After preprocessing the point cloud, the framework first predicts potential collisions based on time-to-collision (TTC) with integrated overshoot protection, and subsequently rotates the relative-velocity vector using Rodrigues' rotation formula. The deflection changes only the direction of the relative velocity while preserving its magnitude, thereby mitigating the deadlock problem commonly encountered by conventional artificial potential field (APF) methods. The prediction module compensates for point-cloud processing latency introduced by complex teleoperation pipelines, while the lightweight design enables the high-frequency control required for teleoperation. Simulations across diverse scenarios show that the proposed method achieves a higher end-effector collision avoidance rate than the baseline methods. Experiments on a physical robotic system further validate its collision-avoidance effectiveness.",
+    "status": "found"
+  },
+  "2608.13285": {
+    "arxiv_id": "2608.13285",
+    "title": "EEG Decoding Using CNN and LSTM Network",
+    "authors": [
+      "Athanasios Karagounis"
+    ],
+    "submission_date": "2026-08-13T14:20:51Z",
+    "latest_updated": "2026-08-13T14:20:51Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.13285v1"
+    ],
+    "abstract": "Motor imagery (MI) brain--computer interfaces (BCIs) have emerged as a promising approach for establishing flexible communication pathways between the human brain and external devices , particularly for individuals affected by stroke or neurodegenerative disorders. Reliable decoding of motor-imagery electroencephalography (MI-EEG) remains challenging because EEG recordings contain substantial noise and exhibit complex, weakly informative relationships with the underlying brain activity. Although deep learning provides an effective means of learning representations directly from EEG signals, its application to MI-EEG feature learning remains comparatively limited. This study introduces a hybrid deep-learning architecture that integrates a convolutional neural network (CNN) with a bidirectional long short-term memory (bi-LSTM) network. The CNN is used to learn high-level spatial and temporal representations directly from raw MI-EEG recordings, whereas the bi-LSTM models temporal dependencies and relationships among the extracted features. The proposed approach is evaluated using both a publicly available dataset and a privately acquired dataset obtained with an EEG acquisition system. The experimental results indicate that the CNN\\&bi-LSTM architecture provides robust performance for both two- and three-class motor-imagery classification and demonstrates promising subject-independent decoding capability across the evaluated methods.",
+    "status": "found"
+  },
+  "2608.13286": {
+    "arxiv_id": "2608.13286",
+    "title": "Fixed Point Theorems for Hardy--Rogers Type Multivalued Mappings in b-Metric Spaces",
+    "authors": [
+      "Hezekiah Seun Adewinbi",
+      "Oluwatosin Temitope Mewomo"
+    ],
+    "submission_date": "2026-08-13T14:22:22Z",
+    "latest_updated": "2026-10-01T03:47:29Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.13286v1",
+      "2608.13286v2"
+    ],
+    "abstract": "In this paper, we establish new fixed point theorems for multivalued mappings satisfying Hardy-Rogers type contractive conditions in complete $b$-metric spaces. Motivated by the constant-coefficient framework of Chaib et al. (Fixed Point Theory 27 (2026), 209-228), we develop a distance-dependent formulation in which the contractive coefficients are nonnegative functions of the interpoint distance. We introduce a piecewise contraction factor corresponding to the two cases determined by the relative sizes of the cross terms in the Hardy-Rogers inequality, thereby providing a formulation adapted to the structure of the contractive condition. Under appropriate assumptions on the coefficient functions, we establish fixed point existence through either $h$-upper semicontinuity or asymptotic limsup conditions. The resulting framework yields corresponding fixed point theorems for multivalued Reich, Kannan, and Chatterjea-type contractions. We further investigate strict fixed points and obtain conditions under which the fixed point and strict fixed point sets coincide and consist of a unique point. In addition, we establish a fixed point transfer result for suitable finite iterates, showing that the contractive condition may be imposed on $T^p$ rather than on the original mapping, provided that the latter has a strict fixed point. Corresponding single-valued consequences are also derived. Several examples illustrate the applicability of the results and demonstrate situations in which the proposed conditions apply beyond the corresponding existing formulations.",
+    "status": "found"
+  }
+}

@@ -1,0 +1,405 @@
+{
+  "2608.11807": {
+    "arxiv_id": "2608.11807",
+    "title": "CoDiR: Confidence-Guided Diffusion Refinement for Semi-Supervised Histopathology Segmentation",
+    "authors": [
+      "Hoai Nhan Pham",
+      "Dang-Nguyen Bui",
+      "Le-Van Thai",
+      "Thanh-Hiep Vo",
+      "Lan Anh Dinh Thi",
+      "Tien Dat Nguyen",
+      "Duy-Dong Nguyen",
+      "Ngoc Lam Quang Bui",
+      "Tam Tran",
+      "Zhi Huang"
+    ],
+    "submission_date": "2026-08-12T08:51:13Z",
+    "latest_updated": "2026-08-12T08:51:13Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11807v1"
+    ],
+    "abstract": "Semi-supervised histopathology segmentation is challenging due to scarce annotations and unreliable pseudo-labels in ambiguous gland regions. To address this problem, we propose Confidence-Guided Diffusion Refinement (CoDiR), a semi-supervised framework that combines a Mean Teacher segmentation model with diffusion-based pseudo-label refinement. Given an unlabeled image, the teacher first produces a soft prediction, and only low-confidence regions are refined by a conditional diffusion model trained to capture plausible mask structures from labeled data. The refined mask is then fused with reliable teacher predictions and used to train the student with confidence weighting and consistency regularization. On the GlaS and CRAG datasets CoDiR reaches 88.09\\% and 89.83\\% mDice with 10\\% labeled data, and 89.19\\% and 90.29\\% mDice with 20\\%, matching or exceeding the strongest published method on seven of the eight benchmark metrics. Ablations attribute the largest single contribution to the refinement module, which adds +6.36\\% mDice over the Mean Teacher baseline. The implementation code is publicly available at: https://github.com/vongla345/codir",
+    "status": "found"
+  },
+  "2608.11808": {
+    "arxiv_id": "2608.11808",
+    "title": "Data-Driven optimal control via Koopman operators and Hamilton-Jacobi-Bellman equations",
+    "authors": [
+      "Guuyuan Chen",
+      "Gaosheng Zhu"
+    ],
+    "submission_date": "2026-08-12T08:52:01Z",
+    "latest_updated": "2026-08-12T08:52:01Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11808v1"
+    ],
+    "abstract": "This paper presents a data-driven stable manifold (DD-SM) method, which integrates Koopman operator representation learning with the geometric stable manifold approach to Hamilton-Jacobi-Bellman (HJB) equations, enabling end-to-end optimal feedback control synthesis from raw trajectory data without prior knowledge of system dynamics. We construct an augmented control system under a unified symmetric subspace decomposition (SSD) and extended dynamic mode decomposition (EDMD) framework for joint approximation of the drift field, control matrix and their spatial derivatives, and derive probabilistic finite-sample error bounds for invariant and non-invariant dictionary spaces to yield a provably accurate approximate characteristic system of HJB equation. Via Lyapunov-Perron operator and ODE perturbation analysis, we prove the data-driven stable manifold achieves monotonically decreasing semi-global error with growing training data. We further establish closed-loop exponential stability and quantify the optimality gap, both tightenable by refining model accuracy. An efficient algorithm pipeline with adaptive data generation and deep neural approximation is developed, outputting control signals within 1 millisecond. Experiments on a modified van der Pol oscillator verify the effectiveness of our method.",
+    "status": "found"
+  },
+  "2608.11809": {
+    "arxiv_id": "2608.11809",
+    "title": "Lithography-free patterning of SrTiO$_3$-based two-dimensional electron gases using direct atomic layer processing",
+    "authors": [
+      "Anshu Gupta",
+      "Karolis Parfeniukas",
+      "Amit Chanda",
+      "Thor Hvid-Olsen",
+      "Mira Baraket",
+      "Maksym Plakhotnyuk",
+      "Kasper S. Pedersen",
+      "Felix Trier"
+    ],
+    "submission_date": "2026-08-12T08:52:04Z",
+    "latest_updated": "2026-08-12T08:52:04Z",
+    "revised_dates": null,
+    "venue": "Applied Physics Letters 129, 061903 (2026)",
+    "latest_version": 1,
+    "versions": [
+      "2608.11809v1"
+    ],
+    "abstract": "We present a scalable and lithography-free strategy for the realization of a two-dimensional electron gas (2DEG) in TiO$_2$-patterned SrTiO$_3$ (100) via Al deposition using magnetron sputtering. A 15 nm thick TiO$_2$ layer, deposited by direct atomic layer processing, is employed to spatially define the conducting regions, enabling direct transport measurements without post-growth microfabrication. Upon Al deposition, an insulating AlO$_x$ overlayer is formed, and the region lacking the TiO$_2$ pattern leads to the creation of oxygen vacancies in SrTiO$_3$. These oxygen vacancies act as electron donors, populating the Ti 3$d$ conduction bands and giving rise to a confined 2DEG at the interface. Magneto-transport measurements reveal a sheet carrier density on the order of $\\approx5-7\\times10^{13}$ cm$^{-2}$, comparable to values typically achieved in pulsed laser deposition-grown SrTiO$_3$-based heterostructures, along with effective electrostatic tunability. This work demonstrates a simple, cost-effective, and industry-compatible route for engineering oxide 2DEGs, providing a versatile platform for scalable device fabrication and interfacial transport studies.",
+    "status": "found"
+  },
+  "2608.11810": {
+    "arxiv_id": "2608.11810",
+    "title": "Can Vision Models Read the Radar Display? On the Feasibility of Radar Imagery for Air Traffic Complexity Estimation",
+    "authors": [
+      "Hyewook Kim",
+      "Byul Kang",
+      "Seokbin Yoon",
+      "Keumjin Lee"
+    ],
+    "submission_date": "2026-08-12T08:53:22Z",
+    "latest_updated": "2026-08-12T08:53:22Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11810v1"
+    ],
+    "abstract": "Air traffic controllers perceive traffic complexity through the radar display, suggesting that a computer vision model operating on the same imagery may provide a natural architecture for modeling controller-perceived complexity; however, whether radar imagery is a viable input format for deep learning vision models remains unclear. Unlike natural images, radar images are extremely sparse and self-similar, consisting primarily of a black background and a few visually identical aircraft blobs, while small changes in aircraft positions can substantially alter sector-level complexity. To test whether a vision model can capture these operationally important differences, we encode each traffic situation as a position image supplemented by five channels representing aircraft state variables, including heading, speed, and altitude, and train a Vision Transformer (ViT) to regress four intrinsic complexity components derived from pairwise geometric relations among aircraft. The model achieves $R^2 > 0.96$ for all four components, and a one-aircraft-removal perturbation study shows that its response changes proportionally to how much the removed aircraft contributed to sector complexity rather than treating every removal as equivalent. These results demonstrate that, despite its atypical visual characteristics, radar imagery is a viable input format for air traffic complexity modeling.",
+    "status": "found"
+  },
+  "2608.11811": {
+    "arxiv_id": "2608.11811",
+    "title": "Continuous-variable state moments from randomized homodyne and heterodyne measurements",
+    "authors": [
+      "Michael Tsesmelis",
+      "Moritz Straeter",
+      "Leong-Chuan Kwek"
+    ],
+    "submission_date": "2026-08-12T08:53:46Z",
+    "latest_updated": "2026-08-12T08:53:46Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11811v1"
+    ],
+    "abstract": "Continuous-variable (CV) quantum states are naturally characterized by their moments, defined as expectation values of products of single- or multimode ladder operators. Many CV Hamiltonians and quantum algorithms are formulated directly in terms of these moments, and therefore an efficient procedure to estimate moments with limited state measurements is necessary. In this paper, we present a protocol for shadow tomography of moment-generating functions (MGFs) of CV states based on randomized homodyne and heterodyne measurements. The resulting shadows enable an efficient and concurrent estimation of many multimode moments. Our complexity analysis shows that the number of measurements required to estimate a certain moment to a given precision grows exponentially in the order of the moments. Finally, we assess the precision of these moment estimators by applying them to two tasks: detecting entanglement in both Gaussian and non-Gaussian states via the Shchukin-Vogel protocol, and characterizing optical loss in a photonic chip. We demonstrate that both tasks can be accomplished with only a few thousand randomized measurements. The small number of required measurements, combined with efficient sample processing, makes our protocol applicable to a wide range of CV simulation tasks.",
+    "status": "found"
+  },
+  "2608.11812": {
+    "arxiv_id": "2608.11812",
+    "title": "Data-Efficient Adaptation of DPA-4 Force Fields to DFT+U Energetics: A Case Study in NiO",
+    "authors": [
+      "Fengyu Xie",
+      "Peiheng Jiang",
+      "Zhicheng Zhong"
+    ],
+    "submission_date": "2026-08-12T08:57:37Z",
+    "latest_updated": "2026-08-12T08:57:37Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11812v1"
+    ],
+    "abstract": "Foundation machine-learned force fields (MLFFs) are often pretrained on broad materials datasets whose electronic-structure conventions may not reproduce the phase energetics required for a specific correlated material. Using NiO as a case study, we examine whether incorrect source-level phase energetics can be corrected efficiently through target-level fine-tuning. Along a common structural interpolation, non-spin-polarized PBE and ferromagnetic PBE+U predict opposite energetic orderings of the octahedral Oct and square-planar Sqr phases. Pretrained DPA-4 models adapt rapidly to the NiO PBE+U surface, reaching energy and force root-mean-square errors (RMSEs) of approximately 0.5 meV/atom and 30 meV/Å, respectively, with approximately 170 PBE+U labels. Crucially, models previously fine-tuned to the opposing no-U surface recover the qualitative PBE+U phase ordering with nearly the same target-data efficiency as models fine-tuned directly from their respective pretrained initializations. Our results show that incorrect source-level phase energetics can be reversed through target-level fine-tuning, and suggest a practical multi-fidelity strategy in which pretraining prioritizes broad, consistent, and affordable data, while compact target-level datasets impose energetics through application-specific fine-tuning.",
+    "status": "found"
+  },
+  "2608.11813": {
+    "arxiv_id": "2608.11813",
+    "title": "Confinement transitions in half-space constrained Riesz gases",
+    "authors": [
+      "Sung-Soo Byun",
+      "Yong-Woo Lee",
+      "Eui Yoo"
+    ],
+    "submission_date": "2026-08-12T08:58:05Z",
+    "latest_updated": "2026-08-12T08:58:05Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11813v1"
+    ],
+    "abstract": "We study a Riesz gas with interaction parameter $s \\in (d-3,d)$ in an arbitrary spatial dimension $d$, confined to a half-space by a hard wall. We prove that the equilibrium measure exhibits a dichotomy according to the interaction range. For $s \\in (d-2,d)$, corresponding to the weakly long-ranged regime, the equilibrium measure always retains a non-trivial bulk component and thus is never completely confined to the wall. In contrast, for $s \\in (d-3,d-2]$, corresponding to the strongly long-ranged regime, a confinement transition occurs: there exists a critical wall position beyond which the equilibrium measure is supported entirely on the wall. Our theorem generalises recent results established for the Coulomb gas, corresponding to the case $s=d-2$.",
+    "status": "found"
+  },
+  "2608.11814": {
+    "arxiv_id": "2608.11814",
+    "title": "The decay properties of two- and three- gluon glueballs",
+    "authors": [
+      "Wei-Han Tan",
+      "Hua-Xing Chen",
+      "Ding-Kun Lian",
+      "Wen-Ying Liu"
+    ],
+    "submission_date": "2026-08-12T08:58:19Z",
+    "latest_updated": "2026-08-17T06:08:57Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2608.11814v1",
+      "2608.11814v2",
+      "2608.11814v3"
+    ],
+    "abstract": "We previously studied the decay properties of two- and three-gluon glueballs using the Fierz rearrangement method and obtained their relative branching ratios in Ref.~\\cite{Tan:2026uue}. In this work, we extend and develop this analysis by providing a more complete treatment of two-gluon glueball decays and by considering the tensor and pseudotensor states with $J^{PC}=2^{++}$ and $2^{-+}$. We also perform an independent QCD sum rule analysis of the $0^{++}$ two-gluon glueball decay. The consistency between the two approaches provides a useful check of the Fierz analysis. Our results support a sizable gluon component in the $f_0(1710)$ and favor the $0^{-+}$ glueball interpretation of the $η(2370)$. For the tensor glueball, the vector--vector ($VV$) decay channels, especially $K^{*}(892)\\bar{K}^{*}(892)$, are found to be favorable for experimental searches. We also study three-gluon glueballs with $J^{PC}=0^{++}$ and $1^{+-}$ and identify several potentially favorable three-meson decay channels, including $ππω$ and $K\\bar Kφ$. These results provide possible guidance for future experimental searches for glueball states.",
+    "status": "found"
+  },
+  "2608.11815": {
+    "arxiv_id": "2608.11815",
+    "title": "Learning with Bilevel-Minimax Optimization for Efficient and Reliable Transfer Attacks",
+    "authors": [
+      "Yaohua Liu",
+      "Yifan Guo",
+      "Jiaxin Gao"
+    ],
+    "submission_date": "2026-08-12T08:58:22Z",
+    "latest_updated": "2026-08-12T08:58:22Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11815v1"
+    ],
+    "abstract": "Transfer-based adversarial attacks craft adversarial examples using surrogate models to mislead black-box victim models. Beyond perturbation generation, transferability is fundamentally governed by the coupling of initialization, surrogate adaptation, and gradient dynamics. We revisit this challenge from a bilevel-minimax perspective and propose BMAT (Bilevel-Minimax Adversarial Transfer). The bilevel formulation captures the dependency between initialization and perturbation, while the inner minimax problem promotes surrogate robustness for cross-architecture generalization. Algorithmically, we develop an integrated bottom-up solver that combines a Soft Weight Modulator and an Implicit Gradient Approximator to enable ternary coupling among initialization, surrogate adaptation, and perturbation optimization. We further provide theoretical insights into the optimization dynamics of the proposed bilevel-minimax framework. Extensive experiments on classification and segmentation benchmarks show that BMAT outperforms more than 10 strong baselines across more than 30 victim models, improving both intra- and cross-architecture transfer and yielding up to a 2x reduction in mIoU. Code is available at https://github.com/callous-youth/BMAT.",
+    "status": "found"
+  },
+  "2608.11816": {
+    "arxiv_id": "2608.11816",
+    "title": "How China-Origin Vision-Language Models Move from Refusal to Reframing in State Alignment",
+    "authors": [
+      "Guang Yang",
+      "Fengchen Liu",
+      "Alex Wang",
+      "Homa Hosseinmardi",
+      "Amir Ghasemian"
+    ],
+    "submission_date": "2026-08-12T08:58:37Z",
+    "latest_updated": "2026-08-12T08:58:37Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11816v1"
+    ],
+    "abstract": "State-aligned distortion has been documented in China-origin text-based large language models (LLMs), but whether, and in what form, it arises in multimodal systems has not been systematically examined. We construct a balanced benchmark of 200 core entries spanning ten politically sensitive topics, plus a seven-variant visual-abstraction probe, and run nine vision-language models (VLMs), seven China-origin and two non-China, across four elicitation paradigms and two prompt languages, yielding 21,708 trials. Each response is audited on six dimensions -- explicit refusal, information integrity, visual grounding, state-aligned framing, language consistency, and response length -- by two independent frontier LLM judges, validated against three human experts on a 200-trial sample. Measuring each dimension separately lets us decompose multimodal censorship into individual signals rather than a single refusal-based score; in particular, refusal and framing are measured independently, so a model can stop refusing while still reframing. We find that (i) Chinese-language prompting roughly triples the odds of state-aligned framing, within every model; (ii) China-origin models reframe more than non-China models (direction robust across judges and human raters; magnitude 1.6--3.2x); (iii) the effect is strongest in text-only political commentary (36.5%) and is gated by recognition of the depicted subject rather than pixel detail, persisting even at silhouette for iconic images; and (iv) across four Qwen generations, state-aligned framing rises while explicit refusal falls: censorship migrates from a visible act (refusal) to an invisible one (fluent reframing). We argue this shift to invisible reframing is fundamentally a problem of human-AI interaction: it removes the very signal users rely on to recognize that information has been withheld.",
+    "status": "found"
+  },
+  "2608.11817": {
+    "arxiv_id": "2608.11817",
+    "title": "Quantum Inequalities from the Second Law",
+    "authors": [
+      "Andrea Palessandro"
+    ],
+    "submission_date": "2026-08-12T08:58:51Z",
+    "latest_updated": "2026-08-12T08:58:51Z",
+    "revised_dates": null,
+    "venue": "Int. J. Theor. Phys. 65, 233 (2026)",
+    "latest_version": 1,
+    "versions": [
+      "2608.11817v1"
+    ],
+    "abstract": "Quantum field theory allows local violations of the classical energy conditions, such as regions of negative energy density. The Ford-Roman quantum inequalities quantify how negative these regions can be and for how long. We present a derivation of these inequalities from the second law of thermodynamics, in an operational framework that couples the field to a small thermal detector. The detector acts as a physical probe of the field's energy density and, by the non-negativity of the entanglement entropy between the two systems, one can show that its heat loss is bounded from below by a state-independent quantity.",
+    "status": "found"
+  },
+  "2608.11818": {
+    "arxiv_id": "2608.11818",
+    "title": "Some Reverse Hardy-Littlewood-Sobolev Type Inequalities",
+    "authors": [
+      "Qianqiao Guo",
+      "Zhe Pu",
+      "Jiankang Xia"
+    ],
+    "submission_date": "2026-08-12T09:01:18Z",
+    "latest_updated": "2026-08-12T09:01:18Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11818v1"
+    ],
+    "abstract": "We establish some sharp reverse Hardy-Littlewood-Sobolev (HLS) type inequalities on \\(\\mathbb{R}^n\\) and \\(\\mathbb{R}_+^n\\). Using an operator representation, we overcome the difficulty that the symmetric double-integral structure is unavailable in the half-space setting. On \\(\\mathbb{R}^n\\), for \\(1 \\le n < α\\), \\(\\frac{n}α < t < 1\\), and \\(0 < q < 1\\), there holds for nonnegative \\(f \\) that \\[ \\|E_αf \\|_{L^{t^\\prime}(\\mathbb{R}^n)} \\ge \\mathscr{C}(n,α,q,t) \\|f \\|_{L^1(\\mathbb{R}^n)}^γ \\|f \\|_{L^q(\\mathbb{R}^n)}^{1-γ}, \\quad γ:= \\frac{n - qα- \\frac{n}{t^\\prime}q}{n(1-q)} \\] for some $\\mathscr{C}(n,α,q,t)>0$ iff \\(q>\\frac{n}α\\), where \\(E_α\\) is the extension operator with Riesz kernel and \\(t^\\prime\\) is the conjugate of \\(t\\). The sharp constant is achieved when \\(\\frac{n t^\\prime}{n + αt^\\prime} \\le q < 1\\). On \\(\\mathbb{R}_+^n\\), with \\(2 \\le n < α\\), \\(\\frac{n}α < t < 1\\), and \\(0 < q < 1\\), we show for nonnegative \\(f \\) that \\[ \\|\\widetilde{E}_αf \\|_{L^{t^\\prime}(\\mathbb{R}_+^n)} \\ge\\widetilde{\\mathscr{C}}(n,α,q,t) \\|f\\|_{L^1(\\partial \\mathbb{R}_+^n)}^{\\widetildeγ} \\|f\\|_{L^q(\\partial \\mathbb{R}_+^n)}^{1-\\widetildeγ}, \\quad \\widetildeγ := \\frac{(n-1) - q(α-1) - \\frac{n}{t^\\prime}q}{(n-1)(1-q)}, \\] for some $\\widetilde{\\mathscr{C}}(n,α,q,t)>0$ iff \\(q > \\frac{n-1}{α-1}\\), where \\(\\widetilde{E}_α\\) is the extension operator with Poisson-type kernel. The sharp constant is achieved when \\(\\frac{t^\\prime(n-1)}{n + t^\\prime(α-1)} \\le q < 1\\). We further extend results to \\(q\\ge1\\). The proofs use rearrangement inequalities, the sharp Carlson--Levin inequality, and refined pointwise lower bounds for the Riesz and Poisson-type potentials. Our results unify and extend the classical reverse HLS inequalities, especially on \\(\\mathbb{R}_+^n\\).",
+    "status": "found"
+  },
+  "2608.11819": {
+    "arxiv_id": "2608.11819",
+    "title": "Usage of GPUs for ALICE Run 3 Offline Reconstruction on the GRID",
+    "authors": [
+      "David Rohr for the ALICE Collaboration"
+    ],
+    "submission_date": "2026-08-12T09:03:24Z",
+    "latest_updated": "2026-08-12T09:03:24Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11819v1"
+    ],
+    "abstract": "ALICE, the dedicated heavy ion experiment at the LHC, records Pb-Pb collisions at an interaction rate of up to 50 kHz. It was the first LHC experiment to leverage GPUs for online data processing during LHC Runs 1 and 2, and its Run 3 online data processing is now fully based on GPUs with more than 90% of the compute load offloaded to the accelerator. In order to use its online processing server farm also for offline processing in an efficient way while the LHC is not operating, ALICE has been running the offline TPC tracking on GPUs since 2023. Since then, ALICE has been conducting an ongoing effort to offload more offline reconstruction steps to GPUs, and to use the GPUs at other GRID sites beyond the ALICE online computing farm for offline reconstruction. In particular, porting the track model decoding and ITS tracking to GPU has improved the throughput by 29%. In 2026, ALICE ran the first GPU reconstruction jobs on the NVIDIA GPUs of the NERSC Perlmutter cluster, marking the first use of GPUs for LHC offline reconstruction on the GRID. Users can submit GPU reconstruction jobs by specifying only the required GPU count and type, while the underlying infrastructure handles all remaining configurations transparently.",
+    "status": "found"
+  },
+  "2608.11820": {
+    "arxiv_id": "2608.11820",
+    "title": "TD-VAD: Breaking Visual Dependence in Video Anomaly Detection with Text-Driven Learning",
+    "authors": [
+      "Shuangqing Zhang",
+      "Lei-Lei Ma",
+      "Zhao Wang",
+      "Wen Dong",
+      "Xinyi Xu",
+      "Guo-Sen Xie",
+      "Caifeng Shan",
+      "Fang Zhao"
+    ],
+    "submission_date": "2026-08-12T09:03:42Z",
+    "latest_updated": "2026-08-12T09:03:42Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11820v1"
+    ],
+    "abstract": "Visual data is typically a prerequisite for training existing video anomaly detection (VAD) methods. However, obtaining sufficient annotated anomaly data for training is challenging and not scalable due to the rarity of anomaly data and the wide variety of abnormal events. In this work, we advocate that the effectiveness of treating texts as video sequences for the VAD model and propose a novel Text-Driven Video Anomaly Detection (TD-VAD) approach to break visual dependence. In contrast to the anomaly video data, text descriptions of abnormal events are easy to collect, and their class labels can be directly derived. Specifically, our method utilizes video-like text descriptions with temporal characteristics generated by LLM to train a VAD model, without any reliance on target-domain anomaly data. To capture the long- and short-range temporal logic of events, we design the event evolution causal attention module to model contextual dependencies across time. During inference, considering the domain gap between the texts and video sequences, we use the frozen CLIP encoder to extract embeddings of video frames to align the text modality while retaining crucial visual information. Comprehensive experiments on two large-scale VAD datasets, XD-Violence and UCF-Crime, demonstrate that our method outperforms prior one-class and unsupervised VAD methods by a large margin.",
+    "status": "found"
+  },
+  "2608.11821": {
+    "arxiv_id": "2608.11821",
+    "title": "Auditing the Global Carbon Budget: Exploring the 2024--2025 Vintage Shift",
+    "authors": [
+      "Mikkel Bennedsen",
+      "Eric Hillebrand",
+      "Siem Jan Koopman"
+    ],
+    "submission_date": "2026-08-12T09:03:53Z",
+    "latest_updated": "2026-09-14T12:15:26Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.11821v1",
+      "2608.11821v2"
+    ],
+    "abstract": "The Global Carbon Budget (GCB), the community reference dataset for the carbon cycle, is reissued annually. The 2025 release introduces several adjustments to the published series that we compare with prior releases starting in 2017. On a common 1959-2016 sample, the mean of the GCB budget imbalance jumps from within +/-0.17 GtC/yr of zero for every vintage 2017-2024 to 0.61 GtC/yr in 2025, the only vintage whose 95% confidence interval for the imbalance mean excludes zero. The size of the imbalance changes much less: its mean absolute value rises from 0.61 to 0.76 GtC/yr. It is the mean, the quantity the budget identity constrains, that moves. We document and explore this shift in two ways. First, we conduct a model-free analysis, where we attribute the shift to a new adjustment that places the published land sink 0.40 GtC/yr below its ensemble mean (the average of the underlying models), a smaller adjustment in the ocean sink in the opposite direction, and a change in the composition of the bookkeeping ensemble. Second, we consider a dynamic statistical GCB model augmented with climate covariates. Its parameters are estimated for every GCB vintage 2017-2025. The coefficients of atmospheric concentrations in the sink equations shift in opposite directions on the 2025 issue, mirroring the model-free findings. A constant in the budget equation, statistically unnecessary in every vintage from 2017-2024, is required in 2025 and is estimated at -0.59 (0.09) GtC/yr. There is a persistent drifting imbalance across the entire sample in the budget equation. Each of the three adjustments is documented in the 2025 release and rests on evidence about the component it corrects. Their joint effect is a budget that closes over the last ten years and carries a mean imbalance of 0.61 GtC/yr over the full record. We argue that this cost to the full sample outweighs the gain on the last ten years.",
+    "status": "found"
+  },
+  "2608.11822": {
+    "arxiv_id": "2608.11822",
+    "title": "Located but Not Releasable: Silent Gate Inversion and Bounded Linear Release",
+    "authors": [
+      "Xining Xun"
+    ],
+    "submission_date": "2026-08-12T09:04:54Z",
+    "latest_updated": "2026-08-12T09:04:54Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11822v1"
+    ],
+    "abstract": "A growing body of work reports that language models represent task-relevant latent structure that they fail to use. Whether such structure, once located, can be converted into behavior is a separate question that is rarely tested end to end. We submit the complete pipeline -- detect, localize, and release -- to a fully preregistered stress test on a 25.7M transformer trained on causal-evidence discrimination, where a known suppression phenomenon (latent causal structure present but behaviorally unused) has previously been documented. Every threshold, claim template, and decision-tree branch was hashed and archived before any corresponding data existed. Three findings. (i) Localization succeeds: interventions at observation-evidence channels of mid layers restore target behavior on otherwise-suppressed worlds (paired release advantages $0.563$ and $0.854$, 97.5% CIs excluding zero; best-site release rate $0.889$). (ii) Gating fails out of distribution: a detector calibrated to trigger on zero out-of-distribution calibration worlds triggers on 6.9-7.3% of held-out in-distribution generations and on zero of the 2,400 held-out generations that actually need it -- a complete inversion that silently reduces the gated pipeline to its base model. (iii) Linear release is capped: removing the gate and injecting a per-instance linear direction unconditionally yields a monotone dose-response that plateaus far below the preregistered release margin (intercept $0.382 \\to 0.311 \\to 0.264$ vs. threshold $\\le 0.08$); per-instance adaptivity adds less than $\\pm 0.03$. The failure is doubly located: the detector is OOD-inverted, and the entire family of linear release directions at this site and resolution is bounded away from sufficiency. The two failures are dissociable, and neither overturns localization. Every number traces to a hashed artifact in the released audit chain.",
+    "status": "found"
+  },
+  "2608.11823": {
+    "arxiv_id": "2608.11823",
+    "title": "Vishveshwara's waveform revisited: insights from a Keldysh quasinormal mode expansion",
+    "authors": [
+      "Jérémy Besson",
+      "José Luis Jaramillo"
+    ],
+    "submission_date": "2026-08-12T09:06:18Z",
+    "latest_updated": "2026-10-16T13:18:47Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.11823v1",
+      "2608.11823v2"
+    ],
+    "abstract": "We revisit Vishveshwara's linear scattering on a Schwarzschild black hole to study the evolution of quasinormal mode activation along the full time-domain waveform. Specifically, by adopting a hyperboloidal approach we cast the scattering problem in a non-selfadjoint dynamics setting where a (Keldysh) resonant expansion in a bi-orthogonal system of quasinormal modes can be readily performed. The calculation reveals the neat correlation of the second peak in Vishveshwara's waveform to the fundamental mode and first overtones, closely following the ringdown waveform pattern of non-linear evolutions. The first peak is completely controlled, for even (Zerilli) perturbations, by the algebraically special mode and the nearby branch cut. This phenomenon is absent for odd (Regge-Wheeler) perturbations. These qualitative features are robust under change of initial data, extending to Reissner-Nordström and Kerr black holes but being absent when departing from asymptotic flatness to spacetime asymptotics without a branch cut. Underlying linear mechanisms might shed light on the role of algebraic speciality in the transition to the ringdown in non-linear evolutions.",
+    "status": "found"
+  },
+  "2608.11824": {
+    "arxiv_id": "2608.11824",
+    "title": "A Nonsingular Logarithmic Bouncing Cosmology in $f(R,T)$ Gravity with Thermodynamic Viability",
+    "authors": [
+      "Anjani",
+      "Pankaj Kumar",
+      "S. H. Shekh",
+      "Milan Srivastava"
+    ],
+    "submission_date": "2026-08-12T09:09:09Z",
+    "latest_updated": "2026-08-12T09:09:09Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11824v1"
+    ],
+    "abstract": "We present a nonsingular bouncing cosmological model in the framework of modified $f(R,T)$ gravity within a spatially flat Friedmann--Robertson--Walker universe. A logarithmic time-dependent scale factor is assumed to realize a smooth transition from a contracting phase to an expanding phase without encountering an initial singularity. Based on this assumption, the dynamical evolution of the Hubble parameter, deceleration parameter, energy density, and pressure is obtained for various choices of the model and the matter--geometry coupling parameter to confirm the occurrence of a successful bounce. The effective equation of state parameter is examined to characterize the cosmic fluid during different evolutionary phases. The violation of energy conditions, necessary for the realization of the bouncing behavior, is also discussed. The stability of the model is investigated using the squared speed of sound and is found to remain positive within the allowed parameter space, indicating classical stability. Furthermore, constraints on the matter--geometry coupling parameter are obtained by demanding positive energy density, negative pressure, and a viable cosmological evolution. The obtained cosmological constraint on the coupling parameter is also shown to be compatible with the currently available compact-object constraints. The thermodynamic behavior of the model is examined by testing the generalized second law of thermodynamics. The total entropy production rate remains negative during the contracting phase and changes its sign to positive during the expanding phase. However, it becomes singular at the bouncing point, reflecting the breakdown of the standard thermodynamic description during the transition phase.",
+    "status": "found"
+  },
+  "2608.11825": {
+    "arxiv_id": "2608.11825",
+    "title": "Lipid Controlled Non-Monotonic Assembly and Rheology of an Egg Yolk Protein at Water-Soybean Oil Interface",
+    "authors": [
+      "Nancy Jaglan",
+      "Rumal Singh",
+      "Sajal K Ghosh"
+    ],
+    "submission_date": "2026-08-12T09:10:03Z",
+    "latest_updated": "2026-08-12T09:10:03Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11825v1"
+    ],
+    "abstract": "An essential component of food items like mayonnaise and salad dressing is hen egg yolk. Phosvitin (PVT) is a phosphoprotein, which exists in the granules of this hen egg yolk which stabilizes the food emulsion by preventing phase separation. To understand, how this protein is adsorbed at the interface of water and edible oil in the presence and absence of lipids is essential for improved control in food production. To monitor the kinetics of this adsorption, the dynamic interfacial tension has been determined in the current investigation. The drop in interfacial tension over time indicates the adsorption of protein at interface which is enhanced on increasing the concentration of protein in water phase. However, at higher concentration, the positive activation energy hinders the adsorption process resulting a saturated interfacial tension. The dilation rheology of the macromolecular film at this oil-water interface shows the elastic nature of the film to be greater than the viscous nature, indicating the formation of a soft gel film. At low concentration, the zwitterionic lipid, 1-palmitoyl-2-oleoyl-sn-glycero 3-phosphocholine (POPC), promotes this protein adsorption at the interface. Interestingly, at high concentration, the lipid overtakes the interface removing the protein from there. The lipid-protein composite film again shows the nature of a soft gel. The non-monotonic effects of lipids on assembly of protein at the water-edible oil interface is an important observation to optimize the composition of relevant food products.",
+    "status": "found"
+  },
+  "2608.11826": {
+    "arxiv_id": "2608.11826",
+    "title": "Statistics of Solar Filament Mass based on CHASE Sun-as-a-star Spectroscopic Observations",
+    "authors": [
+      "T. Y. Xie",
+      "Z. H. Zhao",
+      "X. Cheng",
+      "Y. H. Chen",
+      "Z. Zheng",
+      "Q. Hao",
+      "C. Li",
+      "M. D. Ding"
+    ],
+    "submission_date": "2026-08-12T09:10:59Z",
+    "latest_updated": "2026-08-12T09:10:59Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11826v1"
+    ],
+    "abstract": "Filaments are cool and dense plasmas suspended in the hot corona of the Sun and other stars. Accurately estimating their masses is of great significance for understanding subsequent eruptions and induced space weather effects, but it remains hindered by their intrinsic geometric uncertainties, particularly in spatially unresolved stellar observations. To test and calibrate the methods for estimating the masses of stellar filaments, we conduct a statistical Sun-as-a-star analysis of solar filaments, utilizing full-disk H$α$ spectroscopic observations from the Chinese H$α$ Solar Explorer (CHASE). A total of 1346 filaments, covering a period from January 2024 to October 2025, are identified via a machine-learning segmentation model. We construct their virtual sun-as-a-star spectra by spatially integrating the filament regions and then obtain their optical parameters by cloud-model fitting. Upon correcting projection effects, we establish a representative three-dimensional morphological scaling of length, apparent width, and line-of-sight depth ($L:W_{\\rm app}:D_{\\rm LOS} \\approx 4.5:1:1.7$), with a median filament depth of about 8000 km. Interestingly, the Sun-as-a-star estimated mass shows high consistency with the resolved intrinsic mass across the full sample, with a log-space regression slope of 1.07. As the first large-sample Sun-as-a-star study of solar filaments, our results provide empirical constraints on filament geometries and masses, offering a critical reference for estimating stellar filament masses based on H$α$ spectroscopy.",
+    "status": "found"
+  }
+}

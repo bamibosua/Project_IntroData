@@ -1,0 +1,424 @@
+{
+  "2601.22996": {
+    "arxiv_id": "2601.22996",
+    "title": "Competitive Non-Clairvoyant KV-Cache Scheduling for LLM Inference",
+    "authors": [
+      "Yiding Feng",
+      "Zonghan Yang",
+      "Yuhao Zhang"
+    ],
+    "submission_date": "2026-01-30T14:01:02Z",
+    "latest_updated": "2026-01-30T14:01:02Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22996v1"
+    ],
+    "abstract": "Large Language Model (LLM) inference presents a unique scheduling challenge due to the Key-Value (KV) cache, where a job's memory footprint grows linearly with the number of decoded tokens. This growth couples scheduling decisions with feasibility: a scheduler must minimize latency under a hard memory budget, yet the response lengths of requests are inherently unknown. While recent works have explored this problem either assuming clairvoyance -- exact knowledge of response lengths -- or relying on machine-learned predictions, obtaining robust performance guarantees without any prior knowledge of job sizes remains a theoretically fundamental and practically important open problem. In this work, we propose the Geometric Slicing Algorithm (GSA), the non-clairvoyant policy to achieve the first constant competitive ratio for this problem in the offline batch setting. GSA manages uncertainty through a geometric phase structure that periodically restarts jobs to bound memory exposure, combined with a staggered pipeline mechanism that enables high concurrency by smoothing aggregate memory consumption. We prove that GSA achieves a competitive ratio of at most 61.92 for general instances, improving to 32 in the large-memory regime. Our algorithmic framework also yields a clairvoyant counterpart, the Geometric Batching Algorithm (GBA), which achieves an approximation ratio of 10.67 for general instances and 6.75 in the large-memory regime -- significantly improving upon the best previously known bound of over 9000. Numerical experiments on real request traces demonstrate that our algorithms perform robustly while preserving these worst-case guarantees.",
+    "status": "found"
+  },
+  "2601.22997": {
+    "arxiv_id": "2601.22997",
+    "title": "TriCEGAR: A Trace-Driven Abstraction Mechanism for Agentic AI",
+    "authors": [
+      "Roham Koohestani",
+      "Ateş Görpelioğlu",
+      "Egor Klimov",
+      "Burcu Kulahcioglu Ozkan",
+      "Maliheh Izadi"
+    ],
+    "submission_date": "2026-01-30T14:01:47Z",
+    "latest_updated": "2026-01-30T14:01:47Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22997v1"
+    ],
+    "abstract": "Agentic AI systems act through tools and evolve their behavior over long, stochastic interaction traces. This setting complicates assurance, because behavior depends on nondeterministic environments and probabilistic model outputs. Prior work introduced runtime verification for agentic AI via Dynamic Probabilistic Assurance (DPA), learning an MDP online and model checking quantitative properties. A key limitation is that developers must manually define the state abstraction, which couples verification to application-specific heuristics and increases adoption friction. This paper proposes TriCEGAR, a trace-driven abstraction mechanism that automates state construction from execution logs and supports online construction of an agent behavioral MDP. TriCEGAR represents abstractions as predicate trees learned from traces and refined using counterexamples. We describe a framework-native implementation that (i) captures typed agent lifecycle events, (ii) builds abstractions from traces, (iii) constructs an MDP, and (iv) performs probabilistic model checking to compute bounds such as Pmax(success) and Pmin(failure). We also show how run likelihoods enable anomaly detection as a guardrailing signal.",
+    "status": "found"
+  },
+  "2601.22998": {
+    "arxiv_id": "2601.22998",
+    "title": "Unambiguous Vector Magnetometry with Structured Light in Atomic Vapor",
+    "authors": [
+      "S. Ramakrishna",
+      "S. Fritzsche"
+    ],
+    "submission_date": "2026-01-30T14:03:34Z",
+    "latest_updated": "2026-02-03T10:47:41Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.22998v1",
+      "2601.22998v2"
+    ],
+    "abstract": "Absorption profiles of vector light upon interaction with atomic vapor carries distinct signatures of external magnetic field vector. However, this signature becomes ambiguous for anti parallel magnetic field vectors of equal magnitude, which makes their absorption profiles visually indistinguishable. To resolve this ambiguity, we present theoretical analysis of the interaction of vector light with optically polarized atoms immersed in reference and test magnetic fields. Furthermore, we demonstrate the complete characterization of the arbitrarily oriented test magnetic field via Fourier analysis of the absorption profile. This analysis reveals a one to one correspondence between the magnetic field properties and the profiles contrast and rotational angle. Our findings open an avenue to design an optical vector atomic magnetometer based on structured light fields.",
+    "status": "found"
+  },
+  "2601.22999": {
+    "arxiv_id": "2601.22999",
+    "title": "Computationally efficient segmentation for non-stationary time series with oscillatory patterns",
+    "authors": [
+      "Nicolas Bianco",
+      "Lorenzo Cappello"
+    ],
+    "submission_date": "2026-01-30T14:06:01Z",
+    "latest_updated": "2026-01-30T14:06:01Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22999v1"
+    ],
+    "abstract": "We propose a novel approach for change-point detection and parameter learning in multivariate non-stationary time series exhibiting oscillatory behaviour. We approximate the process through a piecewise function defined by a sum of sinusoidal functions with unknown frequencies and amplitudes plus noise. The inference for this model is non-trivial. However, discretising the parameter space allows us to recast this complex estimation problem into a more tractable linear model, where the covariates are Fourier basis functions. Then, any change-point detection algorithms for segmentation can be used. The advantage of our proposal is that it bypasses the need for trans-dimensional Markov chain Monte Carlo algorithms used by state-of-the-art methods. Through simulations, we demonstrate that our method is significantly faster than existing approaches while maintaining comparable numerical accuracy. We also provide high probability bounds on the change-point localization error. We apply our methodology to climate and EEG sleep data.",
+    "status": "found"
+  },
+  "2601.23000": {
+    "arxiv_id": "2601.23000",
+    "title": "Mano: Restriking Manifold Optimization for LLM Training",
+    "authors": [
+      "Yufei Gu",
+      "Zeke Xie"
+    ],
+    "submission_date": "2026-01-30T14:07:03Z",
+    "latest_updated": "2026-01-30T14:07:03Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.23000v1"
+    ],
+    "abstract": "While large language models (LLMs) have emerged as a significant advancement in artificial intelligence, the hardware and computational costs for training LLMs are also significantly burdensome. Among the state-of-the-art optimizers, AdamW relies on diagonal curvature estimates and ignores structural properties, while Muon applies global spectral normalization at the expense of losing curvature information. In this study, we restriked manifold optimization methods for training LLMs, which may address both optimizers' limitations, while conventional manifold optimization methods have been largely overlooked due to the poor performance in large-scale model optimization. By innovatively projecting the momentum onto the tangent space of model parameters and constraining it on a rotational Oblique manifold, we propose a novel, powerful, and efficient optimizer **Mano** that is the first to bridge the performance gap between manifold optimization and modern optimizers. Extensive experiments on the LLaMA and Qwen3 models demonstrate that Mano consistently and significantly outperforms AdamW and Muon even with less memory consumption and computational complexity, respectively, suggesting an expanded Pareto frontier in terms of space and time efficiency.",
+    "status": "found"
+  },
+  "2601.23001": {
+    "arxiv_id": "2601.23001",
+    "title": "Bias Beyond Borders: Political Ideology Evaluation and Steering in Multilingual LLMs",
+    "authors": [
+      "Afrozah Nadeem",
+      "Agrima Seth",
+      "Mehwish Nasim",
+      "Usman Naseem"
+    ],
+    "submission_date": "2026-01-30T14:07:25Z",
+    "latest_updated": "2026-02-11T03:32:56Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2601.23001v1",
+      "2601.23001v2",
+      "2601.23001v3"
+    ],
+    "abstract": "Large Language Models (LLMs) increasingly shape global discourse, making fairness and ideological neutrality essential for responsible AI deployment. Despite growing attention to political bias in LLMs, prior work largely focuses on high-resource, Western languages or narrow multilingual settings, leaving cross-lingual consistency and safe post-hoc mitigation underexplored. To address this gap, we present a large-scale multilingual evaluation of political bias spanning 50 countries and 33 languages. We introduce a complementary post-hoc mitigation framework, Cross-Lingual Alignment Steering (CLAS), designed to augment existing steering methods by aligning ideological representations across languages and dynamically regulating intervention strength. This method aligns latent ideological representations induced by political prompts into a shared ideological subspace, ensuring cross lingual consistency, with the adaptive mechanism prevents over correction and preserves coherence. Experiments demonstrate substantial bias reduction along both economic and social axes with minimal degradation in response quality. The proposed framework establishes a scalable and interpretable paradigm for fairness-aware multilingual LLM governance, balancing ideological neutrality with linguistic and cultural diversity.",
+    "status": "found"
+  },
+  "2601.23002": {
+    "arxiv_id": "2601.23002",
+    "title": "Unlocking the Power of Orbital-Free Density Functional Theory to Explore the Electronic Structure Under Extreme Conditions",
+    "authors": [
+      "Cheng Ma",
+      "Qiang Xu",
+      "Zhenhao Zhang",
+      "Ke Wang",
+      "Ying Sun",
+      "Wenhui Mi",
+      "Zhandos A. Moldabekov",
+      "Tobias Dornheim",
+      "Jan Vorberger",
+      "Sebastian Schwalbe",
+      "Xuecheng Shao"
+    ],
+    "submission_date": "2026-01-30T14:11:31Z",
+    "latest_updated": "2026-01-30T14:11:31Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.23002v1"
+    ],
+    "abstract": "Recent advances in X-ray free-electron laser diagnostics have enabled direct probing of the electronic structure under extreme pressures and temperatures, such as those encountered in stellar interiors and inertial confinement fusion experiments, challenging theoretical models for interpreting experimental data. Kohn-Sham density functional theory (KSDFT) has been successfully applied to analyze experimental X-ray scattering measurements, but its high computational cost renders routine application impractical. Orbital-free DFT (OFDFT) is a substantially more efficient alternative, with computational cost scaling linearly with system size and a weak temperature dependence, yet it often lacks the accuracy required for electronic structure description. Overcoming this limitation, we present a non-empirical Kohn-Sham-assisted orbital-free density functional framework for calculations at extreme conditions, which enables efficient OFDFT simulations with KSDFT-level accuracy for electron densities, electron-ion structure factors, and equations of state across a broad range of conditions. Benchmark comparisons with quantum Monte Carlo data for dense hydrogen and validation against Rayleigh weight measurements of hot dense beryllium demonstrate the reliability of the framework and speedups of up to several hundred times compared with KSDFT. We further show that even at temperatures on the order of 100 eV, quantum non-locality remains essential for correctly describing the electronic structure of dense hydrogen.",
+    "status": "found"
+  },
+  "2601.23003": {
+    "arxiv_id": "2601.23003",
+    "title": "Perturbative Born theory for light scattering by time-modulated scatterers",
+    "authors": [
+      "Dionysios Galanis",
+      "Evangelos Almpanis",
+      "Nikolaos Papanikolaou",
+      "Nikolaos Stefanou"
+    ],
+    "submission_date": "2026-01-30T14:12:30Z",
+    "latest_updated": "2026-04-20T14:56:11Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.23003v1",
+      "2601.23003v2"
+    ],
+    "abstract": "We present a theoretical framework for electromagnetic scattering by particles with a permittivity that is periodically varying in time, based on a perturbative approach. Within this framework, we derive explicit expressions for the scattering matrix of the dynamic system in a first-order Born approximation, relating it directly to the corresponding static problem. We show that inelastic scattering amplitudes are governed by overlap integrals between static modes at the input and output frequencies. Using this insight, we analyze scattering from a time-modulated, isotropic, dielectric sphere and a high-permittivity dielectric cylinder, and demonstrate how modal orthogonality can suppress inelastic channels, while appropriate tuning of geometric parameters can significantly enhance them. In particular, we show that cylindrical resonators support strong inelastic scattering when resonance-to-resonance optical transitions, induced by the temporal variation, involve a high-Q supercavity mode. Comparison with full time-Floquet calculations confirms that the first-order Born approximation remains quantitatively accurate for modest modulation amplitudes and provides clear physical intuition for frequency conversion and resonance-mediated scattering processes in time-modulated photonic resonators.",
+    "status": "found"
+  },
+  "2601.23004": {
+    "arxiv_id": "2601.23004",
+    "title": "Layer-Aware Early Fusion of Acoustic and Linguistic Embeddings for Cognitive Status Classification",
+    "authors": [
+      "Krystof Novotny",
+      "Laureano Moro-Velázquez",
+      "Jiri Mekyska"
+    ],
+    "submission_date": "2026-01-30T14:15:05Z",
+    "latest_updated": "2026-01-30T14:15:05Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.23004v1"
+    ],
+    "abstract": "Speech contains both acoustic and linguistic patterns that reflect cognitive decline, and therefore models describing only one domain cannot fully capture such complexity. This study investigates how early fusion (EF) of speech and its corresponding transcription text embeddings, with attention to encoder layer depth, can improve cognitive status classification. Using a DementiaBank-derived collection of recordings (1,629 speakers; cognitively normal controls$\\unicode{x2013}$CN, Mild Cognitive Impairment$\\unicode{x2013}$MCI, and Alzheimer's Disease and Related Dementias$\\unicode{x2013}$ADRD), we extracted frame-aligned embeddings from different internal layers of wav2vec 2.0 or Whisper combined with DistilBERT or RoBERTa. Unimodal, EF and late fusion (LF) models were trained with a transformer classifier, optimized, and then evaluated across 10 seeds. Performance consistently peaked in mid encoder layers ($\\sim$8$\\unicode{x2013}$10), with the single best F1 at Whisper + RoBERTa layer 9 and the best log loss at Whisper + DistilBERT layer 10. Acoustic-only models consistently outperformed text-only variants. EF boosts discrimination for genuinely acoustic embeddings, whereas LF improves probability calibration. Layer choice critically shapes clinical multimodal synergy.",
+    "status": "found"
+  },
+  "2601.23005": {
+    "arxiv_id": "2601.23005",
+    "title": "Analysis of regulator and cutoff artifacts in the phase diagram of the quark-meson model",
+    "authors": [
+      "Jonas Stoll",
+      "Niklas Zorbach",
+      "Lutz Kiefer",
+      "Fabrizio Murgana",
+      "Jens Braun",
+      "Dirk H. Rischke"
+    ],
+    "submission_date": "2026-01-30T14:15:08Z",
+    "latest_updated": "2026-01-30T14:15:08Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.23005v1"
+    ],
+    "abstract": "We study regulator and cutoff artifacts in the quark-meson model at finite temperature and quark chemical potential within the functional renormalization-group approach using the local potential approximation. To this end, we discuss the concept of renormalization-group consistency in effective models, which necessitates a nontrivial parameter-fixing procedure to enable a meaningful comparison of results obtained with different regulators and cutoffs. We employ a standard range of cutoff values used in phenomenological studies and regulators that differ significantly in their analytic properties as well as in their classification according to the principle of strongest singularity. We find that regulator and cutoff dependences are small at low temperatures and quark chemical potentials. At high temperatures and low quark chemical potentials, significant cutoff artifacts arise, whereas the properties of the regulator affect the dynamics in the regime governed by a chiral phase transition of first order at low temperatures and high quark chemical potentials.",
+    "status": "found"
+  },
+  "2601.23006": {
+    "arxiv_id": "2601.23006",
+    "title": "InstructDiff: Domain-Adaptive Data Selection via Differential Entropy for Efficient LLM Fine-Tuning",
+    "authors": [
+      "Junyou Su",
+      "He Zhu",
+      "Xiao Luo",
+      "Liyu Zhang",
+      "Hong-Yu Zhou",
+      "Yun Chen",
+      "Peng Li",
+      "Yang Liu",
+      "Guanhua Chen"
+    ],
+    "submission_date": "2026-01-30T14:15:44Z",
+    "latest_updated": "2026-01-30T14:15:44Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.23006v1"
+    ],
+    "abstract": "Supervised fine-tuning (SFT) is fundamental to adapting large language models, yet training on complete datasets incurs prohibitive costs with diminishing returns. Existing data selection methods suffer from severe domain specificity: techniques optimized for general instruction-following fail on reasoning tasks, and vice versa. We observe that measuring entropy differences between base models and minimally instruction-tuned calibrated models reveals a pattern -- samples with the lowest differential entropy consistently yield optimal performance across domains, yet this principle manifests domain-adaptively: reasoning tasks favor entropy increase (cognitive expansion), while general tasks favor entropy decrease (cognitive compression). We introduce InstructDiff, a unified framework that operationalizes differential entropy as a domain-adaptive selection criterion through warmup calibration, bi-directional NLL filtering, and entropy-based ranking. Extensive experiments show that InstructDiff achieves 17\\% relative improvement over full data training on mathematical reasoning and 52\\% for general instruction-following, outperforming prior baselines while using only 10\\% of the data.",
+    "status": "found"
+  },
+  "2601.23007": {
+    "arxiv_id": "2601.23007",
+    "title": "Leveraging Multi-Rater Annotations to Calibrate Object Detectors in Microscopy Imaging",
+    "authors": [
+      "Francesco Campi",
+      "Lucrezia Tondo",
+      "Ekin Karabati",
+      "Johannes Betge",
+      "Marie Piraud"
+    ],
+    "submission_date": "2026-01-30T14:17:29Z",
+    "latest_updated": "2026-01-30T14:17:29Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.23007v1"
+    ],
+    "abstract": "Deep learning-based object detectors have achieved impressive performance in microscopy imaging, yet their confidence estimates often lack calibration, limiting their reliability for biomedical applications. In this work, we introduce a new approach to improve model calibration by leveraging multi-rater annotations. We propose to train separate models on the annotations from single experts and aggregate their predictions to emulate consensus. This improves upon label sampling strategies, where models are trained on mixed annotations, and offers a more principled way to capture inter-rater variability. Experiments on a colorectal organoid dataset annotated by two experts demonstrate that our rater-specific ensemble strategy improves calibration performance while maintaining comparable detection accuracy. These findings suggest that explicitly modelling rater disagreement can lead to more trustworthy object detectors in biomedical imaging.",
+    "status": "found"
+  },
+  "2601.23008": {
+    "arxiv_id": "2601.23008",
+    "title": "Baire-type properties of topological vector spaces",
+    "authors": [
+      "Saak Gabriyelyan",
+      "Alexander V. Osipov",
+      "Evgenii Reznichenko"
+    ],
+    "submission_date": "2026-01-30T14:17:48Z",
+    "latest_updated": "2026-02-05T13:08:46Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.23008v1",
+      "2601.23008v2"
+    ],
+    "abstract": "Burzyk, Kliś and Lipecki proved that every topological vector space (tvs) $E$ with the property $(K)$ is a Baire space. Kcakol and Sánchez Ruiz proved that every sequentially complete Fréchet--Urysohn locally convex space (lcs) is Baire. Being motivated by the property $(K)$ and the notion of a Mackey null sequence we introduce a property $(MK)$ which is strictly weaker than the property $(K)$, and show that any locally complete lcs has the property $(MK)$. We prove that any $κ$-Fréchet--Urysohn tvs with the property $(MK)$ is a Baire space; consequently, each locally complete $κ$-Fréchet--Urysohn lcs is a Baire space. This generalizes both the aforementioned results. We construct a feral Baire space $E$ with the property $(K)$ and which is not $κ$-Fréchet--Urysohn. Although a $κ$-Fréchet--Urysohn lcs $E$ can be not a Baire space, we show that $E$ is always $b$-Baire-like in the sense of Ruess. Applications to spaces of Baire functions and $C_k$-spaces are given.",
+    "status": "found"
+  },
+  "2601.23009": {
+    "arxiv_id": "2601.23009",
+    "title": "SolAgent: A Specialized Multi-Agent Framework for Solidity Code Generation",
+    "authors": [
+      "Wei Chen",
+      "Zhiyuan Peng",
+      "Xin Yin",
+      "Chao Ni",
+      "Chenhao Ying",
+      "Bang Xie",
+      "Yuan Luo"
+    ],
+    "submission_date": "2026-01-30T14:17:48Z",
+    "latest_updated": "2026-01-30T14:17:48Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.23009v1"
+    ],
+    "abstract": "Smart contracts are the backbone of the decentralized web, yet ensuring their functional correctness and security remains a critical challenge. While Large Language Models (LLMs) have shown promise in code generation, they often struggle with the rigorous requirements of smart contracts, frequently producing code that is buggy or vulnerable. To address this, we propose SolAgent, a novel tool-augmented multi-agent framework that mimics the workflow of human experts. SolAgent integrates a \\textbf{dual-loop refinement mechanism}: an inner loop using the \\textit{Forge} compiler to ensure functional correctness, and an outer loop leveraging the \\textit{Slither} static analyzer to eliminate security vulnerabilities. Additionally, the agent is equipped with file system capabilities to resolve complex project dependencies. Experiments on the SolEval+ Benchmark, a rigorous suite derived from high-quality real-world projects, demonstrate that SolAgent achieves a Pass@1 rate of up to \\textbf{64.39\\%}, significantly outperforming state-of-the-art LLMs ($\\sim$25\\%), AI IDEs (e.g., GitHub Copilot), and existing agent frameworks. Moreover, it reduces security vulnerabilities by up to \\textbf{39.77\\%} compared to human-written baselines. Finally, we demonstrate that the high-quality trajectories generated by SolAgent can be used to distill smaller, open-source models, democratizing access to secure smart contract generation. We release our data and code at https://github.com/openpaperz/SolAgent.",
+    "status": "found"
+  },
+  "2601.23010": {
+    "arxiv_id": "2601.23010",
+    "title": "Automatic Constraint Policy Optimization based on Continuous Constraint Interpolation Framework for Offline Reinforcement Learning",
+    "authors": [
+      "Xinchen Han",
+      "Qiuyang Fang",
+      "Hossam Afifi",
+      "Michel Marot"
+    ],
+    "submission_date": "2026-01-30T14:21:41Z",
+    "latest_updated": "2026-01-30T14:21:41Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.23010v1"
+    ],
+    "abstract": "Offline Reinforcement Learning (RL) relies on policy constraints to mitigate extrapolation error, where both the constraint form and constraint strength critically shape performance. However, most existing methods commit to a single constraint family: weighted behavior cloning, density regularization, or support constraints, without a unified principle that explains their connections or trade-offs. In this work, we propose Continuous Constraint Interpolation (CCI), a unified optimization framework in which these three constraint families arise as special cases along a common constraint spectrum. The CCI framework introduces a single interpolation parameter that enables smooth transitions and principled combinations across constraint types. Building on CCI, we develop Automatic Constraint Policy Optimization (ACPO), a practical primal--dual algorithm that adapts the interpolation parameter via a Lagrangian dual update. Moreover, we establish a maximum-entropy performance difference lemma and derive performance lower bounds for both the closed-form optimal policy and its parametric projection. Experiments on D4RL and NeoRL2 demonstrate robust gains across diverse domains, achieving state-of-the-art performance overall.",
+    "status": "found"
+  },
+  "2601.23011": {
+    "arxiv_id": "2601.23011",
+    "title": "Leveraging Convolutional Sparse Autoencoders for Robust Movement Classification from Low-Density sEMG",
+    "authors": [
+      "Blagoj Hristov",
+      "Zoran Hadzi-Velkov",
+      "Katerina Hadzi-Velkova Saneva",
+      "Gorjan Nadzinski",
+      "Vesna Ojleska Latkoska"
+    ],
+    "submission_date": "2026-01-30T14:21:46Z",
+    "latest_updated": "2026-01-30T14:21:46Z",
+    "revised_dates": null,
+    "venue": "Scientific Reports (2026)",
+    "latest_version": 1,
+    "versions": [
+      "2601.23011v1"
+    ],
+    "abstract": "Reliable control of myoelectric prostheses is often hindered by high inter-subject variability and the clinical impracticality of high-density sensor arrays. This study proposes a deep learning framework for accurate gesture recognition using only two surface electromyography (sEMG) channels. The method employs a Convolutional Sparse Autoencoder (CSAE) to extract temporal feature representations directly from raw signals, eliminating the need for heuristic feature engineering. On a 6-class gesture set, our model achieved a multi-subject F1-score of 94.3% $\\pm$ 0.3%. To address subject-specific differences, we present a few-shot transfer learning protocol that improved performance on unseen subjects from a baseline of 35.1% $\\pm$ 3.1% to 92.3% $\\pm$ 0.9% with minimal calibration data. Furthermore, the system supports functional extensibility through an incremental learning strategy, allowing for expansion to a 10-class set with a 90.0% $\\pm$ 0.2% F1-score without full model retraining. By combining high precision with minimal computational and sensor overhead, this framework provides a scalable and efficient approach for the next generation of affordable and adaptive prosthetic systems.",
+    "status": "found"
+  },
+  "2601.23012": {
+    "arxiv_id": "2601.23012",
+    "title": "Scalar-tensor-vector gravity theory is tested by black hole photon rings",
+    "authors": [
+      "Qiao Yue",
+      "Zhaoyi Xu",
+      "Meirong Tang"
+    ],
+    "submission_date": "2026-01-30T14:22:44Z",
+    "latest_updated": "2026-02-03T06:05:21Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.23012v1",
+      "2601.23012v2"
+    ],
+    "abstract": "This paper investigates the photon ring and shadow structure of the Reissner-Nordström black hole in the scalar-tensor-vector gravitational framework. The black hole is characterized by the ( MOG) parameter (α) and the charge (Q). The study finds that as (α) increases, the event horizon radius (r_h), photon sphere radius (r_{ph}), and critical impact parameter (b_{ph}) all increase, while these decrease as (Q) increases. The innermost stable circular orbit radius (r_{isco}) exhibits similar monotonic behavior. Ray-tracing shows that as (Q) increases, the impact parameter (b) interval between the lensing ring and photon ring widens; (b_{\\text{ph}}) is non-degenerate, and the photon ring radius is uniquely determined by (α) and (Q). Using $EHT$ constraints on (SgrA^*) and (M87^*), the bounds on (α) and (Q) are derived. For (Q = 0), (0.5), and (1), the allowed ranges are (α\\in [0, 0.06]), ([0, 0.11]), and ([0.19, 0.36]), respectively. Radiative simulations show that for fixed (Q), larger (α) leads to a larger, non-degenerate photon ring. The Schwarzschild case is approached only when both (α) and (Q) are small. This provides a computational basis for testing modified black holes and offers a non-degenerate observational criterion for distinguishing quantum gravity models, consistent with current $EHT$ data. Future observations with $ngEHT$ and multi-band polarization can further test this. The results suggest that studying the photon ring structure of a Reissner-Nordström black hole in scalar-tensor-vector gravity provides a unique optical diagnostic for potential quantum-gravity tests and black hole properties.",
+    "status": "found"
+  },
+  "2601.23013": {
+    "arxiv_id": "2601.23013",
+    "title": "Contrastive learning of extragalactic stellar streams. Sculpting a latent space of representations with DES DR2 photometry",
+    "authors": [
+      "Ernesto Benitez-Walz",
+      "Jelle Mes",
+      "Juan Miró-Carretero",
+      "Koen Kuijken",
+      "Amina Helmi"
+    ],
+    "submission_date": "2026-01-30T14:22:55Z",
+    "latest_updated": "2026-07-31T12:55:34Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.23013v1",
+      "2601.23013v2"
+    ],
+    "abstract": "We present a self-supervised approach for characterizing low surface brightness tidal features in wide-field imaging data by applying the nearest-neighbor contrastive learning of visual representations (NNCLR) algorithm to a curated subset of the Dark Energy Survey Data Release 2 (DES DR2). We construct 38,334 cutouts of well-resolved galaxies in the g, r, i bands, applying a novel \"tiered sigmoid scaling function\" to dynamically adjust image contrast according to the object's signal-to-noise and background level. A supplemental labeled sample of 366 galaxies enables qualitative assessment of the learned embeddings. We train a convolutional neural network with image augmentations including injection of simulated background stars, and project the resulting 512-dimensional representations into two dimensions using uniform manifold approximation and projection (UMAP) and its local density preserving variant (densMAP). We find that the NNCLR latent space recovers global trends corresponding to major merger features, yet does not reliably separate stellar streams without further supervision. To interpret the network's implicit attention, we compute gradient-based saliency maps averaged over the full dataset: these reveal that the tiered sigmoid scaling effectively attenuates information from the center of the image cutouts, thereby suppressing the learning of high surface brightness features of each image cutout's central galaxy. Our study provides a blueprint for leveraging contrastive methods to mine forthcoming survey data for faint tidal substructure, and highlights key preprocessing and interpretability considerations for robust stream detection.",
+    "status": "found"
+  },
+  "2601.23014": {
+    "arxiv_id": "2601.23014",
+    "title": "Mem-T: Densifying Rewards for Long-Horizon Memory Agents",
+    "authors": [
+      "Yanwei Yue",
+      "Boci Peng",
+      "Xuanbo Fan",
+      "Jiaxin Guo",
+      "Qiankun Li",
+      "Yan Zhang"
+    ],
+    "submission_date": "2026-01-30T14:23:33Z",
+    "latest_updated": "2026-03-09T14:47:04Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.23014v1",
+      "2601.23014v2"
+    ],
+    "abstract": "Memory agents, which depart from predefined memory-processing pipelines by endogenously managing the processing, storage, and retrieval of memories, have garnered increasing attention for their autonomy and adaptability. However, existing training paradigms remain constrained: agents often traverse long-horizon sequences of memory operations before receiving sparse and delayed rewards, which hinders truly end-to-end optimization of memory management policies. To address this limitation, we introduce Mem-T, an autonomous memory agent that interfaces with a lightweight hierarchical memory database to perform dynamic updates and multi-turn retrieval over streaming inputs. To effectively train long-horizon memory management capabilities, we further propose MoT-GRPO, a tree-guided reinforcement learning framework that transforms sparse terminal feedback into dense, step-wise supervision via memory operation tree backpropagation and hindsight credit assignment, thereby enabling the joint optimization of memory construction and retrieval. Extensive experiments demonstrate that Mem-T is (1) high-performing, surpassing frameworks such as A-Mem and Mem0 by up to $14.92\\%$, and (2) economical, operating on a favorable accuracy-efficiency Pareto frontier and reducing inference tokens per query by $\\sim24.45\\%$ relative to GAM without sacrificing performance.",
+    "status": "found"
+  },
+  "2601.23015": {
+    "arxiv_id": "2601.23015",
+    "title": "Quasiperiodic Skin Criticality in an Exactly Solvable Non-Hermitian Quasicrystal",
+    "authors": [
+      "Zhangyuan Chen",
+      "Muhammad Idrees",
+      "Ying Yang",
+      "Xianqi Tong",
+      "Xiaosen Yang"
+    ],
+    "submission_date": "2026-01-30T14:26:14Z",
+    "latest_updated": "2026-01-30T14:26:14Z",
+    "revised_dates": null,
+    "venue": "Phys. Rev. B 113, 235423(2026)",
+    "latest_version": 1,
+    "versions": [
+      "2601.23015v1"
+    ],
+    "abstract": "Critical states in quasiperiodic systems defy the conventional dichotomy between extended and localized states. In this work, we demonstrate that non-Hermiticity fundamentally reshapes this paradigm by giving rise to an exactly solvable quasiperiodic critical phase with no energy selectivity. We introduce a non-Hermitian quasiperiodic lattice based on a modulated Hatano-Nelson model and uncover a new universality class of quasiperiodic skin criticality, in which all eigenstates share an identical multifractal spatial structure. Through a nonunitary gauge transformation, the system is mapped onto a disorder-free lattice, enabling exact analytical solutions for the full spectrum and eigenstates. As a consequence, the inverse participation ratio is strictly energy-independent and controlled solely by a global phase. We further show that this criticality persists in multiband lattices, establishing a general and analytically controlled framework for non-Hermitian quasiperiodic critical phenomena.",
+    "status": "found"
+  }
+}

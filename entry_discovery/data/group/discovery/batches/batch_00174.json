@@ -1,0 +1,429 @@
+{
+  "2511.15189": {
+    "arxiv_id": "2511.15189",
+    "title": "Fluid Control with Localized Spacetime Windows",
+    "authors": [
+      "Yixin Chen",
+      "David I. W. Levin",
+      "Timothy R. Langlois"
+    ],
+    "submission_date": "2025-11-19T07:22:48Z",
+    "latest_updated": "2026-06-18T22:00:55Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.15189v1",
+      "2511.15189v2"
+    ],
+    "abstract": "We present a physics-based fluid control method utilizing localized spacetime windows, extending force-based fluid control to substantially larger simulation scales. In many practical editing scenarios, user-specified objectives affect only a small region of an otherwise satisfactory simulation, resulting in optimal control force distributions that are highly sparse in both space and time. However, existing optimization-based fluid control methods typically solve for control forces over the entire spacetime domain, leading to unnecessarily high computational cost and poor scalability. Motivated by this observation, we restrict optimization to localized spacetime regions surrounding the edit of interest, significantly reducing the dimensionality of the control problem. Within this framework, control forces are parameterized on a coarse \"floating\" background grid, decoupling control degrees of freedom from simulation resolution and promoting smooth, physically plausible forces. We further analyze spacetime-window selection as a joint spatial-temporal problem. While the full problem can be formulated as a 2D search over spatial and temporal window extents, practical workflows can often leverage user-specified spatial regions and lightweight temporal-window selection strategies to reduce search cost. Our method enables a range of intuitive editing tasks, where sparse user inputs can induce coherent motion in surrounding fluid structures. We demonstrate the effectiveness and efficiency of our method with various 2D and 3D particle-based free-surface simulation examples.",
+    "status": "found"
+  },
+  "2511.15190": {
+    "arxiv_id": "2511.15190",
+    "title": "Masked Auto-Regressive Variational Acceleration: Fast Inference Makes Practical Reinforcement Learning",
+    "authors": [
+      "Yuxuan Gu",
+      "Weimin Bai",
+      "Yifei Wang",
+      "Weijian Luo",
+      "He Sun"
+    ],
+    "submission_date": "2025-11-19T07:24:07Z",
+    "latest_updated": "2026-03-17T10:51:27Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2511.15190v1",
+      "2511.15190v2",
+      "2511.15190v3"
+    ],
+    "abstract": "Masked auto-regressive diffusion models (MAR) benefit from the expressive modeling ability of diffusion models and the flexibility of masked auto-regressive ordering. However, vanilla MAR suffers from slow inference due to its hierarchical inference mechanism: an outer AR unmasking loop and an inner diffusion denoising chain. Such decoupled structure not only harm the generation efficiency but also hinder the practical use of MAR for reinforcement learning (RL), an increasingly critical paradigm for generative model post-training.To address this fundamental issue, we introduce MARVAL (Masked Auto-regressive Variational Acceleration), a distillation-based framework that compresses the diffusion chain into a single AR generation step while preserving the flexible auto-regressive unmasking order. Such a distillation with MARVAL not only yields substantial inference acceleration but, crucially, makes RL post-training with verifiable rewards practical, resulting in scalable yet human-preferred fast generative models. Our contributions are twofold: (1) a novel score-based variational objective for distilling masked auto-regressive diffusion models into a single generation step without sacrificing sample quality; and (2) an efficient RL framework for masked auto-regressive models via MARVAL-RL. On ImageNet 256*256, MARVAL-Huge achieves an FID of 2.00 with more than 30 times speedup compared with MAR-diffusion, and MARVAL-RL yields consistent improvements in CLIP and image-reward scores on ImageNet datasets with entity names. In conclusion, MARVAL demonstrates the first practical path to distillation and RL of masked auto-regressive diffusion models, enabling fast sampling and better preference alignments.",
+    "status": "found"
+  },
+  "2511.15191": {
+    "arxiv_id": "2511.15191",
+    "title": "HISE-KT: Synergizing Heterogeneous Information Networks and LLMs for Explainable Knowledge Tracing with Meta-Path Optimization",
+    "authors": [
+      "Zhiyi Duan",
+      "Zixing Shi",
+      "Hongyu Yuan",
+      "Qi Wang"
+    ],
+    "submission_date": "2025-11-19T07:24:10Z",
+    "latest_updated": "2025-11-19T07:24:10Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.15191v1"
+    ],
+    "abstract": "Knowledge Tracing (KT) aims to mine students' evolving knowledge states and predict their future question-answering performance. Existing methods based on heterogeneous information networks (HINs) are prone to introducing noises due to manual or random selection of meta-paths and lack necessary quality assessment of meta-path instances. Conversely, recent large language models (LLMs)-based methods ignore the rich information across students, and both paradigms struggle to deliver consistently accurate and evidence-based explanations. To address these issues, we propose an innovative framework, HIN-LLM Synergistic Enhanced Knowledge Tracing (HISE-KT), which seamlessly integrates HINs with LLMs. HISE-KT first builds a multi-relationship HIN containing diverse node types to capture the structural relations through multiple meta-paths. The LLM is then employed to intelligently score and filter meta-path instances and retain high-quality paths, pioneering automated meta-path quality assessment. Inspired by educational psychology principles, a similar student retrieval mechanism based on meta-paths is designed to provide a more valuable context for prediction. Finally, HISE-KT uses a structured prompt to integrate the target student's history with the retrieved similar trajectories, enabling the LLM to generate not only accurate predictions but also evidence-backed, explainable analysis reports. Experiments on four public datasets show that HISE-KT outperforms existing KT baselines in both prediction performance and interpretability.",
+    "status": "found"
+  },
+  "2511.15192": {
+    "arxiv_id": "2511.15192",
+    "title": "As If We've Met Before: LLMs Exhibit Certainty in Recognizing Seen Files",
+    "authors": [
+      "Haodong Li",
+      "Jingqi Zhang",
+      "Xiao Cheng",
+      "Peihua Mai",
+      "Haoyu Wang",
+      "Yan Pang"
+    ],
+    "submission_date": "2025-11-19T07:24:22Z",
+    "latest_updated": "2025-11-20T10:01:24Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.15192v1",
+      "2511.15192v2"
+    ],
+    "abstract": "The remarkable language ability of Large Language Models (LLMs) stems from extensive training on vast datasets, often including copyrighted material, which raises serious concerns about unauthorized use. While Membership Inference Attacks (MIAs) offer potential solutions for detecting such violations, existing approaches face critical limitations and challenges due to LLMs' inherent overconfidence, limited access to ground truth training data, and reliance on empirically determined thresholds. We present COPYCHECK, a novel framework that leverages uncertainty signals to detect whether copyrighted content was used in LLM training sets. Our method turns LLM overconfidence from a limitation into an asset by capturing uncertainty patterns that reliably distinguish between ``seen\" (training data) and ``unseen\" (non-training data) content. COPYCHECK further implements a two-fold strategy: (1) strategic segmentation of files into smaller snippets to reduce dependence on large-scale training data, and (2) uncertainty-guided unsupervised clustering to eliminate the need for empirically tuned thresholds. Experiment results show that COPYCHECK achieves an average balanced accuracy of 90.1% on LLaMA 7b and 91.6% on LLaMA2 7b in detecting seen files. Compared to the SOTA baseline, COPYCHECK achieves over 90% relative improvement, reaching up to 93.8\\% balanced accuracy. It further exhibits strong generalizability across architectures, maintaining high performance on GPT-J 6B. This work presents the first application of uncertainty for copyright detection in LLMs, offering practical tools for training data transparency.",
+    "status": "found"
+  },
+  "2511.15193": {
+    "arxiv_id": "2511.15193",
+    "title": "Gravitational Wave Phase shifts of black hole mergers in AGN Disks",
+    "authors": [
+      "Hiromichi Tagawa",
+      "Connar Rowan",
+      "János Takátsy",
+      "Lorenz Zwick",
+      "Kai Hendriks",
+      "Wen-Biao Han",
+      "Johan Samsing"
+    ],
+    "submission_date": "2025-11-19T07:28:10Z",
+    "latest_updated": "2025-11-19T07:28:10Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.15193v1"
+    ],
+    "abstract": "Ground-based gravitational wave (GW) detectors have discovered about 200 compact object mergers. The astrophysical origins of these events are highly debated, and it is possible that at least a fraction of them originate from dynamical environments. Among these, the disks of active galactic nuclei (AGN) are particularly interesting as promising environments, as some observed properties may be more readily produced there. When compact objects merge in these environments, acceleration from the central supermassive black hole (SMBH) or nearby companions is inevitable. Such acceleration induces a phase shift in the observed GW waveforms, which can serve as a useful tool to distinguish the underlying merging environments for each GW event. In this paper, we investigate the expected distribution of such acceleration-induced GW phase shifts, using a semi-analytical model combined with a one-dimensional AGN population synthesis code. We find significant contributions from three-body interactions involving a nearby third object. Our results indicate that the GW phase shift is likely to be larger compared to other channels, making it distinguishable by future GW facilities such as TianQin, DECIGO, Taiji, Einstein Telescope, and Cosmic Explorer. Interestingly, a notable fraction of mergers in fact exhibit a significant GW phase shift ($\\gtrsim~{\\rm 1\\ rad}$) at frequencies above $10~{\\rm Hz}$, which could even be detectable by current GW detectors such as LIGO/Virgo/KAGRA. Additionally, if gas-hardening during three-body interactions is taken into account, the GW frequency can be boosted to $\\gtrsim 10~{\\rm Hz}$, potentially further aiding in the detection of the phase shift.",
+    "status": "found"
+  },
+  "2511.15194": {
+    "arxiv_id": "2511.15194",
+    "title": "Eq.Bot: Enhance Robotic Manipulation Learning via Group Equivariant Canonicalization",
+    "authors": [
+      "Jian Deng",
+      "Yuandong Wang",
+      "Yangfu Zhu",
+      "Tao Feng",
+      "Tianyu Wo",
+      "Zhenzhou Shao"
+    ],
+    "submission_date": "2025-11-19T07:28:20Z",
+    "latest_updated": "2025-11-19T07:28:20Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.15194v1"
+    ],
+    "abstract": "Robotic manipulation systems are increasingly deployed across diverse domains. Yet existing multi-modal learning frameworks lack inherent guarantees of geometric consistency, struggling to handle spatial transformations such as rotations and translations. While recent works attempt to introduce equivariance through bespoke architectural modifications, these methods suffer from high implementation complexity, computational cost, and poor portability. Inspired by human cognitive processes in spatial reasoning, we propose Eq.Bot, a universal canonicalization framework grounded in SE(2) group equivariant theory for robotic manipulation learning. Our framework transforms observations into a canonical space, applies an existing policy, and maps the resulting actions back to the original space. As a model-agnostic solution, Eq.Bot aims to endow models with spatial equivariance without requiring architectural modifications. Extensive experiments demonstrate the superiority of Eq.Bot under both CNN-based (e.g., CLIPort) and Transformer-based (e.g., OpenVLA-OFT) architectures over existing methods on various robotic manipulation tasks, where the most significant improvement can reach 50.0%.",
+    "status": "found"
+  },
+  "2511.15195": {
+    "arxiv_id": "2511.15195",
+    "title": "Particle deformability stabilizes hexatic order and suppresses crystallization",
+    "authors": [
+      "Jatin Kumar",
+      "Wu Zeng",
+      "Anshuman Pasupalak",
+      "Massimo Pica Ciamarra"
+    ],
+    "submission_date": "2025-11-19T07:28:48Z",
+    "latest_updated": "2025-11-19T07:28:48Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.15195v1"
+    ],
+    "abstract": "We show that two-dimensional systems of deformable particles undergo a continuous liquid-hexatic transition upon compression or cooling, but no hexatic-solid transition-even at zero temperature and high density. Numerical simulations reveal that solid-like configurations do not possess a lower energy than hexatic ones, so that at low temperatures the hexatic phase is thermodynamically favored due to its higher entropy. Dislocation condensation, necessary for solid formation, is suppressed as the system accommodates strain via particle shape changes, responding affinely to compression. Our findings identify a generic route by which microscopic mechanical properties control defect energetics and reshape phase behavior in two dimensions, with broad relevance for soft and biological materials such as microgels and epithelial tissues.",
+    "status": "found"
+  },
+  "2511.15196": {
+    "arxiv_id": "2511.15196",
+    "title": "Particle Monte Carlo methods for Lattice Field Theory",
+    "authors": [
+      "David Yallup"
+    ],
+    "submission_date": "2025-11-19T07:31:46Z",
+    "latest_updated": "2025-11-19T07:31:46Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.15196v1"
+    ],
+    "abstract": "High-dimensional multimodal sampling problems from lattice field theory (LFT) have become important benchmarks for machine learning assisted sampling methods. We show that GPU-accelerated particle methods, Sequential Monte Carlo (SMC) and nested sampling, provide a strong classical baseline that matches or outperforms state-of-the-art neural samplers in sample quality and wall-clock time on standard scalar field theory benchmarks, while also estimating the partition function. Using only a single data-driven covariance for tuning, these methods achieve competitive performance without problem-specific structure, raising the bar for when learned proposals justify their training cost.",
+    "status": "found"
+  },
+  "2511.15197": {
+    "arxiv_id": "2511.15197",
+    "title": "Insert In Style: A Zero-Shot Generative Framework for Harmonious Cross-Domain Object Composition",
+    "authors": [
+      "Raghu Vamsi Chittersu",
+      "Yuvraj Singh Rathore",
+      "Pranav Adlinge",
+      "Kunal Swami"
+    ],
+    "submission_date": "2025-11-19T07:33:00Z",
+    "latest_updated": "2026-04-25T14:48:03Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.15197v1",
+      "2511.15197v2"
+    ],
+    "abstract": "Reference-based object composition involves integrating foreground reference image with background scene to produce harmonious fused image. This task becomes particularly challenging in cross-domain scenarios, where models must balance preserving the reference object's identity while harmonizing them to match stylized environments. This under-explored problem is currently split between practical \"blenders\" that lack generative fidelity and \"generators\" that require impractical, per-subject online finetuning. In this work, we introduce Insert In Style, the first zero-shot generative framework that is both practical and high-fidelity. Our core contribution is a unified framework with two key innovations: (i) a novel multi-stage training protocol that disentangles representations for identity, style, and composition, and (ii) a specialized masked-attention architecture that surgically enforces this disentanglement during generation (iii) A prior preservation objective that keeps learned identity and style priors intact. By design, this approach mitigates concept interference typical in unified-attention architectures while ensuring robust generalization across diverse references and styles. Our framework is trained on a new 115k sample dataset, curated from a novel data pipeline. This pipeline couples large-scale generation with a rigorous, iterative human-in-the-loop filtering process to ensure both high-fidelity semantic identity and style coherence. Unlike prior work, our model is truly zero-shot and requires no text prompts. We also introduce a new public benchmark for stylized composition. We demonstrate state-of-the-art performance, significantly outperforming existing methods on both identity and style metrics, a result strongly corroborated by user studies.",
+    "status": "found"
+  },
+  "2511.15198": {
+    "arxiv_id": "2511.15198",
+    "title": "Space-Time-Frequency Synthetic Integrated Sensing and Communication Networks",
+    "authors": [
+      "Henglin Pu",
+      "Xuefeng Wang",
+      "Lu Su",
+      "Husheng Li"
+    ],
+    "submission_date": "2025-11-19T07:33:12Z",
+    "latest_updated": "2025-11-19T07:33:12Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.15198v1"
+    ],
+    "abstract": "Integrated sensing and communication (ISAC) promises high spectral and power efficiencies by sharing waveforms, spectrum, and hardware across sensing and data links. Yet commercial cellular networks struggle to deliver fine angular, range, and Doppler resolution due to limited aperture, bandwidth, and coherent observation time. In this paper, we propose a space-time-frequency synthetic ISAC architecture that fuses observations from distributed transmitters and receivers across time intervals and frequency bands. We develop a unified signal model for multistatic and monostatic configurations, derive Cramer-Rao lower bounds (CRLBs) for the estimations of position and velocity. The analysis shows how spatial diversity, multiband operation, and observation scheduling impact the Fisher information. We also compare the estimation performance between a concentrated maximum likelihood estimator (MLE) and a two stage information fusion (TSIF) method that first estimates per-path delay and radial speed and then fuses them by solving a weighted nonlinear least-squares problem via the Gauss-Newton algorithm. Numerical results show that MLE approaches the CRLB in the high signal-to-noise ratio (SNR) regime, while the two stage method remains competitive at moderate to high SNR but degrades at low SNR. A central finding is that fully synthesized network processing is essential, as estimations by individual base stations (BSs) followed by fusion are consistently inferior and unstable at low SNR. This framework offers a practical guidance for upgrading existing communication infrastructure into dense sensing networks.",
+    "status": "found"
+  },
+  "2511.15199": {
+    "arxiv_id": "2511.15199",
+    "title": "Learning Where, What and How to Transfer: A Multi-Role Reinforcement Learning Approach for Evolutionary Multitasking",
+    "authors": [
+      "Jiajun Zhan",
+      "Zeyuan Ma",
+      "Yue-Jiao Gong",
+      "Kay Chen Tan"
+    ],
+    "submission_date": "2025-11-19T07:38:09Z",
+    "latest_updated": "2025-11-19T07:38:09Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.15199v1"
+    ],
+    "abstract": "Evolutionary multitasking (EMT) algorithms typically require tailored designs for knowledge transfer, in order to assure convergence and optimality in multitask optimization. In this paper, we explore designing a systematic and generalizable knowledge transfer policy through Reinforcement Learning. We first identify three major challenges: determining the task to transfer (where), the knowledge to be transferred (what) and the mechanism for the transfer (how). To address these challenges, we formulate a multi-role RL system where three (groups of) policy networks act as specialized agents: a task routing agent incorporates an attention-based similarity recognition module to determine source-target transfer pairs via attention scores; a knowledge control agent determines the proportion of elite solutions to transfer; and a group of strategy adaptation agents control transfer strength by dynamically controlling hyper-parameters in the underlying EMT framework. Through pre-training all network modules end-to-end over an augmented multitask problem distribution, a generalizable meta-policy is obtained. Comprehensive validation experiments show state-of-the-art performance of our method against representative baselines. Further in-depth analysis not only reveals the rationale behind our proposal but also provide insightful interpretations on what the system have learned.",
+    "status": "found"
+  },
+  "2511.15200": {
+    "arxiv_id": "2511.15200",
+    "title": "VIRAL: Visual Sim-to-Real at Scale for Humanoid Loco-Manipulation",
+    "authors": [
+      "Tairan He",
+      "Zi Wang",
+      "Haoru Xue",
+      "Qingwei Ben",
+      "Zhengyi Luo",
+      "Wenli Xiao",
+      "Ye Yuan",
+      "Xingye Da",
+      "Fernando Castañeda",
+      "Shankar Sastry",
+      "Changliu Liu",
+      "Guanya Shi",
+      "Linxi Fan",
+      "Yuke Zhu"
+    ],
+    "submission_date": "2025-11-19T07:39:29Z",
+    "latest_updated": "2025-11-27T20:54:55Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.15200v1",
+      "2511.15200v2"
+    ],
+    "abstract": "A key barrier to the real-world deployment of humanoid robots is the lack of autonomous loco-manipulation skills. We introduce VIRAL, a visual sim-to-real framework that learns humanoid loco-manipulation entirely in simulation and deploys it zero-shot to real hardware. VIRAL follows a teacher-student design: a privileged RL teacher, operating on full state, learns long-horizon loco-manipulation using a delta action space and reference state initialization. A vision-based student policy is then distilled from the teacher via large-scale simulation with tiled rendering, trained with a mixture of online DAgger and behavior cloning. We find that compute scale is critical: scaling simulation to tens of GPUs (up to 64) makes both teacher and student training reliable, while low-compute regimes often fail. To bridge the sim-to-real gap, VIRAL combines large-scale visual domain randomization over lighting, materials, camera parameters, image quality, and sensor delays--with real-to-sim alignment of the dexterous hands and cameras. Deployed on a Unitree G1 humanoid, the resulting RGB-based policy performs continuous loco-manipulation for up to 54 cycles, generalizing to diverse spatial and appearance variations without any real-world fine-tuning, and approaching expert-level teleoperation performance. Extensive ablations dissect the key design choices required to make RGB-based humanoid loco-manipulation work in practice.",
+    "status": "found"
+  },
+  "2511.15201": {
+    "arxiv_id": "2511.15201",
+    "title": "Towards Unbiased Cross-Modal Representation Learning for Food Image-to-Recipe Retrieval",
+    "authors": [
+      "Qing Wang",
+      "Chong-Wah Ngo",
+      "Ee-Peng Lim"
+    ],
+    "submission_date": "2025-11-19T07:39:53Z",
+    "latest_updated": "2026-01-06T04:15:27Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.15201v1",
+      "2511.15201v2"
+    ],
+    "abstract": "This paper addresses the challenges of learning representations for recipes and food images in the cross-modal retrieval problem. As the relationship between a recipe and its cooked dish is cause-and-effect, treating a recipe as a text source describing the visual appearance of a dish for learning representation, as the existing approaches, will create bias misleading image-and-recipe similarity judgment. Specifically, a food image may not equally capture every detail in a recipe, due to factors such as the cooking process, dish presentation, and image-capturing conditions. The current representation learning tends to capture dominant visual-text alignment while overlooking subtle variations that determine retrieval relevance. In this paper, we model such bias in cross-modal representation learning using causal theory. The causal view of this problem suggests ingredients as one of the confounder sources and a simple backdoor adjustment can alleviate the bias. By causal intervention, we reformulate the conventional model for food-to-recipe retrieval with an additional term to remove the potential bias in similarity judgment. Based on this theory-informed formulation, we empirically prove the oracle performance of retrieval on the Recipe1M dataset to be MedR=1 across the testing data sizes of 1K, 10K, and even 50K. We also propose a plug-and-play neural module, which is essentially a multi-label ingredient classifier for debiasing. New state-of-the-art search performances are reported on the Recipe1M dataset.",
+    "status": "found"
+  },
+  "2511.15202": {
+    "arxiv_id": "2511.15202",
+    "title": "SOLID: a Framework of Synergizing Optimization and LLMs for Intelligent Decision-Making",
+    "authors": [
+      "Yinsheng Wang",
+      "Tario G You",
+      "Léonard Boussioux",
+      "Shan Liu"
+    ],
+    "submission_date": "2025-11-19T07:44:36Z",
+    "latest_updated": "2025-11-19T07:44:36Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.15202v1"
+    ],
+    "abstract": "This paper introduces SOLID (Synergizing Optimization and Large Language Models for Intelligent Decision-Making), a novel framework that integrates mathematical optimization with the contextual capabilities of large language models (LLMs). SOLID facilitates iterative collaboration between optimization and LLMs agents through dual prices and deviation penalties. This interaction improves the quality of the decisions while maintaining modularity and data privacy. The framework retains theoretical convergence guarantees under convexity assumptions, providing insight into the design of LLMs prompt. To evaluate SOLID, we applied it to a stock portfolio investment case with historical prices and financial news as inputs. Empirical results demonstrate convergence under various scenarios and indicate improved annualized returns compared to a baseline optimizer-only method, validating the synergy of the two agents. SOLID offers a promising framework for advancing automated and intelligent decision-making across diverse domains.",
+    "status": "found"
+  },
+  "2511.15203": {
+    "arxiv_id": "2511.15203",
+    "title": "Taxonomy, Evaluation and Exploitation of IPI-Centric LLM Agent Defense Frameworks",
+    "authors": [
+      "Zimo Ji",
+      "Xunguang Wang",
+      "Zongjie Li",
+      "Pingchuan Ma",
+      "Yudong Gao",
+      "Daoyuan Wu",
+      "Xincheng Yan",
+      "Tian Tian",
+      "Shuai Wang"
+    ],
+    "submission_date": "2025-11-19T07:47:30Z",
+    "latest_updated": "2025-11-19T07:47:30Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.15203v1"
+    ],
+    "abstract": "Large Language Model (LLM)-based agents with function-calling capabilities are increasingly deployed, but remain vulnerable to Indirect Prompt Injection (IPI) attacks that hijack their tool calls. In response, numerous IPI-centric defense frameworks have emerged. However, these defenses are fragmented, lacking a unified taxonomy and comprehensive evaluation. In this Systematization of Knowledge (SoK), we present the first comprehensive analysis of IPI-centric defense frameworks. We introduce a comprehensive taxonomy of these defenses, classifying them along five dimensions. We then thoroughly assess the security and usability of representative defense frameworks. Through analysis of defensive failures in the assessment, we identify six root causes of defense circumvention. Based on these findings, we design three novel adaptive attacks that significantly improve attack success rates targeting specific frameworks, demonstrating the severity of the flaws in these defenses. Our paper provides a foundation and critical insights for the future development of more secure and usable IPI-centric agent defense frameworks.",
+    "status": "found"
+  },
+  "2511.15204": {
+    "arxiv_id": "2511.15204",
+    "title": "Physics-Based Benchmarking Metrics for Multimodal Synthetic Images",
+    "authors": [
+      "Kishor Datta Gupta",
+      "Marufa Kamal",
+      "Md. Mahfuzur Rahman",
+      "Fahad Rahman",
+      "Mohd Ariful Haque",
+      "Sunzida Siddique"
+    ],
+    "submission_date": "2025-11-19T07:52:20Z",
+    "latest_updated": "2026-05-08T07:59:26Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2511.15204v1",
+      "2511.15204v2",
+      "2511.15204v3"
+    ],
+    "abstract": "Current state of the art measures like BLEU, CIDEr, VQA score, SigLIP-2 and CLIPScore are often unable to capture semantic or structural accuracy, especially for domain-specific or context-dependent scenarios. For this, this paper proposes a Physics-Constrained Multimodal Data Evaluation (PCMDE) metric combining large language models with reasoning, knowledge based mapping and vision-language models to overcome these limitations. The architecture is comprised of three main stages: (1) feature extraction of spatial and semantic information with multimodal features through object detection and VLMs; (2) Confidence-Weighted Component Fusion for adaptive component-level validation; and (3) physics-guided reasoning using large language models for structural and relational constraints (e.g., alignment, position, consistency) enforcement.",
+    "status": "found"
+  },
+  "2511.15205": {
+    "arxiv_id": "2511.15205",
+    "title": "The first Steklov eigenvalue bound for graphs of positive genus",
+    "authors": [
+      "Lixiang Chen",
+      "Yongtang Shi",
+      "Liwen Zhang"
+    ],
+    "submission_date": "2025-11-19T07:56:32Z",
+    "latest_updated": "2025-11-19T07:56:32Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.15205v1"
+    ],
+    "abstract": "Let $G$ be a graph of genus $g$ with boundary $δΩ$. For $g=0$, Lin and Zhao [J. Lond. Math. Soc. 112 (2025), Paper No. e70238] proved an upper bound for the first (non-trivial) Steklov eigenvalue of $(G, δΩ)$, and they posed the problem of determining a corresponding bound for graphs of genus $g>0$. In this paper, we prove an $O\\left(\\frac{g}{|δΩ|}\\right)$ bound for a bounded-degree graph of positive genus $g$. Our result can be regarded as a discrete analogue of Kokarev's bound [Adv. Math. 258 (2014), 191-239], up to a constant factor.",
+    "status": "found"
+  },
+  "2511.15206": {
+    "arxiv_id": "2511.15206",
+    "title": "Trustworthy GenAI over 6G: Integrated Applications and Security Frameworks",
+    "authors": [
+      "Bui Duc Son",
+      "Trinh Van Chien",
+      "Dong In Kim"
+    ],
+    "submission_date": "2025-11-19T07:58:06Z",
+    "latest_updated": "2025-11-19T07:58:06Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.15206v1"
+    ],
+    "abstract": "The integration of generative artificial intelligence (GenAI) into 6G networks promises substantial performance gains while simultaneously exposing novel security vulnerabilities rooted in multimodal data processing and autonomous reasoning. This article presents a unified perspective on cross-domain vulnerabilities that arise across integrated sensing and communication (ISAC), federated learning (FL), digital twins (DTs), diffusion models (DMs), and large telecommunication models (LTMs). We highlight emerging adversarial agents such as compromised DTs and LTMs that can manipulate both the physical and cognitive layers of 6G systems. To address these risks, we propose an adaptive evolutionary defense (AED) concept that continuously co-evolves with attacks through GenAI-driven simulation and feedback, combining physical-layer protection, secure learning pipelines, and cognitive-layer resilience. A case study using an LLM-based port prediction model for fluid-antenna systems demonstrates the susceptibility of GenAI modules to adversarial perturbations and the effectiveness of the proposed defense concept. Finally, we summarize open challenges and future research directions toward building trustworthy, quantum-resilient, and adaptive GenAI-enabled 6G networks.",
+    "status": "found"
+  },
+  "2511.15207": {
+    "arxiv_id": "2511.15207",
+    "title": "Generalized Repetition Codes and Their Application to HARQ",
+    "authors": [
+      "Chaofeng Guan",
+      "Gaojun Luo",
+      "Lan Luo",
+      "Yangyang Fei",
+      "Hong Wang"
+    ],
+    "submission_date": "2025-11-19T07:59:03Z",
+    "latest_updated": "2025-11-19T07:59:03Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.15207v1"
+    ],
+    "abstract": "The inherent uncertainty of communication channels implies that any coding scheme has a non-zero probability of failing to correct errors, making retransmission mechanisms essential. To ensure message reliability and integrity, a dual-layer redundancy framework is typically employed: error correction codes mitigate noise-induced impairments at the physical layer, while cyclic redundancy checks verify message integrity after decoding. Retransmission is initiated if verification fails. This operational model can be categorized into two types of repeated communication models: Type-I systems repeatedly transmit identical codewords, whereas Type-II systems transmit distinct coded representations of the same message. The core challenge lies in maximizing the probability of correct message decoding within a limited number of transmission rounds through verification-based feedback mechanisms. In this paper, we consider a scenario where the same error-correcting code is used for repeated transmissions, and we specifically propose two classes of generalized repetition codes (GRCs), corresponding to the two repeated communication models. In contrast to classical theory, we regard GRCs as error-correcting codes under multiple metrics--that is, GRCs possess multiple minimum distances. This design enables GRCs to perform multi-round error correction under different metrics, achieving stronger error-correction capabilities than classical error-correcting codes. However, the special structure of GRCs makes their construction more challenging, as it requires simultaneously optimizing multiple minimum distances. To address this, we separately investigate the bounds and constructions for Type-I and Type-II GRCs, and obtain numerous optimal Type-I and Type-II GRCs.",
+    "status": "found"
+  },
+  "2511.15208": {
+    "arxiv_id": "2511.15208",
+    "title": "Reasoning in Diffusion Large Language Models is Concentrated in Dynamic Confusion Zones",
+    "authors": [
+      "Ranfei Chen",
+      "Ming Chen",
+      "Kaifei Wang"
+    ],
+    "submission_date": "2025-11-19T07:59:34Z",
+    "latest_updated": "2025-11-19T07:59:34Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.15208v1"
+    ],
+    "abstract": "Diffusion Large Language Models (dLLMs) are rapidly emerging alongside autoregressive models as a powerful paradigm for complex reasoning, with reinforcement learning increasingly used for downstream alignment. Existing trajectory-based RL methods uniformly allocate policy gradients across denoising steps, implicitly treating all steps as equally important. We challenge this assumption by analyzing trajectories with several step-level metrics: entropy-based uncertainty, Confidence-Margin (CM) uncertainty, and Rate of Entropy Change (RoEC). These reveal structured \"zones of confusion\": transient spikes in uncertainty and instability that strongly predict final success or failure, while most steps remain stable. We propose Adaptive Trajectory Policy Optimization (ATPO), a lightweight step-selection strategy that dynamically reallocates gradient updates to these high-leverage steps without changing the RL objective, rewards, or compute budget. Using a hybrid RoEC+CM rule, ATPO delivers substantial gains in reasoning accuracy and training stability across benchmarks, showing that exploiting trajectory dynamics is key to advancing dLLM RL.",
+    "status": "found"
+  }
+}

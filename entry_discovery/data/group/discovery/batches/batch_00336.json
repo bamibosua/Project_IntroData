@@ -1,0 +1,413 @@
+{
+  "2601.19876": {
+    "arxiv_id": "2601.19876",
+    "title": "Real-Time Pulsatile Flow Prediction for Realistic, Diverse Intracranial Aneurysm Morphologies using a Graph Transformer and Steady-Flow Data Augmentation",
+    "authors": [
+      "Yiying Sheng",
+      "Wenhao Ding",
+      "Dylan Roi",
+      "Leonard Leong Litt Yeo",
+      "Hwa Liang Leo",
+      "Choon Hwai Yap"
+    ],
+    "submission_date": "2026-01-27T18:39:58Z",
+    "latest_updated": "2026-01-29T10:00:17Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.19876v1",
+      "2601.19876v2"
+    ],
+    "abstract": "Extensive studies suggested that fluid mechanical markers of intracranial aneurysms (IAs) derived from Computational Fluid Dynamics (CFD) can indicate disease progression risks, but to date this has not been translated clinically. This is because CFD requires specialized expertise and is time-consuming and low throughput, making it difficult to support clinical trials. A deep learning model that maps IA morphology to biomechanical markers can address this, enabling physicians to obtain these markers in real time without performing CFD. Here, we show that a Graph Transformer model that incorporates temporal information, which is supervised by large CFD data, can accurately predict Wall Shear Stress (WSS) across the cardiac cycle from IA surface meshes. The model effectively captures the temporal variations of the WSS pattern, achieving a Structural Similarity Index (SSIM) of up to 0.981 and a maximum-based relative L2 error of 2.8%. Ablation studies and SOTA comparison confirmed its optimality. Further, as pulsatile CFD data is computationally expensive to generate and sample sizes are limited, we engaged a strategy of injecting a large amount of steady-state CFD data, which are extremely low-cost to generate, as augmentation. This approach enhances network performance substantially when pulsatile CFD data sample size is small. Our study provides a proof of concept that temporal sequences cardiovascular fluid mechanical parameters can be computed in real time using a deep learning model from the geometric mesh, and this is achievable even with small pulsatile CFD sample size. Our approach is likely applicable to other cardiovascular scenarios.",
+    "status": "found"
+  },
+  "2601.19877": {
+    "arxiv_id": "2601.19877",
+    "title": "An Energy-Preserving Domain of Dependence Stabilization for the Linear Wave Equation on Cut-Cell Meshes",
+    "authors": [
+      "Gunnar Birke",
+      "Christian Engwer",
+      "Sandra May",
+      "Louis Petri",
+      "Hendrik Ranocha"
+    ],
+    "submission_date": "2026-01-27T18:40:32Z",
+    "latest_updated": "2026-01-27T18:40:32Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19877v1"
+    ],
+    "abstract": "We present an energy-preserving (either energy-conservative or energy-dissipative) domain of dependence stabilization method for the linear wave equation on cut-cell meshes. Our scheme is based on a standard discontinuous Galerkin discretization in space and an explicit (strong stability preserving) Runge Kutta method in time. Tailored stabilization terms allow for selecting the time step length based on the size of the background cells rather than the small cut cells by propagating information across small cut cells. The stabilization terms preserve the energy stability or energy conservation property of the underlying discontinuous Galerkin space discretization. Numerical results display the high accuracy and stability properties of our scheme.",
+    "status": "found"
+  },
+  "2601.19878": {
+    "arxiv_id": "2601.19878",
+    "title": "Symmetric polynomials: DIM integrable systems versus twisted Cherednik systems",
+    "authors": [
+      "A. Mironov",
+      "A. Morozov",
+      "A. Popolitov"
+    ],
+    "submission_date": "2026-01-27T18:42:33Z",
+    "latest_updated": "2026-04-29T06:02:31Z",
+    "revised_dates": null,
+    "venue": "Phys. Lett. B877 (2026) 140457",
+    "latest_version": 2,
+    "versions": [
+      "2601.19878v1",
+      "2601.19878v2"
+    ],
+    "abstract": "We discuss interrelations between eigenfunctions of the Hamiltonians associated with the commutative (integer ray) subalgebras of the Ding-Iohara-Miki algebra and those of the twisted Cherednik system. In the case of $t=q^{-m}$ with natural $m$, eigenfunctions of the first system of Hamiltonians are the twisted Baker-Akhiezer functions (BAFs) introduced by O. Chalykh, while eigenfunctions of the twisted Cherednik Hamiltonians are twisted non-symmetric Macdonald polynomials. Actually, the twisted Cherednik ground state is symmetric and coincides with a peculiar symmetric BAF. We lift this correspondence to excited states, and claim that both Cherednik eigenfunctions and BAF's can be combined to produce symmetric functions, which coincide with each other and are eigenfunctions of the both DIM Hamiltonians and power sums of the twisted Cherednik Hamiltonians at once. This reflects the correspondence between the DIM algebra and the spherical DAHA explicitly.",
+    "status": "found"
+  },
+  "2601.19879": {
+    "arxiv_id": "2601.19879",
+    "title": "Large point-line matchings and small Nikodym sets",
+    "authors": [
+      "Zach Hunter",
+      "Cosmin Pohoata",
+      "Jacques Verstraete",
+      "Shengtong Zhang"
+    ],
+    "submission_date": "2026-01-27T18:45:09Z",
+    "latest_updated": "2026-01-27T18:45:09Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19879v1"
+    ],
+    "abstract": "For any integer $d \\geq 2$ and prime power $q$, we construct unexpectedly large induced matchings in the point-line incidence graph of $\\mathbb{F}_{q}^{d}$ by leveraging a new connection with the Furstenberg-Sárközy problem from arithmetic combinatorics. In particular, we significantly improve the previously well-known baselines when $q$ is prime, showing that $\\mathbb{F}_{q}^{2}$ contains matchings of size $q^{1.233}$ and $\\mathbb{F}_{q}^{d}$ contains matchings of size $q^{d-o_{d}(1)}$. These results and their proofs have several applications. First, we also obtain new constructions for finite field Nikodym sets in dimension $d \\geq 2$, improving recent results of Tao by polynomial factors. For example, when $q$ is prime, we show the existence of Nikodym sets in $\\mathbb{F}_q^d$ of size $q^d - q^{d - o_d(1)}$. Second, we construct a new minimal blocking set in $\\mathrm{PG}(2,q)$, solving a longstanding problem in finite geometry. Third, we obtain new constructions for the minimal distance problem (in $\\mathbb{R}^{2}$ and also in higher dimensions), improving a recent result of Logunov-Zakharov. We also obtain analogous results for general finite fields with large characteristics. In particular, in one of our constructions we introduce a new special set of points inside the norm hypersurface in $\\mathbb{F}_{q}^{d}$, which directly generalizes the classical Hermitian unital and which may be of independent interest for applications.",
+    "status": "found"
+  },
+  "2601.19880": {
+    "arxiv_id": "2601.19880",
+    "title": "Mobility-as-a-service (MaaS) system as a multi-leader-multi-follower game: A single-level variational inequality (VI) formulation",
+    "authors": [
+      "Rui Yao",
+      "Xinyu Ma",
+      "Kenan Zhang"
+    ],
+    "submission_date": "2026-01-27T18:47:55Z",
+    "latest_updated": "2026-01-27T18:47:55Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19880v1"
+    ],
+    "abstract": "This study models a Mobility-as-a-Service (MaaS) system as a multi-leader-multi-follower game that captures the complex interactions among the MaaS platform, service operators, and travelers. We consider a coopetitive setting where the MaaS platform purchases service capacity from service operators and sells multi-modal trips to travelers following an origin-destination-based pricing scheme; meanwhile, service operators use their remaining capacities to serve single-modal trips. As followers, travelers make both mode choices, including whether to use MaaS, and route choices in the multi-modal transportation network, subject to prices and congestion. Inspired by the dual formulation for traffic assignment problems, we propose a novel single-level variational inequality (VI) formulation by introducing a virtual traffic operator, along with the MaaS platform and multiple service operators. A key advantage of the proposed VI formulation is that it supports parallel solution procedures and thus enables large-scale applications. We prove that an equilibrium solution always exists given the negotiated wholesale price of service capacity. Numerical experiments on a small network further demonstrate that the wholesale price can be tailored to align with varying system-wide objectives. The proposed MaaS system demonstrates potential for creating a \"win-win-win\" outcome -- service operators and travelers are better off compared to the \"without MaaS\" scenario, meanwhile the MaaS platform remains profitable. Such a Pareto-improving regime can be explicitly specified with the wholesale capacity price. Similar conclusions are drawn from the experiment of an extended multi-modal Sioux Falls network, which also validates the scalability of the proposed model and solution algorithm.",
+    "status": "found"
+  },
+  "2601.19881": {
+    "arxiv_id": "2601.19881",
+    "title": "On semigroups which admit only discrete left-continuous Hausdorff topology",
+    "authors": [
+      "Oleg Gutik"
+    ],
+    "submission_date": "2026-01-27T18:49:04Z",
+    "latest_updated": "2026-01-27T18:49:04Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19881v1"
+    ],
+    "abstract": "We give the sufficient condition when every left-continuous (right-continuous) Hausdorff topology on a semigroup $S$ is discrete. We construct a submonoid $\\mathscr{C}_{+}(a,b)$ (resp., $\\mathscr{C}_{-}(a,b)$) of the bicyclic monoid which contains a family $\\{S_α\\colon α\\in\\mathfrak{c}\\}$ of continuum many subsemigroups with the following properties: $(i)$ every left-continuous (resp., right-continuous) Hausdorff topology on $S_α$ is discrete; $(ii)$ every semigroup $S_α$ admits a non-discrete right-continuous (resp., left-continuous) Hausdorff topology which is not left-continuous (resp., right-continuous); $(iii)$ every semigroup $S_α$ isomorphically embeds into a Hausdorff compact topological semigroup. Also we construct a submonoid $\\mathscr{C}_{\\mathbb{Z}}^+$ (resp., $\\mathscr{C}_{\\mathbb{Z}}^-$) of the extended bicyclic semigroup which contains a family $\\{S_α\\colon α\\in\\mathfrak{c}\\}$ of continuum many subsemigroups with the above described properties.",
+    "status": "found"
+  },
+  "2601.19882": {
+    "arxiv_id": "2601.19882",
+    "title": "Magnetization Plateaus in the Spin-Orbit Coupled Bilayer Triangular Lattice Antiferromagnet Rb2Co2(SeO3)3",
+    "authors": [
+      "Shengzhi Zhang",
+      "Gabriel Silva Freitas",
+      "Vivien S. Zapf",
+      "Minseong Lee",
+      "Wonjune Choi",
+      "Shi-Zeng Lin",
+      "Tong Chen",
+      "Collin Broholm",
+      "Xianghan Xu",
+      "Robert J. Cava",
+      "Eun Sang Choi"
+    ],
+    "submission_date": "2026-01-27T18:49:16Z",
+    "latest_updated": "2026-01-27T18:49:16Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19882v1"
+    ],
+    "abstract": "Geometric frustration among competing spin exchanges can give rise to novel quantum phases by enhancing fluctuations that drive magnetic systems beyond the classical regime. We investigate the frustrated array of strongly correlated spin dimers in the bilayer triangular lattice antiferromagnet \\rcs{} under applied magnetic fields. A cascade of magnetization plateaus appears at \\(M/M_s = 1/3, 1/2, 2/3,\\) and \\(5/6\\), together with a weak anomalous feature near \\(M/M_s = 1/6\\), in fields up to 60 T. Concurrent changes in magneto-dielectric response follows the plateau boundaries. The finite slope of each plateau and the absence of a zero-field gap in our ultralow-temperature ac susceptibility down to 20 mK indicate broken \\(U(1)\\) spin-rotation symmetry. A minimal bilayer-dimer model treated with bond operator representation reproduces the low-field sequence only when \\(U(1)\\) symmetry is explicitly lifted by spin-orbit-driven, bond-dependent anisotropy. Near saturation, a projected triangular pseudospin model accounts for the high-field plateaus with modest further-neighbor interactions. These results demonstrate that anisotropic exchange arising from spin-orbit-coupled moments is essential for stabilizing the full plateau hierarchy in \\rcs{}, a mechanism overlooked in previous interpretations of Co-based triangular bilayers.",
+    "status": "found"
+  },
+  "2601.19883": {
+    "arxiv_id": "2601.19883",
+    "title": "Comprehensive effective field theory framework for coherent elastic neutrino-nucleus scattering",
+    "authors": [
+      "Gang Li",
+      "Chuan-Qiang Song",
+      "Feng-Jie Tang",
+      "Jiang-Hao Yu"
+    ],
+    "submission_date": "2026-01-27T18:50:50Z",
+    "latest_updated": "2026-09-21T15:29:46Z",
+    "revised_dates": null,
+    "venue": "Phys.Rev.D 114 (2026) 5, 055032",
+    "latest_version": 2,
+    "versions": [
+      "2601.19883v1",
+      "2601.19883v2"
+    ],
+    "abstract": "Coherent elastic neutrino-nucleus scattering (CE$ν$NS) stands out as a pivotal process for precision tests of the Standard Model electroweak sector, investigations of neutrino properties, and searches for new physics. Recent experimental measurements by COHERENT, CONUS+, and ton-scale xenon detectors--including PandaX-4T and XENONnT--underscore the need for a systematic theoretical framework to bridge high-energy physics scenarios with low-energy observational data. In this work, we develop a comprehensive end-to-end effective field theory (EFT) framework for CE$ν$NS, encompassing the complete energy scale hierarchy spanning the ultraviolet regime down to the nuclear sector. We consider the low-energy EFT (LEFT) operators up to dimension 8, incorporating their QCD renormalization group running effects, and employ the systematic spurion method to achieve matching between these operators and the chiral Lagrangian. A full power counting analysis is performed, extending to nuclear response functions, which evaluates contributions from LEFT operators up to dimension 8 while accounting for the nucleon number enhancement effect intrinsic to CE$ν$NS. Moreover, we match the relevant LEFT operators for CE$ν$NS onto operators up to dimension 8 within the Standard Model EFT. By also providing their complete tree-level ultraviolet completions, this procedure establishes a consistent top-down theoretical workflow. Leveraging a broad suite of CE$ν$NS experimental data, this framework enables a combined analysis to extract constraints on the scales of EFT operators and neutrino non-standard interaction parameters.",
+    "status": "found"
+  },
+  "2601.19884": {
+    "arxiv_id": "2601.19884",
+    "title": "SONIC: Spectral Oriented Neural Invariant Convolutions",
+    "authors": [
+      "Gijs Joppe Moens",
+      "Regina Beets-Tan",
+      "Eduardo H. P. Pooch"
+    ],
+    "submission_date": "2026-01-27T18:51:11Z",
+    "latest_updated": "2026-01-27T18:51:11Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19884v1"
+    ],
+    "abstract": "Convolutional Neural Networks (CNNs) rely on fixed-size kernels scanning local patches, which limits their ability to capture global context or long-range dependencies without very deep architectures. Vision Transformers (ViTs), in turn, provide global connectivity but lack spatial inductive bias, depend on explicit positional encodings, and remain tied to the initial patch size. Bridging these limitations requires a representation that is both structured and global. We introduce SONIC (Spectral Oriented Neural Invariant Convolutions), a continuous spectral parameterisation that models convolutional operators using a small set of shared, orientation-selective components. These components define smooth responses across the full frequency domain, yielding global receptive fields and filters that adapt naturally across resolutions. Across synthetic benchmarks, large-scale image classification, and 3D medical datasets, SONIC shows improved robustness to geometric transformations, noise, and resolution shifts, and matches or exceeds convolutional, attention-based, and prior spectral architectures with an order of magnitude fewer parameters. These results demonstrate that continuous, orientation-aware spectral parameterisations provide a principled and scalable alternative to conventional spatial and spectral operators.",
+    "status": "found"
+  },
+  "2601.19885": {
+    "arxiv_id": "2601.19885",
+    "title": "Extremal F-thresholds in regular local rings",
+    "authors": [
+      "Benjamin Baily"
+    ],
+    "submission_date": "2026-01-27T18:52:56Z",
+    "latest_updated": "2026-01-27T18:52:56Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19885v1"
+    ],
+    "abstract": "Let $(R, \\mathfrak{m})$ be a regular local ring of characteristic $p > 0$. Among all proper ideals $\\mathfrak{a}\\subseteq R$ with a fixed order of vanishing $\\text{ord}_{\\mathfrak{m}}(\\mathfrak{a})$, we classify the ideals for which the $F$-threshold $\\text{ft}^{\\mathfrak{m}}(\\mathfrak{a})$ is minimal.",
+    "status": "found"
+  },
+  "2601.19886": {
+    "arxiv_id": "2601.19886",
+    "title": "AI Cap-and-Trade: Efficiency Incentives for Accessibility and Sustainability",
+    "authors": [
+      "Marco Bornstein",
+      "Amrit Singh Bedi"
+    ],
+    "submission_date": "2026-01-27T18:53:21Z",
+    "latest_updated": "2026-05-07T17:38:59Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.19886v1",
+      "2601.19886v2"
+    ],
+    "abstract": "The race for artificial intelligence (AI) dominance often prioritizes scale over efficiency. Hyper-scaling is the common industry approach: larger models, more data, and as many computational resources as possible. Using more resources is a simpler path to improved AI performance. Thus, efficiency has been de-emphasized. Consequently, the need for costly computational resources has marginalized academics and smaller companies. Simultaneously, increased energy expenditure, due to growing AI use, has led to mounting environmental costs. In response to accessibility and sustainability concerns, we argue for research into, and implementation of, market-based methods that incentivize AI efficiency. We believe that incentivizing efficient operations and approaches will reduce emissions while opening new opportunities for academics and smaller companies. As a call to action, we propose a cap-and-trade system for AI. Our system provably reduces computations for AI deployment, thereby lowering emissions and monetizing efficiency to the benefit of academics and smaller companies.",
+    "status": "found"
+  },
+  "2601.19887": {
+    "arxiv_id": "2601.19887",
+    "title": "VGGT-SLAM 2.0: Real-time Dense Feed-forward Scene Reconstruction",
+    "authors": [
+      "Dominic Maggio",
+      "Luca Carlone"
+    ],
+    "submission_date": "2026-01-27T18:54:29Z",
+    "latest_updated": "2026-01-30T20:16:50Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.19887v1",
+      "2601.19887v2"
+    ],
+    "abstract": "We present VGGT-SLAM 2.0, a real-time RGB feed-forward SLAM system which substantially improves upon VGGT-SLAM for incrementally aligning submaps created from VGGT. Firstly, we remove high-dimensional 15-degree-of-freedom drift and planar degeneracy from VGGT-SLAM by creating a new factor graph design while still addressing the reconstruction ambiguity of VGGT given unknown camera intrinsics. Secondly, by studying the attention layers of VGGT, we show that one of the layers is well suited to assist in image retrieval verification for free without additional training, which enables both rejecting false positive matches and allows for completing more loop closures. Finally, we conduct a suite of experiments which includes showing VGGT-SLAM 2.0 can easily be adapted for open-set object detection and demonstrating real-time performance while running online onboard a ground robot using a Jetson Thor. We test in environments ranging from cluttered indoor apartments and office scenes to a 4,200 square foot barn, and we also demonstrate VGGT-SLAM 2.0 achieves the highest accuracy on the TUM dataset with about 23 percent less pose error than VGGT-SLAM. Code will be released upon publication.",
+    "status": "found"
+  },
+  "2601.19888": {
+    "arxiv_id": "2601.19888",
+    "title": "M-SGWR: Multiscale Similarity and Geographically Weighted Regression",
+    "authors": [
+      "M. Naser Lessani",
+      "Zhenlong Li",
+      "Manzhu Yu",
+      "Helen Greatrex",
+      "Chan Shen"
+    ],
+    "submission_date": "2026-01-27T18:55:12Z",
+    "latest_updated": "2026-01-30T13:46:45Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.19888v1",
+      "2601.19888v2"
+    ],
+    "abstract": "The first law of geography is a cornerstone of spatial analysis, emphasizing that nearby and related locations tend to be more similar, however, defining what constitutes \"near\" and \"related\" remains challenging, as different phenomena exhibit distinct spatial patterns. Traditional local regression models, such as Geographically Weighted Regression (GWR) and Multiscale GWR (MGWR), quantify spatial relationships solely through geographic proximity. In an era of globalization and digital connectivity, however, geographic proximity alone may be insufficient to capture how locations are interconnected. To address this limitation, we propose a new multiscale local regression framework, termed M-SGWR, which characterizes spatial interaction across two dimensions: geographic proximity and attribute (variable) similarity. For each predictor, geographic and attribute-based weight matrices are constructed separately and then combined using an optimized parameter, alpha, which governs their relative contribution to local model fitting. Analogous to variable-specific bandwidths in MGWR, the optimal alpha varies by predictor, allowing the model to flexibly account for geographic, mixed, or non-spatial (remote similarity) effects. Results from two simulation experiments and one empirical application demonstrate that M-SGWR consistently outperforms GWR, SGWR, and MGWR across all goodness-of-fit metrics.",
+    "status": "found"
+  },
+  "2601.19889": {
+    "arxiv_id": "2601.19889",
+    "title": "Distinguishing synthetic unravelings on quantum computers",
+    "authors": [
+      "Eloy Piñol",
+      "Piotr Sierant",
+      "Dustin Keys",
+      "Romain Veyron",
+      "Miguel Angel García-March",
+      "Tanner Reese",
+      "Morgan W. Mitchell",
+      "Jan Wehr",
+      "Maciej Lewenstein"
+    ],
+    "submission_date": "2026-01-27T18:56:38Z",
+    "latest_updated": "2026-01-27T18:56:38Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19889v1"
+    ],
+    "abstract": "Distinct monitoring or intervention schemes can produce different conditioned stochastic quantum trajectories while sharing the same unconditional (ensemble-averaged) dynamics. This is the essence of unravelings of a given Gorini-Kossakowski-Sudarshan-Lindblad (GKSL) master equation: any trajectory-ensemble average of a function that is linear in the conditional state is completely determined by the unconditional density matrix, whereas applying a nonlinear function before averaging can yield unraveling-dependent results beyond the average evolution. A paradigmatic example is resonance fluorescence, where direct photodetection (jump/Poisson) and homodyne or heterodyne detection (diffusive/Wiener) define inequivalent unravelings of the same GKSL dynamics. In earlier work, we showed that nonlinear trajectory averages can distinguish such unravelings, but observing the effect in that optical setting requires demanding experimental precision. Here we translate the same idea to a digital setting by introducing synthetic unravelings implemented as quantum circuits acting on one and two qubits. We design two unravelings - a projective measurement unraveling and a random-unitary \"kick\" unraveling - that share the same ensemble-averaged evolution while yielding different nonlinear conditional-state statistics. We implement the protocols on superconducting-qubit hardware provided by IBM Quantum to access trajectory-level information. We show that the variance across trajectories and the ensemble-averaged von Neumann entropy distinguish the unravelings in both theory and experiment, while the unconditional state and the ensemble-averaged expectation values that are linear in the state remain identical. Our results provide an accessible demonstration that quantum trajectories encode information about measurement backaction beyond what is fixed by the unconditional dynamics.",
+    "status": "found"
+  },
+  "2601.19890": {
+    "arxiv_id": "2601.19890",
+    "title": "Detecting Solenoidal Plasma Turbulence via Laser Polarization Rotation",
+    "authors": [
+      "Kenan Qu",
+      "Nathaniel J. Fisch"
+    ],
+    "submission_date": "2026-01-27T18:57:18Z",
+    "latest_updated": "2026-05-04T16:50:40Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.19890v1",
+      "2601.19890v2"
+    ],
+    "abstract": "Recent theoretical studies suggest that solenoidal turbulence can significantly enhance fusion reactivity, yet no standard diagnostic exists to directly measure these solenoidal flows in high-energy-density plasmas, nor to distinguish between solenoidal and compressional turbulence. We propose a method that directly diagnoses the energy and spatial structure of this rotational turbulence using the cross-polarization scattering of a probe laser. By coupling to the plasma vorticity, the scattering generates a cross-polarized signal proportional to the turbulent vorticity, effectively acting as a calorimeter for shear flows. We identify a diffractive scattering signature analogous to ``Debye-Scherrer ring'' that reveals the eddy size distribution. We show that this technique is applicable to National Ignition Facility (NIF) implosion conditions and other high-energy-density scenarios.",
+    "status": "found"
+  },
+  "2601.19891": {
+    "arxiv_id": "2601.19891",
+    "title": "Fading Echoes of Interaction: Probing Centuries of Preexplosion Mass-Loss in Four Type IIn Supernovae",
+    "authors": [
+      "Elizabeth Hillenkamp",
+      "Raphael Baer-Way",
+      "Poonam Chandra",
+      "Arkaprabha Sarangi",
+      "Roger Chevalier",
+      "Nayana A. J.",
+      "Annika Deutsch",
+      "Keiichi Maeda",
+      "Nathan Smith"
+    ],
+    "submission_date": "2026-01-27T18:57:30Z",
+    "latest_updated": "2026-04-23T17:53:00Z",
+    "revised_dates": null,
+    "venue": "The Astrophysical Journal, vol. 1001, no. 1, Art. no. 111, IOP, 2026",
+    "latest_version": 2,
+    "versions": [
+      "2601.19891v1",
+      "2601.19891v2"
+    ],
+    "abstract": "Supernovae characterized by enduring narrow optical hydrogen emission lines (SNe IIn) are believed to result primarily from the core-collapse of massive stars undergoing sustained interaction with a dense circumstellar medium (CSM). While the properties of SN IIn progenitors have relatively few direct constraints, the ongoing ejecta-CSM interaction provides unique information about late-stage stellar mass-loss preceding core-collapse. We present late-time X-ray and radio observations of four $\\geq$3000 day-old SNe IIn: SN 2013L, SN 2014ab, SN 2015da, and KISS15s. The radio and X-ray emission from KISS15s indicate a mass-loss rate of \\eq{\\dot M\\sim4\\times 10^{-3}~\\rm{M_{\\odot}\\,yr^{-1}}} at $\\sim$450 years pre-supernova -- 2 orders of magnitude below earlier optical estimates (which probed the mass loss immediately preceding the supernova). We find hints of a spectral inversion in the radio SED of KISS15s; a possible signature of a secondary shock due to a binary system or the emergence of a pulsar wind. For SN 2013L, we obtain a mass-loss rate of \\eq{\\dot M\\sim2 \\times 10^{-3}~\\rm{M_{\\odot}\\,yr^{-1}}} at $\\sim$400 years pre-explosion based on the X-ray detection. For SN 2014ab and SN 2015da, we find a upper limits on the mass-loss rates of \\eq{\\dot M<2\\times10^{-3}~M_{\\sun}\\,yr^{-1}} explosion at $\\sim$300 and 250 years pre-explosion, respectively. All four objects display mass-loss rates lower than estimates from earlier optical analyses by at least 1-2 orders of magnitude, necessitating a rapidly evolving progenitor process over the last centuries pre-explosion. Our analysis reveals how X-ray and radio observations can elucidate progenitor evolution when these objects have faded at optical wavelengths.",
+    "status": "found"
+  },
+  "2601.19892": {
+    "arxiv_id": "2601.19892",
+    "title": "Effective interactions in active Brownian particles",
+    "authors": [
+      "Clare R. Rees-Zimmerman",
+      "C. Miguel Barriuso Gutierrez",
+      "Chantal Valeriani",
+      "Dirk G. A. L. Aarts"
+    ],
+    "submission_date": "2026-01-27T18:57:42Z",
+    "latest_updated": "2026-01-27T18:57:42Z",
+    "revised_dates": null,
+    "venue": "Soft Matter, 2026, 22, 803-813",
+    "latest_version": 1,
+    "versions": [
+      "2601.19892v1"
+    ],
+    "abstract": "We report an approach to obtain effective pair potentials which describe the structure of two-dimensional systems of active Brownian particles. The pair potential is found by an inverse method, which matches the radial distribution function found from two different schemes. The inverse method, previously demonstrated via simulated equilibrium configurations of passive particles, has now been applied to a suspension of active particles. Interestingly, although active particles are inherently not in equilibrium, we still obtain effective interaction potentials which accurately describe the structure of the active system. Treating these effective potentials as if they were those of equilibrium systems, furthermore allows us to measure effective chemical potentials and pressures. Both the passive interactions and active motion of the active Brownian particles contribute to their effective interaction potentials.",
+    "status": "found"
+  },
+  "2601.19893": {
+    "arxiv_id": "2601.19893",
+    "title": "Enabling SSI-Compliant Use of EUDI Wallet Credentials through Trusted Execution Environment and Zero-Knowledge Proof",
+    "authors": [
+      "Nacereddine Sitouah",
+      "Francesco Bruschi",
+      "Stefano De Cillis"
+    ],
+    "submission_date": "2026-01-27T18:58:16Z",
+    "latest_updated": "2026-01-27T18:58:16Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19893v1"
+    ],
+    "abstract": "The passing of the eIDAS amendment marks an important milestone for EU countries and changes how they must manage digital credentials for both public services and businesses. Italy has led in adopting eIDAS, first with CIE and SPID identity schemes, and now with the Italian Wallet (IO app) aligned to eIDAS 2.0. Self-Sovereign Identity (SSI) is a decentralized model born from the success of Distributed Ledgers, giving individuals full control over their digital identity. The current eIDAS 2.0 and its implementation acts diverge from SSI principles, rendering the European Digital Identity Wallet (EUDIW) centralized and merely user-centric, prioritizing security and legal protection over true self-sovereignty. This paper proposes an architecture that enables the use of IT Wallet credentials and services in an SSI-compliant environment through Trusted Execution Environments and Zero-Knowledge Proofs.",
+    "status": "found"
+  },
+  "2601.19894": {
+    "arxiv_id": "2601.19894",
+    "title": "Anomalous transport in non-integrable classical field theories",
+    "authors": [
+      "Matija Koterle",
+      "Tomaz Prosen",
+      "Tianci Zhou"
+    ],
+    "submission_date": "2026-01-27T18:58:18Z",
+    "latest_updated": "2026-01-27T18:58:18Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19894v1"
+    ],
+    "abstract": "Anomalous KPZ spin transport is well established in integrable non-Abelian lattice models but has not been investigated in continuum field theories as discretization in numerics generally break the continuum theory's integrability. We show that finite temperature acts as a regulator that can restore anomalous transport over a broad time window. In a family of spin field theories labeled by integer $n$, the $n = 1$ case is the Landau-Lifshitz model, whose numerical data shows spin superdiffusion with Kardar-Parisi-Zhang (KPZ) scaling and, at lower temperature ballistic energy transport, whereas both observables are diffusive at high temperature. The non-integrable $n = 2$ case shows the same crossover. While Lyapunov analysis confirms the model's non-integrability, the structure of spin-density space-time profiles suggests that long-lived soliton-like trajectories exist at low temperature.",
+    "status": "found"
+  },
+  "2601.19895": {
+    "arxiv_id": "2601.19895",
+    "title": "Post-LayerNorm Is Back: Stable, ExpressivE, and Deep",
+    "authors": [
+      "Chen Chen",
+      "Lai Wei"
+    ],
+    "submission_date": "2026-01-27T18:58:46Z",
+    "latest_updated": "2026-01-30T03:44:40Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.19895v1",
+      "2601.19895v2"
+    ],
+    "abstract": "Large language model (LLM) scaling is hitting a wall. Widening models yields diminishing returns, and extending context length does not improve fundamental expressivity. In contrast, depth scaling offers theoretically superior expressivity, yet current Transformer architectures struggle to train reliably at extreme depths. We revisit the Post-LayerNorm (Post-LN) formulation, whose instability at scale caused its replacement by Pre-LN in modern LLMs. We show that the central failure mode of Post-LN arises from the ResNet-style residual pathway, which introduces gradient vanishing in deep networks. We present Keel, a Post-LN Transformer that replaces this residual path with a Highway-style connection. This modification preserves the gradient flow through the residual branch, preventing signal vanishing from the top layers to the bottom. Unlike prior methods, Keel enables stable training at extreme depths without requiring specialized initialization or complex optimization tricks. Keel trains robustly at depths exceeding 1000 layers and consistently improves perplexity and depth-scaling characteristics over Pre-LN. These findings indicate that Post-LN, when paired with a Highway-style connection, provides a simple and effective foundation for building deeply scalable LLMs, opening the possibility for future infinite-depth architectures.",
+    "status": "found"
+  }
+}

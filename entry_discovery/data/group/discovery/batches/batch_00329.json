@@ -1,0 +1,420 @@
+{
+  "2601.19736": {
+    "arxiv_id": "2601.19736",
+    "title": "Combinatorial proofs of some identities on overpartitions with repeated smallest non-overlined part",
+    "authors": [
+      "Nayandeep Deka Baruah",
+      "Haijun Li",
+      "Pankaj Jyoti Mahanta"
+    ],
+    "submission_date": "2026-01-27T15:55:48Z",
+    "latest_updated": "2026-02-01T18:45:16Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.19736v1",
+      "2601.19736v2"
+    ],
+    "abstract": "Let $\\overline{\\mathrm{spt}}k(n)$ denote the number of overpartitions of $n$ where the smallest non-overlined part, say $s(π)$, appears $k$ times and every overlined part is bigger than $s(π)$. Let $\\overline{\\mathrm{spt}}k_o(n)$ denote the number of overpartitions of $n$ where the smallest non-overlined part appears $k$ times, every overlined part is bigger than $s(π)$ and all parts other than $s(π)$ are incongruent modulo $2$ with $s(π)$. Also, let $b_e(k,n)$ (resp., $b_o(k,n)$) denote the number of overpartitions of $n$ counted by $\\overline{\\mathrm{spt}}k_o(n)$ where the number of parts greater than $s(π)$ is even (resp., odd), and let $$\\overline{\\mathrm{spt}}k_o'(n)=b_e(k,n)-b_o(k,n).$$ Recently, Malik and Sarma (arXiv:2601.15601v1) expressed the generating functions of these partition functions in terms of linear combinations of $q$-series with polynomials in $q$ as coefficients. As corollaries, they derived some partition identities involving the functions for $k=1$ and sought for combinatorial proofs of their results. In this paper, we present some desired proofs.",
+    "status": "found"
+  },
+  "2601.19737": {
+    "arxiv_id": "2601.19737",
+    "title": "A two-mode model for black hole evaporation and information flow",
+    "authors": [
+      "Erfan Bayenat",
+      "Babak Vakili"
+    ],
+    "submission_date": "2026-01-27T15:57:59Z",
+    "latest_updated": "2026-01-27T15:57:59Z",
+    "revised_dates": null,
+    "venue": "Ann. Phys. 488 (2026) 170352",
+    "latest_version": 1,
+    "versions": [
+      "2601.19737v1"
+    ],
+    "abstract": "We develop and analyze a two-oscillator model for black hole evaporation in which an effective geometric degree of freedom and a representative Hawking radiation mode are described by coupled harmonic oscillators with opposite signs in their free Hamiltonians. The normal-mode structure is obtained analytically and the corresponding modal amplitudes determine the pattern of energy exchange between the two sectors. To bridge the discrete and semiclassical pictures, we introduce smooth envelope functions that provide a continuous effective description along the geometric variable. Numerical simulations in a truncated Fock space show that the two oscillators exchange quanta in an approximately out-of-phase manner, consistent with an effective conservation of $\\langle n_x\\rangle - \\langle n_y\\rangle$. The reduced entropy $S_x(t)$ exhibits periodic growth, indicating entanglement generation. These results demonstrate that even a minimal two-mode framework can capture key qualitative features of energy transfer and information flow during evaporation.",
+    "status": "found"
+  },
+  "2601.19738": {
+    "arxiv_id": "2601.19738",
+    "title": "Quantum Circuit Pre-Synthesis: Learning Local Edits to Reduce $T$-count",
+    "authors": [
+      "Daniele Lizzio Bosco",
+      "Lukasz Cincio",
+      "Giuseppe Serra",
+      "M. Cerezo"
+    ],
+    "submission_date": "2026-01-27T15:58:05Z",
+    "latest_updated": "2026-01-27T15:58:05Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19738v1"
+    ],
+    "abstract": "Compiling quantum circuits into Clifford+$T$ gates is a central task for fault-tolerant quantum computing using stabilizer codes. In the near term, $T$ gates will dominate the cost of fault tolerant implementations, and any reduction in the number of such expensive gates could mean the difference between being able to run a circuit or not. While exact synthesis is exponentially hard in the number of qubits, local synthesis approaches are commonly used to compile large circuits by decomposing them into substructures. However, composing local methods leads to suboptimal compilations in key metrics such as $T$-count or circuit depth, and their performance strongly depends on circuit representation. In this work, we address this challenge by proposing \\textsc{Q-PreSyn}, a strategy that, given a set of local edits preserving circuit equivalence, uses a RL agent to identify effective sequences of such actions and thereby obtain circuit representations that yield a reduced $T$-count upon synthesis. Experimental results of our proposed strategy, applied on top of well-known synthesis algorithms, show up to a $20\\%$ reduction in $T$-count on circuits with up to 25 qubits, without introducing any additional approximation error prior to synthesis.",
+    "status": "found"
+  },
+  "2601.19739": {
+    "arxiv_id": "2601.19739",
+    "title": "TokenSeek: Memory Efficient Fine Tuning via Instance-Aware Token Ditching",
+    "authors": [
+      "Runjia Zeng",
+      "Qifan Wang",
+      "Qiang Guan",
+      "Ruixiang Tang",
+      "Lifu Huang",
+      "Zhenting Wang",
+      "Xueling Zhang",
+      "Cheng Han",
+      "Dongfang Liu"
+    ],
+    "submission_date": "2026-01-27T15:58:36Z",
+    "latest_updated": "2026-01-27T15:58:36Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19739v1"
+    ],
+    "abstract": "Fine tuning has been regarded as a de facto approach for adapting large language models (LLMs) to downstream tasks, but the high training memory consumption inherited from LLMs makes this process inefficient. Among existing memory efficient approaches, activation-related optimization has proven particularly effective, as activations consistently dominate overall memory consumption. Although prior arts offer various activation optimization strategies, their data-agnostic nature ultimately results in ineffective and unstable fine tuning. In this paper, we propose TokenSeek, a universal plugin solution for various transformer-based models through instance-aware token seeking and ditching, achieving significant fine-tuning memory savings (e.g., requiring only 14.8% of the memory on Llama3.2 1B) with on-par or even better performance. Furthermore, our interpretable token seeking process reveals the underlying reasons for its effectiveness, offering valuable insights for future research on token efficiency. Homepage: https://runjia.tech/iclr_tokenseek/",
+    "status": "found"
+  },
+  "2601.19740": {
+    "arxiv_id": "2601.19740",
+    "title": "Error estimates of a training-free diffusion model for high-dimensional sampling",
+    "authors": [
+      "Pengjun Wang",
+      "Zezhong Zhang",
+      "Minglei Yang",
+      "Feng Bao",
+      "Yanzhao Cao",
+      "Guannan Zhang"
+    ],
+    "submission_date": "2026-01-27T15:59:08Z",
+    "latest_updated": "2026-01-27T15:59:08Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19740v1"
+    ],
+    "abstract": "Score-based diffusion models are a powerful class of generative models, but their practical use often depends on training neural networks to approximate the score function. Training-free diffusion models provide an attractive alternative by exploiting analytically tractable score functions, and have recently enabled supervised learning of efficient end-to-end generative samplers. Despite their empirical success, the training-free diffusion models lack rigorous and numerically verifiable error estimates. In this work, we develop a comprehensive error analysis for a class of training-free diffusion models used to generate labeled data for supervised learning of generative samplers. By exploiting the availability of the exact score function for Gaussian mixture models, our analysis avoids propagating score-function approximation errors through the reverse-time diffusion process and recovers classical convergence rates for ODE discretization schemes, such as first-order convergence for the Euler method. Moreover, the resulting error bounds exhibit favorable dimension dependence, scaling as $O(d)$ in the $\\ell_2$ norm and $O(\\log d)$ in the $\\ell_\\infty$ norm. Importantly, the proposed error estimates are fully numerically verifiable with respect to both time-step size and dimensionality, thereby bridging the gap between theoretical analysis and observed numerical behavior.",
+    "status": "found"
+  },
+  "2601.19741": {
+    "arxiv_id": "2601.19741",
+    "title": "Effect of noise characterization on the detection of mHz stochastic gravitational waves",
+    "authors": [
+      "Nikolaos Karnesis",
+      "Quentin Baghi",
+      "Jean-Baptiste Bayle",
+      "Nikiforos Galanis"
+    ],
+    "submission_date": "2026-01-27T16:01:36Z",
+    "latest_updated": "2026-09-09T09:36:58Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2601.19741v1",
+      "2601.19741v2",
+      "2601.19741v3"
+    ],
+    "abstract": "Pulsar timing arrays' hint for a stochastic gravitational-wave background (SGWB) leverages the expectations of a future detection in the millihertz band, particularly with the LISA space mission. However, finding an SGWB with a single orbiting detector is challenging: It calls for cautious modelling of instrumental noise, which is also mainly stochastic. It was shown that agnostic noise reconstruction methods provide robustness in the detection process. We build on previous work to include more realistic instrumental simulations and additional degrees of freedom in the noise inference model and analyze the impact of LISA's sensitivity to SGWBs. Particularly, we model the two main types of noise sources with separate transfer functions and power spectral density spline fitting. We assess the detectability bounds and their dependence on the flexibility of the noise model and on the prior probability, allowing us to refine previously reported results.",
+    "status": "found"
+  },
+  "2601.19742": {
+    "arxiv_id": "2601.19742",
+    "title": "SCOPE: Smooth Convex Optimization for Planned Evolution of Deformable Linear Objects",
+    "authors": [
+      "Ali Jnadi",
+      "Hadi Salloum",
+      "Yaroslav Kholodov",
+      "Alexander Gasnikov",
+      "Karam Almaghout"
+    ],
+    "submission_date": "2026-01-27T16:01:56Z",
+    "latest_updated": "2026-01-27T16:01:56Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19742v1"
+    ],
+    "abstract": "We present SCOPE, a fast and efficient framework for modeling and manipulating deformable linear objects (DLOs). Unlike conventional energy-based approaches, SCOPE leverages convex approximations to significantly reduce computational cost while maintaining smooth and physically plausible deformations. This trade-off between speed and accuracy makes the method particularly suitable for applications requiring real-time or near-real-time response. The effectiveness of the proposed framework is demonstrated through comprehensive simulation experiments, highlighting its ability to generate smooth shape trajectories under geometric and length constraints.",
+    "status": "found"
+  },
+  "2601.19743": {
+    "arxiv_id": "2601.19743",
+    "title": "Interpretable and backpropagation-free Green Learning for efficient multi-task echocardiographic segmentation and classification",
+    "authors": [
+      "Jyun-Ping Kao",
+      "Jiaxin Yang",
+      "C. -C. Jay Kuo",
+      "Jonghye Woo"
+    ],
+    "submission_date": "2026-01-27T16:04:42Z",
+    "latest_updated": "2026-05-25T00:40:28Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2601.19743v1",
+      "2601.19743v2",
+      "2601.19743v3"
+    ],
+    "abstract": "Echocardiography is a cornerstone for managing heart failure (HF), with Left Ventricular Ejection Fraction (LVEF) being a critical metric for guiding therapy. However, manual LVEF assessment suffers from high inter-observer variability, while existing Deep Learning (DL) models are often computationally intensive and data-hungry \"black boxes\" that impede clinical trust and adoption. Here, we propose a backpropagation-free multi-task Green Learning (MTGL) framework that performs simultaneous Left Ventricle (LV) segmentation and LVEF classification. Our framework integrates an unsupervised VoxelHop encoder for hierarchical spatio-temporal feature extraction with a multi-level regression decoder and an XG-Boost classifier. On the EchoNet-Dynamic dataset, our MTGL model achieves state-of-the-art classification and segmentation performance, attaining a classification accuracy of 94.3% and a Dice Similarity Coefficient (DSC) of 0.912, significantly outperforming several advanced 3D DL models. Crucially, our model achieves this with over an order of magnitude fewer parameters, demonstrating exceptional computational efficiency. This work demonstrates that the GL paradigm can deliver highly accurate, efficient, and interpretable solutions for complex medical image analysis, paving the way for more sustainable and trustworthy artificial intelligence in clinical practice.",
+    "status": "found"
+  },
+  "2601.19744": {
+    "arxiv_id": "2601.19744",
+    "title": "Universality in the Low Mach number limit via a convex integration framework",
+    "authors": [
+      "Robin Ming Chen",
+      "Alexis Vasseur",
+      "Dehua Wang",
+      "Cheng Yu"
+    ],
+    "submission_date": "2026-01-27T16:05:35Z",
+    "latest_updated": "2026-01-27T16:05:35Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19744v1"
+    ],
+    "abstract": "We study the low Mach number limit of the compressible Euler equations through the lens of convex integration. For any prescribed $L^2$ weak solution of the incompressible Euler equations, we construct a corresponding family of weak solutions to the compressible Euler equations via a refined convex integration scheme. We then prove that, as the Mach number tends to zero, this family of solutions converges strongly to the given incompressible solution. This result demonstrates that the incompressible system acts as a universal attractor in this setting: every incompressible flow can be realized as the limit of convex integration solutions to the compressible system. Our approach highlights a new form of universality for singular limits and provides a rigorous framework for understanding the incompressible limit from the perspective of weak solution theory.",
+    "status": "found"
+  },
+  "2601.19745": {
+    "arxiv_id": "2601.19745",
+    "title": "GraphDLG: Exploring Deep Leakage from Gradients in Federated Graph Learning",
+    "authors": [
+      "Shuyue Wei",
+      "Wantong Chen",
+      "Tongyu Wei",
+      "Chen Gong",
+      "Yongxin Tong",
+      "Lizhen Cui"
+    ],
+    "submission_date": "2026-01-27T16:06:48Z",
+    "latest_updated": "2026-01-27T16:06:48Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19745v1"
+    ],
+    "abstract": "Federated graph learning (FGL) has recently emerged as a promising privacy-preserving paradigm that enables distributed graph learning across multiple data owners. A critical privacy concern in federated learning is whether an adversary can recover raw data from shared gradients, a vulnerability known as deep leakage from gradients (DLG). However, most prior studies on the DLG problem focused on image or text data, and it remains an open question whether graphs can be effectively recovered, particularly when the graph structure and node features are uniquely entangled in GNNs. In this work, we first theoretically analyze the components in FGL and derive a crucial insight: once the graph structure is recovered, node features can be obtained through a closed-form recursive rule. Building on this analysis, we propose GraphDLG, a novel approach to recover raw training graphs from shared gradients in FGL, which can utilize randomly generated graphs or client-side training graphs as auxiliaries to enhance recovery. Extensive experiments demonstrate that GraphDLG outperforms existing solutions by successfully decoupling the graph structure and node features, achieving improvements of over 5.46% (by MSE) for node feature reconstruction and over 25.04% (by AUC) for graph structure reconstruction.",
+    "status": "found"
+  },
+  "2601.19746": {
+    "arxiv_id": "2601.19746",
+    "title": "A Multiobjective Water Allocation Model for Economic Efficiency and Environmental Sustainability: Case Study",
+    "authors": [
+      "Nahid Sultana",
+      "M M Rizvi",
+      "Indu Wadhawan"
+    ],
+    "submission_date": "2026-01-27T16:08:49Z",
+    "latest_updated": "2026-01-27T16:08:49Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19746v1"
+    ],
+    "abstract": "The management of irrigation water systems has become increasingly complex due to competing demands for agricultural production, groundwater sustainability, and environmental flow requirements, particularly under hydrologic variability and climate uncertainty. Addressing these challenges requires optimization frameworks that can jointly determine optimal crop allocation, groundwater pumping, and environmental flow releases while maintaining economic and hydrological feasibility. However, existing hydro-economic models, including the widely used Lewis and Randall formulation, may overestimate net benefits by allowing infeasible negative pumping and surface water allocations. We extend the Lewis and Randall framework by reformulating groundwater pumping and surface water use as non-negative, demand-driven decision variables and by explicitly incorporating environmental flow and canal capacity constraints. Three models are developed to maximize economic benefit, minimize environmental deficits, and a multiobjective model that evaluates the trade-offs between these two objectives. An illustrative test case examining optimal crop area allocation and environmental flow management across dry, average, and wet years, using data from the Rajshahi Barind Tract in northwestern Bangladesh, is presented. The results show that the proposed formulation produces economically and hydrologically consistent solutions, identifying optimal strategies when either net benefits or environmental protection is prioritized, as well as Pareto-optimal trade-offs when both objectives are considered together. These findings provide practical insights for balancing farm income, groundwater sustainability, and ecological protection, offering a robust decision-support tool for irrigation management in water-limited river basins.",
+    "status": "found"
+  },
+  "2601.19747": {
+    "arxiv_id": "2601.19747",
+    "title": "Veri-Sure: Multi-Agent RTL Code Generation with Temporal Tracing, Slicing and Formal Verification",
+    "authors": [
+      "Jiale Liu",
+      "Taiyu Zhou",
+      "Tianqi Jiang"
+    ],
+    "submission_date": "2026-01-27T16:10:23Z",
+    "latest_updated": "2026-10-15T18:44:39Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.19747v1",
+      "2601.19747v2"
+    ],
+    "abstract": "In the rapidly evolving field of Electronic Design Automation (EDA), the deployment of Large Language Models (LLMs) for Register-Transfer Level (RTL) code generation has emerged as a promising direction. However, because RTL code describes concurrent hardware behavior with strict cycle-level timing and thus differs fundamentally from software code, LLM-based RTL code generation remains bottlenecked by (i) sparse feedback and limited test coverage of simulation-centric evaluation, (ii) regressions and repair hallucinations introduced by whole-file regeneration during debugging, and (iii) semantic drift as intent is reinterpreted across repair iterations and agent handoffs. In this work, we propose Veri-Sure, a multi-agent framework that establishes a design contract to align agents' intent and uses a patching mechanism guided by static dependency slicing to perform precise, localized repairs. By integrating a multi-branch verification pipeline that combines trace-driven temporal analysis with formal verification, Veri-Sure yields more robust and reliable RTL code generation. We also introduce VerilogEval-v2-EXT, extending the original benchmark with 53 more industrial-grade design tasks and stratified difficulty levels, and show that Veri-Sure achieves state-of-the-art verified-correct RTL code generation performance, surpassing standalone LLMs and prior agentic systems. Code and dataset are available at https://github.com/xyjoey/Veri-Sure.",
+    "status": "found"
+  },
+  "2601.19748": {
+    "arxiv_id": "2601.19748",
+    "title": "A dual view of Roman Domination: The 2-limited packing problem",
+    "authors": [
+      "Oliver Bachtler",
+      "Sven O. Krumke",
+      "Helena Weiß"
+    ],
+    "submission_date": "2026-01-27T16:12:10Z",
+    "latest_updated": "2026-02-10T13:23:06Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.19748v1",
+      "2601.19748v2"
+    ],
+    "abstract": "We consider the 2-limited packing problem: for a graph $G=(V,E)$ one seeks to find a maximum cardinality subset $B\\subseteq V$, such that, for all $v\\in V$, the closed neighbourhood of $v$ contains at most two vertices in $B$. We compare this packing problem to the well-known Roman domination problem by pointing out some similarities and differences in the behaviour of the optimal solutions of both problems and show that these two problems are weakly dual. We show that for trees, the two problems are strongly dual, letting us solve the Roman domination problem by computing an optimal solution to the 2-limited packing problem.",
+    "status": "found"
+  },
+  "2601.19749": {
+    "arxiv_id": "2601.19749",
+    "title": "Observation of Erratic Non-Hermitian Skin Localization and Transport",
+    "authors": [
+      "Jia-Xin Zhong",
+      "Jee Woo Kim",
+      "Stefano Longhi",
+      "Yun Jing"
+    ],
+    "submission_date": "2026-01-27T16:12:32Z",
+    "latest_updated": "2026-01-27T16:12:32Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19749v1"
+    ],
+    "abstract": "Localization is a pervasive phenomenon across physics, shaping transport from electrons in solids to light and sound in engineered media. In traditional settings, disorder strongly impedes transport, resulting in dynamical localization or, at best, sub-ballistic or diffusive dynamics. A distinct and previously unobserved regime, erratic non-Hermitian skin localization (ENHSL), can arise in globally reciprocal non-Hermitian lattices with disorder. It features macroscopic, disorder-dependent localization at irregular bulk positions with subexponential decay, linked to stochastic interfaces governed by the universal order statistics of random walks. We realize this regime experimentally in an acoustic lattice implementing a disordered Hatano-Nelson chain with imaginary gauge fields. Using Green's-function-based spectroscopy together with time-resolved measurements on the same platform, we reconstruct the full complex spectrum and eigenstates, and directly observe wave-packet dynamics. Remarkably, we observe ballistic transport despite strong spectral localization. We develop a transport theory that connects the dominant propagation site to the maximal random-walk excursion within an expanding light cone and predicts a universal Levy-arcsine statistics, in quantitative agreement with experiment. Our results decouple eigenstate localization from transport and establish ENHSL as a new paradigm for wave dynamics.",
+    "status": "found"
+  },
+  "2601.19750": {
+    "arxiv_id": "2601.19750",
+    "title": "Benchmarking Multimodal Large Language Models for Missing Modality Completion in Product Catalogues",
+    "authors": [
+      "Junchen Fu",
+      "Wenhao Deng",
+      "Kaiwen Zheng",
+      "Ioannis Arapakis",
+      "Yu Ye",
+      "Yongxin Ni",
+      "Joemon M. Jose",
+      "Xuri Ge"
+    ],
+    "submission_date": "2026-01-27T16:13:26Z",
+    "latest_updated": "2026-01-28T11:35:29Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.19750v1",
+      "2601.19750v2"
+    ],
+    "abstract": "Missing-modality information on e-commerce platforms, such as absent product images or textual descriptions, often arises from annotation errors or incomplete metadata, impairing both product presentation and downstream applications such as recommendation systems. Motivated by the multimodal generative capabilities of recent Multimodal Large Language Models (MLLMs), this work investigates a fundamental yet underexplored question: can MLLMs generate missing modalities for products in e-commerce scenarios? We propose the Missing Modality Product Completion Benchmark (MMPCBench), which consists of two sub-benchmarks: a Content Quality Completion Benchmark and a Recommendation Benchmark. We further evaluate six state-of-the-art MLLMs from the Qwen2.5-VL and Gemma-3 model families across nine real-world e-commerce categories, focusing on image-to-text and text-to-image completion tasks. Experimental results show that while MLLMs can capture high-level semantics, they struggle with fine-grained word-level and pixel- or patch-level alignment. In addition, performance varies substantially across product categories and model scales, and we observe no trivial correlation between model size and performance, in contrast to trends commonly reported in mainstream benchmarks. We also explore Group Relative Policy Optimization (GRPO) to better align MLLMs with this task. GRPO improves image-to-text completion but does not yield gains for text-to-image completion. Overall, these findings expose the limitations of current MLLMs in real-world cross-modal generation and represent an early step toward more effective missing-modality product completion.",
+    "status": "found"
+  },
+  "2601.19751": {
+    "arxiv_id": "2601.19751",
+    "title": "Pseudo-relativistic fermionic systems with attractive Yukawa potential",
+    "authors": [
+      "Bin Chen",
+      "Yujin Guo",
+      "Phan Thành Nam",
+      "Dong Hao Ou Yang"
+    ],
+    "submission_date": "2026-01-27T16:13:42Z",
+    "latest_updated": "2026-01-27T16:13:42Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19751v1"
+    ],
+    "abstract": "We study the Hartree-Fock and Hartree-Fock-Bogoliubov theories for a large fermionic system with the pseudo-relativistic kinetic energy and an attractive Yukawa interaction potential. We prove that the system is stable if and only if the total mass does not excess a critical value, and investigate the existence and properties of ground states in both sub-critical and critical mass regimes.",
+    "status": "found"
+  },
+  "2601.19752": {
+    "arxiv_id": "2601.19752",
+    "title": "Agentic Design Patterns: A System-Theoretic Framework",
+    "authors": [
+      "Minh-Dung Dao",
+      "Quy Minh Le",
+      "Hoang Thanh Lam",
+      "Duc-Trong Le",
+      "Quoc-Viet Pham",
+      "Barry O'Sullivan",
+      "Hoang D. Nguyen"
+    ],
+    "submission_date": "2026-01-27T16:14:08Z",
+    "latest_updated": "2026-01-27T16:14:08Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19752v1"
+    ],
+    "abstract": "With the development of foundation model (FM), agentic AI systems are getting more attention, yet their inherent issues like hallucination and poor reasoning, coupled with the frequent ad-hoc nature of system design, lead to unreliable and brittle applications. Existing efforts to characterise agentic design patterns often lack a rigorous systems-theoretic foundation, resulting in high-level or convenience-based taxonomies that are difficult to implement. This paper addresses this gap by introducing a principled methodology for engineering robust AI agents. We propose two primary contributions: first, a novel system-theoretic framework that deconstructs an agentic AI system into five core, interacting functional subsystems: Reasoning & World Model, Perception & Grounding, Action Execution, Learning & Adaptation, and Inter-Agent Communication. Second, derived from this architecture and directly mapped to a comprehensive taxonomy of agentic challenges, we present a collection of 12 agentic design patterns. These patterns - categorised as Foundational, Cognitive & Decisional, Execution & Interaction, and Adaptive & Learning - offer reusable, structural solutions to recurring problems in agent design. The utility of the framework is demonstrated by a case study on the ReAct framework, showing how the proposed patterns can rectify systemic architectural deficiencies. This work provides a foundational language and a structured methodology to standardise agentic design communication among researchers and engineers, leading to more modular, understandable, and reliable autonomous systems.",
+    "status": "found"
+  },
+  "2601.19753": {
+    "arxiv_id": "2601.19753",
+    "title": "WaterClear-GS: Optical-Aware Gaussian Splatting for Underwater Reconstruction and Restoration",
+    "authors": [
+      "Xinrui Zhang",
+      "Yufeng Wang",
+      "Zesheng Wang",
+      "Dacheng Qi",
+      "Wenrui Ding",
+      "Shuangkang Fang"
+    ],
+    "submission_date": "2026-01-27T16:14:34Z",
+    "latest_updated": "2026-09-24T07:20:28Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.19753v1",
+      "2601.19753v2"
+    ],
+    "abstract": "Underwater 3D reconstruction and appearance restoration remain challenging due to the complex optical properties of water, such as wavelength-dependent attenuation and scattering. Existing Neural Radiance Fields (NeRF)-based approaches often suffer from slow rendering and limited practicality, while vanilla 3D Gaussian Splatting (3DGS) lacks an effective mechanism to account for underwater degradation. To address this, we propose WaterClear-GS, a physics-informed reformulation of underwater Gaussian splatting that models degradation as intrinsic Gaussian attributes rather than external medium fields. Furthermore, we adopt a dual-branch optimization strategy that preserves underwater photometric consistency while encouraging a practical separation between restoration-oriented latent clean appearance and degradation. This strategy is enhanced by depth-guided geometry regularization and perception-driven image supervision, together with exposure constraints, spatially adaptive regularization, and physics-informed spectral regularization, which collectively promote spatial coherence and plausible visual appearance. Extensive experiments on standard benchmarks and our collected dataset demonstrate that WaterClear-GS achieves strong performance on both novel view synthesis (NVS) and underwater image restoration (UIR) tasks, while maintaining 160+ FPS real-time rendering. The code will be available at https://sherii888.github.io/WaterClear-GS/.",
+    "status": "found"
+  },
+  "2601.19754": {
+    "arxiv_id": "2601.19754",
+    "title": "Triangulated monoidal categorifications of finite type cluster algebras",
+    "authors": [
+      "Élie Casbi"
+    ],
+    "submission_date": "2026-01-27T16:15:40Z",
+    "latest_updated": "2026-01-27T16:15:40Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19754v1"
+    ],
+    "abstract": "We propose a framework of monoidal categorification of finite type cluster algebras involving triangulated monoidal categories. Namely, given a Dynkin quiver $Q$, we consider the bounded homotopy category $\\mathcal{K}_Q^{(1)}$ of a symmetric monoidal category $\\mathcal{H}_Q^{(1)}$ that we define in terms of the Auslander-Reiten theory of $Q$. Using some iterated mapping cone procedure, we construct a distinguished family $\\{ C_{\\bullet}[β] \\}_{β\\in Δ_+}$ of chain complexes in $\\mathcal{K}_Q^{(1)}$ characterized (up to isomorphism) by homological conditions similar to those of higher exact sequences appearing in the context of higher homological algebra. We then prove that the distinguished triangle in $\\mathcal{K}_Q^{(1)}$ given by each mapping cone categorifies an exchange relation in the finite type cluster algebra $\\mathcal{A}_Q$ with initial exchange quiver $Q$ (for a suitable choice of frozen variables). As a consequence, we obtain that for each positive root $β$, the Euler characteristic of $C_{\\bullet}[β]$ coincides with the truncated $q$-character of the simple module $L[β]$ in the HL category $\\mathcal{C}_ξ^{(1)}$ categorifying the cluster variable $x[β]$ of $\\mathcal{A}_Q$ via Hernandez-Leclerc's monoidal categorification. Along the way, we establish a uniform formula for the dominant monomial of $L[β]$ in all types $A_n$ and $D_n$ for arbitrary orientations (agreeing with Brito-Chari's results in type $A_n$).",
+    "status": "found"
+  },
+  "2601.19755": {
+    "arxiv_id": "2601.19755",
+    "title": "Regularized $f$-Divergence Kernel Tests",
+    "authors": [
+      "Mónica Ribero",
+      "Antonin Schrab",
+      "Arthur Gretton"
+    ],
+    "submission_date": "2026-01-27T16:15:48Z",
+    "latest_updated": "2026-01-27T16:15:48Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.19755v1"
+    ],
+    "abstract": "We propose a framework to construct practical kernel-based two-sample tests from the family of $f$-divergences. The test statistic is computed from the witness function of a regularized variational representation of the divergence, which we estimate using kernel methods. The proposed test is adaptive over hyperparameters such as the kernel bandwidth and the regularization parameter. We provide theoretical guarantees for statistical test power across our family of $f$-divergence estimates. While our test covers a variety of $f$-divergences, we bring particular focus to the Hockey-Stick divergence, motivated by its applications to differential privacy auditing and machine unlearning evaluation. For two-sample testing, experiments demonstrate that different $f$-divergences are sensitive to different localized differences, illustrating the importance of leveraging diverse statistics. For machine unlearning, we propose a relative test that distinguishes true unlearning failures from safe distributional variations.",
+    "status": "found"
+  }
+}

@@ -1,0 +1,476 @@
+{
+  "2608.09527": {
+    "arxiv_id": "2608.09527",
+    "title": "The Tilting Mode: A New Degree of Freedom for Magneto-Mechanical Resonator Sensors",
+    "authors": [
+      "Nora Timm",
+      "Florian Hartwig",
+      "Jonas Faltinath",
+      "Sarah Reiss",
+      "Pascal Stagge",
+      "Tobias Knopp"
+    ],
+    "submission_date": "2026-08-10T12:26:26Z",
+    "latest_updated": "2026-08-10T12:26:26Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09527v1"
+    ],
+    "abstract": "Magneto-mechanical resonators (MMRs) are an emerging class of passive, wireless sensors. Their torsional oscillation mode has recently been established for sensing and tracking applications. In this work, we report the identification and characterization of a second mechanical mode, the tilting mode, that provides sensitivity along an axis inaccessible to the torsional mode, opening up a new degree of freedom for tracking and sensing with a single MMR sensor. We derive an analytical model predicting the tilting frequency as a function of the geometric and magnetic parameters of the resonator, compare the tilting mode frequency to that of the torsional mode, and obtain a characteristic frequency ratio between the torsional and the tilting mode in the small angle approximation. Experimental characterization using three-axis excitation and detection confirms the mode's existence and its directional selectivity. Notably, the three-axis frequency response shows no observable cross-coupling between the torsional and the tilting mode. We further show that the tilting mode frequency follows the predicted dependence on magnet distance, confirming the analytical model and the mode's applicability for sensing, analogous to that of the torsional mode.",
+    "status": "found"
+  },
+  "2608.09528": {
+    "arxiv_id": "2608.09528",
+    "title": "Robotic Fabric Alignment System for Sewing Using Global Local Weighted ICP",
+    "authors": [
+      "Wenbo Dong",
+      "Dipankar Bhattacharya Member",
+      "Kai Tang",
+      "Akinari Kobayashi",
+      "Fuyuki Tokuda",
+      "Akira Seino",
+      "Norman C. Tien",
+      "Kazuhiro Kosuge"
+    ],
+    "submission_date": "2026-08-10T12:30:17Z",
+    "latest_updated": "2026-08-10T12:30:17Z",
+    "revised_dates": null,
+    "venue": "IEEE Transactions on Automation Science and Engineering, vol. 23, pp. 13391-13406, July 2026",
+    "latest_version": 1,
+    "versions": [
+      "2608.09528v1"
+    ],
+    "abstract": "Accurate fabric alignment is a critical step that must be performed before sewing. This paper presents a novel automated fabric alignment system. The system estimates the poses of top and bottom fabric panels, lying flat and wrinkle-free in arbitrary positions, using a new Global Local Weighted Iterative Closest Point (GLW-ICP) method. The system then manipulates the top panel to achieve precise alignment at both edges and sewing lines. Unlike conventional approaches, GLW-ICP robustly aligns both global edges and local sewing lines by globally aligning fabric edge points and locally aligning sewing line points to their corresponding CAD model points, while removing unmatched points in occluded regions. Real-world experiments with various fabric shapes show that the system consistently achieves millimeter-level alignment accuracy under both occlusion and non-occlusion conditions, demonstrating its effectiveness and suitability for automated fabric alignment in practical scenarios.",
+    "status": "found"
+  },
+  "2608.09529": {
+    "arxiv_id": "2608.09529",
+    "title": "Towards Expressive and Faithful Audio-to-Image Generation: A Unified Multimodal Dataset and Synthesis Framework",
+    "authors": [
+      "Dongxu Ge",
+      "Shansong Liu",
+      "Cheng Gong",
+      "Xiao-Lei Zhang",
+      "Chi Zhang",
+      "Xuelong Li"
+    ],
+    "submission_date": "2026-08-10T12:31:16Z",
+    "latest_updated": "2026-08-10T12:31:16Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09529v1"
+    ],
+    "abstract": "As an important subfield of cross-modal generation, synthesizing static visual content in the form of images from audio, namely audio-to-image (A2I) generation, has attracted increasing research attention in recent years. Nevertheless, despite the remarkable visual quality of modern text-to-image (T2I) models, the performance of A2I remains fundamentally limited by traditional datasets, which often lack both high-fidelity images and precise cross-modal alignment. As a result, existing methods still struggle to achieve high-quality audio-to-image generation through finetuning strong T2I models, thereby constraining practical applications in this area. Motivated by this gap, we introduce A2I-Set, a unified, high-quality tri-modal dataset consisting of 323K paired audio, images, and detailed text captions, specifically designed for audio-visual research, including audio-conditioned image generation. Besides, we developed a new mixed-source test set for the A2I task through human supervision. We further propose an A2I model, AudioCanvas, fine-tuned on our A2I-Set. Experiments show that AudioCanvas achieves more visually expressive as well as cross-modal alignment results that generally outperforming existing approaches. Our dataset and source code are available at https://github.com/gdx012/A2I-Generation.",
+    "status": "found"
+  },
+  "2608.09530": {
+    "arxiv_id": "2608.09530",
+    "title": "The Unseen Delta: Characterizing the Compiler Optimization Landscape via Top-Down Differential Analysis",
+    "authors": [
+      "Zhibo Liu",
+      "Huaijin Wang",
+      "Shuai Wang"
+    ],
+    "submission_date": "2026-08-10T12:32:19Z",
+    "latest_updated": "2026-09-04T09:40:57Z",
+    "revised_dates": null,
+    "venue": "Proceedings of the ACM SIGSOFT International Symposium on Software Testing and Analysis (ISSTA '26), October 03--09, 2026, Oakland, California",
+    "latest_version": 2,
+    "versions": [
+      "2608.09530v1",
+      "2608.09530v2"
+    ],
+    "abstract": "Compiler optimizations are essential for achieving high performance in modern software. However, recent studies highlight the persistence of performance bugs, i.e., subtle defects where the compiler generates functionally correct but computationally inefficient code, leading to significant performance degradation. Existing detection and testing methods typically employ a bottom-up approach, focusing on specific low-level code properties and remaining confined to known optimization rules. Consequently, they struggle to quantify the holistic impact of identified issues and often overlook critical microarchitectural inefficiencies. We observe a key indicator of untapped potential: different compilers often produce binaries with significant performance differences for identical source code. However, the root causes of these discrepancies remain largely unexplored and difficult to pinpoint using current techniques. To bridge this gap, we introduce a top-down differential analysis methodology. This approach calibrates compiler optimization differences with fine-grained, hierarchical microarchitectural metrics, offering a comprehensive view of runtime behavior. Using a sampling-based approach, this method efficiently pinpoints the critical code snippets responsible for performance differences, enabling targeted root cause analysis. Our empirical evaluation uncovers substantial and often surprising performance differences between binaries generated by GCC and Clang. A categorization of root causes reveals systemic challenges in compiler optimizations. To quantitatively validate our findings and demonstrate practical impact, we developed a binary patching framework that fixes identified performance issues by transplanting superior code sequences from competing compilers. This work provides a novel lens for understanding and analyzing optimization defects.",
+    "status": "found"
+  },
+  "2608.09531": {
+    "arxiv_id": "2608.09531",
+    "title": "The Living Guide of Machine Learning for Particle Physics",
+    "authors": [
+      "Claudius Krause",
+      "Ramon Winterhalder",
+      "Matthew Feickert",
+      "Benjamin Nachman"
+    ],
+    "submission_date": "2026-08-10T12:32:29Z",
+    "latest_updated": "2026-08-10T12:32:29Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09531v1"
+    ],
+    "abstract": "We started the Living Review of Machine Learning for Particle Physics (HEP-ML Living Review) in 2020 as a community-maintained, near-comprehensive bibliography of machine learning in particle physics. The field was then growing faster than any single researcher could follow, finding the relevant papers was hard, and a structured, continuously updated reference paid off immediately. Since then the literature has grown by more than an order of magnitude, the methods reach far beyond the classification and generation tasks of the early years, and the community has built its own ecosystem of topic-specific reviews, benchmark papers, and software frameworks. The original model no longer serves this field well, and we can no longer sustain it. We therefore change direction. We freeze the Living Review as an archival reference covering the literature up to 1 June 2026, where it remains a stable record of the first phase of HEP-ML. A new resource, the HEP-ML Living Guide, replaces it. It does not list everything. It curates, it annotates, and it points readers to foundational and representative work, so that researchers can find their way into a mature and rapidly diversifying field. In this article we explain why we make this change and how the new resource works.",
+    "status": "found"
+  },
+  "2608.09532": {
+    "arxiv_id": "2608.09532",
+    "title": "Carnot: Interpretable, Interactive, and Optimized Execution of Deep Research Queries",
+    "authors": [
+      "Matthew Russo",
+      "Yash Agarwal",
+      "Tianyu Li",
+      "Zhuohan Gu",
+      "Michael Cafarella",
+      "Omar Khattab",
+      "Tim Kraska",
+      "Samuel Madden"
+    ],
+    "submission_date": "2026-08-10T12:32:39Z",
+    "latest_updated": "2026-08-10T12:32:39Z",
+    "revised_dates": null,
+    "venue": "Proceedings of the VLDB Endowment, Vol. 19, No. 12 pages 4642 - 4645, 2026",
+    "latest_version": 1,
+    "versions": [
+      "2608.09532v1"
+    ],
+    "abstract": "Enterprises increasingly seek to query data lakes using natural language via AI-driven tools like semantic operators or deep research agents. However, the latter operates as an opaque black box, hiding its intermediate reasoning and data retrieval steps, and failing to expose controls for managing API costs and execution latency. Meanwhile, the former can be prohibitively expensive for enterprise-scale data lakes. Consequently, analysts using these systems lack the agency to intercept hallucinated premises, verify intermediate results, or correct the system's trajectory. We present Carnot, an interactive execution engine for AI-driven analytics. Carnot compiles natural language requests into physical execution graphs and surfaces them through an interactive notebook interface. Rather than waiting blindly for a final output, users can critique the plan, incrementally execute operators, inspect intermediate data, or directly edit the underlying code or semantic operator instructions. Carnot's query optimizer will optimize the query with respect to cost or latency constraints provided by the user. Our demo will showcase how Carnot helps users achieve efficient and verifiable insights on workloads motivated by real enterprise use cases.",
+    "status": "found"
+  },
+  "2608.09533": {
+    "arxiv_id": "2608.09533",
+    "title": "Spin Polarization of a Two-Dimensional Electron Liquid",
+    "authors": [
+      "G. A. Nikolaev",
+      "M. E. Sergeev",
+      "I. V. Kukushkin",
+      "A. V. Shchepetilnikov"
+    ],
+    "submission_date": "2026-08-10T12:33:08Z",
+    "latest_updated": "2026-09-07T09:15:02Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2608.09533v1",
+      "2608.09533v2",
+      "2608.09533v3"
+    ],
+    "abstract": "We show experimentally that the longitudinal resistance of a strongly correlated two-dimensional electron system provides a quantitative measure of its spin polarization. Using electrically detected electron spin resonance to independently calibrate the spin state, we establish a parameter-free relation between magnetotransport and spin polarization, allowing the latter to be determined from transport alone. This approach enables the magnetic state of the electron liquid to be mapped across a broad range of carrier densities and magnetic fields.",
+    "status": "found"
+  },
+  "2608.09534": {
+    "arxiv_id": "2608.09534",
+    "title": "Conditional Regime Analog Forecasting with Trajectories: A Nonparametric Framework for Multivariate Probabilistic",
+    "authors": [
+      "Giancarlo Vercellino"
+    ],
+    "submission_date": "2026-08-10T12:34:04Z",
+    "latest_updated": "2026-08-10T12:34:04Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09534v1"
+    ],
+    "abstract": "We propose Conditional Regime Analog Forecasting with Trajectories (CRAFT), a nonparametric framework for multivariate probabilistic time-series prediction. The method constructs paired backward and forward trajectory profiles from cumulative multi-horizon returns, learns recurrent low-dimensional regime labels in both spaces using singular value decomposition, change-point segmentation, and segment clustering, and estimates a backward-to-forward conditional regime correspondence. Forecast distributions are obtained by sampling historically realized future trajectory profiles according to a composite compatibility score that combines future-regime correspondence with similarity to the current backward trajectory profile. Unlike parametric vector autoregressions or Gaussian state-space models, CRAFT preserves empirical cross-sectional and multi-horizon dependence by resampling complete future paths. We describe the estimator, its diagnostics, and a reproducible simulation benchmark comparing CRAFT with direct analog resampling, SVD analogs, unconditional bootstrap, OLS VAR bootstrap, and random-forest forecasts.",
+    "status": "found"
+  },
+  "2608.09535": {
+    "arxiv_id": "2608.09535",
+    "title": "From algebraic orthogonality to RAAG embedding obstructions in hierarchically hyperbolic groups",
+    "authors": [
+      "Sangrok Oh",
+      "Jihoon Park"
+    ],
+    "submission_date": "2026-08-10T12:35:36Z",
+    "latest_updated": "2026-08-18T06:28:42Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.09535v1",
+      "2608.09535v2"
+    ],
+    "abstract": "We introduce the $\\textit{expanded core graph}$, which records minimal unbounded domains and their axial directions, for two classes of hierarchically hyperbolic group structures modeled on compact special groups and mapping class groups. Our main structural result shows that every embedding of a right-angled Artin group, after replacing its standard generators by positive powers, factors through an intermediate RAAG generated by suitably supported axial elements; for the class modeled on compact special groups, this intermediate RAAG is quasi-isometrically embedded. We show that its extension graph embeds into the expanded core graph. This yields a Kim--Koberda-type obstruction to RAAG embeddings and a complete embedding criterion when the rank is at most two. For the standard HHG structure on a mapping class group, the expanded core graph is the disjointness graph of essential curves, while for natural rich-family structures on a RAAG it recovers the extension graph. We also establish permanence results under finite direct products and the standard relatively hyperbolic construction.",
+    "status": "found"
+  },
+  "2608.09536": {
+    "arxiv_id": "2608.09536",
+    "title": "DocPure: Prompt-Free Unified Document Restoration via Degradation-Aware Structure-Guided Wavelet Modulation",
+    "authors": [
+      "Lingming Su",
+      "Wanglong Lu",
+      "Tao Wang",
+      "Kaihao Zhang",
+      "Nan Zhang",
+      "Liyan An",
+      "Hanli Zhao"
+    ],
+    "submission_date": "2026-08-10T12:35:39Z",
+    "latest_updated": "2026-08-10T12:35:39Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09536v1"
+    ],
+    "abstract": "High-quality document images are pivotal for information archiving and downstream automatic processing. However, they are frequently compromised by diverse degradations during uncontrolled acquisition and transmission. While unified document restoration techniques have been proposed to restore images from multiple degradations, they often struggle with training multiple degradation-specific models, reliance on manual task-specific prompts, or cross-task data pairing. To address these limitations, we propose DocPure, a prompt-free unified framework that achieves degradation-aware document restoration. We design a degradation-aware structure auto-encoder with degradation-informed routing regularization to predict clean structural priors from degraded inputs. The model is prompt-free at inference, and degradation labels are only used as auxiliary supervision for the routing regularization during training. Furthermore, we introduce a structure-guided wavelet interaction mechanism to bridge frequency-domain features and spatial semantics. Within the structure-guided wavelet interaction mechanism, a cross-frequency adaptive modulation utilizes low-frequency sub-bands to modulate high-frequency recovery, ensuring structural consistency. Extensive experiments demonstrate that DocPure achieves strong performance compared with state-of-the-art methods across various tasks, including deblurring, denoising, compression artifact reduction, and deshadowing.",
+    "status": "found"
+  },
+  "2608.09537": {
+    "arxiv_id": "2608.09537",
+    "title": "VERDI:Verified Contradictions for Continual World-Model Optimization",
+    "authors": [
+      "Junyu Wu",
+      "Shiqin Nie",
+      "Youyi Kou",
+      "Baohua Yin",
+      "Qingyu Chen",
+      "Jingheng Ma",
+      "Shiji Zhou",
+      "Hongyong Song",
+      "Mingchen Zhuge",
+      "Guocai Yao",
+      "Tielin Shi",
+      "Sen Cui",
+      "Changshui Zhang"
+    ],
+    "submission_date": "2026-08-10T12:35:59Z",
+    "latest_updated": "2026-10-17T04:23:01Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.09537v1",
+      "2608.09537v2"
+    ],
+    "abstract": "Foundation world models have made remarkable progress in planning, simulation, and embodied intelligence. However, optimizing a pretrained world model toward a user-specified objective remains difficult: each campaign typically rediscovers optimization strategies from scratch, and the resulting knowledge rarely transfers to the next model. Existing research agents automate the optimization loop but treat successful strategies as directly reusable recipes, without principled safeguards for when transfer is appropriate. We argue instead that retrieval is not transfer: a strategy validated on one model is at best an optimization hypothesis for another, and becomes transferable knowledge only after target-side experimental valida- tion. Guided by this principle, we propose VERDI , a continual framework for evidence-licensed world model optimization. VERDI characterizes each world model through shared inference-time probes to construct an Optimization Fin- gerprint, retrieves relevant prior experience as ranked hypotheses, and validates every candidate under a frozen target-side verifier before admitting it as reusable evidence; contradictions among nearby fingerprints further trigger probe evolution, continually refining the diagnostic representation itself. Experiments on Ctrl-World, the Cosmos family, and RoboCoin show that VERDI reduces search cost by 68%, GPU cost by 69%, and negative transfer from 0.34 to 0.06, while predicting transfer outcomes with 83% sign accuracy.",
+    "status": "found"
+  },
+  "2608.09538": {
+    "arxiv_id": "2608.09538",
+    "title": "TCS-BENCH: Benchmarking State-of-the-Art Generative AI Theoretical Computer Science Research Ability",
+    "authors": [
+      "Vincent Cohen-Addad",
+      "Dimitris Paparas",
+      "Ernest van Wijland",
+      "Max Springer",
+      "Julien Canitrot-Paradis",
+      "Honghao Lin",
+      "David Woodruff",
+      "Adarsh Kumarappan",
+      "Rajesh Jayaram",
+      "Rudrajit Das",
+      "Lalit Jain",
+      "Ola Svensson",
+      "Silvio Lattanzi",
+      "Mislav Balunovic",
+      "Theophane Weber",
+      "Vahab Mirrokni"
+    ],
+    "submission_date": "2026-08-10T12:36:16Z",
+    "latest_updated": "2026-08-29T20:52:02Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2608.09538v1",
+      "2608.09538v2",
+      "2608.09538v3"
+    ],
+    "abstract": "We introduce TCS-Bench, a benchmark for evaluating Large Language Models (LLMs) on research-level Theoretical Computer Science (TCS) proof generation. TCS-Bench consists of theorem-proving tasks from papers published at top theoretical computer science venues (STOC, FOCS, and SODA). Each task provides the necessary context to derive a self-contained proof for a target result. We evaluate state-of-the-art models on this benchmark. We verify the correctness of generated proofs via a verification agent, and further benchmark the verifier against human-expert proof judgements on a set of target statements and generated proofs pairs. Our reference verifier achieves over 90% accuracy on the expert labeled set.",
+    "status": "found"
+  },
+  "2608.09539": {
+    "arxiv_id": "2608.09539",
+    "title": "Mawqif-XT: An Arabic Benchmark Dataset for Cross-Target Stance Detection",
+    "authors": [
+      "Rasha Albalawi",
+      "Nuha Albadi",
+      "Hamzah Luqman",
+      "Maram Kurdi",
+      "Saad Ezzini",
+      "Asma Yamani",
+      "Ahmed Ashraf"
+    ],
+    "submission_date": "2026-08-10T12:36:21Z",
+    "latest_updated": "2026-10-02T12:39:49Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2608.09539v1",
+      "2608.09539v2",
+      "2608.09539v3"
+    ],
+    "abstract": "Publicly available Arabic datasets for target-specific stance detection remain limited, particularly for evaluating cross-target generalization. This paper presents the Mawqif-XT, consisting of 996 manually annotated Arabic tweets collected from three public targets: Women Driving, E-Cars, and Trimester System. Each tweet is annotated with stance, sentiment, and sarcasm labels following the original Mawqif annotation scheme. The released extension is intended as a held-out evaluation set for assessing model generalization to both semantically related and previously unseen targets, while the original Mawqif dataset is used for training and development. In addition, we establish baseline results using several Arabic and multilingual transformer models, as well as zero-shot large language models (LLMs), to facilitate reproducible evaluation. Together with the original Mawqif dataset, the Mawqif-v2 Extension provides a benchmark for evaluating cross-target generalization in Arabic stance detection.",
+    "status": "found"
+  },
+  "2608.09540": {
+    "arxiv_id": "2608.09540",
+    "title": "Quantum Coordination and Nonlocal Games: Theory and Applications",
+    "authors": [
+      "Husein Natur",
+      "Uzi Pereg"
+    ],
+    "submission_date": "2026-08-10T12:39:31Z",
+    "latest_updated": "2026-08-10T12:39:31Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09540v1"
+    ],
+    "abstract": "Coordination is a fundamental primitive in communication and information theory, in which distributed systems must collectively generate correlated behavior rather than merely exchange messages. In quantum networks, the nature of entanglement, quantum measurements, and nonclassical correlations introduces coordination possibilities unavailable classically. This article reviews recent advances in coordination over classical and quantum communication networks, focusing on empirical and strong coordination in multi-user settings. We consider the implications of coordination for nonlocal games, showing how it provides a natural framework for understanding the correlations that enable spatially separated players to improve their probability of winning. We present a unified framework for coordination using classical or quantum communication and pre-shared correlation resources. The review covers simulation of both entanglement and separable correlations across a variety of network architectures, including two-node, cascade, broadcast, and multiple-access networks. We study the operational differences between empirical and strong coordination, and the tradeoffs between communication and correlation resources, such as pre-shared randomness and entanglement. Coordination plays a major role in device-independent quantum key distribution (DI-QKD) schemes, in which parties can generate a secret key even if the devices used in the process have been prepared by an adversary. Furthermore, we examine the role of coordination in quantum repeaters, where distributed entanglement serves as a resource for long-distance quantum communication. The review highlights connections between coordination theory and applications such as distributed quantum systems, quantum internet architectures, and future communication networks.",
+    "status": "found"
+  },
+  "2608.09541": {
+    "arxiv_id": "2608.09541",
+    "title": "Towards Collaborative Joint Perception and Prediction: Framework, Baseline Evaluation, and Deployment Perspectives",
+    "authors": [
+      "Lei Wan",
+      "Hannan Ejaz Keen",
+      "Alexey Vinel"
+    ],
+    "submission_date": "2026-08-10T12:39:51Z",
+    "latest_updated": "2026-08-10T12:39:51Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09541v1"
+    ],
+    "abstract": "Connected Autonomous Vehicles (CAVs) increasingly exploit Vehicle-to-Everything (V2X) communication to exchange multi-source sensor information, enabling advanced Collaborative Perception (CP) capabilities. Extending beyond these capabilities, this work focuses on Collaborative Joint Perception and Prediction (Co-P&P), a paradigm that unifies CP with motion prediction to mitigate two persistent challenges: the accumulation of perception errors and visual occlusions. We present a conceptual framework for Collaborative Joint Perception and Prediction (Co-P&P) that improves motion prediction of surrounding road users, thereby enhancing situational awareness in complex and dynamic traffic environments. Building upon our preliminary study, this extended version compares the performance of different fusion strategies and establishes baseline performance for a modular design of perception and prediction. Experimental results show that prediction-level fusion leads to a decline in overall system performance compared to detection-level or tracking-level fusion. We further implement a minimal end-to-end Co-P&P prototype that couples collaborative point-cloud sharing via the RENO neural codec with joint detection-forecasting via FutureDet, showing that collaboration improves forecasting accuracy while neural compression preserves this benefit at roughly 34x lower communication bandwidth.",
+    "status": "found"
+  },
+  "2608.09542": {
+    "arxiv_id": "2608.09542",
+    "title": "Dual-Adversarial Safety Alignment: Cultivating Intrinsic Threat Comprehension in LRMs",
+    "authors": [
+      "Hongli Shen",
+      "Shaopeng Fu",
+      "Qinbo Zhang",
+      "Jian Li",
+      "Di Wang"
+    ],
+    "submission_date": "2026-08-10T12:40:02Z",
+    "latest_updated": "2026-08-10T12:40:02Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09542v1"
+    ],
+    "abstract": "Large reasoning models (LRMs) achieve remarkable success on complex tasks but remain vulnerable to harmful prompts that induce unsafe outputs. Recent methods align LRMs using direct refusals or safety rationales, yet often focus on prompt patterns rather than intrinsic attack mechanisms. As a result, these pattern-centric alignments struggle to generalize across diverse jailbreaks, compromising adversarial robustness and reasoning utility. We propose AdvSafe, a dual-adversarial framework that enables LRMs to internalize unsafety knowledge by explicitly deconstructing adversarial mechanisms. This moves beyond pattern-dependent traces, fostering robust cognitive defense without compromising reasoning utility. Our pipeline operates via a two-phase adversarial game. First, in adversarial synthesis, an autonomous agent dynamically crafts deceptive jailbreak prompts, adapting its strategies to breach a strong teacher model. Second, in adversarial extraction, the breached teacher executes a cognitive counter-attack. For every successful jailbreak, the teacher unmasks the camouflage, explaining why the attack succeeds and how such prompts can be identified and mitigated. This dual-adversarial process yields a compact reasoning dataset capturing rich, generalizable unsafety knowledge. Student models trained on this dataset implicitly acquire safety alignment through intrinsic threat comprehension. Experiments show that with only 1K synthesized samples, AdvSafe-aligned LRMs achieve significantly stronger jailbreak robustness than existing baselines, with almost no utility degradation. Furthermore, AdvSafe improves robustness against out-of-distribution prompts, demonstrating that learning unsafety knowledge enables a superior robustness-utility trade-off and generalizes beyond seen attack patterns.",
+    "status": "found"
+  },
+  "2608.09543": {
+    "arxiv_id": "2608.09543",
+    "title": "Separating Abelian and Homomorphic Entropy Cones",
+    "authors": [
+      "Shahram Khazaei"
+    ],
+    "submission_date": "2026-08-10T12:41:05Z",
+    "latest_updated": "2026-08-10T12:41:05Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09543v1"
+    ],
+    "abstract": "Chan and Yeung showed that finite groups suffice to determine which homogeneous linear information inequalities are universally valid. We compare two restricted group-characterizable entropy cones: the Abelian cone $\\widetildeΓ^{\\mathrm{Abl}}_n$ and the homomorphic cone $\\widetildeΓ^{\\mathrm{Hom}}_n$, the latter generated by coset systems of normal subgroups. We prove \\[ \\widetildeΓ^{\\mathrm{Abl}}_{16}\\subsetneq\\widetildeΓ^{\\mathrm{Hom}}_{16}, \\] and, if $n_{\\rm AH}$ is the least number of variables for which these cones differ, we show $6\\le n_{\\rm AH}\\le16$. The separating functional is a class-restricted entropy inequality: it is valid on the Abelian cone but is not a universal information inequality. It is obtained by lifting the order dual of the Pálfy--Szabó six-cross identity while quantifying errors at inexact subgroup joins. We then construct sixteen normal subgroups of a class-two $2$-group of order $2^{43}$ for which every join error vanishes while the endpoint containment fails by one bit. Since mixed-linear random variables are Abelian, the same example also separates the mixed-linear and homomorphic entropy cones.",
+    "status": "found"
+  },
+  "2608.09544": {
+    "arxiv_id": "2608.09544",
+    "title": "Optimization studies of silicon remoTES cryogenic calorimeters",
+    "authors": [
+      "G. Angloher",
+      "M. R. Bharadwaj",
+      "A. Boehmer",
+      "S. Braun",
+      "M. R. Cababie",
+      "I. Colantoni",
+      "I. Dafinei",
+      "N. Di Marco",
+      "C. Dittmar",
+      "F. Ferella",
+      "F. Ferroni",
+      "S. Fichtinger",
+      "A. Filipponi",
+      "M. Friedl",
+      "D. Fuchs",
+      "L. Gai",
+      "M. Gapp",
+      "M. Heikinheimo",
+      "K. Heim",
+      "K. Huitu",
+      "M. Kellermann",
+      "R. Maji",
+      "M. Mancuso",
+      "L. Pagnanini",
+      "F. Petricca",
+      "S. Pirro",
+      "F. Proebst",
+      "G. Profeta",
+      "A. Puiu",
+      "F. Reindl",
+      "K. Schaeffner",
+      "J. Schieck",
+      "P. Schreiner",
+      "C. Schwertner",
+      "P. Settembri",
+      "K. Shera",
+      "M. Stahlberg",
+      "A. Stendahl",
+      "M. Stukel",
+      "C. Tresca",
+      "S. Yue",
+      "V. Zema",
+      "Y. Zhu",
+      "L. Ziegele",
+      "N. Zimmermann"
+    ],
+    "submission_date": "2026-08-10T12:43:16Z",
+    "latest_updated": "2026-08-10T12:43:16Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09544v1"
+    ],
+    "abstract": "The remoTES design, developed within the COSINUS experiment, enables a broader range of materials to be operated as cryogenic calorimeters read out with Transition Edge Sensors (TESs). In this configuration, the TES is fabricated onto a separate chip and thermally coupled to the absorber via a gold (Au) link. The remoTES concept has been successfully tested on various target materials. To further enhance detector performance and to fully exploit the advantages of the remote coupling design a series of optimization studies has been conducted using silicon (Si) absorbers as benchmark. This work presents an evaluation of several measurements aimed at reducing the thermal boundary resistance and enhancing signal transmission across Si remoTES interfaces, specifically from the absorber to the phonon collector and from the phonon collector to the TES. By testing a new Au link design and three distinct phonon collector configurations, Au, copper, and aluminum (Al)/Au, we achieved a baseline resolution of (21.5 +/- 0.3)eV using the Al/Au phonon collector.",
+    "status": "found"
+  },
+  "2608.09545": {
+    "arxiv_id": "2608.09545",
+    "title": "Direct Laser Interference Patterning of Functional Metal Surfaces: From Written Geometry to Functional Interfaces",
+    "authors": [
+      "Petr Hauschwitz"
+    ],
+    "submission_date": "2026-08-10T12:43:24Z",
+    "latest_updated": "2026-08-10T12:43:24Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09545v1"
+    ],
+    "abstract": "Direct laser interference patterning (DLIP) generates periodic micro- and nanoscale structures with increasing precision and throughput, yet similar geometries can produce fundamentally different functional responses. This review examines why morphology alone cannot predict friction, wetting and ice adhesion, bacterial response, cell behaviour, optical performance or electrochemical and photovoltaic function. DLIP is treated as a model system in which the optically prescribed geometry can be distinguished from the interface realised during processing. The written period is separated from relief depth, aspect ratio, hierarchical topography, surface chemistry, ageing and process history. Functional response is interpreted as a two-stage process: geometry creates the opportunity for interaction with an external agent, while the realised interface determines how that interaction becomes measurable performance under a specific interfacial state. A curated, metals-centred evidence base spanning tribology, wetting and anti-icing, antibacterial and biomedical surfaces, optics, electrochemistry, energy devices and manufacturing shows that period-depth coordinates alone rarely predict function across domains. Geometry remains highly transferable in optical systems and controlled mechanical contacts, whereas biological, state-dependent and device-level functions also depend on surface state, operating conditions and system architecture. The framework reconciles conflicting observations and identifies which variables are transferable and which remain context-dependent. Predictive DLIP surface engineering therefore requires identification of the interacting agent, separation of written geometry from the realised interface, isolation of variables governing interfacial coupling and evaluation through direct, mechanism-specific endpoints.",
+    "status": "found"
+  },
+  "2608.09546": {
+    "arxiv_id": "2608.09546",
+    "title": "Ultrametric Violation Distance: Polynomial Kernel and FPT Algorithm",
+    "authors": [
+      "Fedor V. Fomin",
+      "Petr A. Golovach",
+      "Yash Hiren More"
+    ],
+    "submission_date": "2026-08-10T12:45:25Z",
+    "latest_updated": "2026-08-10T12:45:25Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09546v1"
+    ],
+    "abstract": "In the Ultrametric Violation Distance problem, we are given a set of distances between $n$ points, and the goal is to modify the minimum number of distances so that the resulting set forms a valid ultrametric. In other words, the task is to fit an ultrametric to the given data, where the quality of the fit is measured by the $\\ell_0$-norm of the error. While variants of this problem under the $\\ell_\\infty$ and $\\ell_1$-norms have been well studied, the complexity of Ultrametric Violation Distance under the $\\ell_0$-norm remained largely unexplored until recently. This changed with the work of Cohen-Addad, Fan, Lee, and Mesmay [FOCS 2022], who introduced a constant-factor approximation algorithm. Significant further progress on approximation algorithms was made in subsequent work by Charikar and Gao [SODA 2024], and by An, Kao, Lee, and Lee [FOCS 2025]. In this paper, we initiate a systematic study of Ultrametric Violation Distance from the perspectives of kernelization and fixed-parameter tractability (FPT). By the work of Fan, Gilbert, Raichel, Sonthalia, and Van Buskirk [SWAT 2020], the problem is known to be FPT when parameterized by the number of violated distances $k$. We show that the problem admits a kernel with $\\mathcal{O}(k^2)$ points. Additionally, we present a single-exponential-time algorithm with running time $9^k \\cdot n^{\\mathcal{O}(1)}$, which is asymptotically tight.",
+    "status": "found"
+  }
+}

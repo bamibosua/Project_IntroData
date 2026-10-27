@@ -1,0 +1,446 @@
+{
+  "2511.15689": {
+    "arxiv_id": "2511.15689",
+    "title": "Semiparametric Estimation of Fractional Integration: An Evaluation of Local Whittle Methods",
+    "authors": [
+      "Jason R. Blevins"
+    ],
+    "submission_date": "2025-11-19T18:45:21Z",
+    "latest_updated": "2026-07-20T02:00:36Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 4,
+    "versions": [
+      "2511.15689v1",
+      "2511.15689v2",
+      "2511.15689v3",
+      "2511.15689v4"
+    ],
+    "abstract": "Fractionally integrated time series, exhibiting long memory with slowly decaying autocorrelations, are frequently encountered in economics, finance, and related fields. Since the seminal work of Robinson (1995), a variety of semiparametric local Whittle estimators have been proposed for estimating the memory parameter $d$, each with a distinct range of validity and different robustness properties, leaving applied researchers to decide which to use and under what conditions. This paper offers a practitioner's guide to six such estimators. Using a common Monte Carlo design, we map how each estimator behaves under short-run dynamics, unknown means, and time trends -- the conditions under which each remains reliable and the characteristic way each breaks down. This reveals a tension between efficiency and robustness: the exact local Whittle estimator uniquely pairs the lowest asymptotic variance with an unrestricted parameter range, but requires the mean and trend to be handled with care. We then illustrate these failure modes, along with the difficulties introduced by structural breaks, on several macroeconomic, financial, and climate time series, where a naïvely applied estimator can report near-stationarity for a series that better-matched methods identify as strongly nonstationary. The resulting guidance on estimator choice and bandwidth selection is anchored by exact reproductions of published results from this literature, along with open source replication code and datasets.",
+    "status": "found"
+  },
+  "2511.15690": {
+    "arxiv_id": "2511.15690",
+    "title": "MoDES: Accelerating Mixture-of-Experts Multimodal Large Language Models via Dynamic Expert Skipping",
+    "authors": [
+      "Yushi Huang",
+      "Zining Wang",
+      "Zhihang Yuan",
+      "Yifu Ding",
+      "Ruihao Gong",
+      "Jinyang Guo",
+      "Xianglong Liu",
+      "Jun Zhang"
+    ],
+    "submission_date": "2025-11-19T18:48:27Z",
+    "latest_updated": "2026-02-22T18:27:38Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.15690v1",
+      "2511.15690v2"
+    ],
+    "abstract": "Mixture-of-Experts (MoE) Multimodal large language models (MLLMs) excel at vision-language tasks, but they suffer from high computational inefficiency. To reduce inference overhead, expert skipping methods have been proposed to deactivate redundant experts based on the current input tokens. However, we find that applying these methods-originally designed for unimodal large language models (LLMs)-to MLLMs results in considerable performance degradation. This is primarily because such methods fail to account for the heterogeneous contributions of experts across MoE layers and modality-specific behaviors of tokens within these layers. Motivated by these findings, we propose MoDES, the first training-free framework that adaptively skips experts to enable efficient and accurate MoE MLLM inference. It incorporates a globally-modulated local gating (GMLG) mechanism that integrates global layer-wise importance into local routing probabilities to accurately estimate per-token expert importance. A dual-modality thresholding (DMT) method is then applied, which processes tokens from each modality separately, to derive the skipping schedule. To set the optimal thresholds, we introduce a frontier search algorithm that exploits monotonicity properties, cutting convergence time from several days to a few hours. Extensive experiments for 3 model series across 13 benchmarks demonstrate that MoDES far outperforms previous approaches. For instance, when skipping 88% experts for Qwen3-VL-MoE-30B-A3B-Instruct, the performance boost is up to 10.67% (97.33% vs. 86.66%). Furthermore, MoDES significantly enhances inference speed, improving the prefilling time by 2.16$\\times$ and the decoding time by 1.26$\\times$. Our code is available at https://github.com/ModelTC/MoDES.",
+    "status": "found"
+  },
+  "2511.15691": {
+    "arxiv_id": "2511.15691",
+    "title": "Demon with dementia - the deterioration of information transcription",
+    "authors": [
+      "Maggie Williams",
+      "Emery Doucet",
+      "Sebastian Deffner"
+    ],
+    "submission_date": "2025-11-19T18:48:34Z",
+    "latest_updated": "2025-11-19T18:48:34Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.15691v1"
+    ],
+    "abstract": "In introductory biology, aging is typically explained as a result of mutations during the DNA replication process within cells. Upon abstraction, we recognize that cellular aging can be understood as the gradual decay in fidelity of information transcription. Since cellular processes are microscopic and inherently stochastic, the abstracted process of information transcription can be understood using Markovian dynamics. In our work, we model the process of information transcription with an autonomous Maxwell's demon (AMD) which interacts with two bitstreams, a lifted mass, and a heat reservoir. As main results, we analyze the steady-state properties of the system with both time-independent and time-dependent transition rates, focusing on the statistics of extractable work, bit transcription fidelity, and two-bit mutual information. Together, these results provide a holistic view of a simplified model for DNA transcription as an information-theoretic process.",
+    "status": "found"
+  },
+  "2511.15692": {
+    "arxiv_id": "2511.15692",
+    "title": "Hyperspectral Image Classification using Spectral-Spatial Mixer Network",
+    "authors": [
+      "Mohammed Q. Alkhatib"
+    ],
+    "submission_date": "2025-11-19T18:48:52Z",
+    "latest_updated": "2026-05-29T10:30:45Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.15692v1",
+      "2511.15692v2"
+    ],
+    "abstract": "This paper introduces SS-MixNet, a lightweight and effective deep learning model for hyperspectral image (HSI) classification. The architecture integrates 3D convolutional layers for local spectral-spatial feature extraction with two parallel MLP-style mixer blocks that capture long-range dependencies in spectral and spatial dimensions. A depthwise convolution-based attention mechanism is employed to enhance discriminative capability with minimal computational overhead. The model is evaluated on the QUH-Tangdaowan and QUH-Qingyun datasets using only 1% of labeled data for training and validation. SS-MixNet achieves the highest performance among compared methods, including 2D-CNN, 3D-CNN, IP-SWIN, SimPoolFormer, and HybridKAN, reaching 95.68% and 93.86% overall accuracy on the Tangdaowan and Qingyun datasets, respectively. The results, supported by quantitative metrics and classification maps, confirm the model's effectiveness in delivering accurate and robust predictions with limited supervision. The code will be made publicly available at: https://github.com/mqalkhatib/SS-MixNet",
+    "status": "found"
+  },
+  "2511.15693": {
+    "arxiv_id": "2511.15693",
+    "title": "Effects of short-range correlations at high densities on neutron stars with and without DM content: role of the repulsive self-interaction",
+    "authors": [
+      "Odilon Lourenço",
+      "Everson H. Rodrigues",
+      "Carline Biesdorf",
+      "Mariana Dutra"
+    ],
+    "submission_date": "2025-11-19T18:50:27Z",
+    "latest_updated": "2026-04-20T17:28:30Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2511.15693v1",
+      "2511.15693v2",
+      "2511.15693v3"
+    ],
+    "abstract": "In this work, we investigate how short-range correlations affect relativistic hadronic models at high densities, with direct consequences for the structure of neutron stars, both with and without dark matter content. Two versions of the model are examined: one with vector self-interactions up to second order ($ω_0^2$) and another including a fourth-order term ($ω_0^4$). We show that SRC tend to soften the equation of state when only the quadratic term is present, but produce a noticeable stiffening once the $ω_0^4$ term is included. The corresponding Tolman-Oppenheimer-Volkoff solutions for pure neutron stars indicate that short-range correlations reduce the maximum mass in the first case but increase it in the second. Extending the analysis to stars containing a fermionic dark matter component, within the two-fluid formalism, we verify that the same features appear in the respective mass-radius diagrams. In particular, the decrease of the maximum mass with increasing dark matter fraction is partly compensated by the SRC effects in the hadronic sector for the model with the fourth-order term. In all cases, the resulting parametrizations are consistent with recent astrophysical constraints, including the joint NICER-XMM-Newton analyses of the pulsars PSR J0030+0451 and PSR J0740+6620, as well as the gravitational-wave event GW190425.",
+    "status": "found"
+  },
+  "2511.15694": {
+    "arxiv_id": "2511.15694",
+    "title": "The Impact of Quantization on Large Reasoning Model Reinforcement Learning",
+    "authors": [
+      "Medha Kumar",
+      "Zifei Xu",
+      "Xin Wang",
+      "Tristan Webb"
+    ],
+    "submission_date": "2025-11-19T18:50:58Z",
+    "latest_updated": "2025-11-19T18:50:58Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.15694v1"
+    ],
+    "abstract": "Strong reasoning capabilities can now be achieved by large-scale reinforcement learning (RL) without any supervised fine-tuning. Although post-training quantization (PTQ) and quantization-aware training (QAT) are well studied in the context of fine-tuning, how quantization impacts RL in large reasoning models (LRMs) remains an open question. To answer this question, we conducted systematic experiments and discovered a significant gap in reasoning performance on mathematical benchmarks between post-RL quantized models and their quantization-aware RL optimized counterparts. Our findings suggest that quantization-aware RL training negatively impacted the learning process, whereas PTQ and QLoRA led to greater performance.",
+    "status": "found"
+  },
+  "2511.15695": {
+    "arxiv_id": "2511.15695",
+    "title": "The Relationship Between Emission Line and Continuum Luminosity and the Baldwin Effect in Blazars. I. The Case of the Mg II λ2798 Å Emission Line",
+    "authors": [
+      "Víctor M. Patiño-Álvarez",
+      "Jonhatan U. Guerrero-González",
+      "Vahram Chavushyan",
+      "Douglas E. Monjardin-Ward",
+      "Tigran G. Arshakian",
+      "Irene Cruz-González"
+    ],
+    "submission_date": "2025-11-19T18:52:38Z",
+    "latest_updated": "2025-11-19T18:52:38Z",
+    "revised_dates": null,
+    "venue": "A&A 705, A83 (2026)",
+    "latest_version": 1,
+    "versions": [
+      "2511.15695v1"
+    ],
+    "abstract": "Aims. This study investigates the relationship between the Mg II λ2798 Å emission line and the 3000 Å continuum luminosity, as well as the Baldwin Effect, in a sample of 40,685 radio-quiet (RQ) quasars and 441 Flat Spectrum Radio Quasars (FSRQs). Methods. We perform a comprehensive re-evaluation of the Mg II-3000 Å correlation, explicitly accounting for dispersion introduced by AGN variability. After excluding >3000 radio-loud sources, we employ a binning technique to mitigate variability effects, yielding a refined empirical relation. We also further examine the Non-Thermal Dominance (NTD) parameter, to investigate the dominant source of the continuum. Results. Our analysis reveals statistically significant differences in the slopes of the line-continuum luminosity relation between RQ quasars and FSRQs, with a parallel discrepancy in the Baldwin Effect. These findings imply either (1) intrinsic differences in the accretion disk spectra of RQ AGNs and FSRQs or (2) jet-induced continuum emission in FSRQs contributing to Broad Line Region (BLR) ionization. We also found that a substantial fraction of both RQ quasars (43.8\\%) and blazars (55.5\\%) exhibit NTD < 1. For blazars, this suggests that the accretion disk alone cannot fully explain BLR ionization; while we interpret NTD < 1 in radio-quiet quasars as a signature of several physical mechanisms: anomalies in the BLR structure (such as outflow or inflows), time lags between continuum and line variations, and the suppression of the UV continuum by a strong corona that diverts accretion power. Finally, we demonstrate that the Baldwin Effect emerges naturally from the line-continuum luminosity relationship, requiring no additional physical mechanism to explain its origin",
+    "status": "found"
+  },
+  "2511.15696": {
+    "arxiv_id": "2511.15696",
+    "title": "Polynomially effective equidistribution for certain unipotent subgroups in quotients of perfect Lie groups",
+    "authors": [
+      "Zuo Lin"
+    ],
+    "submission_date": "2025-11-19T18:54:47Z",
+    "latest_updated": "2026-02-26T03:05:45Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2511.15696v1",
+      "2511.15696v2",
+      "2511.15696v3"
+    ],
+    "abstract": "We prove an effective equidistribution theorem for orbits of certain unipotent subgroups in arithmetic quotients of perfect Lie groups with a polynomial error term. Even for semisimple quotients, our result provides the first infinite family of examples where effective equidistribution with polynomial error rate is obtained for non-horospherical unipotent subgroups. The proof is based on the spectral gap of the ambient space, an effective closing lemma, Bourgain's discretized projection theorem, and a sub-modularity inequality in irreducible representation. The sub-modularity inequality is crucial to our proof and is of independent interest. As applications, we obtain effective estimates on distribution of lattice orbits on homogeneous spaces, as well as an effective version of the Oppenheim conjecture for indefinite quadratic forms with a polynomial error rate in all dimension $d \\geq 3$.",
+    "status": "found"
+  },
+  "2511.15697": {
+    "arxiv_id": "2511.15697",
+    "title": "Real-time Scattering in φ^4 Theory using Matrix Product States",
+    "authors": [
+      "Bahaa Al Sayegh",
+      "Wissam Chemissany"
+    ],
+    "submission_date": "2025-11-19T18:55:00Z",
+    "latest_updated": "2026-04-18T11:20:05Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.15697v1",
+      "2511.15697v2"
+    ],
+    "abstract": "We investigate the critical behavior and real-time scattering dynamics of the interacting $φ^4$ quantum field theory in (1+1)-dimensions using uniform matrix product states (uMPS) and the time-dependent variational principle (TDVP). A finite-entanglement scaling analysis at $λ= 0.8$ bounds the critical mass-squared to $μ_c^2 \\in ]-0.2595,-0.2594[$ and provides a quantitative map of the symmetric, near-critical, and spontaneously broken regimes. Using these ground states as asymptotic vacua, we simulate two-particle collisions in a sandwich geometry and extract the elastic scattering probability $P_{11\\to 11}(E)$ and Wigner time delay $Δt(E)$ using a sandwich geometry protocol. We find strongly inelastic scattering in the symmetric phase ($P_{11\\to 11} \\simeq 0.712$, $Δt \\simeq -158$ for $μ^2 = +0.2$) and almost perfectly elastic collisions in the spontaneously broken phase ($P_{11\\to 11} \\simeq 1$, $Δt \\simeq -108$ for $μ^2=-0.1$ and $P_{11\\to 11} \\simeq 1$, $Δt \\simeq -177.781$ for $μ^2=-0.5$). Crucially, the scattering protocol exhibits a distinctive divergence near the critical coupling; we show that this behavior serves as a dynamical signature of the quantum critical point, arising directly from the closing of the mass gap. These results demonstrate that TDVP-based uMPS can effectively probe nonperturbative scattering and critical dynamics in lattice field theories with controlled entanglement truncation.",
+    "status": "found"
+  },
+  "2511.15698": {
+    "arxiv_id": "2511.15698",
+    "title": "RescueLens: LLM-Powered Triage and Action on Volunteer Feedback for Food Rescue",
+    "authors": [
+      "Naveen Raman",
+      "Jingwu Tang",
+      "Zhiyu Chen",
+      "Zheyuan Ryan Shi",
+      "Sean Hudson",
+      "Ameesh Kapoor",
+      "Fei Fang"
+    ],
+    "submission_date": "2025-11-19T18:55:16Z",
+    "latest_updated": "2025-11-19T18:55:16Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.15698v1"
+    ],
+    "abstract": "Food rescue organizations simultaneously tackle food insecurity and waste by working with volunteers to redistribute food from donors who have excess to recipients who need it. Volunteer feedback allows food rescue organizations to identify issues early and ensure volunteer satisfaction. However, food rescue organizations monitor feedback manually, which can be cumbersome and labor-intensive, making it difficult to prioritize which issues are most important. In this work, we investigate how large language models (LLMs) assist food rescue organizers in understanding and taking action based on volunteer experiences. We work with 412 Food Rescue, a large food rescue organization based in Pittsburgh, Pennsylvania, to design RescueLens, an LLM-powered tool that automatically categorizes volunteer feedback, suggests donors and recipients to follow up with, and updates volunteer directions based on feedback. We evaluate the performance of RescueLens on an annotated dataset, and show that it can recover 96% of volunteer issues at 71% precision. Moreover, by ranking donors and recipients according to their rates of volunteer issues, RescueLens allows organizers to focus on 0.5% of donors responsible for more than 30% of volunteer issues. RescueLens is now deployed at 412 Food Rescue and through semi-structured interviews with organizers, we find that RescueLens streamlines the feedback process so organizers better allocate their time.",
+    "status": "found"
+  },
+  "2511.15699": {
+    "arxiv_id": "2511.15699",
+    "title": "Joint Semantic-Channel Coding and Modulation for Token Communications",
+    "authors": [
+      "Jingkai Ying",
+      "Zhijin Qin",
+      "Yulong Feng",
+      "Liejun Wang",
+      "Xiaoming Tao"
+    ],
+    "submission_date": "2025-11-19T18:56:32Z",
+    "latest_updated": "2025-11-19T18:56:32Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.15699v1"
+    ],
+    "abstract": "In recent years, the Transformer architecture has achieved outstanding performance across a wide range of tasks and modalities. Token is the unified input and output representation in Transformer-based models, which has become a fundamental information unit. In this work, we consider the problem of token communication, studying how to transmit tokens efficiently and reliably. Point cloud, a prevailing three-dimensional format which exhibits a more complex spatial structure compared to image or video, is chosen to be the information source. We utilize the set abstraction method to obtain point tokens. Subsequently, to get a more informative and transmission-friendly representation based on tokens, we propose a joint semantic-channel and modulation (JSCCM) scheme for the token encoder, mapping point tokens to standard digital constellation points (modulated tokens). Specifically, the JSCCM consists of two parallel Point Transformer-based encoders and a differential modulator which combines the Gumel-softmax and soft quantization methods. Besides, the rate allocator and channel adapter are developed, facilitating adaptive generation of high-quality modulated tokens conditioned on both semantic information and channel conditions. Extensive simulations demonstrate that the proposed method outperforms both joint semantic-channel coding and traditional separate coding, achieving over 1dB gain in reconstruction and more than 6x compression ratio in modulated symbols.",
+    "status": "found"
+  },
+  "2511.15700": {
+    "arxiv_id": "2511.15700",
+    "title": "First Frame Is the Place to Go for Video Content Customization",
+    "authors": [
+      "Jingxi Chen",
+      "Zongxia Li",
+      "Zhichao Liu",
+      "Guangyao Shi",
+      "Xiyang Wu",
+      "Fuxiao Liu",
+      "Cornelia Fermuller",
+      "Brandon Y. Feng",
+      "Yiannis Aloimonos"
+    ],
+    "submission_date": "2025-11-19T18:56:50Z",
+    "latest_updated": "2026-03-23T16:43:36Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.15700v1",
+      "2511.15700v2"
+    ],
+    "abstract": "What role does the first frame play in video generation models? Traditionally, it's viewed as the spatial-temporal starting point of a video, merely a seed for subsequent animation. In this work, we reveal a fundamentally different perspective: video models implicitly treat the first frame as a conceptual memory buffer that stores visual entities for later reuse during generation. Leveraging this insight, we show that it's possible to achieve robust and generalized video content customization in diverse scenarios, using only 20-50 training examples without architectural changes or large-scale finetuning. This unveils a powerful, overlooked capability of video generation models for reference-based video customization.",
+    "status": "found"
+  },
+  "2511.15701": {
+    "arxiv_id": "2511.15701",
+    "title": "The Atacama Cosmology Telescope: Cross-correlation of kSZ and continuity equation velocity reconstruction with photometric DESI LRGs",
+    "authors": [
+      "Fiona McCarthy",
+      "Boryana Hadzhiyska",
+      "J. Richard Bond",
+      "William R. Coulton",
+      "Jo Dunkley",
+      "Carmen Embil Villagra",
+      "Matthew C. Johnson",
+      "Kavilan Moodley",
+      "Toshiya Namikawa",
+      "Bernardita Ried Guachalla",
+      "Blake D. Sherwin",
+      "Cristóbal Sifón",
+      "Alexander van Engelen",
+      "Eve M. Vavagiakis",
+      "Edward J. Wollack"
+    ],
+    "submission_date": "2025-11-19T18:57:34Z",
+    "latest_updated": "2025-11-25T17:11:25Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.15701v1",
+      "2511.15701v2"
+    ],
+    "abstract": "Over the last year, kinematic Sunyaev--Zel'dovich (kSZ) velocity reconstruction -- the measurement of the large-scale velocity field using the anisotropic statistics of the small-scale kSZ-galaxy overdensity correlation -- has emerged as a statistically significant probe of the large-scale Universe. In this work, we perform a 2-dimensional tomographic reconstruction using ACT DR6 CMB data and DESI legacy luminous red galaxies (LRGs). We measure the cross-correlation of the kSZ-reconstructed velocity $v^{\\mathrm{kSZ}}$ with the velocity inferred from the continuity equation applied to the DESI LRGs $v^{\\mathrm{cont}}$ at the $\\sim 10 σ$ level, detecting the signal with an amplitude with respect to our theory of $b_v = 0.339\\pm 0.034$. We fit a scale-dependent galaxy bias model to our measurement in order to constrain local primordial non-Gaussianity $f_{\\mathrm{NL}}^{\\mathrm{loc}}$, finding {$f_{\\mathrm{NL}}^{\\mathrm{loc}}=-180^{+61}_{-86}$} at 67\\% confidence, with $f_{\\mathrm{NL}}^{\\mathrm{loc}}$ consistent with zero at 95\\% confidence. We also measure an auto spectrum at $2.1σ$ significance which provides a constraint on $b_v$ of $b_v=0.26_{-0.05}^{+0.11}$, which is consistent with the measurement from the cross spectrum. Our combined measurement is $b_v=0.33\\pm0.03$, an $11σ$ measurement. We find a good fit of our model to the data in all cases. Finally, we use different ACT frequency combinations to explore foreground contamination, finding no evidence for foreground contamination in our velocity cross correlation. We compare to a similar measurement where $v^{\\mathrm{kSZ}}$ is directly cross correlated with the large-scale galaxy field, and find signs of foreground contamination which is contained in the equal-redshift spectra.",
+    "status": "found"
+  },
+  "2511.15702": {
+    "arxiv_id": "2511.15702",
+    "title": "Terrestrial Matter Effects on Reactor Antineutrino Oscillations: Constant vs. Fluctuated Density Profiles",
+    "authors": [
+      "Yu-Feng Li",
+      "Andong Wang",
+      "Ya Xu",
+      "Jing-yu Zhu"
+    ],
+    "submission_date": "2025-11-19T18:58:29Z",
+    "latest_updated": "2026-02-15T07:56:06Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2511.15702v1",
+      "2511.15702v2",
+      "2511.15702v3"
+    ],
+    "abstract": "The JUNO Collaboration has recently released its first reactor antineutrino oscillation result, achieving unprecedented precision in the measurement of $Δm^2_{21}$ and $\\sin^2θ_{12}$. We emphasize that the accurate determination and modeling of the terrestrial matter density profile are fundamental for extracting the oscillation parameters and probing the neutrino mass ordering. This paper presents a realistic piecewise-constant model for the shallow crustal density profile along the baselines from Taishan and Yangjiang to the experimental hall, based on geological and petrophysical information. The uncertainty in the density profiles arises from variations in the density and length of each segment, both of which are conservatively estimated to be 10%. A careful comparison of constant and fluctuated density profiles is provided and the implications for the precision measurement of oscillation parameters are discussed. Finally, we also discuss the prospect of shallow crust tomography in future reactor neutrino experiments.",
+    "status": "found"
+  },
+  "2511.15703": {
+    "arxiv_id": "2511.15703",
+    "title": "Think Visually, Reason Textually: Vision-Language Synergy in ARC",
+    "authors": [
+      "Beichen Zhang",
+      "Yuhang Zang",
+      "Xiaoyi Dong",
+      "Yuhang Cao",
+      "Haodong Duan",
+      "Dahua Lin",
+      "Jiaqi Wang"
+    ],
+    "submission_date": "2025-11-19T18:59:04Z",
+    "latest_updated": "2025-11-26T12:23:11Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.15703v1",
+      "2511.15703v2"
+    ],
+    "abstract": "Abstract reasoning from minimal examples remains a core unsolved problem for frontier foundation models such as GPT-5 and Grok 4. These models still fail to infer structured transformation rules from a handful of examples, which is a key hallmark of human intelligence. The Abstraction and Reasoning Corpus for Artificial General Intelligence (ARC-AGI) provides a rigorous testbed for this capability, demanding conceptual rule induction and transfer to novel tasks. Most existing methods treat ARC-AGI as a purely textual reasoning task, overlooking the fact that humans rely heavily on visual abstraction when solving such puzzles. However, our pilot experiments reveal a paradox: naively rendering ARC-AGI grids as images degrades performance due to imprecise rule execution. This leads to our central hypothesis that vision and language possess complementary strengths across distinct reasoning stages: vision supports global pattern abstraction and verification, whereas language specializes in symbolic rule formulation and precise execution. Building on this insight, we introduce two synergistic strategies: (1) Vision-Language Synergy Reasoning (VLSR), which decomposes ARC-AGI into modality-aligned subtasks; and (2) Modality-Switch Self-Correction (MSSC), which leverages vision to verify text-based reasoning for intrinsic error correction. Extensive experiments demonstrate that our approach yields up to a 4.33\\% improvement over text-only baselines across diverse flagship models and multiple ARC-AGI tasks. Our findings suggest that unifying visual abstraction with linguistic reasoning is a crucial step toward achieving generalizable, human-like intelligence in future foundation models. Source code is released at https://github.com/InternLM/ARC-VL.",
+    "status": "found"
+  },
+  "2511.15704": {
+    "arxiv_id": "2511.15704",
+    "title": "In-N-On: Scaling Egocentric Manipulation with in-the-wild and on-task Data",
+    "authors": [
+      "Xiongyi Cai",
+      "Ri-Zhao Qiu",
+      "Geng Chen",
+      "Lai Wei",
+      "Isabella Liu",
+      "Tianshu Huang",
+      "Xuxin Cheng",
+      "Xiaolong Wang"
+    ],
+    "submission_date": "2025-11-19T18:59:04Z",
+    "latest_updated": "2025-11-19T18:59:04Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.15704v1"
+    ],
+    "abstract": "Egocentric videos are a valuable and scalable data source to learn manipulation policies. However, due to significant data heterogeneity, most existing approaches utilize human data for simple pre-training, which does not unlock its full potential. This paper first provides a scalable recipe for collecting and using egocentric data by categorizing human data into two categories: in-the-wild and on-task alongside with systematic analysis on how to use the data. We first curate a dataset, PHSD, which contains over 1,000 hours of diverse in-the-wild egocentric data and over 20 hours of on-task data directly aligned to the target manipulation tasks. This enables learning a large egocentric language-conditioned flow matching policy, Human0. With domain adaptation techniques, Human0 minimizes the gap between humans and humanoids. Empirically, we show Human0 achieves several novel properties from scaling human data, including language following of instructions from only human data, few-shot learning, and improved robustness using on-task data. Project website: https://xiongyicai.github.io/In-N-On/",
+    "status": "found"
+  },
+  "2511.15705": {
+    "arxiv_id": "2511.15705",
+    "title": "GeoVista: Web-Augmented Agentic Visual Reasoning for Geolocalization",
+    "authors": [
+      "Yikun Wang",
+      "Zuyan Liu",
+      "Ziyi Wang",
+      "Han Hu",
+      "Pengfei Liu",
+      "Yongming Rao"
+    ],
+    "submission_date": "2025-11-19T18:59:22Z",
+    "latest_updated": "2025-12-18T16:47:33Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.15705v1",
+      "2511.15705v2"
+    ],
+    "abstract": "Current research on agentic visual reasoning enables deep multimodal understanding but primarily focuses on image manipulation tools, leaving a gap toward more general-purpose agentic models. In this work, we revisit the geolocalization task, which requires not only nuanced visual grounding but also web search to confirm or refine hypotheses during reasoning. Since existing geolocalization benchmarks fail to meet the need for high-resolution imagery and the localization challenge for deep agentic reasoning, we curate GeoBench, a benchmark that includes photos and panoramas from around the world, along with a subset of satellite images of different cities to rigorously evaluate the geolocalization ability of agentic models. We also propose GeoVista, an agentic model that seamlessly integrates tool invocation within the reasoning loop, including an image-zoom-in tool to magnify regions of interest and a web-search tool to retrieve related web information. We develop a complete training pipeline for it, including a cold-start supervised fine-tuning (SFT) stage to learn reasoning patterns and tool-use priors, followed by a reinforcement learning (RL) stage to further enhance reasoning ability. We adopt a hierarchical reward to leverage multi-level geographical information and improve overall geolocalization performance. Experimental results show that GeoVista surpasses other open-source agentic models on the geolocalization task greatly and achieves performance comparable to closed-source models such as Gemini-2.5-flash and GPT-5 on most metrics.",
+    "status": "found"
+  },
+  "2511.15706": {
+    "arxiv_id": "2511.15706",
+    "title": "RoMa v2: Harder Better Faster Denser Feature Matching",
+    "authors": [
+      "Johan Edstedt",
+      "David Nordström",
+      "Yushan Zhang",
+      "Georg Bökman",
+      "Jonathan Astermark",
+      "Viktor Larsson",
+      "Anders Heyden",
+      "Fredrik Kahl",
+      "Mårten Wadenbäck",
+      "Michael Felsberg"
+    ],
+    "submission_date": "2025-11-19T18:59:38Z",
+    "latest_updated": "2026-07-06T10:31:24Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2511.15706v1",
+      "2511.15706v2",
+      "2511.15706v3"
+    ],
+    "abstract": "Dense feature matching aims to estimate all correspondences between two images of a 3D scene and has recently been established as the gold standard due to its high accuracy and robustness. However, existing dense matchers still fail or perform poorly for many hard real-world scenarios, and high-precision models are often slow, limiting their applicability. In this paper, we attack these weaknesses on a wide front through a series of systematic improvements that together yield a significantly better model. In particular, we construct a novel matching architecture and loss, which, combined with a curated diverse training distribution, enables our model to solve many complex matching tasks. We further make training faster through a decoupled two-stage matching-then-refinement pipeline, and at the same time, significantly reduce refinement memory usage through a custom CUDA kernel. Finally, we leverage the recent DINOv3 foundation model along with multiple other insights to make the model more robust and unbiased. In our extensive set of experiments, we show that the resulting novel matcher sets a new state-of-the-art, being significantly more accurate than its predecessors. Code is available at https://github.com/Parskatt/romav2",
+    "status": "found"
+  },
+  "2511.15707": {
+    "arxiv_id": "2511.15707",
+    "title": "Resolving Ratio Redundancy in Chemical Freeze-out Studies with Principal Component Analysis and Bayesian Calibration",
+    "authors": [
+      "Nachiketa Sarkar"
+    ],
+    "submission_date": "2025-11-19T18:59:39Z",
+    "latest_updated": "2025-11-19T18:59:39Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.15707v1"
+    ],
+    "abstract": "We introduce a Principal Component Analysis (PCA)--Bayesian framework for extracting chemical freeze-out conditions in relativistic heavy-ion collisions that resolves long-standing ambiguities in hadron-ratio--based analyses. By constructing all possible hadron-yield ratios from a chosen set of species and transforming them into an orthogonal PCA basis, the method removes linear redundancies and eliminates the information loss and systematic uncertainties associated with ratio selection. Energy-wise Bayesian calibration of the Hadron Resonance Gas (HRG) model is then performed directly in this decorrelated space, with a Gaussian Process emulator enabling fast and accurate model evaluations. A detailed Sobol sensitivity analysis, together with the PCA loading structure, identifies the most informative ratio combinations and reveals a transition from chemical-potential--dominated to temperature-controlled freeze-out with increasing $\\sqrt{s_{NN}}$. The calibrated model reproduces all measured ratios, and the extracted freeze-out parameters are consistent with previous HRG determinations.",
+    "status": "found"
+  },
+  "2511.15708": {
+    "arxiv_id": "2511.15708",
+    "title": "Moiré-induced gapped phases in twisted nodal superconductors",
+    "authors": [
+      "Kevin P. Lucht",
+      "J. H. Pixley",
+      "Pavel A. Volkov"
+    ],
+    "submission_date": "2025-11-19T18:59:54Z",
+    "latest_updated": "2025-11-20T23:07:04Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.15708v1",
+      "2511.15708v2"
+    ],
+    "abstract": "We demonstrate the emergence of gapped phases driven by the moiré superlattice that trivialize the topological states in twisted nodal superconductors. The effect arises from umklapp tunneling between non-adjacent Dirac points in momentum space close to specific twist angles or chemical potentials, determined by the Fermi surface geometry. We confirm the robustness of the non-topological phase against interactions with self-consistent calculations and show that this gap competes with the previously predicted topological gapped phases, leading to topological phase transitions. These transitions were overlooked in prior literature, signifying the necessity of modifying the phase diagrams of topological phases exhibited in twisted nodal superconductors with and without an interlayer current. We also estimate the relevant twist angles and discuss experimental signatures, focusing on twisted Bi$_2$Sr$_2$CaCu$_2$O$_{8+x}$",
+    "status": "found"
+  }
+}

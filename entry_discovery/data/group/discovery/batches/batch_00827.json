@@ -1,0 +1,377 @@
+{
+  "2609.14374": {
+    "arxiv_id": "2609.14374",
+    "title": "LLaTSA: Large Language Model-Aligned General-Purpose Transient Stability Analysis",
+    "authors": [
+      "Chao Shen",
+      "Hongwei Zhen",
+      "Junyan Shao",
+      "Zhenghao Yang",
+      "Yifan Zhang",
+      "Mingyang Sun"
+    ],
+    "submission_date": "2026-09-13T08:07:08Z",
+    "latest_updated": "2026-09-13T08:07:08Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14374v1"
+    ],
+    "abstract": "Dynamic trajectory prediction has become an important paradigm for data-driven transient stability analysis (TSA), yet most existing predictors remain system-specific and require substantial retraining when network configurations, generation mixes, or state-variable sets change. Uni-TSA introduced a general-purpose TSA framework that combines channel-independent modeling with a pretrained large language model (LLM) predictor. Nevertheless, its application to heterogeneous systems is limited by ambiguity in short observations, a mismatch between numerical trajectories and LLM embeddings, neglected coupling among state variables, and the high inference cost of dense backbones. This paper proposes LLaTSA, an LLM-aligned framework for general-purpose trajectory-based TSA. LLaTSA first incorporates operating conditions, disturbance attributes, and state-variable identity through a structured textual prefix. It then aligns normalized temporal patches with a TSA-related vocabulary before processing them with a pretrained sparse decoder-only mixture-of-experts (MoE) backbone. A state-variable coupling module captures coordinated post-fault evolution, while teacher forcing and rollout-based training support iterative long-horizon prediction. Case studies on multiple test systems demonstrate accurate trajectory prediction, reliable stability discrimination, and effective adaptation across unseen scenarios.",
+    "status": "found"
+  },
+  "2609.14375": {
+    "arxiv_id": "2609.14375",
+    "title": "Quantum synchronization: A tutorial guide",
+    "authors": [
+      "Sourabh Lahiri",
+      "Shamik Gupta"
+    ],
+    "submission_date": "2026-09-13T08:11:19Z",
+    "latest_updated": "2026-09-13T08:11:19Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14375v1"
+    ],
+    "abstract": "Synchronization is a collective phenomenon in which interacting nonlinear oscillators develop a persistent relation between their phases and frequencies. In quantum systems, its description requires connecting the classical dynamics of limit-cycle oscillators with quantum fluctuations, dissipation, and the notion of phase. In this tutorial review, we offer a systematic framework for analyzing synchronization in classical and quantum dynamical systems. Starting from amplitude-phase dynamics, we introduce successively topics of relevance, such as phase locking, the Adler equation, Arnold tongues, and the Kuramoto model, and use these concepts to analyze coupled oscillators and their stability. We then formulate the corresponding description for quantum limit-cycle oscillators using Lindblad master equations and phase-space methods, with explicit examples of two and many coupled oscillators. We further discuss noise, synchronization measures, and the extreme quantum regime, including synchronization in spin systems. The emphasis throughout is on analytical derivations and a practical methodology for identifying synchronized states, determining their stability, and characterizing synchronization in quantum systems. The review is designed as a self-contained guide from which we hope that students can learn the essential concepts and techniques, while researchers can readily find the analytical tools and methodological insights needed to approach new synchronization problems.",
+    "status": "found"
+  },
+  "2609.14376": {
+    "arxiv_id": "2609.14376",
+    "title": "Orientation Control of Soft Robots via Adiabatic Spectral Submanifolds",
+    "authors": [
+      "Aron Karakai",
+      "Roshan S. Kaundinya",
+      "Mike Yan Michelis",
+      "Robert Katzschmann",
+      "George Haller"
+    ],
+    "submission_date": "2026-09-13T08:17:15Z",
+    "latest_updated": "2026-09-13T08:17:15Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14376v1"
+    ],
+    "abstract": "Soft robots are commonly sought for safety-critical interactions in delicate environments, where accurate position and orientation control is imperative. Model predictive control (MPC) offers a solution, but it requires a model of the robot's infinite-dimensional nonlinear dynamics that is at once accurate and computationally cheap. Recent theory on adiabatic spectral submanifolds (aSSMs) and their applications to soft robots provide data-driven model-reduction methods to construct such models. Here, we extend these methods to identify aSSMs from enlarged observable datasets and upgrade the currently available aSSM-MPC schemes. Evaluated on a high-fidelity finite-element simulation of a pressure-actuated soft arm, our controller reduces position and orientation tracking error by more than 60% compared to existing data-driven baselines.",
+    "status": "found"
+  },
+  "2609.14377": {
+    "arxiv_id": "2609.14377",
+    "title": "Rethinking Camouflage Image Generation towards a Training-Free Paradigm",
+    "authors": [
+      "Haodong Yang",
+      "Zhongling Huang",
+      "Gong Cheng"
+    ],
+    "submission_date": "2026-09-13T08:24:45Z",
+    "latest_updated": "2026-10-20T09:22:48Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2609.14377v1",
+      "2609.14377v2"
+    ],
+    "abstract": "Camouflage image generation (CIG) aims to synthesize realistic camouflaged images by blending foreground objects into concealment-compatible background contexts. Achieving this objective requires jointly satisfying three coupled requirements: foreground preservation to retain target integrity, semantic compatibility to select plausible concealment contexts, and appearance assimilation to reduce visual discrepancies. Recent approaches predominantly rely on task-specific training on camouflage datasets to address these requirements, incurring substantial computational cost and limiting generalization beyond the training domain. To address these limitations, we formulate training-free CIG as a concealment-oriented paradigm that preserves the target while reducing its perceptual separability from the synthesized surroundings, rather than maintaining its visual prominence, without parameter updates. We instantiate this paradigm with FreeCam based on a frozen inpainting diffusion framework to preserve the foreground. Within this framework, a Contextual Reasoning Module exploits frozen multimodal priors to infer an environment favorable to concealment, thereby promoting semantic compatibility, while an Intrinsic Appearance Module extracts low-level color and texture cues from the foreground to guide background synthesis toward appearance assimilation. Extensive experiments demonstrate that FreeCam achieves state-of-the-art generation quality and camouflage effectiveness without task-specific training, while its generated images provide synthetic supervision for camouflaged object detection and reduce target detectability under general object detectors.",
+    "status": "found"
+  },
+  "2609.14378": {
+    "arxiv_id": "2609.14378",
+    "title": "From Transition-State Geometry to Gap Times: What Lagrangian Betweenness Measures in Chemical Reaction Dynamics",
+    "authors": [
+      "Stephen Wiggins"
+    ],
+    "submission_date": "2026-09-13T08:28:31Z",
+    "latest_updated": "2026-09-22T08:36:59Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2609.14378v1",
+      "2609.14378v2"
+    ],
+    "abstract": "A chemical transition state is a phase-space bottleneck: trajectories approach along stable directions and leave along unstable directions. Lagrangian betweenness (LB), introduced in finite-time transport theory for fluid flows, combines backward and forward deformation in a way suggestive of this gather-and-disperse geometry. We ask what LB measures when the transition-state geometry is known. For a linear rank-one saddle, LB is spatially constant even though the stable and unstable manifolds are present. Relative nonlinear corrections remain small on shrinking initial neighborhoods, including observation times on the logarithmic local escape scale. At fixed spatial resolution, however, increasing observation time can concentrate the spatial variation of LB near a stable or unstable manifold. A separable quartic Hamiltonian makes these two limits explicit. A nonseparable Hamiltonian shows local flattening near a hyperbolic periodic orbit. We then use HCN/CNH isomerization, where dividing surfaces and gap times are established by phase-space transition-state theory. Before any exit, larger LB generally accompanies longer eventual gap times. The incoming reactive action provides a dynamical interpretation: initial conditions closer to the normally hyperbolic invariant manifold have longer local passages and greater accumulated stretching during passage. Among trajectories still inside at 0.5 ps that exit before 5 ps, early LB does not usefully rank exit times. LB therefore characterizes transition-state-organized transport in this example; a large value is neither an intrinsic manifold marker nor a general measure of molecular residence time.",
+    "status": "found"
+  },
+  "2609.14379": {
+    "arxiv_id": "2609.14379",
+    "title": "Cryptanalytic Extraction of Neural Networks Without Known Architecture Assumption",
+    "authors": [
+      "Yantian Shen",
+      "Yi Chen",
+      "Anyu Wang",
+      "Hongbo Yu",
+      "Xiaoyun Wang"
+    ],
+    "submission_date": "2026-09-13T08:28:34Z",
+    "latest_updated": "2026-09-19T13:48:41Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2609.14379v1",
+      "2609.14379v2"
+    ],
+    "abstract": "Cryptanalytic model extraction aims to reconstruct a functionally equivalent model through black-box interactions with the victim model. Under the fundamental assumption that the network architecture is completely known, existing attacks achieve the goal by recovering the model parameters. In this paper, we explore whether this assumption can be removed practically. Focusing on ReLU fully connected networks, which are widely studied in this field, we propose a guess-and-determine framework that jointly recovers the network architecture (including network depth and hidden-layer dimensions) and the model parameters. This framework is based on a simple yet effective high-level idea: after designing a parameter recovery attack under the known-architecture assumption, we can analyze the architecture-sensitive traces observed during parameter recovery to recover the network architecture. We identify two such traces in differential extraction attacks: (i) a \\emph{zero suffix} in the merged weight vectors produced by signature recovery, whose length reveals the hidden layer dimension; and (ii) an \\emph{equality pattern} in the preimage-based sign recovery, which occurs only under the true hidden layer dimension. These two signals give rise to two routes for network architecture recovery. For the second-to-last layer, we further propose two methods, one for identifying it, and one for recovering its dimension. Practical end-to-end attacks are implemented on a wide range of ReLU neural networks, including both expansive and non-expansive networks. To the best of our knowledge, this is the first time the feasibility of achieving functionally equivalent extraction on deep neural networks, after removing the known-architecture assumption, has been demonstrated in practice.",
+    "status": "found"
+  },
+  "2609.14380": {
+    "arxiv_id": "2609.14380",
+    "title": "Nonparametric Change-Point Detection and Inference for High-Dimensional Distributions",
+    "authors": [
+      "Ping Zhao",
+      "Long Feng"
+    ],
+    "submission_date": "2026-09-13T08:29:50Z",
+    "latest_updated": "2026-09-13T08:29:50Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14380v1"
+    ],
+    "abstract": "High-dimensional distributions can change without altering means or covariances, while the number of affected coordinates is often unknown. We propose nonparametric procedures that address both challenges through standardized rank comparisons of marginal distributions. Sum and maximum scans target dense and sparse changes, and a Cauchy combination adapts to unknown sparsity. The procedures require no marginal moment assumptions and extend to multiple-change detection through wild binary segmentation. Under a weakly dependent Gaussian copula model, we establish asymptotic null distributions, asymptotic independence, detection consistency, and localization guarantees. Simulations demonstrate competitive performance for changes in shape and tails, including alternatives that preserve the first two moments. Applications to gene expression and sensor data illustrate the practical benefits of combining dense and sparse evidence.",
+    "status": "found"
+  },
+  "2609.14381": {
+    "arxiv_id": "2609.14381",
+    "title": "$H$-Operator Approximation Spaces via Delayed Riesz Means and Quasi-Banach Moduli",
+    "authors": [
+      "Daniel Akech Thiong"
+    ],
+    "submission_date": "2026-09-13T08:36:45Z",
+    "latest_updated": "2026-09-13T08:36:45Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14381v1"
+    ],
+    "abstract": "We establish a constructive and quasi-Banach framework for approximation spaces $A_μ^ρ$ of compact $H$-operators between Banach and quasi-Banach spaces. By leveraging delayed Riesz means $V_{2^{bn}}$ generated by self-adjoint differential operators $P(D)$, we replace abstract best approximants with explicit linear operator decompositions. Furthermore, we extend the theory of $H$-operator approximation spaces to quasi-Banach settings ($0 < p < 1$), bypassing the collapse of Peetre's $K$-functional by employing localized moduli of smoothness $ω_\\varphi^r(f,t)_p$. Integrating seminal spectral bounds due to Markus \\cite{M1966} and factorization techniques for operator ideals, we prove that operators belonging to $A_μ^ρ$ possess complete systems of root vectors whose expansions are Abel summable.",
+    "status": "found"
+  },
+  "2609.14382": {
+    "arxiv_id": "2609.14382",
+    "title": "A Counterexample to the Open Question on Object Ideals",
+    "authors": [
+      "Qikai Wang",
+      "Yuxiao Wang",
+      "Haiyan Zhu"
+    ],
+    "submission_date": "2026-09-13T08:38:38Z",
+    "latest_updated": "2026-09-13T08:38:38Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14382v1"
+    ],
+    "abstract": "We give a counterexample to completeness descent from ideal cotorsion pairs to their objects. A radical-square-zero algebra on the two-cycle gives a finite-dimensional example. The construction is intrinsically non-weakly-idempotent-complete.",
+    "status": "found"
+  },
+  "2609.14383": {
+    "arxiv_id": "2609.14383",
+    "title": "Contour-Guided Spectral Routing for Robust Real-Time Pedestrian Detection",
+    "authors": [
+      "Sam Williams",
+      "Yuan Xiang"
+    ],
+    "submission_date": "2026-09-13T08:38:54Z",
+    "latest_updated": "2026-09-13T08:38:54Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14383v1"
+    ],
+    "abstract": "Real-time pedestrian detection in driving scenes is constrained by three coupled failure modes: tiny targets lose discriminative evidence, occlusion weakens geometric support, and weather or illumination changes distort appearance statistics. We formulate the detector through a unified \\emph{contour-guided spectral routing} view rather than treating frequency processing, attention, and boundary reasoning as independent add-ons. The detector routes information in a prescribed order: spatial evidence is first augmented with global spectral context, deep representations then exchange spatial and spectral cues, and cross-scale fusion is finally conditioned on boundary--semantic disagreement. This ordering yields a compact representation pipeline in which low-frequency context stabilizes global structure while high-frequency evidence protects small-object contours. We further retain a wavelet-subband training transformation that perturbs low- and high-frequency coefficients independently, targeting appearance shifts caused by fog, rain, snow, and low illumination. The formulation exposes a single routing variable at each stage and distinguishes reusable signal transforms from the task-specific policy that decides where each signal is injected. On CityPersons, the proposed detector obtains 70.4 AP$_{50}$ and 44.2 AP$_{50:95}$, compared with 68.1 and 42.2 for RT-DETR, while the full wavelet-augmented configuration reaches 71.1 and 44.6.",
+    "status": "found"
+  },
+  "2609.14384": {
+    "arxiv_id": "2609.14384",
+    "title": "Formal Properties of Language as Constraints on Neural Dynamics",
+    "authors": [
+      "Elliot Murphy"
+    ],
+    "submission_date": "2026-09-13T08:41:56Z",
+    "latest_updated": "2026-09-13T08:41:56Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14384v1"
+    ],
+    "abstract": "What must a neural system be capable of to implement language? Current research annotates stimuli with linguistic variables and tests which electrodes, voxels, or language-model layers predict neural activity. Yet predictive success leaves mechanisms under-constrained. Here, we show that algebraic properties of language specify invariants that mechanisms must preserve: non-associative hierarchical grouping, commutativity, recursive closure, access to substructures, and structured workspace transitions. We term this the Neural Admissibility Program (NAP). Syntactic structure building is analyzed algebraically, with candidate mechanisms offered for each requirement: content-addressable workspace memory, graph-structured transient dynamics scheduling structure-building operations (e.g. stable heteroclinic channels), and a phase-coupled sealing operation recording grouping. Simulations show that a corrected Marcolli-Berwick entropy-optimized binding gate preserves grouping only within a narrow commitment band. As an alternative, we propose a novel neural binding operation we term 'Meld': two constituent populations converge through shared synapses, integrate sublinearly, and saturate. Meld is, to our knowledge, the closest neurally plausible composition law to syntactic Merge. It preserves every NAP invariant, uses known cortical operations, and recovers hierarchical structure at every tested depth and temperature. It predicts that effective population dimensionality separates alternative bracketings and that the composite depends on constituent disagreement. Importantly, the laws decoding bracketing most accurately are a priori inadmissible, showing that decoding accuracy alone cannot adjudicate between mechanisms. By specifying how neural dynamics can remain faithful to linguistic structure, the NAP changes the criterion by which neural implementations of cognition are evaluated.",
+    "status": "found"
+  },
+  "2609.14385": {
+    "arxiv_id": "2609.14385",
+    "title": "Matrix-tree theorem for cohomological electrical networks",
+    "authors": [
+      "Pavlo Pylyavskyy",
+      "Svetlana Shirokovskikh",
+      "Mikhail Skopenkov"
+    ],
+    "submission_date": "2026-09-13T08:42:11Z",
+    "latest_updated": "2026-09-13T08:42:11Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14385v1"
+    ],
+    "abstract": "We introduce a new type of boundary condition for electrical networks by specifying a cohomology class on the underlying cell complex. As special and limiting cases, we recover the Dirichlet boundary condition, multiport condition, and prescribed voltage drops along nontrivial cycles on a surface. In this setting, we obtain a combinatorial formula for minors of the response matrix, generalizing the matrix-tree theorem, the Kenyon-Wilson formula, and a recently discovered formula for networks on surfaces due to Lam et al. To prove this formula, we develop a statistical-physics toolbox, including a new parafermionic observable for the uniform spanning tree model. This is the first parafermionic observable that is intrinsic, in the sense that it does not require an embedding of the graph in the plane or on a surface. Other ingredients are an intrinsic Temperley correspondence and source-synchronized networks, the latter providing a completely elementary reformulation of our results.",
+    "status": "found"
+  },
+  "2609.14386": {
+    "arxiv_id": "2609.14386",
+    "title": "The (p,q)-Analogues of Bi-Stirling Eulerian Polynomials via continued fractions",
+    "authors": [
+      "Chao Xu",
+      "Jiang Zeng"
+    ],
+    "submission_date": "2026-09-13T08:45:01Z",
+    "latest_updated": "2026-09-13T08:45:01Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14386v1"
+    ],
+    "abstract": "We establish Jacobi-type continued fraction expansions for (p,q)-analogues of the bi-Stirling Eulerian polynomials, which refine classical Eulerian statistics on permutations. These polynomials admit equivalent definitions in terms of descents or excedances. The parameters p and q encode refined permutation statistics, including (ldes,rasc) and (cros,nest). Our approach is based on weighted Motzkin path models arising from variants of the bijections of Françon--Viennot and Foata--Zeilberger. As applications, we obtain new results on total positivity and gamma-positivity for several families of enumerative polynomials. Our results unify and extend a number of recent works in the literature.",
+    "status": "found"
+  },
+  "2609.14387": {
+    "arxiv_id": "2609.14387",
+    "title": "(In)stability results for the Light Ray Transform",
+    "authors": [
+      "Leonard Busch",
+      "Sebastián Muñoz-Thon",
+      "Lauri Oksanen"
+    ],
+    "submission_date": "2026-09-13T08:45:25Z",
+    "latest_updated": "2026-09-13T08:45:25Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14387v1"
+    ],
+    "abstract": "We prove quantitative instability results for the light ray transform in the Minkowski setting, and locally in the smooth and Gevrey categories. In the smooth Sobolev setting, we show that no modulus of continuity can be better than $t^α$ for any $α\\in(0,1)$, while in the Gevrey setting we obtain an explicit logarithmic lower bound. On the other hand, using the relation between stationary geometries and magnetic(-potential) systems, we obtain a stability result for \"time moments\" of the light ray transform.",
+    "status": "found"
+  },
+  "2609.14388": {
+    "arxiv_id": "2609.14388",
+    "title": "Acyclic quantum cluster algebras via Hall algebras associated to cluster categories",
+    "authors": [
+      "Changjian Fu",
+      "Haicheng Zhang"
+    ],
+    "submission_date": "2026-09-13T08:49:45Z",
+    "latest_updated": "2026-09-13T08:49:45Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14388v1"
+    ],
+    "abstract": "Let $Q$ be a finite acyclic valued quiver. We establish an alternative cluster multiplication formula in the quantum cluster algebra associated with $Q$, which exhibits certain symmetries similar to 2-Calabi--Yau properties of cluster categories. Motivated by this formula, we introduce a Hall algebra $\\mathcal {D}\\mathcal {H}_Λ^{cl}(\\widetilde{\\mathcal{A}})$ via a certain quotient of a derived Hall subalgebra associated with $Q$, serving as an algebra counterpart to cluster categories of hereditary algebras. As our main result, we prove that the quantum cluster algebra associated with $Q$ is isomorphic to the exceptional subalgebra of $\\mathcal{D}\\mathcal{H}_Λ^{cl}(\\widetilde{\\mathcal{A}})$, namely, the subalgebra generated by exceptional objects. Furthermore, when $Q$ is of Dynkin type, the quantum cluster algebra is naturally isomorphic to $\\mathcal{D}\\mathcal{H}_Λ^{cl}(\\widetilde{\\mathcal{A}})$ itself. This establishes a Hall algebra realization for all acyclic quantum cluster algebras. As an application, we introduce the Hall subalgebra of $\\mathcal{D}\\mathcal{H}_Λ^{cl}(\\widetilde{\\mathcal{A}})$ generated by projectives, yielding a Hall algebra analogue of the lower bound quantum cluster algebras. Then we show that the standard monomials of quantum projective cluster variables form a basis of the quantum cluster algebras via Hall algebra approach. Moreover, we show that the Auslander--Reiten translation of cluster categories induces an algebra automorphism of $\\mathcal {D}\\mathcal {H}_Λ^{cl}(\\widetilde{\\mathcal{A}})$. Finally, we apply the BGP-reflections to $\\mathcal {D}\\mathcal {H}_Λ^{cl}(\\widetilde{\\mathcal{A}})$, and prove that the Hall algebra $\\mathcal {D}\\mathcal {H}_Λ^{cl}(\\widetilde{\\mathcal{A}})$ is invariant up to isomorphism under the mutations at sink vertices of $Q$.",
+    "status": "found"
+  },
+  "2609.14389": {
+    "arxiv_id": "2609.14389",
+    "title": "Phase Transitions and Modulation in Dense Oscillatory Associative Memories",
+    "authors": [
+      "Shurui Liu",
+      "Zhuchun Li"
+    ],
+    "submission_date": "2026-09-13T08:52:53Z",
+    "latest_updated": "2026-09-13T08:52:53Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14389v1"
+    ],
+    "abstract": "We introduce high-order Winfree models for oscillatory associative memory. We characterize memory performance through the local-stability dichotomy between stored and unstored patterns. Using this criterion, we show that crosstalk noise drives a cascade of ferromagnetic, mixed, and spin-glass transitions as the memory load increases. For both polynomial and exponential Winfree models, we derive the phase boundaries and develop auxiliary-field modulation schemes adapted to the different phases. We further present corresponding circuit designs and numerical simulations that support our theoretical predictions.",
+    "status": "found"
+  },
+  "2609.14390": {
+    "arxiv_id": "2609.14390",
+    "title": "Reservoir-conditioned virtual returns generate random Liouvillian skin localization in a reciprocal Mott insulator",
+    "authors": [
+      "Y. T. Wang",
+      "X. Z. Zhang",
+      "W. M. Liu"
+    ],
+    "submission_date": "2026-09-13T08:54:21Z",
+    "latest_updated": "2026-09-13T08:54:21Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14390v1"
+    ],
+    "abstract": "Directional dissipation can concentrate relaxation modes in space, but connecting this accumulation to controlled microscopic processes in correlated matter requires separating virtual charge motion from spin coherence. We study this connection in a half-filled Hubbard chain with reciprocal hopping and number-conserving, direction-selective returns of virtual doublon--hole defects. Eliminating charge defects and then Mott coherences yields asymmetric spin-exchange rates under an explicit separation of timescales, with full short-chain dynamics supporting the reduction on finite exchange times. Balanced random returns concentrate the stationary population and several low-lying right modes at sample-selected positions rather than a predetermined edge, producing random Liouvillian skin localization despite zero end-to-end logarithmic rate bias. The accumulated rate imbalance determines an exact finite-density hard-core stationary state and a one-particle activated relaxation scale governed by random barriers. This connection between locally calibrated return rates, many-body stationary weights and slow relaxation offers a means of controlling transport in constrained open quantum matter without changing the reciprocal Hamiltonian.",
+    "status": "found"
+  },
+  "2609.14391": {
+    "arxiv_id": "2609.14391",
+    "title": "Newton Deep Unfolding for Compressed Sensing",
+    "authors": [
+      "Changhua He",
+      "Xianchao Xiu"
+    ],
+    "submission_date": "2026-09-13T08:56:59Z",
+    "latest_updated": "2026-09-13T08:56:59Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14391v1"
+    ],
+    "abstract": "Compressed sensing (CS) reconstructs images from highly limited measurements, but existing deep unfolding methods are typically driven by first-order optimization and weakly exploit the optimization states generated during reconstruction. To address these limitations, we propose a Newton deep unfolding network (NDU-Net), which, to the best of our knowledge, is the first deep unfolding framework that leverages second-order optimization for CS reconstruction. Specifically, NDU-Net introduces a Newton update (NU) module to estimate Newton-type update directions and generate optimization states that characterize the current reconstruction process. Furthermore, a Newton-guided multi-scale prior (MP) module is designed to incorporate these optimization states into multi-scale feature restoration, thereby enabling the learned prior to adapt to the current reconstruction stage. Experimental results under different CS ratios confirm that our proposed NDU-Net achieves promising reconstruction performance and exhibits enhanced robustness. Our code is available at https://github.com/xianchaoxiu/DNU-Net.",
+    "status": "found"
+  },
+  "2609.14392": {
+    "arxiv_id": "2609.14392",
+    "title": "Hermitian manifolds with constant holomorphic sectional curvature or real bisectional curvature",
+    "authors": [
+      "Kai Tang"
+    ],
+    "submission_date": "2026-09-13T09:01:10Z",
+    "latest_updated": "2026-09-13T09:01:10Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14392v1"
+    ],
+    "abstract": "An old conjecture in Hermitian geometry states that a compact Hermitian manifold with constant holomorphic sectional curvature is Kähler when the constant is nonzero and Chern flat when the constant is zero. Yang--Zheng introduced the real bisectional curvature as a generalization of the holomorphic sectional curvature and conjectured that, a compact Hermitian manifold with constant real bisectional curvature has zero constant and is Chern flat. They proved that the constant cannot be positive. In this paper, we first prove their conjecture. For a negative constant, we show that the metric is pluriclosed and use comparison with a negative Kähler--Einstein metric to obtain a contradiction. For the zero constant, we combine a torsion identity of Lin--Ren with the Bochner formula of Zhou--Zheng to prove Chern flatness. We also prove that a pluriclosed metric with constant negative holomorphic sectional curvature on a compact Kähler manifold is Kähler.",
+    "status": "found"
+  },
+  "2609.14393": {
+    "arxiv_id": "2609.14393",
+    "title": "New lower bounds on tensor rank of $(n,2,m)$ matrix multiplication with GPT-6",
+    "authors": [
+      "Jason Yang"
+    ],
+    "submission_date": "2026-09-13T09:06:39Z",
+    "latest_updated": "2026-10-12T02:22:15Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2609.14393v1",
+      "2609.14393v2",
+      "2609.14393v3"
+    ],
+    "abstract": "The tensor rank of $n\\times 2$-with-$2\\times m$ matrix multiplication is at least $\\left\\lceil \\frac{24m+2}{5} \\right\\rceil$ if $m\\ge n=3$ and at least $(n+2)m+n-3$ if $m\\ge n\\ge 4$, over arbitrary fields. This result matches the Hopcroft-Kerr upper bound for $n=3$ and $m\\le 6$.",
+    "status": "found"
+  }
+}

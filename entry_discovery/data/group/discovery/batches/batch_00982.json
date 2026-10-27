@@ -1,0 +1,467 @@
+{
+  "2609.17474": {
+    "arxiv_id": "2609.17474",
+    "title": "Coupled Calibration and Learning: Mitigating Teacher Bias in LLM Distillation without Target-Domain Reward Feedback",
+    "authors": [
+      "Haichen Hu",
+      "Yuheng Zhang",
+      "David Simchi-Levi"
+    ],
+    "submission_date": "2026-09-15T17:15:40Z",
+    "latest_updated": "2026-09-15T17:15:40Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17474v1"
+    ],
+    "abstract": "Large language model (LLM) distillation aims to transfer the capabilities of a powerful teacher to a smaller student. Direct imitation, however, can also transfer the teacher's systematic bias and errors. This challenge is particularly pronounced under covariate shift, when the teacher's reliability on target questions is uncertain and target-domain reward feedback is unavailable. We propose Coupled Calibration and Learning (CCL), an LLM distillation algorithm that couples teacher calibration with student updates through token-level branching, using reward feedback only on source questions. Each iteration calibrates the teacher using source feedback and then uses the calibrated teacher to train the student on target questions. The updated student, in turn, informs subsequent calibration. In an autoregressive policy framework, we prove that the output student's expected average Kullback-Leibler divergence to the oracle student converges to zero at a polynomial rate in the number of iterations. The oracle maximizes the true reference-regularized target reward within the student class, which need not represent the unrestricted optimal policy. Our analysis quantifies the progress of projected student gradient updates while controlling the error in teacher calibration. We further establish a separation from regularized direct matching: its error relative to the oracle student can remain bounded away from zero even when the teacher achieves higher regularized target reward than every student policy. These results demonstrate that LLM distillation can overcome persistent teacher bias and recover the optimal student through coupled calibration and learning, without target-domain reward feedback.",
+    "status": "found"
+  },
+  "2609.17475": {
+    "arxiv_id": "2609.17475",
+    "title": "JustFit: Just-in-Time State Management for Local LLM Serving",
+    "authors": [
+      "Yuhua Chen"
+    ],
+    "submission_date": "2026-09-15T17:15:48Z",
+    "latest_updated": "2026-09-30T00:19:14Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2609.17475v1",
+      "2609.17475v2",
+      "2609.17475v3"
+    ],
+    "abstract": "Local agents need memory for model execution and working history. We present JustFit, an MLX runtime that coordinates their overlapping allocations: KVExec executes and checkpoints four-bit KV with bounded workspace, PhaseSwap loads phase-dependent components, and StateTrans preserves history across execution modes. With Qwen3.8-27B MXFP4 on a 24 GiB M4 Pro MacBook, JustFit reaches 327,680 retained positions across two requests, 10.67 times the evaluated baseline's 30,720-position single-request record. One request completes the full 262,144-position native window at median 5.986 tokens/s. Each shape completes 16,384 outputs per request in three fresh processes: B1 uses one cold build and two prefix extensions; B2 uses three ordered prefix extensions (Section 4). Image encoding can proceed while preserving a live 196,608-input text request. A controlled, repetitive 32K+6K workload reaches median 18.284 tokens/s at 15,626 MiB; a separate AIME 2026 evaluation scores 29/30. Coordinating execution and state lifetimes makes longer histories feasible on personal hardware.",
+    "status": "found"
+  },
+  "2609.17476": {
+    "arxiv_id": "2609.17476",
+    "title": "Designing Homogeneous Ti-Nb-Fe-Sn $β$ Titanium Alloys by PBF-LB: A Pre-Alloyed Powder Blend Strategy",
+    "authors": [
+      "João Felipe Queiroz Rodrigues",
+      "Kristína Bartha",
+      "Mariano Casas-Luna",
+      "Gilberto Vicente Prandi",
+      "Márcio Sangali",
+      "Kateřina Ficková",
+      "Jiří Kozlík",
+      "Michaela Šlapáková",
+      "Martin Koller",
+      "Adam Strnad",
+      "Josef Stráský",
+      "Miloš Janeček",
+      "Rubens Caram"
+    ],
+    "submission_date": "2026-09-15T17:15:49Z",
+    "latest_updated": "2026-09-15T17:15:49Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17476v1"
+    ],
+    "abstract": "Metastable $β$ titanium alloys are attractive for biomedical and structural applications owing to their low elastic modulus, high specific strength, and excellent corrosion resistance. Laser powder bed fusion (PBF-LB) enables complex-shape production and controlled compositional variation through powder blending. However, processing elemental Ti-Nb blends often results in chemical heterogeneity from incomplete dissolution of Nb-rich particles and non-equilibrium phase formation. To address this, low-modulus Ti-Nb-Fe-Sn alloys were produced by PBF-LB using Ti-42Nb, Ti-20Nb-15Fe, and Ti-20Nb-20Sn master-alloy powders blended with commercially pure Ti. Ti-23Nb-3Fe-4Sn, Ti-26Nb-2Fe-4Sn, Ti-29Nb-1Fe-4Sn, and Ti-32Nb-4Sn were fabricated using an uncommonly large 70 $μ$m layer thickness with layer remelting, followed by heat treatment at 1000 $°$C for 2 h and water quenching. After heat treatment, all alloys exhibited low porosity, homogeneous chemical distribution, and single $β$-phase microstructures with predominantly equiaxed grains and weak crystallographic texture. Thermodynamic calculations indicated that solidification descriptors alone could not explain the non-monotonic grain-size evolution, which was attributed to inherited solidification structure, transient TiFe-like phase formation, Nb/Sn partitioning, and/or solute-drag-controlled $β$-grain growth. Hardness and yield strength decreased with decreasing Fe and increasing Nb contents, from 268 to 224 HV and 691 to 468 MPa, respectively. Young's modulus, determined by resonant ultrasound spectroscopy, ranged 63-81 GPa. These results demonstrate that pre-alloyed master-alloy blends combined with remelting and heat treatment provide an effective route for producing chemically homogeneous Ti-Nb-Fe-Sn $β$ alloys while revealing how small compositional changes govern grain-growth behavior and mechanical response.",
+    "status": "found"
+  },
+  "2609.17477": {
+    "arxiv_id": "2609.17477",
+    "title": "Bias-Induced Crossover in Absolute Capacity of Dense Associative Memory",
+    "authors": [
+      "Yuto Sakurai",
+      "Takeaki Shimokawa",
+      "Kazunori Iwata",
+      "Kazushi Mimura"
+    ],
+    "submission_date": "2026-09-15T17:16:38Z",
+    "latest_updated": "2026-10-04T23:54:01Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2609.17477v1",
+      "2609.17477v2"
+    ],
+    "abstract": "The absolute capacity of dense associative memory has mainly been analyzed for unbiased patterns. Here we examine the effect of bias in centered binary patterns under the Krotov-Hopfield single-site criterion $P_{\\mathrm{error}}=1/N$, where $P_{\\mathrm{error}}$ is the probability that a single-site flip lowers the energy of a stored pattern and $N$ is the number of neurons. Each pattern component takes $1-q$ with probability $q$ and $-q$ otherwise, where $0<q\\le1/2$. For polynomial interactions of order $n$, a signal-to-noise analysis gives an absolute capacity of order $N^{n-1}/\\ln N$ at $q=1/2$. For fixed $q<1/2$, however, the capacity is $O(N^{n/2})$ for even $n\\ge4$ and $O(N^{(n+1)/2})$ for odd $n\\ge5$. For $n=3$, both the unbiased and fixed-bias capacities remain $O(N^2/\\ln N)$. For $n\\ge4$, these different asymptotic forms imply a nonuniform large-$N$ limit near $q=1/2$. Asymptotic matching predicts a bias-induced crossover in the region $1-2q=O(\\ln N/N^{\\lfloor n/2\\rfloor-1})$. The crossover originates from a bias-dependent crosstalk mean that reduces the stability of sites carrying the more frequent value $-q$. Computer simulations are compared with the finite-size conditioned-Gaussian predictions. An activity-dependent control potential that cancels the conditional crosstalk mean restores the $N^{n-1}/\\ln N$ capacity for fixed $0<q<1/2$ within the conditioned-Gaussian approximation.",
+    "status": "found"
+  },
+  "2609.17478": {
+    "arxiv_id": "2609.17478",
+    "title": "Hypothetical connection of the theta functions of Dirichlet characters with the real cyclotomic fields",
+    "authors": [
+      "Yuri Matiyasevich"
+    ],
+    "submission_date": "2026-09-15T17:17:44Z",
+    "latest_updated": "2026-09-27T19:20:37Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2609.17478v1",
+      "2609.17478v2"
+    ],
+    "abstract": "We consider a possible approach to the Lindelöf hypothesis for Dirichlet $L$-functions. It is based on a special form of the functional equation for the corresponding theta functions. To estimate $L_χ(0.5+it)$ we need to solve certain systems of linear equations. The entries to the corresponding matrices are formed by the summands to the series for theta functions and their derivatives. Numerical data suggest that the inverse matrices have a deep structure and allow us to state a number of conjectures. In particular, it seems that for a character modulo $q$ certain entries to the inverse matrices tend to finite limits when the sizes of the matrices run over arithmetical progressions with step $2q$. Moreover, these limits belong to the real cyclotomic field $\\mathbb{Q}(\\cos(π/q))$ (up to a scaling factor of $\\sqrt{q}$).",
+    "status": "found"
+  },
+  "2609.17479": {
+    "arxiv_id": "2609.17479",
+    "title": "Det-LIME: Detector-Aware, Multi-Instance Local Interpretable Model-Agnostic Explanations for Automated Marine Mammal Detection",
+    "authors": [
+      "Jiayi Zhou",
+      "David W. Johnston",
+      "Brinnae Bent"
+    ],
+    "submission_date": "2026-09-15T17:20:16Z",
+    "latest_updated": "2026-09-15T17:20:16Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17479v1"
+    ],
+    "abstract": "Despite the rapid uptake of black-box object detectors in marine mammal research and monitoring, explainability techniques are rarely integrated into conservation workflows. Furthermore, most classification-oriented explainability tools are ill-suited to detection tasks involving imagery of social organisms or those with colonial life histories, as they ignore multiple detections within a scene and produce single-instance outputs that blur evidence across individuals. These methods also generate low-resolution, often biologically irrelevant visuals, limiting their utility for debugging, targeted data augmentation, and refined data collection. We proposed Det-LIME, a detector-aware, multi-instance adaptation of Local Interpretable Model-Agnostic Explanations (LIME) that produced instance-specific, box-aligned explanations by combining per-detection weighting, a proximity kernel that emphasizes regions near each box, and Intersection-over-Union-based matching to track the same instance across perturbations. We evaluated Det-LIME on aerial drone imagery for harbor seal detection, with an additional seabird case study to assess generality, and compared it with vanilla LIME, Stabilized LIME, Deterministic LIME, and gradient-based attribution methods. Using the Attribution Ratio and Max Saliency Hit Rate metrics, we showed that Det-LIME consistently improved multi-instance attribution. In practice, these higher-resolution, instance-aware explanations provide insight into model outputs and support post-processing, debugging, and actionable improvements in modeling and data collection or augmentation.",
+    "status": "found"
+  },
+  "2609.17480": {
+    "arxiv_id": "2609.17480",
+    "title": "Stitch-Free, Diamond-Scribed Silicon Nitride Photonic Integrated Circuits for the Visible Band",
+    "authors": [
+      "Kishor Kumar Mandal",
+      "Lekshmi Eswaramoorthy",
+      "Parul Sharma",
+      "Anuj Kumar Singh",
+      "Brijesh Kumar",
+      "Tanmay Gupta",
+      "Venu Gopal Achanta",
+      "Anshuman Kumar"
+    ],
+    "submission_date": "2026-09-15T17:22:16Z",
+    "latest_updated": "2026-09-15T17:22:16Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17480v1"
+    ],
+    "abstract": "Silicon nitride photonic integrated circuits for the visible band are conventionally built with a buried oxide overcladding and singulated with wafer-scale tooling, constraints that preclude evanescent access to the guided mode for externally integrated emitters. We report a PECVD grown $Si_3N_4$ platform designed around an air-clad waveguide whose evanescent field remains accessible along the full device length. Two process elements make this geometry practical at chip scale. Fixed-beam moving-stage electron-beam lithography writes 500 nm single-mode waveguides as one continuous exposure across the 5 mm chip, removing write-field stitching which, given the $σ^{2}/d^{4}$ scaling of sidewall scattering in this high-confinement geometry at 635 nm, would otherwise dominate the loss budget. Chip singulation is performed by pen-type diamond scribing along lithographically patterned markers registered to in-plane direction, cleaving the Si(100) substrate to yield end-facets within $2^\\circ$ of normal at $80 \\%$ yield. Structural characterization by scanning electron microscopy confirms stitch-free waveguide geometry and undamaged, near-vertical scribed facets; light is coupled end-fire into fabricated devices and guided to a microring with evanescent bus-to-ring coupling confirmed by scattering imaging, and a sidewall-roughness-dependent scattering-loss model indicates that loss remains low in the roughness regime consistent with the observed facet and sidewall quality. Building on the intrinsic emitter-resonator coupling demonstrated in, this platform extends monolithic $Si_3N_4$ photonics toward scalable visible-to-near-infrared quantum and classical circuits.",
+    "status": "found"
+  },
+  "2609.17481": {
+    "arxiv_id": "2609.17481",
+    "title": "Kemeny's constant via matrix compression and eigenvalue interlacing",
+    "authors": [
+      "A. Abiad",
+      "Á. Carmona",
+      "A. M. Encinas",
+      "E. Ghorbani",
+      "M. J. Jiménez",
+      "Á. Samperio"
+    ],
+    "submission_date": "2026-09-15T17:23:59Z",
+    "latest_updated": "2026-09-15T17:23:59Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17481v1"
+    ],
+    "abstract": "Kemeny's constant quantifies the expected time for a random walk to reach a randomly chosen vertex, capturing global properties of a Markov chain. We develop a matrix-analytic framework for bounding Kemeny's constant of a finite connected weighted graph using degree-weighted compressions of the normalized adjacency matrix, pinching inequalities, and eigenvalue interlacing. Our main partition theorem gives lower bounds in terms of the compressed spectrum, with complete equality characterizations, and converts structural graph information into spectrally computable estimates. For instance, when applied to proper color partitions, the proposed method yields a sharp lower bound on Kemeny's constant in terms of the chromatic number \\[ K(G)\\ge n-2+\\frac{1}{χ(G)}, \\] which extends a bipartite bound of Ciardo, Dahl, and Kirkland (2022) to arbitrary chromatic number, and which is incomparable with the normalized Hoffman bound by Chung (1997). For unweighted graphs, we also characterize all equality cases of this bound. We further illustrate the power of the proposed matrix framework by deriving spectral bounds for NP-hard graph problems involving normalized cuts and conductance. Our results include an asymptotically sharp conductance bound, two-sided interlacing bounds from principal submatrices and quotient matrices, and estimates for the change in Kemeny's constant under connectivity-preserving deletion of multiple edges.",
+    "status": "found"
+  },
+  "2609.17482": {
+    "arxiv_id": "2609.17482",
+    "title": "Predictive Structure Behind Rare Outcomes in Random Quantum Circuits",
+    "authors": [
+      "Myeongsu Kim",
+      "Travis Humble",
+      "Sabre Kais"
+    ],
+    "submission_date": "2026-09-15T17:24:08Z",
+    "latest_updated": "2026-10-19T17:53:45Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2609.17482v1",
+      "2609.17482v2",
+      "2609.17482v3"
+    ],
+    "abstract": "Local random quantum circuits selected for unusually large output peaks reveal intermediate-state structure that predicts new peak formation and guides circuit construction. In one-dimensional Haar-random brickwall circuits, the selected trajectories combine stronger pairwise correlations and probability redistribution with lower bipartite entanglement and output entropy. We test the predictive value of this structure by keeping each circuit's initial segment fixed and independently regenerating the remaining gates. Across the tested size-depth grid at n=8-14, peak-selected states have higher new-peak probability than normal/nonpeak controls, with an overall probability ratio of 3.23 at the primary depths. Within a separate unconditioned ensemble, a fixed structural score computed from the initial segment predicts new-peak probability and gives a 1.86-fold yield gain in a replay with equal numbers of remaining-circuit evaluations. Randomizing relative phases while preserving computational-basis probabilities strongly attenuates the selected-state advantage, demonstrating a functional contribution from relative-phase organization. Structural and phase-intervention tests extend to n=16. Structure-guided gate selection improves high-peak yield under common local refinement, while guidance using multiple intermediate observables improves new-peak probability over peak-only guidance in all 16 tested size-depth settings. Together, these results show how intermediate-state structure can predict and promote new peak formation under finite-depth local dynamics.",
+    "status": "found"
+  },
+  "2609.17483": {
+    "arxiv_id": "2609.17483",
+    "title": "Bridging the Gap Between Homogeneous and Heterogeneous Asynchronous Optimization Is Surprisingly Difficult",
+    "authors": [
+      "Alexander Tyurin"
+    ],
+    "submission_date": "2026-09-15T17:24:09Z",
+    "latest_updated": "2026-09-15T17:24:09Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17483v1"
+    ],
+    "abstract": "Modern large-scale machine learning tasks often require multiple workers, devices, CPUs, or GPUs to compute stochastic gradients in parallel and asynchronously to train model weights. Theoretical results typically distinguish between two settings: (i) the homogeneous setting, where all workers have access to the same data distribution, and (ii) the heterogeneous setting, where each worker operates on different data distributions. Known optimal time complexities in these settings reveal a significant gap, with far more pessimistic guarantees in the heterogeneous case. In this work, we investigate whether these pessimistic optimal time complexities can be overcome under different assumptions. Surprisingly, we show that improvement is provably impossible under widely used first- and second-order similarity assumptions for any randomized algorithm. We then turn to the interpolation regime and demonstrate that the weak interpolation assumption alone is also insufficient. Finally, we introduce a minimal combination of irreducible assumptions, strong interpolation and the local Polyak-Lojasiewicz condition, to derive a new time complexity bound that matches the dependence on worker computation times in the best-known result in the homogeneous setting, without requiring identical data distributions.",
+    "status": "found"
+  },
+  "2609.17484": {
+    "arxiv_id": "2609.17484",
+    "title": "Dissecting Motion-Prior Regularization for Data-Scarce Robotic Insertion",
+    "authors": [
+      "Ning Hu",
+      "Shuai Li",
+      "Jindong Tan"
+    ],
+    "submission_date": "2026-09-15T17:25:20Z",
+    "latest_updated": "2026-09-15T17:25:20Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17484v1"
+    ],
+    "abstract": "This study asks whether training-time motion-prior regularization can improve insertion success when a diffusion policy is learned from only 15 demonstrations. Minimum jerk discourages abrupt changes in predicted translational acceleration; speed-curvature regularization instead couples movement speed to path geometry. These are candidate mechanisms for task completion, not safety guarantees. We compare the priors individually and jointly, neither prior, and generic smoothness, with 80 real-robot trials per setting pooled over four recorded condition classes. Joint and minimum-jerk-only settings each achieved 70/80 successes (87.5%), versus 69/80 (86.3%) for speed-curvature only, 66/80 (82.5%) for neither prior, and 67/80 (83.8%) for generic smoothness. Success rates and Wilson 95% confidence intervals are visualized for direct comparison. Joint regularization exceeded neither by 5.0 percentage points but provided no observed gain over minimum jerk alone. The results motivate minimum jerk as the simpler candidate for replication, without establishing synergy, biomechanical specificity, improved safety, or distribution-shift robustness.",
+    "status": "found"
+  },
+  "2609.17485": {
+    "arxiv_id": "2609.17485",
+    "title": "Quick-View Takeaways: How Does Title Framing Influences Pattern Identification in Line Charts?",
+    "authors": [
+      "Jasmine Lim",
+      "Tapendra Pandey",
+      "Arran Zeyu Wang",
+      "Ghulam Jilani Quadri"
+    ],
+    "submission_date": "2026-09-15T17:26:12Z",
+    "latest_updated": "2026-09-15T17:26:12Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17485v1"
+    ],
+    "abstract": "Visual data communication in digital media is increasingly characterized by short attention spans and snapshot-based viewing, often employing line charts to convey trends and patterns. Among all visual elements, titles are crucial ones that can shape how viewers interpret visual information and form chart takeaways. In this study, we examine how title characteristics, particularly title word count and intended message, influence people's pattern identification in single-class line charts. Participants viewed 50 line charts collected from online news media and identified the pattern they perceived. Our results demonstrate that both title word count and intended message significantly influence viewers' pattern identification. Our findings highlight the importance of title design in shaping chart takeaways and effective visualization communication.",
+    "status": "found"
+  },
+  "2609.17486": {
+    "arxiv_id": "2609.17486",
+    "title": "Rotational Brownian Motion and $\\mathrm{J/ψ}$ Spin Alignment in Heavy-Ion Collisions",
+    "authors": [
+      "Bhagyarathi Sahoo",
+      "Captain R. Singh"
+    ],
+    "submission_date": "2026-09-15T17:28:20Z",
+    "latest_updated": "2026-09-15T17:28:20Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17486v1"
+    ],
+    "abstract": "The heavy-quark polarization in ultra-relativistic heavy-ion collisions (HICs) serves as a probe for unfolding the characteristics of deconfined QCD. The present study explores the spin alignment of $\\mathrm{J/ψ}$ in the HICs by employing the rotational Brownian motion of charm quarks in the presence of a strong magnetic field. We derive an analytical expression for the polarization of the $c$-$\\bar{c}$ pair based on the Fokker-Planck equation under the consideration of spin-vorticity coupling. These polarized $c$-$\\bar{c}$ pairs lead to the formation of the $\\mathrm{J}/ψ$ at the hadronization surface via the coalescence and fragmentation mechanisms. Correspondingly, we obtain the $m=0$ diagonal element $ρ_{00}$ of the $\\mathrm{J}/ψ$ spin-density matrix, which quantifies its spin alignment along the chosen quantization axis. Our study provides a microscopic description of heavy-quark spin transport and suggests rotational diffusion as a possible mechanism underlying the observed $\\mathrm{J}/ψ$ spin alignment.",
+    "status": "found"
+  },
+  "2609.17487": {
+    "arxiv_id": "2609.17487",
+    "title": "Stuffed IBLTs: Optimal Linear Multiset Sketches",
+    "authors": [
+      "Jonas Klausen",
+      "Rasmus Pagh",
+      "Stefan Walzer"
+    ],
+    "submission_date": "2026-09-15T17:29:42Z",
+    "latest_updated": "2026-09-15T17:29:42Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17487v1"
+    ],
+    "abstract": "A \\emph{linear sketch} is a randomized linear mapping of a vector $v$ to a lower dimensional sketch vector, designed to preserve relevant information about $v$. We consider sketches of vectors $v \\in Z^u$ (for $u \\in N$), designed for exact recovery of $v$ from its sketch. Concretely, our \\emph{Stuffed IBLT} is a linear sketch configured with a capacity $n \\in N$ and a multiplicity limit $L \\in N$ and will recover $v$ with high probability whenever $||v||_0 \\leq n$ and $||v||_\\infty \\leq L$. The sketch can be maintained efficiently under unrestricted updates to $v$, i.e., $v$ is not subject to any constraints in between decoding requests. This makes the sketch useful for streaming algorithms and for solving the (multi)set reconciliation problem. For any positive constants $c$, $ε$, and for large enough $n$ and $u \\geq n^{1+Ω(1)}$, the space usage of a Stuffed IBLT is within a factor $1+ε$ from the information-theoretic optimum while allowing updates in constant time, and decoding in time $O(n)$ with failure probability $n^{-c}$. This improves the space/time/error probability trade-off over all prior constructions with similar functionality, including the Invertible Bloom Lookup Table (IBLT). The performance of the Stuffed IBLT is essentially the best we could hope for, up to the dependence on $c$ and $ε$. We make the dependence on these parameters explicit, and further show a lower bound demonstrating that the dependence on $c$ is optimal within the class of peeling-based approaches. Our improvement comes from a careful combination of Walzer's spatial coupling technique (SODA '21), the purity heuristic of Houen, Pagh, and Walzer (SOSA '23), and backyarding (Belazzougui, Kucherov, and Walzer, ESA '24; Fleischhacker, Green Larsen, Obremski, and Simkin, ICALP '24), allowing us to eliminate bottlenecks of past approaches.",
+    "status": "found"
+  },
+  "2609.17488": {
+    "arxiv_id": "2609.17488",
+    "title": "LimiX-2: A Contextual Mechanism Network Towards General Structured-Data Intelligence",
+    "authors": [
+      "Xingxuan Zhang",
+      "Gang Ren",
+      "Hao Yuan",
+      "Hao Zou",
+      "Hongze Tan",
+      "Hui Wang",
+      "Jianhao Song",
+      "Jiansheng Li",
+      "Jiayao Zhang",
+      "Jinghan Zhang",
+      "Kaifang Li",
+      "Lang Mo",
+      "Li Mao",
+      "Mingchao Hao",
+      "Nuo Xu",
+      "Rui Ding",
+      "Ruiji Zhang",
+      "Shuyang Li",
+      "Siyu Mei",
+      "Tianyang Zhang",
+      "Weiyang Mu",
+      "Yancheng Dong",
+      "Yongxian Wei",
+      "Yuan Xue",
+      "Yuanrui Wang",
+      "Yue He",
+      "Zijia Yang",
+      "Ziyun Li",
+      "Dongzhe Li",
+      "Fuqiang Wang",
+      "Jiandong Liu",
+      "Jiawei Chen",
+      "Jiaxin Du",
+      "Kaijie Cheng",
+      "Kehan Li",
+      "Lei Sun",
+      "Linjun Zhou",
+      "Ningbo Dai",
+      "Qi Wang",
+      "Renzhe Xu",
+      "Shaoxing Du",
+      "Shumeng Yang",
+      "Wang Lu",
+      "Wenjing Chu",
+      "Xiannan Huang",
+      "Xiaoyu Lin",
+      "Xing Ai",
+      "Xinyan Han",
+      "Xuanyue Li",
+      "Xuanyue Su",
+      "Xukun Zhang",
+      "Yan Lu",
+      "Yaxin Zhang",
+      "Yi Qin",
+      "Yifei Huang",
+      "Yihan Xu",
+      "Yongle Lv",
+      "Yuanyuan Jiang",
+      "Yushan Han",
+      "Peng Cui"
+    ],
+    "submission_date": "2026-09-15T17:30:02Z",
+    "latest_updated": "2026-09-15T17:30:02Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17488v1"
+    ],
+    "abstract": "We introduce LimiX-2, a new model in the LimiX family, developed through model and data scaling guided by our previously established scaling laws. LimiX-2 adopts the Contextual Mechanism Networks (CMNs) paradigm and is pretrained with Context-Conditional Masked Modeling (CCMM). CMNs shifts the organizing principle of in-context learning from target-centric prediction to mechanism-oriented joint modeling. Rather than centering the network on the $p(y \\mid x, D_{\\mathrm{context}})$ objective of conventional tabular PFNs, it is designed around learning $p(x, y \\mid D_{\\mathrm{context}})$, a context-dependent representation of the joint structure underlying data generation. Pretraining uses synthetic datasets generated by structural causal models (SCMs) spanning diverse graph structures, functional mechanisms, and observation processes. Evaluations on TabArena, TALENT, and BCCO show that LimiX-2 outperforms current dataset-specific models and tabular foundation models. Beyond predictive performance, the CMN paradigm also promotes causal awareness in LimiX-2: its feature attention encodes direct causal relationships, enabling accurate causal skeleton recovery.",
+    "status": "found"
+  },
+  "2609.17489": {
+    "arxiv_id": "2609.17489",
+    "title": "Hysteresis and trap emission in dc-biased integrated lithium niobate electro-optic modulators",
+    "authors": [
+      "Matthew Yeh",
+      "CJ Xin",
+      "Donald Witt",
+      "David R. Barton",
+      "Evelyn L. Hu",
+      "Marko Lončar"
+    ],
+    "submission_date": "2026-09-15T17:31:55Z",
+    "latest_updated": "2026-09-15T17:31:55Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17489v1"
+    ],
+    "abstract": "The electro-optic effect is crucially important for low power and efficient tuning of integrated photonic circuits. However, in electro-optic materials such as lithium niobate, dc biasing for an extended duration of time results in the emergence of numerous nonidealities, including hysteresis -- a persistent degradation of the magnitude and linearity of the dc electro-optic response. We show that electro-optic hysteresis can be reversed under both zero-bias and reverse-bias conditions, given sufficient time or reverse voltage and consistent with a defect model of the underlying physics. Specifically, we find that drift phenomena at short time scales can be explained by charge trapping dynamics near the contact junction, and thereby devise an active reset protocol that restores the magnitude of the response and partially restores the drift time scales.",
+    "status": "found"
+  },
+  "2609.17490": {
+    "arxiv_id": "2609.17490",
+    "title": "Query-optimal quantum simulation of Lindblad evolution",
+    "authors": [
+      "Chunhao Wang",
+      "Christopher Ye"
+    ],
+    "submission_date": "2026-09-15T17:32:12Z",
+    "latest_updated": "2026-09-25T15:28:33Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2609.17490v1",
+      "2609.17490v2"
+    ],
+    "abstract": "For the problem of simulating Lindblad evolution for time $t$ to precision $ε$, Hamiltonian simulation provides an additive query lower bound, informally, $Ω(t + \\mathrm{polylog}(1/ε))$. However, the best previously known algorithms for general Lindblad simulation achieve a multiplicative upper bound, informally, $\\mathcal{O}(t\\,\\mathrm{polylog}(1/ε))$, in query complexity. It has remained open whether this multiplicative dependence is necessary. In this paper, we close the gap in query complexity by giving an algorithm with optimal additive dependence on evolution time and precision in the block-encoding model. Our approach uses the transducer framework to reduce the query cost of composing first-order approximations to the evolution channel, together with linear combinations of reuse circuits of different lengths to suppress catalyst-removal error. We further achieve nearly optimal gate complexity in evolution time and precision through history compression and an efficient implementation of the query-free part of the transducer using operation reordering and linear combinations of unitaries, while preserving the optimal query complexity.",
+    "status": "found"
+  },
+  "2609.17491": {
+    "arxiv_id": "2609.17491",
+    "title": "FreqSpaNet: Frequency and Spatial Learning of SFPF for Physical Layer Hardware Integrity Detection",
+    "authors": [
+      "Xiaoxuan Huang",
+      "Jinlong Xu",
+      "YiZhe Wang",
+      "Meng Zhang",
+      "Xian Li",
+      "Yuying Bian"
+    ],
+    "submission_date": "2026-09-15T17:32:12Z",
+    "latest_updated": "2026-09-15T17:32:12Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.17491v1"
+    ],
+    "abstract": "Unauthorized hardware replacement can preserve a wireless device's logical identity while altering its physical implementation, posing a challenge to hardware integrity verification. Spatio-frequency polarization fingerprints (SFPFs) capture device-dependent responses across multiple frequencies and directions, but their frequency and spatial dimensions exhibit different structural dependencies. We propose FreqSpaNet, an SFPF representation learning network for open set hardware anomaly detection. A frequency branch captures local variations among neighboring frequencies, while a geometry-aware spatial branch models directional relationships using angular information. The two representations are combined through adaptive fusion, and complementary pretraining further captures shared information while preserving the distinct characteristics of the frequency and spatial representations. Experiments show that FreqSpaNet achieves a mean AUROC of 96.31\\%, 9.05 points above the baseline. Results under seven hardware replacement scenarios further verify the effectiveness of FreqSpaNet.",
+    "status": "found"
+  },
+  "2609.17492": {
+    "arxiv_id": "2609.17492",
+    "title": "On the Existence of Pressure-Equilibrium-Preserving Numerical Fluxes for Supercritical Fluids",
+    "authors": [
+      "Robin Ben Klein"
+    ],
+    "submission_date": "2026-09-15T17:33:23Z",
+    "latest_updated": "2026-10-06T13:13:12Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2609.17492v1",
+      "2609.17492v2",
+      "2609.17492v3"
+    ],
+    "abstract": "In this work we propose a new existence theorem for numerical-flux functions for supercritical fluids that are pressure-equilibrium-preserving (PEP). In particular, we characterize the existence of consistent numerical-flux functions that satisfy an algebraic PEP property. Our theory links the existence of PEP schemes to geometric properties of the equation of state describing the thermodynamics of the fluid. When these geometric properties fail for a pair of states on the same isobar, no PEP schemes of the considered form can exist on a domain containing those states. In our analysis the equation of state itself can be fully general only needing to satisfy some fundamental thermodynamic principles. Recently, PEP compatibility conditions for general equations of state have been derived [1] that rely on the existence of certain thermodynamic derivatives which are not guaranteed to be defined under fundamental thermodynamic principles. The geometric conditions in our theory do not depend on the existence of these derivatives and recover the recent compatibility conditions in the case that these derivatives are defined. Finally, using numerical experiments we demonstrate for two supercritical fluids that our existence conditions are restrictive and thus that no PEP schemes of the form we consider exist on the domain we specify for these fluids. Using our geometric perspective, we also shed light on mechanisms by which PEP schemes can develop numerical issues, which we also demonstrate using numerical experiments.",
+    "status": "found"
+  },
+  "2609.17493": {
+    "arxiv_id": "2609.17493",
+    "title": "Twisted Bracelets for Sorting by Transpositions: the Transposition Diameter of $S_{16}$",
+    "authors": [
+      "Luiz A. G. Silva",
+      "Luis A. B. Kowada",
+      "Noraí R. Rocco",
+      "Maria E. M. T. Walter"
+    ],
+    "submission_date": "2026-09-15T17:35:37Z",
+    "latest_updated": "2026-10-03T19:20:24Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2609.17493v1",
+      "2609.17493v2",
+      "2609.17493v3"
+    ],
+    "abstract": "Sorting By Transpositions (SBT) seeks the minimum number of transpositions required to sort a permutation $π$ on $n$ symbols into the identity $ι$. Let $N=n+1$. A cyclic-target pair $(ω,β)$ consists of an even permutation $ω$ and an $N$-cycle $β$ for which $ρ=ωβ$ is an $N$-cycle. An SBT instance is the special case $(\\barι{\\barπ}^{-1},\\barπ)$, where $\\barπ$ and $\\barι$ encode $π$ and $ι$, and $\\barι{\\barπ}^{-1}\\barπ=\\barι$. For a prescribed fixed-point-free cycle type, fixed-content words encode $ω$, with colors distinguishing cycles and ranks recording their orientations relative to $β$. A word is realizable exactly when $ρ=ωβ$ is an $N$-cycle. Permutations of equal-part colors and shifts of rank origins form auxiliary symmetries that, together with word rotation and position reflection coupled to rank inversion, define a twisted dihedral action. Its orbits are twisted bracelets, and its realizable orbits correspond bijectively to extended-toric equivalence classes of cyclic-target pairs, where reflection is adjoined to classical toric equivalence. The correspondence yields a Burnside identity, and our method generates one encoding word for each such class. The transposition diameter $TD(n)$ is the largest transposition distance in $S_n$. Combining fixed-point contraction and reductions of the ambient instance space based on cycle structure with exhaustive verification of every remaining twisted bracelet, we prove $TD(16)=9$, closing a twenty-five-year gap. This result also yields $TD(19)=11$ and, for every $n\\equiv1\\pmod{3}$ with $n\\geq16$, $TD(n)\\leq\\left\\lfloor(2n-2)/3\\right\\rfloor-1$, improving the previous general upper bound by one for these $n$.",
+    "status": "found"
+  }
+}

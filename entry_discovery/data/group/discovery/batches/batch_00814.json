@@ -1,0 +1,388 @@
+{
+  "2609.14114": {
+    "arxiv_id": "2609.14114",
+    "title": "Parallel Policy-Gradient Methods for Parameter Optimization of Nonlinear Feedback Controllers",
+    "authors": [
+      "An Nguyen",
+      "Leilei Cui"
+    ],
+    "submission_date": "2026-09-12T19:26:42Z",
+    "latest_updated": "2026-09-12T19:26:42Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14114v1"
+    ],
+    "abstract": "Structured feedback controllers provide rigorous stability guarantees, but often require manual parameter tuning to achieve good closed-loop performance. Policy-gradient methods offer a systematic approach to parameter optimization; however, conventional gradient evaluation requires sequential forward state rollout and backward costate propagation. This letter develops a time-parallel policy-gradient framework for discrete-time nonlinear control-affine systems. We derive the policy-gradient expression where the state and costate rollouts required for policy-gradient evaluation are formulated as residual-minimization problems and solved using Gauss-Newton (GN) iterations with parallel associative scans. For closed-loop systems that are globally asymptotically stable and locally exponentially stable, we show that the residual-minimization problems satisfy a local Polyak-Lojasiewicz (PL) inequality and that the GN iterates converge locally at a quadratic rate. Moreover, the PL constant, the size of the convergence neighborhood, and the quadratic convergence bound are independent of the rollout horizon T. We also prove that, for any finite horizon T, the state solver recovers the exact trajectory from any initialization in at most T iterations. Finally, an inertia-wheel pendulum example with interconnection and damping assignment passivity-based control (IDA-PBC) demonstrates improved closed-loop performance and the computational benefits of the proposed parallel policy-gradient framework.",
+    "status": "found"
+  },
+  "2609.14115": {
+    "arxiv_id": "2609.14115",
+    "title": "Real-Time Synthesis of Robust Controlled Invariant Sets for Monotone Systems",
+    "authors": [
+      "Yasin Sonmez",
+      "Mahmoud Khaled",
+      "Majid Zamani",
+      "Murat Arcak"
+    ],
+    "submission_date": "2026-09-12T19:31:38Z",
+    "latest_updated": "2026-09-12T19:31:38Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14115v1"
+    ],
+    "abstract": "Safety-critical control of autonomous systems requires formal safety certificates, such as controlled invariant sets, that must be computed online as conditions change. Although standard synthesis algorithms scale poorly with state dimension, monotone dynamical systems with lower-closed safety specifications allow for accelerated computation of controlled invariant sets. In particular, lazy fixed-point algorithms exploit monotonicity and track only the antichain basis of the set. However, membership tests and redundancy checks against an evolving basis remain major bottlenecks. We introduce a threshold-function reformulation in which a lower-closed set on a d-dimensional grid is represented by its column heights along a designated axis. This reformulates the greatest-fixed-point iteration as independent one-dimensional binary searches, one per grid column, yielding an embarrassingly parallel iteration with asymptotically lower computational complexity than the lazy fixed-point algorithm. Experiments synthesize invariant sets on 3D grids with 10^9 cells in under 50 ms and 10^14 cells in under two minutes. We further demonstrate online re-synthesis in a safety-informed model predictive controller example.",
+    "status": "found"
+  },
+  "2609.14116": {
+    "arxiv_id": "2609.14116",
+    "title": "HARP: Agentic Hybrid Retrieval and Analysis for Long-Form Audio",
+    "authors": [
+      "Chin-Jou Li",
+      "Masao Someki",
+      "Woojeong Jin",
+      "Yashish M. Siriwardena",
+      "Tanmay Laud",
+      "Shanil Puri",
+      "Shinji Watanabe"
+    ],
+    "submission_date": "2026-09-12T19:35:33Z",
+    "latest_updated": "2026-09-12T19:35:33Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14116v1"
+    ],
+    "abstract": "Long-form audio analysis requires systems to localize and integrate evidence distributed across extended recordings. While existing work primarily retrieves semantic content through structured textual representations, many real-world queries depend on acoustic evidence that is better preserved in continuous representations or raw audio. We introduce HARP (Hybrid Audio Retrieval Pipeline), an agentic framework and benchmark for systematically studying retrieval and evidence representations in long-audio analysis. Hybrid retrieval combining keyword and vector search shows the most robust performance. When paired with both metadata and retrieved audio as evidence, average answer accuracy improves by around 10% and rationale accuracy by around 6% over single-modality retrieval and evidence. Fine-grained evaluation shows that answer accuracy alone overestimates system capability and that HARP mostly follows human performance trends across query types. These results highlight the importance of combining structured retrieval with flexible access to audio evidence and evaluating long-audio systems beyond answer accuracy.",
+    "status": "found"
+  },
+  "2609.14117": {
+    "arxiv_id": "2609.14117",
+    "title": "DQN-Scheduler: A Multi-Objective Optimization Framework for Scheduling Microservices in Cloud Computing",
+    "authors": [
+      "Abdullah Alelyani",
+      "Amitava Data",
+      "Ghulam Mubasher"
+    ],
+    "submission_date": "2026-09-12T19:38:32Z",
+    "latest_updated": "2026-09-12T19:38:32Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14117v1"
+    ],
+    "abstract": "Cloud computing has emerged as an information technology solution, providing software and infrastructure solutions for companies and individuals. The pay-as-you-go approach has increased demands for the cloud. The massive range of resources, the variety of services, and flexible pricing grab attention. In addition, microservices have emerged as a new way of building software, with applications developed as loosely dependent tasks. Additionally, container technology has boosted the popularity of microservices by offering a platform for this type of architecture. Containers and microservices improve the flexibility and scalability of cloud applications. There are two primary types of microservices: batch and online services, with the majority of applications falling into the online service category. Scheduling microservices is challenging because it requires careful management of resource utilization, load balancing, network latency, reliability, and availability. In this study, we introduce the DQN-Scheduler, a novel reinforcement learning-based agent designed to optimize microservice scheduling in cloud environments. Our approach aims to optimize multiple scheduling objectives simultaneously, such as resource utilization, load balancing, latency, reliability, and availability. To our knowledge, this is the first framework to address all these objectives simultaneously. The DQN-Scheduler was tested against benchmark algorithms in the field. The experimental results demonstrate that the DQN-Scheduler outperforms benchmark algorithms.",
+    "status": "found"
+  },
+  "2609.14118": {
+    "arxiv_id": "2609.14118",
+    "title": "Talking to Me or Someone Else? Rethinking Talk-to-Me Detection in Egocentric Videos",
+    "authors": [
+      "Feiyu Du",
+      "Xi He",
+      "Jia Li",
+      "Yapeng Tian",
+      "Weili Wu"
+    ],
+    "submission_date": "2026-09-12T19:46:47Z",
+    "latest_updated": "2026-09-12T19:46:47Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14118v1"
+    ],
+    "abstract": "Online understanding of who is talking to the camera wearer is a key capability for egocentric social interaction. However, existing talk-to-me (TTM) studies are commonly formulated as offline clip-level recognition, which is poorly aligned with online interaction and overlooks the diverse non-TTM speaking states that naturally arise in egocentric videos. In this paper, we revisit this problem by reformulating it as an online, frame-level prediction task. Instead of treating TTM as a binary problem against a single negative class, we model it in the presence of diverse and previously underexplored non-TTM states, such as talking-to-others, self-talking, and background conditions. To support this new formulation, we construct an Online TTM Dataset consisting of 406 egocentric video clips with approximately 900K annotated frames, each labeled with frame-level social interaction categories (e.g., background, TTM, talking-to-others, self-talking), by extending the Ego4D social interaction benchmark. In this benchmark, we evaluate five adapted baselines and develop a new model that integrates social cues across modalities. Experimental results show that our multimodal model, which jointly leverages audio, visual, and speech-semantic cues, achieves 75.5% frame-level F1 on TTM, outperforming strong baselines and enabling a systematic analysis of how different speaking states affect TTM recognition.",
+    "status": "found"
+  },
+  "2609.14119": {
+    "arxiv_id": "2609.14119",
+    "title": "Same Name, Different Server: A Security Census of Silent Drift in the Model Context Protocol Ecosystem",
+    "authors": [
+      "Obada Kraishan"
+    ],
+    "submission_date": "2026-09-12T19:47:32Z",
+    "latest_updated": "2026-09-12T19:47:32Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14119v1"
+    ],
+    "abstract": "The Model Context Protocol (MCP) has become the common interface through which large language model applications reach external tools, and its public registry now distributes thousands of community-built servers with little of the vetting infrastructure that mature package ecosystems have accumulated. This paper reports a census of that ecosystem. We harvested the full public MCP registry (21,643 servers, 72,606 version records, August 2026 snapshot), fetched source code for 14,353 servers, and applied a pattern-based scanner covering an eight-class threat catalogue whose accuracy we measured against 414 hand-labeled findings. Observed prevalence is dominated by unauthenticated network exposure (9.57% of scanned servers); after correcting each class by its measured precision, 11.14% observed high-severity prevalence reduces to roughly 7.6%. The central finding concerns instability rather than any single weakness: 51.1% of multi-version servers changed what they advertise between versions, 40.6% did so silently, and 4.2% redirected their remote endpoint to a different host while keeping their registry identity, a change the protocol never surfaces to installed clients. Silent drift is associated with nearly threefold higher odds of a high-severity finding (OR = 2.96, 95% CI [2.56, 3.42]). Popularity offers only weak protection (OR = 0.78 per unit of log stars), so star counts are a poor proxy for safety. We derive concrete recommendations for registry design, client-side pinning, and scanner triage, and release an anonymized artifact.",
+    "status": "found"
+  },
+  "2609.14120": {
+    "arxiv_id": "2609.14120",
+    "title": "Black Hole Solutions with Scalar Fields and Anisotropic Matter in Non-Minimal $Y(R)F^2$ Gravity",
+    "authors": [
+      "Özcan Sert"
+    ],
+    "submission_date": "2026-09-12T19:54:06Z",
+    "latest_updated": "2026-09-12T19:54:06Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14120v1"
+    ],
+    "abstract": "We investigate exact spherically symmetric and static black hole solutions in a non-minimally coupled Einstein--Maxwell theory of the $Y(R)F^2$ type, extended by a minimally coupled real scalar field and an anisotropic matter distribution. The Maxwell field is coupled to the spacetime curvature through an arbitrary function of the Ricci scalar, while the scalar field is described by a kinetic term and a scalar potential. We obtain exact solutions for power-law and logarithmic forms of the non-minimal coupling function and analyze the corresponding spacetime geometries. In particular, we identify a special $β=-1/3$ case for which the general power-law solution becomes singular and derive a new logarithmic metric by solving the field equations independently. The resulting configurations are asymptotically flat and exhibit modified gravitational properties associated with the interplay between the scalar field, anisotropic matter, and non-minimal electromagnetic coupling. We further show that the magnetic solutions admit electrically charged counterparts through an electromagnetic duality transformation, under which the metric and scalar sector remain invariant while the non-minimal coupling function is inverted. The obtained solutions provide a useful framework for investigating black hole horizons, thermodynamic properties, geodesic motion, and astrophysical phenomena such as galactic rotation curves in curvature-dependent electromagnetic theories.",
+    "status": "found"
+  },
+  "2609.14121": {
+    "arxiv_id": "2609.14121",
+    "title": "Semantic Knowledge Technologies: what the Semantic Web lost sight of, and what it never had",
+    "authors": [
+      "Achille Zappa"
+    ],
+    "submission_date": "2026-09-12T19:55:46Z",
+    "latest_updated": "2026-09-12T19:55:46Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14121v1"
+    ],
+    "abstract": "The Semantic Web set out to give information a machine-interpretable form so that software could integrate and reason over it. Its standards became scientific knowledge infrastructure, but the machine competence it promised did not follow, and the systems now answering questions over scientific knowledge are language models holding no inspectable account of what they know. This paper argues the original goal was right and the technical programme incomplete, states what is missing, and names the extended programme Semantic Knowledge Technologies: the same technical core carried out of its web-publishing origin and applied to knowledge wherever held. The diagnosis is that the standards formalised truth while omitting three things: the conditions under which a claim holds, the operations its terms permit, and any account of what a base covers. Without conditions, contradiction and applicability cannot be judged; without operational grounding, holding a statement confers no ability; without declared coverage, a system cannot recognise the boundary of its own content, which under the open-world assumption cannot be inferred. The paper fixes the word understanding to five measurable tests (check, connect, derive, act, delimit) and sets out a seven-layer architecture in which the first three layers are enabling and the rest the cognitive capabilities they make possible. It then defines three terms the programme implies: Large Knowledge Model, a model whose unit of output is a reference to an addressable claim, not a token; SLKM, the knowledge base an agent builds for itself from declared sources; and Semantic Artificial General Intelligence, stated as a falsifiable position about necessary conditions, not a system. A graded ladder replaces the untestable word general. It is offered as a research agenda, with its weakest points and refutation condition named.",
+    "status": "found"
+  },
+  "2609.14122": {
+    "arxiv_id": "2609.14122",
+    "title": "SignMimic: Robust High-Quality Sign Language Motion Generation via Human-Shape-Oblivious Pose Transfer Guidance",
+    "authors": [
+      "Zhewen He",
+      "Junyi Yu",
+      "Haomian Huang",
+      "Zhenhua Li",
+      "Yi Fang"
+    ],
+    "submission_date": "2026-09-12T19:57:16Z",
+    "latest_updated": "2026-09-24T02:28:10Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2609.14122v1",
+      "2609.14122v2"
+    ],
+    "abstract": "We study the challenge of sign language video mimicking: given a driving video and a single reference frame, synthesize a video where the target signer reproduces the source motion while preserving identity and linguistic form. Prior pipelines entangle rigid motion, non-rigid deformation, and view-dependent completion in a monolithic generator, causing handshape drift and spatio-temporal instability. We present SignMimic, which (i) applies a TNet-based model to study SE(3) rigid canonicalization to stabilize global pose, (ii) performs non-rigid adaptation in a canonical space to preserve fine-grained articulators (hands/face) and coarticulation via NIF2D, and (iii) uses Pose-MAE-style completion before conditional video diffusion. This factorization injects geometric and linguistic priors, yielding shape and spatio-temporal consistency. On several large-scale datasets (ASL 50K, How2Sign, CSL News), SignMimic achieves state-of-the-art-level performance on video quality, identity similarity, and frame continuity while also achieving minimal loss when performing back translation (SLT) on generated videos. Ablations confirm the role of rigid canonicalization, non-rigid adaptation, and completion. Code is available at https://anonymous.4open.science/r/UniSignMimicTurbo-6088; model checkpoints and video examples will be released.",
+    "status": "found"
+  },
+  "2609.14123": {
+    "arxiv_id": "2609.14123",
+    "title": "Grouper: Scheduling Groups for Multi-Tenant Microsecond-Scale Microservices",
+    "authors": [
+      "Koosha Kazemi",
+      "Mohammad Siavashi",
+      "Ahmad Siavashi",
+      "Mohammad Izadi"
+    ],
+    "submission_date": "2026-09-12T19:59:53Z",
+    "latest_updated": "2026-09-12T19:59:53Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14123v1"
+    ],
+    "abstract": "Microsecond-scale core allocation makes colocating latency-critical services with batch work worthwhile. A thread that finds no work parks within microseconds and its core goes to a batch task. Putting one back costs $\\sim$18 $μ$s, as the allocator must discover that a core is wanted and then take it from the batch task holding it. A monolith pays that tax once per request, a microservice chain pays it at every hop in both directions, and a multi-tenant host multiplies it again, because every tenant's hops queue at the same allocator. On our port of DeathStarBench's hotelReservation, going from two tenants to ten takes a hop from 39 to 222 $μ$s and a 10-RPC path's median from 456 to 2,445 $μ$s, a fivefold degradation even though no tenant's own load changed. We introduce Grouper and the scheduling group, a set of isolated runtimes that the allocator treats as one allocation and accounting unit, whose members may hand cores directly to one another. A service sending an RPC donates its core to the peer through an unprivileged kernel fast path, so the core follows the request through the call graph. The allocator retains control through reconciliation, core-addressed revocation and a pooled budget but leaves the critical path; its load falls from $Θ(R \\cdot H)$ to $Θ(R)$ in request rate $R$ and hop count $H$. Over a grid of two to ten tenants at 1,000-30,000 requests per second each, Grouper outperforms Caladan (the allocator Junction also builds on) and Linux by up to 7.9$\\times$ and 3.4$\\times$ at the median and 4.1$\\times$ and 14.2$\\times$ at the tail, and leaves batch work more throughput than Caladan at over 70% of load points.",
+    "status": "found"
+  },
+  "2609.14124": {
+    "arxiv_id": "2609.14124",
+    "title": "To do($x$) or not to do($x$): Medical Image Counterfactuals for Dataset Augmentation",
+    "authors": [
+      "Yasin Ibrahim",
+      "Robin J. Evans",
+      "Konstantinos Kamnitsas"
+    ],
+    "submission_date": "2026-09-12T20:06:15Z",
+    "latest_updated": "2026-09-12T20:06:15Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14124v1"
+    ],
+    "abstract": "Medical image analysis is often hindered by biased datasets, which can lead to biased models and limited clinical applicability. A promising strategy for mitigating such biases is to augment training data with synthetic images. Counterfactual (CF) generation is one such strategy, though the term is used in two different senses: in some works, CFs are produced through causality-based interventions derived from structural causal models, whereas in others, they are produced by non-causal image edits or conventional conditional generative models, such as altering anatomy or adding pathologies. In this work, we study this distinction and evaluate its practical consequences for medical image augmentation. We compare three conditioning strategies: $\\textit{Deterministic}$, which changes selected variables while holding the remaining variables fixed; $\\textit{Undirected}$, which updates variables according to learned statistical associations without assigning causal directions; and $\\textit{Causal}$, which propagates interventions along a directed causal graph. We analyse how these choices affect the resulting images, and explore when causally grounded methods improve dataset augmentation or bring limited benefit. In particular, we assess downstream performance and fairness, where fairness refers to reduced sensitivity to dataset biases across sensitive subgroups. Our experiments demonstrate that using a causal approach to synthetic training data generation can lead to tangible benefits, with these insights offering valuable guidance to machine learning practitioners for the effective design of data generation protocols.",
+    "status": "found"
+  },
+  "2609.14125": {
+    "arxiv_id": "2609.14125",
+    "title": "A Graph-Based Framework for Extending Metric Differential Privacy Mechanisms",
+    "authors": [
+      "Ruiyao Liu",
+      "Chenxi Qiu"
+    ],
+    "submission_date": "2026-09-12T20:09:59Z",
+    "latest_updated": "2026-09-12T20:09:59Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14125v1"
+    ],
+    "abstract": "Metric differential privacy (mDP) is well suited to structured secret domains, but directly constructing utility-aware mechanisms over large or fine-grained domains is often computationally prohibitive. We study extension-based mDP design, where a mechanism is first specified on a finite set of seed records and then extended to a larger target domain. To our knowledge, this is the first work to systematically formulate extension as a general design paradigm for mDP rather than a method-specific construction. We present a graph-based extension framework, identify three requirements for correctness, local mDP constraints, overlap consistency, and successor-level mDP preservation, and show that, under these conditions, the induced global mechanism is well defined and satisfies $ε$-mDP on the target domain. We further instantiate the framework with a tree-based extension algorithm for multi-resolution grids, where multi-dimensional extension is realized through one-dimensional interpolation and dimension-wise composition. Experiments on road-map datasets demonstrate that our approach achieves a strong utility-scalability trade-off while preserving exact mDP guarantees.",
+    "status": "found"
+  },
+  "2609.14126": {
+    "arxiv_id": "2609.14126",
+    "title": "Maximum Matching on Regular Nonbipartite Graphs",
+    "authors": [
+      "Varsha Dani",
+      "Thomas P. Hayes",
+      "Seth Pettie"
+    ],
+    "submission_date": "2026-09-12T20:12:06Z",
+    "latest_updated": "2026-09-12T20:12:06Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14126v1"
+    ],
+    "abstract": "Blocking flow-type maximum matching algorithms are based on finding maximal sets of shortest augmenting paths. They run in $O(m\\sqrt{n})$ time, on both bipartite [HK73, Din70, Kar73a, Kar73a] and nonbipartite graphs [GT91, Gab17, Vaz24], but this time bound can be improved if the input is constrained. In this paper we consider $d$-regular bipartite and nonbipartite graphs. Previous algorithms show that a perfect matching in $d$-regular bipartite graphs can be computed in near-linear time deterministically [COS01] or sublinear time with high probability [GKK13]. On $d$-regular non-bipartite graphs, a $(1-1/(d+1))$-approximation can be computed in sublinear time $O(n \\log n)$ with high probability [DH25], and hence a maximum matching can be computed in $O(n^2)$ time, w.h.p., which is slightly faster than the best deterministic algorithm for regular graphs [Yus13], running in O(n^2 log n) time. We prove that any blocking flow-type maximum matching algorithm based on finding shortest augmenting paths runs in $O(n^2)$ time on d-regular graphs, both bipartite and nonbipartite. On nonbipartite graphs this is an asymptotic improvement over $O(n^2 \\log n)$ [Yus13] and an improvement over $O(m\\sqrt{n})$ [GT91, Gab17, Vaz24] when $d = ω(\\sqrt{n})$. It also improves [DH25] by making its $O(n^2)$ bound deterministic. However, the main take-away message is that no new algorithms are needed: the \"classic\" matching algorithms automatically outperform [Yus13, DH25]. We also consider extensions of our results to graphs that are only \"nearly regular,\" meaning that their degrees all lie within a specified range, $[d, Δ]$.",
+    "status": "found"
+  },
+  "2609.14127": {
+    "arxiv_id": "2609.14127",
+    "title": "Exact Finite Attention Responses From RoPE Derivatives",
+    "authors": [
+      "Julie Huang",
+      "Maggie Chlon",
+      "Gregory Gutin",
+      "Leon Chlon"
+    ],
+    "submission_date": "2026-09-12T20:15:37Z",
+    "latest_updated": "2026-09-12T20:15:37Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14127v1"
+    ],
+    "abstract": "We derive exact local responses for attention interventions, allowing candidate edits to be scored from a cached baseline and one backward pass. The starting point is the RoPE derivative $\\partial_p z(p) = A z(p)$: its integral gives the finite positional displacement, which we carry through the softmax without linearising either rotation or normalisation. The resulting predictions achieve 95.36--96.52% sign accuracy across 92,160 executed positional edits on 768 held-out prompt sets, reducing answer-margin MAE by 73.6--82.5% against the positional Jacobian and by 36.2--50.9% against zero. For simultaneous key and value edits, the same divided-difference calculus isolates the interaction term $C_{KV} = \\sum_j (p'_j - p_j)\\,\\varepsilon_j$, which is omitted by adding separate attributions. Retaining it reduces downstream margin MAE by more than a factor of nine in every setting of a 5,120-intervention sweep across two Qwen sizes, two tasks, and multiple layers; reductions against a quadratic interaction correction are 75.9--98.5%. Exactness concerns the edited attention write; downstream predictions contract that response with a baseline gradient and are evaluated by native execution. The calculus also yields a KL certificate for local approximation error, an exact query-conditioned gradient-step representation whose curvature identifies attention-preserving query directions, and minimum-norm query control. Sparse evaluation supports candidate ranking and cache decisions under explicit local distortion criteria.",
+    "status": "found"
+  },
+  "2609.14128": {
+    "arxiv_id": "2609.14128",
+    "title": "Motivic Steenrod algebra and Thom obstructions without desingularization",
+    "authors": [
+      "Jiahao Hu"
+    ],
+    "submission_date": "2026-09-12T20:16:59Z",
+    "latest_updated": "2026-09-12T20:16:59Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14128v1"
+    ],
+    "abstract": "We give a desingularization-free proof of Voevodsky's identification of bistable mod-$\\ell$ motivic cohomology operations with the motivic Steenrod algebra over fields of characteristic zero. This supplies the direct argument anticipated by Voevodsky in his study of motivic Eilenberg--MacLane spaces. As an application, we study Thom's topological obstructions to desingularization, which arose in his work on the Steenrod realization problem. Without invoking desingularization, we prove that the primary and all higher Thom obstructions vanish on complex algebraic cycles. The proof uses the motivic bidegrees of the successive $k$-invariants in the Brown--Peterson tower to show that every lifting obstruction vanishes.",
+    "status": "found"
+  },
+  "2609.14129": {
+    "arxiv_id": "2609.14129",
+    "title": "Deformable 2D Gaussian Splatting for Efficient 4K Video Compression",
+    "authors": [
+      "Chenhao Zhang",
+      "Fengqing Zhu"
+    ],
+    "submission_date": "2026-09-12T20:18:25Z",
+    "latest_updated": "2026-09-12T20:18:25Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14129v1"
+    ],
+    "abstract": "Ultra-High-Definition (UHD) video presents significant challenges for efficient storage and real-time decoding. Learning-based methods, such as Neural Video Compression (NVC) and Implicit Neural Representations (INR), achieve competitive rate-distortion performance but suffer from high decoding latency and excessive memory usage. Meanwhile, Gaussian Splatting has recently attracted attention in the computer graphics community due to its ultra-fast rendering and high-fidelity visual quality. Despite these advantages, its application in video compression remains largely unexplored. To bridge this gap, we propose a real-time video compression framework that represents and compresses a Group of Pictures (GOP) using a coarse-to-fine multi-scale 2D Gaussian Splatting (2DGS) structure coupled with a lightweight deformation network. Experiments demonstrate that our method delivers rate-distortion performance in LPIPS that surpasses H.265 and other state-of-the-art learning-based video compression methods. Our work demonstrates the potential of Gaussian Splatting as a practical solution for efficient high-resolution video compression.",
+    "status": "found"
+  },
+  "2609.14130": {
+    "arxiv_id": "2609.14130",
+    "title": "A compact time-domain reduced order quadrature for gravitational wave inspirals with non-stationary noise",
+    "authors": [
+      "Benjamin Zhang",
+      "Kris Pardo",
+      "Bence Bécsy"
+    ],
+    "submission_date": "2026-09-12T20:18:34Z",
+    "latest_updated": "2026-09-12T20:18:34Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14130v1"
+    ],
+    "abstract": "We develop the first time-domain reduced order quadrature for gravitational waves in the early inspiral period, motivated by the need for dataset compression in the presence of gaps, uneven sampling, and dense covariance matrices. A single reduced basis with 1290 elements can represent inspirals from supermassive black hole binary sources with chirp masses between $10^7-10^{10}$ $M_\\odot$, but in the presence of non-stationary noise $\\sim 1290^2$ reduced order quadrature weights must be stored. We are able to reduce the stored weights by a factor of two by partitioning our parameter space by GW frequency, with relative waveform/likelihood accuracies remaining below $10^{-5}$/$10^{-3}$ after partition. Finally, we point out that heterodyning can be combined with reduced order methods with no loss in accuracy. Our reduced order quadrature makes inspiral searches in the time domain feasible for both pulsar timing arrays and relative stellar astrometry.",
+    "status": "found"
+  },
+  "2609.14131": {
+    "arxiv_id": "2609.14131",
+    "title": "Operator Learning with Variational Quantum Circuits",
+    "authors": [
+      "Jorgen Wu",
+      "Masoud Barati",
+      "Peyman Givi"
+    ],
+    "submission_date": "2026-09-12T20:19:31Z",
+    "latest_updated": "2026-09-12T20:19:31Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14131v1"
+    ],
+    "abstract": "A new methodology is developed for quantum machine learning which enables variational quantum circuits to learn linear and non-linear solution operators to differential equations. This is devised by extending the framework of the DeepONet, a technique for modeling differential equations. The branch and trunk neural networks are replaced by variational quantum circuits, leveraging the quantum universal approximation theorem. The methodology is tested on several differential equations and yields low approximation & generalization errors even with shallow circuit depths. In addition, it does not encounter barren plateaus during training. The model displays improved error and parameter scaling relative to the classical DeepONet. This is due to the intrinsic property that the approximation error depends on the dimension of the input function space, rather than the number of sensor locations. A theoretical framework is established in the form of explicit error bounds, which measure the contributions of the truncation, branch, and trunk circuit errors to the total operator approximation error. Full derivations for the error bounds are developed in the norms $L^2$, $L^p$, $C^0$, and Sobolev $H^k$, along with a classical-quantum comparative analysis (as Supplemental Materials).",
+    "status": "found"
+  },
+  "2609.14132": {
+    "arxiv_id": "2609.14132",
+    "title": "Sparse Generalized-Admittance AC Power Flow for Fast Contingency Analysis and Remedial-Action Assessment",
+    "authors": [
+      "Pierre Artoisenet",
+      "Noémie Verstraete"
+    ],
+    "submission_date": "2026-09-12T20:20:09Z",
+    "latest_updated": "2026-09-12T20:20:09Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14132v1"
+    ],
+    "abstract": "Repeated AC power-flow calculations are common tasks in transmission system operations, in particular for contingency analysis and remedial-action assessment. For large networks, their cumulative runtime can become a computational bottleneck in operational processes. This paper develops a sparse reformulation of the generalized bus-admittance power-flow method known as PFPD. Loads and generators are represented by fixed shunt admittance terms on the diagonal of the admittance matrix, while corrective nodal currents are iteratively computed to match the constant-power and regulated-voltage constraints. In contrast to the original formulation, the slack bus is treated as a fixed-voltage boundary and removed from the admittance block decomposition. The resulting iteration reuses sparse LU factorizations of the initial generalized non-slack matrix and its PQ block, without explicitly forming dense inverse matrices. The same formulation admits two initialization modes: an unsolved base case using the same flat-start shunt heuristic as in the primary PFPD method, and repeated post-action calculations initialized from a solved operating point. Localized topology and parameter changes are expressed as low-rank admittance updates and the resulting admittance matrices are inverted by means of the Woodbury identity. An optional local-network formulation can provide an warm start before full-network refinement. N-1 experiments on the 1354-bus and 9241-bus PEGASE systems and the 6717-bus synthetic Texas system yield average per-contingency speedups between 14.4 and 18.0 relative to pandapower. On transformer tap-position actions, the method is 2.8--2.9 times faster than pandapower and 7.2--29.9 times faster than PowSyBl OpenLoadFlow.",
+    "status": "found"
+  },
+  "2609.14133": {
+    "arxiv_id": "2609.14133",
+    "title": "Vision-Force Admittance Learning for Peg Insertion into a Movable Hole",
+    "authors": [
+      "Yuzhong Chen",
+      "Yongqing Liang",
+      "Yunzhi Xu",
+      "Irving Fang",
+      "Chase Kidder",
+      "Hui-ping Wang",
+      "Raihan Haque",
+      "Yubiao Zhang",
+      "Chen Feng"
+    ],
+    "submission_date": "2026-09-12T20:29:47Z",
+    "latest_updated": "2026-09-12T20:29:47Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.14133v1"
+    ],
+    "abstract": "Precise manipulation in dynamic environments, whether induced by a mobile robot base or a target with unknown motion, remains a major challenge in robotics. Manipulation in dynamic environments introduces substantial uncertainty, which fundamentally conflicts with the tight precision requirement of precise tasks such as peg-in-the-hole. We propose a Vision-Force Admittance Learning (VFAL) framework that fuses asynchronous visual feedback with a high-frequency force-based model, using visual pose estimations as a regularization term. VFAL adapts insertion strategies online to dynamic motion while maintaining millimeter-level precision. To obtain robust, low-frequency pose information, we employ state-of-the-art vision foundation models for visual pose estimation. Additionally, we incorporate failure recovery mechanisms to enhance overall robustness. We validate our approach in real-world experiments, demonstrating high success rates and strong adaptability to various pegs and dynamic environments.",
+    "status": "found"
+  }
+}

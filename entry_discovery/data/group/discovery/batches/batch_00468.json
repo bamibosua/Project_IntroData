@@ -1,0 +1,454 @@
+{
+  "2601.22516": {
+    "arxiv_id": "2601.22516",
+    "title": "SCOPE-PD: Explainable AI on Subjective and Clinical Objective Measurements of Parkinson's Disease for Precision Decision-Making",
+    "authors": [
+      "Md Mezbahul Islam",
+      "John Michael Templeton",
+      "Masrur Sobhan",
+      "Christian Poellabauer",
+      "Ananda Mohan Mondal"
+    ],
+    "submission_date": "2026-01-30T03:49:31Z",
+    "latest_updated": "2026-01-30T03:49:31Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22516v1"
+    ],
+    "abstract": "Parkinson's disease (PD) is a chronic and complex neurodegenerative disorder influenced by genetic, clinical, and lifestyle factors. Predicting this disease early is challenging because it depends on traditional diagnostic methods that face issues of subjectivity, which commonly delay diagnosis. Several objective analyses are currently in practice to help overcome the challenges of subjectivity; however, a proper explanation of these analyses is still lacking. While machine learning (ML) has demonstrated potential in supporting PD diagnosis, existing approaches often rely on subjective reports only and lack interpretability for individualized risk estimation. This study proposes SCOPE-PD, an explainable AI-based prediction framework, by integrating subjective and objective assessments to provide personalized health decisions. Subjective and objective clinical assessment data are collected from the Parkinson's Progression Markers Initiative (PPMI) study to construct a multimodal prediction framework. Several ML techniques are applied to these data, and the best ML model is selected to interpret the results. Model interpretability is examined using SHAP-based analysis. The Random Forest algorithm achieves the highest accuracy of 98.66 percent using combined features from both subjective and objective test data. Tremor, bradykinesia, and facial expression are identified as the top three contributing features from the MDS-UPDRS test in the prediction of PD.",
+    "status": "found"
+  },
+  "2601.22517": {
+    "arxiv_id": "2601.22517",
+    "title": "RoboStriker: Hierarchical Decision-Making for Autonomous Humanoid Boxing",
+    "authors": [
+      "Kangning Yin",
+      "Zhe Cao",
+      "Wentao Dong",
+      "Weishuai Zeng",
+      "Tianyi Zhang",
+      "Qiang Zhang",
+      "Jingbo Wang",
+      "Jiangmiao Pang",
+      "Ming Zhou",
+      "Weinan Zhang"
+    ],
+    "submission_date": "2026-01-30T03:51:58Z",
+    "latest_updated": "2026-01-30T03:51:58Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22517v1"
+    ],
+    "abstract": "Achieving human-level competitive intelligence and physical agility in humanoid robots remains a major challenge, particularly in contact-rich and highly dynamic tasks such as boxing. While Multi-Agent Reinforcement Learning (MARL) offers a principled framework for strategic interaction, its direct application to humanoid control is hindered by high-dimensional contact dynamics and the absence of strong physical motion priors. We propose RoboStriker, a hierarchical three-stage framework that enables fully autonomous humanoid boxing by decoupling high-level strategic reasoning from low-level physical execution. The framework first learns a comprehensive repertoire of boxing skills by training a single-agent motion tracker on human motion capture data. These skills are subsequently distilled into a structured latent manifold, regularized by projecting the Gaussian-parameterized distribution onto a unit hypersphere. This topological constraint effectively confines exploration to the subspace of physically plausible motions. In the final stage, we introduce Latent-Space Neural Fictitious Self-Play (LS-NFSP), where competing agents learn competitive tactics by interacting within the latent action space rather than the raw motor space, significantly stabilizing multi-agent training. Experimental results demonstrate that RoboStriker achieves superior competitive performance in simulation and exhibits sim-to-real transfer. Our website is available at RoboStriker.",
+    "status": "found"
+  },
+  "2601.22518": {
+    "arxiv_id": "2601.22518",
+    "title": "Design Perspective on Materials Experience: A CiteSpace-Based Bibliometric and Visual Analysis of Interdisciplinary Research",
+    "authors": [
+      "Yuxin Zhang",
+      "Fan Zhang"
+    ],
+    "submission_date": "2026-01-30T03:52:00Z",
+    "latest_updated": "2026-01-30T03:52:00Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22518v1"
+    ],
+    "abstract": "Based on a bibliometric analysis of literature from 2005 to 2024, this study reveals that material experience is undergoing a profound transformation characterized by evolving material definitions, methodological advances, and increasing interdisciplinary integration. Material types now extend beyond traditional substances to encompass virtual and biological media, underscoring a growing emphasis on perception and interaction. Methodologically, the field has transitioned from subjective descriptions to data-driven, quantifiable models focused on objective sensory analysis and multisensory integration to enhance immersion. Key drivers, including human-machine perception convergence, material-driven interface interactions, and the embedding of intelligent interactive functions, propel the discipline toward an experience-centered paradigm reflecting a deep convergence of design, science, and technology. At the national/regional level, the United States, China, Japan, Germany, and the Netherlands lead in contributions, while France, the United Kingdom, and Romania demonstrate significant interdisciplinary progress. At the institutional level, Delft University of Technology, Justus Liebig University Giessen, and the Centre National de la Recherche Scientifique show significant advantages. In particular, the Material-Driven Design theory has established a foundational impact on the discipline, while, regarding general research trends, scholars from the United States, the Netherlands, and Germany maintain the highest academic visibility. Overall, material experience research is at a critical juncture, its future development will depend on progress in material innovation, technological integration, and perceptual quantification, as well as the establishment of socio-cultural values, all of which must be effectively unified through design to address complex evolving needs.",
+    "status": "found"
+  },
+  "2601.22519": {
+    "arxiv_id": "2601.22519",
+    "title": "Corrected Samplers for Discrete Flow Models",
+    "authors": [
+      "Zhengyan Wan",
+      "Yidong Ouyang",
+      "Liyan Xie",
+      "Hongyuan Zha",
+      "Fang Fang",
+      "Guang Cheng"
+    ],
+    "submission_date": "2026-01-30T03:53:22Z",
+    "latest_updated": "2026-05-27T08:07:41Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2601.22519v1",
+      "2601.22519v2",
+      "2601.22519v3"
+    ],
+    "abstract": "Discrete flow models (DFMs) have been proposed to learn the data distribution on finite state space, offering a flexible framework as an alternative to discrete diffusion models. A line of recent work has studied samplers for discrete diffusion models, such as tau-leaping and Euler solver. However, these samplers require a large number of iterations to control discretization error, since the transition rates are frozen in time and evaluated at the initial state within each time interval. Moreover, theoretical results for these samplers often require boundedness conditions of the transition rate or they focus on a specific type of source distributions. To address those limitations, we establish non-asymptotic discretization error bounds for those samplers without any restriction on transition rates and source distributions, under the framework of discrete flow models. Furthermore, by analyzing a one-step lower bound of the Euler sampler, we propose two corrected samplers: \\textit{time-corrected sampler} and \\textit{location-corrected sampler}, which can reduce the discretization error of tau-leaping and Euler solver with almost no additional computational cost. We rigorously show that the location-corrected sampler has a lower complexity than existing parallel samplers. We validate the effectiveness of the proposed method by achieving better generation quality with reduced inference time on simulations and text-to-image generation tasks. Code can be found in https://github.com/WanZhengyan/Corrected-Samplers-for-Discrete-Flow-Models.",
+    "status": "found"
+  },
+  "2601.22520": {
+    "arxiv_id": "2601.22520",
+    "title": "Local existence and nonexistence of solutions to the Hardy parabolic equation with general nonlinearity",
+    "authors": [
+      "Yo Tsusaka"
+    ],
+    "submission_date": "2026-01-30T03:57:17Z",
+    "latest_updated": "2026-01-30T03:57:17Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22520v1"
+    ],
+    "abstract": "In this paper, we consider the Cauchy problem for the Hardy parabolic equation with general nonlinearity and establish the local existence and nonexistence results. Our results provide the optimal integrability conditions on initial function for the existence of a local-in-time nonnegative solution. The proof of the existence result is based on the supersolution method.",
+    "status": "found"
+  },
+  "2601.22521": {
+    "arxiv_id": "2601.22521",
+    "title": "One Ring to Rule Them All: Unifying Group-Based RL via Dynamic Power-Mean Geometry",
+    "authors": [
+      "Weisong Zhao",
+      "Tong Wang",
+      "Zichang Tan",
+      "Te Yang",
+      "Siran Peng",
+      "Haoyuan Zhang",
+      "Tianshuo Zhang",
+      "Haichao Shi",
+      "Meng Meng",
+      "Yang Yang",
+      "Xiangyu Zhu",
+      "Zhen Lei",
+      "Xiao-Yu Zhang",
+      "Xu Zhou"
+    ],
+    "submission_date": "2026-01-30T03:58:54Z",
+    "latest_updated": "2026-01-30T03:58:54Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22521v1"
+    ],
+    "abstract": "Group-based reinforcement learning has evolved from the arithmetic mean of GRPO to the geometric mean of GMPO. While GMPO improves stability by constraining a conservative objective, it shares a fundamental limitation with GRPO: reliance on a fixed aggregation geometry that ignores the evolving and heterogeneous nature of each trajectory. In this work, we unify these approaches under Power-Mean Policy Optimization (PMPO), a generalized framework that parameterizes the aggregation geometry via the power-mean geometry exponent p. Within this framework, GRPO and GMPO are recovered as special cases. Theoretically, we demonstrate that adjusting p modulates the concentration of gradient updates, effectively reweighting tokens based on their advantage contribution. To determine p adaptively, we introduce a Clip-aware Effective Sample Size (ESS) mechanism. Specifically, we propose a deterministic rule that maps a trajectory clipping fraction to a target ESS. Then, we solve for the specific p to align the trajectory induced ESS with this target one. This allows PMPO to dynamically transition between the aggressive arithmetic mean for reliable trajectories and the conservative geometric mean for unstable ones. Experiments on multiple mathematical reasoning benchmarks demonstrate that PMPO outperforms strong baselines.",
+    "status": "found"
+  },
+  "2601.22522": {
+    "arxiv_id": "2601.22522",
+    "title": "Can 3D point cloud data improve automated body condition score prediction in dairy cattle?",
+    "authors": [
+      "Zhou Tang",
+      "Jin Wang",
+      "Angelo De Castro",
+      "Yuxi Zhang",
+      "Victoria Bastos Primo",
+      "Ana Beatriz Montevecchio Bernardino",
+      "Gota Morota",
+      "Xu Wang",
+      "Ricardo C Chebel",
+      "Haipeng Yu"
+    ],
+    "submission_date": "2026-01-30T03:59:06Z",
+    "latest_updated": "2026-02-03T04:16:16Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.22522v1",
+      "2601.22522v2"
+    ],
+    "abstract": "Body condition score (BCS) is a widely used indicator of body energy status and is closely associated with metabolic status, reproductive performance, and health in dairy cattle; however, conventional visual scoring is subjective and labor-intensive. Computer vision approaches have been applied to BCS prediction, with depth images widely used because they capture geometric information independent of coat color and texture. More recently, three-dimensional point cloud data have attracted increasing interest due to their ability to represent richer geometric characteristics of animal morphology, but direct head-to-head comparisons with depth image-based approaches remain limited. In this study, we compared top-view depth image and point cloud data for BCS prediction under four settings: 1) unsegmented raw data, 2) segmented full-body data, 3) segmented hindquarter data, and 4) handcrafted feature data. Prediction models were evaluated using data from 1,020 dairy cows collected on a commercial farm, with cow-level cross-validation to prevent data leakage. Depth image-based models consistently achieved higher accuracy than point cloud-based models when unsegmented raw data and segmented full-body data were used, whereas comparable performance was observed when segmented hindquarter data were used. Both depth image and point cloud approaches showed reduced accuracy when handcrafted feature data were employed compared with the other settings. Overall, point cloud-based predictions were more sensitive to noise and model architecture than depth image-based predictions. Taken together, these results indicate that three-dimensional point clouds do not provide a consistent advantage over depth images for BCS prediction in dairy cattle under the evaluated conditions.",
+    "status": "found"
+  },
+  "2601.22523": {
+    "arxiv_id": "2601.22523",
+    "title": "Superimposed-Pilot OTFS Under Fractional Doppler: Modular End-to-End Learning",
+    "authors": [
+      "Yushi Lei",
+      "Yusha Liu",
+      "Guanghui Liu",
+      "Lei Wan",
+      "Kun Yang"
+    ],
+    "submission_date": "2026-01-30T03:59:38Z",
+    "latest_updated": "2026-01-30T03:59:38Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22523v1"
+    ],
+    "abstract": "Orthogonal time frequency space (OTFS) modulation has emerged as a promising candidate to overcome the performance degradation of orthogonal frequency division multiplexing (OFDM), which are commonly encountered in high-mobility wireless communication scenarios. However, conventional OTFS transceivers rely on multiple separately designed signal-processing modules, whose isolated optimization often limits global optimal performance. To overcome limitations, this paper proposes a modular deep learning (DL) based end-to-end OTFS transceiver framework that consists of trainable and interchangeable neural network (NN) modules, including constellation mapping/demapping, superimposed pilot placement, inverse Zak (IZak)/Zak transforms, and a U-Net-enhanced NN tailored for joint channel estimation and detection (JCED), while explicitly accounting for the impact of the cyclic prefix. This physics-informed modular architecture provides flexibility for integration with conventional OTFS systems and adaptability to different communication configurations. Simulations demonstrate that the proposed design significantly outperforms baseline methods in terms of both normalized mean squared error (NMSE) and detection reliability, maintaining robustness under integer and fractional Doppler conditions. The results highlight the potential of DL-based end-to-end optimization to enable practical and high-performance OTFS transceivers for next-generation high-mobility networks.",
+    "status": "found"
+  },
+  "2601.22524": {
+    "arxiv_id": "2601.22524",
+    "title": "Variational Bayesian Flow Network for Graph Generation",
+    "authors": [
+      "Yida Xiong",
+      "Jiameng Chen",
+      "Xiuwen Gong",
+      "Jia Wu",
+      "Shirui Pan",
+      "Wenbin Hu"
+    ],
+    "submission_date": "2026-01-30T03:59:38Z",
+    "latest_updated": "2026-09-22T14:09:28Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.22524v1",
+      "2601.22524v2"
+    ],
+    "abstract": "Graph generation aims to sample discrete node and edge attributes while satisfying coupled structural constraints. Diffusion models for graphs often adopt largely factorized forward-noising, and many flow-matching methods start from factorized reference noise and coordinate-wise interpolation, so node-edge coupling is not encoded by the generative geometry and must be recovered implicitly by the core network, which can be brittle after discrete decoding. Bayesian Flow Networks (BFNs) evolve distribution parameters and naturally support discrete generation. But classical BFNs typically rely on factorized beliefs and independent channels, which limit geometric evidence fusion. We propose Variational Bayesian Flow Network (VBFN), which performs a variational lifting to a tractable joint Gaussian variational belief family governed by structured precisions. Each Bayesian update reduces to solving a symmetric positive definite linear system, enabling coupled node and edge updates within a single fusion step. We construct sample-agnostic sparse precisions from a representation-induced dependency graph, thereby avoiding label leakage while enforcing node-edge consistency. On synthetic and molecular graph datasets, VBFN improves fidelity and diversity, and surpasses baseline methods. The reproducible code is available at https://github.com/Cello2195/VBFN.",
+    "status": "found"
+  },
+  "2601.22525": {
+    "arxiv_id": "2601.22525",
+    "title": "Group Sequential Methods for the Win Ratio",
+    "authors": [
+      "Tracy Bergemann",
+      "Tim Hanson"
+    ],
+    "submission_date": "2026-01-30T03:59:42Z",
+    "latest_updated": "2026-01-30T03:59:42Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22525v1"
+    ],
+    "abstract": "The win ratio is increasingly used in randomized trials due to its intuitive clinical interpretation, ability to incorporate the relative importance of composite endpoints, and its capacity for combining different types of outcomes (e.g. time-to-event, binary, counts, etc.) to be combined. There are open questions, however, about how to implement adaptive design approaches when the primary endpoint is a win ratio, including in group sequential designs. A key requirement allowing for straightforward application of classical group sequential methods is the independence of incremental interim test statistics. This paper derives the covariance structure of incremental U-statistics that evaluate the win ratio under its asymptotic distribution. The derived covariance shows that the independent increments assumption holds for the asymptotic distribution of U-statistics that test the win ratio. Simulations confirm that traditional $α$-spending preserves Type I error across interim looks. A retrospective look at the IN.PACT SFA clinical trial data illustrates the potential for stopping early in a group sequential design using the win ratio. We have demonstrated that straightforward use of Lan-De\\uppercase{M}ets $α$-spending is possible for randomized trials involving the win ratio under certain common conditions. Thus, existing software capable of computing traditional group sequential boundaries can be employed.",
+    "status": "found"
+  },
+  "2601.22526": {
+    "arxiv_id": "2601.22526",
+    "title": "Cognitive Link-Flexible FTN-OTFS Design for High-Mobility LEO Satellite Communications",
+    "authors": [
+      "Chaorong Zhang",
+      "Benjamin K. Ng",
+      "Hui Xu",
+      "Yue Liu",
+      "Chan-Tong Lam",
+      "Ke Wang",
+      "Arumugam Nallanathan"
+    ],
+    "submission_date": "2026-01-30T04:00:01Z",
+    "latest_updated": "2026-09-11T11:43:45Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 4,
+    "versions": [
+      "2601.22526v1",
+      "2601.22526v2",
+      "2601.22526v3",
+      "2601.22526v4"
+    ],
+    "abstract": "Low Earth orbit (LEO) satellite links are challenged by pronounced signal-to-noise ratio (SNR) variation and severe Doppler shifts. Although mobility robustness is provided by orthogonal time frequency space (OTFS) modulation, the rate-reliability tradeoff of faster-than-Nyquist (FTN) signaling is constrained by fixed packing. In this paper, an SNR-aware flexible FTN-OTFS framework is proposed, in which the packing factor is adapted to changing link conditions under a prescribed reliability requirement. Link-state perception and packing decisions are supported by estimated SNR and offline reliability thresholds, with constant decision complexity achieved through a fixed-mode lookup table. Elevation-dependent propagation, fractional Doppler, and FTN-induced interference are incorporated into the signal model, while colored noise is accommodated by covariance-aware linear minimum mean-square error detection. Throughput and bit error rate are analytically characterized, and energy efficiency and peak-to-average power ratio are evaluated. Simulation results show that conservative packing preserves reliability under unfavorable conditions, while denser signaling improves throughput as the link strengthens. These findings highlight the potential of cognitive FTN adaptation for efficient future LEO wireless communications.",
+    "status": "found"
+  },
+  "2601.22527": {
+    "arxiv_id": "2601.22527",
+    "title": "$ρ$-$\\texttt{EOS}$: Training-free Bidirectional Variable-Length Control for Masked Diffusion LLMs",
+    "authors": [
+      "Jingyi Yang",
+      "Yuxian Jiang",
+      "Jing Shao"
+    ],
+    "submission_date": "2026-01-30T04:00:04Z",
+    "latest_updated": "2026-02-07T06:40:16Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.22527v1",
+      "2601.22527v2"
+    ],
+    "abstract": "Beyond parallel generation and global context modeling, current masked diffusion large language models (masked dLLMs, i.e., LLaDA) suffer from a fundamental limitation: they require a predefined, fixed generation length, which lacks flexibility and forces an inevitable trade-off between output quality and computational efficiency. To address this, we study the denoising dynamics and find that the implicit density ($ρ$) of end-of-sequence ($\\texttt{EOS}$) tokens serves as a reliable signal of generation sufficiency. In particular, the evolving implicit $\\texttt{EOS}$ density during denoising reveals whether the current masked space is excessive or insufficient, thereby guiding the adjustment direction for generation length. Building on this insight, we propose $\\textbf{$ρ$-$\\texttt{EOS}$}$, a training-free, single-stage strategy that enables bidirectional variable-length generation for masked dLLMs. Unlike prior two-stage approaches--which require separate length adjustment and iterative mask insertion phases while supporting only unidirectional expansion--$\\textbf{$ρ$-$\\texttt{EOS}$}$ achieves bidirectional length adjustment within a unified denoising process by continuously estimating the implicit $\\texttt{EOS}$ density: excessively high density triggers $\\texttt{MASK}$ token contraction, while insufficient density induces expansion. Extensive experiments on mathematics and code benchmarks demonstrate that $\\textbf{$ρ$-$\\texttt{EOS}$}$ achieves comparable performance while substantially improving inference efficiency and token utilization. Code is available at https://github.com/yjyddq/rho-EOS.",
+    "status": "found"
+  },
+  "2601.22528": {
+    "arxiv_id": "2601.22528",
+    "title": "Darwinian Memory: A Training-Free Self-Regulating Memory System for GUI Agent Evolution",
+    "authors": [
+      "Hongze Mi",
+      "Yibo Feng",
+      "WenJie Lu",
+      "Song Cao",
+      "Jinyuan Li",
+      "Yanming Li",
+      "Xuelin Zhang",
+      "Haotian Luo",
+      "Songyang Peng",
+      "He Cui",
+      "Tengfei Tian",
+      "Jun Fang",
+      "Hua Chai",
+      "Naiqiang Tan"
+    ],
+    "submission_date": "2026-01-30T04:01:21Z",
+    "latest_updated": "2026-01-30T04:01:21Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22528v1"
+    ],
+    "abstract": "Multimodal Large Language Model (MLLM) agents facilitate Graphical User Interface (GUI) automation but struggle with long-horizon, cross-application tasks due to limited context windows. While memory systems provide a viable solution, existing paradigms struggle to adapt to dynamic GUI environments, suffering from a granularity mismatch between high-level intent and low-level execution, and context pollution where the static accumulation of outdated experiences drives agents into hallucination. To address these bottlenecks, we propose the Darwinian Memory System (DMS), a self-evolving architecture that constructs memory as a dynamic ecosystem governed by the law of survival of the fittest. DMS decomposes complex trajectories into independent, reusable units for compositional flexibility, and implements Utility-driven Natural Selection to track survival value, actively pruning suboptimal paths and inhibiting high-risk plans. This evolutionary pressure compels the agent to derive superior strategies. Extensive experiments on real-world multi-app benchmarks validate that DMS boosts general-purpose MLLMs without training costs or architectural overhead, achieving average gains of 18.0% in success rate and 33.9% in execution stability, while reducing task latency, establishing it as an effective self-evolving memory system for GUI tasks.",
+    "status": "found"
+  },
+  "2601.22529": {
+    "arxiv_id": "2601.22529",
+    "title": "SHED Light on Segmentation for Dense Prediction",
+    "authors": [
+      "Seung Hyun Lee",
+      "Sangwoo Mo",
+      "Stella X. Yu"
+    ],
+    "submission_date": "2026-01-30T04:02:29Z",
+    "latest_updated": "2026-01-30T04:02:29Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22529v1"
+    ],
+    "abstract": "Dense prediction infers per-pixel values from a single image and is fundamental to 3D perception and robotics. Although real-world scenes exhibit strong structure, existing methods treat it as an independent pixel-wise prediction, often resulting in structural inconsistencies. We propose SHED, a novel encoder-decoder architecture that enforces geometric prior explicitly by incorporating segmentation into dense prediction. By bidirectional hierarchical reasoning, segment tokens are hierarchically pooled in the encoder and unpooled in the decoder to reverse the hierarchy. The model is supervised only at the final output, allowing the segment hierarchy to emerge without explicit segmentation supervision. SHED improves depth boundary sharpness and segment coherence, while demonstrating strong cross-domain generalization from synthetic to the real-world environments. Its hierarchy-aware decoder better captures global 3D scene layouts, leading to improved semantic segmentation performance. Moreover, SHED enhances 3D reconstruction quality and reveals interpretable part-level structures that are often missed by conventional pixel-wise methods.",
+    "status": "found"
+  },
+  "2601.22530": {
+    "arxiv_id": "2601.22530",
+    "title": "Enhancing Table Reasoning with Deterministic Table-State Rewards",
+    "authors": [
+      "Tung Sum Thomas Kwok",
+      "Xinyu Wang",
+      "Hengzhi He",
+      "Xiaofeng Lin",
+      "Peng Lu",
+      "Liheng Ma",
+      "Chunhe Wang",
+      "Chun Ho Mak",
+      "Yuyu Luo",
+      "Ying Nian Wu",
+      "Lei Ding",
+      "Guang Cheng"
+    ],
+    "submission_date": "2026-01-30T04:06:42Z",
+    "latest_updated": "2026-05-15T21:32:37Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.22530v1",
+      "2601.22530v2"
+    ],
+    "abstract": "Large Language Models (LLMs) struggle with multi-step reasoning over structured tables. The primary reason is the lack of explicit supervision for intermediate reasoning states. Existing learned reward models or executor-based verifiers are either unscalable or rely on answer-checking environments unavailable for many tabular tasks. This leaves no signal that is scalable and grounded in the query. To address this, we introduce TABROUGE, a training-free and deterministic state reward. By adapting the Longest Common Subsequence (LCS) metric from text summarization to evaluate tabular states, TABROUGE assesses the lexical coverage and structural integrity of intermediate tables against the query without requiring learned models or external executors. Built upon this metric, we propose RE-TAB, a plug-and-play, training-free framework. RE-TAB reframes table reasoning as deterministic control over intermediate states, utilizing TABROUGE for stepwise feedback and trajectory-level test-time scaling (TTS) signals. Across six backbones and three benchmarks, RE-TAB improves accuracy by an average of 26.7 pp over no-reward baselines. It also reduces TTS samples by up to 33%. Preliminary GRPO experiments further indicate TABROUGE's viability as a scalable post-training reward, increasing gains by 8.34 pp. We further analyze failure modes of TABROUGE, including paraphrase under-rewarding and echo-column hacking, and identify when structure-aware lexical rewards remain reliable.",
+    "status": "found"
+  },
+  "2601.22531": {
+    "arxiv_id": "2601.22531",
+    "title": "Learn from A Rationalist: Distilling Intermediate Interpretable Rationales",
+    "authors": [
+      "Jiayi Dai",
+      "Randy Goebel"
+    ],
+    "submission_date": "2026-01-30T04:07:47Z",
+    "latest_updated": "2026-05-27T20:55:02Z",
+    "revised_dates": null,
+    "venue": "Proceedings of the 43rd International Conference on Machine Learning, PMLR 306:22493-22508, 2026",
+    "latest_version": 2,
+    "versions": [
+      "2601.22531v1",
+      "2601.22531v2"
+    ],
+    "abstract": "Because of the pervasive use of deep neural networks (DNNs), especially in high-stakes domains, the interpretability of DNNs has received increased attention. The general idea of rationale extraction (RE) is to provide an interpretable-by-design framework for DNNs via a select-predict architecture where two neural networks learn jointly to perform feature selection and prediction, respectively. Given only the remote supervision from the final task prediction, the process of learning to select subsets of features (or rationales) requires searching in the space of all possible feature combinations, which is computationally challenging and even harder when the base neural networks are not sufficiently capable. To improve the predictive performance of RE models that are based on less capable or smaller neural networks (i.e., the students), we propose REKD (Rationale Extraction with Knowledge Distillation) where a student RE model learns from the rationales and predictions of a teacher (i.e., a rationalist) in addition to the student's own RE optimization. This structural adjustment to RE aligns well with how humans could learn effectively from interpretable and verifiable knowledge. Because of the neural-model agnostic nature of the method, any black-box neural network could be integrated as a backbone model. To demonstrate the viability of REKD, we conduct experiments with multiple variants of BERT and vision transformer (ViT) models. Our experiments across language and vision classification datasets (i.e., IMDB movie reviews, CIFAR 10 and CIFAR 100) show that REKD significantly improves the predictive performance of the student RE models.",
+    "status": "found"
+  },
+  "2601.22532": {
+    "arxiv_id": "2601.22532",
+    "title": "Demystifying Design Choices of Reinforcement Fine-tuning: A Batched Contextual Bandit Learning Perspective",
+    "authors": [
+      "Hong Xie",
+      "Xiao Hu",
+      "Tao Tan",
+      "Haoran Gu",
+      "Xin Li",
+      "Jianyu Han",
+      "Defu Lian",
+      "Enhong Chen"
+    ],
+    "submission_date": "2026-01-30T04:09:06Z",
+    "latest_updated": "2026-01-30T04:09:06Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22532v1"
+    ],
+    "abstract": "The reinforcement fine-tuning area is undergoing an explosion papers largely on optimizing design choices. Though performance gains are often claimed, inconsistent conclusions also arise from time to time, making the progress illusive. Reflecting on this illusion, we still lack principled answers to two fundamental questions: 1) what is the role of each design choice? 2) which ones are critical? This paper aims to shed light on them. The underlying challenge is that design choices are entangled together, making their contribution to learning and generalization difficult to attribute. To address this challenge, we first construct a minimalist baseline for disentangling factors: one rollout per query in each round, the outcome reward serving as the training signal without any advantage trick, and a batch size of thirty-two. This baseline connects to batched contextual bandit learning, which facilitates experimental analysis. Centering around this baseline, we design an experiment pipeline, examining the marginal gains of factors like advantage, number of rollouts, etc. Experiments on three base models and two datasets, not only reveal new understanding on the role of various design choices on learning and generalization dynamics, but also identify critical ones that deserve more effort.",
+    "status": "found"
+  },
+  "2601.22533": {
+    "arxiv_id": "2601.22533",
+    "title": "Thermal and Microstructural Simulations of Photonic Sintering of Oxide Ceramics: A Two-Scale Scheme",
+    "authors": [
+      "Junlong Ma",
+      "Yangyiwei Yang",
+      "Julian N. Ebert",
+      "Wolfgang Rheinheimer",
+      "Bai-Xiang Xu"
+    ],
+    "submission_date": "2026-01-30T04:11:46Z",
+    "latest_updated": "2026-01-30T04:11:46Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22533v1"
+    ],
+    "abstract": "Photonic sintering (PS) offers an ultra-fast, contact-free alternative to conventional sintering and has demonstrated its potential for enhancing the sinterability of acceptor-doped barium zirconate (BZY) ceramics. However, a central challenge in the PS process lies in achieving precise control over thermal self-stabilization in the presence of complex microstructural effects arising from photonic-ray--induced thermal profiles. To elucidate the interplay among thermal fields, microstructural evolution, and PS process parameters, this study establishes a two-scale, non-isothermal simulation framework. The framework integrates macroscopic heat-transfer simulations, incorporating effective heat conduction and photonic-ray--induced volumetric heating in the porous media, with microscopic non-isothermal phase-field sintering simulations that resolve microstructure evolution under local thermal profile. Scale bridging is achieved through a temperature field transferring and mapping that satisfies Hill-Mandel condition between the macroscopic and microscopic simulations, while maintaining synchronization between their asynchronous time-stepping schemes. After calibrating model parameters against experimental measurements, the framework successfully reproduces the experimentally observed porosity inhomogeneity along the sample depth. The influence of enhanced localized mass transport is further examined through a parametric investigation of surface and grain boundary diffusivities. Overall, the proposed framework demonstrates its feasibility and physical interpretability in establishing process-microstructure relationships for the scalable fabrication of high-performance protonic ceramics.",
+    "status": "found"
+  },
+  "2601.22534": {
+    "arxiv_id": "2601.22534",
+    "title": "LEAP -- Live Experiments for Active Pedagogy",
+    "authors": [
+      "Sumedh Karajagi",
+      "Sampad Bhusan Mohanty",
+      "Bhaskar Krishnamachari"
+    ],
+    "submission_date": "2026-01-30T04:12:06Z",
+    "latest_updated": "2026-01-30T04:12:06Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22534v1"
+    ],
+    "abstract": "Interactive computational environments can help students explore algorithmic concepts through collaborative hands-on experimentation. However, static and instructor controlled demos in lectures limit engagement. Even when interactive visualizations are used, interactions are solely controlled by the instructor, leaving students as passive observers. In addition, the tools used for demonstration often vary significantly, as they are typically developed by individual instructors. Consequently, the visualizations remain confined to a single classroom, rather than being shared and adapted across courses or reused by other instructors. To address this gap and foster active engagement in live classrooms, we present a lightweight and seamless software framework named LEAP for developing interactive computational lab exercises using a simple idea: remotely callable instructor-defined functions. Using API endpoints and a provided client, students can discover and then call instructor defined functions remotely from their coding environment using scripts or interactive notebooks. Each function call is time-stamped and persistently logged in a database, allowing real-time visualization of participation, diverse solution paths, common pitfalls, and live feedback through collaboration, gamification, and quizzes. Labs are packaged as self-contained folders, each containing their own remotely callable functions. We provide example labs to demonstrate applications relevant for numerical analysis, machine learning, algorithms courses and mention some in electrical engineering (EE), economics, and physics. These capabilities enhance engagement and provide instructors with actionable insights into learning processes. With a standardized lab format and an online directory for community-contributed labs, we aim to foster a global ecosystem for exchanging and expanding interactive pedagogy enabled by LEAP.",
+    "status": "found"
+  },
+  "2601.22535": {
+    "arxiv_id": "2601.22535",
+    "title": "High Rate Efficient Local List Decoding from HDX",
+    "authors": [
+      "Yotam Dikstein",
+      "Max Hopkins",
+      "Russell Impagliazzo",
+      "Toniann Pitassi"
+    ],
+    "submission_date": "2026-01-30T04:17:18Z",
+    "latest_updated": "2026-01-30T04:17:18Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22535v1"
+    ],
+    "abstract": "We construct the first (locally computable, approximately) locally list decodable codes with rate, efficiency, and error tolerance approaching the information theoretic limit, a core regime of interest for the complexity theoretic task of hardness amplification. Our algorithms run in polylogarithmic time and sub-logarithmic depth, which together with classic constructions in the unique decoding (low-noise) regime leads to the resolution of several long-standing problems in coding and complexity theory: 1. Near-optimally input-preserving hardness amplification (and corresponding fast PRGs) 2. Constant rate codes with $\\log(N)$-depth list decoding (RNC$^1$) 3. Complexity-preserving distance amplification Our codes are built on the powerful theory of (local-spectral) high dimensional expanders (HDX). At a technical level, we make two key contributions. First, we introduce a new framework for ($\\mathrm{polylog(N)}$-round) belief propagation on HDX that leverages a mix of local correction and global expansion to control error build-up while maintaining high rate. Second, we introduce the notion of strongly explicit local routing on HDX, local algorithms that given any two target vertices, output a random path between them in only polylogarithmic time (and, preferably, sub-logarithmic depth). Constructing such schemes on certain coset HDX allows us to instantiate our otherwise combinatorial framework in polylogarithmic time and low depth, completing the result.",
+    "status": "found"
+  }
+}

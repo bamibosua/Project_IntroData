@@ -1,0 +1,438 @@
+{
+  "2511.12029": {
+    "arxiv_id": "2511.12029",
+    "title": "On The Detection of Minimum Forecast Horizon For Real-Time Scheduling of Energy Storage Systems in Smart Grid",
+    "authors": [
+      "Nicholas Tetteh Ofoe",
+      "Weilun Wang",
+      "Lei Wu"
+    ],
+    "submission_date": "2025-11-15T04:46:37Z",
+    "latest_updated": "2025-11-15T04:46:37Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.12029v1"
+    ],
+    "abstract": "The increasing integration of energy storage systems (ESSs) into power grids has necessitated effective real-time control strategies under uncertain and volatile electricity prices. An important problem of model predictive control of ESSs is identifying the minimum forecast horizon needed to exactly simulate the globally optimal control trajectory. Existing methods in the literature provide only sufficient conditions and might ignore real-world inconsistencies in control actions. In this paper, we introduce a trajectory-alignment-based definition of the minimum forecast horizon and propose an algorithm that identifies the minimum planning horizon for which all rolling-horizon control decisions match those of the full-horizon global optimization. Using real price data from the bidding zone DK1 in Denmark of the Nord Pool day-ahead market and a realistic ESS model, we illustrate that $60$ hours of forecast horizon allows us to exactly simulate the global control sequence and economic outcomes. In addition, we illustrate that under other parameter configurations, no forecast horizon ensures full convergence, demonstrating the sensitivity of the existence of a forecast horizon to various parameters. Our findings provide an operationally significant framework for minimum forecast horizon detection in storage scheduling and pave the way for the analytical description of this important planning measure.",
+    "status": "found"
+  },
+  "2511.12030": {
+    "arxiv_id": "2511.12030",
+    "title": "VPHO: Joint Visual-Physical Cue Learning and Aggregation for Hand-Object Pose Estimation",
+    "authors": [
+      "Jun Zhou",
+      "Chi Xu",
+      "Kaifeng Tang",
+      "Yuting Ge",
+      "Tingrui Guo",
+      "Li Cheng"
+    ],
+    "submission_date": "2025-11-15T04:47:30Z",
+    "latest_updated": "2025-11-15T04:47:30Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.12030v1"
+    ],
+    "abstract": "Estimating the 3D poses of hands and objects from a single RGB image is a fundamental yet challenging problem, with broad applications in augmented reality and human-computer interaction. Existing methods largely rely on visual cues alone, often producing results that violate physical constraints such as interpenetration or non-contact. Recent efforts to incorporate physics reasoning typically depend on post-optimization or non-differentiable physics engines, which compromise visual consistency and end-to-end trainability. To overcome these limitations, we propose a novel framework that jointly integrates visual and physical cues for hand-object pose estimation. This integration is achieved through two key ideas: 1) joint visual-physical cue learning: The model is trained to extract 2D visual cues and 3D physical cues, thereby enabling more comprehensive representation learning for hand-object interactions; 2) candidate pose aggregation: A novel refinement process that aggregates multiple diffusion-generated candidate poses by leveraging both visual and physical predictions, yielding a final estimate that is visually consistent and physically plausible. Extensive experiments demonstrate that our method significantly outperforms existing state-of-the-art approaches in both pose accuracy and physical plausibility.",
+    "status": "found"
+  },
+  "2511.12031": {
+    "arxiv_id": "2511.12031",
+    "title": "Striking the Right Balance between Compute and Copy: Improving LLM Inferencing Under Speculative Decoding",
+    "authors": [
+      "Arun Ramachandran",
+      "Ramaswamy Govindarajan",
+      "Murali Annavaram",
+      "Prakash Raghavendra",
+      "Hossein Entezari Zarch",
+      "Lei Gao",
+      "Chaoyi Jiang"
+    ],
+    "submission_date": "2025-11-15T04:49:23Z",
+    "latest_updated": "2025-11-15T04:49:23Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.12031v1"
+    ],
+    "abstract": "With the skyrocketing costs of GPUs and their virtual instances in the cloud, there is a significant desire to use CPUs for large language model (LLM) inference. KV cache update, often implemented as allocation, copying, and in-place strided update for each generated token, incurs significant overhead. As the sequence length increases, the allocation and copy overheads dominate the performance. Alternate approaches may allocate large KV tensors upfront to enable in-place updates, but these matrices (with zero-padded rows) cause redundant computations. In this work, we propose a new KV cache allocation mechanism called Balancing Memory and Compute (BMC). BMC allocates, once every r iterations, KV tensors with r redundant rows, allowing in-place update without copy overhead for those iterations, but at the expense of a small amount of redundant computation. Second, we make an interesting observation that the extra rows allocated in the KV tensors and the resulting redundant computation can be repurposed for Speculative Decoding (SD) that improves token generation efficiency. Last, BMC represents a spectrum of design points with different values of r. To identify the best-performing design point(s), we derive a simple analytical model for BMC. The proposed BMC method achieves an average throughput acceleration of up to 3.2x over baseline HuggingFace (without SD). Importantly when we apply BMC with SD, it results in an additional speedup of up to 1.39x, over and above the speedup offered by SD. Further, BMC achieves a throughput acceleration of up to 1.36x and 2.29x over state-of-the-art inference servers vLLM and DeepSpeed, respectively. Although the BMC technique is evaluated extensively across different classes of CPUs (desktop and server class), we also evaluate the scheme with GPUs and demonstrate that it works well for GPUs.",
+    "status": "found"
+  },
+  "2511.12032": {
+    "arxiv_id": "2511.12032",
+    "title": "Improved Masked Image Generation with Knowledge-Augmented Token Representations",
+    "authors": [
+      "Guotao Liang",
+      "Baoquan Zhang",
+      "Zhiyuan Wen",
+      "Zihao Han",
+      "Yunming Ye"
+    ],
+    "submission_date": "2025-11-15T04:53:21Z",
+    "latest_updated": "2025-11-15T04:53:21Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.12032v1"
+    ],
+    "abstract": "Masked image generation (MIG) has demonstrated remarkable efficiency and high-fidelity images by enabling parallel token prediction. Existing methods typically rely solely on the model itself to learn semantic dependencies among visual token sequences. However, directly learning such semantic dependencies from data is challenging because the individual tokens lack clear semantic meanings, and these sequences are usually long. To address this limitation, we propose a novel Knowledge-Augmented Masked Image Generation framework, named KA-MIG, which introduces explicit knowledge of token-level semantic dependencies (\\emph{i.e.}, extracted from the training data) as priors to learn richer representations for improving performance. In particular, we explore and identify three types of advantageous token knowledge graphs, including two positive and one negative graphs (\\emph{i.e.}, the co-occurrence graph, the semantic similarity graph, and the position-token incompatibility graph). Based on three prior knowledge graphs, we design a graph-aware encoder to learn token and position-aware representations. After that, a lightweight fusion mechanism is introduced to integrate these enriched representations into the existing MIG methods. Resorting to such prior knowledge, our method effectively enhances the model's ability to capture semantic dependencies, leading to improved generation quality. Experimental results demonstrate that our method improves upon existing MIG for class-conditional image generation on ImageNet.",
+    "status": "found"
+  },
+  "2511.12033": {
+    "arxiv_id": "2511.12033",
+    "title": "EARL: Entropy-Aware RL Alignment of LLMs for Reliable RTL Code Generation",
+    "authors": [
+      "Jiahe Shi",
+      "Zhengqi Gao",
+      "Ching-Yun Ko",
+      "Duane Boning"
+    ],
+    "submission_date": "2025-11-15T05:00:07Z",
+    "latest_updated": "2026-02-24T20:22:09Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.12033v1",
+      "2511.12033v2"
+    ],
+    "abstract": "Recent advances in large language models (LLMs) have demonstrated significant potential in hardware design automation, particularly in using natural language to synthesize Register-Transfer Level (RTL) code. Despite this progress, a gap remains between model capability and the demands of real-world RTL design, including syntax errors, functional hallucinations, and weak alignment to designer intent. Reinforcement Learning with Verifiable Rewards (RLVR) offers a promising approach to bridge this gap, as hardware provides executable and formally checkable signals that can be used to further align model outputs with design intent. However, in long, structured RTL code sequences, not all tokens contribute equally to functional correctness, and naïvely spreading gradients across all tokens dilutes learning signals. A key insight from our entropy analysis in RTL generation is that only a small fraction of tokens (e.g., always, if, assign, posedge) exhibit high uncertainty and largely influence control flow and module structure. To address these challenges, we present EARL, an Entropy-Aware Reinforcement Learning framework for Verilog generation. EARL performs policy optimization using verifiable reward signals and introduces entropy-guided selective updates that gate policy gradients to high-entropy tokens. This approach preserves training stability and concentrates gradient updates on functionally important regions of code. Our experiments on VerilogEval and RTLLM show that EARL improves functional pass rates over prior LLM baselines by up to 14.7%, while reducing unnecessary updates and improving training stability. These results indicate that focusing RL on critical, high-uncertainty tokens enables more reliable and targeted policy improvement for structured RTL code generation.",
+    "status": "found"
+  },
+  "2511.12034": {
+    "arxiv_id": "2511.12034",
+    "title": "Calibrated Multimodal Representation Learning with Missing Modalities",
+    "authors": [
+      "Xiaohao Liu",
+      "Xiaobo Xia",
+      "Jiaheng Wei",
+      "Shuo Yang",
+      "Xiu Su",
+      "See-Kiong Ng",
+      "Tat-Seng Chua"
+    ],
+    "submission_date": "2025-11-15T05:01:43Z",
+    "latest_updated": "2026-05-12T07:28:48Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.12034v1",
+      "2511.12034v2"
+    ],
+    "abstract": "Multimodal representation learning harmonizes distinct modalities by aligning them into a unified latent space. Recent research generalizes traditional cross-modal alignment to produce enhanced multimodal synergy but requires all modalities to be present for a common instance, making it challenging to utilize prevalent datasets with missing modalities. We provide theoretical insights into this issue from an anchor shift perspective. Observed modalities are aligned with a local anchor that deviates from the optimal one when all modalities are present, resulting in an inevitable shift. To address this, we propose CalMRL to calibrate incomplete alignments caused by missing modalities. CalMRL leverages the priors and the inherent connections among modalities to model the imputation for the missing ones at the representation level. To resolve the optimization dilemma, we employ a bi-step learning method with the closed-form solution of the posterior distribution of shared latents. We validate its mitigation of anchor shift and convergence with theoretical guidance. By equipping the calibrated alignment with the existing advanced method, we offer new flexibility to absorb data with missing modalities, which is originally unattainable. Extensive experiments demonstrate the superiority of CalMRL. The code is released at https://github.com/Xiaohao-Liu/CalMRL.",
+    "status": "found"
+  },
+  "2511.12035": {
+    "arxiv_id": "2511.12035",
+    "title": "Timeripple: Accelerating vDiTs by Understanding the Spatio-Temporal Correlations in Latent Space",
+    "authors": [
+      "Wenxuan Miao",
+      "Yulin Sun",
+      "Aiyue Chen",
+      "Jing Lin",
+      "Yiwu Yao",
+      "Yiming Gan",
+      "Jieru Zhao",
+      "Jingwen Leng",
+      "Minyi Guo",
+      "Yu Feng"
+    ],
+    "submission_date": "2025-11-15T05:07:31Z",
+    "latest_updated": "2026-07-21T06:26:07Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.12035v1",
+      "2511.12035v2"
+    ],
+    "abstract": "The recent surge in video generation has shown the growing demand for high-quality video synthesis using large vision models. Existing video generation models are predominantly based on the video diffusion transformer (vDiT), however, they suffer from substantial inference delay due to self-attention. While prior studies have focused on reducing redundant computations in self-attention, they often overlook the inherent spatio-temporal correlations in video streams and directly leverage sparsity patterns from large language models to reduce attention computations. In this work, we take a principled approach to accelerate self-attention in vDiTs by leveraging the spatio-temporal correlations in the latent space. We show that the attention patterns within vDiT are primarily due to the dominant spatial and temporal correlations at the token channel level. Based on this insight, we propose a lightweight and adaptive reuse strategy that approximates attention computations by reusing partial attention scores of spatially or temporally correlated tokens along individual channels. We demonstrate that our method achieves significantly higher computational savings (85\\%) compared to state-of-the-art techniques over 4 vDiTs, while preserving almost identical video quality ($<$0.06\\% loss on VBench).",
+    "status": "found"
+  },
+  "2511.12036": {
+    "arxiv_id": "2511.12036",
+    "title": "Preference Learning from Physics-Based Feedback: Tuning Language Models to Design BCC/B2 Superalloys",
+    "authors": [
+      "Satanu Ghosh",
+      "Collin Holgate",
+      "Neal R. Brodnik",
+      "Doug Downey",
+      "Samantha Daly",
+      "Tresa M. Pollock",
+      "Samuel Carton"
+    ],
+    "submission_date": "2025-11-15T05:08:22Z",
+    "latest_updated": "2025-11-15T05:08:22Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.12036v1"
+    ],
+    "abstract": "We apply preference learning to the task of language model-guided design of novel structural alloys. In contrast to prior work that focuses on generating stable inorganic crystals, our approach targets the synthesizeability of a specific structural class: BCC/B2 superalloys, an underexplored family of materials with potential applications in extreme environments. Using three open-weight models (LLaMA-3.1, Gemma-2, and OLMo-2), we demonstrate that language models can be optimized for multiple design objectives using a single, unified reward signal through Direct Preference Optimization (DPO). Unlike prior approaches that rely on heuristic or human-in-the-loop feedback (costly), our reward signal is derived from thermodynamic phase calculations, offering a scientifically grounded criterion for model tuning. To our knowledge, this is the first demonstration of preference-tuning a language model using physics-grounded feedback for structural alloy design. The resulting framework is general and extensible, providing a path forward for intelligent design-space exploration across a range of physical science domains.",
+    "status": "found"
+  },
+  "2511.12037": {
+    "arxiv_id": "2511.12037",
+    "title": "Optical multistability in a compact microcavity enabled by near-exceptional coupling",
+    "authors": [
+      "Zhen Liu",
+      "Xuefan Yin",
+      "Andrey Bogdanov",
+      "Yujia Nie",
+      "Yi Zuo",
+      "Hongbin Li",
+      "Feifan Wang",
+      "Chao Peng"
+    ],
+    "submission_date": "2025-11-15T05:11:59Z",
+    "latest_updated": "2025-11-15T05:11:59Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.12037v1"
+    ],
+    "abstract": "Multistability -- the emergence of multiple stable states under identical conditions -- is a hallmark of nonlinear complexity and an enabling mechanism for multilevel optical memory and photonic computing. Its realization in a compact footprint, however, is limited by intrinsically weak optical nonlinearities and the enlarged free spectral range that raises the multistability threshold. Here, we overcome this constraint by engineering a pair of spectrally close, ultra-high-Q resonances in a photonic crystal microcavity. Leveraging structural perturbations that deliberately introduce non-Hermitian coupling through a shared radiation channel, we drive the resonances toward an exceptional point with nearly degenerate wavelengths and balanced quality factors approaching $10^6$. This configuration substantially enhances thermo-optical nonlinearity and produces pronounced tristability and hysteresis loops within a footprint of 20 μm at input powers below 240 μW. We further demonstrate proof-of-concept optical random-access memory through controlled switching among multistable states. These results establish a general strategy for nonlinear microcavities to achieve energy-efficient multistability for reconfigurable all-optical memories, logic, and neuromorphic processors.",
+    "status": "found"
+  },
+  "2511.12038": {
+    "arxiv_id": "2511.12038",
+    "title": "Temperature bandgaps and engineered thermal state access in driven nanophotonic resonators",
+    "authors": [
+      "Punnag Padhy",
+      "Mohammad Asif Zaman",
+      "Jennifer Dionne"
+    ],
+    "submission_date": "2025-11-15T05:14:46Z",
+    "latest_updated": "2026-06-24T06:24:43Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.12038v1",
+      "2511.12038v2"
+    ],
+    "abstract": "We show that strong thermo-optic feedback in nanophotonic resonators creates forbidden steady state temperatures that are unreachable under any static excitation. This temperature bandgap opens when thermo-optic feedback gain overcomes optical and thermal dissipation, splitting an otherwise continuous thermal landscape into disconnected accessible bands. We experimentally map this temperature band structure using quasi-bound states in the continuum resonances in silicon metasurfaces. Continuous wavelength scans exploit spectrally accumulated thermal energy to access the forbidden interval, reaching up to ~88°C higher temperature than static excitation, both at the same wavelength and maximum power. A characteristic three-stage temperature rise near the band edge confirms the -1/2 critical exponent of saddle-node bifurcations and enables quantitative extraction of band-edge wavelengths. Combining external thermal bias with optical excitation drives programmable interband transitions, enabling nearly 8.5-fold amplification of temperature rise and wavelength-selective switching between thermal states separated by just 1 nm in excitation wavelength. The bandgap is fully designable through metasurface geometry and hybrid material integration, which tune optical absorption, confinement and resonance linewidth. These results establish the temperature bandgap as a designable degree of freedom in driven nanophotonic systems, opening routes toward all-optical thermal logic and programmable photothermal control of chemical and biological processes.",
+    "status": "found"
+  },
+  "2511.12039": {
+    "arxiv_id": "2511.12039",
+    "title": "Positive Characteristic Sets for Relational Pattern Languages",
+    "authors": [
+      "S. Mahmoud Mousawi",
+      "Sandra Zilles"
+    ],
+    "submission_date": "2025-11-15T05:16:32Z",
+    "latest_updated": "2026-09-26T17:30:27Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2511.12039v1",
+      "2511.12039v2",
+      "2511.12039v3"
+    ],
+    "abstract": "In the context of learning formal languages, data about an unknown target language L is given in terms of a set of (word,label) pairs, where a binary label indicates whether or not the given word belongs to L. A (polynomial-size) characteristic set for L, with respect to a reference class L of languages, is a set of such pairs that satisfies certain conditions allowing a learning algorithm to (efficiently) identify L within L. In this paper, we introduce the notion of positive characteristic set, referring to characteristic sets of only positive examples. These are of importance in the context of learning from positive examples only. We study this notion for classes of relational pattern languages, which are of relevance to various applications in string processing.",
+    "status": "found"
+  },
+  "2511.12040": {
+    "arxiv_id": "2511.12040",
+    "title": "SRSplat: Feed-Forward Super-Resolution Gaussian Splatting from Sparse Multi-View Images",
+    "authors": [
+      "Xinyuan Hu",
+      "Changyue Shi",
+      "Chuxiao Yang",
+      "Minghao Chen",
+      "Jiajun Ding",
+      "Tao Wei",
+      "Chen Wei",
+      "Zhou Yu",
+      "Min Tan"
+    ],
+    "submission_date": "2025-11-15T05:17:44Z",
+    "latest_updated": "2025-11-15T05:17:44Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.12040v1"
+    ],
+    "abstract": "Feed-forward 3D reconstruction from sparse, low-resolution (LR) images is a crucial capability for real-world applications, such as autonomous driving and embodied AI. However, existing methods often fail to recover fine texture details. This limitation stems from the inherent lack of high-frequency information in LR inputs. To address this, we propose \\textbf{SRSplat}, a feed-forward framework that reconstructs high-resolution 3D scenes from only a few LR views. Our main insight is to compensate for the deficiency of texture information by jointly leveraging external high-quality reference images and internal texture cues. We first construct a scene-specific reference gallery, generated for each scene using Multimodal Large Language Models (MLLMs) and diffusion models. To integrate this external information, we introduce the \\textit{Reference-Guided Feature Enhancement (RGFE)} module, which aligns and fuses features from the LR input images and their reference twin image. Subsequently, we train a decoder to predict the Gaussian primitives using the multi-view fused feature obtained from \\textit{RGFE}. To further refine predicted Gaussian primitives, we introduce \\textit{Texture-Aware Density Control (TADC)}, which adaptively adjusts Gaussian density based on the internal texture richness of the LR inputs. Extensive experiments demonstrate that our SRSplat outperforms existing methods on various datasets, including RealEstate10K, ACID, and DTU, and exhibits strong cross-dataset and cross-resolution generalization capabilities.",
+    "status": "found"
+  },
+  "2511.12041": {
+    "arxiv_id": "2511.12041",
+    "title": "Mesh-based Super-resolution of Multiscale Detonation Flows with Graph Transformers",
+    "authors": [
+      "Shivam Barwey",
+      "Pinaki Pal"
+    ],
+    "submission_date": "2025-11-15T05:20:01Z",
+    "latest_updated": "2026-09-13T07:31:58Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 4,
+    "versions": [
+      "2511.12041v1",
+      "2511.12041v2",
+      "2511.12041v3",
+      "2511.12041v4"
+    ],
+    "abstract": "Super-resolution flow reconstruction using state-of-the-art data-driven techniques is valuable for a variety of applications, such as subgrid/subfilter closure modeling, accelerating spatiotemporal forecasting, data compression, and serving as an upscaling tool for sparse experimental measurements. In the present work, a first-of-its-kind graph transformer approach is developed for mesh-based super-resolution (SR-GT) of reacting flows. The novel data-driven modeling paradigm leverages a graph-based flow-field representation compatible with complex geometries and non-uniform/unstructured grids. Further, the transformer backbone captures long-range dependencies between different parts of the low-resolution flow-field, identifies important features, and then generates the super-resolved flow-field that preserves those features at a higher resolution. The performance of SR-GT is demonstrated in the context of spectral-element-discretized meshes for a challenging test problem of 2D detonation propagation within a premixed hydrogen-air mixture exhibiting highly complex multiscale reacting flow behavior. The SR-GT framework utilizes a unique element + neighborhood graph representation for the coarse input, which is then tokenized before being processed by the transformer component to produce the fine output. It is demonstrated that SR-GT provides high super-resolution accuracy for reacting flow-field features and superior performance compared to traditional interpolation-based SR.",
+    "status": "found"
+  },
+  "2511.12042": {
+    "arxiv_id": "2511.12042",
+    "title": "Spin precession effects in the phasing formula of eccentric compact binary inspirals up to the second post-Newtonian order",
+    "authors": [
+      "Soham Bhattacharyya",
+      "Omkar Sridhar"
+    ],
+    "submission_date": "2025-11-15T05:22:16Z",
+    "latest_updated": "2026-03-21T06:21:48Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.12042v1",
+      "2511.12042v2"
+    ],
+    "abstract": "Compact binary systems emitting gravitational waves (GWs) can exhibit orbital eccentricity, along with generic spin orientations, leading to the precession of the orbital angular momentum, individual spins, and the orbital plane. While eccentric binaries with aligned spins are well studied, closed form post Newtonian (PN) expressions that simultaneously include eccentricity and precessing spin effects have remained unavailable. Eccentricity complicates orbital evolution because solving the coupled differential equations typically requires numerical integration, which slows down the generation of waveforms. We exploit the separation of timescales between orbital motion, spin precession, and radiation reaction, applying the precession averaging method of Morras et al. (2025) to remove explicit time dependence from the spin orbit and spin spin dynamics through the second PN order. Using this framework, we derive analytic phasing formulae from the evolution equations for orbital frequency and eccentricity, treating eccentricity as a small parameter. Closed form solutions for the eccentricity evolution and GW phase are obtained up to eighth order in the initial eccentricity. We also generalize the TaylorT2 approximant to include spin precession effects and compute the orbital phase in both time and frequency domains. To improve accuracy for moderate to high initial eccentricities, we perform a resummation of the TaylorT2 phasing. These results offer efficient, closed form phasing expressions that capture the coupled dynamics of eccentricity and precession, enabling more accurate and computationally tractable GW waveform modeling for data analysis.",
+    "status": "found"
+  },
+  "2511.12043": {
+    "arxiv_id": "2511.12043",
+    "title": "BudgetLeak: Membership Inference Attacks on RAG Systems via the Generation Budget Side Channel",
+    "authors": [
+      "Hao Li",
+      "Jiajun He",
+      "Guangshuo Wang",
+      "Dengguo Feng",
+      "Zheng Li",
+      "Min Zhang"
+    ],
+    "submission_date": "2025-11-15T05:25:04Z",
+    "latest_updated": "2025-11-15T05:25:04Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.12043v1"
+    ],
+    "abstract": "Retrieval-Augmented Generation (RAG) enhances large language models by integrating external knowledge, but reliance on proprietary or sensitive corpora poses various data risks, including privacy leakage and unauthorized data usage. Membership inference attacks (MIAs) are a common technique to assess such risks, yet existing approaches underperform in RAG due to black-box constraints and the absence of strong membership signals. In this paper, we identify a previously unexplored side channel in RAG systems: the generation budget, which controls the maximum number of tokens allowed in a generated response. Varying this budget reveals observable behavioral patterns between member and non-member queries, as members gain quality more rapidly with larger budgets. Building on this insight, we propose BudgetLeak, a novel membership inference attack that probes responses under different budgets and analyzes metric evolution via sequence modeling or clustering. Extensive experiments across four datasets, three LLM generators, and two retrievers demonstrate that BudgetLeak consistently outperforms existing baselines, while maintaining high efficiency and practical viability. Our findings reveal a previously overlooked data risk in RAG systems and highlight the need for new defenses.",
+    "status": "found"
+  },
+  "2511.12044": {
+    "arxiv_id": "2511.12044",
+    "title": "FedSDA: Federated Stain Distribution Alignment for Non-IID Histopathological Image Classification",
+    "authors": [
+      "Cheng-Chang Tsai",
+      "Kai-Wen Cheng",
+      "Chun-Shien Lu"
+    ],
+    "submission_date": "2025-11-15T05:40:00Z",
+    "latest_updated": "2025-11-15T05:40:00Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.12044v1"
+    ],
+    "abstract": "Federated learning (FL) has shown success in collaboratively training a model among decentralized data resources without directly sharing privacy-sensitive training data. Despite recent advances, non-IID (non-independent and identically distributed) data poses an inevitable challenge that hinders the use of FL. In this work, we address the issue of non-IID histopathological images with feature distribution shifts from an intuitive perspective that has only received limited attention. Specifically, we address this issue from the perspective of data distribution by solely adjusting the data distributions of all clients. Building on the success of diffusion models in fitting data distributions and leveraging stain separation to extract the pivotal features that are closely related to the non-IID properties of histopathological images, we propose a Federated Stain Distribution Alignment (FedSDA) method. FedSDA aligns the stain distribution of each client with a target distribution in an FL framework to mitigate distribution shifts among clients. Furthermore, considering that training diffusion models on raw data in FL has been shown to be susceptible to privacy leakage risks, we circumvent this problem while still effectively achieving alignment. Extensive experimental results show that FedSDA is not only effective in improving baselines that focus on mitigating disparities across clients' model updates but also outperforms baselines that address the non-IID data issues from the perspective of data distribution. We show that FedSDA provides valuable and practical insights for the computational pathology community.",
+    "status": "found"
+  },
+  "2511.12045": {
+    "arxiv_id": "2511.12045",
+    "title": "MUSTEM: A Dual-Modality System for Vibrotactile and Visual Translation of Music as an Assistive Technology",
+    "authors": [
+      "Paloma Sette",
+      "Maria Werneck",
+      "William Barbosa",
+      "Ana Loubacker"
+    ],
+    "submission_date": "2025-11-15T05:50:05Z",
+    "latest_updated": "2025-11-15T05:50:05Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.12045v1"
+    ],
+    "abstract": "The emotional and structural experience of music remains a significant accessibility challenge for the deaf and hard of hearing community. This paper introduces MUSTEM (Multisensorial Emotional Translation), a novel system designed to translate music into a rich, coherent, and scientifically-grounded sensory experience. We present a dual-modality approach addressing this challenge through two interconnected components. First, a low-cost, portable hardware prototype that performs real-time audio analysis, mapping distinct frequency bands (sub-bass, bass, mid-range, treble) to a four-channel vibrotactile system, allowing users to feel the music's rhythmic and foundational structure. Second, to overcome the processing limitations of embedded hardware, we developed a high-fidelity software simulation that demonstrates the full potential of the visual translation. This assistive dashboard decodes musical components - such as rhythm, harmony, and frequency spectrum - into an intuitive and educational visual interface. MUSTEM offers a comprehensive framework for sensory substitution, presenting a viable and accessible pathway for the deaf community to experience music not just as vibration, but as a structured, substantiated and emotionally resonant visual and tactile language. Preliminary feedback from seven deaf users suggests the system's spatial vibrotactile mapping is perceptible and engaging. All source code and hardware designs are released as open-source. Video demonstrations and open-source code are available on the project's official channel.",
+    "status": "found"
+  },
+  "2511.12046": {
+    "arxiv_id": "2511.12046",
+    "title": "BackWeak: Backdooring Knowledge Distillation Simply with Weak Triggers and Fine-tuning",
+    "authors": [
+      "Shanmin Wang",
+      "Dongdong Zhao"
+    ],
+    "submission_date": "2025-11-15T05:53:15Z",
+    "latest_updated": "2026-05-25T13:34:20Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.12046v1",
+      "2511.12046v2"
+    ],
+    "abstract": "Knowledge Distillation (KD) is essential for compressing large models, yet relying on pre-trained \"teacher\" models downloaded from third-party repositories introduces serious security risks--most notably backdoor attacks. Existing KD backdoor methods are typically complex and computationally intensive: they employ surrogate student models and simulated distillation to guarantee transferability, and construct triggers similar to universal adversarial perturbations (UAPs), which being not stealthy in magnitude, inherently exhibit strong adversarial behavior. This work questions whether such complexity is necessary and constructs stealthy \"weak\" triggers--imperceptible perturbations that have negligible adversarial effect. We propose BackWeak, a simple, surrogate-free attack paradigm. BackWeak shows that a powerful backdoor can be implanted by simply fine-tuning a benign teacher with a weak trigger using a very small learning rate. We demonstrate that this delicate fine-tuning is sufficient to embed a backdoor that reliably transfers to diverse student architectures during a victim's standard distillation process, yielding high attack success rates. Extensive empirical evaluations on multiple datasets, model architectures, and KD methods show that BackWeak is efficient, simpler, and often more stealthy than previous elaborate approaches. This work calls on researchers studying KD backdoor attacks to pay particular attention to the trigger's potential adversarial characteristics.",
+    "status": "found"
+  },
+  "2511.12047": {
+    "arxiv_id": "2511.12047",
+    "title": "DCMM-Transformer: Degree-Corrected Mixed-Membership Attention for Medical Imaging",
+    "authors": [
+      "Huimin Cheng",
+      "Xiaowei Yu",
+      "Shushan Wu",
+      "Luyang Fang",
+      "Chao Cao",
+      "Jing Zhang",
+      "Tianming Liu",
+      "Dajiang Zhu",
+      "Wenxuan Zhong",
+      "Ping Ma"
+    ],
+    "submission_date": "2025-11-15T05:55:01Z",
+    "latest_updated": "2025-11-15T05:55:01Z",
+    "revised_dates": null,
+    "venue": "AAAI2026",
+    "latest_version": 1,
+    "versions": [
+      "2511.12047v1"
+    ],
+    "abstract": "Medical images exhibit latent anatomical groupings, such as organs, tissues, and pathological regions, that standard Vision Transformers (ViTs) fail to exploit. While recent work like SBM-Transformer attempts to incorporate such structures through stochastic binary masking, they suffer from non-differentiability, training instability, and the inability to model complex community structure. We present DCMM-Transformer, a novel ViT architecture for medical image analysis that incorporates a Degree-Corrected Mixed-Membership (DCMM) model as an additive bias in self-attention. Unlike prior approaches that rely on multiplicative masking and binary sampling, our method introduces community structure and degree heterogeneity in a fully differentiable and interpretable manner. Comprehensive experiments across diverse medical imaging datasets, including brain, chest, breast, and ocular modalities, demonstrate the superior performance and generalizability of the proposed approach. Furthermore, the learned group structure and structured attention modulation substantially enhance interpretability by yielding attention maps that are anatomically meaningful and semantically coherent.",
+    "status": "found"
+  },
+  "2511.12048": {
+    "arxiv_id": "2511.12048",
+    "title": "DeiTFake: Deepfake Detection Model using DeiT Multi-Stage Training",
+    "authors": [
+      "Saksham Kumar",
+      "Ashish Singh",
+      "Srinivasarao Thota",
+      "Sunil Kumar Singh",
+      "Chandan Kumar"
+    ],
+    "submission_date": "2025-11-15T05:55:09Z",
+    "latest_updated": "2025-11-15T05:55:09Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.12048v1"
+    ],
+    "abstract": "Deepfakes are major threats to the integrity of digital media. We propose DeiTFake, a DeiT-based transformer and a novel two-stage progressive training strategy with increasing augmentation complexity. The approach applies an initial transfer-learning phase with standard augmentations followed by a fine-tuning phase using advanced affine and deepfake-specific augmentations. DeiT's knowledge distillation model captures subtle manipulation artifacts, increasing robustness of the detection model. Trained on the OpenForensics dataset (190,335 images), DeiTFake achieves 98.71\\% accuracy after stage one and 99.22\\% accuracy with an AUROC of 0.9997, after stage two, outperforming the latest OpenForensics baselines. We analyze augmentation impact and training schedules, and provide practical benchmarks for facial deepfake detection.",
+    "status": "found"
+  }
+}

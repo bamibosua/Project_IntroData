@@ -1,0 +1,414 @@
+{
+  "2601.21296": {
+    "arxiv_id": "2601.21296",
+    "title": "Grounding and Enhancing Informativeness and Utility in Dataset Distillation",
+    "authors": [
+      "Shaobo Wang",
+      "Yantai Yang",
+      "Guo Chen",
+      "Peiru Li",
+      "Kaixin Li",
+      "Yufa Zhou",
+      "Zhaorun Chen",
+      "Linfeng Zhang"
+    ],
+    "submission_date": "2026-01-29T05:49:17Z",
+    "latest_updated": "2026-01-29T05:49:17Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.21296v1"
+    ],
+    "abstract": "Dataset Distillation (DD) seeks to create a compact dataset from a large, real-world dataset. While recent methods often rely on heuristic approaches to balance efficiency and quality, the fundamental relationship between original and synthetic data remains underexplored. This paper revisits knowledge distillation-based dataset distillation within a solid theoretical framework. We introduce the concepts of Informativeness and Utility, capturing crucial information within a sample and essential samples in the training set, respectively. Building on these principles, we define optimal dataset distillation mathematically. We then present InfoUtil, a framework that balances informativeness and utility in synthesizing the distilled dataset. InfoUtil incorporates two key components: (1) game-theoretic informativeness maximization using Shapley Value attribution to extract key information from samples, and (2) principled utility maximization by selecting globally influential samples based on Gradient Norm. These components ensure that the distilled dataset is both informative and utility-optimized. Experiments demonstrate that our method achieves a 6.1\\% performance improvement over the previous state-of-the-art approach on ImageNet-1K dataset using ResNet-18.",
+    "status": "found"
+  },
+  "2601.21297": {
+    "arxiv_id": "2601.21297",
+    "title": "Deep QP Safety Filter: Model-free Learning for Reachability-based Safety Filter",
+    "authors": [
+      "Byeongjun Kim",
+      "H. Jin Kim"
+    ],
+    "submission_date": "2026-01-29T05:49:48Z",
+    "latest_updated": "2026-04-14T15:50:23Z",
+    "revised_dates": null,
+    "venue": "Proceedings of The 8th Annual Learning for Dynamics and Control Conference, PMLR 331:1470-1482, 2026",
+    "latest_version": 2,
+    "versions": [
+      "2601.21297v1",
+      "2601.21297v2"
+    ],
+    "abstract": "We introduce Deep QP Safety Filter, a fully data-driven safety layer for black-box dynamical systems. Our method learns a Quadratic-Program (QP) safety filter without model knowledge by combining Hamilton-Jacobi (HJ) reachability with model-free learning. We construct contraction-based losses for both the safety value and its derivatives, and train two neural networks accordingly. In the exact setting, the learned critic converges to the viscosity solution (and its derivative), even for non-smooth values. Across diverse dynamical systems -- even including a hybrid system -- and multiple RL tasks, Deep QP Safety Filter substantially reduces pre-convergence failures while accelerating learning toward higher returns than strong baselines, offering a principled and practical route to safe, model-free control.",
+    "status": "found"
+  },
+  "2601.21298": {
+    "arxiv_id": "2601.21298",
+    "title": "Detecting Multiple Semantic Concerns in Tangled Code Commits",
+    "authors": [
+      "Beomsu Koh",
+      "Neil Walkinshaw",
+      "Donghwan Shin"
+    ],
+    "submission_date": "2026-01-29T05:50:16Z",
+    "latest_updated": "2026-09-05T09:14:35Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2601.21298v1",
+      "2601.21298v2",
+      "2601.21298v3"
+    ],
+    "abstract": "Code commits in a version control system (e.g., Git) should be atomic, i.e., focused on a single goal, such as adding a feature or fixing a bug. In practice, however, developers often bundle multiple concerns into tangled commits, obscuring intent and complicating maintenance. Recent studies have used Conventional Commits Specification (CCS) and Language Models (LMs) to capture commit intent, demonstrating that Small Language Models (SLMs) can approach the performance of Large Language Models (LLMs) while maintaining efficiency and privacy within local infrastructure. However, they do not address tangled commits involving multiple concerns, leaving the feasibility of using LMs for multi-concern detection unresolved. In this paper, we frame multi-concern detection in tangled commits as a multi-label classification problem and construct a controlled dataset of artificially tangled commits based on real-world data. We then present an empirical study using SLMs to detect multiple semantic concerns in tangled commits, examining the effects of fine-tuning, concern count, commit-message inclusion, and header-preserving truncation under practical token-budget limits. Our results show that a fine-tuned 27B-parameter SLM outperforms a state-of-the-art LLM across all concern counts. In particular, including commit messages improves detection accuracy by up to 31% (in terms of Hamming Loss) with negligible latency overhead, establishing them as important semantic cues.",
+    "status": "found"
+  },
+  "2601.21299": {
+    "arxiv_id": "2601.21299",
+    "title": "Collective Noise Filtering in Complex Networks",
+    "authors": [
+      "Tingyu Zhao",
+      "István A. Kovács"
+    ],
+    "submission_date": "2026-01-29T05:51:31Z",
+    "latest_updated": "2026-02-06T05:33:17Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.21299v1",
+      "2601.21299v2"
+    ],
+    "abstract": "Complex networks are powerful representations of complex systems across scales and domains, and the field is experiencing unprecedented growth in data availability. However, real-world network data often suffer from noise, biases, and missing data in edge weights, which undermine the reliability of downstream network analyses. Standard noise filtering approaches, whether treating individual edges one-by-one or assuming a uniform global noise level, are suboptimal, because in reality both signal and noise can be heterogeneous and correlated across multiple edges. As a solution, we introduce the Network Wiener Filter, a principled method for collective edge-level noise filtering that leverages both network structure and noise characteristics, to reduce error in the observed edge weights and to infer missing edge weights. We demonstrate the broad practical efficacy of the Network Wiener Filter in two distinct settings, the genetic interaction network of the budding yeast S. cerevisiae and the Enron Corpus email network, noting compelling evidence of successful noise suppression in both applications. With the Network Wiener Filter, we advocate for a shift toward error-aware network science, one that embraces data imperfection as an inherent feature and learns to navigate it effectively.",
+    "status": "found"
+  },
+  "2601.21300": {
+    "arxiv_id": "2601.21300",
+    "title": "Distributed Circumnavigation Using Bearing Based Control with Limited Target Information",
+    "authors": [
+      "Kushal Pratap Singh",
+      "Manvi Bengani",
+      "Darshit Mittal",
+      "Twinkle Tripathy"
+    ],
+    "submission_date": "2026-01-29T05:53:11Z",
+    "latest_updated": "2026-06-02T05:16:52Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.21300v1",
+      "2601.21300v2"
+    ],
+    "abstract": "In this paper, we address the problem of circumnavigation of a stationary target by a heterogeneous group comprising of $\\textbf{n}$ autonomous agents, having unicycle kinematics. The agents are assumed to have constant linear speeds, we control only the angular speeds. Assuming limited sensing capabilities of the agents, only a subset of agents, termed as \\textit{leaders}, know the target location. The rest, termed as \\textit{followers}, do not. We propose a distributed guidance law which drives all the agents towards the desired objective; global asymptotic stability (GAS) is ensured by using Zubov's theorem. The efficacy of the approach is demonstrated through both numerical simulations and hardware experiments.",
+    "status": "found"
+  },
+  "2601.21301": {
+    "arxiv_id": "2601.21301",
+    "title": "Achieving $\\varepsilon^{-2}$ Dependence for Average-Reward Q-Learning with a New Contraction Principle",
+    "authors": [
+      "Zijun Chen",
+      "Zaiwei Chen",
+      "Nian Si",
+      "Shengbo Wang"
+    ],
+    "submission_date": "2026-01-29T05:54:31Z",
+    "latest_updated": "2026-01-29T05:54:31Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.21301v1"
+    ],
+    "abstract": "We present the convergence rates of synchronous and asynchronous Q-learning for average-reward Markov decision processes, where the absence of contraction poses a fundamental challenge. Existing non-asymptotic results overcome this challenge by either imposing strong assumptions to enforce seminorm contraction or relying on discounted or episodic Markov decision processes as successive approximations, which either require unknown parameters or result in suboptimal sample complexity. In this work, under a reachability assumption, we establish optimal $\\widetilde{O}(\\varepsilon^{-2})$ sample complexity guarantees (up to logarithmic factors) for a simple variant of synchronous and asynchronous Q-learning that samples from the lazified dynamics, where the system remains in the current state with some fixed probability. At the core of our analysis is the construction of an instance-dependent seminorm and showing that, after a lazy transformation of the Markov decision process, the Bellman operator becomes one-step contractive under this seminorm.",
+    "status": "found"
+  },
+  "2601.21302": {
+    "arxiv_id": "2601.21302",
+    "title": "Zalcman Conjecture for Starlike Mappings in Higher Dimensions",
+    "authors": [
+      "Surya Giri"
+    ],
+    "submission_date": "2026-01-29T05:54:38Z",
+    "latest_updated": "2026-01-29T05:54:38Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.21302v1"
+    ],
+    "abstract": "Counterexamples show that many results in the geometric function theory of one complex variable are not applicable for several complex variables. In this paper, we obtain sharp bounds for the Zalcman functional for $n=3$ associated with the starlike mappings defined on the unit ball in a complex Banach space and on the unit polydisk in $\\mathbb{C}^n$. These results confirm the validity of the Zalcman conjecture in higher dimensions for $n=3$.",
+    "status": "found"
+  },
+  "2601.21303": {
+    "arxiv_id": "2601.21303",
+    "title": "Impact of Pointing Error on Coverage Performance of 3D Indoor Terahertz Communication Systems",
+    "authors": [
+      "Zhifeng Tang",
+      "Nan Yang",
+      "Xiangyun Zhou",
+      "Salman Durrani",
+      "Markku Juntti",
+      "Josep Miquel Jornet"
+    ],
+    "submission_date": "2026-01-29T05:55:05Z",
+    "latest_updated": "2026-01-29T05:55:05Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.21303v1"
+    ],
+    "abstract": "In this paper, we develop a tractable analytical framework for a three-dimensional (3D) indoor terahertz (THz) communication system to theoretically assess the impact of the pointing error on its coverage performance. Specifically, we model the locations of access points (APs) using a Poisson point process, human blockages as random cylinder processes, and wall blockages through a Boolean straight line process. A pointing error refers to beamforming gain and direction mismatch between the transmitter and receiver. We characterize it based on the inaccuracy of location estimate. We then analyze the impact of this pointing error on the received signal power and derive a tractable expression for the coverage probability, incorporating the multi-cluster fluctuating two-ray distribution to accurately model small-scale fading in THz communications. Aided by simulation results, we corroborate our analysis and demonstrate that the pointing error has a pronounced impact on the coverage probability. Specifically, we find that merely increasing the antenna array size is insufficient to improve the coverage probability and mitigate the detrimental impact of the pointing error, highlighting the necessity of advanced estimation techniques in THz communication systems.",
+    "status": "found"
+  },
+  "2601.21304": {
+    "arxiv_id": "2601.21304",
+    "title": "Real gamma distribution on analytic bundles of flag varieties",
+    "authors": [
+      "Haoming Wang"
+    ],
+    "submission_date": "2026-01-29T05:55:07Z",
+    "latest_updated": "2026-04-23T14:40:54Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.21304v1",
+      "2601.21304v2"
+    ],
+    "abstract": "This paper introduces four matrix normal distributions on analytic bundles of flag varieties, extending the separable covariance $\\varPhi \\otimes \\varPsi$ with potentially variable-level ($\\varPsi$) and/or sample-level ($\\varPhi$) correlations. The joint distribution of sample variances and covariances, leading to the product moment distribution, is considered when precision matrices admit a specific form. Several well-known consequences, including the non-central Wishart distribution and normal quadratic forms, now appear as corollaries.",
+    "status": "found"
+  },
+  "2601.21305": {
+    "arxiv_id": "2601.21305",
+    "title": "AI Tools in Software Development: Developer Perceptions and Usage Patterns",
+    "authors": [
+      "Mark Looi"
+    ],
+    "submission_date": "2026-01-29T05:56:35Z",
+    "latest_updated": "2026-05-11T04:42:26Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 4,
+    "versions": [
+      "2601.21305v1",
+      "2601.21305v2",
+      "2601.21305v3",
+      "2601.21305v4"
+    ],
+    "abstract": "The use of Generative AI (GenAI) tools in software development has raised questions about their impact on productivity, code quality, and developer practices. Prior research presents mixed findings, with objective analyses identifying potential declines in code quality, while survey-based studies report perceived improvements in productivity and minimal quality trade-offs. This study presents an empirical analysis of survey data from 147 professional developers, examining associations between AI tool usage, perceived productivity, perceived code quality, and adoption intent. The results indicate that higher frequency and broader use of AI tools are associated with higher perceived productivity and perceived code quality. In contrast to concerns about a trade-off between speed and quality, developers report that these outcomes co-occur. Adoption intent is positively associated with current usage patterns and ease of integration, while security concerns show a modest negative association. AI tool usage in testing is less extensive than in coding, and perceived productivity gains are correspondingly lower. Clustering analysis identifies three developer segments-Enthusiasts, Pragmatists, and Cautious-which differ in usage breadth, perceived outcomes, and adoption intent. These patterns are consistent with diffusion-like models of technology adoption and suggest a reinforcing relationship between usage, perceived outcomes, and intended future use. These segments are also associated with differences in reported organizational context, including the presence of AI-related policies. Overall, the findings suggest that perceptions of productivity and quality, along with usage experience and integration factors, are associated with adoption behavior, highlighting the importance of considering both perceived and objective outcomes in evaluating AI-assisted software development.",
+    "status": "found"
+  },
+  "2601.21306": {
+    "arxiv_id": "2601.21306",
+    "title": "The Surprising Difficulty of Search in Model-Based Reinforcement Learning",
+    "authors": [
+      "Wei-Di Chang",
+      "Mikael Henaff",
+      "Brandon Amos",
+      "Gregory Dudek",
+      "Scott Fujimoto"
+    ],
+    "submission_date": "2026-01-29T05:58:24Z",
+    "latest_updated": "2026-05-21T18:19:40Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.21306v1",
+      "2601.21306v2"
+    ],
+    "abstract": "This paper investigates search in model-based reinforcement learning (RL). Conventional wisdom holds that long-term predictions and compounding errors are the primary obstacles for model-based RL. We challenge this view, showing that search is not a drop-in replacement for a learned policy. Surprisingly, we find that search can harm performance even when the model is highly accurate. Instead, we show that mitigating overestimation bias matters more than improving model or value function accuracy. Building on this insight, we identify that taking the minimum over an ensemble of value functions effectively addresses this bias and enables effective search, achieving state-of-the-art performance across multiple popular benchmark domains.",
+    "status": "found"
+  },
+  "2601.21307": {
+    "arxiv_id": "2601.21307",
+    "title": "Mam-App: A Novel Parameter-Efficient Mamba Model for Apple Leaf Disease Classification",
+    "authors": [
+      "Md Nadim Mahamood",
+      "Md Imran Hasan",
+      "Md Rasheduzzaman",
+      "Ausrukona Ray",
+      "Md Shafi Ud Doula",
+      "Kamrul Hasan"
+    ],
+    "submission_date": "2026-01-29T05:59:53Z",
+    "latest_updated": "2026-01-29T05:59:53Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.21307v1"
+    ],
+    "abstract": "The rapid growth of the global population, alongside exponential technological advancement, has intensified the demand for food production. Meeting this demand depends not only on increasing agricultural yield but also on minimizing food loss caused by crop diseases. Diseases account for a substantial portion of apple production losses, despite apples being among the most widely produced and nutritionally valuable fruits worldwide. Previous studies have employed machine learning techniques for feature extraction and early diagnosis of apple leaf diseases, and more recently, deep learning-based models have shown remarkable performance in disease recognition. However, most state-of-the-art deep learning models are highly parameter-intensive, resulting in increased training and inference time. Although lightweight models are more suitable for user-friendly and resource-constrained applications, they often suffer from performance degradation. To address the trade-off between efficiency and performance, we propose Mam-App, a parameter-efficient Mamba-based model for feature extraction and leaf disease classification. The proposed approach achieves competitive state-of-the-art performance on the PlantVillage Apple Leaf Disease dataset, attaining 99.58% accuracy, 99.30% precision, 99.14% recall, and a 99.22% F1-score, while using only 0.051M parameters. This extremely low parameter count makes the model suitable for deployment on drones, mobile devices, and other low-resource platforms. To demonstrate the robustness and generalizability of the proposed model, we further evaluate it on the PlantVillage Corn Leaf Disease and Potato Leaf Disease datasets. The model achieves 99.48%, 99.20%, 99.34%, and 99.27% accuracy, precision, recall, and F1-score on the corn dataset and 98.46%, 98.91%, 95.39%, and 97.01% on the potato dataset, respectively.",
+    "status": "found"
+  },
+  "2601.21308": {
+    "arxiv_id": "2601.21308",
+    "title": "A Time-Domain Dual-Edge Asynchronous Pipelined SAR ADC Featuring Reset-Free Quantization at Multi-GS/s",
+    "authors": [
+      "Richard Zeng",
+      "Anthony Chan Carusone",
+      "Xilin Liu"
+    ],
+    "submission_date": "2026-01-29T06:03:11Z",
+    "latest_updated": "2026-01-29T06:03:11Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.21308v1"
+    ],
+    "abstract": "Time-domain ADCs are attractive for high-speed wireline receivers, as time resolution scales favorably with advanced CMOS technologies, enabling multi-GS/s single-channel sampling rates. However, conventional time-domain ADCs require explicit reset of voltage-to-time and time-domain signal paths between samples, introducing dead time that fundamentally limits resolution, speed, and energy efficiency. This paper introduces a dual-edge reset-free quantization concept for asynchronous pipelined SAR time-domain ADCs, in which both rising and falling signal edges are exploited to enable reset-free quantization within a single conversion period. By eliminating explicit reset phases, the proposed approach expands the effective conversion window and relaxes the resolution-speed tradeoff at high sampling rates. An 8-bit dual-edge asynchronous pipelined SAR time-domain ADC is implemented in 22-nm FD-SOI, incorporating a linearity-compensated dual-edge voltage-to-time converter and a dual-edge time-to-digital converter with independently tunable rising- and falling-edge delays. The prototype occupies a core area of 0.0089 mm^2 and achieves continuous single-channel operation at 3.5 GS/s, with architectural scalability demonstrated through intermittent operation at 10.5 GS/s and higher. At 3.5 GS/s, the ADC achieves 21.6 dB SNDR and 32.2 dB SFDR. The measured performance is primarily limited by identifiable implementation-level factors rather than by architectural constraints, demonstrating the feasibility of dual-edge reset-free quantization for high-speed time-domain ADCs.",
+    "status": "found"
+  },
+  "2601.21309": {
+    "arxiv_id": "2601.21309",
+    "title": "Transferable Graph Condensation from the Causal Perspective",
+    "authors": [
+      "Huaming Du",
+      "Yijie Huang",
+      "Su Yao",
+      "Yiying Wang",
+      "Yueyang Zhou",
+      "Jingwen Yang",
+      "Jinshi Zhang",
+      "Han Ji",
+      "Yu Zhao",
+      "Guisong Liu",
+      "Hegui Zhang",
+      "Carl Yang",
+      "Gang Kou"
+    ],
+    "submission_date": "2026-01-29T06:13:35Z",
+    "latest_updated": "2026-05-27T11:13:16Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 4,
+    "versions": [
+      "2601.21309v1",
+      "2601.21309v2",
+      "2601.21309v3",
+      "2601.21309v4"
+    ],
+    "abstract": "The increasing scale of graph datasets has significantly improved the performance of graph representation learning methods, but it has also introduced substantial training challenges. Graph dataset condensation techniques have emerged to compress large datasets into smaller yet information-rich datasets, while maintaining similar test performance. However, these methods strictly require downstream applications to match the original dataset and task, which often fails in cross-task and cross-domain scenarios. To address these challenges, we propose a novel causal-invariance-based and transferable graph dataset condensation method, named TGCC, providing effective and transferable condensed datasets. Specifically, to preserve domain-invariant knowledge, we first extract domain causal-invariant features from the spatial domain of the graph using causal interventions. Then, to fully capture the structural and feature information of the original graph, we perform enhanced condensation operations. Finally, through spectral-domain enhanced contrastive learning, we inject the causal-invariant features into the condensed graph, ensuring that the compressed graph retains the causal information of the original graph. Experimental results on five public datasets and our novel FinReport dataset demonstrate that TGCC achieves up to a 13.41% improvement in cross-task and cross-domain complex scenarios compared to existing methods, and achieves state-of-the-art performance on 5 out of 6 datasets in the single dataset and task scenario.",
+    "status": "found"
+  },
+  "2601.21310": {
+    "arxiv_id": "2601.21310",
+    "title": "A Deterministic Framework for Neural Network Quantum States in Quantum Chemistry",
+    "authors": [
+      "Zheng Che"
+    ],
+    "submission_date": "2026-01-29T06:13:41Z",
+    "latest_updated": "2026-05-11T10:04:57Z",
+    "revised_dates": null,
+    "venue": "J. Chem. Theory Comput. 22, 6497-6509 (2026)",
+    "latest_version": 2,
+    "versions": [
+      "2601.21310v1",
+      "2601.21310v2"
+    ],
+    "abstract": "We present a deterministic optimization framework for Neural Network Quantum States (NQS) designed to bypass the sampling variance and slow mixing issues inherent in stochastic optimization. By projecting a neural backflow ansatz onto dynamically evolving configuration subspaces and applying a post-hoc second-order perturbative correction, our method provides a systematic route for optimizing the selected variational component of the wavefunction and estimating residual correlation through a post-hoc perturbative correction. The implementation utilizes a hybrid CPU-GPU architecture that shows empirical sub-linear wall-time scaling with respect to the subspace size over the tested range, enabling the calculation of strongly correlated systems, such as the chromium dimer, within Hilbert spaces of $10^{23}$ configurations. Benchmarks on molecular bond dissociations demonstrate that this deterministic approach yields stable convergence and accuracies comparable to selected reference methods in the tested systems.",
+    "status": "found"
+  },
+  "2601.21311": {
+    "arxiv_id": "2601.21311",
+    "title": "Dynamically training machine-learning-based force fields for strongly anharmonic materials",
+    "authors": [
+      "Martin Callsen",
+      "Tai-Ting Lee",
+      "Mei-Yin Chou"
+    ],
+    "submission_date": "2026-01-29T06:14:04Z",
+    "latest_updated": "2026-01-29T06:14:04Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.21311v1"
+    ],
+    "abstract": "Machine learning (ML) force fields have emerged as a powerful tool for computing materials properties at finite temperatures, particularly in regimes where traditional phonon-based perturbation theories fail or cannot be extended beyond the harmonic approximation. These approaches offer accuracy comparable to ab initio molecular dynamics (MD), but at a fraction of the computational cost. However, their reliability critically depends on the quality and representativeness of the training data. In particular, static training datasets often lead to failure when the force field encounters previously unseen atomic configurations during MD simulations. In this work, we present a framework for dynamically training ML force fields and demonstrate its effectiveness across materials with varying degrees of anharmonicity, including cubic boron arsenide (c-BAs), silicon (Si), and tin selenide (SnSe). Our method builds on the conventional lattice dynamics expansion of total energy and incorporates Bayesian error estimation to guide adaptive data acquisition during simulation. Specifically, we show that trajectory-averaged Bayesian errors enable efficient and targeted exploration of the configuration space, significantly enhancing the robustness and transferability of the resulting force fields. We further demonstrate how Bayesian error estimation can be applied to determine the convergence of the dynamic training without requiring additional ab initio data. This proposed framework offers a practical and easily implementable scheme to improve the training process, which is the most critical step in developing reliable ML force fields.",
+    "status": "found"
+  },
+  "2601.21312": {
+    "arxiv_id": "2601.21312",
+    "title": "Few-Shot Learning for Dynamic Operations of Automated Electric Taxi Fleets under Evolving Charging Infrastructure: A Meta-Deep Reinforcement Learning Approach",
+    "authors": [
+      "Xiaozhuang Li",
+      "Xindi Tang",
+      "Fang He"
+    ],
+    "submission_date": "2026-01-29T06:16:34Z",
+    "latest_updated": "2026-01-29T06:16:34Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.21312v1"
+    ],
+    "abstract": "With the rapid expansion of electric vehicles (EVs) and charging infrastructure, the effective management of Autonomous Electric Taxi (AET) fleets faces a critical challenge in environments with dynamic and uncertain charging availability. While most existing research assumes a static charging network, this simplification creates a significant gap between theoretical models and real-world operations. To bridge this gap, we propose GAT-PEARL, a novel meta-reinforcement learning framework that learns an adaptive operational policy. Our approach integrates a graph attention network (GAT) to effectively extract robust spatial representations under infrastructure layouts and model the complex spatiotemporal relationships of the urban environment, and employs probabilistic embeddings for actor-critic reinforcement learning (PEARL) to enable rapid, inference-based adaptation to changes in charging network layouts without retraining. Through extensive simulations on real-world data in Chengdu, China, we demonstrate that GAT-PEARL significantly outperforms conventional reinforcement learning baselines, showing superior generalization to unseen infrastructure layouts and achieving higher overall operational efficiency in dynamic settings.",
+    "status": "found"
+  },
+  "2601.21313": {
+    "arxiv_id": "2601.21313",
+    "title": "Dispersive Microwave Sensing for Quantum Computing with Floating Electrons",
+    "authors": [
+      "Yiran Tian"
+    ],
+    "submission_date": "2026-01-29T06:17:53Z",
+    "latest_updated": "2026-01-29T06:17:53Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.21313v1"
+    ],
+    "abstract": "In this dissertation, resonator-based readout techniques were developed for floating electrons as qubits on cryogenic substrates, using two platforms: electrons on liquid helium and electrons on solid neon. In addition, a cryogenic microwave source was developed to enable low-noise measurement for qubit readout.",
+    "status": "found"
+  },
+  "2601.21314": {
+    "arxiv_id": "2601.21314",
+    "title": "HiFi-Mesh: High-Fidelity Efficient 3D Mesh Generation via Compact Autoregressive Dependence",
+    "authors": [
+      "Yanfeng Li",
+      "Tao Tan",
+      "Qingquan Gao",
+      "Zhiwen Cao",
+      "Xiaohong liu",
+      "Yue Sun"
+    ],
+    "submission_date": "2026-01-29T06:22:26Z",
+    "latest_updated": "2026-01-29T06:22:26Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.21314v1"
+    ],
+    "abstract": "High-fidelity 3D meshes can be tokenized into one-dimension (1D) sequences and directly modeled using autoregressive approaches for faces and vertices. However, existing methods suffer from insufficient resource utilization, resulting in slow inference and the ability to handle only small-scale sequences, which severely constrains the expressible structural details. We introduce the Latent Autoregressive Network (LANE), which incorporates compact autoregressive dependencies in the generation process, achieving a $6\\times$ improvement in maximum generatable sequence length compared to existing methods. To further accelerate inference, we propose the Adaptive Computation Graph Reconfiguration (AdaGraph) strategy, which effectively overcomes the efficiency bottleneck of traditional serial inference through spatiotemporal decoupling in the generation process. Experimental validation demonstrates that LANE achieves superior performance across generation speed, structural detail, and geometric consistency, providing an effective solution for high-quality 3D mesh generation.",
+    "status": "found"
+  },
+  "2601.21315": {
+    "arxiv_id": "2601.21315",
+    "title": "Distributionally Robust Classification for Multi-source Unsupervised Domain Adaptation",
+    "authors": [
+      "Seonghwi Kim",
+      "Sung Ho Jo",
+      "Wooseok Ha",
+      "Minwoo Chae"
+    ],
+    "submission_date": "2026-01-29T06:23:14Z",
+    "latest_updated": "2026-02-23T03:42:53Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.21315v1",
+      "2601.21315v2"
+    ],
+    "abstract": "Unsupervised domain adaptation (UDA) is a statistical learning problem when the distribution of training (source) data is different from that of test (target) data. In this setting, one has access to labeled data only from the source domain and unlabeled data from the target domain. The central objective is to leverage the source data and the unlabeled target data to build models that generalize to the target domain. Despite its potential, existing UDA approaches often struggle in practice, particularly in scenarios where the target domain offers only limited unlabeled data or spurious correlations dominate the source domain. To address these challenges, we propose a novel distributionally robust learning framework that models uncertainty in both the covariate distribution and the conditional label distribution. Our approach is motivated by the multi-source domain adaptation setting but is also directly applicable to the single-source scenario, making it versatile in practice. We develop an efficient learning algorithm that can be seamlessly integrated with existing UDA methods. Extensive experiments under various distribution shift scenarios show that our method consistently outperforms strong baselines, especially when target data are extremely scarce.",
+    "status": "found"
+  }
+}

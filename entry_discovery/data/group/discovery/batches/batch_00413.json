@@ -1,0 +1,459 @@
+{
+  "2601.21416": {
+    "arxiv_id": "2601.21416",
+    "title": "Spotlighting Task-Relevant Features: Object-Centric Representations for Better Generalization in Robotic Manipulation",
+    "authors": [
+      "Alexandre Chapin",
+      "Bruno Machado",
+      "Emmanuel Dellandréa",
+      "Liming Chen"
+    ],
+    "submission_date": "2026-01-29T08:55:53Z",
+    "latest_updated": "2026-09-30T16:18:33Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 4,
+    "versions": [
+      "2601.21416v1",
+      "2601.21416v2",
+      "2601.21416v3",
+      "2601.21416v4"
+    ],
+    "abstract": "The generalization capabilities of robotic manipulation policies are heavily influenced by the choice of visual representations. Existing approaches typically rely on representations extracted from pre-trained encoders, using two dominant types of features: global features, which summarize an entire image via a single pooled vector, and dense features, which preserve a patch-wise embedding from the final encoder layer. While widely used, both feature types mix task-relevant and irrelevant information, leading to poor generalization under distribution shifts, such as changes in lighting, textures, or the presence of distractors. In this work, we explore an intermediate structured alternative: Slot-Based Object-Centric Representations (SBOCR), which group dense features into a finite set of object-like entities. This representation permits to naturally reduce the noise provided to the robotic manipulation policy while keeping enough information to efficiently perform the task. We benchmark a range of global and dense representations against intermediate slot-based representations, across a suite of simulated and real-world manipulation tasks ranging from simple to complex. We evaluate their generalization under diverse visual conditions, including changes in lighting, texture, and the presence of distractors. Our findings reveal that SBOCR-based policies outperform dense and global representation-based policies in generalization settings, even without task-specific pretraining. These insights suggest that SBOCR is a promising direction for designing visual systems that generalize effectively in dynamic, real-world robotic environments.",
+    "status": "found"
+  },
+  "2601.21417": {
+    "arxiv_id": "2601.21417",
+    "title": "Vanishing of power-law corrections to Kubo's formula for the Hall current at incommensurate magnetic fields",
+    "authors": [
+      "Gabriele Mazzini",
+      "Domenico Monaco"
+    ],
+    "submission_date": "2026-01-29T08:55:58Z",
+    "latest_updated": "2026-01-29T08:55:58Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.21417v1"
+    ],
+    "abstract": "We consider a non-interacting electron gas confined to a two-dimensional crystal by the action of a perpendicular magnetic field; in the one-particle approximation, the dynamics of the system is modelled by a spectrally gapped Bloch-Landau Hamiltonian. No commensurability condition is assumed between the magnetic flux per unit cell and the quantum of magnetic flux. We construct a non-equilibrium almost-stationary state (NEASS) which \"dresses\" the equilibrium Fermi projection on states below the spectral gap, and models the state of the system after the addition of a weak external electric field of strength $\\varepsilon \\ll 1$. Having in mind applications to the integer quantum Hall effect, we probe the response of a current operator in the direction transverse to that of the applied electric field, and show that the resulting current density in the NEASS is linear in $\\varepsilon$, with no power-law corrections. The linear response coefficient, namely the Hall conductivity, is computed in terms of the equilibrium Fermi projection via the double-commutator formula, in accordance with the prediction from Kubo's linear response theory. Our results generalize the methods and findings of [Lett. Math. Phys. 112 (2022), 91] to the setting of uniform magnetic fields with incommensurate magnetic flux per unit cell, and to lattice-periodic perturbation of such magnetic fields.",
+    "status": "found"
+  },
+  "2601.21418": {
+    "arxiv_id": "2601.21418",
+    "title": "Mitigating Overthinking in Large Reasoning Models via Difficulty-aware Reinforcement Learning",
+    "authors": [
+      "Qian Wan",
+      "Ziao Xu",
+      "Luona Wei",
+      "Xiaoxuan Shen",
+      "Jianwen Sun"
+    ],
+    "submission_date": "2026-01-29T08:56:45Z",
+    "latest_updated": "2026-01-29T08:56:45Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.21418v1"
+    ],
+    "abstract": "Large Reasoning Models (LRMs) achieve explicit chain-of-thought expansion by imitating deep thinking behaviors of humans, demonstrating excellent performance in complex task scenarios. However, the deep-thinking mode often leads to unnecessarily lengthy reasoning and resource inefficiency when handling simple tasks. This overthinking phenomenon may arise from the generation preference triggered by the reward function during post-training. Existing research attempts to mitigate overthinking from the perspective of prompt design or model training, but generally underestimates the importance of task difficulty awareness, which makes it difficult for LRMs to effectively allocate reasoning resources. In this paper, we propose Difficulty-aware Policy Optimization (DiPO), a reinforcement learning-based LRM training framework. DiPO encourages LRM to spontaneously model task complexity, and integrates them into reinforcement learning framework to adjust the generation preferences introduced by post-training. A difficulty modeling method based on model self-reasoning is proposed, which significantly reduces the dependence on manual annotation and formalize task complexity. We further develop a difficulty-signal-enhanced reward function that incorporates a penalty for lengthy reasoning while considering reasoning performance and output format. Experimental results indicate that DiPO enables the model to spontaneously adjust inference overhead, significantly reducing redundant tokens without losing performance due to thought compression.",
+    "status": "found"
+  },
+  "2601.21419": {
+    "arxiv_id": "2601.21419",
+    "title": "Revisiting Diffusion Model Predictions Through Dimensionality",
+    "authors": [
+      "Qing Jin",
+      "Chaoyang Wang"
+    ],
+    "submission_date": "2026-01-29T08:56:55Z",
+    "latest_updated": "2026-03-27T10:30:18Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.21419v1",
+      "2601.21419v2"
+    ],
+    "abstract": "Recent advances in diffusion and flow matching models have highlighted a shift in the preferred prediction target -- moving from noise ($\\varepsilon$) and velocity (v) to direct data (x) prediction -- particularly in high-dimensional settings. However, a formal explanation of why the optimal target depends on the specific properties of the data remains elusive. In this work, we provide a theoretical framework based on a generalized prediction formulation that accommodates arbitrary output targets, of which $\\varepsilon$-, v-, and x-prediction are special cases. We derive the analytical relationship between data's geometry and the optimal prediction target, offering a rigorous justification for why x-prediction becomes superior when the ambient dimension significantly exceeds the data's intrinsic dimension. Furthermore, while our theory identifies dimensionality as the governing factor for the optimal prediction target, the intrinsic dimension of manifold-bound data is typically intractable to estimate in practice. To bridge this gap, we propose k-Diff, a framework that employs a data-driven approach to learn the optimal prediction parameter k directly from data, bypassing the need for explicit dimension estimation. Extensive experiments in both latent-space and pixel-space image generation demonstrate that k-Diff consistently outperforms fixed-target baselines across varying architectures and data scales, providing a principled and automated approach to enhancing generative performance.",
+    "status": "found"
+  },
+  "2601.21420": {
+    "arxiv_id": "2601.21420",
+    "title": "ConceptMoE: Adaptive Token-to-Concept Compression for Implicit Compute Allocation",
+    "authors": [
+      "Zihao Huang",
+      "Jundong Zhou",
+      "Xingwei Qu",
+      "Qiyang Min",
+      "Ge Zhang"
+    ],
+    "submission_date": "2026-01-29T08:58:22Z",
+    "latest_updated": "2026-01-29T08:58:22Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.21420v1"
+    ],
+    "abstract": "Large language models allocate uniform computation across all tokens, ignoring that some sequences are trivially predictable while others require deep reasoning. We introduce ConceptMoE, which dynamically merges semantically similar tokens into concept representations, performing implicit token-level compute allocation. A learnable chunk module identifies optimal boundaries by measuring inter-token similarity, compressing sequences by a target ratio $R$ before they enter the compute-intensive concept model. Crucially, the MoE architecture enables controlled evaluation: we reallocate saved computation to match baseline activated FLOPs (excluding attention map computation) and total parameters, isolating genuine architectural benefits. Under these conditions, ConceptMoE consistently outperforms standard MoE across language and vision-language tasks, achieving +0.9 points on language pretraining, +2.3 points on long context understanding, and +0.6 points on multimodal benchmarks. When converting pretrained MoE during continual training with layer looping, gains reach +5.5 points, demonstrating practical applicability. Beyond performance, ConceptMoE reduces attention computation by up to $R^2\\times$ and KV cache by $R\\times$. At $R=2$, empirical measurements show prefill speedups reaching 175\\% and decoding speedups up to 117\\% on long sequences. The minimal architectural modifications enable straightforward integration into existing MoE, demonstrating that adaptive concept-level processing fundamentally improves both effectiveness and efficiency of large language models.",
+    "status": "found"
+  },
+  "2601.21421": {
+    "arxiv_id": "2601.21421",
+    "title": "From Implicit Ambiguity to Explicit Solidity: Diagnosing Interior Geometric Degradation in Neural Radiance Fields for Dense 3D Scene Understanding",
+    "authors": [
+      "Jiangsan Zhao",
+      "Jakob Geipel",
+      "Kryzysztof Kusnierek"
+    ],
+    "submission_date": "2026-01-29T08:58:51Z",
+    "latest_updated": "2026-02-12T11:14:08Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.21421v1",
+      "2601.21421v2"
+    ],
+    "abstract": "Neural Radiance Fields (NeRFs) have emerged as a powerful paradigm for multi-view reconstruction, complementing classical photogrammetric pipelines based on Structure-from-Motion (SfM) and Multi-View Stereo (MVS). However, their reliability for quantitative 3D analysis in dense, self-occluding scenes remains poorly understood. In this study, we identify a fundamental failure mode of implicit density fields under heavy occlusion, which we term Interior Geometric Degradation (IGD). We show that transmittance-based volumetric optimization satisfies photometric supervision by reconstructing hollow or fragmented structures rather than solid interiors, leading to systematic instance undercounting. Through controlled experiments on synthetic datasets with increasing occlusion, we demonstrate that state-of-the-art mask-supervised NeRFs saturate at approximately 89% instance recovery in dense scenes, despite improved surface coherence and mask quality. To overcome this limitation, we introduce an explicit geometric pipeline based on Sparse Voxel Rasterization (SVRaster), initialized from SfM feature geometry. By projecting 2D instance masks onto an explicit voxel grid and enforcing geometric separation via recursive splitting, our approach preserves physical solidity and achieves a 95.8% recovery rate in dense clusters. A sensitivity analysis using degraded segmentation masks further shows that explicit SfM-based geometry is substantially more robust to supervision failure, recovering 43% more instances than implicit baselines. These results demonstrate that explicit geometric priors are a prerequisite for reliable quantitative analysis in highly self-occluding 3D scenes.",
+    "status": "found"
+  },
+  "2601.21422": {
+    "arxiv_id": "2601.21422",
+    "title": "Wellposedness and dynamics of two types of reaction--nonlocal diffusion systems under the inhomogeneous spectral fractional Laplacian",
+    "authors": [
+      "Pu Yuan",
+      "Paul A. Zegeling"
+    ],
+    "submission_date": "2026-01-29T08:59:16Z",
+    "latest_updated": "2026-06-03T11:22:57Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.21422v1",
+      "2601.21422v2"
+    ],
+    "abstract": "Reactio-nonlocal diffusion equations model nonlocal transport and anomalous diffusion by replacing the Laplacian with a fractional power, capturing diffusion mechanisms beyond Brownian motion. We primarily study the semilinear problem \\[ \\partial_t u + ε^2(-Δ)_g^αu = \\mathcal{N}(u) \\] allowing constant inhomogeneous Dirichlet boundary condition $u|_{\\partialΩ}=g$. To handle the boundary constraint, we use a harmonic lifting to reformulate the problem as an equivalent homogeneous system with a shifted nonlinearity. Working in \\(C_0(Ω)\\), analytic contraction semigroup theory yields the Duhamel formula and quantitative smoothing, implying local wellposedness for locally Lipschitz reactions and a blow-up alternative. The semigroup viewpoint also provides $L^\\infty$-contractivity and positivity preservation, which drive pointwise maximum principles and stability bounds. Furthermore, we analyze two prototypes. For the bistable RNDE, we derive an energy dissipation identity and, using a fractional weak maximum principle, obtain an invariant-range property that confines solutions between the two stable steady states. For the nonlocal Gray-Scott system with possibly different fractional diffusion orders, we prove that solutions preserve positivity. Moreover, we identify an explicit \\(L^\\infty\\) invariant set ensuring global boundedness, and derive an eigenfunction-weighted interior \\(L^2\\) bound. Finally, we perform numerical simulations using a sine pseudospectral discretization and ETDRK4 time-stepping, which illustrate the impact of fractional orders on pattern formation, consistently with our analytical results.",
+    "status": "found"
+  },
+  "2601.21423": {
+    "arxiv_id": "2601.21423",
+    "title": "Algorithms for the local and the global postage stamp problem",
+    "authors": [
+      "Léo Colisson Palais",
+      "Jean-Guillaume Dumas",
+      "Alexis Galan",
+      "Bruno Grenet",
+      "Aude Maignan"
+    ],
+    "submission_date": "2026-01-29T09:00:01Z",
+    "latest_updated": "2026-01-29T09:00:01Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.21423v1"
+    ],
+    "abstract": "We consider stamps with different values (denominations) and same dimensions, and an envelope with a fixed maximum number of stamp positions. The local postage stamp problem is to find the smallest value that cannot be realized by the sum of the stamps on the envelope. The global postage stamp problem is to find the set of denominations that maximize that smallest value for a fixed number of distinct denominations. The local problem is NP-hard and we propose here a novel algorithm that improves on both the time complexity bound and the amount of required memory. We also propose a polynomial approximation algorithm for the global problem together with its complexity analysis. Finally we show that our algorithms allow to improve secure multi-party computations on sets via a more efficient homomorphic evaluation of polynomials on ciphered values.",
+    "status": "found"
+  },
+  "2601.21424": {
+    "arxiv_id": "2601.21424",
+    "title": "Lossy Common Information in a Learnable Gray-Wyner Network",
+    "authors": [
+      "Anderson de Andrade",
+      "Alon Harell",
+      "Ivan V. Bajić"
+    ],
+    "submission_date": "2026-01-29T09:00:43Z",
+    "latest_updated": "2026-05-07T20:57:31Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2601.21424v1",
+      "2601.21424v2",
+      "2601.21424v3"
+    ],
+    "abstract": "Many computer vision tasks share substantial overlapping information, yet conventional codecs tend to ignore this, leading to redundant and inefficient representations. The Gray-Wyner network, a classical concept from information theory, offers a principled framework for separating common and task-specific information. Inspired by this idea, we develop a learnable three-channel codec that disentangles shared information from task-specific details across multiple vision tasks. We characterize the limits of this approach through the notion of lossy common information, and propose an optimization objective that balances inherent tradeoffs in learning such representations. Through comparisons of three codec architectures on two-task scenarios spanning six vision benchmarks, we demonstrate that our approach substantially reduces redundancy and consistently outperforms independent coding. These results highlight the practical value of revisiting Gray-Wyner theory in modern machine learning contexts, bridging classic information theory with task-driven representation learning.",
+    "status": "found"
+  },
+  "2601.21425": {
+    "arxiv_id": "2601.21425",
+    "title": "The $^{8}$Be nucleus and the Hoyle state in dissociation of relativistic nuclei",
+    "authors": [
+      "D. A. Artemenkov",
+      "A. A. Zaitsev",
+      "P. I. Zarubin"
+    ],
+    "submission_date": "2026-01-29T09:03:35Z",
+    "latest_updated": "2026-03-02T12:16:47Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.21425v1",
+      "2601.21425v2"
+    ],
+    "abstract": "The possibility of recording fragmentation events of relativistic nuclei in a nuclear emulsion, discovered back in the pioneering era of cosmic ray physics, opens up the prospect of using this method to study extremely cold ensembles of H and He nuclei in the interests of developing the physics of nuclear clustering and, possibly, expanding the scenarios of nuclear astrophysics. The results of the BECQUEREL experiment at JINR, obtained on unstable states in the relativistic dissociation of nuclei in a nuclear emulsion providing complete detection of fragments with record resolution are presented. According to the invariant masses calculated from the emission angles in the fragmentation cone, the decays of $^8$Be(0$^+$), $^8$Be(2$^+$), $^9$Be(1.7), $^9$B, $^6$Be, $^{12}$C(0$^+_2$) or the Hoyle state and $^{12}$C(3$^-$) have been identified. The contribution of $^8$Be(0$^+$), $^9$B and $^{12}$C(0$^+_2$) increases rapidly with the $α$-particle multiplicity. Their structure and the diversity of parent nuclei suggest the fusion of the latter. The usage of automated microscopy for an analysis of exposures at the JINR NICA accelerator complex becomes a modern basis to apply the nuclear emulsion method.",
+    "status": "found"
+  },
+  "2601.21426": {
+    "arxiv_id": "2601.21426",
+    "title": "MultiModal Fine-tuning with Synthetic Captions",
+    "authors": [
+      "Shohei Enomoto",
+      "Shin'ya Yamaguchi"
+    ],
+    "submission_date": "2026-01-29T09:03:45Z",
+    "latest_updated": "2026-01-29T09:03:45Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.21426v1"
+    ],
+    "abstract": "In this paper, we address a fundamental gap between pre-training and fine-tuning of deep neural networks: while pre-training has shifted from unimodal to multimodal learning with enhanced visual understanding, fine-tuning predominantly remains unimodal, limiting the benefits of rich pre-trained representations. To bridge this gap, we propose a novel approach that transforms unimodal datasets into multimodal ones using Multimodal Large Language Models (MLLMs) to generate synthetic image captions for fine-tuning models with a multimodal objective. Our method employs carefully designed prompts incorporating class labels and domain context to produce high-quality captions tailored for classification tasks. Furthermore, we introduce a supervised contrastive loss function that explicitly encourages clustering of same-class representations during fine-tuning, along with a new inference technique that leverages class-averaged text embeddings from multiple synthetic captions per image. Extensive experiments across 13 image classification benchmarks demonstrate that our approach outperforms baseline methods, with particularly significant improvements in few-shot learning scenarios. Our work establishes a new paradigm for dataset enhancement that effectively bridges the gap between multimodal pre-training and fine-tuning. Our code is available at https://github.com/s-enmt/MMFT.",
+    "status": "found"
+  },
+  "2601.21427": {
+    "arxiv_id": "2601.21427",
+    "title": "Hybrid Barium Titanate Waveguide Designs For Efficient Nonlinear Frequency Conversion",
+    "authors": [
+      "Trevor G. Vrckovnik",
+      "D. Arslan",
+      "F. Eilenberger",
+      "Sebastian W. Schmitt"
+    ],
+    "submission_date": "2026-01-29T09:04:15Z",
+    "latest_updated": "2026-01-29T09:04:15Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.21427v1"
+    ],
+    "abstract": "Barium titanate (BaTiO$_3$) is emerging as a powerful integrated photonic material, combining strong $X^{(2)}$ and electro-optic nonlinearities with rapidly improving thin-film waveguide quality. Recent demonstrations of low-loss BaTiO$_3$ waveguides and high-Q resonators have established BaTiO$_3$-on-insulator as a promising platform for next-generation frequency-conversion and quantum photonic technologies. However, while BaTiO$_3$ electro-optic modulators are now well developed, nonlinear BaTiO$_3$ waveguide engineering remains comparatively immature. Techniques widely used in lithium niobate, such as periodic poling for quasi-phase-matching, are poorly suited to BaTiO$_3$ because epitaxial thin films exhibit high coercive fields, strong strain-clamping effects, multivariant domain structures, and slow, complex switching dynamics. These factors make accurate periodic poling challenging and hinder the development of efficient $X^{(2)}$ frequency converters. Here, we introduce a fabrication-robust alternative based on linear-nonlinear hybrid waveguides, where TiO$_2$ is selectively incorporated into BaTiO$_3$ ridge waveguides to enhance nonlinear mode overlap while relying solely on modal phase-matching. Using coupled-mode-theory simulations, we identify phase-matched geometries and show that the hybrid design achieves a 2.75x increase in normalized second harmonic generation efficiency over monolithic BaTiO$_3$ waveguides. The uniform, lithographically defined cross-section makes the approach highly scalable. These results position hybrid BaTiO$_3$-TiO$_2$ waveguides as a practical route to CMOS-compatible, high-efficiency $X^{(2)}$ devices for integrated quantum photonics.",
+    "status": "found"
+  },
+  "2601.21428": {
+    "arxiv_id": "2601.21428",
+    "title": "Numerical Methods for Dynamical Low-Rank Approximations of Stochastic Differential Equations -- Part I: Time discretization",
+    "authors": [
+      "Yoshihito Kazashi",
+      "Fabio Nobile",
+      "Fabio Zoccolan"
+    ],
+    "submission_date": "2026-01-29T09:04:18Z",
+    "latest_updated": "2026-07-18T10:50:44Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.21428v1",
+      "2601.21428v2"
+    ],
+    "abstract": "In this work (Part I), we study three time-discretization schemes for the Dynamical Low-Rank Approximation (DLRA) of high-dimensional stochastic differential equations (SDEs). Specifically, we consider the Dynamically Orthogonal (DO) method for DLRA proposed and analyzed in arXiv:2308.11581v4, which approximates the true solution by a linear combination of few products between deterministic orthonormal modes and stochastic modes, both time-dependent. The first scheme considered consists in a forward discretization in time of both deterministic and stochastic components, in a Euler-Maruyama style. Its convergence is proven subject to a time-step restriction dependent on the smallest singular value of the Gram matrix associated to the stochastic modes, which, on its turn, is shown to be always positive, provided that the SDE under study is driven by a non-degenerate noise. The second and the third schemes, on the other hand, are staggered ones, alternating updates of the deterministic and the stochastic modes in half steps, and have a projector splitting nature. We show stability of the second scheme and prove convergence with constants independent of the smallest singular value. The third scheme works better in practice, although our theoretical convergence bounds are worse than those for the second one. Computational experiments support our theoretical results. In this work we do not consider the discretization in probability, which will be the topic of Part II.",
+    "status": "found"
+  },
+  "2601.21429": {
+    "arxiv_id": "2601.21429",
+    "title": "Interference Detection and Exploitation for Multi-User Radar Sensing",
+    "authors": [
+      "Laurits Randers",
+      "Martin Voigt Vejling",
+      "Petar Popovski"
+    ],
+    "submission_date": "2026-01-29T09:04:27Z",
+    "latest_updated": "2026-01-29T09:04:27Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.21429v1"
+    ],
+    "abstract": "Integrated sensing and communication is a key feature in next-generation wireless networks, enabling joint data transmission and environmental radar sensing on shared spectrum. In multi-user scenarios, simultaneous transmissions cause mutual interference on overlapping frequencies, leading to spurious target detections and degraded sensing accuracy. This paper proposes an interference detection and exploitation algorithm for sensing using spectrally interleaved orthogonal frequency division multiplexing. A statistically rigorous procedure is introduced to detect interference while controlling the familywise error rate. We propose an algorithm that estimates the angle by exploiting interference, while estimating the delay by avoiding the interference. Numerical experiments demonstrate that the proposed method reliably detects interference, and that the delay and angle estimation error approaches the Cramér-Rao lower bound.",
+    "status": "found"
+  },
+  "2601.21430": {
+    "arxiv_id": "2601.21430",
+    "title": "Gravitational form factors of baryons in a spectator diquark model",
+    "authors": [
+      "Navpreet Kaur",
+      "Harleen Dahiya"
+    ],
+    "submission_date": "2026-01-29T09:04:39Z",
+    "latest_updated": "2026-01-29T09:04:39Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.21430v1"
+    ],
+    "abstract": "Energy momentum tensor (EMT) expresses the interaction between the gravitation and the matter fields, in which the scattering off the graviton is a natural but infeasible probe. However, the EMT can be accessed indirectly through electromagnetic interactions in quantum chromodynamics. The matrix elements of the local EMT operator are parameterized by gravitational form factors, which are subsequently related to the generalized parton distributions. Within the diquark spectator model, we investigate the gravitational form factors of baryons. We consider all the feasible pairs of quark-diquark systems to understand the behavior of each constituent quark flavor of strange and non-strange baryons.",
+    "status": "found"
+  },
+  "2601.21431": {
+    "arxiv_id": "2601.21431",
+    "title": "On transversely holomorphic partially hyperbolic flows",
+    "authors": [
+      "Mounib Abouanass"
+    ],
+    "submission_date": "2026-01-29T09:06:41Z",
+    "latest_updated": "2026-01-29T09:06:41Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.21431v1"
+    ],
+    "abstract": "In this paper, we study transversely holomorphic partially hyperbolic flows, i.e. those whose holonomy pseudo-group is given by biholomorphic maps. We prove in the seven-dimensional case that under the assumption that the subcenter distribution is integrable to a flow invariant compact foliation with trivial holonomy, then the flow projects, by a smooth fiber bundle map, to a transversely holomorphic Anosov flow on a smooth five-dimensional manifold which is, in case of topological transitivity, either $C^\\infty$ orbit equivalent to the suspension of a hyperbolic automorphism of a complex torus, or, up to finite covers, $C^\\infty$-orbit equivalent to the geodesic flow of a compact hyperbolic manifold.",
+    "status": "found"
+  },
+  "2601.21432": {
+    "arxiv_id": "2601.21432",
+    "title": "Cosmological analysis of the DESI DR1 Lyman alpha 1D power spectrum",
+    "authors": [
+      "J. Chaves-Montero",
+      "A. Font-Ribera",
+      "P. McDonald",
+      "E. Armengaud",
+      "D. Chebat",
+      "C. Garcia-Quintero",
+      "N. G. Karaçaylı",
+      "C. Ravoux",
+      "S. Satyavolu",
+      "N. Schöneberg",
+      "M. Walther",
+      "J. Aguilar",
+      "S. Ahlen",
+      "S. Bailey",
+      "D. Bianchi",
+      "D. Brooks",
+      "T. Claybaugh",
+      "A. Cuceu",
+      "A. de la Macorra",
+      "P. Doel",
+      "S. Ferraro",
+      "J. E. Forero-Romero",
+      "E. Gaztañaga",
+      "S. Gontcho A Gontcho",
+      "A. X. Gonzalez-Morales",
+      "G. Gutierrez",
+      "J. Guy",
+      "C. Hahn",
+      "H. K. Herrera-Alcantar",
+      "K. Honscheid",
+      "M. Ishak",
+      "R. Joyce",
+      "S. Juneau",
+      "D. Kirkby",
+      "A. Kremin",
+      "O. Lahav",
+      "C. Lamman",
+      "M. Landriau",
+      "J. M. Le Goff",
+      "L. Le Guillou",
+      "A. Leauthaud",
+      "M. E. Levi",
+      "M. Manera",
+      "P. Martini",
+      "A. Meisner",
+      "R. Miquel",
+      "J. Moustakas",
+      "S. Nadathur",
+      "G. Niz",
+      "N. Palanque-Delabrouille",
+      "W. J. Percival",
+      "F. Prada",
+      "I. Pérez-Ràfols",
+      "G. Rossi",
+      "E. Sanchez",
+      "D. Schlegel",
+      "M. Schubnell",
+      "H. Seo",
+      "J. Silber",
+      "D. Sprayberry",
+      "T. Tan",
+      "G. Tarlé",
+      "B. A. Weaver",
+      "C. Yèche",
+      "R. Zhou",
+      "H. Zou"
+    ],
+    "submission_date": "2026-01-29T09:08:00Z",
+    "latest_updated": "2026-04-30T22:01:34Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.21432v1",
+      "2601.21432v2"
+    ],
+    "abstract": "We present the cosmological analysis of the one-dimensional Lyman-$α$ flux power spectrum from the first data release of the Dark Energy Spectroscopic Instrument (DESI). We capture the dependence of the signal on cosmology and intergalactic medium physics using an emulator trained on a cosmological suite of hydrodynamical simulations, and we correct its predictions for the impact of astrophysical contaminants and systematics, many of these not considered in previous analyses. We employ this framework to constrain the amplitude and logarithmic slope of the linear matter power spectrum at $k_\\star=0.009\\,\\mathrm{km^{-1}s}$ and redshift $z=3$, obtaining $Δ^2_\\star=0.379\\pm0.032$ and $n_\\star=-2.309\\pm0.019$. The robustness of these constraints is validated through the analysis of mocks and a large number of alternative data analysis variations, with cosmological parameters kept blinded throughout the validation process. We then combine our results with constraints from DESI BAO and temperature, polarization, and lensing measurements from Planck, ACT, and SPT-3G to set constraints on $Λ$CDM extensions. While our measurements do not significantly tighten the limits on the sum of neutrino masses from the combination of these probes, they sharpen the constraints on the effective number of relativistic species, $N_\\mathrm{eff}=3.02\\pm0.10$, the running of the spectral index, $α_\\mathrm{s}=0.0014\\pm0.0041$, and the running of the running, $β_\\mathrm{s}=-0.0006\\pm0.0048$, by a factor of 1.18, 1.27, and 1.90, respectively. We conclude by outlining the improvements needed to fully reach the level of confidence implied by these uncertainties.",
+    "status": "found"
+  },
+  "2601.21433": {
+    "arxiv_id": "2601.21433",
+    "title": "Framing Instability in LLM Ethical Stance: Auditing Negation Sensitivity in Moral Dilemmas",
+    "authors": [
+      "Katherine Elkins",
+      "Jon Chun"
+    ],
+    "submission_date": "2026-01-29T09:09:23Z",
+    "latest_updated": "2026-07-08T17:11:16Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.21433v1",
+      "2601.21433v2"
+    ],
+    "abstract": "Language models are increasingly consulted on ethically consequential questions, yet the stance a model expresses may not survive a change in framing. We audit 16 models across 14 ethically fraught dilemmas using polarity-paired proposals (\"They should X\" / \"They should not X\"). A model's judgment of the underlying action should not reverse merely because the question is phrased as a prohibition rather than a prescription and yet, we find systematic deviations from this invariance including wholesale endorsement flips, indicating that ethical decisions are vulnerable to framing instability. Small open-weight models (1-4B parameters) endorse a proposed action 24% of the time under affirmative framing but up to 100% under negated framings, a swing of as much as 76 percentage points. Human coding of a response sample confirms the instability is genuine while showing that binary agree/disagree proxies over-state its magnitude, suggesting that an LLM judge cannot replace human coders because it silently collapses abstentions and mirrors the very forced-choice bias under study. Commercial models are for the most part more stable but still shift substantially, with cross-model agreement dropping from 73% on the bare affirmative framing to 59% under simple negation. We argue that because binary agree/disagree formats both inflate apparent endorsement and mask polarity-dependence, single-phrasing audits can misreport a model's ethical stance, and we propose the Negation Sensitivity Index (NSI) as a complement that measures stance stability directly. A model whose stance flips with phrasing cannot be relied upon in any high-stakes decision scenario.",
+    "status": "found"
+  },
+  "2601.21434": {
+    "arxiv_id": "2601.21434",
+    "title": "A version of Marstrand's theorem on a discrete metric space",
+    "authors": [
+      "Leonid Gorbunov"
+    ],
+    "submission_date": "2026-01-29T09:12:29Z",
+    "latest_updated": "2026-01-29T09:12:29Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.21434v1"
+    ],
+    "abstract": "We present and prove the version of Marstrand's theorem for discrete metric space. We provide explicit estimates of the quotient of upper and lower densities of measures on this space.",
+    "status": "found"
+  },
+  "2601.21435": {
+    "arxiv_id": "2601.21435",
+    "title": "Optimized adiabatic-impulse protocol preserving Kibble-Zurek scaling with attenuated anti-Kibble-Zurek behavior",
+    "authors": [
+      "Han-Chuan Kou",
+      "Zhi-Han Zhang",
+      "Xin-Hui Wu",
+      "Yan Zhou",
+      "Gang Chen",
+      "Peng Li"
+    ],
+    "submission_date": "2026-01-29T09:13:35Z",
+    "latest_updated": "2026-02-05T09:55:48Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.21435v1",
+      "2601.21435v2"
+    ],
+    "abstract": "We propose an optimized adiabatic-impulse (OAI) protocol that substantially reduces the evolution time for crossing a quantum phase transition while preserving Kibble-Zurek (KZ) scaling. Near criticality, the control parameter is ramped linearly across the critical point at a rate characterized by a quench time $τ_Q$. Away from criticality, the evolution remains adiabatic and is tuned close to the threshold of adiabatic breakdown, as quantified by an adiabatic coefficient $ζ$ that scales as $τ_Q^α$. As a consequence, the total evolution time exhibits a sublinear power-law dependence on $τ_Q$, and the conventional linear quench is recovered in the limit $α\\rightarrow\\infty$. We apply the OAI protocol to the transverse Ising chain and numerically determine the minimal $ζ$ required for KZ scaling. We further investigate the nonequilibrium dynamics in the presence of a noisy field that can induce anti-Kibble-Zurek (AKZ) behavior. Within the OAI protocol, noise-induced defects is significantly attenuated due to the shorter evolution time. The optimal quench time at which the defect density is minimized obeys an altered universal power-law scaling with the noise strength. Finally, we generalize the OAI protocol to the nonlinear quenches and numerically demonstrate a marked reduction in noise-induced defects.",
+    "status": "found"
+  }
+}

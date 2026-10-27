@@ -1,0 +1,409 @@
+{
+  "2511.14049": {
+    "arxiv_id": "2511.14049",
+    "title": "SmallML: Bayesian Transfer Learning for Small-Data Predictive Analytics",
+    "authors": [
+      "Semen Leontev"
+    ],
+    "submission_date": "2025-11-18T02:00:55Z",
+    "latest_updated": "2025-11-18T02:00:55Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.14049v1"
+    ],
+    "abstract": "Small and medium-sized enterprises (SMEs) represent 99.9% of U.S. businesses yet remain systematically excluded from AI due to a mismatch between their operational scale and modern machine learning's data requirements. This paper introduces SmallML, a Bayesian transfer learning framework achieving enterprise-level prediction accuracy with datasets as small as 50-200 observations. We develop a three-layer architecture integrating transfer learning, hierarchical Bayesian modeling, and conformal prediction. Layer 1 extracts informative priors from 22,673 public records using a SHAP-based procedure transferring knowledge from gradient boosting to logistic regression. Layer 2 implements hierarchical pooling across J=5-50 SMEs with adaptive shrinkage, balancing population patterns with entity-specific characteristics. Layer 3 provides conformal sets with finite-sample coverage guarantees P(y in C(x)) >= 1-alpha for distribution-free uncertainty quantification. Validation on customer churn data demonstrates 96.7% +/- 4.2% AUC with 100 observations per business -- a +24.2 point improvement over independent logistic regression (72.5% +/- 8.1%), with p < 0.000001. Conformal prediction achieves 92% empirical coverage at 90% target. Training completes in 33 minutes on standard CPU hardware. By enabling enterprise-grade predictions for 33 million U.S. SMEs previously excluded from machine learning, SmallML addresses a critical gap in AI democratization. Keywords: Bayesian transfer learning, hierarchical models, conformal prediction, small-data analytics, SME machine learning",
+    "status": "found"
+  },
+  "2511.14050": {
+    "arxiv_id": "2511.14050",
+    "title": "Nonlinear three-operator splitting algorithms with momentum for monotone inclusions",
+    "authors": [
+      "Liqian Qin",
+      "Aviv Gibali",
+      "Cuijie Zhang",
+      "Yuchao Tang"
+    ],
+    "submission_date": "2025-11-18T02:01:48Z",
+    "latest_updated": "2025-11-18T02:01:48Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.14050v1"
+    ],
+    "abstract": "In this paper, we introduce three novel splitting algorithms for solving structured monotone inclusion problems involving the sum of a maximally monotone operator, a monotone and Lipschitz continuous operator and a cocoercive operator. Each proposed method extends one of the classical schemes: the semi-forward-reflected-backward splitting algorithm, the semi-reflected-forward-backward splitting algorithm, and the outer reflected forward-backward splitting algorithm by incorporating a nonlinear momentum term. Under appropriate step-size conditions, we establish the weak convergence of all three algorithms, and further prove their $R$-linear convergence rates under strong monotonicity assumptions. Preliminary numerical experiments on both synthetic datasets and real-world quadratic programming problems in portfolio optimization demonstrate the effectiveness and superiority of the proposed algorithms.",
+    "status": "found"
+  },
+  "2511.14051": {
+    "arxiv_id": "2511.14051",
+    "title": "Cross-Sparsity-Enabled Multipath Perception via Structured Bayesian Inference for Multi-Target Estimation",
+    "authors": [
+      "Xiang Chen",
+      "Ming-Min Zhao",
+      "An Liu",
+      "Min Li",
+      "Qingjiang Shi",
+      "Min-Jian Zhao"
+    ],
+    "submission_date": "2025-11-18T02:04:42Z",
+    "latest_updated": "2025-11-18T02:04:42Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.14051v1"
+    ],
+    "abstract": "In this paper, we investigate a multi-target sensing system in multipath environment, where inter-target scattering gives rise to first-order reflected paths whose angles of departure (AoDs) and angles of arrival (AoAs) coincide with the direct-path angles of different targets. Unlike other multipath components, these first-order paths carry structural information that can be exploited as additional prior knowledge for target direction estimation. To exploit this property, we construct a sparse representation of the multi-target sensing channel and propose a novel cross sparsity structure under a three-layer hierarchical structured (3LHS) prior model, which leverages the first-order paths to enhance the prior probability of the direct paths and thereby improve the estimation accuracy. Building on this model, we propose a structured fast turbo variational Bayesian inference (SF-TVBI) algorithm, which integrates an efficient message-passing strategy to enable tractable probabilistic exchange within the cross sparsity, and a two-timescale update scheme to reduce the update frequency of the high-dimensional sparse vector. Simulation results demonstrate that leveraging the proposed cross sparsity structure is able to improve the target angle estimation accuracy substantially, and the SF-TVBI algorithm achieves estimation performance comparable to that of the Turbo-VBI, but with lower computational complexity.",
+    "status": "found"
+  },
+  "2511.14052": {
+    "arxiv_id": "2511.14052",
+    "title": "Making Evidence Actionable in Adaptive Learning",
+    "authors": [
+      "Amirreza Mehrabi",
+      "Jason W. Morphew",
+      "Breejha Quezada",
+      "N. Sanjay Rebello"
+    ],
+    "submission_date": "2025-11-18T02:06:08Z",
+    "latest_updated": "2025-11-18T02:06:08Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.14052v1"
+    ],
+    "abstract": "Adaptive learning often diagnoses precisely yet intervenes weakly, yielding help that is mistimed or misaligned. This study presents evidence supporting an instructor-governed feedback loop that converts concept-level assessment evidence into vetted micro-interventions. The adaptive learning algorithm contains three safeguards: adequacy as a hard guarantee of gap closure, attention as a budgeted constraint for time and redundancy, and diversity as protection against overfitting to a single resource. We formalize intervention assignment as a binary integer program with constraints for coverage, time, difficulty windows informed by ability estimates, prerequisites encoded by a concept matrix, and anti-redundancy enforced through diversity. Greedy selection serves low-richness and tight-latency regimes, gradient-based relaxation serves rich repositories, and a hybrid method transitions along a richness-latency frontier. In simulation and in an introductory physics deployment with one thousand two hundred four students, both solvers achieved full skill coverage for essentially all learners within bounded watch time. The gradient-based method reduced redundant coverage by approximately twelve percentage points relative to greedy and harmonized difficulty across slates, while greedy delivered comparable adequacy with lower computational cost in scarce settings. Slack variables localized missing content and supported targeted curation, sustaining sufficiency across subgroups. The result is a tractable and auditable controller that closes the diagnostic-pedagogical loop and delivers equitable, load-aware personalization at classroom scale.",
+    "status": "found"
+  },
+  "2511.14053": {
+    "arxiv_id": "2511.14053",
+    "title": "Magnetic field induced anomalous pion couplings",
+    "authors": [
+      "Fabio L. Braghin",
+      "Marcelo Loewe",
+      "Cristian Villavicencio"
+    ],
+    "submission_date": "2025-11-18T02:08:01Z",
+    "latest_updated": "2026-03-17T13:31:38Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.14053v1",
+      "2511.14053v2"
+    ],
+    "abstract": "Effective pion-constituent quark couplings induced by relatively weak magnetic fields are calculated in the framework based in Weinberg's large Nc Effective Field Theory. These couplings (form factors) vanish in the vacuum. In particular, single-pion couplings to a scalar and a vector constituent quark currents are investigated. These couplings might correspond to a fluctuation of the neutral pion into a scalar quark-antiquark state (meson) and to a vector meson, respectively. Some possible phenomenological implications are discussed.",
+    "status": "found"
+  },
+  "2511.14054": {
+    "arxiv_id": "2511.14054",
+    "title": "Exponential Decays of Steklov Eigenfunctions for the Magnetic Laplacian",
+    "authors": [
+      "Zhongwei Shen"
+    ],
+    "submission_date": "2025-11-18T02:11:48Z",
+    "latest_updated": "2025-11-18T02:11:48Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.14054v1"
+    ],
+    "abstract": "Consider the Dirichlet-to-Neumann map $Λ_β$ associated with the Schrödinger operator $(D+β\\A)^2$ with a magnetic potential in a bounded Lipschitz domain $Ω$, where $β>1$ is the field strength parameter. Assume that the magnetic field $\\B=\\nabla \\times \\A$ is of finite type. We show that if $β>β_0$, the ground state for $Λ_β$ decays exponentially away from a neighborhood of the subset of $\\partialΩ$, on which $\\B$ vanishes to the maximal order.",
+    "status": "found"
+  },
+  "2511.14055": {
+    "arxiv_id": "2511.14055",
+    "title": "A non-local origin for massive gravity and late-time acceleration",
+    "authors": [
+      "Susobhan Mandal",
+      "S. Shankaranarayanan"
+    ],
+    "submission_date": "2025-11-18T02:13:15Z",
+    "latest_updated": "2025-11-18T02:13:15Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.14055v1"
+    ],
+    "abstract": "The accelerated expansion of the universe poses a significant challenge to General Relativity. Non-local modifications to gravity have emerged as a compelling class of theories to address this dark energy puzzle. Building upon earlier proposals, we investigate a specific non-local modified gravity action incorporating terms like $R\\Box^{-2}R$, $R^{μν}\\Box^{-2}R_{μν}$, $R^{μνσδ}\\Box^{-2}R_{μνσδ}$ and demonstrate that it provides a dynamical origin for a massive graviton by reducing to the standard and extended Fierz-Pauli action at the linearized level. A fixed-point analysis of the background cosmology reveals a stable de Sitter attractor, ensuring the model naturally drives accelerated expansion. Crucially, we investigate the cosmological perturbations and show that the theory's six propagating degrees of freedom are free from ghost instabilities. We further demonstrate that all large-scale tensor modes are dynamically stable and decay on the accelerating background. This ghost-free massive gravity extension provides distinct predictions for gravitational wave polarizations and is theoretically consistent with $\\mathbf{ΛCDM}$ at late times, positioning it as a unique alternative to scalar-tensor models like $f(R)$ and Galileons. This robust stability at both the background and perturbative levels establishes our model as a consistent and compelling alternative to the standard $Λ$CDM paradigm.",
+    "status": "found"
+  },
+  "2511.14056": {
+    "arxiv_id": "2511.14056",
+    "title": "Radial Compensation: The Inverse Base-Distribution Problem for Chart-Based Generative Models on Riemannian Manifolds",
+    "authors": [
+      "Marios Papamichalis",
+      "Regina Ruane"
+    ],
+    "submission_date": "2025-11-18T02:15:25Z",
+    "latest_updated": "2026-08-23T23:04:22Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2511.14056v1",
+      "2511.14056v2",
+      "2511.14056v3"
+    ],
+    "abstract": "Latent-variable models on spheres and hyperbolic spaces usually draw a Gaussian in the tangent space at a base point and push it onto the manifold. On these spaces the distance from the base point is the coordinate that carries meaning: depth in a hierarchy, the angle of a rotation, the deviation of a protein frame from a reference. We show that the standard construction silently replaces whatever distance distribution the modeler intended with a fixed one, a scaled chi law whose shape no setting of the scale can change. We then solve the reverse problem. Given the intended distance distribution, we derive in closed form the tangent density that realizes it, prove it is the only isotropic choice with chart-independent likelihoods for a broad class of charts, and prove a lower bound with explicit constants on what ignoring the problem costs a variational autoencoder. Experiments backed by an exact per-run normalization audit confirm that the compensated prior is invariant to the chart and stable across scales, every wrapped baseline we train collapses to the boundary of its chart, curvature becomes recoverable where the wrapped prior fails and protein-orientation likelihood improves from 2.58 to 0.87 nats at identical accuracy.",
+    "status": "found"
+  },
+  "2511.14057": {
+    "arxiv_id": "2511.14057",
+    "title": "A Machine Learning-Based Multimodal Framework for Wearable Sensor-Based Archery Action Recognition and Stress Estimation",
+    "authors": [
+      "Xianghe Liu",
+      "Jiajia Liu",
+      "Chuxian Xu",
+      "Minghan Wang",
+      "Hongbo Peng",
+      "Tao Sun",
+      "Jiaqi Xu"
+    ],
+    "submission_date": "2025-11-18T02:16:33Z",
+    "latest_updated": "2025-11-18T02:16:33Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.14057v1"
+    ],
+    "abstract": "In precision sports such as archery, athletes' performance depends on both biomechanical stability and psychological resilience. Traditional motion analysis systems are often expensive and intrusive, limiting their use in natural training environments. To address this limitation, we propose a machine learning-based multimodal framework that integrates wearable sensor data for simultaneous action recognition and stress estimation. Using a self-developed wrist-worn device equipped with an accelerometer and photoplethysmography (PPG) sensor, we collected synchronized motion and physiological data during real archery sessions. For motion recognition, we introduce a novel feature--Smoothed Differential Acceleration (SmoothDiff)--and employ a Long Short-Term Memory (LSTM) model to identify motion phases, achieving 96.8% accuracy and 95.9% F1-score. For stress estimation, we extract heart rate variability (HRV) features from PPG signals and apply a Multi-Layer Perceptron (MLP) classifier, achieving 80% accuracy in distinguishing high- and low-stress levels. The proposed framework demonstrates that integrating motion and physiological sensing can provide meaningful insights into athletes' technical and mental states. This approach offers a foundation for developing intelligent, real-time feedback systems for training optimization in archery and other precision sports.",
+    "status": "found"
+  },
+  "2511.14058": {
+    "arxiv_id": "2511.14058",
+    "title": "On the number of small edge-weighted subgraphs",
+    "authors": [
+      "Feng Yu",
+      "Mingao Yuan"
+    ],
+    "submission_date": "2025-11-18T02:19:35Z",
+    "latest_updated": "2026-08-07T20:15:26Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.14058v1",
+      "2511.14058v2"
+    ],
+    "abstract": "Subgraph counting is a fundamental task that underpins several network analysis methodologies, including community detection and graph two-sample tests. Counting subgraphs is a computationally intensive problem. Substantial research has focused on developing efficient algorithms and strategies to make it feasible for larger unweighted graphs. Implementing those algorithms can be a significant hurdle for data professionals or researchers with limited expertise in algorithmic principles and programming. Furthermore, many real-world networks are weighted. Computing the number of weighted subgraphs in weighted networks presents a computational challenge, as no efficient algorithm exists for the worst-case scenario. In this paper, we derive explicit formulas for counting small edge-weighted subgraphs using the weighted adjacency matrix. These formulas are applicable to unweighted networks, offering a simple and highly practical analytical tool for researchers across various scientific domains. In addition, we introduce a generalized methodology for calculating arbitrary weighted subgraphs.",
+    "status": "found"
+  },
+  "2511.14059": {
+    "arxiv_id": "2511.14059",
+    "title": "Reconstructing the Aerosol State from Partial Observations with Generative Modeling",
+    "authors": [
+      "E. Saleh",
+      "S. Ghaffari",
+      "J. H. Curtis",
+      "L. Patel",
+      "P. A. Bosler",
+      "N. Riemer",
+      "M. West"
+    ],
+    "submission_date": "2025-11-18T02:23:23Z",
+    "latest_updated": "2025-11-18T02:23:23Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.14059v1"
+    ],
+    "abstract": "Key aerosol properties that shape climate -- such as CCN activity, scattering and absorption, and ice nucleation efficiency -- are difficult to infer from measurements that typically capture only a part of the aerosol state. We develop a conditional generative framework that maps a label (a vector of partial observations) to an ensemble of plausible aerosol states and propagates these to diagnostics, yielding mean estimates with confidence intervals. Using synthetic data, we evaluate two label configurations: a low-dimensional setup with limited number distribution and bulk-composition information, and a high-dimensional setup including complete number and total mass distributions plus species bulk masses. Generated samples maintain strong label compliance, and higher-dimensional labels markedly reduce variability. CCN activity and volume scattering are well constrained even under the low-dimensional setup, whereas dust- and BC-sensitive diagnostics (frozen fraction, absorption) benefit substantially from the additional information in the high-dimensional case. This framework clarifies which observational inputs most effectively constrain different diagnostics and demonstrates how generative machine learning can provide uncertainty-aware estimates from incomplete aerosol information.",
+    "status": "found"
+  },
+  "2511.14060": {
+    "arxiv_id": "2511.14060",
+    "title": "Large Magnetic Flux Rope Formation in an X2.1 Flare observed on September 6, 2011",
+    "authors": [
+      "Arpita Roddanavar",
+      "Satoshi Inoue",
+      "Keiji Hayashi",
+      "Ju Jing",
+      "Wenda Cao",
+      "Haimin Wang"
+    ],
+    "submission_date": "2025-11-18T02:37:26Z",
+    "latest_updated": "2025-11-18T02:37:26Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.14060v1"
+    ],
+    "abstract": "Solar active region 11283 produced an X2.1 flare associated with a solar eruption on September 6, 2011. Observations revealed a preflare sigmoidal structure and a circular flare ribbon surrounding the typical two ribbon structure, along with remote brightenings located at a considerable distance from the main flare site. To interpret these observations in terms of the three dimensional (3D) coronal magnetic field dynamics, we conducted data constrained magnetohydrodynamic (MHD) simulations. Using a non linear force free field (NLFFF) as the initial condition, we reconstructed a realistic pre flare magnetic environment, capturing a sheared sigmoid above the polarity inversion line (PIL) surmounted by a fan spine structure. Our simulations revealed that reconnection between the sigmoidal field, the adjacent fan dome field lines, and the neighboring large loops facilitated the transfer of magnetic twist and led to the formation of a large magnetic flux rope (MFR). This transfer and propagation of twist are clearly visible throughout the MFR. As reconnection progresses, the entire fan spine structure expands along with the evolving MFR. A notable outcome of the simulation is that the footpoints of the newly formed MFR align closely with the observed circular flare ribbon and the remote brightening region. Our findings suggest that a large MFR formed during the X2.1 flare, providing a coherent explanation for the observed phenomena.",
+    "status": "found"
+  },
+  "2511.14061": {
+    "arxiv_id": "2511.14061",
+    "title": "Hardness of Range Avoidance and Proof Complexity Generators from Demi-Bits",
+    "authors": [
+      "Hanlin Ren",
+      "Yichuan Wang",
+      "Yan Zhong"
+    ],
+    "submission_date": "2025-11-18T02:40:39Z",
+    "latest_updated": "2026-03-13T03:47:26Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.14061v1",
+      "2511.14061v2"
+    ],
+    "abstract": "Given a circuit $G: \\{0, 1\\}^n \\to \\{0, 1\\}^m$ with $m > n$, the *range avoidance* problem ($\\text{Avoid}$) asks to output a string $y\\in \\{0, 1\\}^m$ that is not in the range of $G$. Besides its profound connection to circuit complexity and explicit construction problems, this problem is also related to the existence of *proof complexity generators* -- circuits $G: \\{0, 1\\}^n \\to \\{0, 1\\}^m$ where $m > n$ but for every $y\\in \\{0, 1\\}^m$, it is infeasible to prove the statement \"$y\\not\\in\\mathrm{Range}(G)$\" in a given propositional proof system. This paper connects these two problems with the existence of *demi-bits generators*, a fundamental cryptographic primitive against nondeterministic adversaries introduced by Rudich (RANDOM '97). $\\bullet$ We show that the existence of demi-bits generators implies $\\text{Avoid}$ is hard for nondeterministic algorithms. This resolves an open problem raised by Chen and Li (STOC '24). Furthermore, assuming the demi-hardness of certain LPN-style generators or Goldreich' PRG, we prove the hardness of $\\text{Avoid}$ even when the instances are constant-degree polynomials over $\\mathbb{F}_2$. $\\bullet$ We show that the dual weak pigeonhole principle is unprovable in Cook's theory $\\mathsf{PV}_1$ under the existence of demi-bits generators secure against $\\mathbf{AM}$, thereby separating Jerabek's theory $\\mathsf{APC}_1$ from $\\mathsf{PV}_1$. $\\bullet$ We transform demi-bits generators to proof complexity generators that are *pseudo-surjective* with nearly optimal parameters. Our constructions build on the recent breakthroughs on the hardness of $\\text{Avoid}$ by Ilango, Li, and Williams (STOC '23) and Chen and Li (STOC '24). We use *randomness extractors* to significantly simplify the construction and the proof.",
+    "status": "found"
+  },
+  "2511.14062": {
+    "arxiv_id": "2511.14062",
+    "title": "LogPurge: Log Data Purification for Anomaly Detection via Rule-Enhanced Filtering",
+    "authors": [
+      "Shenglin Zhang",
+      "Ziang Chen",
+      "Zijing Que",
+      "Yilun Liu",
+      "Yongqian Sun",
+      "Sicheng Wei",
+      "Dan Pei",
+      "Hailin Li"
+    ],
+    "submission_date": "2025-11-18T02:41:18Z",
+    "latest_updated": "2025-11-18T02:41:18Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.14062v1"
+    ],
+    "abstract": "Log anomaly detection, which is critical for identifying system failures and preempting security breaches, detects irregular patterns within large volumes of log data, and impacts domains such as service reliability, performance optimization, and database log analysis. Modern log anomaly detection methods rely on training deep learning models on clean, anomaly-free log sequences. However, obtaining such clean log data requires costly and tedious human labeling, and existing automatic cleaning methods fail to fully integrate the specific characteristics and actual semantics of logs in their purification process. In this paper, we propose a cost-aware, rule-enhanced purification framework, LogPurge, that automatically selects a sufficient subset of normal log sequences from contamination log sequences to train a anomaly detection model. Our approach involves a two-stage filtering algorithm: In the first stage, we use a large language model (LLM) to remove clustered anomalous patterns and enhance system rules to improve LLM's understanding of system logs; in the second stage, we utilize a divide-and-conquer strategy that decomposes the remaining contaminated regions into smaller subproblems, allowing each to be effectively purified through the first stage procedure. Our experiments, conducted on two public datasets and one industrial dataset, show that our method significantly removes an average of 98.74% of anomalies while retaining 82.39% of normal samples. Compared to the latest unsupervised log sample selection algorithms, our method achieves F-1 score improvements of 35.7% and 84.11% on the public datasets, and an impressive 149.72% F-1 improvement on the private dataset, demonstrating the effectiveness of our approach.",
+    "status": "found"
+  },
+  "2511.14063": {
+    "arxiv_id": "2511.14063",
+    "title": "Semantic Context Matters: Improving Conditioning for Autoregressive Models",
+    "authors": [
+      "Dongyang Jin",
+      "Ryan Xu",
+      "Jianhao Zeng",
+      "Rui Lan",
+      "Yancheng Bai",
+      "Lei Sun",
+      "Xiangxiang Chu"
+    ],
+    "submission_date": "2025-11-18T02:42:24Z",
+    "latest_updated": "2026-03-16T04:59:46Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.14063v1",
+      "2511.14063v2"
+    ],
+    "abstract": "Recently, autoregressive (AR) models have shown strong potential in image generation, offering better scalability and easier integration with unified multi-modal systems compared to diffusion-based methods. However, extending AR models to general image editing remains challenging due to weak and inefficient conditioning, often leading to poor instruction adherence and visual artifacts. To address this, we propose SCAR, a Semantic-Context-driven method for Autoregressive models. SCAR introduces two key components: Compressed Semantic Prefilling, which encodes high-level semantics into a compact and efficient prefix, and Semantic Alignment Guidance, which aligns the last visual hidden states with target semantics during autoregressive decoding to enhance instruction fidelity. Unlike decoding-stage injection methods, SCAR builds upon the flexibility and generality of vector-quantized-based prefilling while overcoming its semantic limitations and high cost. It generalizes across both next-token and next-set AR paradigms with minimal architectural changes. SCAR achieves superior visual fidelity and semantic alignment on both instruction editing and controllable generation benchmarks, outperforming prior AR-based methods while maintaining controllability. Code will be released at https://github.com/AMAP-ML/SCAR.",
+    "status": "found"
+  },
+  "2511.14064": {
+    "arxiv_id": "2511.14064",
+    "title": "CafeMed: Causal Attention Fusion Enhanced Medication Recommendation",
+    "authors": [
+      "Kelin Ren",
+      "Chan-Yang Ju",
+      "Dong-Ho Lee"
+    ],
+    "submission_date": "2025-11-18T02:44:27Z",
+    "latest_updated": "2025-11-18T02:44:27Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.14064v1"
+    ],
+    "abstract": "Medication recommendation systems play a crucial role in assisting clinicians with personalized treatment decisions. While existing approaches have made significant progress in learning medication representations, they suffer from two fundamental limitations: (i) treating medical entities as independent features without modeling their synergistic effects on medication selection; (ii) employing static causal relationships that fail to adapt to patient-specific contexts and health states. To address these challenges, we propose CafeMed, a framework that integrates dynamic causal reasoning with cross-modal attention for safe and accurate medication recommendation. CafeMed introduces two key components: the Causal Weight Generator (CWG) that transforms static causal effects into dynamic modulation weights based on individual patient states, and the Channel Harmonized Attention Refinement Module (CHARM) that captures complex interdependencies between diagnoses and procedures. This design enables CafeMed to model how different medical conditions jointly influence treatment decisions while maintaining medication safety constraints. Extensive experiments on MIMIC-III and MIMIC-IV datasets demonstrate that CafeMed significantly outperforms state-of-the-art baselines, achieving superior accuracy in medication prediction while maintaining the lower drug--drug interaction rates. Our results indicate that incorporating dynamic causal relationships and cross-modal synergies leads to more clinically-aligned and personalized medication recommendations. Our code is released publicly at https://github.com/rkl71/CafeMed.",
+    "status": "found"
+  },
+  "2511.14065": {
+    "arxiv_id": "2511.14065",
+    "title": "Intrinsic Resonance depends on Network Size of Coupled-Delayed Interacting Oscillators",
+    "authors": [
+      "Felipe A. Torres",
+      "Alejandro Weinstein",
+      "Jesus M. Cortes",
+      "Wael El-Deredy"
+    ],
+    "submission_date": "2025-11-18T02:45:05Z",
+    "latest_updated": "2025-11-18T02:45:05Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.14065v1"
+    ],
+    "abstract": "The collective frequency that emerges from synchronized neuronal populations--the network resonance--shows a systematic relationship with brain size: whole-brain's large networks oscillate slowly, whereas finer parcellations of fixed volume exhibit faster rhythms. This resonance-size scaling has been reported in delayed neural mass models and human neuroimaging, yet the physical mechanism remained unresolved. Here we show that size-dependent resonance follows directly from propagation delays in delay-coupled phase oscillators. Starting from a Kuramoto model with heterogeneous delays, we linearize around the near-synchronous solution and obtain a closed-form approximation linking the resonance $Ω$ to the mean delay and the effective coupling field. The analysis predicts a generic scaling law: $Ω\\approx (\\sum_j c_{ij} τ)^{-1}$, so resonance is delay-limited and therefore depends systematically on geometric size or parcellation density. We evaluate four growth scenarios--expanding geometry, fixed-volume parcellation, constant geometry, and an unphysical reference case--and show that only geometry-consistent scaling satisfies the analytical prediction. Numerical simulations with heterogeneous delays validate the law and quantify its error as a function of delay dispersion. These results identify a minimal physical mechanism for size-dependent cortical resonance and provide an analytical framework that unifies numeric simulation outputs.",
+    "status": "found"
+  },
+  "2511.14066": {
+    "arxiv_id": "2511.14066",
+    "title": "Exponential ergodicity of Stochastic Evolution Equations with reflection",
+    "authors": [
+      "Zdzislaw Brzezniak",
+      "Qi Li",
+      "Tusheng Zhang"
+    ],
+    "submission_date": "2025-11-18T02:47:45Z",
+    "latest_updated": "2025-11-18T02:47:45Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.14066v1"
+    ],
+    "abstract": "In this paper, we establish an exponential ergodicity for stochastic evolution equations with reflection in an infinite dimensional ball. As an application, we obtain the exponential ergodicity of stochastic Navier-Stokes equations with reflection. A coupling method plays an important role.",
+    "status": "found"
+  },
+  "2511.14067": {
+    "arxiv_id": "2511.14067",
+    "title": "Fast Verification of Strong Database Isolation (Extended Version)",
+    "authors": [
+      "Zhiheng Cai",
+      "Si Liu",
+      "Hengfeng Wei",
+      "Yuxing Chen",
+      "Anqun Pan"
+    ],
+    "submission_date": "2025-11-18T02:48:52Z",
+    "latest_updated": "2025-11-18T02:48:52Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.14067v1"
+    ],
+    "abstract": "Strong isolation guarantees, such as serializability and snapshot isolation, are essential for maintaining data consistency and integrity in modern databases. Verifying whether a database upholds its claimed guarantees is increasingly critical, as these guarantees form a contract between the vendor and its users. However, this task is challenging, particularly in black-box settings, where only observable system behavior is available and often involves uncertain dependencies between transactions. In this paper, we present VeriStrong, a fast verifier for strong database isolation. At its core is a novel formalism called hyper-polygraphs, which compactly captures both certain and uncertain transactional dependencies in database executions. Leveraging this formalism, we develop sound and complete encodings for verifying both serializability and snapshot isolation. To achieve high efficiency, VeriStrong tailors SMT solving to the characteristics of database workloads, in contrast to prior general-purpose approaches. Our extensive evaluation across diverse benchmarks shows that VeriStrong not only significantly outperforms state-of-the-art verifiers on the workloads they support, but also scales to large, general workloads beyond their reach, while maintaining high accuracy in detecting isolation anomalies.",
+    "status": "found"
+  },
+  "2511.14068": {
+    "arxiv_id": "2511.14068",
+    "title": "Universal regimes of strong turbulence in the multi-component Gross-Pitaevskii model",
+    "authors": [
+      "Vladimir Rosenhaus",
+      "Natalia Vladimirova",
+      "Gregory Falkovich"
+    ],
+    "submission_date": "2025-11-18T02:55:26Z",
+    "latest_updated": "2025-11-18T02:55:26Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.14068v1"
+    ],
+    "abstract": "The Gross-Pitaevskii (GP) model, also known as the nonlinear Schrödinger equation, is arguably the most universal model in classical and quantum physics, describing spectrally narrow or long-wavelength distributions of interacting waves or particles. Modern applications -- from oceanic and atmospheric flows to photonics and cold atoms -- predominantly involve states that are far from equilibrium, culminating in the regime of fully developed turbulence. To date, a consistent theoretical description of such states has only existed for weakly interacting quasiparticles. Here we present a theory of strong turbulence in the two-dimensional $N$-component Gross-Pitaevskii model for both repulsive and attractive interactions, corresponding to the defocusing and focusing cases, respectively. In the focusing case, we show that attraction is enhanced by multi-wave effects, leading to a critical-balance state independent of the pumping level. In the defocusing case, repulsion is suppressed by collective effects, giving rise to another type of universality in strong turbulence -- independence from the bare coupling constant. The theory is confirmed by analytical results in the many-component limit and by direct numerical simulations of the single-component GP model.",
+    "status": "found"
+  }
+}

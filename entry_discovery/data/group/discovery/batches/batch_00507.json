@@ -1,0 +1,410 @@
+{
+  "2608.09147": {
+    "arxiv_id": "2608.09147",
+    "title": "RefineAny3D: Depth Refinement as Semantic Alignment for Monocular 3D Detection",
+    "authors": [
+      "Zhihao Zhang",
+      "Gengwei Zhang",
+      "Tianlong Chen",
+      "Xiaoming Liu"
+    ],
+    "submission_date": "2026-08-10T05:50:37Z",
+    "latest_updated": "2026-08-10T05:50:37Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09147v1"
+    ],
+    "abstract": "Monocular 3D object detection spans two regimes: closed-set detectors operating within a fixed category vocabulary, and open-vocabulary detectors that localize arbitrary categories by leveraging depth foundation models for 3D geometry. We find that current depth foundation models, despite their strong zero-shot generalization, lack the object-level precision 3D detection demands: substituting a state-of-the-art depth foundation model for a strong detector's predicted depth degrades accuracy, even falling below the detector's own prediction. Rather than pushing detectors or depth models to be more accurate end-to-end, we treat object-level depth refinement as a stand-alone task and present RefineAny3D, a vision-language model that corrects depth without ever predicting a numerical value. Our key insight is that depth error has a direct visual signature in image space: when projected onto the image, a correctly placed box tightly encloses the object, while a too-far box projects too small and a too-close box projects too large. Depth refinement thus reduces to a visual alignment problem rather than a metric regression problem, which we instantiate by extending the VLM's vocabulary with action tokens that replace numerical depth output with categorical decisions, and by supervising the model on a large-scale chain-of-thought dataset that grounds each decision in explicit visual evidence. Applied as a single post-hoc step, RefineAny3D delivers consistent gains across closed-set detectors, open-vocabulary detectors, and 3D auto-labeling tools, and generalizes to novel categories, scenes, and cameras without retraining.",
+    "status": "found"
+  },
+  "2608.09148": {
+    "arxiv_id": "2608.09148",
+    "title": "Demand-Aware Cooperative Transmission Design for Energy-Efficient LEO Satellite Networks",
+    "authors": [
+      "Wooseok Cha",
+      "Kyeongsoo Kim",
+      "Seonghoon Kim",
+      "Junil Choi",
+      "Jihwan P. Choi"
+    ],
+    "submission_date": "2026-08-10T05:52:08Z",
+    "latest_updated": "2026-08-10T05:52:08Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09148v1"
+    ],
+    "abstract": "Low Earth orbit (LEO) satellite networks are envisioned as a promising solution for providing ubiquitous connectivity and narrowing the digital divide. The extensive footprint of LEO satellite constellations enables broad coverage, resulting in spatially non-uniform traffic demand across the serviced areas. Meanwhile, stringent on-board power constraints make power-intensive transmission architectures less attractive and motivate energy-efficient transmission strategies that effectively exploit scarce satellite network resources. To this end, this paper proposes a cooperative transmission framework that jointly accounts for non-uniform traffic demand and network-wide power consumption. Each LEO satellite integrates hybrid precoding (HPC), radio frequency (RF) chain activation, and hardware quantization, while user-equipment (UE)-centric satellite clusters are organized using statistical channel state information (sCSI) and traffic demands. A framework for joint optimization of cooperative transmission architecture and resource allocation is designed to maximize demand-aware energy efficiency (EE), resulting in a mixed-integer nonlinear program (MINLP) for which finding a globally optimal solution is generally intractable. Accordingly, a two-stage algorithm is developed under a distributed linear precoding structure, in which a modified cross-entropy (CE) method searches over discrete variables, while fractional programming is employed for transmit power allocation. Numerical results indicate that the proposed framework outperforms benchmark schemes while accounting for traffic demands and EE.",
+    "status": "found"
+  },
+  "2608.09149": {
+    "arxiv_id": "2608.09149",
+    "title": "A further study of quandles and quandle rings",
+    "authors": [
+      "Gregory Churchill",
+      "Indu Rasika Churchill",
+      "Neranga Fernando",
+      "Bhitali Kousik"
+    ],
+    "submission_date": "2026-08-10T05:53:51Z",
+    "latest_updated": "2026-08-10T05:53:51Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09149v1"
+    ],
+    "abstract": "We investigate core quandles and idempotents in quandle rings of core quandles. We answer several questions on the rank of core quandles and nontrivial idempotents in quandle rings. We also present solutions to two questions raised in a recent paper about non-trivial idempotents in quandle rings $\\mathbb{Z}[R_5]$ and $\\mathbb{Z}[C_5]$, where $\\mathbb{Z}$, $R_5$ and $C_5$ are the ring of integers, the dihedral quandle of order 5, and the commutative quandle of order 5, respectively. We then study units in extended quandle rings of a trivial quandle and the Joyce quandle, and nilpotent elements in extended quandles rings of a trivial quandle, where the ground ring is an integral domain. As a consequence, we show that the quandle ring and the extended quandle ring of a trivial quandle are not nil clean rings. We also explore prime rings and semi-prime rings among quandle rings. We introduce zero-divisor graphs of quandle rings and find an intriguing mirror symmetry among the in-degree and out-degree of the vertices. Moreover, we find a bivariate polynomial in the ring $(\\mathbb{Z}_{2n+1}[Q])[X,Y]$ that determines the commutative quandle of order $2n+1$, where $2n+1$ is prime.",
+    "status": "found"
+  },
+  "2608.09150": {
+    "arxiv_id": "2608.09150",
+    "title": "OGG-FR: Orthogonal Gradient Gaming and Frequency Rectification for Unmanned Aerial Vehicle Infrared Image Super-Resolution",
+    "authors": [
+      "Yongsong Huang",
+      "Qingzhong Wang",
+      "Xiaofeng Liu",
+      "Tomo Miyazaki",
+      "Yaohou Fan",
+      "Shinichiro Omachi"
+    ],
+    "submission_date": "2026-08-10T05:55:05Z",
+    "latest_updated": "2026-08-10T05:55:05Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09150v1"
+    ],
+    "abstract": "Unmanned aerial vehicle (UAV) infrared image super-resolution aims to recover weak thermal structures for deployment on resource-constrained platforms; lightweight models are therefore preferred, but multi-loss training can be unstable. A common strategy combines pixel-domain and frequency-domain objectives; however, low contrast, limited high-frequency content, and sensor-specific noise often make their gradients weakly aligned or conflicting. To address this optimization ambiguity, we propose Orthogonal Gradient Gaming and Frequency Rectification (OGG-FR), a plug-and-play optimization framework that decomposes the frequency gradient into a redundant parallel component and an orthogonal innovation component relative to the pixel gradient. In the conflict regime, OGG-FR computes a safe base gradient using the Multiple Gradient Descent Algorithm (MGDA) and adds a variance-rectified orthogonal innovation; in the compatible regime, it discards redundant parallel information and injects the orthogonal innovation according to a confidence score estimated from the high-frequency residual. Experimental results on the UAV thermal benchmark show broad gains under BI and BD degradations at $\\times 4$ and $\\times 8$ scales, while gradient analyses support the effectiveness of the proposed conflict-aware update rule.",
+    "status": "found"
+  },
+  "2608.09151": {
+    "arxiv_id": "2608.09151",
+    "title": "Global Dynamics of a Pharmacokinetic Compartment Model for Human Ethanol Metabolism and Its Generalization",
+    "authors": [
+      "Manh Tuan Hoang"
+    ],
+    "submission_date": "2026-08-10T05:55:07Z",
+    "latest_updated": "2026-08-10T05:55:07Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09151v1"
+    ],
+    "abstract": "In this work, we revisit a continuous-time two-compartment pharmacokinetic model of human ethanol metabolism originally proposed by Levitt and Levitt. We first establish the positivity and boundedness of the solutions, investigate the existence and uniqueness of a positive equilibrium, and analyze its local and global asymptotic stability. As a result, the global dynamics of the ethanol metabolism model is completely characterized, thereby complementing and extending the analytical results reported in the original benchmark study. Second, we extend the original continuous-time model by replacing the Michaelis--Menten metabolism rate with a general class of metabolism-rate functions that includes many well-known monotone and nonmonotone forms. This extension enhances the flexibility of the model and enables it to capture a wider range of realistic metabolic scenarios. We then investigate the global dynamics of the generalized continuous-time model. Finally, numerical experiments are conducted to support the theoretical findings. The numerical results provide further evidence for the theoretical results.",
+    "status": "found"
+  },
+  "2608.09152": {
+    "arxiv_id": "2608.09152",
+    "title": "LightAIR: Lightweight Action Inversion and Riemannian Rectification for Text-based Person Anomaly Search",
+    "authors": [
+      "Yulun Zhang",
+      "Zixu Li",
+      "Zhiwei Chen",
+      "Zhiheng Fu",
+      "Wenbo Wang",
+      "Zihang Qiu",
+      "Zhilin Wang",
+      "Ruxin Wang",
+      "Yupeng Hu"
+    ],
+    "submission_date": "2026-08-10T05:59:07Z",
+    "latest_updated": "2026-08-10T05:59:07Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09152v1"
+    ],
+    "abstract": "Traditional Text-based Person Search (TPS) is typically limited to matching static appearance attributes, severely neglecting dynamic action information. The Text-based Person Anomaly Search (TPAS) task bridges this gap, requiring models to locate micro-level specific abnormal behaviors while matching macro-level appearance of pedestrians. However, current TPAS methods face fundamental limitations: external explicit pose estimators are fragile in unconstrained surveillance scenarios, and implicit learning encounters visual decoupling failure under pixel-level entanglement, causing dominant appearance information to easily swallow and contaminate subtle action features. Furthermore, performing contrastive optimization on hard negative samples (``same appearance, different actions'') in conventional Euclidean spaces induces severe shortcut learning. To address these, we propose the Lightweight Action Inversion and Riemannian rectification network (LightAIR). First, it introduces textual semantic priors as anchors via a lightweight action inversion operator to extract pure action features, thereby overcoming visual-inherent coupling. Subsequently, it employs orthogonal null-space projection to constrain appearance features within the orthogonal complement space of action features, guaranteeing strict forward decoupling. Finally, we designed a gradient rectification module that computes the Riemannian gradient to constrain the backpropagation trajectory, forcing the gradient flow to update strictly along the tangent space that preserves decoupling properties, thereby cutting off harmful shortcuts. Extensive experiments on the widely used TPAS and TIPR datasets demonstrate that LightAIR significantly outperforms existing state-of-the-art methods. Codes are available at https://github.com/rainy-london/LightAIR",
+    "status": "found"
+  },
+  "2608.09153": {
+    "arxiv_id": "2608.09153",
+    "title": "TRACE: TRajectory Attribution for Automated Context Engineering",
+    "authors": [
+      "Yikai Zhao",
+      "Pradeep Kumar Misra",
+      "Saurabh Pandey"
+    ],
+    "submission_date": "2026-08-10T06:01:03Z",
+    "latest_updated": "2026-08-10T06:01:03Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09153v1"
+    ],
+    "abstract": "Production AI agents fail when their context sources -- system prompts, knowledge bases, tool descriptions, and procedural skills -- contain errors or gaps. Current maintenance relies on manual log review and ad-hoc debugging, creating a scalability bottleneck as interaction volume grows. We present TRACE (TRajectory Attribution for Automated Context Engineering), an automated feedback loop that mines historical agent trajectories to diagnose and remediate context failures. Our key insight is that trajectories are rich with implicit dissatisfaction signals -- user corrections, rephrasing, abandonment cues -- that reveal precisely where context sources failed, without explicit feedback collection. Unlike model fine-tuning, TRACE operates on the context layer, enabling rapid iteration without retraining. We make four contributions: (1) a trajectory mining framework that systematically extracts diagnostic information from historical agent executions; (2) multi-component causal attribution that extends textual gradients from monolithic prompt optimization to heterogeneous context sources (skills, knowledge bases, tools, prompts); (3) exploratory verification, where agents actively read context sources to distinguish content gaps requiring CREATE from stale content requiring UPDATE, achieving 96% operation accuracy; and (4) a reusable simulation methodology and verifiable benchmark addressing the absence of open datasets for context debugging, with a six-category fault taxonomy, ground truth annotations, and a cross-layer verification protocol. On 60 dissatisfaction traces spanning three complexity tiers (up to 16 execution nodes), TRACE achieves 72.7% root cause attribution and 82% end-to-end fix effectiveness, showing that over 80% of context-layer failures can be automatically diagnosed and remediated by mining historical trajectories, an overlooked resource in production systems.",
+    "status": "found"
+  },
+  "2608.09154": {
+    "arxiv_id": "2608.09154",
+    "title": "UNSPECIFIC: General Constraint Synthesis for Breaking Copy-and-Paste Shortcut in LLM Instruction Following",
+    "authors": [
+      "Jeet Sharma",
+      "Balpreet Kaur",
+      "Jeremiah Hong",
+      "Hamed Zamani",
+      "Haw-Shiuan Chang"
+    ],
+    "submission_date": "2026-08-10T06:01:31Z",
+    "latest_updated": "2026-08-10T06:01:31Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09154v1"
+    ],
+    "abstract": "Large language models (LLMs) are increasingly expected to follow long lists of constraints in complex instructions, and synthesizing instructions from a reference document (i.e., back-translation) is a widely used method to measure/enhance LLMs' ability to follow complex instructions. However, this method introduces a critical loophole: the constraint synthesis model copies text from the reference as a very specific constraint and the evaluated LLM trivially satisfies the constraint by copying its text in the response. To address these issues, we propose UNSPECIFIC, a novel framework that synthesizes constraints common to two similar reference articles to reduce copy-pasting, selectively hardens only trivially satisfied constraints to balance difficulty and naturalness, and evaluates satisfaction on both the generated article and its summary to penalize superficial instruction following. Consequently, we built the UNSPECIFIC benchmark on news, story, and blog domains to analyze the copy-pasting behavior of LLMs. Our results show that our synthesized constraints are not only more challenging (e.g., the satisfaction rate of GPT-5 Mini drops from 90% to 78%) and natural (LLM win-rate gap improves by 30%) from a human perspective but also mitigate the copy-pasting. We also find that a large portion of constraints are satisfied superficially (i.e., not satisfied in the core narrative of the article). The code and datasets are released at https://github.com/JeetDSharma/UNSPECIFIC.",
+    "status": "found"
+  },
+  "2608.09155": {
+    "arxiv_id": "2608.09155",
+    "title": "Beyond Tier Labels: Role- and Deployment-Dependent Model Substitution in Multi-Call LLM Workflows",
+    "authors": [
+      "Renxiang Wang",
+      "Jiaming Cui"
+    ],
+    "submission_date": "2026-08-10T06:02:32Z",
+    "latest_updated": "2026-08-10T06:02:32Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09155v1"
+    ],
+    "abstract": "Large multi-call LLM systems pose a scientific problem that query-level routing does not capture: the value of a model depends on where it enters a dependent computation and on the deployment that surrounds that call. Existing routers typically decide \\emph{where} to spend a stronger model while treating the benefit of the substitution itself as known. We separate these two decisions through a predicate-action factorization and evaluate it in controlled solve-merge-verify workflows spanning 8-64 solve calls and four three-tier model ladders. The resulting evidence reveals a consistent principle beneath apparently conflicting outcomes. On numeric frequency counting, all-strong reduces RMSE from 4.818 to 1.538 in the Mixed Qwen/GPT ladder, whereas the average Qwen-only ordering reverses. Input-matched interventions further show that the same medium-to-strong action has sharply different value across roles and scales. A semantic task-and-contract shift reverses the Mixed ordering again, while allocation ablations distinguish useful sparse placement from under-coverage and indiscriminate escalation. Together, these results establish model substitution as a deployment-conditioned action rather than a property implied by a tier label, and they provide a practical sequence for large-scale workflow routing: calibrate the action, resolve its role-conditioned effect, and then optimize its placement.",
+    "status": "found"
+  },
+  "2608.09156": {
+    "arxiv_id": "2608.09156",
+    "title": "Diagnosing Performance in Invasion-Based Esports: The Esports Performance Screening (EPS) Framework",
+    "authors": [
+      "Michael Trotter",
+      "Frauke Kubischta",
+      "Matthew Watson",
+      "Bastian Hougaard",
+      "Hendrik Knoche"
+    ],
+    "submission_date": "2026-08-10T06:02:41Z",
+    "latest_updated": "2026-08-21T12:21:55Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2608.09156v1",
+      "2608.09156v2",
+      "2608.09156v3"
+    ],
+    "abstract": "Coaching in esports continues to become more common, yet conceptual tools for coaches to analyse performance breakdowns in esports remain limited. Existing approaches lack a way to distinguish between mental errors (i.e., mistakes relate to strategy and tactics), and physical slips (i.e., motor execution). This paper introduces the Esports Performance Screening (EPS) framework, that integrates several frameworks and models from sport and computing science which can be used to analyse mental and motor performance in esports. The EPS framework organises performance into five interconnected levels: strategy, tactics, tasks, actions and operations. Across these levels, teams pursue forms of superiority that influence transitions between stability and instability during invasion-based esports competition. The framework supports two complementary modes of screening use: diagnostic during reflective review and real-time screening during live play. Through illustrative esports scenarios, we demonstrate how instability can originate at different hierarchical layers and how misattribution of failure can obscure underlying causes. The purpose of the EPS framework is to help coaches systematically diagnose performance breakdowns, and act as heuristics to aid gameplay analysis during a match. The paper contributes a theoretically grounded, title-agnostic esports framework to support systematic performance analysis and pedagogical development in invasion-based esports.",
+    "status": "found"
+  },
+  "2608.09157": {
+    "arxiv_id": "2608.09157",
+    "title": "Theoretical analysis of the maximum range of a projectile released from a pendulum",
+    "authors": [
+      "Ken Yamamoto"
+    ],
+    "submission_date": "2026-08-10T06:05:47Z",
+    "latest_updated": "2026-08-10T06:05:47Z",
+    "revised_dates": null,
+    "venue": "European Physical Journal Plus 141, 944 (2026)",
+    "latest_version": 1,
+    "versions": [
+      "2608.09157v1"
+    ],
+    "abstract": "The motion of a projectile released from a simple pendulum is analyzed, with particular emphasis on investigating the optimal release angle that maximizes the horizontal range and the corresponding maximum range. This system serves as a simplified model of the Tarzan jump problem. Using simple analytical methods, the optimal release angle is shown to be characterized by a cubic equation and to increase with the initial velocity. In addition, asymptotic expressions for both the optimal angle and maximum range are derived in the limits of low and high initial velocity.",
+    "status": "found"
+  },
+  "2608.09158": {
+    "arxiv_id": "2608.09158",
+    "title": "From Inaudible Inputs to Model Failures: Low-Frequency Safety Risks in LALMs",
+    "authors": [
+      "Yuanhe Zhang",
+      "Weiliu Wang",
+      "Jie Ren",
+      "Liang Lin",
+      "Zhenhong Zhou",
+      "Haoran Gao",
+      "Kun Wang",
+      "Chen Li",
+      "Li Sun",
+      "Sen Su"
+    ],
+    "submission_date": "2026-08-10T06:09:50Z",
+    "latest_updated": "2026-08-10T06:09:50Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09158v1"
+    ],
+    "abstract": "Large audio-language models (LALMs) have demonstrated strong capabilities in understanding diverse audio inputs. This diversity includes low-frequency signals that are inaudible to humans but can still enter the model and influence its generation. However, the practical impact of such low-frequency inputs on LALMs remains largely unexplored. In this paper, we propose Intermittent Low-Frequency Lockout (ILL), an inaudible red teaming method that evaluates this risk using a universal waveform template in a black box setting. ILL uses Sentence Attention Scale Estimation to determine active intervals and Frequency Confusion Transfer to construct a low-frequency waveform with continuous phase from corpus spectral variation. To mitigate this risk, we propose Distributional Requery Guard (DRG) to detect low-frequency distribution shifts and conditionally request a second recording for semantic recovery. Across six LALMs and multiple audio understanding tasks, ILL reduces accuracy by up to 67 percentage points while receiving a mean human audibility rating of 1.33, close to 1.17 for clean audio; DRG raises mean attacked accuracy from 28.5\\% to 46.1\\% after clean reacquisition. These findings identify a previously overlooked safety risk for LALMs and provide a foundation for future research on robust audio understanding.",
+    "status": "found"
+  },
+  "2608.09159": {
+    "arxiv_id": "2608.09159",
+    "title": "GPU-Accelerated Conic Quadratic Programming with Local Linear Convergence under Strict Complementarity",
+    "authors": [
+      "Hongpei Li",
+      "Yicheng Huang",
+      "Huikang Liu",
+      "Dongdong Ge",
+      "Yinyu Ye"
+    ],
+    "submission_date": "2026-08-10T06:16:20Z",
+    "latest_updated": "2026-08-10T06:16:20Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09159v1"
+    ],
+    "abstract": "We present PDHCG-CQP, a GPU-accelerated first-order solver for large-scale conic convex quadratic programming. PDHCG-CQP supports affine constraints and Cartesian products of nonnegative, second-order, rotated second-order, exponential, and three-dimensional power cones. At its core is a restarted averaged primal-dual hybrid gradient (PDHG) method, whose primal update is computed inexactly by solving a conic quadratic proximal subproblem with projected gradient iterations. We establish local linear convergence of the restarted averaged scheme with both exact and inexact primal proximal evaluations under a uniform local quadratic-growth condition on the smoothed primal-dual gap. We further show that this condition holds under strict complementarity by exploiting a rotated second-order-cone lifting together with local primal and dual regularity conditions. Our C/CUDA implementation combines matrix-free linear algebra, batched cone projections, adaptive inner solves, reflected-Halpern acceleration, and fully device-resident KKT residual computations. It also supports multi-GPU execution through a two-dimensional partitioning of the problem data. Extensive experiments on standard and large-scale quadratic programming (QP), convex quadratically constrained quadratic programming (QCQP), second-order cone programming (SOCP), and quasilinear Fisher equilibrium benchmarks demonstrate that PDHCG-CQP achieves state-of-the-art robustness among first-order solvers while scaling efficiently to 8 GPUs and instances with up to $4.4\\times10^8$ stored primal coordinates. PDHCG-CQP is open source and available at https://github.com/Lhongpei/PDHCG.",
+    "status": "found"
+  },
+  "2608.09160": {
+    "arxiv_id": "2608.09160",
+    "title": "SwiftQK: Fast and Communication-Efficient Tensor Parallelism for Query-Key Normalization",
+    "authors": [
+      "Gyudong Kim",
+      "Wonjun Han",
+      "Young Geun Kim"
+    ],
+    "submission_date": "2026-08-10T06:16:24Z",
+    "latest_updated": "2026-08-10T06:16:24Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09160v1"
+    ],
+    "abstract": "Query-Key Normalization (QK-Norm) improves the training stability and quality of modern Large Language Models (LLMs). However, under Tensor Parallelism (TP), layerwise QK-Norm introduces additional cross-GPU communication because the normalization factor depends on the full hidden vector. We present SwiftQK, a multi-GPU RMSNorm kernel that exchanges only scalar normalization statistics and overlaps the remaining Peer-to-Peer reduction with independent element-wise computation in a deadlock-safe persistent kernel. Evaluations on recent LLMs show that SwiftQK reduces QK-Norm latency by 81.4--93.9% relative to the standard TP QK-Norm using full-vector All-Gather. In end-to-end serving, SwiftQK reduces TPOT on average by 29.5% over the All-Gather-based baseline and by 14.3% over an optimized scalar-aggregation implementation.",
+    "status": "found"
+  },
+  "2608.09161": {
+    "arxiv_id": "2608.09161",
+    "title": "Time-Dependent Potential Recovery from Local Data on Conformally Transversally Anisotropic Manifolds",
+    "authors": [
+      "Yujian Zheng",
+      "Zhiwen Duan",
+      "Shiqi Jing"
+    ],
+    "submission_date": "2026-08-10T06:16:31Z",
+    "latest_updated": "2026-08-10T06:16:31Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09161v1"
+    ],
+    "abstract": "We study the recovery of a time-dependent potential in a parabolic equation on a conformally transversally anisotropic manifold. The initial state and a lateral Dirichlet datum supported near the front face are used as inputs, while the terminal state and the Neumann trace near the back face are observed. Assuming injectivity of the attenuated geodesic ray transform on the transversal manifold for all sufficiently small constant attenuations, we prove that these partial input-output data uniquely determine the potential. No simplicity assumption is imposed on the transversal manifold. The proof combines a conformal reduction, transversal Gaussian beam quasimodes, boundary Carleman estimates, and geometric optics solutions with prescribed lateral supports.",
+    "status": "found"
+  },
+  "2608.09162": {
+    "arxiv_id": "2608.09162",
+    "title": "Tabular Numeric Stretch Transformation",
+    "authors": [
+      "Zihao Ye",
+      "Juyong Kim",
+      "Johnna Sundberg",
+      "Burak Varici",
+      "Pradeep Ravikumar"
+    ],
+    "submission_date": "2026-08-10T06:16:41Z",
+    "latest_updated": "2026-08-10T06:16:41Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09162v1"
+    ],
+    "abstract": "Tabular data presents unique challenges for deep learning due to its heterogeneous nature, where numeric features exhibit diverse distributions, scales, and statistical properties. Although recent advances have improved how models learn from tabular data, how numeric data are transformed into model-friendly representations remains comparatively underexplored. We introduce the stretch transformation framework, which formulates numeric feature preprocessing as an optimization problem to make the target function smoother and thus more learnable. Our framework has two variants: (1) unsupervised stretch, which uniformly redistributes feature density via minimax optimization, and (2) supervised stretch, which optimizes target-aware numeric feature transformations from the perspective of target-function smoothness by minimizing the target function's Dirichlet energy in the transformed space. Our theoretical analysis further connects this framework to several popular transformations: unsupervised stretch is closely related to Piecewise Linear Encoding through a shared piecewise-linear geometry and approaches the empirical CDF transformation as the number of bins grows, while supervised stretch becomes closely related to target encoding in the fine-binning limit. Comprehensive experiments on 38 datasets from the TALENT benchmark demonstrate that supervised stretch consistently outperforms all baselines. These results show that explicitly optimizing for target function smoothness is a powerful and underexplored strategy for tabular deep learning.",
+    "status": "found"
+  },
+  "2608.09163": {
+    "arxiv_id": "2608.09163",
+    "title": "Line-filtered rank-two ACM bundles on abelian varieties of Picard rank one",
+    "authors": [
+      "Soham Mondal"
+    ],
+    "submission_date": "2026-08-10T06:17:04Z",
+    "latest_updated": "2026-08-10T06:17:04Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09163v1"
+    ],
+    "abstract": "Let $A$ be a complex abelian variety of dimension $g\\ge 2$ with $\\NS(A)\\cong\\ZZ$ generated by an ample class $L$. We classify, up to twist by powers of $L$, the rank-two arithmetically Cohen--Macaulay bundles on $A$ with empty defect: they are sums of two ACM line bundles or nonsplit self-extensions of a nontrivial degree-zero line bundle. We also show none is Ulrich.",
+    "status": "found"
+  },
+  "2608.09164": {
+    "arxiv_id": "2608.09164",
+    "title": "CIDER: A Dataset of Contextual Disclosure Boundaries for Privacy Preference Alignment",
+    "authors": [
+      "Bingcan Guo",
+      "Eryue Xu",
+      "Jijie Zhou",
+      "Zhiping Zhang",
+      "Tianshi Li"
+    ],
+    "submission_date": "2026-08-10T06:17:19Z",
+    "latest_updated": "2026-08-13T06:14:13Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.09164v1",
+      "2608.09164v2"
+    ],
+    "abstract": "Aligning large language models (LLMs) with human privacy preferences requires capturing individuals' disclosure boundaries beyond general privacy norms. However, a gap remains in eliciting such nuanced preferences to evaluate alignment in realistic settings. We introduce CIDER, a dataset of 14,850 human annotations from 169 users, forming 1,650 contextual disclosure boundary sets across 60 interpersonal communication scenarios involving information sharing that violates privacy norms. Each boundary represents a real user's disclosure decisions over 9 sharing variants in a scenario, for a given communication role and AI-mediated condition. We formulate a task in which models predict a user's disclosure decision from historical boundaries, with varying levels of contextual information. Across 12 open and proprietary models, in-context personalization improves prediction accuracy by up to 11.41 percentage points using only 6 historical examples. Larger models such as GPT-5.4 (with medium reasoning effort) and Claude Sonnet 4.6 are better at leveraging semantic context to understand user-specific, context-dependent disclosure preferences for more accurate predictions, while smaller models tend to rely on structured heuristics based on disclosure granularity and identifiability. Personalization generally improves prediction accuracy, but the improvement is often accompanied by imbalanced shifts in false-positive and false-negative rates across models, with only Claude Sonnet 4.6 achieving balanced improvements in both. Our findings reveal both the promise and limitations of inference-time personalization for privacy preference modeling and position CIDER as a resource for advancing personalized privacy alignment.",
+    "status": "found"
+  },
+  "2608.09165": {
+    "arxiv_id": "2608.09165",
+    "title": "Optimal Movable-Antenna Control for Multi-Path Sensing Guided by Prior AoA Statistic",
+    "authors": [
+      "Jaehong Kim",
+      "Changsheng You",
+      "Jihong Park",
+      "Seung-Woo Ko"
+    ],
+    "submission_date": "2026-08-10T06:20:13Z",
+    "latest_updated": "2026-08-13T06:18:44Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.09165v1",
+      "2608.09165v2"
+    ],
+    "abstract": "Multi-path sensing, which aims to extract the geometric attributes of multiple propagation paths, is expected to be a key functionality of 6G. A movable antenna (MA) can enable this functionality by synthesizing an aperture through mechanical motion. However, existing MA-based sensing methods typically rely on exhaustive scanning over the entire movable region, resulting in significant control overhead and sensing latency, which limit their practicality for agile sensing. To address this challenge, this paper develops a prior-guided agile multi-path sensing framework that leverages weak prior angle-of-arrival (AoA) statistics as side information. The proposed framework is built on two key steps. First, the movable plate's three-dimensional orientation is optimized only once to configure a mechanically feasible scan region that enhances path visibility while preserving inter-path discriminability, guided by Fisher information analysis. Second, given the optimal plate orientation, the MA performs only two linear scans, whose non-collinear spatial phase projections are fused with the prior AoA statistics through a maximum a posteriori (MAP)-based estimator to recover the elevation and azimuth AoAs of multiple paths. The estimated AoAs are subsequently used to extract the times-of-arrival (ToAs) by enhancing the target path component while suppressing interference from other paths. With only one orientation adjustment and two linear scans, the proposed framework enables agile multi-path sensing with significantly reduced control overhead and latency, while achieving AoA and ToA estimation accuracy close to the single-path benchmark.",
+    "status": "found"
+  },
+  "2608.09166": {
+    "arxiv_id": "2608.09166",
+    "title": "Particle-Based Conformal Prediction for Contact-Aware Uncertainty Calibration in Stratified Configuration Spaces",
+    "authors": [
+      "Luís Marques",
+      "Kristian Popov",
+      "Dmitry Berenson"
+    ],
+    "submission_date": "2026-08-10T06:22:10Z",
+    "latest_updated": "2026-08-10T06:22:10Z",
+    "revised_dates": null,
+    "venue": "Proceedings of the Fifteenth Symposium on Conformal and Probabilistic Prediction with Applications, PMLR 329:813-843 (2026)",
+    "latest_version": 1,
+    "versions": [
+      "2608.09166v1"
+    ],
+    "abstract": "Reliable uncertainty representation is essential for deploying autonomous systems that interact with their environment, as robots must reason about how uncertainty arising from both stochasticity and model mismatch is impacted by contacts with obstacles (e.g., when navigating through a cluttered environment or inserting a part into an assembly). We propose Calibrated Particle-sets for Trans-dimensional Uncertainty Representation (CaPTURe), a geometry-aware, conformal prediction-based algorithm that generates probabilistically valid prediction regions of the unknown future system configuration using particle-based models of arbitrary fidelity. While calibrated uncertainty predictions are essential for safe and efficient planning, analytical or learned motion models are often inaccurate - due to limited data, simplifying assumptions, unmodeled effects, etc. - which can lead to unsafe executions or task failure. Additionally, when a robot contacts an obstacle, the distribution of its future configurations can become multimodal or disjoint, or lie along manifolds of lower intrinsic dimension than the space of possible robot configurations. Our method uses a calibration dataset of system transitions to locally calibrate motion uncertainty estimates, constructing regions guaranteed to contain the future robot configuration at a user-set probability. Our calibration procedure captures how motion uncertainty varies between contact-rich and contactless motions, leading to sufficient coverage in both cases. We evaluate our method on two simulated planning tasks: controlling a marble around a labyrinth and performing tight-tolerance peg-in-hole insertion with a manipulator. Compared to relevant baselines, CaPTURe achieves the user-specified coverage requirement both in and out of contact and achieves up to a 30% absolute improvement in task success rate over the best baseline.",
+    "status": "found"
+  }
+}

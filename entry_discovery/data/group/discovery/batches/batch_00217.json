@@ -1,0 +1,421 @@
+{
+  "2511.16049": {
+    "arxiv_id": "2511.16049",
+    "title": "LiSTAR: Ray-Centric World Models for 4D LiDAR Sequences in Autonomous Driving",
+    "authors": [
+      "Pei Liu",
+      "Songtao Wang",
+      "Lang Zhang",
+      "Xingyue Peng",
+      "Yuandong Lyu",
+      "Jiaxin Deng",
+      "Songxin Lu",
+      "Weiliang Ma",
+      "Xueyang Zhang",
+      "Yifei Zhan",
+      "XianPeng Lang",
+      "Jun Ma"
+    ],
+    "submission_date": "2025-11-20T05:11:22Z",
+    "latest_updated": "2025-11-20T05:11:22Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.16049v1"
+    ],
+    "abstract": "Synthesizing high-fidelity and controllable 4D LiDAR data is crucial for creating scalable simulation environments for autonomous driving. This task is inherently challenging due to the sensor's unique spherical geometry, the temporal sparsity of point clouds, and the complexity of dynamic scenes. To address these challenges, we present LiSTAR, a novel generative world model that operates directly on the sensor's native geometry. LiSTAR introduces a Hybrid-Cylindrical-Spherical (HCS) representation to preserve data fidelity by mitigating quantization artifacts common in Cartesian grids. To capture complex dynamics from sparse temporal data, it utilizes a Spatio-Temporal Attention with Ray-Centric Transformer (START) that explicitly models feature evolution along individual sensor rays for robust temporal coherence. Furthermore, for controllable synthesis, we propose a novel 4D point cloud-aligned voxel layout for conditioning and a corresponding discrete Masked Generative START (MaskSTART) framework, which learns a compact, tokenized representation of the scene, enabling efficient, high-resolution, and layout-guided compositional generation. Comprehensive experiments validate LiSTAR's state-of-the-art performance across 4D LiDAR reconstruction, prediction, and conditional generation, with substantial quantitative gains: reducing generation MMD by a massive 76%, improving reconstruction IoU by 32%, and lowering prediction L1 Med by 50%. This level of performance provides a powerful new foundation for creating realistic and controllable autonomous systems simulations. Project link: https://ocean-luna.github.io/LiSTAR.gitub.io.",
+    "status": "found"
+  },
+  "2511.16050": {
+    "arxiv_id": "2511.16050",
+    "title": "Bi-AQUA: Bilateral Control-Based Imitation Learning for Underwater Robot Arms via Lighting-Aware Action Chunking with Transformers",
+    "authors": [
+      "Takeru Tsunoori",
+      "Masato Kobayashi",
+      "Yuki Uranishi"
+    ],
+    "submission_date": "2025-11-20T05:11:26Z",
+    "latest_updated": "2026-03-06T04:18:19Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.16050v1",
+      "2511.16050v2"
+    ],
+    "abstract": "Underwater robotic manipulation remains challenging because lighting variation, color attenuation, scattering, and reduced visibility can severely degrade visuomotor policies. We present Bi-AQUA, the first underwater bilateral control-based imitation learning framework for robot arms that explicitly models lighting within the policy. Bi-AQUA integrates transformer-based bilateral action chunking with a hierarchical lighting-aware design composed of a label-free Lighting Encoder, FiLM-based visual feature modulation, and a lighting token for action conditioning. This design enables adaptation to static and dynamically changing underwater illumination while preserving the force-sensitive advantages of bilateral control, which are particularly important in long-horizon and contact-rich manipulation. Real-world experiments on underwater pick-and-place, drawer closing, and peg extraction tasks show that Bi-AQUA outperforms a bilateral baseline without lighting modeling and achieves robust performance under seen, unseen, and changing lighting conditions. These results highlight the importance of combining explicit lighting modeling with force-aware bilateral imitation learning for reliable underwater manipulation. For additional material, please check: https://mertcookimg.github.io/bi-aqua",
+    "status": "found"
+  },
+  "2511.16051": {
+    "arxiv_id": "2511.16051",
+    "title": "TRAM: A Transverse Relaxation Time-Aware Qubit Mapping Algorithm for NISQ Devices",
+    "authors": [
+      "Yifei Huang",
+      "Pascal Jahan Elahi",
+      "Ugo Varetto",
+      "Kan He",
+      "Jinchuan Hou",
+      "Shusen Liu"
+    ],
+    "submission_date": "2025-11-20T05:11:36Z",
+    "latest_updated": "2026-01-17T09:21:38Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.16051v1",
+      "2511.16051v2"
+    ],
+    "abstract": "Noisy intermediate-scale quantum (NISQ) devices impose dual challenges on quantum circuit execution: limited qubit connectivity requires extensive SWAP-gate routing, while time-dependent decoherence progressively degrades quantum information. Existing qubit mapping algorithms optimize for hardware topology and static calibration metrics but systematically neglect transverse relaxation dynamics (T2), creating a fundamental gap between compiler decisions and evolving noise characteristics. We present TRAM (Transverse Relaxation Time-Aware Qubit Mapping), a coherence-guided compilation framework that elevates decoherence mitigation to a primary optimization objective. TRAM integrates calibration-informed community detection to construct noise-resilient qubit partitions, generates time-weighted initial mappings that anticipate coherence decay, and dynamically schedules SWAP operations to minimize cumulative error accumulation. Evaluated on Qiskit-based simulators with realistic noise models, TRAM outperforms SABRE by 3.59% in fidelity, reduces gate count by 11.49%, and shortens circuit depth by 12.28%, establishing coherence-aware optimization as essential for practical quantum compilation in the NISQ era.",
+    "status": "found"
+  },
+  "2511.16052": {
+    "arxiv_id": "2511.16052",
+    "title": "Electromagnetic form factors: A window into the $DΛ_c$, $D^*Λ_c$, and $DΛ_c^*$ molecular structure",
+    "authors": [
+      "Ulaş Özdem"
+    ],
+    "submission_date": "2025-11-20T05:12:57Z",
+    "latest_updated": "2026-06-05T17:45:22Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.16052v1",
+      "2511.16052v2"
+    ],
+    "abstract": "The internal structure of exotic hadrons remains one of the most compelling puzzles in strong interaction physics. In this work, we provide crucial insights into the nature of doubly-charmed pentaquarks by investigating their electromagnetic properties. Using QCD light-cone sum rules, we present the first comprehensive calculation of the magnetic dipole moments of $DΛ_c$, $D^*Λ_c$, and $DΛ_c^*$ molecular pentaquarks with $J^P = \\frac{1}{2}^-$, $\\frac{3}{2}^-$, and $\\frac{3}{2}^-$, respectively. Our analysis reveals a striking hierarchy of magnetic moments: $μ_{DΛ_c^*} > μ_{D^*Λ_c} > μ_{DΛ_c}$, driven by distinct quark-level mechanisms. While light quarks dominate the overall response, we find that charm quark contributions become strategically important when light quark contributions partially cancel. Beyond dipole moments, we predict higher multipoles--electric quadrupole and magnetic octupole moments--for the spin-$3/2$ $D^*Λ_c$ and $DΛ_c^*$ states, which fingerprint the spatial deformation of these configurations, revealing prolate versus oblate charge distributions. These results provide the first systematic predictions for electromagnetic moments of molecular pentaquark configurations, establishing essential benchmarks for future theoretical and experimental studies. By systematically comparing our predictions with both compact doubly-charmed and hidden-charm pentaquark configurations, we establish robust benchmarks that discriminate between competing structural models, ultimately resolving the nature of doubly-charmed exotic hadrons.",
+    "status": "found"
+  },
+  "2511.16053": {
+    "arxiv_id": "2511.16053",
+    "title": "A simple quantum dot: numerical and variational solutions",
+    "authors": [
+      "Connor Walsh",
+      "Ian MacPherson",
+      "Davidson Joseph",
+      "Suyash Kabra",
+      "Ripanjeet Singh Toor",
+      "Mason Protter",
+      "Frank Marsiglio"
+    ],
+    "submission_date": "2025-11-20T05:13:25Z",
+    "latest_updated": "2026-05-21T21:46:31Z",
+    "revised_dates": null,
+    "venue": "American Journal of Physics 94, 465-475 (2026)",
+    "latest_version": 2,
+    "versions": [
+      "2511.16053v1",
+      "2511.16053v2"
+    ],
+    "abstract": "We describe a simple quantum dot that consists of two crossed two-dimensional troughs. As such there is no potential well; nonetheless, this geometry gives rise to a bound state, centred on the point at which these troughs cross one another. This problem is interesting both because the existence of a bound state may surprise students and because it can be solved using a variety of computational techniques, including matrix mechanics, finite differences, and mode matching. We present these methods and show how the mode-matching method in this case provides the most accurate solution to the problem. Additionally, the mode-matching method can be used to generate a simple wave function that yields the lowest energy known to date to arise out of an analytical variational solution for this problem.",
+    "status": "found"
+  },
+  "2511.16054": {
+    "arxiv_id": "2511.16054",
+    "title": "Learning Tractable Distributions Of Language Model Continuations",
+    "authors": [
+      "Gwen Yidou-Weng",
+      "Ian Li",
+      "Anji Liu",
+      "Oliver Broadrick",
+      "Yuchen Cui",
+      "Guy Van den Broeck",
+      "Benjie Wang"
+    ],
+    "submission_date": "2025-11-20T05:17:19Z",
+    "latest_updated": "2026-02-10T13:57:46Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.16054v1",
+      "2511.16054v2"
+    ],
+    "abstract": "Controlled generation imposes sequence-level constraints (syntax, style, safety) that depend on future tokens, making exact conditioning of an autoregressive LM intractable. Tractable surrogates such as HMMs can approximate continuation distributions and steer decoding, but standard surrogates are often weakly context-aware. We propose Learning to Look Ahead (LTLA), a hybrid method that uses base-LM embeddings to condition a globally learned tractable surrogate: a neural head predicts only a prefix-dependent latent prior, while a shared HMM answers continuation queries exactly. LTLA is designed to avoid two common efficiency traps when adding neural context. First, it avoids vocabulary-sized prefix rescoring (V extra LM evaluations) by scoring all next-token candidates via a single batched HMM forward update. Second, it avoids predicting a new HMM per prefix by learning one shared HMM and conditioning only the latent prior, which enables reuse of cached future-likelihood (backward) messages across decoding steps. Empirically, LTLA improves continuation likelihood over standard HMM surrogates, enables lookahead control for vision--language models by incorporating continuous context, achieves 100% syntactic constraint satisfaction, and improves detoxification while adding only a 14% decoding-time overhead.",
+    "status": "found"
+  },
+  "2511.16055": {
+    "arxiv_id": "2511.16055",
+    "title": "Artificial Intelligence and Accounting Research: A Framework and Agenda",
+    "authors": [
+      "Theophanis C. Stratopoulos",
+      "Victor Xiaoqi Wang"
+    ],
+    "submission_date": "2025-11-20T05:18:39Z",
+    "latest_updated": "2025-11-20T05:18:39Z",
+    "revised_dates": null,
+    "venue": "Intl. J. Account. Inf. Syst. 56 (2025): 100760",
+    "latest_version": 1,
+    "versions": [
+      "2511.16055v1"
+    ],
+    "abstract": "Recent advances in artificial intelligence, particularly generative AI (GenAI) and large language models (LLMs), are fundamentally transforming accounting research, creating both opportunities and competitive threats for scholars. This paper proposes a framework that classifies AI-accounting research along two dimensions: research focus (accounting-centric versus AI-centric) and methodological approach (AI-based versus traditional methods). We apply this framework to papers from the IJAIS special issue and recent AI-accounting research published in leading accounting journals to map existing studies and identify research opportunities. Using this same framework, we analyze how accounting researchers can leverage their expertise through strategic positioning and collaboration, revealing where accounting scholars' strengths create the most value. We further examine how GenAI and LLMs transform the research process itself, comparing the capabilities of human researchers and AI agents across the entire research workflow. This analysis reveals that while GenAI democratizes certain research capabilities, it simultaneously intensifies competition by raising expectations for higher-order contributions where human judgment, creativity, and theoretical depth remain valuable. These shifts call for reforming doctoral education to cultivate comparative advantages while building AI fluency.",
+    "status": "found"
+  },
+  "2511.16056": {
+    "arxiv_id": "2511.16056",
+    "title": "Analytical Solutions for Planet-Scattering Small Bodies",
+    "authors": [
+      "Yukun Huang",
+      "Brett Gladman",
+      "Eiichiro Kokubo"
+    ],
+    "submission_date": "2025-11-20T05:27:16Z",
+    "latest_updated": "2026-01-07T13:11:22Z",
+    "revised_dates": null,
+    "venue": "AJ 171 133 (2026)",
+    "latest_version": 2,
+    "versions": [
+      "2511.16056v1",
+      "2511.16056v2"
+    ],
+    "abstract": "Gravitational scattering of small bodies (planetesimals) by a planet remains a fundamental problem in celestial mechanics. It is traditionally modeled within the circular restricted three-body problem (CR3BP), where individual particle trajectories are obtained via numerical integrations. Here, we use {Ö}pik's close-encounter framework to study the random walk of the orbital energy $x$ for an ensemble of test particles on planet-crossing orbits. We show that the evolution of each particle's orbital elements $(a, e, i)$ is fully encapsulated by the 3D rotation of the relative velocity vector $\\bm{U}_\\infty$, whose magnitude remains constant. Consequently, the system can be reduced to two degrees of freedom. By averaging over all possible flyby geometries, we derive explicit expressions for the drift and diffusion coefficients of $x$. We then solve the resulting Fokker--Planck equation to obtain a closed-form solution for the time evolution of the particle distribution. A characteristic scattering timescale naturally emerges, scaling as $(P_{p}/M_{p}^{2})/500$, where $P_{p}$ is the planet's orbital period and $M_{p}$ its mass ratio to the central star. The typical ejection speed of small bodies by a planet is estimated to be $3 v_p M_{p}^{1/3}$, where $v_p$ is the planet's orbital speed. Our analytical solution constitutes a universal law applicable to both the Solar System and exoplanetary systems, providing a computationally efficient alternative to costly $N$-body simulations for studying the orbital distributions and ejection of planetesimals and planets (e.g., Kuiper Belt, Oort Cloud, debris disks, interstellar objects, and free-floating planets).",
+    "status": "found"
+  },
+  "2511.16057": {
+    "arxiv_id": "2511.16057",
+    "title": "High-Throughput Exploration of Refractory High-Entropy Alloys for Strength and Plasticity",
+    "authors": [
+      "Stephen A. Giles",
+      "Hugh Shortt",
+      "Peter K. Liaw",
+      "Debasis Sengupta"
+    ],
+    "submission_date": "2025-11-20T05:28:40Z",
+    "latest_updated": "2025-11-20T05:28:40Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.16057v1"
+    ],
+    "abstract": "Refractory high-entropy alloys (RHEAs) are compositionally complex materials which have been demonstrated to have the potential for exceptional strength at high operating temperatures. However, their composition space is vast, and other property requirements, such as acceptable plasticity at room-temperature, must be met. Here, we leverage recently published, state-of-the-art deep learning models to predict compressive yield strength at 1,000 °C and room-temperature plasticity of >100,000 RHEAs. Multiple candidate materials were identified which exhibited exceptional balance between strength and plasticity. Upon experimental synthesis, multiple candidates were proven to outperform any previously reported RHEAs for simultaneous strength and plasticity. Our work demonstrates the power of data-driven approaches for rapid materials design, and enables continued multi-property optimization and materials discovery.",
+    "status": "found"
+  },
+  "2511.16058": {
+    "arxiv_id": "2511.16058",
+    "title": "Gradient estimates for $(p,V)$-harmonic functions on Riemannian manifolds",
+    "authors": [
+      "Yuxin Dong",
+      "Hezi Lin",
+      "Weihao Zheng"
+    ],
+    "submission_date": "2025-11-20T05:38:06Z",
+    "latest_updated": "2025-11-20T05:38:06Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.16058v1"
+    ],
+    "abstract": "In this paper, we study $(p,V)$-harmonic functions on complete Riemannian manifolds using the Moser iteration method. A volume comparison theorem and a Sobolev embedding theorem are established under the Bakry-$\\acute{E}$mery curvature condition. Moreover, we obtain an explicit global gradient estimate for positive entire $(p,V)$-harmonic functions.",
+    "status": "found"
+  },
+  "2511.16059": {
+    "arxiv_id": "2511.16059",
+    "title": "Extending SLUSCHI for Automated Diffusion Calculations",
+    "authors": [
+      "Qi-Jun Hong",
+      "Qing Chen",
+      "Ligen Wang",
+      "Dallin Fisher",
+      "Audrey CampBell",
+      "Si-Da Xue",
+      "Linqin Mu",
+      "Noemi Leick",
+      "Seetharaman Sridhar"
+    ],
+    "submission_date": "2025-11-20T05:41:59Z",
+    "latest_updated": "2025-11-20T05:41:59Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.16059v1"
+    ],
+    "abstract": "We present an extension of the SLUSCHI package (Solid and Liquid in Ultra Small Coexistence with Hovering Interfaces) to enable automated diffusion calculations from first-principles molecular dynamics. While the original SLUSCHI workflow was designed for melting temperature estimation via solid-liquid coexistence, we adapt its input and output handling to isolate the volume search stage and generate one production trajectory suitable for diffusion analysis. Post-processing tools parse VASP outputs, compute mean-square displacements (MSD), and extract tracer diffusivities using the Einstein relation with robust error estimates through block averaging. Diagnostic plots, including MSD curves, running slopes, and velocity autocorrelations, are produced automatically to help identify diffusive regimes. The method has been validated through representative case studies: self- and inter-diffusion in Al-Cu liquid alloys, sublattice melting in Li_7La_3Zr_2O_12 and Er_2O_3, interstitial oxygen transport in bcc and fcc Fe, and oxygen diffusivity in Fe-O liquids with variable Si and Al contents. Viscosity and diffusivity are linked through the Stokes-Einstein relation, with composition dependence assessed via simple linear mixing. This capability broadens SLUSCHI from melting-point predictions to transport property evaluation, enabling high-throughput, fully first-principles datasets of diffusion coefficients and viscosities across metals and oxides.",
+    "status": "found"
+  },
+  "2511.16060": {
+    "arxiv_id": "2511.16060",
+    "title": "Neuromorphic Astronomy: An End-to-End SNN Pipeline for RFI Detection Hardware",
+    "authors": [
+      "Nicholas J. Pritchard",
+      "Andreas Wicenec",
+      "Richard Dodson",
+      "Mohammed Bennamoun",
+      "Dylan R. Muir"
+    ],
+    "submission_date": "2025-11-20T05:42:59Z",
+    "latest_updated": "2025-11-20T05:42:59Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.16060v1"
+    ],
+    "abstract": "Imminent radio telescope observatories provide massive data rates making deep learning based processing appealing while simultaneously demanding real-time performance at low-energy; prohibiting the use of many artificial neural network based approaches. We begin tackling the scientifically existential challenge of Radio Frequency Interference (RFI) detection by deploying deep Spiking Neural Networks (SNNs) on resource-constrained neuromorphic hardware. Our approach partitions large, pre-trained networks onto SynSense Xylo hardware using maximal splitting, a novel greedy algorithm. We validate this pipeline with on-chip power measurements, achieving instrument-scaled inference at 100mW. While our full-scale SNN achieves state-of-the-art accuracy among SNN baselines, our experiments reveal a more important insight that a smaller un-partitioned model significantly outperforms larger, split models. This finding highlights that hardware co-design is paramount for optimal performance. Our work thus provides a practical deployment blueprint, a key insight into the challenges of model scaling, and reinforces radio astronomy as a demanding yet ideal domain for advancing applied neuromorphic computing.",
+    "status": "found"
+  },
+  "2511.16061": {
+    "arxiv_id": "2511.16061",
+    "title": "Change-of-Basis Pruning via Rotational Invariance",
+    "authors": [
+      "Alex Ning",
+      "Vainateya Rangaraju"
+    ],
+    "submission_date": "2025-11-20T05:45:19Z",
+    "latest_updated": "2025-11-20T05:45:19Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.16061v1"
+    ],
+    "abstract": "Structured pruning removes entire neurons or channels, but its effectiveness depends on how importance is distributed across the representation space. Change-of-basis (CoB) pruning addresses this challenge by applying orthogonal linear transformations that concentrate importance within certain dimensions. However, many standard deep learning architectures are not inherently invariant to such transformations. To enable compatibility, we introduce two-subspace radial activations (TSRAs): an activation family that is invariant to orthogonal linear transformations applied independently within its two activation subspaces. This invariance allows CoB transformations to be merged into surrounding weights without incurring extra parameters. We position this work as a proof-of-concept that a rotationally invariant design may offer a principled approach towards change-of-basis pruning. We do not provide an analysis of multiple TSRA candidates nor do we explore weight initialization for any TSRAs. These limitations, combined with other necessary modifications we make to permit rotational invariance, result in a slight accuracy drop of $4.52\\%$ compared to a ReLU-based control. However, using activation-magnitude importance, VGG-16 implementing our CoB+TSRA framework shows encouraging results on CIFAR-10. Under fixed-ratio structured pruning, CoB improves accuracy over a TSRA baseline at all pruning ratios and extends reliable pruning frontier from roughly $30\\%$ to $70\\%$ of parameters without post-prune fine tuning. Under threshold-based pruning strategies, CoB prunes $90-96\\%$ of parameters while maintaining $1-6\\%$ accuracy drop after fine-tuning. Together, these results indicate that rotationally invariant architectures may offer a promising path towards CoB pruning.",
+    "status": "found"
+  },
+  "2511.16062": {
+    "arxiv_id": "2511.16062",
+    "title": "Gauge-Equivariant Graph Networks via Self-Interference Cancellation",
+    "authors": [
+      "Yoonhyuk Choi",
+      "Jiho Choi",
+      "Jiwoo Kang"
+    ],
+    "submission_date": "2025-11-20T05:48:22Z",
+    "latest_updated": "2026-05-19T12:44:46Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.16062v1",
+      "2511.16062v2"
+    ],
+    "abstract": "Graph Neural Networks (GNNs) excel on homophilous graphs but often fail under heterophily due to self-reinforcing and phase-inconsistent signals. We propose a \\textbf{G}auge-\\textbf{E}quivariant Graph Network with \\textbf{S}elf-Interference \\textbf{C}ancellation (GESC), which replaces additive aggregation with a projection-based interference mechanism. Unlike prior magnetic or gauge-equivariant GNNs that rely on additive message mixing, GESC explicitly models self-interference arising from redundant low-frequency components. We show that the absence of interference handling in existing gauge-based GNNs is a primary driver of oversmoothing under gauge transport. We introduce a $\\mathrm{U}(1)$ phase connection followed by a rank-1 projection that suppresses self-parallel components before attention, and a sign-aware gate that regulates negatively aligned neighbors. Across diverse graph benchmarks, GESC consistently outperforms recent state-of-the-art models while offering a unified, interference-aware view of message passing. Our code is available at https://github.com/ChoiYoonHyuk/GESC.",
+    "status": "found"
+  },
+  "2511.16063": {
+    "arxiv_id": "2511.16063",
+    "title": "Modeling Pointing, Acquisition, and Tracking Delays in Free-Space Optical Satellite Networks",
+    "authors": [
+      "Jason Gerard",
+      "Juan A. Fraire",
+      "Sandra Céspedes"
+    ],
+    "submission_date": "2025-11-20T05:52:23Z",
+    "latest_updated": "2025-11-20T05:52:23Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.16063v1"
+    ],
+    "abstract": "Free-space optical inter-satellite links (OISLs) enable high-capacity space communications but require precise Pointing, Acquisition, and Tracking (PAT) between links. Current scheduling approaches often overlook or oversimplify PAT delays, leading to inefficient contact planning and overestimated network capacities. We present a validated model for quantifying retargeting delays, defined as the delay-inducing portion of PAT before data transmission begins, encompassing coarse pointing, fine pointing, and the handover to tracking. The model is grounded in mission data from NASA TBIRD, LLCD, DSOC, and ESA's Lunar Optical Communication Terminal. We find that PAT delays exhibit multimodal distributions based on prior link geometry and scale nonlinearly with initial pointing uncertainty and optical beam width. Integrating these delay models into routing and scheduling algorithms will enable more accurate contact planning and higher utilization in optical networks. The proposed model provides a foundation for evaluating performance and designing algorithms for future large-scale optical satellite networks.",
+    "status": "found"
+  },
+  "2511.16064": {
+    "arxiv_id": "2511.16064",
+    "title": "Scalar curvature and Dirac operator for some singular spaces",
+    "authors": [
+      "John Lott"
+    ],
+    "submission_date": "2025-11-20T05:52:54Z",
+    "latest_updated": "2025-12-23T18:39:46Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.16064v1",
+      "2511.16064v2"
+    ],
+    "abstract": "We look at smooth manifolds equipped with a possibly singular Riemannian metric. We give sufficient conditions for the existence of scalar curvature measures and Dirac operators.",
+    "status": "found"
+  },
+  "2511.16065": {
+    "arxiv_id": "2511.16065",
+    "title": "Nature of 2D XY antiferromagnetism in a van der Waals monolayer",
+    "authors": [
+      "Cheol-Yeon Cheon",
+      "Volodymyr Multian",
+      "Kenji Watanabe",
+      "Takashi Taniguchi",
+      "Alberto F. Morpurgo",
+      "Dmitry Lebedev"
+    ],
+    "submission_date": "2025-11-20T05:54:16Z",
+    "latest_updated": "2025-11-20T05:54:16Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.16065v1"
+    ],
+    "abstract": "Two-dimensional antiferromagnetism has long attracted significant interest in many areas of condensed matter physics, but only recently has experimental exploration become feasible due to the isolation of van der Waals antiferromagnetic monolayers. Probing the magnetic phase diagram of these monolayers remains however challenging because established experimental techniques often lack the required sensitivity. Here, we investigate antiferromagnetism in atomically thin van der Waals magnet NiPS3 using magnetotransport measurements in field-effect transistor devices. Temperature-dependent conductance and magnetoresistance data reveal a distinct magnetic behavior in monolayers as compared to thicker samples. While bilayer and multilayer NiPS3 exhibit a single magnetic phase transition into a zig-zag antiferromagnetic state driven by uniaxial anisotropy, monolayer NiPS3 undergoes two magnetic transitions, with a low-temperature phase governed by in-plane hexagonal magnetic anisotropy. The experimentally constructed phase diagram for monolayer NiPS3 matches theoretical predictions from the six-state clock and 2D-XY models incorporating hexagonal anisotropy.",
+    "status": "found"
+  },
+  "2511.16066": {
+    "arxiv_id": "2511.16066",
+    "title": "Bellman Memory Units: A neuromorphic framework for synaptic reinforcement learning with an evolving network topology",
+    "authors": [
+      "Shreyan Banerjee",
+      "Aasifa Rounak",
+      "Vikram Pakrashi"
+    ],
+    "submission_date": "2025-11-20T05:57:22Z",
+    "latest_updated": "2025-11-20T05:57:22Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.16066v1"
+    ],
+    "abstract": "Application of neuromorphic edge devices for control is limited by the constraints on gradient-free online learning and scalability of the hardware across control problems. This paper introduces a synaptic Q-learning algorithm for the control of the classical Cartpole, where the Bellman equations are incorporated at the synaptic level. This formulation enables the iterative evolution of the network topology, represented as a directed graph, throughout the training process. This is followed by a similar approach called neuromorphic Bellman Memory Units (BMU(s)), which are implemented with the Neural Engineering Framework on Intel's Loihi neuromorphic chip. Topology evolution, in conjunction with mixed-signal computation, leverages the optimization of the number of neurons and synapses that could be used to design spike-based reinforcement learning accelerators. The proposed architecture can potentially reduce resource utilization on board, aiding the manufacturing of compact application-specific neuromorphic ICs. Moreover, the on-chip learning introduced in this work and implemented on a neuromorphic chip can enable adaptation to unseen control scenarios.",
+    "status": "found"
+  },
+  "2511.16067": {
+    "arxiv_id": "2511.16067",
+    "title": "Bio-inspired Integrated Networking and Control for Large-Scale Swarm: A Hierarchical Co-design",
+    "authors": [
+      "Huan Lin",
+      "Dakai Liu",
+      "Lianghui Ding",
+      "Lin Wang",
+      "Feng Yang"
+    ],
+    "submission_date": "2025-11-20T05:58:03Z",
+    "latest_updated": "2025-11-20T05:58:03Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.16067v1"
+    ],
+    "abstract": "Unmanned aerial vehicle (UAV) swarms encounter the challenge of high overhead due to both network management and formation control requirements. In this paper, we propose a Bio-inspired Integrated Networking and Control (BINC) scheme, enabling efficient formation management for swarms comprising thousands of UAVs. The scheme forms a two-layer hierarchical structure, where network clusters and formations share the same groups so that cross-cluster control is eliminated. For networking, we design a fused routing message together with control information to reduce overhead, and limit clusters' size to local two-hop topologies for fast command transmission. For controlling, we develop a hybrid bio-inspired control approach, including a pigeon-like leader-follower algorithm within formations under the consideration of cluster topology maintenance, and a starling-like algorithm among formations that helps to improve the ability of obstacle avoidance. We establish a simulation platform for UAV swarms with over 1000 nodes, and experimental results show that the proposed BINC scheme can achieve highly maneuverable swarm formation marching with significant reduction on communication overhead.",
+    "status": "found"
+  },
+  "2511.16068": {
+    "arxiv_id": "2511.16068",
+    "title": "Time-Critical Adversarial Influence Blocking Maximization",
+    "authors": [
+      "Jilong Shi",
+      "Qiangpeng Fang",
+      "Xiaobin Rui",
+      "Jian Zhang",
+      "Zhixiao Wang"
+    ],
+    "submission_date": "2025-11-20T05:59:21Z",
+    "latest_updated": "2026-03-22T10:02:16Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.16068v1",
+      "2511.16068v2"
+    ],
+    "abstract": "Adversarial Influence Blocking Maximization (AIBM) aims to select a set of positive seed nodes that propagate synchronously with the known negative seed nodes to counteract their negative influence. Time factor plays a particularly vital role for many AIBM application scenarios. However, the AIBM problem with time constraint remains unexplored. More importantly, existing AIBM studies have not thoroughly investigated the submodularity of the objective function, thereby failing to establish a theoretical approximation guarantee. To address these challenges, firstly, we establish the Time-Critical Adversarial Influence Blocking Maximization (TC-AIBM), which explicitly incorporates time constraint. Then, we provide a theoretical proof of the submodularity of the TC-AIBM objective function under three different tie-breaking rules. Finally, a Bidirectional Influence Sampling (BIS) algorithm is proposed to solve the TC-AIBM problem. Leveraging the monotonicity and submodularity of the objective function, BIS achieves an approximation guarantee of $(1-1/e-ε)(1-ψ)$. Comprehensive experiments on four real-world datasets demonstrate that the proposed BIS algorithm exhibits excellent robustness across various negative seeds, time constraint, and tie-breaking rules, outperforming state-of-the-art baselines. In addition, BIS is up to three orders of magnitude faster than the Greedy algorithm.",
+    "status": "found"
+  }
+}

@@ -1,0 +1,396 @@
+{
+  "2601.21856": {
+    "arxiv_id": "2601.21856",
+    "title": "Blind Ultrasound Image Enhancement via Self-Supervised Physics-Guided Degradation Modeling",
+    "authors": [
+      "Shujaat Khan",
+      "Syed Muhammad Atif",
+      "Jaeyoung Huh",
+      "Syed Saad Azhar"
+    ],
+    "submission_date": "2026-01-29T15:28:25Z",
+    "latest_updated": "2026-01-29T15:28:25Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.21856v1"
+    ],
+    "abstract": "Ultrasound (US) interpretation is hampered by multiplicative speckle, acquisition blur from the point-spread function (PSF), and scanner- and operator-dependent artifacts. Supervised enhancement methods assume access to clean targets or known degradations; conditions rarely met in practice. We present a blind, self-supervised enhancement framework that jointly deconvolves and denoises B-mode images using a Swin Convolutional U-Net trained with a \\emph{physics-guided} degradation model. From each training frame, we extract rotated/cropped patches and synthesize inputs by (i) convolving with a Gaussian PSF surrogate and (ii) injecting noise via either spatial additive Gaussian noise or complex Fourier-domain perturbations that emulate phase/magnitude distortions. For US scans, clean-like targets are obtained via non-local low-rank (NLLR) denoising, removing the need for ground truth; for natural images, the originals serve as targets. Trained and validated on UDIAT~B, JNU-IFM, and XPIE Set-P, and evaluated additionally on a 700-image PSFHS test set, the method achieves the highest PSNR/SSIM across Gaussian and speckle noise levels, with margins that widen under stronger corruption. Relative to MSANN, Restormer, and DnCNN, it typically preserves an extra $\\sim$1--4\\,dB PSNR and 0.05--0.15 SSIM in heavy Gaussian noise, and $\\sim$2--5\\,dB PSNR and 0.05--0.20 SSIM under severe speckle. Controlled PSF studies show reduced FWHM and higher peak gradients, evidence of resolution recovery without edge erosion. Used as a plug-and-play preprocessor, it consistently boosts Dice for fetal head and pubic symphysis segmentation. Overall, the approach offers a practical, assumption-light path to robust US enhancement that generalizes across datasets, scanners, and degradation types.",
+    "status": "found"
+  },
+  "2601.21857": {
+    "arxiv_id": "2601.21857",
+    "title": "Dynamics-Inspired Diffusion for Foreground-Preserving Document Background Editing",
+    "authors": [
+      "Taewon Kang",
+      "Yu Shen",
+      "Ming C. Lin"
+    ],
+    "submission_date": "2026-01-29T15:28:48Z",
+    "latest_updated": "2026-09-30T14:27:29Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.21857v1",
+      "2601.21857v2"
+    ],
+    "abstract": "We revisit diffusion-based generation for structured visual content and identify a fundamental limitation of existing approaches: foreground preservation and background stylization are typically enforced through external interventions, such as hard masking or corrective post-processing, rather than arising from the generative process itself. Here, we define background as the generative content outside designated foreground regions (e.g., text and layout elements), while preserving the structural integrity of the foreground. We propose a dynamical systems perspective on diffusion, in which controllable generation is formulated as trajectory shaping in latent space. Under this view, we introduce Auxiliary Context Diffusion (ACD), a state-space control framework that integrates heterogeneous signals (layout-derived foreground indicators, document summaries, and style representations) directly into the diffusion dynamics. This formulation induces time-scale separation in the generative process, where foreground regions become dynamically stabilized while background regions remain expressive. To address stylistic drift across multi-page documents, we further introduce style directions as persistent latent constraints that guide diffusion trajectories within a shared stylistic subspace. Unlike prior approaches that entangle style with prompt conditioning, our formulation enables reusable and consistent style control across pages. We validate the proposed perspective through controlled experiments on synthetic document benchmarks, demonstrating that trajectory-level control provides a unified and extensible mechanism for structured generation without retraining, hard masking, or corrective post-processing. These results suggest a new direction for controllable diffusion in document-centric and multimodal applications.",
+    "status": "found"
+  },
+  "2601.21858": {
+    "arxiv_id": "2601.21858",
+    "title": "When to Match: A Cost-Balancing Principle for Dynamic Markets",
+    "authors": [
+      "Jie Liu",
+      "Hailun Zhang",
+      "Jiheng Zhang"
+    ],
+    "submission_date": "2026-01-29T15:29:33Z",
+    "latest_updated": "2026-07-09T15:39:12Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.21858v1",
+      "2601.21858v2"
+    ],
+    "abstract": "Platforms in ridesharing, food delivery, and online gaming must decide not only whom to match but when: immediate matching cuts waiting, while delay thickens the market and improves match quality. Because demand is hard to forecast, the right waiting window shifts continuously. Fixed-window industry rules are simple but fragile, while forecast-based optimization models are brittle when assumptions fail. This paper develops a matching rule that is as simple as industry practice yet carries a guarantee requiring no forecasts. We study a model in which agents of several types are matched in groups drawing one agent from each type, waiting is costly, and matching costs fall as queues grow. We propose the Cost-Balancing (CB) rule: match as soon as the waiting cost accumulated since the last match reaches a calibrated proportion of the current matching cost. On any finite arrival stream delivering equal numbers of each type, CB calibrated for the worst case incurs at most twice the cost of an optimal clairvoyant policy that knows all future arrivals. No deterministic online rule can guarantee a smaller factor, so CB is worst-case optimal, while greedy and fixed-threshold policies can perform arbitrarily worse than this benchmark. The guarantee extends to matches with fixed heterogeneous consumption requirements. In a game-matching experiment, CB reduces total cost by 3--8\\% versus the industry-standard heuristic; in a food-delivery experiment, it reduces average delay by 14.5\\% versus the best fixed-rule benchmark. Platforms can manage match timing with Cost-Balancing, a simple, efficient, and robust rule. Its worst-case guarantee provides a safety net even in volatile conditions where fixed rules break down. Responding to realized costs, the rule matches faster during surges and waits longer during lulls, without forecasts or retuning.",
+    "status": "found"
+  },
+  "2601.21859": {
+    "arxiv_id": "2601.21859",
+    "title": "Adaptive Privacy of Sequential Data Releases Under Collusion",
+    "authors": [
+      "Sophie Taylor",
+      "Praneeth Kumar Vippathalla",
+      "Justin Coon"
+    ],
+    "submission_date": "2026-01-29T15:29:38Z",
+    "latest_updated": "2026-07-10T09:56:05Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.21859v1",
+      "2601.21859v2"
+    ],
+    "abstract": "The fundamental trade-off between privacy and utility remains an active area of research. Our contribution is motivated by two observations. First, privacy mechanisms developed for one-time data release cannot straightforwardly be extended to sequential releases. Second, practical databases are likely to be useful to multiple distinct parties. Furthermore, we can not rule out the possibility of data sharing between parties. With utility in mind, we formulate a new privacy-utility trade-off problem to adaptively tackle sequential data requests made by different, potentially colluding entities. We consider both expected distortion and mutual information as measures to quantify utility, and use mutual information to measure privacy. We assume an attack model whereby illicit data sharing, which we call collusion, can occur between data receivers. We develop an adaptive algorithm for data releases that makes use of a Blahut-Arimoto-style algorithm. We show that the resulting data releases are optimal when expected distortion quantifies utility, and locally optimal when mutual information quantifies utility. Numerical experiments on real data demonstrate that the proposed adaptive algorithm can exploit previously released information to reduce cumulative leakage under collusion without sacrificing much, if any utility. Finally, we discuss how our findings may extend to applications in machine learning.",
+    "status": "found"
+  },
+  "2601.21860": {
+    "arxiv_id": "2601.21860",
+    "title": "Pathwise Learning of Stochastic Dynamical Systems with Partial Observations",
+    "authors": [
+      "Nicole Tianjiao Yang"
+    ],
+    "submission_date": "2026-01-29T15:30:13Z",
+    "latest_updated": "2026-06-23T15:00:06Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2601.21860v1",
+      "2601.21860v2",
+      "2601.21860v3"
+    ],
+    "abstract": "The reconstruction and inference of stochastic dynamical systems from data is a fundamental task in inverse problems and statistical learning. While surrogate modeling advances computational methods to approximate these dynamics, standard approaches typically require high-fidelity training data. In many practical settings, however, the data are indirectly observed through noisy and nonlinear measurements. The challenge lies not only in approximating the coefficients of the SDEs, but in simultaneously inferring the posterior updates given the observations. In this work, we present an amortized path generation method to address these challenges and solve nonlinear stochastic filtering from noisy observations. We first derive a variational inference formulation that solves filtering distribution for a given noisy observation path. This leads to a controlled SDE representation in which the feedback control is identified through the score structure of a pathwise Zakai equation. Motivated by this representation, we construct a conditional generative model that learns, in an amortized manner over observation paths, to transport a prior latent path measure toward the corresponding posterior path measure. We demonstrate the method on nonlinear stochastic systems with multimodal posterior structure, chaotic dynamics, and sparse observations, showing that the learned conditional path generator enables uncertainty quantification for both filtering marginals and trajectory-dependent functionals.",
+    "status": "found"
+  },
+  "2601.21861": {
+    "arxiv_id": "2601.21861",
+    "title": "Spatiotemporal Continual Federated Learning for Agentic Multi-UAV Edge Networks: Mitigating Catastrophic Forgetting",
+    "authors": [
+      "Chuan-Chi Lai"
+    ],
+    "submission_date": "2026-01-29T15:31:04Z",
+    "latest_updated": "2026-08-30T16:57:46Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2601.21861v1",
+      "2601.21861v2",
+      "2601.21861v3"
+    ],
+    "abstract": "This paper addresses multi-objective conflicts and catastrophic forgetting in uncrewed aerial vehicle (UAV) networks across dynamic spatiotemporal environments. Conventional multi-agent reinforcement learning (MARL) algorithms suffer from severe policy degradation during sequential task transitions. We propose a spatiotemporal continual federated learning (SCFL) framework driven by the group-decoupled multi-agent proximal policy optimization (G-MAPPO) algorithm. SCFL incorporates a three-stage geometric alignment mechanism: it resolves local gradient conflicts via group-decoupled policy optimization (GDPO), mitigates spatial Non-Independent and Identically Distributed (non-IID) client drift through adaptive cosine aggregation, and suppresses inter-task interference via global temporal orthogonal projection without raw experience replay. Evaluations show that SCFL achieves superior robustness over federated baselines, maintaining spatial service reliability above 0.95 and a load balancing index of approximately 0.95 during non-stationary transitions. A longitudinal self-degradation analysis further shows that SCFL preserves historical knowledge with near-zero performance variation in spatial reliability and QoS under moderate loads from 40 to 120 users, while revealing its operating boundary under extreme congestion with 140 users due to hard projection constraints. The framework provides a scalable, communication-efficient approach for autonomous aerial network orchestration.",
+    "status": "found"
+  },
+  "2601.21862": {
+    "arxiv_id": "2601.21862",
+    "title": "Cellular Automaton Reducibility as a Measure of Complexity for Infinite Words",
+    "authors": [
+      "Markel Zubia",
+      "Herman Geuvers"
+    ],
+    "submission_date": "2026-01-29T15:31:16Z",
+    "latest_updated": "2026-01-29T15:31:16Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.21862v1"
+    ],
+    "abstract": "Infinite words, also known as streams, hold significant interest in computer science and mathematics, raising the natural question of how their complexity should be measured. We introduce cellular automaton reducibility as a measure of stream complexity: σ is at least as complex as τ when there exists a cellular automaton mapping σ to τ. This enables the categorization of streams into degrees of complexity, analogous to Turing degrees in computability theory. We investigate the algebraic properties of the hierarchy that emerges from the partial ordering of degrees, showing that it is not well-founded and not dense, that ultimately periodic streams are ordered by divisibility of their period, that sparse streams are atoms, that maximal streams have maximal subword complexity, and that suprema of sets of streams do not generally exist. We also provide a pseudo-algorithm for classifying streams up to this reducibility.",
+    "status": "found"
+  },
+  "2601.21863": {
+    "arxiv_id": "2601.21863",
+    "title": "A Bravyi-König theorem for Floquet codes generated by locally conjugate instantaneous stabiliser groups",
+    "authors": [
+      "Jelena Mackeprang",
+      "Jonas Helsen"
+    ],
+    "submission_date": "2026-01-29T15:31:44Z",
+    "latest_updated": "2026-01-29T15:31:44Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.21863v1"
+    ],
+    "abstract": "The Bravyi-König (BK) theorem is an important no-go theorem for the dynamics of topological stabiliser quantum error correcting codes. It states that any logical operation on a $D$-dimensional topological stabiliser code that can be implemented by a short-depth circuit acts on the codespace as an element of the $D$-th level of the Clifford hierarchy. In recent years, a new type of quantum error correcting codes based on Pauli stabilisers, dubbed Floquet codes, has been introduced. In Floquet codes, syndrome measurements are arranged such that they dynamically generate a codespace at each time step. Here, we show that the BK theorem holds for a definition of Floquet codes based on locally conjugate stabiliser groups. Moreover, we introduce and define a class of generalised unitaries in Floquet codes that need not preserve the codespace at each time step, but that combined with the measurements constitute a valid logical operation. We derive a canonical form of these generalised unitaries and show that the BK theorem holds for them too.",
+    "status": "found"
+  },
+  "2601.21864": {
+    "arxiv_id": "2601.21864",
+    "title": "Knowing Bias, Doing Better: Mitigating Social Bias in LLMs via Know-Bias Neuron Enhancement",
+    "authors": [
+      "Jinhao Pan",
+      "Chahat Raj",
+      "Anjishnu Mukherjee",
+      "Sina Mansouri",
+      "Bowen Wei",
+      "Shloka Yada",
+      "Ziwei Zhu"
+    ],
+    "submission_date": "2026-01-29T15:32:38Z",
+    "latest_updated": "2026-06-27T16:01:57Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.21864v1",
+      "2601.21864v2"
+    ],
+    "abstract": "Large language models (LLMs) exhibit social biases that reinforce harmful stereotypes, limiting their safe deployment. Most existing debiasing methods adopt a suppressive paradigm by modifying parameters, prompts, or neurons associated with biased behavior; however, such approaches are often brittle, weakly generalizable, data-inefficient, and prone to degrading general capability. We propose \\textbf{KnowBias}, a lightweight and conceptually distinct framework that mitigates bias by strengthening, rather than suppressing, neurons encoding bias-knowledge. KnowBias identifies neurons encoding bias knowledge using a small set of bias-knowledge questions via attribution-based analysis, and selectively enhances them at inference time. This design enables strong debiasing while preserving general capabilities, generalizes across bias types and demographics, and is highly data efficient, requiring only a handful of simple yes/no questions and no retraining. Experiments across multiple benchmarks and LLMs demonstrate consistent state-of-the-art debiasing performance with minimal utility degradation. Data and code are available at https://github.com/JP-25/KnowBias.",
+    "status": "found"
+  },
+  "2601.21865": {
+    "arxiv_id": "2601.21865",
+    "title": "Growth estimate for the number of crossing limit cycles in planar piecewise polynomial vector fields",
+    "authors": [
+      "Luana Ascoli",
+      "Douglas D. Novaes"
+    ],
+    "submission_date": "2026-01-29T15:33:36Z",
+    "latest_updated": "2026-01-29T15:33:36Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.21865v1"
+    ],
+    "abstract": "Motivated by the classical Hilbert's Sixteenth Problem, we extend some main developments obtained for Hilbert's number in the polynomial setting to the piecewise polynomial context. Specifically, we study the growth of the maximum number of crossing limit cycles in planar piecewise polynomial vector fields of degree $n$, denoted by $H_c(n)$. The best previously known general lower bound is $H_c(n)\\geq 2n - 1$. In this work, we show that $H_c(n)$ grows at least as fast as $n^2/4.$ Furthermore, we prove that $H_c(n)$ is strictly increasing whenever it is finite, and that in such cases this maximum can be realized by piecewise polynomial systems whose crossing limit cycles are all hyperbolic. Finally, for the more restrictive class of piecewise polynomial Hamiltonian vector fields, we adapt the recursive construction of Christopher and Lloyd to demonstrate that the corresponding maximal number of crossing limit cycles, denoted by $\\widehat{H}_c(n)$, grows at least as fast as $n\\log n/(2\\log 2)$, thereby improving previously established linear growth estimate.",
+    "status": "found"
+  },
+  "2601.21866": {
+    "arxiv_id": "2601.21866",
+    "title": "MoHETS: Long-term Time Series Forecasting with Mixture-of-Heterogeneous-Experts",
+    "authors": [
+      "Evandro S. Ortigossa",
+      "Guy Lutsker",
+      "Eran Segal"
+    ],
+    "submission_date": "2026-01-29T15:35:26Z",
+    "latest_updated": "2026-03-13T15:44:19Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.21866v1",
+      "2601.21866v2"
+    ],
+    "abstract": "Real-world multivariate time series can exhibit intricate multi-scale structures, including global trends, local periodicities, and non-stationary regimes, which makes long-horizon forecasting challenging. Although sparse Mixture-of-Experts (MoE) approaches improve scalability and specialization, they typically rely on homogeneous MLP experts that poorly capture the diverse temporal dynamics of time series data. We address these limitations with MoHETS, an encoder-only Transformer that integrates sparse Mixture-of-Heterogeneous-Experts (MoHE) layers. MoHE routes temporal patches to a small subset of expert networks, combining a shared depthwise-convolution expert for sequence-level continuity with routed Fourier-based experts for patch-level periodic structures. MoHETS further improves robustness to non-stationary dynamics by incorporating exogenous information via cross-attention over covariate patch embeddings. Finally, we replace parameter-heavy linear projection heads with a lightweight convolutional patch decoder, improving parameter efficiency, reducing training instability, and allowing a single model to generalize across arbitrary forecast horizons. We validate across seven multivariate benchmarks and multiple horizons, with MoHETS consistently achieving state-of-the-art performance, reducing the average MSE by $12\\%$ compared to strong recent baselines, demonstrating effective heterogeneous specialization for long-term forecasting.",
+    "status": "found"
+  },
+  "2601.21867": {
+    "arxiv_id": "2601.21867",
+    "title": "Straight-line optimality in Bellman's lost-in-a-forest problem for Euclidean balls",
+    "authors": [
+      "David Treeby",
+      "Edward Wang"
+    ],
+    "submission_date": "2026-01-29T15:36:06Z",
+    "latest_updated": "2026-04-20T15:31:52Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.21867v1",
+      "2601.21867v2"
+    ],
+    "abstract": "We prove that among all unit-speed paths, a straight line minimises the expected escape time from a ball in $\\mathbf{R}^n$, solving the min-mean variant of Bellman's Lost~in~a~Forest problem for ball-shaped forests. The proof uses the Kneser--Poulsen conjecture in the plane, together with results on polygonal chain straightening in higher dimensions. Moreover, we calculate this minimal escape time by deriving the expected linear distance to the boundary of a ball in $n$ dimensions.",
+    "status": "found"
+  },
+  "2601.21868": {
+    "arxiv_id": "2601.21868",
+    "title": "On Forgetting and Stability of Score-based Generative models",
+    "authors": [
+      "Stanislas Strasman",
+      "Gabriel Cardoso",
+      "Sylvain Le Corff",
+      "Vincent Lemaire",
+      "Antonio Ocello"
+    ],
+    "submission_date": "2026-01-29T15:37:50Z",
+    "latest_updated": "2026-06-02T21:58:03Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.21868v1",
+      "2601.21868v2"
+    ],
+    "abstract": "Understanding the stability and long-time behavior of generative models is a fundamental problem in modern machine learning. This paper provides quantitative bounds on the sampling error of score-based generative models by leveraging stability and forgetting properties of the Markov chain associated with the reverse-time dynamics. Under weak assumptions, we provide the two structural properties to ensure the propagation of initialization and discretization errors of the backward process: a Lyapunov drift condition and a Doeblin-type minorization condition. A practical consequence is quantitative stability of the sampling procedure, as the reverse diffusion dynamics induces a contraction mechanism along the sampling trajectory. Our results clarify the role of stochastic dynamics in score-based models and provide a principled framework for analyzing propagation of errors in such approaches.",
+    "status": "found"
+  },
+  "2601.21869": {
+    "arxiv_id": "2601.21869",
+    "title": "Entanglement-Assisted Bosonic MAC: Achievable Rates and Covert Communication",
+    "authors": [
+      "Yu-Chen Shen",
+      "Matthieu R. Bloch"
+    ],
+    "submission_date": "2026-01-29T15:37:51Z",
+    "latest_updated": "2026-01-29T15:37:51Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.21869v1"
+    ],
+    "abstract": "We consider the problem of covert communication over the entanglement-assisted (EA) bosonic multiple access channel (MAC). We derive a closed-form achievable rate region for the general EA bosonic MAC using high-order phase-shift keying (PSK) modulation. Specifically, we demonstrate that in the low-photon regime the capacity region collapses into a rectangle, asymptotically matching the point-to-point capacity as multi-user interference vanishes. We also characterize an achievable covert throughput region, showing that entanglement assistance enables an aggregate throughput scaling of \\(O(\\sqrt{n} \\log n)\\) covert bits with the block length $n$ for both senders, surpassing the square-root law as in the point-to-point case. Our analysis reveals that the joint covertness constraint imposes a linear trade-off between the senders throughput.",
+    "status": "found"
+  },
+  "2601.21870": {
+    "arxiv_id": "2601.21870",
+    "title": "Extreme-Value Distribution Analysis of the Second CHIME/FRB Catalog: Assessing the Rarity of the One-off FRB 20250316A",
+    "authors": [
+      "Wen-Long Zhang",
+      "Jun-Jie Wei"
+    ],
+    "submission_date": "2026-01-29T15:38:09Z",
+    "latest_updated": "2026-04-11T07:09:47Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.21870v1",
+      "2601.21870v2"
+    ],
+    "abstract": "We present a statistical analysis of the extremely bright, apparently non-repeating fast radio burst FRB 20250316A, detected by the Canadian Hydrogen Intensity Mapping Experiment (CHIME), to assess its rarity. Using a model-agnostic framework based on the Generalized Extreme Value (GEV) distribution and the second CHIME/FRB catalog, we perform Bayesian fits to the block-maxima of its peak flux and fluence. Our analysis confirms FRB 20250316A as a pronounced statistical outlier in both quantities. For the peak flux, the best-fit GEV model follows an unbounded, heavy-tailed Fréchet-type distribution, yielding return periods of approximately $802$ years at the $68\\%$ confidence level (CL), $81$ years at the $95\\%$ CL, and $30$ years at the $99\\%$ CL. The fluence distribution exhibits greater complexity: while the full sample is consistent with a Fréchet-type distribution (return period of approximately $55$, $15$, and $8$ years at the $68\\%$, $95\\%$ and $99\\%$ CLs, respectively), removing three other conspicuous outliers reveals a light-tailed Weibull-type distribution with a finite upper bound that is far exceeded by the fluence of FRB 20250316A. Although its inferred recurrence time is shorter than that of the ``Brightest Of All Time'' (BOAT) gamma-ray burst GRB 221009A, FRB 20250316A represents a similarly exceptional event (a potential FRB ``BOAT'') within the relatively short observational baseline of wide-field radio surveys. This work affirms the existence of rare, extremely luminous events at the extreme upper end of the FRB luminosity distribution, which may delineate a distinct physical channel or the extreme tail of a complex luminosity function.",
+    "status": "found"
+  },
+  "2601.21871": {
+    "arxiv_id": "2601.21871",
+    "title": "Polync varieties and multiparameter Kulikov models",
+    "authors": [
+      "Philip Engel"
+    ],
+    "submission_date": "2026-01-29T15:38:30Z",
+    "latest_updated": "2026-08-01T18:33:41Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.21871v1",
+      "2601.21871v2"
+    ],
+    "abstract": "We study \"polync varieties\", whose singularities are locally products of normal crossing (nc) singularities. We introduce the notion of d-semistability of such varieties, and generalize work of Friedman and Kawamata-Namikawa to address the smoothability of d-semistable, K-trivial, polync varieties. These results are applications of recent breakthroughs on the logarithmic Bogomolov-Tian-Todorov theorem, due to Chan-Leung-Ma and Felten-Filip-Ruddat. We generalize the combinatorial description of Kulikov models for K3 surfaces to the setting of a multiparameter base and describe some interesting examples.",
+    "status": "found"
+  },
+  "2601.21872": {
+    "arxiv_id": "2601.21872",
+    "title": "WebArbiter: A Principle-Guided Reasoning Process Reward Model for Web Agents",
+    "authors": [
+      "Yao Zhang",
+      "Shijie Tang",
+      "Zeyu Li",
+      "Zhen Han",
+      "Volker Tresp"
+    ],
+    "submission_date": "2026-01-29T15:39:50Z",
+    "latest_updated": "2026-04-09T17:48:11Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.21872v1",
+      "2601.21872v2"
+    ],
+    "abstract": "Web agents hold great potential for automating complex computer tasks, yet their interactions involve long-horizon, sequential decision-making with irreversible actions. In such settings, outcome-based supervision is sparse and delayed, often rewarding incorrect trajectories and failing to support inference-time scaling. This motivates the use of Process Reward Models (WebPRMs) for web navigation, but existing approaches remain limited: scalar WebPRMs collapse progress into coarse, weakly grounded signals, while checklist-based WebPRMs rely on brittle template matching that fails under layout or semantic changes and often mislabels superficially correct actions as successful, providing little insight or interpretability. To address these challenges, we introduce WebArbiter, a reasoning-first, principle-inducing WebPRM that formulates reward modeling as text generation, producing structured justifications that conclude with a preference verdict and identify the action most conducive to task completion under the current context. Training follows a two-stage pipeline: reasoning distillation equips the model with coherent principle-guided reasoning, and reinforcement learning corrects teacher biases by directly aligning verdicts with correctness, enabling stronger generalization. To support systematic evaluation, we release WebPRMBench, a comprehensive benchmark spanning four diverse web environments with rich tasks and high-quality preference annotations. On WebPRMBench, WebArbiter-7B outperforms the strongest baseline, GPT-5, by 9.1 points. In reward-guided trajectory search on WebArena-Lite, it surpasses the best prior WebPRM by up to 6.4 points, underscoring its robustness and practical value in complex web tasks.",
+    "status": "found"
+  },
+  "2601.21873": {
+    "arxiv_id": "2601.21873",
+    "title": "Transfer Denoising of Low-Rank Plus Sparse Matrices under Ambient and Rank Growth",
+    "authors": [
+      "Elynn Chen",
+      "Jinhang Chai",
+      "Xuyuan Liu",
+      "Yujun Yan"
+    ],
+    "submission_date": "2026-01-29T15:40:05Z",
+    "latest_updated": "2026-10-11T18:18:14Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2601.21873v1",
+      "2601.21873v2",
+      "2601.21873v3"
+    ],
+    "abstract": "We study transfer learning for low-rank plus sparse matrix denoising when both ambient and latent dimensions grow. A data-rich source task provides subspace information for a higher-dimensional, data-scarce target with a small rank increment and localized sparse edits. We develop an anchored alternating-projection estimator that preserves transferred subspaces while learning target-specific coefficients, additional latent directions, and sparse modifications. We establish deterministic error bounds that separate target noise, representation growth, and source-estimation error, identifying improved rates through small structural increments and reduced noise within inherited subspaces. We further extend it to approximate anchoring quantifies robustness to subspace mismatch. We establish application-specific guarantees for Markov transition matrix estimation from single trajectories with dependent noise and for structured covariance estimation, with the latter analysis provided in the appendix. Experiments demonstrate consistent improvements over non-transfer baselines on synthetic data and an approximately 45\\% reduction in principal-angle error on a NYC taxi transition-estimation task with expanding state spaces.",
+    "status": "found"
+  },
+  "2601.21874": {
+    "arxiv_id": "2601.21874",
+    "title": "Quotient geometry of tensor ring decomposition",
+    "authors": [
+      "Bin Gao",
+      "Renfeng Peng",
+      "Ya-xiang Yuan"
+    ],
+    "submission_date": "2026-01-29T15:40:44Z",
+    "latest_updated": "2026-09-23T09:10:53Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.21874v1",
+      "2601.21874v2"
+    ],
+    "abstract": "Differential geometries derived from tensor decompositions have been extensively studied and provided the foundations for a variety of efficient numerical methods. Despite the practical success of the tensor ring (TR) decomposition, its intrinsic geometry remains less understood, primarily due to the underlying ring structure and the resulting nontrivial gauge invariance. We establish the quotient geometry and immersed-submanifold structure of TR decomposition by imposing full-rank conditions on all unfolding matrices of the core tensors and capturing the gauge invariance. The intrinsic ring structure of TR leads to an analysis that is substantially different from other tensor formats. Additionally, for the uniform TR decomposition, where all core tensors are identical and the manifold structure is known, we derive explicit parameterizations for the vertical and horizontal spaces, which enable Riemannian optimization. Numerical experiments validate the developed geometries via tensor ring completion tasks.",
+    "status": "found"
+  },
+  "2601.21875": {
+    "arxiv_id": "2601.21875",
+    "title": "Defect Relative Entropy",
+    "authors": [
+      "Mostafa Ghasemi"
+    ],
+    "submission_date": "2026-01-29T15:40:51Z",
+    "latest_updated": "2026-06-22T15:10:50Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.21875v1",
+      "2601.21875v2"
+    ],
+    "abstract": "Distinguishability is central to quantum information theory, but a quantitative measure for distinguishing topological defects--realizations of generalized symmetries in quantum field theory (QFT)--has been lacking. We introduce the notion of the \\textit{defect relative entropy} to fill this gap for topological defects in two-dimensional conformal field theories (CFTs). For defects on a circle, we derive a universal formula that reduces defect relative entropy to a Kullback--Leibler divergence determined entirely by the modular $\\mathcal{S}$-matrix and defect coefficients. Thus, the algebraic data governing modular transformations also determines defect distinguishability. A striking consequence is that certain distinct defects can have vanishing relative entropy when restricted to one side, implying that an observer confined to that side cannot distinguish them. This gives rise to information-theoretic equivalence classes of defects, which we term \\textit{defect relative sectors}. We further introduce the sandwiched defect Rényi relative entropy and defect fidelity, derive general formulas for these quantities. Explicit calculations in the Ising model, tricritical Ising model, and $\\widehat{su}(2)_k$ WZW models illustrate our results.",
+    "status": "found"
+  }
+}

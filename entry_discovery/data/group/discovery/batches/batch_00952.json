@@ -1,0 +1,424 @@
+{
+  "2609.16874": {
+    "arxiv_id": "2609.16874",
+    "title": "Accelerated Decoding of Centroid Positional Encoding for Instance Segmentation",
+    "authors": [
+      "Carmelo Scribano",
+      "Filippo Muzzini",
+      "Nedyalko Prisadnikov",
+      "Mohammad Mahdi",
+      "Yuqian Fu",
+      "Giorgia Franchini",
+      "Danda Pani Paudel",
+      "Marko Bertogna",
+      "Luc Van Gool"
+    ],
+    "submission_date": "2026-09-15T09:05:17Z",
+    "latest_updated": "2026-09-15T09:05:17Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16874v1"
+    ],
+    "abstract": "Beyond model inference, the decoding stage, which converts raw network outputs into task-level representations, constitutes a significant portion of the execution cost. Despite its practical impact, prediction decoding has received comparatively little attention and is often implemented using generic CPU routines or inefficient GPU kernels, limiting the benefits of advances in model efficiency. In this work, we investigate the decoding overhead associated with a recent sinusoidal centroid encoding for Instance Segmentation, in which each pixel regresses a positional embedding of its instance centroid. This approach allows flexible segmentation without predefined proposals, but extracting instance masks from dense embeddings incurs a high computational cost. We present an optimized CUDA-based implementation of the decoding algorithm tailored to this encoding, explicitly addressing challenges related to parallelization, synchronization, and memory access on modern GPUs. Our solution significantly reduces decoding overhead and improves End-to-End inference latency, outperforming both CPU-based approaches and naive GPU implementations. The results demonstrate that efficient decoding is essential to fully exploit the advantages of advanced output representations and highlight the importance of jointly designing encoding schemes and their decoding algorithms for real-time computer vision systems.",
+    "status": "found"
+  },
+  "2609.16875": {
+    "arxiv_id": "2609.16875",
+    "title": "Multi-modal Knowledge Preserving Adapter for Embedding Backward Compatibility",
+    "authors": [
+      "Jaeseok Byun",
+      "Gukyeong Kwon",
+      "Han-Kai Hsu",
+      "Meher Gitika Karumuri",
+      "Zhikang Zhang",
+      "Hao Yang",
+      "Davide Modolo"
+    ],
+    "submission_date": "2026-09-15T09:06:00Z",
+    "latest_updated": "2026-09-15T09:06:00Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16875v1"
+    ],
+    "abstract": "Upgrading embedding models typically requires expensive database re-indexing, as new query embeddings are incompatible with existing database embeddings. While Backward Compatible Training (BCT) mitigates this by enforcing compatibility during training, existing approaches often require updating the backbone model. This is impractical because of significant training cost, the risk of performance regression, and limited access to proprietary model weights. We introduce Multi-modal Knowledge Preserving Adapter (MKP-Adapter), the first adapter-only BCT approach for Multi-modal Large Language Models (MLLMs) that requires no backbone updates. We identified that the primary challenge in adapter-only BCT is preserving the knowledge of the new embeddings while enforcing backward compatibility. Hence, we propose a multi-level preservation loss that maintains the geometric structure of the embedding spaces throughout BCT. Furthermore, a focal re-weighting strategy is integrated to prioritize learning from challenging samples. Experiments demonstrate that our method achieves strong backward compatibility across diverse multi-modal benchmarks (image, text, visual document, and video retrieval tasks) and model types. Notably, MKP-Adapter is trained solely on pre-extracted embeddings and requires only negligible additional latency relative to the original backbone forward pass, highlighting its efficiency.",
+    "status": "found"
+  },
+  "2609.16876": {
+    "arxiv_id": "2609.16876",
+    "title": "Online adaptive non-intrusive model reduction via manifold interpolation and subspace updates: application to FSI convergence acceleration",
+    "authors": [
+      "Azzeddine Tiba",
+      "Florian de Vuyst",
+      "Iraj Mortazavi"
+    ],
+    "submission_date": "2026-09-15T09:06:50Z",
+    "latest_updated": "2026-09-15T09:06:50Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16876v1"
+    ],
+    "abstract": "We introduce a novel online adaptive non-intrusive reduced-order modeling strategy for parameterized dynamical systems involving parameter and time-dependent reduced bases. The proposed framework is based on a unified Grassmann manifold formulation combining three key components: interpolation of local reduced subspaces for unseen parameters, geodesic online subspace updates driven by incoming high-fidelity snapshots, and a latent-space regression strategy relying on Grassmann-distance weighting and Procrustes alignment to consistently aggregate predictions from multiple local models. The adaptive reduced-order model is embedded in a partitioned fluid-structure interaction framework, where it predicts fluid interface forces to provide accurate initial guesses for the nonlinear coupling iterations, thus achieving computational speedups with no loss of accuracy. The reduced basis and the regression operators are adapted independently during the simulation and without requiring the storage of high-dimensional streaming data, preserving computational efficiency while substantially improving predictive capabilities. Numerical results on reference FSI test cases demonstrate superior accuracy with respect to static and global reduced-order models, leading to a significant reduction in the number of fixed-point iterations required for convergence. The proposed framework offers a flexible and fully non-intrusive approach for the efficient simulation of nonlinear parameter-dependent multiphysics problems.",
+    "status": "found"
+  },
+  "2609.16877": {
+    "arxiv_id": "2609.16877",
+    "title": "A Mechanical Antenna for Improving Capacity Fairness in Dynamic Multi-Station Scenarios",
+    "authors": [
+      "Akihito Taya",
+      "Yuuki Nishiyama",
+      "Kaoru Sezaki"
+    ],
+    "submission_date": "2026-09-15T09:07:10Z",
+    "latest_updated": "2026-09-15T09:07:10Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16877v1"
+    ],
+    "abstract": "While indoor Internet of Things (IoT) and sensor networks increasingly rely on Wi-Fi access points (APs) to collect high-bandwidth data streams from multiple devices, conventional APs rely on static antenna deployments, whose fixed orientations are often suboptimal in dynamic propagation environments. To overcome this limitation, this paper proposes a mechanical Wi-Fi antenna control system that adaptively optimizes its 3D antenna orientation for dynamic multi-station scenarios. The proposed system autonomously actuates its physical antennas in response to perceived radio environments by combining state-specific black-box optimizers and capacity-based environment change detection. The evaluation results show that the proposed system improves channel capacity under dynamic station combinations, avoids unnecessary re-optimization under transient blockages, and triggers re-optimization after sustained environmental changes such as continuous blockage and device relocation.",
+    "status": "found"
+  },
+  "2609.16878": {
+    "arxiv_id": "2609.16878",
+    "title": "VOR-Bench: A Human Perception-Driven Benchmark for Video Object Removal",
+    "authors": [
+      "Haonan Huang",
+      "Tianrui Qiu",
+      "Xianghao Zang",
+      "Yinan Du",
+      "Zhixiang He",
+      "Chi Zhang",
+      "Hao Sun",
+      "Zhongjiang He",
+      "Tianwei Cao",
+      "Xuchong Zhang",
+      "Hongbin Sun",
+      "Kongming Liang",
+      "Zhanyu Ma"
+    ],
+    "submission_date": "2026-09-15T09:08:00Z",
+    "latest_updated": "2026-09-15T09:08:00Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16878v1"
+    ],
+    "abstract": "Despite its crucial role in video object removal (VOR), existing evaluation paradigms face two critical limitations: questionable references and a misalignment between tradi- tional metrics and human preference. To address these challenges, we introduce VOR- Bench, which advances VOR evaluation through three integrated components. First, we present the VOR Dataset (VORD), the first benchmark dataset providing both paired edited videos and graffiti masks. Its unique strength lies in a diverse data spectrum, which encompasses model-generated, tool-rendered, and camera-captured data, ensuring robust assessment across real-world scenarios. Second, we develop rMPAF, a realistic Motion- capable Paired-video Acquisition Framework. By combining the strengths of image- based object removal and fine-tuned video generation models, rMPAF automatically generates realistic, motion-coherent paired videos. Finally, we propose three evaluation dimensions and introduce VOR-MDSM, the first perception-driven VLM-based scoring model specifically designed for mask-guided VOR. It bridges the gap between arithmetic metrics and human perception by covering the essential visual attributes and matching nuanced human judgment. Extensive experiments demonstrate that VOR-Bench yields evaluation results that align closely with human perception, achieving a remarkable cor- relation (\\r{ho} > 0.9) with subjective assessments. We will release VOR-Bench along with its documentation to ensure full reproducibility.",
+    "status": "found"
+  },
+  "2609.16879": {
+    "arxiv_id": "2609.16879",
+    "title": "Supernova Kinetic Yield oN galactic Emission Tracers (SKYNET) I. Contribution of radiative supernova remnants to Galactic N + emission",
+    "authors": [
+      "Guillaume Vigoureux",
+      "Benjamin Godard",
+      "Antoine Gusdorf",
+      "Guillaume Pineau Des Forêts"
+    ],
+    "submission_date": "2026-09-15T09:10:50Z",
+    "latest_updated": "2026-09-15T09:10:50Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16879v1"
+    ],
+    "abstract": "Context. The radiative stage of a supernova remnant (SNR) constitutes approximately 90% of its lifetime. Yet, only a few tens of radiative supernova remnants (r-SNRs) have been observed in the Milky Way, while catalogs of young SNRs in their adiabatic stage contain $\\sim$ 300 -400 confirmed sources. This deficit reflects the absence of unambiguous tracers for the radiative phase, and stands as a major obstacle to understanding the impact of SNRs on the energetic balance and the chemical state of the interstellar medium. Aims. We aim to identify spectral tracers of r-SNRs to enable their individual or statistical detection across the Galactic plane, and, more generally, to quantify the collective contribution of the Galactic r-SNR population to interstellar line emission. Methods. We present SKYNET, a new predictive framework that couples a physically motivated model of individual r-SNRs, built upon a dedicated version of the Paris-Durham shock code, with a Galactic model that describes the spatial distribution of r-SNRs and the properties of the medium into which they expand. Together, these components allow SKYNET to predict the cumulative emission of Galactic r-SNRs in nearly one million spectral lines. As a first application, we compare the predictions of SKYNET with an Herschel survey of the two fine-structure lines of singly ionized nitrogen. Results. The Galactic distribution predicted by SKYNET shows that random lines of sight toward the Galactic plane inevitably intercept multiple r-SNRs, whose cumulative emission may be associated with specific spectral tracers. SKYNET successfully reproduces the longitudinal profile of N + emission along the Galactic plane, which results from the projection on the sky of the spiral arms structure. The predicted line-ratio distribution matches the mean, the dispersion, and the tail of the observed distribution, showing that the model naturally explains the unexpectedly narrow range of physical conditions of the medium responsible for the N + emission. Comparison with the observed column densities reveals that SKYNET accounts for $\\sim$ 20-25% of the total Galactic N + content, demonstrating that radiative SNRs constitute a significant, and previously underappreciated, source of ionization in the Milky Way. The difference between the observed and predicted column densities could be due to the clustering of supernova remnants into superbubbles, which is currently not taken into account by the model, and to the contribution of non-SNR sources such as H II regions. Conclusions. SKYNET offers a new framework for quantifying the cumulative emission of r-SNRs at Galactic scales that can be directly compared with observational surveys of atomic and molecular lines. The first application reveals that SNRs contribute significantly to the ionization of the ISM, highlighting a role that has largely been overlooked.",
+    "status": "found"
+  },
+  "2609.16880": {
+    "arxiv_id": "2609.16880",
+    "title": "Artificial Intelligence-Enabled Space Robot Operations: Technologies, Challenges and Prospects",
+    "authors": [
+      "Zeyuan Huang",
+      "Gang Chen",
+      "Zixuan Hao",
+      "Guoqin Tang",
+      "Junyi Zong",
+      "Guoyou Ban",
+      "Jiale Wang",
+      "Haoyang Lv",
+      "Chaoqian Ren",
+      "Sitong Liu"
+    ],
+    "submission_date": "2026-09-15T09:12:12Z",
+    "latest_updated": "2026-09-15T09:12:12Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16880v1"
+    ],
+    "abstract": "Space robots are increasingly expected to perform long-duration, contact-rich, and multi-stage operations with limited human intervention. Recent advances in artificial intelligence (AI), robot learning, and embodied foundation models provide new opportunities to improve the autonomy and adaptability of such systems, but their transfer to space is constrained by scarce mission data, space-specific dynamics and sensing conditions, limited onboard resources, and stringent safety requirements. This article reviews artificial intelligence-enabled space robot operations (AI-SRO) from a capability-building perspective. We first summarize representative operational scenarios, autonomy trends, and space-specific constraints. We then establish a three-layer technical framework comprising capability foundations, capability formation, and capability deployment/evolution. Within this framework, we review simulation environments, datasets and benchmarks; task and environment understanding, state perception, decision-making and planning, and action execution; and onboard deployment, ground-to-space adaptation, continual learning, and capability transfer. Finally, we propose key research directions toward trustworthy simulation and data, open-world multimodal cognition, long-horizon safe decision-making, physically constrained policy learning, and space computing infrastructures.",
+    "status": "found"
+  },
+  "2609.16881": {
+    "arxiv_id": "2609.16881",
+    "title": "An extension of Subcomplete Forcing Axiom which implies $\\diamondsuit^+$",
+    "authors": [
+      "Hiroshi Sakai"
+    ],
+    "submission_date": "2026-09-15T09:14:39Z",
+    "latest_updated": "2026-09-15T09:14:39Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16881v1"
+    ],
+    "abstract": "We prove that the Subcomplete Forcing Axiom is consistent with $\\diamondsuit^+$.",
+    "status": "found"
+  },
+  "2609.16882": {
+    "arxiv_id": "2609.16882",
+    "title": "WCCS: Efficient Wedge Conductance Community Search over Large Temporal Bipartite Graphs (Full Paper)",
+    "authors": [
+      "Longlong Lin",
+      "Wei Chen",
+      "Pingpeng Yuan",
+      "Ruikun Luo",
+      "Qiangqiang Dai",
+      "Rong-Hua Li"
+    ],
+    "submission_date": "2026-09-15T09:16:53Z",
+    "latest_updated": "2026-09-15T09:16:53Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16882v1"
+    ],
+    "abstract": "Bipartite graphs are ubiquitous for modeling complex interactions between two distinct entity types across numerous practical applications such as e-commerce, academic networks, and social systems. Despite significant progress in community search over bipartite graphs, most prior work is limited to static settings and ignores the rich temporal dynamics present in real-world networks. Moreover, existing methods typically adopt edge-centric measures and strict consecutivity constraints, failing to capture higher-order interactions and frequent yet non-consecutive activities. More importantly, they often neglect the crucial community-quality requirements of both internal cohesiveness and external sparsity, failing to identify critical nodes or including many irrelevant nodes. To address these dilemmas, we propose the novel problem of \\emph{Wedge Conductance Community Search (WCCS)}, which aims to identify a query-dependent community that is not only structurally and temporally cohesive but also well-separated from the rest of the network over non-consecutive timestamps. We formalize WCCS by generalizing the classical $(α,β)$-core to a higher-order $(α,β,τ)$-wedge core, and by proposing a novel temporal wedge conductance metric that explicitly balances internal density and external sparsity. To solve WCCS efficiently, we first develop an online priority-driven filter-and-expand framework with several effective pruning techniques and a powerful geometric slope optimization for rapid temporal wedge conductance calculation. Subsequently, to further improve scalability, we propose an offline compressed index to accelerate search. Finally, comprehensive experiments on seven real-world datasets demonstrate the effectiveness, efficiency, and scalability of our solutions compared to eight competitors.",
+    "status": "found"
+  },
+  "2609.16883": {
+    "arxiv_id": "2609.16883",
+    "title": "Exploring nucleon spin by Drell-Yan process",
+    "authors": [
+      "Wen-Chen Chang"
+    ],
+    "submission_date": "2026-09-15T09:17:28Z",
+    "latest_updated": "2026-09-15T09:17:28Z",
+    "revised_dates": null,
+    "venue": "PoS SPIN2025 (2026) 025",
+    "latest_version": 1,
+    "versions": [
+      "2609.16883v1"
+    ],
+    "abstract": "Contributions of parton's orbital motion to the nucleon spin are encoded in the transverse-momentum dependent distributions (TMDs) and generalized parton distributions (GPDs). Currently these distributions are accessed through the lepton-induced processes such as semi-inclusive deep-inelastic scattering (SIDIS) and deeply virtual Compton Scattering (DVCS). The (un)polarized Drell-Yan process with hadron beams provides a unique and complementary probe, enabling critical tests of the universality properties of TMDs and GPDs in the space-like and time-like approaches. This talk reviews recent results of TMDs obtained from the Drell-Yan measurements and discusses future prospects for accessing nucleon GPDs through measurements of the exclusive pion-induced Drell-Yan process at J-PARC.",
+    "status": "found"
+  },
+  "2609.16884": {
+    "arxiv_id": "2609.16884",
+    "title": "Bridging Learned Visual Perception and Symbolic Belief-Space Planning",
+    "authors": [
+      "Guy Azran",
+      "Michael Navat",
+      "Sarah Keren"
+    ],
+    "submission_date": "2026-09-15T09:17:32Z",
+    "latest_updated": "2026-09-15T09:17:32Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16884v1"
+    ],
+    "abstract": "In partially observable settings, agents must act without full knowledge of the world state and rely on uncertain state-estimation pipelines. Obtaining grounded and verifiable symbolic plans under such uncertainty remains a key challenge. Recent work has integrated Vision-Language Models (VLMs) to bridge perception and symbolic reasoning, following two main paradigms. The first, VLM-as-planner, maps images directly to action sequences, and the second, VLM-as-grounder, grounds observations into symbolic predicates used as the initial state by off-the-shelf planners. Both approaches ignore uncertainty in the planning process, compromising robustness. We introduce a third paradigm, VLM-as-probabilistic-grounder, a novel approach that captures the uncertainty of VLM predicate groundings as a probability distribution over symbolic states. This enables planning in belief space and producing robust plans under uncertainty. Experiments in simulated household robot settings show improved robustness and task success over deterministic grounding, underscoring how our approach leverages foundation models for reliable planning under uncertainty.",
+    "status": "found"
+  },
+  "2609.16885": {
+    "arxiv_id": "2609.16885",
+    "title": "An energy stable and accuracy-preserving finite volume scheme based on the SAV method with application to wall-distance computation",
+    "authors": [
+      "Xiaorui Xu",
+      "Qian Wang"
+    ],
+    "submission_date": "2026-09-15T09:17:42Z",
+    "latest_updated": "2026-09-15T09:17:42Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16885v1"
+    ],
+    "abstract": "A novel semi-implicit second-order finite volume scheme integrating the scalar auxiliary variable (SAV) approach is proposed for solving the pseudo-time Eikonal equation in wall-distance computation. Unconditional energy stability under zero boundary conditions is rigorously proved, eliminating the dependence of the time step on the grid scale and enabling large-time-step computation. The scheme is a priori accuracy-preserving, and its discretization matrix forms an M-matrix, thereby guaranteeing strict non-negativity of the numerical solution inherently. The framework extends readily to any non-conservative scalar equation and, being independent of the specific finite-volume reconstruction, is compatible with schemes of arbitrary order of accuracy. A vanishing artificial viscosity is introduced to smooth the solution without compromising formal accuracy, and upwinding is incorporated through directional weighting in the weighted least-squares (WLS) reconstruction. Numerical experiments confirm that the scheme achieves the designed accuracy and permits stable computations with uniformly large time steps. For complex configurations such as a three-element airfoil and the three-dimensional ONERA M6 wing, accurate results are obtained on high-aspect-ratio grids, with relative errors in the computed wall distance below 3\\% relative to the search-based reference, except near geometric singularities.",
+    "status": "found"
+  },
+  "2609.16886": {
+    "arxiv_id": "2609.16886",
+    "title": "Static output-feedback stabilization is NP-hard",
+    "authors": [
+      "Johan Löfberg"
+    ],
+    "submission_date": "2026-09-15T09:18:59Z",
+    "latest_updated": "2026-09-15T09:18:59Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16886v1"
+    ],
+    "abstract": "We prove that unrestricted static output-feedback stabilization is NP-hard, already in the single-input multiple-output case. More precisely, we give a polynomial-time many-one reduction from the NP-complete Betweenness problem. Given an instance with $n$ elements and $m$ betweenness constraints, the reduction constructs integer matrices $A\\in\\mathbb Z^{D\\times D}$, $B\\in\\mathbb Z^{D\\times1}$, and $C\\in\\mathbb Z^{n\\times D}$ such that the instance is satisfiable if and only if there exists an unrestricted real row vector $K\\in\\mathbb{R}^{1\\times n}$ for which $A+BKC$ is Hurwitz. The state dimension is $D=6(m+n)$, and every matrix entry has logarithmic bit length in the input size. The reduction uses one universal cubic source polynomial whose Routh determinant enforces the sign condition encoding betweenness, while fixed anchor values provide a mechanism for excluding spurious stabilizing gains of arbitrarily large magnitude. Frequency separation then compresses the simultaneous source conditions into one common affine polynomial, which is realized directly as the characteristic polynomial of $A+BKC$. As a by-product, deciding whether an affinely parameterized rational polynomial family contains a Hurwitz member on a rational box is NP-hard.",
+    "status": "found"
+  },
+  "2609.16887": {
+    "arxiv_id": "2609.16887",
+    "title": "QART: A Quantum-Classical Hybrid Architecture for Long-Horizon Reasoning -- Exploring a Conditional Path toward Quantum Scaling",
+    "authors": [
+      "Lehao Lin",
+      "Yuheng Cheng",
+      "Guolong Liu",
+      "Yao Li",
+      "Xuning Tan",
+      "Xiyuan Zhou",
+      "Ruixi Zou",
+      "Shi Wang",
+      "Huan Zhao",
+      "Wenxuan Liu",
+      "Haifeng Wu",
+      "Junhua Zhao"
+    ],
+    "submission_date": "2026-09-15T09:21:45Z",
+    "latest_updated": "2026-09-15T09:21:45Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16887v1"
+    ],
+    "abstract": "Long-horizon reasoning is vulnerable to early errors that compromise later decisions. We present QART, the Quantum-Augmented Reasoning Transformer, a quantum--classical hybrid architecture combining a backbone language model with quantum encoding, CIM-based QUBO optimization, and quantum decoding. Semantic information can come from hidden representations or model-generated text; detailed encoding and optimization procedures remain proprietary. Under explicit assumptions, we establish a conditional asymptotic reliability separation from single-trajectory autoregressive LLMs. For a common task family with aligned optimality and acceptance criteria, autoregressive acceptance probability tends to zero when cumulative conditional risk of irreversible errors diverges. QART's task-optimal-path recovery probability remains bounded away from zero if conditional probabilities for optimal-path coverage and semantic fidelity, spectral certification, dynamical reachability, and faithful readout remain uniformly positive under a specified resource schedule. The architecture alone does not imply these bounds. Paired measurements on six long-horizon benchmarks using DeepSeek V4 Flash, GLM-5.3, and GPT-5.5 xhigh in a Codex agent environment favor QART in 14 of 15 backbone--benchmark pairs. Relative gains reach 84.0% on SciCode, 47.6% on $τ^3$-Bench, and 44.4% on Terminal-Bench 4.0; the DeepSeek V4 Flash configuration regresses by 7.8% on DeepSWE. These results do not directly validate the asymptotic separation. Potential quantum scaling laws are formulated as conditional hypotheses. A quantum-advantage interpretation requires a demonstrated CIM quantum advantage over strong classical solvers and its transfer to end-to-end reasoning after all system overheads.",
+    "status": "found"
+  },
+  "2609.16888": {
+    "arxiv_id": "2609.16888",
+    "title": "Second-Order Rayleigh-Schrödinger Perturbation Theory for the Grasp2018 Package: Valence-Valence Correlations",
+    "authors": [
+      "G. Gaigalas",
+      "P. Rynkun",
+      "L. Kitovienė"
+    ],
+    "submission_date": "2026-09-15T09:22:44Z",
+    "latest_updated": "2026-09-15T09:22:44Z",
+    "revised_dates": null,
+    "venue": "Lithuanian Journal of Physics, 65, No. 1, 32-56 (2025)",
+    "latest_version": 1,
+    "versions": [
+      "2609.16888v1"
+    ],
+    "abstract": "The accurate description of electron correlations remains a major challenge in atomic calculations. In order to perform accurate calculations, it is necessary to consider the various types of electron correlations what often leads to extensive CSF expansions. This work presents further development of the method based on the second-order perturbation theory to identify the most significant CSFs that have the greatest influence on core-valence, core, core-core and valence-valence correlations. This method is based on a combination of the relativistic configuration interaction method and the stationary second-order Rayleigh-Schrödinger many-body perturbation theory in an irreducible tensorial form [G. Gaigalas, P. Rynkun, L. Kitovienė, Lithuanian Journal of Physics, 64, No. 1, 20-39 (2024) (https://doi.org/10.3952/physics.2024.64.1.3), G. Gaigalas, P. Rynkun, L. Kitovienė, Lithuanian Journal of Physics, 64, No. 2, 73-81 (2024) (https://doi.org/10.3952/physics.2024.64.2.1) and G. Gaigalas, P. Rynkun, L. Kitovienė, Lithuanian Journal of Physics, 64, No. 3, 139-161 (2024) (https://doi.org/10.3952/physics.2024.64.3.1)]. The method is extended to include additionally valence-valence electron correlations. It can be applied for an atom or ion with any number of valence electrons for calculation of energy spectra and other properties. Meanwhile, the correlations which can not be included according to perturbation theory are accounted for in a regular way. The use of the developed method allows a significant reduction of CSFs especially for complex atoms and ions. As an example of its application, the atomic calculations of the energy structure for Se~III ion are presented.",
+    "status": "found"
+  },
+  "2609.16889": {
+    "arxiv_id": "2609.16889",
+    "title": "Temporally Consistent Graph Extraction and Matching for Longitudinal Angiographic Images",
+    "authors": [
+      "Linus Kreitner",
+      "Laurin Lux",
+      "Carmen Baumann",
+      "Daniel Rueckert",
+      "Martin J. Menten"
+    ],
+    "submission_date": "2026-09-15T09:22:44Z",
+    "latest_updated": "2026-09-15T09:22:44Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16889v1"
+    ],
+    "abstract": "Recent advances in angiographic imaging have enabled longitudinal visualization of the microvasculature. Image processing pipelines based on vessel graphs are able to resolve subtle temporal changes at the level of individual blood vessels. However, current strategies for graph extraction, refinement, and matching are highly sensitive, with even minuscule differences in the underlying segmentation map resulting in substantially different vessel graphs. These artifacts severely inhibit the ability to accurately match sequential vessel graphs of the same subject over time. To address this problem, we propose a strategy that matches graphs before jointly refining them. Specifically, we perform an early matching after basic graph extraction before removing spurious bulges and merging junctions in both graphs using joint information. In experiments with complex retinal vessel graphs, we demonstrate that this strategy results in a higher matched area without graph fragmentation compared to separate or no refinement, respectively.",
+    "status": "found"
+  },
+  "2609.16890": {
+    "arxiv_id": "2609.16890",
+    "title": "Cascade: Hierarchical Recoverability Control for Large Language Model Unlearning",
+    "authors": [
+      "Qingchen Yu",
+      "Shiying Duan",
+      "Xiaodong Li",
+      "Yuhua Wang",
+      "Zhiyu Li",
+      "Shiji Zhou",
+      "Yifan Sun",
+      "Zhaoxin Fan"
+    ],
+    "submission_date": "2026-09-15T09:23:16Z",
+    "latest_updated": "2026-09-15T09:23:16Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16890v1"
+    ],
+    "abstract": "Large Language Model (LLM) unlearning is essential for removing sensitive or copyrighted knowledge while preserving general utility. Existing methods often leave residual knowledge in intermediate representations, which can still be recovered. To address this, we propose Cascade, a hierarchical recoverability control framework that minimizes the internal identifiability of target knowledge. Cascade combines three complementary controls: path-level routing to suppress privacy-associated activation routes, representation-level compression to reduce geometric separability, and decoding-level intervention to limit residual recovery. Experiments on TOFU, MUSE-News, and WMDP, including robustness tests with query reformulation and extraction-style prompts, show that Cascade effectively reduces recoverability while maintaining stable model utility.",
+    "status": "found"
+  },
+  "2609.16891": {
+    "arxiv_id": "2609.16891",
+    "title": "Gravitational lensing of gravitational waves by galaxy clusters",
+    "authors": [
+      "Xikai Shan",
+      "Yi-Fan Wang",
+      "Shude Mao",
+      "Huan Yang",
+      "Miguel Zumalacárregui"
+    ],
+    "submission_date": "2026-09-15T09:23:16Z",
+    "latest_updated": "2026-09-15T09:23:16Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16891v1"
+    ],
+    "abstract": "Strongly lensed gravitational waves (GWs) are commonly searched for using population priors, including time-delay and magnification-ratio distributions, to suppress false alarms. Current LIGO, Virgo, and KAGRA (LVK) searches mainly adopt priors calibrated with galaxy-scale lenses; however, these may penalize the longer time delays produced by galaxy clusters, which could contribute 10%--20% of lensed events. Cluster member galaxies may also perturb the macro-lens potential and alter image magnifications. We investigate the time-delay and magnification-ratio distributions of binary black hole GWs lensed by galaxy clusters, together with microlensing systematics. In the full lensed sample, the median time delay is about 76 days for cluster lenses, compared with 6.9 days for galaxy lenses. After imposing an SNR threshold of $ρ>8$ at LVK O4 sensitivity, the medians are 15.4 and 0.24 days. The detected cluster sample retains a long-delay tail, with 9.1% of image pairs delayed by more than 365 days and 3.3% by more than 1000 days, so galaxy-based time-delay priors can suppress cluster-lensed pairs. By contrast, although cluster member galaxies broaden the magnification-ratio distribution of the full cluster sample, the detected cluster- and galaxy-lensing samples are very similar at O4 sensitivity, suggesting little bias in candidate selection. Cluster lenses also generally produce weak microlensing distortions: only about 0.8% of single-image mismatches exceed ${\\cal M}=0.03$, while 4.8% exceed the parameter-estimation threshold $1.35/ρ^2$. Thus, microlensing is subdominant for most cluster-lensed events, mainly because images often form far from the brightest cluster galaxy, where the stellar density is low and dominated by intracluster light, although nearby satellites can locally enhance it. These results motivate a dedicated cluster-lensing pipeline for GW lensing searches.",
+    "status": "found"
+  },
+  "2609.16892": {
+    "arxiv_id": "2609.16892",
+    "title": "Double parton scattering off nuclei and the double-EMC effect",
+    "authors": [
+      "Filippo Fornetti",
+      "Federico Alberto Ceccopieri",
+      "Emanuele Pace",
+      "Matteo Rinaldi",
+      "Giovanni Salmè"
+    ],
+    "submission_date": "2026-09-15T09:23:27Z",
+    "latest_updated": "2026-09-15T09:23:27Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16892v1"
+    ],
+    "abstract": "The double-parton scattering process off light and heavy nuclei is proposed as an effective tool to open a novel window for accurately studying the effects of nuclear binding on the internal structure of the nucleon, in the spirit of the European Muon Collaboration (EMC) effect. The key ingredient is the actual calculation of nuclear double-parton distributions that contain information about double-parton distributions and generalized-parton distributions of the nucleon, folded with nuclear light-front distributions. It allows to introduce a new quantity, which we call double-EMC ratio that appears to be much more sensitive than the standard EMC effect to both the nucleon partonic structure and to the nuclear binding. Hence, it could help solving long-standing questions about how nucleons change when they are bound in atomic nuclei.",
+    "status": "found"
+  },
+  "2609.16893": {
+    "arxiv_id": "2609.16893",
+    "title": "Mixed moment of $GL(2)$ and $GL(3)$ $L$-functions in the level aspect",
+    "authors": [
+      "Zhiwei Liu"
+    ],
+    "submission_date": "2026-09-15T09:25:38Z",
+    "latest_updated": "2026-09-15T09:25:38Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2609.16893v1"
+    ],
+    "abstract": "In this paper, we establish an asymptotic formula of mixed moments of $L(1/2,f)$ and $L(1/2,\\mathrm{sym}^2 f)$ for cusp forms $f$ of weight $k$, prime level $q$ and real primitive nebentypus $χ$ modulo $q$ in the level aspect with a power-saving error term. As an application, we deduce the simultaneous non-vanishing of $L(1/2, f)$ and $L(1/2,\\mathrm{sym}^2 f)$ for sufficiently large prime levels.",
+    "status": "found"
+  }
+}

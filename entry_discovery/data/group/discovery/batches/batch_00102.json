@@ -1,0 +1,420 @@
+{
+  "2511.13749": {
+    "arxiv_id": "2511.13749",
+    "title": "DeepDefense: Robust Learning via Layer-Wise Gradient-Feature Alignment",
+    "authors": [
+      "Ci Lin",
+      "Tet Yeap",
+      "Iluju Kiringa"
+    ],
+    "submission_date": "2025-11-13T21:54:41Z",
+    "latest_updated": "2026-08-02T22:24:03Z",
+    "revised_dates": null,
+    "venue": "2026 IEEE Canadian Conference on Electrical and Computer Engineering (CCECE)",
+    "latest_version": 2,
+    "versions": [
+      "2511.13749v1",
+      "2511.13749v2"
+    ],
+    "abstract": "Deep neural networks are known to be vulnerable to adversarial perturbations, which are small, carefully crafted inputs that lead to incorrect predictions. In this paper, we propose DeepDefense, a novel defense framework that applies Gradient-Feature Alignment (GFA) regularization across multiple layers to suppress adversarial vulnerability. By aligning input gradients with internal feature representations, DeepDefense promotes a smoother loss landscape in tangential space, also known as feature space, thereby reducing the model's sensitivity to adversarial noise. We provide insights into how adversarial perturbations can be decomposed into radial and tangential components and demonstrate that alignment suppresses loss variation in tangential space, where most attacks are effective. Empirically, our method achieves significant improvements in robustness against both gradient-based and optimization-based attacks. For example, on CIFAR-10, CNN models trained with DeepDefense outperform standard adversarial training by up to 15.2 percent under APGD attacks and 24.7 percent under FGSM attacks. Against optimization-based attacks such as DeepFool and EADEN, DeepDefense requires perturbation magnitudes that are 20 to 30 times larger to cause misclassification, indicating stronger decision boundaries and a flatter loss landscape. Our approach is architecture-agnostic, simple to implement, and highly effective, offering a promising direction for improving the adversarial robustness of deep learning models.",
+    "status": "found"
+  },
+  "2511.13750": {
+    "arxiv_id": "2511.13750",
+    "title": "SCALEX: Scalable Concept and Latent Exploration for Diffusion Models",
+    "authors": [
+      "E. Zhixuan Zeng",
+      "Yuhao Chen",
+      "Alexander Wong"
+    ],
+    "submission_date": "2025-11-13T22:02:44Z",
+    "latest_updated": "2025-11-20T19:31:02Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.13750v1",
+      "2511.13750v2"
+    ],
+    "abstract": "Image generation models frequently encode social biases, including stereotypes tied to gender, race, and profession. Existing methods for analyzing these biases in diffusion models either focus narrowly on predefined categories or depend on manual interpretation of latent directions. These constraints limit scalability and hinder the discovery of subtle or unanticipated patterns. We introduce SCALEX, a framework for scalable and automated exploration of diffusion model latent spaces. SCALEX extracts semantically meaningful directions from H-space using only natural language prompts, enabling zero-shot interpretation without retraining or labelling. This allows systematic comparison across arbitrary concepts and large-scale discovery of internal model associations. We show that SCALEX detects gender bias in profession prompts, ranks semantic alignment across identity descriptors, and reveals clustered conceptual structure without supervision. By linking prompts to latent directions directly, SCALEX makes bias analysis in diffusion models more scalable, interpretable, and extensible than prior approaches.",
+    "status": "found"
+  },
+  "2511.13751": {
+    "arxiv_id": "2511.13751",
+    "title": "Inside VOLT: Designing an Open-Source GPU Compiler",
+    "authors": [
+      "Shinnung Jeong",
+      "Chihyo Ahn",
+      "Huanzhi Pu",
+      "Jisheng Zhao",
+      "Hyesoon Kim",
+      "Blaise Tine"
+    ],
+    "submission_date": "2025-11-13T23:12:00Z",
+    "latest_updated": "2025-11-13T23:12:00Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.13751v1"
+    ],
+    "abstract": "Recent efforts in open-source GPU research are opening new avenues in a domain that has long been tightly coupled with a few commercial vendors. Emerging open GPU architectures define SIMT functionality through their own ISAs, but executing existing GPU programs and optimizing performance on these ISAs relies on a compiler framework that is technically complex and often undercounted in open hardware development costs. To address this challenge, the Vortex-Optimized Lightweight Toolchain (VOLT) has been proposed. This paper presents its design principles, overall structure, and the key compiler transformations required to support SIMT execution on Vortex. VOLT enables SIMT code generation and optimization across multiple levels of abstraction through a hierarchical design that accommodates diverse front-end languages and open GPU hardware. To ensure extensibility as GPU architectures evolve, VOLT centralizes fundamental SIMT-related analyses and optimizations in the middle-end, allowing them to be reused across front-ends and easily adapted to emerging open-GPU variants. Through two case studies on ISA extensions and host-runtime API, this paper also demonstrates how VOLT can support extensions",
+    "status": "found"
+  },
+  "2511.13752": {
+    "arxiv_id": "2511.13752",
+    "title": "Motor Imagery Classification Using Feature Fusion of Spatially Weighted Electroencephalography",
+    "authors": [
+      "Abdullah Al Shiam",
+      "Md. Khademul Islam Molla",
+      "Abu Saleh Musa Miah",
+      "Md. Abdus Samad Kamal"
+    ],
+    "submission_date": "2025-11-14T01:36:08Z",
+    "latest_updated": "2025-11-14T01:36:08Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.13752v1"
+    ],
+    "abstract": "A Brain Computer Interface (BCI) connects the human brain to the outside world, providing a direct communication channel. Electroencephalography (EEG) signals are commonly used in BCIs to reflect cognitive patterns related to motor function activities. However, due to the multichannel nature of EEG signals, explicit information processing is crucial to lessen computational complexity in BCI systems. This study proposes an innovative method based on brain region-specific channel selection and multi-domain feature fusion to improve classification accuracy. The novelty of the proposed approach lies in region-based channel selection, where EEG channels are grouped according to their functional relevance to distinct brain regions. By selecting channels based on specific regions involved in motor imagery (MI) tasks, this technique eliminates irrelevant channels, reducing data dimensionality and improving computational efficiency. This also ensures that the extracted features are more reflective of the brain actual activity related to motor tasks. Three distinct feature extraction methods Common Spatial Pattern (CSP), Fuzzy C-means clustering, and Tangent Space Mapping (TSM), are applied to each group of channels based on their brain region. Each method targets different characteristics of the EEG signal: CSP focuses on spatial patterns, Fuzzy C means identifies clusters within the data, and TSM captures non-linear patterns in the signal. The combined feature vector is used to classify motor imagery tasks (left hand, right hand, and right foot) using Support Vector Machine (SVM). The proposed method was validated on publicly available benchmark EEG datasets (IVA and I) from the BCI competition III and IV. The results show that the approach outperforms existing methods, achieving classification accuracies of 90.77% and 84.50% for datasets IVA and I, respectively.",
+    "status": "found"
+  },
+  "2511.13753": {
+    "arxiv_id": "2511.13753",
+    "title": "Robustness of LLM-enabled vehicle trajectory prediction under data security threats",
+    "authors": [
+      "Feilong Wang",
+      "Fuqiang Liu"
+    ],
+    "submission_date": "2025-11-14T03:26:51Z",
+    "latest_updated": "2025-11-14T03:26:51Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.13753v1"
+    ],
+    "abstract": "The integration of large language models (LLMs) into automated driving systems has opened new possibilities for reasoning and decision-making by transforming complex driving contexts into language-understandable representations. Recent studies demonstrate that fine-tuned LLMs can accurately predict vehicle trajectories and lane-change intentions by gathering and transforming data from surrounding vehicles. However, the robustness of such LLM-based prediction models for safety-critical driving systems remains unexplored, despite the increasing concerns about the trustworthiness of LLMs. This study addresses this gap by conducting a systematic vulnerability analysis of LLM-enabled vehicle trajectory prediction. We propose a one-feature differential evolution attack that perturbs a single kinematic feature of surrounding vehicles within the LLM's input prompts under a black-box setting. Experiments on the highD dataset reveal that even minor, physically plausible perturbations can significantly disrupt model outputs, underscoring the susceptibility of LLM-based predictors to adversarial manipulation. Further analyses reveal a trade-off between accuracy and robustness, examine the failure mechanism, and explore potential mitigation solutions. The findings provide the very first insights into adversarial vulnerabilities of LLM-driven automated vehicle models in the context of vehicular interactions and highlight the need for robustness-oriented design in future LLM-based intelligent transportation systems.",
+    "status": "found"
+  },
+  "2511.13754": {
+    "arxiv_id": "2511.13754",
+    "title": "The current state of open access",
+    "authors": [
+      "Shigeki Sugita"
+    ],
+    "submission_date": "2025-11-14T03:43:07Z",
+    "latest_updated": "2025-11-14T03:43:07Z",
+    "revised_dates": null,
+    "venue": "The Journal of Information Science and Technology Association, Vol.75, No. 9 (2025) (Special Issue: The Future of Open Access: Preparing for Japan's Immediate OA Mandate)",
+    "latest_version": 1,
+    "versions": [
+      "2511.13754v1"
+    ],
+    "abstract": "This article presents reflections from the perspective of a university librarian involved in the establishment and management of institutional repositories in Japan. It examines the historical evolution of scholarly communication, from the oral exchanges of ancient Greek philosophers, through the advent of printing and the rise of academic journals, to the contemporary digital era. The origins of the open access movement are emphasized as rooted in authors' desire to disseminate knowledge globally, rather than merely opening access for readers. The article critically discusses current practices in Japan, including institutional repositories, open access journals, and \"read-and-publish\" agreements, highlighting that many digital innovations still imitate the conventions of print-based scholarly communication. Furthermore, it explores the challenges and opportunities posed by electronic information dissemination, including the limitations of the Version of Record and the potential of diamond open access models. The article argues that genuine progress in scholarly communication requires rethinking publication practices, embracing the modifiability of digital content, and developing new communication models fully suited to the internet era. Ultimately, the goal is to realize a global, real-time, trustworthy scholarly communication system that transcends the historical constraints of print media.",
+    "status": "found"
+  },
+  "2511.13755": {
+    "arxiv_id": "2511.13755",
+    "title": "Adaptive Redundancy Regulation for Balanced Multimodal Information Refinement",
+    "authors": [
+      "Zhe Yang",
+      "Wenrui Li",
+      "Hongtao Chen",
+      "Penghong Wang",
+      "Ruiqin Xiong",
+      "Xiaopeng Fan"
+    ],
+    "submission_date": "2025-11-14T04:44:34Z",
+    "latest_updated": "2025-11-14T04:44:34Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.13755v1"
+    ],
+    "abstract": "Multimodal learning aims to improve performance by leveraging data from multiple sources. During joint multimodal training, due to modality bias, the advantaged modality often dominates backpropagation, leading to imbalanced optimization. Existing methods still face two problems: First, the long-term dominance of the dominant modality weakens representation-output coupling in the late stages of training, resulting in the accumulation of redundant information. Second, previous methods often directly and uniformly adjust the gradients of the advantaged modality, ignoring the semantics and directionality between modalities. To address these limitations, we propose Adaptive Redundancy Regulation for Balanced Multimodal Information Refinement (RedReg), which is inspired by information bottleneck principle. Specifically, we construct a redundancy phase monitor that uses a joint criterion of effective gain growth rate and redundancy to trigger intervention only when redundancy is high. Furthermore, we design a co-information gating mechanism to estimate the contribution of the current dominant modality based on cross-modal semantics. When the task primarily relies on a single modality, the suppression term is automatically disabled to preserve modality-specific information. Finally, we project the gradient of the dominant modality onto the orthogonal complement of the joint multimodal gradient subspace and suppress the gradient according to redundancy. Experiments show that our method demonstrates superiority among current major methods in most scenarios. Ablation experiments verify the effectiveness of our method. The code is available at https://github.com/xia-zhe/RedReg.git",
+    "status": "found"
+  },
+  "2511.13756": {
+    "arxiv_id": "2511.13756",
+    "title": "Multi-Horizon Time Series Forecasting of non-parametric CDFs with Deep Lattice Networks",
+    "authors": [
+      "Niklas Erdmann",
+      "Lars Bentsen",
+      "Roy Stenbro",
+      "Heine Nygard Riise",
+      "Narada Dilp Warakagoda",
+      "Paal E. Engelstad"
+    ],
+    "submission_date": "2025-11-14T06:06:34Z",
+    "latest_updated": "2025-11-14T06:06:34Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.13756v1"
+    ],
+    "abstract": "Probabilistic forecasting is not only a way to add more information to a prediction of the future, but it also builds on weaknesses in point prediction. Sudden changes in a time series can still be captured by a cumulative distribution function (CDF), while a point prediction is likely to miss it entirely. The modeling of CDFs within forecasts has historically been limited to parametric approaches, but due to recent advances, this no longer has to be the case. We aim to advance the fields of probabilistic forecasting and monotonic networks by connecting them and propose an approach that permits the forecasting of implicit, complete, and nonparametric CDFs. For this purpose, we propose an adaptation to deep lattice networks (DLN) for monotonically constrained simultaneous/implicit quantile regression in time series forecasting. Quantile regression usually produces quantile crossovers, which need to be prevented to achieve a legitimate CDF. By leveraging long short term memory units (LSTM) as the embedding layer, and spreading quantile inputs to all sub-lattices of a DLN with an extended output size, we can produce a multi-horizon forecast of an implicit CDF due to the monotonic constraintability of DLNs that prevent quantile crossovers. We compare and evaluate our approach's performance to relevant state of the art within the context of a highly relevant application of time series forecasting: Day-ahead, hourly forecasts of solar irradiance observations. Our experiments show that the adaptation of a DLN performs just as well or even better than an unconstrained approach. Further comparison of the adapted DLN against a scalable monotonic neural network shows that our approach performs better. With this adaptation of DLNs, we intend to create more interest and crossover investigations in techniques of monotonic neural networks and probabilistic forecasting.",
+    "status": "found"
+  },
+  "2511.13757": {
+    "arxiv_id": "2511.13757",
+    "title": "VitalBench: A Rigorous Multi-Center Benchmark for Long-Term Vital Sign Prediction in Intraoperative Care",
+    "authors": [
+      "Xiuding Cai",
+      "Xueyao Wang",
+      "Sen Wang",
+      "Yaoyao Zhu",
+      "Jiao Chen",
+      "Yu Yao"
+    ],
+    "submission_date": "2025-11-14T06:33:39Z",
+    "latest_updated": "2025-11-14T06:33:39Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.13757v1"
+    ],
+    "abstract": "Intraoperative monitoring and prediction of vital signs are critical for ensuring patient safety and improving surgical outcomes. Despite recent advances in deep learning models for medical time-series forecasting, several challenges persist, including the lack of standardized benchmarks, incomplete data, and limited cross-center validation. To address these challenges, we introduce VitalBench, a novel benchmark specifically designed for intraoperative vital sign prediction. VitalBench includes data from over 4,000 surgeries across two independent medical centers, offering three evaluation tracks: complete data, incomplete data, and cross-center generalization. This framework reflects the real-world complexities of clinical practice, minimizing reliance on extensive preprocessing and incorporating masked loss techniques for robust and unbiased model evaluation. By providing a standardized and unified platform for model development and comparison, VitalBench enables researchers to focus on architectural innovation while ensuring consistency in data handling. This work lays the foundation for advancing predictive models for intraoperative vital sign forecasting, ensuring that these models are not only accurate but also robust and adaptable across diverse clinical environments. Our code and data are available at https://github.com/XiudingCai/VitalBench.",
+    "status": "found"
+  },
+  "2511.13758": {
+    "arxiv_id": "2511.13758",
+    "title": "ChemFixer: Correcting Invalid Molecules to Unlock Previously Unseen Chemical Space",
+    "authors": [
+      "Jun-Hyoung Park",
+      "Ho-Jun Song",
+      "Seong-Whan Lee"
+    ],
+    "submission_date": "2025-11-14T07:25:03Z",
+    "latest_updated": "2025-11-14T07:25:03Z",
+    "revised_dates": null,
+    "venue": "ChemFixer: Correcting Invalid Molecules to Unlock Previously Unseen Chemical Space, IEEE Journal of Biomedical and Health Informatics, Early Access, 2025",
+    "latest_version": 1,
+    "versions": [
+      "2511.13758v1"
+    ],
+    "abstract": "Deep learning-based molecular generation models have shown great potential in efficiently exploring vast chemical spaces by generating potential drug candidates with desired properties. However, these models often produce chemically invalid molecules, which limits the usable scope of the learned chemical space and poses significant challenges for practical applications. To address this issue, we propose ChemFixer, a framework designed to correct invalid molecules into valid ones. ChemFixer is built on a transformer architecture, pre-trained using masking techniques, and fine-tuned on a large-scale dataset of valid/invalid molecular pairs that we constructed. Through comprehensive evaluations across diverse generative models, ChemFixer improved molecular validity while effectively preserving the chemical and biological distributional properties of the original outputs. This indicates that ChemFixer can recover molecules that could not be previously generated, thereby expanding the diversity of potential drug candidates. Furthermore, ChemFixer was effectively applied to a drug-target interaction (DTI) prediction task using limited data, improving the validity of generated ligands and discovering promising ligand-protein pairs. These results suggest that ChemFixer is not only effective in data-limited scenarios, but also extensible to a wide range of downstream tasks. Taken together, ChemFixer shows promise as a practical tool for various stages of deep learning-based drug discovery, enhancing molecular validity and expanding accessible chemical space.",
+    "status": "found"
+  },
+  "2511.13759": {
+    "arxiv_id": "2511.13759",
+    "title": "Multi-Agent VLMs Guided Self-Training with PNU Loss for Low-Resource Offensive Content Detection",
+    "authors": [
+      "Han Wang",
+      "Deyi Ji",
+      "Junyu Lu",
+      "Lanyun Zhu",
+      "Hailong Zhang",
+      "Haiyang Wu",
+      "Liqun Liu",
+      "Peng Shu",
+      "Roy Ka-Wei Lee"
+    ],
+    "submission_date": "2025-11-14T08:03:35Z",
+    "latest_updated": "2025-11-14T08:03:35Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.13759v1"
+    ],
+    "abstract": "Accurate detection of offensive content on social media demands high-quality labeled data; however, such data is often scarce due to the low prevalence of offensive instances and the high cost of manual annotation. To address this low-resource challenge, we propose a self-training framework that leverages abundant unlabeled data through collaborative pseudo-labeling. Starting with a lightweight classifier trained on limited labeled data, our method iteratively assigns pseudo-labels to unlabeled instances with the support of Multi-Agent Vision-Language Models (MA-VLMs). Un-labeled data on which the classifier and MA-VLMs agree are designated as the Agreed-Unknown set, while conflicting samples form the Disagreed-Unknown set. To enhance label reliability, MA-VLMs simulate dual perspectives, moderator and user, capturing both regulatory and subjective viewpoints. The classifier is optimized using a novel Positive-Negative-Unlabeled (PNU) loss, which jointly exploits labeled, Agreed-Unknown, and Disagreed-Unknown data while mitigating pseudo-label noise. Experiments on benchmark datasets demonstrate that our framework substantially outperforms baselines under limited supervision and approaches the performance of large-scale models",
+    "status": "found"
+  },
+  "2511.13760": {
+    "arxiv_id": "2511.13760",
+    "title": "MoETTA: Test-Time Adaptation Under Mixed Distribution Shifts with MoE-LayerNorm",
+    "authors": [
+      "Xiao Fan",
+      "Jingyan Jiang",
+      "Zhaoru Chen",
+      "Fanding Huang",
+      "Xiao Chen",
+      "Qinting Jiang",
+      "Bowen Zhang",
+      "Xing Tang",
+      "Zhi Wang"
+    ],
+    "submission_date": "2025-11-14T10:24:06Z",
+    "latest_updated": "2025-11-14T10:24:06Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.13760v1"
+    ],
+    "abstract": "Test-Time adaptation (TTA) has proven effective in mitigating performance drops under single-domain distribution shifts by updating model parameters during inference. However, real-world deployments often involve mixed distribution shifts, where test samples are affected by diverse and potentially conflicting domain factors, posing significant challenges even for SOTA TTA methods. A key limitation in existing approaches is their reliance on a unified adaptation path, which fails to account for the fact that optimal gradient directions can vary significantly across different domains. Moreover, current benchmarks focus only on synthetic or homogeneous shifts, failing to capture the complexity of real-world heterogeneous mixed distribution shifts. To address this, we propose MoETTA, a novel entropy-based TTA framework that integrates the Mixture-of-Experts (MoE) architecture. Rather than enforcing a single parameter update rule for all test samples, MoETTA introduces a set of structurally decoupled experts, enabling adaptation along diverse gradient directions. This design allows the model to better accommodate heterogeneous shifts through flexible and disentangled parameter updates. To simulate realistic deployment conditions, we introduce two new benchmarks: potpourri and potpourri+. While classical settings focus solely on synthetic corruptions, potpourri encompasses a broader range of domain shifts--including natural, artistic, and adversarial distortions--capturing more realistic deployment challenges. Additionally, potpourri+ further includes source-domain samples to evaluate robustness against catastrophic forgetting. Extensive experiments across three mixed distribution shifts settings show that MoETTA consistently outperforms strong baselines, establishing SOTA performance and highlighting the benefit of modeling multiple adaptation directions via expert-level diversity.",
+    "status": "found"
+  },
+  "2511.13761": {
+    "arxiv_id": "2511.13761",
+    "title": "What happens when nanochat meets DiLoCo?",
+    "authors": [
+      "Alexander Acker",
+      "Soeren Becker",
+      "Sasho Nedelkoski",
+      "Dominik Scheinert",
+      "Odej Kao",
+      "Philipp Wiesner"
+    ],
+    "submission_date": "2025-11-14T10:30:04Z",
+    "latest_updated": "2025-11-14T10:30:04Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.13761v1"
+    ],
+    "abstract": "Although LLM training is typically centralized with high-bandwidth interconnects and large compute budgets, emerging methods target communication-constrained training in distributed environments. The model trade-offs introduced by this shift remain underexplored, and our goal is to study them. We use the open-source nanochat project, a compact 8K-line full-stack ChatGPT-like implementation containing tokenization, pretraining, fine-tuning, and serving, as a controlled baseline. We implement the DiLoCo algorithm as a lightweight wrapper over nanochat's training loop, performing multiple local steps per worker before synchronization with an outer optimizer, effectively reducing communication by orders of magnitude. This inner-outer training is compared against a standard data-parallel (DDP) setup. Because nanochat is small and inspectable, it enables controlled pipeline adaptations and allows direct comparison with the conventional centralized baseline. DiLoCo achieves stable convergence and competitive loss in pretraining but yields worse MMLU, GSM8K, and HumanEval scores after mid-training and SFT. We discover that using DiLoCo-pretrained weights and running mid- and post-training with DDP fails to recover performance, revealing irreversible representation drift from asynchronous updates that impairs downstream alignment. We provide this implementation as an official fork of nanochat on GitHub.",
+    "status": "found"
+  },
+  "2511.13762": {
+    "arxiv_id": "2511.13762",
+    "title": "Gene Incremental Learning for Single-Cell Transcriptomics",
+    "authors": [
+      "Jiaxin Qi",
+      "Yan Cui",
+      "Jianqiang Huang",
+      "Gaogang Xie"
+    ],
+    "submission_date": "2025-11-14T10:54:03Z",
+    "latest_updated": "2025-11-14T10:54:03Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.13762v1"
+    ],
+    "abstract": "Classes, as fundamental elements of Computer Vision, have been extensively studied within incremental learning frameworks. In contrast, tokens, which play essential roles in many research fields, exhibit similar characteristics of growth, yet investigations into their incremental learning remain significantly scarce. This research gap primarily stems from the holistic nature of tokens in language, which imposes significant challenges on the design of incremental learning frameworks for them. To overcome this obstacle, in this work, we turn to a type of token, gene, for a large-scale biological dataset--single-cell transcriptomics--to formulate a pipeline for gene incremental learning and establish corresponding evaluations. We found that the forgetting problem also exists in gene incremental learning, thus we adapted existing class incremental learning methods to mitigate the forgetting of genes. Through extensive experiments, we demonstrated the soundness of our framework design and evaluations, as well as the effectiveness of our method adaptations. Finally, we provide a complete benchmark for gene incremental learning in single-cell transcriptomics.",
+    "status": "found"
+  },
+  "2511.13763": {
+    "arxiv_id": "2511.13763",
+    "title": "Knowledge vs. Experience: Asymptotic Limits of Impatience in Edge Tenants",
+    "authors": [
+      "Anthony Kiggundu",
+      "Bin Han",
+      "Hans D. Schotten"
+    ],
+    "submission_date": "2025-11-14T11:59:19Z",
+    "latest_updated": "2025-11-14T11:59:19Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.13763v1"
+    ],
+    "abstract": "We study how two information feeds, a closed-form Markov estimator of residual sojourn and an online trained actor-critic, affect reneging and jockeying in a dual M/M/1 system. Analytically, for unequal service rates and total-time patience, we show that total wait grows linearly so abandonment is inevitable and the probability of a successful jockey vanishes as the backlog approaches towards infinity. Furthermore, under a mild sub-linear error condition both information models yield the same asymptotic limits (robustness). We empirically validate these limits and quantify finite backlog differences. Our findings show that learned and analytic feeds produce different delays, reneging rates and transient jockeying behavior at practical sizes, but converge to the same asymptotic outcome implied by our theory. The results characterize when value-of-information matters (finite regimes) and when it does not (asymptotics), informing lightweight telemetry and decision-logic design for low-cost, jockeying-aware systems.",
+    "status": "found"
+  },
+  "2511.13764": {
+    "arxiv_id": "2511.13764",
+    "title": "Library Liberation: Competitive Performance Matmul Through Compiler-composed Nanokernels",
+    "authors": [
+      "Arun Thangamani",
+      "Md Asghar Ahmad Shahid",
+      "Adam Siemieniuk",
+      "Rolf Morel",
+      "Renato Golin",
+      "Alexander Heinecke"
+    ],
+    "submission_date": "2025-11-14T14:32:28Z",
+    "latest_updated": "2025-11-14T14:32:28Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.13764v1"
+    ],
+    "abstract": "The rapidly evolving landscape of AI and machine learning workloads has widened the gap between high-level domain operations and efficient hardware utilization. Achieving near-peak performance still demands deep hardware expertise-experts either handcraft target-specific kernels (e.g., DeepSeek) or rely on specialized libraries (e.g., CUTLASS)-both of which add complexity and limit scalability for most ML practitioners. This paper introduces a compilation scheme that automatically generates scalable, high-performance microkernels by leveraging the MLIR dialects to bridge domain-level operations and processor capabilities. Our approach removes dependence on low-level libraries by enabling the compiler to auto-generate near-optimal code directly. At its core is a mechanism for composing nanokernels from low-level IR constructs with near-optimal register utilization, forming efficient microkernels tailored to each target. We implement this technique in an MLIR-based compiler supporting both vector and tile based CPU instructions. Experiments show that the generated nanokernels are of production-quality, and competitive with state-of-the-art microkernel libraries.",
+    "status": "found"
+  },
+  "2511.13765": {
+    "arxiv_id": "2511.13765",
+    "title": "PROF: An LLM-based Reward Code Preference Optimization Framework for Offline Imitation Learning",
+    "authors": [
+      "Shengjie Sun",
+      "Jiafei Lyu",
+      "Runze Liu",
+      "Mengbei Yan",
+      "Bo Liu",
+      "Deheng Ye",
+      "Xiu Li"
+    ],
+    "submission_date": "2025-11-14T14:38:02Z",
+    "latest_updated": "2025-11-14T14:38:02Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.13765v1"
+    ],
+    "abstract": "Offline imitation learning (offline IL) enables training effective policies without requiring explicit reward annotations. Recent approaches attempt to estimate rewards for unlabeled datasets using a small set of expert demonstrations. However, these methods often assume that the similarity between a trajectory and an expert demonstration is positively correlated with the reward, which oversimplifies the underlying reward structure. We propose PROF, a novel framework that leverages large language models (LLMs) to generate and improve executable reward function codes from natural language descriptions and a single expert trajectory. We propose Reward Preference Ranking (RPR), a novel reward function quality assessment and ranking strategy without requiring environment interactions or RL training. RPR calculates the dominance scores of the reward functions, where higher scores indicate better alignment with expert preferences. By alternating between RPR and text-based gradient optimization, PROF fully automates the selection and refinement of optimal reward functions for downstream policy learning. Empirical results on D4RL demonstrate that PROF surpasses or matches recent strong baselines across numerous datasets and domains, highlighting the effectiveness of our approach.",
+    "status": "found"
+  },
+  "2511.13766": {
+    "arxiv_id": "2511.13766",
+    "title": "Credal Ensemble Distillation for Uncertainty Quantification",
+    "authors": [
+      "Kaizheng Wang",
+      "Fabio Cuzzolin",
+      "David Moens",
+      "Hans Hallez"
+    ],
+    "submission_date": "2025-11-14T14:53:42Z",
+    "latest_updated": "2025-11-14T14:53:42Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.13766v1"
+    ],
+    "abstract": "Deep ensembles (DE) have emerged as a powerful approach for quantifying predictive uncertainty and distinguishing its aleatoric and epistemic components, thereby enhancing model robustness and reliability. However, their high computational and memory costs during inference pose significant challenges for wide practical deployment. To overcome this issue, we propose credal ensemble distillation (CED), a novel framework that compresses a DE into a single model, CREDIT, for classification tasks. Instead of a single softmax probability distribution, CREDIT predicts class-wise probability intervals that define a credal set, a convex set of probability distributions, for uncertainty quantification. Empirical results on out-of-distribution detection benchmarks demonstrate that CED achieves superior or comparable uncertainty estimation compared to several existing baselines, while substantially reducing inference overhead compared to DE.",
+    "status": "found"
+  },
+  "2511.13767": {
+    "arxiv_id": "2511.13767",
+    "title": "Dynamic Temperature Scheduler for Knowledge Distillation",
+    "authors": [
+      "Sibgat Ul Islam",
+      "Jawad Ibn Ahad",
+      "Fuad Rahman",
+      "Mohammad Ruhul Amin",
+      "Nabeel Mohammed",
+      "Shafin Rahman"
+    ],
+    "submission_date": "2025-11-14T16:03:22Z",
+    "latest_updated": "2025-11-14T16:03:22Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.13767v1"
+    ],
+    "abstract": "Knowledge Distillation (KD) trains a smaller student model using a large, pre-trained teacher model, with temperature as a key hyperparameter controlling the softness of output probabilities. Traditional methods use a fixed temperature throughout training, which is suboptimal. Moreover, architectural differences between teacher and student often result in mismatched logit magnitudes. We demonstrate that students benefit from softer probabilities early in training but require sharper probabilities in later stages. We introduce Dynamic Temperature Scheduler (DTS), which adjusts temperature dynamically based on the cross-entropy loss gap between teacher and student. To our knowledge, this is the first temperature scheduling method that adapts based on the divergence between teacher and student distributions. Our method integrates seamlessly with existing KD frameworks. We validate DTS across multiple KD strategies on vision (CIFAR-100, Tiny-ImageNet) and NLP tasks (GLUE, Dolly, SelfIns, UnNI, S-NI), consistently outperforming static-temperature baselines. Code is available at https://github.com/Sibgat-Ul/DTS.",
+    "status": "found"
+  },
+  "2511.13768": {
+    "arxiv_id": "2511.13768",
+    "title": "Study of Quantum Confinement inside a Viral Capsid",
+    "authors": [
+      "Elso Drigo Filho",
+      "Regina Maria Ricotta"
+    ],
+    "submission_date": "2025-11-14T17:57:35Z",
+    "latest_updated": "2025-11-14T17:57:35Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.13768v1"
+    ],
+    "abstract": "Classical computational methods, such as molecular dynamics and Monte Carlo simulations, have long been the standard for modeling viral structure and function. However, these approaches may overlook crucial quantum phenomena that operate at the nanoscale, particularly within the highly-compacted genetic material of the viral capsid. The confined, high-density environment of genetic material within the capsid strongly suggests that quantum confinement effects play a significant, yet unexplored, role in viral processes. This study introduces a novel quantum approach using Supersymmetric Quantum Mechanics (SQM) to investigate the quantum confinement effects on viruses. In this paper, the viral capsid environment is modeled using the Pariacoto virus, a model system well-suited for this analysis due to its specific structural properties. The findings reveal that quantum effects are not merely marginal but essential for understanding key processes inside the capsid, providing new insights beyond the scope of classical physics.",
+    "status": "found"
+  }
+}

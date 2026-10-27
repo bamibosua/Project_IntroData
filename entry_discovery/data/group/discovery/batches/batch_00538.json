@@ -1,0 +1,573 @@
+{
+  "2608.09767": {
+    "arxiv_id": "2608.09767",
+    "title": "Structured Phonological Representations for Audio-Articulatory rtMRI Speech Classification",
+    "authors": [
+      "Abner Hernandez",
+      "Tomás Arias Vergara",
+      "Daiqi Liu",
+      "Andreas Maier",
+      "Paula Andrea Pérez-Toro"
+    ],
+    "submission_date": "2026-08-10T15:58:07Z",
+    "latest_updated": "2026-08-10T15:58:07Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09767v1"
+    ],
+    "abstract": "Real-time MRI makes it possible to observe vocal-tract articulation during speech, but mapping these articulatory patterns to phonetic and phonological categories remains challenging. We investigate whether PhonoQ, an audio-based model trained to recognize structured phonological features, provides useful information for audio--articulatory modeling. Specifically, we extract representations from PhonoQ's Conformer module, whose training is shaped by supervision for manner, place, voicing, and vowel features. Using articulatory contours with synchronized audio-derived features, we compare WavLM-large and HuBERT-large baselines with models that incorporate PhonoQ-derived representations. Across unseen-speech and unseen-subject settings, these features improve macro-F1 for phonological targets including manner, place, voicing, vowel height, and vowel backness, and also improve fine-grained 39-phoneme classification. In a contour-only inference setting, audio-derived teacher supervision yields modest but consistent gains over contour-only training, indicating that phonological information from synchronized audio can be partially transferred to articulatory models. Finally, posterior analyses show interpretable surface-sensitive patterns consistent with flapping-like /t/ realizations, /t/-/r/ retraction or affrication, and nasal place assimilation.",
+    "status": "found"
+  },
+  "2608.09768": {
+    "arxiv_id": "2608.09768",
+    "title": "ReliableNet: A Chance-Constrained Approach to Trustworthy Classification in Deep Learning",
+    "authors": [
+      "Ange-Clément Akazan",
+      "Ineza Remy Mugenga",
+      "Abebe Geletu",
+      "Jean Medard Ngnotchouye",
+      "Issa Karambal"
+    ],
+    "submission_date": "2026-08-10T15:58:19Z",
+    "latest_updated": "2026-08-10T15:58:19Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09768v1"
+    ],
+    "abstract": "A prediction that is both confident and wrong is a critical reliability failure because it can bypass abstention and human review precisely when the model is mistaken. Empirical risk minimization (ERM) controls average loss but not this failure directly, while calibration, uncertainty estimation, conformal risk control, and selective prediction methods target related reliability properties rather than bounding the joint failure event during training. We propose ReliableNet, which constrains the Joint Confident-Wrong (JCW) probability, the probability that a prediction is simultaneously confident and incorrect, below a user-specified risk budget $α\\in(0,1)$. We formulate this as a chance-constrained ERM problem, use a conservative smooth inner approximation whose population feasibility implies the original JCW constraint. Across four tabular and two image datasets, ReliableNet is the only method certified within the JCW budget for every dataset and seed in distribution, when compared against baselines spanning ERM, post-hoc calibration, conformal risk control, and selective prediction. Under demographic, ambiguity, spurious-correlation, novel-class, and covariate shifts, it achieves the lowest empirical JCW among the compared methods while remaining very competitive in accuracy, coverage, calibration, and selective prediction. Risk-coverage results further indicate that ReliableNet achieves better selective ranking than the benchmark methods on most datasets. Overall, ReliableNet provides a principled approach to trustworthy classification.",
+    "status": "found"
+  },
+  "2608.09769": {
+    "arxiv_id": "2608.09769",
+    "title": "Abstract Compilation as Abstraction of Operator Semantics, applied to Cost Analysis",
+    "authors": [
+      "Louis Rustenholz",
+      "Alessio Mansutti",
+      "Pedro López-García",
+      "Félix Ridoux",
+      "Niki Vazou",
+      "Manuel V. Hermenegildo"
+    ],
+    "submission_date": "2026-08-10T15:58:27Z",
+    "latest_updated": "2026-08-10T15:58:27Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09769v1"
+    ],
+    "abstract": "Least fixpoints are fundamental to program semantics, but they abstract away the recursive structure that generated them. We introduce operator semantics: a semantic intermediate representation between syntax and classical denotational semantics, which treats programs as operators. Abstract compilation is then understood as the act of abstracting such operators. We develop higher-order abstract domains for functions, operators, and programs themselves, in which composition is the key novel primitive, together with a categorical framework for constructing sound, precise, and modular abstract compilers. We instantiate this framework in the context of recurrence-based static cost analysis, developing solver-independent, optimal recurrence extraction techniques for recursive programs over algebraic data types, that support general function unknowns and catamorphic metrics, a broad class of size metrics beyond traditional approaches.",
+    "status": "found"
+  },
+  "2608.09770": {
+    "arxiv_id": "2608.09770",
+    "title": "Caged subsequences in permutations",
+    "authors": [
+      "Niranjan Balachandran",
+      "Omkar Ramdas",
+      "Umesh Shankar"
+    ],
+    "submission_date": "2026-08-10T15:58:32Z",
+    "latest_updated": "2026-08-29T17:04:07Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.09770v1",
+      "2608.09770v2"
+    ],
+    "abstract": "Given a sequence $\\mathfrak{a}:=(a_1,\\ldots,a_n)$ of reals, a subsequence $\\mathfrak{b}=(a_{i_1},\\ldots,a_{i_k})$ is said to be \"caged\" if the largest and smallest among the members of $\\mathfrak{b}$ are $a_{i_1}$ and $a_{i_k}$, though not necessarily in that order. In this paper, we consider the problem of maximal caged sequences in permutations $π\\in S_n$. We also consider the same problem for a random permutation, both when the permutation is chosen uniformly at random and also when it is picked uniformly at random from among the permutations of rectangular shape, via the RSK correspondence.",
+    "status": "found"
+  },
+  "2608.09771": {
+    "arxiv_id": "2608.09771",
+    "title": "SLIM-0.5B: Learning Action-Grounded Predictive Latents for Robot Manipulation",
+    "authors": [
+      "Jingkai Wang",
+      "Zihan Tang",
+      "Gu Zhang",
+      "Mingyu Cao",
+      "Jiapeng Chen",
+      "Jingjiao Zhao",
+      "Xiansheng Chen",
+      "Pengwei Wang",
+      "Lemao Liu",
+      "Dejing Dou"
+    ],
+    "submission_date": "2026-08-10T15:58:39Z",
+    "latest_updated": "2026-08-10T15:58:39Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09771v1"
+    ],
+    "abstract": "Vision-language-action policies rely on large multimodal backbones to jointly perform perception, language conditioning, and action generation at every control step. Much of this capacity supports open-domain semantics, whereas continuous robot manipulation primarily requires compact representations of observations, actions, and the transitions induced by actions. Pixel-level world models provide another route, but predicting visual details irrelevant to control can be unnecessarily expensive. We propose SLIM (Self-supervised Latent Interaction Model), a compact 0.5B-parameter latent interaction policy. SLIM learns action-grounded predictive latents that capture both action-conditioned future transitions and the actions that explain observed changes. SLIM learns these representations through self-supervised masked trajectory prediction, combining action reconstruction with future-latent prediction. A compact Mixture-of-Transformers (MoT) backbone models interactions between observation latents and action tokens. The resulting policy is trained with flow matching for language-conditioned action generation. Across simulation benchmarks and real-world evaluation, SLIM matches or exceeds representative large-scale VLA and world-action-model baselines with fewer parameters, no additional embodied pretraining, lower inference latency, and substantially lower GPU memory usage.",
+    "status": "found"
+  },
+  "2608.09772": {
+    "arxiv_id": "2608.09772",
+    "title": "PragMatch: Separating Pragmatic Incongruity from Cross-Modal Mismatch in Large Vision-Language Models",
+    "authors": [
+      "Zhanna Mukhametsharip",
+      "Vera Demberg",
+      "Varsha Suresh"
+    ],
+    "submission_date": "2026-08-10T16:00:04Z",
+    "latest_updated": "2026-08-10T16:00:04Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09772v1"
+    ],
+    "abstract": "Large Vision-Language Models (LVLMs) have demonstrated strong performance on multimodal benchmarks, yet it remains unclear whether they genuinely reason about relationships between images and text or rely on superficial correlations, known as shortcut learning. This question is particularly important for multimodal sarcasm detection, where successful prediction depends on recognizing pragmatic incongruity rather than treating sarcasm as simple image-text mismatch. We introduce PragMatch, a controlled benchmark of 3,000 image-text pairs derived from MMSD2.0, including original sarcastic examples and constructed literal and hard-negative pairs. We identify influential shortcut cues through systematic masking and evaluate their impact through targeted injection experiments. Our results show that LVLM predictions are sensitive to lexical, OCR-derived and stylistic cues, with injected surface signals causing substantial changes in model predictions despite unchanged underlying image-text relationships. Our findings reveal limitations in current LVLMs while PragMatch provides a systematic testbed for evaluating multimodal pragmatic reasoning beyond surface-level image-text alignment.",
+    "status": "found"
+  },
+  "2608.09773": {
+    "arxiv_id": "2608.09773",
+    "title": "Graph Analysis of Neuronal-Culture Connectivity Derived from a Reservoir-Computing Model",
+    "authors": [
+      "Ilya Auslender",
+      "Giorgio Letti",
+      "Yasaman Heydari",
+      "Lorenzo Pavesi"
+    ],
+    "submission_date": "2026-08-10T16:01:43Z",
+    "latest_updated": "2026-08-10T16:01:43Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09773v1"
+    ],
+    "abstract": "Graph-theoretical analysis offers a principled framework for quantifying emergent dynamics in neuronal cultures. Here, we present an analytical pipeline for inferring network-level properties of in vitro cortical cultures from multichannel electrophysiological recordings. The approach builds on a recently proposed Reservoir Computing (RC) framework (Auslender et al., 2025), which enables direct extraction of an Intrinsic Connectivity Map (ICM) from neural activity. We interpret the ICM as an effective adjacency matrix and apply graph-theoretic centrality measures to quantify node- and edge-level contributions to the culture's collective dynamics. We systematically evaluate both local and global graph metrics and examine their relationships with experimentally measured activity features, including firing rates and network-level descriptors. To validate the inference procedure, we also simulate the experimental environment, enabling controlled benchmarking of the RC-derived connectivity against a known ground-truth adjacency matrix and assessment of model performance as a function of graph structure. Our results demonstrate statistically robust associations, of varying strength, between graph-theoretic measures and experimentally observed activity patterns. These findings additionally support the validity of the RC-based connectivity inference and establish a scalable, data-driven framework for functional network characterization in neuronal culture systems.",
+    "status": "found"
+  },
+  "2608.09774": {
+    "arxiv_id": "2608.09774",
+    "title": "C$^2$A: Coupling Spatial Evidence with Clinical Priors via Co-occurrence Aware Class Attention for Multi-Label Chest X-Ray Classification",
+    "authors": [
+      "Akash Gogineni",
+      "Nagur Shareef Shaik",
+      "Aasrith Mandava",
+      "Adnan Masood",
+      "Dong Hye Ye"
+    ],
+    "submission_date": "2026-08-10T16:02:05Z",
+    "latest_updated": "2026-08-10T16:02:05Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09774v1"
+    ],
+    "abstract": "Thoracic pathologies rarely occur in isolation, yet standard multi-label classifiers rely on shared global descriptors, discarding \\emph{where} findings lie and \\emph{how} they co-occur. We propose \\textbf{C$\\mathbf{^2}$A} (Co-occurrence Aware Class Attention), a classification head that explicitly couples spatial evidence with clinical priors. First, C$^2$A casts pooling as an expectation over learned per-class spatial attention maps, yielding localized descriptors for each disease. Second, it couples these descriptors via a learnable graph warm-started from empirical label co-occurrence. A single residual message-passing step shares evidence among related findings, proving to be a bounded perturbation of the identity where co-occurrence enters each logit through an explicit bilinear interaction. On CheXpert, C$^2$A achieves a superior $0.895$ macro-mean AUROC, outperforming advanced context-gating baselines. Crucially, gains concentrate on highly co-occurrent classes with ambiguous spatial evidence (rescuing Atelectasis by $+1.5$ over GCG), demonstrating the prior's regularizing effect with a negligible overhead of one linear projection and a $C\\!\\times\\!C$ edge matrix.",
+    "status": "found"
+  },
+  "2608.09775": {
+    "arxiv_id": "2608.09775",
+    "title": "AirFlow: Context Preserving and Multi-Rate State Modeling for Air Quality Forecasting",
+    "authors": [
+      "Fan Yang",
+      "Nan Chen",
+      "Yijie Dong",
+      "Yuchen Zhang",
+      "Wei Zhang"
+    ],
+    "submission_date": "2026-08-10T16:02:26Z",
+    "latest_updated": "2026-08-10T16:02:26Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09775v1"
+    ],
+    "abstract": "Accurate air quality forecasting is essential for public health and urban environmental management, but remains challenging because pollutant channels differ in periodicity and distribution drift, while their concentration trajectories contain both multi-scale dependencies and rapid changes. Recent methods have improved spatial dependency learning and meteorological covariate modeling. However, pollutant channels are still passed through the same normalization rule and temporal backbone, using a shared latent representation for channel-specific distributions and changes at different rates. To address this limitation, we propose AirFlow, a pollutant-aware dual-stream framework that operates on station multivariate observations without additional graph propagation or predefined signal decomposition. Specifically, AirFlow designs two novel blocks: (1) a statistic-guided normalization routing mechanism that selects a normalization path for each pollutant according to its 24-hour autocorrelation and distribution drift; and (2) a hierarchical dual-stream state model that combines multi-scale state space propagation with learnable response coefficients, where gated bidirectional cross-attention exchanges information and adaptively fuses the resulting representations. Experiments on real-world data from multiple cities show that AirFlow achieves the best performance in 34 of 36 metrics comparisons, with reductions of up to 11.11% root mean square error over the state-of-the-art baseline. AirFlow also requires only 0.0483M parameters and 0.0215G FLOPs, achieving high forecasting accuracy with low computational overhead.",
+    "status": "found"
+  },
+  "2608.09776": {
+    "arxiv_id": "2608.09776",
+    "title": "Schwinger-Keldysh effective field theory of type-B Goldstone: near-diagonal geometry and Berry term",
+    "authors": [
+      "Pei Zheng",
+      "Mei Huang"
+    ],
+    "submission_date": "2026-08-10T16:04:58Z",
+    "latest_updated": "2026-09-30T15:13:56Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2608.09776v1",
+      "2608.09776v2",
+      "2608.09776v3"
+    ],
+    "abstract": "In this work, we formulate a finite temperature Schwinger-Keldysh effective field theory for type-B Goldstone modes based on geometric objects globally defined on the coset manifold. In particular, after taking the classical limit, we organize the required two time contour structure by a near-diagonal geometry in which the $r$-type field is interpreted as the physical Goldstone configuration and the $a$-type field is identified as corresponding tangent displacement. Within this geometric viewpoint, the Berry term essential for type-B Goldstones is obtained directly through the transgression of the Berry curvature. Moreover, we show that this exact Berry transgression is compatible with dynamical KMS condition. In order to construct the conservative, dissipative and noise sectors, we classify possible tensors globally defined on the coset manifold. Based on this framework, we discuss in detail two concrete model examples. The dispersion relations of the Goldstone modes and the associated two-point correlation functions are calculated in the presence of dissipation.",
+    "status": "found"
+  },
+  "2608.09777": {
+    "arxiv_id": "2608.09777",
+    "title": "Pretriangulated categories failing (TR4)",
+    "authors": [
+      "Xiao-Wu Chen",
+      "Sergei O. Ivanov",
+      "Jian Liu",
+      "Xue-Song Lu",
+      "Vladimir Sosnilo",
+      "Chencheng Zhang"
+    ],
+    "submission_date": "2026-08-10T16:05:07Z",
+    "latest_updated": "2026-10-05T14:23:03Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.09777v1",
+      "2608.09777v2"
+    ],
+    "abstract": "We introduce gemstones in a pretriangulated category, which are used to perturb pretriangulated structures. For a triangulated category $\\mathcal T$ whose stable category of coherent functors admits a gemstone, we construct pretriangulated structures on $\\mathcal T$ which fail the octahedral axiom (TR4). This confirms a long-standing conjecture on triangulated categories.",
+    "status": "found"
+  },
+  "2608.09778": {
+    "arxiv_id": "2608.09778",
+    "title": "RoboSeg: Online Part-Level Semantic Reconstruction for Robotic Manipulation via a Single Eye-in-Hand Camera",
+    "authors": [
+      "Zhaochen Lan",
+      "Mengxiang Lin"
+    ],
+    "submission_date": "2026-08-10T16:05:38Z",
+    "latest_updated": "2026-08-10T16:05:38Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09778v1"
+    ],
+    "abstract": "Robotic manipulation requires perception systemsthat identify actionable parts such as handles, rims, triggers,and tool tips, not merely object categories or point clouds. This paper presents RoboSeg, a part-level semantic reconstructionsystem that links vision-language model (VLM) functional-partdiscovery, asynchronous online RGB-D semantic reconstruc-tion, and task-oriented grasp generation without requiring CAD models or pre-scanned meshes. RoboSeg queries a VLM onthe initial RGB observation to obtain compact functional part prompts, then scans with two asynchronous streams: a high-frequency geometry thread for RGB-D odometry and truncated signed distance function (TSDF) fusion, and a keyframe-triggered semantic thread for SAM3 part masks. Projectedmasks are fused by voxel-level temporal voting into a persistentpart-labeled point cloud; RoboSeg uses this map to assign AnyGrasp 6-DoF candidates to semantic parts and select grasps consistent with the task-relevant part label. RoboSeg reaches 83.4% mean part intersection-over-union (mIoU) over manually labeled objects; in a 24-trial physical pilot across fourobjects and eight tasks, the selected grasp contacts the requestedpart in all trials and achieves 21/24 combined task successes.These results characterize RoboSeg as a semantic indexing layerfor task-conditioned manipulation, with AnyGrasp retained asthe proposal generator.",
+    "status": "found"
+  },
+  "2608.09779": {
+    "arxiv_id": "2608.09779",
+    "title": "KGCaRe: Explainable Complex Conditional Question Answering using Automatic Knowledge Graph Construction and Context Retrieval with LLMs",
+    "authors": [
+      "Ghanshyam Verma",
+      "Simanta Sarkar",
+      "Devishree Pillai",
+      "Hotaka Shiokawa",
+      "Yourong Xu",
+      "Fiona Veazey",
+      "Peter Hubbert",
+      "Hui Su",
+      "Paul Buitelaar"
+    ],
+    "submission_date": "2026-08-10T16:05:58Z",
+    "latest_updated": "2026-08-10T16:05:58Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09779v1"
+    ],
+    "abstract": "Answering complex conditional questions using Large Language Models (LLMs) and Retrieval-Augmented Generation (RAG) remains a challenge, particularly in domain-specific contexts where general-purpose LLMs and RAG tend to underperform. We hypothesize that augmenting RAG with unstructured and structured knowledge, extracted from both documents and knowledge graphs (KGs), can improve reasoning and answer accuracy for such tasks. To test this, we propose KGCaRe, a hybrid approach that combines neural retrieval with symbolic reasoning over LLM-generated KGs. KGCaRe constructs a KG from documents using a multi-prompt extraction strategy and stores it in a graph database. Simultaneously, the documents are embedded into a vector store to enable neural retrieval. KGCaRe performs innovative iterative graph traversal guided by the LLM to extract relevant triples, prune irrelevant information, and uses additional clue entities to traverse the graph again if the initial traversal does not provide satisfactory context to generate the answer. The relevant triples extracted from the KG in path form, along with semantically retrieved text passages, are then fed into custom KGCaRe prompts to generate answers to the complex conditional questions with explanations. We evaluate KGCaRe on two complex conditional QA datasets. Our results on these datasets show that KGCaRe consistently outperforms existing baselines, including Vanilla LLM, Code Prompt, Text Prompt, Think-on-Graph, Vanilla RAG, and HybridContextQA, across multiple LLMs such as Mistral, Mixtral, GPT-3.5, and GPT-4o. We publicly release the software pipeline that we developed to implement the proposed KGCaRe approach.",
+    "status": "found"
+  },
+  "2608.09780": {
+    "arxiv_id": "2608.09780",
+    "title": "Algorithmic Asymmetry in Zero-Sum Games: Unilateral Recovery of Fast Convergence Against a Slow Opponent",
+    "authors": [
+      "James P. Bailey",
+      "Soham Das"
+    ],
+    "submission_date": "2026-08-10T16:06:08Z",
+    "latest_updated": "2026-08-10T16:06:08Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09780v1"
+    ],
+    "abstract": "Learning dynamics in zero-sum games are typically analyzed under algorithmic symmetry: both agents use the same update rule, or methods from a common algorithmic family. This is at odds with the nature of zero-sum games; competing agents need not coordinate on algorithm selection. This paper studies algorithmic asymmetry in learning dynamics in zero-sum games. In particular, we ask whether fast convergence can be recovered when one agent is fixed to vanilla gradient descent, whose standard regret-based analysis certifies, at best, $O(1/\\sqrt{T})$ ergodic convergence. We show that the slow rate is not intrinsic. When one agent uses gradient descent, the opposing agent can use a modified optimistic update, which we call Alternating Optimistic Gradient Descent (AOGD), to make the joint dynamics simulate Alternating Gradient Descent on the even iterates. As a result, the time-average of the asymmetric GD vs.\\ AOGD dynamics converges to Nash equilibria at rate $O(1/T)$. Our results show that fast convergence need not require coordinated algorithm selection: one agent can compensate for a slower opponent. More broadly, the paper highlights algorithmic asymmetry as a useful lens for understanding cross-class interactions in multiagent optimization.",
+    "status": "found"
+  },
+  "2608.09781": {
+    "arxiv_id": "2608.09781",
+    "title": "Pulsar Timing Array Sensitivity to Anisotropy: Empirical Sensitivity Curves, Scaling Relations, and the Multi-Resolution Pixel Basis",
+    "authors": [
+      "Taha T. Moursy",
+      "Nihan S. Pol",
+      "Gabriella Agazie",
+      "Nikita Agarwal",
+      "Akash Anumarlapudi",
+      "Anne M. Archibald",
+      "Zaven Arzoumanian",
+      "Anjana Ashok",
+      "Jeremy G. Baier",
+      "Paul T. Baker",
+      "Bence Bécsy",
+      "Laura Blecha",
+      "Adam Brazier",
+      "Paul R. Brook",
+      "Sarah Burke-Spolaor",
+      "Rand Burnette",
+      "Robin Case",
+      "J. Andrew Casey-Clyde",
+      "Maria Charisi",
+      "Shami Chatterjee",
+      "Tyler Cohen",
+      "James M. Cordes",
+      "Neil J. Cornish",
+      "Fronefield Crawford",
+      "H. Thankful Cromartie",
+      "Kathryn Crowter",
+      "Megan E. DeCesar",
+      "Paul B. Demorest",
+      "Heling Deng",
+      "Lankeswar Dey",
+      "Timothy Dolch",
+      "Graham M. Doskoch",
+      "Elizabeth C. Ferrara",
+      "William Fiore",
+      "Emmanuel Fonseca",
+      "Gabriel E. Freedman",
+      "Emiko C. Gardiner",
+      "Nate Garver-Daniels",
+      "Peter A. Gentile",
+      "Kyle A. Gersbach",
+      "Joseph Glaser",
+      "Deborah C. Good",
+      "Kayhan Gültekin",
+      "Aiden Gundersen",
+      "C. J. Harris",
+      "Jeffrey S. Hazboun",
+      "Ross J. Jennings",
+      "Aaron D. Johnson",
+      "Megan L. Jones",
+      "David L. Kaplan",
+      "Anala K. Sreekumar",
+      "Luke Zoltan Kelley",
+      "Matthew Kerr",
+      "Joey S. Key",
+      "Nima Laal",
+      "Michael T. Lam",
+      "William G. Lamb",
+      "Bjorn Larsen",
+      "T. Joseph W. Lazio",
+      "Natalia Lewandowska",
+      "Tingting Liu",
+      "Duncan R. Lorimer",
+      "Jing Luo",
+      "Ryan S. Lynch",
+      "Chung-Pei Ma",
+      "Dustin R. Madison",
+      "Ashley Martsen",
+      "Cayenne Matt",
+      "Alexander McEwen",
+      "James W. McKee",
+      "Maura A. McLaughlin",
+      "Natasha McMann",
+      "Bradley W. Meyers",
+      "Patrick M. Meyers",
+      "Matthew T. Miles",
+      "Chiara M. F. Mingarelli",
+      "Andrea Mitridate",
+      "Cherry Ng",
+      "David J. Nice",
+      "Shania A. Nichols",
+      "Stella Koch Ocker",
+      "Daniel J. Oliver",
+      "Ken D. Olum",
+      "Timothy T. Pennucci",
+      "Benetge B. P. Perera",
+      "Polina Petrov",
+      "Henri A. Radovan",
+      "Scott M. Ransom",
+      "Paul S. Ray",
+      "Joseph D. Romano",
+      "Jessie C. Runnoe",
+      "Alexander Saffer",
+      "Shashwat C. Sardesai",
+      "Ann Schmiedekamp",
+      "Carl Schmiedekamp",
+      "Kai Schmitz",
+      "Levi Schult",
+      "Brent J. Shapiro-Albert",
+      "Xavier Siemens",
+      "Joseph Simon",
+      "Sophia V. Sosa Fiscella",
+      "Ingrid H. Stairs",
+      "Daniel R. Stinebring",
+      "Kevin Stovall",
+      "Abhimanyu Susobhanan",
+      "Joseph K. Swiggum",
+      "Jacob Taylor",
+      "Stephen R. Taylor",
+      "Mercedes S. Thompson",
+      "Jacob E. Turner",
+      "Michele Vallisneri",
+      "Rutger van Haasteren",
+      "Sarah J. Vigeland",
+      "Haley M. Wahl",
+      "Kevin P. Wilson",
+      "Caitlin A. Witt",
+      "David Wright",
+      "Olivia Young"
+    ],
+    "submission_date": "2026-08-10T16:06:09Z",
+    "latest_updated": "2026-08-10T16:06:09Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09781v1"
+    ],
+    "abstract": "We quantify pulsar timing array (PTA) sensitivity to anisotropy in the gravitational wave background using the cross-correlation based Fisher information matrix in the pixel and spherical harmonic bases. We use a set of simulations to empirically determine scaling relations of a PTA's sensitivity to anisotropy with the number of pulsars $N_\\mathrm{psr}$ in the array, the error $δt$ on the times of arrival, the frequency $f_\\mathrm{GW}$ of the gravitational waves, and the angular scale $ΔΩ$ of the anisotropy. The sensitivity scales approximately as $N_\\mathrm{psr}^{0.8}$, $δt^{-0.08}$, and $ΔΩ^{1.6}-ΔΩ^{2.1}$ (depending on the ranges of $\\ell$ and $m$ under consideration). In addition, we use realistic simulations to project the NANOGrav PTA sensitivity to a 30-year baseline and quantify the growth in sensitivity at several timeslices. Except at the lowest frequencies, we find negligible effect on sensitivity through increasing the observation duration only. Finally, we introduce a multi-resolution pixel basis motivated by the large dependence of the sensitivity on sky location, and demonstrate the operation of the basis through a set of injections and recoveries.",
+    "status": "found"
+  },
+  "2608.09782": {
+    "arxiv_id": "2608.09782",
+    "title": "NTIRE 2026 Low-light Enhancement: Twilight Cowboy Challenge",
+    "authors": [
+      "Aleksei Khalin",
+      "Egor Ershov",
+      "Artyom Panshin",
+      "Sergey Korchagin",
+      "Georgiy Lobarev",
+      "Arseniy Terekhin",
+      "Sofiia Dorogova",
+      "Amir Shamsutdinov",
+      "Yasin Mamedov",
+      "Bakhtiyar Khalfin",
+      "Bogdan Sheludko",
+      "Emil Zilyaev",
+      "Nikola Banić",
+      "Georgy Perevozchikov",
+      "Radu Timofte",
+      "Shuai Liu",
+      "Yuqian Zhang",
+      "Lize Zhang",
+      "Yibin Huang",
+      "Chaoyu Feng",
+      "Luyang Wang",
+      "Xiaotao Wang",
+      "Dongqing Zou",
+      "Lei Lei",
+      "Tianli Liu",
+      "Dejun Hao",
+      "Chunxia Lei",
+      "Furkan Kınlı",
+      "Andrei Mironov",
+      "Alexander Dikov",
+      "Aleksei Sadokhin",
+      "Vladimir Zvorygin",
+      "Constantine Habarlak",
+      "Shuwei Yue",
+      "Egor Mirantsov",
+      "Daniil Okunev",
+      "Dmitry Arkhipov",
+      "Aleksandr Yugay",
+      "Anas M. Ali",
+      "Bilel Benjdira",
+      "Wadii Boulila",
+      "Wei Zhou",
+      "Linfeng Li",
+      "Lingdong Kong",
+      "Jiachen Tu",
+      "Guoyi Xu",
+      "Yaoxin Jiang",
+      "Jiajia Liu",
+      "Yaokun Shi"
+    ],
+    "submission_date": "2026-08-10T16:06:48Z",
+    "latest_updated": "2026-08-10T16:06:48Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09782v1"
+    ],
+    "abstract": "This paper presents a review of the NTIRE 2026 Low-light Enhancement: Twilight Cowboy Challenge. The objective of the competition was to merge a set of misaligned smartphone images in the raw domain, captured in low-light conditions, into a single, clean image. Introduced setup simultaneously addresses two problems of low-light photography: visual degradations such as high noise and mixed scene illuminants, and the geometric inconsistencies caused by hand movement during multi-frame capture. To advance research in low-light and nighttime computational photography, a challenging dataset was collected comprising 585 real-world scenes, spanning indoor low-light and outdoor nighttime conditions, for training and benchmarking participant solutions. The competition employed a three-stage evaluation protocol: automatic validation via the CodaBench platform in stages one and two, followed by blind assessment on a private test set for the final ranking. Ten teams surpassed the established baseline, achieving improvements of up to +6.49 dB in PSNR and +0.0101 in SSIM, thereby establishing new state-of-the-art performance for burst-based low-light image enhancement. These results demonstrate significant progress in handling real-world noise, motion, and illumination variability in the low-light setting. Comprehensive results, leaderboards, and additional information are publicly available at https://nightimaging.org.",
+    "status": "found"
+  },
+  "2608.09783": {
+    "arxiv_id": "2608.09783",
+    "title": "Adiabatic Perturbations in GW170817-Compatible Einstein-Gauss-Bonnet Inflation",
+    "authors": [
+      "S. D. Odintsov",
+      "V. K. Oikonomou"
+    ],
+    "submission_date": "2026-08-10T16:07:20Z",
+    "latest_updated": "2026-08-10T16:07:20Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09783v1"
+    ],
+    "abstract": "We study the adiabaticity of the cosmological perturbations in the context of inflationary Einstein-Gauss-Bonnet theories. We focus on viable inflationary Einstein-Gauss-Bonnet theories which are compatible with the current Cosmic Microwave Background radiation experiments and also are compatible with the GW170817 observations. We derive the effects of the adiabaticity requirement on the Einstein-Gauss-Bonnet physical parameters and we show that the sound speed of the scalar perturbations and the propagation speed of the tensor perturbations are constrained. We consider two classes of inflationary viable and GW170817-compatible theories, and in the first class the adiabaticity is not violated during inflation, while in the second class the adiabaticity is violated only at the end of inflation. We discuss the effects of the adiabaticity violation in the second class of models. From our analysis, it seems that only one class of viable EGB inflationary theories, which is also compatible with the GW170817 event, is free from adiabaticity pathologies.",
+    "status": "found"
+  },
+  "2608.09784": {
+    "arxiv_id": "2608.09784",
+    "title": "EEG-Based Characterization of Samatha and Vipassana Meditation States",
+    "authors": [
+      "M. A. B. C. A. Bandaranayake",
+      "K. P. U. Chandrathilake",
+      "J. L. S. Jayasekara",
+      "S. T. Piyasena",
+      "A. T. L. K. Samrasinghe",
+      "Wageesha N. Manamperi"
+    ],
+    "submission_date": "2026-08-10T16:07:24Z",
+    "latest_updated": "2026-08-10T16:07:24Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09784v1"
+    ],
+    "abstract": "Meditation has been associated with a range of cognitive and physiological benefits. However, the underlying neural mechanisms of different meditation practices are not yet fully understood. This study investigates whether electroencephalogram (EEG) signals can be used to characterize and distinguish two commonly practiced meditation techniques, namely Samatha and Vipassana, which involve distinct cognitive processes, with Samatha emphasizing sustained concentration and Vipassana emphasizing mindful observation and insight. By extracting features such as band power, coherence and wavelet entropy from EEG signals recorded during pre-meditation resting, Samatha, and Vipassana states, we provide an assessment of how spectral power, signal complexity, and functional connectivity differentiate these practices. Preliminary results from $12$ experienced meditators indicate condition-dependent EEG differences, with the most pronounced effects observed in the delta frequency band. These results demonstrate the utility of EEG-based metrics for the objective characterization of meditation and advance our comprehension of the neural processes underlying different contemplative practices.",
+    "status": "found"
+  },
+  "2608.09785": {
+    "arxiv_id": "2608.09785",
+    "title": "Superconductivity, pseudogap and marginal Fermi liquid in a relative-momentum-local theory",
+    "authors": [
+      "Jian-Jian Miao"
+    ],
+    "submission_date": "2026-08-10T16:07:34Z",
+    "latest_updated": "2026-08-10T16:07:34Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09785v1"
+    ],
+    "abstract": "Cuprate superconductors host \\(d\\)-wave superconductivity (SC), a pseudogap (PG) with Fermi arcs and a strange metal (SM) with incoherent excitations and temperature-linear resistivity. These regimes emerge from the same doped Mott system but are usually described separately. Here a relative-momentum-local (RML) theory is constructed, with the exact spin-singlet Cooper representation of antiferromagnetic superexchange in the \\(t\\)-\\(J\\) model serving as a common thread. Pair correlations organize the low-energy behaviour of this Cooper channel into phase-coherent static SC, phase-incoherent quasi-static PG and phase-incoherent dynamic SM. A static RML prescription yields an exactly solvable PG Hamiltonian with nodal electron poles, antinodal gaps, resolution-broadened Fermi arcs and gapless charge-\\(2e\\) Cooper surfaces. A Cooper-surface Lifshitz transition generates logarithmic enhancements in the specific-heat coefficient and charge response without a spin singularity. The particle-particle continuum at finite centre-of-mass momentum produces Ohmic damping, while a dynamic RML prescription yields a one-loop self-energy with marginal-Fermi-liquid scaling. Spectral-weight transfer in the physical pair spectrum diagnoses the PG--SM crossover, whereas nonzero phase stiffness and global phase coherence identify SC. The RML theory relates single-particle, pair-sensitive and thermodynamic probes to three infrared organizations of one Cooper channel. A decisive experimental signature would be zero-energy Cooper-surface ridges in two-electron angle-resolved photoemission spectroscopy (2e-ARPES).",
+    "status": "found"
+  },
+  "2608.09786": {
+    "arxiv_id": "2608.09786",
+    "title": "ADPSO-ERLS: A Hybrid Discrete PSO with Enhanced Local Search for the Traveling Salesman Problem",
+    "authors": [
+      "Anier Soria-Lorente",
+      "Jean-Marie Vilaire",
+      "Junior Michel",
+      "Lázaro Alvarado-Barrios"
+    ],
+    "submission_date": "2026-08-10T16:08:08Z",
+    "latest_updated": "2026-08-10T16:08:08Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.09786v1"
+    ],
+    "abstract": "The Traveling Salesman Problem is a canonical setting for studying how a population-based method should allocate a fixed search budget between exploration and progressively stronger local intensification. We propose ADPSO-ERLS, a discrete swarm algorithm that treats this allocation as an explicit, tunable design variable. It couples memory-guided swap mutation, heterogeneous initialization, selective candidate-restricted 2-opt during evolution, and an incumbent-only final refinement combining candidate-restricted and optional full 2-opt with double-bridge perturbations. The method is PSO-inspired, using personal and global memories yet dispensing with velocity, inertia, and acceleration coefficients. All six algorithms are implemented in Rust, run on identical hardware, and stopped at a strict, recorded limit of 100,000 candidate-solution assessments, so that programming language, hardware, and evaluation budget are held common across methods; wall-clock time is reported separately because equal assessment counts need not correspond to equal arithmetic work. Over 50 runs on five symmetric TSPLIB instances under the integer \\texttt{EUC\\_2D} convention, ADPSO-ERLS attains the lowest best and mean cost on every instance, with best-tour Gap of $1.93$--$4.17\\%$ and relative error of $3.04$--$5.50\\%$. It ranks first under the Friedman test, and all twenty-five multiplicity-controlled Wilcoxon comparisons favor it with large, near-complete distributional separation. A paired ablation with common seeds links initialization, in-run local search, and final refinement to quality gains, while candidate restriction chiefly cuts runtime, by up to a factor of roughly $38$. Further experiments up to $16{,}862$ cities keep best-tour Gaps below $6.7\\%$, solving the largest case in under eleven minutes.",
+    "status": "found"
+  }
+}

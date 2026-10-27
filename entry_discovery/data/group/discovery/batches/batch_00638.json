@@ -1,0 +1,437 @@
+{
+  "2608.11767": {
+    "arxiv_id": "2608.11767",
+    "title": "Causal Structure is Inducible but Functionally Decoupled: The Routing/Readout Boundary of a Typed Mechanism Library",
+    "authors": [
+      "Xining Xun"
+    ],
+    "submission_date": "2026-08-12T08:10:01Z",
+    "latest_updated": "2026-08-12T08:10:01Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11767v1"
+    ],
+    "abstract": "When a language model answers an interventional question, the computation it must perform depends on the type of evidence the query requires. We report a decoupling in how a transformer organizes causal knowledge: slot-by-type structure induced by type-level supervision organizes routing, yet remains functionally decoupled from answer readout. We establish this with a typed mechanism library -- discrete mechanism slots partitioned by evidence type, auditable at the state level -- on a causal-world benchmark with exact interventional ground truth, under a frozen protocol, at two scales (22.6M and 125M). Four preregistered findings. (i) Origin. Slot-by-type organization is induced by type-level supervision: absent in architecturally identical unsupervised controls, not buyable by content-free gating labels, and statistically attributable to the supervision signal, replicating at 125M under a powered preregistered protocol (all nine cells passed). (ii) Boundary. The induced structure is a typed routing index with a sharp routing/readout boundary: slot codes scaffold routing but do not drive answer readout ($|Δ\\hat{y}| \\le 3.4\\times10^{-6}$, zero collateral, three seeds, stable across a 5.6x scale window) -- we therefore make no behavioral-editability claim. (iii) Cost. The structure is free: LM quality matches a parameter-matched monolith within 0.0082 nats. (iv) Trust. The library state is exactly local under edit and bit-exactly revertible -- 250 single-edit and 1,000 stacked reverts per seed, zero failures. We further find that the unsupervised null itself moves with scale, so comparisons reusing a null calibrated at one scale may be confounded at another. Every claim is tied to a preregistered, machine-checkable criterion archived before the data it governs; the full audit trail, including one criterion we failed and how the frozen protocol handled it, is released as an appendix.",
+    "status": "found"
+  },
+  "2608.11768": {
+    "arxiv_id": "2608.11768",
+    "title": "HyperANFIS: Enhancing Rule Representation and Interpretability in Adaptive Neuro-Fuzzy Systems via Hyperbolic Geometry",
+    "authors": [
+      "Haoran Pei",
+      "Zhao Su",
+      "Zetao Lin",
+      "Haoran Li",
+      "Jun Shen",
+      "Qi Zhu",
+      "Lan Guo",
+      "Qingguo Zhou",
+      "Binbin Yong"
+    ],
+    "submission_date": "2026-08-12T08:10:02Z",
+    "latest_updated": "2026-08-12T08:10:02Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11768v1"
+    ],
+    "abstract": "The adaptive neuro-fuzzy inference system (ANFIS) is an interpretable reasoning framework capable of generating explicit IF-THEN fuzzy rules, making it suitable for tasks requiring transparent reasoning. However, existing ANFIS models generally construct rule antecedents and perform inference in Euclidean space, limiting their representational capacity and predictive performance. To address this issue, we propose Hyperbolic ANFIS (HyperANFIS), a hyperbolic extension of ANFIS. HyperANFIS preserves the fuzzy semantics and core architecture of conventional ANFIS while performing rule-prototype learning, rule activation, and consequent aggregation in hyperbolic space. It also retains the ability to generate interpretable IF-THEN rules. By exploiting the representational properties of hyperbolic geometry, HyperANFIS strengthens the fuzzy inference process, thereby improving predictive accuracy, inter-rule collaboration, and the credibility of its interpretable rules. Experimental results show that HyperANFIS consistently outperforms the standard ANFIS baseline and various ANFIS variants across all datasets, while also generating higher-quality fuzzy rules.",
+    "status": "found"
+  },
+  "2608.11769": {
+    "arxiv_id": "2608.11769",
+    "title": "Policy-Induced Hand Priors in Humanoid Dual-Arm Manipulation: Diagnosing and Mitigating Initial-Pose Dependence",
+    "authors": [
+      "Chaeyeon Jung",
+      "Juyoun Park"
+    ],
+    "submission_date": "2026-08-12T08:13:44Z",
+    "latest_updated": "2026-08-12T08:13:44Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11769v1"
+    ],
+    "abstract": "Vision-language-action (VLA) policies are expected to operate robustly across variations in the robot's initial configuration, yet aggregate task success can conceal pose-specific failures and inappropriate hand selection. This work investigates initial-pose dependence in VLA-based humanoid dual-arm manipulation. We characterize the initial-condition-dependent early hand preference as a policy-induced hand prior and quantify it using HandPriorScore, residual hand bias, and target responsiveness. Evaluations across multiple policies and 17 initial configurations reveal strong initial-pose--policy interactions: the same pose produces substantially different success rates across policies, while a single policy exhibits large performance variation across poses. Specific initial arm configurations can suppress or induce an asymmetric hand preference, with the resulting effect varying in direction and strength across policies. Wrist-camera observations also influence hand selection and task performance. Expanding initial-pose coverage in the training dataset substantially improves robustness, while targeted augmentation around a low-performing configuration increases its success rate. Comparisons across training configurations show that sufficient exposure to the target simulation task is beneficial, whereas the effect of real or auxiliary data depends on pose coverage, simulation ratio, and observation availability. These findings characterize a pose-conditioned hand prior, identify a localized initial arm configuration as a causal handle on hand-selection behavior, and demonstrate how data coverage and training composition affect initial-pose robustness.",
+    "status": "found"
+  },
+  "2608.11770": {
+    "arxiv_id": "2608.11770",
+    "title": "Achieving Near-Zero-Overhead Multi-Model Hierarchical Classification in Real-Time Detection Pipelines",
+    "authors": [
+      "Vaishnav Raju"
+    ],
+    "submission_date": "2026-08-12T08:14:22Z",
+    "latest_updated": "2026-08-12T08:14:22Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11770v1"
+    ],
+    "abstract": "Edge-deployed vision systems in target recognition, surveillance, autonomous vehicles, and drone domains require hierarchical inference pipelines where a detection model identifies objects of interest and downstream classifiers provide fine-grained attribute analysis. Running all models on the GPU creates a serial bottleneck that limits real-time throughput as pipeline stages grow. Modern edge SoCs pair GPUs with dedicated neural accelerators (NPUs, DLAs) capable of concurrent execution, yet deploying custom models on these accelerators remains impractical due to strict operator constraints, quantization incompatibilities, and an undocumented end-to-end pipeline. We target NVIDIA Jetson DLA cores as the representative platform. We present a five-step methodology for zero GPU fallback DLA INT8 deployment of classification backbones, comprising architecture adaptation, manual dynamic range workaround to rescue TensorRT's implicit quantization (recovering 94.0% accuracy from implicit quantization's 75%) for rapid pipeline validation before explicit quantization, quantization-aware training, ONNX graph surgery for DLA compilation, and a concurrent GPU-detection/DLA-classification inference pipeline. We document nine engineering constraints with root-cause analysis and generalizable solutions. Validation on a dual-head person attribute classifier running on DLA alongside a GPU object detector on a Jetson Orin NX demonstrates near-zero pipeline overhead (12.5 vs. 13.3~FPS detector-only at 1080p), with dual-DLA scaling at no additional cost. The methodology is backbone-agnostic and generalizes to any detection-classification edge pipeline.",
+    "status": "found"
+  },
+  "2608.11771": {
+    "arxiv_id": "2608.11771",
+    "title": "Bijective proofs of several conjectures on Jacobi permutations",
+    "authors": [
+      "Zhicong Lin",
+      "Yongzhou Wen",
+      "Sherry H. F. Yan"
+    ],
+    "submission_date": "2026-08-12T08:14:29Z",
+    "latest_updated": "2026-08-12T08:14:29Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11771v1"
+    ],
+    "abstract": "Jacobi permutations, invented by Viennot in the context of the Jacobi elliptic functions, are counted by the Euler numbers. Recently, Henke, Hoffman, Stephens, Yuan, and Zhuang studied refined enumerations of Jacobi permutations and proposed three conjectures concerning the distribution of several statistics on Jacobi permutations. In this paper, we prove these conjectures by establishing explicit bijections involving increasing even trees, increasing binary trees, alternating permutations, and André permutations. One highlight of our results is a bijection between Jacobi permutations and André I permutations that transforms the pair of statistics $(\\Ascbot, \\last)$ to the pair of statistics $(\\Desbot, \\first)$. Here the statistic $\\Ascbot$ (resp., $\\Desbot$) denotes the set of ascent bottoms (resp., descent bottoms) of permutations, and the statistic $\\first$ (resp., $\\last$) denotes the first (resp., $\\last$) letter of permutations. Furthermore, we investigate pairs of statistics on André permutations and simsun permutations that are equidistributed with the pair $(\\asc, \\last)$ on Jacobi permutations, where $\\asc$ denotes the number of ascents of permutations. Finally, we obtain a closed-form formula for the trivariate exponential generating function of Jacobi permutations with respect to the number of ascents and the numbers of letters smaller and larger than the last letter.",
+    "status": "found"
+  },
+  "2608.11772": {
+    "arxiv_id": "2608.11772",
+    "title": "Diagnosis Before Recovery: Turning Agent Failures into Selective Self-Correction",
+    "authors": [
+      "Pan Wang",
+      "Yihao Hu",
+      "Hang Wang",
+      "Zirui Lv",
+      "Xin Zhang",
+      "Jianshe Li",
+      "Jiang-Ming Yang",
+      "Wei Wu",
+      "Yongqi Tong"
+    ],
+    "submission_date": "2026-08-12T08:14:45Z",
+    "latest_updated": "2026-08-12T08:14:45Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11772v1"
+    ],
+    "abstract": "Self-correction is particularly useful when a failure constrains the next repair. Coding agents benefit from this property because compilers, tests, and execution traces turn many failures into typed recovery signals, but broad language-agent tasks often expose only a coarse task failure. This creates a tension for generic recovery playbooks: they broaden the agent's context precisely when the system needs a narrower repair interface, mixing incompatible signals for invalid actions, missing procedures, and strict-format errors. Our insight is that development-set failures can recover part of the missing diagnostic substrate by deciding which recovery interventions are admissible before test-time correction. We propose DARC, a diagnosis-guided recovery harness that profiles task-family failure modes, prunes mismatched interventions from a shared recovery library, and freezes a verifier-selected success-cost policy for deployment. This causal order makes correction selective: the harness first determines what kind of failure can be repaired, then decides how much recovery evidence to spend. In ALFWorld, AppWorld, and XBRL Finance, the same protocol yields an action-validity harness, a procedural-recovery fallback, and a format-precision retrieval policy; in each evaluated setting it improves average task performance over base agents and broad playbooks while reducing environment steps or retrieval budget. Our experiments show that failures need not trigger uniformly more context: DARC turns self-correction from prompt expansion into recovery-interface design. DARC provides a practical route toward more reliable agents in domains where compiler-like feedback is absent: making failures actionable before making contexts larger.",
+    "status": "found"
+  },
+  "2608.11773": {
+    "arxiv_id": "2608.11773",
+    "title": "Advancing in situ hydrogen embrittlement studies through an integrated charging cell for SEM micromechanical testing",
+    "authors": [
+      "Lavakumar Bathini",
+      "Guillaume Kermouche",
+      "Sergio Sao-Joao",
+      "Frédéric Christien",
+      "Szilvia Kalácska"
+    ],
+    "submission_date": "2026-08-12T08:15:19Z",
+    "latest_updated": "2026-08-12T08:15:19Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11773v1"
+    ],
+    "abstract": "A comprehensive understanding of hydrogen-deformation interactions at the microscale is essential for revealing hydrogen embrittlement mechanisms. In situ micromechanics with simultaneous hydrogen (H-) charging has therefore gained traction in recent times. In the present study, we aim to address the drawbacks of current in situ H-charging setups by developing a more robust 3-electrode-based back-side charging system for a scanning electron microscope to perform various micromechanical tests. The development of the novel setup is discussed and demonstrated through micropillar compression of an Fe-25Cr single crystal (110) during H-charging. H has increased the yield strength and the apparent strain-hardening rate. H activates multiple slip systems and enhances dislocation density and entanglement, leading to pronounced forest hardening as revealed by electron microscopy. Estimation of activation volume from strain-rate jump tests indicates that the deformation is controlled by the solute drag effect on kink mobility and dislocation forest hardening.",
+    "status": "found"
+  },
+  "2608.11774": {
+    "arxiv_id": "2608.11774",
+    "title": "Radio flares and X-ray hardening embedded in the long soft state of 4U 1543-475",
+    "authors": [
+      "Zuobin Zhang",
+      "Rob Fender",
+      "Jiachen Jiang",
+      "Payaswini Saikia",
+      "David M. Russell",
+      "Andrew Hughes",
+      "Honghui Liu",
+      "Francesco Carotenuto",
+      "James F. Steiner",
+      "Fraser J. Cowie",
+      "John A. Tomsick",
+      "Cosimo Bambi",
+      "Yimin Huang",
+      "Xian Zhang",
+      "Wenfei Yu",
+      "Yuexin Zhang",
+      "Rittick Roy"
+    ],
+    "submission_date": "2026-08-12T08:17:15Z",
+    "latest_updated": "2026-08-12T08:17:15Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11774v1"
+    ],
+    "abstract": "We present a comprehensive multi-wavelength study of the black hole X-ray binary 4U 1543-475 during its 2021 outburst, focusing on radio flaring episodes that are commonly interpreted as signatures of episodic jet production and are embedded within states when the X-ray emission was dominated by an accretion disk component. The radio monitoring reveals at least two discrete flares that coincide with periods of enhanced Comptonized X-ray emission. Broadband spectral modelling shows a significant decrease in the reflection-to-disk flux ratio (by a factor of ~3-4) during these episodes, consistent with a temporary change in the geometry of the inner accretion flow, although the data do not allow the causal sequence to be firmly established. Optical photometry exhibits variability that broadly tracks the reflection fraction, consistent with changes in the illuminating component. The accompanying spectral hardening indicates that the radio flares were associated with short-lived excursions toward a \"harder\" state, departing from the soft state. X-ray timing analysis suggests that the radio flares may be associated with changes in the fractional rms variability; however, no consistent or unified pattern can be firmly established across different events. These results provide a multi-wavelength observational example of radio flaring activity in a black hole binary and highlight the complex interplay between accretion flow geometry, coronal emission, and jet-related phenomena.",
+    "status": "found"
+  },
+  "2608.11775": {
+    "arxiv_id": "2608.11775",
+    "title": "The Sleeping Agent: What Gist-Based Context Compression Loses and Why",
+    "authors": [
+      "Nicholas E. Kyrkewood"
+    ],
+    "submission_date": "2026-08-12T08:19:15Z",
+    "latest_updated": "2026-08-12T08:19:15Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11775v1"
+    ],
+    "abstract": "Gist-based context compression---summarising older conversation history into compact representations---is a common approach in long-horizon language model agents, yet its effect on different types of memory retrieval is poorly understood. We use Salience-Weighted Consolidation (SWC), a biologically-inspired compression framework motivated by sleep-based memory consolidation, as a diagnostic probe to study when gist compression helps and when it hurts. SWC scores conversation history by salience, partitions it into priority tiers, and applies structured gist abstraction to mid-priority content. Evaluating four conditions on all ten LoCoMo conversations---1,935 matched text-only questions in total, 1,501 used in the primary aggregate after excluding Category 5 (adversarial) questions---at temperature 0, we find a consistent task-type interaction: gist compression substantially outperforms truncation on multi-hop reasoning and single-hop factual questions, but temporal questions remain substantially harder under compression, with compressed conditions scoring well below the full-context reference on the conversations where both are evaluated. We trace this failure to a specific mechanism: the gist abstraction prompt preserves relational and event structure while discarding dates and times. A preservation analysis across all ten conversations confirms the mechanism: an approximately 20-fold increase in temporal expression preservation (3.05% to 62.39%) with a one-sentence prompt modification, while named entity and event preservation rates barely change (x1.02 and x1.11), demonstrating that the fix is a precision instrument. The prompt modification recovers +0.314 [0.254, 0.375] judge accuracy on category-2 (temporal) questions in the matched set. Code and results: https://github.com/kyrkewood/sleeping-agent.",
+    "status": "found"
+  },
+  "2608.11776": {
+    "arxiv_id": "2608.11776",
+    "title": "Spin nematic liquid crystal and scalar spin chirality in tetragonal lattice YbMnBi$_2$",
+    "authors": [
+      "Yaofeng Xie",
+      "Sijie Xu",
+      "Yu Pan",
+      "Taekoo Oh",
+      "Tingjun Zhang",
+      "Masaaki Matsuda",
+      "Zhaoyu Liu",
+      "Zehao Wang",
+      "Yiheng Wang",
+      "Siyu Pan",
+      "Avishek Maity",
+      "Sylwia Pawledzio",
+      "Xiaoping Wang",
+      "Songxue Chi",
+      "Feng Ye",
+      "Yiqing Hao",
+      "Huibo Cao",
+      "Barry L. Winn",
+      "Melissa K. Graves-Brook",
+      "Shuai Wu",
+      "Fan Li",
+      "Xiaoyuan Zhou",
+      "Claudia Felser",
+      "Naoto Nagaosa",
+      "Pengcheng Dai"
+    ],
+    "submission_date": "2026-08-12T08:19:33Z",
+    "latest_updated": "2026-08-12T08:19:33Z",
+    "revised_dates": null,
+    "venue": "Phys. Rev. X 16, 041001 (2026)",
+    "latest_version": 1,
+    "versions": [
+      "2608.11776v1"
+    ],
+    "abstract": "A spin nematic order, analogous to the nematic liquid crystal, characterizes the spontaneous breaking of spin-space rotational symmetry while preserving time-reversal ($T$) symmetry. In contrast, scalar spin chirality (SSC), a composite three-spin order, breaks $T$ symmetry and is known to induce an anomalous Hall effect (AHE). Although a spin nematic phase has been suggested in frustrated magnets and the square-lattice iridate, how it might affect magnetotransport properties is unknown. Here we use polarized neutron scattering to show that tetragonal $A$MnBi$_2$ ($A$ = Ca, Yb) is a strictly $c$-axis-aligned collinear antiferromagnet (C-type), with $T_N \\approx 270$ K and 290 K, respectively. On cooling from 450 K to $T_N$, low-energy spin excitations in YbMnBi$_2$ spontaneously change from isotropic to anisotropic in spin space within the tetragonal plane, forming a dynamic spin nematic phase around 400 K due to heavy Yb-induced spin-orbit coupling, before gapping out below $T_N$. Similar measurements on CaMnBi$_2$ reveal isotropic paramagnetic scattering without a spin nematic phase above $T_N$. Under an in-plane magnetic field, the Yb$^{3+}$ moments may interact with the dynamic spin nematic phase to induce nonzero SSC, giving rise to AHE and an anomalous Nernst effect (ANE) in YbMnBi$_2$ that are absent in CaMnBi$_2$ above $T_N$. A symmetry-based Ginzburg-Landau analysis shows that coupling terms between the nematic order and SSC are allowed under an external magnetic field, which could explain the rapid increase of AHE with field in YbMnBi$_2$. Our results provide compelling evidence for dynamic SSC-induced AHE and ANE in the paramagnetic phase of a compensated collinear antiferromagnet, opening a new avenue for the physics of composite spin orders and room-temperature spintronics without magnetic order.",
+    "status": "found"
+  },
+  "2608.11777": {
+    "arxiv_id": "2608.11777",
+    "title": "VOLA: Improving Open-World Driving by VLM-Based Semantic Attribute Prediction",
+    "authors": [
+      "Yuchen Zhang",
+      "Yuan Gao",
+      "Sebastian Schmidt",
+      "Johannes Betz"
+    ],
+    "submission_date": "2026-08-12T08:20:28Z",
+    "latest_updated": "2026-08-12T08:20:28Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11777v1"
+    ],
+    "abstract": "Driving in the real world is open-world: a car may encounter a fallen mattress, a deer, or other objects outside its training data. Naming them is not enough. The system must know how to treat each region: can it drive over it, and how severe would a collision be? We therefore shift scene perception from category labels to dense action-relevant attributes, where each pixel is labeled by how it should affect motion rather than by object name. We instantiate this general formulation with two ordered attributes: 7-rank drivability and 5-rank vulnerability. We read Qwen3.5 image-token hidden states directly as a spatial semantic representation. A lightweight boundary-aware decoder then turns this coarse token grid into sharp full-resolution attribute maps. The whole process requires neither autoregressive text generation nor an external mask model such as SAM. We train on dense attribute labels built in CARLA and test transfer to real scenes and to novel obstacles never seen in training. We compare with vision-only segmenters trained on the same attributes and prompted VLM segmenters. Our model matches strong vision-only segmenters on familiar categories and improves transfer to real open-world anomalies, reaching 69.4% mean vulnerability-rank recall versus 57.1% for the best vision-only baseline and 53.9% for the best prompted VLM baseline. These results show that VLM image tokens provide useful semantic cues for transferring driving attributes to objects outside the training vocabulary.",
+    "status": "found"
+  },
+  "2608.11778": {
+    "arxiv_id": "2608.11778",
+    "title": "Aggregation-engineered loss-tolerant strong coupling in metallic microcavities",
+    "authors": [
+      "Andrea Betti",
+      "Eleonora Cara",
+      "Giulia Serrano",
+      "Lorenzo Poggini",
+      "Alessia Valzelli",
+      "Natascia De Leo",
+      "Paolo Bartolini",
+      "Andrea Taschin",
+      "Renato Torre",
+      "Alice Boschetti"
+    ],
+    "submission_date": "2026-08-12T08:20:36Z",
+    "latest_updated": "2026-08-12T08:20:36Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11778v1"
+    ],
+    "abstract": "Room-temperature strong coupling in organic microcavities is usually achieved by combining high-quality optical resonators with highly ordered excitonic media, a requirement that limits scalability and processing flexibility. Here we show that this constraint can be relaxed by using molecular aggregation as a design parameter rather than treating it as a parasitic effect. We realize solution-processed Rhodamine 6G-poly(vinyl alcohol) films embedded in low-quality-factor silver Fabry-Perot microcavities and demonstrate clear angle-resolved anticrossing with coupling energies up to 324 meV despite the large optical losses of the metallic mirrors. A two-exciton coupled-oscillator model shows that the relative weight of these species controls the collective coupling strength and can be tuned through dye loading and spin-coating conditions. In contrast, angle-resolved photoluminescence is dominated by a broad, red-shifted lower-polariton emission, consistent with relaxation through excimer-like states formed in densely packed molecular domains. These results identify molecular aggregation as a practical design lever for loss-tolerant strong coupling in wet-processed metallic cavities and suggest that ground-state aggregates and excited-state excimer-like species play distinct roles in polariton formation and emission.",
+    "status": "found"
+  },
+  "2608.11779": {
+    "arxiv_id": "2608.11779",
+    "title": "Infrared-to-visible albedo ratio of Phobos: Comparison with primitive asteroids",
+    "authors": [
+      "T. J. Dyer",
+      "J. Beccarelli",
+      "M. Delbo",
+      "C. Avdellidou",
+      "M. Pajola",
+      "A. Milton",
+      "A. Lucchetti",
+      "G. Munaretto"
+    ],
+    "submission_date": "2026-08-12T08:21:25Z",
+    "latest_updated": "2026-08-12T08:21:25Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11779v1"
+    ],
+    "abstract": "Aims. The ratio between infrared and visible albedo, pIR/pV, provides a simple proxy for the spectral slope of asteroid surfaces between the visible and near-infrared wavelength ranges. The aim of this work is to assess whether the different spectral units of Phobos occupy the same spectral parameter space as the primitive asteroid populations in order to confirm or not its possible asteroidal origin. Methods. For each of the three spectral units of Phobos (Red, Transitional and Blue), we extracted averaged, normalised reflectance spectra by comparing normalised reflectance in the visible (0.50-0.60 $μ$m) and near-infrared (3.1-3.8 $μ$m) wavelength ranges from the Mars Express OMEGA instrument, to compute a proxy for the infrared-visible albedo ratio ($R_P$). Then, using the database of visible and infrared albedos compiled in the Minor Planet Physical Properties Catalogue (MP3C), we computed asteroid pIR/pV values ($R_A$), to compare to those for Phobos. Results. The $R_P$ for the Red, Transitional and Blue regions vary between 2.90 and 3.12, 2.32 and 2.35, 1.64 and 1.85 respectively. These values span a range occupied by primitive asteroid populations, with the Transitional and Red regions coinciding with the high ratio regime within the pIR/pV domain, which is commonly associated with red-sloped primitive asteroids, including D- and T-type objects as well as Jupiter Trojans.",
+    "status": "found"
+  },
+  "2608.11780": {
+    "arxiv_id": "2608.11780",
+    "title": "The $D^Δ$-pair biset category",
+    "authors": [
+      "Robert Boltje",
+      "Serge Bouc",
+      "Deniz Yılmaz"
+    ],
+    "submission_date": "2026-08-12T08:21:58Z",
+    "latest_updated": "2026-08-12T08:21:58Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11780v1"
+    ],
+    "abstract": "Let $p$ be a prime number. A $D^Δ$-pair is a pair consisting of a finite $p$-group and a $p'$-automorphism of the group. In this paper, we introduce diagonal $D^Δ$-pair bisets and a category whose objects are $D^Δ$-pairs and whose morphism groups are Grothendieck groups of diagonal $D^Δ$-pair bisets. Our main result shows that, over suitable coefficient rings, the category of diagonal $p$-permutation functors is equivalent to the category of linear functors on a natural quotient of this new category. In this way, diagonal $p$-permutation functors can be studied through a category built only from finite $p$-groups and their automorphisms of $p'$-order.",
+    "status": "found"
+  },
+  "2608.11781": {
+    "arxiv_id": "2608.11781",
+    "title": "Area-Normalized Pentagram Map Dynamics: Spectral Flattening and Elliptic Asymptotics",
+    "authors": [
+      "Michał Zwierzyński"
+    ],
+    "submission_date": "2026-08-12T08:22:10Z",
+    "latest_updated": "2026-08-12T08:22:10Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11781v1"
+    ],
+    "abstract": "The pentagram map sends a polygon to the intersections of consecutive short diagonals. We study its shape dynamics after translating and positively rescaling each iterate to restore unsigned area and barycenter. For polygons whose dynamics is generated, after passing to a finite iterate and cyclic relabelling, by one projectivity, we prove a spectral dichotomy. A dominant real projective line yields flattening and unbounded diameter, whereas a dominant real eigenvalue with a subdominant non-real pair produces asymptotic motion on concentric homothetic ellipses. We apply this framework to pentagons and hexagons via Glick's operator and to Poncelet polygons via the Darboux--Schwartz projectivity. We obtain spectral diagrams and a Jacobi-function formula for the Poncelet return spectrum. Consequently, we recover Schwartz's long-and-thin result for strictly convex non-projectively-regular pentagons, prove a line-or-ellipse dichotomy for convex hexagons under explicit nondegeneracy assumptions, and establish flattening for strictly convex non-projectively-regular Poncelet polygons.",
+    "status": "found"
+  },
+  "2608.11782": {
+    "arxiv_id": "2608.11782",
+    "title": "Partial Path Interception in Derivation DAGs: Exact Reliability Laws and a Sharp Complexity Dichotomy",
+    "authors": [
+      "Jianfeng Xu"
+    ],
+    "submission_date": "2026-08-12T08:23:04Z",
+    "latest_updated": "2026-10-13T04:02:01Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2608.11782v1",
+      "2608.11782v2",
+      "2608.11782v3"
+    ],
+    "abstract": "We introduce partial path interception on derivation DAGs (directed acyclic graphs), a combinatorial optimization problem arising from proof-valid caching: stored objects must be logical consequences of a premise base whose premises are erased independently, a query is recovered only while derivable from surviving premises and stored objects, and the queried object itself may not be stored, so reliability must come from premises or intermediate consequences. An exact residual-leaf law pins the recovery probability to a closed form in the exposed-leaf count and reduces design to weighted partial path interception (PPI) on the witness DAG. We classify PPI across its canonical regimes: it is NP-complete already on depth-two DAGs with leaf out-degree two and fixed-parameter intractable in the budget, ruling out efficient approximation schemes; it contains smallest T-edge subgraph as a special case, hence admits no approximation within the square root of the optimum under the Strongish Planted Clique Hypothesis, matched there by trivial leaf-only caching; whereas unique-path instances admit an exact dynamic program, bounded-treewidth instances are fixed-parameter tractable, and individual coverage admits a tight logarithmic greedy guarantee. Semantic-module caches are exactly optimal for shared workloads under exact module routing. An appendix prices transparency against a coded erasure benchmark.",
+    "status": "found"
+  },
+  "2608.11783": {
+    "arxiv_id": "2608.11783",
+    "title": "Antibunching Enhancement via Non-Markovianity in a Hybrid Optical-Microwave Cross-Cavity",
+    "authors": [
+      "Shiying Gu",
+      "Jun-Qi Li",
+      "Liping Guo"
+    ],
+    "submission_date": "2026-08-12T08:26:31Z",
+    "latest_updated": "2026-08-12T08:26:31Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11783v1"
+    ],
+    "abstract": "Unconventional photon blockade (UPB) provides an attractive route for generating antibunched light through quantum interference without requiring strong nonlinear coupling. In conventional Markovian systems, irreversible dissipation progressively destroys the phase coherence, even limiting the achievable single-photon purity. Here we propose a scheme for imposing non-Markovian effects on a microwave cavity where a Er$^{3+}$:Y$_2$SiO$_5$ crystal loaded into a hybrid optical-microwave system. Based on the time-convolutionless non-Markovian framework, we derive the time-dependent non-Markovian decay rate and the renormalized microwave drive in the weak-coupling regime. We show that the second-order correlation function is significantly suppressed, even to the order of $10^{-7}$, since the backflow of environmental information enhances photon blocking. In addition, this structured reservoir engineering not only provides an additional degree of freedom, but also further optimizes the blockade via optical detuning. Importantly, the delayed second-order correlation exhibits a broadened antibunching profile, thereby relaxing the timing requirements for single-photon synchronization. Our results demonstrate that environmental non-Markovianity can be transformed from a source of decoherence into a controllable quantum resource, opening new opportunities for high-purity single-photon generation.",
+    "status": "found"
+  },
+  "2608.11784": {
+    "arxiv_id": "2608.11784",
+    "title": "Coarsening Latent-Class Probabilities: Directional Distortion and Coverage Loss",
+    "authors": [
+      "Marcell T. Kurbucz"
+    ],
+    "submission_date": "2026-08-12T08:26:33Z",
+    "latest_updated": "2026-08-26T13:17:17Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2608.11784v1",
+      "2608.11784v2"
+    ],
+    "abstract": "Outcomes are regressed on a calibrated probability vector for unobserved class membership. Under a structural conditional mean excluding the score and conditional calibration, the observed-data model reduces to a partially linear regression. The probability vector is a Berkson-type surrogate for membership, so the effect vector $τ$ is identified without attenuation. In practice the vector is often coarsened to a hard label - an argmax, a confidence threshold - and that label need not retain the Berkson property. For any coarsening the plug-in estimator converges to $\\mathcal{A}τ$, where $\\mathcal{A}-I$ is determined by the regression of the discarded part of the score on the retained part. Coarsening therefore leaves $τ$ undistorted exactly when that regression vanishes, and otherwise distorts some contrasts far more than others. The same operator determines the bias that drives coverage loss. Where that bias is of the order of the standard error, the Wald interval has limiting coverage $Φ(z-ν)-Φ(-z-ν)$, with $ν$ their ratio. A fixed bias sends coverage to zero. Operator, standard error, and - through the uncoarsened estimator - the bias are estimable from observed data, so the implied coverage can be approximated before the interval is reported. Simulations show severe coverage loss after argmax coarsening. Three real-data audits exhibit the direction-specific distortion.",
+    "status": "found"
+  },
+  "2608.11785": {
+    "arxiv_id": "2608.11785",
+    "title": "TradingMoE: Routing the Right Experts in Evolving Markets",
+    "authors": [
+      "Chang Zhou",
+      "Xingtong Yu",
+      "Minbin Huang",
+      "Zhennan Wu",
+      "Yuan Fang",
+      "Hong Cheng",
+      "Xinming Zhang"
+    ],
+    "submission_date": "2026-08-12T08:27:14Z",
+    "latest_updated": "2026-08-12T08:27:14Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11785v1"
+    ],
+    "abstract": "Large language models (LLMs) have shown strong potential for financial analysis and trading, but direct trading remains challenging because the predictive capabilities required can vary across assets, decision fields, and market conditions. Existing LLM-based trading systems either coordinate human-defined external experts or adopt conventional internal Mixture-of-Experts (MoE) routers that do not directly evaluate how individual experts contribute to trading decisions. Moreover, these routers receive no direct signal indicating when an inactive expert has become more suitable as market conditions change. We find that native router scores poorly reflect how much individual experts improve trading decisions, frequently leaving better alternatives unselected. We further reveal that token-specific expert usefulness exhibits a compact low-dimensional structure. Based on these findings, we propose TradingMoE, a trading-oriented sparse MoE that augments a frozen dense LLM with lightweight residual experts. We introduce a Query-Key router that represents the expertise required by each token under the current market context as a low-dimensional query and matches it with learnable expert keys. We further propose a sparse expert selection update mechanism that samples a few inactive experts during training and estimates whether they should replace the weakest expert in the current Top-k route. This mechanism enables the router to update expert selection as market conditions change while preserving sparse computation. Experiments against 22 baselines on stock and cryptocurrency markets show that TradingMoE improves cumulative return over the best-performing baselines by 30.89% and 30.7%, respectively. Rolling paper-trading experiments further demonstrate that its advantage persists under forward-only deployment.",
+    "status": "found"
+  },
+  "2608.11786": {
+    "arxiv_id": "2608.11786",
+    "title": "Language-Conditional Dequantization: Recovering What Quantization Steals from Non-English Languages",
+    "authors": [
+      "Nirmal Thomas"
+    ],
+    "submission_date": "2026-08-12T08:28:03Z",
+    "latest_updated": "2026-08-12T08:28:03Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2608.11786v1"
+    ],
+    "abstract": "Aggressive quantization disproportionately harms multilingual capability: in the sub-4B INT3 GPTQ regime, we measure 2-4x larger perplexity degradation on non-English languages than on English. We propose Language-Conditional Dequantization (LCD), a post-hoc method that attaches per-language rank-2 LoRA corrections to the linear layers of an already-quantized model, adding 0.12% parameters per language and training in under 20 minutes on a single GPU. Across Qwen2.5-3B and Llama-3.2-3B, LCD recovers 70-83% of the perplexity gap for non-Latin script languages and 17-28% of the GlobalMMLU accuracy gap, outperforming a language-agnostic correction of equal capacity by 3-9 points on typologically distant languages and a data-free low-rank baseline (LQER) by an order of magnitude. We further identify a perplexity-accuracy disconnect and trace it to where quantization concentrates damage: early-depth errors (Llama) propagate downstream and resist local correction, while late-depth errors (Qwen) do not. A layer-restricted variant of LCD validates this mechanism directly.",
+    "status": "found"
+  }
+}

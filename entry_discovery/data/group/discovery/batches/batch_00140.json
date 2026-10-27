@@ -1,0 +1,412 @@
+{
+  "2511.14509": {
+    "arxiv_id": "2511.14509",
+    "title": "Spatio-temporal Hawkes point processes: statistical inference and simulation strategies",
+    "authors": [
+      "Alba Bernabeu",
+      "Jorge Mateu"
+    ],
+    "submission_date": "2025-11-18T14:01:46Z",
+    "latest_updated": "2025-11-18T14:01:46Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.14509v1"
+    ],
+    "abstract": "Spatio-temporal Hawkes point processes are a particularly interesting class of stochastic point processes for modeling self-exciting behavior, in which the occurrence of one event increases the probability of other events occurring. These processes are able to handle complex interrelationships between stochastic and deterministic components of spatio-temporal phenomena. However, despite its widespread use in practice, there is no common and unified formalism and every paper proposes different views of these stochastic mechanisms. With this in mind, we implement two simulation techniques and three unified, self-consistent inference techniques, which are widely used in the practical modeling of spatio-temporal Hawkes processes. Furthermore, we provide an evaluation of the practical performance of these methods, while providing useful code for reproducibility.",
+    "status": "found"
+  },
+  "2511.14510": {
+    "arxiv_id": "2511.14510",
+    "title": "LiteCache: A Query Similarity-Driven, GPU-Centric KVCache Subsystem for Efficient LLM Inference",
+    "authors": [
+      "Jiawei Yi",
+      "Ping Gong",
+      "Youhui Bai",
+      "Zewen Jin",
+      "Shengnan Wang",
+      "Jiaqi Ruan",
+      "Jia He",
+      "Jiaan Zhu",
+      "Pengcheng Wang",
+      "Haibo Wang",
+      "Weiguang Wang",
+      "Xia Zhu",
+      "Cheng Li"
+    ],
+    "submission_date": "2025-11-18T14:03:21Z",
+    "latest_updated": "2026-03-27T07:29:02Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.14510v1",
+      "2511.14510v2"
+    ],
+    "abstract": "During LLM inference, KVCache memory usage grows linearly with sequence length and batch size and often exceeds GPU capacity. Recent proposals offload KV states to host memory and reduce transfers using top-k attention. But their CPU-centric management of the on-GPU cache and CPU-GPU data movement incurs high overhead and fragments the bulk GPU execution that CUDA Graph relies on. To close this gap, we observe that adjacent queries within the same attention head exhibit strong directional similarity and retrieve highly overlapping top-k KV states. This insight enables a simple head granularity cache algorithm, QSAC, in which each head reuses its previously cached KV states whenever the current query is sufficiently similar to the prior one. QSAC further simplifies cache management primitives and cuts CPU involvement almost entirely. We develop LiteCache, a KVCache subsystem that incorporates QSAC. LiteCache introduces a GPU-centric synchronization controller and speculative sparse prefetching, enabling fully overlapped data movement and computation. These mechanisms produce a stable and predictable execution pattern that remains compatible with the bulk execution mode required by CUDA Graphs. Evaluation on two widely-used LLMs indicates that LiteCache achieves comparable accuracy to baselines, while sharply minimizing CPU overhead, fully utilizing PCIe bandwidth, thus improving decoding throughput by 10.7-224.2% on both H100 and A40 GPUs and easily supporting sequence lengths beyond 1M. We opensource LiteCache at https://anonymous.4open.science/r/LiteCache-888D.",
+    "status": "found"
+  },
+  "2511.14511": {
+    "arxiv_id": "2511.14511",
+    "title": "Efficient Hamiltonian-aware Quantum Natural Gradient Descent for Variational Quantum Eigensolvers",
+    "authors": [
+      "Chenyu Shi",
+      "Hao Wang"
+    ],
+    "submission_date": "2025-11-18T14:06:53Z",
+    "latest_updated": "2025-11-18T14:06:53Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.14511v1"
+    ],
+    "abstract": "The Variational Quantum Eigensolver (VQE) is one of the most promising algorithms for current quantum devices. It employs a classical optimizer to iteratively update the parameters of a variational quantum circuit in order to search for the ground state of a given Hamiltonian. The efficacy of VQEs largely depends on the optimizer employed. Recent studies suggest that Quantum Natural Gradient Descent (QNG) can achieve faster convergence than vanilla gradient descent (VG), but at the cost of additional quantum resources to estimate Fubini-Study metric tensor in each optimization step. The Fubini-Study metric tensor used in QNG is related to the entire quantum state space and does not incorporate information about the target Hamiltonian. To take advantage of the structure of the Hamiltonian and address the limitation of additional computational cost in QNG, we propose Hamiltonian-aware Quantum Natural Gradient Descent (H-QNG). In H-QNG, we propose to use the Riemannian pullback metric induced from the lower-dimensional subspace spanned by the Hamiltonian terms onto the parameter space. We show that H-QNG inherits the desirable features of both approaches: the low quantum computational cost of VG and the reparameterization-invariance of QNG. We also validate its performance through numerical experiments on molecular Hamiltonians, showing that H-QNG achieves faster convergence to chemical accuracy while requiring fewer quantum computational resources.",
+    "status": "found"
+  },
+  "2511.14512": {
+    "arxiv_id": "2511.14512",
+    "title": "Sequential Exponential Lower Bounds for the Advection-Diffusion Equation with Shear Flows",
+    "authors": [
+      "Yupei Huang",
+      "Xiaoqian Xu"
+    ],
+    "submission_date": "2025-11-18T14:07:39Z",
+    "latest_updated": "2026-08-18T07:05:22Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2511.14512v1",
+      "2511.14512v2",
+      "2511.14512v3"
+    ],
+    "abstract": "In this paper, we prove that the $L^2$ norm of spatial mean-free solutions to the advection--diffusion equation on $\\mathbb{T}^2$ with shear drifts satisfies an \\emph{exponential lower bound} in time. This lower bound shows that diffusion can fundamentally suppress passive-scalar mixing.",
+    "status": "found"
+  },
+  "2511.14513": {
+    "arxiv_id": "2511.14513",
+    "title": "Link prediction with swarms of chiral quantum walks",
+    "authors": [
+      "Gaia Forghieri",
+      "Viacheslav Dubovitskii",
+      "Matteo A. C. Rossi",
+      "Matteo G. A. Paris"
+    ],
+    "submission_date": "2025-11-18T14:10:45Z",
+    "latest_updated": "2026-05-11T12:04:05Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.14513v1",
+      "2511.14513v2"
+    ],
+    "abstract": "Reconstructing protein-protein interaction networks is a central challenge in network medicine, often addressed using link prediction algorithms. Recent studies suggest that quantum walk-based approaches hold promise for this task. In this paper, we build on these algorithms by introducing chirality through the addition of random phases in the Hamiltonian generators. The resulting additional degrees of freedom enable a more diverse exploration of the network, which we exploit by employing a swarm of chiral quantum walks. Thus, we enhance the predictive power of quantum walks on complex networks. Indeed, compared to a non-chiral algorithm, the chiral version exhibits greater robustness, making its performance less dependent on the optimal evolution time--a critical hyperparameter of the non-chiral model. This improvement arises from complementary dynamics introduced by chirality within the swarm. By analyzing multiple phase-sampling strategies, we identify configurations that achieve a practical trade-off: retaining the high predictive accuracy of the non-chiral algorithm at its optimal time while gaining the robustness typical of chirality. Our findings highlight the versatility of chiral quantum walks and their potential to outperform both classical and non-chiral quantum methods in realistic scenarios, including comparisons between successive versions of evolving databases.",
+    "status": "found"
+  },
+  "2511.14514": {
+    "arxiv_id": "2511.14514",
+    "title": "Graph Irregularity via Edge Deletions",
+    "authors": [
+      "Julien Bensmail",
+      "Noémie Catherinot",
+      "Foivos Fioravantes",
+      "Clara Marcille",
+      "Nacim Oijid"
+    ],
+    "submission_date": "2025-11-18T14:11:47Z",
+    "latest_updated": "2025-11-18T14:11:47Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.14514v1"
+    ],
+    "abstract": "We pursue the study of edge-irregulators of graphs, which were recently introduced in [Fioravantes et al. Parametrised Distance to Local Irregularity. IPEC, 2024]. That is, we are interested in the parameter Ie(G), which, for a given graph G, denotes the smallest k >= 0 such that G can be made locally irregular (i.e., with no two adjacent vertices having the same degree) by deleting k edges. We exhibit notable properties of interest of the parameter Ie, in general and for particular classes of graphs, together with parameterized algorithms for several natural graph parameters. Despite the computational hardness previously exhibited by this problem (NP-hard, W[1]-hard w.r.t. feedback vertex number, W[1]-hard w.r.t. solution size), we present two FPT algorithms, the first w.r.t. the solution size plus Delta and the second w.r.t. the vertex cover number of the input graph. Finally, we take important steps towards better understanding the behaviour of this problem in dense graphs. This is crucial when considering some of the parameters whose behaviour is still uncharted in regards to this problem (e.g., neighbourhood diversity, distance to clique). In particular, we identify a subfamily of complete graphs for which we are able to provide the exact value of Ie(G). These investigations lead us to propose a conjecture that Ie(G) should always be at most m/3 + c, where $m$ is the number of edges of the graph $G$ and $c$ is some constant. This conjecture is verified for various families of graphs, including trees.",
+    "status": "found"
+  },
+  "2511.14515": {
+    "arxiv_id": "2511.14515",
+    "title": "IMSE: Efficient U-Net-based Speech Enhancement using Inception Depthwise Convolution and Amplitude-Aware Linear Attention",
+    "authors": [
+      "Xinxin Tang",
+      "Bin Qin",
+      "Yufang Li"
+    ],
+    "submission_date": "2025-11-18T14:11:54Z",
+    "latest_updated": "2025-12-01T07:59:45Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.14515v1",
+      "2511.14515v2"
+    ],
+    "abstract": "Achieving a balance between lightweight design and high performance remains a significant challenge for speech enhancement (SE) tasks on resource-constrained devices. Existing state-of-the-art methods, such as MUSE, have established a strong baseline with only 0.51M parameters by introducing a Multi-path Enhanced Taylor (MET) transformer and Deformable Embedding (DE). However, an in-depth analysis reveals that MUSE still suffers from efficiency bottlenecks: the MET module relies on a complex \"approximate-compensate\" mechanism to mitigate the limitations of Taylor-expansion-based attention, while the offset calculation for deformable embedding introduces additional computational burden. This paper proposes IMSE, a systematically optimized and ultra-lightweight network. We introduce two core innovations: 1) Replacing the MET module with Amplitude-Aware Linear Attention (MALA). MALA fundamentally rectifies the \"amplitude-ignoring\" problem in linear attention by explicitly preserving the norm information of query vectors in the attention calculation, achieving efficient global modeling without an auxiliary compensation branch. 2) Replacing the DE module with Inception Depthwise Convolution (IDConv). IDConv borrows the Inception concept, decomposing large-kernel operations into efficient parallel branches (square, horizontal, and vertical strips), thereby capturing spectrogram features with extremely low parameter redundancy. Extensive experiments on the VoiceBank+DEMAND dataset demonstrate that, compared to the MUSE baseline, IMSE significantly reduces the parameter count by 16.8\\% (from 0.513M to 0.427M) while achieving competitive performance comparable to the state-of-the-art on the PESQ metric (3.373). This study sets a new benchmark for the trade-off between model size and speech quality in ultra-lightweight speech enhancement.",
+    "status": "found"
+  },
+  "2511.14516": {
+    "arxiv_id": "2511.14516",
+    "title": "Full-Atom Peptide Design via Riemannian-Euclidean Bayesian Flow Networks",
+    "authors": [
+      "Hao Qian",
+      "Shikui Tu",
+      "Lei Xu"
+    ],
+    "submission_date": "2025-11-18T14:13:23Z",
+    "latest_updated": "2025-11-19T03:15:09Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.14516v1",
+      "2511.14516v2"
+    ],
+    "abstract": "Diffusion and flow matching models have recently emerged as promising approaches for peptide binder design. Despite their progress, these models still face two major challenges. First, categorical sampling of discrete residue types collapses their continuous parameters into onehot assignments, while continuous variables (e.g., atom positions) evolve smoothly throughout the generation process. This mismatch disrupts the update dynamics and results in suboptimal performance. Second, current models assume unimodal distributions for side-chain torsion angles, which conflicts with the inherently multimodal nature of side chain rotameric states and limits prediction accuracy. To address these limitations, we introduce PepBFN, the first Bayesian flow network for full atom peptide design that directly models parameter distributions in fully continuous space. Specifically, PepBFN models discrete residue types by learning their continuous parameter distributions, enabling joint and smooth Bayesian updates with other continuous structural parameters. It further employs a novel Gaussian mixture based Bayesian flow to capture the multimodal side chain rotameric states and a Matrix Fisher based Riemannian flow to directly model residue orientations on the $\\mathrm{SO}(3)$ manifold. Together, these parameter distributions are progressively refined via Bayesian updates, yielding smooth and coherent peptide generation. Experiments on side chain packing, reverse folding, and binder design tasks demonstrate the strong potential of PepBFN in computational peptide design.",
+    "status": "found"
+  },
+  "2511.14517": {
+    "arxiv_id": "2511.14517",
+    "title": "Tri-Hybrid Beamforming Design for Fully-Connected Pinching Antenna Systems",
+    "authors": [
+      "Cheng-Jie Zhao",
+      "Zhaolin Wang",
+      "Hyundong Shin",
+      "Yuanwei Liu"
+    ],
+    "submission_date": "2025-11-18T14:14:47Z",
+    "latest_updated": "2025-11-18T14:14:47Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.14517v1"
+    ],
+    "abstract": "A novel fully-connected (FC) tri-hybrid beamforming (THB) architecture is proposed for pinching antenna systems (PASS). In contrast to conventional sub-connected (SC) PASS, the proposed FC architecture employs a tunable phase-shifter network to interconnect all radio frequency (RF) chains with all waveguides. This facilitates a THB framework that integrates conventional hybrid analog-digital beamforming with pinching beamforming. A weighted sum-rate (WSR) optimization problem is then formulated to jointly optimize the transmit beamformers and pinching antenna (PA) positions. Two algorithms are developed to address this challenging non-convex problem. 1) Fractional programming (FP)-based algorithm: This algorithm directly maximizes the WSR using an FP-based alternating optimization framework. Particularly, a success-history based adaptive differential evolution (SHADE) method is proposed to optimize PA positions, effectively addressing the intractable multimodal objective function. 2) Zero-forcing (ZF)-based algorithm: To reduce design complexity, zero-forcing is employed for transmit beamforming. The PA positions are subsequently optimized to maximize the WSR via a modified SHADE method. Simulation results validate the effectiveness of the proposed algorithms, revealing that the FC-THB PASS achieves WSR comparable to the SC architecture while delivering superior energy efficiency with fewer RF chains.",
+    "status": "found"
+  },
+  "2511.14518": {
+    "arxiv_id": "2511.14518",
+    "title": "D-PerceptCT: Deep Perceptual Enhancement for Low-Dose CT Images",
+    "authors": [
+      "Taifour Yousra Nabila",
+      "Azeddine Beghdadi",
+      "Marie Luong",
+      "Zuheng Ming",
+      "Habib Zaidi",
+      "Faouzi Alaya Cheikh"
+    ],
+    "submission_date": "2025-11-18T14:14:59Z",
+    "latest_updated": "2025-11-18T14:14:59Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.14518v1"
+    ],
+    "abstract": "Low Dose Computed Tomography (LDCT) is widely used as an imaging solution to aid diagnosis and other clinical tasks. However, this comes at the price of a deterioration in image quality due to the low dose of radiation used to reduce the risk of secondary cancer development. While some efficient methods have been proposed to enhance LDCT quality, many overestimate noise and perform excessive smoothing, leading to a loss of critical details. In this paper, we introduce D-PerceptCT, a novel architecture inspired by key principles of the Human Visual System (HVS) to enhance LDCT images. The objective is to guide the model to enhance or preserve perceptually relevant features, thereby providing radiologists with CT images where critical anatomical structures and fine pathological details are perceptu- ally visible. D-PerceptCT consists of two main blocks: 1) a Visual Dual-path Extractor (ViDex), which integrates semantic priors from a pretrained DINOv2 model with local spatial features, allowing the network to incorporate semantic-awareness during enhancement; (2) a Global-Local State-Space block that captures long-range information and multiscale features to preserve the important structures and fine details for diagnosis. In addition, we propose a novel deep perceptual loss, designated as the Deep Perceptual Relevancy Loss Function (DPRLF), which is inspired by human contrast sensitivity, to further emphasize perceptually important features. Extensive experiments on the Mayo2016 dataset demonstrate the effectiveness of D-PerceptCT method for LDCT enhancement, showing better preservation of structural and textural information within LDCT images compared to SOTA methods.",
+    "status": "found"
+  },
+  "2511.14519": {
+    "arxiv_id": "2511.14519",
+    "title": "Perturbative nonlinear J-matrix method of scattering in two dimensions",
+    "authors": [
+      "T. J. Taiwo",
+      "A. D. Alhaidari",
+      "U. Al Khawaja"
+    ],
+    "submission_date": "2025-11-18T14:15:26Z",
+    "latest_updated": "2025-11-18T14:15:26Z",
+    "revised_dates": null,
+    "venue": "Phys. Lett. A 589 (2026) 131798",
+    "latest_version": 1,
+    "versions": [
+      "2511.14519v1"
+    ],
+    "abstract": "We introduce a perturbative formulation for a nonlinear extension of the J-matrix method of scattering in two dimensions. That is, we obtain the scattering matrix for the time-independent nonlinear Schrödinger equation in two dimensions with circular symmetry. The formulation relies on the linearization of products of orthogonal polynomials and on the utilization of the tools of the J-matrix method. Gauss quadrature integral approximation is instrumental in the numerical implementation of the approach. We present the theory for a general ψ^{2n + 1} nonlinearity, where n is a natural number, and obtain results for the cubic and quintic nonlinearities, ψ^3 and ψ^5. At certain value(s) of the energy, we observe the occurrence of bifurcation with two stable solutions. This curious and interesting phenomenon is a clear signature and manifestation of the underlying nonlinearity.",
+    "status": "found"
+  },
+  "2511.14520": {
+    "arxiv_id": "2511.14520",
+    "title": "Neural Networks-Enabled Channel Reconstruction for Fluid Antenna Systems: A Data-Driven Approach",
+    "authors": [
+      "Haoyu Liang",
+      "Zhentian Zhang",
+      "Jian Dang",
+      "Hao Jiang",
+      "Zaichen Zhang"
+    ],
+    "submission_date": "2025-11-18T14:16:45Z",
+    "latest_updated": "2025-11-18T14:16:45Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.14520v1"
+    ],
+    "abstract": "Fluid antenna systems (FASs) offer substantial spatial diversity by exploiting the electromagnetic port correlation within compact array spaces, thereby generating favorable small-scale fading conditions with beneficial channel gain envelope fluctuations. This unique capability opens new opportunities for a wide range of communication applications and emerging technologies. However, accurate channel state information (CSI) must be acquired before a fluid antenna can be effectively utilized. Although several efforts have been made toward channel reconstruction in FASs, a generally applicable solution to both model-based or model-free scenario with both high precision and efficient computational flow remains lacking. In this work, we propose a data-driven channel reconstruction approach enabled by neural networks. The proposed framework not only achieves significantly enhanced reconstruction accuracy but also requires substantially lower computational complexity compared with existing model-free methods. Numerical results further demonstrate the rapid convergence and robust reconstruction capability of the proposed scheme, outperforming current state-of-the-art techniques.",
+    "status": "found"
+  },
+  "2511.14521": {
+    "arxiv_id": "2511.14521",
+    "title": "A Generative Data Framework with Authentic Supervision for Underwater Image Restoration and Enhancement",
+    "authors": [
+      "Yufeng Tian",
+      "Yifan Chen",
+      "Zhe Sun",
+      "Libang Chen",
+      "Mingyu Dou",
+      "Jijun Lu",
+      "Ye Zheng",
+      "Xuelong Li"
+    ],
+    "submission_date": "2025-11-18T14:20:17Z",
+    "latest_updated": "2025-11-18T14:20:17Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.14521v1"
+    ],
+    "abstract": "Underwater image restoration and enhancement are crucial for correcting color distortion and restoring image details, thereby establishing a fundamental basis for subsequent underwater visual tasks. However, current deep learning methodologies in this area are frequently constrained by the scarcity of high-quality paired datasets. Since it is difficult to obtain pristine reference labels in underwater scenes, existing benchmarks often rely on manually selected results from enhancement algorithms, providing debatable reference images that lack globally consistent color and authentic supervision. This limits the model's capabilities in color restoration, image enhancement, and generalization. To overcome this limitation, we propose using in-air natural images as unambiguous reference targets and translating them into underwater-degraded versions, thereby constructing synthetic datasets that provide authentic supervision signals for model learning. Specifically, we establish a generative data framework based on unpaired image-to-image translation, producing a large-scale dataset that covers 6 representative underwater degradation types. The framework constructs synthetic datasets with precise ground-truth labels, which facilitate the learning of an accurate mapping from degraded underwater images to their pristine scene appearances. Extensive quantitative and qualitative experiments across 6 representative network architectures and 3 independent test sets show that models trained on our synthetic data achieve comparable or superior color restoration and generalization performance to those trained on existing benchmarks. This research provides a reliable and scalable data-driven solution for underwater image restoration and enhancement. The generated dataset is publicly available at: https://github.com/yftian2025/SynUIEDatasets.git.",
+    "status": "found"
+  },
+  "2511.14522": {
+    "arxiv_id": "2511.14522",
+    "title": "Analytic theory of shear localization in amorphous solids confined by Couette geometry",
+    "authors": [
+      "Yang Fu",
+      "Yuliang Jin",
+      "Itamar Procaccia"
+    ],
+    "submission_date": "2025-11-18T14:20:28Z",
+    "latest_updated": "2026-06-25T00:12:00Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.14522v1",
+      "2511.14522v2"
+    ],
+    "abstract": "``Couette geometry'' refers to two concentric rings in 2-dimensions (or cylinders in 3-dimensions with a medium in between). Typically the inner and outer rings (or cylinders) rotate at different rates and the response of the medium is studied. Here we study a medium which is a two-dimensional amorphous solid, and we rotate the inner ring quasi-statically. As stress accumulates, plastic avalanches can result in shear localization, characterized by adjacent parts of the system rotating in opposite directions, with the maximum shear localized between them. We derive an analytic theory that describes and explains the shear localization, providing a-priori predictions for the angle-averaged displacement field associated with the plastic drops and the shear localization.",
+    "status": "found"
+  },
+  "2511.14523": {
+    "arxiv_id": "2511.14523",
+    "title": "Teaching Longitudinal Linear Mixed Models End-to-End: A Reproducible Case Study in Mouse Body-Weight Growth",
+    "authors": [
+      "Sunday A. Adetunji"
+    ],
+    "submission_date": "2025-11-18T14:22:51Z",
+    "latest_updated": "2025-11-18T14:22:51Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.14523v1"
+    ],
+    "abstract": "Background: Linear mixed-effects models are central for analyzing longitudinal continuous data, yet many learners meet them as scattered formulas or software output rather than as a coherent workflow. There is a need for a single, reproducible case study that links questions, model building, diagnostics, and interpretation. Methods: We reanalyze a published mouse body-weight experiment with 31 mice in three groups weighed weekly for 12 weeks. After reshaping the data to long format and using profile plots to motivate linear time trends, we fit three random-intercept linear mixed models: a common-slope model, a fully interacted group-by-time model, and a parsimonious model with group-specific intercepts, a shared slope for two groups, and an extra slope for the third. Models are compared using maximum likelihood, AIC, BIC, and likelihood ratio tests, and linear contrasts are used to estimate group differences in weekly means and 12 week gains. Results: The parsimonious model fits as well as the fully interacted model and clearly outperforms the common-slope model, revealing small and similar gains in two groups and much steeper growth in the third, with highly significant contrasts for excess weight gain. Interpretation: This case study gives a complete, executable workflow for longitudinal linear mixed modeling, from raw data and exploratory plots through model selection, diagnostics, and targeted contrasts. By making explicit the mapping from scientific questions to model terms and estimable contrasts, and by providing R code and a stepwise checklist, it serves as a practical template for teaching and applied work in biostatistics, epidemiology, and related fields",
+    "status": "found"
+  },
+  "2511.14524": {
+    "arxiv_id": "2511.14524",
+    "title": "Compression with Privacy-Preserving Random Access",
+    "authors": [
+      "Venkat Chandar",
+      "Aslan Tchamkerten",
+      "Shashank Vatedka"
+    ],
+    "submission_date": "2025-11-18T14:24:25Z",
+    "latest_updated": "2026-07-10T16:32:01Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.14524v1",
+      "2511.14524v2"
+    ],
+    "abstract": "We show that an i.i.d.\\ binary source sequence $X_1,\\ldots,X_n$ can be losslessly compressed at any rate above entropy while ensuring that the decoding of any $X_i$ reveals no information about the remaining symbols $\\{X_j : j \\neq i\\}$. This problem reduces to a marginal consistency problem induced by the simultaneous privacy and reliability constraints. To address it, we develop a technique based on a geometric representation of codeword distributions, which may be of independent interest.",
+    "status": "found"
+  },
+  "2511.14525": {
+    "arxiv_id": "2511.14525",
+    "title": "Charged Higgs bosons associated with neutral gauge bosons at future multi--TeV muon colliders",
+    "authors": [
+      "Khiem Hong Phan",
+      "Quang Hoang-Minh Pham"
+    ],
+    "submission_date": "2025-11-18T14:24:36Z",
+    "latest_updated": "2025-11-18T14:24:36Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.14525v1"
+    ],
+    "abstract": "The first results for charged Higgs pair production associated with neutral gauge bosons at future multi--TeV muon colliders are presented within the framework of the Two-Higgs-Doublet Model. In the phenomenological studies for the production processes, we first update the parameter space of the Type-X Two-Higgs-Doublet Model. From the viable regions of the parameter space, we compute the production cross sections, including all two-body decay modes of the charged Higgs boson. We mention that all two-body decay modes of the charged Higgs boson are evaluated with one-loop electroweak corrections, with two-loop QCD corrections also included for the decays of the charged Higgs into two fermions. The signal significances are also examined for several benchmark points within the updated parameter space. It is worth emphasizing that the production cross sections used for computing the significances in this work include initial-state radiation corrections up to two-loop order. With the help of the high integrated luminosity planned for future multi--TeV muon colliders, the production signals can be observed with a statistical significance exceeding $5σ$ for several selected points within the allowed parameter space.",
+    "status": "found"
+  },
+  "2511.14526": {
+    "arxiv_id": "2511.14526",
+    "title": "A note on embracing exchange sequences in oriented matroids",
+    "authors": [
+      "Kristóf Bérczi",
+      "Benedek Nádor"
+    ],
+    "submission_date": "2025-11-18T14:25:15Z",
+    "latest_updated": "2025-11-23T12:05:13Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2511.14526v1",
+      "2511.14526v2"
+    ],
+    "abstract": "An open problem in convex geometry asks whether two simplices $A,B\\subseteq\\mathbb{R}^d$, both containing the origin in their convex hulls, admit a polynomial-length sequence of vertex exchanges transforming $A$ into $B$ while maintaining the origin in the convex hull throughout. We propose a matroidal generalization of the problem to oriented matroids, concerning exchange sequences between bases under sign constraints on elements appearing in certain fundamental circuits. We formulate a conjecture on the minimum length of such a sequence, and prove it for oriented graphic matroids of directed graphs. We also study connections between our conjecture and several long-standing open problems on exchange sequences between pairs of bases in unoriented matroids.",
+    "status": "found"
+  },
+  "2511.14527": {
+    "arxiv_id": "2511.14527",
+    "title": "Stratospheric Grid: A Wireless Power Transfer Enabled HAP Network with Integrated Generation-Grid-Load-Storage Functions",
+    "authors": [
+      "Peng Wang",
+      "Eros Kuikel",
+      "Jia Ye",
+      "Mohamed-Slim Alouini"
+    ],
+    "submission_date": "2025-11-18T14:32:20Z",
+    "latest_updated": "2025-11-18T14:32:20Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.14527v1"
+    ],
+    "abstract": "Conventional high-altitude platforms (HAPs) face challenges in achieving continuous all-weather operation due to intermittent photovoltaic power generation, limited energy storage capacity, and high mission loads resulting from functional integration. To address this fundamental issue, we propose a stratospheric energy grid in which wireless power transfer (WPT) interconnections constitute the grid layer, while HAPs operate as dynamically reconfigurable integrated generation-grid-load-storage (IGGLS) nodes that harvest, buffer, consume, and peer-to-peer transfer energy for constellation-level balancing and resilience. In this system, each HAP node can flexibly switch among energy source, load, and storage roles according to its energy status and mission requirements, enabling energy exchange and spatiotemporal optimization within the stratosphere. Through cooperative scheduling, the stratospheric grid not only enables surplus-to-deficit energy support among HAPs but also extends upward to satellites and downward to the terrestrial grid and communication infrastructure, forming a heterogeneous, WPT-mediated interconnection. As an IGGLS ecosystem, it exploits peer-to-peer energy logistics, spatiotemporal smoothing of intermittency, cross-domain backup via the terrestrial grid, and service-aware dispatch, thereby boosting overall energy utilization and operational resilience. The proposed approach is validated through case studies, and we delineate an agenda of feasible research directions.",
+    "status": "found"
+  },
+  "2511.14528": {
+    "arxiv_id": "2511.14528",
+    "title": "LLM-Assisted Thematic Analysis: Opportunities, Limitations, and Recommendations",
+    "authors": [
+      "Tatiane Ornelas",
+      "Allysson Allex Araújo",
+      "Júlia Araújo",
+      "Marina Araújo",
+      "Bianca Trinkenreich",
+      "Marcos Kalinowski"
+    ],
+    "submission_date": "2025-11-18T14:32:48Z",
+    "latest_updated": "2025-11-18T14:32:48Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2511.14528v1"
+    ],
+    "abstract": "[Context] Large Language Models (LLMs) are increasingly used to assist qualitative research in Software Engineering (SE), yet the methodological implications of this usage remain underexplored. Their integration into interpretive processes such as thematic analysis raises fundamental questions about rigor, transparency, and researcher agency. [Objective] This study investigates how experienced SE researchers conceptualize the opportunities, risks, and methodological implications of integrating LLMs into thematic analysis. [Method] A reflective workshop with 25 ISERN researchers guided participants through structured discussions of LLM-assisted open coding, theme generation, and theme reviewing, using color-coded canvases to document perceived opportunities, limitations, and recommendations. [Results] Participants recognized potential efficiency and scalability gains, but highlighted risks related to bias, contextual loss, reproducibility, and the rapid evolution of LLMs. They also emphasized the need for prompting literacy and continuous human oversight. [Conclusion] Findings portray LLMs as tools that can support, but not substitute, interpretive analysis. The study contributes to ongoing community reflections on how LLMs can responsibly enhance qualitative research in SE.",
+    "status": "found"
+  }
+}

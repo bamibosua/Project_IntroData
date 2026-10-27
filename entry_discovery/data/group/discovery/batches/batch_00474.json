@@ -1,0 +1,434 @@
+{
+  "2601.22636": {
+    "arxiv_id": "2601.22636",
+    "title": "Statistical Estimation of Adversarial Risk in Large Language Models under Best-of-N Sampling",
+    "authors": [
+      "Mingqian Feng",
+      "Xiaodong Liu",
+      "Weiwei Yang",
+      "Chenliang Xu",
+      "Christopher White",
+      "Jianfeng Gao"
+    ],
+    "submission_date": "2026-01-30T06:54:35Z",
+    "latest_updated": "2026-02-08T19:08:41Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.22636v1",
+      "2601.22636v2"
+    ],
+    "abstract": "Large Language Models (LLMs) are typically evaluated for safety under single-shot or low-budget adversarial prompting, which underestimates real-world risk. In practice, attackers can exploit large-scale parallel sampling to repeatedly probe a model until a harmful response is produced. While recent work shows that attack success increases with repeated sampling, principled methods for predicting large-scale adversarial risk remain limited. We propose a scaling-aware Best-of-N estimation of risk, SABER, for modeling jailbreak vulnerability under Best-of-N sampling. We model sample-level success probabilities using a Beta distribution, the conjugate prior of the Bernoulli distribution, and derive an analytic scaling law that enables reliable extrapolation of large-N attack success rates from small-budget measurements. Using only n=100 samples, our anchored estimator predicts ASR@1000 with a mean absolute error of 1.66, compared to 12.04 for the baseline, which is an 86.2% reduction in estimation error. Our results reveal heterogeneous risk scaling profiles and show that models appearing robust under standard evaluation can experience rapid nonlinear risk amplification under parallel adversarial pressure. This work provides a low-cost, scalable methodology for realistic LLM safety assessment. We will release our code and evaluation scripts upon publication to future research.",
+    "status": "found"
+  },
+  "2601.22637": {
+    "arxiv_id": "2601.22637",
+    "title": "Training Beyond Convergence: Grokking nnU-Net for Glioma Segmentation in Sub-Saharan MRI",
+    "authors": [
+      "Mohtady Barakat",
+      "Omar Salah",
+      "Ahmed Yasser",
+      "Mostafa Ahmed",
+      "Zahirul Arief",
+      "Waleed Khan",
+      "Dong Zhang",
+      "Aondona Iorumbur",
+      "Confidence Raymond",
+      "Mohannad Barakat",
+      "Noha Magdy"
+    ],
+    "submission_date": "2026-01-30T06:54:49Z",
+    "latest_updated": "2026-01-30T06:54:49Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22637v1"
+    ],
+    "abstract": "Gliomas are placing an increasingly clinical burden on Sub-Saharan Africa (SSA). In the region, the median survival for patients remains under two years, and access to diagnostic imaging is extremely limited. These constraints highlight an urgent need for automated tools that can extract the maximum possible information from each available scan, tools that are specifically trained on local data, rather than adapted from high-income settings where conditions are vastly different. We utilize the Brain Tumor Segmentation (BraTS) Africa 2025 Challenge dataset, an expert annotated collection of glioma MRIs. Our objectives are: (i) establish a strong baseline with nnUNet on this dataset, and (ii) explore whether the celebrated \"grokking\" phenomenon an abrupt, late training jump from memorization to superior generalization can be triggered to push performance without extra labels. We evaluate two training regimes. The first is a fast, budget-conscious approach that limits optimization to just a few epochs, reflecting the constrained GPU resources typically available in African institutions. Despite this limitation, nnUNet achieves strong Dice scores: 92.3% for whole tumor (WH), 86.6% for tumor core (TC), and 86.3% for enhancing tumor (ET). The second regime extends training well beyond the point of convergence, aiming to trigger a grokking-driven performance leap. With this approach, we were able to achieve grokking and enhanced our results to higher Dice scores: 92.2% for whole tumor (WH), 90.1% for tumor core (TC), and 90.2% for enhancing tumor (ET).",
+    "status": "found"
+  },
+  "2601.22638": {
+    "arxiv_id": "2601.22638",
+    "title": "ScholarPeer: A Context-Aware Multi-Agent Framework for Automated Peer Review",
+    "authors": [
+      "Palash Goyal",
+      "Mihir Parmar",
+      "Yiwen Song",
+      "Hamid Palangi",
+      "Tomas Pfister",
+      "Jinsung Yoon"
+    ],
+    "submission_date": "2026-01-30T06:54:55Z",
+    "latest_updated": "2026-05-09T21:03:52Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.22638v1",
+      "2601.22638v2"
+    ],
+    "abstract": "The exponential growth of machine learning submissions has strained the traditional peer review process, resulting in slow feedback loops for authors and an immense burden on reviewers to rigorously audit technical soundness and verify literature. To address this, we introduce ScholarPeer, a multi-agent framework designed to operationalize the rigorous auditing workflow of a senior researcher. Rather than attempting to replace human judgment, ScholarPeer serves as a co-scientist: acting as a mentor for rapid author iteration prior to submission, and as an active verification assistant that augments human reviewers. The framework structurally decouples contextualization from critique by deploying a sub-domain historian to synthesize the field's trajectory, a baseline scout to proactively hunt for omitted state-of-the-art comparisons, and a multi-aspect Q&A engine that deeply audits technical soundness-scrutinizing internal logical consistency, experimental validity, and mathematical rigor-while cross-referencing claims against top-tier academic venues. We comprehensively evaluate ScholarPeer on ~1,800 ICLR submissions spanning 2020 through 2025. Our results show that ScholarPeer achieves significant win-rates against state-of-the-art fine-tuned models and search-augmented agentic baselines.",
+    "status": "found"
+  },
+  "2601.22639": {
+    "arxiv_id": "2601.22639",
+    "title": "Spin quantum Hall transition on random networks: exact critical exponents via quantum gravity",
+    "authors": [
+      "Esteban Macías",
+      "Ilya Gruzberg",
+      "Eldad Bettelheim"
+    ],
+    "submission_date": "2026-01-30T06:54:56Z",
+    "latest_updated": "2026-10-05T17:32:49Z",
+    "revised_dates": null,
+    "venue": "Phys. Rev. B (2026) 114, L231402",
+    "latest_version": 2,
+    "versions": [
+      "2601.22639v1",
+      "2601.22639v2"
+    ],
+    "abstract": "We solve the problem of the spin quantum Hall transition on random networks using a mapping to classical percolation that focuses on the boundary of percolating clusters. Using tools of two-dimensional quantum gravity, we compute critical exponents that characterize this transition and confirm that these are related to the exponents for the regular (square) network through the KPZ relation. Our results demonstrate the relevance of the geometric randomness of the networks and support conclusions of numerical simulations of random networks for the integer quantum Hall transition.",
+    "status": "found"
+  },
+  "2601.22640": {
+    "arxiv_id": "2601.22640",
+    "title": "Unconventional Distance Scaling of Casimir-Polder Force between Atomic Arrays",
+    "authors": [
+      "Qihang Ye",
+      "Qihang Ye",
+      "Bing Miao",
+      "Lei Ying"
+    ],
+    "submission_date": "2026-01-30T06:57:40Z",
+    "latest_updated": "2026-01-30T06:57:40Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22640v1"
+    ],
+    "abstract": "Conventionally, dispersion forces mediated by quantum vacuum fluctuations are known to exhibit universal distance scalings, with retardation typically leading to a faster decay of the interaction. Here, we show that this expectation fails for intrinsically discrete systems. Using the microscopic scattering approach, we study the Casimir-Polder interaction between two atomic arrays, and uncover an unconventional distance scaling in which the force crosses over from a faster decay at short separations to a slower decay in the retarded regime. This behavior originates from the discrete lattice structure and can be consistently understood within the scattering picture. Extending our analysis to Rydberg atomic arrays, we predict an even stronger deviation from conventional scaling and propose an experimentally feasible scheme for direct measurement. Our results provide a new platform for exploring dispersion forces beyond the continuum limit.",
+    "status": "found"
+  },
+  "2601.22641": {
+    "arxiv_id": "2601.22641",
+    "title": "A Toy Model for the Cycle Rank Dependence of Stretch at Break in Phantom Chain Network Simulations",
+    "authors": [
+      "Yuichi Masubuchi"
+    ],
+    "submission_date": "2026-01-30T06:59:09Z",
+    "latest_updated": "2026-05-10T22:45:30Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.22641v1",
+      "2601.22641v2"
+    ],
+    "abstract": "The relationship between the topological architecture of polymer networks and their macroscopic rupture remains a fundamental challenge in polymer physics. Recent coarse-grained simulations have revealed that the dependence of stretch at break (λ_b) on node functionality and reaction conversion can be unified into a universal master curve when plotted against the cycle rank density (ξ). However, a theoretical derivation explaining this universality has been lacking. This study proposes a simple mechanical model to describe the ξ-dependence of λ_b. The polymer network is modeled as a mechanical system consisting of a sequence of springs representing localized, highly stretched strands and the surrounding unstretched network. By relating the stiffness contrast between these regions to the network connectivity defined by ξ, an analytical expression for the stretch at break is derived: λ_b-1\\propto\\sfrac{\\left(3ξ+6\\right)}{\\left(3ξ+2\\right)}\\ . The proposed model is validated against phantom chain simulations using both Gaussian and finite extensibility (FENE) springs. The theoretical prediction shows reasonable agreement with simulation data, providing a physical basis for the phenomenological universality observed in polymer network rupture.",
+    "status": "found"
+  },
+  "2601.22642": {
+    "arxiv_id": "2601.22642",
+    "title": "Pushing the Boundaries of Natural Reasoning: Interleaved Bonus from Formal-Logic Verification",
+    "authors": [
+      "Chuxue Cao",
+      "Jinluan Yang",
+      "Haoran Li",
+      "Kunhao Pan",
+      "Zijian Zhao",
+      "Zhengyu Chen",
+      "Yuchen Tian",
+      "Lijun Wu",
+      "Conghui He",
+      "Sirui Han",
+      "Yike Guo"
+    ],
+    "submission_date": "2026-01-30T07:01:25Z",
+    "latest_updated": "2026-06-15T09:42:06Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.22642v1",
+      "2601.22642v2"
+    ],
+    "abstract": "Large Language Models (LLMs) show remarkable capabilities, yet their stochastic next-token prediction creates logical inconsistencies and reward hacking that formal symbolic systems avoid. To bridge this gap, we introduce a formal logic verification-guided framework that dynamically interleaves formal symbolic verification with the natural language generation process, providing real-time feedback to detect and rectify errors as they occur. Distinguished from previous neuro-symbolic methods limited by passive post-hoc validation, our approach actively penalizes intermediate fallacies during the reasoning chain. We operationalize this framework via a novel two-stage training pipeline that synergizes formal logic verification-guided supervised fine-tuning and policy optimization. Extensive evaluation on six benchmarks spanning mathematical, logical, and general reasoning demonstrates that our 7B and 14B models outperform state-of-the-art baselines by average margins of 10.4% and 14.2%, respectively. These results validate that formal verification can serve as a scalable mechanism to significantly push the performance boundaries of advanced LLM reasoning.",
+    "status": "found"
+  },
+  "2601.22643": {
+    "arxiv_id": "2601.22643",
+    "title": "Maximal Prikry Sequences",
+    "authors": [
+      "Ernest Schimmerling",
+      "Jiaming Zhang"
+    ],
+    "submission_date": "2026-01-30T07:02:07Z",
+    "latest_updated": "2026-02-02T16:09:01Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.22643v1",
+      "2601.22643v2"
+    ],
+    "abstract": "In this paper we investigate the covering machinery of the Jensen-Steel core model $K$, under the hypothesis that there is no inner model with a Woodin cardinal. In an earlier work, Mitchell and the first author showed that if $ν>ω_2$ is a regular cardinal in $K$ but a singular ordinal in $V$, then $ν$ is a measurable cardinal in $K$. In this article, we further show that under certain circumstances, there exists a maximal Prikry sequence $C$ for a measure on $ν$ in $K$. The first author shows that the anti-large cardinal hypothesis is necessary. In a more restrictive setting, we prove that every subset of $ν$ with size $<|ν|$ can be covered by a set in $K[C]$ with size $<|ν|$. Benhamou and the first author show that the result is optimal.",
+    "status": "found"
+  },
+  "2601.22644": {
+    "arxiv_id": "2601.22644",
+    "title": "Nonlocal Corrections to Scalar Field Effective Action in de Sitter spacetime",
+    "authors": [
+      "Will Cerne",
+      "Teruaki Suyama"
+    ],
+    "submission_date": "2026-01-30T07:02:39Z",
+    "latest_updated": "2026-01-30T07:02:39Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22644v1"
+    ],
+    "abstract": "We investigate the one-loop effective action for a test scalar field in a general Friedmann-Lemaître-Robertson-Walker (FLRW) background, specifically focusing on quantum corrections up to the second order in the interaction strength. By employing the Schwinger-Keldysh formalism, we derive the equation of motion for the field expectation value, which incorporates not only the standard local radiative corrections but also novel nonlocal features: a memory term and a stochastic noise term. We identify all ultraviolet divergent structures within these nonlocal terms and provide a consistent renormalization procedure. To analyze the physical impact of these terms, we apply a local approximation under the assumption of slowly-varying fields, by which the memory term acts as a negative contribution to the drift coefficient. As a concrete application, we consider a massive $φ^4$ theory and show that these one-loop corrections lead to a suppression of the field variance in the infrared regime compared to the tree-level results.",
+    "status": "found"
+  },
+  "2601.22645": {
+    "arxiv_id": "2601.22645",
+    "title": "Beyond Medical Chatbots: Meddollina and the Rise of Continuous Clinical Intelligence",
+    "authors": [
+      "Vaibhav Ram S. V. N. S",
+      "Swetanshu Agrawal",
+      "Samudra Banerjee",
+      "Abdul Muhsin"
+    ],
+    "submission_date": "2026-01-30T07:05:14Z",
+    "latest_updated": "2026-01-30T07:05:14Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22645v1"
+    ],
+    "abstract": "Generative medical AI now appears fluent and knowledgeable enough to resemble clinical intelligence, encouraging the belief that scaling will make it safe. But clinical reasoning is not text generation. It is a responsibility-bound process under ambiguity, incomplete evidence, and longitudinal context. Even as benchmark scores rise, generation-centric systems still show behaviours incompatible with clinical deployment: premature closure, unjustified certainty, intent drift, and instability across multi-step decisions. We argue these are structural consequences of treating medicine as next-token prediction. We formalise Clinical Contextual Intelligence (CCI) as a distinct capability class required for real-world clinical use, defined by persistent context awareness, intent preservation, bounded inference, and principled deferral when evidence is insufficient. We introduce Meddollina, a governance-first clinical intelligence system designed to constrain inference before language realisation, prioritising clinical appropriateness over generative completeness. Meddollina acts as a continuous intelligence layer supporting clinical workflows while preserving clinician authority. We evaluate Meddollina using a behaviour-first regime across 16,412+ heterogeneous medical queries, benchmarking against general-purpose models, medical-tuned models, and retrieval-augmented systems. Meddollina exhibits a distinct behavioural profile: calibrated uncertainty, conservative reasoning under underspecification, stable longitudinal constraint adherence, and reduced speculative completion relative to generation-centric baselines. These results suggest deployable medical AI will not emerge from scaling alone, motivating a shift toward Continuous Clinical Intelligence, where progress is measured by clinician-aligned behaviour under uncertainty rather than fluency-driven completion.",
+    "status": "found"
+  },
+  "2601.22646": {
+    "arxiv_id": "2601.22646",
+    "title": "On the BSE and BED properties of the Beurling algebra $L^1(G,ω)$",
+    "authors": [
+      "Jekwin J. Dabhi",
+      "Prakash A. Dabhi"
+    ],
+    "submission_date": "2026-01-30T07:05:15Z",
+    "latest_updated": "2026-01-30T07:05:15Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22646v1"
+    ],
+    "abstract": "Let $G$ be a locally compact abelian group, and let $ω:G \\to [1,\\infty)$ be a weight, i.e., $ω$ is measurable, $ω$ is locally bounded and $ω(s+t)\\leq ω(s)ω(t)$ for all $s, t \\in G$. If $ω^{-1}$ is vanishing at infinity, then we show that the Beurling algebra $L^1(G,ω)$ is both BSE- algebra and BED- algebra.",
+    "status": "found"
+  },
+  "2601.22647": {
+    "arxiv_id": "2601.22647",
+    "title": "Test-Time Mixture of World Models for Embodied Agents in Dynamic Environments",
+    "authors": [
+      "Jinwoo Jang",
+      "Minjong Yoo",
+      "Sihyung Yoon",
+      "Honguk Woo"
+    ],
+    "submission_date": "2026-01-30T07:06:40Z",
+    "latest_updated": "2026-01-30T07:06:40Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22647v1"
+    ],
+    "abstract": "Language model (LM)-based embodied agents are increasingly deployed in real-world settings. Yet, their adaptability remains limited in dynamic environments, where constructing accurate and flexible world models is crucial for effective reasoning and decision-making. To address this challenge, we extend the Mixture-of-Experts (MoE) paradigm to embodied agents. While conventional MoE architectures modularize knowledge into expert components with pre-trained routing, they remain rigid once deployed, making them less effective for adapting to unseen domains in dynamic environments. We therefore propose Test-time Mixture of World Models (TMoW), a framework that enhances adaptability to unseen and evolving domains. TMoW updates its routing function over world models at test time, unlike conventional MoE where the function remains fixed, enabling agents to recombine existing models and integrate new ones for continual adaptation. It achieves this through (i) multi-granular prototype-based routing, which adapts mixtures across object- to scene-level similarities, (ii) test-time refinement that aligns unseen domain features with prototypes during inference, and (iii) distilled mixture-based augmentation, which efficiently constructs new models from few-shot data and existing prototypes. We evaluate TMoW on VirtualHome, ALFWorld, and RLBench benchmarks, demonstrating strong performance in both zero-shot adaptation and few-shot expansion scenarios, and showing that it enables embodied agents to operate effectively in dynamic environments.",
+    "status": "found"
+  },
+  "2601.22648": {
+    "arxiv_id": "2601.22648",
+    "title": "UCPO: Uncertainty-Aware Policy Optimization",
+    "authors": [
+      "Xianzhou Zeng",
+      "Jing Huang",
+      "Chunmei Xie",
+      "Gongrui Nan",
+      "Siye Chen",
+      "Mengyu Lu",
+      "Weiqi Xiong",
+      "Qixuan Zhou",
+      "Junhao Zhang",
+      "Qiang Zhu",
+      "Yadong Li",
+      "Xingzhong Xu"
+    ],
+    "submission_date": "2026-01-30T07:07:42Z",
+    "latest_updated": "2026-05-26T11:07:20Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.22648v1",
+      "2601.22648v2"
+    ],
+    "abstract": "The key to building trustworthy large language models (LLMs) lies in endowing them with inherent uncertainty expression capabilities, thereby mitigating overconfident errors in high-stakes applications. However, existing RL paradigms such as GRPO often suffer from Advantage Bias due to binary decision spaces and static uncertainty rewards, inducing either excessive conservatism or overconfidence. To tackle this challenge, this paper unveils the root causes of reward hacking and overconfidence in current RL paradigms incorporating uncertainty-based rewards, based on which we propose the UnCertainty-Aware Policy Optimization (UCPO) framework. UCPO employs Ternary Advantage Decoupling to separate and independently normalize deterministic and uncertain rollouts, thereby eliminating advantage bias. Furthermore, a Dynamic Uncertainty Reward Adjustment mechanism adapts uncertainty weights in real-time according to model evolution and instance difficulty. Experimental results in mathematical reasoning and general tasks demonstrate that UCPO effectively resolves the reward imbalance, significantly improving the reliability of the model beyond their knowledge boundaries.",
+    "status": "found"
+  },
+  "2601.22649": {
+    "arxiv_id": "2601.22649",
+    "title": "Multisets of finite intervals and a universal category of poset representations",
+    "authors": [
+      "Henning Krause",
+      "Balduin Stoye"
+    ],
+    "submission_date": "2026-01-30T07:07:44Z",
+    "latest_updated": "2026-07-27T06:05:23Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.22649v1",
+      "2601.22649v2"
+    ],
+    "abstract": "For any finite totally ordered set, the multisets of intervals form an abelian category. Various classes of subcategories admit natural combinatorial descriptions, and counting them yields familiar integer sequences, including Catalan and large Schröder numbers. Surprisingly, in some cases new integer sequences arise. The formulation of this counting problem leads to a universal construction which assigns to any poset a finitely cocomplete additive category; it is abelian when the poset is finite and does not depend on the choice of any ring of coefficients. For a general poset the universal category of representations is abelian if and only if for the lattice of ideals the meet of two compact elements is again compact.",
+    "status": "found"
+  },
+  "2601.22650": {
+    "arxiv_id": "2601.22650",
+    "title": "Generative and Nonparametric Approaches for Conditional Distribution Estimation: Methods, Perspectives, and Comparative Evaluations",
+    "authors": [
+      "Yen-Shiu Chin",
+      "Zhi-Yu Jou",
+      "Toshinari Morimoto",
+      "Chia-Tse Wang",
+      "Ming-Chung Chang",
+      "Tso-Jung Yen",
+      "Su-Yun Huang",
+      "Tailen Hsing"
+    ],
+    "submission_date": "2026-01-30T07:10:36Z",
+    "latest_updated": "2026-01-30T07:10:36Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22650v1"
+    ],
+    "abstract": "The inference of conditional distributions is a fundamental problem in statistics, essential for prediction, uncertainty quantification, and probabilistic modeling. A wide range of methodologies have been developed for this task. This article reviews and compares several representative approaches spanning classical nonparametric methods and modern generative models. We begin with the single-index method of Hall and Yao (2005), which estimates the conditional distribution through a dimension-reducing index and nonparametric smoothing of the resulting one-dimensional cumulative conditional distribution function. We then examine the basis-expansion approaches, including FlexCode (Izbicki and Lee, 2017) and DeepCDE (Dalmasso et al., 2020), which convert conditional density estimation into a set of nonparametric regression problems. In addition, we discuss two recent generative simulation-based methods that leverage modern deep generative architectures: the generative conditional distribution sampler (Zhou et al., 2023) and the conditional denoising diffusion probabilistic model (Fu et al., 2024; Yang et al., 2025). A systematic numerical comparison of these approaches is provided using a unified evaluation framework that ensures fairness and reproducibility. The performance metrics used for the estimated conditional distribution include the mean-squared errors of conditional mean and standard deviation, as well as the Wasserstein distance. We also discuss their flexibility and computational costs, highlighting the distinct advantages and limitations of each approach.",
+    "status": "found"
+  },
+  "2601.22651": {
+    "arxiv_id": "2601.22651",
+    "title": "GUDA: Counterfactual Group-wise Training Data Attribution for Diffusion Models via Unlearning",
+    "authors": [
+      "Naoki Murata",
+      "Yuhta Takida",
+      "Chieh-Hsin Lai",
+      "Toshimitsu Uesaka",
+      "Bac Nguyen",
+      "Stefano Ermon",
+      "Yuki Mitsufuji"
+    ],
+    "submission_date": "2026-01-30T07:10:59Z",
+    "latest_updated": "2026-06-01T06:29:25Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.22651v1",
+      "2601.22651v2"
+    ],
+    "abstract": "Training-data attribution for vision generative models aims to identify which training data influenced a given output. While most methods score individual examples, practitioners often need group-level answers (e.g., artistic styles or object classes). Group-wise attribution is counterfactual: how would a model's behavior on a generated sample change if a group were absent from training? A natural realization of this counterfactual is Leave-One-Group-Out (LOGO) retraining, which retrains the model with each group removed; however, it becomes computationally prohibitive as the number of groups grows. We propose GUDA (Group Unlearning-based Data Attribution) for diffusion models, which approximates each counterfactual model by applying machine unlearning to a shared full-data model instead of training from scratch. GUDA quantifies group influence using differences in a likelihood-based scoring rule (ELBO) between the full model and each unlearned counterfactual. Experiments on CIFAR-10 and artistic style attribution with Stable Diffusion show that GUDA identifies primary contributing groups more reliably than semantic similarity, gradient-based attribution, and instance-level unlearning approaches, while achieving ~100x speedup on CIFAR-10 over LOGO retraining.",
+    "status": "found"
+  },
+  "2601.22652": {
+    "arxiv_id": "2601.22652",
+    "title": "Spectral Gradient Descent Mitigates Anisotropy-Driven Misalignment: A Case Study in Phase Retrieval",
+    "authors": [
+      "Guillaume Braun",
+      "Han Bao",
+      "Wei Huang",
+      "Masaaki Imaizumi"
+    ],
+    "submission_date": "2026-01-30T07:12:58Z",
+    "latest_updated": "2026-07-04T06:33:36Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 2,
+    "versions": [
+      "2601.22652v1",
+      "2601.22652v2"
+    ],
+    "abstract": "Spectral gradient methods, such as the Muon optimizer, modify gradient updates by preserving directional information while discarding scale, and have shown strong empirical performance in deep learning. We investigate the mechanisms underlying these gains through a dynamical analysis of a nonlinear phase retrieval model with anisotropic Gaussian inputs, equivalent to training a two-layer neural network with the quadratic activation and fixed second-layer weights. Focusing on a spiked covariance setting where the dominant variance direction is orthogonal to the signal, we show that gradient descent (GD) suffers from a variance-induced misalignment: during the early escaping stage, the high-variance but uninformative spike direction is multiplicatively amplified, degrading alignment with the true signal under strong anisotropy. In contrast, spectral gradient descent (SpecGD) removes this spike amplification effect, leading to stable alignment and accelerated noise contraction. Numerical experiments confirm the theory and show that these phenomena persist under broader anisotropic covariances.",
+    "status": "found"
+  },
+  "2601.22653": {
+    "arxiv_id": "2601.22653",
+    "title": "Human-Centered Explainability in AI-Enhanced UI Security Interfaces: Designing Trustworthy Copilots for Cybersecurity Analysts",
+    "authors": [
+      "Mona Rajhans"
+    ],
+    "submission_date": "2026-01-30T07:18:20Z",
+    "latest_updated": "2026-01-30T07:18:20Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22653v1"
+    ],
+    "abstract": "Artificial intelligence (AI) copilots are increasingly integrated into enterprise cybersecurity platforms to assist analysts in threat detection, triage, and remediation. However, the effectiveness of these systems depends not only on the accuracy of underlying models but also on the degree to which users can understand and trust their outputs. Existing research on algorithmic explainability has largely focused on model internals, while little attention has been given to how explanations should be surfaced in user interfaces for high-stakes decision-making contexts [8], [5], [6]. We present a mixed-methods study of explanation design strategies in AI-driven security dashboards. Through a taxonomy of explanation styles and a controlled user study with security practitioners, we compare natural language rationales, confidence visualizations, counterfactual explanations, and hybrid approaches. Our findings show that explanation style significantly affects user trust calibration, decision accuracy, and cognitive load. We contribute (1) empirical evidence on the usability of explanation interfaces for security copilots, (2) design guidelines for integrating explainability into enterprise UIs, and (3) a framework for aligning explanation strategies with analyst needs in security operations centers (SOCs). This work advances the design of human-centered AI tools in cybersecurity and provides broader implications for explainability in other high-stakes domains.",
+    "status": "found"
+  },
+  "2601.22654": {
+    "arxiv_id": "2601.22654",
+    "title": "Parameter conditioned interpretable U-Net surrogate model for data-driven predictions of convection-diffusion-reaction processes",
+    "authors": [
+      "Michael Urs Lars Kastor",
+      "Jan Rottmayer",
+      "Anna Hundertmark",
+      "Nicolas Ralph Gauger"
+    ],
+    "submission_date": "2026-01-30T07:18:22Z",
+    "latest_updated": "2026-01-30T07:18:22Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 1,
+    "versions": [
+      "2601.22654v1"
+    ],
+    "abstract": "We present a combined numerical and data-driven workflow for efficient prediction of nonlinear, instationary convection-diffusion-reaction dynamics on a two-dimensional phenotypic domain, motivated by macroscopic modeling of cancer cell plasticity. A finite-difference solver, implemented in C++, is developed using second-order spatial discretizations and a step-size controlled Runge-Kutta time integrator. A mesh refinement study confirms the second-order convergence for the spatial discretizations error. Based on simulated input-output pairs and corresponding parameterizations for the diffusion, advection, and reaction mechanisms, we train a parameter-conditioned U-Net surrogate to approximate the fixed-horizon solution map. The surrogate incorporates Feature-wise Linear Modulation (FiLM) for parameter conditioning, coordinate encoding to incorporate spatial location information, and residual blocks to enable multiscale representation learning in combination with the U-Nets skip connections. The trained model achieves low prediction error on held-out test data and provides favorable prediction times due to the GPU based parallelization. Generalization is analyzed using a factorial test dataset, separating initial conditions from parameter conditioning. The results reveal that approximation difficulty varies primarily with the conditioning vector (i.e., the induced PDE regime), rather than with the initial conditions.",
+    "status": "found"
+  },
+  "2601.22655": {
+    "arxiv_id": "2601.22655",
+    "title": "Do Fine-Tuned LLMs Understand Vulnerabilities? An Investigation into the Semantic Trap",
+    "authors": [
+      "Feiyang Huang",
+      "Yuqiang Sun",
+      "Fan Zhang",
+      "Ziqi Yang",
+      "Han Liu",
+      "Yang Liu"
+    ],
+    "submission_date": "2026-01-30T07:19:17Z",
+    "latest_updated": "2026-05-21T13:02:56Z",
+    "revised_dates": null,
+    "venue": null,
+    "latest_version": 3,
+    "versions": [
+      "2601.22655v1",
+      "2601.22655v2",
+      "2601.22655v3"
+    ],
+    "abstract": "Large Language Models (LLMs) have shown promising performance in software vulnerability detection, particularly after domain-specific Supervised Fine-Tuning (SFT). However, it remains unclear whether these models genuinely internalize vulnerability root causes or merely exploit surface-level functional patterns. While prior work documented related failures on pre-trained or zero-shot models, the SFT process itself, and how explicit reasoning supervision modulates it, remains under-explored. We study fine-tuned decoder-only LLMs under vanilla SFT and SFT with reasoning supervision, identifying a failure mode we term the Semantic Trap, characterized by three symptoms: pairing-sensitive performance, gap-dictated decisions, and fragility to semantic-preserving changes. To probe this, we propose TrapEval, an evaluation framework comprising two real-world datasets, V2P (vulnerable paired with patched code) and V2N (vulnerable paired with unrelated normal code), alongside semantic perturbations, CodeBLEU-based gap analysis, and an LLM-assisted reasoning failure taxonomy. Evaluating five representative LLMs fine-tuned with and without explicit reasoning (Chain-of-Thought), our results show vanilla SFT yields deceptively high scores on unpaired data (V2N) while failing all three symptoms. Models suffer high false-positive rates on V2P, degrade under perturbations, and exhibit a systematic dependency on the textual gap between vulnerable and patched code. Finetuning with explicit reasoning reduces these symptoms but costs recall; its lack of measurable gap-dependency partly reflects a floor effect rather than escaping the trap. Furthermore, our taxonomy reveals these models still misinterpret control flow and hallucinate API behavior, indicating current fine-tuning mitigates but does not eliminate reliance on surface features.",
+    "status": "found"
+  }
+}
