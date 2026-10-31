@@ -122,9 +122,11 @@ def ensure_data_layout(input_path: Path, output_dir: Path) -> Path:
         shutil.move(str(LEGACY_INPUT_JSON), str(DEFAULT_INPUT_JSON))
         print(f"Moved input file: {LEGACY_INPUT_JSON} -> {DEFAULT_INPUT_JSON}", flush=True)
 
-    sources_dir = output_dir / "sources"
+    papers_dir = output_dir / "papers"
+    papers_dir.mkdir(parents=True, exist_ok=True)
+
     if output_dir == DEFAULT_OUTPUT_DIR and LEGACY_SOURCES_DIR.exists() and LEGACY_SOURCES_DIR.is_dir():
-        sources_dir.mkdir(parents=True, exist_ok=True)
+        papers_dir.mkdir(parents=True, exist_ok=True)
         status_path = output_dir / "download_status.json"
         migrated_status: dict[str, dict] = {}
         if status_path.exists():
@@ -137,7 +139,7 @@ def ensure_data_layout(input_path: Path, output_dir: Path) -> Path:
 
         for item in LEGACY_SOURCES_DIR.iterdir():
             if item.is_dir():
-                target = sources_dir / item.name
+                target = papers_dir / item.name
                 old_meta_path = item / "metadata.json"
                 if old_meta_path.exists():
                     try:
@@ -166,7 +168,7 @@ def ensure_data_layout(input_path: Path, output_dir: Path) -> Path:
             write_json_atomic(status_path, migrated_status)
         try:
             LEGACY_SOURCES_DIR.rmdir()
-            print(f"Migrated legacy folder: {LEGACY_SOURCES_DIR} -> {sources_dir}", flush=True)
+            print(f"Migrated legacy folder: {LEGACY_SOURCES_DIR} -> {papers_dir}", flush=True)
         except OSError:
             pass
 
@@ -1119,7 +1121,7 @@ def compute_directory_size_bytes(root: Path) -> int:
 
 
 def recover_status_from_disk_folder(paper_dir: Path, versions: list[str]) -> dict | None:
-    """Recover paper download status from existing `sources/<YYMM-NNNNN>/metadata.json` and `v1..vN` dirs on disk."""
+    """Recover paper download status from existing `papers/<YYMM-NNNNN>/metadata.json` and `v1..vN` dirs on disk."""
     meta_path = paper_dir / "metadata.json"
     if not meta_path.exists():
         return None
@@ -1569,8 +1571,8 @@ def download_corpus(
     entry_discovery_time_sec: float | None = None,
 ) -> dict:
     """Download full-text `.tex` and `.bib` sources using Parallel Multi-Threaded HTTP + S3 Bulk."""
-    sources_dir = output_dir / "sources"
-    sources_dir.mkdir(parents=True, exist_ok=True)
+    papers_dir = output_dir / "papers"
+    papers_dir.mkdir(parents=True, exist_ok=True)
     status_path = output_dir / "download_status.json"
     papers_table_path = output_dir / "papers.json"
     summary_path = output_dir / "download_summary.json"
@@ -1724,7 +1726,7 @@ def download_corpus(
                 versions: list[str] = paper.get("versions") or [
                     f"{arxiv_id}v{i}" for i in range(1, int(paper.get("latest_version", 1)) + 1)
                 ]
-                paper_dir = sources_dir / paper_folder_name(arxiv_id)
+                paper_dir = papers_dir / paper_folder_name(arxiv_id)
                 meta_path = paper_dir / "metadata.json"
 
                 prev_paper_status = all_status.get(arxiv_id, {})
@@ -1741,7 +1743,7 @@ def download_corpus(
                     )
                 )
 
-                # Auto-recover from disk `sources/<YYMM-NNNNN>/metadata.json` if missing in `download_status.json`
+                # Auto-recover from disk `papers/<YYMM-NNNNN>/metadata.json` if missing in `download_status.json`
                 if not all_versions_ready and not refresh and paper_dir.exists():
                     recovered = recover_status_from_disk_folder(paper_dir, versions)
                     if recovered is not None:
@@ -1804,7 +1806,7 @@ def download_corpus(
                 if recovered_from_disk_count > 0:
                     write_json_atomic(status_path, all_status)
                     print(
-                        f"[Disk Cache Recovery] Đã khôi phục tự động {recovered_from_disk_count} bài có sẵn trong {sources_dir}!",
+                        f"[Disk Cache Recovery] Đã khôi phục tự động {recovered_from_disk_count} bài có sẵn trong {papers_dir}!",
                         flush=True,
                     )
                     recovered_from_disk_count = 0
@@ -1907,7 +1909,7 @@ def download_corpus(
     completed_papers = papers_succeeded + papers_no_tex
     processed_versions = versions_succeeded + versions_no_tex + versions_failed
 
-    sources_disk_bytes = compute_directory_size_bytes(sources_dir)
+    papers_disk_bytes = compute_directory_size_bytes(papers_dir)
     total_output_disk_bytes = compute_directory_size_bytes(output_dir)
     peak_disk_bytes = total_output_disk_bytes + peak_temp_buffer_bytes
 
@@ -2016,13 +2018,13 @@ def download_corpus(
             ),
             "max_disk_storage_required_bytes": peak_disk_bytes,
             "max_disk_storage_required_mb": round(peak_disk_bytes / (1024 * 1024), 2),
-            "final_sources_storage_bytes": sources_disk_bytes,
-            "final_sources_storage_mb": round(sources_disk_bytes / (1024 * 1024), 2),
+            "final_papers_storage_bytes": papers_disk_bytes,
+            "final_papers_storage_mb": round(papers_disk_bytes / (1024 * 1024), 2),
             "final_output_storage_bytes": total_output_disk_bytes,
             "final_output_storage_mb": round(total_output_disk_bytes / (1024 * 1024), 2),
         },
         "output_paths": {
-            "sources_dir": str(sources_dir),
+            "papers_dir": str(papers_dir),
             "papers_table_json": str(papers_table_path),
             "download_status_json": str(status_path),
             "download_summary_json": str(summary_path),

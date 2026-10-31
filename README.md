@@ -24,7 +24,7 @@ Theo đúng yêu cầu của đề bài:
     │   ├── discovered_papers_with_revised_dates.json   # Input: Metadata + danh sách version từ bước Discovery
     │   └── team_ranges.json                            # Cấu hình khoảng arXiv ID của 4 thành viên
     └── output/
-        ├── sources/                                    # Corpus nguồn: mỗi bài báo 1 thư mục riêng
+        ├── papers/                                    # Corpus nguồn: mỗi bài báo 1 thư mục riêng
         │   ├── 2511-11709/                             # Tên thư mục theo quy ước <YYMM-NNNNN>
         │   │   ├── metadata.json                       # Metadata của bài báo & danh sách file từng version
         │   │   └── v1/                                 # Chỉ chứa các file .tex và .bib (đã loại bỏ hình ảnh)
@@ -88,6 +88,6 @@ python src/downloader.py --ids 2511.11709 2511.11710
 ```
 
 ### 3.5. Cơ chế Resume / Checkpoint tự động
-- Khi đang tải mà bấm `Ctrl + C` hoặc dừng giữa chừng, toàn bộ các bài đã tải đều được lưu trạng thái trong `data/output/download_status.json` và `data/output/sources/`.
+- Khi đang tải mà bấm `Ctrl + C` hoặc dừng giữa chừng, toàn bộ các bài đã tải đều được lưu trạng thái trong `data/output/download_status.json` và `data/output/papers/`.
 - Khi chạy lại cùng câu lệnh, chương trình sẽ bỏ qua các bài đã hoàn tất (`cached`) và chỉ tải tiếp những bài còn thiếu.
 - Nếu muốn tải lại từ đầu (ghi đè cache), thêm cờ `--refresh`.
