@@ -1,13 +1,3 @@
-"""arXiv Entry Discovery: metadata + FULL version revision dates, together.
-
-Python 3.10+ standard library. Works with the old Entry_Discovery_Group_M1
-metadata checkpoints without fetching the same metadata twice.
-
-The source data files are NEVER overwritten: the integrated result has its own
-filename. The command can be interrupted/restarted and is intentionally gentle
-on arXiv (one sequential request, >=3s between starts; pause on HTTP 429).
-"""
-
 import argparse
 import hashlib
 import json
@@ -40,7 +30,9 @@ def valid_date(value):
 
 
 def generate_ids(start: str, end: str) -> list[str]:
-    a, b = ID_PATTERN.fullmatch(start), ID_PATTERN.fullmatch(end)
+    a = ID_PATTERN.fullmatch(start)
+    b = ID_PATTERN.fullmatch(end)
+    
     if not a or not b:
         raise ValueError('IDs must look like 2609.12834')
     if a.group(1) != b.group(1):

@@ -1,4 +1,4 @@
-"""Two-pass, resumable arXiv metadata + revised dates crawler (Python 3.10+).
+"""Global Revision Batching, resumable arXiv metadata + revised dates crawler (Python 3.10+).
 
 Uses existing discovery.py parsing, checkpoint formats, API client and rate limiting.
 On 429, imposes a global cooldown: it never hammers the API to 'skip' errors.
@@ -12,6 +12,7 @@ import urllib.error
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
 from discovery import (ArxivClient, RateLimitError, ensure_checkpoint_identity,
+                        valid_date,
                        load_ids_file, generate_ids, parse_metadata, parse_version_updates,
                        validate_cached_batch, load_revision_cache, write_json_atomic,
                        attach_revised_dates, retry_after_hint)
@@ -62,7 +63,7 @@ def create_status(ids, records, cache, attempts, errors):
 
 
 def main(argv=None, client=None):
-    parser = argparse.ArgumentParser(description='Two-pass arXiv crawler: metadata + revised dates + benchmark')
+    parser = argparse.ArgumentParser(description='Global Revision Batching crawler: metadata first, then pooled revisions')
     parser.add_argument('--ids-file', type=Path)
     parser.add_argument('--start', default='2609.12834')
     parser.add_argument('--end', default='2609.17833')
@@ -105,6 +106,8 @@ def main(argv=None, client=None):
     records = {}
     metadata_success = 0
     revision_success = 0
+    latest_dates_reused = 0
+    revision_tasks_planned = 0
     skipped_batches = []
     api_failures = 0
     stopped_reason = None
@@ -217,45 +220,77 @@ def main(argv=None, client=None):
                 else:
                     skipped_batches.append(i)
             records.update(batch)
-            # Metadata can be cached even if revision fetch later fails.
-            needs = {}
-            for rec in batch.values():
-                if rec['status'] != 'found':
+            # PHASE 1: metadata only.  Never fetch versions while walking metadata batches.
+            if i % 25 == 0 or i == total_batches - 1:
+                print(f'[METADATA] batch {i+1}/{total_batches}; collected={len(records)}', flush=True)
+            if stopped_reason:
+                break
+
+        # PHASE 2: build one GLOBAL queue of all missing version IDs.
+        # Preserve previously collected metadata/revisions and existing checkpoint format.
+        if stopped_reason is None:
+            # Earlier runs may have partial checkpoints; include valid partial records.
+            for i in range(total_batches):
+                chunk = ids[i * args.batch_size:(i + 1) * args.batch_size]
+                batch, _ = load_batch(out, i, chunk)
+                records.update(batch)
+                partial = out / 'partial_batches' / f'batch_{i:05d}.json'
+                if partial.exists():
+                    records.update(json.loads(partial.read_text(encoding='utf-8')))
+
+            # The unversioned Atom entry already provides the latest version's updated date.
+            # Only populate missing keys and never overwrite existing verified cache dates.
+            for rec in records.values():
+                if rec.get('status') != 'found':
                     continue
                 n = rec['latest_version']
-                for version in range(2, n + 1):
-                    vid = f"{rec['arxiv_id']}v{version}"
+                latest = rec.get('latest_updated')
+                if n >= 2 and latest and valid_date(latest):
+                    vid = f"{rec['arxiv_id']}v{n}"
                     if vid not in cache:
-                        needs.setdefault(version, []).append(vid)
-            for version in sorted(needs):
-                vids = needs[version]
+                        cache[vid] = latest
+                        latest_dates_reused += 1
+            if latest_dates_reused:
+                write_json_atomic(cache_path, cache)
+
+            # Global queue: group by version layer to avoid sending multiple versions
+            # of the SAME paper in one request (API behavior can otherwise vary).
+            # Unlike the old approach, grouping is across ALL metadata batches.
+            layers = {}
+            for pid in ids:
+                rec = records.get(pid)
+                if not rec or rec.get('status') != 'found':
+                    continue
+                for version in range(2, rec['latest_version'] + 1):
+                    vid = f'{pid}v{version}'
+                    if vid not in cache:
+                        layers.setdefault(version, []).append(vid)
+            revision_tasks_planned = sum(len(v) for v in layers.values())
+            print(f'[GLOBAL] missing revisions={revision_tasks_planned}; '
+                  f'reused latest dates={latest_dates_reused}; layers={len(layers)}', flush=True)
+            for version in sorted(layers):
+                vids = layers[version]
                 for j in range(0, len(vids), args.revision_batch_size):
                     subset = vids[j:j + args.revision_batch_size]
-                    if limited():
-                        stopped_reason = 'request_limit'
-                        break
-                    response = request(subset, f'revisions_{i:05d}_v{version}_{j}')
+                    response = request(subset, f'global_revisions_v{version}_{j}')
                     if response is None:
-                        if stopped_reason:
-                            break
-                        continue
+                        break
                     try:
                         updates = parse_version_updates(response)
                         for vid in subset:
                             if vid in updates:
-                                cache[vid] = updates[vid]
-                                revision_success += 1
+                                if vid not in cache:
+                                    cache[vid] = updates[vid]
+                                    revision_success += 1
                             else:
                                 errors[vid] = 'Missing exact version from API response (pending)'
                         write_json_atomic(cache_path, cache)
                     except (ValueError, RuntimeError) as exc:
-                        fail(f'revisions_{i:05d}_v{version}_{j}', exc)
+                        fail(f'global_revisions_v{version}_{j}', exc)
+                        stopped_reason = 'revision_parse_error'
+                        break
                 if stopped_reason:
                     break
-            if i % 25 == 0:
-                print(f'Batch {i+1}/{total_batches}; metadata collected {len(records)}; revision dates cached {len(cache)}', flush=True)
-            if stopped_reason:
-                break
     except KeyboardInterrupt:
         stopped_reason = 'keyboard_interrupt'
     finally:
@@ -273,6 +308,7 @@ def main(argv=None, client=None):
                    'pending_papers': sum(x['status']=='pending' for x in status.values()),
                    'completed_papers': sum(x['status']=='completed' for x in status.values()),
                    'revision_dates_cached': len(cache), 'pass_number': args.pass_number,
+                   'revision_strategy': 'global',
                    'http_429_count': client.metrics()['http_429_count'],
                    'stopped_reason': stopped_reason,
                    'generated_at_utc': utc()}
@@ -283,8 +319,11 @@ def main(argv=None, client=None):
         write_json_atomic(out / 'smart_summary.json', summary)
         wall = time.perf_counter()-began
         benchmark = {'timestamp_utc': utc(), 'pass_number': args.pass_number,
+                      'revision_strategy': 'global',
                      'wall_time_seconds': round(wall, 3), 'successful_metadata_records_new': metadata_success,
                      'successful_revision_dates_new': revision_success,
+                      'latest_dates_reused': latest_dates_reused,
+                      'global_revision_tasks_planned': revision_tasks_planned,
                      'failed_tasks': api_failures, 'pending_papers': summary['pending_papers'],
                      'total_ids': len(ids), 'stopped_reason': stopped_reason,
                      'cooldown_wait_seconds': round(cooldown_wait_seconds, 3), **client.metrics()}
