@@ -5,6 +5,7 @@ venv/
 # Python cache
 __pycache__/
 *.pyc
+.pytest_cache/
 
 # Secret files
 .env
@@ -18,5 +19,17 @@ __pycache__/
 .DS_Store
 Thumbs.db
 
-# crawl data
+# Raw and processed datasets
 **/data/
+**/cleaned_structure/
+**/parsed_structure/
+
+# Compressed datasets
+*.zip
+*.tar
+*.tar.gz
+*.7z
+
+# Local outputs
+**/test_input/
+**/test_output/

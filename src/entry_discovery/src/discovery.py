@@ -134,6 +134,10 @@ def parse_version_updates(xml_bytes: bytes) -> dict[str, str]:
     return results
 
 
+class PermanentRequestError(RuntimeError):
+    """An HTTP client error that retrying the same request cannot repair."""
+
+
 class RateLimitError(RuntimeError):
     def __init__(self, retry_after=None):
         self.retry_after = retry_after
@@ -187,41 +191,104 @@ class ArxivClient:
     def fetch(self, ids: list[str]) -> bytes:
         if not ids:
             raise ValueError('Cannot request an empty batch')
-        url = API + '?' + urllib.parse.urlencode({'id_list': ','.join(ids), 'max_results': len(ids)})
+    
+        url = API + '?' + urllib.parse.urlencode({
+            'id_list': ','.join(ids),
+            'max_results': len(ids)
+        })
+    
         for attempt in range(self.retries + 1):
+        
+            # Maintain minimum delay between requests
             if self.last_start is not None:
-                self._sleep(max(0.0, self.delay - (time.monotonic() - self.last_start)), 'pacing')
+                self._sleep(
+                    max(0.0, self.delay - (time.monotonic() - self.last_start)),
+                    'pacing'
+                )
+    
             self.last_start = time.monotonic()
             self.requests += 1
-            request = urllib.request.Request(url, headers={
-                'User-Agent': self.user_agent, 'Accept': 'application/atom+xml'
-            })
+    
+            request = urllib.request.Request(
+                url,
+                headers={
+                    'User-Agent': self.user_agent,
+                    'Accept': 'application/atom+xml'
+                }
+            )
+    
             began = time.perf_counter()
             retry_needed = False
+    
             try:
-                with urllib.request.urlopen(request, timeout=self.timeout) as response:
+                with urllib.request.urlopen(
+                    request,
+                    timeout=self.timeout
+                ) as response:
                     return response.read()
+    
             except urllib.error.HTTPError as exc:
+            
+                # Handle HTTP 429 - Too Many Requests
                 if exc.code == 429:
                     self.http_429 += 1
-                    raise RateLimitError(retry_after_hint(exc.headers.get('Retry-After')
-                                                             if exc.headers else None)) from exc
+    
+                    # Read Retry-After header from arXiv
+                    retry_after = (
+                        exc.headers.get('Retry-After')
+                        if exc.headers else None
+                    )
+    
+                    print(
+                        f'[HTTP 429] Retry-After: {retry_after!r}',
+                        flush=True
+                    )
+    
+                    # Convert Retry-After to seconds
+                    retry_seconds = retry_after_hint(retry_after)
+    
+                    print(
+                        f'[HTTP 429] Parsed Retry-After: {retry_seconds!r}',
+                        flush=True
+                    )
+    
+                    raise RateLimitError(retry_seconds) from exc
+    
+                # Other HTTP 4xx errors
                 if 400 <= exc.code < 500:
-                    raise RuntimeError(f'HTTP {exc.code} (not retryable)') from exc
+                    raise PermanentRequestError(
+                        f'HTTP {exc.code} (not retryable)'
+                    ) from exc
+    
+                # HTTP 5xx errors
                 if attempt == self.retries:
-                    raise RuntimeError(f'HTTP {exc.code} after retries') from exc
+                    raise RuntimeError(
+                        f'HTTP {exc.code} after retries'
+                    ) from exc
+    
                 retry_needed = True
+    
             except (urllib.error.URLError, TimeoutError) as exc:
+            
                 if attempt == self.retries:
-                    raise RuntimeError(f'Network request failed after retries: {exc}') from exc
+                    raise RuntimeError(
+                        f'Network request failed after retries: {exc}'
+                    ) from exc
+    
                 retry_needed = True
+    
             finally:
                 self.network_seconds += time.perf_counter() - began
+    
+            # Retry network errors and HTTP 5xx
             if retry_needed:
                 self.retries_done += 1
-                self._sleep(min(60, 2 ** (attempt + 1)), 'retry')
+                self._sleep(
+                    min(60, 2 ** (attempt + 1)),
+                    'retry'
+                )
+    
         raise AssertionError('unreachable')
-
     def metrics(self):
         return {
             'api_requests_total': self.requests,
