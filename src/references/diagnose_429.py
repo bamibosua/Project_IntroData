@@ -2,8 +2,8 @@
 Chẩn đoán lỗi 429: gửi vài request có kiểm soát, KHÔNG tự thử lại, in rõ mã trạng thái, nội dung và header giới hạn.
 
 Chạy (PowerShell, từ thư mục gốc dự án):
-    python src\\diagnose_429.py discovered_papers_with_revised_dates.json
-    python src\\diagnose_429.py discovered_papers_with_revised_dates.json --sizes 10,50,200 --gap 15
+    python src/references/diagnose_429.py papers_index.json
+    python src/references/diagnose_429.py papers_index.json --sizes 10,50,200 --gap 15
 
 Thứ tự: (1) GET một bài  (2) POST batch lần lượt từng cỡ trong --sizes  (3) GET một bài lần nữa.
 Cách đọc: nếu (1) cũng 429 -> vấn đề nằm ở khóa/tài khoản/nhịp chung, không phải kích thước batch.

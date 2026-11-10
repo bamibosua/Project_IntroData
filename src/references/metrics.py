@@ -1,293 +1,230 @@
-"""
-Đo đạc cho module crawl references (không đo toàn hệ thống, không đo discovery).
+"""Metrics một lượt và summary đúng tập publication đã chọn, không gộp run cũ."""
+from __future__ import annotations
 
-  - ResourceMonitor : RAM đỉnh / trung bình (lấy mẫu psutil định kỳ ở thread riêng)
-  - dir_size        : dung lượng thư mục (tương đương `du`)
-  - refs_size       : dung lượng riêng của các file references.json (thư mục output còn chứa dữ liệu của module khác)
-  - RunMetrics      : thời gian, request, 429, số bài theo trạng thái của MỘT lượt chạy
-  - summarize_output: thống kê dữ liệu trên toàn bộ output + gộp hiệu năng của mọi lượt chạy
-"""
 import csv
 import datetime
-import glob
-import json
+import io
+import logging
 import os
-import statistics
-import sys
 import threading
 import time
 
 import psutil
 
-import config
+if __package__:
+    from . import config
+    from .records import is_valid_record
+    from .storage import default_meta_dir, load_record, record_path, write_bytes_atomic
+else:
+    import config
+    from records import is_valid_record
+    from storage import default_meta_dir, load_record, record_path, write_bytes_atomic
 
-try:                       # Windows không có module resource
-    import resource
-except ImportError:        # pragma: no cover
-    resource = None
-
-META_DIR_NAME = "references_meta"   # log và metrics đặt ngang hàng với thư mục papers, KHÔNG nằm trong đó
-
-
-def default_meta_dir(out_dir):
-    """Thư mục log/metrics mặc định: <cha của out_dir>/references_meta (vd. data/output/references_meta)."""
-    return os.path.join(os.path.dirname(os.path.abspath(out_dir)), META_DIR_NAME)
+logger = logging.getLogger(__name__)
 
 
-# ----------------------------------------------------------------------
-def dir_size(path):
-    """Tổng dung lượng (byte) của mọi file dưới `path`."""
+def timestamp() -> str:
+    return datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="seconds")
+
+
+def refs_size(out_dir, publications) -> int | None:
+    """Chỉ tính references.json thuộc input; lỗi đo trả null thay vì 0 giả."""
     total = 0
-    for root, _, files in os.walk(path):
-        for f in files:
-            try:
-                total += os.path.getsize(os.path.join(root, f))
-            except OSError:
-                pass
+    for pub in publications:
+        try:
+            total += os.path.getsize(record_path(out_dir, pub["arxiv_id"]))
+        except FileNotFoundError:
+            continue
+        except OSError as exc:
+            logger.warning("Cannot measure reference output size (%s).", type(exc).__name__)
+            return None
     return total
 
 
-def refs_size(out_dir):
-    """Tổng dung lượng các file <out_dir>/<thư mục bài>/references.json (chỉ phần do crawler này tạo ra)."""
-    total = 0
-    try:
-        with os.scandir(out_dir) as it:
-            for d in it:
-                if d.is_dir() and not d.name.startswith("_"):
-                    try:
-                        total += os.path.getsize(os.path.join(d.path, "references.json"))
-                    except OSError:
-                        pass
-    except OSError:
-        pass
-    return total
-
-
-def _percentile(sorted_vals, q):
-    if not sorted_vals:
-        return None
-    return sorted_vals[min(len(sorted_vals) - 1, int(round(q * (len(sorted_vals) - 1))))]
-
-
-# ----------------------------------------------------------------------
 class ResourceMonitor:
-    """Lấy mẫu RSS (tiến trình hiện tại + tiến trình con) mỗi `interval` giây."""
-
+    """Sample RSS của tiến trình hiện tại; mean theo mẫu, không phải time-weighted."""
     def __init__(self, interval=None):
         self.interval = config.RAM_SAMPLE_INTERVAL if interval is None else interval
-        self._proc = psutil.Process()
         self._stop = threading.Event()
+        self._lock = threading.Lock()
         self._thread = None
+        self._proc = None
         self.n, self._sum, self.peak = 0, 0, 0
+        self.error = None
 
-    def _rss(self):
-        total = self._proc.memory_info().rss
-        for c in self._proc.children(recursive=True):
-            try:
-                total += c.memory_info().rss
-            except psutil.Error:
-                pass
-        return total
+    def _warn(self, exc):
+        if self.error is None:
+            logger.warning("RAM monitoring is incomplete; see the run report.")
+        self.error = str(exc)
 
     def _sample(self):
-        v = self._rss()
-        self.n += 1
-        self._sum += v
-        self.peak = max(self.peak, v)
+        try:
+            value = self._proc.memory_info().rss
+        except (psutil.Error, OSError) as exc:
+            self._warn(exc)
+            return
+        with self._lock:
+            self.n += 1
+            self._sum += value
+            self.peak = max(self.peak, value)
 
     def _loop(self):
         while not self._stop.wait(self.interval):
             self._sample()
 
     def __enter__(self):
-        self._sample()
-        self._thread = threading.Thread(target=self._loop, daemon=True)
-        self._thread.start()
+        try:
+            self._proc = psutil.Process()
+            self._sample()
+            self._thread = threading.Thread(target=self._loop, daemon=True)
+            self._thread.start()
+        except (psutil.Error, OSError, RuntimeError) as exc:
+            self._warn(exc)
         return self
 
     def __exit__(self, *exc):
         self._stop.set()
-        self._thread.join()
-        self._sample()
+        if self._thread is not None and self._thread.ident is not None:
+            self._thread.join(timeout=2.0)
+            if self._thread.is_alive():
+                self._warn("sampler chưa dừng sau 2 giây")
+                return
+        if self._proc is not None:
+            self._sample()
 
     def as_dict(self):
-        kernel_peak = None
-        if resource is not None:
-            r = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss
-            kernel_peak = round(r / (1e6 if sys.platform == "darwin" else 1e3), 1)  # Linux: KB, macOS: byte
-        return {
-            "peak_rss_mb": round(self.peak / 1e6, 1),
-            "avg_rss_mb": round(self._sum / self.n / 1e6, 1) if self.n else None,
-            "n_samples": self.n,
-            "sample_interval_sec": self.interval,
-            "peak_rss_kernel_mb": kernel_peak,      # đối chiếu độc lập với ru_maxrss của hệ điều hành
-        }
+        with self._lock:
+            return {
+                "scope": "current_process_rss",
+                "sampled_peak_rss_mb": round(self.peak / 1e6, 3) if self.n else None,
+                "sample_mean_rss_mb": round(self._sum / self.n / 1e6, 3) if self.n else None,
+                "n_samples": self.n,
+                "sample_interval_sec": self.interval,
+                "status": "partial" if self.error and self.n else "unavailable" if not self.n else "ok",
+                "error": self.error,
+            }
 
 
-# ----------------------------------------------------------------------
 class RunMetrics:
-    """Gom số liệu của một lượt chạy."""
+    """Counters online: giữ kết quả commit trước khi batch kết thúc/gián đoạn."""
+    def __init__(self, cfg, publications, input_path, output_path):
+        self.cfg, self.publications = cfg, publications
+        self.input_path, self.output_path = os.path.abspath(input_path), os.path.abspath(output_path)
+        self.started_at, self._t0 = timestamp(), time.perf_counter()
+        self.papers = dict(selected=len(publications), attempted=0, newly_completed=0,
+                           ok=0, empty_refs=0, not_in_s2=0, count_mismatch=0, errors=0)
+        self.references = {"total": 0, "with_arxiv_id": 0}
+        self.payload_bytes = 0
+        self.batches = self.splits = 0
+        self.errors = []
+        self.warnings = []
 
-    def __init__(self, cfg):
-        self.cfg = cfg
-        self.batches = []
-        self.started_at = datetime.datetime.now().astimezone().isoformat(timespec="seconds")
-        self._t0 = time.perf_counter()
+    def add_record(self, record, *, payload_bytes=0):
+        self.papers["newly_completed"] += 1
+        self.papers[record["status"]] += 1
+        self.references["total"] += record["n_refs"]
+        self.references["with_arxiv_id"] += record["n_refs_with_arxiv"]
+        self.payload_bytes += payload_bytes
 
-    def add_batch(self, b):
-        self.batches.append(b)
+    def add_error(self, arxiv_id, error):
+        self.papers["errors"] += 1
+        self.errors.append({"arxiv_id": arxiv_id, "code": error.code, "message": str(error)})
 
-    def finalize(self, monitor, disk_before, disk_after, interrupted=False):
+    def finalize(self, monitor, disk_before, disk_after, requests, exit_code, reason=None):
         wall = time.perf_counter() - self._t0
-        B = self.batches
-        n_papers = sum(b["n_papers"] for b in B)
-        keys = ("ok", "empty_refs", "not_in_s2", "error")
-        req = {k: sum(b["req"][k] for b in B) for k in
-               ("requests", "retries_429", "sleep_429_sec", "retries_other", "backoff_sec", "wait_sec", "bytes")}
-        work = sum(b["work_sec"] for b in B)
+        papers = dict(self.papers)
+        # Saved records may carry a count warning; completed counts verified records only.
+        papers["saved"] = papers["newly_completed"]
+        papers["completed"] = papers["saved"] - papers["count_mismatch"]
+        papers["pending"] = papers["selected"] - papers["saved"]
+        memory = monitor.as_dict()
+        if memory["error"]:
+            self.warnings.append("ram_monitor_unavailable_or_partial")
         return {
-            "started_at": self.started_at,
-            "finished_at": datetime.datetime.now().astimezone().isoformat(timespec="seconds"),
-            "interrupted": interrupted,
-            "config": self.cfg,
-            "papers": {"attempted": n_papers, **{k: sum(b["counts"][k] for b in B) for k in keys}},
-            "references": {"total": sum(b["refs_total"] for b in B),
-                           "with_arxiv_id": sum(b["refs_with_arxiv"] for b in B)},
-            "truncation_guard": {k: sum(b["truncation"][k] for b in B) for k in ("checked", "fixed", "unverified", "count_mismatch")},
-            "batches": len(B),
-            "batch_splits": sum(b.get("splits", 0) for b in B),
-            "requests": {k: round(v, 2) if isinstance(v, float) else v for k, v in req.items()},
-            "time": {
-                "total_wall_sec": round(wall, 2),
-                "work_sec": round(work, 2),    # thời gian làm việc thật (không tính nghỉ giữ chu kỳ / nghỉ 429)
-                "avg_wall_sec_per_paper": round(wall / n_papers, 3) if n_papers else None,
-                "avg_work_sec_per_paper": round(work / n_papers, 4) if n_papers else None,
-                "avg_wall_sec_per_batch": round(wall / len(B), 2) if B else None,
-            },
-            "memory": monitor.as_dict(),
-            "disk": {
-                "output_bytes_before": disk_before,
-                "output_bytes_after": disk_after,
-                "bytes_written_this_run": max(0, disk_after - disk_before),
-                "max_disk_note": "Crawler chỉ ghi thêm, không tạo file tạm lớn, nên dung lượng đỉnh = dung lượng cuối.",
-            },
+            "scope": "references_module", "started_at": self.started_at, "finished_at": timestamp(),
+            "input_path": self.input_path, "output_path": self.output_path, "config": self.cfg,
+            "status": "interrupted" if exit_code == 130 else "completed" if exit_code == 0 else "failed",
+            "exit_code": exit_code, "reason": reason, "papers": papers,
+            "selected_versions": sum(len(p["versions"]) for p in self.publications),
+            "references": dict(self.references), "requests": requests,
+            "batches_started": self.batches, "batch_splits": self.splits,
+            "time": {"total_wall_sec": round(wall, 3),
+                     "avg_wall_sec_per_attempted_publication": round(wall / papers["attempted"], 3) if papers["attempted"] else None,
+                     "note": "includes crawl/waits; excludes final telemetry write; not CPU time"},
+            "memory": memory,
+            "disk": {"selected_output_bytes_before": disk_before, "selected_output_bytes_after": disk_after,
+                     "committed_reference_payload_bytes": self.payload_bytes,
+                     "net_reference_output_change_bytes": disk_after - disk_before if disk_after is not None and disk_before is not None else None,
+                     "peak_disk_bytes": None, "peak_disk_reason": "not_sampled"},
+            "errors": self.errors, "warnings": list(self.warnings),
         }
 
 
-# ----------------------------------------------------------------------
-CSV_COLUMNS = ("arxiv_id", "status", "n_refs", "n_refs_with_arxiv", "n_refs_without_s2_id",
-               "s2_reference_count", "truncation_fixed", "reference_count_mismatch", "source")
+CSV_COLUMNS = ("arxiv_id", "status", "complete", "n_refs", "n_refs_with_arxiv", "n_refs_without_s2_id")
 
 
-def summarize_output(out_dir, papers_file_ids=None, csv_path=None, meta_dir=None):
-    """Thống kê dữ liệu trên mọi references.json trong out_dir, kèm hiệu năng gộp từ các lượt chạy.
-    `papers_file_ids`: danh sách ID đầu vào (nếu có) để đếm số bài chưa có bản ghi (lỗi hoặc chưa chạy).
-    `csv_path`: nếu có, ghi thêm một dòng cho mỗi bài (nhỏ, dùng để vẽ phân phối trong báo cáo).
-    `meta_dir`: nơi chứa các file run_*.json (mặc định default_meta_dir(out_dir))."""
-    meta_dir = meta_dir or default_meta_dir(out_dir)
-    rows = []
-    status = {"ok": 0, "empty_refs": 0, "not_in_s2": 0}
-    refs_per_paper, refs_ok = [], []
-    total_refs = with_arxiv = by_ext = by_doi = no_s2 = fixed = unverified = mismatch = empty_but_counted = 0
-    for path in glob.glob(os.path.join(out_dir, "*", "references.json")):
-        if os.path.basename(os.path.dirname(path)).startswith("_"):
-            continue
+def summarize_output(out_dir, publications, csv_path=None, meta_dir=None):
+    """Đọc đúng các ID input. Không API, không sửa records, không đọc/gộp run cũ."""
+    counts = dict(selected=len(publications), saved=0, completed=0, pending=0, missing=0, invalid=0,
+                  unreadable=0, refresh_pending=0, ok=0, empty_refs=0, not_in_s2=0, count_mismatch=0,
+                  version_metadata_outdated=0)
+    refs = dict(total=0, with_arxiv_id=0, without_s2_id=0)
+    missing_ids, diagnostics, rows, warnings = [], [], [], []
+    for pub in publications:
+        aid, rec, problem = pub["arxiv_id"], None, None
         try:
-            with open(path, encoding="utf-8") as f:
-                rec = json.load(f)
-        except (OSError, ValueError):
+            rec = load_record(record_path(out_dir, aid))
+        except ValueError as exc:
+            problem = "invalid"
+            diagnostics.append({"arxiv_id": aid, "code": problem, "message": str(exc)})
+        except OSError as exc:
+            problem = "unreadable"
+            diagnostics.append({"arxiv_id": aid, "code": problem, "message": str(exc)})
+        if problem is None:
+            if rec is None:
+                problem = "missing"
+            elif rec.get("refresh_pending") is True:
+                problem = "refresh_pending"
+            elif not is_valid_record(rec, aid, allow_legacy=True):
+                problem = "invalid"
+        if problem:
+            counts[problem] += 1
+            missing_ids.append(aid)
+            rows.append([aid, problem, False, None, None, None])
             continue
-        status[rec.get("status", "error")] = status.get(rec.get("status", "error"), 0) + 1
-        rows.append([rec.get(c) if c != "truncation_fixed" and c != "reference_count_mismatch"
-                     else bool(rec.get(c)) for c in CSV_COLUMNS])
-        n = rec.get("n_refs", 0)
-        refs_per_paper.append(n)
-        if rec.get("status") == "ok":
-            refs_ok.append(n)
-        total_refs += n
-        with_arxiv += rec.get("n_refs_with_arxiv", 0)
-        no_s2 += rec.get("n_refs_without_s2_id", 0)
-        fixed += bool(rec.get("truncation_fixed"))
-        unverified += bool(rec.get("truncation_unverified"))
-        mismatch += bool(rec.get("reference_count_mismatch"))
-        if rec.get("status") == "empty_refs" and (rec.get("s2_reference_count") or 0) > 0:
-            empty_but_counted += 1
-        for r in rec.get("references", []):
-            if r.get("ref_arxiv_id"):
-                by_ext += r.get("arxiv_id_source") == "externalIds"
-                by_doi += r.get("arxiv_id_source") == "doi"
+        complete = rec["status"] != "count_mismatch"
+        counts["saved"] += 1
+        counts["completed"] += complete
+        counts[rec["status"]] += 1
+        counts["version_metadata_outdated"] += rec.get("applies_to_versions") != pub["versions"]
+        refs["total"] += rec["n_refs"]
+        refs["with_arxiv_id"] += rec["n_refs_with_arxiv"]
+        refs["without_s2_id"] += rec["n_refs_without_s2_id"]
+        rows.append([aid, rec["status"], complete, rec["n_refs"], rec["n_refs_with_arxiv"], rec["n_refs_without_s2_id"]])
 
+    counts["pending"] = len(missing_ids)
+    counts["paper_crawl_rate"] = counts["saved"] / counts["selected"] if counts["selected"] else None
+    counts["references_success_rate"] = (counts["ok"] + counts["empty_refs"]) / counts["selected"] if counts["selected"] else None
+    refs["ref_arxiv_rate"] = refs["with_arxiv_id"] / refs["total"] if refs["total"] else None
+    csv_saved = None
     if csv_path:
-        rows.sort(key=lambda r: str(r[0]))
-        with open(csv_path, "w", newline="", encoding="utf-8") as f:
-            w = csv.writer(f)
-            w.writerow(CSV_COLUMNS)
-            w.writerows(rows)
-
-    n_records = sum(status.values())
-    srt = sorted(refs_per_paper)
-    out = {
-        "generated_at": datetime.datetime.now().astimezone().isoformat(timespec="seconds"),
-        "definitions": {
-            "paper_success_rate": "số bài có danh sách reference (status ok) / số bài đã có bản ghi",
-            "paper_crawl_rate": "số bài đã có bản ghi (ok, empty_refs, not_in_s2) / số bài đầu vào (nếu cung cấp)",
-            "ref_arxiv_rate": "reference có arXiv ID / tổng reference",
-            "ref_s2_resolution_rate": "reference có Semantic Scholar ID / tổng reference",
-        },
-        "papers": {
-            "records": n_records, **status,
-            "paper_success_rate": round(status["ok"] / n_records, 4) if n_records else None,
-        },
-        "references": {
-            "total": total_refs,
-            "with_arxiv_id": with_arxiv,
-            "arxiv_id_from_externalIds": by_ext,
-            "arxiv_id_from_doi": by_doi,
-            "without_s2_id": no_s2,
-            "ref_arxiv_rate": round(with_arxiv / total_refs, 4) if total_refs else None,
-            "ref_s2_resolution_rate": round(1 - no_s2 / total_refs, 4) if total_refs else None,
-            "avg_per_paper_all_records": round(statistics.mean(refs_per_paper), 2) if refs_per_paper else None,
-            "avg_per_paper_status_ok": round(statistics.mean(refs_ok), 2) if refs_ok else None,
-            "median_per_paper": statistics.median(refs_per_paper) if refs_per_paper else None,
-            "p90_per_paper": _percentile(srt, 0.9),
-            "max_per_paper": srt[-1] if srt else None,
-        },
-        "truncation_guard": {"papers_fixed": fixed, "papers_unverified": unverified,
-                             "papers_count_mismatch": mismatch,
-                             "empty_refs_but_s2_count_positive": empty_but_counted},
-        "storage": {"output_bytes": refs_size(out_dir), "meta_bytes": dir_size(meta_dir) if os.path.isdir(meta_dir) else 0},
-    }
-    if papers_file_ids is not None:
-        n_in = len(papers_file_ids)
-        out["papers"]["input_papers"] = n_in
-        out["papers"]["without_record"] = max(0, n_in - n_records)
-        out["papers"]["paper_crawl_rate"] = round(n_records / n_in, 4) if n_in else None
-
-    # ---- hiệu năng gộp từ các lượt chạy ----
-    runs = []
-    for p in sorted(glob.glob(os.path.join(meta_dir, "run_*.json"))):
+        buffer = io.StringIO(newline="")
+        writer = csv.writer(buffer)
+        writer.writerow(CSV_COLUMNS)
+        writer.writerows(rows)
         try:
-            with open(p, encoding="utf-8") as f:
-                runs.append(json.load(f))
-        except (OSError, ValueError):
-            pass
-    if runs:
-        attempted = sum(r["papers"]["attempted"] for r in runs)
-        wall = sum(r["time"]["total_wall_sec"] for r in runs)
-        work = sum(r["time"]["work_sec"] for r in runs)
-        samples = sum(r["memory"]["n_samples"] for r in runs) or 1
-        out["performance"] = {
-            "runs": len(runs),
-            "papers_attempted_all_runs": attempted,
-            "total_wall_sec": round(wall, 2),
-            "avg_wall_sec_per_paper": round(wall / attempted, 3) if attempted else None,
-            "avg_work_sec_per_paper": round(work / attempted, 4) if attempted else None,
-            "requests": sum(r["requests"]["requests"] for r in runs),
-            "retries_429": sum(r["requests"]["retries_429"] for r in runs),
-            "sleep_429_sec": round(sum(r["requests"]["sleep_429_sec"] for r in runs), 1),
-            "peak_rss_mb": max(r["memory"]["peak_rss_mb"] for r in runs),
-            "avg_rss_mb": round(sum(r["memory"]["avg_rss_mb"] * r["memory"]["n_samples"] for r in runs) / samples, 1),
-            "max_disk_bytes": max(r["disk"]["output_bytes_after"] for r in runs),
-            "final_output_bytes": out["storage"]["output_bytes"],
-        }
-    return out
+            write_bytes_atomic(csv_path, buffer.getvalue().encode("utf-8"))
+            csv_saved = os.path.abspath(csv_path)
+        except OSError as exc:
+            warnings.append(f"csv_persistence_error: {exc}")
+            logger.warning("Cannot save the statistics CSV (%s).", type(exc).__name__)
+    return {"generated_at": timestamp(), "scope": "selected_papers_index",
+            "output_path": os.path.abspath(out_dir), "papers": counts, "references": refs,
+            "missing_ids": missing_ids, "diagnostics": diagnostics, "warnings": warnings,
+            "storage": {"selected_output_bytes": refs_size(out_dir, publications)},
+            "csv_saved": csv_saved,
+            "definitions": {"paper_crawl_rate": "saved records / selected publications; includes not_in_s2 and count_mismatch",
+                            "completed": "verified records; excludes count_mismatch",
+                            "pending": "publications without a usable saved record",
+                            "references_success_rate": "(ok + empty_refs) / selected publications",
+                            "reference_counts": "all saved entries including count_mismatch, not deduplicated citations"}}

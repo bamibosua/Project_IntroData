@@ -29,9 +29,8 @@ REQUEST_TIMEOUT = 120    # giây
 # =====================================================================
 TRUNCATION_CHECK_MIN_REFS = 500
 
-#  Batch trả thêm `referenceCount` (tổng số reference S2 ghi nhận). Nếu số reference nhận về ít hơn con số này
-#  thì nghi bị cắt (hoặc S2 chỉ đếm khác) -> đối chiếu với /references. Mỗi lần đối chiếu tốn thêm >= 1 request
-#  (>= CYCLE_SECONDS giây), nên nếu lượt chạy thử cho thấy nhiều bài lệch "vô hại" thì đặt False.
+#  Tên cũ giữ để tránh làm hỏng import. Runner luôn kiểm tra count khớp ở cả hai chiều;
+#  đặt False không cho phép chốt snapshot còn mismatch thành hoàn tất.
 VERIFY_ON_COUNT_MISMATCH = True
 
 # =====================================================================
