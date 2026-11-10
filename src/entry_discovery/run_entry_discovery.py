@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """Run the full Entry Discovery pipeline with one command.
 
-Place this script at: entry_discovery/src/run_entry_discovery.py
-Execute from anywhere: python src/run_entry_discovery.py
+Keep this script alongside the other scripts in src/entry_discovery/.
+From the repository root: python src/entry_discovery/run_entry_discovery.py
+From another directory, use the absolute path to this script.
 
 Stages:
   1. prepare_group.py -> data/input/{group_ids.txt, id_ownership.csv, group_summary.json}
@@ -24,8 +25,7 @@ import sys
 import time
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
-SRC = ROOT / "src"
+ROOT = Path(__file__).resolve().parent
 INPUT = ROOT / "data" / "input"
 DISCOVERY = ROOT / "data" / "discovery"
 OUTPUT_PAPERS = ROOT / "data" / "output" / "paper"
@@ -40,9 +40,9 @@ def read_json(path: Path):
 
 
 def call_stage(number: int, title: str, script: str, arguments: list[str]) -> None:
-    path = SRC / script
+    path = ROOT / script
     if not path.is_file():
-        raise RuntimeError(f"Missing {path}. Put this runner in entry_discovery/src/.")
+        raise RuntimeError(f"Missing {path}. Keep this runner alongside the pipeline scripts in entry_discovery/.")
     command = [sys.executable, "-u", str(path), *arguments]
     print(f"\n{'=' * 68}\n[STEP {number}/3] {title}\n{'=' * 68}", flush=True)
     print(f"Command: {' '.join(command)}", flush=True)
