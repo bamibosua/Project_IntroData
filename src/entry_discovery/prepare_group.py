@@ -6,6 +6,8 @@ from pathlib import Path
 
 from discovery import generate_ids, write_json_atomic, ID_PATTERN
 
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+
 
 def arxiv_key(arxiv_id: str):
     m = ID_PATTERN.fullmatch(arxiv_id)
@@ -72,8 +74,8 @@ def save_worklist(result: dict, out: Path) -> None:
 
 def main(argv=None):
     parser = argparse.ArgumentParser(description='Merge the 4 member ranges, crawl IDs only once')
-    parser.add_argument('--config', type=Path, default=Path('team_ranges.json'))
-    parser.add_argument('--output', type=Path, default=Path('data/group/input'))
+    parser.add_argument('--config', type=Path, default=Path(__file__).resolve().with_name('team_ranges.json'))
+    parser.add_argument('--output', type=Path, default=PROJECT_ROOT / 'data' / 'input')
     parser.add_argument('--allow-incomplete', action='store_true',
                         help='For a local trial only, without all members configured')
     args = parser.parse_args(argv)

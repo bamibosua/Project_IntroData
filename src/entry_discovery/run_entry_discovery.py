@@ -8,7 +8,7 @@ From another directory, use the absolute path to this script.
 Stages:
   1. prepare_group.py -> data/input/{group_ids.txt, id_ownership.csv, group_summary.json}
   2. smart_discovery.py -> data/discovery/
-  3. prepare_papers_handoff.py -> data/input/papers_index.json and data/output/paper/
+  3. prepare_papers_handoff.py -> data/input/papers_index.json and data/output/papers/
 
 Safeguards: resume existing metadata checkpoints; only start the handoff when
 all input IDs have metadata and complete revision dates; do not overwrite changed
@@ -25,10 +25,11 @@ import sys
 import time
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent
+SCRIPT_DIR = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parents[2]
 INPUT = ROOT / "data" / "input"
 DISCOVERY = ROOT / "data" / "discovery"
-OUTPUT_PAPERS = ROOT / "data" / "output" / "paper"
+OUTPUT_PAPERS = ROOT / "data" / "output" / "papers"
 INDEX = INPUT / "papers_index.json"
 
 
@@ -40,7 +41,7 @@ def read_json(path: Path):
 
 
 def call_stage(number: int, title: str, script: str, arguments: list[str]) -> None:
-    path = ROOT / script
+    path = SCRIPT_DIR / script
     if not path.is_file():
         raise RuntimeError(f"Missing {path}. Keep this runner alongside the pipeline scripts in entry_discovery/.")
     command = [sys.executable, "-u", str(path), *arguments]
@@ -159,7 +160,7 @@ def main() -> int:
 
     try:
         print("[INIT] Checking pipeline configuration...", flush=True)
-        config = ROOT / "team_ranges.json"
+        config = SCRIPT_DIR / "team_ranges.json"
         if not config.is_file():
             raise RuntimeError(f"Missing config: {config}")
         print(f"[ROOT] {ROOT}", flush=True)

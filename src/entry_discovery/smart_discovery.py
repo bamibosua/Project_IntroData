@@ -19,6 +19,8 @@ from discovery import (ArxivClient, RateLimitError, PermanentRequestError, ensur
                        validate_cached_batch, load_revision_cache, write_json_atomic,
                        attach_revised_dates, retry_after_hint)
 
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+
 
 def utc():
     return datetime.now(timezone.utc).isoformat()
@@ -70,7 +72,7 @@ def main(argv=None, client=None):
     parser.add_argument('--start', default='2609.12834')
     parser.add_argument('--end', default='2609.17833')
     parser.add_argument('--limit', type=int)
-    parser.add_argument('--output', type=Path, default=Path('data/group/discovery'))
+    parser.add_argument('--output', type=Path, default=PROJECT_ROOT / 'data' / 'discovery')
     parser.add_argument('--batch-size', type=int, default=20)
     parser.add_argument('--revision-batch-size', type=int, default=20)
     parser.add_argument('--delay', type=float, default=8)
