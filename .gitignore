@@ -1,6 +1,61 @@
-.pytest_cache
-*.json
-AIConventions.md
-rate_limit_plan.md
-.gitignore
-tests
+# Secrets and local environment variables
+.env
+.env.*
+!.env.example
+!.env.template
+*.pem
+*.key
+
+# Python environments and bytecode
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Tests, lint and type-checking caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+.tox/
+.nox/
+
+# Python packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Corpora, checkpoints and pipeline outputs at any directory level
+data/
+parsed_structure/
+cleaned_structure/
+papers_references_meta/
+benchmark_results.json
+benchmark_sessions.jsonl
+
+# Keep notebook source files, ignore generated checkpoints
+.ipynb_checkpoints/
+
+# Logs and interrupted atomic writes
+*.log
+*.tmp
+.tmp_*
+
+# Local editor and OS files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Shared configuration, documentation and tests remain versioned.
+# Do not ignore *.json, tests/, README.md or .gitignore globally.
