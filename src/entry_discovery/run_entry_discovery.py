@@ -25,6 +25,11 @@ import sys
 import time
 from pathlib import Path
 
+if __package__:
+    from . import smart_discovery
+else:
+    import smart_discovery
+
 SCRIPT_DIR = Path(__file__).resolve().parent
 ROOT = Path(__file__).resolve().parents[2]
 INPUT = ROOT / "data" / "input"
@@ -127,7 +132,7 @@ def verify_discovery(ids_file: Path) -> tuple[int, int]:
     return expected_count, versions_total
 
 
-def main() -> int:
+def _run(argv=None, *, client=None, on_batch=None) -> int:
     parser = argparse.ArgumentParser(description="One-command Entry Discovery pipeline")
     parser.add_argument("--batch-size", type=int, default=None,
                         help="Metadata batch size (default 50, auto-detect existing checkpoint)")
@@ -144,7 +149,7 @@ def main() -> int:
     parser.add_argument("--pass-number", type=int, choices=(1, 2), default=1)
     parser.add_argument("--overwrite-metadata", action="store_true",
                         help="Allow updating existing metadata.json; never changes source or references")
-    args = parser.parse_args()
+    args = parser.parse_args(argv)
     if args.batch_size is not None and not 1 <= args.batch_size <= 50:
         parser.error("--batch-size must be between 1 and 50")
     if not 1 <= args.revision_batch_size <= 50:
@@ -180,7 +185,9 @@ def main() -> int:
         print(f"[CONFIG] Metadata batch size: {batch_size} | Revision batch size: {args.revision_batch_size}", flush=True)
 
         # 2. Harvest metadata and revision dates using Global Revision Batching.
-        call_stage(2, "Crawl metadata and revision dates", "smart_discovery.py", [
+        print("[STEP 2/3] Crawl metadata and revision dates", flush=True)
+        started = time.perf_counter()
+        result = smart_discovery.main([
             "--ids-file", str(ids_file),
             "--output", str(DISCOVERY),
             "--batch-size", str(batch_size),
@@ -192,7 +199,10 @@ def main() -> int:
             "--max-consecutive-429", str(args.max_consecutive_429),
             "--recovery-rounds", str(args.recovery_rounds),
             "--pass-number", str(args.pass_number),
-        ])
+        ], client=client, index_file=INDEX, on_batch=on_batch)
+        if result != 0:
+            raise RuntimeError(f"STEP 2 failed (exit code {result}). Previous checkpoint files are preserved.")
+        print(f"[STEP 2/3 DONE] Crawl metadata and revision dates | {time.perf_counter() - started:.1f}s", flush=True)
 
         count, versions_total = verify_discovery(ids_file)
 
@@ -222,6 +232,17 @@ def main() -> int:
     except (RuntimeError, OSError, ValueError) as exc:
         print(f"\n[ERROR] {exc}", file=sys.stderr, flush=True)
         return 1
+
+
+def main(argv=None, *, client=None, on_batch=None, on_finish=None) -> int:
+    """Publish validated batches; notify completion once after the whole entry run."""
+    exit_code = 1
+    try:
+        exit_code = _run(argv, client=client, on_batch=on_batch)
+        return exit_code
+    finally:
+        if on_finish is not None:
+            on_finish(exit_code)
 
 
 if __name__ == "__main__":

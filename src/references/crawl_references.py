@@ -9,6 +9,7 @@ import math
 import os
 import uuid
 from pathlib import Path
+from queue import Empty
 
 if __package__:
     from . import config
@@ -180,10 +181,11 @@ def _append_log(path, metrics):
         logger.warning("Cannot save the crawl log; crawling will continue.")
 
 
-def run(args, client=None):
+def run(args, client=None, *, source=None, stream_status=None):
     cfg = _configuration(args)
-    publications = load_index(args.papers_file)
-    if args.limit:
+    streaming = source is not None
+    publications = [] if streaming else load_index(args.papers_file)
+    if args.limit and not streaming:
         publications = publications[:args.limit]
     meta_dir = args.meta_dir or default_meta_dir(args.out)
     if args.summarize:
@@ -206,19 +208,48 @@ def run(args, client=None):
     exit_code, reason, owns_client = 0, None, False
     n_batches = 0
     stats_before = client.stats.as_dict() if client is not None else {}
+
+    def batches():
+        nonlocal disk_before
+        if not streaming:
+            for start in range(0, len(publications), cfg['batch_size']):
+                yield publications[start:start + cfg['batch_size']]
+            return
+        pending, seen = [], set()
+        for job in source:
+            aid = job['arxiv_id']
+            if aid in seen:
+                continue
+            seen.add(aid)
+            pub = {'arxiv_id': aid, 'versions': [f'{aid}{version}' for version in job['versions']]}
+            before = refs_size(args.out, [pub])
+            disk_before = disk_before + before if disk_before is not None and before is not None else None
+            publications.append(pub)
+            metrics.papers['selected'] = len(publications)
+            pending.append(pub)
+            if len(pending) == cfg['batch_size']:
+                yield pending
+                pending = []
+        if pending and stream_status['exit_code'] == 0:
+            yield pending
+
     try:
         with monitor:
             n_batches = (len(publications) + cfg["batch_size"] - 1) // cfg["batch_size"]
-            print(f"Input: {len(publications):,} papers")
-            print(f"{n_batches} batch{'es' if n_batches != 1 else ''} x up to {cfg['batch_size']} papers | {cfg['cycle_sec']:g}s/request | 429 wait: {cfg['wait_429_sec']:g}s")
-            if publications and client is None:
-                config.load_env()
-                client = S2Client(api_key=config.get_api_key(), cycle=cfg["cycle_sec"], wait_429=cfg["wait_429_sec"])
-                print("API key loaded." if client.headers.get("x-api-key") else "No API key found; using unauthenticated requests.")
-                owns_client = True
-            batches_started = client.clock() if client is not None else 0.0
-            for start in range(0, len(publications), cfg["batch_size"]):
-                batch = publications[start:start + cfg["batch_size"]]
+            if streaming:
+                print(f"[REFERENCES] Waiting for papers; batch size={cfg['batch_size']}.")
+            else:
+                print(f"Input: {len(publications):,} papers")
+                print(f"{n_batches} batch{'es' if n_batches != 1 else ''} x up to {cfg['batch_size']} papers | {cfg['cycle_sec']:g}s/request | 429 wait: {cfg['wait_429_sec']:g}s")
+            batches_started = client.clock() if client is not None else None
+            for batch in batches():
+                if client is None:
+                    config.load_env()
+                    client = S2Client(api_key=config.get_api_key(), cycle=cfg['cycle_sec'], wait_429=cfg['wait_429_sec'])
+                    print("API key loaded." if client.headers.get("x-api-key") else "No API key found; using unauthenticated requests.")
+                    owns_client = True
+                if batches_started is None:
+                    batches_started = client.clock()
                 metrics.batches += 1
                 metrics.papers["attempted"] += len(batch)
                 batch_started = client.clock()
@@ -226,16 +257,21 @@ def run(args, client=None):
                 _process_batch(client, batch, args.out, metrics)
                 _append_log(os.path.join(meta_dir, "crawl_log.jsonl"), metrics)
                 elapsed = client.clock() - batch_started
-                eta = (client.clock() - batches_started) / metrics.batches * (n_batches - metrics.batches) / 60
+                eta = ((client.clock() - batches_started) / metrics.batches * (n_batches - metrics.batches) / 60
+                       if not streaming else 0)
                 counts = {key: metrics.papers[key] - batch_before[key]
                           for key in ("ok", "empty_refs", "not_in_s2", "count_mismatch", "errors")}
-                print(f"[{metrics.batches}/{n_batches}] ok={counts['ok']} empty={counts['empty_refs']} "
+                label = f"[REFERENCES] Batch {metrics.batches}" if streaming else f"[{metrics.batches}/{n_batches}]"
+                timing = f"{elapsed:.1f}s" if streaming else f"{elapsed:.1f}s | ETA ~{eta:.1f}m"
+                print(f"{label} ok={counts['ok']} empty={counts['empty_refs']} "
                       f"not_in_s2={counts['not_in_s2']} mismatch={counts['count_mismatch']} "
-                      f"error={counts['errors']} | {elapsed:.1f}s | ETA ~{eta:.1f}m")
+                      f"error={counts['errors']} | {timing}")
                 if counts["errors"]:
                     print(f"  {counts['errors']} paper{'s' if counts['errors'] != 1 else ''} incomplete.")
             if metrics.papers["errors"]:
                 exit_code, reason = 1, "publications_incomplete"
+            if streaming and stream_status['exit_code'] != 0:
+                exit_code, reason = stream_status['exit_code'], stream_status['reason']
     except KeyboardInterrupt:
         exit_code, reason = 130, "interrupted"
         print(f"Interrupted during batch {metrics.batches}/{n_batches}. Saved results are preserved."
@@ -289,6 +325,30 @@ def run(args, client=None):
     for warning in dict.fromkeys(w.split(":", 1)[0] for w in report["warnings"]):
         print(f"Warning: {warning.replace('_', ' ')}.")
     return report
+
+
+def run_stream(args, queue, entry_done, entry_status, *, client=None, stop_event=None):
+    """Receive validated jobs, retaining a partial batch until normal entry completion."""
+    if args.limit or args.summarize:
+        raise InputError('Streaming does not use --limit or --summarize.')
+    state = {'exit_code': 0, 'reason': None}
+
+    def source():
+        while True:
+            if stop_event is not None and stop_event.is_set():
+                state.update(exit_code=130, reason='interrupted')
+                return
+            if entry_done.is_set() and entry_status.get('exit_code', 1) != 0:
+                state.update(exit_code=1, reason='entry_incomplete')
+                return
+            try:
+                yield queue.get(timeout=1)
+            except Empty:
+                if (entry_done.is_set() and entry_status.get('exit_code', 1) == 0
+                        and not (stop_event is not None and stop_event.is_set())):
+                    return
+
+    return run(args, client=client, source=source(), stream_status=state)
 
 
 def parse_args(argv=None):

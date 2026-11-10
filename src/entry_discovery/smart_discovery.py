@@ -5,6 +5,7 @@ On 429, imposes a global cooldown: it never hammers the API to 'skip' errors.
 Incomplete metadata batches and individual revision versions remain in the queue.
 """
 import argparse
+from copy import deepcopy
 import json
 import math
 import os
@@ -13,11 +14,20 @@ import urllib.error
 import xml.etree.ElementTree as ET
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
-from discovery import (ArxivClient, RateLimitError, PermanentRequestError, ensure_checkpoint_identity,
-                        valid_date,
-                       load_ids_file, generate_ids, parse_metadata, parse_version_updates,
-                       validate_cached_batch, load_revision_cache, write_json_atomic,
-                       attach_revised_dates, retry_after_hint)
+if __package__:
+    from .discovery import (ArxivClient, RateLimitError, PermanentRequestError, ensure_checkpoint_identity,
+                            valid_date,
+                           load_ids_file, generate_ids, parse_metadata, parse_version_updates,
+                           validate_cached_batch, load_revision_cache, write_json_atomic,
+                           attach_revised_dates, retry_after_hint)
+    from .prepare_papers_handoff import normalized_versions, update_index
+else:
+    from discovery import (ArxivClient, RateLimitError, PermanentRequestError, ensure_checkpoint_identity,
+                            valid_date,
+                           load_ids_file, generate_ids, parse_metadata, parse_version_updates,
+                           validate_cached_batch, load_revision_cache, write_json_atomic,
+                           attach_revised_dates, retry_after_hint)
+    from prepare_papers_handoff import normalized_versions, update_index
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 
@@ -66,7 +76,7 @@ def create_status(ids, records, cache, attempts, errors):
     return result
 
 
-def main(argv=None, client=None):
+def main(argv=None, client=None, *, index_file=None, on_batch=None):
     parser = argparse.ArgumentParser(description='Global Revision Batching crawler: metadata first, then pooled revisions')
     parser.add_argument('--ids-file', type=Path)
     parser.add_argument('--start', default='2609.12834')
@@ -119,6 +129,27 @@ def main(argv=None, client=None):
     client = client or ArxivClient(delay=args.delay, retries=2, user_agent=os.environ.get('ARXIV_USER_AGENT'))
     began = time.perf_counter()
     records = {}
+    emitted = set()
+
+    def publish(batch):
+        if index_file is None and on_batch is None:
+            return
+        jobs = []
+        for pid, paper in batch.items():
+            if pid in emitted or paper.get('status') != 'found':
+                continue
+            aid, versions = normalized_versions(paper)
+            if aid != pid:
+                raise ValueError(f'Metadata ID does not match checkpoint key: {pid}')
+            jobs.append({'arxiv_id': aid, 'versions': versions})
+        if not jobs:
+            return
+        if index_file is not None:
+            update_index(Path(index_file), {job['arxiv_id']: job['versions'] for job in jobs})
+        if on_batch is not None:
+            on_batch(deepcopy(jobs))
+        emitted.update(job['arxiv_id'] for job in jobs)
+
     metadata_success = 0
     revision_success = 0
     latest_dates_reused = 0
@@ -231,6 +262,7 @@ def main(argv=None, client=None):
                 if not batch:
                     partial = out / 'partial_batches' / f'batch_{i:05d}.json'
                     previous = json.loads(partial.read_text(encoding='utf-8')) if partial.exists() else {}
+                    publish(previous)
                     remaining = [pid for pid in chunk if pid not in previous]
                     if remaining:
                         if limited():
@@ -266,6 +298,7 @@ def main(argv=None, client=None):
                     else:
                         skipped_batches.append(i)
                 records.update(batch)
+                publish(batch)
                 # PHASE 1: metadata only.  Never fetch versions while walking metadata batches.
                 if i % 25 == 0 or i == total_batches - 1:
                     print(f'[METADATA] batch {i+1}/{total_batches}; collected={len(records)}', flush=True)
@@ -362,6 +395,9 @@ def main(argv=None, client=None):
                 break
     except KeyboardInterrupt:
         stopped_reason = 'keyboard_interrupt'
+    except Exception:
+        stopped_reason = stopped_reason or 'discovery_error'
+        raise
     finally:
         # Collect all historical valid cached batches, including those not visited after a test limit.
         for i in range((len(ids) + args.batch_size-1)//args.batch_size):

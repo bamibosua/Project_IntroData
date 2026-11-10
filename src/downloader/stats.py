@@ -41,7 +41,7 @@ def compute_storage_metrics(all_status: dict) -> dict:
 
 
 def write_summary(summary_path: Path, counters: dict, metrics: dict, wall_sec: float,
-                  peak_heap_mb: float, paths: dict) -> dict:
+                  peak_heap_mb: float, paths: dict, *, exit_code=None, reason=None) -> dict:
     summary = {
         **counters,
         "total_wall_time_sec": wall_sec,
@@ -50,6 +50,8 @@ def write_summary(summary_path: Path, counters: dict, metrics: dict, wall_sec: f
         "output_paths": {k: str(v) for k, v in paths.items()},
         "completed_at_utc": datetime.now(timezone.utc).isoformat(),
     }
+    if exit_code is not None:
+        summary.update(exit_code=exit_code, reason=reason)
     summary_path.write_text(json.dumps(summary, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     return summary
 
