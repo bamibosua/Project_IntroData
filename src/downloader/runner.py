@@ -109,7 +109,7 @@ def download_corpus(
     print(f"Starting downloader: {len(items)} papers target (workers={workers}, delay={delay}s)...", flush=True)
 
     with (
-        ThreadPoolExecutor(max_workers=max(16, connections), thread_name_prefix="net") as net_pool,
+        ThreadPoolExecutor(max_workers=max(1, connections), thread_name_prefix="net") as net_pool,
         ThreadPoolExecutor(max_workers=max(4, workers), thread_name_prefix="ext") as ext_pool,
     ):
         for idx, (arxiv_id, v_list) in enumerate(items, start=1):
@@ -210,7 +210,7 @@ def download_stream(queue, entry_done, entry_status, *, output_dir=DEFAULT_OUTPU
                     _save_status(status_path, all_status)
 
     try:
-        with (ThreadPoolExecutor(max_workers=max(16, connections), thread_name_prefix='net') as net_pool,
+        with (ThreadPoolExecutor(max_workers=max(1, connections), thread_name_prefix='net') as net_pool,
               ThreadPoolExecutor(max_workers=max(4, workers), thread_name_prefix='ext') as ext_pool):
             while not stopped():
                 collect(0)

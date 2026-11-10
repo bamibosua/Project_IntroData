@@ -127,6 +127,9 @@ def main(argv=None, client=None, *, index_file=None, on_batch=None):
     error_path = out / 'crawl_errors.json'
     errors = json.loads(error_path.read_text(encoding='utf-8')) if error_path.exists() else {}
     client = client or ArxivClient(delay=args.delay, retries=2, user_agent=os.environ.get('ARXIV_USER_AGENT'))
+    shared_cooldown = getattr(client, 'shared_cooldown', None)
+    if shared_cooldown is not None:
+        client.cooldown_fallback = args.cooldown
     began = time.perf_counter()
     records = {}
     emitted = set()
@@ -164,6 +167,8 @@ def main(argv=None, client=None, *, index_file=None, on_batch=None):
         saved = json.loads(cooldown_path.read_text(encoding='utf-8'))
         deadline = datetime.fromisoformat(saved['retry_not_before'].replace('Z', '+00:00'))
     cooldown_until = time.monotonic() + max(0.0, (deadline - datetime.now(timezone.utc)).total_seconds()) if deadline else 0.0
+    if shared_cooldown is not None:
+        shared_cooldown.defer(max(0.0, cooldown_until - time.monotonic()))
     calls = 0
     cooldown_wait_seconds = 0.0
     consecutive_429 = int(saved.get('consecutive_429', 0))
@@ -200,6 +205,8 @@ def main(argv=None, client=None, *, index_file=None, on_batch=None):
             else:
                 duration = min(args.max_cooldown, args.cooldown * 2 ** min(consecutive_429 - 1, 30))
             cooldown_until = max(cooldown_until, time.monotonic() + duration)
+            if shared_cooldown is not None:
+                shared_cooldown.defer(duration)
             write_json_atomic(cooldown_path, {
                 'retry_not_before': (datetime.now(timezone.utc) + timedelta(seconds=max(0, cooldown_until - time.monotonic()))).isoformat(),
                 'consecutive_429': consecutive_429, 'request_delay': current_delay})

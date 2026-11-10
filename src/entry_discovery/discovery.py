@@ -162,12 +162,14 @@ def retry_after_hint(value):
 class ArxivClient:
     """One HTTP connection at a time, including revision queries, with metrics."""
 
-    def __init__(self, delay=8.0, timeout=40, retries=4, user_agent=None):
+    def __init__(self, delay=8.0, timeout=40, retries=4, user_agent=None, *, shared_cooldown=None):
         if delay < 3.0:
             raise ValueError('arXiv delay must be >= 3 seconds')
         self.delay = delay
         self.timeout = timeout
         self.retries = retries
+        self.shared_cooldown = shared_cooldown
+        self.cooldown_fallback = 120
         self.user_agent = user_agent or 'HCMUS-IDS-M1/1.0 (contact: configure ARXIV_USER_AGENT)'
         self.last_start = None
         self.requests = 0
@@ -206,6 +208,10 @@ class ArxivClient:
                     'pacing'
                 )
     
+            if self.shared_cooldown is not None:
+                before_wait = time.perf_counter()
+                self.shared_cooldown.wait()
+                self.pacing_wait_seconds += time.perf_counter() - before_wait
             self.last_start = time.monotonic()
             self.requests += 1
     
@@ -246,6 +252,10 @@ class ArxivClient:
     
                     # Convert Retry-After to seconds
                     retry_seconds = retry_after_hint(retry_after)
+                    if self.shared_cooldown is not None:
+                        duration = (max(self.delay, retry_seconds)
+                                    if isinstance(retry_seconds, (int, float)) else self.cooldown_fallback)
+                        self.shared_cooldown.defer(duration)
     
                     print(
                         f'[HTTP 429] Parsed Retry-After: {retry_seconds!r}',
