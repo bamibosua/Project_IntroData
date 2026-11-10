@@ -8,6 +8,7 @@ import logging
 import math
 import os
 import uuid
+from pathlib import Path
 
 if __package__:
     from . import config
@@ -23,7 +24,9 @@ else:
     from storage import default_meta_dir, load_record, record_path, write_json_atomic
 
 logger = logging.getLogger(__name__)
-DEFAULT_OUT = os.path.join("data", "output", "papers")
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+DEFAULT_INPUT = str(PROJECT_ROOT / "data" / "input" / "papers_index.json")
+DEFAULT_OUT = str(PROJECT_ROOT / "data" / "output" / "papers")
 load_papers = load_index  # diagnostic script cũ dùng cùng loader index mới
 
 
@@ -290,7 +293,7 @@ def run(args, client=None):
 
 def parse_args(argv=None):
     parser = argparse.ArgumentParser(description="Crawl references from data/input/papers_index.json, one job per publication.")
-    parser.set_defaults(papers_file="data/input/papers_index.json")
+    parser.set_defaults(papers_file=DEFAULT_INPUT)
     parser.add_argument("--out", default=DEFAULT_OUT)
     parser.add_argument("--meta-dir", default=None, help="default: <out_parent>/<out_name>_references_meta")
     parser.add_argument("--limit", type=int, default=0, help="first N publications; 0=all")
