@@ -17,6 +17,9 @@ class SharedCooldown:
         with self._lock:
             return max(0.0, self._until - self.clock())
 
-    def wait(self):
+    def wait(self, stop_event=None):
         while (remaining := self.remaining()) > 0:
-            self.sleep(min(60.0, remaining))
+            if stop_event is None:
+                self.sleep(min(60.0, remaining))
+            elif stop_event.wait(min(60.0, remaining)):
+                raise InterruptedError('Pipeline stopped.')

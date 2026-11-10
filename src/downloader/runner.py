@@ -4,6 +4,7 @@ from __future__ import annotations
 
 from concurrent.futures import FIRST_COMPLETED, Future, ThreadPoolExecutor, wait
 import json
+import logging
 import os
 from pathlib import Path
 from queue import Empty
@@ -16,6 +17,8 @@ from .client import FastArxivClient
 from .config import CHECKPOINT_EVERY, DEFAULT_OUTPUT_DIR
 from .pipeline import extract_paper_to_existing_folders, fetch_single_version_task
 from .stats import compute_storage_metrics, print_report, write_summary
+
+logger = logging.getLogger(__name__)
 
 
 def _save_status(status_path: Path, all_status: dict) -> None:
@@ -181,6 +184,7 @@ def download_stream(queue, entry_done, entry_status, *, output_dir=DEFAULT_OUTPU
     client = client if client is not None else FastArxivClient(delay=delay)
     items, started, pending = {}, {}, {}
     cached = completed = 0
+    next_wait_notice = 0.0
     window = max(workers * 2, connections)
     t_start = time.perf_counter()
     owns_trace = not tracemalloc.is_tracing()
@@ -204,8 +208,11 @@ def download_stream(queue, entry_done, entry_status, *, output_dir=DEFAULT_OUTPU
             _refresh_stream_record(record, items[aid])
             record['download_time_sec'] = round(time.perf_counter() - started[aid], 4)
             if len(record['version_downloads']) == len(items[aid]):
-                print(f"[DOWNLOAD] {aid} ({len(items[aid])}v): {record['paper_status']}.", flush=True)
                 completed += 1
+                if record['paper_status'] == 'error':
+                    logger.warning('[DOWNLOAD] %s: incomplete; see download_status.json.', aid)
+                if completed % 50 == 0:
+                    logger.info('[DOWNLOAD] Processed: %d.', completed)
                 if completed % CHECKPOINT_EVERY == 0:
                     _save_status(status_path, all_status)
 
@@ -219,7 +226,11 @@ def download_stream(queue, entry_done, entry_status, *, output_dir=DEFAULT_OUTPU
                 except Empty:
                     if entry_done.is_set():
                         break
+                    if not pending and time.monotonic() >= next_wait_notice:
+                        logger.info('[DOWNLOAD] Waiting for entry.')
+                        next_wait_notice = time.monotonic() + 60
                     continue
+                next_wait_notice = 0.0
                 aid = job['arxiv_id']
                 if aid in items:
                     continue
@@ -228,6 +239,9 @@ def download_stream(queue, entry_done, entry_status, *, output_dir=DEFAULT_OUTPU
                 paper_dir = papers_dir / aid.replace('.', '-')
                 if _is_cached(all_status.get(aid, {}), paper_dir, versions):
                     cached += 1
+                    completed += 1
+                    if completed % 50 == 0:
+                        logger.info('[DOWNLOAD] Processed: %d.', completed)
                     continue
                 started[aid] = time.perf_counter()
                 all_status[aid] = {'arxiv_id': aid, 'paper_status': 'error', 'version_downloads': {},
@@ -268,6 +282,7 @@ def download_stream(queue, entry_done, entry_status, *, output_dir=DEFAULT_OUTPU
     summary = write_summary(summary_path, counters, metrics, wall_sec, round(peak_heap / 1024**2, 2),
                             {'papers_dir': papers_dir, 'download_status_json': status_path,
                              'download_summary_json': summary_path}, exit_code=exit_code, reason=reason)
-    print(f"[DOWNLOAD] Done: ok={counters['papers_with_tex']} pdf_only={counters['papers_without_tex']} "
-          f"error={counters['papers_failed']} | exit={exit_code}.")
+    label = 'Stopped' if stopped() else 'Finished with errors' if exit_code else 'Done'
+    logger.info('[DOWNLOAD] %s: ok=%d no_source=%d error=%d.',
+                label, counters['papers_with_tex'], counters['papers_without_tex'], counters['papers_failed'])
     return summary

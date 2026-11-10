@@ -1,4 +1,5 @@
 import argparse
+import logging
 import hashlib
 import json
 import os
@@ -18,6 +19,9 @@ ARXIV = '{http://arxiv.org/schemas/atom}'
 ID_PATTERN = re.compile(r'^(\d{4})\.(\d{4,5})$')
 VERSIONED = re.compile(r'(\d{4}\.\d{4,5})v(\d+)$')
 API = 'https://export.arxiv.org/api/query'
+
+
+logger = logging.getLogger(__name__)
 
 
 def valid_date(value):
@@ -162,13 +166,14 @@ def retry_after_hint(value):
 class ArxivClient:
     """One HTTP connection at a time, including revision queries, with metrics."""
 
-    def __init__(self, delay=8.0, timeout=40, retries=4, user_agent=None, *, shared_cooldown=None):
+    def __init__(self, delay=8.0, timeout=40, retries=4, user_agent=None, *, shared_cooldown=None, stop_event=None):
         if delay < 3.0:
             raise ValueError('arXiv delay must be >= 3 seconds')
         self.delay = delay
         self.timeout = timeout
         self.retries = retries
         self.shared_cooldown = shared_cooldown
+        self.stop_event = stop_event
         self.cooldown_fallback = 120
         self.user_agent = user_agent or 'HCMUS-IDS-M1/1.0 (contact: configure ARXIV_USER_AGENT)'
         self.last_start = None
@@ -183,7 +188,10 @@ class ArxivClient:
         if seconds <= 0:
             return
         before = time.perf_counter()
-        time.sleep(seconds)
+        if self.stop_event is None:
+            time.sleep(seconds)
+        elif self.stop_event.wait(seconds):
+            raise InterruptedError('Pipeline stopped.')
         elapsed = time.perf_counter() - before
         if kind == 'pacing':
             self.pacing_wait_seconds += elapsed
@@ -200,6 +208,8 @@ class ArxivClient:
         })
     
         for attempt in range(self.retries + 1):
+            if self.stop_event is not None and self.stop_event.is_set():
+                raise InterruptedError('Pipeline stopped.')
         
             # Maintain minimum delay between requests
             if self.last_start is not None:
@@ -210,7 +220,7 @@ class ArxivClient:
     
             if self.shared_cooldown is not None:
                 before_wait = time.perf_counter()
-                self.shared_cooldown.wait()
+                self.shared_cooldown.wait(stop_event=self.stop_event)
                 self.pacing_wait_seconds += time.perf_counter() - before_wait
             self.last_start = time.monotonic()
             self.requests += 1
@@ -245,10 +255,7 @@ class ArxivClient:
                         if exc.headers else None
                     )
     
-                    print(
-                        f'[HTTP 429] Retry-After: {retry_after!r}',
-                        flush=True
-                    )
+                    logger.debug(f'[HTTP 429] Retry-After: {retry_after!r}')
     
                     # Convert Retry-After to seconds
                     retry_seconds = retry_after_hint(retry_after)
@@ -257,10 +264,7 @@ class ArxivClient:
                                     if isinstance(retry_seconds, (int, float)) else self.cooldown_fallback)
                         self.shared_cooldown.defer(duration)
     
-                    print(
-                        f'[HTTP 429] Parsed Retry-After: {retry_seconds!r}',
-                        flush=True
-                    )
+                    logger.debug(f'[HTTP 429] Parsed Retry-After: {retry_seconds!r}')
     
                     raise RateLimitError(retry_seconds) from exc
     
@@ -277,6 +281,7 @@ class ArxivClient:
                     ) from exc
     
                 retry_needed = True
+                retry_reason = f'HTTP {exc.code}'
     
             except (urllib.error.URLError, TimeoutError) as exc:
             
@@ -286,12 +291,17 @@ class ArxivClient:
                     ) from exc
     
                 retry_needed = True
+                retry_reason = type(exc).__name__
     
             finally:
                 self.network_seconds += time.perf_counter() - began
     
             # Retry network errors and HTTP 5xx
             if retry_needed:
+                if self.stop_event is not None and self.stop_event.is_set():
+                    raise InterruptedError('Pipeline stopped.')
+                logger.warning('[ENTRY] %s (%d IDs): %s; retry %d/%d.',
+                               ids[0], len(ids), retry_reason, attempt + 1, self.retries)
                 self.retries_done += 1
                 self._sleep(
                     min(60, 2 ** (attempt + 1)),

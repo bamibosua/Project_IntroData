@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import random
 import math
+import logging
 from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
 import threading
@@ -14,6 +15,7 @@ import urllib.request
 from .config import MAX_FETCH_ATTEMPTS, SRC_ENDPOINTS, USER_AGENTS
 
 _NOT_FOUND_PAYLOAD = b"%PDF-1.4 (404 not found)"
+logger = logging.getLogger(__name__)
 
 
 def _retry_after_seconds(value):
@@ -34,11 +36,12 @@ def _retry_after_seconds(value):
 class FastArxivClient:
     """Download raw source archives of arXiv versions."""
 
-    def __init__(self, delay: float = 0.6, timeout: float = 40.0, *, shared_cooldown=None):
+    def __init__(self, delay: float = 0.6, timeout: float = 40.0, *, shared_cooldown=None, stop_event=None):
         self.delay = delay
         self.base_delay = delay  # adaptive back-off never goes below this
         self.timeout = timeout
         self.shared_cooldown = shared_cooldown
+        self.stop_event = stop_event
         self._ok_streak = 0
         self._last_req_ts = None
         self._rate_lock = threading.Lock()
@@ -71,6 +74,12 @@ class FastArxivClient:
             return None
 
     # ---- rate limiting ----------------------------------------------------------
+    def _sleep(self, seconds):
+        if self.stop_event is None:
+            time.sleep(seconds)
+        elif self.stop_event.wait(seconds):
+            raise InterruptedError('Pipeline stopped.')
+
     def _note_throttle(self, attempt: int, retry_after=None, *, status=429) -> None:
         """Keep the client cooldown; publish HTTP 429 to the shared deadline."""
         with self._cooldown_lock:
@@ -81,6 +90,7 @@ class FastArxivClient:
             self._ok_streak = 0
         if status == 429 and self.shared_cooldown is not None:
             self.shared_cooldown.defer(duration)
+        return duration
 
     def _note_success(self) -> None:
         """After 100 clean requests in a row, relax the spacing back toward the configured delay."""
@@ -92,6 +102,8 @@ class FastArxivClient:
 
     def _wait_rate_slot(self) -> int:
         while True:
+            if self.stop_event is not None and self.stop_event.is_set():
+                raise InterruptedError('Pipeline stopped.')
             with self._rate_lock:
                 now = time.monotonic()
                 with self._cooldown_lock:
@@ -104,7 +116,7 @@ class FastArxivClient:
                     self._counter += 1
                     self._last_req_ts = now
                     return idx
-            time.sleep(min(wait, 2.0))
+            self._sleep(min(wait, 2.0))
 
     # ---- download ---------------------------------------------------------------
     def fetch_version(self, version_id: str) -> bytes:
@@ -131,14 +143,21 @@ class FastArxivClient:
                         return data
                     resp.close()
                     if resp.status_code in (429, 403):
-                        self._note_throttle(attempt, resp.headers.get('Retry-After'), status=resp.status_code)
-                        time.sleep(1.0)
+                        duration = self._note_throttle(attempt, resp.headers.get('Retry-After'), status=resp.status_code)
+                        logger.warning('[DOWNLOAD] %s: HTTP %d; wait %.0fs (attempt %d/%d).',
+                                       version_id, resp.status_code, duration, attempt, MAX_FETCH_ATTEMPTS)
+                        self._sleep(1.0)
                         continue
                     if resp.status_code == 404:
                         return _NOT_FOUND_PAYLOAD
-                except Exception:
+                    logger.warning('[DOWNLOAD] %s: HTTP %d; trying urllib.', version_id, resp.status_code)
+                except Exception as exc:
+                    if self.stop_event is not None and self.stop_event.is_set():
+                        raise
+                    logger.warning('[DOWNLOAD] %s: %s (attempt %d/%d).',
+                                   version_id, type(exc).__name__, attempt, MAX_FETCH_ATTEMPTS)
                     self._thread_local.session = None
-                    time.sleep(min(5.0, 1.0 * attempt))
+                    self._sleep(min(5.0, 1.0 * attempt))
                     continue
 
             # A fallback is another HTTP request and needs its own rate slot.
@@ -152,12 +171,18 @@ class FastArxivClient:
                     return resp.read()
             except urllib.error.HTTPError as exc:
                 if exc.code in (429, 403):
-                    self._note_throttle(attempt, exc.headers.get('Retry-After') if exc.headers else None,
-                                        status=exc.code)
+                    duration = self._note_throttle(attempt, exc.headers.get('Retry-After') if exc.headers else None,
+                                                   status=exc.code)
+                    logger.warning('[DOWNLOAD] %s: HTTP %d; wait %.0fs (attempt %d/%d).',
+                                   version_id, exc.code, duration, attempt, MAX_FETCH_ATTEMPTS)
                     continue
                 if exc.code == 404:
                     return _NOT_FOUND_PAYLOAD
-            except Exception:
-                time.sleep(min(5.0, 1.0 * attempt))
+            except Exception as exc:
+                if self.stop_event is not None and self.stop_event.is_set():
+                    raise
+                logger.warning('[DOWNLOAD] %s: %s (attempt %d/%d).',
+                               version_id, type(exc).__name__, attempt, MAX_FETCH_ATTEMPTS)
+                self._sleep(min(5.0, 1.0 * attempt))
 
         raise RuntimeError(f"Failed to download {version_id} after {MAX_FETCH_ATTEMPTS} attempts")

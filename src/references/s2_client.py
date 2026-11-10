@@ -78,7 +78,7 @@ def parse_retry_after(header_value: str | None, *, warn_id: str = "") -> float |
             return max(0.0, (deadline - datetime.datetime.now(datetime.timezone.utc)).total_seconds())
     except (ValueError, TypeError, OverflowError):
         pass
-    logger.warning("%s: invalid Retry-After header; using the configured wait.", warn_id)
+    logger.warning("[REFERENCES] %s: invalid Retry-After header; using the configured wait.", warn_id)
     return None
 
 
@@ -91,7 +91,7 @@ def _wait_with_progress(seconds, reason, *, sleep=time.sleep, clock=time.monoton
     while (remaining := deadline - clock()) > 0:
         sleep(min(remaining, print_interval))
         if deadline - clock() > 0:
-            print(f"  Waiting: {reason}; {deadline - clock():.0f}s remaining.")
+            logger.info('[REFERENCES] Waiting: %s; %.0fs remaining.', reason, deadline - clock())
 
 
 class Pacer:
@@ -110,7 +110,12 @@ class Pacer:
 
 class S2Client:
     def __init__(self, api_key=None, cycle=None, wait_429=None, session=None,
-                 clock=time.monotonic, sleep=time.sleep):
+                  clock=time.monotonic, sleep=time.sleep, stop_event=None):
+        self.stop_event = stop_event
+        if stop_event is not None:
+            def sleep(seconds):
+                if stop_event.wait(seconds):
+                    raise InterruptedError('Pipeline stopped.')
         self.cycle = config.CYCLE_SECONDS if cycle is None else cycle
         self.wait_429 = config.WAIT_429_SECONDS if wait_429 is None else wait_429
         self.clock, self.sleep = clock, sleep
@@ -149,6 +154,8 @@ class S2Client:
         before = self.stats.as_dict()
         n429 = n_other = 0
         while True:
+            if self.stop_event is not None and self.stop_event.is_set():
+                raise InterruptedError('Pipeline stopped.')
             self._wait_cooldown(context)
             started = self.clock()
             try:
@@ -165,11 +172,13 @@ class S2Client:
                 finally:
                     self.stats.request_sec += self.clock() - started
             except requests.RequestException as exc:
+                if self.stop_event is not None and self.stop_event.is_set():
+                    raise InterruptedError('Pipeline stopped.') from exc
                 n_other += 1
                 if n_other > config.MAX_OTHER_RETRIES:
-                    logger.warning("  %s: network error; retries exhausted.", context)
+                    logger.warning("[REFERENCES] %s: network error; retries exhausted.", context)
                 else:
-                    logger.warning("  %s: network error (%s); wait %.0fs, retry %d/%d.",
+                    logger.warning("[REFERENCES] %s: network error (%s); wait %.0fs, retry %d/%d.",
                                    context, type(exc).__name__, _BACKOFF[min(n_other - 1, len(_BACKOFF) - 1)],
                                    n_other, config.MAX_OTHER_RETRIES)
                 if n_other > config.MAX_OTHER_RETRIES:
@@ -188,9 +197,9 @@ class S2Client:
                 except ValueError as exc:
                     n_other += 1
                     if n_other > config.MAX_OTHER_RETRIES:
-                        logger.warning("  %s: invalid JSON/schema; retries exhausted.", context)
+                        logger.warning("[REFERENCES] %s: invalid JSON/schema; retries exhausted.", context)
                     else:
-                        logger.warning("  %s: invalid JSON/schema; wait %.0fs, retry %d/%d.",
+                        logger.warning("[REFERENCES] %s: invalid JSON/schema; wait %.0fs, retry %d/%d.",
                                        context, _BACKOFF[min(n_other - 1, len(_BACKOFF) - 1)],
                                        n_other, config.MAX_OTHER_RETRIES)
                     if n_other > config.MAX_OTHER_RETRIES:
@@ -206,11 +215,11 @@ class S2Client:
                 delay = max(self.wait_429, parse_retry_after(response.headers.get("Retry-After"), warn_id=context) or 0)
                 self._apply_cooldown(delay, context)  # kể cả response cuối hết budget
                 if n429 > config.MAX_429_RETRIES:
-                    logger.warning("  %s: HTTP 429; retries exhausted.", context)
+                    logger.warning("[REFERENCES] %s: HTTP 429; retries exhausted.", context)
                     raise ClientError(f"{context}: HTTP 429 hết retry; cooldown còn {delay:.0f}s",
                                       code="retryable", status=429)
                 self.stats.retries_429 += 1
-                logger.warning("  %s: HTTP 429; wait %.0fs, retry %d/%d.", context, delay, n429, config.MAX_429_RETRIES)
+                logger.warning("[REFERENCES] %s: HTTP 429; wait %.0fs, retry %d/%d.", context, delay, n429, config.MAX_429_RETRIES)
                 continue
 
             if status >= 500:
@@ -220,10 +229,10 @@ class S2Client:
                     delay = max(delay, parse_retry_after(response.headers.get("Retry-After"), warn_id=context) or 0)
                     self._apply_cooldown(delay, context, kind="backoff_sec")
                 if n_other > config.MAX_OTHER_RETRIES:
-                    logger.warning("  %s: HTTP %d; retries exhausted.", context, status)
+                    logger.warning("[REFERENCES] %s: HTTP %d; retries exhausted.", context, status)
                     raise ClientError(f"{context}: HTTP {status} hết retry", code="retryable", status=status)
                 self.stats.retries_other += 1
-                logger.warning("  %s: HTTP %d; wait %.0fs, retry %d/%d.",
+                logger.warning("[REFERENCES] %s: HTTP %d; wait %.0fs, retry %d/%d.",
                                context, status, delay, n_other, config.MAX_OTHER_RETRIES)
                 if status != 503:
                     self._wait(delay, "backoff_sec", f"HTTP {status}: {context}")
