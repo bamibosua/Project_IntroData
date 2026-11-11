@@ -75,7 +75,8 @@ def _extract_zip(raw_bytes: bytes, dest_dir: Path) -> dict:
 
 def extract_tex_and_bib_from_bytes(raw_bytes: bytes, dest_dir: Path) -> dict:
     """Inspect payload in RAM and extract ONLY .tex & .bib into dest_dir."""
-    dest_dir.mkdir(parents=True, exist_ok=True)
+    if not dest_dir.is_dir():
+        raise FileNotFoundError(f"Missing prepared folder: {dest_dir}. Run entry first.")
     raw_size = len(raw_bytes)
 
     if raw_bytes.startswith(b"%PDF-"):

@@ -1,7 +1,6 @@
 """Run entry with references, then download sources after entry completes."""
 import logging
 from pathlib import Path
-from queue import Full, Queue
 import signal
 import sys
 import threading
@@ -27,7 +26,6 @@ else:
     from references.s2_client import S2Client
 
 logger = logging.getLogger(__name__)
-QUEUE_SIZE = 400
 
 
 def main(argv=None, *, stop_event=None):
@@ -36,7 +34,8 @@ def main(argv=None, *, stop_event=None):
         return entry.main(argv)
     stop = stop_event if stop_event is not None else threading.Event()
     done, status = threading.Event(), {'exit_code': None}
-    references_queue = Queue(maxsize=QUEUE_SIZE)
+    publications, publications_lock = {}, threading.Lock()
+    references_state = {"exit_code": 0, "reason": None, "buffered": 0}
     codes, results, threads = {}, {}, {}
     shared = SharedCooldown()
     interrupted = False
@@ -55,30 +54,48 @@ def main(argv=None, *, stop_event=None):
         stop.set()
 
     def publish(jobs):
-        for job in jobs:
-            while True:
-                if stop.is_set() or not threads['REFERENCES'].is_alive():
-                    stop.set()
-                    raise InterruptedError('Pipeline consumer stopped.')
-                try:
-                    references_queue.put({'arxiv_id': job['arxiv_id'], 'versions': list(job['versions'])}, timeout=1)
-                    break
-                except Full:
-                    continue
+        with publications_lock:
+            publications.update((job['arxiv_id'], list(job['versions'])) for job in jobs)
+
+    def reference_jobs():
+        seen, next_notice = set(), 0.0
+        while True:
+            if stop.is_set():
+                references_state.update(exit_code=130, reason='interrupted')
+                return
+            finished = done.is_set()
+            if finished and status['exit_code'] != 0:
+                references_state.update(exit_code=1, reason='entry_failed')
+                return
+            with publications_lock:
+                snapshot = publications.copy()
+            for aid, versions in snapshot.items():
+                if stop.is_set():
+                    references_state.update(exit_code=130, reason='interrupted')
+                    return
+                if done.is_set() and status['exit_code'] != 0:
+                    references_state.update(exit_code=1, reason='entry_failed')
+                    return
+                if aid not in seen:
+                    seen.add(aid)
+                    next_notice = 0.0
+                    yield {'arxiv_id': aid, 'versions': versions}
+            if finished:
+                return
+            if time.monotonic() >= next_notice:
+                logger.info('[REFERENCES] Waiting for entry: %d/200 buffered.', references_state['buffered'])
+                next_notice = time.monotonic() + 60
+            stop.wait(1)
 
     def download():
         if not entry.INDEX.is_file():
             raise FileNotFoundError('Completed entry index is missing.')
         index = load_papers_index(entry.INDEX)
-        # Entry has finished: preload IDs/versions without a bounded producer queue.
-        queue = Queue()
-        for aid, versions in index.items():
-            queue.put({'arxiv_id': aid, 'versions': list(versions)})
         if stop.is_set():
             return {'exit_code': 130, 'reason': 'interrupted'}
         source = FastArxivClient(delay=0.6, shared_cooldown=shared, stop_event=stop)
         logger.info('[DOWNLOAD] Starting from completed index: %d papers.', len(index))
-        return download_stream(queue, done, status, output_dir=Path(args.out).parent,
+        return download_stream(index, output_dir=Path(args.out).parent,
                                client=source, stop_event=stop)
 
     def worker(name, target):
@@ -114,8 +131,8 @@ def main(argv=None, *, stop_event=None):
         s2 = S2Client(api_key=key, stop_event=stop)
         args = references.parse_args([])
         targets = {
-            'REFERENCES': lambda: references.run_stream(args, references_queue, done, status,
-                                                       client=s2, stop_event=stop),
+            'REFERENCES': lambda: references.run(args, client=s2, source=reference_jobs(),
+                                                  stream_status=references_state),
             'ENTRY': lambda: entry.main(argv, client=metadata, on_batch=publish, on_finish=finish, stop_event=stop),
         }
         for name, target in targets.items():
