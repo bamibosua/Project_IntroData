@@ -1,4 +1,4 @@
-"""Run M1 entry discovery, source download and references together."""
+"""Run entry with references, then download sources after entry completes."""
 import logging
 from pathlib import Path
 from queue import Full, Queue
@@ -12,6 +12,7 @@ if __package__:
     from .entry_discovery.arxiv_cooldown import SharedCooldown
     from .entry_discovery.discovery import ArxivClient
     from .downloader.client import FastArxivClient
+    from .downloader.index import load_papers_index
     from .downloader.runner import download_stream
     from .references import config, crawl_references as references
     from .references.s2_client import S2Client
@@ -20,6 +21,7 @@ else:
     from entry_discovery.arxiv_cooldown import SharedCooldown
     from entry_discovery.discovery import ArxivClient
     from downloader.client import FastArxivClient
+    from downloader.index import load_papers_index
     from downloader.runner import download_stream
     from references import config, crawl_references as references
     from references.s2_client import S2Client
@@ -34,7 +36,7 @@ def main(argv=None, *, stop_event=None):
         return entry.main(argv)
     stop = stop_event if stop_event is not None else threading.Event()
     done, status = threading.Event(), {'exit_code': None}
-    queues = {'DOWNLOAD': Queue(maxsize=QUEUE_SIZE), 'REFERENCES': Queue(maxsize=QUEUE_SIZE)}
+    references_queue = Queue(maxsize=QUEUE_SIZE)
     codes, results, threads = {}, {}, {}
     shared = SharedCooldown()
     interrupted = False
@@ -54,16 +56,30 @@ def main(argv=None, *, stop_event=None):
 
     def publish(jobs):
         for job in jobs:
-            for name, queue in queues.items():
-                while True:
-                    if stop.is_set() or not threads[name].is_alive():
-                        stop.set()
-                        raise InterruptedError('Pipeline consumer stopped.')
-                    try:
-                        queue.put({'arxiv_id': job['arxiv_id'], 'versions': list(job['versions'])}, timeout=1)
-                        break
-                    except Full:
-                        continue
+            while True:
+                if stop.is_set() or not threads['REFERENCES'].is_alive():
+                    stop.set()
+                    raise InterruptedError('Pipeline consumer stopped.')
+                try:
+                    references_queue.put({'arxiv_id': job['arxiv_id'], 'versions': list(job['versions'])}, timeout=1)
+                    break
+                except Full:
+                    continue
+
+    def download():
+        if not entry.INDEX.is_file():
+            raise FileNotFoundError('Completed entry index is missing.')
+        index = load_papers_index(entry.INDEX)
+        # Entry has finished: preload IDs/versions without a bounded producer queue.
+        queue = Queue()
+        for aid, versions in index.items():
+            queue.put({'arxiv_id': aid, 'versions': list(versions)})
+        if stop.is_set():
+            return {'exit_code': 130, 'reason': 'interrupted'}
+        source = FastArxivClient(delay=0.6, shared_cooldown=shared, stop_event=stop)
+        logger.info('[DOWNLOAD] Starting from completed index: %d papers.', len(index))
+        return download_stream(queue, done, status, output_dir=Path(args.out).parent,
+                               client=source, stop_event=stop)
 
     def worker(name, target):
         code = 1
@@ -91,16 +107,14 @@ def main(argv=None, *, stop_event=None):
             old_handler = signal.signal(signal.SIGINT, interrupt)
         config.load_env()
         key = config.get_api_key()
-        logger.info('[PIPELINE] Starting M1.')
+        logger.info('[PIPELINE] Starting entry and references.')
+        logger.info('[DOWNLOAD] Deferred until entry completes.')
         logger.info('[REFERENCES] API key loaded.' if key else '[REFERENCES] No API key; using public access.')
         metadata = ArxivClient(delay=3.5, retries=2, shared_cooldown=shared, stop_event=stop)
-        source = FastArxivClient(delay=0.6, shared_cooldown=shared, stop_event=stop)
         s2 = S2Client(api_key=key, stop_event=stop)
         args = references.parse_args([])
         targets = {
-            'DOWNLOAD': lambda: download_stream(queues['DOWNLOAD'], done, status,
-                                                output_dir=Path(args.out).parent, client=source, stop_event=stop),
-            'REFERENCES': lambda: references.run_stream(args, queues['REFERENCES'], done, status,
+            'REFERENCES': lambda: references.run_stream(args, references_queue, done, status,
                                                        client=s2, stop_event=stop),
             'ENTRY': lambda: entry.main(argv, client=metadata, on_batch=publish, on_finish=finish, stop_event=stop),
         }
@@ -109,7 +123,13 @@ def main(argv=None, *, stop_event=None):
         for thread in threads.values():
             thread.start()
         next_notice = 0.0
-        while any(thread.is_alive() for thread in threads.values()):
+        while True:
+            if ('DOWNLOAD' not in threads and codes.get('ENTRY') == 0
+                    and not threads['ENTRY'].is_alive() and not stop.is_set()):
+                threads['DOWNLOAD'] = threading.Thread(target=worker, args=('DOWNLOAD', download), name='m1-download')
+                threads['DOWNLOAD'].start()
+            if not any(thread.is_alive() for thread in threads.values()):
+                break
             remaining = shared.remaining()
             if remaining > 0 and time.monotonic() >= next_notice:
                 logger.info('[ARXIV] Shared cooldown: %.0fs remaining.', remaining)
