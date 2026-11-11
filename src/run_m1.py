@@ -1,4 +1,5 @@
-"""Run entry with references, then download sources after entry completes."""
+"""Run entry, source download and references together as papers become ready."""
+from itertools import chain
 import logging
 from pathlib import Path
 import signal
@@ -11,7 +12,6 @@ if __package__:
     from .entry_discovery.arxiv_cooldown import SharedCooldown
     from .entry_discovery.discovery import ArxivClient
     from .downloader.client import FastArxivClient
-    from .downloader.index import load_papers_index
     from .downloader.runner import download_stream
     from .references import config, crawl_references as references
     from .references.s2_client import S2Client
@@ -20,7 +20,6 @@ else:
     from entry_discovery.arxiv_cooldown import SharedCooldown
     from entry_discovery.discovery import ArxivClient
     from downloader.client import FastArxivClient
-    from downloader.index import load_papers_index
     from downloader.runner import download_stream
     from references import config, crawl_references as references
     from references.s2_client import S2Client
@@ -87,15 +86,46 @@ def main(argv=None, *, stop_event=None):
                 next_notice = time.monotonic() + 60
             stop.wait(1)
 
+    def download_jobs():
+        seen, next_notice = set(), 0.0
+        while not stop.is_set():
+            finished = done.is_set()
+            if finished and status['exit_code'] != 0:
+                stop.set()
+                return
+            with publications_lock:
+                snapshot = publications.copy()
+            for aid, versions in snapshot.items():
+                if stop.is_set():
+                    return
+                if done.is_set() and status['exit_code'] != 0:
+                    stop.set()
+                    return
+                if aid not in seen:
+                    seen.add(aid)
+                    next_notice = 0.0
+                    yield aid, versions
+            if finished:
+                return
+            if time.monotonic() >= next_notice:
+                logger.info('[DOWNLOAD] Waiting for entry.')
+                next_notice = time.monotonic() + 60
+            # Let the downloader collect completed papers while entry is idle.
+            yield None
+            stop.wait(1)
+
     def download():
-        if not entry.INDEX.is_file():
-            raise FileNotFoundError('Completed entry index is missing.')
-        index = load_papers_index(entry.INDEX)
+        jobs = download_jobs()
+        for first in jobs:
+            if first is not None:
+                break
+        else:
+            return {'exit_code': 130 if stop.is_set() else 0, 'reason': 'stopped' if stop.is_set() else None}
         if stop.is_set():
             return {'exit_code': 130, 'reason': 'interrupted'}
         source = FastArxivClient(delay=0.6, shared_cooldown=shared, stop_event=stop)
-        logger.info('[DOWNLOAD] Starting from completed index: %d papers.', len(index))
-        return download_stream(index, output_dir=Path(args.out).parent,
+        logger.info('[DOWNLOAD] Starting from ready papers.')
+        return download_stream(chain((first,), jobs), output_dir=Path(args.out).parent,
                                client=source, stop_event=stop)
 
     def worker(name, target):
@@ -124,8 +154,7 @@ def main(argv=None, *, stop_event=None):
             old_handler = signal.signal(signal.SIGINT, interrupt)
         config.load_env()
         key = config.get_api_key()
-        logger.info('[PIPELINE] Starting entry and references.')
-        logger.info('[DOWNLOAD] Deferred until entry completes.')
+        logger.info('[PIPELINE] Starting entry, download and references.')
         logger.info('[REFERENCES] API key loaded.' if key else '[REFERENCES] No API key; using public access.')
         metadata = ArxivClient(delay=3.5, retries=2, shared_cooldown=shared, stop_event=stop)
         s2 = S2Client(api_key=key, stop_event=stop)
@@ -133,6 +162,7 @@ def main(argv=None, *, stop_event=None):
         targets = {
             'REFERENCES': lambda: references.run(args, client=s2, source=reference_jobs(),
                                                   stream_status=references_state),
+            'DOWNLOAD': download,
             'ENTRY': lambda: entry.main(argv, client=metadata, on_batch=publish, on_finish=finish, stop_event=stop),
         }
         for name, target in targets.items():
@@ -141,10 +171,6 @@ def main(argv=None, *, stop_event=None):
             thread.start()
         next_notice = 0.0
         while True:
-            if ('DOWNLOAD' not in threads and codes.get('ENTRY') == 0
-                    and not threads['ENTRY'].is_alive() and not stop.is_set()):
-                threads['DOWNLOAD'] = threading.Thread(target=worker, args=('DOWNLOAD', download), name='m1-download')
-                threads['DOWNLOAD'].start()
             if not any(thread.is_alive() for thread in threads.values()):
                 break
             remaining = shared.remaining()

@@ -184,7 +184,7 @@ def _refresh_stream_record(record, versions):
 
 def download_stream(papers_index, *, output_dir=DEFAULT_OUTPUT_DIR,
                     workers=8, delay=0.6, connections=32, stop_event=None, client=None):
-    """Download a completed entry index with one extraction task per paper."""
+    """Download an index or (ID, versions) stream; None means temporarily idle."""
     output_dir = Path(output_dir)
     _require_prepared_folder(output_dir)
     papers_dir = output_dir / 'papers'
@@ -192,6 +192,9 @@ def download_stream(papers_index, *, output_dir=DEFAULT_OUTPUT_DIR,
     summary_path = output_dir / 'download_summary.json'
     all_status = _load_status(status_path)
     client = client if client is not None else FastArxivClient(delay=delay)
+    streaming = not isinstance(papers_index, dict)
+    source = papers_index if streaming else papers_index.items()
+    total = 0 if streaming else len(papers_index)
     items, running = {}, set()
     cached = completed = 0
     window = max(workers * 2, connections)
@@ -223,9 +226,16 @@ def download_stream(papers_index, *, output_dir=DEFAULT_OUTPUT_DIR,
     try:
         with (ThreadPoolExecutor(max_workers=max(1, connections), thread_name_prefix='net') as net_pool,
               ThreadPoolExecutor(max_workers=max(4, workers), thread_name_prefix='ext') as ext_pool):
-            for idx, (aid, version_list) in enumerate(papers_index.items(), start=1):
+            for job in source:
                 if stopped():
                     break
+                if job is None:
+                    collect(0)
+                    continue
+                aid, version_list = job
+                if aid in items:
+                    continue
+                idx = len(items) + 1
                 versions = list(version_list)
                 paper_dir = papers_dir / aid.replace('.', '-')
                 for version in versions:
@@ -244,7 +254,7 @@ def download_stream(papers_index, *, output_dir=DEFAULT_OUTPUT_DIR,
                 version_futures = [net_pool.submit(fetch_single_version_task, aid, version, client)
                                    for version in versions]
                 running.add(ext_pool.submit(
-                    extract_paper_to_existing_folders, idx, len(papers_index), aid, paper_dir,
+                    extract_paper_to_existing_folders, idx, total, aid, paper_dir,
                     version_futures, t0))
                 while len(running) >= window and not stopped():
                     collect()

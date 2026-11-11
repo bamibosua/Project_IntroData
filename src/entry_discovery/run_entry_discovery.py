@@ -193,6 +193,13 @@ def _run(argv=None, *, client=None, on_batch=None, stop_event=None) -> int:
         logger.info('[ENTRY] Metadata batch size: %d.', batch_size)
         logger.debug(f'[CONFIG] Metadata batch size: {batch_size} | Revision batch size: {args.revision_batch_size}')
 
+        def publish_ready(jobs):
+            for job in jobs:
+                paper_dir = OUTPUT_PAPERS / job['arxiv_id'].replace('.', '-')
+                for version in job['versions']:
+                    (paper_dir / version).mkdir(parents=True, exist_ok=True)
+            on_batch(jobs)
+
         # 2. Harvest metadata and revision dates using Global Revision Batching.
         logger.debug('[STEP 2/3] Crawl metadata and revision dates')
         started = time.perf_counter()
@@ -208,7 +215,8 @@ def _run(argv=None, *, client=None, on_batch=None, stop_event=None) -> int:
             "--max-consecutive-429", str(args.max_consecutive_429),
             "--recovery-rounds", str(args.recovery_rounds),
             "--pass-number", str(args.pass_number),
-        ], client=client, index_file=INDEX, on_batch=on_batch, stop_event=stop_event)
+        ], client=client, index_file=INDEX,
+           on_batch=publish_ready if on_batch is not None else None, stop_event=stop_event)
         if result != 0:
             if stop_event is not None and stop_event.is_set():
                 logger.info('[ENTRY] Stopped; checkpoints kept.')
@@ -218,7 +226,7 @@ def _run(argv=None, *, client=None, on_batch=None, stop_event=None) -> int:
 
         count, versions_total = verify_discovery(ids_file)
 
-        # 3. Generate paper folders and the index only after successful validation.
+        # 3. Finalize metadata and the index only after successful validation.
         handoff_args = [
             "--input", str(DISCOVERY / "discovered_papers_with_revised_dates.json"),
             "--papers-dir", str(OUTPUT_PAPERS),
