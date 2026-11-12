@@ -6,7 +6,7 @@ from datetime import datetime, timezone
 import json
 from pathlib import Path
 
-from .utils import format_bytes
+from .utils import format_bytes, format_duration
 
 
 def compute_storage_metrics(all_status: dict) -> dict:
@@ -40,15 +40,43 @@ def compute_storage_metrics(all_status: dict) -> dict:
     }
 
 
-def write_summary(summary_path: Path, counters: dict, metrics: dict, wall_sec: float,
-                  peak_heap_mb: float, paths: dict, *, exit_code=None, reason=None) -> dict:
+def write_summary(
+    summary_path: Path,
+    counters: dict,
+    metrics: dict,
+    wall_sec: float,
+    peak_heap_mb: float,
+    paths: dict,
+    *,
+    prev_wall_sec: float = 0.0,
+    session_wall_sec: float | None = None,
+    first_started_local: str | None = None,
+    first_started_utc: str | None = None,
+    dt_start: datetime | None = None,
+    dt_end: datetime | None = None,
+    run_state: str = "completed",
+    exit_code=None,
+    reason=None,
+) -> dict:
+    dt_now = dt_end or datetime.now()
+    dt_beg = dt_start or dt_now
+    sess_sec = wall_sec if session_wall_sec is None else session_wall_sec
     summary = {
+        "run_state": run_state,
         **counters,
+        "first_started_at_local": first_started_local or dt_beg.strftime("%Y-%m-%d %H:%M:%S"),
+        "session_started_at_local": dt_beg.strftime("%Y-%m-%d %H:%M:%S"),
+        "completed_at_local": dt_now.strftime("%Y-%m-%d %H:%M:%S"),
+        "first_started_at_utc": first_started_utc or dt_beg.astimezone(timezone.utc).isoformat(),
+        "started_at_utc": dt_beg.astimezone(timezone.utc).isoformat(),
+        "completed_at_utc": dt_now.astimezone(timezone.utc).isoformat(),
+        "previous_wall_time_sec": prev_wall_sec,
+        "session_wall_time_sec": sess_sec,
         "total_wall_time_sec": wall_sec,
+        "total_wall_time_human": format_duration(wall_sec),
         "tracemalloc_peak_heap_mb": peak_heap_mb,
         "storage_metrics": metrics,
         "output_paths": {k: str(v) for k, v in paths.items()},
-        "completed_at_utc": datetime.now(timezone.utc).isoformat(),
     }
     if exit_code is not None:
         summary.update(exit_code=exit_code, reason=reason)
@@ -56,10 +84,35 @@ def write_summary(summary_path: Path, counters: dict, metrics: dict, wall_sec: f
     return summary
 
 
-def print_report(counters: dict, m: dict, wall_sec: float, peak_heap_mb: float, summary_path: Path) -> None:
+def print_report(
+    counters: dict,
+    m: dict,
+    wall_sec: float,
+    peak_heap_mb: float,
+    summary_path: Path,
+    *,
+    prev_wall_sec: float = 0.0,
+    session_wall_sec: float | None = None,
+    first_started_local: str | None = None,
+    dt_start: datetime | None = None,
+    dt_end: datetime | None = None,
+    run_state: str = "completed",
+) -> None:
+    dt_now = dt_end or datetime.now()
+    dt_beg = dt_start or dt_now
+    sess_sec = wall_sec if session_wall_sec is None else session_wall_sec
     bar = "=" * 56
-    print(f"\n{bar}\n               DOWNLOAD CORPUS SUMMARY\n{bar}")
-    print(f" Papers processed     : {counters['total_papers']:,} (Cached: {counters['cached_papers']:,})")
+    title = "DOWNLOAD CORPUS SUMMARY" if run_state == "completed" else f"DOWNLOAD SUMMARY ({run_state.upper()})"
+    print(f"\n{bar}\n{title.center(56)}\n{bar}")
+    print(f" Status               : {run_state.upper()}")
+    print(f" First started at     : {first_started_local or dt_beg.strftime('%Y-%m-%d %H:%M:%S')}")
+    print(f" Session started at   : {dt_beg.strftime('%Y-%m-%d %H:%M:%S')}")
+    print(f" Saved / Ended at     : {dt_now.strftime('%Y-%m-%d %H:%M:%S')}")
+    print(f" Previous runtime     : {format_duration(prev_wall_sec)}")
+    print(f" Session runtime      : {format_duration(sess_sec)}")
+    print(f" Total runtime (cum.) : {format_duration(wall_sec)}")
+    print("-" * 56)
+    print(f" Papers processed     : {counters.get('processed_papers', counters['total_papers']):,} / {counters['total_papers']:,} (Cached: {counters['cached_papers']:,})")
     print(f" Papers with TeX/Bib  : {counters['papers_with_tex']:,}")
     print(f" Papers PDF-only      : {counters['papers_without_tex']:,}")
     print(f" Papers failed        : {counters['papers_failed']:,}")
@@ -74,5 +127,4 @@ def print_report(counters: dict, m: dict, wall_sec: float, peak_heap_mb: float, 
     print(f" Storage reduction    : {m['storage_reduction_ratio_vs_uncompressed_pct']:.2f}% (vs uncompressed)")
     print(f"                      : {m['storage_reduction_ratio_vs_raw_archive_pct']:.2f}% (vs raw archive)")
     print(f" Peak heap            : {peak_heap_mb} MB")
-    print(f" Wall time            : {wall_sec:.2f}s")
-    print(f"{bar}\nSummary written to {summary_path}\n")
+    print(f"{bar}\nSummary written to {summary_path}\n", flush=True)

@@ -20,5 +20,5 @@ DEFAULT_INDEX_JSON = PROJECT_ROOT / "data" / "input" / "papers_index.json"
 DEFAULT_LEGACY_JSON = PROJECT_ROOT / "data" / "discovery" / "discovered_papers_with_revised_dates.json"
 DEFAULT_OUTPUT_DIR = PROJECT_ROOT / "data" / "output"
 
-CHECKPOINT_EVERY = 50  # papers between two writes of download_status.json
+CHECKPOINT_EVERY = 20  # papers between two writes of download_status.json
 MAX_FETCH_ATTEMPTS = 7

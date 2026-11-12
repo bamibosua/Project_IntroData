@@ -14,6 +14,17 @@ def format_bytes(b: int | float) -> str:
     return f"{b:.2f} PB"
 
 
+def format_duration(seconds: float) -> str:
+    """Format seconds into human-readable HH:MM:SS string."""
+    sec = int(round(seconds))
+    h, m, s = sec // 3600, (sec % 3600) // 60, sec % 60
+    if h > 0:
+        return f"{h}h {m:02d}m {s:02d}s ({seconds:.2f}s)"
+    if m > 0:
+        return f"{m}m {s:02d}s ({seconds:.2f}s)"
+    return f"{seconds:.2f}s"
+
+
 def sanitize_relative_path(raw_name: str) -> Path | None:
     """Sanitize archive member path to prevent path traversal."""
     cleaned = raw_name.replace("\\", "/").lstrip("/")

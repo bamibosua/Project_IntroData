@@ -80,23 +80,27 @@ class FastArxivClient:
         elif self.stop_event.wait(seconds):
             raise InterruptedError('Pipeline stopped.')
 
-    def _note_throttle(self, attempt: int, retry_after=None, *, status=429) -> None:
-        """Keep the client cooldown; publish HTTP 429 to the shared deadline."""
+    def _note_throttle(self, attempt: int, retry_after=None, *, status=429) -> float:
+        """Keep the client cooldown without cascading delay; publish HTTP 429 to the shared deadline."""
         with self._cooldown_lock:
-            duration = max(min(15.0, 3.0 * attempt),
+            now = time.monotonic()
+            already_cooling = now < self._cooldown_until
+            duration = max(min(25.0, 10.0 + 5.0 * attempt),
                            _retry_after_seconds(retry_after) if status == 429 else 0.0)
-            self._cooldown_until = max(self._cooldown_until, time.monotonic() + duration)
-            self.delay = min(5.0, max(self.delay * 1.5, 0.5))
+            self._cooldown_until = max(self._cooldown_until, now + duration)
+            if not already_cooling:
+                # Chỉ tăng delay 1 lần cho mỗi đợt burst, khóa trần ở 1.8s thay vì 5.0s
+                self.delay = min(1.8, max(self.delay * 1.25, 0.5))
             self._ok_streak = 0
         if status == 429 and self.shared_cooldown is not None:
             self.shared_cooldown.defer(duration)
         return duration
 
     def _note_success(self) -> None:
-        """After 100 clean requests in a row, relax the spacing back toward the configured delay."""
+        """After 25 clean requests in a row, relax the spacing back toward the configured delay."""
         with self._cooldown_lock:
             self._ok_streak += 1
-            if self._ok_streak >= 100 and self.delay > self.base_delay:
+            if self._ok_streak >= 25 and self.delay > self.base_delay:
                 self.delay = max(self.base_delay, self.delay * 0.8)
                 self._ok_streak = 0
 
@@ -144,26 +148,28 @@ class FastArxivClient:
                     resp.close()
                     if resp.status_code in (429, 403):
                         duration = self._note_throttle(attempt, resp.headers.get('Retry-After'), status=resp.status_code)
-                        logger.warning('[DOWNLOAD] %s: HTTP %d; wait %.0fs (attempt %d/%d).',
-                                       version_id, resp.status_code, duration, attempt, MAX_FETCH_ATTEMPTS)
+                        logger.warning('[DOWNLOAD] %s: HTTP %d (Rate Limit); wait %.0fs, delay=%.2fs (attempt %d/%d).',
+                                       version_id, resp.status_code, duration, self.delay, attempt, MAX_FETCH_ATTEMPTS)
                         self._sleep(1.0)
                         continue
                     if resp.status_code == 404:
+                        logger.warning('[DOWNLOAD] %s: HTTP 404 (Not Found).', version_id)
                         return _NOT_FOUND_PAYLOAD
-                    logger.warning('[DOWNLOAD] %s: HTTP %d; trying urllib.', version_id, resp.status_code)
+                    wait_s = min(5.0, 1.0 * attempt)
+                    logger.warning('[DOWNLOAD] %s: HTTP %d; retrying in %.0fs (attempt %d/%d).',
+                                   version_id, resp.status_code, wait_s, attempt, MAX_FETCH_ATTEMPTS)
+                    self._sleep(wait_s)
+                    continue
                 except Exception as exc:
                     if self.stop_event is not None and self.stop_event.is_set():
                         raise
-                    logger.warning('[DOWNLOAD] %s: %s (attempt %d/%d).',
-                                   version_id, type(exc).__name__, attempt, MAX_FETCH_ATTEMPTS)
+                    wait_s = min(5.0, 1.0 * attempt)
+                    logger.warning('[DOWNLOAD] %s: %s (%s); retrying in %.0fs (attempt %d/%d).',
+                                   version_id, type(exc).__name__, exc, wait_s, attempt, MAX_FETCH_ATTEMPTS)
                     self._thread_local.session = None
-                    self._sleep(min(5.0, 1.0 * attempt))
+                    self._sleep(wait_s)
                     continue
-
-            # A fallback is another HTTP request and needs its own rate slot.
-            if session is not None:
-                slot_idx = self._wait_rate_slot()
-                url = f"{SRC_ENDPOINTS[slot_idx % len(SRC_ENDPOINTS)]}/{version_id}"
+                
             # Fallback to urllib when `requests` is unavailable
             req = urllib.request.Request(url, headers={"User-Agent": random.choice(USER_AGENTS)})
             try:

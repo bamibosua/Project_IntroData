@@ -45,11 +45,16 @@ def _install_sigint_handler(status_path: Path, all_status: dict) -> None:
     signal.signal(signal.SIGINT, handler)
 
 
+from datetime import datetime, timezone
+from typing import Callable
+
+
 class _Progress:
     """Counters and checkpointing shared by the drain loops."""
 
-    def __init__(self, status_path: Path, all_status: dict):
-        self.status_path, self.all_status = status_path, all_status
+    def __init__(self, all_status: dict, on_checkpoint: Callable[[], None]):
+        self.all_status = all_status
+        self.on_checkpoint = on_checkpoint
         self.cached = self.success = self.no_tex = self.error = 0
         self._pending = 0
 
@@ -74,7 +79,7 @@ class _Progress:
                   f"{res['status']} | {res['elapsed']:.2f}s", flush=True)
             self._pending += 1
             if self._pending >= CHECKPOINT_EVERY:
-                _save_status(self.status_path, self.all_status)
+                self.on_checkpoint()
                 self._pending = 0
         return running
 
@@ -102,22 +107,87 @@ def download_corpus(
     _require_prepared_folder(output_dir)
     papers_dir = output_dir / "papers"
     status_path = output_dir / "download_status.json"
-    # A partial (--limit) run must not overwrite the corpus-wide summary.
     summary_path = output_dir / ("download_summary_limit.json" if limit is not None else "download_summary.json")
 
     all_status = _load_status(status_path)
-    _install_sigint_handler(status_path, all_status)
-
-    client = FastArxivClient(delay=delay)
-    items = list(papers_index.items())[:limit]
+    prev_summary = _load_status(summary_path)
 
     tracemalloc.start()
+    dt_start = datetime.now()
     t_start = time.perf_counter()
-    progress = _Progress(status_path, all_status)
+
+    prev_wall_sec = float(prev_summary.get("total_wall_time_sec", 0.0))
+    first_started_local = prev_summary.get("first_started_at_local") or prev_summary.get("started_at_local")
+    first_started_utc = prev_summary.get("first_started_at_utc") or prev_summary.get("started_at_utc")
+    first_started_local = first_started_local or dt_start.strftime("%Y-%m-%d %H:%M:%S")
+    first_started_utc = first_started_utc or dt_start.astimezone(timezone.utc).isoformat()
+    prev_peak_mb = float(prev_summary.get("tracemalloc_peak_heap_mb", 0.0))
+
+    items = list(papers_index.items())[:limit]
+    item_keys = {k for k, _ in items}
+    paths_dict = {
+        "papers_dir": papers_dir,
+        "download_status_json": status_path,
+        "download_summary_json": summary_path,
+    }
+
+    def flush_checkpoint_and_summary(run_state: str, show_report: bool = False) -> dict:
+        _save_status(status_path, all_status)
+        dt_now = datetime.now()
+        session_wall_sec = round(time.perf_counter() - t_start, 4)
+        total_wall_sec = round(prev_wall_sec + session_wall_sec, 4)
+        _, peak_heap = tracemalloc.get_traced_memory()
+        cur_peak_mb = max(prev_peak_mb, round(peak_heap / (1024 * 1024), 2))
+
+        active_status = {k: r for k, r in all_status.items() if k in item_keys}
+        n_tex = sum(1 for r in active_status.values() if r.get("paper_status") == "success")
+        n_notex = sum(1 for r in active_status.values() if r.get("paper_status") == "no_tex_source")
+        n_fail = len(active_status) - n_tex - n_notex
+
+        counters = {
+            "total_papers": len(items),
+            "processed_papers": len(active_status),
+            "cached_papers": progress.cached,
+            "papers_with_tex": n_tex,
+            "papers_without_tex": n_notex,
+            "papers_failed": n_fail,
+        }
+        metrics = compute_storage_metrics(active_status)
+        summary = write_summary(
+            summary_path, counters, metrics, total_wall_sec, cur_peak_mb, paths_dict,
+            prev_wall_sec=prev_wall_sec, session_wall_sec=session_wall_sec,
+            first_started_local=first_started_local, first_started_utc=first_started_utc,
+            dt_start=dt_start, dt_end=dt_now, run_state=run_state,
+        )
+        if show_report:
+            print_report(
+                counters, metrics, total_wall_sec, cur_peak_mb, summary_path,
+                prev_wall_sec=prev_wall_sec, session_wall_sec=session_wall_sec,
+                first_started_local=first_started_local, dt_start=dt_start,
+                dt_end=dt_now, run_state=run_state,
+            )
+        return summary
+
+    progress = _Progress(all_status, on_checkpoint=lambda: flush_checkpoint_and_summary("in_progress", False))
+
+    def _on_sigint(signum, frame):
+        print("\nInterrupted: saving checkpoint and summary...", flush=True)
+        try:
+            flush_checkpoint_and_summary("interrupted", show_report=True)
+        finally:
+            os._exit(130)
+
+    signal.signal(signal.SIGINT, _on_sigint)
+    if hasattr(signal, "SIGTERM"):
+        signal.signal(signal.SIGTERM, _on_sigint)
+
+    flush_checkpoint_and_summary("in_progress", show_report=False)
+
+    client = FastArxivClient(delay=delay)
     running: set[Future] = set()
     window = max(workers * 2, connections)
 
-    print(f"Starting downloader: {len(items)} papers target (workers={workers}, delay={delay}s)...", flush=True)
+    print(f"Starting downloader: {len(items)} papers target (workers={workers}, delay={delay}s, prev_time={prev_wall_sec:.2f}s)...", flush=True)
 
     with (
         ThreadPoolExecutor(max_workers=max(1, connections), thread_name_prefix="net") as net_pool,
@@ -127,7 +197,7 @@ def download_corpus(
             paper_dir = papers_dir / arxiv_id.replace(".", "-")
             prev = all_status.get(arxiv_id, {})
 
-            if _is_cached(prev, paper_dir, v_list):  # already done on disk: skip immediately
+            if _is_cached(prev, paper_dir, v_list):
                 progress.count_cached(prev["paper_status"])
                 if progress.cached <= 5 or progress.cached % 2000 == 0:
                     print(f"[{idx}/{len(items)}] {arxiv_id} ({len(v_list)}v): cached", flush=True)
@@ -148,25 +218,8 @@ def download_corpus(
 
         run_audit(items, papers_dir, all_status, client, net_pool)
 
-    _save_status(status_path, all_status)
-    wall_sec = round(time.perf_counter() - t_start, 4)
-    _, peak_heap = tracemalloc.get_traced_memory()
+    summary = flush_checkpoint_and_summary("completed", show_report=True)
     tracemalloc.stop()
-    peak_heap_mb = round(peak_heap / (1024 * 1024), 2)
-
-    counters = {
-        "total_papers": len(items),
-        "cached_papers": progress.cached,
-        "papers_with_tex": progress.success,
-        "papers_without_tex": progress.no_tex,
-        "papers_failed": progress.error,
-    }
-    metrics = compute_storage_metrics(all_status)
-    summary = write_summary(
-        summary_path, counters, metrics, wall_sec, peak_heap_mb,
-        {"papers_dir": papers_dir, "download_status_json": status_path, "download_summary_json": summary_path},
-    )
-    print_report(counters, metrics, wall_sec, peak_heap_mb, summary_path)
     return summary
 
 
