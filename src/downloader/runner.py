@@ -271,6 +271,8 @@ def download_stream(papers_index, *, output_dir=DEFAULT_OUTPUT_DIR,
             completed += 1
             if result['status'] == 'error':
                 logger.warning('[DOWNLOAD] %s: incomplete; see download_status.json.', aid)
+            elif result['status'] == 'no_tex_source':
+                logger.info('[DOWNLOAD] %s (%dv): no_tex_source (PDF-only/no TeX).', aid, result.get('ver_count', 1))
             if completed % 50 == 0:
                 logger.info('[DOWNLOAD] Processed: %d.', completed)
             if completed % CHECKPOINT_EVERY == 0:
