@@ -254,10 +254,11 @@ def download_stream(papers_index, *, output_dir=DEFAULT_OUTPUT_DIR,
     output_dir = Path(output_dir)
     _require_prepared_folder(output_dir)
     papers_dir = output_dir / 'papers'
-    status_path = output_dir / 'download_status.json'
-    summary_path = output_dir / 'download_summary.json'
-    all_status = _load_status(status_path)
-    
+    meta_dir = output_dir / DOWNLOAD_META_DIR_NAME
+    meta_dir.mkdir(parents=True, exist_ok=True)
+    status_path = meta_dir / 'download_status.json'
+    summary_path = meta_dir / 'download_summary.json'
+    all_status = _load_status(status_path, legacy_dir=output_dir)
     client = client if client is not None else FastArxivClient(delay=delay)
     streaming = not isinstance(papers_index, dict)
     source = papers_index if streaming else papers_index.items()
