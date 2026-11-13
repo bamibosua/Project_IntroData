@@ -75,6 +75,7 @@ class _Progress:
                 self.success += 1
             elif res["status"] == "no_tex_source":
                 self.no_tex += 1
+                logger.info("[DOWNLOAD] %s (%dv): no TeX source / PDF-only", res["arxiv_id"], res.get("ver_count", 1))
             else:
                 self.error += 1
             print(f"[{res['idx']}/{res['total']}] {res['arxiv_id']} ({res['ver_count']}v) -> "
@@ -278,7 +279,7 @@ def download_stream(papers_index, *, output_dir=DEFAULT_OUTPUT_DIR,
             if result['status'] == 'error':
                 logger.warning('[DOWNLOAD] %s: incomplete; see download_status.json.', aid)
             elif result['status'] == 'no_tex_source':
-                logger.info('[DOWNLOAD] %s (%dv): no_tex_source (PDF-only/no TeX).', aid, result.get('ver_count', 1))
+                logger.info('[DOWNLOAD] %s (%dv): no TeX source / PDF-only', aid, result.get('ver_count', 1))
             if completed % 50 == 0:
                 logger.info('[DOWNLOAD] Processed: %d.', completed)
             if completed % CHECKPOINT_EVERY == 0:
