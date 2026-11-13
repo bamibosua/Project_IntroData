@@ -13,8 +13,10 @@ import json
 import os
 import re
 import sys
+import time
 from pathlib import Path
 
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
 PAPER_ID = re.compile(r"\d{4}\.\d{4,5}\Z")
 VERSION_ID = re.compile(r"v([1-9]\d*)\Z")
 
@@ -62,6 +64,15 @@ def atomic_write_json(path: Path, value: object) -> None:
     finally:
         if temp.exists():
             temp.unlink()
+
+
+def update_index(index_file: Path, updates: dict[str, list[str]]) -> None:
+    """Merge a validated batch into the index; entry is the only writer."""
+    index = json.loads(index_file.read_text(encoding='utf-8')) if index_file.exists() else {}
+    if not isinstance(index, dict):
+        raise ValueError(f'Expected an index JSON object: {index_file}')
+    index.update(updates)
+    atomic_write_json(index_file, index)
 
 
 def same_json(path: Path, value: object) -> bool:
@@ -130,6 +141,13 @@ def build_handoff(papers: list[dict], papers_dir: Path, index_file: Path,
             else:
                 atomic_write_json(meta, paper)
                 metadata_new += 1
+        events = os.environ.get('M1_BENCHMARK_EVENTS')
+        if events and not dry_run:
+            try:
+                with open(events, 'a', encoding='utf-8') as stream:
+                    stream.write(json.dumps([pid, time.perf_counter()]) + '\n')
+            except OSError:
+                pass  # Telemetry failure must not change the handoff result.
         if number % 1000 == 0 or number == len(validated):
             print(f'[HANDOFF] {number}/{len(validated)} papers', flush=True)
 
@@ -159,8 +177,8 @@ def main(argv: list[str] | None = None) -> int:
     p = argparse.ArgumentParser(description='Create per-paper folders + ID/versions JSON index for teammates')
     p.add_argument('--input', type=Path, required=True,
                    help='discovered_papers_with_revised_dates.json from Entry Discovery')
-    p.add_argument('--papers-dir', type=Path, default=Path('data/group/papers'))
-    p.add_argument('--index-file', type=Path, default=Path('data/group/papers_index.json'))
+    p.add_argument('--papers-dir', type=Path, default=PROJECT_ROOT / 'data' / 'output' / 'papers')
+    p.add_argument('--index-file', type=Path, default=PROJECT_ROOT / 'data' / 'input' / 'papers_index.json')
     p.add_argument('--limit', type=int, help='Only first N papers, for a small trial')
     p.add_argument('--dry-run', action='store_true', help='Validate and count without writing files')
     p.add_argument('--overwrite-metadata', action='store_true',

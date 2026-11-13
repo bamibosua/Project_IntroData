@@ -15,9 +15,11 @@ USER_AGENTS = [
     "HCMUS-IDS-M1-Downloader/3.0 (Academic Research)",
 ]
 
-DEFAULT_INDEX_JSON = Path("data/input/papers_index.json")
-DEFAULT_LEGACY_JSON = Path("data/input/discovered_papers_with_revised_dates.json")
-DEFAULT_OUTPUT_DIR = Path("data/output")
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+DEFAULT_INDEX_JSON = PROJECT_ROOT / "data" / "input" / "papers_index.json"
+DEFAULT_LEGACY_JSON = PROJECT_ROOT / "data" / "discovery" / "discovered_papers_with_revised_dates.json"
+DEFAULT_OUTPUT_DIR = PROJECT_ROOT / "data" / "output"
+DOWNLOAD_META_DIR_NAME = "papers_download_meta"
 
-CHECKPOINT_EVERY = 50  # papers between two writes of download_status.json
+CHECKPOINT_EVERY = 20  # papers between two writes of download_status.json
 MAX_FETCH_ATTEMPTS = 7

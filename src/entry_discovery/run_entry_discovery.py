@@ -8,7 +8,7 @@ From another directory, use the absolute path to this script.
 Stages:
   1. prepare_group.py -> data/input/{group_ids.txt, id_ownership.csv, group_summary.json}
   2. smart_discovery.py -> data/discovery/
-  3. prepare_papers_handoff.py -> data/input/papers_index.json and data/output/paper/
+  3. prepare_papers_handoff.py -> data/input/papers_index.json and data/output/papers/
 
 Safeguards: resume existing metadata checkpoints; only start the handoff when
 all input IDs have metadata and complete revision dates; do not overwrite changed
@@ -18,18 +18,37 @@ paper metadata unless explicitly authorized with --overwrite-metadata.
 from __future__ import annotations
 
 import argparse
+import logging
 import json
 import math
+import os
 import subprocess
 import sys
 import time
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent
+try:
+    if __package__ and __package__.startswith('src.'):
+        from .. import m1_benchmark as benchmark
+    else:
+        import m1_benchmark as benchmark
+except ImportError:
+    benchmark = None
+
+if __package__:
+    from . import smart_discovery
+else:
+    import smart_discovery
+
+SCRIPT_DIR = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parents[2]
 INPUT = ROOT / "data" / "input"
 DISCOVERY = ROOT / "data" / "discovery"
-OUTPUT_PAPERS = ROOT / "data" / "output" / "paper"
+OUTPUT_PAPERS = ROOT / "data" / "output" / "papers"
 INDEX = INPUT / "papers_index.json"
+
+
+logger = logging.getLogger(__name__)
 
 
 def read_json(path: Path):
@@ -40,25 +59,30 @@ def read_json(path: Path):
 
 
 def call_stage(number: int, title: str, script: str, arguments: list[str]) -> None:
-    path = ROOT / script
+    path = SCRIPT_DIR / script
     if not path.is_file():
         raise RuntimeError(f"Missing {path}. Keep this runner alongside the pipeline scripts in entry_discovery/.")
     command = [sys.executable, "-u", str(path), *arguments]
-    print(f"\n{'=' * 68}\n[STEP {number}/3] {title}\n{'=' * 68}", flush=True)
-    print(f"Command: {' '.join(command)}", flush=True)
+    logger.debug(f"\n{'=' * 68}\n[STEP {number}/3] {title}\n{'=' * 68}")
+    logger.debug(f"Command: {' '.join(command)}")
     started = time.perf_counter()
+    logger.info('[ENTRY] %s.', title)
     try:
-        subprocess.run(command, cwd=ROOT, check=True)
+        subprocess.run(command, cwd=ROOT, check=True, capture_output=True, text=True, encoding='utf-8',
+                       env={**os.environ, 'PYTHONIOENCODING': 'utf-8',
+                            **({'M1_BENCHMARK_EVENTS': benchmark.active.metadata_events}
+                               if benchmark is not None and benchmark.active is not None else {})})
     except subprocess.CalledProcessError as exc:
+        detail = (exc.stderr or '').strip().splitlines()
         raise RuntimeError(
             f"STEP {number} failed (exit code {exc.returncode}). "
-            "Previous checkpoint files are preserved. Fix the issue and rerun this same script."
+            + (detail[-1] if detail else 'Previous checkpoint files are preserved.')
         ) from exc
-    print(f"[STEP {number}/3 DONE] {title} | {time.perf_counter() - started:.1f}s", flush=True)
+    logger.debug(f'[STEP {number}/3 DONE] {title} | {time.perf_counter() - started:.1f}s')
 
 
 def select_batch_size(requested: int | None) -> int:
-    print("[CHECKPOINT] Checking saved metadata batch configuration...", flush=True)
+    logger.debug('[CHECKPOINT] Checking saved metadata batch configuration...')
     manifest = DISCOVERY / "checkpoint_manifest.json"
     if manifest.is_file():
         saved = read_json(manifest)
@@ -71,13 +95,13 @@ def select_batch_size(requested: int | None) -> int:
                 "Rerun without --batch-size, or use a fresh discovery folder; "
                 "do not mix incompatible checkpoint batches."
             )
-        print(f"[INFO] Resuming existing metadata checkpoints with batch size {existing}.", flush=True)
+        logger.debug(f'[INFO] Resuming existing metadata checkpoints with batch size {existing}.')
         return existing
     return requested if requested is not None else 50
 
 
 def verify_discovery(ids_file: Path) -> tuple[int, int]:
-    print("[VERIFY] Reading input IDs and discovery outputs...", flush=True)
+    logger.debug('[VERIFY] Reading input IDs and discovery outputs...')
     ids = [line.strip() for line in ids_file.read_text(encoding="utf-8").splitlines()
            if line.strip() and not line.lstrip().startswith("#")]
     if not ids or len(ids) != len(set(ids)):
@@ -102,7 +126,7 @@ def verify_discovery(ids_file: Path) -> tuple[int, int]:
 
     found_ids: set[str] = set()
     versions_total = 0
-    print(f"[VERIFY] Checking metadata, version lists and revision dates for {expected_count} papers...", flush=True)
+    logger.debug(f'[VERIFY] Checking metadata, version lists and revision dates for {expected_count} papers...')
     for paper in papers:
         if not isinstance(paper, dict):
             raise RuntimeError("Paper entry must be a JSON object.")
@@ -122,11 +146,11 @@ def verify_discovery(ids_file: Path) -> tuple[int, int]:
         versions_total += latest
     if found_ids != set(ids):
         raise RuntimeError("Discovery paper IDs do not exactly match the input ID list.")
-    print(f"[CHECK] OK: {expected_count} papers, {versions_total} versions, no pending paper.", flush=True)
+    logger.debug(f'[CHECK] OK: {expected_count} papers, {versions_total} versions, no pending paper.')
     return expected_count, versions_total
 
 
-def main() -> int:
+def _run(argv=None, *, client=None, on_batch=None, stop_event=None) -> int:
     parser = argparse.ArgumentParser(description="One-command Entry Discovery pipeline")
     parser.add_argument("--batch-size", type=int, default=None,
                         help="Metadata batch size (default 50, auto-detect existing checkpoint)")
@@ -143,7 +167,7 @@ def main() -> int:
     parser.add_argument("--pass-number", type=int, choices=(1, 2), default=1)
     parser.add_argument("--overwrite-metadata", action="store_true",
                         help="Allow updating existing metadata.json; never changes source or references")
-    args = parser.parse_args()
+    args = parser.parse_args(argv)
     if args.batch_size is not None and not 1 <= args.batch_size <= 50:
         parser.error("--batch-size must be between 1 and 50")
     if not 1 <= args.revision_batch_size <= 50:
@@ -158,28 +182,38 @@ def main() -> int:
         parser.error("max-consecutive-429 must be nonnegative and recovery-rounds positive")
 
     try:
-        print("[INIT] Checking pipeline configuration...", flush=True)
-        config = ROOT / "team_ranges.json"
+        logger.debug('[INIT] Checking pipeline configuration...')
+        config = SCRIPT_DIR / "team_ranges.json"
         if not config.is_file():
             raise RuntimeError(f"Missing config: {config}")
-        print(f"[ROOT] {ROOT}", flush=True)
-        print("[INFO] Using the current Python interpreter for all three stages.", flush=True)
+        logger.debug(f'[ROOT] {ROOT}')
+        logger.debug('[INFO] Using the current Python interpreter for all three stages.')
 
         # 1. Build list and team ownership information.
         call_stage(1, "Prepare assigned arXiv IDs", "prepare_group.py", [
             "--config", str(config), "--output", str(INPUT)
         ])
         ids_file = INPUT / "group_ids.txt"
-        print(f"[CHECK] Checking generated ID list: {ids_file}", flush=True)
+        logger.debug(f'[CHECK] Checking generated ID list: {ids_file}')
         if not ids_file.is_file():
             raise RuntimeError(f"No ID list created at {ids_file}")
 
         # Reuse an existing checkpoint's batch size; never silently invalidate it.
         batch_size = select_batch_size(args.batch_size)
-        print(f"[CONFIG] Metadata batch size: {batch_size} | Revision batch size: {args.revision_batch_size}", flush=True)
+        logger.info('[ENTRY] Metadata batch size: %d.', batch_size)
+        logger.debug(f'[CONFIG] Metadata batch size: {batch_size} | Revision batch size: {args.revision_batch_size}')
+
+        def publish_ready(jobs):
+            for job in jobs:
+                paper_dir = OUTPUT_PAPERS / job['arxiv_id'].replace('.', '-')
+                for version in job['versions']:
+                    (paper_dir / version).mkdir(parents=True, exist_ok=True)
+            on_batch(jobs)
 
         # 2. Harvest metadata and revision dates using Global Revision Batching.
-        call_stage(2, "Crawl metadata and revision dates", "smart_discovery.py", [
+        logger.debug('[STEP 2/3] Crawl metadata and revision dates')
+        started = time.perf_counter()
+        result = smart_discovery.main([
             "--ids-file", str(ids_file),
             "--output", str(DISCOVERY),
             "--batch-size", str(batch_size),
@@ -191,11 +225,18 @@ def main() -> int:
             "--max-consecutive-429", str(args.max_consecutive_429),
             "--recovery-rounds", str(args.recovery_rounds),
             "--pass-number", str(args.pass_number),
-        ])
+        ], client=client, index_file=INDEX,
+           on_batch=publish_ready if on_batch is not None else None, stop_event=stop_event)
+        if result != 0:
+            if stop_event is not None and stop_event.is_set():
+                logger.info('[ENTRY] Stopped; checkpoints kept.')
+                return 1
+            raise RuntimeError(f"STEP 2 failed (exit code {result}). Previous checkpoint files are preserved.")
+        logger.debug(f'[STEP 2/3 DONE] Crawl metadata and revision dates | {time.perf_counter() - started:.1f}s')
 
         count, versions_total = verify_discovery(ids_file)
 
-        # 3. Generate paper folders and the index only after successful validation.
+        # 3. Finalize metadata and the index only after successful validation.
         handoff_args = [
             "--input", str(DISCOVERY / "discovered_papers_with_revised_dates.json"),
             "--papers-dir", str(OUTPUT_PAPERS),
@@ -206,22 +247,34 @@ def main() -> int:
         call_stage(3, "Export per-paper metadata, version folders, and index", "prepare_papers_handoff.py",
                    handoff_args)
 
-        print(f"[VERIFY] Checking exported papers index: {INDEX}", flush=True)
+        logger.debug(f'[VERIFY] Checking exported papers index: {INDEX}')
         generated_index = read_json(INDEX)
         if not isinstance(generated_index, dict) or len(generated_index) != count:
             raise RuntimeError(f"Index file incomplete: {INDEX}")
-        print("\n" + "=" * 68, flush=True)
-        print("[DONE] All three Entry Discovery steps finished successfully.", flush=True)
-        print(f"Papers: {count} | Versions: {versions_total}", flush=True)
-        print(f"IDs and ownership: {INPUT}", flush=True)
-        print(f"Crawled metadata:  {DISCOVERY}", flush=True)
-        print(f"Index file:        {INDEX}", flush=True)
-        print(f"Paper folders:     {OUTPUT_PAPERS}", flush=True)
+        logger.debug('\n' + '=' * 68)
+        logger.info('[ENTRY] Done: %d papers, %d versions.', count, versions_total)
+        logger.debug(f'Papers: {count} | Versions: {versions_total}')
+        logger.debug(f'IDs and ownership: {INPUT}')
+        logger.debug(f'Crawled metadata:  {DISCOVERY}')
+        logger.debug(f'Index file:        {INDEX}')
+        logger.debug(f'Paper folders:     {OUTPUT_PAPERS}')
         return 0
     except (RuntimeError, OSError, ValueError) as exc:
-        print(f"\n[ERROR] {exc}", file=sys.stderr, flush=True)
+        logger.error('[ENTRY] Failed: %s', exc)
         return 1
 
 
+def main(argv=None, *, client=None, on_batch=None, on_finish=None, stop_event=None) -> int:
+    """Publish validated batches; notify completion once after the whole entry run."""
+    exit_code = 1
+    try:
+        exit_code = _run(argv, client=client, on_batch=on_batch, stop_event=stop_event)
+        return exit_code
+    finally:
+        if on_finish is not None:
+            on_finish(exit_code)
+
+
 if __name__ == "__main__":
+    logging.basicConfig(level=logging.INFO, format='%(message)s')
     raise SystemExit(main())

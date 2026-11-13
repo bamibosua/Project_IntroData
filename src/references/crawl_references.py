@@ -8,7 +8,17 @@ import logging
 import math
 import os
 import uuid
+import time
 from pathlib import Path
+from queue import Empty
+
+try:
+    if __package__ and __package__.startswith('src.'):
+        from .. import m1_benchmark as benchmark
+    else:
+        import m1_benchmark as benchmark
+except ImportError:
+    benchmark = None
 
 if __package__:
     from . import config
@@ -68,16 +78,17 @@ def _verified_record(client, pub, entry, *, force_pages=False):
     if (not force_pages and count_matches(entry, len(raw))
             and len(raw) < config.TRUNCATION_CHECK_MIN_REFS):
         return build_record(pub, entry, fetched_at=timestamp())
-    print(f"  Verifying {aid}...")
+    logger.info('[REFERENCES] Verifying %s: expected=%s batch=%d.',
+                aid, entry.get('referenceCount'), len(raw))
     full, _ = client.fetch_all_references(aid)
     if entry.get("referenceCount") is None:
-        print(f"  Looking up reference count: {aid}.")
+        logger.info(f'[REFERENCES] Looking up reference count: {aid}.')
         metadata, _ = client.fetch_metadata(aid)
         entry = {**entry, "referenceCount": metadata["referenceCount"],
                  "paperId": metadata.get("paperId") or entry.get("paperId")}
     if not count_matches(entry, len(full)):
         return build_record(pub, entry, raw_refs=full, method="paged_count_mismatch", fetched_at=timestamp())
-    print(f"  Verified {aid}: {len(full)} references.")
+    logger.info(f'[REFERENCES] Verified {aid}: {len(full)} references.')
     return build_record(pub, entry, raw_refs=full, method="paged_count_match", fetched_at=timestamp())
 
 
@@ -92,14 +103,16 @@ def _commit_record(pub, record, out_dir, metrics):
                 _record_error(pub, ClientError(
                     f"{pub['arxiv_id']}: count={record['s2_reference_count']}, pages={record['n_refs']}; chưa xác minh đủ",
                     code="count_mismatch"), metrics)
-                print(f"  {pub['arxiv_id']}: count mismatch (expected={record['s2_reference_count']}, "
-                      f"fetched={record['n_refs']}); previous verified data kept.")
+                logger.info('[REFERENCES] %s: mismatch %s/%s; verified data kept.',
+                            pub['arxiv_id'], record['n_refs'], record['s2_reference_count'])
                 return
     size = write_json_atomic(record_path(out_dir, pub["arxiv_id"]), record)
     metrics.add_record(record, payload_bytes=size)
+    if benchmark is not None:
+        benchmark.event(pub['arxiv_id'], 'references', record['status'])
     if record["status"] == "count_mismatch":
-        print(f"  {pub['arxiv_id']}: count mismatch (expected={record['s2_reference_count']}, "
-              f"fetched={record['n_refs']}); saved with warning.")
+        logger.info('[REFERENCES] %s: count mismatch %s/%s; saved with warning.',
+                    pub['arxiv_id'], record['n_refs'], record['s2_reference_count'])
 
 
 def _process_batch(client, publications, out_dir, metrics):
@@ -109,18 +122,18 @@ def _process_batch(client, publications, out_dir, metrics):
         if exc.code == "too_large" and len(publications) > 1:
             metrics.splits += 1
             middle = len(publications) // 2
-            print(f"  Response too large; splitting {len(publications)} papers into {middle} + {len(publications) - middle}.")
+            logger.info(f'[REFERENCES] Response too large; splitting {len(publications)} papers into {middle} + {len(publications) - middle}.')
             _process_batch(client, publications[:middle], out_dir, metrics)
             _process_batch(client, publications[middle:], out_dir, metrics)
             return
         if exc.code == "too_large":
             pub = publications[0]
-            print(f"  Fetching references by page: {pub['arxiv_id']}.")
+            logger.info(f"[REFERENCES] Fetching references by page: {pub['arxiv_id']}.")
             try:
                 metadata, _ = client.fetch_metadata(pub["arxiv_id"])
                 record = _verified_record(client, pub, {**metadata, "references": []}, force_pages=True)
             except (ClientError, ResponseError) as error:
-                print(f"  {pub['arxiv_id']}: verification failed ({getattr(error, 'code', 'invalid_response').replace('_', ' ')}); remains pending.")
+                logger.info(f"[REFERENCES] {pub['arxiv_id']}: verification failed ({getattr(error, 'code', 'invalid_response').replace('_', ' ')}); remains pending.")
                 _record_error(pub, error, metrics)
             else:
                 _commit_record(pub, record, out_dir, metrics)
@@ -128,25 +141,11 @@ def _process_batch(client, publications, out_dir, metrics):
         for pub in publications:
             _record_error(pub, exc, metrics)
         return
-    verifying = sum(entry is not None and
-                    (not count_matches(entry, len(entry["references"])) or
-                     len(entry["references"]) >= config.TRUNCATION_CHECK_MIN_REFS)
-                    for entry in entries)
-    if verifying:
-        print(f"  Verifying references for {verifying} paper{'s' if verifying != 1 else ''}:")
-        for pub, entry in zip(publications, entries):
-            if entry is not None and (not count_matches(entry, len(entry["references"])) or
-                                      len(entry["references"]) >= config.TRUNCATION_CHECK_MIN_REFS):
-                expected = entry.get("referenceCount")
-                threshold = (f"; check threshold={config.TRUNCATION_CHECK_MIN_REFS}"
-                             if len(entry["references"]) >= config.TRUNCATION_CHECK_MIN_REFS else "")
-                print(f"    - {pub['arxiv_id']}: expected={expected if expected is not None else 'unknown'}, "
-                      f"batch={len(entry['references'])}{threshold}")
     for pub, entry in zip(publications, entries):
         try:
             record = _verified_record(client, pub, entry)
         except (ClientError, ResponseError) as exc:
-            print(f"  {pub['arxiv_id']}: verification failed ({getattr(exc, 'code', 'invalid_response').replace('_', ' ')}); remains pending.")
+            logger.info(f"[REFERENCES] {pub['arxiv_id']}: verification failed ({getattr(exc, 'code', 'invalid_response').replace('_', ' ')}); remains pending.")
             _record_error(pub, exc, metrics)
             continue
         _commit_record(pub, record, out_dir, metrics)
@@ -156,6 +155,8 @@ def _record_error(pub, error, metrics):
     if isinstance(error, ResponseError):
         error = ClientError(str(error), code="invalid_response")
     metrics.add_error(pub["arxiv_id"], error)
+    if benchmark is not None:
+        benchmark.event(pub['arxiv_id'], 'references', 'error')
 
 
 def _save_report(path, report):
@@ -180,10 +181,11 @@ def _append_log(path, metrics):
         logger.warning("Cannot save the crawl log; crawling will continue.")
 
 
-def run(args, client=None):
+def run(args, client=None, *, source=None, stream_status=None):
     cfg = _configuration(args)
-    publications = load_index(args.papers_file)
-    if args.limit:
+    streaming = source is not None
+    publications = [] if streaming else load_index(args.papers_file)
+    if args.limit and not streaming:
         publications = publications[:args.limit]
     meta_dir = args.meta_dir or default_meta_dir(args.out)
     if args.summarize:
@@ -206,46 +208,88 @@ def run(args, client=None):
     exit_code, reason, owns_client = 0, None, False
     n_batches = 0
     stats_before = client.stats.as_dict() if client is not None else {}
+
+    def batches():
+        nonlocal disk_before
+        if not streaming:
+            for start in range(0, len(publications), cfg['batch_size']):
+                yield publications[start:start + cfg['batch_size']]
+            return
+        pending, seen = [], set()
+        for job in source:
+            aid = job['arxiv_id']
+            if aid in seen:
+                continue
+            seen.add(aid)
+            pub = {'arxiv_id': aid, 'versions': [f'{aid}{version}' for version in job['versions']]}
+            before = refs_size(args.out, [pub])
+            disk_before = disk_before + before if disk_before is not None and before is not None else None
+            publications.append(pub)
+            metrics.papers['selected'] = len(publications)
+            pending.append(pub)
+            stream_status['buffered'] = len(pending)
+            if len(pending) == cfg['batch_size']:
+                stream_status['buffered'] = 0
+                yield pending
+                pending = []
+        if pending and stream_status['exit_code'] == 0:
+            yield pending
+
     try:
         with monitor:
             n_batches = (len(publications) + cfg["batch_size"] - 1) // cfg["batch_size"]
-            print(f"Input: {len(publications):,} papers")
-            print(f"{n_batches} batch{'es' if n_batches != 1 else ''} x up to {cfg['batch_size']} papers | {cfg['cycle_sec']:g}s/request | 429 wait: {cfg['wait_429_sec']:g}s")
-            if publications and client is None:
-                config.load_env()
-                client = S2Client(api_key=config.get_api_key(), cycle=cfg["cycle_sec"], wait_429=cfg["wait_429_sec"])
-                print("API key loaded." if client.headers.get("x-api-key") else "No API key found; using unauthenticated requests.")
-                owns_client = True
-            batches_started = client.clock() if client is not None else 0.0
-            for start in range(0, len(publications), cfg["batch_size"]):
-                batch = publications[start:start + cfg["batch_size"]]
+            if streaming:
+                logger.info('[REFERENCES] Batch size: %d.', cfg['batch_size'])
+            else:
+                print(f"Input: {len(publications):,} papers")
+                print(f"{n_batches} batch{'es' if n_batches != 1 else ''} x up to {cfg['batch_size']} papers | {cfg['cycle_sec']:g}s/request | 429 wait: {cfg['wait_429_sec']:g}s")
+            batches_started = client.clock() if client is not None else None
+            for batch in batches():
+                if client is None:
+                    config.load_env()
+                    client = S2Client(api_key=config.get_api_key(), cycle=cfg['cycle_sec'], wait_429=cfg['wait_429_sec'])
+                    print("API key loaded." if client.headers.get("x-api-key") else "No API key found; using unauthenticated requests.")
+                    owns_client = True
+                if batches_started is None:
+                    batches_started = client.clock()
                 metrics.batches += 1
+                if streaming:
+                    logger.info('[REFERENCES] Batch %d: fetching %d papers.', metrics.batches, len(batch))
                 metrics.papers["attempted"] += len(batch)
                 batch_started = client.clock()
                 batch_before = dict(metrics.papers)
                 _process_batch(client, batch, args.out, metrics)
                 _append_log(os.path.join(meta_dir, "crawl_log.jsonl"), metrics)
                 elapsed = client.clock() - batch_started
-                eta = (client.clock() - batches_started) / metrics.batches * (n_batches - metrics.batches) / 60
+                eta = ((client.clock() - batches_started) / metrics.batches * (n_batches - metrics.batches) / 60
+                       if not streaming else 0)
                 counts = {key: metrics.papers[key] - batch_before[key]
                           for key in ("ok", "empty_refs", "not_in_s2", "count_mismatch", "errors")}
-                print(f"[{metrics.batches}/{n_batches}] ok={counts['ok']} empty={counts['empty_refs']} "
+                label = f"[REFERENCES] Batch {metrics.batches}" if streaming else f"[{metrics.batches}/{n_batches}]"
+                timing = f"{elapsed:.1f}s" if streaming else f"{elapsed:.1f}s | ETA ~{eta:.1f}m"
+                emit = logger.info if streaming else print
+                emit(f"{label} ok={counts['ok']} empty={counts['empty_refs']} "
                       f"not_in_s2={counts['not_in_s2']} mismatch={counts['count_mismatch']} "
-                      f"error={counts['errors']} | {elapsed:.1f}s | ETA ~{eta:.1f}m")
+                      f"error={counts['errors']} | {timing}")
                 if counts["errors"]:
                     print(f"  {counts['errors']} paper{'s' if counts['errors'] != 1 else ''} incomplete.")
             if metrics.papers["errors"]:
                 exit_code, reason = 1, "publications_incomplete"
+            if streaming and stream_status['exit_code'] != 0:
+                exit_code, reason = stream_status['exit_code'], stream_status['reason']
     except KeyboardInterrupt:
         exit_code, reason = 130, "interrupted"
         print(f"Interrupted during batch {metrics.batches}/{n_batches}. Saved results are preserved."
               if metrics.batches else "Interrupted. Saved results are preserved.")
+    except InterruptedError:
+        exit_code, reason = 130, 'interrupted'
+        logger.info('[REFERENCES] Stopped; saved results kept.')
     except (FatalError, OSError) as exc:
         exit_code, reason = 1, str(exc)
         if isinstance(exc, FatalError):
-            logger.error("Run stopped: HTTP %s. Check API access and request configuration.", exc.status)
+            logger.error("[REFERENCES] Stopped: HTTP %s. Check API access.", exc.status)
         else:
-            logger.error("Run stopped: storage error (%s). Check file access and output paths.", type(exc).__name__)
+            logger.error("[REFERENCES] Storage error: %s.", type(exc).__name__)
     except Exception:
         exit_code, reason = 1, "internal_error"
         logger.exception("Unexpected error; saved results are preserved.")
@@ -270,6 +314,13 @@ def run(args, client=None):
         report = metrics.finalize(monitor, disk_before, None, requests, 130, "interrupted_during_finalization")
         report["warnings"].append("final_report_not_saved")
     p = report["papers"]
+    if streaming:
+        logger.info('[REFERENCES] %s: saved=%d verified=%d pending=%d.',
+                    'Done' if report['exit_code'] == 0 else 'Stopped', p['saved'], p['completed'], p['pending'])
+        logger.info('[REFERENCES] Results: mismatch=%d error=%d.', p['count_mismatch'], p['errors'])
+        for warning in dict.fromkeys(w.split(':', 1)[0] for w in report['warnings']):
+            logger.warning('[REFERENCES] %s.', warning.replace('_', ' '))
+        return report
     memory, disk = report["memory"], report["disk"]
     peak = f"{memory['sampled_peak_rss_mb']:g} MB" if memory['sampled_peak_rss_mb'] is not None else "N/A"
     mean = f"{memory['sample_mean_rss_mb']:g} MB" if memory['sample_mean_rss_mb'] is not None else "N/A"
@@ -289,6 +340,37 @@ def run(args, client=None):
     for warning in dict.fromkeys(w.split(":", 1)[0] for w in report["warnings"]):
         print(f"Warning: {warning.replace('_', ' ')}.")
     return report
+
+
+def run_stream(args, queue, entry_done, entry_status, *, client=None, stop_event=None):
+    """Receive validated jobs, retaining a partial batch until normal entry completion."""
+    if args.limit or args.summarize:
+        raise InputError('Streaming does not use --limit or --summarize.')
+    state = {'exit_code': 0, 'reason': None, 'buffered': 0}
+
+    def source():
+        next_notice = 0.0
+        while True:
+            if stop_event is not None and stop_event.is_set():
+                state.update(exit_code=130, reason='interrupted')
+                return
+            if entry_done.is_set() and entry_status.get('exit_code', 1) != 0:
+                state.update(exit_code=1, reason='entry_incomplete')
+                return
+            try:
+                job = queue.get(timeout=1)
+                next_notice = 0.0
+                yield job
+            except Empty:
+                if (entry_done.is_set() and entry_status.get('exit_code', 1) == 0
+                        and not (stop_event is not None and stop_event.is_set())):
+                    return
+                if time.monotonic() >= next_notice:
+                    logger.info('[REFERENCES] Waiting for entry: %d/%d buffered.',
+                                state['buffered'], args.batch_size or config.BATCH_SIZE)
+                    next_notice = time.monotonic() + 60
+
+    return run(args, client=client, source=source(), stream_status=state)
 
 
 def parse_args(argv=None):

@@ -7,8 +7,8 @@ import os
 # =====================================================================
 #  THỜI GIAN  <-- chỉnh ở đây
 # =====================================================================
-CYCLE_SECONDS = 10       # khoảng cách tối thiểu giữa hai request liên tiếp (tính từ lúc GỬI request trước)
-WAIT_429_SECONDS = 60    # bị 429 thì chờ bấy nhiêu giây rồi gửi lại đúng request đó
+CYCLE_SECONDS = 1        # khoảng cách tối thiểu giữa hai request liên tiếp (tính từ lúc GỬI request trước)
+WAIT_429_SECONDS = 5     # bị 429 thì chờ bấy nhiêu giây rồi gửi lại đúng request đó
 
 # =====================================================================
 #  BATCH

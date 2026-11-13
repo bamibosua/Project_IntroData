@@ -5,6 +5,8 @@ On 429, imposes a global cooldown: it never hammers the API to 'skip' errors.
 Incomplete metadata batches and individual revision versions remain in the queue.
 """
 import argparse
+import logging
+from copy import deepcopy
 import json
 import math
 import os
@@ -13,11 +15,33 @@ import urllib.error
 import xml.etree.ElementTree as ET
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
-from discovery import (ArxivClient, RateLimitError, PermanentRequestError, ensure_checkpoint_identity,
-                        valid_date,
-                       load_ids_file, generate_ids, parse_metadata, parse_version_updates,
-                       validate_cached_batch, load_revision_cache, write_json_atomic,
-                       attach_revised_dates, retry_after_hint)
+try:
+    if __package__ and __package__.startswith('src.'):
+        from .. import m1_benchmark as observer
+    else:
+        import m1_benchmark as observer
+except ImportError:
+    observer = None
+
+if __package__:
+    from .discovery import (ArxivClient, RateLimitError, PermanentRequestError, ensure_checkpoint_identity,
+                            valid_date,
+                           load_ids_file, generate_ids, parse_metadata, parse_version_updates,
+                           validate_cached_batch, load_revision_cache, write_json_atomic,
+                           attach_revised_dates, retry_after_hint)
+    from .prepare_papers_handoff import normalized_versions, update_index
+else:
+    from discovery import (ArxivClient, RateLimitError, PermanentRequestError, ensure_checkpoint_identity,
+                            valid_date,
+                           load_ids_file, generate_ids, parse_metadata, parse_version_updates,
+                           validate_cached_batch, load_revision_cache, write_json_atomic,
+                           attach_revised_dates, retry_after_hint)
+    from prepare_papers_handoff import normalized_versions, update_index
+
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+
+
+logger = logging.getLogger(__name__)
 
 
 def utc():
@@ -64,13 +88,13 @@ def create_status(ids, records, cache, attempts, errors):
     return result
 
 
-def main(argv=None, client=None):
+def main(argv=None, client=None, *, index_file=None, on_batch=None, stop_event=None):
     parser = argparse.ArgumentParser(description='Global Revision Batching crawler: metadata first, then pooled revisions')
     parser.add_argument('--ids-file', type=Path)
     parser.add_argument('--start', default='2609.12834')
     parser.add_argument('--end', default='2609.17833')
     parser.add_argument('--limit', type=int)
-    parser.add_argument('--output', type=Path, default=Path('data/group/discovery'))
+    parser.add_argument('--output', type=Path, default=PROJECT_ROOT / 'data' / 'discovery')
     parser.add_argument('--batch-size', type=int, default=20)
     parser.add_argument('--revision-batch-size', type=int, default=20)
     parser.add_argument('--delay', type=float, default=8)
@@ -115,8 +139,37 @@ def main(argv=None, client=None):
     error_path = out / 'crawl_errors.json'
     errors = json.loads(error_path.read_text(encoding='utf-8')) if error_path.exists() else {}
     client = client or ArxivClient(delay=args.delay, retries=2, user_agent=os.environ.get('ARXIV_USER_AGENT'))
+    if stop_event is not None:
+        client.stop_event = stop_event
+    shared_cooldown = getattr(client, 'shared_cooldown', None)
+    if shared_cooldown is not None:
+        client.cooldown_fallback = args.cooldown
     began = time.perf_counter()
     records = {}
+    emitted = set()
+    reported_metadata = 0
+
+    def publish(batch):
+        if stop_event is not None and stop_event.is_set():
+            raise InterruptedError('Pipeline stopped.')
+        if index_file is None and on_batch is None:
+            return
+        jobs = []
+        for pid, paper in batch.items():
+            if pid in emitted or paper.get('status') != 'found':
+                continue
+            aid, versions = normalized_versions(paper)
+            if aid != pid:
+                raise ValueError(f'Metadata ID does not match checkpoint key: {pid}')
+            jobs.append({'arxiv_id': aid, 'versions': versions})
+        if not jobs:
+            return
+        if index_file is not None:
+            update_index(Path(index_file), {job['arxiv_id']: job['versions'] for job in jobs})
+        if on_batch is not None:
+            on_batch(deepcopy(jobs))
+        emitted.update(job['arxiv_id'] for job in jobs)
+
     metadata_success = 0
     revision_success = 0
     latest_dates_reused = 0
@@ -131,6 +184,8 @@ def main(argv=None, client=None):
         saved = json.loads(cooldown_path.read_text(encoding='utf-8'))
         deadline = datetime.fromisoformat(saved['retry_not_before'].replace('Z', '+00:00'))
     cooldown_until = time.monotonic() + max(0.0, (deadline - datetime.now(timezone.utc)).total_seconds()) if deadline else 0.0
+    if shared_cooldown is not None:
+        shared_cooldown.defer(max(0.0, cooldown_until - time.monotonic()))
     calls = 0
     cooldown_wait_seconds = 0.0
     consecutive_429 = int(saved.get('consecutive_429', 0))
@@ -141,13 +196,20 @@ def main(argv=None, client=None):
     stalled_rounds = 0
     def wait_until_ready(key):
         nonlocal cooldown_wait_seconds, stopped_reason
+        if stop_event is not None and stop_event.is_set():
+            stopped_reason = 'pipeline_stopped'
+            return False
         if cooldown_until > time.monotonic() and args.no_wait_cooldown:
             stopped_reason = 'cooldown_active'
             return False
         while (remaining := cooldown_until - time.monotonic()) > 0:
-            print(f'[WAIT] {remaining:.0f}s remaining | next task: {key}', flush=True)
+            logger.info('[ENTRY] Waiting for %s: %.0fs remaining.', key, remaining)
             start_wait = time.perf_counter()
-            time.sleep(min(60.0, remaining))
+            if stop_event is None:
+                time.sleep(min(60.0, remaining))
+            elif stop_event.wait(min(60.0, remaining)):
+                stopped_reason = 'pipeline_stopped'
+                return False
             cooldown_wait_seconds += time.perf_counter() - start_wait
         return True
     def limited():
@@ -160,6 +222,8 @@ def main(argv=None, client=None):
         append_jsonl(out / 'crawl_errors.jsonl', {'time_utc': utc(), 'task': key, 'error': errors[key]})
         write_json_atomic(attempts_path, attempts)
         write_json_atomic(error_path, errors)
+        if not rate_limited:
+            logger.warning('[ENTRY] %s: %s; kept pending.', key, type(exc).__name__)
         if rate_limited:
             hint = getattr(exc, 'retry_after', None)
             if isinstance(hint, (int, float)) and math.isfinite(hint) and hint >= 0:
@@ -167,11 +231,13 @@ def main(argv=None, client=None):
             else:
                 duration = min(args.max_cooldown, args.cooldown * 2 ** min(consecutive_429 - 1, 30))
             cooldown_until = max(cooldown_until, time.monotonic() + duration)
+            if shared_cooldown is not None:
+                shared_cooldown.defer(duration)
             write_json_atomic(cooldown_path, {
                 'retry_not_before': (datetime.now(timezone.utc) + timedelta(seconds=max(0, cooldown_until - time.monotonic()))).isoformat(),
                 'consecutive_429': consecutive_429, 'request_delay': current_delay})
-            print(f'[BACKOFF] {key}: 429 #{consecutive_429}; wait={duration:.0f}s; '
-                  f'request delay={current_delay:.1f}s; Retry-After={hint!r}', flush=True)
+            logger.debug(f'[BACKOFF] {key}: 429 #{consecutive_429}; wait={duration:.0f}s; request delay={current_delay:.1f}s; Retry-After={hint!r}')
+            logger.warning('[ARXIV] %s: HTTP 429; wait %.0fs.', key, duration)
 
     def request(ids_to_fetch, key):
         nonlocal calls, consecutive_429, stopped_reason, current_delay, success_streak
@@ -182,7 +248,7 @@ def main(argv=None, client=None):
             if not wait_until_ready(key):
                 return None
             calls += 1
-            print(f'[REQUEST {calls}] {key} | IDs={len(ids_to_fetch)} | delay={current_delay:.1f}s', flush=True)
+            logger.debug(f'[REQUEST {calls}] {key} | IDs={len(ids_to_fetch)} | delay={current_delay:.1f}s')
             try:
                 result = client.fetch(ids_to_fetch)
                 consecutive_429 = 0
@@ -193,7 +259,7 @@ def main(argv=None, client=None):
                     current_delay = max(args.delay, current_delay * 0.9)
                     client.delay = current_delay
                     success_streak = 0
-                    print(f'[PACE] Stable responses; request delay reduced to {current_delay:.1f}s', flush=True)
+                    logger.debug(f'[PACE] Stable responses; request delay reduced to {current_delay:.1f}s')
                 errors.pop(key, None)
                 return result
             except RateLimitError as exc:
@@ -207,12 +273,15 @@ def main(argv=None, client=None):
                     return None
                 # Wait the full persisted cooldown, then retry exactly this same task.
                 # Do not switch to other IDs while arXiv is rate limiting us.
-                print(f'HTTP 429: task {key} kept pending; will retry after cooldown.', flush=True)
+                logger.debug(f'HTTP 429: task {key} kept pending; will retry after cooldown.')
             except PermanentRequestError as exc:
                 fail(key, exc)
                 stopped_reason = 'permanent_http_error'
                 return None
             except (OSError, RuntimeError, ValueError) as exc:
+                if stop_event is not None and stop_event.is_set():
+                    stopped_reason = 'pipeline_stopped'
+                    return None
                 success_streak = 0
                 fail(key, exc)
                 return None
@@ -221,7 +290,7 @@ def main(argv=None, client=None):
         while True:
             recovery_round += 1
             progress_before = len(records) + len(cache)
-            print(f'[ROUND {recovery_round}] Processing missing metadata and revisions...', flush=True)
+            logger.debug(f'[ROUND {recovery_round}] Processing missing metadata and revisions...')
             total_batches = (len(ids) + args.batch_size - 1) // args.batch_size
             for i in range(total_batches):
                 chunk = ids[i*args.batch_size:(i+1)*args.batch_size]
@@ -229,6 +298,7 @@ def main(argv=None, client=None):
                 if not batch:
                     partial = out / 'partial_batches' / f'batch_{i:05d}.json'
                     previous = json.loads(partial.read_text(encoding='utf-8')) if partial.exists() else {}
+                    publish(previous)
                     remaining = [pid for pid in chunk if pid not in previous]
                     if remaining:
                         if limited():
@@ -264,9 +334,13 @@ def main(argv=None, client=None):
                     else:
                         skipped_batches.append(i)
                 records.update(batch)
+                publish(batch)
+                if len(records) != reported_metadata:
+                    logger.info('[ENTRY] Metadata: %d/%d.', len(records), len(ids))
+                    reported_metadata = len(records)
                 # PHASE 1: metadata only.  Never fetch versions while walking metadata batches.
                 if i % 25 == 0 or i == total_batches - 1:
-                    print(f'[METADATA] batch {i+1}/{total_batches}; collected={len(records)}', flush=True)
+                    logger.debug(f'[METADATA] batch {i + 1}/{total_batches}; collected={len(records)}')
                 if stopped_reason:
                     break
 
@@ -310,8 +384,7 @@ def main(argv=None, client=None):
                         if vid not in cache:
                             layers.setdefault(version, []).append(vid)
                 revision_tasks_planned = sum(len(v) for v in layers.values())
-                print(f'[GLOBAL] missing revisions={revision_tasks_planned}; '
-                      f'reused latest dates={latest_dates_reused}; layers={len(layers)}', flush=True)
+                logger.debug(f'[GLOBAL] missing revisions={revision_tasks_planned}; reused latest dates={latest_dates_reused}; layers={len(layers)}')
                 for version in sorted(layers):
                     vids = layers[version]
                     for j in range(0, len(vids), args.revision_batch_size):
@@ -331,6 +404,7 @@ def main(argv=None, client=None):
                                     errors[vid] = 'Missing exact version from API response (pending)'
                                     attempts[vid] = attempts.get(vid, 0) + 1
                             write_json_atomic(cache_path, cache)
+                            logger.info('[ENTRY] Revision dates cached: %d.', len(cache))
                         except (ValueError, RuntimeError, ET.ParseError) as exc:
                             fail(f'global_revisions_v{version}_{j}', exc)
                             break
@@ -341,25 +415,30 @@ def main(argv=None, client=None):
             write_json_atomic(queue_path, status)
             write_json_atomic(attempts_path, attempts)
             write_json_atomic(error_path, errors)
-            print(f'[PROGRESS] completed={len(ids) - pending}/{len(ids)} papers; pending={pending}', flush=True)
+            logger.debug(f'[PROGRESS] completed={len(ids) - pending}/{len(ids)} papers; pending={pending}')
             if stopped_reason or pending == 0:
                 break
             progress_after = len(records) + len(cache)
             stalled_rounds = stalled_rounds + 1 if progress_after == progress_before else 0
             if stalled_rounds >= args.recovery_rounds:
                 stopped_reason = 'no_progress_limit'
-                print(f'[STOP] No progress for {stalled_rounds} rounds; inspect crawl_errors.json and crawl_queue.json.', flush=True)
+                logger.debug(f'[STOP] No progress for {stalled_rounds} rounds; inspect crawl_errors.json and crawl_queue.json.')
                 break
             duration = min(args.max_cooldown, args.cooldown * 2 ** min(max(0, stalled_rounds - 1), 30))
             cooldown_until = max(cooldown_until, time.monotonic() + duration)
             write_json_atomic(cooldown_path, {
                 'retry_not_before': (datetime.now(timezone.utc) + timedelta(seconds=duration)).isoformat(),
                 'consecutive_429': consecutive_429, 'request_delay': current_delay})
-            print(f'[RECOVERY] Retrying only missing tasks after {duration:.0f}s; stalled rounds={stalled_rounds}.', flush=True)
+            logger.debug(f'[RECOVERY] Retrying only missing tasks after {duration:.0f}s; stalled rounds={stalled_rounds}.')
             if not wait_until_ready('pending queue'):
                 break
+    except InterruptedError:
+        stopped_reason = 'pipeline_stopped'
     except KeyboardInterrupt:
         stopped_reason = 'keyboard_interrupt'
+    except Exception:
+        stopped_reason = stopped_reason or 'discovery_error'
+        raise
     finally:
         # Collect all historical valid cached batches, including those not visited after a test limit.
         for i in range((len(ids) + args.batch_size-1)//args.batch_size):
@@ -385,6 +464,8 @@ def main(argv=None, client=None):
         write_json_atomic(error_path, errors)
         write_json_atomic(out / 'smart_summary.json', summary)
         wall = time.perf_counter()-began
+        if observer is not None and observer.active is not None:
+            observer.active.discovery = wall
         benchmark = {'timestamp_utc': utc(), 'pass_number': args.pass_number,
                       'revision_strategy': 'global',
                      'wall_time_seconds': round(wall, 3), 'successful_metadata_records_new': metadata_success,
@@ -396,8 +477,9 @@ def main(argv=None, client=None):
                      'recovery_rounds': recovery_round, 'final_request_delay': current_delay,
                      'cooldown_wait_seconds': round(cooldown_wait_seconds, 3), **client.metrics()}
         append_jsonl(out / 'benchmark_sessions.jsonl', benchmark)
-        print(json.dumps({'summary': summary, 'benchmark': benchmark}, ensure_ascii=False, indent=2))
+        logger.debug(json.dumps({'summary': summary, 'benchmark': benchmark}, ensure_ascii=False, indent=2))
     return 0 if summary['pending_papers'] == 0 and stopped_reason is None else 1
 
 if __name__ == '__main__':
+    logging.basicConfig(level=logging.INFO, format='%(message)s')
     raise SystemExit(main())
