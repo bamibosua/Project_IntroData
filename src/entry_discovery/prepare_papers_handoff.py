@@ -13,6 +13,7 @@ import json
 import os
 import re
 import sys
+import time
 from pathlib import Path
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
@@ -140,6 +141,13 @@ def build_handoff(papers: list[dict], papers_dir: Path, index_file: Path,
             else:
                 atomic_write_json(meta, paper)
                 metadata_new += 1
+        events = os.environ.get('M1_BENCHMARK_EVENTS')
+        if events and not dry_run:
+            try:
+                with open(events, 'a', encoding='utf-8') as stream:
+                    stream.write(json.dumps([pid, time.perf_counter()]) + '\n')
+            except OSError:
+                pass  # Telemetry failure must not change the handoff result.
         if number % 1000 == 0 or number == len(validated):
             print(f'[HANDOFF] {number}/{len(validated)} papers', flush=True)
 

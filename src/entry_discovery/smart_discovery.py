@@ -15,6 +15,14 @@ import urllib.error
 import xml.etree.ElementTree as ET
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
+try:
+    if __package__ and __package__.startswith('src.'):
+        from .. import m1_benchmark as observer
+    else:
+        import m1_benchmark as observer
+except ImportError:
+    observer = None
+
 if __package__:
     from .discovery import (ArxivClient, RateLimitError, PermanentRequestError, ensure_checkpoint_identity,
                             valid_date,
@@ -456,6 +464,8 @@ def main(argv=None, client=None, *, index_file=None, on_batch=None, stop_event=N
         write_json_atomic(error_path, errors)
         write_json_atomic(out / 'smart_summary.json', summary)
         wall = time.perf_counter()-began
+        if observer is not None and observer.active is not None:
+            observer.active.discovery = wall
         benchmark = {'timestamp_utc': utc(), 'pass_number': args.pass_number,
                       'revision_strategy': 'global',
                      'wall_time_seconds': round(wall, 3), 'successful_metadata_records_new': metadata_success,

@@ -17,6 +17,14 @@ from .config import CHECKPOINT_EVERY, DEFAULT_OUTPUT_DIR, DOWNLOAD_META_DIR_NAME
 from .pipeline import extract_paper_to_existing_folders, fetch_single_version_task
 from .stats import compute_storage_metrics, print_report, write_summary
 
+try:
+    if __package__ and __package__.startswith('src.'):
+        from .. import m1_benchmark as benchmark
+    else:
+        import m1_benchmark as benchmark
+except ImportError:
+    benchmark = None
+
 logger = logging.getLogger(__name__)
 
 
@@ -246,11 +254,10 @@ def download_stream(papers_index, *, output_dir=DEFAULT_OUTPUT_DIR,
     output_dir = Path(output_dir)
     _require_prepared_folder(output_dir)
     papers_dir = output_dir / 'papers'
-    meta_dir = output_dir / DOWNLOAD_META_DIR_NAME
-    meta_dir.mkdir(parents=True, exist_ok=True)
-    status_path = meta_dir / 'download_status.json'
-    summary_path = meta_dir / 'download_summary.json'
-    all_status = _load_status(status_path, legacy_dir=output_dir)
+    status_path = output_dir / 'download_status.json'
+    summary_path = output_dir / 'download_summary.json'
+    all_status = _load_status(status_path)
+    
     client = client if client is not None else FastArxivClient(delay=delay)
     streaming = not isinstance(papers_index, dict)
     source = papers_index if streaming else papers_index.items()
@@ -304,6 +311,10 @@ def download_stream(papers_index, *, output_dir=DEFAULT_OUTPUT_DIR,
                     _require_prepared_folder(paper_dir / version)
                 items[aid] = versions
                 if _is_cached(all_status.get(aid, {}), paper_dir, versions):
+                    if benchmark is not None:
+                        benchmark.event(aid, 'cached_download')
+                    if benchmark is not None:
+                        benchmark.event(aid, 'download', all_status[aid].get('version_downloads', {}))
                     cached += 1
                     completed += 1
                     if completed % 50 == 0:

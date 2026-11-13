@@ -8,6 +8,7 @@ import threading
 import time
 
 if __package__:
+    from . import m1_benchmark as benchmark
     from .entry_discovery import run_entry_discovery as entry
     from .entry_discovery.arxiv_cooldown import SharedCooldown
     from .entry_discovery.discovery import ArxivClient
@@ -16,6 +17,7 @@ if __package__:
     from .references import config, crawl_references as references
     from .references.s2_client import S2Client
 else:
+    import m1_benchmark as benchmark
     from entry_discovery import run_entry_discovery as entry
     from entry_discovery.arxiv_cooldown import SharedCooldown
     from entry_discovery.discovery import ArxivClient
@@ -53,6 +55,8 @@ def main(argv=None, *, stop_event=None):
         stop.set()
 
     def publish(jobs):
+        for job in jobs:
+            benchmark.event(job["arxiv_id"], "ready", job["versions"])
         with publications_lock:
             publications.update((job['arxiv_id'], list(job['versions'])) for job in jobs)
 
@@ -149,6 +153,14 @@ def main(argv=None, *, stop_event=None):
             if name == 'ENTRY' and not done.is_set():
                 finish(code)
 
+    measurement = None
+    try:
+        measurement = benchmark.Benchmark(entry.ROOT)
+        measurement.thread.start()
+        benchmark.active = measurement
+    except Exception as exc:
+        logger.warning('[BENCHMARK] Start failed: %s.', type(exc).__name__)
+        measurement = None
     try:
         if threading.current_thread() is threading.main_thread():
             old_handler = signal.signal(signal.SIGINT, interrupt)
@@ -197,6 +209,13 @@ def main(argv=None, *, stop_event=None):
                 s2.close()
             except Exception:
                 logger.warning('[REFERENCES] Client close failed.')
+    try:
+        if measurement is not None:
+            measurement.finish(codes)
+    except Exception as exc:
+        logger.warning("[BENCHMARK] Save failed: %s.", type(exc).__name__)
+    finally:
+        benchmark.active = None
     if interrupted:
         return 130
     failed = len(codes) != 3 or any(codes.values())

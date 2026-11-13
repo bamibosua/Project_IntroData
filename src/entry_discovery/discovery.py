@@ -14,6 +14,14 @@ from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
 from pathlib import Path
 
+try:
+    if __package__ and __package__.startswith('src.'):
+        from .. import m1_benchmark as benchmark
+    else:
+        import m1_benchmark as benchmark
+except ImportError:
+    benchmark = None
+
 ATOM = '{http://www.w3.org/2005/Atom}'
 ARXIV = '{http://arxiv.org/schemas/atom}'
 ID_PATTERN = re.compile(r'^(\d{4})\.(\d{4,5})$')
@@ -202,6 +210,9 @@ class ArxivClient:
         if not ids:
             raise ValueError('Cannot request an empty batch')
     
+        for aid in ids:
+            if benchmark is not None:
+                benchmark.event(aid.split('v')[0], 'start')
         url = API + '?' + urllib.parse.urlencode({
             'id_list': ','.join(ids),
             'max_results': len(ids)

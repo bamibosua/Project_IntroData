@@ -27,6 +27,14 @@ import sys
 import time
 from pathlib import Path
 
+try:
+    if __package__ and __package__.startswith('src.'):
+        from .. import m1_benchmark as benchmark
+    else:
+        import m1_benchmark as benchmark
+except ImportError:
+    benchmark = None
+
 if __package__:
     from . import smart_discovery
 else:
@@ -61,7 +69,9 @@ def call_stage(number: int, title: str, script: str, arguments: list[str]) -> No
     logger.info('[ENTRY] %s.', title)
     try:
         subprocess.run(command, cwd=ROOT, check=True, capture_output=True, text=True, encoding='utf-8',
-                       env={**os.environ, 'PYTHONIOENCODING': 'utf-8'})
+                       env={**os.environ, 'PYTHONIOENCODING': 'utf-8',
+                            **({'M1_BENCHMARK_EVENTS': benchmark.active.metadata_events}
+                               if benchmark is not None and benchmark.active is not None else {})})
     except subprocess.CalledProcessError as exc:
         detail = (exc.stderr or '').strip().splitlines()
         raise RuntimeError(

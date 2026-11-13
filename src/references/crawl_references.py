@@ -12,6 +12,14 @@ import time
 from pathlib import Path
 from queue import Empty
 
+try:
+    if __package__ and __package__.startswith('src.'):
+        from .. import m1_benchmark as benchmark
+    else:
+        import m1_benchmark as benchmark
+except ImportError:
+    benchmark = None
+
 if __package__:
     from . import config
     from .metrics import ResourceMonitor, RunMetrics, refs_size, summarize_output, timestamp
@@ -100,6 +108,8 @@ def _commit_record(pub, record, out_dir, metrics):
                 return
     size = write_json_atomic(record_path(out_dir, pub["arxiv_id"]), record)
     metrics.add_record(record, payload_bytes=size)
+    if benchmark is not None:
+        benchmark.event(pub['arxiv_id'], 'references', record['status'])
     if record["status"] == "count_mismatch":
         logger.info('[REFERENCES] %s: count mismatch %s/%s; saved with warning.',
                     pub['arxiv_id'], record['n_refs'], record['s2_reference_count'])
@@ -145,6 +155,8 @@ def _record_error(pub, error, metrics):
     if isinstance(error, ResponseError):
         error = ClientError(str(error), code="invalid_response")
     metrics.add_error(pub["arxiv_id"], error)
+    if benchmark is not None:
+        benchmark.event(pub['arxiv_id'], 'references', 'error')
 
 
 def _save_report(path, report):
