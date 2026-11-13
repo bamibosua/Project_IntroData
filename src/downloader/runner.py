@@ -13,7 +13,7 @@ import tracemalloc
 
 from .audit import run_audit
 from .client import FastArxivClient
-from .config import CHECKPOINT_EVERY, DEFAULT_OUTPUT_DIR
+from .config import CHECKPOINT_EVERY, DEFAULT_OUTPUT_DIR, DOWNLOAD_META_DIR_NAME
 from .pipeline import extract_paper_to_existing_folders, fetch_single_version_task
 from .stats import compute_storage_metrics, print_report, write_summary
 
@@ -21,15 +21,17 @@ logger = logging.getLogger(__name__)
 
 
 def _save_status(status_path: Path, all_status: dict) -> None:
+    status_path.parent.mkdir(parents=True, exist_ok=True)
     status_path.write_text(json.dumps(all_status, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
 
-def _load_status(status_path: Path) -> dict:
-    if status_path.exists():
-        try:
-            return json.loads(status_path.read_text(encoding="utf-8"))
-        except Exception:
-            pass
+def _load_status(status_path: Path, legacy_dir: Path | None = None) -> dict:
+    for candidate in (status_path, (legacy_dir / status_path.name) if legacy_dir else None):
+        if candidate is not None and candidate.exists():
+            try:
+                return json.loads(candidate.read_text(encoding="utf-8"))
+            except Exception:
+                pass
     return {}
 
 
@@ -106,11 +108,13 @@ def download_corpus(
     output_dir = Path(output_dir)
     _require_prepared_folder(output_dir)
     papers_dir = output_dir / "papers"
-    status_path = output_dir / "download_status.json"
-    summary_path = output_dir / ("download_summary_limit.json" if limit is not None else "download_summary.json")
+    meta_dir = output_dir / DOWNLOAD_META_DIR_NAME
+    meta_dir.mkdir(parents=True, exist_ok=True)
+    status_path = meta_dir / "download_status.json"
+    summary_path = meta_dir / ("download_summary_limit.json" if limit is not None else "download_summary.json")
 
-    all_status = _load_status(status_path)
-    prev_summary = _load_status(summary_path)
+    all_status = _load_status(status_path, legacy_dir=output_dir)
+    prev_summary = _load_status(summary_path, legacy_dir=output_dir)
 
     tracemalloc.start()
     dt_start = datetime.now()
@@ -241,9 +245,11 @@ def download_stream(papers_index, *, output_dir=DEFAULT_OUTPUT_DIR,
     output_dir = Path(output_dir)
     _require_prepared_folder(output_dir)
     papers_dir = output_dir / 'papers'
-    status_path = output_dir / 'download_status.json'
-    summary_path = output_dir / 'download_summary.json'
-    all_status = _load_status(status_path)
+    meta_dir = output_dir / DOWNLOAD_META_DIR_NAME
+    meta_dir.mkdir(parents=True, exist_ok=True)
+    status_path = meta_dir / 'download_status.json'
+    summary_path = meta_dir / 'download_summary.json'
+    all_status = _load_status(status_path, legacy_dir=output_dir)
     client = client if client is not None else FastArxivClient(delay=delay)
     streaming = not isinstance(papers_index, dict)
     source = papers_index if streaming else papers_index.items()

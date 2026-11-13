@@ -80,6 +80,7 @@ def write_summary(
     }
     if exit_code is not None:
         summary.update(exit_code=exit_code, reason=reason)
+    summary_path.parent.mkdir(parents=True, exist_ok=True)
     summary_path.write_text(json.dumps(summary, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     return summary
 
