@@ -17,7 +17,9 @@ USER_AGENTS = [
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_INDEX_JSON = PROJECT_ROOT / "data" / "input" / "papers_index.json"
-DEFAULT_LEGACY_JSON = PROJECT_ROOT / "data" / "discovery" / "discovered_papers_with_revised_dates.json"
+DEFAULT_LEGACY_JSON = (
+    PROJECT_ROOT / "data" / "output" / "discovery" / "discovered_papers_with_revised_dates.json"
+)
 DEFAULT_OUTPUT_DIR = PROJECT_ROOT / "data" / "output"
 DOWNLOAD_META_DIR_NAME = "papers_download_meta"
 

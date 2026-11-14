@@ -36,7 +36,14 @@ def _retry_after_seconds(value):
 class FastArxivClient:
     """Download raw source archives of arXiv versions."""
 
-    def __init__(self, delay: float = 0.6, timeout: float = 40.0, *, shared_cooldown=None, stop_event=None):
+    def __init__(
+        self,
+        delay: float = 0.6,
+        timeout: float = 40.0,
+        *,
+        shared_cooldown=None,
+        stop_event=None,
+    ):
         self.delay = delay
         self.base_delay = delay  # adaptive back-off never goes below this
         self.timeout = timeout
@@ -63,11 +70,13 @@ class FastArxivClient:
             adapter = HTTPAdapter(pool_connections=4, pool_maxsize=32)
             session.mount("https://", adapter)
             session.mount("http://", adapter)
-            session.headers.update({
-                "User-Agent": random.choice(USER_AGENTS),
-                "Accept": "application/x-eprint-tar, application/x-eprint, application/gzip, */*",
-                "Connection": "keep-alive",
-            })
+            session.headers.update(
+                {
+                    "User-Agent": random.choice(USER_AGENTS),
+                    "Accept": "application/x-eprint-tar, application/x-eprint, application/gzip, */*",
+                    "Connection": "keep-alive",
+                }
+            )
             self._thread_local.session = session
             return session
         except Exception:
@@ -78,18 +87,20 @@ class FastArxivClient:
         if self.stop_event is None:
             time.sleep(seconds)
         elif self.stop_event.wait(seconds):
-            raise InterruptedError('Pipeline stopped.')
+            raise InterruptedError("Pipeline stopped.")
 
     def _note_throttle(self, attempt: int, retry_after=None, *, status=429) -> float:
         """Keep the client cooldown without cascading delay; publish HTTP 429 to the shared deadline."""
         with self._cooldown_lock:
             now = time.monotonic()
             already_cooling = now < self._cooldown_until
-            duration = max(min(25.0, 10.0 + 5.0 * attempt),
-                           _retry_after_seconds(retry_after) if status == 429 else 0.0)
+            duration = max(
+                min(25.0, 10.0 + 5.0 * attempt),
+                _retry_after_seconds(retry_after) if status == 429 else 0.0,
+            )
             self._cooldown_until = max(self._cooldown_until, now + duration)
             if not already_cooling:
-                # Chỉ tăng delay 1 lần cho mỗi đợt burst, khóa trần ở 1.8s thay vì 5.0s
+                # Increase the delay once per burst, capped at 1.8 seconds.
                 self.delay = min(1.8, max(self.delay * 1.25, 0.5))
             self._ok_streak = 0
         if status == 429 and self.shared_cooldown is not None:
@@ -107,11 +118,15 @@ class FastArxivClient:
     def _wait_rate_slot(self) -> int:
         while True:
             if self.stop_event is not None and self.stop_event.is_set():
-                raise InterruptedError('Pipeline stopped.')
+                raise InterruptedError("Pipeline stopped.")
             with self._rate_lock:
                 now = time.monotonic()
                 with self._cooldown_lock:
-                    pacing = self.delay - (now - self._last_req_ts) if self._last_req_ts is not None else 0.0
+                    pacing = (
+                        self.delay - (now - self._last_req_ts)
+                        if self._last_req_ts is not None
+                        else 0.0
+                    )
                     wait = max(0.0, self._cooldown_until - now, pacing)
                 if self.shared_cooldown is not None:
                     wait = max(wait, self.shared_cooldown.remaining())
@@ -147,48 +162,92 @@ class FastArxivClient:
                         return data
                     resp.close()
                     if resp.status_code in (429, 403):
-                        duration = self._note_throttle(attempt, resp.headers.get('Retry-After'), status=resp.status_code)
-                        logger.warning('[DOWNLOAD] %s: HTTP %d (Rate Limit); wait %.0fs, delay=%.2fs (attempt %d/%d).',
-                                       version_id, resp.status_code, duration, self.delay, attempt, MAX_FETCH_ATTEMPTS)
+                        duration = self._note_throttle(
+                            attempt,
+                            resp.headers.get("Retry-After"),
+                            status=resp.status_code,
+                        )
+                        logger.warning(
+                            "[DOWNLOAD] %s: HTTP %d (Rate Limit); wait %.0fs, delay=%.2fs (attempt %d/%d).",
+                            version_id,
+                            resp.status_code,
+                            duration,
+                            self.delay,
+                            attempt,
+                            MAX_FETCH_ATTEMPTS,
+                        )
                         self._sleep(1.0)
                         continue
                     if resp.status_code == 404:
-                        logger.warning('[DOWNLOAD] %s: HTTP 404 (Not Found).', version_id)
+                        logger.warning(
+                            "[DOWNLOAD] %s: HTTP 404 (Not Found).", version_id
+                        )
                         return _NOT_FOUND_PAYLOAD
                     wait_s = min(5.0, 1.0 * attempt)
-                    logger.warning('[DOWNLOAD] %s: HTTP %d; retrying in %.0fs (attempt %d/%d).',
-                                   version_id, resp.status_code, wait_s, attempt, MAX_FETCH_ATTEMPTS)
+                    logger.warning(
+                        "[DOWNLOAD] %s: HTTP %d; retrying in %.0fs (attempt %d/%d).",
+                        version_id,
+                        resp.status_code,
+                        wait_s,
+                        attempt,
+                        MAX_FETCH_ATTEMPTS,
+                    )
                     self._sleep(wait_s)
                     continue
                 except Exception as exc:
                     if self.stop_event is not None and self.stop_event.is_set():
                         raise
                     wait_s = min(5.0, 1.0 * attempt)
-                    logger.warning('[DOWNLOAD] %s: %s (%s); retrying in %.0fs (attempt %d/%d).',
-                                   version_id, type(exc).__name__, exc, wait_s, attempt, MAX_FETCH_ATTEMPTS)
+                    logger.warning(
+                        "[DOWNLOAD] %s: %s (%s); retrying in %.0fs (attempt %d/%d).",
+                        version_id,
+                        type(exc).__name__,
+                        exc,
+                        wait_s,
+                        attempt,
+                        MAX_FETCH_ATTEMPTS,
+                    )
                     self._thread_local.session = None
                     self._sleep(wait_s)
                     continue
-                
+
             # Fallback to urllib when `requests` is unavailable
-            req = urllib.request.Request(url, headers={"User-Agent": random.choice(USER_AGENTS)})
+            req = urllib.request.Request(
+                url, headers={"User-Agent": random.choice(USER_AGENTS)}
+            )
             try:
                 with urllib.request.urlopen(req, timeout=self.timeout) as resp:
                     return resp.read()
             except urllib.error.HTTPError as exc:
                 if exc.code in (429, 403):
-                    duration = self._note_throttle(attempt, exc.headers.get('Retry-After') if exc.headers else None,
-                                                   status=exc.code)
-                    logger.warning('[DOWNLOAD] %s: HTTP %d; wait %.0fs (attempt %d/%d).',
-                                   version_id, exc.code, duration, attempt, MAX_FETCH_ATTEMPTS)
+                    duration = self._note_throttle(
+                        attempt,
+                        exc.headers.get("Retry-After") if exc.headers else None,
+                        status=exc.code,
+                    )
+                    logger.warning(
+                        "[DOWNLOAD] %s: HTTP %d; wait %.0fs (attempt %d/%d).",
+                        version_id,
+                        exc.code,
+                        duration,
+                        attempt,
+                        MAX_FETCH_ATTEMPTS,
+                    )
                     continue
                 if exc.code == 404:
                     return _NOT_FOUND_PAYLOAD
             except Exception as exc:
                 if self.stop_event is not None and self.stop_event.is_set():
                     raise
-                logger.warning('[DOWNLOAD] %s: %s (attempt %d/%d).',
-                               version_id, type(exc).__name__, attempt, MAX_FETCH_ATTEMPTS)
+                logger.warning(
+                    "[DOWNLOAD] %s: %s (attempt %d/%d).",
+                    version_id,
+                    type(exc).__name__,
+                    attempt,
+                    MAX_FETCH_ATTEMPTS,
+                )
                 self._sleep(min(5.0, 1.0 * attempt))
 
-        raise RuntimeError(f"Failed to download {version_id} after {MAX_FETCH_ATTEMPTS} attempts")
+        raise RuntimeError(
+            f"Failed to download {version_id} after {MAX_FETCH_ATTEMPTS} attempts"
+        )

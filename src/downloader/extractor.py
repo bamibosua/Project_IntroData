@@ -12,8 +12,16 @@ from .config import ALLOWED_EXTENSIONS
 from .utils import looks_like_latex_or_bib, sanitize_relative_path
 
 
-def _result(status: str, source_type: str, raw: int, uncompressed: int, kept: int,
-            tex: int, bib: int, files: list[str]) -> dict:
+def _result(
+    status: str,
+    source_type: str,
+    raw: int,
+    uncompressed: int,
+    kept: int,
+    tex: int,
+    bib: int,
+    files: list[str],
+) -> dict:
     return {
         "status": status,
         "source_type": source_type,
@@ -38,45 +46,77 @@ def _extract_tar(raw_bytes: bytes, dest_dir: Path) -> dict:
         uncompressed = sum(max(0, m.size) for m in members)
         kept, tex, bib, files = 0, 0, 0, []
         for member in members:
-            rel = sanitize_relative_path(member.name)
-            if rel is None or rel.suffix.lower() not in ALLOWED_EXTENSIONS:
+            relative_path = sanitize_relative_path(member.name)
+            if (
+                relative_path is None
+                or relative_path.suffix.lower() not in ALLOWED_EXTENSIONS
+            ):
                 continue
-            f = tar.extractfile(member)
-            if f is None:
+            member_file = tar.extractfile(member)
+            if member_file is None:
                 continue
-            content = f.read()
-            _write_member(dest_dir, rel, content)
+            content = member_file.read()
+            _write_member(dest_dir, relative_path, content)
             kept += len(content)
-            tex, bib = (tex + 1, bib) if rel.suffix.lower() == ".tex" else (tex, bib + 1)
-            files.append(rel.as_posix())
-    ok = tex + bib > 0
-    return _result("success" if ok else "no_tex_source", "tar" if ok else "tar_without_tex",
-                   len(raw_bytes), uncompressed, kept, tex, bib, files)
+            tex, bib = (
+                (tex + 1, bib)
+                if relative_path.suffix.lower() == ".tex"
+                else (tex, bib + 1)
+            )
+            files.append(relative_path.as_posix())
+    has_source_files = tex + bib > 0
+    return _result(
+        "success" if has_source_files else "no_tex_source",
+        "tar" if has_source_files else "tar_without_tex",
+        len(raw_bytes),
+        uncompressed,
+        kept,
+        tex,
+        bib,
+        files,
+    )
 
 
 def _extract_zip(raw_bytes: bytes, dest_dir: Path) -> dict:
-    with zipfile.ZipFile(io.BytesIO(raw_bytes)) as zf:
-        infos = [i for i in zf.infolist() if not i.is_dir()]
+    with zipfile.ZipFile(io.BytesIO(raw_bytes)) as archive:
+        infos = [i for i in archive.infolist() if not i.is_dir()]
         uncompressed = sum(max(0, i.file_size) for i in infos)
         kept, tex, bib, files = 0, 0, 0, []
         for info in infos:
-            rel = sanitize_relative_path(info.filename)
-            if rel is None or rel.suffix.lower() not in ALLOWED_EXTENSIONS:
+            relative_path = sanitize_relative_path(info.filename)
+            if (
+                relative_path is None
+                or relative_path.suffix.lower() not in ALLOWED_EXTENSIONS
+            ):
                 continue
-            content = zf.read(info.filename)
-            _write_member(dest_dir, rel, content)
+            content = archive.read(info.filename)
+            _write_member(dest_dir, relative_path, content)
             kept += len(content)
-            tex, bib = (tex + 1, bib) if rel.suffix.lower() == ".tex" else (tex, bib + 1)
-            files.append(rel.as_posix())
-    ok = tex + bib > 0
-    return _result("success" if ok else "no_tex_source", "zip" if ok else "zip_without_tex",
-                   len(raw_bytes), uncompressed, kept, tex, bib, files)
+            tex, bib = (
+                (tex + 1, bib)
+                if relative_path.suffix.lower() == ".tex"
+                else (tex, bib + 1)
+            )
+            files.append(relative_path.as_posix())
+    has_source_files = tex + bib > 0
+    return _result(
+        "success" if has_source_files else "no_tex_source",
+        "zip" if has_source_files else "zip_without_tex",
+        len(raw_bytes),
+        uncompressed,
+        kept,
+        tex,
+        bib,
+        files,
+    )
 
 
 def extract_tex_and_bib_from_bytes(raw_bytes: bytes, dest_dir: Path) -> dict:
     """Inspect payload in RAM and extract ONLY .tex & .bib into dest_dir."""
     if not dest_dir.is_dir():
-        raise FileNotFoundError(f"Missing prepared folder: {dest_dir}. Run entry first.")
+        raise FileNotFoundError(
+            f"Missing prepared folder: {dest_dir}. Run entry first."
+        )
     raw_size = len(raw_bytes)
 
     if raw_bytes.startswith(b"%PDF-"):
@@ -104,6 +144,15 @@ def extract_tex_and_bib_from_bytes(raw_bytes: bytes, dest_dir: Path) -> dict:
             payload = raw_bytes
     if looks_like_latex_or_bib(payload):
         (dest_dir / "main.tex").write_bytes(payload)
-        return _result("success", "single_tex", raw_size, len(payload), len(payload), 1, 0, ["main.tex"])
+        return _result(
+            "success",
+            "single_tex",
+            raw_size,
+            len(payload),
+            len(payload),
+            1,
+            0,
+            ["main.tex"],
+        )
 
     return _result("no_tex_source", "pdf_or_other", raw_size, len(payload), 0, 0, 0, [])

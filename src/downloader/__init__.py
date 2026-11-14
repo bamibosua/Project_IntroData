@@ -18,4 +18,9 @@ from .extractor import extract_tex_and_bib_from_bytes
 from .index import load_papers_index
 from .runner import download_corpus
 
-__all__ = ["FastArxivClient", "extract_tex_and_bib_from_bytes", "load_papers_index", "download_corpus"]
+__all__ = [
+    "FastArxivClient",
+    "extract_tex_and_bib_from_bytes",
+    "load_papers_index",
+    "download_corpus",
+]

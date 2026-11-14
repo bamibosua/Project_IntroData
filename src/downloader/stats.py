@@ -32,8 +32,12 @@ def compute_storage_metrics(all_status: dict) -> dict:
         "total_kept_tex_bib_human": format_bytes(kept),
         "total_saved_bytes_vs_uncompressed": saved,
         "total_saved_human_vs_uncompressed": format_bytes(saved),
-        "storage_reduction_ratio_vs_uncompressed_pct": round(saved / uncomp * 100, 2) if uncomp > 0 else 0.0,
-        "storage_reduction_ratio_vs_raw_archive_pct": round((raw - kept) / raw * 100, 2) if raw > 0 else 0.0,
+        "storage_reduction_ratio_vs_uncompressed_pct": (
+            round(saved / uncomp * 100, 2) if uncomp > 0 else 0.0
+        ),
+        "storage_reduction_ratio_vs_raw_archive_pct": (
+            round((raw - kept) / raw * 100, 2) if raw > 0 else 0.0
+        ),
         "total_tex_files": tex,
         "total_bib_files": bib,
         "total_kept_files": tex + bib,
@@ -64,10 +68,12 @@ def write_summary(
     summary = {
         "run_state": run_state,
         **counters,
-        "first_started_at_local": first_started_local or dt_beg.strftime("%Y-%m-%d %H:%M:%S"),
+        "first_started_at_local": first_started_local
+        or dt_beg.strftime("%Y-%m-%d %H:%M:%S"),
         "session_started_at_local": dt_beg.strftime("%Y-%m-%d %H:%M:%S"),
         "completed_at_local": dt_now.strftime("%Y-%m-%d %H:%M:%S"),
-        "first_started_at_utc": first_started_utc or dt_beg.astimezone(timezone.utc).isoformat(),
+        "first_started_at_utc": first_started_utc
+        or dt_beg.astimezone(timezone.utc).isoformat(),
         "started_at_utc": dt_beg.astimezone(timezone.utc).isoformat(),
         "completed_at_utc": dt_now.astimezone(timezone.utc).isoformat(),
         "previous_wall_time_sec": prev_wall_sec,
@@ -81,7 +87,9 @@ def write_summary(
     if exit_code is not None:
         summary.update(exit_code=exit_code, reason=reason)
     summary_path.parent.mkdir(parents=True, exist_ok=True)
-    summary_path.write_text(json.dumps(summary, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    summary_path.write_text(
+        json.dumps(summary, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"
+    )
     return summary
 
 
@@ -103,17 +111,25 @@ def print_report(
     dt_beg = dt_start or dt_now
     sess_sec = wall_sec if session_wall_sec is None else session_wall_sec
     bar = "=" * 56
-    title = "DOWNLOAD CORPUS SUMMARY" if run_state == "completed" else f"DOWNLOAD SUMMARY ({run_state.upper()})"
+    title = (
+        "DOWNLOAD CORPUS SUMMARY"
+        if run_state == "completed"
+        else f"DOWNLOAD SUMMARY ({run_state.upper()})"
+    )
     print(f"\n{bar}\n{title.center(56)}\n{bar}")
     print(f" Status               : {run_state.upper()}")
-    print(f" First started at     : {first_started_local or dt_beg.strftime('%Y-%m-%d %H:%M:%S')}")
+    print(
+        f" First started at     : {first_started_local or dt_beg.strftime('%Y-%m-%d %H:%M:%S')}"
+    )
     print(f" Session started at   : {dt_beg.strftime('%Y-%m-%d %H:%M:%S')}")
     print(f" Saved / Ended at     : {dt_now.strftime('%Y-%m-%d %H:%M:%S')}")
     print(f" Previous runtime     : {format_duration(prev_wall_sec)}")
     print(f" Session runtime      : {format_duration(sess_sec)}")
     print(f" Total runtime (cum.) : {format_duration(wall_sec)}")
     print("-" * 56)
-    print(f" Papers processed     : {counters.get('processed_papers', counters['total_papers']):,} / {counters['total_papers']:,} (Cached: {counters['cached_papers']:,})")
+    print(
+        f" Papers processed     : {counters.get('processed_papers', counters['total_papers']):,} / {counters['total_papers']:,} (Cached: {counters['cached_papers']:,})"
+    )
     print(f" Papers with TeX/Bib  : {counters['papers_with_tex']:,}")
     print(f" Papers PDF-only      : {counters['papers_without_tex']:,}")
     print(f" Papers failed        : {counters['papers_failed']:,}")
@@ -121,11 +137,23 @@ def print_report(
     print(f" Total TeX files      : {m['total_tex_files']:,}")
     print(f" Total Bib files      : {m['total_bib_files']:,}")
     print("-" * 56)
-    print(f" Raw arXiv archive    : {m['total_raw_archive_human']} ({m['total_raw_archive_bytes']:,} bytes)")
-    print(f" Total uncompressed   : {m['total_uncompressed_human']} ({m['total_uncompressed_bytes']:,} bytes)")
-    print(f" Kept TeX/Bib on disk : {m['total_kept_tex_bib_human']} ({m['total_kept_tex_bib_bytes']:,} bytes)")
-    print(f" Disk space saved     : {m['total_saved_human_vs_uncompressed']} ({m['total_saved_bytes_vs_uncompressed']:,} bytes)")
-    print(f" Storage reduction    : {m['storage_reduction_ratio_vs_uncompressed_pct']:.2f}% (vs uncompressed)")
-    print(f"                      : {m['storage_reduction_ratio_vs_raw_archive_pct']:.2f}% (vs raw archive)")
+    print(
+        f" Raw arXiv archive    : {m['total_raw_archive_human']} ({m['total_raw_archive_bytes']:,} bytes)"
+    )
+    print(
+        f" Total uncompressed   : {m['total_uncompressed_human']} ({m['total_uncompressed_bytes']:,} bytes)"
+    )
+    print(
+        f" Kept TeX/Bib on disk : {m['total_kept_tex_bib_human']} ({m['total_kept_tex_bib_bytes']:,} bytes)"
+    )
+    print(
+        f" Disk space saved     : {m['total_saved_human_vs_uncompressed']} ({m['total_saved_bytes_vs_uncompressed']:,} bytes)"
+    )
+    print(
+        f" Storage reduction    : {m['storage_reduction_ratio_vs_uncompressed_pct']:.2f}% (vs uncompressed)"
+    )
+    print(
+        f"                      : {m['storage_reduction_ratio_vs_raw_archive_pct']:.2f}% (vs raw archive)"
+    )
     print(f" Peak heap            : {peak_heap_mb} MB")
     print(f"{bar}\nSummary written to {summary_path}\n", flush=True)

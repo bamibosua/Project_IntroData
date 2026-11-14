@@ -7,57 +7,155 @@
   </p>
 
   <h1>Project IntroData</h1>
-  <p>Thu thập và xử lý dữ liệu bài báo khoa học từ arXiv</p>
-  <p>Trường Đại học Khoa học Tự nhiên, ĐHQG-HCM · Lớp 24KHDL1</p>
+  <p>Collect and processing scientific paper data from arXiv</p>
+  <p>VNUHCM-University of Science · CLASS 24KHDL1</p>
 
 </div>
 
-## Quy ước làm việc chung
+## Team Members
 
-- Mỗi thành viên làm việc trên nhánh riêng, đặt tên theo nội dung như `feat/entry-discovery`, `fix/download-retry` hoặc `docs/team-rules`.
-- Đồng bộ nhánh trước khi bắt đầu; kiểm tra thay đổi của người khác trước khi sửa phần dùng chung.
-- Mỗi commit tập trung vào một thay đổi, có mô tả rõ ràng. Dùng tiền tố `feat:`, `fix:`, `refactor:`, `docs:`, `test:` hoặc `chore:`.
-- Kiểm tra phần bị ảnh hưởng trước khi gửi thay đổi. Khi tạo pull request, nêu nội dung sửa, cách kiểm tra và hạn chế còn lại.
-- Thống nhất trước khi thay đổi schema, tên trường, ID bài báo, phiên bản hoặc đường dẫn bàn giao giữa các module.
-- Dùng đường dẫn tương đối hoặc cấu hình; tránh ghi cố định đường dẫn máy cá nhân vào mã nguồn.
-- Viết file văn bản bằng UTF-8; giữ phong cách mã nguồn nhất quán với module đang sửa.
-
-## Những gì cần commit
-
-| Loại file | Quy định |
+| Full Name | Student ID
 | --- | --- |
-| Mã nguồn, script và test | Commit các thay đổi liên quan đến chức năng của dự án. |
-| `README.md`, `.gitignore` và tài liệu chung | Cập nhật cùng thay đổi có ảnh hưởng đến cả nhóm. |
-| `requirements.txt` và cấu hình môi trường chung | Cập nhật khi thêm hoặc thay đổi thư viện. |
-| Cấu hình phân công như `src/entry_discovery/team_ranges.json` | Commit để các thành viên dùng cùng phạm vi dữ liệu. |
-| Notebook `.ipynb` | Commit phần mã và ghi chú; xóa output lớn, dữ liệu nhạy cảm và thông tin cá nhân trước khi commit. |
-| Dữ liệu mẫu nhỏ phục vụ test | Chỉ commit dữ liệu cần thiết, không chứa secrets và đặt ngoài thư mục dữ liệu đã bị ignore. |
-| `.env.example`, `.env.template` | Chỉ chứa tên biến và giá trị minh họa, không có API key hoặc thông tin xác thực thật. |
+|Trương Phan Minh Hằng|24127033
+|Nguyễn Trần Trọng Nhân|24127092
+|Nguyễn Vĩnh Nguyên|24127470|
+|Huỳnh Thị Yến Vy|24127594
+---
 
-Không bỏ qua toàn bộ `*.json` hoặc thư mục `tests/`: cấu hình và dữ liệu mẫu hợp lệ vẫn cần được quản lý phiên bản.
+This guide explains how to set up the environment and run the crawling and cleanup modules locally or on Google Colab.
 
-## Những gì không commit
+## Environment Setup
 
-- File `.env`, `.env.*` chứa cấu hình riêng; API key, token, mật khẩu, private key và thông tin xác thực trong bất kỳ file nào.
-- Môi trường ảo như `.venv/`, `venv/`, `env/`; thư viện đã cài và sản phẩm đóng gói như `build/`, `dist/`, `*.egg-info/`.
-- Dữ liệu crawl, corpus, archive tải về, checkpoint và kết quả pipeline. Đặt chúng trong `data/`; quy tắc ignore áp dụng cả ở gốc và trong các module.
-- Thư mục `parsed_structure/`, `cleaned_structure/`, `papers_references_meta/` và các báo cáo sinh tự động như `benchmark_results.json`, `benchmark_sessions.jsonl`.
-- Bytecode, cache Python/test/lint, notebook checkpoint, log và file tạm.
-- Cấu hình IDE cá nhân như `.vscode/`, `.idea/` và file hệ điều hành như `.DS_Store`, `Thumbs.db`.
+Use Python 3.12 or a compatible newer version. Keep the complete `src` folder, including its subfolders, `requirements.txt`, and `entry_discovery/team_ranges.json`.
 
-`.gitignore` chỉ bỏ qua file chưa được Git theo dõi. Nếu một file đã được commit, thêm quy tắc ignore không tự loại nó khỏi lịch sử hoặc ngừng theo dõi file đó.
+Create the environment from the project root, where `src` is located.
 
-## Kiểm tra trước khi commit
+**Windows PowerShell:**
 
-1. Xem `git status` và `git diff` để kiểm tra đúng phạm vi thay đổi.
-2. Chỉ stage các file cần thiết; xem lại `git diff --cached` trước khi commit.
-3. Kiểm tra không có secrets, dữ liệu lớn, output notebook hoặc đường dẫn cá nhân trong phần đã stage.
-4. Kiểm tra chức năng bị ảnh hưởng và cập nhật tài liệu, cấu hình liên quan.
+```powershell
+python -m venv .venv
+.\.venv\Scripts\python.exe -m pip install -r src/requirements.txt
+```
 
-Ví dụ commit message: `feat: add references crawler`, `fix: preserve discovery checkpoints`, `docs: update team conventions`.
+**Linux / macOS:**
 
-## Bàn giao dữ liệu
+```bash
+python3 -m venv .venv
+.venv/bin/python -m pip install -r src/requirements.txt
+```
 
-- Chia sẻ dữ liệu lớn qua nơi lưu trữ chung của nhóm; ghi rõ vị trí, phạm vi ID, phiên bản và trạng thái xử lý.
-- Bàn giao kèm index, cấu hình và báo cáo cần thiết để thành viên khác kiểm tra dữ liệu.
-- Không tự ý đổi schema hoặc ghi đè dữ liệu/checkpoint của thành viên khác. Tránh nhiều tiến trình cùng ghi vào một thư mục output.
+For Google Colab, use the runtime's Python environment and follow the setup cells described below.
+
+## Crawling Section
+
+The crawling pipeline discovers the assigned arXiv papers, downloads available LaTeX/BibTeX sources, and retrieves references from Semantic Scholar. Check the assigned ranges in `src/entry_discovery/team_ranges.json` before starting. An Internet connection is required.
+
+### Run locally
+
+If you have a Semantic Scholar API key, set it in the current terminal session. Skip this step to use public access.
+
+**Windows PowerShell:**
+
+```powershell
+# Optional
+$env:S2_API_KEY = "<YOUR_SEMANTIC_SCHOLAR_API_KEY>"
+
+.\.venv\Scripts\python.exe src/run_m1.py
+```
+
+**Linux / macOS:**
+
+```bash
+# Optional
+export S2_API_KEY="<YOUR_SEMANTIC_SCHOLAR_API_KEY>"
+
+.venv/bin/python src/run_m1.py
+```
+
+The pipeline creates `data` beside `src` and stores its results under `data/output`. You do not need to create the input index or paper folders before running the complete pipeline.
+
+### Run on Google Colab
+
+1. Create a project folder in Google Drive, for example `MyDrive/IDS_Project`.
+2. Upload the **complete `src` folder** into it. Keep all modules and `src/requirements.txt` together.
+3. Open `src/pipeline_colab.ipynb` with Google Colab and choose a CPU runtime.
+4. Run the notebook cells in order, replacing the Drive path with your own location.
+
+Your Drive layout should look like this:
+
+```text
+MyDrive/
+└── <YOUR_PROJECT_FOLDER>/
+    ├── src/
+    │   ├── pipeline_colab.ipynb
+    │   ├── requirements.txt
+    │   ├── run_m1.py
+    │   └── ...
+    └── data/                    # Created when the pipeline runs
+```
+
+**Mount Drive:**
+
+```python
+from google.colab import drive
+
+drive.mount("/content/drive")
+```
+
+**Set the source directory:**
+
+```python
+%cd "/content/drive/MyDrive/<YOUR_PROJECT_FOLDER>/src"
+```
+
+Replace `<YOUR_PROJECT_FOLDER>` with the folder path inside your `MyDrive`. For example, `MyDrive/IDS_Project/src` becomes `/content/drive/MyDrive/IDS_Project/src`. Keep the quotes if your path contains spaces.
+
+**Install dependencies in the current runtime:**
+
+```python
+%pip install -r requirements.txt
+```
+
+**Load an optional API key:**
+
+Open the Colab **Secrets** panel using the key icon. Add a secret named `S2_API_KEY`, set its value, and enable **Notebook access**. Then run:
+
+```python
+import os
+from google.colab import userdata
+
+try:
+    api_key = userdata.get("S2_API_KEY")
+except (userdata.SecretNotFoundError, userdata.NotebookAccessError):
+    api_key = None
+
+if api_key:
+    os.environ["S2_API_KEY"] = api_key
+    print("API key loaded from Colab Secrets.")
+else:
+    print("No accessible Colab API key; using environment settings or public access.")
+```
+
+The cell does not display the key. If no accessible secret is available, the crawler uses its existing environment settings or public access.
+
+**Start crawling:**
+
+```python
+%run run_m1.py
+```
+
+Run the dependency and setup cells again whenever Colab starts a new runtime. Results remain in the project folder on Drive.
+
+## Cleanup and Normalization Section
+
+In progress...
+
+## Troubleshooting
+
+- **Missing Python packages:** install `src/requirements.txt` with the interpreter used to run the pipeline. In Colab, run the `%pip` cell after switching to `src`.
+- **`requirements.txt` not found:** check the path in the `%cd` cell. The working directory must contain the uploaded source files.
+- **Colab still uses old code:** stop the current run, replace the files in the correct Drive folder, restart the runtime, and run the setup cells again.
+- **Secret not found or inaccessible:** check the exact name `S2_API_KEY` and enable notebook access. An API key does not guarantee that requests will avoid rate limiting.
+- **Missing cleanup inputs:** prepare or upload the matching `merged.tex` and `outline.json` files before running cleanup.
+
+Keep real API keys, virtual environments, downloaded data, and notebook execution outputs out of Git.

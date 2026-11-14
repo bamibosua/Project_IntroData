@@ -10,11 +10,12 @@ import logging
 from .client import FastArxivClient
 from .pipeline import extract_paper_to_existing_folders, fetch_single_version_task
 
-
 logger = logging.getLogger(__name__)
 
 
-def find_missing_versions(items, papers_dir: Path, all_status: dict) -> list[tuple[str, str, Path]]:
+def find_missing_versions(
+    items, papers_dir: Path, all_status: dict
+) -> list[tuple[str, str, Path]]:
     """A version is missing if its folder is absent, it has no status record, or its status is `error`."""
     missing = []
     for aid, v_list in items:
@@ -27,35 +28,50 @@ def find_missing_versions(items, papers_dir: Path, all_status: dict) -> list[tup
     return missing
 
 
-def recover_missing_versions(missing, all_status: dict, client: FastArxivClient, net_pool: ThreadPoolExecutor) -> None:
+def recover_missing_versions(
+    missing, all_status: dict, client: FastArxivClient, net_pool: ThreadPoolExecutor
+) -> None:
     """Re-fetch each missing version and merge the result into `all_status`."""
     for aid, v_tag, p_dir in missing:
-        logger.info('[DOWNLOAD] Recovering %s%s.', aid, v_tag)
+        logger.info("[DOWNLOAD] Recovering %s%s.", aid, v_tag)
         t0 = time.perf_counter()
         fut = net_pool.submit(fetch_single_version_task, aid, v_tag, client)
         res = extract_paper_to_existing_folders(0, len(missing), aid, p_dir, [fut], t0)
 
-        rec = all_status.setdefault(aid, {
-            "arxiv_id": aid,
-            "paper_status": res["status"],
-            "total_raw_archive_bytes": 0,
-            "total_uncompressed_bytes": 0,
-            "total_kept_tex_bib_bytes": 0,
-            "download_time_sec": res["elapsed"],
-            "version_downloads": {},
-        })
-        rec["version_downloads"][v_tag] = res["record"]["version_downloads"].get(v_tag, {})
-        has_tex = any(v.get("status") == "success" for v in rec["version_downloads"].values())
+        rec = all_status.setdefault(
+            aid,
+            {
+                "arxiv_id": aid,
+                "paper_status": res["status"],
+                "total_raw_archive_bytes": 0,
+                "total_uncompressed_bytes": 0,
+                "total_kept_tex_bib_bytes": 0,
+                "download_time_sec": res["elapsed"],
+                "version_downloads": {},
+            },
+        )
+        rec["version_downloads"][v_tag] = res["record"]["version_downloads"].get(
+            v_tag, {}
+        )
+        has_tex = any(
+            v.get("status") == "success" for v in rec["version_downloads"].values()
+        )
         rec["paper_status"] = "success" if has_tex else "no_tex_source"
-        logger.info('[DOWNLOAD] Recovery processed: %s%s.', aid, v_tag)
+        logger.info("[DOWNLOAD] Recovery processed: %s%s.", aid, v_tag)
 
 
-def run_audit(items, papers_dir: Path, all_status: dict, client: FastArxivClient, net_pool: ThreadPoolExecutor) -> None:
-    logger.info('[DOWNLOAD] Auditing versions.')
+def run_audit(
+    items,
+    papers_dir: Path,
+    all_status: dict,
+    client: FastArxivClient,
+    net_pool: ThreadPoolExecutor,
+) -> None:
+    logger.info("[DOWNLOAD] Auditing versions.")
     missing = find_missing_versions(items, papers_dir, all_status)
     if not missing:
-        logger.info('[DOWNLOAD] Audit: no missing versions.')
+        logger.info("[DOWNLOAD] Audit: no missing versions.")
         return
-    logger.info('[DOWNLOAD] Audit: recovering %d missing versions.', len(missing))
+    logger.info("[DOWNLOAD] Audit: recovering %d missing versions.", len(missing))
     recover_missing_versions(missing, all_status, client, net_pool)
-    logger.info('[DOWNLOAD] Audit done.')
+    logger.info("[DOWNLOAD] Audit done.")

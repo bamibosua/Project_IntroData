@@ -18,7 +18,7 @@ from .pipeline import extract_paper_to_existing_folders, fetch_single_version_ta
 from .stats import compute_storage_metrics, print_report, write_summary
 
 try:
-    if __package__ and __package__.startswith('src.'):
+    if __package__ and __package__.startswith("src."):
         from .. import m1_benchmark as benchmark
     else:
         import m1_benchmark as benchmark
@@ -30,11 +30,16 @@ logger = logging.getLogger(__name__)
 
 def _save_status(status_path: Path, all_status: dict) -> None:
     status_path.parent.mkdir(parents=True, exist_ok=True)
-    status_path.write_text(json.dumps(all_status, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    status_path.write_text(
+        json.dumps(all_status, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"
+    )
 
 
 def _load_status(status_path: Path, legacy_dir: Path | None = None) -> dict:
-    for candidate in (status_path, (legacy_dir / status_path.name) if legacy_dir else None):
+    for candidate in (
+        status_path,
+        (legacy_dir / status_path.name) if legacy_dir else None,
+    ):
         if candidate is not None and candidate.exists():
             try:
                 return json.loads(candidate.read_text(encoding="utf-8"))
@@ -83,11 +88,18 @@ class _Progress:
                 self.success += 1
             elif res["status"] == "no_tex_source":
                 self.no_tex += 1
-                logger.info("[DOWNLOAD] %s (%dv): no TeX source / PDF-only", res["arxiv_id"], res.get("ver_count", 1))
+                logger.info(
+                    "[DOWNLOAD] %s (%dv): no TeX source / PDF-only",
+                    res["arxiv_id"],
+                    res.get("ver_count", 1),
+                )
             else:
                 self.error += 1
-            print(f"[{res['idx']}/{res['total']}] {res['arxiv_id']} ({res['ver_count']}v) -> "
-                  f"{res['status']} | {res['elapsed']:.2f}s", flush=True)
+            print(
+                f"[{res['idx']}/{res['total']}] {res['arxiv_id']} ({res['ver_count']}v) -> "
+                f"{res['status']} | {res['elapsed']:.2f}s",
+                flush=True,
+            )
             self._pending += 1
             if self._pending >= CHECKPOINT_EVERY:
                 self.on_checkpoint()
@@ -96,13 +108,15 @@ class _Progress:
 
 
 def _is_cached(prev: dict, paper_dir: Path, v_list: list[str]) -> bool:
-    return prev.get("paper_status") in ("success", "no_tex_source") and all((paper_dir / v).exists() for v in v_list)
+    return prev.get("paper_status") in ("success", "no_tex_source") and all(
+        (paper_dir / v).exists() for v in v_list
+    )
 
 
 def _require_prepared_folder(path: Path) -> None:
     if not path.is_dir():
-        message = f'Missing prepared folder: {path}. Run entry first.'
-        logger.error('[DOWNLOAD] %s', message)
+        message = f"Missing prepared folder: {path}. Run entry first."
+        logger.error("[DOWNLOAD] %s", message)
         raise FileNotFoundError(message)
 
 
@@ -120,7 +134,9 @@ def download_corpus(
     meta_dir = output_dir / DOWNLOAD_META_DIR_NAME
     meta_dir.mkdir(parents=True, exist_ok=True)
     status_path = meta_dir / "download_status.json"
-    summary_path = meta_dir / ("download_summary_limit.json" if limit is not None else "download_summary.json")
+    summary_path = meta_dir / (
+        "download_summary_limit.json" if limit is not None else "download_summary.json"
+    )
 
     all_status = _load_status(status_path, legacy_dir=output_dir)
     prev_summary = _load_status(summary_path, legacy_dir=output_dir)
@@ -130,10 +146,16 @@ def download_corpus(
     t_start = time.perf_counter()
 
     prev_wall_sec = float(prev_summary.get("total_wall_time_sec", 0.0))
-    first_started_local = prev_summary.get("first_started_at_local") or prev_summary.get("started_at_local")
-    first_started_utc = prev_summary.get("first_started_at_utc") or prev_summary.get("started_at_utc")
+    first_started_local = prev_summary.get(
+        "first_started_at_local"
+    ) or prev_summary.get("started_at_local")
+    first_started_utc = prev_summary.get("first_started_at_utc") or prev_summary.get(
+        "started_at_utc"
+    )
     first_started_local = first_started_local or dt_start.strftime("%Y-%m-%d %H:%M:%S")
-    first_started_utc = first_started_utc or dt_start.astimezone(timezone.utc).isoformat()
+    first_started_utc = (
+        first_started_utc or dt_start.astimezone(timezone.utc).isoformat()
+    )
     prev_peak_mb = float(prev_summary.get("tracemalloc_peak_heap_mb", 0.0))
 
     items = list(papers_index.items())[:limit]
@@ -152,9 +174,19 @@ def download_corpus(
         _, peak_heap = tracemalloc.get_traced_memory()
         cur_peak_mb = max(prev_peak_mb, round(peak_heap / (1024 * 1024), 2))
 
-        active_status = {k: r for k, r in all_status.items() if k in item_keys}
-        n_tex = sum(1 for r in active_status.values() if r.get("paper_status") == "success")
-        n_notex = sum(1 for r in active_status.values() if r.get("paper_status") == "no_tex_source")
+        active_status = {
+            k: paper_result for k, paper_result in all_status.items() if k in item_keys
+        }
+        n_tex = sum(
+            1
+            for paper_result in active_status.values()
+            if paper_result.get("paper_status") == "success"
+        )
+        n_notex = sum(
+            1
+            for paper_result in active_status.values()
+            if paper_result.get("paper_status") == "no_tex_source"
+        )
         n_fail = len(active_status) - n_tex - n_notex
 
         counters = {
@@ -167,21 +199,40 @@ def download_corpus(
         }
         metrics = compute_storage_metrics(active_status)
         summary = write_summary(
-            summary_path, counters, metrics, total_wall_sec, cur_peak_mb, paths_dict,
-            prev_wall_sec=prev_wall_sec, session_wall_sec=session_wall_sec,
-            first_started_local=first_started_local, first_started_utc=first_started_utc,
-            dt_start=dt_start, dt_end=dt_now, run_state=run_state,
+            summary_path,
+            counters,
+            metrics,
+            total_wall_sec,
+            cur_peak_mb,
+            paths_dict,
+            prev_wall_sec=prev_wall_sec,
+            session_wall_sec=session_wall_sec,
+            first_started_local=first_started_local,
+            first_started_utc=first_started_utc,
+            dt_start=dt_start,
+            dt_end=dt_now,
+            run_state=run_state,
         )
         if show_report:
             print_report(
-                counters, metrics, total_wall_sec, cur_peak_mb, summary_path,
-                prev_wall_sec=prev_wall_sec, session_wall_sec=session_wall_sec,
-                first_started_local=first_started_local, dt_start=dt_start,
-                dt_end=dt_now, run_state=run_state,
+                counters,
+                metrics,
+                total_wall_sec,
+                cur_peak_mb,
+                summary_path,
+                prev_wall_sec=prev_wall_sec,
+                session_wall_sec=session_wall_sec,
+                first_started_local=first_started_local,
+                dt_start=dt_start,
+                dt_end=dt_now,
+                run_state=run_state,
             )
         return summary
 
-    progress = _Progress(all_status, on_checkpoint=lambda: flush_checkpoint_and_summary("in_progress", False))
+    progress = _Progress(
+        all_status,
+        on_checkpoint=lambda: flush_checkpoint_and_summary("in_progress", False),
+    )
 
     def _on_sigint(signum, frame):
         print("\nInterrupted: saving checkpoint and summary...", flush=True)
@@ -200,11 +251,18 @@ def download_corpus(
     running: set[Future] = set()
     window = max(workers * 2, connections)
 
-    print(f"Starting downloader: {len(items)} papers target (workers={workers}, delay={delay}s, prev_time={prev_wall_sec:.2f}s)...", flush=True)
+    print(
+        f"Starting downloader: {len(items)} papers target (workers={workers}, delay={delay}s, prev_time={prev_wall_sec:.2f}s)...",
+        flush=True,
+    )
 
     with (
-        ThreadPoolExecutor(max_workers=max(1, connections), thread_name_prefix="net") as net_pool,
-        ThreadPoolExecutor(max_workers=max(4, workers), thread_name_prefix="ext") as ext_pool,
+        ThreadPoolExecutor(
+            max_workers=max(1, connections), thread_name_prefix="net"
+        ) as net_pool,
+        ThreadPoolExecutor(
+            max_workers=max(4, workers), thread_name_prefix="ext"
+        ) as ext_pool,
     ):
         for idx, (arxiv_id, v_list) in enumerate(items, start=1):
             paper_dir = papers_dir / arxiv_id.replace(".", "-")
@@ -213,15 +271,30 @@ def download_corpus(
             if _is_cached(prev, paper_dir, v_list):
                 progress.count_cached(prev["paper_status"])
                 if progress.cached <= 5 or progress.cached % 2000 == 0:
-                    print(f"[{idx}/{len(items)}] {arxiv_id} ({len(v_list)}v): cached", flush=True)
+                    print(
+                        f"[{idx}/{len(items)}] {arxiv_id} ({len(v_list)}v): cached",
+                        flush=True,
+                    )
                 continue
 
             for version in v_list:
                 _require_prepared_folder(paper_dir / version)
             t0 = time.perf_counter()
-            v_futs = [net_pool.submit(fetch_single_version_task, arxiv_id, v, client) for v in v_list]
-            running.add(ext_pool.submit(
-                extract_paper_to_existing_folders, idx, len(items), arxiv_id, paper_dir, v_futs, t0))
+            v_futs = [
+                net_pool.submit(fetch_single_version_task, arxiv_id, v, client)
+                for v in v_list
+            ]
+            running.add(
+                ext_pool.submit(
+                    extract_paper_to_existing_folders,
+                    idx,
+                    len(items),
+                    arxiv_id,
+                    paper_dir,
+                    v_futs,
+                    t0,
+                )
+            )
 
             while len(running) >= window:
                 running = progress.consume(running)
@@ -237,27 +310,43 @@ def download_corpus(
 
 
 def _refresh_stream_record(record, versions):
-    statuses = [record['version_downloads'].get(version, {}).get('status') for version in versions]
-    if any(status not in ('success', 'no_tex_source') for status in statuses):
-        record['paper_status'] = 'error'
+    statuses = [
+        record["version_downloads"].get(version, {}).get("status")
+        for version in versions
+    ]
+    if any(status not in ("success", "no_tex_source") for status in statuses):
+        record["paper_status"] = "error"
     else:
-        record['paper_status'] = 'success' if 'success' in statuses else 'no_tex_source'
-    for total, field in (('total_raw_archive_bytes', 'raw_archive_bytes'),
-                         ('total_uncompressed_bytes', 'uncompressed_total_bytes'),
-                         ('total_kept_tex_bib_bytes', 'kept_tex_bib_bytes')):
-        record[total] = sum(int(version.get(field, 0)) for version in record['version_downloads'].values())
+        record["paper_status"] = "success" if "success" in statuses else "no_tex_source"
+    for total, field in (
+        ("total_raw_archive_bytes", "raw_archive_bytes"),
+        ("total_uncompressed_bytes", "uncompressed_total_bytes"),
+        ("total_kept_tex_bib_bytes", "kept_tex_bib_bytes"),
+    ):
+        record[total] = sum(
+            int(version.get(field, 0))
+            for version in record["version_downloads"].values()
+        )
 
 
-def download_stream(papers_index, *, output_dir=DEFAULT_OUTPUT_DIR,
-                    workers=8, delay=0.6, connections=32, stop_event=None, client=None):
+def download_stream(
+    papers_index,
+    *,
+    output_dir=DEFAULT_OUTPUT_DIR,
+    workers=8,
+    delay=0.6,
+    connections=32,
+    stop_event=None,
+    client=None,
+):
     """Download an index or (ID, versions) stream; None means temporarily idle."""
     output_dir = Path(output_dir)
     _require_prepared_folder(output_dir)
-    papers_dir = output_dir / 'papers'
+    papers_dir = output_dir / "papers"
     meta_dir = output_dir / DOWNLOAD_META_DIR_NAME
     meta_dir.mkdir(parents=True, exist_ok=True)
-    status_path = meta_dir / 'download_status.json'
-    summary_path = meta_dir / 'download_summary.json'
+    status_path = meta_dir / "download_status.json"
+    summary_path = meta_dir / "download_summary.json"
     all_status = _load_status(status_path, legacy_dir=output_dir)
     client = client if client is not None else FastArxivClient(delay=delay)
     streaming = not isinstance(papers_index, dict)
@@ -281,21 +370,33 @@ def download_stream(papers_index, *, output_dir=DEFAULT_OUTPUT_DIR,
         done, running = wait(running, timeout=timeout, return_when=FIRST_COMPLETED)
         for future in done:
             result = future.result()
-            aid = result['arxiv_id']
-            all_status[aid] = result['record']
+            aid = result["arxiv_id"]
+            all_status[aid] = result["record"]
             completed += 1
-            if result['status'] == 'error':
-                logger.warning('[DOWNLOAD] %s: incomplete; see download_status.json.', aid)
-            elif result['status'] == 'no_tex_source':
-                logger.info('[DOWNLOAD] %s (%dv): no TeX source / PDF-only', aid, result.get('ver_count', 1))
+            if result["status"] == "error":
+                logger.warning(
+                    "[DOWNLOAD] %s: incomplete; see download_status.json.", aid
+                )
+            elif result["status"] == "no_tex_source":
+                logger.info(
+                    "[DOWNLOAD] %s (%dv): no TeX source / PDF-only",
+                    aid,
+                    result.get("ver_count", 1),
+                )
             if completed % 50 == 0:
-                logger.info('[DOWNLOAD] Processed: %d.', completed)
+                logger.info("[DOWNLOAD] Processed: %d.", completed)
             if completed % CHECKPOINT_EVERY == 0:
                 _save_status(status_path, all_status)
 
     try:
-        with (ThreadPoolExecutor(max_workers=max(1, connections), thread_name_prefix='net') as net_pool,
-              ThreadPoolExecutor(max_workers=max(4, workers), thread_name_prefix='ext') as ext_pool):
+        with (
+            ThreadPoolExecutor(
+                max_workers=max(1, connections), thread_name_prefix="net"
+            ) as net_pool,
+            ThreadPoolExecutor(
+                max_workers=max(4, workers), thread_name_prefix="ext"
+            ) as ext_pool,
+        ):
             for job in source:
                 if stopped():
                     break
@@ -307,29 +408,49 @@ def download_stream(papers_index, *, output_dir=DEFAULT_OUTPUT_DIR,
                     continue
                 idx = len(items) + 1
                 versions = list(version_list)
-                paper_dir = papers_dir / aid.replace('.', '-')
+                paper_dir = papers_dir / aid.replace(".", "-")
                 for version in versions:
                     _require_prepared_folder(paper_dir / version)
                 items[aid] = versions
                 if _is_cached(all_status.get(aid, {}), paper_dir, versions):
                     if benchmark is not None:
-                        benchmark.event(aid, 'cached_download')
+                        benchmark.event(aid, "cached_download")
                     if benchmark is not None:
-                        benchmark.event(aid, 'download', all_status[aid].get('version_downloads', {}))
+                        benchmark.event(
+                            aid,
+                            "download",
+                            all_status[aid].get("version_downloads", {}),
+                        )
                     cached += 1
                     completed += 1
                     if completed % 50 == 0:
-                        logger.info('[DOWNLOAD] Processed: %d.', completed)
+                        logger.info("[DOWNLOAD] Processed: %d.", completed)
                     continue
                 t0 = time.perf_counter()
-                all_status[aid] = {'arxiv_id': aid, 'paper_status': 'error', 'version_downloads': {},
-                                   'total_raw_archive_bytes': 0, 'total_uncompressed_bytes': 0,
-                                   'total_kept_tex_bib_bytes': 0, 'download_time_sec': 0}
-                version_futures = [net_pool.submit(fetch_single_version_task, aid, version, client)
-                                   for version in versions]
-                running.add(ext_pool.submit(
-                    extract_paper_to_existing_folders, idx, total, aid, paper_dir,
-                    version_futures, t0))
+                all_status[aid] = {
+                    "arxiv_id": aid,
+                    "paper_status": "error",
+                    "version_downloads": {},
+                    "total_raw_archive_bytes": 0,
+                    "total_uncompressed_bytes": 0,
+                    "total_kept_tex_bib_bytes": 0,
+                    "download_time_sec": 0,
+                }
+                version_futures = [
+                    net_pool.submit(fetch_single_version_task, aid, version, client)
+                    for version in versions
+                ]
+                running.add(
+                    ext_pool.submit(
+                        extract_paper_to_existing_folders,
+                        idx,
+                        total,
+                        aid,
+                        paper_dir,
+                        version_futures,
+                        t0,
+                    )
+                )
                 while len(running) >= window and not stopped():
                     collect()
             while running:
@@ -347,18 +468,48 @@ def download_stream(papers_index, *, output_dir=DEFAULT_OUTPUT_DIR,
                 tracemalloc.stop()
 
     selected = {aid: all_status[aid] for aid in items}
-    counters = {'total_papers': len(items), 'cached_papers': cached,
-                'papers_with_tex': sum(r['paper_status'] == 'success' for r in selected.values()),
-                'papers_without_tex': sum(r['paper_status'] == 'no_tex_source' for r in selected.values()),
-                'papers_failed': sum(r['paper_status'] == 'error' for r in selected.values())}
-    exit_code = 1 if stopped() or counters['papers_failed'] else 0
-    reason = 'stopped' if stopped() else 'publications_incomplete' if exit_code else None
+    counters = {
+        "total_papers": len(items),
+        "cached_papers": cached,
+        "papers_with_tex": sum(
+            paper_result["paper_status"] == "success"
+            for paper_result in selected.values()
+        ),
+        "papers_without_tex": sum(
+            paper_result["paper_status"] == "no_tex_source"
+            for paper_result in selected.values()
+        ),
+        "papers_failed": sum(
+            paper_result["paper_status"] == "error"
+            for paper_result in selected.values()
+        ),
+    }
+    exit_code = 1 if stopped() or counters["papers_failed"] else 0
+    reason = (
+        "stopped" if stopped() else "publications_incomplete" if exit_code else None
+    )
     wall_sec = round(time.perf_counter() - t_start, 4)
     metrics = compute_storage_metrics(selected)
-    summary = write_summary(summary_path, counters, metrics, wall_sec, round(peak_heap / 1024**2, 2),
-                            {'papers_dir': papers_dir, 'download_status_json': status_path,
-                             'download_summary_json': summary_path}, exit_code=exit_code, reason=reason)
-    label = 'Stopped' if stopped() else 'Finished with errors' if exit_code else 'Done'
-    logger.info('[DOWNLOAD] %s: ok=%d no_source=%d error=%d.',
-                label, counters['papers_with_tex'], counters['papers_without_tex'], counters['papers_failed'])
+    summary = write_summary(
+        summary_path,
+        counters,
+        metrics,
+        wall_sec,
+        round(peak_heap / 1024**2, 2),
+        {
+            "papers_dir": papers_dir,
+            "download_status_json": status_path,
+            "download_summary_json": summary_path,
+        },
+        exit_code=exit_code,
+        reason=reason,
+    )
+    label = "Stopped" if stopped() else "Finished with errors" if exit_code else "Done"
+    logger.info(
+        "[DOWNLOAD] %s: ok=%d no_source=%d error=%d.",
+        label,
+        counters["papers_with_tex"],
+        counters["papers_without_tex"],
+        counters["papers_failed"],
+    )
     return summary

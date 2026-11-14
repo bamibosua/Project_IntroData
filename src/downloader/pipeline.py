@@ -10,14 +10,14 @@ import time
 from .client import FastArxivClient
 from .extractor import extract_tex_and_bib_from_bytes
 
-
 try:
-    if __package__ and __package__.startswith('src.'):
+    if __package__ and __package__.startswith("src."):
         from .. import m1_benchmark as benchmark
     else:
         import m1_benchmark as benchmark
 except ImportError:
     benchmark = None
+
 
 def fetch_single_version_task(arxiv_id: str, ver_tag: str, client: FastArxivClient):
     """Network task. Returns (ver_tag, version_id, raw_bytes | None, error | None)."""
@@ -64,15 +64,21 @@ def extract_paper_to_existing_folders(
         has_tex = has_tex or info["status"] == "success"
 
     if benchmark is not None:
-        benchmark.event(arxiv_id, 'download', v_status)
+        benchmark.event(arxiv_id, "download", v_status)
     elapsed = round(time.perf_counter() - paper_t0, 4)
     p_status = "error" if had_error else ("success" if has_tex else "no_tex_source")
     record = {
         "arxiv_id": arxiv_id,
         "paper_status": p_status,
-        "total_raw_archive_bytes": sum(int(v.get("raw_archive_bytes", 0)) for v in v_status.values()),
-        "total_uncompressed_bytes": sum(int(v.get("uncompressed_total_bytes", 0)) for v in v_status.values()),
-        "total_kept_tex_bib_bytes": sum(int(v.get("kept_tex_bib_bytes", 0)) for v in v_status.values()),
+        "total_raw_archive_bytes": sum(
+            int(v.get("raw_archive_bytes", 0)) for v in v_status.values()
+        ),
+        "total_uncompressed_bytes": sum(
+            int(v.get("uncompressed_total_bytes", 0)) for v in v_status.values()
+        ),
+        "total_kept_tex_bib_bytes": sum(
+            int(v.get("kept_tex_bib_bytes", 0)) for v in v_status.values()
+        ),
         "download_time_sec": elapsed,
         "version_downloads": v_status,
     }

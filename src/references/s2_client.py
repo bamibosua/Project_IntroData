@@ -1,4 +1,5 @@
-"""Semantic Scholar client: một pacer, cooldown chung và retry hữu hạn."""
+"""Semantic Scholar client with shared pacing, cooldowns, and bounded retries."""
+
 from __future__ import annotations
 
 import datetime
@@ -12,10 +13,20 @@ import requests
 
 if __package__:
     from . import config
-    from .records import ResponseError, count_is_valid, validate_batch_entry, validate_page_data
+    from .records import (
+        ResponseError,
+        count_is_valid,
+        validate_batch_entry,
+        validate_page_data,
+    )
 else:
     import config
-    from records import ResponseError, count_is_valid, validate_batch_entry, validate_page_data
+    from records import (
+        ResponseError,
+        count_is_valid,
+        validate_batch_entry,
+        validate_page_data,
+    )
 
 logger = logging.getLogger(__name__)
 BASE = "https://api.semanticscholar.org/graph/v1/paper"
@@ -31,13 +42,21 @@ _WAIT_PRINT_INTERVAL = 60.0
 
 
 class ClientError(Exception):
-    def __init__(self, message: str, *, code: str, retryable: bool = False, status: int | None = None):
+    def __init__(
+        self,
+        message: str,
+        *,
+        code: str,
+        retryable: bool = False,
+        status: int | None = None,
+    ):
         super().__init__(message)
         self.code, self.retryable, self.status = code, retryable, status
 
 
 class FatalError(Exception):
-    """Request/xác thực sai: runner dừng và giữ mọi commit đã hoàn tất."""
+    """Stop on invalid requests or authentication failures; keep committed records."""
+
     def __init__(self, message: str, *, status: int | None = None):
         super().__init__(message)
         self.status = status
@@ -75,15 +94,29 @@ def parse_retry_after(header_value: str | None, *, warn_id: str = "") -> float |
     try:
         deadline = email.utils.parsedate_to_datetime(value)
         if deadline.tzinfo is not None:
-            return max(0.0, (deadline - datetime.datetime.now(datetime.timezone.utc)).total_seconds())
+            return max(
+                0.0,
+                (
+                    deadline - datetime.datetime.now(datetime.timezone.utc)
+                ).total_seconds(),
+            )
     except (ValueError, TypeError, OverflowError):
         pass
-    logger.warning("[REFERENCES] %s: invalid Retry-After header; using the configured wait.", warn_id)
+    logger.warning(
+        "[REFERENCES] %s: invalid Retry-After header; using the configured wait.",
+        warn_id,
+    )
     return None
 
 
-def _wait_with_progress(seconds, reason, *, sleep=time.sleep, clock=time.monotonic,
-                        print_interval=_WAIT_PRINT_INTERVAL) -> None:
+def _wait_with_progress(
+    seconds,
+    reason,
+    *,
+    sleep=time.sleep,
+    clock=time.monotonic,
+    print_interval=_WAIT_PRINT_INTERVAL,
+) -> None:
     if seconds <= 0:
         return
     deadline = clock() + seconds
@@ -91,7 +124,9 @@ def _wait_with_progress(seconds, reason, *, sleep=time.sleep, clock=time.monoton
     while (remaining := deadline - clock()) > 0:
         sleep(min(remaining, print_interval))
         if deadline - clock() > 0:
-            logger.info('[REFERENCES] Waiting: %s; %.0fs remaining.', reason, deadline - clock())
+            logger.info(
+                "[REFERENCES] Waiting: %s; %.0fs remaining.", reason, deadline - clock()
+            )
 
 
 class Pacer:
@@ -103,26 +138,40 @@ class Pacer:
         started = self.clock()
         if self.last_start is not None:
             remaining = max(0.0, self.cycle - (started - self.last_start))
-            _wait_with_progress(remaining, "request pacing", sleep=self.sleep, clock=self.clock)
+            _wait_with_progress(
+                remaining, "request pacing", sleep=self.sleep, clock=self.clock
+            )
         self.last_start = self.clock()
         return self.last_start - started
 
 
 class S2Client:
-    def __init__(self, api_key=None, cycle=None, wait_429=None, session=None,
-                  clock=time.monotonic, sleep=time.sleep, stop_event=None):
+    def __init__(
+        self,
+        api_key=None,
+        cycle=None,
+        wait_429=None,
+        session=None,
+        clock=time.monotonic,
+        sleep=time.sleep,
+        stop_event=None,
+    ):
         self.stop_event = stop_event
         if stop_event is not None:
+
             def sleep(seconds):
                 if stop_event.wait(seconds):
-                    raise InterruptedError('Pipeline stopped.')
+                    raise InterruptedError("Pipeline stopped.")
+
         self.cycle = config.CYCLE_SECONDS if cycle is None else cycle
         self.wait_429 = config.WAIT_429_SECONDS if wait_429 is None else wait_429
         self.clock, self.sleep = clock, sleep
         self.pacer = Pacer(self.cycle, clock, sleep)
         self._cooldown_until = 0.0
         self._cooldown_kind = "sleep_429_sec"
-        self.stats = ReqStats()  # cộng ngay khi request/wait xảy ra, kể cả lỗi/Ctrl+C
+        self.stats = (
+            ReqStats()
+        )  # Count requests and waits immediately, including errors and interruptions.
         self.session = session if session is not None else requests.Session()
         self.headers = {"User-Agent": "iDS-arxiv-project/0.1 (student crawler)"}
         if api_key:
@@ -131,7 +180,9 @@ class S2Client:
     def close(self) -> None:
         self.session.close()
 
-    def _apply_cooldown(self, extra_seconds, reason="", *, kind="sleep_429_sec") -> float:
+    def _apply_cooldown(
+        self, extra_seconds, reason="", *, kind="sleep_429_sec"
+    ) -> float:
         deadline = self.clock() + extra_seconds
         if deadline >= self._cooldown_until:
             self._cooldown_until, self._cooldown_kind = deadline, kind
@@ -148,14 +199,16 @@ class S2Client:
         try:
             _wait_with_progress(seconds, reason, sleep=self.sleep, clock=self.clock)
         finally:
-            setattr(self.stats, field, getattr(self.stats, field) + self.clock() - started)
+            setattr(
+                self.stats, field, getattr(self.stats, field) + self.clock() - started
+            )
 
     def _request(self, method, url, context="", *, validator=None, **kwargs):
         before = self.stats.as_dict()
-        n429 = n_other = 0
+        retries_429 = retries_other = 0
         while True:
             if self.stop_event is not None and self.stop_event.is_set():
-                raise InterruptedError('Pipeline stopped.')
+                raise InterruptedError("Pipeline stopped.")
             self._wait_cooldown(context)
             started = self.clock()
             try:
@@ -167,24 +220,38 @@ class S2Client:
             self.stats.requests += 1
             try:
                 try:
-                    response = self.session.request(method, url, headers=self.headers,
-                                                    timeout=config.REQUEST_TIMEOUT, **kwargs)
+                    response = self.session.request(
+                        method,
+                        url,
+                        headers=self.headers,
+                        timeout=config.REQUEST_TIMEOUT,
+                        **kwargs,
+                    )
                 finally:
                     self.stats.request_sec += self.clock() - started
             except requests.RequestException as exc:
                 if self.stop_event is not None and self.stop_event.is_set():
-                    raise InterruptedError('Pipeline stopped.') from exc
-                n_other += 1
-                if n_other > config.MAX_OTHER_RETRIES:
-                    logger.warning("[REFERENCES] %s: network error; retries exhausted.", context)
+                    raise InterruptedError("Pipeline stopped.") from exc
+                retries_other += 1
+                if retries_other > config.MAX_OTHER_RETRIES:
+                    logger.warning(
+                        "[REFERENCES] %s: network error; retries exhausted.", context
+                    )
                 else:
-                    logger.warning("[REFERENCES] %s: network error (%s); wait %.0fs, retry %d/%d.",
-                                   context, type(exc).__name__, _BACKOFF[min(n_other - 1, len(_BACKOFF) - 1)],
-                                   n_other, config.MAX_OTHER_RETRIES)
-                if n_other > config.MAX_OTHER_RETRIES:
-                    raise ClientError(f"{context}: lỗi mạng sau {config.MAX_OTHER_RETRIES} retry",
-                                      code="retryable") from exc
-                self._backoff(n_other, context)
+                    logger.warning(
+                        "[REFERENCES] %s: network error (%s); wait %.0fs, retry %d/%d.",
+                        context,
+                        type(exc).__name__,
+                        _BACKOFF[min(retries_other - 1, len(_BACKOFF) - 1)],
+                        retries_other,
+                        config.MAX_OTHER_RETRIES,
+                    )
+                if retries_other > config.MAX_OTHER_RETRIES:
+                    raise ClientError(
+                        f"{context}: network error after {config.MAX_OTHER_RETRIES} retry",
+                        code="retryable",
+                    ) from exc
+                self._backoff(retries_other, context)
                 continue
 
             self.stats.bytes += len(response.content or b"")
@@ -195,87 +262,165 @@ class S2Client:
                     if validator is not None:
                         validator(data)
                 except ValueError as exc:
-                    n_other += 1
-                    if n_other > config.MAX_OTHER_RETRIES:
-                        logger.warning("[REFERENCES] %s: invalid JSON/schema; retries exhausted.", context)
+                    retries_other += 1
+                    if retries_other > config.MAX_OTHER_RETRIES:
+                        logger.warning(
+                            "[REFERENCES] %s: invalid JSON/schema; retries exhausted.",
+                            context,
+                        )
                     else:
-                        logger.warning("[REFERENCES] %s: invalid JSON/schema; wait %.0fs, retry %d/%d.",
-                                       context, _BACKOFF[min(n_other - 1, len(_BACKOFF) - 1)],
-                                       n_other, config.MAX_OTHER_RETRIES)
-                    if n_other > config.MAX_OTHER_RETRIES:
-                        raise ClientError(f"{context}: JSON/schema không hợp lệ: {exc}",
-                                          code="invalid_response") from exc
-                    self._backoff(n_other, context)
+                        logger.warning(
+                            "[REFERENCES] %s: invalid JSON/schema; wait %.0fs, retry %d/%d.",
+                            context,
+                            _BACKOFF[min(retries_other - 1, len(_BACKOFF) - 1)],
+                            retries_other,
+                            config.MAX_OTHER_RETRIES,
+                        )
+                    if retries_other > config.MAX_OTHER_RETRIES:
+                        raise ClientError(
+                            f"{context}: invalid JSON/schema: {exc}",
+                            code="invalid_response",
+                        ) from exc
+                    self._backoff(retries_other, context)
                     continue
-                delta = ReqStats(**{k: v - before[k] for k, v in self.stats.as_dict().items()})
+                delta = ReqStats(
+                    **{k: v - before[k] for k, v in self.stats.as_dict().items()}
+                )
                 return data, delta
 
             if status == 429:
-                n429 += 1
-                delay = max(self.wait_429, parse_retry_after(response.headers.get("Retry-After"), warn_id=context) or 0)
-                self._apply_cooldown(delay, context)  # kể cả response cuối hết budget
-                if n429 > config.MAX_429_RETRIES:
-                    logger.warning("[REFERENCES] %s: HTTP 429; retries exhausted.", context)
-                    raise ClientError(f"{context}: HTTP 429 hết retry; cooldown còn {delay:.0f}s",
-                                      code="retryable", status=429)
+                retries_429 += 1
+                delay = max(
+                    self.wait_429,
+                    parse_retry_after(
+                        response.headers.get("Retry-After"), warn_id=context
+                    )
+                    or 0,
+                )
+                self._apply_cooldown(
+                    delay, context
+                )  # Apply cooldown even when this response exhausts the retry budget.
+                if retries_429 > config.MAX_429_RETRIES:
+                    logger.warning(
+                        "[REFERENCES] %s: HTTP 429; retries exhausted.", context
+                    )
+                    raise ClientError(
+                        f"{context}: HTTP 429 retries exhausted; cooldown remaining: {delay:.0f}s",
+                        code="retryable",
+                        status=429,
+                    )
                 self.stats.retries_429 += 1
-                logger.warning("[REFERENCES] %s: HTTP 429; wait %.0fs, retry %d/%d.", context, delay, n429, config.MAX_429_RETRIES)
+                logger.warning(
+                    "[REFERENCES] %s: HTTP 429; wait %.0fs, retry %d/%d.",
+                    context,
+                    delay,
+                    retries_429,
+                    config.MAX_429_RETRIES,
+                )
                 continue
 
             if status >= 500:
-                n_other += 1
-                delay = _BACKOFF[min(n_other - 1, len(_BACKOFF) - 1)]
+                retries_other += 1
+                delay = _BACKOFF[min(retries_other - 1, len(_BACKOFF) - 1)]
                 if status == 503:
-                    delay = max(delay, parse_retry_after(response.headers.get("Retry-After"), warn_id=context) or 0)
+                    delay = max(
+                        delay,
+                        parse_retry_after(
+                            response.headers.get("Retry-After"), warn_id=context
+                        )
+                        or 0,
+                    )
                     self._apply_cooldown(delay, context, kind="backoff_sec")
-                if n_other > config.MAX_OTHER_RETRIES:
-                    logger.warning("[REFERENCES] %s: HTTP %d; retries exhausted.", context, status)
-                    raise ClientError(f"{context}: HTTP {status} hết retry", code="retryable", status=status)
+                if retries_other > config.MAX_OTHER_RETRIES:
+                    logger.warning(
+                        "[REFERENCES] %s: HTTP %d; retries exhausted.", context, status
+                    )
+                    raise ClientError(
+                        f"{context}: HTTP {status} retries exhausted",
+                        code="retryable",
+                        status=status,
+                    )
                 self.stats.retries_other += 1
-                logger.warning("[REFERENCES] %s: HTTP %d; wait %.0fs, retry %d/%d.",
-                               context, status, delay, n_other, config.MAX_OTHER_RETRIES)
+                logger.warning(
+                    "[REFERENCES] %s: HTTP %d; wait %.0fs, retry %d/%d.",
+                    context,
+                    status,
+                    delay,
+                    retries_other,
+                    config.MAX_OTHER_RETRIES,
+                )
                 if status != 503:
                     self._wait(delay, "backoff_sec", f"HTTP {status}: {context}")
                 continue
 
             if status == 400 and "maximum size" in (response.text or "").lower():
-                raise ClientError(f"{context}: HTTP 400 response quá lớn", code="too_large", status=400)
+                raise ClientError(
+                    f"{context}: HTTP 400 response too large",
+                    code="too_large",
+                    status=400,
+                )
             if status in (401, 403):
-                raise FatalError(f"{context}: HTTP {status} lỗi xác thực/quyền; kiểm tra API key", status=status)
-            raise FatalError(f"{context}: HTTP {status}; kiểm tra request/cấu hình", status=status)
+                raise FatalError(
+                    f"{context}: HTTP {status} authentication/access denied; check the API key",
+                    status=status,
+                )
+            raise FatalError(
+                f"{context}: HTTP {status}; check the request and configuration", status=status
+            )
 
     def _backoff(self, number, context) -> None:
         self.stats.retries_other += 1
-        self._wait(_BACKOFF[min(number - 1, len(_BACKOFF) - 1)], "backoff_sec", f"retry {number}: {context}")
+        self._wait(
+            _BACKOFF[min(number - 1, len(_BACKOFF) - 1)],
+            "backoff_sec",
+            f"retry {number}: {context}",
+        )
 
     def post_batch(self, arxiv_ids):
         def validate(data):
             if not isinstance(data, list):
-                raise ResponseError("phản hồi batch phải là list")
+                raise ResponseError("batch response must be a list")
             if len(data) != len(arxiv_ids):
-                raise ResponseError(f"độ dài batch {len(data)} khác {len(arxiv_ids)} ID đã gửi")
+                raise ResponseError(
+                    f"batch length {len(data)} differs from {len(arxiv_ids)} requested IDs"
+                )
             for aid, entry in zip(arxiv_ids, data):
                 validate_batch_entry(entry, aid)
-        return self._request("POST", f"{BASE}/batch", context=f"batch[{len(arxiv_ids)}]",
-                             validator=validate, params={"fields": BATCH_FIELDS},
-                             json={"ids": [f"ARXIV:{aid}" for aid in arxiv_ids]})
+
+        return self._request(
+            "POST",
+            f"{BASE}/batch",
+            context=f"batch[{len(arxiv_ids)}]",
+            validator=validate,
+            params={"fields": BATCH_FIELDS},
+            json={"ids": [f"ARXIV:{aid}" for aid in arxiv_ids]},
+        )
 
     def fetch_metadata(self, arxiv_id):
-        """Lookup nhỏ lấy count cho batch quá lớn hoặc thiếu referenceCount."""
+        """Fetch metadata and referenceCount for oversized batches or missing counts."""
+
         def validate(data):
             if not isinstance(data, dict) or count_is_valid(data) is not True:
-                raise ResponseError(f"{arxiv_id}: metadata thiếu/sai referenceCount")
-        return self._request("GET", f"{BASE}/ARXIV:{arxiv_id}", context=f"{arxiv_id}/metadata",
-                             validator=validate, params={"fields": "paperId,referenceCount"})
+                raise ResponseError(f"{arxiv_id}: metadata has missing or invalid referenceCount")
+
+        return self._request(
+            "GET",
+            f"{BASE}/ARXIV:{arxiv_id}",
+            context=f"{arxiv_id}/metadata",
+            validator=validate,
+            params={"fields": "paperId,referenceCount"},
+        )
 
     def fetch_all_references(self, arxiv_id):
         total, out, offset, seen = ReqStats(), [], 0, {0}
         while True:
             data, stats = self._request(
-                "GET", f"{BASE}/ARXIV:{arxiv_id}/references",
+                "GET",
+                f"{BASE}/ARXIV:{arxiv_id}/references",
                 context=f"{arxiv_id}/references offset={offset}",
                 validator=lambda page: validate_page_data(page, arxiv_id, offset, seen),
-                params={"fields": REF_FIELDS, "limit": PAGE_LIMIT, "offset": offset})
+                params={"fields": REF_FIELDS, "limit": PAGE_LIMIT, "offset": offset},
+            )
             total.add(stats)
             out.extend(item["citedPaper"] or {} for item in data["data"])
             next_offset = data.get("next")
