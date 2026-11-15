@@ -19,7 +19,7 @@ import zlib
 from .client import _NOT_FOUND_PAYLOAD
 from .config import (ALLOWED_EXTENSIONS, CONDITIONAL_EXTENSIONS, MAX_MEMBER_BYTES, MAX_TAR_TOTAL_BYTES,
                      MAX_UNCOMPRESSED_BYTES)
-from .utils import looks_like_latex_or_bib, sanitize_relative_path
+from .utils import classify_plain_source, is_usable_text_member, sanitize_relative_path
 
 
 class ExtractWriteError(Exception):
@@ -114,11 +114,13 @@ def _collect(entries, dest_dir: Path, raw_size: int, uncompressed: "int | Callab
             suffix = rel.suffix.lower()
             if suffix not in ALLOWED_EXTENSIONS and suffix not in CONDITIONAL_EXTENSIONS:
                 continue
+            if size <= 0:
+                continue
             if size > MAX_MEMBER_BYTES or kept + size > MAX_UNCOMPRESSED_BYTES:
                 skipped.append(rel.as_posix())
                 continue
             content = read()
-            if content is None:
+            if content is None or not is_usable_text_member(content):
                 continue
             if suffix in CONDITIONAL_EXTENSIONS:
                 pending_bbl.append((name, rel, content))
@@ -261,13 +263,16 @@ def extract_tex_and_bib_from_bytes(raw_bytes: bytes, dest_dir: Path) -> dict:
             return _error("corrupt_tar", raw_size, f"{type(exc).__name__}: {exc}")
         # not a tar: fall through to the single-file case
 
-    # ---- single plain/gz TeX file -------------------------------------------------
-    if looks_like_latex_or_bib(payload):
+    # ---- single plain/gz TeX or BibTeX file ---------------------------------------
+    plain_kind = classify_plain_source(payload)
+    if plain_kind is not None:
         if len(payload) > MAX_MEMBER_BYTES:
             return _result("no_tex_source", "single_tex_oversize", raw_size, len(payload), 0, 0, 0, [])
-        _write_member(dest_dir, Path("main.tex"), payload)
-        # `main.tex` is a name we invented (the single file had none): record it for the parser.
-        return _result("success", "single_tex", raw_size, len(payload), len(payload), 1, 0, ["main.tex"],
-                       renamed={"(single-file source)": "main.tex"})
+        fname = "main.tex" if plain_kind == "tex" else "refs.bib"
+        _write_member(dest_dir, Path(fname), payload)
+        # `main.tex` / `refs.bib` is a name we invented (the single file had none): record it for the parser.
+        return _result("success", f"single_{plain_kind}", raw_size, len(payload), len(payload),
+                       1 if plain_kind == "tex" else 0, 1 if plain_kind == "bib" else 0, [fname],
+                       renamed={"(single-file source)": fname})
 
     return _result("no_tex_source", "pdf_or_other", raw_size, len(payload), 0, 0, 0, [])

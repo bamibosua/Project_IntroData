@@ -166,18 +166,7 @@ def _engine(source, *, mode: str, total: int, output_dir, workers: int, delay: f
         completed += 1
         if res is not None:
             n = res["ver_count"]
-            if status == "no_tex_source":
-                types = {v.get("source_type") for v in res["record"].get("version_downloads", {}).values()}
-                if types == {"pdf_only"}:
-                    detail = "PDF-only"
-                elif types == {"not_found_404"}:
-                    detail = "source not found (HTTP 404)"
-                elif types <= {"tar_without_tex", "zip_without_tex"}:
-                    detail = "archive without TeX"
-                else:
-                    detail = "no TeX source"
-                logger.info("[DOWNLOAD] %s (%dv): %s", aid, n, detail)
-            elif mode == "corpus":
+            if mode == "corpus":
                 print(f"[{res['idx']}/{res['total']}] {aid} ({n}v) -> {status} | {res['elapsed']:.2f}s", flush=True)
             elif status == "error":
                 logger.warning("[DOWNLOAD] %s: incomplete; see download_status.json.", aid)

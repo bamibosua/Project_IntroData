@@ -43,19 +43,25 @@ def format_duration(seconds: float) -> str:
 
 
 _FORBIDDEN_CHARS = '<>:"|?*'
+_BINARY_PREFIXES = (b"%PDF-", b"%!PS", b"PK\x03\x04", b"\x89PNG", b"\xff\xd8\xff", b"GIF8")
 _TEX_MARKERS = (
     b"\\documentclass", b"\\documentstyle", b"\\begin{", b"\\input", b"\\include", b"\\section",
     b"\\usepackage", b"\\newcommand", b"\\def", b"\\title", b"\\bye", b"\\chapter",
+)
+_BIB_MARKERS = (
     b"@article", b"@inproceedings", b"@book", b"@misc", b"@incollection", b"@techreport",
     b"@phdthesis", b"@proceedings", b"@inbook", b"@string", b"@unpublished",
 )
 
 
 def sanitize_relative_path(raw_name: str) -> Path | None:
-    """Sanitize an archive member path: no traversal; forbidden characters become '_' (not dropped)."""
+    """Sanitize an archive member path: no traversal or macOS resource forks; forbidden chars become '_'."""
     cleaned = raw_name.replace("\\", "/").lstrip("/")
+    raw_parts = PurePosixPath(cleaned).parts
+    if not raw_parts or raw_parts[-1].startswith("._") or any(p.lower() == "__macosx" for p in raw_parts):
+        return None
     parts = []
-    for p in PurePosixPath(cleaned).parts:
+    for p in raw_parts:
         if p in ("", ".", ".."):
             continue
         p = "".join("_" if (c in _FORBIDDEN_CHARS or ord(c) < 32) else c for c in p).rstrip(" .")
@@ -64,14 +70,30 @@ def sanitize_relative_path(raw_name: str) -> Path | None:
     return Path(*parts) if parts else None
 
 
+def is_usable_text_member(data: bytes) -> bool:
+    """True for non-empty text members (rejects empty/whitespace-only files, null bytes, and common binary headers)."""
+    if not data or not data.strip() or data.startswith(_BINARY_PREFIXES):
+        return False
+    return b"\x00" not in data[:8192]
+
+
+def classify_plain_source(data: bytes) -> str | None:
+    """Classify a single plain payload as 'tex', 'bib', or None (rejects PostScript, HTML, binary)."""
+    if not is_usable_text_member(data):
+        return None
+    head = data[:65536]
+    if head.lstrip().lower().startswith((b"<!doctype html", b"<html", b"<?xml")):
+        return None
+    if any(m in head for m in _TEX_MARKERS):
+        return "tex"
+    if any(m in head for m in _BIB_MARKERS):
+        return "bib"
+    return None
+
+
 def looks_like_latex_or_bib(data: bytes) -> bool:
     """True only when the plain payload carries real TeX/BibTeX markers (rejects PostScript, HTML, binary)."""
-    if not data or data.startswith((b"%PDF-", b"%!PS", b"PK\x03\x04", b"\x89PNG", b"\xff\xd8\xff", b"GIF8")):
-        return False
-    head = data[:65536]
-    if b"\x00" in head[:8192] or head.lstrip().lower().startswith((b"<!doctype html", b"<html", b"<?xml")):
-        return False
-    return any(m in head for m in _TEX_MARKERS)
+    return classify_plain_source(data) is not None
 
 
 def looks_like_html(data: bytes) -> bool:

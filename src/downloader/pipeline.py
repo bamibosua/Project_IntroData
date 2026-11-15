@@ -4,12 +4,15 @@ from __future__ import annotations
 
 from concurrent.futures import Future
 from concurrent.futures import TimeoutError as FuturesTimeoutError
+import logging
 from pathlib import Path
 import time
 
 from .client import FastArxivClient
 from .config import MAX_VERSION_ATTEMPTS, PERMANENT_ERROR_TYPES, SCHEMA_VERSION
 from .extractor import extract_tex_and_bib_from_bytes
+
+logger = logging.getLogger(__name__)
 
 OK_STATUSES = ("success", "no_tex_source")
 
@@ -121,6 +124,15 @@ def extract_paper_to_existing_folders(
             del raw_b
         info["version_id"] = full_vid
         v_status[ver_tag] = info
+        if info.get("status") == "no_tex_source" and info.get("source_type") != "not_found_404":
+            st = info.get("source_type")
+            if st == "pdf_only":
+                v_detail = "PDF-only"
+            elif st in ("tar_without_tex", "zip_without_tex"):
+                v_detail = "archive without TeX"
+            else:
+                v_detail = "no TeX source"
+            logger.info("[DOWNLOAD] %s: %s", full_vid, v_detail)
 
     elapsed = round(fetch_total, 4)
     record = {
