@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import re
 from pathlib import Path, PurePosixPath
 
 
@@ -20,6 +21,19 @@ def peak_memory_mb() -> float:
         return round(getattr(info, "peak_wset", info.rss) / (1024 * 1024), 2)  # peak_wset: Windows only
     except Exception:
         return 0.0
+
+
+_BIBITEM_RE = re.compile(rb"^(?:[^%\n\\]|\\.)*\\bibitem", re.M)
+
+
+def has_inline_bibitem(data: bytes) -> bool:
+    """True when the TeX source has a real \\bibitem, ignoring ones inside % comments."""
+    return bool(_BIBITEM_RE.search(data))
+
+
+def files_with_suffix(root: Path, suffix: str) -> list[Path]:
+    """Files under `root` with this suffix, case-insensitively (a `main.TEX` counts as .tex)."""
+    return [p for p in root.rglob("*") if p.is_file() and p.suffix.lower() == suffix]
 
 
 def format_bytes(b: int | float) -> str:

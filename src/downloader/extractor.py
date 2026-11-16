@@ -19,7 +19,7 @@ import zlib
 from .client import _NOT_FOUND_PAYLOAD
 from .config import (ALLOWED_EXTENSIONS, CONDITIONAL_EXTENSIONS, MAX_MEMBER_BYTES, MAX_TAR_TOTAL_BYTES,
                      MAX_UNCOMPRESSED_BYTES)
-from .utils import classify_plain_source, is_usable_text_member, sanitize_relative_path
+from .utils import classify_plain_source, has_inline_bibitem, is_usable_text_member, sanitize_relative_path
 
 
 class ExtractWriteError(Exception):
@@ -101,6 +101,7 @@ def _collect(entries, dest_dir: Path, raw_size: int, uncompressed: "int | Callab
     written: list[Path] = []
     seen: set[str] = set()
     skipped: list[str] = []
+    oversize_bbl: list[str] = []  # reported as skipped only if the .bbl turns out to be needed
     renamed: dict[str, str] = {}
     files: list[str] = []
     pending_bbl: list[tuple[str, Path, bytes]] = []
@@ -117,7 +118,7 @@ def _collect(entries, dest_dir: Path, raw_size: int, uncompressed: "int | Callab
             if size <= 0:
                 continue
             if size > MAX_MEMBER_BYTES or kept + size > MAX_UNCOMPRESSED_BYTES:
-                skipped.append(rel.as_posix())
+                (oversize_bbl if suffix in CONDITIONAL_EXTENSIONS else skipped).append(rel.as_posix())
                 continue
             content = read()
             if content is None or not is_usable_text_member(content):
@@ -133,12 +134,13 @@ def _collect(entries, dest_dir: Path, raw_size: int, uncompressed: "int | Callab
             kept += len(content)
             if suffix == ".tex":
                 tex += 1
-                has_bibitem = has_bibitem or b"\\bibitem" in content
+                has_bibitem = has_bibitem or has_inline_bibitem(content)  # ignores \bibitem inside % comments
             else:
                 bib += 1
             files.append(final.as_posix())
         # .bbl is the only bibliography when there is neither a .bib nor an inline \bibitem.
         if tex > 0 and bib == 0 and not has_bibitem:
+            skipped.extend(oversize_bbl)  # a missing .bbl matters only now
             for name, rel, content in pending_bbl:
                 final = _unique_rel(seen, rel)
                 original = PurePosixPath(name.replace("\\", "/").lstrip("/")).as_posix()  # "./a.tex" -> "a.tex" (not a rename)

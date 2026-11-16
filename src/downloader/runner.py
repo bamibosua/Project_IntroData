@@ -23,7 +23,7 @@ from .config import (CHECKPOINT_EVERY, DEFAULT_CONNECTIONS, DEFAULT_DELAY, DEFAU
 from .pipeline import (OK_STATUSES, extract_paper_to_existing_folders, fetch_single_version_task, is_retryable,
                        merge_version_records, refresh_record)
 from .stats import compute_storage_metrics, print_report, write_summary
-from .utils import peak_memory_mb
+from .utils import files_with_suffix, has_inline_bibitem, peak_memory_mb
 
 logger = logging.getLogger(__name__)
 
@@ -64,10 +64,10 @@ def _require_prepared_folder(path: Path) -> None:
 def _may_need_bbl(version_dir: Path) -> bool:
     """Disk heuristic for records written before .bbl support: TeX present, but no .bib, no .bbl and no
     \\bibitem anywhere, i.e. the bibliography may have been left behind in the archive."""
-    tex = list(version_dir.rglob("*.tex"))
-    if not tex or any(version_dir.rglob("*.bib")) or any(version_dir.rglob("*.bbl")):
+    tex = files_with_suffix(version_dir, ".tex")
+    if not tex or files_with_suffix(version_dir, ".bib") or files_with_suffix(version_dir, ".bbl"):
         return False
-    return not any(b"\\bibitem" in p.read_bytes() for p in tex)
+    return not any(has_inline_bibitem(p.read_bytes()) for p in tex)
 
 
 def _todo_versions(prev: dict | None, versions: list[str], paper_dir: Path | None = None) -> list[str]:
