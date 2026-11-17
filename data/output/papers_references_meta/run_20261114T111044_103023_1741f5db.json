@@ -1,0 +1,74 @@
+{
+  "scope": "references_module",
+  "started_at": "2026-11-14T10:15:04+00:00",
+  "finished_at": "2026-11-14T11:10:44+00:00",
+  "input_path": "/content/drive/MyDrive/HCMUS/Y3Se1/ProjectNMKHDL/data/input/papers_index.json",
+  "output_path": "/content/drive/MyDrive/HCMUS/Y3Se1/ProjectNMKHDL/data/output/papers",
+  "config": {
+    "cycle_sec": 1,
+    "wait_429_sec": 5,
+    "timeout_sec": 120,
+    "ram_sample_interval_sec": 0.5,
+    "batch_size": 200,
+    "truncation_min_refs": 500,
+    "max_other_retries": 3,
+    "max_429_retries": 8
+  },
+  "status": "completed",
+  "exit_code": 0,
+  "reason": null,
+  "papers": {
+    "selected": 20000,
+    "attempted": 20000,
+    "newly_completed": 20000,
+    "ok": 18173,
+    "empty_refs": 1754,
+    "not_in_s2": 12,
+    "count_mismatch": 61,
+    "errors": 0,
+    "saved": 20000,
+    "completed": 19939,
+    "pending": 0
+  },
+  "selected_versions": 28005,
+  "references": {
+    "total": 704090,
+    "with_arxiv_id": 342564
+  },
+  "requests": {
+    "requests": 340,
+    "request_sec": 903.4396279869904,
+    "bytes": 510324171,
+    "retries_429": 177,
+    "sleep_429_sec": 885.2999019870022,
+    "retries_other": 0,
+    "backoff_sec": 0.0,
+    "wait_sec": 2.0826088220053407
+  },
+  "batches_started": 100,
+  "batch_splits": 0,
+  "time": {
+    "total_wall_sec": 3339.838,
+    "avg_wall_sec_per_attempted_publication": 0.167,
+    "note": "includes crawl/waits; excludes final telemetry write; not CPU time"
+  },
+  "memory": {
+    "scope": "current_process_rss",
+    "sampled_peak_rss_mb": 1786.663,
+    "sample_mean_rss_mb": 1273.445,
+    "n_samples": 6306,
+    "sample_interval_sec": 0.5,
+    "status": "ok",
+    "error": null
+  },
+  "disk": {
+    "selected_output_bytes_before": 0,
+    "selected_output_bytes_after": 493601488,
+    "committed_reference_payload_bytes": 493601488,
+    "net_reference_output_change_bytes": 493601488,
+    "peak_disk_bytes": null,
+    "peak_disk_reason": "not_sampled"
+  },
+  "errors": [],
+  "warnings": []
+}

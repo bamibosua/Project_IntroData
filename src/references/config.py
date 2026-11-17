@@ -1,51 +1,54 @@
+"""References crawler configuration.
+
+Timing and batch settings can be overridden with --cycle, --wait-429, and --batch-size.
 """
-Cấu hình của crawler references. Muốn chỉnh THỜI GIAN thì sửa ngay phần đầu file này
-(hoặc ghi đè tạm thời bằng tham số dòng lệnh --cycle / --wait-429 / --batch-size).
-"""
+
 import os
 
 # =====================================================================
-#  THỜI GIAN  <-- chỉnh ở đây
+# Request pacing
 # =====================================================================
-CYCLE_SECONDS = 1        # khoảng cách tối thiểu giữa hai request liên tiếp (tính từ lúc GỬI request trước)
-WAIT_429_SECONDS = 5     # bị 429 thì chờ bấy nhiêu giây rồi gửi lại đúng request đó
+CYCLE_SECONDS = 1  # Minimum interval between request starts.
+WAIT_429_SECONDS = (
+    5  # Minimum cooldown before retrying the same request after HTTP 429.
+)
 
 # =====================================================================
 #  BATCH
 # =====================================================================
-BATCH_SIZE = 200         # số bài mỗi batch (endpoint cho phép tối đa 500)
+BATCH_SIZE = 200  # Publications per batch; the endpoint accepts up to 500.
 
 # =====================================================================
-#  ĐỘ BỀN
+# Retry limits
 # =====================================================================
-MAX_429_RETRIES = 8      # số lần thử lại tối đa khi gặp 429 (cho mỗi request)
-MAX_OTHER_RETRIES = 3    # số lần thử lại tối đa khi lỗi mạng / HTTP 5xx
-REQUEST_TIMEOUT = 120    # giây
+MAX_429_RETRIES = 8  # Maximum HTTP 429 retries per request.
+MAX_OTHER_RETRIES = 3  # Maximum retries for network errors or HTTP 5xx.
+REQUEST_TIMEOUT = 120  # Seconds.
 
 # =====================================================================
-#  CHỐT CHẶN CẮT CỤT
-#  Bài có từ ngần này reference trở lên sẽ được đối chiếu với endpoint /references (có phân trang).
-#  500 là con số chọn để an toàn, không phải giới hạn đã biết của Semantic Scholar.
+# Completeness verification
+# Lists at or above this size are checked against the paged references endpoint.
+# This is a conservative trigger, not a known Semantic Scholar limit.
 # =====================================================================
 TRUNCATION_CHECK_MIN_REFS = 500
 
-#  Tên cũ giữ để tránh làm hỏng import. Runner luôn kiểm tra count khớp ở cả hai chiều;
-#  đặt False không cho phép chốt snapshot còn mismatch thành hoàn tất.
+# Keep the compatibility name for existing imports. Count checks always apply;
+# setting this to False does not make a mismatched snapshot complete.
 VERIFY_ON_COUNT_MISMATCH = True
 
 # =====================================================================
-#  ĐO ĐẠC
+# Measurement
 # =====================================================================
-RAM_SAMPLE_INTERVAL = 0.5   # giây giữa hai lần lấy mẫu RAM
+RAM_SAMPLE_INTERVAL = 0.5  # Seconds between RAM samples.
 
 # =====================================================================
-#  API KEY (đọc từ .env cạnh file này, hoặc từ biến môi trường)
+# API key names, loaded from the environment or a local .env file.
 # =====================================================================
 KEY_NAMES = ("S2_API_KEY", "SEMANTIC_SCHOLAR_API_KEY", "SEMANTIC_SCHOLAR_KEY")
 
 
 def load_env():
-    """Đọc .env (cạnh file này hoặc ở thư mục đang chạy) vào os.environ, không ghi đè biến đã có."""
+    """Load local .env values without replacing existing environment variables."""
     here = os.path.dirname(os.path.abspath(__file__))
     for path in (os.path.join(here, ".env"), os.path.join(os.getcwd(), ".env")):
         if not os.path.isfile(path):
