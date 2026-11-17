@@ -1,4 +1,5 @@
 """Cooldown deadline shared by the arXiv metadata and source clients."""
+
 import threading
 import time
 
@@ -22,4 +23,4 @@ class SharedCooldown:
             if stop_event is None:
                 self.sleep(min(60.0, remaining))
             elif stop_event.wait(min(60.0, remaining)):
-                raise InterruptedError('Pipeline stopped.')
+                raise InterruptedError("Pipeline stopped.")

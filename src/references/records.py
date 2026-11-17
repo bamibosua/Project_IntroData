@@ -1,13 +1,9 @@
-"""
-Đọc và validate papers_index.json; normalize + validate response S2; dựng references.json record.
+"""Validate papers_index.json, normalize S2 responses, and build reference records.
 
-Schema papers_index.json:
-  {
-    "2608.09608": ["v1", "v2"],
-    "2608.09609": ["v1"]
-  }
-Key là arXiv base ID; value là list version string dạng v<N> (N >= 1, không có số 0 đầu).
-"""
+The index maps each base arXiv ID to version strings, for example:
+    {"2608.09608": ["v1", "v2"]}
+Version numbers are positive integers without leading zeros."""
+
 from __future__ import annotations
 
 import json
@@ -17,53 +13,45 @@ import os
 # ---------------------------------------------------------------------------
 # Regex
 # ---------------------------------------------------------------------------
-# Base arXiv ID: YYMM.NNNNN hoặc dạng cũ hep-th/YYMMNNN v.v.
+# Base arXiv IDs include modern IDs and old archive/YYMMNNN IDs.
 _BASE_ID_RE = re.compile(
     r"(?:[a-z][a-z0-9.\-]*/[0-9]{7}|[0-9]{4}\.[0-9]{4,5})",
     re.IGNORECASE,
 )
-# Version string hợp lệ: v1, v2, v10, ... (không có số 0 đầu, không v0)
+# Versions start at v1 and have no leading zeros.
 _VERSION_RE = re.compile(r"^v([1-9]\d*)$")
 
 
 # ---------------------------------------------------------------------------
-# Lỗi input / schema
+# Input and response errors
 # ---------------------------------------------------------------------------
 class InputError(ValueError):
-    """Input file thiếu, JSON sai hoặc schema không hợp lệ. Caller nên exit 2."""
+    """Missing input, invalid JSON, or invalid input schema; callers use exit code 2."""
 
 
 class ResponseError(ValueError):
-    """Response HTTP từ S2 sai schema / kiểu dữ liệu. Caller nên retry hoặc ghi lỗi."""
+    """Invalid S2 response fields; callers retry or record the publication error."""
 
 
 # ---------------------------------------------------------------------------
-# Đọc và validate index
+# Input index validation
 # ---------------------------------------------------------------------------
 def load_index(path: str) -> list[dict]:
-    """Đọc papers_index.json.
+    """Load and validate a publication-to-versions index.
 
-    Trả về list[dict] dạng:
-        {"arxiv_id": "2608.09608", "versions": ["2608.09608v1", "2608.09608v2"]}
-    Giữ thứ tự key; version trùng bị loại và sắp theo số; version list rỗng được giữ.
-
-    Raise InputError với thông báo rõ nếu:
-      - File không đọc được / không tồn tại
-      - Không phải JSON hợp lệ
-      - Root không phải object
-      - Key không phải arXiv base ID hợp lệ
-      - Value không phải list thuần string dạng v<N>
-      - Có key trùng (json phát hiện; Python dict đã dedup nhưng kiểm tra thêm)
-    """
+    Return dictionaries containing arxiv_id and fully qualified versions. Keep
+    publication order, deduplicate and numerically sort versions, and allow empty
+    version lists. Raise InputError for unreadable input, invalid JSON, duplicate
+    keys, invalid base IDs, or invalid version lists."""
     if not os.path.isfile(path):
-        raise InputError(f"File không tồn tại: {path}")
+        raise InputError(f"File not found: {path}")
     try:
         with open(path, encoding="utf-8") as f:
             text = f.read()
     except OSError as e:
-        raise InputError(f"Không đọc được file {path}: {e}") from e
+        raise InputError(f"Cannot read file {path}: {e}") from e
 
-    # Phát hiện key trùng sớm (json.loads tự dedup nên cần hook)
+    # Detect duplicate keys before json.loads collapses them.
     seen_keys: set[str] = set()
     duplicate_keys: list[str] = []
 
@@ -79,19 +67,19 @@ def load_index(path: str) -> list[dict]:
     try:
         data = json.loads(text, object_pairs_hook=object_pairs_hook)
     except json.JSONDecodeError as e:
-        raise InputError(f"JSON không hợp lệ trong {path}: {e}") from e
+        raise InputError(f"Invalid JSON in {path}: {e}") from e
 
     if not isinstance(data, dict):
         raise InputError(
-            f"{path}: root phải là object (dict), nhận được {type(data).__name__}"
+            f"{path}: root must be an object (dict), got {type(data).__name__}"
         )
     if duplicate_keys:
         raise InputError(
-            f"{path}: key trùng lặp: {duplicate_keys[:5]}"
+            f"{path}: duplicate keys: {duplicate_keys[:5]}"
             + (" ..." if len(duplicate_keys) > 5 else "")
         )
     if not data:
-        # {} hợp lệ → không có bài, không gửi HTTP
+        # An empty index is valid and requires no HTTP calls.
         return []
 
     result = []
@@ -99,12 +87,12 @@ def load_index(path: str) -> list[dict]:
         # Validate key
         if not isinstance(raw_key, str) or not _BASE_ID_RE.fullmatch(raw_key):
             raise InputError(
-                f"{path}: key không phải arXiv base ID hợp lệ: {raw_key!r}"
+                f"{path}: invalid base arXiv ID: {raw_key!r}"
             )
         # Validate versions
         if not isinstance(raw_versions, list):
             raise InputError(
-                f"{path}: value của key {raw_key!r} phải là list, nhận được "
+                f"{path}: value for key {raw_key!r} must be a list, got "
                 f"{type(raw_versions).__name__}"
             )
         seen_v: set[int] = set()
@@ -112,173 +100,183 @@ def load_index(path: str) -> list[dict]:
         for v in raw_versions:
             if not isinstance(v, str):
                 raise InputError(
-                    f"{path}: version của {raw_key!r} phải là string, nhận được "
+                    f"{path}: version for {raw_key!r} must be a string, got "
                     f"{type(v).__name__} ({v!r})"
                 )
             m = _VERSION_RE.fullmatch(v)
             if not m:
                 raise InputError(
-                    f"{path}: version {v!r} của {raw_key!r} không hợp lệ "
-                    f"(phải dạng v1, v2, ..., không v0 hay số 0 đầu)"
+                    f"{path}: version {v!r} for {raw_key!r} is invalid "
+                    f"(expected v1, v2, ... without v0 or leading zeros)"
                 )
             n = int(m.group(1))
             if n not in seen_v:
                 seen_v.add(n)
                 sorted_versions.append(v)
-        # Sắp lại theo số
+        # Sort versions numerically.
         sorted_versions.sort(key=lambda s: int(_VERSION_RE.match(s).group(1)))
-        result.append({
-            "arxiv_id": raw_key,
-            "versions": [f"{raw_key}{v}" for v in sorted_versions],
-        })
+        result.append(
+            {
+                "arxiv_id": raw_key,
+                "versions": [f"{raw_key}{v}" for v in sorted_versions],
+            }
+        )
     return result
 
 
 def folder_name(arxiv_id: str) -> str:
-    """Giữ publication folder của pipeline cũ; ID không được thoát output root."""
+    """Keep the existing folder convention and reject IDs escaping the output root."""
     if not isinstance(arxiv_id, str) or not _BASE_ID_RE.fullmatch(arxiv_id):
-        raise InputError(f"arXiv base ID không hợp lệ: {arxiv_id!r}")
+        raise InputError(f"Invalid base arXiv ID: {arxiv_id!r}")
     return arxiv_id.replace("/", "_").replace(".", "-")
 
 
 def validate_reference(ref, context: str) -> None:
-    """Kiểm tra các trường normalize thực sự dùng, giữ optional null/thiếu ID."""
+    """Validate fields used by normalization while retaining optional nulls and missing IDs."""
     if ref is None:
         return
     if not isinstance(ref, dict):
-        raise ResponseError(f"{context}: reference phải là object hoặc null")
+        raise ResponseError(f"{context}: reference must be an object or null")
     for name in ("paperId", "title", "publicationDate", "venue"):
         if ref.get(name) is not None and not isinstance(ref[name], str):
-            raise ResponseError(f"{context}.{name}: phải là string hoặc null")
+            raise ResponseError(f"{context}.{name}: must be a string or null")
     year = ref.get("year")
     if year is not None and (isinstance(year, bool) or not isinstance(year, int)):
-        raise ResponseError(f"{context}.year: phải là integer hoặc null")
+        raise ResponseError(f"{context}.year: must be an integer or null")
     ext = ref.get("externalIds")
     if ext is not None:
         if not isinstance(ext, dict):
-            raise ResponseError(f"{context}.externalIds: phải là object hoặc null")
+            raise ResponseError(f"{context}.externalIds: must be an object or null")
         for name in ("ArXiv", "DOI"):
             if ext.get(name) is not None and not isinstance(ext[name], str):
-                raise ResponseError(f"{context}.externalIds.{name}: phải là string hoặc null")
+                raise ResponseError(
+                    f"{context}.externalIds.{name}: must be a string or null"
+                )
     authors = ref.get("authors")
     if authors is not None:
         if not isinstance(authors, list):
-            raise ResponseError(f"{context}.authors: phải là list hoặc null")
+            raise ResponseError(f"{context}.authors: must be a list or null")
         for i, author in enumerate(authors):
             if author is None:
                 continue
             if not isinstance(author, dict):
-                raise ResponseError(f"{context}.authors[{i}]: phải là object hoặc null")
+                raise ResponseError(f"{context}.authors[{i}]: must be an object or null")
             if author.get("name") is not None and not isinstance(author["name"], str):
-                raise ResponseError(f"{context}.authors[{i}].name: phải là string hoặc null")
+                raise ResponseError(
+                    f"{context}.authors[{i}].name: must be a string or null"
+                )
 
 
 # ---------------------------------------------------------------------------
 # Validate response batch
 # ---------------------------------------------------------------------------
 def validate_batch_entry(entry, arxiv_id: str):
-    """Kiểm tra một entry trong phản hồi batch trước khi normalize.
+    """Validate one S2 batch entry before normalization.
 
-    entry: giá trị từ list phản hồi (có thể là None theo hợp đồng S2 lookup).
-    Raise ResponseError nếu entry không phải None / dict, hoặc thiếu / sai kiểu trường bắt buộc.
-    """
+    None is a valid missing lookup. Raise ResponseError for invalid entry types
+    or missing or malformed required fields."""
     if entry is None:
-        # Hợp lệ: S2 không tìm thấy bài
+        # A missing S2 lookup is a valid result.
         return
     if not isinstance(entry, dict):
         raise ResponseError(
-            f"{arxiv_id}: entry batch phải là object hoặc null, "
-            f"nhận được {type(entry).__name__}"
+            f"{arxiv_id}: batch entry must be an object or null, "
+            f"got {type(entry).__name__}"
         )
-    # Trường bắt buộc: references phải là list
+    # The required references field must be a list.
     if "references" not in entry:
-        raise ResponseError(
-            f"{arxiv_id}: entry batch thiếu trường 'references'"
-        )
+        raise ResponseError(f"{arxiv_id}: batch entry is missing 'references'")
     refs = entry["references"]
     if refs is None or not isinstance(refs, list):
         raise ResponseError(
-            f"{arxiv_id}: 'references' phải là list, "
-            f"nhận được {type(refs).__name__ if refs is not None else 'null'}"
+            f"{arxiv_id}: 'references' must be a list, "
+            f"got {type(refs).__name__ if refs is not None else 'null'}"
         )
-    # referenceCount: nếu có phải là int không âm, không phải bool
+    # A present referenceCount must be a nonnegative integer, not bool.
     count = entry.get("referenceCount")
     if count is not None:
         if isinstance(count, bool) or not isinstance(count, int) or count < 0:
             raise ResponseError(
-                f"{arxiv_id}: 'referenceCount' phải là số nguyên không âm, "
-                f"nhận được {count!r}"
+                f"{arxiv_id}: 'referenceCount' must be a nonnegative integer, "
+                f"got {count!r}"
             )
-    # Kiểm tra kiểu từng ref sẽ được normalize
+    # Validate fields used during reference normalization.
     for i, ref in enumerate(refs):
         validate_reference(ref, f"{arxiv_id}.references[{i}]")
 
 
 def validate_page_data(data, arxiv_id: str, offset: int, seen_offsets: set[int]):
-    """Kiểm tra một trang từ /references trước khi dùng.
+    """Validate a references page and return its next offset, or None at the end.
 
-    Raise ResponseError nếu page thiếu 'data', 'next' không hợp lệ hoặc phát hiện vòng lặp.
-    Trả về next_offset hoặc None nếu hết trang.
-    """
+    Reject missing data, invalid offsets, and pagination loops with ResponseError."""
     if not isinstance(data, dict):
         raise ResponseError(
-            f"{arxiv_id} offset={offset}: page response phải là object, "
-            f"nhận được {type(data).__name__}"
+            f"{arxiv_id} offset={offset}: page response must be an object, "
+            f"got {type(data).__name__}"
         )
     if "data" not in data:
-        raise ResponseError(
-            f"{arxiv_id} offset={offset}: page thiếu trường 'data'"
-        )
+        raise ResponseError(f"{arxiv_id} offset={offset}: page is missing 'data'")
     page_data = data["data"]
     if not isinstance(page_data, list):
         raise ResponseError(
-            f"{arxiv_id} offset={offset}: 'data' phải là list, "
-            f"nhận được {type(page_data).__name__}"
+            f"{arxiv_id} offset={offset}: 'data' must be a list, "
+            f"got {type(page_data).__name__}"
         )
     if len(page_data) == 0 and data.get("next") is not None:
         raise ResponseError(
-            f"{arxiv_id} offset={offset}: page rỗng nhưng vẫn có 'next' — "
-            f"nghi vòng lặp vô hạn"
+            f"{arxiv_id} offset={offset}: empty page still has 'next'; "
+            f"possible infinite pagination loop"
         )
     # Validate 'next'
     nxt = data.get("next")
     if nxt is not None and (isinstance(nxt, bool) or not isinstance(nxt, int)):
         raise ResponseError(
-            f"{arxiv_id} offset={offset}: 'next' phải là integer hoặc null, "
-            f"nhận được {nxt!r}"
+            f"{arxiv_id} offset={offset}: 'next' must be an integer or null, "
+            f"got {nxt!r}"
         )
     if nxt is not None and nxt <= offset:
         raise ResponseError(
-            f"{arxiv_id} offset={offset}: 'next'={nxt} không tiến lên — "
-            f"nghi vòng lặp"
+            f"{arxiv_id} offset={offset}: 'next'={nxt} does not advance; "
+            f"possible pagination loop"
         )
     if nxt is not None and nxt in seen_offsets:
         raise ResponseError(
-            f"{arxiv_id} offset={offset}: 'next'={nxt} đã từng dùng — "
-            f"vòng lặp phân trang"
+            f"{arxiv_id} offset={offset}: 'next'={nxt} was already used; "
+            f"pagination loop"
         )
-    if "offset" in data and (type(data["offset"]) is not int or data["offset"] != offset):
-        raise ResponseError(f"{arxiv_id}: offset trả về không khớp request {offset}")
+    if "offset" in data and (
+        type(data["offset"]) is not int or data["offset"] != offset
+    ):
+        raise ResponseError(f"{arxiv_id}: returned offset does not match requested offset {offset}")
     for i, item in enumerate(page_data):
         if not isinstance(item, dict) or "citedPaper" not in item:
-            raise ResponseError(f"{arxiv_id} offset={offset}: data[{i}] thiếu citedPaper/object")
-        validate_reference(item["citedPaper"], f"{arxiv_id} offset={offset}.data[{i}].citedPaper")
+            raise ResponseError(
+                f"{arxiv_id} offset={offset}: data[{i}] must be an object containing citedPaper"
+            )
+        validate_reference(
+            item["citedPaper"], f"{arxiv_id} offset={offset}.data[{i}].citedPaper"
+        )
     return nxt
 
 
 # ---------------------------------------------------------------------------
-# Kiểm tra count khớp
+# Reference-count checks
 # ---------------------------------------------------------------------------
 def count_matches(entry: dict, n_refs: int) -> bool:
-    """Trả về True nếu referenceCount hợp lệ và khớp với số reference nhận về."""
+    """Return whether a valid referenceCount matches the received list length."""
     count = entry.get("referenceCount")
-    if count is None or isinstance(count, bool) or not isinstance(count, int) or count < 0:
+    if (
+        count is None
+        or isinstance(count, bool)
+        or not isinstance(count, int)
+        or count < 0
+    ):
         return False
     return count == n_refs
 
 
 def count_is_valid(entry: dict) -> bool | None:
-    """Trả về True nếu referenceCount hợp lệ (int >= 0, không bool), None nếu thiếu."""
+    """Return whether referenceCount is a nonnegative integer; return None if missing."""
     count = entry.get("referenceCount")
     if count is None:
         return None
@@ -286,7 +284,7 @@ def count_is_valid(entry: dict) -> bool | None:
 
 
 # ---------------------------------------------------------------------------
-# Normalize một reference
+# Reference normalization
 # ---------------------------------------------------------------------------
 _ARXIV_DOI = re.compile(r"^10\.48550/arxiv\.(.+)$", re.IGNORECASE)
 _VERSION_SUFFIX = re.compile(r"v\d+$")
@@ -297,13 +295,13 @@ def _strip_version(arxiv_id: str) -> str:
 
 
 def _extract_arxiv_id(cited: dict) -> tuple[str | None, str | None]:
-    """Ưu tiên externalIds.ArXiv; nếu thiếu tách từ DOI dạng 10.48550/arXiv.xxxx."""
+    """Prefer externalIds.ArXiv, falling back to an arXiv DOI."""
     ext = cited.get("externalIds") or {}
     if ext.get("ArXiv"):
         return _strip_version(str(ext["ArXiv"])), "externalIds"
-    m = _ARXIV_DOI.match(str(ext.get("DOI") or ""))
-    if m:
-        return _strip_version(m.group(1)), "doi"
+    match = _ARXIV_DOI.match(str(ext.get("DOI") or ""))
+    if match:
+        return _strip_version(match.group(1)), "doi"
     return None, None
 
 
@@ -316,9 +314,7 @@ def normalize_ref(cited: dict | None) -> dict:
         "arxiv_id_source": source,
         "ref_title": cited.get("title"),
         "ref_authors": [
-            a.get("name")
-            for a in (cited.get("authors") or [])
-            if a and a.get("name")
+            a.get("name") for a in (cited.get("authors") or []) if a and a.get("name")
         ],
         "ref_submission_date": cited.get("publicationDate"),
         "ref_year": cited.get("year"),
@@ -329,7 +325,7 @@ def normalize_ref(cited: dict | None) -> dict:
 
 
 # ---------------------------------------------------------------------------
-# Dựng record
+# Record construction
 # ---------------------------------------------------------------------------
 def build_record(
     publication: dict,
@@ -339,17 +335,15 @@ def build_record(
     method: str = "count_match",
     fetched_at: str | None = None,
 ) -> dict:
-    """Dựng references.json; count mismatch chỉ được giữ sau khi lấy hết trang.
+    """Build references.json after count verification or complete pagination.
 
-    publication: {"arxiv_id": "2608.09608", "versions": ["2608.09608v1", ...]}
-    entry: S2 entry đã validate, hoặc None nếu not_in_s2.
-    raw_refs: danh sách citedPaper nếu dùng phân trang (override entry["references"]).
-    method: count_match, paged_count_match, paged_count_mismatch hoặc not_found.
-    fetched_at: ISO timestamp của lúc fetch.
-    """
+    publication contains the base ID and qualified versions. entry is a validated
+    S2 entry or None for not_in_s2. raw_refs overrides the batch references after
+    pagination. method records count_match, paged_count_match,
+    paged_count_mismatch, or not_found. fetched_at is an ISO timestamp."""
     arxiv_id = publication["arxiv_id"]
     if entry is None:
-        # S2 không tìm thấy bài — đã xác minh là not_in_s2
+        # Save a completed not_in_s2 lookup record.
         return {
             "arxiv_id": arxiv_id,
             "s2_paper_id": None,
@@ -369,11 +363,11 @@ def build_record(
     complete = count_matches(entry, len(refs_raw))
     mismatch = method == "paged_count_mismatch"
     if mismatch and (raw_refs is None or count_is_valid(entry) is not True or complete):
-        raise ResponseError(f"{arxiv_id}: count mismatch record không hợp lệ")
+        raise ResponseError(f"{arxiv_id}: invalid count mismatch record")
     if not complete and not mismatch:
-        raise ResponseError(f"{arxiv_id}: chưa xác minh đủ references để dựng record")
+        raise ResponseError(f"{arxiv_id}: references are not fully verified; cannot build record")
     if method not in ("count_match", "paged_count_match", "paged_count_mismatch"):
-        raise ResponseError(f"{arxiv_id}: verification method không hợp lệ: {method}")
+        raise ResponseError(f"{arxiv_id}: invalid verification method: {method}")
     refs = [normalize_ref(c) for c in refs_raw]
     status = "count_mismatch" if mismatch else ("ok" if refs else "empty_refs")
     return {
@@ -392,13 +386,15 @@ def build_record(
 
 
 # ---------------------------------------------------------------------------
-# Validate record đã lưu (thống kê và bảo vệ snapshot cũ)
+# Saved-record validation for summaries and snapshot protection
 # ---------------------------------------------------------------------------
-def is_valid_record(rec: object, expected_id: str | None = None, *, allow_legacy: bool = False) -> bool:
-    """Kiểm tra record lưu được, bao gồm record có cảnh báo count mismatch.
+def is_valid_record(
+    rec: object, expected_id: str | None = None, *, allow_legacy: bool = False
+) -> bool:
+    """Validate a saved record, including explicitly warned count mismatches.
 
-    Bản cũ không có verification chỉ hợp lệ khi đủ schema/count và không có cờ chưa xác minh.
-    """
+    Legacy records without verification require consistent schema and counts
+    and must not carry an unresolved verification flag."""
     if not isinstance(rec, dict):
         return False
     aid = rec.get("arxiv_id")
@@ -409,7 +405,9 @@ def is_valid_record(rec: object, expected_id: str | None = None, *, allow_legacy
     for name in ("s2_paper_id", "fetched_at"):
         if rec.get(name) is not None and not isinstance(rec[name], str):
             return False
-    if type(rec.get("refresh_pending", False)) is not bool or rec.get("refresh_pending"):
+    if type(rec.get("refresh_pending", False)) is not bool or rec.get(
+        "refresh_pending"
+    ):
         return False
     if rec.get("status") not in ("ok", "empty_refs", "not_in_s2", "count_mismatch"):
         return False
@@ -422,11 +420,20 @@ def is_valid_record(rec: object, expected_id: str | None = None, *, allow_legacy
     for ref in refs:
         if not isinstance(ref, dict):
             return False
-        for key in ("ref_arxiv_id", "ref_s2_id", "ref_title", "ref_submission_date", "ref_venue", "arxiv_id_source"):
+        for key in (
+            "ref_arxiv_id",
+            "ref_s2_id",
+            "ref_title",
+            "ref_submission_date",
+            "ref_venue",
+            "arxiv_id_source",
+        ):
             if ref.get(key) is not None and not isinstance(ref[key], str):
                 return False
         authors = ref.get("ref_authors")
-        if not isinstance(authors, list) or any(not isinstance(a, str) for a in authors):
+        if not isinstance(authors, list) or any(
+            not isinstance(a, str) for a in authors
+        ):
             return False
         ext = ref.get("ref_external_ids")
         if ext is not None and not isinstance(ext, dict):
@@ -442,16 +449,23 @@ def is_valid_record(rec: object, expected_id: str | None = None, *, allow_legacy
             return False
     versions = rec.get("applies_to_versions")
     if not isinstance(versions, list) or any(
-        not isinstance(v, str) or not v.startswith(aid) or not _VERSION_RE.fullmatch(v[len(aid):])
+        not isinstance(v, str)
+        or not v.startswith(aid)
+        or not _VERSION_RE.fullmatch(v[len(aid) :])
         for v in versions
     ):
         return False
     v = rec.get("verification")
     if rec["status"] == "count_mismatch":
-        return (isinstance(v, dict) and v.get("complete") is False
-                and v.get("method") == "paged_count_mismatch"
-                and count_is_valid({"referenceCount": rec.get("s2_reference_count")}) is True
-                and rec["s2_reference_count"] != n and not rec.get("truncation_unverified"))
+        return (
+            isinstance(v, dict)
+            and v.get("complete") is False
+            and v.get("method") == "paged_count_mismatch"
+            and count_is_valid({"referenceCount": rec.get("s2_reference_count")})
+            is True
+            and rec["s2_reference_count"] != n
+            and not rec.get("truncation_unverified")
+        )
     if v is None:
         if not allow_legacy or rec.get("truncation_unverified"):
             return False
@@ -460,8 +474,13 @@ def is_valid_record(rec: object, expected_id: str | None = None, *, allow_legacy
     elif not isinstance(v, dict) or v.get("complete") is not True:
         return False
     if rec["status"] == "not_in_s2":
-        return (n == 0 and rec.get("s2_reference_count") is None and rec.get("s2_paper_id") is None
-                and isinstance(v, dict) and v.get("method") == "not_found")
+        return (
+            n == 0
+            and rec.get("s2_reference_count") is None
+            and rec.get("s2_paper_id") is None
+            and isinstance(v, dict)
+            and v.get("method") == "not_found"
+        )
     if rec["status"] != ("ok" if n else "empty_refs"):
         return False
     if not count_matches({"referenceCount": rec.get("s2_reference_count")}, n):
