@@ -83,6 +83,11 @@ CITATION_RE = re.compile(
     r'\\(?:[Cc]ite[A-Za-z]*|parencite|textcite|autocite|footcite)\*?(?![A-Za-z@])')
 INLINE_TEXT_ARITY = {**dict.fromkeys(STYLE_WRAPPERS, 1), 'href': 2, 'url': 1,
                      'path': 1, 'footnote': 1, 'textcolor': 2}
+ROOT_METADATA_OPTIONS = {
+    'title': 1, 'author': 1, 'date': 0, 'thanks': 0, 'address': 1,
+    'affiliation': 1, 'institute': 0, 'email': 1,
+    'documentclass': 1, 'usepackage': 1, 'RequirePackage': 1,
+}
 
 
 
@@ -428,7 +433,7 @@ def strip_comments(tex: str) -> str:
 
 def math_token(text: str, i: int) -> tuple[int, str, str] | None:
     """Return (end position, math form, raw body), never across literal verbatim."""
-    if i >= len(text) or text[i] not in "\\$":
+    if i >= len(text) or text[i] not in "\\$" or escaped(text, i):
         return None
     m = ENV_RE.match(text, i)
     if m and m.group(1) == "begin" and m.group(2) in MATH_ENVS:
@@ -872,6 +877,10 @@ class _Builder:
         while i < len(text):
             if (run := PROSE_RUN_RE.match(text, i)) is not None:
                 chunks.append(run.group()); i = run.end(); continue
+            # Consume a line break as one token, never scan its second slash
+            # as the start of an environment or another control word.
+            if text.startswith('\\\\', i):
+                chunks.append(text[i:i+2]); i += 2; continue
             opaque = ENV_RE.match(text, i)
             if opaque and opaque.group(1) == 'begin' and opaque.group(2) in OPAQUE_ENVS:
                 ending = find_env_end(text, i, opaque.group(2))
@@ -940,11 +949,14 @@ class _Builder:
             if m and m.group(1) == 'end' and m.group(2).rstrip('*') in PROSE_ENVS:
                 flush(); i = m.end(); continue
             cmd = CMD_RE.match(text, i)
-            if cmd and parent == self.root and cmd.group(1) in {
-                    'title', 'author', 'date', 'thanks', 'address', 'affiliation',
-                    'institute', 'email', 'documentclass', 'usepackage', 'RequirePackage'}:
-                i = macro_end(text, i)
-                continue
+            if cmd and parent == self.root and cmd.group(1) in ROOT_METADATA_OPTIONS:
+                # Metadata has one required argument. Extra braced groups
+                # belong to following prose and must remain in the input.
+                end = command_args_end(text, cmd.end(),
+                                       optional=ROOT_METADATA_OPTIONS[cmd.group(1)], required=1)
+                if end is not None:
+                    i = end
+                    continue
             if cmd and cmd.group(1) == 'includegraphics':
                 # graphicx has one optional group; graphics also accepts two
                 # for the legacy bounding-box syntax. Both take one filename.
