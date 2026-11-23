@@ -4,6 +4,7 @@
 Keep this script alongside the other scripts in src/entry_discovery/.
 From the repository root: python src/entry_discovery/run_entry_discovery.py
 From another directory, use the absolute path to this script.
+Edit discovery_config.json to adjust parameters without command-line flags.
 
 Stages:
   1. prepare_group.py -> data/input/{group_ids.txt, id_ownership.csv, group_summary.json}
@@ -30,6 +31,7 @@ INPUT = ROOT / "data" / "input"
 DISCOVERY = ROOT / "data" / "discovery"
 OUTPUT_PAPERS = ROOT / "data" / "output" / "paper"
 INDEX = INPUT / "papers_index.json"
+SETTINGS = ROOT / "discovery_config.json"
 
 
 def read_json(path: Path):
@@ -68,7 +70,8 @@ def select_batch_size(requested: int | None) -> int:
         if requested is not None and requested != existing:
             raise RuntimeError(
                 f"Existing checkpoint uses batch size {existing}, not {requested}. "
-                "Rerun without --batch-size, or use a fresh discovery folder; "
+                "Set batch_size to null in discovery_config.json and omit --batch-size, "
+                "or use a fresh discovery folder; "
                 "do not mix incompatible checkpoint batches."
             )
         print(f"[INFO] Resuming existing metadata checkpoints with batch size {existing}.", flush=True)
@@ -126,7 +129,7 @@ def verify_discovery(ids_file: Path) -> tuple[int, int]:
     return expected_count, versions_total
 
 
-def main() -> int:
+def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="One-command Entry Discovery pipeline")
     parser.add_argument("--batch-size", type=int, default=None,
                         help="Metadata batch size (default 50, auto-detect existing checkpoint)")
@@ -143,7 +146,36 @@ def main() -> int:
     parser.add_argument("--pass-number", type=int, choices=(1, 2), default=1)
     parser.add_argument("--overwrite-metadata", action="store_true",
                         help="Allow updating existing metadata.json; never changes source or references")
-    args = parser.parse_args()
+    # File values replace defaults; explicit terminal flags still take priority.
+    arguments = sys.argv[1:] if argv is None else argv
+    if "--help" not in arguments and "-h" not in arguments:
+        try:
+            settings = read_json(SETTINGS)
+            if not isinstance(settings, dict):
+                raise RuntimeError("Settings must be a JSON object")
+            actions = {action.dest: action for action in parser._actions
+                       if action.dest != "help"}
+            unknown = settings.keys() - actions.keys()
+            if unknown:
+                raise RuntimeError(f"Unknown settings: {', '.join(sorted(unknown))}")
+            for key, value in settings.items():
+                action = actions[key]
+                if key == "batch_size" and value is None:
+                    continue
+                if action.type is int:
+                    valid = type(value) is int
+                elif action.type is float:
+                    valid = type(value) in (int, float)
+                else:
+                    valid = type(value) is bool
+                if not valid:
+                    raise RuntimeError(f"Invalid type for setting {key}: {value!r}")
+                if action.choices is not None and value not in action.choices:
+                    raise RuntimeError(f"Invalid setting {key}: choose from {action.choices}")
+            parser.set_defaults(**settings)
+        except RuntimeError as exc:
+            parser.error(f"{SETTINGS}: {exc}")
+    args = parser.parse_args(arguments)
     if args.batch_size is not None and not 1 <= args.batch_size <= 50:
         parser.error("--batch-size must be between 1 and 50")
     if not 1 <= args.revision_batch_size <= 50:
@@ -156,6 +188,11 @@ def main() -> int:
         parser.error("max-cooldown/max-delay must be >= cooldown/delay")
     if args.max_consecutive_429 < 0 or args.recovery_rounds < 1:
         parser.error("max-consecutive-429 must be nonnegative and recovery-rounds positive")
+    return args
+
+
+def main() -> int:
+    args = parse_args()
 
     try:
         print("[INIT] Checking pipeline configuration...", flush=True)
@@ -163,6 +200,7 @@ def main() -> int:
         if not config.is_file():
             raise RuntimeError(f"Missing config: {config}")
         print(f"[ROOT] {ROOT}", flush=True)
+        print(f"[SETTINGS] {SETTINGS}", flush=True)
         print("[INFO] Using the current Python interpreter for all three stages.", flush=True)
 
         # 1. Build list and team ownership information.

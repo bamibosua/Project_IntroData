@@ -1,7 +1,7 @@
 """Reproducible CPU benchmark; outputs JSON suitable for report generation.
 
 Run from src: python -m cleanup_normalize.benchmark_cleanup --help
-Baseline is an unchanged copy of cleanup_leaves.py saved before editing.
+An optional baseline may be supplied for comparison with an older implementation.
 """
 from __future__ import annotations
 
@@ -59,7 +59,9 @@ def load_module(path):
 def main():
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument('--input-root', type=Path, default=Path('parsed_structure'))
-    p.add_argument('--baseline', type=Path, required=True)
+    p.add_argument('--baseline', type=Path, help='Optional older implementation for comparison')
+    p.add_argument('--require-equivalent', action='store_true',
+                   help='Fail on semantic differences (only for performance-only changes)')
     p.add_argument('--sample', type=int, default=100)
     p.add_argument('--repeats', type=int, default=3)
     p.add_argument('--report', type=Path, default=Path('cleanup_normalize/benchmark_results.json'))
@@ -67,7 +69,7 @@ def main():
     args = p.parse_args()
     if args.sample < 1 or args.repeats < 1:
         p.error('sample and repeats must be positive')
-    baseline = load_module(args.baseline)
+    baseline = load_module(args.baseline) if args.baseline else current
     all_pairs = current.discover(args.input_root)
     n = min(args.sample, len(all_pairs))
     pairs = [all_pairs[i * len(all_pairs) // n] for i in range(n)]
@@ -84,6 +86,8 @@ def main():
     eligible = []
     leaves = 0
     digest = hashlib.sha256()
+    equivalent_versions = 0
+    changed_versions = []
     for (o_path, _), (merged, outline) in zip(pairs, data):
         values = []
         for module in (baseline, current):
@@ -92,11 +96,15 @@ def main():
             except (ValueError, KeyError, TypeError, OSError) as e:
                 values.append((type(e).__name__, str(e)))
         if values[0] != values[1]:
-            raise AssertionError(f'Output mismatch: {o_path}')
-        if isinstance(values[0], dict):
+            changed_versions.append(str(o_path))
+            if args.require_equivalent:
+                raise AssertionError(f'Output mismatch: {o_path}')
+        else:
+            equivalent_versions += 1
+        if all(isinstance(value, dict) for value in values):
             eligible.append((merged, outline))
-            leaves += values[0]['total_leaves']
-            digest.update(json.dumps(values[0], sort_keys=True).encode())
+            leaves += values[1]['total_leaves']
+            digest.update(json.dumps(values[1], sort_keys=True).encode())
         else:
             errors.append({'outline': str(o_path), 'error': values[0]})
     metrics = {}
@@ -132,18 +140,22 @@ def main():
         metrics[name]['peak_python_allocated_bytes'] = peak
         worker = subprocess.run([
             sys.executable, '-m', 'cleanup_normalize.benchmark_cleanup',
-            '--input-root', str(args.input_root), '--baseline', str(args.baseline),
+            '--input-root', str(args.input_root),
+            *(['--baseline', str(args.baseline)] if args.baseline else []),
             '--sample', str(args.sample), '--memory-worker', name],
             check=True, text=True, capture_output=True)
-        metrics[name]['peak_process_rss_bytes'] = int(worker.stdout.strip())
+        metrics[name]['peak_process_rss_bytes'] = int(worker.stdout.strip().splitlines()[-1])
         for key in ('transform', 'batch'):
             metrics[name][key + '_median_seconds'] = statistics.median(metrics[name][key + '_seconds'])
-        metrics[name]['batch_seconds_per_publication'] = metrics[name]['batch_median_seconds'] / metrics[name]['publications']
+        metrics[name]['batch_seconds_per_publication'] = (metrics[name]['batch_median_seconds'] / metrics[name]['publications']
+                                                        if metrics[name]['publications'] else None)
     report = {'python': platform.python_version(), 'platform': platform.platform(),
               'processor': platform.processor(), 'corpus_versions': len(all_pairs),
               'sample_versions': n, 'sample_statuses': dict(statuses),
               'successful_or_empty': len(eligible), 'leaves': leaves,
-              'equivalent_versions': n, 'output_sha256': digest.hexdigest(),
+              'baseline_provided': args.baseline is not None,
+              'equivalent_versions': equivalent_versions, 'changed_versions': changed_versions,
+              'output_sha256': digest.hexdigest(),
               'rejected_inputs': errors, 'metrics': metrics,
               'transform_speedup': metrics['baseline']['transform_median_seconds'] / metrics['optimized']['transform_median_seconds'],
               'batch_speedup': metrics['baseline']['batch_median_seconds'] / metrics['optimized']['batch_median_seconds'],
@@ -152,6 +164,7 @@ def main():
                         'Python allocations traced separately; peak process RSS measured in fresh subprocesses.',
                         'Local CPU benchmark; final milestone benchmark requires Colab CPU.',
                         'Input corpus is unchanged; temporary output directories are removed.']}
+    args.report.parent.mkdir(parents=True, exist_ok=True)
     args.report.write_text(json.dumps(report, indent=2), encoding='utf-8')
     print(json.dumps(report, indent=2))
 
