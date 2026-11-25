@@ -1,0 +1,20 @@
+{
+  "inputs": {
+    "papers_root": "../../data/output/papers",
+    "ownership_csv": "../../data/input/id_ownership.csv",
+    "bibtex_source": "../reference_output/reference_output",
+    "fulltext_source": "../dedup_fulltext/dedup_fulltext",
+    "predictions_parquet": null,
+    "reuse_validated_fulltext_dir": "data/cleaned"
+  },
+  "output_dir": "data/final",
+  "options": {
+    "export_fulltext": true,
+    "exclude_incomplete_references": true,
+    "batch_rows": 20000,
+    "shard_rows": 200000,
+    "compression": "zstd",
+    "limit_publications": null,
+    "issue_examples_per_code": 5
+  }
+}
