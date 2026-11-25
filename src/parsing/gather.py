@@ -7,7 +7,10 @@ import re
 import time
 
 from .models import Diagnostic, GatherResult
-from .scanner import Command, DEFINITION_COMMANDS, HEADING_COMMANDS, iter_commands, scan_errors
+from .scanner import (
+    Command, DEFINITION_COMMANDS, ENV_DEFINITION_COMMANDS, HEADING_COMMANDS,
+    iter_commands, scan_errors,
+)
 
 
 _PATH_COMMANDS = {"input", "include", "includeonly", "endinput"}
@@ -40,9 +43,11 @@ def _references(body: str) -> set[str]:
     names: set[str] = set()
     for command in iter_commands(body, include_math=True):
         names.add(command.name)
-        if command.name in DEFINITION_COMMANDS:
+        if command.name in DEFINITION_COMMANDS or command.name in ENV_DEFINITION_COMMANDS:
             # A nested definition does not execute its replacement yet.
             continue
+        if command.name == "begin" and command.arg:
+            names.add(f"env:{command.arg.strip()}")
         if command.name == "__conditional__":
             names.update(re.findall(r"\\([A-Za-z@]+)", command.arg or ""))
         elif command.arg and "\\" in command.arg:
@@ -67,6 +72,8 @@ class _Gatherer:
         self.root: Path | None = None
         self.root_directory = self.base
         self.read_failures: set[Path] = set()
+        self.read_failure_details: dict[Path, tuple[str, str]] = {}
+        self.reported_read_failures: set[Path] = set()
 
     def relative(self, path: Path) -> str:
         return path.relative_to(self.base).as_posix()
@@ -83,10 +90,14 @@ class _Gatherer:
             code, message, severity, source_file, span, line, column, affects,
         ))
 
-    def read(self, path: Path) -> str | None:
+    def read(self, path: Path, *, probe: bool = False) -> str | None:
         if path in self.cache:
             return self.cache[path]
         if path in self.read_failures:
+            if not probe and path not in self.reported_read_failures:
+                code, message = self.read_failure_details[path]
+                self.diagnostic(code, message, path)
+                self.reported_read_failures.add(path)
             return None
         try:
             raw = path.read_bytes()
@@ -94,11 +105,21 @@ class _Gatherer:
             text = raw.decode("utf-8-sig").replace("\r\n", "\n").replace("\r", "\n")
         except UnicodeDecodeError:
             self.read_failures.add(path)
-            self.diagnostic("invalid_source_encoding", "Source is not valid UTF-8/UTF-8 BOM.", path)
+            self.read_failure_details[path] = (
+                "invalid_source_encoding",
+                "Source is not valid UTF-8/UTF-8 BOM.",
+            )
+            if not probe:
+                self.diagnostic("invalid_source_encoding", "Source is not valid UTF-8/UTF-8 BOM.", path)
+                self.reported_read_failures.add(path)
             return None
         except OSError as exc:
             self.read_failures.add(path)
-            self.diagnostic("source_read_error", f"Cannot read source: {exc}", path)
+            message = f"Cannot read source: {exc}"
+            self.read_failure_details[path] = ("source_read_error", message)
+            if not probe:
+                self.diagnostic("source_read_error", message, path)
+                self.reported_read_failures.add(path)
             return None
         self.cache[path] = text
         return text
@@ -178,7 +199,7 @@ class _Gatherer:
 
     def opaque_arguments(self, command: Command, path: Path) -> None:
         """Do not silently discard a file-changing command hidden in an opaque argument."""
-        if command.name in DEFINITION_COMMANDS | _PATH_COMMANDS | {"begin", "end"}:
+        if command.name in DEFINITION_COMMANDS | ENV_DEFINITION_COMMANDS | _PATH_COMMANDS | {"begin", "end"}:
             return
         refs = _references(command.arg or "") | _references(command.optional or "")
         changes_path = bool(refs & _PATH_COMMANDS)
@@ -213,10 +234,31 @@ class _Gatherer:
                 if command.defined_name:
                     self.definitions[command.defined_name] = _references(command.definition_body or "")
                 continue
+            if command.name in ENV_DEFINITION_COMMANDS:
+                if command.defined_name:
+                    self.definitions[f"env:{command.defined_name}"] = _references(command.definition_body or "")
+                continue
             if command.name == "__conditional__":
                 self.conditional(command, path)
                 continue
             self.opaque_arguments(command, path)
+            if command.name == "begin" and command.arg:
+                env_name = command.arg.strip()
+                env_key = f"env:{env_name}"
+                if env_key in self.definitions:
+                    affects_path, affects_heading = self.effect(env_key)
+                    if affects_path:
+                        self.diagnostic(
+                            "unresolved_path_macro",
+                            f"Environment \\begin{{{env_name}}} may change the compilation path; it was retained raw.",
+                            path, command.start, command.end,
+                        )
+                    if affects_heading:
+                        self.diagnostic(
+                            "unsupported_heading_macro",
+                            f"Environment \\begin{{{env_name}}} may create a heading; it was retained raw.",
+                            path, command.start, command.end,
+                        )
             if command.name in self.definitions:
                 self.macro_use(command, path)
                 # Redefined structural primitives must not be interpreted as their old meaning.
@@ -305,7 +347,7 @@ class _Gatherer:
             if not _within(path, self.base):
                 self.diagnostic("outside_version_path", f"TeX candidate resolves outside the version: {self.relative(original)}", severity="error")
                 continue
-            text = self.read(path)
+            text = self.read(path, probe=True)
             if text is None:
                 continue
             for command in iter_commands(text):
@@ -317,10 +359,12 @@ class _Gatherer:
                 if command.name == "endinput" or (command.name == "end" and command.arg == "document"):
                     break
         if not roots:
+            self._emit_unreported_read_failures(affects=True)
             self.result.status = "failed"
             self.diagnostic("missing_root", "No active documentclass root was found.", severity="error")
             return self.finish(started)
         if len(roots) != 1:
+            self._emit_unreported_read_failures(affects=True)
             self.result.status = "failed"
             self.diagnostic("ambiguous_root", "Multiple documentclass roots: " + ", ".join(self.relative(p) for p in roots), severity="error")
             return self.finish(started)
@@ -328,9 +372,18 @@ class _Gatherer:
         self.root_directory = self.root.parent
         self.result.root_file = self.relative(self.root)
         self.walk(self.root)
+        self._emit_unreported_read_failures(affects=False)
         self.result.merged_text = "".join(self.parts)
         self.result.status = "partial" if any(d.affects_completeness for d in self.result.diagnostics) else "ok"
         return self.finish(started)
+
+    def _emit_unreported_read_failures(self, *, affects: bool) -> None:
+        for failed_path, (code, message) in self.read_failure_details.items():
+            if failed_path in self.reported_read_failures:
+                continue
+            detail = message if affects else f"{message} (unused candidate outside compilation path)"
+            self.diagnostic(code, detail, failed_path, severity="warning", affects=affects)
+            self.reported_read_failures.add(failed_path)
 
     def finish(self, started: float) -> GatherResult:
         self.result.dependencies = sorted(set(self.result.dependencies))
