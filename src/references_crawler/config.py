@@ -20,11 +20,14 @@ WAIT_429_STEP_SECONDS = (
 #  BATCH
 # =====================================================================
 BATCH_SIZE = 200  # Publications per batch; the endpoint accepts up to 500.
+FALLBACK_BATCH_SIZE = 50  # Sub-batch size when a larger batch exhausts retries.
 
 # =====================================================================
 # Retry limits
 # =====================================================================
 MAX_429_RETRIES = 8  # Maximum HTTP 429 retries per request.
+FALLBACK_429_WAITS = (40, 50, 60)  # HTTP 429 retry waits for fallback 50 sub-batches.
+FINAL_RETRY_429_WAITS = (20, 40, 60)  # HTTP 429 retry waits for end-of-run deferred pass.
 MAX_OTHER_RETRIES = 3  # Maximum retries for network errors or HTTP 5xx.
 REQUEST_TIMEOUT = 120  # Seconds.
 

@@ -180,10 +180,16 @@ class S2Client:
     def close(self) -> None:
         self.session.close()
 
-    def _wait_429_delay(self, retry_number: int) -> float:
-        """Return scheduled 429 wait: wait_429 for retries 1-2, then +step each retry."""
+    def _wait_429_delay(
+        self, retry_number: int, schedule: tuple[float, ...] | None = None
+    ) -> float:
+        """Return scheduled 429 wait: custom schedule if given, else wait_429 + step."""
         if self.wait_429 <= 0:
             return 0.0
+        if schedule is not None:
+            if not schedule:
+                return 0.0
+            return float(schedule[min(retry_number, len(schedule)) - 1])
         attempt = min(retry_number, config.MAX_429_RETRIES)
         extra_steps = max(0, attempt - 2)
         return self.wait_429 + extra_steps * config.WAIT_429_STEP_SECONDS
@@ -211,9 +217,23 @@ class S2Client:
                 self.stats, field, getattr(self.stats, field) + self.clock() - started
             )
 
-    def _request(self, method, url, context="", *, validator=None, **kwargs):
+    def _request(
+        self,
+        method,
+        url,
+        context="",
+        *,
+        validator=None,
+        wait_429_schedule=None,
+        **kwargs,
+    ):
         before = self.stats.as_dict()
         retries_429 = retries_other = 0
+        max_429_retries = (
+            config.MAX_429_RETRIES
+            if wait_429_schedule is None
+            else len(wait_429_schedule)
+        )
         while True:
             if self.stop_event is not None and self.stop_event.is_set():
                 raise InterruptedError("Pipeline stopped.")
@@ -299,7 +319,7 @@ class S2Client:
             if status == 429:
                 retries_429 += 1
                 delay = max(
-                    self._wait_429_delay(retries_429),
+                    self._wait_429_delay(retries_429, wait_429_schedule),
                     parse_retry_after(
                         response.headers.get("Retry-After"), warn_id=context
                     )
@@ -308,7 +328,7 @@ class S2Client:
                 self._apply_cooldown(
                     delay, context
                 )  # Apply cooldown even when this response exhausts the retry budget.
-                if retries_429 > config.MAX_429_RETRIES:
+                if retries_429 > max_429_retries:
                     logger.warning(
                         "[REFERENCES] %s: HTTP 429; retries exhausted.", context
                     )
@@ -323,7 +343,7 @@ class S2Client:
                     context,
                     delay,
                     retries_429,
-                    config.MAX_429_RETRIES,
+                    max_429_retries,
                 )
                 continue
 
@@ -384,7 +404,7 @@ class S2Client:
             f"retry {number}: {context}",
         )
 
-    def post_batch(self, arxiv_ids):
+    def post_batch(self, arxiv_ids, *, wait_429_schedule=None):
         def validate(data):
             if not isinstance(data, list):
                 raise ResponseError("batch response must be a list")
@@ -400,6 +420,7 @@ class S2Client:
             f"{BASE}/batch",
             context=f"batch[{len(arxiv_ids)}]",
             validator=validate,
+            wait_429_schedule=wait_429_schedule,
             params={"fields": BATCH_FIELDS},
             json={"ids": [f"ARXIV:{aid}" for aid in arxiv_ids]},
         )
