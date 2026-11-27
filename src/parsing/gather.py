@@ -2,10 +2,13 @@
 from __future__ import annotations
 
 from pathlib import Path, PureWindowsPath
+import difflib
 import hashlib
+import json
 import posixpath
 import re
 import time
+import unicodedata
 
 from .models import Diagnostic, GatherResult, decode_source_bytes
 from .scanner import (
@@ -24,6 +27,111 @@ _AUXILIARY_ROOT_TOKENS = frozenset({
     "rebuttal", "response", "author_response", "review_response",
     "reviewer_response", "cover_letter", "coverletter", "letter_to_reviewers",
 })
+_TITLE_COMMANDS = frozenset({"title", "icmltitle", "aistatstitle", "titletop", "jtitle"})
+_TITLE_FOOTNOTE_COMMANDS = frozenset({"thanks", "footnote", "footnotemark"})
+_SUPPLEMENT_TITLE_PREFIXES = (
+    "supplementary material", "supplementary information", "supporting information",
+    "supplemental material", "appendix", "online appendix", "technical appendix",
+)
+_METADATA_TITLE_MIN_SCORE = 0.85
+_METADATA_TITLE_MIN_MARGIN = 0.15
+_LATEX_COMMENT_RE = re.compile(r"(?<!\\)%[^\n]*")
+_CONDITIONAL_DOC_CLASS_RE = re.compile(r"\\documentclass\b(?:\s*\[[^\]]*\])?(?:\s*\{([^}]*)\})?")
+_CONDITIONAL_BEGIN_DOC_RE = re.compile(r"\\begin\s*\{document\}")
+_TEXORPDFSTRING_RE = re.compile(r"\\texorpdfstring\s*\{[^{}]*\}\s*\{([^{}]*)\}")
+_LATEX_CMD_RE = re.compile(r"\\[A-Za-z@]+\*?")
+_NON_ALNUM_RE = re.compile(r"[^a-z0-9]+")
+
+
+def _strip_braced_commands(text: str, names: frozenset[str]) -> str:
+    """Remove commands like \\thanks{...} along with their balanced arguments."""
+    out: list[str] = []
+    i = 0
+    n = len(text)
+    while i < n:
+        if text[i] == "\\":
+            j = i + 1
+            while j < n and (text[j].isalpha() or text[j] == "@"):
+                j += 1
+            if text[i + 1:j] in names:
+                k = j
+                while k < n and text[k].isspace():
+                    k += 1
+                if k < n and text[k] == "[":
+                    depth = 1
+                    k += 1
+                    while k < n and depth > 0:
+                        if text[k] == "\\":
+                            k += 2
+                            continue
+                        if text[k] == "[":
+                            depth += 1
+                        elif text[k] == "]":
+                            depth -= 1
+                        k += 1
+                    while k < n and text[k].isspace():
+                        k += 1
+                if k < n and text[k] == "{":
+                    depth = 1
+                    k += 1
+                    while k < n and depth > 0:
+                        if text[k] == "\\":
+                            k += 2
+                            continue
+                        if text[k] == "{":
+                            depth += 1
+                        elif text[k] == "}":
+                            depth -= 1
+                        k += 1
+                    i = k
+                    continue
+        out.append(text[i])
+        i += 1
+    return "".join(out)
+
+
+def _normalize_title_text(raw: str | None) -> str:
+    """Normalize a LaTeX or metadata title for deterministic lexical comparison."""
+    if not isinstance(raw, str) or not raw.strip():
+        return ""
+    cleaned = _LATEX_COMMENT_RE.sub(" ", raw)
+    cleaned = _strip_braced_commands(cleaned, _TITLE_FOOTNOTE_COMMANDS)
+    cleaned = _TEXORPDFSTRING_RE.sub(r" \1 ", cleaned)
+    cleaned = cleaned.replace("\\\\", " ")
+    decomposed = unicodedata.normalize("NFKD", cleaned)
+    cleaned = "".join(ch for ch in decomposed if not unicodedata.combining(ch))
+    cleaned = _LATEX_CMD_RE.sub(" ", cleaned)
+    cleaned = cleaned.replace("{", " ").replace("}", " ").replace("$", " ").replace("~", " ")
+    cleaned = _NON_ALNUM_RE.sub(" ", cleaned.lower())
+    return " ".join(cleaned.split())
+
+
+def _title_similarity(cand_norm: str, meta_norm: str) -> float:
+    """Blend SequenceMatcher ratio with token Jaccard similarity."""
+    if not cand_norm or not meta_norm:
+        return 0.0
+    if cand_norm == meta_norm:
+        return 1.0
+    seq = difflib.SequenceMatcher(None, cand_norm, meta_norm).ratio()
+    cand_toks = set(cand_norm.split())
+    meta_toks = set(meta_norm.split())
+    union = cand_toks | meta_toks
+    jacc = (len(cand_toks & meta_toks) / len(union)) if union else 0.0
+    return 0.55 * seq + 0.45 * jacc
+
+
+def _conditional_documentclass(raw_conditional: str) -> str | None:
+    """Return documentclass name if an active (uncommented) \\documentclass appears inside a conditional."""
+    uncommented = _LATEX_COMMENT_RE.sub("", raw_conditional)
+    match = _CONDITIONAL_DOC_CLASS_RE.search(uncommented)
+    if not match:
+        return None
+    return (match.group(1) or "").strip().casefold()
+
+
+def _conditional_has_begin_document(raw_conditional: str) -> bool:
+    uncommented = _LATEX_COMMENT_RE.sub("", raw_conditional)
+    return bool(_CONDITIONAL_BEGIN_DOC_RE.search(uncommented))
 
 
 def _within(path: Path, base: Path) -> bool:
@@ -65,8 +173,16 @@ def _references(body: str) -> set[str]:
 
 
 class _Gatherer:
-    def __init__(self, version_dir: Path):
+    def __init__(
+        self,
+        version_dir: Path,
+        *,
+        forced_root: str | None = None,
+        forced_root_reason: str | None = None,
+    ):
         self.base = version_dir.resolve()
+        self.forced_root = forced_root
+        self.forced_root_reason = forced_root_reason
         match = re.fullmatch(r"v([1-9]\d*)", version_dir.name)
         version = int(match.group(1)) if match else 0
         self.result = GatherResult(version_dir.parent.name, version)
@@ -574,6 +690,145 @@ class _Gatherer:
             self.root_directory = saved_root_dir
         return referenced
 
+    def _resolve_forced_root(self, rel_path: str) -> Path | None:
+        normalized = posixpath.normpath(rel_path.strip().replace("\\", "/").lstrip("/"))
+        if normalized in ("", ".") or normalized == ".." or normalized.startswith("../"):
+            return None
+        resolved = self._files_exact.get(normalized)
+        if resolved is None:
+            matches = self._files_casefold.get(normalized.casefold(), [])
+            if len(matches) == 1:
+                resolved = matches[0]
+        if resolved is None or not _within(resolved, self.base) or not resolved.is_file():
+            return None
+        return resolved
+
+    def _load_metadata_title(self) -> str | None:
+        meta_path = self.base.parent / "metadata.json"
+        if not meta_path.is_file():
+            return None
+        try:
+            payload = json.loads(meta_path.read_text(encoding="utf-8"))
+        except (OSError, ValueError, UnicodeError):
+            return None
+        if not isinstance(payload, dict):
+            return None
+        norm = _normalize_title_text(payload.get("title"))
+        return norm or None
+
+    def _extract_title_from_file(
+        self,
+        path: Path,
+        *,
+        root_dir: Path,
+        visited: set[Path],
+        depth: int = 0,
+    ) -> str | None:
+        if path in visited or depth > 2:
+            return None
+        visited.add(path)
+        text = self.read(path, probe=True)
+        if text is None:
+            return None
+        saved_root_dir = self.root_directory
+        self.root_directory = root_dir
+        try:
+            for command in iter_commands(text):
+                if command.name in _TITLE_COMMANDS and command.arg:
+                    norm = _normalize_title_text(command.arg)
+                    if norm:
+                        return norm
+                if command.name == "twocolumn" and command.optional:
+                    for nested in iter_commands(command.optional):
+                        if nested.name in _TITLE_COMMANDS and nested.arg:
+                            norm = _normalize_title_text(nested.arg)
+                            if norm:
+                                return norm
+                if command.name in _INCLUDE_COMMANDS and depth < 2:
+                    child, _ = self.resolve_include(command, path, record=False)
+                    if (
+                        child is not None
+                        and child.suffix.lower() == ".tex"
+                        and _within(child, self.base)
+                        and child.is_file()
+                    ):
+                        found = self._extract_title_from_file(
+                            child, root_dir=root_dir, visited=visited, depth=depth + 1
+                        )
+                        if found:
+                            return found
+                if (
+                    command.name in {"endinput", "maketitle", "section", "chapter"}
+                    or (command.name == "end" and command.arg == "document")
+                ):
+                    break
+        finally:
+            self.root_directory = saved_root_dir
+        return None
+
+    def _resolve_by_metadata(
+        self, remaining: list[Path]
+    ) -> tuple[Path, list[Path], float, float] | None:
+        meta_norm = self._load_metadata_title()
+        if not meta_norm:
+            return None
+        scored: list[tuple[float, str, Path]] = []
+        for cand in remaining:
+            cand_norm = self._extract_title_from_file(cand, root_dir=cand.parent, visited=set())
+            if not cand_norm:
+                # Never discard a candidate whose title could not be extracted cleanly.
+                return None
+            scored.append((_title_similarity(cand_norm, meta_norm), cand_norm, cand))
+        scored.sort(key=lambda item: (item[0], self.relative(item[2])), reverse=True)
+        top1_score, top1_norm, top1_path = scored[0]
+        top2_score = scored[1][0]
+        others_are_supplements = (
+            top1_norm == meta_norm
+            and not meta_norm.startswith(_SUPPLEMENT_TITLE_PREFIXES)
+            and all(norm.startswith(_SUPPLEMENT_TITLE_PREFIXES) for _, norm, _ in scored[1:])
+        )
+        if (
+            top1_score >= _METADATA_TITLE_MIN_SCORE
+            and ((top1_score - top2_score) >= _METADATA_TITLE_MIN_MARGIN or others_are_supplements)
+        ):
+            skipped = [p for p in remaining if p != top1_path]
+            return top1_path, skipped, top1_score, top2_score
+        return None
+
+    def _find_conditional_roots(
+        self, candidates: list[Path]
+    ) -> tuple[list[Path], dict[Path, str]]:
+        cond_roots: list[Path] = []
+        cond_classes: dict[Path, str] = {}
+        seen: set[Path] = set()
+        for original in candidates:
+            path = original.resolve()
+            if path in seen or not _within(path, self.base):
+                continue
+            text = self.read(path, probe=True)
+            if text is None:
+                continue
+            found_class: str | None = None
+            has_begin_doc = False
+            for command in iter_commands(text):
+                if command.name == "begin" and command.arg == "document":
+                    has_begin_doc = True
+                    break
+                if command.name == "__conditional__":
+                    raw = command.arg or ""
+                    if found_class is None:
+                        found_class = _conditional_documentclass(raw)
+                    if _conditional_has_begin_document(raw):
+                        has_begin_doc = True
+                        break
+                if command.name == "endinput" or (command.name == "end" and command.arg == "document"):
+                    break
+            if found_class is not None and has_begin_doc:
+                cond_roots.append(path)
+                cond_classes[path] = found_class
+                seen.add(path)
+        return cond_roots, cond_classes
+
     def run(self) -> GatherResult:
         started = time.monotonic()
         if not self.base.is_dir():
@@ -585,63 +840,112 @@ class _Gatherer:
         if not candidates:
             self.result.status = "empty"
             return self.finish(started)
-        roots: list[Path] = []
-        root_seen: set[Path] = set()
-        root_classes: dict[Path, str] = {}
-        for original in candidates:
-            path = original.resolve()
-            if not _within(path, self.base):
-                continue
-            text = self.read(path, probe=True)
-            if text is None:
-                continue
-            for command in iter_commands(text):
-                if command.name == "documentclass":
-                    if path not in root_seen:
-                        roots.append(path)
-                        root_seen.add(path)
-                        root_classes[path] = (command.arg or "").strip().casefold()
-                    break
-                if command.name == "endinput" or (command.name == "end" and command.arg == "document"):
-                    break
-        if not roots:
-            self._emit_unreported_read_failures(affects=True)
-            self.result.status = "failed"
-            self.diagnostic("missing_root", "No active documentclass root was found.", severity="error")
-            return self.finish(started)
-        if len(roots) > 1:
-            skipped: list[Path] = []
-            remaining = list(roots)
-            non_aux_class = [p for p in remaining if root_classes.get(p, "") not in _AUXILIARY_DOCUMENT_CLASSES]
-            if non_aux_class and len(non_aux_class) < len(remaining):
-                skipped.extend(p for p in remaining if p not in non_aux_class)
-                remaining = non_aux_class
-            if len(remaining) > 1:
-                remaining_set = set(remaining)
-                child_roots: set[Path] = set()
-                for cand in remaining:
-                    child_roots.update(self._referenced_child_roots(cand, remaining_set))
-                parent_roots = [p for p in remaining if p not in child_roots]
-                if parent_roots and len(parent_roots) < len(remaining):
-                    skipped.extend(p for p in remaining if p not in parent_roots)
-                    remaining = parent_roots
-            if len(remaining) > 1:
-                non_aux_name = [p for p in remaining if not self._is_auxiliary_root_name(p)]
-                if non_aux_name and len(non_aux_name) < len(remaining):
-                    skipped.extend(p for p in remaining if p not in non_aux_name)
-                    remaining = non_aux_name
-            if len(remaining) == 1:
+
+        used_conditional_roots = False
+        if self.forced_root is not None:
+            resolved_forced = self._resolve_forced_root(self.forced_root)
+            if resolved_forced is None:
+                self._emit_unreported_read_failures(affects=True)
+                self.result.status = "failed"
                 self.diagnostic(
-                    "filtered_auxiliary_root",
-                    "Filtered auxiliary documentclass roots: " + ", ".join(self.relative(p) for p in skipped),
-                    severity="info", affects=False,
+                    "missing_root",
+                    f"Forced root file was not found in version: {self.forced_root}",
+                    severity="error",
                 )
-            roots = remaining
-        if len(roots) != 1:
-            self._emit_unreported_read_failures(affects=True)
-            self.result.status = "failed"
-            self.diagnostic("ambiguous_root", "Multiple documentclass roots: " + ", ".join(self.relative(p) for p in roots), severity="error")
-            return self.finish(started)
+                return self.finish(started)
+            roots = [resolved_forced]
+            if self.forced_root_reason:
+                self.diagnostic(
+                    self.forced_root_reason,
+                    f"Selected root via external resolution: {self.relative(resolved_forced)}",
+                    severity="info",
+                    affects=False,
+                )
+        else:
+            roots = []
+            root_seen: set[Path] = set()
+            root_classes: dict[Path, str] = {}
+            for original in candidates:
+                path = original.resolve()
+                if not _within(path, self.base):
+                    continue
+                text = self.read(path, probe=True)
+                if text is None:
+                    continue
+                for command in iter_commands(text):
+                    if command.name == "documentclass":
+                        if path not in root_seen:
+                            roots.append(path)
+                            root_seen.add(path)
+                            root_classes[path] = (command.arg or "").strip().casefold()
+                        break
+                    if command.name == "endinput" or (command.name == "end" and command.arg == "document"):
+                        break
+            if not roots:
+                cond_roots, cond_classes = self._find_conditional_roots(candidates)
+                if cond_roots:
+                    roots = cond_roots
+                    root_classes = cond_classes
+                    used_conditional_roots = True
+            if not roots:
+                self._emit_unreported_read_failures(affects=True)
+                self.result.status = "failed"
+                self.diagnostic("missing_root", "No active documentclass root was found.", severity="error")
+                return self.finish(started)
+            if len(roots) > 1:
+                skipped: list[Path] = []
+                remaining = list(roots)
+                non_aux_class = [p for p in remaining if root_classes.get(p, "") not in _AUXILIARY_DOCUMENT_CLASSES]
+                if non_aux_class and len(non_aux_class) < len(remaining):
+                    skipped.extend(p for p in remaining if p not in non_aux_class)
+                    remaining = non_aux_class
+                if len(remaining) > 1:
+                    remaining_set = set(remaining)
+                    child_roots: set[Path] = set()
+                    for cand in remaining:
+                        child_roots.update(self._referenced_child_roots(cand, remaining_set))
+                    parent_roots = [p for p in remaining if p not in child_roots]
+                    if parent_roots and len(parent_roots) < len(remaining):
+                        skipped.extend(p for p in remaining if p not in parent_roots)
+                        remaining = parent_roots
+                if len(remaining) > 1:
+                    non_aux_name = [p for p in remaining if not self._is_auxiliary_root_name(p)]
+                    if non_aux_name and len(non_aux_name) < len(remaining):
+                        skipped.extend(p for p in remaining if p not in non_aux_name)
+                        remaining = non_aux_name
+                if len(remaining) == 1:
+                    self.diagnostic(
+                        "filtered_auxiliary_root",
+                        "Filtered auxiliary documentclass roots: " + ", ".join(self.relative(p) for p in skipped),
+                        severity="info", affects=False,
+                    )
+                elif len(remaining) > 1:
+                    meta_pick = self._resolve_by_metadata(remaining)
+                    if meta_pick is not None:
+                        chosen, meta_skipped, top1_score, top2_score = meta_pick
+                        self.diagnostic(
+                            "resolved_root_by_metadata",
+                            f"Selected root matching metadata.json title "
+                            f"(score={top1_score:.2f} vs {top2_score:.2f}): {self.relative(chosen)} "
+                            f"(skipped: {', '.join(self.relative(p) for p in meta_skipped)})",
+                            severity="info",
+                            affects=False,
+                        )
+                        remaining = [chosen]
+                roots = remaining
+            if len(roots) != 1:
+                self._emit_unreported_read_failures(affects=True)
+                self.result.status = "failed"
+                self.diagnostic("ambiguous_root", "Multiple documentclass roots: " + ", ".join(self.relative(p) for p in roots), severity="error")
+                return self.finish(started)
+            if used_conditional_roots:
+                self.diagnostic(
+                    "conditional_documentclass",
+                    f"Selected root with \\documentclass inside conditional block: {self.relative(roots[0])}",
+                    roots[0],
+                    severity="warning",
+                    affects=False,
+                )
         self.root = roots[0]
         self.root_directory = self.root.parent
         self.result.root_file = self.relative(self.root)
@@ -669,6 +973,15 @@ class _Gatherer:
         return self.result
 
 
-def gather_version(version_dir: Path) -> GatherResult:
+def gather_version(
+    version_dir: Path,
+    *,
+    forced_root: str | None = None,
+    forced_root_reason: str | None = None,
+) -> GatherResult:
     """Read only one version, return raw merged text and exact source provenance."""
-    return _Gatherer(Path(version_dir)).run()
+    return _Gatherer(
+        Path(version_dir),
+        forced_root=forced_root,
+        forced_root_reason=forced_root_reason,
+    ).run()

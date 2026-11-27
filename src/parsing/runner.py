@@ -263,6 +263,63 @@ def _versions(input_dir: Path, paper_id: str | None, version: int | None):
             yield publication.name, number, directory
 
 
+def process_and_commit_version(
+    directory: Path,
+    destination: Path,
+    code: str,
+    *,
+    forced_root: str | None = None,
+    forced_root_reason: str | None = None,
+) -> dict:
+    """Gather, outline, validate, and atomically commit one version's artifacts."""
+    parse_start = time.perf_counter()
+    initial_candidates = _tex_paths(directory)
+    initial_manifest = dict(_source_manifest(directory, [], tex_paths=initial_candidates))
+    gathered = gather_version(
+        directory,
+        forced_root=forced_root,
+        forced_root_reason=forced_root_reason,
+    )
+    after_gather = time.perf_counter()
+    outlined = build_outline(gathered)
+    record = outlined.to_record()
+    after_build = time.perf_counter()
+    final_candidates = _tex_paths(directory)
+    manifest = _source_manifest(directory, record["dependencies"], tex_paths=final_candidates)
+    final_manifest = dict(manifest)
+    changed = initial_candidates ^ final_candidates
+    changed.update(name for name, digest in initial_manifest.items()
+                   if final_manifest.get(name) != digest)
+    changed.update(name for name, digest in gathered.source_hashes.items()
+                   if final_manifest.get(name) != digest)
+    if changed:
+        record["status"] = "partial" if record["nodes"] else "failed"
+        record["diagnostics"].append({
+            "code": "source_changed_during_parse", "severity": "warning",
+            "message": "Sources changed while parsing; reprocess this version: " + ", ".join(sorted(changed)),
+            "source_file": None, "source_span": None,
+            "line": None, "column": None, "affects_completeness": True,
+        })
+    record["metrics"].update({
+        "gather_seconds": after_gather - parse_start,
+        "build_seconds": after_build - after_gather,
+        "parse_seconds": after_build - parse_start,
+        "unique_source_files": len({item["source_file"] for item in gathered.compilation_path}),
+        "file_instances": len(gathered.compilation_path),
+        "heading_count": sum(node["kind"] == "heading" for node in outlined.nodes),
+    })
+    if record["status"] not in STATUSES or not _validate_record(record, gathered.merged_text):
+        raise RuntimeError("Parser produced an inconsistent outline/source map")
+    record["input_fingerprint"] = _fingerprint(directory, record["dependencies"], code, manifest=manifest)
+    payload = gathered.merged_text.encode("utf-8")
+    record["merged_sha256"] = hashlib.sha256(payload).hexdigest()
+    save_start = time.perf_counter()
+    _write_atomic(destination / "merged.tex", payload)
+    record["metrics"]["merged_save_seconds"] = time.perf_counter() - save_start
+    _write_atomic(destination / "outline.json", _json_bytes(record))
+    return record
+
+
 def run(input_dir: Path, output_dir: Path, *, paper_id: str | None = None,
         version: int | None = None, force: bool = False, progress_every: int = 100) -> int:
     """Process existing vN directories and explicitly record publications without versions."""
@@ -365,47 +422,7 @@ def run(input_dir: Path, output_dir: Path, *, paper_id: str | None = None,
             record = None if force else _reuse(directory, destination, code, publication, number)
             reused = record is not None
             if record is None:
-                parse_start = time.perf_counter()
-                initial_candidates = _tex_paths(directory)
-                initial_manifest = dict(_source_manifest(directory, [], tex_paths=initial_candidates))
-                gathered = gather_version(directory)
-                after_gather = time.perf_counter()
-                outlined = build_outline(gathered)
-                record = outlined.to_record()
-                after_build = time.perf_counter()
-                final_candidates = _tex_paths(directory)
-                manifest = _source_manifest(directory, record["dependencies"], tex_paths=final_candidates)
-                final_manifest = dict(manifest)
-                changed = initial_candidates ^ final_candidates
-                changed.update(name for name, digest in initial_manifest.items()
-                               if final_manifest.get(name) != digest)
-                changed.update(name for name, digest in gathered.source_hashes.items()
-                               if final_manifest.get(name) != digest)
-                if changed:
-                    record["status"] = "partial" if record["nodes"] else "failed"
-                    record["diagnostics"].append({
-                        "code": "source_changed_during_parse", "severity": "warning",
-                        "message": "Sources changed while parsing; reprocess this version: " + ", ".join(sorted(changed)),
-                        "source_file": None, "source_span": None,
-                        "line": None, "column": None, "affects_completeness": True,
-                    })
-                record["metrics"].update({
-                    "gather_seconds": after_gather - parse_start,
-                    "build_seconds": after_build - after_gather,
-                    "parse_seconds": after_build - parse_start,
-                    "unique_source_files": len({item["source_file"] for item in gathered.compilation_path}),
-                    "file_instances": len(gathered.compilation_path),
-                    "heading_count": sum(node["kind"] == "heading" for node in outlined.nodes),
-                })
-                if record["status"] not in STATUSES or not _validate_record(record, gathered.merged_text):
-                    raise RuntimeError("Parser produced an inconsistent outline/source map")
-                record["input_fingerprint"] = _fingerprint(directory, record["dependencies"], code, manifest=manifest)
-                payload = gathered.merged_text.encode("utf-8")
-                record["merged_sha256"] = hashlib.sha256(payload).hexdigest()
-                save_start = time.perf_counter()
-                _write_atomic(destination / "merged.tex", payload)
-                record["metrics"]["merged_save_seconds"] = time.perf_counter() - save_start
-                _write_atomic(destination / "outline.json", _json_bytes(record))
+                record = process_and_commit_version(directory, destination, code)
             status = record["status"]
             summary["status_counts"][status] += 1
             summary["versions_seen"] += 1
