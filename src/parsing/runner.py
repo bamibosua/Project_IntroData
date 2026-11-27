@@ -322,7 +322,9 @@ def process_and_commit_version(
 
 
 def run(input_dir: Path, output_dir: Path, *, paper_id: str | None = None,
-        version: int | None = None, force: bool = False, progress_every: int = 100) -> int:
+        version: int | None = None, force: bool = False, progress_every: int = 100,
+        resolve_ambiguous: bool = True, readme_delay: float | None = None,
+        readme_fetch_fn=None) -> int:
     """Process existing vN directories and explicitly record publications without versions."""
     start = time.perf_counter()
     input_dir, output_dir = Path(input_dir).resolve(), Path(output_dir).resolve()
@@ -500,6 +502,53 @@ def run(input_dir: Path, output_dir: Path, *, paper_id: str | None = None,
             )
             if exit_code != 130:
                 exit_code = 1
+
+    ambiguous_remaining = summary["status_reason_counts"]["failed"].get("ambiguous_root", 0)
+    if (
+        resolve_ambiguous
+        and summary["run_status"] == "completed"
+        and final_summary_saved
+        and ambiguous_remaining > 0
+    ):
+        from .resolve_ambiguous import resolve_ambiguous_versions
+
+        print(
+            f"[AMBIGUOUS-PASS2] Resolving {ambiguous_remaining} remaining ambiguous_root "
+            "version(s) via arXiv 00README...",
+            flush=True,
+        )
+        kwargs = {
+            "only_versions": {(pub, num) for pub, num, _ in jobs},
+            "fetch_fn": readme_fetch_fn,
+        }
+        if readme_delay is not None:
+            kwargs["delay"] = readme_delay
+        try:
+            pass2_report = resolve_ambiguous_versions(input_dir, output_dir, **kwargs)
+            c = pass2_report["counts"]
+            print(
+                f"[AMBIGUOUS-PASS2] scanned={c['scanned']} resolved={c['resolved']} "
+                f"no_readme={c['no_readme_in_archive']} still_ambiguous={c['still_ambiguous']} "
+                f"skipped={c['skipped_previously_checked']} error={c['error']}",
+                flush=True,
+            )
+            updated_summary = json.loads((output_dir / "summary.json").read_text(encoding="utf-8"))
+            if isinstance(updated_summary, dict):
+                summary = updated_summary
+            if (
+                summary["status_counts"].get("partial", 0) == 0
+                and summary["status_counts"].get("failed", 0) == 0
+                and c["error"] == 0
+            ):
+                exit_code = 0
+            else:
+                exit_code = 1
+        except KeyboardInterrupt:
+            exit_code = 130
+        except Exception as exc:
+            print(f"[AMBIGUOUS-PASS2] Failed: {type(exc).__name__}: {exc}", file=sys.stderr)
+            exit_code = 1
+
     for key_status, label in (("partial", "Partial"), ("failed", "Failed")):
         reason_map = summary["status_reason_counts"].get(key_status, {})
         if reason_map:
@@ -519,10 +568,24 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--version", type=int)
     parser.add_argument("--force", action="store_true", help="Reprocess selected versions instead of reusing valid results")
     parser.add_argument("--progress-every", type=int, default=100, help="Print progress every N versions (default: 100)")
+    parser.add_argument(
+        "--no-resolve-ambiguous",
+        action="store_true",
+        help="Skip automatic Pass 2 arXiv 00README resolution for remaining ambiguous_root versions",
+    )
+    parser.add_argument("--readme-delay", type=float, default=None, help="Override request delay (seconds) for Pass 2 00README fetch")
     args = parser.parse_args(argv)
     try:
-        return run(args.input_dir, args.output_dir, paper_id=args.paper_id, version=args.version,
-                   force=args.force, progress_every=args.progress_every)
+        return run(
+            args.input_dir,
+            args.output_dir,
+            paper_id=args.paper_id,
+            version=args.version,
+            force=args.force,
+            progress_every=args.progress_every,
+            resolve_ambiguous=not args.no_resolve_ambiguous,
+            readme_delay=args.readme_delay,
+        )
     except ValueError as exc:
         print(f"Input error: {exc}", file=sys.stderr)
         return 2
