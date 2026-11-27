@@ -8,6 +8,30 @@ SCHEMA_VERSION = 1
 STAGE = "outline"
 
 
+def decode_source_bytes(raw: bytes) -> tuple[str, str]:
+    """Decode LaTeX source bytes to LF text and encoding name.
+
+    Tries UTF-8/UTF-8 BOM first, then falls back to cp1252 and latin-1 for
+    legacy non-UTF-8 TeX files. Rejects UTF-16 BOMs, NUL bytes, and binary
+    control bytes with UnicodeDecodeError so corrupt files are not mangled.
+    """
+    try:
+        text = raw.decode("utf-8-sig")
+        return text.replace("\r\n", "\n").replace("\r", "\n"), "utf-8"
+    except UnicodeDecodeError as utf8_err:
+        if b"\x00" in raw or raw.startswith((b"\xff\xfe", b"\xfe\xff")):
+            raise utf8_err
+        if any(byte < 32 and byte not in (9, 10, 11, 12, 13) for byte in raw):
+            raise utf8_err
+        for encoding in ("cp1252", "latin-1"):
+            try:
+                text = raw.decode(encoding)
+                return text.replace("\r\n", "\n").replace("\r", "\n"), encoding
+            except UnicodeDecodeError:
+                continue
+        raise utf8_err
+
+
 @dataclass
 class Diagnostic:
     code: str

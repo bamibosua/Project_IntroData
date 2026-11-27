@@ -22,6 +22,7 @@ class Command:
     starred: bool = False
     defined_name: str | None = None
     definition_body: str | None = None
+    second_arg: str | None = None
 
 
 RAW_ENVIRONMENTS = frozenset({"verbatim", "verbatim*", "lstlisting", "minted", "comment"})
@@ -36,9 +37,10 @@ DEFINITION_COMMANDS = frozenset({
 })
 ENV_DEFINITION_COMMANDS = frozenset({"newenvironment", "renewenvironment"})
 HEADING_COMMANDS = frozenset({"part", "chapter", "section", "subsection", "subsubsection", "paragraph", "subparagraph"})
+_TWO_ARG_COMMANDS = frozenset({"import", "subimport", "includefrom", "subincludefrom"})
 _REQUIRES_ARG = HEADING_COMMANDS | {
-    "documentclass", "input", "include", "includeonly", "begin", "end",
-    "bibliography", "addbibresource", "bibliographystyle",
+    "documentclass", "input", "include", "includeonly", "subfile", "subfileinclude",
+    "begin", "end", "bibliography", "addbibresource", "bibliographystyle",
 }
 _DECLARATION_SWITCHES = frozenset({
     "tiny", "scriptsize", "footnotesize", "small", "normalsize",
@@ -51,8 +53,15 @@ _DECLARATION_SWITCHES = frozenset({
     "medskip", "smallskip", "bigskip", "hfill", "vfill", "onecolumn",
 })
 _ARGLESS = frozenset({
-    "appendix", "endinput", "else", "fi", "relax", "makeatletter", "makeatother",
+    "appendix", "endinput", "else", "fi", "relax", "makeatletter", "makeatother", "iff",
 }) | _DECLARATION_SWITCHES
+_NON_CONDITIONAL_IF = frozenset({
+    "iff",
+    "ifthenelse", "ifdef", "ifcsdef", "ifstrequal", "ifblank", "ifboolexpr",
+    "ifstrempty", "ifundef", "ifcsundef", "ifcsvoid", "ifbool", "iftoggle",
+    "ifnumcomp", "ifnumequal", "ifnumgreater", "ifnumless",
+    "ifdimcomp", "ifdimequal", "ifdimgreater", "ifdimless",
+})
 
 
 class _SourceText(str):
@@ -250,6 +259,7 @@ def _command(text: str, start: int, limit: int,
         cursor = _space(text, end, limit)
     arg: str | None = None
     optional: str | None = None
+    second_arg: str | None = None
     # Escaped symbols have no LaTeX arguments.
     if len(name) == 1 and not name.isalpha():
         return Command(name, start, end, starred=starred)
@@ -258,11 +268,15 @@ def _command(text: str, start: int, limit: int,
         value, next_pos = _balanced(text, cursor, limit, errors)
         if opener == "{" and arg is None:
             arg = value
+        elif opener == "{" and name in _TWO_ARG_COMMANDS and second_arg is None:
+            second_arg = value
         elif opener == "[" and optional is None:
             optional = value
         end = next_pos
         # begin/end consume their environment name, but not following body groups.
         if name in _REQUIRES_ARG and arg is not None:
+            break
+        if name in _TWO_ARG_COMMANDS and arg is not None and second_arg is not None:
             break
         cursor = _space(text, next_pos, limit)
     if name == "input" and arg is None:
@@ -273,14 +287,16 @@ def _command(text: str, start: int, limit: int,
         if cursor > path_start:
             arg = text[path_start:cursor]
             end = cursor
-    if name in _REQUIRES_ARG and arg is None:
+    if (name in _REQUIRES_ARG and arg is None) or (
+        name in _TWO_ARG_COMMANDS and (arg is None or second_arg is None)
+    ):
         errors.append((start, max(end, start + 1), f"Missing argument for \\{name}."))
-    return Command(name, start, end, arg, optional, starred)
+    return Command(name, start, end, arg, optional, starred, second_arg=second_arg)
 
 
 def _is_conditional(name: str) -> bool:
-    # ifthenelse is a braced macro, not an if...fi primitive.
-    return name.startswith("if") and name not in {"ifthenelse", "ifdef", "ifcsdef", "ifstrequal", "ifblank", "ifboolexpr"}
+    # Math \iff and braced macros like \ifthenelse are not \if...\fi primitives.
+    return name.startswith("if") and name not in _NON_CONDITIONAL_IF
 
 
 def _delimited(text: str, start: int, end: int, delimiter: str,
