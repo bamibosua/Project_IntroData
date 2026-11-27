@@ -22,6 +22,7 @@ import zlib
 from src.downloader.client import ArchiveTooLarge, BlockedError, FastArxivClient, _NOT_FOUND_PAYLOAD
 from src.downloader.config import DEFAULT_DELAY, MAX_TAR_TOTAL_BYTES, MAX_UNCOMPRESSED_BYTES
 
+from .models import status_reasons_from_diagnostics
 from .runner import (
     _code_signature,
     _json_bytes,
@@ -296,6 +297,24 @@ def _apply_summary_delta(
             status_counts[old_status] -= 1
         if new_status in status_counts:
             status_counts[new_status] += 1
+
+    reason_counts = summary.get("status_reason_counts")
+    if isinstance(reason_counts, dict):
+        old_reasons = old_record.get("status_reasons")
+        if not isinstance(old_reasons, list):
+            old_reasons = status_reasons_from_diagnostics(str(old_status or ""), old_record.get("diagnostics", []))
+        new_reasons = new_record.get("status_reasons")
+        if not isinstance(new_reasons, list):
+            new_reasons = status_reasons_from_diagnostics(str(new_status or ""), new_record.get("diagnostics", []))
+        if old_status in reason_counts and isinstance(reason_counts[old_status], dict):
+            for reason in old_reasons:
+                if reason in reason_counts[old_status]:
+                    reason_counts[old_status][reason] -= 1
+                    if reason_counts[old_status][reason] <= 0:
+                        del reason_counts[old_status][reason]
+        if new_status in reason_counts and isinstance(reason_counts[new_status], dict):
+            for reason in new_reasons:
+                reason_counts[new_status][reason] = reason_counts[new_status].get(reason, 0) + 1
 
     diag_counts = summary.get("diagnostic_counts")
     diag_ver_counts = summary.get("diagnostic_version_counts")

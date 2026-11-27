@@ -14,7 +14,7 @@ from datetime import datetime, timezone
 from uuid import uuid4
 
 from .gather import gather_version
-from .models import SCHEMA_VERSION, STAGE
+from .models import SCHEMA_VERSION, STAGE, status_reasons_from_diagnostics
 from .outline import build_outline
 from .telemetry import peak_rss_bytes
 
@@ -300,6 +300,7 @@ def process_and_commit_version(
             "source_file": None, "source_span": None,
             "line": None, "column": None, "affects_completeness": True,
         })
+    record["status_reasons"] = status_reasons_from_diagnostics(record["status"], record["diagnostics"])
     record["metrics"].update({
         "gather_seconds": after_gather - parse_start,
         "build_seconds": after_build - after_gather,
@@ -348,6 +349,7 @@ def run(input_dir: Path, output_dir: Path, *, paper_id: str | None = None,
         "filters": {"paper_id": paper_id, "version": version, "force": force},
         "run_status": "running", "publications_seen": 0, "versions_seen": 0,
         "status_counts": dict.fromkeys(STATUSES, 0),
+        "status_reason_counts": {"partial": {}, "failed": {}},
         "versions_reused": 0, "versions_processed": 0,
         "wall_seconds": 0.0, "diagnostic_counts": {}, "fatal_error": None,
         "summary_persistence_error": None, "summary_persistence_failures": 0,
@@ -424,7 +426,14 @@ def run(input_dir: Path, output_dir: Path, *, paper_id: str | None = None,
             if record is None:
                 record = process_and_commit_version(directory, destination, code)
             status = record["status"]
+            reasons = record.get("status_reasons")
+            if not isinstance(reasons, list):
+                reasons = status_reasons_from_diagnostics(status, record.get("diagnostics", []))
             summary["status_counts"][status] += 1
+            if status in ("partial", "failed"):
+                bucket = summary["status_reason_counts"][status]
+                for reason in reasons:
+                    bucket[reason] = bucket.get(reason, 0) + 1
             summary["versions_seen"] += 1
             summary["versions_reused" if reused else "versions_processed"] += 1
             publications_seen.add(publication)
@@ -456,7 +465,8 @@ def run(input_dir: Path, output_dir: Path, *, paper_id: str | None = None,
                 elapsed = time.perf_counter() - start
                 rate = done / elapsed if elapsed else 0.0
                 eta = (len(jobs) - done) / rate if rate else 0.0
-                print(f"[{done}/{len(jobs)}] {publication}/v{number}: {status}"
+                status_label = f"{status} [{', '.join(reasons)}]" if reasons else status
+                print(f"[{done}/{len(jobs)}] {publication}/v{number}: {status_label}"
                       f"{' (reused)' if reused else ''}; "
                       + " ".join(f"{key}={counts[key]}" for key in STATUSES)
                       + f"; elapsed={elapsed:.1f}s rate={rate:.2f}/s ETA={eta:.1f}s", flush=True)
@@ -490,6 +500,11 @@ def run(input_dir: Path, output_dir: Path, *, paper_id: str | None = None,
             )
             if exit_code != 130:
                 exit_code = 1
+    for key_status, label in (("partial", "Partial"), ("failed", "Failed")):
+        reason_map = summary["status_reason_counts"].get(key_status, {})
+        if reason_map:
+            ranked = sorted(reason_map.items(), key=lambda item: (-item[1], item[0]))
+            print(f"{label} reasons: " + ", ".join(f"{code}={cnt}" for code, cnt in ranked), flush=True)
     if final_summary_saved:
         print(f"Summary: {output_dir / 'summary.json'}", flush=True)
     return exit_code

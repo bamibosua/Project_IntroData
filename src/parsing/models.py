@@ -44,6 +44,29 @@ class Diagnostic:
     affects_completeness: bool = True
 
 
+def status_reasons_from_diagnostics(status: str, diagnostics: list[Any]) -> list[str]:
+    """Return ordered unique diagnostic codes that caused a partial or failed status."""
+    if status not in ("partial", "failed"):
+        return []
+    reasons: list[str] = []
+    seen: set[str] = set()
+    for diag in diagnostics:
+        if isinstance(diag, dict):
+            code = diag.get("code")
+            severity = diag.get("severity")
+            affects = diag.get("affects_completeness")
+        else:
+            code = getattr(diag, "code", None)
+            severity = getattr(diag, "severity", None)
+            affects = getattr(diag, "affects_completeness", None)
+        if not code or code in seen:
+            continue
+        if severity == "error" or affects is True:
+            seen.add(code)
+            reasons.append(code)
+    return reasons
+
+
 @dataclass
 class GatherResult:
     publication_key: str
@@ -78,6 +101,7 @@ class OutlineResult:
             "publication_key": g.publication_key,
             "version": g.version,
             "status": self.status,
+            "status_reasons": status_reasons_from_diagnostics(self.status, self.diagnostics),
             "root_file": g.root_file,
             "root_node_id": self.nodes[0]["node_id"] if self.nodes else None,
             "compilation_path": g.compilation_path,
