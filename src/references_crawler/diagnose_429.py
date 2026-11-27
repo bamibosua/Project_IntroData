@@ -1,8 +1,8 @@
 """Diagnose HTTP 429 with controlled requests and no automatic retries.
 
 From the repository root:
-    python src/references/diagnose_429.py data/input/papers_index.json
-    python src/references/diagnose_429.py data/input/papers_index.json --sizes 10,50,200 --gap 15
+    python src/references_crawler/diagnose_429.py data/input/papers_index.json
+    python src/references_crawler/diagnose_429.py data/input/papers_index.json --sizes 10,50,200 --gap 15
 
 Send one GET, each configured batch size, then another GET. Inspect status,
 response body, and rate-limit headers; HTTP 429 alone does not establish key validity.

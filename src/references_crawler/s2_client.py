@@ -180,6 +180,14 @@ class S2Client:
     def close(self) -> None:
         self.session.close()
 
+    def _wait_429_delay(self, retry_number: int) -> float:
+        """Return scheduled 429 wait: wait_429 for retries 1-2, then +step each retry."""
+        if self.wait_429 <= 0:
+            return 0.0
+        attempt = min(retry_number, config.MAX_429_RETRIES)
+        extra_steps = max(0, attempt - 2)
+        return self.wait_429 + extra_steps * config.WAIT_429_STEP_SECONDS
+
     def _apply_cooldown(
         self, extra_seconds, reason="", *, kind="sleep_429_sec"
     ) -> float:
@@ -291,7 +299,7 @@ class S2Client:
             if status == 429:
                 retries_429 += 1
                 delay = max(
-                    self.wait_429,
+                    self._wait_429_delay(retries_429),
                     parse_retry_after(
                         response.headers.get("Retry-After"), warn_id=context
                     )

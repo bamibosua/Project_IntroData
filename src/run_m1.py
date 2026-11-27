@@ -15,8 +15,8 @@ if __package__:
     from .entry_discovery.discovery import ArxivClient
     from .downloader.client import FastArxivClient
     from .downloader.runner import download_stream
-    from .references import config, crawl_references as references
-    from .references.s2_client import S2Client
+    from .references_crawler import config, crawl_references as references
+    from .references_crawler.s2_client import S2Client
 else:
     import m1_benchmark as benchmark
     from entry_discovery import run_entry_discovery as entry
@@ -24,8 +24,8 @@ else:
     from entry_discovery.discovery import ArxivClient
     from downloader.client import FastArxivClient
     from downloader.runner import download_stream
-    from references import config, crawl_references as references
-    from references.s2_client import S2Client
+    from references_crawler import config, crawl_references as references
+    from references_crawler.s2_client import S2Client
 
 logger = logging.getLogger(__name__)
 
