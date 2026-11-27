@@ -190,10 +190,27 @@ def _commit_record(pub, record, out_dir, metrics):
         )
 
 
-def _process_batch(client, publications, out_dir, metrics):
+def _post_batch(client, arxiv_ids, wait_429_schedule=None):
+    if wait_429_schedule is not None and isinstance(client, S2Client):
+        return client.post_batch(arxiv_ids, wait_429_schedule=wait_429_schedule)
+    return client.post_batch(arxiv_ids)
+
+
+def _process_batch(
+    client,
+    publications,
+    out_dir,
+    metrics,
+    *,
+    deferred=None,
+    allow_defer=False,
+    wait_429_schedule=None,
+):
     try:
-        entries, _ = client.post_batch(
-            [batch_publication["arxiv_id"] for batch_publication in publications]
+        entries, _ = _post_batch(
+            client,
+            [batch_publication["arxiv_id"] for batch_publication in publications],
+            wait_429_schedule=wait_429_schedule,
         )
     except ClientError as exc:
         if exc.code == "too_large" and len(publications) > 1:
@@ -202,8 +219,24 @@ def _process_batch(client, publications, out_dir, metrics):
             logger.info(
                 f"[REFERENCES] Response too large; splitting {len(publications)} papers into {middle} + {len(publications) - middle}."
             )
-            _process_batch(client, publications[:middle], out_dir, metrics)
-            _process_batch(client, publications[middle:], out_dir, metrics)
+            _process_batch(
+                client,
+                publications[:middle],
+                out_dir,
+                metrics,
+                deferred=deferred,
+                allow_defer=allow_defer,
+                wait_429_schedule=wait_429_schedule,
+            )
+            _process_batch(
+                client,
+                publications[middle:],
+                out_dir,
+                metrics,
+                deferred=deferred,
+                allow_defer=allow_defer,
+                wait_429_schedule=wait_429_schedule,
+            )
             return
         if exc.code == "too_large":
             publication = publications[0]
@@ -226,6 +259,39 @@ def _process_batch(client, publications, out_dir, metrics):
             else:
                 _commit_record(publication, record, out_dir, metrics)
             return
+        if exc.code == "retryable":
+            fallback_size = config.FALLBACK_BATCH_SIZE
+            if len(publications) > fallback_size:
+                metrics.splits += 1
+                sub_batches = [
+                    publications[start : start + fallback_size]
+                    for start in range(0, len(publications), fallback_size)
+                ]
+                logger.warning(
+                    "[REFERENCES] batch[%d] exhausted retries; splitting into %d sub-batches of up to %d.",
+                    len(publications),
+                    len(sub_batches),
+                    fallback_size,
+                )
+                for sub_batch in sub_batches:
+                    _process_batch(
+                        client,
+                        sub_batch,
+                        out_dir,
+                        metrics,
+                        deferred=deferred,
+                        allow_defer=allow_defer,
+                        wait_429_schedule=config.FALLBACK_429_WAITS,
+                    )
+                return
+            if allow_defer and deferred is not None:
+                deferred.append(list(publications))
+                logger.warning(
+                    "[REFERENCES] batch[%d] exhausted retries; skipped and queued for final retry (%d deferred sub-batch(es)).",
+                    len(publications),
+                    len(deferred),
+                )
+                return
         for publication in publications:
             _record_error(publication, exc, metrics)
         return
@@ -362,6 +428,7 @@ def run(args, client=None, *, source=None, stream_status=None):
                     f"{n_batches} batch{'es' if n_batches != 1 else ''} x up to {run_config['batch_size']} papers | {run_config['cycle_sec']:g}s/request | 429 wait: {run_config['wait_429_sec']:g}s"
                 )
             batches_started = client.clock() if client is not None else None
+            deferred = []
             for batch in batches():
                 if client is None:
                     config.load_env()
@@ -388,7 +455,15 @@ def run(args, client=None, *, source=None, stream_status=None):
                 metrics.papers["attempted"] += len(batch)
                 batch_started = client.clock()
                 batch_before = dict(metrics.papers)
-                _process_batch(client, batch, args.out, metrics)
+                deferred_before = len(deferred)
+                _process_batch(
+                    client,
+                    batch,
+                    args.out,
+                    metrics,
+                    deferred=deferred,
+                    allow_defer=True,
+                )
                 _append_log(os.path.join(meta_dir, "crawl_log.jsonl"), metrics)
                 elapsed = client.clock() - batch_started
                 eta_minutes = (
@@ -409,6 +484,7 @@ def run(args, client=None, *, source=None, stream_status=None):
                         "errors",
                     )
                 }
+                deferred_added = sum(len(sub) for sub in deferred[deferred_before:])
                 label = (
                     f"[REFERENCES] Batch {metrics.batches}"
                     if streaming
@@ -420,14 +496,51 @@ def run(args, client=None, *, source=None, stream_status=None):
                     else f"{elapsed:.1f}s | ETA ~{eta_minutes:.1f}m"
                 )
                 emit = logger.info if streaming else print
+                deferred_note = f" deferred={deferred_added}" if deferred_added else ""
                 emit(
                     f"{label} ok={counts['ok']} empty={counts['empty_refs']} "
                     f"not_in_s2={counts['not_in_s2']} mismatch={counts['count_mismatch']} "
-                    f"error={counts['errors']} | {timing}"
+                    f"error={counts['errors']}{deferred_note} | {timing}"
                 )
                 if counts["errors"]:
                     print(
                         f"  {counts['errors']} paper{'s' if counts['errors'] != 1 else ''} incomplete."
+                    )
+            if deferred and not (streaming and stream_status["exit_code"] != 0):
+                deferred_papers = sum(len(sub) for sub in deferred)
+                emit = logger.info if streaming else print
+                emit(
+                    f"[REFERENCES] Final retry pass: {len(deferred)} deferred sub-batch(es) ({deferred_papers} papers)."
+                )
+                for retry_index, sub_batch in enumerate(deferred, 1):
+                    retry_started = client.clock()
+                    retry_before = dict(metrics.papers)
+                    _process_batch(
+                        client,
+                        sub_batch,
+                        args.out,
+                        metrics,
+                        deferred=None,
+                        allow_defer=False,
+                        wait_429_schedule=config.FINAL_RETRY_429_WAITS,
+                    )
+                    _append_log(os.path.join(meta_dir, "crawl_log.jsonl"), metrics)
+                    retry_elapsed = client.clock() - retry_started
+                    retry_counts = {
+                        key: metrics.papers[key] - retry_before[key]
+                        for key in (
+                            "ok",
+                            "empty_refs",
+                            "not_in_s2",
+                            "count_mismatch",
+                            "errors",
+                        )
+                    }
+                    emit(
+                        f"[REFERENCES] Final retry {retry_index}/{len(deferred)} "
+                        f"ok={retry_counts['ok']} empty={retry_counts['empty_refs']} "
+                        f"not_in_s2={retry_counts['not_in_s2']} mismatch={retry_counts['count_mismatch']} "
+                        f"error={retry_counts['errors']} | {retry_elapsed:.1f}s"
                     )
             if metrics.papers["errors"]:
                 exit_code, reason = 1, "publications_incomplete"
