@@ -10,7 +10,10 @@ import os
 # =====================================================================
 CYCLE_SECONDS = 1  # Minimum interval between request starts.
 WAIT_429_SECONDS = (
-    5  # Minimum cooldown before retrying the same request after HTTP 429.
+    5  # Base cooldown before retrying the same request after HTTP 429 (retries 1-2).
+)
+WAIT_429_STEP_SECONDS = (
+    5  # Extra cooldown added per retry from the 3rd HTTP 429 retry onward.
 )
 
 # =====================================================================
