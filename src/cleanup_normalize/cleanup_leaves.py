@@ -55,7 +55,7 @@ BOUNDARY_SPACE_RE = re.compile(
 )
 INITIALISM_RE = re.compile(r"\b(?:[A-Z]\.){2,}")
 URL_RE = re.compile(r"(?:https?://|www\.)[^\s<>]+", re.I)
-ENV_RE = re.compile(r"\\(begin|end)\{([A-Za-z0-9*@_-]+)\}")
+ENV_RE = re.compile(r"\\(begin|end)\s*\{([A-Za-z0-9*@_-]+)\}")
 CMD_RE = re.compile(r"\\([A-Za-z@]+)\*?")
 VERB_RE = re.compile(r"\\verb\*?([^\w\s])")
 MACRO_RE = re.compile(r"\\(?:[A-Za-z@]+\*?|.)")
@@ -87,6 +87,16 @@ ROOT_METADATA_OPTIONS = {
     'title': 1, 'author': 1, 'date': 0, 'thanks': 0, 'address': 1,
     'affiliation': 1, 'institute': 0, 'email': 1,
     'documentclass': 1, 'usepackage': 1, 'RequirePackage': 1,
+}
+# Only commands with a known signature may consume leading square brackets.
+# In particular, \in[-2L,0) and \left[... are mathematical intervals, not options.
+OPTIONAL_MACRO_ARGS = {
+    **ROOT_METADATA_OPTIONS, 'sqrt': 1, 'includegraphics': 1,
+    'footnote': 1, 'footnotetext': 1, 'footnotemark': 1,
+    'caption': 1, 'captionof': 1, 'item': 1,
+    'section': 1, 'subsection': 1, 'subsubsection': 1,
+    'chapter': 1, 'part': 1, 'paragraph': 1, 'subparagraph': 1,
+    '\\': 1,
 }
 
 
@@ -193,6 +203,78 @@ def math_aliases(tex: str, document_start: int | None = None) -> dict[str, str]:
         if value in {r'\[', r'\]', r'\(', r'\)'} or (env and env.group(2) in MATH_ENVS):
             resolved[name] = value
     return resolved
+
+
+def declaration_aliases(tex: str) -> dict[str, str]:
+    r"""Recognize explicit zero-argument aliases such as \newcommand{\nc}{\newcommand}.
+
+    Only declaration commands are eligible. Conflicting declarations are left
+    unresolved rather than assigning a guessed meaning to a custom command.
+    """
+    declarations = {'newcommand', 'renewcommand', 'providecommand', 'DeclareRobustCommand'}
+    pattern = re.compile(
+        r'\\(?:newcommand|renewcommand|providecommand|DeclareRobustCommand)\*?\s*'
+        r'(?:\{\s*(\\[A-Za-z@]+)\s*\}|(\\[A-Za-z@]+))\s*'
+        r'(?:\[0\]\s*)?\{\s*\\(' + '|'.join(sorted(declarations)) + r')\s*\}')
+    aliases: dict[str, str] = {}
+    conflicts: set[str] = set()
+    text = strip_comments(tex)
+    if not pattern.search(text): return {}
+    i = 0
+    while i < len(text):
+        if text[i] != '\\':
+            i += 1; continue
+        if (end := verb_end(text, i)) is not None:
+            i = end; continue
+        match = pattern.match(text, i)
+        if match:
+            name = match.group(1) or match.group(2)
+            target = '\\' + match.group(3)
+            if name in aliases and aliases[name] != target:
+                conflicts.add(name)
+            aliases[name] = target
+        declaration = definition_end(text, i)
+        if declaration is not None:
+            # A later ordinary redefinition invalidates an earlier alias too.
+            name_match = re.match(
+                r'\\[A-Za-z@]+\*?\s*(?:\{\s*(\\[A-Za-z@]+)\s*\}|(\\[A-Za-z@]+))',
+                text[i:declaration])
+            if not match and name_match:
+                conflicts.add(name_match.group(1) or name_match.group(2))
+            i = declaration; continue
+        token = MACRO_RE.match(text, i)
+        i = token.end() if token else i + 1
+    return {name: target for name, target in aliases.items() if name not in conflicts}
+
+
+def expand_declaration_aliases(text: str, aliases: dict[str, str]) -> str:
+    """Expand only complete declarations; keep their bodies opaque to scanning."""
+    if not aliases: return text
+    out = []
+    i = 0
+    while i < len(text):
+        if (run := PROSE_RUN_RE.match(text, i)) is not None:
+            out.append(run.group()); i = run.end(); continue
+        end = verb_end(text, i) if text[i] == '\\' else None
+        if end is not None:
+            out.append(text[i:end]); i = end; continue
+        declaration = definition_end(text, i)
+        if declaration is not None:
+            out.append(text[i:declaration]); i = declaration; continue
+        token = MACRO_RE.match(text, i)
+        if token:
+            replacement = aliases.get(token.group())
+            if replacement:
+                expanded = replacement + text[token.end():]
+                end = definition_end(expanded, 0)
+                if end is not None:
+                    out.append(expanded[:end])
+                    i = token.end() + end - len(replacement)
+                    continue
+            out.append(token.group()); i = token.end()
+        else:
+            out.append(text[i]); i += 1
+    return ''.join(out)
 
 
 def expand_math_aliases(text: str, aliases: dict[str, str]) -> str:
@@ -318,17 +400,23 @@ def find_env_end(text: str, start: int, env: str) -> tuple[int, int] | None:
 
 
 def macro_end(text: str, start: int) -> int:
-    """Skip one command and balanced arguments without inspecting their text."""
+    """Skip braced arguments and known leading options without swallowing math."""
     token = MACRO_RE.match(text, start)
     if not token: return start + 1
     end = token.end()
+    command = token.group()[1:].rstrip('*')
+    optional = 2 if CITATION_RE.fullmatch(token.group()) else OPTIONAL_MACRO_ARGS.get(command, 0)
     while end < len(text):
         gap = end
         while gap < len(text) and text[gap].isspace(): gap += 1
         if gap >= len(text) or text[gap] not in '{[': break
         opening = text[gap]
+        if opening == '[' and not optional:
+            break
         arg = arg_at(text, gap, opening, '}' if opening == '{' else ']')
         if not arg: break
+        # An interval after a required argument is not another optional argument.
+        optional = optional - 1 if opening == '[' else 0
         end = arg[1]
     return end
 
@@ -444,13 +532,31 @@ def math_token(text: str, i: int) -> tuple[int, str, str] | None:
     for start, close, form in ((r"\(", r"\)", "inline"), (r"\[", r"\]", "block"), ("$$", "$$", "block"), ("$", "$", "inline")):
         if text.startswith(start, i) and not escaped(text, i):
             pos = i + len(start)
+            depth = 0
             while pos < len(text):
-                k = text.find(close, pos)
-                if k < 0:
-                    break
-                if not escaped(text, k):
-                    return k+len(close), form, text[i+len(start):k]
-                pos = k+len(close)
+                # \( enters the same inline math mode as $. Either $ or \)
+                # can close it. Groups can contain text with its own math.
+                closers = (r'\)', '$') if form == 'inline' else (close,)
+                if depth == 0:
+                    for ending in closers:
+                        if text.startswith(ending, pos):
+                            # In $x$$y$, the first of the adjacent dollars closes
+                            # x and the next opens y; it is not a display opener.
+                            return pos + len(ending), form, text[i+len(start):pos]
+                    if form == 'inline' and text.startswith(r'\(', pos):
+                        raise ValueError('Unexpected inline math opener inside inline math')
+                if text[pos] == '\\':
+                    literal = verb_end(text, pos)
+                    declaration = definition_end(text, pos)
+                    if literal is not None or declaration is not None:
+                        pos = literal if literal is not None else declaration
+                        continue
+                    token = MACRO_RE.match(text, pos)
+                    if token:
+                        pos = token.end(); continue
+                if text[pos] == '{': depth += 1
+                elif text[pos] == '}': depth = max(0, depth - 1)
+                pos += 1
             raise ValueError(f'Unclosed math delimiter: {start}')
     return None
 
@@ -509,6 +615,11 @@ def canonical_math(form: str, body: str) -> tuple[str, str]:
         body = canonical_ieee_math(form, body)
     elif base in {'alignat', 'alignedat'}:
         columns = arg_at(body, 0)
+        if columns is None and body and body[0] not in '{}[]':
+            # TeX mandatory arguments may be one unbraced token, e.g. }1.
+            token = MACRO_RE.match(body, 0)
+            end = token.end() if token else 1
+            columns = body[:end], end
         if columns is None:
             raise ValueError(f'{form} is missing its column-pair argument')
         body = ('\\begin{alignedat}{' + columns[0] + '}\n'
@@ -1103,7 +1214,14 @@ def transform(merged: str | None, outline: dict[str, Any]) -> dict[str, Any]:
     builder.nodes = [n for n in builder.nodes if n['node_id'] not in excluded]
     valid_ids = {n['node_id'] for n in outline['nodes']}
     boundary = document_boundary(merged)
-    aliases = math_aliases(merged, boundary[0] if boundary else len(merged))
+    declarations = declaration_aliases(merged)
+    if declarations:
+        expanded = expand_declaration_aliases(merged, declarations)
+        # Some sources declare macros after \begin{document}. Read the explicit
+        # declarations too, without ever treating their bodies as live formulas.
+        aliases = math_aliases(expanded, len(expanded))
+    else:
+        aliases = math_aliases(merged, boundary[0] if boundary else len(merged))
     for seg in outline['body_segments']:
         parent = seg['parent_id']
         if parent in excluded: continue
@@ -1114,7 +1232,8 @@ def transform(merged: str | None, outline: dict[str, Any]) -> dict[str, Any]:
         # normalized slice. Retain the upstream segment span as provenance.
         start = max(a, boundary[1]) if boundary and parent == builder.root else a
         if start < b:
-            builder.consume(parent, expand_math_aliases(merged[start:b], aliases), [a,b])
+            segment = expand_declaration_aliases(merged[start:b], declarations)
+            builder.consume(parent, expand_math_aliases(segment, aliases), [a,b])
     return builder.finish(len(merged))
 
 
