@@ -2,10 +2,12 @@
 from __future__ import annotations
 
 from dataclasses import asdict, dataclass, field
+import re
 from typing import Any
 
 SCHEMA_VERSION = 1
 STAGE = "outline"
+_BINARY_CONTROL_RE = re.compile(rb"[\x00-\x08\x0e-\x1f]")
 
 
 def decode_source_bytes(raw: bytes) -> tuple[str, str]:
@@ -19,9 +21,7 @@ def decode_source_bytes(raw: bytes) -> tuple[str, str]:
         text = raw.decode("utf-8-sig")
         return text.replace("\r\n", "\n").replace("\r", "\n"), "utf-8"
     except UnicodeDecodeError as utf8_err:
-        if b"\x00" in raw or raw.startswith((b"\xff\xfe", b"\xfe\xff")):
-            raise utf8_err
-        if any(byte < 32 and byte not in (9, 10, 11, 12, 13) for byte in raw):
+        if raw.startswith((b"\xff\xfe", b"\xfe\xff")) or _BINARY_CONTROL_RE.search(raw):
             raise utf8_err
         for encoding in ("cp1252", "latin-1"):
             try:

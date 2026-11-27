@@ -58,7 +58,10 @@ _ARGLESS = frozenset({
 _NON_CONDITIONAL_IF = frozenset({
     "iff",
     "ifthenelse", "ifdef", "ifcsdef", "ifstrequal", "ifblank", "ifboolexpr",
-    "ifstrempty", "ifundef", "ifcsundef", "ifcsvoid", "ifbool", "iftoggle",
+    "ifboolexpe", "ifstrempty", "ifundef", "ifcsundef", "ifcsvoid", "ifbool",
+    "iftoggle", "ifdefempty", "ifdefvoid", "ifdefequal", "ifdefstring",
+    "ifdefstrequal", "ifdefmacro", "ifdefparam", "ifdefprefix",
+    "ifdefprotected", "ifcsstring", "ifcsstrequal", "ifcsempty", "ifnumodd",
     "ifnumcomp", "ifnumequal", "ifnumgreater", "ifnumless",
     "ifdimcomp", "ifdimequal", "ifdimgreater", "ifdimless",
 })

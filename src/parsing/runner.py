@@ -443,7 +443,7 @@ def run(input_dir: Path, output_dir: Path, *, paper_id: str | None = None,
                       f"{' (reused)' if reused else ''}; "
                       + " ".join(f"{key}={counts[key]}" for key in STATUSES)
                       + f"; elapsed={elapsed:.1f}s rate={rate:.2f}/s ETA={eta:.1f}s", flush=True)
-            save_summary()
+                save_summary()
         summary["run_status"] = "completed"
     except KeyboardInterrupt:
         summary["run_status"] = "interrupted"

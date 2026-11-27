@@ -345,10 +345,10 @@ class _Gatherer:
             child = None
             if path.parent != self.root_directory:
                 child = self._resolve_relative_target(
-                    literal, self.root_directory, command, path, missing_ok=True, record=record,
+                    literal, path.parent, command, path, missing_ok=True, record=record,
                 )
                 if child is None:
-                    child = self._resolve_relative_target(literal, path.parent, command, path, record=record)
+                    child = self._resolve_relative_target(literal, self.root_directory, command, path, record=record)
             else:
                 child = self._resolve_relative_target(literal, self.root_directory, command, path, record=record)
             return child, (child.parent if child is not None else None)
@@ -384,6 +384,15 @@ class _Gatherer:
         if changes_path:
             self.diagnostic("unresolved_path_macro", f"File-changing command inside opaque arguments of \\{command.name}; retained raw.", path, command.start, command.end)
 
+    @staticmethod
+    def _is_auxiliary_child_doc(text: str) -> bool:
+        for command in iter_commands(text):
+            if command.name == "documentclass":
+                return (command.arg or "").strip().casefold() in _AUXILIARY_DOCUMENT_CLASSES
+            if command.name == "endinput" or (command.name in {"begin", "end"} and command.arg == "document"):
+                break
+        return False
+
     def walk(self, path: Path, parent: str | None = None,
              include: Command | None = None, *,
              import_dir: Path | None = None,
@@ -403,7 +412,8 @@ class _Gatherer:
             "include_source_span": [include.start, include.end] if include else None,
         })
         self.active.append(path)
-        has_subfile_body = subfile_mode and any(
+        extract_child_body = subfile_mode or (parent is not None and self._is_auxiliary_child_doc(text))
+        has_subfile_body = extract_child_body and any(
             cmd.name == "begin" and cmd.arg == "document"
             for cmd in iter_commands(text, include_math=True)
         )
@@ -497,6 +507,14 @@ class _Gatherer:
                 continue
             if not child.is_file():
                 self.diagnostic("missing_include", f"Included file does not exist: {self.relative(child)}", path, command.start, command.end)
+                continue
+            if child.suffix.lower() == ".bib":
+                self.diagnostic(
+                    "non_tex_include",
+                    f"Skipped merging BibTeX file via \\{command.name}: {self.relative(child)}",
+                    path, command.start, command.end,
+                    severity="info", affects=False,
+                )
                 continue
             # Read before replacing the command; a failed include stays raw.
             if self.read(child) is None:
