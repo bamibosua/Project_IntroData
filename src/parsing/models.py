@@ -2,10 +2,34 @@
 from __future__ import annotations
 
 from dataclasses import asdict, dataclass, field
+import re
 from typing import Any
 
 SCHEMA_VERSION = 1
 STAGE = "outline"
+_BINARY_CONTROL_RE = re.compile(rb"[\x00-\x08\x0e-\x1f]")
+
+
+def decode_source_bytes(raw: bytes) -> tuple[str, str]:
+    """Decode LaTeX source bytes to LF text and encoding name.
+
+    Tries UTF-8/UTF-8 BOM first, then falls back to cp1252 and latin-1 for
+    legacy non-UTF-8 TeX files. Rejects UTF-16 BOMs, NUL bytes, and binary
+    control bytes with UnicodeDecodeError so corrupt files are not mangled.
+    """
+    try:
+        text = raw.decode("utf-8-sig")
+        return text.replace("\r\n", "\n").replace("\r", "\n"), "utf-8"
+    except UnicodeDecodeError as utf8_err:
+        if raw.startswith((b"\xff\xfe", b"\xfe\xff")) or _BINARY_CONTROL_RE.search(raw):
+            raise utf8_err
+        for encoding in ("cp1252", "latin-1"):
+            try:
+                text = raw.decode(encoding)
+                return text.replace("\r\n", "\n").replace("\r", "\n"), encoding
+            except UnicodeDecodeError:
+                continue
+        raise utf8_err
 
 
 @dataclass
@@ -18,6 +42,29 @@ class Diagnostic:
     line: int | None = None
     column: int | None = None
     affects_completeness: bool = True
+
+
+def status_reasons_from_diagnostics(status: str, diagnostics: list[Any]) -> list[str]:
+    """Return ordered unique diagnostic codes that caused a partial or failed status."""
+    if status not in ("partial", "failed"):
+        return []
+    reasons: list[str] = []
+    seen: set[str] = set()
+    for diag in diagnostics:
+        if isinstance(diag, dict):
+            code = diag.get("code")
+            severity = diag.get("severity")
+            affects = diag.get("affects_completeness")
+        else:
+            code = getattr(diag, "code", None)
+            severity = getattr(diag, "severity", None)
+            affects = getattr(diag, "affects_completeness", None)
+        if not code or code in seen:
+            continue
+        if severity == "error" or affects is True:
+            seen.add(code)
+            reasons.append(code)
+    return reasons
 
 
 @dataclass
@@ -54,6 +101,7 @@ class OutlineResult:
             "publication_key": g.publication_key,
             "version": g.version,
             "status": self.status,
+            "status_reasons": status_reasons_from_diagnostics(self.status, self.diagnostics),
             "root_file": g.root_file,
             "root_node_id": self.nodes[0]["node_id"] if self.nodes else None,
             "compilation_path": g.compilation_path,

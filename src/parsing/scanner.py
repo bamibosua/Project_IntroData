@@ -22,6 +22,7 @@ class Command:
     starred: bool = False
     defined_name: str | None = None
     definition_body: str | None = None
+    second_arg: str | None = None
 
 
 RAW_ENVIRONMENTS = frozenset({"verbatim", "verbatim*", "lstlisting", "minted", "comment"})
@@ -34,9 +35,36 @@ DEFINITION_COMMANDS = frozenset({
     "newcommand", "renewcommand", "providecommand", "DeclareRobustCommand",
     "def", "gdef", "edef", "xdef", "let",
 })
+ENV_DEFINITION_COMMANDS = frozenset({"newenvironment", "renewenvironment"})
 HEADING_COMMANDS = frozenset({"part", "chapter", "section", "subsection", "subsubsection", "paragraph", "subparagraph"})
-_REQUIRES_ARG = HEADING_COMMANDS | {"documentclass", "input", "include", "includeonly", "begin", "end", "bibliography", "bibliographystyle"}
-_ARGLESS = frozenset({"appendix", "endinput", "else", "fi", "relax", "makeatletter", "makeatother"})
+_TWO_ARG_COMMANDS = frozenset({"import", "subimport", "includefrom", "subincludefrom"})
+_REQUIRES_ARG = HEADING_COMMANDS | {
+    "documentclass", "input", "include", "includeonly", "subfile", "subfileinclude",
+    "begin", "end", "bibliography", "addbibresource", "bibliographystyle",
+}
+_DECLARATION_SWITCHES = frozenset({
+    "tiny", "scriptsize", "footnotesize", "small", "normalsize",
+    "large", "Large", "LARGE", "huge", "Huge",
+    "bf", "bfseries", "it", "itshape", "em", "sc", "scshape",
+    "rm", "rmfamily", "sf", "sffamily", "tt", "ttfamily",
+    "sl", "slshape", "upshape", "mdseries", "normalfont",
+    "centering", "raggedright", "raggedleft", "noindent", "indent", "par",
+    "newpage", "clearpage", "cleardoublepage",
+    "medskip", "smallskip", "bigskip", "hfill", "vfill", "onecolumn",
+})
+_ARGLESS = frozenset({
+    "appendix", "endinput", "else", "fi", "relax", "makeatletter", "makeatother", "iff",
+}) | _DECLARATION_SWITCHES
+_NON_CONDITIONAL_IF = frozenset({
+    "iff",
+    "ifthenelse", "ifdef", "ifcsdef", "ifstrequal", "ifblank", "ifboolexpr",
+    "ifboolexpe", "ifstrempty", "ifundef", "ifcsundef", "ifcsvoid", "ifbool",
+    "iftoggle", "ifdefempty", "ifdefvoid", "ifdefequal", "ifdefstring",
+    "ifdefstrequal", "ifdefmacro", "ifdefparam", "ifdefprefix",
+    "ifdefprotected", "ifcsstring", "ifcsstrequal", "ifcsempty", "ifnumodd",
+    "ifnumcomp", "ifnumequal", "ifnumgreater", "ifnumless",
+    "ifdimcomp", "ifdimequal", "ifdimgreater", "ifdimless",
+})
 
 
 class _SourceText(str):
@@ -166,11 +194,65 @@ def _definition(text: str, start: int, name: str, pos: int, limit: int,
                    defined_name=target, definition_body=body)
 
 
+def _env_definition(text: str, start: int, name: str, pos: int, limit: int,
+                    errors: list[tuple[int, int, str]]) -> Command:
+    cursor = _space(text, pos, limit)
+    starred = cursor < limit and text[cursor] == "*"
+    if starred:
+        cursor = _space(text, cursor + 1, limit)
+    target: str | None = None
+    if cursor < limit and text[cursor] == "{":
+        target_raw, cursor = _balanced(text, cursor, limit, errors)
+        stripped = target_raw.strip()
+        if stripped:
+            target = stripped
+    if not target:
+        errors.append((start, max(cursor, pos), f"Malformed \\{name} target."))
+    cursor = _space(text, cursor, limit)
+    for _ in range(2):
+        if cursor < limit and text[cursor] == "[":
+            _, cursor = _balanced(text, cursor, limit, errors)
+            cursor = _space(text, cursor, limit)
+    bodies: list[str] = []
+    for part_name in ("begin", "end"):
+        if cursor < limit and text[cursor] == "{":
+            body_part, cursor = _balanced(text, cursor, limit, errors)
+            bodies.append(body_part)
+            cursor = _space(text, cursor, limit)
+        else:
+            errors.append((start, cursor, f"Missing \\{name} {part_name} body."))
+    combined_body = "\n".join(bodies) if bodies else None
+    return Command(name, start, cursor, starred=starred,
+                   defined_name=target, definition_body=combined_body)
+
+
+def _newif(text: str, start: int, pos: int, limit: int,
+           errors: list[tuple[int, int, str]]) -> Command:
+    cursor = _space(text, pos, limit)
+    target: str | None = None
+    if cursor < limit and text[cursor] == "{":
+        target_raw, cursor = _balanced(text, cursor, limit, errors)
+        match = re.fullmatch(r"\s*\\([A-Za-z@]+)\s*", target_raw, re.S)
+        if match:
+            target = match.group(1)
+    elif cursor < limit and text[cursor] == "\\":
+        candidate, cursor = _control(text, cursor, limit)
+        if candidate:
+            target = candidate
+    if not target:
+        errors.append((start, max(cursor, pos), "Malformed \\newif target."))
+    return Command("newif", start, cursor, defined_name=target)
+
+
 def _command(text: str, start: int, limit: int,
              errors: list[tuple[int, int, str]]) -> Command:
     name, end = _control(text, start, limit)
     if name in DEFINITION_COMMANDS:
         return _definition(text, start, name, end, limit, errors)
+    if name in ENV_DEFINITION_COMMANDS:
+        return _env_definition(text, start, name, end, limit, errors)
+    if name == "newif":
+        return _newif(text, start, end, limit, errors)
     if name in _ARGLESS or _is_conditional(name):
         return Command(name, start, end)
     cursor = _space(text, end, limit)
@@ -180,6 +262,7 @@ def _command(text: str, start: int, limit: int,
         cursor = _space(text, end, limit)
     arg: str | None = None
     optional: str | None = None
+    second_arg: str | None = None
     # Escaped symbols have no LaTeX arguments.
     if len(name) == 1 and not name.isalpha():
         return Command(name, start, end, starred=starred)
@@ -188,11 +271,15 @@ def _command(text: str, start: int, limit: int,
         value, next_pos = _balanced(text, cursor, limit, errors)
         if opener == "{" and arg is None:
             arg = value
+        elif opener == "{" and name in _TWO_ARG_COMMANDS and second_arg is None:
+            second_arg = value
         elif opener == "[" and optional is None:
             optional = value
         end = next_pos
         # begin/end consume their environment name, but not following body groups.
         if name in _REQUIRES_ARG and arg is not None:
+            break
+        if name in _TWO_ARG_COMMANDS and arg is not None and second_arg is not None:
             break
         cursor = _space(text, next_pos, limit)
     if name == "input" and arg is None:
@@ -203,14 +290,16 @@ def _command(text: str, start: int, limit: int,
         if cursor > path_start:
             arg = text[path_start:cursor]
             end = cursor
-    if name in _REQUIRES_ARG and arg is None:
+    if (name in _REQUIRES_ARG and arg is None) or (
+        name in _TWO_ARG_COMMANDS and (arg is None or second_arg is None)
+    ):
         errors.append((start, max(end, start + 1), f"Missing argument for \\{name}."))
-    return Command(name, start, end, arg, optional, starred)
+    return Command(name, start, end, arg, optional, starred, second_arg=second_arg)
 
 
 def _is_conditional(name: str) -> bool:
-    # ifthenelse is a braced macro, not an if...fi primitive.
-    return name.startswith("if") and name not in {"ifthenelse", "ifdef", "ifcsdef", "ifstrequal", "ifblank", "ifboolexpr"}
+    # Math \iff and braced macros like \ifthenelse are not \if...\fi primitives.
+    return name.startswith("if") and name not in _NON_CONDITIONAL_IF
 
 
 def _delimited(text: str, start: int, end: int, delimiter: str,

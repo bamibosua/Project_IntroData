@@ -6,7 +6,7 @@ import json
 from pathlib import Path, PurePosixPath
 import re
 
-from .models import SCHEMA_VERSION, STAGE
+from .models import SCHEMA_VERSION, STAGE, decode_source_bytes
 from .outline import HEADING_LEVELS
 
 
@@ -102,7 +102,7 @@ def load_outline(directory: Path, *, source_dir: Path | None = None) -> tuple[di
             if hashlib.sha256(data).hexdigest() != digest:
                 raise ValueError(f"source hash mismatch: {name}")
             try:
-                source_texts[name] = data.decode("utf-8-sig").replace("\r\n", "\n").replace("\r", "\n")
+                source_texts[name], _ = decode_source_bytes(data)
             except UnicodeDecodeError:
                 # An unreadable source can be recorded with an explicit diagnostic.
                 pass

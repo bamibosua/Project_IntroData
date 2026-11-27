@@ -14,7 +14,7 @@ from datetime import datetime, timezone
 from uuid import uuid4
 
 from .gather import gather_version
-from .models import SCHEMA_VERSION, STAGE
+from .models import SCHEMA_VERSION, STAGE, status_reasons_from_diagnostics
 from .outline import build_outline
 from .telemetry import peak_rss_bytes
 
@@ -263,6 +263,64 @@ def _versions(input_dir: Path, paper_id: str | None, version: int | None):
             yield publication.name, number, directory
 
 
+def process_and_commit_version(
+    directory: Path,
+    destination: Path,
+    code: str,
+    *,
+    forced_root: str | None = None,
+    forced_root_reason: str | None = None,
+) -> dict:
+    """Gather, outline, validate, and atomically commit one version's artifacts."""
+    parse_start = time.perf_counter()
+    initial_candidates = _tex_paths(directory)
+    initial_manifest = dict(_source_manifest(directory, [], tex_paths=initial_candidates))
+    gathered = gather_version(
+        directory,
+        forced_root=forced_root,
+        forced_root_reason=forced_root_reason,
+    )
+    after_gather = time.perf_counter()
+    outlined = build_outline(gathered)
+    record = outlined.to_record()
+    after_build = time.perf_counter()
+    final_candidates = _tex_paths(directory)
+    manifest = _source_manifest(directory, record["dependencies"], tex_paths=final_candidates)
+    final_manifest = dict(manifest)
+    changed = initial_candidates ^ final_candidates
+    changed.update(name for name, digest in initial_manifest.items()
+                   if final_manifest.get(name) != digest)
+    changed.update(name for name, digest in gathered.source_hashes.items()
+                   if final_manifest.get(name) != digest)
+    if changed:
+        record["status"] = "partial" if record["nodes"] else "failed"
+        record["diagnostics"].append({
+            "code": "source_changed_during_parse", "severity": "warning",
+            "message": "Sources changed while parsing; reprocess this version: " + ", ".join(sorted(changed)),
+            "source_file": None, "source_span": None,
+            "line": None, "column": None, "affects_completeness": True,
+        })
+    record["status_reasons"] = status_reasons_from_diagnostics(record["status"], record["diagnostics"])
+    record["metrics"].update({
+        "gather_seconds": after_gather - parse_start,
+        "build_seconds": after_build - after_gather,
+        "parse_seconds": after_build - parse_start,
+        "unique_source_files": len({item["source_file"] for item in gathered.compilation_path}),
+        "file_instances": len(gathered.compilation_path),
+        "heading_count": sum(node["kind"] == "heading" for node in outlined.nodes),
+    })
+    if record["status"] not in STATUSES or not _validate_record(record, gathered.merged_text):
+        raise RuntimeError("Parser produced an inconsistent outline/source map")
+    record["input_fingerprint"] = _fingerprint(directory, record["dependencies"], code, manifest=manifest)
+    payload = gathered.merged_text.encode("utf-8")
+    record["merged_sha256"] = hashlib.sha256(payload).hexdigest()
+    save_start = time.perf_counter()
+    _write_atomic(destination / "merged.tex", payload)
+    record["metrics"]["merged_save_seconds"] = time.perf_counter() - save_start
+    _write_atomic(destination / "outline.json", _json_bytes(record))
+    return record
+
+
 def run(input_dir: Path, output_dir: Path, *, paper_id: str | None = None,
         version: int | None = None, force: bool = False, progress_every: int = 100) -> int:
     """Process existing vN directories and explicitly record publications without versions."""
@@ -291,6 +349,7 @@ def run(input_dir: Path, output_dir: Path, *, paper_id: str | None = None,
         "filters": {"paper_id": paper_id, "version": version, "force": force},
         "run_status": "running", "publications_seen": 0, "versions_seen": 0,
         "status_counts": dict.fromkeys(STATUSES, 0),
+        "status_reason_counts": {"partial": {}, "failed": {}},
         "versions_reused": 0, "versions_processed": 0,
         "wall_seconds": 0.0, "diagnostic_counts": {}, "fatal_error": None,
         "summary_persistence_error": None, "summary_persistence_failures": 0,
@@ -365,49 +424,16 @@ def run(input_dir: Path, output_dir: Path, *, paper_id: str | None = None,
             record = None if force else _reuse(directory, destination, code, publication, number)
             reused = record is not None
             if record is None:
-                parse_start = time.perf_counter()
-                initial_candidates = _tex_paths(directory)
-                initial_manifest = dict(_source_manifest(directory, [], tex_paths=initial_candidates))
-                gathered = gather_version(directory)
-                after_gather = time.perf_counter()
-                outlined = build_outline(gathered)
-                record = outlined.to_record()
-                after_build = time.perf_counter()
-                final_candidates = _tex_paths(directory)
-                manifest = _source_manifest(directory, record["dependencies"], tex_paths=final_candidates)
-                final_manifest = dict(manifest)
-                changed = initial_candidates ^ final_candidates
-                changed.update(name for name, digest in initial_manifest.items()
-                               if final_manifest.get(name) != digest)
-                changed.update(name for name, digest in gathered.source_hashes.items()
-                               if final_manifest.get(name) != digest)
-                if changed:
-                    record["status"] = "partial" if record["nodes"] else "failed"
-                    record["diagnostics"].append({
-                        "code": "source_changed_during_parse", "severity": "warning",
-                        "message": "Sources changed while parsing; reprocess this version: " + ", ".join(sorted(changed)),
-                        "source_file": None, "source_span": None,
-                        "line": None, "column": None, "affects_completeness": True,
-                    })
-                record["metrics"].update({
-                    "gather_seconds": after_gather - parse_start,
-                    "build_seconds": after_build - after_gather,
-                    "parse_seconds": after_build - parse_start,
-                    "unique_source_files": len({item["source_file"] for item in gathered.compilation_path}),
-                    "file_instances": len(gathered.compilation_path),
-                    "heading_count": sum(node["kind"] == "heading" for node in outlined.nodes),
-                })
-                if record["status"] not in STATUSES or not _validate_record(record, gathered.merged_text):
-                    raise RuntimeError("Parser produced an inconsistent outline/source map")
-                record["input_fingerprint"] = _fingerprint(directory, record["dependencies"], code, manifest=manifest)
-                payload = gathered.merged_text.encode("utf-8")
-                record["merged_sha256"] = hashlib.sha256(payload).hexdigest()
-                save_start = time.perf_counter()
-                _write_atomic(destination / "merged.tex", payload)
-                record["metrics"]["merged_save_seconds"] = time.perf_counter() - save_start
-                _write_atomic(destination / "outline.json", _json_bytes(record))
+                record = process_and_commit_version(directory, destination, code)
             status = record["status"]
+            reasons = record.get("status_reasons")
+            if not isinstance(reasons, list):
+                reasons = status_reasons_from_diagnostics(status, record.get("diagnostics", []))
             summary["status_counts"][status] += 1
+            if status in ("partial", "failed"):
+                bucket = summary["status_reason_counts"][status]
+                for reason in reasons:
+                    bucket[reason] = bucket.get(reason, 0) + 1
             summary["versions_seen"] += 1
             summary["versions_reused" if reused else "versions_processed"] += 1
             publications_seen.add(publication)
@@ -439,11 +465,12 @@ def run(input_dir: Path, output_dir: Path, *, paper_id: str | None = None,
                 elapsed = time.perf_counter() - start
                 rate = done / elapsed if elapsed else 0.0
                 eta = (len(jobs) - done) / rate if rate else 0.0
-                print(f"[{done}/{len(jobs)}] {publication}/v{number}: {status}"
+                status_label = f"{status} [{', '.join(reasons)}]" if reasons else status
+                print(f"[{done}/{len(jobs)}] {publication}/v{number}: {status_label}"
                       f"{' (reused)' if reused else ''}; "
                       + " ".join(f"{key}={counts[key]}" for key in STATUSES)
                       + f"; elapsed={elapsed:.1f}s rate={rate:.2f}/s ETA={eta:.1f}s", flush=True)
-            save_summary()
+                save_summary()
         summary["run_status"] = "completed"
     except KeyboardInterrupt:
         summary["run_status"] = "interrupted"
@@ -473,6 +500,11 @@ def run(input_dir: Path, output_dir: Path, *, paper_id: str | None = None,
             )
             if exit_code != 130:
                 exit_code = 1
+    for key_status, label in (("partial", "Partial"), ("failed", "Failed")):
+        reason_map = summary["status_reason_counts"].get(key_status, {})
+        if reason_map:
+            ranked = sorted(reason_map.items(), key=lambda item: (-item[1], item[0]))
+            print(f"{label} reasons: " + ", ".join(f"{code}={cnt}" for code, cnt in ranked), flush=True)
     if final_summary_saved:
         print(f"Summary: {output_dir / 'summary.json'}", flush=True)
     return exit_code
