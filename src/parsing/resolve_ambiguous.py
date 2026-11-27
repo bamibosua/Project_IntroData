@@ -388,6 +388,7 @@ def resolve_ambiguous_versions(
     delay: float = DEFAULT_DELAY,
     retry_checked: bool = False,
     limit: int | None = None,
+    only_versions: set[tuple[str, int]] | None = None,
     fetch_fn: Callable[[str], bytes] | None = None,
 ) -> dict[str, Any]:
     """Run Pass 2 00README resolution for all failed `ambiguous_root` versions in output_dir."""
@@ -405,6 +406,11 @@ def resolve_ambiguous_versions(
             previous_records = {}
 
     ambiguous_items = find_ambiguous_versions(output_dir)
+    if only_versions is not None:
+        ambiguous_items = [
+            item for item in ambiguous_items
+            if (item["publication_key"], item["version"]) in only_versions
+        ]
     if limit is not None:
         ambiguous_items = ambiguous_items[:limit]
 
